@@ -1,0 +1,236 @@
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import { useAtlas } from '@/lib/AtlasContext';
+import { ArrowLeft, Sparkles, Info, AlertTriangle, Lightbulb } from 'lucide-react';
+import { AiAssistant } from './AiAssistant';
+
+export function ArticleView() {
+  const { currentArticle, showCategory, articleMode, setArticleMode, articles, userProfile } = useAtlas();
+  const [isAiOpen, setIsAiOpen] = useState(false);
+  
+  const article = articles.find(e => e.id === currentArticle);
+  if (!article) return null;
+
+  const content = article.content[articleMode];
+
+  const scrollToSection = (i: number) => {
+    const el = document.getElementById(`sec-${i}`);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  return (
+    <div className="flex-1 flex h-full overflow-hidden animate-in fade-in duration-300 relative">
+      <div className="flex-1 overflow-y-auto p-6 md:p-10 lg:p-12">
+        <button
+          onClick={() => showCategory(article.cat)}
+          className="inline-flex items-center gap-2 text-xs text-text3 cursor-pointer mb-8 transition-colors hover:text-teal bg-transparent border-none font-sans"
+        >
+          <ArrowLeft className="w-3 h-3" /> Retour à {article.catLabel}
+        </button>
+
+        <div className="mb-7">
+          <div className="font-mono text-[10px] text-text3 tracking-[2px] mb-2">{article.id}</div>
+          <div className="text-[11px] text-teal font-mono tracking-[1.5px] uppercase mb-3">{article.catLabel}</div>
+          <h1 className="font-serif text-[clamp(32px,4vw,48px)] font-light leading-[1.1] mb-4">
+            {article.title}
+          </h1>
+          <div className="flex gap-1.5 flex-wrap mb-6">
+            {article.tags.map(t => (
+              <span key={t} className="text-[9px] px-[7px] py-[2px] rounded-[3px] font-mono tracking-[0.5px] border bg-teal3 text-teal border-teal/20">
+                {t}
+              </span>
+            ))}
+            <span className="text-[9px] px-[7px] py-[2px] rounded-[3px] font-mono tracking-[0.5px] border bg-gold3 text-gold border-gold/20">
+              {article.difficulty}
+            </span>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3 mb-8 p-3 bg-bg2 rounded-lg border border-border-main">
+          {userProfile !== 'patient' && (
+            <>
+              <span className="text-[11px] text-text3">Mode lecture :</span>
+              <button
+                onClick={() => setArticleMode('pro')}
+                className={`px-4 py-1.5 rounded-[5px] text-[11px] font-mono cursor-pointer border-none transition-all tracking-[0.5px] ${
+                  articleMode === 'pro' ? 'bg-teal text-bg' : 'bg-transparent text-text3 hover:text-text-main'
+                }`}
+              >
+                ⚕ Professionnel
+              </button>
+              <button
+                onClick={() => setArticleMode('patient')}
+                className={`px-4 py-1.5 rounded-[5px] text-[11px] font-mono cursor-pointer border-none transition-all tracking-[0.5px] ${
+                  articleMode === 'patient' ? 'bg-gold text-bg' : 'bg-transparent text-text3 hover:text-text-main'
+                }`}
+              >
+                ♡ Patient
+              </button>
+            </>
+          )}
+          <button
+            onClick={() => setIsAiOpen(true)}
+            className={`${userProfile === 'patient' ? '' : 'ml-auto'} px-4 py-1.5 rounded-[5px] text-[11px] font-mono cursor-pointer border border-teal/30 text-teal hover:bg-teal/10 transition-all flex items-center gap-2`}
+          >
+            <Sparkles className="w-3 h-3" /> Assistant IA
+          </button>
+        </div>
+
+        <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9">
+          {article.content.lead}
+        </div>
+
+        {content.sections.map((s, i) => (
+          <div key={i} className="mb-8" id={`sec-${i}`}>
+            <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
+              {s.title}
+            </h3>
+            {s.text && <p className="text-[14px] text-text2 leading-[1.8] mb-3">{s.text}</p>}
+            
+            {s.infoBox && (
+              <div className={`my-6 p-4 rounded-lg border flex gap-4 ${
+                s.infoBox.type === 'info' ? 'bg-blue-500/10 border-blue-500/20 text-blue-400' :
+                s.infoBox.type === 'warning' ? 'bg-orange-500/10 border-orange-500/20 text-orange-400' :
+                'bg-teal/10 border-teal/20 text-teal'
+              }`}>
+                <div className="shrink-0 mt-1">
+                  {s.infoBox.type === 'info' && <Info className="w-5 h-5" />}
+                  {s.infoBox.type === 'warning' && <AlertTriangle className="w-5 h-5" />}
+                  {s.infoBox.type === 'tip' && <Lightbulb className="w-5 h-5" />}
+                </div>
+                <div>
+                  <h4 className="font-bold text-[13px] mb-1">{s.infoBox.title}</h4>
+                  <p className="text-[13px] leading-relaxed opacity-90">{s.infoBox.text}</p>
+                </div>
+              </div>
+            )}
+
+            {s.stats && (
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+                {s.stats.map((stat, idx) => (
+                  <div key={idx} className="bg-bg2 border border-border-main rounded-lg p-4 text-center flex flex-col justify-center min-h-[100px]">
+                    <div className="text-2xl font-light text-teal mb-2">{stat.value}</div>
+                    <div className="text-[10px] uppercase tracking-wider text-text3 leading-tight">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {s.steps && (
+              <div className="my-6 space-y-3">
+                {s.steps.map((step, idx) => (
+                  <div key={idx} className="flex gap-4 bg-bg2 p-4 rounded-lg border border-border-main">
+                    <div className="shrink-0 w-8 h-8 rounded-full bg-teal/10 text-teal flex items-center justify-center font-mono text-sm border border-teal/20">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-[14px] text-text-main mb-1">{step.title}</h4>
+                      <p className="text-[13px] text-text2 leading-relaxed">{step.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {s.list && (
+              <ul className="flex flex-col gap-2 my-3">
+                {s.list.map((l, j) => (
+                  <li key={j} className="text-[13px] text-text2 leading-[1.6] pl-5 relative before:content-['▸'] before:absolute before:left-0 before:text-teal before:text-[10px] before:top-[3px]">
+                    {l}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+
+        {content.table && (
+          <div className="mb-8">
+            <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
+              Données de référence
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse my-4 text-xs">
+                <thead>
+                  <tr>
+                    {content.table.headers.map((h, i) => (
+                      <th key={i} className="text-left p-2 px-3 bg-bg3 text-text3 font-mono text-[10px] tracking-[1px] border-b border-border-main">
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {content.table.rows.map((r, i) => (
+                    <tr key={i} className="hover:bg-bg3 transition-colors">
+                      {r.map((c, j) => (
+                        <td key={j} className="p-2 px-3 border-b border-teal/5 text-text2 align-top">
+                          {c}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {(article.authors || article.sources) && (
+          <div className="mt-12 pt-8 border-t border-border-main">
+            {article.authors && article.authors.length > 0 && (
+              <div className="mb-6">
+                <h4 className="font-mono text-[10px] tracking-[2px] uppercase text-text3 mb-2">Auteur(s)</h4>
+                <div className="flex flex-wrap gap-2">
+                  {article.authors.map((author, idx) => (
+                    <span key={idx} className="text-[12px] text-text2 bg-bg2 px-3 py-1 rounded-md border border-border-main">
+                      {author}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+            
+            {article.sources && article.sources.length > 0 && (
+              <div>
+                <h4 className="font-mono text-[10px] tracking-[2px] uppercase text-text3 mb-2">Sources & Références</h4>
+                <ul className="flex flex-col gap-1.5">
+                  {article.sources.map((source, idx) => (
+                    <li key={idx} className="text-[12px] text-text2 flex items-start gap-2">
+                      <span className="text-teal mt-0.5">▸</span>
+                      {source.url ? (
+                        <a href={source.url} target="_blank" rel="noopener noreferrer" className="hover:text-teal hover:underline transition-colors">
+                          {source.title}
+                        </a>
+                      ) : (
+                        <span>{source.title}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      <div className="w-[200px] shrink-0 p-8 px-5 border-l border-border-main overflow-y-auto hidden lg:block">
+        <div className="font-mono text-[9px] tracking-[2px] uppercase text-text3 mb-3">Sommaire</div>
+        {content.sections.map((s, i) => (
+          <div
+            key={i}
+            onClick={() => scrollToSection(i)}
+            className="text-[11px] text-text3 py-1 cursor-pointer transition-colors border-l-2 border-transparent pl-2 hover:text-teal"
+          >
+            {s.title}
+          </div>
+        ))}
+      </div>
+
+      {isAiOpen && (
+        <AiAssistant article={article} onClose={() => setIsAiOpen(false)} />
+      )}
+    </div>
+  );
+}

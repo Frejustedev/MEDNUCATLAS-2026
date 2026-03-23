@@ -1,0 +1,119 @@
+{
+  "entities": {
+    "Article": {
+      "title": "Article",
+      "description": "An article in the MedNuc Atlas",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the article"
+        },
+        "cat": {
+          "type": "string",
+          "description": "Category ID"
+        },
+        "catLabel": {
+          "type": "string",
+          "description": "Category display label"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the article"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Tags for the article"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["fondamental", "intermédiaire", "avancé"],
+          "description": "Difficulty level"
+        },
+        "excerpt": {
+          "type": "string",
+          "description": "Short summary"
+        },
+        "content": {
+          "type": "string",
+          "description": "JSON stringified content containing lead, pro, and patient sections"
+        },
+        "authorId": {
+          "type": "string",
+          "description": "UID of the author"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        }
+      },
+      "required": ["id", "cat", "title", "content"]
+    },
+    "User": {
+      "title": "User",
+      "description": "A user of the application",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Firebase Auth UID"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "User's email address"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["free", "pro", "expert", "institution", "admin"],
+          "description": "User's subscription tier or admin role"
+        },
+        "profileType": {
+          "type": "string",
+          "enum": ["patient", "medecin_non_nuc", "medecin_nuc"],
+          "description": "User's selected profile type"
+        },
+        "intendedPlan": {
+          "type": "string",
+          "description": "The plan the user intended to sign up for"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User's display name"
+        },
+        "photoURL": {
+          "type": "string",
+          "description": "User's profile picture URL"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Account creation timestamp"
+        },
+        "lastLogin": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last login timestamp"
+        }
+      },
+      "required": ["uid", "email", "role"]
+    }
+  },
+  "firestore": {
+    "/articles/{articleId}": {
+      "schema": { "$ref": "#/entities/Article" },
+      "description": "Collection of medical articles"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "Collection of user profiles and roles"
+    }
+  }
+}

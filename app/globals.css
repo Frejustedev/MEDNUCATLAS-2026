@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #04080f;
+  --color-bg2: #080e1a;
+  --color-bg3: #0d1627;
+  --color-bg4: #101d35;
+  --color-teal: #00c9b1;
+  --color-teal2: #00a896;
+  --color-teal3: rgba(0,201,177,0.08);
+  --color-gold: #c8a96e;
+  --color-gold2: #e8c98a;
+  --color-gold3: rgba(200,169,110,0.10);
+  --color-blue: #4db8ff;
+  --color-blue3: rgba(77,184,255,0.10);
+  --color-atom: #a78bfa;
+  --color-atom3: rgba(167,139,250,0.10);
+  --color-text-main: #e8edf5;
+  --color-text2: #8a99b5;
+  --color-text3: #4a5a78;
+  --color-border-main: rgba(0,201,177,0.12);
+  --color-border2: rgba(200,169,110,0.15);
+  --color-glow: rgba(0,201,177,0.15);
+  --radius-main: 10px;
+
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-cormorant);
+  --font-mono: var(--font-dm-mono);
+}
+
+@layer base {
+  html, body {
+    @apply h-full bg-bg text-text-main font-sans font-light overflow-hidden;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-border-main rounded-sm;
+}

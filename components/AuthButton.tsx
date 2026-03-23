@@ -1,0 +1,120 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { db } from '@/lib/firebase';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { ENTRIES } from '@/lib/data';
+import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
+import { LogIn, LogOut, Database, Settings } from 'lucide-react';
+import { useAtlas } from '@/lib/AtlasContext';
+import Image from 'next/image';
+
+export function AuthButton() {
+  const { authUser, dbUser, openAuthModal, logout, showAdmin, view, showHome } = useAtlas();
+  const [isMigrating, setIsMigrating] = useState(false);
+
+  const isAdmin = dbUser?.role === 'admin' || (authUser?.email === 'agbotonfrejuste@gmail.com' && authUser?.emailVerified);
+
+  useEffect(() => {
+    if (view === 'admin' && !isAdmin && authUser !== undefined) {
+      showHome();
+    }
+  }, [view, isAdmin, authUser, showHome]);
+
+  const migrateData = async () => {
+    if (!authUser) {
+      alert("Veuillez vous connecter d'abord.");
+      return;
+    }
+    
+    setIsMigrating(true);
+    try {
+      for (const entry of ENTRIES) {
+        const articleData = {
+          id: entry.id,
+          cat: entry.cat,
+          catLabel: entry.catLabel,
+          title: entry.title,
+          tags: entry.tags || [],
+          difficulty: entry.difficulty,
+          excerpt: entry.excerpt,
+          content: JSON.stringify(entry.content),
+          authorId: authUser.uid,
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        };
+        await setDoc(doc(db, 'articles', entry.id), articleData);
+      }
+      alert('Migration réussie ! Tous les articles ont été copiés dans Firestore.');
+    } catch (error) {
+      console.error("Migration failed:", error);
+      alert('Échec de la migration. Vérifiez la console. Assurez-vous d\'être connecté avec l\'email admin.');
+      handleFirestoreError(error, OperationType.CREATE, 'articles');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  return (
+    <div className="flex items-center gap-3 ml-2">
+      {authUser ? (
+        <>
+          {isAdmin && (
+            <>
+              <button
+                onClick={showAdmin}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${view === 'admin' ? 'bg-teal text-bg' : 'bg-bg3 text-text2 hover:bg-bg-light'}`}
+                title="Panneau d'administration"
+              >
+                <Settings className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Admin</span>
+              </button>
+              <button
+                onClick={migrateData}
+                disabled={isMigrating}
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-teal/10 text-teal rounded-md text-xs font-medium hover:bg-teal/20 transition-colors disabled:opacity-50"
+                title="Migrer les données statiques vers Firestore"
+              >
+                <Database className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">{isMigrating ? 'Migration...' : 'Migrer'}</span>
+              </button>
+            </>
+          )}
+          
+          <div className="flex items-center gap-2 pl-2 border-l border-border-main">
+            {authUser.photoURL ? (
+              <Image 
+                src={authUser.photoURL} 
+                alt="Profile" 
+                width={24} 
+                height={24} 
+                className="rounded-full border border-border-main"
+                referrerPolicy="no-referrer"
+              />
+            ) : (
+              <div className="w-6 h-6 rounded-full bg-teal/20 flex items-center justify-center text-teal text-[10px] font-bold">
+                {authUser.email?.charAt(0).toUpperCase() || 'U'}
+              </div>
+            )}
+            
+            <button
+              onClick={logout}
+              className="flex items-center gap-1.5 px-2 py-1.5 text-text3 hover:text-red-400 transition-colors"
+              title="Se déconnecter"
+            >
+              <LogOut className="w-4 h-4" />
+            </button>
+          </div>
+        </>
+      ) : (
+        <button
+          onClick={() => openAuthModal()}
+          className="flex items-center gap-1.5 px-4 py-1.5 bg-teal text-bg rounded-md text-xs font-medium hover:bg-teal2 transition-colors shadow-[0_0_15px_rgba(0,201,177,0.2)]"
+        >
+          <LogIn className="w-3.5 h-3.5" />
+          <span className="hidden sm:inline">Connexion</span>
+        </button>
+      )}
+    </div>
+  );
+}
