@@ -167,18 +167,12 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         } as Article;
       });
       
-      // Merge with ENTRIES to ensure local changes are visible
-      const mergedArticles = [...ENTRIES];
-      fetchedArticles.forEach(fetched => {
-        const index = mergedArticles.findIndex(e => e.id === fetched.id);
-        if (index === -1) {
-          mergedArticles.push(fetched);
-        } else {
-          mergedArticles[index] = fetched;
-        }
-      });
-      
-      setAllArticles(mergedArticles);
+      // Use fetched articles if available, otherwise fallback to ENTRIES
+      if (fetchedArticles.length > 0) {
+        setAllArticles(fetchedArticles);
+      } else {
+        setAllArticles(ENTRIES);
+      }
       setLoading(false);
     }, (error) => {
       handleFirestoreError(error, OperationType.LIST, 'articles');

@@ -503,22 +503,144 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La scintigraphie thyroïdienne à l'iode radioactif est l'examen de référence pour l'évaluation fonctionnelle de la glande thyroïde et la détection de tissu thyroïdien résiduel ou métastatique après thyroïdectomie totale.",
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_non_nuc: { 
+        sections: [
+          {
+            title: "Indications cliniques principales",
+            text: "La scintigraphie thyroïdienne reste un examen central dans l'algorithme diagnostique des dysthyroïdies, bien qu'elle soit souvent précédée par l'échographie et la biologie.",
+            list: [
+              "Bilan étiologique d'une hyperthyroïdie (TSH basse) : diagnostic différentiel entre Maladie de Basedow, Nodule toxique, Goitre multinodulaire toxique et Thyroïdite.",
+              "Évaluation d'un nodule thyroïdien : uniquement si la TSH est basse (recherche d'un nodule chaud, presque toujours bénin, dispensant de cytoponction).",
+              "Bilan d'extension et suivi des carcinomes thyroïdiens différenciés (après thyroïdectomie totale et irathérapie).",
+              "Recherche de tissu thyroïdien ectopique (struma ovarii, thyroïde linguale)."
+            ]
+          },
+          {
+            title: "Contre-indications et Précautions",
+            infoBox: {
+              type: "warning",
+              title: "Surcharge iodée : l'ennemi de la scintigraphie",
+              text: "Toute surcharge en iode sature les récepteurs thyroïdiens et empêche la fixation du traceur radioactif, rendant l'examen ininterprétable (examen 'blanc')."
+            },
+            list: [
+              "Grossesse (contre-indication absolue).",
+              "Allaitement (suspension nécessaire, durée variable selon l'isotope).",
+              "Scanner avec injection de produit de contraste iodé récent (délai minimum de 4 à 6 semaines).",
+              "Prise d'Amiodarone (Cordarone) : surcharge iodée massive pouvant durer de 3 à 6 mois après l'arrêt.",
+              "Compléments alimentaires riches en iode ou algues."
+            ]
+          },
+          {
+            title: "Préparation du patient (à prescrire)",
+            text: "Pour que l'examen soit contributif, la thyroïde doit être 'avide' d'iode et stimulée par la TSH.",
+            steps: [
+              { title: "Sevrage hormonal (si applicable)", text: "Arrêt de la Lévothyroxine (T4) pendant 4 semaines, ou de la Liothyronine (T3) pendant 2 semaines. Alternative : injections de rhTSH (Thyrogen) selon le protocole." },
+              { title: "Arrêt des antithyroïdiens de synthèse (ATS)", text: "Arrêt du Néo-Mercazole, Thyrozol ou PTU 3 à 5 jours avant l'examen." },
+              { title: "Régime pauvre en iode", text: "À suivre pendant les 10 à 15 jours précédant l'examen (éviter fruits de mer, sel iodé, poissons marins)." }
+            ]
+          },
+          {
+            title: "Interprétation simplifiée du compte-rendu",
+            text: "Le compte-rendu de médecine nucléaire décrira la morphologie fonctionnelle et le taux de fixation (uptake).",
+            list: [
+              "Fixation homogène et diffuse, augmentée : typique de la Maladie de Basedow.",
+              "Hyperfixation focale avec extinction du reste de la glande : Nodule toxique (adénome de Plummer).",
+              "Fixation hétérogène en damier : Goitre multinodulaire toxique.",
+              "Absence de fixation (glande 'blanche') : Thyroïdite subaiguë (de Quervain), thyroïdite du post-partum, ou surcharge iodée factice."
+            ]
+          }
+        ]
+      },
       medecin_nuc:{
         sections:[
-          {title:'Principe physique', text:"L'iode est captée de manière sélective par les cellules folliculaires thyroïdiennes via le symporteur Na/I (NIS). L'¹²³I (T½=13h, γ 159 keV) est préféré pour le diagnostic. L'¹³¹I (T½=8j, γ 364 keV, β⁻) est utilisé pour le traitement et la scintigraphie post-thérapeutique.", list:['Dose diagnostique ¹²³I : 37-185 MBq','Dose diagnostique ¹³¹I : 74-185 MBq (basse dose)','Acquisition : 24h post-administration','Caméra gamma : collimateur haute énergie pour ¹³¹I']},
-          {title:'Indications', list:["Exploration d'un nodule thyroïdien chaud/froid","Bilan d'extension post-thyroïdectomie totale",'Dosimétrie pré-thérapeutique','Suivi des carcinomes différenciés (CPT, CVF)','Recherche de struma ovarii']},
-          {title:'Préparation du patient', list:['Sevrage en lévothyroxine : 4-6 semaines (ou rhTSH x2)','TSH stimulée > 30 mUI/L souhaitée','Régime pauvre en iode : 2 semaines','Contrôle iodurie < 100 µg/L','Arrêt amiodarone si possible (délai 3-6 mois)']},
-          {title:'Interprétation', text:'La fixation normale est homogène et bilobée. Une hyperfixation focale évoque un adénome toxique. Une hypofixation peut correspondre à un nodule froid (risque de malignité ~5-15%). Après thyroïdectomie, toute fixation extra-cervicale signe des métastases fonctionnelles.'}
+          {
+            title: "Choix du Radiopharmaceutique", 
+            text: "Le choix dépend de l'indication clinique (bénin vs malin) et de la disponibilité.",
+            list: [
+              "Iode-123 (Na¹²³I) : Isotope de choix pour le diagnostic bénin. Émetteur gamma pur (159 keV), T½ = 13.2h. Excellente qualité d'image, dosimétrie favorable. Activité : 10 à 20 MBq.",
+              "Iode-131 (Na¹³¹I) : Réservé au suivi du cancer thyroïdien (balayage corps entier) et à la thérapie. Émetteur bêta- et gamma (364 keV), T½ = 8 jours. Activité diagnostique : 74 à 185 MBq. Activité thérapeutique : 1.1 à 7.4 GBq.",
+              "Technétium-99m (⁹⁹ᵐTc-pertechnétate) : Alternative pour l'imagerie bénigne. Capté par le NIS mais non organifié. T½ = 6h. Images précoces (20 min). Moins irradiant, moins cher, mais moins physiologique que l'iode."
+            ]
+          },
+          {
+            title: "Protocoles d'Acquisition", 
+            steps: [
+              { title: "Iode-123 (Bénin)", text: "Administration orale. Acquisition à H+2 ou H+4 (parfois H+24). Caméra gamma, collimateur sténopé (Pinhole) pour une haute résolution spatiale, ou LEHR avec zoom. Matrice 128x128 ou 256x256. 100k à 200k coups par image." },
+              { title: "Iode-131 (Balayage Corps Entier - WBS)", text: "Acquisition tardive à J+2 ou J+3 (diagnostic) ou J+3 à J+7 (post-thérapie). Collimateur Haute Énergie (HE). Vitesse de balayage lente (ex: 10 cm/min). Couplage TEMP/TDM systématique sur les foyers suspects pour localisation anatomique précise." }
+            ]
+          },
+          {
+            title: "Dosimétrie et Radioprotection", 
+            text: "L'iode-131 nécessite des précautions strictes en raison de son émission bêta- (irradiation des tissus) et gamma (irradiation externe).",
+            stats: [
+              { value: "~1.5 mSv", label: "Dose efficace (¹²³I, 15 MBq)" },
+              { value: "~15 mSv", label: "Dose efficace (¹³¹I diag, 185 MBq)" },
+              { value: "1-2 jours", label: "Éviction enfants/femmes enceintes (¹³¹I diag)" }
+            ]
+          },
+          {
+            title: "Pièges et Artefacts", 
+            list: [
+              "Stunning effect (sidération) : L'utilisation d'une dose diagnostique d'¹³¹I peut réduire la fixation de la dose thérapeutique subséquente. Préférer l'¹²³I pour la dosimétrie pré-thérapeutique.",
+              "Fixations physiologiques (WBS) : Glandes salivaires, muqueuse gastrique, vessie, intestin, foie (métabolisme des hormones thyroïdiennes), thymus (parfois).",
+              "Faux positifs (WBS) : Kystes pleuro-péricardiques, aspergillome, tératome, inflammation locale."
+            ]
+          }
         ],
-        table:{headers:['Radionucléide','T½','Énergie γ','Dose efficace','Usage'], rows:[['¹²³I','13h','159 keV','~1 mSv','Diagnostic'],['¹³¹I','8j','364 keV','~10 mSv/37MBq','Traitement / WBS'],['Tc-99m pertechnétate','6h','140 keV','~1 mSv','Exploration simple']]}
+        table:{
+          headers:['Isotope','T½','Émission principale','Énergie','Usage principal'], 
+          rows:[
+            ['¹²³I','13.2h','Gamma (γ)','159 keV','Diagnostic (Bénin)'],
+            ['¹³¹I','8.02j','Bêta (β-) et Gamma (γ)','364 keV (γ)','Thérapie & WBS Cancer'],
+            ['⁹⁹ᵐTc','6.02h','Gamma (γ)','140 keV','Alternative diagnostique']
+          ]
+        }
       },
       patient:{
         sections:[
-          {title:"C'est quoi cet examen ?", text:'La scintigraphie thyroïdienne est un examen médical qui permet de "photographier" votre glande thyroïde de l\'intérieur. On vous donne un produit légèrement radioactif (de l\'iode) que votre thyroïde va absorber naturellement, puis une caméra spéciale prend des images.'},
-          {title:'Pourquoi on me prescrit cet examen ?', list:['Pour analyser le fonctionnement de votre thyroïde',"Pour voir s'il reste du tissu thyroïdien après une opération","Pour chercher si un cancer de la thyroïde s'est propagé","Pour guider votre traitement à l'iode radioactif"]},
-          {title:'Comment se préparer ?', list:['Arrêter votre traitement thyroïdien quelques semaines avant (votre médecin vous expliquera)','Suivre un régime sans iode pendant 2 semaines (éviter poissons, fruits de mer, sel iodé)','Prévenir si vous êtes enceinte ou allaitez','Informer si vous avez eu un scanner avec produit de contraste récemment']},
-          {title:"L'examen est-il dangereux ?", text:"Non. La dose de radioactivité reçue est très faible — comparable à celle d'une radiographie. L'iode est naturellement éliminé par votre corps en quelques jours. Des précautions simples sont à respecter après l'examen (éviter les contacts prolongés avec de jeunes enfants pendant 24-48h)."}
+          {
+            title: "Comprendre votre examen", 
+            text: "La scintigraphie thyroïdienne est un examen d'imagerie qui permet de voir comment fonctionne votre thyroïde (une petite glande en forme de papillon située à la base de votre cou). Contrairement à une échographie qui montre la 'forme' de la glande, la scintigraphie montre son 'activité'.",
+            infoBox: {
+              type: "info",
+              title: "Pourquoi utilise-t-on de l'iode ?",
+              text: "La thyroïde est le seul organe du corps qui se nourrit d'iode pour fabriquer ses hormones. En vous donnant une infime quantité d'iode très légèrement radioactif, on peut suivre son trajet et voir exactement quelles parties de votre thyroïde travaillent trop, ou pas assez."
+            }
+          },
+          {
+            title: "Pourquoi votre médecin a-t-il prescrit cet examen ?", 
+            list: [
+              "Pour comprendre la cause d'une hyperthyroïdie (quand la thyroïde travaille trop).",
+              "Pour analyser un nodule (une petite boule) découvert à l'échographie ou à la palpation.",
+              "Pour vérifier s'il reste des cellules thyroïdiennes après une opération chirurgicale de la thyroïde.",
+              "Pour préparer un traitement à l'iode radioactif."
+            ]
+          },
+          {
+            title: "Comment bien vous préparer ?", 
+            text: "La préparation est l'étape la plus importante pour la réussite de cet examen. Si votre thyroïde est déjà 'pleine' d'iode provenant de votre alimentation ou de médicaments, elle n'absorbera pas le produit de l'examen.",
+            steps: [
+              { title: "Médicaments pour la thyroïde", text: "Si vous prenez du Lévothyrox, du Néo-Mercazole ou un médicament similaire, votre médecin vous demandera probablement de l'arrêter plusieurs jours ou semaines avant l'examen. Suivez ses instructions à la lettre." },
+              { title: "Régime sans iode", text: "Pendant les 10 à 15 jours avant l'examen, évitez les aliments riches en iode : poissons de mer, fruits de mer, algues, sel enrichi en iode, et certains compléments alimentaires." },
+              { title: "Examens récents", text: "Si vous avez passé un scanner avec injection de produit de contraste (qui contient beaucoup d'iode) dans le mois précédent, signalez-le impérativement lors de la prise de rendez-vous." }
+            ]
+          },
+          {
+            title: "Le déroulement le jour J", 
+            steps: [
+              { title: "L'administration", text: "À votre arrivée, on vous fera avaler une petite gélule (ou boire un liquide) contenant l'iode radioactif. Cela n'a pas de goût et ne rend pas malade." },
+              { title: "L'attente", text: "Il faut laisser le temps à votre thyroïde d'absorber l'iode. Vous devrez patienter entre 2 heures et 24 heures selon le type d'iode utilisé. Vous pourrez généralement rentrer chez vous ou aller travailler pendant cette attente." },
+              { title: "Les images", text: "Vous reviendrez dans le service. Vous serez allongé(e) sur le dos, la tête légèrement en arrière. La caméra s'approchera très près de votre cou sans vous toucher. L'enregistrement dure environ 15 à 20 minutes. Il faut rester immobile." }
+            ]
+          },
+          {
+            title: "Est-ce dangereux ? (Radioprotection)", 
+            text: "La quantité de radioactivité utilisée pour le diagnostic est extrêmement faible. Il n'y a pas d'effets secondaires (pas de chute de cheveux, pas de nausées, pas d'allergie à l'iode radioactif).",
+            list: [
+              "Grossesse et allaitement : L'examen est strictement interdit si vous êtes enceinte. Si vous allaitez, il faudra suspendre l'allaitement pendant une période que le médecin vous précisera.",
+              "Après l'examen : L'iode s'élimine naturellement par les urines. On vous conseillera de boire beaucoup d'eau. Par précaution, on vous demandera d'éviter les contacts très proches et prolongés avec les femmes enceintes et les jeunes enfants pendant 24 à 48 heures."
+            ]
+          }
         ]
       }
     }

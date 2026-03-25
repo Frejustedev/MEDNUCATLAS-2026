@@ -225,6 +225,43 @@ export function AdminPanel() {
               </div>
             </div>
             
+            <div className="bg-bg2 border border-border-main rounded-xl p-6 mb-8">
+              <h3 className="text-lg font-serif text-text-main mb-4">Outils d&apos;administration</h3>
+              <div className="flex items-center gap-4">
+                <button 
+                  onClick={async () => {
+                    if (!confirm("Voulez-vous vraiment migrer les données initiales vers Firestore ? Cela écrasera les articles existants avec le même ID.")) return;
+                    setIsSaving(true);
+                    try {
+                      const { ENTRIES } = await import('@/lib/data');
+                      let count = 0;
+                      for (const entry of ENTRIES) {
+                        const articleData = {
+                          ...entry,
+                          content: JSON.stringify(entry.content),
+                          updatedAt: serverTimestamp(),
+                          createdAt: serverTimestamp()
+                        };
+                        await setDoc(doc(db, 'articles', entry.id), articleData);
+                        count++;
+                      }
+                      alert(`Migration terminée avec succès ! ${count} articles ont été importés.`);
+                    } catch (error) {
+                      console.error("Erreur lors de la migration:", error);
+                      alert("Une erreur est survenue lors de la migration. Consultez la console.");
+                    } finally {
+                      setIsSaving(false);
+                    }
+                  }}
+                  disabled={isSaving}
+                  className="px-4 py-2 bg-teal/20 text-teal rounded-lg font-medium hover:bg-teal/30 transition-colors disabled:opacity-50 text-sm flex items-center gap-2"
+                >
+                  <Save className="w-4 h-4" />
+                  {isSaving ? 'Migration...' : 'Migrer les données initiales vers Firestore'}
+                </button>
+              </div>
+            </div>
+            
             <div className="bg-bg2 border border-border-main rounded-xl p-6">
               <h3 className="text-lg font-serif text-text-main mb-4">Derniers articles ajoutés</h3>
               <div className="space-y-3">

@@ -290,10 +290,10 @@ export function LandingPage() {
       <section id="pricing" className="px-6 md:px-12 py-24 md:py-[100px] bg-bg border-t border-border-main">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-teal/10 border border-border-main px-3 py-1.5 rounded-full text-[10px] tracking-[2px] uppercase text-teal mb-6 font-mono">
-            Tarification transparente
+            Promotion de lancement
           </div>
           <h2 className="font-serif text-4xl md:text-[52px] font-light leading-[1.15] mb-6">
-            Votre plan,<br /><em className="not-italic italic text-teal">votre expertise</em>
+            Votre plan,<br /><em className="not-italic italic text-teal">100% Gratuit</em>
           </h2>
           <p className="text-[15px] text-text2 leading-[1.7] max-w-xl mx-auto">
             Cinq profils pensés pour chaque acteur de la médecine nucléaire — du grand public au spécialiste expert.
@@ -320,7 +320,10 @@ export function LandingPage() {
           <div className="bg-bg2 border border-border-main rounded-2xl p-6 hover:bg-bg3 transition-colors flex flex-col">
             <div className="text-3xl mb-4">🩺</div>
             <div className="font-mono text-[10px] tracking-[2px] uppercase text-teal mb-2">Médecin (Non MN)</div>
-            <div className="font-serif text-4xl font-light mb-1">9<span className="text-lg">€</span><span className="text-sm font-sans text-text3">/mois</span></div>
+            <div className="font-serif text-4xl font-light mb-1 flex items-baseline gap-3">
+              <span className="line-through text-text3 text-2xl">9€</span>
+              <span className="text-teal">Gratuit</span>
+            </div>
             <p className="text-xs text-text2 mb-6 min-h-[40px]">Référence clinique pour la pratique quotidienne.</p>
             <button onClick={authUser ? showHome : () => openAuthModal('medecin_non_nuc')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-teal text-bg hover:bg-teal2 transition-colors mb-6 shadow-[0_0_15px_rgba(0,201,177,0.2)]">Activer Pro</button>
             <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Patient, plus</div>
@@ -339,7 +342,10 @@ export function LandingPage() {
             </div>
             <div className="text-3xl mb-4 mt-2">⚛️</div>
             <div className="font-mono text-[10px] tracking-[2px] uppercase text-purple-400 mb-2">Médecin Nucléaire</div>
-            <div className="font-serif text-4xl font-light mb-1">25<span className="text-lg">€</span><span className="text-sm font-sans text-text3">/mois</span></div>
+            <div className="font-serif text-4xl font-light mb-1 flex items-baseline gap-3">
+              <span className="line-through text-text3 text-2xl">25€</span>
+              <span className="text-purple-400">Gratuit</span>
+            </div>
             <p className="text-xs text-text2 mb-6 min-h-[40px]">L&apos;arsenal complet du spécialiste en médecine nucléaire.</p>
             <button onClick={authUser ? showHome : () => openAuthModal('medecin_nuc')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition-opacity mb-6 shadow-[0_0_20px_rgba(167,139,250,0.3)]">Accès Expert</button>
             <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Médecin, plus</div>
@@ -356,7 +362,7 @@ export function LandingPage() {
           <div className="bg-bg2 border border-border-main rounded-xl p-5 flex items-center justify-between hover:border-gold/30 transition-colors">
             <div>
               <div className="font-mono text-[10px] tracking-[2px] uppercase text-gold mb-1">Hôpitaux & Cliniques</div>
-              <div className="text-sm text-text2">Licence multi-utilisateurs dès <span className="text-text-main font-medium">99€/mois</span></div>
+              <div className="text-sm text-text2">Licence multi-utilisateurs <span className="line-through text-text3 text-xs ml-1">99€/mois</span> <span className="text-gold font-medium ml-1">Gratuit</span></div>
             </div>
             <button onClick={authUser ? showHome : () => openAuthModal('institution')} className="px-4 py-2 rounded-lg text-xs font-medium bg-gold/10 text-gold hover:bg-gold/20 transition-colors border border-gold/20">Contacter</button>
           </div>
@@ -370,7 +376,7 @@ export function LandingPage() {
           Prêt à transformer<br /><em className="not-italic italic text-teal">votre pratique ?</em>
         </h2>
         <p className="text-text2 text-base mb-12 relative max-w-lg mx-auto">
-          Rejoignez la communauté NucleAtlas aujourd&apos;hui.<br />Profitez de 14 jours d&apos;essai gratuit sur le plan MN Expert.
+          Rejoignez la communauté NucleAtlas aujourd&apos;hui.<br />Profitez de notre offre de lancement : <strong className="text-teal font-medium">tous les plans sont 100% gratuits</strong>.
         </p>
         <div className="flex flex-wrap gap-4 justify-center relative">
           {authUser ? (
@@ -383,7 +389,7 @@ export function LandingPage() {
                 Créer un compte gratuit →
               </button>
               <button onClick={() => openAuthModal('medecin_nuc')} className="text-text2 px-8 py-3.5 rounded-lg text-sm border border-border-main hover:border-teal hover:text-teal transition-all">
-                Essayer MN Expert (14j)
+                Accéder à MN Expert (Gratuit)
               </button>
             </>
           )}
