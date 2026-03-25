@@ -117,10 +117,10 @@ export function ArticleView() {
         </div>
 
         <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9 prose prose-invert prose-teal max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content.lead}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{content?.lead || ''}</ReactMarkdown>
         </div>
 
-        {content.sections.map((s, i) => (
+        {content?.sections?.map((s, i) => (
           <div key={i} className="mb-8" id={`sec-${i}`}>
             <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
               {s.title}
@@ -192,7 +192,7 @@ export function ArticleView() {
           </div>
         ))}
 
-        {content.table && (
+        {content?.table && (
           <div className="mb-8">
             <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
               Données de référence
@@ -264,7 +264,7 @@ export function ArticleView() {
 
       <div className="w-[200px] shrink-0 p-8 px-5 border-l border-border-main overflow-y-auto hidden lg:block">
         <div className="font-mono text-[9px] tracking-[2px] uppercase text-text3 mb-3">Sommaire</div>
-        {content.sections.map((s, i) => (
+        {content?.sections?.map((s, i) => (
           <div
             key={i}
             onClick={() => scrollToSection(i)}
