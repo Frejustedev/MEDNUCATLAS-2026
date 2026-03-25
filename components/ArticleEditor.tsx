@@ -10,9 +10,9 @@ interface ArticleEditorProps {
 }
 
 export function ArticleEditor({ content, onChange }: ArticleEditorProps) {
-  const [activeTab, setActiveTab] = useState<'pro' | 'patient'>('pro');
+  const [activeTab, setActiveTab] = useState<'medecin_nuc' | 'medecin_non_nuc' | 'patient'>('medecin_nuc');
 
-  const handleModeChange = (mode: 'pro' | 'patient', newModeData: ContentMode) => {
+  const handleModeChange = (mode: 'medecin_nuc' | 'medecin_non_nuc' | 'patient', newModeData: ContentMode) => {
     onChange({
       ...content,
       [mode]: newModeData
@@ -59,12 +59,18 @@ export function ArticleEditor({ content, onChange }: ArticleEditorProps) {
 
   return (
     <div className="border border-border-main rounded-lg overflow-hidden bg-bg2">
-      <div className="flex border-b border-border-main bg-bg3">
+      <div className="flex border-b border-border-main bg-bg3 flex-wrap">
         <button
-          onClick={() => setActiveTab('pro')}
-          className={`flex-1 py-3 text-sm font-medium transition-colors ${activeTab === 'pro' ? 'bg-teal/10 text-teal border-b-2 border-teal' : 'text-text3 hover:text-text-main'}`}
+          onClick={() => setActiveTab('medecin_nuc')}
+          className={`flex-1 py-3 text-sm font-medium transition-colors ${activeTab === 'medecin_nuc' ? 'bg-teal/10 text-teal border-b-2 border-teal' : 'text-text3 hover:text-text-main'}`}
         >
-          Version Professionnelle
+          Médecin Nucléaire
+        </button>
+        <button
+          onClick={() => setActiveTab('medecin_non_nuc')}
+          className={`flex-1 py-3 text-sm font-medium transition-colors ${activeTab === 'medecin_non_nuc' ? 'bg-teal2/10 text-teal2 border-b-2 border-teal2' : 'text-text3 hover:text-text-main'}`}
+        >
+          Médecin (Non MN)
         </button>
         <button
           onClick={() => setActiveTab('patient')}
@@ -140,7 +146,7 @@ export function ArticleEditor({ content, onChange }: ArticleEditorProps) {
                   {/* Optional: Add InfoBox toggle */}
                   <div className="pt-2 border-t border-border-main/50">
                     <div className="flex items-center justify-between">
-                      <label className="text-xs text-text3">Boîte d'information (Optionnelle)</label>
+                      <label className="text-xs text-text3">Boîte d&apos;information (Optionnelle)</label>
                       {!section.infoBox && (
                         <button 
                           onClick={() => updateSection(index, { ...section, infoBox: { type: 'info', title: 'Info', text: '' } })}

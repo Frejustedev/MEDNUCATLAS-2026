@@ -292,52 +292,52 @@ export function LandingPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
-          {/* Free */}
+          {/* Patient */}
           <div className="bg-bg2 border border-border-main rounded-2xl p-6 hover:bg-bg3 transition-colors flex flex-col">
-            <div className="text-3xl mb-4">🌐</div>
-            <div className="font-mono text-[10px] tracking-[2px] uppercase text-text3 mb-2">Free</div>
+            <div className="text-3xl mb-4">👤</div>
+            <div className="font-mono text-[10px] tracking-[2px] uppercase text-text3 mb-2">Patient</div>
             <div className="font-serif text-4xl font-light mb-1">0<span className="text-lg">€</span><span className="text-sm font-sans text-text3">/mois</span></div>
             <p className="text-xs text-text2 mb-6 min-h-[40px]">Découverte de l&apos;encyclopédie sans engagement.</p>
-            <button onClick={authUser ? showHome : () => openAuthModal('free')} className="w-full py-2.5 rounded-lg text-xs font-medium border border-border-main text-text2 hover:text-teal hover:border-teal transition-colors mb-6">Commencer</button>
+            <button onClick={authUser ? showHome : () => openAuthModal('patient')} className="w-full py-2.5 rounded-lg text-xs font-medium border border-border-main text-text2 hover:text-teal hover:border-teal transition-colors mb-6">Commencer</button>
             <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Inclus</div>
             <ul className="flex flex-col gap-3 flex-1">
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-text3">✓</span> 50 entrées</li>
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-text3">✓</span> Mode patient & pro</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-text3">✓</span> Accès aux articles vulgarisés</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-text3">✓</span> Mode lecture Patient</li>
               <li className="flex items-start gap-2 text-xs text-text2"><span className="text-text3">✓</span> FR / EN / AR</li>
             </ul>
           </div>
 
-          {/* Médecin Pro */}
+          {/* Médecin (Non MN) */}
           <div className="bg-bg2 border border-border-main rounded-2xl p-6 hover:bg-bg3 transition-colors flex flex-col">
-            <div className="text-3xl mb-4">⚕️</div>
-            <div className="font-mono text-[10px] tracking-[2px] uppercase text-teal mb-2">Médecin Pro</div>
+            <div className="text-3xl mb-4">🩺</div>
+            <div className="font-mono text-[10px] tracking-[2px] uppercase text-teal mb-2">Médecin (Non MN)</div>
             <div className="font-serif text-4xl font-light mb-1">9<span className="text-lg">€</span><span className="text-sm font-sans text-text3">/mois</span></div>
             <p className="text-xs text-text2 mb-6 min-h-[40px]">Référence clinique pour la pratique quotidienne.</p>
-            <button onClick={authUser ? showHome : () => openAuthModal('pro')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-teal text-bg hover:bg-teal2 transition-colors mb-6 shadow-[0_0_15px_rgba(0,201,177,0.2)]">Activer Pro</button>
-            <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Free, plus</div>
+            <button onClick={authUser ? showHome : () => openAuthModal('medecin_non_nuc')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-teal text-bg hover:bg-teal2 transition-colors mb-6 shadow-[0_0_15px_rgba(0,201,177,0.2)]">Activer Pro</button>
+            <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Patient, plus</div>
             <ul className="flex flex-col gap-3 flex-1">
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-teal">✓</span> Protocoles complets</li>
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-teal">✓</span> Base radiopharm.</li>
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-teal">✓</span> Cas avec images</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-teal">✓</span> Indications des examens</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-teal">✓</span> Mode lecture Médecin</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-teal">✓</span> Cas cliniques illustrés</li>
             </ul>
           </div>
 
-          {/* MN Expert */}
+          {/* Médecin Nucléaire */}
           <div className="bg-bg3 border-2 border-purple-500/50 rounded-2xl p-6 hover:border-purple-500 transition-colors flex flex-col relative overflow-hidden shadow-[0_0_30px_rgba(167,139,250,0.15)]">
             <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-purple-500 via-teal to-purple-500 animate-shimmer bg-[length:200%_100%]" />
             <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-[9px] font-mono tracking-widest uppercase px-3 py-1 rounded-b-lg shadow-lg whitespace-nowrap">
-              Médecine Nucléaire
+              Expertise Complète
             </div>
-            <div className="text-3xl mb-4 mt-2">☢️</div>
-            <div className="font-mono text-[10px] tracking-[2px] uppercase text-purple-400 mb-2">MN Expert</div>
+            <div className="text-3xl mb-4 mt-2">⚛️</div>
+            <div className="font-mono text-[10px] tracking-[2px] uppercase text-purple-400 mb-2">Médecin Nucléaire</div>
             <div className="font-serif text-4xl font-light mb-1">25<span className="text-lg">€</span><span className="text-sm font-sans text-text3">/mois</span></div>
-            <p className="text-xs text-text2 mb-6 min-h-[40px]">L&apos;arsenal complet du médecin nucléaire.</p>
-            <button onClick={authUser ? showHome : () => openAuthModal('expert')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition-opacity mb-6 shadow-[0_0_20px_rgba(167,139,250,0.3)]">Accès MN Expert</button>
-            <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Pro, plus</div>
+            <p className="text-xs text-text2 mb-6 min-h-[40px]">L&apos;arsenal complet du spécialiste en médecine nucléaire.</p>
+            <button onClick={authUser ? showHome : () => openAuthModal('medecin_nuc')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition-opacity mb-6 shadow-[0_0_20px_rgba(167,139,250,0.3)]">Accès Expert</button>
+            <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Médecin, plus</div>
             <ul className="flex flex-col gap-3 flex-1">
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-purple-400">✓</span> Dosimétrie ¹³¹I</li>
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-purple-400">✓</span> IA compte-rendus</li>
-              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-purple-400">✓</span> Communauté privée</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-purple-400">✓</span> Protocoles d&apos;acquisition</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-purple-400">✓</span> Radiopharmacie & Dosimétrie</li>
+              <li className="flex items-start gap-2 text-xs text-text2"><span className="text-purple-400">✓</span> Mode lecture Expert</li>
             </ul>
           </div>
         </div>
@@ -370,10 +370,10 @@ export function LandingPage() {
             </button>
           ) : (
             <>
-              <button onClick={() => openAuthModal('free')} className="bg-teal text-bg px-8 py-3.5 rounded-lg text-sm font-medium tracking-wide hover:bg-teal2 hover:-translate-y-px transition-all shadow-[0_0_30px_rgba(0,201,177,0.3)] hover:shadow-[0_0_40px_rgba(0,201,177,0.4)]">
+              <button onClick={() => openAuthModal('patient')} className="bg-teal text-bg px-8 py-3.5 rounded-lg text-sm font-medium tracking-wide hover:bg-teal2 hover:-translate-y-px transition-all shadow-[0_0_30px_rgba(0,201,177,0.3)] hover:shadow-[0_0_40px_rgba(0,201,177,0.4)]">
                 Créer un compte gratuit →
               </button>
-              <button onClick={() => openAuthModal('expert')} className="text-text2 px-8 py-3.5 rounded-lg text-sm border border-border-main hover:border-teal hover:text-teal transition-all">
+              <button onClick={() => openAuthModal('medecin_nuc')} className="text-text2 px-8 py-3.5 rounded-lg text-sm border border-border-main hover:border-teal hover:text-teal transition-all">
                 Essayer MN Expert (14j)
               </button>
             </>

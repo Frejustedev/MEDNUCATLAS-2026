@@ -18,7 +18,8 @@ export function AdminPanel() {
   const [formData, setFormData] = useState<Partial<Article>>({});
   const [contentData, setContentData] = useState<any>({
     lead: "",
-    pro: { sections: [] },
+    medecin_nuc: { sections: [] },
+    medecin_non_nuc: { sections: [] },
     patient: { sections: [] }
   });
   const [isSaving, setIsSaving] = useState(false);
@@ -91,7 +92,8 @@ export function AdminPanel() {
     setFormData(article);
     setContentData(article.content || {
       lead: "",
-      pro: { sections: [] },
+      medecin_nuc: { sections: [] },
+      medecin_non_nuc: { sections: [] },
       patient: { sections: [] }
     });
   };
@@ -109,7 +111,8 @@ export function AdminPanel() {
     });
     setContentData({
       lead: "",
-      pro: { sections: [] },
+      medecin_nuc: { sections: [] },
+      medecin_non_nuc: { sections: [] },
       patient: { sections: [] }
     });
   };
@@ -175,7 +178,7 @@ export function AdminPanel() {
             onClick={() => { setActiveTab('overview'); setEditingId(null); }}
             className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeTab === 'overview' ? 'bg-teal/10 text-teal' : 'text-text2 hover:bg-bg3'}`}
           >
-            <LayoutDashboard className="w-4 h-4" /> Vue d'ensemble
+            <LayoutDashboard className="w-4 h-4" /> Vue d&apos;ensemble
           </button>
           <button 
             onClick={() => { setActiveTab('articles'); setEditingId(null); }}
@@ -265,18 +268,18 @@ export function AdminPanel() {
                         <td className="px-6 py-4 text-text2">{u.email}</td>
                         <td className="px-6 py-4">
                           <span className={`px-2.5 py-1 rounded-full text-xs font-medium ${u.role === 'admin' ? 'bg-red-500/10 text-red-500' : 'bg-teal/10 text-teal'}`}>
-                            {u.role || 'free'}
+                            {u.role || 'patient'}
                           </span>
                         </td>
                         <td className="px-6 py-4 text-text2">{u.profileType || '-'}</td>
                         <td className="px-6 py-4 text-right">
                           <select 
-                            value={u.role || 'free'}
+                            value={u.role || 'patient'}
                             onChange={async (e) => {
                               const newRole = e.target.value;
                               try {
-                                await updateDoc(doc(db, 'users', u.id), { role: newRole });
-                                setUsers(users.map(user => user.id === u.id ? { ...user, role: newRole } : user));
+                                await updateDoc(doc(db, 'users', u.id), { role: newRole, profileType: newRole });
+                                setUsers(users.map(user => user.id === u.id ? { ...user, role: newRole, profileType: newRole } : user));
                               } catch (error) {
                                 handleFirestoreError(error, OperationType.UPDATE, `users/${u.id}`);
                                 alert('Erreur lors de la mise à jour du rôle.');
@@ -284,7 +287,9 @@ export function AdminPanel() {
                             }}
                             className="bg-bg3 border border-border-main rounded px-2 py-1 text-xs outline-none focus:border-teal text-text-main"
                           >
-                            <option value="free">Free</option>
+                            <option value="patient">Patient</option>
+                            <option value="medecin_non_nuc">Médecin (Non MN)</option>
+                            <option value="medecin_nuc">Médecin Nucléaire</option>
                             <option value="admin">Admin</option>
                           </select>
                         </td>
@@ -344,7 +349,7 @@ export function AdminPanel() {
               {!editingId ? (
                 <div className="h-full flex flex-col items-center justify-center text-text3">
                   <FileText className="w-16 h-16 mb-4 opacity-20" />
-                  <div className="font-serif text-xl text-text2 mb-2">Éditeur d'articles</div>
+                  <div className="font-serif text-xl text-text2 mb-2">Éditeur d&apos;articles</div>
                   <p className="text-sm">Sélectionnez un article dans la liste ou créez-en un nouveau.</p>
                 </div>
               ) : (
@@ -369,7 +374,7 @@ export function AdminPanel() {
                       
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
-                          <label className="block text-xs font-mono text-text3 mb-1.5 uppercase tracking-wider">ID de l'article</label>
+                          <label className="block text-xs font-mono text-text3 mb-1.5 uppercase tracking-wider">ID de l&apos;article</label>
                           <input 
                             type="text" 
                             value={formData.id || ''} 
@@ -552,7 +557,7 @@ export function AdminPanel() {
 
                     <div className="bg-bg2 p-5 rounded-xl border border-border-main space-y-4">
                       <div className="flex justify-between items-center border-b border-border-main pb-2">
-                        <h3 className="text-sm font-medium text-text-main">Contenu de l'article</h3>
+                        <h3 className="text-sm font-medium text-text-main">Contenu de l&apos;article</h3>
                       </div>
                       <ContentEditor 
                         content={contentData} 
@@ -566,7 +571,7 @@ export function AdminPanel() {
                           onClick={() => handleDelete(formData.id!)} 
                           className="px-4 py-2 bg-red-500/10 text-red-500 border border-red-500/20 rounded-md text-sm flex items-center gap-2 hover:bg-red-500/20 transition-colors"
                         >
-                          <Trash2 className="w-4 h-4" /> Supprimer l'article
+                          <Trash2 className="w-4 h-4" /> Supprimer l&apos;article
                         </button>
                       </div>
                     )}

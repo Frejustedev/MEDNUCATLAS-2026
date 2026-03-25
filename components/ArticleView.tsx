@@ -76,17 +76,27 @@ export function ArticleView() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 mb-8 p-3 bg-bg2 rounded-lg border border-border-main">
+        <div className="flex items-center gap-3 mb-8 p-3 bg-bg2 rounded-lg border border-border-main flex-wrap">
           {userProfile !== 'patient' && (
             <>
               <span className="text-[11px] text-text3">Mode lecture :</span>
+              {userProfile === 'medecin_nuc' || userProfile === 'admin' ? (
+                <button
+                  onClick={() => setArticleMode('medecin_nuc')}
+                  className={`px-4 py-1.5 rounded-[5px] text-[11px] font-mono cursor-pointer border-none transition-all tracking-[0.5px] ${
+                    articleMode === 'medecin_nuc' ? 'bg-teal text-bg' : 'bg-transparent text-text3 hover:text-text-main'
+                  }`}
+                >
+                  ⚛️ Médecin Nucléaire
+                </button>
+              ) : null}
               <button
-                onClick={() => setArticleMode('pro')}
+                onClick={() => setArticleMode('medecin_non_nuc')}
                 className={`px-4 py-1.5 rounded-[5px] text-[11px] font-mono cursor-pointer border-none transition-all tracking-[0.5px] ${
-                  articleMode === 'pro' ? 'bg-teal text-bg' : 'bg-transparent text-text3 hover:text-text-main'
+                  articleMode === 'medecin_non_nuc' ? 'bg-teal2 text-bg' : 'bg-transparent text-text3 hover:text-text-main'
                 }`}
               >
-                ⚕ Professionnel
+                🩺 Médecin (Non MN)
               </button>
               <button
                 onClick={() => setArticleMode('patient')}
@@ -94,7 +104,7 @@ export function ArticleView() {
                   articleMode === 'patient' ? 'bg-gold text-bg' : 'bg-transparent text-text3 hover:text-text-main'
                 }`}
               >
-                ♡ Patient
+                👤 Patient
               </button>
             </>
           )}
@@ -266,7 +276,7 @@ export function ArticleView() {
       </div>
 
       {isAiOpen && (
-        <AiAssistant article={article} onClose={() => setIsAiOpen(false)} />
+        <AiAssistant article={article} onClose={() => setIsAiOpen(false)} userProfile={userProfile} />
       )}
     </div>
   );

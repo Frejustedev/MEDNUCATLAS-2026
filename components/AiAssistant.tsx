@@ -5,13 +5,14 @@ import { Article } from '@/lib/data';
 import { X, Send, Sparkles, Loader2 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { GoogleGenAI } from '@google/genai';
 
 interface Message {
   role: 'user' | 'assistant';
   content: string;
 }
 
-export function AiAssistant({ article, onClose }: { article: Article, onClose: () => void }) {
+export function AiAssistant({ article, onClose, userProfile }: { article: Article, onClose: () => void, userProfile: string }) {
   const [messages, setMessages] = useState<Message[]>([
     { role: 'assistant', content: `Bonjour ! Je suis l'assistant IA de MedNuc Atlas. Vous consultez l'article **${article.title}**. Comment puis-je vous aider ? (Ex: "Résume-moi cet article", "Explique-moi ce terme", "Traduis ce passage")` }
   ]);
@@ -37,21 +38,34 @@ export function AiAssistant({ article, onClose }: { article: Article, onClose: (
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: userMsg,
-          articleContext: JSON.stringify(article)
-        })
+      const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY });
+      
+      const systemInstruction = `
+        Tu es l'assistant IA de MedNuc Atlas, une encyclopédie de médecine nucléaire.
+        L'utilisateur actuel a le profil : ${userProfile}.
+        Adapte ton vocabulaire et ton niveau de détail à ce profil (vulgarisé pour un patient, technique pour un médecin).
+        Utilise le contexte de l'article suivant pour répondre si pertinent :
+        ${JSON.stringify(article)}
+        
+        Règles :
+        - Reste dans le domaine de la médecine nucléaire et de l'imagerie médicale.
+        - Si la question est hors sujet, redirige poliment vers le sujet de l'article.
+        - Utilise le format Markdown pour structurer ta réponse (gras, listes).
+        - Ne donne pas de conseils médicaux personnels.
+      `;
+
+      const response = await ai.models.generateContent({
+        model: 'gemini-3-flash-preview',
+        contents: userMsg,
+        config: {
+          systemInstruction,
+          temperature: 0.3,
+        }
       });
 
-      if (!response.ok) throw new Error('Erreur réseau');
-      
-      const data = await response.json();
-      setMessages(prev => [...prev, { role: 'assistant', content: data.text }]);
+      setMessages(prev => [...prev, { role: 'assistant', content: response.text || "Je n'ai pas pu générer de réponse." }]);
     } catch (error) {
-      console.error(error);
+      console.error('Gemini API Error:', error);
       setMessages(prev => [...prev, { role: 'assistant', content: "Désolé, une erreur est survenue lors de la communication avec l'IA." }]);
     } finally {
       setIsLoading(false);

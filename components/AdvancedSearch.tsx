@@ -80,7 +80,7 @@ export function AdvancedSearch({ isOpen, onClose }: AdvancedSearchProps) {
     
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose, results, activeIndex]);
+  }, [isOpen, onClose, results, activeIndex, handleSelect]);
 
   // Scroll active item into view
   useEffect(() => {
@@ -189,7 +189,7 @@ export function AdvancedSearch({ isOpen, onClose }: AdvancedSearchProps) {
               {Object.keys(groupedResults).length === 0 ? (
                 <div className="py-12 flex flex-col items-center justify-center text-text3">
                   <Search className="w-12 h-12 mb-4 opacity-20" />
-                  <p className="text-sm">Aucun résultat trouvé pour "{query}"</p>
+                  <p className="text-sm">Aucun résultat trouvé pour &quot;{query}&quot;</p>
                   <button 
                     onClick={() => { setQuery(''); setSelectedCategory('all'); setSelectedDifficulty('all'); }}
                     className="mt-4 text-teal text-sm hover:underline"

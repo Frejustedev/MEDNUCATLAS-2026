@@ -1,9 +1,9 @@
 export type Category = 'all' | 'dashboard' | 'favorites' | 'index' | 'generalites' | 'bases_physiques' | 'radiobiologie' | 'reglementation' | 'endocrinologie' | 'oncologie' | 'cardiologie' | 'neurologie' | 'nephro_urologie' | 'pneumologie' | 'gastro_enterologie' | 'senologie_gynecologie' | 'infection_inflammation' | 'pediatrie' | 'theranostique_thyroide' | 'tne' | 'prostate' | 'rhumatologie' | 'sirt' | 'radiopharmacie' | 'instrumentation' | 'radioprotection' | 'scores' | 'calculateurs' | 'artefacts' | 'preparation' | 'guidelines' | 'about' | 'contact' | 'annuaire';
 
-export type UserProfile = 'patient' | 'medecin_non_nuc' | 'medecin_nuc';
+export type UserProfile = 'patient' | 'medecin_non_nuc' | 'medecin_nuc' | 'admin';
 
 export const getAllowedAudiences = (profile: string): UserProfile[] => {
-  if (profile === 'medecin_nuc') return ['patient', 'medecin_non_nuc', 'medecin_nuc'];
+  if (profile === 'admin' || profile === 'medecin_nuc') return ['patient', 'medecin_non_nuc', 'medecin_nuc'];
   if (profile === 'medecin_non_nuc') return ['patient', 'medecin_non_nuc'];
   return ['patient'];
 };
@@ -79,7 +79,7 @@ export const MENU_STRUCTURE = [
   }
 ];
 
-export type ArticleMode = 'pro' | 'patient';
+export type ArticleMode = 'patient' | 'medecin_non_nuc' | 'medecin_nuc';
 
 export interface Section {
   title: string;
@@ -112,7 +112,8 @@ export interface ContentMode {
 
 export interface ArticleContent {
   lead: string;
-  pro: ContentMode;
+  medecin_non_nuc: ContentMode;
+  medecin_nuc: ContentMode;
   patient: ContentMode;
 }
 
@@ -144,7 +145,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La médecine nucléaire est une spécialité d'imagerie médicale et de thérapie qui utilise des propriétés radioactives pour explorer le fonctionnement des organes à l'échelle moléculaire.",
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {
             title:'Définition et Concept', 
@@ -217,7 +219,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'La compréhension de la physique des rayonnements est essentielle pour optimiser la qualité des images et garantir la sécurité dosimétrique.',
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {
             title:"Origine de la radioactivité", 
@@ -276,7 +279,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'La radiobiologie étudie les effets biologiques des rayonnements ionisants, base de la radioprotection et de la radiothérapie interne vectorisée.',
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {
             title:"Action sur la cellule", 
@@ -337,7 +341,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'La radioprotection repose sur trois grands principes : Justification, Optimisation (ALARA) et Limitation.',
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {
             title:"Les 3 piliers de la radioprotection", 
@@ -404,7 +409,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'L\'utilisation des rayonnements ionisants est strictement encadrée par la loi pour garantir la sécurité de tous.',
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {
             title:"Le cadre institutionnel", 
@@ -469,7 +475,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'Cet annuaire vous permet de trouver un médecin nucléaire ou un centre de médecine nucléaire près de chez vous pour vos examens ou traitements.',
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Recherche de confrères', text:'Accédez à la base de données nationale pour trouver les coordonnées de vos confrères, classés par région, par centre ou par sur-spécialité (théranostique, cardiologie, etc.).'},
           {title:'Centres TEP et Gamma-caméras', list:['Liste des centres équipés en TEP-TDM','Liste des centres équipés en caméras CZT','Centres agréés pour les thérapies vectorisées (RIV)']}
@@ -496,7 +503,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La scintigraphie thyroïdienne à l'iode radioactif est l'examen de référence pour l'évaluation fonctionnelle de la glande thyroïde et la détection de tissu thyroïdien résiduel ou métastatique après thyroïdectomie totale.",
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Principe physique', text:"L'iode est captée de manière sélective par les cellules folliculaires thyroïdiennes via le symporteur Na/I (NIS). L'¹²³I (T½=13h, γ 159 keV) est préféré pour le diagnostic. L'¹³¹I (T½=8j, γ 364 keV, β⁻) est utilisé pour le traitement et la scintigraphie post-thérapeutique.", list:['Dose diagnostique ¹²³I : 37-185 MBq','Dose diagnostique ¹³¹I : 74-185 MBq (basse dose)','Acquisition : 24h post-administration','Caméra gamma : collimateur haute énergie pour ¹³¹I']},
           {title:'Indications', list:["Exploration d'un nodule thyroïdien chaud/froid","Bilan d'extension post-thyroïdectomie totale",'Dosimétrie pré-thérapeutique','Suivi des carcinomes différenciés (CPT, CVF)','Recherche de struma ovarii']},
@@ -527,7 +535,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'Le Technétium-99m est le cheval de bataille de la médecine nucléaire moderne. Il représente environ 80% de tous les examens scintigraphiques réalisés dans le monde grâce à ses propriétés physiques idéales.',
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Propriétés physiques', list:['Numéro atomique : Z = 43','Masse atomique : 99 uma','Désintégration : isomère métastable → ⁹⁹Tc par émission γ','Énergie γ : 140 keV (optimale pour caméra gamma)','Période physique : T½ = 6,02 heures','Période biologique : variable selon le vecteur','Obtention : élution de générateur Mo-99m/Tc-99m']},
           {title:'Pourquoi 140 keV est idéal ?', text:"L'énergie de 140 keV est parfaitement adaptée aux caméras gamma équipées de collimateurs basse énergie haute résolution (LEHR). Trop faible = absorption tissulaire excessive. Trop haute = pénétration du collimateur. 140 keV représente le compromis optimal entre atténuation et collimation."},
@@ -558,7 +567,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La scintigraphie myocardique de perfusion (SMP) est l'examen de médecine nucléaire le plus prescrit en cardiologie. Elle permet d'évaluer la viabilité myocardique et de détecter une ischémie coronarienne avec une excellente sensibilité.",
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Principes et traceurs', list:['Tc-99m Sestamibi (MIBI) : captation mitochondriale, redistribution nulle','Tc-99m Tetrofosmin : similaire au MIBI, clairance hépatique plus rapide','Tl-201 : analogue du potassium, redistribution tardive (viabilité)','Rb-82 / N-13-NH3 : TEP myocardique (gold standard)']},
           {title:'Protocoles stress-repos', list:['Protocole 1 jour : repos (300 MBq) → stress (900 MBq) à 3h','Protocole 2 jours : stress J1 (1000 MBq), repos J2 (1000 MBq)','Stress pharmacologique : adénosine, dipyridamole (IC: asthme, BAV)','Stress dobutamine : si CI aux vasodilatateurs','Couplage SPECT / TDM (atténuation + coronarographie)']},
@@ -587,7 +597,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La TEP-TDM au ¹⁸F-FDG est l'examen de médecine nucléaire le plus révolutionnaire des 30 dernières années. Elle combine l'information métabolique (TEP) et anatomique (TDM) en une seule acquisition, offrant une sensibilité et une spécificité supérieures au bilan conventionnel pour la majorité des cancers.",
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Principe du FDG', text:"Le ¹⁸F-FDG (fluorodésoxyglucose) est un analogue du glucose marqué au fluor-18 (T½=110 min, émetteur β⁺). Il est capté par les cellules à fort métabolisme glucidique via GLUT1/3, phosphorylé par l'hexokinase mais non métabolisé davantage (effet de trapping). Les tumeurs malignes surexpriment GLUT et hexokinase → hyperfixation FDG."},
           {title:'Indications validées (HAS)', list:['Lymphomes hodgkiniens et non hodgkiniens : staging, réponse, rechute','CBNPC et CBP à petites cellules : staging initial','Cancer colorectal : rechute, métastases hépatiques','Mélanome : staging, recherche de récidive','Cancer du sein : rechute métastatique','Cancers ORL : staging, rechute','Tumeurs stromales gastro-intestinales (GIST) sous Glivec']},
@@ -617,7 +628,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"Les données récentes remettent en question les hautes doses d'iode radioactif dans les carcinomes thyroïdiens différenciés à faible risque. L'équivalence d'efficacité des doses de 30 à 100 mCi ouvre la voie à une désescalade thérapeutique significative, avec une réduction de la charge dosimétrique et des effets secondaires.",
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Contexte et enjeux', text:"Pendant des décennies, des doses de 100 mCi (3,7 GBq) ont été utilisées de manière quasi-systématique pour l'ablation du reliquat thyroïdien post-thyroïdectomie. Les études ESTIMABL (2012) et HiLo (2012) ont démontré la non-infériorité des basses doses (30 mCi / 1,1 GBq) dans les tumeurs à faible risque selon la classification ATA/ETA."},
           {title:'Résultats de notre série (CHU Bab El Oued, n=235)', list:["Taux d'ablation complète à 30 mCi : 93,8%","Taux d'ablation complète à 50 mCi : 94,1%","Taux d'ablation complète à 100 mCi : 94,3%","Différence non significative (p > 0,05)","Critère d'ablation : Tg stimulée < 1 ng/mL + scintigraphie négative","Résultats maintenus sans biologie moléculaire disponible localement"]},
@@ -648,7 +660,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'Le principe ALARA est le pilier de la radioprotection moderne. Il impose de maintenir toute exposition aux rayonnements ionisants au niveau le plus bas possible, compte tenu des facteurs économiques et sociaux.',
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Les 3 principes fondamentaux', list:['Justification : tout acte entraînant une exposition doit être justifié par un bénéfice > risque','Optimisation (ALARA) : les doses doivent être maintenues au plus bas niveau raisonnablement possible','Limitation : les doses individuelles ne doivent pas dépasser les limites réglementaires']},
           {title:'Limites réglementaires (travailleurs)', list:['Dose efficace : 20 mSv/an en moyenne sur 5 ans (max 50 mSv en 1 an)','Cristallin : 20 mSv/an','Extrémités et peau : 500 mSv/an','Femme enceinte : 1 mSv/mois (abdomen)']},
@@ -676,7 +689,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La scintigraphie osseuse au Tc-MDP reste l'examen de référence pour le bilan d'extension osseuse des cancers, la détection de fractures occultes et l'évaluation des pathologies ostéo-articulaires. Sa sensibilité élevée compense une spécificité modérée.",
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Mécanisme', text:"Le méthylènediphosphonate marqué au Tc-99m (Tc-MDP) s'adsorbe sur les cristaux d'hydroxyapatite du tissu osseux néoformé. L'intensité de fixation est proportionnelle à l'activité ostéoblastique locale."},
           {title:'Indications principales', list:["Bilan d'extension osseuse (cancer prostate, sein, poumon, rein, thyroïde)",'Fractures de fatigue et occultes','Ostéonécrose aseptique','Prothèses douloureuses (infection, descellement)','Maladie de Paget','Algodystrophie (SDRC)','Spondylodiscite (3 temps = 4h)']},
@@ -706,7 +720,8 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"Le concept théranostique — même molécule pour diagnostiquer et traiter — révolutionne l'oncologie nucléaire. Le couple Ga-68 DOTATATE (diagnostic TEP) / Lu-177 DOTATATE (traitement) est l'exemple paradigmatique de cette approche personnalisée.",
-      pro:{
+      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_nuc:{
         sections:[
           {title:'Principe théranostique', text:"La même molécule (DOTATATE = octréotide modifié) cible les récepteurs à la somatostatine (SSTR2) surexprimés par les tumeurs neuroendocrines. Marquée au Ga-68, elle permet un bilan TEP diagnostique. Marquée au Lu-177 (émetteur β⁻), elle délivre une irradiation locale létale aux cellules tumorales."},
           {title:'Sélection des patients', list:['TNE gastro-entéropancréatiques bien différenciées (grade 1-2, Ki67 < 20%)','Expression SSTR confirmée par TEP Ga-68 DOTATATE (Krenning score ≥ 3)','Maladie progressive sous analogues de la somatostatine','Clairance créatinine ≥ 50 mL/min','Hémogramme suffisant (PNN > 1500, plaquettes > 70G/L)']},

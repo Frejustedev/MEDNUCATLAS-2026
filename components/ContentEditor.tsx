@@ -5,20 +5,21 @@ import { Plus, Trash2, ChevronDown, ChevronUp, GripVertical } from 'lucide-react
 interface ContentEditorProps {
   content: {
     lead: string;
-    pro: ContentMode;
+    medecin_nuc: ContentMode;
+    medecin_non_nuc: ContentMode;
     patient: ContentMode;
   };
   onChange: (content: any) => void;
 }
 
 export function ContentEditor({ content, onChange }: ContentEditorProps) {
-  const [activeTab, setActiveTab] = useState<'pro' | 'patient'>('pro');
+  const [activeTab, setActiveTab] = useState<'medecin_nuc' | 'medecin_non_nuc' | 'patient'>('medecin_nuc');
 
   const handleLeadChange = (val: string) => {
     onChange({ ...content, lead: val });
   };
 
-  const handleModeChange = (mode: 'pro' | 'patient', newModeData: ContentMode) => {
+  const handleModeChange = (mode: 'medecin_nuc' | 'medecin_non_nuc' | 'patient', newModeData: ContentMode) => {
     onChange({ ...content, [mode]: newModeData });
   };
 
@@ -38,10 +39,16 @@ export function ContentEditor({ content, onChange }: ContentEditorProps) {
       <div className="border border-border-main rounded-xl overflow-hidden bg-bg2">
         <div className="flex border-b border-border-main">
           <button
-            onClick={() => setActiveTab('pro')}
-            className={`flex-1 py-3 text-sm font-medium transition-colors ${activeTab === 'pro' ? 'bg-teal/10 text-teal border-b-2 border-teal' : 'text-text3 hover:bg-bg3 hover:text-text-main'}`}
+            onClick={() => setActiveTab('medecin_nuc')}
+            className={`flex-1 py-3 text-sm font-medium transition-colors ${activeTab === 'medecin_nuc' ? 'bg-teal/10 text-teal border-b-2 border-teal' : 'text-text3 hover:bg-bg3 hover:text-text-main'}`}
           >
-            Mode Professionnel
+            Médecin Nucléaire
+          </button>
+          <button
+            onClick={() => setActiveTab('medecin_non_nuc')}
+            className={`flex-1 py-3 text-sm font-medium transition-colors ${activeTab === 'medecin_non_nuc' ? 'bg-teal2/10 text-teal2 border-b-2 border-teal2' : 'text-text3 hover:bg-bg3 hover:text-text-main'}`}
+          >
+            Médecin (Non MN)
           </button>
           <button
             onClick={() => setActiveTab('patient')}
@@ -62,7 +69,7 @@ export function ContentEditor({ content, onChange }: ContentEditorProps) {
   );
 }
 
-function ModeEditor({ mode, data, onChange }: { mode: 'pro' | 'patient', data: ContentMode, onChange: (data: ContentMode) => void }) {
+function ModeEditor({ mode, data, onChange }: { mode: 'medecin_nuc' | 'medecin_non_nuc' | 'patient', data: ContentMode, onChange: (data: ContentMode) => void }) {
   const sections = data?.sections || [];
 
   const addSection = () => {
@@ -285,7 +292,7 @@ function SectionEditor({ section, index, isFirst, isLast, onChange, onRemove, on
           {/* InfoBox toggle */}
           <div className="pt-2 border-t border-border-main">
             <div className="flex items-center justify-between mb-2">
-              <label className="text-xs font-mono text-text3 uppercase tracking-wider">Boîte d'information (InfoBox)</label>
+              <label className="text-xs font-mono text-text3 uppercase tracking-wider">Boîte d&apos;information (InfoBox)</label>
               <button
                 onClick={() => {
                   if (section.infoBox) {

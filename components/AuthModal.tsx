@@ -2,17 +2,18 @@
 
 import React, { useState } from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
+import { UserProfile } from '@/lib/data';
 import Image from 'next/image';
 import { X, Mail, Stethoscope, User, Radio } from 'lucide-react';
 
 export function AuthModal() {
   const { isAuthModalOpen, closeAuthModal, loginWithGoogle, authIntent } = useAtlas();
-  const [profileType, setProfileType] = useState<'patient' | 'medecin_non_nuc' | 'medecin_nuc'>('medecin_nuc');
+  const [profileType, setProfileType] = useState<UserProfile>('medecin_nuc');
 
   if (!isAuthModalOpen) return null;
 
   const handleGoogleLogin = async () => {
-    await loginWithGoogle(profileType, authIntent || 'free');
+    await loginWithGoogle(profileType, authIntent || 'patient');
     closeAuthModal();
   };
 
@@ -25,7 +26,7 @@ export function AuthModal() {
         
         <h2 className="text-2xl font-serif mb-2 text-text-main">Bienvenue</h2>
         <p className="text-sm text-text2 mb-6">
-          {authIntent === 'pro' || authIntent === 'expert' 
+          {authIntent === 'medecin_non_nuc' || authIntent === 'medecin_nuc' 
             ? "Créez un compte pour activer votre abonnement." 
             : "Connectez-vous pour accéder à l&apos;encyclopédie."}
         </p>

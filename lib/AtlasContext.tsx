@@ -10,8 +10,8 @@ import { handleFirestoreError, OperationType } from './firestore-errors';
 export interface DbUser {
   uid: string;
   email: string;
-  role: 'free' | 'pro' | 'expert' | 'institution' | 'admin';
-  profileType?: 'patient' | 'medecin_non_nuc' | 'medecin_nuc';
+  role: UserProfile;
+  profileType?: UserProfile;
   intendedPlan?: string;
   displayName?: string;
   photoURL?: string;
@@ -55,7 +55,7 @@ interface AtlasContextType extends AtlasState {
   openArticle: (id: string) => void;
   showAdmin: () => void;
   showProfile: () => void;
-  loginWithGoogle: (profileType?: 'patient' | 'medecin_non_nuc' | 'medecin_nuc', planIntent?: string) => Promise<void>;
+  loginWithGoogle: (profileType?: UserProfile, planIntent?: string) => Promise<void>;
   logout: () => Promise<void>;
   openAuthModal: (intent?: string) => void;
   closeAuthModal: () => void;
@@ -70,8 +70,8 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
   const [currentCategory, setCurrentCategory] = useState<Category>('all');
   const [currentArticle, setCurrentArticle] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [globalMode, setGlobalMode] = useState<ArticleMode>('pro');
-  const [articleMode, setArticleMode] = useState<ArticleMode>('pro');
+  const [globalMode, setGlobalMode] = useState<ArticleMode>('medecin_nuc');
+  const [articleMode, setArticleMode] = useState<ArticleMode>('medecin_nuc');
   const [lang, setLang] = useState('fr');
   const [userProfile, setUserProfile] = useState<UserProfile>('medecin_nuc');
   const [allArticles, setAllArticles] = useState<Article[]>([]);
@@ -173,7 +173,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     });
   }, [allArticles, userProfile]);
 
-  const loginWithGoogle = async (profileType: 'patient' | 'medecin_non_nuc' | 'medecin_nuc' = 'patient', planIntent: string = 'free') => {
+  const loginWithGoogle = async (profileType: UserProfile = 'patient', planIntent: string = 'patient') => {
     try {
       const provider = new GoogleAuthProvider();
       provider.setCustomParameters({ prompt: 'select_account' });
@@ -187,7 +187,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         const newUser: DbUser = {
           uid: user.uid,
           email: user.email || '',
-          role: 'free',
+          role: profileType,
           profileType: profileType,
           displayName: user.displayName || '',
           photoURL: user.photoURL || '',
@@ -201,7 +201,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         setDbUser(newUser);
       } else {
         const updateData: any = { lastLogin: new Date().toISOString() };
-        if (planIntent && planIntent !== 'free') {
+        if (planIntent && planIntent !== 'patient') {
           updateData.intendedPlan = planIntent;
         }
         await setDoc(userDocRef, updateData, { merge: true });
@@ -274,7 +274,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
 
   const handleUserProfile = (profile: UserProfile) => {
     setUserProfile(profile);
-    const newMode = profile === 'patient' ? 'patient' : 'pro';
+    const newMode = profile === 'patient' ? 'patient' : (profile === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
     setGlobalMode(newMode);
     if (view === 'article') {
       setArticleMode(newMode);

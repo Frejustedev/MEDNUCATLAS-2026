@@ -12,8 +12,8 @@ service cloud.firestore {
     // Fields:
     //   - uid: string (required) - Firebase Auth UID
     //   - email: string (required) - User's email address
-    //   - role: string (required) - 'free', 'pro', 'expert', 'institution', 'admin'
-    //   - profileType: string (optional) - 'patient', 'medecin_non_nuc', 'medecin_nuc'
+    //   - role: string (required) - 'patient', 'medecin_non_nuc', 'medecin_nuc', 'admin'
+    //   - profileType: string (optional) - 'patient', 'medecin_non_nuc', 'medecin_nuc', 'admin'
     //   - intendedPlan: string (optional) - The plan the user intended to sign up for
     //   - displayName: string (optional) - User's display name
     //   - photoURL: string (optional) - User's profile picture
@@ -60,7 +60,7 @@ service cloud.firestore {
     function isEditor() {
       return isAuthenticated() && (
         (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
-         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in ['admin', 'expert']) ||
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in ['admin', 'medecin_nuc']) ||
         (request.auth.token.email == "agbotonfrejuste@gmail.com" && request.auth.token.email_verified == true)
       );
     }
@@ -90,8 +90,8 @@ service cloud.firestore {
       return hasRequiredFields(['uid', 'email', 'role']) &&
              data.uid is string && data.uid.size() > 0 && data.uid.size() < 100 &&
              data.email is string && isValidEmail(data.email) && data.email.size() < 150 &&
-             data.role in ['free', 'pro', 'expert', 'institution', 'admin'] &&
-             (!('profileType' in data) || (data.profileType in ['patient', 'medecin_non_nuc', 'medecin_nuc'])) &&
+             data.role in ['patient', 'medecin_non_nuc', 'medecin_nuc', 'admin'] &&
+             (!('profileType' in data) || (data.profileType in ['patient', 'medecin_non_nuc', 'medecin_nuc', 'admin'])) &&
              (!('intendedPlan' in data) || (data.intendedPlan is string && data.intendedPlan.size() < 50)) &&
              (!('displayName' in data) || (data.displayName is string && data.displayName.size() < 100)) &&
              (!('photoURL' in data) || (data.photoURL is string && data.photoURL.size() < 500)) &&
@@ -127,7 +127,7 @@ service cloud.firestore {
       
       // Users can create their own profile, but cannot set themselves as admin/editor unless they are already an admin
       allow create: if isAuthenticated() && isValidUser() && uidUnchanged() && (
-        (isOwner(userId) && request.resource.data.role == 'free') || isAdmin()
+        (isOwner(userId) && request.resource.data.role in ['patient', 'medecin_non_nuc', 'medecin_nuc']) || isAdmin()
       );
       
       // Users can update their own profile (except role and uid), admins can update anything
