@@ -17,7 +17,7 @@ export function LandingPage() {
             Mn
           </div>
           <div className="font-serif text-xl font-semibold tracking-wide text-text-main">
-            MedNuc<span className="text-teal">Atlas</span>
+            Nucle<span className="text-teal">Atlas</span>
           </div>
         </div>
         <div className="hidden md:flex items-center gap-8">
@@ -361,7 +361,7 @@ export function LandingPage() {
           Prêt à transformer<br /><em className="not-italic italic text-teal">votre pratique ?</em>
         </h2>
         <p className="text-text2 text-base mb-12 relative max-w-lg mx-auto">
-          Rejoignez la communauté MedNuc Atlas aujourd&apos;hui.<br />Profitez de 14 jours d&apos;essai gratuit sur le plan MN Expert.
+          Rejoignez la communauté NucleAtlas aujourd&apos;hui.<br />Profitez de 14 jours d&apos;essai gratuit sur le plan MN Expert.
         </p>
         <div className="flex flex-wrap gap-4 justify-center relative">
           {authUser ? (
@@ -389,10 +389,10 @@ export function LandingPage() {
               Mn
             </div>
             <div className="font-serif text-sm font-semibold tracking-wide text-text-main">
-              MedNuc<span className="text-teal">Atlas</span>
+              Nucle<span className="text-teal">Atlas</span>
             </div>
           </div>
-          <p className="text-xs text-text3">© 2026 MedNuc Atlas. Tous droits réservés.</p>
+          <p className="text-xs text-text3">© 2026 NucleAtlas. Tous droits réservés.</p>
         </div>
         <div className="flex gap-6">
           <a href="#" className="text-xs text-text3 hover:text-teal transition-colors">Mentions légales</a>

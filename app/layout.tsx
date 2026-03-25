@@ -21,7 +21,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'MedNuc Atlas',
+  title: 'NucleAtlas',
   description: 'Encyclopédie de référence en médecine nucléaire',
 };
 

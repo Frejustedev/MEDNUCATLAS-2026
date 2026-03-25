@@ -37,7 +37,7 @@ export function Topbar() {
             Mn
           </div>
           <div className="font-serif text-[17px] font-semibold">
-            MedNuc<span className="text-teal">Atlas</span>
+            Nucle<span className="text-teal">Atlas</span>
           </div>
         </div>
 

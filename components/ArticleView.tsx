@@ -117,7 +117,7 @@ export function ArticleView() {
         </div>
 
         <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9 prose prose-invert prose-teal max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{content?.lead || ''}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content.lead || ''}</ReactMarkdown>
         </div>
 
         {content?.sections?.map((s, i) => (

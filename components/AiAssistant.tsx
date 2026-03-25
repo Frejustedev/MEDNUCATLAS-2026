@@ -14,7 +14,7 @@ interface Message {
 
 export function AiAssistant({ article, onClose, userProfile }: { article: Article, onClose: () => void, userProfile: string }) {
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: `Bonjour ! Je suis l'assistant IA de MedNuc Atlas. Vous consultez l'article **${article.title}**. Comment puis-je vous aider ? (Ex: "Résume-moi cet article", "Explique-moi ce terme", "Traduis ce passage")` }
+    { role: 'assistant', content: `Bonjour ! Je suis l'assistant IA de NucleAtlas. Vous consultez l'article **${article.title}**. Comment puis-je vous aider ? (Ex: "Résume-moi cet article", "Explique-moi ce terme", "Traduis ce passage")` }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -41,7 +41,7 @@ export function AiAssistant({ article, onClose, userProfile }: { article: Articl
       const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY });
       
       const systemInstruction = `
-        Tu es l'assistant IA de MedNuc Atlas, une encyclopédie de médecine nucléaire.
+        Tu es l'assistant IA de NucleAtlas, une encyclopédie de médecine nucléaire.
         L'utilisateur actuel a le profil : ${userProfile}.
         Adapte ton vocabulaire et ton niveau de détail à ce profil (vulgarisé pour un patient, technique pour un médecin).
         Utilise le contexte de l'article suivant pour répondre si pertinent :
