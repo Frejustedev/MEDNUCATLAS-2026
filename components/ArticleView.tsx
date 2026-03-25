@@ -2,21 +2,33 @@
 
 import React, { useEffect, useState } from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
-import { ArrowLeft, Sparkles, Info, AlertTriangle, Lightbulb } from 'lucide-react';
+import { ArrowLeft, Sparkles, Info, AlertTriangle, Lightbulb, Star, User, Stethoscope, Atom } from 'lucide-react';
 import { AiAssistant } from './AiAssistant';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export function ArticleView() {
-  const { currentArticle, showCategory, articleMode, setArticleMode, articles, userProfile } = useAtlas();
+  const { currentArticle, showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
   const [isAiOpen, setIsAiOpen] = useState(false);
   
   const article = articles.find(e => e.id === currentArticle);
   if (!article) return null;
 
   const content = article.content[articleMode];
+  const isFavorite = dbUser?.favorites?.includes(article.id) || false;
 
   const scrollToSection = (i: number) => {
     const el = document.getElementById(`sec-${i}`);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const getAudienceIcon = (aud: string) => {
+    switch (aud) {
+      case 'patient': return <User className="w-3 h-3 text-blue-400" />;
+      case 'medecin_non_nuc': return <Stethoscope className="w-3 h-3 text-teal" />;
+      case 'medecin_nuc': return <Atom className="w-3 h-3 text-atom" />;
+      default: return null;
+    }
   };
 
   return (
@@ -32,18 +44,35 @@ export function ArticleView() {
         <div className="mb-7">
           <div className="font-mono text-[10px] text-text3 tracking-[2px] mb-2">{article.id}</div>
           <div className="text-[11px] text-teal font-mono tracking-[1.5px] uppercase mb-3">{article.catLabel}</div>
-          <h1 className="font-serif text-[clamp(32px,4vw,48px)] font-light leading-[1.1] mb-4">
-            {article.title}
-          </h1>
-          <div className="flex gap-1.5 flex-wrap mb-6">
+          <div className="flex items-start justify-between mb-4">
+            <h1 className="font-serif text-[clamp(32px,4vw,48px)] font-light leading-[1.1]">
+              {article.title}
+            </h1>
+            {dbUser && (
+              <button 
+                onClick={() => toggleFavorite(article.id)}
+                className={`p-2 rounded-full transition-colors ${isFavorite ? 'bg-gold/10 text-gold' : 'bg-bg2 text-text3 hover:text-gold hover:bg-gold/5'}`}
+                title={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
+              >
+                <Star className={`w-6 h-6 ${isFavorite ? 'fill-current' : ''}`} />
+              </button>
+            )}
+          </div>
+          <div className="flex gap-1.5 flex-wrap mb-6 items-center">
             {article.tags.map(t => (
               <span key={t} className="text-[9px] px-[7px] py-[2px] rounded-[3px] font-mono tracking-[0.5px] border bg-teal3 text-teal border-teal/20">
                 {t}
               </span>
             ))}
-            <span className="text-[9px] px-[7px] py-[2px] rounded-[3px] font-mono tracking-[0.5px] border bg-gold3 text-gold border-gold/20">
+            <span className="text-[9px] px-[7px] py-[2px] rounded-[3px] font-mono tracking-[0.5px] border bg-gold3 text-gold border-gold/20 mr-1">
               {article.difficulty}
             </span>
+            {article.targetAudience && article.targetAudience.map(aud => (
+              <span key={aud} className="flex items-center gap-1.5 text-[9px] px-[7px] py-[2px] rounded-[3px] font-mono tracking-[0.5px] border bg-bg3 text-text3 border-border-main">
+                {getAudienceIcon(aud)}
+                {aud === 'patient' ? 'Patient' : aud === 'medecin_nuc' ? 'Médecin Nucléaire' : 'Médecin (Non MN)'}
+              </span>
+            ))}
           </div>
         </div>
 
@@ -77,8 +106,8 @@ export function ArticleView() {
           </button>
         </div>
 
-        <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9">
-          {article.content.lead}
+        <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9 prose prose-invert prose-teal max-w-none">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content.lead}</ReactMarkdown>
         </div>
 
         {content.sections.map((s, i) => (
@@ -86,7 +115,11 @@ export function ArticleView() {
             <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
               {s.title}
             </h3>
-            {s.text && <p className="text-[14px] text-text2 leading-[1.8] mb-3">{s.text}</p>}
+            {s.text && (
+              <div className="text-[14px] text-text2 leading-[1.8] mb-3 prose prose-invert prose-teal max-w-none">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{s.text}</ReactMarkdown>
+              </div>
+            )}
             
             {s.infoBox && (
               <div className={`my-6 p-4 rounded-lg border flex gap-4 ${
@@ -101,7 +134,9 @@ export function ArticleView() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[13px] mb-1">{s.infoBox.title}</h4>
-                  <p className="text-[13px] leading-relaxed opacity-90">{s.infoBox.text}</p>
+                  <div className="text-[13px] leading-relaxed opacity-90 prose prose-invert max-w-none">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{s.infoBox.text}</ReactMarkdown>
+                  </div>
                 </div>
               </div>
             )}
@@ -126,7 +161,9 @@ export function ArticleView() {
                     </div>
                     <div>
                       <h4 className="font-bold text-[14px] text-text-main mb-1">{step.title}</h4>
-                      <p className="text-[13px] text-text2 leading-relaxed">{step.text}</p>
+                      <div className="text-[13px] text-text2 leading-relaxed prose prose-invert max-w-none">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.text}</ReactMarkdown>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -137,7 +174,7 @@ export function ArticleView() {
               <ul className="flex flex-col gap-2 my-3">
                 {s.list.map((l, j) => (
                   <li key={j} className="text-[13px] text-text2 leading-[1.6] pl-5 relative before:content-['▸'] before:absolute before:left-0 before:text-teal before:text-[10px] before:top-[3px]">
-                    {l}
+                    <span className="prose prose-invert max-w-none"><ReactMarkdown remarkPlugins={[remarkGfm]}>{l}</ReactMarkdown></span>
                   </li>
                 ))}
               </ul>

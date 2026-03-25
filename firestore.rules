@@ -96,7 +96,9 @@ service cloud.firestore {
              (!('displayName' in data) || (data.displayName is string && data.displayName.size() < 100)) &&
              (!('photoURL' in data) || (data.photoURL is string && data.photoURL.size() < 500)) &&
              (!('createdAt' in data) || (data.createdAt is string && data.createdAt.size() < 50)) &&
-             (!('lastLogin' in data) || (data.lastLogin is string && data.lastLogin.size() < 50));
+             (!('lastLogin' in data) || (data.lastLogin is string && data.lastLogin.size() < 50)) &&
+             (!('recentArticles' in data) || (data.recentArticles is list && data.recentArticles.size() <= 100)) &&
+             (!('favorites' in data) || (data.favorites is list && data.favorites.size() <= 1000));
     }
 
     function isValidArticle() {

@@ -40,6 +40,7 @@ const getIcon = (id: string, className: string = "w-3.5 h-3.5") => {
     case 'preparation': return <ClipboardList className={className} />;
     case 'guidelines': return <FileText className={className} />;
     case 'about': return <Info className={className} />;
+    case 'annuaire': return <User className={className} />;
     case 'contact': return <Mail className={className} />;
     default: return <div className="w-1.5 h-1.5 rounded-full bg-border-main ml-1" />;
   }
@@ -156,7 +157,7 @@ export function Sidebar() {
                 <div className="mt-1 mb-2">
                   {section.items.map((item) => {
                     const count = getCount(item.id);
-                    const isSpecial = ['dashboard', 'favorites', 'index', 'about', 'contact'].includes(item.id);
+                    const isSpecial = ['dashboard', 'favorites', 'index', 'about', 'contact', 'annuaire'].includes(item.id);
                     
                     return (
                       <div

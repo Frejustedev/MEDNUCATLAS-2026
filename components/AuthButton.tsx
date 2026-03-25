@@ -5,12 +5,12 @@ import { db } from '@/lib/firebase';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { ENTRIES } from '@/lib/data';
 import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
-import { LogIn, LogOut, Database, Settings } from 'lucide-react';
+import { LogIn, LogOut, Database, Settings, User } from 'lucide-react';
 import { useAtlas } from '@/lib/AtlasContext';
 import Image from 'next/image';
 
 export function AuthButton() {
-  const { authUser, dbUser, openAuthModal, logout, showAdmin, view, showHome } = useAtlas();
+  const { authUser, dbUser, openAuthModal, logout, showAdmin, showProfile, view, showHome } = useAtlas();
   const [isMigrating, setIsMigrating] = useState(false);
 
   const isAdmin = dbUser?.role === 'admin' || (authUser?.email === 'agbotonfrejuste@gmail.com' && authUser?.emailVerified);
@@ -97,6 +97,13 @@ export function AuthButton() {
               </div>
             )}
             
+            <button
+              onClick={showProfile}
+              className={`flex items-center gap-1.5 px-2 py-1.5 transition-colors ${view === 'profile' ? 'text-teal' : 'text-text3 hover:text-text-main'}`}
+              title="Mon Profil"
+            >
+              <User className="w-4 h-4" />
+            </button>
             <button
               onClick={logout}
               className="flex items-center gap-1.5 px-2 py-1.5 text-text3 hover:text-red-400 transition-colors"

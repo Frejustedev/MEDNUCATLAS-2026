@@ -5,12 +5,14 @@ import { useAtlas } from '@/lib/AtlasContext';
 import { ArticleCard } from './ArticleCard';
 import { ArticleView } from './ArticleView';
 import { AdminPanel } from './AdminPanel';
+import { Dashboard } from './Dashboard';
+import { Profile } from './Profile';
 import { motion } from 'motion/react';
 import { getAllowedAudiences } from '@/lib/data';
 import { Search, Activity, Heart, Target, Bone, Shield, FlaskConical, Sparkles, ArrowRight } from 'lucide-react';
 
 export function MainContent() {
-  const { view, currentCategory, searchQuery, setSearchQuery, showCategory, articles, loading, userProfile } = useAtlas();
+  const { view, currentCategory, searchQuery, setSearchQuery, showCategory, articles, loading, userProfile, dbUser } = useAtlas();
   const allowedAudiences = getAllowedAudiences(userProfile);
 
   if (view === 'article') {
@@ -21,8 +23,18 @@ export function MainContent() {
     return <AdminPanel />;
   }
 
+  if (view === 'profile') {
+    return <Profile />;
+  }
+
+  if (view === 'grid' && currentCategory === 'dashboard') {
+    return <Dashboard />;
+  }
+
   let entries = articles;
-  if (currentCategory !== 'all') {
+  if (currentCategory === 'favorites') {
+    entries = entries.filter(e => dbUser?.favorites?.includes(e.id));
+  } else if (currentCategory !== 'all') {
     entries = entries.filter(e => e.cat === currentCategory);
   }
   if (searchQuery) {
@@ -37,6 +49,9 @@ export function MainContent() {
 
   const catNames: Record<string, string> = {
     all: 'Toutes les entrées',
+    favorites: 'Mes Favoris',
+    dashboard: 'Tableau de bord',
+    index: 'Index A-Z',
     thyroide: 'Thyroïde',
     cardio: 'Cardio-nucléaire',
     onco: 'Oncologie',
@@ -228,9 +243,40 @@ export function MainContent() {
 
       {entries.length === 0 ? (
         <div className="flex flex-col items-center justify-center h-64 text-text3 text-center p-10">
-          <div className="text-4xl mb-4 opacity-40">🔬</div>
-          <div className="font-serif text-2xl mb-2 text-text2">Aucun résultat</div>
-          <div className="text-[13px] leading-[1.6]">Essayez un autre terme de recherche<br />ou parcourez une catégorie.</div>
+          <div className="text-4xl mb-4 opacity-40">
+            {currentCategory === 'favorites' ? '⭐' : '🔬'}
+          </div>
+          <div className="font-serif text-2xl mb-2 text-text2">
+            {currentCategory === 'favorites' ? 'Aucun favori' : 'Aucun résultat'}
+          </div>
+          <div className="text-[13px] leading-[1.6]">
+            {currentCategory === 'favorites' 
+              ? (dbUser ? "Vous n'avez pas encore ajouté d'articles à vos favoris." : "Connectez-vous pour voir vos favoris.")
+              : <React.Fragment>Essayez un autre terme de recherche<br />ou parcourez une catégorie.</React.Fragment>
+            }
+          </div>
+        </div>
+      ) : currentCategory === 'index' && !searchQuery ? (
+        <div className="space-y-10">
+          {Object.entries(
+            entries.reduce((acc, article) => {
+              const letter = article.title.charAt(0).toUpperCase();
+              if (!acc[letter]) acc[letter] = [];
+              acc[letter].push(article);
+              return acc;
+            }, {} as Record<string, typeof entries>)
+          )
+            .sort(([a], [b]) => a.localeCompare(b))
+            .map(([letter, letterArticles]) => (
+              <div key={letter}>
+                <h3 className="text-2xl font-serif text-teal mb-4 border-b border-border-main pb-2">{letter}</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+                  {letterArticles.sort((a, b) => a.title.localeCompare(b.title)).map(e => (
+                    <ArticleCard key={e.id} article={e} />
+                  ))}
+                </div>
+              </div>
+            ))}
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">

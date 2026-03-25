@@ -17,10 +17,12 @@ export interface DbUser {
   photoURL?: string;
   createdAt?: string;
   lastLogin?: string;
+  recentArticles?: string[];
+  favorites?: string[];
 }
 
 interface AtlasState {
-  view: 'landing' | 'home' | 'grid' | 'article' | 'admin';
+  view: 'landing' | 'home' | 'grid' | 'article' | 'admin' | 'profile';
   currentCategory: Category;
   currentArticle: string | null;
   searchQuery: string;
@@ -38,7 +40,7 @@ interface AtlasState {
 }
 
 interface AtlasContextType extends AtlasState {
-  setView: (view: 'landing' | 'home' | 'grid' | 'article') => void;
+  setView: (view: 'landing' | 'home' | 'grid' | 'article' | 'admin' | 'profile') => void;
   setCurrentCategory: (cat: Category) => void;
   setCurrentArticle: (id: string | null) => void;
   setSearchQuery: (query: string) => void;
@@ -46,21 +48,25 @@ interface AtlasContextType extends AtlasState {
   setArticleMode: (mode: ArticleMode) => void;
   setLang: (lang: string) => void;
   setUserProfile: (profile: UserProfile) => void;
+  setDbUser: (user: DbUser | null) => void;
   showLanding: () => void;
   showHome: () => void;
   showCategory: (cat: Category) => void;
   openArticle: (id: string) => void;
   showAdmin: () => void;
+  showProfile: () => void;
   loginWithGoogle: (profileType?: 'patient' | 'medecin_non_nuc' | 'medecin_nuc', planIntent?: string) => Promise<void>;
   logout: () => Promise<void>;
   openAuthModal: (intent?: string) => void;
   closeAuthModal: () => void;
+  trackArticleView: (id: string) => Promise<void>;
+  toggleFavorite: (id: string) => Promise<void>;
 }
 
 const AtlasContext = createContext<AtlasContextType | undefined>(undefined);
 
 export function AtlasProvider({ children }: { children: ReactNode }) {
-  const [view, setView] = useState<'landing' | 'home' | 'grid' | 'article' | 'admin'>('landing');
+  const [view, setView] = useState<'landing' | 'home' | 'grid' | 'article' | 'admin' | 'profile'>('landing');
   const [currentCategory, setCurrentCategory] = useState<Category>('all');
   const [currentArticle, setCurrentArticle] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -145,7 +151,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         if (index === -1) {
           mergedArticles.push(fetched);
         } else {
-          mergedArticles[index] = ENTRIES.find(e => e.id === fetched.id) || fetched;
+          mergedArticles[index] = fetched;
         }
       });
       
@@ -246,10 +252,16 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     setView('article');
     setCurrentArticle(id);
     setArticleMode(globalMode);
+    trackArticleView(id);
   };
 
   const showAdmin = () => {
     setView('admin');
+    setSearchQuery('');
+  };
+
+  const showProfile = () => {
+    setView('profile');
     setSearchQuery('');
   };
 
@@ -266,6 +278,37 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     setGlobalMode(newMode);
     if (view === 'article') {
       setArticleMode(newMode);
+    }
+  };
+
+  const trackArticleView = async (id: string) => {
+    if (!authUser || !dbUser) return;
+    try {
+      const currentRecent = dbUser.recentArticles || [];
+      const newRecent = [id, ...currentRecent.filter(aId => aId !== id)].slice(0, 20); // Keep last 20
+      
+      const userDocRef = doc(db, 'users', authUser.uid);
+      await setDoc(userDocRef, { recentArticles: newRecent }, { merge: true });
+      setDbUser({ ...dbUser, recentArticles: newRecent });
+    } catch (error) {
+      console.error("Error tracking article view:", error);
+    }
+  };
+
+  const toggleFavorite = async (id: string) => {
+    if (!authUser || !dbUser) return;
+    try {
+      const currentFavorites = dbUser.favorites || [];
+      const isFavorite = currentFavorites.includes(id);
+      const newFavorites = isFavorite 
+        ? currentFavorites.filter(aId => aId !== id)
+        : [...currentFavorites, id];
+      
+      const userDocRef = doc(db, 'users', authUser.uid);
+      await setDoc(userDocRef, { favorites: newFavorites }, { merge: true });
+      setDbUser({ ...dbUser, favorites: newFavorites });
+    } catch (error) {
+      console.error("Error toggling favorite:", error);
     }
   };
 
@@ -295,15 +338,19 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         setArticleMode,
         setLang,
         setUserProfile: handleUserProfile,
+        setDbUser,
         showLanding,
         showHome,
         showCategory,
         openArticle,
         showAdmin,
+        showProfile,
         loginWithGoogle,
         logout,
         openAuthModal,
         closeAuthModal,
+        trackArticleView,
+        toggleFavorite,
       }}
     >
       {children}

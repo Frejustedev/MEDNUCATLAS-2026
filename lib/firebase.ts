@@ -1,7 +1,10 @@
 import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getFirestore, getDocFromServer, doc } from 'firebase/firestore';
+import { getFirestore, getDocFromServer, doc, setLogLevel } from 'firebase/firestore';
 import firebaseConfig from '../firebase-applet-config.json';
+
+// Suppress benign Firestore warnings (like idle stream disconnects)
+setLogLevel('silent');
 
 // Initialize Firebase SDK
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
@@ -18,4 +21,7 @@ async function testConnection() {
     // Skip logging for other errors, as this is simply a connection test.
   }
 }
-testConnection();
+
+if (typeof window !== 'undefined') {
+  testConnection();
+}

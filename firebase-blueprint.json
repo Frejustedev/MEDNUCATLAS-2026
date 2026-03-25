@@ -101,6 +101,16 @@
           "type": "string",
           "format": "date-time",
           "description": "Last login timestamp"
+        },
+        "recentArticles": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of recently viewed article IDs"
+        },
+        "favorites": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of favorited article IDs"
         }
       },
       "required": ["uid", "email", "role"]

@@ -110,6 +110,12 @@ export interface ContentMode {
   table?: TableData;
 }
 
+export interface ArticleContent {
+  lead: string;
+  pro: ContentMode;
+  patient: ContentMode;
+}
+
 export interface Article {
   id: string;
   cat: Category;
@@ -121,11 +127,7 @@ export interface Article {
   targetAudience?: UserProfile[];
   authors?: string[];
   sources?: { title: string; url?: string }[];
-  content: {
-    lead: string;
-    pro: ContentMode;
-    patient: ContentMode;
-  };
+  content: ArticleContent;
 }
 
 export const ENTRIES: Article[] = [

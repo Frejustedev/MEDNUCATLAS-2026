@@ -3,6 +3,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Article } from '@/lib/data';
 import { X, Send, Sparkles, Loader2 } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -71,9 +73,15 @@ export function AiAssistant({ article, onClose }: { article: Article, onClose: (
         {messages.map((m, i) => (
           <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
             <div className={`max-w-[85%] rounded-lg p-3 text-[13px] leading-[1.6] ${
-              m.role === 'user' ? 'bg-teal text-bg rounded-br-none' : 'bg-bg3 border border-border-main text-text-main rounded-bl-none'
+              m.role === 'user' ? 'bg-teal text-bg rounded-br-none' : 'bg-bg3 border border-border-main text-text-main rounded-bl-none prose prose-invert prose-sm max-w-none'
             }`}>
-              {m.content}
+              {m.role === 'user' ? (
+                m.content
+              ) : (
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {m.content}
+                </ReactMarkdown>
+              )}
             </div>
           </div>
         ))}
