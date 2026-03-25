@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
 import { Search, X, BookOpen, Tag, ChevronRight, FileText, Activity, Shield, Target } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -57,6 +57,11 @@ export function AdvancedSearch({ isOpen, onClose }: AdvancedSearchProps) {
     setActiveIndex(0);
   }, [query, selectedCategory, selectedDifficulty]);
 
+  const handleSelect = useCallback((id: string) => {
+    openArticle(id);
+    onClose();
+  }, [openArticle, onClose]);
+
   // Handle keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -100,11 +105,6 @@ export function AdvancedSearch({ isOpen, onClose }: AdvancedSearchProps) {
     acc[article.catLabel].push(article);
     return acc;
   }, {} as Record<string, Article[]>);
-
-  const handleSelect = (id: string) => {
-    openArticle(id);
-    onClose();
-  };
 
   // Extract all categories for the filter
   const allCategories = Array.from(new Set(articles.map(a => a.catLabel))).map(label => {

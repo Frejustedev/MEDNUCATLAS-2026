@@ -95,16 +95,39 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
           
           if (userDoc.exists()) {
             const data = userDoc.data() as DbUser;
+            
+            // Migrate legacy roles
+            let needsMigration = false;
+            let updatedRole = data.role;
+            let updatedProfileType = data.profileType;
+            
+            if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
+              updatedRole = 'patient';
+              updatedProfileType = 'patient';
+              needsMigration = true;
+            }
+            
+            if (needsMigration) {
+              await setDoc(userDocRef, { 
+                role: updatedRole,
+                profileType: updatedProfileType,
+                lastLogin: new Date().toISOString() 
+              }, { merge: true });
+              data.role = updatedRole;
+              data.profileType = updatedProfileType;
+            } else {
+              // Update last login
+              await setDoc(userDocRef, { lastLogin: new Date().toISOString() }, { merge: true });
+            }
+            
             setDbUser(data);
-            // Update last login
-            await setDoc(userDocRef, { lastLogin: new Date().toISOString() }, { merge: true });
           } else {
             // Create new user profile if it somehow bypassed loginWithGoogle
             const newUser: DbUser = {
               uid: user.uid,
               email: user.email || '',
-              role: 'free', // Default role
-              profileType: 'medecin_nuc',
+              role: 'patient', // Default role
+              profileType: 'patient',
               displayName: user.displayName || '',
               photoURL: user.photoURL || '',
               createdAt: new Date().toISOString(),
@@ -200,7 +223,15 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         await setDoc(userDocRef, newUser);
         setDbUser(newUser);
       } else {
+        const data = userDoc.data() as DbUser;
         const updateData: any = { lastLogin: new Date().toISOString() };
+        
+        // Migrate legacy roles
+        if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
+          updateData.role = 'patient';
+          updateData.profileType = 'patient';
+        }
+        
         if (planIntent && planIntent !== 'patient') {
           updateData.intendedPlan = planIntent;
         }

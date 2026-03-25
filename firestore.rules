@@ -94,7 +94,7 @@ service cloud.firestore {
              (!('profileType' in data) || (data.profileType in ['patient', 'medecin_non_nuc', 'medecin_nuc', 'admin'])) &&
              (!('intendedPlan' in data) || (data.intendedPlan is string && data.intendedPlan.size() < 50)) &&
              (!('displayName' in data) || (data.displayName is string && data.displayName.size() < 100)) &&
-             (!('photoURL' in data) || (data.photoURL is string && data.photoURL.size() < 500)) &&
+             (!('photoURL' in data) || (data.photoURL is string && data.photoURL.size() < 2000)) &&
              (!('createdAt' in data) || (data.createdAt is string && data.createdAt.size() < 50)) &&
              (!('lastLogin' in data) || (data.lastLogin is string && data.lastLogin.size() < 50)) &&
              (!('recentArticles' in data) || (data.recentArticles is list && data.recentArticles.size() <= 100)) &&
@@ -132,7 +132,7 @@ service cloud.firestore {
       
       // Users can update their own profile (except role and uid), admins can update anything
       allow update: if isAuthenticated() && isValidUser() && uidNotModified() && (
-        (isOwner(userId) && request.resource.data.role == resource.data.role) || isAdmin()
+        (isOwner(userId) && (request.resource.data.role == resource.data.role || (resource.data.role in ['free', 'pro', 'expert', 'institution'] && request.resource.data.role in ['patient', 'medecin_non_nuc', 'medecin_nuc']))) || isAdmin()
       );
       
       // Only admins can delete users
