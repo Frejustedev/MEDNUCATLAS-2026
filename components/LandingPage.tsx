@@ -13,11 +13,20 @@ export function LandingPage() {
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 bg-bg/85 backdrop-blur-xl border-b border-border-main">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 bg-gradient-to-br from-teal to-teal2 rounded-lg flex items-center justify-center font-mono text-sm font-medium text-bg shadow-[0_0_20px_rgba(0,201,177,0.15)]">
-            Mn
+          <div className="relative flex items-center justify-center w-10 h-10 text-teal shrink-0">
+            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_12px_rgba(0,201,177,0.3)]" fill="none" stroke="currentColor" strokeWidth="3">
+              <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(30 50 50)" />
+              <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(90 50 50)" />
+              <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(150 50 50)" />
+              <circle cx="86" cy="71" r="5" fill="currentColor" stroke="none" transform="rotate(30 50 50)" />
+              <circle cx="50" cy="8" r="5" fill="currentColor" stroke="none" transform="rotate(90 50 50)" />
+              <circle cx="14" cy="71" r="5" fill="currentColor" stroke="none" transform="rotate(150 50 50)" />
+              <circle cx="50" cy="50" r="16" fill="currentColor" stroke="none" />
+              <text x="50" y="55" fontSize="16" fontWeight="bold" fill="#0B0F19" stroke="none" textAnchor="middle" fontFamily="serif">Nc</text>
+            </svg>
           </div>
-          <div className="font-serif text-xl font-semibold tracking-wide text-text-main">
-            Nucle<span className="text-teal">Atlas</span>
+          <div className="font-serif text-2xl font-semibold tracking-wide text-text-main ml-1">
+            Nucle<span className="text-[#C8A96E]">Atlas</span>
           </div>
         </div>
         <div className="hidden md:flex items-center gap-8">
@@ -385,11 +394,20 @@ export function LandingPage() {
       <footer className="border-t border-border-main px-6 md:px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-6 bg-bg2">
         <div className="text-center md:text-left">
           <div className="flex items-center gap-2 justify-center md:justify-start mb-3">
-            <div className="w-6 h-6 bg-gradient-to-br from-teal to-teal2 rounded flex items-center justify-center font-mono text-[10px] font-medium text-bg">
-              Mn
+            <div className="relative flex items-center justify-center w-6 h-6 text-teal shrink-0">
+              <svg viewBox="0 0 100 100" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="3">
+                <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(30 50 50)" />
+                <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(90 50 50)" />
+                <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(150 50 50)" />
+                <circle cx="86" cy="71" r="5" fill="currentColor" stroke="none" transform="rotate(30 50 50)" />
+                <circle cx="50" cy="8" r="5" fill="currentColor" stroke="none" transform="rotate(90 50 50)" />
+                <circle cx="14" cy="71" r="5" fill="currentColor" stroke="none" transform="rotate(150 50 50)" />
+                <circle cx="50" cy="50" r="16" fill="currentColor" stroke="none" />
+                <text x="50" y="55" fontSize="16" fontWeight="bold" fill="#0B0F19" stroke="none" textAnchor="middle" fontFamily="serif">Nc</text>
+              </svg>
             </div>
-            <div className="font-serif text-sm font-semibold tracking-wide text-text-main">
-              Nucle<span className="text-teal">Atlas</span>
+            <div className="font-serif text-base font-semibold tracking-wide text-text-main ml-1">
+              Nucle<span className="text-[#C8A96E]">Atlas</span>
             </div>
           </div>
           <p className="text-xs text-text3">© 2026 NucleAtlas. Tous droits réservés.</p>

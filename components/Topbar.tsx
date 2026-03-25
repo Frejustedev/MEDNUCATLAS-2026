@@ -33,11 +33,20 @@ export function Topbar() {
           className="w-[260px] flex items-center gap-2.5 px-5 border-r border-border-main h-full shrink-0 hidden md:flex cursor-pointer hover:bg-bg3 transition-colors"
           onClick={showLanding}
         >
-          <div className="w-[30px] h-[30px] bg-gradient-to-br from-teal to-teal2 rounded-md flex items-center justify-center font-mono text-xs text-bg font-medium shadow-[0_0_16px_var(--color-glow)] shrink-0">
-            Mn
+          <div className="relative flex items-center justify-center w-8 h-8 text-teal shrink-0">
+            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_8px_rgba(0,201,177,0.4)]" fill="none" stroke="currentColor" strokeWidth="3">
+              <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(30 50 50)" />
+              <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(90 50 50)" />
+              <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(150 50 50)" />
+              <circle cx="86" cy="71" r="5" fill="currentColor" stroke="none" transform="rotate(30 50 50)" />
+              <circle cx="50" cy="8" r="5" fill="currentColor" stroke="none" transform="rotate(90 50 50)" />
+              <circle cx="14" cy="71" r="5" fill="currentColor" stroke="none" transform="rotate(150 50 50)" />
+              <circle cx="50" cy="50" r="16" fill="currentColor" stroke="none" />
+              <text x="50" y="55" fontSize="16" fontWeight="bold" fill="#0B0F19" stroke="none" textAnchor="middle" fontFamily="serif">Nc</text>
+            </svg>
           </div>
-          <div className="font-serif text-[17px] font-semibold">
-            Nucle<span className="text-teal">Atlas</span>
+          <div className="font-serif text-xl font-semibold ml-1">
+            Nucle<span className="text-[#C8A96E]">Atlas</span>
           </div>
         </div>
 
