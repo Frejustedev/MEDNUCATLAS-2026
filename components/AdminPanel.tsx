@@ -28,6 +28,14 @@ export function AdminPanel() {
   const [users, setUsers] = useState<any[]>([]);
   const [loadingUsers, setLoadingUsers] = useState(false);
   const [searchArticle, setSearchArticle] = useState('');
+  
+  const [message, setMessage] = useState<{type: 'success' | 'error', text: string} | null>(null);
+  const [confirmDialog, setConfirmDialog] = useState<{text: string, onConfirm: () => void} | null>(null);
+
+  const showMessage = (type: 'success' | 'error', text: string) => {
+    setMessage({ type, text });
+    setTimeout(() => setMessage(null), 3000);
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
@@ -119,7 +127,7 @@ export function AdminPanel() {
 
   const handleSave = async () => {
     if (!formData.id || !formData.title) {
-      alert('L\'ID et le Titre sont requis.');
+      showMessage('error', 'L\'ID et le Titre sont requis.');
       return;
     }
 
@@ -133,31 +141,36 @@ export function AdminPanel() {
       
       if (editingId === 'new') {
         (articleData as any).createdAt = serverTimestamp();
+        (articleData as any).authorId = dbUser?.uid || '';
       }
 
       await setDoc(doc(db, 'articles', formData.id), articleData);
-      alert('Article sauvegardé avec succès !');
+      showMessage('success', 'Article sauvegardé avec succès !');
       if (editingId === 'new') {
         setEditingId(formData.id);
       }
     } catch (error) {
+      showMessage('error', 'Échec de la sauvegarde. Vérifiez la console.');
       handleFirestoreError(error, OperationType.WRITE, `articles/${formData.id}`);
-      alert('Échec de la sauvegarde. Vérifiez la console.');
     } finally {
       setIsSaving(false);
     }
   };
 
-  const handleDelete = async (id: string) => {
-    if (!confirm('Êtes-vous sûr de vouloir supprimer cet article ?')) return;
-    
-    try {
-      await deleteDoc(doc(db, 'articles', id));
-      if (editingId === id) setEditingId(null);
-    } catch (error) {
-      handleFirestoreError(error, OperationType.DELETE, `articles/${id}`);
-      alert('Échec de la suppression.');
-    }
+  const handleDelete = (id: string) => {
+    setConfirmDialog({
+      text: 'Êtes-vous sûr de vouloir supprimer cet article ?',
+      onConfirm: async () => {
+        try {
+          await deleteDoc(doc(db, 'articles', id));
+          if (editingId === id) setEditingId(null);
+          showMessage('success', 'Article supprimé.');
+        } catch (error) {
+          showMessage('error', 'Échec de la suppression.');
+          handleFirestoreError(error, OperationType.DELETE, `articles/${id}`);
+        }
+      }
+    });
   };
 
   const filteredArticles = articles.filter(a => 
@@ -166,7 +179,43 @@ export function AdminPanel() {
   );
 
   return (
-    <div className="flex-1 flex h-full overflow-hidden bg-bg animate-in fade-in duration-300">
+    <div className="flex-1 flex h-full overflow-hidden bg-bg animate-in fade-in duration-300 relative">
+      {/* Toast Message */}
+      {message && (
+        <div className={`absolute top-4 right-4 z-50 px-4 py-2 rounded-lg shadow-lg text-sm font-medium animate-in slide-in-from-top-2 ${
+          message.type === 'success' ? 'bg-teal text-white' : 'bg-red-500 text-white'
+        }`}>
+          {message.text}
+        </div>
+      )}
+
+      {/* Confirm Dialog */}
+      {confirmDialog && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-bg2 border border-border-main rounded-xl p-6 max-w-sm w-full shadow-2xl animate-in zoom-in-95">
+            <h3 className="text-lg font-serif text-text-main mb-4">Confirmation</h3>
+            <p className="text-text2 text-sm mb-6">{confirmDialog.text}</p>
+            <div className="flex justify-end gap-3">
+              <button 
+                onClick={() => setConfirmDialog(null)}
+                className="px-4 py-2 text-sm font-medium text-text2 hover:text-text-main transition-colors"
+              >
+                Annuler
+              </button>
+              <button 
+                onClick={() => {
+                  confirmDialog.onConfirm();
+                  setConfirmDialog(null);
+                }}
+                className="px-4 py-2 text-sm font-medium bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+              >
+                Confirmer
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Sidebar Admin */}
       <div className="w-[240px] border-r border-border-main flex flex-col bg-bg2 shrink-0">
         <div className="p-6 border-b border-border-main">
@@ -229,29 +278,33 @@ export function AdminPanel() {
               <h3 className="text-lg font-serif text-text-main mb-4">Outils d&apos;administration</h3>
               <div className="flex items-center gap-4">
                 <button 
-                  onClick={async () => {
-                    if (!confirm("Voulez-vous vraiment migrer les données initiales vers Firestore ? Cela écrasera les articles existants avec le même ID.")) return;
-                    setIsSaving(true);
-                    try {
-                      const { ENTRIES } = await import('@/lib/data');
-                      let count = 0;
-                      for (const entry of ENTRIES) {
-                        const articleData = {
-                          ...entry,
-                          content: JSON.stringify(entry.content),
-                          updatedAt: serverTimestamp(),
-                          createdAt: serverTimestamp()
-                        };
-                        await setDoc(doc(db, 'articles', entry.id), articleData);
-                        count++;
+                  onClick={() => {
+                    setConfirmDialog({
+                      text: "Voulez-vous vraiment migrer les données initiales vers Firestore ? Cela écrasera les articles existants avec le même ID.",
+                      onConfirm: async () => {
+                        setIsSaving(true);
+                        try {
+                          const { ENTRIES } = await import('@/lib/data');
+                          let count = 0;
+                          for (const entry of ENTRIES) {
+                            const articleData = {
+                              ...entry,
+                              content: JSON.stringify(entry.content),
+                              updatedAt: serverTimestamp(),
+                              createdAt: serverTimestamp()
+                            };
+                            await setDoc(doc(db, 'articles', entry.id), articleData);
+                            count++;
+                          }
+                          showMessage('success', `Migration terminée avec succès ! ${count} articles ont été importés.`);
+                        } catch (error) {
+                          console.error("Erreur lors de la migration:", error);
+                          showMessage('error', "Une erreur est survenue lors de la migration. Consultez la console.");
+                        } finally {
+                          setIsSaving(false);
+                        }
                       }
-                      alert(`Migration terminée avec succès ! ${count} articles ont été importés.`);
-                    } catch (error) {
-                      console.error("Erreur lors de la migration:", error);
-                      alert("Une erreur est survenue lors de la migration. Consultez la console.");
-                    } finally {
-                      setIsSaving(false);
-                    }
+                    });
                   }}
                   disabled={isSaving}
                   className="px-4 py-2 bg-teal/20 text-teal rounded-lg font-medium hover:bg-teal/30 transition-colors disabled:opacity-50 text-sm flex items-center gap-2"
@@ -317,9 +370,10 @@ export function AdminPanel() {
                               try {
                                 await updateDoc(doc(db, 'users', u.id), { role: newRole, profileType: newRole });
                                 setUsers(users.map(user => user.id === u.id ? { ...user, role: newRole, profileType: newRole } : user));
+                                showMessage('success', 'Rôle mis à jour.');
                               } catch (error) {
+                                showMessage('error', 'Erreur lors de la mise à jour du rôle.');
                                 handleFirestoreError(error, OperationType.UPDATE, `users/${u.id}`);
-                                alert('Erreur lors de la mise à jour du rôle.');
                               }
                             }}
                             className="bg-bg3 border border-border-main rounded px-2 py-1 text-xs outline-none focus:border-teal text-text-main"

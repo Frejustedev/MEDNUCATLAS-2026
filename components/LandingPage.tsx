@@ -5,6 +5,7 @@ import { useAtlas } from '@/lib/AtlasContext';
 import { motion } from 'motion/react';
 import { ArrowRight, Activity, Heart, Target, Bone, Shield, FlaskConical, Stethoscope, BookOpen, Search, Zap } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
+import Link from 'next/link';
 
 export function LandingPage() {
   const { showHome, authUser, openAuthModal } = useAtlas();
@@ -423,9 +424,9 @@ export function LandingPage() {
           <p className="text-xs text-text3">© 2026 NucleAtlas. Tous droits réservés.</p>
         </div>
         <div className="flex gap-6">
-          <a href="#" className="text-xs text-text3 hover:text-teal transition-colors">Mentions légales</a>
-          <a href="#" className="text-xs text-text3 hover:text-teal transition-colors">Contact</a>
-          <a href="#" className="text-xs text-text3 hover:text-teal transition-colors">Contribuer</a>
+          <Link href="/mentions-legales" className="text-xs text-text3 hover:text-teal transition-colors">Mentions légales</Link>
+          <Link href="/contact" className="text-xs text-text3 hover:text-teal transition-colors">Contact</Link>
+          <Link href="/contribuer" className="text-xs text-text3 hover:text-teal transition-colors">Contribuer</Link>
         </div>
       </footer>
     </div>

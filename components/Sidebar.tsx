@@ -48,6 +48,7 @@ const getIcon = (id: string, className: string = "w-3.5 h-3.5") => {
 
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
+import Link from 'next/link';
 
 export function Sidebar() {
   const { showHome, showCategory, openArticle, articles, userProfile, isMobileMenuOpen, setIsMobileMenuOpen } = useAtlas();
@@ -189,12 +190,20 @@ export function Sidebar() {
           );
         })}
       </div>
+      <div className="mt-auto pt-8 pb-4 px-5">
+        <div className="flex flex-col gap-2">
+          <Link href="/mentions-legales" className="text-[11px] text-text3 hover:text-teal transition-colors">Mentions légales</Link>
+          <Link href="/contact" className="text-[11px] text-text3 hover:text-teal transition-colors">Contact</Link>
+          <Link href="/contribuer" className="text-[11px] text-text3 hover:text-teal transition-colors">Contribuer</Link>
+        </div>
+        <div className="text-[10px] text-text3/50 mt-4">© 2026 NucleAtlas</div>
+      </div>
     </>
   );
 
   return (
     <>
-      <div className="w-[260px] bg-bg2 border-r border-border-main overflow-y-auto py-4 hidden md:block shrink-0">
+      <div className="w-[260px] bg-bg2 border-r border-border-main overflow-y-auto py-4 hidden md:flex flex-col shrink-0">
         {sidebarContent}
       </div>
 

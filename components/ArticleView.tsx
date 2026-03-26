@@ -119,7 +119,7 @@ export function ArticleView() {
           </button>
         </div>
 
-        <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9 prose prose-invert prose-teal max-w-none">
+        <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9 prose dark:prose-invert prose-teal max-w-none">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content.lead || ''}</ReactMarkdown>
         </div>
 
@@ -129,7 +129,7 @@ export function ArticleView() {
               {s.title}
             </h3>
             {s.text && (
-              <div className="text-[14px] text-text2 leading-[1.8] mb-3 prose prose-invert prose-teal max-w-none">
+              <div className="text-[14px] text-text2 leading-[1.8] mb-3 prose dark:prose-invert prose-teal max-w-none">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{s.text}</ReactMarkdown>
               </div>
             )}
@@ -147,7 +147,7 @@ export function ArticleView() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[13px] mb-1">{s.infoBox.title}</h4>
-                  <div className="text-[13px] leading-relaxed opacity-90 prose prose-invert max-w-none">
+                  <div className="text-[13px] leading-relaxed opacity-90 prose dark:prose-invert max-w-none">
                     <ReactMarkdown remarkPlugins={[remarkGfm]}>{s.infoBox.text}</ReactMarkdown>
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export function ArticleView() {
                     </div>
                     <div>
                       <h4 className="font-bold text-[14px] text-text-main mb-1">{step.title}</h4>
-                      <div className="text-[13px] text-text2 leading-relaxed prose prose-invert max-w-none">
+                      <div className="text-[13px] text-text2 leading-relaxed prose dark:prose-invert max-w-none">
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.text}</ReactMarkdown>
                       </div>
                     </div>
@@ -187,7 +187,7 @@ export function ArticleView() {
               <ul className="flex flex-col gap-2 my-3">
                 {s.list.map((l, j) => (
                   <li key={j} className="text-[13px] text-text2 leading-[1.6] pl-5 relative before:content-['▸'] before:absolute before:left-0 before:text-teal before:text-[10px] before:top-[3px]">
-                    <span className="prose prose-invert max-w-none"><ReactMarkdown remarkPlugins={[remarkGfm]}>{l}</ReactMarkdown></span>
+                    <span className="prose dark:prose-invert max-w-none"><ReactMarkdown remarkPlugins={[remarkGfm]}>{l}</ReactMarkdown></span>
                   </li>
                 ))}
               </ul>

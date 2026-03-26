@@ -72,7 +72,7 @@ export const MENU_STRUCTURE = [
   {
     title: "ℹ️ INFORMATIONS",
     items: [
-      { id: 'about', label: 'À propos' },
+      { id: 'about', label: 'Mentions Légales' },
       { id: 'annuaire', label: 'Annuaire des Médecins' },
       { id: 'contact', label: 'Nous contacter' },
     ]

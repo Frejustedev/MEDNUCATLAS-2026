@@ -87,7 +87,7 @@ export function AiAssistant({ article, onClose, userProfile }: { article: Articl
         {messages.map((m, i) => (
           <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
             <div className={`max-w-[85%] rounded-lg p-3 text-[13px] leading-[1.6] ${
-              m.role === 'user' ? 'bg-teal text-bg rounded-br-none' : 'bg-bg3 border border-border-main text-text-main rounded-bl-none prose prose-invert prose-sm max-w-none'
+              m.role === 'user' ? 'bg-teal text-bg rounded-br-none' : 'bg-bg3 border border-border-main text-text-main rounded-bl-none prose dark:prose-invert prose-sm max-w-none'
             }`}>
               {m.role === 'user' ? (
                 m.content

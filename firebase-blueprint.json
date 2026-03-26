@@ -43,6 +43,21 @@
           "type": "string",
           "description": "UID of the author"
         },
+        "targetAudience": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Target audience profiles"
+        },
+        "authors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of authors"
+        },
+        "sources": {
+          "type": "array",
+          "items": { "type": "object" },
+          "description": "List of sources"
+        },
         "createdAt": {
           "type": "string",
           "format": "date-time",

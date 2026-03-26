@@ -52,6 +52,8 @@ interface AtlasContextType extends AtlasState {
   showAdmin: () => void;
   showProfile: () => void;
   loginWithGoogle: (profileType?: UserProfile, planIntent?: string) => Promise<void>;
+  loginWithEmail: (email: string, password: string, profileType?: UserProfile, planIntent?: string) => Promise<void>;
+  signupWithEmail: (email: string, password: string, profileType?: UserProfile, planIntent?: string) => Promise<void>;
   logout: () => Promise<void>;
   openAuthModal: (intent?: string) => void;
   closeAuthModal: () => void;
@@ -188,49 +190,74 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     });
   }, [allArticles, userProfile]);
 
+  const handleAuthResult = async (user: any, profileType: UserProfile, planIntent: string) => {
+    const userDocRef = doc(db, 'users', user.uid);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (!userDoc.exists()) {
+      const newUser: DbUser = {
+        uid: user.uid,
+        email: user.email || '',
+        role: profileType,
+        profileType: profileType,
+        displayName: user.displayName || user.email?.split('@')[0] || '',
+        photoURL: user.photoURL || '',
+        createdAt: new Date().toISOString(),
+        lastLogin: new Date().toISOString(),
+      };
+      if (planIntent) {
+        newUser.intendedPlan = planIntent;
+      }
+      await setDoc(userDocRef, newUser);
+      setDbUser(newUser);
+    } else {
+      const data = userDoc.data() as DbUser;
+      const updateData: any = { lastLogin: new Date().toISOString() };
+      
+      // Migrate legacy roles
+      if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
+        updateData.role = 'patient';
+        updateData.profileType = 'patient';
+      }
+      
+      if (planIntent && planIntent !== 'patient') {
+        updateData.intendedPlan = planIntent;
+      }
+      await setDoc(userDocRef, updateData, { merge: true });
+    }
+  };
+
   const loginWithGoogle = async (profileType: UserProfile = 'patient', planIntent: string = 'patient') => {
     try {
       const provider = new GoogleAuthProvider();
       provider.setCustomParameters({ prompt: 'select_account' });
       const result = await signInWithPopup(auth, provider);
-      const user = result.user;
-      
-      const userDocRef = doc(db, 'users', user.uid);
-      const userDoc = await getDoc(userDocRef);
-      
-      if (!userDoc.exists()) {
-        const newUser: DbUser = {
-          uid: user.uid,
-          email: user.email || '',
-          role: profileType,
-          profileType: profileType,
-          displayName: user.displayName || '',
-          photoURL: user.photoURL || '',
-          createdAt: new Date().toISOString(),
-          lastLogin: new Date().toISOString(),
-        };
-        if (planIntent) {
-          newUser.intendedPlan = planIntent;
-        }
-        await setDoc(userDocRef, newUser);
-        setDbUser(newUser);
-      } else {
-        const data = userDoc.data() as DbUser;
-        const updateData: any = { lastLogin: new Date().toISOString() };
-        
-        // Migrate legacy roles
-        if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
-          updateData.role = 'patient';
-          updateData.profileType = 'patient';
-        }
-        
-        if (planIntent && planIntent !== 'patient') {
-          updateData.intendedPlan = planIntent;
-        }
-        await setDoc(userDocRef, updateData, { merge: true });
-      }
+      await handleAuthResult(result.user, profileType, planIntent);
     } catch (error) {
       console.error("Error signing in with Google:", error);
+      throw error;
+    }
+  };
+
+  const loginWithEmail = async (email: string, password: string, profileType: UserProfile = 'patient', planIntent: string = 'patient') => {
+    try {
+      const { signInWithEmailAndPassword } = await import('firebase/auth');
+      const result = await signInWithEmailAndPassword(auth, email, password);
+      await handleAuthResult(result.user, profileType, planIntent);
+    } catch (error) {
+      console.error("Error signing in with Email:", error);
+      throw error;
+    }
+  };
+
+  const signupWithEmail = async (email: string, password: string, profileType: UserProfile = 'patient', planIntent: string = 'patient') => {
+    try {
+      const { createUserWithEmailAndPassword } = await import('firebase/auth');
+      const result = await createUserWithEmailAndPassword(auth, email, password);
+      await handleAuthResult(result.user, profileType, planIntent);
+    } catch (error) {
+      console.error("Error signing up with Email:", error);
+      throw error;
     }
   };
 
@@ -270,6 +297,12 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     setIsMobileMenuOpen(false);
     if (cat === 'dashboard') {
       router.push('/dashboard');
+    } else if (cat === 'annuaire') {
+      router.push('/annuaire');
+    } else if (cat === 'contact') {
+      router.push('/contact');
+    } else if (cat === 'about') {
+      router.push('/mentions-legales');
     } else {
       router.push(`/categories/${cat}`);
     }
@@ -370,6 +403,8 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         showAdmin,
         showProfile,
         loginWithGoogle,
+        loginWithEmail,
+        signupWithEmail,
         logout,
         openAuthModal,
         closeAuthModal,

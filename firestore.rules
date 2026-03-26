@@ -30,6 +30,9 @@ service cloud.firestore {
     //   - tags: list of strings (optional)
     //   - difficulty: string (optional) - 'fondamental', 'intermédiaire', 'avancé'
     //   - excerpt: string (optional)
+    //   - targetAudience: list of strings (optional)
+    //   - authors: list of strings (optional)
+    //   - sources: list of objects (optional)
     //   - content: string (required) - JSON stringified content
     //   - authorId: string (optional)
     //   - createdAt: timestamp (optional)
@@ -110,6 +113,9 @@ service cloud.firestore {
              data.content is string && data.content.size() < 1000000 && // 1MB limit check
              (!('catLabel' in data) || (data.catLabel is string && data.catLabel.size() < 100)) &&
              (!('excerpt' in data) || (data.excerpt is string && data.excerpt.size() < 1000)) &&
+             (!('targetAudience' in data) || (data.targetAudience is list && data.targetAudience.size() < 10)) &&
+             (!('authors' in data) || (data.authors is list && data.authors.size() < 50)) &&
+             (!('sources' in data) || (data.sources is list && data.sources.size() < 100)) &&
              (!('difficulty' in data) || (data.difficulty in ['fondamental', 'intermédiaire', 'avancé'])) &&
              (!('tags' in data) || (data.tags is list && data.tags.size() < 50)) &&
              (!('authorId' in data) || (data.authorId is string && data.authorId.size() < 100)) &&
