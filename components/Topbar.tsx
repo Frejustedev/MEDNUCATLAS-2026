@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
-import { Search, Sparkles, UserCircle } from 'lucide-react';
+import { Search, Sparkles, UserCircle, Menu } from 'lucide-react';
 import { AuthButton } from './AuthButton';
+import { ThemeToggle } from './ThemeToggle';
 import { UserProfile } from '@/lib/data';
 import { AdvancedSearch } from './AdvancedSearch';
 
 export function Topbar() {
-  const { searchQuery, setSearchQuery, userProfile, setUserProfile, lang, setLang, showLanding } = useAtlas();
+  const { searchQuery, setSearchQuery, userProfile, setUserProfile, lang, setLang, showLanding, isMobileMenuOpen, setIsMobileMenuOpen } = useAtlas();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const handleProfileChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -29,6 +30,13 @@ export function Topbar() {
   return (
     <>
       <div className="col-span-full flex items-center bg-bg2 border-b border-border-main relative z-10 h-14 shrink-0">
+        <button 
+          className="md:hidden p-3 text-text2 hover:text-teal transition-colors"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <Menu className="w-5 h-5" />
+        </button>
+        
         <div 
           className="w-[260px] flex items-center gap-2.5 px-5 border-r border-border-main h-full shrink-0 hidden md:flex cursor-pointer hover:bg-bg3 transition-colors"
           onClick={showLanding}
@@ -50,14 +58,14 @@ export function Topbar() {
           </div>
         </div>
 
-        <div className="flex-1 flex items-center gap-3 px-5">
+        <div className="flex-1 flex items-center gap-3 px-2 md:px-5">
           <div className="flex-1 max-w-[520px] relative group">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-text3 w-3.5 h-3.5 pointer-events-none group-hover:text-teal transition-colors" />
             <button
               onClick={() => setIsSearchOpen(true)}
               className="w-full bg-bg3 border border-border-main rounded-lg py-2 pr-4 pl-10 text-left text-text3 font-sans text-[13px] outline-none transition-colors hover:border-teal/40 hover:bg-bg3/80 flex items-center justify-between"
             >
-              <span>Rechercher une entrée, un radiopharmaceutique...</span>
+              <span className="truncate">Rechercher...</span>
               <kbd className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded border border-border-main bg-bg text-[10px] font-mono text-text3">
                 <span className="text-xs">⌘</span>K
               </kbd>
@@ -65,7 +73,7 @@ export function Topbar() {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 px-5 ml-auto">
+        <div className="flex items-center gap-2 px-2 md:px-5 ml-auto">
           <div className="flex items-center gap-2 bg-bg3 border border-border-main rounded-md px-2 py-1">
             <UserCircle className="w-4 h-4 text-text3" />
             <select
@@ -88,6 +96,8 @@ export function Topbar() {
             <option value="en">🇬🇧 English</option>
             <option value="ar">🇩🇿 عربي</option>
           </select>
+          
+          <ThemeToggle />
           
           <AuthButton />
         </div>

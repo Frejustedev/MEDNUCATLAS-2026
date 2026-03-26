@@ -6,9 +6,12 @@ import { ArrowLeft, Sparkles, Info, AlertTriangle, Lightbulb, Star, User, Stetho
 import { AiAssistant } from './AiAssistant';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { useParams } from 'next/navigation';
 
 export function ArticleView() {
-  const { currentArticle, showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
+  const { showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
+  const params = useParams();
+  const currentArticle = params.id as string;
   const [isAiOpen, setIsAiOpen] = useState(false);
   
   const article = articles.find(e => e.id === currentArticle);

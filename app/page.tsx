@@ -1,44 +1,37 @@
 'use client';
 
-import React from 'react';
-import { AtlasProvider, useAtlas } from '@/lib/AtlasContext';
-import { Sidebar } from '@/components/Sidebar';
-import { Topbar } from '@/components/Topbar';
-import { MainContent } from '@/components/MainContent';
-import { ErrorBoundary } from '@/components/ErrorBoundary';
+import React, { useEffect } from 'react';
+import { useAtlas } from '@/lib/AtlasContext';
 import { LandingPage } from '@/components/LandingPage';
 import { AuthModal } from '@/components/AuthModal';
+import { useRouter } from 'next/navigation';
 
-function AppContent() {
-  const { view } = useAtlas();
+export default function Page() {
+  const { authUser, authLoading } = useAtlas();
+  const router = useRouter();
 
-  if (view === 'landing') {
+  useEffect(() => {
+    if (!authLoading && authUser) {
+      router.push('/home');
+    }
+  }, [authUser, authLoading, router]);
+
+  if (authLoading) {
     return (
-      <>
-        <LandingPage />
-        <AuthModal />
-      </>
+      <div className="flex items-center justify-center h-screen bg-bg">
+        <div className="text-teal font-mono animate-pulse">Chargement...</div>
+      </div>
     );
   }
 
-  return (
-    <div className="flex flex-col h-screen bg-bg text-text-main overflow-hidden">
-      <Topbar />
-      <div className="flex flex-1 overflow-hidden relative">
-        <Sidebar />
-        <MainContent />
-      </div>
-      <AuthModal />
-    </div>
-  );
-}
+  if (authUser) {
+    return null; // Will redirect
+  }
 
-export default function Page() {
   return (
-    <ErrorBoundary>
-      <AtlasProvider>
-        <AppContent />
-      </AtlasProvider>
-    </ErrorBoundary>
+    <>
+      <LandingPage />
+      <AuthModal />
+    </>
   );
 }

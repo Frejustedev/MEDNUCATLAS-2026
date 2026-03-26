@@ -2,26 +2,26 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-bg: #04080f;
-  --color-bg2: #080e1a;
-  --color-bg3: #0d1627;
-  --color-bg4: #101d35;
-  --color-teal: #00c9b1;
-  --color-teal2: #00a896;
-  --color-teal3: rgba(0,201,177,0.08);
-  --color-gold: #c8a96e;
-  --color-gold2: #e8c98a;
-  --color-gold3: rgba(200,169,110,0.10);
-  --color-blue: #4db8ff;
-  --color-blue3: rgba(77,184,255,0.10);
-  --color-atom: #a78bfa;
-  --color-atom3: rgba(167,139,250,0.10);
-  --color-text-main: #e8edf5;
-  --color-text2: #8a99b5;
-  --color-text3: #4a5a78;
-  --color-border-main: rgba(0,201,177,0.12);
-  --color-border2: rgba(200,169,110,0.15);
-  --color-glow: rgba(0,201,177,0.15);
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --color-bg3: var(--bg3);
+  --color-bg4: var(--bg4);
+  --color-teal: var(--teal);
+  --color-teal2: var(--teal2);
+  --color-teal3: var(--teal3);
+  --color-gold: var(--gold);
+  --color-gold2: var(--gold2);
+  --color-gold3: var(--gold3);
+  --color-blue: var(--blue);
+  --color-blue3: var(--blue3);
+  --color-atom: var(--atom);
+  --color-atom3: var(--atom3);
+  --color-text-main: var(--text-main);
+  --color-text2: var(--text2);
+  --color-text3: var(--text3);
+  --color-border-main: var(--border-main);
+  --color-border2: var(--border2);
+  --color-glow: var(--glow);
   --radius-main: 10px;
 
   --font-sans: var(--font-dm-sans);
@@ -30,6 +30,54 @@
 }
 
 @layer base {
+  :root {
+    /* Light Mode Colors */
+    --bg: #f8fafc;
+    --bg2: #ffffff;
+    --bg3: #f1f5f9;
+    --bg4: #e2e8f0;
+    --teal: #00a896;
+    --teal2: #008a7b;
+    --teal3: rgba(0, 168, 150, 0.1);
+    --gold: #b5955c;
+    --gold2: #d4b475;
+    --gold3: rgba(181, 149, 92, 0.1);
+    --blue: #2b9bf0;
+    --blue3: rgba(43, 155, 240, 0.1);
+    --atom: #8b5cf6;
+    --atom3: rgba(139, 92, 246, 0.1);
+    --text-main: #0f172a;
+    --text2: #475569;
+    --text3: #64748b;
+    --border-main: rgba(0, 168, 150, 0.2);
+    --border2: rgba(181, 149, 92, 0.2);
+    --glow: rgba(0, 168, 150, 0.1);
+  }
+
+  .dark {
+    /* Dark Mode Colors (Original) */
+    --bg: #04080f;
+    --bg2: #080e1a;
+    --bg3: #0d1627;
+    --bg4: #101d35;
+    --teal: #00c9b1;
+    --teal2: #00a896;
+    --teal3: rgba(0,201,177,0.08);
+    --gold: #c8a96e;
+    --gold2: #e8c98a;
+    --gold3: rgba(200,169,110,0.10);
+    --blue: #4db8ff;
+    --blue3: rgba(77,184,255,0.10);
+    --atom: #a78bfa;
+    --atom3: rgba(167,139,250,0.10);
+    --text-main: #e8edf5;
+    --text2: #8a99b5;
+    --text3: #4a5a78;
+    --border-main: rgba(0,201,177,0.12);
+    --border2: rgba(200,169,110,0.15);
+    --glow: rgba(0,201,177,0.15);
+  }
+
   html, body {
     @apply h-full bg-bg text-text-main font-sans font-light overflow-hidden;
   }

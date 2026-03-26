@@ -133,336 +133,129 @@ export interface Article {
 
 export const ENTRIES: Article[] = [
   {
-    id:'MN000_GEN', cat:'generalites', catLabel:'Généralités',
-    title:'Introduction à la Médecine Nucléaire',
-    tags:['Bases','Traceurs','Imagerie'],
-    difficulty:'fondamental',
-    excerpt:"Principes de base de l'imagerie fonctionnelle et moléculaire.",
+    id: 'MN000_GEN',
+    cat: 'generalites',
+    catLabel: 'Généralités',
+    title: 'Introduction à la Médecine Nucléaire',
+    tags: ['Bases', 'Traceurs', 'Imagerie', 'Théranostique'],
+    difficulty: 'fondamental',
+    excerpt: "Principes de base de l'imagerie fonctionnelle et moléculaire, de la TEMP à la TEP, et introduction à la théranostique.",
     authors: ['Dr. Fréjuste Agboton'],
     sources: [
       { title: 'Société Française de Médecine Nucléaire (SFMN)', url: 'https://www.sfmn.org' },
       { title: 'European Association of Nuclear Medicine (EANM)', url: 'https://www.eanm.org' }
     ],
-    content:{
-      lead:"La médecine nucléaire est une spécialité d'imagerie médicale et de thérapie qui utilise des propriétés radioactives pour explorer le fonctionnement des organes à l'échelle moléculaire.",
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
+    content: {
+      lead: "La médecine nucléaire est une spécialité médicale d'imagerie fonctionnelle et moléculaire, ainsi que de thérapie ciblée, reposant sur l'administration de radiopharmaceutiques.",
+      patient: {
+        sections: [
           {
-            title:'Définition et Concept', 
-            text:"Contrairement à la radiologie qui s'intéresse principalement à l'anatomie (la structure), la médecine nucléaire s'intéresse à la physiologie (le fonctionnement). Elle repose sur l'administration d'un radiopharmaceutique dont la distribution in vivo reflète un processus biologique spécifique.",
+            title: "La médecine nucléaire, qu'est-ce que c'est ?",
+            text: "Contrairement à la radiologie classique (comme les radios ou les scanners) qui photographie l'anatomie de vos organes (leur forme), la médecine nucléaire photographie leur fonctionnement. Pour cela, nous utilisons de très petites quantités de médicaments légèrement radioactifs, appelés « traceurs »."
+          },
+          {
+            title: "Comment ça marche ?",
+            text: "Le principe est simple :",
+            list: [
+              "L'administration : On vous injecte (ou vous fait avaler/respirer) le traceur. Ce produit est conçu pour aller se fixer spécifiquement sur l'organe que l'on souhaite étudier (les os, le cœur, la thyroïde...).",
+              "L'attente : Il faut souvent patienter un peu pour que le produit atteigne sa cible.",
+              "Les images : Vous passez sous une caméra spéciale (caméra gamma ou TEP). Cette machine ne vous envoie aucun rayon ! Elle se contente de capter les signaux émis par le traceur à l'intérieur de votre corps pour créer une image."
+            ]
+          },
+          {
+            title: "Est-ce dangereux ?",
+            text: "C'est une question très fréquente, mais rassurez-vous : la médecine nucléaire est très sûre.",
+            list: [
+              "Dose minime : La quantité de radioactivité est extrêmement faible, souvent comparable à ce que vous recevez naturellement en vivant sur Terre pendant quelques mois.",
+              "Élimination rapide : Le produit perd rapidement sa radioactivité et s'élimine naturellement (par les urines) en quelques heures ou jours.",
+              "Pas d'allergie : Les produits utilisés ne rendent pas malade, ne font pas dormir et les allergies sont exceptionnelles (il n'y a pas d'iode comme dans les scanners classiques)."
+            ],
             infoBox: {
-              type: 'tip',
-              title: 'Le concept de Théranostique',
-              text: "C'est l'association d'un test diagnostique et d'une thérapie ciblée utilisant le même vecteur moléculaire. Si la cible est présente à l'imagerie, on peut la traiter en changeant simplement l'isotope radioactif (ex: Gallium-68 pour le diagnostic, Lutécium-177 pour la thérapie)."
+              type: "info",
+              title: "Grossesse et allaitement",
+              text: "Par précaution, ces examens sont généralement évités chez la femme enceinte. Si vous êtes enceinte, pensez à l'être, ou si vous allaitez, signalez-le impérativement lors de la prise de rendez-vous."
             }
           },
           {
-            title:"L'Imagerie Hybride", 
-            text:"Aujourd'hui, la quasi-totalité des caméras sont hybrides : elles couplent une modalité fonctionnelle (TEP ou TEMP) à une modalité anatomique (TDM ou IRM) pour une localisation précise des anomalies.",
-            stats: [
-              { value: 'TEP-TDM', label: 'Métabolisme + Anatomie' },
-              { value: 'TEMP-TDM', label: 'Fonction + Anatomie' },
-              { value: 'TEP-IRM', label: 'Haute résolution tissulaire' }
-            ]
-          },
-          {
-            title:'Le Radiopharmaceutique', 
-            text:"C'est le médicament administré au patient. Il est toujours composé de deux parties indissociables :",
-            steps: [
-              { title: 'Le Vecteur', text: "C'est la molécule 'intelligente' qui cible spécifiquement l'organe ou la pathologie (ex: le glucose pour les tumeurs, un anticorps, un peptide)." },
-              { title: 'Le Marqueur', text: "C'est l'isotope radioactif (ex: Fluor-18, Technétium-99m) qui émet des rayonnements détectables par les caméras pour créer l'image." }
-            ]
+            title: "La thérapie (Théranostique)",
+            text: "La médecine nucléaire ne sert pas qu'à faire des diagnostics. Parfois, en utilisant un traceur un peu plus puissant, nous pouvons traiter directement certaines maladies (comme l'hyperthyroïdie ou certains cancers) en ciblant précisément les cellules malades tout en épargnant les cellules saines."
           }
         ]
       },
-      patient:{
-        sections:[
+      medecin_non_nuc: {
+        sections: [
           {
-            title:"Qu'est-ce que la médecine nucléaire ?", 
-            text:"C'est une spécialité médicale qui permet de voir comment fonctionnent vos organes. Contrairement à une radiographie classique qui montre la 'forme' de vos os ou organes, la médecine nucléaire montre leur 'activité'.",
+            title: "L'imagerie fonctionnelle et moléculaire",
+            text: "La médecine nucléaire apporte une dimension fonctionnelle et métabolique à l'imagerie médicale. Là où la TDM ou l'IRM excellent dans la résolution spatiale et l'analyse morphologique, la médecine nucléaire (TEMP et TEP) détecte des anomalies biochimiques et physiologiques souvent bien avant l'apparition de modifications anatomiques."
+          },
+          {
+            title: "Les deux grandes modalités diagnostiques",
+            list: [
+              "La TEMP (Tomographie par Émission Monophotonique) : Utilise des émetteurs gamma (principalement le Technétium-99m). Idéale pour l'exploration d'organes spécifiques (scintigraphie osseuse, myocardique, pulmonaire, rénale).",
+              "La TEP (Tomographie par Émission de Positons) : Utilise des émetteurs de positons (principalement le Fluor-18). Offre une résolution spatiale et une sensibilité supérieures. C'est l'outil de référence en oncologie (TEP-FDG), mais aussi en neurologie et cardiologie."
+            ]
+          },
+          {
+            title: "Le concept de Théranostique",
+            text: "C'est la contraction de « Thérapie » et « Diagnostic ». Le principe est d'utiliser le même vecteur moléculaire pour imager une cible (avec un isotope diagnostique comme le 68Ga ou le 18F) puis, si la cible est présente, de traiter la maladie en remplaçant l'isotope par un émetteur de particules destructrices (bêta- ou alpha, comme le 177Lu ou le 225Ac).",
             infoBox: {
-              type: 'info',
-              title: 'Radiologie vs Médecine Nucléaire',
-              text: "En radiologie (scanner, radio), la machine émet les rayons qui traversent votre corps. En médecine nucléaire, c'est le produit qu'on vous injecte qui émet des rayons très faibles, captés par la machine."
+              type: "tip",
+              title: "L'adage de la théranostique",
+              text: "« We see what we treat, and we treat what we see. » (Nous voyons ce que nous traitons, et nous traitons ce que nous voyons)."
             }
           },
           {
-            title:"Comment se déroule un examen ?", 
-            steps: [
-              { title: "L'administration", text: "On vous donne un produit légèrement radioactif, le plus souvent par une simple piqûre dans le bras." },
-              { title: "L'attente", text: "Il faut souvent patienter (de quelques minutes à quelques heures) pour que le produit se fixe sur l'organe à examiner." },
-              { title: "L'image", text: "Vous vous allongez sur la machine (la caméra) qui va prendre des photos de votre corps sans vous toucher." }
-            ]
-          },
-          {
-            title:"Est-ce dangereux ?", 
-            text:"Non. Les doses de radioactivité utilisées sont extrêmement faibles et calculées sur mesure pour votre poids et votre âge.",
-            stats: [
-              { value: 'Très faible', label: 'Dose de radioactivité' },
-              { value: 'Quelques heures', label: 'Élimination du produit' }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    id:'MN000_PHYS', cat:'bases_physiques', catLabel:'Bases Physiques',
-    title:'Physique des rayonnements',
-    tags:['Isotopes','Rayonnements','Détection'],
-    difficulty:'fondamental',
-    excerpt:'Nature des rayonnements, interactions avec la matière et principes de détection.',
-    authors: ['Dr. Fréjuste Agboton'],
-    sources: [
-      { title: 'IRSN - Bases physiques', url: 'https://www.irsn.fr' }
-    ],
-    content:{
-      lead:'La compréhension de la physique des rayonnements est essentielle pour optimiser la qualité des images et garantir la sécurité dosimétrique.',
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
-          {
-            title:"Origine de la radioactivité", 
-            text:"La radioactivité est un phénomène naturel ou artificiel par lequel un noyau atomique instable (radionucléide) se transforme en un noyau plus stable en émettant de l'énergie sous forme de rayonnements."
-          },
-          {
-            title:"Les types de rayonnements", 
-            stats: [
-              { value: 'Alpha (α)', label: 'Particule lourde, très ionisante, parcours très court (thérapie)' },
-              { value: 'Bêta (β)', label: 'Électron (β-) ou Positon (β+), parcours millimétrique (thérapie/TEP)' },
-              { value: 'Gamma (γ)', label: 'Onde électromagnétique, très pénétrante (diagnostic TEMP)' }
-            ]
-          },
-          {
-            title:"De l'émission à l'image", 
-            steps: [
-              { title: "Émission", text: "Le radiopharmaceutique se désintègre dans le corps du patient et émet des photons gamma." },
-              { title: "Interaction", text: "Certains photons sont absorbés ou déviés (effet Compton, effet photoélectrique) par les tissus du patient." },
-              { title: "Détection", text: "Les photons qui sortent du corps traversent un collimateur, interagissent avec un cristal scintillateur (qui transforme le rayon en lumière), puis le signal est amplifié par des photomultiplicateurs pour créer l'image numérique." }
-            ]
+            title: "Sécurité et Radioprotection",
+            text: "Les doses efficaces délivrées lors des examens diagnostiques sont faibles (généralement entre 1 et 10 mSv), comparables à celles de la radiologie conventionnelle ou de la tomodensitométrie. Le rapport bénéfice/risque est toujours largement en faveur de la réalisation de l'examen lorsqu'il est justifié."
           }
         ]
       },
-      patient:{
-        sections:[
+      medecin_nuc: {
+        sections: [
           {
-            title:"La radioactivité médicale", 
-            text:"La radioactivité utilisée dans nos services est spécialement fabriquée pour la médecine. Elle a une durée de vie très courte.",
+            title: "1. Définition et Évolution Historique",
+            text: "La médecine nucléaire est la spécialité médicale consacrée à l'utilisation des radionucléides non scellés à des fins diagnostiques (imagerie in vivo, biologie in vitro) et thérapeutiques (Radiothérapie Interne Vectorisée - RIV). Née des travaux de George de Hevesy (principe des indicateurs) et de la découverte de la radioactivité artificielle par Irène et Frédéric Joliot-Curie, elle a évolué de la cartographie planaire (caméra Anger) vers l'imagerie tomographique hybride (TEMP/TDM, TEP/TDM, TEP/IRM)."
+          },
+          {
+            title: "2. Principes Fondamentaux de l'Imagerie Moléculaire",
+            text: "L'imagerie repose sur l'administration d'un radiopharmaceutique (traceur), composé d'un vecteur (déterminant la biodistribution et la cible biologique) et d'un marqueur radioactif (déterminant les propriétés physiques de détection).",
+            list: [
+              "Sensibilité extrême : Détection de concentrations molaires de l'ordre du picomolaire (10⁻¹² M), permettant d'étudier des processus physiologiques sans les perturber (principe de tracerie).",
+              "Spécificité : Dépend du vecteur (anticorps, peptide, analogue métabolique) ciblant des récepteurs, des transporteurs ou des voies enzymatiques spécifiques."
+            ]
+          },
+          {
+            title: "3. Instrumentation et Innovations Technologiques",
+            text: "L'évolution technologique majeure de la dernière décennie est la transition de l'analogique vers le numérique :",
+            list: [
+              "TEMP (SPECT) : Remplacement progressif des cristaux scintillateurs couplés aux photomultiplicateurs (PMT) par des détecteurs semi-conducteurs CZT (Tellurure de Cadmium-Zinc). Avantages : conversion directe, meilleure résolution énergétique et spatiale, design compact (caméras dédiées cardiologie).",
+              "TEP (PET) : Remplacement des PMT par des photomultiplicateurs en silicium (SiPM) couplés à des cristaux LSO/LYSO. Avantages : excellente résolution temporelle permettant un Temps de Vol (Time-Of-Flight - TOF) très précis (< 300 ps), améliorant drastiquement le rapport signal/bruit."
+            ]
+          },
+          {
+            title: "4. Le Paradigme Théranostique",
+            text: "La théranostique représente l'apogée de la médecine de précision en médecine nucléaire. Elle repose sur des paires d'isotopes (ex: ⁶⁸Ga/¹⁷⁷Lu pour les récepteurs de la somatostatine dans les TNE, ou pour le PSMA dans le cancer de la prostate). L'imagerie pré-thérapeutique permet de sélectionner les patients répondeurs, de réaliser une dosimétrie personnalisée, et l'imagerie post-thérapeutique (Bremsstrahlung ou émission gamma résiduelle) permet de vérifier le ciblage."
+          },
+          {
+            title: "5. Radiopharmacie et Dosimétrie",
+            text: "La manipulation des radiopharmaceutiques obéit à des règles strictes de radioprotection (ALARA) et de bonnes pratiques de préparation (BPPR). La dosimétrie interne (formalisme MIRD) devient un enjeu central, passant d'une approche empirique (activité fixe) à une approche personnalisée basée sur la dose absorbée à la tumeur et aux organes à risque (reins, moelle osseuse)."
+          },
+          {
+            title: "6. Perspectives et Intelligence Artificielle",
             infoBox: {
-              type: 'tip',
-              title: 'Naturelle vs Médicale',
-              text: "Nous sommes tous exposés en permanence à une radioactivité naturelle (le soleil, le sol, certains aliments). L'examen que vous allez passer correspond souvent à quelques mois de cette radioactivité naturelle."
-            }
-          },
-          {
-            title:"Le voyage du produit", 
-            steps: [
-              { title: "Dans votre corps", text: "Le produit voyage dans votre sang pour aller se fixer uniquement sur l'organe malade ou à étudier." },
-              { title: "Le signal", text: "Une fois fixé, il envoie de minuscules signaux (des rayons invisibles) vers l'extérieur de votre corps." },
-              { title: "La caméra", text: "Notre machine agit comme un appareil photo ultra-sensible qui capte ces signaux pour dessiner votre organe sur l'écran du médecin." }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    id:'MN000_BIO', cat:'radiobiologie', catLabel:'Radiobiologie',
-    title:'Radiobiologie médicale',
-    tags:['ADN','Cellules','Effets'],
-    difficulty:'fondamental',
-    excerpt:'Étude des effets des rayonnements ionisants sur les tissus vivants.',
-    authors: ['Dr. Fréjuste Agboton'],
-    sources: [
-      { title: 'CIPR - Commission Internationale de Protection Radiologique', url: 'https://www.icrp.org' }
-    ],
-    content:{
-      lead:'La radiobiologie étudie les effets biologiques des rayonnements ionisants, base de la radioprotection et de la radiothérapie interne vectorisée.',
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
-          {
-            title:"Action sur la cellule", 
-            text:"Les rayonnements ionisants agissent sur les cellules de deux manières : une action directe (ionisation directe de l'ADN) et une action indirecte (radiolyse de l'eau créant des radicaux libres toxiques qui endommagent l'ADN). L'action indirecte est prédominante."
-          },
-          {
-            title:"Les deux types d'effets", 
-            steps: [
-              { title: "Effets Déterministes (Tissulaires)", text: "Ils apparaissent au-delà d'un certain seuil de dose (ex: brûlure cutanée, cataracte). La gravité augmente avec la dose. Ils ne surviennent jamais aux doses diagnostiques de médecine nucléaire." },
-              { title: "Effets Stochastiques (Aléatoires)", text: "Ils n'ont pas de seuil connu. La probabilité d'apparition (cancer, anomalies génétiques) augmente avec la dose, mais pas la gravité. C'est le risque principal géré en radioprotection." }
-            ]
-          },
-          {
-            title:"Sensibilité tissulaire", 
-            infoBox: {
-              type: 'warning',
-              title: 'Loi de Bergonié et Tribondeau',
-              text: "Les cellules sont d'autant plus radiosensibles qu'elles se divisent rapidement (forte activité mitotique) et qu'elles sont peu différenciées. C'est pourquoi les fœtus, les enfants et les cellules cancéreuses sont très sensibles aux rayonnements."
-            }
-          }
-        ]
-      },
-      patient:{
-        sections:[
-          {
-            title:"Les effets sur le corps", 
-            text:"Les rayons utilisés en médecine nucléaire traversent le corps et peuvent interagir avec nos cellules. Cependant, les doses utilisées pour le diagnostic sont si faibles qu'elles ne provoquent aucun symptôme ni douleur."
-          },
-          {
-            title:"La réparation cellulaire", 
-            infoBox: {
-              type: 'info',
-              title: 'Le corps se défend',
-              text: "Notre corps est une machine incroyable. Nos cellules possèdent des mécanismes de réparation très efficaces capables de corriger immédiatement les minuscules dommages causés par les faibles doses de rayonnements."
-            }
-          },
-          {
-            title:"Le rapport bénéfice/risque", 
-            text:"Avant de vous prescrire cet examen, votre médecin a évalué que l'information médicale qu'il va en tirer est largement supérieure au risque minime lié à la radioactivité.",
-            stats: [
-              { value: 'Immense', label: 'Bénéfice Diagnostique' },
-              { value: 'Minime', label: 'Risque Radiologique' }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    id:'MN000_RAD', cat:'radioprotection', catLabel:'Radioprotection',
-    title:'Principes de Radioprotection',
-    tags:['ALARA','Doses','Sécurité'],
-    difficulty:'fondamental',
-    excerpt:'Protection des patients, du public et des travailleurs contre les rayonnements.',
-    authors: ['Dr. Fréjuste Agboton'],
-    sources: [
-      { title: 'ASN - Autorité de Sûreté Nucléaire', url: 'https://www.asn.fr' }
-    ],
-    content:{
-      lead:'La radioprotection repose sur trois grands principes : Justification, Optimisation (ALARA) et Limitation.',
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
-          {
-            title:"Les 3 piliers de la radioprotection", 
-            steps: [
-              { title: "Justification", text: "Tout acte exposant aux rayonnements doit présenter un bénéfice médical supérieur au risque encouru. Il ne doit pas exister d'alternative non irradiante aussi performante (ex: IRM, échographie)." },
-              { title: "Optimisation (ALARA)", text: "As Low As Reasonably Achievable. Les doses administrées doivent être maintenues au niveau le plus bas possible tout en garantissant une qualité d'image diagnostique." },
-              { title: "Limitation", text: "Les doses reçues par les travailleurs et le public ne doivent pas dépasser les limites réglementaires (ex: 20 mSv/an pour un travailleur exposé)." }
-            ]
-          },
-          {
-            title:"Moyens de protection pratiques", 
-            stats: [
-              { value: 'Temps', label: "Réduire le temps d'exposition au minimum" },
-              { value: 'Distance', label: "S'éloigner de la source (la dose diminue avec le carré de la distance)" },
-              { value: 'Écran', label: 'Utiliser des protections (plomb, tungstène, verre au plomb)' }
-            ]
-          },
-          {
-            title:"Cas particuliers", 
-            infoBox: {
-              type: 'warning',
-              title: 'Grossesse et Allaitement',
-              text: "La grossesse est une contre-indication relative (à évaluer au cas par cas). L'allaitement doit souvent être suspendu temporairement selon l'isotope utilisé pour éviter la contamination du nourrisson."
-            }
-          }
-        ]
-      },
-      patient:{
-        sections:[
-          {
-            title:"Votre sécurité avant tout", 
-            text:"Dans notre service, tout est conçu pour garantir votre sécurité, celle de vos proches et celle de notre personnel. Les doses que nous vous administrons sont calculées au plus juste."
-          },
-          {
-            title:"Les bons gestes après l'examen", 
-            steps: [
-              { title: "Boire de l'eau", text: "Buvez abondamment et urinez souvent. Le produit s'élimine naturellement par les urines." },
-              { title: "Distance", text: "Évitez le contact prolongé et très rapproché avec les autres le jour de l'examen." },
-              { title: "Hygiène", text: "Tirez la chasse d'eau deux fois et lavez-vous bien les mains pour éviter de laisser des traces du produit." }
-            ]
-          },
-          {
-            title:"Et pour l'entourage ?", 
-            infoBox: {
-              type: 'tip',
-              title: 'Femmes enceintes et jeunes enfants',
-              text: "Par précaution, il vous sera demandé d'éviter de prendre de jeunes enfants sur vos genoux ou de dormir à côté d'une femme enceinte le jour de votre examen."
+              type: "tip",
+              title: "L'avenir de la spécialité",
+              text: "L'IA transforme la médecine nucléaire : réduction du temps d'acquisition et de la dose injectée (deep learning reconstruction), segmentation automatique des volumes tumoraux (MTV), radiomique (extraction de caractéristiques quantitatives invisibles à l'œil nu pour prédire la réponse thérapeutique), et aide au diagnostic."
             }
           }
         ]
       }
     }
   },
-  {
-    id:'MN000_REG', cat:'reglementation', catLabel:'Réglementation',
-    title:'Réglementation en Médecine Nucléaire',
-    tags:['ASN','Déchets','Législation'],
-    difficulty:'intermédiaire',
-    excerpt:'Cadre légal, Autorité de Sûreté Nucléaire (ASN) et gestion des déchets.',
-    authors: ['Dr. Fréjuste Agboton'],
-    sources: [
-      { title: 'Code de la Santé Publique', url: 'https://www.legifrance.gouv.fr' },
-      { title: 'Guide de l\'ASN', url: 'https://www.asn.fr' }
-    ],
-    content:{
-      lead:'L\'utilisation des rayonnements ionisants est strictement encadrée par la loi pour garantir la sécurité de tous.',
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
-          {
-            title:"Le cadre institutionnel", 
-            stats: [
-              { value: 'ASN', label: 'Autorité de Sûreté Nucléaire (Contrôle et Inspections)' },
-              { value: 'IRSN', label: 'Institut de Radioprotection et de Sûreté Nucléaire (Expertise)' },
-              { value: 'ANSM', label: 'Agence du Médicament (Contrôle des radiopharmaceutiques)' }
-            ]
-          },
-          {
-            title:"Le zonage radiologique", 
-            steps: [
-              { title: "Zone Surveillée (Bleue)", text: "Dose susceptible de dépasser 1 mSv/an. Accès réglementé." },
-              { title: "Zone Contrôlée (Verte/Jaune/Orange/Rouge)", text: "Dose susceptible de dépasser 6 mSv/an. Accès restreint aux travailleurs classés, port du dosimètre obligatoire." }
-            ]
-          },
-          {
-            title:"Gestion des déchets radioactifs", 
-            infoBox: {
-              type: 'info',
-              title: 'Décroissance sur site',
-              text: "Les déchets (seringues, compresses) contaminés par des isotopes à vie courte (ex: Tc-99m, F-18) sont stockés dans des locaux blindés jusqu'à ce que leur radioactivité disparaisse (décroissance). Ils sont ensuite éliminés comme des déchets médicaux classiques."
-            }
-          }
-        ]
-      },
-      patient:{
-        sections:[
-          {
-            title:"Un environnement ultra-contrôlé", 
-            text:"Le service de médecine nucléaire est l'un des endroits les plus surveillés de l'hôpital. Tout est réglementé : la construction des murs, la ventilation, et même les canalisations."
-          },
-          {
-            title:"Qui surveille ?", 
-            infoBox: {
-              type: 'info',
-              title: 'Des autorités indépendantes',
-              text: "Des inspecteurs de l'État (l'Autorité de Sûreté Nucléaire) viennent régulièrement vérifier que nos machines sont bien réglées et que nous travaillons en toute sécurité."
-            }
-          },
-          {
-            title:"Le devenir des produits", 
-            steps: [
-              { title: "Stockage sécurisé", text: "Tout ce qui a touché le produit radioactif (coton, seringue) est mis dans des poubelles spéciales en plomb." },
-              { title: "Décroissance", text: "Nous gardons ces poubelles dans une pièce fermée à clé jusqu'à ce que la radioactivité disparaisse totalement." },
-              { title: "Élimination", text: "Une fois qu'il n'y a plus aucun danger, ils sont jetés avec les déchets médicaux habituels." }
-            ]
-          }
-        ]
-      }
-    }
-  },
+
+
+
+
   {
     id:'ANN001', cat:'annuaire', catLabel:'Annuaire des Médecins',
     title:'Annuaire National des Médecins Nucléaires',
@@ -645,37 +438,7 @@ export const ENTRIES: Article[] = [
       }
     }
   },
-  {
-    id:'MN002', cat:'radiopharmacie', catLabel:'Radiopharmacie',
-    title:'Technétium-99m : propriétés et usages',
-    tags:['Tc-99m','Physique','Générateur','Mo-99'],
-    difficulty:'fondamental',
-    excerpt:'Radionucléide le plus utilisé en médecine nucléaire diagnostique. Émetteur γ pur (140 keV), T½ = 6h, obtenu par générateur Mo-99/Tc-99m.',
-    authors: ['Dr. Fréjuste Agboton'],
-    sources: [
-      { title: 'Pharmacopée Européenne', url: 'https://www.edqm.eu' }
-    ],
-    content:{
-      lead:'Le Technétium-99m est le cheval de bataille de la médecine nucléaire moderne. Il représente environ 80% de tous les examens scintigraphiques réalisés dans le monde grâce à ses propriétés physiques idéales.',
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
-          {title:'Propriétés physiques', list:['Numéro atomique : Z = 43','Masse atomique : 99 uma','Désintégration : isomère métastable → ⁹⁹Tc par émission γ','Énergie γ : 140 keV (optimale pour caméra gamma)','Période physique : T½ = 6,02 heures','Période biologique : variable selon le vecteur','Obtention : élution de générateur Mo-99m/Tc-99m']},
-          {title:'Pourquoi 140 keV est idéal ?', text:"L'énergie de 140 keV est parfaitement adaptée aux caméras gamma équipées de collimateurs basse énergie haute résolution (LEHR). Trop faible = absorption tissulaire excessive. Trop haute = pénétration du collimateur. 140 keV représente le compromis optimal entre atténuation et collimation."},
-          {title:'Marquages principaux', list:['Tc-MDP / HDP : scintigraphie osseuse','Tc-Sestamibi / Tetrofosmin : scintigraphie myocardique','Tc-MAA : scintigraphie pulmonaire de perfusion','Tc-DTPA : scintigraphie rénale dynamique','Tc-DMSA : scintigraphie rénale corticale','Tc-pertechnétate : thyroïde, Meckel, glandes salivaires','Tc-nanocolloides : lymphoscintigraphie']},
-          {title:"Contrôle qualité de l'éluat", list:['Pureté radionucléidique : Mo-99 < 0,1 kBq/MBq Tc','Pureté radiochimique : TcO₄⁻ libre < 10%','pH : 4-8','Stérilité et apyrogénicité','Test d\'aluminium : ≤ 10 µg Al/mL']}
-        ],
-        table:{headers:['Marquage','Organe cible','Mécanisme','Délai acquisition'], rows:[['Tc-MDP','Squelette','Adsorption hydroxyapatite','3h post-injection'],['Tc-Sestamibi','Myocarde/Parathyroïde','Mitochondries','30-60 min'],['Tc-MAA','Poumons (perfusion)','Embolie capillaire','Immédiat'],['Tc-DTPA','Reins','Filtration glomérulaire','2-30 min'],['Tc-DMSA','Reins (cortex)','Liaison tubulaire','2-3h']]}
-      },
-      patient:{
-        sections:[
-          {title:"Le Technétium, c'est quoi ?", text:"Le Technétium-99m est un produit légèrement radioactif utilisé comme \"traceur\" dans de nombreux examens médicaux. On l'injecte dans votre veine, et il se dirige vers l'organe qu'on veut examiner. Une caméra spéciale capte ensuite les rayons qu'il émet pour créer des images."},
-          {title:'Pour quels examens est-il utilisé ?', list:['Scintigraphie osseuse (douleurs osseuses, métastases)','Scintigraphie cardiaque (circulation sanguine du cœur)','Scintigraphie des poumons (embolie pulmonaire)','Scintigraphie rénale (fonction des reins)','Scintigraphie de la thyroïde']},
-          {title:'Est-ce dangereux ?', text:"Non. Le Technétium-99m est choisi précisément parce qu'il est très peu dangereux : il disparaît de votre corps en quelques heures (sa \"durée de vie\" est de seulement 6 heures). La dose de radioactivité reçue est comparable à celle d'un scanner classique."}
-        ]
-      }
-    }
-  },
+
   {
     id:'MN003', cat:'cardiologie', catLabel:'Cardiologie',
     title:'Scintigraphie myocardique de perfusion',
@@ -708,32 +471,241 @@ export const ENTRIES: Article[] = [
     }
   },
   {
-    id:'MN004', cat:'oncologie', catLabel:'Oncologie',
-    title:'TEP-TDM au ¹⁸F-FDG',
-    tags:['PET-CT','¹⁸F-FDG','Oncologie','Staging'],
-    difficulty:'intermédiaire',
-    excerpt:"La tomographie par émission de positons au fluorodésoxyglucose exploite l'hypermétabolisme glucidique tumoral pour le bilan d'extension oncologique.",
+    id: 'MN004',
+    cat: 'oncologie',
+    catLabel: 'Oncologie',
+    title: 'TEP-TDM au ¹⁸F-FDG dans le cancer du poumon',
+    tags: ['PET-CT', '¹⁸F-FDG', 'Oncologie', 'Poumon', 'Staging'],
+    difficulty: 'avancé',
+    excerpt: "La TEP-TDM au ¹⁸F-FDG est l'examen de référence pour le bilan d'extension, l'évaluation thérapeutique et la planification de radiothérapie des cancers broncho-pulmonaires.",
     authors: ['Dr. Fréjuste Agboton'],
     sources: [
-      { title: 'SNMMI Procedure Standard for FDG PET/CT', url: 'https://www.snmmi.org' }
+      { title: "EANM procedure guidelines for tumour imaging: version 3.0", url: "https://link.springer.com/article/10.1007/s00259-024-06684-x" },
+      { title: "Joint EANM/SNMMI/ESTRO practice recommendations for the use of 2-[18F]FDG PET/CT external beam radiation treatment planning in lung cancer", url: "https://link.springer.com/article/10.1007/s00259-022-05720-y" },
+      { title: "SNMMI Appropriate Use Criteria for Initial Staging of Non-Small Cell Lung Cancer (2025)", url: "#" }
     ],
-    content:{
-      lead:"La TEP-TDM au ¹⁸F-FDG est l'examen de médecine nucléaire le plus révolutionnaire des 30 dernières années. Elle combine l'information métabolique (TEP) et anatomique (TDM) en une seule acquisition, offrant une sensibilité et une spécificité supérieures au bilan conventionnel pour la majorité des cancers.",
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
-          {title:'Principe du FDG', text:"Le ¹⁸F-FDG (fluorodésoxyglucose) est un analogue du glucose marqué au fluor-18 (T½=110 min, émetteur β⁺). Il est capté par les cellules à fort métabolisme glucidique via GLUT1/3, phosphorylé par l'hexokinase mais non métabolisé davantage (effet de trapping). Les tumeurs malignes surexpriment GLUT et hexokinase → hyperfixation FDG."},
-          {title:'Indications validées (HAS)', list:['Lymphomes hodgkiniens et non hodgkiniens : staging, réponse, rechute','CBNPC et CBP à petites cellules : staging initial','Cancer colorectal : rechute, métastases hépatiques','Mélanome : staging, recherche de récidive','Cancer du sein : rechute métastatique','Cancers ORL : staging, rechute','Tumeurs stromales gastro-intestinales (GIST) sous Glivec']},
-          {title:'Préparation et réalisation', list:['Glycémie < 8 mmol/L (idéalement < 6,5)','Jeûne strict 6h (sauf eau)','Éviter exercice musculaire 24h avant',"Repos au chaud pendant l'attente (60 min)",'Dose : 3-4 MBq/kg (adulte)','Acquisition : tête→cuisses, couplée TDM avec/sans injection']}
-        ],
-        table:{headers:['Cancer','Sensibilité','Spécificité','Indication principale'], rows:[['Lymphome','85-95%','90-95%','Staging, réponse Deauville'],['CBNPC','80-90%','85-90%','Staging TNM, GTV radiothérapie'],['Colorectal (rechute)','90-95%','75-85%','Suspicion de récidive'],['Mélanome','85-90%','88-94%','Stade III-IV']]}
-      },
-      patient:{
-        sections:[
-          {title:"C'est quoi la TEP-scan ?", text:'La TEP-scan (ou PET-scan) est un examen qui montre comment vos cellules consomment du sucre. On vous injecte un sucre légèrement radioactif. Les cellules cancéreuses mangent beaucoup plus de sucre que les cellules normales, donc elles apparaissent en "brillant" sur les images.'},
-          {title:"Pourquoi c'est important ?", text:"Cet examen permet à votre médecin de voir en une seule fois tout votre corps, de repérer où est le cancer et s'il s'est propagé ailleurs. C'est une information essentielle pour choisir le meilleur traitement."},
-          {title:'Comment me préparer ?', list:['Ne rien manger ni boire (sauf eau) 6 heures avant','Vérifier votre glycémie si vous êtes diabétique',"Rester au calme et au chaud pendant l'heure d'attente",'Prévenir si vous êtes enceinte ou allaitez',"Boire beaucoup d'eau après l'examen pour éliminer le produit"]}
+    content: {
+      lead: "La TEP-TDM au ¹⁸F-FDG est l'examen d'imagerie moléculaire de référence dans la prise en charge du cancer du poumon, combinant la précision anatomique du scanner à la cartographie métabolique tumorale pour un bilan d'extension et un suivi optimisés.",
+      patient: {
+        sections: [
+          {
+            title: "Introduction : Pourquoi cet examen pour moi ?",
+            text: "Nous savons que le diagnostic de cancer du poumon est une épreuve difficile et source d'anxiété. Votre médecin vous a prescrit une TEP-TDM (ou Pet-scan) au FDG. Derrière ce nom complexe se cache un examen indolore et extrêmement utile. Pour faire simple : c'est une caméra très sensible couplée à un scanner, qui permet de voir exactement où les cellules de votre corps « mangent » du sucre. Comme les cellules cancéreuses sont très gourmandes en énergie, elles vont absorber ce sucre (le FDG) et devenir visibles sur nos écrans comme de petites ampoules allumées."
+          },
+          {
+            title: "À quoi sert cet examen dans mon cancer du poumon ?",
+            text: "Cet examen est une véritable boussole pour votre équipe médicale. Il a plusieurs rôles majeurs :",
+            list: [
+              "Faire un bilan complet : Il permet de vérifier en un seul examen l'ensemble de votre corps (des yeux jusqu'aux cuisses) pour s'assurer que la maladie est localisée au poumon ou si elle a touché des ganglions ou d'autres organes (métastases).",
+              "Choisir le meilleur traitement : En connaissant l'étendue exacte de la maladie, vos médecins pourront décider si une chirurgie est possible, ou s'il vaut mieux privilégier une radiothérapie, une chimiothérapie ou une immunothérapie.",
+              "Guider les rayons : Si vous devez avoir de la radiothérapie, la TEP aide le radiothérapeute à cibler précisément la tumeur tout en épargnant vos poumons sains.",
+              "Vérifier l'efficacité des traitements : Après quelques mois, un nouveau Pet-scan permettra de voir si le traitement a bien fonctionné (les « ampoules » s'éteignent)."
+            ],
+            infoBox: {
+              type: "tip",
+              title: "Un bénéfice concret",
+              text: "La TEP-TDM permet souvent d'éviter des opérations chirurgicales inutiles en détectant des éléments invisibles sur un scanner classique."
+            }
+          },
+          {
+            title: "Comment me préparer ? (Conseils pratiques)",
+            text: "Pour que l'examen soit réussi, le sucre que nous allons vous injecter ne doit pas être en concurrence avec le sucre de votre alimentation. C'est pourquoi la préparation est stricte :",
+            list: [
+              "Être à jeun strict : Ne rien manger, ne rien boire (sauf de l'eau pure), ne pas mâcher de chewing-gum ni sucer de bonbon pendant les 6 heures précédant l'examen.",
+              "Boire de l'eau : Il est très important de boire beaucoup d'eau plate avant et après l'examen pour bien vous hydrater et éliminer le produit.",
+              "Pas de sport : Évitez toute activité physique intense (sport, jardinage, bricolage lourd) la veille et le jour de l'examen, pour que vos muscles soient au repos et n'absorbent pas le sucre."
+            ],
+            infoBox: {
+              type: "warning",
+              title: "Cas particulier : Si vous êtes diabétique",
+              text: "Le diabète modifie le taux de sucre dans le sang. Lors de la prise de rendez-vous, signalez-le impérativement. Nous vous donnerons des consignes spécifiques pour vos médicaments (insuline, metformine) et l'heure de votre repas, afin que votre glycémie soit parfaite le jour J."
+            }
+          },
+          {
+            title: "Déroulement de l'examen : pas à pas",
+            text: "L'examen se déroule en plusieurs étapes, dans une ambiance calme et bienveillante :",
+            list: [
+              "L'accueil : Un manipulateur vous installe dans un box individuel confortable et vérifie votre taux de sucre au bout du doigt.",
+              "L'injection : On vous pose une petite perfusion dans le bras pour injecter le produit (le FDG). C'est totalement indolore et vous ne ressentirez aucun effet bizarre (pas de chaleur, pas de nausée).",
+              "Le repos : Vous devrez rester allongé, au calme, sans lire ni parler ni regarder votre téléphone pendant environ 60 minutes. C'est le temps nécessaire pour que le produit se diffuse dans votre corps.",
+              "Les images : Vous passerez ensuite sous la caméra (qui ressemble à un gros anneau, comme un scanner). L'appareil est très ouvert, vous ne serez pas enfermé. L'enregistrement dure environ 20 à 30 minutes. La machine fait un léger ronronnement, mais ce n'est pas bruyant comme une IRM."
+            ]
+          },
+          {
+            title: "Est-ce dangereux ? La radiation expliquée",
+            text: "Le mot « nucléaire » peut faire peur, mais la dose de rayonnements que vous allez recevoir est très faible. Elle correspond à peu près à ce que l'on reçoit naturellement en vivant sur Terre pendant 2 à 3 ans, ou lors de quelques vols long-courriers en avion. Le produit s'élimine très vite (en quelques heures) par les urines.",
+            infoBox: {
+              type: "info",
+              title: "Précautions après l'examen",
+              text: "Par principe de précaution, nous vous demanderons d'éviter les contacts étroits et prolongés avec les femmes enceintes et les jeunes enfants (moins de 10 ans) pendant le reste de la journée."
+            }
+          },
+          {
+            title: "Que vont-ils voir sur les images ?",
+            text: "Le médecin nucléaire va analyser une fusion de deux images : le scanner (qui montre l'anatomie de vos poumons) et la TEP (qui montre l'activité). Sur l'écran, les zones très actives (comme la tumeur) apparaîtront sous forme de taches lumineuses (souvent colorées en rouge ou jaune sur nos écrans). Cela permet de faire la différence entre une simple cicatrice (qui ne s'allume pas) et une tumeur active."
+          },
+          {
+            title: "Après l'examen : résultats et suivi",
+            text: "Vous pourrez repartir immédiatement après l'examen, conduire votre voiture et manger normalement. Le médecin nucléaire a besoin de temps pour analyser minutieusement les centaines d'images obtenues. Le compte-rendu détaillé sera envoyé directement au médecin (pneumologue ou oncologue) qui vous a prescrit l'examen. C'est lui qui vous expliquera les résultats lors de votre prochaine consultation, car il a une vision globale de votre dossier."
+          },
+          {
+            title: "Conclusion",
+            text: "La TEP-TDM est un allié précieux. C'est une technologie de pointe mise à votre service pour vous garantir le traitement le plus juste et le plus personnalisé possible. Toute notre équipe est là pour vous accompagner lors de cette étape."
+          }
         ]
+      },
+      medecin_non_nuc: {
+        sections: [
+          {
+            title: "Introduction et bases physiopathologiques",
+            text: "La TEP-TDM au ¹⁸F-FDG repose sur l'hypermétabolisme glucidique des cellules tumorales (effet Warburg). Le FDG, un analogue du glucose, pénètre dans la cellule via les transporteurs GLUT (surexprimés dans le cancer du poumon) et est phosphorylé par l'hexokinase. Ne pouvant poursuivre la glycolyse, il reste piégé dans la cellule. La fusion avec la TDM low-dose ou diagnostique permet une localisation anatomique précise des foyers d'hypermétabolisme, offrant une sensibilité et une spécificité très supérieures à la TDM seule pour le staging ganglionnaire et métastatique."
+          },
+          {
+            title: "Indications cliniques dans le cancer du poumon (CPNPC et CPC)",
+            text: "La TEP-TDM est incontournable dans la prise en charge des cancers broncho-pulmonaires :",
+            list: [
+              "Staging initial (Bilan d'extension) : Indication de grade A. Selon les AUC SNMMI 2025, elle obtient un score de 9 (hautement approprié) pour les maladies potentiellement curables (stades I à III) afin d'éliminer une atteinte ganglionnaire médiastinale (N2/N3) ou des métastases à distance (M1) occultes. Pour les maladies d'emblée métastatiques (score 6), elle reste utile pour identifier le site de biopsie le plus accessible.",
+              "Caractérisation du nodule pulmonaire solitaire (NPS) : Utile pour les nodules solides > 8 mm à risque intermédiaire de malignité.",
+              "Planification de radiothérapie : Recommandée (EANM/SNMMI/ESTRO 2022) pour la délimitation précise du volume tumoral macroscopique (GTV), en différenciant la tumeur active de l'atélectasie ou de la pneumopathie obstructive.",
+              "Évaluation de la réponse thérapeutique : En fin de traitement (chimiothérapie, radiothérapie, immunothérapie) pour évaluer la réponse métabolique complète, partielle ou la progression.",
+              "Détection de récidive : Devant une symptomatologie clinique, une élévation des marqueurs ou une anomalie morphologique équivoque au scanner."
+            ]
+          },
+          {
+            title: "Quand prescrire et à quel moment ?",
+            text: "Le timing de la prescription est crucial pour éviter les faux positifs liés à l'inflammation :",
+            list: [
+              "Post-Chimiothérapie : Attendre au moins 2 à 3 semaines après la dernière cure.",
+              "Post-Radiothérapie : L'inflammation radique est intense. Il faut attendre au moins 12 semaines (idéalement 3 à 4 mois) après la fin de la RT pour évaluer la réponse.",
+              "Post-Chirurgie : Attendre environ 6 semaines pour éviter la fixation cicatricielle.",
+              "Post-Biopsie : Idéalement, la TEP doit être réalisée AVANT la biopsie. Si la biopsie a eu lieu, attendre au moins 1 à 2 semaines."
+            ],
+            infoBox: {
+              type: "warning",
+              title: "Contre-indications et Précautions",
+              text: "Grossesse (sauf urgence absolue avec adaptation dosimétrique). L'hyperglycémie non contrôlée (> 2 g/L ou 11 mmol/L) est une contre-indication relative majeure car elle induit une compétition compétitive avec le FDG, diminuant la sensibilité de l'examen."
+            }
+          },
+          {
+            title: "Interprétation du compte-rendu : ce que le médecin nucléaire vous dit",
+            text: "Le compte-rendu TEP utilise des paramètres semi-quantitatifs qu'il faut savoir interpréter :",
+            list: [
+              "SUVmax (Standardized Uptake Value) : Reflète l'intensité maximale de fixation. Un SUVmax élevé est souvent corrélé à l'agressivité tumorale (Ki-67 élevé) et a une valeur pronostique péjorative.",
+              "MTV (Metabolic Tumor Volume) et TLG (Total Lesion Glycolysis) : Nouveaux biomarqueurs reflétant la charge tumorale globale, de plus en plus utilisés dans les essais cliniques.",
+              "Critères PERCIST : Système standardisé d'évaluation de la réponse thérapeutique. Une diminution de 30% du SULpeak (SUV corrigé sur la masse maigre) signe une réponse métabolique partielle.",
+              "iPERCIST / imPERCIST : Critères adaptés à l'immunothérapie pour gérer le phénomène de pseudo-progression (flare-up immunitaire)."
+            ]
+          },
+          {
+            title: "Impact sur la prise en charge multidisciplinaire",
+            text: "La TEP-TDM modifie le stade de la maladie dans environ 30% des cas (le plus souvent par un up-staging). Elle évite des thoracotomies inutiles chez 20% des patients en révélant des métastases occultes (surrénales, os, foie). Elle permet également de guider les biopsies vers les sites les plus hypermétaboliques (évitant la nécrose) et d'identifier les patients candidats aux traitements ablatifs locaux (oligométastases)."
+          },
+          {
+            title: "Limites, pièges et faux positifs/négatifs spécifiques au poumon",
+            text: "Le FDG n'est pas un traceur spécifique du cancer, mais du métabolisme glucidique.",
+            list: [
+              "Faux Positifs (Inflammation/Infection) : Tuberculose, sarcoïdose, pneumopathie infectieuse, abcès, pneumopathie radique, ganglions réactionnels (anthracose).",
+              "Faux Négatifs (Faible avidité ou petite taille) : Adénocarcinomes lépidiques (anciennement carcinomes bronchiolo-alvéolaires), tumeurs carcinoïdes typiques (bien différenciées), lésions < 8 mm (effet de volume partiel)."
+            ],
+            infoBox: {
+              type: "info",
+              title: "Le Cerveau",
+              text: "Le cerveau consomme physiologiquement énormément de glucose. La TEP au FDG est donc peu performante pour la recherche de métastases cérébrales. Une IRM cérébrale injectée reste indispensable dans le bilan d'extension systématique du cancer du poumon."
+            }
+          },
+          {
+            title: "Conclusion et prise en charge intégrée",
+            text: "La TEP-TDM au ¹⁸F-FDG est le pivot de la décision en Réunion de Concertation Pluridisciplinaire (RCP) d'oncologie thoracique. Une prescription au bon timing et une transmission précise des données cliniques (diabète, traitements récents, histologie) au médecin nucléaire sont les garants d'une interprétation optimale."
+          }
+        ]
+      },
+      medecin_nuc: {
+        sections: [
+          {
+            title: "1. Introduction et Épidémiologie",
+            text: "Le cancer du poumon reste la première cause de mortalité par cancer dans le monde. La TEP-TDM au ¹⁸F-FDG a révolutionné sa prise en charge, avec un niveau de preuve IA (EANM) pour le staging initial des CPNPC (Cancers Pulmonaires Non à Petites Cellules). Elle permet une stadification TNM métabolique d'une précision inégalée, modifiant la stratégie thérapeutique dans près d'un tiers des cas, principalement par la détection d'atteintes ganglionnaires médiastinales (N2/N3) inattendues ou de métastases à distance (M1b/c) occultes."
+          },
+          {
+            title: "2. Principes Biophysiques et Radiopharmacie",
+            text: "Le rationnel repose sur l'effet Warburg : la reprogrammation métabolique des cellules cancéreuses vers la glycolyse aérobie.",
+            list: [
+              "Mécanisme d'uptake : Le ¹⁸F-FDG (2-désoxy-2-[¹⁸F]fluoro-D-glucose) pénètre la membrane cellulaire via les transporteurs GLUT (principalement GLUT-1 et GLUT-3, surexprimés par l'hypoxie via HIF-1α).",
+              "Piégeage intracellulaire : Il est phosphorylé par l'hexokinase II (HK-II) en FDG-6-phosphate. L'absence de groupement hydroxyle en C2 empêche la poursuite de la glycolyse (isomérisation impossible). La faible activité de la glucose-6-phosphatase dans les cellules tumorales entraîne une accumulation (trapping) continue du traceur.",
+              "Isotope : Le Fluor-18 est un émetteur β+ pur (97%), d'énergie maximale 0.634 MeV (parcours moyen dans l'eau ~0.6 mm, garantissant une excellente résolution spatiale intrinsèque), de demi-vie physique T½ = 109.8 minutes.",
+              "Dosimétrie : L'organe critique est la vessie. La dose efficace est d'environ 0.019 mSv/MBq. Pour une activité standard de 3 MBq/kg, la dose liée au radiopharmaceutique est d'environ 4 à 5 mSv, à laquelle s'ajoute la dose de la TDM (2 à 5 mSv pour un low-dose, jusqu'à 10-15 mSv pour un scanner diagnostique injecté)."
+            ]
+          },
+          {
+            title: "3. Indications et Recommandations Internationales (EBM)",
+            text: "La pratique doit s'aligner sur les guidelines récentes :",
+            list: [
+              "Staging Initial : Les AUC SNMMI 2025 confirment un score de 9 pour l'évaluation initiale des CPNPC de stades I-III. La TEP a une VPP élevée pour les N2/N3, mais toute fixation médiastinale isolée modifiant la résécabilité DOIT être confirmée histologiquement (EBUS/EUS ou médiastinoscopie) en raison des faux positifs inflammatoires.",
+              "Planification de Radiothérapie (RT) : Les recommandations conjointes EANM/SNMMI/ESTRO (2022) valident l'utilisation de la TEP pour délimiter le GTV (Gross Tumor Volume). Elle permet de distinguer la tumeur de l'atélectasie d'accompagnement. L'acquisition doit idéalement se faire en position de traitement (table plate, contentions) avec synchronisation respiratoire (TEP 4D) pour évaluer le mouvement tumoral (ITV - Internal Target Volume).",
+              "Évaluation de la réponse : Utilisation recommandée des critères PERCIST 1.0. Pour l'immunothérapie (inhibiteurs de checkpoints immunitaires type anti-PD1/PD-L1), l'utilisation des critères iPERCIST ou imPERCIST est cruciale pour ne pas classer à tort en progression un phénomène de pseudo-progression (infiltrat lymphocytaire tumoral induisant un hypermétabolisme transitoire)."
+            ]
+          },
+          {
+            title: "4. Protocoles d'Acquisition et Harmonisation (EANM v3.0)",
+            text: "Le respect des standards EARL 2 est impératif pour la reproductibilité multicentrique et l'utilisation des SUV en recherche clinique.",
+            list: [
+              "Préparation : Jeûne de 4 à 6h. Glycémie capillaire < 11 mmol/L (idéalement < 8.3 mmol/L). Hydratation per os (500 mL).",
+              "Activité administrée : Selon les abaques EANM, généralement fonction du poids (ex: 3 MBq/kg) ou du BMI, adaptée à la sensibilité du système (caméras numériques SiPM permettant une réduction drastique de la dose).",
+              "Délai d'uptake : 60 minutes (tolérance 55-75 min). Un délai strict est vital pour la reproductibilité du SUV. Des acquisitions tardives (à 2h) peuvent aider à différencier tumeur (le SUV augmente) et inflammation (le SUV stagne ou diminue), bien que ce concept de double phase soit débattu.",
+              "Champ de vue (FOV) : Du vertex (ou base du crâne) jusqu'à la mi-cuisse. Un balayage corps entier (incluant les membres inférieurs) est recommandé en cas de suspicion de métastases osseuses distales ou cutanées.",
+              "Acquisition TDM : TDM low-dose pour la correction d'atténuation et le repérage. L'utilisation d'un TDM diagnostique injecté (temps portal) au cours de la même session est de plus en plus standardisée pour un « one-stop shop »."
+            ]
+          },
+          {
+            title: "5. Sémiologie, Interprétation et Critères d'Analyse",
+            text: "L'analyse visuelle reste la pierre angulaire, complétée par la semi-quantification.",
+            list: [
+              "Paramètres quantitatifs : Le SUVmax est sensible au bruit. Le SUVpeak (moyenne d'une ROI sphérique de 1 cm³ centrée sur la zone la plus chaude) est recommandé par PERCIST car plus robuste. Le SUL (SUV normalisé sur la Lean Body Mass) réduit la variabilité liée à l'adiposité.",
+              "Paramètres volumétriques : Le MTV (Metabolic Tumor Volume) et le TLG (Total Lesion Glycolysis = MTV × SUVmean) sont d'excellents facteurs pronostiques indépendants, reflétant la charge tumorale globale.",
+              "Critères PERCIST : Une réponse métabolique partielle (PMR) nécessite une baisse de ≥ 30% et d'au moins 0.8 unité du SULpeak de la lésion cible. La progression (PMD) est une augmentation de ≥ 30% ou l'apparition d'une nouvelle lésion."
+            ]
+          },
+          {
+            title: "6. Pièges, Artefacts et Faux Positifs/Négatifs",
+            text: "La connaissance des limites de la technique est la marque de l'expert :",
+            list: [
+              "Faux Positifs : Granulomatoses (sarcoïdose, tuberculose, histoplasmose), pneumopathies infectieuses/organisées, pneumopathie radique (peut persister > 6 mois), hyperplasie thymique rebond post-chimiothérapie, fixation de la graisse brune (Brown Adipose Tissue - BAT, à prévenir par réchauffement ou bêta-bloquants).",
+              "Faux Négatifs : Adénocarcinomes de type lépidique (faible densité cellulaire, métabolisme lent), tumeurs carcinoïdes typiques, lésions millimétriques (effet de volume partiel, sous-estimant le SUV).",
+              "Artefacts techniques : Artefact de mouvement respiratoire (flou cinétique, mismatch TEP/TDM au niveau des bases pulmonaires créant un faux aspect de lésion hépatique ou diaphragmatique), artefact métallique (pacemaker, prothèse) sur-corrigeant l'atténuation."
+            ]
+          },
+          {
+            title: "7. Structure du Compte-Rendu Type",
+            text: "Un compte-rendu de qualité doit être structuré, clair et répondre à la question clinique :",
+            list: [
+              "Indication et Contexte : Histologie, date des traitements, glycémie à jeun.",
+              "Technique : Activité injectée, délai, type de machine (analogique/numérique, TOF), type de TDM.",
+              "Résultats (T) : Description de la lésion primitive (localisation, taille TDM, SUVmax/peak).",
+              "Résultats (N) : Statut ganglionnaire hilaire et médiastinal (préciser les stations ganglionnaires selon la classification IASLC).",
+              "Résultats (M) : Statut métastatique (surrénales, os, foie, autres).",
+              "Conclusion : Stadification TNM métabolique (mTNM). Réponse claire à la question posée. Recommandation éventuelle (ex: confrontation histologique d'un ganglion N2 isolé)."
+            ]
+          },
+          {
+            title: "8. Points clés FMC (Take-home messages)",
+            infoBox: {
+              type: "tip",
+              title: "À retenir pour la pratique",
+              text: "1. Toute fixation médiastinale (N2/N3) isolée modifiant la résécabilité chirurgicale exige une preuve histologique (EBUS) en raison des faux positifs inflammatoires.\n2. Le cerveau doit toujours être exploré par IRM, la TEP-FDG y étant aveugle pour les petites métastases.\n3. En évaluation de réponse à l'immunothérapie, méfiez-vous de la pseudo-progression (iPERCIST) : ne pas conclure hâtivement à un échec thérapeutique devant une majoration modérée de la fixation lors du premier bilan."
+            }
+          }
+        ],
+        table: {
+          headers: ["Paramètre", "Spécification (Guidelines EANM v3.0)"],
+          rows: [
+            ["Radiopharmaceutique", "2-[¹⁸F]FDG"],
+            ["Préparation", "Jeûne > 4-6h, Glycémie < 11 mmol/L"],
+            ["Activité recommandée", "Abaques EANM (ex: 3 MBq/kg pour systèmes standards, < 2 MBq/kg pour SiPM)"],
+            ["Délai d'uptake", "60 minutes (± 5 min de tolérance idéale)"],
+            ["Acquisition TDM", "Low-dose (10-30 mAs) ou Diagnostique (avec injection d'iode)"],
+            ["Reconstruction", "OSEM avec TOF (Time-Of-Flight) et PSF (Point Spread Function) si disponibles"],
+            ["Critères de réponse", "PERCIST 1.0 (SULpeak) ou EORTC (SUVmax)"]
+          ]
+        }
       }
     }
   },
@@ -769,36 +741,7 @@ export const ENTRIES: Article[] = [
       }
     }
   },
-  {
-    id:'MN006', cat:'radioprotection', catLabel:'Radioprotection',
-    title:'Principe ALARA en médecine nucléaire',
-    tags:['ALARA','Dosimétrie','Sécurité','Réglementation'],
-    difficulty:'fondamental',
-    excerpt:'As Low As Reasonably Achievable. Principes fondamentaux de radioprotection applicables en pratique clinique quotidienne.',
-    authors: ['Dr. Fréjuste Agboton'],
-    sources: [
-      { title: 'CIPR - Recommandations', url: 'https://www.icrp.org' },
-      { title: 'IRSN - Radioprotection', url: 'https://www.irsn.fr' }
-    ],
-    content:{
-      lead:'Le principe ALARA est le pilier de la radioprotection moderne. Il impose de maintenir toute exposition aux rayonnements ionisants au niveau le plus bas possible, compte tenu des facteurs économiques et sociaux.',
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
-      medecin_nuc:{
-        sections:[
-          {title:'Les 3 principes fondamentaux', list:['Justification : tout acte entraînant une exposition doit être justifié par un bénéfice > risque','Optimisation (ALARA) : les doses doivent être maintenues au plus bas niveau raisonnablement possible','Limitation : les doses individuelles ne doivent pas dépasser les limites réglementaires']},
-          {title:'Limites réglementaires (travailleurs)', list:['Dose efficace : 20 mSv/an en moyenne sur 5 ans (max 50 mSv en 1 an)','Cristallin : 20 mSv/an','Extrémités et peau : 500 mSv/an','Femme enceinte : 1 mSv/mois (abdomen)']},
-          {title:'Moyens de radioprotection pratiques', list:["Temps : réduire au maximum le temps d'exposition",'Distance : doubler la distance = diviser la dose par 4 (loi 1/r²)','Écrans : plomb pour rayonnements X/γ, matériaux légers pour β','Confinement : zones contrôlées, surveillées','Formation et dosimétrie individuelle obligatoires']}
-        ],
-        table:{headers:['Situation','Dose typique','Référence'], rows:[['TEP-TDM FDG','~7-10 mSv','Patient adulte'],['Scintigraphie osseuse Tc-MDP','~3-4 mSv','Patient adulte'],['Ablation ¹³¹I 3,7 GBq','~50-100 mSv thyroïde','Patient thyroïdien'],['Fond naturel (France)','~2,9 mSv/an','Population générale']]}
-      },
-      patient:{
-        sections:[
-          {title:"La radioactivité, c'est dangereux ?", text:"En médecine nucléaire, les doses utilisées sont soigneusement calculées pour que le bénéfice de l'examen soit toujours bien supérieur au risque lié à la radioactivité. Les médecins appliquent le principe \"ALARA\" : utiliser le minimum de radioactivité nécessaire."},
-          {title:'Pour vous rassurer', list:["Une scintigraphie = environ 1 an de radioactivité naturelle de l'environnement","Les produits radioactifs disparaissent d'eux-mêmes en quelques heures ou jours","Les examens ne rendent pas radioactif de façon permanente","Vos proches ne sont pas en danger (sauf précautions spécifiques post-thérapeutiques)"]}
-        ]
-      }
-    }
-  },
+
   {
     id:'MN007', cat:'rhumatologie', catLabel:'Rhumatologie & Os',
     title:'Scintigraphie osseuse au Tc-MDP',

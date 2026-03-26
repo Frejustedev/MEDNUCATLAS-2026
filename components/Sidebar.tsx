@@ -8,7 +8,7 @@ import {
   ChevronDown, ChevronRight, Hash, Info, Mail, Search,
   Brain, Droplet, Wind, User, Flame, Baby, Radio, Dna, ActivitySquare, 
   Settings, ListOrdered, Calculator, AlertTriangle, ClipboardList, FileText,
-  Disc
+  Disc, X
 } from 'lucide-react';
 
 const getIcon = (id: string, className: string = "w-3.5 h-3.5") => {
@@ -46,8 +46,12 @@ const getIcon = (id: string, className: string = "w-3.5 h-3.5") => {
   }
 };
 
+import { usePathname } from 'next/navigation';
+import { motion, AnimatePresence } from 'motion/react';
+
 export function Sidebar() {
-  const { view, currentCategory, showHome, showCategory, openArticle, articles, userProfile } = useAtlas();
+  const { showHome, showCategory, openArticle, articles, userProfile, isMobileMenuOpen, setIsMobileMenuOpen } = useAtlas();
+  const pathname = usePathname();
   const [expandedSection, setExpandedSection] = useState<string | null>('🔍 DIAGNOSTIC (Organes)');
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -88,8 +92,8 @@ export function Sidebar() {
     })).filter(section => section.items.length > 0);
   }, [searchTerm, userProfile]);
 
-  return (
-    <div className="w-[260px] bg-bg2 border-r border-border-main overflow-y-auto py-4 hidden md:block shrink-0">
+  const sidebarContent = (
+    <>
       <div className="px-4 mb-4 mt-2">
         <div className="relative">
           <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-text3" />
@@ -108,7 +112,7 @@ export function Sidebar() {
         <div
           onClick={showHome}
           className={`flex items-center gap-2.5 px-5 py-2 cursor-pointer transition-colors border-l-2 text-[13px] ${
-            view === 'home' ? 'bg-teal3 text-teal border-teal' : 'text-text2 border-transparent hover:bg-bg3 hover:text-text-main'
+            pathname === '/home' ? 'bg-teal3 text-teal border-teal' : 'text-text2 border-transparent hover:bg-bg3 hover:text-text-main'
           }`}
         >
           <Home className="w-4 h-4" /> Accueil
@@ -116,7 +120,7 @@ export function Sidebar() {
         <div
           onClick={() => showCategory('all')}
           className={`flex items-center gap-2.5 px-5 py-2 cursor-pointer transition-colors border-l-2 text-[13px] ${
-            view === 'grid' && currentCategory === 'all' ? 'bg-teal3 text-teal border-teal' : 'text-text2 border-transparent hover:bg-bg3 hover:text-text-main'
+            pathname === '/categories/all' ? 'bg-teal3 text-teal border-teal' : 'text-text2 border-transparent hover:bg-bg3 hover:text-text-main'
           }`}
         >
           <Book className="w-4 h-4" /> Toutes les entrées
@@ -125,7 +129,7 @@ export function Sidebar() {
         <div
           onClick={() => showCategory('index')}
           className={`flex items-center gap-2.5 px-5 py-2 cursor-pointer transition-colors border-l-2 text-[13px] ${
-            view === 'grid' && currentCategory === 'index' ? 'bg-teal3 text-teal border-teal' : 'text-text2 border-transparent hover:bg-bg3 hover:text-text-main'
+            pathname === '/categories/index' ? 'bg-teal3 text-teal border-teal' : 'text-text2 border-transparent hover:bg-bg3 hover:text-text-main'
           }`}
         >
           <Hash className="w-4 h-4" /> Index A-Z
@@ -164,7 +168,7 @@ export function Sidebar() {
                         key={item.id}
                         onClick={() => showCategory(item.id as Category)}
                         className={`flex items-center gap-2.5 px-5 py-2 cursor-pointer transition-colors border-l-2 text-[13px] ${
-                          view === 'grid' && currentCategory === item.id 
+                          pathname === `/categories/${item.id}` || pathname === `/${item.id}`
                             ? 'bg-teal3 text-teal border-teal' 
                             : 'text-text2 border-transparent hover:bg-bg3 hover:text-text-main'
                         }`}
@@ -185,6 +189,58 @@ export function Sidebar() {
           );
         })}
       </div>
-    </div>
+    </>
+  );
+
+  return (
+    <>
+      <div className="w-[260px] bg-bg2 border-r border-border-main overflow-y-auto py-4 hidden md:block shrink-0">
+        {sidebarContent}
+      </div>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden"
+            />
+            <motion.div
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              className="fixed top-0 left-0 bottom-0 w-[280px] bg-bg2 border-r border-border-main z-50 flex flex-col md:hidden shadow-2xl"
+            >
+              <div className="flex items-center justify-between px-5 h-14 border-b border-border-main shrink-0">
+                <div className="flex items-center gap-2 text-teal">
+                  <svg viewBox="0 0 100 100" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="3">
+                    <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(30 50 50)" />
+                    <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(90 50 50)" />
+                    <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(150 50 50)" />
+                    <circle cx="50" cy="50" r="16" fill="currentColor" stroke="none" />
+                  </svg>
+                  <span className="font-serif text-lg font-semibold text-text-main">
+                    Nucle<span className="text-[#C8A96E]">Atlas</span>
+                  </span>
+                </div>
+                <button 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-2 text-text3 hover:text-text-main transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+              <div className="flex-1 overflow-y-auto py-4">
+                {sidebarContent}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

@@ -8,18 +8,20 @@ import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
 import { LogIn, LogOut, Database, Settings, User } from 'lucide-react';
 import { useAtlas } from '@/lib/AtlasContext';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export function AuthButton() {
-  const { authUser, dbUser, openAuthModal, logout, showAdmin, showProfile, view, showHome } = useAtlas();
+  const { authUser, dbUser, openAuthModal, logout, showAdmin, showProfile, showHome } = useAtlas();
+  const pathname = usePathname();
   const [isMigrating, setIsMigrating] = useState(false);
 
   const isAdmin = dbUser?.role === 'admin' || (authUser?.email === 'agbotonfrejuste@gmail.com' && authUser?.emailVerified);
 
   useEffect(() => {
-    if (view === 'admin' && !isAdmin && authUser !== undefined) {
+    if (pathname === '/admin' && !isAdmin && authUser !== undefined) {
       showHome();
     }
-  }, [view, isAdmin, authUser, showHome]);
+  }, [pathname, isAdmin, authUser, showHome]);
 
   const migrateData = async () => {
     if (!authUser) {
@@ -63,7 +65,7 @@ export function AuthButton() {
             <>
               <button
                 onClick={showAdmin}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${view === 'admin' ? 'bg-teal text-bg' : 'bg-bg3 text-text2 hover:bg-bg-light'}`}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${pathname === '/admin' ? 'bg-teal text-bg' : 'bg-bg3 text-text2 hover:bg-bg-light'}`}
                 title="Panneau d'administration"
               >
                 <Settings className="w-3.5 h-3.5" />
@@ -99,7 +101,7 @@ export function AuthButton() {
             
             <button
               onClick={showProfile}
-              className={`flex items-center gap-1.5 px-2 py-1.5 transition-colors ${view === 'profile' ? 'text-teal' : 'text-text3 hover:text-text-main'}`}
+              className={`flex items-center gap-1.5 px-2 py-1.5 transition-colors ${pathname === '/profile' ? 'text-teal' : 'text-text3 hover:text-text-main'}`}
               title="Mon Profil"
             >
               <User className="w-4 h-4" />

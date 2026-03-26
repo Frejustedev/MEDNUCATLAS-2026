@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { ArticleMode, Category, Article, UserProfile, ENTRIES, getAllowedAudiences } from './data';
 import { db, auth } from './firebase';
 import { collection, onSnapshot, query, doc, getDoc, setDoc } from 'firebase/firestore';
@@ -22,9 +23,6 @@ export interface DbUser {
 }
 
 interface AtlasState {
-  view: 'landing' | 'home' | 'grid' | 'article' | 'admin' | 'profile';
-  currentCategory: Category;
-  currentArticle: string | null;
   searchQuery: string;
   globalMode: ArticleMode;
   articleMode: ArticleMode;
@@ -37,12 +35,10 @@ interface AtlasState {
   authLoading: boolean;
   isAuthModalOpen: boolean;
   authIntent: string | null;
+  isMobileMenuOpen: boolean;
 }
 
 interface AtlasContextType extends AtlasState {
-  setView: (view: 'landing' | 'home' | 'grid' | 'article' | 'admin' | 'profile') => void;
-  setCurrentCategory: (cat: Category) => void;
-  setCurrentArticle: (id: string | null) => void;
   setSearchQuery: (query: string) => void;
   setGlobalMode: (mode: ArticleMode) => void;
   setArticleMode: (mode: ArticleMode) => void;
@@ -61,14 +57,15 @@ interface AtlasContextType extends AtlasState {
   closeAuthModal: () => void;
   trackArticleView: (id: string) => Promise<void>;
   toggleFavorite: (id: string) => Promise<void>;
+  setIsMobileMenuOpen: (isOpen: boolean) => void;
 }
 
 const AtlasContext = createContext<AtlasContextType | undefined>(undefined);
 
 export function AtlasProvider({ children }: { children: ReactNode }) {
-  const [view, setView] = useState<'landing' | 'home' | 'grid' | 'article' | 'admin' | 'profile'>('landing');
-  const [currentCategory, setCurrentCategory] = useState<Category>('all');
-  const [currentArticle, setCurrentArticle] = useState<string | null>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+  
   const [searchQuery, setSearchQuery] = useState('');
   const [globalMode, setGlobalMode] = useState<ArticleMode>('medecin_nuc');
   const [articleMode, setArticleMode] = useState<ArticleMode>('medecin_nuc');
@@ -83,6 +80,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
   const [authLoading, setAuthLoading] = useState(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authIntent, setAuthIntent] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Auth Effect
   useEffect(() => {
@@ -249,50 +247,56 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
   const logout = async () => {
     try {
       await signOut(auth);
-      setView('landing'); // Redirect to landing on logout
+      router.push('/'); // Redirect to landing on logout
     } catch (error) {
       console.error("Error signing out:", error);
     }
   };
 
   const showLanding = () => {
-    setView('landing');
-    setCurrentCategory('all');
     setSearchQuery('');
+    setIsMobileMenuOpen(false);
+    router.push('/');
   };
 
   const showHome = () => {
-    setView('home');
-    setCurrentCategory('all');
     setSearchQuery('');
+    setIsMobileMenuOpen(false);
+    router.push('/home');
   };
 
   const showCategory = (cat: Category) => {
-    setView('grid');
-    setCurrentCategory(cat);
     setSearchQuery('');
+    setIsMobileMenuOpen(false);
+    if (cat === 'dashboard') {
+      router.push('/dashboard');
+    } else {
+      router.push(`/categories/${cat}`);
+    }
   };
 
   const openArticle = (id: string) => {
-    setView('article');
-    setCurrentArticle(id);
     setArticleMode(globalMode);
     trackArticleView(id);
+    setIsMobileMenuOpen(false);
+    router.push(`/articles/${id}`);
   };
 
   const showAdmin = () => {
-    setView('admin');
     setSearchQuery('');
+    setIsMobileMenuOpen(false);
+    router.push('/admin');
   };
 
   const showProfile = () => {
-    setView('profile');
     setSearchQuery('');
+    setIsMobileMenuOpen(false);
+    router.push('/profile');
   };
 
   const handleGlobalMode = (mode: ArticleMode) => {
     setGlobalMode(mode);
-    if (view === 'article') {
+    if (pathname.startsWith('/articles/')) {
       setArticleMode(mode);
     }
   };
@@ -301,7 +305,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     setUserProfile(profile);
     const newMode = profile === 'patient' ? 'patient' : (profile === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
     setGlobalMode(newMode);
-    if (view === 'article') {
+    if (pathname.startsWith('/articles/')) {
       setArticleMode(newMode);
     }
   };
@@ -340,9 +344,6 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
   return (
     <AtlasContext.Provider
       value={{
-        view,
-        currentCategory,
-        currentArticle,
         searchQuery,
         globalMode,
         articleMode,
@@ -355,9 +356,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         authLoading,
         isAuthModalOpen,
         authIntent,
-        setView,
-        setCurrentCategory,
-        setCurrentArticle,
+        isMobileMenuOpen,
         setSearchQuery,
         setGlobalMode: handleGlobalMode,
         setArticleMode,
@@ -376,6 +375,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         closeAuthModal,
         trackArticleView,
         toggleFavorite,
+        setIsMobileMenuOpen,
       }}
     >
       {children}
