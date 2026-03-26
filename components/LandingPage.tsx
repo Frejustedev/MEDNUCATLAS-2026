@@ -4,6 +4,7 @@ import React from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
 import { motion } from 'motion/react';
 import { ArrowRight, Activity, Heart, Target, Bone, Shield, FlaskConical, Stethoscope, BookOpen, Search, Zap } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 export function LandingPage() {
   const { showHome, authUser, openAuthModal } = useAtlas();
@@ -34,21 +35,24 @@ export function LandingPage() {
           <a href="#audience" className="text-text2 text-sm tracking-wide hover:text-teal transition-colors">Pour qui ?</a>
           <a href="#tech" className="text-text2 text-sm tracking-wide hover:text-teal transition-colors">Technologie</a>
           <a href="#pricing" className="text-text2 text-sm tracking-wide hover:text-teal transition-colors">Prix</a>
-          {authUser ? (
-            <button 
-              onClick={showHome}
-              className="bg-teal text-bg px-5 py-2 rounded-md font-medium hover:bg-teal2 transition-colors"
-            >
-              Accéder à l&apos;Atlas
-            </button>
-          ) : (
-            <button 
-              onClick={() => openAuthModal()}
-              className="bg-teal text-bg px-5 py-2 rounded-md font-medium hover:bg-teal2 transition-colors"
-            >
-              Se connecter
-            </button>
-          )}
+          <div className="flex items-center gap-4 border-l border-border-main pl-8">
+            <ThemeToggle />
+            {authUser ? (
+              <button 
+                onClick={showHome}
+                className="bg-teal text-bg px-5 py-2 rounded-md font-medium hover:bg-teal2 transition-colors"
+              >
+                Accéder à l&apos;Atlas
+              </button>
+            ) : (
+              <button 
+                onClick={() => openAuthModal()}
+                className="bg-teal text-bg px-5 py-2 rounded-md font-medium hover:bg-teal2 transition-colors"
+              >
+                Se connecter
+              </button>
+            )}
+          </div>
         </div>
       </nav>
 
