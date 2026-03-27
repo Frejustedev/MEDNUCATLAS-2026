@@ -689,10 +689,10 @@ export function AdminPanel() {
                   onChange={(e) => setEditingUserRole({...editingUserRole, role: e.target.value})}
                   className="w-full bg-bg3 border border-border-main rounded-lg px-3 py-2 text-sm outline-none focus:border-teal text-text-main"
                 >
-                  <option value="patient">Patient</option>
-                  <option value="medecin_non_nuc">Médecin (Non MN)</option>
-                  <option value="medecin_nuc">Médecin Nucléaire</option>
-                  <option value="admin">Admin</option>
+                  <option value="patient" className="bg-bg text-text-main">Patient</option>
+                  <option value="medecin_non_nuc" className="bg-bg text-text-main">Médecin (Non MN)</option>
+                  <option value="medecin_nuc" className="bg-bg text-text-main">Médecin Nucléaire</option>
+                  <option value="admin" className="bg-bg text-text-main">Admin</option>
                 </select>
               </div>
             </div>

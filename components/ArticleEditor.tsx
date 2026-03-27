@@ -165,9 +165,9 @@ export function ArticleEditor({ content, onChange }: ArticleEditorProps) {
                             onChange={(e) => updateSection(index, { ...section, infoBox: { ...section.infoBox!, type: e.target.value as any } })}
                             className="bg-bg border border-border-main rounded p-1 text-xs text-text-main outline-none"
                           >
-                            <option value="info">Info</option>
-                            <option value="warning">Attention</option>
-                            <option value="tip">Astuce</option>
+                            <option value="info" className="bg-bg text-text-main">Info</option>
+                            <option value="warning" className="bg-bg text-text-main">Attention</option>
+                            <option value="tip" className="bg-bg text-text-main">Astuce</option>
                           </select>
                           <button 
                             onClick={() => {

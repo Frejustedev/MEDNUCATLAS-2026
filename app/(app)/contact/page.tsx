@@ -131,11 +131,11 @@ export default function ContactPage() {
                   required
                   className="w-full bg-bg3 border border-border-main rounded-lg px-4 py-2.5 text-sm text-text-main outline-none focus:border-teal transition-colors appearance-none"
                 >
-                  <option value="">Sélectionnez un sujet</option>
-                  <option value="support">Support technique</option>
-                  <option value="content">Question sur le contenu</option>
-                  <option value="partnership">Partenariat</option>
-                  <option value="other">Autre</option>
+                  <option value="" className="bg-bg text-text-main">Sélectionnez un sujet</option>
+                  <option value="support" className="bg-bg text-text-main">Support technique</option>
+                  <option value="content" className="bg-bg text-text-main">Question sur le contenu</option>
+                  <option value="partnership" className="bg-bg text-text-main">Partenariat</option>
+                  <option value="other" className="bg-bg text-text-main">Autre</option>
                 </select>
               </div>
 

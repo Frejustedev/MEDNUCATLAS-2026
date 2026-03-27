@@ -1,14 +1,15 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
-import { motion } from 'motion/react';
-import { ArrowRight, Activity, Heart, Target, Bone, Shield, FlaskConical, Stethoscope, BookOpen, Search, Zap } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { ArrowRight, Activity, Heart, Target, Bone, Shield, FlaskConical, Stethoscope, BookOpen, Search, Zap, Menu, X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import Link from 'next/link';
 
 export function LandingPage() {
   const { showHome, authUser, openAuthModal } = useAtlas();
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
     <div className="h-screen bg-bg text-text-main font-sans overflow-x-hidden overflow-y-auto">
@@ -55,7 +56,60 @@ export function LandingPage() {
             )}
           </div>
         </div>
+
+        {/* Mobile Menu Toggle */}
+        <div className="flex md:hidden items-center gap-4">
+          <ThemeToggle />
+          <button 
+            onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+            className="p-2 text-text2 hover:text-teal transition-colors"
+          >
+            {isMobileNavOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMobileNavOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-x-0 top-[81px] z-40 bg-bg/95 backdrop-blur-xl border-b border-border-main p-6 flex flex-col gap-6 md:hidden shadow-xl"
+          >
+            <a href="#atlas" onClick={() => setIsMobileNavOpen(false)} className="text-text-main text-lg font-medium hover:text-teal transition-colors">Encyclopédie</a>
+            <a href="#audience" onClick={() => setIsMobileNavOpen(false)} className="text-text-main text-lg font-medium hover:text-teal transition-colors">Pour qui ?</a>
+            <a href="#tech" onClick={() => setIsMobileNavOpen(false)} className="text-text-main text-lg font-medium hover:text-teal transition-colors">Technologie</a>
+            <a href="#pricing" onClick={() => setIsMobileNavOpen(false)} className="text-text-main text-lg font-medium hover:text-teal transition-colors">Prix</a>
+            
+            <div className="pt-6 border-t border-border-main">
+              {authUser ? (
+                <button 
+                  onClick={() => {
+                    setIsMobileNavOpen(false);
+                    showHome();
+                  }}
+                  className="w-full bg-teal text-bg px-5 py-3 rounded-md font-medium hover:bg-teal2 transition-colors text-center"
+                >
+                  Accéder à l&apos;Atlas
+                </button>
+              ) : (
+                <button 
+                  onClick={() => {
+                    setIsMobileNavOpen(false);
+                    openAuthModal();
+                  }}
+                  className="w-full bg-teal text-bg px-5 py-3 rounded-md font-medium hover:bg-teal2 transition-colors text-center"
+                >
+                  Se connecter
+                </button>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-20 overflow-hidden">

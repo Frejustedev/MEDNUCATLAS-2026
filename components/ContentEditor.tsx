@@ -315,9 +315,9 @@ function SectionEditor({ section, index, isFirst, isLast, onChange, onRemove, on
                     onChange={e => onChange({ ...section, infoBox: { ...section.infoBox, type: e.target.value } })}
                     className="w-full bg-bg border border-border-main rounded-md p-2 text-sm outline-none focus:border-teal text-text-main mb-2"
                   >
-                    <option value="info">Info (Bleu)</option>
-                    <option value="warning">Attention (Orange)</option>
-                    <option value="tip">Astuce (Vert)</option>
+                    <option value="info" className="bg-bg text-text-main">Info (Bleu)</option>
+                    <option value="warning" className="bg-bg text-text-main">Attention (Orange)</option>
+                    <option value="tip" className="bg-bg text-text-main">Astuce (Vert)</option>
                   </select>
                   <input
                     type="text"

@@ -36,6 +36,7 @@ interface AtlasState {
   isAuthModalOpen: boolean;
   authIntent: string | null;
   isMobileMenuOpen: boolean;
+  isDesktopMenuCollapsed: boolean;
 }
 
 interface AtlasContextType extends AtlasState {
@@ -60,6 +61,7 @@ interface AtlasContextType extends AtlasState {
   trackArticleView: (id: string) => Promise<void>;
   toggleFavorite: (id: string) => Promise<void>;
   setIsMobileMenuOpen: (isOpen: boolean) => void;
+  setIsDesktopMenuCollapsed: (isCollapsed: boolean) => void;
 }
 
 const AtlasContext = createContext<AtlasContextType | undefined>(undefined);
@@ -83,6 +85,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authIntent, setAuthIntent] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDesktopMenuCollapsed, setIsDesktopMenuCollapsed] = useState(false);
 
   // Auth Effect
   useEffect(() => {
@@ -418,6 +421,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         isAuthModalOpen,
         authIntent,
         isMobileMenuOpen,
+        isDesktopMenuCollapsed,
         setSearchQuery,
         setGlobalMode: handleGlobalMode,
         setArticleMode,
@@ -439,6 +443,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         trackArticleView,
         toggleFavorite,
         setIsMobileMenuOpen,
+        setIsDesktopMenuCollapsed,
       }}
     >
       {children}

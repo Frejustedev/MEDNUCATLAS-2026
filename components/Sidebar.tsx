@@ -51,7 +51,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
 
 export function Sidebar() {
-  const { showHome, showCategory, openArticle, articles, userProfile, isMobileMenuOpen, setIsMobileMenuOpen } = useAtlas();
+  const { showHome, showCategory, openArticle, articles, userProfile, isMobileMenuOpen, setIsMobileMenuOpen, isDesktopMenuCollapsed } = useAtlas();
   const pathname = usePathname();
   const [expandedSection, setExpandedSection] = useState<string | null>('🔍 DIAGNOSTIC (Organes)');
   const [searchTerm, setSearchTerm] = useState('');
@@ -203,7 +203,9 @@ export function Sidebar() {
 
   return (
     <>
-      <div className="w-[260px] bg-bg2 border-r border-border-main overflow-y-auto py-4 hidden md:flex flex-col shrink-0">
+      <div 
+        className={`bg-bg2 border-r border-border-main overflow-y-auto py-4 hidden flex-col shrink-0 transition-all duration-300 ${isDesktopMenuCollapsed ? 'w-0 border-none opacity-0 overflow-hidden !px-0' : 'w-[260px] md:flex'}`}
+      >
         {sidebarContent}
       </div>
 

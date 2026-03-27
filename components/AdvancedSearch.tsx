@@ -161,9 +161,9 @@ export function AdvancedSearch({ isOpen, onClose }: AdvancedSearchProps) {
                   onChange={e => setSelectedCategory(e.target.value as any)}
                   className="bg-bg border border-border-main rounded text-xs px-2 py-1 text-text2 outline-none focus:border-teal"
                 >
-                  <option value="all">Toutes les catégories</option>
+                  <option value="all" className="bg-bg text-text-main">Toutes les catégories</option>
                   {allCategories.map(c => (
-                    <option key={c.id} value={c.id}>{c.label}</option>
+                    <option key={c.id} value={c.id} className="bg-bg text-text-main">{c.label}</option>
                   ))}
                 </select>
               </div>

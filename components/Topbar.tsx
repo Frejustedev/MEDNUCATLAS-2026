@@ -9,7 +9,7 @@ import { UserProfile } from '@/lib/data';
 import { AdvancedSearch } from './AdvancedSearch';
 
 export function Topbar() {
-  const { searchQuery, setSearchQuery, userProfile, setUserProfile, lang, setLang, showLanding, isMobileMenuOpen, setIsMobileMenuOpen, dbUser } = useAtlas();
+  const { searchQuery, setSearchQuery, userProfile, setUserProfile, lang, setLang, showLanding, isMobileMenuOpen, setIsMobileMenuOpen, isDesktopMenuCollapsed, setIsDesktopMenuCollapsed, dbUser } = useAtlas();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const handleProfileChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -47,10 +47,13 @@ export function Topbar() {
         </button>
         
         <div 
-          className="w-[260px] flex items-center gap-2.5 px-5 border-r border-border-main h-full shrink-0 hidden md:flex cursor-pointer hover:bg-bg3 transition-colors"
-          onClick={showLanding}
+          className={`${isDesktopMenuCollapsed ? 'w-14 justify-center px-0' : 'w-[260px] px-5'} flex items-center gap-2.5 border-r border-border-main h-full shrink-0 hidden md:flex transition-all duration-300`}
         >
-          <div className="relative flex items-center justify-center w-8 h-8 text-teal shrink-0">
+          <div 
+            className="relative flex items-center justify-center w-8 h-8 text-teal shrink-0 cursor-pointer hover:opacity-80 transition-opacity"
+            onClick={showLanding}
+            title="Accueil"
+          >
             <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_8px_rgba(0,201,177,0.4)]" fill="none" stroke="currentColor" strokeWidth="3">
               <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(30 50 50)" />
               <ellipse cx="50" cy="50" rx="42" ry="14" transform="rotate(90 50 50)" />
@@ -62,10 +65,33 @@ export function Topbar() {
               <text x="50" y="55" fontSize="16" fontWeight="bold" fill="#0B0F19" stroke="none" textAnchor="middle" fontFamily="serif">Nc</text>
             </svg>
           </div>
-          <div className="font-serif text-xl font-semibold ml-1">
-            Nucle<span className="text-[#C8A96E]">Atlas</span>
-          </div>
+          {!isDesktopMenuCollapsed && (
+            <div 
+              className="font-serif text-xl font-semibold ml-1 cursor-pointer hover:opacity-80 transition-opacity overflow-hidden whitespace-nowrap"
+              onClick={showLanding}
+            >
+              Nucle<span className="text-[#C8A96E]">Atlas</span>
+            </div>
+          )}
+          
+          <button 
+            className={`ml-auto p-1.5 text-text3 hover:text-teal hover:bg-bg3 rounded-md transition-colors ${isDesktopMenuCollapsed ? 'hidden' : 'block'}`}
+            onClick={() => setIsDesktopMenuCollapsed(true)}
+            title="Réduire le menu"
+          >
+            <Menu className="w-4 h-4" />
+          </button>
         </div>
+
+        {isDesktopMenuCollapsed && (
+          <button 
+            className="hidden md:block p-3 text-text2 hover:text-teal transition-colors ml-2"
+            onClick={() => setIsDesktopMenuCollapsed(false)}
+            title="Afficher le menu"
+          >
+            <Menu className="w-5 h-5" />
+          </button>
+        )}
 
         <div className="flex-1 flex items-center gap-3 px-2 md:px-5">
           <div className="flex-1 max-w-[520px] relative group">
@@ -90,15 +116,15 @@ export function Topbar() {
               onChange={handleProfileChange}
               className="bg-transparent border-none text-text-main text-xs font-mono cursor-pointer outline-none"
             >
-              <option value="patient">👤 Patient</option>
+              <option value="patient" className="bg-bg text-text-main">👤 Patient</option>
               {allowedProfiles.includes('medecin_non_nuc') && (
-                <option value="medecin_non_nuc">🩺 Médecin non nucléaire</option>
+                <option value="medecin_non_nuc" className="bg-bg text-text-main">🩺 Médecin non nucléaire</option>
               )}
               {allowedProfiles.includes('medecin_nuc') && (
-                <option value="medecin_nuc">☢️ Médecin Nucléaire</option>
+                <option value="medecin_nuc" className="bg-bg text-text-main">☢️ Médecin Nucléaire</option>
               )}
               {dbUser?.role === 'admin' && (
-                <option value="admin">👑 Administrateur</option>
+                <option value="admin" className="bg-bg text-text-main">👑 Administrateur</option>
               )}
             </select>
           </div>
@@ -108,9 +134,9 @@ export function Topbar() {
             onChange={(e) => setLang(e.target.value)}
             className="bg-bg3 border border-border-main rounded-md px-2.5 py-1.5 text-text2 text-xs font-mono cursor-pointer outline-none hidden sm:block"
           >
-            <option value="fr">🇫🇷 Français</option>
-            <option value="en">🇬🇧 English</option>
-            <option value="ar">🇩🇿 عربي</option>
+            <option value="fr" className="bg-bg text-text-main">🇫🇷 Français</option>
+            <option value="en" className="bg-bg text-text-main">🇬🇧 English</option>
+            <option value="ar" className="bg-bg text-text-main">🇩🇿 عربي</option>
           </select>
           
           <ThemeToggle />

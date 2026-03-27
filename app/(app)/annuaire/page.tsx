@@ -117,9 +117,9 @@ export default function AnnuairePage() {
               onChange={(e) => setSelectedRegion(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 bg-bg3 border border-border-main rounded-lg text-sm outline-none focus:border-teal transition-colors text-text-main appearance-none"
             >
-              <option value="">Toutes les régions</option>
+              <option value="" className="bg-bg text-text-main">Toutes les régions</option>
               {REGIONS.map(region => (
-                <option key={region} value={region}>{region}</option>
+                <option key={region} value={region} className="bg-bg text-text-main">{region}</option>
               ))}
             </select>
           </div>
@@ -131,9 +131,9 @@ export default function AnnuairePage() {
               onChange={(e) => setSelectedSpecialty(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 bg-bg3 border border-border-main rounded-lg text-sm outline-none focus:border-teal transition-colors text-text-main appearance-none"
             >
-              <option value="">Toutes les sur-spécialités</option>
+              <option value="" className="bg-bg text-text-main">Toutes les sur-spécialités</option>
               {SUB_SPECIALTIES.map(spec => (
-                <option key={spec} value={spec}>{spec}</option>
+                <option key={spec} value={spec} className="bg-bg text-text-main">{spec}</option>
               ))}
             </select>
           </div>
