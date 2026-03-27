@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState, ReactNode, useEffect } from
 import { useRouter, usePathname } from 'next/navigation';
 import { ArticleMode, Category, Article, UserProfile, ENTRIES, getAllowedAudiences } from './data';
 import { db, auth } from './firebase';
-import { collection, onSnapshot, query, doc, getDoc, setDoc } from 'firebase/firestore';
+import { collection, onSnapshot, query, doc, getDoc, setDoc, getDocs } from 'firebase/firestore';
 import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, User as FirebaseUser } from 'firebase/auth';
 import { handleFirestoreError, OperationType } from './firestore-errors';
 
@@ -96,12 +96,16 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
           if (userDoc.exists()) {
             const data = userDoc.data() as DbUser;
             
-            // Migrate legacy roles
+            // Migrate legacy roles or force admin
             let needsMigration = false;
             let updatedRole = data.role;
             let updatedProfileType = data.profileType;
             
-            if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
+            if (user.email === 'agbotonfrejuste@gmail.com' && (data.role !== 'admin' || data.profileType !== 'medecin_nuc')) {
+              updatedRole = 'admin';
+              updatedProfileType = 'medecin_nuc';
+              needsMigration = true;
+            } else if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
               updatedRole = 'patient';
               updatedProfileType = 'patient';
               needsMigration = true;
@@ -121,26 +125,25 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
             }
             
             setDbUser(data);
+            setUserProfile(data.role);
+            const newMode = data.role === 'patient' ? 'patient' : (data.role === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
+            setGlobalMode(newMode);
+            setArticleMode(newMode);
           } else {
-            // Create new user profile if it somehow bypassed loginWithGoogle
-            const newUser: DbUser = {
-              uid: user.uid,
-              email: user.email || '',
-              role: 'patient', // Default role
-              profileType: 'patient',
-              displayName: user.displayName || '',
-              photoURL: user.photoURL || '',
-              createdAt: new Date().toISOString(),
-              lastLogin: new Date().toISOString(),
-            };
-            await setDoc(userDocRef, newUser);
-            setDbUser(newUser);
+            // Document will be created by handleAuthResult during signup
+            setDbUser(null);
+            setUserProfile('patient');
+            setGlobalMode('patient');
+            setArticleMode('patient');
           }
         } catch (error) {
           console.error("Error fetching/creating user profile:", error);
         }
       } else {
         setDbUser(null);
+        setUserProfile('patient');
+        setGlobalMode('patient');
+        setArticleMode('patient');
       }
       setAuthLoading(false);
     });
@@ -150,36 +153,39 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
 
   // Articles Effect
   useEffect(() => {
-    const q = query(collection(db, 'articles'));
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      const fetchedArticles: Article[] = snapshot.docs.map(doc => {
-        const data = doc.data();
-        return {
-          id: data.id,
-          cat: data.cat,
-          catLabel: data.catLabel,
-          title: data.title,
-          tags: data.tags || [],
-          difficulty: data.difficulty,
-          excerpt: data.excerpt,
-          targetAudience: data.targetAudience || ['medecin_nuc', 'medecin_non_nuc', 'patient'],
-          content: typeof data.content === 'string' ? JSON.parse(data.content) : data.content
-        } as Article;
-      });
-      
-      // Use fetched articles if available, otherwise fallback to ENTRIES
-      if (fetchedArticles.length > 0) {
-        setAllArticles(fetchedArticles);
-      } else {
+    const fetchArticles = async () => {
+      try {
+        const q = query(collection(db, 'articles'));
+        const snapshot = await getDocs(q);
+        const fetchedArticles: Article[] = snapshot.docs.map(doc => {
+          const data = doc.data();
+          return {
+            id: data.id,
+            cat: data.cat,
+            catLabel: data.catLabel,
+            title: data.title,
+            tags: data.tags || [],
+            difficulty: data.difficulty,
+            excerpt: data.excerpt,
+            targetAudience: data.targetAudience || ['medecin_nuc', 'medecin_non_nuc', 'patient'],
+            content: typeof data.content === 'string' ? JSON.parse(data.content) : data.content
+          } as Article;
+        });
+        
+        if (fetchedArticles.length > 0) {
+          setAllArticles(fetchedArticles);
+        } else {
+          setAllArticles(ENTRIES);
+        }
+      } catch (error) {
+        console.error("Erreur de chargement des articles", error);
         setAllArticles(ENTRIES);
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
-    }, (error) => {
-      handleFirestoreError(error, OperationType.LIST, 'articles');
-      setLoading(false);
-    });
+    };
 
-    return () => unsubscribe();
+    fetchArticles();
   }, []);
 
   const articles = React.useMemo(() => {
@@ -195,11 +201,19 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     const userDoc = await getDoc(userDocRef);
     
     if (!userDoc.exists()) {
+      let finalRole = profileType;
+      let finalProfileType = profileType;
+      
+      if (user.email === 'agbotonfrejuste@gmail.com') {
+        finalRole = 'admin';
+        finalProfileType = 'medecin_nuc';
+      }
+
       const newUser: DbUser = {
         uid: user.uid,
         email: user.email || '',
-        role: profileType,
-        profileType: profileType,
+        role: finalRole,
+        profileType: finalProfileType,
         displayName: user.displayName || user.email?.split('@')[0] || '',
         photoURL: user.photoURL || '',
         createdAt: new Date().toISOString(),
@@ -210,12 +224,19 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
       }
       await setDoc(userDocRef, newUser);
       setDbUser(newUser);
+      setUserProfile(newUser.role);
+      const newMode = newUser.role === 'patient' ? 'patient' : (newUser.role === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
+      setGlobalMode(newMode);
+      setArticleMode(newMode);
     } else {
       const data = userDoc.data() as DbUser;
       const updateData: any = { lastLogin: new Date().toISOString() };
       
-      // Migrate legacy roles
-      if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
+      // Migrate legacy roles or force admin
+      if (user.email === 'agbotonfrejuste@gmail.com' && (data.role !== 'admin' || data.profileType !== 'medecin_nuc')) {
+        updateData.role = 'admin';
+        updateData.profileType = 'medecin_nuc';
+      } else if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
         updateData.role = 'patient';
         updateData.profileType = 'patient';
       }
@@ -224,6 +245,13 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         updateData.intendedPlan = planIntent;
       }
       await setDoc(userDocRef, updateData, { merge: true });
+      
+      // Update local state if role was migrated
+      const finalRole = updateData.role || data.role;
+      setUserProfile(finalRole);
+      const newMode = finalRole === 'patient' ? 'patient' : (finalRole === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
+      setGlobalMode(newMode);
+      setArticleMode(newMode);
     }
   };
 

@@ -19,6 +19,8 @@ service cloud.firestore {
     //   - photoURL: string (optional) - User's profile picture
     //   - createdAt: string (optional) - ISO date string
     //   - lastLogin: string (optional) - ISO date string
+    //   - recentArticles: list (optional)
+    //   - favorites: list (optional)
     //
     // Collection: articles
     // Document ID: {articleId}
@@ -56,7 +58,7 @@ service cloud.firestore {
       return isAuthenticated() && (
         (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin') ||
-        (request.auth.token.email == "agbotonfrejuste@gmail.com" && request.auth.token.email_verified == true)
+        (request.auth.token.email == "agbotonfrejuste@gmail.com")
       );
     }
 
@@ -64,7 +66,7 @@ service cloud.firestore {
       return isAuthenticated() && (
         (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
          get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in ['admin', 'medecin_nuc']) ||
-        (request.auth.token.email == "agbotonfrejuste@gmail.com" && request.auth.token.email_verified == true)
+        (request.auth.token.email == "agbotonfrejuste@gmail.com")
       );
     }
 
@@ -83,6 +85,10 @@ service cloud.firestore {
     function hasRequiredFields(fields) {
       return request.resource.data.keys().hasAll(fields);
     }
+    
+    function hasOnlyAllowedFields(allowedFields) {
+      return request.resource.data.keys().hasOnly(allowedFields);
+    }
 
     // ===============================================================
     // Domain Validators
@@ -90,7 +96,9 @@ service cloud.firestore {
 
     function isValidUser() {
       let data = request.resource.data;
+      let allowedFields = ['uid', 'email', 'role', 'profileType', 'intendedPlan', 'displayName', 'photoURL', 'createdAt', 'lastLogin', 'recentArticles', 'favorites'];
       return hasRequiredFields(['uid', 'email', 'role']) &&
+             hasOnlyAllowedFields(allowedFields) &&
              data.uid is string && data.uid.size() > 0 && data.uid.size() < 100 &&
              data.email is string && isValidEmail(data.email) && data.email.size() < 150 &&
              data.role in ['patient', 'medecin_non_nuc', 'medecin_nuc', 'admin'] &&
@@ -106,7 +114,9 @@ service cloud.firestore {
 
     function isValidArticle() {
       let data = request.resource.data;
+      let allowedFields = ['id', 'cat', 'catLabel', 'title', 'content', 'excerpt', 'targetAudience', 'authors', 'sources', 'difficulty', 'tags', 'authorId', 'createdAt', 'updatedAt'];
       return hasRequiredFields(['id', 'cat', 'title', 'content']) &&
+             hasOnlyAllowedFields(allowedFields) &&
              data.id is string && data.id.size() > 0 && data.id.size() < 50 &&
              data.cat is string && data.cat.size() > 0 && data.cat.size() < 50 &&
              data.title is string && data.title.size() > 0 && data.title.size() < 200 &&
@@ -137,8 +147,9 @@ service cloud.firestore {
       );
       
       // Users can update their own profile (except role and uid), admins can update anything
-      allow update: if isAuthenticated() && isValidUser() && uidNotModified() && (
-        (isOwner(userId) && (request.resource.data.role == resource.data.role || (resource.data.role in ['free', 'pro', 'expert', 'institution'] && request.resource.data.role in ['patient', 'medecin_non_nuc', 'medecin_nuc']))) || isAdmin()
+      allow update: if isAuthenticated() && (
+        (isValidUser() && uidNotModified() && isOwner(userId) && (request.resource.data.role == resource.data.role || (resource.data.role in ['free', 'pro', 'expert', 'institution'] && request.resource.data.role in ['patient', 'medecin_non_nuc', 'medecin_nuc']))) || 
+        isAdmin()
       );
       
       // Only admins can delete users
@@ -150,11 +161,14 @@ service cloud.firestore {
       allow read: if true;
       
       // Only editors and admins can create articles
-      allow create: if isEditor() && isValidArticle();
+      allow create: if isAdmin() || (isEditor() && isValidArticle() && 
+                    (!('authorId' in request.resource.data) || request.resource.data.authorId == request.auth.uid));
       
       // Only editors and admins can update articles
-      allow update: if isEditor() && isValidArticle() && 
-                    (!('createdAt' in request.resource.data) || request.resource.data.createdAt == resource.data.createdAt);
+      allow update: if isAdmin() || (isEditor() && isValidArticle() && 
+                    (!('createdAt' in request.resource.data) || request.resource.data.createdAt == resource.data.createdAt) &&
+                    (!('authorId' in request.resource.data) || request.resource.data.authorId == resource.data.authorId) &&
+                    (!('id' in request.resource.data) || request.resource.data.id == resource.data.id));
       
       // Only admins can delete articles
       allow delete: if isAdmin();

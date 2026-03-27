@@ -124,28 +124,32 @@ export function Profile() {
                   <User className="w-6 h-6 mb-2" />
                   <span className="text-sm font-medium">Patient</span>
                 </button>
-                <button
-                  onClick={() => setProfileType('medecin_non_nuc')}
-                  className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all ${
-                    profileType === 'medecin_non_nuc' 
-                      ? 'bg-teal/10 border-teal text-teal' 
-                      : 'bg-bg3 border-border-main text-text3 hover:border-teal/50'
-                  }`}
-                >
-                  <Activity className="w-6 h-6 mb-2" />
-                  <span className="text-sm font-medium text-center">Médecin (Autre)</span>
-                </button>
-                <button
-                  onClick={() => setProfileType('medecin_nuc')}
-                  className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all ${
-                    profileType === 'medecin_nuc' 
-                      ? 'bg-teal/10 border-teal text-teal' 
-                      : 'bg-bg3 border-border-main text-text3 hover:border-teal/50'
-                  }`}
-                >
-                  <Shield className="w-6 h-6 mb-2" />
-                  <span className="text-sm font-medium text-center">Médecin Nucléaire</span>
-                </button>
+                {(dbUser.role === 'medecin_non_nuc' || dbUser.role === 'medecin_nuc' || dbUser.role === 'admin') && (
+                  <button
+                    onClick={() => setProfileType('medecin_non_nuc')}
+                    className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all ${
+                      profileType === 'medecin_non_nuc' 
+                        ? 'bg-teal/10 border-teal text-teal' 
+                        : 'bg-bg3 border-border-main text-text3 hover:border-teal/50'
+                    }`}
+                  >
+                    <Activity className="w-6 h-6 mb-2" />
+                    <span className="text-sm font-medium text-center">Médecin (Autre)</span>
+                  </button>
+                )}
+                {(dbUser.role === 'medecin_nuc' || dbUser.role === 'admin') && (
+                  <button
+                    onClick={() => setProfileType('medecin_nuc')}
+                    className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all ${
+                      profileType === 'medecin_nuc' 
+                        ? 'bg-teal/10 border-teal text-teal' 
+                        : 'bg-bg3 border-border-main text-text3 hover:border-teal/50'
+                    }`}
+                  >
+                    <Shield className="w-6 h-6 mb-2" />
+                    <span className="text-sm font-medium text-center">Médecin Nucléaire</span>
+                  </button>
+                )}
               </div>
               <p className="text-xs text-text3 mt-2">
                 Le type de profil détermine les contenus et le niveau de détail auxquels vous avez accès.

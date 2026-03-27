@@ -7,11 +7,11 @@ import { doc, setDoc, deleteDoc, getDoc, collection, getDocs, serverTimestamp, u
 import { onAuthStateChanged } from 'firebase/auth';
 import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
 import { Article, Category, MENU_STRUCTURE } from '@/lib/data';
-import { Save, Trash2, Plus, Users, FileText, LayoutDashboard, Search, AlertCircle } from 'lucide-react';
+import { Save, Trash2, Plus, Users, FileText, LayoutDashboard, Search, AlertCircle, X } from 'lucide-react';
 import { ContentEditor } from './ContentEditor';
 
 export function AdminPanel() {
-  const { articles, showHome } = useAtlas();
+  const { articles, showHome, dbUser, setDbUser, setUserProfile, setGlobalMode, setArticleMode } = useAtlas();
   const [activeTab, setActiveTab] = useState<'overview' | 'articles' | 'users'>('overview');
   
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -28,6 +28,7 @@ export function AdminPanel() {
   const [users, setUsers] = useState<any[]>([]);
   const [loadingUsers, setLoadingUsers] = useState(false);
   const [searchArticle, setSearchArticle] = useState('');
+  const [editingUserRole, setEditingUserRole] = useState<any>(null);
   
   const [message, setMessage] = useState<{type: 'success' | 'error', text: string} | null>(null);
   const [confirmDialog, setConfirmDialog] = useState<{text: string, onConfirm: () => void} | null>(null);
@@ -141,7 +142,7 @@ export function AdminPanel() {
       
       if (editingId === 'new') {
         (articleData as any).createdAt = serverTimestamp();
-        (articleData as any).authorId = dbUser?.uid || '';
+        (articleData as any).authorId = auth.currentUser?.uid || '';
       }
 
       await setDoc(doc(db, 'articles', formData.id), articleData);
@@ -335,8 +336,8 @@ export function AdminPanel() {
         {activeTab === 'users' && (
           <div className="flex-1 overflow-y-auto p-8">
             <h1 className="text-3xl font-serif text-text-main mb-8">Gestion des utilisateurs</h1>
-            <div className="bg-bg2 border border-border-main rounded-xl overflow-hidden">
-              <table className="w-full text-left text-sm">
+            <div className="bg-bg2 border border-border-main rounded-xl overflow-x-auto">
+              <table className="w-full text-left text-sm min-w-[800px]">
                 <thead className="bg-bg3 text-text3 font-medium">
                   <tr>
                     <th className="px-6 py-4">Utilisateur</th>
@@ -363,26 +364,12 @@ export function AdminPanel() {
                         </td>
                         <td className="px-6 py-4 text-text2">{u.profileType || '-'}</td>
                         <td className="px-6 py-4 text-right">
-                          <select 
-                            value={u.role || 'patient'}
-                            onChange={async (e) => {
-                              const newRole = e.target.value;
-                              try {
-                                await updateDoc(doc(db, 'users', u.id), { role: newRole, profileType: newRole });
-                                setUsers(users.map(user => user.id === u.id ? { ...user, role: newRole, profileType: newRole } : user));
-                                showMessage('success', 'Rôle mis à jour.');
-                              } catch (error) {
-                                showMessage('error', 'Erreur lors de la mise à jour du rôle.');
-                                handleFirestoreError(error, OperationType.UPDATE, `users/${u.id}`);
-                              }
-                            }}
-                            className="bg-bg3 border border-border-main rounded px-2 py-1 text-xs outline-none focus:border-teal text-text-main"
+                          <button
+                            onClick={() => setEditingUserRole(u)}
+                            className="px-3 py-1.5 bg-teal/10 text-teal rounded hover:bg-teal/20 transition-colors text-xs font-medium"
                           >
-                            <option value="patient">Patient</option>
-                            <option value="medecin_non_nuc">Médecin (Non MN)</option>
-                            <option value="medecin_nuc">Médecin Nucléaire</option>
-                            <option value="admin">Admin</option>
-                          </select>
+                            Modifier le rôle
+                          </button>
                         </td>
                       </tr>
                     ))
@@ -673,6 +660,80 @@ export function AdminPanel() {
           </div>
         )}
       </div>
+      {/* Editing User Role Modal */}
+      {editingUserRole && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-bg border border-border-main rounded-xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col">
+            <div className="p-4 border-b border-border-main flex items-center justify-between bg-bg2">
+              <h3 className="font-serif text-lg text-text-main">Modifier le rôle</h3>
+              <button 
+                onClick={() => setEditingUserRole(null)}
+                className="p-1 text-text3 hover:text-text-main hover:bg-bg3 rounded transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="p-6 flex flex-col gap-4">
+              <div>
+                <div className="text-sm text-text3 mb-1">Utilisateur</div>
+                <div className="font-medium text-text-main">{editingUserRole.displayName || 'Sans nom'}</div>
+                <div className="text-sm text-text2">{editingUserRole.email}</div>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-text-main mb-2">
+                  Nouveau rôle
+                </label>
+                <select 
+                  value={editingUserRole.role || 'patient'}
+                  onChange={(e) => setEditingUserRole({...editingUserRole, role: e.target.value})}
+                  className="w-full bg-bg3 border border-border-main rounded-lg px-3 py-2 text-sm outline-none focus:border-teal text-text-main"
+                >
+                  <option value="patient">Patient</option>
+                  <option value="medecin_non_nuc">Médecin (Non MN)</option>
+                  <option value="medecin_nuc">Médecin Nucléaire</option>
+                  <option value="admin">Admin</option>
+                </select>
+              </div>
+            </div>
+            <div className="p-4 border-t border-border-main bg-bg2 flex justify-end gap-3">
+              <button 
+                onClick={() => setEditingUserRole(null)}
+                className="px-4 py-2 text-sm font-medium text-text2 hover:text-text-main transition-colors"
+              >
+                Annuler
+              </button>
+              <button 
+                onClick={async () => {
+                  try {
+                    const newRole = editingUserRole.role;
+                    await updateDoc(doc(db, 'users', editingUserRole.id), { role: newRole, profileType: newRole });
+                    setUsers(users.map(user => user.id === editingUserRole.id ? { ...user, role: newRole, profileType: newRole } : user));
+                    
+                    // If the admin changes their own role, update local state
+                    if (dbUser && editingUserRole.id === dbUser.uid) {
+                      setDbUser({ ...dbUser, role: newRole, profileType: newRole });
+                      setUserProfile(newRole);
+                      const newMode = newRole === 'patient' ? 'patient' : (newRole === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
+                      setGlobalMode(newMode);
+                      setArticleMode(newMode);
+                    }
+                    
+                    showMessage('success', 'Rôle mis à jour avec succès.');
+                    setEditingUserRole(null);
+                  } catch (error) {
+                    showMessage('error', 'Erreur lors de la mise à jour du rôle.');
+                    handleFirestoreError(error, OperationType.UPDATE, `users/${editingUserRole.id}`);
+                  }
+                }}
+                className="px-4 py-2 bg-teal text-white rounded-lg text-sm font-medium hover:bg-teal/90 transition-colors"
+              >
+                Enregistrer
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

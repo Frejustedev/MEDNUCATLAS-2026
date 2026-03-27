@@ -9,13 +9,12 @@ export default function MentionsLegalesPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-serif text-text-main mb-4">1. Éditeur du site</h2>
           <p>
-            Le site NucleAtlas est édité par [Nom de l&apos;éditeur ou de l&apos;association], 
-            [Statut juridique] au capital de [Montant] €, immatriculée au Registre du Commerce et des Sociétés de [Ville] sous le numéro [Numéro SIRET].
+            Le site NucleAtlas est édité par l&apos;équipe de NucleAtlas, 
+            plateforme éducative dédiée à la médecine nucléaire.
           </p>
           <p>
-            Siège social : [Adresse complète]<br />
-            Email : contact@nucleatlas.com<br />
-            Directeur de la publication : [Nom du directeur]
+            Email de contact : agbotonfrejuste@gmail.com<br />
+            Directeur de la publication : Fréjuste Agboton
           </p>
         </section>
 
@@ -55,7 +54,7 @@ export default function MentionsLegalesPage() {
             Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, et au Règlement Général sur la Protection des Données (RGPD), vous disposez d&apos;un droit d&apos;accès, de rectification, de suppression et d&apos;opposition aux données personnelles vous concernant.
           </p>
           <p>
-            Pour exercer ce droit, vous pouvez nous contacter à l&apos;adresse email suivante : privacy@nucleatlas.com.
+            Pour exercer ce droit, vous pouvez nous contacter à l&apos;adresse email suivante : agbotonfrejuste@gmail.com.
           </p>
         </section>
       </div>

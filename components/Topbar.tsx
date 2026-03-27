@@ -9,12 +9,21 @@ import { UserProfile } from '@/lib/data';
 import { AdvancedSearch } from './AdvancedSearch';
 
 export function Topbar() {
-  const { searchQuery, setSearchQuery, userProfile, setUserProfile, lang, setLang, showLanding, isMobileMenuOpen, setIsMobileMenuOpen } = useAtlas();
+  const { searchQuery, setSearchQuery, userProfile, setUserProfile, lang, setLang, showLanding, isMobileMenuOpen, setIsMobileMenuOpen, dbUser } = useAtlas();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const handleProfileChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setUserProfile(e.target.value as UserProfile);
   };
+
+  // Determine allowed profiles based on dbUser role
+  const allowedProfiles = ['patient'];
+  if (dbUser?.role === 'medecin_non_nuc' || dbUser?.role === 'medecin_nuc' || dbUser?.role === 'admin') {
+    allowedProfiles.push('medecin_non_nuc');
+  }
+  if (dbUser?.role === 'medecin_nuc' || dbUser?.role === 'admin') {
+    allowedProfiles.push('medecin_nuc');
+  }
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -82,8 +91,15 @@ export function Topbar() {
               className="bg-transparent border-none text-text-main text-xs font-mono cursor-pointer outline-none"
             >
               <option value="patient">👤 Patient</option>
-              <option value="medecin_non_nuc">🩺 Médecin non nucléaire</option>
-              <option value="medecin_nuc">☢️ Médecin Nucléaire</option>
+              {allowedProfiles.includes('medecin_non_nuc') && (
+                <option value="medecin_non_nuc">🩺 Médecin non nucléaire</option>
+              )}
+              {allowedProfiles.includes('medecin_nuc') && (
+                <option value="medecin_nuc">☢️ Médecin Nucléaire</option>
+              )}
+              {dbUser?.role === 'admin' && (
+                <option value="admin">👑 Administrateur</option>
+              )}
             </select>
           </div>
 

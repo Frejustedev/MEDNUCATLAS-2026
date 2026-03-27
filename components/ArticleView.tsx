@@ -6,6 +6,7 @@ import { ArrowLeft, Sparkles, Info, AlertTriangle, Lightbulb, Star, User, Stetho
 import { AiAssistant } from './AiAssistant';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeSanitize from 'rehype-sanitize';
 import { useParams } from 'next/navigation';
 
 export function ArticleView() {
@@ -120,7 +121,7 @@ export function ArticleView() {
         </div>
 
         <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9 prose dark:prose-invert prose-teal max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.content.lead || ''}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{article.content.lead || ''}</ReactMarkdown>
         </div>
 
         {content?.sections?.map((s, i) => (
@@ -130,7 +131,7 @@ export function ArticleView() {
             </h3>
             {s.text && (
               <div className="text-[14px] text-text2 leading-[1.8] mb-3 prose dark:prose-invert prose-teal max-w-none">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{s.text}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{s.text}</ReactMarkdown>
               </div>
             )}
             
@@ -148,7 +149,7 @@ export function ArticleView() {
                 <div>
                   <h4 className="font-bold text-[13px] mb-1">{s.infoBox.title}</h4>
                   <div className="text-[13px] leading-relaxed opacity-90 prose dark:prose-invert max-w-none">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{s.infoBox.text}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{s.infoBox.text}</ReactMarkdown>
                   </div>
                 </div>
               </div>
@@ -175,7 +176,7 @@ export function ArticleView() {
                     <div>
                       <h4 className="font-bold text-[14px] text-text-main mb-1">{step.title}</h4>
                       <div className="text-[13px] text-text2 leading-relaxed prose dark:prose-invert max-w-none">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{step.text}</ReactMarkdown>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{step.text}</ReactMarkdown>
                       </div>
                     </div>
                   </div>
@@ -187,7 +188,7 @@ export function ArticleView() {
               <ul className="flex flex-col gap-2 my-3">
                 {s.list.map((l, j) => (
                   <li key={j} className="text-[13px] text-text2 leading-[1.6] pl-5 relative before:content-['▸'] before:absolute before:left-0 before:text-teal before:text-[10px] before:top-[3px]">
-                    <span className="prose dark:prose-invert max-w-none"><ReactMarkdown remarkPlugins={[remarkGfm]}>{l}</ReactMarkdown></span>
+                    <span className="prose dark:prose-invert max-w-none"><ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{l}</ReactMarkdown></span>
                   </li>
                 ))}
               </ul>

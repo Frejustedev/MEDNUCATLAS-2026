@@ -5,6 +5,7 @@ import { Article } from '@/lib/data';
 import { X, Send, Sparkles, Loader2 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeSanitize from 'rehype-sanitize';
 import { GoogleGenAI } from '@google/genai';
 
 interface Message {
@@ -92,7 +93,7 @@ export function AiAssistant({ article, onClose, userProfile }: { article: Articl
               {m.role === 'user' ? (
                 m.content
               ) : (
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>
                   {m.content}
                 </ReactMarkdown>
               )}
