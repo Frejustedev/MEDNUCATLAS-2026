@@ -9,6 +9,8 @@ import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
 import { Article, Category, MENU_STRUCTURE } from '@/lib/data';
 import { Save, Trash2, Plus, Users, FileText, LayoutDashboard, Search, AlertCircle, X } from 'lucide-react';
 import { ContentEditor } from './ContentEditor';
+import { AIGenerator } from './AIGenerator';
+import { Sparkles } from 'lucide-react';
 
 export function AdminPanel() {
   const { articles, showHome, dbUser, setDbUser, setUserProfile, setGlobalMode, setArticleMode } = useAtlas();
@@ -24,6 +26,7 @@ export function AdminPanel() {
   });
   const [isSaving, setIsSaving] = useState(false);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
+  const [isAIGeneratorOpen, setIsAIGeneratorOpen] = useState(false);
   
   const [users, setUsers] = useState<any[]>([]);
   const [loadingUsers, setLoadingUsers] = useState(false);
@@ -217,6 +220,24 @@ export function AdminPanel() {
         </div>
       )}
 
+      {/* AI Generator Modal */}
+      {isAIGeneratorOpen && (
+        <AIGenerator 
+          onClose={() => setIsAIGeneratorOpen(false)}
+          onGenerate={(newArticle) => {
+            setActiveTab('articles');
+            setEditingId('new');
+            setFormData(newArticle);
+            setContentData(newArticle.content || {
+              lead: "",
+              medecin_nuc: { sections: [] },
+              medecin_non_nuc: { sections: [] },
+              patient: { sections: [] }
+            });
+          }}
+        />
+      )}
+
       {/* Sidebar Admin */}
       <div className="w-[240px] border-r border-border-main flex flex-col bg-bg2 shrink-0">
         <div className="p-6 border-b border-border-main">
@@ -278,6 +299,13 @@ export function AdminPanel() {
             <div className="bg-bg2 border border-border-main rounded-xl p-6 mb-8">
               <h3 className="text-lg font-serif text-text-main mb-4">Outils d&apos;administration</h3>
               <div className="flex items-center gap-4">
+                <button 
+                  onClick={() => setIsAIGeneratorOpen(true)}
+                  className="px-4 py-2 bg-teal text-bg rounded-lg font-medium hover:bg-teal2 transition-colors text-sm flex items-center gap-2 shadow-lg shadow-teal/20"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  Générateur d&apos;Articles IA
+                </button>
                 <button 
                   onClick={() => {
                     setConfirmDialog({
@@ -387,9 +415,22 @@ export function AdminPanel() {
               <div className="p-4 border-b border-border-main flex flex-col gap-3 bg-bg2">
                 <div className="flex justify-between items-center">
                   <h3 className="font-medium text-text-main">Liste des articles</h3>
-                  <button onClick={handleCreateNew} className="p-1.5 bg-teal text-bg rounded hover:bg-teal2 transition-colors" title="Nouvel Article">
-                    <Plus className="w-4 h-4" />
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button 
+                      onClick={() => setIsAIGeneratorOpen(true)} 
+                      className="p-1.5 bg-teal/20 text-teal rounded hover:bg-teal/30 transition-colors" 
+                      title="Générer avec l&apos;IA"
+                    >
+                      <Sparkles className="w-4 h-4" />
+                    </button>
+                    <button 
+                      onClick={handleCreateNew} 
+                      className="p-1.5 bg-teal text-bg rounded hover:bg-teal2 transition-colors" 
+                      title="Nouvel Article"
+                    >
+                      <Plus className="w-4 h-4" />
+                    </button>
+                  </div>
                 </div>
                 <div className="relative">
                   <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-text3" />
