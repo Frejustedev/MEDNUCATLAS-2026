@@ -49,7 +49,7 @@ export function ArticleView() {
           <div className="font-mono text-[10px] text-text3 tracking-[2px] mb-2">{article.id}</div>
           <div className="text-[11px] text-teal font-mono tracking-[1.5px] uppercase mb-3">{article.catLabel}</div>
           <div className="flex items-start justify-between mb-4">
-            <h1 className="font-serif text-[clamp(32px,4vw,48px)] font-light leading-[1.1]">
+            <h1 className="font-serif text-[clamp(32px,4vw,48px)] font-normal leading-[1.1]">
               {article.title}
             </h1>
             {dbUser && (

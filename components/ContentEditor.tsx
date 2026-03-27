@@ -73,19 +73,19 @@ function ModeEditor({ mode, data, onChange }: { mode: 'medecin_nuc' | 'medecin_n
   const sections = data?.sections || [];
 
   const addSection = () => {
-    onChange({ ...data, sections: [...sections, { title: 'Nouvelle section', text: '' }] });
+    onChange({ ...(data || {}), sections: [...sections, { title: 'Nouvelle section', text: '' }] });
   };
 
   const updateSection = (index: number, newSection: Section) => {
     const newSections = [...sections];
     newSections[index] = newSection;
-    onChange({ ...data, sections: newSections });
+    onChange({ ...(data || {}), sections: newSections });
   };
 
   const removeSection = (index: number) => {
     const newSections = [...sections];
     newSections.splice(index, 1);
-    onChange({ ...data, sections: newSections });
+    onChange({ ...(data || {}), sections: newSections });
   };
 
   const moveSection = (index: number, direction: 'up' | 'down') => {
@@ -95,7 +95,7 @@ function ModeEditor({ mode, data, onChange }: { mode: 'medecin_nuc' | 'medecin_n
     const temp = newSections[index];
     newSections[index] = newSections[index + (direction === 'up' ? -1 : 1)];
     newSections[index + (direction === 'up' ? -1 : 1)] = temp;
-    onChange({ ...data, sections: newSections });
+    onChange({ ...(data || {}), sections: newSections });
   };
 
   return (
@@ -125,20 +125,20 @@ function ModeEditor({ mode, data, onChange }: { mode: 'medecin_nuc' | 'medecin_n
           <h3 className="text-lg font-serif text-text-main">Tableau de données</h3>
           <button
             onClick={() => {
-              if (data.table) {
+              if (data?.table) {
                 const { table, ...rest } = data;
                 onChange(rest);
               } else {
-                onChange({ ...data, table: { headers: ['Colonne 1', 'Colonne 2'], rows: [['Valeur 1', 'Valeur 2']] } });
+                onChange({ ...(data || {}), table: { headers: ['Colonne 1', 'Colonne 2'], rows: [['Valeur 1', 'Valeur 2']] } });
               }
             }}
             className="text-sm text-teal hover:underline"
           >
-            {data.table ? 'Supprimer le tableau' : '+ Ajouter un tableau'}
+            {data?.table ? 'Supprimer le tableau' : '+ Ajouter un tableau'}
           </button>
         </div>
 
-        {data.table && (
+        {data?.table && (
           <div className="bg-bg3 p-4 rounded-lg border border-border-main overflow-x-auto">
             <div className="mb-4 flex gap-2">
               <button

@@ -32,26 +32,26 @@
 @layer base {
   :root {
     /* Light Mode Colors - Refined for high contrast & elegance */
-    --bg: #f8fafc;
-    --bg2: #ffffff;
+    --bg: #ffffff;
+    --bg2: #f8fafc;
     --bg3: #f1f5f9;
     --bg4: #e2e8f0;
-    --teal: #008a7b; /* Darker teal for WCAG AA contrast on light bg */
-    --teal2: #006c60;
-    --teal3: rgba(0, 138, 123, 0.08);
-    --gold: #b08947; /* Darker gold for readability */
-    --gold2: #967235;
-    --gold3: rgba(176, 137, 71, 0.08);
-    --blue: #0284c7;
-    --blue3: rgba(2, 132, 199, 0.08);
-    --atom: #7c3aed;
-    --atom3: rgba(124, 58, 237, 0.08);
-    --text-main: #0f172a; /* Near black for maximum contrast */
-    --text2: #334155; /* Dark slate for secondary text */
-    --text3: #64748b; /* Slate 500 for tertiary */
-    --border-main: rgba(15, 23, 42, 0.08); /* Neutral, elegant borders */
-    --border2: rgba(15, 23, 42, 0.15);
-    --glow: rgba(0, 138, 123, 0.1);
+    --teal: #0f766e; /* Darker teal for WCAG AA contrast on light bg */
+    --teal2: #0d9488;
+    --teal3: rgba(15, 118, 110, 0.08);
+    --gold: #b45309; /* Darker gold for readability */
+    --gold2: #d97706;
+    --gold3: rgba(180, 83, 9, 0.08);
+    --blue: #0369a1;
+    --blue3: rgba(3, 105, 161, 0.08);
+    --atom: #6d28d9;
+    --atom3: rgba(109, 40, 217, 0.08);
+    --text-main: #020617; /* Near black for maximum contrast */
+    --text2: #1e293b; /* Dark slate for secondary text */
+    --text3: #475569; /* Slate 600 for tertiary, better contrast */
+    --border-main: #e2e8f0; /* Neutral, elegant borders */
+    --border2: #cbd5e1;
+    --glow: rgba(15, 118, 110, 0.1);
   }
 
   .dark {
@@ -79,7 +79,7 @@
   }
 
   html, body {
-    @apply h-full bg-bg text-text-main font-sans font-light overflow-hidden transition-colors duration-300;
+    @apply h-full bg-bg text-text-main font-sans font-normal overflow-hidden transition-colors duration-300;
   }
 }
 
