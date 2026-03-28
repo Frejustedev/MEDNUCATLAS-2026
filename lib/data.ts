@@ -133,6 +133,209 @@ export interface Article {
 
 export const ENTRIES: Article[] = [
   {
+    id: 'MN_PHYS_001',
+    cat: 'instrumentation',
+    catLabel: 'Plateau Technique',
+    title: 'La Tomographie par Émission de Positons (TEP) : Principes et Instrumentation',
+    tags: ['TEP', 'Physique', 'Annihilation', 'Cristaux', 'TOF'],
+    difficulty: 'fondamental',
+    excerpt: "Comprendre le fonctionnement d'une caméra TEP : de l'émission du positon à la détection en coïncidence et la reconstruction de l'image.",
+    authors: ['Dr. Fréjuste Agboton'],
+    sources: [
+      { title: "EANM Physics Committee Guidelines", url: "https://www.eanm.org" }
+    ],
+    content: {
+      lead: "La Tomographie par Émission de Positons (TEP) est une modalité d'imagerie fonctionnelle reposant sur la détection en coïncidence de photons d'annihilation, offrant une sensibilité exceptionnelle pour la cartographie moléculaire in vivo.",
+      patient: {
+        sections: [
+          {
+            title: "Comment fonctionne la machine TEP (Pet-scan) ?",
+            text: "Vous vous demandez peut-être comment une machine peut voir à l'intérieur de votre corps avec autant de précision. Le principe de la TEP (Tomographie par Émission de Positons) est fascinant. Contrairement à une simple radio qui envoie des rayons à travers vous, la TEP fonctionne dans l'autre sens : c'est le produit que nous vous injectons qui émet de minuscules signaux, et la machine agit comme un appareil photo ultra-sensible pour les capter."
+          },
+          {
+            title: "Le voyage du traceur",
+            text: "Le produit injecté (souvent un sucre très légèrement radioactif) va se fixer sur les cellules malades. Une fois fixé, il libère de minuscules particules appelées 'positons'. Ces positons rencontrent immédiatement les électrons de votre corps. Cette rencontre produit un minuscule éclair d'énergie (deux rayons invisibles qui partent dans des directions opposées)."
+          },
+          {
+            title: "L'anneau de détection",
+            text: "La machine dans laquelle vous êtes allongé est en fait un grand anneau rempli de milliers de petits cristaux très spéciaux. Leur rôle est de capter ces deux rayons simultanément. Si l'anneau capte deux rayons exactement en même temps de part et d'autre de votre corps, l'ordinateur sait exactement d'où ils proviennent. En accumulant des millions de ces signaux, l'ordinateur dessine une image en 3D très précise des zones actives de votre corps.",
+            infoBox: {
+              type: "info",
+              title: "Pourquoi l'examen dure-t-il un certain temps ?",
+              text: "Il faut du temps à la machine pour capter suffisamment de ces minuscules signaux afin de créer une image nette, un peu comme un appareil photo qui a besoin d'un temps de pose plus long dans l'obscurité."
+            }
+          }
+        ]
+      },
+      medecin_non_nuc: {
+        sections: [
+          {
+            title: "Le principe de l'émission de positons",
+            text: "La TEP repose sur l'utilisation d'isotopes radioactifs émetteurs de positons (β+), tels que le Fluor-18 (¹⁸F), le Carbone-11 (¹¹C) ou le Gallium-68 (⁶⁸Ga). Ces noyaux instables, riches en protons, se stabilisent en convertissant un proton en neutron, émettant un positon (l'antiparticule de l'électron) et un neutrino."
+          },
+          {
+            title: "L'annihilation et la détection en coïncidence",
+            text: "Le positon émis parcourt une très courte distance dans les tissus (le parcours moyen, de l'ordre du millimètre pour le ¹⁸F) en perdant son énergie cinétique. Lorsqu'il est presque à l'arrêt, il interagit avec un électron du milieu. Cette rencontre matière-antimatière provoque leur annihilation mutuelle. La masse des deux particules est convertie en énergie sous la forme de deux photons gamma de 511 keV émis à 180° l'un de l'autre. C'est la détection simultanée (en coïncidence) de ces deux photons par l'anneau de détecteurs qui permet de localiser l'événement sur une ligne (la ligne de réponse, ou LOR)."
+          },
+          {
+            title: "Pourquoi la TEP est-elle supérieure à la scintigraphie classique ?",
+            text: "Contrairement à la scintigraphie planaire ou TEMP qui nécessite des collimateurs en plomb (absorbant plus de 99% des photons pour déterminer leur direction), la TEP utilise une 'collimation électronique' (la détection en coïncidence). Cela confère à la TEP une sensibilité de détection 100 à 1000 fois supérieure à la TEMP, permettant de détecter des anomalies métaboliques bien avant les altérations morphologiques visibles au scanner."
+          }
+        ]
+      },
+      medecin_nuc: {
+        sections: [
+          {
+            title: "1. Physique de l'émission β+ et de l'annihilation",
+            text: "La résolution spatiale intrinsèque de la TEP est limitée par deux phénomènes physiques incompressibles :",
+            list: [
+              "Le parcours du positon : Avant l'annihilation, le positon parcourt une distance qui dépend de son énergie cinétique initiale (Emax). Pour le ¹⁸F (Emax = 0.63 MeV), ce parcours moyen est d'environ 0.6 mm dans l'eau. Pour le ⁶⁸Ga (Emax = 1.90 MeV), il est de 2.9 mm, dégradant intrinsèquement la résolution spatiale.",
+              "La non-colinéarité : Au moment de l'annihilation, le système positon-électron possède une énergie cinétique résiduelle. Pour conserver la quantité de mouvement, les deux photons de 511 keV ne sont pas émis à exactement 180°, mais avec une déviation angulaire d'environ ±0.25°. Cette erreur se traduit par un flou de positionnement qui augmente avec le diamètre de l'anneau de détection (environ 2 mm pour un anneau standard de 80 cm)."
+            ]
+          },
+          {
+            title: "2. Les Cristaux Scintillateurs et les Photodétecteurs",
+            text: "La chaîne de détection transforme le photon gamma en signal électrique.",
+            list: [
+              "Cristaux : Le BGO (Bismuth Germanate) a longtemps été le standard. Aujourd'hui, le LSO (Lutétium Oxyorthosilicate) et le LYSO dominent grâce à leur rendement lumineux élevé, leur temps de déclin très rapide (40 ns vs 300 ns pour le BGO) et leur fort pouvoir d'arrêt (densité élevée, Z effectif élevé).",
+              "Photodétecteurs : Les tubes photomultiplicateurs (PMT) analogiques sont remplacés par les SiPM (Silicon Photomultipliers) numériques. Les SiPM sont compacts, insensibles aux champs magnétiques (permettant la TEP-IRM), fonctionnent à basse tension et offrent une résolution temporelle exceptionnelle."
+            ]
+          },
+          {
+            title: "3. Le Temps de Vol (Time-Of-Flight, TOF)",
+            text: "La technologie TOF exploite la différence de temps d'arrivée (Δt) des deux photons sur les détecteurs pour restreindre la position de l'annihilation sur la Ligne de Réponse (LOR), plutôt que de la répartir uniformément.",
+            list: [
+              "Principe : La position x par rapport au centre est donnée par x = (c × Δt) / 2, où c est la vitesse de la lumière.",
+              "Avantage : Le TOF n'améliore pas directement la résolution spatiale, mais il réduit drastiquement le bruit statistique de l'image (amélioration du rapport signal/bruit, SNR).",
+              "Impact clinique : Permet de réduire le temps d'acquisition, de diminuer l'activité injectée, ou d'améliorer la détectabilité des petites lésions, particulièrement chez les patients corpulents. Les systèmes SiPM actuels atteignent des résolutions temporelles inférieures à 200 picosecondes."
+            ]
+          },
+          {
+            title: "4. Corrections et Reconstruction d'Image",
+            text: "Les données brutes (sinogrammes) doivent subir de multiples corrections avant reconstruction :",
+            list: [
+              "Correction d'atténuation (CTAC) : Indispensable en TEP. Les photons sont atténués par les tissus traversés. La carte de densité électronique fournie par le scanner (TDM) couplé est convertie en carte de coefficients d'atténuation linéaire à 511 keV pour corriger l'émission.",
+              "Correction des fortuites (Randoms) : Deux photons provenant de deux annihilations distinctes détectés dans la fenêtre temporelle de coïncidence. Corrigée par la méthode de la fenêtre retardée ou par estimation à partir des taux de comptage simples.",
+              "Correction de diffusé (Scatter) : Un ou les deux photons subissent une diffusion Compton avant détection, faussant la LOR. Corrigée par des modèles mathématiques complexes (Single Scatter Simulation).",
+              "Reconstruction : Les algorithmes itératifs (OSEM - Ordered Subset Expectation Maximization) sont le standard, intégrant souvent la modélisation de la réponse du système (PSF - Point Spread Function) pour améliorer la résolution spatiale et le contraste."
+            ]
+          }
+        ],
+        table: {
+          headers: ["Caractéristique", "BGO", "LSO / LYSO"],
+          rows: [
+            ["Densité (g/cm³)", "7.1", "7.4 / 7.1"],
+            ["Numéro atomique effectif (Z)", "74", "66 / 60"],
+            ["Temps de déclin (ns)", "300", "40 / 41"],
+            ["Rendement lumineux (photons/MeV)", "8 000", "25 000 / 32 000"],
+            ["Compatibilité TOF", "Non", "Oui (Excellente)"]
+          ]
+        }
+      }
+    }
+  },
+  {
+    id: 'MN_PHYS_002',
+    cat: 'instrumentation',
+    catLabel: 'Plateau Technique',
+    title: 'Le SUV (Standardized Uptake Value) : Calcul, Interprétation et Limites',
+    tags: ['SUV', 'Quantification', 'SUL', 'PERCIST', 'Physique'],
+    difficulty: 'intermédiaire',
+    excerpt: "Le SUV est le paramètre semi-quantitatif clé en TEP. Découvrez comment il est calculé, ses différentes variantes (SUVmax, SUVpeak) et ses limites.",
+    authors: ['Dr. Fréjuste Agboton'],
+    sources: [
+      { title: "EANM procedure guidelines for tumour imaging", url: "https://www.eanm.org" }
+    ],
+    content: {
+      lead: "Le Standardized Uptake Value (SUV) est l'indice semi-quantitatif le plus utilisé en imagerie TEP pour évaluer l'intensité de la fixation d'un radiotraceur dans les tissus, permettant de standardiser l'interprétation et le suivi thérapeutique.",
+      patient: {
+        sections: [
+          {
+            title: "Qu'est-ce que le SUV ?",
+            text: "Lorsque votre médecin vous parle des résultats de votre Pet-scan, il peut mentionner un chiffre appelé 'SUV'. C'est un peu comme une note d'intensité. Le SUV mesure à quel point une zone de votre corps (comme une tumeur) a absorbé le sucre radioactif (le traceur) par rapport au reste de votre corps."
+          },
+          {
+            title: "Comment l'interpréter ?",
+            text: "Plus le chiffre du SUV est élevé, plus la zone est active et 'gourmande' en énergie. Par exemple, un SUV élevé peut indiquer une inflammation forte ou une tumeur active. Lors du suivi de votre traitement (chimiothérapie ou radiothérapie), le médecin comparera le SUV avant et après : si le SUV baisse de manière importante, c'est une excellente nouvelle, cela signifie que le traitement fonctionne et que la maladie recule !",
+            infoBox: {
+              type: "tip",
+              title: "Ne vous focalisez pas que sur les chiffres",
+              text: "Le SUV n'est qu'un indicateur parmi d'autres. Le médecin nucléaire regarde aussi la taille, la forme et l'évolution globale des images. Un SUV qui varie légèrement d'un examen à l'autre peut être tout à fait normal."
+            }
+          }
+        ]
+      },
+      medecin_non_nuc: {
+        sections: [
+          {
+            title: "Définition et utilité clinique du SUV",
+            text: "Le SUV (Standardized Uptake Value) est un ratio qui normalise la concentration de radioactivité mesurée dans une lésion par rapport à la radioactivité qui serait uniformément distribuée dans le corps entier du patient. Il permet de passer d'une simple image qualitative (noir et blanc ou échelle de couleurs) à une valeur semi-quantitative."
+          },
+          {
+            title: "Pourquoi l'utiliser ?",
+            text: "L'œil humain est subjectif et dépend des réglages de contraste de l'écran. Le SUV offre une mesure objective. Il est particulièrement crucial pour :",
+            list: [
+              "Le diagnostic différentiel : Bien qu'il n'y ait pas de seuil absolu (le fameux 'cut-off' de 2.5 est obsolète), un SUV très élevé est fortement prédictif de malignité.",
+              "L'évaluation de la réponse thérapeutique : C'est son rôle majeur. Une baisse significative du SUV entre une TEP initiale et une TEP d'évaluation (par exemple, une baisse de plus de 30%) indique une réponse métabolique au traitement, souvent bien avant que la tumeur ne rétrécisse au scanner."
+            ]
+          },
+          {
+            title: "Les limites à connaître",
+            text: "Le SUV n'est pas une valeur absolue et magique. Il peut être influencé par de nombreux facteurs : le délai entre l'injection et l'examen, la glycémie du patient, ou même la calibration de la machine. C'est pourquoi il est essentiel que les examens de suivi soient réalisés dans les mêmes conditions (et idéalement sur la même machine) pour que la comparaison des SUV soit valide."
+          }
+        ]
+      },
+      medecin_nuc: {
+        sections: [
+          {
+            title: "1. Formule mathématique du SUV",
+            text: "Le SUV est défini par l'équation suivante : SUV = C(T) / (A / W).",
+            list: [
+              "C(T) : Concentration de radioactivité dans le tissu à l'instant T (en kBq/mL), mesurée par la caméra TEP.",
+              "A : Activité injectée au patient (en kBq), corrigée de la décroissance physique entre l'heure d'injection et l'heure d'acquisition.",
+              "W : Poids du patient (en grammes ou kg). On assume que 1 mL de tissu pèse 1 gramme."
+            ],
+            infoBox: {
+              type: "info",
+              title: "Unité du SUV",
+              text: "Le SUV est techniquement une grandeur sans dimension (g/mL), car on normalise une concentration volumique par une concentration massique globale (en assumant une densité corporelle de 1 g/mL)."
+            }
+          },
+          {
+            title: "2. Les différentes variantes du SUV",
+            text: "Le SUV dépend de la façon dont on définit la Région d'Intérêt (ROI) sur la lésion :",
+            list: [
+              "SUVmax : La valeur du pixel (voxel) le plus chaud au sein de la ROI. Avantages : indépendant de l'opérateur, très reproductible. Inconvénients : très sensible au bruit statistique (un seul voxel aberrant peut fausser la mesure), surestime l'activité réelle.",
+              "SUVmean : La moyenne des SUV de tous les voxels de la ROI. Avantages : moins sensible au bruit. Inconvénients : très dépendant de la façon dont l'opérateur trace les contours de la ROI (effet de volume partiel aux bords).",
+              "SUVpeak : La moyenne des SUV dans une ROI sphérique fixe (généralement 1 cm³) centrée sur la zone la plus chaude de la tumeur. Avantages : compromis idéal, moins sensible au bruit que le SUVmax et indépendant du contournage global contrairement au SUVmean. C'est le paramètre recommandé par les critères PERCIST."
+            ]
+          },
+          {
+            title: "3. Le SUL (SUV Lean Body Mass)",
+            text: "Le tissu adipeux (la graisse) consomme très peu de FDG par rapport aux muscles ou aux organes. Chez un patient obèse, le FDG se distribue dans un volume de tissu métaboliquement actif plus petit que son poids total. Cela entraîne une surestimation artificielle du SUV dans les tumeurs. Pour corriger ce biais, on utilise le SUL, qui normalise l'activité par rapport à la masse maigre (Lean Body Mass - LBM) plutôt que le poids total. Le SUL est exigé par les critères PERCIST."
+          },
+          {
+            title: "4. Facteurs de variabilité (Les pièges du SUV)",
+            text: "Le SUV est 'semi-quantitatif' car il est soumis à de multiples sources d'erreurs :",
+            list: [
+              "Facteurs biologiques : Glycémie (une hyperglycémie diminue le SUV par compétition), délai d'uptake (le SUV du FDG continue d'augmenter pendant des heures dans les tumeurs), extravasation au point d'injection (fausse l'activité A).",
+              "Facteurs physiques : Effet de volume partiel (EVP). Pour les lésions de taille inférieure à 2 ou 3 fois la résolution spatiale du système (soit < 1.5 cm), le SUV mesuré sous-estime le SUV réel. La modélisation PSF (Point Spread Function) augmente artificiellement le SUVmax (effet de bord ou Gibbs artifact).",
+              "Facteurs techniques : Calibration croisée entre l'activimètre et la caméra TEP, algorithme de reconstruction utilisé, nombre d'itérations."
+            ]
+          },
+          {
+            title: "5. Au-delà du SUV : Les paramètres volumétriques",
+            text: "Le SUV ne reflète que l'intensité métabolique. Pour évaluer la charge tumorale globale (Tumor Burden), on utilise :",
+            list: [
+              "MTV (Metabolic Tumor Volume) : Le volume (en cm³) des tissus tumoraux dont le SUV dépasse un certain seuil (ex: seuil absolu de SUV > 2.5, ou seuil relatif > 41% du SUVmax).",
+              "TLG (Total Lesion Glycolysis) : TLG = MTV × SUVmean. Il intègre à la fois le volume et l'intensité métabolique. C'est un excellent biomarqueur pronostique."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
     id: 'MN000_GEN',
     cat: 'generalites',
     catLabel: 'Généralités',

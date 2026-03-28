@@ -7,7 +7,7 @@ import { doc, setDoc, deleteDoc, getDoc, collection, getDocs, serverTimestamp, u
 import { onAuthStateChanged } from 'firebase/auth';
 import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
 import { Article, Category, MENU_STRUCTURE } from '@/lib/data';
-import { Save, Trash2, Plus, Users, FileText, LayoutDashboard, Search, AlertCircle, X } from 'lucide-react';
+import { Save, Trash2, Plus, Users, FileText, LayoutDashboard, Search, AlertCircle, X, FileJson } from 'lucide-react';
 import { ContentEditor } from './ContentEditor';
 import { AIGenerator } from './AIGenerator';
 import { Sparkles } from 'lucide-react';
@@ -27,6 +27,7 @@ export function AdminPanel() {
   const [isSaving, setIsSaving] = useState(false);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
   const [isAIGeneratorOpen, setIsAIGeneratorOpen] = useState(false);
+  const [isImportJsonOpen, setIsImportJsonOpen] = useState(false);
   
   const [users, setUsers] = useState<any[]>([]);
   const [loadingUsers, setLoadingUsers] = useState(false);
@@ -238,6 +239,63 @@ export function AdminPanel() {
         />
       )}
 
+      {/* Import JSON Modal */}
+      {isImportJsonOpen && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[100] p-4">
+          <div className="bg-bg border border-border-main rounded-xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col">
+            <div className="p-4 border-b border-border-main flex items-center justify-between bg-bg2">
+              <h3 className="font-serif text-lg text-text-main font-medium">Importer un article (JSON)</h3>
+              <button onClick={() => setIsImportJsonOpen(false)} className="p-1 text-text3 hover:text-text-main">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="p-6">
+              <p className="text-sm text-text2 mb-4">Collez ici le code JSON généré par votre IA externe (ChatGPT, Claude, etc.).</p>
+              <textarea
+                id="json-import-textarea"
+                className="w-full h-64 bg-bg3 border border-border-main rounded-lg p-3 text-sm font-mono text-text-main outline-none focus:border-teal resize-y"
+                placeholder="{&#10;  &quot;title&quot;: &quot;...&quot;,&#10;  ...&#10;}"
+              ></textarea>
+            </div>
+            <div className="p-4 border-t border-border-main bg-bg2 flex justify-end gap-3">
+              <button onClick={() => setIsImportJsonOpen(false)} className="px-4 py-2 text-sm text-text2">Annuler</button>
+              <button 
+                onClick={() => {
+                  try {
+                    const val = (document.getElementById('json-import-textarea') as HTMLTextAreaElement).value;
+                    const parsed = JSON.parse(val);
+                    setActiveTab('articles');
+                    setEditingId('new');
+                    setFormData({
+                      id: '',
+                      title: parsed.title || '',
+                      cat: parsed.cat || 'endocrinologie',
+                      catLabel: parsed.catLabel || 'Endocrinologie',
+                      excerpt: parsed.excerpt || '',
+                      tags: parsed.tags || [],
+                      difficulty: parsed.difficulty || 'fondamental',
+                    });
+                    setContentData(parsed.content || {
+                      lead: "",
+                      medecin_nuc: { sections: [] },
+                      medecin_non_nuc: { sections: [] },
+                      patient: { sections: [] }
+                    });
+                    setIsImportJsonOpen(false);
+                    showMessage('success', 'JSON importé avec succès. N\'oubliez pas de choisir la catégorie et de sauvegarder.');
+                  } catch (e) {
+                    showMessage('error', 'Erreur: Le format JSON est invalide.');
+                  }
+                }}
+                className="px-6 py-2 bg-teal text-bg rounded-md text-sm font-medium hover:bg-teal2"
+              >
+                Importer
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Sidebar Admin */}
       <div className="w-[240px] border-r border-border-main flex flex-col bg-bg2 shrink-0">
         <div className="p-6 border-b border-border-main">
@@ -416,6 +474,13 @@ export function AdminPanel() {
                 <div className="flex justify-between items-center">
                   <h3 className="font-medium text-text-main">Liste des articles</h3>
                   <div className="flex items-center gap-2">
+                    <button 
+                      onClick={() => setIsImportJsonOpen(true)} 
+                      className="p-1.5 bg-blue-500/20 text-blue-500 rounded hover:bg-blue-500/30 transition-colors" 
+                      title="Importer JSON"
+                    >
+                      <FileJson className="w-4 h-4" />
+                    </button>
                     <button 
                       onClick={() => setIsAIGeneratorOpen(true)} 
                       className="p-1.5 bg-teal/20 text-teal rounded hover:bg-teal/30 transition-colors" 
