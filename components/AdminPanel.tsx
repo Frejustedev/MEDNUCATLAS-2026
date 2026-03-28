@@ -152,8 +152,8 @@ export function AdminPanel() {
 
       await setDoc(doc(db, 'articles', formData.id), articleData);
       
-      if (editingId !== 'new' && editingId !== formData.id) {
-        await deleteDoc(doc(db, 'articles', editingId));
+      if (editingId !== 'new' && editingId !== formData.id && editingId !== null) {
+        await deleteDoc(doc(db, 'articles', editingId as string));
       }
 
       showMessage('success', 'Article sauvegardé avec succès !');
