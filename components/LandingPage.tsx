@@ -113,7 +113,7 @@ export function LandingPage() {
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center px-6 md:px-12 pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_60%_40%,rgba(0,201,177,0.07)_0%,transparent_70%),radial-gradient(ellipse_40%_40%_at_20%_80%,rgba(200,169,110,0.05)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_closest-side_at_60%_40%,rgba(0,201,177,0.07)_0%,transparent_70%),radial-gradient(ellipse_closest-side_at_20%_80%,rgba(200,169,110,0.05)_0%,transparent_60%)]" />
         <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(var(--color-teal)_1px,transparent_1px),linear-gradient(90deg,var(--color-teal)_1px,transparent_1px)] bg-[size:60px_60px]" />
         
         <div className="relative z-10 max-w-2xl">
@@ -430,7 +430,7 @@ export function LandingPage() {
 
       {/* CTA FINAL */}
       <section id="contact" className="px-6 md:px-12 py-32 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_50%_50%,rgba(0,201,177,0.06)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_closest-side_at_50%_50%,rgba(0,201,177,0.06)_0%,transparent_70%)]" />
         <h2 className="font-serif text-4xl md:text-[72px] font-light leading-[1.1] mb-6 relative">
           Prêt à transformer<br /><em className="not-italic italic text-teal">votre pratique ?</em>
         </h2>
