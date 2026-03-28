@@ -121,6 +121,7 @@ export function AdminPanel() {
       excerpt: '',
       tags: [],
       difficulty: 'fondamental',
+      targetAudience: ['medecin_nuc', 'medecin_non_nuc', 'patient'],
     });
     setContentData({
       lead: "",
@@ -150,8 +151,13 @@ export function AdminPanel() {
       }
 
       await setDoc(doc(db, 'articles', formData.id), articleData);
+      
+      if (editingId !== 'new' && editingId !== formData.id) {
+        await deleteDoc(doc(db, 'articles', editingId));
+      }
+
       showMessage('success', 'Article sauvegardé avec succès !');
-      if (editingId === 'new') {
+      if (editingId === 'new' || editingId !== formData.id) {
         setEditingId(formData.id);
       }
     } catch (error) {
@@ -579,10 +585,14 @@ export function AdminPanel() {
                             type="text" 
                             value={formData.id || ''} 
                             onChange={e => setFormData({...formData, id: e.target.value})} 
-                            disabled={editingId !== 'new'} 
                             placeholder="ex: MN005"
-                            className="w-full bg-bg3 border border-border-main rounded-md p-2.5 text-sm outline-none focus:border-teal disabled:opacity-50 transition-colors text-text-main" 
+                            className="w-full bg-bg3 border border-border-main rounded-md p-2.5 text-sm outline-none focus:border-teal transition-colors text-text-main" 
                           />
+                          {editingId !== 'new' && (
+                            <p className="text-[10px] text-text3 mt-1">
+                              Attention: modifier l&apos;ID changera l&apos;URL de l&apos;article.
+                            </p>
+                          )}
                         </div>
                         <div>
                           <label className="block text-xs font-mono text-text3 mb-1.5 uppercase tracking-wider">Catégorie</label>
