@@ -1,4 +1,4 @@
-export type Category = 'all' | 'dashboard' | 'favorites' | 'index' | 'generalites' | 'bases_physiques' | 'radiobiologie' | 'reglementation' | 'endocrinologie' | 'oncologie' | 'cardiologie' | 'neurologie' | 'nephro_urologie' | 'pneumologie' | 'gastro_enterologie' | 'senologie_gynecologie' | 'infection_inflammation' | 'pediatrie' | 'theranostique_thyroide' | 'tne' | 'prostate' | 'rhumatologie' | 'sirt' | 'radiopharmacie' | 'instrumentation' | 'radioprotection' | 'scores' | 'calculateurs' | 'artefacts' | 'preparation' | 'guidelines' | 'about' | 'contact' | 'annuaire';
+export type Category = 'all' | 'dashboard' | 'favorites' | 'index' | 'generalites' | 'bases_physiques' | 'radiobiologie' | 'reglementation' | 'endocrinologie' | 'oncologie' | 'hematologie' | 'cardiologie' | 'neurologie' | 'nephro_urologie' | 'pneumologie' | 'gastro_enterologie' | 'rhumatologie' | 'senologie_gynecologie' | 'dermatologie_melanome' | 'orl_salivaires' | 'vasculaire_lymphatique' | 'infection_inflammation' | 'urgences' | 'pediatrie' | 'theranostique_thyroide' | 'tne' | 'prostate' | 'sirt' | 'radiopharmacie' | 'instrumentation' | 'radioprotection' | 'scores' | 'calculateurs' | 'artefacts' | 'cas_cliniques' | 'preparation' | 'guidelines' | 'about' | 'contact' | 'annuaire';
 
 export type UserProfile = 'patient' | 'medecin_non_nuc' | 'medecin_nuc' | 'admin';
 
@@ -30,14 +30,20 @@ export const MENU_STRUCTURE = [
     title: "🔍 DIAGNOSTIC (Organes)",
     items: [
       { id: 'endocrinologie', label: 'Endocrinologie' },
-      { id: 'oncologie', label: 'Oncologie' },
+      { id: 'oncologie', label: 'Oncologie (Tumeurs Solides)' },
+      { id: 'hematologie', label: 'Hématologie & Lymphomes' },
       { id: 'cardiologie', label: 'Cardiologie' },
       { id: 'neurologie', label: 'Neurologie' },
       { id: 'nephro_urologie', label: 'Néphro-Urologie' },
       { id: 'pneumologie', label: 'Pneumologie' },
       { id: 'gastro_enterologie', label: 'Gastro-entérologie' },
-      { id: 'senologie_gynecologie', label: 'Sénologie & Gynéco.' },
+      { id: 'rhumatologie', label: 'Rhumatologie & Os' },
+      { id: 'senologie_gynecologie', label: 'Sénologie & Gynécologie' },
+      { id: 'dermatologie_melanome', label: 'Dermatologie & Mélanome' },
+      { id: 'orl_salivaires', label: 'ORL & Glandes Salivaires' },
+      { id: 'vasculaire_lymphatique', label: 'Vasculaire & Lymphatique' },
       { id: 'infection_inflammation', label: 'Infection & Inflammation' },
+      { id: 'urgences', label: 'Urgences en MN' },
       { id: 'pediatrie', label: 'Pédiatrie' },
     ]
   },
@@ -47,7 +53,6 @@ export const MENU_STRUCTURE = [
       { id: 'theranostique_thyroide', label: 'Pathologies Thyroïdiennes' },
       { id: 'tne', label: 'Tumeurs Neuroendocrines' },
       { id: 'prostate', label: 'Cancer de la Prostate' },
-      { id: 'rhumatologie', label: 'Rhumatologie & Os' },
       { id: 'sirt', label: 'Radioembolisation (SIRT)' },
     ]
   },
@@ -65,6 +70,7 @@ export const MENU_STRUCTURE = [
       { id: 'scores', label: 'Scores & Classifications', targetAudience: ['medecin_nuc', 'medecin_non_nuc'] },
       { id: 'calculateurs', label: 'Calculateurs', targetAudience: ['medecin_nuc', 'medecin_non_nuc'] },
       { id: 'artefacts', label: 'Atlas des Artefacts', targetAudience: ['medecin_nuc'] },
+      { id: 'cas_cliniques', label: 'Cas Cliniques & Quiz' },
       { id: 'preparation', label: 'Préparation Patient' },
       { id: 'guidelines', label: 'Guidelines (EANM/SNMMI)', targetAudience: ['medecin_nuc', 'medecin_non_nuc'] },
     ]
@@ -471,7 +477,12 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:'Cet annuaire vous permet de trouver un médecin nucléaire ou un centre de médecine nucléaire près de chez vous pour vos examens ou traitements.',
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_non_nuc: { 
+        sections: [
+          { title: 'Recherche de correspondants', text: 'Cet annuaire vous permet d\'identifier rapidement les centres de médecine nucléaire et les praticiens pour adresser vos patients, que ce soit pour des examens diagnostiques (scintigraphie, TEP) ou des traitements (théranostique).' },
+          { title: 'Informations pratiques', list: ['Coordonnées directes des secrétariats', 'Plateaux techniques disponibles (TEP, caméras CZT)', 'Spécialisations des praticiens'] }
+        ] 
+      },
       medecin_nuc:{
         sections:[
           {title:'Recherche de confrères', text:'Accédez à la base de données nationale pour trouver les coordonnées de vos confrères, classés par région, par centre ou par sur-spécialité (théranostique, cardiologie, etc.).'},
@@ -655,7 +666,13 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La scintigraphie myocardique de perfusion (SMP) est l'examen de médecine nucléaire le plus prescrit en cardiologie. Elle permet d'évaluer la viabilité myocardique et de détecter une ischémie coronarienne avec une excellente sensibilité.",
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_non_nuc: { 
+        sections: [
+          { title: 'Indications cliniques', list: ['Suspicion de maladie coronarienne (angor stable, dyspnée d\'effort)', 'Évaluation du retentissement fonctionnel d\'une sténose connue', 'Bilan pré-opératoire de chirurgie non cardiaque à haut risque', 'Évaluation de la viabilité myocardique post-infarctus'] },
+          { title: 'Performances diagnostiques', text: 'La scintigraphie myocardique de perfusion offre une excellente sensibilité (87-89%) et une bonne spécificité (73-85%) pour la détection de l\'ischémie myocardique, supérieure à l\'ECG d\'effort seul.' },
+          { title: 'Préparation du patient', list: ['Arrêt des bêta-bloquants et inhibiteurs calciques bradycardisants 48h avant (sauf avis contraire)', 'À jeun strict 4h avant l\'examen', 'Pas de caféine (café, thé, chocolat, colas) 24h avant en cas de stress pharmacologique (adénosine, dipyridamole)'] }
+        ] 
+      },
       medecin_nuc:{
         sections:[
           {title:'Principes et traceurs', list:['Tc-99m Sestamibi (MIBI) : captation mitochondriale, redistribution nulle','Tc-99m Tetrofosmin : similaire au MIBI, clairance hépatique plus rapide','Tl-201 : analogue du potassium, redistribution tardive (viabilité)','Rb-82 / N-13-NH3 : TEP myocardique (gold standard)']},
@@ -925,7 +942,13 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"Les données récentes remettent en question les hautes doses d'iode radioactif dans les carcinomes thyroïdiens différenciés à faible risque. L'équivalence d'efficacité des doses de 30 à 100 mCi ouvre la voie à une désescalade thérapeutique significative, avec une réduction de la charge dosimétrique et des effets secondaires.",
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_non_nuc: { 
+        sections: [
+          { title: 'Place dans la stratégie thérapeutique', text: 'La désescalade thérapeutique (utilisation de 30 mCi au lieu de 100 mCi) est désormais validée pour l\'ablation des reliquats thyroïdiens dans les carcinomes différenciés à faible risque. Elle offre une efficacité équivalente avec une toxicité moindre.' },
+          { title: 'Critères d\'éligibilité (Faible risque)', list: ['Carcinome papillaire ou vésiculaire (variantes classiques)', 'Stade pT1b ou pT2, N0, M0', 'Exérèse chirurgicale complète (R0)', 'Absence d\'extension extra-thyroïdienne', 'Absence d\'emboles vasculaires'] },
+          { title: 'Avantages pour le patient', list: ['Réduction significative de l\'irradiation corporelle totale', 'Diminution du risque de dysfonctionnement des glandes salivaires (xérostomie)', 'Durée d\'isolement radioprotecteur réduite', 'Amélioration de la qualité de vie post-traitement'] }
+        ] 
+      },
       medecin_nuc:{
         sections:[
           {title:'Contexte et enjeux', text:"Pendant des décennies, des doses de 100 mCi (3,7 GBq) ont été utilisées de manière quasi-systématique pour l'ablation du reliquat thyroïdien post-thyroïdectomie. Les études ESTIMABL (2012) et HiLo (2012) ont démontré la non-infériorité des basses doses (30 mCi / 1,1 GBq) dans les tumeurs à faible risque selon la classification ATA/ETA."},
@@ -957,7 +980,13 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"La scintigraphie osseuse au Tc-MDP reste l'examen de référence pour le bilan d'extension osseuse des cancers, la détection de fractures occultes et l'évaluation des pathologies ostéo-articulaires. Sa sensibilité élevée compense une spécificité modérée.",
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_non_nuc: { 
+        sections: [
+          { title: 'Indications en oncologie', list: ['Bilan d\'extension osseuse initial (cancer de la prostate, du sein, du poumon)', 'Recherche de métastases osseuses devant des douleurs inexpliquées', 'Évaluation de la réponse aux traitements ostéo-ciblés'] },
+          { title: 'Indications en rhumatologie/orthopédie', list: ['Recherche de fractures de contrainte (fatigue ou insuffisance osseuse) non visibles à la radiographie', 'Bilan de douleurs articulaires inexpliquées (algodystrophie, ostéonécrose)', 'Évaluation du descellement ou de l\'infection de prothèses articulaires', 'Diagnostic précoce des spondylodiscites'] },
+          { title: 'Avantages et limites', text: 'La scintigraphie osseuse est très sensible pour détecter un remodelage osseux précoce, souvent avant les modifications radiologiques. Cependant, sa spécificité est modérée : toute zone de réparation osseuse (arthrose, traumatisme bénin) fixera le traceur. La corrélation clinique et radiologique est indispensable.' }
+        ] 
+      },
       medecin_nuc:{
         sections:[
           {title:'Mécanisme', text:"Le méthylènediphosphonate marqué au Tc-99m (Tc-MDP) s'adsorbe sur les cristaux d'hydroxyapatite du tissu osseux néoformé. L'intensité de fixation est proportionnelle à l'activité ostéoblastique locale."},
@@ -988,7 +1017,13 @@ export const ENTRIES: Article[] = [
     ],
     content:{
       lead:"Le concept théranostique — même molécule pour diagnostiquer et traiter — révolutionne l'oncologie nucléaire. Le couple Ga-68 DOTATATE (diagnostic TEP) / Lu-177 DOTATATE (traitement) est l'exemple paradigmatique de cette approche personnalisée.",
-      medecin_non_nuc: { sections: [{ title: 'Mode Médecin (Non MN)', text: 'Contenu en cours de rédaction...' }] },
+      medecin_non_nuc: { 
+        sections: [
+          { title: 'Le concept de Théranostique', text: 'La théranostique associe un test diagnostique (TEP au 68Ga-DOTATATE) pour identifier la présence d\'une cible moléculaire (les récepteurs de la somatostatine), suivi d\'un traitement ciblé (177Lu-DOTATATE) utilisant la même molécule vectrice pour délivrer une radiothérapie interne.' },
+          { title: 'Indications de la PRRT (Lutathera®)', list: ['Tumeurs neuroendocrines (TNE) gastro-entéropancréatiques inopérables ou métastatiques', 'TNE bien différenciées (Grade 1 ou 2)', 'Maladie en progression sous traitement par analogues de la somatostatine', 'Forte expression des récepteurs à la somatostatine confirmée par imagerie fonctionnelle'] },
+          { title: 'Efficacité et tolérance', text: 'Le traitement par 177Lu-DOTATATE a démontré une amélioration significative de la survie sans progression par rapport aux fortes doses d\'analogues de la somatostatine. La tolérance est généralement bonne, avec une surveillance hématologique et rénale nécessaire.' }
+        ] 
+      },
       medecin_nuc:{
         sections:[
           {title:'Principe théranostique', text:"La même molécule (DOTATATE = octréotide modifié) cible les récepteurs à la somatostatine (SSTR2) surexprimés par les tumeurs neuroendocrines. Marquée au Ga-68, elle permet un bilan TEP diagnostique. Marquée au Lu-177 (émetteur β⁻), elle délivre une irradiation locale létale aux cellules tumorales."},

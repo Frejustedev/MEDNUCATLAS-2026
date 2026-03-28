@@ -356,13 +356,29 @@ export function AdminPanel() {
             
             <div className="bg-bg2 border border-border-main rounded-xl p-6 mb-8">
               <h3 className="text-lg font-serif text-text-main mb-4">Outils d&apos;administration</h3>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4">
                 <button 
                   onClick={() => setIsAIGeneratorOpen(true)}
                   className="px-4 py-2 bg-teal text-bg rounded-lg font-medium hover:bg-teal2 transition-colors text-sm flex items-center gap-2 shadow-lg shadow-teal/20"
                 >
                   <Sparkles className="w-4 h-4" />
                   Générateur d&apos;Articles IA
+                </button>
+                <button 
+                  onClick={() => {
+                    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(articles, null, 2));
+                    const downloadAnchorNode = document.createElement('a');
+                    downloadAnchorNode.setAttribute("href",     dataStr);
+                    downloadAnchorNode.setAttribute("download", "articles_export.json");
+                    document.body.appendChild(downloadAnchorNode);
+                    downloadAnchorNode.click();
+                    downloadAnchorNode.remove();
+                    showMessage('success', 'Exportation JSON réussie !');
+                  }}
+                  className="px-4 py-2 bg-blue-500/20 text-blue-500 rounded-lg font-medium hover:bg-blue-500/30 transition-colors text-sm flex items-center gap-2"
+                >
+                  <FileJson className="w-4 h-4" />
+                  Exporter les articles (JSON)
                 </button>
                 <button 
                   onClick={() => {

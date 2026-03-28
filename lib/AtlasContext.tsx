@@ -175,11 +175,17 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
           } as Article;
         });
         
-        if (fetchedArticles.length > 0) {
-          setAllArticles(fetchedArticles);
-        } else {
-          setAllArticles(ENTRIES);
-        }
+        const mergedArticles = [...ENTRIES];
+        fetchedArticles.forEach(fetched => {
+          const index = mergedArticles.findIndex(a => a.id === fetched.id);
+          if (index >= 0) {
+            mergedArticles[index] = fetched;
+          } else {
+            mergedArticles.push(fetched);
+          }
+        });
+        
+        setAllArticles(mergedArticles);
       } catch (error) {
         console.error("Erreur de chargement des articles", error);
         setAllArticles(ENTRIES);
