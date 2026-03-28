@@ -53,7 +53,7 @@ import Link from 'next/link';
 export function Sidebar() {
   const { showHome, showCategory, openArticle, articles, userProfile, isMobileMenuOpen, setIsMobileMenuOpen, isDesktopMenuCollapsed } = useAtlas();
   const pathname = usePathname();
-  const [expandedSection, setExpandedSection] = useState<string | null>('🔍 DIAGNOSTIC (Organes)');
+  const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
 
   const toggleSection = (title: string) => {
