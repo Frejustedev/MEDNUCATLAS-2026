@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { ArticleMode, Category, Article, UserProfile, ENTRIES, getAllowedAudiences } from './data';
+import { ArticleMode, Category, Article, UserProfile, getAllowedAudiences } from './data';
 import { db, auth } from './firebase';
 import { collection, onSnapshot, query, doc, getDoc, setDoc, getDocs } from 'firebase/firestore';
 import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, User as FirebaseUser } from 'firebase/auth';
@@ -175,20 +175,10 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
           } as Article;
         });
         
-        const mergedArticles = [...ENTRIES];
-        fetchedArticles.forEach(fetched => {
-          const index = mergedArticles.findIndex(a => a.id === fetched.id);
-          if (index >= 0) {
-            mergedArticles[index] = fetched;
-          } else {
-            mergedArticles.push(fetched);
-          }
-        });
-        
-        setAllArticles(mergedArticles);
+        setAllArticles(fetchedArticles);
       } catch (error) {
         console.error("Erreur de chargement des articles", error);
-        setAllArticles(ENTRIES);
+        setAllArticles([]);
       } finally {
         setLoading(false);
       }
