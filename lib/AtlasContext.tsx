@@ -1,18 +1,17 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import React, { createContext, useContext, useState, ReactNode, useEffect, useMemo, useCallback } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { ArticleMode, Category, Article, UserProfile, getAllowedAudiences } from './data';
 import { db, auth } from './firebase';
-import { collection, onSnapshot, query, doc, getDoc, setDoc, getDocs } from 'firebase/firestore';
+import { collection, onSnapshot, query, doc, getDoc, setDoc, getDocs, updateDoc } from 'firebase/firestore';
 import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, User as FirebaseUser } from 'firebase/auth';
-import { handleFirestoreError, OperationType } from './firestore-errors';
 
 export interface DbUser {
   uid: string;
   email: string;
   role: UserProfile;
-  profileType?: UserProfile;
+  profileType?: ArticleMode;
   intendedPlan?: string;
   displayName?: string;
   photoURL?: string;
@@ -52,9 +51,9 @@ interface AtlasContextType extends AtlasState {
   openArticle: (id: string) => void;
   showAdmin: () => void;
   showProfile: () => void;
-  loginWithGoogle: (profileType?: UserProfile, planIntent?: string) => Promise<void>;
-  loginWithEmail: (email: string, password: string, profileType?: UserProfile, planIntent?: string) => Promise<void>;
-  signupWithEmail: (email: string, password: string, profileType?: UserProfile, planIntent?: string) => Promise<void>;
+  loginWithGoogle: (profileType?: ArticleMode, planIntent?: string) => Promise<void>;
+  loginWithEmail: (email: string, password: string, profileType?: ArticleMode, planIntent?: string) => Promise<void>;
+  signupWithEmail: (email: string, password: string, profileType?: ArticleMode, planIntent?: string) => Promise<void>;
   logout: () => Promise<void>;
   openAuthModal: (intent?: string) => void;
   closeAuthModal: () => void;
@@ -66,19 +65,27 @@ interface AtlasContextType extends AtlasState {
 
 const AtlasContext = createContext<AtlasContextType | undefined>(undefined);
 
+// Rôles legacy à migrer (n'élève PAS le privilège — toujours rétrograde vers patient).
+const LEGACY_ROLES = ['free', 'pro', 'expert', 'institution'];
+
+function deriveMode(role: UserProfile): ArticleMode {
+  if (role === 'admin' || role === 'medecin_nuc') return 'medecin_nuc';
+  if (role === 'medecin_non_nuc') return 'medecin_non_nuc';
+  return 'patient';
+}
+
 export function AtlasProvider({ children }: { children: ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
-  
+
   const [searchQuery, setSearchQuery] = useState('');
   const [globalMode, setGlobalMode] = useState<ArticleMode>('medecin_nuc');
   const [articleMode, setArticleMode] = useState<ArticleMode>('medecin_nuc');
   const [lang, setLang] = useState('fr');
-  const [userProfile, setUserProfile] = useState<UserProfile>('medecin_nuc');
+  const [userProfile, setUserProfile] = useState<UserProfile>('patient');
   const [allArticles, setAllArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
-  
-  // Auth state
+
   const [authUser, setAuthUser] = useState<FirebaseUser | null>(null);
   const [dbUser, setDbUser] = useState<DbUser | null>(null);
   const [authLoading, setAuthLoading] = useState(true);
@@ -87,319 +94,320 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDesktopMenuCollapsed, setIsDesktopMenuCollapsed] = useState(false);
 
-  // Auth Effect
+  // Auth effect
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setAuthUser(user);
-      if (user) {
-        try {
-          const userDocRef = doc(db, 'users', user.uid);
-          const userDoc = await getDoc(userDocRef);
-          
-          if (userDoc.exists()) {
-            const data = userDoc.data() as DbUser;
-            
-            // Migrate legacy roles or force admin
-            let needsMigration = false;
-            let updatedRole = data.role;
-            let updatedProfileType = data.profileType;
-            
-            if (user.email === 'agbotonfrejuste@gmail.com' && (data.role !== 'admin' || data.profileType !== 'medecin_nuc')) {
-              updatedRole = 'admin';
-              updatedProfileType = 'medecin_nuc';
-              needsMigration = true;
-            } else if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
-              updatedRole = 'patient';
-              updatedProfileType = 'patient';
-              needsMigration = true;
-            }
-            
-            if (needsMigration) {
-              await setDoc(userDocRef, { 
-                role: updatedRole,
-                profileType: updatedProfileType,
-                lastLogin: new Date().toISOString() 
-              }, { merge: true });
-              data.role = updatedRole;
-              data.profileType = updatedProfileType;
-            } else {
-              // Update last login
-              await setDoc(userDocRef, { lastLogin: new Date().toISOString() }, { merge: true });
-            }
-            
-            setDbUser(data);
-            setUserProfile(data.role);
-            const newMode = data.role === 'patient' ? 'patient' : (data.role === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
-            setGlobalMode(newMode);
-            setArticleMode(newMode);
-          } else {
-            // Document will be created by handleAuthResult during signup
-            setDbUser(null);
-            setUserProfile('patient');
-            setGlobalMode('patient');
-            setArticleMode('patient');
-          }
-        } catch (error) {
-          console.error("Error fetching/creating user profile:", error);
-        }
-      } else {
+      if (!user) {
         setDbUser(null);
         setUserProfile('patient');
         setGlobalMode('patient');
         setArticleMode('patient');
+        setAuthLoading(false);
+        return;
       }
-      setAuthLoading(false);
+      try {
+        const userDocRef = doc(db, 'users', user.uid);
+        const userDoc = await getDoc(userDocRef);
+
+        if (!userDoc.exists()) {
+          setDbUser(null);
+          setUserProfile('patient');
+          setGlobalMode('patient');
+          setArticleMode('patient');
+          return;
+        }
+
+        const data = userDoc.data() as DbUser;
+        const updates: Partial<DbUser> = { lastLogin: new Date().toISOString() };
+
+        // Migration silencieuse des rôles legacy — rétrograde vers patient (jamais élève).
+        if (LEGACY_ROLES.includes(data.role as string)) {
+          updates.role = 'patient';
+          updates.profileType = 'patient';
+        }
+
+        if (Object.keys(updates).length > 0) {
+          try {
+            await setDoc(userDocRef, updates, { merge: true });
+            Object.assign(data, updates);
+          } catch (err) {
+            console.warn('[atlas] Impossible de mettre à jour le profil utilisateur', err);
+          }
+        }
+
+        setDbUser(data);
+        setUserProfile(data.role);
+        const newMode = deriveMode(data.role);
+        setGlobalMode(newMode);
+        setArticleMode(newMode);
+      } catch (error) {
+        console.error('[atlas] Erreur lors du chargement du profil utilisateur', error);
+      } finally {
+        setAuthLoading(false);
+      }
     });
 
     return () => unsubscribe();
   }, []);
 
-  // Articles Effect
+  // Articles effect — un seul fetch initial (sera remplacé par SSR/ISR en P1).
   useEffect(() => {
     const fetchArticles = async () => {
       try {
         const q = query(collection(db, 'articles'));
         const snapshot = await getDocs(q);
-        const fetchedArticles: Article[] = snapshot.docs.map(doc => {
-          const data = doc.data();
+        const fetchedArticles: Article[] = snapshot.docs.map((d) => {
+          const data = d.data() as Record<string, unknown>;
+          const rawContent = data.content;
+          let parsedContent: Article['content'];
+          if (typeof rawContent === 'string') {
+            try {
+              parsedContent = JSON.parse(rawContent) as Article['content'];
+            } catch {
+              parsedContent = { lead: '', patient: { sections: [] }, medecin_non_nuc: { sections: [] }, medecin_nuc: { sections: [] } };
+            }
+          } else if (rawContent && typeof rawContent === 'object') {
+            parsedContent = rawContent as Article['content'];
+          } else {
+            parsedContent = { lead: '', patient: { sections: [] }, medecin_non_nuc: { sections: [] }, medecin_nuc: { sections: [] } };
+          }
           return {
-            id: data.id,
-            cat: data.cat,
-            catLabel: data.catLabel,
-            title: data.title,
-            tags: data.tags || [],
-            difficulty: data.difficulty,
-            excerpt: data.excerpt,
-            targetAudience: data.targetAudience || ['medecin_nuc', 'medecin_non_nuc', 'patient'],
-            content: typeof data.content === 'string' ? JSON.parse(data.content) : data.content
-          } as Article;
+            id: data.id as string,
+            cat: data.cat as Category,
+            catLabel: (data.catLabel as string) ?? '',
+            title: (data.title as string) ?? '',
+            tags: (data.tags as string[]) ?? [],
+            difficulty: (data.difficulty as Article['difficulty']) ?? 'fondamental',
+            excerpt: (data.excerpt as string) ?? '',
+            targetAudience:
+              (data.targetAudience as Article['targetAudience']) ??
+              (['medecin_nuc', 'medecin_non_nuc', 'patient'] as Article['targetAudience']),
+            authors: data.authors as string[] | undefined,
+            sources: data.sources as Article['sources'],
+            content: parsedContent,
+          };
         });
-        
         setAllArticles(fetchedArticles);
       } catch (error) {
-        console.error("Erreur de chargement des articles", error);
+        console.error('[atlas] Chargement des articles impossible', error);
         setAllArticles([]);
       } finally {
         setLoading(false);
       }
     };
-
     fetchArticles();
   }, []);
 
-  const articles = React.useMemo(() => {
+  const articles = useMemo(() => {
     const allowedAudiences = getAllowedAudiences(userProfile);
-    return allArticles.filter(a => {
+    return allArticles.filter((a) => {
       if (!a.targetAudience || a.targetAudience.length === 0) return true;
-      return a.targetAudience.some(audience => allowedAudiences.includes(audience));
+      return a.targetAudience.some((audience) => allowedAudiences.includes(audience));
     });
   }, [allArticles, userProfile]);
 
-  const handleAuthResult = async (user: any, profileType: UserProfile, planIntent: string) => {
-    const userDocRef = doc(db, 'users', user.uid);
-    const userDoc = await getDoc(userDocRef);
-    
-    if (!userDoc.exists()) {
-      let finalRole = profileType;
-      let finalProfileType = profileType;
-      
-      if (user.email === 'agbotonfrejuste@gmail.com') {
-        finalRole = 'admin';
-        finalProfileType = 'medecin_nuc';
+  const ensureUserDoc = useCallback(
+    async (firebaseUser: FirebaseUser, profileType: ArticleMode, planIntent: string) => {
+      const userDocRef = doc(db, 'users', firebaseUser.uid);
+      const snap = await getDoc(userDocRef);
+
+      if (!snap.exists()) {
+        const base: DbUser = {
+          uid: firebaseUser.uid,
+          email: firebaseUser.email ?? '',
+          // Aucun privilège élevé en self-create : on saute à patient ; pour devenir
+          // medecin_*, l'utilisateur passe par une demande role_requests.
+          role: profileType === 'medecin_nuc' ? 'medecin_non_nuc' : profileType,
+          profileType,
+          displayName: firebaseUser.displayName ?? firebaseUser.email?.split('@')[0] ?? '',
+          photoURL: firebaseUser.photoURL ?? '',
+          createdAt: new Date().toISOString(),
+          lastLogin: new Date().toISOString(),
+        };
+        if (planIntent && planIntent !== 'patient') base.intendedPlan = planIntent;
+        await setDoc(userDocRef, base);
+        setDbUser(base);
+        setUserProfile(base.role);
+        const newMode = deriveMode(base.role);
+        setGlobalMode(newMode);
+        setArticleMode(newMode);
+        return;
       }
 
-      const newUser: DbUser = {
-        uid: user.uid,
-        email: user.email || '',
-        role: finalRole,
-        profileType: finalProfileType,
-        displayName: user.displayName || user.email?.split('@')[0] || '',
-        photoURL: user.photoURL || '',
-        createdAt: new Date().toISOString(),
-        lastLogin: new Date().toISOString(),
-      };
-      if (planIntent) {
-        newUser.intendedPlan = planIntent;
+      const data = snap.data() as DbUser;
+      const updates: Partial<DbUser> = { lastLogin: new Date().toISOString() };
+      if (LEGACY_ROLES.includes(data.role as string)) {
+        updates.role = 'patient';
+        updates.profileType = 'patient';
       }
-      await setDoc(userDocRef, newUser);
-      setDbUser(newUser);
-      setUserProfile(newUser.role);
-      const newMode = newUser.role === 'patient' ? 'patient' : (newUser.role === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
-      setGlobalMode(newMode);
-      setArticleMode(newMode);
-    } else {
-      const data = userDoc.data() as DbUser;
-      const updateData: any = { lastLogin: new Date().toISOString() };
-      
-      // Migrate legacy roles or force admin
-      if (user.email === 'agbotonfrejuste@gmail.com' && (data.role !== 'admin' || data.profileType !== 'medecin_nuc')) {
-        updateData.role = 'admin';
-        updateData.profileType = 'medecin_nuc';
-      } else if (['free', 'pro', 'expert', 'institution'].includes(data.role as string)) {
-        updateData.role = 'patient';
-        updateData.profileType = 'patient';
-      }
-      
       if (planIntent && planIntent !== 'patient') {
-        updateData.intendedPlan = planIntent;
+        updates.intendedPlan = planIntent;
       }
-      await setDoc(userDocRef, updateData, { merge: true });
-      
-      // Update local state if role was migrated
-      const finalRole = updateData.role || data.role;
-      setUserProfile(finalRole);
-      const newMode = finalRole === 'patient' ? 'patient' : (finalRole === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
+      await setDoc(userDocRef, updates, { merge: true });
+      const merged: DbUser = { ...data, ...updates };
+      setDbUser(merged);
+      setUserProfile(merged.role);
+      const newMode = deriveMode(merged.role);
       setGlobalMode(newMode);
       setArticleMode(newMode);
-    }
-  };
+    },
+    []
+  );
 
-  const loginWithGoogle = async (profileType: UserProfile = 'patient', planIntent: string = 'patient') => {
-    try {
+  const loginWithGoogle = useCallback(
+    async (profileType: ArticleMode = 'patient', planIntent: string = 'patient') => {
       const provider = new GoogleAuthProvider();
       provider.setCustomParameters({ prompt: 'select_account' });
       const result = await signInWithPopup(auth, provider);
-      await handleAuthResult(result.user, profileType, planIntent);
-    } catch (error) {
-      console.error("Error signing in with Google:", error);
-      throw error;
-    }
-  };
+      await ensureUserDoc(result.user, profileType, planIntent);
+    },
+    [ensureUserDoc]
+  );
 
-  const loginWithEmail = async (email: string, password: string, profileType: UserProfile = 'patient', planIntent: string = 'patient') => {
-    try {
+  const loginWithEmail = useCallback(
+    async (email: string, password: string, profileType: ArticleMode = 'patient', planIntent: string = 'patient') => {
       const { signInWithEmailAndPassword } = await import('firebase/auth');
       const result = await signInWithEmailAndPassword(auth, email, password);
-      await handleAuthResult(result.user, profileType, planIntent);
-    } catch (error) {
-      console.error("Error signing in with Email:", error);
-      throw error;
-    }
-  };
+      await ensureUserDoc(result.user, profileType, planIntent);
+    },
+    [ensureUserDoc]
+  );
 
-  const signupWithEmail = async (email: string, password: string, profileType: UserProfile = 'patient', planIntent: string = 'patient') => {
-    try {
+  const signupWithEmail = useCallback(
+    async (email: string, password: string, profileType: ArticleMode = 'patient', planIntent: string = 'patient') => {
       const { createUserWithEmailAndPassword } = await import('firebase/auth');
       const result = await createUserWithEmailAndPassword(auth, email, password);
-      await handleAuthResult(result.user, profileType, planIntent);
-    } catch (error) {
-      console.error("Error signing up with Email:", error);
-      throw error;
-    }
-  };
+      await ensureUserDoc(result.user, profileType, planIntent);
+    },
+    [ensureUserDoc]
+  );
 
-  const openAuthModal = (intent?: string) => {
-    setAuthIntent(intent || null);
+  const openAuthModal = useCallback((intent?: string) => {
+    setAuthIntent(intent ?? null);
     setIsAuthModalOpen(true);
-  };
+  }, []);
 
-  const closeAuthModal = () => {
+  const closeAuthModal = useCallback(() => {
     setIsAuthModalOpen(false);
     setTimeout(() => setAuthIntent(null), 300);
-  };
+  }, []);
 
-  const logout = async () => {
-    try {
-      await signOut(auth);
-      router.push('/'); // Redirect to landing on logout
-    } catch (error) {
-      console.error("Error signing out:", error);
-    }
-  };
+  const logout = useCallback(async () => {
+    await signOut(auth);
+    router.push('/');
+  }, [router]);
 
-  const showLanding = () => {
+  const showLanding = useCallback(() => {
     setSearchQuery('');
     setIsMobileMenuOpen(false);
     router.push('/');
-  };
+  }, [router]);
 
-  const showHome = () => {
+  const showHome = useCallback(() => {
     setSearchQuery('');
     setIsMobileMenuOpen(false);
     router.push('/home');
-  };
+  }, [router]);
 
-  const showCategory = (cat: Category) => {
-    setSearchQuery('');
-    setIsMobileMenuOpen(false);
-    if (cat === 'dashboard') {
-      router.push('/dashboard');
-    } else if (cat === 'annuaire') {
-      router.push('/annuaire');
-    } else if (cat === 'contact') {
-      router.push('/contact');
-    } else if (cat === 'about') {
-      router.push('/mentions-legales');
-    } else {
-      router.push(`/categories/${cat}`);
-    }
-  };
+  const showCategory = useCallback(
+    (cat: Category) => {
+      setSearchQuery('');
+      setIsMobileMenuOpen(false);
+      switch (cat) {
+        case 'dashboard':
+          router.push('/dashboard');
+          break;
+        case 'annuaire':
+          router.push('/annuaire');
+          break;
+        case 'contact':
+          router.push('/contact');
+          break;
+        case 'about':
+          router.push('/mentions-legales');
+          break;
+        default:
+          router.push(`/categories/${cat}`);
+      }
+    },
+    [router]
+  );
 
-  const openArticle = (id: string) => {
-    setArticleMode(globalMode);
-    trackArticleView(id);
-    setIsMobileMenuOpen(false);
-    router.push(`/articles/${id}`);
-  };
+  const trackArticleView = useCallback(
+    async (id: string) => {
+      if (!authUser || !dbUser) return;
+      try {
+        const currentRecent = dbUser.recentArticles ?? [];
+        const newRecent = [id, ...currentRecent.filter((aId) => aId !== id)].slice(0, 20);
+        const userDocRef = doc(db, 'users', authUser.uid);
+        await updateDoc(userDocRef, { recentArticles: newRecent });
+        setDbUser({ ...dbUser, recentArticles: newRecent });
+      } catch (err) {
+        console.warn('[atlas] trackArticleView a échoué', err);
+      }
+    },
+    [authUser, dbUser]
+  );
 
-  const showAdmin = () => {
+  const openArticle = useCallback(
+    (id: string) => {
+      setArticleMode(globalMode);
+      void trackArticleView(id);
+      setIsMobileMenuOpen(false);
+      router.push(`/articles/${id}`);
+    },
+    [globalMode, router, trackArticleView]
+  );
+
+  const showAdmin = useCallback(() => {
     setSearchQuery('');
     setIsMobileMenuOpen(false);
     router.push('/admin');
-  };
+  }, [router]);
 
-  const showProfile = () => {
+  const showProfile = useCallback(() => {
     setSearchQuery('');
     setIsMobileMenuOpen(false);
     router.push('/profile');
-  };
+  }, [router]);
 
-  const handleGlobalMode = (mode: ArticleMode) => {
-    setGlobalMode(mode);
-    if (pathname.startsWith('/articles/')) {
-      setArticleMode(mode);
-    }
-  };
+  const handleGlobalMode = useCallback(
+    (mode: ArticleMode) => {
+      setGlobalMode(mode);
+      if (pathname?.startsWith('/articles/')) setArticleMode(mode);
+    },
+    [pathname]
+  );
 
-  const handleUserProfile = (profile: UserProfile) => {
-    setUserProfile(profile);
-    const newMode = profile === 'patient' ? 'patient' : (profile === 'medecin_non_nuc' ? 'medecin_non_nuc' : 'medecin_nuc');
-    setGlobalMode(newMode);
-    if (pathname.startsWith('/articles/')) {
-      setArticleMode(newMode);
-    }
-  };
+  const handleUserProfile = useCallback(
+    (profile: UserProfile) => {
+      setUserProfile(profile);
+      const newMode = deriveMode(profile);
+      setGlobalMode(newMode);
+      if (pathname?.startsWith('/articles/')) setArticleMode(newMode);
+    },
+    [pathname]
+  );
 
-  const trackArticleView = async (id: string) => {
-    if (!authUser || !dbUser) return;
-    try {
-      const currentRecent = dbUser.recentArticles || [];
-      const newRecent = [id, ...currentRecent.filter(aId => aId !== id)].slice(0, 20); // Keep last 20
-      
-      const userDocRef = doc(db, 'users', authUser.uid);
-      await setDoc(userDocRef, { recentArticles: newRecent }, { merge: true });
-      setDbUser({ ...dbUser, recentArticles: newRecent });
-    } catch (error) {
-      console.error("Error tracking article view:", error);
-    }
-  };
-
-  const toggleFavorite = async (id: string) => {
-    if (!authUser || !dbUser) return;
-    try {
-      const currentFavorites = dbUser.favorites || [];
-      const isFavorite = currentFavorites.includes(id);
-      const newFavorites = isFavorite 
-        ? currentFavorites.filter(aId => aId !== id)
-        : [...currentFavorites, id];
-      
-      const userDocRef = doc(db, 'users', authUser.uid);
-      await setDoc(userDocRef, { favorites: newFavorites }, { merge: true });
-      setDbUser({ ...dbUser, favorites: newFavorites });
-    } catch (error) {
-      console.error("Error toggling favorite:", error);
-    }
-  };
+  const toggleFavorite = useCallback(
+    async (id: string) => {
+      if (!authUser || !dbUser) return;
+      try {
+        const currentFavorites = dbUser.favorites ?? [];
+        const isFavorite = currentFavorites.includes(id);
+        const newFavorites = isFavorite
+          ? currentFavorites.filter((aId) => aId !== id)
+          : [...currentFavorites, id];
+        const userDocRef = doc(db, 'users', authUser.uid);
+        await updateDoc(userDocRef, { favorites: newFavorites });
+        setDbUser({ ...dbUser, favorites: newFavorites });
+      } catch (err) {
+        console.warn('[atlas] toggleFavorite a échoué', err);
+      }
+    },
+    [authUser, dbUser]
+  );
 
   return (
     <AtlasContext.Provider

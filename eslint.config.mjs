@@ -1,11 +1,14 @@
-import { defineConfig } from "eslint/config";
-import next from "eslint-config-next";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { defineConfig } from 'eslint/config';
+import next from 'eslint-config-next';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-export default defineConfig([{
+export default defineConfig([
+  {
     extends: [...next],
-}]);
+    rules: {
+      // Apostrophes/guillemets non échappés : tolérés (style de rédaction française).
+      'react/no-unescaped-entities': 'off',
+      // Permet le hook conditionnel docstring next/image alt = '' sur images décoratives.
+      '@next/next/no-img-element': 'warn',
+    },
+  },
+]);
