@@ -47,10 +47,6 @@ service cloud.firestore {
       return v is string && v.size() < 200 && v.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
     }
 
-    function asKeys(map) {
-      return map.keys();
-    }
-
     // ============================================================
     // users — profils utilisateurs
     // ============================================================
