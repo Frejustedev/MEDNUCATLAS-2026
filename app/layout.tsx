@@ -10,6 +10,9 @@ const cormorant = Cormorant_Garamond({
   weight: ['300', '400', '600'],
   variable: '--font-cormorant',
   display: 'swap',
+  preload: true,
+  adjustFontFallback: false,
+  fallback: ['system-ui', 'arial'],
 });
 
 const dmSans = DM_Sans({
@@ -17,6 +20,9 @@ const dmSans = DM_Sans({
   weight: ['300', '400', '500'],
   variable: '--font-dm-sans',
   display: 'swap',
+  preload: true,
+  adjustFontFallback: false,
+  fallback: ['system-ui', 'arial'],
 });
 
 const dmMono = DM_Mono({
@@ -24,6 +30,9 @@ const dmMono = DM_Mono({
   weight: ['400', '500'],
   variable: '--font-dm-mono',
   display: 'swap',
+  preload: true,
+  adjustFontFallback: false,
+  fallback: ['system-ui', 'arial'],
 });
 
 const APP_URL = process.env.APP_URL || 'http://localhost:3000';
