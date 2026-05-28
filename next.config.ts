@@ -1,10 +1,15 @@
 import type { NextConfig } from 'next';
+import path from 'node:path';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
   productionBrowserSourceMaps: false,
+
+  // Évite l'inférence erronée du workspace root quand un lockfile parent
+  // existe (cas Windows si C:\Users\<user>\package-lock.json traîne).
+  outputFileTracingRoot: path.resolve(__dirname),
 
   eslint: {
     // Lint réellement pendant le build — pas d'ignore en sourdine.

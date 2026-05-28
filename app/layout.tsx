@@ -1,43 +1,120 @@
-import type {Metadata} from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Cormorant_Garamond, DM_Sans, DM_Mono } from 'next/font/google';
-import './globals.css'; // Global styles
+import './globals.css';
 import { AtlasProvider } from '@/lib/AtlasContext';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['300', '400', '600'],
   variable: '--font-cormorant',
+  display: 'swap',
 });
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
   variable: '--font-dm-sans',
+  display: 'swap',
 });
 
 const dmMono = DM_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
   variable: '--font-dm-mono',
+  display: 'swap',
 });
 
-import { ThemeProvider } from '@/components/ThemeProvider';
+const APP_URL = process.env.APP_URL || 'http://localhost:3000';
 
 export const metadata: Metadata = {
-  title: 'NucleAtlas',
-  description: 'Encyclopédie de référence en médecine nucléaire',
+  metadataBase: new URL(APP_URL),
+  title: {
+    default: 'NucleAtlas — Encyclopédie de médecine nucléaire',
+    template: '%s | NucleAtlas',
+  },
+  description:
+    "NucleAtlas est l'encyclopédie collaborative francophone de référence en médecine nucléaire. Articles adaptés au patient, au médecin prescripteur et au médecin nucléaire.",
+  applicationName: 'NucleAtlas',
+  keywords: [
+    'médecine nucléaire',
+    'TEP',
+    'TEP-TDM',
+    'PET-CT',
+    'scintigraphie',
+    'radiopharmacie',
+    'théranostique',
+    'PSMA',
+    'iode-131',
+    'encyclopédie médicale',
+    'Afrique francophone',
+  ],
+  authors: [{ name: 'Dr Agboton & contributeurs' }],
+  creator: 'NucleAtlas',
+  publisher: 'NucleAtlas',
+  category: 'health',
+  alternates: {
+    canonical: '/',
+    languages: { 'fr-FR': '/' },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    siteName: 'NucleAtlas',
+    title: 'NucleAtlas — Encyclopédie de médecine nucléaire',
+    description:
+      'Encyclopédie collaborative francophone de référence en médecine nucléaire. Contenu adapté à votre profil (patient, médecin, médecin nucléaire).',
+    url: APP_URL,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@nucleatlas',
+    title: 'NucleAtlas — Encyclopédie de médecine nucléaire',
+    description: 'Encyclopédie collaborative francophone de référence en médecine nucléaire.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.webmanifest',
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0B0F19' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${cormorant.variable} ${dmSans.variable} ${dmMono.variable}`} suppressHydrationWarning>
+    <html
+      lang="fr"
+      className={`${cormorant.variable} ${dmSans.variable} ${dmMono.variable}`}
+      suppressHydrationWarning
+    >
       <body suppressHydrationWarning className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ErrorBoundary>
-            <AtlasProvider>
-              {children}
-            </AtlasProvider>
+            <AtlasProvider>{children}</AtlasProvider>
           </ErrorBoundary>
         </ThemeProvider>
       </body>

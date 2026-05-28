@@ -1,39 +1,108 @@
 import React from 'react';
 import { ArticleView } from '@/components/ArticleView';
 import { Metadata } from 'next';
-import { db } from '@/lib/firebase';
-import { doc, getDoc } from 'firebase/firestore';
+import { getAdminDb } from '@/lib/firebase-admin';
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
-  const resolvedParams = await params;
-  const id = resolvedParams.id;
-  
+type Params = { id: string };
+
+async function getArticleSummary(id: string) {
   try {
-    const docRef = doc(db, 'articles', id);
-    const docSnap = await getDoc(docRef);
-    
-    if (docSnap.exists()) {
-      const data = docSnap.data();
-      return {
-        title: `${data.title} | NucleAtlas`,
-        description: data.excerpt || `Découvrez l'article ${data.title} sur NucleAtlas, l'encyclopédie de médecine nucléaire.`,
-        openGraph: {
-          title: data.title,
-          description: data.excerpt,
-          type: 'article',
-        }
-      };
-    }
-  } catch (error) {
-    console.error("Error fetching article metadata:", error);
+    const snap = await getAdminDb().collection('articles').doc(id).get();
+    if (!snap.exists) return null;
+    const data = snap.data() as Record<string, unknown>;
+    return {
+      title: (data.title as string) || 'Article',
+      excerpt: (data.excerpt as string) || '',
+      cat: (data.cat as string) || '',
+      catLabel: (data.catLabel as string) || '',
+      tags: (data.tags as string[]) || [],
+      authors: (data.authors as string[]) || [],
+      difficulty: (data.difficulty as string) || '',
+      updatedAt: data.updatedAt as { toDate?: () => Date } | undefined,
+      createdAt: data.createdAt as { toDate?: () => Date } | undefined,
+    };
+  } catch (err) {
+    console.error('[articles/[id]] metadata fetch error:', err);
+    return null;
   }
-  
+}
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { id } = await params;
+  const article = await getArticleSummary(id);
+  const base = process.env.APP_URL ? new URL(process.env.APP_URL) : undefined;
+
+  if (!article) {
+    return {
+      metadataBase: base,
+      title: 'Article introuvable | NucleAtlas',
+      description: 'Article non trouvé sur NucleAtlas.',
+      robots: { index: false, follow: true },
+    };
+  }
+
   return {
-    title: 'Article | NucleAtlas',
-    description: 'Article sur NucleAtlas, l\'encyclopédie collaborative de médecine nucléaire.'
+    metadataBase: base,
+    title: `${article.title} | NucleAtlas`,
+    description:
+      article.excerpt ||
+      `Découvrez l'article "${article.title}" sur NucleAtlas, encyclopédie collaborative de médecine nucléaire.`,
+    keywords: article.tags,
+    authors: article.authors.map((name) => ({ name })),
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      type: 'article',
+      siteName: 'NucleAtlas',
+      locale: 'fr_FR',
+      url: base ? `${base.origin}/articles/${id}` : undefined,
+      tags: article.tags,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.excerpt,
+    },
+    alternates: {
+      canonical: base ? `${base.origin}/articles/${id}` : undefined,
+    },
   };
 }
 
-export default function ArticlePage() {
-  return <ArticleView />;
+export default async function ArticlePage({ params }: { params: Promise<Params> }) {
+  const { id } = await params;
+  const article = await getArticleSummary(id);
+
+  // JSON-LD pour SERP médicale + Knowledge Graph
+  const jsonLd = article
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'MedicalWebPage',
+        name: article.title,
+        description: article.excerpt,
+        about: article.catLabel,
+        inLanguage: 'fr',
+        author: article.authors.length > 0 ? article.authors.map((name) => ({ '@type': 'Person', name })) : undefined,
+        publisher: {
+          '@type': 'Organization',
+          name: 'NucleAtlas',
+        },
+        dateModified: article.updatedAt?.toDate ? article.updatedAt.toDate().toISOString() : undefined,
+        datePublished: article.createdAt?.toDate ? article.createdAt.toDate().toISOString() : undefined,
+        keywords: article.tags?.join(', '),
+      }
+    : null;
+
+  return (
+    <>
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          // Le contenu vient de notre serveur, valeurs simples — sécurisé.
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
+      <ArticleView />
+    </>
+  );
 }

@@ -6,9 +6,10 @@ import { auth, db } from '@/lib/firebase';
 import { doc, setDoc, deleteDoc, getDoc, collection, getDocs, serverTimestamp, updateDoc, query, limit, orderBy, startAfter, QueryDocumentSnapshot, DocumentData } from 'firebase/firestore';
 import { Article, ArticleContent, Category, MENU_STRUCTURE } from '@/lib/data';
 import { articleImportSchema, articleSchema } from '@/lib/schemas';
-import { Save, Trash2, Plus, Users, FileText, LayoutDashboard, Search, X, FileJson, Sparkles, ShieldAlert } from 'lucide-react';
+import { Save, Trash2, Plus, Users, FileText, LayoutDashboard, Search, X, FileJson, Sparkles, ShieldAlert, MailOpen, UserCheck, Check, XCircle } from 'lucide-react';
 import { ContentEditor } from './ContentEditor';
 import { AIGenerator } from './AIGenerator';
+import { apiFetch, ApiError } from '@/lib/api-client';
 
 interface AdminUser {
   id: string;
@@ -17,6 +18,26 @@ interface AdminUser {
   role?: string;
   profileType?: string;
   displayName?: string;
+  createdAt?: string;
+}
+
+interface ContactMessage {
+  id: string;
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+  status: string;
+  createdAt?: string;
+}
+
+interface RoleRequest {
+  id: string;
+  uid: string;
+  email: string;
+  requestedRole: 'medecin_non_nuc' | 'medecin_nuc';
+  justification: string;
+  status: string;
   createdAt?: string;
 }
 
@@ -31,7 +52,11 @@ const USERS_PAGE_SIZE = 25;
 
 export function AdminPanel() {
   const { articles, showHome, dbUser, setDbUser, setUserProfile, setGlobalMode, setArticleMode } = useAtlas();
-  const [activeTab, setActiveTab] = useState<'overview' | 'articles' | 'users' | 'messages'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'articles' | 'users' | 'messages' | 'requests'>('overview');
+  const [contactMessages, setContactMessages] = useState<ContactMessage[]>([]);
+  const [loadingMessages, setLoadingMessages] = useState(false);
+  const [roleRequests, setRoleRequests] = useState<RoleRequest[]>([]);
+  const [loadingRoleRequests, setLoadingRoleRequests] = useState(false);
 
   const [editingId, setEditingId] = useState<string | null>(null);
   const [formData, setFormData] = useState<Partial<Article>>({});
@@ -102,6 +127,75 @@ export function AdminPanel() {
       void fetchUsers(true);
     }
   }, [isAdmin, activeTab, users.length, fetchUsers]);
+
+  const fetchContactMessages = useCallback(async () => {
+    setLoadingMessages(true);
+    try {
+      const snap = await getDocs(
+        query(collection(db, 'contact_messages'), orderBy('createdAt', 'desc'), limit(50))
+      );
+      const list: ContactMessage[] = snap.docs.map((d) => {
+        const data = d.data() as Record<string, unknown>;
+        const created = data.createdAt as { toDate?: () => Date } | undefined;
+        return {
+          id: d.id,
+          name: (data.name as string) ?? '',
+          email: (data.email as string) ?? '',
+          subject: (data.subject as string) ?? '',
+          message: (data.message as string) ?? '',
+          status: (data.status as string) ?? 'new',
+          createdAt: created?.toDate ? created.toDate().toLocaleString('fr-FR') : undefined,
+        };
+      });
+      setContactMessages(list);
+    } catch (error) {
+      showMessage('error', 'Impossible de charger les messages.');
+      console.error('[admin] fetchContactMessages', error);
+    } finally {
+      setLoadingMessages(false);
+    }
+  }, []);
+
+  const fetchRoleRequests = useCallback(async () => {
+    setLoadingRoleRequests(true);
+    try {
+      const res = await apiFetch<{ requests: RoleRequest[] }>('/api/role-request', { method: 'GET' });
+      setRoleRequests(res.requests);
+    } catch (error) {
+      showMessage('error', error instanceof ApiError ? error.message : 'Erreur de chargement.');
+    } finally {
+      setLoadingRoleRequests(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isAdmin) return;
+    if (activeTab === 'messages' && contactMessages.length === 0) void fetchContactMessages();
+    if (activeTab === 'requests' && roleRequests.length === 0) void fetchRoleRequests();
+  }, [isAdmin, activeTab, contactMessages.length, roleRequests.length, fetchContactMessages, fetchRoleRequests]);
+
+  const handleRoleRequestAction = async (id: string, action: 'approve' | 'reject') => {
+    try {
+      await apiFetch('/api/role-request', {
+        method: 'PATCH',
+        body: JSON.stringify({ id, action }),
+      });
+      setRoleRequests((prev) => prev.filter((r) => r.id !== id));
+      showMessage('success', action === 'approve' ? 'Demande approuvée.' : 'Demande rejetée.');
+    } catch (error) {
+      showMessage('error', error instanceof ApiError ? error.message : 'Erreur.');
+    }
+  };
+
+  const markMessageRead = async (id: string) => {
+    try {
+      await updateDoc(doc(db, 'contact_messages', id), { status: 'read' });
+      setContactMessages((prev) => prev.map((m) => (m.id === id ? { ...m, status: 'read' } : m)));
+    } catch (error) {
+      showMessage('error', 'Impossible de marquer comme lu.');
+      console.error('[admin] markMessageRead', error);
+    }
+  };
 
   if (isAdmin === null) {
     return (
@@ -388,6 +482,18 @@ export function AdminPanel() {
             icon={<Users className="w-4 h-4" aria-hidden="true" />}
             label="Utilisateurs"
           />
+          <AdminNavButton
+            active={activeTab === 'requests'}
+            onClick={() => { setActiveTab('requests'); setEditingId(null); }}
+            icon={<UserCheck className="w-4 h-4" aria-hidden="true" />}
+            label="Demandes de rôle"
+          />
+          <AdminNavButton
+            active={activeTab === 'messages'}
+            onClick={() => { setActiveTab('messages'); setEditingId(null); }}
+            icon={<MailOpen className="w-4 h-4" aria-hidden="true" />}
+            label="Messages"
+          />
         </nav>
       </div>
 
@@ -491,6 +597,116 @@ export function AdminPanel() {
                 >
                   {loadingUsers ? 'Chargement…' : 'Charger plus'}
                 </button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'requests' && (
+          <div className="flex-1 overflow-y-auto p-8">
+            <div className="flex items-center justify-between mb-8">
+              <h1 className="text-3xl font-serif text-text-main">Demandes de rôle en attente</h1>
+              <button
+                onClick={() => void fetchRoleRequests()}
+                disabled={loadingRoleRequests}
+                className="px-3 py-1.5 bg-bg3 border border-border-main rounded-md text-sm text-text2 hover:text-text-main disabled:opacity-50"
+              >
+                {loadingRoleRequests ? 'Chargement…' : 'Rafraîchir'}
+              </button>
+            </div>
+            {roleRequests.length === 0 ? (
+              <div className="text-center py-16 bg-bg2 border border-border-main rounded-xl">
+                <UserCheck className="w-10 h-10 text-text3 mx-auto mb-3" aria-hidden="true" />
+                <p className="text-text2">Aucune demande en attente.</p>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {roleRequests.map((r) => (
+                  <div key={r.id} className="bg-bg2 border border-border-main rounded-xl p-5">
+                    <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+                      <div>
+                        <div className="font-medium text-text-main">{r.email}</div>
+                        <div className="text-xs text-text3">
+                          Demande : <span className="font-mono text-teal">{r.requestedRole}</span>
+                          {r.createdAt && <> · {r.createdAt}</>}
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => void handleRoleRequestAction(r.id, 'approve')}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal/10 text-teal rounded-md text-sm font-medium hover:bg-teal/20 transition-colors focus:outline-none focus:ring-2 focus:ring-teal"
+                        >
+                          <Check className="w-4 h-4" aria-hidden="true" /> Approuver
+                        </button>
+                        <button
+                          onClick={() => void handleRoleRequestAction(r.id, 'reject')}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-500/10 text-red-500 rounded-md text-sm font-medium hover:bg-red-500/20 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500"
+                        >
+                          <XCircle className="w-4 h-4" aria-hidden="true" /> Refuser
+                        </button>
+                      </div>
+                    </div>
+                    <p className="text-sm text-text2 whitespace-pre-wrap leading-relaxed">{r.justification}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {activeTab === 'messages' && (
+          <div className="flex-1 overflow-y-auto p-8">
+            <div className="flex items-center justify-between mb-8">
+              <h1 className="text-3xl font-serif text-text-main">Messages reçus</h1>
+              <button
+                onClick={() => void fetchContactMessages()}
+                disabled={loadingMessages}
+                className="px-3 py-1.5 bg-bg3 border border-border-main rounded-md text-sm text-text2 hover:text-text-main disabled:opacity-50"
+              >
+                {loadingMessages ? 'Chargement…' : 'Rafraîchir'}
+              </button>
+            </div>
+            {contactMessages.length === 0 ? (
+              <div className="text-center py-16 bg-bg2 border border-border-main rounded-xl">
+                <MailOpen className="w-10 h-10 text-text3 mx-auto mb-3" aria-hidden="true" />
+                <p className="text-text2">Aucun message.</p>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {contactMessages.map((m) => (
+                  <div
+                    key={m.id}
+                    className={`bg-bg2 border rounded-xl p-5 ${m.status === 'new' ? 'border-teal/40' : 'border-border-main'}`}
+                  >
+                    <div className="flex flex-wrap items-start justify-between gap-3 mb-2">
+                      <div>
+                        <div className="font-medium text-text-main">
+                          {m.name}{' '}
+                          <a href={`mailto:${m.email}`} className="text-xs text-teal hover:underline ml-1">
+                            &lt;{m.email}&gt;
+                          </a>
+                        </div>
+                        <div className="text-xs text-text3 mt-0.5">
+                          Sujet : <span className="text-text2">{m.subject}</span>
+                          {m.createdAt && <> · {m.createdAt}</>}
+                        </div>
+                      </div>
+                      {m.status === 'new' ? (
+                        <button
+                          onClick={() => void markMessageRead(m.id)}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-teal/10 text-teal rounded-md text-xs font-medium hover:bg-teal/20 transition-colors focus:outline-none focus:ring-2 focus:ring-teal"
+                        >
+                          Marquer lu
+                        </button>
+                      ) : (
+                        <span className="text-xs text-text3 px-2 py-1 bg-bg3 rounded">lu</span>
+                      )}
+                    </div>
+                    <p className="text-sm text-text2 whitespace-pre-wrap leading-relaxed mt-3 bg-bg p-3 rounded border border-border-main">
+                      {m.message}
+                    </p>
+                  </div>
+                ))}
               </div>
             )}
           </div>
