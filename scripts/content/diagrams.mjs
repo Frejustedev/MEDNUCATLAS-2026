@@ -321,3 +321,59 @@ export const DATSCAN_STRIATUM = `
   <text x="440" y="225" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">putamen amputé → « point » asymétrique</text>
   <text x="300" y="262" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Perte des terminaisons dopaminergiques (transporteur DAT)</text>
 </svg>`;
+
+// ── Détection du ganglion sentinelle ────────────────────────────────────────
+export const SENTINEL_NODE = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <circle cx="110" cy="180" r="30" fill="${RED}" fill-opacity="0.12" stroke="${RED}" stroke-width="2"/>
+  <text x="110" y="184" text-anchor="middle" font-size="11" fill="currentColor">tumeur</text>
+  <text x="110" y="232" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.7">injection péri-tumorale</text>
+  <circle cx="110" cy="155" r="3" fill="${TEAL}"/>
+  <circle cx="125" cy="168" r="3" fill="${TEAL}"/>
+  <path d="M135 175 C 200 150, 240 150, 290 160" fill="none" stroke="${TEAL}" stroke-width="2.5"/>
+  <polygon points="290,160 280,156 282,166" fill="${TEAL}"/>
+  <text x="210" y="135" text-anchor="middle" font-size="10" fill="${TEAL}">drainage lymphatique</text>
+  <circle cx="320" cy="162" r="22" fill="${AMBER}" fill-opacity="0.5" stroke="${AMBER}" stroke-width="2"/>
+  <text x="320" y="166" text-anchor="middle" font-size="10" fill="currentColor">1er relais</text>
+  <text x="320" y="205" text-anchor="middle" font-size="11" fill="${AMBER}">ganglion sentinelle</text>
+  <path d="M342 158 C 390 150, 420 150, 450 156" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="470" cy="155" r="16" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="510" cy="180" r="14" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <text x="500" y="215" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">relais suivants</text>
+  <text x="300" y="285" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Le 1er ganglion drainant (sentinelle) est repéré par radiotraceur (± colorant) puis prélevé</text>
+</svg>`;
+
+// ── SIRT — radioembolisation hépatique (90Y) ────────────────────────────────
+export const SIRT_LIVER = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <path d="M120 90 C 90 90, 80 200, 180 230 C 320 270, 470 240, 480 160 C 488 100, 380 70, 300 78 C 220 86, 160 90, 120 90 Z" fill="${RED}" fill-opacity="0.05" stroke="currentColor" stroke-width="2" opacity="0.6"/>
+  <text x="430" y="110" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.7">foie</text>
+  <circle cx="250" cy="160" r="34" fill="${RED}" fill-opacity="0.15" stroke="${RED}" stroke-width="2"/>
+  <text x="250" y="164" text-anchor="middle" font-size="11" fill="currentColor">tumeur</text>
+  <path d="M40 150 C 110 150, 150 155, 215 158" fill="none" stroke="${AMBER}" stroke-width="3"/>
+  <polygon points="215,158 205,153 206,164" fill="${AMBER}"/>
+  <text x="95" y="140" text-anchor="middle" font-size="10" fill="${AMBER}">cathéter (artère hépatique)</text>
+  <circle cx="245" cy="150" r="3" fill="${TEAL}"/><circle cx="258" cy="165" r="3" fill="${TEAL}"/>
+  <circle cx="240" cy="172" r="3" fill="${TEAL}"/><circle cx="262" cy="150" r="3" fill="${TEAL}"/>
+  <circle cx="252" cy="178" r="3" fill="${TEAL}"/>
+  <text x="250" y="215" text-anchor="middle" font-size="10" fill="${TEAL}">microsphères ⁹⁰Y</text>
+  <text x="300" y="285" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Les microsphères, injectées dans l'artère, se logent dans la tumeur et l'irradient de l'intérieur</text>
+</svg>`;
+
+// ── Vidange gastrique — courbe de rétention ─────────────────────────────────
+export const GASTRIC_EMPTYING = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <line x1="70" y1="250" x2="560" y2="250" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="70" y1="40" x2="70" y2="250" stroke="currentColor" stroke-width="1.5"/>
+  <text x="315" y="285" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">temps (min)</text>
+  <text x="34" y="150" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7" transform="rotate(-90 34 150)">% rétention</text>
+  <text x="62" y="55" text-anchor="end" font-size="10" fill="currentColor" opacity="0.6">100</text>
+  <text x="62" y="160" text-anchor="end" font-size="10" fill="currentColor" opacity="0.6">50</text>
+  <path d="M70 50 C 160 70, 230 120, 300 150 C 380 185, 470 225, 540 240" fill="none" stroke="${TEAL}" stroke-width="2.5"/>
+  <text x="420" y="200" font-size="11" fill="${TEAL}">vidange normale</text>
+  <path d="M70 50 C 170 58, 260 70, 340 95 C 430 122, 500 150, 540 165" fill="none" stroke="${RED}" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="430" y="120" font-size="11" fill="${RED}">gastroparésie (retard)</text>
+  <line x1="300" y1="150" x2="300" y2="250" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.5"/>
+  <text x="300" y="240" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.6">T½</text>
+  <text x="300" y="35" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.75">Mesure du temps de demi-vidange d'un repas marqué au ⁹⁹ᵐTc</text>
+</svg>`;

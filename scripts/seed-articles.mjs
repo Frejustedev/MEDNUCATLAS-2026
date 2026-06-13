@@ -14,8 +14,9 @@ import { initializeApp, cert, getApps } from 'firebase-admin/app';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 import { articles as batch1 } from './content/batch1.mjs';
 import { articles as batch2 } from './content/batch2.mjs';
+import { articles as batch3 } from './content/batch3.mjs';
 
-const articles = [...batch1, ...batch2];
+const articles = [...batch1, ...batch2, ...batch3];
 
 const DRY = process.argv.includes('--dry');
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\//, '')), '..');
