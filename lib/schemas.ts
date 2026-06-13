@@ -28,6 +28,14 @@ export const sectionSchema = z.object({
   title: z.string().min(1).max(200),
   text: z.string().max(20000).optional(),
   list: sectionListSchema,
+  figure: z
+    .object({
+      svg: z.string().max(40000).optional(),
+      imageUrl: z.string().url().max(1000).optional(),
+      alt: z.string().min(1).max(500),
+      caption: z.string().max(500).optional(),
+    })
+    .optional(),
   infoBox: infoBoxSchema.optional(),
   stats: z
     .array(

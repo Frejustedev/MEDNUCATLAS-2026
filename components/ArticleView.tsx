@@ -8,6 +8,15 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize';
 import { useParams } from 'next/navigation';
+import DOMPurify from 'isomorphic-dompurify';
+
+// Sanitise un SVG de figure (autorise les balises SVG, retire script / handlers).
+function sanitizeSvg(svg: string): string {
+  return DOMPurify.sanitize(svg, {
+    USE_PROFILES: { svg: true, svgFilters: true },
+    ADD_ATTR: ['viewBox', 'preserveAspectRatio'],
+  });
+}
 
 export function ArticleView() {
   const { showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
@@ -169,7 +178,25 @@ export function ArticleView() {
                 <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{s.text}</ReactMarkdown>
               </div>
             )}
-            
+
+            {s.figure && (s.figure.svg || s.figure.imageUrl) && (
+              <figure className="my-7">
+                {s.figure.svg ? (
+                  <div
+                    className="w-full overflow-x-auto rounded-xl border border-border-main bg-bg2 p-4 md:p-6 flex justify-center text-text-main [&_svg]:max-w-full [&_svg]:h-auto"
+                    role="img"
+                    aria-label={s.figure.alt}
+                    dangerouslySetInnerHTML={{ __html: sanitizeSvg(s.figure.svg) }}
+                  />
+                ) : null}
+                {s.figure.caption && (
+                  <figcaption className="text-[11px] text-text3 mt-2.5 text-center italic px-4">
+                    {s.figure.caption}
+                  </figcaption>
+                )}
+              </figure>
+            )}
+
             {s.infoBox && (
               <div className={`my-6 p-4 rounded-lg border flex gap-4 ${
                 s.infoBox.type === 'info' ? 'bg-blue-500/10 border-blue-500/20 text-blue-400' :

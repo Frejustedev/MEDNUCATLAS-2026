@@ -87,10 +87,21 @@ export const MENU_STRUCTURE = [
 
 export type ArticleMode = 'patient' | 'medecin_non_nuc' | 'medecin_nuc';
 
+export interface Figure {
+  // Schéma vectoriel original (préféré : libre de droits, adapté au thème).
+  svg?: string;
+  // Image bitmap optionnelle (URL distante autorisée par next.config).
+  imageUrl?: string;
+  // Texte alternatif obligatoire pour l'accessibilité.
+  alt: string;
+  caption?: string;
+}
+
 export interface Section {
   title: string;
   text?: string;
   list?: string[];
+  figure?: Figure;
   infoBox?: {
     type: 'info' | 'warning' | 'tip';
     title: string;

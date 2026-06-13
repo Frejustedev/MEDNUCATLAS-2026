@@ -258,6 +258,9 @@ export function AdminPanel() {
     try {
       const payload = {
         ...parsed.data,
+        // Firestore interdit les tableaux imbriqués (tables : rows = string[][]).
+        // On sérialise le contenu en JSON ; la lecture (AtlasContext) parse les deux formats.
+        content: JSON.stringify(parsed.data.content),
         updatedAt: serverTimestamp(),
         ...(editingId === 'new'
           ? { createdAt: serverTimestamp(), authorId: auth.currentUser?.uid ?? '' }
