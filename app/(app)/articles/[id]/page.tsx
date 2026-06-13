@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!article) {
     return {
       metadataBase: base,
-      title: 'Article introuvable | NucleAtlas',
+      title: { absolute: 'Article introuvable | NucleAtlas' },
       description: 'Article non trouvé sur NucleAtlas.',
       robots: { index: false, follow: true },
     };
@@ -43,7 +43,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 
   return {
     metadataBase: base,
-    title: `${article.title} | NucleAtlas`,
+    // Titre absolu : on évite que le template "%s | NucleAtlas" du layout racine s'ajoute en double.
+    title: { absolute: `${article.title} | NucleAtlas` },
     description:
       article.excerpt ||
       `Découvrez l'article "${article.title}" sur NucleAtlas, encyclopédie collaborative de médecine nucléaire.`,

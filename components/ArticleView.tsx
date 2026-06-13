@@ -8,14 +8,16 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize';
 import { useParams } from 'next/navigation';
-import DOMPurify from 'isomorphic-dompurify';
 
-// Sanitise un SVG de figure (autorise les balises SVG, retire script / handlers).
+// Sanitiseur SVG isomorphe sans dépendance (s'exécute serveur ET client).
+// Les figures proviennent de sources contrôlées (seed + admin authentifié) ;
+// on retire par prudence script, foreignObject, handlers inline et URLs javascript.
 function sanitizeSvg(svg: string): string {
-  return DOMPurify.sanitize(svg, {
-    USE_PROFILES: { svg: true, svgFilters: true },
-    ADD_ATTR: ['viewBox', 'preserveAspectRatio'],
-  });
+  return svg
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<foreignObject[\s\S]*?<\/foreignObject>/gi, '')
+    .replace(/\son\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '')
+    .replace(/(href|xlink:href)\s*=\s*("\s*javascript:[^"]*"|'\s*javascript:[^']*')/gi, '');
 }
 
 export function ArticleView() {
