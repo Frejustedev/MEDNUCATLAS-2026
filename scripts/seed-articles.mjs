@@ -15,8 +15,9 @@ import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 import { articles as batch1 } from './content/batch1.mjs';
 import { articles as batch2 } from './content/batch2.mjs';
 import { articles as batch3 } from './content/batch3.mjs';
+import { articles as batch4 } from './content/batch4.mjs';
 
-const articles = [...batch1, ...batch2, ...batch3];
+const articles = [...batch1, ...batch2, ...batch3, ...batch4];
 
 const DRY = process.argv.includes('--dry');
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\//, '')), '..');
@@ -58,7 +59,10 @@ function validate(a) {
   if (!a.title || a.title.length < 3) errs.push('titre trop court');
   if (!a.cat) errs.push('catégorie manquante');
   if (!a.content || !a.content.lead) errs.push('content.lead manquant');
-  for (const mode of ['patient', 'medecin_non_nuc', 'medecin_nuc']) {
+  // On exige des sections seulement pour les profils ciblés (targetAudience).
+  const modes = (a.targetAudience && a.targetAudience.length ? a.targetAudience : ['patient', 'medecin_non_nuc', 'medecin_nuc'])
+    .filter((m) => m !== 'admin');
+  for (const mode of modes) {
     if (!a.content?.[mode]?.sections?.length) errs.push(`mode ${mode} sans sections`);
   }
   return errs;

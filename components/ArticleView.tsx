@@ -29,7 +29,14 @@ export function ArticleView() {
   const article = articles.find(e => e.id === currentArticle);
   if (!article) return null;
 
-  const content = article.content[articleMode];
+  // Mode demandé ; si vide (article ciblant d'autres profils), on bascule
+  // vers le premier mode disposant de contenu pour ne pas afficher une page vide.
+  const content =
+    article.content[articleMode]?.sections?.length
+      ? article.content[articleMode]
+      : [article.content.medecin_nuc, article.content.medecin_non_nuc, article.content.patient].find(
+          (c) => c?.sections?.length
+        ) ?? article.content[articleMode];
   const isFavorite = dbUser?.favorites?.includes(article.id) || false;
 
   const scrollToSection = (i: number) => {
