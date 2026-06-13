@@ -186,6 +186,9 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
             authors: data.authors as string[] | undefined,
             sources: data.sources as Article['sources'],
             content: parsedContent,
+            reviewStatus: (data.reviewStatus as Article['reviewStatus']) ?? 'ai_assisted',
+            reviewedBy: data.reviewedBy as string | undefined,
+            reviewedAt: data.reviewedAt as string | undefined,
           };
         });
         setAllArticles(fetchedArticles);

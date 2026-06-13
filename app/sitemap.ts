@@ -18,6 +18,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${APP_URL}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
     { url: `${APP_URL}/contribuer`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${APP_URL}/mentions-legales`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${APP_URL}/confidentialite`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${APP_URL}/cgu`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
   ];
 
   const categoryRoutes: MetadataRoute.Sitemap = MENU_STRUCTURE.flatMap((section) =>

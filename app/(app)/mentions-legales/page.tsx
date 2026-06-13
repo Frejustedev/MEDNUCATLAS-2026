@@ -46,7 +46,7 @@ export default function MentionsLegalesPage() {
         <div className="space-y-3 text-text2 leading-relaxed">
           <p className="font-semibold text-text-main">Le contenu de ce site a un but purement informatif, éducatif et collaboratif, destiné principalement aux professionnels de santé.</p>
           <p>Les informations, articles, cas cliniques et données de l'annuaire publiés sur Nucleatlas <strong>ne remplacent en aucun cas une consultation médicale, un diagnostic ou l'avis d'un médecin spécialiste</strong>.</p>
-          <p>Bien que notre comité scientifique s'efforce de garantir l'exactitude et la mise à jour des informations scientifiques (notamment sur la médecine nucléaire, la radiopharmacie et la théranostique), l'éditeur (Dr. Fréjuste Agboton / NucleaTech Solutions) décline toute responsabilité quant aux conséquences directes ou indirectes pouvant résulter de l'utilisation ou de l'interprétation des informations fournies sur ce site.</p>
+          <p>Une partie des contenus est rédigée avec l'assistance d'une intelligence artificielle ; le statut de relecture médicale (assisté par IA, ou relu et validé par un médecin) est indiqué de manière transparente sur chaque article. L'éditeur (Dr. Fréjuste Agboton / NucleaTech Solutions) décline toute responsabilité quant aux conséquences directes ou indirectes pouvant résulter de l'utilisation ou de l'interprétation des informations fournies sur ce site.</p>
           <p>Les patients visitant ce site sont invités à toujours consulter leur médecin traitant ou un spécialiste pour toute question relative à leur santé ou à un traitement.</p>
         </div>
       )

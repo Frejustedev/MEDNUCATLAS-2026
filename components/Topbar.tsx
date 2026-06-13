@@ -9,7 +9,7 @@ import { UserProfile } from '@/lib/data';
 import { AdvancedSearch } from './AdvancedSearch';
 
 export function Topbar() {
-  const { searchQuery, setSearchQuery, userProfile, setUserProfile, lang, setLang, showLanding, isMobileMenuOpen, setIsMobileMenuOpen, isDesktopMenuCollapsed, setIsDesktopMenuCollapsed, dbUser } = useAtlas();
+  const { searchQuery, setSearchQuery, userProfile, setUserProfile, showLanding, isMobileMenuOpen, setIsMobileMenuOpen, isDesktopMenuCollapsed, setIsDesktopMenuCollapsed, dbUser } = useAtlas();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const handleProfileChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -129,16 +129,13 @@ export function Topbar() {
             </select>
           </div>
 
-          <select
-            value={lang}
-            onChange={(e) => setLang(e.target.value)}
-            className="bg-bg3 border border-border-main rounded-md px-2.5 py-1.5 text-text2 text-xs font-mono cursor-pointer outline-none hidden sm:block"
+          <span
+            className="bg-bg3 border border-border-main rounded-md px-2.5 py-1.5 text-text3 text-xs font-mono hidden sm:block"
+            title="Anglais et arabe à venir"
           >
-            <option value="fr" className="bg-bg text-text-main">🇫🇷 Français</option>
-            <option value="en" className="bg-bg text-text-main">🇬🇧 English</option>
-            <option value="ar" className="bg-bg text-text-main">🇩🇿 عربي</option>
-          </select>
-          
+            FR
+          </span>
+
           <ThemeToggle />
           
           <AuthButton />

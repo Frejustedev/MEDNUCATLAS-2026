@@ -282,11 +282,19 @@ export function AuthModal() {
         <p className="text-[10px] text-text3 text-center mt-6 leading-relaxed">
           En continuant, tu acceptes nos{' '}
           <Link
-            href="/mentions-legales"
+            href="/cgu"
             onClick={closeAuthModal}
             className="underline hover:text-teal transition-colors focus:outline-none focus:ring-2 focus:ring-teal rounded"
           >
-            conditions d&apos;utilisation et notre politique de confidentialité
+            conditions d&apos;utilisation
+          </Link>
+          {' '}et notre{' '}
+          <Link
+            href="/confidentialite"
+            onClick={closeAuthModal}
+            className="underline hover:text-teal transition-colors focus:outline-none focus:ring-2 focus:ring-teal rounded"
+          >
+            politique de confidentialité
           </Link>
           .
         </p>

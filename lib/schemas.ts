@@ -90,6 +90,9 @@ export const articleSchema = z.object({
     .max(100)
     .optional(),
   content: articleContentSchema,
+  reviewStatus: z.enum(['draft', 'ai_assisted', 'reviewed']).optional(),
+  reviewedBy: z.string().max(200).optional(),
+  reviewedAt: z.string().max(50).optional(),
 });
 
 export type ArticleInput = z.infer<typeof articleSchema>;

@@ -108,7 +108,8 @@ service cloud.firestore {
       function allowedArticleFields() {
         return ['id', 'cat', 'catLabel', 'title', 'content', 'excerpt', 'targetAudience',
                 'authors', 'sources', 'difficulty', 'tags', 'authorId',
-                'createdAt', 'updatedAt'];
+                'createdAt', 'updatedAt',
+                'reviewStatus', 'reviewedBy', 'reviewedAt'];
       }
 
       function isValidArticleBase(data) {
@@ -122,7 +123,10 @@ service cloud.firestore {
                (!('authors' in data) || (data.authors is list && data.authors.size() < 50)) &&
                (!('sources' in data) || (data.sources is list && data.sources.size() < 200)) &&
                (!('difficulty' in data) || data.difficulty in ['fondamental', 'intermédiaire', 'avancé']) &&
-               (!('tags' in data) || (data.tags is list && data.tags.size() < 60));
+               (!('tags' in data) || (data.tags is list && data.tags.size() < 60)) &&
+               (!('reviewStatus' in data) || data.reviewStatus in ['draft', 'ai_assisted', 'reviewed']) &&
+               (!('reviewedBy' in data) || (data.reviewedBy is string && data.reviewedBy.size() < 200)) &&
+               (!('reviewedAt' in data) || (data.reviewedAt is string && data.reviewedAt.size() < 50));
       }
 
       // Lecture publique.

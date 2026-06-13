@@ -123,6 +123,12 @@ export interface ArticleContent {
   patient: ContentMode;
 }
 
+// Statut de relecture médicale — transparence éditoriale.
+// 'ai_assisted' = rédigé avec assistance IA, pas encore relu par un médecin (défaut prudent).
+// 'reviewed'    = relu et validé par un médecin nucléaire identifié.
+// 'draft'       = brouillon non publié.
+export type ReviewStatus = 'draft' | 'ai_assisted' | 'reviewed';
+
 export interface Article {
   id: string;
   cat: Category;
@@ -135,6 +141,9 @@ export interface Article {
   authors?: string[];
   sources?: { title: string; url?: string }[];
   content: ArticleContent;
+  reviewStatus?: ReviewStatus;
+  reviewedBy?: string;
+  reviewedAt?: string;
 }
 
 export const ENTRIES: Article[] = [];

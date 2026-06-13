@@ -49,6 +49,9 @@ function getIcon(id: string, className = 'w-3.5 h-3.5') {
   }
 }
 
+// Entrées de navigation toujours visibles (même sans article).
+const SPECIAL_ITEMS = new Set(['dashboard', 'favorites', 'index', 'about', 'contact', 'annuaire']);
+
 export function Sidebar() {
   const {
     showHome, showCategory, articles, userProfile,
@@ -63,30 +66,32 @@ export function Sidebar() {
 
   const filteredMenu = useMemo(() => {
     const allowedAudiences = getAllowedAudiences(userProfile);
-    let menu = MENU_STRUCTURE
+    const counts = articles.reduce<Record<string, number>>((acc, a) => {
+      acc[a.cat] = (acc[a.cat] || 0) + 1;
+      return acc;
+    }, {});
+    const term = searchTerm.trim().toLowerCase();
+
+    return MENU_STRUCTURE
       .map((section) => {
         const sectionTarget = (section as { targetAudience?: string[] }).targetAudience;
         if (sectionTarget && !sectionTarget.some((aud) => allowedAudiences.includes(aud as never))) {
           return null;
         }
-        const filteredItems = section.items.filter((item) => {
+        const items = section.items.filter((item) => {
+          // Audience
           const itemTarget = (item as { targetAudience?: string[] }).targetAudience;
           if (itemTarget && !itemTarget.some((aud) => allowedAudiences.includes(aud as never))) return false;
+          // Masquer les catégories de contenu vides (on garde toujours les entrées de navigation)
+          if (!SPECIAL_ITEMS.has(item.id) && (counts[item.id] || 0) === 0) return false;
+          // Recherche
+          if (term && !item.label.toLowerCase().includes(term)) return false;
           return true;
         });
-        return { ...section, items: filteredItems };
+        return { ...section, items };
       })
-      .filter((s): s is typeof MENU_STRUCTURE[number] => s !== null);
-
-    if (!searchTerm.trim()) return menu;
-    const term = searchTerm.toLowerCase();
-    return menu
-      .map((section) => ({
-        ...section,
-        items: section.items.filter((item) => item.label.toLowerCase().includes(term)),
-      }))
-      .filter((section) => section.items.length > 0);
-  }, [searchTerm, userProfile]);
+      .filter((s): s is typeof MENU_STRUCTURE[number] => s !== null && s.items.length > 0);
+  }, [searchTerm, userProfile, articles]);
 
   const sidebarContent = (
     <>
@@ -186,6 +191,12 @@ export function Sidebar() {
         <div className="flex flex-col gap-2">
           <Link href="/mentions-legales" className="text-[11px] text-text3 hover:text-teal transition-colors focus:outline-none focus:ring-2 focus:ring-teal rounded">
             Mentions légales
+          </Link>
+          <Link href="/confidentialite" className="text-[11px] text-text3 hover:text-teal transition-colors focus:outline-none focus:ring-2 focus:ring-teal rounded">
+            Confidentialité
+          </Link>
+          <Link href="/cgu" className="text-[11px] text-text3 hover:text-teal transition-colors focus:outline-none focus:ring-2 focus:ring-teal rounded">
+            CGU
           </Link>
           <Link href="/contact" className="text-[11px] text-text3 hover:text-teal transition-colors focus:outline-none focus:ring-2 focus:ring-teal rounded">
             Contact

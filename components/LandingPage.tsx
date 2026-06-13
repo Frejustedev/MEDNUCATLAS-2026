@@ -125,28 +125,19 @@ export function LandingPage() {
             <div className="inline-flex items-center gap-3 bg-teal/5 border border-border-main px-4 py-2 rounded-full text-xs tracking-wide text-text2 mb-8">
               <span className="flex items-center gap-1.5 text-teal font-medium">
                 <Shield className="w-3.5 h-3.5" />
-                Paiement sécurisé
+                Accès gratuit · Version beta
               </span>
               <span className="w-1 h-1 rounded-full bg-border-main" />
-              <span className="flex items-center gap-2.5 opacity-80">
-                <span className="font-bold text-[10px] italic text-blue-400">VISA</span>
-                <div className="flex -space-x-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500/80 mix-blend-screen" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80 mix-blend-screen" />
-                </div>
-                <span className="font-mono text-[10px] font-semibold text-orange-400">ORANGE</span>
-                <span className="font-mono text-[10px] font-semibold text-yellow-400">MTN</span>
-                <span className="font-mono text-[10px] font-semibold text-blue-300">WAVE</span>
-              </span>
+              <span className="opacity-80">Conçu par un médecin nucléaire</span>
             </div>
-            
+
             <h1 className="font-serif text-5xl md:text-[88px] font-light leading-[1.05] tracking-tight mb-6">
-              La référence mondiale<br />
+              La référence francophone<br />
               de la <em className="not-italic italic text-teal">Médecine</em> <em className="not-italic italic text-gold">Nucléaire</em>
             </h1>
-            
+
             <p className="text-[17px] text-text2 leading-[1.7] max-w-xl mb-12">
-              Encyclopédie trilingue de médecine nucléaire et d&apos;imagerie moléculaire — conçue par des cliniciens, pour des cliniciens et leurs patients.
+              Encyclopédie de médecine nucléaire et d&apos;imagerie moléculaire — un contenu adapté au patient, au médecin prescripteur et au spécialiste. Pensée pour l&apos;Afrique francophone.
             </p>
             
             <div className="flex flex-wrap items-center gap-4">
@@ -154,7 +145,7 @@ export function LandingPage() {
                 onClick={authUser ? showHome : () => openAuthModal()}
                 className="bg-teal text-bg px-8 py-3.5 rounded-lg text-sm font-medium tracking-wide hover:bg-teal2 hover:-translate-y-px transition-all shadow-[0_0_30px_rgba(0,201,177,0.3)] hover:shadow-[0_0_40px_rgba(0,201,177,0.4)]"
               >
-                {authUser ? "Explorer l&apos;Atlas →" : "Commencer gratuitement →"}
+                {authUser ? "Explorer l'Atlas →" : "Commencer gratuitement →"}
               </button>
               <button 
                 onClick={showHome}
@@ -164,10 +155,9 @@ export function LandingPage() {
               </button>
             </div>
             
-            <div className="flex gap-2 mt-12">
+            <div className="flex items-center gap-2 mt-12">
               <span className="px-3 py-1 rounded font-mono text-[11px] tracking-wide border border-teal/30 text-teal">FR Français</span>
-              <span className="px-3 py-1 rounded font-mono text-[11px] tracking-wide border border-gold/30 text-gold">EN English</span>
-              <span className="px-3 py-1 rounded font-mono text-[11px] tracking-wide border border-text2/30 text-text2">AR عربي</span>
+              <span className="px-3 py-1 rounded font-mono text-[11px] tracking-wide border border-border-main text-text3">EN · AR bientôt</span>
             </div>
           </motion.div>
         </div>
@@ -220,20 +210,20 @@ export function LandingPage() {
         className="border-y border-border-main p-6 md:p-12 grid grid-cols-2 lg:grid-cols-4 gap-px bg-border-main"
       >
         <div className="bg-bg2 p-8 md:p-10 text-center">
-          <div className="font-serif text-4xl md:text-[52px] font-light text-teal leading-none mb-2">500<span className="text-[28px]">+</span></div>
-          <div className="text-xs text-text3 tracking-wide">Entrées encyclopédiques</div>
-        </div>
-        <div className="bg-bg2 p-8 md:p-10 text-center">
           <div className="font-serif text-4xl md:text-[52px] font-light text-teal leading-none mb-2">3</div>
-          <div className="text-xs text-text3 tracking-wide">Langues (FR / EN / AR)</div>
-        </div>
-        <div className="bg-bg2 p-8 md:p-10 text-center">
-          <div className="font-serif text-4xl md:text-[52px] font-light text-teal leading-none mb-2">2</div>
-          <div className="text-xs text-text3 tracking-wide">Audiences (Pro & Patient)</div>
+          <div className="text-xs text-text3 tracking-wide">Niveaux de lecture adaptés</div>
         </div>
         <div className="bg-bg2 p-8 md:p-10 text-center">
           <div className="font-serif text-4xl md:text-[52px] font-light text-teal leading-none mb-2">100<span className="text-[28px]">%</span></div>
-          <div className="text-xs text-text3 tracking-wide">Validé par des cliniciens</div>
+          <div className="text-xs text-text3 tracking-wide">Gratuit pendant la beta</div>
+        </div>
+        <div className="bg-bg2 p-8 md:p-10 text-center">
+          <div className="font-serif text-4xl md:text-[52px] font-light text-teal leading-none mb-2">FR</div>
+          <div className="text-xs text-text3 tracking-wide">Français (EN · AR à venir)</div>
+        </div>
+        <div className="bg-bg2 p-8 md:p-10 text-center">
+          <div className="font-serif text-3xl md:text-[44px] font-light text-teal leading-none mb-2 mt-1">Afrique</div>
+          <div className="text-xs text-text3 tracking-wide">Annuaire des centres</div>
         </div>
       </motion.div>
 
@@ -254,7 +244,7 @@ export function LandingPage() {
             <h3 className="font-serif text-3xl mb-4 leading-[1.2]">Pour les médecins<br />et résidents</h3>
             <p className="text-sm text-text2 leading-[1.7] mb-7">Un outil de référence clinique complet, accessible en consultation, en garde ou en formation.</p>
             <ul className="flex flex-col gap-2.5">
-              {['Protocoles de scintigraphie détaillés', 'Posologies et radiopharmaceutiques', 'Interprétation d\'images annotées', 'Références bibliographiques récentes', 'Cas cliniques commentés'].map((item, i) => (
+              {['Indications et protocoles d\'acquisition', 'Radiopharmaceutiques et dosimétrie', 'Critères d\'interprétation (PERCIST, Deauville…)', 'Sources et références citées', 'Statut de relecture transparent par article'].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-[13px] text-text2">
                   <span className="font-mono text-xs text-teal shrink-0">→</span> {item}
                 </li>
@@ -267,7 +257,7 @@ export function LandingPage() {
             <h3 className="font-serif text-3xl mb-4 leading-[1.2]">Pour les patients<br />et leurs proches</h3>
             <p className="text-sm text-text2 leading-[1.7] mb-7">Des explications claires, rassurantes et validées médicalement — sans jargon inaccessible.</p>
             <ul className="flex flex-col gap-2.5">
-              {['Préparation aux examens scintigraphiques', 'Questions fréquentes sur la radioactivité', 'Guide post-traitement à l\'iode radioactif', 'Suivi thyroïdien expliqué', 'Disponible en arabe dialectal'].map((item, i) => (
+              {['Préparation aux examens scintigraphiques', 'Questions fréquentes sur la radioactivité', 'Guide post-traitement à l\'iode radioactif', 'Suivi thyroïdien expliqué sans jargon', 'Explications validées médicalement'].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-[13px] text-text2">
                   <span className="font-mono text-xs text-gold shrink-0">→</span> {item}
                 </li>
@@ -329,10 +319,10 @@ export function LandingPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
           {[
-            { icon: Search, title: 'Recherche avancée', desc: 'Recherche sémantique et suggestions intelligentes pour trouver l\'entrée exacte en secondes.' },
-            { icon: Zap, title: 'Mobile first', desc: 'Interface optimisée pour les smartphones Android. Consulter en garde, sans ordinateur.' },
-            { icon: Activity, title: 'Mode hors-ligne', desc: 'Les entrées consultées sont disponibles sans connexion. Essentiel dans les contextes à faible débit.' },
-            { icon: BookOpen, title: 'Trilingue natif', desc: 'FR / EN / AR construit dès l\'architecture. Pas une traduction automatique — une rédaction native.' }
+            { icon: Search, title: 'Recherche instantanée', desc: 'Recherche par titre, tag ou catégorie en un raccourci clavier (Cmd/Ctrl + K).' },
+            { icon: BookOpen, title: 'Trois niveaux de lecture', desc: 'Un même article expliqué pour le patient, le médecin prescripteur et le spécialiste.' },
+            { icon: Zap, title: 'Assistant IA contextuel', desc: 'Un assistant qui répond à vos questions à partir du contenu de l\'article consulté.' },
+            { icon: Activity, title: 'Annuaire Afrique', desc: 'Centres et spécialistes de médecine nucléaire référencés par pays.' }
           ].map((t, i) => (
             <div key={i} className="bg-bg2 border border-border-main rounded-[10px] p-7 hover:border-teal/30 hover:-translate-y-0.5 transition-all">
               <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center mb-4 text-teal">
@@ -349,13 +339,13 @@ export function LandingPage() {
       <section id="pricing" className="px-6 md:px-12 py-24 md:py-[100px] bg-bg border-t border-border-main">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-teal/10 border border-border-main px-3 py-1.5 rounded-full text-[10px] tracking-[2px] uppercase text-teal mb-6 font-mono">
-            Promotion de lancement
+            Accès beta
           </div>
           <h2 className="font-serif text-4xl md:text-[52px] font-light leading-[1.15] mb-6">
-            Votre plan,<br /><em className="not-italic italic text-teal">100% Gratuit</em>
+            Votre profil,<br /><em className="not-italic italic text-teal">gratuit en beta</em>
           </h2>
           <p className="text-[15px] text-text2 leading-[1.7] max-w-xl mx-auto">
-            Cinq profils pensés pour chaque acteur de la médecine nucléaire — du grand public au spécialiste expert.
+            Trois profils de lecture pensés pour chaque acteur de la médecine nucléaire — du patient au spécialiste. Gratuits pendant toute la phase beta.
           </p>
         </div>
 
@@ -379,10 +369,7 @@ export function LandingPage() {
           <div className="bg-bg2 border border-border-main rounded-2xl p-6 hover:bg-bg3 transition-colors flex flex-col">
             <div className="text-3xl mb-4">🩺</div>
             <div className="font-mono text-[10px] tracking-[2px] uppercase text-teal mb-2">Médecin (Non MN)</div>
-            <div className="font-serif text-4xl font-light mb-1 flex items-baseline gap-3">
-              <span className="line-through text-text3 text-2xl">9€</span>
-              <span className="text-teal">Gratuit</span>
-            </div>
+            <div className="font-serif text-4xl font-light mb-1 text-teal">Gratuit</div>
             <p className="text-xs text-text2 mb-6 min-h-[40px]">Référence clinique pour la pratique quotidienne.</p>
             <button onClick={authUser ? showHome : () => openAuthModal('medecin_non_nuc')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-teal text-bg hover:bg-teal2 transition-colors mb-6 shadow-[0_0_15px_rgba(0,201,177,0.2)]">Activer Pro</button>
             <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Patient, plus</div>
@@ -401,10 +388,7 @@ export function LandingPage() {
             </div>
             <div className="text-3xl mb-4 mt-2">⚛️</div>
             <div className="font-mono text-[10px] tracking-[2px] uppercase text-purple-400 mb-2">Médecin Nucléaire</div>
-            <div className="font-serif text-4xl font-light mb-1 flex items-baseline gap-3">
-              <span className="line-through text-text3 text-2xl">25€</span>
-              <span className="text-purple-400">Gratuit</span>
-            </div>
+            <div className="font-serif text-4xl font-light mb-1 text-purple-400">Gratuit</div>
             <p className="text-xs text-text2 mb-6 min-h-[40px]">L&apos;arsenal complet du spécialiste en médecine nucléaire.</p>
             <button onClick={authUser ? showHome : () => openAuthModal('medecin_nuc')} className="w-full py-2.5 rounded-lg text-xs font-medium bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:opacity-90 transition-opacity mb-6 shadow-[0_0_20px_rgba(167,139,250,0.3)]">Accès Expert</button>
             <div className="font-mono text-[9px] tracking-wider uppercase text-text3 mb-4">Tout Médecin, plus</div>
@@ -421,7 +405,7 @@ export function LandingPage() {
           <div className="bg-bg2 border border-border-main rounded-xl p-5 flex items-center justify-between hover:border-gold/30 transition-colors">
             <div>
               <div className="font-mono text-[10px] tracking-[2px] uppercase text-gold mb-1">Hôpitaux & Cliniques</div>
-              <div className="text-sm text-text2">Licence multi-utilisateurs <span className="line-through text-text3 text-xs ml-1">99€/mois</span> <span className="text-gold font-medium ml-1">Gratuit</span></div>
+              <div className="text-sm text-text2">Accès multi-utilisateurs pour les établissements <span className="text-gold font-medium ml-1">— nous contacter</span></div>
             </div>
             <button onClick={authUser ? showHome : () => openAuthModal('institution')} className="px-4 py-2 rounded-lg text-xs font-medium bg-gold/10 text-gold hover:bg-gold/20 transition-colors border border-gold/20">Contacter</button>
           </div>
@@ -477,8 +461,10 @@ export function LandingPage() {
           </div>
           <p className="text-xs text-text3">© 2026 NucleAtlas. Tous droits réservés.</p>
         </div>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center">
           <Link href="/mentions-legales" className="text-xs text-text3 hover:text-teal transition-colors">Mentions légales</Link>
+          <Link href="/confidentialite" className="text-xs text-text3 hover:text-teal transition-colors">Confidentialité</Link>
+          <Link href="/cgu" className="text-xs text-text3 hover:text-teal transition-colors">CGU</Link>
           <Link href="/contact" className="text-xs text-text3 hover:text-teal transition-colors">Contact</Link>
           <Link href="/contribuer" className="text-xs text-text3 hover:text-teal transition-colors">Contribuer</Link>
         </div>

@@ -4,6 +4,7 @@ import './globals.css';
 import { AtlasProvider } from '@/lib/AtlasContext';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { CookieConsent } from '@/components/CookieConsent';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -123,7 +124,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body suppressHydrationWarning className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ErrorBoundary>
-            <AtlasProvider>{children}</AtlasProvider>
+            <AtlasProvider>
+              {children}
+              <CookieConsent />
+            </AtlasProvider>
           </ErrorBoundary>
         </ThemeProvider>
       </body>

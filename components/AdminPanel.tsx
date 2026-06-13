@@ -1030,6 +1030,45 @@ function ArticleEditorForm({
             </div>
           </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-4 rounded-lg bg-bg3/50 border border-border-main">
+            <div>
+              <label htmlFor="article-review" className="block text-xs font-mono text-text3 mb-1.5 uppercase tracking-wider">
+                Statut de relecture médicale
+              </label>
+              <select
+                id="article-review"
+                value={formData.reviewStatus || 'ai_assisted'}
+                onChange={(e) => {
+                  const v = e.target.value as 'draft' | 'ai_assisted' | 'reviewed';
+                  setFormData({
+                    ...formData,
+                    reviewStatus: v,
+                    reviewedAt: v === 'reviewed' ? (formData.reviewedAt || new Date().toISOString()) : formData.reviewedAt,
+                  });
+                }}
+                className="w-full bg-bg3 border border-border-main rounded-md p-2.5 text-sm outline-none focus:border-teal transition-colors text-text-main"
+              >
+                <option value="ai_assisted">Assisté IA — en relecture</option>
+                <option value="reviewed">Relu &amp; validé par un médecin</option>
+                <option value="draft">Brouillon</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="article-reviewer" className="block text-xs font-mono text-text3 mb-1.5 uppercase tracking-wider">
+                Relu par (nom du médecin)
+              </label>
+              <input
+                id="article-reviewer"
+                type="text"
+                value={formData.reviewedBy || ''}
+                onChange={(e) => setFormData({ ...formData, reviewedBy: e.target.value })}
+                placeholder="ex: Dr F. Agboton"
+                disabled={formData.reviewStatus !== 'reviewed'}
+                className="w-full bg-bg3 border border-border-main rounded-md p-2.5 text-sm outline-none focus:border-teal transition-colors text-text-main disabled:opacity-50"
+              />
+            </div>
+          </div>
+
           <div>
             <label htmlFor="article-title" className="block text-xs font-mono text-text3 mb-1.5 uppercase tracking-wider">
               Titre

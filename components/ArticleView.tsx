@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
-import { ArrowLeft, Sparkles, Info, AlertTriangle, Lightbulb, Star, User, Stethoscope, Atom } from 'lucide-react';
+import { ArrowLeft, Sparkles, Info, AlertTriangle, Lightbulb, Star, User, Stethoscope, Atom, ShieldCheck, ShieldAlert } from 'lucide-react';
 import { AiAssistant } from './AiAssistant';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -78,6 +78,41 @@ export function ArticleView() {
               </span>
             ))}
           </div>
+        </div>
+
+        {/* Statut de relecture médicale — transparence éditoriale */}
+        {(() => {
+          const status = article.reviewStatus ?? 'ai_assisted';
+          if (status === 'reviewed') {
+            return (
+              <div className="mb-4 flex items-start gap-3 p-3 rounded-lg border bg-teal/10 border-teal/20 text-teal" role="status">
+                <ShieldCheck className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true" />
+                <div className="text-[13px] leading-relaxed">
+                  <span className="font-medium">Contenu relu et validé médicalement</span>
+                  {article.reviewedBy ? ` — par ${article.reviewedBy}` : ''}
+                  {article.reviewedAt ? ` le ${new Date(article.reviewedAt).toLocaleDateString('fr-FR')}` : ''}.
+                </div>
+              </div>
+            );
+          }
+          return (
+            <div className="mb-4 flex items-start gap-3 p-3 rounded-lg border bg-orange-500/10 border-orange-500/20 text-orange-400" role="status">
+              <ShieldAlert className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true" />
+              <div className="text-[13px] leading-relaxed">
+                <span className="font-medium">Contenu rédigé avec assistance IA, en cours de relecture par un médecin nucléaire.</span>{' '}
+                Vérifiez les informations critiques auprès des sources de référence (EANM, SNMMI, HAS).
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* Avertissement médical permanent */}
+        <div className="mb-6 flex items-start gap-2.5 p-3 rounded-lg bg-bg2 border border-border-main text-text3">
+          <Info className="w-4 h-4 shrink-0 mt-0.5" aria-hidden="true" />
+          <p className="text-[12px] leading-relaxed">
+            Information à visée éducative et informative. Ne remplace pas une consultation, un diagnostic
+            ou l&apos;avis d&apos;un médecin spécialiste. <a href="/mentions-legales" className="underline hover:text-teal">En savoir plus</a>.
+          </p>
         </div>
 
         <div className="flex items-center gap-3 mb-8 p-3 bg-bg2 rounded-lg border border-border-main flex-wrap">
