@@ -18,8 +18,9 @@ import { articles as batch3 } from './content/batch3.mjs';
 import { articles as batch4 } from './content/batch4.mjs';
 import { articles as batch5 } from './content/batch5.mjs';
 import { articles as batch6 } from './content/batch6.mjs';
+import { articles as batch7 } from './content/batch7.mjs';
 
-const articles = [...batch1, ...batch2, ...batch3, ...batch4, ...batch5, ...batch6];
+const articles = [...batch1, ...batch2, ...batch3, ...batch4, ...batch5, ...batch6, ...batch7];
 
 const DRY = process.argv.includes('--dry');
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\//, '')), '..');
