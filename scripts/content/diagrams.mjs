@@ -210,3 +210,114 @@ export const DECAY_SCHEME = `
   <text x="120" y="150" font-size="10" fill="currentColor" opacity="0.6">émetteur</text>
   <text x="120" y="164" font-size="10" fill="currentColor" opacity="0.6">parent</text>
 </svg>`;
+
+// ── Captation thyroïdienne (scintigraphie) ──────────────────────────────────
+export const THYROID_UPTAKE = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <rect x="285" y="40" width="30" height="220" rx="8" fill="currentColor" opacity="0.07"/>
+  <text x="300" y="278" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.6">trachée</text>
+  <path d="M285 120 C 240 95, 200 110, 195 160 C 190 210, 235 225, 270 200 C 285 188, 285 150, 285 120 Z" fill="${TEAL}" fill-opacity="0.18" stroke="${TEAL}" stroke-width="2"/>
+  <path d="M315 120 C 360 95, 400 110, 405 160 C 410 210, 365 225, 330 200 C 315 188, 315 150, 315 120 Z" fill="${TEAL}" fill-opacity="0.18" stroke="${TEAL}" stroke-width="2"/>
+  <rect x="288" y="150" width="24" height="26" rx="4" fill="${TEAL}" fill-opacity="0.18" stroke="${TEAL}" stroke-width="1.5"/>
+  <text x="230" y="165" text-anchor="middle" font-size="11" fill="currentColor">lobe gauche</text>
+  <text x="370" y="165" text-anchor="middle" font-size="11" fill="currentColor">lobe droit</text>
+  <text x="300" y="120" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.7">isthme</text>
+  <circle cx="225" cy="150" r="15" fill="${AMBER}" fill-opacity="0.55" stroke="${AMBER}" stroke-width="1.5"/>
+  <text x="225" y="120" text-anchor="middle" font-size="10" fill="${AMBER}">nodule « chaud »</text>
+  <circle cx="375" cy="175" r="13" fill="none" stroke="${BLUE}" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="375" y="215" text-anchor="middle" font-size="10" fill="${BLUE}">nodule « froid »</text>
+  <text x="300" y="40" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.75">Fixation de l'iode/Tc-99m par le tissu thyroïdien fonctionnel</text>
+</svg>`;
+
+// ── Scintigraphie osseuse — fixation du MDP ─────────────────────────────────
+export const BONE_SCAN = `
+<svg viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg" width="320" height="360">
+  <circle cx="160" cy="40" r="22" fill="currentColor" opacity="0.10" stroke="currentColor" stroke-width="1.5"/>
+  <rect x="150" y="62" width="20" height="22" rx="4" fill="currentColor" opacity="0.10"/>
+  <path d="M120 90 L200 90 L210 150 L110 150 Z" fill="currentColor" opacity="0.10" stroke="currentColor" stroke-width="1"/>
+  <rect x="152" y="90" width="16" height="120" rx="4" fill="currentColor" opacity="0.12"/>
+  <rect x="120" y="210" width="80" height="40" rx="10" fill="currentColor" opacity="0.10" stroke="currentColor" stroke-width="1"/>
+  <rect x="128" y="250" width="16" height="95" rx="5" fill="currentColor" opacity="0.10"/>
+  <rect x="176" y="250" width="16" height="95" rx="5" fill="currentColor" opacity="0.10"/>
+  <rect x="92" y="96" width="14" height="95" rx="5" fill="currentColor" opacity="0.10" transform="rotate(12 99 143)"/>
+  <rect x="214" y="96" width="14" height="95" rx="5" fill="currentColor" opacity="0.10" transform="rotate(-12 221 143)"/>
+  <circle cx="160" cy="150" r="11" fill="${RED}" fill-opacity="0.6" stroke="${RED}" stroke-width="1.5"/>
+  <circle cx="184" cy="120" r="9" fill="${RED}" fill-opacity="0.6" stroke="${RED}" stroke-width="1.5"/>
+  <circle cx="135" cy="300" r="9" fill="${RED}" fill-opacity="0.6" stroke="${RED}" stroke-width="1.5"/>
+  <text x="250" y="150" font-size="11" fill="${RED}">foyers</text>
+  <text x="250" y="166" font-size="11" fill="${RED}">hyperfixants</text>
+  <text x="160" y="358" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">Le MDP-⁹⁹ᵐTc se fixe sur l'os en remaniement (ostéoblastique)</text>
+</svg>`;
+
+// ── Scintigraphie pulmonaire ventilation/perfusion ──────────────────────────
+export const VQ_LUNGS = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <text x="160" y="35" text-anchor="middle" font-size="13" fill="currentColor">Ventilation (V)</text>
+  <path d="M120 60 C 90 60, 80 130, 95 200 C 105 240, 140 235, 150 200 L150 70 C150 62 140 60 120 60 Z" fill="${TEAL}" fill-opacity="0.2" stroke="${TEAL}" stroke-width="2"/>
+  <path d="M200 60 C 230 60, 240 130, 225 200 C 215 240, 180 235, 170 200 L170 70 C170 62 180 60 200 60 Z" fill="${TEAL}" fill-opacity="0.2" stroke="${TEAL}" stroke-width="2"/>
+  <text x="160" y="265" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">répartition homogène</text>
+
+  <text x="440" y="35" text-anchor="middle" font-size="13" fill="currentColor">Perfusion (Q)</text>
+  <path d="M400 60 C 370 60, 360 130, 375 200 C 385 240, 420 235, 430 200 L430 70 C430 62 420 60 400 60 Z" fill="${BLUE}" fill-opacity="0.2" stroke="${BLUE}" stroke-width="2"/>
+  <path d="M480 60 C 510 60, 520 130, 505 200 C 495 240, 460 235, 450 200 L450 70 C450 62 460 60 480 60 Z" fill="${BLUE}" fill-opacity="0.2" stroke="${BLUE}" stroke-width="2"/>
+  <path d="M455 95 C 470 95, 478 120, 470 145 C 462 165, 448 160, 448 135 Z" fill="var(--bg, #ffffff)" stroke="${RED}" stroke-width="2" stroke-dasharray="3 2"/>
+  <circle cx="462" cy="125" r="2.5" fill="${RED}"/>
+  <text x="540" y="125" text-anchor="middle" font-size="11" fill="${RED}">défect</text>
+  <text x="440" y="265" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">amputation segmentaire</text>
+
+  <text x="300" y="292" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Discordance V/Q (ventilation normale, perfusion absente) → embolie pulmonaire</text>
+</svg>`;
+
+// ── Rénogramme (courbe activité-temps, MAG3) ────────────────────────────────
+export const RENOGRAM = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <line x1="70" y1="250" x2="560" y2="250" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="70" y1="40" x2="70" y2="250" stroke="currentColor" stroke-width="1.5"/>
+  <text x="315" y="285" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">temps (min)</text>
+  <text x="30" y="150" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7" transform="rotate(-90 30 150)">activité</text>
+  <path d="M70 250 C 110 130, 150 70, 175 70 C 230 70, 320 160, 540 235" fill="none" stroke="${TEAL}" stroke-width="2.5"/>
+  <text x="430" y="120" font-size="11" fill="${TEAL}">rein normal</text>
+  <path d="M70 250 C 120 150, 170 90, 230 80 C 330 65, 460 70, 540 85" fill="none" stroke="${RED}" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <text x="430" y="60" font-size="11" fill="${RED}">obstruction (pas d'excrétion)</text>
+  <text x="150" y="48" font-size="10" fill="currentColor" opacity="0.7">pic (~3-5 min)</text>
+  <line x1="175" y1="70" x2="175" y2="250" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.5"/>
+  <text x="120" y="240" font-size="9" fill="currentColor" opacity="0.6">captation</text>
+  <text x="300" y="240" font-size="9" fill="currentColor" opacity="0.6">excrétion</text>
+</svg>`;
+
+// ── Liaison récepteur de la somatostatine (DOTATATE / TNE) ───────────────────
+export const SSTR_BINDING = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <rect x="60" y="150" width="480" height="110" rx="14" fill="${BLUE}" fill-opacity="0.06" stroke="${BLUE}" stroke-width="2"/>
+  <text x="300" y="240" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.75">Cellule tumorale neuroendocrine</text>
+  <line x1="60" y1="150" x2="540" y2="150" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="60" y1="156" x2="540" y2="156" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <text x="300" y="178" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.55">membrane plasmique</text>
+  <rect x="280" y="120" width="40" height="60" rx="6" fill="${BLUE}" fill-opacity="0.3" stroke="${BLUE}" stroke-width="1.5"/>
+  <text x="300" y="112" text-anchor="middle" font-size="12" fill="currentColor">SSTR2</text>
+  <circle cx="300" cy="92" r="14" fill="${TEAL}" fill-opacity="0.2" stroke="${TEAL}" stroke-width="2"/>
+  <text x="300" y="96" text-anchor="middle" font-size="9" fill="currentColor">DOTATATE</text>
+  <line x1="300" y1="106" x2="300" y2="120" stroke="${TEAL}" stroke-width="2"/>
+  <circle cx="300" cy="58" r="16" fill="${AMBER}" fill-opacity="0.25" stroke="${AMBER}" stroke-width="2"/>
+  <text x="300" y="55" text-anchor="middle" font-size="10" fill="currentColor">⁶⁸Ga</text>
+  <text x="300" y="68" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.7">¹⁷⁷Lu</text>
+  <line x1="300" y1="74" x2="300" y2="80" stroke="${AMBER}" stroke-width="2"/>
+  <text x="470" y="58" font-size="11" fill="currentColor" opacity="0.8">⁶⁸Ga → TEP (diagnostic)</text>
+  <text x="470" y="92" font-size="11" fill="currentColor" opacity="0.8">¹⁷⁷Lu → Lutathera</text>
+  <text x="300" y="285" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">Surexpression des récepteurs SSTR2 → cible théranostique des TNE</text>
+</svg>`;
+
+// ── DaTscan — striatum normal vs altéré ─────────────────────────────────────
+export const DATSCAN_STRIATUM = `
+<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" width="600" height="280">
+  <text x="160" y="35" text-anchor="middle" font-size="13" fill="currentColor">Normal</text>
+  <ellipse cx="120" cy="140" rx="14" ry="40" transform="rotate(20 120 140)" fill="${TEAL}" fill-opacity="0.55" stroke="${TEAL}" stroke-width="1.5"/>
+  <ellipse cx="200" cy="140" rx="14" ry="40" transform="rotate(-20 200 140)" fill="${TEAL}" fill-opacity="0.55" stroke="${TEAL}" stroke-width="1.5"/>
+  <text x="160" y="225" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">aspect en « virgules » symétriques</text>
+
+  <text x="440" y="35" text-anchor="middle" font-size="13" fill="currentColor">Syndrome parkinsonien</text>
+  <ellipse cx="400" cy="125" rx="12" ry="20" transform="rotate(20 400 125)" fill="${AMBER}" fill-opacity="0.45" stroke="${AMBER}" stroke-width="1.5"/>
+  <circle cx="492" cy="120" r="9" fill="${RED}" fill-opacity="0.4" stroke="${RED}" stroke-width="1.5"/>
+  <text x="440" y="225" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">putamen amputé → « point » asymétrique</text>
+  <text x="300" y="262" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Perte des terminaisons dopaminergiques (transporteur DAT)</text>
+</svg>`;
