@@ -398,6 +398,57 @@ export const GAMMA_CAMERA = `
   <polygon points="300,45 295,54 305,54" fill="currentColor"/>
 </svg>`;
 
+// ── Types de désintégration (α, β⁻, β⁺, γ) ──────────────────────────────────
+export const DECAY_TYPES = `
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
+  <circle cx="150" cy="150" r="40" fill="currentColor" fill-opacity="0.10" stroke="currentColor" stroke-width="2"/>
+  <text x="150" y="154" text-anchor="middle" font-size="12" fill="currentColor">noyau</text>
+  <text x="150" y="210" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.7">instable</text>
+
+  <line x1="188" y1="125" x2="300" y2="70" stroke="${RED}" stroke-width="2.5"/>
+  <circle cx="312" cy="64" r="12" fill="${RED}" fill-opacity="0.25" stroke="${RED}" stroke-width="1.5"/>
+  <text x="312" y="68" text-anchor="middle" font-size="9" fill="currentColor">⁴He</text>
+  <text x="420" y="62" font-size="11" fill="${RED}">α — particule lourde (faible portée)</text>
+
+  <line x1="190" y1="150" x2="300" y2="150" stroke="${AMBER}" stroke-width="2.5"/>
+  <circle cx="312" cy="150" r="7" fill="${AMBER}"/>
+  <text x="420" y="146" font-size="11" fill="${AMBER}">β⁻ / β⁺ — électron / positon</text>
+  <text x="420" y="162" font-size="10" fill="currentColor" opacity="0.65">portée millimétrique (effet thérapeutique β⁻)</text>
+
+  <path d="M188 178 Q 240 200 250 230 Q 260 255 300 250" fill="none" stroke="${TEAL}" stroke-width="2.5"/>
+  <polygon points="300,250 290,246 291,256" fill="${TEAL}"/>
+  <text x="420" y="240" font-size="11" fill="${TEAL}">γ — photon (imagerie, traverse les tissus)</text>
+
+  <text x="300" y="290" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Un noyau instable se désexcite en émettant α, β ou γ — base de l'imagerie et de la thérapie</text>
+</svg>`;
+
+// ── Principe ALARA : temps, distance, écran ─────────────────────────────────
+export const ALARA_TDS = `
+<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" width="600" height="260">
+  <circle cx="100" cy="90" r="34" fill="none" stroke="${TEAL}" stroke-width="2"/>
+  <line x1="100" y1="90" x2="100" y2="68" stroke="${TEAL}" stroke-width="2.5"/>
+  <line x1="100" y1="90" x2="116" y2="98" stroke="${TEAL}" stroke-width="2.5"/>
+  <text x="100" y="150" text-anchor="middle" font-size="13" fill="currentColor">Temps</text>
+  <text x="100" y="168" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.7">↓ durée d'exposition</text>
+
+  <circle cx="300" cy="90" r="8" fill="${AMBER}" fill-opacity="0.6" stroke="${AMBER}" stroke-width="1.5"/>
+  <circle cx="300" cy="90" r="20" fill="none" stroke="${AMBER}" stroke-width="1" opacity="0.5"/>
+  <circle cx="300" cy="90" r="32" fill="none" stroke="${AMBER}" stroke-width="1" opacity="0.3"/>
+  <line x1="300" y1="90" x2="360" y2="90" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <circle cx="372" cy="90" r="6" fill="currentColor" opacity="0.5"/>
+  <text x="300" y="150" text-anchor="middle" font-size="13" fill="currentColor">Distance</text>
+  <text x="300" y="168" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.7">loi en 1/d²</text>
+
+  <circle cx="470" cy="90" r="8" fill="${AMBER}" fill-opacity="0.6" stroke="${AMBER}" stroke-width="1.5"/>
+  <rect x="500" y="60" width="14" height="60" rx="3" fill="${PURPLE}" fill-opacity="0.3" stroke="${PURPLE}" stroke-width="1.5"/>
+  <line x1="478" y1="90" x2="500" y2="90" stroke="${AMBER}" stroke-width="2"/>
+  <line x1="514" y1="90" x2="540" y2="90" stroke="${AMBER}" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+  <text x="490" y="150" text-anchor="middle" font-size="13" fill="currentColor">Écran</text>
+  <text x="490" y="168" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.7">plomb / béton</text>
+
+  <text x="300" y="225" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.85">ALARA — trois leviers pour réduire la dose : moins de temps, plus de distance, un écran</text>
+</svg>`;
+
 // ── Vidange gastrique — courbe de rétention ─────────────────────────────────
 export const GASTRIC_EMPTYING = `
 <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
