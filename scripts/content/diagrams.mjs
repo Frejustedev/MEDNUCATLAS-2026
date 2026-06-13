@@ -360,6 +360,44 @@ export const SIRT_LIVER = `
   <text x="300" y="285" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Les microsphères, injectées dans l'artère, se logent dans la tumeur et l'irradient de l'intérieur</text>
 </svg>`;
 
+// ── Gamma-caméra (chaîne de détection d'Anger) ──────────────────────────────
+export const GAMMA_CAMERA = `
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" width="600" height="320">
+  <circle cx="300" cy="292" r="12" fill="${TEAL}" fill-opacity="0.5" stroke="${TEAL}" stroke-width="1.5"/>
+  <text x="300" y="315" text-anchor="middle" font-size="11" fill="currentColor">patient (γ émis)</text>
+  <line x1="300" y1="282" x2="280" y2="235" stroke="${AMBER}" stroke-width="1.5"/>
+  <line x1="300" y1="282" x2="300" y2="235" stroke="${AMBER}" stroke-width="1.5"/>
+  <line x1="300" y1="282" x2="320" y2="235" stroke="${AMBER}" stroke-width="1.5"/>
+  <rect x="120" y="205" width="360" height="30" fill="currentColor" opacity="0.10" stroke="currentColor" stroke-width="1"/>
+  <line x1="160" y1="205" x2="160" y2="235" stroke="currentColor" stroke-width="3"/>
+  <line x1="200" y1="205" x2="200" y2="235" stroke="currentColor" stroke-width="3"/>
+  <line x1="240" y1="205" x2="240" y2="235" stroke="currentColor" stroke-width="3"/>
+  <line x1="280" y1="205" x2="280" y2="235" stroke="currentColor" stroke-width="3"/>
+  <line x1="320" y1="205" x2="320" y2="235" stroke="currentColor" stroke-width="3"/>
+  <line x1="360" y1="205" x2="360" y2="235" stroke="currentColor" stroke-width="3"/>
+  <line x1="400" y1="205" x2="400" y2="235" stroke="currentColor" stroke-width="3"/>
+  <line x1="440" y1="205" x2="440" y2="235" stroke="currentColor" stroke-width="3"/>
+  <text x="100" y="224" text-anchor="end" font-size="11" fill="currentColor">collimateur</text>
+  <rect x="120" y="165" width="360" height="32" rx="3" fill="${BLUE}" fill-opacity="0.18" stroke="${BLUE}" stroke-width="1.5"/>
+  <text x="300" y="186" text-anchor="middle" font-size="11" fill="currentColor">cristal NaI(Tl) — scintillation</text>
+  <text x="100" y="186" text-anchor="end" font-size="10" fill="currentColor" opacity="0.6">→ lumière</text>
+  <g fill="${PURPLE}" fill-opacity="0.18" stroke="${PURPLE}" stroke-width="1.5">
+    <rect x="140" y="120" width="40" height="38" rx="4"/>
+    <rect x="200" y="120" width="40" height="38" rx="4"/>
+    <rect x="260" y="120" width="40" height="38" rx="4"/>
+    <rect x="320" y="120" width="40" height="38" rx="4"/>
+    <rect x="380" y="120" width="40" height="38" rx="4"/>
+  </g>
+  <text x="300" y="110" text-anchor="middle" font-size="11" fill="currentColor">photomultiplicateurs (PMT)</text>
+  <rect x="160" y="60" width="280" height="34" rx="6" fill="${TEAL}" fill-opacity="0.12" stroke="${TEAL}" stroke-width="1.5"/>
+  <text x="300" y="82" text-anchor="middle" font-size="11" fill="currentColor">logique d'Anger → position (X,Y) + énergie</text>
+  <line x1="300" y1="120" x2="300" y2="94" stroke="currentColor" stroke-width="1.5"/>
+  <polygon points="300,94 295,103 305,103" fill="currentColor"/>
+  <text x="300" y="38" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Image scintigraphique (matrice de comptages)</text>
+  <line x1="300" y1="60" x2="300" y2="45" stroke="currentColor" stroke-width="1.5"/>
+  <polygon points="300,45 295,54 305,54" fill="currentColor"/>
+</svg>`;
+
 // ── Vidange gastrique — courbe de rétention ─────────────────────────────────
 export const GASTRIC_EMPTYING = `
 <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300">
