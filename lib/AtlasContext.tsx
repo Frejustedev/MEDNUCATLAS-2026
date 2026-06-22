@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect, useMemo, useCallback } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { ArticleMode, Category, Article, UserProfile, getAllowedAudiences } from './data';
+import { articleFromDocData } from './article-mapper';
 import { db, auth } from './firebase';
 import { collection, onSnapshot, query, doc, getDoc, setDoc, getDocs, updateDoc } from 'firebase/firestore';
 import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, User as FirebaseUser } from 'firebase/auth';
@@ -28,6 +29,7 @@ interface AtlasState {
   lang: string;
   articles: Article[];
   loading: boolean;
+  articlesError: string | null;
   userProfile: UserProfile;
   authUser: FirebaseUser | null;
   dbUser: DbUser | null;
@@ -45,6 +47,7 @@ interface AtlasContextType extends AtlasState {
   setLang: (lang: string) => void;
   setUserProfile: (profile: UserProfile) => void;
   setDbUser: (user: DbUser | null) => void;
+  reloadArticles: () => void;
   showLanding: () => void;
   showHome: () => void;
   showCategory: (cat: Category) => void;
@@ -85,6 +88,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
   const [userProfile, setUserProfile] = useState<UserProfile>('patient');
   const [allArticles, setAllArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
+  const [articlesError, setArticlesError] = useState<string | null>(null);
 
   const [authUser, setAuthUser] = useState<FirebaseUser | null>(null);
   const [dbUser, setDbUser] = useState<DbUser | null>(null);
@@ -151,56 +155,32 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     return () => unsubscribe();
   }, []);
 
-  // Articles effect — un seul fetch initial (sera remplacé par SSR/ISR en P1).
-  useEffect(() => {
-    const fetchArticles = async () => {
-      try {
-        const q = query(collection(db, 'articles'));
-        const snapshot = await getDocs(q);
-        const fetchedArticles: Article[] = snapshot.docs.map((d) => {
-          const data = d.data() as Record<string, unknown>;
-          const rawContent = data.content;
-          let parsedContent: Article['content'];
-          if (typeof rawContent === 'string') {
-            try {
-              parsedContent = JSON.parse(rawContent) as Article['content'];
-            } catch {
-              parsedContent = { lead: '', patient: { sections: [] }, medecin_non_nuc: { sections: [] }, medecin_nuc: { sections: [] } };
-            }
-          } else if (rawContent && typeof rawContent === 'object') {
-            parsedContent = rawContent as Article['content'];
-          } else {
-            parsedContent = { lead: '', patient: { sections: [] }, medecin_non_nuc: { sections: [] }, medecin_nuc: { sections: [] } };
-          }
-          return {
-            id: data.id as string,
-            cat: data.cat as Category,
-            catLabel: (data.catLabel as string) ?? '',
-            title: (data.title as string) ?? '',
-            tags: (data.tags as string[]) ?? [],
-            difficulty: (data.difficulty as Article['difficulty']) ?? 'fondamental',
-            excerpt: (data.excerpt as string) ?? '',
-            targetAudience:
-              (data.targetAudience as Article['targetAudience']) ??
-              (['medecin_nuc', 'medecin_non_nuc', 'patient'] as Article['targetAudience']),
-            authors: data.authors as string[] | undefined,
-            sources: data.sources as Article['sources'],
-            content: parsedContent,
-            reviewStatus: (data.reviewStatus as Article['reviewStatus']) ?? 'ai_assisted',
-            reviewedBy: data.reviewedBy as string | undefined,
-            reviewedAt: data.reviewedAt as string | undefined,
-          };
-        });
-        setAllArticles(fetchedArticles);
-      } catch (error) {
-        console.error('[atlas] Chargement des articles impossible', error);
-        setAllArticles([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchArticles();
+  // Articles — chargement initial avec gestion explicite d'erreur + retry.
+  // L'article lui-même est rendu côté serveur (ISR) ; ce cache client sert les
+  // listes (catégories, recherche, favoris).
+  const loadArticles = useCallback(async () => {
+    setLoading(true);
+    setArticlesError(null);
+    try {
+      const q = query(collection(db, 'articles'));
+      const snapshot = await getDocs(q);
+      const fetchedArticles: Article[] = snapshot.docs.map((d) =>
+        articleFromDocData(d.data() as Record<string, unknown>)
+      );
+      setAllArticles(fetchedArticles);
+    } catch (error) {
+      console.error('[atlas] Chargement des articles impossible', error);
+      setArticlesError(
+        'Vérifiez votre connexion internet puis réessayez. Si le problème persiste, le service est momentanément indisponible.'
+      );
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    void loadArticles();
+  }, [loadArticles]);
 
   const articles = useMemo(() => {
     const allowedAudiences = getAllowedAudiences(userProfile);
@@ -421,6 +401,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         lang,
         articles,
         loading,
+        articlesError,
         userProfile,
         authUser,
         dbUser,
@@ -435,6 +416,7 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
         setLang,
         setUserProfile: handleUserProfile,
         setDbUser,
+        reloadArticles: loadArticles,
         showLanding,
         showHome,
         showCategory,

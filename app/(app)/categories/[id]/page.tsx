@@ -3,10 +3,11 @@
 import React from 'react';
 import { useAtlas } from '@/lib/AtlasContext';
 import { ArticleCard } from '@/components/ArticleCard';
+import { CollectionState } from '@/components/CollectionState';
 import { useParams } from 'next/navigation';
 
 export default function CategoryPage() {
-  const { articles, dbUser, searchQuery } = useAtlas();
+  const { articles, dbUser, searchQuery, loading, articlesError, reloadArticles } = useAtlas();
   const params = useParams();
   const categoryId = params.id as string;
 
@@ -63,7 +64,9 @@ export default function CategoryPage() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h1 className="text-3xl font-serif font-light text-text-main mb-2 capitalize">{title}</h1>
-          <p className="text-text2">{entries.length} article(s) disponible(s)</p>
+          {!loading && !articlesError && (
+            <p className="text-text2">{entries.length} article(s) disponible(s)</p>
+          )}
         </div>
         
         {categoryId === 'index' && !searchQuery ? (
@@ -90,11 +93,13 @@ export default function CategoryPage() {
           </div>
         )}
 
-        {entries.length === 0 && (
-          <div className="text-center py-20 border border-dashed border-border-main rounded-xl bg-bg2">
-            <p className="text-text3 font-mono">Aucun article trouvé dans cette catégorie.</p>
-          </div>
-        )}
+        <CollectionState
+          loading={loading}
+          error={articlesError}
+          onRetry={reloadArticles}
+          isEmpty={entries.length === 0}
+          emptyLabel="Aucun article trouvé dans cette catégorie."
+        />
       </div>
     </div>
   );

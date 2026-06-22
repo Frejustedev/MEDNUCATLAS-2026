@@ -1,38 +1,35 @@
-import React from 'react';
+import React, { cache } from 'react';
 import { ArticleView } from '@/components/ArticleView';
 import { Metadata } from 'next';
 import { getAdminDb } from '@/lib/firebase-admin';
+import { articleFromDocData } from '@/lib/article-mapper';
+
+// ISR : la page article est régénérée au plus toutes les heures. Le corps est
+// rendu côté serveur (plus de dépendance au chargement client complet), ce qui
+// améliore le premier rendu, le SEO et la résilience.
+export const revalidate = 3600;
 
 type Params = { id: string };
 
-async function getArticleSummary(id: string) {
+// Lecture unique du document par requête (déduplication via React cache),
+// partagée entre generateMetadata et le composant de page.
+const getArticleDoc = cache(async (id: string): Promise<Record<string, unknown> | null> => {
   try {
     const snap = await getAdminDb().collection('articles').doc(id).get();
     if (!snap.exists) return null;
-    const data = snap.data() as Record<string, unknown>;
-    return {
-      title: (data.title as string) || 'Article',
-      excerpt: (data.excerpt as string) || '',
-      cat: (data.cat as string) || '',
-      catLabel: (data.catLabel as string) || '',
-      tags: (data.tags as string[]) || [],
-      authors: (data.authors as string[]) || [],
-      difficulty: (data.difficulty as string) || '',
-      updatedAt: data.updatedAt as { toDate?: () => Date } | undefined,
-      createdAt: data.createdAt as { toDate?: () => Date } | undefined,
-    };
+    return snap.data() as Record<string, unknown>;
   } catch (err) {
-    console.error('[articles/[id]] metadata fetch error:', err);
+    console.error('[articles/[id]] fetch error:', err);
     return null;
   }
-}
+});
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { id } = await params;
-  const article = await getArticleSummary(id);
+  const data = await getArticleDoc(id);
   const base = process.env.APP_URL ? new URL(process.env.APP_URL) : undefined;
 
-  if (!article) {
+  if (!data) {
     return {
       metadataBase: base,
       title: { absolute: 'Article introuvable | NucleAtlas' },
@@ -41,28 +38,33 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     };
   }
 
+  const title = (data.title as string) || 'Article';
+  const excerpt = (data.excerpt as string) || '';
+  const tags = (data.tags as string[]) || [];
+  const authors = (data.authors as string[]) || [];
+
   return {
     metadataBase: base,
     // Titre absolu : on évite que le template "%s | NucleAtlas" du layout racine s'ajoute en double.
-    title: { absolute: `${article.title} | NucleAtlas` },
+    title: { absolute: `${title} | NucleAtlas` },
     description:
-      article.excerpt ||
-      `Découvrez l'article "${article.title}" sur NucleAtlas, encyclopédie collaborative de médecine nucléaire.`,
-    keywords: article.tags,
-    authors: article.authors.map((name) => ({ name })),
+      excerpt ||
+      `Découvrez l'article "${title}" sur NucleAtlas, encyclopédie collaborative de médecine nucléaire.`,
+    keywords: tags,
+    authors: authors.map((name) => ({ name })),
     openGraph: {
-      title: article.title,
-      description: article.excerpt,
+      title,
+      description: excerpt,
       type: 'article',
       siteName: 'NucleAtlas',
       locale: 'fr_FR',
       url: base ? `${base.origin}/articles/${id}` : undefined,
-      tags: article.tags,
+      tags,
     },
     twitter: {
       card: 'summary_large_image',
-      title: article.title,
-      description: article.excerpt,
+      title,
+      description: excerpt,
     },
     alternates: {
       canonical: base ? `${base.origin}/articles/${id}` : undefined,
@@ -72,7 +74,11 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 
 export default async function ArticlePage({ params }: { params: Promise<Params> }) {
   const { id } = await params;
-  const article = await getArticleSummary(id);
+  const data = await getArticleDoc(id);
+  const article = data ? articleFromDocData(data) : null;
+
+  const updatedAt = data?.updatedAt as { toDate?: () => Date } | undefined;
+  const createdAt = data?.createdAt as { toDate?: () => Date } | undefined;
 
   // JSON-LD pour SERP médicale + Knowledge Graph
   const jsonLd = article
@@ -83,13 +89,16 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         description: article.excerpt,
         about: article.catLabel,
         inLanguage: 'fr',
-        author: article.authors.length > 0 ? article.authors.map((name) => ({ '@type': 'Person', name })) : undefined,
+        author:
+          article.authors && article.authors.length > 0
+            ? article.authors.map((name) => ({ '@type': 'Person', name }))
+            : undefined,
         publisher: {
           '@type': 'Organization',
           name: 'NucleAtlas',
         },
-        dateModified: article.updatedAt?.toDate ? article.updatedAt.toDate().toISOString() : undefined,
-        datePublished: article.createdAt?.toDate ? article.createdAt.toDate().toISOString() : undefined,
+        dateModified: updatedAt?.toDate ? updatedAt.toDate().toISOString() : undefined,
+        datePublished: createdAt?.toDate ? createdAt.toDate().toISOString() : undefined,
         keywords: article.tags?.join(', '),
       }
     : null;
@@ -103,7 +112,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
-      <ArticleView />
+      <ArticleView article={article ?? undefined} />
     </>
   );
 }

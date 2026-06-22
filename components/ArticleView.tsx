@@ -8,25 +8,18 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize';
 import { useParams } from 'next/navigation';
+import { Article } from '@/lib/data';
+import { sanitizeSvg } from '@/lib/sanitize-svg';
 
-// Sanitiseur SVG isomorphe sans dépendance (s'exécute serveur ET client).
-// Les figures proviennent de sources contrôlées (seed + admin authentifié) ;
-// on retire par prudence script, foreignObject, handlers inline et URLs javascript.
-function sanitizeSvg(svg: string): string {
-  return svg
-    .replace(/<script[\s\S]*?<\/script>/gi, '')
-    .replace(/<foreignObject[\s\S]*?<\/foreignObject>/gi, '')
-    .replace(/\son\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '')
-    .replace(/(href|xlink:href)\s*=\s*("\s*javascript:[^"]*"|'\s*javascript:[^']*')/gi, '');
-}
-
-export function ArticleView() {
+export function ArticleView({ article: serverArticle }: { article?: Article } = {}) {
   const { showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
   const params = useParams();
   const currentArticle = params.id as string;
   const [isAiOpen, setIsAiOpen] = useState(false);
-  
-  const article = articles.find(e => e.id === currentArticle);
+
+  // Priorité à l'article rendu côté serveur (ISR) ; repli sur le cache client
+  // (navigation interne avant chargement complet de la liste).
+  const article = serverArticle ?? articles.find((e) => e.id === currentArticle);
   if (!article) return null;
 
   // Mode demandé ; si vide (article ciblant d'autres profils), on bascule

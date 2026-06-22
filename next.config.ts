@@ -1,6 +1,28 @@
 import type { NextConfig } from 'next';
 import path from 'node:path';
 
+// Content-Security-Policy — durcissement. Volontairement permissive sur
+// connect-src/img-src (https:) pour ne PAS casser les nombreux endpoints
+// Firebase (Firestore, Auth, Installations, App Check), tout en bloquant le
+// chargement de scripts/ressources depuis des origines tierces non autorisées.
+// 'unsafe-inline'/'unsafe-eval' restent nécessaires à l'hydratation Next + au
+// SDK Firebase ; resserrement possible ultérieurement via nonce.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://www.gstatic.com https://www.google.com https://www.googletagmanager.com",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https:",
+  "font-src 'self' data:",
+  "connect-src 'self' https: wss:",
+  "frame-src 'self' https://*.firebaseapp.com https://accounts.google.com https://www.google.com https://apis.google.com",
+  "worker-src 'self' blob:",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'none'",
+  'upgrade-insecure-requests',
+].join('; ');
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
@@ -34,6 +56,10 @@ const nextConfig: NextConfig = {
       {
         source: '/(.*)',
         headers: [
+          // Déployée d'abord en Report-Only (n'impose RIEN, journalise seulement)
+          // pour valider en conditions réelles sans risque de casser Firebase/Auth.
+          // Bascule en application : renommer la clé en 'Content-Security-Policy'.
+          { key: 'Content-Security-Policy-Report-Only', value: CSP },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'X-Frame-Options', value: 'DENY' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },

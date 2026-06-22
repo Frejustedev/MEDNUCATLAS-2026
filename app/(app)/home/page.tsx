@@ -5,9 +5,10 @@ import { useAtlas } from '@/lib/AtlasContext';
 import { motion } from 'motion/react';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import { ArticleCard } from '@/components/ArticleCard';
+import { CollectionState } from '@/components/CollectionState';
 
 export default function HomePage() {
-  const { articles, showCategory, searchQuery } = useAtlas();
+  const { articles, showCategory, searchQuery, loading, articlesError, reloadArticles } = useAtlas();
 
   // If there's a search query, show search results instead of home
   if (searchQuery) {
@@ -24,13 +25,24 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <h1 className="text-3xl font-serif font-light text-text-main mb-2">Résultats de recherche</h1>
-            <p className="text-text2">{entries.length} résultat(s) pour &quot;{searchQuery}&quot;</p>
+            {!loading && !articlesError && (
+              <p className="text-text2">{entries.length} résultat(s) pour &quot;{searchQuery}&quot;</p>
+            )}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {entries.map(article => (
-              <ArticleCard key={article.id} article={article} />
-            ))}
-          </div>
+          <CollectionState
+            loading={loading}
+            error={articlesError}
+            onRetry={reloadArticles}
+            isEmpty={entries.length === 0}
+            emptyLabel={`Aucun résultat pour « ${searchQuery} ».`}
+          />
+          {!loading && !articlesError && entries.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {entries.map(article => (
+                <ArticleCard key={article.id} article={article} />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     );
@@ -95,18 +107,27 @@ export default function HomePage() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featured.map((article, i) => (
-            <motion.div
-              key={article.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 * i }}
-            >
-              <ArticleCard article={article} />
-            </motion.div>
-          ))}
-        </div>
+        <CollectionState
+          loading={loading}
+          error={articlesError}
+          onRetry={reloadArticles}
+          isEmpty={featured.length === 0}
+          emptyLabel="Aucun article disponible pour le moment."
+        />
+        {!loading && !articlesError && featured.length > 0 && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featured.map((article, i) => (
+              <motion.div
+                key={article.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 * i }}
+              >
+                <ArticleCard article={article} />
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
