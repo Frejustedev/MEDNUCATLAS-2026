@@ -69,7 +69,7 @@ export default function CategoryPage() {
           )}
         </div>
         
-        {categoryId === 'index' && !searchQuery ? (
+        {!loading && !articlesError && entries.length > 0 && (categoryId === 'index' && !searchQuery ? (
           <div className="space-y-12">
             {Object.keys(groupedEntries).sort().map(letter => (
               <div key={letter} className="relative">
@@ -91,7 +91,7 @@ export default function CategoryPage() {
               <ArticleCard key={article.id} article={article} />
             ))}
           </div>
-        )}
+        ))}
 
         <CollectionState
           loading={loading}

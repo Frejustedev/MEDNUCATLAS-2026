@@ -8,7 +8,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeSanitize from 'rehype-sanitize';
 import { useParams } from 'next/navigation';
-import { Article } from '@/lib/data';
+import { Article, ArticleMode, UserProfile, getAllowedAudiences } from '@/lib/data';
 import { sanitizeSvg } from '@/lib/sanitize-svg';
 
 export function ArticleView({ article: serverArticle }: { article?: Article } = {}) {
@@ -22,14 +22,16 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
   const article = serverArticle ?? articles.find((e) => e.id === currentArticle);
   if (!article) return null;
 
-  // Mode demandé ; si vide (article ciblant d'autres profils), on bascule
-  // vers le premier mode disposant de contenu pour ne pas afficher une page vide.
-  const content =
-    article.content[articleMode]?.sections?.length
-      ? article.content[articleMode]
-      : [article.content.medecin_nuc, article.content.medecin_non_nuc, article.content.patient].find(
-          (c) => c?.sections?.length
-        ) ?? article.content[articleMode];
+  // Sélection du contenu en respectant le cloisonnement par profil : on ne
+  // propose que les modes AUTORISÉS pour l'utilisateur (un patient ne doit pas
+  // voir le contenu réservé aux médecins, même via un lien direct vers un
+  // article rendu côté serveur). Mode courant s'il a du contenu, sinon premier
+  // mode autorisé non vide ; sinon `null` → message d'orientation.
+  const allowedAudiences = getAllowedAudiences(userProfile);
+  const candidateModes = (
+    Array.from(new Set<ArticleMode>([articleMode, 'medecin_nuc', 'medecin_non_nuc', 'patient']))
+  ).filter((m) => allowedAudiences.includes(m as UserProfile));
+  const content = candidateModes.map((m) => article.content[m]).find((c) => c?.sections?.length) ?? null;
   const isFavorite = dbUser?.favorites?.includes(article.id) || false;
 
   const scrollToSection = (i: number) => {
@@ -170,6 +172,15 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
           <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{article.content.lead || ''}</ReactMarkdown>
         </div>
 
+        {!content && (
+          <div className="mb-8 flex items-start gap-3 p-4 rounded-lg border bg-bg2 border-border-main text-text3">
+            <Info className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-[13px] leading-relaxed">
+              Cet article s&apos;adresse à un public de professionnels de santé. Aucune version
+              adaptée à votre profil n&apos;est disponible pour le moment.
+            </p>
+          </div>
+        )}
         {content?.sections?.map((s, i) => (
           <div key={i} className="mb-8" id={`sec-${i}`}>
             <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
