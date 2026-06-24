@@ -29,15 +29,15 @@ export const article = {
   content: {
     // Carte d'identité visuelle (gabarit §1)
     identityCard: [
-      { icon: 'flask', label: 'Traceur', value: '¹²³I-MIBG (alt. ¹³¹I-MIBG)' },
-      { icon: 'zap', label: 'Émission × énergie', value: '¹²³I : 159 keV · ¹³¹I : 364 keV' },
+      { icon: 'flask', label: 'Traceur', value: '¹²³I-MIBG (alt. ¹³¹I-MIBG ; ¹²⁴I-MIBG TEP émergent)' },
+      { icon: 'zap', label: 'Émission × énergie', value: '¹²³I : 159 keV · ¹³¹I : 364 keV + β⁻' },
       { icon: 'clock', label: 'Période', value: '¹²³I : 13,2 h · ¹³¹I : 8,0 j' },
       { icon: 'syringe', label: 'Voie × activité', value: 'IV lente · ¹²³I ≈ 370 MBq' },
       { icon: 'baby', label: 'Pédiatrie', value: '¹²³I : 80–400 MBq (carte EANM)' },
-      { icon: 'clock', label: 'Délai → images', value: '24 h (± 48 h)' },
+      { icon: 'clock', label: 'Délai → images', value: '¹²³I : 24 h (± 48 h) · ¹³¹I : 24–72 h' },
       { icon: 'activity', label: 'Durée', value: 'Corps entier 30–45 min + TEMP/TDM' },
       { icon: 'target', label: 'Cible biologique', value: 'Transporteur NET (uptake-1)' },
-      { icon: 'radiation', label: 'Dose efficace', value: '¹²³I ≈ 0,013 mSv/MBq' },
+      { icon: 'radiation', label: 'Dose efficace (adulte)', value: '¹²³I ≈ 0,013 · ¹³¹I ≈ 0,14 mSv/MBq' },
       { icon: 'shield', label: 'Préparation', value: 'Blocage thyroïdien + arrêt interférents' },
       { icon: 'droplets', label: 'Élimination', value: 'Urinaire · pas de jeûne' },
       { icon: 'flask', label: 'Disponibilité ¹²³I', value: 'Cyclotron · coût élevé · variable selon centre' },
@@ -132,7 +132,7 @@ export const article = {
     medecin_nuc: {
       sections: [
         // ───────── MOUVEMENT A — COMPRENDRE ─────────
-        { title: 'A1 · Carte d’identité', text: '**Lecture des champs.** Le **¹²³I** est préféré pour le diagnostic : photon de 159 keV idéal pour la γ-caméra, demi-vie courte (donc moindre dose et activité plus élevée), pas d’émission β⁻, et **TEMP faisable**. Le **¹³¹I** sert surtout au dépistage avant traitement et dans les centres sans ¹²³I. L’injection **lente** prévient une décharge catécholaminergique ; le **blocage thyroïdien** protège la thyroïde de l’iode libre ; le délai de **24 h** correspond au pic de contraste tumeur/fond. Les activités exactes et le détail du blocage sont à adapter au protocole de chaque service.',
+        { title: 'A1 · Carte d’identité', text: '**Comment lire la carte d’identité.** Le **¹²³I** est préféré pour le diagnostic : photon de 159 keV idéal pour la γ-caméra, demi-vie courte (donc moindre dose et activité plus élevée), pas d’émission β⁻, et **TEMP faisable**. Le **¹³¹I** sert surtout au dépistage avant traitement et dans les centres sans ¹²³I. L’injection **lente** prévient une décharge catécholaminergique ; le **blocage thyroïdien** protège la thyroïde de l’iode libre ; le délai de **24 h** correspond au pic de contraste tumeur/fond. Les activités exactes et le détail du blocage sont à adapter au protocole de chaque service.',
           stats: [{ value: '159 keV', label: 'γ du ¹²³I (caméra idéale)' }, { value: '370 MBq', label: 'Activité adulte ¹²³I-MIBG' }, { value: '24 h', label: 'Délai standard d’imagerie' }, { value: '≈ 5 mSv', label: 'Dose efficace (¹²³I, adulte)' }] },
         { title: 'A2 · Définition', text: 'La **méta-iodobenzylguanidine (MIBG)**, ou iobenguane, est un **analogue de la noradrénaline** : une molécule de synthèse dérivée de la guanéthidine, qui se comporte comme un « faux neurotransmetteur ». Marquée par un isotope radioactif de l’iode (**¹²³I** à visée diagnostique, **¹³¹I** à visée surtout thérapeutique), elle réalise une **imagerie fonctionnelle et moléculaire** du système nerveux sympathique et des tumeurs qui en dérivent.[1,2]\n\nContrairement à la TDM ou à l’IRM, qui montrent la morphologie, la scintigraphie MIBG révèle une **propriété biologique** : la capacité d’une cellule à capter et stocker la noradrénaline. Elle apporte donc une information de **caractérisation** (le tissu est-il d’origine sympatho-adrénergique ?) et de **cartographie corps entier** (où sont toutes les localisations ?). C’est aussi un examen **théranostique** : un examen positif au ¹²³I-MIBG identifie les patients candidats à un traitement par **¹³¹I-MIBG**.[2,3]' },
         { title: 'A3 · Rappels anatomiques & physiologiques', text: 'Le système nerveux sympathique régule les fonctions involontaires (cœur, vaisseaux, viscères). Ses neurones post-ganglionnaires libèrent la **noradrénaline**, recaptée dans la terminaison par un transporteur membranaire spécifique. La **médullosurrénale** est un ganglion sympathique modifié : ses **cellules chromaffines** synthétisent et stockent les catécholamines dans des granules de sécrétion.\n\nLes tumeurs explorées dérivent toutes de la **crête neurale** : le **phéochromocytome** (médullosurrénale), le **paragangliome** (paraganglions extra-surrénaliens, du crâne au pelvis) et le **neuroblastome** (tumeur sympathique de l’enfant). Toutes partagent la caractéristique exploitée par la MIBG : l’expression du **transporteur de la noradrénaline** et la présence de **granules de stockage**.[1,4]' },
