@@ -37,6 +37,7 @@ export const sectionSchema = z.object({
     })
     .optional(),
   infoBox: infoBoxSchema.optional(),
+  infoBoxes: z.array(infoBoxSchema).max(6).optional(),
   stats: z
     .array(
       z.object({

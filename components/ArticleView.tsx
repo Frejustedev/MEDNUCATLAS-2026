@@ -236,6 +236,26 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
               </div>
             )}
 
+            {s.infoBoxes?.map((box, k) => (
+              <div key={`box-${k}`} className={`my-6 p-4 rounded-lg border flex gap-4 ${
+                box.type === 'info' ? 'bg-blue-500/10 border-blue-500/20 text-blue-400' :
+                box.type === 'warning' ? 'bg-orange-500/10 border-orange-500/20 text-orange-400' :
+                'bg-teal/10 border-teal/20 text-teal'
+              }`}>
+                <div className="shrink-0 mt-1">
+                  {box.type === 'info' && <Info className="w-5 h-5" />}
+                  {box.type === 'warning' && <AlertTriangle className="w-5 h-5" />}
+                  {box.type === 'tip' && <Lightbulb className="w-5 h-5" />}
+                </div>
+                <div>
+                  <h4 className="font-bold text-[13px] mb-1">{box.title}</h4>
+                  <div className="text-[13px] leading-relaxed opacity-90 prose dark:prose-invert max-w-none">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{box.text}</ReactMarkdown>
+                  </div>
+                </div>
+              </div>
+            ))}
+
             {s.stats && (
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
                 {s.stats.map((stat, idx) => (

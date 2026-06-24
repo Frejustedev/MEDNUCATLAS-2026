@@ -107,6 +107,12 @@ export interface Section {
     title: string;
     text: string;
   };
+  // Plusieurs encadrés dans une même section (gabarit : Piège/Point expert répétés).
+  infoBoxes?: {
+    type: 'info' | 'warning' | 'tip';
+    title: string;
+    text: string;
+  }[];
   stats?: {
     value: string;
     label: string;
