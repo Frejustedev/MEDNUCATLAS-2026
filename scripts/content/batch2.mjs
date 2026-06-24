@@ -1,6 +1,8 @@
 // Lot 2 — Articles NucleAtlas (assistance IA, à relire). IDs préfixés V2_.
 import {
   THYROID_UPTAKE,
+  THYROID_NIS,
+  THYROID_PATTERNS,
   BONE_SCAN,
   VQ_LUNGS,
   RENOGRAM,
@@ -16,37 +18,83 @@ export const articles = [
   // 1 ───────────────────────────────────────────────────────────────────────
   {
     id: 'V2_SCINTI_THYROIDE', cat: 'endocrinologie', catLabel: 'Endocrinologie',
-    title: 'Scintigraphie thyroïdienne (Tc-99m / I-123)', difficulty: 'intermédiaire',
-    tags: ['scintigraphie', 'thyroïde', 'Tc-99m', 'I-123', 'nodule', 'hyperthyroïdie'],
+    title: 'Scintigraphie thyroïdienne (⁹⁹ᵐTc-pertechnétate / I-123)', difficulty: 'avancé',
+    tags: ['scintigraphie', 'thyroïde', '99mTc', 'I-123', 'nodule', 'hyperthyroïdie', 'NIS', 'captation', 'Basedow', 'nodule toxique'],
     targetAudience: ['patient', 'medecin_non_nuc', 'medecin_nuc'], authors: A, reviewStatus: RS,
     sources: [
-      { title: 'EANM practice guideline for thyroid scintigraphy', url: 'https://doi.org/10.1007/s00259-019-04472-8' },
-      { title: 'SNMMI Procedure Standard for Thyroid Scintigraphy', url: 'https://www.snmmi.org' },
+      { title: 'EANM/SNMMI practice guideline for thyroid scintigraphy & uptake (Eur J Nucl Med Mol Imaging, 2019)', url: 'https://doi.org/10.1007/s00259-019-04472-8' },
+      { title: 'Haugen BR et al. — 2015 ATA Management Guidelines for Thyroid Nodules & Differentiated Thyroid Cancer (Thyroid 2016;26:1-133)', url: 'https://doi.org/10.1089/thy.2015.0020' },
+      { title: 'Cibas ES, Ali SZ — The 2017 Bethesda System for Reporting Thyroid Cytopathology (Thyroid 2017;27:1341-1346)', url: 'https://doi.org/10.1089/thy.2017.0500' },
       { title: 'HAS — Nodule thyroïdien : démarche diagnostique', url: 'https://www.has-sante.fr' },
     ],
     content: {
-      lead: 'La **scintigraphie thyroïdienne** explore la **fonction** de la glande thyroïde en imageant la captation d’un traceur (pertechnétate de **Tc-99m** ou iode **I-123**). Elle distingue les nodules « chauds » (hyperfonctionnels, presque toujours bénins) des nodules « froids » (à explorer), et caractérise les hyperthyroïdies.',
+      lead: 'La **scintigraphie thyroïdienne** image la **fonction** de la glande en cartographiant la captation d’un traceur par le **symporteur sodium-iode (NIS)** des thyréocytes. Couplée au dosage de **TSH** et à l’échographie, elle caractérise les **hyperthyroïdies** (Basedow, nodule toxique, thyroïdite) et statue sur le caractère **fonctionnel** d’un nodule (« chaud » presque toujours bénin vs « froid » à explorer). Examen rapide et peu irradiant — mais **mis en échec par toute surcharge iodée**.',
       patient: {
         sections: [
-          { title: 'À quoi sert l’examen ?', text: 'Il évalue **comment fonctionne** votre thyroïde, glande située à la base du cou. Une petite quantité de produit faiblement radioactif, capté par la thyroïde, permet de visualiser les zones plus ou moins actives.',
-            figure: { svg: THYROID_UPTAKE, alt: 'Schéma d’une thyroïde avec ses deux lobes et l’isthme, montrant un nodule « chaud » très fixant et un nodule « froid » non fixant.', caption: 'La scintigraphie montre les zones actives (« chaudes ») et inactives (« froides ») de la thyroïde.' } },
-          { title: 'Préparation', list: ['Signalez tout examen récent avec **produit de contraste iodé** (scanner) : l’iode bloque la thyroïde pendant plusieurs semaines.', 'Indiquez vos médicaments (hormones thyroïdiennes, amiodarone…).', 'Prévenez en cas de grossesse ou d’allaitement.'] },
-          { title: 'Déroulement', text: 'Injection (ou prise d’une gélule pour l’I-123), court délai, puis images du cou de **15–20 minutes**. Examen indolore, radioactivité faible et transitoire.' },
+          { title: 'À quoi sert l’examen ?', text: 'Il évalue **comment fonctionne** votre thyroïde, la glande en forme de papillon à la base du cou. Une très petite quantité de produit faiblement radioactif, capté par la thyroïde comme elle capte l’iode des aliments, révèle les zones **plus actives** (« chaudes ») et **moins actives** (« froides »).',
+            figure: { svg: THYROID_PATTERNS, alt: 'Quatre silhouettes de thyroïde : fixation normale homogène, Basedow diffus intense, nodule toxique focal avec extinction du reste, et thyroïdite à captation effondrée.', caption: 'L’aspect de la fixation oriente le diagnostic : diffus (Basedow), focal (nodule toxique) ou effondré (thyroïdite).' } },
+          { title: 'Comment se préparer', list: [
+            'Signalez tout **scanner avec produit de contraste iodé** récent : l’iode sature la thyroïde et **bloque l’examen 4 à 8 semaines**.',
+            'Listez vos médicaments : **hormones thyroïdiennes** (Levothyrox®), **amiodarone** (bloque des mois), antithyroïdiens, antiseptiques/sirops iodés.',
+            'Évitez les compléments riches en iode (algues) les jours précédents.',
+            'Prévenez en cas de **grossesse** ou d’**allaitement** (surtout pour l’iode).',
+          ] },
+          { title: 'Déroulement', text: 'Une injection dans une veine (technétium) **ou** une gélule à avaler (iode-123). Après un court délai, la caméra prend des images du cou pendant **15–20 minutes**. C’est **indolore** ; la radioactivité est faible et disparaît en quelques heures (technétium) à un ou deux jours (iode).' },
         ],
       },
       medecin_non_nuc: {
         sections: [
-          { title: 'Indications', list: ['**Hyperthyroïdie** : différencier maladie de Basedow (fixation diffuse), nodule toxique (fixation focale), thyroïdite (fixation effondrée).', 'Caractérisation d’un **nodule** (chaud vs froid) en complément de l’échographie et du dosage TSH.', 'Bilan d’un **goitre** multinodulaire, recherche de tissu ectopique/rétrosternal.'] },
-          { title: 'À savoir avant de prescrire', infoBox: { type: 'warning', title: 'Iode et interférences', text: 'Un scanner injecté récent, l’amiodarone ou un excès d’iode rendent l’examen ininterprétable. Vérifier la TSH : la scintigraphie d’un nodule n’est contributive qu’en cas de TSH basse/normale-basse.' },
-            text: 'La scintigraphie n’évalue **pas** le risque de cancer d’un nodule froid : c’est la **cytoponction** échoguidée qui tranche.' },
+          { title: 'Le bon ordre : TSH d’abord', text: 'La scintigraphie n’est contributive pour un **nodule** que si la **TSH est basse ou normale-basse** (recherche d’autonomie). Devant une **hyperthyroïdie franche** (TSH effondrée), elle tranche le mécanisme. Inutile — voire trompeuse — si la TSH est normale haute/élevée.' },
+          { title: 'Indications', list: [
+            '**Hyperthyroïdie** : différencier Basedow (fixation **diffuse**), nodule/goitre toxique (fixation **focale** avec extinction), thyroïdite (fixation **effondrée**), thyrotoxicose factice/iodée.',
+            'Caractérisation **fonctionnelle d’un nodule** à TSH basse : **chaud** (autonome, < 1 % de cancers) vs **froid** (à ponctionner).',
+            '**Goitre** multinodulaire (zones autonomes), **tissu ectopique** (lingual) ou **rétrosternal**.',
+            'Bilan **pré-thérapeutique** avant iode-131 (mesure de captation).',
+          ] },
+          { title: 'Ce qu’elle ne fait pas', infoBox: { type: 'warning', title: 'Scintigraphie ≠ dépistage du cancer', text: 'Un nodule « froid » n’est pas synonyme de cancer (85–90 % bénins) et la scintigraphie **n’évalue pas** la malignité : ce sont l’**échographie (EU-TIRADS)** et la **cytoponction (Bethesda)** qui tranchent. La scintigraphie sert à repérer les nodules **autonomes**, qu’on ne ponctionne pas.' } },
         ],
       },
       medecin_nuc: {
         sections: [
-          { title: 'Traceurs et dosimétrie', text: 'Le **pertechnétate Tc-99m** (capté mais non organifié, examen rapide ~20 min après injection) est le plus utilisé ; l’**I-123** (capté ET organifié, imagerie à 4–24 h) est préféré pour le tissu ectopique et l’étude fonctionnelle fine.',
-            stats: [{ value: '~75–185 MBq', label: 'Tc-99m pertechnétate' }, { value: '~10–20 MBq', label: 'I-123 (gélule)' }, { value: '20 min / 4-24 h', label: 'Délai (Tc / I-123)' }] },
-          { title: 'Interprétation', text: 'On apprécie la **taille, la position, l’homogénéité** de la fixation et la concordance avec l’échographie. Un nodule **hyperfixant avec extinction** du reste du parenchyme évoque un adénome toxique. La quantification du **pourcentage de captation** aide au calcul d’activité avant ira-thérapie.' },
-          { title: 'Pièges', list: ['Contamination salivaire (Tc-99m) simulant une fixation.', 'Nodule « froid » : 85–90 % bénins, mais c’est là que se concentrent les cancers → cytoponction.', 'Surcharge iodée (faux aspect de thyroïdite).'] },
+          { title: '1 · Mécanisme de captation (NIS)', text: 'Le traceur entre dans le thyréocyte par le **symporteur sodium-iode (NIS)** de la membrane basale. Différence essentielle :\n- l’**iode (I-123, I-131)** est capté **puis organifié** (couplé à la thyroglobuline par la **thyroperoxydase, TPO**) → **rétention** durable, imagerie tardive, reflet de la synthèse hormonale ;\n- le **pertechnétate ⁹⁹ᵐTcO₄⁻** est capté par le NIS **mais non organifié** → piégé transitoirement puis **lavé**, d’où une imagerie **précoce** reflétant la seule captation.',
+            figure: { svg: THYROID_NIS, alt: 'Thyréocyte : le NIS capte I⁻ et TcO4⁻ depuis le sang ; l’iode est organifié par la TPO dans le colloïde (rétention) alors que le technétium reste piégé sans organification (lavage).', caption: 'Le NIS est la porte d’entrée commune ; seul l’iode est organifié (TPO) et retenu — le ⁹⁹ᵐTc est lavé.' } },
+          { title: '2 · Radiopharmaceutiques & dosimétrie', text: 'Le **⁹⁹ᵐTc-pertechnétate** pour un examen rapide et peu coûteux (cas le plus fréquent) ; l’**I-123** quand l’organification compte (ectopie, discordance, étude fine, pré-IRA).',
+            table: {
+              headers: ['Traceur', 'Énergie γ', 'Délai imagerie', 'Activité usuelle', 'Particularité'],
+              rows: [
+                ['⁹⁹ᵐTc-pertechnétate', '140 keV', '15–20 min', '40–185 MBq', 'Capté, non organifié (lavage)'],
+                ['I-123 (gélule)', '159 keV', '3–4 h (± 24 h)', '7,5–25 MBq', 'Capté + organifié (rétention)'],
+                ['I-131 (diagnostic)', '364 keV', '24 h', 'faible', 'Surtout corps entier / cancer différencié'],
+              ],
+            },
+            stats: [{ value: '140 keV', label: '⁹⁹ᵐTc (collimateur basse énergie)' }, { value: '159 keV', label: 'I-123' }, { value: '≈ 1 mSv', label: 'Dose efficace (Tc, ordre de grandeur)' }] },
+          { title: '3 · Indications détaillées', list: [
+            'Étiologie d’une **thyrotoxicose** (TSH effondrée) : diffuse vs focale vs effondrée.',
+            'Caractérisation d’un **nodule autonome** à TSH basse (ponction vs traitement).',
+            'Cartographie d’un **goitre multinodulaire** toxique/pré-toxique.',
+            '**Tissu thyroïdien ectopique** (lingual, rétrosternal) ou résiduel.',
+            'Mesure de la **captation (RAIU)** en bilan pré-iode-131.',
+          ] },
+          { title: '4 · Contre-indications & interférences iodées', infoBox: { type: 'warning', title: 'Vérifier l’exposition à l’iode AVANT', text: 'Toute surcharge iodée effondre la captation et rend l’examen ininterprétable. Délais d’éviction indicatifs : **contraste iodé 4–8 semaines** ; **amiodarone 3–6 mois (voire plus)** ; **LT4 ~4–6 semaines**, antithyroïdiens selon protocole. **I-123/I-131 contre-indiqués pendant la grossesse** ; allaitement à suspendre.' },
+            list: ['Grossesse (iode radioactif) ; allaitement.', 'Surcharge iodée (contraste, amiodarone, antiseptiques, alimentation).', 'Traitements interférents non suspendus selon la question posée.'] },
+          { title: '5 · Protocole d’acquisition', steps: [
+            { title: 'Installation', text: 'Décubitus dorsal, cou en hyperextension (billot sous les épaules), sans bijou.' },
+            { title: 'Collimateur', text: 'Sténopé (**pinhole**) pour la résolution, ou parallèle basse énergie haute résolution ; fenêtre centrée sur 140 keV (Tc) ou 159 keV (I-123).' },
+            { title: 'Incidences & repères', text: 'Face antérieure ± obliques ; marqueurs (fourchette sternale, nodule palpable) pour corréler à la palpation et à l’échographie.' },
+            { title: 'Captation (RAIU) si demandée', text: 'Mesure du **% de fixation** à la sonde ou caméra, à 4–6 h et/ou 24 h pour l’iode, avec standard et soustraction du bruit de fond (cuisse).' },
+          ] },
+          { title: '6 · Quantification (RAIU)', text: '**% de captation** = (activité thyroïdienne corrigée du bruit de fond) / (activité administrée) × 100. Très **dépendant de l’apport iodé local** ; à titre indicatif, iode à 24 h ~10–30 % (abaissé en zone d’apport iodé élevé). Une captation **élevée** oriente vers Basedow/nodule toxique, **effondrée** vers thyroïdite ou surcharge iodée. Elle conditionne le **calcul d’activité** d’iode-131 (méthode de Marinelli).',
+            infoBox: { type: 'info', title: 'Pourquoi mesurer la captation', text: 'Une hyperthyroïdie « qui fixe » (Basedow, nodule toxique) relève de l’iode-131 ; une thyroïdite « qui ne fixe pas » n’en relève PAS. La captation guide l’indication ET la dose.' } },
+          { title: '7 · Interprétation / sémiologie', text: 'On analyse **intensité, homogénéité, topographie** et la concordance avec l’échographie :\n- **diffuse intense** → maladie de Basedow ;\n- **focale hyperfixante avec extinction** du parenchyme sain → nodule toxique autonome ;\n- **hétérogène** (zones chaudes + froides) → goitre multinodulaire ;\n- **effondrée** → thyroïdite (De Quervain, post-partum, silencieuse), surcharge iodée, thyrotoxicose factice ;\n- **nodule froid** → non fonctionnel, à explorer par cytoponction.' },
+          { title: '8 · Pièges & artefacts', list: [
+            '**Contamination salivaire** (⁹⁹ᵐTc) simulant une fixation — faire boire/rincer.',
+            '**Lobe pyramidal** physiologique à ne pas confondre avec une lésion.',
+            'Nodule **discordant** : chaud au ⁹⁹ᵐTc (capté) mais froid à l’I-123 (non organifié) → potentiellement suspect ; privilégier l’iode au moindre doute.',
+            '**Surcharge iodée** méconnue → faux aspect de thyroïdite (captation basse).',
+            'Marqueurs anatomiques mal placés → erreur de latéralisation.',
+          ] },
+          { title: '9 · Place dans la stratégie', text: 'Algorithme : **TSH** → si basse, scintigraphie pour l’autonomie ; **échographie (EU-TIRADS)** pour le risque morphologique ; **cytoponction (Bethesda)** pour les nodules suspects **non** autonomes. La scintigraphie évite de ponctionner un nodule chaud et sélectionne les candidats à l’**iode-131** (Basedow, nodule/goitre toxique). Pour le **cancer différencié**, c’est la scintigraphie **corps entier à l’iode-131** (post-thérapeutique) qui prend le relais.',
+            stats: [{ value: 'TSH', label: '1ʳᵉ étape' }, { value: '< 1 %', label: 'Cancers dans un nodule chaud' }, { value: 'Bethesda', label: 'Cytologie des nodules froids' }] },
         ],
       },
     },

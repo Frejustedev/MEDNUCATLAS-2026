@@ -466,3 +466,83 @@ export const GASTRIC_EMPTYING = `
   <text x="300" y="240" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.6">T½</text>
   <text x="300" y="35" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.75">Mesure du temps de demi-vidange d'un repas marqué au ⁹⁹ᵐTc</text>
 </svg>`;
+
+// ── Captation thyroïdienne : NIS, piégeage du Tc vs organification de l'iode ──
+export const THYROID_NIS = `
+<svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" width="620" height="300">
+  <text x="310" y="22" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.78">Captation thyroïdienne — symporteur NIS, piégeage du ⁹⁹ᵐTc vs organification de l'iode</text>
+
+  <rect x="18" y="55" width="92" height="205" rx="14" fill="${RED}" fill-opacity="0.06" stroke="${RED}" stroke-width="1.5"/>
+  <text x="64" y="76" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Sang</text>
+  <circle cx="50" cy="115" r="9" fill="${BLUE}" fill-opacity="0.6"/><text x="50" y="119" text-anchor="middle" font-size="9" fill="currentColor">I⁻</text>
+  <circle cx="80" cy="148" r="9" fill="${PURPLE}" fill-opacity="0.6"/><text x="80" y="152" text-anchor="middle" font-size="7.5" fill="currentColor">TcO₄⁻</text>
+  <circle cx="54" cy="185" r="9" fill="${BLUE}" fill-opacity="0.6"/><text x="54" y="189" text-anchor="middle" font-size="9" fill="currentColor">I⁻</text>
+
+  <rect x="150" y="52" width="255" height="210" rx="20" fill="${TEAL}" fill-opacity="0.06" stroke="${TEAL}" stroke-width="2"/>
+  <text x="277" y="74" text-anchor="middle" font-size="11.5" fill="currentColor" opacity="0.8">Thyréocyte (cellule folliculaire)</text>
+
+  <rect x="138" y="115" width="24" height="80" rx="6" fill="currentColor" opacity="0.12"/>
+  <rect x="150" y="125" width="13" height="60" rx="4" fill="${AMBER}" fill-opacity="0.55"/>
+  <text x="150" y="212" text-anchor="middle" font-size="10" fill="${AMBER}">NIS</text>
+  <text x="150" y="224" text-anchor="middle" font-size="8" fill="currentColor" opacity="0.7">Na⁺/I⁻</text>
+
+  <line x1="100" y1="130" x2="148" y2="148" stroke="${BLUE}" stroke-width="2"/><polygon points="148,148 139,144 140,154" fill="${BLUE}"/>
+  <line x1="100" y1="152" x2="148" y2="160" stroke="${PURPLE}" stroke-width="2"/><polygon points="148,160 139,156 140,166" fill="${PURPLE}"/>
+
+  <circle cx="225" cy="145" r="9" fill="${BLUE}" fill-opacity="0.6"/><text x="225" y="149" text-anchor="middle" font-size="9" fill="currentColor">I⁻</text>
+  <circle cx="262" cy="185" r="9" fill="${PURPLE}" fill-opacity="0.6"/><text x="262" y="189" text-anchor="middle" font-size="8" fill="currentColor">Tc</text>
+  <text x="285" y="150" font-size="9.5" fill="currentColor" opacity="0.7">piégeage</text>
+
+  <rect x="392" y="105" width="22" height="105" rx="6" fill="currentColor" opacity="0.12"/>
+  <rect x="398" y="115" width="12" height="85" rx="4" fill="${TEAL}" fill-opacity="0.5"/>
+  <text x="403" y="225" text-anchor="middle" font-size="10" fill="${TEAL}">TPO</text>
+
+  <line x1="240" y1="145" x2="392" y2="145" stroke="${BLUE}" stroke-width="2"/><polygon points="392,145 383,141 384,151" fill="${BLUE}"/>
+
+  <rect x="430" y="52" width="172" height="210" rx="20" fill="${BLUE}" fill-opacity="0.05" stroke="${BLUE}" stroke-width="1.5"/>
+  <text x="516" y="74" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Colloïde</text>
+  <text x="516" y="140" text-anchor="middle" font-size="11" fill="currentColor">I–Tg</text>
+  <text x="516" y="156" text-anchor="middle" font-size="8" fill="currentColor" opacity="0.7">organification</text>
+  <text x="516" y="120" text-anchor="middle" font-size="9.5" fill="${BLUE}">→ T3 / T4</text>
+
+  <text x="310" y="284" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.82">⁹⁹ᵐTc : capté (NIS) mais NON organifié → lavage · I⁻ : capté ET organifié → rétention prolongée</text>
+</svg>`;
+
+// ── Profils de fixation en scintigraphie thyroïdienne ────────────────────────
+export const THYROID_PATTERNS = `
+<svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" width="640" height="220">
+  <text x="320" y="20" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.78">Profils de fixation en scintigraphie thyroïdienne</text>
+
+  <g transform="translate(28,34)">
+    <ellipse cx="35" cy="85" rx="20" ry="36" fill="${TEAL}" fill-opacity="0.45" stroke="currentColor" stroke-width="1.2"/>
+    <ellipse cx="85" cy="85" rx="20" ry="36" fill="${TEAL}" fill-opacity="0.45" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="50" y="74" width="20" height="24" rx="4" fill="${TEAL}" fill-opacity="0.45"/>
+    <text x="60" y="150" text-anchor="middle" font-size="11" fill="currentColor">Normal</text>
+    <text x="60" y="165" text-anchor="middle" font-size="8.5" fill="currentColor" opacity="0.65">homogène</text>
+  </g>
+
+  <g transform="translate(180,34)">
+    <ellipse cx="35" cy="85" rx="22" ry="38" fill="${RED}" fill-opacity="0.8" stroke="currentColor" stroke-width="1.2"/>
+    <ellipse cx="85" cy="85" rx="22" ry="38" fill="${RED}" fill-opacity="0.8" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="49" y="72" width="22" height="28" rx="4" fill="${RED}" fill-opacity="0.8"/>
+    <text x="60" y="150" text-anchor="middle" font-size="11" fill="currentColor">Basedow</text>
+    <text x="60" y="165" text-anchor="middle" font-size="8.5" fill="currentColor" opacity="0.65">diffus intense</text>
+  </g>
+
+  <g transform="translate(332,34)">
+    <ellipse cx="35" cy="85" rx="20" ry="36" fill="${TEAL}" fill-opacity="0.08" stroke="currentColor" stroke-width="1.2"/>
+    <ellipse cx="85" cy="85" rx="20" ry="36" fill="${TEAL}" fill-opacity="0.08" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="50" y="74" width="20" height="24" rx="4" fill="${TEAL}" fill-opacity="0.08"/>
+    <circle cx="85" cy="80" r="15" fill="${AMBER}" fill-opacity="0.9"/>
+    <text x="60" y="150" text-anchor="middle" font-size="11" fill="currentColor">Nodule toxique</text>
+    <text x="60" y="165" text-anchor="middle" font-size="8.5" fill="currentColor" opacity="0.65">focal + extinction</text>
+  </g>
+
+  <g transform="translate(484,34)">
+    <ellipse cx="35" cy="85" rx="20" ry="36" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2"/>
+    <ellipse cx="85" cy="85" rx="20" ry="36" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2"/>
+    <rect x="50" y="74" width="20" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 2"/>
+    <text x="60" y="150" text-anchor="middle" font-size="11" fill="currentColor">Thyroïdite</text>
+    <text x="60" y="165" text-anchor="middle" font-size="8.5" fill="currentColor" opacity="0.65">captation effondrée</text>
+  </g>
+</svg>`;
