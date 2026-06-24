@@ -4,6 +4,9 @@ import {
   PET_COINCIDENCE,
   GAMMA_CAMERA,
   BULLSEYE_17,
+  MIBG_UPTAKE,
+  MIBG_BIODISTRIB,
+  ALARA_TDS,
 } from './diagrams.mjs';
 
 const A = ['Rédaction NucleAtlas', 'Assistance IA (Gemini)'];
@@ -252,32 +255,108 @@ export const articles = [
   // 8 — MIBG (phéochromocytome / neuroblastome) ─────────────────────────────
   {
     id: 'V2_MIBG', cat: 'endocrinologie', catLabel: 'Endocrinologie',
-    title: 'Scintigraphie à la 123I-MIBG (phéochromocytome, neuroblastome)', difficulty: 'avancé',
-    tags: ['MIBG', '123I', 'phéochromocytome', 'paragangliome', 'neuroblastome', 'théranostique'],
+    title: 'Scintigraphie à la MIBG (¹²³I/¹³¹I) — phéochromocytome, paragangliome, neuroblastome', difficulty: 'avancé',
+    tags: ['MIBG', '123I', '131I', 'phéochromocytome', 'paragangliome', 'neuroblastome', 'NET', 'SIOPEN', 'Curie', 'théranostique', 'sympatho-adrénergique'],
     targetAudience: ['patient', 'medecin_non_nuc', 'medecin_nuc'], authors: A, reviewStatus: RS,
     sources: [
-      { title: 'EANM — 123I/131I-mIBG scintigraphy guideline', url: 'https://doi.org/10.1007/s00259-010-1357-9' },
-      { title: 'SIOPEN — Neuroblastoma mIBG scoring', url: 'https://www.siopen.net' },
+      { title: 'Bombardieri E et al. — EANM procedure guidelines for ¹³¹I/¹²³I-mIBG scintigraphy in tumour imaging. Eur J Nucl Med Mol Imaging 2010;37(12):2436-2446', url: 'https://doi.org/10.1007/s00259-010-1545-7' },
+      { title: 'Taïeb D et al. — EANM/SNMMI practice guideline for radionuclide imaging of phaeochromocytoma & paraganglioma. Eur J Nucl Med Mol Imaging 2019;46(10):2112-2137', url: 'https://www.eanm.org/publications/guidelines/' },
+      { title: 'Lenders JWM et al. — Pheochromocytoma and Paraganglioma: an Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2014;99(6):1915-1942', url: 'https://doi.org/10.1210/jc.2014-1498' },
+      { title: 'SIOPEN — Semi-quantitative ¹²³I-mIBG skeletal scoring (neuroblastome)', url: 'https://www.siopen.net' },
+      { title: 'SNMMI — Procedure Standard for ¹²³I/¹³¹I-mIBG scintigraphy', url: 'https://www.snmmi.org/guidelines' },
+      { title: 'ICRP Publication 128 — Radiation dose to patients from radiopharmaceuticals (coefficients de dose)', url: 'https://www.icrp.org' },
     ],
     content: {
-      lead: 'La **MIBG** (méta-iodo-benzylguanidine, marquée à l’**123I**) est captée par les tissus du système **sympatho-adrénergique**. Elle image les **phéochromocytomes, paragangliomes** et le **neuroblastome** de l’enfant, et identifie les patients candidats à un traitement par **131I-MIBG**.',
+      // §0 — Présentation générale (commune aux 4 profils)
+      lead: 'La **scintigraphie à la MIBG** (méta-iodobenzylguanidine) repère les tumeurs dérivées du **tissu nerveux sympathique** — surtout le **phéochromocytome**, le **paragangliome** et le **neuroblastome** de l’enfant. On injecte un traceur faiblement radioactif qui se fixe spécifiquement sur ces tumeurs, puis une caméra réalise des images du corps entier, en général **le lendemain**. L’examen est indolore et l’irradiation modérée. Il sert aussi à savoir si un **traitement par MIBG radioactive (¹³¹I-MIBG)** est envisageable — c’est un couple *théranostique*.',
       patient: {
         sections: [
-          { title: 'À quoi ça sert ?', text: 'À localiser certaines tumeurs particulières (des glandes surrénales ou du système nerveux). Le produit se fixe spécifiquement sur ces tumeurs.' },
-          { title: 'Préparation', text: 'Un **blocage de la thyroïde** (iode) est donné avant et après l’injection. Certains médicaments interférents sont à suspendre selon consignes. Images sur 1–2 jours.' },
+          { title: 'À quoi sert l’examen ?', text: 'À **localiser** certaines tumeurs rares des glandes surrénales ou du système nerveux, et à voir si elles sont uniques ou multiples. Le produit injecté se fixe **spécifiquement** sur ces tumeurs, ce qui les fait « ressortir » sur les images.' },
+          { title: 'Comment se préparer', list: [
+            'Vous prendrez des **comprimés pour protéger la thyroïde** (iode/Lugol), à débuter avant l’examen et à poursuivre quelques jours après.',
+            'Certains **médicaments** (pour la tension, antidépresseurs, décongestionnants…) gênent l’examen : ils sont arrêtés un temps **sur consigne médicale** — ne rien arrêter seul.',
+            'Prévenez en cas de **grossesse** ou d’**allaitement**.',
+          ] },
+          { title: 'Le jour de l’examen et après', text: 'Une **injection** lente dans une veine. Les images sont prises **le lendemain** (parfois aussi à 2 jours), avec parfois un complément couplé au scanner (SPECT/CT). C’est indolore ; pensez à **bien boire**. Quelques consignes simples de précaution vous seront remises pour les heures qui suivent.' },
         ],
       },
       medecin_non_nuc: {
         sections: [
-          { title: 'Indications', list: ['**Phéochromocytome / paragangliome** : localisation, formes multiples/héréditaires, extension.', '**Neuroblastome** (enfant) : diagnostic, extension, suivi (score SIOPEN).', 'Sélection avant **thérapie au 131I-MIBG**.'] },
-          { title: 'À savoir', infoBox: { type: 'warning', title: 'Médicaments interférents', text: 'De nombreux médicaments (certains antihypertenseurs, antidépresseurs, sympathomimétiques) bloquent la captation de la MIBG et doivent être arrêtés avant l’examen.' } },
+          { title: 'Quand y penser', list: [
+            '**Phéochromocytome / paragangliome** : localisation, formes multiples ou héréditaires (SDHx, NF1, VHL, MEN2), bilan d’extension.',
+            '**Neuroblastome** de l’enfant : diagnostic, extension, évaluation de la réponse (score **SIOPEN**).',
+            'Sélection des patients candidats à une **thérapie par ¹³¹I-MIBG** (tumeur MIBG-avide).',
+          ] },
+          { title: 'Avant d’adresser', infoBox: { type: 'warning', title: 'Deux pièges fréquents', text: '1) De nombreux **médicaments** (labétalol, tricycliques, sympathomimétiques…) bloquent la captation et donnent des **faux négatifs** : à anticiper. 2) Les formes **SDHB / dédifférenciées** fixent mal la MIBG → la **TEP au ⁶⁸Ga-DOTATATE** (ou ¹⁸F-FDOPA/FDG) est souvent plus performante. La MIBG garde sa place pour le neuroblastome et la sélection théranostique.' } },
+          { title: 'Place dans la stratégie', text: 'Pour le **phéochromocytome/paragangliome**, les recommandations récentes placent souvent la **TEP-SSTR (⁶⁸Ga-DOTATATE)** en première ligne (sensibilité supérieure, surtout métastatique et SDHx). La **MIBG** reste centrale en **pédiatrie (neuroblastome)** et pour décider d’un **traitement par ¹³¹I-MIBG**.' },
         ],
       },
       medecin_nuc: {
         sections: [
-          { title: 'Protocole', text: '**Blocage thyroïdien** (iodure/perchlorate) avant et après. Injection de **123I-MIBG**, imagerie à **24 h** (± 48 h) planaire + **SPECT/CT**. Arrêt préalable des médicaments interférents.',
-            stats: [{ value: '123I-MIBG', label: 'Diagnostic' }, { value: '24–48 h', label: 'Imagerie' }, { value: 'Blocage thyroïde', label: 'Obligatoire' }] },
-          { title: 'Théranostique et pièges', list: ['Une fixation tumorale franche prédit l’efficacité d’un traitement **131I-MIBG**.', 'Captation physiologique : myocarde, foie, glandes salivaires, surrénales normales.', 'Faux négatifs : tumeurs peu différenciées (envisager TEP-DOTATATE ou FDG).'] },
+          // ───────── MOUVEMENT A — COMPRENDRE ─────────
+          { title: 'A1 · Carte d’identité', text: 'Fiche-réflexe de l’examen (champs constants d’un article à l’autre).\n\n| Champ | Valeur |\n|---|---|\n| Acronyme × modalité | MIBG · planaire corps entier + **TEMP/TDM** |\n| Traceur principal | **¹²³I-MIBG** (alternative : ¹³¹I-MIBG) |\n| Émission × énergie | ¹²³I : γ **159 keV** · T½ 13,2 h |\n| Voie × activité adulte | **IV lente** · ~**370 MBq** (¹²³I) |\n| Délai × durée | **24 h** (± 48 h) · ~30–60 min |\n| Organe critique × dose | Foie/vessie ; **thyroïde si non bloquée** · ≈ **5 mSv** |\n| Préparation clé | **Blocage thyroïdien** + arrêt médicaments interférents |\n| Disponibilité × liés | ¹²³I sur commande · couple **théranostique ¹³¹I-MIBG** |',
+            stats: [{ value: '¹²³I-MIBG', label: 'Traceur diagnostic' }, { value: '159 keV', label: 'γ (¹²³I, T½ 13,2 h)' }, { value: '~370 MBq', label: 'Activité adulte' }, { value: '24 h (±48 h)', label: 'Délai d’imagerie' }] },
+          { title: 'A2 · Définition', text: 'La scintigraphie à la MIBG est une imagerie **fonctionnelle et moléculaire** : elle ne montre pas la *forme* d’une lésion mais sa **capacité à capter et stocker un analogue de la noradrénaline**. La MIBG emprunte le **transporteur de la noradrénaline (NET / uptake-1)** puis est stockée dans les **granules neurosécrétoires**. Une fixation traduit donc un tissu **sympatho-adrénergique fonctionnel** (normal ou tumoral) — information **fonctionnelle**, à coupler à l’imagerie **morphologique** (TDM/IRM) via la TEMP/TDM.' },
+          { title: 'A3 · Rappels anatomo-physiologiques', text: 'Les cellules cibles dérivent de la **crête neurale** : **médullosurrénale** (cellules chromaffines) et **ganglions sympathiques/paraganglions** (de la base du crâne au pelvis). Elles synthétisent et stockent les **catécholamines** (noradrénaline/adrénaline) dans des granules, via le **NET** (recapture membranaire) et le **VMAT** (stockage vésiculaire). C’est précisément cette machinerie qu’exploite la MIBG — d’où sa spécificité pour les tumeurs de cette lignée.' },
+          { title: 'A4 · Principe : la cible biologique', text: 'La MIBG (analogue de la noradrénaline) est **captée activement par le NET** des cellules sympatho-adrénergiques, puis **séquestrée** dans les granules par le VMAT. \n\n- **Hyperfixation** = densité élevée de cellules exprimant le NET (tumeur avide).\n- **Hypofixation/absence** = perte d’expression du NET (dédifférenciation, SDHB) **ou** blocage pharmacologique du NET.\n\nCe mécanisme explique à la fois les **indications** (§A5) et les **faux négatifs** (§C14).',
+            figure: { svg: MIBG_UPTAKE, alt: 'La MIBG, analogue de la noradrénaline, est captée par le transporteur NET (uptake-1) de la cellule chromaffine puis stockée dans les granules via le VMAT ; de nombreux médicaments bloquent le NET.', caption: 'Captation par le NET (uptake-1) puis stockage vésiculaire (VMAT) — base de la spécificité ET des faux négatifs médicamenteux.' } },
+          { title: 'A5 · Indications', text: 'Le cœur clinique — quand et pourquoi prescrire.\n\n| Domaine | Indication | Ce que l’examen apporte |\n|---|---|---|\n| Endocrinologie | **Phéochromocytome** | Localisation, bilatéralité, formes héréditaires, extension |\n| Endocrinologie/ORL | **Paragangliome** | Cartographie (multifocalité), caractérisation fonctionnelle |\n| Pédiatrie/Onco | **Neuroblastome** | Diagnostic, extension osseuse/médullaire, **réponse (SIOPEN)** |\n| Théranostique | Sélection pré-**¹³¹I-MIBG** | Confirme l’avidité = candidat au traitement |\n\nToujours expliciter le **rationale** (renvoi §A4) et le **statut** (validée vs émergente). Pour le phéo/para, intégrer la **TEP-SSTR** dans la décision (§D17-D19).' },
+          { title: 'A6 · Contre-indications & précautions', text: 'Pas de CI absolue en dehors de la **grossesse** ; précautions essentielles :\n\n| Type | Éléments |\n|---|---|\n| **Absolues** | Grossesse (iode radioactif) |\n| **Relatives** | Allaitement (suspendre), médicaments interférents non arrêtés, surcharge iodée |\n\nInjection **lente** (le bolus rapide peut théoriquement déclencher une décharge catécholaminergique chez le phéochromocytome).',
+            infoBox: { type: 'warning', title: 'Alerte — à vérifier impérativement', text: '**Blocage thyroïdien obligatoire** (iodure de potassium/Lugol ou perchlorate) débuté **avant** l’injection et poursuivi quelques jours (protège la thyroïde de l’iode radioactif libre). **Grossesse contre-indiquée**, allaitement à suspendre. Revoir la liste des **médicaments interférents** (§B8) et la fonction rénale.' } },
+
+          // ───────── MOUVEMENT B — RÉALISER ─────────
+          { title: 'B7 · Radiopharmaceutique(s) & mécanisme de fixation', text: 'Deux marquages, un même vecteur (MIBG) ; le choix dépend de l’objectif.\n\n| | **¹²³I-MIBG** | **¹³¹I-MIBG** |\n|---|---|---|\n| Usage | Diagnostic (**préféré**) | Diagnostic (ancien) + **thérapie** |\n| Émission γ | 159 keV | 364 keV (+ β⁻ thérapeutique) |\n| Période | 13,2 h | 8,02 j |\n| Image / dose | **Meilleure / plus faible** | Moindre / plus forte |\n| Imagerie | 24 h (± 48 h) | 24–72 h |\n\n**Contrôle qualité** du traceur : pureté radiochimique (chromatographie), pureté radionucléidique, pH, stérilité/apyrogénicité. **Activités** : adulte ~370 MBq (¹²³I) ; **enfant selon la carte de dose EANM** (fonction du poids, activité minimale garantie).' },
+          { title: 'B8 · Préparation du patient', steps: [
+            { title: 'J-1 → blocage thyroïdien', text: 'Iodure de potassium/Lugol (ou perchlorate) débuté ~24 h avant, poursuivi quelques jours après — protège la thyroïde de l’iode libre.' },
+            { title: 'Arrêt des médicaments interférents', text: 'Selon demi-vie : labétalol ~72 h ; tricycliques, sympathomimétiques (décongestionnants/pseudoéphédrine), certains inhibiteurs calciques/antipsychotiques, tramadol, cocaïne, réserpine. Toujours sur avis médical.' },
+            { title: 'Le jour J', text: 'Hydratation, vérification des arrêts, voie veineuse ; injection **lente** ; vidange vésicale avant l’acquisition.' },
+          ],
+            infoBox: { type: 'warning', title: 'Médicaments interférents (faux négatifs)', text: 'Mécanisme : inhibition du NET ou déplétion des granules. Principaux : **labétalol**, **antidépresseurs tricycliques**, **sympathomimétiques** (décongestionnants), inhibiteurs calciques (certains), antipsychotiques, tramadol, cocaïne, réserpine. Établir la liste personnalisée et les délais d’arrêt avant l’examen.' } },
+          { title: 'B9 · Instrument, CQ & protocole d’acquisition', text: 'CQ de la γ-caméra **en prérequis** (uniformité, COR, résolution, sensibilité). Paramètres recommandés :\n\n| Paramètre | Recommandation | Pourquoi |\n|---|---|---|\n| Collimateur | **LEHR** (¹²³I, 159 keV) ; **haute énergie** pour ¹³¹I | limiter la pénétration septale |\n| Fenêtre | 159 keV ± 10 % | photopic ¹²³I |\n| Acquisition | **corps entier planaire** + **TEMP/TDM** ciblée | localisation anatomique, ↑ sensibilité |\n| Délai | 24 h (± 48 h) | meilleur contraste tumeur/fond |',
+            figure: { svg: GAMMA_CAMERA, alt: 'Schéma d’une gamma-caméra (collimateur, cristal NaI(Tl), photomultiplicateurs, électronique de positionnement).', caption: 'L’imagerie MIBG repose sur la γ-caméra (planaire + TEMP/TDM) ; le collimateur est adapté à l’énergie de l’iode utilisé.' } },
+          { title: 'B10 · Traitement, reconstruction & quantification', text: 'Reconstruction TEMP par **OSEM** (itérations/sous-ensembles, filtre) avec **correction d’atténuation** (TDM) et de diffusé. La quantification est surtout **semi-quantitative** (scores) : voir §C12. La fusion TEMP/TDM améliore la localisation et la distinction physiologique/pathologique (renvoi §C14).' },
+
+          // ───────── MOUVEMENT C — INTERPRÉTER ─────────
+          { title: 'C11 · Aspect normal & variantes physiologiques', text: 'Connaître le **normal** avant le pathologique. Fixations physiologiques attendues (¹²³I-MIBG) : **glandes salivaires, myocarde, foie (intense), rate, tube digestif (variable), vessie** ; parfois **graisse brune**, muqueuse nasale. Les **surrénales normales** peuvent être faiblement visibles en ¹²³I (plus qu’en ¹³¹I) — ne pas surinterpréter une fixation surrénalienne **symétrique et modérée**.',
+            figure: { svg: MIBG_BIODISTRIB, alt: 'Biodistribution normale de la ¹²³I-MIBG : glandes salivaires, myocarde, foie intense, rate, tube digestif, vessie, surrénales faibles.', caption: 'Repères physiologiques normaux — indispensables avant d’affirmer une fixation tumorale anormale.' } },
+          { title: 'C12 · Sémiologie, interprétation & scores', text: '**Méthode de lecture systématique** : 1) qualité technique & blocage ; 2) biodistribution physiologique ; 3) recherche de **foyer(s) anormal(aux)** (surrénalien / extra-surrénalien / osseux / médullaire) ; 4) corrélation TEMP/TDM ; 5) comparaison à l’antériorité. **Positivité** = fixation focale **supérieure au bruit de fond**, non physiologique, à substrat anatomique.',
+            infoBox: { type: 'info', title: 'Scores (neuroblastome)', text: '**Score de Curie** et **score SIOPEN** : cotation semi-quantitative de l’extension squelettique/des tissus mous, segment par segment. Utilisés pour le **bilan initial** et surtout l’**évaluation de la réponse** au traitement (valeur pronostique).' } },
+          { title: 'C13 · Compte rendu structuré', infoBox: { type: 'tip', title: 'Trame de compte rendu', text: 'Administratif (indication, traceur/activité, blocage, délais) → Technique (planaire ± TEMP/TDM, qualité) → Résultats (biodistribution, foyer(s) : siège, intensité, corrélat TDM ; score si neuroblastome) → **Conclusion répondant à la question clinique** (avide/non avide, extension, candidat ¹³¹I-MIBG ?).' },
+            text: '*Exemple (conclusion)* : « Fixation focale intense de la surrénale droite (corrélée à une masse de 4 cm en TDM), sans autre foyer : aspect en faveur d’un **phéochromocytome MIBG-avide**, candidat potentiel à une thérapie par ¹³¹I-MIBG. »' },
+          { title: 'C14 · Pièges, artefacts & faux positifs/négatifs', text: 'Tableau récapitulatif des écueils :\n\n| Faux **négatifs** | Faux **positifs** |\n|---|---|\n| Médicaments interférents non arrêtés | Contamination cutanée/urinaire |\n| Tumeurs dédifférenciées / **SDHB** | Fixation physiologique (surrénale, digestif) |\n| Petites lésions (< résolution) | Foyer inflammatoire/infectieux occasionnel |\n| Blocage du NET | Activité résiduelle vésicale |',
+            infoBox: { type: 'warning', title: 'Piège — le faux négatif médicamenteux', text: 'Cause : un médicament non arrêté bloque le NET. Aspect : examen « négatif » malgré une forte suspicion. Conduite : vérifier la liste des arrêts AVANT de conclure ; en cas de doute SDHB/dédifférenciation, orienter vers **⁶⁸Ga-DOTATATE** ou **¹⁸F-FDG**.' } },
+
+          // ───────── MOUVEMENT D — MAÎTRISER & SITUER ─────────
+          { title: 'D15 · Dosimétrie', text: 'Maîtriser la dose délivrée.\n\n| Paramètre | ¹²³I-MIBG | ¹³¹I-MIBG (diagnostic) |\n|---|---|---|\n| Coefficient / dose efficace | ≈ 0,013 mSv/MBq → **≈ 5 mSv** (370 MBq) | nettement **plus élevée** |\n| Organe critique | foie, vessie ; **thyroïde si non bloquée** | thyroïde, foie |\n| Pédiatrie | **carte de dose EANM** (poids) | — |\n\nDose absorbée ≠ dose efficace ; facteurs modulants : activité, biocinétique, hydratation, fonction rénale. Mise en perspective : ordre de grandeur d’une **TDM** thoraco-abdomino-pelvienne.',
+            infoBox: { type: 'warning', title: 'Grossesse / allaitement', text: 'Iode radioactif **contre-indiqué pendant la grossesse**. Allaitement : suspension (passage dans le lait) selon le radionucléide et l’activité.' } },
+          { title: 'D16 · Radioprotection', text: 'Principes **justification / optimisation (ALARA) / limitation**. Le **¹²³I** (159 keV, T½ 13,2 h) est bien plus favorable que le **¹³¹I** (364 keV, β⁻, T½ 8 j → consignes renforcées, surtout en thérapie). Protéger **personnel** (temps/distance/écran, dosimétrie, zonage), **entourage/public** (consignes post-examen : distance vis-à-vis des enfants et femmes enceintes pour quelques heures, hygiène, hydratation), et gérer **effluents/déchets**.',
+            figure: { svg: ALARA_TDS, alt: 'Temps, distance, écran : les trois leviers de réduction de dose (ALARA).', caption: 'Le bon sens « temps / distance / écran » structure les consignes au personnel et à l’entourage.' } },
+          { title: 'D17 · Performances diagnostiques & comparaison', text: 'Situer la valeur diagnostique (sensibilité indicative, ¹²³I-MIBG) :\n\n| Indication | Sensibilité | Commentaire |\n|---|---|---|\n| Phéochromocytome sporadique | ~**85–90 %** | ↓ si métastatique / SDHx |\n| Paragangliome | variable | ↓ tête-cou & SDHx → **DOTATATE** supérieur |\n| Neuroblastome | ~**90 %** | référence pédiatrique (SIOPEN) |\n\nLa **TEP** (⁶⁸Ga-DOTATATE, ¹⁸F-FDOPA, ¹⁸F-FDG) surpasse souvent la MIBG dans le phéo/para, en particulier métastatique et lié à **SDHx**.' },
+          { title: 'D18 · Place dans la stratégie & algorithmes', text: 'Logique décisionnelle : devant un **phéo/para** confirmé biologiquement, l’imagerie morphologique (TDM/IRM) localise, puis l’imagerie **fonctionnelle** caractérise et cherche d’autres sites — avec, selon le contexte (métastatique, SDHx, tête-cou), une **TEP-SSTR (⁶⁸Ga-DOTATATE)** souvent privilégiée. La **MIBG** s’impose si l’on envisage une **thérapie ¹³¹I-MIBG** (il faut prouver l’avidité) et reste le standard du **neuroblastome**. C’est l’archétype d’une démarche **théranostique** : *on traite ce que l’on voit*.' },
+          { title: 'D19 · Examens apparentés & variantes', text: 'Choisir le bon traceur selon la cible :\n\n| Examen | Cible biologique | Quand le préférer |\n|---|---|---|\n| **¹²³I-MIBG** | NET (uptake-1) | Neuroblastome ; sélection pré-¹³¹I-MIBG |\n| **⁶⁸Ga-DOTATATE** TEP | Récepteurs SSTR | Para tête-cou, SDHx, métastatique |\n| **¹⁸F-FDOPA** TEP | Décarboxylation (AADC) | Phéo/para (excellente Se) |\n| **¹⁸F-FDG** TEP | Glycolyse | Tumeurs dédifférenciées / SDHB |\n| **¹³¹I-MIBG** (thérapie) | NET | Traiter les formes MIBG-avides |' },
+
+          // ───────── MOUVEMENT E — ANCRER & ÉVALUER ─────────
+          { title: 'E20 · Cas cliniques commentés', steps: [
+            { title: 'Cas 1 — Phéochromocytome', text: 'HTA paroxystique, métanéphrines élevées, masse surrénalienne droite en TDM. MIBG : fixation focale intense surrénalienne droite, pas d’autre foyer → phéochromocytome unilatéral MIBG-avide ; avidité compatible avec une option ¹³¹I-MIBG si maligne.' },
+            { title: 'Cas 2 — Neuroblastome', text: 'Enfant, masse abdominale, catécholamines urinaires élevées. MIBG : fixation de la tumeur primitive + foyers osseux multiples → extension métastatique ; **score SIOPEN** établi pour le suivi de la réponse.' },
+          ],
+            infoBox: { type: 'info', title: 'Atypie utile', text: 'Une tumeur fortement suspecte mais **MIBG-négative** doit faire évoquer une **dédifférenciation / mutation SDHB** → réorienter vers DOTATATE ou FDG plutôt que conclure à l’absence de tumeur.' } },
+          { title: 'E21 · Points clés / à retenir', list: [
+            'MIBG = analogue de la **noradrénaline**, capté par le **NET (uptake-1)**, stocké via le **VMAT**.',
+            'Cibles : **phéochromocytome, paragangliome, neuroblastome** (lignée crête neurale).',
+            '**¹²³I** (159 keV, diagnostic) préféré ; **¹³¹I** = diagnostic ancien **et thérapie** (théranostique).',
+            'Activité adulte ~**370 MBq** ¹²³I ; enfant = **carte de dose EANM** ; dose efficace ≈ **5 mSv**.',
+            '**Blocage thyroïdien obligatoire** (iode/perchlorate) avant et après.',
+            'Arrêter les **médicaments interférents** (labétalol, tricycliques, sympathomimétiques…) — cause n°1 de **faux négatif**.',
+            'Imagerie à **24 h (± 48 h)**, planaire **+ TEMP/TDM** ; collimateur adapté à l’énergie.',
+            'Connaître la **biodistribution normale** (salivaires, myocarde, foie, rate, digestif, vessie).',
+            'Neuroblastome : **scores de Curie / SIOPEN** pour l’extension et la **réponse**.',
+            'Formes **SDHB/dédifférenciées** → faible avidité MIBG ⇒ **⁶⁸Ga-DOTATATE / ¹⁸F-FDG**.',
+            'Injection **lente** (risque théorique de décharge catécholaminergique).',
+            'Pour le phéo/para, la **TEP-SSTR** est souvent plus sensible ; la MIBG reste clé pour la **sélection thérapeutique**.',
+          ] },
+          { title: 'E22 · FAQ & pièges d’examen', text: '**Q : MIBG ou DOTATATE en première intention pour un paragangliome ?** R : Souvent **DOTATATE** (SSTR), surtout tête-cou/SDHx/métastatique ; MIBG si question théranostique ¹³¹I-MIBG.\n\n**Q : Pourquoi bloquer la thyroïde ?** R : Pour protéger la thyroïde de l’**iode radioactif libre** issu du traceur.\n\n**Q : Examen négatif malgré forte suspicion ?** R : Penser **médicament interférent non arrêté** ou **dédifférenciation/SDHB**.\n\n**Q : ¹²³I vs ¹³¹I pour le diagnostic ?** R : **¹²³I** (meilleure image, moindre dose) ; ¹³¹I surtout pour la **thérapie**.\n\n*(Un quiz interactif et une fiche de révision téléchargeable — §23/§24 du gabarit — sont des fonctionnalités de la plateforme à activer ; les QCM ci-dessus en constituent l’amorce.)*' },
+          { title: 'E25 · Références & liens', text: 'Références complètes et datées en bas de page (section **Sources & Références**) : EANM 2010 (Bombardieri), EANM/SNMMI 2019 (Taïeb), Endocrine Society 2014 (Lenders), SIOPEN, SNMMI, ICRP 128. **Liens typés** à relier dans le graphe : Traceurs (MIBG, ¹³¹I-MIBG thérapie) · Maladies (phéochromocytome, paragangliome, neuroblastome) · Examens (⁶⁸Ga-DOTATATE, ¹⁸F-FDOPA, ¹⁸F-FDG) · Scores (Curie, SIOPEN). Dernière mise à jour : 2026.' },
         ],
       },
     },

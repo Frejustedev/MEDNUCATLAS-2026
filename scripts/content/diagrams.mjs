@@ -546,3 +546,74 @@ export const THYROID_PATTERNS = `
     <text x="60" y="165" text-anchor="middle" font-size="8.5" fill="currentColor" opacity="0.65">captation effondrée</text>
   </g>
 </svg>`;
+
+// ── MIBG : captation par le NET (uptake-1) puis stockage vésiculaire ──────────
+export const MIBG_UPTAKE = `
+<svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" width="620" height="320">
+  <text x="310" y="22" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.78">Captation de la MIBG — transporteur NET (uptake-1) puis stockage vésiculaire</text>
+
+  <rect x="18" y="58" width="92" height="205" rx="14" fill="${RED}" fill-opacity="0.06" stroke="${RED}" stroke-width="1.5"/>
+  <text x="64" y="78" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Sang</text>
+  <circle cx="52" cy="118" r="11" fill="${PURPLE}" fill-opacity="0.55"/><text x="52" y="121" text-anchor="middle" font-size="7.5" fill="currentColor">MIBG</text>
+  <circle cx="80" cy="156" r="11" fill="${PURPLE}" fill-opacity="0.55"/><text x="80" y="159" text-anchor="middle" font-size="7.5" fill="currentColor">MIBG</text>
+  <circle cx="54" cy="196" r="11" fill="${PURPLE}" fill-opacity="0.55"/><text x="54" y="199" text-anchor="middle" font-size="7.5" fill="currentColor">MIBG</text>
+
+  <rect x="150" y="50" width="322" height="218" rx="20" fill="${TEAL}" fill-opacity="0.06" stroke="${TEAL}" stroke-width="2"/>
+  <text x="311" y="72" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.8">Cellule chromaffine / sympathique (crête neurale)</text>
+
+  <rect x="138" y="120" width="24" height="80" rx="6" fill="currentColor" opacity="0.12"/>
+  <rect x="150" y="130" width="13" height="60" rx="4" fill="${AMBER}" fill-opacity="0.6"/>
+  <text x="150" y="212" text-anchor="middle" font-size="10" fill="${AMBER}">NET</text>
+  <text x="150" y="224" text-anchor="middle" font-size="8" fill="currentColor" opacity="0.7">uptake-1</text>
+
+  <line x1="100" y1="135" x2="148" y2="152" stroke="${PURPLE}" stroke-width="2"/><polygon points="148,152 139,148 140,158" fill="${PURPLE}"/>
+
+  <circle cx="222" cy="150" r="11" fill="${PURPLE}" fill-opacity="0.55"/><text x="222" y="153" text-anchor="middle" font-size="7.5" fill="currentColor">MIBG</text>
+  <line x1="244" y1="150" x2="322" y2="150" stroke="${PURPLE}" stroke-width="2"/><polygon points="322,150 313,146 314,156" fill="${PURPLE}"/>
+  <text x="283" y="142" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.7">VMAT</text>
+
+  <circle cx="372" cy="152" r="36" fill="${TEAL}" fill-opacity="0.15" stroke="${TEAL}" stroke-width="1.5"/>
+  <circle cx="361" cy="143" r="6" fill="${PURPLE}" fill-opacity="0.7"/>
+  <circle cx="383" cy="151" r="6" fill="${PURPLE}" fill-opacity="0.7"/>
+  <circle cx="369" cy="165" r="6" fill="${PURPLE}" fill-opacity="0.7"/>
+  <text x="372" y="205" text-anchor="middle" font-size="9.5" fill="${TEAL}">granules de stockage</text>
+
+  <text x="310" y="290" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.82">MIBG = analogue de la noradrénaline · captée par le NET, stockée via le VMAT · cible : phéochromocytome, paragangliome, neuroblastome</text>
+  <text x="310" y="307" text-anchor="middle" font-size="8.5" fill="${RED}" opacity="0.95">De nombreux médicaments bloquent le NET → faux négatifs (à arrêter avant l'examen)</text>
+</svg>`;
+
+// ── MIBG : biodistribution normale (¹²³I-MIBG) ───────────────────────────────
+export const MIBG_BIODISTRIB = `
+<svg viewBox="0 0 400 470" xmlns="http://www.w3.org/2000/svg" width="400" height="470">
+  <text x="200" y="20" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.78">Biodistribution physiologique de la ¹²³I-MIBG (vue antérieure)</text>
+
+  <circle cx="150" cy="58" r="26" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1.2"/>
+  <rect x="140" y="82" width="20" height="18" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1.2"/>
+  <path d="M105 100 Q150 90 195 100 L210 250 Q150 268 90 250 Z" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1.2"/>
+  <path d="M105 105 L70 200 L82 205 L120 120 Z" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1"/>
+  <path d="M195 105 L230 200 L218 205 L180 120 Z" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1"/>
+  <path d="M118 250 L108 410 L128 410 L142 255 Z" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1"/>
+  <path d="M182 250 L192 410 L172 410 L158 255 Z" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1"/>
+
+  <ellipse cx="132" cy="78" rx="9" ry="6" fill="${TEAL}" fill-opacity="0.5"/>
+  <ellipse cx="168" cy="78" rx="9" ry="6" fill="${TEAL}" fill-opacity="0.5"/>
+  <ellipse cx="135" cy="158" rx="14" ry="11" fill="${TEAL}" fill-opacity="0.55"/>
+  <ellipse cx="178" cy="190" rx="22" ry="17" fill="${TEAL}" fill-opacity="0.7"/>
+  <ellipse cx="120" cy="188" rx="10" ry="8" fill="${TEAL}" fill-opacity="0.45"/>
+  <ellipse cx="150" cy="228" rx="26" ry="16" fill="${TEAL}" fill-opacity="0.3"/>
+  <ellipse cx="150" cy="262" rx="12" ry="9" fill="${TEAL}" fill-opacity="0.5"/>
+  <circle cx="140" cy="205" r="3.5" fill="${AMBER}" fill-opacity="0.85"/>
+  <circle cx="162" cy="205" r="3.5" fill="${AMBER}" fill-opacity="0.85"/>
+
+  <g font-size="10" fill="currentColor">
+    <line x1="168" y1="78" x2="300" y2="64" stroke="currentColor" stroke-width="0.6" opacity="0.5"/><text x="304" y="67">Glandes salivaires</text>
+    <line x1="135" y1="158" x2="300" y2="120" stroke="currentColor" stroke-width="0.6" opacity="0.5"/><text x="304" y="123">Myocarde</text>
+    <line x1="200" y1="190" x2="300" y2="170" stroke="currentColor" stroke-width="0.6" opacity="0.5"/><text x="304" y="173" fill="${TEAL}">Foie (intense)</text>
+    <line x1="110" y1="188" x2="40" y2="172" stroke="currentColor" stroke-width="0.6" opacity="0.5"/><text x="38" y="175" text-anchor="end">Rate</text>
+    <line x1="162" y1="205" x2="300" y2="220" stroke="${AMBER}" stroke-width="0.6" opacity="0.6"/><text x="304" y="223" fill="${AMBER}">Surrénales (faible, variable)</text>
+    <line x1="176" y1="228" x2="300" y2="270" stroke="currentColor" stroke-width="0.6" opacity="0.5"/><text x="304" y="273">Tube digestif</text>
+    <line x1="150" y1="271" x2="300" y2="315" stroke="currentColor" stroke-width="0.6" opacity="0.5"/><text x="304" y="318">Vessie (excrétion)</text>
+  </g>
+
+  <text x="200" y="452" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.7">Repères normaux à connaître avant d'interpréter une fixation tumorale anormale</text>
+</svg>`;
