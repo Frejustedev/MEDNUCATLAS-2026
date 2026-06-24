@@ -38,7 +38,7 @@ const A = ['Rédaction NucleAtlas', 'Assistance IA (Gemini)'];
 
 const article = {
   id: 'V2_MIBG', cat: 'endocrinologie', catLabel: 'Endocrinologie',
-  title: 'Scintigraphie à la MIBG (¹²³I/¹³¹I) — phéochromocytome, paragangliome, neuroblastome',
+  title: 'Scintigraphie à la MIBG (¹²³I/¹³¹I)',
   difficulty: 'avancé',
   tags: ['MIBG', '123I', '131I', 'phéochromocytome', 'paragangliome', 'neuroblastome', 'NET', 'SIOPEN', 'Curie', 'théranostique', 'sympatho-adrénergique'],
   targetAudience: ['patient', 'medecin_non_nuc', 'medecin_nuc'],
