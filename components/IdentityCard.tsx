@@ -19,19 +19,21 @@ const ICONS: Record<string, LucideIcon> = {
  * Carte d'identité de l'examen (gabarit §1) : fiche-réflexe scannable en
  * 5 secondes, grille de pictogrammes + libellé + valeur, en tête d'article.
  */
-export function IdentityCard({ fields }: { fields?: IdentityField[] }) {
+export function IdentityCard({ fields, bare = false }: { fields?: IdentityField[]; bare?: boolean }) {
   if (!fields || fields.length === 0) return null;
   return (
     <section
       aria-label="Carte d'identité de l'examen"
-      className="mb-8 rounded-xl border border-teal/20 bg-bg2 overflow-hidden"
+      className={`${bare ? 'mb-6' : 'mb-8'} rounded-xl border border-teal/20 bg-bg2 overflow-hidden`}
     >
-      <div className="px-4 py-2.5 bg-teal/10 border-b border-teal/20 flex items-center gap-2">
-        <Atom className="w-4 h-4 text-teal" aria-hidden="true" />
-        <h2 className="font-mono text-[11px] tracking-[1.5px] uppercase text-teal m-0">
-          Carte d&apos;identité
-        </h2>
-      </div>
+      {!bare && (
+        <div className="px-4 py-2.5 bg-teal/10 border-b border-teal/20 flex items-center gap-2">
+          <Atom className="w-4 h-4 text-teal" aria-hidden="true" />
+          <h2 className="font-mono text-[11px] tracking-[1.5px] uppercase text-teal m-0">
+            Carte d&apos;identité
+          </h2>
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border-main">
         {fields.map((f, i) => {
           const Icon = f.icon ? ICONS[f.icon] : undefined;

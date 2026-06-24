@@ -97,8 +97,6 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
           </div>
         </div>
 
-        <IdentityCard fields={article.content.identityCard} />
-
         {/* Statut de relecture médicale — transparence éditoriale */}
         {(() => {
           const status = article.reviewStatus ?? 'ai_assisted';
@@ -192,6 +190,9 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
             <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
               {s.title}
             </h3>
+            {article.content.identityCard && /carte d.identit/i.test(s.title) && (
+              <IdentityCard fields={article.content.identityCard} bare />
+            )}
             {s.text && (
               <div className="text-[14px] text-text2 leading-[1.8] mb-3 prose dark:prose-invert prose-teal max-w-none">
                 <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{s.text}</ReactMarkdown>
