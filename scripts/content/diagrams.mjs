@@ -617,3 +617,67 @@ export const MIBG_BIODISTRIB = `
 
   <text x="200" y="452" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.7">Repères normaux à connaître avant d'interpréter une fixation tumorale anormale</text>
 </svg>`;
+
+// ── Phéochromocytome : 4 cibles imageables → 4 examens (charnière du graphe) ──
+export const PHEO_TARGETS = `
+<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg" width="660" height="400">
+  <text x="330" y="22" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.78">Quatre cibles imageables — le génotype choisit laquelle prime</text>
+
+  <rect x="250" y="165" width="160" height="70" rx="14" fill="${RED}" fill-opacity="0.10" stroke="${RED}" stroke-width="2"/>
+  <text x="330" y="195" text-anchor="middle" font-size="13" fill="currentColor">Phéochromocytome</text>
+  <text x="330" y="213" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.7">cellule chromaffine</text>
+
+  <rect x="20" y="45" width="200" height="60" rx="10" fill="${AMBER}" fill-opacity="0.12" stroke="${AMBER}" stroke-width="1.5"/>
+  <text x="120" y="70" text-anchor="middle" font-size="11" fill="currentColor">NET / uptake-1</text>
+  <text x="120" y="90" text-anchor="middle" font-size="11" fill="${AMBER}">→ ¹²³I/¹³¹I-MIBG</text>
+
+  <rect x="440" y="45" width="200" height="60" rx="10" fill="${TEAL}" fill-opacity="0.12" stroke="${TEAL}" stroke-width="1.5"/>
+  <text x="540" y="70" text-anchor="middle" font-size="11" fill="currentColor">Décarboxylation (AADC)</text>
+  <text x="540" y="90" text-anchor="middle" font-size="11" fill="${TEAL}">→ ¹⁸F-FDOPA</text>
+
+  <rect x="20" y="300" width="200" height="60" rx="10" fill="${BLUE}" fill-opacity="0.12" stroke="${BLUE}" stroke-width="1.5"/>
+  <text x="120" y="325" text-anchor="middle" font-size="11" fill="currentColor">Récepteurs SSTR2</text>
+  <text x="120" y="345" text-anchor="middle" font-size="11" fill="${BLUE}">→ ⁶⁸Ga-DOTATATE</text>
+
+  <rect x="440" y="300" width="200" height="60" rx="10" fill="${PURPLE}" fill-opacity="0.12" stroke="${PURPLE}" stroke-width="1.5"/>
+  <text x="540" y="325" text-anchor="middle" font-size="11" fill="currentColor">Glycolyse (Warburg)</text>
+  <text x="540" y="345" text-anchor="middle" font-size="11" fill="${PURPLE}">→ ¹⁸F-FDG</text>
+
+  <line x1="258" y1="172" x2="222" y2="100" stroke="${AMBER}" stroke-width="2"/><polygon points="222,100 232,104 226,112" fill="${AMBER}"/>
+  <line x1="402" y1="172" x2="438" y2="100" stroke="${TEAL}" stroke-width="2"/><polygon points="438,100 428,104 434,112" fill="${TEAL}"/>
+  <line x1="258" y1="228" x2="222" y2="300" stroke="${BLUE}" stroke-width="2"/><polygon points="222,300 226,288 232,296" fill="${BLUE}"/>
+  <line x1="402" y1="228" x2="438" y2="300" stroke="${PURPLE}" stroke-width="2"/><polygon points="438,300 434,288 428,296" fill="${PURPLE}"/>
+
+  <text x="330" y="392" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.8">Cluster 2 (RET/NF1) → MIBG/FDOPA · Cluster 1 (SDHx/VHL) → DOTATATE/FDG · perte d'avidité MIBG si dédifférenciation</text>
+</svg>`;
+
+// ── Boucle théranostique : imager → sélectionner → traiter → réévaluer ──────
+export const THERANOSTIC_LOOP = `
+<svg viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" width="460" height="420">
+  <text x="230" y="22" text-anchor="middle" font-size="12" fill="currentColor" opacity="0.78">La boucle théranostique</text>
+
+  <circle cx="230" cy="215" r="150" fill="none" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.4"/>
+  <text x="230" y="212" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.6">on traite</text>
+  <text x="230" y="227" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.6">ce que l'on voit</text>
+
+  <rect x="150" y="40" width="160" height="56" rx="10" fill="${BLUE}" fill-opacity="0.12" stroke="${BLUE}" stroke-width="1.5"/>
+  <text x="230" y="62" text-anchor="middle" font-size="11" fill="currentColor">1 · Imager la cible</text>
+  <text x="230" y="80" text-anchor="middle" font-size="9.5" fill="${BLUE}">DOTATATE · ¹²³I-MIBG</text>
+
+  <rect x="300" y="187" width="150" height="56" rx="10" fill="${AMBER}" fill-opacity="0.12" stroke="${AMBER}" stroke-width="1.5"/>
+  <text x="375" y="209" text-anchor="middle" font-size="11" fill="currentColor">2 · Sélectionner</text>
+  <text x="375" y="227" text-anchor="middle" font-size="9.5" fill="${AMBER}">avidité SSTR2 / NET</text>
+
+  <rect x="150" y="334" width="160" height="56" rx="10" fill="${RED}" fill-opacity="0.10" stroke="${RED}" stroke-width="1.5"/>
+  <text x="230" y="356" text-anchor="middle" font-size="11" fill="currentColor">3 · Traiter</text>
+  <text x="230" y="374" text-anchor="middle" font-size="9.5" fill="${RED}">¹⁷⁷Lu-DOTATATE · ¹³¹I-MIBG</text>
+
+  <rect x="10" y="187" width="150" height="56" rx="10" fill="${TEAL}" fill-opacity="0.12" stroke="${TEAL}" stroke-width="1.5"/>
+  <text x="85" y="209" text-anchor="middle" font-size="11" fill="currentColor">4 · Réévaluer</text>
+  <text x="85" y="227" text-anchor="middle" font-size="9.5" fill="${TEAL}">réponse + dosimétrie</text>
+
+  <line x1="312" y1="80" x2="362" y2="185" stroke="currentColor" stroke-width="1.8" opacity="0.7"/><polygon points="362,185 352,180 360,175" fill="currentColor"/>
+  <line x1="368" y1="245" x2="300" y2="338" stroke="currentColor" stroke-width="1.8" opacity="0.7"/><polygon points="300,338 312,336 306,328" fill="currentColor"/>
+  <line x1="148" y1="338" x2="92" y2="245" stroke="currentColor" stroke-width="1.8" opacity="0.7"/><polygon points="92,245 100,254 90,256" fill="currentColor"/>
+  <line x1="92" y1="185" x2="148" y2="82" stroke="currentColor" stroke-width="1.8" opacity="0.7"/><polygon points="148,82 138,86 146,92 " fill="currentColor"/>
+</svg>`;

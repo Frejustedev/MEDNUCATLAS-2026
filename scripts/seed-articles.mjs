@@ -25,12 +25,13 @@ import { articles as batch10 } from './content/batch10.mjs';
 import { articles as batch11 } from './content/batch11.mjs';
 import { articles as batch12 } from './content/batch12.mjs';
 import { article as mibgArticle } from './content/mibg.mjs';
+import { article as pheoArticle } from './content/pheochromocytome.mjs';
 
 // Article MIBG : version de référence validée (transcription fidèle du gabarit,
 // scripts/content/mibg.mjs) — remplace la version du lot 5.
 const articles = [...batch1, ...batch2, ...batch3, ...batch4, ...batch5, ...batch6, ...batch7, ...batch8, ...batch9, ...batch10, ...batch11, ...batch12]
-  .filter((a) => a.id !== 'V2_MIBG')
-  .concat([mibgArticle]);
+  .filter((a) => a.id !== 'V2_MIBG' && a.id !== 'V2_PHEOCHROMOCYTOME')
+  .concat([mibgArticle, pheoArticle]);
 
 const DRY = process.argv.includes('--dry');
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\//, '')), '..');

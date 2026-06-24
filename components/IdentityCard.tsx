@@ -4,6 +4,7 @@ import React from 'react';
 import {
   Atom, Syringe, Clock, Activity, Zap, Target, ShieldCheck, Droplets,
   Baby, Stethoscope, FlaskConical, Radiation, ListChecks, Microscope,
+  Dna, MapPin, AlertTriangle,
   type LucideIcon,
 } from 'lucide-react';
 import type { IdentityField } from '@/lib/data';
@@ -13,6 +14,7 @@ const ICONS: Record<string, LucideIcon> = {
   target: Target, shield: ShieldCheck, droplets: Droplets, baby: Baby,
   stetho: Stethoscope, flask: FlaskConical, radiation: Radiation,
   list: ListChecks, microscope: Microscope,
+  dna: Dna, pin: MapPin, alert: AlertTriangle,
 };
 
 /**
