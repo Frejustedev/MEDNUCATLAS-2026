@@ -79,6 +79,14 @@ export const relatedLinkSchema = z.object({
   href: z.string().max(500).optional(),
 });
 
+export const quizQuestionSchema = z.object({
+  question: z.string().min(3).max(500),
+  options: z.array(z.string().min(1).max(300)).min(2).max(6),
+  answer: z.number().int().min(0).max(5),
+  explanation: z.string().max(1000).optional(),
+  difficulty: z.enum(['facile', 'moyen', 'difficile']).optional(),
+});
+
 export const articleContentSchema = z.object({
   lead: z.string().max(5000),
   patient: contentModeSchema,
@@ -86,6 +94,7 @@ export const articleContentSchema = z.object({
   medecin_nuc: contentModeSchema,
   identityCard: z.array(identityFieldSchema).max(20).optional(),
   relatedLinks: z.array(relatedLinkSchema).max(40).optional(),
+  quiz: z.array(quizQuestionSchema).max(40).optional(),
 });
 
 export const articleSchema = z.object({

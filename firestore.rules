@@ -200,6 +200,37 @@ service cloud.firestore {
     }
 
     // ============================================================
+    // quiz_scores — classement des quiz (lecture publique, création contrôlée)
+    // ============================================================
+    match /quiz_scores/{id} {
+      // Classement public.
+      allow read: if true;
+
+      // Soumission d'un score : forme stricte, score borné par le total.
+      // Anti-triche basique (côté règles), sans garantie cryptographique.
+      allow create: if request.resource.data.keys().hasOnly(['articleId', 'articleTitle', 'pseudo', 'score', 'total', 'timeMs', 'createdAt'])
+                    && request.resource.data.articleId is string
+                    && request.resource.data.articleId.size() > 0
+                    && request.resource.data.articleId.size() < 80
+                    && request.resource.data.pseudo is string
+                    && request.resource.data.pseudo.size() > 0
+                    && request.resource.data.pseudo.size() <= 30
+                    && request.resource.data.score is int
+                    && request.resource.data.score >= 0
+                    && request.resource.data.total is int
+                    && request.resource.data.total > 0
+                    && request.resource.data.total <= 50
+                    && request.resource.data.score <= request.resource.data.total
+                    && request.resource.data.timeMs is int
+                    && request.resource.data.timeMs >= 0
+                    && (!('articleTitle' in request.resource.data) || (request.resource.data.articleTitle is string && request.resource.data.articleTitle.size() <= 200))
+                    && request.resource.data.createdAt is timestamp;
+
+      // Pas de modification/suppression par les utilisateurs.
+      allow update, delete: if isAdmin();
+    }
+
+    // ============================================================
     // rate_limits — interne serveur uniquement
     // ============================================================
     match /rate_limits/{key} {

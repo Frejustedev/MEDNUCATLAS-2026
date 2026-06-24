@@ -12,6 +12,7 @@ import { Article, ArticleMode, UserProfile, getAllowedAudiences } from '@/lib/da
 import { sanitizeSvg } from '@/lib/sanitize-svg';
 import { IdentityCard } from './IdentityCard';
 import { LinkCard } from './LinkCard';
+import { Quiz } from './Quiz';
 
 export function ArticleView({ article: serverArticle }: { article?: Article } = {}) {
   const { showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
@@ -306,6 +307,8 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
             </div>
           </div>
         )}
+
+        <Quiz articleId={article.id} articleTitle={article.title} questions={article.content.quiz} />
 
         {(article.authors || article.sources) && (
           <div className="mt-12 pt-8 border-t border-border-main">

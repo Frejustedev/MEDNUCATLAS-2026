@@ -141,6 +141,15 @@ export interface RelatedLink {
   href?: string;
 }
 
+// Question de quiz (gabarit §23).
+export interface QuizQuestion {
+  question: string;
+  options: string[];
+  answer: number; // index de la bonne réponse dans options
+  explanation?: string;
+  difficulty?: 'facile' | 'moyen' | 'difficile';
+}
+
 export interface ArticleContent {
   lead: string;
   medecin_non_nuc: ContentMode;
@@ -149,6 +158,7 @@ export interface ArticleContent {
   // Composants transverses du gabarit (optionnels, communs à l'article).
   identityCard?: IdentityField[];
   relatedLinks?: RelatedLink[];
+  quiz?: QuizQuestion[];
 }
 
 // Statut de relecture médicale — transparence éditoriale.
