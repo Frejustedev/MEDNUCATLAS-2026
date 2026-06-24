@@ -26,12 +26,43 @@ import { articles as batch11 } from './content/batch11.mjs';
 import { articles as batch12 } from './content/batch12.mjs';
 import { article as mibgArticle } from './content/mibg.mjs';
 import { article as pheoArticle } from './content/pheochromocytome.mjs';
+import * as DIAGRAMS from './content/diagrams.mjs';
 
-// Article MIBG : version de référence validée (transcription fidèle du gabarit,
-// scripts/content/mibg.mjs) — remplace la version du lot 5.
+// Résout les figures référencées par nom (figureRef → svg depuis diagrams.mjs)
+// dans les articles « auto » : on stocke un nom court dans le JSON, pas le SVG.
+function resolveFigures(a) {
+  for (const mode of ['patient', 'medecin_non_nuc', 'medecin_nuc']) {
+    for (const s of a?.content?.[mode]?.sections ?? []) {
+      if (s.figure?.figureRef) {
+        const svg = DIAGRAMS[s.figure.figureRef];
+        if (svg) s.figure.svg = svg;
+        delete s.figure.figureRef;
+        if (!s.figure.svg) delete s.figure;
+      }
+    }
+  }
+  return a;
+}
+
+// Articles « auto » (pipeline full-auto) : tout fichier scripts/content/auto/*.json
+// surcharge, PAR ID, la version issue des lots. C'est là qu'écrit la boucle nocturne.
+const AUTO_DIR = new URL('./content/auto/', import.meta.url);
+let autoArticles = [];
+try {
+  autoArticles = fs.readdirSync(AUTO_DIR)
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => {
+      try { return resolveFigures(JSON.parse(fs.readFileSync(new URL(f, AUTO_DIR), 'utf8'))); }
+      catch (e) { console.error('[seed] auto/' + f + ' ignoré (JSON invalide) :', e.message); return null; }
+    })
+    .filter(Boolean);
+} catch { /* dossier auto/ absent : ignorer */ }
+
+// MIBG / Phéochromocytome : versions de référence validées (étalons du gabarit).
+const overrideIds = new Set([...autoArticles.map((a) => a.id), 'V2_MIBG', 'V2_PHEOCHROMOCYTOME']);
 const articles = [...batch1, ...batch2, ...batch3, ...batch4, ...batch5, ...batch6, ...batch7, ...batch8, ...batch9, ...batch10, ...batch11, ...batch12]
-  .filter((a) => a.id !== 'V2_MIBG' && a.id !== 'V2_PHEOCHROMOCYTOME')
-  .concat([mibgArticle, pheoArticle]);
+  .filter((a) => !overrideIds.has(a.id))
+  .concat([mibgArticle, pheoArticle], autoArticles);
 
 const DRY = process.argv.includes('--dry');
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\//, '')), '..');
