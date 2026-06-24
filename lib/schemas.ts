@@ -67,11 +67,25 @@ export const contentModeSchema = z.object({
     .optional(),
 });
 
+export const identityFieldSchema = z.object({
+  label: z.string().min(1).max(80),
+  value: z.string().min(1).max(300),
+  icon: z.string().max(30).optional(),
+});
+
+export const relatedLinkSchema = z.object({
+  type: z.enum(['traceur', 'maladie', 'examen', 'score', 'theranostique']),
+  label: z.string().min(1).max(120),
+  href: z.string().max(500).optional(),
+});
+
 export const articleContentSchema = z.object({
   lead: z.string().max(5000),
   patient: contentModeSchema,
   medecin_non_nuc: contentModeSchema,
   medecin_nuc: contentModeSchema,
+  identityCard: z.array(identityFieldSchema).max(20).optional(),
+  relatedLinks: z.array(relatedLinkSchema).max(40).optional(),
 });
 
 export const articleSchema = z.object({

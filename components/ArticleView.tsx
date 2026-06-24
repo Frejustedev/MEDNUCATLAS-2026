@@ -10,6 +10,8 @@ import rehypeSanitize from 'rehype-sanitize';
 import { useParams } from 'next/navigation';
 import { Article, ArticleMode, UserProfile, getAllowedAudiences } from '@/lib/data';
 import { sanitizeSvg } from '@/lib/sanitize-svg';
+import { IdentityCard } from './IdentityCard';
+import { LinkCard } from './LinkCard';
 
 export function ArticleView({ article: serverArticle }: { article?: Article } = {}) {
   const { showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
@@ -92,6 +94,8 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
             ))}
           </div>
         </div>
+
+        <IdentityCard fields={article.content.identityCard} />
 
         {/* Statut de relecture médicale — transparence éditoriale */}
         {(() => {
@@ -339,6 +343,8 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
             )}
           </div>
         )}
+
+        <LinkCard links={article.content.relatedLinks} />
       </div>
 
       <div className="w-[200px] shrink-0 p-8 px-5 border-l border-border-main overflow-y-auto hidden lg:block">

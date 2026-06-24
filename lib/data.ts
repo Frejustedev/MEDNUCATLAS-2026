@@ -127,11 +127,28 @@ export interface ContentMode {
   table?: TableData;
 }
 
+// Carte d'identité de l'examen (gabarit §1) — fiche-réflexe visuelle.
+export interface IdentityField {
+  label: string;
+  value: string;
+  icon?: string; // clé d'icône (voir components/IdentityCard.tsx)
+}
+
+// Liens sortants typés (gabarit §25 — « la carte »).
+export interface RelatedLink {
+  type: 'traceur' | 'maladie' | 'examen' | 'score' | 'theranostique';
+  label: string;
+  href?: string;
+}
+
 export interface ArticleContent {
   lead: string;
   medecin_non_nuc: ContentMode;
   medecin_nuc: ContentMode;
   patient: ContentMode;
+  // Composants transverses du gabarit (optionnels, communs à l'article).
+  identityCard?: IdentityField[];
+  relatedLinks?: RelatedLink[];
 }
 
 // Statut de relecture médicale — transparence éditoriale.
