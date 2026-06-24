@@ -75,6 +75,36 @@ export const article = {
       { question: 'Quel collimateur est souvent préféré pour le ¹²³I afin de limiter la pénétration septale ?', options: ['LEHR uniquement', 'Moyenne énergie (MEGP)', 'Haute énergie', 'Sténopé (pinhole)'], answer: 1, explanation: 'Le ¹²³I émet aussi des photons de ~529 keV → MEGP limite la pénétration septale/artefact en étoile ; haute énergie pour le ¹³¹I.', difficulty: 'difficile' },
       { question: 'La MIBG est-elle métabolisée par la MAO/COMT ?', options: ['Oui, rapidement', 'Non → rétention prolongée, imagerie à 24 h', 'Seulement le ¹³¹I', 'Uniquement dans le foie'], answer: 1, explanation: 'La MIBG n’est pas métabolisée → elle reste piégée dans les cellules cibles, permettant l’imagerie différée.', difficulty: 'facile' },
     ],
+    // Fiche de révision (gabarit §24)
+    revisionSheet: {
+      keyPoints: [
+        'MIBG = analogue de la noradrénaline, capté par le NET (uptake-1), stocké (VMAT), non métabolisé.',
+        '¹²³I-MIBG = diagnostic (159 keV, 13,2 h, TEMP) ; ¹³¹I-MIBG = thérapie (364 keV) → paire théranostique.',
+        'Blocage thyroïdien (KI/Lugol, dès la veille, 5–7 j) + arrêt des médicaments interférents ; pas de jeûne.',
+        'Collimateur MEGP souvent préféré pour le ¹²³I (photons 529 keV) ; haute énergie pour le ¹³¹I.',
+        'Indications : phéo/para, neuroblastome (Curie/SIOPEN), innervation sympathique cardiaque (H/M, washout).',
+        'TEP (⁶⁸Ga-DOTATATE) > MIBG pour phéo/para (HNPGL/SDHB) ; MIBG centrale pour neuroblastome et sélection ¹³¹I-MIBG.',
+        'Dose efficace ¹²³I-MIBG ≈ 0,013 mSv/MBq (≈ 5 mSv à 370 MBq).',
+        'MIBG négative : penser médicament non arrêté ou forme SDHB / dédifférenciée.',
+      ],
+      protocol: [
+        'Blocage thyroïdien débuté la veille, poursuivi 5–7 j (plus long pour le ¹³¹I).',
+        'Arrêt des interférents (tricycliques, labétalol, sympathomimétiques, neuroleptiques) selon les délais.',
+        'Injection IV lente (≤ 5 min) ; hydratation ; vidange vésicale avant l’imagerie pelvienne.',
+        'Imagerie à 24 h (± 48 h) : planaire corps entier + statiques + TEMP/TDM ciblée.',
+        'Cardiaque : planaire thoracique précoce (15 min) et tardive (3–4 h) ; H/M + washout (MEGP).',
+      ],
+      scores: [
+        'Curie : secteurs osseux + 1 tissu mou, cotation 0–3, total 0–30.',
+        'SIOPEN : 12 segments, 0–6 chacun, total 0–72 (standard européen, neuroblastome).',
+        'Cardiaque : H/M (seuil tardif ≤ 2,2 pour corps de Lewy) et taux de washout.',
+      ],
+      pitfalls: [
+        'Faux négatifs : médicaments non arrêtés, SDHB/dédifférenciation, petites lésions, vessie non vidée.',
+        'Faux positifs : surrénale physiologique, graisse brune, contamination/activité urinaire, autres TNE.',
+        'Iode libre (CQ insuffisant) : fixation thyroïde/estomac/salivaires → vérifier blocage et pureté.',
+      ],
+    },
     // §0 — Présentation générale (commune aux 4 profils)
     lead: 'La scintigraphie à la MIBG est un examen d’imagerie qui recherche dans tout le corps certaines tumeurs neuroendocrines — notamment le **phéochromocytome**, le **paragangliome** et le **neuroblastome** — ainsi que l’**innervation sympathique du cœur**. En une seule acquisition corps entier, elle les localise, évalue leur extension et détermine si un **traitement radioactif ciblé** (¹³¹I-MIBG) est envisageable.',
     patient: {

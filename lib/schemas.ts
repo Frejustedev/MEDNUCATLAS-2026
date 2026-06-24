@@ -87,6 +87,13 @@ export const quizQuestionSchema = z.object({
   difficulty: z.enum(['facile', 'moyen', 'difficile']).optional(),
 });
 
+export const revisionSheetSchema = z.object({
+  keyPoints: z.array(z.string().max(400)).max(20).optional(),
+  protocol: z.array(z.string().max(400)).max(20).optional(),
+  scores: z.array(z.string().max(400)).max(20).optional(),
+  pitfalls: z.array(z.string().max(400)).max(20).optional(),
+});
+
 export const articleContentSchema = z.object({
   lead: z.string().max(5000),
   patient: contentModeSchema,
@@ -95,6 +102,7 @@ export const articleContentSchema = z.object({
   identityCard: z.array(identityFieldSchema).max(20).optional(),
   relatedLinks: z.array(relatedLinkSchema).max(40).optional(),
   quiz: z.array(quizQuestionSchema).max(40).optional(),
+  revisionSheet: revisionSheetSchema.optional(),
 });
 
 export const articleSchema = z.object({

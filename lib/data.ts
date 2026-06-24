@@ -150,6 +150,14 @@ export interface QuizQuestion {
   difficulty?: 'facile' | 'moyen' | 'difficile';
 }
 
+// Fiche de révision condensée (gabarit §24).
+export interface RevisionSheet {
+  keyPoints?: string[];
+  protocol?: string[];
+  scores?: string[];
+  pitfalls?: string[];
+}
+
 export interface ArticleContent {
   lead: string;
   medecin_non_nuc: ContentMode;
@@ -159,6 +167,7 @@ export interface ArticleContent {
   identityCard?: IdentityField[];
   relatedLinks?: RelatedLink[];
   quiz?: QuizQuestion[];
+  revisionSheet?: RevisionSheet;
 }
 
 // Statut de relecture médicale — transparence éditoriale.

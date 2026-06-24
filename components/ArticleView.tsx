@@ -13,6 +13,7 @@ import { sanitizeSvg } from '@/lib/sanitize-svg';
 import { IdentityCard } from './IdentityCard';
 import { LinkCard } from './LinkCard';
 import { Quiz } from './Quiz';
+import { FicheButton } from './FicheButton';
 
 export function ArticleView({ article: serverArticle }: { article?: Article } = {}) {
   const { showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
@@ -307,6 +308,8 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
             </div>
           </div>
         )}
+
+        <FicheButton article={article} />
 
         <Quiz articleId={article.id} articleTitle={article.title} questions={article.content.quiz} />
 
