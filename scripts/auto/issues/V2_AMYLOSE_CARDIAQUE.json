@@ -1,0 +1,56 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A6 (Contre-indications & précautions), tableau ligne 'Allaitement'",
+    "problem": "[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] Coquille d'isotope : « Pour les diphosphonates ⁹⁵ᵐTc, pas de pertechnétate libre attendu ». Le radionucléide utilisé est le technétium-99m (⁹⁹ᵐTc), PAS le ⁹⁵ᵐTc (qui est un autre isotope du technétium, sans usage diagnostique courant). Erreur factuelle sur l'identité du radiopharmaceutique, susceptible d'induire un lecteur en erreur sur le traceur employé.",
+    "fix": "Remplacer « ⁹⁵ᵐTc » par « ⁹⁹ᵐTc »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section C14 (Pièges, artefacts), dernier paragraphe — titre 'Artefact de marquage — iode... pertechnétate libre'",
+    "problem": "Texte éditorial parasite : la mention « iode... » n'a aucun sens dans le contexte d'un marquage au ⁹⁹ᵐTc-diphosphonate (aucun iode n'intervient). Le marquage repose sur la réduction du pertechnétate par les ions stanneux ; le défaut décrit (⁹⁹ᵐTc libre) est correct, mais le mot 'iode' est un résidu d'édition erroné qui pourrait suggérer à tort une implication de l'iode/iodure.",
+    "fix": "Supprimer « iode... » : titre = « Artefact de marquage — pertechnétate libre »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E22 (FAQ & pièges d'examen), 2e question",
+    "problem": "Artefact d'édition laissé dans le texte publié : « Le score de Perugille... pardon, de Perugini suffit-il sur le planaire ? ». Le contenu médical est correct (la TEMP est requise), mais le lapsus rédactionnel n'a pas sa place dans une fiche de référence et nuit à la crédibilité.",
+    "fix": "Remplacer par « Le score de Perugini suffit-il sur le planaire ? »."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard (icône 'clock' Période physique) : valeur « 99mTc : 6,0 h » — incohérence interne",
+    "problem": "La carte d'identité affiche une période de « 6,0 h » alors que l'ensemble du corps (A1, B7, D15, D16, E21, quiz q3) et la fiche étalon donnent la valeur précise « 6,02 h ». 6,0 h est un arrondi acceptable en soi mais crée une incohérence interne dans le même document. La valeur de référence physique est 6,0067 h ≈ 6,02 h.",
+    "fix": "Harmoniser à « 99mTc : 6,02 h » dans la carte d'identité (ou indiquer « ≈ 6 h » partout de façon cohérente)."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard (icône 'syringe' Voie × activité) : « IV bolus · 370–740 MBq (10–20 mCi) » vs reste du document",
+    "problem": "La carte d'identité ne retient que la fourchette consensus ASNC/EANM 370–740 MBq, alors que le corps (A1, B7, B8, D15, E21) et la fiche étalon EANM retiennent une fourchette plus large « 300–740 MBq (8–20 mCi), moyenne ~500 MBq ». Pas une erreur de valeur mais une incohérence de plage entre la carte et le texte ; un lecteur pourrait croire que 300–369 MBq est hors recommandation.",
+    "fix": "Aligner la carte d'identité sur « ~500 MBq (300–740 MBq ; 8–20 mCi) » comme dans le corps, ou préciser que 370–740 MBq est la borne ASNC et 300–740 MBq la borne EANM."
+  },
+  {
+    "severity": "minor",
+    "where": "Section C14, table row 'Artefact de marquage'",
+    "problem": "Le libellé contient une insertion parasite 'iode...' : « Artefact de marquage — iode... pertechnétate libre ». L'artefact concerne le pertechnétate libre (99mTc), pas l'iode. Résidu de génération de texte, pas une fabrication de source.",
+    "fix": "Remplacer par « Artefact de marquage — pertechnétate (99mTc) libre »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A6, ligne Allaitement",
+    "problem": "Coquille isotopique : « diphosphonates 95mTc » au lieu de 99mTc. Erreur de transcription du nombre de masse, sans impact factuel (le reste du texte utilise correctement 99mTc / 140,5 keV / 6,02 h).",
+    "fix": "Corriger en « diphosphonates 99mTc »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E22 (FAQ), 2e question",
+    "problem": "Artefact d'édition laissé dans le texte : « Le score de Perugille... pardon, de Perugini suffit-il sur le planaire ? ». Auto-correction informelle non destinée à la publication.",
+    "fix": "Nettoyer en « Le score de Perugini suffit-il sur le planaire ? »."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [24] (2025 ACC Concise Clinical Guidance) — cohérence bibliographique",
+    "problem": "La référence est citée « J Am Coll Cardiol. 2025 » sans volume/pages ; la vérification montre J Am Coll Cardiol 2025;87(5):549-565 (Kittleson MM et al.). Aucune fabrication : le DOI 10.1016/j.jacc.2025.09.004 est valide et le titre exact, seul le détail volume/pages est omis.",
+    "fix": "Optionnel : compléter en « J Am Coll Cardiol. 2025;87(5):549-565 » pour l'exhaustivité."
+  }
+]
