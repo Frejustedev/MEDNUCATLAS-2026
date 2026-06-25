@@ -1,0 +1,50 @@
+[
+  {
+    "severity": "minor",
+    "where": "identityCard / A1 table / B7 table (activité adulte pertechnétate)",
+    "problem": "Incohérence interne sur l'activité adulte du pertechnétate : l'identityCard et les tableaux A1/B7 indiquent '200–400 MBq', tandis que le stat de A1 affiche '~370 MBq' et que la fiche étalon 1 cite '~370 MBq (gamme 185–740)' alors que la fiche étalon 2 cite '200–400 MBq'. Médicalement toutes ces valeurs sont dans la fourchette correcte et référencée (185–740 MBq), mais la coexistence de '~370' et '200–400' dans le même article peut troubler. Aucune valeur n'est fausse en soi.",
+    "fix": "Harmoniser : retenir une gamme unique (ex. '~370 MBq, gamme 200–400 MBq') et l'employer de façon cohérente dans l'identityCard, les stats et les tableaux."
+  },
+  {
+    "severity": "minor",
+    "where": "D15 - Dosimétrie (titre/texte) et E20",
+    "problem": "Coquilles typographiques sur le symbole du radionucléide : '¹⁹⁹ᵐTc' au lieu de '⁹⁹ᵐTc' (D15, première phrase), et casse/accents perdus dans plusieurs titres d'infoBox (C11/C12/C14 : 'Piege', 'activite', 'medicaments', 'departage'). N'altère pas l'exactitude médicale mais nuit à la rigueur d'un contenu de référence.",
+    "fix": "Corriger '¹⁹⁹ᵐTc' → '⁹⁹ᵐTc' et restaurer les accents français dans les titres d'infoBox concernés."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence du seuil de détection RBC (identityCard / A2 / quiz Q3 vs section B7-B9-D17)",
+    "problem": "Le seuil de détection du saignement est tantôt donné comme '0,1 mL/min (0,04 mL/min modèle animal)' (identityCard, A1 stats, quiz), tantôt comme '0,05–0,2 mL/min' (A2 'Point expert', cohérent avec la fiche étalon 1). Les deux fourchettes sont correctes et sourcées (StatPearls : 0,1 ; SNMMI/Grady/Winzelberg : 0,05–0,2), mais l'article mélange les deux conventions sans le signaler.",
+    "fix": "Mentionner explicitement les deux valeurs de référence (≈0,1 mL/min en clinique selon StatPearls ; 0,05–0,2 mL/min selon SNMMI/Grady) ou choisir une convention unique pour éviter une apparente contradiction."
+  },
+  {
+    "severity": "minor",
+    "where": "B8 / E20 - prémédication, dose de glucagon",
+    "problem": "La dose de glucagon est notée '50 µg/kg IV (0,33 mg), 10 min après'. La valeur 50 µg/kg (max ~1 mg) est correcte et conforme aux recommandations (la mention '50 mg/kg' de certaines sources est une coquille reconnue de la guideline). La parenthèse '(0,33 mg)' est ambiguë : c'est une dose forfaitaire EANM distincte, pas l'équivalent de 50 µg/kg. Le glucagon est par ailleurs donné 'après' le pertechnétate dans l'article alors que plusieurs protocoles l'administrent immédiatement avant l'injection.",
+    "fix": "Préciser que le glucagon (50 µg/kg IV, max 1 mg) est administré juste avant ou peu après l'injection selon le protocole, et retirer/clarifier la mention '(0,33 mg)' qui mélange deux conventions de dosage."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B7 (b) — texte « muqueuse gastrique ectopique présente dans 60–85 % des diverticules de Meckel [15] »",
+    "problem": "Incohérence interne sur le taux de muqueuse gastrique ectopique dans le Meckel. La carte d'identité physiologique (A3) annonce « ~10–60 % (consensus ~57 %) [3,4] », tandis que B7, B8(implicite), D18, E22 et le quiz emploient « 60–85 % [15] ». Les deux fourchettes coexistent dans l'article sans être réconciliées, ce qui peut désorienter le lecteur. Ce n'est PAS une fabrication (les deux valeurs sont attestées dans la littérature : ~50–60 % pour les Meckel tous-venants, plus élevé pour les Meckel symptomatiques/hémorragiques), mais une discordance de présentation.",
+    "fix": "Harmoniser en distinguant explicitement les deux populations : ~50–60 % des Meckel en général vs ~60–85 % (voire plus) des Meckel SYMPTOMATIQUES/hémorragiques. Utiliser une formulation cohérente d'une section à l'autre."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [13] (SNMMI/ACNM GIBS 3.0 PDF, snmmi.org) dans le tableau des sources",
+    "problem": "La source [13] figure dans la liste des 25 références (marquée verified:true) mais n'est jamais citée en exposant [13] dans le corps de l'article (analyse exhaustive des appels : numéros 1–12, 14–25 utilisés ; 13 absent). Référence orpheline.",
+    "fix": "Soit ajouter un renvoi [13] là où le PDF de procédure GIBS 3.0 est pertinent (p. ex. §B9 protocole ou §C13 compte rendu), soit retirer [13] de la liste pour éviter une source non sollicitée — c'est de toute façon un doublon de [1] (même guideline, version article vs PDF)."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [23] — « Radionuclide angiography (99mTc-RBC effective dose) — Wikipedia » ; citée en D15 et E21 pour la dose efficace des hématies marquées (~0,007 mSv/MBq, 4–7 mSv)",
+    "problem": "Wikipédia est utilisé comme source primaire pour une donnée dosimétrique quantitative (dose efficace 99mTc-RBC), aux côtés de [22] (EJNMMI Physics, source primaire valide). L'URL est réelle et plausible (non inventée), mais une référence encyclopédique tertiaire pour un chiffre dosimétrique est de faible qualité dans un article destiné à des médecins nucléaires.",
+    "fix": "Remplacer/compléter [23] par la valeur primaire ICRP 128 ou Andersson [22] (déjà présent) pour la dose efficace des hématies marquées, et reléguer Wikipédia au rang de lien de vulgarisation si conservé."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [25] (nucmed-guide.app, chapter 209) citée en B7, D15, E25 pour des paramètres techniques (activité min EANM 20 MBq, dose ~2,6 mSv/200 MBq)",
+    "problem": "nucmed-guide.app est une ressource web non revue par les pairs utilisée pour des valeurs chiffrées (activité minimale, dose efficace). URL plausible et non inventée, mais source secondaire de fiabilité modérée pour des données numériques.",
+    "fix": "Adosser ces chiffres à une source primaire (ICRP 128 [10] pour la dose, dosage card EANM officielle pour l'activité minimale) ; conserver [25] comme renvoi pédagogique seulement."
+  }
+]
