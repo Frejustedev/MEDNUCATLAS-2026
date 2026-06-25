@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "major",
+    "where": "Section B7 – tableau comparatif des traceurs, ligne « Extraction 1er passage », colonne Tl-201-chlorure : « ~73 % (forte) »",
+    "problem": "Valeur fausse. La fraction d'extraction myocardique de premier passage du Tl-201 est d'environ 85 % (valeur de référence constante dans la littérature et l'enseignement : ScienceDirect, SNM Tech, EANM), non ~73 %. C'est précisément cette extraction élevée (~85 %, supérieure aux traceurs Tc-99m à 55-68 % / 54 %) qui explique la meilleure linéarité captation/débit du Tl-201 — le chiffre erroné affaiblit aussi le raisonnement pédagogique. L'erreur provient d'une cellule non sourcée du fiche-étalon, mais elle est reproduite telle quelle dans le contenu (un apprenant la mémoriserait).",
+    "fix": "Remplacer « ~73 % (forte) » par « ~85 % (forte) » dans le tableau B7. Optionnel : ajouter que cette extraction élevée sous-tend la meilleure linéarité flux/captation du Tl-201 vs les traceurs technétiés."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D15 – Dosimétrie : « un examen au ²⁰¹Tl de 150 MBq atteint ≈ 34,5 mSv [23] »",
+    "problem": "Incohérence interne. Avec le coefficient ICRP 128 affiché juste au-dessus (0,102 mSv/MBq), 150 MBq donne ≈ 15,3 mSv, non 34,5 mSv. La valeur 34,5 mSv est citée d'une source [23] (méthodologie/coefficients différents), donc pas une invention de l'auteur, mais elle contredit visiblement le coefficient présenté dans la même section et peut dérouter le lecteur.",
+    "fix": "Soit recalculer avec le coefficient cité (150 MBq × 0,102 ≈ 15 mSv), soit préciser explicitement que la valeur 34,5 mSv de [23] repose sur des coefficients/hypothèses différents (ancien modèle, activité réelle administrée supérieure), pour lever l'incohérence apparente."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B7 – traceur Tl-201 : « ~60 % entrent activement via la pompe Na⁺/K⁺-ATPase » (texte) vs « Extraction 1er passage ~73 % » (tableau)",
+    "problem": "Présentation potentiellement confuse : deux pourcentages différents (60 % = fraction du captage par transport actif ; 73 %/85 % = fraction d'extraction de premier passage) coexistent pour le même traceur sans distinction explicite des deux métriques. Le lecteur peut les confondre. (Le 60 % via Na/K est conforme à l'étalon ; seul le 73 % est à corriger, cf. issue majeure.)",
+    "fix": "Après correction du 73 %→85 %, ajouter une note brève distinguant les deux notions : fraction d'extraction de premier passage (~85 %) vs proportion du captage médiée par la pompe Na⁺/K⁺ (~60 %, le reste passif)."
+  },
+  {
+    "severity": "minor",
+    "where": "quiz[13] (Q14, dose efficace ≈15 mSv), explanation",
+    "problem": "La réponse du quiz attribue le chiffre de dose efficace moyenne ≈15 mSv aux États-Unis à la source [3] (page éditeur Springer de l'EANM 2015), alors que le corps de l'article (§D15) attribue correctement cette valeur à [23] (High Radiation Doses From SPECT MPI, Circ Cardiovasc Imaging 2019). Le fait est exact et la source [23] existe et est vérifiée — il s'agit d'un mauvais ciblage de citation, pas d'une fabrication.",
+    "fix": "Remplacer [3] par [23] dans l'explication de la question 14 du quiz pour cohérence avec §D15."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard (champ 'Dose examen complet') vs §A1/§D15",
+    "problem": "La carte d'identité indique 'Dose examen complet ≈ 15 mSv (1 j Tc-99m majoritaire)', tandis que §D15 et certaines stats donnent ~12,3 mSv pour un protocole Tc-99m de 1480 MBq et ~12,8 mSv médian [23]. Les valeurs restent dans une fourchette cohérente (≈12-15 mSv) et toutes sourcées, mais l'arrondi à 15 mSv (valeur moyenne US tous traceurs confondus) pour un protocole Tc-99m majoritaire peut légèrement surestimer.",
+    "fix": "Harmoniser en indiquant '≈ 12-15 mSv (Tc-99m)' pour éviter l'ambiguïté entre dose US moyenne tous traceurs et dose d'un protocole Tc-99m."
+  }
+]

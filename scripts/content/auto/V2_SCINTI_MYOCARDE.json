@@ -1,0 +1,1292 @@
+{
+  "id": "V2_SCINTI_MYOCARDE",
+  "cat": "cardiologie",
+  "catLabel": "Cardiologie",
+  "title": "Scintigraphie myocardique de perfusion (effort / repos)",
+  "difficulty": "intermédiaire",
+  "tags": [
+    "scintigraphie myocardique",
+    "perfusion myocardique",
+    "SPECT",
+    "gated-SPECT",
+    "Tc-99m sestamibi",
+    "MIBI",
+    "tetrofosmine",
+    "ischémie myocardique",
+    "coronaropathie",
+    "FEVG",
+    "stress pharmacologique",
+    "régadénoson",
+    "CZT",
+    "cardiologie nucléaire"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT: 2015 revision (Verberne et al., Eur J Nucl Med Mol Imaging 2015;42:1929-1940) — texte integral PDF EANM",
+      "url": "https://eanm.org/wp-content/uploads/2025/04/2015_myocardial_perfusion.pdf"
+    },
+    {
+      "title": "[2] EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT: 2015 revision — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4589547/"
+    },
+    {
+      "title": "[3] EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT: 2015 revision (Eur J Nucl Med Mol Imaging vol 42, p.1929-1940, doi 10.1007/s00259-015-3139-x) — page editeur Springer",
+      "url": "https://link.springer.com/article/10.1007/s00259-015-3139-x"
+    },
+    {
+      "title": "[4] EANM Paediatric Dosage Card (Version 5.7.2016) — classes/activites de base (sestamibi/tetrofosmine classe B)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[5] SFMN — Guide pour la redaction de protocoles : Scintigraphie de perfusion myocardique V2.0 (ratifie 12/01/2012, Rouzet et al.)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Perfusion-myocardique-V2.0.pdf"
+    },
+    {
+      "title": "[6] 2024 ESC Guidelines for the management of chronic coronary syndromes — ACC Key Points (Ten Points to Remember)",
+      "url": "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2024/09/01/15/01/2024-esc-guidelines-for-ccs-esc-2024"
+    },
+    {
+      "title": "[7] 2024 ESC Guidelines for the management of chronic coronary syndromes (Eur Heart J 2024;45:3415-3537, doi 10.1093/eurheartj/ehae177)",
+      "url": "https://academic.oup.com/eurheartj/article/45/36/3415/7743115"
+    },
+    {
+      "title": "[8] Diagnostic performance of myocardial perfusion imaging with conventional and CZT SPECT in detecting CAD: a meta-analysis (J Nucl Cardiol 2019, doi 10.1007/s12350-019-01747-3)",
+      "url": "https://link.springer.com/article/10.1007/s12350-019-01747-3"
+    },
+    {
+      "title": "[9] Diagnostic accuracy of Discovery NM 530c CZT SPECT for MPI in CAD: a systematic review and meta-analysis (PMID 40773029)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40773029/"
+    },
+    {
+      "title": "[10] Diagnostic accuracy of dynamic CZT-SPECT in coronary artery disease. A systematic review and meta-analysis — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9345813/"
+    },
+    {
+      "title": "[11] ASNC imaging guidelines for SPECT nuclear cardiology procedures: Stress, protocols, and tracers (Henzlova et al., J Nucl Cardiol 2016;23:606-639)",
+      "url": "https://www.journalofnuclearcardiology.org/article/S1071-3581(23)06859-9/fulltext"
+    },
+    {
+      "title": "[12] SNMMI/ASNC/SCCT Guideline for Cardiac SPECT/CT and PET/CT 1.0 (Dorbala et al., J Nucl Med 2013;54:1485-1507)",
+      "url": "https://jnm.snmjournals.org/content/54/8/1485"
+    },
+    {
+      "title": "[13] ASNC Practice Point — Pharmacological Stress Testing with Regadenoson (aminophylline reversal)",
+      "url": "https://www.asnc.org/wp-content/uploads/2024/05/ASNC-Practice-Point-Pharmacological-Stress-Testing-Regadenoson.pdf"
+    },
+    {
+      "title": "[14] LEXISCAN (regadenoson) injection — FDA prescribing information 2018 (contre-indications BAV/dysfonction sinusale)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/022161s015lbl.pdf"
+    },
+    {
+      "title": "[15] Evaluation of Cardiac Mitochondrial Function by a Nuclear Imaging Technique using Technetium-99m-MIBI Uptake Kinetics — PMC (localisation mitochondriale du MIBI)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4937671/"
+    },
+    {
+      "title": "[16] Radionuclide Tracers for Myocardial Perfusion Imaging and Blood Flow Quantification (Mannarino et al., Cardiol Clin 2023;41:141) — fractions d'extraction MIBI/tetrofosmine",
+      "url": "https://www.binasss.sa.cr/bibliotecas/bhm/may23/36.pdf"
+    },
+    {
+      "title": "[17] Medical Isotope Production without Highly Enriched Uranium — Molybdenum-99/Technetium-99m Production and Use (National Academies / NCBI Bookshelf NBK215133)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215133/"
+    },
+    {
+      "title": "[18] Mo99-Tc99m Generator — StatPearls (NCBI Bookshelf NBK565854) — T½ Mo-99 66 h, equilibre transitoire, CQ percee Mo-99",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/"
+    },
+    {
+      "title": "[19] Role of myocardial perfusion imaging for risk stratification in suspected or known CAD — PMC (valeur pronostique SSS)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1767933/"
+    },
+    {
+      "title": "[20] Normal myocardial perfusion scan portends a benign prognosis independent from the pretest probability of CAD. Sub-analysis of the J-ACCESS study (J Cardiol 2009)",
+      "url": "https://www.journal-of-cardiology.com/article/S0914-5087(09)00132-4/fulltext"
+    },
+    {
+      "title": "[21] EANM procedural guidelines for myocardial perfusion scintigraphy using cardiac-centered gamma cameras — PMC (protocoles ultra-bas)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8218102/"
+    },
+    {
+      "title": "[22] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson S et al., Ann ICRP 2015, doi 10.1177/0146645314558019) — coefficients de dose 99mTc-sestamibi/tetrofosmine/201Tl",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[23] High Radiation Doses From SPECT Myocardial Perfusion Imaging in the United States (Circ Cardiovasc Imaging 2019, doi 10.1161/CIRCIMAGING.118.008383) — dose efficace mediane ~12,8 mSv",
+      "url": "https://www.ahajournals.org/doi/10.1161/CIRCIMAGING.118.008383"
+    },
+    {
+      "title": "[24] Diagnostic Performance of CMR, SPECT, and PET Imaging for the Identification of Coronary Artery Disease: A Meta-Analysis (Front Cardiovasc Med 2021, doi 10.3389/fcvm.2021.621389)",
+      "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2021.621389/full"
+    },
+    {
+      "title": "[25] Single Photon Emission Computed Tomography (SPECT) Myocardial Perfusion Imaging Guidelines: Instrumentation, Acquisition, Processing, and Interpretation (Dorbala S et al., ASNC/SNMMI, J Nucl Cardiol 2018;25:1784-1846)",
+      "url": "https://www.journalofnuclearcardiology.org/article/S1071-3581(23)02418-2/fulltext"
+    },
+    {
+      "title": "[26] Quality control on radiochemical purity in technetium-99m radiopharmaceuticals labelling: three years of experience on 2280 procedures (Maioli et al., Acta Biomed 2017, PMC6166199) — ITLC, seuils RCP",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166199/"
+    },
+    {
+      "title": "[27] Prognostic validation of a 17-segment score derived from a 20-segment score for myocardial perfusion SPECT interpretation (Berman DS et al., J Nucl Cardiol 2004;11:414-423) — SSS cut-offs",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1071358104001394"
+    },
+    {
+      "title": "[28] Diagnostic and prognostic significance of transient ischemic dilation (TID) in myocardial perfusion imaging: a systematic review and meta-analysis (J Nucl Cardiol 2017, PMC5966496)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5966496/"
+    },
+    {
+      "title": "[29] Quantifying Transient Ischemic Dilation Using Gated SPECT (Heston & Sigg, J Nucl Med 2005;46:1990-1996) — seuils du ratio TID",
+      "url": "https://jnm.snmjournals.org/content/46/12/1990"
+    },
+    {
+      "title": "[30] Myocardial CT Perfusion Imaging and SPECT for the Diagnosis of Coronary Artery Disease: A Head-to-Head Comparison from the CORE320 Multicenter Diagnostic Performance Study (PMC4263655)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4263655/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "flask",
+        "label": "Traceurs",
+        "value": "Tc-99m-sestamibi (MIBI), Tc-99m-tétrofosmine ; alt. Tl-201"
+      },
+      {
+        "icon": "zap",
+        "label": "Émission × énergie",
+        "value": "Tc-99m : gamma pur 140 keV"
+      },
+      {
+        "icon": "clock",
+        "label": "Période (T½)",
+        "value": "Tc-99m : 6 h · Tl-201 : 73 h"
+      },
+      {
+        "icon": "syringe",
+        "label": "Voie × activité",
+        "value": "IV · 2 j : 350–700 MBq/étude ; 1 j : 250–400 puis ×3"
+      },
+      {
+        "icon": "target",
+        "label": "Cible biologique",
+        "value": "Rétention mitochondriale (potentiel de membrane), myocytes viables"
+      },
+      {
+        "icon": "activity",
+        "label": "Gated-SPECT",
+        "value": "Synchronisation ECG, 8 ou 16 images/cycle → FEVG, volumes"
+      },
+      {
+        "icon": "clock",
+        "label": "Délai → images",
+        "value": "~15–60 min (clairance hépatobiliaire), acquisition ~15 min"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace",
+        "value": "MIBI 0,0066–0,0070 ; tétrofosmine 0,0058–0,0063 ; Tl-201 0,102 mSv/MBq"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose examen complet",
+        "value": "≈ 15 mSv (1 j Tc-99m majoritaire)"
+      },
+      {
+        "icon": "alert",
+        "label": "Organe critique",
+        "value": "Vésicule biliaire + reins (MIBI) ; + côlon (tétrofosmine)"
+      },
+      {
+        "icon": "shield",
+        "label": "Préparation clé",
+        "value": "Arrêt caféine ≥ 12 h ; dipyridamole ≥ 24 h avant vasodilatateur"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie",
+        "value": "Tc-99m préféré au Tl-201 ; carte EANM classe B, min 80 MBq"
+      },
+      {
+        "icon": "list",
+        "label": "Indications phares",
+        "value": "Coronaropathie (probabilité prétest 15–85 %), viabilité, FEVG"
+      },
+      {
+        "icon": "microscope",
+        "label": "Performances",
+        "value": "SPECT Se ≈ 85–88 % / Sp ≈ 66–73 % ; CZT Se ~89 %"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "Tc-99m-sestamibi (MIBI)"
+      },
+      {
+        "type": "traceur",
+        "label": "Tc-99m-tétrofosmine"
+      },
+      {
+        "type": "traceur",
+        "label": "Tl-201-chlorure"
+      },
+      {
+        "type": "maladie",
+        "label": "Coronaropathie chronique (SCC)"
+      },
+      {
+        "type": "maladie",
+        "label": "Ischémie myocardique"
+      },
+      {
+        "type": "maladie",
+        "label": "Infarctus du myocarde"
+      },
+      {
+        "type": "maladie",
+        "label": "Insuffisance cardiaque"
+      },
+      {
+        "type": "examen",
+        "label": "TEP de perfusion myocardique (82Rb, 13N-NH3)"
+      },
+      {
+        "type": "examen",
+        "label": "Coroscanner (CCTA) / FFR-CT"
+      },
+      {
+        "type": "examen",
+        "label": "IRM de stress / écho de stress"
+      },
+      {
+        "type": "examen",
+        "label": "Score calcique coronaire (CACS)"
+      },
+      {
+        "type": "score",
+        "label": "Summed Stress Score (SSS/SRS/SDS)"
+      },
+      {
+        "type": "score",
+        "label": "Modèle 17 segments AHA"
+      },
+      {
+        "type": "theranostique",
+        "label": "Générateur Mo-99/Tc-99m"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel mécanisme cellulaire fixe le Tc-99m-sestamibi dans le cardiomyocyte ?",
+        "options": [
+          "Liaison aux récepteurs de la somatostatine",
+          "Diffusion passive selon le potentiel de membrane, puis séquestration mitochondriale",
+          "Transport actif par la pompe Na/K-ATPase",
+          "Captation par le transporteur du glucose"
+        ],
+        "answer": 1,
+        "explanation": "Le MIBI et la tétrofosmine sont des cations lipophiles qui diffusent passivement selon le potentiel de membrane plasmique puis mitochondrial (équation de Nernst) ; >90 % du MIBI myocardique est localisé dans la fraction mitochondriale des myocytes viables [1,15].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "À quelle fraction du débit de repos plafonne la captation des traceurs Tc-99m ?",
+        "options": [
+          "~1× le débit de repos",
+          "~2× le débit de repos",
+          "~5× le débit de repos",
+          "Linéaire sans plateau"
+        ],
+        "answer": 1,
+        "explanation": "La captation myocardique des traceurs Tc-99m augmente presque proportionnellement à la perfusion mais atteint un plateau vers ~2× le débit de repos, ce qui sous-estime les hyperémies sévères [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est l'énergie du photon gamma du Tc-99m ?",
+        "options": [
+          "67–82 keV",
+          "140 keV",
+          "159 keV",
+          "364 keV"
+        ],
+        "answer": 1,
+        "explanation": "Le Tc-99m est un émetteur gamma pur de 140 keV, de période physique 6 h, idéal pour la gamma-caméra [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Que mesure le SDS (Summed Difference Score) ?",
+        "options": [
+          "La FEVG au repos",
+          "La nécrose fixée totale",
+          "La composante ischémique réversible (SSS − SRS)",
+          "Le volume télédiastolique"
+        ],
+        "answer": 2,
+        "explanation": "Le SDS = SSS − SRS isole la composante ischémique réversible (défect présent au stress se normalisant au repos), à distinguer de la nécrose fixée présente aux deux temps [1,27].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel modèle segmentaire est recommandé pour la cotation de la perfusion ?",
+        "options": [
+          "5 segments",
+          "12 segments",
+          "17 segments",
+          "32 segments"
+        ],
+        "answer": 2,
+        "explanation": "Le modèle à 17 segments (AHA) offre le meilleur accord avec l'IRM, l'écho et l'anatomie coronaire (territoires LAD/LCx/RCA) ; chaque segment est coté sur une échelle 0–4 [1,25].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Comment cote-t-on chaque segment de perfusion ?",
+        "options": [
+          "Échelle 0–3",
+          "Échelle 0–4 (0 = normal, 4 = absence de captation)",
+          "Échelle 1–5",
+          "Pourcentage uniquement"
+        ],
+        "answer": 1,
+        "explanation": "L'échelle à 5 points 0–4 : 0 = normal, 1 = légèrement réduit, 2 = modérément, 3 = sévèrement, 4 = absence de captation [1,25].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle interprétation correspond à un SSS de 4–8 (modèle 20 segments transposé) ?",
+        "options": [
+          "Normal",
+          "Légèrement anormal",
+          "Modérément anormal",
+          "Sévèrement anormal"
+        ],
+        "answer": 1,
+        "explanation": "Selon Berman : SSS < 4 normal, 4–8 légèrement anormal, 9–13 modérément, > 13 sévèrement anormal ; le SSS max théorique est 68 (17 × 4) [27].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le débit de perfusion de l'adénosine en stress pharmacologique ?",
+        "options": [
+          "50 µg/kg/min sur 10 min",
+          "140 µg/kg/min sur 4–6 min",
+          "0,4 mg en bolus fixe",
+          "10 µg/kg/min incrémental"
+        ],
+        "answer": 1,
+        "explanation": "L'adénosine se perfuse à 140 µg/kg/min sur 4–6 min, le traceur étant injecté à mi-perfusion ; un protocole progressif 50→75→100→140 est possible chez les patients à risque [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle particularité distingue le dosage du régadénoson ?",
+        "options": [
+          "Dose ajustée au poids",
+          "Bolus fixe de 0,4 mg indépendant du poids, agoniste A2A sélectif",
+          "Perfusion continue de 6 min",
+          "Réservé aux asthmatiques"
+        ],
+        "answer": 1,
+        "explanation": "Le régadénoson est un agoniste A2A sélectif administré en bolus fixe de 0,4 mg/5 mL sur 10 s, dose indépendante du poids, suivi d'un flush puis du traceur 10–20 s après [1,14].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel antidote doit être disponible pour réverser les effets des vasodilatateurs ?",
+        "options": [
+          "Atropine",
+          "Aminophylline IV",
+          "Naloxone",
+          "Flumazénil"
+        ],
+        "answer": 1,
+        "explanation": "L'aminophylline IV (50–250 mg, lente) réverse les effets de l'adénosine/régadénoson et doit être immédiatement disponible pendant le test [13].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la contre-indication absolue spécifique du régadénoson ?",
+        "options": [
+          "Hypertension légère",
+          "BAV 2e–3e degré ou dysfonction sinusale sans pacemaker",
+          "Diabète",
+          "Insuffisance rénale modérée"
+        ],
+        "answer": 1,
+        "explanation": "Selon le label FDA, le régadénoson est contre-indiqué en cas de BAV 2e–3e degré ou de dysfonction sinusale sans stimulateur cardiaque fonctionnel [14].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel délai d'arrêt de la caféine est requis avant un stress vasodilatateur ?",
+        "options": [
+          "≥ 2 h",
+          "≥ 6 h",
+          "≥ 12 h",
+          "Aucun arrêt nécessaire"
+        ],
+        "answer": 2,
+        "explanation": "La caféine et les méthylxanthines doivent être arrêtées ≥ 12 h avant tout stress vasodilatateur (≥ 5 demi-vies pour les méthylxanthines à action prolongée) car elles antagonisent l'effet [1,5].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "De combien le gating à 8 images sous-estime-t-il la FEVG par rapport à 16 images ?",
+        "options": [
+          "Aucune différence",
+          "~4 points",
+          "~15 points",
+          "~25 points"
+        ],
+        "answer": 1,
+        "explanation": "Le gating à 8 frames sous-estime la FEVG de 3,7–4 points par rapport à 16 frames ; le rejet de battements doit rester < 25 % pour ne pas dégrader fonction et perfusion [1].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la dose efficace approximative d'un examen complet de SPECT-MPI aux États-Unis ?",
+        "options": [
+          "≈ 1 mSv",
+          "≈ 5 mSv",
+          "≈ 15 mSv",
+          "≈ 40 mSv"
+        ],
+        "answer": 2,
+        "explanation": "La dose efficace moyenne d'un examen complet est d'environ 15 mSv (14,9 ± 5,8 mSv), faisant de la MPI la procédure d'imagerie médicale à la dose moyenne la plus élevée ; le Tl-201 est plus irradiant que le Tc-99m [3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Que traduit une dilatation ischémique transitoire (TID) ?",
+        "options": [
+          "Une variante de la normale",
+          "Un marqueur de haute gravité (atteinte sévère/multitronculaire)",
+          "Un artefact d'atténuation mammaire",
+          "Une bonne réponse au traitement"
+        ],
+        "answer": 1,
+        "explanation": "Un ratio TID ≥ 1,15–1,22 (VG stress/repos) est un marqueur high-risk ; associé à une FEVG post-stress ≤ 45 %, le risque de mort cardiaque/IDM dépasse 7 %/an [28,29].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle classe de recommandation l'ESC 2024 attribue-t-elle au SPECT-MPI dans le syndrome coronarien chronique ?",
+        "options": [
+          "Classe III (déconseillé)",
+          "Classe I, niveau B, en probabilité prétest 15–85 %",
+          "Classe IIb uniquement",
+          "Réservé à la probabilité prétest < 5 %"
+        ],
+        "answer": 1,
+        "explanation": "L'ESC 2024 recommande l'imagerie fonctionnelle (dont SPECT, la TEP étant préférée) en Classe I-B chez les patients à probabilité prétest modérée-élevée (>15–85 %) de coronaropathie obstructive ; le CCTA est 1re intention en probabilité faible-modérée [6,7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi préfère-t-on un stress vasodilatateur à l'effort en cas de bloc de branche gauche (LBBB) ?",
+        "options": [
+          "Parce que l'effort est contre-indiqué chez tous",
+          "Parce que l'effort crée un faux défect septal en LBBB",
+          "Parce que le LBBB augmente la captation hépatique",
+          "Parce que le LBBB empêche le gating"
+        ],
+        "answer": 1,
+        "explanation": "En présence d'un LBBB ou d'un rythme électro-entraîné, l'effort (ou le low-level exercise) génère un faux défect septal au stress ; on privilégie donc un stress vasodilatateur pur [1].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel collimateur est optimal pour le Tc-99m en SPECT-MPI ?",
+        "options": [
+          "Haute énergie",
+          "LEHR (basse énergie haute résolution)",
+          "Sténopé (pinhole)",
+          "Moyenne énergie obligatoire"
+        ],
+        "answer": 1,
+        "explanation": "Le collimateur LEHR est optimal pour le 140 keV du Tc-99m (résolution en énergie 9–10 %) ; pour le Tl-201 on préfère un collimateur basse énergie tout-usage afin de préserver la statistique de comptage [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel pronostic confère une scintigraphie myocardique normale ?",
+        "options": [
+          "Risque d'événement très élevé",
+          "Pronostic bénin, taux d'événements durs ~0,4 %/an",
+          "Indication systématique à la coronarographie",
+          "Aucune valeur pronostique"
+        ],
+        "answer": 1,
+        "explanation": "Une scintigraphie normale confère un pronostic bénin indépendant de la probabilité prétest : taux annuel d'événements durs ~0,4 % (modèle 17 segments), vs 7,0 % pour une anomalie modérée-sévère [19,20,27].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la limite réglementaire de percée du Mo-99 dans l'éluat de Tc-99m ?",
+        "options": [
+          "0,15 µCi Mo-99 / mCi Tc-99m",
+          "1,5 µCi Mo-99 / mCi Tc-99m",
+          "15 µCi Mo-99 / mCi Tc-99m",
+          "Aucune limite"
+        ],
+        "answer": 0,
+        "explanation": "La norme USP limite la percée du Mo-99 à 0,15 µCi Mo-99 par mCi de Tc-99m ; la pureté radiochimique du MIBI/tétrofosmine (ITLC) doit être ≥ 90–95 % [17,18,26].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Traceurs Tc-99m (sestamibi/tétrofosmine) : gamma pur 140 keV, T½ 6 h ; cations lipophiles à rétention mitochondriale (myocytes viables) ; captation proportionnelle à la perfusion mais plateau vers ~2× le repos [1,15].",
+        "Principe diagnostique : comparer stress vs repos — défect réversible = ischémie viable, défect fixe = nécrose/cicatrice [1,5].",
+        "Gated-SPECT (8 ou 16 images/cycle ECG) ajoute FEVG, volumes télédiastolique/télésystolique et cinétique segmentaire ; 8 frames sous-estime la FEVG de ~4 points [1].",
+        "Cotation : modèle 17 segments AHA, échelle 0–4 ; SSS (stress), SRS (repos), SDS = SSS − SRS (ischémie réversible) [1,25,27].",
+        "Stratification : SSS < 4 normal, 4–8 léger, 9–13 modéré, > 13 sévère ; scintigraphie normale = pronostic bénin (~0,4 %/an) [27,19].",
+        "Marqueurs de haute gravité : TID ≥ 1,15, FEVG post-stress ≤ 45 %, captation pulmonaire augmentée, défect multitronculaire → événements > 7 %/an [28,29].",
+        "Performances : SPECT Se ≈ 85–88 % / Sp ≈ 66–73 % ; CZT améliore Se (~89 %) et raccourcit l'acquisition ou réduit l'activité [4,24,8].",
+        "ESC 2024 : imagerie fonctionnelle (SPECT/TEP) Classe I-B en probabilité prétest 15–85 % ; mesurer le CACS sur la TDM de correction d'atténuation [6,7]."
+      ],
+      "protocol": [
+        "Préparation : arrêt caféine/méthylxanthines ≥ 12 h, dipyridamole ≥ 24 h avant vasodilatateur ; petit-déjeuner léger (pas de jeûne strict avant effort) ; bêtabloquants à interrompre ≥ 3–4 demi-vies avant dobutamine [1,5].",
+        "Effort (1re intention si apte) : objectif ≥ 85 % de la FC max théorique, injection du traceur au pic, poursuite 1–2 min [1].",
+        "Adénosine 140 µg/kg/min sur 4–6 min ; dipyridamole 140 µg/kg/min sur 4 min (traceur 3–5 min après) ; régadénoson bolus fixe 0,4 mg/5 mL/10 s (poids-indépendant) ; dobutamine 10→40 µg/kg/min ± atropine [1,14].",
+        "Activités Tc-99m (EANM) : 2 jours 350–700 MBq/étude ; 1 jour 250–400 MBq puis ×3 ; ne pas dépasser ~1100 MBq Tc-99m/jour ; Tl-201 stress-redistribution 74–111 MBq, réinjection 37 MBq [1,5].",
+        "Acquisition : fenêtre 140 keV, collimateur LEHR, 64–128 vues sur 180°, gating 8 ou 16 frames, durée ≤ 20–30 min ; supine + prone pour démasquer les artefacts d'atténuation ; reconstruction itérative OSEM avec correction d'atténuation TDM [1,25].",
+        "Aminophylline IV (50–250 mg) disponible pour réverser un vasodilatateur ; antidote indispensable pendant tout test pharmacologique [13]."
+      ],
+      "scores": [
+        "Cotation par segment : échelle 0–4 (0 normal → 4 absence de captation) sur modèle 17 segments [1,25].",
+        "SSS / SRS / SDS : Summed Stress/Rest/Difference Score ; SDS = SSS − SRS = composante ischémique réversible [1,27].",
+        "Interprétation SSS : < 4 normal · 4–8 léger · 9–13 modéré · > 13 sévère (max théorique 68) [27].",
+        "Captation normalisée (% du max) : normal ≥ 70 %, légèrement réduit 50–69 %, modérément 30–49 %, sévèrement 10–29 %, absent < 10 % [1].",
+        "Marqueurs high-risk : TID ratio ≥ 1,15–1,22 ; FEVG post-stress ≤ 45 % ; captation pulmonaire augmentée [28,29]."
+      ],
+      "pitfalls": [
+        "Artefacts d'atténuation (sein, diaphragme) simulant un défect fixe → confronter à la cinétique/épaississement (conservés = artefact probable) et au prone / à la correction d'atténuation TDM [1].",
+        "LBBB ou rythme électro-entraîné : faux défect septal à l'effort → préférer un stress vasodilatateur pur [1].",
+        "Plateau de captation à ~2× le débit de repos : sous-estimation de l'ischémie sévère ; le Tl-201 plafonne un peu plus haut (2–2,5×) [1].",
+        "Activité digestive/hépatobiliaire sous-diaphragmatique parasitant la paroi inférieure (surtout repos / vasodilatateur seul) [1].",
+        "Sous-estimation de la viabilité si injection de repos sans couverture par dérivés nitrés [1,5].",
+        "Rejet de battements > 25 % en gated-SPECT dégradant fonction ET perfusion ; mouvement du patient si acquisition > 20–30 min [1].",
+        "Faux négatif si caféine/dipyridamole non arrêtés avant vasodilatateur (antagonisme) [1,5]."
+      ]
+    },
+    "lead": "La scintigraphie myocardique de perfusion est un examen d'imagerie qui photographie l'irrigation du muscle cardiaque, une première fois pendant un effort ou un stress provoqué par un médicament, puis une seconde fois au repos. En comparant les deux séries d'images, le médecin distingue une zone simplement mal irriguée à l'effort mais encore vivante d'une cicatrice définitive laissée par un ancien infarctus. L'examen mesure aussi, dans le même temps, la force de contraction du cœur. Il aide ainsi à savoir si un rétrécissement des artères coronaires gêne réellement le cœur et à orienter le traitement. Indolore et réalisé en ambulatoire, il repose sur l'injection d'un produit faiblement radioactif suivi d'un passage sous une caméra spéciale.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cet examen ?",
+          "text": "La scintigraphie myocardique est un examen d'imagerie qui permet de regarder comment le sang circule dans votre muscle cardiaque, le cœur. Le cœur a besoin d'être nourri en permanence par son propre réseau de petites artères, appelées artères coronaires. Lorsque l'une de ces artères se rétrécit, certaines zones du cœur peuvent recevoir moins de sang, surtout pendant un effort. Cet examen aide votre médecin à savoir si une partie de votre cœur manque de sang (on parle d'ischémie), notamment quand vous ressentez des douleurs dans la poitrine, un essoufflement ou une gêne à l'effort. Il sert aussi à vérifier l'état d'un cœur après un infarctus ou pour préparer certaines décisions de traitement. Il donne en plus une bonne idée de la force avec laquelle votre cœur se contracte.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "L'idée principale",
+              "text": "On compare votre cœur dans deux situations : quand il travaille (à l'effort ou avec un médicament qui le sollicite) et quand il est au repos. La différence entre les deux images révèle les zones qui manquent de sang seulement à l'effort."
+            }
+          ]
+        },
+        {
+          "title": "Comment se passe l'examen ?",
+          "text": "L'examen comporte deux temps : une partie « au repos » et une partie « à l'effort ». On vous injecte dans une veine du bras un produit traceur, en très petite quantité, qui se fixe dans le muscle de votre cœur et le rend visible par une caméra spéciale. Cette caméra ne touche pas votre corps : vous restez allongé tranquillement pendant quelques minutes pendant qu'elle prend les images. Pour le temps « à l'effort », on vous demande soit de pédaler ou de marcher sur un tapis, soit, si vous ne pouvez pas faire d'effort physique, on utilise un médicament injecté qui imite l'effet de l'effort sur votre cœur. L'ensemble de la procédure peut s'étaler sur quelques heures, parfois sur deux journées différentes selon le protocole choisi par l'équipe.",
+          "steps": [
+            {
+              "title": "Préparation",
+              "text": "On vous demandera généralement d'éviter le café, le thé, le chocolat et les boissons contenant de la caféine pendant au moins une demi-journée avant l'examen, car ils peuvent fausser le test. Certains médicaments du cœur peuvent aussi être arrêtés temporairement : suivez bien les consignes qu'on vous donne. Un petit-déjeuner léger est souvent conseillé."
+            },
+            {
+              "title": "L'injection et la mise sous tension du cœur",
+              "text": "On pose une petite perfusion dans le bras, puis on réalise l'effort (vélo, tapis ou médicament). Le traceur est injecté au moment où votre cœur travaille le plus."
+            },
+            {
+              "title": "Les images",
+              "text": "Vous vous allongez sous la caméra qui tourne lentement autour de votre poitrine pour photographier votre cœur sous tous les angles. Il faut rester immobile, c'est la seule contrainte. L'image est indolore."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce que c'est sans danger ?",
+          "text": "Cet examen est pratiqué très couramment et reste sûr. Le produit injecté ne provoque presque jamais de réaction : les rares effets ressentis sont passagers et bénins, comme un bref goût métallique dans la bouche. La quantité de rayonnement utilisée est faible et encadrée par des règles strictes ; l'équipe choisit toujours la dose la plus basse possible pour obtenir une bonne image. Pendant le temps d'effort, vous êtes surveillé en permanence par l'équipe médicale, et il existe un médicament qui permet d'arrêter rapidement les effets du produit d'effort si vous ne le supportez pas bien. Boire de l'eau après l'examen aide votre corps à éliminer le traceur plus vite.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "À signaler avant l'examen",
+              "text": "Prévenez l'équipe si vous êtes enceinte ou pensez l'être, si vous allaitez, ou si vous êtes asthmatique : ces situations demandent des précautions particulières et peuvent modifier le déroulement du test."
+            },
+            {
+              "type": "tip",
+              "title": "Après l'examen",
+              "text": "Vous pouvez reprendre une vie tout à fait normale dès la sortie. Boire de l'eau régulièrement dans les heures qui suivent aide à éliminer naturellement le traceur."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser et indications",
+          "text": "La scintigraphie myocardique de perfusion (SPECT/gated-SPECT) est l'examen fonctionnel de référence pour explorer l'ischémie myocardique chez le patient à probabilité prétest intermédiaire à élevée de coronaropathie obstructive. Les recommandations ESC 2024 sur les syndromes coronariens chroniques placent l'imagerie de perfusion (SPECT, ou TEP de préférence) en classe I, niveau B, chez les patients dont la probabilité prétest de maladie coronaire obstructive se situe entre 15 et 85 %. Pensez-y devant un angor stable ou atypique, une dyspnée d'effort inexpliquée, des modifications ECG non concluantes, ou une épreuve d'effort ininterprétable ou litigieuse. L'examen est aussi indiqué pour la stratification du risque (avant chirurgie non cardiaque à risque, après un syndrome coronarien stabilisé, après revascularisation), pour évaluer la signification fonctionnelle d'une sténose déjà connue, et pour la recherche de viabilité myocardique.",
+          "list": [
+            "Angor stable, douleur thoracique atypique ou dyspnée d'effort chez un patient à probabilité intermédiaire-élevée",
+            "Épreuve d'effort ininterprétable, litigieuse ou impossible (déconditionnement, troubles de repolarisation de repos)",
+            "Évaluation de la signification fonctionnelle d'une sténose coronaire connue (ex. lésion intermédiaire)",
+            "Stratification du risque pré-opératoire ou après syndrome coronarien stabilisé",
+            "Recherche de viabilité et évaluation de la fonction VG (FEVG, volumes)"
+          ]
+        },
+        {
+          "title": "Démarche et apport de la médecine nucléaire",
+          "text": "L'examen compare la perfusion régionale du myocarde au stress (effort physique en première intention si le patient est apte, sinon stress pharmacologique par vasodilatateur ou dobutamine) et au repos. Un défect présent au stress et réversible au repos signe une ischémie ; un défect fixe traduit une nécrose ou une cicatrice. La synchronisation à l'ECG (gated-SPECT) ajoute une mesure de la fonction ventriculaire gauche (fraction d'éjection, volumes, cinétique segmentaire) dans le même examen. Au plan pratique, pour orienter votre patient utilement, signalez systématiquement les éléments qui conditionnent le choix et la sécurité du stress : capacité à l'effort, asthme ou BPCO (qui contre-indiquent les vasodilatateurs), traitements en cours (bêtabloquants, dérivés nitrés, dipyridamole), et la consommation de caféine, à arrêter au moins 12 heures avant un stress vasodilatateur. Une scintigraphie normale a une forte valeur rassurante, avec un taux d'événements cardiaques durs très faible, de l'ordre de 0,4 % par an.",
+          "list": [
+            "Préciser l'indication clinique et la question posée (diagnostic, risque, viabilité)",
+            "Indiquer la capacité à l'effort et tout antécédent d'asthme ou de BPCO",
+            "Transmettre la liste des traitements (bêtabloquants, nitrés, dipyridamole)",
+            "Rappeler au patient l'arrêt de la caféine au moins 12 h avant un stress vasodilatateur"
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La scintigraphie myocardique apporte trois informations en un seul examen, là où l'épreuve d'effort seule reste souvent insuffisante : 1) la présence et l'étendue d'une ischémie, rapportées à un territoire coronaire, 2) la distinction entre ischémie réversible (viable, justifiant une revascularisation) et nécrose fixée, et 3) une mesure objective de la fonction ventriculaire gauche. Sa sensibilité pour la coronaropathie est élevée (environ 88 %), et sa valeur pronostique est forte : un examen normal autorise une attitude rassurante et évite des coronarographies inutiles, tandis qu'un examen anormal hiérarchise le risque et guide la décision de revascularisation. Adressez le patient en précisant l'indication clinique précise, sa capacité à l'effort et ses comorbidités respiratoires, afin que le service choisisse le protocole de stress le plus adapté et le plus sûr."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité",
+          "text": "**Comment lire la carte d'identité.** La scintigraphie myocardique de perfusion (**SPECT-MPI**, *single-photon emission computed tomography — myocardial perfusion imaging* ; TEMP en français) est un examen de **médecine nucléaire conventionnelle** qui cartographie la **perfusion myocardique régionale relative** au moyen d'un traceur cationique capté proportionnellement au débit coronaire.[1] L'examen est par essence **comparatif** : il associe une acquisition au **stress** (effort ou pharmacologique) et une acquisition au **repos**, afin de distinguer une **ischémie réversible** d'une **nécrose fixée** (cf. §A4).[1][5] La synchronisation à l'ECG (**gated-SPECT**) ajoute, sans injection supplémentaire, la mesure de la **fraction d'éjection du ventricule gauche (FEVG)**, des volumes et de la cinétique segmentaire.[1][5]\n\n| Champ | Valeur | Source |\n|---|---|---|\n| **Acronyme × modalité** | SPECT-MPI / TEMP (± SPECT-TDM ; caméras CZT dédiées) | [1] |\n| **Traceur principal** | **⁹⁹ᵐTc-sestamibi (MIBI)** ou **⁹⁹ᵐTc-tétrofosmine** | [1] |\n| **Alternative** | **²⁰¹Tl-chlorure** (historique) | [1] |\n| **Émission × énergie** | ⁹⁹ᵐTc : γ pur **140 keV** ; ²⁰¹Tl : X **67–82 keV** + γ 135/167 keV | [1] |\n| **Période physique** | ⁹⁹ᵐTc **6 h** ; ²⁰¹Tl **73 h** | [1] |\n| **Voie × activité adulte** | IV ; ⁹⁹ᵐTc 2 jours **350–700 MBq/étude** ; 1 jour **250–400 MBq** puis **×3** | [1] |\n| **Délai injection → images** | variable selon traceur/clairance hépatobiliaire ; acquisition ~**15 min** | [1] |\n| **Dose efficace (coef.)** | MIBI **0,0066/0,0070 mSv/MBq** ; tétrofosmine **0,0058/0,0063** ; ²⁰¹Tl **0,102** | [1][22] |\n| **Préparation clé** | abstinence caféine **≥ 12 h** avant vasodilatateur ; pas de jeûne strict | [1][5] |\n| **Indication phare** | détection/évaluation de l'**ischémie** (coronaropathie chronique), viabilité, FEVG | [7] |\n\nLe choix entre **protocole 1 jour** et **2 jours** dépend du débit du service et du gabarit du patient ; les caméras **CZT** (cadmium-zinc-tellurure, semi-conducteurs) autorisent des protocoles à **activité réduite** ou à temps d'acquisition raccourci (cf. §A6 et §B9). Le ⁹⁹ᵐTc est aujourd'hui le traceur de référence ; le ²⁰¹Tl, plus irradiant, garde un intérêt pour l'étude de viabilité par redistribution.[1]",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "γ du ⁹⁹ᵐTc (caméra idéale) [1]"
+            },
+            {
+              "value": "6 h",
+              "label": "Période physique du ⁹⁹ᵐTc [1]"
+            },
+            {
+              "value": "~2× repos",
+              "label": "Plateau de captation des traceurs Tc [1]"
+            },
+            {
+              "value": "17 segments",
+              "label": "Modèle d'analyse AHA standard [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — un examen, deux questions",
+              "text": "La SPECT-MPI répond simultanément à deux questions cliniques distinctes : **« y a-t-il une ischémie (et quelle est son étendue/sévérité) ? »** (perfusion stress/repos) et **« quelle est la fonction VG ? »** (gated-SPECT : FEVG, volumes télédiastolique/télésystolique, cinétique segmentaire). Cette double information explique sa valeur **diagnostique ET pronostique** (cf. §A5).[1][5]"
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Frise comparant les deux acquisitions de la scintigraphie myocardique : injection du traceur au pic de stress puis acquisition après un délai, et injection au repos puis acquisition ; la comparaison effort/repos sépare l'ischémie réversible de la nécrose fixée.",
+            "caption": "Fig. 1 — Architecture stress/repos : la comparaison des deux états fonde le diagnostic."
+          }
+        },
+        {
+          "title": "A2 - Définition",
+          "text": "La **scintigraphie myocardique de perfusion** est une technique d'**imagerie fonctionnelle et moléculaire** qui visualise la distribution intramyocardique d'un **traceur cationique de perfusion** marqué par un radio-isotope émetteur de photons gamma, détecté en **tomographie d'émission monophotonique (SPECT/TEMP)** par une gamma-caméra.[1] Contrairement à la coronarographie ou à l'angioscanner, qui montrent l'**anatomie** de la lumière coronaire (présence et degré d'une sténose), elle mesure la **conséquence fonctionnelle** d'une sténose sur la **perfusion du myocarde** d'aval : c'est une imagerie de la **physiologie**, non de la morphologie.[1]\n\nLe principe repose sur une **captation myocardique proportionnelle au débit sanguin coronaire régional** : le myocarde sain, mieux perfusé, capte davantage de traceur que le myocarde en aval d'une sténose hémodynamiquement significative.[1] L'information est intrinsèquement **régionale et relative** — l'image traduit des **rapports de captation entre territoires**, normalisés sur le segment le plus actif, et non une mesure absolue du débit (le **flux myocardique absolu**, en mL/min/g, relève de la TEP ou des caméras CZT dynamiques).[1][10]\n\nL'examen est par construction **bi-temporel** : une acquisition réalisée lors d'un **stress** (qui démasque l'hétérogénéité de perfusion) et une acquisition au **repos** (état de référence). C'est la **soustraction conceptuelle** des deux états qui constitue le résultat diagnostique. Couplée à la **synchronisation ECG (gated-SPECT)**, elle devient également une imagerie **quantitative de la fonction ventriculaire gauche**.[1][5] L'information produite est donc à la fois **qualitative** (présence/topographie d'un défect), **semi-quantitative** (scores de perfusion, cf. §C12) et **quantitative** (FEVG, volumes).[1]",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — « perfusion relative », pas « débit absolu »",
+              "text": "La SPECT-MPI conventionnelle mesure une perfusion **relative** : une atteinte coronaire **tri-tronculaire équilibrée** (*balanced ischemia*) peut abaisser la captation de façon homogène et paraître faussement « normale », faute de territoire de référence sain. Les marqueurs indirects (dilatation ischémique transitoire, chute de FEVG post-stress, captation pulmonaire ; cf. §C12) et la **quantification du flux** (TEP, CZT dynamique) corrigent cette limite.[1][10]"
+            }
+          ]
+        },
+        {
+          "title": "A3 - Rappels anatomiques & physiologiques",
+          "text": "**Vascularisation coronaire.** Le myocarde ventriculaire gauche est irrigué par trois troncs principaux dont la SPECT-MPI explore les territoires : l'**interventriculaire antérieure (IVA / LAD)**, la **circonflexe (Cx / LCx)** et la **coronaire droite (CD / RCA)**. L'analyse standardisée repose sur le modèle **17 segments** recommandé par l'AHA, qui assigne chaque segment à un territoire coronaire et permet la cotation semi-quantitative (cf. §C12) ainsi que la comparaison avec l'IRM et l'échographie.[1]\n\n**Réserve coronaire et rationnel du stress.** Au repos, le débit coronaire est maintenu constant par **autorégulation**, même en aval d'une sténose modérée : la perfusion de repos est donc souvent **normale** tant que la sténose ne dépasse pas un seuil critique. C'est le **stress** qui révèle l'anomalie. En condition d'hyperémie maximale (effort ou vasodilatateur), le débit du territoire sain augmente d'un facteur **~3–4×** (réserve coronaire) ; le territoire en aval d'une sténose significative n'augmente pas autant, créant une **hétérogénéité de captation** — c'est le substrat de l'image d'ischémie.[1] Les **vasodilatateurs** (adénosine, dipyridamole, régadénoson) induisent cette hyperémie via les **récepteurs A2A de l'adénosine**.[1]\n\n**Plateau de captation des traceurs.** Le rendement de captation des traceurs n'est pas linéaire sur toute la plage de débits. Les traceurs ⁹⁹ᵐTc **plafonnent à ~2× le débit de repos** ; le ²⁰¹Tl plafonne un peu plus haut (~2–2,5×).[1] Ce phénomène de *roll-off* explique la **sous-estimation des hyperémies sévères** et de l'ischémie la plus marquée — limite physiologique inhérente à la technique.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — variation régionale physiologique du comptage",
+              "text": "Chez le sujet sain, la paroi **septale** capte physiologiquement **moins** que la paroi **latérale** : une discrète hypofixation septale relative n'est pas pathologique en soi. De même, l'**atténuation diaphragmatique** (paroi inférieure, surtout chez l'homme) et l'**atténuation mammaire** (paroi antérieure, chez la femme) créent des défects d'atténuation à ne pas confondre avec une nécrose (cf. §C11 et §C14).[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Représentation en cible (« bull's-eye ») du ventricule gauche en 17 segments selon le modèle AHA, avec les territoires coronaires : antérieur (IVA), latéral (circonflexe), inférieur (coronaire droite), septal, et apex au centre.",
+            "caption": "Fig. 2 — Modèle 17 segments AHA : chaque segment rapporté à son territoire coronaire."
+          }
+        },
+        {
+          "title": "A4 - Principe : la cible biologique imagée",
+          "text": "**Pourquoi ça marche.** La cible imagée est le **débit sanguin coronaire régional** tel qu'il conditionne la **délivrance puis la rétention** du traceur dans le cardiomyocyte viable. Le signal résulte de deux conditions simultanées : (1) un **apport** proportionnel au flux (le traceur est délivré avec le sang) et (2) une **rétention cellulaire** qui suppose un myocyte métaboliquement intact.[1] Un défect peut donc traduire soit un **défaut d'apport** (ischémie/sténose), soit une **perte de myocytes** (nécrose) — d'où la nécessité de l'imagerie **bi-temporelle** pour les distinguer.\n\n**Mécanisme de rétention.** Les traceurs ⁹⁹ᵐTc (sestamibi, tétrofosmine) sont des **cations lipophiles** qui diffusent passivement à travers les membranes selon le **potentiel de membrane** (équation de Nernst), puis sont **séquestrés dans les mitochondries** des cardiomyocytes intacts — **> 90 %** du MIBI myocardique est localisé dans la fraction mitochondriale.[1][15] La rétention est donc un marqueur conjoint de **perfusion** et de **viabilité** (cf. §B7). Le ²⁰¹Tl, analogue du potassium, entre par la **pompe Na⁺/K⁺-ATPase** et subit une **redistribution** lente reflétant la viabilité.[1]\n\n**Détermination du contraste image.**\n- **Hyperfixation (captation conservée)** = territoire bien perfusé ET myocytes viables et intacts.\n- **Hypofixation au stress, réversible au repos** = territoire **viable mais sous-perfusé au stress** → **ischémie réversible** (réserve coronaire amputée par une sténose).[1][5]\n- **Hypofixation fixe (présente au stress ET au repos)** = **nécrose / cicatrice** (séquelle d'infarctus) ou — piège — artefact d'atténuation (cf. §C14).[1][5]",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la cible est indépendante du stress utilisé",
+              "text": "Le mécanisme de captation est le **même** quel que soit le mode de stress : l'effort et les vasodilatateurs ne font que **majorer le débit** (et donc l'hétérogénéité révélatrice), pas la biologie de la rétention. Le choix du stress (cf. §A5/§B8) dépend du patient (capacité à l'effort, contre-indications), non du traceur. C'est aussi pourquoi un stress **sous-maximal** (FC < 85 % de la cible) peut **sous-estimer** l'ischémie : le débit n'a pas été assez poussé pour démasquer la sténose.[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Schéma du principe : injection du traceur au pic de stress (révélation de l'hétérogénéité de perfusion) puis au repos (état de référence) ; la comparaison oppose ischémie réversible (défect stress se normalisant) et nécrose fixée (défect persistant).",
+            "caption": "Fig. 3 — Le contraste stress/repos : substrat de la distinction ischémie réversible vs nécrose."
+          }
+        },
+        {
+          "title": "A5 - Indications",
+          "text": "Les indications relèvent essentiellement de la **cardiologie**, pour le diagnostic et surtout la **stratification du risque** de la coronaropathie (rationnel renvoyant au §A4 : la SPECT-MPI n'est anormale que si le débit régional est altéré).\n\n**▸ Diagnostic de coronaropathie obstructive**\n- **Patient symptomatique à probabilité prétest intermédiaire à élevée.** Selon les **recommandations ESC 2024 sur les syndromes coronariens chroniques**, chez les patients à probabilité prétest **modérée à élevée (>15–85 %)** de coronaropathie obstructive, l'imagerie fonctionnelle — dont la **SPECT-MPI** (la TEP étant préférée quand disponible) — est **recommandée** pour évaluer ischémie, cicatrice et risque d'événements ; l'angioscanner (CCTA) est plutôt de première intention en probabilité faible-modérée.[6][7] La mesure du **score calcique (CACS)** sur la TDM de correction d'atténuation est recommandée chez les patients adressés en MPI.[7]\n- **Évaluation de la signification fonctionnelle** d'une sténose connue (notamment de sévérité angiographique intermédiaire).[1][5]\n\n**▸ Stratification du risque & pronostic**\n- Bilan **pré-opératoire** (chirurgie non cardiaque à risque), **post-syndrome coronarien aigu stabilisé**, **post-revascularisation** symptomatique.[1][5]\n- **Valeur pronostique majeure** : une scintigraphie **normale** confère un **pronostic bénin**, avec un taux d'événements cardiaques durs **< 1 %/an**, et ce indépendamment de la probabilité prétest.[19][20] À l'inverse, l'étendue et la sévérité des défects (scores SSS/SDS, cf. §C12) gradent le risque et identifient les patients susceptibles de bénéficier d'une revascularisation.\n\n**▸ Viabilité myocardique**\n- Recherche de **myocarde viable** en aval d'une dysfonction VG, pour orienter la décision de revascularisation — étude facilitée par le ²⁰¹Tl (redistribution/réinjection) ou l'injection de repos sous **dérivés nitrés**.[1][5]\n\n| Indication | Question clinique | Apport | Niveau de preuve |\n|---|---|---|---|\n| Coronaropathie chronique symptomatique | Ischémie ? étendue ? | Détection + topographie + fonction | **ESC 2024, recommandé (proba 15–85 %)** [6][7] |\n| Stratification du risque | Risque d'événement ? | Pronostic gradué (normal ≈ <1 %/an) | Élevé [19][20] |\n| Signification d'une sténose connue | Sténose fonctionnelle ? | Corrélation anatomo-fonctionnelle | Validée [1] |\n| Viabilité | Myocarde récupérable ? | Guide la revascularisation | Validée [1][5] |",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — la SPECT normale est une information clinique forte",
+              "text": "La **valeur prédictive négative** élevée fait de la SPECT-MPI normale un résultat actionnable : elle rassure et autorise une stratégie conservatrice, le risque d'événement dur restant **< 1 %/an**.[19][20] Inversement, la valeur de l'examen est **pronostique** autant que diagnostique : c'est l'**étendue/sévérité** de l'ischémie (et non sa seule présence) qui pèse sur la décision thérapeutique."
+            }
+          ]
+        },
+        {
+          "title": "A6 - Contre-indications & précautions",
+          "text": "Il n'existe **pas de contre-indication absolue à l'imagerie scintigraphique** elle-même ; les contre-indications portent sur le **mode de stress** choisi et sur la **radioprotection** (grossesse/allaitement). Renvoi au §B8 (préparation) et au §D16 (radioprotection).\n\n**Grossesse & allaitement.** La **grossesse** est une contre-indication relative forte (justification stricte, report si possible). Pour l'**allaitement**, une interruption est recommandée si l'activité ⁹⁹ᵐTc administrée dépasse **450 MBq**, le lait étant tiré et jeté pendant la période concernée.[5][1]\n\n**Contre-indications à l'épreuve d'effort.** Syndrome coronarien aigu / IDM récent (**< 2 jours**), angor instable non stabilisé, arythmie non contrôlée, **sténose aortique serrée symptomatique**, embolie pulmonaire aiguë, dissection aortique, myo-/péricardite aiguë.[1]\n\n**Contre-indications aux vasodilatateurs** (adénosine, dipyridamole, régadénoson) :\n\n| Situation | Conduite | Source |\n|---|---|---|\n| **Asthme / BPCO modéré-sévère** (bronchospasme) | Éviter ; préférer dobutamine ou effort | [1] |\n| **BAV 2ᵉ–3ᵉ degré ou dysfonction sinusale sans pacemaker** | CI absolue (régadénoson) | [1][14] |\n| **Hypotension sévère** | Éviter | [1] |\n| **Prise de dipyridamole < 24 h** ou **caféine < 12 h** | Reporter / antagonisme | [1][5] |\n| **β-bloquant non interrompu (dobutamine)** | Antagonisme → arrêt 3–4 demi-vies | [1] |\n\n**Antidote.** L'**aminophylline IV** (50–250 mg, injection lente) réverse les effets de l'adénosine/du régadénoson (bronchospasme, BAV, hypotension) et doit être **immédiatement disponible** pendant tout test vasodilatateur.[13]\n\n**Dobutamine.** Mêmes contre-indications que l'effort ; inefficace si **β-bloquant** non interrompu (antagonisme pharmacologique).[1]",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — alerte grossesse/allaitement & antidote au chevet",
+              "text": "La grossesse doit être **systématiquement recherchée** avant toute injection ; l'allaitement est interrompu si l'activité ⁹⁹ᵐTc dépasse **450 MBq** (lait tiré et jeté).[5] Pour tout stress pharmacologique vasodilatateur, l'**aminophylline** (antidote) doit être prête à l'emploi : un bronchospasme ou un BAV de haut degré peut survenir et requiert une réversion immédiate.[13]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — choisir le stress selon le terrain",
+              "text": "L'**effort** reste de première intention chez le patient apte (information électrique et symptomatique en sus). En cas d'incapacité à l'effort, d'asthme/BPCO ou de bloc de branche gauche (faux défect septal à l'effort), on s'oriente vers un **vasodilatateur** ; la **dobutamine** est réservée aux contre-indications aux vasodilatateurs (asthme sévère). Le choix du stress n'altère jamais la cible biologique imagée (cf. §A4).[1]"
+            }
+          ]
+        },
+        {
+          "title": "B7 - Radiopharmaceutique(s) & mécanisme(s) de fixation",
+          "text": "**(a) Mécanisme moléculaire.** Trois traceurs partagent l'objectif d'une fixation **proportionnelle au débit sanguin coronaire régional**, mais selon deux logiques distinctes.\n\n- Les **traceurs technétiés** — **Tc-99m-sestamibi (MIBI, méthoxy-isobutyl-isonitrile)** et **Tc-99m-tétrofosmine** — sont des **complexes cationiques lipophiles** qui diffusent passivement à travers les membranes plasmique et mitochondriale selon le **potentiel de membrane** (équation de Nernst), puis sont **séquestrés dans les mitochondries** des cardiomyocytes viables (**>90 %** du MIBI myocardique est localisé dans la fraction mitochondriale).[1,15] Cette rétention reflète donc à la fois la **perfusion** et la **viabilité** cellulaire.\n- Le **Tl-201-chlorure** est un **analogue du potassium** : ~**60 %** entrent activement via la pompe **Na⁺/K⁺-ATPase**, le reste passivement ; sa particularité est la **redistribution** sur plusieurs heures, les images tardives reflétant la viabilité quasi indépendamment de la perfusion.[1]\n\nLimite physiologique commune : la captation augmente presque linéairement avec le débit jusqu'à un **plateau atteint vers ~2× le débit de repos** pour les traceurs Tc-99m, ce qui sous-estime l'ischémie sévère (« roll-off »).[1] La **fraction d'extraction de premier passage** explique des cinétiques différentes : MIBI ≈ **55-68 %**, tétrofosmine ≈ **54 %** (extraction plus basse, mais clairance hépatique plus rapide → rapport cœur/foie plus favorable et imagerie plus précoce).[1,16]\n\n| Caractéristique | Tc-99m-sestamibi | Tc-99m-tétrofosmine | Tl-201-chlorure |\n|---|---|---|---|\n| Émission × énergie | γ **140 keV** | γ **140 keV** | X **67-82 keV** (88 %) + γ **135/167 keV** (12 %) |\n| Période physique | **6 h** | **6 h** | **73 h** |\n| Mécanisme | Diffusion passive → mitochondries | Diffusion passive → mitochondries | Pompe Na⁺/K⁺ (analogue K⁺) |\n| Extraction 1er passage | 55-68 % | ~54 % | ~73 % (forte) |\n| Redistribution | Non (image figée) | Non | **Oui** (viabilité) |\n| Organe critique | Vésicule biliaire + reins | Vésicule biliaire + côlon | Surface osseuse + reins |\n| Dose efficace (stress/repos) | **0,0066 / 0,0070** mSv/MBq | **0,0058 / 0,0063** mSv/MBq | **0,102** mSv/MBq |\n\n**(b) Production & marquage.** Le **Tc-99m** provient d'un **générateur Mo-99/Tc-99m** : le **Mo-99 (T½ ≈ 66 h)**, issu majoritairement de la **fission de l'U-235**, décroît en Tc-99m, élué à la solution saline (qui élue le pertechnétate ⁹⁹ᵐTcO₄⁻ et retient le Mo-99) ; le rendement est maximal ~**23-24 h** après l'élution précédente (équilibre transitoire).[17,18] Le **MIBI** et la **tétrofosmine** sont préparés extemporanément par **marquage d'un kit froid** avec le pertechnétate ; le MIBI nécessite typiquement un **chauffage au bain-marie bouillant**, la tétrofosmine se marque à température ambiante. Le **Tl-201** est produit par cyclotron.\n\n**(c) Contrôle qualité du traceur.** La **pureté radiochimique** (chromatographie sur couche mince ITLC-SG/acétone) doit être **≥ 90-95 %** pour le MIBI/tétrofosmine.[26] La pureté radionucléidique impose de surveiller la **percée du Mo-99**, limitée à **0,15 µCi Mo-99/mCi Tc-99m** (norme USP).[18] S'y ajoutent pureté chimique, pH, stérilité/apyrogénicité, activité vérifiée à l'activimètre. Les **événements indésirables** sont rares (<50 déclarations/an en Europe 1980-2000, surtout bénins : flush, goût métallique, vasovagal) ; l'**extravasation du Tl-201 est à éviter** (risque de nécrose tissulaire).[1]\n\n**(d) Activités & voie (IV).** Selon l'EANM 2015 (SPECT classique, BMI <25, acquisition ~15 min) :\n\n| Traceur / protocole | Activité |\n|---|---|\n| Tc-99m (2 jours) | **350-700 MBq/étude**[1] |\n| Tc-99m (1 jour) | **250-400 MBq** (1ʳᵉ inj.) puis **×3** (2ᵉ inj.)[1] |\n| Tl-201 stress-redistribution | **74-111 MBq**[1] |\n| Tl-201 réinjection | **37 MBq**[1] |\n| Protocoles ultra-bas (caméras CZT) | activité fixe **100-120 MBq** ; stress-only **<2 mSv**[11,21] |\n\nLes recommandations **SFMN** précisent par kg : Tc-99m protocole 1 jour **repos 3,7 / stress 11 MBq/kg**, protocole 2 jours **11 MBq/kg** par temps, sans dépasser **1100 MBq Tc-99m/jour** ; Tl-201 **1,5 MBq/kg** (stress-redistribution), **≤148 MBq/jour**.[5] En **pédiatrie**, la **carte de dose EANM (classe B)** s'applique au MIBI/tétrofosmine (activité de base × multiple poids ; **minimum 80 MBq**), et les **traceurs Tc-99m sont préférés au Tl-201** (dose plus faible).[4,5]",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "γ du Tc-99m (T½ 6 h)"
+            },
+            {
+              "value": ">90 %",
+              "label": "MIBI dans la fraction mitochondriale"
+            },
+            {
+              "value": "~2× repos",
+              "label": "Plateau de captation (Tc-99m)"
+            },
+            {
+              "value": "0,102 mSv/MBq",
+              "label": "Dose efficace Tl-201"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La cible est **commune aux trois traceurs** : la perfusion myocardique régionale relative. Le choix du traceur n'est gouverné que par la dosimétrie, la cinétique (extraction, redistribution) et la qualité d'image. Le **Tl-201 reste irradiant (0,102 mSv/MBq)** mais conserve un intérêt pour l'étude de viabilité grâce à sa redistribution ; les traceurs **Tc-99m (140 keV, T½ 6 h)** dominent en pratique pour leur qualité d'image et leur faible dose.[1]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège - plateau de captation",
+              "text": "Aux débits élevés du stress (hyperémie 3-4× le repos), la captation des traceurs Tc-99m **plafonne dès ~2× le débit de repos** : un défect peut donc **sous-estimer la sévérité** d'une ischémie ou d'une sténose serrée. C'est une limite intrinsèque du SPECT-MPI relatif que la quantification du flux (MBF, caméras CZT/TEP) cherche à dépasser.[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur Mo-99/Tc-99m : colonne d'alumine retenant le Mo-99, élution saline du pertechnétate Tc-99m, équilibre transitoire à 23-24 h."
+          }
+        },
+        {
+          "title": "B8 - Préparation du patient",
+          "text": "La validité de l'examen dépend d'une préparation rigoureuse, dominée par l'**arrêt des méthylxanthines** (qui antagonisent les vasodilatateurs) et la gestion des **traitements anti-ischémiques**. Aucun jeûne strict prolongé n'est requis.\n\n**Jeûne & alimentation.** Si l'examen débute par une acquisition de **repos technétiée**, le patient est **à jeun ou prend un petit-déjeuner léger** (pour limiter la captation digestive sous-diaphragmatique qui parasite la paroi inférieure).[5] À l'inverse, **ne pas faire d'effort à jeun strict prolongé** : un petit-déjeuner léger est conseillé avant l'effort.[5]\n\n**Caféine & méthylxanthines (point critique avant stress vasodilatateur).** Arrêt de la **caféine ≥ 12 h** (café, thé, chocolat, sodas caféinés, certaines boissons « énergisantes »), car la caféine est un **antagoniste compétitif des récepteurs à l'adénosine** et peut rendre le test **faussement négatif**.[1,5] Pour les méthylxanthines à action prolongée (théophylline), respecter **≥ 5 demi-vies**.[1]\n\n**Médicaments à gérer.**\n\n| Classe | Conduite | Délai |\n|---|---|---|\n| **Caféine / méthylxanthines** | Arrêt avant test vasodilatateur | **≥ 12 h** (5 demi-vies si théophylline)[1,5] |\n| **Dipyridamole** (traitement) | Arrêt avant test vasodilatateur | **≥ 12-24 h**[1,5] |\n| **Bêtabloquants** | Antagonistes de la dobutamine → arrêt si test à la dobutamine ; pour l'effort, gérer selon l'objectif (diagnostic vs évaluation thérapeutique) | **≥ 3-4 demi-vies** (dobutamine)[1] |\n| **Anti-angineux / dérivés nitrés** | Interrompre si test **diagnostique** d'ischémie ; à l'inverse, **injecter le repos SOUS nitrés** si suspicion d'ischémie sévère / IDM ancien (éviter de sous-estimer la viabilité) | Selon l'objectif[1,5] |\n\n**Couverture nitrée pour la viabilité.** La **trinitrine sublinguale 400-800 µg ≥ 5 min** avant l'injection de repos améliore la perfusion de repos et la correspondance à la viabilité ; son omission est une cause de **sous-estimation de la viabilité**.[1]\n\n**Information & sécurité.** Recueil du contexte (grossesse/allaitement systématiquement recherchés), des contre-indications au stress retenu (cf. §A6), disponibilité de l'**aminophylline** (antidote des vasodilatateurs) et de l'environnement de réanimation. L'**allaitement** est interrompu (lait tiré et jeté) si l'activité Tc-99m administrée dépasse **450 MBq**.[5]",
+          "steps": [
+            {
+              "title": "≥ 12-24 h avant",
+              "text": "Arrêt de la caféine et des méthylxanthines (≥ 12 h) ; arrêt du dipyridamole oral (≥ 12-24 h) ; planifier l'arrêt des anti-angineux/bêtabloquants selon l'objectif et le type de stress.[1,5]"
+            },
+            {
+              "title": "Le jour J - accueil",
+              "text": "Vérifier l'observance de l'arrêt caféine ; rechercher grossesse/allaitement ; petit-déjeuner léger ; confirmer le type de stress et ses contre-indications ; voie veineuse, monitorage ECG/TA, antidote (aminophylline) disponible.[1]"
+            },
+            {
+              "title": "Repos / viabilité",
+              "text": "Si suspicion d'ischémie sévère ou d'IDM ancien : injection de repos SOUS trinitrine sublinguale 400-800 µg administrée ≥ 5 min avant, pour ne pas sous-estimer la viabilité.[1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - caféine et faux négatif",
+              "text": "Une caféine non sevrée **bloque l'effet vasodilatateur** de l'adénosine, du dipyridamole et du régadénoson, produisant une **hyperémie insuffisante** et donc un **faux négatif** (ischémie masquée). Toujours documenter le sevrage **≥ 12 h** avant un test vasodilatateur ; en cas de doute, préférer un test à l'effort ou à la dobutamine.[1,5]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - repos sous nitrés",
+              "text": "Devant un IDM ancien ou une ischémie sévère suspectée, l'injection de repos **sous dérivés nitrés** (trinitrine sublinguale) recrute la perfusion de repos et évite de classer à tort comme « nécrose fixée » un territoire **viable mais hypoperfusé**. C'est le pendant clinique du concept de viabilité.[1,5]"
+            }
+          ]
+        },
+        {
+          "title": "B9 - Instrument, contrôle qualité & protocole d'acquisition",
+          "text": "**(a) CQ de l'instrument - prérequis (NEMA).** Avant toute acquisition : **uniformité** (quotidienne), **pic d'énergie** (peaking centré sur 140 keV pour le Tc-99m, 67-82 keV pour le Tl-201), **résolution spatiale** et **sensibilité** ; pour la TEMP, **centre de rotation (COR)** et uniformité tomographique.[25] La résolution en énergie attendue est de **9-10 % à 140 keV (Tc-99m)**, **15-17 % à 72 keV (Tl-201)** et **5-6 % pour les détecteurs CZT** (cadmium-zinc-tellurure).[1]\n\n**(b) Collimateur & fenêtre d'énergie.** Collimateur **LEHR (basse énergie, haute résolution)** optimal pour le Tc-99m ; pour le Tl-201, collimateur basse énergie **moyenne résolution / tout usage** (préserve la statistique de comptage).[1] Fenêtre centrée sur le photopic principal.\n\n**(c) Paramètres d'acquisition (SPECT).**\n\n| Paramètre | Tc-99m | Tl-201 |\n|---|---|---|\n| Projections | **64 ou 128 vues / 180°** (ou 128 / 360°) | **32 vues / 180°** (64 possibles) |\n| Temps/projection | ~25 s (caméra conventionnelle) | adapté à la statistique |\n| Mode | step-and-shoot ou continuous step-and-shoot | idem |\n| Durée totale | **≤ 20-30 min** (au-delà : risque de mouvement) | idem[1] |\n| Pixel | ~6 mm | ~6 mm |\n\n**(d) Gating ECG.** Acquisition synchronisée à l'ECG, cycle R-R divisé en **8 ou 16 images/cycle** : le gating à **8 frames sous-estime la FEVG de 3,7-4 points** par rapport à 16 frames ; le **rejet de battements doit rester < 25 %** (au-delà, perfusion ET fonction sont dégradées).[1]\n\n**(e) Décubitus dorsal + procubitus (supine/prone).** L'acquisition en **procubitus complémentaire** déplace les structures atténuantes (sein, coupole diaphragmatique) et aide à distinguer un **artéfact d'atténuation** d'un vrai défect.[1]\n\n**(f) TDM associée (hybride SPECT/TDM).** La TDM de **correction d'atténuation** ajoute **+0,5-1,0 mSv** ; le **score calcique (CACS)** <1 mSv ; le CCTA 2-5 mSv (64 barrettes) ou <1 mSv (dual-source/256-320).[1] L'ESC 2024 recommande de **mesurer le CACS sur la TDM non injectée** de correction d'atténuation.[6,7]\n\n**(g) Caméras CZT / dédiées cardiaques.** La sensibilité de comptage accrue permet de **réduire l'activité OU raccourcir le temps d'acquisition** (protocoles ultra-bas, stress-only), et autorise le **SPECT dynamique** quantifiant le flux myocardique (MBF).[1,11,21]",
+          "stats": [
+            {
+              "value": "≤ 20-30 min",
+              "label": "Durée d'acquisition (limite mouvement)"
+            },
+            {
+              "value": "8 vs 16",
+              "label": "Frames/cycle (8 sous-estime FEVG ~4 pts)"
+            },
+            {
+              "value": "< 25 %",
+              "label": "Rejet de battements toléré (gating)"
+            },
+            {
+              "value": "+0,5-1 mSv",
+              "label": "TDM de correction d'atténuation"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - LBBB / rythme électro-entraîné",
+              "text": "Un **bloc de branche gauche (LBBB)** ou un rythme **électro-entraîné** crée un **faux défect septal** au stress d'effort (asynchronisme de contraction). Il faut alors **préférer un stress vasodilatateur** (sans effort, ni low-level exercise) qui ne reproduit pas cet artéfact septal.[1]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - durée et mouvement",
+              "text": "Au-delà de **20-30 min** d'acquisition, le risque de **mouvement du patient** dégrade la reconstruction. Les caméras CZT, en raccourcissant l'acquisition à quelques minutes, réduisent ce risque tout en autorisant la baisse d'activité (stress-only < 2 mSv).[1,11]"
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'une gamma-caméra SPECT cardiaque : collimateur LEHR adapté au Tc-99m, cristal NaI(Tl) ou détecteurs CZT, rotation des têtes sur 180°, gating ECG du cycle R-R."
+          }
+        },
+        {
+          "title": "B10 - Traitement, reconstruction & quantification",
+          "text": "**(a) Reconstruction.** La **rétroprojection filtrée (FBP)** historique a cédé la place aux algorithmes **itératifs ML-EM / OS-EM** (le produit itérations × sous-ensembles définit les « ML-EM equivalent iterations »).[1] Règle de compromis : **plus d'itérations = meilleure résolution mais plus de bruit** ; les paramètres sont à valider selon le constructeur. On applique la **correction d'atténuation** (TDM ou supine/prone), la correction du **diffusé** et, idéalement, du **mouvement**.\n\n**(b) Réorientation.** Le gated-SPECT produit deux jeux d'images petit-axe : **sommées** (perfusion) et **gated** (fonction), à partir desquels sont calculés perfusion régionale et indices fonctionnels.[1]\n\n**(c) Modèle segmentaire & cotation.** Analyse sur le modèle **AHA à 17 segments** (meilleur accord avec IRM/écho/anatomie), chaque segment coté sur une **échelle 0-4** : 0 = normal, 1 = légèrement réduit, 2 = modérément réduit, 3 = sévèrement réduit, 4 = absence de captation.[1,27] La captation régionale normalisée (% du maximum, populations de référence stratifiées par sexe) se lit : **normal ≥ 70 %**, légèrement réduit **50-69 %**, modérément réduit **30-49 %**, sévèrement réduit **10-29 %**, absent **< 10 %**.[1]\n\n**(d) Scores semi-quantitatifs (perfusion).** La sommation des 17 segments fournit :\n\n| Score | Définition | Signification |\n|---|---|---|\n| **SSS** (Summed Stress Score) | Σ des 17 segments **au stress** | Étendue + sévérité globale au stress |\n| **SRS** (Summed Rest Score) | Σ des 17 segments **au repos** | Cicatrice / nécrose fixée |\n| **SDS** (Summed Difference Score) | **SSS − SRS** | **Ischémie réversible** |\n\nInterprétation (Berman, transposée en 17 segments) : **SSS < 4 normal · 4-8 légèrement anormal · 9-13 modérément anormal · > 13 sévèrement anormal** ; le **maximum théorique est 68** (17 × 4).[27] Un **SDS ≥ 2** signe une ischémie significative.\n\n**(e) Quantification de la fonction (gated).** Le gated-SPECT mesure la **FEVG** (fraction d'éjection ventriculaire gauche), les volumes **télédiastolique (VTD/EDV)** et **télésystolique (VTS/ESV)**, l'épaississement et la motilité pariétale régionaux, la fonction diastolique et l'**analyse de phase** (dyssynchronie).[1] Ces données permettent de différencier un **artéfact d'atténuation** (motilité/épaississement conservés sur un défect « fixe ») d'une vraie cicatrice.\n\n**(f) Marqueurs de haute gravité (« high-risk »).** À quantifier systématiquement : la **TID (Transient Ischemic Dilation)** = ratio du volume VG stress/repos, anormal au seuil **≥ 1,15-1,22** ; la **FEVG post-stress abaissée (≤ 45 %)** ; la captation pulmonaire augmentée ; un défect étendu multi-territoires.[28,29] L'association **TID + FEVG post-stress ≤ 45 %** prédit une mort cardiaque/IDM **> 7 %/an**.[29]",
+          "stats": [
+            {
+              "value": "17 segments",
+              "label": "Modèle AHA (cotation 0-4)"
+            },
+            {
+              "value": "68",
+              "label": "SSS maximal théorique"
+            },
+            {
+              "value": "≥ 1,15",
+              "label": "Seuil de TID (haut risque)"
+            },
+            {
+              "value": "> 7 %/an",
+              "label": "Événements si TID + FEVG ≤ 45 %"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - SDS = la quantification de l'ischémie",
+              "text": "Le **SDS (SSS − SRS)** isole la composante **réversible** (ischémie viable) de la composante **fixe** (nécrose). C'est le chiffre qui guide la décision : un **SSS ≥ 9** identifie une atteinte sévère où la revascularisation apporte un bénéfice de survie, et un **SDS ≥ 2** une ischémie significative.[27]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège - distinguer artéfact d'atténuation et cicatrice",
+              "text": "Un défect « fixe » de la paroi inférieure (atténuation diaphragmatique, homme) ou antérieure (atténuation mammaire, femme) peut mimer une nécrose. La **conservation de la motilité et de l'épaississement** sur le gated-SPECT, ou le déplacement du défect en procubitus / après correction d'atténuation TDM, signe l'artéfact.[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Carte polaire (bull's-eye) du ventricule gauche en 17 segments AHA, territoires LAD/LCx/RCA, échelle de cotation 0-4 par segment servant au calcul des scores SSS/SRS/SDS."
+          }
+        },
+        {
+          "title": "C11 - Aspect normal & variantes physiologiques",
+          "text": "Reconnaître la **biodistribution myocardique normale** et ses variantes est le préalable à toute interprétation : la scintigraphie myocardique de perfusion (SPECT-MPI, single-photon emission computed tomography — tomographie d'émission monophotonique de perfusion myocardique) mesure une **perfusion régionale *relative***, normalisée au segment le plus intense, et non un débit absolu. Toute lecture se fait sur le **modèle à 17 segments** de l'AHA (American Heart Association), qui offre la meilleure concordance avec l'IRM, l'échographie et l'anatomie coronaire (territoires LAD/IVA, LCx/circonflexe, RCA/coronaire droite) [1].\n\n**Distribution normale et normalisation.** Chez le sujet sain, la captation est homogène sur l'ensemble des parois après normalisation au pixel maximal. Exprimée en pourcentage du maximum sur populations de référence stratifiées par sexe, une captation **≥ 70 %** est considérée comme **normale**, **50–69 %** comme légèrement réduite, **30–49 %** modérément réduite, **10–29 %** sévèrement réduite et **< 10 %** absente [1]. Le gated-SPECT (acquisition synchronisée à l'ECG) confirme la normalité fonctionnelle : épaississement et motilité segmentaires conservés, **FEVG** (fraction d'éjection du ventricule gauche) dans les limites.\n\n**Variantes physiologiques à connaître.**\n\n| Variante | Mécanisme | Reconnaissance |\n|---|---|---|\n| **Hypocaptation septale relative** | La paroi **septale** capte physiologiquement moins que la paroi latérale chez le sujet sain [1] | Aspect attendu, symétrique, non systématisé à un territoire coronaire |\n| **Atténuation diaphragmatique** | Atténuation de la **paroi inférieure**, surtout chez l'homme [1] | Épaississement/motilité conservés ; se déplace en procubitus (prone) |\n| **Atténuation mammaire** | Atténuation de la **paroi antérieure** chez la femme [1] | Défect mobile selon le positionnement du sein ; correction d'atténuation TDM |\n| **Activité sous-diaphragmatique digestive** | Excrétion hépatobiliaire du traceur ⁹⁹ᵐTc parasitant la paroi inférieure [1] | Surtout au repos / vasodilatateur seul ; clichés différés, repas léger |\n\nLes images **procubitus (prone) + décubitus (supine)** aident à identifier ces artéfacts d'atténuation : le déplacement de la structure atténuante mobilise le pseudo-défect [1]. La distinction variante physiologique vs artéfact d'interprétation est détaillée au §C14.",
+          "stats": [
+            {
+              "value": "17 segments",
+              "label": "Modèle de lecture AHA standard [1]"
+            },
+            {
+              "value": "≥ 70 %",
+              "label": "Captation normale (% du max) [1]"
+            },
+            {
+              "value": "< 10 %",
+              "label": "Seuil de captation absente [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La perfusion mesurée est **relative**, normalisée au segment le plus capteur. Conséquence directe : une **atteinte tritronculaire équilibrée** (*balanced ischemia*) peut paraître faussement homogène car tous les territoires sont sous-perfusés de façon comparable — d'où l'importance des marqueurs de gravité indirects (dilatation ischémique transitoire, chute de FEVG post-stress) vus au §C12, et des techniques de flux absolu (CZT dynamique, TEP)."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — hypocaptation septale physiologique",
+              "text": "L'**hypocaptation septale relative** est physiologique et ne doit pas être lue comme une ischémie de l'IVA (LAD). Elle est majorée en cas de **bloc de branche gauche (BBG/LBBB)** ou de rythme électro-entraîné, où un faux défect septal apparaît surtout à l'effort : préférer alors le **stress vasodilatateur** (cf. §C14) [1]."
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Représentation polaire (bull's-eye) du ventricule gauche divisé en 17 segments selon l'AHA, avec attribution des territoires coronaires IVA/LAD, circonflexe/LCx et coronaire droite/RCA — carte de référence de lecture de la perfusion myocardique.",
+            "caption": "Fig. 1 — Modèle 17 segments (bull's-eye) : la carte de lecture de référence, support du score segmentaire 0–4 et des scores SSS/SRS/SDS (§C12)."
+          }
+        },
+        {
+          "title": "C12 - Sémiologie & interprétation",
+          "text": "Section centrale de l'apprentissage : lire la perfusion de façon **systématique**, coter, puis répondre à la question clinique.\n\n**Méthode de lecture pas-à-pas.** (1) Vérifier la **qualité technique** (mouvement, rejet de battements en gating, alignement de la correction d'atténuation). (2) Comparer côte à côte les images **stress** et **repos**, réorientées en petit-axe, grand-axe horizontal et vertical, plus la représentation polaire (bull's-eye, cf. §C11). (3) Coter chaque segment sur l'**échelle 5 points (0–4)** : **0** = normal, **1** = légèrement réduit, **2** = modérément réduit, **3** = sévèrement réduit, **4** = absence de captation [1]. (4) Caractériser tout défect en **localisation** (territoire coronaire), **sévérité** et **étendue**, et déterminer s'il est **réversible** (ischémie) ou **fixe** (nécrose/cicatrice). (5) Lire les **paramètres gated** (FEVG, volumes télédiastolique/télésystolique, motilité, épaississement). (6) Conclure positif / négatif / équivoque.\n\n**Distinction sémiologique fondamentale.** Un défect **présent au stress et réversible au repos** signe une **ischémie réversible** (myocarde viable mais sous-perfusé sous stress) ; un défect **fixe**, présent aux deux temps, signe une **nécrose fixée** (séquelle d'infarctus) [1]. Cette dichotomie ischémie réversible / nécrose fixée est le principe diagnostique central de l'examen.\n\n**Scores semi-quantitatifs (17 segments).** La somme des scores segmentaires fonde trois indices, indispensables au suivi :\n\n| Score | Définition | Signification |\n|---|---|---|\n| **SSS** (Summed Stress Score) | Σ des 17 segments à l'effort/stress | Charge globale (ischémie + cicatrice) |\n| **SRS** (Summed Rest Score) | Σ des 17 segments au repos | Composante fixe (cicatrice) |\n| **SDS** (Summed Difference Score) | **SDS = SSS − SRS** | Composante **ischémique réversible** |\n\nLe SSS maximal théorique est **68** (17 × 4) [1]. Seuils d'interprétation (transposés du modèle 20 segments de Berman au modèle 17 segments) : **SSS normal < 4**, **légèrement anormal 4–8**, **modérément anormal 9–13**, **sévèrement anormal > 13** [1]. La valeur pronostique est graduée : taux annuels d'événements durs (mort cardiaque / infarctus) de **0,4 % (normal)**, **2,3 % (léger)** et **7,0 % (modéré-sévère)** [1].\n\n**Marqueurs de haute gravité (*high-risk markers*).** Au-delà du défect lui-même, certains indices traduisent une atteinte étendue/sévère : **TID** (*Transient Ischemic Dilation* — dilatation ischémique transitoire, ratio du volume VG stress/repos **≥ 1,15–1,22** selon la technique) [1], **FEVG post-stress abaissée (≤ 45 %)**, **captation pulmonaire augmentée** et défect multi-territoires [1]. L'association **TID + FEVG post-stress ≤ 45 %** porte le risque de mort cardiaque/infarctus à **> 7 %/an** [1].",
+          "steps": [
+            {
+              "title": "1 · Qualité",
+              "text": "Contrôler mouvement, rejet de battements en gating (< 25 %), alignement de la correction d'atténuation TDM."
+            },
+            {
+              "title": "2 · Comparer stress/repos",
+              "text": "Images réorientées (petit-axe, grands axes) + bull's-eye 17 segments, stress et repos côte à côte."
+            },
+            {
+              "title": "3 · Coter",
+              "text": "Chaque segment sur l'échelle 0–4 ; calculer SSS, SRS et SDS = SSS − SRS [1]."
+            },
+            {
+              "title": "4 · Caractériser",
+              "text": "Localisation (territoire coronaire), sévérité, étendue ; réversible (ischémie) vs fixe (nécrose) [1]."
+            },
+            {
+              "title": "5 · Fonction (gated)",
+              "text": "FEVG, volumes télédiastolique/télésystolique, motilité et épaississement segmentaires ; rechercher TID et FEVG post-stress ≤ 45 % [1]."
+            },
+            {
+              "title": "6 · Conclure",
+              "text": "Positif / négatif / équivoque ; intégrer marqueurs de gravité et contexte clinique."
+            }
+          ],
+          "stats": [
+            {
+              "value": "0–4",
+              "label": "Échelle de cotation segmentaire [1]"
+            },
+            {
+              "value": "SDS = SSS − SRS",
+              "label": "Quantifie l'ischémie réversible [1]"
+            },
+            {
+              "value": "TID ≥ 1,15",
+              "label": "Seuil de dilatation ischémique transitoire [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — gating à 8 vs 16 images",
+              "text": "Le gating à **8 images/cycle** sous-estime la FEVG d'environ **3,7–4 points** par rapport à **16 images/cycle** [1] : comparer toujours des FEVG obtenues avec le même nombre d'intervalles, sous peine de surinterpréter une « baisse » purement méthodologique entre deux examens."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — défect fixe sans couverture nitrée",
+              "text": "Un défect **fixe** peut surestimer la nécrose et **sous-estimer la viabilité** : un myocarde hibernant peut apparaître non perfusé au repos. Une **injection de repos sous dérivés nitrés** (trinitrine sublinguale, ≥ 5 min avant) réhausse la perfusion de repos et démasque la viabilité [1]."
+            }
+          ]
+        },
+        {
+          "title": "C13 - Compte rendu structuré",
+          "text": "Le compte rendu (CR) standardisé suit une trame **administratif → technique → résultats → conclusion**, et se termine toujours par une réponse explicite à la question clinique posée [1].\n\n**Items obligatoires.**\n1. **Technique** : traceur et activité (ex. ⁹⁹ᵐTc-sestamibi/tétrofosmine ; alternative ²⁰¹Tl), protocole (1 jour / 2 jours, stress-only), **type de stress** (effort, adénosine, dipyridamole, régadénoson, dobutamine) avec paramètres atteints (FC, % FMT), **gating** ECG (8 ou 16 images), correction d'atténuation, procubitus si réalisé.\n2. **Résultats — perfusion** : description de tout défect en **localisation** (territoire coronaire/segments), **sévérité** et **étendue**, caractère **réversible vs fixe** [1] ; scores **SSS / SRS / SDS** chiffrés (cf. §C12).\n3. **Résultats — fonction (gated)** : **FEVG** stress et repos, volumes, anomalies de cinétique segmentaire.\n4. **Marqueurs de gravité** : **TID**, FEVG post-stress ≤ 45 %, captation pulmonaire le cas échéant.\n5. **Conclusion** : ischémie oui/non, étendue, sévérité, **territoire coronaire** suspecté, viabilité, fonction VG, et niveau de risque.\n\n**Lexique normalisé.** Employer un vocabulaire reproductible : *normal / ischémie réversible / nécrose fixée / défect mixte* ; *léger / modéré / sévère* ; et toujours rattacher au **territoire coronaire** (IVA-LAD, circonflexe-LCx, coronaire droite-RCA).\n\n> **Exemple — examen normal**\n> *Technique* : ⁹⁹ᵐTc-tétrofosmine, protocole 1 jour stress-repos, effort sur tapis (Bruce, 88 % de la FMT), gated-SPECT 16 images, correction d'atténuation TDM.\n> *Résultats* : perfusion homogène sur les 17 segments au stress comme au repos ; **SSS 0, SRS 0, SDS 0**. FEVG post-stress 64 %, cinétique segmentaire normale ; pas de TID.\n> *Conclusion* : **scintigraphie myocardique normale, sans ischémie ni séquelle** ; pronostic bénin (événements durs attendus < 1 %/an) [1].\n\n> **Exemple — ischémie de l'IVA (LAD)**\n> *Technique* : ⁹⁹ᵐTc-sestamibi, protocole 2 jours, stress au régadénoson (0,4 mg), gated-SPECT 16 images.\n> *Résultats* : défect **antéro-apical et septal** modéré au stress, **réversible** au repos (territoire IVA/LAD) ; **SSS 9, SRS 1, SDS 8**. FEVG post-stress 52 %, hypokinésie antérieure de stress régressive ; **TID 1,24**.\n> *Conclusion* : **ischémie réversible étendue du territoire IVA (LAD), de sévérité modérée à sévère, avec TID** — profil à haut risque justifiant une coronarographie.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — conclure pour le clinicien",
+              "text": "La conclusion doit être **actionnable** : nommer le **territoire coronaire**, qualifier l'**étendue/sévérité** et signaler tout **marqueur de haut risque** (SSS > 13, SDS élevé, TID, FEVG post-stress ≤ 45 %), qui peuvent justifier une revascularisation. Toujours fournir les **scores chiffrés** : ce sont eux qui permettront la comparaison objective lors d'un examen ultérieur."
+            }
+          ]
+        },
+        {
+          "title": "C14 - Pièges, artefacts & faux positifs / négatifs",
+          "text": "Chaque écueil se traite par la même méthode : identifier la **cause**, reconnaître l'**aspect**, puis **corriger** (gated, procubitus/décubitus, correction d'atténuation TDM, clichés différés, contrôle de la préparation). Le levier décisif est l'analyse couplée **perfusion + fonction** : un défect dont l'**épaississement et la motilité sont conservés** est très probablement un **artéfact d'atténuation**, non une cicatrice [1].\n\n| Faux positifs (sur-diagnostic) | Faux négatifs (sous-diagnostic) |\n|---|---|\n| Atténuation **mammaire** (paroi antérieure) [1] | **Ischémie équilibrée** tritronculaire (perfusion relative homogène, cf. §C11) |\n| Atténuation **diaphragmatique** (paroi inférieure) [1] | **Plateau de captation** des traceurs ⁹ᵐTc vers ~2× le débit de repos → sous-estimation des hyperémies sévères [1] |\n| Faux **défect septal** sur BBG/LBBB ou rythme électro-entraîné à l'effort [1] | **Effort sous-maximal** (< 85 % FMT) → hyperémie insuffisante |\n| **Mouvement** du patient (acquisition > 20–30 min) [1] | **Caféine / méthylxanthines** non arrêtées avant vasodilatateur (antagonisme adénosine) |\n| **Activité digestive** sous-diaphragmatique parasitant la paroi inférieure [1] | **Défect fixe sans couverture nitrée** masquant la viabilité [1] |\n| **Rejet de battements > 25 %** en gating, dégradant perfusion ET fonction [1] | Petit territoire / sténose modérée sous le seuil de détection |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — artéfact d'atténuation vs nécrose",
+              "text": "**Cause** : atténuation mammaire (paroi antérieure, femme) ou diaphragmatique (paroi inférieure, homme). **Aspect** : défect d'allure fixe. **Correction** : analyser l'**épaississement gated** (conservé = artéfact), réaliser des images **procubitus (prone)** et/ou une **correction d'atténuation TDM** [1]. Un défect fixe avec épaississement conservé n'est pas une cicatrice."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — BBG / rythme électro-entraîné",
+              "text": "**Cause** : asynchronisme septal du bloc de branche gauche (LBBB) ou de la stimulation. **Aspect** : faux défect septal apparaissant surtout à l'**effort**. **Correction** : préférer un **stress vasodilatateur** (adénosine, dipyridamole, régadénoson), sans effort ni *low-level exercise*, pour éviter cet artéfact [1]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ischémie équilibrée (balanced ischemia)",
+              "text": "**Cause** : atteinte tritronculaire homogène ; la perfusion étant **relative**, tous les territoires sont sous-perfusés de façon comparable et l'image peut paraître normale. **Aspect** : perfusion faussement homogène. **Correction** : s'appuyer sur les **marqueurs indirects** (TID ≥ 1,15, chute de FEVG post-stress ≤ 45 %, captation pulmonaire) [1] et, si possible, sur la **quantification du flux** (CZT dynamique, TEP)."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — préparation du stress vasodilatateur",
+              "text": "**Cause** : **caféine, théophylline ou dipyridamole** non interrompus avant adénosine/régadénoson (antagonisme des récepteurs A2A). **Aspect** : hyperémie insuffisante → ischémie masquée (faux négatif). **Correction** : abstinence de caféine/méthylxanthines **≥ 12 h** (≥ 5 demi-vies pour les formes longues), dipyridamole **≥ 24 h** [1]."
+            }
+          ]
+        },
+        {
+          "title": "D15 - Dosimétrie",
+          "text": "La scintigraphie myocardique de perfusion (SPECT-MPI, *single-photon emission computed tomography — myocardial perfusion imaging*) est, en imagerie cardiaque conventionnelle, l'une des procédures de médecine nucléaire les plus irradiantes : aux États-Unis, la dose efficace moyenne d'un examen complet atteint **≈ 15 mSv** (14,9 ± 5,8 mSv ; étendue 1,4–42,4 mSv), soit la dose efficace moyenne la plus élevée parmi les procédures d'imagerie médicale courantes [23]. Cette charge tient à l'activité administrée (deux injections en protocole repos + stress) et au coefficient de dose du traceur.\n\n**Coefficients de dose efficace (CIPR 128).** Ils distinguent l'état de stress (transit hépatobiliaire et vidange myocardique accélérés → dose ~10–15 % plus basse par MBq) de l'état de repos, et opposent surtout les traceurs ⁹⁹ᵐTc au ²⁰¹Tl, ce dernier étant **≈ 15 fois** plus irradiant par MBq [22].\n\n| Traceur | Dose efficace stress (mSv/MBq) | Dose efficace repos (mSv/MBq) | Organe(s) critique(s) |\n|---|---|---|---|\n| **⁹⁹ᵐTc-tétrofosmine** | **0,0058** | **0,0063** | Vésicule biliaire + côlon [1,22] |\n| **⁹⁹ᵐTc-sestamibi (MIBI)** | **0,0066** | **0,0070** | Vésicule biliaire + reins [1,22] |\n| **²⁰¹Tl-chlorure** | **0,102** | **0,102** | Surface osseuse + reins [1,22] |\n\nÀ titre d'ordre de grandeur, un protocole ⁹⁹ᵐTc d'**1480 MBq** cumulés délivre **≈ 12,3 mSv**, tandis qu'un examen au ²⁰¹Tl de **150 MBq** atteint **≈ 34,5 mSv** [23]. Ces valeurs sont **environ 20 % inférieures** aux anciens coefficients CIPR pour les traceurs ⁹⁹ᵐTc [1].\n\n**Facteurs modulant la dose.** L'activité administrée (protocole 1 jour vs 2 jours, dose adaptée au poids/BMI), la biocinétique (clairance hépatique plus rapide de la tétrofosmine → rapport cœur/foie plus favorable), la fonction rénale, l'hydratation et la vidange vésicale (réduisent la dose vésico-pelvienne).\n\n**Pédiatrie.** Les activités suivent la **carte de dose EANM** (classe B pour sestamibi/tétrofosmine) ; on **préfère les traceurs ⁹⁹ᵐTc au ²⁰¹Tl** chez l'enfant pour minimiser la dose [1,4]. Activité de base : stress 1 jour **84,0 MBq**, repos 1 jour **28,0 MBq**, protocole 2 jours **42,0–63,0 MBq**, avec un **minimum recommandé de 80 MBq** [4].\n\n**Mise en perspective.** La TDM associée majore la dose : correction d'atténuation **+0,5–1,0 mSv**, score calcique (CACS) **< 1 mSv**, coro-TDM 2–5 mSv (64 barrettes) à < 1 mSv (dual-source/256–320 barrettes) [1]. Il importe de distinguer la **dose absorbée** (Gy, par organe — utile pour l'organe critique) de la **dose efficace** (mSv, corps entier pondéré — utile pour la comparaison inter-examens et la radioprotection) [22].",
+          "stats": [
+            {
+              "value": "≈ 15 mSv",
+              "label": "Dose efficace moyenne d'un examen complet (US) [23]"
+            },
+            {
+              "value": "0,0066–0,0070",
+              "label": "mSv/MBq — sestamibi stress/repos [1,22]"
+            },
+            {
+              "value": "0,102",
+              "label": "mSv/MBq — ²⁰¹Tl-chlorure (≈ 15× le Tc) [22]"
+            },
+            {
+              "value": "80 MBq",
+              "label": "Activité minimale pédiatrique (carte EANM) [4]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — pourquoi le ⁹⁹ᵐTc en pédiatrie",
+              "text": "Le coefficient de dose du **²⁰¹Tl (0,102 mSv/MBq)** est près de **15 fois** celui du **sestamibi (~0,007 mSv/MBq)** [22]. Chez l'enfant, où la sensibilité aux radiations est majorée, EANM et SFMN recommandent d'**éviter le ²⁰¹Tl** au profit des traceurs technétiés, dont l'activité est calibrée par la carte de dose EANM (classe B, minimum 80 MBq) [1,4]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — grossesse & allaitement",
+              "text": "Reporter les procédures électives chez la femme enceinte. Pour l'**allaitement**, interrompre et tirer/jeter le lait si l'activité ⁹⁹ᵐTc administrée dépasse **450 MBq** [5] ; selon la CIPR 106, l'interruption n'est pas toujours indispensable pour les composés ⁹⁹ᵐTc, mais on **préfère le ⁹⁹ᵐTc au ²⁰¹Tl** et l'on fait téter juste avant l'injection (ALARA) [1]."
+            }
+          ]
+        },
+        {
+          "title": "D16 - Radioprotection",
+          "text": "La radioprotection de la SPECT-MPI répond aux trois principes fondamentaux : **justification** (probabilité prétest adéquate, cf. §D18), **optimisation (ALARA, *as low as reasonably achievable*)** et **limitation**. Sur les caméras à semi-conducteurs **CZT (cadmium-zinc-tellurure)**, la sensibilité de comptage accrue autorise une réduction d'activité (protocoles ultra-bas à **activité fixe 100–120 MBq**, *stress-only* **< 2 mSv**) ou un raccourcissement du temps d'acquisition — levier d'optimisation majeur [1,12]. La protection se pense **par cible**.\n\n| Cible | Mesures clés |\n|---|---|\n| **Patient** | Justification (probabilité prétest 15–85 %, cf. §D18), optimisation de l'activité (protocole *stress-first* / *stress-only*, traceur ⁹⁹ᵐTc plutôt que ²⁰¹Tl), hydratation et **mictions fréquentes** pour réduire la dose vésico-pelvienne et l'activité urinaire parasite [1]. |\n| **Personnel** | Blindage de seringue, **distance**, **temps**, **dosimétrie** passive et opérationnelle, zonage ; l'exposition reste **généralement faible** pour le ⁹⁹ᵐTc (140 keV, période 6 h) [1]. |\n| **Entourage / public** | Patient « source » de courte durée pour le ⁹⁹ᵐTc ; consignes post-examen (hydratation, distance vis-à-vis des enfants et femmes enceintes pendant la période utile) selon la réglementation nationale [1]. |\n\n**Effluents & déchets radioactifs.** La courte période du ⁹⁹ᵐTc (**6 h**) limite le stockage par décroissance ; le ²⁰¹Tl (période **73 h**) impose une gestion plus prolongée [1]. La traçabilité de l'activité (de l'élution du générateur à l'injection) et la conduite en cas de contamination relèvent de la procédure du service.\n\n**Spécificité du test de stress.** Le matériel de réanimation et l'**antidote vasodilatateur — aminophylline IV (50–250 mg, injection lente)** — doivent être immédiatement disponibles pendant l'épreuve à l'adénosine/régadénoson [13]. Cette exigence de sécurité, bien que non radiologique, conditionne la réalisation sûre de l'examen.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le CZT comme outil de radioprotection",
+              "text": "Les caméras cardiaques dédiées **CZT** offrent une sensibilité de comptage plusieurs fois supérieure aux caméras d'Anger conventionnelles. Cet excédent se « dépense » indifféremment en **réduction d'activité** (protocoles ultra-bas, *stress-only* **< 2 mSv**) ou en **raccourcissement du temps d'acquisition** (confort patient, moins d'artefacts de mouvement) — un choix d'optimisation à poser explicitement dans chaque service [1,12]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — aminophylline disponible",
+              "text": "Toute épreuve pharmacologique par vasodilatateur (adénosine, dipyridamole, régadénoson) impose la disponibilité immédiate de l'**aminophylline IV (50–250 mg, lente)**, antagoniste compétitif des récepteurs à l'adénosine, pour réverser bronchospasme, BAV ou hypotension [13]. C'est un prérequis de sécurité de la salle de stress."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers de réduction de dose ALARA : temps d'exposition réduit, distance augmentée, écran de blindage interposé — appliqués au personnel et à l'entourage du patient injecté.",
+            "caption": "Fig. 1 — Temps / distance / écran (ALARA) : structure les consignes au personnel et à l'entourage pour un patient « source » au ⁹⁹ᵐTc."
+          }
+        },
+        {
+          "title": "D17 - Performances diagnostiques & comparaison",
+          "text": "La valeur diagnostique de la SPECT-MPI dépend du matériel (caméra d'Anger vs CZT), de la population et du critère de référence (coronarographie anatomique vs FFR fonctionnelle). Pour la détection de la coronaropathie (CAD, *coronary artery disease*), une méta-analyse d'études prospectives retient une **sensibilité (Se) ≈ 0,88 (IC 0,86–0,90)** et une **spécificité (Sp) ≈ 0,73 (IC 0,69–0,77)** [24]. Le gain des caméras CZT porte surtout sur la spécificité et l'aire sous la courbe.\n\n| Modalité / matériel | Se | Sp | Repère |\n|---|---|---|---|\n| **SPECT-MPI conventionnel** (méta-analyse) | **85 %** | **66 %** | AUC 0,83 [8] |\n| **SPECT-MPI CZT** (méta-analyse) | **89 %** | **69 %** | AUC 0,89 [8] |\n| **CZT Discovery NM 530c** | **83,5 %** | **75,8 %** | AUC 0,858 [9] |\n| **CZT-SPECT dynamique** (MBF) | **79 %** | **85 %** | Quantification du flux [10] |\n| SPECT-MPI vs coronarographie (CORE320) | **62 %** | **67 %** | Sténose ≥ 50 % [30] |\n\n**Comparaison aux modalités concurrentes.** Dans l'étude head-to-head CORE320 (sténose ≥ 50 % à la coronarographie), la SPECT-MPI affiche Se 62 % / Sp 67 % contre Se 88 % / Sp 55 % pour la TDM de perfusion [30]. Lorsque l'ischémie est définie par la **FFR (réserve de flux fractionnelle)**, la hiérarchie des modalités fonctionnelles place **TDM de perfusion ≈ IRM de stress ≈ TEP > SPECT > échographie de stress** [24]. La **TEP de perfusion** (⁸²Rb, ¹³N-NH₃), qui quantifie le débit myocardique absolu (MBF) et la réserve, est le comparateur supérieur en médecine nucléaire ; la SPECT dynamique sur CZT tend à combler cet écart [10].\n\n**Valeur pronostique.** Au-delà du diagnostic, une **scintigraphie normale** confère un **pronostic bénin**, avec un taux d'événements cardiaques durs faible (~< 1 %/an), indépendamment de la probabilité prétest (sous-analyse J-ACCESS) [19,20]. À l'inverse, les scores semi-quantitatifs (SSS — *Summed Stress Score*) stratifient le risque : taux annuels d'événements durs **0,4 % (normal) · 2,3 % (léger) · 7,0 % (modéré-sévère)** [27].",
+          "stats": [
+            {
+              "value": "Se ≈ 88 %",
+              "label": "Sensibilité SPECT-MPI pour la CAD [24]"
+            },
+            {
+              "value": "Sp ≈ 73 %",
+              "label": "Spécificité SPECT-MPI pour la CAD [24]"
+            },
+            {
+              "value": "AUC 0,89",
+              "label": "CZT-SPECT (vs 0,83 conventionnel) [8]"
+            },
+            {
+              "value": "< 1 %/an",
+              "label": "Événements durs si scintigraphie normale [19,20]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — anatomie vs fonction",
+              "text": "La SPECT-MPI explore la **signification fonctionnelle** d'une sténose, pas son existence anatomique : sa sensibilité « modeste » (62 %) contre la coronarographie dans CORE320 [30] reflète qu'une sténose ≥ 50 % n'est pas toujours ischémiante. Confrontée à un étalon **fonctionnel (FFR)**, sa performance se réordonne et reste cohérente avec les autres tests d'ischémie [24]. Le bon comparateur change le verdict."
+            },
+            {
+              "type": "info",
+              "title": "Pronostic > diagnostic",
+              "text": "L'apport clinique majeur de la SPECT-MPI est **pronostique** : une étude normale autorise une attitude conservatrice (événements < 1 %/an), tandis qu'un **SSS ≥ 9** identifie un sous-groupe à haut risque susceptible de bénéficier d'une revascularisation [19,20,27]."
+            }
+          ]
+        },
+        {
+          "title": "D18 - Place dans la stratégie & algorithmes décisionnels",
+          "text": "**Recommandations ESC 2024 (syndromes coronariens chroniques).** Chez le patient à **probabilité prétest modérée à élevée (> 15–85 %)** de coronaropathie obstructive, l'imagerie fonctionnelle d'ischémie — dont la **SPECT-MPI** (la **TEP** étant préférée quand disponible) — est **recommandée (classe I, niveau B)** pour évaluer ischémie, cicatrice et risque cardiovasculaire [6,7]. Pour une probabilité **faible à modérée**, la **coro-TDM (CCTA)** est privilégiée en première intention [6,7]. Il est par ailleurs recommandé de mesurer le **score calcique (CACS)** sur la TDM non injectée de correction d'atténuation des patients adressés en MPI [6,7].\n\n**Séquençage.** L'imagerie morphologique (CCTA) répond à la question « *y a-t-il une sténose ?* » ; l'imagerie fonctionnelle (SPECT/TEP) répond à « *cette sténose est-elle ischémiante et le patient à risque ?* ». Les deux sont souvent **complémentaires** : une CCTA équivoque ou une sténose intermédiaire appelle un test d'ischémie ; une SPECT positive étendue oriente vers la coronarographie ± revascularisation.\n\n**Arbre décisionnel (suspicion de syndrome coronarien chronique).**\n\n1. **Évaluer la probabilité prétest** (âge, sexe, symptômes).\n2. Probabilité **faible–modérée** → **CCTA** (1ʳᵉ intention) ; mesurer le CACS.\n3. Probabilité **modérée–élevée (15–85 %)** → **imagerie fonctionnelle d'ischémie** : SPECT-MPI (ou TEP préférée), IRM/écho de stress selon disponibilité [6,7].\n4. Stress **par effort** si patient apte (≥ 85 % FCMT) ; sinon **vasodilatateur** (adénosine, dipyridamole, régadénoson) ou **dobutamine** [1,11].\n5. **SPECT normale** → pronostic bénin, attitude conservatrice [19,20]. **SPECT positive** → quantifier (SSS/SDS, FEVG, marqueurs de gravité : TID, captation pulmonaire) → coronarographie ± revascularisation si ischémie étendue/sévère.\n\n**Quantification du flux.** En cas de doute (atteinte tritronculaire « équilibrée », microcirculation), la mesure du **débit myocardique (MBF)** et de la réserve par TEP ou SPECT-CZT dynamique affine la stratégie [10,12].",
+          "steps": [
+            {
+              "title": "1 — Probabilité prétest",
+              "text": "Estimer la probabilité prétest de coronaropathie obstructive (âge, sexe, type de douleur) : c'est elle qui oriente le choix de la première imagerie [6,7]."
+            },
+            {
+              "title": "2 — Probabilité faible-modérée → CCTA",
+              "text": "Coro-TDM en 1ʳᵉ intention ; mesurer le **score calcique (CACS)** sur l'acquisition non injectée [6,7]."
+            },
+            {
+              "title": "3 — Probabilité modérée-élevée (15–85 %) → ischémie",
+              "text": "Imagerie fonctionnelle recommandée (classe I-B) : **SPECT-MPI** ou **TEP** (préférée si disponible), selon plateau technique [6,7]."
+            },
+            {
+              "title": "4 — Choix du stress",
+              "text": "**Effort** si patient apte (objectif ≥ 85 % de la FC max théorique) ; sinon **vasodilatateur** (adénosine 140 µg/kg/min, régadénoson 0,4 mg, dipyridamole) ou **dobutamine** [1,11]."
+            },
+            {
+              "title": "5 — Décision selon le résultat",
+              "text": "SPECT **normale** → pronostic bénin, conservateur [19,20]. SPECT **anormale** → SSS/SDS, FEVG, marqueurs de gravité → coronarographie ± revascularisation si ischémie étendue/sévère."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "ESC 2024 — l'essentiel pour le nucléariste",
+              "text": "La SPECT-MPI est **recommandée (I-B)** dans la fenêtre de probabilité prétest **15–85 %**, avec une **préférence affichée pour la TEP** quand elle est accessible (meilleure quantification du MBF). Penser systématiquement à exploiter la TDM de correction d'atténuation pour rendre le **CACS** [6,7]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — l'atteinte tritronculaire « équilibrée »",
+              "text": "Une ischémie globale homogène (sténoses tritronculaires comparables) peut donner une **perfusion relative faussement homogène** en SPECT planaire. Les signaux d'alarme à rechercher : **TID (transient ischemic dilation)**, chute de FEVG post-stress, captation pulmonaire augmentée — ou recourir à la **quantification du flux absolu (MBF)** par TEP/CZT dynamique [10,12]."
+            }
+          ]
+        },
+        {
+          "title": "D19 - Examens apparentés & variantes",
+          "text": "La SPECT-MPI se décline en plusieurs **variantes de protocole** et s'inscrit dans une famille d'examens d'ischémie myocardique fonctionnels et anatomiques. Le détail technique de chaque examen voisin relève de son article dédié ; le tableau ci-dessous synthétise les différences et les indications préférentielles.\n\n| Variante / examen apparenté | Cible / différence | Quand le préférer |\n|---|---|---|\n| **Protocole 1 jour** (repos faible dose / stress forte dose, ×3) | Une seule séance ; doses asymétriques pour limiter l'activité résiduelle | Organisation et confort patient ; activité 250–400 MBq puis ×3 [1]. |\n| **Protocole 2 jours** (doses égales) | Deux séances, 350–700 MBq/étude | Patients corpulents (meilleur comptage), qualité d'image optimale [1]. |\n| ***Stress-first* / *stress-only*** | Repos omis si stress strictement normal | **Réduction de dose** majeure (jusqu'à < 2 mSv sur CZT) chez le patient à faible probabilité [12]. |\n| **Dual-isotope** (²⁰¹Tl repos / ⁹⁹ᵐTc stress) | Deux traceurs, gain de temps | Historique ; dose plus élevée (²⁰¹Tl) → désormais peu retenu [1]. |\n| **TEP de perfusion** (⁸²Rb, ¹³N-NH₃) | Quantification du **MBF** et de la réserve ; résolution supérieure | Quantification du flux, atteinte tritronculaire, obésité ; **modalité fonctionnelle préférée** par l'ESC [6,7,12]. |\n| **IRM de stress** (perfusion ± rehaussement tardif) | Perfusion + viabilité + fonction, sans irradiation | Microcirculation, viabilité, contre-indication aux radiations [24]. |\n| **Écho de stress** | Cinétique pariétale sous stress | Disponibilité, absence d'irradiation ; opérateur-dépendant [24]. |\n| **Coro-TDM (CCTA) ± FFR-CT** | **Anatomie** coronaire (vs fonction) | Probabilité faible-modérée, exclusion de CAD [6,7,30]. |\n\n**Variantes d'acquisition.** Le **gated-SPECT** (synchronisation ECG, 8 ou 16 images/cycle) ajoute la FEVG, les volumes et la cinétique segmentaire à la perfusion ; l'acquisition **supine + procubitus (prone)** aide à démasquer les artéfacts d'atténuation [1,25]. Le matériel **CZT** dédié et la **SPECT dynamique** permettent en outre la quantification du flux myocardique, rapprochant la SPECT de la TEP [10,12].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — SPECT ou TEP de perfusion ?",
+              "text": "L'ESC 2024 **préfère la TEP** à la SPECT quand elle est disponible : meilleure résolution, correction d'atténuation native, et surtout **quantification du débit myocardique absolu (MBF)** et de la réserve — décisive dans l'atteinte tritronculaire équilibrée et chez le patient obèse [6,7]. La **SPECT-CZT dynamique** est la réponse de la médecine nucléaire conventionnelle pour accéder à cette quantification de flux [10,12]."
+            },
+            {
+              "type": "info",
+              "title": "Le gated-SPECT n'est pas une option",
+              "text": "La synchronisation ECG (**gated-SPECT**) doit être systématique : elle fournit gratuitement FEVG, volumes télédiastolique/télésystolique et cinétique segmentaire, et permet de distinguer un **artéfact d'atténuation** (cinétique/épaississement conservés) d'un vrai défect fixé. Un gating à **8 images** sous-estime la FEVG de ~4 points par rapport à 16 images [1,25]."
+            }
+          ]
+        },
+        {
+          "title": "E20 - Cas cliniques commentés / Iconographie",
+          "text": "Quatre vignettes commentées pas à pas (contexte → images → analyse → conclusion) couvrant les situations cardinales de la scintigraphie myocardique de perfusion (SPECT-MPI, *single-photon emission computed tomography — myocardial perfusion imaging*) : ischémie réversible, nécrose fixée, marqueur de haut risque (TID, *transient ischemic dilation*) et artéfact d'atténuation. Chaque cas renvoie aux sections techniques concernées (sémiologie, scores, pièges).\n\nRappel de cotation utilisé dans les cas : modèle **17 segments** de l'AHA, échelle d'intensité **0–4** (0 = normal, 4 = absence de captation), d'où **SSS** (*Summed Stress Score*), **SRS** (*Summed Rest Score*) et **SDS = SSS − SRS** (composante ischémique réversible). Seuils de référence : **SSS < 4 = normal · 4–8 = légèrement anormal · 9–13 = modérément anormal · > 13 = sévèrement anormal** [27] ; **SDS ≥ 2 = ischémie significative** ; maximum théorique du SSS = **68** (17 × 4) [27].",
+          "steps": [
+            {
+              "title": "Cas 1 — Ischémie réversible de territoire IVA (effort)",
+              "text": "*Contexte* : homme de 58 ans, douleur thoracique d'effort, probabilité prétest intermédiaire ; SPECT-MPI au **99mTc-sestamibi** protocole 1 jour, épreuve d'effort sur tapis, FC pic à **89 %** de la FC maximale théorique (220 − âge) [1]. *Images* : défect de perfusion **antéro-septo-apical** au stress, se **normalisant** sur les images de repos ; gated-SPECT : cinétique et épaississement segmentaires **conservés** dans la zone. *Analyse* : la réversibilité signe une **ischémie viable** d'aval coronaire (territoire IVA/LAD, paroi antérieure et septum) ; cotation **SSS = 10, SRS = 2, SDS = 8** → ischémie modérée-sévère. La FEVG post-stress reste normale, sans dilatation transitoire (cf. cas 3). *Conclusion* : ischémie réversible significative du territoire antérieur ; orientation vers coronarographie ± revascularisation (un **SSS ≥ 9** marque le seuil au-delà duquel un bénéfice de survie de la revascularisation a été décrit) [19,27]. Illustre le principe diagnostique central stress/repos (cf. E21)."
+            },
+            {
+              "title": "Cas 2 — Nécrose fixée post-infarctus (stress vasodilatateur)",
+              "text": "*Contexte* : femme de 67 ans, antécédent d'infarctus inférieur, dyspnée d'effort ; patiente inapte à l'effort → stress pharmacologique par **adénosine 140 µg/kg/min sur 4–6 min**, traceur injecté à mi-perfusion [1]. *Images* : défect **inférieur** profond, **identique** au stress et au repos (défect **fixe**) ; gated-SPECT : **akinésie** et absence d'épaississement du segment, FEVG abaissée à **42 %**. *Analyse* : un défect fixe avec troubles de cinétique/épaississement correspond à une **cicatrice / nécrose transmurale** non viable, à distinguer d'un artéfact d'atténuation diaphragmatique (où cinétique et épaississement sont **conservés**, cf. cas 4) [25]. Couverture nitrée avant l'injection de repos recommandée si l'on suspecte une viabilité sous-estimée [1]. *Conclusion* : séquelle d'infarctus inférieur sans ischémie résiduelle péri-cicatricielle ; pas d'argument pour une revascularisation du territoire. Renvoie aux pièges d'atténuation (E22) et à la sémiologie fixe vs réversible."
+            },
+            {
+              "title": "Cas 3 — Marqueur de haut risque : dilatation ischémique transitoire (TID)",
+              "text": "*Contexte* : homme diabétique de 62 ans, angor crescendo ; SPECT-MPI au **99mTc-tétrofosmine**, stress par **régadénoson 0,4 mg** en bolus (dose **indépendante du poids**), flush NaCl [1,14]. *Images* : défects multi-territoriaux étendus et réversibles ; cavité ventriculaire gauche **plus grande au stress qu'au repos** (ratio volumétrique stress/repos **= 1,28**) ; FEVG post-stress **44 %**, captation pulmonaire augmentée. *Analyse* : la **TID** (ratio seuil **≥ 1,15–1,22** selon protocole et logiciel) traduit une **ischémie sous-endocardique diffuse** ou une maladie coronaire sévère multitronculaire / du tronc commun [28,29]. L'association **TID + FEVG post-stress ≤ 45 %** prédit un taux d'événements durs (mort cardiaque/IDM) **> 7 %/an** [28]. *Conclusion* : profil à haut risque ; coronarographie sans délai. Illustre les marqueurs de gravité au-delà du seul SSS (cf. E21)."
+            },
+            {
+              "title": "Cas 4 — Piège : artéfact d'atténuation mammaire (faux défect antérieur)",
+              "text": "*Contexte* : femme de 55 ans, forte poitrine, exploration d'une douleur atypique ; SPECT-MPI **99mTc-sestamibi** sans correction d'atténuation initiale. *Images* : défect **antérieur** apparent au stress et au repos (donc *a priori* fixe) ; gated-SPECT : **cinétique et épaississement conservés** dans le segment ; acquisition complémentaire en **procubitus (prone)** : disparition du défect par déplacement du sein atténuant [1,25]. *Analyse* : un défect fixe avec **fonction segmentaire normale** doit faire évoquer un **artéfact d'atténuation** plutôt qu'une cicatrice ; la confirmation s'obtient par procubitus, acquisition supine + prone, ou **correction d'atténuation TDM** [1,25]. *Conclusion* : perfusion myocardique normale, défect antérieur d'origine attenuationnelle ; pas de coronaropathie. Souligne que la lecture de la perfusion est indissociable de la fonction gated (cf. E22)."
+            }
+          ],
+          "stats": [
+            {
+              "value": "SDS = SSS − SRS",
+              "label": "Composante ischémique réversible ; SDS ≥ 2 = ischémie significative [27]"
+            },
+            {
+              "value": "> 7 %/an",
+              "label": "Événements durs si TID + FEVG post-stress ≤ 45 % [28]"
+            },
+            {
+              "value": "≥ 1,15",
+              "label": "Seuil du ratio TID (stress/repos) marqueur de haut risque [29]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — Réversible vs fixe : toujours croiser perfusion et fonction",
+              "text": "La distinction **ischémie réversible** (défect au stress, normalisé au repos) / **nécrose fixée** (défect aux deux temps) est le cœur diagnostique de l'examen. Devant un défect **fixe**, la conservation de la **cinétique et de l'épaississement** au gated-SPECT oriente vers un **artéfact d'atténuation** (sein, diaphragme) plutôt qu'une cicatrice ; la confirmation se fait par procubitus, supine+prone ou correction d'atténuation TDM [1,25]."
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Représentation polaire en œil-de-bœuf du modèle 17 segments de l'AHA, montrant les territoires coronaires IVA/LAD (antérieur, septal, apical), circonflexe (latéral) et coronaire droite (inférieur) servant à coter SSS/SRS/SDS."
+          }
+        },
+        {
+          "title": "E21 - Points clés / à retenir",
+          "text": "Synthèse haut rendement : chiffres-clés, seuils et pièges majeurs de la scintigraphie myocardique de perfusion (SPECT-MPI et gated-SPECT).",
+          "list": [
+            "**Principe** : la captation myocardique des traceurs **99mTc** est proportionnelle au débit coronaire régional mais **plafonne vers ~2× la perfusion de repos** (sous-estimation des hyperémies sévères) ; le **201Tl** plafonne un peu plus haut (2–2,5×) [1].",
+            "**Diagnostic central** : défect au stress **réversible** au repos = **ischémie** viable ; défect **fixe** (stress + repos) = **nécrose / cicatrice**. Le **gated-SPECT** ajoute FEVG, volumes (VTD/VTS) et cinétique/épaississement segmentaires [1].",
+            "**Traceurs 99mTc** (sestamibi/tétrofosmine) : cations lipophiles à **rétention mitochondriale** (myocytes viables) ; photon γ **140 keV**, période **6 h** [1,3]. **201Tl** : analogue du potassium (pompe Na/K-ATPase), période **73 h**, **redistribution** dans le temps [1].",
+            "**Activités EANM** (99mTc) : protocole **2 jours = 350–700 MBq/étude** ; protocole **1 jour = 250–400 MBq** à la 1re injection puis **×3** à la 2e [1]. **201Tl** : stress-redistribution **74–111 MBq**, réinjection **37 MBq** [1].",
+            "**Stress pharmacologique** : **adénosine 140 µg/kg/min** sur 4–6 min ; **dipyridamole 140 µg/kg/min** sur 4 min (traceur 3–5 min après) ; **régadénoson 0,4 mg** en bolus, **dose indépendante du poids** (agoniste A2A sélectif) ; **dobutamine 10 → 40 µg/kg/min** [1]. **Aminophylline** IV comme antidote vasodilatateur [13].",
+            "**Effort** (1re intention si patient apte) : objectif **≥ 85 % de la FC maximale théorique**, injection au pic, effort poursuivi 1–2 min [1].",
+            "**Préparation** : arrêt **caféine/méthylxanthines ≥ 12 h** avant un stress vasodilatateur (≥ 5 demi-vies pour les formes longues), **dipyridamole** thérapeutique arrêté **≥ 24 h** [1,5].",
+            "**Cotation** : modèle **17 segments**, intensité **0–4** par segment ; **SSS < 4 normal · 4–8 léger · 9–13 modéré · > 13 sévère** ; **SDS = SSS − SRS** (ischémie) ; max théorique SSS = **68** [27].",
+            "**Captation régionale normalisée** (% du maximum) : Normal **≥ 70 %**, légèrement réduit **50–69 %**, modérément réduit **30–49 %**, sévèrement réduit **10–29 %**, absent **< 10 %** [1].",
+            "**Marqueurs de haut risque** : **TID** (ratio stress/repos **≥ 1,15–1,22**), **FEVG post-stress ≤ 45 %**, captation pulmonaire accrue, défect multi-territoires ; **TID + FEVG ≤ 45 % → événements > 7 %/an** [28,29].",
+            "**Pronostic** : une scintigraphie **normale** confère un **pronostic bénin** (événements cardiaques **< 1 %/an**), quasi indépendamment de la probabilité prétest [20]. Taux annuels d'événements durs (17 seg.) : **0,4 % (normal) · 2,3 % (léger) · 7,0 % (modéré-sévère)** [27].",
+            "**Performances** (coronaropathie) : SPECT conventionnel **Se ~85 % / Sp ~66 %** (AUC 0,83) ; **CZT-SPECT Se ~89 % / Sp ~69 %** (AUC 0,89) [8] ; méta-analyse prospective poolée **Se ~0,88 / Sp ~0,73** [24].",
+            "**Gating ECG** : **8 ou 16 images/cycle** ; le gating **8 images sous-estime la FEVG de ~4 points** vs 16 images ; rejet de battements à limiter **< 25 %** [1,25].",
+            "**Dosimétrie (ICRP 128)** : sestamibi **0,0066 (stress) / 0,0070 (repos) mSv/MBq** ; tétrofosmine **0,0058 / 0,0063 mSv/MBq** ; **201Tl-chlorure 0,102 mSv/MBq** (plus irradiant) ; examen complet typique **≈ 12–15 mSv** [1,22,23].",
+            "**Pièges majeurs** : artéfact d'atténuation (sein/diaphragme — fonction segmentaire **conservée**), **LBBB / rythme électro-entraîné** (faux défect septal à l'effort → préférer le **stress vasodilatateur**), sous-estimation de viabilité sans couverture nitrée, activité digestive sous-diaphragmatique parasitant la paroi inférieure [1,25]."
+          ],
+          "stats": [
+            {
+              "value": "140 keV / 6 h",
+              "label": "Photon γ et période du 99mTc [1]"
+            },
+            {
+              "value": "SSS > 13",
+              "label": "Anomalie de perfusion sévère (modèle 17 segments) [27]"
+            },
+            {
+              "value": "~85 % / ~66 %",
+              "label": "Se / Sp du SPECT conventionnel pour la coronaropathie [8]"
+            },
+            {
+              "value": "< 1 %/an",
+              "label": "Événements cardiaques après une scintigraphie normale [20]"
+            }
+          ]
+        },
+        {
+          "title": "E22 - FAQ & pièges d'examen",
+          "text": "**Comment distingue-t-on une ischémie d'une nécrose ?** Par la comparaison **stress vs repos** : un défect présent au stress et qui **se normalise au repos** est une **ischémie réversible** (territoire viable mal perfusé à l'effort) ; un défect **fixe** (présent aux deux temps) correspond à une **nécrose / cicatrice** [1]. Le gated-SPECT affine en montrant une cinétique segmentaire conservée (ischémie/artéfact) ou abolie (cicatrice transmurale).\n\n**Pourquoi un plateau de captation limite-t-il la détection de l'ischémie sévère ?** La captation des traceurs **99mTc** augmente avec le débit mais **plafonne vers ~2× la perfusion de repos** : au-delà, deux territoires de débits très différents apparaissent similaires, ce qui **sous-estime** les hyperémies sévères et atténue le contraste ischémique [1].\n\n**Effort ou stress pharmacologique ?** L'**effort** est privilégié si le patient est apte (objectif **≥ 85 % de la FC maximale théorique**) car il apporte une information fonctionnelle. Le **stress vasodilatateur** (adénosine, dipyridamole, régadénoson) est indiqué en cas d'inaptitude à l'effort, et **obligatoirement** en présence d'un **bloc de branche gauche (LBBB)** ou d'un rythme électro-entraîné, où l'effort génère un **faux défect septal** [1,25].\n\n**Pourquoi arrêter la caféine avant un test vasodilatateur ?** La caféine et les méthylxanthines sont des **antagonistes des récepteurs de l'adénosine** : elles bloquent l'hyperémie induite et peuvent **masquer une ischémie** (faux négatif). D'où l'arrêt **≥ 12 h** (≥ 5 demi-vies pour la théophylline) et l'arrêt du **dipyridamole thérapeutique ≥ 24 h** [1,5].\n\n**Quel est l'antidote des vasodilatateurs ?** L'**aminophylline** IV (antagoniste compétitif de l'adénosine) réverse les effets de l'adénosine et du régadénoson ; elle doit être **immédiatement disponible** pendant tout test vasodilatateur [13].\n\n**Le régadénoson se dose-t-il au poids ?** Non : c'est un **bolus fixe de 0,4 mg**, **indépendant du poids**, ce qui simplifie l'administration ; c'est un agoniste **A2A sélectif**, mieux toléré sur le plan bronchique que l'adénosine non sélective [1,14]. Il est **contre-indiqué** en cas de BAV 2e–3e degré ou de dysfonction sinusale **sans pacemaker** [14].\n\n**Comment reconnaître un artéfact d'atténuation ?** Un défect (souvent antérieur chez la femme, inférieur chez l'homme) avec **cinétique et épaississement segmentaires conservés** au gated-SPECT évoque un artéfact plutôt qu'une cicatrice. La confirmation se fait par acquisition en **procubitus (prone)**, **supine + prone**, ou **correction d'atténuation TDM** [1,25].\n\n**Quelle différence entre gating 8 et 16 images ?** Le gating **8 images** est plus économe en temps mais **sous-estime la FEVG d'environ 4 points** par rapport au gating **16 images**, qui échantillonne mieux la télésystole [1,25]. Un **rejet de battements > 25 %** dégrade à la fois la fonction et la perfusion.\n\n**Que signifie une dilatation ischémique transitoire (TID) ?** Une cavité VG **plus grande au stress qu'au repos** (ratio **≥ 1,15–1,22**) est un **marqueur de haut risque** (ischémie sous-endocardique diffuse, atteinte sévère multitronculaire ou du tronc commun), surtout associée à une FEVG post-stress abaissée [28,29].\n\n**99mTc ou 201Tl ?** Les traceurs **99mTc** offrent une meilleure qualité d'image, une dose plus faible et un gating de qualité ; le **201Tl** (analogue du potassium, **redistribution**) reste utile pour la **viabilité** mais est **plus irradiant** (**0,102 mSv/MBq**) — à éviter notamment en pédiatrie [1,3].\n\n*(Quiz interactif (E23) et fiche de révision téléchargeable (E24) : fonctionnalités de la plateforme à activer.)*",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — LBBB et faux défect septal à l'effort",
+              "text": "En présence d'un **bloc de branche gauche** ou d'un rythme **électro-entraîné**, l'effort (et le low-level exercise) génère un **faux défect septal** par asynchronisme de contraction. Préférer impérativement un **stress vasodilatateur** (adénosine, dipyridamole, régadénoson), sans effort associé [1,25]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — Caféine non sevrée avant un vasodilatateur",
+              "text": "La caféine et les méthylxanthines **bloquent les récepteurs de l'adénosine** et peuvent **abolir l'hyperémie**, donnant un examen **faussement normal**. Vérifier l'arrêt **≥ 12 h** (≥ 5 demi-vies pour la théophylline) et l'arrêt du **dipyridamole ≥ 24 h** avant tout test vasodilatateur [1,5]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — Une scintigraphie normale a une forte valeur rassurante",
+              "text": "Une SPECT-MPI **normale** est associée à un **taux d'événements cardiaques < 1 %/an**, quasi indépendamment de la probabilité prétest [20]. Ce **« warranty period »** justifie une attitude conservatrice et évite des coronarographies inutiles ; à pondérer toutefois dans les atteintes **équilibrées multitronculaires**, où la perfusion relative peut paraître faussement homogène."
+            }
+          ]
+        },
+        {
+          "title": "E25 - Références & liens sortants typés",
+          "text": "**Sources & Références** (datées, citées [n] dans le corps de l'article) : **EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT — 2015 revision** (Verberne et al., *Eur J Nucl Med Mol Imaging* 2015;42:1929-1940) [1], version PMC [2] et page éditeur Springer (doi 10.1007/s00259-015-3139-x) [3] ; **EANM Paediatric Dosage Card v5.7.2016** (sestamibi/tétrofosmine, classe B) [4] ; **SFMN — Guide de rédaction de protocoles : Scintigraphie de perfusion myocardique V2.0** (Rouzet et al., ratifié 2012) [5] ; **2024 ESC Guidelines for the management of chronic coronary syndromes** — ACC Key Points [6] et texte intégral (*Eur Heart J* 2024;45:3415-3537, doi 10.1093/eurheartj/ehae177) [7] ; méta-analyse SPECT conventionnel vs CZT (*J Nucl Cardiol* 2019, doi 10.1007/s12350-019-01747-3) [8] ; performance du CZT Discovery NM 530c (PMID 40773029) [9] ; méta-analyse CZT-SPECT dynamique (PMC9345813) [10] ; **ASNC imaging guidelines — Stress, protocols, and tracers** (Henzlova et al., *J Nucl Cardiol* 2016;23:606-639) [11] ; **SNMMI/ASNC/SCCT Guideline for Cardiac SPECT/CT and PET/CT 1.0** (Dorbala et al., *J Nucl Med* 2013) [12] ; **ASNC Practice Point — régadénoson / réversion par aminophylline** [13] ; **FDA — LEXISCAN (regadenoson) prescribing information 2018** [14] ; localisation mitochondriale du MIBI (PMC4937671) [15] ; fractions d'extraction MIBI/tétrofosmine (Mannarino et al., *Cardiol Clin* 2023) [16] ; production **99Mo/99mTc** — National Academies (NBK215133) [17] et StatPearls (NBK565854) [18] ; valeur pronostique du SSS (PMC1767933) [19] ; **scintigraphie normale et pronostic bénin — sous-analyse J-ACCESS** (*J Cardiol* 2009) [20] ; EANM guidelines pour caméras cardiaques dédiées — protocoles ultra-bas (PMC8218102) [21] ; **ICRP Publication 128** (Mattsson et al., 2015) [22] ; doses efficaces élevées de la MPI SPECT aux États-Unis (*Circ Cardiovasc Imaging* 2019) [23] ; méta-analyse CMR/SPECT/PET pour la coronaropathie (*Front Cardiovasc Med* 2021) [24] ; **ASNC/SNMMI SPECT MPI Guidelines — instrumentation, acquisition, processing, interpretation** (Dorbala et al., *J Nucl Cardiol* 2018;25:1784-1846) [25] ; CQ de pureté radiochimique des radiopharmaceutiques 99mTc (Maioli et al., *Acta Biomed* 2017, PMC6166199) [26] ; **score à 17 segments dérivé du 20 segments — seuils SSS** (Berman et al., *J Nucl Cardiol* 2004) [27] ; **TID — méta-analyse diagnostique et pronostique** (*J Nucl Cardiol* 2017, PMC5966496) [28] ; quantification de la TID en gated-SPECT et seuils du ratio (Heston & Sigg, *J Nucl Med* 2005) [29] ; comparaison tête-à-tête CT-perfusion vs SPECT — **CORE320** (PMC4263655) [30].\n\n**Carte de liens (réseau de l'article)** — *Traceurs* : 99mTc-sestamibi (MIBI), 99mTc-tétrofosmine, 201Tl-chlorure. *Maladies* : coronaropathie / syndrome coronarien chronique, infarctus du myocarde (séquelle / viabilité), insuffisance cardiaque ischémique. *Examens liés* : TEP de perfusion myocardique (82Rb, 13N-NH3, quantification du flux myocardique), IRM de stress, échocardiographie de stress, coro-scanner (CCTA) / FFR-CT, score calcique coronaire (CACS). *Scores* : SSS / SRS / SDS (modèle 17 segments), TID. *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Cadre normatif à privilégier",
+              "text": "Pour le protocole et les radiopharmaceutiques, se référer aux **EANM procedural guidelines 2015** [1] et aux **ASNC/SNMMI SPECT MPI Guidelines 2018** [25] ; pour la place dans la stratégie, aux **ESC 2024 Chronic Coronary Syndromes** (imagerie fonctionnelle recommandée en probabilité prétest **15–85 %**) [6,7]. Les coefficients de dose proviennent de l'**ICRP 128** [22]."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Frise des protocoles de scintigraphie myocardique de perfusion : injection au stress (effort ou pharmacologique) puis au repos, acquisition gated-SPECT et comparaison stress/repos distinguant ischémie réversible et nécrose fixée."
+          }
+        }
+      ]
+    }
+  }
+}
