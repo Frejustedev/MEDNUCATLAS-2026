@@ -7,8 +7,8 @@
 //   assemble → tsc → npm test → seed --only → git commit+push (retries) →
 //   mark-progress → sélectionne le prochain todo (set-next-subject).
 // Imprime une ligne JSON de synthèse : { id, status, stage?, stats, next }.
-// Politique : 0 erreur validateDraft requis ; ≥1 issue 'critical' adversariale
-// => failed (PAS de seed) ; 'major'/'minor' => seed + note + sidecar issues/.
+// Politique : 0 erreur validateDraft requis ; ≥1 issue 'critical' OU 'major'
+// adversariale => failed (PAS de seed) ; 'minor' => seed + note + sidecar issues/.
 // Idempotent côté git (push non-fatal : le commit local sera poussé au tour suivant).
 // ─────────────────────────────────────────────────────────────────────────────
 import fs from 'node:fs';
@@ -114,6 +114,7 @@ function emit(result) { console.log(JSON.stringify({ id, ...result, stats, ...pi
 
 if (errors.length) { mark(id, 'failed', 'validateDraft ' + errors.length + ' err'); emit({ status: 'failed', stage: 'validate', errors: errors.slice(0, 6) }); }
 if (critical.length) { mark(id, 'failed', critical.length + ' critique adversariale'); emit({ status: 'failed', stage: 'adversarial', critical: critical.map((c) => c.problem.slice(0, 90)) }); }
+if (major.length) { mark(id, 'failed', major.length + ' majeure adversariale (a corriger)'); emit({ status: 'failed', stage: 'adversarial', major: major.map((m) => m.problem.slice(0, 90)) }); }
 
 try { run(`node scripts/assemble-article.mjs ${id}`); }
 catch (e) { mark(id, 'failed', 'assemble'); emit({ status: 'failed', stage: 'assemble', err: ((e.stdout || e.message) + '').slice(-300) }); }

@@ -71,8 +71,8 @@
     --atom: #a78bfa;
     --atom3: rgba(167, 139, 250, 0.1);
     --text-main: #f8fafc; /* Brighter white for better contrast */
-    --text2: #9baac2; /* Lightened for better contrast */
-    --text3: #64748b; /* Slate 500 */
+    --text2: #9baac2; /* Lightened for better contrast — AA on bg/bg2/bg3 */
+    --text3: #94a3b8; /* Slate 400 — WCAG AA: 7.8:1 on --bg, 7.0:1 on --bg3 (était #64748b à 3.8:1, sous AA) */
     --border-main: rgba(255, 255, 255, 0.08); /* Cleaner neutral borders */
     --border2: rgba(255, 255, 255, 0.12);
     --glow: rgba(0, 201, 177, 0.15);
@@ -98,4 +98,311 @@
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-border-main rounded-sm;
+}
+
+/* =========================================================================
+   LISIBILITÉ — Typographie de lecture des articles
+   .article-prose : colonne de texte d'un article. Largeur de lecture limitée,
+   base ~17px, interligne ~1.7, rythme vertical homogène. Conçu pour envelopper
+   le contenu Markdown (titres, paragraphes, listes, liens, citations).
+   ========================================================================= */
+.article-prose {
+  /* Variables locales = un seul endroit pour régler le rythme de lecture */
+  --prose-measure: 68ch;        /* largeur de lecture confortable */
+  --prose-base: 1.0625rem;      /* ~17px */
+  --prose-leading: 1.7;         /* interligne */
+  --prose-rhythm: 1.45em;       /* espacement vertical de base (paragraphes) */
+
+  max-width: var(--prose-measure);
+  font-size: var(--prose-base);
+  line-height: var(--prose-leading);
+  color: var(--text2);
+  /* Améliore le rendu des polices serif/sans sur les écrans */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Coupe propre des mots longs (termes médicaux, noms de radio-isotopes) */
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Premier et dernier éléments : pas de marge superflue (collapse propre) */
+.article-prose > :first-child {
+  margin-top: 0;
+}
+.article-prose > :last-child {
+  margin-bottom: 0;
+}
+
+/* Paragraphes : espacement régulier et généreux */
+.article-prose p {
+  margin-top: 0;
+  margin-bottom: var(--prose-rhythm);
+}
+
+/* Échelle typographique harmonieuse + rythme vertical des titres
+   (marge supérieure ample, marge inférieure resserrée → relie le titre à
+   son contenu). On utilise la serif de la charte pour les titres. */
+.article-prose :is(h1, h2, h3, h4) {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  color: var(--text-main);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6em;
+  text-wrap: balance;
+}
+.article-prose h1 { font-size: 1.9em;  margin-top: 0;     line-height: 1.15; }
+.article-prose h2 { font-size: 1.55em; margin-top: 2em;   }
+.article-prose h3 { font-size: 1.3em;  margin-top: 1.8em; }
+.article-prose h4 {
+  font-size: 1.08em;
+  margin-top: 1.6em;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Texte fort et emphase : restent dans la teinte principale pour le contraste */
+.article-prose :is(strong, b) {
+  color: var(--text-main);
+  font-weight: 600;
+}
+.article-prose :is(em, i) {
+  font-style: italic;
+}
+
+/* Liens lisibles : couleur teal de la charte + soulignement discret qui
+   s'affirme au survol (jamais de bleu navigateur par défaut). */
+.article-prose a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--teal) 35%, transparent);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.article-prose a:hover {
+  color: var(--teal2);
+  text-decoration-color: currentColor;
+}
+
+/* Listes aérées : retrait clair, espacement entre items, puces à la teinte
+   d'accent pour rester sobres. */
+.article-prose :is(ul, ol) {
+  margin-top: 0;
+  margin-bottom: var(--prose-rhythm);
+  padding-left: 1.4em;
+}
+.article-prose li {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding-left: 0.25em;
+  line-height: 1.6;
+}
+.article-prose li::marker {
+  color: var(--teal);
+}
+.article-prose ul { list-style: disc; }
+.article-prose ol { list-style: decimal; }
+/* Imbrication : resserre le rythme des sous-listes */
+.article-prose :is(ul, ol) :is(ul, ol) {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* Citations [n] discrètes : références bibliographiques style exposant léger,
+   sans rompre la ligne de base, couleur tertiaire pour rester en retrait. */
+.article-prose a[href^="#ref"],
+.article-prose sup,
+.article-prose .citation {
+  font-size: 0.72em;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  color: var(--text3);
+  vertical-align: super;
+  line-height: 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+.article-prose a[href^="#ref"]:hover,
+.article-prose .citation:hover {
+  color: var(--teal);
+}
+
+/* Citation longue (blockquote) : barre d'accent + retrait, ton secondaire */
+.article-prose blockquote {
+  margin: var(--prose-rhythm) 0;
+  padding: 0.25em 0 0.25em 1.1em;
+  border-left: 2px solid var(--teal);
+  color: var(--text2);
+  font-style: italic;
+}
+.article-prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Code en ligne : police mono, fond discret */
+.article-prose :not(pre) > code {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.88em;
+  background: var(--bg3);
+  color: var(--text-main);
+  padding: 0.12em 0.4em;
+  border-radius: 5px;
+  border: 1px solid var(--border-main);
+}
+
+/* Filets de séparation discrets */
+.article-prose hr {
+  border: 0;
+  border-top: 1px solid var(--border-main);
+  margin: 2em 0;
+}
+
+/* Tableaux nés directement dans la prose Markdown : on les enveloppe
+   visuellement comme .table-scroll pour rester cohérent. */
+.article-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--prose-rhythm) 0;
+  font-size: 0.92em;
+}
+
+/* =========================================================================
+   .table-scroll — Wrapper responsive autour de CHAQUE tableau.
+   overflow-x tactile, bord arrondi + bordure légère, indicateur de scroll
+   (dégradé sur le bord droit). En mobile : typo et padding réduits, en-têtes
+   non cassés, min-width interne pour scroller plutôt que s'écraser.
+   ========================================================================= */
+.table-scroll {
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border-main);
+  border-radius: var(--radius-main);
+  background: var(--bg);
+  margin: 1.5rem 0;
+  /* Le dégradé du bord droit reste collé même quand on scrolle */
+  background-attachment: local, local, scroll, scroll;
+}
+
+/* Indicateur de scroll : dégradé sur le bord droit signalant un contenu
+   masqué. Posé en overlay non interactif, collé au bord visible. */
+.table-scroll::after {
+  content: "";
+  position: sticky;
+  top: 0;
+  right: 0;
+  float: right;
+  width: 28px;
+  height: 100%;
+  margin-left: -28px;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--bg) 0%, transparent),
+    var(--bg)
+  );
+  /* Masqué quand il n'y a rien à scroller : géré visuellement par le bord. */
+}
+
+.table-scroll table {
+  width: 100%;
+  /* Force le scroll au lieu de l'écrasement des colonnes en petit écran. */
+  min-width: 36rem;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 0.8125rem; /* 13px */
+}
+
+/* En-tête de tableau visuellement distinct */
+.table-scroll thead th,
+.article-prose table thead th {
+  text-align: left;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.6875rem; /* 11px */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text3);
+  background: var(--bg3);
+  font-weight: 600;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--border2);
+  white-space: nowrap; /* en-têtes non cassés */
+}
+
+.table-scroll tbody td,
+.article-prose table tbody td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border-main);
+  color: var(--text2);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.table-scroll tbody tr:last-child td,
+.article-prose table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-scroll tbody tr,
+.article-prose table tbody tr {
+  transition: background-color 0.15s ease;
+}
+.table-scroll tbody tr:hover,
+.article-prose table tbody tr:hover {
+  background: var(--bg3);
+}
+
+/* En mobile : police et padding de cellule réduits pour gagner de la place. */
+@media (max-width: 640px) {
+  .table-scroll table {
+    font-size: 0.75rem; /* 12px */
+    min-width: 32rem;
+  }
+  .table-scroll thead th {
+    font-size: 0.625rem; /* 10px */
+    padding: 0.45rem 0.55rem;
+  }
+  .table-scroll tbody td {
+    padding: 0.45rem 0.55rem;
+  }
+}
+
+/* =========================================================================
+   .toc — Table des matières flottante (sommaire latéral).
+   Sobre, alignée à la charte. .toc-link = entrée, .toc-link-active = entrée
+   correspondant à la section visible.
+   ========================================================================= */
+.toc {
+  font-size: 0.6875rem; /* 11px */
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.toc-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.3rem 0 0.3rem 0.65rem;
+  color: var(--text3);
+  border-left: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  /* Repli propre des intitulés longs */
+  overflow-wrap: break-word;
+}
+
+.toc-link:hover {
+  color: var(--teal);
+}
+
+.toc-link-active {
+  color: var(--teal);
+  border-left-color: var(--teal);
+  font-weight: 500;
 }

@@ -129,12 +129,9 @@ export function Topbar() {
             </select>
           </div>
 
-          <span
-            className="bg-bg3 border border-border-main rounded-md px-2.5 py-1.5 text-text3 text-xs font-mono hidden sm:block"
-            title="Anglais et arabe à venir"
-          >
-            FR
-          </span>
+          {/* Badge « FR » retiré : le site est monolingue (français). Un
+              sélecteur de langue laissait croire à tort à un multilingue
+              inexistant. À réintroduire le jour où d'autres langues existent. */}
 
           <ThemeToggle />
           

@@ -94,12 +94,17 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
+  // Icônes : on déclare le SVG (asset réel) + la route PNG générée à la volée
+  // par app/icon.tsx (/icon) et l'apple-icon par app/apple-icon.tsx (/apple-icon).
+  // On ne référence plus /favicon.ico ni /apple-touch-icon.png (inexistants =
+  // 404). Note : déclarer `icons` ici prend le pas sur la détection auto des
+  // fichiers app/icon.tsx — on pointe donc explicitement vers leurs routes.
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon', type: 'image/png', sizes: '32x32' },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: { url: '/apple-icon', sizes: '180x180' },
   },
   manifest: '/manifest.webmanifest',
 };

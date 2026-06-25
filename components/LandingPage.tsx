@@ -255,9 +255,9 @@ export function LandingPage() {
             <div className="absolute -top-16 -right-16 w-[200px] h-[200px] rounded-full bg-gold opacity-5" />
             <div className="font-mono text-[10px] tracking-[3px] uppercase text-gold mb-5">♡ Patients</div>
             <h3 className="font-serif text-3xl mb-4 leading-[1.2]">Pour les patients<br />et leurs proches</h3>
-            <p className="text-sm text-text2 leading-[1.7] mb-7">Des explications claires, rassurantes et validées médicalement — sans jargon inaccessible.</p>
+            <p className="text-sm text-text2 leading-[1.7] mb-7">Des explications claires et rassurantes, rédigées avec l&apos;assistance de l&apos;IA et en cours de relecture médicale — sans jargon inaccessible.</p>
             <ul className="flex flex-col gap-2.5">
-              {['Préparation aux examens scintigraphiques', 'Questions fréquentes sur la radioactivité', 'Guide post-traitement à l\'iode radioactif', 'Suivi thyroïdien expliqué sans jargon', 'Explications validées médicalement'].map((item, i) => (
+              {['Préparation aux examens scintigraphiques', 'Questions fréquentes sur la radioactivité', 'Guide post-traitement à l\'iode radioactif', 'Suivi thyroïdien expliqué sans jargon', 'Contenu rédigé avec l\'assistance de l\'IA, en cours de relecture médicale'].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-[13px] text-text2">
                   <span className="font-mono text-xs text-gold shrink-0">→</span> {item}
                 </li>

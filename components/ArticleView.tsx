@@ -14,6 +14,19 @@ import { IdentityCard } from './IdentityCard';
 import { LinkCard } from './LinkCard';
 import { Quiz } from './Quiz';
 import { FicheButton } from './FicheButton';
+import { ArticleTOC, slugifySection, type TOCItem } from './ArticleTOC';
+import { ReportError } from './ReportError';
+
+// Composants react-markdown partagés : chaque tableau du corps de l'article est
+// enveloppé dans `.table-scroll` (contrat partagé) pour permettre le défilement
+// horizontal sur mobile plutôt que l'écrasement des colonnes.
+const MD_COMPONENTS = {
+  table: ({ children, ...props }: React.ComponentPropsWithoutRef<'table'>) => (
+    <div className="table-scroll">
+      <table {...props}>{children}</table>
+    </div>
+  ),
+};
 
 export function ArticleView({ article: serverArticle }: { article?: Article } = {}) {
   const { showCategory, articleMode, setArticleMode, articles, userProfile, dbUser, toggleFavorite } = useAtlas();
@@ -38,10 +51,16 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
   const content = candidateModes.map((m) => article.content[m]).find((c) => c?.sections?.length) ?? null;
   const isFavorite = dbUser?.favorites?.includes(article.id) || false;
 
-  const scrollToSection = (i: number) => {
-    const el = document.getElementById(`sec-${i}`);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
+  // Ancres stables (slug du titre + index) partagées entre les `<h3>` et la
+  // table des matières flottante. La table de référence dédiée (content.table)
+  // obtient sa propre ancre si elle existe.
+  const sectionItems: TOCItem[] = (content?.sections ?? []).map((s, i) => ({
+    id: slugifySection(s.title, i),
+    title: s.title,
+  }));
+  const tocItems: TOCItem[] = content?.table
+    ? [...sectionItems, { id: 'sec-table-reference', title: 'Données de référence' }]
+    : sectionItems;
 
   const getAudienceIcon = (aud: string) => {
     switch (aud) {
@@ -172,8 +191,13 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
           </button>
         </div>
 
+        {/* Table des matières repliable (mobile) ; la version sticky est en
+            colonne de droite sur grand écran. */}
+        <ArticleTOC items={tocItems} variant="mobile" />
+
+        <div className="article-prose">
         <div className="text-[15px] text-text2 leading-[1.75] border-l-2 border-teal pl-4 mb-9 prose dark:prose-invert prose-teal max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{article.content.lead || ''}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={MD_COMPONENTS}>{article.content.lead || ''}</ReactMarkdown>
         </div>
 
         {!content && (
@@ -186,8 +210,11 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
           </div>
         )}
         {content?.sections?.map((s, i) => (
-          <div key={i} className="mb-8" id={`sec-${i}`}>
-            <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
+          <div key={i} className="mb-8">
+            <h3
+              id={slugifySection(s.title, i)}
+              className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main scroll-mt-6"
+            >
               {s.title}
             </h3>
             {article.content.identityCard && /carte d.identit/i.test(s.title) && (
@@ -195,7 +222,7 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
             )}
             {s.text && (
               <div className="text-[14px] text-text2 leading-[1.8] mb-3 prose dark:prose-invert prose-teal max-w-none">
-                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{s.text}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={MD_COMPONENTS}>{s.text}</ReactMarkdown>
               </div>
             )}
 
@@ -231,7 +258,7 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
                 <div>
                   <h4 className="font-bold text-[13px] mb-1">{s.infoBox.title}</h4>
                   <div className="text-[13px] leading-relaxed opacity-90 prose dark:prose-invert max-w-none">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{s.infoBox.text}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={MD_COMPONENTS}>{s.infoBox.text}</ReactMarkdown>
                   </div>
                 </div>
               </div>
@@ -251,7 +278,7 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
                 <div>
                   <h4 className="font-bold text-[13px] mb-1">{box.title}</h4>
                   <div className="text-[13px] leading-relaxed opacity-90 prose dark:prose-invert max-w-none">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{box.text}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={MD_COMPONENTS}>{box.text}</ReactMarkdown>
                   </div>
                 </div>
               </div>
@@ -278,7 +305,7 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
                     <div>
                       <h4 className="font-bold text-[14px] text-text-main mb-1">{step.title}</h4>
                       <div className="text-[13px] text-text2 leading-relaxed prose dark:prose-invert max-w-none">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>{step.text}</ReactMarkdown>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={MD_COMPONENTS}>{step.text}</ReactMarkdown>
                       </div>
                     </div>
                   </div>
@@ -300,10 +327,13 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
 
         {content?.table && (
           <div className="mb-8">
-            <h3 className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main">
+            <h3
+              id="sec-table-reference"
+              className="font-serif text-[22px] font-normal mb-3 text-text-main pb-2 border-b border-border-main scroll-mt-6"
+            >
               Données de référence
             </h3>
-            <div className="overflow-x-auto">
+            <div className="table-scroll">
               <table className="w-full border-collapse my-4 text-xs">
                 <thead>
                   <tr>
@@ -372,20 +402,13 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
         )}
 
         <LinkCard links={article.content.relatedLinks} />
+
+        <ReportError articleId={article.id} articleTitle={article.title} />
+        </div>
       </div>
 
-      <div className="w-[200px] shrink-0 p-8 px-5 border-l border-border-main overflow-y-auto hidden lg:block">
-        <div className="font-mono text-[9px] tracking-[2px] uppercase text-text3 mb-3">Sommaire</div>
-        {content?.sections?.map((s, i) => (
-          <div
-            key={i}
-            onClick={() => scrollToSection(i)}
-            className="text-[11px] text-text3 py-1 cursor-pointer transition-colors border-l-2 border-transparent pl-2 hover:text-teal"
-          >
-            {s.title}
-          </div>
-        ))}
-      </div>
+      {/* Table des matières flottante (sticky) sur grand écran. */}
+      <ArticleTOC items={tocItems} variant="desktop" />
 
       {isAiOpen && (
         <AiAssistant article={article} onClose={() => setIsAiOpen(false)} userProfile={userProfile} />

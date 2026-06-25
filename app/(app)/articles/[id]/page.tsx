@@ -9,6 +9,14 @@ import { articleFromDocData } from '@/lib/article-mapper';
 // améliore le premier rendu, le SEO et la résilience.
 export const revalidate = 3600;
 
+// INTERRUPTEUR SEO / juridique (laissé à false = comportement actuel préservé).
+// Passer à `true` désindexe automatiquement tout article dont le statut de
+// relecture n'est pas `reviewed` (= rédigé avec assistance IA, pas encore relu
+// par un médecin). C'est une décision SEO/juridique qui appartient au
+// propriétaire du site : tant que le contenu n'est pas relu médicalement, on
+// peut vouloir le tenir hors de l'index Google pour limiter le risque.
+const NOINDEX_UNTIL_REVIEWED = false;
+
 type Params = { id: string };
 
 // Lecture unique du document par requête (déduplication via React cache),
@@ -42,9 +50,19 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const excerpt = (data.excerpt as string) || '';
   const tags = (data.tags as string[]) || [];
   const authors = (data.authors as string[]) || [];
+  // Statut de relecture (même défaut prudent que article-mapper : 'ai_assisted').
+  const reviewStatus = (data.reviewStatus as string) || 'ai_assisted';
 
   return {
     metadataBase: base,
+    // Indexation : par défaut on indexe tout (NOINDEX_UNTIL_REVIEWED = false).
+    // Si le propriétaire bascule l'interrupteur à true, seuls les articles
+    // réellement relus par un médecin ('reviewed') restent indexables ; les
+    // contenus assistés par IA non relus passent en noindex.
+    robots: {
+      index: NOINDEX_UNTIL_REVIEWED ? reviewStatus === 'reviewed' : true,
+      follow: true,
+    },
     // Titre absolu : on évite que le template "%s | NucleAtlas" du layout racine s'ajoute en double.
     title: { absolute: `${title} | NucleAtlas` },
     description:
@@ -80,7 +98,13 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   const updatedAt = data?.updatedAt as { toDate?: () => Date } | undefined;
   const createdAt = data?.createdAt as { toDate?: () => Date } | undefined;
 
-  // JSON-LD pour SERP médicale + Knowledge Graph
+  // JSON-LD pour SERP médicale + Knowledge Graph.
+  // IMPORTANT (honnêteté éditoriale) : on garde le type MedicalWebPage mais on
+  // NE revendique AUCUNE relecture médicale humaine. Ne PAS ajouter ici de
+  // `reviewedBy` / `reviewer` / `lastReviewed` tant que le contenu n'est pas
+  // réellement relu par un médecin identifié — ce serait une fausse allégation.
+  // Le champ `author` reflète seulement la rédaction (assistée par IA), pas une
+  // validation médicale.
   const jsonLd = article
     ? {
         '@context': 'https://schema.org',
