@@ -1,0 +1,1277 @@
+{
+  "id": "V2_TEP_FDG_POUMON",
+  "cat": "oncologie",
+  "catLabel": "Oncologie",
+  "title": "TEP-TDM au 18F-FDG dans le cancer du poumon",
+  "difficulty": "intermédiaire",
+  "tags": [
+    "TEP-TDM",
+    "18F-FDG",
+    "cancer du poumon",
+    "CBNPC",
+    "bilan d'extension",
+    "SUVmax",
+    "oncologie thoracique",
+    "TNM 9e édition",
+    "PERCIST",
+    "effet Warburg",
+    "GLUT",
+    "staging médiastinal"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Fludeoxyglucose F 18 Injection — DailyMed (FDA prescribing information): clinical pharmacology, physical characteristics, dosimetry",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=784c3855-0d5d-36e7-e053-2a91aa0ac1a6"
+    },
+    {
+      "title": "[2] F-18 (Fluorine-18) Radiation Safety Data — Ionactive (half-life, 511 keV, HVL Pb)",
+      "url": "https://ionactive.co.uk/resource-hub/guidance/f-18-fluorine-18-radiation-safety-data"
+    },
+    {
+      "title": "[3] [18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0 (Boellaard et al., 2025)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065"
+    },
+    {
+      "title": "[4] PET/CT for staging and monitoring non-small cell lung cancer (Rankin, Cancer Imaging 2008; PMC2582498)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2582498/"
+    },
+    {
+      "title": "[5] FDG PET/CT in the Staging of Lung Cancer (Farsad, Curr Radiopharm 2020; PMC8206197)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8206197/"
+    },
+    {
+      "title": "[6] Cancer du poumon stade III : apport de la TEP dans le diagnostic (Pr J. Monteil, CHU Limoges, 2018) — Onco Nouvelle-Aquitaine",
+      "url": "https://onco-nouvelle-aquitaine.fr/wp-content/uploads/2021/08/09-monteil.pdf"
+    },
+    {
+      "title": "[7] The optimal timing of FDG-PET/CT in non-small cell lung cancer diagnosis and staging in an Australian centre (BMC Pulm Med 2021)",
+      "url": "https://bmcpulmmed.biomedcentral.com/articles/10.1186/s12890-021-01564-w"
+    },
+    {
+      "title": "[8] Proposed Ninth Edition TNM Staging System for Lung Cancer: Guide for Radiologists (RadioGraphics, 2024)",
+      "url": "https://pubs.rsna.org/doi/full/10.1148/rg.240057"
+    },
+    {
+      "title": "[9] EANM/SNMMI Guideline for 18F-FDG Use in Inflammation and Infection (Jamar et al., J Nucl Med 2013;54:647-658)",
+      "url": "https://jnm.snmjournals.org/content/54/4/647"
+    },
+    {
+      "title": "[10] FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 (Boellaard et al., Eur J Nucl Med Mol Imaging 2015;42:328-354; PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[11] Cyclotron Production of Fluorine-18 for PET — Diagnostic Radiology Physics (18O(p,n)18F reaction, enriched water)",
+      "url": "https://www.diagnosticradphys.com/physicspulse/nuclear-medical-physics/cyclotron-f18-production/"
+    },
+    {
+      "title": "[12] Review of 18F-FDG Synthesis and Quality Control (Yu, Biomed Imaging Interv J 2006;2(4):e57; PMC3097819)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3097819/"
+    },
+    {
+      "title": "[13] The effect of modern PET technology and techniques on the EANM paediatric dosage card (Eur J Nucl Med Mol Imaging, 2022)",
+      "url": "https://link.springer.com/article/10.1007/s00259-021-05635-2"
+    },
+    {
+      "title": "[14] Analysis of image data from the EuroNet PHL-C2 trial: a proposal to update the EANM Paediatric Dosage Card for 18F-FDG (Tran-Gia et al., 2023; PMC10774179)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10774179/"
+    },
+    {
+      "title": "[15] From RECIST to PERCIST: Evolving Considerations for PET Response Criteria in Solid Tumors (Wahl RL et al., J Nucl Med 2009;50 Suppl 1:122S-150S)",
+      "url": "https://jnm.snmjournals.org/content/50/Suppl_1/122S"
+    },
+    {
+      "title": "[16] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson et al., Ann ICRP 2015)",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/0146645314558019"
+    },
+    {
+      "title": "[17] FDG PET and PET/CT: EANM procedure guidelines for tumour PET imaging: version 1.0 (Boellaard et al., 2010; PMC2791475)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791475/"
+    },
+    {
+      "title": "[18] Qualitative and Semiquantitative Parameters of 18F-FDG-PET/CT as Predictors of Malignancy in Patients with Solitary Pulmonary Nodule (Cancers 2023; PMC9953844)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9953844/"
+    },
+    {
+      "title": "[19] PET/CT in the Staging of the Non-Small-Cell Lung Cancer (Chao & Zhang, J Biomed Biotechnol 2012; incl. Fischer NEJM 2009 & van Tinteren PLUS trial; PMC3346692)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3346692/"
+    },
+    {
+      "title": "[20] Interim PET Evaluation in Diffuse Large B-Cell Lymphoma: Comparison of the Deauville 5-Point Scale and the ΔSUVmax Method (Rekowski et al., J Nucl Med 2021;62:37-42)",
+      "url": "https://jnm.snmjournals.org/content/62/1/37"
+    },
+    {
+      "title": "[21] Primary Tumor SUVmax on FDG-PET is of Prognostic Value for Survival in NSCLC: Systematic Review and Meta-Analysis — ELCWP/IASLC (J Thorac Oncol)",
+      "url": "https://www.jto.org/article/S1556-0864(15)31195-3/fulltext"
+    },
+    {
+      "title": "[22] Radiation dosimetry of 18F-FDG PET/CT: incorporating exam-specific parameters in dose estimates (Quinn et al., BMC Med Imaging 2016; PMC4912712)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4912712/"
+    },
+    {
+      "title": "[23] CNP-MN / SFMN — Fluorodéoxyglucose (18F-FDG) en Oncologie (FDG V2.0)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/06/FDG-V2.0.pdf"
+    },
+    {
+      "title": "[24] Preoperative Staging of Lung Cancer with Combined PET-CT (Fischer B et al., N Engl J Med 2009;361:32-39)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0900043"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "flask",
+        "label": "Traceur",
+        "value": "18F-FDG (2-[18F]fluoro-2-désoxy-D-glucose)"
+      },
+      {
+        "icon": "zap",
+        "label": "Émission × énergie",
+        "value": "β+ (96,7 %) → 2 × 511 keV à 180°"
+      },
+      {
+        "icon": "clock",
+        "label": "Période physique du 18F",
+        "value": "≈ 110 min (109,7–109,8 min)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Voie × activité adulte",
+        "value": "IV · 14 × poids/durée par pas (MBq), ≈ 185–400 MBq"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie",
+        "value": "EANM classe B (baseline ≈ 10,7 MBq, min 10 MBq)"
+      },
+      {
+        "icon": "clock",
+        "label": "Délai d'imagerie (uptake)",
+        "value": "60 min (plage 55–75 min)"
+      },
+      {
+        "icon": "activity",
+        "label": "Durée d'acquisition",
+        "value": "Corps entier, 15–30 min sous caméra"
+      },
+      {
+        "icon": "target",
+        "label": "Cible biologique",
+        "value": "Hypermétabolisme glucidique (GLUT-1/3 + hexokinase)"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace (ICRP 128)",
+        "value": "0,019 mSv/MBq (≈ 7 mSv pour 370 MBq, part TEP)"
+      },
+      {
+        "icon": "droplets",
+        "label": "Organe critique / élimination",
+        "value": "Paroi vésicale (7,5×10⁻² mGy/MBq) · urinaire"
+      },
+      {
+        "icon": "shield",
+        "label": "Préparation",
+        "value": "Jeûne ≥ 4 h · glycémie < 11 mmol/L (200 mg/dL)"
+      },
+      {
+        "icon": "alert",
+        "label": "Limite cérébrale",
+        "value": "Se ≈ 60 % pour le M cérébral → IRM de référence"
+      },
+      {
+        "icon": "list",
+        "label": "Indications phares",
+        "value": "Nodule indéterminé · staging N/M du CBNPC · réponse · récidive"
+      },
+      {
+        "icon": "stetho",
+        "label": "Cadre de stadification",
+        "value": "TNM IASLC 9e édition (janv. 2025, N2a/N2b)"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "18F-FDG"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer bronchique non à petites cellules (CBNPC)"
+      },
+      {
+        "type": "maladie",
+        "label": "Carcinome bronchique à petites cellules (CBPC)"
+      },
+      {
+        "type": "maladie",
+        "label": "Nodule pulmonaire solitaire"
+      },
+      {
+        "type": "maladie",
+        "label": "Métastases osseuses"
+      },
+      {
+        "type": "examen",
+        "label": "Scanner thoracique (TDM)"
+      },
+      {
+        "type": "examen",
+        "label": "IRM cérébrale (bilan M)"
+      },
+      {
+        "type": "examen",
+        "label": "EBUS / médiastinoscopie"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse"
+      },
+      {
+        "type": "examen",
+        "label": "68Ga-DOTATATE TEP (TNE thoraciques)"
+      },
+      {
+        "type": "score",
+        "label": "TNM IASLC 9e édition"
+      },
+      {
+        "type": "score",
+        "label": "Critères PERCIST 1.0"
+      },
+      {
+        "type": "score",
+        "label": "Score de Deauville (repère méthodologique)"
+      },
+      {
+        "type": "theranostique",
+        "label": "177Lu-DOTATATE (TNE)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel phénomène physique est détecté par la caméra TEP après désintégration du 18F ?",
+        "options": [
+          "Un photon gamma unique de 364 keV",
+          "Deux photons de 511 keV émis à 180° en coïncidence",
+          "Un électron de conversion interne",
+          "Un rayonnement de freinage (Bremsstrahlung)"
+        ],
+        "answer": 1,
+        "explanation": "Le 18F émet un positon qui s'annihile avec un électron en produisant deux photons de 511 keV émis à ~180°, enregistrés en coïncidence [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la période physique (demi-vie) du fluor-18 ?",
+        "options": [
+          "≈ 13 h",
+          "≈ 110 min",
+          "≈ 8 jours",
+          "≈ 20 min"
+        ],
+        "answer": 1,
+        "explanation": "La période du 18F est d'environ 109,7–109,8 min, soit ≈ 110 min, ce qui impose une production cyclotron de proximité [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel mécanisme explique la rétention intracellulaire du FDG ?",
+        "options": [
+          "Liaison à un récepteur membranaire",
+          "Phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable (piégeage)",
+          "Fixation sur l'ADN nucléaire",
+          "Élimination biliaire ralentie"
+        ],
+        "answer": 1,
+        "explanation": "Le FDG entre par les transporteurs GLUT, est phosphorylé en FDG-6-phosphate qui n'est pas substrat de la suite de la glycolyse et reste piégé (metabolic trapping) [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel transporteur membranaire est surexprimé par la plupart des cellules tumorales et permet l'entrée du FDG ?",
+        "options": [
+          "Le transporteur de la noradrénaline (NET)",
+          "Le transporteur GLUT (GLUT-1/GLUT-3)",
+          "Le symporteur sodium-iode (NIS)",
+          "Le récepteur de la somatostatine (SSTR2)"
+        ],
+        "answer": 1,
+        "explanation": "L'effet Warburg s'accompagne d'une surexpression des transporteurs GLUT-1/GLUT-3 et de l'hexokinase, à l'origine de la captation accrue du FDG [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel délai d'incubation (uptake) standard est recommandé entre injection et acquisition ?",
+        "options": [
+          "10 min",
+          "30 min",
+          "60 min (plage 55–75 min)",
+          "180 min"
+        ],
+        "answer": 2,
+        "explanation": "L'EANM recommande un délai de captation de 60 min (plage acceptable 55–75 min), à reproduire à ± 10 min pour un suivi thérapeutique [3].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "En dessous de quel seuil glycémique l'examen est-il en règle réalisable en clinique ?",
+        "options": [
+          "< 5 mmol/L (90 mg/dL)",
+          "< 11 mmol/L (200 mg/dL)",
+          "< 20 mmol/L (360 mg/dL)",
+          "Aucun seuil n'existe"
+        ],
+        "answer": 1,
+        "explanation": "L'EANM retient un seuil clinique ≤ 11 mmol/L (200 mg/dL) ; au-delà l'examen est reprogrammé. Pour la recherche/quantification, on vise 7–8,3 mmol/L (126–150 mg/dL) [3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi ne faut-il pas injecter d'insuline juste avant l'examen pour corriger une hyperglycémie ?",
+        "options": [
+          "L'insuline neutralise le 18F",
+          "Elle provoque une redistribution musculaire massive du FDG qui dégrade l'image",
+          "Elle accélère la décroissance radioactive",
+          "Elle bloque les transporteurs GLUT tumoraux"
+        ],
+        "answer": 1,
+        "explanation": "L'insuline redistribue le FDG vers le muscle squelettique, masquant les lésions ; il faut donc reporter l'examen plutôt que d'injecter de l'insuline juste avant [3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la formule EANM v2.0 de l'activité de FDG à injecter (recouvrement de lit ≤ 30 %) ?",
+        "options": [
+          "Activité fixe de 555 MBq quel que soit le poids",
+          "FDG (MBq) = 14 × poids (kg) / durée d'acquisition par pas (min)",
+          "FDG (MBq) = poids (kg) × 37",
+          "FDG (MBq) = 7 × taille (cm)"
+        ],
+        "answer": 1,
+        "explanation": "L'EANM recommande FDG (MBq) = 14 × poids / durée par pas (min) si recouvrement ≤ 30 % ; le coefficient passe à 7 si le recouvrement dépasse 30 % [3].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la dose efficace de référence du 18F-FDG chez l'adulte selon l'ICRP 128 ?",
+        "options": [
+          "0,0019 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,14 mSv/MBq",
+          "0,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "L'ICRP 128 retient 1,9×10⁻² mSv/MBq, soit ≈ 7 mSv pour 370 MBq (part TEP seule, hors composante TDM) [16].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'organe critique (dose absorbée la plus élevée) du 18F-FDG ?",
+        "options": [
+          "Le myocarde",
+          "Le cerveau",
+          "La paroi de la vessie",
+          "Le foie"
+        ],
+        "answer": 2,
+        "explanation": "La paroi vésicale est l'organe critique (≈ 7,5×10⁻² mGy/MBq, ICRP 128), d'où l'intérêt de l'hydratation et de la miction avant l'acquisition [16].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle modalité reste l'examen de référence pour la recherche de métastases cérébrales ?",
+        "options": [
+          "La TEP-FDG (sensibilité quasi parfaite)",
+          "L'IRM cérébrale, car la captation corticale physiologique limite la TEP (Se ≈ 60 %)",
+          "La scintigraphie osseuse",
+          "Le scanner abdominal"
+        ],
+        "answer": 1,
+        "explanation": "La forte captation corticale physiologique du FDG rend la TEP peu performante pour le M cérébral (Se ≈ 60 %) ; l'IRM cérébrale reste la référence [6].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Concernant le staging ganglionnaire médiastinal (N) du CBNPC, quelle affirmation est correcte ?",
+        "options": [
+          "La TEP a une VPN faible et ne dispense jamais d'une médiastinoscopie",
+          "La TEP-TDM est plus performante que la TDM seule, avec une forte VPN, mais un foyer N2/N3 suspect doit être confirmé par EBUS/médiastinoscopie",
+          "La TEP remplace toujours la confirmation invasive",
+          "La TEP est inutile au staging N"
+        ],
+        "answer": 1,
+        "explanation": "Méta-analyses : TEP-TDM Se ≈ 81 % / Sp ≈ 79 %, supérieure à la TDM seule, avec forte VPN ; une atteinte N2/N3 suspecte nécessite une confirmation invasive [5,6,8].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Dans la caractérisation d'un nodule pulmonaire solitaire indéterminé, quelle est la principale limite de la TEP-FDG ?",
+        "options": [
+          "Une mauvaise sensibilité globale (< 50 %)",
+          "Une fiabilité réduite pour les nodules < 8–10 mm et certaines tumeurs peu avides",
+          "L'impossibilité de mesurer un SUV",
+          "Une irradiation prohibitive"
+        ],
+        "answer": 1,
+        "explanation": "La TEP est performante (Se ≈ 94 %) mais limitée pour les lésions < 8–10 mm et les tumeurs peu avides (adénocarcinome lépidique, carcinoïde typique), sources de faux négatifs [5,7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel essai a montré une réduction des thoracotomies futiles grâce à la TEP-TDM ?",
+        "options": [
+          "L'essai ADMIRE-HF",
+          "Le PLUS trial (van Tinteren, Lancet 2002) : 41 % → 21 % de thoracotomies futiles",
+          "L'essai PERCIST",
+          "L'étude EuroNet PHL-C2"
+        ],
+        "answer": 1,
+        "explanation": "Le PLUS trial a réduit les thoracotomies futiles de 39/96 (41 %) à 19/92 (21 %), p = 0,003 ; Fischer (NEJM 2009) a confirmé ≈ 1 thoracotomie futile évitée pour 5 TEP-TDM [8,24].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quels critères standardisés évaluent la réponse métabolique en tumeur solide sur la TEP-FDG ?",
+        "options": [
+          "Les critères PERCIST 1.0 (variation du SULpeak)",
+          "Le score SIOPEN",
+          "Le score de Curie",
+          "Les critères RECIST 1.1 uniquement"
+        ],
+        "answer": 0,
+        "explanation": "PERCIST 1.0 (Wahl 2009) cote la réponse sur le SULpeak de la lésion la plus active : réponse partielle si baisse ≥ 30 % (et ≥ 0,8 unité), progression si hausse ≥ 30 % ou nouvelle lésion [15].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel piège fréquent abaisse la spécificité médiastinale de la TEP-FDG, surtout en zone d'endémie tuberculeuse ?",
+        "options": [
+          "La graisse brune",
+          "Les granulomatoses inflammatoires (tuberculose, sarcoïdose, anthracosilicose)",
+          "L'élimination urinaire",
+          "La captation myocardique"
+        ],
+        "answer": 1,
+        "explanation": "Les ganglions inflammatoires/granulomateux (tuberculose, sarcoïdose, anthracosilicose) fixent intensément le FDG et sont une cause majeure de faux positifs médiastinaux [6].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle métrique TEP est la plus reproductible et privilégiée par PERCIST pour le suivi ?",
+        "options": [
+          "Le SUVmax (voxel unique le plus intense)",
+          "Le SULpeak (sphère ≈ 1 cm³ normalisée à la masse maigre)",
+          "Le diamètre tumoral",
+          "Le nombre de coups bruts"
+        ],
+        "answer": 1,
+        "explanation": "Le SUL normalise le SUV à la masse maigre et le SULpeak (sphère ≈ 1 cm³) est plus reproductible que le SUVmax ; c'est le paramètre de référence de PERCIST [3,15].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la principale nouveauté de stadification introduite par la TNM IASLC 9e édition (janv. 2025) pertinente pour la TEP ?",
+        "options": [
+          "La suppression du stade M",
+          "La subdivision N2a / N2b (atteinte mono- vs multi-station)",
+          "L'abandon du paramètre T",
+          "La fusion des stades I et II"
+        ],
+        "answer": 1,
+        "explanation": "La 9e édition TNM, applicable depuis janvier 2025, introduit la subdivision N2a/N2b selon le caractère mono- ou multi-station de l'atteinte médiastinale [8].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Comment réduire la dose à la paroi vésicale et les artefacts urinaires avant l'acquisition ?",
+        "options": [
+          "Administrer un diurétique systématiquement chez tous",
+          "Hydrater le patient et faire vider la vessie avant l'acquisition",
+          "Réduire l'activité injectée de moitié",
+          "Allonger le délai d'incubation à 3 h"
+        ],
+        "answer": 1,
+        "explanation": "La paroi vésicale étant l'organe critique, l'hydratation et la miction avant acquisition réduisent la dose vésicale et les artefacts d'activité urinaire pelvienne [3,16].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Le repère historique « SUVmax > 2,5 = malin » doit être interprété comment aujourd'hui ?",
+        "options": [
+          "Comme un seuil dur, toujours fiable isolément",
+          "Comme un repère ancien non robuste isolément (chevauchement bénin/malin, dépendance à la glycémie, au délai et à la calibration EARL)",
+          "Comme un critère de progression PERCIST",
+          "Comme un seuil de dose efficace"
+        ],
+        "answer": 1,
+        "explanation": "Le seuil SUVmax > 2,5 est un repère ancien, non robuste isolément : il dépend de la glycémie, du délai et de la calibration EARL, et chevauche le bénin/malin ; il ne doit pas être présenté comme un cut-off dur actuel [3].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le 18F-FDG est un analogue du glucose capté par les transporteurs GLUT, phosphorylé par l'hexokinase puis piégé (FDG-6-phosphate) : il image l'hypermétabolisme glucidique tumoral (effet Warburg) [1].",
+        "Physique du 18F : émetteur β+ (96,7 %), période ≈ 110 min, détection en coïncidence de 2 photons de 511 keV à 180° [1].",
+        "La TEP-FDG est performante pour caractériser un nodule indéterminé > 8–10 mm (Se ≈ 94 %), mais peu fiable < 8–10 mm et pour les tumeurs peu avides (lépidique, carcinoïde) [5,7].",
+        "Staging N médiastinal : TEP-TDM supérieure à la TDM seule (Se ≈ 81 % / Sp ≈ 79 %), forte VPN, mais confirmation invasive (EBUS/médiastinoscopie) requise si N2/N3 suspect [5,6,8].",
+        "La TEP démasque des métastases occultes et réduit les thoracotomies futiles (PLUS trial : 41 % → 21 %, p = 0,003) [8].",
+        "Limite cérébrale : captation corticale physiologique → TEP peu sensible pour le M cérébral (≈ 60 %) ; l'IRM reste la référence [6].",
+        "Dose efficace 18F-FDG = 0,019 mSv/MBq (ICRP 128), organe critique = paroi vésicale ; part TEP ≈ 7 mSv pour 370 MBq [16].",
+        "Stadification selon TNM IASLC 9e édition (janv. 2025) avec subdivision N2a/N2b ; réponse métabolique cotée par PERCIST 1.0 [8,15]."
+      ],
+      "protocol": [
+        "Jeûne ≥ 4 h (eau plate autorisée) ; préhydratation ≈ 1 L dans les 2 h précédentes ; éviter l'effort physique ≥ 6 h avant [3].",
+        "Vérifier la glycémie : examen réalisable si < 11 mmol/L (200 mg/dL) ; viser 7–8,3 mmol/L pour la quantification ; ne pas injecter d'insuline juste avant [3].",
+        "Activité adulte EANM v2.0 : FDG (MBq) = 14 × poids (kg) / durée par pas (min) (coefficient 7 si recouvrement > 30 %), soit ≈ 185–400 MBq IV [3].",
+        "Délai d'incubation 60 min (plage 55–75 min) au repos, au chaud ; reproduire à ± 10 min pour le suivi [3].",
+        "Acquisition corps entier (vertex/base du crâne → racine des cuisses), 15–30 min ; reconstruction OSEM avec correction d'atténuation TDM, harmonisation EARL [3].",
+        "Hydratation + miction avant acquisition pour réduire la dose vésicale et les artefacts urinaires ; pédiatrie selon la carte de dose EANM (classe B) [13,16]."
+      ],
+      "scores": [
+        "TNM IASLC 9e édition (applicable janv. 2025) : stadification T/N/M, nouveauté N2a (mono-station) vs N2b (multi-station) [8].",
+        "PERCIST 1.0 (SULpeak) : réponse métabolique partielle si baisse ≥ 30 % (et ≥ 0,8 unité), progression si hausse ≥ 30 % ou nouvelle lésion hypermétabolique [15].",
+        "SUVmax : valeur pronostique indépendante sur la survie du CBNPC (méta-analyse ELCWP/IASLC) ; seuils optimaux variables selon le contexte [21].",
+        "Repère SUVmax > 2,5 (malignité d'un nodule) : ancien, non robuste isolément, à interpréter avec prudence (glycémie, délai, calibration EARL) [3]."
+      ],
+      "pitfalls": [
+        "Faux positifs : granulomatoses (tuberculose, sarcoïdose, anthracosilicose), pneumopathies inflammatoires/infectieuses — baisse de spécificité médiastinale en zone d'endémie tuberculeuse [6].",
+        "Faux négatifs : nodules < 8–10 mm (résolution/volume partiel), adénocarcinome lépidique, verre dépoli, carcinoïdes/TNE bien différenciées (faible avidité) [5,7].",
+        "Artefacts : graisse brune (cou/thorax, favorisée par le froid), mésalignement TEP/TDM par mouvement respiratoire aux bases pulmonaires (gating recommandé) [5].",
+        "Hyperglycémie ou insuline pré-injection : captation musculaire diffuse masquant les lésions — reporter plutôt que corriger par insuline [3].",
+        "Ne jamais conclure à la malignité sur la seule fixation : un foyer hypermétabolique doit être confirmé histologiquement si possible [8]."
+      ]
+    },
+    "lead": "La TEP-TDM au 18F-FDG est un examen d'imagerie qui visualise dans tout le corps les cellules consommant beaucoup de sucre, comme le font la plupart des cancers du poumon. En une seule acquisition, elle repère la tumeur, recherche les ganglions et les localisations à distance, et complète le scanner anatomique pour préciser l'étendue de la maladie. Elle aide aussi à juger si un traitement agit et à détecter une éventuelle récidive. C'est aujourd'hui un outil central pour décider de la prise en charge, en particulier avant une chirurgie. Son interprétation demande de connaître les captations normales de l'organisme afin d'éviter les fausses alertes.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cet examen ?",
+          "text": "La **TEP-TDM au FDG** est un examen d'imagerie qui aide votre médecin à mieux comprendre votre maladie pulmonaire. Le FDG est un sucre légèrement modifié, rendu très faiblement radioactif, que l'on vous injecte dans une veine. Les cellules très actives — dont beaucoup de cellules cancéreuses — consomment plus de sucre que les cellules normales : elles captent donc davantage de ce produit. Une caméra spéciale repère ensuite les zones où l'activité est anormalement élevée, dans tout le corps en une seule fois. Cet examen aide à savoir si une anomalie repérée au scanner est suspecte, à vérifier si la maladie s'est étendue ailleurs, à juger l'efficacité d'un traitement et à rechercher une éventuelle reprise de la maladie. Il complète le scanner habituel : le scanner montre la forme et la taille des organes, la TEP montre leur activité.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un examen qui regarde tout le corps",
+              "text": "En une seule acquisition, l'examen explore l'ensemble du corps. C'est pourquoi il est si utile pour savoir si la maladie est restée localisée ou si elle s'est propagée, une information importante pour choisir le traitement le mieux adapté."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma simplifié montrant comment le produit sucré s'accumule dans une cellule très active.",
+            "caption": "Le produit injecté s'accumule dans les cellules les plus actives, qui le gardent piégé : c'est ce que la caméra repère."
+          }
+        },
+        {
+          "title": "Comment se préparer et comment ça se passe",
+          "text": "La préparation est simple mais importante pour obtenir de belles images. On vous demandera de **ne pas manger pendant quelques heures** avant l'examen (l'eau plate reste autorisée) et d'**éviter les efforts physiques intenses** la veille et le jour même. Le jour J, l'équipe vous accueille, vous pèse, vérifie votre taux de sucre dans le sang et pose une petite perfusion. L'injection du produit est une simple piqûre, indolore. Vous vous reposez ensuite allongé au calme pendant que le produit se répartit dans le corps, puis vous passez sous la caméra : c'est silencieux, sans piqûre supplémentaire et sans douleur. Habillez-vous chaudement, car le froid peut gêner la qualité des images.",
+          "steps": [
+            {
+              "title": "Accueil et vérifications",
+              "text": "Pesée, mesure du taux de sucre dans le sang, pose d'une petite perfusion."
+            },
+            {
+              "title": "Injection du produit",
+              "text": "Une simple injection dans une veine du bras, indolore."
+            },
+            {
+              "title": "Temps de repos au calme",
+              "text": "Vous restez allongé, détendu et au chaud, sans bouger ni parler, le temps que le produit se répartisse."
+            },
+            {
+              "title": "Passage sous la caméra",
+              "text": "Vous passez doucement dans l'appareil. C'est silencieux et indolore."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Si vous êtes diabétique",
+              "text": "Signalez-le à la prise de rendez-vous. Un taux de sucre trop élevé le jour de l'examen gêne la qualité des images et peut conduire à reprogrammer l'examen. L'équipe adaptera avec vous le moment de vos médicaments et le contrôle de votre glycémie."
+            },
+            {
+              "type": "tip",
+              "title": "Pensez à le signaler",
+              "text": "Prévenez l'équipe si vous êtes enceinte, si vous pensez l'être, ou si vous allaitez : des précautions simples seront prises avec vous."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce dangereux ? Et après l'examen",
+          "text": "La quantité de radioactivité utilisée est **faible et disparaît très vite**, en quelques heures, par votre élimination naturelle. L'examen est sûr et bien toléré ; il ne provoque pas de douleur en dehors de la piqûre, et le produit injecté ne donne pas de réaction allergique habituelle. Après l'examen, vous pouvez rentrer chez vous et reprendre une vie normale dès le même jour. **Buvez abondamment** et urinez régulièrement : cela aide votre corps à éliminer plus vite le produit. Par simple prudence, il est conseillé d'éviter le contact prolongé et rapproché avec les femmes enceintes et les jeunes enfants pendant quelques heures.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Bénéfice et précaution",
+              "text": "La très faible dose de rayonnement reçue est largement justifiée par les informations précieuses que l'examen apporte pour orienter votre prise en charge. Votre médecin n'a proposé cet examen que parce que son bénéfice dépasse nettement ce petit inconvénient."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : principales indications",
+          "text": "La TEP-TDM au 18F-FDG occupe une place centrale dans le cancer bronchique, du diagnostic au suivi. Elle apporte une information métabolique qui complète l'imagerie anatomique et modifie fréquemment la stratégie thérapeutique.",
+          "list": [
+            "**Caractérisation d'un nodule pulmonaire solitaire indéterminé** (≥ 8–10 mm) : aide à estimer le risque de malignité (sensibilité ≈ 94 %), utile avant une décision invasive.",
+            "**Bilan d'extension initial du cancer bronchique non à petites cellules (CBNPC)** sans métastase prouvée : évaluation ganglionnaire médiastinale (N) et recherche de métastases à distance (M), en une seule acquisition corps entier.",
+            "**Bilan d'extension du carcinome à petites cellules (CBPC)** et des patients oligométastatiques candidats à un traitement local.",
+            "**Évaluation de la réponse thérapeutique** (chimiothérapie, immunothérapie, radiothérapie) selon des critères métaboliques.",
+            "**Recherche de récidive / restaging** en cas de réascension clinique ou biologique.",
+            "**Aide à la délimitation du volume cible** en radiothérapie thoracique et au ciblage de la biopsie."
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La TEP-FDG démasque des métastases occultes non vues sur le bilan conventionnel chez environ 15 % des patients et modifie la prise en charge dans 20 à 30 % des cas. En pratique, elle réduit nettement les thoracotomies inutiles (de l'ordre de 41 % à 21 % dans les essais randomisés, soit environ une thoracotomie futile évitée pour cinq examens réalisés). Adresser tôt, avant une chirurgie à visée curative, évite un geste lourd chez un patient qui aurait été d'emblée métastatique."
+            }
+          ]
+        },
+        {
+          "title": "La démarche et l'apport de la médecine nucléaire",
+          "text": "L'examen explore le corps entier (de la base du crâne à la racine des cuisses) en une acquisition unique. Sur le plan ganglionnaire médiastinal, la TEP-TDM est plus performante que le scanner seul, avec une forte valeur prédictive négative : un médiastin négatif rend une atteinte significative peu probable. À l'inverse, **un foyer hypermétabolique médiastinal doit être confirmé histologiquement (EBUS, médiastinoscopie)** avant de récuser une chirurgie, car des faux positifs existent. Pour le bilan métastatique, elle est supérieure à la scintigraphie osseuse pour l'os et détecte des lésions surrénaliennes, hépatiques ou ganglionnaires à distance. Elle ne remplace pas la preuve histologique et reste complémentaire de l'IRM pour l'étage cérébral.",
+          "list": [
+            "**Faux positifs** à connaître, surtout en zone d'endémie tuberculeuse : tuberculose, sarcoïdose, anthracosilicose, pneumopathies inflammatoires ou infectieuses — d'où l'intérêt de la confirmation histologique d'un N suspect.",
+            "**Faux négatifs** : lésions < 8–10 mm, adénocarcinome lépidique (ex-bronchiolo-alvéolaire), opacités en verre dépoli, tumeurs neuroendocrines bien différenciées, peu avides de FDG.",
+            "**Limite cérébrale** : la captation physiologique élevée du cortex rend la TEP-FDG peu sensible pour les métastases cérébrales — l'IRM cérébrale reste l'examen de référence pour le M cérébral.",
+            "**Préciser sur la demande** : antécédents, traitement en cours (chimio, immunothérapie, radiothérapie récente), statut diabétique et glycémie, et surtout la question clinique exacte."
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Optimiser la demande",
+              "text": "Mentionnez un diabète ou une hyperglycémie connue : un contrôle glycémique insuffisant dégrade les images et peut faire reporter l'examen. Précisez aussi la date d'une éventuelle radiothérapie ou d'une biopsie récente, sources d'hypermétabolisme inflammatoire pouvant simuler une activité tumorale."
+            }
+          ]
+        },
+        {
+          "title": "TEP-FDG, scanner ou IRM : positionnement",
+          "text": "Chaque modalité a son créneau et elles sont le plus souvent complémentaires.\n- **TDM (scanner)** : référence anatomique, mesure des tailles et suivi morphologique — mais ne distingue pas tissu tumoral actif et séquelle fibreuse.\n- **TEP-TDM FDG** : information métabolique + anatomique en un seul examen ; supérieure pour le bilan ganglionnaire médiastinal et la recherche de métastases à distance, et plus sensible que la scintigraphie osseuse pour l'os.\n- **IRM** : indiquée pour l'étage cérébral (où la TEP-FDG est prise en défaut) et l'évaluation de certaines extensions locales (paroi, plexus, rachis).\nEn pratique, le couple TEP-TDM FDG + IRM cérébrale constitue le bilan d'extension de référence du CBNPC sans métastase d'emblée prouvée."
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identite",
+          "text": "**Comment lire la carte d'identite.** La **TEP-TDM au 18F-FDG** (tomographie par emission de positons couplee au scanner X, *Positron Emission Tomography / Computed Tomography*) repose sur un **emetteur de positons (β+)**, le **fluor-18 (18F)**, de periode physique **109,8 min** [1,2]. L'annihilation du positon avec un electron du milieu genere **deux photons de 511 keV emis a 180°**, detectes en **coincidence** par la couronne de detecteurs [1,2]. Le traceur, le **18F-FDG (2-desoxy-2-[18F]fluoro-D-glucose)**, est un analogue du glucose qui cartographie l'hypermetabolisme glucidique des tumeurs (cf. A4). L'examen est realise **corps entier** (vertex/base du crane → racine des cuisses) en une acquisition unique.\n\n| Champ | Valeur |\n|---|---|\n| **Acronyme × modalite** | TEP-TDM (PET/CT) au 18F-FDG |\n| **Traceur** | 18F-FDG ; alternatives selon contexte : 68Ga-DOTATATE, 18F-FDOPA |\n| **Emission × energie** | β+ → 2 × **511 keV** (annihilation) [1,2] |\n| **Periode physique** | **109,8 min** (≈ 110 min) [1,2] |\n| **Voie × activite adulte** | IV ; **185–370 MBq** (5–10 mCi, RCP) ou formule EANM (cf. B7) [1,3] |\n| **Delai injection → acquisition** | **60 min** (plage 55–75 min) [3] |\n| **Duree d'acquisition** | 15–30 min sous camera [3] |\n| **Dose efficace** | **0,019 mSv/MBq** (CIPR 128) → ≈ 7 mSv pour 370 MBq (part TEP) [4,16] |\n| **Organe critique** | **paroi vesicale** (elimination urinaire) [16] |\n| **Preparation cle** | **jeune ≥ 4 h** ; glycemie **< 11 mmol/L** (200 mg/dL) [3] |\n| **Grandes indications** | caracterisation d'un nodule, bilan d'extension du CBNPC (N et M), reevaluation/recidive, reponse therapeutique [4,5] |",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation (β+)"
+            },
+            {
+              "value": "109,8 min",
+              "label": "Periode physique du 18F"
+            },
+            {
+              "value": "60 min",
+              "label": "Delai d'incubation FDG"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace (adulte, CIPR 128)"
+            }
+          ]
+        },
+        {
+          "title": "A2 - Definition",
+          "text": "La **TEP-TDM au 18F-FDG** est un examen d'**imagerie metabolique** qui associe, sur un meme statif et en une acquisition « corps entier », une **tomographie par emission de positons (TEP)** — imagerie fonctionnelle — et un **scanner X (TDM)** assurant le reperage anatomique et la **correction d'attenuation** [1]. La detection repose sur le principe de **coincidence** : le 18F, emetteur de **positons (β+)**, voit chaque positon s'annihiler avec un electron du milieu apres un parcours de quelques millimetres, produisant **deux photons de 511 keV emis simultanement a 180°** ; la couronne de detecteurs enregistre ces paires, definissant une ligne de reponse dont l'ensemble permet la reconstruction tomographique 3D de la distribution du traceur [1,2].\n\nContrairement a la TDM ou a l'IRM, qui revelent la **morphologie**, la TEP-FDG image une **propriete biologique** : l'avidite d'un tissu pour le glucose (cf. A4). Elle delivre une information de **caracterisation** (le tissu est-il hypermetabolique ?) et de **cartographie corps entier** (ou sont toutes les localisations ?), ce qui en fait l'outil pivot du bilan d'extension du cancer bronchique. C'est aussi un examen **quantitatif** : la fixation est exprimee par le **SUV** (*Standardized Uptake Value*), rapport de la concentration d'activite lesionnelle a l'activite injectee normalisee au poids. Le **SUVmax** (voxel le plus intense de la lesion) est le parametre de routine ; l'harmonisation **EARL** (*EANM Research Ltd*) est requise pour la comparaison multicentrique et le suivi (cf. B10) [3].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - le seuil SUVmax > 2,5",
+              "text": "La regle ancienne « **SUVmax > 2,5 = malin** » est un repere historique, **non robuste isolement** : chevauchement benin/malin, dependance a la glycemie, au delai post-injection et a la calibration EARL. Aucune source actuelle ne la valide comme cut-off formel — a interpreter toujours dans son contexte clinique et technique [3,18]."
+            }
+          ]
+        },
+        {
+          "title": "A3 - Rappels anatomiques & physiologiques",
+          "text": "Le 18F-FDG emprunte la voie d'entree du glucose mais reste **piege** dans la cellule (cf. A4) ; la connaissance de sa **biodistribution physiologique normale** est le prerequis pour eviter les faux positifs (developpee en C11).\n\n**Captation physiologique intense** : **cerveau (cortex)**, **myocarde** (variable selon l'etat de jeune), et l'**axe d'elimination urinaire** reins–ureteres–vessie [6]. **Captation variable** : foie (bruit de fond de reference pour la lecture), rate, moelle osseuse, tube digestif (estomac, colon), muscles en cas d'effort ou de contraction, et **graisse brune** des regions cervico-thoracique et sus-claviculaire, favorisee par le froid [6].\n\nDeux consequences anatomo-physiologiques majeures pour le thorax et le poumon :\n\n- **Limite cerebrale.** La captation corticale physiologique elevee masque les metastases cerebrales : la TEP-FDG y est peu performante (sensibilite voisine de **60 %**), de sorte que l'**IRM cerebrale** reste l'examen de reference pour le M cerebral [6].\n- **Mouvement respiratoire.** La mobilite diaphragmatique et des bases pulmonaires expose au **mesalignement TEP/TDM**, source d'artefact de localisation et de quantification (gating respiratoire utile pour les lesions thoraciques ; cf. C14).",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le **foie** sert de reference visuelle et semi-quantitative pour graduer l'intensite des foyers (logique transposee des seuils foie/mediastin du score de Deauville en lymphome). Une captation myocardique diffuse et intense, frequente sans jeune strict, peut gener l'analyse des structures juxta-cardiaques."
+            }
+          ]
+        },
+        {
+          "title": "A4 - Principe : la cible biologique imagee",
+          "text": "**Pourquoi ca marche.** Le 18F-FDG image l'**hypermetabolisme glucidique** caracteristique de la majorite des cancers — l'**effet Warburg**, soit une glycolyse aerobie augmentee. Les cellules tumorales **surexpriment les transporteurs membranaires GLUT** (GLUT-1, GLUT-3) et l'**hexokinase**, d'ou une captation et une retention accrues du traceur [1].\n\nLa sequence intracellulaire explique le « piegeage metabolique » : (1) entree par les **transporteurs GLUT**, comme le glucose ; (2) phosphorylation par l'**hexokinase** en **FDG-6-phosphate** ; (3) **blocage metabolique** — le FDG-6-phosphate n'est pas substrat de l'etape glycolytique suivante et n'est que lentement dephosphoryle (faible glucose-6-phosphatase tumorale) → il **reste piege** intracellulairement, proportionnellement au taux d'utilisation du glucose [1]. Le pic d'imagerie est atteint vers **30–40 min** post-injection, justifiant une acquisition a **60 min** (cf. B8) [1].\n\nLa cible est donc le **tissu a glycolyse accrue exprimant GLUT + hexokinase** : tumeurs avides (la plupart des CBNPC, le carcinome a petites cellules), mais aussi tout foyer inflammatoire/infectieux actif (faux positifs).\n\n- **Hyperfixation** = densite elevee de GLUT/hexokinase et glycolyse accrue (tumeur active, mais aussi granulome, infection).\n- **Hypofixation / absence** = faible avidite (adenocarcinome lepidique, tumeur neuroendocrine bien differenciee) ou lesion sous le pouvoir de resolution (**< 8–10 mm**) [5,6].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le contraste depend du **rapport cible/fond** : une hyperglycemie, en saturant les GLUT, fait chuter la captation tumorale et detourne le FDG vers le muscle. L'**effet Warburg** est aussi la cause des faux positifs inflammatoires : la cible n'est pas « le cancer » mais « la glycolyse accrue », partagee par les macrophages actives (cf. A5, C14)."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schema du piegeage metabolique du 18F-FDG : entree cellulaire par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non metabolisable, retention intracellulaire proportionnelle a la glycolyse (effet Warburg).",
+            "caption": "Fig. 1 - Du transporteur GLUT a l'hexokinase : le FDG-6-phosphate reste piege, ce qui fonde le contraste tumeur/fond."
+          }
+        },
+        {
+          "title": "A5 - Indications",
+          "text": "Coeur clinique de l'examen dans le **cancer bronchique** ; chaque indication renvoie au rationale du A4 (la TEP n'est positive que si la glycolyse est accrue) et pointe vers l'article Maladie correspondant. Le cadre de stadification est la classification **TNM IASLC 9e edition**, applicable depuis **janvier 2025** (nouveaute : subdivision **N2a / N2b**, N2 mono- vs multi-station) [8].\n\n| Indication | Performance / message | Niveau |\n|---|---|---|\n| **Caracterisation d'un nodule pulmonaire solitaire indetermine** (> 8–10 mm) | Se ≈ **94 %**, Sp ≈ **86 %** ; performance limitee < 8–10 mm [5,7] | Validee |\n| **Staging ganglionnaire mediastinal (N) du CBNPC** | TEP-TDM Se ≈ **81 %** / Sp ≈ **79 %** (meta-analyse), vs TDM seule (Se 74 % / Sp 73 %) ; forte **VPN** [4,5] | Validee |\n| Staging N — limite | Se faible (**~50 %**) sur tumeurs T1 (micrometastases) → confirmation invasive (EBUS/mediastinoscopie) si N2/N3 suspecte [5] | Validee |\n| **Bilan metastatique a distance (M)** | Demasque des metastases occultes extra-thoraciques chez ≈ **15 %** des patients ; modifie la prise en charge chez **20–30 %** (surtout upstaging) [4,5] | Validee |\n| **Reduction des thoracotomies inutiles** | PLUS trial : futiles **41 % → 21 %** (p = 0,003) ; ≈ 1 thoracotomie futile evitee pour **5 TEP** realisees [19,24] | Validee (essais randomises) |\n| **Restaging / recherche de recidive** | Bonne Se/Sp, **VPN** elevee [4] | Validee |\n| **Evaluation de la reponse therapeutique** | Criteres **PERCIST** (reponse metabolique) — chimio, immuno, radiotherapie [15] | Validee |\n| **Delimitation du volume cible de radiotherapie** | TEP-FDG recommandee pour le contourage thoracique [5] | Validee |\n\nLa TEP-FDG **ne remplace pas la preuve histologique** : un foyer hypermetabolique doit, si possible, etre confirme par biopsie [19].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - faux positifs en zone d'endemie",
+              "text": "En contexte de forte endemie tuberculeuse (notamment africain), la specificite mediastinale chute : **tuberculose**, sarcoidose, anthraco-silicose, aspergillose, histoplasmose et pneumopathies inflammatoires/infectieuses fixent intensement le FDG et miment un envahissement ganglionnaire [6]. Tout upstaging N2/N3 sur la seule TEP doit etre confirme histologiquement (EBUS/mediastinoscopie)."
+            }
+          ]
+        },
+        {
+          "title": "A6 - Contre-indications & precautions",
+          "text": "Il n'existe **pas de contre-indication absolue** a la TEP-TDM au 18F-FDG. Les points de vigilance sont relatifs et relevent surtout de la preparation (cf. B8) et de la radioprotection (cf. D16).\n\n| Situation | Type | Conduite |\n|---|---|---|\n| **Grossesse** | Relative | Evaluer benefice/risque ; dose a l'uterus non gravide ≈ **4,7 mGy pour 259 MBq** (1,8 × 10⁻² mGy/MBq) [9] ; reporter si possible. |\n| **Allaitement** | Relative | Pas d'interruption necessaire (faible excretion lactee) ; **limiter le contact rapproche mere-enfant ~12 h** post-injection (irradiation externe par la captation mammaire) [9]. |\n| **Hyperglycemie / diabete desequilibre** | A corriger | Competition glucose/FDG → degradation des images ; reporter si **glycemie ≥ 11 mmol/L (200 mg/dL)** [3,10]. |\n| **Effort physique recent / infection-inflammation active** | A gerer | Captation musculaire ou inflammatoire parasite → faux positifs ; eviter l'effort ≥ 6 h avant (cf. B8) [3]. |\n| **Insuffisance renale** | Relative | Elimination urinaire ralentie ; hydratation et miction renforcees. |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - ne pas injecter d'insuline avant l'examen",
+              "text": "Corriger une hyperglycemie par une **insuline IV juste avant** l'injection provoque une **redistribution musculaire massive du FDG** qui ruine le contraste tumoral [10]. La glycemie se controle a l'arrivee ; en cas de diabete, anticiper la prise en charge plutot que corriger en urgence."
+            },
+            {
+              "type": "info",
+              "title": "Grossesse & allaitement - a rechercher systematiquement",
+              "text": "L'etat de grossesse doit etre **systematiquement recherche** avant injection (test si doute). Pour l'allaitement, l'eviction porte sur le **contact rapproche (~12 h)** et non sur le lait lui-meme, l'excretion lactee du FDG etant negligeable [9]."
+            }
+          ]
+        },
+        {
+          "title": "B7 - Radiopharmaceutique(s) & mécanisme(s) de fixation",
+          "text": "**(a) Mécanisme moléculaire.** Le **18F-FDG (2-désoxy-2-[18F]fluoro-D-glucose)** est un **analogue du glucose** marqué au fluor-18.[1] Sa captation reproduit les trois premières étapes du métabolisme glucidique puis s'interrompt : (1) entrée cellulaire via les **transporteurs GLUT** (surtout **GLUT-1**), surexprimés par la plupart des cancers ; (2) phosphorylation par l'**hexokinase** en **FDG-6-phosphate** ; (3) **blocage métabolique** — le FDG-6-phosphate n'est pas substrat de l'étape glycolytique suivante et n'est que lentement déphosphorylé (faible glucose-6-phosphatase tumorale) → il reste **piégé** intracellulairement (« metabolic trapping ») proportionnellement au taux d'utilisation du glucose.[1] L'hypermétabolisme glucidique tumoral (effet Warburg : glycolyse aérobie augmentée) explique l'**hyperfixation** des lésions malignes. Le pic d'imagerie optimal est atteint **30–40 min** après injection, justifiant l'acquisition vers **60 min** (cf. §B9).[1]\n\n**(b) Propriétés physiques du fluor-18.** Le 18F est un émetteur de **positons (β+)** : le positon émis s'annihile avec un électron du milieu après un court parcours, produisant **deux photons de 511 keV émis à 180°** détectés en **coïncidence** par la couronne de détecteurs.[1,2]\n\n| Caractéristique physique | Valeur | Source |\n|---|---|---|\n| Période physique (T½) | **≈ 109,7–109,8 min** (≈ 110 min) | [1,2] |\n| Mode de désintégration | **β+ (≈ 96,7 %)** + capture électronique → 18O stable | [1] |\n| Énergie max. du positon | **≈ 0,634 MeV (633 keV)** | [1] |\n| Photons d'annihilation | **2 × 511 keV (180°)** | [1,2] |\n| CDA à 511 keV (plomb) | **≈ 4,1 mm** | [2] |\n\n**(c) Production & marquage.** Le 18F est produit par **cyclotron médical** via la réaction nucléaire **18O(p,n)18F**, par bombardement protonique d'**eau enrichie en 18O (> 95 %)** ; production **sans entraîneur** (no-carrier-added) de fluorure-18, l'eau enrichie coûteuse étant recyclée.[11] La synthèse du FDG repose sur une **substitution nucléophile SN2** à partir du précurseur **mannose triflate**, en présence d'aminopolyéther (**Kryptofix 2.2.2**) ou de sels d'ammonium quaternaire, dans un solvant aprotique polaire (acétonitrile), suivie d'une hydrolyse.[11,12]\n\n**(d) Contrôle qualité du traceur (Ph. Eur. / USP).** Identité radionucléidique (T½ ≈ 110 min, photopic 511 keV), **pureté radiochimique > 95 %** (CCM/HPLC), pureté chimique (Kryptofix résiduel), pH, solvants résiduels, **stérilité** et **endotoxines bactériennes**.[12]\n\n| Test CQ | Seuil d'acceptation | Source |\n|---|---|---|\n| Pureté radiochimique | **> 95 %** | [12] |\n| Identité radionucléidique | T½ ≈ 110 min ; 511 keV | [12] |\n| Kryptofix résiduel | sous le seuil de toxicité | [12] |\n| Stérilité / endotoxines | conforme (apyrogène) | [12] |\n\n**(e) Activités administrées & voie.** Voie **IV**. Chez l'adulte, la notice FDA/RCP retient **185–370 MBq (5–10 mCi)** pour 70 kg.[1] L'EANM module l'activité selon le poids et la durée d'acquisition par pas de lit (cf. §B9) ; l'ordre de grandeur usuel est **≈ 2,5–5 MBq/kg**.[3,10] En **pédiatrie**, le 18F-FDG relève de la **classe B** de la carte de dose EANM : activité = valeur de référence × facteur fonction du poids, avec une **activité minimale**.[13]",
+          "stats": [
+            {
+              "value": "≈ 110 min",
+              "label": "Période physique du 18F [1,2]"
+            },
+            {
+              "value": "2 × 511 keV",
+              "label": "Photons d'annihilation [1,2]"
+            },
+            {
+              "value": "> 95 %",
+              "label": "Pureté radiochimique exigée [12]"
+            },
+            {
+              "value": "185–370 MBq",
+              "label": "Activité adulte (FDA/RCP) [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — caméras modernes et baisse d'activité",
+              "text": "Les systèmes **numériques**, à **temps de vol (TOF) rapide** ou à **grand champ axial (total-body)** autorisent une réduction de l'activité injectée **d'un facteur ≥ 2** à qualité d'image constante, en suivant la procédure d'harmonisation EARL.[3] Pour la pédiatrie, une proposition récente abaisse la valeur de référence de la classe B à **10,7 MBq (minimum 10 MBq)** sur ces équipements modernes.[13] Les données EuroNet PHL-C2 confirment la possibilité de réduire encore les activités FDG chez l'enfant.[14]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — la SUV n'est comparable qu'harmonisée",
+              "text": "La **SUVmax** dépend strictement de la calibration croisée activimètre↔caméra, de la synchronisation des horloges, du délai de captation et de la glycémie. Pour tout suivi ou comparaison multicentrique, l'**harmonisation EARL** (standards EARL1 puis EARL2) est requise : le passage EARL1→EARL2 augmente la SUV de **23–30 %** — un même patient n'est comparable qu'à technique identique.[3]"
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du 18F-FDG : entrée cellulaire par les transporteurs GLUT-1/GLUT-3, phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable, accumulation intracellulaire proportionnelle au flux glycolytique.",
+            "caption": "Fig. 1 — Mécanisme de captation du 18F-FDG : analogue du glucose piégé après phosphorylation (« metabolic trapping »)."
+          }
+        },
+        {
+          "title": "B8 - Préparation du patient",
+          "text": "La préparation conditionne la **validité métabolique** de l'examen : toute hyperglycémie, tout effort musculaire ou toute captation parasite dégrade le contraste tumoral. Trois leviers sont spécifiques au 18F-FDG : le **jeûne**, le **contrôle glycémique** et le **repos au chaud** pendant la captation.[3,10]\n\n**Jeûne & hydratation.** **Jeûne ≥ 4 h** avant l'examen (eau plate autorisée) pour abaisser l'insulinémie et la glycémie endogène.[3] Une **préhydratation (~1 L d'eau dans les 2 h précédant l'injection)** est recommandée : elle réduit la dose à la paroi vésicale et les artefacts d'élimination urinaire.[10]\n\n**Activité musculaire.** **Éviter tout effort physique intense ≥ 6 h avant** (idéalement 24 h) : l'exercice récent entraîne une captation musculaire diffuse parasite.[3]\n\n**Contrôle glycémique.** L'examen est réalisable si **glycémie < 11 mmol/L (≈ 200 mg/dL)** en pratique clinique ; au-delà, le glucose endogène entre en **compétition** avec le FDG et l'examen doit être **reporté**.[3,10] Pour la recherche et la quantification fine, un seuil plus strict de **7–8,3 mmol/L (126–150 mg/dL)** est visé.[3,10] Chez le diabétique, la glycémie est vérifiée à l'arrivée et une arrivée anticipée permet de la corriger si besoin.[10]\n\n**Délai de captation (incubation).** **60 min** entre injection et acquisition (plage acceptable **55–75 min**) ; repos allongé, silencieux et **au chaud** pendant la captation pour limiter la fixation musculaire et de la **graisse brune** (cou, régions sus-claviculaires/paravertébrales).[3,10] Pour un examen de réévaluation, le délai doit être **reproduit à ± 10 min** du précédent pour que les SUV soient comparables.[3]",
+          "steps": [
+            {
+              "title": "Avant J (à la prescription)",
+              "text": "Vérifier l'indication, la grossesse/l'allaitement et la glycémie habituelle ; consigner le diabète et son traitement ; informer du jeûne ≥ 4 h et de l'éviction de l'effort physique ≥ 6 h (idéalement 24 h).[3]"
+            },
+            {
+              "title": "Le jour J — accueil",
+              "text": "Peser le patient, **mesurer la glycémie** ; reporter si ≥ 11 mmol/L ; poser une voie veineuse ; débuter l'hydratation (~1 L sur 2 h).[3,10]"
+            },
+            {
+              "title": "Injection & captation (~60 min)",
+              "text": "Injection IV du FDG ; repos allongé, silencieux, **au chaud**, sans effort ni mastication ; incubation **55–75 min**.[3]"
+            },
+            {
+              "title": "Avant l'acquisition",
+              "text": "**Miction** complète (réduit la dose vésicale et les artefacts urinaires) ; installation sous la caméra.[3,10]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "≥ 4 h",
+              "label": "Jeûne avant l'examen [3]"
+            },
+            {
+              "value": "< 11 mmol/L",
+              "label": "Seuil glycémique clinique [3,10]"
+            },
+            {
+              "value": "55–75 min",
+              "label": "Délai de captation (uptake) [3]"
+            },
+            {
+              "value": "≥ 6 h",
+              "label": "Éviction de l'effort physique [3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — ne JAMAIS injecter d'insuline juste avant l'examen",
+              "text": "Corriger une hyperglycémie par de l'**insuline IV immédiatement avant** l'injection de FDG provoque une **redistribution musculaire massive** du traceur, masquant les lésions et ruinant l'examen.[10] Si la glycémie est trop élevée, il faut **reporter** l'examen plutôt que d'insuliniser dans la foulée.[3,10]"
+            },
+            {
+              "type": "info",
+              "title": "À vérifier impérativement",
+              "text": "Jeûne effectif ≥ 4 h · glycémie < 11 mmol/L · absence d'effort récent · délai de captation 55–75 min (reproduit ± 10 min en suivi) · vessie vidée avant acquisition. Un seul de ces points non respecté peut suffire à rendre l'examen ininterprétable.[3,10]"
+            }
+          ]
+        },
+        {
+          "title": "B9 - Instrument, contrôle qualité & protocole d'acquisition",
+          "text": "**(a) Instrument & CQ — prérequis.** La **caméra TEP-TDM hybride** associe une couronne de détecteurs de coïncidence (cristaux **LSO/LYSO/BGO**) à un scanner X assurant la **correction d'atténuation** et le repérage anatomique.[1] La fiabilité de la **SUV** repose sur la **calibration croisée activimètre↔caméra** et la synchronisation des horloges : un CQ quotidien, une calibration régulière et un contrôle de la résolution sont indispensables (un SUV ne vaut que si l'étalonnage est à jour — cf. §B10, §C14).[1] L'harmonisation **EARL** garantit la comparabilité multicentrique des SUV.\n\n**(b) Acquisition « corps entier ».** Acquisition de la **base du crâne (ou du vertex) à la racine des cuisses**, **15–30 min** sous la caméra, **60 min** après l'injection.[1,10] Le tableau ci-dessous résume les paramètres clés.\n\n| Paramètre | Recommandation EANM | Source |\n|---|---|---|\n| Délai injection→acquisition | **60 min** (55–75 min ; ± 10 min en suivi) | [3,10] |\n| Champ exploré | Base du crâne → racine des cuisses | [10] |\n| Voxels reconstruits | **3,0–4,0 mm** par direction | [10] |\n| Filtre spatial | **FWHM ≤ 7 mm** | [10] |\n| TDM associée | Low-dose (atténuation/repérage) ou diagnostique injectée | [10] |\n| Gating respiratoire | Recommandé pour les lésions thoraciques | [5] |\n\n**(c) Formule d'activité (EANM v2.0/v3.0).** L'activité injectée est indexée sur le poids et le temps par pas de lit : **FDG (MBq) = 14 × poids (kg) / durée d'acquisition par pas (min)** lorsque le **recouvrement de lit ≤ 30 %** ; le coefficient passe à **7** si le recouvrement > 30 %.[3,10] Ce couplage activité↔temps maintient une **statistique de comptage constante** d'un patient à l'autre.\n\n**(d) TDM associée.** La composante TDM est réalisée en **basse dose** (correction d'atténuation + repérage), ou en mode **diagnostique injecté** selon l'indication (la dose en découle, cf. §D15). Un **protocole respiratoire** (apnée ou respiration libre douce) limite le **mésalignement TEP/TDM** au niveau du diaphragme et des bases pulmonaires.[5]",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Énergie détectée en coïncidence [1]"
+            },
+            {
+              "value": "3,0–4,0 mm",
+              "label": "Taille de voxel reconstruit [10]"
+            },
+            {
+              "value": "FWHM ≤ 7 mm",
+              "label": "Filtre spatial EANM [10]"
+            },
+            {
+              "value": "14 × kg / min",
+              "label": "Formule d'activité (recouvrement ≤ 30 %) [3,10]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — mésalignement respiratoire TEP/TDM",
+              "text": "Le mouvement respiratoire désaligne la TEP (acquise sur plusieurs cycles) et la TDM (quasi instantanée) au niveau du **diaphragme et des bases pulmonaires**, créant des artefacts de correction d'atténuation et de localisation des nodules juxta-diaphragmatiques. Un **gating respiratoire** est recommandé pour les lésions thoraciques mobiles.[5]"
+            },
+            {
+              "type": "info",
+              "title": "Point expert — activité réduite sur caméras numériques",
+              "text": "Sur les systèmes **numériques / TOF rapide (< 400 ps) / total-body**, l'activité peut être abaissée d'un facteur ≥ 2 à durée d'acquisition constante (ou la durée raccourcie à activité constante), en respectant la procédure EARL — un gain dosimétrique direct pour le patient sans perte de performance diagnostique.[3]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence d'une caméra TEP : annihilation positon-électron, émission de deux photons de 511 keV à 180°, détection simultanée par deux cristaux opposés définissant une ligne de réponse.",
+            "caption": "Fig. 2 — Détection TEP en coïncidence (LSO/LYSO/BGO) couplée à la TDM pour correction d'atténuation et repérage anatomique."
+          }
+        },
+        {
+          "title": "B10 - Traitement, reconstruction & quantification",
+          "text": "**(a) Reconstruction.** Les données de coïncidence sont reconstruites par algorithme **itératif OSEM** (ordered-subset expectation maximization), avec **correction d'atténuation** (à partir de la TDM), correction du **diffusé** et des **coïncidences fortuites**, et fusion TEP-TDM. Les options modernes — **PSF** (modélisation de la réponse impulsionnelle) et **TOF** (temps de vol) — améliorent le rapport signal/bruit et la détectabilité des petites lésions, au prix d'une augmentation potentielle des valeurs de SUV qui impose de **fixer le protocole de reconstruction** pour tout suivi.[10] La conformité **EARL** harmonise précisément ces effets : le passage EARL1→EARL2 augmente la SUV de **23–30 %** et abaisse le volume métabolique (MATV) d'environ **22 %**.[3]\n\n**(b) Quantification — métriques.** La fixation est quantifiée par la **SUV (Standardized Uptake Value)** = activité dans le volume d'intérêt (kBq/mL) normalisée à l'activité injectée et à la masse corporelle.[10] Les principales métriques sont résumées ci-dessous.\n\n| Métrique | Définition | Usage clinique |\n|---|---|---|\n| **SUVmax** | Voxel le plus intense de la lésion | Paramètre de routine ; sensible au bruit | \n| **SUVpeak / SULpeak** | Moyenne sur une sphère ~1 cm³ centrée sur la zone la plus active | Plus reproductible ; **base de PERCIST** |\n| **SUL** | SUV normalisée à la **masse maigre (LBM)** : Act_VOI / [Act_injectée / LBM] | Recommandée par l'EANM (moins de biais lié à l'adiposité) |\n| **MTV** | Volume tumoral métabolique (volume au-dessus d'un seuil) | Charge tumorale ; valeur pronostique |\n| **TLG** | Total Lesion Glycolysis = **MTV × SUVmean** | Intègre volume et intensité |\n\n**(c) Quantification — réponse thérapeutique (PERCIST 1.0).** Les critères **PERCIST** (PET Response Criteria in Solid Tumors, Wahl et al. 2009) reposent sur le **SULpeak** de la lésion la plus active : **réponse métabolique partielle (PMR)** = baisse ≥ **30 %** du SULpeak (et baisse absolue ≥ 0,8 unité) ; **progression métabolique (PMD)** = hausse ≥ **30 %** du SULpeak ou apparition de nouvelles lésions hypermétaboliques typiques ; les catégories intermédiaires définissent la réponse complète (CMR) et la maladie stable (SMD).[15] La comparaison n'est valide qu'à **technique, délai et reconstruction identiques** (cf. §B8, §B9).\n\n**(d) Valeur pronostique dans le CBNPC.** Le **SUVmax** de la tumeur primitive est un facteur pronostique **indépendant** de survie dans le cancer bronchique non à petites cellules (méta-analyse ELCWP/IASLC) ; les seuils optimaux varient selon le contexte (de l'ordre de ≈ 5 en évaluation précoce post-radiothérapie stéréotaxique, ≈ 9–11 dans les stades avancés ou réséqués) et ne doivent pas être appliqués comme cut-offs universels.[21]",
+          "stats": [
+            {
+              "value": "OSEM + AC",
+              "label": "Reconstruction itérative + correction d'atténuation [10]"
+            },
+            {
+              "value": "± 30 %",
+              "label": "Seuil de réponse/progression SULpeak (PERCIST) [15]"
+            },
+            {
+              "value": "23–30 %",
+              "label": "Hausse de SUV au passage EARL1→EARL2 [3]"
+            },
+            {
+              "value": "SUL = masse maigre",
+              "label": "Normalisation EANM recommandée [10]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — « SUVmax > 2,5 = malin » : un repère obsolète",
+              "text": "Le seuil historique **SUVmax > 2,5** pour distinguer malin et bénin n'est **pas robuste isolément** : large chevauchement bénin/malin, dépendance à la glycémie, au délai de captation et à la calibration EARL. Aucune source actuelle ne le valide comme cut-off formel — il ne doit jamais remplacer l'analyse contextuelle et morphologique.[18]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — préférer le SUL/SULpeak au SUVmax pour le suivi",
+              "text": "Le **SUVmax** (un seul voxel) est très sensible au bruit statistique et au protocole de reconstruction. Pour évaluer la réponse, l'EANM et PERCIST privilégient le **SULpeak** (sphère ~1 cm³, normalisé à la masse maigre) : plus reproductible, moins biaisé par l'adiposité et la statistique de comptage.[10,15]"
+            }
+          ]
+        },
+        {
+          "title": "C11 - Aspect normal & variantes physiologiques",
+          "text": "Reconnaître la **biodistribution physiologique** du 18F-FDG est le préalable obligatoire à toute interprétation thoracique : la majorité des faux positifs naissent d'une captation normale ou variante prise pour une lésion. Le FDG suit la voie du glucose mais reste **piégé** intracellulairement (cf. §C12 pour la sémiologie tumorale), avec une élimination essentiellement **urinaire**.[1]\n\n**Captations physiologiques constantes (à connaître par cœur) :**\n\n| Territoire | Aspect normal | Conséquence pour la lecture |\n|---|---|---|\n| **Cortex cérébral** | Captation **intense** (le glucose est le substrat quasi exclusif du cerveau) | Rend la TEP-FDG **peu performante pour les métastases cérébrales** (Se ≈ **60 %**) → IRM de référence pour le M cérébral.[6] |\n| **Myocarde** | Captation **variable** (à jeun : faible et hétérogène ; post-prandial : intense) | Peut masquer une adénopathie médiastinale juxta-cardiaque ; expliquée par l'état métabolique. |\n| **Reins – uretères – vessie** | Captation par **élimination urinaire** | Activité pyélo-urétéro-vésicale physiologique ; vidange vésicale recommandée avant acquisition.[3] |\n| **Foie** | Captation **modérée et homogène** | Sert de **bruit de fond de référence** pour coter l'intensité d'un foyer (cf. §C12). |\n| **Tube digestif** (estomac, côlon) | Captation **variable**, parfois marquée | Faux positif digestif fréquent ; la TEMP-TDM… pardon, la **TEP-TDM** de localisation aide à rattacher au tube digestif. |\n| **Anneau de Waldeyer, glandes salivaires, moelle, rate** | Captation modérée physiologique | Majorée par la stimulation (G-CSF → moelle/rate). |\n\n**Variantes physiologiques piégeantes spécifiques au thorax :**\n- **Graisse brune** (régions cervicale, sus-claviculaire, paravertébrale, médiastinale) : captation **symétrique**, favorisée par le **froid** ; peut mimer ou masquer des adénopathies.[6] Prévention par le réchauffement du patient (cf. §C14).\n- **Captation musculaire** (cordes vocales en cas de phonation, muscles respiratoires/diaphragmatiques, paroi en cas d'effort) → respecter le **repos et le silence** pendant l'incubation.[3]\n- **Mésalignement TEP/TDM** des bases pulmonaires lié à la respiration, source d'artefact à distinguer d'une vraie lésion (cf. §C14).",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "Le **foie** est le repère interne universel de l'interprétation FDG : un foyer dont le SUVmax dépasse nettement le bruit de fond hépatique est suspect, tandis qu'une captation inférieure ou égale au foie est généralement bénigne. Cette logique « par rapport au foie et au médiastin » est l'ossature des échelles métaboliques (§C12) et impose un **SUVmax hépatique reproductible**, donc une glycémie maîtrisée et une calibration EARL à jour.[3]"
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du FDG : entrée par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable, qui sous-tend la biodistribution physiologique et la fixation tumorale."
+          }
+        },
+        {
+          "title": "C12 - Sémiologie & interprétation",
+          "text": "L'interprétation combine une **analyse visuelle** (foyer focal au-dessus du bruit de fond) et une **quantification** par le **SUV** (Standardized Uptake Value), rapport de la concentration d'activité lésionnelle à l'activité injectée normalisée au poids ; le **SUVmax** (voxel le plus intense) est le paramètre de routine.[3]\n\n**Méthode de lecture systématique :**\n1. Vérifier la **qualité technique** : glycémie au moment de l'injection, délai d'incubation (60 min, plage **55–75 min**), bruit de fond hépatique, harmonisation EARL.[3]\n2. Repérer la **tumeur primitive** (T) : siège, taille, SUVmax, rapport au médiastin/foie.\n3. Analyser systématiquement les **aires ganglionnaires** (N) station par station, en distinguant N1/N2/N3.\n4. Balayer les **sites métastatiques** (M) : os, surrénales, foie, plèvre, poumon controlatéral, ganglions sus-claviculaires.\n5. **Corréler chaque foyer à la TDM** de localisation (densité, contours, contexte inflammatoire).\n6. **Coter et conclure** en répondant à la question clinique (caractérisation ? stade TNM ? réponse ?).\n\n**Critères de positivité et métriques :**\n\n| Métrique | Définition | Usage |\n|---|---|---|\n| **SUVmax** | Voxel le plus intense de la lésion | Caractérisation, intensité, pronostic |\n| **SUVpeak / SULpeak** | Sphère ≈ 1 cm³ centrée sur la zone la plus active (SUL = normalisé à la masse maigre) | Plus reproductible ; base de **PERCIST**[15] |\n| **MTV** | Volume tumoral métabolique | Charge tumorale, contourage RT |\n| **TLG** | MTV × SUVmean (total lesion glycolysis) | Charge métabolique globale |\n\n**Valeur pronostique.** Le **SUVmax de la tumeur primitive** est un facteur pronostique indépendant de survie dans le CBNPC (cancer bronchique non à petites cellules), démontré par méta-analyse (ELCWP/IASLC) ; les seuils optimaux varient selon le contexte (≈ **5** en SBRT précoce, ≈ **9–11** en stades avancés ou réséqués) et ne constituent pas un cut-off universel.[21]",
+          "stats": [
+            {
+              "value": "SUVmax",
+              "label": "Paramètre quantitatif de routine"
+            },
+            {
+              "value": "55–75 min",
+              "label": "Plage du délai d'incubation"
+            },
+            {
+              "value": "± 30 %",
+              "label": "Seuil de réponse/progression PERCIST (SULpeak)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le « SUVmax > 2,5 = malin »",
+              "text": "Le seuil historique **SUVmax > 2,5** pour distinguer un nodule malin d'un nodule bénin est un repère **ancien et non robuste isolément** : large chevauchement bénin/malin, dépendance à la glycémie, au délai d'incubation et à la calibration EARL. Aucune recommandation actuelle ne le valide comme cut-off dur. Il faut intégrer l'aspect TDM, l'évolutivité et le contexte épidémiologique (zone d'endémie tuberculeuse) plutôt que se fier à un nombre."
+            },
+            {
+              "type": "info",
+              "title": "Point expert — échelle hépato-médiastinale et PERCIST",
+              "text": "En pneumologie, l'intensité d'un foyer se décrit par rapport au **médiastin** (bruit de fond vasculaire) et au **foie**, logique parente du score de Deauville utilisé en lymphome (1 = pas de fixation, 2 ≤ médiastin, 3 entre médiastin et foie, 4 modérément > foie, 5 nettement > foie) — **non transposable telle quelle au poumon** mais utile comme repère méthodologique des seuils.[20] Pour la réponse au traitement, les critères **PERCIST 1.0** s'appuient sur le **SULpeak** de la lésion la plus active : réponse partielle métabolique si baisse **≥ 30 %** (et ≥ 0,8 unité absolue), progression métabolique si hausse **≥ 30 %** ou nouvelle lésion hypermétabolique typique.[15]"
+            }
+          ]
+        },
+        {
+          "title": "C13 - Compte rendu structuré",
+          "text": "Le compte rendu d'une TEP-TDM au FDG dans le cancer du poumon doit être **standardisé, actionnable et orienté décision thérapeutique** (stade TNM, opérabilité, cible de biopsie). Trame recommandée :\n\n1. **Administratif** : identité, indication précise (caractérisation / bilan d'extension initial / réévaluation / récidive), antécédents pertinents.\n2. **Technique** : traceur (18F-FDG), **activité injectée**, glycémie au moment de l'injection, **délai d'incubation** (cible 60 min), champ exploré (vertex/base du crâne → racine des cuisses), type de TDM (faible dose vs diagnostique injectée), harmonisation **EARL**.[3]\n3. **Tumeur primitive (T)** : siège lobaire, dimensions TDM, **SUVmax**, rapports anatomiques (paroi, médiastin, vaisseaux).\n4. **Ganglions (N)** : description **station par station** (intensité, taille, latéralité), conclusion N0/N1/N2a-N2b/N3.\n5. **Métastases (M)** : sites (os, surrénales, foie, plèvre, poumon controlatéral, ganglions extra-thoraciques), avec mention explicite que **la TEP-FDG est peu sensible pour le cerveau** (renvoyer à l'IRM).[6]\n6. **Conclusion** : proposition de **stade TNM (IASLC 9e édition)**, foyer(s) à privilégier pour la preuve histologique, impact sur la résécabilité ; pour une réévaluation, **comparaison au précédent examen** (même délai, même protocole).\n\n**Lexique normalisé** : préférer « foyer hypermétabolique focal » à « hyperfixation suspecte » non qualifiée ; toujours préciser l'intensité **par rapport au médiastin et au foie** et donner le **SUVmax chiffré** des lésions clés.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — conclusion qui change la décision",
+              "text": "Une conclusion utile au RCP (réunion de concertation pluridisciplinaire) **désigne le foyer de plus haut rendement pour la biopsie** (souvent la station ganglionnaire la plus accessible en **EBUS** qui upstaderait le patient) et **statue sur l'opérabilité métabolique**. Un foyer médiastinal N2/N3 hypermétabolique **isolé** doit être signalé comme nécessitant une **preuve invasive** avant de récuser une chirurgie : la TEP ne remplace pas l'histologie (cf. §C14, faux positifs en zone d'endémie tuberculeuse)."
+            }
+          ]
+        },
+        {
+          "title": "C14 - Pièges, artefacts & faux positifs / négatifs",
+          "text": "L'erreur d'interprétation en TEP-FDG thoracique tient presque toujours à l'un de trois mécanismes : une **captation inflammatoire/infectieuse** prise pour une tumeur (faux positif), une **tumeur peu avide ou trop petite** (faux négatif), ou un **artefact technique**. Pour chaque piège : reconnaître la cause, l'aspect, et la parade.\n\n**Tableau récapitulatif faux positifs / faux négatifs :**\n\n| Type | Causes principales | Parade |\n|---|---|---|\n| **Faux positifs** | Sarcoïdose, **tuberculose**, anthracosilicose, aspergillose, histoplasmose, pneumopathies inflammatoires/infectieuses, remaniements post-radiques/post-chirurgicaux | Corrélation TDM, contexte, **preuve histologique** ; prudence accrue en zone d'endémie tuberculeuse[6] |\n| **Faux négatifs** | Lésions **< 8–10 mm** (résolution/effet de volume partiel), **adénocarcinome lépidique** (ex-bronchiolo-alvéolaire), verre dépoli, **tumeurs neuroendocrines bien différenciées** (carcinoïde typique) | Corréler à la TDM ; ne pas exclure une malignité sur la seule TEP[5] |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — Faux positifs inflammatoires (contexte d'endémie tuberculeuse)",
+              "text": "Cause : tout processus à forte composante macrophagique/granulomateuse capte intensément le FDG (sarcoïdose, **tuberculose**, anthracose, mycoses). Aspect : adénopathies médiastinales hypermétaboliques, parfois symétriques, mimant un N2/N3. Comment l'éviter : ne **jamais récuser une chirurgie** sur la seule TEP médiastinale → confirmer un N2/N3 suspect par **EBUS ou médiastinoscopie**. Le piège est particulièrement fréquent en contexte africain où la prévalence tuberculeuse abaisse la spécificité médiastinale.[6]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — Faux négatifs (tumeurs peu avides et petites lésions)",
+              "text": "Cause : faible expression des transporteurs GLUT (adénocarcinome lépidique, carcinoïde typique) ou taille sous le pouvoir de résolution. Aspect : nodule en **verre dépoli** ou lésion **< 8–10 mm** sans hypermétabolisme net. Comment l'éviter : intégrer la **morphologie TDM** et l'évolutivité ; une TEP négative **n'élimine pas** la malignité d'un nodule à risque.[5]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — Hyperglycémie & insuline",
+              "text": "Cause : compétition glucose/FDG (hyperglycémie) ou **injection récente d'insuline** redistribuant massivement le FDG vers le muscle. Aspect : bruit de fond musculaire/hépatique diffus élevé masquant les lésions, captation tumorale sous-estimée. Comment l'éviter : examen si **glycémie < 11 mmol/L (≈ 200 mg/dL)** ; **ne pas injecter d'insuline juste avant** ; reporter si glycémie ≥ 11 mmol/L.[3]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — Graisse brune & mésalignement respiratoire",
+              "text": "Cause : activation de la graisse brune par le froid ; mouvement respiratoire entre TEP et TDM. Aspect : captation **symétrique** cervico-thoracique/paravertébrale (graisse brune) ; **décalage** TEP/TDM aux bases pulmonaires et au diaphragme créant une fausse lésion ou une correction d'atténuation erronée. Comment l'éviter : **réchauffer** le patient ; recourir au **gating respiratoire** pour les lésions des bases ; toujours vérifier la **fusion** TEP/TDM avant de conclure.[6]"
+            }
+          ]
+        },
+        {
+          "title": "D15 · Dosimétrie",
+          "text": "Données de référence issues de la **CIPR 128** (ICRP Publication 128, 2015) et du RCP du ¹⁸F-FDG.[16,1] La dose efficace est dominée par l'élimination urinaire, et la **paroi vésicale est l'organe critique**.[16]\n\n| Paramètre | Valeur | Source |\n|---|---|---|\n| Dose efficace (adulte) | **0,019 mSv/MBq** (1,9 × 10⁻² mSv/MBq) | [16] |\n| Dose efficace (valeur historique RCP/FDA) | **0,027 mSv/MBq** | [1] |\n| Organe critique = paroi vésicale | **0,075 mGy/MBq** (7,5 × 10⁻² mGy/MBq) | [16] |\n| Dose à l'utérus non gravide | **4,7 mGy pour 259 MBq** (1,8 × 10⁻² mGy/MBq) | [9] |\n| Composante TEP pour ≈ 370 MBq | **≈ 7 mSv** (0,019 × 370) | [16] |\n\n**La dose totale d'un examen TEP-TDM dépend du protocole TDM associé**, qui contribue souvent plus que la composante TEP :\n\n| Protocole | Composante TDM | Dose efficace totale (TEP+TDM) | Source |\n|---|---|---|---|\n| TEP-TDM **standard** (TDM faible dose / repérage + correction d'atténuation) | **5,0 ± 1,0 mSv** | **≈ 14 ± 1,3 mSv** | [22] |\n| TEP-TDM **diagnostique** (TDM injecté pleine dose) | **15,4 ± 5,0 mSv** | **≈ 24,4 ± 4,3 mSv** (TDM ≈ 81 % de la dose) | [22] |\n\n**Modèle dosimétrique.** Le coefficient CIPR 128 repose sur un modèle biocinétique à compartiments (sang, cœur, cerveau, foie, poumons, reins, vessie, reste du corps), avec une hypothèse de volume urinaire initial de 100 mL et une première miction à 45 min.[16] Il convient de distinguer la **dose absorbée** (en Gy, par organe) de la **dose efficace** (en mSv, corps entier pondéré). Des modèles biocinétiques révisés proposent ≈ **0,017 mSv/MBq**, non encore réglementaires.[16]\n\n**Facteurs modulant la dose patient.** L'activité injectée (formule EANM fonction du poids et du temps d'acquisition par pas, cf. §B7), la fonction rénale, l'hydratation et la fréquence des mictions : une **hydratation abondante + miction avant l'acquisition** réduisent significativement la dose vésicale.[3,9] Les caméras numériques, le **TOF rapide (< 400 ps)** et les systèmes grand champ axial (total-body) permettent de **réduire l'activité d'un facteur ≥ 2** à qualité d'image égale, donc d'abaisser la dose patient.[3]\n\n**Pédiatrie.** Le ¹⁸F-FDG relève de la **classe B** de la carte de dose pédiatrique EANM : activité = valeur de référence (baseline) × facteur multiplicateur fonction du poids, avec une activité minimale.[13] Pour les systèmes modernes (PET/MR, PET/CT digital ou grand champ), une proposition récente abaisse la baseline à **10,7 MBq** (minimum **10 MBq**).[13] Les données EuroNet PHL-C2 confirment la possibilité de réduire encore les activités FDG injectées chez l'enfant.[14]\n\n**Mise en perspective.** La composante TEP d'un examen (≈ 4–7 mSv) est de l'ordre de 1–3 ans d'irradiation naturelle ; la TDM diagnostique injectée peut tripler la dose totale (≈ 24 mSv). La justification (HAS/SFMN) et l'optimisation de chaque composante (activité ET protocole TDM) sont donc indissociables.[23,22]",
+          "stats": [
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace adulte (CIPR 128) [16]"
+            },
+            {
+              "value": "≈ 7 mSv",
+              "label": "Composante TEP pour 370 MBq [16]"
+            },
+            {
+              "value": "≈ 14 mSv",
+              "label": "Total TEP-TDM faible dose [22]"
+            },
+            {
+              "value": "Paroi vésicale",
+              "label": "Organe critique [16]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — dose efficace vs dose totale",
+              "text": "Annoncer « la TEP-FDG délivre ≈ 7 mSv » est incomplet : c'est la **part TEP seule**. La dose réellement reçue par le patient dépend du **protocole TDM couplé** — de ≈ 14 mSv (TDM faible dose) à ≈ 24 mSv (TDM diagnostique injectée, où le scanner représente ≈ 81 % de la dose).[22] Choisir le niveau de TDM en fonction de la question clinique est le principal levier d'optimisation."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — abaisser la dose",
+              "text": "Sur les caméras **numériques / TOF rapide / total-body**, l'activité de ¹⁸F-FDG peut être réduite d'un facteur **≥ 2** à qualité d'image conservée, en suivant la procédure d'harmonisation EARL.[3] Conjugué à l'hydratation et aux mictions fréquentes (organe critique = vessie), c'est l'optimisation dosimétrique la plus efficace."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du 18F-FDG : entrée par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable, rétention intracellulaire — voie qui sous-tend l'élimination urinaire et la dosimétrie.",
+            "caption": "Fig. — Le piégeage du FDG explique sa biodistribution et la prééminence de la voie urinaire (organe critique : paroi vésicale)."
+          }
+        },
+        {
+          "title": "D16 · Radioprotection",
+          "text": "La radioprotection repose sur les trois principes réglementaires — **justification, optimisation (ALARA, *As Low As Reasonably Achievable*), limitation** — et se structure par **cible de protection**. Le patient injecté devient une **source de photons de 511 keV**, fortement pénétrants (couche de demi-atténuation ≈ 4,1 mm de plomb pour 511 keV), ce qui impose des mesures distinctes de celles des émetteurs gamma de basse énergie.[2,1]\n\n| Cible | Mesures clés | Source |\n|---|---|---|\n| **Personnel** | Blindage de seringue adapté aux 511 keV, **distance** (loi de l'inverse du carré) et **temps** minimisés au contact du patient injecté, dosimétrie passive + opérationnelle, zonage du radiopharmacie/salle d'injection/poste chaud. | [1,2] |\n| **Patient** | Justification (HAS/SFMN), optimisation de l'activité (formule EANM, EARL/TOF), **hydratation + miction avant acquisition** (réduit la dose vésicale, organe critique). | [3,16] |\n| **Entourage / public** | Patient « source » : éviter le **contact rapproché et prolongé avec les femmes enceintes et les jeunes enfants pendant quelques heures** post-injection (décroissance physique du ¹⁸F : période **109,8 min**). | [2,9] |\n| **Allaitement** | **Pas d'interruption nécessaire** (faible excrétion lactée), mais limiter le contact rapproché mère-enfant **≈ 12 h** (irradiation externe par la captation mammaire). | [9] |\n| **Grossesse** | Contre-indication relative ; bénéfice/risque ; dose utérine ≈ **4,7 mGy pour 259 MBq**. | [9] |\n\n**Décroissance et déchets.** La courte période du ¹⁸F (**≈ 110 min**) simplifie la gestion des effluents et déchets : une décroissance de quelques heures (≈ 10 périodes ≈ 18 h) réduit l'activité d'un facteur > 1000.[2] La traçabilité de l'activité (activimètre), la conduite en cas de contamination et le contrôle de l'absence de contamination des locaux suivent la procédure du service. Les consignes post-examen (hydratation, mictions fréquentes, distance vis-à-vis des proches sensibles) sont à remettre au patient et reprises dans la fiche patient (§0).",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation (× 2, à 180°) [1]"
+            },
+            {
+              "value": "≈ 4,1 mm Pb",
+              "label": "CDA pour 511 keV [2]"
+            },
+            {
+              "value": "≈ 110 min",
+              "label": "Période du 18F (gestion déchets) [2]"
+            },
+            {
+              "value": "≈ 12 h",
+              "label": "Contact rapproché limité si allaitement [9]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — émetteur de 511 keV",
+              "text": "Contrairement aux émetteurs gamma de basse énergie (¹²³I 159 keV, ⁹⁹ᵐTc 140 keV), le ¹⁸F émet des photons d'annihilation de **511 keV** très pénétrants (CDA ≈ 4,1 mm de plomb).[2] Le blindage de seringue doit être adapté, et la **distance** reste le levier le plus efficace au contact du patient injecté. La courte période (110 min) joue en faveur de la radioprotection de l'entourage."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — allaitement",
+              "text": "Au ¹⁸F-FDG, **l'allaitement n'a pas à être interrompu** (excrétion lactée négligeable) : le risque résiduel est l'**irradiation externe** par la captation mammaire physiologique. La consigne est donc de limiter le contact rapproché mère-enfant pendant ≈ **12 h**, et non d'arrêter l'allaitement.[9]"
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers ALARA : temps, distance, écran (blindage) — appliqués au patient injecté au 18F-FDG, source de photons de 511 keV.",
+            "caption": "Fig. — Temps / distance / écran : les trois leviers ALARA, déclinés pour le personnel et l'entourage face à une source de 511 keV."
+          }
+        },
+        {
+          "title": "D17 · Performances diagnostiques & comparaison",
+          "text": "La valeur diagnostique de la TEP-TDM au ¹⁸F-FDG dépend fortement de l'objectif (caractérisation, stadification N, recherche métastatique M) et de la taille lésionnelle. Globalement, elle **surclasse la TDM seule pour le bilan ganglionnaire et métastatique** et a un impact démontré sur la prise en charge chirurgicale.[4,5,19]\n\n**▸ Performances par indication**\n\n| Indication | Performance | Source |\n|---|---|---|\n| **Nodule pulmonaire solitaire** (caractérisation malin/bénin, > 8–10 mm) | Se **≈ 94 %**, Sp **71–86 %**, exactitude **86 %**, VPP **90 %**, VPN **85 %** | [4,5,18] |\n| **Staging ganglionnaire médiastinal (N)** — TEP-TDM | Se poolée **73–85 %** / Sp **79–91 %** / exactitude **86 %** | [4,5] |\n| Staging N — TDM seule (comparateur) | Se **61–74 %** / Sp **73–79 %** | [4,5] |\n| Staging N — limite | Se faible (**~50 %**) sur les tumeurs **T1** (micrométastases) | [5] |\n| **Staging T** (exactitude, Wever et al.) | TEP-TDM **86 %** vs TDM **68 %** vs TEP seule **46 %** | [5] |\n| **Métastases osseuses** | TEP-TDM Se **94,3 %** / Sp **98,8 %** vs scintigraphie osseuse Se **78 %** / Sp **97 %** | [4,5] |\n| **Métastases à distance (M)** occultes | Détectées chez **≈ 15 %** des patients ; modifie la prise en charge dans **20–30 %** des cas | [4,5] |\n| **Restaging / récidive** | Bonne Se/Sp, VPN élevée ; modifie la prise en charge jusqu'à **63 %** des patients | [4] |\n\n**▸ Limite cérébrale.** La captation corticale physiologique élevée du FDG rend la TEP **peu performante pour les métastases cérébrales** (Se ≈ **60 %**) → l'**IRM cérébrale** reste l'examen de référence pour le M cérébral.[6]\n\n**▸ Comparaison des modalités**\n\n| Modalité | Atouts | Limites |\n|---|---|---|\n| **TEP-TDM FDG** | Métabolique + anatomique, corps entier, supérieure pour N et M extra-cérébral | Faux positifs inflammatoires/infectieux ; faux négatifs < 8–10 mm et tumeurs peu avides |\n| **TDM** | Référence anatomique, mesure RECIST, résolution spatiale | Ne distingue pas tissu actif/séquelle ; Se médiastinale plus faible |\n| **IRM** | Référence pour le **cerveau**, extension pariétale/vasculaire | Non corps entier en routine |\n| **Scintigraphie osseuse** | Disponible, corps entier osseux | Surclassée par la TEP-TDM pour les métastases osseuses [4] |\n\n**▸ Valeur pronostique du SUVmax.** Le **SUVmax tumoral** a une valeur pronostique indépendante sur la survie dans le CBNPC (méta-analyse ELCWP/IASLC), avec des seuils optimaux variables selon le contexte (≈ 5 en SBRT précoce, ≈ 9–11 en stades avancés/réséqués).[21]",
+          "stats": [
+            {
+              "value": "94 % / 86 %",
+              "label": "Se / exactitude nodule solitaire [4,5]"
+            },
+            {
+              "value": "86 %",
+              "label": "Exactitude staging N (TEP-TDM) [5]"
+            },
+            {
+              "value": "94 % / 99 %",
+              "label": "Se / Sp métastases osseuses [5]"
+            },
+            {
+              "value": "~60 %",
+              "label": "Se métastases cérébrales (limite) [6]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — faux positifs en zone d'endémie tuberculeuse",
+              "text": "La spécificité ganglionnaire médiastinale chute en contexte de **tuberculose**, sarcoïdose, anthracosilicose, histoplasmose, aspergillose ou pneumopathie inflammatoire — particulièrement fréquent en zone d'endémie tuberculeuse (contexte africain).[6] Un foyer hypermétabolique N2/N3 doit être **confirmé par EBUS ou médiastinoscopie** avant de récuser une chirurgie."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — le seuil « SUVmax > 2,5 = malin »",
+              "text": "Ce repère historique n'est **pas un cut-off robuste isolément** : large chevauchement bénin/malin, dépendance à la glycémie, au délai de captation et à la calibration EARL.[3] Aucune source actuelle ne le valide comme seuil dur. Le SUVmax s'interprète dans son contexte (taille, morphologie TDM, harmonisation), jamais seul."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence : annihilation du positon du 18F, émission de deux photons de 511 keV à 180 degrés, ligne de réponse entre deux détecteurs de la couronne TEP.",
+            "caption": "Fig. — La détection en coïncidence (deux photons de 511 keV à 180°) fonde la résolution et donc les performances de la TEP."
+          }
+        },
+        {
+          "title": "D18 · Place dans la stratégie & algorithmes décisionnels",
+          "text": "**Cadre des recommandations.** La réalisation de l'examen suit l'**EANM v3.0** (procedure guidelines for tumour imaging, 1ᵉʳ déc. 2025), qui actualise la v2.0 de 2015, et le standard conjoint **SNMMI/EANM**.[3] La stadification s'appuie sur la classification **TNM IASLC 9ᵉ édition**, applicable depuis **janvier 2025**, dont la nouveauté majeure est la subdivision **N2a (mono-station) / N2b (multi-stations)**.[8] Le référentiel **SFMN/CNP-MN FDG en oncologie v2.0** encadre les indications en France.[23]\n\n**▸ Indications recommandées (CBNPC).**\n- **Caractériser un nodule pulmonaire solide ≥ 8 mm** indéterminé.[23]\n- **Bilan d'extension initial** d'un CBNPC en l'absence de métastase à distance déjà prouvée (N médiastinal + M à distance en une acquisition corps entier).[23]\n- Évaluation de la **réponse thérapeutique** (critères **PERCIST 1.0**, cf. §C/§D évaluation), **délimitation du volume cible** de radiothérapie, **restaging**.[15,5]\n- Avis d'experts : patients **oligométastatiques** candidats à un traitement local ; bilan d'extension du **carcinome à petites cellules (CBPC)**.[23]\n\n**▸ Séquençage / arbre décisionnel (CBNPC).**\nSuspicion → TDM thoracique → **nodule indéterminé ≥ 8 mm** → **TEP-TDM FDG** (caractérisation + extension N/M) →\n- si **N2/N3 hypermétabolique** → **confirmation invasive (EBUS/médiastinoscopie)** avant de récuser la chirurgie ;\n- si **M suspecté** extra-cérébral → corrélation/biopsie ; **cérébral** → **IRM cérébrale** (la TEP est peu sensible, §D17) ;\n- si bilan négatif → chirurgie à visée curative.\n\n**▸ Impact clinique démontré (essais randomisés).**\n\n| Essai | Résultat | Source |\n|---|---|---|\n| **PLUS trial** (van Tinteren, *Lancet* 2002) | Thoracotomies futiles **41 % → 21 %** (39/96 vs 19/92 ; réduction relative **51 %**, p = 0,003) ; **upstaging correct 13,8 % vs 6,8 %** (p = 0,046) | [19] |\n| **Fischer et al.** (*NEJM* 2009, PET-CT) | Thoracotomies futiles **42 % → 21 %** (38/91 vs 21/98) ; ≈ **1 thoracotomie futile évitée pour 5 TEP-TDM** ; pas de différence de survie globale (p = 0,29) | [24,19] |\n\n**▸ Principe stratégique.** La TEP-FDG **ne remplace pas la preuve histologique** : un foyer hypermétabolique doit, quand c'est possible, être confirmé par biopsie. Sa valeur tient à la **réduction des thoracotomies inutiles** par démasquage de métastases occultes, et à l'optimisation du contourage en radiothérapie.[24,5]",
+          "steps": [
+            {
+              "title": "1 — Détection (TDM)",
+              "text": "Nodule pulmonaire indéterminé ≥ 8 mm repéré sur la TDM thoracique."
+            },
+            {
+              "title": "2 — Caractérisation + extension (TEP-TDM FDG)",
+              "text": "Estimation du risque de malignité (SUVmax dans son contexte) ET bilan d'extension N/M corps entier en une acquisition.[23]"
+            },
+            {
+              "title": "3 — Confirmation du N",
+              "text": "Tout N2/N3 hypermétabolique → preuve invasive (EBUS, médiastinoscopie) avant de récuser une chirurgie.[5]"
+            },
+            {
+              "title": "4 — Complément cérébral",
+              "text": "IRM cérébrale pour le M cérébral (TEP peu sensible, §D17).[6]"
+            },
+            {
+              "title": "5 — Décision",
+              "text": "Chirurgie curative si bilan négatif ; sinon traitement adapté au stade TNM 9ᵉ éd. (N2a/N2b).[8]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "41 % → 21 %",
+              "label": "Thoracotomies futiles (PLUS trial) [19]"
+            },
+            {
+              "value": "1 pour 5",
+              "label": "Thoracotomie futile évitée / TEP (Fischer) [24]"
+            },
+            {
+              "value": "≥ 8 mm",
+              "label": "Seuil de caractérisation d'un nodule [23]"
+            },
+            {
+              "value": "N2a / N2b",
+              "label": "Nouveauté TNM 9ᵉ éd. (2025) [8]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Mise à jour — TNM 9ᵉ édition (2025)",
+              "text": "Depuis janvier 2025, la stadification ganglionnaire distingue **N2a (atteinte d'une seule station médiastinale)** de **N2b (plusieurs stations)**.[8] La cartographie ganglionnaire de la TEP-TDM doit donc préciser le **nombre de stations** atteintes, et non seulement la présence d'une atteinte N2."
+            }
+          ]
+        },
+        {
+          "title": "D19 · Examens apparentés & variantes",
+          "text": "La TEP-TDM au ¹⁸F-FDG s'inscrit dans un réseau d'examens dont elle est le pivot métabolique pour le cancer du poumon ; les variantes de protocole et les modalités voisines se choisissent selon la question clinique.\n\n| Examen apparenté / variante | Cible ou différence | Quand le préférer |\n|---|---|---|\n| **TEP-TDM FDG — TDM faible dose** | Correction d'atténuation + repérage anatomique | Bilan métabolique standard, dose minimisée (≈ 14 mSv total) [22] |\n| **TEP-TDM FDG — TDM diagnostique injectée** | Scanner pleine dose avec produit de contraste | Quand une caractérisation anatomique fine est requise (≈ 24 mSv total) [22] |\n| **TEP-IRM FDG** | Couplage à l'IRM (meilleur contraste tissu mou, dose réduite) | Extension pariétale/médiastinale, populations à dose limitée [3] |\n| **TDM thoracique** | Imagerie anatomique, RECIST | Détection initiale du nodule, suivi de taille sous traitement |\n| **IRM cérébrale** | Référence du M cérébral | Recherche de métastases cérébrales (TEP peu sensible, Se ≈ 60 %) [6] |\n| **Scintigraphie osseuse** | Os, corps entier | Largement surclassée par la TEP-TDM pour le M osseux [4] |\n| **EBUS / médiastinoscopie** | Preuve histologique ganglionnaire | Confirmation de tout N2/N3 hypermétabolique avant chirurgie [5] |\n\n**Variantes techniques d'acquisition.** Le **gating respiratoire** est recommandé pour les lésions thoraciques basales/diaphragmatiques afin de réduire le mésalignement TEP/TDM lié à la respiration.[5] Les caméras **numériques, TOF rapide (< 400 ps)** et **grand champ axial (total-body)** autorisent une réduction d'activité ≥ 2 et/ou un raccourcissement de l'acquisition à qualité égale.[3] Le délai de captation doit être **reproduit à ± 10 min** entre deux examens d'un même suivi pour comparer les SUV.[3]\n\n**Traceurs apparentés (poumon et au-delà).** Au-delà du FDG, d'autres traceurs TEP couvrent les tumeurs **peu avides au FDG** (adénocarcinome lépidique, carcinoïde typique) ou des cibles spécifiques : les analogues de la **somatostatine (⁶⁸Ga-DOTATATE)** pour les composantes neuroendocrines bien différenciées sont préférés quand le FDG est négatif sur une tumeur à différenciation neuroendocrine. Le choix reste guidé par l'histologie et la question posée.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — reproductibilité du suivi",
+              "text": "Pour qu'un SUVmax soit comparable d'un examen à l'autre dans un suivi thérapeutique, trois conditions : **même délai de captation (± 10 min)**, **même harmonisation (EARL)** et idéalement **même machine**.[3] À défaut, une variation de SUV peut refléter la technique plutôt que la biologie tumorale — piège classique d'interprétation de la réponse (PERCIST)."
+            }
+          ],
+          "figure": {
+            "figureRef": "VQ_LUNGS",
+            "alt": "Schéma des poumons servant de repère anatomique pour situer la TEP-TDM FDG parmi les modalités d'imagerie thoracique apparentées.",
+            "caption": "Fig. — Repère pulmonaire : la TEP-TDM FDG, pivot métabolique articulé à la TDM, l'IRM cérébrale et la preuve invasive ganglionnaire."
+          }
+        },
+        {
+          "title": "E20 - Cas cliniques commentes / Iconographie",
+          "text": "Trois vignettes commentees pas-a-pas (contexte -> images -> analyse -> conclusion) couvrant un cas typique de bilan d'extension, un piege de specificite mediastinale et une evaluation de reponse therapeutique. Chaque cas renvoie aux sections techniques concernees.",
+          "steps": [
+            {
+              "title": "Cas 1 - CBNPC : bilan d'extension initial et upstaging M occulte",
+              "text": "*Contexte* : homme de 64 ans, tabagique, masse du lobe superieur droit biopsiee (adenocarcinome). TDM thoraco-abdominale : tumeur de 4 cm, adenopathies hilaires homolaterales, pas de metastase visible. *Images* : TEP-TDM au **18F-FDG** corps entier (delai 60 min, glycemie 5,8 mmol/L) : hyperfixation tumorale intense, fixation d'une adenopathie mediastinale controlaterale (station 4L) et d'un foyer surrenalien gauche metaboliquement actif. *Analyse* : la TEP demasque une atteinte N3 et une metastase surrenalienne occulte, non vues en TDM ; rappel que la TEP-TDM detecte des metastases extra-thoraciques occultes chez environ **15 %** des patients [6]. La fixation N3 doit etre confirmee avant de recuser une chirurgie (cf. cas 2). *Conclusion* : upstaging cN1cM0 -> cN3cM1b ; **contre-indication chirurgicale**, orientation vers un traitement systemique. Illustre l'apport pivot du corps entier en une acquisition (cf. E21) et reduit le risque de thoracotomie inutile (cf. essais PLUS/Fischer)."
+            },
+            {
+              "title": "Cas 2 - Faux positif mediastinal en zone d'endemie tuberculeuse",
+              "text": "*Contexte* : femme de 52 ans, nodule du lobe inferieur gauche de 18 mm, region d'endemie tuberculeuse. *Images* : TEP-TDM : nodule moderement avide, et surtout plusieurs adenopathies mediastinales bilaterales (stations 4R, 7) **intensement hypermetaboliques**. *Analyse* : un staging N base sur la seule TEP conduirait a un surstadage. Les granulomatoses (tuberculose, sarcoidose, anthracosilicose) sont des causes classiques de faux positifs ganglionnaires, particulierement frequentes en contexte africain [5,6], ce qui abaisse la specificite mediastinale (Sp poolee de l'ordre de **79 %** [4]). Une confirmation invasive (EBUS / mediastinoscopie) est requise avant toute decision therapeutique. *Conclusion* : EBUS des stations fixantes -> granulome tuberculeux (N0 oncologique) ; **maladie restee operable**. Souligne que la TEP-FDG ne remplace jamais la preuve histologique d'un foyer suspect (cf. E22)."
+            },
+            {
+              "title": "Cas 3 - Evaluation de la reponse metabolique (criteres PERCIST)",
+              "text": "*Contexte* : CBNPC stade IV sous immunotherapie, TEP-TDM de reference puis de reevaluation a 3 cycles, **meme delai de captation reproduit a +/- 10 min** et meme camera [3,10]. *Images* : sur la lesion-cible la plus active, le **SULpeak** (pic normalise a la masse maigre, sur une sphere d'environ 1 cm3) passe d'une valeur de reference a une valeur abaissee de **42 %**. *Analyse* : par PERCIST 1.0, une reponse metabolique partielle (PMR) requiert une baisse du SULpeak >= **30 %** (et une diminution absolue >= 0,8 unite) ; une progression (PMD) correspond a une hausse >= **30 %** ou a de nouvelles lesions hypermetaboliques typiques [15]. La baisse de 42 % sans nouvelle lesion classe le patient en **PMR**. *Conclusion* : reponse metabolique partielle confirmee ; poursuite du traitement. Rappelle que la comparaison n'est valide qu'a technique et delai constants (cf. piege E22)."
+            }
+          ],
+          "stats": [
+            {
+              "value": "~15 %",
+              "label": "Metastases extra-thoraciques occultes demasquees par la TEP-TDM [6]"
+            },
+            {
+              "value": ">= 30 %",
+              "label": "Variation de SULpeak (PERCIST) definissant reponse ou progression [15]"
+            },
+            {
+              "value": "60 min",
+              "label": "Delai de captation de reference, a reproduire a +/- 10 min au suivi [3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - Reproductibilite du suivi",
+              "text": "Une evaluation de reponse n'a de valeur que si delai de captation (60 min, plage 55-75 min), glycemie, activite injectee et camera/protocole de reconstruction sont **stables entre les examens** ; la metrique recommandee est le SULpeak (sphere d'environ 1 cm3 normalisee a la masse maigre), plus reproductible que le SUVmax [3,15]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schema de la detection en coincidence : le positon emis par le 18F s'annihile et produit deux photons de 511 keV emis a 180 degres, captes par la couronne de detecteurs qui definit la ligne de reponse.",
+            "caption": "Fig. - Principe de coincidence sous-tendant la quantification (SUV/SUL) utilisee pour le staging et l'evaluation de reponse."
+          }
+        },
+        {
+          "title": "E21 - Points cles / a retenir",
+          "text": "Synthese haut rendement : chiffres-cles, seuils et pieges majeurs de la TEP-TDM au 18F-FDG dans le cancer du poumon.",
+          "list": [
+            "**18F-FDG = analogue du glucose** : capte par les transporteurs **GLUT** (surtout GLUT-1), phosphoryle par l'hexokinase en FDG-6-phosphate non metabolisable -> **piegeage metabolique** dans les cellules a glycolyse accrue (effet Warburg) [1].",
+            "Physique du **fluor-18** : periode **109,8 min** (~110 min), emission **beta+ (96,73 %)**, deux photons d'annihilation de **511 keV** a 180 degres detectes en coincidence [1].",
+            "Preparation : **jeune >= 4 h**, eviter l'effort physique **>= 6 h** avant, prehydratation (~1 L d'eau dans les 2 h), captation a **60 min** (plage 55-75 min) ; **pas d'insuline juste avant** [3].",
+            "**Glycemie** : examen realisable si **< 11 mmol/L (200 mg/dL)** en clinique ; viser **7-8,3 mmol/L (126-150 mg/dL)** pour la quantification/recherche [3].",
+            "Activite EANM v2.0 : **FDG (MBq) = 14 x poids (kg) / duree par pas (min)** si recouvrement <= 30 % (coefficient 7 si > 30 %), soit environ **2,5-5 MBq/kg** chez l'adulte ; reduction possible d'un facteur >= 2 sur les systemes numeriques/TOF/grand champ [3].",
+            "Caracterisation du **nodule pulmonaire solitaire** (> 8-10 mm) : **Se ~94 %**, Sp ~86 % ; performance limitee en dessous de 8-10 mm [5,7,18].",
+            "**Staging ganglionnaire N** : TEP-TDM superieure a la TDM seule (Se ~85 % / Sp ~90 % vs 61 % / 79 %) ; **Se faible (~50 %)** sur tumeurs T1 -> confirmation invasive (EBUS/mediastinoscopie) si N2/N3 suspecte [4,5].",
+            "**Bilan M** : detection osseuse (Se ~94 % vs scintigraphie ~78 %) et metastases occultes ; modifie la prise en charge chez **20-30 %** des patients [4,6].",
+            "Impact clinique : **essai PLUS** thoracotomies futiles **41 % -> 21 %** (p = 0,003) ; **Fischer (NEJM 2009)** environ **1 thoracotomie futile evitee pour 5 TEP-TDM** [19,24].",
+            "**Stadification TNM IASLC 9e edition** (applicable depuis janvier 2025) : nouveaute = subdivision **N2a / N2b** (atteinte mono- vs multi-station) [8].",
+            "Reponse therapeutique : criteres **PERCIST 1.0** sur le **SULpeak**, seuil de variation **>= 30 %** (PMR/PMD), a delai et technique constants [15].",
+            "**Faux positifs** (zones d'endemie ++) : tuberculose, sarcoidose, anthracosilicose, pneumopathies inflammatoires/infectieuses [5,6].",
+            "**Faux negatifs** : lesions **< 8-10 mm**, adenocarcinome **lepidique** / verre depoli, **carcinoides bien differencies** (faible avidite) [5,7].",
+            "Limite cerebrale : captation corticale physiologique elevee -> TEP peu performante pour les metastases cerebrales -> **IRM de reference** pour le M cerebral [6].",
+            "Dosimetrie (ICRP 128) : dose efficace **0,019 mSv/MBq**, **organe critique = paroi vesicale** (~7,5 x 10^-2 mGy/MBq) ; composante TEP ~**7 mSv** pour 370 MBq, total TEP-TDM standard ~**14 mSv** [16,22]. Hydratation + miction reduisent la dose vesicale."
+          ],
+          "stats": [
+            {
+              "value": "109,8 min",
+              "label": "Periode physique du 18F [1]"
+            },
+            {
+              "value": "~94 %",
+              "label": "Sensibilite TEP pour le nodule pulmonaire solitaire [5,7]"
+            },
+            {
+              "value": "41 % -> 21 %",
+              "label": "Thoracotomies futiles, essai PLUS (p = 0,003) [19]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace 18F-FDG (ICRP 128) [16]"
+            }
+          ]
+        },
+        {
+          "title": "E22 - FAQ & pieges d'examen",
+          "text": "**La TEP-FDG peut-elle affirmer la malignite d'un nodule ?** Non. Le repere historique << SUVmax > 2,5 = malin >> n'est **pas un cut-off robuste isolement** : il depend de la glycemie, du delai de captation et de la calibration (harmonisation EARL), avec chevauchement benin/malin [3]. Un foyer suspect doit etre confirme histologiquement chaque fois que possible.\n\n**Pourquoi un jeune et un controle glycemique ?** Le glucose endogene **entre en competition** avec le FDG (memes transporteurs GLUT) ; une hyperglycemie degrade le contraste tumoral. D'ou le jeune >= 4 h et le seuil de **11 mmol/L (200 mg/dL)** en clinique, plus strict (7-8,3 mmol/L) pour la quantification [3].\n\n**Pourquoi ne pas corriger l'hyperglycemie par de l'insuline juste avant ?** L'insuline provoque une **redistribution musculaire massive du FDG** qui masque les lesions ; mieux vaut reprogrammer l'examen [3].\n\n**Pourquoi un delai de captation de 60 min, reproduit au suivi ?** La fixation tumorale augmente avec le temps ; comparer deux examens a delais differents fausse la mesure de reponse. Le delai de reference est **60 min (55-75 min)**, a reproduire a **+/- 10 min** en reevaluation [3].\n\n**SUVmax, SULpeak, MTV, TLG : que choisir ?** Le **SUVmax** (voxel le plus intense) est simple mais sensible au bruit ; le **SULpeak** (sphere ~1 cm3 normalisee a la masse maigre) est plus reproductible et sert de base a PERCIST [15]. MTV (volume metabolique) et TLG (MTV x SUVmean) ont une valeur pronostique. L'harmonisation **EARL** est indispensable en multicentrique : le passage EARL1 -> EARL2 fait monter le SUV de **23-30 %** [10].\n\n**Quelles sont les causes classiques de faux positifs en QCM ?** Tuberculose, sarcoidose, anthracosilicose, aspergillose/histoplasmose, pneumopathies inflammatoires - a connaitre en zone d'endemie tuberculeuse [5,6].\n\n**Quelles tumeurs sont faussement negatives ?** Lesions **< 8-10 mm** (resolution/effet de volume partiel), adenocarcinome **lepidique** et verre depoli, **carcinoides bien differencies** [5,7].\n\n**Pourquoi la TEP est-elle insuffisante pour le cerveau ?** La captation corticale physiologique elevee noie les metastases ; l'**IRM cerebrale** reste l'examen de reference du M cerebral [6].\n\n**Quel artefact thoracique surveiller ?** Le **mesalignement TEP/TDM** par mouvement respiratoire aux bases pulmonaires et au diaphragme (gating respiratoire utile), et la captation de **graisse brune** favorisee par le froid (piece chauffee/couverture) [3].\n\n*(Quiz interactif (E23) et fiche de revision telechargeable (E24) : fonctionnalites de la plateforme a activer.)*",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - << SUVmax > 2,5 = malin >>",
+              "text": "Ce seuil ancien n'est **pas un cut-off formel actuel** : aucune source recente ne le valide isolement (dependance a la glycemie, au delai, a la calibration EARL ; chevauchement benin/malin). Ne jamais conclure a la malignite sur le seul SUVmax [3]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - Surstadage N en zone d'endemie",
+              "text": "En contexte tuberculeux/granulomateux, des adenopathies mediastinales intensement avides peuvent etre **benignes**. Toute fixation N2/N3 qui change la decision therapeutique doit etre **confirmee par EBUS ou mediastinoscopie** avant de recuser une chirurgie [4,5,6]."
+            }
+          ]
+        },
+        {
+          "title": "E25 - References & liens sortants types",
+          "text": "**Sources & References** (datees, citees [n] dans le corps de l'article) : DailyMed/FDA - Fludeoxyglucose F 18 (pharmacologie, physique, dosimetrie) [1] ; Ionactive - donnees de radioprotection du 18F [2] ; **EANM tumour imaging v3.0** (Boellaard et al., 2025) [3] ; Rankin, PET/CT staging NSCLC (Cancer Imaging 2008) [4] ; Farsad, FDG PET/CT staging lung cancer (2020) [5] ; Monteil, TEP dans le cancer du poumon stade III (Onco Nouvelle-Aquitaine, 2018) [6] ; Optimal timing FDG-PET/CT NSCLC (BMC Pulm Med 2021) [7] ; **TNM 9e edition** - guide radiologues (RadioGraphics 2024) [8] ; EANM/SNMMI guideline FDG inflammation/infection (Jamar, J Nucl Med 2013) [9] ; **EANM tumour imaging v2.0** (Boellaard, Eur J Nucl Med Mol Imaging 2015) [10] ; Production cyclotron du 18F - 18O(p,n)18F [11] ; Synthese et CQ du 18F-FDG (Yu, 2006) [12] ; Carte de dose pediatrique EANM - effet des technologies modernes (2022) [13] ; EuroNet PHL-C2 - mise a jour de la carte pediatrique FDG (Tran-Gia, 2023) [14] ; **PERCIST 1.0** (Wahl et al., J Nucl Med 2009) [15] ; **ICRP Publication 128** (Mattsson et al., 2015) [16] ; EANM tumour imaging v1.0 (Boellaard, 2010) [17] ; Parametres TEP/TDM et malignite du nodule solitaire (Cancers 2023) [18] ; PET/CT staging NSCLC incl. PLUS trial & Fischer (Chao & Zhang, 2012) [19] ; Deauville vs delta-SUVmax en lymphome (Rekowski, J Nucl Med 2021) [20] ; SUVmax pronostique dans le CBNPC - meta-analyse ELCWP/IASLC (J Thorac Oncol) [21] ; Dosimetrie examen-specifique TEP/TDM (Quinn, BMC Med Imaging 2016) [22] ; **CNP-MN/SFMN - FDG en oncologie v2.0** (2022) [23] ; Fischer et al., Preoperative staging with PET-CT (NEJM 2009) [24].\n\n**Carte de liens (reseau de l'article)** - *Traceur* : 18F-FDG. *Maladies* : cancer bronchique non a petites cellules (CBNPC), carcinome bronchique a petites cellules (CBPC), nodule pulmonaire solitaire. *Examens lies* : TDM thoracique, IRM cerebrale (M cerebral), scintigraphie osseuse (comparateur osseux), EBUS / mediastinoscopie (confirmation N), 68Ga-DOTATATE et 18F-FDOPA (tumeurs neuroendocrines/carcinoides peu avides au FDG). *Scores* : PERCIST 1.0, TNM IASLC 9e edition. *Dernature mise a jour : juin 2026 - version de travail (profil medecin nucleaire).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Actualisation des recommandations",
+              "text": "Les references du cadre normatif a privilegier sont desormais l'**EANM tumour imaging v3.0 (2025)** [3] pour le protocole et la stadification **TNM IASLC 9e edition (janvier 2025)** [8], qui remplacent respectivement l'EANM v2.0 (2015) [10] et la TNM 8e edition."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
