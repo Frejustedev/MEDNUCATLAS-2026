@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section B2 (Conduite pratique femme allaitante), liste 'Aucune interruption'",
+    "problem": "Coquille isotopique : « la grande majorité des examens ⁹⁵ᵐTc diagnostiques courants ». Le métastable utilisé en médecine nucléaire est le ⁹⁹ᵐTc, pas le ⁹⁵ᵐTc (qui n'existe pas en pratique clinique). Erreur typographique qui pourrait semer la confusion chez un lecteur débutant.",
+    "fix": "Remplacer « ⁹⁵ᵐTc » par « ⁹⁹ᵐTc »."
+  },
+  {
+    "severity": "minor",
+    "where": "Tableaux d'interruption d'allaitement — pertechnétate, comparaison §A3/B2/D1/E1 vs Recherche 1 §7",
+    "problem": "Incohérence interne sur la durée d'interruption du ⁹⁹ᵐTc-pertechnétate. Le corps de l'article (A3, B2, D1, E1) retient uniformément « 12–24 h (≈ 4 h possible pour 185 MBq) », ce qui est aligné sur ABM #31 et correct. Mais l'étalon Recherche 1 §7 mentionnait « 4–24 h ; 4 h pour 185 MBq ; 12 h pour 1100 MBq ». La borne basse de 4 h pour les fortes activités n'est pas reprise et la fourchette est resserrée à 12–24 h. Ce n'est pas faux (12–24 h est l'intervalle ABM #31), mais l'harmonisation masque que de très faibles activités peuvent ne nécessiter que ~4 h. Pas d'erreur clinique dangereuse (l'article est plus conservateur).",
+    "fix": "Optionnel : préciser que la borne dépend de l'activité (≈ 4 h pour 185 MBq, jusqu'à 24 h pour les fortes activités) pour cohérence avec la source ABM #31 / ICRP 106."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A2 et figureAlt/texte mentionnant la captation iodée fœtale 'dès ~8 SA' vs '10–13 SA'",
+    "problem": "Flottement sur le seuil de captation thyroïdienne fœtale : le texte oscille entre « 10ᵉ–13ᵉ semaine » (valeur principale, correcte) et, en C1, « une exposition iodée avant la 8ᵉ–10ᵉ semaine n'irradie pas électivement la thyroïde fœtale », puis le critère KI 'terme > 8 semaines'. La littérature (ICRP, HPS) situe le début de captation/organification à 10–12 SA ; le chiffre de 8 SA pour le KI provient de la FAQ ASNR mais crée une apparente discordance avec le seuil de 10–13 SA répété ailleurs. Pourrait prêter à confusion sur le terme exact à partir duquel agir.",
+    "fix": "Harmoniser : indiquer clairement que la captation devient significative à 10–13 SA, et que le seuil pratique de 8 SA pour l'administration de KI est une marge de sécurité (par excès), en le présentant explicitement comme tel."
+  },
+  {
+    "severity": "minor",
+    "where": "Section §7/B2 — Tl-201 interruption d'allaitement « ~2 semaines »",
+    "problem": "L'article (sourcé ICRP 84) retient ~2 semaines d'interruption pour le ²⁰¹Tl-chlorure. Les recommandations cliniques plus récentes (ABM #31, LactMed) retiennent plutôt ~4 jours (96 h), l'interruption de 2 semaines étant une valeur ICRP 84 historiquement conservatrice. La valeur citée n'est donc pas fausse au regard de sa source mais est nettement supérieure aux recommandations actuelles couramment appliquées, ce qui peut conduire à un sevrage prolongé non nécessaire.",
+    "fix": "Mentionner la fourchette : ~2 semaines (ICRP 84, conservateur) à ~4 jours (ABM #31 / LactMed, pratique actuelle), en signalant l'évolution des recommandations."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [7] — Leide-Svegborn EJNMMI 2016 (sections A2, B2, D1, E2)",
+    "problem": "The bibliographic entry cites the article as '43(5):808' but the actual page range is 808-821. Also, section A2 and B2 state the study included '53 patientes' while the document's source list in some places and the PubMed abstract describe 53 breastfeeding patients (consistent). The single page citation '808' is the article start page and is correct, but no end page is given. This is a cosmetic incompleteness, not a fabrication — title, authors, journal, volume, year and PMID all verified exact.",
+    "fix": "Optionally complete the page range to 808-821 for the reference in E2 and the source list; no factual correction needed."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [2] EANM Paediatric Dosage Card title ('Version 5.7.2016')",
+    "problem": "The PDF metadata shows the file as the 2016 dosage card corrected in Jan 2017; the label 'Version 5.7.2016' is plausible EANM versioning but could not be confirmed verbatim from the PDF metadata (which only exposed 'EANM_2016_DosageCard'). URL and document identity are verified genuine.",
+    "fix": "Confirm the exact version string against the EANM card footer; if uncertain, cite simply as 'EANM Paediatric Dosage Card (2016)'."
+  }
+]
