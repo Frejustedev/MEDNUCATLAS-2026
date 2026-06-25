@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections A5 et D18 — essai AHL2011 : \"PET-2-positifs SSP à 4 ans 70,7 % vs 90,4 % (négatifs)\"",
+    "problem": "Le chiffre 70,7 % est dans la littérature un taux de SSP à 3 ANS (et non à 4 ans) pour les PET-2 positifs de l'AHL2011, et le comparateur des PET-2 négatifs publié est ~91,8 % (analyse finale ASCO 2018 / Lancet Oncol 2019), pas 90,4 %. La fiche étalon fournie reprend elle aussi cette formulation \"à 4 ans / 90,4 %\", mais le timepoint et le chiffre du bras négatif sont imprécis par rapport à la source primaire. Vérifié via Casasnovas AHL2011 (ASCO 2018, abstr. 7503 ; Lancet Oncol 2019).",
+    "fix": "Reformuler en \"SSP à 3 ans 70,7 % (PET-2 positif) vs ~91,8 % (PET-2 négatif)\" en citant l'analyse finale, ou retirer le chiffre du bras négatif si la source exacte n'est pas confirmée. Aligner aussi le \"SSP à 5 ans 85,7 %\" du bras expérimental sur le chiffre de l'analyse finale (≈85,4 % en 2019) plutôt que sur l'abstract Blood 2015."
+  },
+  {
+    "severity": "minor",
+    "where": "Incohérence interne sur la proportion de PET-2 négatifs dans RATHL : \"> 80 %\" (A1, A2, carte d'identité, infobox A5) vs \"83,7 %\" (texte A5, D18, A21)",
+    "problem": "La proportion de patients PET-2 négatifs (Deauville 1-3) dans RATHL est exprimée tantôt par \"> 80 %\", tantôt par \"83,7 %\". Les deux sont compatibles avec la littérature (≈84 %) et non contradictoires, mais l'oscillation entre une valeur arrondie vague et une valeur précise nuit à la cohérence.",
+    "fix": "Uniformiser sur la valeur précise sourcée (≈83,7 % / 84 % selon Johnson NEJM 2016) dans toutes les sections."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A6 / B8 — affirmation \"Il n'existe pas de contre-indication absolue à la TEP-FDG diagnostique\" couplée à la gestion de la grossesse",
+    "problem": "Formulation acceptable mais à nuancer : la grossesse, présentée ailleurs comme contre-indication relative à reporter/justifier, mérite d'être explicitement reliée à cette phrase pour éviter une lecture banalisante chez la femme jeune (population fréquente du LH). Pas d'erreur factuelle, simple risque de message ambigu.",
+    "fix": "Préciser \"pas de contre-indication absolue, hormis la grossesse qui impose une justification stricte / un report\" pour lever toute ambiguïté."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E block (sections array): titles go 'E20', 'E21', 'E22', then 'E25'",
+    "problem": "La numerotation du bloc E saute E23 et E24 (passage direct de E22 a E25). Aucune section n'est manquante sur le fond (E25 = References, presente), mais la sequence est incoherente et peut suggerer un contenu retire.",
+    "fix": "Renumeroter la derniere section en 'E23 - References & liens sortants types' pour une sequence continue, ou ajouter les sections manquantes si elles etaient prevues."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A4 (medecin_nuc), phrase 'Criteres proposes au consensus international de Deauville (France) en 2009 [34]'",
+    "problem": "La source [34] (Vangu et al., 'Imaging Lymphoma With F-18 FDG PET-CT: Normal Variants, Pitfalls, and Artifacts') a ete verifiee : c'est un article sur les variantes physiologiques, pieges et artefacts, NON sur l'origine historique du score de Deauville. L'attribution du 'consensus 2009' a [34] est un mauvais appariement citation-contenu (la date 2009 est par ailleurs exacte et correctement sourcee ailleurs via [8][21][30]).",
+    "fix": "Remplacer [34] par [8], [21] ou [30] (qui retracent l'origine 2009 / Lugano 2014) pour cette affirmation, et reserver [34] aux pieges/artefacts."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [21] (Cheson Lugano Classification) : '...J Clin Oncol 2014;32:3059-3068'",
+    "problem": "Verification directe (PMC4979083) : la pagination reelle est 3059-3067, et non 3059-3068 (erreur d'une page sur la borne finale). Titre, auteur, revue, annee et volume sont exacts ; ce n'est pas une fabrication.",
+    "fix": "Corriger la pagination en '3059-3067'."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [13] et [24] (libelles)",
+    "problem": "Ecarts mineurs de libelle non fabricants, confirmes par verification : [13] omet 'examinations' (titre reel '...PET/CT examinations of lymphoma patients') ; [24] abrege 'in Patients with Advanced Stages Hodgkin Lymphoma' en 'in Advanced Hodgkin Lymphoma'. URLs et contenus exacts.",
+    "fix": "Aligner les titres sur l'exact libelle source (optionnel, cosmetique)."
+  }
+]
