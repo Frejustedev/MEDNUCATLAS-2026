@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section D15 (Dosimétrie) — tableau et infoBox sur la paroi vésicale",
+    "problem": "Le texte cite deux valeurs de dose à la paroi vésicale (0,075 mGy/MBq « hyp. vidange 45 min » attribuée à [43] = ICRP 128, et 0,16 mGy/MBq). Or la valeur 0,075 mGy/MBq provient en réalité du modèle compartimental RÉVISÉ post-128 (Andersson/Mattsson, PMC9908780, réf [44]), tandis que l'ICRP 128 elle-même donne 0,16 mGy/MBq pour la paroi vésicale adulte. La source [43] (ICRP 128) est donc mal attribuée à la valeur 0,075 dans le stat-card (« 0,075 mGy/MBq [43] »). Sur le fond les deux chiffres sont exacts, c'est l'attribution de source qui est imprécise.",
+    "fix": "Attribuer 0,16 mGy/MBq à l'ICRP 128 [43] et 0,075 mGy/MBq au modèle révisé [44] dans le stat-card de §D15, pour cohérence avec le texte du §7 des faits de référence."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections A6 / B7 / B8 — seuils glycémiques EANM dits « de recherche » (7–8,3 mmol/L)",
+    "problem": "Le seuil clinique de reprogrammation ≥ 11 mmol/L (~200 mg/dL) et le jeûne ≥ 4 h sont exacts (EANM v2.0). Le second seuil présenté comme « en recherche : 7–8,3 mmol/L (126–150 mg/dL) » correspond plutôt à l'objectif de normoglycémie souhaité (4–7 mmol/L) plus qu'à un seuil de reprogrammation validé ; la formulation peut laisser croire à un seuil opérationnel strict alors qu'il s'agit d'un objectif d'optimisation. Imprécision de nuance, non chiffre faux.",
+    "fix": "Préciser que 7–8,3 mmol/L est un objectif d'optimisation pré-injection (et non un seuil de report), l'EANM citant une normoglycémie cible typiquement 4–7 mmol/L."
+  },
+  {
+    "severity": "minor",
+    "where": "InfoBox allaitement (A6, A1, D15) — délai de contact rapproché ~12 h",
+    "problem": "La consigne « pas d'interruption du lait + limiter le contact rapproché ~12 h » est correcte selon l'EANM v2.0 / Jamar 2013 (source citée [46]). Mais l'EANM v3.0 (2025), citée comme source [16] dans le même article, a ramené ce délai à 4 h. L'article mélange donc deux versions de guideline sans signaler la mise à jour, ce qui peut induire en erreur sur la recommandation actuelle.",
+    "fix": "Mentionner que la valeur de ~12 h provient de l'EANM v2.0 et que la v3.0 (2025) recommande désormais ~4 h de limitation du contact rapproché ; harmoniser ou dater explicitement la recommandation."
+  },
+  {
+    "severity": "major",
+    "where": "Source [2] (PMC4597089) — cited in sections A5 (Recherche d'un primitif occulte), A6, C12, D17, E20 (Cas 1), E21, E22, and quiz Q4/Q5",
+    "problem": "Source-content mismatch (fabricated attribution). The URL https://pmc.ncbi.nlm.nih.gov/articles/PMC4597089/ is REAL, but the article is a single-center retrospective study of 41 patients (Poznan) reporting detection ~17-22%, sensitivity 69.2%, specificity 85.7%. The document repeatedly attributes to [2] a 'méta-analyse de 16 études', '302 patients', 'détection 24,5 % (74/302)', 'jusqu'à 40 % (16/40)', 'Se 88,3 % / Sp 74,9 % / exactitude 78,8 %'. Those figures actually belong to the Rusthoven meta-analysis (302 patients), which is NOT in the source list. The statistics are individually real but are cited to the wrong (and much weaker) paper, and the title given for [2] ('...own experience') is itself inconsistent with calling it a 16-study meta-analysis.",
+    "fix": "Either (a) add the correct Rusthoven meta-analysis as a new source and re-point all the '16 studies / 302 patients / 88.3% / 74.9% / 24.5% / 40%' claims to it, or (b) replace those figures everywhere with the actual numbers from PMC4597089 (n=41, Se 69.2%, Sp 85.7%, detection ~17-22%). Audit every '[2]' occurrence accordingly."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections array — section numbering",
+    "problem": "Section sequence jumps from 'E22 - FAQ' directly to 'E25 - Références'; there are no E23/E24. If the étalon expects contiguous numbering through E (E20-E25), two slots are skipped. Not a fabrication, but a structural/density inconsistency to confirm against the template.",
+    "fix": "Confirm against the étalon whether E23/E24 are expected; either renumber E25→E23 or add the missing sections."
+  },
+  {
+    "severity": "minor",
+    "where": "E20 - Cas cliniques, Cas 1 text",
+    "problem": "Contains a leftover internal editorial marker '[src §2 mention NB]' inside the rendered text ('...0,01-2,7 de SUVmax) [src §2 mention NB]'). This is a drafting artifact, not a clean citation.",
+    "fix": "Replace with the proper citation marker ([2] or the corrected source) and remove the '[src ...]' working note."
+  }
+]
