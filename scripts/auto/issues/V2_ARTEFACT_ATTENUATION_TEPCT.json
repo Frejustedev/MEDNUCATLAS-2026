@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section C8 (« Interpréter les faux foyers chauds : métal et produit de contraste ») et tableau de synthèse A4/B6 — phrase « Pour les prothèses de hanche, la surestimation de l'activité lésionnelle périprothétique atteint ~40% ... [6] »",
+    "problem": "Mélange de citations à l'intérieur de la même famille d'artefact métallique. Le chiffre de ~40% de surestimation de l'activité lésionnelle péri-prothétique provient de l'étude fantôme de Harnish (réf [7], PMC4101148), tandis que la réf [6] (van der Vos, JNM 2017) est la source du facteur ×8 au bord de la prothèse. La valeur ~40% est exacte et soutenue par la littérature, mais elle est attribuée à la mauvaise référence dans C8 (et l'amalgame est repris dans A4/D10). Aucune valeur médicale fausse, simple erreur d'attribution de source.",
+    "fix": "Attribuer le ~40% péri-prothétique à Harnish [7] (étude fantôme hanche) et réserver la réf [6] (van der Vos) au facteur ×8 au bord du métal, conformément aux fiches de référence."
+  },
+  {
+    "severity": "minor",
+    "where": "InfoBox A4 (« Le ¹⁸F-FDG, support de la démonstration ») et identityCard (« Dose paroi vésicale 0,075 mGy/MBq ») — attribution de la dose à la paroi vésicale",
+    "problem": "La valeur 0,075 mGy/MBq (7,5E-02) à la paroi vésicale est présentée comme la valeur ICRP 128. Or la valeur canonique ICRP 128 est 1,3E-01 = 0,13 mGy/MBq ; le chiffre 0,075 mGy/MBq correspond en réalité au modèle compartimental/vésical dynamique révisé (Kamp 2023, PMC9908780), avec hypothèses de vidange spécifiques (volume initial 100 mL, 1ʳᵉ miction 45 min). La valeur 0,075 est réelle et bien sourcée, mais son rattachement direct à « ICRP 128 » est imprécis. À noter que les deux fiches de référence se contredisent sur ce point (Fiche 1 attribue 0,075 à ICRP 128, Fiche 2 attribue 0,13 à ICRP 128 et 0,075 au modèle révisé) — la littérature confirme la version de la Fiche 2.",
+    "fix": "Préciser : dose à la paroi vésicale ICRP 128 = 0,13 mGy/MBq, ramenée à 0,075 mGy/MBq dans le modèle dynamique vésical révisé (Kamp 2023). La dose efficace 0,019 mSv/MBq (ICRP 128) reste correcte."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A4, infoBox 'Le ¹⁸F-FDG, support de la démonstration'",
+    "problem": "La valeur 'paroi vésicale 0,075 mGy/MBq' est attribuée à 'ICRP 128', alors que 0,075 mGy/MBq (7,5E−02) est en réalité la valeur RÉVISÉE de Kamp et al. [26], pas celle de l'ICRP 128. La vraie valeur ICRP 128 pour la paroi vésicale est 1,3E−01 mGy/MBq — qui est correctement citée par ailleurs (E15 'Notes de fiabilité' et quiz Q16). Incohérence interne de l'attribution, non une fabrication (les deux chiffres existent réellement dans la source [26], vérifié via WebFetch sur PMC9908780).",
+    "fix": "En A4, écrire 'paroi vésicale 0,13 mGy/MBq (ICRP 128 ; 0,075 mGy/MBq dans le modèle révisé de Kamp [26])' pour aligner sur l'attribution correcte déjà présente en E15."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [35] / section E15 et carte de référence",
+    "problem": "Vangu & Momodu (Front Nucl Med, article 826109) est daté '2021' dans la citation. L'indexation (PMC11440875, recherche web) la donne en volume 1 / 2022 (reçu 2021, publié 2022). URL, volume (1) et numéro d'article (826109) sont corrects et vérifiés — l'article existe bien. Simple ambiguïté d'année.",
+    "fix": "Harmoniser sur '2021/2022' ou '2022;1:826109' selon la date de publication officielle Frontiers ; aucun impact sur la fiabilité du contenu."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [11] Boellaard EANM v3.0 (ScienceDirect S3051292125000065) et [22] ASNC/SNMMI (journalofnuclearcardiology) et [29] Nehmeh (jnm 44/12/1940)",
+    "problem": "Trois URLs n'ont pas pu être lues directement (HTTP 403 / blocage anti-bot de ScienceDirect et des journaux SNMMI/Elsevier). Ce ne sont PAS des signes de fabrication : [22] et [3] apparaissent dans les résultats de recherche web comme articles réels ; le motif d'URL jnm.snmjournals.org/content/vol/issue/page est identique à d'autres sources JNM vérifiées avec succès. [11] EANM v3.0 2025 est plausible (la v2.0 PMC4315529 est vérifiée).",
+    "fix": "Aucune correction de contenu requise. Optionnel : pour [11], ajouter le PMID/DOI une fois disponible publiquement afin de faciliter la vérification par le lecteur."
+  }
+]

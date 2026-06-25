@@ -1,0 +1,1340 @@
+{
+  "id": "V2_ARTEFACT_ATTENUATION_TEPCT",
+  "type": "autre",
+  "cat": "artefacts",
+  "catLabel": "",
+  "title": "Artefacts de correction d'atténuation en TEP-TDM : décalage respiratoire et faux foyers",
+  "difficulty": "avancé",
+  "tags": [
+    "correction d'atténuation",
+    "TEP-TDM",
+    "artefact respiratoire",
+    "décalage TEP/TDM",
+    "CTAC",
+    "18F-FDG",
+    "images non corrigées",
+    "artefact métallique",
+    "produit de contraste",
+    "TEP 4D",
+    "gating respiratoire",
+    "SUV",
+    "troncature",
+    "rapport coeur/médiastin"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "Chi A, Nguyen NP. 4D PET/CT as a Strategy to Reduce Respiratory Motion Artifacts in FDG-PET/CT. Frontiers in Oncology 2014;4:205",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4120690/",
+      "verified": true
+    },
+    {
+      "title": "Sureshbabu W, Mawlawi O. PET/CT Imaging Artifacts. J Nucl Med Technol 2005;33(3):156",
+      "url": "https://tech.snmjournals.org/content/33/3/156",
+      "verified": true
+    },
+    {
+      "title": "Gould KL et al. Frequent Diagnostic Errors in Cardiac PET/CT Due to Misregistration of CT Attenuation and Emission PET Images. J Nucl Med 2007;48(7):1112",
+      "url": "https://jnm.snmjournals.org/content/48/7/1112",
+      "verified": true
+    },
+    {
+      "title": "Dizendorf E et al. Cause and Magnitude of the Error Induced by Oral CT Contrast Agent in CT-Based Attenuation Correction of PET Emission Studies. J Nucl Med 2003;44(5):732",
+      "url": "https://jnm.snmjournals.org/content/44/5/732",
+      "verified": true
+    },
+    {
+      "title": "Yau YY et al. Application of Intravenous Contrast in PET/CT: Does It Really Introduce Significant Attenuation Correction Error? J Nucl Med 2005;46(2):283",
+      "url": "https://jnm.snmjournals.org/content/46/2/283",
+      "verified": true
+    },
+    {
+      "title": "van der Vos CS et al. Metal Artifact Reduction of CT Scans to Improve PET/CT. J Nucl Med 2017;58(11):1867",
+      "url": "https://jnm.snmjournals.org/content/58/11/1867",
+      "verified": true
+    },
+    {
+      "title": "Harnish R et al. The effect of metal artefact reduction on CT-based attenuation correction for PET imaging in the vicinity of metallic hip implants: a phantom study. Ann Nucl Med 2014;28(6):540 (PMC4101148)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4101148/",
+      "verified": true
+    },
+    {
+      "title": "Sarikaya I, Sarikaya A. PET/CT Image Artifacts Caused by the Arms. J Nucl Med Technol 2021;49(1):19",
+      "url": "https://tech.snmjournals.org/content/49/1/19",
+      "verified": true
+    },
+    {
+      "title": "Beyer T et al. Whole-Body 18F-FDG PET/CT in the Presence of Truncation Artifacts. J Nucl Med 2006;47(1):91",
+      "url": "https://jnm.snmjournals.org/content/47/1/91",
+      "verified": true
+    },
+    {
+      "title": "Boellaard R et al. FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0. Eur J Nucl Med Mol Imaging 2015;42:328 (PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/",
+      "verified": true
+    },
+    {
+      "title": "Boellaard R et al. [18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0. EANM Journal 2025",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065",
+      "verified": true
+    },
+    {
+      "title": "Lassmann M et al. The new EANM paediatric dosage card: additional notes with respect to F-18. Eur J Nucl Med Mol Imaging 2008;35(9):1666",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18574583/",
+      "verified": true
+    },
+    {
+      "title": "Dickson J, Eberlein U, Lassmann M. The effect of modern PET technology and techniques on the EANM paediatric dosage card. Eur J Nucl Med Mol Imaging 2022;49(6):1964 (PMC9016049)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9016049/",
+      "verified": true
+    },
+    {
+      "title": "Ashraf MA, Goyal A. Fludeoxyglucose (18F) — StatPearls, NCBI Bookshelf NBK557653",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557653/",
+      "verified": true
+    },
+    {
+      "title": "Yu S. Review of 18F-FDG Synthesis and Quality Control. Biomed Imaging Interv J 2006;2(4):e57 (PMC3097819)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097819/",
+      "verified": true
+    },
+    {
+      "title": "Fludeoxyglucose F 18 Injection — FDA label NDA 21-870 (2005)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2005/021870lbl.pdf",
+      "verified": true
+    },
+    {
+      "title": "Kinahan P. PET/CT Issues: CT-based attenuation correction (CTAC). AAPM 2008 summer school",
+      "url": "https://www.aapm.org/meetings/08ss/documents/Kinahan.pdf",
+      "verified": true
+    },
+    {
+      "title": "Zaidi H, Hasegawa B. Determination of the Attenuation Map in Emission Tomography. J Nucl Med 2003;44(2):291",
+      "url": "https://jnm.snmjournals.org/content/44/2/291",
+      "verified": true
+    },
+    {
+      "title": "Metrard G, Cohen C, Bailly M. Comprehensive literature review of oral and intravenous contrast-enhanced PET/CT: a step forward? Front Med 2024;11:1373260 (PMC10985176)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10985176/",
+      "verified": true
+    },
+    {
+      "title": "Chang G et al. Implementation of an Automated Respiratory Amplitude Gating Technique for PET/CT: Clinical Evaluation. J Nucl Med 2010;51(1):16",
+      "url": "https://jnm.snmjournals.org/content/51/1/16",
+      "verified": true
+    },
+    {
+      "title": "Lu Y et al. Deep learning-aided respiratory motion compensation in PET/CT. Eur J Nucl Med Mol Imaging 2024 (PMC11599311)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11599311/",
+      "verified": true
+    },
+    {
+      "title": "ASNC imaging guidelines/SNMMI procedure standard for positron emission tomography (PET) nuclear cardiology procedures. J Nucl Cardiol",
+      "url": "https://www.journalofnuclearcardiology.org/article/S1071-3581(23)06946-5/fulltext",
+      "verified": true
+    },
+    {
+      "title": "Nuyts J et al. Reducing Loss of Image Quality Because of the Attenuation Artifact in Uncorrected PET Whole-Body Images. J Nucl Med 2002;43(8):1054",
+      "url": "https://jnm.snmjournals.org/content/43/8/1054",
+      "verified": true
+    },
+    {
+      "title": "CNP-MN / SFMN — Guide pour la rédaction de protocoles pour la TEP au [18F]-FDG, version 2.0",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/06/FDG-V2.0.pdf",
+      "verified": true
+    },
+    {
+      "title": "PET/CT (Motion / respiratory misregistration) — Introduction to Radiology course",
+      "url": "https://introductiontoradiology.net/courses/rad/PETCT/Motion.html",
+      "verified": true
+    },
+    {
+      "title": "Kamp A et al. A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG. EJNMMI Phys 2023;10:10 (PMC9908780)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9908780/",
+      "verified": true
+    },
+    {
+      "title": "Osman MM et al. Respiratory motion artifacts on PET emission images obtained using CT attenuation correction on PET-CT. Eur J Nucl Med Mol Imaging 2003 (WashU research profile)",
+      "url": "https://profiles.wustl.edu/en/publications/respiratory-motion-artifacts-on-pet-emission-images-obtained-usin/",
+      "verified": true
+    },
+    {
+      "title": "Sun T, Mok GSP. Techniques for respiration-induced artifacts reductions in thoracic PET/CT. Quant Imaging Med Surg 2012;2(1):46 (PMC3496495)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3496495/",
+      "verified": true
+    },
+    {
+      "title": "Nehmeh SA et al. Correction for Oral Contrast Artifacts in CT Attenuation-Corrected PET Images Obtained by Combined PET/CT. J Nucl Med 2003;44(12):1940",
+      "url": "https://jnm.snmjournals.org/content/44/12/1940.long",
+      "verified": true
+    },
+    {
+      "title": "Ahmadian A, Ay MR, Bidgoli JH, Sarkar S, Zaidi H. Correction of oral contrast artifacts in CT-based attenuation correction of PET images using an automated segmentation algorithm. Eur J Nucl Med Mol Imaging 2008;35(10):1812 (PubMed 18418597)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18418597/",
+      "verified": true
+    },
+    {
+      "title": "Quantitative Effect of Metal Artefact Reduction on CT-based attenuation correction in FDG PET/CT in patients with hip prosthesis. EJNMMI Phys 2021 (PMC8502194)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8502194/",
+      "verified": true
+    },
+    {
+      "title": "Buchbender C et al. Positron emission tomography (PET) attenuation correction artefacts in PET/CT and PET/MRI. Br J Radiol 2013;86:20120570 (PMC3635797)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3635797/",
+      "verified": true
+    },
+    {
+      "title": "Vali R et al. SNMMI Procedure Standard/EANM Practice Guideline on Pediatric 18F-FDG PET/CT for Oncology 1.0. J Nucl Med 2021;62(1):99",
+      "url": "https://jnm.snmjournals.org/content/62/1/99",
+      "verified": true
+    },
+    {
+      "title": "Adeleye B, Chetty N. Radiation dose from 18F-FDG PET/CT procedures: influence of specific CT model and protocols. Radioprotection 2018;53(2):107",
+      "url": "https://www.radioprotection.org/articles/radiopro/full_html/2018/02/radiopro170056/radiopro170056.html",
+      "verified": true
+    },
+    {
+      "title": "Vangu MDT, Momodu JI. F-18 FDG PET/CT Imaging in Normal Variants, Pitfalls and Artifacts in the Abdomen and Pelvis. Front Nucl Med 2021;1:826109",
+      "url": "https://www.frontiersin.org/journals/nuclear-medicine/articles/10.3389/fnume.2021.826109/full",
+      "verified": true
+    },
+    {
+      "title": "Carney JPJ, Townsend DW. CT-Based Attenuation Correction for PET-CT Scanners (Radiology Key)",
+      "url": "https://radiologykey.com/ct-based-attentuation-correction-for-pet-ct-scanners/",
+      "verified": true
+    },
+    {
+      "title": "Crivellaro C, Guerra L. Respiratory Gating and the Performance of PET/CT in Pulmonary Lesions. Curr Radiopharm 2020;13(3):218 (PMC8206192)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8206192/",
+      "verified": true
+    },
+    {
+      "title": "Patro SSP et al. Impact of Respiratory-gated 4D PET/CT Scan for Motion Correction in Characterizing Lesions Adjacent to the Diaphragm. Indian J Nucl Med 2024;39(3):177 (PMC11404739)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11404739/",
+      "verified": true
+    },
+    {
+      "title": "Nyflot MJ et al. Impact of CT attenuation correction method on quantitative respiratory-correlated (4D) PET/CT imaging. Med Phys 2015;42(1):110 (PMC5148139)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5148139/",
+      "verified": true
+    },
+    {
+      "title": "Attenuation-Corrected vs. Nonattenuation-Corrected FDG-PET in Oncology, A Systematic Review. Mol Imaging Biol 2007 (PMC1915656)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1915656/",
+      "verified": true
+    },
+    {
+      "title": "Determining the Minimal Required Ultra-Low-Dose CT Dose Level for Reliable Attenuation Correction of 18F-FDG PET/CT: A Phantom Study. J Nucl Med Technol 2022;50(2):126",
+      "url": "https://tech.snmjournals.org/content/50/2/126",
+      "verified": true
+    },
+    {
+      "title": "Ferrara D et al. Low-dose and standard-dose whole-body [18F]FDG-PET/CT imaging. Front Phys 2024;12:1378521",
+      "url": "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2024.1378521/full",
+      "verified": true
+    },
+    {
+      "title": "Alameen S et al. Radiobiological risks in terms of effective dose and organ dose from 18F-FDG whole-body PET/CT procedures. Saudi J Biol Sci 2021;28(10) (PMC8459160)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8459160/",
+      "verified": true
+    },
+    {
+      "title": "Deppen SA et al. Accuracy of FDG-PET to diagnose lung cancer in areas with infectious lung disease: a meta-analysis. JAMA 2014;312(12):1227 (PMC4315183)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315183/",
+      "verified": true
+    },
+    {
+      "title": "Li ZZ et al. The value of 18F-FDG-PET/CT in the diagnosis of solitary pulmonary nodules: A meta-analysis. Medicine (Baltimore) 2018;97(12):e0130 (PMC5895332)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5895332/",
+      "verified": true
+    },
+    {
+      "title": "Khan IS et al. Diagnostic Accuracy of FDG PET-CT in Lymph Nodal Staging of Lung Cancer. Cureus 2025 (PMC11846659)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11846659/",
+      "verified": true
+    },
+    {
+      "title": "Bacharach SL. PET/CT Attenuation Correction: Breathing Lessons (editorial). J Nucl Med 2007;48(5):677",
+      "url": "https://jnm.snmjournals.org/content/48/5/677",
+      "verified": true
+    }
+  ],
+  "lead": "La correction d'atténuation est une étape indispensable de toute imagerie TEP-TDM, sans laquelle les structures profondes paraissent faussement éteintes et les images deviennent ininterprétables. Mais cette correction repose sur une carte fournie par le scanner, acquise très vite alors que la caméra à positons, elle, moyenne de nombreux cycles respiratoires. Ce décalage entre les deux images, particulièrement marqué au niveau du diaphragme et du sommet du foie, peut créer de fausses zones froides ou de faux foyers chauds qui imitent ou masquent une lésion. D'autres sources, comme les produits de contraste, les prothèses métalliques ou les bras dépassant du champ du scanner, génèrent des erreurs comparables. Reconnaître ces pièges et savoir relire les images non corrigées est une compétence transversale qui conditionne la fiabilité de toute mesure quantitative en oncologie comme en cardiologie nucléaire.",
+  "identityCard": [
+    {
+      "icon": "atom",
+      "label": "Nature de l'artefact",
+      "value": "Erreur de quantification + faux foyer chaud/froid sur l'image corrigée"
+    },
+    {
+      "icon": "target",
+      "label": "Cause principale",
+      "value": "Décalage respiratoire TEP/TDM à la coupole diaphragmatique"
+    },
+    {
+      "icon": "zap",
+      "label": "Photons concernés",
+      "value": "Annihilation 511 keV (×2, à 180°)"
+    },
+    {
+      "icon": "radiation",
+      "label": "Énergie effective TDM",
+      "value": "~70 keV → conversion bilinéaire vers 511 keV"
+    },
+    {
+      "icon": "flask",
+      "label": "µ eau à 511 keV",
+      "value": "0,096 cm⁻¹ (parfois 0,093)"
+    },
+    {
+      "icon": "alert",
+      "label": "Mismatch TDM inspi max vs TEP",
+      "value": "44,4 ± 25,5 mm (Goerres)"
+    },
+    {
+      "icon": "activity",
+      "label": "Impact SUVmax",
+      "value": "Sous-estimation jusqu'à 28 % (mvt 11 mm)"
+    },
+    {
+      "icon": "microscope",
+      "label": "Faux défauts cardiaques ⁸²Rb",
+      "value": "40 % des patients (Gould)"
+    },
+    {
+      "icon": "droplets",
+      "label": "Contraste oral",
+      "value": "Surcorrection µ +24–37 %"
+    },
+    {
+      "icon": "shield",
+      "label": "Surcorrection bord prothèse",
+      "value": "jusqu'à ×8 (8-fold)"
+    },
+    {
+      "icon": "list",
+      "label": "Clé diagnostique",
+      "value": "Relecture des images non corrigées (NAC)"
+    },
+    {
+      "icon": "stetho",
+      "label": "Solutions",
+      "value": "TDM en respiration calme, TEP 4D, iMAR, FOV étendu"
+    },
+    {
+      "icon": "syringe",
+      "label": "Traceur de référence",
+      "value": "¹⁸F-FDG (2,5–5 MBq/kg, EANM)"
+    },
+    {
+      "icon": "clock",
+      "label": "Période ¹⁸F",
+      "value": "109,7 min"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "¹⁸F-FDG"
+    },
+    {
+      "type": "examen",
+      "label": "TEP-TDM corps entier"
+    },
+    {
+      "type": "examen",
+      "label": "TEP-TDM 4D (gating respiratoire)"
+    },
+    {
+      "type": "examen",
+      "label": "TEP de perfusion myocardique au ⁸²Rb"
+    },
+    {
+      "type": "examen",
+      "label": "TDM basse dose de correction d'atténuation"
+    },
+    {
+      "type": "examen",
+      "label": "TEP-IRM (correction d'atténuation MRAC)"
+    },
+    {
+      "type": "examen",
+      "label": "Images non corrigées (NAC)"
+    },
+    {
+      "type": "maladie",
+      "label": "Nodule pulmonaire solitaire"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer bronchopulmonaire (staging ganglionnaire)"
+    },
+    {
+      "type": "score",
+      "label": "PERCIST"
+    },
+    {
+      "type": "score",
+      "label": "Critères EARL d'harmonisation du SUV"
+    },
+    {
+      "type": "theranostique",
+      "label": "Évaluation de réponse au traitement par SUV"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Pourquoi la correction d'atténuation est-elle indispensable en TEP ?",
+      "options": [
+        "Pour réduire le temps d'acquisition",
+        "Parce que les photons de 511 keV sont atténués différemment selon la profondeur, sous-estimant les structures profondes",
+        "Pour augmenter la résolution spatiale du système",
+        "Pour éliminer le bruit électronique du détecteur"
+      ],
+      "answer": 1,
+      "explanation": "Sans correction, les photons d'annihilation de 511 keV traversant les tissus profonds sont atténués, sous-estimant l'activité des structures profondes et faussant la quantification (SUV) [36].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel principe physique convertit les unités Hounsfield du scanner en coefficients d'atténuation à 511 keV ?",
+      "options": [
+        "Une transformation logarithmique",
+        "Une mise à l'échelle bilinéaire à deux segments",
+        "Une correction de Klein-Nishina directe",
+        "Une simple multiplication par un facteur constant"
+      ],
+      "answer": 1,
+      "explanation": "La conversion repose sur une transformation bilinéaire : le scanner mesure l'atténuation à une énergie effective d'environ 70 keV, qu'il faut convertir vers 511 keV avec deux pentes (mélange air/eau puis eau/os), point de bascule vers 0 HU [17][36].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est l'origine principale du décalage respiratoire en TEP-TDM ?",
+      "options": [
+        "La TEP est rapide et la TDM lente",
+        "La TDM fige une phase respiratoire tandis que la TEP moyenne de nombreux cycles",
+        "Les deux examens utilisent des énergies différentes",
+        "Le patient bouge volontairement"
+      ],
+      "answer": 1,
+      "explanation": "La TDM est acquise quasi instantanément (une phase respiratoire figée) alors que la TEP intègre la moyenne de nombreux cycles en respiration libre, créant un mismatch spatial intrinsèque [2][28].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle amplitude de décalage de la coupole diaphragmatique a été mesurée entre TEP en respiration libre et TDM en inspiration maximale ?",
+      "options": [
+        "0,4 mm",
+        "7,5 mm",
+        "44,4 ± 25,5 mm",
+        "100 mm"
+      ],
+      "answer": 2,
+      "explanation": "Goerres et al. ont mesuré un décalage moyen de 44,4 ± 25,5 mm en inspiration maximale, contre seulement 0,4 mm en expiration normale, d'où la recommandation d'une TDM en respiration calme [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Comment se présente typiquement l'artefact froid de décalage respiratoire ?",
+      "options": [
+        "Un foyer chaud ponctuel dans le médiastin",
+        "Une bande curviligne froide parallèle à la coupole diaphragmatique",
+        "Une plage chaude diffuse hépatique",
+        "Des stries radiaires autour du coeur"
+      ],
+      "answer": 1,
+      "explanation": "Quand la TDM est acquise en inspiration profonde, de l'air remplace le tissu mou à l'emplacement habituel du diaphragme : des portions de foie sont corrigées comme du poumon et deviennent trop froides, formant une bande curviligne (« banana artifact ») [27].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Sur quelle proportion d'acquisitions des artefacts froids curvilignes diaphragmatiques ont-ils été notés dans la série de Osman/WashU ?",
+      "options": [
+        "10 %",
+        "50 %",
+        "84 %",
+        "100 %"
+      ],
+      "answer": 2,
+      "explanation": "Ces artefacts ont été notés sur 84 % des acquisitions TEP-TDM et étaient absents sur les images corrigées par transmission au ⁶⁸Ge [27].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "De combien la sous-estimation du SUVmax peut-elle atteindre pour une lésion de 1 cm avec un mouvement diaphragmatique de 11 mm ?",
+      "options": [
+        "5 %",
+        "28 %",
+        "75 %",
+        "130 %"
+      ],
+      "answer": 1,
+      "explanation": "Liu et al. ont rapporté une sous-estimation du SUVmax de 28 % et une surestimation du volume de +130 % pour des lésions de 1 cm soumises à un mouvement diaphragmatique de 11 mm [1].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Chez quelle proportion de patients la TEP de perfusion au ⁸²Rb présente-t-elle de faux défauts liés au misregistration TDM/émission (Gould) ?",
+      "options": [
+        "10 %",
+        "25 %",
+        "40 %",
+        "73 %"
+      ],
+      "answer": 2,
+      "explanation": "Gould et al. ont montré, sur 259 patients, des défauts artefactuels faux-positifs chez 40 % des patients, normalisés par une TDM ciné moyennée et un recalage visuel [3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la règle d'or pour distinguer un faux foyer attenuationnel d'une vraie lésion ?",
+      "options": [
+        "Augmenter l'activité injectée",
+        "Confronter le foyer aux images non corrigées (NAC)",
+        "Refaire la TEP le lendemain",
+        "Injecter du contraste iodé"
+      ],
+      "answer": 1,
+      "explanation": "Un foyer présent sur l'image corrigée mais absent (ou peu visible) sur les images non corrigées, qui ne subissent pas l'erreur de correction d'atténuation, signe un artefact de reconstruction et non une lésion réelle [35][23].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel mécanisme explique le faux foyer chaud lié au produit de contraste oral ?",
+      "options": [
+        "Le contraste émet des positons",
+        "Les HU élevés sont mal classés comme os dense, entraînant une surcorrection d'atténuation",
+        "Le contraste bloque la captation du FDG",
+        "Le contraste augmente la température locale"
+      ],
+      "answer": 1,
+      "explanation": "Le contraste iodé augmente les HU (jusqu'à ~3071 HU) ; mal classé comme os dense, il reçoit un facteur de mise à l'échelle erroné, surcorrigeant l'atténuation et surestimant l'activité de 24,4 à 37,3 % selon la concentration [29].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "De combien la correction d'atténuation standard peut-elle surestimer la concentration de traceur au bord d'une prothèse métallique ?",
+      "options": [
+        "× 1,2",
+        "× 2",
+        "jusqu'à × 8",
+        "× 100"
+      ],
+      "answer": 2,
+      "explanation": "La CTAC standard peut surestimer jusqu'à 8 fois (8-fold) la concentration de traceur au bord d'une prothèse, donnant l'impression de traceur « dans » le métal ; les algorithmes de réduction d'artefact métallique (iMAR/MAR) corrigent cet effet [6].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est l'effet de la réduction d'artefact métallique (MAR/iMAR) en périprothétique de hanche ?",
+      "options": [
+        "Aucune amélioration mesurable",
+        "Elle ramène l'écart aux valeurs de référence à < 5 %",
+        "Elle double systématiquement le SUV",
+        "Elle supprime tout signal métallique utile"
+      ],
+      "answer": 1,
+      "explanation": "La MAR par inpainting du sinogramme augmente l'activité mesurée jusqu'à +11 % vs TDM conventionnelle et ramène l'écart aux valeurs de référence à moins de 5 % [7].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle position des bras est préférable pour limiter l'artefact de troncature en imagerie thoraco-abdominale ?",
+      "options": [
+        "Bras le long du corps",
+        "Bras levés (au-dessus de la tête)",
+        "Mains croisées sur le ventre",
+        "Position indifférente"
+      ],
+      "answer": 1,
+      "explanation": "Bras baissés, le corps dépasse le champ de vue transverse de la TDM, créant une sous-correction périphérique ; les bras levés (ou un FOV étendu) corrigent l'artefact de troncature [8][9].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel mode de gating respiratoire est supérieur en cas de respiration irrégulière ?",
+      "options": [
+        "Phase gating",
+        "Amplitude gating",
+        "Aucun, les deux sont équivalents",
+        "Le gating cardiaque"
+      ],
+      "answer": 1,
+      "explanation": "L'amplitude gating, qui trie les données par amplitude du signal respiratoire, est supérieur au phase gating lorsque la respiration est irrégulière [20].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la dose efficace de référence du ¹⁸F-FDG selon l'ICRP 128 ?",
+      "options": [
+        "0,0019 mSv/MBq",
+        "0,019 mSv/MBq",
+        "0,19 mSv/MBq",
+        "1,9 mSv/MBq"
+      ],
+      "answer": 1,
+      "explanation": "L'ICRP 128 retient une dose efficace de 1,9E−02 mSv/MBq (0,019 mSv/MBq) pour le ¹⁸F-FDG, la paroi vésicale étant l'organe critique ; un modèle révisé propose 1,7E−02 mSv/MBq [26].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel organe est l'organe critique de dosimétrie du ¹⁸F-FDG ?",
+      "options": [
+        "Le cerveau",
+        "Le foie",
+        "La paroi de la vessie",
+        "La thyroïde"
+      ],
+      "answer": 2,
+      "explanation": "La paroi vésicale est l'organe critique (dose absorbée 1,3E−01 mGy/MBq selon l'ICRP 128), car le ¹⁸F-FDG est excrété par voie urinaire — d'où l'intérêt de l'hydratation et de la vidange vésicale [26][34].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle activité de ¹⁸F-FDG l'EANM recommande-t-elle chez l'adulte ?",
+      "options": [
+        "0,1 MBq/kg",
+        "2,5–5,0 MBq/kg",
+        "20 MBq/kg",
+        "50 MBq/kg"
+      ],
+      "answer": 1,
+      "explanation": "L'EANM (tumour imaging v2.0) recommande 2,5–5,0 MBq/kg de ¹⁸F-FDG IV selon le type de scanner et la reconstruction [10].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est l'apport clinique principal de la TEP-TDM 4D pour les lésions juxta-diaphragmatiques ?",
+      "options": [
+        "Elle réduit la dose au patient",
+        "Elle réduit le flou de mouvement et améliore la quantification, ramenant les lésions équivoques d'environ 24 % à 4 %",
+        "Elle supprime le besoin de TDM",
+        "Elle remplace l'injection de FDG"
+      ],
+      "answer": 1,
+      "explanation": "Le 4D améliore la quantification surtout pour les lésions < 10 mm proches du diaphragme et ramène la proportion de lésions équivoques d'environ 24 % (non gaté) à environ 4 % [37].",
+      "difficulty": "difficile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "La correction d'atténuation est indispensable à la quantification TEP, mais une carte TDM erronée ou mal alignée crée des erreurs de SUV et de faux foyers chauds/froids [36].",
+      "Cause principale : le décalage respiratoire — la TDM fige une phase, la TEP moyenne de nombreux cycles ; mismatch jusqu'à 44,4 ± 25,5 mm à la coupole en inspiration max vs 0,4 mm en expiration normale [1][27].",
+      "L'artefact typique est une bande froide curviligne sous-diaphragmatique ; conséquences : sous-estimation du SUVmax jusqu'à 28 % et surestimation du volume jusqu'à +130 % pour des lésions de 1 cm [1].",
+      "En cardiologie, le misregistration TDM/émission cause de faux défauts de perfusion chez 40 % des patients en TEP au ⁸²Rb (Gould) [3].",
+      "Autres faux foyers : contraste (surcorrection µ +24–37 %), métal (surcorrection au bord jusqu'à ×8), troncature des bras (sous-correction périphérique) [29][6][8].",
+      "Règle d'or : tout foyer suspect doit être confronté aux images non corrigées (NAC), qui ne subissent pas l'erreur de correction d'atténuation [35][23].",
+      "Solutions : TDM en respiration calme, TEP-TDM 4D (amplitude gating supérieur si respiration irrégulière), iMAR pour le métal, reconstruction à FOV étendu pour la troncature [20][7][9].",
+      "Dose efficace du ¹⁸F-FDG ≈ 0,019 mSv/MBq (ICRP 128), organe critique = paroi vésicale ; la composante TDM peut représenter jusqu'à 81 % de la dose totale [26][42]."
+    ],
+    "protocol": [
+      "Vérifier l'alignement TEP/TDM au niveau du diaphragme et du sommet hépatique avant toute mesure de SUV.",
+      "Instruire une respiration calme/libre superficielle pendant la TDM de correction d'atténuation pour rapprocher la TDM de la moyenne TEP [28].",
+      "Pour tout foyer chaud/froid inattendu : relire systématiquement les images non corrigées (NAC) [35].",
+      "Rechercher sur la TDM la présence de contraste (oral/IV) et de matériel métallique (prothèses, amalgames, pacemaker) [29][32].",
+      "Préférer les bras levés en imagerie thoraco-abdominale ; sinon reconstruire avec un FOV étendu pour limiter la troncature [8].",
+      "En cas de doute juxta-diaphragmatique persistant : envisager une acquisition synchronisée respiratoire (TEP 4D) [37].",
+      "Préparation FDG : jeûne ≥ 4–6 h, glycémie cible 4–7 mmol/L, captation 60 min, hydratation et vidange vésicale [10][14]."
+    ],
+    "scores": [
+      "SUVmax / SUVmean : index quantitatifs directement affectés par les artefacts de correction d'atténuation.",
+      "Critères EARL (EANM Research Ltd) : harmonisation multicentrique des SUV par calibration sur fantôme [10].",
+      "PERCIST / Deauville : évaluation de réponse reposant sur des SUV fiables, donc dépendante de la qualité de la correction d'atténuation.",
+      "Rapport coeur/médiastin (H/M) et washout : index de référence en TEP/scintigraphie cardiaque, sensibles au recalage TDM."
+    ],
+    "pitfalls": [
+      "Faux froid : bande curviligne sous-diaphragmatique par décalage respiratoire (foie corrigé comme poumon) [27].",
+      "Faux chaud : foyer projeté du dôme hépatique vers la base pulmonaire, ou surcorrection liée au contraste oral/IV [2][29].",
+      "Métal : sous- ET surestimation locales (stries), surcorrection au bord jusqu'à ×8 — corriger par iMAR/MAR [6][7].",
+      "Troncature (bras baissés ou forte corpulence) : surestimation du liseré et sous-estimation au-delà du bord du FOV TDM [8][9].",
+      "Oublier de relire les NAC : principal piège diagnostique conduisant à confondre artefact et lésion [35].",
+      "Confondre l'effet sur la carte d'atténuation (surcorrection) avec une vraie hyperfixation : toujours corréler à la TDM source et au contexte clinique [32]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert cet examen et ce que sont ces « artefacts »",
+        "text": "Le TEP-scanner (ou TEP-TDM) est un examen d'imagerie qui combine deux machines : une caméra qui repère l'activité des cellules grâce à un produit injecté, et un scanner qui photographie l'anatomie. Le scanner sert aussi à « corriger » les images de la caméra pour les rendre plus fiables. Parfois, parce que vous respirez pendant l'examen, les deux images ne se superposent pas parfaitement. Cela peut créer ce qu'on appelle un « artefact » : une zone qui paraît anormale sur l'image alors qu'il ne s'agit que d'un décalage technique, pas d'une vraie maladie. C'est un phénomène bien connu des médecins, qui savent le reconnaître et l'écarter.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Rien d'inquiétant en soi",
+            "text": "Un artefact n'est pas une anomalie de votre corps : c'est une imperfection de l'image liée à la respiration ou à un objet métallique. Le médecin dispose de plusieurs façons de vérifier et de faire la différence."
+          }
+        ]
+      },
+      {
+        "title": "Comment se déroule l'examen et comment bien le préparer",
+        "text": "Avant l'examen, on vous demande généralement d'être à jeun pendant quelques heures et d'éviter les efforts physiques la veille et le jour même. On vous injecte un produit, puis vous vous reposez tranquillement pendant une période d'attente avant les images. Pendant la prise d'images, le point le plus important pour éviter les décalages est de respirer calmement et normalement, sans bloquer votre souffle ni inspirer à fond, sauf si l'équipe vous le demande expressément. Suivre simplement les consignes de respiration de l'équipe aide beaucoup à obtenir des images nettes.",
+        "steps": [
+          {
+            "title": "Préparation",
+            "text": "Jeûne et repos selon les consignes données par le service, pour que les images soient les plus fiables possible."
+          },
+          {
+            "title": "Injection puis attente",
+            "text": "Le produit est injecté, puis vous patientez au calme le temps qu'il se répartisse dans le corps."
+          },
+          {
+            "title": "Prise des images",
+            "text": "Vous êtes allongé sans bouger ; respirez calmement et normalement, et suivez les consignes de respiration de l'équipe."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le geste qui aide",
+            "text": "Respirer doucement et régulièrement, sans bloquer votre respiration, est la meilleure façon d'éviter les décalages d'image au niveau du ventre et de la poitrine."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce sûr ? Et que se passe-t-il si l'image n'est pas parfaite",
+        "text": "L'examen est sûr et bien encadré. Si le médecin repère une zone douteuse, il dispose d'outils simples pour vérifier s'il s'agit d'un vrai signe ou d'un artefact : il peut comparer plusieurs versions de l'image, tenir compte d'un éventuel objet métallique (prothèse, matériel dentaire) ou d'un produit de contraste, et au besoin refaire une acquisition. Pensez à signaler à l'équipe toute prothèse, tout implant, une grossesse possible ou un allaitement. Après l'examen, boire de l'eau et uriner régulièrement aide à éliminer le produit.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "À signaler avant l'examen",
+            "text": "Prévenez l'équipe si vous portez une prothèse métallique ou du matériel dentaire, si vous êtes ou pensez être enceinte, ou si vous allaitez. Ces informations aident à interpréter correctement vos images."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : reconnaître un faux foyer sur un compte rendu TEP",
+        "text": "Les artefacts de correction d'atténuation sont une cause fréquente et transversale de faux positifs (et de faux négatifs) en TEP-TDM, indépendante de la pathologie explorée. Y penser systématiquement face à un foyer inattendu, isolé ou cliniquement discordant, surtout dans trois situations : à l'interface foie-coupole diaphragmatique (décalage respiratoire entre un scanner rapide et une TEP moyennée sur plusieurs cycles), au contact de matériel métallique (prothèse de hanche, matériel dentaire, pacemaker) et en présence de produit de contraste dense. Un foyer qui n'existe que sur certaines images reconstruites doit faire évoquer un artefact plutôt qu'une lésion.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser à un médecin nucléaire",
+            "text": "Le nucléariste dispose de leviers spécifiques que la lecture d'un compte rendu ne remplace pas : confrontation des images corrigées et non corrigées, vérification de l'alignement TEP/scanner, repérage du contraste ou du métal sur le scanner, et possibilité de reprendre l'acquisition de façon synchronisée sur la respiration. C'est lui qui peut affirmer qu'un foyer est un artefact et non une lésion, et éviter ainsi un sur-traitement ou un examen invasif inutile."
+          }
+        ]
+      },
+      {
+        "title": "Démarche : comment l'artefact est écarté et ce que cela change pour vous",
+        "text": "Devant un foyer suspect, le médecin nucléaire suit une démarche structurée : il vérifie d'abord la superposition des images TEP et scanner, relit les images dites « non corrigées » (qui ne subissent pas l'erreur de correction d'atténuation), recherche un produit de contraste ou un objet métallique sur le scanner, et envisage au besoin une acquisition synchronisée sur la respiration pour les zones proches du diaphragme. Concrètement, pour le clinicien adresseur, cela signifie qu'un foyer signalé comme artefactuel sur le compte rendu ne doit pas déclencher de bilan complémentaire ; à l'inverse, une zone proche du diaphragme jugée douteuse peut justifier une reprise d'imagerie plutôt qu'une biopsie immédiate.",
+        "list": [
+          "Interface foie-poumon et bases pulmonaires : zone n° 1 à risque de mauvaise localisation d'un foyer.",
+          "Matériel métallique : peut faire surestimer la fixation au bord de l'implant.",
+          "Produit de contraste (oral ou intraveineux) : peut générer un faux foyer chaud.",
+          "Mention « confronté aux images non corrigées » dans un compte rendu : gage de fiabilité de l'interprétation."
+        ]
+      },
+      {
+        "title": "Apport de la médecine nucléaire et bonne formulation de la demande",
+        "text": "La valeur ajoutée du nucléariste n'est pas seulement de produire l'image, mais de garantir que la valeur de fixation (utilisée pour le bilan d'extension, le suivi sous traitement et l'évaluation de réponse) est réellement interprétable. Pour faciliter cette lecture, transmettez les informations cliniques utiles : présence de prothèses ou de matériel implanté, antécédents chirurgicaux, diabète et équilibre glycémique, et la question clinique précise. Si un examen antérieur a montré un foyer douteux près du diaphragme ou d'un implant, le signaler permet d'adapter le protocole d'acquisition dès le départ.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Optimiser la demande",
+            "text": "Préciser le matériel implanté, l'usage attendu de contraste et la question clinique permet au service d'adapter le protocole (acquisition synchronisée sur la respiration, réduction des artefacts métalliques) et d'éviter une seconde convocation."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - A1 · Carte d'identité de l'artefact de correction d'atténuation en TEP-TDM",
+        "text": "**Comment lire cette carte.** L'artefact de correction d'atténuation (CA) n'est pas un traceur ni une maladie : c'est une **erreur systématique de reconstruction** propre à la TEP-TDM (tomographie par émission de positons couplée à la tomodensitométrie), où une carte d'atténuation TDM (**CTAC**, *CT-based attenuation correction*) erronée ou mal alignée crée de **faux foyers** (chauds ou froids) et **fausse la quantification (SUV)**. Sa cause la plus fréquente est le **décalage respiratoire** (*misregistration*) à l'interface foie-poumon. Cette fiche-réflexe résume le mécanisme, la sémiologie et la parade.\n\n| Élément | Valeur | Repère |\n|---|---|---|\n| **Nature** | Erreur quantitative + faux foyer sur l'image TEP corrigée | Artefact de reconstruction, non lésionnel [25,35] |\n| **Modalité concernée** | TEP-TDM (¹⁸F-FDG et tout traceur TEP) ; analogue en TEMP-TDM | CTAC remplace la transmission ⁶⁸Ge historique [36,47] |\n| **Cause n°1** | Décalage respiratoire TEP/TDM à la coupole diaphragmatique | TDM figée vs TEP moyennée sur les cycles [2,28] |\n| **Aspect typique** | Bande **froide curviligne** sous-diaphragmatique (« banana artifact ») | Foie corrigé comme du poumon [27] |\n| **Amplitude du mismatch** | jusqu'à **44,4 ± 25,5 mm** (TDM inspi max vs TEP libre) | vs **0,4 mm** en expiration normale [1] |\n| **Autres faux foyers** | Métal, produit de contraste, troncature (bras), mouvement | Tous via une µ-map biaisée [6,29,8,35] |\n| **Énergie de référence TEP** | photons d'annihilation **511 keV** | µ extrapolés des HU de la TDM [17,18] |\n| **Clé diagnostique** | Relire les images **non corrigées (NAC)** | Foyer présent en AC mais absent en NAC = artefact [23,35] |\n| **Parades** | Respiration calme, TEP-TDM 4D (gating), MAR métal, FOV étendu | Selon le type d'artefact [3,37,6,9] |\n| **Impact clinique** | Sur/sous-estimation du SUV, mislocalisation, faux défauts | Jusqu'à **40 %** de faux défauts cardiaques en ⁸²Rb [3] |\n\n**Pourquoi cet artefact mérite un article dédié.** La reconnaissance des artefacts de CA est **transversale** à toute interprétation TEP : elle conditionne la fiabilité du SUV utilisé pour le staging, le restaging et l'évaluation de réponse (PERCIST, Deauville). Un faux foyer chaud du dôme hépatique peut être pris pour une métastase ; un faux défaut myocardique peut être lu comme une ischémie. La parade est conceptuellement simple — confronter image corrigée (AC) et non corrigée (NAC) — mais suppose d'en comprendre la chaîne physique (§A2), le mécanisme générateur (§A3) et la taxonomie complète (§A4).",
+        "stats": [
+          {
+            "value": "511 keV",
+            "label": "Énergie des photons à corriger [17]"
+          },
+          {
+            "value": "44,4 mm",
+            "label": "Mismatch max TDM/TEP à la coupole [1]"
+          },
+          {
+            "value": "40 %",
+            "label": "Faux défauts cardiaques ⁸²Rb (Gould) [3]"
+          },
+          {
+            "value": "NAC",
+            "label": "Image clé pour démasquer l'artefact [23]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège fondateur",
+            "text": "Tout foyer **chaud ou froid** situé à l'**interface foie-poumon**, au contact d'un **implant métallique**, d'un **produit de contraste** ou en **périphérie** d'un patient bras baissés doit être considéré comme un artefact de CA **jusqu'à preuve du contraire**. La preuve se fait par confrontation aux images **non corrigées (NAC)** : un foyer présent uniquement sur l'image corrigée (AC) et absent sur la NAC est un artefact de reconstruction, non une lésion [23,35]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "L'artefact de CA est **indépendant du radiotraceur** : il découle de la chaîne TDM → µ-map → 511 keV, pas de la biologie du traceur. Le ¹⁸F-FDG (2-désoxy-2-[¹⁸F]fluoro-D-glucose) sert ici de support pédagogique car il domine la pratique, mais le raisonnement vaut pour le ⁸²Rb cardiaque, le ⁶⁸Ga-DOTATATE ou le ¹⁸F-PSMA. C'est la **géométrie** (alignement TDM/TEP) et la **physique** (conversion HU→µ₅₁₁) qui sont en jeu, pas la cible moléculaire."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Détection en coïncidence de deux photons d'annihilation de 511 keV émis à 180° : le trajet traversant les tissus profonds est atténué, d'où la nécessité d'une carte de correction d'atténuation dont les erreurs génèrent les artefacts."
+      },
+      {
+        "title": "A2 - A2 · Comprendre la chaîne de correction d'atténuation : de la TDM à la µ-map à 511 keV",
+        "text": "**Pourquoi corriger l'atténuation.** Les deux photons d'annihilation de **511 keV** émis à 180° doivent traverser une épaisseur tissulaire variable avant d'atteindre les détecteurs en coïncidence. À 511 keV, l'interaction dominante est l'**effet Compton**. Sans correction, l'activité des structures **profondes** (médiastin, foie) est **sous-estimée** (elles paraissent faussement froides) tandis que les structures **superficielles ou peu denses** (peau, poumon) paraissent faussement chaudes : la correction d'atténuation est donc **indispensable à toute quantification du SUV** (*standardized uptake value*) [35,36].\n\n**De la transmission ⁶⁸Ge à la CTAC.** Historiquement, la carte d'atténuation (µ-map) était acquise par une **source de transmission externe** émettant des photons de 511 keV en coïncidence — typiquement le **germanium-68 (⁶⁸Ge)** — tournant autour du patient. Cette image de transmission était **lente et bruitée**. La TEP-TDM moderne remplace cette source par un **scanner TDM basse dose**, d'où les avantages : acquisition **beaucoup plus rapide**, µ-map **peu bruitée**, **localisation anatomique** par fusion, et suppression de l'entretien d'une source radioactive [36,47]. Mais ce remplacement introduit précisément le **péché originel** détaillé en §A3.\n\n**Le cœur du problème : convertir des HU en coefficients d'atténuation à 511 keV.** La TDM mesure l'atténuation à une **énergie effective d'environ 70 keV** (faisceau polychromatique 80–140 kVp), où l'effet **photoélectrique** (dépendant du numéro atomique Z) pèse encore lourd, alors que la TEP travaille à **511 keV** où seul le Compton (dépendant de la densité électronique) compte [17]. Les deux énergies ne « voient » donc pas les tissus de la même façon — il faut une **fonction de conversion**.\n\nLe coefficient d'atténuation linéaire (LAC) de l'eau à 511 keV vaut environ **0,096 cm⁻¹** en faisceau étroit, valeur parfois remplacée par **0,093 cm⁻¹** issue des transmissions au ⁶⁸Ge pour réduire le biais résiduel et rendre la CTAC quasi équivalente à la transmission pour les tissus humains [18]. Les unités Hounsfield (HU) s'échelonnent de **−1000 HU (air)** à **0 HU (eau)**, au-delà desquelles on entre dans le domaine eau/os [17].\n\n**La mise à l'échelle bilinéaire.** La conversion repose sur une fonction **bilinéaire à deux segments** (LAC₅₁₁ = a × HU + b), avec un point de bascule autour de **0 HU** [17,36] :\n\n| Domaine HU | Composition modélisée | Logique de conversion |\n|---|---|---|\n| **HU < 0** | Mélange **air / eau** | Pente reliant l'air (LAC≈0) à l'eau (0,096 cm⁻¹) [17,18] |\n| **HU > 0** | Mélange **eau / os cortical** | Pente distincte (l'os a une composition ≠ tissu mou) [17,36] |\n| **HU > 1000** | Os cortical vs spongieux | Modèle « trois droites » proposé pour affiner [17] |\n\nLa deuxième pente diffère de la première car l'os a une **densité et un Z** très différents du tissu mou : appliquer une pente unique surcorrigerait ou sous-corrigerait l'os. C'est exactement cette logique de **classification implicite des HU** qui est prise en défaut par le **produit de contraste iodé** (HU élevés mal classés comme os) et par le **métal** (HU aberrants), comme détaillé en §A4 [29,6].",
+        "stats": [
+          {
+            "value": "~70 keV",
+            "label": "Énergie effective de la TDM [17]"
+          },
+          {
+            "value": "511 keV",
+            "label": "Énergie cible TEP [18]"
+          },
+          {
+            "value": "0,096 cm⁻¹",
+            "label": "µ eau à 511 keV (→ 0,093) [18]"
+          },
+          {
+            "value": "0 HU",
+            "label": "Point de bascule bilinéaire [17]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi deux pentes et pas une",
+            "text": "À 70 keV l'os atténue par photoélectrique (∝ Z³ environ) ; à 511 keV il n'atténue plus que par Compton (∝ densité électronique). Le rapport µ_os/µ_eau **change avec l'énergie** : il est bien plus élevé en TDM qu'en TEP. Une conversion linéaire unique calée sur l'eau **surestimerait fortement** l'atténuation osseuse à 511 keV. La bilinéaire corrige ce biais en attribuant une pente propre au segment osseux [17,18]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — toute substance à HU élevé est un piège",
+            "text": "La conversion suppose que les HU reflètent un mélange **physiologique** air/eau/os. Dès qu'une substance **non physiologique** à HU élevé apparaît — **iode** de contraste (jusqu'à 3071 HU) ou **métal** — elle est mal classée comme « os dense » et reçoit un facteur de mise à l'échelle erroné, d'où une **surcorrection** et un faux foyer chaud (cf. §A4) [29,6]."
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Chaîne de correction d'atténuation en TEP-TDM : la TDM acquise à ~70 keV fournit des unités Hounsfield converties par fonction bilinéaire en coefficients d'atténuation à 511 keV, qui pondèrent la reconstruction TEP du ¹⁸F-FDG."
+      },
+      {
+        "title": "A3 - A3 · Le péché originel : asynchronisme temporel TEP (respiration libre) vs TDM (instantanée)",
+        "text": "**Le défaut de naissance de la TEP-TDM.** La TEP et la TDM d'un même examen ne sont **pas acquises dans le même temps respiratoire**. La **TDM est quasi instantanée** : elle fige **une seule phase** du cycle respiratoire (souvent une inspiration retenue ou une portion arbitraire du cycle en respiration libre). La **TEP est lente** : chaque pas de lit intègre la **moyenne de nombreux cycles respiratoires** en respiration libre [2,28]. La µ-map issue de la TDM (un instantané) est donc appliquée à une émission TEP (une moyenne temporelle) qu'elle ne représente pas spatialement — c'est le **mismatch intrinsèque**, maximal là où le mouvement est le plus ample : la **coupole diaphragmatique** et les **bases pulmonaires**.\n\n**Amplitude du désalignement.** Les chiffres pivots quantifient ce décalage cranio-caudal de la coupole :\n\n| Condition d'acquisition TDM | Décalage TEP libre vs TDM | Source |\n|---|---|---|\n| **Inspiration maximale** | **44,4 ± 25,5 mm** (étendue 8,7–82,9 mm) | Goerres 2002 [1] |\n| **Expiration normale** | **0,4 mm** | Goerres 2002 [1] |\n| Respiration libre (moyenne globale) | **7,55 ± 4,73 mm** | Cohade 2003 [1] |\n| Respiration libre, **bases pulmonaires** | **10,2 ± 6,55 mm** | Cohade 2003 [1] |\n| Respiration libre, **apex** | **6,67 ± 4,28 mm** | Cohade 2003 [1] |\n\nLe contraste entre **44 mm** en inspiration profonde et **0,4 mm** en expiration normale est l'enseignement central : c'est lui qui fonde la recommandation d'acquérir la TDM de CA en **respiration calme** (cf. §A4 et le volet préparation), au plus proche de la moyenne TEP [1].\n\n**Le mécanisme de la bande froide curviligne (« banana artifact »).** Quand la TDM est acquise en **inspiration profonde**, le diaphragme descend et les poumons se remplissent d'air ; à l'emplacement où la TEP (moyennée) voit du foie ou du dôme hépatique, la TDM enregistre de l'**air** (poumon). La µ-map y porte donc des coefficients d'atténuation **faibles** (poumon) appliqués à une zone réellement dense (foie). La conséquence est une **sous-correction** : la région devient **trop froide**, dessinant une **bande curviligne froide** parallèle à la coupole. Symétriquement, un foyer hypermétabolique du **dôme hépatique** peut être projeté/mislocalisé dans la **base pulmonaire** [27]. Osman et al. ont décrit ces bandes froides avec une **largeur moyenne de 14–16 mm** en respiration libre [1]. Ces artefacts froids curvilignes ont été notés sur **84 %** des acquisitions TEP-TDM, et étaient **absents** sur les images corrigées par transmission ⁶⁸Ge — preuve directe que c'est bien la CTAC, et non la biologie, qui les engendre [27].\n\n**Conséquences quantitatives.** Le mismatch ne déplace pas seulement les foyers : il **fausse le SUV et le volume** :\n\n| Paramètre affecté | Effet rapporté | Source |\n|---|---|---|\n| Sous-estimation du SUVmax (lésion 1 cm, mvt 11 mm) | **28 %** | Liu 2009 [1] |\n| Sous-estimation SUVmax (inspi vs expi max) | **6–24 %** | Erdi 2004 [1] |\n| Baisse de concentration FDG (tumeurs pulmonaires) | **42 ± 12 %** | Goerres 2003 [1] |\n| Surestimation du volume tumoral (lésion 1 cm) | **+130 %** | Liu 2009 [1] |\n| Variation SUVmax (TDM std vs moyennée, 229 patients) | jusqu'à **73 %** | Chi 2008 [1] |\n| Patients avec ≥ 1 désalignement | **68 %** | Chi 2008 [1] |\n\n**L'illustration cardiologique pivot.** En TEP de perfusion myocardique au **⁸²Rb (rubidium-82)**, Gould et al. (259 patients) ont montré que le misregistration TDM/émission cause des **défauts artefactuels faux-positifs chez 40 % des patients**, normalisés par une **TDM ciné moyennée** sur la respiration et un recalage visuel [3]. C'est le rappel que l'artefact de CA peut **mimer une ischémie** et fausser une décision clinique majeure.",
+        "stats": [
+          {
+            "value": "44,4 mm",
+            "label": "Mismatch inspi max vs TEP libre [1]"
+          },
+          {
+            "value": "0,4 mm",
+            "label": "Mismatch en expiration normale [1]"
+          },
+          {
+            "value": "84 %",
+            "label": "Acquisitions avec bande froide [27]"
+          },
+          {
+            "value": "28 %",
+            "label": "Sous-estimation SUVmax à 11 mm [1]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1. TDM instantanée",
+            "text": "Le scanner fige une seule phase respiratoire (souvent inspiration), produisant une µ-map ne représentant qu'un instant du cycle [2,28]."
+          },
+          {
+            "title": "2. TEP moyennée",
+            "text": "Chaque pas de lit TEP intègre de nombreux cycles en respiration libre : l'émission est une moyenne temporelle de la position du diaphragme [2,28]."
+          },
+          {
+            "title": "3. Mismatch spatial",
+            "text": "La µ-map (instantané) est appliquée à une émission (moyenne) décalée jusqu'à 44 mm à la coupole — air de la TDM en regard du foie de la TEP [1]."
+          },
+          {
+            "title": "4. Faux foyer / fausse extinction",
+            "text": "Sous-correction → bande froide curviligne sous-diaphragmatique ; ou foyer hépatique mislocalisé en base pulmonaire ; SUV faussé [27,1]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la bande froide n'est pas une lésion",
+            "text": "Une **bande froide curviligne** parallèle à la coupole, ou un **foyer du dôme hépatique apparaissant dans la base pulmonaire**, doit faire évoquer d'emblée un décalage respiratoire. Confronter aux images **NAC** (la fausse extinction y disparaît) et, en cas de doute persistant sur une lésion juxta-diaphragmatique, envisager une reprise en **respiration calme** ou en **4D** [27,35,37]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi l'expiration normale gagne",
+            "text": "La position du diaphragme en **expiration normale** est celle où le patient passe le plus de temps : c'est donc la phase qui ressemble le plus à la **moyenne TEP** (mismatch 0,4 mm). À l'inverse, l'**inspiration profonde retenue**, idéale pour une TDM diagnostique pulmonaire, est la **pire** pour la CA d'une TEP en respiration libre (mismatch 44 mm). D'où la dissociation possible : TDM diagnostique en apnée pour le poumon + TDM de CA en respiration calme [1]."
+          }
+        ],
+        "figureKey": "VQ_LUNGS",
+        "figureAlt": "Interface foie-poumon à la coupole diaphragmatique : en inspiration profonde la TDM voit de l'air là où la TEP moyennée voit du foie, produisant une sous-correction en bande froide curviligne."
+      },
+      {
+        "title": "A4 - A4 · Taxonomie des artefacts de CTAC : décalage, métal, contraste, troncature",
+        "text": "Au-delà du décalage respiratoire (§A3), toute source de **µ-map erronée** génère un artefact de CA. On les classe en quatre grandes familles, auxquelles s'ajoute le mouvement global du patient. La **règle d'or commune** reste la confrontation aux images **non corrigées (NAC)** [23,35].\n\n## 1. Décalage respiratoire (rappel) — sur- ET sous-correction\nMécanisme et chiffres détaillés en §A3 : mismatch jusqu'à **44,4 mm** à la coupole, bande froide curviligne, SUV sous-estimé jusqu'à **28 %**, surestimation de volume **+130 %** [1]. Parade : respiration calme, **TEP-TDM 4D** (cf. encadré), TDM ciné moyennée [1,3,37].\n\n## 2. Produit de contraste (oral / IV) — SURESTIMATION (faux foyer chaud)\nLe contraste **iodé** (Z élevé) augmente les HU jusqu'à **3071 HU** selon la concentration ; il peut être **mal classé comme os dense** par la fonction bilinéaire (cf. §A2) et recevoir un facteur de mise à l'échelle erroné → **surcorrection** → faux foyer chaud [29].\n\n| Agent | Effet sur la µ-map / le SUV | Source |\n|---|---|---|\n| Contraste **oral** dense (régions classées 3D) | Surestimation de **24,4 % à 37,3 %** | Nehmeh 2003 [29] |\n| Agents oraux (µ TEP) | Surestimation **+26,2 %** ; erreur SUV ~**4,4 %** (faible) | Dizendorf 2003 [4] |\n| Contraste **IV iodé** | HU ↑ → facteurs d'atténuation ↑ ; effet en règle **non significatif** cliniquement | Yau 2005 [5] |\n| Après algorithme de segmentation du contraste (SCC) | Correction du SUV (variation jusqu'à **104,3 %**) | Ahmadian 2008 [30] |\n\n**Parade** : relire la **NAC**, préférer un **baryté de faible densité** ; pour le contraste de faible densité, l'effet est non cliniquement significatif [4,5,19].\n\n## 3. Implants métalliques (dentaire, prothèse de hanche, pacemaker) — sur/sous-correction\nLe métal atténue massivement les rayons X → **trous dans les projections** → **stries** sur la TDM → µ-map aberrante [7].\n\n| Situation | Effet sur l'activité mesurée | Source |\n|---|---|---|\n| Bord de prothèse (CTAC standard) | Surestimation jusqu'à **×8 (8-fold)** : traceur « dans » le métal | van der Vos 2017 [6] |\n| Activité lésionnelle péri-prothétique (hanche) | Surestimation ~**40 %** | Harnish 2014 [7] |\n| Hanche, activité globale (TDM conventionnelle) | **−2 à −13 %** | Harnish 2014 [7] |\n| Amalgames dentaires (27 cas) | **100 %** d'artefacts TDM ; **74 %** → surestimation visuelle FDG | Buchbender 2013 [32] |\n\n**Parade** : algorithmes de **réduction d'artefact métallique (MAR / iMAR / MARCTAC)** par inpainting du sinogramme, qui ramènent l'écart aux valeurs de référence à **< 5 %** et augmentent l'activité mesurée jusqu'à **+11 %** vs TDM conventionnelle [6,7]. En péri-prothétique, augmentation médiane du SUV de **+1,4 % à +7,8 %** après MAR [31].\n\n## 4. Troncature (bras le long du corps) — sur-correction du liseré, sous-correction au-delà\nEn position **bras baissés** ou chez le sujet corpulent, le corps **dépasse le champ de vue transverse de la TDM (FOV)** : les données TEP périphériques n'ont pas de TDM correspondante. Résultat : **surestimation** de l'activité au niveau du liseré (*rim*), **sous-estimation** au-delà du bord du FOV, durcissement de faisceau et stries latérales entre les bras [8,9]. **Parade** : algorithme de troncature, **reconstruction à FOV étendu** (*extended FOV*), et de préférence **bras levés** pour l'imagerie thoraco-abdominale [8].\n\n## 5. Mouvement global du patient (entre TDM et TEP)\nDésalignement global, **dédoublement** de tumeur, discontinuités du diaphragme : erreurs de localisation **ET** CA incorrecte [25,35].\n\n---\n\n**Synthèse — quel sens d'erreur pour quel artefact :**\n\n| Famille | Sens dominant | Aspect | Parade clé |\n|---|---|---|---|\n| Décalage respiratoire | Sous-correction (± mislocalisation) | Bande froide curviligne | Respiration calme, 4D [1,37] |\n| Contraste iodé | Sur-correction | Faux foyer chaud digestif/vasculaire | NAC, baryté faible densité [29,4] |\n| Métal | Sur- et sous-correction | Halo chaud au bord + stries | MAR / iMAR [6,7] |\n| Troncature (bras) | Sur-corr. liseré / sous-corr. au-delà | Liseré chaud, périphérie froide | FOV étendu, bras levés [8,9] |\n| Mouvement patient | Variable | Dédoublement, discontinuités | Recalage, reprise [25,35] |",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la règle d'or NAC s'applique à toutes les familles",
+            "text": "Quelle que soit la famille d'artefact, le réflexe est identique : tout foyer suspect au contact du **diaphragme/foie**, d'un **métal**, d'un **contraste** ou en **périphérie** d'un patient tronqué doit être confronté aux images **non corrigées (NAC)**. La NAC ne subit pas l'erreur de CA : un foyer présent en AC mais absent en NAC est un artefact ; à l'inverse, la visibilité de métastases pulmonaires est améliorée sur NAC dans **41 %** des cas [23,35,40]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la TEP-TDM 4D, parade du décalage respiratoire",
+            "text": "La TEP-TDM **4D (gating respiratoire)** trie les données en *bins* par **phase** ou par **amplitude** (l'amplitude gating étant supérieur en respiration irrégulière) [20]. Elle améliore la quantification surtout pour les lésions **< 10 mm** et juxta-diaphragmatiques : hausse du SUVmax jusqu'à **+83,3 %**, et réduction des lésions équivoques de ~**24 %** (non gaté) à ~**4 %** (4D) [37]. La **MIP-CTAC** donne les coefficients de récupération les plus exacts en 4D [39]. Limite : la division en fenêtres courtes réduit les comptages → **bruit accru** [37]."
+          },
+          {
+            "type": "info",
+            "title": "Le ¹⁸F-FDG, support de la démonstration",
+            "text": "Tous ces artefacts sont illustrés sur le ¹⁸F-FDG (période **109,7–110 min**, émetteur β⁺ vers ¹⁸O, **2 photons de 511 keV** ; dose efficace **0,019 mSv/MBq** selon ICRP 128, organe critique = paroi vésicale **0,075 mGy/MBq**), mais ils sont indépendants de la biologie du traceur et valent pour tout examen TEP [14,16,26]. La composante TDM contribue jusqu'à **81 %** de la dose efficace totale de l'examen, ce qui justifie d'optimiser — sans dégrader la CA — le protocole TDM [42]."
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Taxonomie des quatre familles d'artefacts de correction d'atténuation en TEP-TDM au ¹⁸F-FDG : décalage respiratoire, produit de contraste iodé, implants métalliques et troncature, chacun corrompant la carte d'atténuation."
+      },
+      {
+        "title": "B5 - B5 · Réaliser une acquisition anti-décalage respiratoire : TDM de CA, fin d'expiration, gating",
+        "text": "**Objectif opérationnel.** L'artefact de décalage respiratoire naît d'une incompatibilité temporelle intrinsèque : la **TDM de correction d'atténuation (CTAC)** fige une seule phase respiratoire en quelques secondes, tandis que l'émission **TEP** (tomographie par émission de positons) intègre la moyenne de nombreux cycles respiratoires sur plusieurs minutes par pas de lit [2,28]. Toute la stratégie d'acquisition consiste donc à **rapprocher la phase TDM de la position moyenne de la TEP libre**, en priorité à l'interface foie-poumon où le mouvement crânio-caudal est maximal.\n\n**Pourquoi l'instruction respiratoire est-elle le levier n°1.** L'amplitude du mismatch dépend directement de la consigne donnée pendant la TDM. En **inspiration maximale** retenue, la coupole diaphragmatique descend et le décalage TDM/TEP atteint **44,4 ± 25,5 mm** (étendue 8,7–82,9 mm) à la coupole ; en **expiration normale**, ce décalage chute à **0,4 mm** seulement [1]. La consigne d'acquisition n'est donc pas un détail : elle module l'erreur d'un facteur 100.\n\n| Phase TDM imposée | Décalage TDM/TEP à la coupole | Risque d'artefact |\n|---|---|---|\n| Inspiration maximale retenue | **44,4 ± 25,5 mm** [1] | Maximal (bande froide, faux foyers) |\n| Respiration libre / calme | mismatch moyen **7,55 ± 4,73 mm** [1] | Modéré, acceptable en routine |\n| **Expiration normale** | **0,4 mm** [1] | Minimal — meilleur compromis |\n\n**Mécanisme de la bande froide (« banana artifact »).** Lorsque la TDM est acquise en inspiration profonde, le diaphragme est abaissé : à l'emplacement habituel de la coupole, la TDM enregistre de l'**air pulmonaire** au lieu de tissu hépatique. La carte d'atténuation y est donc **sous-estimée**, et une portion de foie est corrigée comme si c'était du poumon → bande curviligne **artificiellement froide** parallèle à la coupole [25]. Inversement, un foyer hypermétabolique du dôme hépatique peut être projeté dans la base pulmonaire (mislocalisation crânio-caudale) [2]. Ces artefacts froids curvilignes sont notés sur **84 %** des acquisitions TEP-TDM avec CTAC, alors qu'ils sont **absents** des images corrigées par transmission au germanium-68 (⁶⁸Ge) [27].\n\n**Protocole de routine recommandé.** Pour l'imagerie oncologique thoraco-abdominale, la consigne socle est une **respiration calme superficielle** (ou expiration normale) pendant la CTAC, sans apnée profonde, afin de matcher la position moyenne de la TEP [28]. La CTAC reste une **acquisition basse dose** : un niveau ultra-bas reproductible a été déterminé à **0,3 mSv** (combinaison 100 kVp / 10 mA) en étude fantôme, suffisant pour une correction d'atténuation fiable [41].\n\n**Quand passer à la TEP-TDM 4D (gating respiratoire).** Pour les lésions juxta-diaphragmatiques, des bases pulmonaires ou du dôme hépatique, et pour les **lésions < 10 mm** où le flou de mouvement dégrade le plus la quantification, l'acquisition synchronisée 4D est indiquée [37,38]. Le signal respiratoire (ceinture de pression, capteur optique, marqueur externe) trie les données en **bins** :\n\n| Méthode de tri (gating) | Principe | Atout / limite |\n|---|---|---|\n| **Phase gating** | Bins par fraction du cycle respiratoire | Simple ; sensible aux respirations irrégulières |\n| **Amplitude gating** | Bins par niveau d'amplitude du signal | **Supérieur** si respiration irrégulière ; technique automatisée validée cliniquement [20] |\n| **Breath-hold / DIBH** | Apnée en position reproductible | Pas de surdose ni recalage 4D ; erreurs si respiration irrégulière [20] |\n\n**Gains chiffrés du 4D.** Le gating respiratoire augmente le SUVmax (Standardized Uptake Value maximal) jusqu'à **+83,3 %** pour les petites lésions proches du diaphragme, avec un gain global de l'ordre de **+18,1 %** selon la méthode [37,38]. Cliniquement, la proportion de lésions équivoques passe d'environ **24 %** (non gaté) à **4 %** (4D), et près de **60 %** des lésions équivoques sont requalifiées positives [37]. Une **CTAC en projection d'intensité maximale (MIP-CTAC)** produit des coefficients de récupération plus exacts que les autres méthodes de CTAC en TEP 4D [39]. La contrepartie est le **bruit** : la division en fenêtres temporelles courtes réduit les comptages par bin, ce qui dégrade surtout le SUVmax à faible rapport signal/fond [37] ; les approches de recalage des bins (Q.Freeze, optical flow, deep learning) reconstituent une image unique corrigée du mouvement avec de bonnes statistiques [21].\n\n**Spécificité cardiologie.** En TEP de perfusion au rubidium-82 (⁸²Rb), le misregistration TDM/émission est une cause majeure de **faux défauts de perfusion** : sur 259 patients, il génère des défauts artefactuels chez **40 %** des patients, normalisés par une **TDM ciné moyennée sur la respiration** et un recalage visuel systématique [3]. Le contrôle qualité du recalage TDM/émission y est exigé par les recommandations [22].",
+        "stats": [
+          {
+            "value": "44,4 mm",
+            "label": "Décalage TDM/TEP en inspiration max [1]"
+          },
+          {
+            "value": "0,4 mm",
+            "label": "Décalage en expiration normale [1]"
+          },
+          {
+            "value": "84 %",
+            "label": "Acquisitions avec bande froide curviligne [27]"
+          },
+          {
+            "value": "40 %",
+            "label": "Faux défauts en TEP ⁸²Rb sans recalage [3]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Préparer le signal respiratoire",
+            "text": "Décider du protocole selon la cible : respiration calme superficielle en routine ; acquisition 4D synchronisée (ceinture/capteur optique) si lésion juxta-diaphragmatique ou < 10 mm [28,37]."
+          },
+          {
+            "title": "Acquérir la CTAC en bonne phase",
+            "text": "Réaliser la TDM de correction d'atténuation en expiration normale (mismatch 0,4 mm vs 44 mm en inspiration profonde), en mode basse dose (~0,3 mSv possible : 100 kVp/10 mA) [1,41]."
+          },
+          {
+            "title": "Trier en bins si 4D",
+            "text": "Privilégier l'amplitude gating en cas de respiration irrégulière ; envisager MIP-CTAC pour des coefficients de récupération plus exacts [20,39]."
+          },
+          {
+            "title": "Vérifier l'alignement",
+            "text": "Contrôler la superposition TEP/TDM à la coupole sur la fusion ; en cardiologie, recaler manuellement et utiliser une TDM ciné moyennée [3,22]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — TDM en inspiration profonde",
+            "text": "Une CTAC acquise en apnée inspiratoire profonde maximise le décalage à la coupole (jusqu'à 44,4 ± 25,5 mm) et génère la bande froide curviligne sous-diaphragmatique avec mislocalisation des foyers du dôme hépatique vers la base pulmonaire [1,25]. Préférer l'expiration normale ou la respiration calme."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — choisir la méthode de gating",
+            "text": "L'amplitude gating est supérieur au phase gating quand la respiration est irrégulière, car il trie sur la position réelle du diaphragme et non sur une fraction théorique du cycle [20]. Le breath-hold/DIBH évite la surdose et le recalage 4D mais suppose une respiration régulière et une apnée reproductible."
+          },
+          {
+            "type": "info",
+            "title": "Pourquoi le 4D pour les petites lésions",
+            "text": "Le gain de SUVmax du 4D atteint +83,3 % sur les petites lésions juxta-diaphragmatiques, là où le flou de mouvement et le décalage de CA pénalisent le plus la quantification ; les lésions équivoques chutent de ~24 % à ~4 % [37,38]."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Schéma de la détection en coïncidence en TEP : annihilation du positon, émission de deux photons de 511 keV à 180°, ligne de réponse — base physique de l'acquisition moyennée sur plusieurs cycles respiratoires que la CTAC instantanée doit rejoindre."
+      },
+      {
+        "title": "B6 - B6 · Réaliser sans faux foyers : positionnement des bras, contraste, métal, troncature",
+        "text": "**Principe général.** Au-delà du décalage respiratoire (§B5), plusieurs causes de **faux foyers liés à la CTAC** se gèrent dès l'acquisition, par le positionnement et les choix de protocole. Toutes partagent le même mécanisme : une valeur d'atténuation TDM erronée (trop haute ou tronquée) est convertie en coefficient d'atténuation à **511 keV** par la **mise à l'échelle bilinéaire HU → 511 keV** (point de bascule autour de 0 HU, pente os ≠ pente tissu mou), et propage l'erreur dans l'image TEP corrigée [17,36]. La parade transversale est de **toujours relire les images non corrigées de l'atténuation (NAC)** : un foyer présent sur l'AC et absent sur la NAC est un artefact, pas une lésion [23,35].\n\n**(a) Positionnement des bras — troncature et durcissement de faisceau.** En **bras le long du corps**, le tronc dépasse le **champ de vue transverse de la TDM (FOV, field of view)**, plus étroit que celui de la TEP : les bras et les flancs ne sont pas couverts par la carte d'atténuation [8]. Conséquences : **surestimation** de l'activité sur le liseré (rim) à la limite du FOV TDM et **sous-estimation** au-delà du bord [8,9]. S'y ajoutent le **durcissement de faisceau (beam hardening)** et des stries latérales entre les bras [8]. Correction : algorithme de troncature et reconstruction à **FOV étendu (extended FOV)** ; surtout, **bras levés** pour l'imagerie thoraco-abdominale, **abaissés** seulement pour la tête-et-cou [8].\n\n**(b) Produit de contraste — faux foyer chaud par surcorrection.** Le contraste iodé intraveineux (IV) ou oral à Z élevé augmente fortement les unités Hounsfield (jusqu'à **3 071 HU**) ; mal classé comme **os dense** par la fonction bilinéaire, il reçoit un facteur de mise à l'échelle erroné → **surcorrection d'atténuation** → faux foyer chaud [29]. L'ampleur dépend de la densité du contraste :\n\n| Type de contraste | Effet sur l'atténuation TEP | Conduite |\n|---|---|---|\n| **Oral baryté haute densité** | Surestimation des µ jusqu'à **+24,4 à +37,3 %** dans les régions concentrées [29] ; après correction par segmentation, baisse marquée du SUV [30] | Préférer un **baryté de faible densité** ; relire NAC [25,30] |\n| **Oral basse densité** | Erreur sur le SUV faible (~quelques %), non cliniquement significative [4] | Acceptable en routine [4] |\n| **IV iodé** | HU élevés → facteurs d'atténuation majorés ; effet en règle non significatif cliniquement [5] | TDM basse dose dédiée à la CA si doute ; relire NAC [5] |\n\n**(c) Métal — sous- ou surestimation locale.** Les implants (prothèses de hanche, pacemakers, amalgames dentaires, cages rachidiennes) atténuent fortement les rayons X et créent des **trous dans les projections** → stries TDM → carte d'atténuation erronée [7]. L'effet est bidirectionnel : sur une **hanche** prothétique, l'activité mesurée varie de **−2 à −13 %** en TDM conventionnelle [7] ; au bord immédiat de la prothèse, la surcorrection peut atteindre **8×** (8-fold) la concentration vraie, donnant l'illusion de traceur « dans » le métal [6]. La **réduction d'artefact métallique (MAR / iMAR)**, par inpainting du sinogramme, augmente l'activité mesurée jusqu'à **+11 %** et ramène l'écart aux valeurs de référence à **< 5 %** [7] ; en périprothétique, le SUV remonte de **+1,4 à +7,8 %** selon le secteur [31]. Sur les amalgames dentaires, **100 %** des cas présentent un artefact TDM et **74 %** entraînent une surestimation visuelle de la fixation FDG en CTAC [32].\n\n**(d) Mouvement du patient.** Un mouvement entre TDM et TEP (volontaire, cardiaque, respiratoire) crée un **désalignement global**, un dédoublement de tumeur ou des discontinuités du diaphragme → mislocalisation et CA incorrecte [35]. La parade est l'immobilisation, le confort de positionnement et, au besoin, la reprise de la TDM de CA.\n\n**Règle d'or — relecture NAC systématique.** Tout foyer suspect au voisinage du métal, du contraste, des bras ou du diaphragme doit être confronté aux images **NAC**, qui ne subissent pas l'erreur de CA [23,35]. Cette confrontation améliore aussi la détection de certaines lésions : la visibilité des **métastases pulmonaires** est meilleure sur NAC dans **41 %** des cas [40]. Le médecin interprétateur examine donc toujours les deux jeux (CTAC + NAC) [35].",
+        "stats": [
+          {
+            "value": "jusqu'à ×8",
+            "label": "Surcorrection au bord d'une prothèse [6]"
+          },
+          {
+            "value": "+24,4 à +37,3 %",
+            "label": "Surestimation µ par contraste oral dense [29]"
+          },
+          {
+            "value": "3 071 HU",
+            "label": "Densité maximale atteinte par le contraste iodé [29]"
+          },
+          {
+            "value": "< 5 %",
+            "label": "Écart résiduel après MAR sur prothèse [7]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Positionner les bras",
+            "text": "Bras levés pour le thorax-abdomen-pelvis afin d'éviter la troncature et le durcissement de faisceau ; bras abaissés réservés à l'imagerie tête-et-cou [8]."
+          },
+          {
+            "title": "Choisir le contraste",
+            "text": "Privilégier un baryté oral de faible densité ; pour le contraste IV iodé, prévoir une TDM basse dose dédiée à la CA si l'on craint la surcorrection [4,5,25]."
+          },
+          {
+            "title": "Anticiper le métal",
+            "text": "Repérer prothèses et amalgames sur le topogramme ; activer la reconstruction MAR/iMAR pour ramener l'écart de SUV périprothétique à < 5 % [7,31]."
+          },
+          {
+            "title": "Relire les images NAC",
+            "text": "Confronter systématiquement chaque foyer suspect aux images non corrigées : un foyer absent sur la NAC est un artefact de correction d'atténuation [23,35]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — faux foyer chaud sur contraste et métal",
+            "text": "Le contraste dense (jusqu'à 3 071 HU) et le métal au contact d'un tissu (surcorrection jusqu'à ×8) génèrent des foyers chauds artefactuels sur l'image corrigée, mimant une lésion. Sur amalgames dentaires, 74 % des cas surestiment visuellement la fixation FDG en CTAC [6,29,32]. Toujours vérifier la TDM (stries, hyperdensité) et relire la NAC."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — troncature bras le long du corps",
+            "text": "Bras abaissés en imagerie thoracique : le tronc dépasse le FOV TDM, d'où un liseré faussement chaud à la limite du champ et une sous-estimation au-delà, plus des stries de durcissement de faisceau entre les bras [8,9]. Lever les bras et activer la reconstruction à FOV étendu."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — MAR n'est pas neutre partout",
+            "text": "La réduction d'artefact métallique restaure une CA fiable au contact du métal (écart < 5 %) mais peut introduire de nouveaux artefacts d'interpolation à distance. Valider le résultat sur la TDM corrigée et garder la NAC comme arbitre [7,31]."
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Schéma de la captation cellulaire du ¹⁸F-FDG via GLUT puis piégeage par phosphorylation — rappel que le signal TEP quantifié par le SUV dépend d'une carte d'atténuation correcte, faussée par contraste, métal ou troncature."
+      },
+      {
+        "title": "C7 - C7 · Interpréter le décalage respiratoire : la « banane » du dôme hépatique et les fausses lésions basales",
+        "text": "**Le piège fondateur de la TEP-TDM.** L'artefact de décalage respiratoire (*respiratory misregistration*) naît d'une asymétrie temporelle entre les deux composantes de l'examen : la **TDM** (tomodensitométrie) est acquise quasi instantanément, figeant une phase respiratoire unique — souvent une inspiration retenue —, tandis que la **TEP** (tomographie par émission de positons) intègre la **moyenne de nombreux cycles respiratoires** en respiration libre.[2][28] Comme la carte d'atténuation TDM (**CTAC**, *CT-based attenuation correction*) sert à corriger les données d'émission, ce déphasage spatial à l'interface poumon/diaphragme génère deux types d'erreurs : une **fausse extinction** (faux foyer froid) et une **fausse lésion chaude** par mislocalisation crânio-caudale.[2][27]\n\n**Mécanisme de la « banane » diaphragmatique.** Lorsque la TDM est acquise en inspiration profonde, le diaphragme descend et l'expansion pulmonaire remplit d'air l'emplacement habituel du dôme hépatique. La TDM y enregistre alors une densité aérique au lieu de tissu mou : les coefficients d'atténuation sont **sous-estimés**, et lors de la reconstruction de la TEP — qui, elle, place le foie à sa position moyenne plus haute —, une portion de parenchyme hépatique est **corrigée comme si elle était du poumon**. Le résultat est une **bande curviligne « froide »**, parallèle à la coupole, suivant la concavité diaphragmatique : la « *banana artifact* ».[2][27] Symétriquement, un foyer hypermétabolique réellement situé au dôme hépatique peut être projeté dans la **base pulmonaire** sus-jacente, ou une lésion basale pulmonaire « glisser » dans le foie : c'est la **mislocalisation**, qui peut déplacer une cible chirurgicale ou de radiothérapie.[2][25]\n\n**Amplitude du désalignement — chiffres pivots.** Le décalage dépend de la consigne respiratoire. Goerres et al. ont mesuré un décalage de la coupole entre TEP libre et TDM en **inspiration maximale de 44,4 ± 25,5 mm** (étendue 8,7–82,9 mm), contre seulement **0,4 mm en expiration normale**.[1] Cohade et al. ont rapporté un misregistration moyen en respiration libre de **7,55 ± 4,73 mm** sur l'ensemble du thorax, plus marqué aux **bases (10,2 ± 6,55 mm)** qu'aux apex (6,67 ± 4,28 mm).[1] La bande froide curviligne sous-diaphragmatique a été notée sur **84 %** des acquisitions TEP-TDM, mais elle était **absente** des images historiquement corrigées par transmission au germanium-68 (⁶⁸Ge) — preuve que l'artefact est lié au mismatch CTAC et non à la physiologie.[27]\n\n**Conséquences quantitatives — pourquoi le SUV est faux.** Le déphasage altère la valeur de fixation normalisée (**SUV**, *standardized uptake value*). Liu et al. ont objectivé une **sous-estimation du SUVmax de 28 %** et une **surestimation du volume tumoral de +130 %** pour des lésions de 1 cm soumises à un mouvement diaphragmatique de 11 mm.[1] L'effet est majeur en pratique : Chi et al., sur 229 patients, ont observé des variations atteignant **73 % du SUVmax** et **1950 % du volume cible (GTV)** entre TDM standard et TDM moyennée.[1] La synchronisation respiratoire (TEP-TDM 4D) augmente le SUVmax des lésions juxta-diaphragmatiques **jusqu'à 83,3 %**, et ramène la proportion de lésions équivoques de ~**24 % à ~4 %**.[37][38]\n\n| Paramètre | Valeur | Source |\n|---|---|---|\n| Décalage coupole, TDM inspi max vs TEP libre | **44,4 ± 25,5 mm** | [1] |\n| Décalage en expiration normale | **0,4 mm** | [1] |\n| Misregistration moyen, respiration libre | 7,55 ± 4,73 mm | [1] |\n| Misregistration aux bases pulmonaires | 10,2 ± 6,55 mm | [1] |\n| Sous-estimation SUVmax (lésion 1 cm, 11 mm) | **28 %** | [1] |\n| Surestimation volume (lésion 1 cm) | **+130 %** | [1] |\n| Variation max SUVmax (TDM std vs moyennée) | jusqu'à 73 % | [1] |\n| Bande froide curviligne (fréquence) | 84 % des TEP-TDM | [27] |\n| Gain SUVmax en 4D (lésion juxta-diaphragm.) | jusqu'à +83,3 % | [37] |\n\n**Comment trancher à la lecture.** La règle d'or est la confrontation aux **images non corrigées (NAC)**, qui ne subissent pas l'erreur de CTAC : un foyer présent sur l'image corrigée mais absent sur la NAC, ou une bande froide qui disparaît sur la NAC, signe l'artefact.[23][35] On vérifie aussi visuellement l'alignement TEP/TDM coupe par coupe à la coupole, et l'on recherche la **morphologie curviligne typique** parallèle au diaphragme. Devant un foyer basal pulmonaire ou hépatique équivoque, on envisage une **reprise en respiration calme** ou une acquisition **4D synchronisée**.[28][37]",
+        "stats": [
+          {
+            "value": "44,4 mm",
+            "label": "Décalage coupole, TDM inspi max vs TEP libre [1]"
+          },
+          {
+            "value": "0,4 mm",
+            "label": "Décalage en expiration normale [1]"
+          },
+          {
+            "value": "28 %",
+            "label": "Sous-estimation SUVmax (lésion 1 cm) [1]"
+          },
+          {
+            "value": "84 %",
+            "label": "TEP-TDM avec bande froide curviligne [27]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la « banane » froide du dôme hépatique",
+            "text": "Une bande curviligne hypofixante parallèle à la coupole, à l'interface foie/poumon, n'est PAS une lésion : c'est une sous-correction d'atténuation par mismatch respiratoire (TDM en inspiration vs TEP libre). Elle est notée sur 84 % des TEP-TDM et disparaît sur les images non corrigées (NAC).[27][35] Ne jamais conclure à une lésion hépatique sous-capsulaire ou à un foyer basal sans relire la NAC et vérifier l'alignement TEP/TDM."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — instruction respiratoire avant la CTAC",
+            "text": "Le mismatch chute de ~44 mm (inspiration profonde figée) à 0,4 mm (expiration normale) : instruire au patient une respiration calme superficielle, voire une expiration légère, pendant la TDM d'atténuation rapproche la carte de la moyenne TEP et prévient l'artefact à la source.[1][28] Pour les lésions < 10 mm juxta-diaphragmatiques, l'amplitude gating 4D est supérieur au phase gating en cas de respiration irrégulière.[20]"
+          },
+          {
+            "type": "info",
+            "title": "Repère historique",
+            "text": "Avant la TEP-TDM, la correction d'atténuation utilisait une source de transmission externe au ⁶⁸Ge (511 keV) tournant autour du patient : lente et bruitée, mais acquise sur plusieurs cycles respiratoires comme la TEP, donc SANS mismatch diaphragmatique. La bande froide curviligne est précisément absente de ces acquisitions, ce qui en fait la signature de l'artefact CTAC.[27][36]"
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Détection en coïncidence des deux photons d'annihilation de 511 keV émis à 180° ; la correction d'atténuation par carte TDM est appliquée le long de la ligne de réponse, étape où un décalage respiratoire entre TDM et TEP fausse la quantification."
+      },
+      {
+        "title": "C8 - C8 · Interpréter les faux foyers chauds : métal et produit de contraste",
+        "text": "Au-delà du décalage respiratoire, deux familles de matériaux à numéro atomique (Z) élevé perturbent la conversion des unités Hounsfield (**HU**) en coefficient d'atténuation à 511 keV et engendrent de **faux foyers chauds** sur l'image corrigée : les **implants métalliques** et les **produits de contraste iodés**. Le mécanisme commun est une **surcorrection d'atténuation** : la CTAC interprète une densité TDM artificiellement élevée comme un excès de tissu à compenser, et amplifie indûment le signal d'émission à cet endroit.[6][29]\n\n**Rappel de la conversion bilinéaire (cœur du problème).** La TDM mesure l'atténuation à une **énergie effective d'environ 70 keV** (faisceau polychromatique 80–140 kVp), qu'il faut convertir vers les **511 keV** de la TEP par une **mise à l'échelle bilinéaire** : une pente pour HU < 0 (mélange air/eau), une autre pour HU > 0 (mélange eau/os cortical), car la composition de l'os diffère du tissu mou.[17][36] Le coefficient d'atténuation linéaire de l'eau à 511 keV vaut **≈ 0,096 cm⁻¹**, parfois remplacé par **0,093 cm⁻¹** issu des transmissions au ⁶⁸Ge pour réduire le biais.[18] Tout matériau qui élève les HU au-delà de la gamme des tissus humains casse cette hypothèse : c'est le cas du métal et du contraste.\n\n**Implants métalliques — la surcorrection extrême.** Le métal (prothèses de hanche, amalgames dentaires, pacemaker, cages) atténue fortement les rayons X, créant des **trous dans les projections** et des **stries** sombres/brillantes sur la TDM, donc une carte d'atténuation erronée.[6][7] Au bord de la prothèse, la concentration de traceur peut être **surestimée jusqu'à 8 fois** (8-fold), donnant l'illusion d'une fixation « dans » le métal.[6] Pour les prothèses de hanche, la surestimation de l'activité lésionnelle périprothétique atteint **~40 %** avec une CTAC standard.[6] La **réduction d'artefact métallique (MAR/iMAR**, *iterative Metal Artifact Reduction*), par interpolation des projections corrompues, augmente l'activité mesurée jusqu'à **+11 %** vs TDM conventionnelle et ramène l'écart aux valeurs de référence à **< 5 %**.[7] Sur 27 cas d'implants dentaires, **100 %** présentaient un artefact TDM et **74 %** une surestimation visuelle de la fixation FDG en CTAC.[32]\n\n**Produit de contraste — surestimation modérée mais piégeante.** Le contraste iodé (Z élevé) peut élever les HU jusqu'à **3 071 HU** ; il est alors **mal classé comme os dense** et reçoit un facteur de mise à l'échelle erroné, d'où une **surestimation de la concentration d'activité** reconstruite.[29] Nehmeh et al. ont chiffré cette surestimation entre **24,4 % et 37,3 %** dans les régions concernées selon le volume et la concentration de contraste.[29] Pour le **contraste oral**, l'effet sur l'atténuation peut atteindre **+26,2 %**, mais l'impact sur le SUV reste faible (**~4,4 %**) et le plus souvent non cliniquement significatif pour les agents de faible densité.[4] Le **contraste IV iodé** élève les facteurs d'atténuation mais n'introduit en règle générale pas d'erreur cliniquement significative dans la pratique courante.[5][19]\n\n| Source de faux foyer | Mécanisme | Ampleur | Source |\n|---|---|---|---|\n| Bord de prothèse métallique | Surcorrection (stries, trous de projection) | jusqu'à **×8** | [6] |\n| Activité périprothétique (hanche) | Surestimation CTAC standard | **~40 %** | [6] |\n| Implants dentaires | Surestimation visuelle FDG | 74 % des cas | [32] |\n| Contraste oral (atténuation) | Mauvaise classification → surcorrection | +26,2 % (SUV ~4,4 %) | [4] |\n| Contraste oral (régions denses) | Surestimation activité | 24,4–37,3 % | [29] |\n| Correction MAR/iMAR | Restaure la précision | écart final < 5 % | [7] |\n\n**Conduite à la lecture.** Pour tout foyer chaud au contact de métal ou de contraste, la démarche est identique : (1) **relire la TDM** à la recherche de stries métalliques ou d'une accumulation de contraste à l'aplomb du foyer ; (2) **confronter à la NAC** — un foyer artefactuel par surcorrection est typiquement **moins intense ou absent** sur l'image non corrigée ; (3) appliquer une **CTAC corrigée (MAR/iMAR** ou segmentation du contraste) lorsqu'elle est disponible ; (4) préférer en amont un **baryté de faible densité** et limiter l'opacification au strict nécessaire.[6][23][29] La relecture systématique CTAC vs NAC en présence de métal ou de contraste est la recommandation socle EANM/SNMMI.[10][11]",
+        "stats": [
+          {
+            "value": "×8",
+            "label": "Surcorrection au bord d'une prothèse [6]"
+          },
+          {
+            "value": "~40 %",
+            "label": "Surestimation activité périprothétique (hanche) [6]"
+          },
+          {
+            "value": "24,4–37,3 %",
+            "label": "Surestimation par contraste oral, régions denses [29]"
+          },
+          {
+            "value": "< 5 %",
+            "label": "Écart résiduel après correction MAR/iMAR [7]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — faux foyer chaud sur métal ou contraste",
+            "text": "Un point chaud collé à une prothèse, un amalgame dentaire ou une flaque de contraste digestif/vasculaire n'est pas une lésion : c'est une surcorrection d'atténuation par mauvaise classification d'un matériau à Z élevé (HU jusqu'à 3 071, classé « os dense »).[29] Au bord d'une prothèse, le signal peut être surestimé d'un facteur 8.[6] Toujours relire la TDM (stries métalliques) et confronter à la NAC avant de conclure."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — MAR/iMAR et baryté de faible densité",
+            "text": "La reconstruction MAR/iMAR par inpainting sinogramme ramène l'écart périprothétique à < 5 % des valeurs de référence et restaure une quantification comparable à la transmission.[7] En oncologie, privilégier un agent oral de faible densité limite l'erreur sur le SUV à ~4,4 % (non significatif), alors qu'un baryté haute densité dans un estomac froid peut mimer un foyer intense.[4][29]"
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Captation cellulaire du 18F-FDG via les transporteurs GLUT puis piégeage métabolique : le signal d'émission reconstruit dépend de la carte d'atténuation TDM, qu'un matériau à numéro atomique élevé (métal, contraste iodé) fausse en surcorrigeant localement."
+      },
+      {
+        "title": "C9 - C9 · Interpréter la troncature et les artefacts de bord de champ",
+        "text": "La troisième grande source d'artefact de correction d'atténuation tient à la **géométrie d'acquisition** : le champ de vue transverse de la TDM (**FOV**, *field of view*) est plus étroit que celui de la TEP, et tout ce qui dépasse de ce cylindre TDM n'a pas de carte d'atténuation correspondante.[8] C'est l'**artefact de troncature** (*truncation artifact*), classiquement rencontré **bras le long du corps** et chez les patients de forte corpulence.\n\n**Mécanisme.** En position bras baissés, les avant-bras et les flancs sortent du FOV TDM mais restent dans le FOV TEP. Les données d'émission périphériques sont alors corrigées avec une carte d'atténuation **incomplète** : on observe une **surestimation de l'activité au niveau du liseré (rim)** où la TDM s'interrompt brutalement, et une **sous-estimation au-delà** du bord du FOV TDM (zone sans atténuation enregistrée).[8][9] S'y ajoutent un **durcissement de faisceau (beam hardening)** et des **stries latérales** entre les deux bras, qui dégradent localement la carte d'atténuation.[8] L'aspect typique est un **anneau hyperintense de bord** doublé d'une extinction au-delà, sans corrélat anatomique.\n\n**Reconnaissance et correction.** Les scanners modernes intègrent un **algorithme de troncature** qui estime les données manquantes, et une **reconstruction à FOV étendu (extended FOV)** qui prolonge la carte d'atténuation au-delà du cylindre TDM nominal.[8][9] À la lecture, le réflexe reste la **confrontation à la NAC** : l'anneau de bord et l'extinction périphérique sont des artefacts de reconstruction qui ne suivent pas l'anatomie réelle.[8][35] La prévention la plus efficace consiste à **positionner les bras levés** pour toute imagerie thoraco-abdominale, ce qui sort les membres du FOV et supprime à la fois la troncature et les stries inter-bras.[8]\n\n**Le mouvement du patient, cousin de la troncature.** Tout déplacement du patient **entre la TDM et la TEP** (ou pendant la TEP) reproduit un désalignement global de la carte d'atténuation : dédoublement d'une tumeur, discontinuités du diaphragme, faux foyers et fausses extinctions par mislocalisation.[25][35] Le diagnostic se fait, là encore, par vérification de l'alignement TEP/TDM et relecture NAC ; la correction passe par une **reprise de l'acquisition** ou par un recalage logiciel.\n\n| Artefact de bord de champ | Aspect | Conduite | Source |\n|---|---|---|---|\n| Troncature (bras baissés) | Liseré chaud + extinction périphérique | Bras levés ; extended FOV ; algorithme de troncature | [8][9] |\n| Beam hardening inter-bras | Stries latérales, carte dégradée | Bras levés ; relecture NAC | [8] |\n| Mouvement TDM↔TEP | Dédoublement, discontinuité diaphragme | Vérifier alignement ; reprise/recalage | [25][35] |\n\n**Synthèse de l'algorithme de lecture face à un foyer suspect.** Pour tout foyer chaud ou froid inattendu, la démarche transversale aux trois sections (C7–C9) est : (1) **vérifier l'alignement TEP/TDM** coupe par coupe, en particulier à la coupole et en périphérie ; (2) **relire systématiquement la NAC** — l'image non corrigée ne subissant pas l'erreur de CTAC, elle départage artefact et lésion réelle ; (3) **inspecter la TDM** à la recherche de contraste, de métal ou d'une troncature de FOV ; (4) en cas de doute persistant juxta-diaphragmatique, **reprendre en respiration calme** ou en **acquisition 4D synchronisée**.[23][35][37] Cette discipline de relecture CTAC/NAC conditionne la fiabilité de tout SUV utilisé pour la stadification, l'évaluation de réponse (PERCIST, Deauville) et la sélection théranostique.[10][35]",
+        "stats": [
+          {
+            "value": "FOV TDM < FOV TEP",
+            "label": "Origine géométrique de la troncature [8]"
+          },
+          {
+            "value": "Bras levés",
+            "label": "Prévention de référence en thoraco-abdominal [8]"
+          },
+          {
+            "value": "NAC",
+            "label": "Image de contrôle départageant artefact et lésion [23][35]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — liseré chaud et extinction de bord de champ",
+            "text": "Un anneau hyperintense suivant la limite latérale du corps, doublé d'une extinction au-delà, signe une troncature : le FOV TDM, plus étroit que celui de la TEP, n'a pas couvert la périphérie (bras baissés, forte corpulence).[8][9] Ce liseré ne suit pas l'anatomie et disparaît sur la NAC — ne pas le prendre pour une atteinte pariétale ou cutanée."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — positionnement et FOV étendu",
+            "text": "Lever les bras pour l'imagerie thoraco-abdominale supprime à la fois la troncature et les stries de durcissement de faisceau entre les bras.[8] Lorsque les bras doivent rester baissés, la reconstruction à FOV étendu et l'algorithme de troncature récupèrent la majeure partie des données manquantes ; vérifier alors l'absence de liseré résiduel sur la fusion TEP/TDM.[8][9]"
+          },
+          {
+            "type": "info",
+            "title": "Algorithme transversal C7–C9",
+            "text": "Devant tout foyer inattendu : (1) vérifier l'alignement TEP/TDM, (2) relire la NAC, (3) chercher contraste/métal/troncature sur la TDM, (4) si doute juxta-diaphragmatique, reprendre en respiration calme ou en 4D.[23][35][37] C'est la garantie de fiabilité du SUV pour la stadification et l'évaluation de réponse."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Champ de vue de la TEP plus large que celui de la TDM : les structures périphériques (bras baissés) sortent du cylindre TDM et ne reçoivent pas de correction d'atténuation, créant un liseré hyperintense de bord et une extinction au-delà."
+      },
+      {
+        "title": "D10 - D10 · Maîtriser le diagnostic différentiel : arbre décisionnel artefact de CTAC vs vraie lésion",
+        "text": "La question décisive devant tout foyer chaud ou froid inattendu en TEP-TDM (tomographie par émission de positons couplée à la tomodensitométrie) au ¹⁸F-FDG (2-désoxy-2-[¹⁸F]fluoro-D-glucose) est binaire : **artefact de correction d'atténuation (CTAC, CT-based attenuation correction)** ou **vraie lésion** ? La discrimination ne repose jamais sur un seul critère mais sur la confrontation systématique de quatre éléments — la confrontation **AC vs NAC** (non-attenuation-corrected, image non corrigée de l'atténuation), l'**alignement spatial TEP/TDM**, le **substrat anatomique** sur la TDM, et la **topographie** du foyer.[2,35] Le principe physique fondateur est que l'image NAC ne subit **pas** l'erreur de la carte d'atténuation : un foyer présent sur l'AC mais absent (ou nettement atténué) sur la NAC est, par construction, un artefact de reconstruction et non une captation réelle.[23,35]\n\n**Règle d'or de la relecture NAC.** Tout faux foyer suspecté d'origine attenuationnelle doit être confronté aux images NAC. Si le foyer chaud des images corrigées ne se retrouve pas sur la NAC, il s'agit d'un artefact.[23,35] La lecture conjointe AC + NAC est explicitement recommandée au voisinage du **métal** et du **contraste**, qui sont les deux grandes sources de **faux foyers chauds** par surcorrection.[35] Inversement, certaines lésions (notamment pulmonaires) sont **mieux vues sur la NAC** : la visibilité des métastases pulmonaires est améliorée sur la NAC dans **41 %** des cas par rapport à l'image CTAC, le bruit de correction pouvant masquer un petit foyer.[40]\n\n**Sémiologie discriminante par mécanisme.** Chaque source d'artefact a une signature qui permet de la rattacher à sa cause :\n\n| Signe observé | Mécanisme probable | Élément qui tranche | Source |\n|---|---|---|---|\n| Bande **froide curviligne** parallèle à la coupole diaphragmatique | Décalage respiratoire (foie corrigé comme du poumon) | Désalignement TEP/TDM à l'interface foie-poumon ; absente sur CA par transmission ⁶⁸Ge | [27,47] |\n| Foyer pulmonaire basal **dédoublé** ou déplacé vers le foie | Mismatch crânio-caudal | Vérifier l'alignement ; foyer absent/déplacé sur NAC | [2,25] |\n| Foyer chaud **dans l'estomac** ou le grêle | Contraste oral haute densité (surcorrection) | Densité élevée (HU) sur la TDM ; effet absent sur NAC | [4,29] |\n| Foyer chaud **au bord d'une prothèse** ou d'un implant | Métal (stries, surcorrection péri-métallique) | Artefact en stries sur la TDM ; foyer absent sur NAC | [6,7,32] |\n| Liseré chaud + extinction périphérique, **bras le long du corps** | Troncature (dépassement du champ TDM) | Position des bras ; bord du FOV TDM | [8,9] |\n\n**Quantification de l'aide au tri.** Le mismatch respiratoire est massif et fréquent : le décalage de la coupole entre TEP en respiration libre et TDM en inspiration maximale atteint **44,4 ± 25,5 mm** (étendue 8,7–82,9 mm), contre **0,4 mm** seulement en expiration normale.[1] Les artefacts froids curvilignes parallèles au dôme diaphragmatique sont notés sur jusqu'à **84 %** des acquisitions TEP-TDM et sont, par construction, **absents** des images corrigées par transmission ⁶⁸Ge — preuve directe de leur origine attenuationnelle.[27] Côté contraste, les agents oraux surestiment les coefficients d'atténuation TEP et engendrent une **surestimation de l'activité de 24,4 % à 37,3 %** selon le volume et la concentration.[4] Au métal, la surcorrection au bord d'une prothèse peut atteindre **un facteur 8** (8-fold), donnant l'illusion de traceur « dans » l'implant.[6]\n\n**Conduite si le doute persiste après relecture NAC.** Pour un foyer équivoque juxta-diaphragmatique, l'acquisition synchronisée respiratoire (4D) requalifie efficacement : la proportion de lésions équivoques chute d'environ **24 %** (acquisition non gatée) à **~4 %** (4D), avec environ **60 %** des lésions équivoques requalifiées comme positives.[37] L'arbre décisionnel pratique est donc : foyer inattendu → (1) vérifier l'**alignement TEP/TDM** ; (2) relire la **NAC** ; (3) chercher **contraste/métal/troncature** sur la TDM ; (4) si doute juxta-diaphragmatique persistant → **reprise en respiration calme** ou acquisition **4D**.[35,37]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la NAC n'est pas qu'un filet de sécurité",
+            "text": "La relecture NAC ne sert pas seulement à démasquer les faux foyers chauds (métal, contraste) : elle rattrape aussi les faux foyers que l'AC fait **disparaître**. La visibilité des métastases pulmonaires est meilleure sur NAC dans 41 % des cas.[40] Lire systématiquement les deux jeux — AC pour la quantification (SUV), NAC pour le contrôle de plausibilité."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la correction d'atténuation peut majorer une fixation surrénalienne ou diaphragmatique physiologique",
+            "text": "Un mismatch crânio-caudal peut projeter un foyer hépatique du dôme dans la base pulmonaire, ou inversement créer une fausse extinction hépatique. Ne jamais conclure à une lésion sur la seule image AC sans vérifier l'alignement et la NAC, surtout aux bases pulmonaires et au dôme hépatique — zones de mismatch maximal.[2,25]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "44,4 ± 25,5 mm",
+            "label": "Mismatch coupole : TDM inspi max vs TEP libre [1]"
+          },
+          {
+            "value": "84 %",
+            "label": "Acquisitions avec bande froide diaphragmatique [27]"
+          },
+          {
+            "value": "×8",
+            "label": "Surcorrection maximale au bord d'une prothèse [6]"
+          },
+          {
+            "value": "41 %",
+            "label": "Métastases pulmonaires mieux vues sur NAC [40]"
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Schéma d'un arbre décisionnel : un foyer TEP inattendu est confronté à l'alignement TEP/TDM, à l'image non corrigée (NAC), puis à la recherche de métal, de contraste ou de troncature sur la TDM, pour distinguer un artefact de correction d'atténuation d'une vraie lésion."
+      },
+      {
+        "title": "D11 - D11 · Maîtriser la prévention et le contrôle qualité de la correction d'atténuation",
+        "text": "La meilleure stratégie contre l'artefact de CTAC est de l'**empêcher** plutôt que de le corriger a posteriori. La prévention se joue à trois niveaux : la **physique de la conversion HU → 511 keV** (et son contrôle qualité), le **protocole d'acquisition** (respiration, position, contraste), et les **techniques avancées de réduction d'artefacts** (4D, MAR, troncature).[17,36] Rappel du socle physique : la TDM mesure l'atténuation à une énergie effective d'environ **70 keV** (faisceau polychromatique 80–140 kVp) qu'il faut convertir vers l'énergie d'annihilation TEP de **511 keV** par une fonction de **mise à l'échelle bilinéaire** (deux pentes de part et d'autre de 0 HU, mélange air/eau puis eau/os).[17,18,36] Le coefficient d'atténuation linéaire de l'eau à 511 keV vaut ≈ **0,096 cm⁻¹**, valeur parfois remplacée par **0,093 cm⁻¹** issue des transmissions au ⁶⁸Ge pour minimiser le biais résiduel et rendre la CTAC quasi équivalente à la correction par transmission.[18,36]\n\n**Prévention du décalage respiratoire (la cause n°1).** L'objectif est d'aligner la phase respiratoire de la TDM sur la moyenne de la TEP. Deux leviers :\n\n- **Respiration calme / superficielle pendant la TDM de CA** : c'est la recommandation générale, car elle rapproche la TDM de la moyenne intégrée par la TEP lente. Éviter l'inspiration profonde figée, qui crée le mismatch maximal (jusqu'à 44 mm).[1,28] Une CTAC en **expiration normale** s'aligne le mieux (mismatch 0,4 mm vs 44 mm en inspiration max).[1]\n- **TEP-TDM 4D (gating respiratoire)** : tri des données par phase (*phase gating*) ou par amplitude (*amplitude gating*), ce dernier étant supérieur en cas de respiration irrégulière.[20] Le bénéfice quantitatif est net pour les lésions juxta-diaphragmatiques < 10 mm : augmentation du SUVmax jusqu'à **+83,3 %** pour les petites lésions, **~+18 %** globalement selon la méthode.[37] La **CTAC à projection d'intensité maximale (MIP-CTAC)** fournit les coefficients de récupération les plus exacts en TEP 4D.[39] Limite à connaître : la division en fenêtres temporelles courtes réduit les comptages → **bruit accru**, surtout sur le SUVmax à faible rapport signal/fond.[37]\n\n**Prévention des artefacts de contraste.** Pour la seule correction d'atténuation, préférer une TDM basse dose **sans contraste IV** ou un contraste oral de **faible densité** (eau, agents négatifs), réservant le contraste iodé à une TDM diagnostique distincte si besoin.[4,5] L'effet du contraste oral sur le SUV reste en règle modeste pour les agents de faible densité, mais peut atteindre **24,4–37,3 %** de surestimation pour les agents barytés denses ; un **algorithme de segmentation du contraste (SCC)** corrige l'image a posteriori.[4,29,30] Le contraste IV iodé élève les HU et surcorrige, mais son impact clinique sur le SUV reste généralement non significatif.[5]\n\n**Prévention des artefacts métalliques.** Les algorithmes de **réduction d'artefact métallique (MAR / iMAR)** par inpainting du sinogramme remplacent les projections corrompues par interpolation : ils augmentent l'activité mesurée jusqu'à **+11 %** vs TDM conventionnelle et ramènent l'écart aux valeurs de référence à **< 5 %** au voisinage d'une prothèse de hanche.[7] En péri-prothétique, l'augmentation médiane du SUV après MAR est de **+1,4 % à +7,8 %**.[31]\n\n**Prévention de la troncature.** Préférer la position **bras levés** pour l'imagerie thoraco-abdominale ; à défaut (bras le long du corps), activer la **reconstruction à champ de vue étendu (extended FOV)** et l'algorithme de troncature.[8,9]\n\n**Contrôle qualité de la dose de la CTAC.** La CTAC peut être conduite à très bas niveau de dose sans dégrader la correction : le niveau ultra-bas reproductible déterminé en étude fantôme est de **0,3 mSv** (combinaison 100 kVp / 10 mA), et une CTAC à bas kVp/mA peut descendre **< 1,0 mSv**.[41,42] La TDM contribue toutefois jusqu'à **81 %** de la dose efficace totale de l'examen (fourchette 32–79 % selon protocole), d'où l'intérêt d'une CTAC optimisée ALARA.[34,42]",
+        "steps": [
+          {
+            "title": "Avant l'acquisition — protocole",
+            "text": "Choisir la position (bras levés pour le thorax-abdomen).[8] Décider du contraste : pour la seule CA, basse dose sans iode ou contraste oral de faible densité ; réserver le contraste diagnostique à une TDM dédiée.[4,5] Instruire le patient à une respiration calme.[28]"
+          },
+          {
+            "title": "Pendant l'acquisition — alignement",
+            "text": "Acquérir la TDM de CA en respiration calme/expiration normale pour matcher la TEP libre.[1,28] Sur lésion juxta-diaphragmatique connue ou suspectée, programmer une acquisition 4D (amplitude gating si respiration irrégulière).[20,37]"
+          },
+          {
+            "title": "Après l'acquisition — correction logicielle",
+            "text": "Activer iMAR/MAR si matériel métallique, SCC si contraste oral dense, reconstruction extended FOV si troncature.[7,29,30,8] Vérifier l'alignement TEP/TDM sur la fusion avant validation des SUV.[36]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — le gating 4D a un coût en bruit",
+            "text": "Le bénéfice du 4D (jusqu'à +83 % de SUVmax sur petites lésions juxta-diaphragmatiques) se paie par une réduction des comptages par bin et donc un bruit accru, qui affecte surtout le SUVmax à faible signal/fond.[37] Réserver le 4D aux situations où le mismatch respiratoire change la décision, et préférer la CTAC MIP en 4D pour des coefficients de récupération exacts.[39]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — calibrer la conversion bilinéaire sur le ⁶⁸Ge",
+            "text": "Remplacer le coefficient théorique de l'eau à 511 keV (0,096 cm⁻¹) par le coefficient mesuré sur transmission ⁶⁸Ge (≈ 0,093 cm⁻¹) minimise le biais résiduel et rend la CTAC quasi équivalente à la correction par transmission pour les tissus humains.[18,36]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "~70 keV → 511 keV",
+            "label": "Conversion bilinéaire HU → atténuation TEP [17]"
+          },
+          {
+            "value": "0,3 mSv",
+            "label": "CTAC ultra-basse dose fiable (fantôme, 100 kVp/10 mA) [41]"
+          },
+          {
+            "value": "< 5 %",
+            "label": "Écart résiduel après MAR (prothèse de hanche) [7]"
+          },
+          {
+            "value": "jusqu'à 81 %",
+            "label": "Part de la TDM dans la dose totale d'examen [42]"
+          }
+        ]
+      },
+      {
+        "title": "D12 - D12 · Maîtriser le compte rendu : signaler, quantifier et tracer l'artefact de CTAC",
+        "text": "Le compte rendu d'une TEP-TDM exposée à un artefact de CTAC doit faire trois choses : **signaler** explicitement l'artefact et le distinguer d'une lésion, **quantifier** son impact sur les valeurs de SUV (standardized uptake value) sur lesquelles reposent la stadification et l'évaluation de réponse, et **tracer** la méthode utilisée pour le démasquer (relecture NAC, alignement, reprise 4D) afin de garantir la reproductibilité inter-examens.[35] La validité des SUV est en jeu directement : un misregistration respiratoire entraîne une **sous-estimation du SUVmax de ~28 %** pour une lésion de 1 cm soumise à un mouvement diaphragmatique de 11 mm, et une **surestimation du volume de +130 %**.[1] En cardiologie, l'enjeu est diagnostique : le décalage TDM/émission cause des **défauts de perfusion faux-positifs chez 40 % des patients** en TEP de perfusion ⁸²Rb, normalisés par une TDM ciné moyennée et un recalage visuel — d'où l'exigence d'un contrôle qualité du recalage tracé dans le CR.[3,22]\n\n**Items obligatoires du compte rendu (volet artefact de CTAC).**\n\n| Item | À préciser dans le CR | Justification | Source |\n|---|---|---|---|\n| Confrontation AC/NAC | Foyer relu sur la NAC : présent / absent | Distingue artefact (absent NAC) de vraie lésion | [23,35] |\n| Mismatch respiratoire | Bande froide diaphragmatique, déplacement crânio-caudal d'un foyer basal | Signale la fausse extinction / le faux foyer | [27,47] |\n| Contraste | Type (oral/IV), densité, foyer chaud digestif induit | Surcorrection possible (24–37 %) | [4,29] |\n| Matériel métallique | Localisation, MAR/iMAR appliqué ou non | Surcorrection jusqu'à ×8 au bord du métal | [6,32] |\n| Troncature | Position des bras, extended FOV utilisé | Liseré chaud + extinction périphérique | [8,9] |\n| Conformité quantitative | Conformité **EARL** (EANM Research Ltd), protocole (glycémie, délai post-injection) | Garantit la comparabilité des SUV | [10] |\n\n**Quantifier l'impact, pas seulement le signaler.** Lorsqu'un artefact affecte une cible mesurée, le CR doit indiquer que le SUV de cette cible est **non fiable** ou donner une estimation corrigée (ex. SUV lu sur la phase 4D recalée). Un misregistration entraînant une variation de SUV **> 25 %** chez environ **10 %** des décalages est cliniquement significatif et doit être tracé, notamment en suivi PERCIST (PET Response Criteria in Solid Tumours) où la variabilité technique ne doit pas être confondue avec une réponse ou une progression.[1] La concentration de FDG dans les tumeurs pulmonaires baisse de **42 ± 12 %** sous l'effet du mouvement — un ordre de grandeur qui peut faire basculer une classification.[1]\n\n**Tracer la conformité du protocole quantitatif.** Préciser la **conformité EARL** (coefficients de récupération de sphères conformes en fantôme) et les conditions garantissant la validité du SUV : glycémie cible **4–7 mmol/L** (report idéalement si ≥ 11 mmol/L / ~200 mg/dL), jeûne ≥ **4–6 h**, délai de captation de **60 min** post-injection.[10] Mentionner également la part dosimétrique TDM lorsque l'examen a recours à une TDM diagnostique (dose efficace totale ~14 mSv en TDM basse dose vs ~28 mSv en TDM diagnostique).[42]\n\n**Modèle de phrase pour le CR.** En présence d'un foyer équivoque attenuationnel : « Bande hypométabolique curviligne sous-diaphragmatique droite, sans corrélat sur les images non corrigées de l'atténuation, en rapport avec un décalage respiratoire TEP/TDM (artefact de correction d'atténuation), sans valeur pathologique. Le SUVmax du segment hépatique adjacent n'est pas interprétable sur cette acquisition ; une reprise en acquisition synchronisée respiratoire est proposée en cas de doute persistant. »[27,35,37]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — conclure en positif / négatif / équivoque, jamais en demi-teinte",
+            "text": "Pour chaque foyer suspect d'origine attenuationnelle, conclure explicitement après confrontation AC/NAC, alignement et recherche de substrat (métal/contraste/troncature). En cas d'équivoque persistante juxta-diaphragmatique, proposer la conduite (relecture NAC déjà faite, reprise 4D ou respiration calme) plutôt que de laisser un SUV ininterprétable sans commentaire.[35,37]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — un SUV faussé non signalé contamine le suivi",
+            "text": "Un misregistration peut faire varier le SUVmax de plus de 25 % (10 % des décalages) et le volume de +130 %.[1] En évaluation de réponse (PERCIST), une telle variabilité technique non tracée sera lue à tort comme une réponse ou une progression. Toujours noter au CR qu'un SUV affecté par un artefact n'est pas comparable d'un examen à l'autre."
+          }
+        ],
+        "stats": [
+          {
+            "value": "40 %",
+            "label": "Patients avec faux défaut de perfusion ⁸²Rb par misregistration [3]"
+          },
+          {
+            "value": "~28 %",
+            "label": "Sous-estimation du SUVmax (lésion 1 cm, mouvement 11 mm) [1]"
+          },
+          {
+            "value": "> 25 %",
+            "label": "Variation de SUV cliniquement significative (~10 % des décalages) [1]"
+          },
+          {
+            "value": "4–7 mmol/L",
+            "label": "Glycémie cible à tracer pour la validité du SUV [10]"
+          }
+        ]
+      },
+      {
+        "title": "E13 - E13 · Cas commentés : reconnaître l'artefact de CTAC en situation réelle",
+        "text": "Trois situations exemplaires, commentées pas à pas (contexte → images → analyse → conclusion). Le fil conducteur est invariant : **tout foyer chaud ou froid inattendu impose la confrontation des images corrigées de l'atténuation (CTAC, *CT-based attenuation correction*) aux images non corrigées (NAC, *non-attenuation-corrected*)**, puisque ces dernières ne subissent pas l'erreur de correction.[35] La correction d'atténuation (CA) convertit les unités Hounsfield (HU) de la TDM (*tomodensitométrie*, énergie effective ~70 keV) en coefficients d'atténuation linéaires à 511 keV par une fonction bilinéaire, et toute carte d'atténuation erronée ou mal recalée se propage en erreur quantitative sur le SUV (*standardized uptake value*).[17,36]\n\n**Cas 1 — Bande froide curviligne sous-diaphragmatique (décalage respiratoire).** *Contexte* : homme de 62 ans, bilan d'extension d'un adénocarcinome pulmonaire ; TDM de CA acquise en apnée inspiratoire. *Images* : sur l'AC, bande **« froide » curviligne** parallèle à la coupole diaphragmatique droite et foyer du dôme hépatique paraissant projeté dans la base pulmonaire ; sur la NAC, l'extinction disparaît. *Analyse* : la TDM en inspiration descend le diaphragme et enregistre de l'air là où la TEP (*tomographie par émission de positons*), moyennée sur de nombreux cycles, voit du foie ; une portion hépatique est alors corrigée comme du poumon. Ce **« banana artifact »** est rapporté sur **84 %** des acquisitions TEP-TDM et est absent des reconstructions par transmission au ⁶⁸Ge.[27] Le décalage de coupole entre TEP libre et TDM en inspiration maximale atteint **44,4 ± 25,5 mm**, contre **0,4 mm** en expiration normale.[1] *Conclusion* : artefact de décalage respiratoire ; relecture NAC, et reprise en respiration calme ou en mode 4D si une lésion basale doit être quantifiée.\n\n**Cas 2 — Faux foyer chaud gastrique (contraste oral).** *Contexte* : femme de 70 ans, TEP-TDM avec opacification digestive par contraste baryté dense. *Images* : foyer d'« hyperactivité » intense de l'estomac sur l'AC ; sur la NAC, pas de foyer correspondant. *Analyse* : le contraste à Z élevé élève les HU (jusqu'à **3 071 HU**) et est mal classé comme **os dense**, recevant un facteur de mise à l'échelle erroné → surcorrection → faux foyer chaud, avec une surestimation de **24,4 % à 37,3 %** dans les régions concernées.[29] *Conclusion* : artefact lié au contraste ; un baryté de faible densité et la relecture NAC lèvent l'ambiguïté.\n\n**Cas 3 — Surestimation périprothétique (métal de hanche).** *Contexte* : homme de 68 ans, prothèse totale de hanche droite ; suspicion de récidive ganglionnaire. *Images* : liseré d'activité paraissant « dans » le métal sur l'AC, stries en étoile sur la TDM. *Analyse* : le métal crée des trous dans les projections et des stries qui faussent la carte d'atténuation ; au bord d'une prothèse, la surcorrection peut atteindre **un facteur ×8**.[6] Une **réduction d'artefact métallique (MAR/iMAR)** par inpainting du sinogramme ramène l'écart aux valeurs de référence à **< 5 %** et augmente l'activité mesurée jusqu'à **+11 %** vs TDM conventionnelle.[7] *Conclusion* : artefact métallique ; relire la NAC et, si disponible, reconstruire avec MAR avant toute lecture quantitative.",
+        "steps": [
+          {
+            "title": "Cas 1 — Décalage respiratoire (coupole)",
+            "text": "Bande froide curviligne sous-diaphragmatique + foyer hépatique projeté en base pulmonaire sur l'AC, disparaissant sur la NAC. Mismatch TDM inspiration/TEP libre jusqu'à 44,4 mm.[1] Conduite : relecture NAC, respiration calme ou 4D."
+          },
+          {
+            "title": "Cas 2 — Contraste oral (estomac)",
+            "text": "Faux foyer chaud gastrique sur l'AC, absent sur la NAC. Contraste dense (jusqu'à 3 071 HU) mal classé en os → surcorrection (+24,4 à +37,3 %).[29] Conduite : baryté faible densité, relecture NAC."
+          },
+          {
+            "title": "Cas 3 — Métal (prothèse de hanche)",
+            "text": "Liseré d'activité « dans » le métal + stries sur la TDM. Surcorrection au bord jusqu'à ×8.[6] Conduite : relecture NAC + reconstruction MAR/iMAR (écart ramené < 5 %).[7]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — toujours relire la NAC avant de conclure à une lésion",
+            "text": "Un foyer présent sur l'AC mais absent (ou nettement atténué) sur la NAC est un artefact de reconstruction, non une lésion réelle. Les images NAC ne subissent pas l'erreur de CA ; elles améliorent par exemple la visibilité des métastases pulmonaires dans **41 %** des cas.[40] La confrontation CTAC ↔ NAC est obligatoire au voisinage du diaphragme/foie, du métal et du contraste.[35,40]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le sens de l'erreur oriente le diagnostic",
+            "text": "Décalage respiratoire à la coupole → typiquement **froid** (foie corrigé comme poumon) ; contraste dense et bord métallique → typiquement **chaud** (surcorrection) ; au-delà du champ de vue TDM (troncature, bras baissés) → **sous-estimation** périphérique avec liseré de surestimation au bord. Identifier le mécanisme sur la TDM permet d'anticiper le sens du biais sur le SUV."
+          }
+        ],
+        "stats": [
+          {
+            "value": "84 %",
+            "label": "Acquisitions avec bande froide curviligne diaphragmatique[27]"
+          },
+          {
+            "value": "44,4 mm",
+            "label": "Décalage coupole TDM inspiration vs TEP libre[1]"
+          },
+          {
+            "value": "×8",
+            "label": "Surcorrection au bord d'une prothèse (CTAC standard)[6]"
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureCaption": "Fig. 1 — Détection en coïncidence des deux photons de 511 keV : la quantification dépend d'une carte d'atténuation correctement alignée sur l'émission.",
+        "figureAlt": "Schéma de la détection en coïncidence en TEP : annihilation du positon, émission de deux photons de 511 keV à 180°, ligne de réponse traversant des tissus atténuants dont la carte doit être alignée à l'émission."
+      },
+      {
+        "title": "E14 - E14 · Points clés, pièges d'examen et FAQ",
+        "text": "**À retenir (haut rendement).**\n\n- La **correction d'atténuation** est indispensable à la quantification (SUV) mais introduit ses propres artefacts : sans elle, les structures profondes sont faussement froides et les structures peu denses faussement chaudes.[36]\n- La **conversion HU → 511 keV** est bilinéaire (bascule autour de 0 HU) ; l'énergie TDM effective est ~**70 keV** et le coefficient de l'eau à 511 keV ≈ **0,096 cm⁻¹** (parfois ramené à 0,093 par calage sur transmission ⁶⁸Ge).[17,18]\n- Le **décalage respiratoire** est l'artefact le plus fréquent : la TDM fige une phase, la TEP moyenne de nombreux cycles. Mismatch de coupole jusqu'à **44,4 ± 25,5 mm** (inspiration max) vs **0,4 mm** (expiration normale).[1] Bande froide curviligne sur **84 %** des acquisitions.[27]\n- Conséquences quantitatives : faux **défauts de perfusion cardiaque chez 40 %** des patients en ⁸²Rb avant correction par TDM moyennée et recalage ;[3] sous-estimation du SUVmax et surestimation du volume des petites lésions juxta-diaphragmatiques.\n- **Contraste** (oral/IV) → surcorrection → faux foyer **chaud** (surestimation 24,4–37,3 % en zone dense).[29] **Métal** → surcorrection au bord jusqu'à **×8**, corrigée par MAR/iMAR (écart < 5 %).[6,7] **Troncature** (bras baissés) → sous-correction périphérique.[35]\n- **Règle d'or transversale** : relire systématiquement les images **NAC** pour tout foyer suspect, surtout diaphragme/foie, métal et contraste.[35,40]\n- **Solutions** : respiration calme pendant la TDM de CA ; **TEP 4D** (gating respiratoire) qui requalifie les lésions équivoques de ~24 % à ~4 % et augmente le SUVmax de petites lésions jusqu'à **+83,3 %** ;[37] **MIP-CTAC** pour des coefficients de récupération plus exacts en 4D ;[39] MAR pour le métal ;[7] algorithme de troncature/FOV étendu.[9]\n\n**Pièges d'examen / QCM (confusions classiques).**\n\n| Affirmation | Vrai / Faux | Justification |\n|---|---|---|\n| « Le foyer est réel car il est intense sur l'AC » | **Faux** | Il faut vérifier sur la NAC ; l'intensité AC peut résulter d'une surcorrection (contraste, métal).[35] |\n| « La bande froide sous-diaphragmatique est une lésion hypométabolique » | **Faux** | C'est un artefact de décalage respiratoire (foie corrigé comme poumon).[27] |\n| « Le contraste IV invalide toujours la quantification » | **Faux** | L'effet sur le SUV reste le plus souvent non significatif cliniquement, contrairement au contraste oral dense localisé.[5,29] |\n| « La TDM contribue peu à la dose de l'examen » | **Faux** | La composante TDM représente **32–79 %** de la dose efficace, jusqu'à **81 %**.[34,42] |\n| « Le gating 4D améliore tout sans contrepartie » | **Faux** | Le fractionnement temporel réduit les comptages → bruit accru, surtout sur le SUVmax à faible rapport signal/fond.[37] |\n\n**FAQ.**\n\n**Pourquoi corriger l'atténuation si cela crée des artefacts ?** Parce que sans CA, le SUV n'est ni quantifiable ni comparable ; on accepte le risque d'artefact en le maîtrisant par la relecture NAC.[36,40]\n\n**Comment distinguer un vrai foyer d'un artefact de CTAC ?** Confrontation **CTAC ↔ NAC** : un foyer absent ou très atténué sur la NAC est un artefact.[35]\n\n**Pourquoi la TDM en inspiration profonde est-elle problématique ?** Elle fige une phase éloignée de la TEP moyenne → mismatch de coupole jusqu'à **44,4 mm** ; l'expiration normale n'en donne que **0,4 mm**.[1] On préfère la **respiration calme**.\n\n**Quel artefact en cardiologie nucléaire ?** Le misregistration TDM/émission cause des **défauts faux-positifs chez 40 %** des patients ⁸²Rb, corrigés par TDM moyennée (ciné) et recalage visuel ; un contrôle qualité du recalage est exigé.[3,22]\n\n**Quand passer en 4D ?** Pour une lésion équivoque juxta-diaphragmatique ou < 10 mm : le 4D réduit les équivoques de ~24 % à ~4 %.[37]\n\n**Que faire devant un foyer au contact d'une prothèse ?** Relire la NAC et reconstruire en **MAR/iMAR** (écart aux valeurs de référence < 5 %) avant toute mesure de SUV.[6,7]",
+        "list": [
+          "La CA est indispensable au SUV mais génère ses propres artefacts ; conversion HU→511 keV bilinéaire, énergie TDM ~70 keV, µ eau ≈ 0,096 cm⁻¹.[17,18,36]",
+          "Décalage respiratoire = artefact n°1 : mismatch coupole jusqu'à 44,4 ± 25,5 mm (inspiration) vs 0,4 mm (expiration) ;[1] bande froide sur 84 % des acquisitions.[27]",
+          "Cardiologie : faux défauts de perfusion chez 40 % des patients ⁸²Rb avant TDM moyennée + recalage.[3]",
+          "Contraste oral dense → faux foyer chaud (+24,4 à +37,3 %) ;[29] métal → surcorrection ×8 au bord, corrigée par MAR (< 5 %).[6,7]",
+          "Règle d'or : relecture NAC pour tout foyer suspect (diaphragme/foie, métal, contraste).[35,40]",
+          "Solutions : respiration calme, TEP 4D (équivoques 24 %→4 %, SUVmax +83,3 % petites lésions),[37] MIP-CTAC,[39] MAR,[7] FOV étendu/troncature.[9]",
+          "Composante TDM = 32–79 % (jusqu'à 81 %) de la dose efficace de l'examen.[34,42]"
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — l'artefact de CTAC altère le staging et le suivi de réponse",
+            "text": "Une erreur de SUV propagée par une CA défectueuse peut modifier un staging, un restaging ou une évaluation de réponse (PERCIST, Deauville). Toujours signaler dans le compte rendu un mismatch respiratoire, la présence de contraste ou de matériel métallique, et la conduite tenue (relecture NAC, éventuelle reprise 4D).[35,37]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — calibrer la TDM de CA, pas seulement l'image",
+            "text": "Le niveau ultra-bas reproductible pour une CA fiable a été déterminé à **0,3 mSv** (100 kVp / 10 mA) en fantôme ;[41] et l'harmonisation multicentrique des SUV passe par la conformité **EARL** (EANM Research Ltd) sur les coefficients de récupération de sphères.[10] La maîtrise de l'artefact commence donc au paramétrage de la TDM et du protocole, avant toute relecture."
+          }
+        ],
+        "stats": [
+          {
+            "value": "40 %",
+            "label": "Patients ⁸²Rb avec faux défaut avant correction[3]"
+          },
+          {
+            "value": "24 %→4 %",
+            "label": "Lésions équivoques avant/après TEP 4D[37]"
+          },
+          {
+            "value": "0,3 mSv",
+            "label": "Dose TDM ultra-basse fiable pour la CA (fantôme)[41]"
+          }
+        ]
+      },
+      {
+        "title": "E15 - E15 · Références & liens sortants typés",
+        "text": "**Bibliographie** (recommandations EANM/SNMMI/SFMN, sources primaires datées ; citations renvoyant à la liste **Sources & Références** en bas de page).\n\n*Décalage respiratoire & correction du mouvement* : Chi & Nguyen, *4D PET/CT* (Front Oncol 2014) [1] ; Sureshbabu & Mawlawi, *PET/CT Imaging Artifacts* (J Nucl Med Technol 2005) [2] ; Osman et al., *Respiratory motion artifacts* (Eur J Nucl Med Mol Imaging 2003) [27] ; Sun & Mok, *Techniques for respiration-induced artifacts reduction* (Quant Imaging Med Surg 2012) [28] ; Chang et al., *Automated Respiratory Amplitude Gating* (J Nucl Med 2010) [20] ; Lu et al., *Deep learning respiratory motion compensation* (Eur J Nucl Med Mol Imaging 2024) [21] ; Crivellaro & Guerra, *Respiratory Gating and Performance of PET/CT* (Curr Radiopharm 2020) [37] ; Patro et al., *4D PET/CT lesions adjacent to the diaphragm* (Indian J Nucl Med 2024) [38] ; Nyflot et al., *Impact of CT AC method on 4D PET/CT* (Med Phys 2015) [39] ; Bacharach, *Breathing Lessons* (J Nucl Med 2007) [47].\n\n*Physique de la CTAC* : Kinahan, *CT-based attenuation correction* (AAPM 2008) [17] ; Zaidi & Hasegawa, *Determination of the Attenuation Map* (J Nucl Med 2003) [18] ; Carney & Townsend, *CT-Based Attenuation Correction* (Radiology Key) [36].\n\n*Cardiologie* : Gould et al., *Frequent Diagnostic Errors in Cardiac PET/CT Due to Misregistration* (J Nucl Med 2007) [3] ; ASNC/SNMMI PET nuclear cardiology procedure standard (J Nucl Cardiol) [22].\n\n*Contraste* : Dizendorf et al., *Error Induced by Oral CT Contrast* (J Nucl Med 2003) [4] ; Yau et al., *IV Contrast in PET/CT* (J Nucl Med 2005) [5] ; Metrard et al., *oral and IV contrast-enhanced PET/CT* (Front Med 2024) [19] ; Nehmeh et al., *Correction for Oral Contrast Artifacts* (J Nucl Med 2003) [29] ; Ahmadian et al., *segmentation algorithm for oral contrast* (Eur J Nucl Med Mol Imaging 2008) [30].\n\n*Métal* : van der Vos et al., *Metal Artifact Reduction of CT Scans* (J Nucl Med 2017) [6] ; Harnish et al., *MAR for CTAC near hip implants* (Ann Nucl Med 2014) [7] ; *Quantitative Effect of MAR in hip prosthesis* (EJNMMI Phys 2021) [31] ; Buchbender et al., *AC artefacts in PET/CT and PET/MRI* (Br J Radiol 2013) [32].\n\n*Troncature* : Sarikaya & Sarikaya, *PET/CT Image Artifacts Caused by the Arms* (J Nucl Med Technol 2021) [8] ; Beyer et al., *Truncation Artifacts* (J Nucl Med 2006) [9].\n\n*Images non corrigées (NAC)* : Nuyts et al., *Reducing Loss of Image Quality… Uncorrected PET* (J Nucl Med 2002) [23] ; Vangu & Momodu, *Pitfalls and Artifacts in the Abdomen and Pelvis* (Front Nucl Med 2021) [35] ; *AC vs non-AC FDG-PET systematic review* (Mol Imaging Biol 2007) [40] ; PET/CT Motion course [25].\n\n*Radiopharmaceutique, dosimétrie & protocole FDG* : EANM tumour imaging v2.0 (Boellaard 2015) [10] et v3.0 (Boellaard 2025) [11] ; carte pédiatrique EANM (Lassmann 2008 [12] ; Dickson 2022 [13]) ; StatPearls Fludéoxyglucose [14] ; revue synthèse/CQ FDG (Yu 2006) [15] ; FDA label NDA 21-870 [16] ; SNMMI/EANM pédiatrie 1.0 (Vali 2021) [33] ; modèle dosimétrique révisé FDG (Kamp 2023) [26] ; Adeleye & Chetty (Radioprotection 2018) [34] ; CNP-MN/SFMN FDG V2.0 [24] ; dose TDM ultra-basse pour CA (J Nucl Med Technol 2022) [41] ; Ferrara et al. (Front Phys 2024) [42] ; Alameen et al. (Saudi J Biol Sci 2021) [43].\n\n*Performances diagnostiques FDG (contexte des faux foyers)* : Deppen et al. (JAMA 2014) [44] ; Li et al. méta-analyse SPN (Medicine 2018) [45] ; Khan et al. staging ganglionnaire (Cureus 2025) [46].\n\n**Liens sortants typés (réseau de l'article).**\n\n| Type | Cibles |\n|---|---|\n| Examen | TEP-TDM au ¹⁸F-FDG · TEP-TDM 4D (gating respiratoire) · TEP-IRM (correction d'atténuation MRAC) · TEP de perfusion myocardique au ⁸²Rb |\n| Traceur | ¹⁸F-FDG · ⁸²Rb |\n| Maladie | Cancer bronchopulmonaire (nodule pulmonaire solitaire, staging ganglionnaire) · Insuffisance coronarienne |\n| Score | SUV / PERCIST · conformité EARL |\n\n*Style de citation cohérent (auteur, titre, revue, année, volume:page). Aucun DOI ni identifiant inventé : seules les sources [1]–[47] fournies sont citées. Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Notes de fiabilité des sources",
+            "text": "Plusieurs documents pivots (EANM v2.0 PMC4315529, JNMT 33(3):156, JNM 48(5):677 « Breathing Lessons », CNP-MN FDG V2.0) ont été inaccessibles en lecture directe (reCAPTCHA / 403 / ECONNREFUSED) ; leurs chiffres ont été recoupés via des sources de synthèse réellement lues. Les valeurs ICRP 128 (dose efficace FDG 1,9E−02 mSv/MBq, paroi vésicale 1,3E−01 mGy/MBq) sont citées via la source secondaire revue par les pairs [26]."
+          }
+        ],
+        "list": [
+          "Examens liés : TEP-TDM au ¹⁸F-FDG, TEP-TDM 4D, TEP-IRM (MRAC), TEP de perfusion ⁸²Rb.",
+          "Traceurs liés : ¹⁸F-FDG, ⁸²Rb.",
+          "Maladies liées : cancer bronchopulmonaire (nodule pulmonaire solitaire, staging ganglionnaire), insuffisance coronarienne.",
+          "Scores liés : SUV / PERCIST, conformité EARL.",
+          "47 références EANM/SNMMI/SFMN et sources primaires datées, citées [1]–[47] sans aucun identifiant inventé."
+        ]
+      }
+    ]
+  }
+}
