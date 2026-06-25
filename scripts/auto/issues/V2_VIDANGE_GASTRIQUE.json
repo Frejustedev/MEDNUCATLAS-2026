@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section B7 (tableau radiopharmaceutique) et B9 (fenêtre énergétique) vs D15 (dosimétrie) — photopics de l'111In",
+    "problem": "Incohérence interne sur les photopics de l'111In-DTPA : les sections B7 et B9 indiquent « 171 + 247 keV », tandis que D15 et la fiche d'identité indiquent « 171 et 245 keV ». Les valeurs physiques exactes sont 171,3 keV et 245,4 keV (la seconde est souvent arrondie à 245 ou 247 dans la littérature). Ce n'est pas une erreur factuelle mais une incohérence de rédaction au sein du même article.",
+    "fix": "Harmoniser sur une seule paire de valeurs dans tout l'article, de préférence « 171 et 245 keV » (valeurs physiques) ou mentionner une fois « 171 et 245 keV (parfois noté 247) »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A5 / D17 — Performance diagnostique : « sensibilité ≈ 44 % et spécificité ≈ 93 % »",
+    "problem": "Le chiffre de sensibilité ≈ 44 % à 4 h est présenté sans préciser suffisamment qu'il s'agit d'une cohorte/comparateur particulier (cut-off >10 % à 4 h vs un autre standard), ce qui peut induire le lecteur en erreur sur la « vraie » sensibilité de l'examen de référence. La SVG étant elle-même le gold standard, une Se « absolue » de 44 % n'a de sens que face à un comparateur défini. La fiche étalon le précise (« dans une cohorte de référence »), mais la formulation reste ambiguë et pourrait être mal interprétée comme la sensibilité intrinsèque du test.",
+    "fix": "Préciser explicitement le comparateur et le contexte (p. ex. « Se ≈44 %/Sp ≈93 % du critère >10 % à 4 h dans une cohorte de référence donnée, à ne pas confondre avec la performance intrinsèque du gold standard »)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D15 — dose efficace de l'étude bi-isotopique (« ≈ 3,1 mSv ») et contribution 111In (« ≈ 1,6–1,8 mSv »)",
+    "problem": "Légère incohérence arithmétique apparente : phase solide ≈0,8 mSv + 111In ≈1,6–1,8 mSv = ≈2,4–2,6 mSv, alors que le bilan combiné est donné à ≈3,1 mSv. La valeur 3,1 mSv provient de la référence CNP-MN/SFMN et est donc sourcée, mais l'addition affichée dans la même section ne reconstitue pas le total, ce qui peut prêter à confusion.",
+    "fix": "Soit ajuster les composantes pour que la somme soit cohérente, soit ajouter une note expliquant que le total 3,1 mSv (source SFMN) et la décomposition 0,8 + 1,6–1,8 mSv proviennent d'estimations/coefficients différents et ne sont pas strictement additifs."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [19] — FDA label NDA 017858 (accessdata.fda.gov/.../2012/017858Orig1s035lbl.pdf)",
+    "problem": "WebFetch returned HTTP 404 on this URL, which could falsely look like a dead/fabricated link. Verified via curl (HTTP 200) and WebSearch that the URL is genuinely live and is the correct FDA NDA 017858 label containing Table 4 'Adult Radiation Absorbed Dose from Oral Administration' — so the citation and its load-bearing dosimetry claims (organe critique = paroi du gros intestin proximal, ~4,8 mGy/mCi oral) are faithfully sourced. No action strictly required.",
+    "fix": "Optionally pin to a stable mirror (DailyMed [20] already covers the same Table 4) or note the 2019 successor label 017858s049lbl.pdf as a backup, since accessdata occasionally rate-limits/blocks automated fetches."
+  },
+  {
+    "severity": "minor",
+    "where": "Verification method note — sources [1],[4],[13],[16] (tech.snmjournals.org) and [26] (radiopaedia.org)",
+    "problem": "These hosts return HTTP 403 to automated fetchers (anti-bot), so they cannot be machine-fetched. This is NOT a fabrication signal: all were cross-confirmed real and bibliographically exact via WebSearch (e.g., [1] Abell 2008;36(1):44-54, [4] Lai/Vali 2025;53(3):198-204, [26] Radiopaedia grade 4 = >50% retention matching the article's grading table).",
+    "fix": "No change needed; flagged only so a downstream reviewer does not misread a 403 as a broken/invented link."
+  }
+]
