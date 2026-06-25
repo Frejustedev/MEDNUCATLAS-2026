@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "major",
+    "where": "Section cardiologie/amylose (Recherche/§4 'grade ≥ 2 → 100% Se pour l'ATTR et 100% Sp vs AL/contrôles'), section B5 ('un grade ≥ 2 → 100 % de sensibilité pour l'ATTR'), et QUIZ question 8 + son explication ('un grade ≥ 2 atteint 100 % de sensibilité pour l'ATTR et 100 % de spécificité vis-à-vis des formes AL et des contrôles')",
+    "problem": "Description erronée et cliniquement dangereuse du score de Perugini en scintigraphie osseuse pour l'amylose cardiaque ATTR. (1) Le grade ≥ 2 N'A PAS 100 % de sensibilité : selon Gillmore et al. (Circulation 2016, étude princeps du diagnostic non-invasif), le grade ≥ 2 isolé donne une sensibilité de 91 % et une spécificité de 87 %. La sensibilité ~100 % (>99 %) correspond au grade ≥ 1, pas au grade ≥ 2. (2) Surtout, la spécificité/VPP de 100 % pour l'ATTR n'est PAS atteinte par le grade ≥ 2 seul : elle exige le grade ≥ 2 ASSOCIÉ à l'ABSENCE de composant monoclonal (recherche d'une gammapathie sérique/urinaire négative). Omettre l'exclusion du composant monoclonal est le piège diagnostique central : l'amylose AL peut produire une fixation grade 2-3 et mimer une ATTR. Présenter '100 % Sp vs AL' sans cette condition est faux et peut conduire à un faux diagnostic d'ATTR chez un patient AL. L'erreur est dupliquée dans le corps du texte ET dans le corrigé du quiz (réponse pédagogique fausse).",
+    "fix": "Reformuler en : 'Une fixation myocardique de grade 2 ou 3 sur scintigraphie osseuse, EN L'ABSENCE de composant monoclonal sérique/urinaire, a une spécificité et une VPP de ~100 % pour l'ATTR-CM (Gillmore 2016). Le grade ≥ 2 isolé a une Se ~91 % et Sp ~87 % ; la sensibilité ~100 % concerne le grade ≥ 1. La recherche d'une gammapathie monoclonale est OBLIGATOIRE car l'amylose AL peut donner une fixation grade 2-3.' Corriger également l'explication du quiz Q8 dans le même sens."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 6 RADIOPHARMACEUTIQUE ('131I : T½ = 8 jours, γ principal 365 keV') et section B5 ('le 131I (T½ = 8 jours, γ 365 keV)')",
+    "problem": "Énergie gamma principale du 131I indiquée à '365 keV'. La valeur correcte est 364 keV (364,5 keV, abondance ~81 %). Incohérence interne : la légende de la figure DECAY_TYPES (section E15) cite correctement '131I 364 keV', alors que deux passages du corps de texte affichent 365 keV.",
+    "fix": "Remplacer '365 keV' par '364 keV' dans les deux passages du corps de texte pour corriger la valeur et harmoniser avec la légende de figure correcte."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections › E14 (Points clés, pièges fréquents et FAQ) — bullet on worker/fetal dose limits",
+    "problem": "Malformed citation token embedded in the text: « fœtus 1 mSv sur la grossesse restante [9 → voir guidelines de radioprotection] ». This is a placeholder/editorial note left in the body rather than a clean numeric citation. Source [9] is the 68Ga-PSMA v1.0 guideline, which does not support a fetal dose limit of 1 mSv — so the bracket is both a formatting defect and a citation mismatch (the 1 mSv fetal figure should cite the radioprotection/Euratom source [29], as it correctly does in section D11).",
+    "fix": "Replace « [9 → voir guidelines de radioprotection] » with « [29] » (Directive 2013/59/Euratom), consistent with the D11 table where the 1 mSv fetal limit is already attributed to [29]."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections › A1 and other section titles (e.g. \"A1 - A1 - Carte d'identité…\", \"A2 - A2 - Pourquoi…\", \"C7 - C7 - …\", \"D10 - D10 - …\", \"E13 - E13 - …\")",
+    "problem": "Several section titles contain a duplicated section prefix (\"A1 - A1 - \", \"A2 - A2 - \", \"C7 - C7 - \", \"D10 - D10 - \", \"E13 - E13 - \"). This is a cosmetic rendering defect, not a factual/fabrication issue, but it affects presentation consistency across the A→E sections (B4-B6, C8, C9, D11, D12, E14, E15 do not have the duplication).",
+    "fix": "Strip the redundant leading prefix so each title reads once, e.g. \"A1 - Carte d'identité : les recommandations de référence en médecine nucléaire\"."
+  }
+]
