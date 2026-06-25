@@ -1,0 +1,1389 @@
+{
+  "id": "V2_COMPRENDRE_SUV",
+  "cat": "bases_physiques",
+  "catLabel": "Bases Physiques",
+  "title": "Comprendre le SUV en TEP (Standardized Uptake Value)",
+  "difficulty": "intermédiaire",
+  "tags": [
+    "SUV",
+    "SUVmax",
+    "SULpeak",
+    "quantification TEP",
+    "FDG",
+    "PERCIST",
+    "EARL",
+    "harmonisation",
+    "masse maigre",
+    "réponse métabolique",
+    "biomarqueur d'imagerie",
+    "Deauville"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 (Boellaard et al., Eur J Nucl Med Mol Imaging 2015)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[2] EANM/EARL FDG-PET/CT accreditation - summary results from the first 200 accredited imaging systems (Kaalep et al., Eur J Nucl Med Mol Imaging 2018)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5787222/"
+    },
+    {
+      "title": "[3] EANM/EARL harmonization strategies in PET quantification: from daily practice to multicentre oncological studies (Aide et al., Eur J Nucl Med Mol Imaging 2017)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5541084/"
+    },
+    {
+      "title": "[4] Quantitative implications of the updated EARL 2019 PET-CT performance standards (Kaalep et al., EJNMMI Physics 2019)",
+      "url": "https://link.springer.com/article/10.1186/s40658-019-0257-8"
+    },
+    {
+      "title": "[5] SUV variability in EARL-accredited conventional and digital PET (Koopman et al., EJNMMI Research 2019)",
+      "url": "https://link.springer.com/article/10.1186/s13550-019-0569-7"
+    },
+    {
+      "title": "[6] From RECIST to PERCIST: Evolving Considerations for PET Response Criteria in Solid Tumors (Wahl et al., J Nucl Med 2009)",
+      "url": "https://jnm.snmjournals.org/content/50/Suppl_1/122S"
+    },
+    {
+      "title": "[7] Practical PERCIST: A Simplified Guide to PET Response Criteria in Solid Tumors 1.0 (O, Lodge, Wahl; Radiology 2016)",
+      "url": "https://pubs.rsna.org/doi/abs/10.1148/radiol.2016142043"
+    },
+    {
+      "title": "[8] Repeatability of SUV in Oncologic 18F-FDG PET (Lodge, J Nucl Med 2017)",
+      "url": "https://jnm.snmjournals.org/content/58/4/523"
+    },
+    {
+      "title": "[9] Variance of Standardized Uptake Values for FDG-PET/CT Greater in Clinical Practice than Under Ideal Study Settings (Kumar et al., Clin Nucl Med 2013)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3578161/"
+    },
+    {
+      "title": "[10] The effect of modern PET technology and techniques on the EANM paediatric dosage card (Dickson et al., Eur J Nucl Med Mol Imaging 2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9016049/"
+    },
+    {
+      "title": "[11] EANM Dosage Card initiative (last update August 2016)",
+      "url": "https://www.eanm.org/initiatives/dosage-card/"
+    },
+    {
+      "title": "[12] SNMMI Procedure Standard/EANM Practice Guideline on Pediatric 18F-FDG PET/CT for Oncology 1.0 (Lim et al., J Nucl Med 2021)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8679588/"
+    },
+    {
+      "title": "[13] [18F]fluorodeoxyglucose (18F-FDG) — SNMMI PET Center of Excellence monograph (Zukotynski)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Centers/PET%20Center%20of%20Excellence/FDG_K_Zukotynski%20(1).pdf"
+    },
+    {
+      "title": "[14] Fluorine-18 (physical properties, decay, positron range) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fluorine-18"
+    },
+    {
+      "title": "[15] Fluorine-18 Radiochemistry, Labeling Strategies and Synthetic Routes (Jacobson, Kiesewetter, Chen; Bioconjug Chem 2015)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4306521/"
+    },
+    {
+      "title": "[16] Fludeoxyglucose (18F) — StatPearls, NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557653/"
+    },
+    {
+      "title": "[17] Signaling Pathways That Drive 18F-FDG Accumulation in Cancer (J Nucl Med 2022)",
+      "url": "https://jnm.snmjournals.org/content/63/5/659"
+    },
+    {
+      "title": "[18] FDG Uptake and Glucose Transporter Subtype Expressions in Experimental Tumor and Inflammation Models (J Nucl Med 2001)",
+      "url": "https://jnm.snmjournals.org/content/42/10/1551"
+    },
+    {
+      "title": "[19] SNMMI Procedure Standard/EANM Practice Guideline for Brain [18F]FDG PET Imaging, Version 2.0 (2024)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39419552/"
+    },
+    {
+      "title": "[20] EANM/SNMMI guideline/procedure standard for [18F]FDG hybrid PET use in infection and inflammation in adults v2.0 (Abikhzer et al., 2024)",
+      "url": "https://link.springer.com/article/10.1007/s00259-024-06915-3"
+    },
+    {
+      "title": "[21] [18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0 (Boellaard et al., 2025)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065"
+    },
+    {
+      "title": "[22] Quantitative implications of the updated EARL 2019 PET-CT performance standards (Kaalep et al., EJNMMI Physics 2019)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933045/"
+    },
+    {
+      "title": "[23] EARL Accreditation Manual version 4.2 (EANM Forschungs GmbH/EANM Research Ltd., May 2023)",
+      "url": "https://earl.eanm.org/wp-content/uploads/2023/05/EARL_Manual_4.2.pdf"
+    },
+    {
+      "title": "[24] Why harmonization is needed when using FDG PET/CT as a prognosticator: EARL-compliant SUV as an independent prognostic factor in lung cancer (Eur J Nucl Med Mol Imaging 2019)",
+      "url": "https://link.springer.com/article/10.1007/s00259-018-4151-8"
+    },
+    {
+      "title": "[25] Practical PERCIST: A Simplified Guide to PET Response Criteria in Solid Tumors 1.0 (Emory / O, Lodge, Wahl)",
+      "url": "https://med.emory.edu/departments/radiology/clinical_divisions/nuclear-medicine/documents/2020/pet/practical-persist.pdf"
+    },
+    {
+      "title": "[26] [18F]FDG PET/CT criteria for treatment response assessment: EORTC and beyond (Clin Transl Imaging 2023)",
+      "url": "https://link.springer.com/article/10.1007/s40336-023-00578-0"
+    },
+    {
+      "title": "[27] Evaluating tumor response with FDG PET: updates on PERCIST, comparison with EORTC criteria and clues to future developments (Pinker et al., Eur J Nucl Med Mol Imaging 2017)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5542859/"
+    },
+    {
+      "title": "[28] A Systematic Review of the Factors Affecting Accuracy of SUV Measurements (Adams et al., AJR 2010)",
+      "url": "https://www.ajronline.org/doi/10.2214/AJR.10.4923"
+    },
+    {
+      "title": "[29] Test-Retest Variability in Lesion SUV and Lesion SUR in 18F-FDG PET: An Analysis of Data from Two Prospective Multicenter Trials (Hofheinz et al., J Nucl Med 2017)",
+      "url": "https://jnm.snmjournals.org/content/58/11/1770"
+    },
+    {
+      "title": "[30] Standardized uptake value (SUV) - Analysis (Turku PET Centre)",
+      "url": "https://www.turkupetcentre.net/petanalysis/model_suv.html"
+    },
+    {
+      "title": "[31] Internal dosimetry in F-18 FDG PET examinations using total-body PET/CT (Hu et al., EJNMMI Physics 2021)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8282883/"
+    },
+    {
+      "title": "[32] The new EANM paediatric dosage card: additional notes with respect to F-18 (Lassmann et al., Eur J Nucl Med Mol Imaging 2008)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18574583/"
+    },
+    {
+      "title": "[33] Diagnostic Accuracy of FDG PET-CT in Lymph Nodal Staging of Lung Cancer (Khan et al., Cureus 2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11846659/"
+    },
+    {
+      "title": "[34] FDG PET/CT in the Staging of Lung Cancer (Farsad, Curr Radiopharm 2020)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8206197/"
+    },
+    {
+      "title": "[35] 18F-FDG PET for Mediastinal Staging of Lung Cancer: Which SUV Threshold Makes Sense? (J Nucl Med 2007)",
+      "url": "https://jnm.snmjournals.org/content/48/11/1761"
+    },
+    {
+      "title": "[36] Reproducibility of [18F]FDG PET/CT liver SUV as reference or normalisation factor (Zwezerijnen et al., Eur J Nucl Med Mol Imaging 2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816285/"
+    },
+    {
+      "title": "[37] Assessment of the efficacy and prognostic value of 18F-FDG PET-CT using Deauville 5-point scale and deltaSUVmax in DLBCL (Medicine, Baltimore, 2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12419351/"
+    },
+    {
+      "title": "[38] SFMN - Actualisation des recommandations de bonne pratique clinique pour l'utilisation de la TEP en cancerologie (label HAS-INCa, Bull Cancer 2018/2019)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2021/11/RBP-Recommandations-usage-TEP-cancerologie-Bull-Cancer-2018-MAJ.pdf"
+    },
+    {
+      "title": "[39] EARL compliance measurements on the Biograph Vision Quadra PET/CT system with a long axial field of view (Kaalep et al., EJNMMI Physics 2022)",
+      "url": "https://ejnmmiphys.springeropen.com/articles/10.1186/s40658-022-00455-1"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "activity",
+        "label": "Nature de l'indice",
+        "value": "Semi-quantitatif, sans dimension (g/mL)"
+      },
+      {
+        "icon": "target",
+        "label": "Formule de base",
+        "value": "Act_VOI / (Act_injectée / poids)"
+      },
+      {
+        "icon": "flask",
+        "label": "Traceur de référence",
+        "value": "¹⁸F-FDG (analogue du glucose)"
+      },
+      {
+        "icon": "zap",
+        "label": "Photons détectés",
+        "value": "511 keV ×2 (coïncidence)"
+      },
+      {
+        "icon": "clock",
+        "label": "Période ¹⁸F",
+        "value": "109,77 min"
+      },
+      {
+        "icon": "microscope",
+        "label": "Cible biologique",
+        "value": "GLUT1/3 + hexokinase (effet Warburg)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Activité adulte",
+        "value": "370–740 MBq (SNMMI)"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie (corps)",
+        "value": "3,7–5,2 MBq/kg, min 26 MBq"
+      },
+      {
+        "icon": "clock",
+        "label": "Délai d'incorporation",
+        "value": "60 min (55–75 min)"
+      },
+      {
+        "icon": "droplets",
+        "label": "Jeûne / glycémie",
+        "value": "≥ 4 h ; glycémie < 11 mmol/L"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace FDG",
+        "value": "0,019 mSv/MBq (ICRP 128)"
+      },
+      {
+        "icon": "alert",
+        "label": "Organe critique",
+        "value": "Paroi vésicale ≈ 0,13 mGy/MBq"
+      },
+      {
+        "icon": "list",
+        "label": "Métriques clés",
+        "value": "SUVmax · SUVmean · SULpeak"
+      },
+      {
+        "icon": "shield",
+        "label": "Garde-fou comparabilité",
+        "value": "Accréditation EARL + SUL"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FDG"
+      },
+      {
+        "type": "examen",
+        "label": "TEP/TDM au ¹⁸F-FDG"
+      },
+      {
+        "type": "score",
+        "label": "PERCIST 1.0"
+      },
+      {
+        "type": "score",
+        "label": "Critères EORTC"
+      },
+      {
+        "type": "score",
+        "label": "Score de Deauville (Lugano)"
+      },
+      {
+        "type": "score",
+        "label": "Harmonisation EARL"
+      },
+      {
+        "type": "examen",
+        "label": "TEP cérébrale au ¹⁸F-FDG"
+      },
+      {
+        "type": "maladie",
+        "label": "Lymphome (DLBCL)"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer broncho-pulmonaire"
+      },
+      {
+        "type": "examen",
+        "label": "⁶⁸Ga-DOTATATE TEP"
+      },
+      {
+        "type": "examen",
+        "label": "Critères RECIST 1.1"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quelle est la formule de base du SUV normalisé au poids corporel ?",
+        "options": [
+          "Activité injectée / (concentration dans le VOI × poids)",
+          "Concentration d'activité dans le VOI / (activité injectée / poids corporel)",
+          "Concentration dans le VOI × poids / activité injectée",
+          "Activité injectée × poids / concentration dans le VOI"
+        ],
+        "answer": 1,
+        "explanation": "Le SUV rapporte la concentration d'activité mesurée dans le VOI (kBq/mL) à l'activité administrée (MBq) normalisée au poids corporel : SUV = Act_VOI / (Act_administrée / poids). Un SUV = 1 signifie une répartition uniforme du traceur dans tout le corps [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pourquoi le SUL (normalisation à la masse maigre) est-il préféré au SUVbw chez le sujet obèse ?",
+        "options": [
+          "La masse maigre est plus facile à mesurer que le poids",
+          "Le tissu adipeux fixe peu le FDG, ce qui biaise le SUV normalisé au poids total",
+          "Le SUL est insensible à la glycémie",
+          "Le SUL supprime l'effet de volume partiel"
+        ],
+        "answer": 1,
+        "explanation": "Le tissu adipeux capte peu le FDG ; normaliser au poids total surestime donc le SUV chez l'obèse. Le SUL utilise la masse maigre (formules de Janmahasatian), ce qui réduit ce biais et fonde la métrique de PERCIST [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle métrique PERCIST utilise une sphère fixe de 1 cm³ centrée sur la zone la plus active ?",
+        "options": [
+          "SUVmax",
+          "SUVmean",
+          "SULpeak",
+          "SUVbsa"
+        ],
+        "answer": 2,
+        "explanation": "Le SULpeak est le SUL moyen dans une sphère fixe de 1 cm³ centrée sur la zone la plus active. C'est la métrique de PERCIST 1.0, plus robuste au bruit et aux différences de reconstruction que le SUVmax mono-voxel [6,7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon PERCIST 1.0, une réponse métabolique partielle (PMR) correspond à :",
+        "options": [
+          "Une diminution ≥ 15 % du SULpeak",
+          "Une diminution ≥ 30 % du SULpeak ET une baisse absolue ≥ 0,8 unité SUL",
+          "Une diminution ≥ 50 % du SUVmax uniquement",
+          "La disparition complète de toute fixation"
+        ],
+        "answer": 1,
+        "explanation": "PERCIST définit la PMR par une diminution ≥ 30 % du SULpeak ET une baisse absolue ≥ 0,8 unité SUL. La progression (PMD) répond aux mêmes seuils en augmentation, ou à l'apparition de nouvelles lésions [6,7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la demi-vie physique du ¹⁸F ?",
+        "options": [
+          "20,4 min",
+          "68 min",
+          "109,77 min",
+          "13,2 h"
+        ],
+        "answer": 2,
+        "explanation": "Le ¹⁸F a une période physique d'environ 109,77 min (≈ 110 min), avec émission β⁺ dans ~96,7 % des désintégrations. Son parcours de positon court explique la bonne résolution de la TEP au FDG [14].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel mécanisme cellulaire explique le piégeage métabolique du FDG ?",
+        "options": [
+          "Le FDG est métabolisé par la MAO et la COMT",
+          "Le FDG-6-phosphate n'est pas substrat de la glucose-6-phosphate isomérase et s'accumule",
+          "Le FDG se lie aux récepteurs de la somatostatine",
+          "Le FDG diffuse passivement sans transporteur"
+        ],
+        "answer": 1,
+        "explanation": "Le FDG entre par les transporteurs GLUT, est phosphorylé par l'hexokinase (surtout HK-II) en FDG-6-phosphate, qui n'est pas substrat de la glucose-6-phosphate isomérase : il est donc bloqué et s'accumule dans la cellule (metabolic trapping) [16,17].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel délai d'incorporation est recommandé entre l'injection de FDG et l'acquisition ?",
+        "options": [
+          "30 min",
+          "60 min (plage 55–75 min)",
+          "90 min",
+          "120 min"
+        ],
+        "answer": 1,
+        "explanation": "Le délai d'incorporation recommandé est de 60 min (plage acceptable 55–75 min). Pour le suivi, il faut le reproduire à ± 10 min car le SUV continue d'augmenter avec le temps dans les lésions tumorales [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "À partir de quelle glycémie l'examen TEP-FDG doit-il généralement être reprogrammé ?",
+        "options": [
+          "≥ 7 mmol/L (126 mg/dL)",
+          "≥ 9 mmol/L (160 mg/dL)",
+          "≥ 11 mmol/L (≈ 200 mg/dL)",
+          "≥ 15 mmol/L (270 mg/dL)"
+        ],
+        "answer": 2,
+        "explanation": "L'EANM recommande de reprogrammer l'examen si la glycémie est ≥ 11 mmol/L (≈ 200 mg/dL) : l'hyperglycémie entre en compétition avec le FDG et abaisse la captation tumorale, réduisant la sensibilité [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la dose efficace de référence du ¹⁸F-FDG chez l'adulte (ICRP 128) ?",
+        "options": [
+          "0,007 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,14 mSv/MBq",
+          "0,5 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "La dose efficace du FDG est de 1,9 × 10⁻² mSv/MBq = 0,019 mSv/MBq (ICRP 128). Pour 370 MBq, cela représente environ 7 mSv, hors composante TDM [31].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'organe critique pour la dosimétrie du ¹⁸F-FDG ?",
+        "options": [
+          "Le foie",
+          "Le cerveau",
+          "La paroi vésicale",
+          "La moelle osseuse"
+        ],
+        "answer": 2,
+        "explanation": "L'organe critique est la paroi vésicale (≈ 0,13 mGy/MBq), le FDG étant éliminé par voie urinaire. L'hydratation et des mictions fréquentes réduisent cette dose [31].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Avec un protocole soigné, quelle est la répétabilité test-retest (wCV) du SUV en oncologie ?",
+        "options": [
+          "≈ 1 %",
+          "≈ 10 %",
+          "≈ 30 %",
+          "≈ 50 %"
+        ],
+        "answer": 1,
+        "explanation": "En conditions optimisées, le coefficient de variation intra-sujet (wCV) du SUV avoisine 10 %. C'est ce qui justifie le seuil PERCIST de 30 % : une variation doit dépasser environ ± 30 % pour être considérée significative [8].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'effet du passage des standards EARL1 aux standards EARL2 (2019) sur le SUV ?",
+        "options": [
+          "Le SUV diminue de 30 %",
+          "Le SUV est inchangé",
+          "Le SUV augmente d'environ 23–30 % selon la métrique",
+          "Le SUV devient indépendant de la machine"
+        ],
+        "answer": 2,
+        "explanation": "EARL2 relève les coefficients de récupération (≈ +25 % vs EARL1), augmentant le SUV de l'ordre de 23–30 % selon la métrique. Les valeurs EARL1 et EARL2 ne sont donc pas interchangeables pour un suivi longitudinal [4,22].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Sur quel organe de référence repose habituellement la mesurabilité d'une lésion selon PERCIST ?",
+        "options": [
+          "Le myocarde",
+          "Le foie sain (alternative : pool sanguin/aorte)",
+          "Le cerveau",
+          "La rate"
+        ],
+        "answer": 1,
+        "explanation": "Une lésion est mesurable en PERCIST si son SULpeak dépasse 1,5 × SULmean(foie) + 2 × SD(foie), le foie sain étant la référence préférée (alternative : pool sanguin aortique). Le foie sert aussi de repère au score de Deauville [7,36].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Dans le score de Deauville (lymphome), quelle classe correspond à une fixation modérément supérieure au foie ?",
+        "options": [
+          "Score 2",
+          "Score 3",
+          "Score 4",
+          "Score 5"
+        ],
+        "answer": 2,
+        "explanation": "Le score de Deauville cote 1 (pas de captation), 2 (≤ pool médiastinal), 3 (> médiastin mais ≤ foie), 4 (modérément > foie) et 5 (nettement > foie ou nouvelle lésion). Les scores 1–3 sont négatifs, 4–5 positifs [37].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi une fixation FDG intense ne permet-elle pas d'affirmer la malignité ?",
+        "options": [
+          "Le FDG ne se fixe que sur les tumeurs",
+          "L'inflammation, l'infection, le muscle et la graisse brune fixent aussi le FDG",
+          "Le SUVmax est toujours faussement bas",
+          "Le FDG ne traverse pas la membrane cellulaire"
+        ],
+        "answer": 1,
+        "explanation": "Le FDG reflète le métabolisme glucidique, non spécifique du cancer : foyers inflammatoires, infectieux, tissu adipeux brun et muscle fixent également le traceur, source de faux positifs. Le SUV reste un descripteur, jamais un diagnostic à lui seul [20].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pour comparer valablement deux SUV lors d'un suivi, quelles conditions doivent être réunies ?",
+        "options": [
+          "N'importe quelle machine, du moment que la dose injectée est identique",
+          "Même appareil/protocole, même délai d'incorporation (± 10 min), même normalisation et même standard EARL",
+          "Seulement le même radiopharmaceutique",
+          "Uniquement le même opérateur"
+        ],
+        "answer": 1,
+        "explanation": "La comparabilité longitudinale exige le même appareil/protocole, le même délai d'incorporation à ± 10 min, la même normalisation (idéalement SUL) et le même standard d'harmonisation (ne pas mélanger EARL1 et EARL2 sans correction) [1,4].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel phénomène entraîne une sous-estimation du SUV des petites lésions ?",
+        "options": [
+          "L'effet de volume partiel pour les lésions < 2–3 fois la résolution",
+          "L'effet Compton",
+          "La correction d'atténuation",
+          "La normalisation à la masse maigre"
+        ],
+        "answer": 0,
+        "explanation": "L'effet de volume partiel sous-estime le SUV des lésions de taille inférieure à environ 2–3 fois la résolution du système. C'est un piège majeur de la quantification, distinct du choix de la ROI ou de la reconstruction [28].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le seuil de variation du SUV évoqué pour la réponse partielle dans les critères EORTC 1999 ?",
+        "options": [
+          "↓ 5–10 % après un cycle",
+          "↓ 15–25 % après un cycle, > 25 % après plusieurs cycles",
+          "↓ 50 % systématiquement",
+          "Disparition totale obligatoire"
+        ],
+        "answer": 1,
+        "explanation": "Les critères EORTC 1999 définissent la réponse métabolique partielle par une baisse du SUV de 15–25 % après un cycle et > 25 % après plusieurs cycles ; la progression par une hausse > 25 % ou une nouvelle lésion [26,27].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le SUV est un indice semi-quantitatif sans dimension : concentration d'activité du VOI rapportée à l'activité injectée normalisée à un descripteur corporel (poids, masse maigre, surface) [1].",
+        "Distinguer SUVmax (voxel le plus chaud, robuste à la délimitation mais sensible au bruit), SUVmean (dépend de la segmentation) et SULpeak (sphère de 1 cm³, métrique de PERCIST, la plus robuste) [1,7].",
+        "Le SUL normalise à la masse maigre (formules de Janmahasatian) ; recommandé car moins biaisé chez l'obèse, le tissu adipeux fixant peu le FDG [1].",
+        "Le FDG reflète le métabolisme glucidique (GLUT1/3 + hexokinase, effet Warburg) : non spécifique du cancer, d'où faux positifs inflammatoires, infectieux, musculaires et graisse brune [16,17,20].",
+        "Physique ¹⁸F : période 109,77 min, β⁺ ~96,7 %, annihilation en 2 photons de 511 keV détectés en coïncidence [14].",
+        "Le SUV est trompeur s'il n'est pas standardisé : ~20 paramètres techniques et biologiques le font varier ; l'harmonisation EARL et la fixation des conditions de mesure sont les garde-fous [3,28].",
+        "Répétabilité test-retest ≈ 10 % en conditions idéales ; une variation n'est significative qu'au-delà d'environ ± 30 %, ce qui fonde les seuils PERCIST et EORTC [8].",
+        "EARL2 (2019) augmente le SUV de 23–30 % vs EARL1 : valeurs non interchangeables, rupture de continuité à corriger pour le suivi d'un patient changeant de standard [4,22]."
+      ],
+      "protocol": [
+        "Jeûne ≥ 4 h (eau plate autorisée) ; arrêt des perfusions glucosées ≥ 4 h [1].",
+        "Glycémie : examen réalisable si < 11 mmol/L (≈ 200 mg/dL), reprogrammer si ≥ 11 mmol/L ; en recherche, cible resserrée 7–8,3 mmol/L [1].",
+        "Pas d'effort physique intense ≥ 6 h avant ; repos au chaud 30–60 min avant injection pour limiter la graisse brune [1].",
+        "Hydratation (≈ 1 L d'eau) et miction juste avant l'acquisition pour réduire la dose vésicale et les artefacts [1].",
+        "Activité adulte 370–740 MBq (SNMMI) ou modèle EANM 14 × poids / durée par pas de lit ; ne pas dépasser 530 MBq au-delà de 90 kg [1,13].",
+        "Délai d'incorporation 60 min (plage 55–75 min) ; pour le suivi, reproduire à ± 10 min, même machine, même protocole, même normalisation [1].",
+        "Voxels reconstruits 3,0–4,0 mm ; filtre post-reconstruction FWHM ≤ 7 mm (compatibilité EARL1) [1]."
+      ],
+      "scores": [
+        "PERCIST 1.0 (SULpeak, sphère 1 cm³) : CMR = disparition jusqu'au bruit de fond ; PMR = ↓ ≥ 30 % ET ≥ 0,8 unité SUL ; PMD = ↑ ≥ 30 % ET ≥ 0,8 unité ou nouvelle lésion ; SMD = entre les deux [6,7].",
+        "Mesurabilité PERCIST : SULpeak ≥ 1,5 × SULmean(foie) + 2 × SD(foie) ; référence foie sain, alternative pool aortique [7].",
+        "EORTC 1999 (SUVbsa) : réponse partielle = ↓ 15–25 % après 1 cycle, > 25 % après plusieurs ; progression = ↑ > 25 % ou nouvelle lésion [26,27].",
+        "Deauville (lymphome, Lugano) : 5 points, repères pool médiastinal (score 2) et foie (score 3) ; 1–3 négatif, 4–5 positif ; complété par ΔSUVmax [37].",
+        "Harmonisation EARL : CalQC (biais SUV ± 10 %) + IQQC (fantôme NEMA NU2) ; EARL2 (2019) RC ↑ ~25 %, SUV ↑ 23–30 % vs EARL1 [2,4,22,23]."
+      ],
+      "pitfalls": [
+        "Comparer des SUV obtenus avec délai d'incorporation, normalisation (poids vs LBM), machine ou standard EARL différents sans correction : erreur d'interprétation majeure [4].",
+        "Effet de volume partiel : sous-estimation du SUV des lésions < 2–3 fois la résolution [28].",
+        "Reconstruction PSF/ToF : augmente SUVmax/SUVpeak, impose l'harmonisation pour comparer machines et dates [4,28].",
+        "Hyperglycémie / diabète déséquilibré : compétition glucose-FDG, captation tumorale abaissée, sensibilité réduite [1].",
+        "Faux positifs physiologiques : graisse brune, muscle, tube digestif, voies urinaires, foyers inflammatoires/infectieux [20,28].",
+        "Erreur d'horloge, extravasation au point d'injection, calibration croisée activimètre-caméra défaillante : faussent l'activité de référence et donc le SUV [1,28].",
+        "En pratique clinique réelle, la variance est plus élevée qu'en étude idéale : le seuil de changement significatif peut approcher 50 % [9]."
+      ]
+    },
+    "lead": "Le SUV est le chiffre que l'on lit le plus souvent sur un compte rendu de TEP : il transforme l'intensité d'une fixation en une valeur comparable d'un patient à l'autre et d'un examen à l'autre. Derrière sa simplicité apparente se cache une mesure fragile, sensible à la préparation du patient, au délai d'attente, à la machine et à la façon de reconstruire les images. Bien encadré, il devient un outil fiable pour suivre une tumeur sous traitement et juger si elle répond. Mal maîtrisé, il fait croire à un progrès ou à une rechute qui n'existent que dans la mesure. Tout l'enjeu de cette fiche est de montrer où se gagne, et où se perd, la confiance que l'on peut lui accorder.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert ce « chiffre » que mentionne votre compte rendu ?",
+          "text": "Lorsque vous passez un examen appelé **TEP** (ou « PET-scan »), votre médecin reçoit un compte rendu qui décrit les zones de votre corps les plus actives. Pour mesurer cette activité, le médecin nucléaire utilise un indice chiffré : c'est une façon de transformer une image en une valeur comparable d'une fois à l'autre. Vous n'avez pas besoin de comprendre ce nombre vous-même : il s'agit d'un outil de travail pour les médecins. Son intérêt principal est le **suivi** : en comparant l'examen du début à celui réalisé après un traitement, l'équipe peut voir, de façon objective, si une zone devient moins active (signe encourageant) ou plus active. C'est un repère parmi d'autres, toujours interprété avec l'ensemble des images et de votre dossier, jamais isolément.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un repère, pas un diagnostic",
+              "text": "Ce chiffre n'est pas à lui seul un verdict. Il aide votre équipe à comparer deux examens et à mesurer une évolution. C'est toujours le médecin qui, en réunissant toutes les informations (images, examens, biologie, examen clinique), donne un sens à ce repère et vous explique ce qu'il signifie pour vous."
+            }
+          ]
+        },
+        {
+          "title": "Pourquoi votre préparation change tout",
+          "text": "Pour que ce repère soit fiable, l'examen doit se dérouler dans des conditions bien précises, identiques d'une fois à l'autre. C'est pourquoi l'équipe vous demande quelques efforts simples mais importants : **rester à jeun** quelques heures avant l'examen (l'eau plate reste autorisée), **éviter les efforts physiques** la veille et le jour même, et **bien vous couvrir** car le froid peut gêner les images. Le produit que l'on vous injecte est un sucre très légèrement radioactif : si vous avez mangé ou fait du sport juste avant, ce sucre se répartit moins bien et la mesure devient moins précise. Un temps de **repos au calme** après l'injection, puis un délai régulier avant le passage sous la caméra, font aussi partie de cette préparation. En respectant ces consignes, vous aidez directement votre équipe à obtenir une mesure de bonne qualité.",
+          "steps": [
+            {
+              "title": "Avant le rendez-vous",
+              "text": "Rester à jeun le temps demandé, ne boire que de l'eau plate, et éviter sport et efforts intenses la veille et le jour même."
+            },
+            {
+              "title": "À l'accueil",
+              "text": "L'équipe vérifie votre taux de sucre dans le sang et vous installe au calme et au chaud."
+            },
+            {
+              "title": "Après l'injection",
+              "text": "Vous vous reposez tranquillement, allongé, sans bouger ni parler, le temps que le produit se répartisse de façon homogène."
+            },
+            {
+              "title": "Sous la caméra",
+              "text": "L'enregistrement est silencieux et indolore ; il suffit de rester immobile."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Si vous êtes diabétique, signalez-le",
+              "text": "Un taux de sucre trop élevé le jour de l'examen gêne la mesure et peut conduire à reprogrammer le rendez-vous. Prévenez l'équipe dès la prise de rendez-vous : elle adaptera avec vous le moment de vos médicaments et de votre dernier repas pour que tout se passe au mieux."
+            }
+          ]
+        },
+        {
+          "title": "Comparer deux examens : pourquoi c'est si utile",
+          "text": "L'un des grands intérêts de cette mesure est de **comparer votre examen actuel à un examen précédent**. Pour que cette comparaison ait du sens, les deux examens doivent être réalisés dans des conditions vraiment semblables : même préparation, même délai, et si possible le même type d'appareil. C'est pourquoi il est précieux de réaliser vos examens dans le même centre quand c'est possible, et de signaler vos traitements récents. Rassurez-vous : tout cela est géré par votre équipe. De votre côté, l'essentiel est de bien suivre les consignes de préparation et de poser vos questions sans hésiter. L'examen est sûr, bien toléré, et la quantité de produit utilisée est faible et s'élimine rapidement dans les heures qui suivent.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Gardez vos comptes rendus",
+              "text": "Conserver les comptes rendus et, si possible, les images de vos examens précédents aide beaucoup les médecins à mesurer correctement l'évolution. N'hésitez pas à les apporter ou à indiquer où ils ont été réalisés."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : où le SUV intervient dans votre pratique",
+          "text": "Le SUV (Standardized Uptake Value, « valeur de fixation normalisée ») est l'indice semi-quantitatif que vous retrouvez dans tout compte rendu de TEP au 18F-FDG. Vous n'avez pas à le calculer, mais savoir ce qu'il mesure et où il intervient aide à formuler la bonne demande et à interpréter le compte rendu. Il quantifie l'intensité de fixation du traceur dans une lésion, rapportée à l'activité injectée et au poids du patient. Il sert surtout au suivi objectif sous traitement et porte une valeur pronostique.",
+          "list": [
+            "**Oncologie (caractérisation, bilan d'extension, évaluation de réponse)** : indication majeure. Le suivi de la réponse au traitement s'appuie sur des critères standardisés (PERCIST), fondés sur une variante du SUV normalisée à la masse maigre (le SUL).",
+            "**Lymphome** : la réponse est cotée par une échelle visuelle (score de Deauville, qui compare la lésion au foie et au médiastin) ; la variation chiffrée du SUV est un appoint, surtout en évaluation intermédiaire.",
+            "**Neurologie (démences, foyer épileptogène)** : l'analyse repose plutôt sur des rapports de fixation et une comparaison à une base de données de référence que sur un SUV isolé.",
+            "**Infection / inflammation** : le SUV vient en appoint d'une lecture avant tout visuelle.",
+            "**Élément clé à retenir** : un SUV n'a de valeur de suivi que si les deux examens comparés ont été réalisés dans des conditions identiques (même délai, même normalisation, idéalement même appareil)."
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La TEP au 18F-FDG apporte une mesure objective et reproductible de l'activité métabolique d'une lésion, là où l'imagerie morphologique ne montre que la taille et la structure : elle distingue une masse résiduelle active d'une simple séquelle fibreuse. Le SUV transforme cette information en un repère chiffré, qui sert au bilan, au pronostic et surtout au suivi de la réponse au traitement. Pour que ce suivi soit interprétable, un examen de référence avant traitement est indispensable : adresser le patient tôt, avec une histologie connue, une question clinique précise (bilan, évaluation intermédiaire ou de fin de traitement) et les dates des traitements récents, permet de positionner chaque examen au bon moment et de rendre les SUV comparables d'une fois à l'autre."
+            }
+          ]
+        },
+        {
+          "title": "La démarche et l'apport de la médecine nucléaire",
+          "text": "Le SUV est un indice puissant mais fragile : il dépend d'une vingtaine de paramètres techniques et biologiques. Connaître les variantes que vous lirez dans un compte rendu et les conditions de sa fiabilité évite les surinterprétations. Il existe plusieurs métriques : le SUVmax (voxel le plus actif d'une lésion, robuste mais sensible au bruit), le SUVmean (moyenne sur la région, dépendante du contourage) et le SULpeak (moyenne dans un petit volume fixe, normalisée à la masse maigre — la métrique de référence pour le suivi car la plus stable d'une machine à l'autre).",
+          "list": [
+            "**Conditions de comparabilité** : un SUV ne se compare valablement à un examen antérieur que si le délai d'incorporation, la normalisation (poids ou masse maigre) et l'appareil/protocole sont identiques. Un même patient changeant de centre ou de standard d'appareil peut voir son SUV varier sans aucune évolution réelle de la maladie.",
+            "**Variabilité de mesure** : même dans de bonnes conditions, une variation de SUV n'est considérée comme significative qu'au-delà d'environ 30 % ; en pratique courante, le seuil de changement réellement parlant est souvent plus élevé. Une petite variation entre deux examens n'a donc pas forcément de sens clinique.",
+            "**Facteurs qui faussent le SUV** : glycémie élevée, effort physique récent, délai d'incorporation non reproduit, petite taille de lésion (sous-estimation), erreurs techniques. D'où l'importance de la préparation et des informations transmises.",
+            "**Critères standardisés** : la réponse au traitement est jugée selon des grilles structurées (PERCIST en oncologie générale, Deauville/Lugano dans les lymphomes) plutôt que sur le seul chiffre brut.",
+            "**À préciser sur la demande** : histologie, moment du protocole attendu (référence, intermédiaire ou fin de traitement), traitements récents et leurs dates, statut diabétique et glycémie, et la question clinique exacte."
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Lire un SUV sans se tromper",
+              "text": "Ne comparez jamais directement deux SUV issus d'examens réalisés avec des conditions, des appareils ou des standards de quantification différents : la différence observée peut être purement technique. Pour un suivi fiable, privilégiez le même centre, signalez tout diabète ou hyperglycémie (qui dégrade la mesure et peut faire reporter l'examen), et joignez l'examen antérieur de référence — c'est lui qui donne tout son sens à l'évolution du chiffre."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - A1 - Carte d'identite du SUV",
+          "text": "**Comment lire cette carte.** Le **SUV** (Standardized Uptake Value, « valeur de fixation normalisee ») n'est pas un examen ni un traceur : c'est l'**indice semi-quantitatif** calcule a partir d'une image **TEP** (tomographie par emission de positons), le plus souvent au **¹⁸F-FDG** (²-desoxy-²-[¹⁸F]fluoro-D-glucose). Cette carte resume ce qu'il faut savoir d'un coup d'oeil avant d'ouvrir une console ; chaque chiffre est detaille et source dans les sections suivantes.\n\n| Champ | Valeur | Source |\n|---|---|---|\n| **Nature** | Indice semi-quantitatif d'une image TEP (sans dimension, exprime en g/mL si densite tissulaire = 1) | [1] |\n| **Traceur support** | ¹⁸F-FDG dans la quasi-totalite des cas (analogue du glucose) | [1,16] |\n| **Formule de base** | SUV = concentration d'activite du VOI (kBq/mL) / [activite injectee corrigee (MBq) / poids (kg)] | [1] |\n| **Normalisations** | Poids (SUVbw), **masse maigre (SUL)**, surface corporelle (SUVbsa) | [1] |\n| **Variantes principales** | SUVmax, SUVmean, SUVpeak / **SULpeak** (sphere 1 cm³), MTV, TLG | [1,6,7] |\n| **Reference de fond** | **Foie** sain (SUVmean ≈ 2,0–3,0) ; pool vasculaire/aorte en alternative | [36,7] |\n| **Critere de suivi** | PERCIST 1.0 sur **SULpeak** ; seuil de reponse **± 30 % + 0,8 unite** | [6,7] |\n| **Repetabilite (ideale)** | wCV ≈ 10 % ; variation significative au-dela de **~ 30 %** | [8,29] |\n| **Garde-fou multicentrique** | Harmonisation **EARL** (EANM Research Ltd) | [2,3,4] |\n| **Piege majeur** | Non comparable entre delais d'incorporation, normalisations, machines ou standards (EARL1 vs EARL2) differents | [4] |\n\nLe SUV repond a une question simple — « cette region fixe-t-elle plus que la moyenne du corps ? » : un **SUV = 1** signifie une distribution parfaitement homogene du traceur dans tout l'organisme.[1] Tout l'enjeu clinique tient a la **standardisation** des dizaines de parametres qui le font varier (cf. §A4 et le mouvement B).",
+          "stats": [
+            {
+              "value": "SUV = 1",
+              "label": "Distribution homogene du traceur dans le corps [1]"
+            },
+            {
+              "value": "1 cm³",
+              "label": "Sphere de mesure du SUVpeak / SULpeak [6,7]"
+            },
+            {
+              "value": "± 30 %",
+              "label": "Seuil de variation significative (PERCIST) [6,8]"
+            },
+            {
+              "value": "EARL",
+              "label": "Programme d'harmonisation EANM [2,3,4]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le SUV est un descripteur, pas un diagnostic",
+              "text": "Le SUV ne remplace ni la lecture visuelle ni l'imagerie morphologique : c'est un **descripteur semi-quantitatif** d'aide au staging, a l'evaluation de reponse et au pronostic. Il n'a de valeur que replace dans son contexte technique (delai, normalisation, reconstruction, calibration). Un SUV mal maitrise induit en erreur ; l'harmonisation EARL et la standardisation des protocoles sont les garde-fous.[3,4]"
+            }
+          ]
+        },
+        {
+          "title": "A2 - A2 - Definition : qu'est-ce que le SUV ?",
+          "text": "Le **SUV** (Standardized Uptake Value) est l'indice **semi-quantitatif** de reference en TEP. Il rapporte la **concentration d'activite mesuree** dans une region d'interet volumique (**VOI**, Volume Of Interest) a l'**activite injectee**, normalisee par un descripteur corporel — le plus souvent le poids. C'est un nombre **sans dimension** (exprime en g/mL lorsque l'on pose une densite tissulaire de 1 g/mL).[1]\n\n**Formule de base, normalisation au poids (SUVbw, body weight) :**\n\n> SUV = Act_VOI (kBq/mL) / [ Act_administree (MBq) / poids corporel (kg) ]\n\nLa concentration d'activite au numerateur est mesuree dans le voxel ou le VOI ; l'activite injectee au denominateur est **corrigee de la decroissance** entre l'injection et l'acquisition.[1] L'interpretation est intuitive : un **SUV = 1** correspond a une repartition parfaitement uniforme du traceur dans tout le corps ; un SUV de 5 signifie que la region fixe 5 fois la concentration moyenne corporelle.[1]\n\n**Ce que le SUV est — et n'est pas.** Il s'agit d'une mesure **semi-quantitative**, et non d'une quantification absolue du metabolisme (laquelle exigerait une modelisation cinetique dynamique avec fonction d'entree arterielle). Le SUV statique est un **substitut** simple, robuste et reproductible de cette quantification, calcule sur une acquisition unique a delai fixe. C'est une information de **caracterisation fonctionnelle** (intensite du processus capte) superposee a l'information **anatomique** de la TDM ou de l'IRM : la TDM montre *ou* est la lesion, le SUV dit *combien* elle fixe.\n\n**Pourquoi « standardisee » ?** La concentration brute mesuree (en kBq/mL) depend de l'activite injectee et de la corpulence du patient : injecter plus de traceur ou l'examiner chez un sujet plus leger augmente mecaniquement la concentration tissulaire sans rien dire du metabolisme. La normalisation par [activite / descripteur corporel] **annule** ces deux dependances, rendant la valeur comparable d'un patient a l'autre et d'un examen a l'autre — *a condition* que tous les autres parametres soient eux aussi standardises (cf. §A4).[1]\n\n**Normalisation a la masse maigre (SUL).** Le tissu adipeux fixant peu le FDG, normaliser au poids total surestime le denominateur chez les sujets obeses et **biaise les SUV a la hausse**. L'EANM recommande donc la normalisation a la **masse maigre** (LBM, Lean Body Mass), donnant le **SUL** (SUV corrige de la masse maigre), base des criteres PERCIST :[1,6]\n\n> SUL = Act_VOI (kBq/mL) / [ Act_administree (MBq) / LBM (kg) ]\n\nLa masse maigre est estimee par les formules de **Janmahasatian** (recommandees par l'EANM, plus fiables que la formule de James au-dela de 120 kg) :[1]\n\n> LBM(homme) = 9270 × poids / (6680 + 216 × IMC)\n> LBM(femme) = 9270 × poids / (8780 + 244 × IMC)\n\nEn recherche, une correction par la glycemie est possible : **SUL_glu = SUL × glycemie (mmol/L) / 5,0**.[1] La surface corporelle (SUVbsa) est une troisieme option, utilisee historiquement par les criteres EORTC.[26]",
+          "list": [
+            "**SUV** = concentration d'activite du VOI / (activite injectee / descripteur corporel) — indice **semi-quantitatif**, sans dimension.[1]",
+            "**SUVbw** : normalisation au **poids** — la plus repandue mais biaisee chez l'obese.[1]",
+            "**SUL** : normalisation a la **masse maigre** (formules de Janmahasatian) — recommandee par l'EANM, base de PERCIST.[1,6]",
+            "**SUVbsa** : normalisation a la **surface corporelle** — utilisee par les criteres EORTC.[26]"
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — poids ou masse maigre ?",
+              "text": "Ne jamais comparer un SUVbw (poids) a un SUL (masse maigre) : ce sont deux indices differents. Chez un patient obese, le SUVbw est **structurellement majore**. Pour le suivi longitudinal, conserver **la meme normalisation** d'un examen a l'autre, idealement le SUL.[1]"
+            },
+            {
+              "type": "info",
+              "title": "Cadre de recommandations",
+              "text": "Le calcul et l'usage du SUV sont encadres par les **EANM procedure guidelines for tumour imaging v2.0 (2015)**[1] puis **v3.0 (2025)**[21], les standards de procedure SNMMI, et en France les recommandations de bonne pratique **SFMN / HAS-INCa** pour l'usage de la TEP en cancerologie.[38]"
+            }
+          ]
+        },
+        {
+          "title": "A3 - A3 - Rappels physiologiques : captation du FDG et piegeage metabolique",
+          "text": "Le SUV n'a de sens que par le **mecanisme biologique** qu'il mesure. Dans la quasi-totalite des cas, le traceur est le **¹⁸F-FDG**, un analogue radiomarque du glucose dont la fixation reflete le **metabolisme glucidique** cellulaire. Comprendre les quatre etapes de sa captation explique pourquoi le SUV est eleve dans les tumeurs — mais aussi pourquoi il n'est pas specifique du cancer.\n\n**1. Entree cellulaire (transporteurs GLUT).** Comme le glucose, le FDG penetre la cellule via les **transporteurs membranaires GLUT** (surtout **GLUT1 et GLUT3**), surexprimes dans les cellules tumorales, inflammatoires et les neurones.[16,17] Cette surexpression conditionne le premier niveau de captation.\n\n**2. Phosphorylation (hexokinase).** A l'interieur de la cellule, le FDG est phosphoryle par l'**hexokinase** (surtout l'isoforme **HK-II**, surexprimee dans les cancers) en **FDG-6-phosphate**.[17]\n\n**3. Piegeage metabolique (« metabolic trapping »).** C'est l'etape-cle. Contrairement au glucose-6-phosphate, le **FDG-6-phosphate n'est pas substrat de la glucose-6-phosphate isomerase** : il ne peut pas poursuivre la glycolyse. Il reste donc **bloque dans la cellule**, d'autant plus que la **glucose-6-phosphatase** — qui le dephosphorylerait pour le liberer, et qui est abondante dans le foie — y est faible.[16] Cette retention progressive est ce qui rend possible une acquisition **differee** (≈ 60 min apres injection), le contraste lesion/fond augmentant avec le temps.\n\n**4. Base oncologique — effet Warburg.** Les cellules tumorales combinent une **surexpression de GLUT1/3**, une **augmentation de l'hexokinase** et une **diminution de la glucose-6-phosphatase** : ce phenotype glycolytique (**effet Warburg**) explique leur avidite pour le FDG et donc des SUV eleves.[18]\n\n**Consequence pratique — un traceur non specifique du cancer.** Tout tissu a fort metabolisme glucidique fixe le FDG : le **cerveau** (SUV ≈ 3–7), le **myocarde** (captation intense et variable), mais aussi l'**inflammation**, l'**infection**, le **tissu adipeux brun**, le **muscle sollicite** et le **tube digestif**.[20] Ce sont autant de **faux positifs** potentiels et de pieges physiologiques qui imposent de connaitre la biodistribution normale avant toute mesure de SUV.\n\n**Fixations physiologiques de reference (utiles au SUV) :**\n\n| Structure | SUV / particularite | Role |\n|---|---|---|\n| **Foie** | SUVmean ≈ **2,0–3,0** | Reference de fond privilegiee (PERCIST, Deauville) [36] |\n| **Pool vasculaire (aorte/mediastin)** | SUV ≈ **0,8–2** | Reference basse (Deauville niveau 2) [7] |\n| **Cerveau** | SUV ≈ **3–7** | Captation neuronale intense (GLUT3) [16] |\n| **Graisse brune, muscle, digestif, voies urinaires** | Variable | Pieges physiologiques / faux positifs [28] |",
+          "stats": [
+            {
+              "value": "GLUT1/3",
+              "label": "Transporteurs d'entree du FDG, surexprimes en tumeur [16,17]"
+            },
+            {
+              "value": "HK-II",
+              "label": "Hexokinase phosphorylant le FDG-6-P [17]"
+            },
+            {
+              "value": "2,0–3,0",
+              "label": "SUVmean hepatique de reference [36]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — le FDG n'est pas un traceur du cancer",
+              "text": "Le FDG marque le **metabolisme du glucose**, pas la malignite. Inflammation, infection, graisse brune et muscle sollicite fixent et elevent le SUV (faux positifs). La preparation du patient (jeune, repos, controle glycemique) vise precisement a reduire ces captations parasites.[20,28]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi imager a 60 min ?",
+              "text": "Le piegeage metabolique est progressif : le FDG-6-phosphate s'accumule dans les cellules avides tandis que le fond sanguin s'epure. Le contraste lesion/fond — donc le SUV lesionnel — croit avec le delai d'incorporation. D'ou la regle d'un delai **fixe (~ 60 min)** et surtout **reproductible** pour tout suivi (cf. §A4).[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schema de la captation cellulaire du ¹⁸F-FDG : entree par les transporteurs GLUT1/3, phosphorylation par l'hexokinase en FDG-6-phosphate, puis piegeage metabolique car le FDG-6-phosphate n'est pas substrat de la glucose-6-phosphate isomerase.",
+            "caption": "Fig. 1 — Captation du FDG : entree (GLUT), phosphorylation (hexokinase) et piegeage metabolique du FDG-6-phosphate. C'est cette retention que le SUV quantifie."
+          }
+        },
+        {
+          "title": "A4 - A4 - Principe : de la concentration mesuree au SUV",
+          "text": "Mesurer un SUV, c'est suivre une **chaine metrologique** complete : depuis la desintegration du ¹⁸F dans la lesion jusqu'au nombre affiche sur la console. Chaque maillon est une source potentielle de variabilite — c'est ce qui distingue un SUV fiable d'un SUV trompeur.\n\n**1. La source physique — le ¹⁸F.** Le **fluor-18** decroit par emission **β+ (positon)** dans **96,7 %** des desintegrations (capture electronique ~3,3 %), avec une **periode physique de 109,77 min** (≈ 110 min) et une **energie β+ maximale de ~ 633–635 keV**, d'ou un parcours du positon court (**< 2,4 mm**) qui preserve la resolution.[14] Le positon s'annihile avec un electron en emettant **deux photons γ de 511 keV** a 180°, base de la detection en **coincidence** par l'anneau TEP.[14]\n\n**2. De la coincidence a la concentration.** Apres reconstruction et **corrections** (attenuation par la TDM, diffuse, temps mort), chaque voxel se voit attribuer une **concentration d'activite** (kBq/mL). Pour que ce chiffre soit juste, deux conditions imperatives :\n\n- une **calibration croisee** activimetre ↔ camera TEP, dont l'exactitude de l'activite administree doit rester dans **10 %** ;[23]\n- une **synchronisation des horloges a ± 1 min** entre l'hopital, le dispensateur du traceur et la TEP, faute de quoi la correction de decroissance fausse l'activite injectee.[1]\n\n**3. La normalisation — le « S » de SUV.** La concentration brute est ensuite rapportee a l'activite injectee corrigee de la decroissance, divisee par le descripteur corporel (poids, LBM ou surface) : on obtient le SUV (cf. formules §A2).[1] La taille de voxel reconstruite recommandee est de **3,0–4,0 mm** dans toute direction, avec un **filtre spatial** post-reconstruction de FWHM ≤ **7 mm** pour la compatibilite EARL1.[1]\n\n**4. La condition de comparabilite.** Le SUV n'est interpretable en suivi que si la **chaine entiere est reproductible**. Le determinant biologique majeur est le **delai d'incorporation** : recommande a **60 min** (plage acceptable **55–75 min**), il doit etre reproduit a **± 10 min** entre deux examens d'un meme patient.[1]\n\n**Les facteurs qui font varier le SUV** (a maitriser ou a fixer) :\n\n| Facteur | Effet sur le SUV | Maitrise |\n|---|---|---|\n| **Delai d'incorporation** | ↑ avec le temps (piegeage progressif) | Fixer ~ 60 min, reproduire ± 10 min [1] |\n| **Glycemie / insuline** | Hyperglycemie → ↓ SUV (competition glucose-FDG) | Examen si < **11 mmol/L** [1] |\n| **Poids vs masse maigre** | SUVbw majore chez l'obese | Preferer le **SUL** [1] |\n| **Erreur d'horloge / extravasation** | Activite injectee faussee → SUV biaise | Synchronisation ± 1 min ; controle du point d'injection [1] |\n| **Effet de volume partiel** | ↓ SUV des lesions < ~ 2–3× la resolution | Interpretation prudente des petites lesions [28] |\n| **Reconstruction (PSF, TOF, iterations)** | PSF/TOF **↑** SUVmax/peak | **Harmonisation EARL** [4,28] |\n| **Methode de segmentation (VOI)** | Affecte surtout SUVmean | Seuil fixe et identique [30] |\n\n**Pourquoi le SUVpeak est le plus robuste.** Le SUVmax (mono-voxel) est sensible au **bruit** et au parametrage de reconstruction ; le SUVmean depend du **seuil de segmentation**. Le **SUVpeak / SULpeak**, moyenne dans une **sphere fixe de 1 cm³** centree sur la zone la plus active, est la metrique la **moins sensible au bruit et aux differences de reconstruction** entre machines — d'ou son choix comme metrique de PERCIST (cf. §A5).[6,7,28]",
+          "steps": [
+            {
+              "title": "1. Desintegration & annihilation",
+              "text": "Le ¹⁸F (periode 109,77 min, β+ 96,7 %, energie max ~ 635 keV, parcours < 2,4 mm) s'annihile → 2 photons de 511 keV detectes en coincidence.[14]"
+            },
+            {
+              "title": "2. Reconstruction & corrections",
+              "text": "Correction d'attenuation (TDM), du diffuse et du temps mort ; voxels 3,0–4,0 mm, filtre ≤ 7 mm (EARL1) → concentration d'activite (kBq/mL).[1]"
+            },
+            {
+              "title": "3. Calibration & synchronisation",
+              "text": "Cross-calibration activimetre ↔ TEP (exactitude dans 10 %) et horloges synchronisees a ± 1 min, sinon la correction de decroissance fausse le SUV.[1,23]"
+            },
+            {
+              "title": "4. Normalisation",
+              "text": "Concentration rapportee a (activite injectee corrigee / descripteur corporel) → SUVbw, SUL ou SUVbsa.[1]"
+            },
+            {
+              "title": "5. Condition de suivi",
+              "text": "Delai d'incorporation 60 min (55–75), reproduit a ± 10 min ; meme machine, meme protocole, meme normalisation, meme standard EARL.[1,4]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "109,77 min",
+              "label": "Periode physique du ¹⁸F [14]"
+            },
+            {
+              "value": "511 keV ×2",
+              "label": "Photons d'annihilation detectes en coincidence [14]"
+            },
+            {
+              "value": "60 min",
+              "label": "Delai d'incorporation (plage 55–75) [1]"
+            },
+            {
+              "value": "± 10 min",
+              "label": "Reproductibilite du delai pour le suivi [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Precaution — la chaine de mesure se brise au maillon le plus faible",
+              "text": "Une horloge desynchronisee, une calibration croisee derivee, une extravasation au point d'injection ou un delai d'incorporation variable suffisent a invalider une comparaison de SUV. Avant d'interpreter une variation, **verifier que la chaine est identique** entre les deux examens.[1,23]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — PSF et TOF gonflent le SUVmax",
+              "text": "Les reconstructions modernes a **fonction d'etalement du point (PSF)** et **temps de vol (TOF)** augmentent le recouvrement de contraste, donc les SUVmax/peak. Deux TEP recentes peuvent ainsi donner des SUV non comparables sur la meme lesion. C'est tout l'objet de l'harmonisation EARL (cf. §A5 et mouvement B).[4,28]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schema de la detection en coincidence en TEP : annihilation du positon emis par le ¹⁸F, emission de deux photons de 511 keV a 180°, detection simultanee par l'anneau de detecteurs definissant la ligne de reponse.",
+            "caption": "Fig. 2 — Detection en coincidence des deux photons de 511 keV : premiere etape de la chaine qui aboutit au SUV."
+          }
+        },
+        {
+          "title": "A5 - A5 - Variantes du SUV : SUVmax, SUVmean, SUVpeak, SULpeak, TLG, MTV",
+          "text": "« Le SUV » recouvre en realite plusieurs metriques, qu'il faut imperativement distinguer car elles n'ont ni la meme robustesse ni le meme usage. Confondre un SUVmax et un SULpeak, ou comparer deux indices differents au fil du suivi, est une erreur frequente et lourde de consequences.\n\n**Les indices d'intensite (par voxel ou par VOI) :**\n\n| Metrique | Definition | Atout | Limite |\n|---|---|---|---|\n| **SUVmax** | SUV du **voxel le plus chaud** du VOI | Robuste a la delimitation (mono-voxel, operateur-independant) ; tres utilise | **Sensible au bruit** et au parametrage de reconstruction [1,28] |\n| **SUVmean** | **Moyenne** des voxels du VOI | Meilleure repetabilite que SUVmax | Depend du **seuil de segmentation** (fixe, % du max, gradient) [1,30] |\n| **SUVpeak** | SUV moyen dans une **sphere fixe de 1 cm³** centree sur la zone la plus active | **Moins sensible au bruit** et aux differences de reconstruction | Position de la sphere a standardiser [6,7] |\n| **SULpeak** | SUVpeak **normalise a la masse maigre (LBM)** | Metrique de **PERCIST 1.0**, peu biaisee par l'adiposite | Necessite le calcul de la LBM [1,6] |\n\nLa repetabilite illustre la hierarchie : le SUVmean est plus reproductible que le SUVmax (repetabilite SUVmean ~ 1 % ± 7 % vs SUVmax ~ 3 % ± 11 %),[30] mais le **SUVpeak / SULpeak** offre le meilleur compromis bruit/robustesse entre machines, ce qui en fait la metrique de choix pour le suivi standardise.[6,7]\n\n**Les indices volumiques (charge tumorale metabolique) :**\n\n- **MTV** (Metabolic Tumor Volume, volume tumoral metabolique) : volume de tissu depassant un seuil de SUV donne — mesure l'**etendue** du tissu avide, et non plus seulement son intensite.\n- **TLG** (Total Lesion Glycolysis, glycolyse lesionnelle totale) : produit **MTV × SUVmean** — integre a la fois le **volume** et l'**intensite** de fixation, d'ou son interet pronostique croissant.\n\nCes deux indices volumiques dependent fortement de la **methode de segmentation** (seuil fixe, pourcentage du max, gradient), ce qui reste leur principale limite de reproductibilite.[28,30]\n\n**Quelle metrique pour quel usage ?**\n\n- **Caracterisation / staging** : le **SUVmax** reste l'indice le plus utilise au quotidien pour decrire l'avidite d'une lesion (par ex. seuil de ~ 2,5 souvent evoque pour la malignite ganglionnaire mediastinale, mais **non absolu** et dependant du contexte).[35]\n- **Evaluation de reponse standardisee** : le **SULpeak** est la metrique de **PERCIST 1.0** (Wahl 2009).[6] Une lesion est mesurable si son SULpeak depasse un seuil derive du foie sain (**1,5 × SULmean(foie) + 2 × SD(foie)**) ; la reponse se cote ainsi :[6,7]\n\n| Categorie PERCIST 1.0 | Critere (sur SULpeak) |\n|---|---|\n| **CMR** (reponse metabolique complete) | Disparition de la fixation FDG des lesions cibles jusqu'au bruit de fond tissulaire normal [6] |\n| **PMR** (reponse partielle) | **Diminution ≥ 30 %** du SULpeak **ET** baisse absolue **≥ 0,8 unite** [6,7] |\n| **PMD** (progression) | **Augmentation ≥ 30 %** du SULpeak **ET** hausse **≥ 0,8 unite**, OU nouvelle(s) lesion(s) [6,7] |\n| **SMD** (maladie stable) | Ni PMR ni PMD [6] |\n\n- **Lymphome** : l'evaluation visuelle par l'echelle de **Deauville** (5 points, references foie et mediastin) prime ; la variation de **ΔSUVmax** est utilisee en reponse intermediaire et en recherche.[37]\n- **Criteres EORTC (1999)** : reponse partielle = ↓ SUV de **15–25 %** apres 1 cycle, > **25 %** apres plusieurs cycles ; progression = ↑ SUV > **25 %** ou nouvelle lesion (normalisation a la surface corporelle).[26]\n\n**Le seuil des 30 %, fonde sur la repetabilite.** Avec un protocole soigne, la variabilite test-retest du SUV est de l'ordre de **wCV ≈ 10 %**, et le coefficient de repetabilite (1,96 × SD) reste **< 15 %** pour le SUVmax lesionnel.[8,29] Une variation ne devient donc significative qu'au-dela de **~ 30 %** — exactement le seuil retenu par PERCIST et EORTC.[8] En pratique clinique reelle, la variance est plus elevee : le seuil de changement reellement significatif approche souvent **50 %**, et la repetabilite entre scanners EARL-accredites donne des coefficients de **27–33 %**.[9,5]",
+          "list": [
+            "**SUVmax** : voxel le plus chaud — robuste a la delimitation mais sensible au bruit ; l'indice le plus utilise en pratique.[1,28]",
+            "**SUVmean** : moyenne du VOI — meilleure repetabilite mais dependante du seuil de segmentation.[1,30]",
+            "**SUVpeak / SULpeak** : sphere de 1 cm³ (SUL = normalise a la masse maigre) — metrique la plus robuste, base de PERCIST.[6,7]",
+            "**MTV** : volume metabolique tumoral (etendue du tissu avide).",
+            "**TLG** : MTV × SUVmean (volume × intensite) — interet pronostique.",
+            "Seuil de reponse PERCIST : **± 30 % du SULpeak ET ± 0,8 unite**, fonde sur la repetabilite (~ 30 %).[6,8]"
+          ],
+          "stats": [
+            {
+              "value": "1 cm³",
+              "label": "Sphere fixe du SUVpeak / SULpeak [6,7]"
+            },
+            {
+              "value": "± 30 % + 0,8",
+              "label": "Seuil de reponse PERCIST sur SULpeak [6,7]"
+            },
+            {
+              "value": "wCV ≈ 10 %",
+              "label": "Repetabilite test-retest (conditions ideales) [8]"
+            },
+            {
+              "value": "≈ 2,5",
+              "label": "Seuil SUVmax indicatif (non absolu) de malignite ganglionnaire [35]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — ne jamais comparer deux metriques differentes",
+              "text": "Un SUVmax et un SUVpeak, un SUVbw et un SUL, ne sont **pas interchangeables**. De meme, un SUV mesure sous standard EARL1 vaut ~ 23–30 % de moins que sous EARL2 (recouvrements releves de +25 % SUVmean / +26 % SUVmax) : une rupture de continuite a corriger pour tout suivi longitudinal d'un patient changeant de standard.[4,22]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi PERCIST a choisi le SULpeak",
+              "text": "Le SULpeak cumule trois avantages : la **sphere de 1 cm³** lisse le bruit (contrairement au SUVmax mono-voxel), la position automatique sur la zone la plus active **affranchit de la segmentation** (contrairement au SUVmean), et la normalisation a la **masse maigre** annule le biais d'adiposite. C'est le meilleur compromis pour une mesure reproductible entre centres et dans le temps.[6,7]"
+            }
+          ]
+        },
+        {
+          "title": "B6 - B6 - Conditions de mesure : préparation du patient et facteurs pré-analytiques",
+          "text": "Le **SUV** (Standardized Uptake Value, « valeur de fixation normalisée ») n'a de sens que si la **chaîne pré-analytique** est maîtrisée : un SUV est un rapport entre une concentration d'activité mesurée et une activité administrée normalisée à un descripteur corporel, et chaque maillon en amont de l'acquisition le déplace. Avant même de discuter reconstruction et harmonisation (cf. §B7, §B8), c'est la **préparation du patient** qui fixe le plancher de reproductibilité — la littérature de répétabilité montre qu'un protocole soigné est la condition *sine qua non* d'un coefficient de variation intra-patient (wCV) de l'ordre de **10 %** [8].\n\n**(a) Jeûne et substrat glucidique.** Le ¹⁸F-FDG (2-désoxy-2-[¹⁸F]fluoro-D-glucose) est un analogue du glucose en compétition directe avec le glucose plasmatique pour les transporteurs GLUT : tout substrat circulant abaisse le SUV tumoral. Un **jeûne ≥ 4 h** est requis (eau plate autorisée, arrêt des perfusions glucosées ≥ 4 h) [1]. En pédiatrie, le jeûne recommandé est de **4–6 h** [12].\n\n**(b) Glycémie.** L'examen est réalisable si la glycémie est **< 11 mmol/L (≈ 200 mg/dL)** ; au-delà, il doit être reprogrammé [1]. En contexte de recherche/quantification, un seuil resserré **7–8,3 mmol/L (126–150 mg/dL)** est conseillé, sans descendre sous **4 mmol/L (≈ 70 mg/dL)** [1]. L'insuline exogène redistribue massivement le FDG vers le muscle squelettique : on évite l'insuline rapide dans les heures précédant l'injection.\n\n**(c) Choix du descripteur de normalisation.** Le SUVbw (normalisé au poids) surestime la fixation chez le sujet obèse, car le tissu adipeux fixe peu le FDG ; l'EANM recommande la normalisation à la **masse maigre (LBM)** — le SUL — qui est la base de PERCIST (cf. §B8) [1]. Les formules de Janmahasatian sont préconisées : **LBM(homme) = 9270 × poids / (6680 + 216 × IMC)** et **LBM(femme) = 9270 × poids / (8780 + 244 × IMC)** [1].\n\n**(d) Délai d'incorporation (uptake time).** Le SUV des lésions malignes croît avec le temps post-injection (cinétique de piégeage du FDG-6-phosphate). Le délai standard est **60 min**, dans une plage acceptable **55–75 min** ; pour tout suivi longitudinal, il doit être **reproduit à ± 10 min** entre les examens d'un même patient [1].\n\n**(e) Activité repos, muscle et graisse brune.** Un effort physique ou une contraction musculaire dans les heures précédentes recrute le FDG dans le muscle ; le froid active la graisse brune. On maintient le patient **réchauffé, au repos et silencieux** durant l'incorporation [1]. Le tableau ci-dessous résume les facteurs pré-analytiques et leur effet sur le SUV.\n\n| Facteur pré-analytique | Valeur / seuil de référence | Effet sur le SUV si non maîtrisé |\n|---|---|---|\n| Jeûne | ≥ 4 h (4–6 h en pédiatrie) [1,12] | Substrat glucidique → ↓ SUV tumoral |\n| Glycémie | < 11 mmol/L (≈ 200 mg/dL) ; recherche 7–8,3 mmol/L [1] | Hyperglycémie → ↓ captation (compétition) |\n| Délai d'incorporation | 60 min (55–75) ; suivi ± 10 min [1] | Délai allongé → ↑ SUV lésionnel |\n| Normalisation | Masse maigre (SUL, Janmahasatian) [1] | Poids seul → biais chez l'obèse |\n| Repos / température | Réchauffé, immobile, silencieux [1] | Muscle, graisse brune → faux foyers |\n| Délais post-thérapeutiques | ≥ 10 j après chimio, 2–3 mois après RT, ≥ 6 sem après chirurgie [1] | Inflammation → faux positifs, SUV instable |",
+          "steps": [
+            {
+              "title": "J-1 et planification",
+              "text": "Vérifier l'indication et le délai depuis le dernier traitement : ≥ 10 jours après chimiothérapie, 2–3 mois après radiothérapie, ≥ 6 semaines après chirurgie pour limiter l'inflammation captante [1]. Programmer le jeûne et, pour un suivi, fixer le même délai d'incorporation que l'examen antérieur."
+            },
+            {
+              "title": "Accueil et contrôle métabolique",
+              "text": "Jeûne ≥ 4 h confirmé ; mesure de la glycémie capillaire — réalisable si < 11 mmol/L, à reprogrammer si ≥ 11 mmol/L [1]. Repos au chaud 30–60 min, patient silencieux pour limiter le recrutement musculaire et la graisse brune [1]."
+            },
+            {
+              "title": "Injection et incorporation",
+              "text": "Activité administrée vérifiée à l'activimètre, horloges synchronisées (cf. §B7) ; incorporation au repos pendant 60 min (55–75) [1]. Hydratation et miction juste avant l'acquisition pour réduire l'activité vésicale parasite [1]."
+            },
+            {
+              "title": "Acquisition",
+              "text": "Démarrage au délai cible (± 10 min en suivi) [1] ; renseigner précisément l'heure d'injection, l'heure d'acquisition, le poids et la glycémie dans le système — ces métadonnées conditionnent le calcul du SUV (cf. §B7)."
+            }
+          ],
+          "stats": [
+            {
+              "value": "< 11 mmol/L",
+              "label": "Glycémie maximale pour réaliser l'examen [1]"
+            },
+            {
+              "value": "60 min",
+              "label": "Délai d'incorporation standard (55–75) [1]"
+            },
+            {
+              "value": "± 10 min",
+              "label": "Reproductibilité du délai exigée en suivi [1]"
+            },
+            {
+              "value": "≥ 4 h",
+              "label": "Jeûne minimal avant injection [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'hyperglycémie et l'insuline",
+              "text": "Au-delà de **11 mmol/L (200 mg/dL)**, le glucose endogène entre en compétition avec le FDG et abaisse le SUV tumoral : l'examen doit être reprogrammé plutôt que « corrigé » [1]. Surtout, **n'injectez pas d'insuline rapide juste avant le FDG** : elle redistribue le traceur vers le muscle squelettique et ruine l'imagerie. La correction de SUV par la glycémie (SUL_glu = SUL × glycémie/5,0) reste réservée à la recherche [1]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — fixer le délai, pas seulement le respecter",
+              "text": "En suivi thérapeutique, l'erreur la plus fréquente n'est pas un délai « anormal » mais un délai **différent** entre les deux examens. Le SUV lésionnel augmentant avec le temps post-injection, un écart de délai mime une progression ou une réponse. PERCIST impose de reproduire le temps d'incorporation **à ± 15 min**, idéalement **± 10 min**, et de conserver le même protocole [1,7]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Captation cellulaire du ¹⁸F-FDG : entrée par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate puis piégeage métabolique — base biologique du SUV et de sa dépendance à la glycémie.",
+            "caption": "Fig. 1 — Captation et piégeage du FDG : la compétition glucose/FDG explique pourquoi la glycémie et le jeûne conditionnent le SUV."
+          }
+        },
+        {
+          "title": "B7 - B7 - Sources d'erreur techniques et métrologie de la mesure",
+          "text": "Une fois la préparation maîtrisée (cf. §B6), la **justesse métrologique** du SUV dépend de la chaîne instrumentale : calibration croisée, exactitude des activités, paramètres de reconstruction, segmentation et effet de volume partiel. Une revue systématique a recensé une **vingtaine de facteurs** influençant la mesure du SUV [28] ; ils se répartissent en erreurs de calibration, de quantification et de définition de la métrique.\n\n**(a) Calibration croisée et synchronisation des horloges.** Le SUV exige une **calibration croisée activimètre ↔ TEP** : l'activité administrée et la concentration mesurée doivent être référencées au même étalon. L'exactitude de l'activité administrée doit rester dans **10 %** [23]. Toute désynchronisation des horloges (dispensateur, salle d'injection, TEP) introduit une erreur de décroissance : pour le ¹⁸F de **période 109,8 min** [14], une erreur d'horloge de quelques minutes décale la correction de décroissance et donc le SUV. La justesse du système d'injection automatisé doit être **< 3 %** [1].\n\n**(b) Extravasation et erreurs d'activité.** Une **extravasation** au point d'injection retire de l'activité de la circulation : le SUV de toutes les lésions est alors sous-estimé, sans signe visible si le bras n'est pas dans le champ. C'est une cause classique de faux « bas SUV » [28].\n\n**(c) Métriques et leur robustesse.** Le choix de la métrique conditionne la sensibilité au bruit et à la segmentation :\n\n| Métrique | Définition | Robustesse / limite |\n|---|---|---|\n| **SUVmax** | Voxel le plus intense de la VOI | Indépendant de la délimitation mais **sensible au bruit** et à la reconstruction [28] |\n| **SUVmean** | Moyenne des voxels de la VOI | Dépend du seuil de segmentation ; meilleure répétabilité que SUVmax [30] |\n| **SUVpeak / SULpeak** | SUV/SUL moyen dans une **sphère fixe de 1 cm³** centrée sur la zone la plus active | Métrique la **moins sensible au bruit** ; base de PERCIST [6,7] |\n\nLa répétabilité illustre cette hiérarchie : sur données test-retest, la répétabilité du **SUVmean (1 % ± 7 %)** est meilleure que celle du **SUVmax (3 % ± 11 %)** [30]. Le **SULpeak**, par son volume fixe de 1 cm³, lisse le bruit et reste comparable entre machines (cf. §B8).\n\n**(d) Reconstruction.** Les algorithmes itératifs (OSEM) et les options **PSF (point spread function)** et **ToF (time-of-flight)** modifient directement le SUV : la PSF **augmente** les SUVmax/SUVpeak par récupération de contraste, et le degré d'augmentation dépend du nombre d'itérations/sous-ensembles et du filtre post-reconstruction [28]. Pour rester compatible avec l'harmonisation, l'EANM recommande une **taille de voxel reconstruite de 3,0–4,0 mm** et un **filtre gaussien post-reconstruction de FWHM ≤ 7 mm** (compatibilité EARL1) [1]. C'est précisément cette variabilité de reconstruction que corrige l'harmonisation EARL (cf. §B8).\n\n**(e) Effet de volume partiel (EVP).** Pour les lésions de taille inférieure à environ **2–3 fois la résolution** du système, le SUV est **sous-estimé** par dilution du signal dans les voxels voisins [28]. Une petite lésion avide peut ainsi afficher un SUV faussement bas, piège majeur en suivi de petites cibles.\n\n**(f) Segmentation.** La méthode de définition de la VOI (seuil fixe, pourcentage du max, gradient) déplace le SUVmean et le volume métabolique : c'est une source documentée de variabilité inter-opérateur [30].\n\n**Conséquence métrologique.** En conditions idéales, le wCV du SUV avoisine **10 %** [8], avec des coefficients de répétabilité **< 15 %** pour le SUVmax lésionnel et **< 10 %** pour les moyennes par patient [29]. En pratique clinique réelle, la variance est plus élevée et le seuil de changement réellement significatif se rapproche de **50 %** [9]. Ces chiffres fondent le seuil de réponse de **30 %** retenu par PERCIST (cf. §B8).",
+          "stats": [
+            {
+              "value": "≈ 10 %",
+              "label": "wCV du SUV en conditions optimisées [8]"
+            },
+            {
+              "value": "< 15 %",
+              "label": "Coefficient de répétabilité du SUVmax lésionnel [29]"
+            },
+            {
+              "value": "1 cm³",
+              "label": "Sphère fixe définissant le SUVpeak / SULpeak [6,7]"
+            },
+            {
+              "value": "3,0–4,0 mm",
+              "label": "Taille de voxel reconstruite recommandée (EANM) [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'extravasation silencieuse",
+              "text": "Une **extravasation** au site d'injection séquestre une fraction de l'activité administrée hors de la circulation : le dénominateur du SUV reste « théorique » alors que l'activité réellement disponible est moindre, et **tous les SUV sont sous-estimés** [28]. Si le bras d'injection n'est pas dans le champ, l'artefact passe inaperçu. En cas de SUV global anormalement bas, vérifier toujours le site d'injection et l'historique d'extravasation."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — l'effet de volume partiel",
+              "text": "En dessous de **2–3 fois la résolution** du système, le SUV d'une lésion est **sous-estimé** par dilution dans les voxels adjacents [28]. Une petite métastase avide peut afficher un SUVmax trompeusement bas ; ne jamais conclure à une faible avidité sur une cible millimétrique sans tenir compte de l'EVP."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — PSF, ToF et la non-comparabilité",
+              "text": "La PSF augmente les SUVmax/SUVpeak par récupération de contraste, d'autant plus que la lésion est petite et que les itérations sont nombreuses [28]. Un même patient imagé sur une machine avec PSF puis sans PSF présentera des SUV différents **à biologie inchangée** : d'où l'obligation, pour tout suivi, de figer la reconstruction ou de passer par l'harmonisation EARL (cf. §B8)."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Détection en coïncidence des deux photons d'annihilation de 511 keV émis à 180° après désintégration β+ du ¹⁸F : principe physique dont la calibration croisée et la reconstruction conditionnent la justesse du SUV.",
+            "caption": "Fig. 2 — Détection en coïncidence : la justesse du SUV suppose une calibration croisée activimètre ↔ TEP et une reconstruction maîtrisée."
+          }
+        },
+        {
+          "title": "B8 - B8 - Harmonisation EANM/EARL et PERCIST : rendre les SUV comparables",
+          "text": "Les facteurs techniques du §B7 rendent un SUV **non transposable** d'une machine ou d'une date à l'autre sans précaution. Deux dispositifs complémentaires garantissent la comparabilité : l'**harmonisation EARL** (qui standardise la mesure entre appareils et centres) et les **critères PERCIST** (qui standardisent l'interprétation longitudinale chez un patient).\n\n**(a) Programme EARL (EANM Research Ltd).** EARL est un programme d'accréditation des systèmes TEP/TDM reposant sur deux contrôles : le **CalQC** (cylindre uniforme, mesure du biais SUV) et l'**IQQC** (fantôme corps NEMA NU2-2007 à sphères, mesure des coefficients de récupération) [2]. Le résumé des **200 premiers systèmes accrédités** a colligé **> 2500 jeux de données** issus d'environ **150 sites** entre 2010 et juillet 2016 [2]. Les tolérances EARL1 imposent un biais SUV CalQC dans **± 10 %** et des coefficients de récupération globalement dans **± 10 %** pour les plus grosses sphères et **± 20 %** pour les deux plus petites [2,23].\n\n**(b) EARL1 vs EARL2 — une rupture de continuité.** Les spécifications **EARL2 (2019)** introduisent des coefficients de récupération plus élevés, adaptés aux TEP numériques (ToF/PSF) : les récupérations augmentent d'environ **+25 % (SUVmean)** et **+26 % (SUVmax)** par rapport à EARL1, ce qui relève le SUV de **~23–30 %** selon la métrique [4,22]. Conséquence opérationnelle majeure : **les valeurs EARL1 et EARL2 ne sont pas interchangeables**. Un patient suivi à cheval sur un changement de standard verra son SUV « augmenter » sans aucune évolution biologique. Solution pratique : un **post-filtrage gaussien de 6–7 mm** appliqué aux images EARL2 permet de régénérer des données conformes EARL1 et de préserver la continuité du suivi [4,22]. Entre scanners EARL-accrédités, la variabilité résiduelle du SUV reste modérée (de l'ordre de **6–8 %**, coefficients de répétabilité **27–33 %**) [5]. L'enjeu n'est pas seulement métrologique : un SUV conforme EARL est un facteur **pronostique indépendant** validé, par exemple dans le cancer pulmonaire [24].\n\n| | EARL1 | EARL2 (2019) |\n|---|---|---|\n| Cible technologique | TEP analogiques | TEP numériques (ToF/PSF) [4] |\n| Récupération de contraste | Référence | ↑ ~+25 % (mean) / +26 % (max) [4,22] |\n| Effet sur le SUV | Référence | SUV ↑ de ~23–30 % [4,22] |\n| Interopérabilité | — | **Non interchangeable** ; post-filtre 6–7 mm pour régénérer EARL1 [4,22] |\n\n**(c) PERCIST 1.0 — la grille d'interprétation.** Là où EARL harmonise la *mesure*, PERCIST (PET Response Criteria in Solid Tumors) harmonise l'*interprétation* du suivi. La métrique de référence est le **SULpeak** (sphère 1 cm³ normalisée à la masse maigre, cf. §B6, §B7) [6,7]. Une lésion est mesurable si son SULpeak dépasse le seuil **1,5 × SULmean(foie) + 2 × SD(foie)** — le foie sain servant de référence, l'aorte de référence alternative [7]. Les catégories de réponse :\n\n| Catégorie | Définition (SULpeak) |\n|---|---|\n| **CMR** (réponse métabolique complète) | Disparition de la fixation FDG des lésions cibles jusqu'au bruit de fond tissulaire normal [6,7] |\n| **PMR** (réponse partielle) | Diminution **≥ 30 %** ET baisse absolue **≥ 0,8 unité SUL** [6,7] |\n| **PMD** (progression) | Augmentation **≥ 30 %** ET hausse absolue **≥ 0,8 unité SUL**, ou nouvelle(s) lésion(s) [6,7] |\n| **SMD** (maladie stable) | Ni PMR ni PMD [6] |\n\nLe seuil de **30 %** n'est pas arbitraire : il excède la variabilité de mesure test-retest (wCV ≈ 10 %, répétabilité < 15 %) établie au §B7 [8,29]. PERCIST exige par ailleurs de reproduire le temps d'incorporation **à ± 15 min** (idéalement ± 10 min) et de conserver le même protocole d'acquisition et de reconstruction [1,7]. À titre de comparaison historique, les critères **EORTC (1999)** retenaient une réponse partielle métabolique pour une baisse du SUV de **15–25 %** après un cycle et **> 25 %** après plusieurs cycles, et une progression pour une hausse **> 25 %** ou une nouvelle lésion [26,27].\n\n**(d) En lymphome.** Pour le lymphome, l'évaluation visuelle par l'échelle de **Deauville à 5 points** (références foie et médiastin) prime ; le SUV intervient en appoint via la variation **ΔSUVmax**, notamment en réponse intermédiaire [37]. La référence hépatique impose un foie « comparable » d'un examen à l'autre, ce qui ramène aux conditions pré-analytiques du §B6.\n\n**Synthèse opérationnelle.** Pour qu'un suivi SUV soit valide : même préparation (§B6), même chaîne technique et reconstruction figée (§B7), même standard EARL et même grille PERCIST (§B8). C'est l'empilement de ces trois conditions, et non le SUV pris isolément, qui fait du SUV un **biomarqueur quantitatif** exploitable [3].",
+          "stats": [
+            {
+              "value": "± 30 %",
+              "label": "Seuil de réponse/progression PERCIST sur le SULpeak [6,7]"
+            },
+            {
+              "value": "≥ 0,8",
+              "label": "Variation absolue minimale de SUL requise (PERCIST) [6,7]"
+            },
+            {
+              "value": "+23–30 %",
+              "label": "Augmentation du SUV en passant d'EARL1 à EARL2 [4,22]"
+            },
+            {
+              "value": "> 2500",
+              "label": "Jeux de données EARL colligés sur ~150 sites [2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — comparer EARL1 et EARL2",
+              "text": "Un changement de standard d'harmonisation **n'est pas neutre** : le passage d'EARL1 à EARL2 relève le SUV de **~23–30 %** à biologie inchangée [4,22]. Comparer directement un SUV EARL1 ancien à un SUV EARL2 récent fait conclure à tort à une progression. Régénérer des données EARL1 par **post-filtre gaussien 6–7 mm** sur les images EARL2, ou figer le standard pour toute la durée du suivi [4,22]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le seuil PERCIST est à 30 %",
+              "text": "Le seuil de **30 %** de variation du SULpeak n'est pas conventionnel : il est calibré pour dépasser la **variabilité de mesure test-retest** d'un SUV bien acquis (wCV ≈ 10 %, coefficient de répétabilité < 15 % [8,29]). En pratique clinique réelle, où la variance grimpe vers 50 % [9], on reste prudent sur les variations marginales. La double condition (≥ 30 % **ET** ≥ 0,8 unité SUL absolue) protège des faux signaux sur lésions de faible intensité [6,7]."
+            },
+            {
+              "type": "info",
+              "title": "Repère — la hiérarchie des références",
+              "text": "PERCIST s'appuie sur le **foie sain** (SULmean foie + 2 SD), avec l'**aorte** comme référence alternative [7] ; le lymphome utilise les références **foie et médiastin** de l'échelle de Deauville [37]. Dans tous les cas, la validité du fond de référence suppose des conditions pré-analytiques stables (§B6) — un foie « comparable » d'un examen à l'autre."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Modes de désintégration radioactive incluant l'émission β+ du ¹⁸F : rappel physique sous-tendant la production des positons dont l'annihilation génère le signal quantifié par le SUV et harmonisé par EARL.",
+            "caption": "Fig. 3 — L'émission β+ du ¹⁸F est le point de départ d'une chaîne dont EARL standardise la sortie quantitative (SUV) entre machines."
+          }
+        },
+        {
+          "title": "C9 - Lecture du SUV : valeurs de reference et seuils physiologiques",
+          "text": "Interpréter un **SUV** (Standardized Uptake Value, valeur de fixation normalisée) commence par une règle invariante : un chiffre n'a de sens que rapporté à un **bruit de fond physiologique** mesuré sur le même examen, jamais lu dans l'absolu. Le SUV est l'indice **semi-quantitatif** de référence en TEP, défini comme le rapport de la concentration d'activité dans un volume d'intérêt (VOI) à l'activité injectée normalisée à un descripteur corporel (poids, masse maigre ou surface) ; un SUV de **1** correspond à une distribution uniforme du traceur dans tout le corps [1]. La lecture s'appuie donc d'abord sur les **organes de référence internes**, dont les valeurs servent de seuils aux scores standardisés (§C11).\n\n### Métriques à distinguer avant toute lecture\n\nLa première erreur d'interprétation est de comparer des métriques différentes. Trois doivent être maîtrisées :\n\n| Métrique | Définition | Propriété de lecture |\n|---|---|---|\n| **SUVmax** | Voxel le plus chaud du VOI | Robuste à la délimitation, mais **sensible au bruit** et au paramétrage de reconstruction [1,28] |\n| **SUVmean** | Moyenne des voxels du VOI | Meilleure répétabilité, mais **dépend du seuil de segmentation** [1,30] |\n| **SUVpeak / SULpeak** | SUV(L) moyen d'une **sphère fixe de 1 cm³** centrée sur la zone la plus active | Métrique **la moins sensible au bruit** et aux différences de reconstruction → base de PERCIST [6,7] |\n\nLe **SUL** (SUV normalisé à la masse maigre, *Lean Body Mass*) est recommandé par l'EANM et fonde PERCIST car il est moins biaisé chez le sujet obèse, le tissu adipeux fixant peu le FDG [1]. La masse maigre se calcule par les formules de **Janmahasatian** : LBM(homme) = 9270 × poids / (6680 + 216 × IMC) ; LBM(femme) = 9270 × poids / (8780 + 244 × IMC) [1].\n\n### Valeurs physiologiques de référence (¹⁸F-FDG)\n\nLe **foie** est la référence privilégiée car sa fixation est stable et reproductible : **SUVmean ≈ 2,0–3,0** (selon série, fourchettes ~1,5–2,5 à ~1,3–3,0) [36]. Le **pool vasculaire** (médiastin/aorte) est plus bas, **SUV ≈ 0,8–2** [36]. Ces deux repères sont les bornes du score de Deauville (§C11). Le **cerveau** (SUV ~3–7) et le **myocarde** présentent une captation physiologique intense, tandis que la **graisse brune**, les muscles, le tube digestif et les voies urinaires constituent des fixations physiologiques piégeantes [36].\n\n### Seuils de lecture lésionnelle\n\n- **Seuil de mesurabilité PERCIST** : une lésion est mesurable si son SULpeak ≥ **1,5 × SULmean(foie) + 2 × SD(foie)** (référence préférée = foie sain ; alternative = pool sanguin/aorte) [6,7].\n- **Seuil de malignité ganglionnaire** : un SUVmax ≈ **2,5** est souvent évoqué pour le médiastin du cancer bronchique, mais il est **contexte-dépendant et non absolu** — à ne jamais appliquer mécaniquement [35].\n- Le foie de référence est lui-même reproductible : c'est la condition pour que les scores qui s'y adossent (Deauville, PERCIST) restent valides d'un examen à l'autre [36].",
+          "stats": [
+            {
+              "value": "SUV = 1",
+              "label": "Distribution uniforme du traceur dans le corps [1]"
+            },
+            {
+              "value": "2,0-3,0",
+              "label": "SUVmean hepatique physiologique (reference) [36]"
+            },
+            {
+              "value": "0,8-2",
+              "label": "SUV pool vasculaire mediastinal [36]"
+            },
+            {
+              "value": "1 cm3",
+              "label": "Sphere fixe du SULpeak (metrique PERCIST) [6,7]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - comparer des metriques heterogenes",
+              "text": "Ne jamais opposer un SUVmax a un SUVmean ou un SULpeak : ces metriques ne sont pas interchangeables. Le SUVmax (mono-voxel) est majore par la reconstruction PSF/TOF et par le bruit, tandis que le SULpeak (sphere 1 cm3) est concu pour s'en affranchir. Un suivi credible impose la meme metrique, la meme normalisation (poids vs masse maigre) et le meme standard EARL aux deux temps [1,28]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - pourquoi le foie comme reference",
+              "text": "Le foie sert d'etalon interne car sa fixation FDG est elevee mais stable et peu sensible aux variations de glycemie moderee : il fournit un seuil reproductible que l'on peut transporter d'un appareil a l'autre, a condition que la glycemie soit < 11 mmol/L et le delai d'incorporation respecte. C'est ce qui rend les scores Deauville et PERCIST robustes en pratique multicentrique [36,1]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schema du piegeage metabolique du 18F-FDG : entree par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non metabolise, accumulation intracellulaire - base du contraste mesure par le SUV.",
+            "caption": "Fig. - Piegeage metabolique du FDG : l'accumulation intracellulaire (non re-metabolisee) genere le contraste que le SUV quantifie."
+          }
+        },
+        {
+          "title": "C10 - Interpretation clinique : caracterisation, stadification et reponse therapeutique",
+          "text": "Le **SUV n'est pas un diagnostic** : c'est un descripteur semi-quantitatif d'aide à la **caractérisation**, à la **stadification** et à l'**évaluation de réponse**, toujours interprété conjointement avec la fixation visuelle et l'imagerie morphologique [1]. Sa valeur clinique tient entièrement à la maîtrise des conditions de mesure (§C9) : un SUV mal maîtrisé — glycémie, délai d'incorporation, calibration, reconstruction — induit en erreur.\n\n### Caractérisation lésionnelle\n\nLe FDG reflète le **métabolisme glucidique** via la surexpression des transporteurs **GLUT** et de l'**hexokinase** (effet Warburg), mais il **n'est pas spécifique du cancer** : inflammation, infection, graisse brune et muscle fixent aussi, source de **faux positifs** [16,17,20]. Inversement, certaines tumeurs peu avides (carcinome à cellules claires, mucineux, lésions de petite taille) génèrent des **faux négatifs**. En caractérisation, le SUV oriente sans trancher : pour le **nodule pulmonaire**, l'analyse visuelle atteint Se ~**84 %**, Sp ~**95 %**, exactitude ~**91 %** [34], mais un SUVmax élevé n'a de valeur que rapporté au type histologique suspecté.\n\n### Stadification ganglionnaire et à distance\n\nL'apport majeur de la TEP est le **bilan corps entier en une acquisition**. Pour le staging ganglionnaire médiastinal du cancer bronchique non à petites cellules, la sensibilité est de ~**81–90 %** et la spécificité de ~**79–95 %** selon méta-analyse, nettement supérieures à la TDM seule (Se ~61 %, Sp ~79 %) [33,34]. Le seuil de SUVmax ~2,5 parfois utilisé n'est qu'une aide ; le compromis Se/Sp se déplace avec le seuil retenu, et le contexte (granulome, anthracose, infection) prime [35].\n\n### Évaluation de la réponse thérapeutique\n\nC'est l'usage où le SUV apporte le plus, à condition d'une **comparabilité stricte** entre examens. Les critères structurés (détaillés au §C11) reposent sur des **variations relatives** de SUV/SUL :\n\n| Domaine | Métrique de réponse | Cadre |\n|---|---|---|\n| Tumeurs solides | **SULpeak** (variation ±30 % + 0,8 unité) | PERCIST 1.0 [6,7] |\n| Tumeurs solides (historique) | **SUVbsa** (variation 15–25 %) | EORTC 1999 [26] |\n| Lymphome | **échelle visuelle de Deauville** ; ΔSUVmax en recherche | Lugano [37] |\n\nLa **répétabilité test-retest** fixe la frontière du significatif : avec protocole soigné, le coefficient de variation intra-sujet est de ~**10 %**, et le coefficient de répétabilité (1,96 × SD) reste **< 15 %** pour le SUVmax lésionnel et **< 10 %** pour les moyennes par patient [8,29]. Une variation n'est donc interprétable comme réelle que si elle dépasse la variabilité de mesure — d'où le **seuil de 30 %** des critères PERCIST/EORTC.",
+          "stats": [
+            {
+              "value": "~10 %",
+              "label": "wCV test-retest du SUV en conditions ideales [8,29]"
+            },
+            {
+              "value": "81-90 %",
+              "label": "Se TEP staging mediastinal CBNPC [33]"
+            },
+            {
+              "value": "30 %",
+              "label": "Variation SUL significative (seuil PERCIST) [6]"
+            },
+            {
+              "value": "+/- 10 min",
+              "label": "Tolerance sur le delai d'incorporation en suivi [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - SUV plus eleve = plus malin ?",
+              "text": "Un SUVmax eleve ne prouve pas la malignite : l'inflammation active (sarcoidose, tuberculose, abces, graisse brune) peut depasser largement le foie. A l'inverse, un SUV bas n'ecarte pas un cancer peu avide. Le SUV oriente, la conclusion repose sur la fixation visuelle, la morphologie et le contexte - jamais sur le chiffre seul [16,20]."
+            },
+            {
+              "type": "warning",
+              "title": "Precaution - variabilite reelle en pratique courante",
+              "text": "Hors conditions ideales, la variance du SUV est plus elevee : le seuil de changement reellement significatif approche souvent 50 %, et entre scanners EARL-accredites la variabilite moyenne est de 6-8 % avec des coefficients de repetabilite de 27-33 %. Ne jamais conclure a une reponse ou une progression sur une variation inferieure a la variabilite documentee de la chaine de mesure [9,5]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - conditions de comparabilite longitudinale",
+              "text": "Un suivi valide exige : meme appareil/protocole, meme delai d'incorporation a +/- 10 min (acceptable +/- 15 min), meme normalisation (idealement SUL), meme standard EARL, et glycemie comparable. Changer de standard (EARL1 -> EARL2) cree une rupture de continuite a corriger avant toute comparaison de SUV (cf. §C11) [1]."
+            }
+          ]
+        },
+        {
+          "title": "C11 - Criteres standardises : Deauville, PERCIST, EORTC, Lugano",
+          "text": "Les critères standardisés transforment la lecture du SUV en **décision reproductible**. Quatre référentiels coexistent : **EORTC** (historique), **PERCIST** (tumeurs solides, fondé sur le SUL), **Deauville/Lugano** (lymphomes, visuel). Le choix dépend de la pathologie ; tous imposent les conditions de comparabilité du §C10 et l'**harmonisation EARL**.\n\n### EORTC (1999) - le socle historique\n\nProposés par Young et al., les critères EORTC reposent sur le **SUV normalisé à la surface corporelle (SUVbsa)** : réponse métabolique partielle = **diminution de 15–25 %** du SUV après 1 cycle et **> 25 %** après plusieurs cycles ; progression = **augmentation > 25 %** ou nouvelle lésion [26]. Ils ont posé le principe de la **variation relative** comme critère de réponse, repris et affiné par PERCIST [27].\n\n### PERCIST 1.0 (Wahl 2009) - tumeurs solides\n\nPERCIST mesure le **SULpeak** (sphère de 1 cm³ sur la lésion la plus active) et exige une lésion mesurable si SULpeak ≥ **1,5 × SULmean(foie) + 2 × SD(foie)** [6,7].\n\n| Catégorie | Définition |\n|---|---|\n| **CMR** (réponse complète) | Disparition de la fixation FDG des cibles jusqu'au **bruit de fond tissulaire normal** [6,7] |\n| **PMR** (réponse partielle) | **↓ ≥ 30 %** du SULpeak **ET** baisse absolue **≥ 0,8 unité** SUL [6,7] |\n| **PMD** (progression) | **↑ ≥ 30 %** du SULpeak **ET** hausse **≥ 0,8 unité**, **OU** nouvelle(s) lésion(s) [6,7] |\n| **SMD** (stable) | Ni PMR ni PMD [6] |\n\nContrainte impérative : même **temps d'incorporation à ± 15 min** (idéalement ± 10 min) et même protocole entre examens [1].\n\n### Deauville (5-PS) et Lugano - lymphomes\n\nEn lymphome, l'évaluation est **visuelle**, par l'échelle de Deauville à 5 points, par comparaison au **médiastin** et au **foie** :\n\n| Score | Définition |\n|---|---|\n| **DS 1** | Pas de fixation [37] |\n| **DS 2** | Fixation **≤ médiastin** (pool sanguin) [37] |\n| **DS 3** | Fixation **> médiastin mais ≤ foie** [37] |\n| **DS 4** | Fixation **modérément augmentée vs foie** [37] |\n| **DS 5** | Fixation **nettement > foie** et/ou **nouvelle(s) lésion(s)** [37] |\n\nCut-off Lugano : **DS 1–3 = négatif** (réponse métabolique complète), **DS 4–5 = positif** [37]. Le **ΔSUVmax** (variation baseline → interim) complète le 5-PS en recherche et en réponse intermédiaire, notamment en DLBCL [37].\n\n### Harmonisation EARL - condition de validité de tous ces scores\n\nAucun critère n'est transposable sans **harmonisation**. Le programme **EARL** (EANM Research Ltd) d'accréditation impose deux contrôles — **CalQC** (cylindre uniforme, biais SUV dans **± 10 %**) et **IQQC** (fantôme corps NEMA NU2-2007, coefficients de récupération dans **± 10 %** pour les grosses sphères, **± 20 %** pour les plus petites) — sur **> 2500 jeux de données / ~200 systèmes / ~150 sites** [2,23]. La cross-calibration activimètre ↔ TEP doit être exacte à **10 %** [23]. Le passage à **EARL2 (2019)** relève les coefficients de récupération (~**+25 %**) sur les TEP numériques, augmentant le **SUV de ~23–30 %** selon la métrique : les valeurs **EARL1 et EARL2 ne sont pas interchangeables**, et un post-filtrage gaussien 6–7 mm permet de régénérer des données EARL1 à partir d'images EARL2 pour préserver la continuité d'un suivi [4,22]. La conformité EARL est par ailleurs un **facteur pronostique indépendant** (ex. cancer du poumon) [24].",
+          "steps": [
+            {
+              "title": "1. Choisir le referentiel",
+              "text": "Tumeurs solides -> PERCIST (SULpeak) ; lymphome -> Deauville/Lugano (visuel, references mediastin et foie) ; EORTC reste le cadre historique de la variation relative [6,26,37]."
+            },
+            {
+              "title": "2. Verifier la comparabilite",
+              "text": "Meme appareil/protocole, meme delai d'incorporation a +/- 10-15 min, meme normalisation (SUL pour PERCIST), glycemie comparable [1,6]."
+            },
+            {
+              "title": "3. Controler le standard EARL",
+              "text": "S'assurer que les deux examens relevent du meme standard ; en cas de passage EARL1 -> EARL2, corriger (post-filtrage) avant comparaison du SUV [4,22]."
+            },
+            {
+              "title": "4. Appliquer le seuil",
+              "text": "PERCIST : +/- 30 % du SULpeak ET +/- 0,8 unite. Lugano : DS 1-3 negatif, DS 4-5 positif. Conclure en categorie de reponse [6,7,37]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "+/- 30 % + 0,8",
+              "label": "Seuil PMR/PMD du SULpeak (PERCIST) [6,7]"
+            },
+            {
+              "value": "DS 1-3 / 4-5",
+              "label": "Cut-off negatif / positif (Deauville-Lugano) [37]"
+            },
+            {
+              "value": "15-25 %",
+              "label": "Variation de reponse SUVbsa (EORTC) [26]"
+            },
+            {
+              "value": "+23-30 %",
+              "label": "Hausse du SUV EARL2 vs EARL1 [4,22]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - melanger EARL1 et EARL2 dans un suivi",
+              "text": "Passer un patient d'un standard EARL1 a EARL2 entre deux examens augmente artificiellement le SUV de ~23-30 % : une fausse 'progression' peut etre conclue alors que la maladie est stable. Toujours documenter le standard de chaque examen et regenerer des donnees EARL1 (filtrage gaussien 6-7 mm) avant toute comparaison longitudinale du SUV [4,22]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - pourquoi PERCIST exige le SUL et la sphere 1 cm3",
+              "text": "PERCIST impose le SULpeak (et non le SUVmax) parce que la normalisation a la masse maigre supprime le biais lie a l'adiposite et que la sphere fixe de 1 cm3 est la metrique la moins sensible au bruit et aux differences de reconstruction (PSF/TOF). C'est ce qui rend le seuil de 30 % robuste : il depasse la repetabilite test-retest (~10 % en conditions ideales) [1,6,8]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle d'evaluation de la reponse en TEP : examen baseline -> traitement -> reexamen avec memes conditions (delai, normalisation SUL, standard EARL) -> cotation par critere standardise (PERCIST ou Deauville) -> decision therapeutique.",
+            "caption": "Fig. - Boucle d'evaluation de reponse : la cotation standardisee (PERCIST/Deauville) n'est valide que si les conditions de mesure sont identiques entre les deux temps."
+          }
+        },
+        {
+          "title": "D12 - D12 - Limites intrinsèques et pièges d'interprétation du SUV",
+          "text": "Le **SUV** (Standardized Uptake Value, valeur de fixation normalisée) est un indice **semi-quantitatif**, non une mesure absolue de métabolisme : il dépend d'une vingtaine de paramètres biologiques et techniques. En maîtriser les limites est le préalable à toute utilisation longitudinale ou comparative [1]. On distingue trois familles de pièges : la **dépendance physiologique** (terrain, glycémie, délai), les **effets de la chaîne de mesure** (calibration, segmentation, reconstruction) et les **biais de normalisation** (poids vs masse maigre).\n\n**▸ Pièges physiologiques et liés au patient**\n\n| Source de variation | Effet sur le SUV | Conduite | Source |\n|---|---|---|---|\n| **Délai d'incorporation** | Le FDG continue de s'accumuler dans les lésions avides ; un délai plus long ↑ le SUV tumoral | Standardiser à **60 min** (plage **55–75 min**), reproduire à **± 10 min** pour le suivi | [1] |\n| **Glycémie élevée** | Compétition glucose/FDG → ↓ SUV lésionnel (faux négatif) | Examen si **< 11 mmol/L (≈ 200 mg/dL)**, viser **7–8,3 mmol/L** en quantification | [1] |\n| **Insuline (récente/exogène)** | Redistribution musculaire massive du FDG → masque les lésions | Reporter l'examen plutôt que corriger par insuline | [1] |\n| **Graisse brune, muscle, effort** | Captation physiologique ↑, faux positifs | Repos au chaud 30–60 min, pas d'effort ≥ 6 h | [1] |\n| **Extravasation au point d'injection** | Activité réellement injectée surestimée → **SUV systématiquement sous-estimé** | Contrôler le site, documenter | [28] |\n\n**▸ Pièges de la chaîne de mesure.** La justesse du SUV exige une **calibration croisée activimètre ↔ caméra** et une **synchronisation des horloges à ± 1 min** entre l'activimètre, le dispensateur et la TEP : une erreur d'horloge se propage directement, le FDG décroissant d'environ **0,63 %/min** (période **109,7–109,8 min**) [1,14]. La justesse du système automatisé d'injection doit rester **< 3 %** [1].\n\n**▸ Effet de volume partiel (EVP).** Pour toute lésion de diamètre **inférieur à ~2 fois la résolution** du système (voxels reconstruits typiques **3,0–4,0 mm**), l'activité est étalée sur des voxels voisins : le **SUVmax est sous-estimé**, d'autant plus que la lésion est petite — piège majeur pour les petits ganglions et les nodules infracentimétriques [1,28].\n\n**▸ Choix de la métrique.** Le **SUVmax** (voxel le plus chaud) est robuste à la délimitation mais **sensible au bruit** ; le **SUVmean** dépend du seuil de segmentation (fixe, % du max, gradient), source majeure de variabilité ; le **SUVpeak/SULpeak** (sphère fixe de **1 cm³**) est la métrique **la moins sensible au bruit et aux différences de reconstruction**, raison pour laquelle PERCIST la retient [6,7,30].",
+          "stats": [
+            {
+              "value": "± 10 min",
+              "label": "Reproductibilité exigée du délai d'incorporation pour le suivi [1]"
+            },
+            {
+              "value": "< 11 mmol/L",
+              "label": "Seuil glycémique clinique (≈ 200 mg/dL) [1]"
+            },
+            {
+              "value": "± 1 min",
+              "label": "Synchronisation des horloges activimètre/caméra [1]"
+            },
+            {
+              "value": "~2 × résolution",
+              "label": "Taille critique sous laquelle l'EVP sous-estime le SUV [1,28]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — comparer l'incomparable",
+              "text": "Ne jamais confronter directement des SUV obtenus avec des **délais d'incorporation, des normalisations (poids vs masse maigre), des machines ou des standards EARL (EARL1 vs EARL2) différents** sans correction. C'est la première cause d'erreur d'interprétation en suivi longitudinal [4]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — l'extravasation silencieuse",
+              "text": "Une extravasation au point d'injection diminue l'activité réellement circulante : le SUV de toutes les lésions est **uniformément sous-estimé**, sans signe d'image évident si le bras n'est pas dans le champ. À évoquer devant une chute inattendue du SUV entre deux examens [28]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le SULpeak",
+              "text": "Le SUVmax (voxel unique) est intrinsèquement bruité ; le SUVmean dépend de la segmentation. Le **SULpeak** (sphère de 1 cm³ centrée sur la zone la plus active, normalisée à la masse maigre) amortit le bruit et lisse les différences de reconstruction entre machines — c'est pourquoi il est la métrique de référence de PERCIST [6,7]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du 18F-FDG : entrée par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable ; les déterminants biologiques (glycémie, délai) qui modulent ce flux expliquent la variabilité du SUV.",
+            "caption": "Fig. — Le piégeage du FDG (GLUT → hexokinase → FDG-6-phosphate) : ce flux, modulé par la glycémie et le délai d'incorporation, sous-tend la variabilité intrinsèque du SUV."
+          }
+        },
+        {
+          "title": "D13 - D13 - Reproductibilité, répétabilité et signification d'une variation",
+          "text": "Interpréter une **variation de SUV** suppose de connaître sa **variabilité de mesure** : une baisse ou une hausse n'a de sens que si elle dépasse le bruit test-retest. On distingue la **répétabilité** (même patient, même machine, même protocole, à court intervalle, sans changement biologique) de la **reproductibilité** (entre machines, sites ou dates) [8,29].\n\n**▸ Répétabilité test-retest (conditions idéales).** Avec un protocole soigné, le **coefficient de variation intra-sujet (wCV)** du SUV avoisine **10 %** [8]. Le coefficient de répétabilité (1,96 × écart-type des différences) est **< 15 %** pour le SUVmax lésionnel et **< 10 %** pour les valeurs moyennées par patient [29]. C'est ce socle qui justifie les **seuils de ± 30 %** retenus par PERCIST et l'EORTC : seule une variation dépassant ~30 % sort de la variabilité de mesure [6,7].\n\n| Paramètre de variabilité | Valeur | Contexte | Source |\n|---|---|---|---|\n| wCV du SUV (idéal) | **≈ 10 %** | Test-retest, protocole soigné | [8] |\n| Coefficient de répétabilité SUVmax | **< 15 %** | Lésion unique | [29] |\n| Coefficient de répétabilité (moyennes/patient) | **< 10 %** | Valeurs par patient | [29] |\n| Répétabilité comparée | SUVmean **1 % ± 7 %** vs SUVmax **3 % ± 11 %** | Nahmias & Wahl | [30] |\n\n**▸ Reproductibilité en pratique réelle.** La variance est **plus élevée** qu'en conditions d'étude : le seuil de changement réellement significatif s'approche souvent de **50 %** [9]. Entre scanners **accrédités EARL**, la variabilité moyenne du SUV reste de **6–8 %**, avec des coefficients de répétabilité de **27–33 %** [5]. La standardisation (EARL, QIBA) ne supprime pas la variabilité mais la borne, condition pour que le SUV soit un **biomarqueur d'imagerie quantitatif** exploitable en multicentrique [3].\n\n**▸ Application aux critères de réponse.** Les seuils sont sourcés et doivent être appliqués à l'identique :\n\n| Critère | Réponse partielle | Progression | Particularité | Source |\n|---|---|---|---|---|\n| **PERCIST 1.0** (SULpeak) | **↓ ≥ 30 %** ET **≥ 0,8 unité SUL** | **↑ ≥ 30 %** ET ≥ 0,8 unité, ou nouvelle lésion | Référence fond = foie (1,5 × SULmean foie + 2 SD) | [6,7] |\n| **EORTC 1999** (SUVbsa) | **↓ 15–25 %** après 1 cycle, **> 25 %** après plusieurs | **↑ > 25 %** ou nouvelle lésion | Antérieur à PERCIST, SUV normalisé à la surface corporelle | [26,27] |\n\nLa **contrainte impérative** commune : même temps d'incorporation à **± 15 min** (idéalement ± 10 min), même protocole et même normalisation entre les examens comparés [1].",
+          "stats": [
+            {
+              "value": "≈ 10 %",
+              "label": "wCV test-retest du SUV en conditions idéales [8]"
+            },
+            {
+              "value": "± 30 %",
+              "label": "Seuil de variation significative (PERCIST) [6,7]"
+            },
+            {
+              "value": "6–8 %",
+              "label": "Variabilité inter-scanners EARL-accrédités [5]"
+            },
+            {
+              "value": "± 0,8 unité SUL",
+              "label": "Variation absolue minimale exigée par PERCIST [6,7]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — d'où vient le seuil de 30 %",
+              "text": "Le seuil PERCIST/EORTC de **± 30 %** n'est pas arbitraire : il dérive directement du coefficient de répétabilité test-retest (wCV ≈ 10 %, soit ~1,96 × wCV ≈ 20–30 %). Une variation en deçà de ce seuil reste dans le bruit de mesure et **ne traduit pas un effet thérapeutique réel** [8,6]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — le 30 % idéal n'est pas le 30 % réel",
+              "text": "Les 30 % sont validés en conditions d'étude maîtrisées. En **pratique clinique courante**, la variance est supérieure (seuil réel parfois proche de **50 %**) [9] : un changement modéré (~30 %) sur des machines/protocoles non harmonisés doit être interprété avec prudence."
+            },
+            {
+              "type": "info",
+              "title": "Le double critère PERCIST",
+              "text": "PERCIST exige **deux conditions simultanées** : une variation relative **≥ 30 %** ET une variation absolue **≥ 0,8 unité SUL**. Le critère absolu évite de surinterpréter de grandes variations relatives sur des SULpeak de départ très bas [6,7]."
+            }
+          ]
+        },
+        {
+          "title": "D14 - D14 - Au-delà du SUV : quantification absolue et radiomique",
+          "text": "Le SUV est une **mesure statique** prise à un instant unique : il ignore la cinétique du traceur, l'apport artériel et l'hétérogénéité spatiale. Trois familles d'approches le complètent — la **quantification absolue** (cinétique), les **paramètres volumétriques**, et la **radiomique** — chacune visant à dépasser une limite identifiée du SUV (cf. §D12).\n\n**▸ Normalisations alternatives et corrections du SUV.** Avant même de quitter le SUV, plusieurs raffinements réduisent ses biais :\n\n| Variante | Principe | Apport | Source |\n|---|---|---|---|\n| **SUL / SULpeak** (masse maigre) | Normalisation à la **LBM** (formules de Janmahasatian : LBM_homme = 9270 × poids / (6680 + 216 × IMC) ; LBM_femme = 9270 × poids / (8780 + 244 × IMC)) | Moins biaisé chez le sujet obèse (le tissu adipeux fixe peu le FDG) ; base de PERCIST | [1,6] |\n| **SUVbsa** | Normalisation à la surface corporelle | Utilisé par l'EORTC ; alternative au poids | [26] |\n| **SULglu** | Correction par la glycémie : SUL × glycémie(mmol/L) / 5,0 | Atténue l'effet glycémique en recherche | [1] |\n| **SUR (SUV ratio)** | Rapport lésion / pool sanguin (aorte) | Réduit la variabilité liée au temps et à l'activité injectée | [29] |\n\n**▸ Quantification absolue (analyse cinétique).** La référence métabolique est le **Ki** (taux net d'influx du FDG, en mL·min⁻¹·g⁻¹), issu d'une acquisition dynamique et d'une fonction d'entrée artérielle, modélisé par l'analyse de **Patlak** (modèle compartimental à 2 tissus). Le Ki estime le métabolisme glucidique réel (MRglu) indépendamment du poids et du délai, mais reste lourd (acquisition dynamique, fonction d'entrée) et donc cantonné à la recherche et aux protocoles total-body [30].\n\n**▸ Paramètres volumétriques.** Le SUVmax ne décrit qu'un voxel ; deux indices intègrent le volume tumoral métaboliquement actif :\n- **MTV** (Metabolic Tumor Volume) : volume des voxels au-dessus d'un seuil (souvent 41 % du SUVmax ou un seuil absolu).\n- **TLG** (Total Lesion Glycolysis) = MTV × SUVmean : combine charge tumorale et intensité métabolique.\nLeur principale faiblesse est la **dépendance à la méthode de segmentation** [30].\n\n**▸ Radiomique.** L'extraction de centaines de descripteurs de **texture/hétérogénéité** vise à capter l'information spatiale ignorée par le SUV. Sa **fragilité majeure est la reproductibilité** : les indices radiomiques sont très sensibles à la reconstruction (PSF, TOF), à la taille de voxel et à la segmentation — ce qui rend l'**harmonisation (EARL, QIBA)** encore plus critique que pour le SUV [4,3].\n\nCes approches partagent une exigence : sans **harmonisation EARL** et standardisation, ni le SUV ni a fortiori la radiomique ne sont transposables d'un centre à l'autre [3,23].",
+          "stats": [
+            {
+              "value": "Ki (mL·min⁻¹·g⁻¹)",
+              "label": "Paramètre cinétique de référence (Patlak) [30]"
+            },
+            {
+              "value": "TLG = MTV × SUVmean",
+              "label": "Indice volumétrique combinant charge et intensité [30]"
+            },
+            {
+              "value": "÷ 5,0",
+              "label": "Facteur de la correction glycémique SULglu [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le SUL plutôt que le SUVbw",
+              "text": "Le tissu adipeux capte peu le FDG : normaliser au **poids total** chez un sujet obèse surestime le dénominateur et **gonfle artificiellement le SUV**. La normalisation à la **masse maigre (SUL)** par les formules de Janmahasatian corrige ce biais et fonde la mesurabilité PERCIST [1,6]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la radiomique sans harmonisation",
+              "text": "Les descripteurs radiomiques de texture sont **encore plus sensibles** que le SUV à la reconstruction (PSF, TOF), à la taille de voxel et à la segmentation. Sans pipeline harmonisé et sans accréditation EARL, un modèle radiomique entraîné sur une machine n'est **pas transférable** à une autre [4,3]."
+            },
+            {
+              "type": "info",
+              "title": "Statique vs cinétique",
+              "text": "Le SUV est une photographie à un instant ; le **Ki** (Patlak) mesure le flux net d'influx du FDG et approche le métabolisme glucidique vrai, sans dépendance au poids ni au délai. Son coût (acquisition dynamique + fonction d'entrée artérielle) le réserve à la recherche et aux systèmes total-body [30]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence en TEP : annihilation positon-électron émettant deux photons de 511 keV à 180°, base de la mesure d'activité volumique dont dérivent le SUV et les paramètres cinétiques.",
+            "caption": "Fig. — La détection en coïncidence (2 × 511 keV à 180°) fournit la concentration d'activité ; SUV, indices volumétriques et Ki en sont des lectures de complexité croissante."
+          }
+        },
+        {
+          "title": "D15 - D15 - Le SUV pour les autres traceurs (PSMA, DOTATATE, FDG hors oncologie)",
+          "text": "Le SUV a été **défini et validé pour le 18F-FDG en oncologie** ; son extension à d'autres traceurs et à d'autres champs cliniques est possible mais soumise aux mêmes contraintes de standardisation, avec des **systèmes de cotation dédiés** qui priment souvent sur le SUV brut. Le principe reste identique (activité volumique normalisée), mais la **biodistribution physiologique** et les seuils diffèrent radicalement.\n\n**▸ Traceurs réceptoriels — l'analyse semi-quantitative dédiée prime.**\n\n| Traceur / cible | Statut du SUV | Cadre de lecture recommandé | Source |\n|---|---|---|---|\n| **68Ga/18F-PSMA** (PSMA, cancer prostatique) | SUVmax utile mais non standardisé comme cut-off | Cadres structurés type **PROMISE/échelles visuelles** ; harmonisation EARL en cours d'extension | [3,4] |\n| **68Ga-DOTATATE** (SSTR2, TNE) | SUVmax mesurable | **Score de Krenning** (échelle visuelle 0–4, référence foie/rate) prime pour la sélection théranostique | [3] |\n| **18F-FDG** (lymphome) | ΔSUVmax en recherche/réponse intermédiaire | **Échelle de Deauville** (5 points, références médiastin/foie) prime en clinique | [37] |\n\nPour le **lymphome**, l'évaluation visuelle de Deauville (1 = pas de captation ; 2 = ≤ pool médiastinal ; 3 = > médiastin mais ≤ foie ; 4 = modérément > foie ; 5 = nettement > foie ou nouvelle lésion ; **1–3 négatif, 4–5 positif**) prime, le **ΔSUVmax** servant en appoint pour la réponse intermédiaire [37].\n\n**▸ FDG hors oncologie.** Le SUV y est un **appoint semi-quantitatif**, jamais un diagnostic isolé :\n- **Neurologie (démences, foyer épileptogène)** : l'analyse repose sur des **ratios SUVR** et la comparaison à une base de données normative plutôt que sur le SUV absolu (SNMMI/EANM Brain [18F]FDG PET v2.0, 2024) [19].\n- **Infection / inflammation** : le SUV est un appoint au sein de la lecture visuelle (EANM/SNMMI v2.0, 2024) ; rappel que le FDG **n'est pas spécifique du cancer** — inflammation, infection, graisse brune et muscle fixent aussi [20].\n\n**▸ Valeurs physiologiques de référence (FDG, fond).** Indispensables pour calibrer la lecture, quel que soit le champ :\n\n| Structure | SUVmean physiologique | Rôle | Source |\n|---|---|---|---|\n| **Foie** | **≈ 2,0–3,0** | Référence de fond PERCIST et Deauville | [36] |\n| **Pool vasculaire (aorte/médiastin)** | **≈ 0,8–2** | Référence Deauville niveau 2 ; dénominateur du SUR | [36] |\n\n**▸ Le principe transversal.** Pour **tout** traceur, comparer des SUV n'a de sens que sous **harmonisation EARL** : EARL2 (2019) augmente les recouvrements de **+25 % (SUVmean)** et **+26 % (SUVmax)**, soit un SUV majoré de **~23–30 %** vs EARL1 — une rupture de continuité à corriger lors de tout changement de standard, FDG comme PSMA ou DOTATATE [4,22].",
+          "stats": [
+            {
+              "value": "0–4",
+              "label": "Échelle de Krenning (DOTATATE, sélection théranostique) [3]"
+            },
+            {
+              "value": "5 points",
+              "label": "Échelle de Deauville (lymphome FDG) [37]"
+            },
+            {
+              "value": "≈ 2,0–3,0",
+              "label": "SUVmean hépatique physiologique (fond de référence) [36]"
+            },
+            {
+              "value": "~23–30 %",
+              "label": "Hausse du SUV EARL2 vs EARL1 [4]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — transposer un seuil FDG à un autre traceur",
+              "text": "Un cut-off de SUVmax validé en oncologie FDG n'a **aucune signification** pour le PSMA, le DOTATATE ou le FDG cérébral : la biodistribution physiologique, le fond de référence et la dynamique de fixation diffèrent. On s'appuie sur les **échelles dédiées** (Krenning, Deauville, SUVR cérébral) et non sur un SUV brut [3,19,37]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le SUV n'est pas un diagnostic",
+              "text": "Quel que soit le traceur, le SUV reste un **descripteur semi-quantitatif** d'aide au staging, à la réponse et au pronostic. Il s'interprète toujours avec la **fixation visuelle, la biodistribution physiologique et l'imagerie morphologique** — jamais isolément [38]."
+            },
+            {
+              "type": "info",
+              "title": "FDG ≠ cancer",
+              "text": "Le FDG image l'hypermétabolisme glucidique, pas la malignité : inflammation, infection, tissu adipeux brun et muscle fixent intensément. En contexte non oncologique (infection, neurologie), le SUV est un appoint à la lecture visuelle et aux ratios normalisés [20,19]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Schéma de la liaison du ligand PSMA à l'antigène membranaire spécifique de la prostate : la cible réceptorielle, distincte du métabolisme glucidique, impose des repères de SUV et des échelles de lecture propres au traceur.",
+            "caption": "Fig. — Le PSMA cible un antigène membranaire (et non le métabolisme glucidique) : sa biodistribution et ses repères de SUV diffèrent de ceux du FDG, d'où des échelles de lecture dédiées."
+          }
+        },
+        {
+          "title": "E16 - E16 - Points clés à retenir",
+          "text": "Synthèse haut rendement pour les compositions. Chaque puce est autoportante ; les chiffres-clés et les seuils sont en gras et sourcés. Renvois internes : définition (§A2), métriques (§B10), harmonisation EARL (§D17), pièges (§C14).",
+          "list": [
+            "**Définition.** Le **SUV** (Standardized Uptake Value) est l'indice **semi-quantitatif** de référence en TEP : il rapporte la concentration d'activité d'un volume d'intérêt (VOI) à l'**activité injectée normalisée au poids corporel** ; un SUV = 1 correspond à une répartition uniforme du traceur dans tout le corps.[1]",
+            "**Formule.** SUV = Act_VOI (kBq/mL) / [Act_administrée (MBq) / poids (g)] ; sans dimension si l'on suppose une densité tissulaire de **1 g/mL**.[1]",
+            "**SUL (lean body mass).** Normaliser à la **masse maigre** (formules de **Janmahasatian**) plutôt qu'au poids réduit le biais chez l'obèse (le tissu adipeux fixe peu le FDG) ; c'est la métrique de PERCIST.[1]",
+            "**Trois métriques à distinguer.** **SUVmax** (voxel le plus chaud, robuste à la délimitation mais sensible au bruit) ; **SUVmean** (dépend du seuil de segmentation, meilleure répétabilité) ; **SULpeak** (SUV moyen dans une **sphère fixe de 1 cm³**, la métrique la moins sensible au bruit et aux différences de reconstruction).[1,6,28]",
+            "**FDG = analogue du glucose**, non spécifique du cancer : entrée par les **transporteurs GLUT (GLUT1/3)**, phosphorylation par l'**hexokinase (HK-II)**, puis **piégeage métabolique** du FDG-6-phosphate (effet Warburg).[16,17] L'inflammation, l'infection, la graisse brune et le muscle fixent aussi → faux positifs.[20]",
+            "**Seuil PERCIST 1.0.** Réponse (PMR) ou progression (PMD) = variation du **SULpeak ≥ 30 %** **ET** variation absolue **≥ 0,8 unité SUL**.[6,7]",
+            "**Répétabilité.** En protocole idéal, **wCV ≈ 10 %** ; coefficient de répétabilité **< 15 %** pour SUVmax et **< 10 %** pour les moyennes par patient → une variation n'est significative qu'au-delà de **~30 %**.[8,29] En pratique clinique réelle, la variance est plus élevée (seuil de changement proche de **50 %**).[9]",
+            "**Harmonisation EARL** (EANM Research Ltd, accréditation depuis 2010) : **CalQC** (cylindre uniforme) + **IQQC** (fantôme corps NEMA NU2-2007), tolérance de biais SUV **± 10 %** ; **> 2500 jeux de données / ~200 systèmes / ~150 sites** au premier bilan.[2,23]",
+            "**Rupture EARL1 → EARL2.** Les standards **EARL2 (2019)** relèvent les coefficients de recouvrement (TEP numériques ToF/PSF) et **augmentent le SUV de ~23–30 %** selon la métrique → valeurs **non interchangeables** ; un post-filtrage gaussien 6–7 mm régénère des données EARL1.[4,22]",
+            "**Conditions de comparabilité (suivi).** Même appareil/protocole, même **temps d'incorporation à ± 10 min**, même normalisation (idéalement SUL), même standard EARL.[1] Préparation déterminante : **jeûne ≥ 4 h**, **glycémie < 11 mmol/L (≈ 200 mg/dL)**, incorporation **60 min (55–75 min)**.[1]",
+            "**Physique.** Le **¹⁸F** décroît par β⁺ (~97 %), demi-vie **109,7–109,8 min**, parcours du positon **< 2,4 mm** ; l'annihilation émet **2 photons de 511 keV** à 180° (détection en coïncidence).[14] Dose efficace FDG **0,019 mSv/MBq** (CIPR 128), organe critique = **vessie**.[31]",
+            "**Le SUV n'est pas un diagnostic** : c'est un descripteur d'aide au staging, à l'évaluation de réponse et au pronostic, toujours interprété avec la fixation visuelle et l'imagerie morphologique.[1]"
+          ],
+          "stats": [
+            {
+              "value": "1 cm³",
+              "label": "Sphère du SULpeak (PERCIST)"
+            },
+            {
+              "value": "≥ 30 % + 0,8",
+              "label": "Seuil de réponse PERCIST 1.0"
+            },
+            {
+              "value": "± 10 %",
+              "label": "Tolérance biais SUV EARL1"
+            },
+            {
+              "value": "+23–30 %",
+              "label": "Hausse du SUV EARL2 vs EARL1"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la règle des trois identités",
+              "text": "Pour qu'un SUV soit comparable d'un examen à l'autre, trois identités doivent être garanties : **même normalisation** (poids vs masse maigre), **même temps d'incorporation** (à ± 10 min) et **même standard de reconstruction** (EARL1 vs EARL2). Rompre l'une d'elles suffit à invalider une comparaison longitudinale, même sur la même machine.[1,4]"
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du FDG : entrée par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable, base biologique du signal mesuré par le SUV.",
+            "caption": "Fig. 1 — Le FDG capté et piégé : la fixation que le SUV quantifie de façon semi-quantitative."
+          }
+        },
+        {
+          "title": "E17 - E17 - FAQ et pièges d'examen",
+          "text": "Format question/réponse ciblant les confusions réelles du résident et les pièges de QCM. Réponses courtes et justifiées, chaque valeur sourcée.\n\n**Pourquoi le SUV est-il dit « semi-quantitatif » et non quantitatif ?** Parce qu'il ne mesure pas un paramètre cinétique absolu (comme le K_i d'une analyse de Patlak), mais un rapport de concentration à un instant donné, dépendant d'une vingtaine de facteurs techniques et biologiques (glycémie, temps d'incorporation, reconstruction, normalisation).[1,28]\n\n**SUVmax ou SULpeak — lequel choisir pour le suivi ?** Le **SULpeak** (sphère fixe de 1 cm³, normalisé à la masse maigre) est la métrique de **PERCIST 1.0** : moins sensible au bruit et aux différences de reconstruction entre machines que le SUVmax mono-voxel.[6,7,28] Le **SUVmax** reste robuste à la délimitation du VOI mais sensible au bruit.[28]\n\n**Pourquoi normaliser à la masse maigre (SUL) plutôt qu'au poids ?** Le tissu adipeux fixe peu le FDG : chez le sujet obèse, la normalisation au poids **surestime** le SUV des tissus non adipeux. Le SUL corrige ce biais via les formules de **Janmahasatian**.[1]\n\n**Un SUVmax > 2,5 signe-t-il une lésion maligne ?** Non. Le seuil de **2,5** souvent évoqué pour les ganglions médiastinaux est **contextuel et non absolu** ; le FDG n'est pas spécifique du cancer (inflammation, infection, graisse brune, muscle fixent aussi).[20,35]\n\n**Quel seuil de variation rend une réponse « significative » ?** Une variation du SULpeak **≥ 30 % ET ≥ 0,8 unité** (PERCIST), justifiée par la répétabilité test-retest (**wCV ≈ 10 %**, coefficient de répétabilité < 15 % pour SUVmax).[6,8,29] En pratique clinique réelle, le seuil de changement significatif est plus proche de **50 %**.[9]\n\n**Peut-on comparer un SUV obtenu sur une TEP analogique (EARL1) à un SUV sur TEP numérique (EARL2) ?** Non sans correction : les standards **EARL2 (2019)** augmentent le SUV de **~23–30 %** ; un post-filtrage gaussien 6–7 mm permet de régénérer des données compatibles EARL1.[4,22]\n\n**Le foie ou le pool sanguin comme référence ?** PERCIST privilégie le **foie sain** (SULpeak mesurable si ≥ 1,5 × SULmean foie + 2 SD) ; le **pool sanguin/aorte** est l'alternative si le foie est anormal.[7] Le foie sert aussi de référence à l'échelle de **Deauville** (lymphome).[1]\n\n**Quelle glycémie maximale pour réaliser l'examen ?** Examen réalisable si **glycémie < 11 mmol/L (≈ 200 mg/dL)** ; à reprogrammer si ≥ 11 mmol/L ; cible optimale < 7,8 mmol/L. L'hyperglycémie crée une compétition glucose-FDG qui abaisse la sensibilité.[1]",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — comparer des SUV non harmonisés",
+              "text": "L'erreur la plus fréquente du suivi : conclure à une « réponse » ou une « progression » sur deux examens dont le **temps d'incorporation**, la **normalisation** (poids vs LBM), la **machine** ou le **standard EARL** diffèrent. Une rupture de continuité EARL1 → EARL2 (+23–30 % de SUV) peut mimer une progression purement technique.[1,4]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — effet de volume partiel",
+              "text": "Pour les lésions de taille **inférieure à ~2 fois la résolution** du système, l'effet de volume partiel **sous-estime** le SUV : une petite lésion peut paraître moins active qu'elle ne l'est. Ne jamais interpréter un SUV bas sur une lésion infracentimétrique comme une preuve de bénignité ou de réponse.[28]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — synchronisation et calibration",
+              "text": "La justesse du SUV repose sur une chaîne métrologique : **calibration croisée activimètre ↔ caméra** et **synchronisation des horloges à ± 1 min** (hôpital, dispensateur, TEP). Une horloge décalée fausse la correction de décroissance et donc l'activité injectée portée au dénominateur du SUV.[1,23]"
+            }
+          ]
+        },
+        {
+          "title": "E18 - E18 - Références & liens sortants typés",
+          "text": "Bibliographie sourcée et datée (recommandations EANM/SNMMI/SFMN + sources primaires), puis liens typés vers le graphe NucleAtlas. Style de citation cohérent avec le corps de l'article.\n\n**Recommandations & standards**\n- [1] Boellaard et al. — *FDG PET/CT: EANM procedure guidelines for tumour imaging v2.0*, Eur J Nucl Med Mol Imaging 2015 (socle protocolaire et formules SUV/SUL).\n- [21] Boellaard et al. — *EANM procedure guidelines for tumour imaging v3.0*, 2025 (actualisation).\n- [19] *SNMMI/EANM Procedure Standard for Brain [¹⁸F]FDG PET v2.0*, 2024.\n- [20] Abikhzer et al. — *EANM/SNMMI guideline [¹⁸F]FDG infection & inflammation v2.0*, 2024.\n- [38] SFMN/CNP-MN — *Recommandations de bonne pratique TEP en cancérologie* (label HAS-INCa), Bull Cancer 2018/2019.\n\n**Harmonisation EARL**\n- [2] Kaalep et al. — *EANM/EARL accreditation : first 200 systems*, EJNMMI 2018.\n- [3] Aide et al. — *EANM/EARL harmonization strategies*, EJNMMI 2017.\n- [4,22] Kaalep et al. — *Quantitative implications of EARL 2019 standards*, EJNMMI Physics 2019.\n- [5] Koopman et al. — *SUV variability in EARL-accredited conventional and digital PET*, EJNMMI Res 2019.\n- [23] *EARL Accreditation Manual v4.2*, EANM Research Ltd, 2023.\n- [24] *EARL-compliant SUV as independent prognostic factor in lung cancer*, EJNMMI 2019.\n- [39] Kaalep et al. — *EARL compliance on Biograph Vision Quadra (long axial FOV)*, EJNMMI Physics 2022.\n\n**Critères de réponse (PERCIST/EORTC/Deauville)**\n- [6] Wahl et al. — *From RECIST to PERCIST*, J Nucl Med 2009.\n- [7,25] O, Lodge, Wahl — *Practical PERCIST 1.0*, Radiology 2016.\n- [26,27] *EORTC and beyond* / Pinker et al., 2017/2023.\n- [37] *Deauville 5-point & ΔSUVmax in DLBCL*, Medicine 2025.\n\n**Répétabilité, variabilité & facteurs**\n- [8] Lodge — *Repeatability of SUV in oncologic ¹⁸F-FDG PET*, J Nucl Med 2017.\n- [9] Kumar et al. — *Variance of SUV greater in clinical practice*, Clin Nucl Med 2013.\n- [28] Adams et al. — *Factors affecting accuracy of SUV measurements*, AJR 2010.\n- [29] Hofheinz et al. — *Test-retest variability in lesion SUV/SUR*, J Nucl Med 2017.\n- [30] Turku PET Centre — *Standardized uptake value (SUV) analysis*.\n- [36] Zwezerijnen et al. — *Reproducibility of liver SUV as reference*, EJNMMI 2023.\n\n**Radiopharmaceutique, physique & dosimétrie**\n- [13] Zukotynski — *SNMMI ¹⁸F-FDG monograph*.\n- [14] *Fluorine-18* (propriétés physiques, décroissance, parcours du positon).\n- [15] Jacobson et al. — *Fluorine-18 radiochemistry*, Bioconjug Chem 2015.\n- [16] *Fludeoxyglucose (¹⁸F)* — StatPearls.\n- [17] *Signaling pathways driving ¹⁸F-FDG accumulation in cancer*, J Nucl Med 2022.\n- [18] *FDG uptake and glucose transporter subtype expressions*, J Nucl Med 2001.\n- [31] Hu et al. — *Internal dosimetry in F-18 FDG using total-body PET/CT*, EJNMMI Physics 2021.\n\n**Pédiatrie**\n- [10] Dickson et al. — *Effect of modern PET on the EANM paediatric dosage card*, EJNMMI 2022.\n- [11] *EANM Dosage Card initiative* (MàJ août 2016).\n- [12] Lim et al. — *SNMMI/EANM Pediatric ¹⁸F-FDG PET/CT v1.0*, J Nucl Med 2021.\n- [32] Lassmann et al. — *New EANM paediatric dosage card : notes on F-18*, EJNMMI 2008.\n\n**Performances diagnostiques**\n- [33] Khan et al. — *FDG PET-CT in lymph nodal staging of lung cancer*, Cureus 2025.\n- [34] Farsad — *FDG PET/CT in staging of lung cancer*, Curr Radiopharm 2020.\n- [35] *¹⁸F-FDG PET for mediastinal staging : which SUV threshold ?*, J Nucl Med 2007.\n\n**Carte de liens (réseau de l'article)** — Traceur : **¹⁸F-FDG** · Examens : **TEP-FDG corps entier**, TEP cérébrale au FDG, TEP infection/inflammation · Scores : **PERCIST 1.0**, **EORTC**, **Deauville/Lugano** · Maladies : lymphome, cancer bronchopulmonaire (staging médiastinal). *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note de sourçage",
+              "text": "Toutes les valeurs chiffrées de l'article renvoient à cette liste fermée [1–39]. Les chiffres-phares (seuil PERCIST ± 30 % / 0,8 [6,7], wCV ≈ 10 % [8], hausse EARL2 +23–30 % [4,22], dose 0,019 mSv/MBq [31], parcours β⁺ < 2,4 mm [14]) proviennent de sources primaires datées ou de recommandations EANM/SNMMI ; aucun DOI ni référence n'a été ajouté hors de cette liste."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence en TEP : annihilation positon-électron émettant deux photons de 511 keV à 180°, base physique de la mesure d'activité qui alimente le calcul du SUV.",
+            "caption": "Fig. 2 — La détection en coïncidence (511 keV) : la mesure d'activité qui, normalisée, devient le SUV."
+          }
+        }
+      ]
+    }
+  }
+}

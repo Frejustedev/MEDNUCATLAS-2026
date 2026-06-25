@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section E16 'Points clés' — puce Physique : « Le ¹⁸F décroît par β⁺ (~97 %) »",
+    "problem": "Le corps de l'article (sections A4, D12) utilise correctement et de façon répétée la valeur précise de 96,7 % pour la fraction β+ du ¹⁸F (capture électronique 3,3 %), conforme à la littérature. La section de synthèse E16 régresse à un arrondi « ~97 % », créant une légère incohérence interne avec le reste du texte. Ce n'est pas une erreur factuelle (97 % est un arrondi acceptable), seulement un manque d'homogénéité.",
+    "fix": "Harmoniser sur « ~96,7 % » dans E16 pour rester cohérent avec A4/D12 et la valeur de référence."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections C11 et C10 (tableaux/critères EORTC 1999) — « réponse partielle = diminution de 15–25 % du SUV après 1 cycle, > 25 % après plusieurs cycles »",
+    "problem": "La formulation reprend mot pour mot la fiche étalon EANM, mais la source primaire (Young et al. 1999) définit plus précisément la réponse métabolique partielle comme une baisse > 15 % du SUVbsa APRÈS 1 cycle et > 25 % après ≥ 2 cycles (et non un intervalle 15–25 % au sein du premier cycle). La présentation « 15–25 % après 1 cycle » peut laisser croire qu'il faut atteindre 25 % dès le premier cycle, ce qui n'est pas le critère exact. Nuance d'interprétation, valeurs globalement correctes.",
+    "fix": "Reformuler : « PR = baisse > 15 % du SUV après 1 cycle, > 25 % après ≥ 2 cycles ; PMD = hausse > 25 % ou nouvelle lésion » pour coller à Young et al. 1999."
+  },
+  {
+    "severity": "minor",
+    "where": "Identity card — « Organe critique : Paroi vésicale ≈ 0,13 mGy/MBq » vs tableau §6 de la fiche de référence (« vessie 0,16 mGy/MBq », monographie SNMMI)",
+    "problem": "La valeur de dose absorbée vésicale du ¹⁸F-FDG varie selon le référentiel : ~0,13 mGy/MBq (ICRP 128, modèle de miction standard) et ~0,16 mGy/MBq (monographie SNMMI). Le contenu retient 0,13 mGy/MBq, cohérent avec ICRP 128 et donc défendable, mais la fourchette réelle (et la valeur SNMMI 0,16) n'est pas signalée, ce qui peut surprendre un lecteur croisant les deux sources. Non bloquant car la valeur citée est exacte pour ICRP 128.",
+    "fix": "Mentionner que la dose vésicale dépend du modèle de miction (≈ 0,13 mGy/MBq ICRP 128, jusqu'à ≈ 0,16 selon le référentiel), ou préciser explicitement « (ICRP 128) » à côté de 0,13."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections > E16 (Points clés à retenir), texte d'introduction",
+    "problem": "Renvois internes cassés : le texte annonce « Renvois internes : définition (§A2), métriques (§B10), harmonisation EARL (§D17), pièges (§C14). » Or la numérotation réelle de l'article est A1–A5, B6–B8, C9–C11, D12–D15, E16–E18. Les ancres §B10, §D17 et §C14 n'existent pas (les métriques sont en §A5/§B7, l'EARL en §B8/§C11, les pièges en §D12/§E17). Seul §A2 est correct.",
+    "fix": "Corriger les renvois : métriques → §A5 (ou §B7), harmonisation EARL → §B8 (ou §C11), pièges → §D12 (ou §E17). Vérifier qu'aucun autre §x cité dans le corps ne pointe vers une section inexistante."
+  },
+  {
+    "severity": "minor",
+    "where": "Carte d'identité A1 / identityCard / E16 (puce « Physique ») / quiz Q9 — valeur 0,019 mSv/MBq attribuée à [31]",
+    "problem": "Mismatch d'attribution de source. La dose efficace FDG « 0,019 mSv/MBq (CIPR 128) » est citée [31] (Hu et al., Internal dosimetry total-body PET/CT 2021). Vérification de [31] : cet article rapporte sa PROPRE valeur mesurée de 1,41×10⁻² mSv/MBq (≈0,0141), pas la valeur ICRP 128. Le chiffre 0,019 mSv/MBq est bien la valeur ICRP 128 correcte (confirmé), mais [31] n'en est pas la source — il donnerait plutôt ~0,0141. Le parenthétique « CIPR 128 » nomme la vraie autorité, donc l'erreur est limitée à la balise de citation [31].",
+    "fix": "Soit citer la source ICRP 128 réelle pour 0,019 mSv/MBq (et non [31]), soit, si l'on garde [31], préciser que [31] confirme l'ordre de grandeur / le rôle de la vessie comme organe critique sans en faire la source du 0,019. Idéalement ajouter une référence ICRP 106/128 à la liste."
+  }
+]
