@@ -1,0 +1,50 @@
+[
+  {
+    "severity": "major",
+    "where": "Section A1 (carte d'identité), texte: « Le ⁹⁵ᵐTc émet un photon γ de 140,5 keV »",
+    "problem": "Erreur sur l'identité du radionucléide : il est écrit ⁹⁵ᵐTc (technétium-95m) au lieu de ⁹⁹ᵐTc. Le ⁹⁵ᵐTc est un isotope différent (période ~61 jours, émissions multiples), totalement hors sujet en lymphoscintigraphie. Tout le reste du document repose correctement sur le ⁹⁹ᵐTc (140,5 keV, 6,02 h). Une coquille mais sur une donnée physique centrale (identité de l'émetteur), donc trompeuse.",
+    "fix": "Remplacer « ⁹⁵ᵐTc » par « ⁹⁹ᵐTc »."
+  },
+  {
+    "severity": "major",
+    "where": "Section 3 / B7 / E22 / quiz : « le squelette dextran porte ~55 résidus mannose » (et reformulations)",
+    "problem": "Nombre de résidus mannose du tilmanocept faux. La littérature de référence (étiquette FDA Lymphoseek, brevet, J Immunol 2015 Azad et al.) indique 17 ± 5 résidus mannose (fourchette 12-22) et 3-8 DTPA par squelette dextran de 10 kDa. La valeur « ~55 » est nettement surestimée (facteur ~3) et n'est étayée par aucune source primaire. Note : la fiche de référence fournie reproduit elle-même cette erreur (~55), mais elle est contredite par la littérature ground-truth.",
+    "fix": "Remplacer « ~55 résidus mannose » par « ~17 ± 5 résidus mannose (et 3-8 DTPA) par squelette dextran de 10 kDa » conformément à l'étiquette FDA et à Azad et al. 2015."
+  },
+  {
+    "severity": "major",
+    "where": "Section 3, B7 et quiz : « se liant au récepteur CD206 ... (Kd 0,12 nmol/L) » / « Kd de l'ordre de 0,1 nmol/L »",
+    "problem": "Affinité (Kd) du tilmanocept pour CD206 inexacte. La source primaire (Azad et al., J Immunol 2015) rapporte une liaison multivalente de très haute affinité avec Kd = 2,7 × 10⁻¹¹ M, soit ≈ 0,027 nmol/L (27 pmol/L). La valeur affichée 0,12 nmol/L est ~4-5× trop élevée (affinité sous-estimée) et n'est pas la valeur publiée. La fiche de référence reproduit aussi 0,12 nmol/L, mais cela diverge de la littérature.",
+    "fix": "Remplacer « Kd 0,12 nmol/L » par « Kd ≈ 2,7 × 10⁻¹¹ M (~0,027 nmol/L) » d'après Azad et al. 2015, ou supprimer la valeur chiffrée et conserver « très haute affinité »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 3 et B7 : tilmanocept « ≈ 7 nm » (section 3) vs « 7,1 nm (PM ~19 kDa) » / « PM 16,7 kDa »",
+    "problem": "Incohérence interne sur le poids moléculaire du tilmanocept : la section 3 indique PM 16,7 kDa tandis que B7 et le panneau identité indiquent PM ~19 kDa (et ailleurs ~19 000 g/mol). La valeur communément admise est ~19 000 g/mol (diamètre 7,1 nm). 16,7 kDa n'est pas la valeur standard.",
+    "fix": "Harmoniser sur PM ≈ 19 000 g/mol (≈ 19 kDa), diamètre 7,1 nm, et supprimer/corriger la mention « 16,7 kDa »."
+  },
+  {
+    "severity": "minor",
+    "where": "Carte d'identité (identityCard) : « Acquisition : LEHR/MEGP, fenetre 140 keV +/-10-20 % »",
+    "problem": "Mention d'un collimateur « MEGP » (moyenne énergie) incohérente avec le reste du document et avec les guides. Pour le ⁹⁹ᵐTc (140 keV) on utilise un collimateur basse énergie haute résolution (LEHR/LEUHR) ; le MEGP (moyenne énergie) n'est pas indiqué ici et est cité à tort. Les sections B9/E21 indiquent correctement LEHR uniquement.",
+    "fix": "Remplacer « LEHR/MEGP » par « LEHR/LEUHR » (basse énergie haute résolution) dans la carte d'identité."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard : « Performance : Detection 93-97 % ; faux negatifs 4,7-9,8 % » et stat « 95 % » d'identification (C11) vs « >95 % » ailleurs",
+    "problem": "Légère incohérence/imprécision sur le taux d'identification : la carte d'identité et D17 donnent 93-97 %, tandis que A1, A5 et E21 annoncent « >95 % ». Ce n'est pas faux (les deux fourchettes proviennent de sources distinctes citées dans la fiche), mais la juxtaposition non explicitée peut induire en erreur le lecteur sur la valeur de référence.",
+    "fix": "Uniformiser la formulation, p.ex. « identification typiquement >95 % (taux de détection rapportés 93-97 % selon les séries) », pour lever l'ambiguïté."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [1] — Guide CNP-MN/SFMN « Ganglion sentinelle » v3.0",
+    "problem": "L'URL (https://www.cnp-mn.fr/.../2022/09/Ganglion-sentinelle-V3.0.pdf) est authentique et le contenu correspond exactement au titre cité (Groupe Oncologie SFMN/FNCLCC, v3.0). Toutefois le PDF lui-même indique en interne « Date de la dernière mise à jour : 29 03 2010 » et « ratification SFMN : 2010 » — le « 2022/09 » du chemin n'est que la date de mise en ligne. Aucune fabrication, mais le libellé « v3.0 » sans millésime peut laisser croire à une version récente.",
+    "fix": "Optionnel : préciser dans le libellé de la source que la v3.0 date de 2010 (republiée par le CNP-MN) pour éviter toute ambiguïté de fraîcheur."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [19] (ASCO 2005), [23], [24]",
+    "problem": "Ces trois sources ne sont citées que dans la section E25 (Références & liens typés) et n'apparaissent pas dans le corps argumentatif des sections A–D. Toutes sont réelles et correctement intitulées ; usage simplement minimal.",
+    "fix": "Aucune correction requise (présence en section références suffisante). Éventuellement intégrer [19] dans D18 comme jalon historique ASCO 2005."
+  }
+]
