@@ -136,7 +136,9 @@ try {
   const msgFile = path.join(os.tmpdir(), 'nucleatlas_commit.msg');
   fs.writeFileSync(msgFile, msg);
   run(`git commit -q -F "${msgFile}"`);
-  for (let k = 0; k < 3 && !pushed; k++) { try { run('git push origin main'); pushed = true; } catch (e) { /* retry */ } }
+  // pull --rebase avant push : indispensable avec plusieurs workers en parallèle
+  // (fichiers disjoints par partition -> rebase automatique sans conflit).
+  for (let k = 0; k < 4 && !pushed; k++) { try { run('git pull --rebase origin main'); } catch (e2) { /* rebase non-fatal */ } try { run('git push origin main'); pushed = true; } catch (e) { /* retry */ } }
 } catch (e) { /* commit peut échouer si rien à committer ; non bloquant */ }
 
 mark(id, 'done', `auto OK ${warnings.length}w ${major.length}maj${citStripped ? ' cit-strip' : ''}${isoFixed ? ' iso:' + isoFixed : ''}${pushed ? '' : ' PUSH-A-REFAIRE'}`);
