@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Carte d'identité (A1, identityCard, B7, E21) — énergie β⁻ max",
+    "problem": "L'article emploie deux valeurs pour l'énergie β⁻ maximale selon les sections : « 497 keV » (A1, A4, B7, B10) et « 0,498 MeV / 498 keV » (identityCard, A1 stats, E21). Les deux proviennent de sources différentes (FDA label = 498 keV/79 % ; ScienceDirect-IAEA = 497 keV/78,6 %) et désignent la même réalité physique, mais l'incohérence interne peut surprendre un lecteur attentif.",
+    "fix": "Harmoniser sur une seule valeur (p. ex. « ≈ 497–498 keV ») partout, ou préciser une fois que les deux arrondis renvoient à la même transition (différence d'arrondi entre notice FDA et IAEA)."
+  },
+  {
+    "severity": "minor",
+    "where": "A6 (tableau mises en garde) et E21/D17 — myélosuppression / lymphopénie",
+    "problem": "Coexistence de deux chiffres de lymphopénie/myélosuppression issus de cohortes distinctes sans rappel explicite à chaque occurrence : « lymphopénie G3-4 ≈ 44 % » (ERASMUS) dans A6/D17 et « myélosuppression G3-4 ≈ 5 % » (NETTER-1, thrombopénie/neutropénie) dans E21. Les deux sont exacts pour leur cohorte respective, mais la juxtaposition sans contextualisation systématique peut laisser croire à une contradiction.",
+    "fix": "Préciser à chaque mention la cohorte source : NETTER-1 (G3-4 neutropénie 1 %, thrombopénie 2 %, lymphopénie 9 %) vs ERASMUS (lymphopénie G3-4 ≈ 44 %), pour que le lecteur comprenne que ce ne sont pas des estimations concurrentes du même paramètre."
+  },
+  {
+    "severity": "major",
+    "where": "Source [29] (bibliographie) et appels [29] en §A6, §B10, §C12, §D15, §D17, §E25",
+    "problem": "Mismatch bibliographique avéré : l'URL https://pmc.ncbi.nlm.nih.gov/articles/PMC5506097/ pointe en réalité vers Sundlöv A, et al. « Individualised 177Lu-DOTATATE treatment of neuroendocrine tumours based on kidney dosimetry », Eur J Nucl Med Mol Imaging 2017 (PMID 28331954). Or la source est étiquetée « Garske-Román U, et al. ... 2018 ». Garske-Román 2018 est une publication DISTINCTE (étude prospective sur 200 patients, dosimétrie-guided). L'auteur ET l'année cités ne correspondent pas au contenu de l'URL — citation fabriquée/erronée au sens fidélité, même si l'URL est valide et soutient le claim (27-40 Gy BED sans toxicité grade 3-4, qui provient bien du papier Sundlöv).",
+    "fix": "Soit corriger le libellé en « Sundlöv A, et al. Individualised 177Lu-DOTATATE treatment of neuroendocrine tumours based on kidney dosimetry. Eur J Nucl Med Mol Imaging 2017;44(9):1480-1489 » (cohérent avec l'URL PMC5506097), soit, si l'on veut réellement citer Garske-Román 2018, remplacer l'URL par celle de la bonne publication (PMID 29752783 / EJNMMI 2018) et vérifier que les chiffres cités y figurent."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [21] (bibliographie) et appels [21] (carte d'identité A1, §B7, §D15, §D16, etc.)",
+    "problem": "Attribution institutionnelle inexacte : l'URL PMC5852188 correspond au « Manual on the proper use of lutetium-177-labeled somatostatin analogue (Lu-177-DOTA-TATE) injectable in radionuclide therapy (2nd ed.) » qui est un manuel de la JSNM (Japanese Society of Nuclear Medicine, Ann Nucl Med 2018), et non un document conjoint « IAEA / JSNM ». Le titre et le sujet sont exacts, seule la co-attribution IAEA est ajoutée à tort.",
+    "fix": "Retirer « IAEA / » du libellé de la source [21] : citer « JSNM Manual on the proper use of lutetium-177-labeled somatostatin analogue ... Ann Nucl Med 2018 ». (Le rôle de l'IAEA est couvert par la source [6], distincte.)"
+  },
+  {
+    "severity": "minor",
+    "where": "Source [32] (Radioprotection 2025) appelée en §D16 et carte d'identité pour la limite public 1 mSv/an",
+    "problem": "L'article existe bien (titre exact « Size-dependent dose estimation applied to 177Lu and 90Y-DOTATATE using ICRP Phantoms », Radioprotection 2025) et l'URL est valide, mais la vérification du corps de l'article n'a pas confirmé qu'il énonce la limite réglementaire public de 1 mSv/an ; il porte sur les S-values/dosimétrie taille-dépendante. Le rattachement précis du chiffre « 1 mSv/an » à cette source est faiblement couplé.",
+    "fix": "Conserver [32] pour la dosimétrie taille-dépendante, mais rattacher la limite public 1 mSv/an à une source réglementaire primaire explicite (ICRP 103 2007 ou Directive 2013/59/Euratom) plutôt qu'à cet article, ou vérifier que le chiffre figure bien dans le texte de [32]."
+  }
+]
