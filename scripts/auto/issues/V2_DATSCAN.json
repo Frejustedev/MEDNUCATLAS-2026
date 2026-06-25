@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A1, tableau carte d'identité — ligne « Duree d'acquisition | 30-45 min »",
+    "problem": "La carte d'identité globale (identityCard) indique « 30–45 min » pour l'acquisition, ce qui est cohérent avec la référence SFMN. Pas d'erreur factuelle ici ; vérification : conforme.",
+    "fix": "Aucune correction nécessaire — valeur conforme à la fiche étalon (SFMN 30–45 min, idéalement 45 min)."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz, question 14 (collimateur) — option de réponse correcte « Collimateur basse/moyenne énergie haute résolution (LEHR/LEUHR ou moyenne énergie) »",
+    "problem": "L'option mélange LEHR/LEUHR et moyenne énergie comme si tous réduisaient la pénétration septale. Or, sur le plan physique, c'est le collimateur MOYENNE énergie (septas plus épais) qui réduit la pénétration septale des photons de 529 keV ; un LEHR/LEUHR basse énergie ne la réduit PAS (il maximise la résolution du photopic 159 keV mais laisse passer les photons de haute énergie). La formulation peut induire l'idée erronée que le LEHR limite la pénétration septale.",
+    "fix": "Reformuler l'option/intitulé pour distinguer clairement : la résolution optimale du photopic = LEHR/LEUHR ; la réduction de la pénétration septale (photons ~529 keV) = collimateur moyenne énergie (MEGP) + correction de diffusion. La clé de réponse et l'explication devraient cibler spécifiquement le collimateur moyenne énergie pour la pénétration septale."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A6 / D15 / D16 — allaitement « >= 3 jours (EMA) à 6 jours (FDA) »",
+    "problem": "L'affirmation est exacte (RCP EMA = au moins 3 jours ; label FDA = au moins 6 jours), conforme à la fiche étalon. Point de vigilance non bloquant : le texte juxtapose les deux référentiels sans toujours rappeler lequel s'applique selon le contexte réglementaire local, mais aucune valeur n'est fausse.",
+    "fix": "Aucune correction de valeur nécessaire ; éventuellement préciser systématiquement « selon le référentiel applicable (RCP EMA vs label FDA) » pour éviter toute ambiguïté pratique."
+  },
+  {
+    "severity": "major",
+    "where": "Source [13] — EMA French product information URL: https://www.ema.europa.eu/fr/documents/product-information/datscan-epar-product-information_fr.pdf",
+    "problem": "This URL returns HTTP 404. EMA does not host the DaTSCAN SmPC at the /documents/product-information/datscan-epar-product-information_*.pdf path (both the _fr and _en variants 404). The cited SOURCE is real (DaTSCAN EMA SmPC / RCP, Annexe I), and its content (CIPR 128 dosimetry, bladder wall as critical organ ~85 µGy/MBq, effective dose 25 µSv/MBq → 4.63 mSv, thyroid blocking, breastfeeding interruption) is genuine and correctly reported — but the link is dead. [13] is one of the most heavily-cited references in the article (AMM indications, dosimetry, preparation), so the broken link is consequential.",
+    "fix": "Replace the [13] URL with a working host of the same SmPC: either the EU community register PDF already used as [14] (https://ec.europa.eu/health/documents/community-register/2022/20220203154770/anx_154770_en.pdf, verified to exist) or the eMC SmPC (https://www.medicines.org.uk/emc/product/14810/smpc, verified, ICRP-128 dosimetry confirmed). Keep the citation text but point it to a live SmPC URL."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [22] title — 'Safety, biodistribution and radiation dosimetry of [123I]ioflupane in healthy volunteers — EJNMMI Research 2023'",
+    "problem": "The actual article title specifies 'in healthy CHINESE volunteers' (EJNMMI Research 2023, PMC10082142). The source label drops 'Chinese', making the cohort sound generic. The article body (D15) correctly notes the Chinese-vs-European comparison, so the science is faithful — only the reference-list title is slightly imprecise. URL is valid and content matches.",
+    "fix": "Amend the [22] source title to '...radiation dosimetry of [123I]ioflupane in healthy Chinese volunteers' to match the published title exactly."
+  },
+  {
+    "severity": "minor",
+    "where": "Section numbering E22 → E25 (sections E23 and E24 absent from prose)",
+    "problem": "The section list skips from E22 to E25. This is intentional: E22 explicitly states '(Quiz interactif §23 et fiche de révision §24 : fonctionnalités de la plateforme à activer)', i.e. 23/24 are interactive platform features rather than written sections. Flagged only for awareness — not a content gap, and A→E coverage plus the carte d'identité (A1 + 14-field identityCard) are complete.",
+    "fix": "No change needed; optionally confirm the platform renders §23/§24 widgets so the numbering gap is not visible to readers as missing content."
+  }
+]
