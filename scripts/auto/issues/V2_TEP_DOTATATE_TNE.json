@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section B9 - Instrument, contrôle qualité & protocole d'acquisition, point (b) Protocole d'acquisition",
+    "problem": "Mot garbled/inexistant : « 2–4 min par pas de lit selon le statoreur et l'IMC ». « statoreur » n'est pas un terme français de médecine nucléaire ; il s'agit manifestement d'une coquille (probablement « scanner/appareil » ou « statut »). N'altère pas une valeur médicale mais nuit à la crédibilité d'un texte de référence.",
+    "fix": "Remplacer « selon le statoreur et l'IMC » par « selon l'appareil/le constructeur et l'IMC » (le temps par pas de lit dépend de la sensibilité de la caméra TEP et de la corpulence du patient)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A3 (liste) et A4/B7 : ordre d'affinité DOTATATE > DOTATOC > DOTANOC pour SSTR2",
+    "problem": "Le texte affirme un ordre décroissant d'affinité SSTR2 « DOTATATE > DOTATOC > DOTANOC », alors que les valeurs IC50 citées dans le même document (DOTATATE 0,2 nM ; DOTATOC 2,5 nM ; DOTANOC 1,9 nM) impliquent en réalité DOTANOC (1,9) > DOTATOC (2,5) pour le SSTR2 (IC50 plus bas = affinité plus forte). Incohérence interne reproduite depuis la fiche étalon. Le DOTATATE reste bien le plus affin, ce qui est l'essentiel.",
+    "fix": "Soit énoncer l'ordre comme « DOTATATE >> DOTANOC ≈ DOTATOC pour SSTR2 » conformément aux IC50, soit retirer le classement DOTATOC/DOTANOC et conserver seulement la primauté du DOTATATE, en précisant que le DOTANOC a un spectre plus large (SSTR2/3/5)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D15 - Dosimétrie, exemple à 185 MBq (paroi vésicale ≈ 23,1 mGy, reins ≈ 17,0 mGy, rate ≈ 52,2 mGy)",
+    "problem": "Les doses absorbées par organe sont exprimées en mGy alors que les coefficients sources (0,125 ; 0,0921 ; 0,282) sont donnés en mSv/MBq dans le même tableau ; pour le 68Ga (photons/positons, facteur de pondération radiologique = 1) mGy et mSv sont numériquement égaux, donc l'arithmétique est exacte (×185), mais le mélange mGy (dose absorbée) / mSv (dose équivalente) dans la même section peut induire une confusion. Acceptable mais à harmoniser.",
+    "fix": "Uniformiser : présenter les doses absorbées par organe en mGy avec les coefficients correspondants en mGy/MBq, et réserver le mSv à la dose efficace corps entier, en rappelant que pour le 68Ga 1 mGy ≈ 1 mSv (w_R = 1)."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [12] (PMC9938218) et [41] (PMC11178651)",
+    "problem": "Ces deux references utilisent l'hote non canonique www.ncbi.nlm.nih.gov/pmc/articles/... qui renvoie un 301 vers pmc.ncbi.nlm.nih.gov/articles/... Les URL resolvent correctement (verifie pour [12]) ; aucune fabrication, simple incoherence de forme par rapport aux autres sources PMC qui emploient deja l'hote canonique.",
+    "fix": "Harmoniser sur la forme canonique https://pmc.ncbi.nlm.nih.gov/articles/PMCxxxxxxx/ pour [12] et [41]. Purement cosmetique, sans impact sur la validite."
+  }
+]
