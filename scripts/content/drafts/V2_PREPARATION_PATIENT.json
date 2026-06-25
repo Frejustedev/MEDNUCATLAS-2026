@@ -1,0 +1,1304 @@
+{
+  "id": "V2_PREPARATION_PATIENT",
+  "type": "autre",
+  "cat": "preparation",
+  "catLabel": "Préparation Patient",
+  "title": "Bien préparer son examen de médecine nucléaire",
+  "difficulty": "fondamental",
+  "tags": [
+    "préparation",
+    "jeûne",
+    "glycémie",
+    "grossesse",
+    "allaitement",
+    "radioprotection",
+    "interférences médicamenteuses",
+    "hydratation",
+    "blocage thyroïdien",
+    "dosimétrie",
+    "ALARA",
+    "patient"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 (Boellaard et al., Eur J Nucl Med Mol Imaging 2015;42:328)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/",
+      "verified": true
+    },
+    {
+      "title": "[18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0 (Boellaard et al., 2025)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065",
+      "verified": true
+    },
+    {
+      "title": "18F-FDG PET and PET/CT Patient Preparation: A Review of the Literature (Surasi et al., J Nucl Med Technol 2014;42:5)",
+      "url": "https://tech.snmjournals.org/content/42/1/5",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard for Bone Scintigraphy 4.0 (Bartel et al., J Nucl Med Technol 2018;46:398)",
+      "url": "https://tech.snmjournals.org/content/46/4/398",
+      "verified": true
+    },
+    {
+      "title": "The EANM practice guidelines for bone scintigraphy (Van den Wyngaert et al., Eur J Nucl Med Mol Imaging 2016;43:1723)",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3415-4",
+      "verified": true
+    },
+    {
+      "title": "EANM Paediatric Dosage Card",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf",
+      "verified": true
+    },
+    {
+      "title": "Duration of Breastfeeding Interruption in Nuclear Medicine Procedures (Naik et al., J Nucl Med Technol 2023;51:239)",
+      "url": "https://tech.snmjournals.org/content/51/3/239",
+      "verified": true
+    },
+    {
+      "title": "Excretion of radionuclides in human breast milk after nuclear medicine examinations — biokinetic and dosimetric data and recommendations on breastfeeding interruption (Leide-Svegborn et al., Eur J Nucl Med Mol Imaging 2016;43:808)",
+      "url": "https://link.springer.com/article/10.1007/s00259-015-3286-0",
+      "verified": true
+    },
+    {
+      "title": "Technetium Tc 99m Sestamibi — Drugs and Lactation Database (LactMed)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501581/",
+      "verified": true
+    },
+    {
+      "title": "Sodium Iodide I 123 — Drugs and Lactation Database (LactMed)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501558/",
+      "verified": true
+    },
+    {
+      "title": "ASNC imaging guidelines for SPECT nuclear cardiology procedures: Stress, protocols, and tracers (Henzlova et al., 2016)",
+      "url": "https://www.asnc.org/wp-content/uploads/2024/06/ASNC-SPECT-ProtocolsTracers-Guidelines2016.pdf",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline for SSTR PET: Imaging Neuroendocrine Tumors (J Nucl Med 2023;64:204)",
+      "url": "https://jnm.snmjournals.org/content/64/2/204",
+      "verified": true
+    },
+    {
+      "title": "The SNMMI Practice Guideline for Therapy of Thyroid Disease with 131I 3.0 (Silberstein et al., J Nucl Med 2012;53:1633)",
+      "url": "https://jnm.snmjournals.org/content/53/10/1633",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline for Nuclear Medicine Evaluation and Therapy of Differentiated Thyroid Cancer (J Nucl Med 2022;63:15N)",
+      "url": "https://jnm.snmjournals.org/content/63/6/15N",
+      "verified": true
+    },
+    {
+      "title": "Low-Iodine Diet of 4 Days Is Sufficient Preparation for 131I Therapy in Differentiated Thyroid Cancer Patients",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8764339/",
+      "verified": true
+    },
+    {
+      "title": "The SNMMI and EANM practice guideline for renal scintigraphy in adults (Blaufox et al., 2018)",
+      "url": "https://nephroscan.com/wp-content/uploads/2022/02/2018-SNMMI-EANM-DMSA-adult-guidelines.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiation protection of pregnant women in nuclear medicine (IAEA RPOP)",
+      "url": "https://www.iaea.org/resources/rpop/health-professionals/nuclear-medicine/pregnant-women",
+      "verified": true
+    },
+    {
+      "title": "Nuclear Imaging of a Pregnant Patient: Should We Perform Nuclear Medicine Procedures During Pregnancy?",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3590960/",
+      "verified": true
+    },
+    {
+      "title": "Radiobiological risks in terms of effective dose and organ dose from 18F-FDG whole-body PET/CT procedures",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8459160/",
+      "verified": true
+    },
+    {
+      "title": "Guide pour la rédaction de protocoles pour la TEP au [18F]-FDG v2.0 (CNP-MN / SFMN)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/06/FDG-V2.0.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radioactive Iodine — American Thyroid Association",
+      "url": "https://www.thyroid.org/radioactive-iodine/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline on Pediatric 18F-FDG PET/CT for Oncology 1.0",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8679588/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline for Brain [18F]FDG PET Imaging, Version 2.0 (J Nucl Med 2024)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2024/SNMMI_EANM%20Brain%20F18%20FDG%20PET%20Imaging%202.0%20JNM.pdf",
+      "verified": true
+    },
+    {
+      "title": "EANM procedure guidelines for brain PET imaging using [18F]FDG, version 3 (Guedj et al., 2021)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8803744/",
+      "verified": true
+    },
+    {
+      "title": "PSMA PET/CT: joint EANM procedure guideline/SNMMI procedure standard for prostate cancer imaging 2.0 (Fendler et al., 2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10027805/",
+      "verified": true
+    },
+    {
+      "title": "EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT: 2015 revision",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4589547/",
+      "verified": true
+    },
+    {
+      "title": "BNMS Bone Scintigraphy Guideline (CF v14)",
+      "url": "https://cdn.ymaws.com/www.bnms.org.uk/resource/resmgr/guidelines/bnms_bone_scintigraphy.cf_14.pdf",
+      "verified": true
+    },
+    {
+      "title": "EANM practice guideline/SNMMI procedure standard for RAIU and thyroid scintigraphy",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31392371/",
+      "verified": true
+    },
+    {
+      "title": "DaTscan (Ioflupane I-123 Injection) FDA prescribing information / label",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2015/022454Orig1s004lbl.pdf",
+      "verified": true
+    },
+    {
+      "title": "EANM practice guidelines for lymphoscintigraphy and sentinel lymph node biopsy in melanoma (Bluemel et al., Eur J Nucl Med Mol Imaging 2015;42:1750)",
+      "url": "https://link.springer.com/article/10.1007/s00259-015-3135-1",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson et al., Ann ICRP 2015)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms (J Nucl Med 2021;62:1805)",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805",
+      "verified": true
+    },
+    {
+      "title": "Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy (Toxics 2023;11(10):814)",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 106: Radiation Dose to Patients from Radiopharmaceuticals (Addendum 3 to Publication 53)",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+106",
+      "verified": true
+    },
+    {
+      "title": "Health Physics Society — Nuclear Medicine and the Pregnant Patient Q&A",
+      "url": "https://hps.org/physicians/nuclear_medicine_pregnant_patient_qa/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Fact Sheet — Guidelines for Patients Receiving Radioiodine I-131 Treatment",
+      "url": "https://snmmi.org/Patients/Patients/Fact-Sheets/Guidelines-for-Patients-Receiving-Radioiodine-I-131-Treatment.aspx",
+      "verified": true
+    },
+    {
+      "title": "SFMN / CNP-MN — Guide pour l'information des patients en médecine nucléaire (v2.0, 2022)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Information-du-patient-V2.0.pdf",
+      "verified": true
+    },
+    {
+      "title": "EANM/EARL harmonization strategies in PET quantification: from daily practice to multicentre oncological studies (Eur J Nucl Med Mol Imaging 2017)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5541084/",
+      "verified": true
+    },
+    {
+      "title": "EARL Accreditation Manual Version 4.2 (May 2023)",
+      "url": "https://earl.eanm.org/wp-content/uploads/2023/05/EARL_Manual_4.2.pdf",
+      "verified": true
+    },
+    {
+      "title": "IRSN/ASNR — Niveaux de référence diagnostiques (NRD) en médecine nucléaire (France)",
+      "url": "https://nrd.asnr.fr/",
+      "verified": true
+    }
+  ],
+  "lead": "Bien préparer son examen conditionne autant la qualité des images que votre sécurité et votre confort. Quelques gestes simples, demandés à l'avance par le service, permettent au médecin de voir nettement ce qu'il cherche et d'éviter de refaire l'examen. Selon l'examen, on vous demandera par exemple d'être à jeun, d'arrêter momentanément certaines boissons ou certains médicaments, ou de bien vous hydrater. Il est aussi essentiel de signaler une grossesse, un allaitement ou un diabète. Ce guide rassemble les consignes générales, toujours à compléter par les instructions précises qui vous seront remises.",
+  "identityCard": [
+    {
+      "icon": "clock",
+      "label": "Jeûne TEP-FDG",
+      "value": "≥ 4 h (eau plate autorisée)"
+    },
+    {
+      "icon": "droplets",
+      "label": "Glycémie avant FDG",
+      "value": "< 11 mmol/L (200 mg/dL) ; idéal < 7,8"
+    },
+    {
+      "icon": "droplets",
+      "label": "Hydratation FDG",
+      "value": "≈ 1 L d'eau dans les 2 h précédentes"
+    },
+    {
+      "icon": "clock",
+      "label": "Délai injection → images (FDG)",
+      "value": "60 min (55–75 min)"
+    },
+    {
+      "icon": "activity",
+      "label": "Repos avant FDG",
+      "value": "Pas d'effort intense ≥ 6 h"
+    },
+    {
+      "icon": "alert",
+      "label": "Caféine avant stress cardiaque",
+      "value": "Arrêt ≥ 12 h (théophylline ≥ 48 h)"
+    },
+    {
+      "icon": "shield",
+      "label": "Blocage thyroïdien (DaTSCAN)",
+      "value": "Iode/perchlorate ≥ 1 h avant"
+    },
+    {
+      "icon": "baby",
+      "label": "Seuil de risque fœtal",
+      "value": "Effets déterministes ≥ 100 mGy"
+    },
+    {
+      "icon": "baby",
+      "label": "Allaitement & 99mTc",
+      "value": "Souvent aucune interruption ; iode = arrêt"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose efficace TEP-FDG",
+      "value": "≈ 0,019 mSv/MBq (≈ 7 mSv pour 370 MBq)"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose efficace 99mTc-MDP (os)",
+      "value": "≈ 0,0057 mSv/MBq (≈ 4 mSv pour 740 MBq)"
+    },
+    {
+      "icon": "list",
+      "label": "Examens sans jeûne",
+      "value": "Scinti osseuse, TEP-PSMA, rénale"
+    },
+    {
+      "icon": "radiation",
+      "label": "Contrainte de dose au public",
+      "value": "1 mSv/an (fœtus < 1 mSv)"
+    },
+    {
+      "icon": "stetho",
+      "label": "À déclarer toujours",
+      "value": "Grossesse, allaitement, diabète, poids"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "examen",
+      "label": "TEP au 18F-FDG"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse (99mTc-MDP)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie myocardique de perfusion (SPECT)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie thyroïdienne (123I / 99mTc)"
+    },
+    {
+      "type": "examen",
+      "label": "TEP à la PSMA"
+    },
+    {
+      "type": "examen",
+      "label": "DaTSCAN (123I-ioflupane)"
+    },
+    {
+      "type": "examen",
+      "label": "Néphroscintigraphie (MAG3 / captopril)"
+    },
+    {
+      "type": "examen",
+      "label": "Ganglion sentinelle (lymphoscintigraphie)"
+    },
+    {
+      "type": "traceur",
+      "label": "18F-FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "131I-iodure"
+    },
+    {
+      "type": "theranostique",
+      "label": "Traitement par 131I (cancer thyroïdien)"
+    },
+    {
+      "type": "score",
+      "label": "Niveaux de référence diagnostiques (NRD)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Pourquoi un jeûne d'au moins 4 h est-il exigé avant une TEP au 18F-FDG ?",
+      "options": [
+        "Pour vider la vessie",
+        "Pour obtenir une glycémie et une insulinémie basses",
+        "Pour bloquer la thyroïde",
+        "Pour réduire la dose au scanner"
+      ],
+      "answer": 1,
+      "explanation": "Le 18F-FDG est un analogue du glucose : l'insuline, sécrétée après un repas, détourne le traceur vers le muscle et le myocarde. Un jeûne ≥ 4 h (eau plate autorisée) maintient une euglycémie et une insulinémie basse [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel est le seuil de glycémie au-delà duquel une TEP-FDG est généralement reportée ?",
+      "options": [
+        "≥ 5,5 mmol/L (100 mg/dL)",
+        "≥ 7 mmol/L (126 mg/dL)",
+        "≥ 11,1 mmol/L (200 mg/dL)",
+        "≥ 16,5 mmol/L (300 mg/dL)"
+      ],
+      "answer": 2,
+      "explanation": "La glycémie est mesurée avant injection : l'examen reste acceptable si elle est < 200 mg/dL (11,1 mmol/L) ; la cible optimale est < 140 mg/dL (7,8 mmol/L) [1][3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel délai entre injection de 18F-FDG et début de l'acquisition est recommandé ?",
+      "options": [
+        "15 min",
+        "30 min",
+        "60 min (plage 55–75 min)",
+        "120 min"
+      ],
+      "answer": 2,
+      "explanation": "Le délai de captation (uptake) recommandé est de 60 min, avec une plage acceptable de 55–75 min, et une reproductibilité de ± 10 min pour les examens de suivi [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Combien de temps faut-il éviter un effort physique intense avant une TEP-FDG ?",
+      "options": [
+        "1 h",
+        "≥ 6 h (idéalement 24 h)",
+        "Aucune restriction",
+        "48 h"
+      ],
+      "answer": 1,
+      "explanation": "L'exercice intense provoque une captation musculaire du FDG : il faut l'éviter ≥ 6 h avant (idéalement 24 h), et rester au calme, au chaud, sans parler ni mâcher pendant la captation [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Avant un test de stress cardiaque pharmacologique (dipyridamole, adénosine, regadénoson), que doit éviter le patient ?",
+      "options": [
+        "Le sel",
+        "La caféine et les méthylxanthines (≥ 12 h)",
+        "Les laitages",
+        "L'eau"
+      ],
+      "answer": 1,
+      "explanation": "La caféine bloque les récepteurs A2A de l'adénosine et invalide le vasodilatateur : abstinence caféine ≥ 12 h (café, thé, sodas, chocolat) et arrêt des méthylxanthines de longue durée ≥ 5 demi-vies [11][26].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle préparation diététique est-elle requise pour une scintigraphie osseuse au 99mTc-MDP ?",
+      "options": [
+        "Jeûne strict 6 h",
+        "Régime pauvre en iode",
+        "Aucun jeûne ; hydratation et vidange vésicale",
+        "Arrêt de la caféine"
+      ],
+      "answer": 2,
+      "explanation": "La scintigraphie osseuse ne nécessite aucun jeûne. L'hydratation abondante et la vidange vésicale juste avant l'acquisition tardive (2–4 h) réduisent la dose vésicale et améliorent le contraste osseux [4][5].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle préparation spécifique est obligatoire avant un DaTSCAN au 123I-ioflupane ?",
+      "options": [
+        "Jeûne de 12 h",
+        "Blocage thyroïdien (iodure ou perchlorate de potassium)",
+        "Régime sans sel",
+        "Arrêt des bêta-bloquants"
+      ],
+      "answer": 1,
+      "explanation": "Le traceur contient de l'iode libre : un blocage thyroïdien (Lugol/KI ou perchlorate de potassium 400 mg) est administré au moins 1 h avant pour protéger la thyroïde [29].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Faut-il être à jeun pour une TEP à la PSMA (cancer de la prostate) ?",
+      "options": [
+        "Oui, 6 h",
+        "Non, pas de jeûne requis",
+        "Oui, 4 h sans eau",
+        "Seulement chez le diabétique"
+      ],
+      "answer": 1,
+      "explanation": "La TEP-PSMA ne requiert pas de jeûne ; une hydratation suffisante est encouragée et un diurétique (furosémide 20 mg IV) peut réduire l'activité urinaire vésicale [25].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel seuil de dose fœtale ne justifie jamais une interruption de grossesse selon la CIPR 84 ?",
+      "options": [
+        "1 mGy",
+        "10 mGy",
+        "100 mGy",
+        "500 mGy"
+      ],
+      "answer": 2,
+      "explanation": "Selon la CIPR 84, une dose fœtale < 100 mGy ne justifie jamais une interruption de grossesse ; les examens diagnostiques courants délivrent des doses très inférieures à ce seuil [17][18].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Pour la majorité des traceurs au 99mTc (MAG3, DTPA, MDP, sestamibi), quelle est la conduite vis-à-vis de l'allaitement ?",
+      "options": [
+        "Arrêt définitif",
+        "Interruption de 3 jours",
+        "Souvent aucune interruption nécessaire",
+        "Interruption de 2 semaines"
+      ],
+      "answer": 2,
+      "explanation": "La plupart des traceurs au 99mTc n'imposent aucune interruption de l'allaitement selon la CIPR, le seuil de reprise étant une dose à l'enfant < 1 mSv ; par prudence, certaines autorités recommandent 12 h [7][8][34].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle conduite vis-à-vis de l'allaitement après administration d'iode radioactif (123I ou 131I) ?",
+      "options": [
+        "Aucune interruption",
+        "Interruption 12 h",
+        "Arrêt complet / définitif de l'allaitement en cours",
+        "Tirer le lait 2 h"
+      ],
+      "answer": 2,
+      "explanation": "L'iode radioactif passe massivement dans le lait : 123I-iodure impose ~3–4 jours d'arrêt et le 131I un arrêt complet/définitif de la lactation en cours [8][10][13].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi les sels d'iode stable et l'amiodarone doivent-ils être arrêtés avant une scintigraphie thyroïdienne ou un traitement par 131I ?",
+      "options": [
+        "Ils accélèrent l'élimination",
+        "Ils saturent le captage thyroïdien de l'iode et faussent l'examen",
+        "Ils provoquent des allergies",
+        "Ils augmentent la dose au foie"
+      ],
+      "answer": 1,
+      "explanation": "L'iode stable (contraste iodé, amiodarone, apport alimentaire) entre en compétition avec l'iode radioactif et bloque sa captation : un régime pauvre en iode 1–2 semaines et l'arrêt des sources iodées sont nécessaires [14][15][28].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel objectif de TSH cherche-t-on à atteindre avant un traitement par 131I d'un cancer thyroïdien différencié ?",
+      "options": [
+        "TSH < 0,1 mUI/L",
+        "TSH normale",
+        "TSH > 30 mUI/L",
+        "TSH > 100 mUI/L"
+      ],
+      "answer": 2,
+      "explanation": "Une TSH > 30 mUI/L maximise la captation de l'iode par le tissu thyroïdien résiduel, obtenue par sevrage hormonal (3–4 semaines) ou par rhTSH (Thyrogen 0,9 mg IM, 2 jours) [14].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est approximativement la dose efficace d'une TEP-FDG corps entier de 370 MBq (hors scanner) ?",
+      "options": [
+        "≈ 0,7 mSv",
+        "≈ 7 mSv",
+        "≈ 70 mSv",
+        "≈ 0,07 mSv"
+      ],
+      "answer": 1,
+      "explanation": "Le coefficient du 18F-FDG est d'environ 0,019 mSv/MBq (CIPR 128) : une injection de 370 MBq délivre ≈ 7 mSv pour la composante traceur, à laquelle s'ajoute la dose du scanner [19][31][32].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est le rôle de l'hydratation et des mictions fréquentes après un examen de médecine nucléaire ?",
+      "options": [
+        "Améliorer le goût du traceur",
+        "Accélérer l'élimination urinaire et réduire la dose à la vessie",
+        "Augmenter la captation tumorale",
+        "Prévenir une allergie"
+      ],
+      "answer": 1,
+      "explanation": "La vessie est l'organe critique de nombreux traceurs (FDG, MDP) : boire abondamment et uriner souvent accélère l'élimination, réduit la dose vésicale et limite les artefacts, conformément au principe ALARA [4][5].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Une glycémie élevée chez un diabétique mal équilibré constitue-t-elle une contre-indication absolue à la TEP-FDG ?",
+      "options": [
+        "Oui, absolue",
+        "Non, contre-indication relative à optimiser",
+        "Oui si > 7 mmol/L",
+        "Seulement chez l'enfant"
+      ],
+      "answer": 1,
+      "explanation": "Le diabète mal équilibré est une contre-indication relative, non absolue : l'interprétation est faite sous réserve si la glycémie reste élevée, et la programmation est adaptée (fin de matinée, poursuite des antidiabétiques oraux) [1].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle information le patient doit-il systématiquement communiquer au service avant l'injection ?",
+      "options": [
+        "Sa profession",
+        "Une grossesse, un allaitement, un diabète et son poids",
+        "Son groupe sanguin",
+        "Ses loisirs"
+      ],
+      "answer": 1,
+      "explanation": "Le recueil systématique du statut grossesse/allaitement, du diabète, de la fonction rénale, des traitements et du poids (calcul d'activité, carte de dosage pédiatrique EANM) conditionne la sécurité et la justification de l'acte [6][37].",
+      "difficulty": "facile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "TEP-FDG : jeûne ≥ 4 h (eau plate autorisée), glycémie mesurée avant injection, acceptable si < 11,1 mmol/L (200 mg/dL), idéale < 7,8 mmol/L (140 mg/dL) [1][3].",
+      "FDG : hydratation ≈ 1 L dans les 2 h, pas d'effort ≥ 6 h, captation au repos 60 min (55–75 min) [1].",
+      "Pas de jeûne pour la scintigraphie osseuse, la TEP-PSMA ni la scintigraphie rénale ; hydratation et vidange vésicale réduisent la dose à la vessie [4][5][25].",
+      "Stress cardiaque vasodilatateur : abstinence caféine ≥ 12 h, théophylline ≥ 48 h (blocage des récepteurs A2A de l'adénosine) [11][26].",
+      "Blocage thyroïdien obligatoire avant DaTSCAN (123I) et avant l'iode radioactif ; régime pauvre en iode 1–2 semaines pour la thyroïde [14][29].",
+      "Grossesse : déclaration systématique ; aucune dose fœtale diagnostique courante n'atteint le seuil de 100 mGy de la CIPR 84 [17][18].",
+      "Allaitement : la plupart des 99mTc sans interruption (reprise quand dose enfant < 1 mSv), 12 h pour certains, arrêt pour l'iode radioactif [7][8][34].",
+      "Dose efficace de référence : 18F-FDG ≈ 0,019 mSv/MBq (≈ 7 mSv pour 370 MBq) ; 99mTc-MDP ≈ 0,0057 mSv/MBq (CIPR 128) [19][31]."
+    ],
+    "protocol": [
+      "Vérifier identité, indication/justification, antériorités d'imagerie, poids et taille.",
+      "Dépister grossesse/allaitement et diabète ; recueillir fonction rénale, allergies et traitements en cours.",
+      "Mesurer la glycémie avant tout 18F-FDG (méthode validée) ; reprogrammer si ≥ 200 mg/dL.",
+      "Programmer l'arrêt des interférents selon l'examen : caféine (cardiaque), iode (thyroïde/DaTSCAN), analogues de la somatostatine, IEC (captopril).",
+      "Administrer le blocage thyroïdien quand l'examen utilise de l'iode libre (DaTSCAN, MIBG) ; assurer l'hydratation avant injection.",
+      "Captation au calme pour le FDG (60 min), puis vidange vésicale avant toute acquisition pelvienne.",
+      "Remettre en sortie des consignes écrites de radioprotection (hydratation, mictions, distance avec enfants et femmes enceintes)."
+    ],
+    "scores": [
+      "Glycémie FDG : acceptable < 11,1 mmol/L (200 mg/dL), optimale < 7,8 mmol/L (140 mg/dL) [1][3].",
+      "Délai de captation FDG : 60 min cible, plage 55–75 min, reproductibilité ± 10 min [1].",
+      "Seuil de risque fœtal (CIPR 84) : effets déterministes ≥ 100 mGy ; interruption jamais justifiée en dessous [17].",
+      "Seuil de reprise de l'allaitement : dose à l'enfant < 1 mSv (CIPR 106) ; contrainte au public 1 mSv/an [34]."
+    ],
+    "pitfalls": [
+      "Boissons sucrées ou perfusion glucosée avant un FDG : captation parasite musculaire/myocardique — remplacer par du sérum physiologique [1].",
+      "Effort physique récent ou parole/mastication pendant la captation : fixation musculaire et des graisses brunes faussant la lecture [1].",
+      "Caféine non arrêtée avant un stress vasodilatateur : test invalidé (blocage de l'adénosine) [26].",
+      "Sources iodées (contraste, amiodarone, alimentation) non arrêtées : saturation thyroïdienne, faux négatifs [14][28].",
+      "Oublier de déclarer grossesse/allaitement : examen réalisé sans optimisation ni précaution adaptée [17].",
+      "Vessie non vidée avant acquisition pelvienne : dose vésicale accrue et lésions de voisinage masquées [4]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert la préparation ?",
+        "text": "La **médecine nucléaire** utilise un produit très faiblement radioactif, qui se fixe sur l'organe ou la zone que votre médecin souhaite examiner. Une caméra repère ensuite ce produit pour créer des images du **fonctionnement** de votre corps. Bien vous préparer a un but simple : obtenir des **images les plus nettes possibles** tout en assurant votre **confort** et votre **sécurité**. Selon l'examen, on vous demandera par exemple de **ne pas manger pendant quelques heures**, de **boire de l'eau**, de **vous reposer**, ou d'**éviter le café**. Ces consignes ne sont pas les mêmes pour tous les examens : c'est pourquoi le service qui vous reçoit vous remettra des **instructions personnalisées** à suivre. Ce guide donne les grands principes ; les consignes précises de votre service restent toujours la référence.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le réflexe qui change tout",
+            "text": "Lisez attentivement la convocation et les consignes que le service vous a remises, et suivez-les à la lettre. En cas de doute (un médicament à prendre ou pas, l'heure du dernier repas, un examen récent), appelez le service avant le jour J : un simple coup de fil évite parfois de devoir reprogrammer l'examen."
+          }
+        ]
+      },
+      {
+        "title": "Comment bien se préparer et comment ça se passe",
+        "text": "Le jour de l'examen, **présentez-vous à l'heure indiquée** et apportez votre **ordonnance, vos résultats et vos imageries récentes** (radios, scanners, IRM, prises de sang). Signalez vos **traitements habituels** : on vous précisera lesquels poursuivre ou suspendre. Pensez aussi à votre **carnet de questions**. Pour la plupart des examens, le produit est **injecté dans une veine du bras** ; parfois il est avalé ou inhalé. Ensuite, un **temps d'attente** est souvent nécessaire pour laisser le produit se mettre en place : vous pouvez généralement patienter au calme. Pendant ce temps, on vous demandera souvent de **bien boire** et d'**aller uriner régulièrement**, deux gestes simples qui améliorent les images et aident votre corps à éliminer le produit. Au moment des images, vous restez **allongé**, et la caméra passe au-dessus de vous : l'examen est **indolore** et vous n'êtes pas enfermé dans un tunnel étroit comme à l'IRM.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Manger, boire, ou rester à jeun ?",
+            "text": "Cela dépend de l'examen. Certains demandent de ne rien manger pendant quelques heures avant ; d'autres ne nécessitent aucun jeûne et vous pouvez manger normalement. Boire de l'eau plate est presque toujours autorisé et même encouragé. Fiez-vous aux consignes écrites de votre service : si rien n'est précisé, n'hésitez pas à demander."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce sans danger ? Grossesse et allaitement",
+        "text": "La quantité de produit radioactif utilisée est **très faible** et son exposition reste **comparable à celle d'autres examens d'imagerie courants**. Ce n'est **pas un produit de contraste iodé** : les réactions allergiques sont exceptionnelles et l'injection ne provoque habituellement **aucun effet secondaire**. Le produit **disparaît naturellement** de votre corps en quelques heures à un jour, d'autant plus vite que vous buvez bien. Vous pouvez ensuite, dans la plupart des cas, reprendre une vie normale. Par précaution, prévenez **toujours** l'équipe si vous êtes **enceinte, susceptible de l'être, ou si vous allaitez** : selon l'examen, l'équipe pourra reporter le rendez-vous, l'adapter, ou vous indiquer une courte pause de l'allaitement. En sortant, on vous remettra des **consignes simples** (par exemple éviter quelques heures le contact rapproché avec les jeunes enfants et les femmes enceintes). L'équipe est là pour répondre à toutes vos questions.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "À signaler avant l'examen",
+            "text": "Prévenez l'équipe si vous êtes enceinte ou pensez l'être, si vous allaitez, si vous êtes diabétique, ou si vous avez reçu récemment un produit de contraste iodé ou un examen utilisant de l'iode. Ces informations permettent d'adapter ou de reprogrammer l'examen en toute sécurité, sans jamais vous mettre en difficulté."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : une préparation qui conditionne la qualité de l'examen",
+        "text": "La fiabilité d'un examen de médecine nucléaire dépend largement de la **préparation du patient**, que le médecin adresseur peut grandement faciliter. Quelques points méritent votre attention au moment de la demande : **dépistage d'une grossesse ou d'un allaitement**, statut **diabétique** (pour une TEP au FDG), **traitements en cours** susceptibles d'interférer (par exemple la caféine et les méthylxanthines avant une scintigraphie myocardique de stress, les sources d'iode avant une exploration thyroïdienne, les analogues de la somatostatine avant une TEP des tumeurs neuro-endocrines), ainsi que les **imageries et examens iodés récents**. Anticiper ces éléments dès la prescription évite des examens non contributifs ou reprogrammés. Pensez aussi à transmettre la **question clinique précise**, le diagnostic et les antériorités d'imagerie : cela oriente le protocole et l'interprétation.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Ce qu'on vous demandera de préciser",
+            "text": "Indication et question clinique, antécédents pertinents (diabète, insuffisance rénale, allergies), traitements en cours, statut grossesse/allaitement, et imageries antérieures. Un dossier complet permet au service de définir la bonne préparation et, au besoin, de contacter le patient en amont."
+          }
+        ]
+      },
+      {
+        "title": "La démarche : des consignes adaptées à chaque examen",
+        "text": "Il n'existe pas de préparation unique : chaque examen a ses exigences propres, déterminées par la **cible biologique** du traceur. Certaines explorations imposent un **jeûne** et un contrôle métabolique (notamment la TEP au FDG, où une glycémie maîtrisée et un repos préalable conditionnent la qualité), tandis que d'autres ne nécessitent **aucun jeûne** (scintigraphie osseuse, par exemple). Certains examens requièrent l'**arrêt préalable d'interférents** : caféine et méthylxanthines avant un stress pharmacologique cardiaque, sources d'iode avant une scintigraphie thyroïdienne, ou encore un **blocage thyroïdien** avant les examens à l'iode-123. À cela s'ajoutent des consignes transversales : **hydratation et mictions fréquentes** pour accélérer l'élimination urinaire et réduire l'irradiation vésicale, et **dépistage systématique** de la grossesse et de l'allaitement. C'est le service de médecine nucléaire qui fixe ces consignes : il remet au patient des **instructions écrites personnalisées**, que vos consignes ne doivent pas contredire mais relayer.",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma illustrant les principes de radioprotection : temps, distance et écran, appliqués après un examen de médecine nucléaire",
+        "figureCaption": "La préparation et les consignes de sortie reposent sur le principe d'optimisation (ALARA) : maintenir l'exposition aussi basse que raisonnablement possible tout en garantissant l'information diagnostique."
+      },
+      {
+        "title": "L'apport de la médecine nucléaire et le rôle de l'adresseur",
+        "text": "Bien préparé, l'examen offre une **imagerie fonctionnelle** difficile à obtenir autrement : il visualise un processus métabolique, une fixation ou un flux, et non seulement l'anatomie. Le rôle de l'adresseur est double : **justifier l'indication** (principe de justification) et **transmettre les informations** qui permettent au service d'optimiser la préparation et le protocole. Concernant la **grossesse**, retenez qu'aucun examen diagnostique courant n'atteint le seuil justifiant une interruption de grossesse, mais que la déclaration précoce du statut permet d'optimiser ou de différer l'acte ; les examens à l'iode font l'objet de précautions particulières. Pour l'**allaitement**, la plupart des examens autorisent sa poursuite, certains imposent une courte interruption, et les examens à l'iode peuvent imposer un arrêt : le service précise la conduite au cas par cas. En pratique, rassurer le patient en amont et l'inviter à bien suivre les consignes du service sont les meilleurs gages d'un examen réussi.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez en médecine nucléaire avec un dossier complet pour garantir un examen contributif du premier coup : précisez la **question clinique**, le **statut grossesse/allaitement**, le **diabète** éventuel, les **traitements en cours** (caféine avant un stress cardiaque, iode avant une exploration thyroïdienne, analogues de la somatostatine, IEC/ARA II selon l'examen) et les **imageries/examens iodés récents**, en joignant les antériorités. Le service définit alors la préparation adaptée — jeûne et contrôle glycémique si besoin, arrêt d'interférents, blocage thyroïdien, hydratation — et remet au patient des consignes écrites personnalisées. Anticiper ces éléments évite les reprogrammations et les examens non interprétables."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - A1 - Carte d'identité de la préparation",
+        "text": "**Comment lire cette carte.** La **préparation du patient** désigne l'ensemble des mesures prises avant l'administration d'un radiopharmaceutique afin de garantir trois objectifs indissociables : la **qualité diagnostique** (réduction des fixations non spécifiques, optimisation du contraste lésion/bruit de fond), la **sécurité** (dépistage grossesse/allaitement, interférences médicamenteuses) et le respect du principe d'**optimisation (ALARA, *As Low As Reasonably Achievable*)**.[1][37] Contrairement à une carte d'identité d'examen, la préparation n'est pas un acte unique mais un **protocole transversal** dont les paramètres varient selon le couple traceur–cible. Les valeurs ci-dessous sont les repères opérationnels les plus structurants ; chaque examen impose ses propres consignes écrites, qui priment sur ce cadre générique.[37]\n\n| Levier de préparation | Repère opérationnel | Examen(s) concerné(s) |\n|---|---|---|\n| **Jeûne** | **≥ 4 h** (pratique FR souvent **≥ 6 h**) | TEP-[18F]FDG ; **aucun** pour scintigraphie osseuse / TEP-PSMA[1][20][4][25] |\n| **Glycémie pré-injection** | examen acceptable si **< 200 mg/dL (11,1 mmol/L)**, cible **< 140 mg/dL (7,8 mmol/L)** | TEP-[18F]FDG[1][3] |\n| **Hydratation** | **~1 L** d'eau dans les **2 h** précédant l'injection | TEP-FDG ; généralisable[1] |\n| **Délai injection→acquisition** | **60 min** (plage 55–75 min) | TEP-[18F]FDG[1] |\n| **Repos / activité physique** | pas d'effort intense **≥ 6 h** (idéalement 24 h) | TEP-[18F]FDG[1] |\n| **Sevrage caféine** | **≥ 12 h** (méthylxanthines longues ≥ 5 demi-vies) | SPECT myocardique de stress vasodilatateur[11][26] |\n| **Blocage thyroïdien** | perchlorate de potassium **400 mg** ou Lugol ≈ 100 mg d'iodure, **≥ 1 h** avant | DaTscan ([123I]ioflupane)[29] |\n| **Statut reproductif** | dépistage **systématique** grossesse/allaitement | tous[17][35][37] |\n\nLa préparation se pense donc comme une **check-list adaptative** : elle n'a de sens qu'indexée sur la biologie du traceur prescrit (cf. A3) et sur le statut du patient.",
+        "stats": [
+          {
+            "value": "≥ 4 h",
+            "label": "Jeûne minimal avant TEP-[18F]FDG[1]"
+          },
+          {
+            "value": "< 11,1 mmol/L",
+            "label": "Glycémie autorisant l'étude FDG[1]"
+          },
+          {
+            "value": "60 min",
+            "label": "Délai injection→acquisition FDG[1]"
+          },
+          {
+            "value": "≥ 12 h",
+            "label": "Sevrage caféine avant stress vasodilatateur[11]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Principe d'optimisation",
+            "text": "« L'activité administrée doit être maintenue à un niveau aussi bas que raisonnablement possible mais suffisant pour l'obtention de l'information diagnostique. »[37] La préparation est l'un des leviers de cette optimisation : un patient bien préparé permet souvent une activité moindre et une acquisition plus courte à qualité d'image égale."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — consignes de service",
+            "text": "Aucune valeur de cette carte n'est universelle. Le jeûne, les seuils glycémiques, les arrêts médicamenteux et les délais sont fixés par le **protocole écrit** du service réalisant l'examen, conforme aux recommandations EANM/SNMMI/SFMN. Ce guide rassemble les consignes génériques, à compléter — jamais à substituer."
+          }
+        ]
+      },
+      {
+        "title": "A2 - A2 - Pourquoi se préparer : ce qui est en jeu",
+        "text": "La préparation n'est pas une formalité administrative : elle **conditionne la validité même de l'examen** et la sécurité du patient. Trois enjeux distincts s'y nouent, chacun avec ses conséquences propres en cas de défaut.\n\n**▸ Enjeu n°1 — la qualité diagnostique.** Tout radiopharmaceutique est en compétition avec des processus physiologiques qui captent le même traceur. En TEP-[18F]FDG, l'**insuline** est directement responsable de la captation du glucose par les cellules non tumorales (muscle strié, myocarde) : une hyperglycémie ou une insulinémie élevée détourne le traceur du compartiment tumoral vers ces tissus, dégradant le contraste lésionnel.[1][3] D'où la double exigence de **jeûne ≥ 4 h** et de **glycémie contrôlée < 200 mg/dL (11,1 mmol/L)**, idéalement **< 140 mg/dL (7,8 mmol/L)**.[1] De même, un effort physique récent provoque une captation musculaire diffuse, et le froid une fixation de la **graisse brune** ; le repos au calme, au chaud, sans parler ni mâcher pendant la phase de captation, limite ces artefacts.[1] Pour un examen de stress myocardique vasodilatateur, la **caféine** bloque les récepteurs A2A de l'adénosine et invalide purement et simplement l'épreuve pharmacologique : un sevrage **≥ 12 h** est impératif.[11][26]\n\n**▸ Enjeu n°2 — la sécurité.** Le dépistage **systématique** d'une grossesse ou d'un allaitement (cf. A4) évite une irradiation fœtale ou une contamination de l'enfant allaité non maîtrisées.[17][35] Le recueil des antécédents (diabète, insuffisance rénale, allergies) et du poids conditionne le calcul d'activité et l'usage de la carte de dosage pédiatrique EANM.[6][37] L'identification des **traitements interférents** (iode, analogues de la somatostatine, IEC pour la néphroscintigraphie au captopril, caféine) prévient des **faux négatifs** ou des examens ininterprétables.\n\n**▸ Enjeu n°3 — la radioprotection.** L'hydratation et les mictions fréquentes accélèrent l'élimination urinaire du traceur et réduisent la dose à la **paroi vésicale**, organe critique de nombreux radiopharmaceutiques — **0,075 mGy/MBq** pour le [18F]FDG.[31][32] La préparation participe donc directement à l'optimisation dosimétrique.\n\nUne préparation défaillante a un coût concret : examen à reprogrammer, irradiation délivrée en pure perte, ou — plus grave — conclusion faussement rassurante ou faussement positive.",
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Captation du [18F]FDG : analogue du glucose transporté par GLUT puis phosphorylé par l'hexokinase et piégé (trapping) dans la cellule ; l'insuline détourne le traceur vers le muscle et le myocarde, d'où l'exigence de jeûne et d'euglycémie.",
+        "figureCaption": "Fig. 1 — Mécanisme de captation du [18F]FDG : l'insuline et l'activité musculaire détournent le traceur ; la préparation (jeûne, repos, euglycémie) protège le contraste tumoral.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le jeûne sert l'euglycémie, pas l'estomac vide",
+            "text": "L'objectif du jeûne pré-FDG n'est pas la vacuité gastrique mais une **glycémie et une insulinémie basses**.[1] L'eau plate est non seulement autorisée mais **encouragée** ; en revanche, toute boisson sucrée ou perfusion glucosée est proscrite (remplacée par du sérum physiologique), car elle relance la sécrétion d'insuline et ruine la préparation.[1][3]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la glycémie capillaire ne suffit pas pour la quantification",
+            "text": "Pour la correction du SUV (*Standardized Uptake Value*) et les études quantitatives, la glycémie doit être mesurée par une **méthode calibrée/validée**, et non par un simple lecteur de chevet, dont l'imprécision se répercute sur le SUV.[1]"
+          }
+        ]
+      },
+      {
+        "title": "A3 - A3 - Principes physiques et biologiques de la préparation",
+        "text": "Chaque consigne de préparation découle d'un mécanisme précis : on ne prépare pas « un patient de médecine nucléaire » en général, mais on **protège une cible biologique donnée** contre les processus qui la concurrencent. Le tableau suivant relie, examen par examen, la cible exploitée au levier de préparation qui la préserve.\n\n| Examen (traceur) | Cible / mécanisme biologique | Pourquoi la préparation | Levier |\n|---|---|---|---|\n| **TEP-[18F]FDG** | Analogue du glucose phosphorylé puis **piégé (trapping)** dans les cellules à fort métabolisme glucidique | Insuline et activité musculaire détournent le traceur | Jeûne **≥ 4 h**, euglycémie, repos[1][3] |\n| **Scintigraphie osseuse ([99mTc]MDP/HDP)** | Adsorption des diphosphonates sur l'**hydroxyapatite** des zones d'ostéogenèse ; élimination rénale | Activité urinaire = irradiation pelvienne + masque osseux | **Hydratation +++**, vidange vésicale avant acquisition[4][5] |\n| **SPECT myocardique de stress** | Vasodilatation par stimulation des récepteurs **A2A de l'adénosine** | Caféine/théophylline = antagonistes → épreuve invalidée | Sevrage caféine **≥ 12 h**, théophylline ≥ 48 h[11][26] |\n| **Scintigraphie thyroïdienne ([123I], [99mTc]pertechnétate)** | Captation iodée via le **symporteur Na/I (NIS)** | Iode stable et hormones entrent en compétition | Arrêt des sources iodées (contraste 4–6 sem, amiodarone plusieurs mois)[28] |\n| **DaTscan ([123I]ioflupane)** | Liaison au **transporteur de la dopamine (DAT)** présynaptique | L'iode libre se fixerait sur la thyroïde | **Blocage thyroïdien** (perchlorate 400 mg) ≥ 1 h avant[29] |\n| **Néphroscintigraphie au captopril** | Démasquage d'une sténose par inhibition de l'**enzyme de conversion** | L'alimentation solide ↓ l'absorption du captopril | À jeun de solides **4 h** avant[16] |\n\n**Deux familles de leviers physico-biologiques** structurent l'ensemble :\n\n**1. Maximiser le signal cible / minimiser le bruit de fond.** C'est la logique du jeûne (FDG), du blocage de la compétition (iode pour la thyroïde, caféine pour le stress), du repos (graisse brune et muscle) et de l'hydratation–miction (clairance du fond urinaire). La phase de **captation (uptake)** obéit elle aussi à une cinétique : pour le FDG, le délai standard de **60 min** correspond au plateau d'accumulation tumorale et de décroissance du fond sanguin ; un délai trop court (< 55 min) ou trop long (> 75 min) dégrade la reproductibilité du SUV en suivi.[1]\n\n**2. Protéger les organes critiques.** Le traceur, ou son radionucléide libre, peut se fixer sur un organe non ciblé : l'**iode libre** sur la thyroïde (d'où le blocage avant DaTscan), le pertechnétate sur l'estomac et les glandes salivaires. L'hydratation réduit la dose vésicale, organe critique du FDG et du MDP.[31] Comprendre ces mécanismes permet de **rationaliser** chaque consigne plutôt que de l'appliquer aveuglément — et d'expliquer au patient pourquoi elle compte.",
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Symporteur sodium-iode (NIS) de la cellule thyroïdienne : il concentre l'iode (et le [123I] ou le [99mTc]pertechnétate) dans la thyroïde ; l'iode stable alimentaire ou médicamenteux entre en compétition et bloque la captation du traceur, d'où l'arrêt préalable des sources iodées.",
+        "figureCaption": "Fig. 2 — Le symporteur Na/I (NIS) : socle de la captation thyroïdienne et cible de la préparation (arrêt des interférents iodés).",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — un même radionucléide, des préparations opposées",
+            "text": "L'iode [123I] illustre que la préparation suit la **cible biologique**, pas l'isotope : en scintigraphie thyroïdienne, on **n'empêche surtout pas** la captation thyroïdienne (c'est elle qu'on image, après arrêt des compétiteurs iodés)[28] ; en DaTscan, on **bloque au contraire** la thyroïde au perchlorate ou au Lugol, car la cible est cérébrale (DAT) et toute fixation thyroïdienne de l'iode libre n'est qu'irradiation et artefact.[29]"
+          }
+        ]
+      },
+      {
+        "title": "A4 - A4 - Les acteurs et le parcours du patient",
+        "text": "La préparation est une **chaîne de responsabilités partagées** entre le prescripteur, le service de médecine nucléaire et le patient lui-même. Le parcours se déroule en quatre temps.\n\n**▸ Avant la prise de rendez-vous — le prescripteur.** Il pose l'**indication** (justification de l'acte, principe de justification CIPR) et transmet les éléments qui conditionnent la préparation : diabète et équilibre glycémique (TEP-FDG), fonction rénale, allergies, traitements en cours (iode, analogues de la somatostatine, IEC, caféine), poids et statut grossesse/allaitement.[37]\n\n**▸ À la convocation — le service de médecine nucléaire.** Il délivre les **consignes écrites** propres à l'examen (jeûne, arrêts médicamenteux, hydratation) et instruit le patient. La femme enceinte, en retard de règles ou allaitante doit pouvoir se faire connaître **à l'avance ou dès l'arrivée**.[37]\n\n**▸ Le jour J — accueil et vérifications.** Contrôle de l'identité, de l'indication et des antériorités d'imagerie ; **dépistage grossesse/allaitement** (date des dernières règles, test si doute) ; mesure de la glycémie pour le FDG ; vérification des arrêts d'interférents ; pesée pour le calcul d'activité ; information et consentement.[1][37]\n\n**▸ Après l'injection — le patient devient « source ».** Hydratation, mictions fréquentes, puis consignes de radioprotection en sortie (distance vis-à-vis des jeunes enfants et femmes enceintes pendant la période utile).[17]\n\n**Cas particuliers structurants pour le parcours :**\n\n| Situation | Conduite | Repère chiffré |\n|---|---|---|\n| **Grossesse** | Dépistage systématique ; dose fœtale des examens diagnostiques courants **très inférieure à 100 mGy** ; aucune dose < 100 mGy ne justifie une interruption de grossesse | seuil CIPR 84 : **100 mGy**[18][35] |\n| **[131I] / [123I]-iodure & grossesse** | **Contre-indiqués** : la thyroïde fœtale capte l'iode dès ~10–12 semaines | risque d'hypothyroïdie/ablation fœtale[13][21] |\n| **Allaitement — plupart des [99mTc]** | **Aucune interruption** (MDP, MAG3, DTPA, DMSA, sestamibi), sous réserve d'absence de pertechnétate libre | reprise quand dose enfant **< 1 mSv** (CIPR 106)[8][34] |\n| **[99mTc]pertechnétate, [99mTc]MAA** | Interruption **~12 h** | [7][8] |\n| **[18F]FDG & allaitement** | Non excrété dans le lait, mais **limiter le contact mère–enfant ~12 h** (irradiation du sein) | [7] |\n| **[123I]-iodure (allaitement)** | Interruption **~3–4 jours** | [10] |\n| **[131I]-iodure (allaitement)** | **Arrêt définitif** de la lactation en cours | [13][36] |\n\nLe principe directeur de l'allaitement est dosimétrique : la reprise est autorisée lorsque la dose à l'enfant retombe sous **1 mSv** (CIPR 106).[34] Le tableau des interruptions de référence (Leide-Svegborn et al., EANM 2016) doit toujours être confronté au protocole local.[8]",
+        "steps": [
+          {
+            "title": "1 · En amont (prescripteur)",
+            "text": "Justification de l'indication ; transmission diabète/glycémie, fonction rénale, allergies, traitements interférents, poids, statut grossesse/allaitement.[37]"
+          },
+          {
+            "title": "2 · À la convocation (service)",
+            "text": "Remise des consignes écrites (jeûne, arrêts médicamenteux, hydratation) ; invitation à déclarer une grossesse/un allaitement à l'avance.[37]"
+          },
+          {
+            "title": "3 · Le jour J (accueil)",
+            "text": "Identité, indication, antériorités ; dépistage grossesse/allaitement ; glycémie (FDG) ; arrêt des interférents ; poids ; information/consentement.[1][37]"
+          },
+          {
+            "title": "4 · Après l'examen (radioprotection)",
+            "text": "Hydratation, mictions fréquentes ; distance avec jeunes enfants et femmes enceintes ; consignes écrites de radioprotection en sortie.[17]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse et allaitement, dépistage systématique",
+            "text": "Le statut reproductif doit être **recherché avant toute administration**, sans exception. Une dose fœtale inférieure à **100 mGy** ne justifie jamais une interruption de grossesse[18][35], mais les radiopharmaceutiques iodés ([131I], [123I]-iodure) sont **contre-indiqués** car la thyroïde fœtale les capte dès ~10–12 semaines.[13][21]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — l'allaitement se gère par la dose à l'enfant",
+            "text": "La règle n'est pas binaire : la plupart des [99mTc] n'imposent **aucune interruption**, le pertechnétate libre ~12 h, l'iode-123 plusieurs jours, et le [131I] un arrêt définitif.[8][34] Le critère commun est la chute de la dose à l'enfant sous **1 mSv** (CIPR 106).[34] Conseil pratique convergent : allaiter juste avant l'injection et tirer le lait à l'avance."
+          }
+        ]
+      },
+      {
+        "title": "B5 - B5 - Documents et informations à rassembler avant de venir",
+        "text": "La préparation d'un examen de médecine nucléaire commence **avant l'injection**, par le recueil systématique d'un jeu d'informations qui conditionnent à la fois la **sécurité** (dépistage grossesse/allaitement, fonction rénale, allergies), la **qualité diagnostique** (calcul de l'activité, gestion des interférences) et l'**optimisation dosimétrique** (principe ALARA — *as low as reasonably achievable*). La femme enceinte, en retard de règles ou allaitante doit se faire connaître **à l'avance ou dès l'arrivée**.[37]\n\n**▸ Documents administratifs et cliniques à apporter**\n\n| Document | Pourquoi il est indispensable |\n|---|---|\n| **Ordonnance / demande d'examen** | Indication précise → justification de l'acte (principe de justification CIPR/CSP) et choix du protocole.[37] |\n| **Antériorités d'imagerie** (TDM, IRM, échographie, examens MN précédents) | Comparaison, repérage des cibles, évitement d'examens redondants.[37] |\n| **Comptes rendus et biologie récente** | Marqueurs tumoraux, **glycémie**, fonction rénale, TSH selon l'indication. |\n| **Liste exhaustive des traitements en cours** | Identification des interférents à suspendre (cf. B7).[37] |\n| **Carte de groupe / antécédents allergiques** | Pertinent si épreuve pharmacologique ou produit de contraste iodé associé (TEP/TDM, néphro-captopril). |\n\n**▸ Données à recueillir impérativement à l'accueil** (check-list médecin nucléaire) :\n\n- **Identité** vérifiée (identitovigilance) et concordance avec la demande.\n- **Indication** et question clinique explicite.\n- **Poids et taille** : le poids commande le calcul de l'activité administrée (formule linéaire pour la TEP-FDG, ~**14 MBq·min⁻¹·lit⁻¹·kg⁻¹** divisé par le temps par pas de lit) et, en pédiatrie, la **carte de dosage EANM** (activité de base × multiple lié au poids, jamais sous l'activité minimale).[1,6]\n- **Statut grossesse / allaitement** (DDR, test si doute) — recueil non négociable avant toute administration.[17,37]\n- **Diabète et glycémie** (TEP-FDG), **fonction rénale** (néphro-scintigraphie, élimination du traceur), **terrain allergique**.\n- **Traitements interférents** selon l'examen (caféine, analogues de la somatostatine, iode, IEC, antidépresseurs — cf. B7).[37]\n\nLe recueil de ces éléments alimente directement la **chaîne décisionnelle** : un poids manquant interdit le calcul d'activité, un statut grossesse non documenté contre-indique l'injection, et une antériorité d'imagerie absente dégrade l'interprétation comparative.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse et allaitement",
+            "text": "Le statut grossesse/allaitement doit être **systématiquement recherché et tracé** avant toute administration. Le seuil des effets déterministes fœtaux (malformations) est de **50–100 mGy** ; une **dose fœtale < 100 mGy ne justifie jamais une interruption de grossesse**, et les doses des examens diagnostiques courants restent très inférieures à ce seuil. La contrainte de dose au fœtus pour la travailleuse exposée est de **< 1 mSv** sur la grossesse.[18,35]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le poids n'est pas qu'administratif",
+            "text": "Le poids conditionne l'activité administrée (donc la dose ET la qualité d'image) et, en pédiatrie, la classe de la carte de dosage EANM. Pour les **99mTc-phosphonates** (os), la carte EANM fixe une activité de base de **35 MBq** et un **minimum de 40 MBq** ; ne jamais descendre sous l'activité minimale, sous peine de comptage insuffisant.[5,6]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "< 100 mGy",
+            "label": "Dose fœtale ne justifiant jamais une ITG (CIPR 84)"
+          },
+          {
+            "value": "< 1 mSv",
+            "label": "Contrainte de dose fœtale (travailleuse exposée)"
+          },
+          {
+            "value": "35 MBq",
+            "label": "Activité de base pédiatrique 99mTc-os (carte EANM)"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers temps / distance / écran du principe ALARA, illustrant l'optimisation qui sous-tend le recueil préalable des informations patient.",
+        "figureCaption": "Fig. B5 — Le recueil préalable (poids, statut, traitements) alimente l'optimisation ALARA : justification, optimisation de l'activité, limitation."
+      },
+      {
+        "title": "B6 - B6 - Consignes alimentaires : jeûne, hydratation et régimes spécifiques",
+        "text": "Les consignes alimentaires sont **spécifiques de chaque examen** : un jeûne strict est essentiel pour la TEP au [18F]FDG mais inutile — voire contre-productif — pour beaucoup de scintigraphies. La règle générale est de **toujours appliquer les consignes écrites du service**, les valeurs ci-dessous étant des repères de référence.\n\n**▸ Jeûne — valeurs par examen**\n\n| Examen | Consigne alimentaire | Source |\n|---|---|---|\n| **TEP-[18F]FDG** (oncologie) | Jeûne **≥ 4 h** ; eau plate uniquement, encouragée ; pas de boisson sucrée ni de perfusion glucosée (remplacée par sérum physiologique).[1] En pratique FR/SFMN, souvent **≥ 6 h**.[20] | [1,20] |\n| **TEP-[18F]FDG cérébrale** (démences, épilepsie) | Jeûne **≥ 4–6 h** (minimum 6 h recommandé) ; arrêt de la nutrition entérale et des perfusions glucosées ; glycémie cible **< 150 mg/dL**.[23,24] | [23,24] |\n| **TEP à la PSMA** (prostate) | **Pas de jeûne requis** ; hydratation suffisante encouragée.[25] | [25] |\n| **Scintigraphie osseuse** (99mTc-HDP/MDP) | **Aucun jeûne** ; hydratation +++.[4,5] | [4,5] |\n| **SPECT myocardique** | Jeûne **non essentiel** (jeûne léger ~3 h dans certains centres).[11] | [11] |\n| **Néphro-scintigraphie au captopril** | Éviter les **aliments solides 4 h** avant (l'alimentation réduit l'absorption du captopril).[16] | [16] |\n\n**▸ Glycémie — le verrou de la TEP-FDG.** L'objectif d'au moins 4 h de jeûne est d'obtenir une **glycémie basse et une insulinémie basse**, l'insuline détournant directement le FDG vers les tissus non tumoraux (muscle, myocarde).[1] La glycémie est **mesurée avant l'injection** :[1]\n\n- Étude clinique réalisable si glycémie **< 200 mg/dL (11,1 mmol/L)** ; à reprogrammer et prévenir le prescripteur au-delà.[1,22]\n- Cible optimale d'euglycémie **4–7 mmol/L** (idéal **< 140 mg/dL / 7,8 mmol/L**) ; en recherche, plafond **126–150 mg/dL (7–8,3 mmol/L)**.[1,22]\n- Un **diabète mal équilibré** est une **contre-indication relative** (non absolue) : l'interprétation est rendue sous réserve si la glycémie dépasse 7 mmol/L.[1,20]\n\n**▸ Hydratation.** L'hydratation et les mictions fréquentes **accélèrent l'élimination urinaire** du traceur, réduisent la dose à la **paroi vésicale** (organe critique de nombreux traceurs : FDG, MDP) et limitent les artefacts.[1,5] Pour la TEP-FDG : ~**1 L d'eau dans les 2 h** précédant l'injection (+ 0,5 L pendant l'incubation si toléré), avec **vidange vésicale avant l'acquisition**.[1] Pour la scintigraphie osseuse : ≥ 2 verres d'eau entre l'injection et l'imagerie tardive (à 2–4 h), vidange vésicale juste avant l'acquisition.[5,27]\n\n**▸ Régimes spécifiques.** Avant un traitement ou un traçage iodé (131I, scintigraphie thyroïdienne), un **régime pauvre en iode 1–2 semaines** est recommandé (4 jours parfois suffisants) ; éviter produits de contraste iodés et amiodarone selon protocole (cf. B7).[14,15]",
+        "steps": [
+          {
+            "title": "TEP-FDG : la veille",
+            "text": "Repas normal mais **éviter les sucres rapides** ; pas d'effort intense (cf. B8). Pour un diabétique de type 2 sous antidiabétiques oraux, privilégier une convocation en **fin de matinée** et poursuivre le traitement.[1]"
+          },
+          {
+            "title": "TEP-FDG : ≥ 4–6 h avant",
+            "text": "**Jeûne strict** ; eau plate autorisée et encouragée ; pas de boisson sucrée, chewing-gum sucré ni perfusion glucosée. Hydratation orale ~1 L dans les 2 h précédant l'injection.[1,20]"
+          },
+          {
+            "title": "À l'arrivée",
+            "text": "**Mesure de la glycémie** par méthode calibrée (pas un simple lecteur de chevet, pour la fiabilité de la correction du SUV) ; injection si glycémie < 200 mg/dL.[1,38]"
+          },
+          {
+            "title": "Avant l'acquisition",
+            "text": "**Vidange vésicale** systématique avant toute acquisition pelvienne pour réduire la dose vésicale et améliorer le contraste.[1,5]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — sucres cachés et perfusions glucosées",
+            "text": "Un jeûne « respecté » mais accompagné d'un café sucré, d'un bonbon ou d'une **perfusion glucosée** ruine l'examen : l'hyperglycémie/insulinémie détourne le FDG vers le muscle et le myocarde. Remplacer toute perfusion glucosée par du **sérum physiologique** et vérifier l'absence d'apport sucré occulte.[1]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pas de jeûne ≠ pas de consigne",
+            "text": "Pour la scintigraphie osseuse ou la TEP-PSMA, l'absence de jeûne ne dispense pas de la consigne majeure : **boire abondamment et uriner souvent**. C'est l'hydratation, et non le jeûne, qui protège l'organe critique (paroi vésicale) et améliore le contraste.[5,25]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "≥ 4 h",
+            "label": "Jeûne minimal TEP-FDG (EANM)"
+          },
+          {
+            "value": "< 200 mg/dL",
+            "label": "Glycémie maximale autorisée (11,1 mmol/L)"
+          },
+          {
+            "value": "~1 L / 2 h",
+            "label": "Hydratation avant injection FDG"
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Schéma de la captation cellulaire du [18F]FDG via les transporteurs GLUT, illustrant comment l'insuline et l'hyperglycémie détournent le traceur vers les tissus non tumoraux, ce qui justifie le jeûne et le contrôle glycémique.",
+        "figureCaption": "Fig. B6 — Captation du FDG : le jeûne minimise l'insulinémie pour éviter le détournement musculaire et myocardique du traceur."
+      },
+      {
+        "title": "B7 - B7 - Médicaments et substances à signaler, suspendre ou poursuivre",
+        "text": "De nombreux médicaments et substances **interfèrent** avec la biodistribution des radiopharmaceutiques : ils peuvent **invalider l'examen** (faux négatifs), **dégrader l'image** (fixations parasites) ou **annuler une épreuve pharmacologique**. La règle est de **recueillir le traitement complet** et de planifier les arrêts **sur consigne médicale uniquement** — ne jamais laisser le patient suspendre seul un traitement à risque (β-bloquant cardiaque, antithyroïdien, IEC).[37]\n\n**▸ Interférences par examen**\n\n| Examen | Substance à gérer | Délai d'arrêt | Source |\n|---|---|---|---|\n| **SPECT myocardique de stress** (dipyridamole/adénosine/regadénoson) | **Caféine, thé, sodas, chocolat, théobromine** (bloquent les récepteurs A2A de l'adénosine) | **≥ 12 h** | [11,26] |\n| | **Théophylline** / méthylxanthines de longue durée | **≥ 48 h** (≥ 5 demi-vies) | [11,26] |\n| | β-bloquants, inhibiteurs calciques, dérivés nitrés (selon l'objectif) | **5 demi-vies**, sauf contre-indication médicale | [11] |\n| **TEP au 68Ga-DOTATATE** (TNE) | **Analogues retard de la somatostatine** (octréotide LP, lanréotide) | **3–4 semaines** (intervalle réévalué dans les recommandations récentes) | [12] |\n| **Thyroïde / 131I** | Produits de contraste iodés (4–6 sem, davantage selon le produit), **amiodarone** (plusieurs mois), apport iodé alimentaire ; gestion lévothyroxine et antithyroïdiens selon indication | variable | [15,28] |\n| **Néphro-scintigraphie au captopril** | IEC / ARA II / diurétiques (à lister ; gérés selon protocole) | selon protocole | [16] |\n| **DaTSCAN** (123I-ioflupane) | Médicaments modifiant la fixation du transporteur dopaminergique (revoir/arrêter si possible) | **≥ 5 demi-vies** | [29] |\n\n**▸ Substances à signaler systématiquement.** Au-delà des interférents propres à chaque examen, signaler : tout traitement **iodé** (contraste, amiodarone, antiseptiques), les **analogues de la somatostatine**, la **caféine** dans les 24 h précédant un test cardiaque, les **IEC/ARA II** avant une exploration rénale, et tout traitement **antithyroïdien** ou **hormonal thyroïdien**.[37]\n\n**▸ Médicaments à poursuivre.** À l'inverse, la majorité des traitements **doivent être poursuivis** : un arrêt inapproprié expose à un risque cardiovasculaire ou métabolique supérieur au bénéfice diagnostique. Le **traitement antidiabétique oral** est poursuivi pour une TEP-FDG (avec convocation adaptée), et la plupart des médicaments cardiovasculaires sont maintenus sauf consigne précise liée à l'objectif de l'épreuve de stress.[1,11] La décision d'arrêt relève toujours du **médecin nucléaire en concertation avec le prescripteur**.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la caféine invisible avant un stress vasodilatateur",
+            "text": "La caféine bloque les récepteurs A2A de l'adénosine et **annule l'effet vasodilatateur** (dipyridamole, adénosine, regadénoson) : l'épreuve devient ininterprétable. L'abstinence de caféine doit couvrir **café, thé, sodas, chocolat ET analgésiques caféinés** pendant **≥ 12 h**, et **≥ 48 h** pour les méthylxanthines de longue durée.[11,26]"
+          },
+          {
+            "type": "info",
+            "title": "Préparation au 131I — TSH et iode",
+            "text": "Avant un traitement par 131I d'un cancer thyroïdien différencié, l'objectif est une **TSH > 30 mUI/L** : soit par **sevrage hormonal** (lévothyroxine arrêtée 3–4 semaines, ou L-T3 2 semaines), soit par **rhTSH (Thyrogen) 0,9 mg IM** 2 jours consécutifs avec 131I à **48–72 h**, le tout sous **régime pauvre en iode** ~1–2 semaines.[14,15]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "≥ 12 h",
+            "label": "Abstinence caféine avant stress vasodilatateur"
+          },
+          {
+            "value": "3–4 sem",
+            "label": "Arrêt analogues somatostatine avant 68Ga-DOTATATE"
+          },
+          {
+            "value": "> 30 mUI/L",
+            "label": "TSH cible avant 131I (cancer thyroïdien)"
+          }
+        ],
+        "figureKey": "MPI_PROTOCOL",
+        "figureAlt": "Schéma du protocole d'imagerie de perfusion myocardique avec épreuve de stress pharmacologique, illustrant pourquoi l'abstinence en caféine et l'arrêt des méthylxanthines sont indispensables à la validité du test vasodilatateur.",
+        "figureCaption": "Fig. B7 — Imagerie myocardique de stress : la caféine et les méthylxanthines bloquent les récepteurs A2A et invalident l'épreuve vasodilatatrice."
+      },
+      {
+        "title": "B8 - B8 - Préparations physiques particulières et logistique pratique",
+        "text": "Au-delà de l'alimentation et des médicaments, certains examens exigent des **préparations physiques** (repos, conditions d'incubation, blocage thyroïdien, blocage pharmacologique) et une **logistique** précise (durée sur place, accompagnant, consignes de sortie). Ces conditions protègent directement la **cible biologique** que l'examen explore.\n\n**▸ Repos et conditions d'incubation (TEP-FDG).** L'activité musculaire récente détourne le FDG vers le muscle : **pas d'exercice intense ≥ 6 h** avant (idéalement 24 h).[1] Après injection, le patient reste **assis ou allongé, au calme, au chaud, sans parler ni mâcher** pendant la phase de captation, pour limiter la fixation musculaire et de la **graisse brune** (surtout en ORL).[1,3] Le **délai injection–acquisition** recommandé est de **60 min** (plage acceptable 55–75 min), à reproduire à ± 10 min pour les examens de suivi.[1]\n\n**▸ Blocage thyroïdien.** Certains traceurs marqués à l'iode libèrent un peu d'**iode libre** qui se fixerait sur la thyroïde. Pour le **DaTSCAN** (123I-ioflupane), un blocage est **obligatoire ≥ 1 h avant** : iodure de potassium / solution de Lugol (≈ 100 mg d'iodure) ou **perchlorate de potassium 400 mg**.[29] Le même principe s'applique aux scintigraphies à la MIBG.\n\n**▸ Blocage pharmacologique urinaire (TEP-PSMA).** L'activité urinaire intense peut masquer les lésions pelviennes : un **furosémide 20 mg IV** (intervalle ~30 min, optionnel) réduit l'activité vésicale et les artefacts « halo », avec **vidange vésicale avant l'acquisition**.[25]\n\n**▸ Préparation locale et timing chirurgical (ganglion sentinelle).** En lymphoscintigraphie au 99mTc-nanocolloïde (mélanome, sein), les protocoles « **même jour** » ou « **veille** » de chirurgie sont acceptés ; la préparation du point d'injection suit le protocole du service.[30]\n\n**▸ Logistique pratique** (durée, accompagnant, sortie) :\n\n| Élément | Repère pratique | Source |\n|---|---|---|\n| **Délai total sur place** (TEP-FDG) | ~60 min d'incubation + acquisition (souvent ½ journée) | [1] |\n| **Délai injection→images** (scinti osseuse) | imagerie tardive à **2–5 h** après injection | [4] |\n| **Activité TEP-FDG typique** | ~370 MBq → ~**7 mSv** (composante traceur), + dose du scanner | [19,31] |\n| **Accompagnant / enfant** | éviter de venir avec un jeune enfant si possible (consignes de sortie) | [17] |\n| **Pédiatrie** | activités selon carte EANM ; **sédation/immobilisation** possibles | [6,22] |\n\n**▸ Après l'examen — consignes de sortie.** Hydratation abondante et mictions fréquentes pour accélérer l'élimination.[1] Après une TEP-FDG (demi-vie du 18F ~**110 min**, activité largement éliminée en **6–24 h**), il est conseillé de **garder ses distances avec les jeunes enfants et les femmes enceintes pendant quelques heures (jusqu'à ~6–24 h)**.[17] La contrainte de dose au public et à l'enfant allaité est de **1 mSv/an**, au fœtus **< 1 mSv**.[34] Des **consignes écrites de radioprotection** sont remises en sortie, après quoi le patient reprend une vie normale.[37]",
+        "steps": [
+          {
+            "title": "Avant J",
+            "text": "Vérifier indication, grossesse/allaitement, fonction rénale ; planifier l'arrêt des interférents (cf. B7) ; **pas d'effort intense ≥ 6 h** avant une TEP-FDG ; débuter un blocage thyroïdien/pharmacologique si requis (DaTSCAN ≥ 1 h avant).[1,29]"
+          },
+          {
+            "title": "Le jour J — accueil",
+            "text": "Identité, glycémie (FDG), poids ; information et consentement ; pose de voie ; confirmation du blocage thyroïdien le cas échéant."
+          },
+          {
+            "title": "Phase de captation",
+            "text": "Repos au calme, au chaud, **sans parler ni mâcher** ; incubation **~60 min** pour la TEP-FDG ; hydratation pendant l'incubation si tolérée.[1]"
+          },
+          {
+            "title": "Acquisition",
+            "text": "**Vidange vésicale** avant acquisition pelvienne ; furosémide optionnel en TEP-PSMA ; positionnement et acquisition."
+          },
+          {
+            "title": "Sortie",
+            "text": "Hydratation/mictions abondantes ; **distance avec jeunes enfants et femmes enceintes (~6–24 h)** ; remise de **consignes écrites de radioprotection** ; reprise de la vie normale.[17,37]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — graisse brune et captation musculaire",
+            "text": "Parler au téléphone, mâcher un chewing-gum ou avoir froid pendant l'incubation FDG active la **graisse brune** (cou, sus-claviculaire, médiastin) et le muscle, simulant ou masquant des lésions. Le repos **au chaud, au calme, sans phonation ni mastication** est une condition technique, pas un confort.[1,3]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — reproductibilité du délai d'incubation",
+            "text": "Pour un examen de suivi, le **délai injection–acquisition doit être reproduit à ± 10 min** : le SUV varie avec le temps de captation, et un délai différent fausse la comparaison avant/après. C'est un prérequis de la quantification harmonisée (programme EARL).[1,38]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "60 min",
+            "label": "Incubation injection→acquisition TEP-FDG"
+          },
+          {
+            "value": "≥ 6 h",
+            "label": "Sans effort intense avant une TEP-FDG"
+          },
+          {
+            "value": "~6–24 h",
+            "label": "Distance avec enfants/femmes enceintes après FDG"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma temps / distance / écran (ALARA) appliqué aux consignes de sortie : le patient devient une source temporaire, d'où les recommandations de distance et de durée vis-à-vis de l'entourage sensible.",
+        "figureCaption": "Fig. B8 — Consignes de sortie : le patient est une source temporaire ; distance et durée structurent la radioprotection de l'entourage."
+      },
+      {
+        "title": "C9 - C9 - Cas particulier : grossesse et désir de grossesse",
+        "text": "La grossesse, avérée ou possible, est le **premier filtre de sécurité** de toute médecine nucléaire diagnostique. Le radiopharmaceutique injecté à la mère franchit le placenta à des degrés variables et expose l'**embryon/fœtus** ; certains traceurs concentrent en outre une dose dans des organes fœtaux spécifiques (thyroïde, vessie maternelle adjacente). La règle est donc invariable : **rechercher systématiquement une grossesse ou un retard de règles avant toute injection** — date des dernières règles (DDR), et test de grossesse (β-hCG) au moindre doute [37]. Toute patiente enceinte, susceptible de l'être ou allaitante doit pouvoir se faire connaître à l'avance ou dès l'arrivée [37].\n\n**Hiérarchie de la décision.** Un examen n'est jamais réalisé « par défaut » chez une femme enceinte : on applique la séquence justification → optimisation → report. (1) **Justification** renforcée : l'indication maternelle est-elle assez forte pour ne pas attendre l'accouchement ou le post-partum ? (2) **Optimisation** : réduction de l'activité administrée, hyperhydratation et mictions fréquentes (la **paroi vésicale** est l'organe critique de nombreux traceurs et la principale source d'irradiation utérine de contiguïté), choix du traceur le moins irradiant pour le fœtus [17,18]. (3) **Report** chaque fois que cliniquement acceptable.\n\n**Niveaux de risque fœtal (repères CIPR/CIPR 84).** Les effets déterministes (malformations, retard mental) ont un **seuil de l'ordre de 100–200 mGy** ; en pratique, le message-clé à connaître est qu'une **dose fœtale inférieure à 100 mGy ne justifie jamais, à elle seule, une interruption de grossesse** [17,18]. Or les examens diagnostiques courants délivrent au fœtus des doses **très inférieures à ce seuil**.\n\n| Examen (activité usuelle) | Dose fœtale estimée (début de grossesse) | Source |\n|---|---|---|\n| Scintigraphie osseuse — 99mTc-MDP/HDP | **~4,6–4,7 mGy** (≈ 1,8 mGy à terme) | [35] |\n| Perfusion pulmonaire — 99mTc-MAA | **~0,4–0,6 mGy** | [35] |\n| 131I-NaI 40 MBq (à éviter) | **~2,0–2,9 mGy** au début, jusqu'à ~11 mGy à terme | [35] |\n| TEP-18F-FDG | dose fœtale faible ; reste **< 50 mSv** au fœtus (NCRP/ACOG) | [18,35] |\n\n**Règle des 10 jours / 28 jours (CIPR/AIEA).** Pour réduire le risque d'irradiation d'une grossesse méconnue, les actes à dose fœtale **élevée** sont idéalement restreints aux **10 premiers jours** du cycle (avant l'ovulation) et les actes à faible dose fœtale aux **28 premiers jours** ; cette règle, indicative, se conjugue toujours à l'interrogatoire et au test [17].\n\n**Le cas particulier de l'iode radioactif.** Les iodures radioactifs (**131I et 123I-iodure**) sont **contre-indiqués pendant la grossesse** : la **thyroïde fœtale capte l'iode dès ~10–12 semaines** d'aménorrhée, exposant à une **hypothyroïdie, voire une ablation thyroïdienne fœtale** [13,21]. Le 131I thérapeutique est formellement proscrit. Pour une scintigraphie thyroïdienne strictement nécessaire, le **99mTc-pertechnétate** délivre une dose fœtale moindre, mais l'examen reste à différer chaque fois que possible [28].\n\n**Désir de grossesse et délai de conception.** Après un examen **diagnostique** standard, aucun délai de conception n'est imposé chez l'homme comme chez la femme. En revanche, après **traitement par 131I** (cancer thyroïdien ou hyperthyroïdie), un **délai de conception** est requis — classiquement de l'ordre de plusieurs mois après l'administration thérapeutique — afin de garantir l'élimination du radio-iode et la stabilité hormonale ; ce point relève des recommandations de thérapie par 131I et doit être tracé dans les consignes écrites [13,36].",
+        "stats": [
+          {
+            "value": "< 100 mGy",
+            "label": "Dose fœtale ne justifiant jamais une ITG (CIPR 84) [17,18]"
+          },
+          {
+            "value": "~4,7 mGy",
+            "label": "Dose fœtale d'une scinti osseuse 99mTc-MDP [35]"
+          },
+          {
+            "value": "10–12 SA",
+            "label": "Captation iodée par la thyroïde fœtale → 131I/123I contre-indiqués [13]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — dépistage systématique",
+            "text": "Recherchez **toujours** un retard de règles ou une grossesse (DDR + β-hCG au doute) **avant l'injection**. Une affiche en salle d'attente et une question explicite à l'accueil font partie du protocole. La patiente enceinte, susceptible de l'être ou allaitante doit se faire connaître dès l'arrivée [37]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — iode radioactif et thyroïde fœtale",
+            "text": "**131I et 123I-iodure sont contre-indiqués** : la thyroïde fœtale capte l'iode dès ~10–12 SA, avec risque d'hypothyroïdie ou d'ablation fœtale [13,21]. Le 131I thérapeutique est formellement proscrit pendant la grossesse."
+          },
+          {
+            "type": "info",
+            "title": "Point expert — irradiation utérine et vessie",
+            "text": "Pour la plupart des traceurs, la dose à l'utérus provient surtout de la **contiguïté avec la vessie** (organe critique). Hyperhydratation et **mictions fréquentes** sont les leviers d'optimisation les plus efficaces chez la femme enceinte [17]."
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Symporteur sodium-iode (NIS) de la cellule thyroïdienne captant l'iodure — mécanisme expliquant pourquoi la thyroïde fœtale, fonctionnelle dès 10-12 semaines, contre-indique les iodures radioactifs pendant la grossesse."
+      },
+      {
+        "title": "C10 - C10 - Cas particulier : allaitement",
+        "text": "À la différence de la grossesse, l'allaitement **n'est presque jamais une contre-indication** : la conduite consiste à **interrompre transitoirement l'allaitement** le temps que l'activité excrétée dans le lait décroisse sous le seuil de sécurité, puis à le reprendre. Le **critère de décision** est dosimétrique : on reprend l'allaitement lorsque la **dose à l'enfant retombe en dessous de 1 mSv** [34]. La référence biocinétique commune est le travail de **Leide-Svegborn et al. (EANM 2016)**, qui fournit, traceur par traceur, les durées d'interruption recommandées [8].\n\n**Principe pratique commun** : allaiter (ou tirer le lait) **juste avant l'injection**, tirer et **conserver du lait à l'avance**, puis pendant la période d'interruption **tirer et jeter** le lait pour maintenir la lactation, tout en **limitant le contact rapproché mère–enfant** (irradiation externe par la mère « source », distincte du passage dans le lait) [7,9].\n\n**Durées d'interruption par traceur.**\n\n| Radiopharmaceutique | Interruption de l'allaitement | Source |\n|---|---|---|\n| 99mTc-MAG3, -DTPA, -DMSA, -MDP/HDP, -HIDA, colloïde, sestamibi/tétrofosmine | **Aucune interruption** (sous réserve d'absence de pertechnétate libre) | [7,9,34] |\n| 99mTc-pertechnétate ; 99mTc-MAA (perfusion pulmonaire) ; 99mTc-thyroïde ; Meckel ; glandes salivaires | **~12 h** (MAA : ~12,6 h) | [7,35] |\n| 99mTc-HMPAO leucocytes | **~24 h** (certains pays standardisent 24 h pour tous les 99mTc) | [7,9] |\n| 18F-FDG | **Pas excrété dans le lait** ; limiter le **contact mère–enfant ~12 h** (irradiation du sein avide) | [7] |\n| 123I-iodure | **~3–4 jours** (NRC/ATA) ; 42 h après 20 MBq (UK) | [10,21] |\n| 131I (diagnostique ou thérapeutique) | **Arrêt définitif** de la lactation en cours | [13] |\n\n**Lecture de ce tableau.** Trois régimes se dégagent. (1) La **majorité des traceurs au 99mTc** ne nécessite **aucune interruption** selon la CIPR, à condition que la pureté radiochimique soit assurée (pas de pertechnétate libre) ; par simplification opérationnelle, certains organismes (ACMUI/NRC) recommandent néanmoins une interruption forfaitaire de **12 h** [9,34]. (2) Quelques 99mTc à excrétion lactée plus marquée (pertechnétate libre, MAA, traceurs thyroïdiens) imposent **~12 h** [7,35]. (3) Les **iodures radioactifs** sont à part : **3–4 jours** pour le 123I et **arrêt définitif** de la lactation en cours pour tout 131I, du fait de la longue période physique (8 j) et de la concentration mammaire/thyroïdienne de l'iode [10,13].\n\n**Cas du 18F-FDG.** Le FDG **n'est pas excrété de façon significative dans le lait** : l'allaitement lui-même peut être poursuivi. Le risque tient à l'**irradiation externe de l'enfant** par le sein et le corps maternels avides : on conseille donc de **limiter le contact étroit prolongé pendant ~12 h** (et de confier la tétée/le biberon à un tiers durant cette fenêtre) plutôt que de jeter le lait [7].",
+        "stats": [
+          {
+            "value": "< 1 mSv",
+            "label": "Seuil de reprise de l'allaitement (dose à l'enfant, CIPR 106) [34]"
+          },
+          {
+            "value": "~12 h",
+            "label": "Interruption après 99mTc-pertechnétate/MAA [7,35]"
+          },
+          {
+            "value": "Arrêt définitif",
+            "label": "Lactation en cours après tout 131I [13]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — organiser l'interruption",
+            "text": "Faites **tirer et stocker du lait à l'avance**, programmez la dernière tétée **juste avant l'injection**, puis **tirez et jetez** pendant la fenêtre d'interruption pour entretenir la lactation. Le geste préserve l'allaitement au lieu de le compromettre [7]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — pertechnétate libre",
+            "text": "L'« aucune interruption » des 99mTc suppose une **pureté radiochimique correcte**. Un excès de **pertechnétate libre** augmente l'excrétion lactée (et la captation thyroïdienne de l'enfant) : en cas de doute sur le contrôle qualité, appliquez une interruption de précaution de **12 h** [9,34]."
+          },
+          {
+            "type": "info",
+            "title": "Info — FDG, contact plutôt que lait",
+            "text": "Le 18F-FDG ne passe pas dans le lait : on n'interrompt pas l'allaitement mais on **limite le contact rapproché ~12 h** (irradiation externe du sein avide). Distinguer toujours **passage dans le lait** et **irradiation externe par la mère-source** [7]."
+          }
+        ]
+      },
+      {
+        "title": "C11 - C11 - Cas particuliers : enfant, diabétique, insuffisant rénal, claustrophobe",
+        "text": "Au-delà de la grossesse et de l'allaitement, quatre terrains modifient la préparation ou la réalisation de l'examen sans le contre-indiquer. Chacun obéit à une logique propre : **dose ajustée** (enfant), **glycémie maîtrisée** (diabétique), **biocinétique et timing** (insuffisant rénal), **tolérance de l'acquisition** (claustrophobe).\n\n**▸ Enfant.** L'activité administrée n'est jamais une simple fraction de la dose adulte : elle est calculée selon la **carte de dosage pédiatrique EANM** (v5.7.2016), où *Activité = activité de base × multiplicateur lié au poids*, sans jamais descendre sous une **activité minimale** garantissant une statistique de comptage exploitable [6,22]. Exemple pour les phosphonates osseux (99mTc) : **classe B, activité de base 35 MBq, minimum 40 MBq** [5,6]. La **dose efficace par MBq est plus élevée chez l'enfant** (organes plus proches, radiosensibilité supérieure) : 18F-FDG ≈ **0,036 mSv/MBq chez l'enfant de 33 kg** contre 0,019 chez l'adulte de 70 kg [31,32]. Pour la **TEP-FDG pédiatrique**, le jeûne et la cible glycémique s'appliquent (**glycémie < 200 mg/dL [11,1 mmol/L]** acceptable, idéal < 150 mg/dL) [22]. À cela s'ajoutent l'**immobilisation/sédation** chez le jeune enfant, l'**hydratation**, la vidange vésicale, et un accompagnement parental.\n\n**▸ Diabétique (surtout TEP-18F-FDG).** Le FDG entre en **compétition avec le glucose** et l'**insuline le détourne** vers le muscle et le myocarde : une glycémie ou une insulinémie élevée dégrade le contraste lésionnel. La glycémie est **mesurée avant injection** ; l'examen est réalisable si **< 200 mg/dL (11,1 mmol/L)**, à reprogrammer au-delà (cible optimale **< 140 mg/dL [7,8 mmol/L]**) [1,3]. Un diabète déséquilibré est une **contre-indication relative, non absolue** [1]. Conduite pratique : **diabète de type 2** sous antidiabétiques oraux → programmer en **fin de matinée**, poursuivre le traitement ; **type 1 / insulinodépendant** → coordination avec le diabétologue, **éviter l'injection d'insuline rapide dans l'heure précédant le FDG** et ne pas faire coïncider le FDG avec une insuline intermédiaire/lente, sous peine d'hyperfixation musculaire diffuse [1].\n\n**▸ Insuffisant rénal.** La plupart des traceurs s'**éliminent par voie urinaire** : une insuffisance rénale **ralentit la clairance**, augmente le bruit de fond circulant et **majore la dose** (rétention de l'activité). Quelques situations méritent attention. En **néphro-scintigraphie au captopril** (HTA rénovasculaire), respecter un jeûne de **solides 4 h** (l'alimentation réduit de **30–40 %** l'absorption du captopril), administrer **25–50 mg de captopril PO** avec un délai de **60–90 min** et une hydratation de **250–500 mL** [16]. Pour la scintigraphie osseuse ou rénale dynamique, **hydrater abondamment** et faire **vider la vessie** avant l'acquisition tardive [4,16]. La fonction rénale prend une importance majeure pour le volet **thérapeutique** (131I, radioligands) où elle conditionne la dosimétrie. Aucune restriction n'impose d'**arrêter une dialyse** pour un examen diagnostique : on coordonne plutôt le **calendrier d'épuration** avec le service.\n\n**▸ Claustrophobe / patient peu coopérant.** Les acquisitions **TEMP/TDM et TEP/TDM** se font dans un anneau relativement ouvert mais peuvent durer **plusieurs dizaines de minutes** en décubitus immobile, ce qui génère anxiété et **artefacts de mouvement**. La préparation est avant tout **relationnelle** : explication du déroulé, présence rassurante, positionnement confortable, fractionnement des paliers de lit. Une **prémédication anxiolytique légère** peut être prescrite (en informant des modalités de retour à domicile) ; chez l'enfant ou l'adulte non gérable, une **sédation** encadrée est envisageable. Pour la **TEP-FDG**, rappeler que la **phase de captation se passe au calme**, allongé, sans parler ni mâcher, afin de limiter la fixation musculaire [1].",
+        "steps": [
+          {
+            "title": "Enfant — calcul d'activité",
+            "text": "Appliquer la **carte EANM** : activité de base × multiplicateur de poids, jamais sous l'**activité minimale** [6]. Prévoir hydratation, vidange vésicale, immobilisation/sédation et accompagnement parental [22]."
+          },
+          {
+            "title": "Diabétique — fenêtre glycémique",
+            "text": "Glycémie mesurée avant le FDG ; **acceptable < 200 mg/dL**, idéale **< 140 mg/dL** [1,3]. Type 2 : créneau de **fin de matinée**, traitement poursuivi. Type 1 : pas d'insuline rapide dans l'heure précédant l'injection [1]."
+          },
+          {
+            "title": "Insuffisant rénal — biocinétique & timing",
+            "text": "**Hydratation** et mictions fréquentes ; vidange vésicale avant l'acquisition [4]. Captopril : jeûne de solides **4 h**, **25–50 mg PO**, délai **60–90 min** [16]. Coordonner avec le calendrier de dialyse."
+          },
+          {
+            "title": "Claustrophobe — tolérance de l'acquisition",
+            "text": "Expliquer le déroulé, rassurer, positionner confortablement ; **anxiolytique léger** ou **sédation** si besoin. Captation FDG au calme, immobile, sans parler ni mâcher [1]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "40 MBq",
+            "label": "Activité minimale enfant — phosphonates osseux 99mTc (carte EANM) [5,6]"
+          },
+          {
+            "value": "< 200 mg/dL",
+            "label": "Glycémie maximale pour réaliser une TEP-FDG (idéal < 140) [1,3]"
+          },
+          {
+            "value": "30–40 %",
+            "label": "Baisse d'absorption du captopril si prise alimentaire récente [16]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — insuline et FDG",
+            "text": "Injecter de l'**insuline rapide juste avant le FDG** provoque une **captation musculaire diffuse** qui masque les lésions et rend l'examen ininterprétable. Respecter un délai, et ne pas faire coïncider le FDG avec une insuline lente/intermédiaire [1]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pédiatrie, ne jamais sous-doser",
+            "text": "Le calcul EANM impose une **activité minimale** : descendre en dessous « pour réduire la dose » dégrade la statistique de comptage et impose une ré-acquisition, donc **plus** d'irradiation au total [6,22]."
+          },
+          {
+            "type": "info",
+            "title": "Info — claustrophobie et mouvement",
+            "text": "L'immobilité prolongée est la principale difficulté : l'anxiété génère des **artefacts de mouvement**. Préparation relationnelle, anxiolyse légère ou sédation encadrée sécurisent l'acquisition [1]."
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Captation cellulaire du 18F-FDG via les transporteurs GLUT puis piégeage après phosphorylation — illustrant la compétition avec le glucose et l'effet de l'insuline qui détourne le traceur vers le muscle chez le patient diabétique mal préparé."
+      },
+      {
+        "title": "D12 - Radioprotection après l'examen : vous, vos proches, votre entourage",
+        "text": "Après un examen diagnostique, le patient devient une **source radioactive temporaire** : il émet un rayonnement externe et excrète le radiopharmaceutique (principalement par les urines). La radioprotection post-examen vise à maintenir la dose à l'entourage et au public **aussi basse que raisonnablement possible (ALARA)**, sans jamais dégrader la qualité de vie ni induire d'anxiété disproportionnée. Le principe directeur, opposable, est la **contrainte de dose de 1 mSv/an pour le public** et pour l'enfant en bas âge de l'entourage, le fœtus restant à **< 1 mSv** sur la grossesse [34].\n\n**Trois leviers, par ordre d'efficacité décroissante chez un patient diagnostique.** (1) La **décroissance physique** : pour le ¹⁸F-FDG, la période est de **~110 min**, si bien que l'activité résiduelle a chuté de plus de 90 % en **6 h** et est quasi nulle en **24 h** [17,19]. (2) L'**élimination biologique** : l'**hydratation abondante** et des **mictions fréquentes** accélèrent la clairance urinaire, réduisent la dose à la paroi vésicale — organe critique du FDG (**0,075 mGy/MBq**) et des diphosphonates osseux — et limitent l'irradiation de l'entourage [31,32]. (3) La **distance et le temps** : le débit de dose décroît avec le carré de la distance ; quelques heures de distance suffisent pour les traceurs courts.\n\n| Traceur diagnostique | Dose efficace | Organe critique | Consigne d'éloignement (jeunes enfants / femmes enceintes) |\n|---|---|---|---|\n| ¹⁸F-FDG (~370 MBq) | **0,019 mSv/MBq** (≈ 7 mSv) [31,19] | Paroi vésicale **0,075 mGy/MBq** [31,32] | Contact rapproché limité **6–24 h** [17] |\n| ⁹⁹ᵐTc-MDP/HDP (740 MBq) | **~0,0057 mSv/MBq** (≈ 4,2 mSv) [31,33] | Paroi vésicale / os [31] | Distance les premières heures ; T₁/₂ ⁹⁹ᵐTc = 6 h |\n| ¹²³I (DaTSCAN, 111–185 MBq) | hydratation + mictions **48 h** [29] | thyroïde (bloquée) / vessie | Premières heures |\n\nLes consignes générales tiennent en quelques règles, à remettre **par écrit** en sortie [37] : boire abondamment et uriner souvent les premières heures ; tirer la chasse, se laver les mains ; éviter le contact prolongé et rapproché (genoux, bras) avec un **jeune enfant** ou une **femme enceinte** pendant la **période utile** (quelques heures pour les traceurs courts) ; reprendre ensuite une **vie normale**. Le passage de portiques de détection (frontières, aéroports) peut déclencher une alarme plusieurs jours après l'examen — une **attestation** du service est utile.",
+        "stats": [
+          {
+            "value": "~110 min",
+            "label": "Période physique du ¹⁸F (FDG)"
+          },
+          {
+            "value": "6–24 h",
+            "label": "Activité FDG largement éliminée"
+          },
+          {
+            "value": "1 mSv/an",
+            "label": "Contrainte de dose au public / enfant"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Dose efficace FDG (CIPR 128)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — l'hydratation est une mesure de radioprotection",
+            "text": "Faire boire et uriner le patient n'est pas qu'un geste de confort : la vessie est l'organe critique du FDG (**0,075 mGy/MBq**) [31,32] et des diphosphonates. Une **vidange vésicale avant l'acquisition pelvienne** réduit simultanément la dose au patient, la dose à l'entourage et les artefacts d'image. La mesure protège donc le patient, le diagnostic et le public d'un seul geste."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — un diagnostic n'est pas une thérapie",
+            "text": "Les consignes ci-dessus valent pour les examens **diagnostiques** (activités de quelques centaines de MBq, traceurs à période courte). Elles ne s'appliquent **pas** aux traitements (iode 131, radioligand-thérapie), qui relèvent de consignes renforcées détaillées en D13. Ne jamais transposer un barème diagnostique à un patient traité."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers de radioprotection appliqués au patient sortant de l'examen : le Temps (laisser décroître l'activité), la Distance (éloignement des jeunes enfants et femmes enceintes), l'Écran ; flèches indiquant la réduction du débit de dose pour l'entourage."
+      },
+      {
+        "title": "D13 - Cas des traitements (iode 131, radioligand-thérapie) : consignes renforcées",
+        "text": "À la différence du diagnostic, la **radioligand-thérapie** administre des activités élevées d'émetteurs β⁻ (ou α) à période longue : le patient est une source significative pendant **plusieurs jours à semaines**. Les consignes de sortie deviennent **réglementaires et chiffrées**, individualisées selon l'activité résiduelle mesurée et le mode de vie (présence d'enfants, transports en commun, profession).\n\n**Préparation spécifique avant ¹³¹I (cancer thyroïdien différencié).** L'efficacité du traitement dépend de la stimulation de la captation par les cellules thyroïdiennes : objectif **TSH > 30 mUI/L** [14]. Deux voies au choix : (1) **sevrage en lévothyroxine** (L-T4 arrêtée **3–4 semaines**, ou relais L-T3 arrêté **2 semaines**) ; (2) **rhTSH (thyrotropine alfa, Thyrogen®) 0,9 mg IM** deux jours consécutifs, l'¹³¹I étant administré à **48–72 h** [14]. Un **régime pauvre en iode** est prescrit ~**1–2 semaines** (parfois **4 jours suffisent**) pour augmenter l'avidité [15]. Le statut grossesse/allaitement est impérativement vérifié : la thyroïde fœtale capte l'iode **dès ~10–12 semaines** — le ¹³¹I est **contre-indiqué** en grossesse [13,21].\n\n**Consignes de sortie après ¹³¹I (différenciées du diagnostic).** L'élimination est surtout urinaire la **première semaine** [36]. Mesures types : maintenir une **distance ≥ 1 m (3 pieds)** des femmes enceintes et des enfants **< 18 ans** ; **éviter les lieux clos prolongés** (> 5 min de contact rapproché) ; **dormir séparément** des enfants **< 3 ans** pendant **~2 semaines** [36]. L'**allaitement est arrêté définitivement** pour la lactation en cours (tout radiopharmaceutique iodé) [13]. L'hydratation reste massive pour accélérer l'excrétion et protéger vessie et gonades.\n\n| Étape | Repère chiffré | Source |\n|---|---|---|\n| Cible de stimulation | **TSH > 30 mUI/L** | [14] |\n| Sevrage L-T4 / L-T3 | **3–4 sem / 2 sem** | [14] |\n| rhTSH (Thyrogen®) | **0,9 mg IM** ×2 j, ¹³¹I à **48–72 h** | [14] |\n| Régime pauvre en iode | **1–2 sem** (4 j parfois suffisants) | [15] |\n| Distance domicile (femmes enceintes, enfants) | **≥ 1 m**, lits séparés ~**2 sem** (< 3 ans) | [36] |\n| Excrétion urinaire majoritaire | **1ʳᵉ semaine** | [36] |",
+        "steps": [
+          {
+            "title": "J−14 à J−7 — préparation",
+            "text": "Régime pauvre en iode débuté ~1–2 semaines avant [15] ; éviter produits de contraste iodés, amiodarone, antithyroïdiens selon protocole. Vérifier grossesse/allaitement (contre-indication absolue du ¹³¹I en grossesse) [13,21]."
+          },
+          {
+            "title": "J−4 à J−2 — stimulation de la TSH",
+            "text": "Sevrage hormonal (L-T4 arrêtée 3–4 sem, ou L-T3 2 sem) OU rhTSH 0,9 mg IM deux jours consécutifs ; objectif TSH > 30 mUI/L avant administration [14]."
+          },
+          {
+            "title": "J0 — administration",
+            "text": "¹³¹I administré (à 48–72 h de la 1ʳᵉ injection de rhTSH le cas échéant) [14]. Hydratation abondante débutée pour accélérer la clairance urinaire et protéger vessie/gonades [36]."
+          },
+          {
+            "title": "J0 → J+14 — consignes de sortie écrites",
+            "text": "Distance ≥ 1 m des femmes enceintes et enfants < 18 ans ; lits séparés des enfants < 3 ans ~2 semaines ; éviter lieux clos prolongés ; allaitement arrêté définitivement ; excrétion urinaire majoritaire la 1ʳᵉ semaine [36,13]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — ne pas confondre préparation diagnostique et thérapeutique",
+            "text": "Le **régime pauvre en iode** et le **sevrage hormonal** sont propres à la **thérapie** ¹³¹I et à certaines explorations dédiées ; ils n'ont aucune place avant une TEP-FDG ou une scintigraphie osseuse. Inversement, transposer un délai d'éloignement diagnostique (quelques heures) à un patient traité par ¹³¹I expose indûment l'entourage : ici, les délais se comptent en **jours à semaines** [36]."
+          },
+          {
+            "type": "info",
+            "title": "Radioligand-thérapie au-delà du ¹³¹I",
+            "text": "Le même principe — activité élevée, période longue, consignes individualisées — s'applique aux radioligand-thérapies par émetteurs β⁻ ou α (logique théranostique). La préparation et les consignes de sortie sont définies par le protocole spécifique du radiopharmaceutique et par la mesure du débit de dose résiduel ; la décroissance des effluents impose un stockage dédié. Le seuil de reprise de l'allaitement (quand applicable) reste la dose à l'enfant **< 1 mSv** [34]."
+          }
+        ]
+      },
+      {
+        "title": "D14 - Sécurité, contre-indications et situations à signaler en urgence",
+        "text": "La sécurité d'un examen de médecine nucléaire repose moins sur le risque pharmacologique — les radiopharmaceutiques sont injectés à des **quantités infimes** (traceurs), rendant les réactions allergiques **rares** — que sur trois piliers : **dépistage de la grossesse et de l'allaitement**, **vérification de la glycémie** (TEP-FDG), et **arrêt programmé des interférents médicamenteux**. Aucune de ces vérifications n'est facultative : une omission ne met pas en danger immédiat le patient mais peut **invalider l'examen** (faux négatif) ou exposer un fœtus.\n\n**Grossesse — la seule vraie contre-indication absolue est iodée.** Le statut est dépisté systématiquement (date des dernières règles, test si doute) [17,35]. Le seuil des effets déterministes fœtaux (malformations) est de **50–100 mGy** ; une **dose fœtale < 100 mGy ne justifie jamais une interruption de grossesse** [18]. Or les doses fœtales des examens diagnostiques courants restent **très inférieures** : ⁹⁹ᵐTc-MDP **~4,6 mGy** en début de grossesse (~1,8 mGy à terme), ⁹⁹ᵐTc-MAA pulmonaire **~0,4–0,6 mGy** [35]. La **règle des 10 jours / 28 jours** (CIPR) encadre la programmation selon la dose fœtale attendue [17]. En revanche, **¹³¹I et ¹²³I-iodure sont contre-indiqués** : la thyroïde fœtale capte l'iode **dès ~10–12 semaines**, avec risque d'hypothyroïdie ou d'ablation fœtale [13,21].\n\n**Allaitement — déclaration systématique, interruption chiffrée.** Le seuil de décision est la dose à l'enfant **< 1 mSv** (CIPR 106) [34]. La plupart des traceurs ⁹⁹ᵐTc (MDP, MAG3, DTPA, DMSA, sestamibi) **ne requièrent aucune interruption** ; le pertechnétate libre et le ⁹⁹ᵐTc-MAA imposent **~12 h** ; les iodures (¹²³I, ¹³¹I) imposent un **arrêt prolongé à définitif** [7,8,10]. Le détail figure dans la section dédiée à l'allaitement.\n\n| Situation à signaler / vérifier | Type | Conduite | Source |\n|---|---|---|---|\n| Grossesse confirmée ou possible | CI **absolue** pour l'iode ; relative sinon | Reporter / optimiser ; jamais d'iodure | [13,17,18] |\n| Allaitement | À gérer | Interruption selon traceur (0 / 12 h / arrêt) | [7,8] |\n| Glycémie ≥ 200 mg/dL (11,1 mmol/L) avant FDG | À corriger | **Reprogrammer**, prévenir le prescripteur | [1,22] |\n| Insuffisance rénale (néphro-captopril, PSMA-furosémide) | Relative | Adapter diurétique/hydratation | [16,25] |\n| Médicaments interférents non arrêtés | Faux résultats | Reporter ou interpréter avec réserve | [11,12,28] |\n\n**Situations à signaler en urgence pendant ou après l'examen.** Une **extravasation** au point d'injection (douleur, tuméfaction) altère la quantification et peut nécessiter une reprogrammation. Une **réaction d'hypersensibilité** (urticaire, bronchospasme, hypotension), bien que rare, impose l'arrêt et la prise en charge symptomatique standard. Lors d'un **stress pharmacologique cardiaque**, le blocage incomplet de la caféine (abstinence **≥ 12 h**, théophylline **≥ 48 h**, soit ≥ 5 demi-vies) peut rendre le test **non concluant** : la caféine bloque les récepteurs A2A de l'adénosine et neutralise dipyridamole, adénosine et regadénoson [11,26]. Toute douleur thoracique, dyspnée ou malaise pendant l'épreuve doit être signalée sans délai.",
+        "stats": [
+          {
+            "value": "< 100 mGy",
+            "label": "Dose fœtale n'imposant jamais d'IG (CIPR 84)"
+          },
+          {
+            "value": "≥ 200 mg/dL",
+            "label": "Glycémie → reprogrammer la TEP-FDG"
+          },
+          {
+            "value": "≥ 12 h",
+            "label": "Abstinence caféine avant stress vasodilatateur"
+          },
+          {
+            "value": "< 1 mSv",
+            "label": "Seuil de reprise de l'allaitement (CIPR 106)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse et allaitement : recherche obligatoire avant toute injection",
+            "text": "Le statut grossesse/allaitement doit être **systématiquement recherché** et tracé avant l'administration [17,35]. Une dose fœtale < 100 mGy ne justifie **jamais** une interruption de grossesse [18], mais les **iodures (¹³¹I, ¹²³I) restent contre-indiqués** en grossesse car la thyroïde fœtale capte l'iode dès ~10–12 semaines [13,21]. La patiente enceinte, en retard de règles ou allaitante doit se faire connaître à l'avance ou dès l'arrivée [37]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la check-list d'accueil fait la sécurité",
+            "text": "Une check-list standardisée verrouille les écueils : identité et indication ; antériorités d'imagerie ; **dépistage grossesse/allaitement** ; **glycémie** (FDG, seuil < 200 mg/dL, idéal < 140) [1,22] ; **arrêt des interférents** selon l'examen (caféine pour le stress cardiaque, iode pour la thyroïde, analogues de somatostatine, IEC) [11,26,28] ; poids (calcul d'activité, carte de dosage pédiatrique EANM) [6] ; information/consentement ; hydratation et vidange vésicale avant acquisition pelvienne ; **consignes écrites de radioprotection** en sortie [37]."
+          }
+        ]
+      },
+      {
+        "title": "E15 - E15 - Mémo récapitulatif : la veille, le jour J, après",
+        "text": "Cette frise synthétise les consignes transversales de préparation. Elle ne se substitue **jamais** aux instructions écrites du service, qui priment toujours (un même examen peut suivre des protocoles distincts selon le centre) [37]. Le fil conducteur est double : **maximiser le contraste cible/bruit de fond** et **respecter le principe d'optimisation** — « l'activité administrée doit rester aussi basse que raisonnablement possible tout en restant suffisante pour l'information diagnostique » [37].\n\n**La veille — anticiper ce qui se prépare à distance**\n\nCertaines préparations ne se rattrapent pas le jour même. Le **blocage thyroïdien** d'un DaTSCAN (¹²³I-ioflupane) doit être pris **≥ 1 h avant** l'injection mais s'anticipe la veille (iodure/perchlorate de potassium **400 mg**) [29]. Le **régime pauvre en iode** d'un traitement par ¹³¹I se débute **1 à 2 semaines** avant (4 jours peuvent suffire selon une étude dédiée) [15]. L'**arrêt des méthylxanthines de longue durée** avant un stress vasodilatateur (théophylline) couvre **≥ 5 demi-vies**, donc bien au-delà de 24 h [11][26]. La déclaration d'une **grossesse possible ou d'un allaitement** doit se faire à l'avance, jamais découverte sur la table [37].\n\n**Le jour J — vérifier, mesurer, optimiser**\n\nÀ l'accueil : contrôle d'identité, de l'indication, du **poids** (calcul d'activité, carte de dosage pédiatrique EANM) [6][22], et recueil du statut grossesse/allaitement [37]. Pour la **TEP-FDG** : confirmation du **jeûne ≥ 4 h** (eau plate autorisée et encouragée), **glycémie mesurée avant injection** par méthode validée, **hydratation ~1 L sur les 2 h** précédentes, puis **repos strict au calme pendant l'incubation de ~60 min** [1]. Vidange vésicale avant toute acquisition pelvienne [4][5].\n\n**Après — éliminer et limiter le contact**\n\nHydratation abondante et **mictions fréquentes** pour accélérer l'élimination urinaire et réduire la dose à la paroi vésicale, organe critique du FDG comme du MDP [1][5]. Le ¹⁸F a une **période physique de ~110 min** : l'activité décroît rapidement, mais une **distance avec jeunes enfants et femmes enceintes** est conseillée durant les premières heures. Des **consignes écrites de radioprotection** sont remises en sortie [17].",
+        "steps": [
+          {
+            "title": "La veille",
+            "text": "Anticiper les préparations à distance : blocage thyroïdien (DaTSCAN) [29], régime pauvre en iode 1–2 sem (¹³¹I) [15], arrêt méthylxanthines longues ≥ 5 demi-vies [11][26]. Déclarer grossesse/allaitement à l'avance [37]."
+          },
+          {
+            "title": "Le jour J — accueil",
+            "text": "Identité, indication, poids (carte EANM) [6][22], statut grossesse/allaitement [37]. Apporter ordonnances et imageries antérieures."
+          },
+          {
+            "title": "Le jour J — TEP-FDG",
+            "text": "Jeûne ≥ 4 h, eau plate seule [1] ; glycémie mesurée avant injection [1] ; hydratation ~1 L/2 h [1] ; repos strict ~60 min d'incubation, sans parler ni mâcher [1]."
+          },
+          {
+            "title": "Le jour J — avant acquisition",
+            "text": "Arrêt des interférents confirmé selon l'examen (caféine, iode, IEC, SSA) ; vidange vésicale avant acquisition pelvienne [4][5]."
+          },
+          {
+            "title": "Après l'examen",
+            "text": "Hydratation et mictions fréquentes (dose vésicale) [1][5] ; distance avec enfants/femmes enceintes quelques heures [17] ; consignes écrites de radioprotection remises [17] ; reprise d'une vie normale."
+          }
+        ],
+        "stats": [
+          {
+            "value": "≥ 4 h",
+            "label": "Jeûne TEP-FDG (eau plate autorisée) [1]"
+          },
+          {
+            "value": "~60 min",
+            "label": "Incubation injection→acquisition FDG [1]"
+          },
+          {
+            "value": "≥ 12 h",
+            "label": "Abstinence caféine avant stress vasodilatateur [26]"
+          },
+          {
+            "value": "~110 min",
+            "label": "Période physique du ¹⁸F [19]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Temps, distance, écran : les trois leviers ALARA structurant les consignes de radioprotection remises au patient à la sortie et le contact avec l'entourage.",
+        "figureCaption": "Fig. — Temps / distance / écran : trame des consignes post-examen remises en sortie.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la préparation à distance ne se rattrape pas",
+            "text": "Un régime pauvre en iode, un sevrage en méthylxanthines (≥ 5 demi-vies) ou un blocage thyroïdien oublié invalident l'examen le jour J sans recours possible : ils se planifient des jours, voire des semaines à l'avance [15][26][29]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — hydratation = qualité ET dosimétrie",
+            "text": "L'hydratation et les mictions fréquentes ne sont pas un simple conseil de confort : elles réduisent la dose à la paroi vésicale (organe critique du FDG, 0,075 mGy/MBq, et du MDP) et améliorent le contraste en lavant l'activité urinaire de fond [1][5][31]."
+          }
+        ]
+      },
+      {
+        "title": "E16 - E16 - Questions fréquentes (FAQ) des patients",
+        "text": "Cette FAQ regroupe les questions les plus posées en pratique et fournit, pour chacune, la réponse sourcée à donner.\n\n**« Pourquoi dois-je être à jeun pour ma TEP ? »** Parce que le ¹⁸F-FDG est un analogue du glucose : toute prise alimentaire élève la glycémie et surtout l'**insulinémie**, et l'insuline détourne le traceur vers le muscle et le myocarde sains, au détriment des lésions. Un jeûne d'**au moins 4 h** (eau plate autorisée et même encouragée) garantit une glycémie et une insulinémie basses [1]. Beaucoup de scintigraphies (osseuse notamment) ne nécessitent **aucun jeûne** [4].\n\n**« Je suis diabétique, dois-je arrêter mon traitement ? »** Non, jamais sans avis médical. Un diabète déséquilibré n'est qu'une **contre-indication relative** : l'examen reste réalisable si la **glycémie est < 200 mg/dL (11,1 mmol/L)** ; au-delà, il est généralement reprogrammé [1]. Le diabétique de type 2 sous antidiabétiques oraux est volontiers convoqué en fin de matinée, traitement poursuivi [1].\n\n**« Pourquoi me demande-t-on d'éviter le café avant mon examen du cœur ? »** Parce que la caféine bloque les récepteurs A2 de l'adénosine et **annule l'effet du vasodilatateur** (dipyridamole, adénosine, régadénoson) utilisé pour le stress pharmacologique. Une **abstinence ≥ 12 h** (café, thé, sodas, chocolat, antalgiques caféinés) est requise [11][26].\n\n**« Je suis enceinte / il est possible que je le sois. »** Signalez-le impérativement avant toute injection. Aucune décision d'interruption de grossesse ne se justifie pour une dose fœtale **< 100 mGy**, seuil des effets déterministes [18][35], et les doses fœtales des examens diagnostiques courants restent **très inférieures** : ~0,4–0,6 mGy pour une perfusion pulmonaire au ⁹⁹ᵐTc-MAA, ~4,6 mGy en début de grossesse pour une scintigraphie osseuse [35]. Les **iodures (¹²³I, ¹³¹I) sont contre-indiqués** car la thyroïde fœtale capte l'iode dès ~10–12 semaines [13][21].\n\n**« J'allaite : dois-je arrêter ? »** Le plus souvent non, ou pour quelques heures seulement. La majorité des traceurs au ⁹⁹ᵐTc (MAG3, DTPA, MDP, sestamibi) n'imposent **aucune interruption** [7][8] ; certains (pertechnétate libre, MAA pulmonaire, examen thyroïdien) **~12 h** [8] ; après une TEP-FDG, on **limite le contact rapproché ~12 h** (irradiation du sein) [7]. Les **iodures imposent un arrêt prolongé ou définitif** (¹²³I : ~3–4 jours ; ¹³¹I : arrêt définitif de la lactation en cours) [10][13]. Le seuil de reprise retenu correspond à une dose à l'enfant **< 1 mSv** [34].\n\n**« L'examen est-il dangereux pour mon entourage ? »** La radioactivité administrée est **faible et transitoire**. Après une TEP-FDG (~370 MBq, soit une dose efficace de l'ordre de **7 mSv**), l'activité est largement éliminée en **6 à 24 h** ; il est simplement conseillé de garder ses distances avec les jeunes enfants et les femmes enceintes pendant quelques heures et de boire abondamment [17][19]. Ces précautions diffèrent radicalement de celles d'un **traitement** par ¹³¹I, bien plus contraignantes.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Repère — ordre de grandeur des doses",
+            "text": "Une TEP-FDG délivre ~0,019 mSv/MBq chez l'adulte de 70 kg, soit ~7 mSv pour 370 MBq de traceur (auxquels s'ajoute la composante TDM) [31][32]. À titre de comparaison, le bruit de fond naturel moyen est de ~2,4 mSv/an [19]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — distinguer diagnostic et thérapie dans le discours",
+            "text": "Les craintes des patients portent souvent sur la radioactivité : préciser que les consignes d'éloignement d'un examen diagnostique se comptent en heures, alors qu'un traitement par ¹³¹I impose ≥ 1 m des enfants et femmes enceintes, le sommeil séparé des enfants < 3 ans ~2 semaines, et une élimination urinaire majoritaire la 1ʳᵉ semaine [36]."
+          }
+        ]
+      },
+      {
+        "title": "E17 - E17 - Points clés à retenir",
+        "text": "Synthèse haut rendement de la préparation, transversale aux principaux examens. Chaque seuil renvoie à sa source ; les valeurs précises par examen sont détaillées dans les sections dédiées.",
+        "list": [
+          "**Justification + optimisation d'abord** : vérifier identité, indication, poids et antériorités ; l'activité administrée doit rester aussi basse que raisonnablement possible mais suffisante au diagnostic [37].",
+          "**TEP-FDG** : jeûne **≥ 4 h** (eau plate seule), **glycémie < 200 mg/dL (11,1 mmol/L)** mesurée avant injection (cible optimale < 140 mg/dL), incubation **~60 min** au repos strict [1].",
+          "**Pas d'effort physique intense ≥ 6 h** avant une TEP-FDG (idéalement 24 h) pour éviter la captation musculaire et de la graisse brune [1].",
+          "**Aucun jeûne** pour la scintigraphie osseuse ni pour la **TEP-PSMA** ; hydratation suffisante encouragée [4][25].",
+          "**Abstinence caféine ≥ 12 h** (méthylxanthines longues ≥ 5 demi-vies) avant tout stress vasodilatateur cardiaque [11][26].",
+          "**Hydratation + mictions fréquentes** : réduisent la dose à la paroi vésicale (organe critique du FDG et du MDP) et améliorent le contraste [1][5].",
+          "**Blocage thyroïdien obligatoire** avant un DaTSCAN (¹²³I-ioflupane) : iodure de potassium ou perchlorate de potassium **400 mg**, ≥ 1 h avant [29].",
+          "**Arrêt des sources d'iode** avant scintigraphie thyroïdienne : produit de contraste iodé (~4–6 semaines), amiodarone (plusieurs mois), apport alimentaire [28].",
+          "**Grossesse** : déclaration systématique ; pas de justification d'interruption pour une dose fœtale **< 100 mGy** ; iodures contre-indiqués [13][18][35].",
+          "**Allaitement** : poursuivi pour la plupart des ⁹⁹ᵐTc, **~12 h** pour pertechnétate/MAA/thyroïde, **arrêt prolongé/définitif** pour les iodures ; seuil de reprise = dose à l'enfant **< 1 mSv** [7][8][10][34].",
+          "**Dose efficace TEP-FDG ~0,019 mSv/MBq** (CIPR 128), soit ~7 mSv pour 370 MBq + composante TDM [31][32].",
+          "**Toujours compléter** par les consignes écrites du service réalisant l'examen, qui priment sur toute consigne générique [37]."
+        ],
+        "stats": [
+          {
+            "value": "< 200 mg/dL",
+            "label": "Glycémie seuil TEP-FDG (11,1 mmol/L) [1]"
+          },
+          {
+            "value": "≥ 12 h",
+            "label": "Abstinence caféine, stress cardiaque [26]"
+          },
+          {
+            "value": "< 100 mGy",
+            "label": "Pas d'IMG justifiée (dose fœtale) [18]"
+          },
+          {
+            "value": "< 1 mSv",
+            "label": "Seuil de reprise de l'allaitement [34]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la glycémie se mesure par méthode validée",
+            "text": "Pour une correction du SUV fiable et la comparabilité inter-centres (harmonisation EARL), la glycémie doit être dosée par une méthode calibrée et validée, pas par un simple lecteur de chevet [1][38]."
+          }
+        ]
+      },
+      {
+        "title": "E18 - E18 - Références & liens utiles",
+        "text": "Recommandations professionnelles, sources primaires datées et cadre réglementaire ayant servi à chaque valeur chiffrée. Style de citation homogène ; toute valeur du présent article renvoie à l'un de ces numéros.\n\n**Préparation TEP-FDG (oncologie, cérébrale, pédiatrie)** — EANM tumour imaging v2.0 (Boellaard, 2015) [1] et sa mise à jour v3.0 (2025) [2] ; revue de préparation FDG (Surasi, JNMT 2014) [3] ; protocole FDG v2.0 CNP-MN/SFMN [20] ; cérébral SNMMI/EANM v2.0 (2024) [23] et EANM v3 [24] ; pédiatrie FDG SNMMI/EANM [22].\n\n**Autres examens & préparations spécifiques** — scintigraphie osseuse SNMMI 4.0 [4], EANM [5], BNMS [27] ; carte de dosage pédiatrique EANM [6] ; cardiologie SPECT ASNC 2016 [11] et EANM 2015 [26] ; thyroïde RAIU/scintigraphie [28] ; ¹³¹I (thérapie) SNMMI 3.0 [13], DTC SNMMI/EANM [14], régime pauvre en iode [15] ; rénal SNMMI/EANM 2018 [16] ; PSMA EANM/SNMMI 2.0 [25] ; SSTR PET [12] ; DaTSCAN (FDA) [29] ; ganglion sentinelle/lymphoscintigraphie [30].\n\n**Grossesse, allaitement & dosimétrie** — IAEA RPOP grossesse [17] ; imagerie de la patiente enceinte [18] ; HPS Q&A grossesse [35] ; interruption de l'allaitement (Naik, JNMT 2023) [7] et données biocinétiques (Leide-Svegborn, EJNMMI 2016) [8] ; LactMed sestamibi [9] et ¹²³I-iodure [10] ; ATA iode radioactif [21] ; CIPR 128 [31], CIPR 106 [34] ; dosimétrie FDG (fantômes ICRP) [32] ; exposition ⁹⁹ᵐTc-MDP [33] ; risques radiobiologiques FDG corps entier [19].\n\n**Qualité, harmonisation & réglementation** — information du patient SFMN/CNP-MN v2.0 (2022) [37] ; harmonisation EARL [38] et manuel EARL v4.2 [39] ; NRD France (IRSN/ASNR) [40].\n\n**Liens internes utiles (réseau de l'article)** — Examens : TEP-FDG, scintigraphie osseuse, scintigraphie myocardique de perfusion, DaTSCAN, scintigraphie thyroïdienne, TEP-PSMA, néphro-scintigraphie. Thèmes transverses : radioprotection (ALARA), dosimétrie (CIPR 128), contrôle qualité des radiopharmaceutiques.\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). La v3.0 EANM FDG [2] est appelée à remplacer la v2.0 [1] comme référence principale.*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Note de sourçage",
+            "text": "Les valeurs « cœur » de la préparation TEP-FDG (jeûne 4 h, glycémie < 200 mg/dL, hydratation ~1 L/2 h, incubation 60 min, effort ≥ 6 h) proviennent du guide EANM tumour imaging v2.0 réellement consulté [1]. Les seuils de grossesse/allaitement et de dosimétrie reposent sur la CIPR 84/106/128 et les recommandations EANM/HPS [8][31][34][35]."
+          }
+        ]
+      }
+    ]
+  }
+}

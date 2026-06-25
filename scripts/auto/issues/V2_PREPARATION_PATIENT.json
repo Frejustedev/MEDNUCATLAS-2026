@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section C11 (insuffisant rénal) — « administrer 25–50 mg de captopril PO avec un délai de 60–90 min »",
+    "problem": "Le délai injection-radiopharmaceutique après captopril est de 60 min (pic de concentration plasmatique du captopril à ~60 min), valeur retenue par la fiche étalon elle-même et par les recommandations SNMMI/EANM 2018. La fourchette « 60–90 min » est une légère sur-extension ; le reste du texte (fiche étalon §6) indique bien 60–90 min comme variante d'extrait à reconfirmer, mais la littérature standard cible 60 min.",
+    "fix": "Harmoniser sur « délai ~60 min » (ou préciser « 60 min, parfois jusqu'à 90 min selon protocole ») pour éviter une incohérence interne avec le reste de l'article qui n'évoque pas ce délai ailleurs."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A4 / C10 / E16 — tableau allaitement : « 99mTc-HMPAO leucocytes : ~24 h »",
+    "problem": "Affirmation correcte mais la formulation « certains pays standardisent 24 h pour tous les 99mTc » est imprécise : la recommandation forfaitaire NRC/ACMUI usuelle est de 12 h (mentionnée ailleurs dans l'article), pas 24 h, pour la majorité des 99mTc. Le 24 h concerne spécifiquement l'HMPAO-leucocytes. Risque de confusion mineure pour le lecteur.",
+    "fix": "Clarifier que le forfait de simplification habituel est 12 h (NRC/ACMUI), le 24 h étant réservé aux leucocytes marqués HMPAO ; supprimer ou nuancer « 24 h pour tous les 99mTc »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D13 — consignes post-131I : « dormir séparément des enfants < 3 ans pendant ~2 semaines »",
+    "problem": "La fiche SNMMI grand public (référence [36] citée) recommande de « dormir seul pendant 7 jours » comme repère générique, sans le seuil spécifique « enfants < 3 ans / ~2 semaines ». Le chiffre de 2 semaines provient de recommandations dérivées du débit de dose résiduel (variable selon l'activité) et n'est pas une valeur fixe SNMMI. Présenté comme un repère chiffré ferme, il peut sur-spécifier une consigne en réalité individualisée.",
+    "fix": "Préciser que ces durées (distance, lits séparés) sont individualisées selon l'activité résiduelle / le débit de dose mesuré, et non des seuils universels ; rappeler le repère SNMMI « dormir seul ~7 jours » comme alternative."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 6 fiche / B5 — pédiatrie : « 99mTc-phosphonates : classe B, activité de base 35 MBq, minimum 40 MBq »",
+    "problem": "Le minimum recommandé de 40 MBq pour les phosphonates 99mTc (poids 3 kg) est confirmé par la carte EANM. En revanche le couple « classe B / activité de base 35 MBq » n'a pas pu être confirmé sur la carte de dosage EANM 2016 dans les sources consultées (la valeur de base et la classe varient selon les versions de la carte). La fiche étalon le signale déjà comme « extrait » à reconfirmer.",
+    "fix": "Reconfirmer sur le texte intégral de la carte de dosage EANM (classe et activité de base exactes pour les phosphonates) avant publication ferme ; conserver le minimum de 40 MBq qui est solide."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [8] — Leide-Svegborn et al., EANM 2016 (breastfeeding interruption)",
+    "problem": "L'URL/DOI cité est https://link.springer.com/article/10.1007/s00259-015-3286-0 (DOI série 2015). Or le DOI faisant autorité de cet article (confirmé par PubMed PMID 26732471, Springer et Lund University Research Portal) est 10.1007/s00259-016-3326-4. Le titre, la revue, le volume et la page (Eur J Nucl Med Mol Imaging 2016;43:808) sont exacts, et le lien redirige (donc résolvable), mais le DOI cité ne correspond pas formellement à ce papier dans les enregistrements primaires. Citation isolée non fabriquée mais identifiant douteux.",
+    "fix": "Remplacer l'URL par le DOI correct : https://doi.org/10.1007/s00259-016-3326-4 (ou https://pubmed.ncbi.nlm.nih.gov/26732471/). Vérifier que le lien pointe bien vers l'article Leide-Svegborn et non vers un autre article de la même revue."
+  }
+]
