@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section D15 - Dosimétrie, tableau 'Dose corps entier (vidange 4,8 h) 3,7 mSv / 370 MBq' et 'miction à 30 min puis q4h 1,5 mSv / 370 MBq'",
+    "problem": "Double imprécision. (1) Terminologie : les chiffres de Stabin/Taylor 1992 (JNM 33:33-40) sont des DOSES EFFICACES / équivalents de dose efficace (effective dose equivalent), PAS des 'doses corps entier' (qui désigne la dose absorbée au corps entier, valeur différente et bien plus faible). Le libellé 'Dose corps entier' est donc factuellement faux. (2) Cohérence interne : ces valeurs entrent en tension apparente avec le coefficient de dose efficace adulte annoncé ailleurs dans le même article (~0,007-0,01 mSv/MBq). 370 MBq x 0,01 = 3,7 mSv (cohérent pour la vidange 4,8 h), mais la ligne '1,5 mSv / 370 MBq' implique ~0,004 mSv/MBq, sans que le lecteur comprenne que l'écart vient uniquement du protocole de vidange vésicale. Le tableau juxtapose deux coefficients implicites (~0,004 vs ~0,01 mSv/MBq) sans le dire explicitement.",
+    "fix": "Remplacer 'Dose corps entier' par 'Dose efficace (équivalent de dose efficace, Stabin 1992)' et ajouter une note : la différence 3,7 vs 1,5 mSv pour une même activité tient exclusivement au protocole de vidange vésicale (organe critique = paroi vésicale), illustrant la fourchette 0,004-0,01 mSv/MBq. Aligner ainsi le tableau avec la valeur de référence annoncée."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard ('γ pur 140 keV') et section A1/identityCard vs corps de texte (B7, A1, D16 : '140,5 keV')",
+    "problem": "Incohérence de précision sur l'énergie du photon gamma : la carte d'identité indique '140 keV' alors que le corps du texte indique '140,5 keV'. La valeur exacte est 140,5 keV (~89% d'abondance), vérifiée. Aucune des deux n'est fausse cliniquement (140 keV est l'arrondi usuel), mais l'incohérence interne nuit à la rigueur.",
+    "fix": "Harmoniser : soit '140,5 keV' partout, soit '~140 keV' partout. Préférer '140,5 keV' pour la rigueur physique, ou mentionner explicitement l'arrondi clinique à 140 keV."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D15 - Dosimétrie (texte) : « Coefficient de dose efficace adulte ≈ 0,007 mSv/MBq selon StatPearls [5] »",
+    "problem": "Misattribution de citation. La source [5] (StatPearls, Nuclear Renal Scan, NBK562236) a été vérifiée par WebFetch : elle indique seulement une exposition « approximately 1 mSv » et NE contient PAS le coefficient 0,007 mSv/MBq ni aucune valeur en mSv/MBq. Le chiffre lui-même est plausible (cohérent avec ICRP 128 [34]), mais il est faussement attribué à [5].",
+    "fix": "Soit rattacher le 0,007 mSv/MBq à une source qui le contient réellement (ICRP 128 [34] ou Image Wisely [17]), soit reformuler : « ~1 mSv pour un examen standard [5] ; coefficient ≈ 0,007–0,01 mSv/MBq selon ICRP 128 [34] ». Vérifier que [34] porte bien ce coefficient avant de l'y rattacher."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections C12 et E20 (Cas 3) : « énalaprilate IV 40 µg/kg, max 2,5 mg [7][27] »",
+    "problem": "La source [27] (nucmed-guide.app, chapitre 226 captopril) a été vérifiée : la page existe et confirme le captopril 25–50 mg per os et l'arrêt des IEC, mais NE mentionne PAS l'énalaprilate IV. L'affirmation sur l'énalaprilate repose donc uniquement sur [7] (Taylor Part 2, source autoritaire), [27] étant surajouté à tort pour ce point précis.",
+    "fix": "Retirer [27] de la phrase sur l'énalaprilate IV (garder [7] seul), ou conserver [27] uniquement pour la partie captopril per os / arrêt des IEC qu'il couvre effectivement."
+  }
+]
