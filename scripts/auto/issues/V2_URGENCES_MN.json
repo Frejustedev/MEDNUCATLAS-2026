@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A1 (Carte d'identité), tableau + stats : 'Antidote de l'anaphylaxie | Adrénaline IM 0,3–0,5 mg (adulte)' et identityCard 'Anaphylaxie — 1re intention | Adrénaline IM 0,3–0,5 mg (cuisse)'",
+    "problem": "Le contenu donne tantôt la posologie adulte fixe '0,3–0,5 mg' (sections A1, A3, B2, identityCard), tantôt la posologie pondérale '0,01 mg/kg, max 0,5 mg' (sections B2, E1, quiz). Les deux sont correctes et concordantes (recommandations ESUR/ACR pour le pondéral, guideline anaphylaxie 2020 pour le 0,3–0,5 mg adulte), mais la coexistence des deux formulations sans harmonisation peut prêter à confusion. Vérifié : adrénaline IM 1re intention confirmée par les guidelines (PMC8996305, AAFP 2020, ESUR).",
+    "fix": "Harmoniser en présentant systématiquement les deux : 'Adrénaline IM 0,01 mg/kg de 1:1000 (max 0,5 mg), soit 0,3–0,5 mg chez l'adulte, face antéro-latérale de cuisse'."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D3 (Situations particulières) : 'la crémation peut être autorisée sans précaution particulière en dessous d'un seuil de l'ordre de ~555 MBq (~15 mCi) de ¹³¹I'",
+    "problem": "Cette valeur seuil (~555 MBq / 15 mCi pour crémation sans précaution) est tirée d'un référentiel secondaire (NTAnet/bulletin 'Hot Bodies') et non d'un texte réglementaire de référence (IAEA SRS-40, ICRP). Les seuils nationaux de gestion des corps radioactifs varient fortement (la plupart des pays imposent de consulter le PCR/RSO et utilisent des valeurs différentes). La valeur est présentée avec prudence ('de l'ordre de', 'référentiel cité') mais reste une donnée faiblement sourcée pour une affirmation pratique.",
+    "fix": "Reformuler en insistant davantage sur la variabilité nationale et la consultation obligatoire de la PCR/RSO : 'les seuils varient selon les pays ; consulter impérativement la PCR/RSO, certains référentiels citant un ordre de grandeur de ~555 MBq pour la crémation' — éviter de présenter 555 MBq comme un seuil opérationnel ferme."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A2 stats et figureCaption : dose absorbée 'à 5 cm³ de tissu 1,1–8,7 Gy' et 'dose équivalente superficielle 10 cm² jusqu'à 4,2 Sv' attribuées à [36] (Osborne/Front Med 2021) ET parfois à van der Pol [1]/[36]",
+    "problem": "Le WebFetch direct de van der Pol 2017 (PMC5434120) indique que cet article NE fournit PAS de valeurs standardisées de dose à 5 cm³ de tissu ni de dose équivalente superficielle à 10 cm². Ces valeurs (1,1–8,7 Gy / 4,2 Sv) proviennent en réalité de PMC8273265 [36], correctement cité dans la plupart des sections. Quelques passages (ex. fiche A1/A2) pourraient laisser croire qu'elles viennent de van der Pol [1]. Attribution globalement correcte mais à vérifier pour cohérence.",
+    "fix": "S'assurer que les valeurs '1,1–8,7 Gy à 5 cm³' et '4,2 Sv à 10 cm²' sont systématiquement attribuées à [36] (Osborne 2021) et non à van der Pol [1]."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E1, fiche-réflexe 2 : 'ⁱⁱᵉᵐ ⁹⁹ᵐTc-HDP'",
+    "problem": "Coquille typographique (caractères en exposant parasites 'ⁱⁱᵉᵐ') dans la mention de l'extravasation de 99mTc-HDP traitée par hyaluronidase. Non factuel mais nuit à la lisibilité d'un contenu médical de référence.",
+    "fix": "Corriger en 'extravasation de ⁹⁹ᵐTc-HDP traitée par hyaluronidase'."
+  },
+  {
+    "severity": "major",
+    "where": "Sections A2 and B2 — claim attributed to source [4] (Martins et al., Ann Pharmacother 2025)",
+    "problem": "FIDELITY ERROR (not fabrication). The text states «le système d'organe le plus fréquemment touché est la peau et le tissu sous-cutané [4]». The actual article [4] ranks the most affected System Organ Class as Gastrointestinal Disorders (18.3%), then General/Administration Site Conditions (16.5%), with Skin and Subcutaneous Tissue Disorders only THIRD (11.2%). The source was verified live; the claim contradicts it.",
+    "fix": "Remplacer par : «le système d'organe le plus fréquemment touché en pharmacovigilance est l'appareil digestif (18,3 %), devant les troubles généraux et du site d'administration (16,5 %), la peau/tissu sous-cutané n'arrivant qu'en 3e position (11,2 %) [4]». Corriger les deux occurrences (A2 et B2)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B2 — «les catégories dominantes sont les ‹troubles généraux et site d'administration› (42,0 %) et le ‹système nerveux› (16,9 %) [2]»",
+    "problem": "Figures attributed to [2] (Schreuder prospective study of 1002 patients). These specific percentages (42.0%, 16.9%) were not directly confirmed against [2] in this pass. They are plausible and internally consistent with the Schreuder study (which is patient-reported, distinct from the Martins SOC ranking), so this is a low-confidence flag rather than a confirmed error — but the 42.0% value warrants a direct check against the source table before publication.",
+    "fix": "Vérifier les pourcentages 42,0 % et 16,9 % directement dans Schreuder et al. (Drug Safety 2020, PMC7847431) et confirmer qu'ils proviennent bien de cette étude et non d'une confusion avec [4]."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B1 — «la hyaluronidase a été employée pour disperser un dépôt (ⁱⁱᵉᵐ ⁹⁹ᵐTc-HDP) [16]»",
+    "problem": "Garbled/erroneous superscript artefact «ⁱⁱᵉᵐ» before ⁹⁹ᵐTc-HDP — a typographic corruption, not a content error. The underlying claim (hyaluronidase for a 99mTc-HDP deposit, source [16] Doornhof 2024) is correct.",
+    "fix": "Supprimer l'artefact «ⁱⁱᵉᵐ » : lire «...pour disperser un dépôt de ⁹⁹ᵐTc-HDP [16]»."
+  }
+]

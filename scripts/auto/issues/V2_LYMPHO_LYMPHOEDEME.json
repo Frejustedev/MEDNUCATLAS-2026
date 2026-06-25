@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "major",
+    "where": "Sections A5 (tableau perf. + Point expert ICG), C14 (tableau + infobox + texte), D17 (tableau + stat + Limites), D19 (tableau + texte), E21 (liste dernier point), E22 (FAQ « Lymphoscintigraphie ou ICG »), quiz Q17 — partout la formule « détection subclinique 62 % (ICG) vs 8 % (lymphoscintigraphie) »",
+    "problem": "Inversion factuelle de la donnée princeps. Dans l'étude source réellement citée (Mihara et al., PLoS One 2012;7(6):e38182, lymphœdème précoce du membre supérieur), la sensibilité de l'ICG = 1,0 (100 %) et celle de la LYMPHOSCINTIGRAPHIE = 0,62 (62 %). Le contenu attribue le « 62 % » à l'ICG et invente un « 8 % » non sourcé pour la lymphoscintigraphie. Le chiffre de 62 % est donc collé sur le mauvais examen et le 8 % ne figure pas dans l'article. C'est une affirmation chiffrée fausse, répétée ~8 fois et reprise dans un item de quiz (réponse marquée correcte « ≈ 62 % vs 8 % »), ce qui en fait une erreur enseignée. La conclusion qualitative (ICG > LS pour la maladie subclinique) reste juste, mais les chiffres sont erronés.",
+    "fix": "Remplacer partout « 62 % (ICG) vs 8 % (LS) » par les vraies valeurs de Mihara 2012 : sensibilité ICG 100 % vs lymphoscintigraphie 62 % pour le lymphœdème précoce/subclinique du membre supérieur. Corriger l'option et l'explication de la question E22-Q17 en conséquence (l'ICG détecte ~100 % vs ~62 % pour la LS). Conserver séparément l'autre donnée correcte « ICG détecte 100 % des membres symptomatiques vs ~70 % LS » (26/37 vs 37/37) sans la confondre avec les chiffres subcliniques."
+  },
+  {
+    "severity": "critical",
+    "where": "Sections A5, A6 (point expert ICG), C14 (tableau + infoBox faux négatif), D17 (stats + tableau ICG + limites), D19, E21 (liste, dernier point), E22 (FAQ ICG), et quiz #17 — partout où apparaît « 62 % vs 8 % » / « 62 % ICG vs 8 % LS »",
+    "problem": "FABRICATION / MISATTRIBUTION de statistique. Le chiffre « détection subclinique 62 % (ICG) vs 8 % (lymphoscintigraphie) » est attribué aux sources [19] (MDPI) et [20] (Mihara PLoS One 2012) mais ne s'y trouve PAS et est inversé. La source [20] (vérifiée) rapporte une sensibilité de 0,62 (=62 %) pour la LYMPHOSCINTIGRAPHIE et 1,0 (=100 %) pour l'ICG dans le lymphœdème précoce du membre supérieur. Le « 62 % » est donc la valeur de la LS, pas de l'ICG, et le « 8 % » n'apparaît dans aucune des deux sources. Le contenu a donc (a) inversé l'attribution du 62 % et (b) inventé le 8 %. Erreur propagée dans ~8 emplacements, y compris une réponse de quiz cotée « difficile ».",
+    "fix": "Remplacer partout par la donnée réellement sourcée : « ICG 100 % vs lymphoscintigraphie 62 % de sensibilité pour le lymphœdème précoce/subclinique du membre supérieur [20] ». Supprimer le « 8 % ». Corriger en conséquence la stat de D17 (« 62 % vs 8 % » → reformuler), le quiz #17 et sa correction (« ≈ 62 % vs 8 % » → « ICG 100 % vs LS 62 % »), et la liste E21."
+  },
+  {
+    "severity": "major",
+    "where": "Section D15 - Dosimétrie (tableau + infoBox « ne pas confondre les deux coefficients ») et stat « 0,00624 mSv/MBq (réf. RCP voie IV) » ; identityCard implicite",
+    "problem": "Donnée dosimétrique douteuse / probablement mal attribuée à [21]. Le contenu affirme que le RCP NanoScan [21] donne 0,00624 mSv/MBq « par voie IV » et présente ce chiffre en opposition aux 0,014 mSv/MBq de la voie SC [1]. Or le RCP NanoScan décrit la lymphoscintigraphie par voie SOUS-CUTANÉE et indique une dose efficace d'environ 0,44 mSv pour 110 MBq chez l'adulte de 70 kg (soit ≈ 0,004 mSv/MBq en SC, pas IV). Le cadrage « 0,00624 mSv/MBq = voie IV » et les valeurs par organe (foie 0,016 ; vessie 0,00996 mGy/MBq) n'ont pas pu être confirmés dans le SPC et semblent mal sourcés. Le PDF [21] existe et est valide (300 Ko), mais n'est pas lisible/OCR pour confirmer ces chiffres précis — confiance modérée.",
+    "fix": "Re-vérifier directement dans le SPC NanoScan les coefficients par organe et la dose efficace, et corriger le cadrage : le SPC documente la voie sous-cutanée (≈ 0,44 mSv pour 110 MBq). Ne pas opposer « SC vs IV » si le SPC lui-même tabule la voie SC. Conserver le 0,014 mSv/MBq [1] qui, lui, est confirmé par la source [1]."
+  },
+  {
+    "severity": "minor",
+    "where": "Numérotation des sections (medecin_nuc.sections) : passage de « E22 » directement à « E25 »",
+    "problem": "Saut de numérotation des sections : E20, E21, E22 puis E25, sans E23 ni E24. La couverture A→E est bien présente (carte d'identité + A1-A6, B7-B10, C11-C14, D15-D19, E20-E22, E25), donc l'exigence de couverture est satisfaite, mais l'incohérence de numérotation peut laisser croire à des sections manquantes.",
+    "fix": "Renuméroter la dernière section E25→E23 (ou aligner sur l'étalon), afin que la séquence E soit continue."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [5] vs [6] (Consensus ISL 2020) — non re-téléchargées pendant la vérification",
+    "problem": "Les sources [5] (PubMed 32521126) et [6] (PDF isl.arizona.edu) du Consensus ISL 2020 n'ont pas été refetchées une à une, mais le document et son contenu (stades 0-III) sont notoires et cohérents avec [12] StatPearls (vérifiée). Les PDF [21][23][24] résolvent vers de vrais fichiers (300/112/106 Ko) mais ne sont pas OCR-lisibles ; [9] AJR et [10] JNM renvoient 403 (anti-bot éditeur) mais sont confirmées réelles via recherche (titres/auteurs/pages exacts). Aucune URL fabriquée détectée.",
+    "fix": "Aucune action requise : URLs plausibles et non inventées. Mention pour traçabilité de la vérification."
+  }
+]
