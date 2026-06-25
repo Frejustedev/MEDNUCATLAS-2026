@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "major",
+    "where": "Section D15 - Dosimétrie, paragraphe 'Modulation' vs tableau dosimétrique",
+    "problem": "Contradiction interne directe sur la dose efficace du 99mTc-pertechnétate selon la voie. Le tableau de D15 (et l'identityCard, le stat block, la synthèse E21) affirme '0,013 mSv/MBq (IV)'. Mais le paragraphe 'Modulation' du même D15 écrit : « l'administration ORALE (0,013 mSv/MBq) expose davantage le côlon que la voie IV (≈ 0,009 mSv/MBq) ». Les deux assignations s'opposent : 0,013 ne peut pas être à la fois la valeur IV et la valeur orale. La valeur ICRP/référence standard de 0,013 mSv/MBq correspond bien à la voie IV (vérifié : ICRP, sources secondaires). L'affectation '0,013 = oral / 0,009 = IV' du paragraphe est erronée et contredit le reste de la fiche, induisant le lecteur en erreur sur un chiffre dosimétrique.",
+    "fix": "Harmoniser : 0,013 mSv/MBq est la dose efficace du 99mTc-pertechnétate par voie IV (organe critique côlon/vessie). Supprimer ou corriger la phrase du paragraphe 'Modulation' qui inverse oral/IV. Si une distinction oral vs IV est conservée, la sourcer explicitement et la rendre cohérente avec le tableau (la voie orale expose effectivement davantage le côlon, mais l'affectation des valeurs doit être corrigée)."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections C11, C12, C13, C14, B10 (stat) et plusieurs encadrés/quiz",
+    "problem": "Notation erronée répétée « ⁹⁵ᵐTc » au lieu de « ⁹⁹ᵐTc » (ex. C11 'uptake ⁹⁵ᵐTc, gamma-caméra', 'médullosurrénale gastrique au ⁹⁵ᵐTc', C12/C13/C14 'au ⁹⁵ᵐTc', stat 'TcTU normal (⁹⁵ᵐTc, gamma-caméra)'). Le 95mTc est un radionucléide réel et distinct (période ~61 j, non utilisé en imagerie thyroïdienne). Dans une fiche médicale de référence, cette confusion de masse isotopique est une erreur factuelle de notation, même si elle est manifestement typographique (les valeurs associées — 140 keV, 6,0 h — sont celles du 99mTc).",
+    "fix": "Remplacer toutes les occurrences de ⁹⁵ᵐTc par ⁹⁹ᵐTc dans l'ensemble du contenu (sections C11-C14, stats, quiz). Le traceur thyroïdien est exclusivement le ⁹⁹ᵐTc-pertechnétate."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D15 tableau dosimétrie et 'Repères d'activité réelle' (dose thyroïdienne I-123)",
+    "problem": "La dose absorbée thyroïdienne de l'I-123 est donnée à deux valeurs différentes dans la fiche : '≈ 1,78-1,9 mGy/MBq (capt. 15 %)' dans le tableau, et '1,9 mGy/MBq' dans le texte, alors que d'autres passages/sources citent 1,78. Ce n'est pas une erreur franche (les deux chiffres proviennent de sources distinctes citées dans la fiche étalon et restent dans une fourchette acceptable), mais l'écart non explicité peut prêter à confusion.",
+    "fix": "Uniformiser en donnant une fourchette explicite (≈ 1,8-1,9 mGy/MBq à 15 % de captation) ou préciser la source de chaque valeur, plutôt que d'alterner 1,78 et 1,9 sans contexte."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections C11 (Aspect normal), C14 (Pièges), and several stats/infoBoxes",
+    "problem": "Le radionucléide est noté '⁹⁵ᵐTc' à plusieurs reprises (ex. 'TcTU normal (⁹⁵ᵐTc, gamma-caméra)', 'la captation gastrique au ⁹⁵ᵐTc', 'pas de RAIU au ⁹⁵ᵐTc', 'nodule chaud au ⁹⁵ᵐTc') au lieu de '⁹⁹ᵐTc'. Le ⁹⁵ᵐTc n'est pas le radio-isotope utilisé en clinique ; il s'agit d'une coquille typographique (masse 95 au lieu de 99). Erreur de cohérence interne, sans incidence sur le sourcing.",
+    "fix": "Remplacer toutes les occurrences de '⁹⁵ᵐTc' par '⁹⁹ᵐTc' dans C11, C14 et les blocs stats/infoBoxes concernés."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz, explication de la question sur la dose efficace du ⁹⁹ᵐTc-pertechnétate",
+    "problem": "L'explication cite '(ICRP 106/128)' alors que la référence dosimétrique listée dans les sources est ICRP 128 [12][19] uniquement ; ICRP 106 n'est pas une source déclarée. Mention parasitaire non sourcée (mais valeur 0,013 mSv/MBq correcte et conforme à [12]).",
+    "fix": "Remplacer '(ICRP 106/128)' par '(ICRP 128)' pour s'aligner sur les sources déclarées."
+  }
+]
