@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A2 / C1 / quiz — coefficient de dose efficace adulte du 18F-FDG",
+    "problem": "L'article utilise tantôt 0,016 mSv/MBq (modèle OLINDA, sections A2/C1) tantôt 0,019 mSv/MBq (ICRP 106, quiz Q « coefficient adulte ») pour le FDG adulte. Les deux chiffres figurent bien dans les faits de référence (0,016 OLINDA ; ~0,019 ICRP 106/128), donc aucune valeur n'est fausse, mais la coexistence des deux sans note explicative peut prêter à confusion pour le lecteur.",
+    "fix": "Ajouter une demi-phrase précisant que 0,016 mSv/MBq est la valeur OLINDA 2.0 et ~0,019 mSv/MBq la valeur ICRP 106/128, pour lever l'ambiguïté (les deux sont admissibles)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section C2 — facteur de dose 18F-NaF nord-américain (consensus NA)",
+    "problem": "Le tableau C2 indique pour le 18F-NaF un consensus NA 'par kg' de 1,85 MBq/kg (cohérent avec le tableau §5 de la Recherche 1, 1,85 MBq/kg / 0,05 mCi/kg), mais le calcul de doses efficaces cité ensuite (NA NaF 3,3→3,7 mSv) provient d'un jeu de données harmonisation Lassmann&Treves utilisant 2,22 MBq/kg. La valeur 1,85 MBq/kg est la valeur consensus 2024 retenue et n'est pas erronée ; seule la non-correspondance avec l'ancien 2,22 MBq/kg des doses efficaces citées pourrait être clarifiée.",
+    "fix": "Préciser que les doses efficaces NaF NA (3,3–3,7 mSv) reposent sur l'ancien coefficient 2,22 MBq/kg (harmonisation 2014), distinct du 1,85 MBq/kg du consensus 2024, pour éviter qu'un lecteur ne recalcule incohéremment."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [5] (Lassmann & Treves 2014 harmonization) — référence dans la liste des sources et table E3",
+    "problem": "Le PMID indiqué est 24893792, qui est ERRONÉ. Le PMID correct de cet article (Paediatric radiopharmaceutical administration: harmonization of the 2007 EANM paediatric dosage card... EJNMMI 2014;41(5):1036-41) est 24599377. Vérifié par WebFetch sur les deux PMID et confirmé par WebSearch : 24893792 ne correspond pas à cet article. Tous les autres identifiants de [5] (titre, auteurs, journal, année, volume 41, issue 5, pages 1036-41, et l'URL PDF SNMMI) sont exacts et vérifiables — il s'agit d'une coquille de PMID, non d'une source inventée.",
+    "fix": "Corriger le PMID de la source [5] : remplacer 24893792 par 24599377 (ou supprimer la mention PMID, puisque la citation [5] n'affiche pas explicitement le PMID dans le corps — il n'apparaît que dans la liste de sources fournie). L'URL et toutes les valeurs chiffrées restent valides."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [29] / section C2-E3 (2024 Update NA Consensus, J Nucl Med Technol)",
+    "problem": "L'URL cite la version early-access 'early/2025/07/15/jnmt.125.270161'. L'article a depuis été paginé : J Nucl Med Technol 2025;53(3):193 (PMID 40664486 confirmé exact). Ce n'est PAS une fabrication (PMID juste, document réel, valeurs MBq/kg vérifiées exactes), mais l'URL early-access pourra devenir instable.",
+    "fix": "Optionnel : remplacer l'URL early-access par l'URL paginée stable https://tech.snmjournals.org/content/53/3/193 . Aucune correction de fond requise."
+  }
+]

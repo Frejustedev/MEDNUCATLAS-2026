@@ -1,0 +1,1228 @@
+{
+  "id": "V2_CALCUL_DOSE_PEDIATRIQUE",
+  "type": "autre",
+  "cat": "calculateurs",
+  "catLabel": "Calculateurs",
+  "title": "Calcul de l’activité pédiatrique (EANM Dosage Card)",
+  "difficulty": "avancé",
+  "tags": [
+    "calculateur",
+    "dose pédiatrique",
+    "EANM Dosage Card",
+    "activité administrée",
+    "radioprotection",
+    "weight-independent effective dose",
+    "NRD pédiatriques",
+    "Image Gently",
+    "ICRP 128",
+    "activité minimale"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "EANM Paediatric Dosage Card, Version 5.7.2016 (carte officielle : formule, table des multiples A/B/C, baseline & activités minimales, exemples)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf",
+      "verified": true
+    },
+    {
+      "title": "EANM — Dosage Card (page officielle de l'initiative : dernière mise à jour août 2016, app PedDose, disclaimer)",
+      "url": "https://www.eanm.org/initiatives/dosage-card/",
+      "verified": true
+    },
+    {
+      "title": "Jacobs F, Thierens H, Piepsz A, et al. Optimised tracer-dependent dosage cards to obtain weight-independent effective doses. Eur J Nucl Med Mol Imaging. 2005;32(5):581-8 (PMID 15619101)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15619101/",
+      "verified": true
+    },
+    {
+      "title": "IAEA Nuclear Medicine Atlas — Appendix I. Paediatric Dosage of Radiopharmaceuticals (tables, carte EANM)",
+      "url": "https://humanhealth.iaea.org/hhw/nuclearmedicine/paediatricsandnephrourology/iaea_publications/atlas/appendix_i.pdf",
+      "verified": true
+    },
+    {
+      "title": "Lassmann M, Treves ST. Paediatric radiopharmaceutical administration: harmonization of the 2007 EANM paediatric dosage card (version 1.5.2008) and the 2010 North American consensus guidelines. Eur J Nucl Med Mol Imaging. 2014;41(5):1036-41 (PMID 24893792)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/EANM%20Pediatric%20Harmonization%20Guideline.pdf",
+      "verified": true
+    },
+    {
+      "title": "2024 Update of the North American Consensus Guidelines for Pediatric Administered Radiopharmaceutical Activities (SNMMI/Image Gently)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2024/2024%20UPDATE%20OF%20N%20AMERICAN%20CONSENSUS%20GUIDELINES%20FOR%20PEDIATRIC%20ADMINISTERED%20RADIOPHARMACEUTICAL.pdf",
+      "verified": true
+    },
+    {
+      "title": "Gelfand MJ, Parisi MT, Treves ST. Pediatric Radiopharmaceutical Administered Doses: 2010 North American Consensus Guidelines. J Nucl Med. 2011;52(2):318-22",
+      "url": "https://jnm.snmjournals.org/content/52/2/318",
+      "verified": true
+    },
+    {
+      "title": "Lassmann M, Biassoni L, Monsieurs M, Franzius C, Jacobs F. The new EANM paediatric dosage card. Eur J Nucl Med Mol Imaging. 2007;34(5):796-8 (PMID 17406866)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17406866/",
+      "verified": true
+    },
+    {
+      "title": "FDA — Fludeoxyglucose F 18 Injection (FDG) prescribing information (NDA 021870 ; propriétés physiques F-18 : β+, 511 keV, T1/2 109.7 min)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2005/021870lbl.pdf",
+      "verified": true
+    },
+    {
+      "title": "Technetium-99m generator — Wikipedia (Mo-99/Tc-99m, 140 keV, T1/2 6 h)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m_generator",
+      "verified": true
+    },
+    {
+      "title": "Mo99-Tc99m Generator — StatPearls, NCBI Bookshelf (production, élution)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/",
+      "verified": true
+    },
+    {
+      "title": "Mise à jour des NRD en pédiatrie : enquête SFMN-SFPM-IRSN sur les pratiques. Médecine Nucléaire 2017;41(3):170 (EM-consulte)",
+      "url": "https://www.em-consulte.com/article/1121449",
+      "verified": true
+    },
+    {
+      "title": "NRD en Médecine Nucléaire — ASNR (niveaux de référence diagnostiques français)",
+      "url": "https://nrd.asnr.fr/medecine-nucleaire",
+      "verified": true
+    },
+    {
+      "title": "SFPM — Dosimétrie des explorations diagnostiques en médecine nucléaire (rapport 2017 n°33)",
+      "url": "https://www.sfpm.fr/wp-content/uploads/2024/03/sfpm_2017_33_dosimetrie_explorations_diagnostiques_mn.pdf",
+      "verified": true
+    },
+    {
+      "title": "EANM App-Calc — calculateur d'activité pédiatrique v2.01",
+      "url": "https://eanm.org/app-calc/",
+      "verified": true
+    },
+    {
+      "title": "Lassmann M, Treves ST. Standardization of administered activities in paediatric nuclear medicine: the EANM perspective. Eur J Nucl Med Mol Imaging. 2016 (DOI 10.1007/s00259-016-3474-6)",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3474-6",
+      "verified": true
+    },
+    {
+      "title": "Dickson J, Eberlein U, Lassmann M. The effect of modern PET technology and techniques on the EANM paediatric dosage card. Eur J Nucl Med Mol Imaging. 2022;49(6):1964-1969 (PMC9016049)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9016049/",
+      "verified": true
+    },
+    {
+      "title": "Tran-Gia J, et al. Analysis of image data from the EuroNet PHL-C2 trial: a proposal to update the EANM Paediatric Dosage Card (FDG). Eur J Nucl Med Mol Imaging 2023 (PMC10774179)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10774179/",
+      "verified": true
+    },
+    {
+      "title": "Waelti S, et al. A third of the radiotracer dose: two decades of progress in pediatric [18F]FDG PET/CT and PET/MR. Eur Radiol. 2024;34(5):3252-3259 (PMC11126459)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11126459/",
+      "verified": true
+    },
+    {
+      "title": "Quinn BM, et al. Patient-adapted organ absorbed dose and effective dose estimates in pediatric 18F-FDG PET/CT studies. BMC Med Imaging. 2020 (PMC6988339)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6988339/",
+      "verified": true
+    },
+    {
+      "title": "Mattsson S, et al. ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals. Ann ICRP 2015 (DOI 10.1177/0146645314558019)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Adeleye B, Chetty N. Radiation dose from 18F-FDG PET/CT procedures: influence of specific CT model and protocols. Radioprotection. 2018;53(2):107-113",
+      "url": "https://www.radioprotection.org/articles/radiopro/full_html/2018/02/radiopro170056/radiopro170056.html",
+      "verified": true
+    },
+    {
+      "title": "Khoshyari-morad Z, et al. Monte Carlo-based estimation of patient absorbed dose in 99mTc-DMSA, -MAG3, -DTPA SPECT using UF phantoms (arXiv:2103.00619)",
+      "url": "https://arxiv.org/pdf/2103.00619",
+      "verified": true
+    },
+    {
+      "title": "Plyku D, et al. Renal 99mTc-DMSA pharmacokinetics in pediatric patients. EJNMMI Phys. 2021;8:53 (PMC8292521)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8292521/",
+      "verified": true
+    },
+    {
+      "title": "Soares Machado J, et al. Biokinetics, dosimetry, and radiation risk in infants after 99mTc-MAG3 scans. EJNMMI Res. 2018 (PMC5796928)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5796928/",
+      "verified": true
+    },
+    {
+      "title": "Vali R, et al. SNMMI Procedure Standard/EANM Practice Guideline on Pediatric 18F-FDG PET/CT for Oncology 1.0. J Nucl Med. 2021;62(1):99-110 (PMC8679588)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8679588/",
+      "verified": true
+    },
+    {
+      "title": "CNP-MN. Guide pour la rédaction de protocole pour la scintigraphie osseuse v2.0 (2022) — doses pédiatriques EANM, dosimétrie HMDP",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Os-V2.0.pdf",
+      "verified": true
+    },
+    {
+      "title": "Mise à jour des NRD en pédiatrie : enquête SFMN-SFPM-IRSN sur les pratiques. Médecine Nucléaire 2017;41(3):170 (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0928125817300906",
+      "verified": true
+    },
+    {
+      "title": "2024 Update of the North American Consensus Guidelines for Pediatric Administered Radiopharmaceutical Activities. J Nucl Med Technol 2025 (PMID 40664486)",
+      "url": "https://tech.snmjournals.org/content/early/2025/07/15/jnmt.125.270161",
+      "verified": true
+    },
+    {
+      "title": "Treves ST, et al. 2016 Update of the North American Consensus Guidelines for Pediatric Administered Radiopharmaceutical Activities. J Nucl Med. 2016;57(12):15N-18N (PMID 27909182)",
+      "url": "https://jnm.snmjournals.org/content/57/12/15N",
+      "verified": true
+    },
+    {
+      "title": "Quantitative Analysis of 99mTc-DMSA During Acute Pyelonephritis for Prediction of Long-Term Renal Scarring. J Nucl Med. 2004;45(2):285-9 (PMID 14960649)",
+      "url": "https://jnm.snmjournals.org/content/45/2/285",
+      "verified": true
+    },
+    {
+      "title": "FDG-PET Utilizing Deauville Scoring Is Superior to Conventional Imaging for Staging and Response Assessment in Pediatric and Adult Patients with NLP Hodgkin's Lymphoma. Blood 2017;130(Suppl 1):1519",
+      "url": "https://ashpublications.org/blood/article/130/Supplement%201/1519/79450",
+      "verified": true
+    },
+    {
+      "title": "Ferrari C, et al. Pediatric Hodgkin Lymphoma: Predictive value of interim 18F-FDG PET/CT (Deauville) in therapy response assessment. Medicine (Baltimore) 2017;96(5):e5973 (PMC5293451)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5293451/",
+      "verified": true
+    },
+    {
+      "title": "Détermination de l'activité de 99mTc-DMSA à injecter en pédiatrie pour optimiser la qualité de l'image scintigraphique. Médecine Nucléaire 2022 (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0928125822000250",
+      "verified": true
+    },
+    {
+      "title": "Bone Scan — StatPearls, NCBI Bookshelf (dose efficace Tc-99m MDP)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK531486/",
+      "verified": true
+    }
+  ],
+  "lead": "Chez l'enfant, l'activité d'un produit radioactif injecté ne se devine jamais et ne se déduit pas d'une dose adulte que l'on réduirait à vue d'œil. Elle se calcule à partir d'une activité de référence propre à chaque examen, ajustée au poids de l'enfant selon une carte de calcul publiée par la société savante européenne de médecine nucléaire. Cette méthode poursuit un objectif simple et exigeant : délivrer la même qualité d'image et la même radioprotection quel que soit le gabarit de l'enfant, du nourrisson à l'adolescent. Un plancher d'activité minimale garantit que l'image reste lisible chez les plus petits, tandis qu'un plafond réglementaire évite toute irradiation inutile. C'est l'outil de référence qui transforme le principe « le plus faible possible, le plus utile nécessaire » en un chiffre concret au lit de l'enfant.",
+  "identityCard": [
+    {
+      "icon": "list",
+      "label": "Outil",
+      "value": "Carte de dosage pédiatrique EANM v5.7.2016"
+    },
+    {
+      "icon": "flask",
+      "label": "Formule officielle",
+      "value": "A [MBq] = Activité de base × Multiple(poids, classe)"
+    },
+    {
+      "icon": "target",
+      "label": "Objectif",
+      "value": "Dose efficace ≈ indépendante du poids"
+    },
+    {
+      "icon": "baby",
+      "label": "Plage de poids",
+      "value": "3 à 68 kg (pas de 2 kg)"
+    },
+    {
+      "icon": "atom",
+      "label": "Classes de traceurs",
+      "value": "A (rénal) · B (la plupart) · C (thyroïde iodée)"
+    },
+    {
+      "icon": "shield",
+      "label": "Plancher",
+      "value": "Activité minimale recommandée (qualité image)"
+    },
+    {
+      "icon": "alert",
+      "label": "Plafond",
+      "value": "NRD nationaux (ASNR en France)"
+    },
+    {
+      "icon": "syringe",
+      "label": "Ex. FDG cérébral 50 kg",
+      "value": "14,0 × 10,71 ≈ 150 MBq"
+    },
+    {
+      "icon": "syringe",
+      "label": "Ex. 123I-mIBG 3 kg",
+      "value": "28 MBq < 37 (min) → 37 MBq"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose efficace FDG torse",
+      "value": "≈ 7 mSv (quasi plate, ICRP 106)"
+    },
+    {
+      "icon": "clock",
+      "label": "Version / mise à jour",
+      "value": "v5.7.2016 (août 2016)"
+    },
+    {
+      "icon": "activity",
+      "label": "Méthode nord-américaine",
+      "value": "MBq/kg (consensus 2024, harmonisé)"
+    },
+    {
+      "icon": "microscope",
+      "label": "Base scientifique",
+      "value": "Jacobs 2005 : 95 traceurs, 7 fantômes, 10 RN"
+    },
+    {
+      "icon": "zap",
+      "label": "Calculateur officiel",
+      "value": "App-Calc EANM v2.01 (MBq + mSv)"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "examen",
+      "label": "TEP au ¹⁸F-FDG (oncologie pédiatrique)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse au ⁹⁹ᵐTc-MDP/HMDP"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie rénale au ⁹⁹ᵐTc-DMSA"
+    },
+    {
+      "type": "examen",
+      "label": "Néphrographie isotopique au ⁹⁹ᵐTc-MAG3"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie à la MIBG (¹²³I/¹³¹I)"
+    },
+    {
+      "type": "examen",
+      "label": "TEP au ⁶⁸Ga-DOTATATE"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie thyroïdienne au ¹²³I"
+    },
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc (générateur Mo-99/Tc-99m)"
+    },
+    {
+      "type": "traceur",
+      "label": "¹⁸F (cyclotron, β⁺)"
+    },
+    {
+      "type": "maladie",
+      "label": "Neuroblastome"
+    },
+    {
+      "type": "maladie",
+      "label": "Lymphome de Hodgkin pédiatrique"
+    },
+    {
+      "type": "score",
+      "label": "Niveaux de référence diagnostiques (NRD)"
+    },
+    {
+      "type": "score",
+      "label": "Score de Deauville"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quelle est la formule officielle de calcul de l'activité pédiatrique selon la carte EANM ?",
+      "options": [
+        "Activité adulte × (poids enfant / 70)",
+        "Activité de base × Multiple lié au poids et à la classe",
+        "Activité/kg × surface corporelle",
+        "Activité adulte × (âge / 18)"
+      ],
+      "answer": 1,
+      "explanation": "La carte EANM applique A [MBq] = Activité de base × Multiple, le Multiple étant lu selon le poids (kg) et la classe (A, B ou C) du traceur [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Que représentent les trois classes A, B et C de la carte EANM ?",
+      "options": [
+        "Trois tranches d'âge",
+        "Classe A = traceurs rénaux, B = la plupart, C = traceurs thyroïdiens iodés",
+        "Trois niveaux de risque",
+        "Trois énergies de photons"
+      ],
+      "answer": 1,
+      "explanation": "Le regroupement de Jacobs et al. (95 radiopharmaceutiques) distingue la classe A (rénal, ex. MAG3), la classe B (majorité) et la classe C (thyroïde iodée I-123/I-131) [1,3].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel est l'objectif méthodologique de la carte de dosage EANM ?",
+      "options": [
+        "Minimiser le coût du traceur",
+        "Obtenir une dose efficace ~indépendante du poids",
+        "Standardiser la durée d'acquisition",
+        "Supprimer le blocage thyroïdien"
+      ],
+      "answer": 1,
+      "explanation": "Jacobs et al. (2005) ont conçu la méthode pour aplatir la dose efficace en fonction du poids (« weight-independent effective dose ») [3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "À 3 kg, quelle est la valeur du Multiple dans les trois classes ?",
+      "options": [
+        "0",
+        "1",
+        "2,71",
+        "3,67"
+      ],
+      "answer": 1,
+      "explanation": "À 3 kg, le Multiple vaut 1 pour les classes A, B et C : l'activité de base correspond au nourrisson de référence [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pour un enfant de 50 kg recevant du ¹⁸F-FDG cérébral (classe B, base 14,0 MBq), quelle activité administrer ?",
+      "options": [
+        "≈ 70 MBq",
+        "≈ 150 MBq",
+        "≈ 200 MBq",
+        "≈ 370 MBq"
+      ],
+      "answer": 1,
+      "explanation": "14,0 × Multiple classe B à 50 kg (10,71) ≈ 150 MBq, exemple officiel de la carte EANM [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pour un nourrisson de 3 kg en ¹²³I-mIBG (base 28,0 MBq, min 37 MBq), quelle activité administrer ?",
+      "options": [
+        "28 MBq (valeur calculée)",
+        "37 MBq (activité minimale)",
+        "14 MBq",
+        "18,5 MBq"
+      ],
+      "answer": 1,
+      "explanation": "28,0 × 1 = 28 MBq, inférieur au minimum recommandé de 37 MBq → on administre l'activité minimale pour garantir la qualité d'image [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Que faire si l'activité calculée est inférieure à l'activité minimale recommandée ?",
+      "options": [
+        "Diviser par deux",
+        "Administrer l'activité minimale recommandée",
+        "Reporter l'examen",
+        "Appliquer la dose adulte"
+      ],
+      "answer": 1,
+      "explanation": "Règle b de la carte : si A calculée < minimum, on administre le minimum, car en deçà la qualité diagnostique n'est plus garantie [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Le ⁹⁹ᵐTc-DTPA appartient à quelle classe selon la fonction rénale ?",
+      "options": [
+        "Toujours classe A",
+        "Classe A si fonction normale, classe B si fonction anormale",
+        "Toujours classe C",
+        "Toujours classe B"
+      ],
+      "answer": 1,
+      "explanation": "Le DTPA est classe A (base 34,0 MBq) en fonction rénale normale mais classe B (base 14,0 MBq) en fonction anormale ; même logique pour le ¹²³I-Hippuran [1].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la troisième règle d'application de la carte EANM ?",
+      "options": [
+        "Ne jamais dépasser les NRD nationaux",
+        "Toujours doubler chez l'adolescent",
+        "Injecter à jeun strict",
+        "Utiliser uniquement le ⁹⁹ᵐTc"
+      ],
+      "answer": 0,
+      "explanation": "Après le calcul et le contrôle du plancher, la règle c impose de ne jamais dépasser les niveaux de référence diagnostiques nationaux [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En quoi diffère l'approche nord-américaine (SNMMI / Image Gently) de l'approche EANM ?",
+      "options": [
+        "Elle est identique",
+        "Elle utilise un modèle linéaire en MBq/kg avec min et max",
+        "Elle ignore le poids",
+        "Elle se base sur l'âge uniquement"
+      ],
+      "answer": 1,
+      "explanation": "Le consensus nord-américain (Gelfand 2011, mis à jour 2024) repose sur une activité par kilo bornée par un minimum et un maximum, modèle harmonisé avec l'EANM en 2014 [6,7,5].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle base scientifique a permis de construire les trois classes de la carte EANM ?",
+      "options": [
+        "Une enquête de pratiques",
+        "95 radiopharmaceutiques, 7 fantômes anthropomorphiques, 10 radionucléides",
+        "Un essai randomisé sur 200 enfants",
+        "Les données du fabricant"
+      ],
+      "answer": 1,
+      "explanation": "Jacobs et al. ont calculé les facteurs de normalisation pour 95 radiopharmaceutiques avec 7 fantômes et 10 radionucléides, puis une analyse de clusters a défini A/B/C [3].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle évolution majeure le ⁹⁹ᵐTc-DMSA a-t-il connue entre 2008 et 2016 ?",
+      "options": [
+        "Passage de classe A à classe B avec baisse de la base de 17,0 à 6,8 MBq",
+        "Passage de classe B à classe A",
+        "Suppression de la carte",
+        "Augmentation de la base à 34 MBq"
+      ],
+      "answer": 0,
+      "explanation": "Après harmonisation EANM/SNMMI, le DMSA est passé de classe A (base 17,0 MBq) à classe B (base 6,8 MBq, min 18,5 MBq), les activités plus basses ne dégradant pas le diagnostic [4,5].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est l'organe critique du ¹⁸F-FDG, déterminant pour les mesures de radioprotection ?",
+      "options": [
+        "La thyroïde",
+        "La vessie urinaire",
+        "Le foie",
+        "La moelle osseuse"
+      ],
+      "answer": 1,
+      "explanation": "Le FDG s'élimine par voie urinaire ; la paroi vésicale est l'organe critique (≈ 0,13 mGy/MBq chez l'adulte), d'où l'hydratation et les mictions fréquentes [21,20].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Comment évolue la dose efficace en ⁹⁹ᵐTc-DMSA chez l'enfant avec la méthode EANM 2014 selon le poids ?",
+      "options": [
+        "Elle augmente fortement avec le poids",
+        "Elle reste remarquablement plate (≈ 0,7–0,9 mSv)",
+        "Elle diminue de moitié à chaque kg",
+        "Elle est nulle sous 10 kg"
+      ],
+      "answer": 1,
+      "explanation": "L'harmonisation montre une dose efficace DMSA quasi constante (≈ 0,68–0,92 mSv de 10 à 70 kg), confirmant l'objectif de dose indépendante du poids [5].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle tendance la TEP digitale moderne impose-t-elle à la carte FDG ?",
+      "options": [
+        "Une augmentation des activités",
+        "Une révision à la baisse des activités proposées (≈ −40 %)",
+        "Aucun changement",
+        "Le passage en classe C"
+      ],
+      "answer": 1,
+      "explanation": "Dickson 2022 propose pour le FDG une base de 10,7 MBq (−41 % vs 2016) grâce aux TEP grand champ/semi-conducteurs ; l'essai EuroNet PHL-C2 propose ~−39 % [17,18].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel coefficient de dose efficace adulte est retenu pour le ¹⁸F-FDG (ICRP) ?",
+      "options": [
+        "≈ 0,0057 mSv/MBq",
+        "≈ 0,019 mSv/MBq",
+        "≈ 0,14 mSv/MBq",
+        "≈ 0,001 mSv/MBq"
+      ],
+      "answer": 1,
+      "explanation": "Le coefficient adulte du FDG est d'environ 0,019 mSv/MBq (ICRP 106/128) ; il croît chez l'enfant (≈ 0,073 mSv/MBq à 1 an) [21,20].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle valeur prend l'activité minimale recommandée en ¹⁸F-FDG-PET torse (classe B) ?",
+      "options": [
+        "10 MBq",
+        "14 MBq",
+        "26 MBq",
+        "80 MBq"
+      ],
+      "answer": 2,
+      "explanation": "La carte EANM v5.7.2016 fixe pour le FDG torse une base de 25,9 MBq et un minimum de 26 MBq [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel piège classique fausse le calcul EANM si l'on n'est pas attentif ?",
+      "options": [
+        "Confondre kg et livres",
+        "Lire le Multiple dans la mauvaise classe (A/B/C)",
+        "Oublier l'activité maximale uniquement",
+        "Inverser MBq et mSv"
+      ],
+      "answer": 1,
+      "explanation": "L'erreur fréquente est de lire le Multiple dans la mauvaise colonne : il faut toujours vérifier la classe (A/B/C) avant de lire la table [1,4].",
+      "difficulty": "moyen"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "Formule unique : A [MBq] = Activité de base × Multiple(poids, classe) ; plancher = activité minimale recommandée [1].",
+      "Trois classes : A = traceurs rénaux (ex. MAG3, DTPA fonction normale), B = la plupart, C = traceurs thyroïdiens iodés [1,3].",
+      "Objectif méthodologique : dose efficace ~indépendante du poids (Jacobs 2005, 95 traceurs / 7 fantômes / 10 radionucléides) [3].",
+      "Version de référence : carte EANM v5.7.2016 (mise à jour août 2016) ; plage 3 à 68 kg par pas de 2 kg [1,2].",
+      "Ne jamais extrapoler la dose adulte ; ne jamais dépasser les NRD nationaux (ASNR en France) [1,13].",
+      "Harmonisation EANM/SNMMI 2014 ; consensus nord-américain en MBq/kg avec min et max, mis à jour 2024 [5,6].",
+      "La carte FDG sera révisée à la baisse (TEP digitale ≈ −41 %, EuroNet PHL-C2 ≈ −39 %) : vérifier la version applicable [17,18].",
+      "Un même traceur peut changer de classe selon l'indication : ⁹⁹ᵐTc-DTPA classe A (rein normal) vs B (rein anormal) [1]."
+    ],
+    "protocol": [
+      "Identifier l'examen et le radiopharmaceutique → classe (A/B/C) + activité de base sur la carte v5.7.2016.",
+      "Lire le Multiple pour le poids exact de l'enfant dans la colonne de la bonne classe.",
+      "Calculer A = base × Multiple.",
+      "Comparer à l'activité minimale recommandée : si A < min, administrer le minimum.",
+      "Vérifier que A ≤ NRD national (ASNR en France).",
+      "Appliquer la préparation (hydratation, mictions fréquentes ; jeûne 4–6 h et glycémie < 11,1 mmol/L pour le FDG) et adapter la durée d'acquisition (TEP haute sensibilité)."
+    ],
+    "scores": [
+      "Multiples du poids EANM (extraits, classes A/B/C) : 3 kg = 1/1/1 ; 10 kg = 1,94/2,71/3,67 ; 20 kg = 2,88/4,86/8,33 ; 50 kg = 4,88/10,71/23,00 ; 68 kg = 5,77/14,00/32,33 [1].",
+      "Activités de base / minimales (MBq) : FDG torse 25,9/26 ; FDG cérébral 14,0/14 ; ⁹⁹ᵐTc-MDP 35,0/40 ; ⁹⁹ᵐTc-DMSA 6,8/18,5 ; ⁹⁹ᵐTc-MAG3 11,9/15 ; ¹²³I-mIBG 28,0/37 ; ¹²³I thyroïde 0,6/3 [1].",
+      "Consensus nord-américain 2024 (MBq/kg, min) : ¹⁸F-FDG corps 2,96–5,2 (26) ; ⁹⁹ᵐTc-MDP 9,3 (37) ; ⁹⁹ᵐTc-DMSA 1,85 (18,5) ; ⁹⁹ᵐTc-MAG3 3,7 (37) [6].",
+      "Cadre dosimétrique : ICRP 128 (coefficients pédiatriques nouveau-né / 1 / 5 / 10 / 15 ans) ; FDG adulte ≈ 0,019 mSv/MBq, ≈ 0,073 à 1 an [21,20]."
+    ],
+    "pitfalls": [
+      "Lire le Multiple dans la mauvaise classe (A/B/C) : vérifier systématiquement la classe avant de lire la table [1,4].",
+      "Oublier le plancher : à faible poids, l'activité calculée tombe sous le minimum → c'est le minimum qui prime [1].",
+      "Confondre Technegas : la valeur de 49 MBq est l'activité de charge du dispositif, pas l'activité inhalée [1].",
+      "Appliquer mécaniquement la carte sans vérifier sa version : la valeur DMSA a changé (17,0 → 6,8 MBq), la carte FDG va baisser [4,17,18].",
+      "Mélanger les deux écoles : EANM (base × Multiple, non linéaire) et nord-américaine (MBq/kg) sont harmonisées mais non interchangeables ligne à ligne [5,6].",
+      "Disparités de pratique françaises : FDG souvent sous-dosé vs EANM, DMSA souvent sur-dosé vs Europe → marge d'optimisation [12,28]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert ce calcul chez l'enfant ?",
+        "text": "Quand un enfant doit passer un examen de **médecine nucléaire** (scintigraphie ou TEP), on lui injecte une toute petite quantité d'un **produit faiblement radioactif** qui permet à une caméra spéciale de voir comment fonctionne un organe (les reins, les os, le cœur, le cerveau…). La grande différence avec l'adulte, c'est que la dose donnée à un enfant n'est **jamais** une « dose d'adulte que l'on réduit à vue d'œil ». Elle est **calculée précisément**, à partir du **poids** de votre enfant et du type d'examen, en suivant une règle officielle européenne reconnue (la « carte de dosage pédiatrique » de la Société européenne de médecine nucléaire). Le but est double : donner **juste ce qu'il faut** de produit pour obtenir des **images nettes et fiables**, sans en donner une goutte de trop. C'est l'application directe du principe « le moins possible, mais suffisant ».",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le bon réflexe",
+            "text": "Le poids de votre enfant sert directement à calculer la quantité de produit. Pesez-le si possible avant le rendez-vous, ou laissez l'équipe le faire à l'accueil : c'est une étape clé, pas une simple formalité. N'hésitez pas à poser toutes vos questions, l'équipe est là pour vous rassurer."
+          }
+        ]
+      },
+      {
+        "title": "Comment ça se passe le jour de l'examen",
+        "text": "À l'arrivée, l'équipe **pèse votre enfant** : c'est ce poids qui détermine la dose exacte adaptée à lui. Le produit est ensuite le plus souvent **injecté dans une veine du bras** (parfois avalé ou inhalé selon l'examen). Un **temps d'attente** est souvent nécessaire pour laisser le produit se mettre en place dans l'organe étudié ; vous pouvez rester auprès de votre enfant pour le rassurer. Pendant ce temps, on vous demandera souvent de le faire **bien boire** et **uriner régulièrement** : ces gestes simples améliorent les images et aident son corps à éliminer le produit plus vite. Au moment des images, l'enfant reste **allongé** pendant que la caméra passe au-dessus de lui : c'est **indolore** et il n'est pas enfermé dans un tunnel étroit comme à l'IRM. Pour les plus petits, l'équipe est habituée à patienter et à rassurer.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Une dose pensée pour son âge et son poids",
+            "text": "Parce que la quantité est calculée à partir du poids, un nourrisson, un jeune enfant et un adolescent ne reçoivent pas la même dose. Il existe aussi une **quantité minimale** en dessous de laquelle on ne descend pas : non pas par excès, mais parce qu'en dessous l'image deviendrait trop floue pour être utile."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce sans danger pour mon enfant ?",
+        "text": "La quantité de produit radioactif utilisée est **très faible** et soigneusement adaptée au poids de l'enfant, justement pour limiter au maximum son exposition. Ce **n'est pas un produit de contraste iodé** comme au scanner : les réactions allergiques sont exceptionnelles et l'injection ne provoque habituellement **aucun effet secondaire**. Le produit **disparaît naturellement** du corps en quelques heures à un jour, d'autant plus vite que l'enfant boit bien. La méthode de calcul européenne a été conçue spécialement pour que la dose reste **maîtrisée quel que soit l'âge**, et l'examen n'est proposé que lorsqu'il apporte une information utile que d'autres examens ne donnent pas. Après l'examen, l'équipe vous remettra des **consignes simples** (bien faire boire, et parfois éviter quelques heures le contact très rapproché avec une femme enceinte).",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "À signaler à l'équipe",
+            "text": "Indiquez le **poids récent** de votre enfant, ses **traitements en cours**, toute **allergie connue**, et s'il a déjà passé récemment un examen utilisant de l'iode ou un produit de contraste. Pour une adolescente, signalez toujours une grossesse possible ou un allaitement. Ces informations permettent d'adapter l'examen en toute sécurité."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : ne jamais extrapoler une dose adulte chez l'enfant",
+        "text": "Lorsque vous adressez un enfant en médecine nucléaire, retenez un principe cardinal : l'activité injectée n'est **jamais une dose adulte « réduite à vue »**. Elle est calculée selon la **carte de dosage pédiatrique de l'EANM** (version de référence v5.7.2016), une méthode validée scientifiquement dont l'objectif est d'obtenir une **dose efficace indépendante du poids** de l'enfant. Concrètement, l'activité résulte d'une **activité de base** propre à chaque examen, multipliée par un **facteur lié au poids**, avec respect d'une **activité minimale** garantissant la qualité d'image et sans jamais dépasser les **niveaux de référence diagnostiques (NRD) nationaux**. Pensez-y pour toutes les indications pédiatriques classiques : scintigraphie rénale (pyélonéphrite, uropathie), scintigraphie osseuse, TEP-FDG en oncologie (lymphome de Hodgkin notamment), scintigraphie à la mIBG (neuroblastome), exploration thyroïdienne. L'élément que vous transmettez et qui conditionne directement le calcul est le **poids récent et fiable** de l'enfant.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Ce qu'on vous demandera de préciser",
+            "text": "Indication et question clinique, **poids récent**, antécédents pertinents, traitements en cours, et pour une adolescente, statut grossesse/allaitement. Le poids est l'information pivot : il commande la classe de dosage et le calcul de l'activité administrée."
+          }
+        ]
+      },
+      {
+        "title": "La démarche : une activité calculée, bornée par un plancher et un plafond",
+        "text": "La méthode EANM repose sur une formule simple — **activité administrée = activité de base × multiple lié au poids** — appliquée selon trois règles. D'abord, on multiplie l'activité de base de l'examen par le facteur correspondant au poids de l'enfant et à la **classe du traceur** : classe A pour les traceurs **rénaux**, classe B pour **la plupart** des examens, classe C pour les traceurs **thyroïdiens iodés**. Ensuite, si l'activité calculée tombe sous l'**activité minimale recommandée**, c'est ce **plancher** qui prime, afin de préserver une image diagnostique — chez le très petit enfant, c'est fréquemment le cas. Enfin, on ne dépasse jamais les **NRD nationaux** (en France, suivis par l'ASNR). Cette approche aboutit à des doses efficaces remarquablement stables quel que soit le poids, et les méthodes nord-américaines (calcul par kg, type Image Gently) ont été **harmonisées** avec la carte EANM. Le calcul relève du service de médecine nucléaire, qui dispose des outils dédiés (calculateur et application EANM) ; votre rôle est de fournir les éléments justes, à commencer par le poids."
+      },
+      {
+        "title": "L'apport de la médecine nucléaire et le rôle de l'adresseur",
+        "text": "Bien dosé, l'examen offre chez l'enfant une **imagerie fonctionnelle** souvent décisive et difficile à obtenir autrement, avec une exposition maîtrisée : scintigraphie au DMSA pour les cicatrices corticales de pyélonéphrite (sensibilité élevée), TEP-FDG pour le bilan d'extension et l'évaluation de réponse du lymphome de Hodgkin (avec le score de Deauville), scintigraphie à la mIBG dans le neuroblastome. Le bénéfice diagnostique justifie l'examen dès lors que la question clinique est pertinente. Le rôle de l'adresseur est double : **justifier l'indication** et **transmettre les informations** — au premier rang desquelles le **poids** — qui permettent au service d'optimiser le calcul de dose et le protocole. À noter une dynamique de fond : les activités, notamment en TEP-FDG, tendent à être **revues à la baisse** grâce aux caméras modernes, ce qui réduit encore l'exposition de l'enfant à qualité d'image égale. En pratique, rassurer la famille et insister sur la transmission d'un poids fiable sont les meilleurs gages d'un examen réussi du premier coup.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez en médecine nucléaire avec un dossier complet pour garantir un examen pédiatrique contributif et optimisé sur le plan dosimétrique. Précisez la **question clinique**, le **poids récent et fiable** de l'enfant (information pivot du calcul de dose), les **antécédents** et **traitements en cours**, et pour une adolescente le **statut grossesse/allaitement**. Le service applique alors la **carte de dosage pédiatrique EANM** (activité de base × facteur lié au poids, sans descendre sous l'activité minimale ni dépasser les NRD nationaux), ce qui assure à l'enfant la dose juste : suffisante pour des images fiables, et aussi basse que raisonnablement possible. Ne jamais extrapoler une dose adulte « réduite à vue »."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identité du calculateur de dose pédiatrique",
+        "text": "**Nature de l'outil.** La *Dosage Card* de l'**EANM** (European Association of Nuclear Medicine — Association européenne de médecine nucléaire) n'est pas un examen mais un **calculateur d'activité administrée** : un abaque, élaboré conjointement par les Comités Pédiatrie et Dosimétrie de l'EANM, qui détermine l'**activité à injecter (en MBq)** à un enfant en fonction de **deux entrées seulement** — son **poids corporel** et le **radiopharmaceutique** utilisé.[1,2] La version de référence en vigueur est la **v5.7.2016**, dernière mise à jour publiée en **août 2016**.[1,2]\n\n**Formule officielle.** L'activité administrée se calcule par une équation unique :\n\n> **A [MBq] = Activité de base × Multiple(poids, classe)**\n\noù l'**activité de base** (*Baseline Activity*) est une constante propre à chaque examen, et le **Multiple** est un facteur sans dimension lu dans la table « Multiple of Baseline Activity » selon le **poids (kg)** et la **classe (A, B ou C)** du traceur.[1] Le résultat est ensuite **borné** par une **activité minimale recommandée** (plancher de qualité d'image) et **plafonné** par les **niveaux de référence diagnostiques (NRD) nationaux**.[1]\n\n**Objectif méthodologique.** L'ambition de la carte n'est pas de « réduire » la dose adulte mais d'obtenir une **dose efficace quasi indépendante du poids** de l'enfant, c'est-à-dire une irradiation comparable du nourrisson à l'adolescent à qualité d'image constante.[3] Cet objectif est atteint par une normalisation non linéaire de l'activité au poids, fondée sur le travail princeps de Jacobs et al. (2005).[3]\n\n| Champ | Valeur |\n|---|---|\n| **Type d'outil** | Calculateur d'activité administrée (abaque + formule) |\n| **Émetteur** | EANM — Comités Pédiatrie & Dosimétrie[2] |\n| **Version de référence** | **v5.7.2016** (mise à jour août 2016)[1,2] |\n| **Entrées** | Poids corporel (kg) + radiopharmaceutique |\n| **Formule** | A = Activité de base × Multiple(poids, classe)[1] |\n| **Plage de poids** | **3 → 68 kg** (pas de 2 kg)[1,15] |\n| **Classes de traceurs** | **A** (rénal) · **B** (la plupart) · **C** (thyroïde iodée)[3] |\n| **Bornes** | Activité minimale (plancher) ; NRD national (plafond)[1] |\n| **Outils de saisie** | App EANM « App-Calc » v2.01 (restitue MBq + mSv)[15] |\n| **Cadre français** | NRD pédiatriques ASNR (ex-IRSN/ASN)[13] |",
+        "stats": [
+          {
+            "value": "3–68 kg",
+            "label": "Plage de poids couverte (pas de 2 kg)"
+          },
+          {
+            "value": "3",
+            "label": "Classes de traceurs (A / B / C)"
+          },
+          {
+            "value": "v5.7.2016",
+            "label": "Version EANM de référence"
+          },
+          {
+            "value": "A = base × multiple",
+            "label": "Formule de calcul unique"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la triple borne",
+            "text": "Le résultat brut de la formule **A = base × multiple** ne suffit jamais : il faut systématiquement le confronter à **deux bornes**. (1) Le **plancher** : si A est inférieure à l'**activité minimale recommandée**, on administre l'activité minimale, car en dessous la qualité d'image n'est plus garantie.[1] (2) Le **plafond** : on ne dépasse jamais le **NRD national** (ASNR en France).[1,13] La carte EANM matérialise l'optimisation ALARA mais **ne se substitue pas** aux dispositions légales nationales.[1]"
+          },
+          {
+            "type": "info",
+            "title": "Outils de calcul disponibles",
+            "text": "L'EANM met à disposition l'application **« App-Calc » v2.01** (poids 3→68 kg par pas de 2 kg, plus de 40 radiopharmaceutiques), qui restitue à la fois l'**activité en MBq** et la **dose efficace estimée en mSv**, évitant les erreurs de lecture de classe.[15] L'**IAEA Nuclear Medicine Atlas** (Appendix I) reproduit également la carte et ses exemples.[4]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma du principe ALARA (temps, distance, écran) appliqué à l'optimisation de l'activité pédiatrique : la Dosage Card EANM concrétise le levier « optimisation de la dose » par un calcul poids-dépendant borné par l'activité minimale et le NRD national."
+      },
+      {
+        "title": "A2 - Pourquoi ne jamais réduire « à vue » une dose adulte",
+        "text": "**Le piège de la règle de trois.** L'intuition spontanée consiste à prendre l'activité adulte et à la pondérer par le rapport des poids (par exemple : 20 kg / 70 kg ≈ 29 % de la dose adulte). Cette **réduction linéaire « à vue » est erronée** et potentiellement dangereuse, pour deux raisons biophysiques convergentes.[3]\n\n**Première raison — la dose efficace ne varie pas linéairement avec le poids.** À activité proportionnelle au poids, l'enfant reçoit une **dose efficace plus élevée** que l'adulte : ses organes sont plus petits et plus proches les uns des autres (auto-irradiation croisée accrue), sa biocinétique est différente, et les coefficients de dose pédiatriques (mSv/MBq) sont nettement supérieurs. Pour le **¹⁸F-FDG**, le coefficient de dose efficace passe ainsi de **≈ 0,016 mSv/MBq** chez l'adulte à **≈ 0,073 mSv/MBq** à 1 an — soit un facteur **≈ 4,5**.[20,21] Une simple règle de trois sous-estimerait donc fortement la charge dosimétrique réelle du petit enfant.\n\n**Seconde raison — il existe un plancher de qualité d'image.** En dessous d'une certaine activité, le rapport signal/bruit s'effondre et l'examen devient non diagnostique, indépendamment du poids. C'est pourquoi la carte impose une **activité minimale recommandée** : pour le **¹²³I-mIBG**, un nourrisson de 3 kg donnerait par le calcul 28,0 × 1 = 28 MBq, valeur **inférieure au minimum de 37 MBq** → on administre **37 MBq**.[1] Une réduction « à vue » ignorerait ce plancher et produirait une image ininterprétable, exposant l'enfant pour rien.\n\n**La solution EANM — une normalisation non linéaire.** La carte résout les deux écueils simultanément : la fonction Multiple(poids) est **concave** (elle croît plus lentement que le poids), de sorte que la dose efficace résultante reste **remarquablement plate** sur toute la croissance. L'harmonisation EANM/SNMMI montre qu'avec la carte, la scintigraphie au **Tc-99m-DMSA** délivre **≈ 0,68 mSv à 1 an** et **≈ 0,88 mSv chez l'adulte** — une quasi-constance, là où une approche naïve creuserait l'écart.[5] De même, le **¹⁸F-FDG-PET torse** délivre **≈ 6,7 mSv à 1 an** et **≈ 7,0 mSv** chez l'adulte.[5]\n\n**Corollaire pratique.** La justification (l'examen est-il indiqué ?) et l'optimisation (quelle activité ?) sont deux décisions distinctes. La carte ne traite que la seconde, mais elle interdit toute approximation : on lit la classe, on lit le multiple, on applique le plancher, on vérifie le NRD — jamais d'extrapolation mentale depuis l'adulte.[1,3]",
+        "stats": [
+          {
+            "value": "×4,5",
+            "label": "Coefficient FDG : 1 an vs adulte (mSv/MBq)[20,21]"
+          },
+          {
+            "value": "37 MBq",
+            "label": "Plancher ¹²³I-mIBG malgré un calcul à 28 MBq[1]"
+          },
+          {
+            "value": "≈ 0,9 mSv",
+            "label": "Dose efficace DMSA, plate du nourrisson à l'adulte[5]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la règle de trois pondérée au poids",
+            "text": "Réduire l'activité adulte au prorata du poids (« 20 kg ≈ 30 % de la dose adulte ») **surdose ou sous-dose** selon le traceur et **ignore le plancher d'activité minimale**. Chez le petit enfant, le coefficient de dose (mSv/MBq) est jusqu'à **4–5 fois** supérieur à celui de l'adulte pour le FDG.[20,21] Toujours passer par **A = base × multiple** puis appliquer la borne minimale.[1]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — « weight-independent effective dose »",
+            "text": "L'objectif fondateur de Jacobs et al. (2005) est une **dose efficace indépendante du poids** : avec la carte, le DMSA délivre ≈ 0,68 mSv à 1 an et ≈ 0,88 mSv chez l'adulte, le FDG torse ≈ 6,7 vs 7,0 mSv.[3,5] Cette platitude est le marqueur d'une optimisation réussie : tous les enfants sont irradiés de façon équivalente à qualité d'image constante, ce qu'aucune réduction linéaire ne permet d'obtenir."
+          }
+        ],
+        "figureKey": "MIBG_BIODISTRIB",
+        "figureAlt": "Biodistribution corps entier illustrant que la dose efficace dépend de la taille et de la proximité des organes de l'enfant, et non du seul poids : justification d'une normalisation non linéaire de l'activité plutôt que d'une réduction linéaire de la dose adulte."
+      },
+      {
+        "title": "A3 - Anatomie de la formule EANM : activité de base, multiple pondéral, classes A/B/C",
+        "text": "**1. L'activité de base (*Baseline Activity*).** C'est une **constante propre à chaque examen** (couple radiopharmaceutique + indication), exprimée en MBq. Elle correspond conceptuellement à l'activité du **nourrisson de référence de 3 kg**, pour lequel le Multiple vaut 1 dans les trois classes.[1] Quelques valeurs de référence (carte v5.7.2016, verso) :[1]\n\n| Radiopharmaceutique | Classe | Activité de base (MBq) | Activité min. (MBq) |\n|---|---|---|---|\n| ¹⁸F FDG-PET corps (torso) | B | 25,9 | 26 |\n| ¹⁸F FDG-PET cérébral | B | 14,0 | 14 |\n| ⁹⁹ᵐTc MAG3 | **A** | 11,9 | 15 |\n| ⁹⁹ᵐTc DTPA (fonction rénale normale) | **A** | 34,0 | 20 |\n| ⁹⁹ᵐTc DMSA | B | 6,8 | 18,5 |\n| ⁹⁹ᵐTc MDP (os) | B | 35,0 | 40 |\n| ⁹⁹ᵐTc HMPAO / ECD (cérébral) | B | 51,8 | 100 |\n| ¹²³I (thyroïde) | **C** | 0,6 | 3 |\n| ¹²³I mIBG | B | 28,0 | 37 |\n\n**2. Le multiple pondéral.** C'est un **facteur sans dimension** lu dans la table « Multiple of Baseline Activity » selon le **poids** et la **classe**. La fonction est **monotone croissante mais concave** (elle croît moins vite que le poids), ce qui aplatit la dose efficace.[1,3] Extrait de la table (carte v5.7.2016, recto) :[1]\n\n| Poids (kg) | Classe A | Classe B | Classe C |\n|---|---|---|---|\n| 3 | 1,00 | 1,00 | 1,00 |\n| 10 | 1,94 | 2,71 | 3,67 |\n| 20 | 2,88 | 4,86 | 8,33 |\n| 30 | 3,65 | 6,86 | 13,00 |\n| 40 | 4,29 | 8,86 | 18,00 |\n| 50 | 4,88 | 10,71 | 23,00 |\n| 68 | 5,77 | 14,00 | 32,33 |\n\nÀ **3 kg**, le multiple vaut **1** dans les trois classes (point d'ancrage de la baseline) ; on observe que pour un même poids, **C > B > A**, traduisant des comportements dosimétriques distincts.[1]\n\n**3. Les trois classes A / B / C.** Jacobs et al. (2005) ont calculé les facteurs de normalisation pour **95 radiopharmaceutiques** au moyen de **7 fantômes anthropomorphiques** et **10 radionucléides**, puis regroupé les traceurs par **analyse de clusters** selon le comportement de la dose efficace en fonction du poids.[3] Trois ensembles homogènes émergent :[3]\n\n- **Classe A (cluster rénal, n = 7)** : traceurs des études **rénales** à élimination rapide (Tc-99m-MAG3, Tc-99m-DTPA *fonction normale*, I-123-Hippuran *fonction normale*). **Multiples les plus faibles.**\n- **Classe B (n = 76)** : **tous les autres traceurs** (FDG, MDP, HMPAO, DMSA, mIBG, pertechnétate, peptides Ga-68…), hors thyroïde iodée et agents thérapeutiques. **Multiples intermédiaires.**\n- **Classe C (cluster thyroïdien iodé, n = 12)** : traceurs **thyroïdiens iodés** (I-123/I-131 thyroïde) et agents thérapeutiques au Sr-89. **Multiples les plus élevés** (forte croissance avec le poids).\n\n**Pourquoi trois cartes plutôt qu'une ?** Les facteurs de correction EANM antérieurs corrigeaient correctement la dose efficace des seuls traceurs rénaux (cluster A) ; les appliquer aux clusters B et C **surdosait significativement l'enfant**. La séparation en trois classes traceur-dépendantes est précisément ce qui rend la dose efficace indépendante du poids dans chaque catégorie.[3]\n\n**4. Application — la règle des trois étapes.** Le recto de la carte fixe l'algorithme officiel :[1]\n\n> a) multiplier l'activité de base par le Multiple de la classe du traceur, pour le poids du patient ;\n> b) **si l'activité calculée < activité minimale recommandée → administrer l'activité minimale** ;\n> c) **ne jamais dépasser les NRD nationaux.**",
+        "steps": [
+          {
+            "title": "Étape 1 — Identifier classe + activité de base",
+            "text": "À partir de l'examen et du radiopharmaceutique, lire dans la carte EANM v5.7.2016 la **classe (A/B/C)** et l'**activité de base (MBq)**. Erreur classique : un même traceur peut changer de classe selon l'indication (Tc-99m-DTPA est **classe A** si fonction rénale normale, **classe B** si anormale).[1]"
+          },
+          {
+            "title": "Étape 2 — Lire le multiple pour le poids",
+            "text": "Dans la table « Multiple of Baseline Activity », lire le **Multiple** à l'intersection du **poids (kg)** et de la **colonne de classe** correspondante. Vérifier impérativement la classe avant de lire la colonne.[1]"
+          },
+          {
+            "title": "Étape 3 — Calculer A = base × multiple",
+            "text": "Multiplier l'**activité de base** par le **Multiple** pour obtenir l'activité brute en MBq.[1]"
+          },
+          {
+            "title": "Étape 4 — Appliquer le plancher",
+            "text": "Comparer A à l'**activité minimale recommandée** : si A < minimum, **administrer le minimum** (garantie de qualité d'image).[1]"
+          },
+          {
+            "title": "Étape 5 — Vérifier le plafond NRD",
+            "text": "S'assurer que l'activité retenue **ne dépasse pas le NRD national** (ASNR en France) ; ajuster si besoin.[1,13]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "95",
+            "label": "Radiopharmaceutiques classés (Jacobs 2005)[3]"
+          },
+          {
+            "value": "7 / 10",
+            "label": "Fantômes / radionucléides du modèle[3]"
+          },
+          {
+            "value": "A · B · C",
+            "label": "Rénal · la plupart · thyroïde iodée[3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la classe dépend de l'indication, pas seulement du traceur",
+            "text": "Un même radiopharmaceutique peut relever de **deux classes** selon l'examen : ⁹⁹ᵐTc-DTPA est **classe A** (fonction rénale normale, base 34,0 MBq) mais **classe B** (fonction anormale, base 14,0 MBq) ; idem pour l'I-123-Hippuran.[1] Lire la classe sur la ligne de l'**indication précise**, jamais du seul nom de molécule, sous peine d'erreur de multiple."
+          },
+          {
+            "type": "info",
+            "title": "Exemples de calcul officiels EANM",
+            "text": "**¹⁸F-FDG cérébral, 50 kg** : 14,0 × 10,71 (classe B) ≈ **150 MBq**.[1] **¹²³I-mIBG, 3 kg** : 28,0 × 1 = 28 MBq, inférieur au minimum de 37 MBq → **administrer 37 MBq**.[1] **¹⁸F-FDG corps** (référence SNMMI/EANM) : 3,7–5,2 MBq/kg, minimum 26 MBq.[26]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la carte 2016 est appelée à baisser",
+            "text": "Les paramètres de 2016 reposent sur des TEP conventionnelles. Avec les TEP modernes (champ axial long, détecteurs semi-conducteurs), une **réduction de ≈ 41 %** de l'activité FDG a été proposée (base ramenée à 10,7 MBq, minimum 10 MBq), et l'essai EuroNet PHL-C2 suggère **≈ −39 %** (limite conservatrice 3,53 MBq/kg).[17,18] En pratique réelle, la dose FDG médiane injectée a déjà chuté de **≈ 66 %** entre 2000–2005 et 2016–2021 à rapport signal/bruit stable.[19] Toujours vérifier la version applicable et le calculateur EANM avant usage."
+          }
+        ],
+        "figureKey": "RENOGRAM",
+        "figureAlt": "Néphrogramme illustrant la classe A de la Dosage Card EANM : les traceurs rénaux à élimination rapide (Tc-99m-MAG3, DTPA fonction normale) forment le cluster aux multiples les plus faibles, distinct des classes B (la plupart des traceurs) et C (thyroïde iodée)."
+      },
+      {
+        "title": "B1 - Procédure de calcul pas à pas avec un exemple chiffré",
+        "text": "La règle cardinale est **invariante** : chez l'enfant, l'activité injectée n'est jamais une dose adulte « réduite à vue », mais le produit d'une **activité de base (*Baseline Activity*)** propre à l'examen par un **multiple lié au poids**, lu dans la carte de dosage de l'**EANM** (European Association of Nuclear Medicine). La formule officielle est : **A [MBq] = Activité de base × Multiple(poids, classe)** [1]. L'objectif méthodologique n'est pas de « proportionner au poids » mais d'obtenir une **dose efficace quasi indépendante du poids** de l'enfant — un résultat démontré par Jacobs et al. (2005) après analyse de **95 radiopharmaceutiques** au moyen de **7 fantômes anthropomorphiques** et **10 radionucléides**, qui a regroupé les traceurs en **3 classes (A, B, C)** par analyse de clusters [3].\n\nLes trois classes traduisent un comportement dosimétrique distinct de la dose efficace en fonction du poids : **Classe A** = traceurs **rénaux** (ex. MAG3, DTPA sur fonction rénale normale ; multiples les plus faibles) ; **Classe B** = la **majorité** des traceurs (hors thyroïde iodée) ; **Classe C** = traceurs **thyroïdiens iodés** (¹²³I/¹³¹I thyroïde ; multiples les plus élevés, forte croissance avec le poids) [3]. Appliquer un facteur unique à toutes les familles surdoserait l'enfant pour les classes B et C, d'où la nécessité de **trois cartes traceur-dépendantes** [3].\n\nL'algorithme se déroule en **cinq temps**, dans cet ordre strict :\n\n1. Identifier l'examen et le radiopharmaceutique → en déduire la **classe (A/B/C)** et l'**activité de base** (carte EANM v5.7.2016, verso) [1].\n2. Peser l'enfant et lire le **multiple** correspondant dans la colonne de la classe (table « Multiple of Baseline Activity », poids de 3 à 68 kg) [1].\n3. Calculer **A = base × multiple** [1].\n4. Comparer à l'**activité minimale recommandée** : si A < minimum → administrer le **minimum** (cf. §B2) [1].\n5. Vérifier que A ne dépasse pas les **niveaux de référence diagnostiques (NRD)** nationaux (ASNR en France) [1,13].\n\nLa table des multiples est non linéaire : à **3 kg**, le multiple vaut **1** dans les trois classes (l'activité de base est, par construction, celle du nourrisson de référence) ; il croît ensuite plus vite pour la classe C que pour la classe A.[1]\n\n| Poids (kg) | Classe A | Classe B | Classe C |\n|---|---|---|---|\n| 3 | 1,00 | 1,00 | 1,00 |\n| 10 | 1,94 | 2,71 | 3,67 |\n| 20 | 2,88 | 4,86 | 8,33 |\n| 30 | 3,65 | 6,86 | 13,00 |\n| 40 | 4,29 | 8,86 | 18,00 |\n| 50 | 4,88 | 10,71 | 23,00 |\n| 68 | 5,77 | 14,00 | 32,33 |\n\n*(Extrait de la table 3→68 kg ; la carte complète est graduée par pas de 2 kg.)* [1]\n\n**Exemple chiffré — ¹⁸F-FDG cérébral, enfant de 50 kg.** Le ¹⁸F-FDG (fluorodésoxyglucose, émetteur β⁺ de période **109,7 min**, photons d'annihilation à **511 keV**) est de **classe B**, activité de base **14,0 MBq** [1,9]. Pour 50 kg, le multiple de classe B = **10,71**. Donc **A = 14,0 × 10,71 ≈ 150 MBq** [1]. On vérifie ensuite A > minimum (**14 MBq** pour le FDG cérébral) [1] : la condition est largement remplie, l'activité retenue est **150 MBq**. C'est l'exemple de calcul officiel de la carte EANM [1].\n\n**Contre-exemple instructif — ¹²³I-mIBG, nourrisson de 3 kg.** mIBG = méta-iodobenzylguanidine, classe B, base **28,0 MBq** [1]. À 3 kg, multiple = 1 → A = 28 MBq. Mais le minimum est **37 MBq** : on administre donc **37 MBq** (cf. §B2) [1]. Ce cas illustre que le calcul brut ne suffit jamais sans la confrontation au plancher.",
+        "stats": [
+          {
+            "value": "A = base × M",
+            "label": "Formule EANM (poids, classe)"
+          },
+          {
+            "value": "3 classes",
+            "label": "A rénal · B majorité · C thyroïde iodée"
+          },
+          {
+            "value": "v5.7.2016",
+            "label": "Version de référence (août 2016)"
+          },
+          {
+            "value": "≈ 150 MBq",
+            "label": "FDG cérébral, 50 kg (14,0 × 10,71)"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Identifier traceur & classe",
+            "text": "En déduire la **classe (A/B/C)** et l'**activité de base** (carte EANM v5.7.2016, verso). Vérifier la classe avant tout : un même traceur peut changer de classe selon l'indication (cf. §B3, ¹²³I-Hippuran et ⁹⁹ᵐTc-DTPA, classe A si fonction rénale normale, B sinon) [1]."
+          },
+          {
+            "title": "2 · Lire le multiple du poids",
+            "text": "Peser l'enfant, lire le **multiple** dans la colonne de la classe (table 3→68 kg, pas de 2 kg). Erreur classique : lire la mauvaise colonne A/B/C [1]."
+          },
+          {
+            "title": "3 · Calculer A = base × multiple",
+            "text": "Produit direct. Le calculateur EANM (app PedDose / App-Calc v2.01, 3→68 kg, >40 traceurs) automatise la lecture et restitue MBq et mSv [2,15]."
+          },
+          {
+            "title": "4 · Appliquer le plancher minimal",
+            "text": "Si A < **activité minimale recommandée** → administrer le **minimum** (cf. §B2). Garantit la qualité d'image au détriment de la stricte proportionnalité [1]."
+          },
+          {
+            "title": "5 · Vérifier le NRD national",
+            "text": "Ne jamais dépasser les **niveaux de référence diagnostiques** nationaux (ASNR en France) ; la carte EANM ne se substitue pas aux dispositions légales [1,13]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la classe avant le multiple",
+            "text": "L'erreur la plus fréquente est de lire le **multiple dans la mauvaise colonne** (A/B/C) ou d'appliquer la classe d'un traceur à une indication où elle change. Toujours **vérifier la classe (A/B/C)** sur le verso de la carte avant de lire le multiple ; en cas de doute, utiliser le calculateur officiel EANM (App-Calc) qui verrouille le couple traceur→classe [2,15]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi 3 classes et non un facteur unique",
+            "text": "Les facteurs de correction EANM antérieurs « corrigeaient surtout la dose efficace » mais n'étaient exacts que pour les traceurs rénaux (cluster A). Les appliquer aux clusters B et C **surdosait significativement** l'enfant. Jacobs et al. (2005) ont donc construit **trois cartes traceur-dépendantes** pour aplatir la dose efficace en fonction du poids dans chaque famille [3]."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Générateur ⁹⁹Mo/⁹⁹ᵐTc : le ⁹⁹ᵐTc (γ 140 keV, T½ 6 h) est élué du ⁹⁹Mo (T½ 66 h) ; c'est le radionucléide porteur de la majorité des traceurs de classe B de la carte EANM."
+      },
+      {
+        "title": "B2 - Le plancher d'activité minimale : pourquoi et comment l'appliquer",
+        "text": "La règle (b) de la carte EANM est aussi importante que la formule elle-même : **si l'activité calculée est inférieure à l'activité minimale recommandée, c'est le minimum qui est administré** [1]. Le rationale est physique et non dosimétrique : en dessous d'un certain nombre de photons détectés, le **rapport signal/bruit** s'effondre et l'image devient non diagnostique. Le plancher protège donc la **qualité d'image** chez le très petit enfant, là où le calcul proportionnel donnerait une activité trop faible pour une statistique de comptage exploitable [1]. Les notes de la carte précisent que ces minimums sont calculés pour des **gamma-caméras et TEP usuelles** ; des activités plus basses sont légitimes sur des systèmes à **meilleure efficacité de comptage** (TEP numériques, longs champs de vue) [1].\n\nConcrètement, le plancher domine le calcul d'autant plus que l'enfant est léger et que l'activité de base est faible : pour le ¹²³I-mIBG (base 28 MBq, min 37 MBq), tout enfant dont le multiple porte A en dessous de 37 MBq reçoit 37 MBq [1]. Le tableau suivant donne les activités de base et minimales pour les radiopharmaceutiques les plus courants (carte EANM v5.7.2016, verso) :\n\n| Radiopharmaceutique | Classe | Base (MBq) | Min. (MBq) |\n|---|---|---|---|\n| ¹²³I (thyroïde) | **C** | 0,6 | 3 |\n| ¹²³I-mIBG | B | 28,0 | 37 |\n| ¹³¹I-mIBG | B | 5,6 | 35 |\n| ¹⁸F-FDG corps | B | 25,9 | 26 |\n| ¹⁸F-FDG cérébral | B | 14,0 | 14 |\n| ¹⁸F-fluorure de sodium (NaF) | B | 10,5 | 14 |\n| ⁶⁸Ga-peptides (DOTA-) | B | 12,8 | 14 |\n| ⁹⁹ᵐTc-DMSA | B | 6,8 | 18,5 |\n| ⁹⁹ᵐTc-MAG3 | **A** | 11,9 | 15 |\n| ⁹⁹ᵐTc-DTPA (fct rénale normale) | **A** | 34,0 | 20 |\n| ⁹⁹ᵐTc-MDP (os) | B | 35,0 | 40 |\n| ⁹⁹ᵐTc-HMPAO / ECD (cérébral) | B | 51,8 | 100 |\n| ⁹⁹ᵐTc-pertechnétate (thyroïde) | B | 5,6 | 10 |\n| ⁹⁹ᵐTc-pertechnétate (Meckel) | B | 10,5 | 20 |\n| ⁹⁹ᵐTc-MIBI/tétrofosmine (oncologie) | B | 63,0 | 80 |\n| ⁶⁷Ga-citrate | B | 5,6 | 10 |\n\n*(⁹⁹ᵐTc = technétium-99m, γ monoénergétique de 140 keV, période 6 h, élué d'un générateur ⁹⁹Mo/⁹⁹ᵐTc ; il porte > 80 % des actes d'imagerie.)* [1,10,11]\n\n**Application pas à pas du plancher — scintigraphie osseuse ⁹⁹ᵐTc-bisphosphonate (classe B, base 35,0 MBq, min 40 MBq).** Le tableau III du guide CNP-MN (Comité National Professionnel de Médecine Nucléaire) déroule les doses françaises calculées par la carte EANM : **3 kg → 40 MBq** (plancher), **10 kg → 95 MBq**, **20 kg → 170 MBq**, **30 kg → 240 MBq**, **50 kg → 375 MBq**, **68 kg → 490 MBq** [27]. À 3 kg, le calcul donnerait 35 × 1 = 35 MBq, sous le minimum : on administre **40 MBq** [1,27].\n\n**Le plancher n'est pas figé.** Plusieurs valeurs ont été abaissées entre la carte 2007/2008 (v1.5.2008) et la v5.7.2016, après harmonisation EANM/SNMMI (Society of Nuclear Medicine and Molecular Imaging) : le minimum du **¹²³I-mIBG est passé de 80 à 37 MBq**, le **DMSA** est passé de classe A (base 17,0 MBq) à classe B (base 6,8 MBq) car les activités nord-américaines plus basses n'altéraient pas la qualité diagnostique [5]. La modernisation des TEP pousse plus loin : Dickson et al. (2022) proposent pour le ¹⁸F-FDG sur TEP grand champ une base ramenée à **10,7 MBq** (minimum 10 MBq), soit **−41 %** vs la carte 2016, à qualité d'image conservée [17] ; l'analyse de l'essai EuroNet PHL-C2 propose une **réduction moyenne ≈ 39 %** de l'activité FDG [18]. En pratique réelle, la dose FDG médiane injectée a chuté de **296 MBq (2000-2005) à 100 MBq (2016-2021)**, soit **−66 %**, à rapport signal/bruit stable [19].\n\nL'enquête française SFMN-SFPM-IRSN montre la double face du sujet : les activités FDG injectées étaient **> 40 % inférieures** aux recommandations EANM (marge déjà prise sur l'oncologie), tandis que les activités **DMSA étaient nettement supérieures** aux recommandations européennes — un gisement de réduction encore ouvert [12,28].",
+        "stats": [
+          {
+            "value": "37 MBq",
+            "label": "Plancher ¹²³I-mIBG (base 28,0)"
+          },
+          {
+            "value": "40 MBq",
+            "label": "Plancher ⁹⁹ᵐTc-MDP / scinti osseuse"
+          },
+          {
+            "value": "−41 %",
+            "label": "FDG proposé sur TEP grand champ vs 2016 [17]"
+          },
+          {
+            "value": "−66 %",
+            "label": "Dose FDG réelle médiane 2000-2005 → 2016-2021 [19]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le minimum prime, mais pas le plafond",
+            "text": "Deux bornes encadrent le calcul. **En bas**, le minimum prime sur le calcul (qualité d'image). **En haut**, on ne dépasse jamais le **NRD national** ni, le cas échéant, le plafond fixe de certains protocoles. Ne jamais « tronquer » au calcul brut chez le nourrisson : appliquer le plancher est la règle, pas l'exception [1]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — adapter le plancher à votre caméra",
+            "text": "Les minimums de la carte sont dimensionnés pour des systèmes « usuels ». Sur une **TEP numérique** ou à **long champ de vue axial (AFOV ≥ 25 cm)**, l'efficacité de comptage supérieure autorise des activités plus basses à qualité égale, ou un allongement du temps/pas de lit. Documenter localement le compromis activité ↔ temps d'acquisition avant de descendre sous le minimum publié [1,17]."
+          },
+          {
+            "type": "info",
+            "title": "Vérifier la version applicable",
+            "text": "La carte v5.7.2016 est la référence en vigueur (dernière mise à jour août 2016) [2], mais elle sera révisée à la baisse pour le FDG (TEP digitale, EuroNet PHL-C2) [17,18]. Toujours confirmer la **version et le calculateur** avant usage, et croiser avec les NRD nationaux actualisés [13]."
+          }
+        ]
+      },
+      {
+        "title": "B3 - Cas particuliers : nourrisson, blocage thyroïdien, traceurs iodés et MIBG",
+        "text": "Quatre situations sortent du calcul de routine et exigent une vigilance spécifique.\n\n**▸ Le nourrisson (≈ 3 kg) — le règne du plancher.** À 3 kg, le multiple vaut 1 dans les trois classes : l'activité calculée se confond avec l'activité de base, qui tombe presque toujours sous le minimum recommandé. Le nourrisson reçoit donc le plus souvent l'**activité minimale** (cf. §B2) — ¹²³I-mIBG **37 MBq**, scintigraphie osseuse **40 MBq**, FDG cérébral **14 MBq** [1]. C'est aussi la population la plus exposée par MBq : les coefficients de dose pédiatriques sont les plus élevés (FDG ≈ **0,073 mSv/MBq à 1 an** vs 0,016 chez l'adulte ; ⁹⁹ᵐTc-MDP **27 µSv/MBq à 1 an** vs 7,1 à 15 ans), d'où l'impératif d'**hydratation abondante et de mictions fréquentes** pour réduire la dose à l'organe critique, la **paroi vésicale** pour les traceurs à élimination urinaire (FDG, MAG3, DMSA, MDP) [20,21,27]. La sédation est évitée autant que possible [26].\n\n**▸ Le blocage thyroïdien — obligatoire pour tout traceur iodé.** Tout radiopharmaceutique marqué à l'iode (¹²³I/¹³¹I-mIBG, ¹²³I-thyroïde si l'on cherche autre chose que la thyroïde, ¹²³I-Hippuran) libère une fraction d'**iode libre** qui se fixerait sur la thyroïde — source d'irradiation thyroïdienne et d'artefact. La saturation est assurée par **iodure de potassium (Lugol)** débuté avant l'injection. Cette précaution ne s'applique **pas** aux traceurs ⁹⁹ᵐTc, ¹⁸F ou ⁶⁸Ga, qui ne relarguent pas d'iode [1].\n\n**▸ Les traceurs iodés et la classe C.** La classe C ne contient que les traceurs **thyroïdiens iodés** (¹²³I/¹³¹I thyroïde) : ce sont eux dont la dose efficace croît le plus vite avec le poids, d'où les multiples les plus élevés de la carte (×32,33 à 68 kg, contre ×14,00 en classe B et ×5,77 en classe A) [1,3]. Attention : le ¹²³I-mIBG et le ¹³¹I-mIBG, bien qu'iodés, sont en **classe B** et non C — la classe reflète la cinétique du vecteur (transporteur de la noradrénaline, élimination), pas la nature de l'isotope [1]. Le ¹²³I-thyroïde a la plus faible base de toute la carte (**0,6 MBq**) et un minimum de **3 MBq** [1].\n\n**▸ La MIBG — un piège de classe et de plancher.** Le ¹²³I-mIBG (classe B, base **28,0 MBq**, min **37 MBq**) et le ¹³¹I-mIBG (classe B, base **5,6 MBq**, min **35 MBq**) illustrent la dissociation entre isotope et classe [1]. Le minimum du ¹²³I-mIBG a d'ailleurs été **divisé par plus de deux** lors de l'harmonisation (80 → 37 MBq) sans perte diagnostique [5]. Le détail clinique du protocole MIBG (blocage thyroïdien Lugol dès la veille, 5-7 jours, arrêt des médicaments interférents, injection IV lente) relève de l'article *Scintigraphie à la MIBG* ; ici, on retient que **le calcul pédiatrique MIBG aboutit au plancher chez le petit enfant** et que la classe B (et non C) doit être lue malgré la présence d'iode [1].\n\n**▸ Cas-piège de l'indication qui change la classe.** Certains traceurs changent de classe — donc de base et de multiple — selon l'indication : le **⁹⁹ᵐTc-DTPA** est **classe A** (base 34,0 MBq) sur fonction rénale normale mais **classe B** (base 14,0 MBq) sur fonction anormale ; idem pour le **¹²³I-Hippuran** [1]. Lire la classe sur la ligne exacte de l'indication, jamais sur le seul nom du traceur.\n\n**▸ Note sur le Technegas.** Pour la ventilation pulmonaire, la valeur de la carte (49 MBq) est l'**activité de charge du dispositif**, non l'activité réellement inhalée, qui est inférieure [1].\n\nEnfin, deux écoles coexistent et ont été **harmonisées** (Lassmann & Treves, 2014) : l'EANM (base × multiple, conçu pour aplatir la dose efficace) et le **consensus nord-américain** (linéaire en **MBq/kg** avec minimum et maximum, mis à jour 2024 — ex. ¹²³I-mIBG **5,2 MBq/kg**, min 37, max 370 MBq ; DMSA **1,85 MBq/kg**, min 18,5, max 100 MBq) [5,6,29]. Les deux approches convergent mais **ne s'utilisent pas mécaniquement de façon interchangeable** : choisir un référentiel et s'y tenir [29].",
+        "stats": [
+          {
+            "value": "0,073 mSv/MBq",
+            "label": "Dose efficace FDG à 1 an (vs 0,016 adulte) [20]"
+          },
+          {
+            "value": "Classe C",
+            "label": "Réservée à la thyroïde iodée (×32,33 à 68 kg) [1]"
+          },
+          {
+            "value": "5,2 MBq/kg",
+            "label": "¹²³I-mIBG, consensus nord-américain 2024 [6]"
+          },
+          {
+            "value": "49 MBq",
+            "label": "Technegas : charge du dispositif, non inhalé [1]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — iode ne veut pas dire classe C",
+            "text": "Le ¹²³I-mIBG et le ¹³¹I-mIBG sont **iodés mais en classe B**. Seuls les traceurs **thyroïdiens iodés** (¹²³I/¹³¹I thyroïde) sont en classe C. Lire la classe sur la ligne d'indication exacte : ⁹⁹ᵐTc-DTPA et ¹²³I-Hippuran basculent de classe A à B selon que la fonction rénale est normale ou non [1]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — blocage thyroïdien systématique pour l'iode",
+            "text": "Tout traceur marqué à l'iode (mIBG, Hippuran, thyroïde) impose une **saturation thyroïdienne par Lugol/iodure de potassium** avant injection, pour protéger la thyroïde de l'iode libre. Inutile pour les traceurs ⁹⁹ᵐTc, ¹⁸F ou ⁶⁸Ga [1]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — ne pas mélanger les deux référentiels",
+            "text": "EANM (base × multiple) et consensus nord-américain (MBq/kg) sont harmonisés mais distincts. Mélanger un minimum nord-américain avec un multiple EANM produit une activité incohérente. Choisir **un** référentiel (en France, EANM + NRD ASNR) et l'appliquer de bout en bout [5,6,29]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Triade ALARA (temps, distance, écran) appliquée à la radioprotection pédiatrique : l'activité minimale et l'hydratation/miction réduisent la dose à la paroi vésicale, organe critique des traceurs à élimination urinaire chez le nourrisson."
+      },
+      {
+        "title": "C1 - De l'activité administrée à la dose efficace : interpréter le résultat (ICRP 128)",
+        "text": "Le résultat de la carte de dosage EANM (European Association of Nuclear Medicine) — une **activité administrée en MBq** — n'est qu'un point de départ. Pour l'interpréter en termes de **radioprotection du patient**, il faut le convertir en **dose efficace (mSv)**, grandeur corps entier pondérée par la radiosensibilité des organes. Le cadre de référence est la **publication ICRP 128** (International Commission on Radiological Protection), compendium des coefficients de dose par radiopharmaceutique, qui fournit des facteurs pédiatriques distincts pour les modèles **nouveau-né, 1 an, 5 ans, 10 ans, 15 ans et adulte** [21].\n\n**De l'activité à la dose : la formule de conversion.** La dose efficace E se calcule comme `E [mSv] = A [MBq] × e(âge) [mSv/MBq]`, où **e(âge)** est le coefficient de dose efficace propre à l'âge et au traceur. La logique de la carte EANM s'éclaire alors : puisque l'activité administrée croît avec le poids (multiple A/B/C) tandis que le coefficient e(âge) **décroît** avec l'âge/le poids, le produit des deux reste **quasi constant** — c'est la définition opérationnelle de la *weight-independent effective dose* visée par Jacobs et al. [3].\n\n**Le coefficient décroît fortement avec l'âge — exemple du ¹⁸F-FDG.** Pour le ¹⁸F-fluorodésoxyglucose, les coefficients de dose efficace (OLINDA 2.0, en accord avec ICRP 128) sont d'environ **0,073 mSv/MBq à 1 an**, **0,041 à 5 ans**, **0,027 à 10 ans**, **0,018 à 15 ans** et **0,016 chez l'adulte** [20]. Autrement dit, à activité égale, un nourrisson reçoit ~**4,5 fois** plus de dose efficace qu'un adulte : c'est précisément ce gradient que la carte EANM compense en réduisant l'activité administrée au petit enfant.\n\n| Âge / modèle | ¹⁸F-FDG e(âge) (mSv/MBq) | Dose vésicale (mGy/MBq) |\n|---|---|---|\n| 1 an | **0,073** | 0,470 |\n| 5 ans | **0,041** | 0,340 |\n| 10 ans | **0,027** | 0,250 |\n| 15 ans | **0,018** | 0,160 |\n| Adulte | **0,016** | 0,130 |\n\n*(Source : coefficients pédiatriques OLINDA 2.0 / comparaison ICRP 128 [20,21] ; coefficient adulte ≈ 0,019 mSv/MBq selon ICRP 106 [22].)*\n\n**Lire le résultat par l'organe critique.** La dose efficace masque le fait que la charge dosimétrique est très inégalement répartie. Interpréter un calcul, c'est identifier l'**organe critique** propre au traceur :\n\n| Traceur | Organe critique | Repère dosimétrique |\n|---|---|---|\n| ¹⁸F-FDG | **Paroi vésicale** (excrétion urinaire) | ≈ 0,13 mGy/MBq (adulte), jusqu'à 0,47 mGy/MBq à 1 an [20,22] |\n| ⁹⁹ᵐTc-MDP/HMDP | **Surfaces osseuses** | E adulte ≈ 5,8 µSv/MBq ; **27 µSv/MBq à 1 an** [27,35] |\n| ⁹⁹ᵐTc-DMSA | **Reins (cortex)** | dose absorbée rénale ≈ 0,48 mGy/MBq (enfant 4 ans) [23] |\n| ⁹⁹ᵐTc-MAG3 | **Paroi vésicale** | e nourrisson ≈ 0,02 mSv/MBq [25] |\n| ⁶⁸Ga-DOTATATE | Rate / paroi vésicale | E ≈ 3,6 mSv pour 150 MBq (≈ 0,024 mSv/MBq) [—] |\n\n**Mise en perspective.** Une scintigraphie osseuse ⁹⁹ᵐTc-MDP délivre une dose efficace pédiatrique typique de l'ordre de 1–3 mSv ; une TEP ¹⁸F-FDG corps entier, selon l'harmonisation, ≈ **6,7–7,2 mSv** chez l'enfant avec la méthode EANM 2007, contre 4,8–6,9 mSv avec le consensus nord-américain [5]. La **platitude** de la dose EANM en fonction du poids (≈ 0,9–1,2 mSv pour le DMSA sur toute la gamme d'âge ; ≈ 7 mSv pour le FDG torse) est la signature attendue d'un calcul correct [5].\n\n**Incertitude des modèles dosimétriques.** Les coefficients ICRP reposent sur des modèles biocinétiques parfois anciens : les données du **DMSA datent de plus de 30 ans** (base ICRP 80), d'où une incertitude relative élevée [5]. La pharmacocinétique réelle de l'enfant diffère de l'extrapolation adulte : pour le ⁹⁹ᵐTc-DMSA, le temps de résidence intégré (TIAC) mesuré est **~27 % inférieur** à la valeur ICRP adulte, ce qui suggère que les modèles **surestiment** la dose rénale pédiatrique [24]. Un résultat de dose efficace doit donc être lu comme un **ordre de grandeur**, non comme une mesure individuelle.",
+        "stats": [
+          {
+            "value": "4,5×",
+            "label": "surdose efficace ¹⁸F-FDG du nourrisson (1 an) vs adulte, à activité égale [20]"
+          },
+          {
+            "value": "0,016 mSv/MBq",
+            "label": "coefficient ¹⁸F-FDG adulte (ICRP 106/128) [21,22]"
+          },
+          {
+            "value": "≈ 7 mSv",
+            "label": "dose efficace TEP ¹⁸F-FDG torse, plate sur tout le poids (EANM) [5]"
+          },
+          {
+            "value": "−27 %",
+            "label": "TIAC réel du ⁹⁹ᵐTc-DMSA pédiatrique vs modèle adulte ICRP [24]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi la dose est « plate »",
+            "text": "L'élégance de la carte EANM tient à un produit qui se compense : l'**activité administrée monte** avec le poids (multiple A/B/C croissant) pendant que le **coefficient e(âge) descend** (0,073 → 0,016 mSv/MBq pour le ¹⁸F-FDG entre 1 an et l'adulte) [20]. Le résultat — la dose efficace — reste donc remarquablement constant sur toute la gamme d'âge, conformément à l'objectif fondateur de Jacobs et al. (2005) [3]. C'est l'inverse du modèle nord-américain par MBq/kg, qui donne des doses plus basses chez le petit mais croissantes avec le poids [5]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la dose efficace n'est pas la dose à l'organe",
+            "text": "Conclure sur la seule dose efficace (mSv) fait perdre l'information clé : l'**organe critique**. Pour le ¹⁸F-FDG et le ⁹⁹ᵐTc-MAG3, c'est la **paroi vésicale** [20,25] ; pour le ⁹⁹ᵐTc-DMSA, les **reins** [23,24] ; pour le ⁹⁹ᵐTc-MDP, les **surfaces osseuses** [35]. Hydratation abondante et **mictions fréquentes** réduisent directement la dose vésicale, organe critique des traceurs à élimination urinaire — un levier de radioprotection que le chiffre de dose efficace ne fait pas apparaître [14,27]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureCaption": "Fig. C1 — De l'activité administrée (MBq) à la dose efficace (mSv) : le coefficient ICRP 128 décroît avec l'âge et compense la hausse d'activité avec le poids.",
+        "figureAlt": "Schéma reliant l'activité administrée en MBq au coefficient de dose efficace ICRP 128 par âge, illustrant la compensation qui rend la dose efficace indépendante du poids."
+      },
+      {
+        "title": "C2 - Lire et comparer les barèmes : EANM vs North American Consensus vs autres",
+        "text": "Deux écoles coexistent pour calculer l'activité pédiatrique, fondées sur des **modèles mathématiques différents** mais **harmonisées** depuis le Working Group EANM/SNMMI (2012, publication Lassmann & Treves 2014) [5]. Savoir lire et comparer les deux barèmes — et ne jamais les utiliser de façon interchangeable mécanique — fait partie de l'interprétation du résultat.\n\n**Deux structures de calcul.**\n- **EANM** : modèle **Activité de base × Multiple(poids, classe A/B/C)**, *non linéaire* avec le poids, conçu pour aplatir la dose efficace ; plancher = activité minimale [1].\n- **Consensus nord-américain (SNMMI / Image Gently)** : modèle **linéaire en MBq/kg**, borné par un minimum ET un maximum. Publié initialement par Gelfand, Parisi & Treves (2011), mis à jour en **2016** puis **2024** [7,30,6].\n\n**Comparaison directe sur traceurs phares.** Le tableau ci-dessous confronte, pour quelques examens pédiatriques courants, la logique EANM (v5.7.2016) et les valeurs nord-américaines 2024 :\n\n| Traceur | EANM — base × classe | Amérique du Nord 2024 (par kg) | Min NA | Max NA |\n|---|---|---|---|---|\n| ¹²³I-mIBG | base **28,0 MBq**, classe B | **5,2 MBq/kg** | 37 MBq | 370 MBq |\n| ⁹⁹ᵐTc-MDP (os) | base **35,0 MBq**, classe B | **9,3 MBq/kg** | 37 MBq | 740 MBq |\n| ¹⁸F-FDG corps | base **25,9 MBq**, classe B | **2,96–5,2 MBq/kg** | 26 MBq | 370 MBq |\n| ¹⁸F-FDG cerveau | base **14,0 MBq**, classe B | **1,85–3,7 MBq/kg** | 14 MBq | 148 MBq |\n| ⁹⁹ᵐTc-DMSA | base **6,8 MBq**, classe B | **1,85 MBq/kg** | 18,5 MBq | 100 MBq |\n| ⁹⁹ᵐTc-MAG3 (sans flux) | base **11,9 MBq**, classe **A** | **3,7 MBq/kg** | 37 MBq | 148 MBq |\n| ¹⁸F-NaF (os) | base **10,5 MBq**, classe B | **1,85 MBq/kg** | 18,5 MBq | 148 MBq |\n| ⁶⁸Ga-DOTATATE | base **12,8 MBq**, classe B | **2,0 MBq/kg** | 14 MBq | 200 MBq |\n| Na-¹²³I (thyroïde) | base **0,6 MBq**, classe **C** | **0,28 MBq/kg** | 1 MBq | 11 MBq |\n\n*(EANM : carte v5.7.2016 [1] ; valeurs nord-américaines : 2024 Update of the North American Consensus Guidelines [6,29].)*\n\n**Lire la différence en doses efficaces.** L'harmonisation Lassmann & Treves a quantifié l'écart. Pour la scintigraphie rénale ⁹⁹ᵐTc-DMSA (poids nominaux 10/19/32/55/70 kg), la méthode EANM 2014 donne **0,68 / 0,67 / 0,74 / 0,92 / 0,88 mSv** contre **0,68 / 0,73 / 0,89 / 1,12 / 1,14 mSv** pour le consensus NA 2010 [5] : EANM est plus plate, NA croît avec le poids. À l'inverse, pour le ¹⁸F-NaF osseux, le consensus NA délivre des doses plus basses (**3,3 → 3,7 mSv**) que l'EANM 2007 (**5,7 → 4,8 mSv**), ce qui a motivé l'abaissement EANM 2014 de la base à 10,5 MBq (**4,2 → 3,6 mSv**) [5]. **Aucun barème n'est uniformément « plus protecteur »** : la comparaison dépend du traceur et du poids.\n\n**Le barème de référence évolue — vérifier la version.** La carte EANM en vigueur reste la **v5.7.2016** [1,2], mais plusieurs révisions à la baisse sont proposées pour le ¹⁸F-FDG, portées par la TEP moderne :\n- TEP **long FOV / semi-conducteurs** (AFOV ≥ 25 cm) : proposition base **10,7 MBq**, soit **−41,2 %** vs 2016, dose efficace moyenne ≈ 2,85 mSv [17].\n- Essai **EuroNet PHL-C2** (lymphome de Hodgkin pédiatrique) : réduction moyenne **~39 %** de l'activité FDG, limite conservatrice 3,53 MBq/kg [18].\n- Tendance réelle observée : dose FDG médiane passée de 296 MBq (2000–2005) à 100 MBq (2016–2021), soit **−66 %**, à rapport signal/bruit stable [19].\n\n**Le cadre réglementaire prime sur les deux barèmes.** Quel que soit le barème, la règle (c) de la carte EANM impose de **ne jamais dépasser les NRD nationaux** [1]. En France, les **niveaux de référence diagnostiques (NRD) pédiatriques** (ASNR, ex-IRSN) encadrent l'activité [13] ; l'enquête **SFMN-SFPM-IRSN** (2016–2017) a montré des écarts de pratique notables : activités FDG injectées **> 40 % inférieures** aux recommandations EANM en TEP oncologique, mais activités **DMSA nettement supérieures** aux valeurs européennes — soit une marge de réduction réelle [12,28]. La carte EANM matérialise l'**optimisation (ALARA)** mais ne se substitue pas aux dispositions légales nationales [1,14].\n\n**Algorithme de lecture/comparaison (mémo).**\n1. Identifier le **barème applicable** dans le service (EANM v5.7.2016 vs consensus NA 2024) et sa **version**.\n2. Calculer l'activité par la formule correspondante (base × multiple **ou** MBq/kg).\n3. Appliquer le **plancher** (activité minimale) et, côté NA, le **plafond** (maximum).\n4. Vérifier le respect du **NRD national** (ASNR en France) [13].\n5. Convertir en **dose efficace** (coefficient ICRP 128, cf. C1) pour documenter et comparer [21].",
+        "stats": [
+          {
+            "value": "2",
+            "label": "barèmes harmonisés : EANM (base × multiple) vs NA (MBq/kg) [5]"
+          },
+          {
+            "value": "−41,2 %",
+            "label": "baisse d'activité ¹⁸F-FDG proposée pour la TEP long FOV vs carte 2016 [17]"
+          },
+          {
+            "value": "−66 %",
+            "label": "chute réelle de la dose FDG pédiatrique médiane 2000→2021, S/B stable [19]"
+          },
+          {
+            "value": "> 40 %",
+            "label": "sous-dosage FDG observé en France vs EANM (enquête SFMN-SFPM-IRSN) [12,28]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — ne pas mélanger les deux barèmes",
+            "text": "Les deux méthodes sont harmonisées mais **pas mécaniquement interchangeables** [5]. Appliquer un **MBq/kg** nord-américain à un patient calculé jusque-là en **base × multiple** EANM (ou l'inverse) sur le même protocole introduit des écarts de dose, surtout aux extrêmes de poids où les courbes divergent le plus. On choisit **un** barème de référence pour le service et on s'y tient, en vérifiant toujours le NRD national [1,6,13]."
+          },
+          {
+            "type": "info",
+            "title": "Repère — classe A/B/C selon l'indication",
+            "text": "La comparaison des barèmes suppose d'abord de **lire correctement la classe EANM**, qui peut changer pour un même traceur selon l'indication : le ⁹⁹ᵐTc-DTPA est **classe A** (fonction rénale normale, base 34,0 MBq) mais **classe B** (fonction anormale, base 14,0 MBq) [1]. Une erreur de classe fausse le multiple et donc toute la comparaison de dose. Vérifier la classe avant de lire la table, idéalement via le calculateur officiel EANM App-Calc [15]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — aucun barème universellement « meilleur »",
+            "text": "L'harmonisation Lassmann & Treves montre que la supériorité dosimétrique change de camp selon le traceur : EANM donne des doses plus **plates et basses** pour le ⁹⁹ᵐTc-DMSA aux poids élevés, tandis que le consensus NA est plus **économe** pour le ¹⁸F-NaF [5]. Interpréter une comparaison de barèmes, c'est donc raisonner **traceur par traceur et poids par poids**, jamais en bloc."
+          }
+        ],
+        "figureKey": "BONE_SCAN",
+        "figureCaption": "Fig. C2 — Deux logiques de calcul confrontées sur la scintigraphie osseuse ⁹⁹ᵐTc-MDP : base × multiple (EANM) vs MBq/kg borné min/max (consensus nord-américain).",
+        "figureAlt": "Schéma comparatif des deux barèmes pédiatriques pour la scintigraphie osseuse au technétium-99m MDP : courbe non linéaire EANM base x multiple et droite linéaire nord-américaine en MBq par kilogramme avec plancher et plafond."
+      },
+      {
+        "title": "D1 - Maîtriser les leviers : temps d'acquisition, technologie TOF/numérique, hydratation",
+        "text": "L'activité de la carte EANM n'est pas une fatalité : elle est calibrée pour un **système de comptage de référence** et un **temps d'acquisition donné**. Trois leviers permettent de descendre sous la valeur tabulée sans sacrifier le diagnostic — la **technologie du détecteur**, la **durée d'acquisition par pas de lit**, et l'**hydratation/vidange** qui réduit la dose à l'organe critique. Maîtriser ces leviers, c'est comprendre que la carte 2016 est un **plancher de sécurité historique**, déjà dépassé par les pratiques modernes.[1,17]\n\n**▸ Levier 1 — technologie du détecteur (TEP TOF / numérique).** La note de bas de page officielle de la carte précise que les activités minimales sont « calculées pour des gamma-caméras et systèmes TEP usuels » et que des **activités plus basses sont possibles avec des systèmes à efficacité de comptage supérieure**.[1] C'est exactement ce qu'apportent la TEP numérique (détecteurs SiPM/semi-conducteurs) et le grand champ axial (long FOV) : pour le **¹⁸F-FDG**, Dickson et al. ont proposé de nouveaux paramètres — **classe B, activité de base 10,7 MBq, minimum 10 MBq**, soit une réduction de **−41,2 %** par rapport à la carte 2016, sur une plage de **11 MBq (3 kg) à 149 MBq (68 kg)** pour 3 min/pas de lit, avec une dose efficace moyenne de **≈ 2,85 mSv** au-delà de 1 an.[17] L'essai pédiatrique **EuroNet PHL-C2** (lymphome de Hodgkin) confirme la tendance avec une réduction moyenne **≈ 39 %** de l'activité FDG, une limite conservatrice de **3,53 MBq/kg**, et une dose efficace de **≈ 4,1–4,4 mSv** selon l'âge.[18]\n\n**▸ Levier 2 — temps d'acquisition (le compromis fondamental).** Activité et temps sont **interchangeables** à comptage statistique constant : doubler le temps par pas de lit permet de moitié l'activité. La carte nord-américaine fixe ses valeurs FDG pour **1 min/image** ; un temps/image plus long autorise une réduction.[6] Le standard pédiatrique SNMMI/EANM recommande **1–3 min/pas de lit** sur caméra conventionnelle, raccourci sur les systèmes à haute sensibilité.[26] L'effet cumulé est spectaculaire : sur deux décennies, la dose FDG médiane réellement injectée est passée de **296 MBq (2000–2005) à 100 MBq (2016–2021)**, soit **−66 %**, à rapport signal/bruit stable.[19]\n\n| Levier | Action | Gain dosimétrique | Source |\n|---|---|---|---|\n| TEP numérique / long FOV | Baseline FDG 25,9 → 10,7 MBq | **−41,2 %** | [17] |\n| Protocole EuroNet PHL-C2 | Limite 3,53 MBq/kg | **≈ −39 %** | [18] |\n| Temps d'acquisition allongé | min/pas de lit ↑ | proportionnel | [6,26] |\n| Tendance réelle 2000→2021 | Optimisation cumulée | **−66 %** | [19] |\n\n**▸ Levier 3 — hydratation et vidange vésicale.** Pour les traceurs à **élimination urinaire** (FDG, MAG3, DMSA, DTPA, MDP, NaF), l'organe critique est la **paroi vésicale**.[20,25] La dose absorbée vésicale du FDG (ICRP 128) atteint **0,470 mGy/MBq à 1 an, 0,250 à 10 ans, 0,130 chez l'adulte** — soit le déterminant principal de la dose efficace pédiatrique.[20] Une **hydratation abondante** et des **mictions fréquentes** raccourcissent le temps de résidence vésical et abaissent directement cette dose, sans modifier l'activité injectée.[27] Le coefficient de dose efficace FDG décroît fortement avec l'âge — **≈ 0,073 mSv/MBq à 1 an, 0,041 à 5 ans, 0,027 à 10 ans, 0,016 chez l'adulte** — ce qui justifie de cumuler tous les leviers chez le très jeune enfant.[20,21]",
+        "stats": [
+          {
+            "value": "−41,2 %",
+            "label": "Activité FDG (TEP numérique vs carte 2016) [17]"
+          },
+          {
+            "value": "−66 %",
+            "label": "Dose FDG réelle 2000→2021 [19]"
+          },
+          {
+            "value": "0,470",
+            "label": "mGy/MBq vessie FDG à 1 an (ICRP 128) [20]"
+          },
+          {
+            "value": "≈ 2,85 mSv",
+            "label": "Dose efficace FDG TEP numérique (≥1 an) [17]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Activité et temps d'acquisition sont les deux faces d'une même statistique de comptage. Sur une TEP numérique ou à grand champ axial, la **bonne pratique** n'est pas de garder l'activité de la carte 2016 et de raccourcir l'examen, mais de **réduire l'activité** (jusqu'à −40 %) en conservant un temps/pas de lit suffisant — bénéfice dosimétrique direct chez l'enfant à qualité d'image égale.[17,19]"
+          },
+          {
+            "type": "info",
+            "title": "La carte 2016 est un plancher déjà daté",
+            "text": "Les baselines FDG de la version 5.7.2016 (torse 25,9 MBq ; cerveau 14,0 MBq) précèdent la généralisation de la TEP numérique. Vérifier la **version applicable** et le calculateur officiel avant usage : une révision à la baisse du FDG est attendue (Dickson 2022, EuroNet PHL-C2 2023).[17,18]"
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Biodistribution du 18F-FDG avec élimination urinaire et accumulation vésicale, illustrant la vessie comme organe critique dont la dose est réduite par l'hydratation et la vidange."
+      },
+      {
+        "title": "D2 - Pièges, erreurs de calcul et contrôle qualité du dosage",
+        "text": "Le calcul EANM est simple — **A = Activité de base × Multiple(poids, classe)** — mais chaque étape recèle un piège : se tromper de **classe**, oublier le **plancher minimal**, confondre carte EANM et carte nord-américaine, ou dépasser un **NRD national**. Le contrôle qualité du dosage consiste à dérouler systématiquement les cinq vérifications avant toute injection.[1]\n\n**▸ Piège n°1 — l'erreur de classe (A/B/C).** Un même traceur change de classe selon l'**indication**, et donc d'activité de base : le **⁹⁹ᵐTc-DTPA** est **classe A, baseline 34,0 MBq** pour une fonction rénale normale, mais **classe B, baseline 14,0 MBq** pour une fonction rénale anormale ; il en va de même pour le **¹²³I-Hippuran**.[1] Lire le mauvais multiple (la classe C croît bien plus vite que la A avec le poids) surdose massivement l'enfant. **Toujours vérifier la classe avant de lire le multiple.**\n\n**▸ Piège n°2 — oublier le plancher d'activité minimale.** Aux faibles poids, l'activité calculée tombe sous le minimum recommandé : c'est alors le **minimum qui prime** (qualité d'image), jamais le calcul.[1] Exemple officiel : **¹²³I-mIBG, nourrisson 3 kg** → 28,0 × 1 = 28 MBq, inférieur au minimum de **37 MBq** → administrer **37 MBq**.[1]\n\n**▸ Piège n°3 — confondre les deux écoles.** La carte EANM (**activité de base × multiple**, non linéaire) et le consensus nord-américain (**MBq/kg** linéaire, avec min/max) sont **harmonisés** (Lassmann & Treves 2014) mais **non interchangeables mécaniquement**.[5] Appliquer un MBq/kg nord-américain à une logique EANM, ou inversement, produit une erreur de dose.\n\n| Traceur (indication) | EANM (base × multiple) | Nord-américain (par kg) | Source |\n|---|---|---|---|\n| ¹⁸F-FDG corps | base 25,9 MBq, min 26 | 3,7–5,2 MBq/kg, min 26 | [1,6] |\n| ⁹⁹ᵐTc-DMSA | base 6,8 MBq, min 18,5 | 1,85 MBq/kg, min 18,5, max 100 | [1,6] |\n| ⁹⁹ᵐTc-MAG3 | base 11,9 MBq (cl. A), min 15 | 3,7 MBq/kg, min 37, max 148 | [1,6] |\n| ⁹⁹ᵐTc-pertechnétate (Meckel) | base 10,5 MBq, min 20 | 1,85 MBq/kg, min 9,25 | [1,29] |\n\n**▸ Piège n°4 — la valeur d'activité n'est pas toujours l'activité reçue.** Pour le **⁹⁹ᵐTc-Technegas** (ventilation), la valeur de **49 MBq** est l'activité de **charge du dispositif**, l'activité réellement inhalée étant inférieure.[1] Ne pas la confondre avec une activité injectée.\n\n**▸ Piège n°5 — les versions de la carte évoluent.** Plusieurs valeurs ont changé entre la v1.5.2008 et la v5.7.2016 : le **DMSA** est passé de **classe A, baseline 17,0 MBq, min 15 MBq** à **classe B, baseline 6,8 MBq, min 18,5 MBq** après harmonisation EANM/SNMMI.[5] Travailler sur une carte périmée est une source d'erreur systématique.\n\n**▸ Contrôle qualité réglementaire — le NRD comme borne supérieure.** La règle (c) de la carte est impérative : **ne jamais dépasser les niveaux de référence diagnostiques (NRD) nationaux**.[1] En France, les NRD pédiatriques sont définis par catégorie de poids (ASNR) : pour la scintigraphie osseuse ⁹⁹ᵐTc-HDP, **40 MBq à 3,5 kg, 95 à 10 kg, 170 à 20 kg, 240 à 30 kg, 310 à 40 kg**.[13,27] L'enquête SFMN-SFPM-IRSN a révélé des **disparités** : activités FDG injectées **> 40 % inférieures** aux recommandations EANM (marge de bénéfice acquise), mais activités **DMSA nettement supérieures** aux recommandations européennes (marge de réduction à exploiter).[12,28]",
+        "steps": [
+          {
+            "title": "1 · Identifier classe + baseline",
+            "text": "Examen → radiopharmaceutique → **classe (A/B/C)** ET activité de base, lus sur la carte EANM v5.7.2016 en vigueur. Vérifier l'indication (DTPA/Hippuran changent de classe).[1]"
+          },
+          {
+            "title": "2 · Lire le multiple du poids",
+            "text": "Multiple correspondant au poids de l'enfant dans la **colonne de la bonne classe** (A, B ou C). La classe C croît beaucoup plus vite que la A.[1]"
+          },
+          {
+            "title": "3 · Calculer A = base × multiple",
+            "text": "Produit arithmétique. Exemple : ¹⁸F-FDG cerveau, 50 kg → 14,0 × 10,71 ≈ **150 MBq**.[1]"
+          },
+          {
+            "title": "4 · Appliquer le plancher",
+            "text": "Si A < activité minimale recommandée → **administrer le minimum** (qualité d'image). Ex. ¹²³I-mIBG 3 kg → 37 MBq.[1]"
+          },
+          {
+            "title": "5 · Vérifier le NRD national",
+            "text": "Comparer au NRD pédiatrique (ASNR en France) : **ne jamais le dépasser**.[1,13]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — l'erreur de classe",
+            "text": "Un même traceur peut être **classe A ou B** selon l'indication (⁹⁹ᵐTc-DTPA, ¹²³I-Hippuran : A si fonction rénale normale, B si anormale).[1] La classe C (thyroïde iodée) a les multiples les plus élevés et croît fortement avec le poids — lire la mauvaise colonne surdose l'enfant. Vérifier systématiquement la classe AVANT le multiple."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — carte EANM ≠ carte nord-américaine",
+            "text": "EANM = **base × multiple** (non linéaire) ; consensus NA = **MBq/kg** (linéaire, avec min ET max). Les deux sont harmonisées mais ne s'emploient pas de façon interchangeable.[5,29] Mélanger les deux logiques pour un même traceur génère une erreur de dose."
+          }
+        ]
+      },
+      {
+        "title": "D3 - Outils officiels et place du calculateur dans le workflow clinique",
+        "text": "Le calcul manuel — lecture de la classe, du multiple, application du plancher, vérification du NRD — est **propice aux erreurs**. L'EANM met à disposition des outils officiels qui automatisent la formule et restituent à la fois l'**activité (MBq)** et la **dose efficace (mSv)**, intégrés dans un workflow où le calculateur n'est qu'une étape entre la **justification** et l'**optimisation**.[1,15]\n\n**▸ Outils officiels EANM.** Trois supports portent la même formule de référence : la **carte de dosage** (PDF/papier, version 5.7.2016, dernière mise à jour août 2016) ; l'**application PedDose** (iPhone/Android) ; et le **calculateur en ligne App-Calc v2.01**, qui couvre les poids de **3 à 68 kg par pas de 2 kg** et **plus de 40 radiopharmaceutiques**, restituant MBq et mSv.[1,2,15] Tous appliquent la même règle en trois étapes (multiple → plancher → NRD) et **éliminent l'erreur de lecture de classe**, principal piège du calcul manuel (cf. §D2).[1,15]\n\n| Outil | Support | Plage / contenu | Restitution | Source |\n|---|---|---|---|---|\n| Carte de dosage v5.7.2016 | PDF / papier | 3→68 kg, 95 entrées | MBq | [1] |\n| Application PedDose | iOS / Android | radiopharmaceutiques EANM | MBq | [2] |\n| App-Calc v2.01 | en ligne | 3→68 kg, >40 traceurs | MBq + mSv | [15] |\n\n**▸ Place dans le workflow clinique.** Le calculateur s'insère entre deux décisions médicales qu'il ne remplace pas. En **amont**, la **justification** de l'examen (le bénéfice attendu dépasse-t-il le risque radique ?) ; en **aval**, l'**optimisation** des paramètres d'acquisition (cf. §D1) et la vérification réglementaire. La carte EANM **matérialise l'optimisation** de l'activité, mais **ne se substitue pas aux dispositions légales nationales** ; elle s'applique dans le cadre **ALARA** (As Low As Reasonably Achievable) et des démarches **Image Gently / Image Wisely**.[1,14]\n\n**▸ Vérification spécifique en TEP haute sensibilité.** Le calculateur restitue les valeurs de la carte 2016 ; sur **TEP numérique ou grand champ axial**, le médecin nucléaire doit envisager les **paramètres réduits** désormais documentés (baseline FDG abaissée, cf. §D1) plutôt que la valeur tabulée par défaut.[17,18] Le calculateur est un point de départ, pas un point d'arrivée.\n\n**▸ Encadrement réglementaire français.** Les **NRD pédiatriques** (version 2011, fondés sur les recommandations EANM, pour 10 examens) sont pilotés par l'enquête **SFMN-SFPM-IRSN** et tenus à jour par l'**ASNR**.[12,13] Le rapport SFPM 2017 sur la dosimétrie des explorations diagnostiques fournit le cadre de calcul de dose national.[14] Le workflow complet enchaîne donc : justification → choix du traceur et de la classe → calcul (outil EANM) → plancher → **vérification NRD ASNR** → optimisation de l'acquisition.",
+        "steps": [
+          {
+            "title": "Justifier",
+            "text": "Indication validée : le bénéfice diagnostique dépasse le risque radique (principe de justification, en amont de tout calcul).[1]"
+          },
+          {
+            "title": "Calculer (outil EANM)",
+            "text": "Saisir poids + traceur dans **App-Calc v2.01** ou PedDose → MBq et mSv restitués, classe gérée automatiquement.[15]"
+          },
+          {
+            "title": "Appliquer plancher + NRD",
+            "text": "Vérifier A ≥ minimum recommandé et A ≤ **NRD national (ASNR)**.[1,13]"
+          },
+          {
+            "title": "Optimiser l'acquisition",
+            "text": "Si TEP numérique/long FOV : envisager activité réduite + temps/pas de lit adapté (cf. §D1) plutôt que la valeur tabulée.[17]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "3→68 kg",
+            "label": "Plage couverte par App-Calc v2.01 [15]"
+          },
+          {
+            "value": ">40",
+            "label": "Radiopharmaceutiques dans le calculateur [15]"
+          },
+          {
+            "value": "v5.7.2016",
+            "label": "Version de référence de la carte (août 2016) [1,2]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Le calculateur EANM restitue **MBq ET mSv** : afficher la dose efficace estimée au moment du dosage permet de tracer l'optimisation dans le compte rendu et de comparer aux NRD. Privilégier App-Calc/PedDose au calcul manuel élimine le piège n°1 (erreur de classe) décrit au §D2.[15]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — la carte ne remplace pas la loi",
+            "text": "La carte EANM matérialise l'optimisation mais **ne se substitue pas aux dispositions légales nationales** : l'activité finale doit rester ≤ NRD national (ASNR en France) et respecter le principe **ALARA**.[1,13,14] Le calculateur est un outil d'aide, jamais une autorisation de dépasser les bornes réglementaires."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma du principe ALARA (temps, distance, écran) replaçant le calcul de l'activité pédiatrique dans la démarche d'optimisation de la radioprotection, entre justification en amont et vérification du NRD en aval."
+      },
+      {
+        "title": "E1 - Synthèse opérationnelle et points-clés à retenir",
+        "text": "Chez l'enfant, l'activité injectée n'est **jamais** une dose adulte « réduite à vue ». La carte de dosage pédiatrique de l'EANM (European Association of Nuclear Medicine), partagée par ses Comités Pédiatrie et Dosimétrie, calcule l'activité administrée selon une **formule unique** :\n\n> **A [MBq] = Activité de base (Baseline) × Multiple(poids, classe)**\n\noù le *Multiple* est lu dans la table « Multiple of Baseline Activity » en fonction du **poids (kg)** ET de la **classe (A, B ou C)** du radiopharmaceutique [1]. La version de référence en vigueur est la **v5.7.2016** (dernière mise à jour publiée août 2016) [1,2]. L'objectif méthodologique, démontré par Jacobs et al. (2005) sur **95 radiopharmaceutiques**, **7 fantômes** et **10 radionucléides**, est d'obtenir une **dose efficace quasi indépendante du poids** de l'enfant — ce qu'aucune simple règle de proportionnalité (poids, surface corporelle) ne permet [3].\n\n**Algorithme opérationnel en 6 temps** (à appliquer dans cet ordre, sans en sauter un) :\n\n1. Identifier l'examen et le radiopharmaceutique → en déduire la **classe (A/B/C)** et l'**activité de base** sur la carte EANM v5.7.2016 [1].\n2. Lire le **Multiple** correspondant au poids de l'enfant dans la bonne colonne de classe [1].\n3. Calculer **A = base × Multiple** [1].\n4. Comparer à l'**activité minimale recommandée** : si A < minimum → **administrer le minimum** (garantie de qualité d'image) [1].\n5. Vérifier que A ne dépasse pas le **niveau de référence diagnostique (NRD) national** (en France, ASNR) [1,13].\n6. Appliquer le **protocole d'acquisition** adapté (préparation, captation, durée) et envisager des paramètres réduits si TEP haute sensibilité [17,26].\n\n**Les trois classes** (clusters d'homogénéité de la dose efficace selon le poids, Jacobs 2005) [3] :\n\n| Classe | Contenu | Multiples | Exemples (activité de base) |\n|---|---|---|---|\n| **A** | Traceurs **rénaux** à élimination rapide (n≈7) | Les plus **faibles** | ⁹⁹ᵐTc-MAG3 (11,9 MBq) ; ⁹⁹ᵐTc-DTPA fct normale (34,0 MBq) ; ¹²³I-Hippuran fct normale (12,8 MBq) [1] |\n| **B** | **Tous les autres** traceurs (n≈76) | Intermédiaires | ¹⁸F-FDG corps (25,9) / cerveau (14,0) ; ⁹⁹ᵐTc-MDP (35,0) ; ⁹⁹ᵐTc-DMSA (6,8) ; ¹²³I-mIBG (28,0) [1] |\n| **C** | Traceurs **thyroïdiens iodés** (¹²³I/¹³¹I thyroïde) + agents thérapeutiques | Les plus **élevés** (forte croissance avec le poids) | ¹²³I thyroïde (0,6) [1,3] |\n\nAppliquer un facteur de classe rénale (A) à un traceur de classe B/C **surdoserait significativement l'enfant** : c'est précisément le piège qui a motivé l'abandon du facteur de correction unique au profit de trois cartes traceur-dépendantes [3]. À **3 kg**, le Multiple = 1 dans les trois classes : l'activité de base est l'activité du nourrisson de référence [1].\n\n**Exemples officiels de calcul** [1] :\n- ¹⁸F-FDG cérébral, enfant **50 kg** : 14,0 × Multiple B(50 kg)=10,71 ≈ **150 MBq**.\n- ¹²³I-mIBG, nourrisson **3 kg** : 28,0 × 1 = 28 MBq, **< 37 MBq (minimum)** → administrer **37 MBq** (le plancher prime sur le calcul).\n- ⁹⁹ᵐTc-bisphosphonate (os, classe B, cas français CNP-MN) : 3 kg → 40 MBq ; 10 kg → 95 MBq ; 20 kg → 170 MBq ; 50 kg → 375 MBq ; 68 kg → 490 MBq [27].\n\n**Deux écoles harmonisées.** L'EANM raisonne en **base × Multiple** (non linéaire, conçu pour aplatir la dose efficace) ; le **consensus nord-américain (SNMMI / Image Gently)** raisonne en **MBq/kg** avec minimum et maximum, mis à jour en 2024 [6,29]. Les deux approches ont été **harmonisées** (Working Group EANM/SNMMI 2012, publication Lassmann & Treves 2014) mais ne s'utilisent **pas mécaniquement de façon interchangeable** [5]. La méthode EANM produit des doses efficaces remarquablement plates (≈ 0,9–1,2 mSv pour le DMSA, ≈ 7 mSv pour le FDG torse) ; le consensus NA donne des doses plus basses chez le petit enfant mais croissantes avec le poids [5].\n\n**Tendance lourde : la réduction des activités.** Pour le ¹⁸F-FDG, la TEP moderne (long FOV, semi-conducteurs) permet une activité de base proposée de **10,7 MBq** (−41,2 % vs carte 2016) [17] ; l'essai EuroNet PHL-C2 propose une réduction moyenne d'environ **39 %** [18] ; en pratique réelle, la dose FDG médiane injectée est passée de 296 MBq (2000–2005) à 100 MBq (2016–2021), soit **−66 %** à rapport signal/bruit stable [19]. Toujours **vérifier la version de carte applicable** et le calculateur officiel avant usage.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi trois classes et pas une règle de poids ?",
+            "text": "Les facteurs de correction EANM antérieurs « corrigeaient surtout la dose efficace » mais n'étaient exacts que pour les traceurs rénaux (cluster A) ; appliqués aux clusters B/C, ils surdosaient l'enfant. L'analyse de clusters de Jacobs et al. (2005) a regroupé les 95 traceurs en 3 ensembles homogènes selon le comportement de la dose efficace en fonction du poids, d'où la nécessité de trois cartes traceur-dépendantes [3]. La cible biologique du calcul est donc une dose efficace « weight-independent », pas une simple proportionnalité d'activité."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — le même traceur peut changer de classe selon l'indication",
+            "text": "Le ⁹⁹ᵐTc-DTPA est **classe A** en fonction rénale normale (base 34,0 MBq) mais **classe B** en fonction rénale anormale (base 14,0 MBq) ; idem pour le ¹²³I-Hippuran [1]. Vérifier impérativement l'indication ET la classe avant de lire le Multiple : c'est l'erreur de lecture la plus fréquente. À très faible poids, l'activité calculée tombe souvent sous le minimum recommandé — c'est alors le **minimum** qui prime (qualité d'image), pas le résultat du calcul [1]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "v5.7.2016",
+            "label": "Version de carte EANM de référence (août 2016) [1,2]"
+          },
+          {
+            "value": "A = base × Multiple",
+            "label": "Formule unique, plancher = activité minimale [1]"
+          },
+          {
+            "value": "3 classes",
+            "label": "A = rénal · B = la plupart · C = thyroïde iodée [3]"
+          },
+          {
+            "value": "95 traceurs",
+            "label": "Base scientifique : 7 fantômes, 10 radionucléides [3]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Identifier",
+            "text": "Examen + radiopharmaceutique → classe (A/B/C) et activité de base (carte EANM v5.7.2016) [1]."
+          },
+          {
+            "title": "2 · Lire le Multiple",
+            "text": "Table « Multiple of Baseline Activity » à l'intersection poids × classe [1]."
+          },
+          {
+            "title": "3 · Calculer",
+            "text": "A = activité de base × Multiple [1]."
+          },
+          {
+            "title": "4 · Appliquer le plancher",
+            "text": "Si A < activité minimale recommandée → administrer le minimum [1]."
+          },
+          {
+            "title": "5 · Plafonner aux NRD",
+            "text": "Vérifier A ≤ niveau de référence diagnostique national (ASNR en France) [1,13]."
+          },
+          {
+            "title": "6 · Acquérir",
+            "text": "Protocole adapté (préparation, captation, durée) ; paramètres réduits si TEP haute sensibilité [17,26]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Triade temps / distance / écran de la radioprotection : la carte EANM matérialise l'optimisation (ALARA) de l'activité injectée chez l'enfant, complétée par le respect des NRD nationaux.",
+        "figureCaption": "Fig. — L'optimisation ALARA appliquée à la dose pédiatrique : le calcul EANM borne l'activité par le bas (minimum, qualité d'image) et par le haut (NRD nationaux)."
+      },
+      {
+        "title": "E2 - Quiz d'auto-évaluation sur le calcul de dose pédiatrique",
+        "text": "Auto-évaluation en 15 questions (énoncé → réponse justifiée et sourcée). À traiter après lecture des sections de calcul ; chaque correction renvoie à la valeur de référence.\n\n**Q1. Quelle est la formule officielle de calcul de l'activité pédiatrique selon la carte EANM v5.7.2016 ?**\n*Réponse :* **A [MBq] = Activité de base × Multiple(poids, classe)**, où le Multiple est lu dans la table selon le poids et la classe A/B/C du traceur [1]. Il ne s'agit ni d'une proportion du poids adulte ni d'une règle de surface corporelle.\n\n**Q2. Que faire si l'activité calculée est inférieure à l'activité minimale recommandée ?**\n*Réponse :* **Administrer l'activité minimale**. La règle b de la carte impose ce plancher pour garantir la qualité d'image ; il prime sur le résultat du calcul [1].\n\n**Q3. Quelles sont les trois classes et leur contenu ?**\n*Réponse :* **A = traceurs rénaux** (élimination rapide, multiples les plus faibles) ; **B = tous les autres** traceurs ; **C = traceurs thyroïdiens iodés** (¹²³I/¹³¹I thyroïde) et agents thérapeutiques (multiples les plus élevés) [3].\n\n**Q4. Pour un ¹⁸F-FDG cérébral chez un enfant de 50 kg, quelle activité administrer ?**\n*Réponse :* base 14,0 MBq × Multiple B(50 kg) = 10,71 ≈ **150 MBq** [1].\n\n**Q5. ¹²³I-mIBG chez un nourrisson de 3 kg : que calcule-t-on et qu'administre-t-on ?**\n*Réponse :* 28,0 × Multiple(3 kg)=1 = 28 MBq, **inférieur au minimum de 37 MBq** → on administre **37 MBq** (le plancher) [1].\n\n**Q6. Vrai ou faux : un même radiopharmaceutique appartient toujours à la même classe.**\n*Réponse :* **Faux**. Le ⁹⁹ᵐTc-DTPA est classe A en fonction rénale normale (base 34,0 MBq) et classe B en fonction anormale (base 14,0 MBq) ; idem ¹²³I-Hippuran [1].\n\n**Q7. À 3 kg, que vaut le Multiple dans chaque classe ?**\n*Réponse :* **1** dans les trois classes A, B et C : l'activité de base correspond au nourrisson de référence [1].\n\n**Q8. Quel est l'objectif méthodologique de la carte EANM, et qui l'a démontré ?**\n*Réponse :* Obtenir une **dose efficace quasi indépendante du poids** ; démontré par **Jacobs et al. (2005)** sur 95 radiopharmaceutiques, 7 fantômes et 10 radionucléides via une analyse de clusters [3].\n\n**Q9. En quoi le consensus nord-américain (SNMMI / Image Gently) diffère-t-il de l'EANM ?**\n*Réponse :* Il raisonne en **MBq/kg** (modèle linéaire) avec minimum et maximum, là où l'EANM utilise base × Multiple. Les deux ont été harmonisés (Lassmann & Treves 2014) mais ne sont pas interchangeables mécaniquement [5,6,29].\n\n**Q10. Quelle est la classe et l'activité de base du ⁹⁹ᵐTc-MAG3 ?**\n*Réponse :* **Classe A**, activité de base **11,9 MBq**, minimum 15 MBq (traceur rénal) [1].\n\n**Q11. Pourquoi le ⁹⁹ᵐTc-DMSA a-t-il changé entre la carte 2008 et la v5.7.2016 ?**\n*Réponse :* Il est passé de **classe A (base 17,0 MBq, min 15)** à **classe B (base 6,8 MBq, min 18,5)** après harmonisation EANM/SNMMI, les activités plus basses nord-américaines n'altérant pas la qualité diagnostique [5].\n\n**Q12. Quel organe critique pour le ¹⁸F-FDG, et quel coefficient de dose efficace pédiatrique à 1 an ?**\n*Réponse :* Organe critique = **vessie urinaire** (excrétion) ; coefficient pédiatrique à 1 an ≈ **0,073 mSv/MBq** (vs ≈ 0,016 chez l'adulte) [20,21]. D'où l'importance de l'hydratation et des mictions fréquentes.\n\n**Q13. Quelle préparation spécifique avant un ¹⁸F-FDG pédiatrique ?**\n*Réponse :* **Jeûne 4–6 h**, glycémie contrôlée (seuil max 200 mg/dL soit 11,1 mmol/L ; optimale < 7,8 mmol/L), captation ~60 min [26]. Pour les traceurs iodés (mIBG), ajouter un **blocage thyroïdien**.\n\n**Q14. Après le calcul EANM, quelle est l'ultime vérification réglementaire en France ?**\n*Réponse :* Ne **jamais dépasser le NRD national** (niveaux de référence diagnostiques pédiatriques, pilotés par l'ASNR, fondés sur l'enquête SFMN-SFPM-IRSN) [1,12,13].\n\n**Q15. Pourquoi les activités FDG injectées ont-elles fortement baissé ces deux décennies ?**\n*Réponse :* Grâce à la **TEP haute sensibilité** (long FOV, semi-conducteurs) : dose médiane passée de 296 à 100 MBq (−66 %) à signal/bruit stable [19] ; propositions de réduction de l'activité de base FDG (−41 % [17], −39 % EuroNet PHL-C2 [18]).",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège de QCM — Technegas et activité « inhalée »",
+            "text": "La valeur de ⁹⁹ᵐTc-Technegas (49 MBq, classe B) est l'**activité de charge du dispositif**, pas l'activité réellement inhalée par l'enfant, qui est inférieure (note 3 de la carte EANM) [1]. Ne pas confondre activité de base et activité administrée effective pour les ventilations pulmonaires."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — vérifier la version avant de calculer",
+            "text": "La carte 2016 sera révisée à la baisse pour le ¹⁸F-FDG (TEP digitale, EuroNet PHL-C2). Avant tout calcul, confirmer la version applicable et privilégier le calculateur officiel EANM (App-Calc v2.01, poids 3→68 kg par pas de 2 kg, restitue MBq et mSv) plutôt qu'une lecture manuelle de classe, source d'erreur [1,15,17,18]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "150 MBq",
+            "label": "¹⁸F-FDG cérébral, 50 kg : 14,0 × 10,71 [1]"
+          },
+          {
+            "value": "37 MBq",
+            "label": "¹²³I-mIBG, 3 kg : plancher minimal appliqué [1]"
+          },
+          {
+            "value": "0,073 mSv/MBq",
+            "label": "Coeff. dose efficace FDG, enfant 1 an [20,21]"
+          }
+        ]
+      },
+      {
+        "title": "E3 - Références, liens et ressources officielles",
+        "text": "**Outils de calcul officiels.** EANM Paediatric Dosage Card v5.7.2016 (carte recto/verso : formule, table des Multiples A/B/C, activités de base et minimales, exemples) [1] ; page officielle de l'initiative EANM (dernière mise à jour août 2016, application PedDose, disclaimer) [2] ; **EANM App-Calc v2.01** (calculateur poids 3→68 kg par pas de 2 kg, >40 traceurs, restitution MBq et mSv) [15]. Toujours **vérifier la classe (A/B/C)** avant de lire le Multiple [1,4].\n\n**Fondements scientifiques & harmonisation.** Jacobs et al. 2005 — base de la méthode (dose efficace indépendante du poids, 95 traceurs / 3 clusters) [3] ; Lassmann et al. 2007, première carte EANM [8] ; Lassmann & Treves 2014 — harmonisation carte EANM 2007 (v1.5.2008) / consensus nord-américain 2010, doses efficaces comparées (ICRP 80/106) [5] ; Lassmann & Treves 2016, perspective EANM sur la standardisation [16].\n\n**Consensus nord-américain (SNMMI / Image Gently).** Gelfand et al. 2011 (consensus 2010, modèle MBq/kg) [7] ; Treves et al. 2016 (mise à jour) [30] ; **2024 Update of the North American Consensus Guidelines** (valeurs par kg : ¹²³I-mIBG 5,2 MBq/kg ; ⁹⁹ᵐTc-MDP 9,3 ; ⁹⁹ᵐTc-DMSA 1,85 ; ⁶⁸Ga-DOTATATE 2,0 ; etc.) [6,29].\n\n**Réductions d'activité (TEP moderne).** Dickson et al. 2022 — effet de la TEP moderne sur la carte EANM (FDG base proposée 10,7 MBq, −41,2 %) [17] ; Tran-Gia et al. 2023 — proposition de mise à jour à partir d'EuroNet PHL-C2 (−39 % FDG) [18] ; Waelti et al. 2024 — « a third of the radiotracer dose » (FDG médiane −66 % en 20 ans) [19].\n\n**Dosimétrie.** ICRP Publication 128 (Mattsson et al. 2015 — compendium des doses, coefficients pédiatriques nouveau-né/1/5/10/15 ans) [21] ; Quinn et al. 2020 (FDG pédiatrique, dose vésicale, organe critique) [20] ; Adeleye & Chetty 2018 (dose FDG PET/CT) [22] ; études Monte-Carlo et pharmacocinétique rénale ⁹⁹ᵐTc-DMSA/MAG3 [23,24,25] ; protocole ⁶⁸Ga-peptides [voir ICRP 128, 21].\n\n**Protocoles & ressources françaises.** Vali et al. 2021 — SNMMI/EANM Pediatric ¹⁸F-FDG PET/CT Oncology 1.0 (jeûne 4–6 h, glycémie, captation 60 min, activités) [26] ; **CNP-MN** Guide scintigraphie osseuse v2.0 2022 (doses pédiatriques EANM, dosimétrie HMDP, cas français) [27] ; SFPM rapport 2017 n°33 « Dosimétrie des explorations diagnostiques en médecine nucléaire » [14] ; enquête **SFMN-SFPM-IRSN** sur les pratiques pédiatriques [12,28] ; **NRD pédiatriques — ASNR** (niveaux de référence diagnostiques français) [13].\n\n**Contexte radiopharmaceutique & performances cliniques.** Générateur ⁹⁹Mo/⁹⁹ᵐTc (140 keV, T½ 6 h) [10,11] ; ¹⁸F (β⁺, 511 keV, T½ 109,7 min, cyclotron) [9] ; ⁹⁹ᵐTc-DMSA en pyélonéphrite (Se jusqu'à 99 %, Sp 91 %) [31] ; ¹⁸F-FDG en lymphome de Hodgkin pédiatrique et **score de Deauville** [32,33] ; détermination de l'activité ⁹⁹ᵐTc-DMSA optimale en pédiatrie [34] ; dose efficace ⁹⁹ᵐTc-MDP [35].\n\n**Liste numérotée des sources** (citer uniquement par [n], n ∈ [1..35]) :\n\n| [n] | Référence |\n|---|---|\n| [1] | EANM Paediatric Dosage Card, v5.7.2016 (carte officielle) |\n| [2] | EANM — Dosage Card, page officielle de l'initiative (app PedDose, disclaimer) |\n| [3] | Jacobs F, et al. Optimised tracer-dependent dosage cards… *EJNMMI* 2005;32(5):581-8 (PMID 15619101) |\n| [4] | IAEA Nuclear Medicine Atlas — Appendix I, Paediatric Dosage of Radiopharmaceuticals |\n| [5] | Lassmann M, Treves ST. Harmonization of EANM 2007 card & 2010 NA consensus. *EJNMMI* 2014;41(5):1036-41 (PMID 24893792) |\n| [6] | 2024 Update of the North American Consensus Guidelines (SNMMI / Image Gently) |\n| [7] | Gelfand MJ, Parisi MT, Treves ST. 2010 NA Consensus Guidelines. *J Nucl Med* 2011;52(2):318-22 |\n| [8] | Lassmann M, et al. The new EANM paediatric dosage card. *EJNMMI* 2007;34(5):796-8 (PMID 17406866) |\n| [9] | FDA — Fludeoxyglucose F 18 Injection (FDG), prescribing information (NDA 021870) |\n| [10] | Technetium-99m generator — Wikipedia (⁹⁹Mo/⁹⁹ᵐTc, 140 keV, T½ 6 h) |\n| [11] | Mo99-Tc99m Generator — StatPearls, NCBI Bookshelf |\n| [12] | Mise à jour des NRD en pédiatrie : enquête SFMN-SFPM-IRSN. *Médecine Nucléaire* 2017 (EM-consulte) |\n| [13] | NRD en Médecine Nucléaire — ASNR (niveaux de référence diagnostiques) |\n| [14] | SFPM — Dosimétrie des explorations diagnostiques en MN (rapport 2017 n°33) |\n| [15] | EANM App-Calc — calculateur d'activité pédiatrique v2.01 |\n| [16] | Lassmann M, Treves ST. Standardization of administered activities… the EANM perspective. *EJNMMI* 2016 |\n| [17] | Dickson J, Eberlein U, Lassmann M. Effect of modern PET technology… *EJNMMI* 2022;49(6):1964-9 |\n| [18] | Tran-Gia J, et al. EuroNet PHL-C2 trial: proposal to update the EANM Paediatric Dosage Card. *EJNMMI* 2023 |\n| [19] | Waelti S, et al. A third of the radiotracer dose… *Eur Radiol* 2024;34(5):3252-9 |\n| [20] | Quinn BM, et al. Patient-adapted organ/effective dose in pediatric ¹⁸F-FDG PET/CT. *BMC Med Imaging* 2020 |\n| [21] | Mattsson S, et al. ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals. *Ann ICRP* 2015 |\n| [22] | Adeleye B, Chetty N. Radiation dose from ¹⁸F-FDG PET/CT. *Radioprotection* 2018;53(2):107-13 |\n| [23] | Khoshyari-morad Z, et al. Monte Carlo dose in ⁹⁹ᵐTc-DMSA/-MAG3/-DTPA SPECT (arXiv:2103.00619) |\n| [24] | Plyku D, et al. Renal ⁹⁹ᵐTc-DMSA pharmacokinetics in pediatric patients. *EJNMMI Phys* 2021;8:53 |\n| [25] | Soares Machado J, et al. Biokinetics, dosimetry… infants after ⁹⁹ᵐTc-MAG3. *EJNMMI Res* 2018 |\n| [26] | Vali R, et al. SNMMI/EANM Pediatric ¹⁸F-FDG PET/CT for Oncology 1.0. *J Nucl Med* 2021;62(1):99-110 |\n| [27] | CNP-MN. Guide protocole scintigraphie osseuse v2.0 (2022) |\n| [28] | Mise à jour des NRD en pédiatrie : enquête SFMN-SFPM-IRSN. *Médecine Nucléaire* 2017 (ScienceDirect) |\n| [29] | 2024 Update of the NA Consensus Guidelines. *J Nucl Med Technol* 2025 (PMID 40664486) |\n| [30] | Treves ST, et al. 2016 Update of the NA Consensus Guidelines. *J Nucl Med* 2016;57(12):15N-18N |\n| [31] | Quantitative ⁹⁹ᵐTc-DMSA in acute pyelonephritis. *J Nucl Med* 2004;45(2):285-9 |\n| [32] | FDG-PET / Deauville in pediatric & adult NLP Hodgkin's lymphoma. *Blood* 2017;130(Suppl 1):1519 |\n| [33] | Ferrari C, et al. Pediatric Hodgkin Lymphoma: interim ¹⁸F-FDG PET/CT (Deauville). *Medicine* 2017;96(5):e5973 |\n| [34] | Détermination de l'activité de ⁹⁹ᵐTc-DMSA à injecter en pédiatrie. *Médecine Nucléaire* 2022 |\n| [35] | Bone Scan — StatPearls, NCBI Bookshelf (dose efficace ⁹⁹ᵐTc-MDP) |\n\n*Liens typés associés (réseau de l'article)* — **Examens** : scintigraphie rénale (DMSA/MAG3), scintigraphie osseuse (MDP/HMDP), TEP au ¹⁸F-FDG, scintigraphie à la mIBG. **Traceurs** : ⁹⁹ᵐTc, ¹⁸F-FDG, ¹²³I, ⁶⁸Ga-peptides. **Scores** : Deauville, Curie/SIOPEN (pour les indications associées). *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). Vérifier la version de carte EANM applicable et les NRD nationaux en vigueur avant tout usage clinique.*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Ne citer que les sources réelles fournies",
+            "text": "Toutes les valeurs chiffrées de cet article renvoient à la liste numérotée [1..35] ci-dessus (sources réelles EANM / SNMMI / ICRP / SFMN-SFPM-IRSN / CNP-MN). Aucun DOI, PMID ou URL n'a été inventé. La carte EANM v5.7.2016 [1] et son calculateur App-Calc [15] restent les références opérationnelles pour le calcul ; ICRP 128 [21] pour la dosimétrie ; les NRD ASNR [13] pour le plafonnement réglementaire en France."
+          }
+        ]
+      }
+    ]
+  }
+}
