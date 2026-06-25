@@ -1,0 +1,56 @@
+[
+  {
+    "severity": "major",
+    "where": "medecin_nuc sections D15 (text + figureAlt), D16 (text x2, figureAlt), D17 (n/a check), D18 (figureAlt), A6 (figureAlt 'technetium-99m' ok), E25 (n/a) — specifically the literal string '²⁹ᵐTc'",
+    "problem": "Le radionucléide est écrit '²⁹ᵐTc' à plusieurs reprises (D15: 'Coefficient de dose efficace (²⁹ᵐTc-bisphosphonates...'; D16: 'au ²⁹ᵐTc', 'Le ²⁹ᵐTc (140 keV...'; D18 figureAlt: '²⁹ᵐTc-MDP'; A6/D16 figureAlt: '⁹⁹ᵐTcO₄⁻' parfois correct mais '²⁹ᵐTc' ailleurs). Le nombre de masse 29 correspond au cuivre (Cu), pas au technétium (Z=43, A=99). Le bon symbole est ⁹⁹ᵐTc (technétium-99m). Erreur factuelle/typographique sur l'identité de l'isotope, répétée, qui apparaît dans le texte rendu et les légendes de figures.",
+    "fix": "Remplacer toutes les occurrences de '²⁹ᵐTc' par '⁹⁹ᵐTc' (technétium-99m), conformément au reste du document qui utilise correctement '99mTc' / '⁹⁹ᵐTc'."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard, item 'Élimination' (value 'Rénale (~35 %) · organe critique = vessie')",
+    "problem": "La carte d'identité indique une élimination rénale de '~35 %', alors que le corps du texte (A3, B7, C11) et la fiche étalon donnent une fraction libre excrétée par voie urinaire de ~34 % (le 35 % étant la fraction du modèle dosimétrique ICRP 'éliminée par voie rénale'). Mélange de deux chiffres proches mais d'origine différente ; cohérence interne imparfaite.",
+    "fix": "Harmoniser : soit '~34 %' (fraction libre excrétée, biocinétique observée), soit préciser '~35 % (modèle dosimétrique)'. Aligner avec la valeur utilisée dans A3/B7/C11."
+  },
+  {
+    "severity": "minor",
+    "where": "quiz, question sur l'organe critique (explanation citant '[7][27]') et autres explications du quiz",
+    "problem": "Plusieurs explications du quiz citent des numéros de sources ([7], [27], [9], [16], [5][17]) qui ne correspondent pas au schéma de numérotation [1..29] du tableau 'sources' (qui en compte 28) — ex. 'flare' cité '[5][17]' où [5] = ICRP 128 SagePub, sans rapport avec le flare. Renvois bibliographiques incohérents/erronés dans le quiz, sans erreur médicale de fond.",
+    "fix": "Recaler les renvois du quiz sur la numérotation réelle des sources (flare → [15][17] et non [5][17] ; pertechnétate libre → source réelle correspondante)."
+  },
+  {
+    "severity": "major",
+    "where": "Sections B9 (infoBox 'Os physiologiquement remanié'), C12 (infoBox 'la TEMP/TDM change la lecture'), et E22 — attribution du kappa 0,929 vs 0,626",
+    "problem": "La concordance kappa 0,929 (SPECT/CT) vs 0,626 (planaire/SPECT) pour l'ostéomyélite est attribuée à la source [14] (Korean J Radiol 2021, Early-Phase SPECT/CT). Vérification de [14] (PMC8005344) : cet article ne rapporte AUCUNE valeur kappa ; il ne donne que des Se/Sp/exactitude (ex. 90,9%/70,0%/87,5%). Ces valeurs kappa proviennent en réalité de la source [12] (PMC6746013, Mol Imaging Radionucl Ther 2019), qui rapporte bien kappa 0,929 (SPECT/CT) vs 0,626 (planaire/SPECT). Misattribution répétée d'un chiffre réel à la mauvaise source.",
+    "fix": "Remplacer les renvois [14] par [12] (ou [12][14]) partout où apparaît 'kappa 0,929 vs 0,626'. Conserver [14] uniquement pour la supériorité générale de la SPECT/CT précoce, pas pour le kappa."
+  },
+  {
+    "severity": "major",
+    "where": "A5 (table + paragraphe Infections), B9, D17, D18, E20 Cas 2 — diabetic foot Se jusqu'à 100% / Sp jusqu'à 83%",
+    "problem": "Le chiffre 'pied diabétique : 3 temps + leucocytes marqués porte la Se jusqu'à 100% et Sp jusqu'à 83%' est attribué à la source [13] (PMC5313465). Vérification de [13] : cet article porte EXCLUSIVEMENT sur l'ostéomyélite POST-TRAUMATIQUE (21 patients) ; ses résultats propres sont 3-phases Se 75%/Sp 52,9%, WBC SPECT/CT Se 50%/Sp 100%, exactitude combinée 91,7%. Il ne présente pas de données propres sur le pied diabétique — la mention du pied diabétique n'y figure que dans la revue de littérature, citant d'autres études. La source [11] (StatPearls), aussi citée pour ce contexte, ne contient pas non plus ce chiffre Se 100%/Sp 83%. Donnée réelle dans la littérature mais attribuée à une source qui ne la porte pas.",
+    "fix": "Soit retirer l'attribution [13] pour cette donnée 'pied diabétique 100%/83%' et la sourcer sur la publication primaire réelle, soit reformuler en généralité non chiffrée. Ne pas présenter [13] comme source de résultats sur le pied diabétique (c'est une étude post-traumatique)."
+  },
+  {
+    "severity": "major",
+    "where": "B10, C12 (infoBox + stat 'AUC 0,968'), D10 récapitulatif, D17, E21, et quiz Q8 — kappa 0,56→0,87 et AUC ROC 0,771→0,968",
+    "problem": "Les valeurs kappa 0,56→0,87 et AUC 0,771→0,968 (TEMP/TDM fusionnée vs TEMP seule) sont attribuées tantôt à [1] (EANM), tantôt à [3] (même EANM full-text), tantôt à [24] (BNMS). Recherche : ces chiffres exacts (reviewer 2 : 0,771 / 0,885 / 0,968) proviennent de l'étude primaire Helyar et al., 'Added Value of SPECT/CT Fusion in Assessing Suspected Bone Metastasis' (Radiology, radiol.2373041358), qui n'est PAS dans la liste des 29 sources. Les attributions à [1]/[3]/[24] sont donc des renvois secondaires non vérifiables / probablement incorrects pour un chiffre aussi précis. De plus le quiz Q8 attribue ces valeurs à '[12][26]', encore une autre paire de sources.",
+    "fix": "Harmoniser l'attribution et la rattacher à la source primaire réelle (Helyar/Radiology) si on veut citer ces chiffres exacts ; sinon les retirer ou les présenter comme ordre de grandeur. Au minimum, cesser de citer ces mêmes valeurs sous 4 jeux de sources différents ([1], [3], [24], [12][26]) selon les sections — incohérence de sourcing."
+  },
+  {
+    "severity": "minor",
+    "where": "Coquille systématique '²⁹ᵐTc' / '99mTc' — sections A1? non, surtout D15 ('²⁹ᵐTc-bisphosphonates'), D16 ('²⁹ᵐTc'), D17/D18 ('²⁹ᵐTc-MDP')",
+    "problem": "Le radionucléide est écrit '²⁹ᵐTc' (technétium-29m, inexistant) au lieu de '⁹⁹ᵐTc' (technétium-99m) dans plusieurs sections D15, D16, D18 et la figureAlt de D18. Erreur typographique d'exposant sur un point d'identité fondamental (le contenu correct 99mTc/⁹⁹ᵐTc apparaît ailleurs).",
+    "fix": "Corriger toutes les occurrences '²⁹ᵐTc' en '⁹⁹ᵐTc' (technétium-99m)."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz Q5 (organe critique) explication [7][27] ; Q20 (flare) explication [5][17]",
+    "problem": "Q5 source l'organe critique = paroi vésicale sur '[7][27]' : [7] est la carte de dose pédiatrique EANM et ne traite pas de l'organe critique adulte ; la source pertinente est [1]/[4]/[25]. Q20 cite '[5][17]' pour le flare : [5] est l'ICRP 128 (dosimétrie) et n'a aucun rapport avec le phénomène de flare ; la source correcte est [15][17]. Renvois de sources hors sujet sur deux explications de quiz.",
+    "fix": "Q5 : remplacer [7] par [1]/[25] (organe critique vessie). Q20 : remplacer [5] par [15] (définition du flare > 10% BSI à 3 mois)."
+  },
+  {
+    "severity": "minor",
+    "where": "E20 Cas 2 — 'blood-pool à 3–5 min [24]' et 'phase angiographique (180 images × 1 s) [1]'",
+    "problem": "Incohérence interne mineure de protocole : B9 fixe la phase pool sanguin à 5–10 min et la phase angiographique à 30–60 images de 1–2 s, alors que E20 Cas 2 indique blood-pool '3–5 min' et angiographie '180 images × 1 s'. Valeurs plausibles mais divergentes d'une section à l'autre, sans que la source [24]/[1] impose ces variantes précises.",
+    "fix": "Harmoniser les paramètres de la scintigraphie 3 phases entre B9 et E20 (pool 5–10 min ; nombre/durée d'images cohérents), ou préciser qu'il s'agit de variantes de service."
+  }
+]

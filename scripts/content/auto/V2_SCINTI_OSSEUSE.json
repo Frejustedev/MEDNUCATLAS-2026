@@ -1,0 +1,1205 @@
+{
+  "id": "V2_SCINTI_OSSEUSE",
+  "cat": "rhumatologie",
+  "catLabel": "Rhumatologie & Os",
+  "title": "Scintigraphie osseuse (99mTc-MDP/HMDP)",
+  "difficulty": "intermédiaire",
+  "tags": [
+    "scintigraphie osseuse",
+    "MDP",
+    "HMDP",
+    "HDP",
+    "technétium-99m",
+    "bisphosphonates",
+    "métastases osseuses",
+    "remodelage osseux",
+    "TEMP-TDM",
+    "SPECT/CT",
+    "Bone Scan Index",
+    "scintigraphie 3 phases",
+    "ostéomyélite",
+    "hydroxyapatite",
+    "ICRP 128",
+    "EANM"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] The EANM practice guidelines for bone scintigraphy. Van den Wyngaert T, Strobel K, Kampen WU, et al. Eur J Nucl Med Mol Imaging. 2016;43(9):1723-1738",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3415-4"
+    },
+    {
+      "title": "[2] EANM practice guidelines for bone scintigraphy (full-text PDF, 2016)",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00259-016-3415-4.pdf"
+    },
+    {
+      "title": "[3] The EANM practice guidelines for bone scintigraphy (Van den Wyngaert et al., Eur J Nucl Med Mol Imaging 2016;43:1723-1738) — texte integral PMC4932135",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4932135/"
+    },
+    {
+      "title": "[4] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — A Compendium of Current Information. Ann ICRP 2015",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP%20Publication%20128"
+    },
+    {
+      "title": "[5] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson et al., Ann ICRP 2015;44(2S))",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[6] SNMMI Procedure Standard for Bone Scintigraphy 4.0. Bartel TB, et al. J Nucl Med Technol. 2018;46(4):398-404",
+      "url": "https://tech.snmjournals.org/content/46/4/398"
+    },
+    {
+      "title": "[7] Dosage card — EANM (paediatric weight-based administered activities)",
+      "url": "https://eanm.org/publications/useful-resources/dosage-card/"
+    },
+    {
+      "title": "[8] Bone Scintigraphy versus PSMA-Targeted PET/CT or PET/MRI in Prostate Cancer: Lessons Learned from Recent Systematic Reviews and Meta-Analyses. Cancers (Basel). 2022;14(18):4470 (PMC9496815)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9496815/"
+    },
+    {
+      "title": "[9] 99mTc-HDP bone scintigraphy and 18F-sodium fluoride PET/CT in primary staging of patients with prostate cancer. World J Urol. 2018 (PMC5758653)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5758653/"
+    },
+    {
+      "title": "[10] NCCN Guidelines Embrace PSMA-PET Imaging for Prostate Cancer (Medscape)",
+      "url": "https://www.medscape.com/viewarticle/959838"
+    },
+    {
+      "title": "[11] Triple Phase Bone Scan — StatPearls (NCBI Bookshelf NBK535390)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK535390/"
+    },
+    {
+      "title": "[12] Diagnostic Value of Bone SPECT/CT in Patients with Suspected Osteomyelitis. Mol Imaging Radionucl Ther. 2019;28(3):89-95 (PMC6746013)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6746013/"
+    },
+    {
+      "title": "[13] Comparative Analysis of 99mTc-MDP Three-Phase Bone Scan with SPECT/CT and 99mTc-HMPAO-Labeled WBC SPECT/CT in Post-traumatic Osteomyelitis. Nucl Med Mol Imaging (PMC5313465)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5313465/"
+    },
+    {
+      "title": "[14] Early-Phase SPECT/CT for Diagnosing Osteomyelitis: A Retrospective Pilot Study. Korean J Radiol 2021;22(4):604-611 (PMC8005344)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8005344/"
+    },
+    {
+      "title": "[15] Phase 3 Assessment of the Automated Bone Scan Index as a Prognostic Imaging Biomarker of Overall Survival in mCRPC. JAMA Oncol. 2018;4(7):944-951 (PMC6145727)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6145727/"
+    },
+    {
+      "title": "[16] Skeletal Metastases Presenting as Superscan on 99mTc-MDP Whole Body Bone Scintigraphy in Different Types of Cancers: A 5-Year Study. World J Nucl Med. 2017;16(1):39-44 (PMC5314662)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5314662/"
+    },
+    {
+      "title": "[17] Flare phenomenon visualized by 99mTc-bone scintigraphy has prognostic value for patients with mCRPC. Ann Nucl Med. 2024 (PMC11108890)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11108890/"
+    },
+    {
+      "title": "[18] Stannous Chloride in the Preparation of 99mTc Pharmaceuticals (ResearchGate)",
+      "url": "https://www.researchgate.net/publication/286043956_Stannous_Chloride_in_the_Preparation_of_99mTc_Pharmaceuticals"
+    },
+    {
+      "title": "[19] Molybdenum 99 — overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/molybdenum-99"
+    },
+    {
+      "title": "[20] la SFMN — La scintigraphie osseuse (guide des procedures)",
+      "url": "https://www.sfmn.org/index.php/la-societe/guides-et-recommandations/69-societe/guides-et-recommandations/guides-des-procedures/examens-diagnostiques/210-la-scintigraphie-osseuse"
+    },
+    {
+      "title": "[21] CNP-MN / SFMN — Guide pour la redaction de protocole pour la scintigraphie osseuse (Os V2.0, 2022)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Os-V2.0.pdf"
+    },
+    {
+      "title": "[22] Quantitative bone SPECT/CT: high specificity for identification of prostate cancer bone metastases. BMC Musculoskelet Disord. 2019 (PMC6933900)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933900/"
+    },
+    {
+      "title": "[23] 18F-NaF-PET/CT for the detection of bone metastasis in prostate cancer: a meta-analysis of diagnostic accuracy studies. Ann Nucl Med. 2019;33(5):351-361",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30877561/"
+    },
+    {
+      "title": "[24] BNMS Bone Scintigraphy Guideline (British Nuclear Medicine Society, 2014)",
+      "url": "https://cdn.ymaws.com/www.bnms.org.uk/resource/resmgr/guidelines/bnms_bone_scintigraphy.cf_14.pdf"
+    },
+    {
+      "title": "[25] MDP — Kit for preparation of Technetium (99mTc) medronate, Product Information (ANSTO Health, TGA approved 2017)",
+      "url": "https://www.ansto.gov.au/sites/default/files/2019-07/PI_MDP_TGA_approved_2017_12_11_PRINT.PDF"
+    },
+    {
+      "title": "[26] Patterns, Variants, Artifacts, and Pitfalls in Conventional Radionuclide Bone Imaging and SPECT/CT (Emory Radiology)",
+      "url": "https://med.emory.edu/departments/radiology/clinical_divisions/nuclear-medicine/documents/2020/msk/patterns-variants-artifacts-and-pitfalls-in-conventional-radionuclide-bone-imaging-and-spect.ct.pdf"
+    },
+    {
+      "title": "[27] Technescan HDP (Technetium Tc 99m Oxidronate) — Australian Product Information (Curium, rev. 04/2020)",
+      "url": "https://www.curiumpharma.com/wp-content/uploads/2018/05/Technescan-HDP-AU-A091I0AU-R042020.pdf"
+    },
+    {
+      "title": "[28] Development of a nomogram predicting metastatic disease and assessment of NCCN, AUA and EAU guideline recommendations for bone imaging in prostate cancer. World J Urol. 2021;39(6):1815-1823 (PMC8217023)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8217023/"
+    },
+    {
+      "title": "[29] EAU-EANM-ESTRO-ESUR-ISUP-SIOG Guidelines on Prostate Cancer — Diagnostic Evaluation (Uroweb)",
+      "url": "https://uroweb.org/guidelines/prostate-cancer/chapter/diagnostic-evaluation"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "flask",
+        "label": "Traceur",
+        "value": "99mTc-MDP / HMDP (HDP) / DPD"
+      },
+      {
+        "icon": "zap",
+        "label": "Émission × énergie",
+        "value": "99mTc : photon γ 140,5 keV"
+      },
+      {
+        "icon": "clock",
+        "label": "Période physique",
+        "value": "99mTc : 6,02 h (transition isomérique)"
+      },
+      {
+        "icon": "target",
+        "label": "Cible biologique",
+        "value": "Cristaux d'hydroxyapatite (chimisorption)"
+      },
+      {
+        "icon": "activity",
+        "label": "Mécanisme imagé",
+        "value": "Remodelage osseux (flux + ostéoblastes)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Voie × activité adulte",
+        "value": "IV · 500 MBq (300–740 MBq ; 8–10 MBq/kg)"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie",
+        "value": "Base 35 MBq, min 40 MBq (carte EANM)"
+      },
+      {
+        "icon": "droplets",
+        "label": "Élimination",
+        "value": "Rénale (~35 %) · organe critique = vessie"
+      },
+      {
+        "icon": "clock",
+        "label": "Délai → images",
+        "value": "Phase osseuse tardive : 2–4 h (jusqu'à 24 h)"
+      },
+      {
+        "icon": "list",
+        "label": "Phase squelettique fixée",
+        "value": "~50–60 % de la dose à 4 h"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace (adulte)",
+        "value": "≈ 0,0057 mSv/MBq → 2,9–4,0 mSv"
+      },
+      {
+        "icon": "shield",
+        "label": "Préparation",
+        "value": "Hydratation ≥ 1 L + mictions fréquentes"
+      },
+      {
+        "icon": "microscope",
+        "label": "Collimateur",
+        "value": "LEHR · fenêtre 140 keV ± 15–20 %"
+      },
+      {
+        "icon": "stetho",
+        "label": "Indications phares",
+        "value": "Métastases · ostéomyélite · fractures · Paget"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "99mTc-MDP (médronate)"
+      },
+      {
+        "type": "traceur",
+        "label": "99mTc-HMDP / HDP (oxidronate)"
+      },
+      {
+        "type": "traceur",
+        "label": "Pertechnétate 99mTcO4−"
+      },
+      {
+        "type": "examen",
+        "label": "TEMP-TDM osseuse (SPECT/CT)"
+      },
+      {
+        "type": "examen",
+        "label": "18F-NaF TEP/TDM"
+      },
+      {
+        "type": "examen",
+        "label": "68Ga-PSMA TEP/TDM"
+      },
+      {
+        "type": "examen",
+        "label": "18F-FDG TEP/TDM"
+      },
+      {
+        "type": "examen",
+        "label": "Leucocytes marqués (99mTc-HMPAO)"
+      },
+      {
+        "type": "examen",
+        "label": "Générateur 99Mo/99mTc"
+      },
+      {
+        "type": "maladie",
+        "label": "Métastases osseuses du cancer de la prostate"
+      },
+      {
+        "type": "maladie",
+        "label": "Ostéomyélite & spondylodiscite"
+      },
+      {
+        "type": "maladie",
+        "label": "Maladie de Paget"
+      },
+      {
+        "type": "maladie",
+        "label": "Algodystrophie (SDRC type I)"
+      },
+      {
+        "type": "score",
+        "label": "Bone Scan Index (BSI / aBSI)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quelle est la cible moléculaire des bisphosphonates marqués au 99mTc en scintigraphie osseuse ?",
+        "options": [
+          "Les récepteurs de la somatostatine",
+          "Les cristaux d'hydroxyapatite par chimisorption",
+          "Le transporteur de la noradrénaline (NET)",
+          "Les transporteurs du glucose (GLUT)"
+        ],
+        "answer": 1,
+        "explanation": "Les diphosphonates s'adsorbent à la surface des cristaux d'hydroxyapatite (chimisorption) proportionnellement à la vascularisation et à l'activité ostéoblastique [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle énergie photonique du 99mTc est utilisée pour la détection ?",
+        "options": [
+          "159 keV",
+          "140,5 keV",
+          "364 keV",
+          "511 keV"
+        ],
+        "answer": 1,
+        "explanation": "Le 99mTc décroît par transition isomérique avec une demi-vie de 6,02 h en émettant un photon γ de 140,5 keV ; la fenêtre est centrée sur 140 keV (15–20 %) [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel délai correspond à la phase osseuse tardive standard ?",
+        "options": [
+          "5–10 min",
+          "30 min",
+          "2–4 h",
+          "24–48 h systématiquement"
+        ],
+        "answer": 2,
+        "explanation": "La phase osseuse tardive est acquise 2–4 h après injection (parfois jusqu'à 24 h pour ostéomyélite/fractures de stress) pour optimiser le contraste os/fond [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle activité moyenne est administrée chez l'adulte selon l'EANM ?",
+        "options": [
+          "100 MBq",
+          "500 MBq (300–740 MBq)",
+          "1500 MBq",
+          "37 MBq"
+        ],
+        "answer": 1,
+        "explanation": "L'EANM recommande en moyenne 500 MBq (intervalle 300–740 MBq, soit 8–20 mCi), correspondant à 8–10 MBq/kg, en injection IV unique [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'organe critique de la scintigraphie osseuse ?",
+        "options": [
+          "La moelle rouge",
+          "Les surfaces osseuses",
+          "La paroi vésicale",
+          "Le foie"
+        ],
+        "answer": 2,
+        "explanation": "L'élimination urinaire de la fraction non fixée fait de la paroi vésicale l'organe critique, d'où l'intérêt de l'hydratation et des mictions fréquentes [7][27].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi recommande-t-on une hydratation abondante et des mictions fréquentes ?",
+        "options": [
+          "Pour augmenter la fixation osseuse",
+          "Pour réduire la dose vésicale et le bruit de fond",
+          "Pour accélérer la décroissance du 99mTc",
+          "Pour bloquer la thyroïde"
+        ],
+        "answer": 1,
+        "explanation": "Boire ≥ 1 L d'eau et vider la vessie réduisent la dose à la paroi vésicale et améliorent le contraste en diminuant le bruit de fond des tissus mous [1][6].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle proportion de la dose injectée est fixée au squelette à 4 h ?",
+        "options": [
+          "~10 %",
+          "~25 %",
+          "~50–60 %",
+          "~90 %"
+        ],
+        "answer": 2,
+        "explanation": "À 4 h, environ 50–60 % de la dose est fixée au squelette ; ~34 % est excrétée dans les urines et ~6 % reste circulant [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'apport principal de la TEMP/TDM (SPECT/CT) par rapport au planaire ?",
+        "options": [
+          "Réduction de la dose au patient",
+          "Suppression du blocage thyroïdien",
+          "Amélioration de la spécificité et de la localisation anatomique",
+          "Raccourcissement du délai d'imagerie"
+        ],
+        "answer": 2,
+        "explanation": "La TEMP/TDM corrèle la fixation à l'anatomie : concordance interobservateur kappa 0,929 vs 0,626 pour le planaire, AUC 0,968 (fusion) vs 0,771 (TEMP seule) [12][26].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel type de lésion expose au risque de faux négatif en scintigraphie osseuse ?",
+        "options": [
+          "Métastase ostéoblastique du cancer prostatique",
+          "Maladie de Paget",
+          "Lésion purement ostéolytique (myélome multiple)",
+          "Fracture de stress"
+        ],
+        "answer": 2,
+        "explanation": "Les lésions purement ostéolytiques à faible réaction ostéoblastique, comme le myélome multiple, peuvent ne pas fixer le traceur (faux négatifs) [1][26].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Que traduit un superscan ?",
+        "options": [
+          "Une panne de caméra",
+          "Une captation squelettique diffuse intense avec reins 'éteints'",
+          "Une contamination urinaire",
+          "Un défaut de marquage du traceur"
+        ],
+        "answer": 1,
+        "explanation": "Le superscan associe une hyperfixation squelettique diffuse à des reins peu ou pas visibles et un faible bruit de fond ; il traduit des métastases diffuses ou une maladie osseuse métabolique [16].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Sur quelle distribution reposent typiquement les métastases osseuses au scan ?",
+        "options": [
+          "Foyers alignés sur des côtes adjacentes",
+          "Foyers multiples distribués au hasard, à prédominance axiale",
+          "Hyperfixation symétrique des cartilages de croissance",
+          "Foyer unique des extrémités distales"
+        ],
+        "answer": 1,
+        "explanation": "Les métastases se présentent comme des foyers multiples distribués au hasard, à prédominance axiale (rachis, bassin, côtes, crâne) ; des foyers alignés sur des côtes adjacentes évoquent plutôt un traumatisme [6].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle triade scintigraphique est typique de l'ostéomyélite en scintigraphie 3 phases ?",
+        "options": [
+          "Hypofixation aux 3 phases",
+          "Hyperperfusion + hyperémie + hyperfixation osseuse tardive focales",
+          "Fixation thyroïdienne et gastrique",
+          "Reins éteints + hyperfixation diffuse"
+        ],
+        "answer": 1,
+        "explanation": "La triade hyperperfusion focale + hyperémie focale (pool sanguin) + hyperfixation osseuse tardive focale est typique de l'ostéomyélite [11].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Que représente le Bone Scan Index automatisé (aBSI) ?",
+        "options": [
+          "Le nombre de foyers métastatiques",
+          "La fraction du poids squelettique total atteinte par les métastases",
+          "La dose efficace en mSv",
+          "La pureté radiochimique du traceur"
+        ],
+        "answer": 1,
+        "explanation": "L'aBSI exprime la charge tumorale en fraction du poids squelettique total ; en mCRPC, c'est un prédicteur indépendant de survie globale (HR 1,20 par doublement, étude de phase 3) [15].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Comment se compare le 68Ga-PSMA-PET/CT à la scintigraphie osseuse pour les métastases du cancer prostatique ?",
+        "options": [
+          "Sensibilité et spécificité inférieures",
+          "Sensibilité 98 % / spécificité 97 % vs 83 % / 68 % pour la scinti",
+          "Strictement équivalent",
+          "Réservé aux fractures uniquement"
+        ],
+        "answer": 1,
+        "explanation": "En méta-analyse, le PSMA-PET/CT atteint 98 %/97 % vs 83 %/68 % pour la scintigraphie osseuse ; dans ProPSMA, exactitude 92 % vs 65 % pour CT+scinti [8][10].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel collimateur est recommandé pour l'acquisition planaire/corps entier en scintigraphie osseuse ?",
+        "options": [
+          "Haute énergie (HEGP)",
+          "Moyenne énergie (MEGP)",
+          "Basse énergie haute résolution (LEHR)",
+          "Sténopé (pinhole) uniquement"
+        ],
+        "answer": 2,
+        "explanation": "Le collimateur LEHR est recommandé pour les images statiques/corps entier/TEMP ; un collimateur usage général reste possible pour les phases dynamiques [1][24].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel agent réduit le pertechnétate (+7) pour permettre le marquage du bisphosphonate ?",
+        "options": [
+          "L'acide ascorbique",
+          "Le chlorure stanneux (SnCl2, ions stanneux)",
+          "Le perchlorate de potassium",
+          "L'iodure de potassium"
+        ],
+        "answer": 1,
+        "explanation": "Le pertechnétate heptavalent est réduit par les ions stanneux (chlorure stanneux) présents dans le kit lyophilisé, permettant la complexation au ligand diphosphonate [18].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Que suggère une fixation parasite de la thyroïde, de l'estomac et des glandes salivaires sur un scan osseux ?",
+        "options": [
+          "Une métastase diffuse",
+          "La présence de pertechnétate libre (marquage insuffisant)",
+          "Une maladie de Paget",
+          "Une hydratation excessive"
+        ],
+        "answer": 1,
+        "explanation": "Une carence en ion stanneux laisse du pertechnétate libre, qui se fixe sur thyroïde, estomac, glandes salivaires et plexus choroïdes [9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel seuil de SUVmax a été proposé en TEMP/TDM quantitative pour les métastases rachidiennes/pelviennes ?",
+        "options": [
+          "2,5 g/mL",
+          "8,0 g/mL",
+          "19,5 g/mL",
+          "40 g/mL"
+        ],
+        "answer": 2,
+        "explanation": "Un seuil de SUVmax de 19,5 g/mL en TEMP/TDM quantitative donne Se 87 %, Sp 92 %, VPP 99 % pour les métastases rachidiennes/pelviennes [22].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Selon les guidelines EAU-EANM, quand une imagerie osseuse est-elle recommandée dans le cancer de la prostate ?",
+        "options": [
+          "Pour tout patient quel que soit le risque",
+          "Si PSA > 10–20 ng/mL, ISUP ≥ 3, stade ≥ cT2c/T3 ou symptômes osseux",
+          "Uniquement après chimiothérapie",
+          "Jamais, remplacée par l'IRM"
+        ],
+        "answer": 1,
+        "explanation": "L'imagerie osseuse est recommandée si PSA > 10–20 ng/mL, ISUP grade group ≥ 3, stade ≥ cT2c/T3 ou symptômes osseux [28][29].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Que désigne le phénomène de flare après traitement d'un cancer ?",
+        "options": [
+          "Une progression tumorale certaine",
+          "Une augmentation paradoxale de fixation traduisant une réponse de guérison ostéoblastique",
+          "Un artefact de mouvement",
+          "Une contamination urinaire"
+        ],
+        "answer": 1,
+        "explanation": "Le flare est une aggravation scintigraphique paradoxale (réponse osseuse au traitement) ; défini comme une hausse > 10 % du BSI à 3 mois suivie d'une amélioration, il a une valeur pronostique en mCRPC [5][17].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Les bisphosphonates 99mTc (MDP, HMDP/HDP, DPD) imagent le remodelage osseux par chimisorption sur l'hydroxyapatite : fixation proportionnelle au flux sanguin et à l'activité ostéoblastique [1].",
+        "99mTc : transition isomérique, demi-vie 6,02 h, photon γ 140,5 keV ; fenêtre 140 keV ± 15–20 %, collimateur LEHR [1].",
+        "Activité adulte : 500 MBq en moyenne (300–740 MBq ; 8–10 MBq/kg), phase osseuse tardive 2–4 h ; ~50–60 % de la dose fixée au squelette à 4 h [1].",
+        "Organe critique = paroi vésicale (élimination rénale ~35 %) → hydratation ≥ 1 L et mictions fréquentes [1][7].",
+        "Examen de 1re intention, très sensible mais peu spécifique (image la réaction osseuse, pas la tumeur) ; TEMP/TDM augmente nettement spécificité et localisation [1][12].",
+        "Faux négatifs des lésions purement ostéolytiques (myélome) ; superscan = hyperfixation diffuse + reins éteints (métastases ou maladie métabolique) [1][16].",
+        "Dose efficace adulte ≈ 0,0057 mSv/MBq → 2,9–4,0 mSv (300–740 MBq) [4][5].",
+        "Concurrence : 68Ga-PSMA-PET/CT (98 %/97 %) et 18F-NaF-PET/CT (Se 0,98) dépassent la scintigraphie pour les métastases prostatiques [8][23]."
+      ],
+      "protocol": [
+        "Préparation : hydratation ≥ 1 L entre injection et imagerie, mictions fréquentes, vessie vidée avant acquisition pelvienne ; retrait des objets métalliques ; pas de jeûne [1][24].",
+        "Injection IV unique de 99mTc-bisphosphonate (efficacité de marquage > 95 %, à utiliser dans les 6–8 h) [1].",
+        "Scintigraphie 3 phases : phase vasculaire/flux (à l'injection, images 1–2 s), phase tissulaire/pool sanguin (5–10 min), phase osseuse tardive (2–4 h) [1].",
+        "Corps entier : vitesse 25–30 cm/min en précoce, 10–15 cm/min en tardif, cible > 1,5 million de coups par projection, matrice 256×1024 [1][24].",
+        "TEMP/TDM des régions d'intérêt (matrice 128×128, 360°, ~25 min) pour lever l'ambiguïté des foyers indéterminés [1][12]."
+      ],
+      "scores": [
+        "Bone Scan Index (BSI) / aBSI automatisé : fraction du poids squelettique métastatique ; aBSI = prédicteur indépendant de survie en mCRPC (HR 1,20 par doublement, phase 3) [15].",
+        "TEMP/TDM quantitative : seuil SUVmax 19,5 g/mL pour métastases rachidiennes/pelviennes (Se 87 %, Sp 92 %) [22].",
+        "Imagerie osseuse prostate (EAU-EANM) : indiquée si PSA > 10–20 ng/mL, ISUP ≥ 3, stade ≥ cT2c/T3 ou symptômes osseux [28][29]."
+      ],
+      "pitfalls": [
+        "Faux négatifs : lésions purement ostéolytiques (myélome), petites lésions, vessie non vidée masquant le pelvis [1][26].",
+        "Pertechnétate libre (marquage insuffisant) : fixation thyroïde, estomac, glandes salivaires, plexus choroïdes [9].",
+        "Contamination urinaire cutanée/vestimentaire simulant une lésion ; atténuation par bijoux/prothèses [6][26].",
+        "Délai post-traumatique/post-chirurgical 6–12 mois : remaniement physiologique indiscernable d'une complication [26].",
+        "Phénomène de flare post-traitement simulant une progression : revoir le scan à distance [5][17]."
+      ]
+    },
+    "lead": "La scintigraphie osseuse est un examen d'imagerie qui photographie le fonctionnement du squelette entier en une seule acquisition. Après l'injection dans une veine d'un produit faiblement radioactif qui se fixe là où l'os se renouvelle, une caméra repère les zones d'activité anormale, qu'elles soient liées à un cancer, une infection, une fracture ou une maladie articulaire. Très sensible et largement disponible, elle reste un examen de première intention pour rechercher des localisations osseuses d'un cancer ou explorer des douleurs inexpliquées. L'examen est indolore et ne nécessite pas d'être à jeun. Les images sont prises quelques heures après l'injection, parfois complétées par un examen couplé au scanner pour préciser la localisation.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cet examen ?",
+          "text": "La **scintigraphie osseuse** regarde **comment travaille votre squelette**, sur l'ensemble du corps et en une seule fois. Elle utilise une toute petite quantité d'un produit faiblement radioactif, injecté dans une veine du bras, qui se fixe **là où l'os se renouvelle plus que d'habitude** : autour d'une fracture, d'une inflammation, d'une infection ou d'une zone abîmée. Une caméra repère ensuite ces **zones plus actives**, qui apparaissent comme des points plus marqués sur les images. C'est un examen **très sensible**, capable de repérer une anomalie osseuse souvent plus tôt qu'une simple radiographie. Votre médecin l'utilise pour rechercher l'origine de douleurs osseuses inexpliquées, surveiller certaines maladies des os, ou vérifier si une maladie connue a touché le squelette."
+        },
+        {
+          "title": "Comment se préparer et comment ça se passe",
+          "text": "La préparation est **simple** : il n'y a **pas besoin d'être à jeun** et vous pouvez manger et boire normalement. Le jour de l'examen, vous recevez une **petite injection dans le bras**. Ensuite, il faut **patienter quelques heures** (en général 2 à 4 heures) le temps que le produit se fixe bien sur l'os : vous pouvez souvent quitter le service et revenir. Pendant cette attente, on vous demandera de **boire abondamment** (de l'eau) et d'**aller uriner souvent** : cela améliore la qualité des images et aide votre corps à éliminer le produit. Au moment des images, vous restez allongé pendant que la caméra passe lentement au-dessus de vous, de la tête aux pieds. L'examen est **indolore** et vous n'êtes pas enfermé dans un tunnel.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Le bon réflexe",
+              "text": "Pensez à bien vous hydrater et à uriner juste avant le passage sous la caméra : c'est le geste tout simple qui rend les images plus nettes et réduit encore l'exposition. Apportez vos radios, scanners ou IRM récents si vous en avez."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce dangereux ?",
+          "text": "La dose de rayonnement est **faible** et comparable à celle d'autres examens d'imagerie courants. Le produit n'est **pas un produit de contraste iodé** : les réactions allergiques sont exceptionnelles, et l'injection ne provoque habituellement **aucun effet secondaire**. Le produit disparaît naturellement de votre corps en **quelques heures à un jour**, éliminé dans les urines, surtout si vous buvez bien. Vous pouvez en général reprendre vos activités aussitôt. Par précaution, prévenez l'équipe si vous êtes **enceinte, susceptible de l'être, ou si vous allaitez** : un report ou des aménagements simples seront alors prévus. L'équipe est là pour répondre à toutes vos questions.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Grossesse et allaitement",
+              "text": "Signalez toujours une grossesse, un doute sur une grossesse ou un allaitement en cours avant l'examen. Pendant les heures qui suivent, il est conseillé d'éviter le contact prolongé et rapproché avec les jeunes enfants et les femmes enceintes : l'équipe vous donnera des consignes simples."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : un examen du squelette entier, sensible et accessible",
+          "text": "La scintigraphie osseuse explore **tout le squelette en une seule acquisition**, ce qu'aucune radiographie ciblée ne permet. Pensez-y en premier lieu pour la **recherche de métastases osseuses** dans les cancers à fort tropisme osseux (**prostate, sein, poumon, rein**) : elle reste un examen de première intention, bien disponible et peu coûteux. Elle est aussi très utile devant des **douleurs osseuses inexpliquées**, une suspicion de **fracture de fatigue ou de stress** (souvent occulte sur la radiographie initiale), une **infection ostéo-articulaire** (ostéomyélite, spondylodiscite, descellement de prothèse), ou certaines pathologies bénignes (maladie de Paget, algodystrophie/SDRC, ostéonécrose, ostéome ostéoïde). Son atout : une **grande sensibilité**, qui détecte le remaniement osseux souvent avant les signes radiographiques."
+        },
+        {
+          "title": "La démarche et ses limites à connaître",
+          "text": "L'examen image le **remodelage osseux** : le traceur se fixe là où l'activité de l'os est augmentée, quelle qu'en soit la cause. Cela explique sa principale limite : il est **sensible mais peu spécifique** — il montre la *réaction* de l'os, pas directement la tumeur ou le germe. Un foyer isolé doit donc être interprété avec le contexte et souvent corrélé à une autre imagerie. Selon l'indication, l'examen peut être réalisé en **plusieurs temps** (mode « 3 phases », utile notamment pour différencier une infection osseuse d'une inflammation des tissus mous), et complété par une **TEMP-TDM (SPECT/CT)** qui superpose la fixation à l'anatomie et améliore nettement la spécificité. Limite importante à connaître : les lésions **purement lytiques à faible réaction osseuse** (myélome, certaines métastases) peuvent être **faussement négatives** ; un délai de plusieurs mois après chirurgie ou traumatisme rend l'interprétation prudente.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Ce que la scintigraphie ne tranche pas seule",
+              "text": "Un foyer d'hyperfixation n'est pas synonyme de métastase : arthrose, fracture, infection et lésion bénigne fixent aussi. À l'inverse, une scintigraphie normale n'exclut pas formellement une lésion purement lytique (myélome). L'interprétation se fait avec le contexte clinique et, au besoin, une TEMP-TDM ou une imagerie de coupe."
+            }
+          ],
+          "figure": {
+            "figureRef": "BONE_SCAN",
+            "alt": "Schéma d'une scintigraphie osseuse montrant des foyers d'hyperfixation du traceur sur le squelette",
+            "caption": "Le traceur se concentre dans les zones où le remodelage osseux est augmenté, qui apparaissent comme des foyers d'hyperfixation."
+          }
+        },
+        {
+          "title": "L'apport de la médecine nucléaire",
+          "text": "L'intérêt majeur est de **cartographier l'ensemble du squelette en un seul examen** pour orienter rapidement la prise en charge : confirmer ou écarter une atteinte osseuse diffuse, repérer la lésion à biopsier ou à irradier, ou suivre l'évolution sous traitement. Dans le cancer de la prostate, elle peut être complétée ou remplacée, dans certaines situations à haut risque, par la **TEP-PSMA**, plus performante pour le bilan d'extension initial ; le nucléariste aide à choisir l'examen le plus adapté. Adresser le patient avec un **résumé clinique clair, le diagnostic et la question posée**, ainsi que les imageries antérieures, permet de cibler l'acquisition (temps précoces, TEMP-TDM d'une région douteuse) et d'optimiser l'interprétation.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adressez en médecine nucléaire pour explorer **tout le squelette en une seule fois** : recherche de métastases osseuses (prostate, sein, poumon, rein), douleurs osseuses inexpliquées, suspicion de fracture de fatigue, d'infection osseuse ou de maladie de Paget. Précisez la question clinique et joignez les imageries antérieures. L'examen est très sensible et bien disponible ; il peut être affiné par une acquisition multiphasique ou une TEMP-TDM pour gagner en spécificité, et le nucléariste vous orientera, le cas échéant, vers une alternative comme la TEP-PSMA."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité",
+          "text": "**Comment lire la carte d'identité.** La scintigraphie osseuse est une imagerie du **squelette entier** acquise après injection IV unique d'un **bisphosphonate marqué au technétium-99m** (⁹⁹ᵐTc) ; elle se décline en **planaire corps entier**, **TEMP** (tomographie d'émission monophotonique) et surtout **TEMP-TDM** (couplée au scanner) qui corrèle la fixation à l'anatomie [1]. Le ⁹⁹ᵐTc décroît par **transition isomérique** avec une demi-vie physique de **6,02 h**, émettant **un photon γ de 140,5 keV** par désintégration — énergie idéale pour la γ-caméra [1]. L'**activité adulte** moyenne est de **500 MBq** (intervalle **300–740 MBq** ; 8–20 mCi), soit **8–10 MBq/kg** [1]. Les images de la **phase osseuse tardive** sont acquises **2–4 h** après injection, le délai laissant aux ostéoblastes le temps de concentrer le traceur et au bruit de fond vasculaire de s'éliminer [1]. L'**organe critique est la paroi vésicale** (voie d'élimination urinaire), ce qui justifie hydratation et mictions fréquentes [1]. La **dose efficace** adulte est de l'ordre de **2,9–4,0 mSv** (300–740 MBq) [1]. **Préparation minimale** : hydratation, pas de jeûne. Les valeurs exactes (activité, délai, collimateur) sont à adapter au protocole de chaque service.",
+          "stats": [
+            {
+              "value": "140,5 keV",
+              "label": "Photon γ du ⁹⁹ᵐTc [1]"
+            },
+            {
+              "value": "500 MBq",
+              "label": "Activité adulte typique [1]"
+            },
+            {
+              "value": "2–4 h",
+              "label": "Délai d'imagerie tardive [1]"
+            },
+            {
+              "value": "≈ 3–4 mSv",
+              "label": "Dose efficace adulte [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — une acquisition, tout le squelette",
+              "text": "L'atout structurant de l'examen est la **cartographie du squelette entier en une seule acquisition**, pour un coût modéré et une large disponibilité : c'est ce qui fonde sa place d'examen de première intention dans la recherche de métastases osseuses [1]. La contrepartie est une **forte sensibilité mais une faible spécificité** : le traceur image la **réaction osseuse réactionnelle**, pas la tumeur elle-même (cf. A4) [1]."
+            }
+          ]
+        },
+        {
+          "title": "A2 - Définition",
+          "text": "La **scintigraphie osseuse** est une imagerie **fonctionnelle et métabolique** du squelette : elle ne représente pas la morphologie osseuse (rôle de la radiographie, de la TDM ou de l'IRM) mais une **propriété biologique** — l'intensité locale du **remodelage osseux**. Un **bisphosphonate** (diphosphonate) marqué au ⁹⁹ᵐTc — **MDP** (méthylène diphosphonate / médronate), **HMDP/HDP** (hydroxyméthylène diphosphonate / oxidronate) ou **DPD** — est injecté par voie intraveineuse, se distribue par le flux sanguin et **s'adsorbe à la surface de l'os néoformé** [1]. L'accumulation du traceur est **proportionnelle au flux sanguin local et à l'activité de remodelage osseux** (activité ostéoblastique/ostéoclastique) [1].\n\nLe principe physique repose sur la détection externe, par une **γ-caméra**, des **photons de 140,5 keV** émis lors de la décroissance isomérique du ⁹⁹ᵐTc [1]. La fenêtre énergétique est centrée sur **140 keV**, largeur **15 % ou 20 %** [1]. Toute condition pathologique modifiant la vascularisation et le remodelage local — **infectieuse, traumatique, néoplasique, métabolique** — se traduit par un **foyer d'hyperfixation** [1].\n\nL'information délivrée est avant tout **qualitative et topographique** (où sont les foyers, sur l'ensemble du squelette), mais elle devient **semi-quantitative** avec les scores dédiés (cf. A5 et sections d'interprétation) — par exemple l'**automated Bone Scan Index (aBSI)**, charge tumorale exprimée en fraction du poids squelettique [15], et la quantification **TEMP-TDM** par SUVmax (valeur de fixation normalisée) [22]. C'est cette nature fonctionnelle qui explique à la fois la **sensibilité élevée** (l'os réagit tôt et fortement) et la **faible spécificité** (la réaction n'est pas spécifique d'une étiologie) de l'examen [1].",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — fonctionnel vs morphologique",
+              "text": "La scintigraphie détecte la **réponse ostéoblastique** à une agression osseuse, souvent **précocement par rapport aux modifications radiographiques** qui exigent une déminéralisation importante. À l'inverse, une lésion **purement ostéolytique** à faible réaction ostéoblastique (myélome, certaines tumeurs) peut rester **faussement négative** : la cible imagée (remodelage) y fait défaut (cf. A4) [1]."
+            }
+          ]
+        },
+        {
+          "title": "A3 - Rappels anatomiques & physiologiques",
+          "text": "La compréhension de l'examen repose sur la **physiologie du tissu osseux** et sur sa distribution dans le squelette.\n\n**▸ La matrice minérale, support de fixation.** L'os est un tissu en **remodelage permanent**, couplant résorption ostéoclastique et apposition ostéoblastique. La phase minérale est faite de cristaux d'**hydroxyapatite** [Ca₁₀(PO₄)₆(OH)₂] déposés sur la trame collagénique. Les bisphosphonates radiomarqués se fixent **à la surface de ces cristaux** par chimisorption, là où l'os est néoformé : la fixation est donc maximale dans les zones d'**ostéogenèse active** et sur l'os **spongieux métaboliquement actif** [1].\n\n**▸ Les deux déterminants de la captation.** Deux facteurs contrôlent l'accumulation locale du traceur : le **flux sanguin régional** (qui amène le traceur au contact de l'os) et l'**efficacité d'extraction** (proportionnelle à la surface d'hydroxyapatite exposée et à l'activité ostéoblastique) [1]. Toute hyperhémie ou tout emballement du remodelage majore donc la fixation.\n\n**▸ Distribution physiologique et voie d'élimination.** Chez l'adulte, la fixation est **symétrique**, plus intense sur l'os spongieux (rachis, bassin, gril costal, extrémités des os longs) ; **reins et vessie** sont normalement visibles, car la fraction non fixée est **éliminée par voie urinaire** [1]. Chez l'enfant, les **cartilages de croissance (plaques épiphysaires)** fixent intensément le traceur — variante physiologique majeure et **piège d'interprétation** [1].\n\nCes repères — symétrie, prédominance axiale, visibilité rénale et vésicale, cartilages de croissance pédiatriques — constituent la grille de lecture du normal, sur laquelle se détachera tout foyer pathologique.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — biocinétique du traceur",
+              "text": "À **4 h post-injection, environ 50–60 % de la dose injectée est fixée au squelette** ; la fraction libre (~34 %) est excrétée dans les urines et ~6 % reste dans la circulation [1]. Le modèle dosimétrique de référence retient **50 % capté par le squelette** (demi-vie de captation 15 min), 15 % retenu (clairance 2 h) et 35 % éliminé par voie rénale [1]. C'est cette clairance urinaire rapide qui fait de la **paroi vésicale l'organe critique** et justifie hydratation et vidanges fréquentes."
+            }
+          ],
+          "figure": {
+            "figureRef": "BONE_SCAN",
+            "alt": "Schéma d'une scintigraphie osseuse corps entier normale : fixation symétrique du squelette axial et appendiculaire, reins et vessie visibles par élimination urinaire.",
+            "caption": "Fig. 1 — Biodistribution physiologique du ⁹⁹ᵐTc-bisphosphonate : fixation symétrique, prédominance axiale, élimination rénale/vésicale — l'image de référence du normal."
+          }
+        },
+        {
+          "title": "A4 - Principe : la cible biologique imagée",
+          "text": "**Pourquoi ça marche.** La cible imagée est la **surface de l'os en cours de minéralisation**, indépendamment du bisphosphonate utilisé (MDP, HMDP ou DPD). Le traceur, vectorisé par le flux sanguin, se fixe par **chimisorption** sur les cristaux d'**hydroxyapatite** exposés dans les foyers d'ostéogenèse [1]. Sa répartition dans la phase minérale est d'environ **deux tiers dans les cristaux d'hydroxyapatite et un tiers dans le phosphate de calcium** [1]. L'intensité de fixation intègre donc deux informations physiologiques : la **vascularisation** et l'**activité ostéoblastique** locales (cf. A3).\n\nLa cible n'est **pas la cellule tumorale** mais la **réaction osseuse réactionnelle** qu'elle (ou toute autre agression) déclenche. C'est la clé de lecture de tout l'examen :\n\n- **Hyperfixation** = augmentation du flux sanguin **et/ou** de l'activité de remodelage ostéoblastique (métastase ostéocondensante, fracture, infection, arthropathie, maladie de Paget…).\n- **Hypofixation / lacune** = absence de réaction ostéoblastique ou interruption de la vascularisation : lésion **purement lytique** à faible réaction (myélome), nécrose avasculaire débutante, ou destruction massive sans réaction de réparation.\n\nLe **contraste de l'image** dépend du rapport entre la fixation lésionnelle et le bruit de fond des tissus mous : il s'améliore avec le **délai** (clairance du compartiment vasculaire, cf. A3) et avec l'**hydratation/vidange vésicale**.\n\nCe mécanisme explique pourquoi l'examen est **très sensible mais peu spécifique** : un très large éventail de pathologies (néoplasiques, infectieuses, traumatiques, métaboliques, dégénératives) emprunte la même voie finale commune — l'emballement du remodelage [1]. Il explique aussi le piège majeur du **superscan** : une atteinte métastatique ou métabolique diffuse capte tellement le traceur que le squelette apparaît intensément et uniformément fixant, avec des **reins « éteints »** et un faible bruit de fond, aspect paradoxalement difficile à reconnaître [16].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la sensibilité n'est pas la spécificité",
+              "text": "Un **foyer d'hyperfixation** signe un remodelage osseux accru, **jamais une étiologie précise**. La distinction métastase / fracture / arthrose / infection repose sur la **distribution** (foyers aléatoires à prédominance axiale pour les métastases, alignés sur des côtes adjacentes pour un traumatisme costal), sur le **pattern**, et sur la **corrélation** (radiographie, TDM, IRM, et surtout TEMP-TDM) — jamais sur l'intensité seule [1]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — faux négatifs des lésions lytiques pures",
+              "text": "Une lésion **ostéolytique à faible composante ostéoblastique** (myélome multiple, certaines métastases agressives) peut **ne pas fixer** le traceur : la cible (os néoformé) y est absente. Dans ces contextes, la scintigraphie osseuse peut sous-estimer l'atteinte et d'autres modalités (TEP-FDG, IRM) sont préférées [1]."
+            }
+          ],
+          "figure": {
+            "figureRef": "BONE_SCAN",
+            "alt": "Schéma du mécanisme : le bisphosphonate marqué au technétium-99m, amené par le flux sanguin, se fixe par chimisorption sur les cristaux d'hydroxyapatite de l'os en remodelage actif, générant un foyer d'hyperfixation.",
+            "caption": "Fig. 2 — Flux sanguin → chimisorption sur l'hydroxyapatite de l'os néoformé → signal : la voie finale commune (remodelage) que partage toute pathologie osseuse."
+          }
+        },
+        {
+          "title": "A5 - Indications",
+          "text": "Les indications EANM se classent en trois grands scénarios : **(1)** maladie osseuse présente ou suspectée, **(2)** symptômes inexpliqués, **(3)** évaluation métabolique [1]. Pour chaque indication, le rationale renvoie au principe (A4) : la scintigraphie n'est positive que là où le remodelage osseux est modifié.\n\n**▸ Oncologie — recherche de métastases osseuses (indication phare)**\n\nExamen de **première intention** pour le dépistage des métastases osseuses des tumeurs solides à fort tropisme osseux — **prostate, sein, poumon, rein** — des hémopathies malignes (maladie de Hodgkin, lymphome non hodgkinien), des tumeurs osseuses primitives et des dysplasies [1]. Dans le cancer de la prostate, la **sensibilité poolée pour les métastases osseuses est de 83 % (IC95 % 69–91) et la spécificité de 68 % (41–87)**, contre **98 %/97 %** pour la **TEP-PSMA** (membrane prostatique spécifique) [8]. La **quantification** par **aBSI** est un prédicteur indépendant de survie globale dans le cancer de prostate résistant à la castration métastatique (mCRPC), validé en phase 3 [15]. La TEMP-TDM est **statistiquement plus spécifique** que le planaire pour identifier les métastases osseuses prostatiques [22].\n\n**▸ Infections ostéo-articulaires**\n\nOstéomyélite, arthrite septique, spondylodiscite, descellement septique de prothèse [1]. La **scintigraphie 3 temps** atteint une **sensibilité globale ~95 % pour l'ostéomyélite**, mais une **spécificité faible sur os remanié** [11] ; sur **pied diabétique**, l'association 3 temps + leucocytes marqués porte la **sensibilité jusqu'à 100 % et la spécificité jusqu'à 83 %** [13]. La **TEMP-TDM est supérieure** au planaire/TEMP seuls (concordance kappa 0,929 vs 0,626) [14] et améliore nettement le diagnostic des ostéomyélites suspectées [12].\n\n**▸ Rhumatologie & pathologie osseuse bénigne**\n\nArthropathies inflammatoires (SAPHO, sacro-iliite), arthrose (facettes articulaires, hanche, genou), enthésopathies, **ostéonécrose** (tête fémorale), ostéonécrose de la mâchoire, algodystrophie (syndrome douloureux régional complexe de type I), **maladie de Paget**, histiocytose langerhansienne [1].\n\n**▸ Traumatologie & orthopédie**\n\nFractures de stress (de fatigue ou d'insuffisance), pseudarthrose, viabilité d'un greffon osseux, ossifications hétérotopiques, évaluation des prothèses (descellement) [1].\n\n**▸ Maladie osseuse métabolique**\n\nHyperparathyroïdie, ostéomalacie, ostéodystrophie rénale ; le **superscan** (hyperfixation diffuse + reins « éteints ») traduit soit des métastases diffuses, soit une maladie métabolique [16].\n\n**▸ Pédiatrie**\n\nMaladie de Legg-Calvé-Perthes, synovite transitoire de hanche, ostéome ostéoïde, syndrome de l'enfant battu [1].\n\n| Domaine | Indication phare | Apport / performance |\n|---|---|---|\n| Oncologie | Métastases osseuses (prostate, sein, poumon, rein) | 1ʳᵉ intention ; Se ~83 %, Sp ~68 % (prostate) [8] ; aBSI pronostique [15] |\n| Infection | Ostéomyélite, prothèse, pied diabétique | 3 temps Se ~95 % [11] ; TEMP-TDM ++ [12,14] |\n| Rhumatologie | Paget, ostéonécrose, arthropathies, SDRC | Très sensible, cartographie corps entier [1] |\n| Traumatologie | Fractures de stress, pseudarthrose, prothèses | Précoce vs radiographie [1] |\n| Métabolique | Hyperparathyroïdie, ostéomalacie | Superscan, atteinte diffuse [16] |\n| Pédiatrie | Perthes, ostéome ostéoïde | Détection des cartilages de croissance à connaître [1] |",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — la TEMP-TDM systématique du tronc",
+              "text": "Pour lever l'ambiguïté des foyers indéterminés (rachis, bassin, pieds, crâne), une **TEMP-TDM** des régions d'intérêt est recommandée : elle corrèle la fixation à l'anatomie et améliore nettement spécificité et exactitude par rapport au planaire et à la TEMP seuls [1,12,14]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — concurrence des examens fonctionnels",
+              "text": "Pour le cancer de la prostate, les recommandations **EAU-EANM** réservent l'imagerie osseuse aux patients à risque (PSA élevé, ISUP ≥ 3, stade clinique avancé ou symptômes) [29], et la **TEP-PSMA** tend à remplacer l'imagerie conventionnelle pour le bilan d'extension initial des formes à haut risque [10,28]. Le **¹⁸F-NaF TEP-TDM** offre une sensibilité supérieure (~98 %) à la scintigraphie planaire/TEMP pour les métastases osseuses prostatiques [9,23]."
+            }
+          ]
+        },
+        {
+          "title": "A6 - Contre-indications & précautions",
+          "text": "Il n'existe **aucune contre-indication absolue** à la scintigraphie osseuse diagnostique. Les points de vigilance sont relatifs et relèvent de la radioprotection (grossesse, allaitement), de la préparation et des **interférences médicamenteuses** modifiant la biodistribution.\n\n**▸ Grossesse & allaitement**\n\n| Situation | Type | Conduite |\n|---|---|---|\n| **Grossesse** | Relative | Vérifier l'absence de grossesse chez la femme en âge de procréer ; si l'examen est médicalement justifié, **différer après grossesse et allaitement** et privilégier échographie/IRM [1]. |\n| **Allaitement** | Relative | Interruption non strictement indispensable selon l'ICRP (pas de pertechnétate libre), mais **interruption ≥ 4 h avec rejet d'un repas** conseillée par prudence [1]. |\n| **Femme en âge de procréer** | Précaution | Examen électif idéalement programmé en début de cycle ; recherche systématique d'une grossesse avant injection [1]. |\n\n**▸ Insuffisance rénale & hémodialyse**\n\nL'élimination étant rénale, une **insuffisance rénale** majore le bruit de fond vasculaire et tissulaire. Chez le dialysé, une **hémodialyse réalisée 15 min à 5 h après l'injection** réduit ce bruit de fond et améliore le contraste, en concertation avec le néphrologue [1]. Une contre-indication à l'hydratation (cardiaque, rénale) doit par ailleurs être évaluée avant de prescrire une charge hydrique [1].\n\n**▸ Interférences médicamenteuses (à connaître pour l'interprétation)**\n\n| Médicament / agent | Effet sur l'image |\n|---|---|\n| **Aluminium** (antiacides) | ↓ fixation osseuse ; fixation hépatique diffuse [1] |\n| Déprivation androgénique (bicalutamide, œstrogènes) | ↑ fixation mammaire [1] |\n| Facteurs de croissance hématopoïétiques (G-CSF) | ↑ fixation du rachis / squelette appendiculaire [1] |\n| **Fer** (perfusion / IM) | ↑ fixation rénale et au site d'injection IM [1] |\n| Méthotrexate | Fixation hépatique [1] |\n| Chimiothérapie néphrotoxique | ↑ fixation rénale [1] |\n| Nifédipine | ↓ fixation osseuse [1] |\n\n**▸ Limite intrinsèque à anticiper**\n\nLes lésions **purement ostéolytiques** à faible réaction ostéoblastique (myélome, certaines tumeurs agressives) peuvent être **faussement négatives** (cf. A4) : ce n'est pas une contre-indication mais une **limite de l'indication** qui doit orienter vers une autre modalité (TEP-FDG, IRM) selon le contexte [1].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — grossesse et allaitement systématiquement recherchés",
+              "text": "Chez toute femme en âge de procréer, la grossesse et l'allaitement doivent être **recherchés avant l'injection**. En cas d'examen justifié, on privilégie une modalité non irradiante (échographie, IRM) ; à défaut, l'allaitement est interrompu **≥ 4 h avec rejet d'un repas** par prudence [1]. Voir la radioprotection pour les consignes à l'entourage (mictions fréquentes, hydratation 4–6 h)."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — un foyer hépatique ou mammaire n'est pas toujours pathologique",
+              "text": "Devant une **fixation hépatique diffuse** (penser aluminium des antiacides, ou méthotrexate), une **hyperfixation mammaire** (déprivation androgénique) ou une **fixation rachidienne accrue** (G-CSF), reconstituer systématiquement l'historique médicamenteux avant de conclure : ces aspects sont des **interférences iatrogènes** documentées, non des lésions [1]."
+            }
+          ]
+        },
+        {
+          "title": "B7 - Radiopharmaceutique(s) & mécanisme de fixation",
+          "text": "**(a) Mécanisme moléculaire.** Les traceurs de la scintigraphie osseuse sont des **diphosphonates** (analogues stables des pyrophosphates) marqués au **99mTc**. Le mécanisme de fixation est une **chimisorption** : la molécule s'adsorbe à la surface des cristaux d'**hydroxyapatite** de la matrice minérale, proportionnellement au **flux sanguin local** et à l'**activité ostéoblastique**.[1][3] Deux facteurs gouvernent l'accumulation : le débit sanguin régional (qui amène le traceur) et l'efficacité d'extraction.[1] La distribution dans la phase minérale se fait pour près des **deux tiers** sur les cristaux d'hydroxyapatite et **un tiers** sur le phosphate de calcium amorphe.[1] Toute condition pathologique (néoplasique, infectieuse, traumatique) majorant la vascularisation et le remodelage se traduit par un **foyer d'hyperfixation**.[1]\n\n**Biocinétique.** À **4 h post-injection, ~50–60 %** de la dose injectée est fixée au squelette ; la fraction libre (**~34 %**) est excrétée par voie urinaire et **~6 %** persiste dans le compartiment circulant.[1] Le modèle dosimétrique de référence retient **50 %** capté par le squelette (demi-vie de captation **15 min**), **15 %** retenu (clairance 2 h) et **35 %** éliminé par voie rénale.[1] Conséquence directe : l'**organe critique est la paroi vésicale**, d'où l'impératif d'hyperhydratation et de mictions fréquentes (cf. §B8).[6][25]\n\n**(b) Molécules disponibles & comparatif.** Trois diphosphonates sont utilisés ; le ciblage (hydroxyapatite) est **identique**, les différences portent sur la cinétique de clairance des tissus mous et le rapport os/fond.\n\n| Caractéristique | 99mTc-MDP (médronate) | 99mTc-HMDP / HDP (oxidronate) | 99mTc-DPD |\n|---|---|---|---|\n| Famille | Méthylène-diphosphonate | Hydroxyméthylène-diphosphonate | Dicarboxypropane-diphosphonate |\n| Rétention squelettique à 24 h | ~50 % de la dose [25] | ~50 % de la dose [27] | comparable |\n| Clairance des tissus mous | Standard | Rapide (meilleur contraste précoce) | Rapide |\n| Excrétion urinaire à 24 h | ~50 % [25] | rénale prédominante [27] | rénale |\n\n**(c) Radionucléide & production.** Le **99mTc** décroît par **transition isomérique** avec une période de **6,02 h**, émettant un photon γ de **140,5 keV** (~89 % par désintégration), idéal pour la γ-caméra.[1] Il est élué d'un **générateur 99Mo/99mTc** (colonne d'alumine) sous forme de **pertechnétate TcO4⁻** (technétium au degré +7).[19] Le **99Mo père** (période 66 h) est lui-même produit en réacteur.\n\n**(d) Marquage & contrôle qualité.** Le marquage exige une **réduction du pertechnétate** (du +7 vers +4/+3) par les **ions stanneux (SnCl2)** présents dans le kit lyophilisé stérile, permettant la complexation au diphosphonate.[18] On ajoute le **Na[99mTcO4⁻]** dilué en sérum physiologique au kit, sans introduction d'air (sensibilité à l'oxydation).[1] Le contrôle qualité vérifie une **pureté radiochimique > 95 %** (CCM/ITLC : la somme du technétium hydrolysé-réduit + pertechnétate libre doit rester **≤ 10 %**), le pH, la stérilité et l'apyrogénicité ; la concentration radioactive est mesurée à l'activimètre.[1][3] Le produit reconstitué est **stable ~8 h** et doit être utilisé dans les **6 h** (au plus tard 8 h).[1][3]\n\n**(e) Activités administrées.** Adulte : **500 MBq en moyenne (intervalle 300–740 MBq ; 8–20 mCi)**, soit **8–10 MBq/kg**, en injection IV unique ; **11–13 MBq/kg** chez l'obèse.[1] Référentiels nationaux : **600 MBq** en planaire et **800 MBq** en TEMP (DRL ARSAC).[24] Pédiatrie : activité de base **35 MBq**, **minimum 40 MBq**, ajustée au poids selon la carte de dose EANM.[7]",
+          "stats": [
+            {
+              "value": "140,5 keV",
+              "label": "Photon γ du 99mTc"
+            },
+            {
+              "value": "6,02 h",
+              "label": "Période physique du 99mTc"
+            },
+            {
+              "value": "500 MBq",
+              "label": "Activité adulte moyenne (300–740)"
+            },
+            {
+              "value": "> 95 %",
+              "label": "Pureté radiochimique requise"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "Le 99mTc et la cible hydroxyapatite sont **indépendants du diphosphonate choisi** : MDP, HMDP/HDP et DPD ciblent tous le même substrat minéral. Le seul critère discriminant pratique est la **vitesse de clairance des tissus mous** (HMDP et DPD plus rapides que le MDP), qui améliore le contraste os/fond, surtout aux temps précoces.[1][27]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège - Pertechnétate libre",
+              "text": "Un marquage insuffisant (carence en ion stanneux, oxydation) laisse circuler du **99mTcO4⁻ libre** qui se fixe sur **thyroïde, estomac, glandes salivaires, plexus choroïdes et reins** - aspect parasite simulant une pathologie. Toujours vérifier la pureté radiochimique (> 95 %) avant injection.[3]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Générateur 99Mo/99mTc : colonne d'alumine, élution du pertechnétate TcO4⁻, puis marquage du kit diphosphonate par réduction aux ions stanneux.",
+            "caption": "Fig. 1 - Du générateur 99Mo/99mTc au radiopharmaceutique : élution du pertechnétate puis marquage du diphosphonate."
+          }
+        },
+        {
+          "title": "B8 - Préparation du patient",
+          "text": "La scintigraphie osseuse ne requiert **ni jeûne ni arrêt médicamenteux systématique** ; la préparation vise essentiellement à **optimiser le rapport os/fond** et à **réduire la dose vésicale** (organe critique, cf. §B7).\n\n**Hydratation & vidange vésicale.** Sauf contre-indication cardiaque ou rénale, le patient boit **≥ 1 litre d'eau** entre l'injection et l'imagerie.[1][24] L'hyperhydratation accélère la clairance du traceur non fixé et abaisse le bruit de fond des tissus mous. La **vessie est vidée fréquemment** pendant le délai d'attente et **juste avant l'acquisition**, en particulier pour les images pelviennes : une vessie pleine masque le sacrum et le pubis, et réduit l'irradiation de la paroi vésicale.[1][24]\n\n**Délai d'imagerie.** La **phase osseuse tardive** est acquise **2 à 4 h après injection** (EANM ; jusqu'à 5 h), avec un minimum de 2–2,5 h ; ce délai permet l'accumulation ostéoblastique et la clairance du compartiment vasculaire.[1][24] Des **images très tardives (jusqu'à 24 h)** sont utiles en cas d'insuffisance rénale, ou pour les fractures de stress, l'ostéite et l'ostéomyélite.[1]\n\n**Interférences à connaître.** Certains traitements modifient la biodistribution et doivent être signalés (sans arrêt systématique) :[1]\n\n| Agent | Effet sur l'image | Conduite |\n|---|---|---|\n| **Aluminium** (antiacides) | ↓ fixation osseuse, **fixation hépatique** diffuse | Noter ; vérifier le CQ du traceur |\n| **Déprivation androgénique / œstrogènes** | ↑ fixation mammaire | Interpréter en contexte |\n| **Facteurs de croissance hématopoïétiques** | ↑ rachis & squelette appendiculaire | Connaître l'antécédent récent |\n| **Fer** (IM/IV) | ↑ fixation rénale et au site d'injection | Repérer le site IM |\n| **Chimiothérapie néphrotoxique** | ↑ rétention rénale | Distinguer d'une atteinte rénale vraie |\n| **Nifédipine** | ↓ fixation osseuse | Tenir compte d'un faux négatif relatif |\n\n**Information & sécurité.** Rechercher **grossesse, retard de règles et allaitement** avant l'injection ; le patient peut **manger et boire** normalement.[1] Chez l'insuffisant rénal dialysé, une **hémodialyse réalisée 15 min à 5 h après injection** réduit le bruit de fond vasculaire et tissulaire (en concertation néphrologique).[1]",
+          "steps": [
+            {
+              "title": "Avant l'injection",
+              "text": "Vérifier l'indication, l'absence de grossesse / l'allaitement, la fonction rénale ; contrôler la pureté radiochimique du traceur (> 95 %) ; informer le patient (pas de jeûne, hydratation à venir)."
+            },
+            {
+              "title": "De l'injection à l'imagerie (2–4 h)",
+              "text": "Injection IV ; faire boire ≥ 1 L d'eau ; mictions fréquentes pour réduire la dose vésicale ; chez le dialysé, programmer l'hémodialyse 15 min–5 h post-injection si pertinent."
+            },
+            {
+              "title": "Juste avant l'acquisition",
+              "text": "Vidange vésicale complète (image pelvienne) ; retrait des objets métalliques (bijoux, ceinture, contenu de poches) source d'atténuation ; vérifier l'absence de contamination cutanée/vestimentaire par les urines."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La **vidange vésicale juste avant l'acquisition** est le geste à plus haut rendement : elle améliore simultanément la **lecture du pelvis** (sacrum, branches ischio-pubiennes) et abaisse la **dose à la paroi vésicale**, organe critique de l'examen (cf. §B7, §D15).[1][25]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution - Contamination urinaire",
+              "text": "Une **contamination urinaire** de la peau ou des vêtements crée un foyer d'hyperfixation **extra-osseux** simulant une lésion. Vidange contrôlée, vérification des téguments et, au moindre doute, **clichés complémentaires** après lavage (cf. §C14)."
+            }
+          ]
+        },
+        {
+          "title": "B9 - Instrument, contrôle qualité & protocole d'acquisition",
+          "text": "**(a) CQ de la γ-caméra (prérequis).** Avant toute acquisition : **uniformité** (quotidienne), **peaking** sur le pic de 140,5 keV, **résolution spatiale & linéarité**, **sensibilité** ; pour la TEMP, **centre de rotation (COR)** et uniformité tomographique.[6] Un défaut d'uniformité génère des artefacts annulaires en reconstruction TEMP.\n\n**(b) Collimateur & fenêtre d'énergie.** Le **collimateur basse énergie haute résolution (LEHR)** est recommandé pour les images statiques, corps entier et TEMP ; un collimateur basse énergie usage général (LEGP) est acceptable pour les phases dynamiques/pool.[1][6] La **fenêtre d'énergie** est centrée sur **140 keV**, largeur **15 % ou 20 %**.[1][6]\n\n**(c) Acquisition planaire / corps entier.** Matrice **256×1024** (corps entier) ou **256×256** (spots) ; **vitesse de balayage 25–30 cm/min** en phase précoce et **10–15 cm/min** en tardif, ajustée pour atteindre **> 1,5 million de coups** par projection antérieure et postérieure.[1] Comptages cibles EANM pour les spots : thoraco-abdomen **700 000–1 000 000** ; grosses articulations/crâne **250 000–400 000** ; articulations distales **150 000–250 000** ; pinhole **50 000–100 000**.[1] Acquisition simultanée antérieure + postérieure sur double tête.\n\n**(d) Scintigraphie 3 phases (triple-phase).** Indiquée pour ostéomyélite, ostéome ostéoïde, algodystrophie, viabilité de greffon :[1][11]\n\n| Phase | Moment | Acquisition | Information |\n|---|---|---|---|\n| **1. Angiographique / perfusion** | 0 min (à l'injection) | 30–60 images de 1–2 s, matrice 64×64 | Flux artériel régional |\n| **2. Pool sanguin (tissulaire)** | **5–10 min** | Statique ~60 s | Hyperémie / inflammation des tissus mous |\n| **3. Osseuse tardive** | **2–4 h** | Planaire + spots ± TEMP | Remodelage ostéoblastique |\n\nLa triade **hyperperfusion + hyperémie focale + hyperfixation tardive** est évocatrice d'**ostéomyélite**.[11]\n\n**(e) TEMP & TEMP/TDM.** La TEMP est **plus sensible que le planaire**, notamment pour les pédicules vertébraux ; la TEMP/TDM corrèle la fixation à l'anatomie et **augmente nettement la spécificité**.[1] Paramètres usuels : matrice **128×128**, arc **360°**, **120 vues × 20 s** (BNMS) ou 60–64 vues/tête de 10–30 s (EANM), ~25 min.[1][24] La composante TDM (80–130 kV, faible mAs) sert au repérage, à la caractérisation et à la **correction d'atténuation**.[1]",
+          "steps": [
+            {
+              "title": "CQ machine (avant la journée)",
+              "text": "Uniformité, peaking 140,5 keV, COR pour la TEMP : prérequis à toute acquisition fiable."
+            },
+            {
+              "title": "Acquisition tardive",
+              "text": "À 2–4 h : corps entier antéro-postérieur (10–15 cm/min, > 1,5 M coups/projection) ± spots ciblés."
+            },
+            {
+              "title": "Complément TEMP/TDM",
+              "text": "Sur les régions d'intérêt : matrice 128×128, 360°, ~25 min, avec TDM pour correction d'atténuation et repérage."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - Os physiologiquement remanié",
+              "text": "La 3-phases a une **sensibilité ~95 %** pour l'ostéomyélite mais une **spécificité faible sur un os déjà remanié** (chirurgie récente, fracture, arthropathie) : le remodelage physiologique mime l'infection. La **TEMP/TDM** lève l'ambiguïté (kappa 0,929 vs 0,626 pour le planaire/TEMP seuls), et le couplage aux **leucocytes marqués** améliore la spécificité.[11][12][14]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Devant tout foyer **indéterminé** du tronc (rachis, bassin) ou des extrémités, ajouter d'emblée une **TEMP/TDM ciblée** plutôt que de multiplier les incidences planaires : gain majeur de spécificité et de localisation anatomique (cf. §C12, §D17).[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'une γ-caméra : collimateur LEHR, cristal NaI(Tl), photomultiplicateurs et électronique de positionnement ; fenêtre centrée sur 140 keV.",
+            "caption": "Fig. 2 - γ-caméra en mode planaire corps entier et TEMP/TDM : collimateur LEHR adapté aux 140 keV du 99mTc."
+          }
+        },
+        {
+          "title": "B10 - Traitement, reconstruction & quantification",
+          "text": "**Reconstruction.** La TEMP est reconstruite par algorithme **itératif OSEM** (ordered-subset expectation maximization), avec **correction d'atténuation** par la TDM, correction du **diffusé** et fusion TEMP/TDM.[1] L'augmentation du nombre d'itérations/sous-ensembles accroît la résolution mais aussi le bruit : un compromis est fixé par centre. La correction d'atténuation peut **majorer artificiellement** la fixation de structures profondes - à connaître pour l'interprétation (cf. §C14).\n\n**Quantification semi-quantitative - charge métastatique (BSI / aBSI).** Le **Bone Scan Index (BSI)** exprime la charge tumorale osseuse en **fraction du poids squelettique total** envahie ; l'**aBSI** en est la version automatisée.[15] Dans une analyse de **phase 3 en mCRPC** (cancer de la prostate résistant à la castration métastatique ; n=721 évaluables), l'aBSI est un **prédicteur indépendant de survie globale** : **HR 1,20 par doublement** d'aBSI (IC95 % 1,14–1,26 ; p<0,001), **C-index 0,63** ; les **médianes de survie par quartile** sont de **34,7 / 27,3 / 21,7 / 13,3 mois** (Q1→Q4).[15] Le **phénomène de flare** (embrasement) se définit comme une **augmentation > 10 % du BSI dans les 3 mois** suivant le début du traitement, suivie d'une régression > 10 % ; observé chez **~36 % (26/72)** de mCRPC, il a une valeur pronostique et ne doit **pas** être pris pour une progression.[15][17]\n\n**Quantification absolue - TEMP/TDM (SUV).** La TEMP/TDM quantitative permet désormais de mesurer un **SUVmax** osseux. Pour les métastases du rachis et du bassin (prostate), un seuil de **SUVmax ≈ 19,5 g/mL** atteint une **sensibilité 87 %, spécificité 92 %, VPP 99 %, VPN 49 %**.[22] Le gain de sensibilité de la TEMP/TDM reprojetée sur le planaire est net : **75 % → 87 %**.[3]\n\n**Indices de concordance & ROC.** L'apport de la fusion TEMP/TDM se lit sur la reproductibilité : **kappa pondéré** 0,56 (TEMP seule) → **0,87** (TEMP/TDM) ; **aires sous la courbe ROC** 0,771 (TEMP seule) → **0,968** (TEMP/TDM fusionnée).[3]\n\n**Tableau récapitulatif des métriques.**\n\n| Métrique | Définition | Usage clinique |\n|---|---|---|\n| **BSI / aBSI** | Fraction (%) du squelette envahie | Charge tumorale, pronostic mCRPC, réponse [15] |\n| **Flare (ΔBSI)** | ↑ > 10 % du BSI à 3 mois puis régression | Distinguer réponse de guérison vs progression [15][17] |\n| **SUVmax** | Concentration d'activité normalisée (g/mL) | Caractérisation TEMP/TDM (seuil ~19,5) [22] |\n| **Superscan** | Captation diffuse + reins « éteints » | Métastases diffuses ou maladie métabolique [16] |",
+          "stats": [
+            {
+              "value": "HR 1,20",
+              "label": "Survie / doublement d'aBSI (mCRPC) [15]"
+            },
+            {
+              "value": "19,5 g/mL",
+              "label": "Seuil SUVmax TEMP/TDM (Se 87/Sp 92) [22]"
+            },
+            {
+              "value": "AUC 0,968",
+              "label": "ROC TEMP/TDM fusionnée [3]"
+            },
+            {
+              "value": "~36 %",
+              "label": "Fréquence du flare en mCRPC [15]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - Phénomène de flare",
+              "text": "Une **aggravation scintigraphique paradoxale** dans les **3 mois** suivant l'instauration d'un traitement efficace traduit la **réponse ostéoblastique de guérison**, non une progression. Réévaluer à distance et intégrer le contexte (PSA, BSI) avant de conclure ; en mCRPC, ce flare a même une valeur pronostique favorable.[15][17]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Pour le suivi sous traitement d'un cancer de la prostate, **rapporter l'aBSI chiffré** : c'est lui qui autorise une comparaison reproductible dans le temps, là où l'appréciation visuelle du nombre de foyers est piégée par le flare et les variations de fond.[15]"
+            }
+          ]
+        },
+        {
+          "title": "C11 - Aspect normal & variantes physiologiques",
+          "text": "Reconnaître la **biodistribution normale** du ⁹⁹ᵐTc-MDP/HMDP est le préalable indispensable à toute lecture : l'os entier fixe physiologiquement le traceur, et c'est l'écart à ce fond symétrique qui définit le pathologique. À la **phase osseuse tardive (2–4 h)**, après clairance du compartiment vasculaire et des tissus mous, la captation est **symétrique** et plus intense sur l'**os spongieux métaboliquement actif** [6][24].\n\n**Distribution normale attendue :**\n\n| Territoire | Aspect physiologique normal |\n|---|---|\n| **Squelette axial** | Fixation symétrique, plus marquée sur l'os trabéculaire (rachis, bassin, sternum, gril costal) [6][24] |\n| **Articulations** | Captation modérée et symétrique (épaules, sacro-iliaques, genoux) [24] |\n| **Reins + vessie** | Visibles (voie d'**élimination rénale** : ~34 % de la dose injectée excrétée par les urines) [1] |\n| **Tissus mous** | Fond résiduel faible à 2–4 h ; plus intense si imagerie précoce ou clairance rénale lente [1][24] |\n\n**Biocinétique sous-jacente.** À **4 h post-injection, ~50–60 % de la dose injectée est fixée au squelette**, ~**6 %** persiste dans la circulation, le reste (~**34 %**) est éliminé par voie urinaire — d'où l'importance de l'hydratation et de la vidange vésicale pour dégager le bassin [1].\n\n**Variantes physiologiques et pièges à connaître :**\n\n- **Cartilages de croissance (plaques épiphysaires)** chez l'enfant et l'adolescent : hyperfixation linéaire intense, symétrique — **piège majeur** à ne pas confondre avec une lésion [24].\n- **Jonctions costo-chondrales, articulations sterno-claviculaires, pointe des omoplates** : foyers symétriques bénins.\n- **Reins « éteints »** : leur disparition (faible activité de fond + hyperfixation squelettique diffuse) définit le **superscan**, qui n'est pas un aspect normal mais traduit soit des **métastases diffuses**, soit une **maladie osseuse métabolique** (cf. §C12) [16].\n- **Activité urinaire résiduelle / contamination cutanée** : à distinguer d'une lésion (cf. §C14) [24]."
+        },
+        {
+          "title": "C11 - Aspect normal & variantes physiologiques",
+          "figure": {
+            "figureRef": "BONE_SCAN",
+            "alt": "Scintigraphie osseuse corps entier au ⁹⁹ᵐTc-MDP : fixation squelettique symétrique de fond (phase osseuse tardive) avec quelques foyers d'hyperfixation focale figurant des métastases ; le MDP se fixe sur l'os en remodelage ostéoblastique.",
+            "caption": "Fig. C11 — Biodistribution normale (fond squelettique symétrique) servant de repère, et foyers d'hyperfixation focale signant une atteinte secondaire."
+          }
+        },
+        {
+          "title": "C11 - Aspect normal & variantes physiologiques",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — cartilages de croissance",
+              "text": "Chez l'enfant et l'adolescent, les **plaques épiphysaires** fixent intensément et symétriquement le traceur : ne jamais interpréter cette hyperfixation linéaire métaphyso-épiphysaire comme une lésion. Le caractère **symétrique et systématisé** est la clé [24]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — l'image de référence",
+              "text": "Garder en tête l'image normale (fond symétrique + reins/vessie visibles) comme **repère** : c'est l'**asymétrie**, le **caractère focal extra-physiologique** ou la **disparition des reins** (superscan) qui orientent. La TEMP/TDM (cf. §C12) lève l'ambiguïté des foyers du rachis, du bassin et des pieds [6][14]."
+            }
+          ]
+        },
+        {
+          "title": "C12 - Sémiologie & interprétation",
+          "text": "La scintigraphie osseuse image la **réaction osseuse** (remodelage ostéoblastique + flux sanguin), non la tumeur elle-même : très **sensible** mais **peu spécifique** [1][6]. La lecture suit un ordre systématique, intègre la **TEMP/TDM (tomographie d'émission monophotonique couplée à la tomodensitométrie)** pour les foyers indéterminés, et débouche sur une conclusion en termes de positif / négatif / équivoque.\n\n**Méthode de lecture systématique :**\n1. **Qualité technique** : vérifier le comptage (**> 1,5 million de coups** par projection corps entier [1]), l'absence de mouvement, la qualité du marquage (cf. §C14).\n2. **Parcourir la biodistribution physiologique** (cf. §C11) et repérer toute asymétrie.\n3. **Caractériser chaque foyer** : localisation, intensité, caractère focal vs diffus, distribution (axiale aléatoire vs alignée vs systématisée).\n4. **Corréler à la TEMP/TDM** pour les régions ambiguës (rachis, bassin, pieds, crâne) : elle augmente nettement spécificité et exactitude [6][14].\n5. **Coter / quantifier** si indiqué (aBSI, SUVmax en TEMP/TDM quantitative — cf. infra).\n6. **Conclure** en répondant à la question clinique.\n\n**Patterns sémiologiques majeurs :**\n\n| Pattern | Aspect scintigraphique | Orientation |\n|---|---|---|\n| **Métastases** | Foyers d'hyperfixation **multiples, distribués au hasard**, à prédominance **axiale** (rachis, bassin, côtes, crâne) [24] | Néoplasie (prostate, sein, poumon, rein) [1] |\n| **Atteinte traumatique costale** | Foyers **alignés** sur des côtes adjacentes [24] | Bénin (fractures) |\n| **Superscan** | Captation squelettique **diffuse et intense** avec **reins « éteints »** et faible bruit de fond [16][24] | Métastases diffuses ou maladie osseuse métabolique |\n| **Ostéomyélite (3 phases)** | **Hyperperfusion focale + hyperémie focale + hyperfixation osseuse tardive** (triade) [11] | Infection ostéo-articulaire |\n| **Lésions purement lytiques** | Faible ou absence de fixation (faible réaction ostéoblastique) | **Faux négatif** : myélome, certaines tumeurs (cf. §C14) [1] |\n\n**Critères de positivité.** Un foyer **focal, intense et extra-physiologique** est suspect ; sa signification dépend du **pattern** (distribution) et de la **corrélation** TEMP/TDM ou radiographique. Un foyer **isolé** ne doit jamais être attribué avec certitude à une pathologie donnée sans pattern typique ni corrélation [24].\n\n**Quantification — charge métastatique (prostate) :**\n- **Bone Scan Index (BSI)** : fraction du poids squelettique total atteinte par les métastases ; **aBSI** = version automatisée [15].\n- L'aBSI est un **biomarqueur pronostique indépendant** de survie globale en cancer de la prostate métastatique résistant à la castration (mCRPC), validé en **phase 3** (n=721 évaluables) : **HR 1,20 par doublement** d'aBSI (IC95 % 1,14–1,26 ; p<0,001), C-index 0,63 [15]. Médianes de survie par quartile décroissant : **34,7 / 27,3 / 21,7 / 13,3 mois** [15].\n\n**Quantification — TEMP/TDM quantitative :**\n- Un seuil de **SUVmax 19,5 g/mL** discrimine les métastases rachidiennes/pelviennes avec **Se 87 %, Sp 92 %, VPP 99 %, VPN 49 %** [22].\n\n**Phénomène de flare (embrasement).** Aggravation scintigraphique **paradoxale** après initiation d'un traitement efficace (réponse de guérison ostéoblastique), simulant une progression : défini comme une **augmentation > 10 % du BSI dans les 3 mois** suivie d'une amélioration > 10 % les 3 mois suivants ; observé chez **36 % (26/72)** de mCRPC, où il a une **valeur pronostique favorable** [17]. Ne pas conclure à une progression sur un scan post-thérapeutique précoce — revoir à distance (cf. §C14)."
+        },
+        {
+          "title": "C12 - Sémiologie & interprétation",
+          "stats": [
+            {
+              "value": "87 % / 92 %",
+              "label": "Se/Sp métastases (TEMP/TDM, SUVmax 19,5 g/mL) [22]"
+            },
+            {
+              "value": "HR 1,20",
+              "label": "par doublement d'aBSI (survie globale mCRPC, phase 3) [15]"
+            },
+            {
+              "value": "36 %",
+              "label": "de mCRPC présentant un flare ostéoblastique [17]"
+            },
+            {
+              "value": "> 1,5 M",
+              "label": "coups par projection corps entier requis [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la TEMP/TDM change la lecture",
+              "text": "La **TEMP/TDM** est statistiquement plus sensible **et** plus spécifique que le planaire pour les métastases : concordance interobservateur (kappa) **0,56 → 0,87**, AUC **0,771 → 0,968** (TEMP/TDM fusionnée) [24]. Pour le diagnostic d'ostéomyélite, elle surclasse le planaire/TEMP seul (kappa **0,929 vs 0,626**) [14]. À privilégier systématiquement pour lever l'ambiguïté des foyers indéterminés du tronc, du bassin et des pieds [6][14]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — flare post-thérapeutique",
+              "text": "Une **aggravation scintigraphique précoce** après chimiothérapie/hormonothérapie efficace peut traduire un **flare ostéoblastique** (réponse de guérison), non une progression. Ne pas conclure à un échec sur un scan trop précoce : revoir à distance et corréler aux marqueurs (PSA) [17]."
+            }
+          ]
+        },
+        {
+          "title": "C13 - Compte rendu structuré",
+          "text": "Le compte rendu doit être **structuré, standardisé et actionnable**, intégrant signes positifs **et** négatifs, et toujours corrélé aux scintigraphies antérieures et à l'imagerie morphologique. Une conclusion **explicite répondant à la question clinique** est indispensable [24].\n\n**Trame recommandée :**\n1. **Indication** : motif de l'examen (recherche de métastases, douleur inexpliquée, suspicion d'ostéomyélite, suivi…).\n2. **Technique** : traceur (⁹⁹ᵐTc-MDP / HMDP), **activité administrée** (moyenne **500 MBq**, intervalle **300–740 MBq** [1]), nombre de phases (mono- ou **3 phases**), **délai d'imagerie** (phase osseuse **2–4 h** [1]), modalités (planaire corps entier ± **TEMP/TDM**), collimateur **LEHR** [1].\n3. **Description** : biodistribution physiologique (conforme ou non) ; **anomalies** localisées, intensité, caractère focal/diffus, distribution (aléatoire axiale vs alignée vs systématisée) ; **corrélation TEMP/TDM** des foyers indéterminés.\n4. **Comparaison** aux scintigraphies antérieures et à l'autre imagerie (radiographie, TDM, IRM) — indispensable au suivi (cf. flare, §C12).\n5. **Quantification** le cas échéant : **aBSI** (charge métastatique prostate) [15], **SUVmax** en TEMP/TDM quantitative [22].\n6. **Conclusion** : réponse explicite (présence/absence de métastases, caractère bénin vs suspect, nécessité d'imagerie complémentaire) + **recommandations** [24].\n\n**Exemple — examen normal :** « Scintigraphie osseuse corps entier au ⁹⁹ᵐTc-HMDP (500 MBq, phase osseuse à 3 h, planaire ant./post.). Biodistribution physiologique, symétrique, sans foyer d'hyperfixation anormale. Reins et vessie visibles. **Absence d'argument scintigraphique en faveur d'une atteinte osseuse secondaire.** »\n\n**Exemple — pathologique :** « Multiples foyers d'hyperfixation focale distribués de façon aléatoire sur le rachis dorso-lombaire, le bassin et plusieurs côtes, confirmés en TEMP/TDM (atteinte ostéocondensante des corps vertébraux). Aspect évocateur d'une **dissémination osseuse secondaire**. aBSI estimé à [valeur]. Recommandation : corrélation au contexte oncologique et au PSA ; suivi évolutif sous traitement. »",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — toujours signes positifs ET négatifs",
+              "text": "Le rapport structuré mentionne explicitement les **signes négatifs** pertinents (p. ex. absence d'atteinte d'un territoire à risque) : ils sont aussi décisionnels que les signes positifs. Pour un suivi, fournir une **quantification reproductible** (aBSI, SUVmax) permet la comparaison objective dans le temps [15][22][24]."
+            }
+          ]
+        },
+        {
+          "title": "C14 - Pièges, artefacts & faux positifs/négatifs",
+          "text": "La scintigraphie osseuse est exposée à des pièges techniques, physiologiques et pathologiques. Pour chacun : identifier la **cause**, reconnaître l'**aspect**, et **corriger** (TEMP/TDM, clichés tardifs, vidange vésicale, contrôle de la préparation et du marquage). Le tableau récapitule les faux positifs / faux négatifs ; les encadrés détaillent les écueils majeurs.\n\n| Type | Mécanisme | Aspect / Conduite |\n|---|---|---|\n| **Faux négatif** | Lésions **purement ostéolytiques** à faible réaction ostéoblastique | Myélome multiple, certaines tumeurs : fixation faible/absente → compléter (radiographie, TDM, IRM) [1][24] |\n| **Faux négatif** | **Superscan** trompeur | Captation diffuse intense + reins éteints : peut être lue comme « homogène donc normale » — penser au rapport axial/périphérique élevé [16][24] |\n| **Faux positif** | **Remaniement post-traumatique/post-chirurgical** (6–12 mois) | Hyperfixation physiologique de cicatrisation, indiscernable d'une complication ; respecter les délais [24] |\n| **Faux positif** | **Flare** post-thérapeutique | Aggravation paradoxale = réponse, non progression ; revoir à distance [17] |\n| **Faux positif** | **Fixation extra-osseuse** | Infarctus du myocarde (1–14 j), calcifications des tissus mous, rhabdomyolyse, myosite ossifiante [24] |\n| **Artefact** | **Contamination urinaire** cutanée/vestimentaire | Foyer superficiel simulant une lésion pelvienne → vidange vésicale, recliché [24] |\n| **Artefact** | **Atténuation** par bijoux, prothèses, objets de poche | Plage d'hypofixation → retrait des objets métalliques [24] |\n| **Artefact** | **Pertechnétate libre** (marquage insuffisant, carence en ions stanneux) | Fixation parasite **thyroïde, estomac, glandes salivaires, plexus choroïdes, reins** → contrôler la pureté radiochimique (**> 95 %**) [1][24] |\n| **Artefact** | **Mouvement** du patient (balayage corps entier) | Image floue/décalée → reprise de l'acquisition [24] |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — faux négatifs des lésions lytiques",
+              "text": "Les lésions à composante **ostéoclastique/lytique pure** (myélome multiple, certaines métastases lytiques) suscitent peu de réaction ostéoblastique et peuvent **ne pas fixer** le MDP/HMDP → faux négatif. Devant une forte suspicion avec scintigraphie négative, compléter par radiographie, TDM, IRM ou TEP (¹⁸F-NaF, ¹⁸F-FDG) [1][24]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — pertechnétate libre (marquage)",
+              "text": "Un marquage insuffisant libère du **pertechnétate ⁹⁹ᵐTcO₄⁻** libre, fixé sur **thyroïde, estomac, glandes salivaires, plexus choroïdes et reins** : aspect évocateur immédiat. Vérifier la **pureté radiochimique (> 95 %)** et la préparation du kit (cf. §B7) [1][24]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — contamination urinaire & atténuation",
+              "text": "Une **contamination urinaire** cutanée ou vestimentaire simule un foyer pelvien : **vidange vésicale** avant l'acquisition pelvienne et nouveau cliché en cas de doute. Les **objets métalliques** (bijoux, prothèses) créent des plages d'hypofixation par atténuation : les retirer [24]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — corriger par la TEMP/TDM et les délais",
+              "text": "La plupart des pièges se résolvent par : **TEMP/TDM** (caractérisation anatomique d'un foyer indéterminé), **clichés tardifs (6–24 h)** pour les fractures de stress et l'ostéomyélite, **respect des délais post-traumatiques/post-thérapeutiques** (6–12 mois) et **vérification de la préparation** (hydratation, vidange, marquage). Relier systématiquement à l'aspect normal (§C11) et à la sémiologie (§C12) [1][14][24]."
+            }
+          ]
+        },
+        {
+          "title": "D15 - Dosimétrie",
+          "text": "Données de référence issues de l'**ICRP 128** (compilation des coefficients de dose des radiopharmaceutiques) et des guidelines EANM 2016, qui dérivent du même formalisme.[4][5][1]\n\n**Coefficient de dose efficace (²⁹ᵐTc-bisphosphonates, adulte) ≈ 0,0057 mSv/MBq** [4][1]. Appliqué aux activités usuelles, il situe l'examen dans la gamme **2,9–4,0 mSv pour 300–740 MBq** [1] ; à **740 MBq, la dose efficace est de ~4,2 mSv** [4]. L'EANM retient une dose efficace adulte de l'ordre de **3–4 mSv** [1] ; un référentiel britannique (ARSAC/BNMS) donne **3 mSv pour 600 MBq en planaire** et **5 mSv pour 800 MBq en TEMP** [24][1].\n\n| Paramètre | Valeur | Source |\n|---|---|---|\n| Coefficient adulte | **0,0057 mSv/MBq** | [4][1] |\n| Coefficient enfant 5 ans | **0,0070 mSv/MBq** | [1] |\n| Coefficient nouveau-né | **0,014 mSv/MBq** | [1] |\n| Dose efficace adulte (300–740 MBq) | **2,9–4,0 mSv** | [1] |\n| Dose efficace à 740 MBq | **~4,2 mSv** | [4] |\n| Planaire 600 MBq / TEMP 800 MBq | **3 / 5 mSv** | [24][1] |\n\n**Organe critique = la paroi vésicale**, du fait de la clairance urinaire de la fraction non fixée (~34 % de la dose excrétée dans les urines) [1]. Les valeurs de notice produit illustrent la dispersion liée au radiopharmaceutique et au schéma mictionnel — pour **740 MBq** : notice MDP (ICRP 53) surfaces osseuses **46 mGy**, paroi vésicale **37 mGy**, moelle rouge **7,1 mGy**, reins **5,4 mGy** [25] ; notice HDP/oxidronate (MIRD-14, miction initiale à 2 h) surfaces osseuses **64,4 mGy**, paroi vésicale **15,5 mGy**, moelle rouge **9,6 mGy** [27]. L'écart vésical (37 vs 15,5 mGy) reflète des hypothèses de miction différentes [25][27] : la dose vésicale est **fortement modulée par l'hydratation et la fréquence des mictions**.\n\n- **Pédiatrie** : coefficient par MBq plus élevé, mais activités adaptées (carte EANM) ; dose efficace **~2,0 mSv (3,5 kg / 40 MBq)** à **~2,8 mSv (50 kg / 375 MBq)** [1]. La composante TDM d'une TEMP/TDM diagnostique ajoute **4–10 mSv (hanche/rachis)** et **< 0,1 mSv (extrémités)** [1].\n- **Distinguer dose absorbée** (mGy, par organe) et **dose efficace** (mSv, corps entier pondéré).\n- **Grossesse/allaitement** : cf. §D16 et §A6.",
+          "stats": [
+            {
+              "value": "0,0057 mSv/MBq",
+              "label": "Coefficient adulte (ICRP)"
+            },
+            {
+              "value": "~4,2 mSv",
+              "label": "Dose efficace à 740 MBq"
+            },
+            {
+              "value": "Paroi vésicale",
+              "label": "Organe critique"
+            },
+            {
+              "value": "~2,5 mSv",
+              "label": "Dose efficace pédiatrique"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La paroi vésicale étant l'organe critique, l'**hydratation abondante (≥ 1 L) et les mictions fréquentes** ne sont pas seulement un confort technique : elles **réduisent réellement la dose vésicale** en raccourcissant le temps de résidence de l'activité urinaire (cf. §B8). C'est le principal levier d'optimisation à l'échelle du patient.[1][27]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution - lire les notices avec leur référentiel",
+              "text": "Les coefficients de dose diffèrent selon le référentiel et le radiopharmaceutique : MDP/ICRP 53 donne 5,9 mSv d'équivalent de dose efficace pour 740 MBq [25], là où la compilation ICRP 128 retient ~4,2 mSv [4]. Toujours préciser la source du chiffre rapporté."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma temps-distance-écran (ALARA) : les trois leviers de réduction de la dose, transposés à l'optimisation de l'activité et à l'hydratation/vidange vésicale en scintigraphie osseuse.",
+            "caption": "Fig. D15 - L'hydratation et les mictions fréquentes sont le levier d'optimisation propre à l'examen (organe critique = paroi vésicale)."
+          }
+        },
+        {
+          "title": "D16 - Radioprotection",
+          "text": "Principes fondateurs : **justification, optimisation (ALARA), limitation**. La scintigraphie osseuse au ²⁹ᵐTc est, parmi les examens de médecine nucléaire, l'un des plus favorables : photon unique de **140,5 keV** [1], demi-vie courte de **6,02 h** [1], pas d'émission particulaire — le patient cesse rapidement d'être une « source » significative. La radioprotection se pense par cible.\n\n| Cible | Mesures clés | Source |\n|---|---|---|\n| **Patient** | Justification ; optimisation de l'activité (8–10 MBq/kg ; obèse 11–13 MBq/kg) ; **hydratation ≥ 1 L + mictions fréquentes** réduisant la dose vésicale | [1] |\n| **Personnel** | Blindage de seringue/flacon, distance, temps, dosimétrie passive et opérationnelle, zonage ; manipulation de l'éluat de générateur ⁹⁹Mo/⁹⁹ᵐTc | [1] |\n| **Entourage / public** | Patient « source » faible (140 keV, 6 h) : limiter le contact rapproché prolongé avec jeunes enfants et femmes enceintes durant les premières heures ; consignes de chasse d'eau | [1] |\n\n**Grossesse** : il n'existe pas de contre-indication absolue à un examen justifié, mais chez la femme en âge de procréer on **vérifie l'absence de grossesse** et, si l'examen est différable, on le programme idéalement dans les **10 jours suivant le début des règles** [27] ; à défaut, préférer échographie/IRM et reporter après grossesse et allaitement [1].\n\n**Allaitement** : selon l'ICRP, l'interruption n'est pas strictement indispensable (pas de pertechnétate libre significatif avec un marquage correct), mais une **interruption ≥ 4 h avec rejet d'un repas** est conseillée par prudence [1] ; certaines notices recommandent une substitution temporaire par lait artificiel [27].\n\n**Insuffisance rénale / dialyse** : la fraction urinaire étant prépondérante, une **hémodialyse réalisée entre 15 min et 5 h après l'injection** réduit le bruit de fond et la dose, en concertation néphrologique [1]. La gestion des **effluents et déchets** repose sur la décroissance (demi-vie courte facilitant le stockage).",
+          "steps": [
+            {
+              "title": "Avant l'injection",
+              "text": "Vérifier la justification, rechercher grossesse/retard de règles et allaitement ; chez la femme en âge de procréer, privilégier les 10 jours post-menstruels si l'examen est différable.[27]"
+            },
+            {
+              "title": "Injection et phase d'attente",
+              "text": "Activité optimisée (8–10 MBq/kg) ; débuter l'hydratation (≥ 1 L) ; pour un dialysé, planifier la séance 15 min–5 h après l'injection.[1]"
+            },
+            {
+              "title": "Avant l'acquisition",
+              "text": "Vidange vésicale juste avant l'imagerie (dose vésicale + bruit de fond pelvien).[1]"
+            },
+            {
+              "title": "Après l'examen",
+              "text": "Consignes simples (hydratation, mictions fréquentes) ; interruption de l'allaitement ≥ 4 h avec rejet d'un repas si concerné.[1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "Le profil de radioprotection de la scintigraphie osseuse est dominé par la **voie urinaire**, non par l'os : c'est pourquoi les consignes (hydratation, mictions, dialyse) visent la vessie. Le ²⁹ᵐTc (140 keV, 6 h, photon pur) rend le patient peu irradiant pour l'entourage dès les premières heures.[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine, élution du pertechnétate ⁹⁹ᵐTcO₄⁻, source du radionucléide manipulé par le personnel.",
+            "caption": "Fig. D16 - Chaîne ⁹⁹Mo/⁹⁹ᵐTc : le point de manipulation du personnel (élution, marquage) où s'appliquent blindage, distance et temps."
+          }
+        },
+        {
+          "title": "D17 - Performances diagnostiques & comparaison",
+          "text": "La scintigraphie osseuse est **très sensible mais peu spécifique** : elle image la **réaction ostéoblastique** (cf. §A4), non la tumeur elle-même. Ses performances dépendent fortement de l'indication, de la technique (planaire vs TEMP vs TEMP/TDM) et, en oncologie prostatique, des modalités concurrentes émergentes.\n\n**Métastases osseuses du cancer de la prostate** (méta-analyses, niveau patient) :\n\n| Modalité | Sensibilité | Spécificité | Source |\n|---|---|---|---|\n| Scintigraphie osseuse planaire | **83 %** (IC95 % 69–91) | **68 %** (41–87) | [8] |\n| TEMP/TDM (statistiquement supérieure au planaire) | **87 %** | **92 %** (SUVmax 19,5 g/mL) | [22] |\n| ¹⁸F-NaF TEP/TDM | **0,98** (0,95–0,99) | **0,90** (0,86–0,93) | [23][9] |\n| PSMA-PET/CT | **98 %** | **97 %** | [8] |\n\nLe gain de la **TEMP/TDM** sur le planaire est net : concordance interobservateur **kappa 0,56 (TEMP seule) → 0,87 (TEMP/TDM fusionnée)**, aire sous courbe ROC **0,771 → 0,968** [1]. Dans l'essai **ProPSMA**, l'exactitude de CT + scintigraphie osseuse n'est que de **65 %** vs **92 %** pour le PSMA-PET [10] ; l'essai de phase 3 **MITNEC-A1** donne pour ¹⁸F-NaF-PET/TDM une Se de **78,9 %** vs **63,3 %** pour la TEMP-MDP (Sp 88,2 % vs 87,5 %) [23].\n\n**Infections ostéo-articulaires** : la scintigraphie **3 phases** atteint une **sensibilité globale ~95 %** pour l'ostéomyélite mais une **spécificité faible sur os remanié** [11][12]. Au pied diabétique, l'association **3 phases + leucocytes marqués** porte la sensibilité jusqu'à **100 %** et la spécificité jusqu'à **83 %** [13]. La **TEMP/TDM est supérieure** au planaire/TEMP (kappa **0,929 vs 0,626**) [14].\n\n**Limite intrinsèque** : faux négatifs des lésions **purement ostéolytiques** à faible réaction ostéoblastique (myélome, certaines tumeurs) [1] — cf. §C14.",
+          "stats": [
+            {
+              "value": "83 % / 68 %",
+              "label": "Se/Sp planaire (méta prostate)"
+            },
+            {
+              "value": "~95 %",
+              "label": "Se 3 phases (ostéomyélite)"
+            },
+            {
+              "value": "ROC 0,968",
+              "label": "TEMP/TDM fusionnée"
+            },
+            {
+              "value": "65 % vs 92 %",
+              "label": "ProPSMA : CT+scinti vs PSMA-PET"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La **TEMP/TDM** doit être considérée comme le standard moderne, non comme une option : elle fait passer la spécificité d'un foyer vertébral/pelvien indéterminé de ~68 % (planaire) à ~92 %, en corrélant la fixation à l'anatomie (sclérose dégénérative vs métastase).[8][22][1]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège - sensibilité élevée ≠ détection des lésions lytiques",
+              "text": "La haute sensibilité globale ne s'applique pas aux lésions à faible activité ostéoblastique : un **myélome multiple** ou une métastase **purement lytique** peuvent rester froids. En cas de forte suspicion avec scintigraphie négative, compléter par radiographies/TDM/IRM ou ¹⁸F-FDG.[1]"
+            }
+          ]
+        },
+        {
+          "title": "D18 - Place dans la stratégie & algorithmes décisionnels",
+          "text": "La scintigraphie osseuse reste l'**examen de première intention** pour la recherche de métastases osseuses, du fait de l'exploration du **squelette entier en une acquisition**, de son faible coût et de sa large disponibilité [1][20]. Sa place évolue toutefois indication par indication, sous la pression des modalités TEP.\n\n**▸ Cancer de la prostate.** Les recommandations **EAU-EANM-ESTRO-ESUR-ISUP-SIOG** réservent l'imagerie osseuse aux patients à risque : **PSA > 10–20 ng/mL**, **ISUP grade group ≥ 3**, **stade clinique ≥ cT2c/T3**, ou symptômes osseux [29]. Un nomogramme valide ces seuils (Se 93,2–96,9 %, VPN 99,8–99,9 % selon NCCN/AUA/EAU) [28]. Tendance forte : la **TEP-PSMA** tend à remplacer la scintigraphie pour le bilan d'extension initial à haut risque (NCCN, ProPSMA) [10][29], le ¹⁸F-NaF TEP/TDM constituant l'alternative la plus sensible mais moins disponible [9][23].\n\n**▸ Infections ostéo-articulaires.** Algorithme : scintigraphie **3 phases** en première approche (très sensible) ; en cas d'os remanié (prothèse, post-traumatique, pied diabétique), ajouter **leucocytes marqués** et **TEMP/TDM** pour gagner en spécificité [11][12][13][14].\n\n**▸ Quantification et suivi en oncologie prostatique.** L'**automated Bone Scan Index (aBSI)** — charge tumorale exprimée en fraction du poids squelettique — est un **prédicteur indépendant de survie globale** validé en phase 3 (mCRPC) : **HR 1,20 par doublement** d'aBSI (IC95 % 1,14–1,26 ; p < 0,001), médianes de survie par quartile **34,7 / 27,3 / 21,7 / 13,3 mois** [15].\n\n**▸ Pathologie bénigne / métabolique.** Premier recours pour maladie de Paget, fractures de stress, algodystrophie (SDRC), ostéonécrose, ostéome ostéoïde ; le **superscan** (hyperfixation diffuse + reins « éteints ») oriente vers des métastases diffuses ou une maladie métabolique [16].\n\n*Arbre décisionnel (métastases prostate)* : suspicion → stratification du risque (PSA / ISUP / stade) → imagerie osseuse si haut risque → **TEMP/TDM systématique** des foyers indéterminés → escalade vers **PSMA-PET / ¹⁸F-NaF** selon disponibilité et ambiguïté [29][8].",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "Le **flare phenomenon** (embrasement) est un piège stratégique : une augmentation paradoxale de fixation **> 10 % du BSI dans les 3 mois** suivant l'initiation d'un traitement traduit une réponse de guérison ostéoblastique, non une progression — observée chez **36 % (26/72)** des mCRPC, avec valeur pronostique favorable. Réévaluer à distance avant de conclure à un échec.[15][17]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Demander **systématiquement la TEMP/TDM** du tronc pour lever l'ambiguïté des foyers rachis/bassin/pieds/crâne : c'est le geste qui maximise spécificité et exactitude, et qui conditionne la pertinence de l'examen face à la TEP-PSMA.[8][22][1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "BONE_SCAN",
+            "alt": "Scintigraphie osseuse corps entier ²⁹ᵐTc-MDP : distribution squelettique du remodelage osseux, support de la recherche de métastases en une acquisition, point de départ de l'arbre décisionnel.",
+            "caption": "Fig. D18 - L'exploration corps entier en une acquisition fonde le rôle de première intention ; la TEMP/TDM et la TEP-PSMA en sont les compléments/concurrents."
+          }
+        },
+        {
+          "title": "D19 - Examens apparentés & variantes",
+          "text": "La scintigraphie osseuse se décline en **variantes de protocole** et s'inscrit dans un réseau d'examens concurrents ou complémentaires partageant la cible osseuse ou la question métastatique.\n\n**Variantes de protocole** :\n- **Planaire corps entier** : balayage antéro-postérieur (10–15 cm/min en tardif), examen de base [1].\n- **Scintigraphie 3 phases** (vasculaire / pool sanguin 5–10 min / osseuse tardive 2–4 h) : indispensable pour l'**ostéomyélite, l'ostéome ostéoïde, l'algodystrophie** [1][11].\n- **TEMP / TEMP/TDM** : gain majeur de spécificité et de localisation (kappa 0,929 vs 0,626) [14] — désormais standard pour les foyers indéterminés.\n- **Images très tardives (6–24 h)** : fractures de stress, ostéomyélite, insuffisance rénale [1].\n\n| Examen apparenté | Cible / différence | Quand le préférer |\n|---|---|---|\n| **¹⁸F-NaF TEP/TDM** | Même cible osseuse (échange ionique sur l'hydroxyapatite), résolution TEP supérieure | Se **0,98** / Sp **0,90** ; meilleure détection mais coût et disponibilité limitants [23][9] |\n| **PSMA-PET/CT** | Récepteur PSMA tumoral (cible la tumeur, pas l'os) | Bilan d'extension prostate haut risque ; Se **98 %** / Sp **97 %** [8][10] |\n| **Leucocytes marqués (⁹⁹ᵐTc-HMPAO / ¹¹¹In)** | Infection (migration leucocytaire) | Complément du 3 phases sur os remanié / pied diabétique (Sp ↑) [13] |\n| **¹⁸F-FDG TEP/TDM** | Hypermétabolisme glucidique | Lésions lytiques peu ostéoblastiques, myélome, certaines tumeurs faux-négatives en scintigraphie [1] |\n| **IRM / TDM** | Moelle osseuse / corticale (anatomique) | Lésions lytiques, complément des foyers indéterminés, contre-indication relative à l'irradiation [1] |\n\nLe choix s'opère selon la **nature de la lésion** (ostéoblastique → scintigraphie/NaF ; lytique → FDG/IRM), la **question clinique** (métastase prostate → PSMA ; infection → leucocytes) et la **disponibilité** (scintigraphie ubiquitaire, TEP plus restreinte) [1][8][23].",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "¹⁸F-NaF et ²⁹ᵐTc-bisphosphonates partagent **la même cible** (l'hydroxyapatite) : ce sont deux lectures du même processus de remodelage, le NaF offrant simplement une meilleure résolution TEP. À l'inverse, **PSMA et FDG ciblent la tumeur**, non l'os — d'où leur capacité à détecter des lésions médullaires précoces avant toute réaction ostéoblastique visible.[1][8][23]"
+            }
+          ]
+        },
+        {
+          "title": "E20 - Cas cliniques commentés / Iconographie",
+          "text": "Quatre vignettes couvrant le typique, l'atypique et le piège. Chaque cas relie les sections techniques (radiopharmaceutique §B7, protocole §B9, sémiologie §C12, pièges §C14) à une décision concrète. Les valeurs chiffrées renvoient aux sources [1..29].\n\nLa lecture d'un foyer isolé reste indissociable de son **pattern** et de la **corrélation TEMP-TDM** : un foyer ne se rattache jamais à une pathologie avec certitude sans contexte ni anatomie [1][6].",
+          "steps": [
+            {
+              "title": "Cas 1 — Métastases osseuses du cancer de la prostate (bilan d'extension)",
+              "text": "*Contexte* : homme de 72 ans, adénocarcinome prostatique **ISUP grade group ≥ 3**, **PSA 28 ng/mL** — seuils au-delà desquels l'imagerie osseuse est recommandée (EAU-EANM) [29]. *Images* : injection de **500 MBq** de 99mTc-HMDP [1], corps entier à **2–4 h** [1], complété d'une **TEMP-TDM du tronc** [1]. Multiples foyers d'hyperfixation **distribués au hasard**, à prédominance axiale (rachis, bassin, côtes) [6]. *Analyse* : distribution aléatoire axiale = pattern métastatique typique ; la TEMP-TDM lève l'ambiguïté des foyers rachidiens (kappa interobservateur **0,87** en TEMP-TDM fusionnée vs 0,56 en TEMP seule) [6]. *Conclusion* : carcinose osseuse multiple confirmée. À noter que la **TEP-PSMA** atteint Se 98 % / Sp 97 % vs 83 % / 68 % pour la scintigraphie dans cette indication [8], et tend à la remplacer pour le bilan initial à haut risque [10][29]."
+            },
+            {
+              "title": "Cas 2 — Ostéomyélite du pied diabétique (scintigraphie 3 temps)",
+              "text": "*Contexte* : patient diabétique, plaie chronique de l'avant-pied, suspicion d'ostéite. *Images* : protocole **3 phases** — phase angiographique (180 images × 1 s) [1], blood-pool à **3–5 min** [24], phase osseuse tardive à **2–4 h** [1], clichés très tardifs **6–24 h** [1]. Triade **hyperperfusion focale + hyperémie focale + hyperfixation osseuse tardive** [11]. *Analyse* : la triade signe l'ostéomyélite ; la scintigraphie 3 temps a une **Se jusqu'à 100 %** mais une **Sp limitée à 83 %** sur os remanié chez le diabétique [11][13]. Le couplage aux **leucocytes marqués** (99mTc-HMPAO ou In-111) augmente la spécificité [11]. *Conclusion* : ostéomyélite confirmée. La **TEMP-TDM** est supérieure au planaire (kappa 0,929 vs 0,626) pour la localisation cortico-médullaire [14]."
+            },
+            {
+              "title": "Cas 3 — Superscan métastatique vs métabolique (piège)",
+              "text": "*Contexte* : patient avec douleurs osseuses diffuses et PSA très élevé. *Images* : captation squelettique **diffuse et intense** avec **reins « éteints »** et activité de fond effondrée [16]. *Analyse* : c'est un **superscan** — piège classique car l'hyperfixation homogène peut être lue comme « normale ». Deux causes : métastatique (envahissement médullaire diffus) ou métabolique (hyperparathyroïdie, ostéomalacie, ostéodystrophie rénale) [16]. L'indice est l'extinction de l'excrétion rénale et un rapport axial/périphérique élevé [16]. *Conclusion* : superscan métastatique ; la corrélation biologique (PSA, calcémie, PTH) tranche entre origine tumorale et métabolique."
+            },
+            {
+              "title": "Cas 4 — Phénomène de flare sous traitement (piège évolutif)",
+              "text": "*Contexte* : mCRPC réévalué **3 mois** après initiation d'une chimiothérapie [15]. *Images* : aggravation scintigraphique apparente avec intensification des foyers connus. *Analyse* : il s'agit d'un **flare** (embrasement) — réponse ostéoblastique de guérison simulant une progression. Défini par une **augmentation > 10 % du Bone Scan Index dans les 3 mois** suivie d'une amélioration > 10 % dans les 3 mois suivants ; observé chez **36 % (26/72)** des mCRPC [15]. *Conclusion* : ne pas conclure à une progression sur le seul scan précoce ; **recontrôler à distance** [17]. En mCRPC, le flare a une **valeur pronostique favorable** [17]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "500 MBq",
+              "label": "Activité adulte standard (99mTc-bisphosphonate) [1]"
+            },
+            {
+              "value": "2–4 h",
+              "label": "Délai injection → phase osseuse tardive [1]"
+            },
+            {
+              "value": "83 %",
+              "label": "Se scinti pour métastases prostate (vs 98 % TEP-PSMA) [8]"
+            },
+            {
+              "value": "36 %",
+              "label": "Fréquence du flare en mCRPC [15]"
+            }
+          ],
+          "figure": {
+            "figureRef": "BONE_SCAN",
+            "alt": "Scintigraphie osseuse corps entier schématique : squelette en fixation symétrique de fond avec plusieurs foyers d'hyperfixation rouges distribués au hasard sur le rachis, le bassin et un fémur, illustrant un pattern métastatique.",
+            "caption": "Fig. 1 — Pattern métastatique : foyers d'hyperfixation distribués au hasard à prédominance axiale (Cas 1) ; image de référence pour distinguer une distribution aléatoire (métastases) d'un alignement costal (traumatisme) [6]."
+          }
+        },
+        {
+          "title": "E21 - Points clés / à retenir",
+          "text": "Synthèse haut rendement. Chiffres et seuils en gras, chacun sourcé.",
+          "list": [
+            "**Principe** : la scintigraphie osseuse image le **remodelage osseux** (flux sanguin local + activité ostéoblastique) par **chimisorption** des bisphosphonates sur l'**hydroxyapatite** — très **sensible** mais **peu spécifique** [1].",
+            "**Radionucléide** : 99mTc, transition isomérique, **demi-vie 6,02 h**, photon γ **140,5 keV** ; fenêtre 140 keV à **15–20 %**, collimateur **LEHR** [1].",
+            "**Biocinétique** : à **4 h**, ~**50–60 %** de la dose fixée au squelette, ~**34 %** excrété par voie urinaire, ~**6 %** circulant → **organe critique = paroi vésicale** [1].",
+            "**Activité adulte** : moyenne **500 MBq** (intervalle **300–740 MBq** ; 8–20 mCi), soit **8–10 MBq/kg** (11–13 MBq/kg chez l'obèse) [1].",
+            "**Pédiatrie** : activité de base **35 MBq**, **minimum 40 MBq**, ajustée au poids (carte de dose EANM, classe B) [1][7].",
+            "**Marquage** : pertechnétate TcO4⁻ (+7) élué du **générateur 99Mo/99mTc**, **réduit par les ions stanneux (SnCl2)** ; pureté radiochimique **> 95 %**, à utiliser **dans les 6–8 h** [1][18].",
+            "**Protocole** : hydratation **≥ 1 L**, vidange vésicale avant acquisition, phase osseuse **2–4 h** (jusqu'à 24 h), vitesse balayage **10–15 cm/min** en tardif, cible **> 1,5 million de coups** par projection [1].",
+            "**Scintigraphie 3 temps** : phase vasculaire / blood-pool **5–10 min** / osseuse **2–4 h** — la triade hyperperfusion + hyperémie + hyperfixation signe l'**ostéomyélite** (Se ~95–100 %, Sp limitée) [1][11].",
+            "**Dose efficace adulte** : **≈ 0,0057 mSv/MBq** → **3–4 mSv** (300–740 MBq) ; planaire ~3 mSv à 600 MBq, TEMP ~5 mSv à 800 MBq [1][24]. Pédiatrie ~2,5 mSv [1].",
+            "**TEMP-TDM** : gain majeur de spécificité et de concordance interobservateur (**kappa 0,87** fusionnée vs 0,56 TEMP seule ; AUC ROC **0,968** vs 0,771) ; recommandée pour les foyers indéterminés [6].",
+            "**Quantification** : l'**automated Bone Scan Index (aBSI)** est un biomarqueur pronostique indépendant en mCRPC (**HR 1,20 par doublement**, médianes de survie 34,7 → 13,3 mois de Q1 à Q4) [15].",
+            "**Concurrence** : la **TEP-PSMA** (Se 98 % / Sp 97 %) et le **18F-NaF PET-TDM** (Se ~98 % / Sp ~90 %) dépassent la scintigraphie (Se 83 % / Sp 68 %) pour les métastases prostatiques [8][23].",
+            "**Pièges** : **faux négatifs** des lésions **purement ostéolytiques** (myélome) ; **pertechnétate libre** (thyroïde/estomac/salivaires) si marquage insuffisant ; **contamination urinaire** ; remaniement post-trauma/chirurgie **6–12 mois** [1][6].",
+            "**Place** : examen de **1ʳᵉ intention** pour les métastases osseuses, pathologies bénignes (Paget, ostéonécrose, SDRC, fractures de stress) et douleurs inexpliquées ; exploration du **squelette entier en une acquisition** [1]."
+          ]
+        },
+        {
+          "title": "E22 - FAQ & pièges d'examen",
+          "text": "Questions fréquentes du résident et confusions de QCM, réponses courtes et justifiées.\n\n**Pourquoi la scintigraphie osseuse est-elle si sensible mais peu spécifique ?** Parce qu'elle image le **remodelage osseux** (réaction ostéoblastique), non la tumeur elle-même : toute condition augmentant la vascularisation et l'activité ostéoblastique — infection, fracture, arthrose, métastase — produit une hyperfixation [1]. Le mécanisme commun explique la sensibilité ; l'absence de spécificité de la réaction osseuse impose la corrélation au pattern et à la TEMP-TDM [6].\n\n**Quel est l'organe critique et comment réduire sa dose ?** La **paroi vésicale**, du fait de la clairance urinaire (~34 % de la dose) [1]. On la protège par **hyperhydratation (≥ 1 L)** et **mictions fréquentes**, vessie vidée juste avant l'acquisition [1].\n\n**À quel délai acquiert-on la phase osseuse, et pourquoi ?** À **2–4 h** : ce délai laisse les ostéoblastes concentrer le traceur et le bruit de fond vasculaire/tissulaire se laver [1]. Des clichés **6–24 h** améliorent le contraste en cas d'insuffisance rénale ou de recherche d'ostéomyélite [1].\n\n**Qu'est-ce qu'un superscan et quel est le piège ?** Une captation squelettique diffuse intense avec **reins « éteints »** et fond effondré [16]. Le piège est de le lire comme normal ; il traduit une atteinte métastatique diffuse OU une maladie métabolique (hyperparathyroïdie, ostéomalacie) [16].\n\n**Quelle lésion peut donner un faux négatif ?** Les lésions **purement ostéolytiques** à faible réaction ostéoblastique, typiquement le **myélome multiple** : la scintigraphie sous-estime l'atteinte → préférer l'IRM ou le 18F-FDG/18F-NaF [1].\n\n**Distinction métastases vs traumatisme costal ?** Les métastases donnent des foyers **distribués au hasard** (prédominance axiale) ; le traumatisme costal donne des foyers **alignés** sur des côtes adjacentes [6].\n\n**MDP, HDP, HMDP, DPD — quelle différence ?** Tous des bisphosphonates marqués au 99mTc : MDP (médronate), HDP/HMDP (oxidronate) et DPD ; le ciblage de l'hydroxyapatite est identique, seules diffèrent légèrement la cinétique de clairance et la dosimétrie [1].\n\n**Pourquoi le 18F-NaF PET et la TEP-PSMA concurrencent-ils la scintigraphie ?** Meilleure résolution et performances : 18F-NaF Se ~98 % / Sp ~90 % [23], TEP-PSMA Se 98 % / Sp 97 % vs 83 % / 68 % pour la scintigraphie planaire [8] ; les guidelines NCCN/EAU les positionnent en alternative pour le haut risque [10][29].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège de QCM — pertechnétate libre",
+              "text": "Si le marquage est insuffisant (carence en ions stanneux), le **pertechnétate libre (TcO4⁻)** se fixe sur **thyroïde, estomac, glandes salivaires, plexus choroïdes et reins** [9]. À distinguer d'une vraie atteinte : c'est un **artefact de contrôle qualité**, corrigé en vérifiant la pureté radiochimique (> 95 %) [1]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — contamination et délai post-traumatique",
+              "text": "Une **contamination urinaire** cutanée/vestimentaire simule une lésion → vidange et inspection avant l'acquisition pelvienne [6]. Et un **remaniement post-traumatique ou post-chirurgical reste physiologique 6–12 mois**, indiscernable d'une complication sur la seule scintigraphie [6]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — flare vs progression",
+              "text": "Une aggravation scintigraphique **précoce** (≤ 3 mois) sous traitement peut être un **flare** (réponse ostéoblastique de guérison), défini par une hausse > 10 % du BSI suivie d'une amélioration > 10 % [15]. Ne jamais conclure à une progression sur le seul scan précoce — **recontrôler à distance** [17]."
+            }
+          ]
+        },
+        {
+          "title": "E25 - Références & liens sortants typés",
+          "text": "**Bibliographie sélective (sourcée et datée).** Les valeurs de cet article dérivent principalement des **EANM practice guidelines for bone scintigraphy** (Van den Wyngaert T et al., *Eur J Nucl Med Mol Imaging* 2016;43:1723–1738) [1][2][3], du référentiel dosimétrique **ICRP Publication 128** (2015) [4][5] et du **SNMMI Procedure Standard for Bone Scintigraphy 4.0** (Bartel TB et al., *J Nucl Med Technol* 2018;46:398) [6]. Le volet pédiatrique s'appuie sur la **carte de dose EANM** [7] et les recommandations nationales (**SFMN** guide des procédures [20], **CNP-MN/SFMN** Os V2.0, 2022 [21]) ainsi que sur la **BNMS Bone Scintigraphy Guideline** (2014) [24].\n\n**Performances et concurrence diagnostique** : méta-analyses scintigraphie vs TEP-PSMA [8], 18F-NaF vs 99mTc-MDP [9][23], TEMP-TDM quantitative [22], positionnement NCCN/EAU [10][28][29].\n\n**Quantification et phénomènes évolutifs** : aBSI pronostique en mCRPC (*JAMA Oncol* 2018) [15], superscan [16], phénomène de flare [17].\n\n**Infection ostéo-articulaire** : scintigraphie 3 temps (StatPearls) [11], TEMP-TDM dans l'ostéomyélite [12][14], comparaison aux leucocytes marqués [13].\n\n**Radiopharmaceutique** : réduction stanneuse du pertechnétate [18], filière 99Mo/99mTc [19], notices produit MDP (ANSTO) [25] et HDP/oxidronate (Curium) [27], atlas des variantes et artefacts (Emory) [26].\n\n**Carte de liens typés (réseau de l'article)** :\n- **Traceurs** : 99mTc-MDP · 99mTc-HMDP (oxidronate) · 99mTc-DPD · 18F-NaF (fluorure de sodium).\n- **Maladies** : métastases osseuses · cancer de la prostate · maladie de Paget · ostéomyélite / spondylodiscite · ostéonécrose · algodystrophie (SDRC type I) · myélome multiple.\n- **Examens** : TEMP-TDM osseuse · TEP-PSMA · 18F-NaF PET-TDM · scintigraphie aux leucocytes marqués (99mTc-HMPAO / In-111).\n- **Scores** : Bone Scan Index / automated BSI.\n- **Théranostique** : 223Ra-dichloride (radium-223) pour les métastases ostéoblastiques symptomatiques de la prostate.\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). N'inventer aucun DOI/PMID : seules les sources réelles [1..29] listées en bas de page font foi.*"
+        }
+      ]
+    }
+  }
+}
