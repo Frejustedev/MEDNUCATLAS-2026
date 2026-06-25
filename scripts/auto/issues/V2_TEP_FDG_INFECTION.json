@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "identityCard champ \"Voie × activité\" (≈ 3–4 MBq/kg, 370–740 MBq) vs section A1/B7 (2,5–5,0 MBq/kg oncologie ; 2–3 MBq/kg LVV/inflammation)",
+    "problem": "Deux fourchettes d'activité injectée coexistent dans l'article (3–4 MBq/kg dans la carte d'identité du haut, 2,5–5,0 MBq/kg en oncologie et 2–3 MBq/kg en LVV dans le corps). Les deux sont sourçables (EANM tumour v2.0 et reco LVV 2018), mais la juxtaposition sans note peut prêter à confusion pour le lecteur sur la valeur de référence en infection/inflammation.",
+    "fix": "Harmoniser ou ajouter une note : retenir 2,5–5,0 MBq/kg (corps entier EANM) avec 2–3 MBq/kg en LVV/inflammation ; le 3–4 MBq/kg (370–740 MBq) est une fourchette pratique cardiaque/infection, à expliciter comme telle pour éviter l'impression de contradiction."
+  },
+  {
+    "severity": "minor",
+    "where": "Endocardite valve native — Se affichée 36–75 % (table A5) et 36 % (tables D17/E21)",
+    "problem": "La sensibilité sur valve native est donnée tantôt 36–75 % (réconciliation Primus 75 % vs méta-analyse v2.0 36 %), tantôt 36 % seul. Les deux chiffres viennent de sources différentes correctement citées, mais la cohabitation peut laisser croire à une incohérence interne.",
+    "fix": "Préciser explicitement la provenance des deux valeurs (étude FDG/mDC de Primus = 75 % ; méta-analyse poolée v2.0 = 36 %) là où elles apparaissent, pour signaler qu'il s'agit de jeux de données distincts et non d'une erreur."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections C12 (Endocardite), D17 (tableau perf. n'est pas concerné), E20 stats Cas 2, et A1 implicite — métrique « ratio captation péri-lésionnelle / pool sanguin ≥ 2,0 (Se 100 %/Sp 91 %) »",
+    "problem": "Mis-attribution de source (pas une fabrication). Cette métrique d'ENDOCARDITE est citée [4] dans C12 (« Se 100 % / Sp 91 % dans la littérature [4] ») et dans les stats de C12/E20. Or [4] = Slart et al., recommandation EANM/SNMMI/PIG sur la VASCULARITE DES GROS VAISSEAUX et la PPR (vérifié : EJNMMI 2018;45(7):1250-1269) — ce document ne traite pas du ratio d'endocardite. La source correcte serait un référentiel endocardite ([1], [6] ou [18]).",
+    "fix": "Remplacer [4] par [1] (standard v2.0) ou [6]/[18] (endocardite) partout où le ratio ≥ 2,0 d'endocardite est cité. Vérifier les 3-4 occurrences (C12 texte + stats, E20 stats, table D10/C12)."
+  },
+  {
+    "severity": "minor",
+    "where": "quiz, question 3 (« Quelle est la période physique du fluor-18 ? »), champ explanation : « ... détectés en coïncidence [6][12]. »",
+    "problem": "Mis-attribution de source. La justification physique (période 109,8 min, 511 keV, β+ 0,634 MeV) est attribuée à [6][12]. [6] = Primus et al. (étude clinique d'endocardite, J Nucl Cardiol 2021, vérifié) qui ne fournit pas ces données physiques. Seul [12] (Boellaard, guideline EANM tumour imaging) est pertinent, idéalement avec [13] (ICRP 128).",
+    "fix": "Remplacer [6][12] par [12][13] (ou [12] seul) dans l'explication du quiz Q3."
+  },
+  {
+    "severity": "minor",
+    "where": "liste des sections du JSON (medecin_nuc.sections) : enchaînement E20, E21, E22 puis « E25 - Références & liens sortants typés »",
+    "problem": "Saut de numérotation dans la série E : on passe de E22 à E25 sans E23 ni E24. La couverture A->E reste assurée (carte d'identité + A1-A6, B7-B10, C11-C14, D15-D19, E20-E22, E25 présents), mais la numérotation n'est pas continue par rapport à l'étalon habituel (E23 = références).",
+    "fix": "Renuméroter la section références en E23 (ou ajouter/expliciter les sections E23/E24 manquantes selon l'étalon). Vérifier que l'étalon n'exige pas des sections E23/E24 distinctes (p. ex. glossaire, liens) actuellement absentes."
+  }
+]
