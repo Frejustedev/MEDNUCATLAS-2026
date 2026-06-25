@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "Pédiatrie — répété dans : section A1 (carte d'identité + tableau), section B7 tableau (d), section D15, tableau identityCard (icon baby), et quiz Q13 (réponse marquée correcte).",
+    "problem": "L'activité pédiatrique du 18F-FDG est donnée comme « 25,9 MBq/kg » (torse, classe B). C'est une erreur d'unité : sur la carte de dosage EANM, la valeur ~25,9 (≈25,6) MBq est une CONSTANTE de base (baseline) sans dimension, utilisée dans la formule pondérée Activité[MBq] = baseline × multiplicateur de poids — ce n'est PAS une activité par kilogramme. Interprétée comme 25,9 MBq/kg, elle conduit à des activités absurdes (ex. enfant de 20 kg → 518 MBq, quasi au plafond adulte de 530 MBq ; enfant de 40 kg → >1000 MBq). La cohérence interne du document (5+ occurrences dont une réponse de quiz) en fait une erreur diffusée, pas une coquille isolée. Confirmé via The effect of modern PET technology on the EANM paediatric dosage card (EJNMMI 2022, PMC9016049) : baseline FDG torse = 25,6 MBq (constante), réduite à 10,7 MBq pour TEP/IRM et LAFOV.",
+    "fix": "Remplacer partout « 25,9 MBq/kg » par « baseline 25,9 MBq (constante de la carte EANM, formule pondérée par le poids) » ou simplement « classe B, carte de dosage EANM 2016 (baseline ≈ 25,9 MBq) ». Corriger aussi l'option et l'explication du quiz Q13 (« 25,9 MBq/kg » → « baseline 25,9 MBq »). Idem pour l'index cérébral 14,0 qui est aussi une baseline, pas des MBq/kg."
+  },
+  {
+    "severity": "minor",
+    "where": "Recherche 1 §6.1 (tableau caractéristiques physiques) : « Dose efficace 1,9×10⁻² mSv/MBq — ICRP 106 », alors que Recherche 2 §10, le JSON (D15, sources [22]) et l'identityCard attribuent la même valeur à « ICRP 128 ».",
+    "problem": "Incohérence de source pour la dose efficace adulte. La valeur 0,019 mSv/MBq est correcte sous les deux publications (ICRP 106 ET ICRP 128 donnent 19 µSv/MBq pour l'adulte >15 ans), donc le chiffre n'est pas faux ; seule l'attribution diverge à l'intérieur du corpus.",
+    "fix": "Harmoniser sur une seule référence (le pivot du JSON utilise ICRP 128 / source [22]). Optionnel : mentionner que le modèle compartimental révisé 2023 propose ~0,017 mSv/MBq, ce que le document fait déjà correctement ailleurs."
+  },
+  {
+    "severity": "major",
+    "where": "Source [17] (bibliography entry + all in-text citations [17] in A1, A3, A5, D15/D17 refs, E25)",
+    "problem": "Author attribution is fabricated/incorrect. The entry reads 'Ahmadzadehfar H, et al. The Role of PET/CT in Breast Cancer. Diagnostics (Basel). 2023;13(4):597.' Verified against MDPI and PMC (PMC9955497): the actual authors are Hadebe B, Harry L, Ebrahim T, Pillay V, Vorster M. The title, journal, volume, issue, page and year are all correct, but the lead author 'Ahmadzadehfar H' is wrong and does not appear among the authors. This is exactly the kind of invented-author error an anti-fabrication check must flag.",
+    "fix": "Replace 'Ahmadzadehfar H, et al.' with 'Hadebe B, Harry L, Ebrahim T, Pillay V, Vorster M.' in source [17] and in the E25 reference recap ('Ahmadzadehfar rôle de la TEP/TDM 2023 [17]')."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D17 - Performances diagnostiques, table row 'Récidive / restaging' and stat card 'Se / Sp récidive (> TDM)' citing [28]",
+    "problem": "Numerical fidelity: the article states recurrence Se approx 90% / Sp approx 81% for [28]. The Radan et al. 2006 paper (Cancer, doi:10.1002/cncr.22292, verified) reports overall Se 90%, Sp 71%, accuracy 83% (and Sp 76% in the contrast-CT comparison subset). The specificity figure of ~81% is not supported by the source; the correct value is 71% (or 76% in the subset). Note the text body of D17 and the E22 FAQ also carry the ~81% / ~69.3% figures inconsistently.",
+    "fix": "Change the D17 specificity for recurrence from ~81% to ~71% (Radan overall) to match source [28], and harmonize the stat card accordingly."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [5] (Medscape) and [7] (RxList) used as primary citations for clinical/physical claims",
+    "problem": "Both URLs are real and resolve, but they are tertiary/secondary lay-reference pages (Medscape clinical summary; RxList drug page) rather than primary literature. They are used to support specific quantitative claims (e.g. half-life, indications). Not fabricated, but lower-tier sourcing for a medecin-nucleaire-level article that otherwise relies on EANM/SNMMI primary guidelines.",
+    "fix": "Where a primary source already exists in the list (e.g. [1]/[2] for 18F physics and EANM indications), prefer it over [5]/[7], or retain [5]/[7] only as supplementary."
+  },
+  {
+    "severity": "minor",
+    "where": "IMPACT-MBC performance figures (Se 95%, Sp 80%, VPP 93%, VPN 85%) attributed to [25] in B7, C13, C14, D19",
+    "problem": "Source [25] (O'Brien et al., 18F-Fluoroestradiol: Current Applications and Future Directions, RadioGraphics 2023;43(3):e220143) is fully verified as a real review. However, the specific 'IMPACT-MBC (n=200): Se 95%, Sp 80%, VPP 93%, VPN 85%' figures could not be independently confirmed from web search as belonging to that named study; the diagnostic-accuracy numbers may be drawn from a primary FES trial summarized within the review rather than originating in [25] itself. Plausible but not directly verifiable.",
+    "fix": "Confirm the IMPACT-MBC sensitivity/specificity values against the primary FES validation trial and cite that primary source alongside [25], or soften to the figures actually stated in the RadioGraphics review."
+  }
+]
