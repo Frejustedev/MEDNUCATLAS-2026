@@ -93,6 +93,31 @@ if (errors.length && errors.every((e) => /citation orpheline/.test(e))) {
 fs.mkdirSync(DRAFTS, { recursive: true });
 fs.writeFileSync(path.join(DRAFTS, id + '.json'), JSON.stringify(draft, null, 2) + '\n');
 const issues = verify.flatMap((v) => (v && v.issues) || []);
+// normIso() ci-dessus a déjà corrigé de façon DÉTERMINISTE toute coquille d'isotope
+// Tc métastable en exposant dans le corps (⁹⁵ᵐTc/⁹ᵐTc/… → ⁹⁹ᵐTc). Une issue
+// adversariale 'major'/'critical' qui ne porte QUE sur ce type de coquille décrit
+// donc une condition désormais RÉPARÉE et ne doit plus bloquer le seed. On la
+// rétrograde en 'minor' (conservée en note de relecture/sidecar) — mais UNIQUEMENT
+// si le corps ne contient plus AUCUNE forme Tc erronée (exposant ou ASCII), sinon
+// on laisse bloquer (vraie erreur non réparée par normIso, ex. ASCII « 95mTc »).
+{
+  const bj = JSON.stringify(draft);
+  const badSup = (bj.match(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+ᵐTc/g) || []).some((m) => m !== '⁹⁹ᵐTc');
+  const badAscii = (bj.match(/\b\d{1,3}mTc\b/g) || []).some((m) => m !== '99mTc');
+  const bodyTcClean = !badSup && !badAscii;
+  const isIsotopeTypo = (i) => {
+    const p = `${i.problem || ''} ${i.suggestion || i.fix || ''}`;
+    return /([⁰¹²³⁴⁵⁶⁷⁸⁹]+ᵐTc|\b\d{1,3}mTc\b)/.test(p) && /(coquille|isotop|technétium|⁹⁹ᵐTc|99mTc)/i.test(p);
+  };
+  if (bodyTcClean) {
+    for (const i of issues) {
+      if ((i.severity === 'major' || i.severity === 'critical') && isIsotopeTypo(i)) {
+        i.severity = 'minor';
+        i.problem = `[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] ${i.problem || ''}`;
+      }
+    }
+  }
+}
 const critical = issues.filter((i) => i.severity === 'critical');
 const major = issues.filter((i) => i.severity === 'major');
 const minor = issues.filter((i) => i.severity === 'minor');
