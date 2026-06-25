@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "major",
+    "where": "Section A5 (« davantage de modifications de prise en charge (41 % vs 23 %, p=0,008) »), tableau §A1 implicitement, et cohérence interne avec D17 — point E21 hérité de [5]",
+    "problem": "La fiche cite à deux endroits un changement de prise en charge de « 41 % vs 23 % » pour proPSMA (TEP-PSMA vs imagerie conventionnelle). C'est FAUX : dans Hofman et al. (Lancet 2020), 41 hommes et 23 hommes sont des EFFECTIFS, pas des pourcentages. Les pourcentages réels sont 28 % (41/150) vs 15 % (23/152), p=0,008. Écrire « 41 % vs 23 % » confond le nombre de patients avec un taux et surestime d'environ 1,5× le taux de changement de prise en charge. La fiche est de surcroît internement contradictoire : la section D17 énonce correctement « 28 % vs 15 % », tandis que A5 (et E21) énonce « 41 % vs 23 % ». La fiche étalon Recherche 2 retient elle-même la valeur correcte (28 % vs 15 %).",
+    "fix": "Remplacer partout « 41 % vs 23 % » par « 28 % vs 15 % » (p=0,008), ou reformuler en « 41 hommes (28 %) vs 23 hommes (15 %) ». Harmoniser A5, le tableau A1 et le point E21 avec la valeur déjà correcte de D17."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence interne : §A1 stat (« ≈ 95 % cancers PSMA+ »), §A4 (« ≈ 95 % surexpriment / environ 5 % PSMA-négatifs ») vs §B7, §C14, E21, quiz (« 5–10 % PSMA-négatifs »)",
+    "problem": "La proportion de cancers PSMA-négatifs est donnée tantôt comme ~5 % (donc ~95 % PSMA+), tantôt comme 5–10 %. Les deux fourchettes existent dans la littérature et sont défendables, mais leur coexistence non explicitée dans le même document crée une incohérence apparente (95 % PSMA+ implique ~5 % négatifs, pas 5–10 %).",
+    "fix": "Uniformiser sur une seule formulation (p. ex. « ~5–10 % PSMA-négatifs, soit ~90–95 % PSMA-positifs ») et l'appliquer de façon cohérente à toutes les sections et items de quiz, ou préciser que la fourchette varie selon les séries."
+  },
+  {
+    "severity": "minor",
+    "where": "§A5 et §D17 : attribution de « sensibilité 95,8 %, VPP 81,9 % » à OSPREY pour les « lésions extra-prostatiques »",
+    "problem": "Valeur exacte mais à préciser : ces chiffres proviennent de la cohorte B d'OSPREY (lésions extra-prostatiques chez des patients à maladie métastatique présumée). Pour la cohorte A (ganglions pelviens au bilan initial), la sensibilité d'OSPREY n'est que ~40 % (Sp ~98 %, VPP ~87 %). Présenter le seul chiffre de 95,8 % sans préciser la cohorte peut laisser croire à une excellente sensibilité ganglionnaire, ce qui contredit la limite de sensibilité (~40 %) correctement énoncée ailleurs dans la fiche.",
+    "fix": "Préciser « OSPREY cohorte B (lésions extra-prostatiques) : Se 95,8 %, VPP 81,9 % » pour éviter toute confusion avec la performance ganglionnaire pelvienne (cohorte A, Se ~40 %)."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections (numérotation des sections E)",
+    "problem": "L'article saute de E22 (FAQ) à E25 (Références). Les sections E23 (quiz interactif) et E24 (fiche de révision) ne sont pas présentes comme sections à part entière : elles sont seulement mentionnées en fin de E22 comme « fonctionnalités de la plateforme à activer ». Ce n'est pas une fabrication de source ni un dépassement de citation, mais une discontinuité de numérotation A->E qui peut surprendre le lecteur.",
+    "fix": "Soit renuméroter la section Références en E23, soit ajouter une phrase explicite en début/fin de sommaire indiquant que E23-E24 sont des modules interactifs gérés par la plateforme (quiz/fiche) et non des sections rédactionnelles, afin que la séquence E20->E25 soit assumée."
+  },
+  {
+    "severity": "minor",
+    "where": "D15 - Dosimétrie, ligne 68Ga-PSMA-11 du tableau et stat « 37,0 mGy »",
+    "problem": "Cohérence d'unités : le texte cite « reins 37,0 mGy » pour 150 MBq (correct, dose absorbée en mGy d'après la source [26] Radiat Prot Dosimetry 2018, vérifiée), mais la source elle-même libelle parfois cette valeur en « 37,0 mSv ». La valeur et la source sont authentiques et correctement attribuées ; il s'agit seulement d'harmoniser l'unité (dose absorbée organe = mGy, ce que fait correctement l'article).",
+    "fix": "Conserver « 37,0 mGy » (choix correct de l'article) et, si utile, ajouter une note de bas de page signalant que la source originale exprime improprement cette dose absorbée en mSv."
+  }
+]
