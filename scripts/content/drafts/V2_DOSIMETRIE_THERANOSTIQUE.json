@@ -1,0 +1,1434 @@
+{
+  "id": "V2_DOSIMETRIE_THERANOSTIQUE",
+  "type": "autre",
+  "cat": "calculateurs",
+  "catLabel": "Calculateurs",
+  "title": "Principes de dosimétrie en théranostique (177Lu, 131I)",
+  "difficulty": "avancé",
+  "tags": [
+    "dosimétrie",
+    "théranostique",
+    "177Lu",
+    "131I",
+    "formalisme MIRD",
+    "dose absorbée",
+    "organes à risque",
+    "PRRT",
+    "177Lu-DOTATATE",
+    "177Lu-PSMA-617",
+    "dose biologiquement efficace",
+    "SPECT/CT quantitatif",
+    "moelle osseuse",
+    "reins",
+    "glandes salivaires",
+    "radioprotection"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "MIRD Pamphlet No. 21: A Generalized Schema for Radiopharmaceutical Dosimetry—Standardization of Nomenclature (Journal of Nuclear Medicine, 2009)",
+      "url": "https://jnm.snmjournals.org/content/50/3/477",
+      "verified": true
+    },
+    {
+      "title": "MIRD Pamphlet No. 28, Part 1: MIRDcalc—A Software Tool for Medical Internal Radiation Dosimetry (PMC, 2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10315701/",
+      "verified": true
+    },
+    {
+      "title": "Dosimetry in Radiopharmaceutical Therapy (Journal of Nuclear Medicine 63(10):1467)",
+      "url": "https://jnm.snmjournals.org/content/63/10/1467",
+      "verified": true
+    },
+    {
+      "title": "EANM dosimetry committee recommendations for dosimetry of 177Lu-labelled somatostatin-receptor- and PSMA-targeting ligands (PMC9015994)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9015994/",
+      "verified": true
+    },
+    {
+      "title": "Measurement of the 177Lu half-life (Applied Radiation and Isotopes, ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0969804311002557",
+      "verified": true
+    },
+    {
+      "title": "Developments in 177Lu-based radiopharmaceutical therapy and dosimetry (Frontiers in Chemistry, 2023)",
+      "url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2023.1218670/full",
+      "verified": true
+    },
+    {
+      "title": "Production of 177Lu for Targeted Radionuclide Therapy: Available Options (PMC4463871)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4463871/",
+      "verified": true
+    },
+    {
+      "title": "Iodine-131 - an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/iodine-131",
+      "verified": true
+    },
+    {
+      "title": "131I Effective Half-Life and Dosimetry in Thyroid Cancer Patients (Journal of Nuclear Medicine 49(9):1445)",
+      "url": "https://jnm.snmjournals.org/content/49/9/1445",
+      "verified": true
+    },
+    {
+      "title": "Phase 3 Trial of 177Lu-Dotatate for Midgut Neuroendocrine Tumors / NETTER-1 (New England Journal of Medicine, 2017)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1607427",
+      "verified": true
+    },
+    {
+      "title": "FDA Approval Summary: Lutetium Lu 177 Vipivotide Tetraxetan for Patients with Metastatic Castration-Resistant Prostate Cancer / VISION (PMC10159870)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10159870/",
+      "verified": true
+    },
+    {
+      "title": "Joint EANM/SNMMI procedure guideline for 177Lu-labeled PSMA-targeted radioligand-therapy (177Lu-PSMA-RLT) (PMC10317889)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10317889/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline for Nuclear Medicine Evaluation and Therapy of Differentiated Thyroid Cancer (Joint DTC Guidelines, 2022)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2022/Joint%20DTC%20Guidelines-R7-Jan11%202022.pdf",
+      "verified": true
+    },
+    {
+      "title": "EANM procedure guidelines for 131I-meta-iodobenzylguanidine (131I-mIBG) therapy (Giammarile et al., 2008)",
+      "url": "https://www.iaea.org/resources/guidelines/eanm-procedure-guidelines-for-131i-meta-iodobenzylguanidine-131i-mibg-therapy-2008",
+      "verified": true
+    },
+    {
+      "title": "Challenges and future options for the production of lutetium-177 (PMC8241800)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8241800/",
+      "verified": true
+    },
+    {
+      "title": "Preparation of Patient Doses of [177Lu]Lu-DOTATATE and [177Lu]Lu-PSMA-617 with Carrier Added (CA) and No Carrier Added (NCA) 177Lu (PMC9679127)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9679127/",
+      "verified": true
+    },
+    {
+      "title": "Maintaining radiochemical purity of [177Lu]Lu-DOTA-PSMA-617 for PRRT by reducing radiolysis (J Radioanal Nucl Chem)",
+      "url": "https://link.springer.com/article/10.1007/s10967-019-06573-y",
+      "verified": true
+    },
+    {
+      "title": "Quality control of [177Lu]Lu-PSMA preparations using HPLC: effect of sample composition and ligand on recovery (PMC9515298)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9515298/",
+      "verified": true
+    },
+    {
+      "title": "Comprehensive SPECT/CT system characterization and calibration for 177Lu quantitative SPECT (QSPECT) with dead-time correction (EJNMMI Physics)",
+      "url": "https://ejnmmiphys.springeropen.com/articles/10.1186/s40658-020-0275-6",
+      "verified": true
+    },
+    {
+      "title": "Dosimetry in Lu-177-DOTATATE peptide receptor radionuclide therapy: a systematic review (Clinical and Translational Imaging)",
+      "url": "https://link.springer.com/article/10.1007/s40336-023-00589-x",
+      "verified": true
+    },
+    {
+      "title": "Activity quantification and dosimetry in radiopharmaceutical therapy with reference to 177Lutetium (Frontiers in Nuclear Medicine, 2024)",
+      "url": "https://www.frontiersin.org/journals/nuclear-medicine/articles/10.3389/fnume.2024.1355912/full",
+      "verified": true
+    },
+    {
+      "title": "EANM Dosimetry Committee series on standard operational procedures for pre-therapeutic dosimetry I: blood and bone marrow dosimetry in differentiated thyroid cancer therapy (PubMed 18491092)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18491092/",
+      "verified": true
+    },
+    {
+      "title": "Safety of Peptide Receptor Radionuclide Therapy with 177Lu-DOTATATE in Neuroendocrine Tumor Patients with Chronic Kidney Disease (Journal of Nuclear Medicine 63(10):1503)",
+      "url": "https://jnm.snmjournals.org/content/63/10/1503",
+      "verified": true
+    },
+    {
+      "title": "Amino Acid Solutions for 177Lu-Oxodotreotide Premedication: A Tolerance Study (PMC9657593)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9657593/",
+      "verified": true
+    },
+    {
+      "title": "Significance of Amino Acid Solution With Lutetium Lu 177 Dotatate (Oncology Nurse Advisor)",
+      "url": "https://www.oncologynurseadvisor.com/features/significance-of-amino-acid-solution-with-lutetium-lu-177-dotatate/",
+      "verified": true
+    },
+    {
+      "title": "EANM position paper on article 56 of the Council Directive 2013/59/Euratom (basic safety standards) for nuclear medicine therapy (PMC7835146)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835146/",
+      "verified": true
+    },
+    {
+      "title": "MIRD Pamphlet No. 23: Quantitative SPECT for Patient-Specific 3-Dimensional Dosimetry in Internal Radionuclide Therapy (Dewaraja et al., J Nucl Med 2012)",
+      "url": "https://jnm.snmjournals.org/content/53/8/1310",
+      "verified": true
+    },
+    {
+      "title": "MIRD Pamphlet No. 26: Joint EANM/MIRD Guidelines for Quantitative 177Lu SPECT Applied for Dosimetry of Radiopharmaceutical Therapy (Ljungberg et al., J Nucl Med 2016)",
+      "url": "https://jnm.snmjournals.org/content/57/1/151",
+      "verified": true
+    },
+    {
+      "title": "Renal and Multiorgan Safety of 177Lu-PSMA-617 in Patients with Metastatic Castration-Resistant Prostate Cancer in the VISION Dosimetry Substudy (J Nucl Med 2024)",
+      "url": "https://jnm.snmjournals.org/content/65/1/71",
+      "verified": true
+    },
+    {
+      "title": "Individualized Dosimetry of Kidney and Bone Marrow in Patients Undergoing 177Lu-DOTA-Octreotate Treatment (Sandström et al., J Nucl Med 2013)",
+      "url": "https://jnm.snmjournals.org/content/54/1/33",
+      "verified": true
+    },
+    {
+      "title": "177Lu-Dotatate plus long-acting octreotide versus high-dose long-acting octreotide (NETTER-1): final overall survival and long-term safety (Strosberg et al., Lancet Oncol 2021)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34793718/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline for Nuclear Medicine Evaluation and Therapy of Differentiated Thyroid Cancer: Abbreviated Version (J Nucl Med 2022)",
+      "url": "https://jnm.snmjournals.org/content/63/6/15N",
+      "verified": true
+    },
+    {
+      "title": "Alternative Means of Estimating 131I Maximum Permissible Activity to Treat Thyroid Cancer (J Nucl Med 2017)",
+      "url": "https://jnm.snmjournals.org/content/58/10/1588",
+      "verified": true
+    },
+    {
+      "title": "A practical method of I-131 thyroid cancer therapy dose optimization using estimated effective renal clearance (PMC5724631)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5724631/",
+      "verified": true
+    },
+    {
+      "title": "Lutetium 177 - an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/lutetium-177",
+      "verified": true
+    },
+    {
+      "title": "Theranostic radiopharmaceuticals: established agents in current use (PMC6475961)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6475961/",
+      "verified": true
+    },
+    {
+      "title": "177Lu-DOTATATE Theranostics: Predicting Renal Dosimetry From Pretherapy 68Ga-DOTATATE PET and Clinical Biomarkers (PMC10353839)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10353839/",
+      "verified": true
+    },
+    {
+      "title": "Iodine Symporter Targeting with 124I/131I Theranostics (J Nucl Med Suppl)",
+      "url": "https://jnm.snmjournals.org/content/jnumed/58/Supplement_2/34S.full.pdf",
+      "verified": true
+    },
+    {
+      "title": "Bone Marrow Absorbed Doses and Correlations with Hematologic Response During 177Lu-DOTATATE Treatments (PMC6785794)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6785794/",
+      "verified": true
+    },
+    {
+      "title": "Patient external dose rate after 177Lu-DOTATATE therapy: factors affecting its decrease and predictive value (PMC8176171)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8176171/",
+      "verified": true
+    },
+    {
+      "title": "Radiation precautions for inpatient and outpatient 177Lu-DOTATATE PRRT of neuroendocrine tumours (EJNMMI Physics, PMC6484059)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6484059/",
+      "verified": true
+    },
+    {
+      "title": "v.2023 Radiation Safety Patient Instructions LUTATHERA (Lu-177 dotatate), Dartmouth Geisel",
+      "url": "https://geiselmed.dartmouth.edu/radiology/wp-content/uploads/sites/47/2024/09/LUTATHERA-radiation-safety.pdf",
+      "verified": true
+    },
+    {
+      "title": "Comparison of 1.1 GBq and 2.2 GBq Activities in Patients with Low-Risk Differentiated Thyroid Cancer Requiring Postoperative 131I Administration (PMC10177573)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10177573/",
+      "verified": true
+    },
+    {
+      "title": "Dosimetry in Clinical Radiopharmaceutical Therapy of Cancer: Practicality Versus Perfection in Current Practice (PMC12079725)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12079725/",
+      "verified": true
+    }
+  ],
+  "lead": "La dosimétrie en théranostique permet de mesurer, pour chaque patient, l'énergie réellement déposée par un médicament radioactif dans les tumeurs et dans les organes sains les plus fragiles. Elle transforme un traitement administré de façon standardisée en une prise en charge réellement personnalisée, où l'on cherche à frapper fort la maladie tout en épargnant les reins, la moelle osseuse et les glandes salivaires. Pour y parvenir, le médecin nucléaire réalise après l'injection plusieurs séries d'images qui suivent la décroissance du produit au fil des jours et reconstituent ainsi sa trajectoire dans le corps. À partir de ces images, des modèles de calcul reconnus dans le monde entier estiment la dose absorbée et la comparent à des seuils de tolérance bien établis. Cette démarche est aujourd'hui au cœur des traitements modernes des tumeurs neuroendocrines, du cancer de la prostate et du cancer de la thyroïde.",
+  "identityCard": [
+    {
+      "icon": "flask",
+      "label": "Radionucléides pivots",
+      "value": "¹⁷⁷Lu (β⁻/γ) · ¹³¹I (β⁻/γ)"
+    },
+    {
+      "icon": "clock",
+      "label": "Période physique",
+      "value": "¹⁷⁷Lu 6,647 j · ¹³¹I 8,02 j"
+    },
+    {
+      "icon": "zap",
+      "label": "β⁻ ¹⁷⁷Lu",
+      "value": "max ≈ 498 keV · parcours moyen ≈ 0,67 mm"
+    },
+    {
+      "icon": "zap",
+      "label": "γ imageables",
+      "value": "¹⁷⁷Lu 113 / 208 keV · ¹³¹I 364 keV"
+    },
+    {
+      "icon": "atom",
+      "label": "Équation MIRD",
+      "value": "D = Σ (Ã × valeur S)"
+    },
+    {
+      "icon": "target",
+      "label": "Cibles thérapeutiques",
+      "value": "SSTR2 · PSMA · symporteur NIS"
+    },
+    {
+      "icon": "syringe",
+      "label": "Activité ¹⁷⁷Lu (cycle)",
+      "value": "7,4 GBq (200 mCi)"
+    },
+    {
+      "icon": "shield",
+      "label": "Limite moelle rouge",
+      "value": "2 Gy (toxicité hématologique)"
+    },
+    {
+      "icon": "droplets",
+      "label": "Limite rénale (BED)",
+      "value": "≈ 39–40 Gy (23–28 Gy en essais)"
+    },
+    {
+      "icon": "alert",
+      "label": "Glandes lacrymales / salivaires",
+      "value": "contrainte 25 Gy / 20 Gy"
+    },
+    {
+      "icon": "activity",
+      "label": "Acquisition dosimétrique",
+      "value": "≥ 3 SPECT/CT entre J1 (24 h) et J7"
+    },
+    {
+      "icon": "radiation",
+      "label": "Seuil de sortie ¹⁷⁷Lu",
+      "value": "EDR à 1 m < 40 µSv/h"
+    },
+    {
+      "icon": "microscope",
+      "label": "Logiciels de référence",
+      "value": "OLINDA/EXM · IDAC-Dose 2.1 · MIRDcalc"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-DOTATATE (PRRT)"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-PSMA-617"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹³¹I-mIBG (thérapie)"
+    },
+    {
+      "type": "traceur",
+      "label": "¹³¹I (iodure de sodium)"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-DOTATATE (TEP compagnon)"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-PSMA-11 (TEP compagnon)"
+    },
+    {
+      "type": "maladie",
+      "label": "Tumeurs neuroendocrines (TNE)"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer prostatique mCRPC"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer thyroïdien différencié"
+    },
+    {
+      "type": "examen",
+      "label": "SPECT/CT quantitatif (QSPECT)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie à la MIBG"
+    },
+    {
+      "type": "score",
+      "label": "Dose biologiquement efficace (BED)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quelle est l'équation fondamentale du formalisme MIRD pour la dose absorbée à un organe cible ?",
+      "options": [
+        "D = Ã / S",
+        "D = Σ (Ã × S)",
+        "D = S / Ã",
+        "D = Ã × λ × μ"
+      ],
+      "answer": 1,
+      "explanation": "La dose absorbée à la cible est la somme, sur tous les organes sources, du produit de l'activité cumulée intégrée dans le temps (TIAC, Ã) par la valeur S [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "À quoi correspond la « valeur S » dans le schéma MIRD ?",
+      "options": [
+        "L'activité injectée par unité de masse",
+        "La période effective in vivo",
+        "La dose absorbée moyenne dans la cible par unité d'activité cumulée dans la source",
+        "Le rapport tumeur/fond"
+      ],
+      "answer": 2,
+      "explanation": "La valeur S est le débit de dose absorbé moyen dans l'organe cible par unité d'activité présente dans l'organe source ; elle intègre géométrie et transport des rayonnements [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la période physique du ¹⁷⁷Lu ?",
+      "options": [
+        "8,02 jours",
+        "13,2 heures",
+        "6,647 jours",
+        "67,7 jours"
+      ],
+      "answer": 2,
+      "explanation": "La période physique mesurée du ¹⁷⁷Lu est 6,647 ± 0,004 jours [5] ; 8,02 jours est celle du ¹³¹I [8].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelles sont les deux raies γ du ¹⁷⁷Lu utilisées pour l'imagerie SPECT et la dosimétrie ?",
+      "options": [
+        "159 et 529 keV",
+        "113 et 208 keV",
+        "364 keV uniquement",
+        "511 keV (annihilation)"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁷⁷Lu émet des γ imageables à 113 keV (≈6,4 %) et 208 keV (≈11 %), permettant le SPECT/CT post-thérapeutique [6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est le parcours tissulaire moyen des β⁻ du ¹⁷⁷Lu ?",
+      "options": [
+        "≈ 0,67 mm",
+        "≈ 5 mm",
+        "≈ 12 mm",
+        "≈ 0,01 mm"
+      ],
+      "answer": 0,
+      "explanation": "Le parcours moyen des β⁻ du ¹⁷⁷Lu dans les tissus mous est d'environ 0,67 mm (max ≈ 2 mm), d'où une destruction cellulaire très localisée [6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est le seuil de dose absorbée à la moelle osseuse rouge marquant la toxicité hématologique sévère ?",
+      "options": [
+        "0,2 Gy",
+        "2 Gy",
+        "23 Gy",
+        "40 Gy"
+      ],
+      "answer": 1,
+      "explanation": "Le seuil dose-limitante classique de toxicité hématologique sévère est de 2 Gy à la moelle rouge ; une thrombopénie de grade 4 a été rapportée au-delà de 1,5 Gy [4].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle limite de dose biologiquement efficace (BED) est retenue pour le rein chez un patient sans facteur de risque ?",
+      "options": [
+        "≈ 10 Gy",
+        "≈ 20 Gy",
+        "≈ 40 Gy",
+        "≈ 80 Gy"
+      ],
+      "answer": 2,
+      "explanation": "La limite rénale extrapolée de la radiothérapie externe est d'environ 40 Gy en BED sans facteur de risque, et abaissée à ≈ 28 Gy en présence de facteurs de risque (HTA, diabète) [4].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Dans la sous-étude dosimétrique de VISION, quel organe reçoit la dose par unité d'activité la plus élevée avec le ¹⁷⁷Lu-PSMA-617 ?",
+      "options": [
+        "Les reins",
+        "La moelle rouge",
+        "Les glandes lacrymales",
+        "Le foie"
+      ],
+      "answer": 2,
+      "explanation": "Les glandes lacrymales reçoivent ≈ 2,1 Gy/GBq, contre 0,63 Gy/GBq pour les glandes salivaires et 0,43 Gy/GBq pour les reins [29].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le schéma thérapeutique de ¹⁷⁷Lu-DOTATATE validé par l'essai NETTER-1 ?",
+      "options": [
+        "3,7 GBq × 6 cycles toutes les 6 semaines",
+        "7,4 GBq × 4 cycles toutes les 8 semaines",
+        "1,1 GBq × 1 cycle",
+        "11,2 GBq dose unique"
+      ],
+      "answer": 1,
+      "explanation": "NETTER-1 a utilisé 7,4 GBq × 4 cycles toutes les 8 ± 1 semaines avec octréotide LAR ; SSP : HR 0,18 (IC95 % 0,11–0,29 ; p<0,0001) [10].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel mécanisme de néphroprotection est utilisé pendant la PRRT par ¹⁷⁷Lu-DOTATATE ?",
+      "options": [
+        "Hyperhydratation isotonique seule",
+        "Co-perfusion d'acides aminés chargés (L-lysine/L-arginine)",
+        "Diurétiques de l'anse",
+        "Blocage thyroïdien par KI"
+      ],
+      "answer": 1,
+      "explanation": "La co-perfusion d'acides aminés chargés positivement inhibe par compétition la réabsorption tubulaire (mégaline), réduisant la dose rénale jusqu'à ≈ 65 % [24,25].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Selon l'EANM, combien d'acquisitions SPECT/CT rénales sont recommandées au premier cycle de PRRT, et sur quelle fenêtre temporelle ?",
+      "options": [
+        "1 acquisition à 4 h",
+        "3 acquisitions entre J1 (24 h) et J7",
+        "5 acquisitions sur 2 h",
+        "1 acquisition à J30"
+      ],
+      "answer": 1,
+      "explanation": "L'EANM recommande 3 acquisitions entre J1 (24 h) et J7 au premier cycle, avec au moins 2 jours entre les deux derniers points [4].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la dose tumorale médiane rapportée pour le ¹⁷⁷Lu-DOTATATE (revue systématique) ?",
+      "options": [
+        "0,04 Gy/GBq",
+        "0,64 Gy/GBq",
+        "4,6 Gy/GBq",
+        "92 Gy/GBq"
+      ],
+      "answer": 2,
+      "explanation": "La dose tumorale médiane est de 4,6 Gy/GBq (3,09–9,47), nettement supérieure à la dose rénale (0,64 Gy/GBq) et médullaire (0,04 Gy/GBq) [20].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Pour le traitement du cancer thyroïdien différencié par ¹³¹I, quel critère définit l'activité maximale tolérée selon la méthode du sang/moelle ?",
+      "options": [
+        "≤ 0,5 Gy au sang",
+        "≤ 2 Gy au sang et rétention corps entier < 4,44 GBq à 48 h",
+        "≤ 10 Gy au sang",
+        "Aucune limite de rétention"
+      ],
+      "answer": 1,
+      "explanation": "L'activité maximale tolérée délivre ≤ 2 Gy au sang (substitut moelle), avec rétention corps entier < 4,44 GBq (120 mCi) à 48 h, ou < 3 GBq si métastases pulmonaires [13,33].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le pré-requis de fonction rénale (DFG) avant un traitement par ¹⁷⁷Lu-PSMA selon l'EANM/SNMMI ?",
+      "options": [
+        "DFG ≥ 90 mL/min",
+        "DFG ≥ 60 mL/min",
+        "DFG ≥ 30 mL/min",
+        "Aucun seuil"
+      ],
+      "answer": 2,
+      "explanation": "Un DFG ≥ 30 mL/min est requis ; l'activité est réduite de 20 % si la perte d'eGFR dépasse 40 %, et le traitement est arrêté si le DFG passe sous 30 mL/min [12].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Que représente la dose biologiquement efficace (BED) par rapport à la dose absorbée simple ?",
+      "options": [
+        "La dose au corps entier en mSv",
+        "Une dose intégrant le débit de dose et la réparation cellulaire (modèle linéaire-quadratique)",
+        "La dose mesurée à l'activimètre",
+        "La seule dose tumorale"
+      ],
+      "answer": 1,
+      "explanation": "La BED intègre le débit de dose et la réparation cellulaire selon le modèle linéaire-quadratique, ce qui étend le schéma MIRD aux traitements fractionnés et au rein/moelle [4].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel γ du ¹³¹I impose un collimateur haute énergie et conditionne la radioprotection ?",
+      "options": [
+        "159 keV",
+        "208 keV",
+        "364 keV",
+        "511 keV"
+      ],
+      "answer": 2,
+      "explanation": "Le ¹³¹I émet un γ principal à 364 keV (≈81 %), de haute énergie, imposant un collimateur haute énergie et une hospitalisation protégée [8].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle est l'élimination urinaire approximative du ¹⁷⁷Lu-DOTATATE dans les 6 premières heures ?",
+      "options": [
+        "≈ 5 %",
+        "≈ 50 %",
+        "≈ 90 %",
+        "Négligeable (élimination biliaire)"
+      ],
+      "answer": 1,
+      "explanation": "Environ 50 % de l'activité est éliminée par voie urinaire dans les 6 premières heures, justifiant les consignes de radioprotection et la miction avant sortie [40,42].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle disposition réglementaire impose une planification dosimétrique individualisée en radiothérapie interne vectorisée ?",
+      "options": [
+        "RGPD",
+        "Article 56 de la directive 2013/59/Euratom",
+        "Convention de Genève",
+        "Norme ISO 9001"
+      ],
+      "answer": 1,
+      "explanation": "L'article 56 de la directive 2013/59/Euratom impose, pour toute exposition radiothérapeutique, une planification individualisée du volume cible et la vérification de la dose délivrée, avec implication d'un physicien médical [26].",
+      "difficulty": "difficile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "La dosimétrie interne estime la dose absorbée (Gy = J/kg) aux tumeurs et organes à risque pour personnaliser le traitement : maximiser l'efficacité sous contrainte de toxicité [1,4].",
+      "Formalisme MIRD : D = Σ (Ã × S), où Ã est l'activité cumulée intégrée dans le temps (TIAC) et S la valeur S propre au couple source-cible et au radionucléide [1].",
+      "¹⁷⁷Lu : période 6,647 j, β⁻ max ≈ 498 keV (parcours ≈ 0,67 mm), γ imageables 113/208 keV → SPECT/CT et dosimétrie ; décroît en ¹⁷⁷Hf stable [5,6].",
+      "¹³¹I : période 8,02 j, β⁻ moyen ≈ 192 keV, γ 364 keV (collimateur haute énergie) ; période effective in vivo variable (≈10,5 h après rhTSH, ≈15,7 h après sevrage) [8,9].",
+      "Paires théranostiques : ⁶⁸Ga-DOTATATE→¹⁷⁷Lu-DOTATATE (SSTR2), ⁶⁸Ga/¹⁸F-PSMA→¹⁷⁷Lu-PSMA-617 (PSMA), ¹²³I/¹²⁴I→¹³¹I (NIS) [36,38].",
+      "Seuils OAR de référence : moelle rouge 2 Gy ; rein ≈ 40 Gy en BED (23–28 Gy en essais) ; glandes salivaires 20 Gy ; glandes lacrymales 25 Gy [4].",
+      "Doses par unité d'activité (¹⁷⁷Lu-PSMA, VISION) : lacrymales 2,1 Gy/GBq, salivaires 0,63 Gy/GBq, reins 0,43 Gy/GBq, moelle 0,035 Gy/GBq [29].",
+      "La BED (modèle linéaire-quadratique) intègre débit de dose et réparation cellulaire, étendant le schéma MIRD aux traitements fractionnés [4]."
+    ],
+    "protocol": [
+      "¹⁷⁷Lu-DOTATATE : 7,4 GBq (200 mCi) × 4 cycles toutes les 8 ± 1 semaines, perfusion IV 30–40 min, avec co-perfusion d'acides aminés (L-lysine/L-arginine) pour la néphroprotection [10,24].",
+      "¹⁷⁷Lu-PSMA-617 : 7,4 GBq (200 mCi) × 6 cycles toutes les 6 semaines (VISION) ; pré-requis DFG ≥ 30 mL/min, réduction d'activité 20 % si perte eGFR > 40 % [11,12].",
+      "Acquisition dosimétrique ¹⁷⁷Lu : ≥ 3 SPECT/CT entre J1 (24 h) et J7 au premier cycle, reconstruction itérative (OSEM) avec correction d'atténuation, diffusion et réponse du collimateur [4,28].",
+      "Dosimétrie sanguine/moelle ¹³¹I : prélèvements à T0, 10, 30, 60, 90, 120, 360 min, 24 h et un point tardif ; courbe activité-temps suivie jusqu'à 3–5 demi-vies effectives [22].",
+      "¹³¹I cancer thyroïdien : activité maximale tolérée délivrant ≤ 2 Gy au sang, rétention corps entier < 4,44 GBq à 48 h (< 3 GBq si métastases pulmonaires) [13,33]."
+    ],
+    "scores": [
+      "Dose biologiquement efficace (BED) : BED = D·[1 + D/(α/β)·λ/(λ+μ)] ; rein ≈ 40 Gy sans facteur de risque, ≈ 28 Gy avec facteurs de risque [4].",
+      "Limites cumulées EANM (historiques) : 28 Gy reins, 2 Gy moelle, 35 Gy glandes salivaires [4].",
+      "Doses cumulées ¹⁷⁷Lu-PSMA sur 6 cycles (VISION) : lacrymales ≈ 92 Gy, salivaires ≈ 28 Gy, reins ≈ 19 Gy, moelle ≈ 1,5 Gy [29]."
+    ],
+    "pitfalls": [
+      "La précision de la dose dépend directement de la justesse de l'estimation d'activité à chaque temps : calibration SPECT, correction d'atténuation/diffusion et correction de temps mort sont critiques [28].",
+      "Le ⁶⁸Ga (T½ ≈ 68 min) est trop court pour une dosimétrie multi-temps fiable, contrairement à la paire ¹²⁴I/¹³¹I [38].",
+      "Limite rénale exprimée en dose absorbée (23–27 Gy) vs en BED (≈ 40 Gy) : ne pas confondre les deux échelles selon le référentiel utilisé [4].",
+      "Distinguer dose absorbée (Gy, par organe) et dose efficace (mSv, corps entier pondéré) : seule la dose absorbée pilote la toxicité d'organe.",
+      "Contre-indications hématologiques ¹⁷⁷Lu-PSMA à vérifier : leucocytes < 2,5/nL, PNN < 1,5/nL, plaquettes < 75/nL [12]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert cette approche ?",
+        "text": "Lorsqu'on traite certains cancers avec un **médicament radioactif** (par exemple pour des tumeurs neuroendocrines ou un cancer de la prostate avancé), l'équipe cherche à délivrer **juste ce qu'il faut de rayonnement** : assez pour agir efficacement sur la tumeur, mais sans abîmer les organes sensibles voisins. La **dosimétrie** est précisément l'outil qui permet de mesurer, patient par patient, **la quantité de rayonnement réellement reçue** par la tumeur d'un côté et par les organes à protéger de l'autre (notamment les **reins**, la **moelle osseuse** qui fabrique le sang, et les **glandes salivaires**). C'est un peu comme un dosage sur mesure : au lieu d'appliquer la même quantité à tout le monde, on adapte le traitement à votre corps et à votre situation. L'objectif est double : **donner les meilleures chances au traitement** tout en **préservant votre santé** sur le long terme."
+      },
+      {
+        "title": "Comment cela se passe pour vous",
+        "text": "La dosimétrie ne change rien à la façon dont vous recevez votre traitement : le **médicament radioactif est injecté dans une veine**, le plus souvent en plusieurs séances espacées de quelques semaines. Ce qui s'y ajoute, ce sont quelques **prises d'images** réalisées dans les heures et les jours qui suivent l'injection, à l'aide d'une caméra spéciale : elles permettent de **suivre où va le produit** dans votre corps et combien de temps il y reste. Selon les cas, on peut aussi vous faire **quelques prises de sang** à des moments précis. Vous restez **allongé et détendu** pendant les images, qui sont **indolores** : il n'y a ni piqûre supplémentaire douloureuse ni produit de contraste à avaler. Pour certains traitements, une **perfusion protectrice** (par exemple une solution destinée à ménager les reins) est mise en place autour de l'injection. L'équipe vous expliquera le calendrier précis des rendez-vous, car ces images font partie intégrante du suivi."
+      },
+      {
+        "title": "Est-ce sûr ?",
+        "text": "Toute la démarche vise justement votre **sécurité**. En mesurant ce que reçoivent réellement vos organes sensibles, l'équipe peut **ajuster les doses au fil des séances**, voire les espacer ou les adapter, pour rester en deçà des limites qui protègent vos reins, votre moelle osseuse et vos glandes salivaires. Avant de commencer, des examens vérifient que vous êtes en mesure de recevoir le traitement (fonction des reins, analyses de sang). Pendant les jours qui suivent chaque injection, le produit s'élimine **naturellement, surtout par les urines** : l'équipe vous remettra des **consignes simples** à respecter à la maison pour limiter l'exposition de votre entourage (hygiène aux toilettes, distance avec les jeunes enfants et les femmes enceintes pendant un court délai). Ces précautions sont temporaires et bien encadrées. N'hésitez jamais à signaler vos antécédents, vos traitements en cours et toute grossesse possible ou allaitement : ce sont des informations essentielles pour adapter votre prise en charge.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le bon réflexe",
+            "text": "Respectez bien le calendrier des images et des prises de sang : elles ne sont pas une simple formalité, elles permettent de personnaliser votre traitement et de mieux vous protéger. Gardez précieusement les consignes écrites remises après chaque injection et n'hésitez pas à appeler l'équipe en cas de doute."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : personnaliser une thérapie par radioligands",
+        "text": "La **dosimétrie** s'inscrit dans le cadre de la **théranostique**, où un même couple moléculaire sert d'abord à imager une cible, puis à la traiter. Les situations concernées sont aujourd'hui bien identifiées : **tumeurs neuroendocrines** bien différenciées et progressives exprimant les récepteurs de la somatostatine, traitées par radiopeptides (PRRT au 177Lu) ; **cancer de la prostate résistant à la castration et métastatique**, exprimant le PSMA, après échec des traitements hormonaux et de la chimiothérapie ; et **cancer thyroïdien différencié** ou certaines tumeurs captant la mIBG, traités à l'iode-131. Pensez à la médecine nucléaire lorsqu'un de vos patients atteint l'une de ces situations avancées : l'éligibilité repose sur une **imagerie d'expression de la cible** (TEP au 68Ga ou scintigraphie spécifique), qui confirme que la tumeur fixera bien le traitement. La dosimétrie, elle, intervient pour **adapter l'intensité du traitement à chaque patient**, plutôt que d'appliquer une dose fixe identique pour tous, dans le respect d'une planification individualisée désormais inscrite dans la réglementation européenne."
+      },
+      {
+        "title": "La démarche et l'apport de la médecine nucléaire",
+        "text": "Le principe est d'estimer la **dose absorbée** (exprimée en gray) réellement délivrée à la tumeur et aux **organes à risque** : les **reins** et la **moelle osseuse** pour les traitements par radiopeptides et anti-PSMA, ainsi que les **glandes salivaires et lacrymales** pour les anti-PSMA, et la dose au sang pour l'iode-131. Concrètement, après l'injection thérapeutique, le nucléariste réalise plusieurs acquisitions d'imagerie échelonnées (et parfois des prélèvements sanguins) pour reconstruire la cinétique du produit et calculer ces doses. L'apport est double : **maximiser l'efficacité antitumorale** tout en **maintenant les organes sensibles sous leurs seuils de tolérance**, ce qui permet d'ajuster le nombre de cycles ou l'activité administrée. Pour le patient que vous adressez, votre rôle est d'optimiser la sélection et la sécurité en amont : transmettez la **fonction rénale**, la **numération formule sanguine** récente, l'état général, les comorbidités (diabète, HTA, néphropathie) et les traitements en cours. Ces éléments conditionnent l'éligibilité, le choix du protocole et les mesures de néphroprotection éventuelles.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez en médecine nucléaire tout patient candidat à une thérapie par radioligands : **tumeur neuroendocrine** progressive exprimant la somatostatine, **cancer de la prostate métastatique résistant à la castration** exprimant le PSMA après hormonothérapie et chimiothérapie, ou **cancer thyroïdien différencié** relevant de l'iode-131. L'avis nucléariste permet de vérifier l'expression de la cible par imagerie, d'évaluer l'éligibilité et de mettre en place une **dosimétrie personnalisée** qui adapte le traitement à chaque patient plutôt qu'une dose fixe. Pour faciliter la prise en charge, joignez la fonction rénale, la numération sanguine, l'état général et les comorbidités : ce sont les éléments qui déterminent la sécurité et l'intensité du traitement."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - A1 · Carte d'identité de la dosimétrie théranostique",
+        "text": "**Comment lire cette carte.** La **dosimétrie interne** n'est pas un examen mais une **chaîne de mesure et de calcul** greffée sur un traitement par radionucléides (radiopharmaceutical therapy, RPT). Elle quantifie la **dose absorbée** — l'énergie déposée par unité de masse, exprimée en **gray (Gy = J/kg)** — dans les tumeurs et les **organes à risque (OAR)**, afin d'individualiser l'activité administrée. Le cadre conceptuel mondial est le **formalisme MIRD** (Medical Internal Radiation Dose, comité de la SNMMI), dont l'équation maîtresse relie l'**activité cumulée** dans les tissus sources aux **valeurs S** des couples source-cible [1]. Les deux radionucléides pivots de l'ère théranostique sont le **lutétium-177 (¹⁷⁷Lu)** — émetteur β⁻/γ de période **6,647 j** [5] — et l'**iode-131 (¹³¹I)** — émetteur β⁻/γ de période **8,02 j** [8]. Les valeurs détaillées de cette carte sont développées et sourcées aux sections A3 (physique) et A5 (formalisme).\n\n| Champ | ¹⁷⁷Lu | ¹³¹I |\n|---|---|---|\n| Émission thérapeutique | β⁻ (E_max ≈ **498 keV**) [6] | β⁻ (E_moy ≈ **192 keV**, E_max **607 keV**) [8] |\n| γ imageable | **113 keV** (6,4 %) et **208 keV** (11 %) [6] | **364 keV** (~81 %) [8] |\n| Période physique | **6,647 j** [5] | **8,02 j** [8] |\n| Parcours β⁻ moyen tissu | ~**0,67 mm** [6] | ~mm (E_moy supérieure) [8] |\n| Collimateur SPECT | moyenne énergie | **haute énergie** (364 keV) [8] |\n| OAR dominant | reins, moelle, glandes salivaires/lacrymales [4] | moelle (sang), thyroïde, poumons [13] |\n| Vecteurs phares | ¹⁷⁷Lu-DOTATATE, ¹⁷⁷Lu-PSMA-617 [10,11] | ¹³¹I-NaI, ¹³¹I-mIBG [13,14] |\n| Cadre réglementaire | planification individuelle obligatoire (Euratom art. 56) [26] | idem [26] |\n\nLa logique d'ensemble est unique : on **image** la biodistribution avec le radionucléide thérapeutique lui-même (¹⁷⁷Lu via ses γ, ¹³¹I via son γ de 364 keV) ou avec un compagnon diagnostique apparié (⁶⁸Ga, ¹²⁴I), on construit une **courbe activité-temps** par organe, on l'intègre, puis on convertit en dose absorbée. Cette dose se compare ensuite à des **seuils de tolérance** (cf. A5) pour décider de la poursuite ou de l'adaptation du traitement.",
+        "stats": [
+          {
+            "value": "Gy = J/kg",
+            "label": "Unité de dose absorbée"
+          },
+          {
+            "value": "6,647 j",
+            "label": "Période physique du ¹⁷⁷Lu [5]"
+          },
+          {
+            "value": "8,02 j",
+            "label": "Période physique du ¹³¹I [8]"
+          },
+          {
+            "value": "D = Σ Ã·S",
+            "label": "Équation maîtresse MIRD [1]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La dosimétrie est ce qui transforme une **thérapie à activité fixe** (« 7,4 GBq × n cycles ») en **médecine de précision radiométabolique**. La directive **2013/59/Euratom (article 56)** impose désormais, pour toute exposition radiothérapeutique, que la dose aux volumes cibles soit **planifiée individuellement** et que sa délivrance soit **vérifiée**, avec implication d'un physicien médical [26]. La dosimétrie n'est donc plus optionnelle mais une **obligation réglementaire** en Europe."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : un radiopharmaceutique diagnostique image la cible, le radiopharmaceutique thérapeutique apparié délivre la dose, la dosimétrie quantifie la dose absorbée et rétroagit sur l'activité du cycle suivant.",
+        "figureCaption": "Fig. 1 — La boucle théranostique : imager → traiter → mesurer la dose → réévaluer ; la dosimétrie ferme la boucle."
+      },
+      {
+        "title": "A2 - A2 · Définition : qu'est-ce que la dosimétrie en médecine nucléaire ?",
+        "text": "La **dosimétrie interne** est la discipline qui **estime la dose absorbée** délivrée à un tissu cible par un radiopharmaceutique distribué dans l'organisme. Elle se distingue de la dosimétrie en radiothérapie externe par deux traits fondamentaux : la **source est interne et mobile** (elle suit la biodistribution et l'élimination du traceur, non un faisceau externe contrôlé), et le **débit de dose décroît dans le temps** selon une double cinétique — physique (décroissance radioactive) et biologique (clairance) [1].\n\nL'objet quantifié est la **dose absorbée** D, énergie déposée par unité de masse, en **gray (Gy = J/kg)**. Il faut la distinguer rigoureusement de la **dose efficace** (en sievert, Sv), grandeur de radioprotection pondérée par la radiosensibilité des organes, qui n'a **aucune pertinence pour estimer un effet thérapeutique ou une toxicité** : en RPT, seule la dose absorbée organe par organe (Gy) gouverne l'efficacité tumorale et le risque toxique [3].\n\nLe but clinique est double et antagoniste : **maximiser la dose tumorale** (efficacité) tout en **respectant les seuils de tolérance des OAR** (reins, moelle osseuse rouge, glandes salivaires et lacrymales) [4]. C'est exactement la logique de la radiothérapie — délivrer une dose tumoricide sous contrainte de toxicité — transposée à une source non scellée. La dosimétrie est ainsi le **substrat quantitatif de la théranostique** : sans elle, l'administration d'activité fixe reste empirique.\n\nTrois approches de calcul coexistent, par précision croissante : (1) **dosimétrie au niveau organe** fondée sur des valeurs S tabulées (logiciels OLINDA/EXM approuvé par la FDA, IDAC-Dose 2.1, MIRDcalc) ; (2) **convolution par noyaux de dose ponctuelle** (dose-point kernel) ; (3) **Monte-Carlo voxélisé**, la plus précise, qui modélise le transport des rayonnements dans l'anatomie réelle du patient [3].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — dose absorbée (Gy) ≠ dose efficace (Sv)",
+            "text": "Confondre **dose absorbée** et **dose efficace** est l'erreur conceptuelle majeure. La dose efficace (Sv) est une grandeur de **radioprotection** destinée à estimer un risque stochastique sur une population ; elle est **inadaptée** pour prédire une réponse tumorale ou une toxicité d'organe. En RPT, on raisonne **exclusivement en Gy par organe** (reins, moelle, tumeur). Un compte rendu dosimétrique thérapeutique qui ne donnerait que des sieverts serait cliniquement inexploitable."
+          },
+          {
+            "type": "info",
+            "title": "Repère",
+            "text": "La **dose biologiquement efficace (BED)**, issue du modèle linéaire-quadratique de la radiothérapie, prolonge la dose absorbée en intégrant le **débit de dose** et la **réparation cellulaire** : BED = D·[1 + D/(α/β)·λ/(λ+μ)], où λ = ln2/T_eff et μ la constante de réparation [4]. Ce concept, développé en A5, est indispensable pour comparer des schémas fractionnés ou à débit variable, notamment pour le rein et la moelle."
+          }
+        ]
+      },
+      {
+        "title": "A3 - A3 · Rappels de physique et de radiobiologie",
+        "text": "La dosimétrie repose sur les **propriétés d'émission** des deux radionucléides pivots, qui déterminent à la fois la dose déposée (composante β⁻, à courte portée et fort transfert d'énergie) et l'imageabilité (composante γ, qui permet de mesurer la biodistribution). La dualité **β⁻ thérapeutique / γ imageable** est précisément ce qui rend ces isotopes **théranostiques**.\n\n**Lutétium-177 (¹⁷⁷Lu)** — émetteur β⁻/γ décroissant vers le ¹⁷⁷Hf stable [7] :\n\n| Paramètre physique | Valeur | Source |\n|---|---|---|\n| Période physique | **6,647 ± 0,004 j** | [5] |\n| β⁻ E_max principal | **498 keV** (79,3 % vers le fondamental) | [6] |\n| β⁻ — autres composantes | 384 keV (9,7 %), 176 keV (12 %) | [6] |\n| Parcours β⁻ moyen (tissu mou) | ~**0,67 mm** (max ~2 mm) | [6] |\n| γ imageables | **113 keV (6,4 %)**, **208 keV (11 %)** | [6] |\n| Δ photons / Δ électrons | **35,1 / 147,2 keV·Bq⁻¹·s⁻¹** | [4] |\n\nLe parcours β⁻ submillimétrique (~0,67 mm) explique le **dépôt de dose très localisé** du ¹⁷⁷Lu, qui épargne le tissu sain adjacent — atout majeur pour les micrométastases et les tumeurs de petit volume. La composante électronique délivre l'essentiel de la dose (Δ électrons **4,2–4,4× supérieure** à Δ photons [4]), tandis que les γ de 113 et 208 keV, minoritaires, suffisent à l'imagerie SPECT/CT quantitative.\n\n**Iode-131 (¹³¹I)** — émetteur β⁻/γ :\n\n| Paramètre physique | Valeur | Source |\n|---|---|---|\n| Période physique | **8,02 j** (≈ 8,05 j) | [8] |\n| β⁻ — énergie moyenne | **192 keV** (E_max **607 keV**) | [8] |\n| γ principal | **364 keV** (~81 %) | [8] |\n| Demi-vie effective (post-rhTSH) | ~**10,5 h** | [9] |\n| Demi-vie effective (post-sevrage) | ~**15,7 h** | [9] |\n\nLe γ de **364 keV** du ¹³¹I impose un **collimateur haute énergie** en imagerie et conditionne la radioprotection (hospitalisation en chambre protégée). Surtout, la **demi-vie effective in vivo** du ¹³¹I est très variable selon les conditions de stimulation thyréotrope : ~10,5 h après rhTSH versus ~15,7 h après sevrage hormonal dans le cancer thyroïdien différencié [9] — un écart qui retentit directement sur la dose au sang et donc sur le calcul de l'activité maximale tolérée.\n\n**Notions radiobiologiques clés.** La dose absorbée seule ne suffit pas à prédire l'effet biologique : interviennent le **débit de dose** (faible et décroissant en RPT, donc plus de réparation sublétale que pour un faisceau externe), le rapport **α/β** propre à chaque tissu, et la **réparation** modélisée dans la BED (cf. A2 et A5). C'est pourquoi le seuil rénal s'exprime de plus en plus en **BED (~40 Gy)** plutôt qu'en dose absorbée brute [4].",
+        "stats": [
+          {
+            "value": "0,67 mm",
+            "label": "Parcours β⁻ moyen du ¹⁷⁷Lu [6]"
+          },
+          {
+            "value": "208 keV",
+            "label": "γ ¹⁷⁷Lu pour SPECT (11 %) [6]"
+          },
+          {
+            "value": "364 keV",
+            "label": "γ ¹³¹I (~81 %) [8]"
+          },
+          {
+            "value": "10,5 vs 15,7 h",
+            "label": "T_eff ¹³¹I : rhTSH vs sevrage [9]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Le ¹⁷⁷Lu est dit **« auto-théranostique »** : ses γ de 113 et 208 keV permettent une imagerie SPECT/CT **post-thérapeutique** sur le patient même, sans isotope compagnon séparé. On image donc exactement la molécule qu'on a traitée, ce qui supprime toute incertitude liée à un traceur diagnostique différent. Le ¹³¹I partage cette propriété via son γ de 364 keV. C'est l'idéal théranostique : « voir ce qu'on traite, traiter ce qu'on voit »."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la période effective n'est pas la période physique",
+            "text": "La dose intégrée dépend de la **demi-vie EFFECTIVE** (T_eff), qui combine décroissance physique (T_phys) et clairance biologique : 1/T_eff = 1/T_phys + 1/T_biol. T_eff est donc **toujours plus courte** que la période physique et **varie d'un patient à l'autre et d'un organe à l'autre**. Pour le ¹³¹I thyroïdien, elle passe du simple au double selon la préparation (rhTSH vs sevrage) [9] : utiliser la période physique seule surestimerait grossièrement la dose absorbée."
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schéma de désintégration β⁻ du lutétium-177 vers le hafnium-177 stable, avec émission des photons gamma de 113 et 208 keV utilisés pour l'imagerie SPECT.",
+        "figureCaption": "Fig. 2 — Schéma de désintégration : la branche β⁻ délivre la dose, les γ secondaires (113/208 keV) permettent l'imagerie quantitative."
+      },
+      {
+        "title": "A4 - A4 · Le principe : du nombre de désintégrations à la dose absorbée",
+        "text": "**Pourquoi ça marche.** Toute la dosimétrie interne repose sur une idée simple : la dose absorbée par un organe est proportionnelle au **nombre total de désintégrations** qui s'y produisent (et dans les organes voisins), multiplié par l'**énergie déposée par désintégration**. Estimer une dose revient donc à répondre à deux questions successives : *combien de désintégrations* ont lieu dans chaque organe source, et *quelle fraction de leur énergie* atteint l'organe cible.\n\n**Étape 1 — l'activité cumulée (ou TIAC).** On mesure, par imagerie quantitative séquentielle (SPECT/CT pour le ¹⁷⁷Lu) ou par prélèvements (sang pour le ¹³¹I), l'**activité présente dans chaque organe à plusieurs instants**. Ces points définissent une **courbe activité-temps**, ajustée par des fonctions exponentielles. L'**aire sous la courbe** est l'**activité cumulée Ã** (en MBq·h ou Bq·s), aussi appelée **coefficient d'activité intégrée dans le temps (TIAC)** lorsqu'elle est normalisée à l'activité injectée [1,2]. Le TIAC représente, physiquement, le **nombre total de désintégrations** survenues dans l'organe source. Sa précision dépend directement de la qualité de l'estimation d'activité à chaque temps : la dosimétrie n'est jamais plus juste que sa quantification d'activité [21].\n\n**Étape 2 — la valeur S.** À partir de Ã, on obtient la dose grâce à la **valeur S** (« S-value ») : le débit de dose moyen absorbé par l'organe cible **par unité d'activité présente dans l'organe source**. La valeur S intègre l'**énergie d'émission** du radionucléide, la **géométrie anatomique** (distance et masse des organes) et le **transport des rayonnements**. Elle est tabulée pour de nombreux couples source-cible et de nombreux radionucléides, dans des **fantômes de référence** allant du nouveau-né à l'adulte [1].\n\n**L'équation de synthèse** (développée en A5) est donc :\n\n> **D(cible) = Σ_sources [ Ã(source) × S(cible ← source) ]**\n\nsoit : la dose à un organe cible est la **somme**, sur tous les organes sources, du produit de l'activité cumulée par la valeur S correspondante [1,2].\n\n**Comment se déterminent hyper- et hypo-dose :**\n\n- **Dose élevée** = forte rétention du traceur (Ã élevé : avidité tumorale, clairance lente) et/ou organe petit/proche d'une source intense (S élevé).\n- **Dose faible** = clairance rapide, faible captation, ou organe distant/volumineux (S faible).\n\nC'est cette logique qui explique, par exemple, que les **reins** soient l'OAR dominant de la PRRT : la réabsorption tubulaire proximale du radiopeptide y prolonge la rétention (demi-vie effective rénale ~**50–60 h**), gonflant le Ã rénal [4].\n\n**Acquisition pratique.** Pour le ¹⁷⁷Lu, l'EANM recommande **≥ 3 acquisitions SPECT/CT** réparties entre J1 (24 h) et J7 au premier cycle, avec ≥ 2 jours entre les deux derniers points, sur une période d'observation atteignant 3 à 5 fois la demi-vie effective [4,21]. Pour la dosimétrie sanguine du ¹³¹I, les prélèvements s'échelonnent de T0 à 24 h plus un point tardif [22].",
+        "steps": [
+          {
+            "title": "1 · Mesurer l'activité dans le temps",
+            "text": "Imagerie SPECT/CT quantitative séquentielle (¹⁷⁷Lu) ou prélèvements sanguins (¹³¹I) à plusieurs temps : ≥ 3 points entre J1 et J7 pour le ¹⁷⁷Lu rénal [4]."
+          },
+          {
+            "title": "2 · Construire la courbe activité-temps",
+            "text": "Ajustement par fonctions exponentielles (2–3 points par terme exponentiel), observation jusqu'à 3–5× la demi-vie effective [21]."
+          },
+          {
+            "title": "3 · Intégrer → activité cumulée Ã (TIAC)",
+            "text": "L'aire sous la courbe donne le nombre total de désintégrations dans l'organe source, en MBq·h ou Bq·s [1]."
+          },
+          {
+            "title": "4 · Appliquer la valeur S",
+            "text": "Multiplier Ã par la valeur S du couple source-cible (énergie + géométrie + transport), tabulée par fantôme de référence [1]."
+          },
+          {
+            "title": "5 · Sommer sur toutes les sources → dose absorbée",
+            "text": "D(cible) = Σ Ã·S, en Gy ; comparer aux seuils de tolérance des OAR (cf. A5) [1,4]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la précision de la dose est plafonnée par la quantification d'activité",
+            "text": "La dose absorbée calculée ne peut **jamais être plus exacte que l'estimation d'activité** sous-jacente. Une calibration imparfaite de la caméra SPECT, une correction d'atténuation/diffusion défaillante ou une **correction de temps mort (dead-time)** négligée pour le ¹⁷⁷Lu introduisent une erreur qui se propage intégralement à la dose [19,28]. D'où l'exigence d'une **calibration métrologiquement tracée** de l'activimètre et de la caméra [4]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Le choix du **nombre et du calendrier des temps d'acquisition** est un compromis entre praticité clinique et exactitude. Un point trop précoce manque la phase de captation ; un point trop tardif manque la décroissance. La règle EANM — couvrir jusqu'à 3–5× la demi-vie effective avec ≥ 2 jours entre les derniers points [4,21] — vise à capturer correctement la **phase d'élimination**, qui pèse le plus dans l'aire sous la courbe."
+          }
+        ],
+        "figureKey": "RENOGRAM",
+        "figureAlt": "Courbe activité-temps d'un organe après administration du radiopharmaceutique : montée (captation) puis décroissance bi-exponentielle ; l'aire sous la courbe représente l'activité cumulée intégrée dans le temps.",
+        "figureCaption": "Fig. 3 — Courbe activité-temps : l'aire sous la courbe (activité cumulée Ã / TIAC) est le nombre total de désintégrations, point de départ du calcul de dose."
+      },
+      {
+        "title": "A5 - A5 · Le formalisme MIRD et le schéma CIPR",
+        "text": "Le **schéma MIRD** (Medical Internal Radiation Dose, comité de la SNMMI) est le cadre normalisé mondial de la dosimétrie interne. Sa formulation moderne, le **MIRD Pamphlet n° 21**, a standardisé la nomenclature et l'équation fondamentale [1] :\n\n> **D(r_T) = Σ_{r_S} Ã(r_S) × S(r_T ← r_S)**\n\noù D(r_T) est la dose absorbée moyenne au tissu cible r_T, Ã(r_S) l'**activité cumulée intégrée dans le temps** dans le tissu source r_S, et S(r_T ← r_S) la **valeur S** du couple source-cible [1]. La valeur S est elle-même la dose absorbée moyenne dans la cible **par transformation nucléaire** dans la source, intégrant l'énergie émise, les **fractions absorbées** et la géométrie des **fantômes de référence**.\n\n**Les fantômes de la CIPR (ICRP).** Le calcul des valeurs S exige une représentation anatomique standardisée. Les logiciels modernes — au premier rang **MIRDcalc** (MIRD Pamphlet n° 28) — implémentent **12 fantômes computationnels CIPR** : adulte de référence homme/femme (**ICRP 110**) et pédiatriques (nouveau-né, 1, 5, 10, 15 ans, **ICRP 143**), avec interpolation par masse corporelle et modèle de tumeur sphérique [2]. C'est l'articulation entre le formalisme MIRD (l'équation) et le schéma CIPR (les fantômes et coefficients de dose) qui rend le calcul reproductible d'un centre à l'autre.\n\n**La lignée des MIRD Pamphlets** structure la pratique :\n\n| Pamphlet | Apport | Source |\n|---|---|---|\n| **n° 21** | Schéma généralisé, nomenclature, équation D = Σ Ã·S | [1] |\n| **n° 23** | SPECT quantitatif pour dosimétrie 3D voxélisée patient-spécifique | [27] |\n| **n° 26** | Guideline EANM/MIRD de SPECT quantitatif **spécifique au ¹⁷⁷Lu** | [28] |\n| **n° 28** | **MIRDcalc** : logiciel intégrant les 12 fantômes CIPR | [2] |\n\nLe **Pamphlet n° 26** est central pour le ¹⁷⁷Lu : il établit que la précision de la dose dépend directement de la précision de l'estimation d'activité à chaque temps, et fixe une calibration de référence (sphère ¹⁷⁷Lu de 100 mL dans un cylindre elliptique rempli d'eau) [28].\n\n**De la dose absorbée à la BED.** Le formalisme MIRD a été étendu à la **dose biologiquement efficace (BED)** via le modèle linéaire-quadratique, pour intégrer débit de dose et réparation cellulaire (cf. A2–A3) — extension validée notamment pour le **rein** et la **moelle rouge** [4]. La BED permet de comparer des schémas fractionnés et de poser des seuils de tolérance plus robustes que la dose absorbée brute.\n\n**Les seuils de tolérance** (référence EANM, sauf indication) ferment la boucle dosimétrique : la dose calculée se confronte à ces limites pour décider de la poursuite ou de l'adaptation [4].\n\n| Organe à risque | Seuil de tolérance | Source |\n|---|---|---|\n| **Reins** | BED **~39–40 Gy** (sans facteur de risque) ; **28 Gy** si facteurs de risque ; dose absorbée historique **23 Gy** | [4] |\n| **Moelle osseuse rouge** | **2 Gy** (toxicité hématologique sévère ; thrombopénie grade 4 rapportée > 1,5 Gy) | [4] |\n| **Glandes salivaires (parotides)** | toxicité faible < ~10 Gy ; limite proposée **20 Gy** | [4] |\n| **Glandes lacrymales** | **25 Gy** | [4] |\n| **Hypophyse** | **20 Gy** (déficit en GH) ; 45 Gy (panhypopituitarisme) | [4] |\n\n**Ordres de grandeur observés** (doses absorbées par unité d'activité). Pour le **¹⁷⁷Lu-DOTATATE** (revue systématique, médianes Gy/GBq) : reins **0,64** (0,47–0,90), moelle **0,04** (0,02–0,06), **tumeur 4,6** (3,09–9,47) — soit un **rapport thérapeutique tumeur/rein ≈ 7** [20]. Pour le **¹⁷⁷Lu-PSMA-617** (sous-étude dosimétrique VISION, n = 29) : glandes lacrymales **2,1 ± 0,47 Gy/GBq**, salivaires **0,63 ± 0,36**, reins **0,43 ± 0,16**, moelle **0,035 ± 0,02** par cycle ; en cumul sur 6 cycles, reins **19 ± 7,3 Gy** et moelle **1,5 ± 0,9 Gy** [29], soit en deçà des seuils ci-dessus.\n\n**Application au ¹³¹I — l'activité maximale tolérée (méthode Benua-Leeper, EANM/MIRD).** Le même formalisme, appliqué au sang comme substitut de la moelle, fixe une limite de **2 Gy au sang** : l'activité administrée doit maintenir la rétention corps entier à 48 h **≤ 4,44 GBq (120 mCi)**, ou **≤ 3 GBq (80 mCi) en présence de métastases pulmonaires** [13,33]. C'est l'illustration historique que la dosimétrie n'est pas un raffinement académique mais une **borne de sécurité** directement opérationnelle.",
+        "stats": [
+          {
+            "value": "D = Σ Ã·S",
+            "label": "Équation MIRD Pamphlet 21 [1]"
+          },
+          {
+            "value": "12 fantômes",
+            "label": "CIPR dans MIRDcalc (ICRP 110/143) [2]"
+          },
+          {
+            "value": "2 Gy",
+            "label": "Seuil moelle / sang (¹³¹I) [4,13]"
+          },
+          {
+            "value": "~7×",
+            "label": "Rapport dose tumeur/rein (¹⁷⁷Lu-DOTATATE) [20]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Repère — qui fait quoi",
+            "text": "Le **formalisme MIRD** (SNMMI) fournit l'**équation** et la **nomenclature** (Ã, valeur S, TIAC) [1]. Le **schéma CIPR** (ICRP) fournit les **fantômes anatomiques** de référence et les **coefficients de dose** qui peuplent les valeurs S [2]. Les deux sont **complémentaires** : MIRD = la méthode de calcul, CIPR = la géométrie de référence. Les logiciels (MIRDcalc, OLINDA/EXM, IDAC-Dose) les combinent."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — un seuil n'est pas un dogme",
+            "text": "Les seuils des OAR (reins ~23 Gy / BED ~40 Gy, moelle 2 Gy) sont **extrapolés de la radiothérapie externe** et **dépendent du débit de dose, du fractionnement et des comorbidités** (HTA, diabète, néphropathie pour le rein) [4]. Ils encadrent la décision mais ne la dictent pas : un patient sans facteur de risque tolère jusqu'à ~40 Gy au rein, un patient fragile davantage de prudence. La dosimétrie individualisée — et non un chiffre universel — reste la règle."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La dosimétrie clinique de routine demeure un **compromis entre praticité et perfection** [44]. Le Monte-Carlo voxélisé est le plus exact mais lourd ; la dosimétrie au niveau organe (MIRDcalc, OLINDA) est rapide et suffisante pour piloter la plupart des traitements. Le bon choix dépend de l'enjeu : un cumul rénal proche du seuil justifie une approche plus fine qu'un premier cycle sans facteur de risque."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma synthétique du calcul MIRD : activité cumulée dans les organes sources combinée aux valeurs S des fantômes de référence pour aboutir à la dose absorbée comparée aux seuils de tolérance des organes à risque.",
+        "figureCaption": "Fig. 4 — Du formalisme MIRD aux seuils de tolérance : l'activité cumulée × valeur S donne la dose, confrontée aux limites des organes à risque."
+      },
+      {
+        "title": "B6 - B6 · Pourquoi la dosimétrie en 177Lu et 131I : enjeux cliniques",
+        "text": "La **dosimétrie interne** estime la **dose absorbée** — énergie déposée par unité de masse, exprimée en **gray (Gy = J/kg)** — délivrée aux tumeurs et aux **organes à risque (OAR)** par un radiopharmaceutique administré, afin d'individualiser le traitement : maximiser la dose tumorale sous contrainte de toxicité aux tissus sains [1,4]. À la différence de la radiothérapie externe, où la dose est planifiée a priori, la radiothérapie interne vectorisée (RIV) délivre une dose **gouvernée par la biocinétique du vecteur**, propre à chaque patient et à chaque cycle — d'où la pertinence d'une mesure individuelle plutôt que d'une activité forfaitaire [3,44].\n\n**Le couple théranostique fonde la mesurabilité de la dose.** Les vecteurs du 177Lu et du 131I associent un émetteur β⁻ thérapeutique à une émission γ imageable, ce qui permet de quantifier in vivo la distribution et la rétention par imagerie sérielle (SPECT/CT pour le 177Lu, imagerie corps entier pour le 131I) [1,6,8]. Cette propriété distingue ces deux radionucléides : la dose absorbée n'est pas extrapolée d'un modèle théorique mais **mesurée sur le patient lui-même**.\n\n| Propriété physique | **¹⁷⁷Lu** | **¹³¹I** |\n|---|---|---|\n| Période physique | **6,647 ± 0,004 j** [5] | **8,02 j** [8] |\n| β⁻ : énergie max (E moy) | **497 keV** (E moy ≈ 134 keV) [6,35] | **607 keV** (E moy **192 keV**) [8] |\n| Parcours β⁻ moyen tissus mous | **≈ 0,67 mm** (max ≈ 2 mm) [6,35] | quelques mm |\n| γ imageable(s) | **113 keV (6,4 %)** et **208 keV (11 %)** [6] | **364 keV (≈ 81 %)** [8] |\n| Collimateur SPECT | moyenne énergie | **haute énergie** (364 keV) [8] |\n| Décroissance vers | ¹⁷⁷Hf stable [7] | ¹³¹Xe |\n\n**L'enjeu clinique est double.** D'une part, éviter la **toxicité d'organe** : le rein domine en PRRT (peptide receptor radionuclide therapy, radiothérapie par radioligand des récepteurs de la somatostatine) et en 177Lu-PSMA, la **moelle osseuse rouge** conditionne la tolérance hématologique, et les **glandes salivaires/lacrymales** sont les OAR spécifiques du 177Lu-PSMA [4,12,29]. D'autre part, garantir une **dose tumorale efficace** : la médiane de dose tumorale en 177Lu-DOTATATE atteint **4,6 Gy/GBq (IQR 3,09–9,47)**, très supérieure à la dose rénale médiane de **0,64 Gy/GBq (0,47–0,90)**, ce qui illustre l'indice thérapeutique exploité [20].\n\n**Un cadre réglementaire impose désormais la planification individuelle.** L'article 56 de la directive **2013/59/Euratom** dispose que, pour toute exposition radiothérapeutique, l'exposition des volumes cibles soit **planifiée individuellement et sa délivrance vérifiée**, les doses aux tissus non cibles maintenues ALARA (As Low As Reasonably Achievable), avec implication d'un physicien médical [26]. La dosimétrie n'est donc plus seulement un outil de recherche mais une exigence opposable.",
+        "stats": [
+          {
+            "value": "≈ 0,67 mm",
+            "label": "Parcours β⁻ moyen du ¹⁷⁷Lu (tissus mous) [6]"
+          },
+          {
+            "value": "364 keV",
+            "label": "γ principal du ¹³¹I (collimateur HE) [8]"
+          },
+          {
+            "value": "4,6 Gy/GBq",
+            "label": "Dose tumorale médiane ¹⁷⁷Lu-DOTATATE [20]"
+          },
+          {
+            "value": "2 Gy",
+            "label": "Seuil de toxicité médullaire sévère [4]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi ces deux radionucléides se prêtent à la dosimétrie",
+            "text": "Le 177Lu (γ 113 et 208 keV) et le 131I (γ 364 keV) émettent un photon imageable couplé au β⁻ thérapeutique : on **quantifie ce que l'on traite** sur le même patient, par SPECT/CT quantitatif ou imagerie corps entier sérielle [1,6]. Le ⁶⁸Ga (T½ ≈ 68 min) sert au diagnostic et à la sélection mais sa période trop courte interdit une dosimétrie thérapeutique multi-temps fiable, contrairement à la paire ¹²⁴I/¹³¹I [36,38]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — activité forfaitaire ≠ dose absorbée",
+            "text": "Les schémas approuvés (7,4 GBq/cycle) délivrent une **activité fixe**, pas une dose absorbée fixe. À activité identique, la dose rénale varie d'un facteur ≈ 2 entre patients (0,54–1,00 Gy/GBq pour le ¹⁷⁷Lu-SSTR) selon la biocinétique : sans mesure, un patient peut être sous-dosé à la tumeur ou sur-dosé au rein [4]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : imagerie diagnostique de sélection (68Ga-DOTATATE, 68Ga-PSMA, imagerie iodée), traitement par émetteur β⁻ apparié (177Lu, 131I), puis imagerie post-thérapeutique quantitative permettant la dosimétrie et la réévaluation."
+      },
+      {
+        "title": "B7 - B7 · Acquisition quantitative : protocoles d'imagerie sériée",
+        "text": "La dose absorbée se déduit de la **rétention de l'activité dans le temps** ; sa précision dépend donc **directement** de la justesse de l'estimation d'activité à chaque temps d'imagerie [28]. Toute la chaîne — calibration, acquisition, reconstruction, corrections — vise cette justesse.\n\n**(a) Prérequis instrumentaux.** La quantification repose sur un **facteur de calibration caméra** (conversion coups → Bq) et, pour le 177Lu à fortes activités, une **correction de temps mort (dead-time, τ)** [19]. La guideline EANM/MIRD n°26 standardise le SPECT quantitatif spécifique du 177Lu et propose une calibration par **sphère de 100 mL remplie de ¹⁷⁷Lu dans un cylindre elliptique d'eau** [28]. La traçabilité métrologique de l'activimètre est essentielle à la justesse dosimétrique [4].\n\n**(b) Reconstruction et corrections.** Une reconstruction **itérative (OSEM)** est fortement recommandée, avec **correction d'atténuation** (à partir du CT), **correction de diffusion** et **modélisation de la réponse du collimateur** [4]. Le SPECT quantitatif (QSPECT) patient-spécifique est le socle de la dosimétrie 3D voxélisée [27].\n\n**(c) Protocole d'acquisition sérielle — 177Lu (EANM).** La dosimétrie rénale exige **≥ 3 temps d'imagerie** ; le schéma recommandé au 1er cycle est de **3 acquisitions SPECT/CT entre J1 (24 h post-injection) et J7**, avec **≥ 2 jours entre les deux derniers points** ; les cycles suivants peuvent se contenter d'**≥ 1 SPECT/CT par cycle** [4]. En pratique, des points typiques sont le jour d'injection (1–4 h), J+1, J+2 et J+7 [4]. Paramètres usuels : **60–120 angles de projection, 30–40 s/projection** [4].\n\n| Cible / méthode | Temps d'échantillonnage | Source |\n|---|---|---|\n| Reins (¹⁷⁷Lu, SPECT/CT) | 3 acquisitions entre **J1 (24 h)** et **J7**, ≥ 2 j entre les 2 derniers | [4] |\n| Recommandation générale (¹⁷⁷Lu) | ≥ 3 temps : jour J (1–4 h), J+1, J+2, J+7 | [4] |\n| Moelle (¹⁷⁷Lu, méthode sanguine) | T0, 10, 30, 60, 90, 120, 360 min, 24 h + 1 temps tardif | [4,22] |\n| Sang/moelle (¹³¹I, CTD, EANM SOP I) | T0, 10, 30, 60, 90, 120, 360 min, 24 h + 1 temps tardif | [22] |\n\n**(d) Couverture temporelle.** L'échantillonnage doit s'étendre jusqu'à **3–5 fois la demi-vie effective** de l'organe considéré pour capter correctement la phase d'élimination ; à titre d'exemple, la demi-vie effective rénale en 177Lu-SSTR est de l'ordre de **50–60 h** [4,21]. Un échantillonnage trop court tronque l'aire sous la courbe et **sous-estime** la dose.\n\n**(e) Spécificités du 131I.** L'émission γ de **364 keV** impose un **collimateur haute énergie** et dégrade la résolution par rapport au 177Lu [8]. La période effective thyroïdienne in vivo est très variable — **≈ 10,5 h après rhTSH** (TSH recombinante humaine) versus **≈ 15,7 h après sevrage hormonal** dans le cancer thyroïdien différencié — d'où l'intérêt d'une mesure individuelle de la rétention pour le calcul de l'activité maximale tolérée [9].",
+        "steps": [
+          {
+            "title": "Calibrer et préparer",
+            "text": "Établir le facteur de calibration caméra (sphère ¹⁷⁷Lu de 100 mL, cylindre elliptique d'eau) et la correction de temps mort ; vérifier la traçabilité de l'activimètre [4,19,28]."
+          },
+          {
+            "title": "Acquérir en série",
+            "text": "≥ 3 temps SPECT/CT entre J1 (24 h) et J7 pour les reins (177Lu), ≥ 2 j entre les deux derniers points ; 60–120 projections, 30–40 s/projection [4]."
+          },
+          {
+            "title": "Échantillonner le sang (moelle)",
+            "text": "Prélèvements à T0, 10, 30, 60, 90, 120, 360 min, 24 h et un temps tardif pour la dosimétrie médullaire sanguine (177Lu et 131I) [4,22]."
+          },
+          {
+            "title": "Reconstruire et corriger",
+            "text": "OSEM itératif avec corrections d'atténuation (CT), de diffusion et modélisation du collimateur, puis fusion SPECT/CT [4,27]."
+          },
+          {
+            "title": "Couvrir l'élimination",
+            "text": "Prolonger l'observation jusqu'à 3–5 demi-vies effectives de l'organe (≈ J7 pour le rein en 177Lu) afin de ne pas tronquer l'aire sous la courbe [4,21]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la dose n'est jamais plus juste que l'estimation d'activité",
+            "text": "La précision de la dose absorbée dépend directement de la précision d'estimation d'activité à chaque temps [28]. Une calibration approximative, une correction de temps mort négligée à forte activité (¹⁷⁷Lu), ou des corrections d'atténuation/diffusion absentes biaisent toute la chaîne dosimétrique [4,19]."
+          },
+          {
+            "type": "info",
+            "title": "Imagerie planaire vs SPECT/CT",
+            "text": "L'EANM autorise des schémas allégés (1 SPECT/CT complété de planaires) lorsqu'un protocole multi-SPECT n'est pas réalisable, au prix d'une moindre exactitude de la quantification 3D [4]. Le SPECT/CT reste la référence pour les OAR à géométrie complexe (reins)."
+          }
+        ],
+        "figureKey": "RENOGRAM",
+        "figureAlt": "Schéma d'acquisition sérielle pour la dosimétrie rénale au 177Lu : trois SPECT/CT centrés sur les reins entre J1 (24 h) et J7, alimentant une courbe activité-temps par organe."
+      },
+      {
+        "title": "B8 - B8 · Quantification et calcul : courbes temps-activité et intégration",
+        "text": "Une fois l'activité quantifiée à chaque temps, le calcul de dose suit le **formalisme MIRD** (Medical Internal Radiation Dose, comité de la SNMMI), référence internationale standardisée [1].\n\n**(a) Équation fondamentale.** La dose absorbée à un tissu cible r_T s'écrit comme la somme, sur tous les organes sources r_S, du produit de l'**activité cumulée intégrée dans le temps (TIAC, Ã)** par la **valeur S** :\n\nD(r_T) = Σ_{r_S} Ã(r_S) × S(r_T ← r_S)\n\noù Ã (en MBq·h ou Bq·s) est l'aire sous la courbe activité-temps, et la **valeur S** (S-value) est le débit de dose moyen absorbé dans la cible par unité d'activité présente dans la source — elle intègre la géométrie anatomique et le transport des rayonnements, et est tabulée par couple source-cible, radionucléide et fantôme de référence [1,2].\n\n**(b) Construction de la courbe activité-temps et intégration.** Les points d'activité mesurés (§B7) sont ajustés par des **fonctions exponentielles** (typiquement 2–3 points par terme exponentiel) ; l'intégration analytique de cet ajustement de l'instant d'injection à l'infini donne le TIAC [21]. C'est l'étape la plus sensible : le choix du modèle (mono- vs bi-exponentiel) et la troncature de la phase d'élimination conditionnent le résultat.\n\n**(c) Trois familles de méthodes de calcul**, par précision croissante [3] :\n\n| Méthode | Principe | Outils / précision |\n|---|---|---|\n| Valeurs S au niveau organe | dose moyenne par organe sur fantôme de référence | OLINDA/EXM (FDA), IDAC-Dose 2.1, **MIRDcalc** [2,3] |\n| Noyaux de dose ponctuelle | convolution dose-point kernel | dose 3D approchée [3] |\n| Monte-Carlo voxélisé | transport simulé voxel par voxel | **le plus précis** [3] |\n\n**(d) Outils et fantômes.** MIRDcalc (MIRD Pamphlet 28) implémente **12 fantômes computationnels ICRP** : adulte de référence H/F (ICRP 110), pédiatriques nouveau-né, 1, 5, 10 et 15 ans (ICRP 143), avec interpolation par masse corporelle et modèle de tumeur sphérique [2]. À titre d'exemple, la valeur S moelle→moelle du 177Lu (IDAC-Dose 2.1) est de **0,0349 mGy·MBq⁻¹·h⁻¹ (homme)** et **0,0457 (femme)** [4].\n\n**(e) De la dose absorbée à la dose biologiquement efficace (BED).** Le concept de **BED** intègre le débit de dose et la réparation cellulaire selon le modèle linéaire-quadratique, ce qui permet de comparer des schémas fractionnés et d'extrapoler les contraintes issues de la radiothérapie externe : BED = D · [1 + D/(α/β) · λ/(λ+μ)], avec λ = ln2/T_eff et μ la constante de réparation ; cette extension a été appliquée au rein et à la moelle en RIV au 177Lu [4].\n\n**(f) Repères de constantes d'émission du 177Lu** (utiles à la pondération photons/électrons) : Δ photons = **35,1 keV·Bq⁻¹·s⁻¹** et Δ électrons = **147,2 keV·Bq⁻¹·s⁻¹**, la composante électronique étant ≈ 4,2–4,4× supérieure — ce qui explique que la dose au tissu source (auto-dose β⁻) domine largement la dose croisée photonique [4].",
+        "stats": [
+          {
+            "value": "D = Σ(Ã × S)",
+            "label": "Équation MIRD fondamentale [1]"
+          },
+          {
+            "value": "12",
+            "label": "Fantômes ICRP de MIRDcalc (ICRP 110/143) [2]"
+          },
+          {
+            "value": "0,0349",
+            "label": "Valeur S moelle→moelle ¹⁷⁷Lu, homme (mGy·MBq⁻¹·h⁻¹) [4]"
+          },
+          {
+            "value": "≈ 4,3×",
+            "label": "Δ électrons / Δ photons du ¹⁷⁷Lu [4]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la valeur S porte toute la géométrie",
+            "text": "La valeur S encapsule l'anatomie et le transport des rayonnements pour un couple source-cible donné dans un fantôme de référence [1]. Pour le 177Lu, dont le β⁻ a un parcours ≈ 0,67 mm, l'auto-dose (S organe→lui-même) domine ; la dose croisée inter-organes, photonique, reste faible — d'où une approche organe-level souvent suffisante en routine, le Monte-Carlo voxélisé étant réservé aux situations à fort gradient (tumeur, rein) [3,6]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la troncature de la courbe sous-estime la dose",
+            "text": "Intégrer une courbe activité-temps sur une fenêtre trop courte (< 3–5 demi-vies effectives) ou ajuster un mono-exponentiel sur une cinétique bi-phasique tronque le TIAC et sous-estime la dose absorbée [21]. La phase d'élimination tardive (J7 pour le rein en 177Lu) doit être documentée par un point réel, non extrapolée à l'aveugle."
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schématisation du calcul MIRD : courbe activité-temps mesurée par organe, intégration en activité cumulée (TIAC), multiplication par la valeur S tabulée, sommation des contributions source vers cible pour obtenir la dose absorbée."
+      },
+      {
+        "title": "B9 - B9 · Niveaux de personnalisation et méthodes simplifiées",
+        "text": "La dosimétrie clinique de routine est un **compromis entre praticité et exactitude** : multiplier les acquisitions augmente la précision mais grève la logistique [44]. Plusieurs niveaux de personnalisation coexistent, du forfait à la dosimétrie 3D individuelle.\n\n**(a) Activité forfaitaire (sans dosimétrie).** C'est le schéma des AMM. Le **177Lu-DOTATATE (Lutathera)** est administré à **7,4 GBq (200 mCi) ± 10 % toutes les 8 semaines, 4 cycles** (essai NETTER-1) [10] ; le **177Lu-PSMA-617 (Pluvicto)** à **7,4 GBq toutes les 6 semaines, jusqu'à 6 cycles** (essai VISION) [11]. Simple, reproductible, mais ignore la variabilité interindividuelle de la dose [44].\n\n**(b) Approche empirique adaptée (131I, cancer thyroïdien différencié — CTD).** Activités fixes graduées selon le risque : ablation de reliquat bas risque **1,1–1,85 GBq (30–50 mCi)**, traitement adjuvant **1,85–3,7 GBq (50–100 mCi)**, maladie locorégionale **3,7–5,6 GBq (100–150 mCi)**, locorégional avancé **5,6–7,4 GBq (150–200 mCi)** [13,32]. Pour le bas risque, une comparaison **1,1 vs 2,2 GBq** retrouve une efficacité d'ablation comparable [43].\n\n**(c) Dosimétrie d'organe à risque (semi-personnalisée).** On poursuit les cycles jusqu'à une contrainte d'OAR plutôt qu'à un nombre fixe : en PRRT, jusqu'à **23 Gy aux reins OU 2 Gy à la moelle** [4,30]. Cette approche « treat-to-threshold » optimise l'exposition tumorale dans les limites de tolérance.\n\n**(d) Activité maximale tolérée (131I, méthode de Benua-Leeper).** Le calcul individuel détermine l'activité délivrant ≤ **2 Gy au sang** (substitut de la moelle), avec une rétention corps entier à 48 h **≤ 4,44 GBq (120 mCi)**, abaissée à **≤ 3 GBq (80 mCi) en présence de métastases pulmonaires** (risque de fibrose) [13,33,34].\n\n| Contrainte dosimétrique | Valeur | Commentaire | Source |\n|---|---|---|---|\n| Moelle rouge | **2 Gy** | seuil de toxicité hématologique sévère ; thrombopénie G4 si > 1,5 Gy | [4] |\n| Reins (dose absorbée) | **23 Gy** (ou 27–28 Gy) | contrainte d'essais en PRRT | [4,30] |\n| Reins (BED) | **≈ 40 Gy** sans FdR ; **28 Gy** avec FdR (HTA, diabète) | extrapolé de la RTE | [4] |\n| Glandes salivaires | toxicité faible < **10 Gy** ; limite proposée **20 Gy** | OAR du ¹⁷⁷Lu-PSMA | [4] |\n| Glandes lacrymales | **25 Gy** | OAR du ¹⁷⁷Lu-PSMA | [4] |\n\n**(e) Doses absorbées observées (repères par GBq).** Ces valeurs justifient l'individualisation : en **177Lu-DOTATATE**, reins **0,64 Gy/GBq (0,47–0,90)**, rate 1,23, foie 0,54, moelle 0,04, **tumeur 4,6 (3,09–9,47)** [20]. En **177Lu-PSMA-617** (sous-étude VISION, n = 29, OLINDA/EXM 2.2) : glandes lacrymales **2,1 ± 0,47 Gy/GBq** (cumul ≈ 92 Gy/6 cycles), salivaires 0,63 (cumul ≈ 28 Gy), **reins 0,43 ± 0,16 Gy/GBq** (cumul ≈ 19 ± 7,3 Gy), moelle 0,035 Gy/GBq (cumul ≈ 1,5 Gy) [12,29].\n\n**(f) Dosimétrie 3D voxélisée individuelle.** Le niveau le plus fin (SPECT/CT quantitatif → cartes de dose voxel par voxel, Monte-Carlo) restitue les **gradients intra-tumoraux et intra-rénaux** que la moyenne d'organe masque [3,27]. Son coût en temps machine et en expertise la cantonne aux centres experts et aux protocoles de recherche [44].\n\n**Limites transversales.** La dose médullaire estimée dépend de la méthode (image-based vs sang) et de la présence de métastases osseuses, ce qui altère sa corrélation à la toxicité hématologique observée [39]. La tension structurelle entre **praticité et perfection** demeure le principal frein à la généralisation de la dosimétrie individuelle [44].",
+        "stats": [
+          {
+            "value": "7,4 GBq ×4",
+            "label": "¹⁷⁷Lu-DOTATATE forfaitaire, NETTER-1 [10]"
+          },
+          {
+            "value": "23 Gy / 2 Gy",
+            "label": "Seuil rein OU moelle (treat-to-threshold) [4]"
+          },
+          {
+            "value": "≤ 4,44 GBq",
+            "label": "Rétention CE à 48 h, AMT ¹³¹I (Benua) [13,33]"
+          },
+          {
+            "value": "≈ 92 Gy",
+            "label": "Cumul lacrymal ¹⁷⁷Lu-PSMA / 6 cycles [29]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — choisir le niveau de personnalisation",
+            "text": "Le forfait suffit en CTD bas risque (efficacité d'ablation comparable 1,1 vs 2,2 GBq) [43]. La dosimétrie d'OAR (treat-to-threshold 23 Gy rein / 2 Gy moelle) optimise la PRRT chez les patients à indice thérapeutique étroit [4,30]. La dosimétrie 3D voxélisée se réserve aux gradients forts (tumeur, rein) et à la recherche [3,44]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — BED ≠ dose absorbée pour le rein",
+            "text": "La contrainte rénale de référence (≈ 40 Gy sans facteur de risque, 28 Gy avec HTA/diabète/néphropathie) est exprimée en **BED**, pas en dose absorbée [4]. Confondre les deux conduit à arrêter ou poursuivre les cycles à tort : la conversion dose→BED dépend du débit de dose et de la réparation (§B8)."
+          },
+          {
+            "type": "info",
+            "title": "Néphroprotection — un levier sur la dose rénale",
+            "text": "En PRRT au ¹⁷⁷Lu-DOTATATE, la co-perfusion d'acides aminés chargés positivement (L-lysine/L-arginine) inhibe la réabsorption tubulaire (mégaline) et réduit la dose rénale jusqu'à ≈ 65 % ; perfusion de 4 h débutée 30 min avant l'injection [24,25]."
+          }
+        ],
+        "figureKey": "PSMA_BINDING",
+        "figureAlt": "Schématisation des niveaux de personnalisation dosimétrique du forfait (activité fixe 7,4 GBq) à la dosimétrie 3D voxélisée individuelle, en passant par l'activité maximale tolérée 131I et le treat-to-threshold d'organe à risque (23 Gy rein / 2 Gy moelle)."
+      },
+      {
+        "title": "C10 - C10 · Lire une courbe temps-activité et un histogramme dose-volume",
+        "text": "**Pourquoi cette étape est centrale.** Toute dosimétrie interne repose sur deux objets graphiques : la **courbe temps-activité (TAC, *time-activity curve*)**, qui décrit la cinétique du radiopharmaceutique dans une région d'intérêt, et — pour la dosimétrie 3D voxélisée — l'**histogramme dose-volume (DVH, *dose-volume histogram*)**, qui résume la distribution de dose absorbée au sein d'un volume. La précision de la dose estimée dépend **directement** de la précision de l'estimation d'activité à chaque temps d'imagerie : calibration de la caméra, corrections d'atténuation/diffusé et délimitation des volumes sont donc des prérequis non négociables [28].\n\n**De l'image à l'activité cumulée (TIA).** Le formalisme **MIRD (*Medical Internal Radiation Dose*, SNMMI)** calcule la dose absorbée moyenne D(r_T) à un tissu cible r_T comme la somme, sur tous les tissus sources r_S, du produit de l'**activité cumulée intégrée dans le temps (TIA, en MBq·h ou Bq·s)** par la **valeur S** (dose absorbée dans la cible par transformation nucléaire dans la source) : **D = Σ (TIA × S)** [1]. La TIA est l'**aire sous la courbe temps-activité** ; le **coefficient d'activité cumulée** (ou « temps de résidence ») est cette aire normalisée à l'activité injectée [1]. Lire correctement une TAC, c'est donc estimer correctement la dose.\n\n**Construire la courbe : échantillonnage temporel.** L'EANM recommande au minimum **≥ 3 temps d'imagerie**, typiquement le jour d'injection (1–4 h), puis J+1, J+2 et J+7, avec ≥ 2 jours entre les deux derniers points pour bien caractériser la phase d'élimination lente [4]. Pour la **dosimétrie rénale du 177Lu**, le protocole standard est de **3 acquisitions SPECT/CT entre J1 (24 h) et J7** au premier cycle, puis ≥ 1 SPECT/CT par cycle pour les cycles suivants [4]. Chaque exponentielle de la courbe exige **2–3 points** pour être ajustée, et la période d'observation doit couvrir **3 à 5 fois la demi-vie effective** pour ne pas tronquer l'aire [21]. La demi-vie effective rénale du 177Lu est de l'ordre de **50–60 h** [4].\n\n| Élément lu sur la TAC | Signification dosimétrique | Conséquence si mal estimé |\n|---|---|---|\n| Pic d'activité (uptake) | Activité maximale captée par l'organe/la tumeur | Sous-estimation de la dose si point d'uptake manqué |\n| Pente de décroissance | Demi-vie **effective** (λ_eff = ln2/T_eff) | Erreur sur la rétention → erreur sur la TIA |\n| Aire sous la courbe (TIA) | Activité cumulée → entrée directe du calcul MIRD | Erreur proportionnelle sur la dose absorbée [1] |\n| Queue tardive (tail) | Composante de rétention longue | Troncature → dose sous-estimée [21] |\n\n**Modélisation de la courbe.** L'ajustement se fait par sommes d'exponentielles (mono-, bi- ou tri-exponentielle selon les phases captation/rétention/élimination) [21]. La **demi-vie effective in vivo** est très variable et spécifique du tissu et du patient : pour le 131I dans le cancer thyroïdien, elle est d'environ **10,5 h après rhTSH** contre **15,7 h après sevrage hormonal** [9], ce qui modifie l'aire sous la courbe et donc l'activité maximale tolérée.\n\n**Lire un histogramme dose-volume (DVH).** En dosimétrie voxélisée 3D (MIRD Pamphlet 23), la dose n'est plus une moyenne d'organe mais une **carte 3D** ; le DVH cumulatif porte en abscisse la dose absorbée (Gy) et en ordonnée le pourcentage de volume recevant **au moins** cette dose [27]. On y lit des métriques opérationnelles : la **D_mean** (dose moyenne, comparable à l'approche organe), les **D_x %** (dose minimale reçue par les x % les mieux/moins irradiés, p. ex. D_98 % pour la couverture tumorale, D_2 % pour les points chauds) et les **V_x Gy** (volume recevant au moins x Gy). Un DVH rénal tassé vers les fortes doses signale une irradiation parenchymateuse homogène élevée ; un DVH tumoral à épaule large traduit une couverture hétérogène (zones froides à risque de récidive).",
+        "stats": [
+          {
+            "value": "≥ 3",
+            "label": "Temps d'imagerie minimaux (TAC) [4]"
+          },
+          {
+            "value": "J1–J7",
+            "label": "Fenêtre dosimétrie rénale 177Lu [4]"
+          },
+          {
+            "value": "3–5 ×",
+            "label": "T_eff à couvrir pour l'aire sous courbe [21]"
+          },
+          {
+            "value": "50–60 h",
+            "label": "Demi-vie effective rénale du 177Lu [4]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 — Acquisitions quantitatives",
+            "text": "SPECT/CT 177Lu calibré (sphère de référence, correction de temps mort) ou prélèvements sanguins sériés pour la moelle ; reconstruction itérative avec corrections d'atténuation, de diffusé et modélisation du collimateur [28,19]."
+          },
+          {
+            "title": "2 — Segmentation et mesure d'activité",
+            "text": "Délinéation des volumes (reins, tumeurs, moelle, glandes) sur le CT/SPECT ; mesure de l'activité par VOI à chaque temps. La justesse de la calibration conditionne toute la chaîne [28]."
+          },
+          {
+            "title": "3 — Construction de la TAC",
+            "text": "Report des couples (temps, activité) ; ajustement par exponentielles ; vérification que la période d'observation atteint 3–5 × T_eff [21]."
+          },
+          {
+            "title": "4 — Intégration (TIA)",
+            "text": "Calcul de l'aire sous la courbe = activité cumulée ; normalisation à l'activité injectée pour obtenir le coefficient d'activité cumulée [1]."
+          },
+          {
+            "title": "5 — Convolution dose",
+            "text": "D = TIA × S (niveau organe) ou convolution voxélisée → carte 3D et DVH (MIRD 23) [1,27]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — troncature de l'aire sous la courbe",
+            "text": "Arrêter l'imagerie trop tôt (avant 3–5 × la demi-vie effective) tronque la queue tardive de la TAC et **sous-estime systématiquement la TIA**, donc la dose absorbée [21]. Pour le 177Lu (T physique 6,647 j [5]), la rétention rénale lente impose des points jusqu'à J7 [4]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — SPECT quantitatif spécifique 177Lu",
+            "text": "Le MIRD Pamphlet 26 (EANM/MIRD, Ljungberg et al.) fixe la calibration par une sphère de 177Lu de 100 mL dans un cylindre elliptique d'eau ; il rappelle que la précision de la dose est **directement** liée à la précision d'estimation d'activité à chaque temps [28]. La correction de **temps mort (dead-time τ)** de la caméra est indispensable aux fortes activités du 177Lu [19]."
+          },
+          {
+            "type": "info",
+            "title": "Pourquoi le 124I/131I est la paire « la plus pure »",
+            "text": "Le 68Ga (T½ ≈ 68 min) est trop éphémère pour une TAC multi-temps fiable ; à l'inverse, le 124I (TEP) ou le 123I (SPECT) permettent une **dosimétrie prédictive multi-temps** avant le 131I, le diagnostic et la thérapie partageant exactement la cible NIS [38]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : imagerie quantitative multi-temps (TEP 68Ga / 124I, SPECT 177Lu / 123I) alimentant la courbe temps-activité, l'intégration en activité cumulée puis le calcul de dose absorbée guidant l'adaptation des cures."
+      },
+      {
+        "title": "C11 - C11 · Organes à risque et seuils de tolérance",
+        "text": "**Le principe : contraindre la dose, pas l'activité.** En radiothérapie interne vectorisée, on ne raisonne pas en activité fixe « pour tous » mais en **dose absorbée aux organes à risque (OAR)**. La directive **2013/59/Euratom (article 56)** impose d'ailleurs, pour toute exposition thérapeutique, une **planification individualisée** des volumes cibles et une vérification de la délivrance, les doses aux tissus non-cibles devant rester ALARA, avec implication d'un physicien médical [26]. Les OAR diffèrent selon le radiopharmaceutique : **reins et moelle** dominent pour le 177Lu-DOTATATE et le 177Lu-PSMA ; **glandes salivaires/lacrymales** s'ajoutent pour le 177Lu-PSMA (expression PSMA) ; **moelle (sang) et poumons** pour le 131I du cancer thyroïdien différencié [4,12,13].\n\n**Les reins, OAR dominant du 177Lu.** Le radiopeptide est réabsorbé au tube contourné proximal (mégaline) puis retenu dans l'interstitium → irradiation parenchymateuse [4]. La contrainte classique est de **23 Gy** (parfois 27 Gy) en dose absorbée ; exprimée en **dose biologiquement efficace (BED)** — qui intègre le débit de dose et la réparation cellulaire via le modèle linéaire-quadratique — la limite est d'environ **40 Gy** chez un patient sans facteur de risque et **28 Gy** en présence de facteurs de risque (HTA, diabète, néphropathie) [4]. En pratique de PRRT, les cures sont poursuivies jusqu'à atteindre **23 Gy aux reins OU 2 Gy à la moelle** [4].\n\n**La moelle osseuse rouge, OAR hématologique.** Le seuil dose-limitant de toxicité hématologique sévère est fixé à **2 Gy** (< 5 % de dommages à 5 ans, extrapolé de la radiothérapie externe) [4]. Une thrombopénie de **grade 4** a été observée chez des patients dont la dose médullaire dépassait **1,5 Gy** [4]. La valeur S moelle→moelle pour le 177Lu (IDAC-Dose 2.1) est de **0,0349 mGy·MBq⁻¹·h⁻¹ chez l'homme** et **0,0457 chez la femme** [4].\n\n**Glandes salivaires et lacrymales (177Lu-PSMA).** Leur expression PSMA explique la xérostomie et la xérophtalmie. La toxicité salivaire est faible sous une dose moyenne d'environ **10 Gy**, avec une limite proposée à **20 Gy** ; la contrainte lacrymale est de **25 Gy** [4]. L'hypophyse tolère **20 Gy** (déficit en GH) à **45 Gy** (panhypopituitarisme) [4].\n\n| OAR | Seuil de tolérance | Unité / modèle | Source |\n|---|---|---|---|\n| Reins | **23 Gy** (ou 27 Gy) | Dose absorbée | [4] |\n| Reins | **≈ 40 Gy** (sans FdR) / **28 Gy** (avec FdR) | BED | [4] |\n| Moelle rouge | **2 Gy** | Dose absorbée (seuil hémato sévère) | [4] |\n| Glandes salivaires | **≈ 10 Gy** (faible toxicité) / **20 Gy** (proposé) | Dose absorbée moyenne | [4] |\n| Glandes lacrymales | **25 Gy** | Dose absorbée | [4] |\n| Hypophyse | **20 Gy** (GH) / **45 Gy** (panhypopit.) | Dose absorbée | [4] |\n| Sang/moelle (131I, CTD) | **2 Gy** | Méthode Benua-Leeper | [13,33] |\n\n**Doses observées par unité d'activité (calibrer ses attentes).** Ces valeurs permettent de prédire grossièrement le nombre de cures avant d'atteindre un seuil.\n\n| Radiopharmaceutique | Reins | Moelle rouge | Glandes (sal./lacr.) | Tumeur | Source |\n|---|---|---|---|---|---|\n| 177Lu-DOTATATE | **0,64 Gy/GBq** (0,47–0,90) | **0,04 Gy/GBq** (0,02–0,06) | — | **4,6 Gy/GBq** (3,09–9,47) | [20] |\n| 177Lu-DOTATATE (EANM) | **0,54–1,00 Gy/GBq** | médiane **50 mGy/GBq** (2–150) | — | — | [4] |\n| 177Lu-PSMA-617 (VISION) | **0,43 ± 0,16 Gy/GBq** → cumul **19 ± 7,3 Gy** | **0,035 ± 0,02 Gy/GBq** → cumul **1,5 ± 0,9 Gy** | lacr. **2,1 Gy/GBq** → **92 Gy** ; sal. **0,63 Gy/GBq** → **28 Gy** | — | [29] |\n| 177Lu-PSMA (EANM) | **0,4–0,8 Gy/GBq** | **44 mGy/GBq** (10–340) | sal. **0,5–1,9** ; lacr. **0,4–3,8 Gy/GBq** | — | [4] |\n\n**Cas particulier du 131I — méthode Benua-Leeper.** Pour le cancer thyroïdien différencié, on calcule l'**activité maximale tolérée (AMT)** délivrant **≤ 2 Gy au sang** (substitut de la moelle), avec une rétention corps entier à 48 h **≤ 4,44 GBq (120 mCi)**, ramenée à **≤ 3,0 GBq (80 mCi) en présence de métastases pulmonaires diffuses** (risque de fibrose pulmonaire) [13,33]. La biocinétique suit un modèle compartimental ICRP (estomac, sang, thyroïde, foie, rein, vessie, reste du corps) [13].",
+        "stats": [
+          {
+            "value": "23 Gy",
+            "label": "Seuil rénal classique 177Lu [4]"
+          },
+          {
+            "value": "2 Gy",
+            "label": "Seuil moelle (toxicité hémato sévère) [4]"
+          },
+          {
+            "value": "25 Gy",
+            "label": "Contrainte glandes lacrymales [4]"
+          },
+          {
+            "value": "4,44 GBq",
+            "label": "Rétention 48 h max, 131I CTD [13]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — confondre dose absorbée et BED rénale",
+            "text": "Une dose absorbée de 23 Gy n'équivaut pas à une BED de 23 Gy : la BED intègre le débit de dose et la réparation, et la limite rénale en BED monte à ≈ 40 Gy (sans facteur de risque) ou redescend à 28 Gy (HTA, diabète, néphropathie) [4]. Appliquer un seuil sans préciser le modèle conduit à sur- ou sous-traiter."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — métastases pulmonaires et 131I",
+            "text": "En présence de métastases pulmonaires diffuses captant l'iode, l'AMT est abaissée pour limiter la rétention corps entier à 48 h ≤ 3,0 GBq (80 mCi), afin de prévenir la fibrose pulmonaire radique [13,33]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — néphroprotection PRRT",
+            "text": "La co-perfusion d'acides aminés chargés positivement (L-lysine / L-arginine, 4 h débutées 30 min avant l'injection) inhibe de façon compétitive la réabsorption tubulaire et réduit la dose rénale jusqu'à ~65 % [24,25]. Pré-requis fonctionnel : DFG ≥ 30 mL/min pour le 177Lu-PSMA, avec réduction d'activité de 20 % si perte d'eGFR > 40 % [12]."
+          }
+        ],
+        "figureKey": "RENOGRAM",
+        "figureAlt": "Schéma rénal illustrant les reins comme organe à risque dominant de la radiothérapie vectorisée au 177Lu : réabsorption tubulaire proximale du radiopeptide, rétention parenchymateuse et seuils de tolérance en dose absorbée et en dose biologiquement efficace."
+      },
+      {
+        "title": "C12 - C12 · Dose tumorale, relation dose-réponse et compte rendu",
+        "text": "**La cible de la cible : la dose tumorale.** La dosimétrie n'a de sens clinique que si elle relie la **dose absorbée à la tumeur** à l'effet thérapeutique. En 177Lu-DOTATATE (PRRT), la dose tumorale médiane atteint **4,6 Gy/GBq (3,09–9,47)**, très supérieure à la dose rénale (~0,64 Gy/GBq) ou médullaire (~0,04 Gy/GBq) — c'est cette **fenêtre thérapeutique** favorable qui fonde l'index thérapeutique du couple SSTR2 [20]. L'objectif d'une dosimétrie personnalisée est d'**adapter l'activité par cure** pour pousser la dose tumorale tout en restant sous les seuils rénal (23 Gy) et médullaire (2 Gy) [4].\n\n**Relation dose-réponse et BED.** La réponse tumorale corrèle à la dose absorbée, mais l'analyse rigoureuse impose la **dose biologiquement efficace (BED)** : BED = D·[1 + D/(α/β)·λ/(λ+μ)], où λ = ln2/T_eff et μ la constante de réparation [4]. La BED, issue du modèle linéaire-quadratique, étend le schéma MIRD aux schémas fractionnés (cures répétées) et permet de comparer des protocoles de débits de dose différents [4]. Côté toxicité, la même logique s'applique : une dose médullaire > 1,5 Gy s'associe à un risque de thrombopénie de grade 4 [4].\n\n**Niveau de preuve clinique des schémas validés.** Les essais pivots ancrent ces principes dans des résultats durs :\n\n| Traitement | Schéma | Résultat pivot | Source |\n|---|---|---|---|\n| 177Lu-DOTATATE (NETTER-1) | **7,4 GBq × 4 cycles / 8 sem** | SSP : **HR 0,18** (IC95 % 0,11–0,29 ; p < 0,0001) | [10] |\n| 177Lu-DOTATATE (NETTER-1, OS) | idem | Différence de survie médiane **+11,7 mois** (non significative) | [31] |\n| 177Lu-PSMA-617 (VISION) | **7,4 GBq × 6 cycles / 6 sem** | OS médiane **15,3 vs 11,3 mois** ; HR **0,62** | [11] |\n| 131I (CTD, ablation bas risque) | **1,1–1,85 GBq (30–50 mCi)** | Ablation comparable à 2,2 GBq | [32,43] |\n\nL'approbation FDA du 177Lu-PSMA-617 (Pluvicto) date de **mars 2022**, celle de l'EMA de décembre 2022 [11]. Pour le 131I du cancer thyroïdien différencié, les activités empiriques s'échelonnent de **1,1–1,85 GBq** (ablation bas risque) à **5,6–7,4 GBq (150–200 mCi)** pour la maladie locorégionale avancée [32].\n\n**Le compte rendu dosimétrique structuré.** Un compte rendu de dosimétrie doit être actionnable et reproductible. Trame recommandée :\n\n1. **Technique** : radiopharmaceutique et activité administrée, méthode (niveau organe OLINDA/IDAC/MIRDcalc vs voxélisée 3D), modalité et nombre de temps d'imagerie, calibration et corrections appliquées [2,27].\n2. **Cinétique** : demi-vies effectives par région, qualité de l'ajustement des TAC, période d'observation atteinte [21].\n3. **Doses aux OAR** : dose absorbée (Gy) et BED par organe, comparées aux seuils (reins 23 Gy / BED 40 Gy, moelle 2 Gy, lacrymales 25 Gy) [4].\n4. **Dose tumorale** : dose absorbée par lésion (Gy et Gy/GBq), couverture (D_mean, D_98 %) si dosimétrie 3D [20,27].\n5. **Conclusion** : marge restante avant seuil, **recommandation d'adaptation d'activité** pour la cure suivante, et alerte si un OAR approche sa contrainte.\n\n**De la dosimétrie à la décision.** Le compte rendu conclut explicitement : peut-on délivrer la cure prévue ? Faut-il réduire l'activité (p. ex. réduction de 20 % si dégradation rénale > 40 % de l'eGFR mais DFG > 30 mL/min [12]) ? Le seuil cumulé est-il atteint (cumul rénal VISION ≈ 19 Gy sur 6 cycles, sous la limite de 23 Gy [29]) ? C'est cette traduction chiffrée → décision qui distingue la dosimétrie personnalisée d'un simple schéma d'activité fixe.",
+        "stats": [
+          {
+            "value": "4,6 Gy/GBq",
+            "label": "Dose tumorale médiane 177Lu-DOTATATE [20]"
+          },
+          {
+            "value": "HR 0,18",
+            "label": "SSP NETTER-1 (177Lu-DOTATATE) [10]"
+          },
+          {
+            "value": "15,3 mois",
+            "label": "OS médiane VISION (177Lu-PSMA) [11]"
+          },
+          {
+            "value": "23 Gy",
+            "label": "Limite rénale à ne pas franchir [4]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 — Mesurer la dose tumorale",
+            "text": "Dose absorbée par lésion (Gy/GBq) issue des TAC tumorales ; en 3D, lire D_mean et D_98 % sur le DVH pour juger la couverture [20,27]."
+          },
+          {
+            "title": "2 — Convertir en BED",
+            "text": "Appliquer le modèle linéaire-quadratique pour comparer cures et débits de dose, côté tumeur et côté OAR [4]."
+          },
+          {
+            "title": "3 — Confronter aux seuils",
+            "text": "Positionner chaque OAR vis-à-vis de sa contrainte (reins 23 Gy / BED 40 Gy, moelle 2 Gy) et estimer la marge cumulée restante [4,29]."
+          },
+          {
+            "title": "4 — Décider l'adaptation",
+            "text": "Maintenir, réduire (−20 % si eGFR se dégrade [12]) ou interrompre selon la marge ; tracer la recommandation dans le compte rendu [12]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — praticité contre perfection",
+            "text": "La dosimétrie clinique de routine reste un compromis entre rigueur (Monte-Carlo voxélisé, multi-temps) et faisabilité (1 SPECT/CT + planaires, valeurs S au niveau organe) [44,3]. Documenter explicitement la méthode employée conditionne la comparabilité des doses entre cures et entre centres."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — comparer des doses non comparables",
+            "text": "Une dose tumorale exprimée en Gy/GBq n'est interprétable qu'avec la même méthode de segmentation, de calibration et d'intégration d'un temps à l'autre [28]. Changer de logiciel (OLINDA/EXM vs MIRDcalc) ou de nombre de temps d'imagerie entre cures fausse la lecture de la relation dose-réponse."
+          },
+          {
+            "type": "info",
+            "title": "Outils de calcul de référence",
+            "text": "MIRDcalc (MIRD Pamphlet 28) implémente 12 fantômes ICRP (adulte H/F, pédiatriques nouveau-né à 15 ans) avec interpolation par masse corporelle et modèle de tumeur sphérique [2]. OLINDA/EXM (approuvé FDA) et IDAC-Dose 2.1 sont les alternatives niveau organe ; la dosimétrie voxélisée 3D (MIRD 23) reste la plus précise [3,27]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique fermée : la dose tumorale et les doses aux organes à risque mesurées à chaque cure, converties en dose biologiquement efficace et confrontées aux seuils de tolérance, alimentent la décision d'adapter l'activité de la cure suivante."
+      },
+      {
+        "title": "D13 - D13 · Incertitudes, sources d'erreur et harmonisation",
+        "text": "La **dose absorbée** (en gray, **Gy = J/kg**) calculée en théranostique est une grandeur dérivée : sa justesse dépend en chaîne de l'étalonnage de l'activimètre, de la quantification SPECT, de l'échantillonnage temporel de la courbe activité-temps, de la segmentation des organes et de la valeur S retenue. Le principe directeur est posé par les guidelines EANM/MIRD : **la précision de la dose dépend directement de la précision de l'estimation de l'activité à chaque temps d'imagerie** [28]. Toute erreur en amont (calibration, correction d'atténuation/diffusion) se propage donc intégralement jusqu'au gray final.\n\n**▸ Rappel du formalisme et de ses degrés de liberté.** L'équation MIRD **D = Σ (Ã × S)** estime la dose à l'organe cible comme la somme, sur les organes sources, du produit de l'**activité cumulée intégrée dans le temps (TIAC, Ã, en MBq·h)** par la **valeur S** (débit de dose absorbée par unité d'activité dans la source) [1,2]. Chaque terme est une source d'incertitude indépendante : Ã dépend de la quantification et de l'intégration temporelle ; S dépend du fantôme anatomique et de la masse d'organe.\n\n**▸ Trois niveaux de modélisation, trois compromis précision/praticabilité** [3] :\n\n| Approche | Principe | Précision | Limite |\n|---|---|---|---|\n| **Valeurs S au niveau organe** (OLINDA/EXM, IDAC-Dose 2.1, MIRDcalc) | Fantômes de référence, organe entier | Bonne pour l'organe, fantôme-dépendante | Anatomie standard, masse fixe |\n| **Dose-point kernel** (convolution) | Noyaux de dose ponctuelle voxélisés | Intermédiaire | Milieu homogène supposé |\n| **Monte-Carlo voxélisé** | Transport explicite des particules | La plus précise | Lourdeur de calcul, temps |\n\n**MIRDcalc** implémente **12 fantômes computationnels ICRP** (adulte de référence H/F selon ICRP 110, pédiatriques nouveau-né, 1, 5, 10 et 15 ans selon ICRP 143), avec interpolation par masse corporelle et un modèle de tumeur sphérique [2] — l'écart entre le fantôme et l'anatomie réelle du patient constitue une source d'erreur structurelle, particulièrement pour les organes dont la masse s'écarte de la référence.\n\n**▸ Échantillonnage temporel — le maillon faible.** La reconstruction de la courbe activité-temps repose sur des fonctions exponentielles ajustées à un nombre limité de points : il faut **2 à 3 points par terme exponentiel**, et une période d'observation idéalement étendue à **3 à 5 fois la demi-vie effective** [21]. Pour la dosimétrie rénale du **177Lu**, l'EANM recommande **3 acquisitions SPECT/CT entre J1 (24 h) et J7** au premier cycle, avec **≥ 2 jours entre les deux derniers points** ; les cycles suivants peuvent se contenter d'≥ 1 SPECT/CT [4]. La sous-estimation de la composante d'élimination lente (point tardif manquant) est une cause classique de biais sur Ã.\n\n**▸ Quantification SPECT du 177Lu.** La justesse impose un **facteur de calibration caméra** dédié et une **correction du temps mort (dead-time, τ)** aux activités élevées [19]. Le MIRD Pamphlet 26 standardise la procédure : calibration par sphère de **177Lu de 100 mL** dans un cylindre elliptique rempli d'eau [28]. La reconstruction doit être **itérative**, avec corrections d'atténuation (CT), de diffusion et modélisation de la réponse du collimateur ; acquisition typique **60 à 120 angles de projection, 30 à 40 s/projection** [4].\n\n**▸ Dosimétrie médullaire — méthode dépendante du résultat.** La dose à la **moelle osseuse rouge** peut être estimée par méthode sanguine (prélèvements à T0, 10, 30, 60, 90, 120, 360 min, 24 h et un point tardif [22]) ou par méthode image-based. Le choix de la méthode et la présence de **métastases osseuses** influencent à la fois la dose estimée et sa corrélation à la toxicité hématologique observée [39]. Les valeurs S médullaires de référence (IDAC-Dose 2.1) pour le 177Lu sont **S(MR←MR) = 0,0349 mGy·MBq⁻¹·h⁻¹ (homme)** et **0,0457 mGy·MBq⁻¹·h⁻¹ (femme)** [4] — un dimorphisme sexuel d'environ 30 % à ne pas négliger.\n\n**▸ Demi-vie effective du 131I — variabilité biologique majeure.** Pour le 131I, la demi-vie effective in vivo est intrinsèquement instable : **≈ 10,5 h après rhTSH** contre **≈ 15,7 h après sevrage hormonal** dans le cancer thyroïdien différencié [9]. Cette variabilité de la cinétique selon la préparation hormonale impose une dosimétrie patient-spécifique et interdit l'extrapolation d'un patient à l'autre.",
+        "stats": [
+          {
+            "value": "3 points",
+            "label": "SPECT/CT 177Lu reins, J1→J7 (EANM) [4]"
+          },
+          {
+            "value": "100 mL",
+            "label": "Sphère 177Lu de calibration (MIRD 26) [28]"
+          },
+          {
+            "value": "10,5 vs 15,7 h",
+            "label": "T½ effective 131I : rhTSH vs sevrage [9]"
+          },
+          {
+            "value": "12",
+            "label": "Fantômes ICRP de MIRDcalc [2]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — propagation des erreurs en amont",
+            "text": "Une calibration d'activimètre sans traçabilité métrologique, ou une correction de temps mort omise aux fortes activités de 177Lu, biaise **toute** la chaîne dosimétrique : la dose en Gy hérite intégralement de l'erreur sur l'activité. La justesse de la mesure d'activité précède la justesse de la dose [19,28]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — la limite du 68Ga pour la dosimétrie prédictive",
+            "text": "Le 68Ga (T½ ≈ 68 min) est trop court pour une dosimétrie multi-temps fiable : il sert à la **sélection** (PET compagnon), non à la prédiction de dose. À l'inverse, la paire 124I/131I autorise une dosimétrie prédictive multi-temps avant le traitement par 131I [38]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — praticité versus perfection",
+            "text": "La dosimétrie clinique de routine reste un **compromis** : Monte-Carlo voxélisé est le plus précis mais lourd ; les valeurs S au niveau organe sont praticables mais fantôme-dépendantes. L'enjeu n'est pas la perfection théorique mais la reproductibilité inter-centres, qui conditionne la comparabilité des contraintes de dose [44]."
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Étalonnage",
+            "text": "Activimètre tracé métrologiquement + facteur de calibration SPECT (sphère 177Lu 100 mL, MIRD 26) + correction de temps mort [19,28]."
+          },
+          {
+            "title": "2 · Acquisition multi-temps",
+            "text": "177Lu reins : 3 SPECT/CT entre J1 et J7, ≥ 2 j entre les 2 derniers points ; reconstruction itérative avec corrections [4]."
+          },
+          {
+            "title": "3 · Courbe activité-temps",
+            "text": "Ajustement exponentiel, 2–3 points par terme, observation sur 3–5× la T½ effective ; éviter l'omission du point tardif [21]."
+          },
+          {
+            "title": "4 · Calcul de dose",
+            "text": "Application D = Σ(Ã × S) avec fantôme ICRP adapté à la masse ; choix de l'approche (organe / kernel / Monte-Carlo) selon l'organe [1,2,3]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : imagerie de sélection (68Ga / 123I-124I), traitement par radionucléide (177Lu / 131I), puis dosimétrie quantitative par SPECT/CT post-thérapeutique alimentant la réévaluation et l'ajustement des cycles suivants.",
+        "figureCaption": "Fig. 1 — Boucle théranostique : chaque temps d'imagerie quantitatif conditionne la justesse de la dose absorbée, donc l'ajustement des cycles."
+      },
+      {
+        "title": "D14 - D14 · Comparaison des approches et place dans la stratégie thérapeutique",
+        "text": "La dosimétrie n'a de sens qu'au regard d'un objectif thérapeutique : **maximiser la dose tumorale sous contrainte de toxicité aux organes à risque (OAR)**. Deux philosophies coexistent — l'**activité fixe** (schéma des essais pivots, simple et reproductible) et la **dosimétrie individualisée** (poursuite des cycles jusqu'à une limite de dose à l'OAR critique). Le choix dépend du radiopharmaceutique, de l'OAR dominant et du cadre réglementaire.\n\n**▸ Doses absorbées par unité d'activité — repères comparatifs.** Les valeurs ci-dessous, exprimées en **Gy/GBq**, fondent l'estimation prévisionnelle et la comparaison entre agents :\n\n| Organe / cible | 177Lu-DOTATATE (médianes) | 177Lu-PSMA-617 (VISION, n=29) |\n|---|---|---|\n| **Reins** | 0,64 Gy/GBq (0,47–0,90) [20] | 0,43 ± 0,16 Gy/GBq [29] |\n| **Moelle rouge** | 0,04 Gy/GBq (0,02–0,06) [20] | 0,035 ± 0,02 Gy/GBq [29] |\n| **Glandes salivaires** | — | 0,63 ± 0,36 Gy/GBq [29] |\n| **Glandes lacrymales** | — | 2,1 ± 0,47 Gy/GBq [29] |\n| **Rate** | 1,23 Gy/GBq (0,53–1,59) [20] | — |\n| **Foie** | 0,54 Gy/GBq (0,23–0,62) [20] | — |\n| **Tumeur** | **4,6 Gy/GBq (3,09–9,47)** [20] | — |\n\nLe **différentiel de dose tumeur/rein** du 177Lu-DOTATATE — environ **4,6 contre 0,64 Gy/GBq**, soit un facteur ~7 — illustre la fenêtre thérapeutique exploitée par la PRRT (peptide receptor radionuclide therapy, radiothérapie interne vectorisée par peptide) [20]. Pour le 177Lu-PSMA, l'OAR dominant se déplace vers les **glandes lacrymales** (2,1 Gy/GBq), au cumul ≈ **92 ± 21 Gy sur 6 cycles** [29], devant les reins.\n\n**▸ Contraintes de dose aux OAR — les bornes à ne pas franchir.** [Toutes [4], sauf indication]\n\n| OAR | Contrainte | Commentaire |\n|---|---|---|\n| **Moelle rouge** | **2 Gy** | Seuil de toxicité hématologique sévère ; thrombopénie grade 4 rapportée > 1,5 Gy |\n| **Reins (BED)** | **≈ 39–40 Gy** | Incidence 5 % de toxicité ; **28 Gy** si facteurs de risque (HTA, diabète, néphropathie) ; **23 Gy** en dose absorbée (essais) |\n| **Glandes salivaires** | **20 Gy** (proposée) | Faible toxicité sous ≈ 10 Gy moyen |\n| **Glandes lacrymales** | **25 Gy** | Risque de xérophtalmie |\n| **Hypophyse** | **20 Gy** (déficit GH) / 45 Gy (panhypopituitarisme) | — |\n\nLa **dose biologiquement efficace (BED)**, dérivée du modèle linéaire-quadratique, intègre le débit de dose et la réparation cellulaire : **BED = D·[1 + D/(α/β)·λ/(λ+μ)]**, où **λ = ln2/T_eff** et **μ** la constante de réparation. C'est elle qui étend le schéma MIRD aux traitements fractionnés et permet de comparer la PRRT à la radiothérapie externe pour le rein et la moelle [4].\n\n**▸ Activité fixe versus dosimétrie individualisée.** Les essais pivots ont validé des schémas à **activité fixe** : NETTER-1 (177Lu-DOTATATE) **7,4 GBq × 4 cycles toutes les 8 ± 1 sem** [10] ; VISION (177Lu-PSMA-617) **7,4 GBq × 6 cycles toutes les 6 sem** [11]. La dosimétrie individualisée propose au contraire de **poursuivre les cycles jusqu'à 23 Gy aux reins OU 2 Gy à la moelle** [4,30], ce qui peut autoriser davantage de cycles chez les patients à faible dose par cycle. Sandström et al. ont montré une dose médullaire moyenne de **0,20 Gy (0,11–0,37)** par cycle de 7,4 GBq, laissant souvent une marge avant la limite de 2 Gy [30].\n\n**▸ Efficacité clinique — l'arrière-plan qui justifie la dosimétrie.** La pertinence des contraintes de dose s'évalue à l'aune du bénéfice :\n\n| Essai | Schéma | Résultat principal |\n|---|---|---|\n| **NETTER-1** (TNE intestin moyen) | 177Lu-DOTATATE 7,4 GBq ×4 | **SSP : HR 0,18 (IC95 % 0,11–0,29 ; p < 0,0001)** ; SSP médiane non atteinte vs 8,5 mois [10] |\n| **NETTER-1** (SG finale) | idem | Différence médiane SG **11,7 mois** (non significative) [31] |\n| **VISION** (mCRPC PSMA+) | 177Lu-PSMA-617 7,4 GBq ×6 | **SG médiane 15,3 vs 11,3 mois ; HR 0,62** [11] |\n\n**▸ La paire iodée — la plus « pure ».** Pour le 131I, la dosimétrie thyroïdienne suit la méthode de **Benua-Leeper** : l'activité maximale tolérée (AMT) délivre **≤ 2 Gy au sang** (substitut de la moelle), avec rétention corps entier **< 4,44 GBq (120 mCi) à 48 h**, ou **< 3 GBq (80 mCi) en cas de métastases pulmonaires** [13,33,34]. L'alternative empirique à activités fixes — **1,1–1,85 GBq** (ablation bas risque), **3,7–5,6 GBq** (maladie locorégionale) — reste la plus courante en pratique [32], une comparaison 1,1 vs 2,2 GBq montrant une efficacité d'ablation comparable en bas risque [43].",
+        "stats": [
+          {
+            "value": "4,6 Gy/GBq",
+            "label": "Dose tumorale médiane 177Lu-DOTATATE [20]"
+          },
+          {
+            "value": "2 Gy",
+            "label": "Limite moelle rouge (toxicité sévère) [4]"
+          },
+          {
+            "value": "39–40 Gy",
+            "label": "BED rénale limite (~5 % toxicité) [4]"
+          },
+          {
+            "value": "HR 0,62",
+            "label": "SG VISION, 177Lu-PSMA-617 [11]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — l'OAR dominant change avec le vecteur",
+            "text": "Le rein est l'OAR critique de la PRRT (177Lu-DOTATATE) et un OAR majeur du 177Lu-PSMA, mais pour ce dernier ce sont les **glandes lacrymales** qui reçoivent la dose par GBq la plus élevée (2,1 Gy/GBq, cumul ≈ 92 Gy sur 6 cycles) [29]. La stratégie de protection doit cibler l'OAR réellement limitant pour chaque agent."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — confondre dose absorbée et BED rénale",
+            "text": "La limite rénale « historique » de 23 Gy s'exprime en **dose absorbée**, tandis que la borne de ~39–40 Gy s'exprime en **BED**. Les deux ne sont pas interchangeables : la BED intègre le débit de dose et la réparation, et c'est elle qui se compare aux seuils de la radiothérapie externe [4]."
+          },
+          {
+            "type": "info",
+            "title": "Activité fixe vs individualisée",
+            "text": "Les AMM reposent sur l'activité fixe (NETTER-1, VISION), gage de reproductibilité. La dosimétrie individualisée (poursuite jusqu'à 23 Gy reins / 2 Gy moelle) peut optimiser le nombre de cycles chez les bons répondeurs, mais reste plus exigeante en ressources [4,30]."
+          }
+        ],
+        "figureKey": "SSTR_BINDING",
+        "figureAlt": "Liaison du 177Lu-DOTATATE au récepteur de la somatostatine de type 2 (SSTR2) surexprimé par les tumeurs neuroendocrines, sélectionné en amont par l'imagerie compagnon 68Ga-DOTATATE PET, fondant le différentiel de dose tumeur/rein exploité par la PRRT.",
+        "figureCaption": "Fig. 2 — Ciblage SSTR2 : la sélection par 68Ga-DOTATATE PET conditionne le différentiel de dose tumeur/OAR (≈ 7 pour le 177Lu-DOTATATE)."
+      },
+      {
+        "title": "D15 - D15 · Cadre réglementaire, recommandations et perspectives",
+        "text": "La dosimétrie théranostique n'est pas seulement une bonne pratique : elle relève désormais d'une **obligation réglementaire** en Europe et d'un corpus de recommandations EANM/SNMMI structurant chaque étape, de la sélection du patient au seuil de sortie. Cette section situe la pratique dans son cadre normatif et ses évolutions.\n\n**▸ Obligation de planification individualisée (Directive 2013/59/Euratom).** L'**article 56** des normes de base de sûreté (Basic Safety Standards) impose, pour toute exposition radiothérapeutique — ce qui inclut la radiothérapie interne vectorisée —, que **l'exposition des volumes cibles soit planifiée individuellement et sa délivrance vérifiée**, que les doses aux tissus non-cibles soient maintenues ALARA (As Low As Reasonably Achievable, aussi basses que raisonnablement possible), et qu'un **physicien médical** soit impliqué [26]. La dosimétrie n'est donc plus optionnelle pour les traitements à visée curative dans le champ d'application de la directive.\n\n**▸ Sélection du patient — critères dosimétriques et fonctionnels (177Lu-PSMA, EANM/SNMMI).**\n\n| Paramètre | Seuil | Conduite |\n|---|---|---|\n| **Avidité PSMA PET** | Captation > 1× parotide encouragée ; exclure si lésion ≥ 1 cm < 0,5× parotide [12] | Sélectionne les patients répondeurs |\n| **DFG** | **≥ 30 mL/min** requis | Réduction d'activité 20 % si perte eGFR > 40 % ; arrêt si DFG < 30 [12] |\n| **Leucocytes** | **< 2,5/nL** | Contre-indication hématologique relative [12] |\n| **PNN** | **< 1,5/nL** | Contre-indication hématologique relative [12] |\n| **Plaquettes** | **< 75/nL** | Contre-indication hématologique relative [12] |\n\nDans NETTER-1, la sécurité de la PRRT a été établie pour un **eGFR > 50 mL/min/1,73 m²**, le traitement clinique restant possible jusqu'à 30 mL/min [23].\n\n**▸ Néphroprotection — réduire la dose à l'OAR critique.** En PRRT au 177Lu-DOTATATE, la **co-perfusion d'acides aminés chargés positivement (L-lysine / L-arginine)** inhibe par compétition la réabsorption tubulaire proximale (mégaline) du radiopeptide et réduit la dose rénale **jusqu'à 65 %** ; la perfusion de 4 h débute 30 min avant l'injection [24,25]. C'est l'intervention dosimétrique la plus efficace en routine, complémentaire de la planification individualisée.\n\n**▸ Radioprotection de l'entourage — le seuil de sortie.** L'élimination du 177Lu-DOTATATE est essentiellement urinaire, avec **≈ 50 % éliminés dans les 6 premières heures** [40]. Le seuil de sortie usuel correspond à un **débit de dose à 1 m (EDR-1m) < 40 µSv/h** (réglementation BSS, limite public 1 mSv/an). L'étude PREELU a montré qu'à **180 min après ≈ 7400 MBq**, l'EDR-1m est < 40 µSv/h dans tous les cas et < 25 µSv/h dans 64 % des cas, rendant le **traitement ambulatoire faisable** [40,41]. À l'inverse, le **131I** (γ de 364 keV, haute énergie) impose le plus souvent une **hospitalisation en chambre protégée**, les seuils de sortie variant selon la réglementation nationale.\n\n**▸ Cadre des recommandations.** Le socle normatif s'articule entre comités de dosimétrie et standards de procédure :\n\n| Référentiel | Champ |\n|---|---|\n| **EANM Dosimetry Committee** [4] | Dosimétrie des ligands 177Lu (SSTR et PSMA) : protocoles, contraintes OAR, BED |\n| **MIRD Pamphlets 21 / 23 / 26 / 28** [1,27,28,2] | Nomenclature, SPECT quantitatif 3D, guideline 177Lu, MIRDcalc |\n| **SNMMI/EANM DTC 2022** [13,32] | Évaluation et thérapie du cancer thyroïdien différencié au 131I |\n| **Joint EANM/SNMMI 177Lu-PSMA-RLT** [12] | Sélection, fonction rénale, contre-indications hématologiques |\n| **Directive 2013/59/Euratom art. 56** [26] | Obligation de planification individualisée + physicien médical |\n\n**▸ Perspectives.** La tension structurante reste celle de la **praticité versus la perfection** : la dosimétrie de routine demeure un compromis entre la rigueur Monte-Carlo et la faisabilité clinique [44]. Trois axes se dégagent : (1) la généralisation du **SPECT/CT quantitatif standardisé** (MIRD 26) pour harmoniser les estimations inter-centres [28] ; (2) l'essor des **paires 124I/131I** pour une dosimétrie prédictive multi-temps là où le 68Ga est trop court [38] ; (3) la consolidation du formalisme **BED** pour individualiser le nombre de cycles selon la dose réellement reçue par l'OAR critique [4]. L'enjeu de fond est de transformer la dosimétrie d'un outil de recherche en un standard de soin reproductible, condition de la médecine théranostique personnalisée.",
+        "stats": [
+          {
+            "value": "Art. 56",
+            "label": "Planification individualisée obligatoire (Euratom) [26]"
+          },
+          {
+            "value": "jusqu'à 65 %",
+            "label": "Réduction dose rénale par acides aminés [24]"
+          },
+          {
+            "value": "< 40 µSv/h",
+            "label": "Seuil de sortie EDR-1m, 177Lu [40,41]"
+          },
+          {
+            "value": "≥ 30 mL/min",
+            "label": "DFG minimal requis (177Lu-PSMA) [12]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — la dosimétrie est une obligation, pas une option",
+            "text": "L'article 56 de la Directive 2013/59/Euratom impose la planification individualisée de la dose aux volumes cibles, la vérification de sa délivrance et l'implication d'un physicien médical pour toute exposition radiothérapeutique. Réaliser une radiothérapie interne vectorisée sans cadre dosimétrique expose à un défaut de conformité réglementaire [26]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — néphroprotection systématique en PRRT",
+            "text": "La co-perfusion de L-lysine/L-arginine (4 h, débutée 30 min avant l'injection) réduit la dose rénale jusqu'à 65 % en bloquant la réabsorption tubulaire médiée par la mégaline. C'est l'intervention dosimétrique au meilleur rapport bénéfice/effort, à ne jamais omettre pour le 177Lu-DOTATATE [24,25]."
+          },
+          {
+            "type": "info",
+            "title": "Ambulatoire pour le 177Lu, hospitalisation pour le 131I",
+            "text": "Le 177Lu (β⁻/γ basse énergie, élimination urinaire rapide) autorise un traitement ambulatoire dès EDR-1m < 40 µSv/h, atteint chez tous les patients ~180 min après 7400 MBq (PREELU) [40,41]. Le 131I (γ 364 keV) impose le plus souvent une chambre protégée, selon la réglementation nationale."
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Justification & sélection",
+            "text": "Imagerie compagnon (68Ga-PSMA / 68Ga-DOTATATE), avidité de la cible, DFG ≥ 30 mL/min, numération conforme [12]."
+          },
+          {
+            "title": "2 · Planification dosimétrique",
+            "text": "Estimation prévisionnelle de la dose aux OAR, implication du physicien médical (art. 56 Euratom) [26]."
+          },
+          {
+            "title": "3 · Néphroprotection & administration",
+            "text": "Co-perfusion d'acides aminés 4 h (177Lu-DOTATATE), perfusion IV lente du radiopharmaceutique [24]."
+          },
+          {
+            "title": "4 · Vérification & radioprotection",
+            "text": "SPECT/CT post-thérapeutique quantitatif, contrôle de la dose délivrée, EDR-1m < 40 µSv/h avant sortie [28,40]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Principe ALARA appliqué à la radioprotection de l'entourage en thérapie au 177Lu : leviers temps, distance et écran, avec seuil de sortie EDR-1m inférieur à 40 µSv/h conditionnant le traitement ambulatoire.",
+        "figureCaption": "Fig. 3 — ALARA (temps / distance / écran) : structure les consignes de sortie ; seuil EDR-1m < 40 µSv/h pour l'ambulatoire (177Lu)."
+      },
+      {
+        "title": "E16 - E16 · Cas pratiques commentés (177Lu et 131I)",
+        "text": "Quatre vignettes appliquent le formalisme **MIRD** (Medical Internal Radiation Dose) — D(r_T) = Σ_S Ã(r_S)·S(r_T←r_S), où Ã est l'**activité cumulée intégrée dans le temps** (TIAC) dans l'organe source r_S et S la **valeur S** (dose absorbée dans la cible par transformation nucléaire) [1] — aux trois grandes indications thérapeutiques. Chaque cas se lit : *contexte → données dosimétriques → calcul/interprétation → conduite*. Les valeurs par unité d'activité sont sourcées ; les constantes physiques pivots sont rappelées (¹⁷⁷Lu : période **6,64 j**, β⁻ moyen ≈ 134 keV, parcours tissulaire moyen ≈ 0,67 mm, γ imageables **112,9 keV** et **208,4 keV** [6] ; ¹³¹I : période **8,02 j**, β⁻ moyen ≈ 192 keV, γ principal **364 keV** [8]).\n\n**Lecture transversale des seuils mobilisés dans les cas**\n\n| Organe à risque | Contrainte usuelle | Source |\n|---|---|---|\n| Reins (dose absorbée) | **23 Gy** (ou 27 Gy) | [4] |\n| Reins (BED, dose biologiquement efficace) | **≈ 40 Gy** sans facteur de risque ; **28 Gy** si HTA/diabète/néphropathie | [4] |\n| Moelle osseuse rouge | **2 Gy** (toxicité hématologique sévère) | [4] |\n| Glandes salivaires | **20 Gy** (proposé ; faible toxicité < ≈ 10 Gy) | [4] |\n| Glandes lacrymales | **25 Gy** | [4] |\n| Sang/moelle (¹³¹I, méthode Benua-Leeper) | **2 Gy**, rétention corps entier 48 h < **4,44 GBq** (< 3 GBq si métastases pulmonaires) | [13,33] |",
+        "steps": [
+          {
+            "title": "Cas 1 — PRRT par ¹⁷⁷Lu-DOTATATE : reins comme organe critique",
+            "text": "*Contexte* : homme de 62 ans, TNE de l'intestin moyen bien différenciée, SSTR+ en ⁶⁸Ga-DOTATATE PET, progressive sous octréotide. Schéma **NETTER-1** : **7,4 GBq (200 mCi) ± 10 %, 4 cycles toutes les 8 semaines**, perfusion sur 30–40 min [10]. *Données* : la dose rénale médiane rapportée en ¹⁷⁷Lu-DOTATATE est **0,64 Gy/GBq** (intervalle 0,47–0,90) [20], la fourchette EANM étant **0,54–1,00 Gy/GBq** [4] ; dose médullaire moyenne **0,20 Gy par cycle de 7,4 GBq** (0,11–0,37) [30]. *Calcul* : à 0,64 Gy/GBq × 7,4 GBq × 4 cycles ≈ **19 Gy aux reins** et ≈ **0,8 Gy à la moelle** sur le protocole complet [20,30] — sous les seuils de **23 Gy** rénal et **2 Gy** médullaire [4]. *Conduite* : néphroprotection par **co-perfusion d'acides aminés** (L-lysine / L-arginine, inhibition compétitive de la réabsorption tubulaire via la mégaline, réduction de la dose rénale jusqu'à **65 %**, débutée 30 min avant et poursuivie 4 h) [24,25] ; dosimétrie SPECT/CT au 1er cycle pour vérifier la marge avant d'envisager des cycles additionnels jusqu'à **23 Gy reins OU 2 Gy moelle** [4]."
+          },
+          {
+            "title": "Cas 2 — ¹⁷⁷Lu-PSMA-617 : glandes lacrymales/salivaires et reins (sous-étude VISION)",
+            "text": "*Contexte* : homme de 70 ans, cancer prostatique résistant à la castration métastatique (mCRPC) PSMA+, après inhibiteur de l'axe androgénique et taxane. Schéma **VISION** : **7,4 GBq/cycle, intervalle 6 semaines, jusqu'à 6 cycles** [11]. *Données* (sous-étude dosimétrique VISION, n=29, OLINDA/EXM 2.2) : glandes lacrymales **2,1 Gy/GBq** (cumul ≈ **92 Gy**), glandes salivaires **0,63 Gy/GBq** (cumul ≈ **28 Gy**), reins **0,43 Gy/GBq** (cumul ≈ **19 Gy**), moelle rouge **0,035 Gy/GBq** (cumul ≈ **1,5 Gy**) sur 6 cycles [29]. *Interprétation* : le cumul lacrymal (**≈ 92 Gy**) dépasse largement la contrainte de **25 Gy** [4], expliquant la xérophtalmie ; les glandes salivaires (**≈ 28 Gy**) franchissent la limite proposée de **20 Gy** [4] → l'OAR dose-limitant du PSMA n'est pas le rein mais les glandes exocrines, à l'inverse de la PRRT. *Conduite* : sélection par PSMA PET (exclure si lésions ≥ 1 cm avec captation < 0,5× parotide ; favoriser si > 1× parotide) [12], pré-requis **DFG ≥ 30 mL/min** (réduction d'activité 20 % si chute eGFR > 40 %, arrêt si < 30) [12], et contre-indications hématologiques : **leucocytes < 2,5/nL, PNN < 1,5/nL, plaquettes < 75/nL** [12]."
+          },
+          {
+            "title": "Cas 3 — ¹³¹I du cancer thyroïdien différencié : activité maximale tolérée (Benua-Leeper)",
+            "text": "*Contexte* : femme de 55 ans, cancer thyroïdien différencié avec métastases ganglionnaires et pulmonaires diffuses, candidate à une activité élevée. *Méthode dosimétrique Benua-Leeper* : déterminer l'**activité maximale tolérée (AMT)** délivrant ≤ **2 Gy au sang** (substitut de la moelle), avec deux contraintes de rétention : corps entier à 48 h < **4,44 GBq (120 mCi)**, abaissée à **3,0 GBq (80 mCi) en présence de métastases pulmonaires** (risque de fibrose) [13,33]. *Données* : prélèvements sanguins EANM à T0, 10, 30, 60, 90, 120, 360 min, 24 h et un point tardif pour reconstruire la courbe activité-temps [22] ; la période effective in vivo conditionne le calcul (≈ **10,5 h après rhTSH** vs ≈ **15,7 h après sevrage hormonal**) [9]. *Conduite* : ici la présence de métastases pulmonaires impose la contrainte basse → AMT plafonnée par la rétention 48 h < **3 GBq** [13]. L'alternative empirique (activités fixes) reste la plus courante : ablation de reliquat **1,1–1,85 GBq**, adjuvant **1,85–3,7 GBq**, maladie locorégionale **3,7–5,6 GBq**, avancée **5,6–7,4 GBq** [32]."
+          },
+          {
+            "title": "Cas 4 — Acquisition dosimétrique ¹⁷⁷Lu : du protocole d'imagerie à la valeur S",
+            "text": "*Contexte* : patient inclus dans un protocole de dosimétrie rénale au 1er cycle de ¹⁷⁷Lu-DOTATATE. *Protocole EANM* : **3 acquisitions SPECT/CT** centrées sur les reins entre **J1 (24 h)** et **J7**, avec ≥ 2 jours entre les deux derniers points ; ≥ 1 SPECT/CT par cycle aux cycles suivants ; reconstruction itérative (OSEM) avec corrections d'atténuation (CT), de diffusion et modélisation de la réponse du collimateur, 60–120 projections, 30–40 s/projection [4,28]. *Quantification* : la courbe activité-temps est ajustée par fonctions exponentielles (2–3 points par terme, observation jusqu'à 3–5× la demi-vie effective rénale ≈ **50–60 h**) [4,21] ; l'intégrale donne le TIAC, multiplié par la valeur S de l'organe (ex. moelle, IDAC-Dose 2.1 : S(MR←MR) = **0,0349 mGy·MBq⁻¹·h⁻¹** chez l'homme, **0,0457** chez la femme) [4]. *Point critique* : la précision de la dose dépend **directement** de la précision de l'estimation d'activité à chaque temps — d'où l'exigence de calibration de la caméra (sphère ¹⁷⁷Lu de 100 mL, MIRD 26) et de correction de temps mort [28,19]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la BED n'est pas la dose absorbée",
+            "text": "Les seuils rénaux s'expriment soit en **dose absorbée** (23–27 Gy), soit en **dose biologiquement efficace (BED)** qui intègre débit de dose et réparation cellulaire via le modèle linéaire-quadratique : la BED limite rénale est **≈ 40 Gy** sans facteur de risque, abaissée à **28 Gy** si HTA, diabète ou néphropathie [4]. Comparer une dose absorbée mesurée à un seuil exprimé en BED (ou l'inverse) conduit à sous- ou sur-traiter. La BED a été spécifiquement étendue au schéma MIRD pour le rein et la moelle [4]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — choisir le bon OAR limitant selon le vecteur",
+            "text": "L'organe critique change avec le radiopharmaceutique : **reins** pour la PRRT ¹⁷⁷Lu-DOTATATE (et ¹⁷⁷Lu-PSMA), **glandes salivaires/lacrymales** pour le ¹⁷⁷Lu-PSMA (expression PSMA exocrine, cumul lacrymal ≈ 92 Gy en VISION) [29], **sang/moelle** pour le ¹³¹I du cancer thyroïdien (méthode Benua-Leeper) [13]. Anticiper l'OAR limitant oriente la dosimétrie et la prémédication (acides aminés en PRRT, refroidissement/sialagogues en PSMA)."
+          }
+        ],
+        "stats": [
+          {
+            "value": "0,64 Gy/GBq",
+            "label": "Dose rénale médiane ¹⁷⁷Lu-DOTATATE [20]"
+          },
+          {
+            "value": "2,1 Gy/GBq",
+            "label": "Glandes lacrymales ¹⁷⁷Lu-PSMA (VISION) [29]"
+          },
+          {
+            "value": "2 Gy",
+            "label": "Seuil moelle / sang (toxicité sévère) [4,13]"
+          },
+          {
+            "value": "4,44 GBq",
+            "label": "Rétention 48 h max ¹³¹I (Benua) [13]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : imagerie compagnon (68Ga-DOTATATE / 68Ga-PSMA / 123I) pour sélection et dosimétrie prédictive, puis traitement par le radionucléide thérapeutique apparié (177Lu, 131I), suivi d'une réévaluation guidant l'adaptation d'activité aux seuils d'organes à risque."
+      },
+      {
+        "title": "E17 - E17 · Points clés, formules et pièges à retenir",
+        "text": "Synthèse haut rendement : le formalisme, les constantes physiques, les valeurs par unité d'activité et les seuils, condensés pour la décision et la composition.\n\n**Formule maîtresse (MIRD).** D(r_T) = Σ_S Ã(r_S) · S(r_T←r_S) : la dose absorbée à la cible = somme, sur chaque source, du produit **activité cumulée intégrée (TIAC, en MBq·h)** × **valeur S** (Gy par transformation, géométrie + transport des rayonnements tabulés dans des fantômes de référence) [1]. Trois familles de calcul : valeurs S au niveau organe (OLINDA/EXM, IDAC-Dose 2.1, MIRDcalc), convolution par noyaux de dose ponctuelle, et **Monte-Carlo voxélisé** (le plus précis) [3]. MIRDcalc implémente 12 fantômes ICRP (adulte H/F ICRP 110, pédiatriques ICRP 143) [2]. Le SPECT quantitatif patient-spécifique 3D relève du MIRD 23 [27] et la calibration ¹⁷⁷Lu du MIRD 26 [28].\n\n**Constantes physiques pivots (à sourcer à chaque emploi)**\n\n| Paramètre | ¹⁷⁷Lu | ¹³¹I |\n|---|---|---|\n| Période physique | **6,64 j** [6,21] | **8,02 j** [8] |\n| β⁻ (E moyenne) | ≈ **134 keV** (max 497 keV, 78,6 %) [35] | ≈ **192 keV** (max 607 keV) [8] |\n| Parcours β moyen tissus | ≈ **0,67 mm** [35] | — |\n| γ d'imagerie | **112,9 keV** (6,2 %) et **208,4 keV** (10,4 %) [6,35] | **364 keV** (≈ 81 %) [8] |\n| Δ électrons / photons | 147,2 / 35,1 keV·Bq⁻¹·s⁻¹ [4] | — |\n| Descendant stable | ¹⁷⁷Hf [35] | — |\n\n**Schémas approuvés.** ¹⁷⁷Lu-DOTATATE (Lutathera) : **7,4 GBq × 4 cycles / 8 sem** [10] ; ¹⁷⁷Lu-PSMA-617 (Pluvicto) : **7,4 GBq × 6 cycles / 6 sem** (FDA mars 2022) [11] ; ¹³¹I (NaI) : empirique 1,1–7,4 GBq ou Benua-Leeper [13,32].\n\n**Doses absorbées par unité d'activité (à retenir)**\n\n| Vecteur | Reins | Moelle rouge | Spécifique | Source |\n|---|---|---|---|---|\n| ¹⁷⁷Lu-DOTATATE | 0,54–1,00 Gy/GBq (médiane 0,64) | 0,04 Gy/GBq (≈ 50 mGy/GBq) | tumeur ≈ **4,6 Gy/GBq** | [4,20] |\n| ¹⁷⁷Lu-PSMA-617 | **0,43 Gy/GBq** | 0,035 Gy/GBq (≈ 44 mGy/GBq) | lacrymales 2,1 · salivaires 0,63 Gy/GBq | [4,29] |\n\n**Méthodologie d'acquisition.** ¹⁷⁷Lu (reins) : ≥ 3 SPECT/CT entre J1 et J7 au 1er cycle [4] ; ¹³¹I (sang/moelle) : prélèvements T0→tardif [22] ; ajustement exponentiel sur 3–5× la demi-vie effective [21] ; reconstruction itérative + corrections atténuation/diffusion/collimateur [28]. **Cadre réglementaire** : Directive 2013/59/Euratom, art. 56 — planification dosimétrique individualisée et vérification de la délivrance, avec implication d'un physicien médical [26].",
+        "list": [
+          "**MIRD** : D = Σ (Ã × S) — activité cumulée intégrée (TIAC) × valeur S ; la valeur S porte la géométrie et le transport des rayonnements dans des fantômes de référence [1].",
+          "Paire théranostique = même cible moléculaire, isotope d'imagerie pour sélectionner/doser puis isotope thérapeutique apparié : **⁶⁸Ga↔¹⁷⁷Lu** (DOTATATE/PSMA) et **¹²³I/¹²⁴I↔¹³¹I** (NIS) [36,38].",
+          "¹⁷⁷Lu : β⁻ de parcours ≈ **0,67 mm** (destruction localisée), γ **113/208 keV** imageables → SPECT post-thérapeutique et dosimétrie sur la même injection [6,35].",
+          "Seuils OAR : **reins 23 Gy** (BED ≈ 40 Gy sans facteur de risque, 28 Gy avec) ; **moelle 2 Gy** ; **salivaires 20 Gy** ; **lacrymales 25 Gy** [4].",
+          "PRRT poursuivie jusqu'à **23 Gy reins OU 2 Gy moelle** ; néphroprotection par acides aminés (−65 % dose rénale) [4,24].",
+          "¹³¹I (Benua-Leeper) : AMT ≤ **2 Gy au sang**, rétention 48 h < **4,44 GBq** (< 3 GBq si métastases pulmonaires) [13,33].",
+          "La précision dosimétrique est **directement** liée à la précision d'estimation d'activité à chaque temps : calibration caméra + correction de temps mort indispensables [28,19].",
+          "⁶⁸Ga (T½ ≈ 68 min) est trop court pour une dosimétrie multi-temps fiable, contrairement à la paire ¹²⁴I/¹³¹I [38].",
+          "Cumul VISION ¹⁷⁷Lu-PSMA : lacrymales **≈ 92 Gy**, salivaires **≈ 28 Gy**, reins **≈ 19 Gy**, moelle **≈ 1,5 Gy** sur 6 cycles → OAR limitant = glandes exocrines [29].",
+          "Distinguer **dose absorbée** (Gy) de **BED** (modèle linéaire-quadratique, intègre débit de dose et réparation) : ne jamais comparer l'une à un seuil exprimé dans l'autre [4]."
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — confondre activité administrée et dose absorbée",
+            "text": "Un schéma fixe (7,4 GBq) délivre une **dose absorbée variable** selon la biocinétique individuelle : à 0,43–1,00 Gy/GBq de dose rénale, l'écart inter-patient peut atteindre un facteur ~2. Seule la dosimétrie image-based (TIAC × S) relie l'activité injectée à la dose réellement reçue par l'OAR [4,20,29]. La dosimétrie clinique de routine reste un compromis entre praticité et perfection [44]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — métastases pulmonaires diffuses en ¹³¹I",
+            "text": "En présence de métastases pulmonaires diffuses captant l'iode, la contrainte de rétention corps entier à 48 h est abaissée de **4,44 GBq à 3,0 GBq** pour limiter le risque de fibrose pulmonaire radique [13,33]. Vérifier cette situation avant de calculer l'AMT par la méthode Benua-Leeper."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la valeur S dépend du fantôme et de la masse d'organe",
+            "text": "Les valeurs S sont tabulées pour des fantômes de référence ; un rein, une rate ou une tumeur de masse atypique introduit une erreur si la valeur S n'est pas remise à l'échelle par la masse réelle (segmentée sur le CT). MIRDcalc interpole par masse corporelle et modélise la tumeur sphérique [2] ; la dosimétrie Monte-Carlo voxélisée s'affranchit du fantôme et reste la référence de précision [3]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "D = Σ(Ã·S)",
+            "label": "Équation fondamentale MIRD [1]"
+          },
+          {
+            "value": "6,64 j / 8,02 j",
+            "label": "Périodes ¹⁷⁷Lu / ¹³¹I [6,8]"
+          },
+          {
+            "value": "23 Gy",
+            "label": "Seuil rénal (BED ≈ 40 Gy) [4]"
+          },
+          {
+            "value": "art. 56",
+            "label": "Euratom 2013/59 : dosimétrie individualisée obligatoire [26]"
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schéma de désintégration β⁻/γ : émission de l'électron β⁻ thérapeutique (177Lu vers 177Hf, 131I vers 131Xe) et des photons γ d'imagerie (113/208 keV pour le 177Lu, 364 keV pour le 131I), illustrant la double vocation thérapeutique et imageable de ces deux radionucléides."
+      },
+      {
+        "title": "E18 - E18 · Références & liens",
+        "text": "Bibliographie complète, sourcée et datée (recommandations EANM/SNMMI/MIRD, essais pivots et sources primaires). Chaque valeur chiffrée des sections E16–E17 renvoie à l'une de ces 44 références par sa citation inline [n].\n\n**Formalisme & outils dosimétriques.** MIRD Pamphlet 21 (schéma généralisé, nomenclature) [1] ; MIRD 23 (SPECT quantitatif 3D patient-spécifique) [27] ; MIRD 26 (guideline EANM/MIRD SPECT quantitatif ¹⁷⁷Lu, calibration) [28] ; MIRD 28 / MIRDcalc (logiciel, fantômes ICRP) [2] ; revue « Dosimetry in Radiopharmaceutical Therapy » [3] ; quantification d'activité ¹⁷⁷Lu [21] ; QSPECT ¹⁷⁷Lu avec correction de temps mort [19] ; praticité vs perfection en routine [44].\n\n**Recommandations & seuils d'organes à risque.** EANM dosimetry committee — dosimétrie des ligands ¹⁷⁷Lu SSTR & PSMA (seuils reins/moelle/salivaires/lacrymales, BED, valeurs S) [4] ; Joint EANM/SNMMI ¹⁷⁷Lu-PSMA-RLT (sélection, fonction rénale, contre-indications) [12] ; EANM position art. 56 Euratom (planification individualisée) [26] ; EANM SOP I — dosimétrie sang/moelle en cancer thyroïdien [22].\n\n**Propriétés physiques des radionucléides.** ¹⁷⁷Lu : demi-vie mesurée [5], développements thérapie/dosimétrie [6], aperçu ScienceDirect [35], production (options) [7], défis de production [15]. ¹³¹I : aperçu ScienceDirect [8], demi-vie effective et dosimétrie thyroïdienne [9].\n\n**Essais pivots & efficacité.** NETTER-1 (¹⁷⁷Lu-DOTATATE, NEJM 2017) [10] et survie globale finale (Lancet Oncol 2021) [31] ; VISION / FDA (¹⁷⁷Lu vipivotide tétraxétan) [11] ; sous-étude dosimétrique rénale et multi-organes VISION (J Nucl Med 2024) [29] ; dosimétrie individualisée rein/moelle ¹⁷⁷Lu-DOTATATE (Sandström) [30] ; revue systématique dosimétrie ¹⁷⁷Lu-DOTATATE [20] ; doses médullaires et réponse hématologique [39].\n\n**¹³¹I — cancer thyroïdien différencié.** Joint DTC Guidelines 2022 (version intégrale) [13] et version abrégée [32] ; estimation alternative de l'activité maximale (AMT) [33] ; optimisation par clairance rénale estimée [34] ; comparaison 1,1 vs 2,2 GBq (bas risque) [43].\n\n**Paire théranostique & cibles.** Radiopharmaceutiques théranostiques établis [36] ; prédiction de la dosimétrie rénale ¹⁷⁷Lu-DOTATATE à partir du ⁶⁸Ga-DOTATATE PET [37] ; ciblage du symporteur iodé ¹²⁴I/¹³¹I [38] ; ¹³¹I-mIBG (EANM) [14].\n\n**Production, marquage, contrôle qualité.** Production ¹⁷⁷Lu [7,15] ; doses patients CA vs NCA [16] ; réduction de la radiolyse du ¹⁷⁷Lu-DOTA-PSMA-617 [17] ; contrôle qualité HPLC ¹⁷⁷Lu-PSMA [18].\n\n**Préparation, sécurité, radioprotection.** Sécurité de la PRRT en insuffisance rénale chronique [23] ; tolérance des solutions d'acides aminés [24] ; signification de la néphroprotection par acides aminés [25] ; débit de dose externe après ¹⁷⁷Lu-DOTATATE [40] et précautions ambulatoires/hospitalières [41] ; instructions de radioprotection Lutathera (Dartmouth) [42].\n\n**Carte de liens (réseau de l'article).** Traceurs : ¹⁷⁷Lu-DOTATATE, ¹⁷⁷Lu-PSMA-617, ¹³¹I (NaI), ¹³¹I-mIBG · Examens compagnons : ⁶⁸Ga-DOTATATE PET, ⁶⁸Ga-PSMA PET, ¹²⁴I PET · Maladies : tumeurs neuroendocrines, cancer prostatique mCRPC, cancer thyroïdien différencié · Théranostique : boucle imager → doser → traiter → réévaluer. *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Note de fiabilité des sources",
+            "text": "Les valeurs physiques fines du ¹³¹I (énergies β/γ exactes, doses par organe en mSv/MBq) et les seuils nationaux de sortie de chambre protégée (référentiels IRSN/SFMN) doivent être confirmés sur RCP ANSM / IAEA et référentiels nationaux avant tout usage opérationnel : ils n'ont pas tous été retrouvés en source primaire directe lors de la recherche. Les valeurs dosimétriques par unité d'activité citées proviennent en revanche de sources évaluées par les pairs (EANM [4], VISION [29], NETTER-1 [10,30])."
+          }
+        ]
+      }
+    ]
+  }
+}

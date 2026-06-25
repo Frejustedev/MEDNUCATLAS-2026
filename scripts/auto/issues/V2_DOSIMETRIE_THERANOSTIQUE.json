@@ -1,0 +1,50 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A1 (carte d'identité) — texte introductif : « PFS médiane non atteinte vs 8,5 mois » ; cohérence avec D14 « 8,5 mois » mais C12 et la fiche de référence (Recherche 2) indiquent 8,4 mois.",
+    "problem": "Incohérence interne sur la SSP médiane du bras contrôle de NETTER-1 : l'article cite tantôt 8,5 mois (A1, D14) tantôt 8,4 mois (Recherche 2 de référence). Le NEJM 2017 original rapporte 8,4 mois pour le bras octréotide haute dose ; 8,5 mois est en réalité la valeur du bras contrôle de NETTER-2 (essai distinct). Risque de confondre NETTER-1 et NETTER-2.",
+    "fix": "Uniformiser à 8,4 mois (valeur NEJM 2017 du bras octréotide LAR 60 mg dans NETTER-1) partout, et ne pas utiliser 8,5 mois qui appartient à NETTER-2."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A3 + identityCard + plusieurs tableaux : β⁻ E_max du 177Lu donné à « 498 keV (79,3 %) » en A1/A3 mais « 497 keV (78,6 %) » en B6/E17.",
+    "problem": "Légère incohérence de valeurs entre sections pour la même grandeur (498 vs 497 keV ; 79,3 % vs 78,6 %). Les deux sont des arrondis acceptables de la même transition (≈497–498 keV, ~79 %), mais l'écart sur le pourcentage (78,6 vs 79,3 %) provient de deux jeux de données légèrement différents présentés comme équivalents.",
+    "fix": "Harmoniser sur un seul jeu de valeurs (p. ex. E_max ≈ 497 keV, ~79 % vers l'état fondamental du 177Hf, E_moy ≈ 134 keV) pour éviter l'impression d'imprécision."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A3, tableau physique 177Lu : « β⁻ — autres composantes 384 keV (9,7 %), 176 keV (12 %) » vs Recherche 2 « 384 keV (9,1 %), 176 keV (12,2 %) ».",
+    "problem": "Petites divergences sur les intensités des branches β secondaires (9,7 % vs 9,1 % ; 12 % vs 12,2 %) entre les deux fiches de référence reprises dans l'article. Non cliniquement significatif mais incohérent.",
+    "fix": "Choisir une source de données nucléaires unique (p. ex. NNDC/DDEP) et reporter une seule série de valeurs."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B6, tableau : « γ imageable(s) 177Lu : 113 keV (6,4 %) et 208 keV (11 %) » et « β⁻ E moy ≈ 134 keV » coexistant avec A3 qui ne donne pas l'E_moy ; et 131I « quelques mm » pour le parcours β.",
+    "problem": "Le parcours β⁻ moyen du 131I est qualifié de « quelques mm » / « ~mm » sans valeur. L'E_moy β du 131I (192 keV) correspond à un parcours moyen dans les tissus mous d'environ 0,4 mm (max ~2,3 mm), pas « quelques mm ». La formulation « quelques mm » surestime le parcours moyen et peut induire en erreur sur le caractère localisé du dépôt.",
+    "fix": "Remplacer « quelques mm » par une valeur correcte : parcours β⁻ moyen du 131I ≈ 0,4 mm (parcours maximal ≈ 2–2,3 mm)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E16, Cas 1 : « 0,64 Gy/GBq × 7,4 GBq × 4 cycles ≈ 19 Gy aux reins et ≈ 0,8 Gy à la moelle ».",
+    "problem": "Le calcul rénal est correct (0,64×7,4×4 = 18,9 ≈ 19 Gy). Mais la dose médullaire annoncée « ≈ 0,8 Gy » est dérivée de 0,2 Gy/cycle ×4 = 0,8 Gy, ce qui est cohérent ; en revanche la juxtaposition avec « 0,04 Gy/GBq » (moelle, réf [20]) donnerait 0,04×7,4×4 ≈ 1,2 Gy. Les deux estimations médullaires (méthode sanguine 0,20 Gy/cycle vs image-based 0,04 Gy/GBq) coexistent sans que la divergence soit explicitée, ce qui peut prêter à confusion.",
+    "fix": "Préciser que 0,20 Gy/cycle (Sandström, méthode sanguine) et 0,04 Gy/GBq (revue systématique) sont deux estimations méthodologiquement distinctes, et conserver une seule base pour le calcul illustratif."
+  },
+  {
+    "severity": "minor",
+    "where": "Section identityCard / A5 : « Limite rénale (BED) ≈ 39–40 Gy » et A5 « BED ~39–40 Gy (incidence 5 % de toxicité) ».",
+    "problem": "La valeur de référence (Recherche 1) cite « BED limite ~39 Gy (incidence 5 % de toxicité) » ; la littérature EANM consensuelle retient plutôt 40 Gy (sans facteur de risque) / 28 Gy (avec facteurs de risque). Mélanger « 39 » (issu d'un modèle NTCP à 5 %) et « 40 » comme s'ils étaient une seule borne est légèrement imprécis.",
+    "fix": "Présenter clairement : seuil pratique EANM ≈ 40 Gy BED (sans FdR) / 28 Gy (avec FdR), le chiffre de 39 Gy correspondant à l'estimation NTCP à 5 % de toxicité, pour éviter de présenter deux nombres comme un seul seuil."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections A1/A3/identityCard vs B6/E17 — valeur β⁻ Emax du 177Lu",
+    "problem": "Incohérence interne mineure : E_max du β⁻ du 177Lu donnée à 498 keV (A1, A3, carte d'identité) puis à 497 keV (B6, E17). Les deux valeurs existent dans la littérature (évaluations DDEP/LNHB ~497 keV à 78,6% ; autres évaluations 498 keV à 79,3%) — ce n'est donc PAS de la fabrication mais une incohérence de fidélité.",
+    "fix": "Harmoniser sur une seule valeur (p. ex. 497–498 keV) ou préciser une fois que la valeur varie selon l'évaluation de données de décroissance, en gardant la source [6]."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [8] et [35] (ScienceDirect Topics 'overview')",
+    "problem": "Les sources [8] (Iodine-131 overview) et [35] (Lutetium 177 overview) sont des pages d'agrégation 'ScienceDirect Topics', pas des articles primaires évalués par les pairs. Elles servent de support à des valeurs physiques fines (énergies β/γ).",
+    "fix": "Acceptable car honnêtement étiquetées 'an overview (ScienceDirect Topics)'. La note de fiabilité de E18 recommande déjà de confirmer les valeurs physiques fines du 131I sur source primaire (IAEA/ANSM) — recommandation à conserver."
+  }
+]
