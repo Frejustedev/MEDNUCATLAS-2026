@@ -1,0 +1,50 @@
+[
+  {
+    "severity": "major",
+    "where": "Section B7 (« contrôle qualité / radioprotection ») : « la gestion de la contamination du personnel par le ⁹⁵ᵐTc aérosolisé » ET Section D16 (« Gestion des déchets ») : « La courte période du ⁹⁵ᵐTc (6 h) facilite la décroissance des effluents »",
+    "problem": "Erreur d'identité de radionucléide : le symbole écrit est ⁹⁵ᵐTc (technétium-95m), qui est un isotope DIFFÉRENT du technétium-99m utilisé en clinique. Le ⁹⁵ᵐTc a une période d'environ 61 jours et n'est pas un radiopharmaceutique courant ; or le texte lui attribue la période de 6 h et le rôle de traceur de ventilation/perfusion. Tout le reste de la fiche utilise correctement ⁹⁹ᵐTc (140 keV, 6 h). Présentée deux fois comme fait dans une fiche de référence médicale, cette coquille devient une affirmation physique fausse (mauvais isotope + période incohérente avec le bon isotope).",
+    "fix": "Remplacer ⁹⁵ᵐTc par ⁹⁹ᵐTc dans les deux occurrences (B7 et D16)."
+  },
+  {
+    "severity": "minor",
+    "where": "Datation de la méta-analyse d'Iftikhar et al. : « Méta-analyse 2024 (11 études, 4 146 patients) » en sections A5 et D17, mais « méta-analyse 2023 (4 146 patients) » en section E21 (point clé) et quiz.",
+    "problem": "Incohérence interne de millésime pour la même référence (Acad Radiol 2024;31(2), publication en ligne 2023). Le contenu oscille entre « 2023 » et « 2024 » pour décrire la même étude, ce qui peut prêter à confusion. La fiche étalon utilise « 2023 » ; le contenu utilise majoritairement « 2024 ».",
+    "fix": "Uniformiser le millésime (idéalement « 2024 » conformément à la publication imprimée Acad Radiol 2024, ou préciser « 2023 en ligne / 2024 imprimé ») sur l'ensemble des sections, quiz inclus."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E20 (Cas 1) et plusieurs sections : références bibliographiques numérotées entre crochets ([9], [21], [13]) dans le mouvement E alors que les mêmes faits portent d'autres numéros ailleurs (ex. dose fœtale Monte-Carlo = [9] en E mais correspond à Vakili et al. ; dose mammaire [21] = Astani et al.).",
+    "problem": "La numérotation des citations est globalement cohérente avec la liste E25, mais quelques renvois dans les cas cliniques (E20) citent [21] pour la dose fœtale 0,1-0,6 mGy alors que cette donnée relève de [9]/[22] (Vakili / Niemann) et non d'Astani [21] (qui concerne la comparaison de doses CTPA vs scintigraphie). Risque mineur d'attribution de source imprécise.",
+    "fix": "Vérifier dans E20 que la dose fœtale par trimestre renvoie à [9]/[22] et la dose mammaire à [21], conformément à la liste de références E25."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A5, D17, E25 — citation [9]/[22] for fetal dose at 200 MBq across trimesters; and §B10, §D16 \"0,89–2,47 mGy selon le trimestre\"",
+    "problem": "The Vakili Monte Carlo study (source [9], PMC8686754) actually reports first trimester 1,01 mGy, second 0,89 mGy, third 2,47 mGy. The article text writes the range as \"0,89 à 2,47 mGy\" implying 0,89 is the minimum/first-trimester value, but 0,89 is in fact the SECOND trimester value (the first trimester is higher at 1,01 mGy). The dose does not increase monotonically. The directional claim 'maximale au 3e trimestre' is correct, but presenting the range as starting at 0,89 slightly misrepresents the per-trimester data.",
+    "fix": "Reformuler en indiquant les trois valeurs réelles (1,01 / 0,89 / 2,47 mGy) ou écrire 'de l'ordre de 0,9 à 2,5 mGy selon le trimestre, maximale au 3e trimestre' sans suggérer une progression croissante."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A5, D17, E25 — \"PIOPED II Se 85 %, Sp 93 %\" cité [6] (Sostman, PMID 18195380)",
+    "problem": "Source [6] (Sostman 2008, PIOPED II) reports sensitivity 77,4 % and specificity 97,7 % for the V/Q scan diagnostic categories. The figures '85 % / 93 %' cited to [6] are the widely-quoted PIOPED II V/Q-versus-CTPA composite values from the broader PIOPED II program, not the numbers in the Sostman paper itself. Mild citation-precision mismatch.",
+    "fix": "Soit corriger les chiffres en 77,4 %/97,7 % (valeurs réelles de [6]), soit attribuer le couple 85 %/93 % à la source PIOPED II appropriée plutôt qu'à [6] seul."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A5, D17, E25 — \"PISAPED Se 80,4 %, Sp 96,6 %\" cité [6,10]",
+    "problem": "Source [10] (MedicalCriteria.com) was verified and contains the PISAPED interpretive criteria but no quantitative Se/Sp data; source [6] is the PIOPED II/Sostman paper, not PISAPED. The 80,4 %/96,6 % figures trace to the PISAPED literature (e.g. Sostman/PIOPED II comparison or Miniati), so the citation pairing [6,10] does not actually support these exact numbers.",
+    "fix": "Rattacher les chiffres PISAPED à une source PISAPED proprement dite, ou retirer la précision décimale et présenter ces valeurs comme indicatives."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A5(CTEPH), D17, D18, E21 — \"V/Q normale exclut la CTEPH (sensibilité 90–100 %, spécificité 94–100 %)\" et \"Se ~96–100 % vs CTPA ~51–94 %\" cités [23,24]",
+    "problem": "Source [24] (Radiology 2020, PMID 32427559, verified real) actually reports, for segmental analysis, V/Q SPECT sensitivity ~85 % and specificity ~42 % (lower spec than CTPA), not the 94–100 % specificity quoted. The high sensitivity/high specificity ranges come mainly from [23] Tunariu (Se 96–97,4 %, CTPA 51 %). Combining [23,24] to support 'spécificité 94–100 %' is not faithful to [24]'s findings.",
+    "fix": "Attribuer les bornes hautes de sensibilité au seul [23], et soit citer [24] uniquement pour la comparaison de sensibilité, soit nuancer que [24] retrouve une spécificité par segment plus basse pour la V/Q."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [13] (SFMN/CNP-MN guide) and [14] (Pulmotech MAA PI)",
+    "problem": "Both URLs return valid PDF binaries (files exist and resolve — [13] confirmed via web search as the genuine CNP-MN 2022 lung scintigraphy protocol guide), but WebFetch could not parse the binary content, so the specific in-text claims attributed to them (neonate 7,4–18,5 MBq / 10 000–50 000 particules for [14]; pregnancy half-dose protocol for [13]) could not be directly confirmed against the documents. URLs are NOT fabricated.",
+    "fix": "Aucune correction de source nécessaire (URLs authentiques) ; vérification de contenu recommandée manuellement pour les valeurs néonatales tirées de [14]."
+  }
+]
