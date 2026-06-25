@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "major",
+    "where": "Quiz Q9 (réponse + explication) et section B8 — risque d'orbitopathie de Graves (GO) après ¹³¹I",
+    "problem": "Conflation de deux échelles de chiffres inconciliables dans une même affirmation. La réponse acceptée du quiz est «≈20 % après ¹³¹I vs ≈5 % après ATS», mais l'explication justifie ce choix en citant «15 % vs 3 % dans l'essai de Bartalena» ET «0 % sous ¹³¹I + prednisone». Or le 0% est un résultat SPÉCIFIQUE du bras prednisone de l'essai Bartalena 1998 (NEJM, n=443), dont les bras comparateurs sont 15 % (¹³¹I seul) et 3 % (méthimazole) — confirmé par la source primaire. Les chiffres 20 %/5 % proviennent d'une autre source (données épidémiologiques poolées PLoS One/EUGOGO) qui n'a PAS de bras prednisone à 0 %. Mélanger 20/5 avec le 0 % de Bartalena dans une seule réponse est factuellement incohérent : on ne peut pas avoir simultanément 20 % (échelle épidémio) et 0 % (échelle essai Bartalena dont la branche RAI seule était 15 %). La section B8 reproduit le même mélange («≈20 % après ¹³¹I vs ≈5 % après ATS ; 0 % sous prednisone dans l'essai princeps»).",
+    "fix": "Harmoniser sur l'essai princeps de Bartalena 1998 : 15 % (¹³¹I seul) / 3 % (méthimazole) / 0 % (¹³¹I + prednisone) — c'est d'ailleurs ce que font correctement les sections A6, D14, D17, D18 et E20 (cas 1) de l'article. Corriger la réponse du quiz Q9 et la phrase de B8 pour utiliser 15 %/3 %. Si l'on souhaite mentionner le chiffre arrondi 20 %/5 %, le présenter séparément comme une estimation épidémiologique poolée, SANS y accoler le 0 % de Bartalena."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B8 (préparation du patient) — risque GO chiffré à «≈20 % après ¹³¹I vs ≈5 % après ATS»",
+    "problem": "Discordance interne avec le reste de l'article qui retient majoritairement 15 %/3 % (sections A6, C14, D17, D18, E20, E21, E22). Un lecteur voit deux chiffres différents pour la même donnée selon la section. Les deux jeux de chiffres sont individuellement sourçables (15/3 = Bartalena ; 20/5 ≈ EANM/PLoS), mais l'incohérence intra-document nuit à la fiabilité perçue.",
+    "fix": "Uniformiser sur 15 %/3 % (Bartalena, étalon §11) dans tout l'article, ou bien indiquer explicitement et systématiquement les deux sources avec leur provenance respective à chaque occurrence."
+  },
+  {
+    "severity": "critical",
+    "where": "Sections A3, B9, C11 (tableaux étiologie + stat card « 61,9 ± 12,9 % ») ; explication du quiz Q sur la RAIU du Basedow",
+    "problem": "Statistique chiffrée fabriquée / mal attribuée. La RAIU moyenne du Basedow « 61,9 ± 12,9 % » est citée [27] (et [10][11]). Vérification du source [27] (Alswat, BMC Res Notes 2020, PMC7339512) : l'étude rapporte une captation moyenne de 19,7 ± 16,2 % pour le Basedow et 19,1 ± 14,4 % pour la cohorte — la valeur 61,9 ± 12,9 % n'y figure pas. Elle n'apparaît pas non plus dans [10] (NBK599130) ni à la recherche web. C'est le constat anti-fabrication central : un chiffre vedette (stat card + tableaux + quiz) non soutenu par la source citée.",
+    "fix": "Retirer la valeur précise « 61,9 ± 12,9 % » ou la remplacer par la valeur réellement publiée (Alswat : Basedow ≈ 19,7 ± 16,2 %), ou par la formulation qualitative « RAIU élevée, fixation diffuse » sans SD inventée. Corriger la stat card de C11, les tableaux A3/B9/C11 et l'explication du quiz."
+  },
+  {
+    "severity": "critical",
+    "where": "Sections A3, B9, C11 (ligne « Thyroïdite (Hashimoto) 11,7 ± 9,6 % »), cité [10]",
+    "problem": "Statistique chiffrée mal attribuée. La RAIU « 11,7 ± 9,6 % » de la thyroïdite de Hashimoto est attribuée à [10] (Muzahir & Grady, NBK599130). La vérification du chapitre NBK599130 ne retrouve pas cette valeur. Comme pour le 61,9 %, il s'agit d'un chiffre précis (avec écart-type) non présent dans la source citée.",
+    "fix": "Retirer la valeur « 11,7 ± 9,6 % » ou la sourcer correctement (trouver la référence primaire réelle), ou la remplacer par la formulation qualitative « RAIU basse/effondrée » sans SD non sourcée."
+  },
+  {
+    "severity": "major",
+    "where": "Section B8 (« risque ≈ 20 % après ¹³¹I vs ≈ 5 % après ATS », cité [14][20]) et quiz Q9 (réponse validée « ≈20 % après ¹³¹I vs ≈5 % après ATS », explication citant 15 % vs 3 %)",
+    "problem": "Incohérence interne et dérive par rapport à la source [20]. Le reste de l'article (A6, C14, D17, D18, E21, E22) utilise correctement les chiffres du NEJM 1998 de Bartalena (vérifiés : 15 % ¹³¹I vs 3 % méthimazole vs 0 % ¹³¹I+prednisone). Mais B8 et l'intitulé de réponse du quiz Q9 donnent « ≈20 % vs ≈5 % », non conformes à la source citée [20]. La propre explication du quiz Q9 se contredit en citant 15 % vs 3 %.",
+    "fix": "Harmoniser sur les chiffres sources : 15 % (¹³¹I) vs 3 % (ATS) vs 0 % (¹³¹I+prednisone). Corriger B8 et reformuler l'option correcte du quiz Q9 pour éviter l'auto-contradiction."
+  },
+  {
+    "severity": "minor",
+    "where": "Numérotation des sections : E22 suivi directement de E25 (« Références & liens »)",
+    "problem": "Saut de numérotation : les sections vont A1…E20, E21, E22, puis E25, en omettant E23 et E24. La couverture A→E reste complète et la carte d'identité (A1 + tableau identityCard) est présente ; il s'agit d'une incohérence d'étiquetage, pas d'une lacune de contenu.",
+    "fix": "Renuméroter la section de références en E23 (ou ajouter les sections manquantes si le gabarit en prévoit), pour une numérotation continue."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [13] — ScienceDirect Topics Iodine-131",
+    "problem": "URL non confirmée (verified:false dans le JSON, ce qui est honnête). La page renvoie HTTP 403 à la vérification (pas un 404), donc l'existence n'est ni confirmée ni infirmée. Elle n'est utilisée que pour des propriétés physiques redondantes (déjà couvertes par [1][3][12]).",
+    "fix": "Soit retirer [13] (redondante avec [12] Wikipédia et [1][3] pour les énergies/période), soit la remplacer par une source physique accessible (ex. NNDC/IAEA) afin d'éviter une référence non vérifiable."
+  }
+]

@@ -48,10 +48,38 @@ function san(secs) {
   }
 }
 for (const m of ['patient', 'medecin_non_nuc', 'medecin_nuc']) if (draft[m] && draft[m].sections) san(draft[m].sections);
+
+// Réparation déterministe : retire les citations [n] orphelines (n > nb de sources),
+// 1re cause d'échec validateDraft (un rédacteur sur-numérote). Le claim reste (devient
+// non cité = simple warning) ; on le NOTE (cit-strip) pour la relecture humaine.
+function stripOrphanCitations(node, maxN) {
+  const fix = (str) => str.replace(/\[(\d+(?:\s*[,–-]\s*\d+)*)\]/g, (full, inner) => {
+    const keep = [];
+    for (const part of inner.split(',')) {
+      const m = part.trim().split(/[–-]/).map((x) => parseInt(x.trim(), 10)).filter((x) => !Number.isNaN(x));
+      if (m.length === 1) { if (m[0] <= maxN) keep.push(String(m[0])); }
+      else if (m.length === 2) { for (let i = m[0]; i <= m[1]; i++) if (i <= maxN) keep.push(String(i)); }
+    }
+    return keep.length ? '[' + keep.join(', ') + ']' : '';
+  });
+  const walk = (n) => {
+    if (typeof n === 'string') return fix(n);
+    if (Array.isArray(n)) return n.map(walk);
+    if (n && typeof n === 'object') { for (const k of Object.keys(n)) n[k] = walk(n[k]); return n; }
+    return n;
+  };
+  return walk(node);
+}
+
+let { errors, warnings, stats } = validateDraft(draft);
+let citStripped = false;
+if (errors.length && errors.every((e) => /citation orpheline/.test(e))) {
+  stripOrphanCitations(draft, Array.isArray(draft.sources) ? draft.sources.length : 0);
+  const re = validateDraft(draft);
+  if (!re.errors.length) { citStripped = true; errors = re.errors; warnings = re.warnings; stats = re.stats; }
+}
 fs.mkdirSync(DRAFTS, { recursive: true });
 fs.writeFileSync(path.join(DRAFTS, id + '.json'), JSON.stringify(draft, null, 2) + '\n');
-
-const { errors, warnings, stats } = validateDraft(draft);
 const issues = verify.flatMap((v) => (v && v.issues) || []);
 const critical = issues.filter((i) => i.severity === 'critical');
 const major = issues.filter((i) => i.severity === 'major');
@@ -98,5 +126,5 @@ try {
   for (let k = 0; k < 3 && !pushed; k++) { try { run('git push origin main'); pushed = true; } catch (e) { /* retry */ } }
 } catch (e) { /* commit peut échouer si rien à committer ; non bloquant */ }
 
-mark(id, 'done', `auto OK ${warnings.length}w ${major.length}maj${pushed ? '' : ' PUSH-A-REFAIRE'}`);
-emit({ status: 'done', pushed, warnings: warnings.length, major: major.length, minor: minor.length });
+mark(id, 'done', `auto OK ${warnings.length}w ${major.length}maj${citStripped ? ' cit-strip' : ''}${pushed ? '' : ' PUSH-A-REFAIRE'}`);
+emit({ status: 'done', pushed, citStripped, warnings: warnings.length, major: major.length, minor: minor.length });

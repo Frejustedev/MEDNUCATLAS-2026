@@ -1,0 +1,1182 @@
+{
+  "id": "V2_IRATHERAPIE_BASEDOW",
+  "type": "examen",
+  "cat": "theranostique_thyroide",
+  "catLabel": "Pathologies Thyroïdiennes",
+  "title": "Ira-thérapie (iode-131) de l’hyperthyroïdie",
+  "difficulty": "avancé",
+  "tags": [
+    "iode-131",
+    "irathérapie",
+    "maladie de Basedow",
+    "nodule toxique",
+    "goitre multinodulaire toxique",
+    "hyperthyroïdie",
+    "radioprotection",
+    "dosimétrie thyroïdienne",
+    "formule de Marinelli",
+    "orbitopathie de Graves",
+    "symporteur sodium-iode",
+    "théranostique thyroïdien"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "Campennì A, Avram AM, Verburg FA, et al. (Giovanella L, senior author). The EANM guideline on radioiodine therapy of benign thyroid disease. Eur J Nucl Med Mol Imaging. 2023;50(11):3324-3348 (PMC10542302)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542302/",
+      "verified": true
+    },
+    {
+      "title": "Campennì A, et al. The EANM guideline on radioiodine therapy of benign thyroid disease. Eur J Nucl Med Mol Imaging. 2023;50(11):3324-3348 (DOI 10.1007/s00259-023-06274-5)",
+      "url": "https://link.springer.com/article/10.1007/s00259-023-06274-5",
+      "verified": true
+    },
+    {
+      "title": "SFMN/CEMEN. Guide pour la rédaction de protocoles de traitement des hyperthyroïdies par iode 131, v1.0 (2006) — CNP-MN PDF",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Traitement-hyperthyroidie-V1.0.pdf",
+      "verified": true
+    },
+    {
+      "title": "Silberstein EB, et al. The SNMMI Practice Guideline for Therapy of Thyroid Disease with 131I 3.0. J Nucl Med. 2012;53(10):1633-1651",
+      "url": "https://jnm.snmjournals.org/content/53/10/1633",
+      "verified": true
+    },
+    {
+      "title": "SNMMI guideline for Therapy of Thyroid Disease with 131I (Sodium Iodide) 3.0 — SNMMI procedure standards",
+      "url": "https://snmmi.org/Web/Web/Clinical-Practice/Procedure-Standards/Standards/SNMMI%20guideline%20for%20Therapy-of-Thyroid-Disease-with-131I--Sodium-Iodide--3-0.aspx",
+      "verified": true
+    },
+    {
+      "title": "Ross DS, et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis. Thyroid. 2016;26(10):1343-1421",
+      "url": "https://www.liebertpub.com/doi/full/10.1089/thy.2016.0229",
+      "verified": true
+    },
+    {
+      "title": "Ross DS, et al. 2016 ATA Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis. Thyroid. 2016;26(10):1343-1421 — PubMed 27521067",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27521067/",
+      "verified": true
+    },
+    {
+      "title": "Bartalena L, et al. The 2021 European Group on Graves' orbitopathy (EUGOGO) clinical practice guidelines for the medical management of Graves' orbitopathy. Eur J Endocrinol. 2021;185(4):G43-G67 — PubMed 34297684",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34297684/",
+      "verified": true
+    },
+    {
+      "title": "Bartalena L, et al. The 2021 EUGOGO clinical practice guidelines for the medical management of Graves' orbitopathy (full PDF, BOPSS mirror)",
+      "url": "https://www.bopss.co.uk/bopss-uploads/EUGOGO-2021-guidelines-pdf.pdf",
+      "verified": true
+    },
+    {
+      "title": "Muzahir S, Grady EE. Nuclear Imaging and Therapy of Thyroid Disorders. In: Molecular Imaging and Therapy. Exon Publications; 2023 — NCBI Bookshelf NBK599130",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK599130/",
+      "verified": true
+    },
+    {
+      "title": "Iqbal A, Rehman A. Thyroid Uptake and Scan — StatPearls, NCBI Bookshelf NBK555978",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK555978/",
+      "verified": true
+    },
+    {
+      "title": "Iodine-131 — Wikipedia (physical properties, fission/tellurium production, dry distillation)",
+      "url": "https://en.wikipedia.org/wiki/Iodine-131",
+      "verified": true
+    },
+    {
+      "title": "Iodine-131 — ScienceDirect Topics (beta/gamma energies, half-life)",
+      "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/iodine-131",
+      "verified": false
+    },
+    {
+      "title": "Plazinska MT, et al. Radioiodine therapy and Graves' disease – Myths and reality. PLoS One. 2020;15(1):e0226495 (PMC6957158)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6957158/",
+      "verified": true
+    },
+    {
+      "title": "Trout AT, et al. Radioiodine treatment of pediatric Graves disease: a multicenter review. Pediatr Radiol. 2023;53(1):21-27 — PubMed 35750940",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35750940/",
+      "verified": true
+    },
+    {
+      "title": "Radioactive Iodine Uptake Testing: Background, Indications, Contraindications — Medscape eMedicine 2094805",
+      "url": "https://emedicine.medscape.com/article/2094805-overview",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson S, et al., Ann ICRP 44(2S), 2015)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Andersson M, Mattsson S. Improved Patient Dosimetry at Radioiodine Therapy by Combining the ICRP Compartment Model and the EANM Pre-Therapeutic Standard Procedure for Benign Thyroid Diseases. Front Endocrinol. 2021;12:634955 (PMC7995899)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7995899/",
+      "verified": true
+    },
+    {
+      "title": "Kitahara CM, et al. Association of Radioactive Iodine Treatment With Cancer Mortality in Patients With Hyperthyroidism. JAMA Intern Med. 2019;179(8):1034-1042 (PMC6604114)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6604114/",
+      "verified": true
+    },
+    {
+      "title": "Bartalena L, et al. Relation between therapy for hyperthyroidism and the course of Graves' ophthalmopathy. N Engl J Med. 1998;338(2):73-78 — PubMed 9420337",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9420337/",
+      "verified": true
+    },
+    {
+      "title": "Lai A, et al. (Bartalena L, senior author). Lower dose prednisone prevents radioiodine-associated exacerbation of initially mild or absent Graves' orbitopathy. J Clin Endocrinol Metab. 2010;95(3):1333-1337 — PubMed 20061414",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20061414/",
+      "verified": true
+    },
+    {
+      "title": "Ballal S, Soundararajan R, Bal C. Re-establishment of normal radioactive iodine uptake reference range in the era of universal salt iodization. Indian J Med Res. 2017;145(3):358-364 (PMC5555065)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5555065/",
+      "verified": true
+    },
+    {
+      "title": "Radioactive iodine uptake test — Wikipedia (reference ranges)",
+      "url": "https://en.wikipedia.org/wiki/Radioactive_iodine_uptake_test",
+      "verified": true
+    },
+    {
+      "title": "Technetium-99m (99mTc) and Iodine-123 (123I) in comparison with thyroid ultrasonography in the differential diagnosis of Saudi patients with Graves' disease — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1687850724001626",
+      "verified": true
+    },
+    {
+      "title": "Patient Release After Radioiodine Therapy — ORNL/NRC report (10 CFR 35.75 release criteria, 33 mCi default)",
+      "url": "https://www.nrc.gov/docs/ML1726/ML17262A909.pdf",
+      "verified": true
+    },
+    {
+      "title": "Malapure SS, Mukherjee A, Bal C. Radioiodine Therapy of Graves' Disease and the Uptake Paradox. Indian J Nucl Med. 2020;35(1):17-20 (PMC6958960)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6958960/",
+      "verified": true
+    },
+    {
+      "title": "Alswat K, et al. Scintigraphy evaluation of hyperthyroidism and its correlation with clinical and biochemical profiles. BMC Res Notes. 2020;13:324 (PMC7339512)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7339512/",
+      "verified": true
+    }
+  ],
+  "lead": "L'ira-thérapie est un traitement de l'hyperthyroïdie qui repose sur la prise, le plus souvent par la bouche, d'un iode légèrement radioactif. Cet iode se concentre naturellement dans la glande thyroïde devenue trop active et l'irradie de l'intérieur, en épargnant les tissus voisins. L'objectif est de calmer durablement l'emballement de la glande, qu'il soit lié à une maladie auto-immune ou à un ou plusieurs nodules. L'effet n'est pas immédiat et s'installe progressivement sur plusieurs semaines à quelques mois. C'est un geste simple, réalisé en une seule prise, mais qui demande une préparation soigneuse et le respect de quelques précautions vis-à-vis de l'entourage.",
+  "identityCard": [
+    {
+      "icon": "flask",
+      "label": "Radiopharmaceutique",
+      "value": "[¹³¹I]NaI (iodure de sodium-131), per os"
+    },
+    {
+      "icon": "zap",
+      "label": "Émission",
+      "value": "β⁻ (Emax 0,606 MeV ; Emoy 0,192 MeV) + γ 364 keV"
+    },
+    {
+      "icon": "clock",
+      "label": "Période physique",
+      "value": "8,02 j (β⁻ → ¹³¹Xe stable)"
+    },
+    {
+      "icon": "radiation",
+      "label": "Parcours β⁻ tissus mous",
+      "value": "≈0,4 mm (moyen) ; R₉₀ ≈0,8 mm"
+    },
+    {
+      "icon": "target",
+      "label": "Cible biologique",
+      "value": "Symporteur Na/I (NIS) du thyréocyte"
+    },
+    {
+      "icon": "syringe",
+      "label": "Activité Basedow",
+      "value": "Fixe 200–300 MBq (antitoxique) à ~500 MBq (ablative)"
+    },
+    {
+      "icon": "activity",
+      "label": "Activité nodule/GMNT",
+      "value": "~300 MBq (nodule) ; 500–700 MBq (GMNT)"
+    },
+    {
+      "icon": "list",
+      "label": "Dose absorbée cible",
+      "value": "Basedow 150–300 Gy ; nodule 150–300 Gy"
+    },
+    {
+      "icon": "baby",
+      "label": "Pédiatrie",
+      "value": "Concept ablatif ≥300 Gy ; 15 MBq/g ; 200–800 MBq"
+    },
+    {
+      "icon": "shield",
+      "label": "Seuil hospitalisation (France)",
+      "value": "740 MBq (historique) ; 400 MBq recommandé (EANM)"
+    },
+    {
+      "icon": "droplets",
+      "label": "Dose thyroïde (diag.)",
+      "value": "360 µGy/MBq (H) · 560 µGy/MBq (F)"
+    },
+    {
+      "icon": "alert",
+      "label": "Contre-indication absolue",
+      "value": "Grossesse ; allaitement (arrêt définitif)"
+    },
+    {
+      "icon": "clock",
+      "label": "Délai d'action",
+      "value": "> 3 mois pour l'effet complet"
+    },
+    {
+      "icon": "stetho",
+      "label": "Surveillance",
+      "value": "T4L à S4, T4L + TSH à M3, bilan à M6"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "[¹³¹I]NaI (iodure de sodium-131)"
+    },
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc-pertechnétate"
+    },
+    {
+      "type": "traceur",
+      "label": "¹²³I (iodure)"
+    },
+    {
+      "type": "maladie",
+      "label": "Maladie de Basedow"
+    },
+    {
+      "type": "maladie",
+      "label": "Nodule autonome toxique (adénome de Plummer)"
+    },
+    {
+      "type": "maladie",
+      "label": "Goitre multinodulaire toxique"
+    },
+    {
+      "type": "maladie",
+      "label": "Orbitopathie de Graves"
+    },
+    {
+      "type": "maladie",
+      "label": "Hypothyroïdie post-thérapeutique"
+    },
+    {
+      "type": "examen",
+      "label": "Mesure de la fixation thyroïdienne (RAIU)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie thyroïdienne"
+    },
+    {
+      "type": "score",
+      "label": "Score d'activité clinique (CAS / EUGOGO)"
+    },
+    {
+      "type": "theranostique",
+      "label": "Iode-131 du cancer différencié de la thyroïde"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quel est le mécanisme cellulaire qui permet la captation de l'iode-131 par le thyréocyte ?",
+      "options": [
+        "Diffusion passive transmembranaire",
+        "Symporteur sodium/iode (NIS)",
+        "Récepteur de la TSH directement",
+        "Endocytose de la thyroglobuline"
+      ],
+      "answer": 1,
+      "explanation": "L'¹³¹I, analogue de l'iode stable, est capté via le symporteur Na/I (NIS) basolatéral, régulé par la TSH, comme l'iode physiologique [3][10].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle est la période physique de l'iode-131 ?",
+      "options": [
+        "6,0 heures",
+        "13,2 heures",
+        "8,02 jours",
+        "60 jours"
+      ],
+      "answer": 2,
+      "explanation": "La période physique de l'¹³¹I est de 8,02 j (EANM ; 8,06 j selon la SFMN), avec décroissance β⁻ vers le xénon-131 stable [1][3].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel rayonnement de l'iode-131 est responsable de l'effet thérapeutique sur le tissu thyroïdien ?",
+      "options": [
+        "Le γ de 364 keV",
+        "Le rayonnement β⁻",
+        "Les rayons X caractéristiques",
+        "Le γ de 637 keV"
+      ],
+      "answer": 1,
+      "explanation": "L'effet destructeur tient au β⁻ (Emax 0,606 MeV, Emoy 0,192 MeV ; parcours moyen ≈0,4 mm), tandis que le γ 364 keV sert à l'imagerie/dosimétrie [1][3].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel est l'ordre de grandeur du parcours moyen du β⁻ de l'¹³¹I dans les tissus mous ?",
+      "options": [
+        "≈0,4 mm (R₉₀ ≈0,8 mm)",
+        "≈4 mm",
+        "≈2 cm",
+        "≈10 µm"
+      ],
+      "answer": 0,
+      "explanation": "Le parcours moyen du β⁻ est ≈0,4 mm (EANM) et le R₉₀ ≈0,8 mm (SFMN), d'où une irradiation très localisée épargnant les structures voisines [1][3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Concernant le concept ablatif dans la maladie de Basedow, quel taux d'élimination de l'hyperthyroïdie est attendu autour de 300 Gy ?",
+      "options": [
+        "≈50 %",
+        "≈74 %",
+        "≈88 %",
+        "≈100 %"
+      ],
+      "answer": 2,
+      "explanation": "Le concept ablatif (> 90 % de succès global) atteint ≈88 % d'élimination à 300 Gy (vs 81 % à 200 Gy et 74 % à 150 Gy) ; l'hyperthyroïdie persistante n'est plus que ~8 % à ~300 Gy [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la contre-indication absolue à l'ira-thérapie ?",
+      "options": [
+        "Insuffisance rénale modérée",
+        "Gros goitre > 80 g",
+        "Grossesse",
+        "Ophtalmopathie ancienne inactive"
+      ],
+      "answer": 2,
+      "explanation": "La grossesse est une contre-indication absolue ; l'allaitement doit être arrêté définitivement (cessé ≥ 6 semaines avant selon l'EANM). Le gros goitre et l'ophtalmopathie sont des points relatifs [1][3][6].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Selon la formule de Marinelli, l'activité à administrer est proportionnelle à :",
+      "options": [
+        "D(Gy) × M(g), divisée par la fixation et la période effective",
+        "À la seule masse thyroïdienne",
+        "Au volume urinaire des 24 h",
+        "À l'inverse de la dose absorbée cible"
+      ],
+      "answer": 0,
+      "explanation": "A(MBq) = D(Gy)·M(g) / [0,042·F₀(%)·Teff], où F₀ est la fixation extrapolée à t=0 et Teff la période effective : l'activité croît avec la dose cible et la masse, et décroît avec la fixation et la rétention [3].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Chez un patient atteint de Basedow à risque, quand débuter la corticoprophylaxie de l'orbitopathie selon l'EUGOGO ?",
+      "options": [
+        "1 semaine avant l'¹³¹I",
+        "Le jour même, avant la prise",
+        "1 à 3 jours après l'¹³¹I",
+        "Uniquement en cas d'aggravation"
+      ],
+      "answer": 2,
+      "explanation": "La prednisone (0,3–0,5 mg/kg/j en haut risque, 0,1–0,2 mg/kg/j en bas risque) est débutée 1–3 jours après l'administration de l'¹³¹I [1][8].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le risque approximatif d'apparition ou d'aggravation de l'orbitopathie après ¹³¹I, comparé aux antithyroïdiens ?",
+      "options": [
+        "≈20 % après ¹³¹I vs ≈5 % après ATS",
+        "Identique dans les deux cas",
+        "≈5 % après ¹³¹I vs ≈20 % après ATS",
+        "Nul dans les deux cas"
+      ],
+      "answer": 0,
+      "explanation": "Le risque d'aggravation de l'orbitopathie est ≈20 % après ¹³¹I contre ≈5 % après antithyroïdiens (15 % vs 3 % dans l'essai de Bartalena, 0 % sous ¹³¹I + prednisone) ; le tabac est le principal facteur de risque modifiable [8][14][20].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel délai d'arrêt est recommandé pour l'amiodarone avant une ira-thérapie ?",
+      "options": [
+        "48 heures",
+        "1 semaine",
+        "Plusieurs mois (3–6 mois ou plus)",
+        "Aucun arrêt nécessaire"
+      ],
+      "answer": 2,
+      "explanation": "L'amiodarone, riche en iode et de demi-vie longue, impose un sevrage de plusieurs mois (EANM : 3–6 mois ou plus) ; en cas de surcharge suspectée, une iodurie des 24 h est recommandée [1][3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel test est obligatoire dans les 72 heures précédant l'administration chez une femme en âge de procréer ?",
+      "options": [
+        "Iodurie des 24 h",
+        "Test de grossesse (β-hCG)",
+        "Dosage de la thyroglobuline",
+        "Scintigraphie corps entier"
+      ],
+      "answer": 1,
+      "explanation": "Un test de grossesse (β-hCG) est requis dans les 72 h (EANM) / 48 h (ATA) précédant le traitement chez toute femme en âge de procréer sans contraception efficace [1][3][6].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "En France, quel seuil d'activité conduit historiquement à une hospitalisation en chambre protégée ?",
+      "options": [
+        "100 MBq",
+        "400 MBq",
+        "740 MBq",
+        "2 000 MBq"
+      ],
+      "answer": 2,
+      "explanation": "Le seuil historique français est 740 MBq ; les recommandations européennes préconisent plutôt 400 MBq. En deçà, un traitement ambulatoire est possible (justification : tiers sous le même toit < 1 mSv/an) [3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la dose absorbée à la thyroïde (coefficient diagnostique, fixation 25 %) chez la femme adulte selon les données SFPM ?",
+      "options": [
+        "18 µGy/MBq",
+        "360 µGy/MBq",
+        "560 µGy/MBq",
+        "18 µSv/MBq"
+      ],
+      "answer": 2,
+      "explanation": "Les coefficients diagnostiques SFPM/SFMN donnent 360 µGy/MBq (homme) et 560 µGy/MBq (femme) à la thyroïde ; ces coefficients diagnostiques ne s'appliquent pas au calcul de la dose lésionnelle thérapeutique [3][17].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Pourquoi le concept ablatif (dose élevée) est-il la stratégie de choix chez l'enfant ?",
+      "options": [
+        "Il réduit le coût du traitement",
+        "Il réduit la récidive et le risque de néoplasie radio-induite du tissu résiduel",
+        "Il évite tout blocage thyroïdien",
+        "Il raccourcit la période physique de l'iode"
+      ],
+      "answer": 1,
+      "explanation": "Chez l'enfant, le concept ablatif (≥ 300 Gy, 15 MBq/g, ou 200–800 MBq fixe) réduit la persistance/récidive et le risque de néoplasie radio-induite dans le tissu résiduel non ablaté ; la thyroïde de l'enfant est radiosensible dès ~0,1 Gy [1][15].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le diagnostic différentiel à exclure car il contre-indique l'ira-thérapie en raison d'une fixation effondrée ?",
+      "options": [
+        "Maladie de Basedow",
+        "Nodule autonome toxique",
+        "Thyroïdite",
+        "Goitre multinodulaire toxique"
+      ],
+      "answer": 2,
+      "explanation": "Dans la thyroïdite, la fixation iodée (RAIU) est basse/effondrée : l'¹³¹I ne serait pas capté, ce qui contre-indique la RAI. L'identification précise du type d'hyperthyroïdie (clinique, biologie, scintigraphie) est un prérequis [3][10][11].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle approche EANM permet d'estimer l'activité pour cibler 200 Gy dans le Basedow à partir de la masse et du RAIU à 24 h ?",
+      "options": [
+        "8 MBq × M(g) / RAIU24h",
+        "0,1 × D × M sans correction",
+        "Activité fixe de 100 MBq",
+        "16 MBq × M(g) × RAIU24h"
+      ],
+      "answer": 0,
+      "explanation": "L'EANM propose 6, 8, 12 MBq × M(g) / RAIU24h pour cibler respectivement 150, 200, 300 Gy. Exemple : 35 g + RAIU 65 % → 8×35/0,65 ≈ 430 MBq pour 200 Gy [1].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel phénomène, lié à une RAIU très élevée, peut réduire la dose absorbée réellement délivrée ?",
+      "options": [
+        "Le blocage thyroïdien",
+        "Le paradoxe de captation (Teff raccourcie)",
+        "L'effet Compton",
+        "La surcharge iodée occulte"
+      ],
+      "answer": 1,
+      "explanation": "Une RAIU très élevée s'accompagne souvent d'une période effective (Teff) raccourcie : la dose absorbée est alors moindre qu'attendue, justifiant parfois une activité majorée [26].",
+      "difficulty": "difficile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "L'ira-thérapie administre de l'[¹³¹I]NaI per os (gélule de préférence) pour traiter durablement les hyperthyroïdies bénignes : Basedow, nodule autonome toxique, goitre multinodulaire toxique [1][3].",
+      "L'¹³¹I (T½ 8,02 j) est un émetteur β⁻ (Emax 0,606 MeV, parcours moyen ≈0,4 mm) capté via le symporteur Na/I (NIS) ; le γ 364 keV sert à l'imagerie et à la dosimétrie [1][3].",
+      "Deux stratégies dosimétriques : concept ablatif (> 90 % de succès, vise l'hypothyroïdie) vs concept fonctionnel (< 70 %) ; doses cibles Basedow 150–300 Gy, nodule/GMNT 150–300 Gy [1].",
+      "Contre-indications absolues : grossesse, allaitement (arrêt définitif), désir de grossesse < 6 mois, suspicion de cancer, surcharge iodée, non-adhésion à la radioprotection [1][3][6].",
+      "L'orbitopathie de Graves s'aggrave dans ≈20 % des cas après ¹³¹I (vs ≈5 % sous ATS) ; corticoprophylaxie débutée 1–3 j après l'¹³¹I chez les patients à risque (tabac, TRAb élevés) [1][8][20].",
+      "Préparation : sevrage des sources d'iode (amiodarone plusieurs mois), arrêt des ATS et hormones, test de grossesse < 72 h, blocage incomplet et surcharge iodée = principales causes d'échec [1][3].",
+      "L'hypothyroïdie post-thérapeutique est fréquente et souvent recherchée ; surveillance T4L à S4, T4L + TSH à M3, bilan à M6, 6 mois de recul avant un 2ᵉ traitement [3].",
+      "Les coefficients dosimétriques diagnostiques (360/560 µGy/MBq thyroïde) ne servent pas à calculer la dose lésionnelle thérapeutique (Gy), obtenue par Marinelli/EANM [3][17]."
+    ],
+    "protocol": [
+      "Identifier le type d'hyperthyroïdie (clinique + biologie : TSH, T4L/T3L, TRAb ; scintigraphie dans les formes autonomes) et confirmer une fixation préservée > 5 % [3].",
+      "Sevrer les sources d'iode (contraste hydrosoluble 3–4 sem, amiodarone plusieurs mois), arrêter ATS (méthimazole 2–5 j, PTU 2–8 sem) et hormones thyroïdiennes [1][3].",
+      "Vérifier l'absence de grossesse (β-hCG < 72 h) et informer le patient (consentement, radioprotection, risque d'hypothyroïdie) [1][3].",
+      "Choisir l'activité : méthode fixe (Basedow 200–300 MBq antitoxique à ~500 MBq ablative ; nodule ~300 MBq ; GMNT 500–700 MBq) ou dosimétrie (Marinelli / EANM MBq/g ÷ RAIU24h) [1][3].",
+      "Chez le patient à risque d'orbitopathie : débuter la corticoprophylaxie (prednisone, doses EUGOGO) 1–3 j après l'¹³¹I ; hydratation abondante 24–48 h pour réduire la dose vésicale [1][8].",
+      "Appliquer les consignes de radioprotection (distance, dormir seul, hygiène urinaire) et organiser la surveillance hormonale (S4, M3, M6) [3]."
+    ],
+    "scores": [
+      "Fixation thyroïdienne (RAIU) : prérequis et facteur de la dose ; normale ~8–25 % à 24 h, élevée et diffuse dans le Basedow, focale extinctive dans le nodule/GMNT, effondrée dans la thyroïdite [11][16].",
+      "Dose absorbée cible (Gy) : Basedow concept fonctionnel ~150 Gy, ablatif 200–300 Gy ; nodule toxique 130–200 Gy (uninodulaire), 80–130 Gy (multinodulaire) ; EANM 150–300 Gy [1][3].",
+      "Score d'activité clinique (CAS) / classification EUGOGO de l'orbitopathie (légère / modérée-sévère, active / inactive) : conditionne la décision RAI et la corticoprophylaxie [1][8].",
+      "Contraintes de dose à l'entourage (France) : public/enfants < 10 ans/femme enceinte 1 mSv ; proches 10–60 ans 3 mSv ; proches > 60 ans 15 mSv [3]."
+    ],
+    "pitfalls": [
+      "Surcharge iodée occulte (contraste, amiodarone, compléments, fruits de mer) : RAIU effondrée et échec thérapeutique — doser l'iodurie des 24 h et reporter [1][3].",
+      "Paradoxe de captation : une RAIU très élevée raccourcit la Teff et réduit la dose réellement délivrée — envisager une activité majorée [26].",
+      "Sevrage insuffisant des ATS (effet radioprotecteur, PTU plus délétère que le méthimazole) : baisse de l'efficacité [1].",
+      "Gros volume thyroïdien (> 40–80 g) : échec plus fréquent, activité à majorer ou orientation chirurgicale [1].",
+      "Aggravation de l'orbitopathie chez le patient à risque (tabac, TRAb élevés) si la corticoprophylaxie est omise [8][20].",
+      "Appliquer à tort les coefficients dosimétriques diagnostiques (mSv/MBq, ICRP 128) au calcul de la dose lésionnelle thérapeutique (Gy) [17].",
+      "Substitution trop précoce d'une hypothyroïdie qui peut être transitoire après l'¹³¹I [3]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert ce traitement ?",
+        "text": "L'**ira-thérapie** sert à soigner durablement une thyroïde qui **fonctionne trop** (hyperthyroïdie), cette petite glande en forme de papillon située à la base du cou. Quand elle s'emballe, elle fabrique trop d'hormones, ce qui peut provoquer palpitations, nervosité, perte de poids ou fatigue. Le traitement utilise de l'**iode radioactif** que l'on avale, le plus souvent sous la forme d'une simple **gélule à boire avec un verre d'eau**. La thyroïde capte naturellement l'iode pour fabriquer ses hormones : elle absorbe donc cet iode-traitement, qui va alors **calmer en douceur les zones trop actives** de la glande, sans toucher le reste du corps. C'est une façon de « soigner de l'intérieur », sans opération ni cicatrice, souvent en une seule prise. Son effet n'est pas immédiat : il se met en place **progressivement sur quelques semaines à quelques mois**. C'est une option de référence, utilisée depuis très longtemps et bien connue des médecins.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Un traitement, pas un examen",
+            "text": "Contrairement à une scintigraphie qui photographie la glande, l'ira-thérapie est un véritable traitement : l'iode avalé agit sur la thyroïde pour faire baisser son activité. L'effet s'installe en douceur, sur plusieurs semaines, et votre médecin vérifiera ensuite par des prises de sang que tout rentre dans l'ordre."
+          }
+        ]
+      },
+      {
+        "title": "Comment se préparer et comment ça se passe",
+        "text": "La préparation est simple, mais quelques points sont importants. **Signalez tout examen récent avec produit de contraste iodé** (comme un scanner injecté), un médicament du cœur appelé **amiodarone**, ainsi que tous vos traitements, en particulier ceux de la thyroïde : l'iode contenu dans ces produits peut gêner le traitement et obliger à le décaler. Le jour J, vous **avalez la gélule (ou une boisson)** : c'est rapide et indolore. Votre médecin vous expliquera s'il faut arrêter certains médicaments quelques jours avant, et reprendre ensuite. Après la prise, il est conseillé de **bien boire** pendant un à deux jours pour aider votre corps à éliminer ce qui n'a pas été capté par la thyroïde. Le traitement se fait souvent à la maison ; parfois une courte hospitalisation en chambre dédiée est nécessaire. L'équipe vous remet alors des **consignes simples à suivre quelques jours** pour protéger votre entourage.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le bon réflexe",
+            "text": "Apportez la liste de tous vos médicaments et signalez tout scanner, IRM avec injection ou prise d'amiodarone des dernières semaines. Mentionnez aussi tout désir de grossesse : cela permet d'organiser le traitement au bon moment et d'en garantir l'efficacité."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce dangereux ? Les précautions à connaître",
+        "text": "L'iode radioactif utilisé agit surtout sur la thyroïde et est éliminé naturellement par votre corps, principalement dans les urines, en quelques jours. Pour protéger les personnes autour de vous pendant cette courte période, l'équipe vous donnera des **consignes simples** : garder un peu de distance avec les jeunes enfants et les femmes enceintes, dormir seul quelques nuits, bien se laver les mains et tirer la chasse soigneusement. Ces mesures sont temporaires et faciles à suivre. Une conséquence fréquente et attendue est que la thyroïde, une fois calmée, peut devenir **un peu paresseuse** : on la complète alors très simplement par un comprimé d'hormone thyroïdienne, parfois à vie, ce qui est sans danger et bien toléré. Ce traitement n'est **pas réalisé pendant une grossesse ni un allaitement** : prévenez toujours l'équipe si vous êtes enceinte, susceptible de l'être, ou si vous allaitez. Une grossesse devra aussi être évitée pendant quelques mois après le traitement. N'hésitez pas à poser toutes vos questions : l'équipe est là pour vous accompagner.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Grossesse et allaitement",
+            "text": "L'ira-thérapie ne se fait jamais pendant une grossesse ou un allaitement. Signalez toute grossesse, tout doute ou tout allaitement avant le traitement, et discutez avec votre médecin du délai à respecter avant d'envisager une grossesse après le traitement."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : une hyperthyroïdie à traiter durablement",
+        "text": "L'ira-thérapie (iode-131) est l'une des **trois options de traitement de fond** de l'hyperthyroïdie bénigne, aux côtés des antithyroïdiens de synthèse et de la chirurgie. Pensez-y et adressez le patient en médecine nucléaire dans plusieurs situations typiques : une **maladie de Basedow** en cas d'échec, d'intolérance, de mauvaise observance ou de **récidive** des antithyroïdiens, ou lorsque le sevrage de ces médicaments s'avère impossible après une durée prolongée de traitement ; un **nodule thyroïdien autonome (« toxique »)** ou un **goitre multinodulaire toxique** non compressif, pour lesquels un traitement radical est volontiers proposé d'emblée. C'est un **traitement de fond, non urgent** : son effet s'installe progressivement sur plusieurs mois, ce qui le rend inadapté aux situations aiguës où la thyrotoxicose doit d'abord être contrôlée médicalement. Il s'adresse aux hyperthyroïdies « qui fixent l'iode » : une thyroïdite (captation effondrée) n'en relève pas.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Les situations qui font surseoir ou réorienter",
+            "text": "L'iode-131 n'est pas indiqué en cas de grossesse ou d'allaitement (à exclure systématiquement), de désir de grossesse à court terme, de suspicion de cancer thyroïdien, ou de surcharge iodée récente qui bloque la captation. Une orbitopathie de Basedow évolutive et le tabagisme appellent une discussion spécialisée préalable, car le traitement peut l'aggraver en l'absence de précautions adaptées."
+          }
+        ]
+      },
+      {
+        "title": "La démarche en pratique : préparer et adresser",
+        "text": "Avant d'adresser, le bilan utile comprend la confirmation de l'hyperthyroïdie (TSH effondrée), la précision du mécanisme (échographie, anticorps anti-récepteur de la TSH, et **scintigraphie** dans les formes nodulaires) et, surtout, un **interrogatoire médicamenteux soigneux**. Le piège majeur est en effet la **surcharge iodée occulte** (produit de contraste iodé, amiodarone, antiseptiques iodés, compléments à base d'algues) : elle bloque la captation, compromet l'efficacité et impose de différer le traitement le temps d'un sevrage. Le nucléariste se charge ensuite de la conduite spécifique : gestion des antithyroïdiens autour de la prise, calcul de l'activité, information sur la radioprotection et organisation du suivi. Votre rôle clé est d'**adresser au bon moment, avec un dossier complet** : étiologie précisée, liste des traitements et des examens iodés récents, et statut vis-à-vis d'une éventuelle grossesse.",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Principes de radioprotection (temps, distance, écran) appliqués au patient traité par iode-131 et à son entourage après l'administration orale du traceur.",
+        "figureCaption": "Fig. 1 — Après l'ira-thérapie, des consignes simples de radioprotection (distance, hygiène, durée limitée) protègent l'entourage pendant la courte phase d'élimination de l'iode-131."
+      },
+      {
+        "title": "L'apport de la médecine nucléaire et le suivi partagé",
+        "text": "L'intérêt de l'iode-131 est d'offrir un **traitement durable, ciblé et peu invasif**, sans anesthésie ni chirurgie, souvent en une seule administration orale. Il détruit sélectivement le tissu thyroïdien hyperfonctionnel tout en épargnant les structures voisines, et règle l'hyperthyroïdie dans une large majorité des cas. Sa conséquence la plus fréquente et largement anticipée est une **hypothyroïdie secondaire**, considérée comme un objectif acceptable voire recherché : elle se corrige simplement par une substitution en lévothyroxine, dont vous assurerez volontiers le suivi au long cours en lien avec le spécialiste. Le suivi biologique se fait par dosages thyroïdiens étagés après le traitement ; en cas d'hyperthyroïdie persistante, un délai de plusieurs mois est respecté avant d'envisager une seconde administration. Adresser un patient bien préparé permet d'optimiser l'efficacité dès la première prise et d'éviter les retraitements.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez en médecine nucléaire toute hyperthyroïdie bénigne relevant d'un traitement radical : maladie de Basedow en échec, intolérance, récidive ou impossibilité de sevrage des antithyroïdiens, nodule autonome ou goitre multinodulaire toxique non compressif. Joignez la confirmation biologique (TSH effondrée), l'étiologie (échographie, anticorps anti-récepteur de la TSH, scintigraphie), la liste des traitements et des examens iodés récents, et le statut vis-à-vis d'une grossesse. L'iode-131 est un traitement de fond durable et peu invasif, souvent en une prise orale unique : pensez à exclure grossesse, allaitement, surcharge iodée et orbitopathie évolutive, et anticipez avec le patient une hypothyroïdie post-thérapeutique à substituer simplement."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identité",
+        "text": "**Comment lire la carte d'identité.** L'**ira-thérapie** (irradiation thérapeutique à l'iode radioactif) repose sur l'administration, le plus souvent **per os en gélule**, d'**iode-131 sous forme d'iodure de sodium [¹³¹I]NaI**. C'est un **traitement** (et non un examen) à visée radicale des hyperthyroïdies bénignes : maladie de **Basedow** (goitre toxique diffus auto-immun), **nodule autonome toxique** (adénome de Plummer, AFTN pour *autonomously functioning thyroid nodule*) et **goitre multinodulaire toxique** (GMNT). [1] [3]\n\nL'¹³¹I est un émetteur **β⁻** (période physique **8,02 j**) capté par les thyréocytes hyperfonctionnels via le **symporteur sodium/iode (NIS)** ; son β⁻ de portée millimétrique délivre une forte **dose absorbée locale** (Gy) qui détruit le parenchyme captant en épargnant les structures voisines. [1] [3] L'effet est **retardé** (effet complet **> 3 mois**) : c'est un traitement de fond **non urgent**. [3]\n\n| Champ | Valeur | Source |\n|---|---|---|\n| Radionucléide × forme | ¹³¹I, iodure de sodium [¹³¹I]NaI, gélule (alt. solution buvable/IV) | [1] [3] |\n| Émission × énergie | β⁻ (Eₘₐₓ **606 keV**, Ē **192 keV**) + γ **364 keV** (82 %) | [1] [3] |\n| Période physique | **8,02 j** (EANM) / 8,06 j (SFMN) | [1] [3] |\n| Cible biologique | thyréocyte hyperfonctionnel (symporteur NIS) | [10] [11] |\n| Voie × activité (Basedow, fixe) | per os ; antitoxique **200–300 MBq**, ablative **~500 MBq** | [3] |\n| Visée dosimétrique | euthyroïdie ~150 Gy, ablation **200–300 Gy** | [1] [3] |\n| Préparation clé | euthyroïdie (arrêt ATS), sevrage iodé, β-hCG < 72 h | [1] [3] |\n| Délai d'effet | **> 3 mois** (effet complet) | [3] |\n| Grandes indications | Basedow, AFTN, GMNT, réduction de goitre | [1] [3] |",
+        "stats": [
+          {
+            "value": "8,02 j",
+            "label": "Période physique de l'¹³¹I"
+          },
+          {
+            "value": "364 keV",
+            "label": "γ principal (scintigraphie post-thérapeutique)"
+          },
+          {
+            "value": "200–300 Gy",
+            "label": "Dose ablative cible (Basedow)"
+          },
+          {
+            "value": "> 3 mois",
+            "label": "Délai d'effet complet"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "L'¹³¹I est l'archétype du radionucléide **théranostique** : le même iodure capté par le NIS sert à *imager* (γ 364 keV → scintigraphie/dosimétrie post-dose) et à *traiter* (β⁻). La cible est strictement **indépendante du mode d'émission** ; seule la composante β⁻ porte l'effet lésionnel, le γ servant l'imagerie et contribuant à l'irradiation de l'entourage. [1] [3]"
+          }
+        ]
+      },
+      {
+        "title": "A2 - Définition",
+        "text": "L'**ira-thérapie** désigne l'administration d'**iode-131 sous forme d'iodure de sodium [¹³¹I]NaI** dans le but de traiter de façon **radicale et durable** une hyperthyroïdie bénigne. Introduite dès **1941–1946** dans cette indication, elle constitue une véritable **« chirurgie radiochimique »** : la sélectivité ne tient pas au geste opérateur mais à la **biologie du thyréocyte**, seule cellule de l'organisme dotée d'une captation iodée massive et régulée. [3]\n\nÀ la différence d'un examen d'imagerie fonctionnelle, qui ne fait que *visualiser* un processus, l'ira-thérapie l'**exploite à visée destructrice** : l'efficacité résulte conjointement du **niveau élevé de dose absorbée (D, en Gray)** délivrable au tissu cible et de la **spécificité relative de captation**. [1] [3] L'¹³¹I capté par les thyréocytes hyperfonctionnels les détruit par irradiation β⁻ locale (mort cellulaire, fibrose, réduction fonctionnelle et volumique), en quelques semaines à quelques mois. [1] [3]\n\nL'¹³¹I est un **émetteur β⁻** décroissant vers le **xénon-131 stable**, de **période physique 8,02 j** (8,06 j selon la SFMN). [1] [3] Le spectre β⁻ a une **énergie maximale de 606 keV** (≈0,61 MeV) et une **énergie moyenne de 192 keV** (0,192 MeV), avec un **parcours moyen dans les tissus mous d'environ 0,4 mm** (R₉₀ ≈ 0,8 mm) : c'est cette portée brève qui confère la sélectivité tissulaire en épargnant parathyroïdes, trachée et nerfs récurrents. [1] [3] L'émission **γ principale à 364 keV** (abondance ≈82 %), accompagnée de raies secondaires à 637 keV et 284 keV, autorise la **scintigraphie et la dosimétrie post-thérapeutiques** mais participe à l'irradiation de l'entourage. [1] [3] La **constante de dose moyenne** (Marinelli) vaut **2,808 Gy·g·MBq⁻¹·j⁻¹** (thyroïde de 20 g). [1]",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Traitement, non examen",
+            "text": "Bien que classée dans la catégorie théranostique thyroïde et partageant le radiopharmaceutique de la scintigraphie, l'ira-thérapie est un **acte thérapeutique** : on raisonne en **dose absorbée lésionnelle (Gy)** et non en dose efficace diagnostique (mSv). Ne jamais transposer les coefficients dosimétriques de la CIPR 128, conçus pour le diagnostic, au calcul de l'activité thérapeutique. [17]"
+          }
+        ]
+      },
+      {
+        "title": "A3 - Rappels anatomiques & physiologiques",
+        "text": "La thyroïde piège l'iodure circulant grâce au **symporteur sodium/iode (NIS, *sodium/iodide symporter*)**, glycoprotéine de la membrane **basolatérale** des thyréocytes qui co-transporte 2 Na⁺ pour 1 I⁻ en exploitant le gradient sodique. Le NIS thyroïdien est le **seul transporteur iodé régulé par la TSH** ; l'iode capté est ensuite **organifié** (TPO) et incorporé à la **thyroglobuline**. [10] [11] La thyroïde normale extrait ainsi **≈10–35 %** de l'iodure ingéré. [10] [11]\n\nL'¹³¹I, **analogue isotopique de l'iode stable**, emprunte exactement la **même voie métabolique** : captation NIS → organification → rétention dans la colloïde. Ce sont la **captation** et la **rétention** (durée de séjour intracellulaire) qui conditionnent la dose absorbée délivrée. [1] [3]\n\nLa **fixation thyroïdienne (RAIU, *radioactive iodine uptake*)** mesure cette captation : valeurs normales **≈5–30 % à 24 h** en zone d'apport iodé suffisant (jusqu'à 15–50 % en zone carencée). [22] [23] Le profil de fixation oriente l'étiologie et conditionne la faisabilité du traitement :\n\n| Étiologie | RAIU 24 h | Aspect scintigraphique | Source |\n|---|---|---|---|\n| Maladie de Basedow | élevée (**61,9 ± 12,9 %**) | fixation **diffuse homogène** des 2 lobes | [10] [27] |\n| AFTN / GMNT | normale ou haute | fixation **focale** + extinction du parenchyme sain | [1] |\n| Thyroïdite | **basse/effondrée** | carte « blanche » → **contre-indique** l'ira-thérapie | [10] |\n\nLa connaissance précise du **type d'hyperthyroïdie** (clinique + biologie + scintigraphie dans les formes autonomes) est donc le **pré-requis indispensable** avant tout traitement. [3]",
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Thyréocyte avec symporteur sodium/iode (NIS) basolatéral co-transportant Na+ et I-, organification par la thyroperoxydase et incorporation dans la thyroglobuline : la voie métabolique empruntée par l'iode-131.",
+        "figureCaption": "Fig. 1 — Captation iodée par le NIS puis organification : la voie physiologique détournée par l'¹³¹I thérapeutique.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — surcharge iodée occulte",
+            "text": "Toute surcharge iodée (produit de contraste, amiodarone, compléments, fruits de mer) **effondre la RAIU** par dilution du pool iodé et compétition au NIS, exposant à un **échec thérapeutique**. En cas de doute, doser l'**iodurie des 24 h** et **reporter** le traitement si elle est anormale. [3] [1]"
+          }
+        ]
+      },
+      {
+        "title": "A4 - Principe : la cible biologique",
+        "text": "**Pourquoi ça marche.** Le thyréocyte hyperfonctionnel se comporte comme une **« éponge à iode »** : il aspire avidement l'¹³¹I par sa pompe NIS, le concentre et le retient. Le β⁻ émis agit ensuite comme une **lame de portée millimétrique (≈0,4–0,8 mm)** qui détruit la cellule captatrice et ses voisines immédiates, en **épargnant les tissus au-delà** (parathyroïdes, trachée, nerfs récurrents). [1] [3] La cible biologique est donc le **tissu exprimant le NIS et capable de rétention iodée** : parenchyme thyroïdien hyperfonctionnel, qu'il soit diffus (Basedow) ou nodulaire (AFTN/GMNT).\n\n- **Forte efficacité destructrice** = captation avide **et** rétention prolongée (période effective longue) → dose absorbée élevée.\n- **Efficacité moindre / échec** = captation faible (RAIU effondrée par surcharge iodée ou thyroïdite), **rétention raccourcie** (paradoxe de captation), ou volume cible trop important pour l'activité administrée. [3] [26]\n\nLa **dose absorbée** se calcule classiquement par la **formule de Marinelli** : **A(MBq) = D(Gy) × M(g) / [0,042 × F₀(%) × T_eff(j)]**, où F₀ est la fixation extrapolée à t=0 et T_eff la **période effective** (combinaison de la période physique et de la clairance biologique). [3] Trois déterminants conditionnent donc la dose : la **masse cible M** (estimée par échographie, V_lobe = π/6 × L × l × P), la **fixation F**, et la **période effective T_eff** (valeur de référence ≈5,5 j EANM, ≈5,8 j Basedow / 6,5 j autonomie en bases françaises). [1] [3]",
+        "figureKey": "THYROID_UPTAKE",
+        "figureAlt": "Captation avide de l'iode-131 par un thyréocyte hyperfonctionnel via le NIS, puis irradiation béta-moins de portée millimétrique détruisant la cellule captatrice tout en épargnant les structures cervicales voisines.",
+        "figureCaption": "Fig. 2 — Captation NIS de l'¹³¹I puis irradiation β⁻ locale : destruction sélective du tissu hyperfonctionnel.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — paradoxe de captation",
+            "text": "Une **RAIU très élevée** s'accompagne souvent d'un **renouvellement iodé accéléré**, donc d'une **période effective raccourcie** : la dose absorbée réellement délivrée est alors **inférieure à l'attendu** malgré une captation forte. Ce phénomène impose parfois des activités majorées. [26]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La masse cible et la fixation comptant directement dans la formule de Marinelli, leur estimation est critique : l'**échographie** (erreur typique < 20 %) est préférée à la scintigraphie planaire, non fiable en dessous de ~20 g. Une erreur de volume se traduit linéairement en erreur de dose. [3] [1]"
+          }
+        ]
+      },
+      {
+        "title": "A5 - Indications",
+        "text": "L'ira-thérapie s'adresse aux **hyperthyroïdies bénignes à fixation préservée (RAIU > 5 %)**, sans suspicion de cancer ni de goitre compressif menaçant. [3] Pour chaque indication, le rationale renvoie au §A4 : l'¹³¹I n'est efficace que si la cible NIS capte et retient.\n\n**▸ Maladie de Basedow (auto-immune).** Indication retenue en cas d'**intolérance, d'échec ou de non-observance des antithyroïdiens de synthèse (ATS)**, d'impossibilité de sevrage des ATS après **24 mois**, de récidive (quel que soit le 1ᵉʳ traitement) ou de pathologies associées. [3] L'ATA-2016 positionne l'¹³¹I comme l'une des **3 options de première intention** du Basedow (ATS, ¹³¹I, chirurgie), le choix dépendant du contexte ; la pratique européenne/française privilégie généralement les **ATS au 1ᵉʳ épisode** et réserve le traitement radical aux situations ci-dessus. [3] [6]\n\n**▸ Hyperthyroïdie autonome (AFTN, GMNT).** Nodule unique toxique ou goitre multinodulaire toxique **non compressifs**, en hyperthyroïdie modérée, **sans suspicion de cancer** : le traitement radical (¹³¹I ou chirurgie) est volontiers proposé **d'emblée**, l'autonomie ne régressant pas spontanément. [3]\n\n**▸ Goitre sans hyperthyroïdie.** Réduction de masse en cas de **contre-indication chirurgicale**. [1] [3]\n\n**Efficacité (niveau de preuve : essais randomisés / méta-analyses) :**\n\n| Indication | Critère | Valeur | Source |\n|---|---|---|---|\n| Basedow, concept ablatif | élimination de l'hyperthyroïdie | succès **> 90 %** | [1] |\n| Basedow, concept fonctionnel | élimination de l'hyperthyroïdie | succès **< 70 %** | [1] |\n| Basedow, relation dose-effet | 150 / 200 / 300 Gy | **74 % / 81 % / 88 %** | [1] |\n| AFTN | succès | **81–94 %** | [1] |\n| GMNT | succès | ~**81 %** (récidive jusqu'à **20 %**) | [1] |\n| Goitre non toxique | réduction volumique | **40–50 % à 1 an**, jusqu'à **60 % à 2–5 ans** | [1] |\n\nL'**hypothyroïdie post-thérapeutique** est un effet attendu (souvent recherché) : corrélée à la dose la 1ʳᵉ–2ᵉ année puis croissance linéaire **3–5 %/an** dans le Basedow, **20–60 %** pour AFTN/GMNT selon le suivi. [3] [1]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pédiatrie",
+            "text": "Chez l'enfant (Basedow rare avant 5 ans, pic 10–15 ans), le **concept ablatif** (dose élevée) est la stratégie de choix : il minimise à la fois la persistance/récidive **et** le risque de néoplasie radio-induite dans le tissu résiduel non ablaté. Cibles EANM : **15 MBq/g** de tissu, activités fixes **200–800 MBq**, ou dosimétrie visant **≥ 300 Gy**. La thyroïde de l'enfant étant parmi les organes les plus radiosensibles, l'indication est pesée avec parcimonie chez le jeune enfant. [1] [15]"
+          }
+        ]
+      },
+      {
+        "title": "A6 - Contre-indications & précautions",
+        "text": "L'ira-thérapie expose à des contre-indications **strictes**, dominées par le risque tératogène et par l'**orbitopathie de Basedow (GO, *Graves' orbitopathy*)**.\n\n| Type | Situation | Conduite | Source |\n|---|---|---|---|\n| **Absolue** | Grossesse | CI formelle ; β-hCG < 72 h chez toute femme en âge de procréer | [3] [1] |\n| **Absolue** | Allaitement | à **arrêter définitivement** ; doit avoir cessé **≥ 6 semaines** avant (EANM) | [1] |\n| **Absolue** | Désir de grossesse < 6 mois | éviter la grossesse **~4–6 mois** après l'¹³¹I | [1] [3] |\n| **Absolue** | Suspicion de cancer thyroïdien, surcharge iodée, non-adhésion à la radioprotection | différer / autre option | [3] [1] |\n| **Relative** | Hyperthyroïdie sévère, gros goitre (> 80 g), goitre compressif (sténose trachéale) | privilégier la chirurgie | [3] |\n| **Relative** | Orbitopathie évolutive | corticoprophylaxie (cf. *infra*) | [3] [8] |\n| **Relative** | Insuffisance rénale, incontinence | adapter / précautions de contamination | [3] |\n\n**Orbitopathie de Basedow.** Le risque d'apparition ou d'aggravation de la GO est de **≈15 % après ¹³¹I** versus **≈3 % après méthimazole** et **0 % sous ¹³¹I + prednisone** (Bartalena, NEJM 1998, n=443). [20] [14] Le **tabagisme** et des **TRAb élevés** sont les principaux facteurs de risque. La **corticoprophylaxie EUGOGO-2021** est indiquée selon le risque : haut risque (GO active, tabac, hyperthyroïdie sévère, TRAb élevés) → **prednisone 0,3–0,5 mg/kg/j** décroissante sur ~3 mois ; bas risque → **0,1–0,2 mg/kg/j** arrêtée à 6 semaines ; débutée **1–3 jours après** l'¹³¹I. [8] [1] Une GO **ancienne et stablement inactive**, sans facteur de risque, autorise l'¹³¹I **sans couverture cortisonique**. [8]",
+        "steps": [
+          {
+            "title": "Rechercher grossesse / allaitement",
+            "text": "β-hCG dans les 72 h précédant l'administration chez toute femme en âge de procréer sans contraception efficace ; vérifier l'arrêt de l'allaitement (≥ 6 semaines). [1] [3]"
+          },
+          {
+            "title": "Évaluer le risque d'orbitopathie",
+            "text": "Statut tabagique, activité de la GO (score CAS/EUGOGO), niveau de TRAb → décider de la corticoprophylaxie. [8]"
+          },
+          {
+            "title": "Éliminer une surcharge iodée et une thyroïdite",
+            "text": "RAIU préservée (> 5 %), iodurie des 24 h si surcharge suspectée — sans quoi le traitement est inefficace. [3] [1]"
+          },
+          {
+            "title": "Vérifier l'absence de goitre compressif / de suspicion de cancer",
+            "text": "Échographie ± cytoponction ; orienter vers la chirurgie si compression ou doute néoplasique. [3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse et allaitement",
+            "text": "La **grossesse est une contre-indication absolue** : l'¹³¹I traverse le placenta et la thyroïde fœtale fixe l'iode dès la 10ᵉ–12ᵉ semaine. Le test de grossesse doit être **systématique** (< 72 h) et l'**allaitement définitivement interrompu** avant administration. La grossesse est ensuite à éviter **~4–6 mois**. [1] [3]"
+          }
+        ]
+      },
+      {
+        "title": "B7 - Radiopharmaceutique [¹³¹I]NaI, mécanisme, production & contrôle qualité",
+        "text": "**(a) Mécanisme moléculaire.** L'**ira-thérapie** (irradiation thérapeutique à l'iode radioactif) repose sur l'administration, le plus souvent **per os**, d'**iode-131 sous forme d'iodure de sodium [¹³¹I]NaI**. L'¹³¹I, analogue de l'iode stable, est capté par le **symporteur sodium/iode (NIS)** de la membrane basolatérale du thyréocyte, puis organifié et incorporé à la thyroglobuline.[3] Son **émission β⁻** détruit sélectivement le tissu hyperfonctionnel captant ; le parcours millimétrique du β⁻ (épargne des structures voisines) en fait une « chirurgie radiochimique » ciblée. La cible (NIS) est **indépendante de la voie d'administration et de la galénique** : seules la captation et la rétention conditionnent la dose lésionnelle (cf. §B10). L'effet est **retardé** : > 3 mois pour l'effet complet.[3]\n\n**Propriétés physiques de l'¹³¹I** (déterminent qualité d'image post-thérapeutique et radioprotection) :\n\n| Paramètre | Valeur | Conséquence pratique |\n|---|---|---|\n| Période physique (T½) | **8,02 j** (EANM)[1] / **8,06 j** (SFMN)[3] | Déchets de décroissance longue, hospitalisation prolongée |\n| Mode de désintégration | **β⁻ → xénon-131 stable**[3] | Effet thérapeutique = β⁻ |\n| β⁻ énergie max | **0,606 MeV (606 keV)**[1] | Effet lésionnel |\n| β⁻ énergie moyenne | **0,192 MeV (192 keV)**[1] | Calcul de dose absorbée |\n| Parcours moyen β⁻ (tissus mous) | **≈ 0,4 mm** (EANM) ; R₉₀ **≈ 0,8 mm** (SFMN)[1][3] | Sélectivité cellulaire, épargne des structures voisines |\n| γ principal | **364 keV** (≈ 81,7 %) ; raies 637 keV (6,8 %), 284 keV (5,4 %)[1][3] | Scintigraphie/dosimétrie post-thérapeutique + irradiation de l'entourage |\n| Constante de dose (Marinelli) | **Ē = 2,808 Gy·g/(MBq·j)**[1] | Variable d'entrée du calcul de dose (§B10) |\n\n**(b) Production & galénique.** L'¹³¹I est produit par **fission de l'uranium-235** en réacteur (rendement cumulé ≈ 3 % des fissions) ou par **irradiation neutronique du tellure** (cible TeO₂ : ¹³⁰Te(n,γ)¹³¹Te → β⁻ → ¹³¹I), suivie d'une distillation à sec de l'iode volatil et d'une dissolution en milieu alcalin → iodure.[3][12] Il n'y a pas de « marquage » au sens d'un vecteur : l'¹³¹I est directement administré sous forme d'iodure de sodium. La forme **gélule** (enveloppe de gélatine) est préférée ; **solution buvable** voire **injectable** en cas de troubles de la déglutition. Conservation **15-25 °C** selon la réglementation des produits radioactifs.[3]\n\n**(c) Contrôle qualité.** Vérification de l'**activité** (activimètre) et de la **nature du rayonnement γ** (spectrométrie) ; conformité Pharmacopée/AMM. La mesure de l'activité est faite **avant ET après** administration (activité résiduelle négligeable en gélule, significative en solution).[3]\n\n**(d) Activités administrées — méthode des activités fixes (empirique).** Les valeurs personnalisées par dosimétrie sont détaillées au §B10.\n\n| Indication | Activité fixe usuelle | Source |\n|---|---|---|\n| Basedow — visée antitoxique | **200-300 MBq** | SFMN[3] |\n| Basedow — visée ablative | **≈ 500 MBq** (370-555 MBq) | SFMN[3] ; EANM[1] |\n| Basedow (ATA, dose fixe) | **370-555 MBq (10-15 mCi)** | ATA[6] |\n| Nodule autonome toxique | **≈ 300 MBq** (EANM : 370-740 MBq) | SFMN[3] ; EANM[1] |\n| Goitre multinodulaire toxique | **500-700 MBq** | SFMN[3] |\n| Goitre non toxique (réduction de masse) | **600-1110 MBq** | EANM[1] |\n| **Pédiatrie** (concept ablatif privilégié) | **200-800 MBq** ou **15 MBq/g** ou dosimétrie ≥ 300 Gy | EANM[1] |",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le γ de 364 keV, double tranchant",
+            "text": "L'émission γ à **364 keV** (≈ 82 %) permet la **scintigraphie post-thérapeutique** et la **dosimétrie**, mais contribue à l'**irradiation de l'entourage** — c'est elle qui dimensionne les consignes de radioprotection (cf. §B9 et radioprotection). Le ciblage est indépendant de l'isotope : on pourrait imager au ¹²³I (159 keV, dose moindre) puis traiter au ¹³¹I — logique de la **paire théranostique** thyroïdienne."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — pédiatrie : viser ablatif, pas épargner",
+            "text": "Chez l'enfant, le **concept ablatif** (dose élevée, ≥ 300 Gy ou 15 MBq/g) est la **stratégie de choix** : il réduit à la fois la persistance/récidive ET le risque de néoplasie radio-induite dans le tissu résiduel non ablé. La thyroïde de l'enfant figure parmi les organes les plus radiosensibles (risque démontré dès ~0,1 Gy) → indication parcimonieuse, surtout avant 5 ans.[1]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "8,02 j",
+            "label": "Période physique de l'¹³¹I[1]"
+          },
+          {
+            "value": "364 keV",
+            "label": "γ principal (imagerie/dosimétrie)[1]"
+          },
+          {
+            "value": "0,4-0,8 mm",
+            "label": "Parcours du β⁻ (sélectivité)[1][3]"
+          },
+          {
+            "value": "200-500 MBq",
+            "label": "Activité fixe Basedow (antitoxique→ablatif)[3]"
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schéma de décroissance de l'iode-131 : émission β⁻ (606 keV max) vers le xénon-131 stable, accompagnée du photon γ de 364 keV utilisé pour l'imagerie et la dosimétrie.",
+        "figureCaption": "Fig. 1 — Schéma de décroissance de l'¹³¹I : le β⁻ (effet thérapeutique, parcours ≈ 0,4-0,8 mm) et le γ de 364 keV (imagerie + irradiation de l'entourage)."
+      },
+      {
+        "title": "B8 - Préparation du patient",
+        "text": "La préparation conditionne l'efficacité et la sécurité. Trois piliers : **sevrage des sources d'iode**, **état thyroïdien contrôlé (arrêt raisonné des traitements)** et **élimination des contre-indications** (grossesse au premier rang).\n\n**1. Sevrage des sources d'iode.** Une surcharge iodée effondre la fixation (échec thérapeutique). Délais d'arrêt :[3][1]\n\n| Source iodée | Délai avant l'¹³¹I |\n|---|---|\n| Produit de contraste hydrosoluble | **3-4 sem** (SFMN) / **6-8 sem** (EANM) |\n| Contraste liposoluble per os | **3 mois** |\n| Produit huileux / myélographie huileuse | **6-12 mois** à **2-10 ans** |\n| **Amiodarone** | **plusieurs mois** (EANM : 3-6 mois ou plus) |\n| Topiques iodés (Bétadine, collyres), vitamines, fruits de mer | **1-2 sem** |\n| Lugol, algues | **2-3 sem** |\n\nSi surcharge suspectée → **iodurie des 24 h** ; reporter si anormale.[3]\n\n**2. Test de grossesse (β-hCG).** Chez toute femme en âge de procréer sans contraception efficace, **dans les 48 h** (ATA)[6] / **72 h** (EANM)[1] précédant le traitement — la grossesse étant une **contre-indication absolue**.\n\n**3. Arrêt des médicaments à visée thyroïdienne** (eu-/hypothyroïdie contrôlée ; les antithyroïdiens de synthèse [ATS] ont un effet radioprotecteur résiduel) :\n\n| Médicament | Délai d'arrêt | Reprise |\n|---|---|---|\n| ATS — méthimazole/carbimazole | **2-5 j** (dose fixe) / **4-7 j** (dosimétrie) ; SFMN : 4-10 j | possible 2-3 j après l'¹³¹I[1][3] |\n| ATS — PTU | **2-8 sem** (dose fixe)[1] | — |\n| Lévothyroxine (L-T4) | **3-4 sem**[1][3] | — |\n| Liothyronine (L-T3) | **10-14 j**[1][3] | — |\n\n**4. Corticoprophylaxie de l'orbitopathie de Basedow (GO)** si terrain à risque (GO active, tabac, hyperthyroïdie sévère, TRAb élevés) : prédnisone **0,3-0,5 mg/kg/j** (haut risque, décroissance et arrêt à 3 mois) ou **0,1-0,2 mg/kg/j** (bas risque, arrêt à 6 semaines), débutée **1-3 jours après** l'¹³¹I.[1][8] Le risque d'apparition/aggravation de la GO est ≈ **20 % après ¹³¹I** vs ≈ **5 % après ATS** ; **0 %** sous ¹³¹I + prédnisone dans l'essai princeps.[14][20]\n\n**5. Lithium adjuvant** (option, RAIU < 20 %) : **900 mg/j × 7 j** dès après l'¹³¹I pour allonger la rétention.[1]\n\n**6. Information écrite & consentement** : but, modalités, risque d'**hypothyroïdie** (effet souvent recherché), mesures de radioprotection à la sortie, contraception. Éviter la grossesse **≈ 4 mois** (EANM) à **6 mois** après ; prudence chez l'homme ≈ 3-4 mois.[1][3]\n\n**7. Hydratation** : boire abondamment **24-48 h** après pour réduire la dose vésicale.[1][3]",
+        "steps": [
+          {
+            "title": "Avant J (jours à semaines)",
+            "text": "Vérifier le type d'hyperthyroïdie et la fixation préservée ; programmer le sevrage iodé (3-4 sem à plusieurs mois selon la source) ; arrêter ATS (2-7 j) et hormones thyroïdiennes (L-T4 3-4 sem, L-T3 10-14 j) ; évaluer le risque d'orbitopathie ; iodurie 24 h si surcharge suspectée ; information et consentement."
+          },
+          {
+            "title": "48-72 h avant J",
+            "text": "Test de grossesse (β-hCG) chez toute femme en âge de procréer sans contraception efficace ; vérifier l'absence d'allaitement (arrêt définitif requis, ≥ 6 sem)."
+          },
+          {
+            "title": "Le jour J",
+            "text": "Administration de la gélule [¹³¹I]NaI (mesure activimétrique avant/après) ; débuter la corticoprophylaxie 1-3 j après si GO à risque ; remise des consignes écrites de radioprotection ; consignes d'hydratation 24-48 h."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse et allaitement",
+            "text": "La **grossesse est une contre-indication absolue** : β-hCG systématique < 48-72 h avant. L'**allaitement** doit être **arrêté définitivement** et avoir cessé **≥ 6 semaines** avant l'administration (EANM).[1][6] Délai de conception après traitement : ≈ 4-6 mois.[1][3]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — surcharge iodée occulte",
+            "text": "C'est la première cause d'échec évitable : un produit de contraste, l'amiodarone, des compléments ou les fruits de mer peuvent effondrer le RAIU sans que le patient ne le signale. Devant un RAIU bas inexpliqué, doser l'**iodurie des 24 h** et **reporter** plutôt que sous-doser.[3][1]"
+          }
+        ]
+      },
+      {
+        "title": "B9 - Instrument, CQ & protocole de mesure de fixation (dosimétrie pré-thérapeutique)",
+        "text": "Avant le calcul d'activité personnalisé (§B10), la phase instrumentale consiste à **mesurer la fixation thyroïdienne de l'iode radioactif (RAIU, radioactive iodine uptake)** et la **masse cible**, et à confirmer l'**étiologie** par scintigraphie.\n\n**(a) Activité traceuse (test).** **2-5 MBq** d'¹³¹I-iodure pour mesurer le RAIU.[3] Protocole SFMN type : 92,5 MBq dilués dans 250 mL d'eau ; aliquote de référence ; mesure au compteur **à 20 cm du genou** (bruit de fond circulant) puis **à 20 cm du cou** (60 s chacun).[3]\n\n**(b) Nombre et chronologie des mesures.** L'EANM recommande **≥ 3 mesures de fixation** pour reconstruire la courbe : **4-6 h** (montée), **1-2 j** (post-pic), **5-8 j** (estimation de la période effective). Schéma réductible à 2 mesures (1-2 j + 5-8 j), voire 1 mesure (5-8 j).[1]\n\n**(c) Période effective (Teff).** Valeur fixe recommandée **5,5 j** (EANM) ; bases françaises ≈ **5,8 j** (Basedow) et **6,5 j** (autonomie).[1][3] La sensibilité à ce paramètre est forte : à Teff fixée à 5,5 j, la dose réelle est **× 1,24** si la Teff vraie = 7 j, et **÷ 1,31 / ÷ 1,65** si Teff = 4 / 3 j.[1]\n\n**(d) Estimation de la masse cible.** **Échographie** (densité = 1) : V lobe = **π/6 × L × l × P** ; masse = somme des lobes ; erreur typique **< 20 %**. La scintigraphie planaire n'est fiable que pour une masse **> ≈ 20 g**.[3][1]\n\n**(e) Scintigraphie étiologique** (⁹⁹ᵐTc-pertechnétate IV ou ¹²³I oral) : fixation **diffuse homogène** (Basedow), **focale extinctive** (nodule autonome / GMNT), ou **basse/effondrée** (thyroïdite — contre-indique l'ira-thérapie).[10][11]\n\n**(f) CQ de l'instrument** : vérification de l'activité et de la nature du γ avant administration ; mesure de l'activité préparée **avant ET après** administration (résidu négligeable en gélule, significatif en solution).[3]\n\n**Valeurs de RAIU à 24 h (repères d'interprétation)** :\n\n| Situation | RAIU 24 h | Source |\n|---|---|---|\n| Normale (Amérique du Nord) | **5-30 %** ; jusqu'à 15-50 % en zone à apport iodé moindre | [22][23] |\n| Basedow | élevé, moyenne **61,9 ± 12,9 %** | [27] |\n| Thyroïdite (Hashimoto) | **11,7 ± 9,6 %** → contre-indique l'¹³¹I | [10] |\n| Goitre non toxique | **< 15 %** = contre-indication relative | [1] |",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le « paradoxe de captation »",
+            "text": "Un **RAIU très élevé** s'accompagne souvent d'une **période effective raccourcie** (turnover accéléré de l'iode) : la dose absorbée délivrée est alors **moindre qu'attendue** malgré une captation forte. Ces formes peuvent nécessiter une activité majorée — d'où l'intérêt d'une mesure tardive (5-8 j) pour estimer la Teff réelle.[26]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — masse par échographie, pas par scintigraphie",
+            "text": "La masse cible est une variable d'entrée directe du calcul de dose (§B10). L'**échographie** (erreur < 20 %) doit être préférée à l'estimation par scintigraphie planaire, non fiable en dessous de ≈ 20 g et source d'erreur dosimétrique systematique.[3][1]"
+          }
+        ],
+        "figureKey": "THYROID_UPTAKE",
+        "figureAlt": "Courbe de fixation thyroïdienne de l'iode radioactif (RAIU) au cours du temps : montée à 4-6 h, pic, puis décroissance gouvernée par la période effective ; points de mesure EANM à 4-6 h, 1-2 j et 5-8 j.",
+        "figureCaption": "Fig. 2 — Courbe de fixation (RAIU) reconstruite à partir de ≥ 3 mesures (4-6 h / 1-2 j / 5-8 j) : la pente tardive donne la période effective, paramètre critique du calcul de dose."
+      },
+      {
+        "title": "B10 - Calcul d'activité, dose absorbée & quantification",
+        "text": "Cette étape transforme les paramètres mesurés (§B9 : RAIU, Teff, masse) en **activité à administrer**, pour délivrer une **dose absorbée cible (Gy)** au tissu thyroïdien. Deux philosophies coexistent : **activité fixe** (empirique, §B7) et **dosimétrie personnalisée** (formule de Marinelli ou approche pratique EANM).\n\n**(a) Formule de Marinelli (référence).**\n\n> **A(MBq) = D(Gy) × M(g) / [0,042 × F₀(%) × Teff(j)]**\n\noù D = dose cible, M = masse, F₀ = fixation extrapolée à t=0, Teff = période effective.[3] Forme simplifiée à 1 mesure (F à 24/48 h, Teff ≈ 5,8 j) : **A ≈ 4,1 × D × M / F[24]** ; avec correction +20 % : **A ≈ 5 × D × M / F[24]**.[3]\n\n**(b) Approche pratique EANM** (activité par gramme, divisée par le RAIU à 24 h) :[1]\n\n| Indication | Activité ÷ RAIU₂₄ₕ selon dose cible | Exemple |\n|---|---|---|\n| **Basedow** | **6 / 8 / 12 MBq·g** pour **150 / 200 / 300 Gy** | thyroïde 35 g, RAIU 65 % → 8 × 35 / 0,65 = **≈ 430 MBq** (200 Gy) |\n| **Nodule/GMNT** | **4 / 6 / 8 / 12 / 16 MBq·g** pour **100 / 150 / 200 / 300 / 400 Gy** | nodule 10 g, RAIU 30 % → 12 × 10 / 0,3 = **400 MBq** (300 Gy) |\n\nSans cinétique (Basedow) : **9 / 12 / 18 MBq·g** pour 150 / 200 / 300 Gy.[1]\n\n**(c) Doses absorbées cibles & relation dose-effet** :\n\n| Indication | Concept fonctionnel (préserve) | Concept ablatif (vise l'hypothyroïdie) | Source |\n|---|---|---|---|\n| Basedow | ≈ **150 Gy** (euthyroïdie) ; SFMN 60-90 Gy | **200-300 Gy** | [1][3] |\n| Nodule autonome | uninodulaire 130-200 Gy | EANM **150-300 Gy** (jusqu'à 400 Gy) | [3][1] |\n| GMNT | multinodulaire 80-130 Gy | — | [3] |\n| Goitre non toxique | **100-175 Gy** (cible ≈ 100-120 Gy) | — | [1] |\n\n**Relation dose-effet (Basedow)** : élimination de l'hyperthyroïdie **74 % à 150 Gy**, **81 % à 200 Gy**, **88 % à 300 Gy** ; hyperthyroïdie persistante **8 %** à ≈ 300 Gy. Le concept **ablatif** atteint **> 90 %** de succès définitif vs **< 70 %** pour le concept « dose fonctionnelle ».[1]\n\n**(d) Quantification de la réponse — l'hypothyroïdie comme cible.** L'hypothyroïdie post-thérapeutique est l'effet recherché du concept ablatif : corrélée à la dose la 1ʳᵉ-2ᵉ année puis croissance linéaire **3-5 %/an** (SFMN) ; **20-60 %** pour nodule/GMNT selon le suivi (EANM).[3][1] Le suivi quantifie la réponse par la **TSH** et la **T4 libre** (cf. surveillance).",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — ablatif vs fonctionnel : choisir, ne pas subir l'hypothyroïdie",
+            "text": "Le **concept ablatif** (200-300 Gy) accepte d'emblée l'hypothyroïdie (substitution simple par lévothyroxine) pour maximiser le taux de guérison (> 90 %), tandis que le concept « fonctionnel » (≈ 150 Gy) tente de préserver l'euthyroïdie au prix d'un taux d'échec plus élevé (< 70 %) et de retraitements. La tendance actuelle, et la règle chez l'enfant (§B7), privilégie l'ablatif.[1]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — ne pas confondre dose lésionnelle (Gy) et coefficients dosimétriques diagnostiques (mSv/MBq)",
+            "text": "Le calcul d'activité par Marinelli/EANM produit une **dose absorbée lésionnelle en Gray**. Les coefficients de la CIPR 128 (mSv/MBq) sont **prévus pour le diagnostic** et ne doivent **jamais** être utilisés pour dimensionner la dose thérapeutique. Pour les patients hyperthyroïdiens réels, la dose thyroïde mesurée atteint **653 mGy/MBq** (390-981).[17][18]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "74 → 88 %",
+            "label": "Guérison Basedow de 150 à 300 Gy[1]"
+          },
+          {
+            "value": "> 90 %",
+            "label": "Succès du concept ablatif[1]"
+          },
+          {
+            "value": "≈ 430 MBq",
+            "label": "Ex. EANM : 35 g, RAIU 65 %, 200 Gy[1]"
+          },
+          {
+            "value": "3-5 %/an",
+            "label": "Incidence linéaire d'hypothyroïdie tardive[3]"
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Schéma du thyréocyte captant l'iodure-131 via le symporteur sodium/iode (NIS) ; l'émission β⁻ de courte portée délivre la dose absorbée cible (en Gray) qui détruit le tissu hyperfonctionnel.",
+        "figureCaption": "Fig. 3 — Du NIS à la dose absorbée : la captation (RAIU), la rétention (Teff) et la masse, combinées à la dose cible, fixent l'activité à administrer (Marinelli / EANM)."
+      },
+      {
+        "title": "C11 - Aspect normal & variantes (fixation iodée de référence)",
+        "text": "Avant de calculer une activité ou d'interpréter un échec, le médecin nucléaire doit connaître la **fixation iodée normale** et les **profils pathologiques** qui conditionnent à la fois l'indication et la dose. La fixation thyroïdienne de l'iode radioactif (**RAIU**, *Radioactive Iodine Uptake*) reflète l'activité du **symporteur sodium/iode (NIS)** des thyréocytes (cf. §A3) : c'est l'élément quantitatif central, mesuré sur une **activité traceuse de 2 à 5 MBq** d'¹³¹I-iodure, ou par ¹²³I/⁹⁹ᵐTc en imagerie diagnostique [3].\n\n**Fixation iodée de référence (euthyroïdie).** Les valeurs normales dépendent de l'apport iodé alimentaire de la population : plus bas en zone de supplémentation universelle, plus haut en zone de carence relative.\n\n| Paramètre | Valeurs normales | Source |\n|---|---|---|\n| **RAIU à 6 h** | **3-16 %** | [16][11] |\n| **RAIU à 24 h** (Amérique du Nord) | **5-30 %** ; sources 8-25 % / 8-35 % | [22][23] |\n| RAIU à 24 h (zones à apport iodé moindre) | **15-50 %** | [23] |\n\n**Profils pathologiques décisionnels.** L'ira-thérapie n'est efficace que sur une thyroïde **captante** : une fixation préservée (RAIU **> 5 %**) est un pré-requis [3]. Le profil de captation oriente l'étiologie et module la stratégie dosimétrique :\n\n| Étiologie | Captation globale | Distribution scintigraphique | RAIU 24 h | Source |\n|---|---|---|---|---|\n| **Maladie de Basedow** | Élevée | **Diffuse, homogène**, des 2 lobes | moyenne **61,9 ± 12,9 %** | [27][11] |\n| **Nodule autonome toxique (AFTN)** | Normale ou haute | **Focale**, extinction du parenchyme sain | normale/haute | [1] |\n| **Goitre multinodulaire toxique (GMNT)** | Hétérogène | Plages chaudes multiples + zones éteintes | normale/haute | [1] |\n| **Thyroïdite** (diagnostic différentiel) | **Effondrée** | Captation très basse, diffuse | ex. Hashimoto **11,7 ± 9,6 %** | [10] |\n| **Goitre non toxique** | Variable | Diffuse/multinodulaire | **< 15 %** = CI relative | [1] |\n\nDans le Basedow, la RAIU est élevée et la fixation **diffuse** sur les deux lobes [27]. Dans les formes autonomes, la fixation est **focale** avec extinction du parenchyme extranodulaire, ce qui justifie une scintigraphie préalable systématique (cf. §A3) [1]. À l'inverse, une **RAIU basse ou effondrée** (thyroïdite, surcharge iodée, goitre < 15 %) **contre-indique** la procédure : l'iode-131 ne serait pas capté et la dose lésionnelle (D, en Gray) serait insuffisante [1][10].\n\n**Estimation de la masse cible.** La masse thyroïdienne (M, en grammes), seconde variable de toute formule dosimétrique (cf. §C12), s'estime par **échographie** (densité = 1) : V lobe = **π/6 × L × l × P** (cm), masse = somme des lobes, erreur typique **< 20 %**. La scintigraphie planaire n'est fiable que pour une masse **> ~20 g** [3][1].",
+        "stats": [
+          {
+            "value": "> 5 %",
+            "label": "RAIU minimale requise pour traiter [3]"
+          },
+          {
+            "value": "8-25 %",
+            "label": "RAIU I-131 normale à 24 h [22]"
+          },
+          {
+            "value": "61,9 ± 12,9 %",
+            "label": "RAIU moyenne dans le Basedow [27]"
+          },
+          {
+            "value": "< 20 %",
+            "label": "Erreur de masse par échographie [3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert - fixation préservée, condition sine qua non",
+            "text": "L'ira-thérapie est une thérapie **vectorisée par le NIS** : sans captation, pas d'effet. Une RAIU **> 5 %** est exigée [3], et une fixation effondrée (thyroïdite, surcharge iodée, goitre < 15 %) doit faire **reporter ou récuser** le traitement [1][10]. La fixation focale (autonomie) vs diffuse (Basedow) doit être documentée par scintigraphie avant traitement (cf. §A3)."
+          },
+          {
+            "type": "warning",
+            "title": "Piège - masse mal estimée = dose fausse",
+            "text": "Toute formule d'activité dépend de M (cf. §C12). La scintigraphie planaire **sous-estime/sur-estime** les petites glandes ; privilégier l'**échographie** (erreur < 20 %) pour mesurer le volume, surtout pour un nodule isolé [3][1]."
+          }
+        ],
+        "figureKey": "THYROID_UPTAKE",
+        "figureAlt": "Cinétique de fixation thyroïdienne de l'iode-131 : montée précoce, pic et décroissance effective ; mesure du RAIU à 6 h et 24 h sur la thyroïde, élément quantitatif de référence avant ira-thérapie.",
+        "figureCaption": "Fig. 1 - Fixation iodée de référence : le RAIU (6 h, 24 h) et la masse cible conditionnent l'indication et le calcul de l'activité."
+      },
+      {
+        "title": "C12 - Sémiologie & interprétation (calcul d'activité & dose absorbée)",
+        "text": "Le cœur de la \"lecture\" en ira-thérapie n'est pas une image mais un **calcul** : convertir une **dose absorbée cible (D, en Gray)** et une **masse (M, en grammes)** en **activité administrée (A, en MBq)**, à partir de la **fixation (RAIU)** et de la **période effective (Teff)**. Deux écoles coexistent : les **activités fixes** (empiriques) et la **dosimétrie individualisée** (formule de Marinelli).\n\n**Période effective.** La Teff combine décroissance physique (T½ = **8,02 j**, cf. §A1) et clairance biologique. L'EANM recommande une valeur fixe de **5,5 j** ; les bases françaises retiennent **≈ 5,8 j** (Basedow) et **6,5 j** (autonomie) [1][3]. À Teff = 5,5 j, la dose réelle est **×1,24** plus élevée si Teff = 7 j, et **×1,31 / ×1,65** plus basse si Teff = 4 / 3 j [1] — d'où l'intérêt d'≥ **3 mesures de fixation** (4-6 h, 1-2 j, 5-8 j) pour reconstruire la courbe [1].\n\n**Formule de Marinelli (référence dosimétrique)** [3] :\n> **A(MBq) = D(Gy) × M(g) / [0,042 × F₀(%) × Teff(j)]** — F₀ = fixation extrapolée à t = 0.\n\nSimplifiée à 1 mesure (F à 24/48 h, Teff = 5,8 j) : **A ≈ 4,1 × D × M / F[24]** ; avec correction +20 % : **A ≈ 5 × D × M / F[24]** [3].\n\n**Forme pratique EANM (MBq/g ÷ RAIU 24 h)** :\n\n| Indication | Coefficients (MBq/g) → cibles | Exemple | Source |\n|---|---|---|---|\n| **Basedow** | **6, 8, 12** → 150, 200, 300 Gy | 35 g, RAIU 65 % → 8×35/0,65 = **~430 MBq** (200 Gy) | [1] |\n| **AFTN / GMNT** | **4, 6, 8, 12, 16** → 100, 150, 200, 300, 400 Gy | nodule 10 g, 30 % → 12×10/0,3 = **400 MBq** (300 Gy) | [1] |\n\n**Doses cibles & relation dose-effet (Basedow).** Le choix de la cible définit la stratégie : concept **fonctionnel** (~150 Gy, viser l'euthyroïdie) vs **ablatif** (200-300 Gy, viser/accepter l'hypothyroïdie). La relation dose-effet est démontrée : **150 Gy → 74 %**, **200 Gy → 81 %**, **300 Gy → 88 %** d'élimination de l'hyperthyroïdie, l'hyperthyroïdie persistante tombant à **8 %** vers 300 Gy [1].\n\n| Indication | Dose \"antitoxique\" (préserve fonction) | Dose \"ablative\" | Source |\n|---|---|---|---|\n| Basedow | ~100-150 Gy (FR 60-90 Gy) | **200-300 Gy** | [1][3] |\n| AFTN / GMNT | **150-300 Gy** (jusqu'à 400 Gy) | uninodulaire 130-200 Gy ; GMN 80-130 Gy (FR) | [1][3] |\n| Goitre non toxique | **100-175 Gy** (cible ~100-120 Gy) | — | [1] |\n\n**Méthode des activités fixes (empirique)** — alternative pragmatique : Basedow visée antitoxique **200-300 MBq**, ablative **~500 MBq** (ATA : **370-555 MBq / 10-15 mCi**) ; AFTN **~300 MBq** ; GMNT **500-700 MBq** ; goitre non toxique **600-1110 MBq** [3][1][6].\n\n**Lecture du résultat attendu.** L'effet est **retardé (> 3 mois)** ; l'objectif n'est pas une image mais une **trajectoire biologique** : baisse de la T4 libre puis normalisation/élévation de la TSH (cf. §C13). L'**hypothyroïdie post-thérapeutique** est l'effet recherché (concept ablatif) ou attendu : corrélée à la dose la 1ʳᵉ-2ᵉ année puis croissance linéaire **3-5 %/an** dans le Basedow ; **20-60 %** pour AFTN/GMNT selon âge, activité et suivi [3][1].",
+        "stats": [
+          {
+            "value": "200-300 Gy",
+            "label": "Cible ablative Basedow [1]"
+          },
+          {
+            "value": "88 %",
+            "label": "Guérison à 300 Gy (Basedow) [1]"
+          },
+          {
+            "value": "5,5 j",
+            "label": "Teff fixe recommandée (EANM) [1]"
+          },
+          {
+            "value": "> 3 mois",
+            "label": "Délai d'effet complet [3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert - ablatif vs fonctionnel, le choix structurant",
+            "text": "Le concept **ablatif** (200-300 Gy) atteint **> 90 %** de succès contre **< 70 %** pour la dose \"fonctionnelle\" : il privilégie la guérison de l'hyperthyroïdie au prix d'une hypothyroïdie substituée [1]. Chez l'enfant, l'ablatif (≥ 300 Gy, 15 MBq/g) est la **stratégie de choix** car il minimise persistance/récidive ET le risque néoplasique du tissu résiduel [1]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège - le paradoxe de captation",
+            "text": "Une **RAIU très élevée** s'accompagne souvent d'une **Teff raccourcie** : la dose absorbée délivrée est alors **moindre qu'attendu** malgré une forte fixation. Ce \"paradoxe de captation\" peut imposer des activités majorées ; il justifie la mesure de la cinétique (≥ 3 points) plutôt qu'un uptake isolé [26][1]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution - ne pas confondre dose absorbée et dose efficace",
+            "text": "La dose **lésionnelle** (Gy, calculée par Marinelli/EANM) est l'objectif thérapeutique. Les coefficients **diagnostiques** de la CIPR 128 (mSv/MBq) ne s'appliquent **jamais** au calcul de la dose lésionnelle (cf. §C14) [17]."
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Thyréocyte folliculaire captant l'iodure-131 par le symporteur sodium/iode (NIS) au pôle basolatéral puis organification : la dose absorbée délivrée dépend de la fixation (RAIU), de la masse et de la période effective, variables de la formule de Marinelli.",
+        "figureCaption": "Fig. 2 - Du NIS à la dose : A = D × M / (0,042 × F₀ × Teff). La fixation, la masse et la Teff gouvernent l'activité à administrer."
+      },
+      {
+        "title": "C13 - Compte rendu structuré",
+        "text": "Le compte rendu d'ira-thérapie est un document **médico-légal et de radioprotection** autant que clinique : il trace la justification, l'activité délivrée et les consignes à l'entourage. Sa trame suit le standard SFMN [3].\n\n**Items obligatoires (SFMN)** [3] :\n1. **Éléments justifiant le traitement** + optimisation de l'exposition (indication, type d'hyperthyroïdie, euthyroïdie obtenue, sevrage des sources d'iode vérifié).\n2. **Activité administrée**, modalités (voie : gélule / solution), **date**, et résultats des examens préalables (RAIU, masse, scintigraphie, β-hCG si applicable).\n3. **Effets indésirables** éventuels et leur prise en charge.\n4. **Recommandations de radioprotection** pour le patient et l'entourage à la sortie (cf. §D16).\n5. **Nom du médecin** responsable de la surveillance.\n\n**Modèle de compte rendu - Basedow, concept ablatif** :\n> *Indication* : maladie de Basedow, récidive après 24 mois d'antithyroïdiens de synthèse (ATS) ; euthyroïdie obtenue, ATS arrêtés depuis 5 jours ; pas de surcharge iodée ; β-hCG négatif (< 72 h).\n> *Données dosimétriques* : volume thyroïdien échographique **35 g** ; RAIU 24 h **65 %** ; cible **200 Gy**.\n> *Traitement* : **¹³¹I-NaI 430 MBq** par voie orale (gélule), le [date]. Activité résiduelle de la gélule vérifiée, négligeable.\n> *Radioprotection* : traitement ambulatoire (< 740 MBq) ; consignes écrites remises (distance, hydratation, contacts limités).\n> *Conclusion* : ira-thérapie ablative délivrée. **Surveillance** : T4 libre à S4, T4 libre + TSH à M3 ; substitution par lévothyroxine en cas d'hypothyroïdie. Médecin responsable : [nom].\n\n**Surveillance (à intégrer au CR et au courrier)** [3] :\n- Évaluation à partir de la **4ᵉ semaine** (T4 libre), puis **3ᵉ mois** (T4 libre + TSH), bilan à **6 mois** si normalisation.\n- Hypothyroïdie (TSH élevée) → lévothyroxine (parfois transitoire : ne pas substituer trop vite).\n- **Hyperthyroïdie persistante** → **6 mois de recul** (± reprise d'ATS) avant un 2ᵉ traitement.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert - une conclusion qui engage le suivi",
+            "text": "Le CR ne se clôt pas sur l'administration : il **programme la surveillance** (S4 → M3 → M6) et anticipe l'hypothyroïdie (effet recherché/attendu, cf. §C12). Mentionner explicitement le **délai de 6 mois** avant tout retraitement évite une 2ᵉ dose prématurée alors que l'effet se construit encore [3]."
+          },
+          {
+            "type": "info",
+            "title": "Items à ne jamais omettre",
+            "text": "L'**activité administrée + la date**, la **vérification du sevrage iodé/ATS**, le **β-hCG** chez la femme en âge de procréer, et les **consignes de radioprotection à l'entourage** sont les items à la fois cliniques et réglementaires sans lesquels le CR est inexploitable et juridiquement insuffisant [3]."
+          }
+        ]
+      },
+      {
+        "title": "C14 - Pièges, artefacts & faux positifs / négatifs",
+        "text": "Les écueils de l'ira-thérapie ne sont pas des artefacts d'image mais des **causes d'échec thérapeutique** ou de **mauvaise estimation de dose**. Pour chacun : reconnaître la **cause**, l'**aspect**, et la **correction**.\n\n**Tableau récapitulatif des pièges** :\n\n| Piège | Mécanisme | Conséquence | Correction |\n|---|---|---|---|\n| **Surcharge iodée occulte** | Contraste, amiodarone, compléments, fruits de mer | RAIU effondrée → **échec / dose nulle** | Interrogatoire + **iodurie des 24 h** ; reporter [3][1] |\n| **Paradoxe de captation** | RAIU très élevée → **Teff raccourcie** | Dose absorbée **moindre qu'attendu** | Cinétique ≥ 3 points ; activité majorée [26] |\n| **ATS résiduels** | Radiorésistance / effet radioprotecteur (PTU > méthimazole) | Efficacité ↓ | Sevrage adapté avant traitement [1] |\n| **Gros volume (> 40-80 g)** | Masse à traiter excessive | Échec plus fréquent | Activité majorée ou chirurgie [1] |\n| **Masse mal estimée** | Scintigraphie planaire < 20 g non fiable | Dose fausse | Volume **échographique** [1] |\n| **Coefficients CIPR 128** | Confusion diagnostique/thérapeutique | Calcul de dose erroné | Marinelli/EANM pour la dose lésionnelle [17] |\n\n**Délais de sevrage des sources d'iode** — un examen ou un traitement réalisé sous surcharge iodée est inefficace (blocage du NIS, RAIU effondrée) [3][1] :\n\n| Substance | Délai d'arrêt avant traitement | Source |\n|---|---|---|\n| Produit de contraste hydrosoluble | **3-4 sem** (EANM : 6-8 sem) | [3][1] |\n| Contraste liposoluble / huileux | **3 mois** à 6-12 mois (myélographie 2-10 ans) | [3] |\n| **Amiodarone** | **3-6 mois** voire années | [1][3] |\n| Topiques iodés (Bétadine, collyres), sirops, fruits de mer | **1-2 sem** | [3] |\n| Lugol / algues | **2-3 sem** | [3] |\n\nEn cas de doute, une **iodurie des 24 h** quantifie la surcharge et fait reporter le traitement si elle est anormale [3][1].\n\n**Pièges de suivi** : une **hypothyroïdie transitoire** post-thérapeutique est possible — ne pas substituer trop vite [3] ; et l'**orbitopathie de Basedow** peut s'aggraver sans corticoprophylaxie chez le patient à risque (tabac, TRAb élevés), le risque d'aggravation post-¹³¹I atteignant **15 %** (vs 3 % sous méthimazole) dans l'étude de Bartalena [20][1].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège - surcharge iodée méconnue (cause n°1 d'échec)",
+            "text": "Une surcharge iodée occulte (produit de contraste récent, amiodarone, compléments) **éteint le NIS** : la RAIU s'effondre et l'iode-131 n'est pas capté. C'est la première cause d'échec évitable. Interroger systématiquement, doser l'**iodurie des 24 h** au moindre doute, et **reporter** le traitement jusqu'au sevrage [3][1]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège - aggravation de l'orbitopathie sans corticoprophylaxie",
+            "text": "Chez un patient à risque (tabac, TRAb↑, orbitopathie active), l'¹³¹I peut aggraver l'orbitopathie de Basedow : **15 %** (¹³¹I seul) vs **3 %** (méthimazole) vs **0 %** (¹³¹I + prednisone) [20]. Une **corticoprophylaxie** (prednisone, débutée 1-3 j après l'¹³¹I) est indiquée dans les formes à risque ; l'orbitopathie inactive ancienne sans facteur de risque permet l'¹³¹I sans corticoïde [1][20]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert - radiorésistance des antithyroïdiens",
+            "text": "Les ATS résiduels diminuent l'efficacité de l'ira-thérapie (effet radioprotecteur), le **PTU** étant plus délétère que le méthimazole. Un sevrage adapté (méthimazole 2-5 j, PTU 2-8 sem en activité fixe ; retrait court possible en dosimétrie) avant l'administration optimise la dose lésionnelle [1]."
+          }
+        ],
+        "figureKey": "THYROID_PATTERNS",
+        "figureAlt": "Profils de fixation trompeurs avant ira-thérapie : glande éteinte par surcharge iodée simulant une thyroïdite, captation focale autonome, captation diffuse du Basedow et gros goitre multinodulaire ; chaque profil oriente le piège thérapeutique correspondant.",
+        "figureCaption": "Fig. 3 - Les pièges décisionnels : surcharge iodée (glande éteinte), paradoxe de captation, ATS résiduels et gros volume sont les principales causes d'échec ou de sous-dosage."
+      },
+      {
+        "title": "D15 - Dosimétrie",
+        "text": "**Deux dosimétries distinctes coexistent en ira-thérapie, à ne jamais confondre.** D'une part la **dose lésionnelle** (dose absorbée *thérapeutique*, en Gray) que l'on **cherche à délivrer** au parenchyme captant — c'est elle qui guide le calcul d'activité (§B10, formule de Marinelli). D'autre part les **coefficients de dose patient** (en µGy/MBq ou mSv/MBq) issus des modèles biocinétiques **diagnostiques** de l'iodure, utiles pour estimer l'irradiation des organes non cibles et la dose efficace corps entier. Appliquer les coefficients diagnostiques au calcul de la dose lésionnelle est une **erreur de cadre** (cf. piège §D19).[1][17]\n\n**Coefficients diagnostiques [¹³¹I]NaI — adulte, fixation thyroïdienne 25 %** (rapport SFPM n°19-2001, repris par le guide SFMN). L'organe critique est, sans surprise, la **thyroïde** elle-même, cible du traitement :\n\n| Organe | Homme adulte (µGy/MBq) | Femme adulte (µGy/MBq) | Source |\n|---|---|---|---|\n| **Thyroïde** | **360 000** (0,36 Gy/MBq) | **560 000** (0,56 Gy/MBq) | [3] |\n| Paroi gastrique | 460 | 580 | [3] |\n| Paroi vésicale | 460 | 570 | [3] |\n| Utérus | 52 | 66 | [3] |\n| Ovaires | 43 | 58 | [3] |\n| Testicules | 27 | 34 | [3] |\n| **Dose efficace** | **18 µSv/MBq** | **28 µSv/MBq** | [3] |\n\nLa **voie orale** majore d'environ **30 %** la dose à la paroi gastrique (résidence gastrique ~0,5 h) sans modifier sensiblement la dose efficace.[3] Le compendium **CIPR 128** (2015) fournit le modèle compartimental de référence de l'iodure, avec une captation de référence à 24 h de **26 %** (apport 160 µg/j) et des variantes à **16 %** et **36 %** — *coefficients explicitement prévus pour le diagnostic, non la thérapie*.[17]\n\n**Dosimétrie réelle du patient hyperthyroïdien.** Une cohorte combinant le modèle CIPR et la procédure standard pré-thérapeutique EANM (n=15) retrouve, chez l'hyperthyroïdien, une dose **thyroïde de 653 mGy/MBq** (intervalle 390–981) et une **dose efficace de 24 mSv/MBq** (15–37), supérieures aux coefficients génériques car la cinétique pathologique (captation élevée, rétention) diffère du sujet euthyroïdien.[18] Cela illustre que les facteurs modulants — **captation, période effective (Teff), masse glandulaire, fonction rénale, hydratation** — déplacent fortement la dose réellement délivrée.\n\n**Dose lésionnelle visée** (rappel synthétique, détail §B10) : Basedow **150–300 Gy** selon le concept fonctionnel ou ablatif ; nodule/goitre toxique **150–300 Gy** (jusqu'à 400 Gy) ; goitre non toxique **100–175 Gy**.[1][3] À cible égale, plus la **Teff** est courte (RAIU très élevé → washout rapide), plus l'activité requise augmente.",
+        "stats": [
+          {
+            "value": "0,36 Gy/MBq",
+            "label": "Dose thyroïde, homme adulte (fixation 25 %) [3]"
+          },
+          {
+            "value": "18 µSv/MBq",
+            "label": "Dose efficace, homme adulte (NaI oral) [3]"
+          },
+          {
+            "value": "653 mGy/MBq",
+            "label": "Dose thyroïde réelle, hyperthyroïdien (médiane) [18]"
+          },
+          {
+            "value": "+30 %",
+            "label": "Surcroît à la paroi gastrique par voie orale [3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège - Coefficients diagnostiques ≠ dose thérapeutique",
+            "text": "Les coefficients en µGy/MBq (SFPM/CIPR 128) sont calibrés pour des activités traceuses chez l'euthyroïdien et ne peuvent **pas** servir à prédire la dose lésionnelle (Gy) délivrée au parenchyme hyperfonctionnel : la cinétique pathologique majore la dose (jusqu'à ~24 mSv/MBq mesurés vs 18 µSv/MBq de référence).[17][18] La dose au tissu cible se calcule par Marinelli / approche EANM (§B10)."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert - Dose absorbée vs dose efficace",
+            "text": "Distinguer la **dose absorbée** (Gy, par organe, grandeur physique gouvernant l'effet ablatif) de la **dose efficace** (mSv, pondérée par radiosensibilité, grandeur de radioprotection). En ira-thérapie, on optimise la première au niveau de la cible tout en limitant la seconde aux tissus sains — d'où l'intérêt de la voie orale ciblée et du parcours β⁻ court (~0,4–0,8 mm).[1][3]"
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schéma de désintégration de l'iode-131 : émission β⁻ (énergie moyenne 192 keV, max 606 keV) vers le xénon-131 stable, avec photon gamma de désexcitation à 364 keV, illustrant la dualité dose thérapeutique β⁻ / imagerie et irradiation de l'entourage par le gamma."
+      },
+      {
+        "title": "D16 - Radioprotection",
+        "text": "L'ira-thérapie est le **seul acte de médecine nucléaire courant où le patient devient une source radioactive significative et prolongée** : l'¹³¹I émet un **γ pénétrant de 364 keV** (abondance ~82 %) qui irradie l'entourage, et sa **période physique de 8,02 j** impose une décroissance lente.[1][3] La radioprotection se structure selon les trois cibles habituelles — patient, personnel, entourage/public — et selon les **trois leviers ALARA : temps, distance, écran**.\n\n**Patient.** Justification de l'indication, optimisation de l'activité (dosimétrie personnalisée plutôt qu'activité fixe quand possible, §B10), **hydratation abondante 24–48 h** et **mictions fréquentes** pour réduire la dose vésicale.[1][3]\n\n**Personnel.** Préparation des solutions en **enceinte plombée ventilée en dépression**, blindage de seringue/gélule, distance, port de gants, dosimétrie passive et opérationnelle ; vigilance accrue tenant au caractère pénétrant du 364 keV (par rapport au ¹²³I diagnostique).[3]\n\n**Seuil d'hospitalisation et libération du patient.**\n\n| Référentiel | Critère / valeur | Source |\n|---|---|---|\n| France (historique) | Hospitalisation en chambre protégée au-delà de **740 MBq** ; ambulatoire en deçà (acte CCAM KCNL003, ¹³¹I ≤ 1 GBq) | [3] |\n| Recommandation européenne | Seuil plutôt fixé à **400 MBq** | [3] |\n| États-Unis (10 CFR 35.75 / NRC) | Libération si dose à un tiers **< 5 mSv** ; défaut **1221 MBq (33 mCi)** ou débit **< 7 mrem/h à 1 m** ; activité max libérable hyperthyroïdie ≈ **2,1 GBq (57 mCi)** | [25] |\n\n**Contraintes de dose à l'entourage (France).** Public, enfants < 10 ans et femme enceinte : **1 mSv** ; proches 10–60 ans : **3 mSv** ; proches > 60 ans : **15 mSv**.[3] Ces contraintes se traduisent en **durées de limitation de contact** modulées par l'activité administrée :\n\n| Activité administrée | Enfants < 6 ans / femme enceinte | Autres proches | Source |\n|---|---|---|---|\n| 200–300 MBq | **9 jours** | **4 jours** | [3] |\n| 400–500 MBq | **17 jours** | **8 jours** | [3] |\n| 700–800 MBq | **25 jours** | **14 jours** | [3] |\n\nUn **arrêt de travail** est requis si l'activité professionnelle implique des contacts proches (~1 m) prolongés (7 h/j) : dès 400–600 MBq → **3–5 jours**.[3]\n\n**Consignes pratiques au patient** (relayées par écrit) : maintenir une distance de **1–2 m**, dormir seul, **uriner assis** et tirer la chasse deux fois, mouchoirs jetables, lavage fréquent des mains, boisson abondante.[3]\n\n**Déchets et situations particulières.** L'¹³¹I relève des **déchets à décroissance longue (type 2)** : tri, stockage et décroissance avant élimination quand l'activité atteint **1,5–2 × le bruit de fond** ; déchets solides du patient collectés 30 j, conservés ~80 j.[3] En cas de **décès**, les précautions (inhumation/crémation) sont jugées suffisantes si l'activité corporelle est **≤ 400 MBq**.[3]",
+        "steps": [
+          {
+            "title": "J0 - Administration",
+            "text": "Gélule [¹³¹I]NaI per os (ou solution si trouble de déglutition) ; mesure de l'activité avant/après ; remise et explication des consignes écrites de radioprotection.[3]"
+          },
+          {
+            "title": "J0 → J2 - Élimination active",
+            "text": "Hydratation abondante (24–48 h), mictions fréquentes (dose vésicale), distance 1–2 m, chambre seul.[1][3]"
+          },
+          {
+            "title": "Période de limitation de contact",
+            "text": "Durée modulée par l'activité (4 à 25 j selon le proche concerné, cf. tableau) ; arrêt de travail si contacts proches prolongés.[3]"
+          },
+          {
+            "title": "Décroissance des déchets",
+            "text": "Effluents et déchets solides type 2 stockés jusqu'à 1,5–2 × le bruit de fond avant élimination.[3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution - Le patient est une source γ durable",
+            "text": "À la différence d'un examen diagnostique, le γ de 364 keV de l'¹³¹I et sa période de 8 j font du patient une source d'irradiation externe pour son entourage pendant plusieurs jours à semaines.[1][3] Les consignes (distance, enfants, femme enceinte, arrêt de travail) doivent être **remises par écrit** et adaptées à l'activité administrée et à la composition du foyer."
+          },
+          {
+            "type": "info",
+            "title": "France vs international",
+            "text": "Le seuil d'hospitalisation **740 MBq** est une valeur réglementaire française historique ; l'Europe préconise plutôt **400 MBq**, et les États-Unis raisonnent en **dose au tiers (< 5 mSv)** avec une activité libérable bien plus élevée (jusqu'à ~2,1 GBq).[3][25] Toujours appliquer le référentiel national en vigueur."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Triptyque ALARA temps-distance-écran appliqué à l'ira-thérapie : réduire le temps de contact, augmenter la distance (1–2 m de l'entourage) et interposer un écran/blindage, leviers structurant les consignes au patient et au personnel face à la source γ de 364 keV."
+      },
+      {
+        "title": "D17 - Performances thérapeutiques & comparaison",
+        "text": "En thérapeutique, la « performance » n'est pas une sensibilité diagnostique mais un **taux de succès** (élimination de l'hyperthyroïdie ou contrôle, le plus souvent au prix d'une hypothyroïdie) et une **relation dose-effet**. L'ira-thérapie est l'une des **trois options de traitement** de l'hyperthyroïdie aux côtés des antithyroïdiens de synthèse (ATS) et de la chirurgie, toutes très efficaces.[3][6]\n\n**Relation dose-effet (maladie de Basedow).** Le succès est directement gouverné par la dose lésionnelle :\n\n| Cible (Gy) | Élimination de l'hyperthyroïdie | Source |\n|---|---|---|\n| 150 Gy | **74 %** | [1] |\n| 200 Gy | **81 %** | [1] |\n| 300 Gy (concept ablatif) | **88 %** ; succès global > 90 % | [1] |\n\nLe **concept ablatif** (dose élevée, hypothyroïdie assumée) atteint un succès **> 90 %**, contre **< 70 %** pour le concept « dose fonctionnelle » visant à préserver l'euthyroïdie ; l'hyperthyroïdie persistante à ~300 Gy reste **faible (~8 %)**.[1]\n\n**Efficacité par étiologie** :\n\n| Indication | Succès | Hypothyroïdie / récidive | Source |\n|---|---|---|---|\n| Basedow (ablatif) | **> 90 %** | hypothyroïdie fréquente, +3–5 %/an au-delà de 1–2 ans | [1][3] |\n| Nodule autonome toxique (AFTN) | **81–94 %** | hypothyroïdie 20–60 % | [1] |\n| Goitre multinodulaire toxique (GMNT) | ~**81 %** | persistance/récidive jusqu'à **20 %** | [1] |\n| Goitre non toxique | réduction volumique **40–50 % à 1 an**, jusqu'à **60 % à 2–5 ans** | — | [1] |\n\n**Comparaison des trois modalités.**\n\n| Modalité | Efficacité / délai | Atouts | Limites | Source |\n|---|---|---|---|---|\n| **¹³¹I (ira-thérapie)** | succès 81–94 % (autonomie), >90 % Basedow ablatif ; effet > 3 mois | ambulatoire, non invasif, faible morbidité | hypothyroïdie, risque d'aggravation de l'orbitopathie, délai d'action | [1][3] |\n| **ATS** | contrôle rapide ; rémission Basedow ~50 % après 12–18 mois | réversible, pas d'irradiation | récidive fréquente, agranulocytose, hépatotoxicité, durée prolongée | [3][6] |\n| **Chirurgie** | curatif immédiat (goitre, compression, cancer) | contrôle anatomique, histologie | risques anesthésiques, hypoparathyroïdie, paralysie récurrentielle, hypothyroïdie | [3][6] |\n\n**Sécurité oncologique à long terme.** La cohorte **Kitahara (JAMA Intern Med 2019, n=18 805, suivi moyen 26 ans)** suggère un excès de mortalité par cancers solides corrélé à la dose à l'estomac (RR **1,06 par 100 mGy**, IC 1,02–1,10 ; sein **1,12 par 100 mGy**), soit un excès estimé de **19–32 décès pour 1000 patients** aux doses gastriques de 150–250 mGy.[19] Ces résultats restent **controversés** (incertitudes du modèle dosimétrique) et de multiples cohortes ne retrouvent pas d'excès de mortalité par cancer.[19]",
+        "stats": [
+          {
+            "value": "> 90 %",
+            "label": "Succès du concept ablatif dans le Basedow [1]"
+          },
+          {
+            "value": "81–94 %",
+            "label": "Succès dans le nodule autonome toxique [1]"
+          },
+          {
+            "value": "≤ 20 %",
+            "label": "Persistance/récidive dans le GMNT [1]"
+          },
+          {
+            "value": "40–60 %",
+            "label": "Réduction volumique du goitre non toxique (1 à 5 ans) [1]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert - L'hypothyroïdie n'est pas un échec",
+            "text": "Dans le concept **ablatif** (notamment Basedow et pédiatrie), l'hypothyroïdie post-thérapeutique est un **objectif assumé** : elle signe l'efficacité de l'ablation, se substitue aisément par lévothyroxine, et minimise les récidives. Le « succès » se juge donc sur l'élimination de l'hyperthyroïdie, pas sur la préservation de l'euthyroïdie.[1]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège - Surcharge iodée et radiorésistance",
+            "text": "Une **surcharge iodée occulte** (produits de contraste, amiodarone, compléments, fruits de mer) effondre la captation et provoque un **échec thérapeutique** : doser l'iodurie des 24 h et reporter si besoin.[1][3] De même, un sevrage insuffisant des ATS (surtout le PTU) diminue l'efficacité par effet radioprotecteur, et un gros volume (> 40–80 g) majore le taux d'échec.[1]"
+          }
+        ],
+        "figureKey": "THYROID_UPTAKE",
+        "figureAlt": "Courbe de fixation thyroïdienne de l'iode (RAIU) opposant un Basedow (captation élevée et diffuse) à un nodule autonome toxique (captation focale extinctive), socle de la relation dose-effet et du calcul d'activité conditionnant le taux de succès."
+      },
+      {
+        "title": "D18 - Place dans la stratégie & algorithmes décisionnels",
+        "text": "L'hyperthyroïdie dispose de **trois traitements de fond — ATS, ira-thérapie (¹³¹I), chirurgie — tous très efficaces** ; le choix dépend de l'étiologie, du volume glandulaire, du terrain (grossesse, orbitopathie), des comorbidités et de la préférence du patient.[3][6] Le **prérequis absolu** est l'identification précise de l'étiologie (clinique + biologie [TSH, T4l/T3l, **TRAb**] + échographie + **scintigraphie** dans les formes autonomes) : l'¹³¹I n'a de sens que pour une hyperthyroïdie à **fixation préservée (> 5 %)** et **sans suspicion de cancer**.[3]\n\n**Maladie de Basedow.** La pratique européenne/française privilégie habituellement les **ATS au premier épisode auto-immun**. L'ira-thérapie ou la chirurgie sont retenues en cas de **récidive, d'intolérance/échec des ATS, ou d'impossibilité de sevrage après 24 mois**.[3] L'ATA-2016 positionne les trois options à parts égales en première intention, le choix relevant du contexte.[6]\n\n**Hyperthyroïdie autonome (nodule toxique, GMNT).** Comme elle ne guérit pas spontanément, un **traitement radical d'emblée (¹³¹I ou chirurgie)** est la règle ; l'¹³¹I est privilégié pour les formes non compressives sans suspicion de malignité, la chirurgie pour les goitres volumineux/compressifs.[3][6]\n\n**Orbitopathie de Basedow (Graves' orbitopathy, GO) — déterminant majeur du choix.** L'¹³¹I peut **déclencher ou aggraver** une GO (~**15 %** des cas après ¹³¹I seul vs **3 %** après méthimazole vs **0 %** après ¹³¹I + prednisone dans l'essai de Bartalena).[20][14] La conduite EUGOGO-2021 :[8]\n\n| Profil orbitaire | Conduite vis-à-vis de l'¹³¹I | Source |\n|---|---|---|\n| GO active modérée-sévère | différer l'¹³¹I / préférer ATS ou chirurgie, traiter la GO d'abord | [8] |\n| GO légère + facteurs de risque (tabac, TRAb élevés, hyperthyroïdie sévère) | ¹³¹I possible **sous corticoprophylaxie** | [8] |\n| GO ancienne, stablement **inactive**, sans facteur de risque | ¹³¹I possible **sans** couverture cortisonique | [8] |\n\nLe **tabagisme** est le principal facteur de risque modifiable.[8]\n\n**Terrains particuliers.** La **grossesse** et l'**allaitement** contre-indiquent l'¹³¹I (privilégier ATS/chirurgie).[3][6] En **pédiatrie**, le **concept ablatif** (≥ 300 Gy, 15 MBq/g, activités 200–800 MBq) est la stratégie de choix car il minimise à la fois la récidive et le risque néoplasique sur le tissu résiduel ; l'¹³¹I est quasi-contre-indiqué avant 5 ans, relatif de 5 à 10 ans, envisageable au-delà.[1]",
+        "steps": [
+          {
+            "title": "1. Confirmer et typer l'hyperthyroïdie",
+            "text": "TSH effondrée + T4l/T3l, TRAb, échographie ; scintifigraphie ⁹⁹ᵐTc/¹²³I dans les formes autonomes pour distinguer captation diffuse (Basedow) vs focale (AFTN/GMNT) vs effondrée (thyroïdite, qui contre-indique l'¹³¹I).[3][6]"
+          },
+          {
+            "title": "2. Vérifier l'éligibilité à l'¹³¹I",
+            "text": "Fixation > 5 %, pas de suspicion de cancer, pas de grossesse/allaitement, pas de surcharge iodée, adhésion à la radioprotection.[3]"
+          },
+          {
+            "title": "3. Évaluer le statut orbitaire (Basedow)",
+            "text": "Score d'activité / EUGOGO : différer ou couvrir par corticoprophylaxie selon l'activité de la GO et les facteurs de risque (tabac, TRAb).[8]"
+          },
+          {
+            "title": "4. Choisir la modalité",
+            "text": "Basedow : ATS au 1er épisode, ¹³¹I/chirurgie si récidive ou échec ; autonomie : traitement radical d'emblée (¹³¹I si non compressif). Pédiatrie : concept ablatif.[1][3][6]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège - Orbitopathie active = différer l'¹³¹I",
+            "text": "Devant une orbitopathie active modérée à sévère, ne pas administrer l'¹³¹I sans concertation : risque d'aggravation oculaire significatif. Préférer ATS/chirurgie ou traiter la GO d'abord ; chez le patient à risque (tabac, TRAb élevés), une **corticoprophylaxie** est indispensable (cf. §A6/§B8).[8][20]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert - Pédiatrie : viser l'ablation",
+            "text": "Chez l'enfant, le tissu thyroïdien résiduel non ablaté est le plus radiosensible (risque démontré dès ~0,1 Gy) : le concept ablatif (≥ 300 Gy) réduit **simultanément** la récidive et le risque de néoplasie radio-induite — d'où une dose volontairement élevée plutôt que parcimonieuse.[1]"
+          }
+        ],
+        "figureKey": "THYROID_PATTERNS",
+        "figureAlt": "Arbre de décision scintigraphique de l'hyperthyroïdie : captation diffuse homogène (Basedow), foyer focal extinctif (nodule autonome / goitre multinodulaire toxique) et carte blanche (thyroïdite), orientant le choix entre ira-thérapie, antithyroïdiens et chirurgie."
+      },
+      {
+        "title": "D19 - Examens & traitements apparentés",
+        "text": "L'ira-thérapie s'inscrit dans un réseau d'actes diagnostiques et thérapeutiques de la pathologie thyroïdienne ; la connaître, c'est savoir l'articuler avec ses voisins.\n\n| Acte apparenté | Nature / différence | Quand le préférer / l'associer | Source |\n|---|---|---|---|\n| **Scintigraphie thyroïdienne ⁹⁹ᵐTc-pertechnétate** | Imagerie diagnostique (capté par le NIS, non organifié) ; γ 140 keV | Typage étiologique **préalable** à l'¹³¹I : sensibilité ~96,1 % pour le Basedow ; distingue diffus/focal/froid | [24][27] |\n| **Scintigraphie / uptake ¹²³I** | Capté **et organifié** ; reflète la fonction complète ; γ 159 keV | Étude de fixation (RAIU), recherche de tissu autonome, nodule « chaud/froid » ; sensibilité Basedow ~83,3 % | [24] |\n| **Mesure de fixation (RAIU) à l'¹³¹I traceur (2–5 MBq)** | Quantification pré-thérapeutique de la captation et de la Teff | **Dosimétrie pré-thérapeutique** (Marinelli/EANM) avant l'administration thérapeutique | [1][3] |\n| **Ira-thérapie du goitre non toxique** | Même radiopharmaceutique, visée de **réduction de masse** (100–175 Gy) | Goitre volumineux avec contre-indication ou refus chirurgical | [1] |\n| **Chirurgie thyroïdienne** | Thyroïdectomie totale/subtotale | Goitre compressif, suspicion de cancer, gros volume, grossesse, orbitopathie sévère | [3][6] |\n| **Antithyroïdiens de synthèse (ATS)** | Traitement médical réversible | 1er épisode de Basedow, préparation à l'¹³¹I/chirurgie, terrain particulier | [3][6] |\n| **Radio-ablation à l'¹³¹I du cancer différencié** | Même isotope, **forte activité** (1,1–3,7 GBq), visée carcinologique post-chirurgicale | Carcinome thyroïdien différencié (cadre, dosimétrie et radioprotection différents) | [3] |\n\n**Logique théranostique.** L'ira-thérapie illustre la forme la plus ancienne de la **boucle théranostique** : le même couple atome/cible sert successivement à *voir* (mesure de fixation, scintigraphie pré-thérapeutique au ¹²³I ou à l'¹³¹I traceur) et à *traiter* (¹³¹I thérapeutique), via une cible unique — le **symporteur sodium/iode (NIS)** des thyréocytes. Le diagnostic conditionne directement le traitement : seule une **fixation préservée** confirmée autorise et calibre la dose thérapeutique.[1][3]\n\n**Variantes de protocole.** Le choix entre **activité fixe** (empirique, simple) et **approche dosimétrique** (Marinelli/EANM, individualisée) constitue la principale variante (§B10) ; l'adjonction de **lithium** (900 mg/j × 7 j, si RAIU < 20 %) prolonge la rétention et augmente la dose délivrée.[1] La forme galénique (gélule vs solution buvable/IV) s'adapte aux troubles de déglutition, avec un impact sur le contrôle qualité (activité résiduelle).[3]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert - La paire diagnostic-thérapie historique",
+            "text": "Avant le couple ¹⁶⁸Ga/¹⁷⁷Lu des tumeurs neuroendocrines, l'iode radioactif fut le **premier théranostique** : on cartographie et quantifie la captation (¹²³I, ⁹⁹ᵐTc ou ¹³¹I traceur), puis on traite avec l'¹³¹I, sur une cible moléculaire unique (le NIS). Une scintigraphie de typage et/ou une mesure de fixation préalable sont donc indissociables de l'acte thérapeutique.[1][3][24]"
+          },
+          {
+            "type": "info",
+            "title": "Ne pas confondre les indications de l'¹³¹I",
+            "text": "Le même radionucléide sert deux contextes très différents : l'**ira-thérapie de l'hyperthyroïdie bénigne** (activités 0,2–1 GBq, dose lésionnelle 150–300 Gy) et la **radio-ablation du cancer différencié** (1,1–3,7 GBq, cadre carcinologique). Préparation, dosimétrie et radioprotection diffèrent — ne pas transposer les protocoles de l'un à l'autre.[3]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique de l'iode radioactif : étape diagnostique (scintigraphie de typage et mesure de fixation au ¹²³I, ⁹⁹ᵐTc ou ¹³¹I traceur) puis étape thérapeutique (¹³¹I per os) sur une cible moléculaire unique, le symporteur sodium/iode NIS du thyréocyte."
+      },
+      {
+        "title": "E20 - Cas cliniques commentés / Iconographie",
+        "text": "Trois situations couvrant le typique (Basedow), l'autonomie nodulaire et le piège iatrogène. Chaque cas suit la trame contexte -> images/données -> analyse -> conclusion, et renvoie aux sections techniques (calcul d'activité, préparation, radioprotection, orbitopathie).",
+        "steps": [
+          {
+            "title": "Cas 1 — Basedow, choix ablatif et corticoprophylaxie",
+            "text": "*Contexte* : femme de 38 ans, maladie de Basedow récidivante après 24 mois d'antithyroïdiens de synthèse (ATS), **TRAb élevés**, tabagisme actif, orbitopathie de Graves (GO) légère active. Échographie : thyroïde de **35 g**, captation (RAIU) à 24 h = **65 %** [1]. *Décision dosimétrique* : concept **ablatif** (succès **> 90 %** vs **< 70 %** pour le concept fonctionnel) [1] ; cible **200 Gy**. Application de la forme pratique EANM : **8 MBq × 35 g / 0,65 = 430 MBq** [1]. *Préparation* : arrêt du méthimazole **4–7 j** avant (approche dosimétrique) [1] ; β-hCG négatif **< 72 h** [1] ; corticoprophylaxie EUGOGO **haut risque** = prednisone **0,3–0,5 mg/kg/j** débutée **1–3 j après** l'¹³¹I, décroissance sur **3 mois** [1][8]. *Conclusion* : Basedow à risque orbitaire traité en visée ablative (430 MBq, ~200 Gy) sous corticoprophylaxie ; **sevrage tabagique** impératif (risque d'aggravation de la GO **≈15 %** sous radioiode seul vs **≈3 %** sous méthimazole et **0 %** sous radioiode + prednisone) [20]."
+          },
+          {
+            "title": "Cas 2 — Nodule autonome toxique (adénome de Plummer)",
+            "text": "*Contexte* : homme de 62 ans, TSH effondrée, T4l haute, nodule unique de **10 g**, scintigraphie ⁹⁹ᵐTc-pertechnétate : fixation **focale** avec **extinction** du parenchyme extranodulaire — pattern d'autonomie [10][27]. RAIU 24 h = **30 %**. *Décision* : traitement radical d'emblée pour l'hyperthyroïdie autonome ; cible **300 Gy** (le parenchyme sain éteint est épargné, ce qui limite l'hypothyroïdie). Forme EANM TNG : **12 MBq × 10 g / 0,30 = 400 MBq** [1] ; cohérent avec l'activité fixe usuelle (**~300 MBq** SFMN, **370–740 MBq** EANM) [3][1]. *Suivi* : T4l à **S4**, T4l + TSH à **M3** [3] ; risque d'hypothyroïdie post-thérapeutique **20–60 %** selon l'âge et le suivi [1]. *Conclusion* : nodule toxique traité par **400 MBq** (≈300 Gy) avec succès attendu **81–94 %** [1] ; l'extinction du tissu sain rend l'hypothyroïdie moins systématique que dans le Basedow."
+          },
+          {
+            "title": "Cas 3 — Échec apparent : surcharge iodée occulte",
+            "text": "*Contexte* : femme de 55 ans adressée pour ira-thérapie d'un goitre multinodulaire toxique ; persistance de l'hyperthyroïdie 6 mois après une 1ʳᵉ administration de **600 MBq**. *Analyse* : RAIU 24 h mesurée à **6 %** (effondrée) ; interrogatoire = coronarographie récente avec produit de contraste hydrosoluble et automédication par sirop iodé. La surcharge iodée **dilue** le traceur et effondre la captation -> **dose absorbée insuffisante**, cause classique d'échec [3][1]. Conduite : **iodurie des 24 h** (anormale) -> report, sevrage des produits de contraste hydrosolubles **3–4 sem** (SFMN) à **6–8 sem** (EANM), des topiques iodés **1–3 sem** [3][1]. *Conclusion* : « échec » iatrogène et non vrai échec ; après élimination de la surcharge et nouvelle mesure de RAIU, retraitement à activité recalculée. Toujours **rechercher une surcharge iodée** avant de conclure à une radiorésistance [26]."
+          }
+        ],
+        "figureKey": "THYROID_UPTAKE",
+        "figureAlt": "Courbe de fixation thyroïdienne (RAIU) de l'iode-131 : montée 4-6 h, pic 24 h, décroissance gouvernée par la période effective — base du calcul d'activité par la formule de Marinelli."
+      },
+      {
+        "title": "E21 - Points clés / à retenir",
+        "list": [
+          "**Principe** : l'¹³¹I, iodure de sodium [¹³¹I]NaI per os, est capté par le **symporteur Na/I (NIS)** des thyréocytes hyperfonctionnels ; son **β⁻** (énergie moyenne **192 keV**, parcours tissulaire **0,4–0,8 mm**) détruit sélectivement le tissu captant en épargnant les structures voisines [1][3].",
+          "**Physique** : période **8,02 j** (EANM) / 8,06 j (SFMN), désintégration β⁻ vers le xénon-131 stable ; **γ de 364 keV (≈82 %)** permettant scintigraphie et dosimétrie post-thérapeutique [1][3].",
+          "**Indications** : hyperthyroïdies à fixation préservée **> 5 %** — Basedow (échec/intolérance/récidive des ATS, impossibilité de sevrage après **24 mois**), nodule autonome toxique, goitre multinodulaire toxique non compressif, sans suspicion de cancer [3].",
+          "**Contre-indications absolues** : grossesse, allaitement (arrêt **définitif**, cessé **≥ 6 sem** avant), désir de grossesse **< 6 mois**, suspicion de cancer thyroïdien, surcharge iodée, non-adhésion à la radioprotection [3][1].",
+          "**Calcul d'activité (Marinelli)** : A(MBq) = D(Gy)·M(g) / [0,042·F₀(%)·Teff(j)] ; forme pratique EANM Basedow = **6 / 8 / 12 MBq×g / RAIU24h** pour **150 / 200 / 300 Gy** [3][1].",
+          "**Concept ablatif > fonctionnel** dans le Basedow : succès **> 90 %** vs **< 70 %** ; par dose : 150 Gy -> **74 %**, 200 Gy -> **81 %**, 300 Gy -> **88 %** d'élimination de l'hyperthyroïdie [1].",
+          "**Activités fixes usuelles** : Basedow antitoxique **200–300 MBq**, ablatif **~500 MBq** (ATA 370–555 MBq) ; nodule toxique **~300 MBq** ; goitre multinodulaire toxique **500–700 MBq** [3][6][1].",
+          "**Préparation** : arrêt des ATS (méthimazole **2–5 j**, PTU **2–8 sem** en activité fixe), L-T4 **3–4 sem**, β-hCG **< 72 h**, sevrage des sources d'iode, **iodurie** si surcharge suspectée, hydratation **24–48 h** après [1][3].",
+          "**Orbitopathie de Graves** : risque d'aggravation **≈15 %** sous radioiode seul vs **≈3 %** sous méthimazole, annulé par la corticoprophylaxie [20] ; **tabac** = principal facteur modifiable ; prednisone EUGOGO **0,3–0,5 mg/kg/j** (haut risque) débutée **1–3 j après** l'¹³¹I [8][1].",
+          "**Radioprotection (France)** : seuil d'hospitalisation en chambre protégée **740 MBq** (historique) / **400 MBq** (reco européenne) ; contraintes proches : public/enfants < 10 ans/femme enceinte **1 mSv**, proches 10–60 ans **3 mSv**, > 60 ans **15 mSv** [3].",
+          "**Dosimétrie patient** : thyroïde **360 µGy/MBq** (homme) / **560 µGy/MBq** (femme), dose efficace **18 µSv/MBq** (homme) — coefficients **diagnostiques** (fixation 25 %), à ne PAS appliquer au calcul de la dose lésionnelle thérapeutique [3][17].",
+          "**Pédiatrie** : concept ablatif privilégié (**15 MBq/g**, activités **200–800 MBq**, cible **≥ 300 Gy**) ; thyroïde de l'enfant très radiosensible -> prudence avant 5 ans [1].",
+          "**Pièges majeurs** : surcharge iodée occulte (RAIU effondrée -> échec), paradoxe de captation (RAIU très élevée -> Teff raccourcie -> dose moindre), ATS résiduels (radiorésistance), gros volume (> 40–80 g) [26][1].",
+          "**Hypothyroïdie post-thérapeutique** : effet souvent recherché ; croissance linéaire **3–5 %/an** après la 1ʳᵉ–2ᵉ année dans le Basedow ; **20–60 %** pour les formes autonomes [3][1]."
+        ]
+      },
+      {
+        "title": "E22 - FAQ & pièges d'examen",
+        "text": "**Pourquoi l'¹³¹I plutôt qu'un autre iode radioactif pour traiter ?** L'¹³¹I est un émetteur **β⁻** : c'est l'électron, de parcours tissulaire **0,4–0,8 mm**, qui délivre la dose lésionnelle locale ; le γ de **364 keV** ne sert qu'à l'imagerie/dosimétrie [1][3]. Un émetteur purement γ ne détruirait pas le tissu.\n\n**Concept « ablatif » ou « fonctionnel » dans le Basedow ?** L'ablatif (200–300 Gy, vise l'hypothyroïdie) donne un succès **> 90 %** contre **< 70 %** pour le fonctionnel (vise l'euthyroïdie) [1]. La tendance actuelle privilégie l'ablatif, l'hypothyroïdie étant facilement substituée.\n\n**Faut-il arrêter les antithyroïdiens, et combien de temps ?** Oui : le méthimazole **2–5 j** (activité fixe) ou **4–7 j** (dosimétrie), le PTU **2–8 sem** (plus radioprotecteur que le méthimazole) [1]. Un sevrage insuffisant **réduit l'efficacité**.\n\n**Un patient à RAIU effondrée : pourquoi ?** Penser d'abord à une **surcharge iodée occulte** (produit de contraste, amiodarone, topiques, fruits de mer) -> dose insuffisante et échec. Vérifier par l'**iodurie des 24 h** et reporter [3][1]. Ne pas confondre avec une thyroïdite (RAIU basse = contre-indication à la RAI).\n\n**Le « paradoxe de captation » ?** Une RAIU très élevée s'accompagne souvent d'une **période effective raccourcie** : la dose absorbée réelle est plus faible qu'attendue, d'où des activités parfois majorées [26].\n\n**Radioiode et orbitopathie de Graves : que craindre ?** Une aggravation chez le patient à risque (tabac, TRAb élevés, GO active) : **≈15 %** sous radioiode seul vs **≈3 %** sous méthimazole, prévenue par la **corticoprophylaxie** (prednisone débutée 1–3 j après l'¹³¹I) [20][8][1].\n\n**Peut-on appliquer les coefficients ICRP/SFPM (mSv/MBq) au calcul thérapeutique ?** Non : ce sont des coefficients **diagnostiques** (CIPR 128, fixation 25 %). La dose lésionnelle se calcule par **Marinelli / méthode EANM** en Gy [17][3]. C'est un piège classique.\n\n**Comment estimer la masse cible ?** Par **échographie** (V lobe = π/6 × L × l × P), erreur typique **< 20 %** ; la scintigraphie planaire n'est fiable que pour une masse **> ~20 g** [3][1].\n\n**Quel délai avant une grossesse ?** Éviter la grossesse **≈4 mois** (EANM) à **6 mois** ; un désir de grossesse < 6 mois est une contre-indication [1][3]. Prudence aussi chez l'homme (~3–4 mois).\n\n**L'ira-thérapie augmente-t-elle la mortalité par cancer ?** La cohorte Kitahara (JAMA Intern Med 2019, suivi moyen 26 ans) suggère un excès **dose-dépendant** (RR sein **1,12/100 mGy**), mais le résultat reste **controversé** (modèle dosimétrique discuté) et de multiples cohortes ne retrouvent pas d'excès [19].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — surcharge iodée et faux échec",
+            "text": "Avant de conclure à une radiorésistance ou un échec, **toujours rechercher une surcharge iodée** : RAIU effondrée, interrogatoire (contraste, amiodarone, topiques iodés, algues), **iodurie des 24 h**. Reporter le traitement et respecter les délais de sevrage (contraste hydrosoluble 3–4 sem à 6–8 sem, amiodarone plusieurs mois) [3][1]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — ne pas confondre dose diagnostique et dose lésionnelle",
+            "text": "Les coefficients en µGy/MBq (thyroïde 360/560, dose efficace 18 µSv/MBq) sont **diagnostiques** et ne servent jamais à dimensionner le traitement. La dose thérapeutique se planifie en **Gray** par la formule de Marinelli ou les formes pratiques EANM (MBq/g ÷ RAIU24h) [3][17][1]."
+          }
+        ]
+      },
+      {
+        "title": "E25 - Références & liens",
+        "text": "**Recommandations de référence** (datées, sourcées EANM/SNMMI/ATA/SFMN/EUGOGO) :\n\n- **EANM 2023** — Campennì A, Avram AM, Verburg FA, et al. *The EANM guideline on radioiodine therapy of benign thyroid disease.* Eur J Nucl Med Mol Imaging 2023;50(11):3324-3348 [1][2].\n- **SFMN/CEMEN 2006** — *Guide pour la rédaction de protocoles de traitement des hyperthyroïdies par iode 131*, v1.0 (ratifié 21 juin 2006) [3].\n- **SNMMI 3.0 (2012)** — Silberstein EB, et al. *Practice Guideline for Therapy of Thyroid Disease with ¹³¹I 3.0.* J Nucl Med 2012;53(10):1633-1651 [4][5].\n- **ATA 2016** — Ross DS, et al. *2016 ATA Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis.* Thyroid 2016;26(10):1343-1421 [6][7].\n- **EUGOGO 2021** — Bartalena L, et al. *2021 EUGOGO clinical practice guidelines for the medical management of Graves' orbitopathy.* Eur J Endocrinol 2021;185(4):G43-G67 [8][9].\n\n**Sources primaires & dosimétriques** : Bartalena NEJM 1998 (orbitopathie post-RAI) [20] ; Lai/Bartalena JCEM 2010 (prednisone faible dose) [21] ; ICRP 128 (Mattsson 2015, coefficients diagnostiques) [17] ; Andersson & Mattsson, Front Endocrinol 2021 (dosimétrie réelle hyperthyroïdiens) [18] ; Kitahara JAMA Intern Med 2019 (mortalité cancer, controversé) [19] ; Malapure, Indian J Nucl Med 2020 (paradoxe de captation) [26] ; Plazinska PLoS One 2020 (mythes/réalité) [14] ; Trout Pediatr Radiol 2023 (Basedow pédiatrique) [15] ; NRC/ORNL 10 CFR 35.75 (libération du patient) [25].\n\n**Aspect normal & diagnostic étiologique** : Muzahir & Grady (NCBI Bookshelf) [10] ; Iqbal & Rehman, StatPearls (Thyroid Uptake and Scan) [11] ; Medscape RAIU [16] ; Ballal, Indian J Med Res 2017 (RAIU de référence) [22] ; Alswat BMC Res Notes 2020 (scintigraphie/corrélation clinique) [27] ; comparatif ⁹⁹ᵐTc/¹²³I/échographie [24]. Propriétés physiques de l'¹³¹I : [12][13].\n\n**Carte de liens (réseau de l'article)** — *Traceur* : [¹³¹I]NaI (iodure de sodium-131). *Théranostique* : ira-thérapie ¹³¹I de l'hyperthyroïdie. *Maladies* : maladie de Basedow, nodule autonome toxique (adénome de Plummer), goitre multinodulaire toxique, orbitopathie de Graves. *Examens* : scintigraphie thyroïdienne (⁹⁹ᵐTc-pertechnétate / ¹²³I), mesure de fixation thyroïdienne (RAIU), échographie thyroïdienne. *Scores* : score d'activité clinique (CAS/EUGOGO) de l'orbitopathie. *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section B8 (Préparation) tableau sevrage + step J-? : « arrêt de la LT4 ~4–6 semaines » vs Section 'A5/B8 steps' et étalon Recherche 1 qui indiquent « ~3–4 semaines »",
+    "problem": "Incohérence interne sur la durée de sevrage en LT4 : le contenu donne tantôt « 3–4 semaines » (conforme ETA/Recherche 1) tantôt « 4–6 semaines ». La durée habituelle d'arrêt de la LT4 seule est de 3–4 semaines (4–6 semaines correspond plutôt à un schéma avec relais LT3 puis arrêt). Ce n'est pas faux dans l'absolu mais l'absence d'harmonisation peut induire en erreur.",
+    "fix": "Harmoniser : préciser « arrêt LT4 3–4 semaines, OU relais LT3 2–3 sem puis arrêt 2 sem » de façon uniforme dans toutes les sections (B8, A5, E21, E22, cas cliniques)."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz Q8 explanation vs corps de l'article (A5, D17, D18, E21) concernant ESTIMABL2",
+    "problem": "Deux jeux de chiffres ESTIMABL2 coexistent : le corps de l'article utilise correctement les données à 5 ans (93,2 % vs 94,8 %, Lancet D&E 2024) tandis que la Q8 du quiz cite « ~95,6 % vs 95,9 % sans événement (analyse initiale) ». La Q8 est correctement étiquetée « analyse initiale » (donnée à 3 ans NEJM 2022), donc factuellement exacte, mais la juxtaposition de deux pourcentages sans rappel explicite du timepoint dans la même fiche peut prêter à confusion pour un lecteur pressé. (Note : le bloc de référence 'Recherche 1' fourni en consigne mentionne à tort 'à 5 ans 95,6 % vs 95,9 %' — erreur de l'étalon, PAS du contenu, le contenu publié étant correct.)",
+    "fix": "Ajouter dans la Q8 une mention « (analyse à 3 ans, NEJM 2022 ; à 5 ans : 93,2 % vs 94,8 %, Lancet D&E 2024) » pour lever toute ambiguïté de timepoint."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [13] — https://geiselmed.dartmouth.edu/.../Radioactive-Iodine-Therapy-in-Differentiated-Thyroid-Cancer.pdf",
+    "problem": "L'URL renvoie un PDF binaire compressé non lisible par WebFetch ; le fichier existe bien sur le serveur de Dartmouth (Geisel) et le titre apparaît dans les résultats de recherche, donc NON fabriqué. Toutefois c'est un PDF hébergé sur un site institutionnel (copie de cours) plutôt que la source primaire (Seminars in Nuclear Medicine / ScienceDirect), ce qui est un lien moins pérenne.",
+    "fix": "Idéalement remplacer par le DOI/lien éditeur de Seminars in Nuclear Medicine 2024 ; sinon conserver, le contenu cité (recommandations de dose, SPM) est cohérent avec le titre vérifié."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [15] — THYROGEN FDA label https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/020898s051lbl.pdf",
+    "problem": "L'URL exacte (020898s051lbl.pdf, révision 2012) a renvoyé un 404 lors du fetch direct, mais elle reste indexée comme document FDA accessdata valide et le contenu cité (0,9 mg IM ×2 j, ¹³¹I 24 h après la 2e injection) est exactement confirmé par les labels Thyrogen vérifiés. Lien NON fabriqué mais possiblement remplacé par une révision plus récente (ex. 020898s063s065lbl.pdf, 2020).",
+    "fix": "Mettre à jour vers la révision FDA en vigueur (label 2020 : 020898s063s065lbl.pdf) pour éviter un lien mort ; la donnée de posologie reste exacte."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [20]/[21] et encadrés A6, B8, D16 — durée d'arrêt de l'allaitement",
+    "problem": "Le texte indique 'arrêter l'allaitement ≥ 6 semaines avant'. La fiche LactMed (NBK501563) vérifiée recommande en réalité '6 à 12 semaines avant'. La valeur citée correspond à la borne basse de la fourchette de la source — exact mais incomplet, pas une fabrication.",
+    "fix": "Préciser '6 à 12 semaines avant' pour refléter fidèlement la source LactMed."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections D15/E22 et quiz Q9 — limite dosimétrique sang/moelle (Benua vs Dorn)",
+    "problem": "Le document attribue la limite de 2 Gy au sang à 'Benua-Leeper' [33] tout en citant Dorn [14] pour les seuils de rétention. La source Dorn (2003), vérifiée, utilise une limite de 3 Gy à la moelle (et <3 Gy = pas de myélosuppression permanente), alors que 2 Gy au sang est le critère classique de Benua-Leeper. Le mélange des deux référentiels (2 Gy sang Benua / 3 Gy moelle Dorn) n'est pas une erreur factuelle mais peut prêter à confusion sur l'attribution.",
+    "fix": "Distinguer clairement : 2 Gy au sang = critère Benua-Leeper [33] ; l'approche Dorn [14] tolère jusqu'à 3 Gy à la moelle. Vérifier que [33] (myélosuppression) soutient bien le chiffre de 2 Gy."
+  },
+  {
+    "severity": "minor",
+    "where": "Numérotation des sections E",
+    "problem": "La séquence saute de E22 à E25 (pas de E23 ni E24). La couverture A→E + carte d'identité est complète et conforme à l'étalon ; il s'agit seulement d'un saut de numérotation interne, non d'une section manquante sur le fond.",
+    "fix": "Renuméroter en E23 (Références & liens) pour une continuité propre, ou documenter le mapping si la numérotation des plans est imposée."
+  }
+]
