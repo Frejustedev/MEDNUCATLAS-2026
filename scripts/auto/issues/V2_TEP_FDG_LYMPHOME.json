@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "Section D15 (Dosimétrie), Section A1 (Carte d'identité / tableau), identityCard ('Organe critique'), et stats A1 — coefficient de dose à la paroi vésicale",
+    "problem": "Incohérence interne et valeur fausse attribuée à l'ICRP 128 pour l'organe critique. Le contenu affirme paroi vésicale = 7,5×10⁻² mGy/MBq (0,075 mGy/MBq) en le citant [ICRP 128, 23], MAIS énonce simultanément en D15 « ≈ 72 mGy pour 555 MBq ». Or 0,075 × 555 = 41,6 mGy, pas 72 mGy. Le chiffre de 72 mGy/555 MBq impose en réalité un coefficient de 0,13 mGy/MBq, qui EST la vraie valeur ICRP 128 pour la paroi vésicale du 18F-FDG (1,3×10⁻¹ mGy/MBq, scénario de miction à ~1 h). La valeur 7,5×10⁻² mGy/MBq provient du modèle compartimental RÉVISÉ (réf. [24], PMC9908780, miction fréquente toutes les 3,75 h), pas de l'ICRP 128. Le contenu confond donc deux sources et présente un couple coefficient/dose contradictoire. La fiche étalon (Recherche 2) reproduit la même confusion, mais cela reste une erreur factuelle de valeur chiffrée propagée dans tout l'article (A1, D15, identityCard).",
+    "fix": "Choisir une source cohérente. Pour l'ICRP 128 : paroi vésicale = 0,13 mGy/MBq (1,3×10⁻¹) → ≈72 mGy pour 555 MBq (cohérent). Si l'on veut citer le modèle révisé [24] : 7,5×10⁻² mGy/MBq → ≈42 mGy pour 555 MBq. Ne pas mélanger 7,5×10⁻² mGy/MBq (révisé) avec ≈72 mGy/555 MBq (ICRP 128). Harmoniser A1, D15, identityCard et les stats."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D18 (tableau HD16) et E21 — définition de « PET-2 négatif » dans HD16",
+    "problem": "Le contenu rapporte « chez les PET-2 négatifs, SSP 5 ans 94,2 % (CMT) vs 86,7 % (chimio seule) » sans préciser que, dans HD16, la négativité PET-2 ouvrant l'omission de RT était définie par Deauville < 3 (DS 1-2), et non DS 1-3 comme la règle Lugano générale citée partout ailleurs dans l'article. Cette nuance n'est pas une erreur de chiffre (94,2/86,7 et 93,1/80,1 pour le cut-off DS4 sont exacts) mais le lecteur peut surinterpréter un DS 3 comme « PET-2 négatif éligible à la désescalade RT » dans HD16, ce qui est faux.",
+    "fix": "Préciser dans la note HD16 que la négativité PET-2 y était fixée à DS < 3 (DS 1-2) pour l'omission de radiothérapie, distincte du cut-off Lugano standard DS 1-3 = CMR."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A6, B8, D15 (infoBox pédiatrie/grossesse-allaitement) — allaitement après 18F-FDG",
+    "problem": "Le contenu affirme « pas d'interruption de l'allaitement nécessaire » (excrétion lactée négligeable), en ne retenant que la limitation du contact rapproché ~12 h. C'est la position de l'ICRP/EANM pour le FDG, donc défendable, mais l'EANM v2.0 (source [1] citée) recommande explicitement d'interrompre l'allaitement 24 h après l'injection du traceur. Présenter « pas d'interruption » comme la recommandation de [1] est imprécis : la justification physiologique (l'irradiation est externe, pas via le lait pour le FDG) est correcte, mais l'instruction opérationnelle de [1] est une interruption de 24 h.",
+    "fix": "Reformuler : l'irradiation de l'enfant est avant tout externe (peu de FDG dans le lait) ; certaines recommandations (EANM v2.0) prescrivent néanmoins une interruption de l'allaitement de ~12-24 h et l'éviction du contact rapproché. Citer correctement la consigne de la source utilisée."
+  },
+  {
+    "severity": "major",
+    "where": "Sections E20 (Cas cliniques), E21 (Points cles, liste + stats), E22 (FAQ) - occurrences de la citation [8]",
+    "problem": "La citation [8] est attribuee de facon repetee a des affirmations sur la classification de Lugano 2014, le cut-off de Deauville (DS 1-3 = CMR) et le remplacement de la biopsie osteomedullaire (ex. 'classification de Lugano 2014 [2,8]', 'remplace la BOM ... Se ~91,6% [8,15]', 'Cut-off Lugano ... [2,8]', 'histologies peu avides [2,8]'). Or la source [8] est Yu et al., 'Review of 18F-FDG Synthesis and Quality Control' - un article de radiochimie/CQ sans aucun rapport avec Lugano/Deauville/BOM. Mismatch citation<->contenu (erreur de numerotation, [8] mis pour [2] ou [22]).",
+    "fix": "Remplacer [8] par [2] (Cheson & Barrington, revue Lugano) ou [22] (Cheson, Lugano JCO 2014) pour les claims Lugano/Deauville, et par [15]/[12]/[28] pour les claims BOM. Verifier toutes les occurrences de [8] dans E20/E21/E22 et ne le conserver que pour la synthese/CQ du FDG (B7)."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [28] (PMC10878769)",
+    "problem": "L'entree omet le journal et l'annee et paraphrase le titre. L'article reel est: Doma A, Zevnik K et al., 'Detection performance and prognostic value of initial bone marrow involvement in diffuse large B-cell lymphoma: a single centre 18F-FDG PET/CT and bone marrow biopsy evaluation study', Radiol Oncol 2024. Le PMC ID resout correctement et les chiffres cites (Se 88,4% vs BOM 41,9%) sont exacts - donc non fabrique, mais reference incomplete.",
+    "fix": "Completer le titre exact, ajouter 'Radiol Oncol 2024' (et idealement le DOI) dans l'entree de source [28]."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [1] (EANM v2.0, PMC4315529)",
+    "problem": "L'annee indiquee '2015' correspond a la date d'edition du fascicule alors que l'article a ete publie en ligne en decembre 2014. Convention d'annee de fascicule habituelle - acceptable, signale pour exhaustivite.",
+    "fix": "Aucune correction obligatoire; '2015' est la convention editoriale du fascicule. Conserver tel quel."
+  }
+]

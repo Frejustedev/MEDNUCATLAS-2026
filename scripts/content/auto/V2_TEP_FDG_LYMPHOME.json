@@ -1,0 +1,1344 @@
+{
+  "id": "V2_TEP_FDG_LYMPHOME",
+  "cat": "hematologie",
+  "catLabel": "Hématologie & Lymphomes",
+  "title": "TEP-TDM au 18F-FDG dans les lymphomes (score de Deauville)",
+  "difficulty": "avancé",
+  "tags": [
+    "TEP-TDM",
+    "18F-FDG",
+    "lymphome",
+    "score de Deauville",
+    "classification de Lugano",
+    "lymphome de Hodgkin",
+    "DLBCL",
+    "réponse thérapeutique",
+    "TEP intermédiaire",
+    "effet Warburg",
+    "SUVmax",
+    "hématologie"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Boellaard R et al. FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0. Eur J Nucl Med Mol Imaging 2015;42:328-354 (PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[2] Cheson BD, Barrington SF et al. Staging and response assessment of lymphoma: a brief review of the Lugano classification and the role of FDG-PET/CT (PMC9057662)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9057662/"
+    },
+    {
+      "title": "[3] Johnson P et al. Adapted Treatment Guided by Interim PET-CT Scan in Advanced Hodgkin's Lymphoma (RATHL). N Engl J Med 2016;374:2419-2429",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1510093"
+    },
+    {
+      "title": "[4] RATHL trial (PubMed 27332902) - Adapted Treatment Guided by Interim PET-CT Scan in Advanced Hodgkin's Lymphoma. N Engl J Med 2016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27332902/"
+    },
+    {
+      "title": "[5] EANM paediatric dosage card - paediatric administered activities (2016 version)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[6] Carter LM et al. Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms. J Nucl Med 2021 (PMC8612182)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8612182/"
+    },
+    {
+      "title": "[7] Yoo C et al. Predictive value of interim FDG-PET/CT findings in patients with diffuse large B-cell lymphoma treated with R-CHOP (PMC6739212)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6739212/"
+    },
+    {
+      "title": "[8] Yu S et al. Review of 18F-FDG Synthesis and Quality Control. Biomed Imaging Interv J 2006 (PMC3097819)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3097819/"
+    },
+    {
+      "title": "[9] IAEA - Production of F-18 FDG: FDG Synthesis Chemistry (educational module)",
+      "url": "https://nucleus.iaea.org/sites/accelerators/Modern%20AKP%20Site%20Assets/Educational%20Materials;%20Radioisotope%20and%20Radiopharmaceutical%20Production%20using%20a%20Medical%20Cyclotron/3-Production%20of%20F-18%20FDG/FDG_Synthesis_Chemistry.pdf"
+    },
+    {
+      "title": "[10] IAEA-TECDOC-1856 - Quality Control in the Production of Radiopharmaceuticals (IAEA, 2018)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-1856web.pdf"
+    },
+    {
+      "title": "[11] SNMMI Procedure Standard/EANM Practice Guideline on Pediatric 18F-FDG PET/CT for Oncology 1.0. J Nucl Med 2021;62:99-110",
+      "url": "https://jnm.snmjournals.org/content/62/1/99"
+    },
+    {
+      "title": "[12] El-Galaly TC et al. (18)F-FDG PET/CT as a stand-alone alternative to bone marrow biopsy in staging of Hodgkin lymphoma (PubMed 20204358)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20204358/"
+    },
+    {
+      "title": "[13] Mesguich C et al. Hodgkin lymphoma: a negative interim-PET cannot circumvent the need for end-of-treatment-PET evaluation. Br J Haematol 2016 (PMID 27539369)",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/bjh.14292"
+    },
+    {
+      "title": "[14] Sun N et al. Prognostic value of interim PET/CT in GCB and non-GCB DLBCL: comparison of the Deauville five-point scale and the deltaSUVmax method. BMC Cancer 2024 (PMC11681756)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11681756/"
+    },
+    {
+      "title": "[15] Van Heertum RL et al. Lugano 2014 criteria for assessing FDG-PET/CT in lymphoma: an operational approach for clinical trials. Drug Des Devel Ther 2017",
+      "url": "https://www.dovepress.com/lugano-2014-criteria-for-assessing-fdg-petct-in-lymphoma-an-operationa-peer-reviewed-fulltext-article-DDDT"
+    },
+    {
+      "title": "[16] Actualisation des recommandations de bonne pratique pour l'utilisation de la TEP en cancerologie (CNP-MN/SFMN) - Bull Cancer 2018",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2021/11/RBP-Recommandations-usage-TEP-cancerologie-Bull-Cancer-2018-MAJ.pdf"
+    },
+    {
+      "title": "[17] Follow-up of the GHSG HD16 trial of PET-guided treatment in early-stage favorable Hodgkin lymphoma (Leukemia 2023; PMC10776396)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10776396/"
+    },
+    {
+      "title": "[18] Radford J et al. Results of a Trial of PET-Directed Therapy for Early-Stage Hodgkin's Lymphoma (RAPID). N Engl J Med 2015;372:1598-1607 (PubMed 25901426)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25901426/"
+    },
+    {
+      "title": "[19] Interim PET-Based Outcome Prediction in DLBCL in the PETAL Trial: Comparison of the deltaSUVmax Method and the Deauville 5-Point Scale (Blood / ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0006497119377456"
+    },
+    {
+      "title": "[20] Barrington SF et al. Role of Imaging in the Staging and Response Assessment of Lymphoma: Consensus of the ICML Imaging Working Group. J Clin Oncol 2014;32:3048-3058 (PMC5015423)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5015423/"
+    },
+    {
+      "title": "[21] Application of the Lugano Classification for Initial Evaluation, Staging, and Response Assessment: The PRoLoG Consensus Initiative (Part 2-Technical). J Nucl Med 2023;64:239",
+      "url": "https://jnm.snmjournals.org/content/64/2/239"
+    },
+    {
+      "title": "[22] Cheson BD et al. Recommendations for Initial Evaluation, Staging, and Response Assessment of Hodgkin and Non-Hodgkin Lymphoma: The Lugano Classification. J Clin Oncol 2014;32:3059-3067 (PMC4979083)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4979083/"
+    },
+    {
+      "title": "[23] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson et al., Ann ICRP 2015)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[24] A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG (PMC9908780)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9908780/"
+    },
+    {
+      "title": "[25] Imaging Lymphoma With F-18 FDG PET-CT: Normal Variants, Pitfalls, and Artifacts (PMC11440966)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11440966/"
+    },
+    {
+      "title": "[26] Oliveira M et al. Comprehensive analysis of the influence of G-CSF on the biodistribution of 18F-FDG in lymphoma patients: insights for PET/CT scheduling. EJNMMI Res 2019 (PMC6702249)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6702249/"
+    },
+    {
+      "title": "[27] Tokola S et al. Interim and end-of-treatment PET-CT suffers from high false-positive rates in DLBCL: Biopsy is needed prior to treatment decisions. Cancer Med 2021 (PMC8085947)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8085947/"
+    },
+    {
+      "title": "[28] Detection performance and prognostic value of initial bone marrow involvement in DLBCL: 18F-FDG PET/CT vs bone marrow biopsy (PMC10878769)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10878769/"
+    },
+    {
+      "title": "[29] Cheson BD et al. Recommendations for Initial Evaluation, Staging, and Response Assessment: The Lugano Classification. J Clin Oncol 2014;32:3059-3067 (primary, ascopubs.org)",
+      "url": "https://ascopubs.org/doi/10.1200/JCO.2013.54.8800"
+    },
+    {
+      "title": "[30] Boellaard R et al. FDG PET and PET/CT: EANM procedure guidelines for tumour PET imaging: version 1.0. Eur J Nucl Med Mol Imaging 2010;37:181-200 (PMC2791475)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791475/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "flask",
+        "label": "Traceur",
+        "value": "18F-FDG (2-[18F]fluoro-2-désoxy-D-glucose)"
+      },
+      {
+        "icon": "zap",
+        "label": "Émission × énergie",
+        "value": "β+ (96,7 %) → 2 × 511 keV à 180°"
+      },
+      {
+        "icon": "clock",
+        "label": "Période physique du 18F",
+        "value": "≈ 110 min (109,7–109,8 min)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Voie × activité adulte",
+        "value": "IV · 14 × poids/durée par pas (MBq), ≈ 185–400 MBq"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie",
+        "value": "Carte de dose EANM, classe B"
+      },
+      {
+        "icon": "clock",
+        "label": "Délai d'imagerie (uptake)",
+        "value": "60 min (plage 55–75 min)"
+      },
+      {
+        "icon": "activity",
+        "label": "Durée d'acquisition",
+        "value": "Corps entier, ≈ 15–30 min sous caméra"
+      },
+      {
+        "icon": "target",
+        "label": "Cible biologique",
+        "value": "Hypermétabolisme glucidique (GLUT-1/3 + hexokinase)"
+      },
+      {
+        "icon": "list",
+        "label": "Indications phares",
+        "value": "Staging · TEP intermédiaire (PET-2) · bilan de fin de traitement"
+      },
+      {
+        "icon": "stetho",
+        "label": "Score de réponse",
+        "value": "Deauville 5-PS dans le cadre de Lugano 2014"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace (ICRP 128)",
+        "value": "0,019 mSv/MBq (≈ 7 mSv pour 370 MBq, part TEP)"
+      },
+      {
+        "icon": "droplets",
+        "label": "Organe critique / élimination",
+        "value": "Paroi vésicale (7,5×10⁻² mGy/MBq) · urinaire"
+      },
+      {
+        "icon": "shield",
+        "label": "Préparation",
+        "value": "Jeûne ≥ 4 h · glycémie < 11 mmol/L (200 mg/dL)"
+      },
+      {
+        "icon": "alert",
+        "label": "Repères Deauville",
+        "value": "Médiastin (pool sanguin) et foie"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "18F-FDG"
+      },
+      {
+        "type": "maladie",
+        "label": "Lymphome de Hodgkin"
+      },
+      {
+        "type": "maladie",
+        "label": "Lymphome B diffus à grandes cellules (DLBCL)"
+      },
+      {
+        "type": "maladie",
+        "label": "Lymphome folliculaire"
+      },
+      {
+        "type": "maladie",
+        "label": "Lymphome B médiastinal primitif (PMBCL)"
+      },
+      {
+        "type": "examen",
+        "label": "Scanner thoraco-abdomino-pelvien (TDM)"
+      },
+      {
+        "type": "examen",
+        "label": "IRM corps entier de diffusion"
+      },
+      {
+        "type": "examen",
+        "label": "Biopsie ostéomédullaire (BOM)"
+      },
+      {
+        "type": "examen",
+        "label": "68Ga-DOTATATE TEP"
+      },
+      {
+        "type": "score",
+        "label": "Score de Deauville (5-PS)"
+      },
+      {
+        "type": "score",
+        "label": "Classification de Lugano 2014"
+      },
+      {
+        "type": "score",
+        "label": "Critères PERCIST 1.0 (repère méthodologique)"
+      },
+      {
+        "type": "theranostique",
+        "label": "177Lu-DOTATATE (repère théranostique)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel phénomène physique est détecté par la caméra TEP après désintégration du 18F ?",
+        "options": [
+          "Un photon gamma unique de 364 keV",
+          "Deux photons de 511 keV émis à 180° en coïncidence",
+          "Un électron de conversion interne",
+          "Un rayonnement de freinage (Bremsstrahlung)"
+        ],
+        "answer": 1,
+        "explanation": "Le 18F émet un positon (β+, ≈ 96,7 %) qui s'annihile avec un électron en produisant deux photons de 511 keV émis à ~180°, enregistrés en coïncidence [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la période physique (demi-vie) du fluor-18 ?",
+        "options": [
+          "≈ 13 h",
+          "≈ 110 min",
+          "≈ 8 jours",
+          "≈ 20 min"
+        ],
+        "answer": 1,
+        "explanation": "La période du 18F est d'environ 109,7–109,8 min (≈ 110 min), ce qui impose une production cyclotron de proximité et une logistique de distribution régionale [1,9].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel mécanisme explique la rétention intracellulaire du FDG dans les cellules lymphomateuses ?",
+        "options": [
+          "Liaison à un récepteur de la somatostatine",
+          "Phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable (piégeage)",
+          "Fixation sur l'ADN nucléaire",
+          "Élimination biliaire ralentie"
+        ],
+        "answer": 1,
+        "explanation": "Le FDG entre par les transporteurs GLUT-1/3, est phosphorylé par l'hexokinase en FDG-6-phosphate qui n'est pas substrat de la suite de la glycolyse et reste piégé (metabolic trapping), reflétant l'effet Warburg [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelles structures servent de référence pour coter le score de Deauville ?",
+        "options": [
+          "La rate et la moelle osseuse",
+          "Le médiastin (pool sanguin) et le foie",
+          "Le cerveau et le myocarde",
+          "Les reins et la vessie"
+        ],
+        "answer": 1,
+        "explanation": "Le score de Deauville compare l'intensité du site le plus fixant à deux repères : le médiastin (pool sanguin) et le foie [2,20].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Selon l'échelle de Deauville, à quoi correspond un score 3 ?",
+        "options": [
+          "Pas de fixation",
+          "Fixation ≤ médiastin",
+          "Fixation > médiastin mais ≤ foie",
+          "Fixation nettement > foie"
+        ],
+        "answer": 2,
+        "explanation": "Deauville 3 = fixation supérieure au médiastin mais inférieure ou égale au foie ; il est classé en réponse métabolique complète dans le cadre de Lugano [2].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans la classification de Lugano 2014, quels scores de Deauville définissent une réponse métabolique complète (CMR) ?",
+        "options": [
+          "Score 1 uniquement",
+          "Scores 1, 2 ou 3 (avec ou sans masse résiduelle)",
+          "Scores 1 à 4",
+          "Score 5 avec diminution de fixation"
+        ],
+        "answer": 1,
+        "explanation": "La CMR de Lugano correspond à un score de Deauville 1, 2 ou 3, avec ou sans masse résiduelle ; DS 4-5 = résiduel/positif [2].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Que signifie un score de Deauville 5 ?",
+        "options": [
+          "Absence de fixation",
+          "Fixation ≤ médiastin",
+          "Fixation nettement augmentée par rapport au foie et/ou nouvelles lésions",
+          "Nouvelle zone non liée au lymphome"
+        ],
+        "answer": 2,
+        "explanation": "Deauville 5 = fixation nettement augmentée par rapport au foie et/ou apparition de nouvelles lésions FDG-avides imputables au lymphome ; la catégorie X désigne une fixation probablement non liée au lymphome [2].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel délai d'incubation (uptake) standard est recommandé entre injection et acquisition ?",
+        "options": [
+          "10 min",
+          "30 min",
+          "60 min (plage 55–75 min)",
+          "180 min"
+        ],
+        "answer": 2,
+        "explanation": "L'EANM recommande un délai de captation de 60 min (plage 55–75 min), à reproduire à ± 10–15 min entre deux examens d'un même patient pour un suivi métabolique valide [1,20].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "En dessous de quel seuil glycémique l'examen est-il en règle réalisable en clinique ?",
+        "options": [
+          "< 5 mmol/L (90 mg/dL)",
+          "< 11 mmol/L (200 mg/dL)",
+          "< 20 mmol/L (360 mg/dL)",
+          "Aucun seuil n'existe"
+        ],
+        "answer": 1,
+        "explanation": "L'EANM retient un seuil clinique < 11 mmol/L (200 mg/dL) ; au-delà l'examen est reprogrammé. Pour la quantification on vise plutôt 7–8,3 mmol/L (126–150 mg/dL) [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi ne faut-il pas injecter d'insuline rapide juste avant l'examen pour corriger une hyperglycémie ?",
+        "options": [
+          "L'insuline neutralise le 18F",
+          "Elle provoque une redistribution musculaire massive du FDG qui dégrade l'image",
+          "Elle accélère la décroissance radioactive",
+          "Elle bloque les transporteurs GLUT tumoraux"
+        ],
+        "answer": 1,
+        "explanation": "L'insuline redistribue le FDG vers le muscle squelettique, masquant les lésions ; il faut reprogrammer plutôt qu'injecter de l'insuline juste avant l'examen [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quels sont les trois temps cardinaux de la TEP-FDG dans les lymphomes avides ?",
+        "options": [
+          "Préinjection, injection, post-injection",
+          "Staging initial, TEP intermédiaire (interim), bilan de fin de traitement (EOT)",
+          "Diastole, systole, repos",
+          "Précoce, tardive, washout"
+        ],
+        "answer": 1,
+        "explanation": "La TEP-FDG intervient au bilan d'extension initial (staging), en évaluation intermédiaire sous traitement (interim, typiquement PET-2) et au bilan de fin de traitement (EOT) coté par Deauville/Lugano [2].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Dans le staging du lymphome de Hodgkin et du DLBCL, quel est l'apport majeur de la TEP-FDG sur l'atteinte médullaire ?",
+        "options": [
+          "Elle impose toujours une biopsie ostéomédullaire complémentaire",
+          "Elle permet d'abandonner la biopsie ostéomédullaire de routine",
+          "Elle est moins sensible que la BOM",
+          "Elle ne détecte jamais l'atteinte médullaire"
+        ],
+        "answer": 1,
+        "explanation": "La TEP-FDG détecte l'atteinte médullaire avec une excellente sensibilité (méta-analyse Se ≈ 91,6 % / Sp ≈ 90,3 %) et permet d'abandonner la BOM de routine au staging du Hodgkin et du DLBCL [2,12,15].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans l'essai RATHL (Hodgkin avancé), que montre une TEP intermédiaire (PET-2) négative après 2 cures d'ABVD ?",
+        "options": [
+          "Un pronostic défavorable imposant une intensification",
+          "Un bon pronostic autorisant la désescalade (suppression de la bléomycine)",
+          "Une indication de radiothérapie systématique",
+          "Une absence totale de valeur pronostique"
+        ],
+        "answer": 1,
+        "explanation": "Dans RATHL, les patients PET-2 négatifs (Deauville 1-3) ont un excellent pronostic et la suppression de la bléomycine pour les cures suivantes n'altère pas significativement l'efficacité [3,4].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Concernant l'EOT-PET dans le DLBCL, quelle affirmation est correcte ?",
+        "options": [
+          "Sa VPP est proche de 100 %, dispensant de toute biopsie",
+          "Il souffre de faux positifs fréquents : une biopsie est nécessaire avant une décision de rattrapage",
+          "Il est inutile car non pronostique",
+          "Il est interprété par les critères RECIST"
+        ],
+        "answer": 1,
+        "explanation": "L'EOT-PET du DLBCL a une bonne VPN (≈ 80 %) mais une VPP modeste (faux positifs inflammatoires fréquents) : une masse résiduelle FDG-avide isolée doit être biopsiée avant tout traitement de rattrapage [14,27].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Dans l'essai PETAL (DLBCL), comment la méthode ΔSUVmax définit-elle un interim positif après 2 cures de (R-)CHOP ?",
+        "options": [
+          "Une réduction du SUVmax < 66 % par rapport au baseline",
+          "Toute fixation résiduelle quelle qu'elle soit",
+          "Un SUVmax > 2,5",
+          "Une augmentation de taille au scanner"
+        ],
+        "answer": 0,
+        "explanation": "Dans PETAL, l'interim est dit positif si la réduction du SUVmax est < 66 % vs baseline ; cette méthode ΔSUVmax discrimine mieux le pronostic que le Deauville visuel dans le DLBCL [19].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la dose efficace de référence du 18F-FDG chez l'adulte selon l'ICRP 128 ?",
+        "options": [
+          "0,0019 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,14 mSv/MBq",
+          "0,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "L'ICRP 128 retient 1,9×10⁻² mSv/MBq, soit ≈ 7 mSv pour 370 MBq (part TEP seule, hors composante TDM) [23].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'organe critique (dose absorbée la plus élevée) du 18F-FDG ?",
+        "options": [
+          "Le myocarde",
+          "Le cerveau",
+          "La paroi de la vessie",
+          "La rate"
+        ],
+        "answer": 2,
+        "explanation": "La paroi vésicale est l'organe critique (≈ 7,5×10⁻² mGy/MBq, ICRP 128), d'où l'intérêt de l'hydratation et de la miction avant l'acquisition [23].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Un délai trop court après une injection de G-CSF peut entraîner quel piège d'interprétation ?",
+        "options": [
+          "Une absence totale de fixation",
+          "Une captation médullaire diffuse à ne pas confondre avec une atteinte lymphomateuse",
+          "Une fixation thyroïdienne",
+          "Un artefact en étoile"
+        ],
+        "answer": 1,
+        "explanation": "Le G-CSF/GM-CSF induit un rebond médullaire avec captation médullaire diffuse intense ; il faut respecter un délai (≥ 2 semaines) pour ne pas la confondre avec une atteinte médullaire [25,26].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel délai minimal est recommandé pour une TEP de fin de traitement (EOT) après la dernière cure de chimiothérapie ?",
+        "options": [
+          "24 heures",
+          "6–8 semaines",
+          "6 mois",
+          "Aucun délai requis"
+        ],
+        "answer": 1,
+        "explanation": "L'EOT-PET est réalisée 6–8 semaines après la fin de la chimiothérapie (et plus tard après radiothérapie) pour limiter les faux positifs inflammatoires post-thérapeutiques [2,25].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelles histologies sont en règle peu ou non avides de FDG selon Lugano 2014 ?",
+        "options": [
+          "Lymphome de Hodgkin et DLBCL",
+          "LLC/lymphome lymphocytique, lymphome de la zone marginale, mycosis fongoïde, maladie de Waldenström",
+          "Lymphome folliculaire et lymphome du manteau",
+          "Lymphome B médiastinal primitif"
+        ],
+        "answer": 1,
+        "explanation": "Lugano 2014 considère « essentiellement toutes » les histologies comme avides, sauf la LLC/SLL, le lymphome lymphoplasmocytaire (Waldenström), le mycosis fongoïde et les lymphomes de la zone marginale, où la TDM reste préférée [2,22].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Dans l'essai RAPID (Hodgkin précoce favorable), quelle conduite est explorée chez les patients PET-négatifs après 3 cures d'ABVD ?",
+        "options": [
+          "Une intensification systématique par BEACOPP",
+          "L'omission de la radiothérapie (abstention) vs radiothérapie",
+          "Une greffe autologue",
+          "Un arrêt complet de tout traitement dès le diagnostic"
+        ],
+        "answer": 1,
+        "explanation": "RAPID a randomisé les patients PET-négatifs entre radiothérapie et abstention ; la PFS à 3 ans était excellente dans les deux bras (≈ 94,6 % avec RT vs ≈ 90,8 % sans), sans démonstration formelle de non-infériorité de l'abstention [18].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle métrique TEP est la plus reproductible pour le suivi quantitatif et comment l'harmonise-t-on entre machines ?",
+        "options": [
+          "Le SUVmax brut, sans harmonisation",
+          "Le SULpeak (sphère ≈ 1 cm³ normalisée à la masse maigre), avec calibration EARL",
+          "Le nombre de coups bruts",
+          "Le diamètre tumoral au scanner"
+        ],
+        "answer": 1,
+        "explanation": "Le SULpeak (sphère ≈ 1 cm³ normalisée à la masse maigre) est plus reproductible que le SUVmax ; l'harmonisation EARL est indispensable pour comparer les SUV entre machines et dans le temps [1,20].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le 18F-FDG est un analogue du glucose capté par les transporteurs GLUT-1/3, phosphorylé par l'hexokinase puis piégé (FDG-6-phosphate) : il image l'hypermétabolisme glucidique des lymphomes avides (effet Warburg) [1].",
+        "Physique du 18F : émetteur β+ (≈ 96,7 %), période ≈ 110 min, détection en coïncidence de 2 photons de 511 keV à 180° [1,9].",
+        "Trois temps cardinaux : staging initial, TEP intermédiaire (interim, typiquement PET-2) et bilan de fin de traitement (EOT) [2].",
+        "Le score de Deauville (5-PS) compare le site le plus fixant au médiastin (pool sanguin) et au foie : DS 1-3 = réponse complète, DS 4-5 = résiduel/positif [2,20].",
+        "Classification de Lugano 2014 : catégories CMR (DS 1-3), PMR, NMR et PMD (DS 4-5) ; suffixes A/B conservés pour le Hodgkin seulement [2,22].",
+        "La TEP-FDG permet d'abandonner la biopsie ostéomédullaire de routine au staging du Hodgkin et du DLBCL (atteinte médullaire : Se ≈ 91,6 % / Sp ≈ 90,3 %) [2,12,15].",
+        "TEP intermédiaire négative dans le Hodgkin avancé (RATHL, DS 1-3) = bon pronostic autorisant la désescalade (suppression de la bléomycine) [3,4].",
+        "EOT-PET du DLBCL : VPN ≈ 80 % mais faux positifs fréquents → biopsie indispensable avant un rattrapage sur une masse résiduelle FDG-avide isolée [14,27].",
+        "Dose efficace 18F-FDG = 0,019 mSv/MBq (ICRP 128) ; organe critique = paroi vésicale (≈ 7,5×10⁻² mGy/MBq) ; part TEP ≈ 7 mSv pour 370 MBq [23]."
+      ],
+      "protocol": [
+        "Jeûne ≥ 4–6 h (eau plate autorisée) ; éviter l'effort physique 24 h avant pour limiter la captation musculaire [1].",
+        "Vérifier la glycémie : examen réalisable si < 11 mmol/L (200 mg/dL) ; viser 7–8,3 mmol/L pour la quantification ; ne pas injecter d'insuline rapide juste avant [1].",
+        "Activité adulte EANM : FDG (MBq) = 14 × poids (kg) / durée par pas (min) (coefficient 7 si recouvrement > 30 %), soit ≈ 185–400 MBq IV ; pédiatrie selon la carte de dose EANM (classe B) [1,5].",
+        "Délai d'incubation 60 min (plage 55–75 min) au repos, au chaud ; reproduire à ± 10–15 min pour le suivi métabolique [1,20].",
+        "Acquisition corps entier (base du crâne → racine des cuisses) ; mêmes paramètres à chaque temps pour un patient donné ; reconstruction OSEM ± PSF ± TOF, correction d'atténuation TDM, harmonisation EARL [20].",
+        "Respecter les délais : ≥ 10–14 j après une cure de chimiothérapie pour l'interim, 6–8 semaines pour l'EOT, ≥ 2 semaines après G-CSF, ≈ 3 mois après radiothérapie [2,25,26]."
+      ],
+      "scores": [
+        "Score de Deauville (5-PS) : 1 = pas de fixation ; 2 = ≤ médiastin ; 3 = > médiastin mais ≤ foie ; 4 = modérément > foie ; 5 = nettement > foie et/ou nouvelles lésions ; X = fixation non liée au lymphome [2].",
+        "Classification de Lugano 2014 : CMR (DS 1-3, ± masse résiduelle), PMR (DS 4-5 avec captation diminuée), NMR (DS 4-5 sans changement), PMD (DS 4-5 avec augmentation et/ou nouvelles lésions) [2].",
+        "Cut-off de positivité interim : DS ≥ 4 (foie) selon l'objectif de l'essai ; DS 5 = non-réponse franche / très mauvais pronostic [2].",
+        "Méthode ΔSUVmax (PETAL, DLBCL) : interim positif si réduction du SUVmax < 66 % vs baseline ; discrimine mieux le pronostic que le Deauville visuel [19]."
+      ],
+      "pitfalls": [
+        "Faux positifs inflammatoires : rebond thymique en « V » (sujet jeune), ganglions réactionnels, granulomatoses (sarcoïdose, tuberculose), infection, post-biopsie/chirurgie — d'où les délais à respecter [25].",
+        "Graisse brune cervico-supraclaviculaire et paravertébrale (sujet jeune, froid) : prévention par réchauffement du patient [25].",
+        "Rebond médullaire diffus post-chimiothérapie ou post-G-CSF : ne pas confondre avec une atteinte médullaire ; respecter ≥ 2 semaines après facteur de croissance [25,26].",
+        "Inflammation post-radiothérapie (poumon, médiastin) : respecter ≈ 3 mois avant d'interpréter une fixation résiduelle [25].",
+        "Histologies peu/non avides (LLC/SLL, Waldenström, zone marginale, mycosis fongoïde) : TEP peu contributive, préférer la TDM [2,22].",
+        "Masse résiduelle FDG-avide isolée en EOT-DLBCL : faux positif fréquent → confirmation histologique avant toute décision de traitement de rattrapage [27]."
+      ]
+    },
+    "lead": "La TEP-TDM au 18F-FDG est l'examen d'imagerie de référence pour la plupart des lymphomes, ces cancers du système lymphatique qui consomment beaucoup de sucre. En une seule acquisition du corps entier, elle cartographie l'étendue de la maladie avant traitement, vérifie en cours de chimiothérapie si la tumeur recule, et confirme la guérison une fois le traitement terminé. La réponse est résumée par une échelle visuelle simple à cinq niveaux, le score de Deauville, qui compare l'intensité des zones malades à celle du foie et des vaisseaux. Ce langage commun permet aux équipes d'adapter le traitement à chaque patient et d'éviter aussi bien les rechutes que les traitements excessifs. Son interprétation exige toutefois de bien connaître les fixations normales de l'organisme pour ne pas confondre une inflammation banale avec une maladie active.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cet examen ?",
+          "text": "La **TEP-TDM au FDG** est un examen d'imagerie qui aide votre médecin à mieux comprendre votre lymphome (un cancer du système qui défend l'organisme, les ganglions). Le FDG est un sucre légèrement modifié, rendu très faiblement radioactif, que l'on vous injecte dans une veine. Les cellules très actives — dont beaucoup de cellules de lymphome — consomment plus de sucre que les cellules normales : elles captent donc davantage de ce produit. Une caméra spéciale repère ensuite, dans tout le corps en une seule fois, les zones où l'activité est anormalement élevée. Cet examen sert à trois moments clés : au début, pour savoir où la maladie est présente et jusqu'où elle s'est étendue ; en cours de traitement, pour vérifier que la chimiothérapie agit bien ; et à la fin, pour confirmer que la maladie a disparu. Il complète le scanner habituel : le scanner montre la forme et la taille des organes, la TEP montre leur activité.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un examen qui guide tout le parcours",
+              "text": "Le même examen est souvent répété à plusieurs étapes : avant le traitement, parfois en plein milieu, puis à la fin. Le comparer d'une fois à l'autre permet à votre équipe de voir si la maladie recule comme prévu et d'ajuster le traitement si besoin. C'est l'un des outils les plus précieux pour suivre un lymphome."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma simplifié montrant comment le produit sucré s'accumule dans une cellule très active.",
+            "caption": "Le produit injecté s'accumule dans les cellules les plus actives, qui le gardent piégé : c'est ce que la caméra repère."
+          }
+        },
+        {
+          "title": "Comment se préparer et comment ça se passe",
+          "text": "La préparation est simple mais importante pour obtenir de belles images. On vous demandera de **ne pas manger pendant quelques heures** avant l'examen (l'eau plate reste autorisée) et d'**éviter les efforts physiques intenses** la veille et le jour même. Le jour J, l'équipe vous accueille, vous pèse, vérifie votre taux de sucre dans le sang et pose une petite perfusion. L'injection du produit est une simple piqûre, indolore. Vous vous reposez ensuite allongé au calme pendant que le produit se répartit dans le corps, puis vous passez sous la caméra : c'est silencieux, sans piqûre supplémentaire et sans douleur. Habillez-vous chaudement, car le froid peut gêner la qualité des images. Pensez à signaler les traitements récents (chimiothérapie, radiothérapie, piqûres pour remonter les globules blancs) : l'équipe choisira le meilleur moment pour réaliser l'examen.",
+          "steps": [
+            {
+              "title": "Accueil et vérifications",
+              "text": "Pesée, mesure du taux de sucre dans le sang, pose d'une petite perfusion."
+            },
+            {
+              "title": "Injection du produit",
+              "text": "Une simple injection dans une veine du bras, indolore."
+            },
+            {
+              "title": "Temps de repos au calme",
+              "text": "Vous restez allongé, détendu et au chaud, sans bouger ni parler, le temps que le produit se répartisse."
+            },
+            {
+              "title": "Passage sous la caméra",
+              "text": "Vous passez doucement dans l'appareil. C'est silencieux et indolore."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Si vous êtes diabétique",
+              "text": "Signalez-le à la prise de rendez-vous. Un taux de sucre trop élevé le jour de l'examen gêne la qualité des images et peut conduire à reprogrammer l'examen. L'équipe adaptera avec vous le moment de vos médicaments et le contrôle de votre glycémie."
+            },
+            {
+              "type": "tip",
+              "title": "Pensez à le signaler",
+              "text": "Prévenez l'équipe si vous êtes enceinte, si vous pensez l'être, ou si vous allaitez, ainsi qu'en cas de chimiothérapie, de radiothérapie ou d'injections de facteur de croissance récentes : des précautions simples et un choix de date adapté seront décidés avec vous."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce dangereux ? Et après l'examen",
+          "text": "La quantité de radioactivité utilisée est **faible et disparaît très vite**, en quelques heures, par votre élimination naturelle. L'examen est sûr et bien toléré ; il ne provoque pas de douleur en dehors de la piqûre, et le produit injecté ne donne pas de réaction allergique habituelle. Après l'examen, vous pouvez rentrer chez vous et reprendre une vie normale dès le même jour. **Buvez abondamment** et urinez régulièrement : cela aide votre corps à éliminer plus vite le produit. Par simple prudence, il est conseillé d'éviter le contact prolongé et rapproché avec les femmes enceintes et les jeunes enfants pendant quelques heures.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Bénéfice et précaution",
+              "text": "La très faible dose de rayonnement reçue est largement justifiée par les informations précieuses que l'examen apporte pour orienter votre prise en charge. Votre médecin n'a proposé cet examen que parce que son bénéfice dépasse nettement ce petit inconvénient."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : principales indications",
+          "text": "La TEP-TDM au 18F-FDG est l'examen pivot de la prise en charge des lymphomes avides de FDG (lymphome de Hodgkin, lymphome B diffus à grandes cellules et la plupart des lymphomes agressifs). Elle structure trois temps cardinaux du parcours et conditionne souvent la stratégie thérapeutique. À l'inverse, certaines histologies sont peu ou variablement avides (LLC / lymphome lymphocytique, lymphome de la zone marginale, Waldenström, mycosis fongoïde) : dans ces cas, la TEP est peu contributive et l'imagerie morphologique (TDM) garde sa place.",
+          "list": [
+            "**Bilan d'extension initial (staging)** d'un lymphome avide histologiquement prouvé : cartographie corps entier des sites ganglionnaires et extra-ganglionnaires, établissement du stade selon la classification de Lugano.",
+            "**Évaluation intermédiaire (TEP interim, typiquement après 2 cycles)** : valeur pronostique précoce, socle des stratégies adaptées à la réponse (désescalade ou intensification thérapeutique).",
+            "**Bilan de fin de traitement (EOT)** : confirmation de la réponse métabolique complète, meilleur prédicteur de la survie sans progression.",
+            "**Évaluation de l'atteinte médullaire** : la TEP-TDM peut remplacer la biopsie ostéomédullaire en routine dans le lymphome de Hodgkin (et souvent le DLBCL).",
+            "**Recherche de récidive / restaging** en cas de réascension clinique ou de suspicion de rechute."
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La TEP-TDM FDG affine le stade par rapport au scanner seul, oriente d'emblée vers une stratégie adaptée à la réponse et dispense le plus souvent de la biopsie ostéomédullaire dans le lymphome de Hodgkin et le DLBCL. La réponse n'est plus jugée en binaire mais cotée par le score de Deauville à 5 points, intégré à la classification de Lugano : un examen de référence avant traitement est indispensable pour rendre interprétables les examens suivants. Adresser le patient tôt, avec une histologie connue et une question clinique précise (staging, interim ou fin de traitement), permet de positionner chaque examen au bon moment du protocole."
+            }
+          ]
+        },
+        {
+          "title": "La démarche et l'apport de la médecine nucléaire",
+          "text": "L'examen explore le corps entier en une acquisition unique. La réponse métabolique est cotée selon une échelle visuelle à 5 points (score de Deauville), qui compare l'intensité de fixation du site initial le plus actif à deux repères internes : le médiastin (pool sanguin) et le foie. Cette cotation alimente les catégories de réponse de la classification de Lugano (réponse complète, partielle, absence de réponse, progression). Pour un suivi fiable, l'examen doit être réalisé dans des conditions reproductibles (même délai de captation, mêmes paramètres) — d'où l'importance des informations transmises sur la demande. La TEP étant une imagerie métabolique non spécifique, elle capte aussi les foyers inflammatoires et infectieux : le respect des délais entre les traitements et l'examen est essentiel pour éviter les faux positifs.",
+          "list": [
+            "**Respecter les délais** : compter au moins 10 à 14 jours après une cure de chimiothérapie pour une TEP interim, et de l'ordre de 6 à 8 semaines après la dernière cure pour la TEP de fin de traitement, afin de limiter l'inflammation résiduelle.",
+            "**Facteurs de croissance (G-CSF/GM-CSF)** : différer l'examen (rebond médullaire diffus pouvant simuler une atteinte) ; de même, l'inflammation post-radiothérapie impose un délai prolongé.",
+            "**Faux positifs à connaître** : ganglions réactionnels, granulomatoses (sarcoïdose, tuberculose), infection, rebond thymique du sujet jeune, graisse brune cervico-supraclaviculaire.",
+            "**Une TEP positive résiduelle n'équivaut pas à une maladie active** : en raison des faux positifs (notamment en fin de traitement du DLBCL), une confirmation histologique est recommandée avant toute décision de traitement de rattrapage.",
+            "**Préciser sur la demande** : histologie, temps de l'examen attendu (staging / interim / fin de traitement), traitements récents et leurs dates, statut diabétique et glycémie, et la question clinique exacte."
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Optimiser la demande",
+              "text": "Indiquez systématiquement le moment du protocole (baseline, interim après N cycles, ou fin de traitement) et joignez l'examen antérieur de référence : la cotation de Deauville et les catégories de Lugano reposent sur la comparaison au baseline. Mentionnez un diabète ou une hyperglycémie connue (un contrôle insuffisant dégrade les images et peut faire reporter l'examen), ainsi que toute chimiothérapie, radiothérapie ou injection de facteur de croissance récente, sources d'hypermétabolisme inflammatoire pouvant simuler une activité tumorale."
+            }
+          ]
+        },
+        {
+          "title": "TEP-FDG et autres modalités : positionnement",
+          "text": "Chaque modalité a son créneau et elles sont le plus souvent complémentaires.\n- **TDM (scanner)** : référence anatomique, mesure des tailles et suivi morphologique d'une masse résiduelle — mais ne distingue pas tissu lymphomateux actif et séquelle fibreuse. C'est la modalité préférée pour les histologies peu avides de FDG.\n- **TEP-TDM FDG** : information métabolique + anatomique en un seul examen ; standard pour le staging, l'évaluation intermédiaire et de fin de traitement des lymphomes avides, et capable de remplacer la biopsie ostéomédullaire dans le Hodgkin et le DLBCL.\n- **IRM de diffusion** : alternative sans irradiation, utile notamment en pédiatrie ou lorsque l'irradiation cumulée est un enjeu.\nEn pratique, la TEP-TDM FDG, lue selon Deauville et Lugano, constitue la colonne vertébrale de l'évaluation des lymphomes avides ; la décision finale sur une fixation résiduelle isolée doit toujours intégrer le contexte clinique et, si besoin, une preuve histologique."
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identite",
+          "text": "**Comment lire la carte d'identite.** La **TEP-TDM au 18F-FDG** (tomographie par emission de positons couplee au scanner X ; traceur : 2-[18F]fluoro-2-desoxy-D-glucose) repose sur un **emetteur de positons (β+)**, le **fluor-18 (18F)**, de periode physique **≈ 110 min (109,7-109,8 min)** [9]. Chaque positon s'annihile avec un electron du milieu en produisant **deux photons de 511 keV emis a 180°**, detectes en **coincidence** par la couronne de detecteurs [1,9]. Le 18F-FDG, analogue du glucose, cartographie l'hypermetabolisme glucidique du tissu lymphomateux (cf. A4). L'examen est realise **corps entier** (base du crane → racine des cuisses) en une acquisition unique, et la reponse metabolique est cotee par le **score de Deauville (5-PS)** dans le cadre de la classification de **Lugano 2014** [2,22].\n\n| Champ | Valeur |\n|---|---|\n| **Acronyme × modalite** | TEP-TDM (PET/CT) au 18F-FDG |\n| **Traceur** | 18F-FDG ; alternatives selon histologie peu avide : TDM avec contraste, IRM de diffusion [2] |\n| **Emission × energie** | β+ → 2 × **511 keV** (annihilation, 180°) [1,9] |\n| **Periode physique** | **≈ 110 min** (109,7-109,8 min) [9] |\n| **Voie × activite adulte** | IV ; EANM v2.0 : **FDG (MBq) = 14 × poids(kg) / duree par pas (min)** (coef. 7 si recouvrement > 30 %) ; ordre de grandeur **≈ 185-400 MBq** [1] |\n| **Delai injection → acquisition** | **60 min** (plage 55-75 min ; ± 10 min en suivi) [1] |\n| **Duree d'acquisition** | Corps entier, ≈ 15-30 min sous camera |\n| **Dose efficace** | **0,019 mSv/MBq** (1,9×10⁻² mSv/MBq, ICRP 128) → ≈ 7 mSv pour 370 MBq (part TEP) [23] |\n| **Organe critique** | **paroi vesicale** (≈ 7,5×10⁻² mGy/MBq ; elimination urinaire) [23] |\n| **Preparation cle** | **jeune ≥ 4-6 h** ; glycemie **< 11 mmol/L** (200 mg/dL) [1] |\n| **Score de reponse** | **Deauville 5-PS** dans le cadre **Lugano 2014** [2,20,22] |\n| **Grandes indications** | bilan d'extension (staging), TEP intermediaire (interim, PET-2), bilan de fin de traitement (EOT) [2,22] |",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation (β+) [1,9]"
+            },
+            {
+              "value": "≈ 110 min",
+              "label": "Periode physique du 18F [9]"
+            },
+            {
+              "value": "60 min",
+              "label": "Delai d'incubation FDG [1]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace (adulte, ICRP 128) [23]"
+            }
+          ]
+        },
+        {
+          "title": "A2 - Definition",
+          "text": "La **TEP-TDM au 18F-FDG** est un examen d'**imagerie fonctionnelle et moleculaire** qui associe, sur un meme statif et en une acquisition « corps entier », une **tomographie par emission de positons (TEP)** — imagerie metabolique — et un **scanner X (TDM)** assurant le reperage anatomique et la **correction d'attenuation** [1]. La detection repose sur le principe de **coincidence** : le 18F, emetteur de **positons (β+)**, voit chaque positon s'annihiler avec un electron du milieu apres un parcours de quelques millimetres, produisant **deux photons de 511 keV emis simultanement a 180°** ; la couronne de detecteurs enregistre ces paires, definissant une ligne de reponse dont l'ensemble permet la reconstruction tomographique 3D de la distribution du traceur [1,9].\n\nContrairement a la TDM ou a l'IRM, qui revelent la **morphologie** (taille, structure), la TEP-FDG image une **propriete biologique** : l'**hypermetabolisme glucidique** des cellules lymphomateuses — l'**effet Warburg**. Le traceur, **analogue du glucose**, entre dans la cellule par les transporteurs **GLUT-1/3**, est phosphoryle par l'**hexokinase** en **FDG-6-phosphate** non metabolisable, donc **piege** (metabolic trapping) proportionnellement au flux glycolytique (cf. A4) [1]. Elle delivre une information de **caracterisation** (le tissu est-il avide ?) et de **cartographie corps entier** (ou sont toutes les localisations ?), ce qui en fait l'outil pivot du bilan et du suivi des **lymphomes FDG-avides** [2]. C'est aussi un examen **semi-quantitatif** (SUV, SUVmax, SULpeak ; cf. B10), mais sa lecture de reponse est avant tout **visuelle**, cotee par le score de Deauville en reference au **pool sanguin mediastinal** et au **foie** [20,22].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La cible n'est pas un recepteur tumeur-specifique mais une **voie metabolique** partagee : c'est ce qui rend le FDG **non specifique**. Les foyers inflammatoires et infectieux (post-chimiotherapie, post-radiotherapie, granulomatoses) fixent aussi le traceur et sont la principale source de **faux positifs**, notamment en evaluation residuelle (cf. A6, C14) [25,27]."
+            }
+          ]
+        },
+        {
+          "title": "A3 - Rappels anatomiques & physiologiques",
+          "text": "Le 18F-FDG emprunte la voie d'entree du glucose mais reste **piege** dans la cellule (cf. A4) ; la connaissance de sa **biodistribution physiologique normale** est le prerequis pour eviter les faux positifs (developpee en C11) et pour graduer correctement le score de Deauville [25].\n\n**Captation physiologique intense** : **cerveau (cortex)**, **myocarde** (variable selon l'etat de jeune), et l'**axe d'elimination urinaire** reins-ureteres-vessie [25]. **Captation variable/moderee** : **foie** et **rate** (la rate restant en regle ≤ foie), anneau de Waldeyer, moelle osseuse, tube digestif, et **graisse brune** des regions cervico-sus-claviculaires et paravertebrales, favorisee par le froid (sujet jeune) [25].\n\nDeux structures sont la **clef de lecture du lymphome** car elles servent de references au score de Deauville (cf. C12) :\n\n- Le **pool sanguin mediastinal (blood pool)**, mesure dans la lumiere de l'aorte thoracique/cavites cardiaques : borne entre les scores **2** (≤ mediastin) et **3** (> mediastin) [20].\n- Le **foie** : borne entre les scores **3** (≤ foie) et **4** (> foie) ; toute fixation residuelle nettement superieure au foie est cotee **4-5** [20,13].\n\nLe contexte therapeutique modifie cette physiologie : une **stimulation par G-CSF/GM-CSF** ou la phase de regeneration post-chimiotherapie induisent une **captation medullaire diffuse** intense, a ne pas confondre avec une atteinte (cf. A6, C14) [26].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le **foie** et le **mediastin** ne sont pas de simples reperes anatomiques mais les **bornes operationnelles** de la cotation : un foyer ≤ mediastin = DS 2, > mediastin mais ≤ foie = DS 3, > foie = DS 4. Toute interpretation de Deauville suppose donc une biodistribution hepatique et mediastinale **non perturbee** (pas de steatose majeure, pas de surcharge inflammatoire) [20]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schema du piegeage metabolique du 18F-FDG : entree cellulaire par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non metabolisable, retention intracellulaire ; reperes physiologiques mediastin et foie servant a la cotation de Deauville.",
+            "caption": "Fig. 1 - Captation du FDG et reperes d'interpretation : le pool sanguin mediastinal et le foie bornent l'echelle de Deauville."
+          }
+        },
+        {
+          "title": "A4 - Principe : la cible biologique imagee",
+          "text": "**Pourquoi ca marche.** Le 18F-FDG image l'**hypermetabolisme glucidique** caracteristique des lymphomes avides — l'**effet Warburg**, soit une glycolyse aerobie augmentee. Les cellules lymphomateuses **surexpriment les transporteurs membranaires GLUT** (surtout **GLUT-1**, et **GLUT-3**) et l'**hexokinase**, d'ou une captation et une retention accrues du traceur [1].\n\nLa sequence intracellulaire explique le « piegeage metabolique » : (1) entree par les **transporteurs GLUT**, comme le glucose ; (2) phosphorylation par l'**hexokinase** en **FDG-6-phosphate** ; (3) **blocage metabolique** — le FDG-6-phosphate n'est pas substrat de l'etape glycolytique suivante et n'est que lentement dephosphoryle → il **reste piege** intracellulairement, proportionnellement au taux d'utilisation du glucose [1]. Le pic de contraste tumeur/fond justifie une acquisition a **60 min** post-injection (cf. B8) [1].\n\nLa cible est donc le **tissu lymphomateux a glycolyse accrue exprimant GLUT + hexokinase** ; mais elle est aussi celle de tout foyer inflammatoire/infectieux actif, d'ou la non-specificite du traceur.\n\n- **Hyperfixation** = densite elevee de GLUT/hexokinase et glycolyse accrue → tissu lymphomateux actif (mais aussi granulome, infection, regeneration medullaire).\n- **Hypofixation / absence** = reponse metabolique complete, histologie peu/non avide, ou lesion sous le pouvoir de resolution.\n\nL'**avidite depend de l'histologie** : les **lymphome de Hodgkin (LH)**, **lymphome B diffus a grandes cellules (DLBCL)**, **lymphome folliculaire**, **lymphome B mediastinal primitif (PMBCL)**, lymphome T peripherique, lymphome du manteau et lymphome de Burkitt sont avides ; a l'inverse, **LLC/lymphome lymphocytique a petites cellules**, **lymphome lymphoplasmocytaire (Waldenstrom)**, **mycosis fongoide** et **lymphomes de la zone marginale** sont peu/variablement avides → la TDM reste alors preferee [2,22].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - avidite et faux negatifs",
+              "text": "Le contraste depend du **rapport cible/fond** : une hyperglycemie, en saturant les GLUT, fait chuter la captation tumorale et detourne le FDG vers le muscle. Surtout, la cible n'est pas « le lymphome » mais « la glycolyse accrue » : les histologies indolentes peu avides (LLC/SLL, zone marginale, Waldenstrom, mycosis fongoide) peuvent etre **faussement negatives** — c'est dans ces formes que le bilan repose sur la TDM plutot que sur la TEP [2,22]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schema du piegeage metabolique du 18F-FDG dans la cellule lymphomateuse : surexpression des transporteurs GLUT-1/GLUT-3, phosphorylation par l'hexokinase en FDG-6-phosphate non metabolisable, accumulation proportionnelle au flux glycolytique (effet Warburg).",
+            "caption": "Fig. 2 - Du transporteur GLUT a l'hexokinase : le FDG-6-phosphate reste piege, fondant le contraste lymphome/fond."
+          }
+        },
+        {
+          "title": "A5 - Indications",
+          "text": "Coeur clinique de l'examen dans les **lymphomes FDG-avides** ; chaque indication renvoie au rationale du A4 (la TEP n'est positive que si la glycolyse est accrue) et au cadre normatif de la classification de **Lugano 2014** [2,22]. L'examen se decline en **trois temps cardinaux** : staging, interim et fin de traitement.\n\n| Indication | Performance / message | Niveau |\n|---|---|---|\n| **Bilan d'extension initial (staging)** | Superieur a la TDM seule ; permet d'**abandonner la biopsie osteomedullaire (BOM)** de routine dans le LH et le DLBCL si la TEP est faite [2,22] | Validee |\n| **TEP intermediaire (interim, PET-2/PET-4)** | Valeur pronostique precoce ; base des strategies **adaptees a la reponse** (escalade/desescalade) [3,4,18] | Validee (essais randomises) |\n| **Bilan de fin de traitement (EOT)** | Meilleur predicteur de survie sans progression ; confirme la **reponse metabolique complete** [2,22] | Validee |\n| **Evaluation de l'atteinte medullaire** | Detection au staging (meta-analyse LH+LNH) : Se ≈ **91,6 %** / Sp ≈ **90,3 %** ; en DLBCL, Se ≈ **88,4 %** / Sp **100 %** vs BOM (Se ≈ 41,9 %) → la TEP supplante la BOM [15,28] | Validee |\n| **Evaluation de la reponse** | Categories de Lugano (CMR/PMR/NMR/PMD) via le score de Deauville (cf. C12) [2,22] | Validee |\n\n**Donnees pronostiques chiffrees.** Dans le LH avance (RATHL), la survie sans progression a 3 ans est de **≈ 85 % chez les PET-2 negatifs** (DS 1-3) vs **≈ 68 % chez les PET-2 positifs** escalades [3,4]. Dans le DLBCL, la TEP de fin de traitement separe nettement le pronostic : SSP a 2 ans **84,7 % (EOT negatif) vs 25,0 % (EOT positif)** [7]. La **VPP modeste de la TEP interim** (≈ 65 % en DLBCL) reflete les **faux positifs inflammatoires** : une **biopsie de confirmation** est requise avant toute decision majeure de traitement de rattrapage sur une fixation residuelle isolee [14,27].\n\nLa TEP-FDG **ne remplace pas la preuve histologique** : un foyer hypermetabolique residuel doit, si possible, etre confirme par biopsie avant escalade therapeutique [27].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - VPP modeste de la TEP residuelle",
+              "text": "En fin de traitement comme en interim du DLBCL, la **specificite est limitee** par l'inflammation post-therapeutique : la VPN est bonne (≈ 80 %) mais la VPP faible (≈ 20-74 %) [14,27]. Une masse residuelle FDG-avide **isolee** ne suffit jamais a affirmer une maladie active : la **biopsie** est necessaire avant tout traitement de rattrapage [27]."
+            },
+            {
+              "type": "info",
+              "title": "Trois temps a ne pas confondre",
+              "text": "**Staging** (avant traitement, stadification Lugano I-IV) · **Interim** (typiquement apres 2 cycles, PET-2, base de la therapie adaptee) · **EOT** (6-8 sem. apres la derniere cure ; ≥ 3 mois apres radiotherapie). Toujours preciser le temps de l'examen et comparer au baseline a technique identique [2,22]."
+            }
+          ]
+        },
+        {
+          "title": "A6 - Contre-indications & precautions",
+          "text": "Il n'existe **pas de contre-indication absolue** a la TEP-TDM au 18F-FDG hors la grossesse (relative). Les points de vigilance sont relatifs et relevent surtout de la **preparation** (cf. B8), du respect des **delais post-therapeutiques** (sinon faux positifs/negatifs) et de la radioprotection (cf. D16).\n\n| Situation | Type | Conduite |\n|---|---|---|\n| **Grossesse** | Relative | Evaluer benefice/risque ; faisabilite decrite si dose foetale **< 50 mGy**, a reserver aux indications vitales ; reporter si possible [1] |\n| **Allaitement** | Relative | Pas d'interruption necessaire (excretion lactee negligeable du FDG) ; **limiter le contact rapproche mere-enfant ~12 h** post-injection (irradiation externe) [1] |\n| **Hyperglycemie / diabete desequilibre** | A corriger | Competition glucose/FDG → degradation des images ; reporter si **glycemie ≥ 11 mmol/L (200 mg/dL)** ; pas d'insuline rapide juste avant (redistribution musculaire) [1] |\n| **Insuffisance renale** | Relative | Elimination urinaire ralentie ; hydratation et miction renforcees |\n\n**Delais a respecter (specifiques du lymphome).** Le contexte therapeutique conditionne l'interpretabilite : l'inflammation post-traitement, le rebond thymique, la regeneration medullaire et la stimulation par facteurs de croissance generent des faux positifs s'ils ne sont pas anticipes.\n\n| Delai minimal | Apres | Rationale |\n|---|---|---|\n| **≥ 10-14 j** | une cure de chimiotherapie (interim) | Limiter l'inflammation peri-tumorale aigue [25] |\n| **6-8 semaines** | la derniere cure de chimiotherapie (EOT) | Resorption de l'inflammation, fiabilite de la reponse [2,22] |\n| **≥ 2 semaines** | G-CSF / GM-CSF | Eviter une captation medullaire diffuse de rebond [26] |\n| **≈ 3 mois** (parfois 8-12 sem.) | radiotherapie | Limiter les faux positifs inflammatoires post-RT (poumon, mediastin) [25] |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - ne pas injecter d'insuline juste avant l'examen",
+              "text": "Corriger une hyperglycemie par une **insuline IV juste avant** l'injection provoque une **redistribution musculaire massive du FDG** qui ruine le contraste lymphomateux [1]. La glycemie se controle a l'arrivee ; en cas de diabete, anticiper la prise en charge plutot que corriger en urgence, et reporter si glycemie ≥ 11 mmol/L."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - rebond medullaire post-G-CSF",
+              "text": "Une captation **medullaire diffuse** intense apres facteur de croissance (G-CSF/GM-CSF) ou en phase de regeneration post-chimiotherapie mime une atteinte medullaire diffuse : respecter un delai **≥ 2 semaines** apres le facteur de croissance pour ne pas surstadifier [26]."
+            },
+            {
+              "type": "info",
+              "title": "Grossesse & allaitement - a rechercher systematiquement",
+              "text": "L'etat de grossesse doit etre **systematiquement recherche** avant injection (test si doute). Pour l'allaitement, l'eviction porte sur le **contact rapproche (~12 h)** et non sur le lait, l'excretion lactee du FDG etant negligeable [1]."
+            }
+          ]
+        },
+        {
+          "title": "B7 - Radiopharmaceutique & mécanisme de fixation",
+          "text": "**(a) Mécanisme moléculaire.** Le **18F-FDG (2-[18F]fluoro-2-désoxy-D-glucose)** est un **analogue du glucose** marqué au fluor-18. Sa captation reproduit les premières étapes du métabolisme glucidique puis s'interrompt : (1) entrée cellulaire par les **transporteurs GLUT** (surtout **GLUT-1/GLUT-3**), surexprimés par la plupart des lymphomes ; (2) phosphorylation par l'**hexokinase** en **FDG-6-phosphate** ; (3) **blocage métabolique** — le FDG-6-phosphate n'est pas substrat de l'étape glycolytique suivante et n'est que lentement déphosphorylé → il reste **piégé** intracellulairement (« metabolic trapping ») proportionnellement à l'utilisation du glucose [1]. L'hypermétabolisme glucidique tumoral (**effet Warburg**, glycolyse aérobie augmentée) explique l'**hyperfixation** des lymphomes avides ; à l'inverse, une **hypofixation** traduit une histologie peu avide ou un tissu en réponse (cf. §A4). Le ciblage est purement **métabolique, non réceptoriel** : c'est ce qui fonde la non-spécificité du FDG (les foyers inflammatoires/infectieux fixent aussi → faux positifs, cf. §C14).\n\n**(b) Propriétés physiques du fluor-18.** Le 18F est un émetteur de **positons (β+, ≈ 96,7 %)** : le positon émis s'annihile avec un électron du milieu après un parcours court, produisant **deux photons de 511 keV émis à 180°**, détectés en **coïncidence** par la couronne TEP (cf. §B9) [1].\n\n| Caractéristique physique | Valeur | Source |\n|---|---|---|\n| Période physique (T½) | **≈ 110 min (109,7–109,8 min)** | [1] |\n| Mode de désintégration | **β+ (≈ 96,7 %)** + capture électronique → 18O stable | [1] |\n| Énergie max. du positon | **≈ 0,634 MeV** | [1] |\n| Photons d'annihilation | **2 × 511 keV (180°)** | [1] |\n\n**(c) Production & marquage.** Le 18F est produit par **cyclotron médical** via la réaction nucléaire **18O(p,n)18F**, par bombardement protonique d'**eau enrichie en 18O**, en mode **sans entraîneur** (no-carrier-added) [9]. La synthèse du FDG repose sur une **substitution nucléophile SN2** à partir du précurseur **mannose triflate** (groupe partant triflate), le fluorure-18 étant activé par l'aminopolyéther **Kryptofix 2.2.2 / K2CO3** (ou des sels d'ammonium quaternaire) en milieu aprotique (acétonitrile anhydre), suivie d'une **hydrolyse** déprotégeant les acétyles → **2-[18F]FDG**, puis purification et formulation [8,9]. La courte période impose une **distribution régionale** depuis l'unité de production.\n\n**(d) Contrôle qualité du traceur (Ph. Eur. / USP).** Identité et pureté radionucléidiques (T½ ≈ 110 min, photopic 511 keV), **pureté radiochimique** (HPLC/CCM : 18F-FDG vs 18F-FDM, fluorure libre), pureté chimique (**Kryptofix 2.2.2** résiduel sous le seuil de toxicité, solvants résiduels), pH, **stérilité** et **endotoxines bactériennes** [8,10].\n\n| Test CQ | Seuil / exigence | Source |\n|---|---|---|\n| Identité radionucléidique | T½ ≈ 110 min ; photopic 511 keV | [8,10] |\n| Pureté radiochimique | HPLC/CCM (FDG vs FDM, fluorure libre) | [8] |\n| Kryptofix 2.2.2 résiduel | sous le seuil de toxicité (test spot) | [8,10] |\n| Stérilité / endotoxines | conforme (apyrogène) | [10] |\n\n**(e) Activités administrées & voie.** Voie **IV**. Chez l'adulte, l'EANM module l'activité selon le poids et la durée d'acquisition par pas de lit (cf. §B9) : **FDG (MBq) = 14 × poids (kg) / durée par pas (min)** si recouvrement de lit ≤ 30 % (coefficient **7** si > 30 %) ; l'ordre de grandeur usuel est **≈ 2,5–5 MBq/kg (≈ 185–400 MBq)** [1]. En **pédiatrie**, le 18F-FDG relève de la **classe B** de la carte de dose EANM : activité = valeur de référence × facteur fonction du poids, avec une **activité minimale** ; le standard nord-américain converge vers **3,7–5,2 MBq/kg** corps entier (minimum 26 MBq) [5,11].",
+          "stats": [
+            {
+              "value": "≈ 110 min",
+              "label": "Période physique du 18F [1]"
+            },
+            {
+              "value": "2 × 511 keV",
+              "label": "Photons d'annihilation (180°) [1]"
+            },
+            {
+              "value": "≈ 2,5–5 MBq/kg",
+              "label": "Activité adulte (EANM) [1]"
+            },
+            {
+              "value": "Classe B",
+              "label": "Carte de dose pédiatrique EANM [5]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — caméras modernes et baisse d'activité",
+              "text": "Les systèmes **numériques**, à **temps de vol (TOF) rapide** ou à **grand champ axial (total-body)** autorisent une réduction de l'activité injectée **d'un facteur ≥ 2** à qualité d'image constante, en respectant la procédure d'harmonisation EARL [1]. Le **18F étant l'isotope unique du traceur**, ce gain dosimétrique est direct pour le patient, sans modifier le ciblage métabolique."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — iode/fluorure libre et CQ",
+              "text": "Une **pureté radiochimique insuffisante** (fluorure-18 libre, FDM) dégrade le contraste et peut générer des fixations parasites osseuses (fluorure). Le CQ (HPLC, test Kryptofix, stérilité/endotoxines) conditionne la **validité métabolique** de l'examen avant toute cotation Deauville [8,10]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du 18F-FDG dans une cellule lymphomateuse : entrée par les transporteurs GLUT-1/GLUT-3, phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable, accumulation intracellulaire proportionnelle au flux glycolytique (effet Warburg).",
+            "caption": "Fig. 1 — Captation du 18F-FDG : analogue du glucose piégé après phosphorylation (« metabolic trapping »), base de l'hyperfixation lymphomateuse."
+          }
+        },
+        {
+          "title": "B8 - Préparation du patient",
+          "text": "La préparation conditionne la **validité métabolique** de l'examen et donc la fiabilité du **score de Deauville** (cf. §C12) : toute hyperglycémie, tout effort musculaire ou toute captation parasite dégrade le contraste tumeur/fond et fausse la comparaison entre temps (baseline / interim / fin de traitement, EOT). Trois leviers sont spécifiques au 18F-FDG : le **jeûne**, le **contrôle glycémique** et le **repos au chaud** pendant la captation [1].\n\n**Jeûne & hydratation.** **Jeûne ≥ 4–6 h** avant l'examen (eau plate autorisée) pour abaisser l'insulinémie et la glycémie endogène, et limiter la captation myocardique/musculaire [1]. Une **hydratation** (eau sans glucose) réduit la dose à la paroi vésicale et les artefacts d'élimination urinaire (organe critique, cf. §D15) [1].\n\n**Contrôle glycémique.** L'examen est réalisable en clinique si **glycémie < 11 mmol/L (≈ 200 mg/dL)** ; au-delà, le glucose endogène entre en **compétition** avec le FDG et l'examen doit être **reporté** [1]. Pour la quantification fine et la recherche, un seuil plus strict de **7–8,3 mmol/L (126–150 mg/dL)** est visé [1].\n\n**Activité musculaire.** **Éviter tout effort physique intense** dans les 24 h précédentes : l'exercice récent entraîne une captation musculaire diffuse parasite [1].\n\n**Délai de captation (incubation).** **60 min** entre injection et acquisition (plage acceptable **55–75 min**) ; repos allongé, silencieux et **au chaud** pour limiter la fixation musculaire et de la **graisse brune** (cou, régions sus-claviculaires/paravertébrales — piège fréquent du sujet jeune lymphomateux, cf. §C14) [1,20]. En **suivi longitudinal**, le délai doit être **reproduit à ± 10–15 min** du précédent pour que les SUV et la cotation soient comparables [1,20].\n\n**Délais post-thérapeutiques spécifiques au lymphome** (sinon faux positifs/négatifs, cf. §C14) : **≥ 10–14 jours** après une cure de chimiothérapie pour la TEP intermédiaire ; **6–8 semaines** après la dernière cure pour l'EOT ; **≥ 2 semaines** après G-CSF/GM-CSF (rebond médullaire diffus) ; **≈ 3 mois** (parfois 8–12 semaines) après radiothérapie (inflammation post-RT) [25,26]. Recueillir systématiquement l'historique thérapeutique (délai depuis chimio/RT/facteur de croissance).",
+          "steps": [
+            {
+              "title": "Avant J (à la prescription)",
+              "text": "Vérifier l'indication et le **temps de l'examen** (staging / interim / EOT), la grossesse/l'allaitement et la glycémie habituelle ; consigner le diabète et son traitement ; planifier les **délais post-traitement** (≥ 10–14 j post-chimio, 6–8 sem. pour l'EOT, ≥ 2 sem. post-G-CSF, ≈ 3 mois post-RT) [25,26]."
+            },
+            {
+              "title": "Le jour J — accueil",
+              "text": "Peser le patient, **mesurer la glycémie** (reporter si ≥ 11 mmol/L) ; poser une voie veineuse ; hydratation ; recueillir l'historique thérapeutique récent (chimio, RT, facteur de croissance) [1]."
+            },
+            {
+              "title": "Injection & captation (~60 min)",
+              "text": "Injection IV du FDG ; repos allongé, silencieux et **au chaud** (limite graisse brune et muscle), sans effort ni phonation ; incubation **55–75 min**, reproduite à ± 10–15 min en suivi [1,20]."
+            },
+            {
+              "title": "Avant l'acquisition",
+              "text": "**Miction** complète (réduit la dose vésicale et les artefacts urinaires pelviens) ; installation sous la caméra [1]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "≥ 4–6 h",
+              "label": "Jeûne avant l'examen [1]"
+            },
+            {
+              "value": "< 11 mmol/L",
+              "label": "Seuil glycémique clinique [1]"
+            },
+            {
+              "value": "55–75 min",
+              "label": "Délai de captation (uptake) [1]"
+            },
+            {
+              "value": "6–8 sem.",
+              "label": "Délai post-chimio pour l'EOT [25]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — ne JAMAIS injecter d'insuline juste avant l'examen",
+              "text": "Corriger une hyperglycémie par de l'**insuline rapide immédiatement avant** l'injection de FDG provoque une **redistribution musculaire massive** du traceur, masquant les sites ganglionnaires et ruinant la cotation Deauville. Si la glycémie est trop élevée, il faut **reporter** l'examen plutôt que d'insuliniser dans la foulée [1]."
+            },
+            {
+              "type": "info",
+              "title": "À vérifier impérativement",
+              "text": "Jeûne effectif ≥ 4–6 h · glycémie < 11 mmol/L · délai de captation 55–75 min (reproduit ± 10–15 min en suivi) · **délais post-traitement respectés** · absence de G-CSF récent · vessie vidée avant acquisition. Un seul point non respecté peut suffire à rendre l'examen non comparable ou ininterprétable [1,25]."
+            }
+          ]
+        },
+        {
+          "title": "B9 - Instrument, contrôle qualité & protocole d'acquisition",
+          "text": "**(a) Instrument & CQ — prérequis.** La **caméra TEP-TDM hybride** associe une couronne de détecteurs de coïncidence (cristaux **LSO/LYSO/BGO**) à un scanner X assurant la **correction d'atténuation** et le repérage anatomique [1]. Le CQ instrumental conditionne la fiabilité du SUV et la comparabilité inter-temps : **blank scan quotidien**, **normalisation**, **calibration croisée activimètre↔caméra** (avec synchronisation des horloges), tests **NEMA**. L'**harmonisation EARL** est **indispensable** pour comparer les SUV entre machines et entre temps d'un même patient (staging → interim → EOT) — condition implicite de la cotation Deauville reproductible [1,20].\n\n**(b) Acquisition « corps entier ».** Acquisition de la **base du crâne (ou vertex) à la racine des cuisses** — étendue **aux pieds** en cas d'atteinte cutanée ou extranodale distale ; **15–30 min** sous la caméra, **60 min** après injection [1]. Règle cardinale du lymphome : utiliser **les mêmes paramètres à chaque temps** pour un patient donné (même délai d'uptake, même reconstruction, même champ) — c'est la condition de validité du **suivi métabolique** et de la comparaison Deauville [20].\n\n| Paramètre | Recommandation | Source |\n|---|---|---|\n| Délai injection→acquisition | **60 min** (55–75 min ; ± 10–15 min en suivi) | [1,20] |\n| Champ exploré | Base du crâne → racine des cuisses (± pieds si extranodal distal) | [1] |\n| Formule d'activité | **14 × poids / durée par pas** (recouvrement ≤ 30 % ; coeff. 7 si > 30 %) | [1] |\n| Repères d'interprétation | **Médiastin (pool sanguin)** et **foie** | [20] |\n| TDM associée | Low-dose (atténuation/repérage) ou diagnostique injectée | [1] |\n| Harmonisation | **EARL** (comparabilité inter-temps/inter-centres) | [1,20] |\n\n**(c) TDM associée.** La composante TDM est réalisée en **basse dose** (correction d'atténuation + repérage), ou en mode **diagnostique injecté** selon l'indication (la dose en découle, cf. §D15).\n\n**(d) Standardisation pour les essais.** Le cadre technique de mise en œuvre de Lugano repose sur le consensus **PRoLoG** (volet technique) et l'EANM v2.0, qui fixent les conditions d'acquisition et de quantification rendant les SUV et la cotation Deauville exploitables en pratique répondant-adaptée [1,20,21].",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Énergie détectée en coïncidence [1]"
+            },
+            {
+              "value": "60 min",
+              "label": "Délai d'uptake standard [1]"
+            },
+            {
+              "value": "Médiastin / foie",
+              "label": "Repères d'interprétation Deauville [20]"
+            },
+            {
+              "value": "EARL",
+              "label": "Harmonisation pour le suivi [1,20]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — comparabilité inter-temps non garantie sans harmonisation",
+              "text": "La **SUVmax** dépend strictement de la calibration croisée activimètre↔caméra, de la synchronisation des horloges, du délai de captation et de la glycémie. Pour la cotation Deauville et la méthode **ΔSUVmax** (cf. §B10), un **changement de machine, de reconstruction ou de délai entre deux examens fausse la comparaison** : harmonisation EARL et protocole figé sont requis [1,20]."
+            },
+            {
+              "type": "info",
+              "title": "Point expert — repères médiastin et foie posés à l'acquisition",
+              "text": "Le score de Deauville cote le **site initial le plus fixant** par rapport au **pool sanguin médiastinal** et au **foie** (cf. §C12). Ces deux repères internes ne sont fiables que si la glycémie est maîtrisée, le délai d'uptake reproductible et la calibration EARL à jour — la qualité de la cotation se joue donc dès l'acquisition [20]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence d'une caméra TEP : annihilation positon-électron, émission de deux photons de 511 keV à 180°, détection simultanée par deux cristaux opposés définissant une ligne de réponse, couplée à la TDM.",
+            "caption": "Fig. 2 — Détection TEP en coïncidence couplée à la TDM (correction d'atténuation + repérage). La validité du SUV et de la cotation Deauville repose sur la calibration et l'harmonisation EARL."
+          }
+        },
+        {
+          "title": "B10 - Traitement, reconstruction & quantification",
+          "text": "**(a) Reconstruction.** Les données de coïncidence sont reconstruites par algorithme **itératif OSEM** (ordered-subset expectation maximization), avec **correction d'atténuation** (à partir de la TDM), correction du **diffusé** et des **coïncidences fortuites**, et fusion TEP-TDM [1]. Les options modernes — **PSF** (modélisation de la réponse impulsionnelle) et **TOF** (temps de vol) — améliorent le rapport signal/bruit et la détectabilité des petites lésions, mais **augmentent les valeurs de SUV** : le protocole de reconstruction doit être **figé pour tout suivi** et conforme **EARL**, sous peine de fausser la comparaison entre baseline, interim et EOT (cf. §B9) [1,20].\n\n**(b) Quantification — métriques.** La fixation est quantifiée par la **SUV (Standardized Uptake Value)** = concentration d'activité dans le volume d'intérêt normalisée à l'activité injectée et à la masse corporelle [1]. Les principales métriques :\n\n| Métrique | Définition | Usage en lymphome |\n|---|---|---|\n| **SUVmax** | Voxel le plus intense de la lésion | Routine ; intensité de référence pour le **ΔSUVmax** ; sensible au bruit |\n| **SULpeak** | Sphère ≈ 1 cm³ centrée sur la zone la plus active, normalisée à la **masse maigre** | Plus reproductible ; moins biaisé par l'adiposité |\n| **ΔSUVmax** | Variation relative du SUVmax entre **baseline et interim** | Méthode quantitative pronostique (essai **PETAL**) [19] |\n| **MTV** | Volume métabolique tumoral (volume au-dessus d'un seuil) | Charge tumorale ; facteur pronostique émergent |\n| **TLG** | Total lesion glycolysis = **MTV × SUVmean** | Intègre volume et intensité ; facteur pronostique émergent |\n\n**(c) Cotation visuelle — score de Deauville (5-PS).** L'évaluation de référence reste **visuelle** : le **score de Deauville** cote le **site initial le plus fixant** par rapport au **pool sanguin médiastinal** (DS 2 = ≤ médiastin) et au **foie** (DS 3 = entre médiastin et foie ; DS 4 = modérément > foie ; DS 5 = nettement > foie et/ou nouvelles lésions) [20]. Dans le cadre de **Lugano 2014**, **DS 1–3 = réponse métabolique complète** et **DS 4–5 = résiduel/positif** (détail des définitions et catégories CMR/PMR/NMR/PMD en §C12) [20].\n\n**(d) Méthode ΔSUVmax (alternative quantitative).** En **TEP intermédiaire du DLBCL**, la méthode **ΔSUVmax** classe l'examen « positif » si la réduction du SUVmax est **< 66 %** par rapport au baseline après 2 cures de (R-)CHOP ; dans l'essai **PETAL**, elle offre une **meilleure discrimination pronostique que le Deauville** (moins de faux positifs inflammatoires) [19]. La comparaison n'est valide qu'à **technique, délai et reconstruction identiques** (cf. §B8, §B9).",
+          "stats": [
+            {
+              "value": "OSEM + AC",
+              "label": "Reconstruction itérative + correction d'atténuation [1]"
+            },
+            {
+              "value": "DS 1–3 / 4–5",
+              "label": "Réponse complète vs résiduel (Lugano) [20]"
+            },
+            {
+              "value": "< 66 %",
+              "label": "Seuil ΔSUVmax interim positif (PETAL) [19]"
+            },
+            {
+              "value": "SULpeak",
+              "label": "Métrique reproductible (masse maigre) [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — SUV non comparable sans protocole figé",
+              "text": "Toute évaluation de réponse (Deauville inter-temps, ΔSUVmax) suppose un **délai d'uptake, une reconstruction et une calibration EARL identiques** entre les examens. Un changement de machine ou de reconstruction (PSF/TOF) **augmente artificiellement le SUV** et peut faire basculer à tort un patient de DS 3 à DS 4 ou rendre un ΔSUVmax ininterprétable [1,20]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — visuel (Deauville) vs quantitatif (ΔSUVmax)",
+              "text": "Le **Deauville** reste le standard opérationnel de Lugano et la base des essais répondant-adaptés ; le **ΔSUVmax** (PETAL) le surpasse pour la discrimination en interim du DLBCL en réduisant les faux positifs inflammatoires. En pratique, le compte rendu mentionne le **DS à chaque temps** et, en contexte d'essai, le ΔSUVmax [19,20]."
+            }
+          ]
+        },
+        {
+          "title": "C11 - Aspect normal & variantes physiologiques",
+          "text": "Reconnaître la **biodistribution normale** du 18F-FDG est le préalable indispensable à toute interprétation : tout foyer doit être confronté à ce qui est attendu avant d'être qualifié de pathologique. La captation dépend du métabolisme glucidique de chaque tissu (effet Warburg appliqué au normal) et reste très sensible aux conditions de préparation (glycémie, jeûne, température, effort) [1].\n\n**Biodistribution physiologique** (acquisition à 60 min, base du crâne → racine des cuisses) :\n\n| Territoire | Captation physiologique | Pertinence interprétative |\n|---|---|---|\n| **Cerveau** | Forte (cortex, noyaux gris) — glucose = substrat quasi exclusif | Limite l'analyse de l'encéphale ; non pertinent pour le staging ganglionnaire [25] |\n| **Myocarde** | Variable (à jeun : faible ; non à jeun : intense) | Peut masquer un ganglion para-cardiaque ; à corréler au statut métabolique [1,25] |\n| **Foie** | Modérée, homogène — **référence Deauville (DS 4)** | Repère de cotation : intensité hétérogène possible chez le sujet âgé/stéatosique [20,25] |\n| **Rate** | En règle **≤ foie** ; une rate > foie est anormale | Une captation splénique diffuse > foie peut traduire une atteinte ou un rebond (G-CSF) [25,26] |\n| **Pool sanguin médiastinal** | Faible — **référence Deauville (DS 2)** | ROI dans le médiastin supérieur / aorte thoracique ascendante [20] |\n| **Anneau de Waldeyer, amygdales** | Symétrique, modérée | Une **asymétrie** doit faire suspecter une atteinte [25] |\n| **Tube digestif** | Variable (paroi, contenu) ; côlon parfois intense | Faux positif fréquent ; la TEMP/TDM et la topographie aident [25] |\n| **Voies urinaires, vessie** | Intense (élimination rénale) | Masque le pelvis ; vidange vésicale + hydratation recommandées [1] |\n| **Moelle osseuse** | Faible et homogène | Diffuse et intense après chimiothérapie ou **G-CSF/GM-CSF** [25,26] |\n| **Graisse brune** | Cervico-supraclaviculaire, paravertébrale, symétrique | Sujet jeune, exposition au froid ; prévention par réchauffement [25] |\n\n**Repères d'interprétation Deauville.** Les deux structures de référence du score sont le **pool sanguin médiastinal** (borne du DS 2) et le **foie** (borne du DS 3/4) : leur captation doit être correctement échantillonnée par une ROI de taille suffisante avant toute cotation [20]. Le délai d'uptake (60 min, plage 55-75 min) doit être reproduit à ± 10-15 min d'un examen à l'autre chez un même patient, car la fixation tumorale et hépatique varie avec le temps post-injection [1].",
+          "stats": [
+            {
+              "value": "60 min",
+              "label": "Delai d'uptake standard (plage 55-75 min) [1]"
+            },
+            {
+              "value": "< 11 mmol/L",
+              "label": "Glycemie cible avant injection [1]"
+            },
+            {
+              "value": "Foie & medias.",
+              "label": "Les deux references du score de Deauville [20]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le **foie** est la pierre angulaire du score de Deauville : c'est lui (et non le pool sanguin) qui sépare le négatif (DS 1-3) du positif (DS 4-5). Une captation hépatique anormalement basse (jeûne prolongé, hépatopathie) ou une ROI mal positionnée fausse mécaniquement la cotation. Toujours vérifier que la captation hépatique est plausible avant de coter [20]."
+            },
+            {
+              "type": "warning",
+              "title": "Precaution - glycemie et redistribution musculaire",
+              "text": "Une **glycemie >= 11 mmol/L (200 mg/dL)** entre en competition avec le FDG et abaisse la captation tumorale (faux negatif relatif) [1]. Ne jamais corriger par insuline rapide juste avant l'injection : la redistribution musculaire du FDG masque les lesions [1]. Reprogrammer l'examen est preferable a une correction en urgence."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Mecanisme de captation du 18F-FDG : entree cellulaire par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non metabolisable et piegeage intracellulaire (metabolic trapping).",
+            "caption": "Fig. 1 - Captation du FDG (GLUT + hexokinase) : la voie metabolique qui sous-tend toute la biodistribution, normale comme tumorale."
+          }
+        },
+        {
+          "title": "C12 - Semiologie & SCORES (section centrale)",
+          "text": "C'est la section centrale de l'interprétation : la réponse métabolique des lymphomes avides se cote par le **score de Deauville à 5 points (5-PS)**, intégré aux **catégories de réponse de Lugano 2014**. La cotation se fait toujours sur le **site initial le plus fixant** (ou la lésion la plus intense en fin de traitement), par comparaison aux deux références **médiastin (pool sanguin)** et **foie** [20,2].\n\n**Méthode de lecture systématique** : (1) vérifier la qualité technique, la glycémie, le délai d'uptake et la conformité EARL ; (2) parcourir la biodistribution physiologique (§C11) ; (3) identifier la lésion cible (la plus fixante) ; (4) comparer son intensité au pool médiastinal puis au foie ; (5) attribuer le **score de Deauville** ; (6) comparer au baseline et conclure en **catégorie de réponse Lugano** ; (7) préciser le **temps** de l'examen (staging / interim / EOT).\n\n### Score de Deauville (5-PS) - définitions exactes\n\n| Score | Définition |\n|---|---|\n| **DS 1** | Pas de fixation (no uptake) [13] |\n| **DS 2** | Fixation **≤ médiastin** (pool sanguin) [13] |\n| **DS 3** | Fixation **> médiastin mais ≤ foie** [13] |\n| **DS 4** | Fixation **modérément augmentée par rapport au foie** [13] |\n| **DS 5** | Fixation **nettement augmentée / > foie** **et/ou nouvelle(s) lésion(s)** [13] |\n| **DS X** | Nouvelle zone de fixation **probablement non liée au lymphome** [13] |\n\n- **Cut-off Lugano** : **DS 1-2-3 = réponse métabolique complète** ; **DS 4-5 = résiduel / positif** [2].\n- **TEP intermédiaire** : selon l'objectif de l'essai, le seuil de positivité est **DS ≥ 4** (référence foie) ou **= 5** ; un **DS 3** est généralement considéré comme une réponse adéquate dans les stratégies de désescalade, mais peut être interprété plus prudemment selon le protocole [2,13].\n- Pour les essais en **DLBCL**, la méthode **ΔSUVmax** (variation du SUVmax baseline → interim) discrimine mieux que le 5-PS : un interim « positif » correspond à une réduction du SUVmax **< 66 %** après 2 cures de (R-)CHOP, avec moins de faux positifs [19].\n\n### Classification de Lugano - catégories de réponse métabolique (définitions exactes)\n\n| Catégorie | Critère 5-PS |\n|---|---|\n| **CMR** (réponse métabolique complète) | Score **1, 2 ou 3**, en site nodal/extranodal, **avec ou sans masse résiduelle** [13] |\n| **PMR** (réponse partielle) | Score **4 ou 5** avec captation **visuellement diminuée** vs baseline, sans nouvelle lésion [13] |\n| **NMR** (absence de réponse / maladie stable) | Score **4 ou 5** **sans changement significatif** vs baseline [13] |\n| **PMD** (progression) | Score **4 ou 5** avec **augmentation** de captation et/ou **nouveaux foyers** FDG-avides [13] |\n\n**Patterns sémiologiques.** Une fixation **focale intense extra-physiologique** signe un site lymphomateux : adénopathie, masse médiastinale, atteinte extranodale (foie, rate > foie, os, tube digestif), atteinte médullaire focale. Au baseline, on documente le **SUVmax** de la lésion de référence et la cartographie des sites (stade Lugano I-IV) ; aux temps de réponse, on compare l'intensité de la même lésion aux références médiastin/foie [20].",
+          "list": [
+            "Coter toujours sur le **site le plus fixant**, par rapport au **medias. (DS 2)** puis au **foie (DS 3/4)** [20].",
+            "**CMR = DS 1-3** avec ou sans masse residuelle ; **DS 4-5 = positif** [2,13].",
+            "**Interim** : cut-off DS >= 4 ou = 5 selon l'essai ; en DLBCL, **deltaSUVmax < 66 %** plus discriminant [19].",
+            "Toujours preciser le **temps** (staging / interim / EOT) et le **referentiel** de cotation."
+          ],
+          "stats": [
+            {
+              "value": "DS 1-3",
+              "label": "Reponse metabolique complete (CMR) - negatif [2]"
+            },
+            {
+              "value": "DS 4-5",
+              "label": "Residuel / positif (PMR-NMR-PMD) [2,13]"
+            },
+            {
+              "value": "< 66 %",
+              "label": "Seuil deltaSUVmax interim DLBCL (PETAL) [19]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - DS 3 : negatif ou intermediaire ?",
+              "text": "Dans Lugano, **DS 3 = reponse metabolique complete** (CMR) et donc negatif. Mais selon l'objectif de l'essai repondant-adapte, un DS 3 peut etre classe a part (reponse adequate mais surveillee de pres) : preciser toujours le referentiel utilise et le temps de l'examen, sous peine de surtraiter ou de sous-traiter [2,13]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - DLBCL : Deauville vs deltaSUVmax",
+              "text": "En TEP intermediaire du DLBCL, la **methode deltaSUVmax** (seuil de reduction < 66 %) surpasse le score de Deauville pour la discrimination pronostique, en reduisant les faux positifs inflammatoires : VPP du Deauville interim ~65 %, VPN ~78 %, la deltaSUVmax ameliorant la separation des courbes de survie [19,14]."
+            }
+          ]
+        },
+        {
+          "title": "C13 - Compte rendu structuré",
+          "text": "Le compte rendu d'une TEP-TDM au 18F-FDG pour lymphome doit être **standardisé, comparable dans le temps et actionnable** : il conditionne la décision thérapeutique (désescalade, intensification, traitement de rattrapage). Sa validité repose sur la traçabilité des conditions techniques (sans lesquelles le score de Deauville n'est pas interprétable) et sur une conclusion répondant explicitement à la question posée (stade ou catégorie de réponse).\n\n**Trame recommandée**\n\n1. **Administratif** : identité, indication, **temps de l'examen** (baseline / interim PET-2 ou PET-4 / EOT), antériorités comparées.\n2. **Technique** : traceur (18F-FDG) et **activité** (≈ 185-400 MBq, ou formule EANM 14 × poids / durée par pas) [1], **glycémie** au moment de l'injection (< 11 mmol/L) [1], **délai d'uptake** (≈ 60 min) [1], machine, reconstruction et **conformité EARL** (condition de comparabilité des SUV) [20], champ exploré, type de TDM (low-dose vs diagnostique).\n3. **Résultats** : sites atteints (nodaux/extranodaux), **SUVmax** de la lésion de référence et son évolution vs baseline, intensité comparée au **médiastin** et au **foie**, **score de Deauville** de la lésion la plus fixante, recherche de **nouvelles lésions**.\n4. **Conclusion** : réponse à la question clinique — **stade de Lugano (I-IV)** au baseline, ou **catégorie de réponse métabolique (CMR / PMR / NMR / PMD)** aux temps de réponse, avec le score de Deauville explicite et la mention de toute lésion suspecte nécessitant une **confirmation histologique**.\n\n**Items obligatoires** : temps de l'examen, glycémie, délai d'uptake, repères médiastin/foie, score de Deauville, comparaison au baseline, stade ou catégorie de réponse. L'omission de la glycémie ou du délai d'uptake rend la cotation non opposable [1].",
+          "stats": [
+            {
+              "value": "185-400 MBq",
+              "label": "Activite FDG adulte typique a tracer dans le CR [1]"
+            },
+            {
+              "value": "EARL",
+              "label": "Harmonisation requise pour comparer les SUV [20]"
+            },
+            {
+              "value": "+- 10-15 min",
+              "label": "Reproductibilite du delai d'uptake entre examens [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Modele de conclusion - TEP de fin de traitement (EOT)",
+              "text": "« TEP-TDM EOT, 6-8 semaines apres la derniere cure. Disparition de l'hypermetabolisme du site mediastinal initial, dont la fixation residuelle est <= foie (score de Deauville 3). Absence de nouvelle lesion. Conclusion : reponse metabolique complete (CMR, Lugano). » - le score chiffre et la reference (foie) doivent toujours figurer [2,20]."
+            },
+            {
+              "type": "warning",
+              "title": "Precaution - une TEP-2 negative ne dispense pas de l'EOT",
+              "text": "Une TEP intermediaire negative ne suffit pas a affirmer la remission : l'evaluation de **fin de traitement** reste necessaire, certains patients TEP-2 negatifs etant positifs a l'EOT [13]. Le compte rendu interim doit donc rester prudent et ne pas conclure a la guerison."
+            }
+          ]
+        },
+        {
+          "title": "C14 - Pièges & artefacts (faux positifs / faux négatifs)",
+          "text": "Les pièges de la TEP-FDG en hématologie tiennent surtout à la **non-spécificité du FDG** (l'inflammation et l'hématopoïèse de stress fixent autant que la tumeur) et au **non-respect des délais** post-thérapeutiques. Pour chaque écueil : identifier la cause, reconnaître l'aspect, et corriger (respect des délais, TEMP/TDM-fusion, comparaison au baseline, voire biopsie). Le tableau ci-dessous récapitule les principaux faux positifs et faux négatifs.\n\n| Écueil | Mécanisme / aspect | Comment l'éviter / corriger |\n|---|---|---|\n| **Graisse brune** | Captation cervico-supraclaviculaire/paravertébrale symétrique (sujet jeune, froid) | Réchauffement avant injection ; fusion TDM (densité graisseuse) [25] |\n| **Rebond thymique** | Fixation médiastinale antérieure en « V », post-chimio, sujet jeune | Reconnaître le pattern, topographie thymique ; comparer au baseline [25] |\n| **Rebond médullaire / G-CSF** | Captation médullaire diffuse intense, post-chimio ou post-facteur de croissance | Respecter **≥ 2 semaines** après G-CSF/GM-CSF ; aspect diffus ≠ focal [25,26] |\n| **Inflammation post-radiothérapie** | Hyperfixation pulmonaire/médiastinale dans le champ irradié | Respecter **≈ 3 mois** (8-12 sem.) après la RT [25] |\n| **Granulomatoses / infection** | Sarcoïdose, tuberculose, ganglions réactionnels, post-vaccination, post-biopsie | Contexte, topographie, biopsie si décision majeure [25] |\n| **EOT positif isolé (DLBCL)** | Masse résiduelle FDG-avide isolée → forts taux de faux positifs | **Biopsie indispensable** avant tout traitement de rattrapage [27] |\n| **Faux négatifs** | Histologies peu avides (LLC/SLL, Waldenström, zone marginale, mycosis fongoïde), petites lésions infra-résolutives, hyperglycémie | Connaître les histologies non avides → TDM ; contrôler la glycémie [2,1] |\n\n**Délais à respecter** (sinon faux positifs inflammatoires ou faux négatifs) : interim **≥ 10-14 jours** après une cure de chimiothérapie ; **EOT 6-8 semaines** après la dernière cure ; **≥ 2 semaines** après G-CSF/GM-CSF ; **≈ 3 mois** après radiothérapie [25,26].\n\nLa **valeur prédictive positive modeste** de la TEP en interim et à l'EOT du DLBCL (faux positifs inflammatoires fréquents) impose de **confirmer histologiquement** toute fixation résiduelle isolée avant une décision thérapeutique majeure [27].",
+          "stats": [
+            {
+              "value": "6-8 sem.",
+              "label": "Delai minimal post-chimio pour l'EOT [25]"
+            },
+            {
+              "value": "~ 3 mois",
+              "label": "Delai apres radiotherapie (inflammation) [25]"
+            },
+            {
+              "value": ">= 2 sem.",
+              "label": "Delai apres G-CSF/GM-CSF (rebond medullaire) [26]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - EOT positif en DLBCL : biopsie avant rattrapage",
+              "text": "En DLBCL, la TEP de fin de traitement souffre de **forts taux de faux positifs** : la VPP est faible (~20-74 % selon les series) alors que la VPN avoisine **80 %** [27]. Une masse residuelle FDG-avide isolee ne doit jamais declencher un traitement de rattrapage sans **confirmation histologique** [27]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - rebond medullaire et G-CSF",
+              "text": "Apres chimiotherapie ou facteur de croissance hematopoietique, la moelle fixe de facon **diffuse et intense**, simulant une atteinte medullaire. Le caractere **diffus** (vs focal) et le respect d'un delai **>= 2 semaines apres G-CSF** permettent d'eviter le surstaging [26,25]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - distinguer focal et diffus",
+              "text": "La regle d'or face a une captation medullaire ou splenique : **focal = suspect, diffus = reactionnel** dans le contexte post-traitement ou post-G-CSF. Un foyer focal medullaire au staging (baseline, hors stimulation) reste en revanche evocateur d'atteinte et peut dispenser de la biopsie osteomedullaire [25,26]."
+            }
+          ]
+        },
+        {
+          "title": "D15 - Dosimétrie",
+          "text": "Données de référence issues de la **CIPR 128** pour le 18F-FDG, complétées par les modèles biocinétiques révisés.[23,24] La dosimétrie comprend deux composantes distinctes à ne jamais additionner sans le préciser : la **part TEP** (radiopharmaceutique) et la **part TDM** (rayonnement X), de natures et de formalismes différents.\n\n**▸ Coefficient de dose efficace (part TEP).**\n\n| Population | Coefficient de dose efficace | Dose efficace pour une activité-type |\n|---|---|---|\n| Adulte (70 kg) | **1,9×10⁻² mSv/MBq** (0,019 mSv/MBq) [23] | ≈ **7 mSv** pour 370 MBq · ≈ **7,6 mSv** pour 400 MBq [23] |\n| Adulte 57 kg (modèle dépendant du gabarit) | **2,4×10⁻² mSv/MBq** [6,23] | dose croissante quand le poids diminue |\n| Enfant ≈ 33 kg | **3,6×10⁻² mSv/MBq** [6,23] | activité adaptée à la carte EANM (cf. §B7) |\n\nLe coefficient de dose efficace **augmente lorsque le gabarit diminue** : à activité égale par kg, l'enfant et l'adulte mince reçoivent une dose efficace par MBq plus élevée — d'où l'intérêt des fantômes maillés dépendants du gabarit pour individualiser l'estimation.[6]\n\n**▸ Doses aux organes & organe critique.** L'élimination étant **urinaire**, l'organe critique est la **paroi vésicale** : dose absorbée ≈ **7,5×10⁻² mGy/MBq** (soit ≈ **72 mGy pour 555 MBq**).[23] Le **cœur** (forte captation myocardique physiologique du FDG) reçoit ≈ **37 mGy pour 555 MBq**, et le **cerveau** figure parmi les organes les plus exposés du fait de sa consommation glucidique élevée.[23,24] Le respect du jeûne (cf. §B8) module ces fixations cardiaques.\n\n**▸ Part TDM.** Variable selon le protocole : ≈ **1–10 mSv** (TDM low-dose de correction d'atténuation/repérage vs TDM diagnostique avec contraste). Elle s'ajoute à la part TEP dans le bilan dosimétrique global de l'examen hybride.\n\n**▸ Formalisme.** Estimations selon le schéma **MIRD** et les **modèles biocinétiques CIPR** (Pub. 128, héritière des Pub. 53/80/106), appliquées à des **fantômes voxel/maillés** (logiciels OLINDA/EXM, IDAC-Dose).[23,6] Le modèle compartimental révisé du 2-[18F]FDG affine la cinétique d'élimination vésicale et la dose aux organes.[24]\n\n**▸ Mise en perspective.** Une dose efficace TEP de ≈ **7 mSv** (370 MBq) équivaut à environ **2–3 ans d'irradiation naturelle** (fond ≈ 2,4 mSv/an) et est comparable à une **TDM thoraco-abdomino-pelvienne**. Distinguer toujours **dose absorbée** (mGy, par organe) et **dose efficace** (mSv, corps entier pondéré).",
+          "stats": [
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace adulte (CIPR 128)"
+            },
+            {
+              "value": "≈ 7 mSv",
+              "label": "Part TEP pour 370 MBq"
+            },
+            {
+              "value": "7,5×10⁻² mGy/MBq",
+              "label": "Paroi vésicale (organe critique)"
+            },
+            {
+              "value": "≈ 37 mGy",
+              "label": "Cœur pour 555 MBq"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "L'**hyperhydratation** et les **mictions fréquentes** après injection sont le principal levier de réduction de dose : elles diminuent l'irradiation de la **paroi vésicale**, organe limitant. Une vidange vésicale juste avant l'acquisition réduit en outre les artefacts d'activité urinaire pelvienne (cf. §B8)."
+            },
+            {
+              "type": "info",
+              "title": "Pédiatrie & grossesse/allaitement",
+              "text": "Pédiatrie : dose par MBq plus élevée → activité selon la **carte de dose EANM** (18F-FDG classe B), avec hydratation/vidange systématiques.[5] Grossesse : évaluation bénéfice/risque, faisabilité décrite si dose fœtale **< 50 mGy**. Allaitement : la CIPR **ne recommande pas l'interruption** (peu de FDG dans le lait), mais limiter le contact rapproché mère-enfant ≈ **12 h** pour réduire l'irradiation externe.[1,23]"
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Voie de captation du 18F-FDG : entrée cellulaire par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non métabolisable et piégé — base du contraste métabolique et de la biodistribution dosimétrique (cerveau, myocarde, vessie).",
+            "caption": "Fig. — Captation et piégeage du FDG : la biodistribution (cerveau, myocarde, voies urinaires) explique la hiérarchie des doses aux organes."
+          }
+        },
+        {
+          "title": "D16 - Radioprotection",
+          "text": "La radioprotection du 18F-FDG est dominée par l'énergie d'annihilation de **511 keV** (cf. §A1) : un rayonnement bien plus pénétrant que les émetteurs gamma conventionnels (140 keV du 99mTc), imposant des écrans plus épais. À l'inverse, la **courte période physique du 18F (≈ 110 min)** limite l'irradiation différée de l'entourage et simplifie la gestion des déchets.[23]\n\nLes trois principes structurent l'action : **justification, optimisation (ALARA), limitation**. La protection se pense **par cible**.\n\n| Cible | Mesures clés |\n|---|---|\n| **Personnel** | **Temps / distance / écran** : protège-seringues et flacons en **tungstène** (densité supérieure au plomb pour les hauts énergies), automate d'injection si disponible, distance maximale pendant l'uptake, dosimétrie passive **et** opérationnelle, **zonage** du secteur chaud (préparation, injection, salle d'attente chaude). CDA du plomb ≈ **6 mm à 511 keV**. |\n| **Entourage / public** | Le patient injecté est une **source** de 511 keV : consignes post-examen de quelques heures (éviter le contact rapproché et prolongé avec **femmes enceintes et jeunes enfants**), hydratation et mictions fréquentes pour accélérer l'élimination. La décroissance rapide (≈ 110 min) rend ces consignes courtes. |\n| **Patient** | Justification de l'indication (Lugano), optimisation de l'activité (formule pondérée EANM, cf. §B7), réduction de la dose vésicale par hydratation. |\n\n**▸ Effluents & déchets.** La **décroissance sur place** suffit : après ≈ **10 demi-vies (~18 h)**, l'activité résiduelle est négligeable. Pas de stockage prolongé contrairement aux émetteurs à période longue. Traçabilité et conduite en cas de contamination selon la procédure du service.\n\n**▸ Spécificité TEP vs gamma-caméra.** La détection en **coïncidence** (deux photons à 180°, cf. §A1) et l'énergie élevée font de la TEP un poste plus exposant pour le personnel que la scintigraphie conventionnelle : l'optimisation des gestes de préparation/injection est déterminante.",
+          "steps": [
+            {
+              "title": "À la préparation",
+              "text": "Manipulation derrière écran de tungstène, protège-seringue, gants ; minimiser le temps de contact avec le flacon ; vérifier l'activité à l'activimètre."
+            },
+            {
+              "title": "À l'injection",
+              "text": "Voie veineuse posée à l'avance, injection rapide puis éloignement ; le patient reste en **salle d'attente chaude** isolée pendant les 60 min d'uptake."
+            },
+            {
+              "title": "Pendant l'acquisition & au départ",
+              "text": "Vidange vésicale avant acquisition ; à la sortie, consignes d'hydratation, mictions fréquentes et distance vis-à-vis des femmes enceintes et enfants pour quelques heures."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution - 511 keV",
+              "text": "Le blindage adapté au 99mTc (140 keV) est **insuffisant** pour le 18F : utiliser des protège-seringues/flacons en **tungstène** et un zonage dédié. L'erreur classique est de transposer les habitudes de la scintigraphie conventionnelle au secteur TEP."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Les trois leviers ALARA — temps, distance, écran — appliqués à la manipulation du 18F-FDG : réduire le temps d'exposition, maximiser la distance, interposer un écran de tungstène adapté aux 511 keV.",
+            "caption": "Fig. — Temps / distance / écran : structure les consignes au personnel du secteur chaud et à l'entourage du patient."
+          }
+        },
+        {
+          "title": "D17 - Performances diagnostiques & comparaison",
+          "text": "Les performances de la TEP-FDG dépendent de l'**indication** (staging, interim, EOT), de l'**histologie** (avidité FDG) et du **temps** de l'examen. Globalement, la TEP-FDG **supplante la biopsie ostéomédullaire (BOM)** pour l'évaluation de l'atteinte médullaire, mais sa valeur prédictive positive (VPP) reste **modeste en interim et en fin de traitement** du fait des faux positifs inflammatoires (cf. §C14).\n\n**▸ Atteinte médullaire au staging.**\n\n| Contexte | Se | Sp | VPP | VPN |\n|---|---|---|---|---|\n| Lymphomes (HL+LNH, méta-analyse) | **91,6 %** [15] | **90,3 %** [15] | — | — |\n| DLBCL — TEP/TDM | **88,4 %** [28] | **100 %** [28] | **100 %** [28] | **95,3 %** [28] |\n| DLBCL — BOM (comparateur) | **41,9 %** [28] | — | — | — |\n\nLa BOM manque ainsi près de **6 atteintes médullaires sur 10** dans le DLBCL : la TEP-FDG, en explorant le **squelette entier**, capte les atteintes focales hors crête iliaque. D'où l'abandon de la BOM de routine dans le HL et le DLBCL lorsque la TEP est réalisée (cf. §A5, §D18).[2,12]\n\n**▸ TEP de fin de traitement (EOT) en DLBCL.**\n\n| Métrique | Valeur |\n|---|---|\n| VPN globale | ≈ **80 %** (intervalle 64–95 %) [27] |\n| VPP | ≈ **20–74 %** (faible spécificité, faux positifs fréquents) [27] |\n| SSP à 2 ans selon EOT | **84,7 %** (négatif) vs **25,0 %** (positif) [7] |\n\n**▸ TEP intermédiaire en DLBCL — Deauville vs ΔSUVmax.** La cotation visuelle de Deauville en interim a une discrimination limitée (VPP ≈ **65,4 %**, VPN ≈ **77,9 %**) ; la méthode quantitative **ΔSUVmax** (seuil de réduction **< 66 %** après 2 cures de (R-)CHOP = interim positif) **surpasse le Deauville**, en réduisant les faux positifs inflammatoires.[14,19]\n\n**▸ Lymphome de Hodgkin — interim (DS 4-5 = positif).** Performances pronostiques modestes en valeur absolue mais cliniquement décisives : la VPP imparfaite explique pourquoi une TEP interim **négative ne dispense pas** de la TEP de fin de traitement.[13] La VPP modeste impose une **confirmation histologique** avant toute décision majeure sur un résidu FDG-avide isolé (cf. §C14).",
+          "stats": [
+            {
+              "value": "91,6 % / 90,3 %",
+              "label": "Se/Sp atteinte médullaire (lymphomes)"
+            },
+            {
+              "value": "88,4 % vs 41,9 %",
+              "label": "Se TEP vs BOM (DLBCL médullaire)"
+            },
+            {
+              "value": "≈ 80 %",
+              "label": "VPN de l'EOT-PET en DLBCL"
+            },
+            {
+              "value": "< 66 %",
+              "label": "Seuil ΔSUVmax (interim positif, DLBCL)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La dissociation **VPN élevée / VPP basse** est la signature de la TEP-FDG dans le lymphome : un examen négatif est très fiable (rémission métabolique), un examen positif l'est moins (inflammation, granulome, rebond). C'est l'argument pour la **biopsie de confirmation** avant tout traitement de rattrapage sur un résidu isolé, particulièrement en DLBCL.[27]"
+            }
+          ]
+        },
+        {
+          "title": "D18 - Place dans la stratégie & algorithmes décisionnels",
+          "text": "Le cadre normatif est la **classification de Lugano 2014** : recommandations cliniques (**Cheson, JCO 2014;32:3059-3067**)[22,29] et companion imagerie (**Barrington, JCO 2014;32:3048-3058**)[20], avec mise en œuvre technique précisée par le **consensus PRoLoG (JNM 2023;64:239)**[21] et les recommandations EANM v2.0[1] et SFMN/CNP-MN.[16] La TEP-FDG s'articule autour de **trois temps cardinaux** : staging → interim → fin de traitement (EOT).\n\n**▸ Arbre décisionnel (lymphome FDG-avide).** Diagnostic histologique → **TEP-FDG de baseline** (stadification Lugano I-IV, abandon de la BOM de routine) → chimiothérapie → **TEP intermédiaire (PET-2/PET-4)** cotée en Deauville → stratégie **adaptée à la réponse** (désescalade si négative, escalade ou confirmation si positive) → **TEP de fin de traitement** (CMR = objectif) → biopsie si résidu FDG-avide isolé avant rattrapage.\n\n**▸ Essais pivots — stratégies adaptées à la réponse.**\n\n| Essai | Population | Stratégie & résultat-clé |\n|---|---|---|\n| **RAPID** (Radford, NEJM 2015) | HL stade IA/IIA, 602 patients | 3 ABVD puis PET ; **426/571 (74,6 %) PET-négatifs** randomisés RT vs abstention ; **SSP 3 ans 94,6 %** (IC 91,5–97,7) avec RT vs **90,8 %** (IC 86,9–94,8) sans — excellent pronostic des deux côtés.[18] |\n| **GHSG HD16** | HL précoce favorable | 2 ABVD + PET-2 ; chez les **PET-2 négatifs**, SSP 5 ans **94,2 %** (traitement combiné) vs **86,7 %** (chimio seule) → la RT n'est pas omise sans perte de contrôle ; PET-2 positif (Deauville ≥ 4) = facteur de risque (SSP 5 ans **93,1 % vs 80,1 %**).[17] |\n| **RATHL** (Johnson, NEJM 2016) | HL avancé | 2 ABVD + PET-2 ; chez les **PET-2 négatifs (DS 1-3)**, désescalade (suppression de la **bléomycine**) sans perte d'efficacité significative ; PET-2 positifs escaladés vers BEACOPP.[3,4] |\n| **PETAL** | DLBCL | Thérapie adaptée à l'interim après 2 (R-)CHOP ; **ΔSUVmax < 66 %** = positif, **meilleure discrimination que le Deauville**.[19] |\n\n**▸ Séquençage & délais.** Les délais conditionnent la fiabilité (cf. §C14) : interim **≥ 10–14 j** après une cure ; **EOT 6–8 semaines** après la dernière cure de chimiothérapie ; **≥ 2 semaines** après G-CSF/GM-CSF (rebond médullaire) ; **≈ 3 mois** (parfois 8–12 semaines) après radiothérapie.[25,26] Tout examen longitudinal d'un même patient doit reproduire les **mêmes paramètres** (délai d'uptake, reconstruction, harmonisation EARL) — condition de validité de la comparaison métabolique.[20]",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Cadre normatif — Lugano 2014",
+              "text": "Lugano consacre la TEP-FDG comme **standard des lymphomes FDG-avides** : score de Deauville à 5 points en interim et EOT, suffixes A/B réservés au seul **lymphome de Hodgkin**, suppression du « X » de bulky comme critère formel (taille rapportée en valeur absolue, seuil ≥ 7,5–10 cm).[20,22]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — DS 5 à l'interim",
+              "text": "Un **DS 5 à la TEP intermédiaire** (analyse poolée de plusieurs essais) identifie un sous-groupe de **très mauvais pronostic**, justifiant une escalade thérapeutique. À l'inverse, le **DS 3** est considéré comme réponse adéquate dans la plupart des essais de désescalade (RATHL : DS 1-3 = négatif).[3]"
+            }
+          ]
+        },
+        {
+          "title": "D19 - Examens apparentés & variantes",
+          "text": "La TEP-FDG s'inscrit dans un réseau d'examens dont elle est le pivot pour les lymphomes avides ; les histologies peu avides et certaines situations particulières orientent vers d'autres modalités.\n\n| Examen apparenté | Cible / différence | Quand le préférer |\n|---|---|---|\n| **TDM avec contraste seule** | Morphologie (taille ganglionnaire) | Histologies **peu/non FDG-avides** (LLC/SLL, Waldenström, zone marginale, mycosis fongoïde) ; mesure de la masse bulky en valeur absolue.[2] |\n| **IRM de diffusion (corps entier)** | Restriction de diffusion, **sans irradiation** | Alternative en **pédiatrie** et chez la femme enceinte ; suivi rapproché pour limiter la dose cumulée. |\n| **Biopsie ostéomédullaire (BOM)** | Histologie médullaire directe | Largement **remplacée par la TEP** en HL et DLBCL ; conservée si discordance ou suspicion d'atteinte de bas grade non FDG-avide.[2,12] |\n| **TEP-FLT (18F-fluorothymidine)** | **Prolifération** cellulaire (thymidine kinase) | Recherche ; moins de fixation inflammatoire que le FDG, mais non standardisé en routine. |\n| **Variantes de protocole TEP-FDG** | TDM low-dose vs diagnostique ; champ étendu aux membres | TDM diagnostique avec contraste si bilan morphologique requis ; champ « tête-pieds » en lymphome **cutané/extranodal**. |\n\n**▸ Avidité FDG — le déterminant du choix.** Selon Lugano, « essentiellement toutes » les histologies sont avides sauf **LLC/lymphome lymphocytique à petites cellules, lymphome lymphoplasmocytaire/Waldenström, mycosis fongoïde et lymphome de la zone marginale** ; pour ces formes, la TEP est peu contributive et la TDM redevient l'examen de référence.[2] Les formes **avides** (Hodgkin, DLBCL, folliculaire, T périphérique, B médiastinal primitif, manteau) relèvent pleinement de la stratégie Deauville/Lugano décrite aux §C12 et §D18.\n\n**▸ Réseau de liens.** Maladies : lymphome de Hodgkin, DLBCL, lymphome folliculaire · Examens : TDM, IRM de diffusion, BOM · Scores : **Deauville 5-PS**, classification de **Lugano** · Traceur : **18F-FDG**.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le choix de la modalité fonctionnelle se résume à une question : **la tumeur est-elle FDG-avide ?** Si oui, la TEP-FDG domine tout le parcours (staging, interim, EOT). Si non (LLC/SLL, Waldenström, zone marginale, mycosis fongoïde), la TDM avec contraste reprend la main et le score de Deauville perd sa pertinence.[2]"
+            }
+          ]
+        },
+        {
+          "title": "E20 - Cas cliniques commentes / Iconographie",
+          "text": "Trois vignettes commentees pas-a-pas (contexte -> images -> analyse -> conclusion) ancrant les trois temps cardinaux de la TEP-TDM au **18F-FDG** dans le lymphome : staging initial, evaluation intermediaire (interim) guidant une strategie adaptee a la reponse, et bilan de fin de traitement (EOT) avec son piege majeur de faux positifs. Chaque cas renvoie aux sections techniques concernees et applique le **score de Deauville (5-PS)** dans le cadre de la classification de **Lugano 2014** [2,8].",
+          "steps": [
+            {
+              "title": "Cas 1 - Lymphome de Hodgkin : staging initial et abandon de la BOM",
+              "text": "*Contexte* : homme de 28 ans, adenopathies cervicales et sus-claviculaires, sueurs nocturnes et amaigrissement (symptomes B). Biopsie : lymphome de Hodgkin classique. *Images* : TEP-TDM au **18F-FDG** corps entier (glycemie 5,4 mmol/L, captation a 60 min) : hyperfixation des aires cervicales bilaterales, mediastinale et sus-diaphragmatique, et fixation focale d'un foyer medullaire iliaque sans correlat osteolytique TDM. *Analyse* : l'atteinte sus- et sous-diaphragmatique definit un stade III de Lugano ; le foyer medullaire focal documente l'atteinte ostemedullaire sans recourir a la biopsie ostemedullaire (BOM). La TEP-TDM remplace en effet la BOM de routine pour le staging du lymphome de Hodgkin et du DLBCL (sensibilite ~91,6 %, specificite ~90,3 % pour l'atteinte medullaire en meta-analyse) [8,15]. *Conclusion* : Hodgkin stade III-B, atteinte medullaire focale TEP-avide ; **BOM non requise**. Illustre l'apport pivot du corps entier en une acquisition (cf. E21) et la suffixation A/B conservee pour le seul Hodgkin (cf. classification de Lugano)."
+            },
+            {
+              "title": "Cas 2 - Hodgkin avance : interim PET-2 negatif et desescalade (logique RATHL)",
+              "text": "*Contexte* : femme de 35 ans, Hodgkin avance traitee par ABVD, TEP-TDM de reference puis interim apres 2 cycles (PET-2), **memes parametres et meme delai de captation reproduits** sur la meme camera [6]. *Images* : sur le site initialement le plus fixant (masse mediastinale), la fixation residuelle est **inferieure au pool sanguin mediastinal**. *Analyse* : ce profil correspond a un **score de Deauville 2** (fixation <= mediastin), donc DS 1-3 = reponse metabolique complete (CMR) et PET-2 negatif. Dans l'essai RATHL, les patients PET-2 negatifs poursuivant une chimiotherapie desescaladee (suppression de la bleomycine, cycles 3-6) conservent une survie sans progression a 3 ans d'environ **85 %**, sans perte d'efficacite significative [3,4]. *Conclusion* : PET-2 negatif (DS 2) -> **desescalade** (AVD), epargnant la toxicite pulmonaire de la bleomycine. Souligne que la comparaison interim/baseline n'est valide qu'a technique et delai constants (cf. piege E22)."
+            },
+            {
+              "title": "Cas 3 - DLBCL : masse residuelle FDG-avide en fin de traitement (piege du faux positif)",
+              "text": "*Contexte* : homme de 60 ans, DLBCL traite par R-CHOP, TEP-TDM de fin de traitement (EOT) realisee **6 semaines apres la derniere cure** pour limiter l'inflammation post-chimiotherapie [25]. *Images* : regression majeure de la masse mediastinale initiale, mais persistance d'une fixation residuelle focale **modérement superieure au foie** sur un reliquat. *Analyse* : ce foyer correspond a un **score de Deauville 4**, donc resultat positif dans le cadre de Lugano. Or l'EOT-PET en DLBCL souffre de **forts taux de faux positifs** (VPP faible, ~20-74 % selon les series ; VPN globale ~80 %), du fait de remaniements inflammatoires : une **biopsie est necessaire** avant toute decision de traitement de rattrapage sur une masse residuelle isolee [14,27]. *Conclusion* : DS 4 residuel -> **confirmation histologique** avant escalade. La biopsie revele un remaniement fibro-inflammatoire (pas de lymphome viable) : surveillance plutot que rattrapage. Rappelle que la TEP-FDG ne remplace jamais la preuve histologique d'un foyer residuel decisionnel (cf. E22, C14)."
+            }
+          ],
+          "stats": [
+            {
+              "value": "~85 %",
+              "label": "Survie sans progression a 3 ans des PET-2 negatifs (DS 1-3) sous ABVD, RATHL [3]"
+            },
+            {
+              "value": "DS 1-3 / DS 4-5",
+              "label": "Cut-off Deauville : reponse metabolique complete vs residuel/positif (Lugano) [2,8]"
+            },
+            {
+              "value": "60 min",
+              "label": "Delai de captation de reference, a reproduire a +/- 10-15 min au suivi [1,6]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - Reproductibilite du suivi metabolique",
+              "text": "Une cotation Deauville comparant deux examens d'un meme patient n'a de valeur que si le **delai de captation (60 min, plage 55-75 min)** est reproduit a +/- 10-15 min, sur une machine harmonisee EARL et avec les memes parametres de reconstruction. Les reperes de cotation restent invariants : **pool sanguin mediastinal** (DS <= 2) et **foie** (DS <= 3 negatif, DS >= 4 positif) [1,6,20]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - Reliquat FDG-avide en fin de traitement (DLBCL)",
+              "text": "Un score de Deauville 4-5 sur une masse residuelle isolee a l'EOT ne signe pas a lui seul une maladie active : les faux positifs inflammatoires sont frequents et la VPP est modeste. **Confirmer par biopsie** avant toute decision de traitement de rattrapage [14,27]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Captation cellulaire du 18F-FDG : entree par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate non metabolisable, piegeage intracellulaire (effet Warburg) - la base biologique de l'avidite lymphomateuse cotee par le score de Deauville.",
+            "caption": "Fig. 1 - Piegeage metabolique du FDG (GLUT + hexokinase) : substrat de l'avidite tumorale que le score de Deauville quantifie visuellement."
+          }
+        },
+        {
+          "title": "E21 - Points cles / a retenir",
+          "text": "Synthese haut rendement : chiffres-cles, seuils et pieges majeurs de la TEP-TDM au **18F-FDG** dans les lymphomes, structures autour du **score de Deauville** et de la classification de **Lugano 2014**.",
+          "list": [
+            "**18F-FDG = analogue du glucose** : capte par les transporteurs **GLUT** (GLUT-1/3), phosphoryle par l'hexokinase en FDG-6-phosphate non metabolisable -> **piegeage metabolique** dans les cellules a glycolyse accrue (effet Warburg) [1].",
+            "Physique du **fluor-18** : periode physique **~110 min** (109,7-109,8 min), emission **beta+ (~96,7 %)**, deux photons d'annihilation de **511 keV** a 180 degres detectes en coincidence [1,23].",
+            "**Trois temps cardinaux** : staging initial / interim (PET-2 ou PET-4) / fin de traitement (EOT) ; **delai de captation 60 min** (plage 55-75 min), a reproduire a +/- 10-15 min au suivi [1,6].",
+            "Preparation : **jeune >= 4-6 h**, hydratation, **glycemie cible < 11 mmol/L (200 mg/dL)** en clinique (ideal <= 7-8,3 mmol/L pour la quantification) ; **pas d'insuline rapide juste avant** (redistribution musculaire du FDG) [1].",
+            "Activite EANM v2.0 : **FDG (MBq) = 14 x poids (kg) / duree par pas (min)** si recouvrement de lit <= 30 % (coefficient 7 si > 30 %), activite adulte typique **~185-400 MBq** ; pediatrie = **classe B** de la carte de dose EANM [1,5].",
+            "**Score de Deauville (5-PS)** : reperes = **mediastin/pool sanguin** (DS 2 = fixation <= mediastin) et **foie** (DS 3 = > mediastin mais <= foie ; DS 4 = modérement > foie ; DS 5 = nettement > foie et/ou nouvelles lesions) [2,13].",
+            "Cut-off Lugano : **DS 1-3 = reponse metabolique complete (CMR)** ; **DS 4-5 = residuel/positif** ; categories de reponse CMR / PMR / NMR / PMD [2,8].",
+            "En interim, le cut-off de positivite varie selon l'essai : **DS 4** (foie) plus discriminant pour le risque, **DS 5** = non-reponse franche ; **DS 3** generalement considere comme reponse adequate [2,13].",
+            "La TEP-TDM **remplace la biopsie ostemedullaire (BOM)** de routine dans le Hodgkin et le DLBCL ; atteinte medullaire au staging : **Se ~91,6 % / Sp ~90,3 %** (meta-analyse), et en DLBCL **Se 88,4 % / Sp 100 %** vs BOM Se 41,9 % [8,12,15,28].",
+            "**Hodgkin avance (RATHL)** : SSP a 3 ans **~85 % chez les PET-2 negatifs** (DS 1-3) ; la desescalade (retrait de la bleomycine) ne reduit pas significativement l'efficacite [3,4].",
+            "**Hodgkin precoce favorable (RAPID)** : chez les PET-negatifs apres 3 ABVD, SSP a 3 ans **94,6 % avec radiotherapie vs 90,8 % sans** ; pronostic excellent dans les deux bras [18].",
+            "**EOT-PET en DLBCL** : VPN globale **~80 %** mais **faux positifs frequents** (VPP modeste) -> **biopsie indispensable** avant un traitement de rattrapage sur reliquat FDG-avide [14,27].",
+            "Methode **delta-SUVmax (PETAL)** : interim positif si reduction du SUVmax **< 66 %** vs baseline apres 2 (R-)CHOP ; meilleure discrimination que le Deauville dans le DLBCL [19].",
+            "**Delais a respecter** : >= 10-14 j apres une cure de chimiotherapie pour l'interim, **6-8 semaines** pour l'EOT, **>= 2 semaines apres G-CSF/GM-CSF** (rebond medullaire), **~3 mois** apres radiotherapie (inflammation post-RT) [25,26].",
+            "Dosimetrie (ICRP 128) : dose efficace **0,019 mSv/MBq** (~7 mSv pour 370 MBq, part TEP) ; **organe critique = paroi vesicale** (~7,5 x 10^-2 mGy/MBq) ; hydratation + miction reduisent la dose vesicale [6,23].",
+            "Pieges majeurs : **graisse brune**, **rebond thymique** post-chimio (sujet jeune), **rebond medullaire / post-G-CSF**, inflammation post-radiotherapie, granulomatoses (sarcoidose, tuberculose) [25,26]."
+          ],
+          "stats": [
+            {
+              "value": "~110 min",
+              "label": "Periode physique du 18F [1,23]"
+            },
+            {
+              "value": "DS 1-3",
+              "label": "Reponse metabolique complete (Lugano) ; DS 4-5 = positif/residuel [2,8]"
+            },
+            {
+              "value": "< 66 %",
+              "label": "Seuil delta-SUVmax PETAL definissant un interim positif (DLBCL) [19]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace 18F-FDG (ICRP 128) [23]"
+            }
+          ]
+        },
+        {
+          "title": "E22 - FAQ & pieges d'examen",
+          "text": "**Un score de Deauville 3 est-il positif ou negatif ?** **Negatif** dans le cadre de Lugano : DS 1-3 = reponse metabolique complete (CMR). Toutefois, certains essais repondant-adaptes le classent a part selon l'objectif (desescalade vs escalade), d'ou l'importance de toujours preciser le referentiel utilise [2,13].\n\n**Cut-off interim : Deauville 4 ou 5 ?** Cela depend de l'essai et de l'objectif. Le seuil **DS 4** (fixation > foie) est plus discriminant pour stratifier le risque ; le **DS 5** (fixation nettement > foie et/ou nouvelles lesions) traduit une non-reponse franche. Le choix conditionne la VPP/VPN rapportee [3,13].\n\n**Quels sont les deux reperes anatomiques du score de Deauville ?** Le **pool sanguin mediastinal** (DS 2 = fixation <= mediastin) et le **foie** (DS 3 = > mediastin mais <= foie ; DS >= 4 = > foie). Toujours mentionner explicitement ces deux reperes dans le compte rendu [2,20].\n\n**Pourquoi un jeune et un controle glycemique ?** Le glucose endogene **entre en competition** avec le FDG (memes transporteurs GLUT) ; une hyperglycemie degrade le contraste tumoral. D'ou le jeune >= 4-6 h et le seuil de **11 mmol/L (200 mg/dL)** en clinique, plus strict (7-8,3 mmol/L) pour la quantification [1].\n\n**Pourquoi ne pas corriger l'hyperglycemie par de l'insuline juste avant ?** L'insuline provoque une **redistribution musculaire massive du FDG** qui masque les lesions ; mieux vaut reprogrammer l'examen [1].\n\n**La TEP-TDM peut-elle remplacer la biopsie ostemedullaire ?** Oui, en routine pour le **Hodgkin et le DLBCL** : sa sensibilite/specificite pour l'atteinte medullaire depasse celle de la BOM (en DLBCL, Se 88,4 % / Sp 100 % vs BOM Se 41,9 %) [8,12,28].\n\n**Pourquoi attendre 6-8 semaines apres la chimiotherapie pour l'EOT ?** Pour laisser refluer l'inflammation post-traitement, source de faux positifs. Respecter aussi **>= 2 semaines apres G-CSF** (rebond medullaire diffus) et **~3 mois apres radiotherapie** [25,26].\n\n**Deauville ou delta-SUVmax en interim DLBCL ?** Le **delta-SUVmax** (interim positif si reduction < 66 % vs baseline, PETAL) discrimine mieux que le Deauville visuel en interim, en reduisant les faux positifs inflammatoires ; le Deauville reste la reference operationnelle et l'outil de l'EOT [14,19].\n\n**Quelles histologies sont peu/non avides au FDG ?** Essentiellement la LLC / lymphome lymphocytique a petites cellules, le lymphome lymphoplasmocytaire (Waldenstrom), le mycosis fongoide et certains lymphomes de la zone marginale -> TEP peu contributive, TDM preferee [2,8].\n\n*(Quiz interactif (E23) et fiche de revision telechargeable (E24) : fonctionnalites de la plateforme a activer.)*",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - Reliquat FDG-avide a l'EOT en DLBCL",
+              "text": "Une masse residuelle cotee DS 4-5 a la fin du traitement ne prouve pas la maladie active : l'EOT-PET en DLBCL a une **VPP modeste** (faux positifs inflammatoires frequents), pour une VPN ~80 %. **Biopsier** avant toute decision de rattrapage [14,27]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - Rebond medullaire et thymique post-traitement",
+              "text": "Une captation medullaire **diffuse** post-chimiotherapie ou post-G-CSF, et une fixation mediastinale anterieure en V (**rebond thymique**, sujet jeune), sont **benignes** et ne doivent pas etre lues comme une atteinte/rechute. Respecter >= 2 semaines apres un facteur de croissance [25,26]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - DS 3 selon la strategie",
+              "text": "Le DS 3 est une CMR dans Lugano, mais son interpretation se module selon l'essai : dans les schemas de desescalade (type RATHL), un DS 1-3 est une reponse adequate ; dans certains protocoles d'escalade plus prudents, le DS 3 peut etre suivi de pres. Toujours rapporter le score chiffre, pas seulement positif/negatif [2,13]."
+            }
+          ]
+        },
+        {
+          "title": "E25 - References & liens sortants types",
+          "text": "**Sources & References** (datees, citees [n] dans le corps de l'article) : **EANM tumour imaging v2.0** (Boellaard et al., Eur J Nucl Med Mol Imaging 2015) [1] ; Cheson & Barrington - revue de la classification de **Lugano** et role de la TEP-TDM [2] ; **RATHL** - Johnson et al., therapie adaptee a l'interim PET dans le Hodgkin avance (N Engl J Med 2016) [3,4] ; carte de dose pediatrique EANM (2016) [5] ; Carter et al., dosimetrie 18F-FDG sur fantomes mesh ICRP (J Nucl Med 2021) [6] ; Yoo et al., valeur predictive de l'interim PET en DLBCL sous R-CHOP [7] ; revue synthese et CQ du 18F-FDG (Yu, 2006) [8] ; IAEA - production du 18F-FDG, chimie de synthese [9] ; **IAEA-TECDOC-1856** - controle qualite des radiopharmaceutiques [10] ; SNMMI/EANM - standard pediatrique 18F-FDG PET/CT en oncologie (J Nucl Med 2021) [11] ; El-Galaly et al., TEP-TDM en alternative a la BOM dans le Hodgkin [12] ; Mesguich et al., un interim PET negatif n'evite pas l'EOT-PET (Br J Haematol 2016) [13] ; Sun et al., interim PET en DLBCL - Deauville 5-PS vs delta-SUVmax (BMC Cancer 2024) [14] ; Van Heertum et al., criteres Lugano 2014 - approche operationnelle pour essais cliniques [15] ; **CNP-MN/SFMN** - recommandations TEP en cancerologie (Bull Cancer 2018) [16] ; suivi de l'essai **GHSG HD16** (Leukemia 2023) [17] ; **RAPID** - Radford et al., therapie dirigee par TEP dans le Hodgkin precoce (N Engl J Med 2015) [18] ; **PETAL** - interim PET en DLBCL, methode delta-SUVmax vs Deauville (Blood) [19] ; **Barrington** et al., role de l'imagerie dans le staging et la reponse du lymphome - ICML Imaging Working Group (J Clin Oncol 2014) [20] ; consensus technique **PRoLoG** (J Nucl Med 2023) [21] ; **Cheson** et al., recommandations Lugano (J Clin Oncol 2014) [22,29] ; **ICRP Publication 128** (Mattsson et al., 2015) [23] ; modele compartimental revise de biocinetique/dosimetrie du 18F-FDG [24] ; imagerie du lymphome au FDG - variantes, pieges et artefacts [25] ; Oliveira et al., influence du G-CSF sur la biodistribution du FDG (EJNMMI Res 2019) [26] ; **Tokola** et al., faux positifs frequents de l'interim et de l'EOT-PET en DLBCL - biopsie necessaire (Cancer Med 2021) [27] ; detection et valeur pronostique de l'atteinte medullaire initiale en DLBCL - TEP vs BOM [28] ; EANM tumour imaging v1.0 (Boellaard, 2010) [30].\n\n**Carte de liens (reseau de l'article)** - *Traceur* : 18F-FDG. *Maladies* : lymphome de Hodgkin, lymphome B diffus a grandes cellules (DLBCL), lymphome folliculaire, lymphome B mediastinal primitif, lymphome du manteau. *Examens lies* : TDM (histologies peu avides), IRM de diffusion (alternative sans irradiation, pediatrie), biopsie ostemedullaire (BOM, supplantee au staging). *Scores* : score de Deauville (5-PS), classification de Lugano 2014, methode delta-SUVmax. *Derniere mise a jour : juin 2026 - version de travail (profil medecin nucleaire).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Actualisation des recommandations",
+              "text": "Le cadre normatif de reference reste la **classification de Lugano 2014** (Cheson [22] et companion imagerie Barrington [20]), dont la mise en oeuvre technique est precisee par le consensus **PRoLoG (J Nucl Med 2023)** [21]. Les aspects techniques/preparation suivent l'**EANM tumour imaging v2.0 (2015)** [1] et les recommandations CNP-MN/SFMN [16]."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
