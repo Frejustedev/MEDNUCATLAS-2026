@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections A1, B7, B9, E21, identityCard, quiz Q3 — 'photopic γ 173 et 247 keV' du 111In",
+    "problem": "Le contenu cite systématiquement les photopics du 111In à 173 et 247 keV. La guideline EANM 2018 (référentiel pivot, PMC6097781) précise exactement 173 et 245 keV (±10%). La valeur 247 keV circule largement dans la littérature secondaire (StatPearls), donc l'écart n'a aucune conséquence clinique ni dosimétrique, mais ne correspond pas à la valeur exacte de la source primaire citée.",
+    "fix": "Harmoniser sur 173 et 245 keV pour coller à l'EANM 2018, ou mentionner '~245–247 keV' ; au minimum être cohérent avec le référentiel cité."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A1 vs D15/B7/E21/E22 — rapport de dose 111In/99mTc",
+    "problem": "Incohérence interne : A1 indique une dose 111In '~50× supérieure' par MBq, tandis que D15, B7, E21 et E22 indiquent '~54×' (et la valeur exacte 0,59/0,011 = 53,6 ≈ 54×). Pas d'erreur factuelle de fond, simple incohérence rédactionnelle.",
+    "fix": "Uniformiser à '~54×' dans toutes les sections (valeur calculée à partir de 0,59 vs 0,011 mSv/MBq)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E21 (points clés) — dosimétrie 99mTc-HMPAO '~0,011–0,017 mSv/MBq'",
+    "problem": "E21 donne une fourchette 0,011–0,017 mSv/MBq alors que le reste de la fiche (A1, B7, D15, stats, identityCard) s'engage uniquement sur 0,011 mSv/MBq. Les deux valeurs existent dans la littérature (ICRP/étude monocytes 0,011 ; certaines séries 0,017), mais la présentation est légèrement incohérente.",
+    "fix": "Harmoniser sur la valeur retenue par la fiche (0,011 mSv/MBq, cohérente avec ICRP 128/EANM) ou expliciter dans toutes les sections que des sources donnent 0,011–0,017."
+  },
+  {
+    "severity": "major",
+    "where": "medecin_nuc.sources (tableau JSON des sources)",
+    "problem": "Le tableau `sources` du JSON ne contient que 25 entrees (la derniere est Grahnquist 2003 = [25]). La source [26] (Habib G, et al. 2015 ESC Guidelines for infective endocarditis, Eur Heart J 2015;36:3075-3128) est ABSENTE du tableau, alors que le marqueur [26] est cite plusieurs fois dans le corps (D17 '[1,26]', D18 'ESC endocardite 2015 [26]', E20 'ESC 2015', E22, E25 'ESC 2015 [26]'). Un appel de citation pointe donc vers une source non listee dans l'article. NB : ce n'est PAS une fabrication — la reference [26] est reelle et verifiee (DOI 10.1093/eurheartj/ehv319, academic.oup.com/eurheartj/article/36/44/3075/2293384) ; c'est une incoherence de liste, pas un faux.",
+    "fix": "Ajouter l'objet source [26] (Habib 2015 ESC, url https://academic.oup.com/eurheartj/article/36/44/3075/2293384, verified:true) dans le tableau `sources` pour que la 26e citation ait sa fiche correspondante."
+  },
+  {
+    "severity": "minor",
+    "where": "Cles de sections (sections[].title)",
+    "problem": "La numerotation des sections saute de 'E22 - FAQ & pieges d'examen' directement a 'E25 - References & liens' : il n'y a pas de E23 ni E24. La sequence A1-A6, B7-B10, C11-C14, D15-D19, E20-E22, E25 presente donc un trou de numerotation en fin d'article.",
+    "fix": "Soit renumeroter la section References en E23, soit ajouter/confirmer l'existence des sections E23/E24 attendues par l'etalon (p. ex. Glossaire, Abreviations) pour combler le saut."
+  },
+  {
+    "severity": "minor",
+    "where": "D15 - Dosimetrie / E21 - Points cles (coherence interne dose 99mTc)",
+    "problem": "D15 et la carte d'identite donnent la dose efficace 99mTc-HMPAO-leuco a ~0,011 mSv/MBq, mais E21 (points cles) ecrit '~0,011-0,017 mSv/MBq'. La borne haute 0,017 n'apparait nulle part ailleurs et n'est pas sourcee dans le reste de l'article, creant une legere incoherence de valeur entre sections.",
+    "fix": "Harmoniser : conserver 0,011 mSv/MBq (valeur CIPR 128 / EANM citee partout ailleurs) dans E21, ou sourcer explicitement la fourchette 0,011-0,017 si elle provient d'une reference precise."
+  }
+]
