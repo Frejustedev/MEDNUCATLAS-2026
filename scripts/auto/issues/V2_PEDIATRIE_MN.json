@@ -1,0 +1,62 @@
+[
+  {
+    "severity": "major",
+    "where": "identityCard — entrée « Activité min. DMSA » : value = « 18,5 MBq (1,85 MBq/kg si <10 kg) »",
+    "problem": "Formulation ambiguë/erronée du seuil pondéral. Selon les NACG (Recherche 1 §3.2 et Recherche 2 §2), le 99mTc-DMSA = 1,85 MBq/kg AVEC un minimum de 18,5 MBq, ce minimum s'appliquant en pratique chez l'enfant < 10 kg. La carte la formule comme « 1,85 MBq/kg, min 18,5 MBq ». Telle qu'écrite, l'étiquette laisse entendre que 1,85 MBq/kg ne vaut QUE si <10 kg, ce qui est faux : le 1,85 MBq/kg est la dose pondérale générale, et 18,5 MBq est le plancher (atteint surtout sous ~10 kg). Risque de sous-dosage de l'enfant >10 kg si mal lu.",
+    "fix": "Reformuler : « 99mTc-DMSA = 1,85 MBq/kg ; activité minimale 18,5 MBq (plancher atteint typiquement <10 kg) ». Ne pas conditionner le 1,85 MBq/kg au poids <10 kg."
+  },
+  {
+    "severity": "major",
+    "where": "Section B7 (texte (d)) — « le 99mTc-DMSA, à émission de 140 keV, autorise un collimateur basse énergie haute résolution standard »",
+    "problem": "Imprécision : c'est le 99mTc (technétium-99m) qui émet à 140 keV, pas le « DMSA » (le DMSA est la molécule vectrice non radioactive). Formulation prêtant à confusion sur la nature de l'émetteur. La valeur 140 keV pour le 99mTc est correcte (cf. Recherche 1 §3.3), mais l'attribution au DMSA est physiquement incorrecte.",
+    "fix": "Écrire « le 99mTc (émission gamma 140 keV) du 99mTc-DMSA autorise un collimateur basse énergie haute résolution (LEHR) ». Le radionucléide émet, pas le ligand."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz — question sur le collimateur 123I/mIBG : réponse « Moyenne énergie (MEGP) souvent préféré » avec explication « le 123I émet aussi des photons de haute énergie responsables de pénétration septale »",
+    "problem": "Affirmation cliniquement défendable (le 123I a une raie de haute énergie ~529 keV minoritaire et MEGP réduit la pénétration septale) MAIS absente des faits de référence (étalon) : ni Recherche 1 ni Recherche 2 ne traitent du choix de collimateur 123I. Ajout non sourcé par rapport au matériel fourni ; par ailleurs le LEHR reste un standard très répandu pour le 123I, donc présenter MEGP comme la seule bonne réponse est discutable.",
+    "fix": "Soit sourcer explicitement (guideline EANM mIBG), soit nuancer (« LEHR couramment utilisé ; MEGP préféré par certains pour limiter la pénétration septale liée aux photons de haute énergie du 123I »). Ne pas présenter comme un fait univoque non sourcé."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B8 / E16 FAQ — délai crème anesthésiante « ~1 h avant la ponction » et glycémie/seuils FDG",
+    "problem": "Vérification : le délai crème lidocaïne/prilocaïne ~1 h (Recherche 1 §4) est correct ; glycémie cible <140 mg/dL (7,8 mmol/L) et report >200 mg/dL (11,1 mmol/L), jeûne 4–6 h, captation 60 min (Recherche 2 §6.1) — tous corrects. Aucune erreur de valeur. Seule réserve mineure : la conversion 200 mg/dL = 11,1 mmol/L et 140 mg/dL = 7,8 mmol/L est exacte ; RAS.",
+    "fix": "Aucune correction nécessaire sur ces valeurs ; conservé pour traçabilité de la vérification."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D13 + tableau allaitement (99mTc-pertechnétate/MAA 12 h ; autres 99mTc 4 h ; 131I-NaI arrêt définitif)",
+    "problem": "Valeurs cohérentes avec Recherche 1 §2 (dérivées d'ICRP 128/LactMed). Toutefois l'étalon lui-même marque ces délais comme « à recouper sur la source primaire (Leide-Svegborn 2016) avant publication » — donc à considérer comme indicatifs et non opposables tels quels. Le contenu les présente sans cette réserve.",
+    "fix": "Ajouter une mention que les délais d'interruption d'allaitement sont indicatifs (dérivés ICRP 128/EANM) et à confirmer selon le radiopharmaceutique exact et la source primaire (Leide-Svegborn et al., EJNMMI 2016)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A3 / D12 / E16 — surrisque carcinogène « ×2 enfant 10 ans vs adulte 40 ans, ×3 nouveau-né »",
+    "problem": "Cohérent avec Recherche 2 (NCI/PMC5129267). Mais l'identityCard indique « ×2 à 10 ans, ×3 nouveau-né vs adulte » et le texte A1/A3 mentionne aussi « ×2 à 3 vs adulte » (BEIR VII). Les deux formulations coexistent (×2 vs adulte de 40 ans selon NCI ; ×2–3 selon BEIR VII) ; ce n'est pas contradictoire mais le mélange des deux référentiels sans préciser l'âge adulte de comparaison (40 ans vs 70 ans) peut prêter à confusion. Pas d'erreur factuelle.",
+    "fix": "Harmoniser : préciser systématiquement l'âge de l'adulte de référence (ex. « vs adulte de 40 ans » pour le facteur NCI ×2) pour éviter l'ambiguïté entre les deux sources."
+  },
+  {
+    "severity": "major",
+    "where": "Sections A3 (infoBox 'Point expert') and E16 (FAQ parents)",
+    "problem": "Citation hors-liste fermee : le texte cite '[tab. cohorte, PMC8720959]' et '[33]' pour l'etude de cohorte sur le risque neoplasique. PMC8720959 ('Pediatric Nuclear Medicine Examinations and Subsequent Risk of Neoplasm', Front Med 2021) est une reference REELLE et verifiee, mais elle n'apparait PAS dans la liste fermee [1-51]. C'est une citation parasite hors du systeme numerote, ce qui rompt la regle 'references numerotees [n] renvoyant a la liste fermee [1..51]' affichee en E17. En A3 figurent aussi des marqueurs vides '[tab. cohorte, PMC8720959]'.",
+    "fix": "Soit ajouter PMC8720959 comme source [52] (mais cela depasserait 51), soit remplacer ce renvoi par une source deja listee (ex. rattacher le propos a [33] seul) et supprimer le tag 'PMC8720959' du corps. Nettoyer aussi les pseudo-marqueurs '[pas de surrisque detectable robuste]' et '[pas de chiffre cite ici]' en D12 qui ressemblent a des notes de redaction non effacees."
+  },
+  {
+    "severity": "major",
+    "where": "Sections B5(d/note), B6(e), D14(note), E16 (FAQ cliniciens), encadres 'Piege' A4 et B6 — attribution a la source [30]",
+    "problem": "L'affirmation repetee 'activite minimale FDG corps abaissee de 70 MBq a 26 MBq (2D) / 14 MBq (3D, cerveau)' est attribuee a [30] (PMC9016049, 'The effect of modern PET technology... on the EANM paediatric dosage card', EJNMMI 2021/2022). Verification de la source : ce papier ne contient PAS ce chiffre 70->26/14 ; il propose une NOUVELLE classification (ex. baseline 10,7 MBq, min 10 MBq, reduction de 41,2%). Le 70->26 provient en realite de la revision de la carte EANM 5.7.2016 elle-meme [24], pas de [30]. Mauvaise attribution de fait a une source.",
+    "fix": "Reattribuer le chiffre 70->26/14 MBq a la carte EANM v5.7.2016 [24] (et/ou [21]) plutot qu'a [30]. Reserver [30] aux affirmations sur l'impact des PET modernes (TOF/numerique/LAFOV) qu'il documente effectivement."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections C10, C11, E15 — scores Curie/SIOPEN attribues a [38,39]",
+    "problem": "Les chiffres de survie 'Curie < 2 : SSE 5 ans 79% vs 33%' et 'SIOPEN < 4 : 70% vs 17%' ne correspondent pas exactement aux donnees verifiees de [38] (Yanik et al., J Nucl Med 2018;59:502), qui rapporte pour la cohorte SIOPEN/HR-NBL1 une EFS 5 ans de 39,2% (CS<=2) vs 16,4% (CS>2). Les valeurs citees (notamment 79% vs 33%) ne se retrouvent pas telles quelles dans la source ; risque de chiffre approximatif ou melange de cohortes (COG A3973 vs SIOPEN).",
+    "fix": "Verifier les paires de chiffres dans le texte integral de [38] et [39] et aligner exactement (ou preciser la cohorte source de chaque pourcentage). Si 79%/33% provient d'une autre publication, l'ajouter comme source ou corriger les valeurs."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard — entree 'Blocage thyroidien : KI 100 mg/j adulte, 2 mg/kg enfant'",
+    "problem": "Cette posologie precise de KI (100 mg/j adulte, 2 mg/kg enfant) est presentee comme un fait clinique mais n'est rattachee a aucune source [n] dans la carte d'identite (et le quiz Q17 l'attribue a [4] sans que ce chiffre ait pu etre confirme dans la verification). Donnee posologique non sourcee dans l'etalon.",
+    "fix": "Sourcer explicitement la posologie KI (idealement [4] EANM 2023 ou le guide mIBG) ou retirer le chiffre precis de la carte d'identite s'il n'est pas etabli par une source de la liste."
+  }
+]
