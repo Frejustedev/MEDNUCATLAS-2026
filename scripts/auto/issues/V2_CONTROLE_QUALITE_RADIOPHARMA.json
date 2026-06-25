@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "Section D12 - tableau de dosimétrie patient (ligne ⁹⁹ᵐTc-MIBI) ; valeur reprise de la fiche étalon Recherche 1",
+    "problem": "Le coefficient de dose efficace du ⁹⁹ᵐTc-MIBI (sestamibi) est donné à « ~0,0062 mSv/MBq ». C'est FAUX : la valeur ICRP 128 / catalogue est d'environ 0,0085 mSv/MBq (0,0090 mSv/MBq au repos, 0,0079 mSv/MBq à l'effort). La valeur 0,0062 sous-estime la dose d'environ 30-40 %. De plus la ligne est INTERNE­MENT INCOHÉRENTE : 0,0062 mSv/MBq × 740-1110 MBq = 4,6-6,9 mSv, ce qui contredit la fourchette « 6,5-10 mSv » affichée dans la même ligne (cette fourchette implique en réalité ~0,0085-0,009 mSv/MBq, soit la bonne valeur). Le coefficient cité est donc à la fois erroné par rapport à l'ICRP 128 et discordant avec la dose qu'il prétend produire.",
+    "fix": "Remplacer « ~0,0062 mSv/MBq » par « ~0,0085 mSv/MBq (repos 0,0090 ; effort 0,0079) » conformément à l'ICRP 128 ; la dose résultante 6,5-10 mSv pour 740-1110 MBq devient alors cohérente. Vérifier aussi la mention de la même valeur 0,0062 dans la fiche étalon Recherche 1 §1 (Dosimétrie patient) et la corriger pour ne pas propager l'erreur."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A2 / identityCard et table radionucléides : T½ du ¹⁸F donné tantôt « 109,7 min », tantôt « 109,8 min » (Recherche 1 §1)",
+    "problem": "Le contenu oscille entre 109,7 min (A2, table) et 109,8 min (fiche Recherche 1). Ce n'est pas une erreur factuelle (valeur réelle 109,734 min, les deux arrondis sont défendables) mais une incohérence interne mineure entre sections d'un même corpus.",
+    "fix": "Harmoniser sur une seule valeur, de préférence 109,7 min (arrondi correct de 109,734 min), partout dans l'article et la fiche étalon."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A1 stat / D10 stat : part mondiale du ⁹⁹ᵐTc donnée « ≈ 80 % » (texte) et « ~80 % » (D10) mais aussi « ≈ 80 % » vs formulations « environ 80 % »",
+    "problem": "Cohérence acceptable (~80 % est la valeur consensuelle), mais une stat D10 indique « ~80 % » tandis que le texte principal dit « ≈ 80 % » et l'introduction parle parfois de « ~80 % des actes de scintigraphie » (sous-ensemble) vs « ~80 % de tous les actes de médecine nucléaire » (ensemble plus large). La nuance scintigraphie/TEMP vs médecine nucléaire globale (qui inclut la TEP) n'est pas tenue de façon constante.",
+    "fix": "Préciser uniformément « ~80 % des actes d'imagerie monophotonique / scintigraphie (TEMP) » plutôt que « de tous les actes de médecine nucléaire », la TEP au ¹⁸F représentant désormais une part non négligeable des actes."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections B4, B5, C7, C8, C9, E13, E14, E15, E16 — champ \"title\"",
+    "problem": "Plusieurs titres de section comportent un préfixe dupliqué (ex. \"B4 - B4 - Réaliser le marquage...\", \"C7 - C7 - Mesurer la pureté...\", \"E13 - E13 - Cas pratiques...\"). Défaut cosmétique d'affichage, sans rapport avec la fabrication ou la fidélité des sources.",
+    "fix": "Supprimer le préfixe en double pour ne garder qu'un seul \"Bn - \" / \"Cn - \" / \"En - \" en tête de chaque titre."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D12, infoBox/texte — orthographe",
+    "problem": "Coquille \"pertechnédate libre\" au lieu de \"pertechnétate libre\" (le terme correct est utilisé partout ailleurs dans le document).",
+    "fix": "Corriger \"pertechnédate\" en \"pertechnétate\"."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D11, tableau Ph. Eur. vs USP — claquage 99Mo",
+    "problem": "Le texte affirme une limite Ph. Eur. de claquage 99Mo \"≤ 0,1 %\" présentée comme \"équivalent ~0,015 %\" pour la valeur USP (0,15 kBq/MBq). L'équivalence chiffrée prête à confusion : 0,15 kBq/MBq = 0,015 % exprimé en fraction d'activité, mais la comparaison directe avec un seuil Ph. Eur. \"0,1 %\" mélange deux modes d'expression (au moment de l'élution vs au moment de l'administration). Ce n'est pas une fabrication de source mais une approximation pédagogique à surveiller.",
+    "fix": "Préciser le moment de mesure (élution vs administration) et homogénéiser l'unité avant de comparer Ph. Eur. et USP, ou citer la valeur Ph. Eur. exacte de la monographie sodium pertechnétate (94mTc/99Mo) sans conversion implicite."
+  }
+]

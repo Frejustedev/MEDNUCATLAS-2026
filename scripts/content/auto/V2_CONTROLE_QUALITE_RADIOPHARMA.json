@@ -1,0 +1,1484 @@
+{
+  "id": "V2_CONTROLE_QUALITE_RADIOPHARMA",
+  "cat": "radiopharmacie",
+  "catLabel": "Radiopharmacie",
+  "title": "Marquage et contrôle qualité des radiopharmaceutiques",
+  "difficulty": "avancé",
+  "tags": [
+    "radiopharmacie",
+    "trousses froides",
+    "marquage",
+    "pureté radiochimique",
+    "chromatographie ITLC",
+    "contrôle qualité",
+    "générateur 99Mo/99mTc",
+    "chlorure stanneux",
+    "endotoxines bactériennes",
+    "BPP ANSM",
+    "cGRPP EANM",
+    "Pharmacopée Européenne",
+    "claquage du molybdène",
+    "pureté radionucléidique",
+    "stérilité"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Technetium-99m generator — Wikipedia (production par fission du 99Mo, T½ 66 h / 6 h, 140 keV, colonne d'alumine)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m_generator"
+    },
+    {
+      "title": "[2] Technetium-99m — Wikipedia (transition isomérique, ~89% par émission gamma, 140,5 keV / 142,7 keV)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m"
+    },
+    {
+      "title": "[3] Fluorodeoxyglucose (18F) — Wikipedia (¹⁸F T½ ~110 min, réaction ¹⁸O(p,n)¹⁸F, synthèse, dosimétrie FDG)",
+      "url": "https://en.wikipedia.org/wiki/Fluorodeoxyglucose_(18F)"
+    },
+    {
+      "title": "[4] Fluorine-18 — Wikipedia (T½ 109,7 min, β⁺ 96,7% / capture électronique 3,3%)",
+      "url": "https://en.wikipedia.org/wiki/Fluorine-18"
+    },
+    {
+      "title": "[5] Iodine-131 — Wikipedia (T½ 8,02 j, β⁻ 606 keV, γ 364 keV ~81%)",
+      "url": "https://en.wikipedia.org/wiki/Iodine-131"
+    },
+    {
+      "title": "[6] Iodine-131 — an overview, ScienceDirect Topics (béta-émetteur, applications thérapeutiques/diagnostiques)",
+      "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/iodine-131"
+    },
+    {
+      "title": "[7] Cyclotron Production of Fluorine-18 for PET — Diagnostic Radiology Physics (réaction ¹⁸O(p,n)¹⁸F, cible [¹⁸O]H₂O)",
+      "url": "https://www.diagnosticradphys.com/physicspulse/nuclear-medical-physics/cyclotron-f18-production/"
+    },
+    {
+      "title": "[8] Radiation dosimetry of 18F-FDG PET/CT: incorporating exam-specific parameters in dose estimates — Quinn et al., BMC Medical Imaging 2016;16:41",
+      "url": "https://link.springer.com/article/10.1186/s12880-016-0143-y"
+    },
+    {
+      "title": "[9] Comprehensive Quality Control of the ITG 68Ge/68Ga Generator and Synthesis of 68Ga-DOTATOC and 68Ga-PSMA-HBED-CC for Clinical Imaging — JNM 2016;57(9):1402",
+      "url": "https://jnm.snmjournals.org/content/57/9/1402"
+    },
+    {
+      "title": "[10] Gillings N. et al. — Guideline on current good radiopharmacy practice (cGRPP) for the small-scale preparation of radiopharmaceuticals, EANM Radiopharmacy Committee, EJNMMI Radiopharm Chem 2021;6:8",
+      "url": "https://link.springer.com/article/10.1186/s41181-021-00123-2"
+    },
+    {
+      "title": "[11] EANM guideline on quality risk management for radiopharmaceuticals — Eur J Nucl Med Mol Imaging 2022;49:3353 (PMC9308578)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9308578/"
+    },
+    {
+      "title": "[12] Quality Control in the Production of Radiopharmaceuticals — IAEA-TECDOC-1856 (2018) (limites Mo-99, Al, PRC, endotoxines)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-1856web.pdf"
+    },
+    {
+      "title": "[13] Overview of radiochemical purity control for 99mTc radiopharmaceuticals commonly used in nuclear medicine — Daci et al., Eur Phys J Plus 2025;140:971 (PRC DMSA/PYP/MAG3/DTPA >95%, HMPAO 89,5%)",
+      "url": "https://link.springer.com/article/10.1140/epjp/s13360-025-06889-7"
+    },
+    {
+      "title": "[14] Tc-99m radiopharmaceuticals and in-house chromatographic methods — European Pharmaceutical Review (critère PRC, chromatographie)",
+      "url": "https://www.europeanpharmaceuticalreview.com/article/103988/tc-99m-radiopharmaceuticals-and-in-house-chromatographic-methods/"
+    },
+    {
+      "title": "[15] Quality control on radiochemical purity in Technetium-99m radiopharmaceuticals labelling: three years of experience on 2280 procedures — PMC6166199",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166199/"
+    },
+    {
+      "title": "[16] Ceretec (technetium Tc-99m exametazime) injection label — FDA (HMPAO, SnCl₂, NDA 019829)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/019829s026lbl.pdf"
+    },
+    {
+      "title": "[17] Technetium-99m MAG3: Labeling Conditions and Quality Control — Nosco et al., J Nucl Med Technol 1993;21(2):69 (PRC >90%)",
+      "url": "https://tech.snmjournals.org/content/jnmt/21/2/69.full.pdf"
+    },
+    {
+      "title": "[18] A new two-strip TLC method for the quality control of technetium-99m mercaptoacetyl-triglycine (99mTc-MAG3) — EJNMMI Radiopharm Chem 2018 (PMC5852202)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5852202/"
+    },
+    {
+      "title": "[19] Quality Assessment of Tc-99m MDP Radiopharmaceutical Prepared Using Different Cold Kit Fractionation Methods — PMC9037872 (PRC ≥95%)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9037872/"
+    },
+    {
+      "title": "[20] Kit for the Preparation of Technetium Tc 99m Sestamibi — DailyMed (imagerie myocardique/mammaire)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e545ac6a-83dc-485a-8bb4-c0b9d8f3d144"
+    },
+    {
+      "title": "[21] Improved quality control of [177Lu]Lu-PSMA I&T — Kraihammer et al., EJNMMI Radiopharm Chem 2023;8:7 (HPLC, radiolyse, acide ascorbique)",
+      "url": "https://ejnmmipharmchem.springeropen.com/articles/10.1186/s41181-023-00191-6"
+    },
+    {
+      "title": "[22] Quality control of [177Lu]Lu-PSMA preparations using HPLC: effect of sample composition and ligand on recovery — Aalbersberg et al., EJNMMI Radiopharm Chem 2022",
+      "url": "https://ejnmmipharmchem.springeropen.com/articles/10.1186/s41181-022-00178-9"
+    },
+    {
+      "title": "[23] Bacterial Endotoxin Test and Sterility Test (Vol. 14 Lesson 5) — UNM Nuclear Pharmacy CE (LAL, limites endotoxines)",
+      "url": "https://pharmacyce.unm.edu/nuclear_program/freelessonfiles/vol14lesson5.pdf"
+    },
+    {
+      "title": "[24] USP General Chapter <85> Bacterial Endotoxins Test (limite 175/V)",
+      "url": "http://www.uspbpep.com/usp29/v29240/usp29nf24s0_c85.html"
+    },
+    {
+      "title": "[25] FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 — Boellaard et al. (PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[26] Dosage Card — EANM (carte de dosage pédiatrique, mise à jour août 2016)",
+      "url": "https://www.eanm.org/initiatives/dosage-card/"
+    },
+    {
+      "title": "[27] Paediatric radiopharmaceutical administration: harmonization of the 2007 EANM paediatric dosage card and the 2010 North American consensus guidelines — Lassmann & Treves (hébergé par SNMMI)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/EANM%20Pediatric%20Harmonization%20Guideline.pdf"
+    },
+    {
+      "title": "[28] Treves ST et al. — 2016 Update of the North American Consensus Guidelines for Pediatric Administered Radiopharmaceutical Activities, J Nucl Med 2016;57(12):15N",
+      "url": "https://www.researchgate.net/publication/311699293_2016_Update_of_the_North_American_Consensus_Guidelines_for_Pediatric_Administered_Radiopharmaceutical_Activities"
+    },
+    {
+      "title": "[29] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals: a Compendium of Current Information Related to Frequently Used Substances — Mattsson et al., Ann ICRP 2015;44(2S)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[30] FDA approves lutetium Lu 177 dotatate for treatment of GEP-NETS — FDA (Lutathera, AMM 26/01/2018, NETTER-1)",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lutetium-lu-177-dotatate-treatment-gep-nets"
+    },
+    {
+      "title": "[31] Bonnes Pratiques de Préparation, édition 2023 (ANSM) — Ligne directrice 4 : préparations de médicaments radiopharmaceutiques",
+      "url": "https://ansm.sante.fr/uploads/2023/08/02/20230802-bonnes-pratiques-de-preparation-08-2023.pdf"
+    },
+    {
+      "title": "[32] Radiopharmacie : des bonnes pratiques professionnelles plus détaillées (LD4 BPP 2023 vs 2007) — RochePro",
+      "url": "https://rochepro.fr/pharmaciens/expertise-pui/toute-actualite/radiopharmacie-bonnes-pratiques-professionnelles-detaillees.html"
+    },
+    {
+      "title": "[33] Molybdenum-99 production pathways and the sorbents for 99Mo/99mTc generator systems using (n, γ) 99Mo: a review — Hasan & Prelas, Discover Applied Sciences (SN Appl Sci) 2020",
+      "url": "https://link.springer.com/article/10.1007/s42452-020-03524-1"
+    },
+    {
+      "title": "[34] Ultra-Technekow V4 (Technetium Tc 99m Generator) — DailyMed/Curium (claquage Mo-99 ≤0,15 kBq/MBq, aluminium ≤10 µg/mL)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=98947d99-5be5-461e-ad36-7425d3646389"
+    },
+    {
+      "title": "[35] NRC Information Notice 2008-22 — Molybdenum Breakthrough in Tc-99m Generators (limite 0,15 kBq/MBq, 10 CFR 35.204)",
+      "url": "https://www.nrc.gov/docs/ML0824/ML082480153.pdf"
+    },
+    {
+      "title": "[36] Quality Control in the Radiopharmacy — Ramberg-Laskaris, J Nucl Med Technol 1984;12(1):33",
+      "url": "https://tech.snmjournals.org/content/jnmt/12/1/33.full.pdf"
+    },
+    {
+      "title": "[37] Quality control of 99Mo/99Tcm generators: results of a survey of the Radiopharmacy Working Group of the AIMN — Nucl Med Commun 1999;20(11):1077 (PMID 10572919)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10572919/"
+    },
+    {
+      "title": "[38] Technetium-99m: A Cornerstone in Modern Nuclear Medicine (T½ 6 h, 140 keV) — OpenMedScience",
+      "url": "https://openmedscience.com/technetium-99m-a-cornerstone-in-modern-nuclear-medicine/"
+    },
+    {
+      "title": "[39] Molybdenum-99/Technetium-99m Production and Use — NCBI Bookshelf NBK215133 (Medical Isotope Production without HEU, 2009)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215133/"
+    },
+    {
+      "title": "[40] Fludeoxyglucose F 18 Injection label — FDA NDA 21-870 (T½ ~110 min, 511 keV, β⁺ 96,7% / CE 3,3%)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2005/021870lbl.pdf"
+    },
+    {
+      "title": "[41] Review of 18F-FDG Synthesis and Quality Control — Yu, Biomed Imaging Interv J 2006 (PMC3097819) (Ph. Eur. RCP ≥95%, Kryptofix, pH)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3097819/"
+    },
+    {
+      "title": "[42] Guide for the elaboration of monographs on radiopharmaceutical preparations (2018) — EDQM (monographie générale 0125, endotoxines, stérilité)",
+      "url": "https://www.edqm.eu/documents/52006/66555/07-elaboration-monographs-radio-pharmaceutical-preparations-october-2018.pdf/50c9d3d8-ec14-10b9-40b7-ceedd94e3afb?t=1623146155879"
+    },
+    {
+      "title": "[43] Guideline on quality of radiopharmaceuticals (revision 2) — EMA (projet en consultation)",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/draft-guideline-quality-radiopharmaceuticals-revision-2_en.pdf"
+    },
+    {
+      "title": "[44] Quality control of [177Lu]Lu-PSMA preparations using HPLC (177mLu, RNP) — EJNMMI Radiopharm Chem 2022 (doublon technique, voir entrée Aalbersberg)",
+      "url": "https://ejnmmipharmchem.springeropen.com/articles/10.1186/s41181-022-00178-9"
+    },
+    {
+      "title": "[45] Miniaturized Radiochemical Purity Testing for 99mTc-HMPAO, 99mTc-HMDP, and 99mTc-Tetrofosmin — de la Fuente et al., J Nucl Med Technol 2017;45(3):236",
+      "url": "https://tech.snmjournals.org/content/45/3/236"
+    },
+    {
+      "title": "[46] The Effect of Selected Preparation Variables on the Radiochemical Purity of 99mTc-Sestamibi — Norenberg et al., J Nucl Med Technol 2005;33(1):34",
+      "url": "https://tech.snmjournals.org/content/33/1/34.long"
+    },
+    {
+      "title": "[47] Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy — Marshall et al., Toxics 2023;11(10):814",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814"
+    },
+    {
+      "title": "[48] Finger Doses for Staff Handling Radiopharmaceuticals in Nuclear Medicine — Pant et al., J Nucl Med Technol 2006;34(3):169",
+      "url": "https://tech.snmjournals.org/content/34/3/169"
+    },
+    {
+      "title": "[49] Effect of dosimeter's position on occupational radiation extremity dose measurement during 18F-FDG preparation for PET/CT — PMC4975735",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4975735/"
+    },
+    {
+      "title": "[50] Evaluation of Annual Staff Doses and Radiation Shielding Efficiencies of Thyroid Shield and Lead Apron during Preparation/Administration of 131I, 81Kr and 99mTc Radiopharmaceuticals — PMC8804593",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8804593/"
+    },
+    {
+      "title": "[51] SNMMI Procedure Standard/EANM Practice Guideline on Pediatric 18F-FDG PET/CT for Oncology 1.0 — J Nucl Med 2021;62(1):99 (PMC8679588)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8679588/"
+    },
+    {
+      "title": "[52] ANSM — Compte rendu CST : révision des bonnes pratiques de préparation (radiopharmacie), 2022",
+      "url": "https://ansm.sante.fr/uploads/2022/07/05/20220331-cr-cst-bonnes-pratiques-preparation.pdf"
+    },
+    {
+      "title": "[53] SNRPH — Le radiopharmacien dans les services de médecine nucléaire (2025)",
+      "url": "https://snrph.org/wp-content/uploads/2025/09/2025-09-19-SNRPH-radiopharmacien-dans-service-MN.pdf"
+    },
+    {
+      "title": "[54] SFMN — Radiothérapie interne vectorisée et théranostique en France : recommandations de bonnes pratiques, Médecine Nucléaire 2026",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0928125826002160"
+    },
+    {
+      "title": "[55] WHO/IAEA — Good manufacturing practices for in-house cold kits for radiopharmaceutical preparation (consultation publique QAS23.932)",
+      "url": "https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/current-projects/qas23_932_gmp_for_in-house_cold_kits_for_radioph_prep_public-consultation.pdf?sfvrsn=cfbff75b_1"
+    },
+    {
+      "title": "[56] Radionuclide Purity in Radiopharmacy (spectrométrie gamma, pureté radionucléidique) — Number Analytics",
+      "url": "https://www.numberanalytics.com/blog/radionuclide-purity-radiopharmacy-guide"
+    },
+    {
+      "title": "[57] How does a Tc-99m generator work? — Learn Radiology Physics (alumine, élution NaCl, désintégration Mo-99)",
+      "url": "https://learnradiologyphysics.com/how-does-a-tc-99m-generator-work/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "flask",
+        "label": "Définition",
+        "value": "Vecteur (cible) + radionucléide (signal/effet)"
+      },
+      {
+        "icon": "atom",
+        "label": "Radionucléide pivot",
+        "value": "⁹⁹ᵐTc ≈ 80 % des actes scintigraphiques [1,39]"
+      },
+      {
+        "icon": "zap",
+        "label": "Photon du ⁹⁹ᵐTc",
+        "value": "γ 140,5 keV (≈ 89 % des désintégrations) [2]"
+      },
+      {
+        "icon": "clock",
+        "label": "Période du ⁹⁹ᵐTc",
+        "value": "6,0 h (parent ⁹⁹Mo : 66 h) [1]"
+      },
+      {
+        "icon": "flask",
+        "label": "Réducteur des trousses",
+        "value": "Chlorure stanneux SnCl₂ (Sn²⁺) [16]"
+      },
+      {
+        "icon": "microscope",
+        "label": "Méthode CQ de routine",
+        "value": "Chromatographie ITLC-SG (PRC) [45]"
+      },
+      {
+        "icon": "target",
+        "label": "Critère PRC général",
+        "value": "≥ 95 % (HMPAO ≥ 80 %) [45]"
+      },
+      {
+        "icon": "radiation",
+        "label": "Claquage ⁹⁹Mo (USP)",
+        "value": "≤ 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc [34,35]"
+      },
+      {
+        "icon": "droplets",
+        "label": "Aluminium éluat (USP)",
+        "value": "≤ 10 µg/mL, dosage colorimétrique [34]"
+      },
+      {
+        "icon": "alert",
+        "label": "Endotoxines (LAL)",
+        "value": "≤ 175 UI/dose IV adulte (2,5 UI/kg) [24]"
+      },
+      {
+        "icon": "shield",
+        "label": "Préparation aseptique",
+        "value": "Poste grade A, fond grade C/D (cGRPP) [10]"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace ¹⁸F-FDG",
+        "value": "0,019 mSv/MBq (ICRP 128) [8,29]"
+      },
+      {
+        "icon": "stetho",
+        "label": "Cadre France",
+        "value": "BPP ANSM 2023, Ligne Directrice 4 [31]"
+      },
+      {
+        "icon": "list",
+        "label": "Référentiels CQ",
+        "value": "Ph. Eur. 0125, cGRPP EANM 2021, IAEA TE-1856 [10,12,42]"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-pertechnétate"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-MDP / HDP (os)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-MIBI (sestamibi)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-HMPAO (exametazime)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-MAG3"
+      },
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FDG"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁸Ga-DOTATOC / PSMA"
+      },
+      {
+        "type": "traceur",
+        "label": "¹²³I/¹³¹I-MIBG"
+      },
+      {
+        "type": "examen",
+        "label": "Générateur ⁹⁹Mo/⁹⁹ᵐTc"
+      },
+      {
+        "type": "examen",
+        "label": "TEP au ¹⁸F-FDG"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE (Lutathera)"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-PSMA-617 (Pluvicto)"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹³¹I (thyroïde)"
+      },
+      {
+        "type": "score",
+        "label": "Carte de dosage pédiatrique EANM"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel agent réducteur est présent dans la quasi-totalité des trousses froides pour le marquage au ⁹⁹ᵐTc ?",
+        "options": [
+          "Le chlorure ferrique (Fe³⁺)",
+          "Le chlorure stanneux (SnCl₂, Sn²⁺)",
+          "Le borohydrure de sodium",
+          "L'acide ascorbique"
+        ],
+        "answer": 1,
+        "explanation": "Le chlorure stanneux (Sn²⁺) réduit le Tc(+7) du pertechnétate en états d'oxydation inférieurs réactifs, permettant sa chélation par le vecteur [16]. Son oxydation est la cause principale d'un excès de pertechnétate libre.",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la limite de claquage du ⁹⁹Mo (« breakthrough ») dans l'éluat selon l'USP ?",
+        "options": [
+          "0,015 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc",
+          "0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc",
+          "1,5 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc",
+          "15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc"
+        ],
+        "answer": 1,
+        "explanation": "La limite USP est de 0,15 kBq ⁹⁹Mo par MBq de ⁹⁹ᵐTc (soit 0,15 µCi/mCi) au moment de l'administration, vérifiée à chaque élution [34,35].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le photon principal du ⁹⁹ᵐTc, idéal pour les gamma-caméras ?",
+        "options": [
+          "80 keV",
+          "140 keV",
+          "364 keV",
+          "511 keV"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹ᵐTc émet un photon γ de 140,5 keV dans environ 89 % de ses désintégrations, énergie optimale pour la détection par cristal NaI(Tl) [2].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel est le critère de pureté radiochimique acceptable pour le ⁹⁹ᵐTc-HMPAO (exametazime) ?",
+        "options": [
+          "≥ 50 %",
+          "≥ 80 %",
+          "≥ 95 %",
+          "≥ 99 %"
+        ],
+        "answer": 1,
+        "explanation": "Le HMPAO forme un complexe lipophile instable : sa PRC spécifiée est ≥ 80 %, plus basse que les autres trousses, et le produit doit être injecté dans les 30 min suivant la reconstitution [45].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelles sont les deux impuretés radiochimiques recherchées en chromatographie pour une trousse au ⁹⁹ᵐTc ?",
+        "options": [
+          "Aluminium et molybdène",
+          "Pertechnétate libre et technétium réduit-hydrolysé (colloïde)",
+          "Étain et iode libre",
+          "Endotoxines et particules"
+        ],
+        "answer": 1,
+        "explanation": "La CCM instantanée (ITLC) sépare le pertechnétate libre (TcO₄⁻, réduction incomplète) et le technétium réduit-hydrolysé colloïdal (TcO₂, excès de SnCl₂), du complexe marqué d'intérêt [45].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment le ⁹⁹Mo est-il majoritairement produit à l'échelle industrielle ?",
+        "options": [
+          "Par cyclotron via ¹⁰⁰Mo(p,2n)",
+          "Par fission de l'²³⁵U en réacteur nucléaire",
+          "Par générateur ⁶⁸Ge/⁶⁸Ga",
+          "Par activation neutronique du ⁹⁸Mo"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹Mo (période 66 h) est produit majoritairement par fission de l'²³⁵U en réacteur, puis fixé sur la colonne d'alumine du générateur d'où le ⁹⁹ᵐTc est élué [1,33,39].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la limite d'endotoxines bactériennes pour une dose IV adulte de radiopharmaceutique ?",
+        "options": [
+          "14 UI/dose",
+          "175 UI/dose",
+          "700 UI/dose",
+          "Aucune limite définie"
+        ],
+        "answer": 1,
+        "explanation": "La limite est de 2,5 UI/kg, soit environ 175 UI par dose pour un adulte de 70 kg ; elle est abaissée pour la voie intrathécale. Le test repose sur le lysat d'amœbocytes de limule (LAL) [23,24].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel composé du support solide fixe le ⁹⁹Mo dans le générateur, et avec quoi élue-t-on le ⁹⁹ᵐTc ?",
+        "options": [
+          "Résine échangeuse d'ions, élution à l'éthanol",
+          "Alumine (Al₂O₃), élution au NaCl 0,9 %",
+          "Charbon actif, élution à l'eau distillée",
+          "Gel de silice, élution au tampon citrate"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹Mo est fixé sur une colonne d'alumine ; le pertechnétate ⁹⁹ᵐTcO₄⁻ est élué au sérum physiologique stérile (NaCl 0,9 %), le ⁹⁹Mo restant fixé [57].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la limite d'aluminium dans l'éluat de pertechnétate selon l'USP ?",
+        "options": [
+          "≤ 1 µg/mL",
+          "≤ 10 µg/mL",
+          "≤ 100 µg/mL",
+          "≤ 1 mg/mL"
+        ],
+        "answer": 1,
+        "explanation": "La limite USP est de ≤ 10 µg/mL d'aluminium dans l'éluat, vérifiée par test colorimétrique sur bandelette ; un excès d'Al³⁺ peut altérer le marquage et la biodistribution [34].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Pour les radiopharmaceutiques thérapeutiques (¹⁷⁷Lu-PSMA, ¹⁷⁷Lu-DOTATATE), quelle méthode de CQ est la référence pour détecter la radiolyse ?",
+        "options": [
+          "La chromatographie sur couche mince seule",
+          "La HPLC avec détecteur de radioactivité",
+          "L'inspection visuelle",
+          "La mesure du pH"
+        ],
+        "answer": 1,
+        "explanation": "La HPLC radio est la méthode quantitative de choix car elle détecte les produits de radiolyse invisibles en CCM ; une PRC > 95 % est attendue, l'acide ascorbique servant de radioprotecteur [21,22].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Dans quel grade de salle propre s'effectuent les manipulations aseptiques selon le guide cGRPP de l'EANM ?",
+        "options": [
+          "Grade A (poste ou isolateur)",
+          "Grade B uniquement",
+          "Grade D au minimum",
+          "Aucune exigence d'environnement"
+        ],
+        "answer": 0,
+        "explanation": "Le cGRPP EANM 2021 impose un grade A pour les manipulations aseptiques (poste/isolateur), avec un environnement de fond de grade C (modules de synthèse) ou D (autour des isolateurs) [10].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle réaction nucléaire produit le ¹⁸F destiné au FDG sur un cyclotron ?",
+        "options": [
+          "¹⁹F(γ,n)¹⁸F",
+          "¹⁸O(p,n)¹⁸F",
+          "²⁰Ne(d,α)¹⁸F",
+          "¹⁶O(³He,p)¹⁸F"
+        ],
+        "answer": 1,
+        "explanation": "Le ¹⁸F est produit par bombardement protonique d'eau enrichie en ¹⁸O selon ¹⁸O(p,n)¹⁸F, fournissant un fluorure ¹⁸F⁻ sans entraîneur utilisé pour la substitution nucléophile de synthèse du FDG [3,7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel test spécifique de pureté chimique est exigé pour le ¹⁸F-FDG selon la Pharmacopée Européenne ?",
+        "options": [
+          "Dosage du chlorure stanneux résiduel",
+          "Recherche du Kryptofix 2.2.2 et des solvants résiduels",
+          "Mesure du claquage du ⁶⁸Ge",
+          "Dosage de l'aluminium"
+        ],
+        "answer": 1,
+        "explanation": "Le FDG nécessite la recherche de l'aminopolyéther Kryptofix 2.2.2 (spot test), le contrôle des solvants résiduels (acétonitrile) et un pH compris entre 4,5 et 8,5 [41].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le texte opposable en France pour la préparation des radiopharmaceutiques, et quelle ligne directrice les concerne ?",
+        "options": [
+          "BPF EudraLex, annexe 1",
+          "BPP ANSM 2023, Ligne Directrice 4",
+          "Pharmacopée Française, monographie 0125",
+          "Code de la santé publique, article R.1333"
+        ],
+        "answer": 1,
+        "explanation": "En France, les Bonnes Pratiques de Préparation (ANSM, édition 2023) régissent la radiopharmacie via leur Ligne Directrice 4, nettement plus détaillée que l'édition 2007 [31,32].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment réalise-t-on le contrôle de pureté radionucléidique d'un radionucléide comme le ¹⁸F ?",
+        "options": [
+          "Par chromatographie ITLC",
+          "Par spectrométrie γ sur détecteur germanium hyperpur (HPGe)",
+          "Par test LAL",
+          "Par mesure du pH"
+        ],
+        "answer": 1,
+        "explanation": "La pureté radionucléidique est évaluée par spectrométrie γ sur HPGe (identification par énergie et vérification de la période) ; pour le ¹⁸F-FDG, la RNP doit être ≥ 99,9 % [41,56].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel coefficient de dose efficace est retenu pour le ¹⁸F-FDG selon l'ICRP 128 ?",
+        "options": [
+          "0,0019 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,19 mSv/MBq",
+          "1,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "L'ICRP 128 retient 0,019 mSv/MBq pour le ¹⁸F-FDG ; à 555 MBq cela représente environ 10,6 mSv, l'organe critique étant la paroi vésicale [8,29].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel défaut de marquage se traduit par une fixation parasite de la thyroïde, de l'estomac et des glandes salivaires sur une scintigraphie ?",
+        "options": [
+          "Un excès de technétium réduit-hydrolysé",
+          "La présence de pertechnétate libre (réduction incomplète)",
+          "Un claquage excessif de ⁹⁹Mo",
+          "Une contamination par l'aluminium"
+        ],
+        "answer": 1,
+        "explanation": "Le pertechnétate libre (TcO₄⁻), issu d'une réduction incomplète par le SnCl₂, se comporte comme l'iodure : il se fixe sur la thyroïde, l'estomac et les glandes salivaires, dégradant l'image [45].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle particularité impose la libération d'un lot de radiopharmaceutique avant la fin du test de stérilité ?",
+        "options": [
+          "Le coût élevé du contrôle",
+          "La très courte période physique du radionucléide",
+          "L'absence de méthode validée",
+          "Une exigence réglementaire de rapidité"
+        ],
+        "answer": 1,
+        "explanation": "La courte période physique impose souvent une administration avant l'obtention du résultat de stérilité ; la sécurité repose donc sur la maîtrise du procédé aseptique (validation par media fill, grade A) et la décision de conformité formalisée du radiopharmacien [10,52].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Un radiopharmaceutique associe un vecteur (cible) et un radionucléide (signal/effet) ; le ⁹⁹ᵐTc couvre environ 80 % des actes scintigraphiques (γ 140,5 keV, T½ 6 h) [1,2,39].",
+        "Le marquage des trousses froides repose sur le chlorure stanneux (SnCl₂) qui réduit le Tc(+7) du pertechnétate : son oxydation est la cause majeure d'échec (pertechnétate libre) [16].",
+        "Le générateur ⁹⁹Mo/⁹⁹ᵐTc : ⁹⁹Mo (issu de la fission de l'²³⁵U) fixé sur alumine, élution du pertechnétate au NaCl 0,9 % [33,57].",
+        "Pureté radiochimique (PRC) : critère général ≥ 95 % par CCM/ITLC, avec exception HMPAO ≥ 80 % et injection < 30 min ; HPLC pour les thérapeutiques [45,21].",
+        "CQ obligatoires de l'éluat : claquage ⁹⁹Mo ≤ 0,15 kBq/MBq (USP) et aluminium ≤ 10 µg/mL [34,35].",
+        "Préparations parentérales : stérilité (grade A, media fill) et endotoxines (LAL) ≤ 175 UI/dose IV adulte [10,24].",
+        "Cadre France = BPP ANSM 2023 LD4 ; cadre européen = cGRPP EANM 2021, Ph. Eur. 0125, IAEA TE-1856 ; dosimétrie = ICRP 128 [31,10,42,12,29].",
+        "Pédiatrie : carte de dosage EANM (activité de base × multiple pondéral, 3 clusters) harmonisée aux consensus nord-américains 2016 [26,28]."
+      ],
+      "protocol": [
+        "Élution du générateur au NaCl 0,9 % ; contrôler claquage ⁹⁹Mo (≤ 0,15 kBq/MBq) et aluminium (≤ 10 µg/mL) sur l'éluat [34,35].",
+        "Reconstituer la trousse avec un éluat frais (< 6 h post-élution) selon la notice ; chauffage au bain-marie bouillant pour MAG3, MIBI ; à froid pour MDP/HDP [17].",
+        "HMPAO : injecter dans les 30 min (complexe lipophile instable), PRC ≥ 80 % [45].",
+        "Contrôler la PRC par ITLC-SG (routine) ou HPLC (thérapeutiques) avant libération ; vérifier pertechnétate libre et colloïde [45,21].",
+        "Vérifier aspect, pH, activité à l'activimètre ; libération du lot par décision de conformité formalisée du radiopharmacien [52].",
+        "Manipulations aseptiques en grade A ; intégrité du filtre stérilisant (point de bulle) ; test d'endotoxines (LAL) [10,24]."
+      ],
+      "scores": [
+        "Limite PRC générale ≥ 95 % ; MDP/HDP, DMSA, DTPA, MAG3 > 95 % ; MIBI ≥ 90 % ; HMPAO ≥ 80 % ; FDG ≥ 95 % ; ⁶⁸Ga-DOTATOC/PSMA > 98 % [45,46,41,9].",
+        "Claquage ⁹⁹Mo (USP) ≤ 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc ; aluminium ≤ 10 µg/mL ; breakthrough ⁶⁸Ge ≤ 0,001 % [34,9].",
+        "Endotoxines (LAL) : ≤ 175 UI/dose IV adulte (2,5 UI/kg) ; ≤ 14 UI/dose en intrathécal [23,24].",
+        "Dose efficace (ICRP 128) : ¹⁸F-FDG 0,019 mSv/MBq ; ⁹⁹ᵐTc-MDP ≈ 0,0057 mSv/MBq (≈ 4,2 mSv à 740 MBq) [29,8,47].",
+        "Activités repères : ¹⁸F-FDG ≈ 3,7 MBq/kg IV (TEP oncologie EANM) ; ¹⁷⁷Lu-DOTATATE 7,4 GBq × 4 cycles/8 sem [25,30]."
+      ],
+      "pitfalls": [
+        "Pertechnétate libre (réduction incomplète, SnCl₂ oxydé) → fixation thyroïde/estomac/salivaires sur l'image [45].",
+        "Technétium réduit-hydrolysé colloïdal (excès de SnCl₂) → captation hépatique et splénique parasite [45].",
+        "HMPAO injecté au-delà de 30 min → chute de PRC sous 80 % et image dégradée [45].",
+        "Claquage ⁹⁹Mo excessif → dose patient accrue sans bénéfice et artefact de haute énergie [35].",
+        "Éluat resté > 6 h après élution utilisé pour un marquage → rendement de marquage abaissé.",
+        "Libération avant résultat de stérilité : risque maîtrisé uniquement par la validation du procédé aseptique (grade A, media fill), jamais par un contrôle a posteriori [10]."
+      ]
+    },
+    "lead": "Un médicament radiopharmaceutique réunit deux éléments indissociables : une molécule porteuse qui choisit la cible dans l'organisme et un atome radioactif qui rend cette cible visible ou la traite. Avant d'être administré, ce produit doit être préparé puis vérifié avec soin, car sa très courte durée de vie interdit les contrôles longs habituels des médicaments classiques. La préparation consiste le plus souvent à reconstituer une trousse stérile prête à l'emploi en y ajoutant le radionucléide fraîchement disponible. Le contrôle qualité confirme ensuite que le bon traceur, pur, stérile et apyrogène, part vers le patient. De cette double exigence dépendent à la fois la fiabilité de l'image et la sécurité de l'examen.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert un produit radiopharmaceutique ?",
+          "text": "Pour réaliser certains examens d'imagerie (la scintigraphie ou le TEP-scan), votre médecin utilise un produit appelé « radiopharmaceutique ». C'est l'association de deux éléments : une molécule qui se dirige vers l'organe ou la zone à étudier (les os, le cœur, la thyroïde, une tumeur...), et une très petite quantité de produit légèrement radioactif qui joue le rôle de « phare ». Une caméra spéciale détecte ce signal de l'extérieur, sans rien toucher ni couper, et fabrique des images qui montrent non seulement la forme de vos organes mais surtout leur fonctionnement. C'est ce qui distingue ces examens d'un scanner classique : on voit comment l'organe travaille, ce qui aide à repérer une maladie parfois très tôt.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un produit fait sur mesure",
+              "text": "Chaque produit est choisi en fonction de ce que votre médecin cherche à observer. Il n'y a pas un seul « produit radioactif » mais toute une famille de traceurs adaptés à chaque organe et à chaque question médicale."
+            }
+          ]
+        },
+        {
+          "title": "Comment ce produit est préparé pour vous",
+          "text": "Ces produits ne se conservent pas comme des médicaments ordinaires : leur partie radioactive disparaît naturellement et très vite, en quelques heures. Ils doivent donc être préparés peu de temps avant votre examen, dans une pharmacie spécialisée appelée radiopharmacie, par des professionnels formés (pharmaciens et préparateurs). La préparation se fait dans des conditions très propres, comparables à celles d'un bloc opératoire, pour garantir la stérilité. Une fois préparé, le produit vous est administré, le plus souvent par une simple injection dans une veine du bras, parfois par la bouche ou par inhalation selon l'examen.",
+          "steps": [
+            {
+              "title": "Préparation",
+              "text": "Le produit est assemblé sur place, juste avant l'examen, dans un environnement stérile et contrôlé."
+            },
+            {
+              "title": "Vérification",
+              "text": "Avant toute administration, des contrôles confirment que le produit est conforme, pur et stérile."
+            },
+            {
+              "title": "Administration",
+              "text": "Le produit vous est donné, généralement par une petite injection, puis vous patientez le temps qu'il atteigne la zone à examiner."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce sûr pour moi ?",
+          "text": "Oui, ces examens sont très encadrés. Avant chaque administration, l'équipe vérifie systématiquement qu'il s'agit du bon produit, qu'il est pur (sans impureté gênante) et stérile. La quantité de produit injectée est minime et la radioactivité utilisée est faible et choisie pour rester aussi basse que possible tout en permettant de bonnes images. La radioactivité s'élimine ensuite d'elle-même et par les urines en quelques heures. Les réactions au produit sont exceptionnelles. Toute la chaîne, de la fabrication au contrôle, suit des règles officielles strictes pour votre sécurité.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "N'hésitez pas à poser vos questions",
+              "text": "Signalez à l'équipe si vous êtes enceinte, si vous allaitez, ou si vous avez déjà eu une réaction lors d'un examen. Ces informations permettent d'adapter l'examen à votre situation."
+            },
+            {
+              "type": "info",
+              "title": "Une radioactivité passagère",
+              "text": "La partie radioactive du produit perd la moitié de sa force en quelques heures seulement et continue de diminuer ensuite. De simples précautions, expliquées par l'équipe, suffisent dans les heures qui suivent."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser et ce que la préparation garantit",
+          "text": "Lorsque vous adressez un patient pour une scintigraphie ou un TEP, la qualité du résultat dépend en amont d'une étape que vous ne voyez pas : la préparation et le contrôle qualité du radiopharmaceutique. Un médicament radiopharmaceutique associe un vecteur, qui cible l'organe ou le processus exploré, et un radionucléide émetteur détecté par la caméra. Le technétium-99m, radionucléide de loin le plus utilisé (environ 80 % des actes mondiaux), est produit sur place via un générateur et sert à marquer des « trousses froides » (lyophilisats stériles prêts à l'emploi). Comprendre que ces produits sont fabriqués à la demande, à très courte durée de vie, explique l'importance des contraintes logistiques : un rendez-vous manqué ou décalé peut signifier un produit perdu, car il ne se stocke pas.",
+          "list": [
+            "Imagerie fonctionnelle et non plus seulement morphologique : la MN renseigne sur le fonctionnement d'un organe ou l'activité d'une lésion.",
+            "Couverture large : os, cœur, thyroïde, poumon, rein, cerveau, et oncologie (TEP-FDG, traceurs ciblés comme le PSMA ou les analogues de la somatostatine).",
+            "Examens disponibles à courte échéance, sous réserve d'une organisation tenant compte de la production sur site."
+          ]
+        },
+        {
+          "title": "Démarche pratique et apport de la médecine nucléaire",
+          "text": "Votre rôle de prescripteur est surtout de poser la bonne question clinique et de transmettre les éléments qui conditionnent la faisabilité et l'interprétation : indication précise, traitements en cours, antécédents, et certaines préparations spécifiques. Par exemple, un TEP-FDG en oncologie nécessite un jeûne et un contrôle glycémique préalables, et une scintigraphie thyroïdienne ou un traitement par iode imposent d'anticiper l'arrêt de produits iodés. Côté radiopharmacie, chaque lot administré fait l'objet d'une décision de conformité par le radiopharmacien (pureté radiochimique, pureté du radionucléide, stérilité, absence d'endotoxines), encadrée par des référentiels officiels. Cette assurance qualité est ce qui rend l'examen fiable et reproductible : un marquage insuffisant ou une impureté peuvent générer des fixations parasites trompeuses.",
+          "steps": [
+            {
+              "title": "Formuler la question clinique",
+              "text": "Préciser ce que vous cherchez (bilan d'extension, recherche de récidive, viabilité, foyer infectieux...) oriente le choix du traceur."
+            },
+            {
+              "title": "Transmettre les informations clés",
+              "text": "Traitements en cours, antécédents, fonction rénale, grossesse/allaitement, glycémie/diabète selon l'examen."
+            },
+            {
+              "title": "Anticiper la préparation spécifique",
+              "text": "Jeûne, équilibre glycémique, arrêt de produits iodés ou de certains médicaments selon le protocole : le service vous précise les consignes."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La médecine nucléaire apporte une information fonctionnelle et métabolique complémentaire de l'imagerie morphologique, souvent décisive pour caractériser une lésion, faire un bilan d'extension ou détecter une atteinte précoce. La préparation et le contrôle qualité rigoureux du radiopharmaceutique garantissent qu'un traceur conforme, pur et stérile est administré, condition d'un examen fiable et sûr. En cas de doute sur l'indication, l'examen le plus pertinent ou la préparation requise, l'équipe de médecine nucléaire est l'interlocuteur à solliciter avant l'adressage."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité : le radiopharmaceutique et sa chaîne de qualité",
+          "text": "**Comment lire cette carte.** Un **médicament radiopharmaceutique (MRP)** n'est pas un médicament comme les autres : il associe une **molécule vectrice** (qui cible un organe ou un processus biologique) et un **radionucléide** (qui fournit le signal détecté de l'extérieur). Sa singularité tient à trois contraintes qui gouvernent toute la **chaîne de qualité** : il est **radioactif** (donc dangereux et décroissant), il a une **très courte durée de vie** (préparation et administration le jour même), et il est **administré par voie parentérale** (donc stérile et apyrogène). La phrase « le bon traceur, pur et stérile, administré au bon patient » résume l'objectif opposable de la radiopharmacie.[10]\n\nLe radionucléide pivot est le **technétium-99m (⁹⁹ᵐTc)**, présent dans environ **80 %** de l'ensemble des actes de médecine nucléaire mondiaux.[38][39] La chaîne de qualité s'organise en trois maillons que les sections suivantes développent : (1) la **production** du radionucléide (générateur ⁹⁹Mo/⁹⁹ᵐTc, cyclotron pour le ¹⁸F, générateur ⁶⁸Ge/⁶⁸Ga) ; (2) le **marquage** du vecteur — pour le ⁹⁹ᵐTc, la reconstitution d'une **trousse froide** au lit du générateur (cf. §A3) ; (3) le **contrôle qualité (CQ)** libératoire — pureté radionucléidique, pureté radiochimique, pH, stérilité et endotoxines.\n\n| Champ | Valeur |\n|---|---|\n| Nature | Médicament associant un **vecteur** + un **radionucléide** émetteur, à détection externe[10] |\n| Radionucléide pivot | **⁹⁹ᵐTc** : γ **140 keV**, T½ **6 h**, transition isomérique[38][2] |\n| Part du ⁹⁹ᵐTc | ≈ **80 %** des actes de médecine nucléaire mondiaux[38][39] |\n| Voie d'administration | Parentérale (IV le plus souvent) → exigence de **stérilité + apyrogénicité**[42] |\n| Production | Générateur ⁹⁹Mo/⁹⁹ᵐTc · cyclotron (¹⁸F) · générateur ⁶⁸Ge/⁶⁸Ga · réacteur (¹³¹I, ¹⁷⁷Lu)[1][3][9] |\n| Marquage ⁹⁹ᵐTc | Reconstitution d'une **trousse froide** lyophilisée (réducteur **SnCl₂**)[10] |\n| CQ clés | Percée ⁹⁹Mo, aluminium, **pureté radiochimique (PRC)**, pH, stérilité, endotoxines (LAL)[12][34] |\n| Critère PRC usuel | ≥ **95 %** pour la plupart des MRP (exceptions, cf. §A3)[14] |\n| Cadre opposable (France) | **BPP ANSM 2023, Ligne Directrice 4** ; guide **EANM cGRPP 2021**[31][10] |\n| Décision libératoire | Conformité du lot enregistrée par le **radiopharmacien**[52][53] |\n\nLes seuils chiffrés de chaque test (percée ⁹⁹Mo, aluminium, endotoxines, PRC par préparation) et la dosimétrie patient sont détaillés dans les sections opérationnelles ; cette carte ne retient que l'architecture de la chaîne et ses constantes structurantes.",
+          "stats": [
+            {
+              "value": "≈ 80 %",
+              "label": "Part du ⁹⁹ᵐTc en médecine nucléaire"
+            },
+            {
+              "value": "140 keV",
+              "label": "γ du ⁹⁹ᵐTc (caméra idéale)"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "PRC usuelle des radiopharmaceutiques"
+            },
+            {
+              "value": "LD4 / 2023",
+              "label": "Référentiel BPP ANSM opposable"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La radiopharmacie est une **galénique sous contrainte de temps** : la courte période physique impose souvent de **libérer le lot avant la fin de tous les contrôles** (notamment la stérilité, dont le résultat n'est connu qu'a posteriori). C'est pourquoi la qualité repose sur la **maîtrise validée du procédé** (conditions aseptiques, trousse sous AMM, éluat conforme) plus que sur le seul contrôle final — logique formalisée par le guide EANM cGRPP et les BPP.[10][52]"
+            },
+            {
+              "type": "info",
+              "title": "Vecteur + radionucléide : deux qualités à garantir séparément",
+              "text": "Un MRP peut échouer pour deux raisons indépendantes : un **vecteur mal marqué** (pureté radiochimique insuffisante → biodistribution erronée) ou un **radionucléide impur** (percée du parent → dose inutile et artefacts). Le contrôle qualité vérifie donc deux axes distincts — **la bonne molécule** (PRC, pureté chimique) et **le bon noyau** (pureté radionucléidique) — détaillés au §A2."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Chaîne de qualité du radiopharmaceutique en boucle fermée : production du radionucléide, marquage du vecteur, contrôle qualité (pureté, stérilité), décision de conformité du radiopharmacien, puis administration au patient.",
+            "caption": "Fig. 1 — La chaîne de qualité : produire, marquer, contrôler et libérer avant d'administrer — chaque maillon conditionne la fiabilité et la sécurité de l'examen."
+          }
+        },
+        {
+          "title": "A2 - Anatomie d'un radiopharmaceutique : vecteur, radionucléide, liaison",
+          "text": "Un radiopharmaceutique se décompose en trois éléments indissociables : un **vecteur** qui détermine *où* le traceur se fixe, un **radionucléide** qui détermine *comment* on le voit (ou *comment* on traite), et une **liaison** (chélation ou marquage covalent) qui détermine *la stabilité* de l'ensemble. La qualité de l'examen dépend de l'intégrité simultanée de ces trois composants.[10]\n\n**1) Le vecteur — la sélectivité biologique.** Le vecteur est la molécule ciblante : analogue métabolique (le **¹⁸F-FDG**, analogue du glucose), substrat d'un transporteur, ligand d'un récepteur (**PSMA**, récepteurs de la somatostatine), ou particule (macroagrégats d'albumine pour la perfusion pulmonaire). C'est lui qui porte l'information diagnostique ; sa contamination ou son altération chimique fausse la biodistribution.\n\n**2) Le radionucléide — la nature du signal.** Le choix du noyau découle de l'usage. Les **émetteurs γ purs ou quasi purs** conviennent à l'imagerie monophotonique (TEMP) ; les **émetteurs β⁺** sont détectés par coïncidence en TEP ; les **émetteurs β⁻** (et α) servent à la thérapie. Le ⁹⁹ᵐTc décroît par **transition isomérique** : l'état métastable est à **142,7 keV**, le photon réellement émis et détecté à **140,5 keV**, l'écart relaxant par conversion interne ; l'abondance du photon utile est d'environ **89 %**.[2] Son émission γ pure, sans particule, minimise la dose non productive d'image.\n\n| Radionucléide | T½ | Émission principale | Énergie | Usage type | Production |\n|---|---|---|---|---|---|\n| **⁹⁹ᵐTc** | **6 h** | γ (transition isomérique) | **140,5 keV** (≈89 %)[2] | TEMP (référence)[38] | Générateur ⁹⁹Mo/⁹⁹ᵐTc[1] |\n| **¹⁸F** | **109,7 min** | β⁺ (96,7 %) + CE (3,3 %)[4] | **511 keV** (annihilation)[40] | TEP (FDG) | Cyclotron ¹⁸O(p,n)¹⁸F[7] |\n| **⁶⁸Ga** | ≈ **68 min** | β⁺ | 511 keV[9] | TEP (PSMA, DOTATOC) | Générateur ⁶⁸Ge/⁶⁸Ga[9] |\n| **¹³¹I** | **8,02 j** | β⁻ + γ | β⁻ 606 keV ; **γ 364 keV** (≈81 %)[5] | Thérapie + diagnostic[6] | Réacteur |\n| **¹⁷⁷Lu** | **6,7 j** | β⁻ + γ (113/208 keV) | thérapie imageable[22] | Théranostique (PSMA, DOTATATE) | Réacteur |\n\n**3) La liaison — le talon d'Achille de la stabilité.** Le radionucléide doit être fixé au vecteur de façon **suffisamment stable** *in vivo*. Deux grands modes : la **liaison covalente** (le ¹⁸F substitué sur le mannose protégé lors de la synthèse du FDG, par substitution nucléophile)[3] et la **chélation** d'un cation métallique par un agent chélateur greffé sur le vecteur (DOTA pour le ⁶⁸Ga et le ¹⁷⁷Lu ; coordination du Tc réduit pour les trousses au ⁹⁹ᵐTc). Une liaison instable libère le radionucléide « libre » dans l'organisme : le **pertechnétate libre (⁹⁹ᵐTcO₄⁻)** se fixe alors sur thyroïde, estomac et glandes salivaires, et le **technétium réduit-hydrolysé colloïdal (TcO₂)** se concentre dans le foie et la rate — deux impuretés qui dégradent l'image et que le CQ de **pureté radiochimique** quantifie précisément (cf. §A3).[45]\n\nLes radionucléides métalliques de thérapie sont particulièrement sensibles à la **radiolyse** : l'autoirradiation de la solution rompt la liaison chélateur-métal au fil du temps, d'où l'ajout de **radioprotecteurs** (acide ascorbique) et un contrôle par **HPLC** (chromatographie liquide haute performance), seule méthode détectant ces produits de dégradation invisibles en chromatographie sur couche mince.[21]",
+          "stats": [
+            {
+              "value": "3 briques",
+              "label": "Vecteur · radionucléide · liaison"
+            },
+            {
+              "value": "140,5 keV",
+              "label": "Photon utile du ⁹⁹ᵐTc (≈89 %)"
+            },
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation β⁺ (TEP)"
+            },
+            {
+              "value": "8,02 j",
+              "label": "T½ de l'¹³¹I (thérapie + γ 364 keV)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La **liaison est indépendante de la cible** : pour les couples chélatés (⁶⁸Ga-DOTATOC / ¹⁷⁷Lu-DOTATATE), le même vecteur peut accueillir un émetteur β⁺ pour imager **ou** un émetteur β⁻ pour traiter, sans changer le ciblage. C'est le fondement chimique du **théranostique** : on visualise avec un isotope et on traite avec l'autre, le chélateur DOTA assurant une liaison stable dans les deux cas."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — 140 keV n'est pas l'énergie d'excitation",
+              "text": "L'état métastable du ⁹⁹ᵐTc se situe à **142,7 keV** ; le photon réellement émis et détecté est à **140,5 keV**, la différence relaxant par conversion interne.[2] Citer « 140 keV » est correct en routine, mais retenir 140,5 keV évite de confondre l'abondance du photon utile (≈ 89 %) avec la fraction des transitions."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration du 99mTc : transition isomérique de l'état métastable à 142,7 keV vers le 99Tc fondamental, avec émission du photon gamma de 140,5 keV utilisé pour l'imagerie.",
+            "caption": "Fig. 2 — Le radionucléide définit le signal : transition isomérique du ⁹⁹ᵐTc, photon γ de 140,5 keV sans émission particulaire — l'archétype du noyau d'imagerie monophotonique."
+          }
+        },
+        {
+          "title": "A3 - La trousse froide : pourquoi et comment marquer au lit du générateur",
+          "text": "La **trousse froide** (*cold kit*) est la solution galénique qui rend le marquage du ⁹⁹ᵐTc réalisable dans n'importe quel service, sans laboratoire de chimie. C'est un **flacon stérile, lyophilisé et apyrogène** contenant le **ligand** (le futur vecteur : MDP, MAG3, sestamibi, HMPAO…) et un **agent réducteur**. Le marquage consiste simplement à y injecter l'éluat de **pertechnétate (⁹⁹ᵐTcO₄⁻)** frais : la réaction se fait à température ambiante ou après un bref chauffage, **au lit du générateur**.[10]\n\n**Pourquoi une étape de réduction ?** Le technétium est élué à l'état d'oxydation **+VII** (pertechnétate), forme chimiquement **inerte**, incapable de se complexer au vecteur. L'agent réducteur — quasi universellement le **chlorure stanneux (SnCl₂, Sn²⁺)** — réduit le Tc(+VII) en états inférieurs (IV, V…) réactifs, qui se coordonnent alors au ligand.[10] Le SnCl₂ est l'**élément critique** de la trousse : s'il s'oxyde (entrée d'air, péremption), la réduction devient incomplète et le **pertechnétate libre** augmente — c'est le mode d'échec n°1 du marquage.\n\n**Modalités de reconstitution — variables selon la trousse :**\n\n| Trousse (⁹⁹ᵐTc-) | Reconstitution | Critère PRC | Particularité |\n|---|---|---|---|\n| **MDP / HMDP** (os) | À froid | ≥ **95 %**[45] | Marquage robuste, le plus courant |\n| **MAG3** (rein) | Chauffage **10 min** au bain-marie bouillant[17] | > **90 %**[17] | Transchélation thermo-dépendante |\n| **Sestamibi (MIBI)** (cœur) | Chauffage au bain-marie bouillant | ≥ **90–94 %**[46] | Ligand libéré du Cu(I) puis transchélaté |\n| **HMPAO (exametazime)** (cerveau) | À froid, pertechnétate **frais** | ≥ **80 %** de complexe lipophile[45] | **Instable → utiliser < 30 min** |\n\nLa trousse HMPAO concentre les pièges : le complexe lipophile (celui qui passe la barrière hémato-encéphalique) se dégrade rapidement en espèces hydrophiles, d'où une **fenêtre d'emploi de 30 minutes** et un seuil de PRC abaissé à **≥ 80 %** — l'exception qui confirme la règle des 95 %.[45] À l'inverse, la trousse MDP tolère une reconstitution simple à froid.\n\n**Deux conditions de bonne pratique encadrent tout marquage :** utiliser un **éluat récent** (le pertechnétate resté > 6 h sur la colonne après élution n'est plus recommandé pour le marquage, car la fraction de ⁹⁹Tc inactif issue de la décroissance « dilue » le ⁹⁹ᵐTc et abaisse l'activité spécifique), et respecter **strictement la notice** (volume d'éluat, activité maximale, délai et température). Le respect de ces paramètres garantit une PRC généralement **> 90 %**.[10]\n\n**Contrôle du marquage.** La méthode de routine est la **chromatographie sur couche mince instantanée (ITLC-SG)**, qui sépare et quantifie les deux impuretés caractéristiques du marquage au Tc : le **pertechnétate libre** (échec de réduction) et le **technétium réduit-hydrolysé colloïdal** (excès de Sn²⁺ ou hydrolyse). Le choix de la phase mobile dépend de la trousse (ex. méthyléthylcétone pour isoler le complexe lipophile de l'HMPAO).[45] Pour les MRP de thérapie marqués au ¹⁷⁷Lu, l'**HPLC** est la référence, car elle détecte en plus les produits de **radiolyse** que la chromatographie sur couche mince ne révèle pas.[21]",
+          "steps": [
+            {
+              "title": "1. Élution",
+              "text": "Le pertechnétate ⁹⁹ᵐTcO₄⁻ est élué de la colonne d'alumine au sérum physiologique stérile (NaCl 0,9 %) ; on utilise un éluat **récent** (< 6 h après l'élution précédente).[10]"
+            },
+            {
+              "title": "2. Réduction",
+              "text": "Injecté dans la trousse, le pertechnétate (Tc +VII, inerte) est **réduit par le SnCl₂** en Tc réactif, capable de se coordonner au ligand.[10]"
+            },
+            {
+              "title": "3. Complexation",
+              "text": "Le Tc réduit se chélate au vecteur ; selon la trousse, la réaction se fait à froid (MDP) ou par **chauffage au bain-marie bouillant** (MAG3, sestamibi).[17][46]"
+            },
+            {
+              "title": "4. Contrôle (PRC)",
+              "text": "Avant emploi, **chromatographie (ITLC-SG)** : mesure du pertechnétate libre et du colloïde réduit-hydrolysé ; conformité au seuil de la préparation (≥ 95 %, ≥ 90 % ou ≥ 80 % pour l'HMPAO).[45]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "SnCl₂",
+              "label": "Réducteur critique des trousses froides"
+            },
+            {
+              "value": "Tc(+VII)→Tc réduit",
+              "label": "Réaction-clé du marquage"
+            },
+            {
+              "value": "30 min",
+              "label": "Fenêtre d'emploi du ⁹⁹ᵐTc-HMPAO"
+            },
+            {
+              "value": "< 6 h",
+              "label": "Âge maxi de l'éluat pour le marquage"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le chlorure stanneux oxydé fait échouer le marquage",
+              "text": "Le **Sn²⁺** s'oxyde au contact de l'air ou avec la péremption de la trousse. La réduction du pertechnétate devient alors incomplète : la fraction de **⁹⁹ᵐTc libre** grimpe, la PRC chute sous le seuil, et l'image montre une fixation parasite **thyroïde / estomac / glandes salivaires**. Toujours respecter les conditions de conservation et la date de péremption, et **vérifier la PRC** avant administration."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — HMPAO, l'exception des 30 minutes",
+              "text": "Le ⁹⁹ᵐTc-HMPAO illustre qu'un seuil de PRC bas (**≥ 80 %**) n'est pas un assouplissement mais une contrainte : le complexe lipophile, seul capable de franchir la barrière hémato-encéphalique, se dégrade en quelques minutes en espèces hydrophiles inactives. D'où l'impératif d'un **pertechnétate frais** et d'une **injection < 30 min** après reconstitution.[45] À l'opposé, le ⁹⁹ᵐTc-MDP, marqué à froid, vise ≥ 95 %.[45]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Marquage au lit du générateur : élution du pertechnétate 99mTc par le NaCl 0,9 % depuis la colonne d'alumine, puis injection de l'éluat dans le flacon de trousse froide lyophilisée contenant le ligand et le chlorure stanneux.",
+            "caption": "Fig. 3 — Marquage au lit du générateur : l'éluat de pertechnétate frais reconstitue la trousse froide, où le SnCl₂ réduit le Tc(+VII) pour le complexer au vecteur."
+          }
+        },
+        {
+          "title": "B4 - B4 - Réaliser le marquage : protocole pas à pas et paramètres critiques",
+          "text": "Le **marquage** (radiolabelling) consiste à fixer le radionucléide sur le vecteur dans des conditions garantissant une **pureté radiochimique (PRC)** élevée. Pour le ⁹⁹ᵐTc, la réaction repose sur une **chimie d'oxydoréduction** : le pertechnétate ⁹⁹ᵐTcO₄⁻ élué du générateur est au degré d'oxydation **+7**, état inerte incapable de se complexer ; il doit être **réduit** en états réactifs (IV, V…) avant d'être chélaté par le ligand.[10] Le réducteur quasi universel des **« trousses froides » (cold kits)** — flacons lyophilisés, stériles, apyrogènes — est le **chlorure stanneux (SnCl₂, Sn²⁺)**.[16] L'opérateur ajoute simplement l'éluat de pertechnétate au flacon : la réaction est immédiate à température ambiante ou nécessite un chauffage selon la molécule.\n\n**▸ Étape 0 — l'éluat de départ.** La qualité du marquage est conditionnée par celle du ⁹⁹ᵐTcO₄⁻. Le générateur ⁹Mo/⁹⁹ᵐTc (« vache à technétium ») fixe le ⁹Mo (T½ **66 h**) sur une colonne d'**alumine (Al₂O₃)** ; le ⁹⁹ᵐTc (T½ **6,0 h**, γ **140 keV**) est élué au sérum physiologique stérile (NaCl 0,9 %).[1][57] Règle opératoire : un éluat est d'autant plus riche en ⁹⁹ᵐTc que le temps depuis la dernière élution est long (régénération par décroissance du ⁹Mo) ; un éluat resté **> 6 h** après élution accumule du ⁹Tc froid (issu du ⁹⁹ᵐTc décru) qui entre en compétition avec le ⁹⁹ᵐTc sur les sites de chélation et ne doit pas servir au marquage des trousses.[10]\n\n**▸ Les variables critiques.** Quatre paramètres déterminent le succès, à respecter strictement selon la notice :\n\n| Paramètre | Rôle | Conséquence d'un écart |\n|---|---|---|\n| **Quantité de Sn²⁺ actif** | Réduire le Tc(+7) | Sn²⁺ oxydé → **pertechnétate libre** (réduction incomplète) ; Sn²⁺ en excès → **colloïde TcO₂** |\n| **Activité / volume ajoutés** | Respecter le rapport ligand/Tc | Sur-dilution ou activité hors gamme → PRC abaissée |\n| **Température & durée d'incubation** | Cinétique de chélation | Sous-chauffage → complexe incomplet |\n| **Délai d'emploi après reconstitution** | Stabilité du complexe | Dépassement → décomposition (cas HMPAO) |\n\n**▸ Protocoles par trousse.** Les modalités diffèrent selon la stabilité du complexe formé :\n\n| Trousse (usage) | Reconstitution | Délai d'emploi | PRC requise |\n|---|---|---|---|\n| **⁹⁹ᵐTc-MDP / HMDP** (os) | À froid, immédiate | Plusieurs heures | ≥ **95 %**[45][19] |\n| **⁹⁹ᵐTc-MAG3** (rein) | **Bain-marie bouillant 10 min** | Selon notice | > **90 %**[17] |\n| **⁹⁹ᵐTc-MIBI** (cœur/sein) | **Bain-marie bouillant** (transchélation depuis Cu(I)) | Selon notice | ≥ **90 %**[46][20] |\n| **⁹⁹ᵐTc-HMPAO** (cerveau) | À froid, pertechnétate **frais** | **< 30 min** (instable) | ≥ **80 %** lipophile[16][45] |\n| **⁹⁹ᵐTc-DMSA / DTPA / MAA** | Trousses stanneuses standard | Selon notice | ≥ 95 %[14] |\n\nLa **traçabilité** est opposable : en France, sous les **Bonnes Pratiques de Préparation (BPP) ANSM, édition 2023, Ligne Directrice 4 (LD4)**, le **radiopharmacien** enregistre une **décision de conformité du lot** — y compris en cas d'expédition avant la fin de tous les contrôles, fréquente vu la courte période.[31][52]",
+          "steps": [
+            {
+              "title": "Élution du générateur",
+              "text": "Éluer le ⁹⁹ᵐTcO₄⁻ au NaCl 0,9 % stérile ; vérifier l'activité à l'activimètre et le délai depuis la dernière élution (éviter un éluat > 6 h).[57][10]"
+            },
+            {
+              "title": "Contrôle de l'éluat",
+              "text": "Avant tout marquage : claquage du ⁹Mo et aluminium conformes (cf. B5) ; aspect limpide, pH attendu.[34][35]"
+            },
+            {
+              "title": "Reconstitution de la trousse",
+              "text": "Ajouter le volume/activité de pertechnétate prescrits au flacon de trousse froide ; le SnCl₂ réduit le Tc(+7).[16]"
+            },
+            {
+              "title": "Incubation",
+              "text": "À froid (MDP, HMPAO, DMSA) ou au bain-marie bouillant (MAG3, MIBI) selon la notice ; respecter la durée.[17][46]"
+            },
+            {
+              "title": "Contrôle qualité avant libération",
+              "text": "Mesurer la PRC par chromatographie (CCM/ITLC) ; vérifier aspect/pH ; enregistrer la décision de conformité (BPP LD4).[14][31]"
+            },
+            {
+              "title": "Emploi dans la fenêtre de stabilité",
+              "text": "Administrer dans le délai de la notice — impératif pour le HMPAO (< 30 min).[16][45]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "+7 → +4/+5",
+              "label": "Réduction du Tc par le SnCl₂ avant chélation [10]"
+            },
+            {
+              "value": "6,0 h",
+              "label": "Période physique du ⁹⁹ᵐTc [57]"
+            },
+            {
+              "value": "< 30 min",
+              "label": "Fenêtre d'emploi du ⁹⁹ᵐTc-HMPAO [45]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "PRC cible générale des trousses ⁹⁹ᵐTc [45]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'éluat « vieilli »",
+              "text": "Un éluat resté trop longtemps après la dernière élution s'enrichit en **⁹Tc froid** (issu de la décroissance du ⁹⁹ᵐTc et du ⁹Mo restant), qui sature les sites de chélation et abaisse la PRC. Privilégier un éluat **frais** (< 6 h) pour les marquages exigeants, en particulier le HMPAO.[10]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le SnCl₂ est l'élément le plus fragile",
+              "text": "Le **Sn²⁺** s'oxyde au contact de l'air (Sn⁴⁺ inactif). Un flacon de trousse percé puis réutilisé, ou un excès d'air injecté, oxyde l'étain et fait monter le **pertechnétate libre**. Inversement, un **excès** de Sn²⁺ favorise le **colloïde hydrolysé-réduit (TcO₂)**. La fenêtre de Sn²⁺ optimal est étroite : c'est la cause n°1 des échecs de marquage (cf. B5).[16][46]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Coupe d'un générateur ⁹Mo/⁹⁹ᵐTc : colonne d'alumine fixant le molybdène-99, élution du pertechnétate ⁹⁹ᵐTcO₄⁻ au sérum physiologique, étape préalable au marquage des trousses froides.",
+            "caption": "Fig. 1 — Le générateur ⁹Mo/⁹⁹ᵐTc fournit le pertechnétate, matière première du marquage des trousses froides."
+          }
+        },
+        {
+          "title": "B5 - B5 - Sources d'échec du marquage : impuretés radiochimiques et leurs causes",
+          "text": "Un marquage « raté » se traduit par une **PRC insuffisante** : une fraction de l'activité n'est pas portée par le vecteur attendu mais par une **impureté radiochimique**, qui possède sa propre biodistribution et dégrade l'image (bruit de fond, fixations parasites, irradiation inutile). La **PRC** est donc le paramètre central du contrôle qualité (CQ) du marquage ; le critère général est **≥ 95 %** pour la plupart des médicaments radiopharmaceutiques (MRP), avec des exceptions documentées (MIBI/MAG3 ≥ 90 %, HMPAO ≥ 80 %).[14][45]\n\n**▸ Les deux impuretés cardinales du ⁹⁹ᵐTc.** Toute défaillance de la chimie redox du SnCl₂ génère l'une des deux espèces suivantes, aux deux extrémités du spectre d'oxydoréduction :\n\n| Impureté | Cause physico-chimique | Aspect scintigraphique | Détection |\n|---|---|---|---|\n| **Pertechnétate libre (⁹⁹ᵐTcO₄⁻)** | Réduction **incomplète** : Sn²⁺ insuffisant ou oxydé | Fixation **thyroïde, estomac, glandes salivaires** (le pertechnétate est capté par le NIS / symporteur) | Migre avec le front de solvant en CCM |\n| **Technétium réduit-hydrolysé / colloïde (TcO₂)** | **Excès** de Sn²⁺ ou hydrolyse → colloïde TcO₂·xH₂O | Captation **hépatique et splénique** parasite (phagocytose du colloïde) | Reste à l'**origine** en CCM |\n\nLa **chromatographie sur couche mince instantanée (ITLC-SG)** ou papier Whatman est la méthode de routine : le radiopharmaceutique est déposé à l'origine et migre dans un solvant ; selon la phase mobile, le pertechnétate libre et le colloïde se séparent du complexe attendu, et un détecteur de radioactivité quantifie chaque fraction.[36][45] Le choix du solvant dépend de la molécule (ex. méthyléthylcétone/MEK pour séparer le pertechnétate, sérum physiologique ou citrate pour le colloïde) ; certaines trousses imposent un **système à deux bandelettes** pour quantifier simultanément les deux impuretés (ex. ⁹⁹ᵐTc-MAG3).[18]\n\n**▸ Le cas particulier du HMPAO.** Le ⁹⁹ᵐTc-HMPAO (exametazime) forme un complexe **lipophile** (celui qui franchit la barrière hémato-encéphalique) intrinsèquement **instable** : il se décompose spontanément en complexe **hydrophile secondaire** et en pertechnétate, d'où la fenêtre d'emploi **< 30 min** et le critère abaissé à **≥ 80 %** de complexe lipophile.[16][45] C'est la préparation au taux d'échec le plus élevé en routine (PRC moyenne observée ~**89,5 %**).[13]\n\n**▸ La défaillance amont : éluat hors spécifications.** Avant même le marquage, deux contrôles obligatoires de l'**éluat du générateur** conditionnent la pureté **radionucléidique** (présence d'autres radionucléides) et **chimique** :\n\n- **Claquage du ⁹Mo (« Mo-99 breakthrough »)** : limite réglementaire = **0,15 kBq de ⁹Mo par MBq de ⁹⁹ᵐTc** au moment de l'administration (= 0,15 µCi/mCi, USP) ; mesuré au calibrateur après écran de plomb (qui arrête les 140 keV du ⁹⁹ᵐTc et laisse passer les 740 keV du ⁹Mo).[34][35] Un claquage excessif accroît la dose patient sans bénéfice et crée un artefact de haute énergie.[35]\n- **Aluminium (Al³⁺)** issu de la colonne : limite USP **≤ 10 µg/mL** d'éluat, dosé par test colorimétrique (bandelette) ; un excès d'Al³⁺ peut provoquer une floculation du colloïde et perturber certains marquages.[34][37]\n\n**▸ Conséquence clinique.** Une PRC dégradée n'est pas qu'une non-conformité réglementaire : elle se lit directement sur les images. Sur une scintigraphie osseuse, un excès de **pertechnétate libre** donne une activité thyroïdienne/gastrique trompeuse ; un excès de **colloïde** un foie/rate « chauds ». Reconnaître ces deux signatures permet de remonter à la cause (Sn²⁺ oxydé vs excès) et de rejeter le lot.",
+          "stats": [
+            {
+              "value": "≥ 95 %",
+              "label": "PRC requise (critère général MRP) [14]"
+            },
+            {
+              "value": "≥ 80 %",
+              "label": "Exception HMPAO (complexe lipophile) [16]"
+            },
+            {
+              "value": "0,15 kBq/MBq",
+              "label": "Limite de claquage du ⁹Mo (USP) [34]"
+            },
+            {
+              "value": "≤ 10 µg/mL",
+              "label": "Limite d'aluminium dans l'éluat (USP) [34]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — lire l'image, c'est lire le CQ",
+              "text": "**Pertechnétate libre** (réduction incomplète) → **thyroïde + estomac + salivaires** captés. **Colloïde TcO₂** (excès de Sn²⁺) → **foie + rate** captés. Ces deux signatures, vues sur une scintigraphie osseuse ou de perfusion, signent un échec de marquage et imposent de contrôler la PRC et de rejeter le lot.[36][45]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — HMPAO instable",
+              "text": "Le complexe lipophile du ⁹⁹ᵐTc-HMPAO se décompose en quelques dizaines de minutes : marquage avec pertechnétate **frais** et injection **< 30 min**, sinon la PRC chute sous 80 % et la captation cérébrale s'effondre.[16][45]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — CCM vs HPLC",
+              "text": "La **CCM/ITLC** détecte le pertechnétate libre et le colloïde, mais **pas les produits de radiolyse** des MRP thérapeutiques. Pour le ⁹⁹ᵐTc de routine elle suffit ; pour ¹⁷⁷Lu/⁶⁸Ga, la **HPLC** avec détecteur radio est la référence (cf. B6).[21]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_NIS",
+            "alt": "Symporteur sodium-iodure (NIS) de la cellule thyroïdienne captant le pertechnétate libre : mécanisme expliquant la fixation thyroïdienne, gastrique et salivaire d'un marquage ⁹⁹ᵐTc défaillant riche en TcO₄⁻ libre.",
+            "caption": "Fig. 2 — Le pertechnétate libre (impureté d'un marquage raté) est capté par le NIS : d'où l'activité thyroïde/estomac/salivaires qui trahit l'échec."
+          }
+        },
+        {
+          "title": "B6 - B6 - Préparations particulières : marquage cellulaire, PET et radio-iode",
+          "text": "Au-delà des trousses froides au ⁹⁹ᵐTc, trois familles de préparations obéissent à des chimies et à des contrôles qualité spécifiques : la **synthèse PET sur cyclotron** (¹⁸F, ⁶⁸Ga), le **radio-iode** (¹³¹I) et les **radiopharmaceutiques thérapeutiques au ¹⁷⁷Lu**. Toutes relèvent, pour la préparation à petite échelle, du guide **EANM current Good Radiopharmacy Practice (cGRPP, 2021)**, calqué sur les Bonnes Pratiques de Fabrication : opérations aseptiques en **grade A** (poste/isolateur), environnement de fond **grade C** (modules de synthèse) ou **grade D**.[10]\n\n**▸ Synthèse du ¹⁸F-FDG (cyclotron).** Le ¹⁸F (T½ **109,7 min**, β⁺ → 2 photons de **511 keV**) est produit par bombardement d'eau enrichie en ¹⁸O selon la réaction nucléaire **¹⁸O(p,n)¹⁸F**.[4][7] Le fluorure ¹⁸F⁻ est ensuite incorporé au sucre par **substitution nucléophile (SN2)** sur le triflate de mannose protégé, suivie d'une hydrolyse, dans un module automatisé.[3] Le CQ du FDG est plus exigeant que celui d'une trousse froide car il inclut des **impuretés chimiques de synthèse** :\n\n| Test | Limite (Ph. Eur.) | Méthode |\n|---|---|---|\n| **PRC** | ≥ **95 %** | CCM ou HPLC[41] |\n| **Pureté radionucléidique (RNP)** | ≥ 99,9 % ; radionucléides T½ > 2 h < **10⁻³** | spectrométrie γ (HPGe)[41][56] |\n| **Kryptofix 2.2.2** (aminopolyéther toxique) | test colorimétrique (spot test) | Ph. Eur.[41] |\n| **Solvants résiduels** (acétonitrile) | acétonitrile < **4,1 mg/dose** | chromatographie[41] |\n| **pH** | **4,5 – 8,5** | papier/électrode[41] |\n\n**▸ Générateur ⁶⁸Ge/⁶⁸Ga.** Le ⁶⁸Ga (T½ ~**68 min**, β⁺) est élué d'une colonne fixant le parent ⁶⁸Ge (T½ ~271 j), puis chélaté par des vecteurs **DOTA** (DOTATOC, PSMA-11). La PRC, contrôlée par **HPLC**, doit dépasser **98 %** ; le claquage du parent (**⁶⁸Ge breakthrough**) doit rester **≤ 0,001 %**.[9]\n\n**▸ Radiopharmaceutiques thérapeutiques au ¹⁷⁷Lu.** Le ¹⁷⁷Lu (T½ **6,7 j**, β⁻ + γ imageables → théranostique) marque des vecteurs DOTA (¹⁷⁷Lu-DOTATATE/Lutathera, ¹⁷⁷Lu-PSMA-617/Pluvicto). Particularité du CQ : la forte activité provoque une **radiolyse** (auto-irradiation du vecteur), contrée par l'ajout de **radioprotecteurs** (acide ascorbique/gentisique). La méthode de référence est la **HPLC** — seule capable de détecter les produits de radiolyse — complétée par une **CCM** pour repérer le ¹⁷⁷Lu colloïdal/libre ; la RNP exige notamment l'impureté ¹⁷⁷ᵐLu (T½ long) < **0,07 %**.[21][22] Côté AMM, le ¹⁷⁷Lu-DOTATATE s'administre à **7,4 GBq (200 mCi) toutes les 8 semaines, 4 cycles** (approbation FDA pour les TNE-GEP le 26 janvier 2018, essai NETTER-1).[30]\n\n**▸ Le radio-iode (¹³¹I).** Le ¹³¹I (T½ **8,02 j**, β⁻ Emax 606 keV + γ **364 keV** ~81 %) est utilisé sous forme d'iodure de sodium pour la thyroïde, ou pour marquer des vecteurs (¹³¹I-MIBG). Le ¹³¹I est un risque majeur de **contamination volatile** et expose particulièrement la thyroïde de l'opérateur : sa manipulation impose hotte ventilée, blocage thyroïdien du personnel et dosimétrie dédiée.[5][6][50]\n\n**▸ Marquage cellulaire (leucocytes au ⁹⁹ᵐTc-HMPAO).** Cas distinct : le radionucléide n'est pas fixé sur une molécule mais sur des **cellules autologues**. Les leucocytes du patient sont isolés puis incubés avec le ⁹⁹ᵐTc-HMPAO lipophile, qui diffuse passivement dans la cellule où il se piège après conversion en complexe hydrophile. La contrainte dominante est **microbiologique et identitovigilante** : manipulation aseptique stricte de sang autologue, traçabilité absolue (risque de réinjection à un mauvais patient), opérations en système clos sous cGRPP grade A.[10]\n\nCommune à toutes ces préparations parentérales : la conformité à la monographie générale **Ph. Eur. 0125** (stérilité, endotoxines). La courte période impose souvent une **libération paramétrique** avant le résultat du test de stérilité, d'où la maîtrise documentée du procédé exigée par le radiopharmacien.[42][31]",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation du ¹⁸F (β⁺) [4]"
+            },
+            {
+              "value": "≤ 0,001 %",
+              "label": "Limite de claquage du ⁶⁸Ge (Ga-68) [9]"
+            },
+            {
+              "value": "175 UI/dose",
+              "label": "Limite d'endotoxines IV (adulte 70 kg) [24]"
+            },
+            {
+              "value": "7,4 GBq × 4",
+              "label": "Schéma ¹⁷⁷Lu-DOTATATE (8 sem) [30]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi la HPLC en thérapie",
+              "text": "Pour ¹⁷⁷Lu et ⁶⁸Ga, la forte activité génère une **radiolyse** que la CCM ne voit pas. La **HPLC** avec détecteur radio sépare le vecteur intact de ses produits de dégradation ; on lui adjoint une CCM pour le radiométal libre/colloïdal. D'où l'ajout systématique de **radioprotecteurs** (acide ascorbique) dès la formulation.[21][22]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — Kryptofix et solvants (FDG)",
+              "text": "Le **Kryptofix 2.2.2**, catalyseur de la fluoration, est neurotoxique : son test de présence (spot test colorimétrique) et le dosage des solvants résiduels (acétonitrile) sont **libératoires** pour chaque lot de ¹⁸F-FDG.[41]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — endotoxines bactériennes (test LAL)",
+              "text": "Toute préparation parentérale doit respecter la limite d'endotoxines : **2,5 UI/kg** par voie IV, soit **175 UI/dose** pour un adulte de 70 kg (calcul 175/V), abaissée pour la voie intrathécale. Test LAL (Limulus Amebocyte Lysate), monographie Ph. Eur. 2.6.14.[23][24]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Détection en coïncidence des deux photons de 511 keV émis lors de l'annihilation du positon du ¹⁸F : principe physique justifiant l'exigence de pureté radionucléidique et radiochimique du ¹⁸F-FDG produit au cyclotron.",
+            "caption": "Fig. 3 — Le ¹⁸F-FDG, produit par synthèse au cyclotron, alimente la détection PET en coïncidence (511 keV) ; son CQ inclut des impuretés chimiques absentes des trousses ⁹⁹ᵐTc."
+          }
+        },
+        {
+          "title": "C7 - C7 - Mesurer la pureté radiochimique : chromatographie ITLC et HPLC",
+          "text": "La **pureté radiochimique (PRC)** est le pourcentage de l'activité totale présent sous la forme chimique désirée du radiopharmaceutique. C'est le **paramètre critique du marquage** : il conditionne directement la biodistribution, donc la validité diagnostique de l'examen et la dose délivrée aux organes non cibles. Pour les trousses froides au ⁹⁹ᵐTc, la PRC quantifie deux **impuretés radiochimiques** caractéristiques : le **pertechnétate libre (TcO₄⁻)**, témoin d'une réduction incomplète du Tc(+7) faute d'agent réducteur actif, et le **technétium réduit-hydrolysé (HRTc, colloïde TcO₂)**, témoin d'un excès de SnCl₂ ou d'une oxydation parasite.[14,36] L'identité de ces deux impuretés gouverne tout le dispositif chromatographique.\n\n**Chromatographie sur couche mince instantanée (ITLC) — méthode de routine.** Le principe : une goutte de préparation est déposée à l'**origine** d'une bandelette (support **gel de silice ITLC-SG** ou papier Whatman) ; un solvant migre par capillarité et entraîne différentiellement les espèces selon leur lipophilie/polarité. Le complexe désiré, le pertechnétate libre et le colloïde se répartissent en zones distinctes, puis l'activité de chaque zone est comptée (compteur de puits, radio-imageur ou coupe-et-compte). L'ITLC est rapide (quelques minutes), peu coûteuse et **réalisable au lit du radiopharmacien** avant chaque administration.[14,45]\n\nLe choix du **système solvant** dépend de la nature lipophile ou hydrophile du complexe. Comme aucun solvant unique ne sépare à la fois TcO₄⁻ et le colloïde de tous les complexes, la pratique de référence repose souvent sur un **système à deux bandelettes** : un solvant déplace le pertechnétate (laissant complexe + colloïde à l'origine), l'autre déplace le complexe (laissant colloïde + pertechnétate à l'origine), et la PRC se déduit par soustraction.[18,45]\n\n| Préparation ⁹⁹ᵐTc | Phase mobile usuelle | Migration | Impureté mesurée |\n|---|---|---|---|\n| MDP / HDP (os) | Acétone ou sérum physiologique | TcO₄⁻ migre, complexe à l'origine | Pertechnétate libre + colloïde |\n| HMPAO (exametazime) | **Méthyléthylcétone (MEK/butanone)** | Complexe **lipophile** migre, impuretés à l'origine | Complexe secondaire hydrophile + TcO₄⁻ + colloïde |\n| MAG3 | Système deux bandelettes (ex. tampon + solvant organique) | Séparation MAG3 / impuretés | TcO₄⁻ + impuretés hydrophiles |\n| Sestamibi (MIBI) | Éthanol / ITLC-SG | Complexe cationique migre | TcO₄⁻ + Tc hydrophile |\n\n**Chromatographie liquide haute performance (HPLC) — méthode quantitative de référence.** Couplée à un **détecteur de radioactivité** en ligne (et souvent à un détecteur UV pour la pureté chimique), l'HPLC sépare les espèces avec une résolution très supérieure à l'ITLC. Elle est **indispensable pour les radiopharmaceutiques thérapeutiques** (⁶⁸Ga- et ¹⁷⁷Lu-marqués), car elle détecte les **produits de radiolyse** — fragmentation du peptide-chélateur sous l'effet du rayonnement β/γ — totalement invisibles en ITLC, où ils migrent comme le complexe intact.[21,22] Pour ¹⁷⁷Lu-PSMA/DOTATATE, l'HPLC est d'ailleurs **complétée par une ITLC** dédiée à la détection du **¹⁷⁷Lu colloïdal/libre**, espèce mal récupérée sur colonne HPLC.[22] La protection par **acide ascorbique** (anti-radiolyse) est une parade standard dont l'HPLC permet le contrôle.[21]",
+          "stats": [
+            {
+              "value": "≥ 95 %",
+              "label": "PRC requise pour la plupart des MRP (monographies)"
+            },
+            {
+              "value": "~5 min",
+              "label": "Durée d'une ITLC de routine"
+            },
+            {
+              "value": "2",
+              "label": "Impuretés ciblées : TcO₄⁻ libre + colloïde TcO₂"
+            },
+            {
+              "value": "HPLC",
+              "label": "Méthode de référence pour les MRP thérapeutiques (radiolyse)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - Choisir la mauvaise phase mobile",
+              "text": "Une PRC n'a de sens que rapportée au **bon couple support/solvant**. Avec le HMPAO, un solvant inadapté ne sépare pas le **complexe lipophile primaire** (le seul actif) du **complexe secondaire hydrophile** : on surestime alors la pureté. Toujours suivre le système chromatographique **spécifié dans la notice de la trousse** (RCP/monographie), et tracer le système deux bandelettes lorsqu'il est requis.[18,45]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - ITLC vs HPLC : ce que l'ITLC ne voit pas",
+              "text": "L'ITLC mesure **pertechnétate libre + colloïde**, mais elle ne distingue pas un peptide intact d'un peptide **radiolysé** qui aurait conservé son radiométal. Pour un ⁶⁸Ga- ou ¹⁷⁷Lu-MRP thérapeutique, une **ITLC normale ne garantit pas la PRC** : l'**HPLC radio** est requise pour les fragments de radiolyse, et une ITLC d'appoint pour le radiométal colloïdal.[21,22]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Chaîne radiopharmaceutique du technétium : élution du générateur ⁹⁹Mo/⁹⁹ᵐTc en pertechnétate, marquage de la trousse froide via réduction par SnCl₂, puis contrôle de pureté radiochimique par chromatographie.",
+            "caption": "Fig. C7 - Du pertechnétate élué au complexe marqué : la PRC vérifie que la réduction par SnCl₂ a bien chélaté le Tc sur le vecteur, sans pertechnétate résiduel ni colloïde."
+          }
+        },
+        {
+          "title": "C8 - C8 - Interpréter et calculer : Rf, fronts de solvant et pourcentage de pureté",
+          "text": "L'interprétation d'une chromatographie repose sur une grandeur unique, le **rapport frontal (Rf)** : c'est la distance parcourue par une espèce rapportée à la distance parcourue par le **front de solvant**, mesurée depuis l'origine du dépôt.\n\n```\nRf = (distance migrée par l'espèce) / (distance migrée par le front de solvant)\n```\n\nLe Rf varie de **0** (l'espèce reste à l'origine) à **1** (l'espèce suit le front). Il caractérise chaque espèce dans un système support/solvant donné : c'est l'attribution des zones (« qui est où ») qui fonde le calcul de pureté.[14,36]\n\n**Schéma d'interprétation type (trousse ⁹⁹ᵐTc à complexe hydrophile, ex. MDP).** Dans le système où seul le pertechnétate migre :\n\n| Espèce | Rf attendu | Position sur la bandelette |\n|---|---|---|\n| **Complexe désiré** (ex. ⁹ᵐTc-MDP) | ≈ 0 | Origine (dépôt) |\n| **Colloïde HRTc (TcO₂)** | ≈ 0 | Origine (co-localisé) |\n| **Pertechnétate libre TcO₄⁻** | ≈ 1 | Front de solvant |\n\n**Calcul du pourcentage de pureté radiochimique.** Une fois la bandelette segmentée (typiquement coupée à mi-hauteur, ou découpée en zones origine/front) et chaque fragment compté, la PRC est le rapport de l'activité du complexe désiré à l'activité totale :\n\n```\nPRC (%) = (activité de la zone du complexe désiré / activité totale de la bandelette) × 100\n% impureté = (activité de la zone d'impureté / activité totale) × 100\n```\n\nLorsque les deux impuretés ne sont pas séparables sur une seule bandelette, on enchaîne les **deux systèmes** : la bandelette 1 (solvant déplaçant TcO₄⁻) donne le **% pertechnétate libre** ; la bandelette 2 (solvant déplaçant le complexe) donne le **% colloïde** ; la PRC finale s'obtient par soustraction des deux impuretés du total.[18,45]\n\n```\nPRC (%) = 100 − (% pertechnétate libre) − (% Tc réduit-hydrolysé)\n```\n\n**Exemple chiffré.** Bandelette comptée donnant 4 200 coups à l'origine (complexe + colloïde) et 300 coups au front (pertechnétate) : activité totale = 4 500 coups ; **% pertechnétate libre = 300/4 500 = 6,7 %**. Si une seconde bandelette attribue **2 %** au colloïde, alors **PRC = 100 − 6,7 − 2 = 91,3 %**.\n\n**Lecture du résultat — critères d'acceptation.** Le seuil dépend de la préparation et de sa monographie : un **critère général ≥ 95 %** s'applique à la majorité des MRP (MDP/HDP, DMSA, DTPA, MAG3 atteignant en pratique > 95 %), avec des seuils de monographie parfois fixés à **≥ 90 %** (sestamibi, MAG3) et l'**exception du HMPAO à ≥ 80 %**.[13,17,45,46] Un dépassement (PRC sous le seuil) **contre-indique l'administration** : le lot est rejeté et le marquage refait.\n\n| Préparation | Seuil PRC | Méthode | Source |\n|---|---|---|---|\n| ⁹⁹ᵐTc-MDP / HMDP (os) | **≥ 95 %** | ITLC | [45] |\n| ⁹⁹ᵐTc-sestamibi (MIBI) | **≥ 90–94 %** | ITLC / Sep-Pak | [46] |\n| ⁹⁹ᵐTc-HMPAO (exametazime) | **≥ 80 %** (instable, marquer < 30 min) | ITLC (MEK) | [16,45] |\n| ¹⁸F-FDG | **≥ 95 %** | HPLC / CCM | [41] |\n| ⁶⁸Ga-DOTATOC / PSMA | **> 98 %** | HPLC | [9] |\n| ¹⁷⁷Lu-PSMA / DOTATATE | **≥ 95 %** | HPLC + ITLC | [22] |",
+          "steps": [
+            {
+              "title": "1 · Déposer et migrer",
+              "text": "Déposer une microgoutte de préparation à l'**origine** de la bandelette ; immerger l'extrémité inférieure dans le solvant ; laisser migrer jusqu'à ce que le **front de solvant** approche le sommet, puis sécher."
+            },
+            {
+              "title": "2 · Localiser les zones",
+              "text": "Identifier les zones d'activité (radio-imageur ou découpe). Attribuer chaque zone à une espèce via son **Rf** attendu dans le système support/solvant utilisé (complexe ≈ 0, pertechnétate ≈ 1 pour un complexe hydrophile)."
+            },
+            {
+              "title": "3 · Compter chaque zone",
+              "text": "Mesurer l'activité de chaque fragment au compteur de puits ; sommer pour obtenir l'**activité totale** de la bandelette."
+            },
+            {
+              "title": "4 · Calculer la PRC",
+              "text": "PRC (%) = activité du complexe désiré / activité totale × 100 ; ou, en système deux bandelettes, PRC = 100 − %pertechnétate − %colloïde."
+            },
+            {
+              "title": "5 · Comparer au seuil et décider",
+              "text": "Confronter au critère de la monographie (≥ 95 % en règle, ≥ 80 % pour le HMPAO) : **libérer** le lot si conforme, **rejeter et refaire** sinon."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - Rf inversé selon le solvant",
+              "text": "Le Rf d'une espèce **n'est pas une constante absolue** : il dépend du couple support/solvant. Le **pertechnétate** migre au front (Rf ≈ 1) dans l'acétone/sérum physiologique, mais peut rester à l'origine dans un autre système. Pour le **HMPAO**, c'est le **complexe lipophile** qui migre au front dans la MEK, à l'inverse du schéma MDP. Toujours interpréter le Rf **dans le système prescrit**, jamais par analogie.[45]"
+            },
+            {
+              "type": "info",
+              "title": "Repère de calcul",
+              "text": "Une PRC à 91 % signifie que **9 % de l'activité injectée n'ira pas sur la cible** : pertechnétate libre captant thyroïde/estomac/glandes salivaires, ou colloïde captant foie/rate. Au-delà de la conformité réglementaire, chaque point de PRC perdu se traduit par un **bruit de fond et une irradiation parasites** sur l'image."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Bandelette de chromatographie schématisée : origine du dépôt en bas, front de solvant en haut, avec le complexe désiré (Rf bas) séparé du pertechnétate libre (Rf élevé) ; le rapport des activités donne le pourcentage de pureté radiochimique.",
+            "caption": "Fig. C8 - Rf = distance espèce / distance front de solvant ; la PRC est le rapport de l'activité du complexe à l'activité totale de la bandelette."
+          }
+        },
+        {
+          "title": "C9 - C9 - Les autres contrôles qualité : pureté radionucléidique, chimique, pH, stérilité",
+          "text": "La PRC ne couvre que la forme chimique du radionucléide. Une libération de lot conforme exige une **batterie de contrôles complémentaires** portant sur la nature du radionucléide, les contaminants chimiques, l'acidité et la sécurité microbiologique. Le radiopharmacien intègre ces résultats dans une **décision de conformité formellement enregistrée**, y compris lorsque la courte période impose une expédition avant la fin de tous les contrôles.[52,53]\n\n**1. Pureté radionucléidique (PRN).** Fraction de l'activité totale due au radionucléide désiré. Elle se mesure par **spectrométrie γ sur détecteur germanium hyperpur (HPGe)** : identification par l'énergie des photons et vérification de la **période physique**.[56]\n\n- **Éluat de générateur — claquage du ⁹⁹Mo (« Mo-99 breakthrough »).** Le ⁹⁹Mo (γ de **740 keV**) qui franchit la colonne d'alumine majore inutilement la dose patient. La limite USP est de **0,15 kBq de ⁹⁹Mo par MBq de ⁹⁹ᵐTc** (soit 0,15 µCi/mCi) au moment de l'administration ; mesure par compteur de dose **derrière un écran de plomb** filtrant les 140 keV du ⁹ᵐTc et laissant passer le 740 keV du ⁹⁹Mo.[34,35] En pratique l'éluat est à **99,8 ± 0,4 %** de ⁹⁹ᵐTc à l'état +7.[37]\n- **¹⁸F-FDG** : PRN ≥ **99,9 %** ; la somme des radionucléides de période > 2 h doit rester < **10⁻³** de l'activité ¹⁸F (Ph. Eur.).[41]\n- **⁶⁸Ga** : claquage du parent **⁶⁸Ge ≤ 0,001 %** (Ph. Eur.) ; en pratique < 0,006 % avec un rendement d'élution ~80 %.[9]\n- **¹⁷⁷Lu** : PRN > **99,9 %**, avec l'impureté à vie longue **¹⁷⁷ᵐLu < 0,07 %** (Ph. Eur.).[22]\n\n**2. Pureté chimique.** Contaminants chimiques non radioactifs susceptibles d'altérer le marquage ou la tolérance.\n\n- **Aluminium (Al³⁺) dans l'éluat** : un excès gêne la chélation et peut former des colloïdes ; limite USP **≤ 10 µg/mL** d'éluat, dosée par **test colorimétrique sur bandelette**.[34,37]\n- **FDG — Kryptofix 2.2.2 (aminopolyéther)** : catalyseur de marquage toxique, contrôlé par **spot test** colorimétrique (limite Ph. Eur. typique ≤ 2,2 µg/mL).[41]\n- **FDG — solvants résiduels** : acétonitrile < **4,1 mg/dose**, éthanol surveillé (Ph. Eur.).[41]\n\n**3. pH.** Vérifié sur bandelette/papier indicateur, il doit rester dans la gamme de la notice pour la stabilité du complexe et la tolérance veineuse. Éluat de pertechnétate : **~4–7** (moyenne mesurée 5,8 ± 0,6).[37] ⁱ⁸F-FDG : **4,5–8,5** (Ph. Eur.).[41]\n\n**4. Apparence.** Inspection visuelle : limpidité, absence de particules ou de coloration anormale, intégrité du flacon.\n\n**5. Stérilité et apyrogénicité.** Préparations parentérales soumises à la monographie générale Ph. Eur. **0125 (Radiopharmaceutical preparations)**.[42]\n\n- **Stérilité** : préparation en **conditions aseptiques** sous flux/isolateur **grade A**, environnement de fond **grade C** (modules de synthèse) ou **grade D** ; l'essai de stérilité (membrane/filtration) est réalisé **a posteriori** — la courte période impose une **libération paramétrique** fondée sur la maîtrise du procédé (validation par *media fill*, intégrité du **filtre stérilisant 0,22 µm** par test du point de bulle).[10,42]\n- **Endotoxines bactériennes (test LAL — Limulus Amebocyte Lysate)** : limite IV de **2,5 UI/kg**, soit un maximum de **175 UI par dose** pour un adulte de 70 kg, calculée par la formule **175/V** (V = volume maximal recommandé en mL) ; pour la voie **intrathécale**, la limite descend à **14 UI/dose** ; méthode chromogénique cinétique préférée.[23,24]\n\n| Contrôle | Cible / matrice | Limite | Méthode | Source |\n|---|---|---|---|---|\n| Claquage ⁹⁹Mo | Éluat ⁹⁹ᵐTc | **≤ 0,15 kBq/MBq** | Compteur + écran Pb | [34,35] |\n| Aluminium | Éluat ⁹⁹ᵐTc | **≤ 10 µg/mL** | Colorimétrie (bandelette) | [34] |\n| PRN ¹⁸F-FDG | ¹⁸F | **≥ 99,9 %** | Spectrométrie γ (HPGe) | [41] |\n| Claquage ⁶⁸Ge | ⁶⁸Ga | **≤ 0,001 %** | Spectrométrie γ | [9] |\n| ¹⁷⁷ᵐLu | ¹⁷⁷Lu | **< 0,07 %** | Spectrométrie γ (HPGe) | [22] |\n| Kryptofix 2.2.2 | FDG | spot test (≤ 2,2 µg/mL) | Colorimétrie | [41] |\n| pH | FDG | **4,5–8,5** | Papier indicateur | [41] |\n| Endotoxines (LAL) | Toute dose IV | **175/V UI/dose** (14 IT) | LAL chromogénique | [23,24] |",
+          "stats": [
+            {
+              "value": "≤ 0,15 kBq/MBq",
+              "label": "Limite USP de claquage du ⁹⁹Mo dans l'éluat"
+            },
+            {
+              "value": "≤ 10 µg/mL",
+              "label": "Limite USP d'aluminium dans l'éluat de pertechnétate"
+            },
+            {
+              "value": "175 UI/dose",
+              "label": "Limite d'endotoxines IV (adulte 70 kg, LAL)"
+            },
+            {
+              "value": "Grade A",
+              "label": "Classe d'environnement pour les manipulations aseptiques (cGRPP)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - Claquage ⁹⁹Mo : double conséquence",
+              "text": "Un **breakthrough ⁹⁹Mo** excessif délivre une **dose patient accrue sans bénéfice diagnostique** et génère un **artefact de haute énergie** sur l'image (740 keV pénétrant le collimateur). Le test à l'écran de plomb doit précéder la première élution clinique de la journée ; un éluat non conforme est rejeté.[35]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - Libérer avant le résultat de stérilité",
+              "text": "La période physique (6 h pour le ⁹ᵐTc, ~110 min pour le ¹⁸F) interdit d'attendre les **7–14 jours** d'un essai de stérilité classique avant d'injecter. La conformité repose donc sur la **maîtrise prospective du procédé** : qualification de la zone grade A, validation par *media fill*, intégrité du filtre stérilisant, et **décision de libération paramétrique** tracée par le radiopharmacien (cGRPP EANM 2021, BPP ANSM 2023 LD4).[10,31,52]"
+            },
+            {
+              "type": "info",
+              "title": "Cadre opposable",
+              "text": "En France, le référentiel applicable est la **Ligne Directrice 4 (LD4)** des **Bonnes Pratiques de Préparation, édition ANSM 2023**, dédiée aux préparations radiopharmaceutiques et bien plus détaillée que l'édition 2007 ; il s'articule avec le guide **EANM cGRPP 2021** et les monographies de la **Pharmacopée Européenne** (dont la 0125).[10,31,32,42]"
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Trois cibles de la maîtrise du lot radiopharmaceutique : pureté radionucléidique par spectrométrie gamma, pureté chimique et pH par tests colorimétriques, et sécurité microbiologique (stérilité aseptique grade A + endotoxines LAL).",
+            "caption": "Fig. C9 - Au-delà de la PRC : pureté radionucléidique, pureté chimique/pH et contrôle microbiologique forment le socle de la décision de conformité du lot."
+          }
+        },
+        {
+          "title": "D10 - Maîtriser l'environnement : BPP, zones à atmosphère contrôlée et asepsie",
+          "text": "La préparation d'un **médicament radiopharmaceutique (MRP)** parentéral cumule deux exigences a priori opposées : la **stérilité** (le produit est injecté, souvent par voie IV) et la **radioprotection** (l'opérateur manipule une source non scellée). L'environnement de préparation est donc le point de jonction où l'on optimise simultanément l'asepsie et la dose au manipulateur, sans jamais sacrifier l'une à l'autre. Le référentiel opposable est le guide EANM **current Good Radiopharmacy Practice (cGRPP), 2021**, dont la structure est calquée sur les **BPF de l'Union européenne (EudraLex vol. 4)** [10].\n\n**▸ Architecture des zones à atmosphère contrôlée (salles propres).** La classification reprend les grades A/B/C/D des BPF, adaptés au cas radiopharmaceutique où le confinement de la radioactivité impose souvent une **enceinte blindée en dépression** — à l'inverse de la pharmacie cytotoxique classique, où l'on protège le produit par une surpression. Le compromis « stérilité vs confinement » est la difficulté centrale du métier.\n\n| Opération | Grade requis (zone critique) | Environnement de fond | Source |\n|---|---|---|---|\n| Manipulation aseptique (isolateur/poste) | **Grade A** | — | [10] |\n| Reconstitution de trousses, fractionnement éluat | Grade A (poste/isolateur) | **Grade C** ou **D** autour | [10] |\n| Module de synthèse automatisé en enceinte blindée | Grade A à l'intérieur de l'enceinte | **Grade C** | [10] |\n| Isolateur fermé | Grade A | **Grade D** admissible | [10] |\n\n**▸ Maîtrise de l'asepsie.** Faute de pouvoir attendre le résultat d'un essai de stérilité (la courte période physique impose la libération avant la fin de l'incubation, cf. D11), la stérilité est **garantie par la maîtrise du procédé** : qualification des opérateurs par **media fill** (simulation du remplissage avec un milieu de culture), filtration stérilisante (membrane 0,22 µm) pour les composants non autorisés ou les préparations à risque, et **test d'intégrité du filtre** (point de bulle / maintien de pression) après usage [10]. Le guide cGRPP distingue à cet égard deux situations : préparation à partir de **générateurs et trousses sous AMM** (Partie II du guide) et préparation à partir de **composants non autorisés** (Partie III), qui impose purification et filtration stérilisante supplémentaires [10].\n\n**▸ Le générateur ⁹⁹Mo/⁹ᵐTc, source quotidienne.** L'élution du **pertechnétate (⁹⁹ᵐTcO₄⁻)** au sérum physiologique stérile (NaCl 0,9 %) à partir de la colonne d'alumine se fait en conditions aseptiques [57]. L'éluat resté plus de **6 h** après élution ne doit pas servir au marquage des trousses : au-delà, la croissance de pertechnétate non réduit et l'oxydation du Sn²⁺ compromettent le rendement de marquage.",
+          "steps": [
+            {
+              "title": "Élution du générateur",
+              "text": "Pertechnétate ⁹⁹ᵐTcO₄⁻ élué au NaCl 0,9 % stérile en grade A ; la colonne d'alumine retient le ⁹⁹Mo parent (T½ 66 h) [57,39]."
+            },
+            {
+              "title": "Reconstitution de la trousse",
+              "text": "Ajout aseptique de l'éluat (< 6 h) au lyophilisat ; le SnCl₂ réduit le Tc(VII) pour permettre la chélation par le vecteur [16]."
+            },
+            {
+              "title": "Contrôle et libération",
+              "text": "Vérification de l'aspect, du pH et de la pureté radiochimique avant administration ; décision de conformité du lot formellement enregistrée par le radiopharmacien [52,53]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "Grade A",
+              "label": "Zone critique pour toute manipulation aseptique [10]"
+            },
+            {
+              "value": "0,22 µm",
+              "label": "Seuil de la filtration stérilisante [10]"
+            },
+            {
+              "value": "~80 %",
+              "label": "Part mondiale des actes utilisant le ⁹⁹ᵐTc [38,39]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — confinement vs stérilité",
+              "text": "Contrairement à la préparation pharmaceutique classique (poste en **surpression** protégeant le produit), le MRP impose souvent une enceinte en **dépression** pour confiner la radioactivité. Le produit y est donc moins protégé de l'environnement : d'où l'exigence d'un **grade A** strict au point critique et d'un fond **grade C** autour des modules automatisés [10]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi pas d'essai de stérilité libératoire",
+              "text": "La période courte (⁹⁹ᵐTc 6 h, ¹⁸F ~110 min) interdit d'attendre les 14 jours d'incubation de l'essai de stérilité avant administration. La conformité repose donc sur la **validation du procédé aseptique** (media fill, intégrité de filtre) et non sur un contrôle a posteriori du lot injecté [10,42]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Générateur ⁹⁹Mo/⁹ᵐTc : colonne d'alumine retenant le ⁹⁹Mo, élution du pertechnétate ⁹⁹ᵐTcO₄⁻ au sérum physiologique en conditions aseptiques.",
+            "caption": "Fig. 1 — Le générateur ⁹⁹Mo/⁹ᵐTc, source quotidienne du pertechnétate : l'élution aseptique est le premier maillon de la chaîne qualité."
+          }
+        },
+        {
+          "title": "D11 - Cadre réglementaire et pharmacopées : Ph. Eur., USP, AMM et préparations magistrales",
+          "text": "La sécurité d'un MRP repose sur un empilement de référentiels : **pharmacopées** (spécifications techniques de pureté et de stérilité), **guides de bonnes pratiques** (organisation du procédé) et **cadre réglementaire national** (responsabilité pharmaceutique, autorisation des locaux). Le médecin nucléaire doit connaître les seuils chiffrés opposables, car ce sont eux qui définissent un lot conforme.\n\n**▸ Pharmacopées : les seuils d'acceptation.** La **Pharmacopée Européenne (Ph. Eur.)** et l'**United States Pharmacopeia (USP)** fixent les limites des contrôles libératoires. Certaines divergent, ce qui justifie de toujours préciser le référentiel :\n\n| Paramètre | Limite Ph. Eur. | Limite USP | Source |\n|---|---|---|---|\n| Claquage ⁹⁹Mo (« breakthrough ») dans l'éluat | **≤ 0,1 %** | **0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** (= 0,15 µCi/mCi) | [12,34,35] |\n| Aluminium (Al³⁺) dans l'éluat | **≤ 5 ppm** | **≤ 10 µg/mL** | [12,34] |\n| Pureté radiochimique de l'éluat (⁹⁹ᵐTcO₄⁻, état +7) | — | **≥ 95 %** | [36,37] |\n| Claquage ⁶⁸Ge (générateur ⁶⁸Ga) | **≤ 0,001 %** | — | [9] |\n| Impureté ¹⁷ᵐLu (¹⁷⁷Lu thérapie) | **< 0,07 %** | — | [21,22] |\n| pH ¹⁸F-FDG | **4,5–8,5** | — | [41] |\n| Endotoxines bactériennes (IV) | **≤ 175 UI/dose** (2,5 UI/kg) | **175/V** (V = volume max en mL) | [42,24,23] |\n\nLe claquage du ⁹⁹Mo se mesure après interposition d'un **écran de plomb** : celui-ci filtre les photons de 140 keV du ⁹⁹ᵐTc et laisse passer les **γ de 740 keV** du ⁹⁹Mo, dont l'activité résiduelle est ainsi quantifiée [35]. L'aluminium se dose par test colorimétrique sur bandelette [34]. Pour le ¹⁸F-FDG, la Ph. Eur. ajoute des contrôles de **pureté chimique** : **Kryptofix 2.2.2** (test colorimétrique, ≤ 2,2 µg/mL typique) et solvants résiduels (acétonitrile < 4,1 mg/dose) [41].\n\n**▸ Stérilité et endotoxines.** Les préparations parentérales relèvent de la **monographie générale Ph. Eur. 0125 « Radiopharmaceutical preparations »** [42]. La limite d'endotoxines IV de **2,5 UI/kg** donne **175 UI/dose** pour un adulte de 70 kg ; elle s'abaisse fortement pour la voie intrathécale (**14 UI/dose** selon l'USP) [42,23,24]. La méthode chromogénique cinétique (test LAL — Limulus Amebocyte Lysate) est préférée [42].\n\n**▸ AMM, BPP et préparations magistrales.** Beaucoup de MRP sont des **trousses sous AMM** (générateurs, kits froids licenciés). Leur reconstitution selon la notice relève d'une préparation extemporanée encadrée. En France, le cadre opposable est constitué par les **Bonnes Pratiques de Préparation (BPP) de l'ANSM, édition 2023**, dont la **Ligne Directrice 4 (LD4)** est dédiée aux préparations radiopharmaceutiques et nettement plus détaillée que l'édition de 2007 qu'elle remplace [31,32]. La préparation s'effectue dans une **PUI autorisée par l'ARS**, sous la responsabilité d'un **radiopharmacien** agissant par délégation écrite du pharmacien gérant [53]. Ce radiopharmacien prend une **décision de conformité du lot formellement enregistrée**, y compris en cas d'expédition avant la fin de tous les contrôles (cas fréquent imposé par la décroissance) [52]. Au niveau international, l'**IAEA-TECDOC-1856** est le référentiel de CQ en production, et un projet OMS/IAEA encadre spécifiquement les **trousses froides préparées in-house** [12,55].",
+          "stats": [
+            {
+              "value": "≤ 0,1 %",
+              "label": "Claquage ⁹⁹Mo, limite Ph. Eur. (0,15 kBq/MBq USP) [12,34]"
+            },
+            {
+              "value": "≤ 5 ppm",
+              "label": "Aluminium dans l'éluat (Ph. Eur.) ; ≤ 10 µg/mL USP [12,34]"
+            },
+            {
+              "value": "175 UI",
+              "label": "Endotoxines max par dose IV adulte (2,5 UI/kg) [42,24]"
+            },
+            {
+              "value": "LD4",
+              "label": "Ligne directrice BPP ANSM 2023 dédiée aux MRP [31]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — divergences Ph. Eur. / USP",
+              "text": "Le claquage ⁹⁹Mo est **≤ 0,1 %** en Ph. Eur. mais exprimé en **0,15 kBq/MBq** (équivalent ~0,015 %) en USP, et l'aluminium **≤ 5 ppm** (Ph. Eur.) vs **≤ 10 µg/mL** (USP). Toujours préciser le référentiel pour éviter de déclarer conforme un lot qui ne l'est pas selon la pharmacopée applicable [12,34,35]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — HPLC pour les MRP thérapeutiques",
+              "text": "Pour ¹⁷⁷Lu-PSMA/DOTATATE et ⁶⁸Ga-DOTATOC, la **CCM seule est insuffisante** : la radiolyse génère des impuretés que seule la **HPLC avec détecteur radio** détecte (PRC > 95–98 %). On y associe une CCM pour piéger le ¹⁷⁷Lu colloïdal libre [21,22,9]."
+            },
+            {
+              "type": "info",
+              "title": "Libération avant résultat d'un contrôle",
+              "text": "La décroissance impose souvent d'expédier le lot avant la fin de l'essai de stérilité. La traçabilité repose alors sur la **décision de conformité enregistrée** du radiopharmacien, fondée sur les contrôles disponibles et la validation du procédé [52]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration illustrant la distinction entre le ⁹⁹ᵐTc (γ 140 keV) et le ⁹⁹Mo parent (γ 740 keV), base de la mesure du claquage par spectrométrie après écran de plomb.",
+            "caption": "Fig. 2 — La mesure du claquage ⁹⁹Mo exploite la différence d'énergie γ entre parent (740 keV) et fils (140 keV) : un écran de plomb filtre le ⁹⁹ᵐTc et révèle le ⁹⁹Mo résiduel."
+          }
+        },
+        {
+          "title": "D12 - Radioprotection et assurance qualité du manipulateur et du patient",
+          "text": "La radiopharmacie est l'un des postes les plus irradiants de la médecine nucléaire : on y manipule des **activités élevées de sources non scellées** à très courte distance. La radioprotection s'y pense par cible — manipulateur d'abord, patient ensuite — selon les trois principes de **justification, optimisation (ALARA — As Low As Reasonably Achievable) et limitation**.\n\n**▸ Le manipulateur : l'exposition des extrémités domine.** Le point chaud n'est pas la dose corps entier mais la **dose aux doigts** lors de l'élution, du fractionnement et de l'injection. Sans protège-seringue, une injection de **10 mCi (370 MBq)** de ⁹⁹ᵐTc délivre **80–130 mR** aux doigts de la main opérante [48]. Un **protège-seringue** de **2 mm de tungstène ou de plomb** suffit à atténuer les 140 keV du ⁹⁹ᵐTc et ramène la dose annuelle à **2–3 R/an** en usage systématique [48,50]. La surveillance se fait par **bague TLD (thermoluminescent dosimeter)** placée à la base du doigt de la main dominante, position où la dose est maximale [49]. Le ¹³¹I (γ 364 keV + β⁻) et le ¹⁸F (511 keV) imposent un blindage plus épais (tungstène) et une vigilance accrue [50].\n\n| Levier ALARA | Application en radiopharmacie | Source |\n|---|---|---|\n| **Temps** | Gestes répétés rapides ; préparation organisée à l'avance | [48] |\n| **Distance** | Pinces, manipulation à distance, jamais la source en main nue | [48] |\n| **Écran** | Protège-seringue 2 mm W/Pb (⁹⁹ᵐTc) ; enceinte blindée ; château de plomb | [48,50] |\n| **Dosimétrie** | Bague TLD à la base du doigt + dosimètre corps entier | [49] |\n\n**▸ Le patient : maîtrise de la dose et CQ libératoire.** La dose patient se gère en amont par le **contrôle qualité** (cf. D10–D11) et la **dosimétrie de référence ICRP 128** [29]. Les coefficients de dose efficace illustrent l'ordre de grandeur :\n\n| MRP | Coeff. dose efficace | Activité type | Dose efficace | Organe critique | Source |\n|---|---|---|---|---|---|\n| ¹⁸F-FDG | **0,019 mSv/MBq** | 555 MBq | ~10,6 mSv | **paroi vésicale** | [8,29] |\n| ⁹⁹ᵐTc-MDP | **~0,0057 mSv/MBq** | 740 MBq | ~4,2 mSv | os / vessie | [29,47] |\n| ⁹⁹ᵐTc-MIBI | ~0,0062 mSv/MBq | 740–1110 MBq | 6,5–10 mSv | paroi vésicale / colon | [29] |\n\nUn **CQ défaillant** se traduit directement par une dose patient inutile et un examen non diagnostique : un **claquage ⁹⁹Mo excessif** ajoute une irradiation sans bénéfice et un artefact de haute énergie [35] ; un **pertechnédate libre** (réduction incomplète par un SnCl₂ oxydé) se fixe sur thyroïde, estomac et glandes salivaires ; un excès de **Tc réduit hydrolysé colloïdal (HRTc/TcO₂)** parasite l'image par une captation hépato-splénique. L'**hydratation et la vidange vésicale fréquente** réduisent la dose à l'organe critique (paroi vésicale) pour le FDG et les phosphonates [25,8].\n\n**▸ Assurance qualité globale.** L'EANM impose une démarche de **quality risk management** appliquée aux MRP (validation des méthodes analytiques, qualification des systèmes automatisés) [11]. En France, la chaîne de responsabilité (PUI autorisée ARS, radiopharmacien, décision de conformité enregistrée) garantit la traçabilité du lot jusqu'au patient [52,53]. La gestion des **effluents et déchets radioactifs** s'appuie sur la décroissance — immédiate pour le ¹⁸F, prolongée (stockage) pour le ¹³¹I — sous procédure du service.",
+          "stats": [
+            {
+              "value": "80–130 mR",
+              "label": "Dose aux doigts par injection de 10 mCi ⁹⁹ᵐTc sans protège-seringue [48]"
+            },
+            {
+              "value": "2 mm W/Pb",
+              "label": "Épaisseur de protège-seringue suffisante pour le ⁹⁹ᵐTc [48]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace du ¹⁸F-FDG (ICRP 128) [8,29]"
+            },
+            {
+              "value": "~4,2 mSv",
+              "label": "Dose efficace d'une scintigraphie osseuse à 740 MBq de ⁹⁹ᵐTc-MDP [29]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la dose aux doigts est négligée",
+              "text": "Le dosimètre corps entier sous-estime massivement l'exposition réelle du radiopharmacien : la dose aux **extrémités** peut être un ordre de grandeur supérieure. Sans protège-seringue, on atteint **80–130 mR par injection** de ⁹⁹ᵐTc [48]. La **bague TLD** à la base du doigt opérant est indispensable à une surveillance réaliste [49]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le CQ est un acte de radioprotection du patient",
+              "text": "Un marquage raté n'est pas qu'un problème d'image : pertechnétate libre, colloïde HRTc ou claquage ⁹⁹Mo augmentent la **dose patient sans bénéfice diagnostique** et imposent souvent une réinjection. La pureté radiochimique ≥ 95 % et le contrôle du claquage protègent donc autant le patient que la qualité de l'examen [35,13]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Les trois leviers ALARA — temps, distance, écran — appliqués à la radiopharmacie : protège-seringue tungstène/plomb, manipulation à distance par pinces, gestes rapides organisés.",
+            "caption": "Fig. 3 — Temps / distance / écran : la radioprotection du radiopharmacien repose d'abord sur le protège-seringue (écran) et la bague TLD (surveillance des extrémités)."
+          }
+        },
+        {
+          "title": "E13 - E13 - Cas pratiques commentés : marquages ratés, CQ non conforme, incidents",
+          "text": "Chaque cas suit la trame *contexte → constat de CQ → analyse mécanistique → conduite à tenir*. Ils incarnent les seuils opposables : pureté radiochimique (**PRC**) du marquage, pureté radionucléidique de l'éluat, et conformité des préparations parentérales. Le radiopharmacien tranche par une **décision de conformité du lot formellement enregistrée** — y compris en cas d'expédition avant la fin de tous les contrôles, situation explicitement encadrée [52].\n\n**Rappel des seuils mobilisés ci-dessous** : claquage du **⁹⁹Mo ≤ 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** au moment de l'administration (USP) [34][35] ; **aluminium ≤ 10 µg/mL** d'éluat (USP) [34] ; PRC **≥ 95 %** pour la majorité des trousses stanneuses, **≥ 90 %** pour le ⁹⁹ᵐTc-MIBI, et **≥ 80 %** de complexe lipophile pour le ⁹⁹ᵐTc-HMPAO (instable, à injecter **< 30 min**) [45][46]. Pour les médicaments radiopharmaceutiques (**MRP**) thérapeutiques, la PRC est contrôlée par **chromatographie liquide haute performance (HPLC)**, méthode de référence détectant la radiolyse [21][22].",
+          "steps": [
+            {
+              "title": "Cas 1 — HMPAO « raté » : pertechnétate libre élevé sur une perfusion cérébrale",
+              "text": "*Contexte* : ⁹⁹ᵐTc-HMPAO (exametazime) reconstitué pour une **TEMP de perfusion cérébrale** ; l'éluat de pertechnétate utilisé datait de plus de 6 h après la dernière élution, et l'injection est survenue 40 min après reconstitution. *Constat CQ* : chromatographie sur couche mince instantanée (**ITLC-SG**) montrant un complexe lipophile **< 80 %**, avec excès de pertechnétate libre (**⁹⁹ᵐTcO₄⁻**) [45]. *Analyse* : le complexe primaire lipophile de l'HMPAO est intrinsèquement instable et se convertit rapidement en espèces secondaires hydrophiles non diffusibles ; un éluat « vieilli » (faible activité spécifique, sel d'étain partiellement oxydé) aggrave la dégradation [16][45]. *Image attendue si injecté* : fixation thyroïdienne, gastrique et des glandes salivaires (signature de l'iode/pertechnétate libre transposée au Tc libre), franchissement réduit de la barrière hémato-encéphalique → cartographie cérébrale ininterprétable. *Conduite* : rejet du lot ; ne reconstituer l'HMPAO qu'avec un **éluat frais (élution < 2 h, générateur réélué le matin même)** et injecter **dans les 30 min** [16][45]."
+            },
+            {
+              "title": "Cas 2 — Claquage ⁹⁹Mo : « hot spots » de haute énergie sur une scintigraphie osseuse",
+              "text": "*Contexte* : première élution de la journée sur un générateur neuf ; scintigraphie osseuse au ⁹⁹ᵐTc-MDP montrant un bruit de fond diffus et des foyers atypiques. *Constat CQ* : test de claquage (mesure de l'activimètre éluat dans un conteneur de plomb, qui arrête le photon de 140 keV mais laisse passer le γ de **740 keV** du ⁹⁹Mo) révélant un breakthrough **> 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** [34][35]. *Analyse* : rupture de colonne d'alumine ou surcharge ; le ⁹⁹Mo (T½ **66 h**) injecté irradie inutilement le patient (organe critique digestif) et son rayonnement de haute énergie traverse le collimateur basse énergie → artefacts et perte de contraste [35][39]. *Conduite* : non-conformité bloquante, éluat écarté ; documenter au registre, vérifier l'historique du générateur, alerter le fournisseur ; rappel réglementaire (NRC IN 2008-22, 10 CFR 35.204) imposant le contrôle du breakthrough avant toute administration [35]."
+            },
+            {
+              "title": "Cas 3 — Aluminium excessif : floculation du soufre colloïdal / agrégats sur MAA",
+              "text": "*Contexte* : préparation d'un ⁹⁹ᵐTc-MAA pour perfusion pulmonaire à partir d'un générateur dont la colonne se dégrade. *Constat CQ* : bandelette colorimétrique à l'aluminium positive au-delà de **10 µg/mL** [34]. *Analyse* : un excès d'**Al³⁺** dans l'éluat catalyse l'agrégation des particules colloïdales et fausse la taille des macroagrégats d'albumine ; risque d'agrégats trop gros (micro-embols artefactuels, accumulation hépatique parasite). *Conduite* : éluat refusé pour les trousses sensibles ; le dosage colorimétrique de l'aluminium est un contrôle de routine de l'éluat, au même titre que le pH (cible ~4–7, moyenne mesurée **5,8 ± 0,6**) [37]."
+            },
+            {
+              "title": "Cas 4 — Endotoxines : choc fébrile post-injection (pyrogen reaction)",
+              "text": "*Contexte* : réaction fébrile avec frissons survenant dans les minutes suivant l'injection IV d'un MRP préparé en lot. *Constat CQ rétrospectif* : test **LAL (Limulus Amebocyte Lysate)** dépassant la limite parentérale. *Analyse* : la limite d'endotoxines pour la voie IV est de **2,5 UI/kg**, soit **≤ 175 UI par dose** pour un adulte de 70 kg (et **≤ 14 UI/dose** en intrathécal) ; un dépassement traduit une contamination (matières premières, eau, défaut d'asepsie) [23][24]. *Conduite* : déclaration de pharmacovigilance/matériovigilance, gel du lot et des consommables, enquête sur la chaîne aseptique ; la stérilité étant validée *a posteriori* (média-fill, monographie générale Ph. Eur. 0125), la maîtrise du procédé prime sur le résultat tardif du fait de la courte période [42][10]."
+            },
+            {
+              "title": "Cas 5 — ¹⁸F-FDG : Kryptofix résiduel et radiolyse sur un lot TEP",
+              "text": "*Contexte* : libération d'un lot de ¹⁸F-FDG de cyclotron en fin de synthèse. *Constat CQ* : test colorimétrique (spot test) du **Kryptofix 2.2.2** proche de la limite, et PRC en baisse à l'HPLC. *Analyse* : le Kryptofix (aminopolyéther de transfert de phase) est toxique → limite Ph. Eur. (≈ **2,2 µg/mL**) ; les solvants résiduels sont bornés (acétonitrile **< 4,1 mg/dose**), le pH doit rester **4,5–8,5**, et la radiolyse abaisse la PRC en deçà de **95 %** [41]. *Conduite* : si un critère est hors spécification, le lot n'est pas libéré ; l'ajout d'un radioprotecteur (éthanol/ascorbate) et la révision du module de synthèse corrigent la radiolyse [41][21]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "≤ 0,15 kBq/MBq",
+              "label": "Claquage ⁹⁹Mo toléré (USP) [34]"
+            },
+            {
+              "value": "≤ 10 µg/mL",
+              "label": "Aluminium maximal dans l'éluat (USP) [34]"
+            },
+            {
+              "value": "175 UI/dose",
+              "label": "Limite endotoxines IV adulte 70 kg [23][24]"
+            },
+            {
+              "value": "< 30 min",
+              "label": "Fenêtre d'injection du ⁹⁹ᵐTc-HMPAO [45]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'éluat « vieux » sabote les marquages exigeants",
+              "text": "Un éluat resté plus de 6 h après élution a une activité spécifique chutée et un excès d'étain oxydé : il fait échouer en priorité les trousses fragiles (**HMPAO**, **MAG3**) avant même tout autre paramètre. Pour ces marquages, réélue le générateur le matin et marque avec un éluat de moins de 2 h [16][45]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — corréler l'artefact image au mode d'échec du marquage",
+              "text": "Une fixation thyroïde + estomac + glandes salivaires = **pertechnétate libre** (réduction incomplète, SnCl₂ oxydé). Une captation hépatique/splénique parasite = **Tc réduit-hydrolysé colloïdal** (excès de SnCl₂). Lire l'image, c'est déjà diagnostiquer le marquage [45][46]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma d'un générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine fixant le ⁹⁹Mo, élution du pertechnétate ⁹⁹ᵐTcO₄⁻ au NaCl 0,9 %, points de contrôle qualité (claquage ⁹⁹Mo, aluminium, pH) en sortie.",
+            "caption": "Fig. E13 — Générateur ⁹⁹Mo/⁹⁹ᵐTc et points de CQ de l'éluat (claquage ⁹⁹Mo, aluminium, pH), prérequis de tout marquage de trousse froide."
+          }
+        },
+        {
+          "title": "E14 - E14 - Tendances et automatisation : modules de synthèse, dose unitaire et qualité 4.0",
+          "text": "La radiopharmacie évolue d'une préparation manuelle « à la paillasse » vers des procédés **automatisés, tracés et fondés sur le risque**. Trois moteurs structurent cette mutation : la synthèse automatisée des MRP de cyclotron et de générateur, la **dose unitaire** (unit-dose), et l'intégration du **quality risk management (QRM)** et de l'analytique en continu — la « qualité 4.0 ».\n\n**Modules de synthèse automatisés.** Les MRP TEP (¹⁸F-FDG par substitution nucléophile, ⁶⁸Ga-DOTATOC/PSMA élués du générateur **⁶⁸Ge/⁶⁸Ga**) sont produits dans des **modules en enceinte blindée**, en environnement classé. Le guide **EANM cGRPP (current Good Radiopharmacy Practice) 2021** impose la manipulation aseptique en **grade A** (poste/isolateur), avec environnement de fond **grade C** pour les modules en enceinte ou **grade D** autour des isolateurs [10]. L'automatisation réduit l'exposition des opérateurs : la dose d'extrémité aux doigts lors de la manipulation reste le point critique (jusqu'à **80–130 mR par injection** de 10 mCi de ⁹⁹ᵐTc **sans protège-seringue**), ramenée à **2–3 R/an** par l'usage systématique d'un protège-seringue tungstène/plomb [48][50].\n\n**Contrôle qualité automatisé et HPLC en routine.** Pour les MRP thérapeutiques (**¹⁷⁷Lu-PSMA, ¹⁷⁷Lu-DOTATATE**), l'HPLC avec détecteur radio est la méthode de référence : elle détecte les produits de **radiolyse** invisibles en CCM, avec PRC cible **≥ 95 %** ; un protocole HPLC + CCM est combiné pour repérer le **¹⁷⁷Lu colloïdal** [21][22]. La pureté radionucléidique est vérifiée par **spectrométrie γ sur détecteur germanium hyper-pur (HPGe)** : identification par énergie γ et confirmation par la T½ [56]. Pour le ¹⁷⁷Lu, la pureté radionucléidique attendue est **> 99,9 %** avec impureté **¹⁷⁷ᵐLu < 0,07 %** (Ph. Eur.) [22].\n\n**Dose unitaire et industrialisation des trousses froides.** Le projet **OMS/IAEA de GMP pour les trousses froides « in-house »** (consultation QAS23.932) vise à harmoniser la production de kits prêts à l'emploi, dans la logique d'une dose unitaire tracée du lot au patient [55]. En France, la préparation reste réalisée en **PUI (pharmacie à usage intérieur) autorisée par l'ARS**, sous la responsabilité d'un **radiopharmacien** agissant par délégation écrite du pharmacien gérant [53][52].",
+          "steps": [
+            {
+              "title": "Élution & qualification",
+              "text": "Élution du générateur (⁹⁹ᵐTc ou ⁶⁸Ga) ou réception du ¹⁸F⁻ de cyclotron ; CQ d'entrée : claquage parent (⁹⁹Mo ≤ 0,15 kBq/MBq [34] ; ⁶⁸Ge ≤ 0,001 % [9]), aluminium, pH, activité à l'activimètre [34][37]."
+            },
+            {
+              "title": "Synthèse / marquage automatisé",
+              "text": "Module en grade A : substitution nucléophile (FDG), complexation DOTA (⁶⁸Ga/¹⁷⁷Lu) ou reconstitution de trousse stanneuse (SnCl₂) ; paramètres de température/temps verrouillés par recette électronique [10][41]."
+            },
+            {
+              "title": "CQ libératoire automatisé",
+              "text": "PRC par HPLC/CCM (≥ 95 %, HMPAO ≥ 80 %, MIBI ≥ 90 %), pureté chimique (Kryptofix, solvants résiduels), pH, spectrométrie γ HPGe pour la pureté radionucléidique [21][41][45][56]."
+            },
+            {
+              "title": "Libération & dose unitaire",
+              "text": "Décision de conformité du lot enregistrée par le radiopharmacien (possible avant fin des contrôles longs, tracée), seringues unitaires datées, intégrité du filtre stérilisant vérifiée (point de bulle) [52][10]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "Grade A",
+              "label": "Classe ISO de manipulation aseptique (cGRPP) [10]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "PRC cible par HPLC des MRP ¹⁷⁷Lu [21][22]"
+            },
+            {
+              "value": "> 99,9 %",
+              "label": "Pureté radionucléidique attendue (¹⁷⁷Lu, ¹⁸F) [22][41]"
+            },
+            {
+              "value": "2–3 R/an",
+              "label": "Dose doigts avec protège-seringue systématique [48]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Quality risk management (QRM) — le cadre EANM 2022",
+              "text": "L'EANM a publié une guideline dédiée au **management du risque qualité** des radiopharmaceutiques : elle structure la validation des méthodes analytiques, la qualification des systèmes automatisés et l'analyse de risque procédé, en miroir des BPF européennes (EudraLex vol. 4) [11][10]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — automatiser ne dispense pas du CQ libératoire",
+              "text": "Un module de synthèse réduit la variabilité et la dose opérateur, mais la PRC par HPLC, le test Kryptofix et la spectrométrie HPGe restent des **critères de libération** opposables. La « qualité 4.0 » trace le procédé en continu ; elle ne remplace pas la décision de conformité du radiopharmacien [11][52]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique : imager avec un isotope diagnostique (⁶⁸Ga, ¹²³I), sélectionner par avidité, traiter avec l'isotope thérapeutique apparié (¹⁷⁷Lu, ¹³¹I), réévaluer — chaque étape jalonnée par un contrôle qualité.",
+            "caption": "Fig. E14 — La paire théranostique (imager/traiter) repose à chaque étape sur un CQ automatisé : élution, synthèse, PRC par HPLC, libération en dose unitaire."
+          }
+        },
+        {
+          "title": "E15 - E15 - Points clés, pièges fréquents et FAQ du contrôle qualité",
+          "text": "**FAQ — questions du résident et pièges de QCM**\n\n**Pourquoi le SnCl₂ est-il l'élément critique d'une trousse froide ?** Parce que l'étain(II) réduit le technétium(+7) du pertechnétate en un état d'oxydation chélatable. Son oxydation à l'air → réduction incomplète → excès de **pertechnétate libre** et échec de marquage [10][16].\n\n**ITLC ou HPLC : quand utiliser laquelle ?** La **CCM/ITLC** est la méthode de routine, rapide, pour les trousses au ⁹⁹ᵐTc ; l'**HPLC radio** est exigée pour les MRP thérapeutiques (¹⁷⁷Lu) et TEP car elle seule détecte la **radiolyse** [21][45].\n\n**Quel seuil de claquage ⁹⁹Mo ne pas dépasser ?** **0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** (= 0,15 µCi/mCi) au moment de l'administration, selon l'USP ; au-delà, l'éluat est refusé [34][35].\n\n**Pourquoi l'HMPAO est-il à part ?** Son complexe lipophile est **instable** : PRC acceptée dès **≥ 80 %** mais injection impérative **< 30 min**, avec éluat frais [45].\n\n**Quelle limite d'endotoxines pour une dose IV ?** **175 UI/dose** pour un adulte de 70 kg (2,5 UI/kg) [23][24].\n\n**Comment vérifie-t-on la pureté radionucléidique d'un MRP ?** Par **spectrométrie γ sur détecteur HPGe** : énergie γ caractéristique + vérification de la période [56].\n\n**Une image montre une fixation thyroïde + estomac : que conclure ?** Présence de **pertechnétate libre** (réduction incomplète / SnCl₂ oxydé) → vérifier la PRC et la préparation [45].\n\n**Quel texte fait foi en France ?** Les **Bonnes Pratiques de Préparation, édition 2023 (ANSM), Ligne Directrice 4** dédiée aux MRP [31][32].",
+          "list": [
+            "Un **MRP** = un **vecteur** (molécule ciblant un organe/processus) + un **radionucléide** ; le **⁹⁹ᵐTc** couvre ~**80 %** des actes de médecine nucléaire mondiaux, γ de **140 keV**, T½ **6 h**, issu du générateur ⁹⁹Mo/⁹⁹ᵐTc [38][39][1].",
+            "**Trousse froide** = lyophilisat stérile contenant le ligand + un **agent réducteur (chlorure stanneux, SnCl₂)** qui réduit le Tc(+7) du pertechnétate pour permettre sa chélation ; l'oxydation du SnCl₂ est la cause n°1 d'échec de marquage [10][16].",
+            "**PRC ≥ 95 %** est la règle (MDP/HMDP, DMSA, DTPA, MAG3) ; exceptions à mémoriser : **MIBI ≥ 90 %** et surtout **HMPAO ≥ 80 %** (instable, injection **< 30 min**) [45][46].",
+            "**CQ obligatoire de l'éluat** : claquage **⁹⁹Mo ≤ 0,15 kBq/MBq** (USP) et **aluminium ≤ 10 µg/mL**, mesurés à chaque élution [34][35].",
+            "**Méthode de routine** de la PRC = **chromatographie ITLC-SG** : les deux impuretés recherchées sont le **pertechnétate libre (TcO₄⁻)** et le **Tc réduit-hydrolysé colloïdal (TcO₂)** [45].",
+            "**Méthode de référence** des MRP thérapeutiques et TEP = **HPLC radio** : elle seule détecte les produits de **radiolyse** (¹⁷⁷Lu-PSMA/DOTATATE PRC ≥ 95 % ; ⁶⁸Ga-DOTATOC/PSMA > 98 %) [21][22][9].",
+            "**Pureté radionucléidique** vérifiée par spectrométrie γ sur **HPGe** ; ¹⁸F-FDG **≥ 99,9 %**, ⁶⁸Ge breakthrough **≤ 0,001 %**, ¹⁷⁷ᵐLu **< 0,07 %** [41][9][22][56].",
+            "**Endotoxines (test LAL)** : limite IV **2,5 UI/kg → 175 UI/dose** adulte (et 14 UI/dose en intrathécal) ; **stérilité** validée *a posteriori* (Ph. Eur. monographie 0125) → la maîtrise du procédé prime [23][24][42].",
+            "**Pureté chimique du FDG** : **Kryptofix 2.2.2** (≈ 2,2 µg/mL), acétonitrile **< 4,1 mg/dose**, **pH 4,5–8,5** [41].",
+            "**Dosimétrie patient** (ICRP 128) : ¹⁸F-FDG **0,019 mSv/MBq**, ⁹⁹ᵐTc-MDP **~0,0057 mSv/MBq** (≈ 4,2 mSv pour 740 MBq) [29][47].",
+            "**Cadre opposable France** = **BPP ANSM 2023, Ligne Directrice 4 (LD4)** ; préparation en PUI autorisée, **décision de conformité du lot** enregistrée par le radiopharmacien [31][32][52][53]."
+          ],
+          "stats": [
+            {
+              "value": "~80 %",
+              "label": "Part mondiale des actes au ⁹⁹ᵐTc [38][39]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "PRC règle générale des trousses ⁹⁹ᵐTc [45]"
+            },
+            {
+              "value": "≥ 80 %",
+              "label": "PRC minimale du ⁹⁹ᵐTc-HMPAO (exception) [45]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Coefficient de dose ¹⁸F-FDG (ICRP 128) [29]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — confondre les trois « puretés »",
+              "text": "**Pureté radiochimique (PRC)** = fraction de l'activité sous la bonne forme chimique (CCM/HPLC). **Pureté radionucléidique** = absence d'autres radionucléides (HPGe, claquage ⁹⁹Mo/⁶⁸Ge). **Pureté chimique** = absence d'impuretés non radioactives (Kryptofix, Al³⁺, solvants). Trois tests, trois seuils, trois causes d'échec distinctes [41][45][56]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — la stérilité se libère avant son résultat",
+              "text": "La courte période physique impose souvent de libérer et d'injecter avant la fin de l'essai de stérilité (Ph. Eur. 0125). C'est la **maîtrise du procédé aseptique** (grade A, média-fill, intégrité du filtre, endotoxines LAL) qui garantit la sécurité, pas le résultat tardif [10][42][23]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la PRC ≥ 95 % a des exceptions à connaître par cœur",
+              "text": "Règle générale **≥ 95 %** ; mais **MIBI ≥ 90 %** et **HMPAO ≥ 80 %**. Citer ces deux exceptions distingue un raisonnement maîtrisé d'une réponse approximative en QCM [45][46]."
+            }
+          ]
+        },
+        {
+          "title": "E16 - E16 - Références & liens sortants typés",
+          "text": "Références complètes et datées listées en bas de page (**Sources & Références**). Référentiels et normes mobilisés dans l'article : guide **EANM cGRPP 2021** (Gillings et al., préparation à petite échelle, grades A–D) [10] ; **EANM quality risk management 2022** [11] ; **IAEA-TECDOC-1856** (CQ en production) [12] ; **EDQM / Ph. Eur. monographie générale 0125** (stérilité, endotoxines) [42] et essais **2.6.14 / 5.1.10** ; **USP <85> Bacterial Endotoxins** (limite 175/V) [24] et **USP Sodium Pertechnetate** (claquage ⁹⁹Mo 0,15 kBq/MBq, Al ≤ 10 µg/mL) [34][35] ; **ICRP Publication 128** (dosimétrie patient) [29] ; **BPP ANSM 2023, LD4** (cadre français opposable) [31][32] ; **CST ANSM 2022** et **SNRPH 2025** (rôle du radiopharmacien, décision de conformité) [52][53] ; **SFMN 2026** (RIV/théranostique) [54] ; projet **OMS/IAEA GMP trousses froides** (QAS23.932) [55].\n\nValeurs analytiques par radionucléide et par MRP : production et caractéristiques du ⁹⁹ᵐTc [1][2][38][39], ¹⁸F [3][4][7][40], ⁶⁸Ga [9], ¹³¹I [5][6], ¹⁷⁷Lu [21][22] ; PRC par chromatographie [13][14][15][17][18][19][45][46] ; CQ générateur et éluat [33][34][35][36][37][56][57] ; pureté chimique et synthèse du FDG [41] ; activités adulte/pédiatrie (carte EANM, consensus nord-américain) [25][26][27][28][51] ; thérapie par radionucléides (Lutathera) [30] ; radioprotection des travailleurs [47][48][49][50].\n\n**Carte de liens (réseau de l'article)** — Traceurs : ⁹⁹ᵐTc-pertechnétate, ⁹⁹ᵐTc-MDP, ⁹⁹ᵐTc-MIBI, ⁹⁹ᵐTc-HMPAO, ⁹⁹ᵐTc-MAG3, ¹⁸F-FDG, ⁶⁸Ga-DOTATOC, ¹⁷⁷Lu-PSMA, ¹⁷⁷Lu-DOTATATE · Examens : TEMP osseuse, TEMP de perfusion cérébrale, scintigraphie myocardique, TEP au ¹⁸F-FDG, TEP au ⁶⁸Ga-DOTATATE · Maladies : tumeurs neuroendocrines, cancer de la prostate · Théranostique : ¹⁷⁷Lu-DOTATATE, ¹⁷⁷Lu-PSMA-617, ¹³¹I-MIBG · Scores/normes : Ph. Eur. 0125, USP <85>, ICRP 128, BPP LD4. *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+          "list": [
+            "[10] EANM cGRPP 2021 — préparation à petite échelle, grades A–D, intégrité du filtre stérilisant.",
+            "[11] EANM quality risk management for radiopharmaceuticals 2022.",
+            "[12] IAEA-TECDOC-1856 — Quality Control in the Production of Radiopharmaceuticals.",
+            "[31][32] BPP ANSM édition 2023, Ligne Directrice 4 (préparations radiopharmaceutiques).",
+            "[24] USP <85> Bacterial Endotoxins Test (175/V) ; [34][35] claquage ⁹⁹Mo 0,15 kBq/MBq, Al ≤ 10 µg/mL.",
+            "[29] ICRP Publication 128 — dosimétrie patient (FDG 0,019 mSv/MBq, MDP ~0,0057 mSv/MBq).",
+            "[42] EDQM / Ph. Eur. monographie générale 0125 — stérilité et endotoxines des préparations radiopharmaceutiques.",
+            "[45][46] PRC par chromatographie (HMPAO ≥ 80 %, HMDP, tétrofosmine, sestamibi ≥ 90 %).",
+            "[21][22] CQ des préparations ¹⁷⁷Lu-PSMA/DOTATATE par HPLC (radiolyse, ¹⁷⁷ᵐLu).",
+            "[52][53] ANSM CST 2022 & SNRPH 2025 — rôle du radiopharmacien et décision de conformité du lot."
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Hiérarchie des textes opposables",
+              "text": "Pour la pratique française : **BPP ANSM 2023 (LD4)** [31] encadre la préparation en PUI ; la **Ph. Eur.** fixe les spécifications de pureté (monographies + monographie générale 0125) [42] ; le guide **EANM cGRPP 2021** [10] et le **QRM EANM 2022** [11] donnent l'état de l'art européen ; **IAEA-TECDOC-1856** [12] est le référentiel international de CQ en production."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
