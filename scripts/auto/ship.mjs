@@ -49,6 +49,18 @@ function san(secs) {
 }
 for (const m of ['patient', 'medecin_non_nuc', 'medecin_nuc']) if (draft[m] && draft[m].sections) san(draft[m].sections);
 
+// Normalisation des isotopes : le SEUL Tc métastable d'imagerie clinique est le
+// ⁹⁹ᵐTc. Corrige toute erreur systématique de chiffres en exposant (⁹ᵐ/⁹⁵ᵐ/²⁹ᵐ/¹⁹⁹ᵐTc → ⁹⁹ᵐTc).
+const TC_RE = new RegExp('[⁰¹²³⁴⁵⁶⁷⁸⁹]+ᵐTc', 'g');
+let isoFixed = 0;
+function normIso(n) {
+  if (typeof n === 'string') return n.replace(TC_RE, (m) => { if (m !== '⁹⁹ᵐTc') isoFixed++; return '⁹⁹ᵐTc'; });
+  if (Array.isArray(n)) return n.map(normIso);
+  if (n && typeof n === 'object') { for (const k of Object.keys(n)) n[k] = normIso(n[k]); return n; }
+  return n;
+}
+normIso(draft);
+
 // Réparation déterministe : retire les citations [n] orphelines (n > nb de sources),
 // 1re cause d'échec validateDraft (un rédacteur sur-numérote). Le claim reste (devient
 // non cité = simple warning) ; on le NOTE (cit-strip) pour la relecture humaine.
@@ -126,5 +138,5 @@ try {
   for (let k = 0; k < 3 && !pushed; k++) { try { run('git push origin main'); pushed = true; } catch (e) { /* retry */ } }
 } catch (e) { /* commit peut échouer si rien à committer ; non bloquant */ }
 
-mark(id, 'done', `auto OK ${warnings.length}w ${major.length}maj${citStripped ? ' cit-strip' : ''}${pushed ? '' : ' PUSH-A-REFAIRE'}`);
-emit({ status: 'done', pushed, citStripped, warnings: warnings.length, major: major.length, minor: minor.length });
+mark(id, 'done', `auto OK ${warnings.length}w ${major.length}maj${citStripped ? ' cit-strip' : ''}${isoFixed ? ' iso:' + isoFixed : ''}${pushed ? '' : ' PUSH-A-REFAIRE'}`);
+emit({ status: 'done', pushed, citStripped, isoFixed, warnings: warnings.length, major: major.length, minor: minor.length });
