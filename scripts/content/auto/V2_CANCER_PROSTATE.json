@@ -1,0 +1,1102 @@
+{
+  "id": "V2_CANCER_PROSTATE",
+  "cat": "prostate",
+  "catLabel": "Cancer de la Prostate",
+  "title": "Cancer de la prostate",
+  "difficulty": "avancé",
+  "tags": [
+    "cancer de la prostate",
+    "adénocarcinome prostatique",
+    "PSMA",
+    "TEP-PSMA",
+    "récidive biochimique",
+    "mCRPC",
+    "177Lu-PSMA-617",
+    "Pluvicto",
+    "théranostique",
+    "Gleason ISUP",
+    "scintigraphie osseuse",
+    "PSA"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Bray F, et al. Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2024;74(3):229-263.",
+      "url": "https://acsjournals.onlinelibrary.wiley.com/doi/10.3322/caac.21834"
+    },
+    {
+      "title": "[2] Prostate fact sheet — Global Cancer Observatory (GLOBOCAN 2022), IARC/WHO",
+      "url": "https://gco.iarc.who.int/media/globocan/factsheets/cancers/27-prostate-fact-sheet.pdf"
+    },
+    {
+      "title": "[3] Recent Patterns and Trends in Global Prostate Cancer Incidence and Mortality: An Update. Eur Urol. 2024",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0302283824027076"
+    },
+    {
+      "title": "[4] Epstein JI, et al. The 2014 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma: Definition of Grading Patterns and Proposal for a New Grading System. Am J Surg Pathol. 2016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26492179/"
+    },
+    {
+      "title": "[5] The Relationship between D'Amico and ISUP Risk Classifications and 68Ga-PSMA PET/CT SUVmax Values. Curr Oncol. 2024 (MDPI)",
+      "url": "https://www.mdpi.com/1718-7729/31/9/391"
+    },
+    {
+      "title": "[6] Fendler WP, et al. PSMA PET/CT: joint EANM procedure guideline/SNMMI procedure standard for prostate cancer imaging 2.0. Eur J Nucl Med Mol Imaging. 2023",
+      "url": "https://link.springer.com/article/10.1007/s00259-022-06089-w"
+    },
+    {
+      "title": "[7] Ceci F, et al. E-PSMA: the EANM standardized reporting guidelines v1.0 for PSMA-PET. Eur J Nucl Med Mol Imaging. 2021 (PMC8113168)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8113168/"
+    },
+    {
+      "title": "[8] Sartor O, et al. Lutetium-177–PSMA-617 for Metastatic Castration-Resistant Prostate Cancer (VISION). N Engl J Med. 2021 (doi:10.1056/NEJMoa2107322)",
+      "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2107322"
+    },
+    {
+      "title": "[9] Kuo PH, et al. Renal and Multiorgan Safety of 177Lu-PSMA-617 in mCRPC — VISION Dosimetry Substudy. J Nucl Med. 2024;65(1):71 (PMC10755516)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10755516/"
+    },
+    {
+      "title": "[10] Hofman MS, et al. Prostate-specific membrane antigen PET-CT in patients with high-risk prostate cancer before curative-intent surgery or radiotherapy (proPSMA): a prospective, randomised, multicentre study. Lancet. 2020",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30314-7/abstract"
+    },
+    {
+      "title": "[11] Sandgren K, et al. Radiation dosimetry of [68Ga]PSMA-11 in low-risk prostate cancer patients. EJNMMI Phys. 2019 (PMC6328430)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6328430/"
+    },
+    {
+      "title": "[12] Evans JC, et al. The therapeutic and diagnostic potential of the prostate specific membrane antigen/glutamate carboxypeptidase II (PSMA/GCPII) in cancer and neurological disease. Br J Pharmacol. 2016",
+      "url": "https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/bph.13576"
+    },
+    {
+      "title": "[13] Glutamate carboxypeptidase II (FOLH1/PSMA) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Glutamate_carboxypeptidase_II"
+    },
+    {
+      "title": "[14] Emmett L, et al. Rapid Modulation of PSMA Expression by Androgen Deprivation: Serial 68Ga-PSMA-11 PET. J Nucl Med. 2019 (PMID 30552200)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30552200/"
+    },
+    {
+      "title": "[15] Afshar-Oromieh A, et al. Impact of long-term androgen deprivation therapy on PSMA ligand PET/CT in patients with castration-sensitive prostate cancer. Eur J Nucl Med Mol Imaging. 2018 (PMC6182397)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6182397/"
+    },
+    {
+      "title": "[16] Mapelli P, et al. 11C- or 18F-Choline PET/CT for Imaging Evaluation of Biochemical Recurrence of Prostate Cancer. J Nucl Med. 2016;57(Suppl 3):43S",
+      "url": "https://jnm.snmjournals.org/content/57/Supplement_3/43S"
+    },
+    {
+      "title": "[17] Treglia G, et al. The Diagnostic Role of 18F-Choline, 18F-Fluciclovine and 18F-PSMA PET/CT in the Detection of Prostate Cancer With Biochemical Recurrence: A Meta-Analysis. Front Oncol. 2021",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.684629/full"
+    },
+    {
+      "title": "[18] 11C-Choline PET/CT in Recurrent Prostate Cancer: Retrospective Analysis in a Large U.S. Patient Series. J Nucl Med. 2020;61(6):827",
+      "url": "https://jnm.snmjournals.org/content/61/6/827"
+    },
+    {
+      "title": "[19] Löfgren J, et al. 18F-NaF-PET/CT and 99mTc-MDP Bone Scintigraphy in the Detection of Bone Metastases in Prostate Cancer (PMID 27825429)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27825429/"
+    },
+    {
+      "title": "[20] Comparison of PSMA-based 18F-DCFPyL PET/CT and Tc-99m MDP bone scan in detection of bone metastasis in prostate cancer (PMC10009469)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10009469/"
+    },
+    {
+      "title": "[21] Pollen JJ, Witztum KF, Ashburn WL. The flare phenomenon on radionuclide bone scan in metastatic prostate cancer. AJR Am J Roentgenol. 1984;142(4):773-776",
+      "url": "https://www.ajronline.org/doi/10.2214/ajr.142.4.773"
+    },
+    {
+      "title": "[22] UK-based clinical testing programme for somatic and germline BRCA1/2, ATM and CDK12 mutations in prostate cancer: first results (PMC11880781)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11880781/"
+    },
+    {
+      "title": "[23] PSMA PET Imaging in Prostate Cancer: Staging for Unfavorable Intermediate and High-Risk Disease (UroToday, NCCN/EAU summary)",
+      "url": "https://www.urotoday.com/library-resources/imaging-center/139873-psma-pet-imaging-in-prostate-cancer-staging-for-unfavorable-intermediate-and-high-risk-disease.html"
+    },
+    {
+      "title": "[24] Best Approaches and Updates for Prostate Cancer Biochemical Recurrence. ASCO Educational Book. 2022 (EDBK_351033)",
+      "url": "https://ascopubs.org/doi/10.1200/EDBK_351033"
+    },
+    {
+      "title": "[25] FDA Approval Summary: Lutetium Lu 177 Vipivotide Tetraxetan for Patients with mCRPC. Clin Cancer Res. 2023;29(9):1651",
+      "url": "https://aacrjournals.org/clincancerres/article/29/9/1651/725864/FDA-Approval-Summary-Lutetium-Lu-177-Vipivotide"
+    },
+    {
+      "title": "[26] PSMAfore Data Drive Expanded Approval of Lutetium Lu 177 Vipivotide Tetraxetan in mCRPC — OncLive",
+      "url": "https://www.onclive.com/view/psmafore-data-drive-expanded-approval-of-lutetium-lu-177-vipivotide-tetraxetan-in-mcrpc"
+    },
+    {
+      "title": "[27] FDA Expands Approval of Pluvicto in PSMA-Positive Metastatic CRPC — Renal & Urology News",
+      "url": "https://www.renalandurologynews.com/news/fda-expands-approval-pluvicto-psma-positive-metastatic-crpc/"
+    },
+    {
+      "title": "[28] Hofman MS, et al. [177Lu]Lu-PSMA-617 versus cabazitaxel in patients with metastatic castration-resistant prostate cancer (TheraP, ANZUP 1603): a randomised, open-label, phase 2 trial. Lancet. 2021",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00237-3/abstract"
+    },
+    {
+      "title": "[29] Joint EANM/SNMMI procedure guideline for the use of 177Lu-labeled PSMA-targeted radioligand-therapy (177Lu-PSMA-RLT). Eur J Nucl Med Mol Imaging. 2023",
+      "url": "https://link.springer.com/article/10.1007/s00259-023-06255-8"
+    },
+    {
+      "title": "[30] Kratochwil C, et al. 225Ac-PSMA-617 for PSMA-Targeted α-Radiation Therapy of Metastatic Castration-Resistant Prostate Cancer. J Nucl Med. 2016;57(12):1941 (PMID 27390158)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27390158/"
+    },
+    {
+      "title": "[31] Giesel FL, et al. F-18 labelled PSMA-1007: biodistribution, radiation dosimetry and histopathological validation of tumor lesions in prostate cancer patients. Eur J Nucl Med Mol Imaging. 2017",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3573-4"
+    },
+    {
+      "title": "[32] Comparative Performance of 68Ga-PSMA-11 PET/CT and Conventional Imaging in the Primary Staging of High-Risk Prostate Cancer Candidates for Radical Prostatectomy (PMC11394562)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11394562/"
+    },
+    {
+      "title": "[33] FDA D.I.S.C.O. Burst Edition: FDA approval of Pluvicto (lutetium Lu 177 vipivotide tetraxetan)",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-disco-burst-edition-fda-approval-pluvicto-lutetium-lu-177-vipivotide-tetraxetan-treatment-adult"
+    },
+    {
+      "title": "[34] Pluvicto — European Medicines Agency (EMA) EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/pluvicto"
+    },
+    {
+      "title": "[35] FDA approves second PSMA-targeted PET imaging drug (18F-DCFPyL/Pylarify) for men with prostate cancer",
+      "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-second-psma-targeted-pet-imaging-drug-men-prostate-cancer"
+    },
+    {
+      "title": "[36] Hennrich U, et al. Revolutionizing Prostate Cancer Detection: The Role of Approved PSMA-PET Imaging Agents. Pharmaceuticals (Basel). 2025 (PMC12196200)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12196200/"
+    },
+    {
+      "title": "[37] Kratochwil C, et al. Efficacy and safety of 225Ac-PSMA-617 targeted alpha therapy in metastatic castration-resistant prostate cancer patients (PMC7415797)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7415797/"
+    },
+    {
+      "title": "[38] Sartor O, et al. 177Lu-PSMA-617 versus a change of androgen receptor pathway inhibitor therapy for taxane-naive patients with progressive mCRPC (PSMAfore): a phase 3, randomised, controlled trial. Lancet. 2024",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01653-2/abstract"
+    },
+    {
+      "title": "[39] Boorjian SA, et al. Contemporary Evaluation of the D'Amico Risk Classification of Prostate Cancer. Urology. 2008 (PMID 18068450)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18068450/"
+    },
+    {
+      "title": "[40] Jadvar H, et al. Appropriate Use Criteria for Prostate-Specific Membrane Antigen PET Imaging (SNMMI). J Nucl Med. 2022 (PMC8717184)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8717184/"
+    },
+    {
+      "title": "[41] Hope TA, et al. Metaanalysis of 68Ga-PSMA-11 PET Accuracy for the Detection of Prostate Cancer Validated by Histopathology. J Nucl Med. 2019 (PMC6581235)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6581235/"
+    },
+    {
+      "title": "[42] PSMA PET/CT in biochemical recurrence of prostate cancer with PSA ≤ 0.2 ng/mL: a German multicenter analysis. Eur J Nucl Med Mol Imaging. 2025 (PMC12491085)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12491085/"
+    },
+    {
+      "title": "[43] Treglia G, et al. The Diagnostic Role of 18F-Choline, 18F-Fluciclovine and 18F-PSMA PET/CT in the Detection of Prostate Cancer With Biochemical Recurrence: A Meta-Analysis. Front Oncol. 2021 (PMC8249319)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8249319/"
+    },
+    {
+      "title": "[44] Afshar-Oromieh A, et al. Influence of androgen deprivation therapy on PSMA expression and PSMA-ligand PET imaging of prostate cancer patients. Eur J Nucl Med Mol Imaging. 2019",
+      "url": "https://link.springer.com/article/10.1007/s00259-019-04529-8"
+    },
+    {
+      "title": "[45] Ettala O, et al. Prospective study on the effect of short-term androgen deprivation therapy on PSMA uptake evaluated with 68Ga-PSMA-11 PET/MRI in men with treatment-naïve prostate cancer (PMC7081750)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7081750/"
+    },
+    {
+      "title": "[46] Gafita A, et al. Novel Framework for Treatment Response Evaluation Using PSMA PET/CT in mCRPC (RECIP 1.0). 2022 (PMC9635677)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9635677/"
+    },
+    {
+      "title": "[47] Kuo PH, et al. Why We Did What We Did: PSMA PET/CT Selection Criteria for the VISION Trial. J Nucl Med. 2022;63(6):816",
+      "url": "https://jnm.snmjournals.org/content/63/6/816"
+    },
+    {
+      "title": "[48] Quantitative 68Ga-PSMA-11 PET and Clinical Outcomes in mCRPC Following 177Lu-PSMA-617 (VISION Trial). Radiology. 2024",
+      "url": "https://pubs.rsna.org/doi/full/10.1148/radiol.233460"
+    },
+    {
+      "title": "[49] Jadvar H. The VISION Forward: Recognition and Implication of PSMA−/18F-FDG+ mCRPC. J Nucl Med. 2022 (PMC9157736)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9157736/"
+    },
+    {
+      "title": "[50] Recommendations from Imaging, Oncology, and Radiology Organizations to Guide Management in Prostate Cancer: Summary of Current Recommendations (PMC11791666)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11791666/"
+    },
+    {
+      "title": "[51] Hofman MS, et al. TheraP overall survival update (ANZUP 1603). J Clin Oncol. 2022;40(16_suppl):5000 (ASCO)",
+      "url": "https://ascopubs.org/doi/10.1200/JCO.2022.40.16_suppl.5000"
+    },
+    {
+      "title": "[52] Lutetium-177 — physical properties overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/lutetium-177"
+    },
+    {
+      "title": "[53] Novartis — 177Lu-PSMA-617 significantly improves overall survival and radiographic progression-free survival in Phase III VISION study (media release)",
+      "url": "https://www.novartis.com/us-en/news/media-releases/novartis-177lu-psma-617-significantly-improves-overall-survival-and-radiographic-progression-free-survival-men-metastatic-castration-resistant-prostate-cancer-phase-iii-vision-study"
+    },
+    {
+      "title": "[54] Gallium Ga 68 PSMA-11 Injection — FDA prescribing label (accessdata.fda.gov)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/212642s000lbl.pdf"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "microscope",
+        "label": "Type",
+        "value": "Adénocarcinome acinaire (> 95 %) · zone périphérique"
+      },
+      {
+        "icon": "target",
+        "label": "Cible théranostique",
+        "value": "PSMA (FOLH1 / GCPII), glycoprotéine transmembranaire type II"
+      },
+      {
+        "icon": "activity",
+        "label": "Épidémiologie",
+        "value": "1 467 854 nouveaux cas/monde 2022 · 4e cancer · ASR 29,4/100 000"
+      },
+      {
+        "icon": "dna",
+        "label": "Génétique à risque",
+        "value": "BRCA2 germinal ~4 % (localisé) à ~11 % (métastatique)"
+      },
+      {
+        "icon": "list",
+        "label": "Grade",
+        "value": "ISUP Grade Groups 1–5 (Gleason ≤ 6 à 9–10)"
+      },
+      {
+        "icon": "flask",
+        "label": "Marqueur sérique",
+        "value": "PSA (ng/mL) · cinétique PSADT"
+      },
+      {
+        "icon": "atom",
+        "label": "Traceurs TEP phares",
+        "value": "68Ga-PSMA-11 · 18F-DCFPyL · 18F-PSMA-1007"
+      },
+      {
+        "icon": "radiation",
+        "label": "Couple théranostique",
+        "value": "68Ga/18F-PSMA → 177Lu-PSMA-617 ; 225Ac-PSMA (α)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Dose Pluvicto",
+        "value": "7,4 GBq (200 mCi) IV / 6 sem, ≤ 6 cycles"
+      },
+      {
+        "icon": "clock",
+        "label": "Demi-vies clés",
+        "value": "68Ga 68 min · 18F 110 min · 177Lu 6,6–6,7 j · 225Ac 9,9 j"
+      },
+      {
+        "icon": "alert",
+        "label": "Récidive biochimique",
+        "value": "Post-RP : PSA ≥ 0,2 ng/mL ×2 · Post-RT (Phoenix) : nadir + 2 ng/mL"
+      },
+      {
+        "icon": "droplets",
+        "label": "Organes critiques RLT",
+        "value": "Glandes lacrymales 2,1 · salivaires 0,63 · reins 0,43 Gy/GBq"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "TEP-PSMA (68Ga / 18F)"
+      },
+      {
+        "type": "examen",
+        "label": "TEP à la choline (11C / 18F)"
+      },
+      {
+        "type": "examen",
+        "label": "TEP osseuse au 18F-NaF"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse 99mTc-MDP"
+      },
+      {
+        "type": "traceur",
+        "label": "68Ga-PSMA-11"
+      },
+      {
+        "type": "traceur",
+        "label": "18F-DCFPyL (piflufolastat)"
+      },
+      {
+        "type": "theranostique",
+        "label": "177Lu-PSMA-617 (Pluvicto)"
+      },
+      {
+        "type": "theranostique",
+        "label": "225Ac-PSMA-617 (alpha-thérapie)"
+      },
+      {
+        "type": "score",
+        "label": "Score PSMA-RADS / E-PSMA"
+      },
+      {
+        "type": "score",
+        "label": "ISUP Grade Group / Gleason"
+      },
+      {
+        "type": "score",
+        "label": "Classification d'Amico"
+      },
+      {
+        "type": "maladie",
+        "label": "mCRPC (cancer prostatique résistant à la castration)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quelle est la précision diagnostique de la TEP au 68Ga-PSMA-11 face à l'imagerie conventionnelle au bilan d'extension du cancer prostatique à haut risque (essai proPSMA) ?",
+        "options": [
+          "72 % vs 58 %",
+          "92 % vs 65 %",
+          "85 % vs 80 %",
+          "99 % vs 91 %"
+        ],
+        "answer": 1,
+        "explanation": "Dans proPSMA (Lancet 2020), la précision globale est de 92 % pour la PSMA-PET/CT contre 65 % pour l'imagerie conventionnelle (TDM + scintigraphie osseuse), soit +27 % [10].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Dans l'essai VISION, quelle survie globale médiane apporte le 177Lu-PSMA-617 + soins standard par rapport aux soins standard seuls ?",
+        "options": [
+          "18,2 vs 14,0 mois",
+          "15,3 vs 11,3 mois",
+          "11,3 vs 8,7 mois",
+          "21,0 vs 16,5 mois"
+        ],
+        "answer": 1,
+        "explanation": "VISION (NEJM 2021) : survie globale médiane 15,3 vs 11,3 mois, HR 0,62 (IC95 % 0,52–0,74 ; p < 0,001), soit une réduction du risque de décès de 38 % [8].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le critère de récidive biochimique après prostatectomie radicale ?",
+        "options": [
+          "PSA > 4 ng/mL",
+          "PSA ≥ 0,2 ng/mL sur deux valeurs consécutives",
+          "Nadir + 2 ng/mL",
+          "Tout PSA détectable"
+        ],
+        "answer": 1,
+        "explanation": "Après prostatectomie radicale, la récidive biochimique est définie par un PSA ≥ 0,2 ng/mL confirmé sur deux dosages consécutifs (AUA/ASCO). Le critère « nadir + 2 ng/mL » (Phoenix) s'applique après radiothérapie [24].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pour quelle raison la TEP-PSMA est-elle préférée à la TEP-choline à bas PSA en récidive biochimique ?",
+        "options": [
+          "La choline est plus irradiante",
+          "La PSMA a un meilleur taux de détection, surtout à bas PSA",
+          "La choline n'existe qu'en 11C",
+          "La PSMA est moins coûteuse"
+        ],
+        "answer": 1,
+        "explanation": "Le taux de détection regroupé en récidive est plus élevé pour la 18F-PSMA (83 %) que pour la 18F-choline (66 %) ou la 18F-fluciclovine (74 %), avec un rendement de la choline faible quand le PSA est < 1 ng/mL [17].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel critère définit une lésion PSMA-positive éligible au 177Lu-PSMA-617 selon les critères de l'essai VISION ?",
+        "options": [
+          "SUVmax ≥ 20 sur au moins une lésion",
+          "Captation 68Ga-PSMA-11 visuellement supérieure au foie, sans lésion exclusionnaire PSMA-négative",
+          "Toute fixation supérieure au bruit de fond",
+          "Concordance PSMA et FDG obligatoire"
+        ],
+        "answer": 1,
+        "explanation": "VISION exige une captation visuellement supérieure au parenchyme hépatique sur au moins une lésion, sans lésion mesurable PSMA-négative ; aucun seuil SUV fixe n'a été retenu (variabilité inter-sites). Le seuil SUVmax ≥ 20 et l'imagerie FDG complémentaire relèvent de TheraP [47].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel phénotype tumoral échappe à la TEP-PSMA et contre-indique le 177Lu-PSMA-617 ?",
+        "options": [
+          "PSMA-positif / FDG-positif",
+          "PSMA-négatif / FDG-positif (dédifférencié, neuroendocrine)",
+          "Adénocarcinome bien différencié",
+          "Lésion intra-prostatique"
+        ],
+        "answer": 1,
+        "explanation": "Le phénotype dédifférencié/neuroendocrine perd l'expression PSMA tout en restant FDG-avide (PSMA−/FDG+), donnant un faux négatif PSMA-PET et une non-éligibilité à la radiothérapie vectorisée — d'où l'intérêt d'une imagerie FDG complémentaire [49].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel système de grade simplifie le score de Gleason en cinq groupes pronostiques (consensus ISUP 2014) ?",
+        "options": [
+          "Classification de d'Amico",
+          "ISUP Grade Group",
+          "TNM AJCC",
+          "Classification de Phoenix"
+        ],
+        "answer": 1,
+        "explanation": "Le système ISUP Grade Group (Epstein 2014) regroupe Gleason 2–10 en 5 groupes : GG1 = Gleason ≤ 6 (3+3), GG2 = 3+4, GG3 = 4+3, GG4 = Gleason 8, GG5 = Gleason 9–10 [4].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Comment la déprivation androgénique (ADT) de courte durée modifie-t-elle l'avidité PSMA dans une maladie hormono-sensible ?",
+        "options": [
+          "Elle l'abolit immédiatement",
+          "Elle l'augmente transitoirement, avec un pic vers 3–4 semaines",
+          "Elle est sans effet",
+          "Elle ne modifie que les reins"
+        ],
+        "answer": 1,
+        "explanation": "L'ADT courte augmente quantitativement l'expression PSMA dans les cellules hormono-sensibles, avec un pic de SUVmax vers 3–4 semaines (« PSMA flare ») ; à long terme, une ADT prolongée peut au contraire abaisser la captation — d'où l'importance du timing [14,45].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel couple théranostique cible le PSMA dans le cancer de la prostate ?",
+        "options": [
+          "68Ga/177Lu-DOTATATE",
+          "123I/131I-MIBG",
+          "68Ga ou 18F-PSMA → 177Lu-PSMA-617",
+          "18F-FDG → 90Y"
+        ],
+        "answer": 2,
+        "explanation": "On image au 68Ga-PSMA-11 ou 18F-PSMA et on traite au 177Lu-PSMA-617 (vipivotide tetraxetan), avec l'option alpha 225Ac-PSMA-617. Le couple DOTATATE et le couple MIBG ciblent respectivement les SSTR et le NET d'autres tumeurs [8,30].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Dans l'essai TheraP, quelle réponse PSA (≥ 50 %) obtient le 177Lu-PSMA-617 face au cabazitaxel ?",
+        "options": [
+          "49 % vs 24 %",
+          "66 % vs 37 %",
+          "37 % vs 66 %",
+          "80 % vs 50 %"
+        ],
+        "answer": 1,
+        "explanation": "TheraP (Lancet 2021) : réponse PSA ≥ 50 % chez 66 % (177Lu-PSMA-617) vs 37 % (cabazitaxel), différence absolue +29 %, p < 0,0001 ; réponse RECIST 49 % vs 24 % [28].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quels sont les organes critiques dosimétriques de la radiothérapie au 177Lu-PSMA-617 ?",
+        "options": [
+          "Le myocarde et la thyroïde",
+          "Les glandes salivaires/lacrymales et les reins",
+          "Le foie et la rate",
+          "Les poumons"
+        ],
+        "answer": 1,
+        "explanation": "La sous-étude dosimétrique VISION (JNM 2024) rapporte glandes lacrymales 2,1 Gy/GBq, glandes salivaires 0,63 Gy/GBq, reins 0,43 Gy/GBq et moelle rouge 0,035 Gy/GBq — d'où la xérostomie et le suivi rénal [9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel piège scintigraphique osseux peut simuler une progression en début de traitement efficace ?",
+        "options": [
+          "L'effet de volume partiel",
+          "Le phénomène de flare osseux",
+          "La captation vésicale",
+          "La graisse brune"
+        ],
+        "answer": 1,
+        "explanation": "Le flare osseux est une majoration paradoxale transitoire de la fixation (remodelage ostéoblastique de cicatrisation), précoce après un traitement efficace, sur scintigraphie 99mTc-MDP et TEP 18F-NaF ; un contrôle différé est requis [21].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel radionucléide est utilisé en alpha-thérapie ciblée du PSMA chez les patients réfractaires ?",
+        "options": [
+          "177Lu",
+          "90Y",
+          "225Ac",
+          "131I"
+        ],
+        "answer": 2,
+        "explanation": "Le 225Ac-PSMA-617 est un émetteur alpha (chaîne à 4 désintégrations α), administré à 100 kBq/kg toutes les 8 semaines, avec un déclin du PSA > 50 % chez 63 % des patients ; la xérostomie sévère est la toxicité dose-limitante [30].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle énergie photopique permet l'imagerie SPECT post-thérapeutique du 177Lu ?",
+        "options": [
+          "140 keV",
+          "208 keV (et 113 keV)",
+          "511 keV",
+          "364 keV"
+        ],
+        "answer": 1,
+        "explanation": "Le 177Lu émet des photons gamma accessoires à 208 keV (≈ 10 %) et 113 keV, utilisables pour l'imagerie SPECT post-thérapeutique et la dosimétrie ; le 511 keV est l'annihilation commune au 68Ga et au 18F en TEP [52].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Par rapport au 68Ga, quel avantage physique présente le 18F pour l'imagerie TEP du PSMA ?",
+        "options": [
+          "Une demi-vie plus courte",
+          "Une énergie de positron plus faible donnant une meilleure résolution spatiale",
+          "Une excrétion exclusivement biliaire",
+          "Une absence de captation rénale"
+        ],
+        "answer": 1,
+        "explanation": "Le 18F a une énergie de positron de 0,65 MeV (vs ~1,90 MeV pour le 68Ga), d'où une meilleure résolution spatiale, et une demi-vie de 110 min permettant une production déportée/distribution régionale [36].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon les critères d'usage approprié (AUC SNMMI), dans quelle situation la TEP-PSMA est-elle « rarement appropriée » au staging initial ?",
+        "options": [
+          "Haut risque",
+          "Risque intermédiaire défavorable",
+          "Risque intermédiaire favorable / bas risque",
+          "Récidive biochimique"
+        ],
+        "answer": 2,
+        "explanation": "La PSMA-PET est appropriée au staging du risque intermédiaire défavorable et du haut risque, mais « rarement appropriée » dans le risque intermédiaire favorable et le bas risque [40].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle classification combine PSA, score de Gleason et stade T pour stratifier le risque du cancer prostatique localisé ?",
+        "options": [
+          "Classification de Phoenix",
+          "Classification d'Amico",
+          "RECIP 1.0",
+          "PCWG3"
+        ],
+        "answer": 1,
+        "explanation": "La classification d'Amico stratifie en bas / intermédiaire / haut risque selon PSA, Gleason et stade T ; le haut risque correspond à Gleason 8–10 OU PSA > 20 ng/mL OU stade ≥ T2c [5,39].",
+        "difficulty": "facile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le PSMA (FOLH1/GCPII) est surexprimé dans la quasi-totalité des adénocarcinomes prostatiques et corrélé au grade : il sert à la fois de cible d'imagerie TEP et de vecteur thérapeutique (boucle « see-and-treat »).",
+        "proPSMA : la TEP-PSMA surclasse l'imagerie conventionnelle au staging haut risque — précision 92 % vs 65 %, sensibilité 85 % vs 38 % [10].",
+        "La détection en récidive biochimique est PSA-dépendante : ~63 % si PSA < 2 ng/mL et ~94 % si PSA ≥ 2 ng/mL pour le 68Ga-PSMA-11 [41] ; la PSMA est préférée à la choline à bas PSA [17].",
+        "Grade ISUP (Gleason) et classification d'Amico (PSA + Gleason + T) structurent la stratification du risque [4,5].",
+        "Théranostique : on image au 68Ga/18F-PSMA, on traite au 177Lu-PSMA-617 (Pluvicto, 7,4 GBq/6 sem, ≤ 6 cycles), recours alpha au 225Ac-PSMA [8,25,30].",
+        "VISION : survie globale 15,3 vs 11,3 mois (HR 0,62) ; TheraP : réponse PSA 66 % vs 37 % face au cabazitaxel [8,28].",
+        "Pièges majeurs : flare osseux, modulation de l'avidité PSMA par l'ADT, phénotype dédifférencié PSMA−/FDG+ non éligible au 177Lu [21,14,49]."
+      ],
+      "protocol": [
+        "Confirmation : PSA + biopsie, grade ISUP/Gleason, stratification d'Amico ; bilan d'extension fonctionnel guidé par le risque.",
+        "Staging haut risque ou intermédiaire défavorable : TEP-PSMA (68Ga-PSMA-11 ou 18F-DCFPyL), désormais possible en 1re ligne sans imagerie conventionnelle préalable [23,40].",
+        "Récidive biochimique : TEP-PSMA recommandée si PSA > 0,2 ng/mL ; détection croissante avec PSA et PSADT [6,50].",
+        "Sélection théranostique : imagerie PSMA-PET obligatoire avant 177Lu-PSMA-617 — au moins une lésion PSMA-positive (captation > foie), aucune lésion exclusionnaire PSMA-négative (critère VISION) [47].",
+        "Traitement : 177Lu-PSMA-617 7,4 GBq IV toutes les 6 semaines, jusqu'à 6 cycles, avec SPECT post-thérapeutique (208/113 keV) et surveillance des glandes salivaires/lacrymales et des reins [25,9]."
+      ],
+      "scores": [
+        "ISUP Grade Group 2014 : GG1 = Gleason ≤ 6 (3+3) · GG2 = 3+4 · GG3 = 4+3 · GG4 = Gleason 8 · GG5 = Gleason 9–10 [4].",
+        "D'Amico : haut risque = Gleason 8–10 OU PSA > 20 ng/mL OU stade ≥ T2c ; bDFS à 5 ans ~94,5 % (bas) / 76,6 % (intermédiaire) / 54,6 % (haut) [5,39].",
+        "Récidive biochimique : post-prostatectomie PSA ≥ 0,2 ng/mL ×2 ; post-radiothérapie (Phoenix) nadir + 2 ng/mL ; PSADT < 10 mois = pronostic défavorable [24].",
+        "Reporting standardisé : E-PSMA / PSMA-RADS (échelle visuelle) ; réponse au 177Lu évaluée par RECIP 1.0 (PD = ↑ ≥ 20 % du volume PSMA + nouvelle lésion) en complément de PCWG3/RECIST [7,46]."
+      ],
+      "pitfalls": [
+        "Flare osseux : majoration transitoire de la fixation scintigraphique (99mTc-MDP et 18F-NaF) en début de réponse — ne pas confondre avec une progression ; contrôle différé [21].",
+        "Modulation par l'ADT : l'androgène réprime le PSMA, l'ADT/blocage AR l'augmente transitoirement (pic 3–4 sem), tandis qu'une ADT prolongée peut l'abaisser — attention au timing du staging/RLT [14,45].",
+        "Phénotype PSMA−/FDG+ (dédifférencié/neuroendocrine) : faux négatif PSMA-PET et non-éligibilité au 177Lu — d'où l'intérêt du FDG complémentaire (logique TheraP) [49].",
+        "Faux positifs PSMA : ganglions cœliaques/sympathiques physiologiques, os bénin (surtout 18F-PSMA-1007 à excrétion biliaire), néovascularisation de tumeurs non prostatiques, Paget ; captation physiologique intense des glandes salivaires/lacrymales, reins, foie, intestin [12,36].",
+        "Toxicités de la radiothérapie vectorisée : xérostomie (glandes salivaires/lacrymales, organes critiques), atteinte rénale ; la xérostomie sévère est dose-limitante pour le 225Ac-PSMA [9,30]."
+      ]
+    },
+    "lead": "L'adénocarcinome de la prostate est le cancer le plus fréquent de l'homme dans une grande partie du monde, et la médecine nucléaire y a pris une place décisive ces dernières années. Une protéine très présente à la surface des cellules tumorales sert à la fois de phare pour repérer la maladie en imagerie et de cible pour la traiter avec un médicament radioactif. En une seule acquisition du corps entier, on peut désormais dresser une carte précise de l'extension de la maladie, y compris quand le taux sanguin remonte après un premier traitement. Lorsque la maladie devient résistante et se dissémine, ce même marqueur permet de délivrer un rayonnement directement au cœur des lésions. Cette approche qui consiste à voir puis traiter avec la même cible est l'un des grands succès récents de la discipline.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert la médecine nucléaire dans le cancer de la prostate",
+          "text": "La médecine nucléaire propose des examens d'imagerie qui aident votre équipe médicale à mieux \"voir\" le cancer de la prostate et à savoir s'il est resté localisé ou s'il s'est éventuellement étendu ailleurs dans le corps. Pour cela, on utilise un produit en très petite quantité, appelé traceur, qui a la particularité de se fixer de façon ciblée sur les cellules de la prostate. Une caméra spéciale repère ensuite ces zones de fixation et en fait des images précises. Ces examens sont surtout utiles à deux moments : au moment du bilan initial, lorsque le médecin veut une cartographie complète avant de choisir le traitement, et plus tard si une analyse de sang (le PSA) remonte après un traitement, afin de localiser d'où vient cette reprise. L'objectif est toujours le même : aider à prendre la décision la plus juste et la plus personnalisée possible pour vous.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un même produit pour voir et parfois pour traiter",
+              "text": "Une des forces de cette approche est qu'elle relie l'image au traitement. Le même type de molécule qui sert à repérer la maladie peut, dans certaines situations avancées, être couplé à un traitement qui va délivrer son action directement sur les cellules tumorales. On parle de \"voir et traiter\". Votre médecin vous expliquera si cette option vous concerne."
+            }
+          ]
+        },
+        {
+          "title": "Comment se préparent et se déroulent ces examens",
+          "text": "Le déroulement est simple et ne nécessite généralement pas d'hospitalisation. On vous injecte le traceur dans une veine du bras, puis vient un temps d'attente pendant lequel le produit a le temps de se répartir et de se fixer là où il doit ; vous pouvez vous reposer tranquillement. Les images sont ensuite réalisées avec une caméra : vous êtes allongé, vous n'avez rien à faire d'autre que rester immobile et détendu pendant l'acquisition. L'examen n'est pas douloureux, en dehors de la petite piqûre de l'injection. L'équipe vous donnera des consignes simples avant le rendez-vous (par exemple concernant l'hydratation) et restera à votre écoute si vous avez la moindre question ou appréhension.",
+          "steps": [
+            {
+              "title": "Avant",
+              "text": "On vérifie votre dossier et vos traitements en cours. Quelques consignes simples vous sont données, comme bien vous hydrater. Aucune préparation lourde n'est généralement nécessaire."
+            },
+            {
+              "title": "Pendant",
+              "text": "Une petite injection dans le bras, puis un temps de repos pour laisser le produit se fixer, et enfin la prise d'images allongé sous la caméra, sans douleur."
+            },
+            {
+              "title": "Après",
+              "text": "Vous reprenez vos activités habituelles. Boire régulièrement aide votre corps à éliminer naturellement le traceur. Les résultats sont analysés puis transmis à votre médecin."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce que c'est sans danger",
+          "text": "Ces examens sont bien encadrés et utilisés en routine. La quantité de produit injectée est infime et il est éliminé naturellement par votre corps, principalement dans les urines, dans les heures qui suivent ; boire régulièrement y aide. Les réactions au traceur sont très rares. L'imagerie utilise une faible dose de rayonnement, comparable à celle d'autres examens d'imagerie médicale courants, et l'équipe veille toujours à utiliser le minimum nécessaire. Pensez simplement à signaler tous vos traitements en cours et toute situation particulière : votre médecin tiendra compte de ces éléments. Si vous bénéficiez d'un traitement par médecine nucléaire (et non d'un simple examen d'image), des consignes spécifiques de précaution vous seront expliquées en détail au préalable.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "N'hésitez pas à poser vos questions",
+              "text": "Avant l'examen, vous pouvez demander à l'équipe tout ce qui vous préoccupe : le déroulé, la durée, les précautions. Se sentir bien informé aide à aborder le rendez-vous plus sereinement."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand penser à la médecine nucléaire et quelles indications",
+          "text": "Deux situations dominent l'adressage en médecine nucléaire dans l'adénocarcinome prostatique. La première est le bilan d'extension initial des formes à risque intermédiaire défavorable et à haut risque (selon la stratification d'Amico combinant PSA, score de Gleason/ISUP et stade clinique) : la TEP-PSMA y détecte les atteintes ganglionnaires et métastatiques occultes avec une précision nettement supérieure à l'imagerie conventionnelle (TDM + scintigraphie osseuse), au point que les référentiels n'imposent plus systématiquement cette dernière au préalable. La seconde situation, majeure, est la récidive biochimique après traitement à visée curative : remontée confirmée du PSA après prostatectomie, ou élévation au-dessus du nadir après radiothérapie. La TEP-PSMA permet alors de localiser le site de reprise, y compris à des taux de PSA faibles, et d'orienter une prise en charge ciblée. La cinétique du PSA (notamment le temps de doublement) module à la fois le rendement de l'examen et la décision thérapeutique.",
+          "list": [
+            "Bilan d'extension des formes à risque intermédiaire défavorable et à haut risque avant traitement",
+            "Récidive biochimique post-prostatectomie ou post-radiothérapie pour localiser le site de reprise",
+            "Recherche de métastases osseuses ou ganglionnaires occultes lorsque l'imagerie conventionnelle est négative ou équivoque",
+            "Sélection et orientation des patients métastatiques résistants à la castration vers une éventuelle option théranostique"
+          ]
+        },
+        {
+          "title": "Démarche pratique et apport de la médecine nucléaire",
+          "text": "Concrètement, l'adressage gagne à s'accompagner des éléments cliniques utiles à l'interprétation : valeurs de PSA et leur cinétique, score de Gleason/ISUP, stade, traitements antérieurs et en cours. Un point pratique important concerne l'hormonothérapie (déprivation androgénique) : elle modifie l'avidité PSMA des lésions, ce qui rend le timing de l'examen pertinent à discuter avec le médecin nucléaire plutôt que de le considérer comme une contre-indication. Quelques pièges méritent d'être connus du clinicien adresseur : un \"flare\" osseux en début de réponse à un traitement efficace peut majorer transitoirement les images osseuses et ne doit pas être confondu avec une progression ; certaines formes dédifférenciées peuvent perdre l'expression de la cible et échapper à l'imagerie PSMA. L'apport de la médecine nucléaire est double : une cartographie plus fiable de la maladie qui peut changer la stratégie thérapeutique, et l'accès à une boucle théranostique permettant, dans les stades avancés, de relier l'image à un traitement vectorisé ciblé.",
+          "steps": [
+            {
+              "title": "Identifier la situation",
+              "text": "Repérer un patient à haut risque en bilan initial ou une récidive biochimique confirmée, deux indications où l'imagerie isotopique apporte le plus."
+            },
+            {
+              "title": "Transmettre le contexte",
+              "text": "Communiquer PSA et sa cinétique, Gleason/ISUP, stade, traitements antérieurs et en cours, en particulier toute hormonothérapie."
+            },
+            {
+              "title": "Interpréter avec le nucléariste",
+              "text": "Discuter du timing par rapport à l'hormonothérapie et des pièges (flare osseux, perte d'avidité) pour une lecture fiable et une décision partagée."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La TEP-PSMA offre une précision diagnostique nettement supérieure à l'imagerie conventionnelle pour le bilan d'extension du haut risque et pour la localisation des récidives biochimiques, y compris à PSA faible. Elle modifie fréquemment la prise en charge, réduit les résultats équivoques et ouvre, dans les formes avancées, la voie à une stratégie théranostique. Adresser tôt et avec un dossier clinique complet (PSA et cinétique, Gleason/ISUP, stade, traitements en cours) optimise le rendement de l'examen et la pertinence de la décision."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identite",
+          "text": "**Synonymes** : adenocarcinome prostatique - PCa (prostate cancer) - cancer de la prostate. **Variantes nosologiques** : carcinome neuroendocrine / a petites cellules (rare, souvent **PSMA-negatif**, dedifferencie). **Cible theranostique dominante** : le **PSMA** (Prostate-Specific Membrane Antigen), glycoproteine transmembranaire surexprimee dans la quasi-totalite des adenocarcinomes et correlee au grade [12]. **Classifications de reference** : grade **ISUP Grade Group (2014)** derive du score de Gleason [4] ; risque **D'Amico** (PSA + Gleason + stade T) [5] ; stadification **TNM (AJCC)**.\n\n| Champ | Valeur |\n|---|---|\n| **Type** | Adenocarcinome acinaire (> 95 %), zone peripherique [4] |\n| **Organe** | Prostate (glande exocrine) |\n| **Epidemiologie** | **1 467 854** nouveaux cas/an dans le monde (2022) ; **4e** cancer en incidence [1,2] |\n| **Marqueur biologique** | PSA (antigene specifique de prostate) ; cinetique (PSADT) |\n| **Genes** | **BRCA2** (~4 % localise, ~11 % metastatique), ATM, MMR (Lynch) [22] |\n| **Cibles imageables** | **PSMA** (folate hydrolase) - choline kinase - remodelage osseux |\n| **Examens NM phares** | TEP **[68Ga]/[18F]-PSMA** - TEP choline - scinti osseuse 99mTc-MDP - TEP 18F-NaF |\n| **Cible theranostique** | **[68Ga]/[18F]-PSMA -> [177Lu]Lu-PSMA-617** ; alpha : [225Ac]-PSMA-617 |\n| **Classification** | ISUP Grade Group 2014 [4] - D'Amico [5] - TNM AJCC |",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert - une maladie definie par sa cible moleculaire",
+              "text": "En medecine nucleaire, l'adenocarcinome prostatique se lit avant tout a travers le **PSMA** : sa surexpression, **augmentee dans les formes peu differenciees, metastatiques et hormono-resistantes** [12], fonde une boucle theranostique complete (imager au [68Ga]/[18F]-PSMA, traiter au [177Lu]Lu-PSMA-617). La perte d'expression PSMA (phenotype neuroendocrine / dedifferencie) est l'angle mort de cette strategie."
+            }
+          ]
+        },
+        {
+          "title": "A2 - Definition",
+          "text": "Le cancer de la prostate est, dans plus de **95 % des cas, un adenocarcinome acinaire** developpe aux depens de l'**epithelium glandulaire** de la prostate, le plus souvent dans la **zone peripherique** de la glande [4]. Les formes neuroendocrines / a petites cellules sont rares mais agressives et souvent **PSMA-negatives**, ce qui les soustrait a l'imagerie et au traitement PSMA-cibles.\n\nDu point de vue de la medecine nucleaire, la maladie se definit par une **cible moleculaire dominante**, le **PSMA** (Prostate-Specific Membrane Antigen), egalement nomme **folate hydrolase 1 (FOLH1)** ou **glutamate carboxypeptidase II (GCPII)** : glycoproteine transmembranaire de type II exprimee a bas niveau dans l'epithelium prostatique normal et **surexprimee** dans le cancer, l'expression croissant avec le grade et la dedifferenciation [12]. Apres liaison du ligand, le complexe est **internalise**, ce qui permet a la fois l'imagerie TEP et l'accumulation intracellulaire d'un radionucleide therapeutique - le fondement de la strategie *see-and-treat*.\n\nCette definition fonctionnelle se distingue de la definition morphologique (masse glandulaire) : ni la TDM ni l'IRM ne renseignent sur l'**expression de la cible**. La TEP-PSMA apporte une information **moleculaire** - presence et intensite de la cible - qui conditionne directement l'eligibilite a la radiotherapie interne vectorisee.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - PSMA n'est pas strictement specifique de la prostate",
+              "text": "Le PSMA est aussi exprime dans la **neovascularisation** de nombreuses tumeurs solides (glioblastome, sein, vessie) et physiologiquement dans les glandes lacrymales et salivaires, les reins (tubule proximal), l'intestin grele et le systeme nerveux [12]. Cette biodistribution explique a la fois des cibles annexes / faux positifs et, en therapie, la **xerostomie** radio-induite et la dose renale."
+            }
+          ]
+        },
+        {
+          "title": "A3 - Epidemiologie & facteurs de risque",
+          "list": [
+            "**Incidence mondiale** : **1 467 854** nouveaux cas en 2022 ; **ASR (monde) = 29,4/100 000** ; **4e** cancer en incidence tous cancers confondus, soit **7,3 %** de tous les cancers [1,2].",
+            "**Disparites geographiques** marquees : variation d'un facteur **13** pour l'incidence et **9,5** pour la mortalite entre regions ; incidence maximale en Australie/Nouvelle-Zelande, Amerique du Nord et Europe du Nord ; **mortalite la plus elevee en Afrique subsaharienne et en Amerique latine/Caraibes** [3].",
+            "**Tendances** : l'incidence augmente dans 11 pays et la mortalite dans 9 pays (Afrique, Asie, Amerique latine/Caraibes) [3].",
+            "**Facteurs de risque** : age, **ascendance africaine**, antecedents familiaux, predisposition hereditaire (surtout **BRCA2**) [3].",
+            "**Formes hereditaires / agressives** : **BRCA2 germinal** ~**4 %** des PCa (jusqu'a ~**11 %** en metastatique), progression rapide vers le mCRPC, survie specifique a 5 ans ~50-60 % ; **BRCA1** ~0,4 % ; **ATM** germinal ~1,8 % ; **syndrome de Lynch** (genes MMR) - test genetique recommande en metastatique [22]."
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - pourquoi l'epidemiologie change la strategie d'imagerie",
+              "text": "Le profil genetique n'est pas qu'un facteur de risque : un phenotype agressif (BRCA2, dedifferenciation) augmente le risque de maladie **PSMA-negative / FDG-avide**, donc d'echappement a l'imagerie et au traitement PSMA. Le depistage des formes familiales et le genotypage en metastatique orientent l'eligibilite a la theranostique et a l'immunotherapie (Lynch)."
+            }
+          ]
+        },
+        {
+          "title": "A4 - Physiopathologie & cibles biologiques imageables",
+          "text": "La cellule d'adenocarcinome prostatique offre plusieurs **prises imageables**, dominees par une surexpression membranaire et completees par des cibles metaboliques et osseuses. C'est l'**expression de chaque cible** - et non la morphologie - qui determine quel examen voit la tumeur et quel traitement vectorise est applicable.\n\n| Cible biologique | Mecanisme exploite | Traceur(s) | Pertinence |\n|---|---|---|---|\n| **PSMA / FOLH1 (GCPII)** | Surexpression membranaire, internalisation du ligand | **[68Ga]-PSMA-11**, **[18F]-DCFPyL**, [18F]-PSMA-1007 ; therapie **[177Lu]Lu-PSMA-617**, [225Ac]-PSMA-617 | Cible dominante, croit avec le grade et la dedifferenciation [12] |\n| **Metabolisme de la choline** | Turnover des phospholipides membranaires via la **choline kinase** | [11C]- / [18F]-choline | Alternative historique, rendement faible a bas PSA [16] |\n| **Remodelage osseux** | Echange 18F-/OH- dans l'hydroxyapatite (ostéoblastique) | **[18F]-NaF** (TEP), **99mTc-MDP** (scinti) | Marqueur **indirect**, non tumeur-specifique [19] |\n\n**Hyperfixation PSMA** = surexpression de la cible (tumeur differenciee a hormono-resistante hormono-sensible) ; **hypofixation / negativite PSMA** = perte d'expression (phenotype **neuroendocrine / dedifferencie**, devenant souvent **FDG-avide**) ou repression hormonale transitoire. Cette dichotomie est la cle de lecture de tout l'article et le determinant de l'eligibilite a la radiotherapie interne vectorisee.\n\n**Effet de la deprivation androgenique (ADT) - piege majeur** : l'ADT courte (analogues LHRH, anti-androgenes) **augmente quantitativement l'expression PSMA** dans les cellules **hormono-sensibles**, effet visible des **4 semaines** [14], alors que l'ADT prolongee ou le phenotype castration-resistant peuvent au contraire **abaisser** l'avidite PSMA [15]. Le **timing** de la TEP-PSMA par rapport a l'hormonotherapie est donc critique pour l'interpretation et la selection theranostique.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - l'hormonotherapie module l'avidite PSMA",
+              "text": "Une ADT recente peut **majorer** (cellules hormono-sensibles, pic vers 4 semaines [14]) ou **diminuer** (ADT prolongee, castration-resistance [15]) la captation PSMA. Interpreter la TEP-PSMA et selectionner pour le [177Lu]Lu-PSMA-617 sans tenir compte du contexte hormonal expose a des faux positifs (flare PSMA, surtout osseux) ou a une sous-estimation de l'avidite."
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Schema de liaison du ligand PSMA a la glycoproteine membranaire de la cellule prostatique, internalisation du complexe, et appariement diagnostique [68Ga]/[18F]-PSMA -> therapie [177Lu]Lu-PSMA-617.",
+            "caption": "Fig. 1 - Le PSMA, cible internalisee : meme vecteur pour imager ([68Ga]/[18F]) et traiter ([177Lu]/[225Ac])."
+          }
+        },
+        {
+          "title": "A5 - Classification & formes",
+          "text": "Trois systemes structurent la maladie et conditionnent l'usage de la medecine nucleaire : le **grade (ISUP/Gleason)**, le **risque (D'Amico)** et le **stade (TNM)**. La probabilite de detection en TEP-PSMA est correlee au **PSA, au PSADT, au score de Gleason et a l'expression PSMA** du primitif [6].\n\n**Grade - ISUP Grade Group (consensus 2014)** : simplification du score de Gleason 2-10 en **5 groupes pronostiques** [4] :\n\n| ISUP Grade Group | Gleason | Pronostic |\n|---|---|---|\n| **GG1** | <= 6 (3+3) | Bien differencie, favorable (securise la surveillance active) |\n| **GG2** | 7 (3+4) | Intermediaire favorable |\n| **GG3** | 7 (4+3) | Intermediaire defavorable |\n| **GG4** | 8 | Haut grade |\n| **GG5** | 9-10 | Haut potentiel metastatique et mortalite specifique |\n\n**Risque - classification de D'Amico** (PSA + Gleason + stade) [5] :\n\n| Groupe | Criteres |\n|---|---|\n| **Bas risque** | PSA <= 10 ng/mL **ET** Gleason <= 6 **ET** T1-T2a |\n| **Intermediaire** | PSA 10-20 ng/mL **OU** Gleason 7 **OU** T2b |\n| **Haut risque** | PSA >= 20 ng/mL **OU** Gleason 8-10 **OU** >= T2c |\n\n**Formes selon l'angle medecine nucleaire** :\n\n| Forme | Caracteristique | Implication imagerie / therapie |\n|---|---|---|\n| Adenocarcinome differencie | Forte expression PSMA | TEP-PSMA tres sensible ; eligible [177Lu]Lu-PSMA-617 |\n| **mCRPC** (castration-resistant metastatique) | PSMA souvent surexprime | Cible privilegiee de la boucle theranostique [8] |\n| **Neuroendocrine / dedifferencie** | **PSMA-negatif**, souvent FDG-avide | Echappe a la TEP/therapie PSMA ; non eligible |\n| Forme **BRCA2 / Lynch** | Agressivite, instabilite genomique | Risque de dedifferenciation ; orientations therapeutiques specifiques [22] |\n\nLes formes a **haut risque** (D'Amico) et la **recidive biochimique** sont les deux circonstances ou la TEP-PSMA s'impose au bilan d'extension (cf. essai proPSMA : precision **92 % vs 65 %** pour l'imagerie conventionnelle [10]), et le **mCRPC PSMA-positif** est la cible de la radiotherapie interne (VISION, TheraP) [8].",
+          "stats": [
+            {
+              "value": "5",
+              "label": "groupes ISUP (Gleason 2-10) [4]"
+            },
+            {
+              "value": "92 % vs 65 %",
+              "label": "precision TEP-PSMA vs imagerie conv. (proPSMA) [10]"
+            },
+            {
+              "value": "~11 %",
+              "label": "BRCA2 germinal en metastatique [22]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - le grade et la cinetique PSA pilotent l'indication NM",
+              "text": "Le couple **grade (ISUP/Gleason) + PSA/PSADT** ne sert pas qu'au pronostic : il predit le rendement de la TEP-PSMA et oriente le sequençage. Un haut risque D'Amico justifie la TEP-PSMA d'emblee au staging ; en recidive biochimique, la detection est PSA- et PSADT-dependante [6]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle theranostique du PSMA : imager au [68Ga]/[18F]-PSMA, selectionner les patients PSMA-positifs, traiter au [177Lu]Lu-PSMA-617 (ou [225Ac]-PSMA-617), reevaluer.",
+            "caption": "Fig. 2 - De la classification a la theranostique : le mCRPC PSMA-positif alimente la boucle imager -> selectionner -> traiter -> reevaluer."
+          }
+        },
+        {
+          "title": "B6 - Présentation clinique & circonstances de découverte",
+          "text": "L'**adénocarcinome prostatique** est le plus souvent **asymptomatique** au diagnostic : il se développe dans la zone périphérique de la glande et n'altère la miction qu'à un stade avancé ou en cas d'hypertrophie bénigne associée. La découverte se fait essentiellement sur une élévation du **PSA** (antigène spécifique de prostate) et/ou une anomalie au toucher rectal, conduisant à la biopsie qui apporte la preuve histologique.[1]\n\nC'est cette physiopathologie silencieuse qui fait de la **cinétique du PSA** — et non du symptôme — le déclencheur de l'imagerie nucléaire. Trois circonstances mènent l'adénocarcinome vers la médecine nucléaire :\n\n| Circonstance | Profil typique | Ce que cherche la MN |\n|---|---|---|\n| **Bilan d'extension initial** | Maladie à risque **intermédiaire défavorable ou haut risque** (d'Amico) candidate à un traitement curatif | Atteinte **ganglionnaire (N)** et **métastatique (M)** occulte avant chirurgie/radiothérapie |\n| **Récidive biochimique (BCR)** | Ré-ascension du PSA après traitement « définitif » | **Localiser** la rechute (loge, ganglions, os) pour orienter un traitement de rattrapage |\n| **Maladie métastatique résistante à la castration (mCRPC)** | Progression malgré la déprivation androgénique | **Caractériser l'avidité PSMA** et **sélectionner** pour la théranostique |\n\nLe **PSMA** (Prostate-Specific Membrane Antigen), folate hydrolase 1 / glutamate-carboxypeptidase II, est surexprimé à la surface de la quasi-totalité des adénocarcinomes, **corrélé au grade** et à l'agressivité.[12] C'est la cible qui rend la maladie visible : plus la tumeur est peu différenciée, métastatique ou hormono-résistante, plus elle exprime le PSMA — sauf dans le sous-type neuroendocrine/à petites cellules, dédifférencié, souvent **PSMA-négatif** et agressif.[12]",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "Chez un patient suivi pour BCR ou maladie avancée, la médecine nucléaire n'est pas un outil de confirmation diagnostique (la preuve est histologique) mais un outil de **cartographie moléculaire** : elle répond à « où est la maladie ? » et « la cible PSMA est-elle exprimée ? », deux questions que ni la TDM ni l'IRM ne tranchent."
+            }
+          ]
+        },
+        {
+          "title": "B7 - Démarche diagnostique",
+          "text": "Le diagnostic positif de l'adénocarcinome repose sur la **biopsie**, déclenchée par le PSA et le toucher rectal ; la médecine nucléaire intervient **après la preuve histologique**, au moment de la stadification et surtout de la récidive. La place de la TEP-PSMA (tomographie par émission de positons ciblant le PSMA) s'insère selon une séquence désormais codifiée par les recommandations conjointes **EANM/SNMMI 2.0** (publiées le 5 janvier 2023).[6]\n\nDeux paramètres de **cinétique du PSA** structurent toute la démarche en récidive :\n\n- **Récidive biochimique post-prostatectomie radicale** : PSA **> 0,2 ng/mL** confirmé sur deux dosages consécutifs.[24]\n- **Récidive biochimique post-radiothérapie (critères Phoenix)** : élévation du PSA **≥ 2 ng/mL au-dessus du nadir** post-irradiation.[24]\n- **Temps de doublement du PSA (PSADT)** : facteur pronostique majeur de survie sans métastase, avec un seuil pivot à **10 mois** (un PSADT < 10 mois identifie les rechutes rapides).[24]\n\nLa BCR survient chez **20–40 % des patients dans les 10 ans** suivant un traitement curatif, ce qui en fait la principale porte d'entrée vers l'imagerie nucléaire.[24]",
+          "steps": [
+            {
+              "title": "1 · Détection & preuve histologique",
+              "text": "Élévation du **PSA**, toucher rectal, IRM multiparamétrique ciblant la biopsie ; la preuve est anatomopathologique (grade ISUP/Gleason sur la pièce ou la biopsie).[1,4]"
+            },
+            {
+              "title": "2 · Stratification du risque",
+              "text": "Classification **d'Amico** (PSA + Gleason + stade T) : la TEP-PSMA est jugée **appropriée** dès le risque intermédiaire défavorable et le haut risque, « rarement appropriée » en bas risque / intermédiaire favorable.[40]"
+            },
+            {
+              "title": "3 · Bilan d'extension nucléaire (haut risque)",
+              "text": "**TEP-PSMA-TDM** d'emblée pour cartographier N et M : précision **92 % vs 65 %** pour l'imagerie conventionnelle (essai proPSMA).[10] L'imagerie conventionnelle n'est plus un préalable obligatoire.[23]"
+            },
+            {
+              "title": "4 · Récidive biochimique",
+              "text": "Devant une ré-ascension du PSA, **TEP-PSMA** recommandée si PSA **> 0,2 ng/mL** (EAU) ; à défaut, choline/fluciclovine si PSA ≥ 1 ng/mL. Le rendement est **PSA- et PSADT-dépendant**.[6,50]"
+            },
+            {
+              "title": "5 · Caractérisation théranostique (mCRPC)",
+              "text": "Au stade résistant à la castration, la TEP-PSMA (± TEP-FDG) **sélectionne** les patients dont les lésions expriment la cible avant ¹⁷⁷Lu-PSMA-617 (§B8, et boucle théranostique).[8,28]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - rendement effondré à très bas PSA",
+              "text": "À PSA **ultra-bas (≤ 0,2 ng/mL)**, le taux de détection de la TEP-PSMA chute à **~29,6 %** (29,4 % pour ¹⁸F/⁶⁸Ga-PSMA-11).[42] Prescrire trop précocement expose à un examen négatif non contributif : le **timing** par rapport au PSA et au PSADT conditionne la rentabilité diagnostique.[6]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma du principe de détection en coïncidence de la TEP : émission de positon, annihilation et détection des deux photons de 511 keV à 180°, base de l'imagerie TEP-PSMA."
+          }
+        },
+        {
+          "title": "B8 - Imagerie nucléaire au diagnostic",
+          "text": "Le diagnostic d'extension et de récidive repose sur la **TEP-PSMA-TDM**, qui exploite la surexpression du PSMA à la surface des cellules tumorales (internalisation après liaison au ligand). Plusieurs vecteurs imageables coexistent, partageant le photopic d'annihilation à **511 keV** mais différant par leur physique et leur biodistribution.[36]\n\n| Traceur TEP | Demi-vie | Dose efficace | Spécificité d'usage |\n|---|---|---|---|\n| **⁶⁸Ga-PSMA-11** | **68 min**[11] | **~0,022 mSv/MBq**[11] | Vecteur de référence des essais (sélection VISION) ; nécessite générateur ⁶⁸Ge/⁶⁸Ga ; excrétion urinaire |\n| **¹⁸F-DCFPyL (piflufolastat)** | **110 min**[31] | **~0,0139 mSv/MBq**[36] | Meilleure résolution (positon 0,65 MeV), production déportée ; FDA mai 2021[35] |\n| **¹⁸F-PSMA-1007** | 110 min[31] | ~0,022 mSv/MBq[31] | **Excrétion biliaire** (peu urinaire) → loge prostatique dégagée ; piège : foyers osseux bénins fréquents[31] |\n\n**Performances au bilan d'extension haut risque (essai proPSMA, Hofman, Lancet 2020)** — étude prospective randomisée multicentrique, **302 patients** :[10]\n\n- **Précision globale : 92 % (⁶⁸Ga-PSMA-11 TEP-TDM) vs 65 % (imagerie conventionnelle)**, soit +27 %.[10]\n- **Sensibilité 85 % vs 38 %** ; **spécificité 98 % vs 91 %** (PSMA vs conventionnel).[10]\n- Plus de changements de prise en charge (**28 % vs 15 %**), moins de résultats équivoques (**7 % vs 23 %**).[10]\n- Irradiation **réduite : 8,4 mSv (PSMA) vs 19,2 mSv (conventionnel)**.[10]\n\n**Détection en récidive biochimique** — le rendement est strictement **PSA-dépendant** (méta-analyse de Hope validée par histopathologie) :[41]\n\n| Strate de PSA | Taux de détection PSMA |\n|---|---|\n| **< 2,0 ng/mL** | **~63 %**[41] |\n| **≥ 2,0 ng/mL** | **~94 %**[41] |\n\nFace aux traceurs comparateurs en BCR, le PSMA domine : taux de détection regroupés **¹⁸F-PSMA 83 % vs ¹⁸F-fluciclovine 74 % vs ¹⁸F-choline 66 %** ; la ¹⁸F-choline conserve une Se/Sp de **0,93/0,91** mais un rendement faible si PSA < 1 ng/mL.[17,43]\n\n**Imagerie osseuse** — la scintigraphie osseuse planaire ⁹⁹ᵐTc-MDP (méthylène-diphosphonate, photopic 140 keV) reste répandue mais peu sensible et peu spécifique. La **TEP au ¹⁸F-NaF** (fluorure de sodium, marqueur du remodelage ostéoblastique) la surclasse pour les métastases osseuses : sensibilité **0,95–1,00 vs ~0,60–0,75** pour la scintigraphie ⁹⁹ᵐTc-MDP.[19,20] Aucune des deux n'est tumeur-spécifique (échange ¹⁸F⁻/OH⁻ dans l'hydroxyapatite), d'où des faux positifs dégénératifs.[19]",
+          "stats": [
+            {
+              "value": "92 % vs 65 %",
+              "label": "Précision proPSMA : PSMA-TEP vs imagerie conventionnelle[10]"
+            },
+            {
+              "value": "~94 %",
+              "label": "Détection PSMA si PSA ≥ 2,0 ng/mL[41]"
+            },
+            {
+              "value": "~0,022 mSv/MBq",
+              "label": "Dose efficace du ⁶⁸Ga-PSMA-11[11]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - critère de positivité pour la théranostique",
+              "text": "La sélection thérapeutique ne se résume pas à « voir » la tumeur. **Critère VISION** : au moins une lésion dont la captation ⁶⁸Ga-PSMA-11 est **visuellement supérieure au foie**, sans lésion exclusionnaire PSMA-négative (pas de seuil SUV imposé).[47] **Critère TheraP, plus strict** : **SUVmax ≥ 20** sur ≥ 1 site et aucune lésion mesurable FDG+/PSMA− (double imagerie PSMA + FDG), ce qui écarte les phénotypes discordants.[28]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège - phénotype PSMA−/FDG+",
+              "text": "Le sous-type **neuroendocrine/anaplasique dédifférencié** perd l'expression du PSMA tout en restant **avide en FDG** : faux négatif de la TEP-PSMA et **non-éligibilité** au ¹⁷⁷Lu-PSMA. C'est le rationnel de la TEP-FDG complémentaire dans TheraP pour démasquer ces lésions discordantes.[49]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Schéma de la liaison d'un ligand PSMA au récepteur transmembranaire à la surface de la cellule tumorale prostatique, suivie de l'internalisation — base commune de l'imagerie TEP-PSMA et de la radiothérapie interne vectorisée."
+          }
+        },
+        {
+          "title": "B9 - Diagnostics différentiels",
+          "text": "Les pièges de l'imagerie nucléaire de l'adénocarcinome tiennent à la **captation physiologique** intense du PSMA (glandes lacrymales et salivaires, reins et voies urinaires, intestin grêle, foie, rate) et à l'**expression du PSMA hors prostate** (néovascularisation tumorale, ganglions sympathiques).[12] Il faut les distinguer aussi bien du tissu sain que d'autres pathologies.\n\n| Contexte | Différentiel | Ce qui distingue |\n|---|---|---|\n| **Loge prostatique** | Hyperplasie bénigne (HBP), prostatite, métaplasie | Captation diffuse/inflammatoire vs foyer focal intense ; corrélation TDM/IRM et PSA |\n| **Foyer ganglionnaire** | Hyperplasie ganglionnaire réactionnelle, **ganglions cœliaques/sympathiques** (captation PSMA physiologique) | Topographie (cœliaque para-aortique haute), morphologie, contexte |\n| **Foyer osseux** | Lésion dégénérative, fracture, **maladie de Paget**, îlot osseux, hémangiome | Corrélation TDM (ostéocondensation tumorale vs arthrose) ; **faux positifs osseux fréquents avec ¹⁸F-PSMA-1007**[36] |\n| **Tumeur non prostatique PSMA+** | Carcinome rénal, thyroïdien, hépatocarcinome (néovascularisation) | Siège, contexte histologique connu |\n| **Captation intense bénigne** | Glandes salivaires/lacrymales, reins, foie, rate, grêle, voies urinaires | Symétrie et topographie physiologiques attendues[12] |\n\nLe différentiel le plus lourd de conséquences thérapeutiques reste le **phénotype PSMA−/FDG+** (neuroendocrine dédifférencié) : une TEP-PSMA faussement rassurante peut masquer une maladie agressive FDG-avide, d'où l'intérêt de la double imagerie dans les situations discordantes (§B8).[49]",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - faux positifs osseux du ¹⁸F-PSMA-1007",
+              "text": "Le ¹⁸F-PSMA-1007, choisi pour sa clairance non urinaire (loge pelvienne dégagée), génère en contrepartie des **foyers osseux bénins** non spécifiques particulièrement fréquents (côtes, bassin) : toute fixation osseuse isolée et discrète doit être corrélée à la TDM avant d'être étiquetée métastase.[31,36]"
+            },
+            {
+              "type": "info",
+              "title": "Repère de lecture",
+              "text": "L'**ostéocondensation** est le mode métastatique typique de l'adénocarcinome prostatique sur la TDM associée : une fixation PSMA ou ¹⁸F-NaF en regard d'une lésion dense évocatrice oriente vers la métastase, là où une fixation sans substrat dense ou sur une lésion arthrosique oriente vers le faux positif.[19]"
+            }
+          ]
+        },
+        {
+          "title": "C10 - Bilan d'extension (role pivot de la TEP-PSMA corps entier)",
+          "text": "Le bilan d'extension initial concerne les formes **a risque intermediaire defavorable et a haut risque** (d'Amico : Gleason 8-10 **ou** PSA > 20 ng/mL **ou** stade clinique >= T2c) [4,5]. Il recherche l'atteinte **locoregionale** (capsule, vesicules seminales), **ganglionnaire pelvienne/retroperitoneale** et **metastatique** (os surtout, puis viscerale). L'avantage majeur de l'imagerie TEP au **PSMA** (Prostate-Specific Membrane Antigen) est le **corps entier en une seule acquisition**, sans irradiation conventionnelle redondante.\n\nL'essai pivot **proPSMA** (302 patients haut risque, randomise) a etabli la superiorite de la **TEP/TDM au [68Ga]Ga-PSMA-11** sur l'imagerie conventionnelle (TDM + scintigraphie osseuse) au staging primaire [10] :\n\n| Parametre (haut risque) | TEP-PSMA | Imagerie conventionnelle |\n|---|---|---|\n| **Precision diagnostique** | **92 %** | 65 % |\n| **Sensibilite** | **85 %** | 38 % |\n| **Specificite** | **98 %** | 91 % |\n| Resultats equivoques | **7 %** | 23 % |\n| Irradiation delivree | **8,4 mSv** | 19,2 mSv |\n\nLa TEP-PSMA detecte une atteinte **N et/ou M chez 56,7 %** des patients (vs 13,3 % pour la TDM seule) et revele des **metastases osseuses occultes chez ~15 %** des patients, sans faux positif osseux dans cette serie [10]. Elle entraine **plus de changements de prise en charge (28 % vs 15 %)** [10]. Pour la cartographie **osseuse** specifiquement, la **TEP au [18F]NaF** (fluorure de sodium, marqueur du remodelage osteoblastique) garde une sensibilite tres elevee (**0,95-1,00**) la ou la **scintigraphie osseuse au [99mTc]Tc-MDP** plafonne autour de **0,60-0,75** [19] ; en pratique, la TEP-PSMA couvre os et parties molles en un temps, reservant le NaF aux situations osseuses ciblees. Du fait de ces performances, les recommandations **NCCN** ne font plus de l'imagerie conventionnelle un prealable obligatoire : la TEP-PSMA peut etre l'outil de **1re ligne** au staging du risque intermediaire defavorable et du haut risque [23,40].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La detection ganglionnaire pelvienne reste limitee par la **resolution spatiale** : dans proPSMA, la sensibilite per-patient ganglionnaire n'est que de **~40 %** (micrometastases sous le seuil de detection), pour une specificite de **~95 %** [10]. Un curage etendu garde donc sa valeur malgre une TEP-PSMA negative en zone pelvienne chez le patient a haut risque."
+            },
+            {
+              "type": "info",
+              "title": "Criteres d'usage approprie",
+              "text": "La TEP-PSMA est jugee **appropriee** au staging initial du risque intermediaire **defavorable** et du **haut risque**, mais **rarement appropriee** en risque intermediaire favorable ou bas risque, ou la probabilite d'atteinte ganglionnaire/metastatique est faible [40]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Liaison du ligand PSMA a la glutamate-carboxypeptidase II surexprimee a la surface de la cellule prostatique tumorale, internalisation du complexe et fixation du radionucleide TEP, expliquant le contraste tumeur/fond eleve en bilan d'extension corps entier.",
+            "caption": "Fig. 1 - Cible PSMA : surexpression membranaire et internalisation, base du signal TEP corps entier."
+          }
+        },
+        {
+          "title": "C11 - Stadification & scores",
+          "text": "La stadification anatomique repose sur la classification **TNM (AJCC 8e ed.)** ; l'imagerie nucleaire y ajoute une lecture **metabolique/moleculaire** standardisee. La detection en **recidive biochimique** (BCR) est fortement **PSA-dependante**, ce qui conditionne le moment optimal de la TEP-PSMA [6].\n\n**Definition de la recidive biochimique (a connaitre)** [24] :\n\n| Contexte | Seuil de BCR |\n|---|---|\n| Post-prostatectomie radicale | **PSA >= 0,2 ng/mL** confirme sur 2 dosages |\n| Post-radiotherapie (criteres Phoenix) | **nadir + 2 ng/mL** |\n| Facteur pronostique cle | **PSA doubling time (PSADT) < 10 mois** = haut risque |\n\n**Taux de detection de la TEP-PSMA par strate de PSA** (meta-analyses [68Ga]Ga-PSMA-11) [41] :\n\n| PSA (ng/mL) | Taux de detection |\n|---|---|\n| <= 0,2 | **~30 %** |\n| 0,2-0,5 | ~33-45 % |\n| 0,5-1,0 | ~66-86 % |\n| >= 2,0 | **~94 %** |\n\nLe rendement reste donc faible aux PSA ultra-bas ; le seuil **EAU** recommande la TEP-PSMA des **PSA > 0,2 ng/mL** [50]. Globalement, le **18F-PSMA** detecte 83 % des recidives, devant la **18F-fluciclovine (74 %)** et la **18F-choline (66 %)** [17] ; la choline n'est utile qu'a PSA eleve (positivite passant de ~28 % a PSA < 0,5 a ~81 % a PSA >= 2,0 ng/mL) [16,18], ce qui justifie de **preferer le PSMA a bas PSA** [16].\n\n**Reporting standardise** : l'echelle **E-PSMA** (EANM v1.0) propose un score visuel de l'intensite des lesions par rapport aux references physiologiques (foie, blood-pool) [7]. En imagerie, on ne 'score' pas le cancer de la prostate comme un lymphome : on **cartographie l'extension** et on **caracterise la cible** (avidite PSMA), information directement actionnable pour la selection theranostique (§C12, §D14).",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "miTNM / PROMISE",
+              "text": "Le cadre **miTNM (PROMISE)** transpose le TNM a l'imagerie PSMA : il code de facon reproductible la localisation (T/N/M), le nombre de lesions et l'intensite (miPSMA expression score 0-3 calee sur blood-pool, foie et parotide), harmonisant la lecture inter-lecteurs et le suivi longitudinal [6]."
+            }
+          ]
+        },
+        {
+          "title": "C12 - Facteurs pronostiques & stratification du risque",
+          "text": "Les facteurs pronostiques combinent des marqueurs **cliniques/biologiques** (PSA, cinetique), **histologiques** (grade) et **moleculaires** (genotype), auxquels la medecine nucleaire ajoute des **biomarqueurs d'imagerie** (volume tumoral PSMA, intensite de fixation, phenotype d'avidite).\n\n| Facteur | Sens pronostique |\n|---|---|\n| **PSADT < 10 mois** | Risque metastatique et mortalite specifique accrus [24] |\n| **Grade ISUP (Grade Group)** eleve | GG1 = G <= 6 (favorable) ... GG5 = G 9-10 (haut potentiel metastatique) [4] |\n| **PSA initial / au moment de la BCR** | Determine le taux de detection TEP et l'etendue [41] |\n| **Mutation germinale BRCA2** | ~4 % localise / ~11 % metastatique ; progression rapide vers le mCRPC [22] |\n| **Volume tumoral PSMA eleve (PSMA-VOL)** | Charge tumorale moleculaire = pronostic defavorable [46] |\n| **Phenotype PSMA-/FDG+** (dedifferenciation) | Perte d'avidite PSMA, agressivite, non-eligibilite a la RLT [49] |\n\n**ISUP/Gleason (consensus 2014)** [4] : GG1 = Gleason <= 6 (3+3) ; GG2 = 3+4 ; GG3 = 4+3 ; GG4 = Gleason 8 ; GG5 = Gleason 9-10. La survie sans recidive biochimique a 5 ans s'echelonne d'environ **94,5 % (bas risque)** a **76,6 % (intermediaire)** et **54,6 % (haut risque)** dans l'evaluation contemporaine de la classification d'Amico [39].\n\nL'angle medecine nucleaire est d'integrer le **phenotype d'avidite** : un patient fortement **PSMA-avide** est candidat a la radioligand therapy (RLT), tandis qu'un phenotype **discordant PSMA-/FDG+** (souvent neuroendocrine/anaplasique) signe une dedifferenciation, predit une mauvaise reponse au [177Lu]Lu-PSMA-617 et oriente vers un traitement alternatif (cf. §D14) [49].",
+          "stats": [
+            {
+              "value": "92 % vs 65 %",
+              "label": "Precision TEP-PSMA vs imagerie conventionnelle au staging haut risque (proPSMA) [10]"
+            },
+            {
+              "value": "~94 %",
+              "label": "Detection TEP-PSMA en recidive si PSA >= 2,0 ng/mL [41]"
+            },
+            {
+              "value": "< 10 mois",
+              "label": "Seuil de PSADT definissant le haut risque pronostique [24]"
+            },
+            {
+              "value": "~11 %",
+              "label": "Frequence de BRCA2 germinal en cancer de prostate metastatique [22]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - Phenotype discordant PSMA-/FDG+",
+              "text": "La perte d'expression PSMA dans les formes **dedifferenciees / neuroendocrines** rend la TEP-PSMA **faussement rassurante** (faux negatif) et **exclut la RLT** au 177Lu-PSMA. C'est le rationale de la **double imagerie PSMA + FDG** du protocole TheraP : ecarter les lesions mesurables FDG+/PSMA- avant de traiter [49]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - PSMA-VOL comme biomarqueur",
+              "text": "La segmentation du **volume tumoral total PSMA-positif** (PSMA-VOL, logiciel qPSMA) sur la TEP de reference est pronostique de la survie globale et sert de socle aux criteres de reponse **RECIP 1.0** : une charge tumorale moleculaire elevee identifie les patients a risque, au-dela du seul PSA [46]."
+            }
+          ]
+        },
+        {
+          "title": "D13 - Stratégie thérapeutique générale",
+          "text": "La prise en charge de l'**adénocarcinome prostatique** se hiérarchise selon le **groupe de risque** (cf. §C11–C12) et le statut métastatique/hormono-sensible. La médecine nucléaire thérapeutique n'intervient qu'au stade **métastatique résistant à la castration (mCRPC)**, après échec des autres lignes ; mais l'imagerie isotopique conditionne toute la stratégie en amont, du staging du haut risque à la récidive biochimique.[6,23]\n\n| Stade / situation | Options de référence | Place de la MN |\n|---|---|---|\n| **Localisé bas/intermédiaire** | Surveillance active, prostatectomie radicale, radiothérapie ± curiethérapie | TEP-PSMA au staging du risque intermédiaire défavorable et du haut risque[40] |\n| **Localisé haut risque / N1** | Chirurgie ou radio-hormonothérapie ; **ADT** (déprivation androgénique) | Bilan d'extension par **TEP-PSMA** (proPSMA, §C10)[10] |\n| **Métastatique hormono-sensible (mHSPC)** | ADT + **ARPI** (inhibiteur de la voie du récepteur aux androgènes) ± docétaxel | Cartographie de la charge métastatique |\n| **mCRPC** | ARPI (abiratérone, enzalutamide), taxanes (docétaxel, cabazitaxel), **¹⁷⁷Lu-PSMA-617**, ²²³Ra (atteinte osseuse), olaparib si BRCA/HRR | **Sélection théranostique** par TEP-PSMA (§D14)[8,25] |\n\nLa **déprivation androgénique** est le socle de toute maladie avancée. Sur le plan isotopique, l'**ADT modifie l'avidité PSMA** (effet biphasique détaillé en §D17), ce qui impose de raisonner le **timing** des examens et de la radioligand-thérapie.[14,44] Le **²²³Ra-dichlorure** (émetteur α ostéotrope) reste une option dans le mCRPC à **atteinte osseuse symptomatique sans métastase viscérale** ; il ne cible pas le PSMA et ne s'inscrit pas dans la boucle théranostique PSMA, mais partage l'organe critique médullaire — un séquençage prudent avec le ¹⁷⁷Lu-PSMA est recommandé.[29]",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La place de la radioligand-thérapie PSMA s'élargit vers l'amont : après l'AMM initiale en **mCRPC post-ARPI et post-taxane** (VISION), l'extension d'AMM 2025 issue de **PSMAfore** autorise le ¹⁷⁷Lu-PSMA-617 chez le patient mCRPC **naïf de taxane** ayant progressé sous un ARPI, permettant de **différer la chimiothérapie**.[26,27,38]"
+            }
+          ]
+        },
+        {
+          "title": "D14 - Médecine nucléaire thérapeutique & théranostique",
+          "text": "Le cancer de la prostate est devenu le **modèle théranostique de référence** en oncologie : une même cible moléculaire, le **PSMA**, est successivement **imagée** (vecteur diagnostique ⁶⁸Ga/¹⁸F), utilisée pour **sélectionner** le patient (companion diagnostic), puis **traitée** par le radionucléide apparié (¹⁷⁷Lu, ²²⁵Ac). Le ligand est **internalisé** après fixation au PSMA membranaire, ce qui prolonge la rétention intratumorale et autorise une irradiation β⁻ ou α ciblée.[8,25]\n\n| Couple théranostique | Sélection (diagnostic) | Traitement | Émission · période · statut |\n|---|---|---|---|\n| **⁶⁸Ga/¹⁸F-PSMA → ¹⁷⁷Lu-PSMA-617** | TEP-PSMA positive (critère VISION) | ¹⁷⁷Lu-PSMA-617 (vipivotide tetraxetan, Pluvicto) | β⁻ (Emax ≈ 498 keV) + γ 113/208 keV imageables ; **T½ ≈ 6,6–6,7 j** ; AMM FDA 23 mars 2022[25,52] |\n| **⁶⁸Ga/¹⁸F-PSMA → ²²⁵Ac-PSMA-617** | TEP-PSMA positive, recours | ²²⁵Ac-PSMA-617 | **α** (4 désintégrations α, TEL élevé, parcours ~50–100 µm) ; **T½ ≈ 9,9 j** ; hors-AMM/essais[30,37] |\n\n**Vecteurs diagnostiques (volet « voir »)** — Le **⁶⁸Ga-PSMA-11** (générateur ⁶⁸Ge/⁶⁸Ga, **T½ 68 min**, photon d'annihilation **511 keV**, dose efficace **≈ 0,022 mSv/MBq**) sert de companion diagnostic dans VISION.[8,11] Les ligands **¹⁸F** (DCFPyL/piflufolastat, PSMA-1007 ; **T½ 110 min**, énergie positon **0,65 MeV** pour le DCFPyL) offrent une meilleure résolution et une production déportée ; le **PSMA-1007** à excrétion biliaire prédominante avantage la loge pelvienne mais génère des **foyers osseux bénins** plus fréquents (§D17).[31,36]\n\n**Sélection des patients — critères divergents selon l'essai :**\n- **Critère VISION** : ≥ 1 lésion **PSMA-positive** (captation visuellement **supérieure au foie**) ET **aucune lésion exclusionnaire PSMA-négative** ; pas de seuil SUV imposé, pas de TEP-FDG requise.[47]\n- **Critère TheraP (plus strict)** : **SUVmax ≥ 20** sur ≥ 1 site ET aucune lésion mesurable **FDG+/PSMA−**, écartant les phénotypes discordants dédifférenciés.[28]\n\n**Essais pivots :**\n\n*VISION* (NEJM, 23 juin 2021) — phase 3, n=831, mCRPC post-ARPI **et** post-taxane, PSMA+. ¹⁷⁷Lu-PSMA-617 **7,4 GBq/6 semaines, 4 à 6 cycles** + SoC vs SoC (2:1). **Survie globale médiane 15,3 vs 11,3 mois ; HR 0,62 (IC95 % 0,52–0,74 ; p<0,001)** ; rPFS médiane **8,7 vs 3,4 mois (HR 0,40)**.[8,53]\n\n*TheraP* (ANZUP 1603, Lancet 2021) — phase 2, n=200, mCRPC post-docétaxel, ¹⁷⁷Lu-PSMA-617 vs **cabazitaxel**. **Réponse PSA ≥ 50 % : 66 % vs 37 % (différence +29 %, p<0,0001)** ; réponse RECIST 49 % vs 24 % ; EI grade 3–4 **33 % vs 53 %** ; survie globale similaire au suivi long.[28,51]\n\n*PSMAfore* (Lancet 2024) — phase 3, n=468, mCRPC **taxane-naïf** post-ARPI, ¹⁷⁷Lu-PSMA-617 vs changement d'ARPI : **rPFS médiane 12,0 vs 5,6 mois ; HR 0,43** ; base de l'extension d'AMM 2025.[38]\n\n**²²⁵Ac-PSMA-617 (alpha-thérapie, recours)** — activité empirique **100 kBq/kg toutes les 8 semaines** ; **déclin PSA > 50 % chez 63 % (24/38)**, toute réponse PSA **87 %**, contrôle tumoral médian **9,0 mois**, réponses > 2 ans chez certains. La **xérostomie sévère** définit la toxicité dose-limitante (densité PSMA salivaire élevée + TEL α).[30,37]",
+          "stats": [
+            {
+              "value": "15,3 vs 11,3 mois",
+              "label": "Survie globale médiane, VISION (HR 0,62)[8]"
+            },
+            {
+              "value": "66 % vs 37 %",
+              "label": "Réponse PSA ≥ 50 %, TheraP vs cabazitaxel[28]"
+            },
+            {
+              "value": "7,4 GBq / 6 sem",
+              "label": "Activité ¹⁷⁷Lu-PSMA-617, ≤ 6 cycles[25]"
+            },
+            {
+              "value": "63 %",
+              "label": "Déclin PSA > 50 % sous ²²⁵Ac-PSMA-617[30]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — phénotype discordant PSMA−/FDG+",
+              "text": "La **dédifférenciation neuroendocrine/anaplasique** s'accompagne d'une **perte d'expression PSMA** avec hypermétabolisme glucidique persistant (**PSMA−/FDG+**) : ces lésions sont **non éligibles** au ¹⁷⁷Lu-PSMA (faux négatif PSMA) et grèvent le pronostic. C'est le rationnel de la **double imagerie PSMA + FDG** du critère TheraP, qui exclut ces patients de la radioligand-thérapie.[28,49]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — dosimétrie ¹⁷⁷Lu-PSMA-617",
+              "text": "Sous-étude dosimétrique VISION (n=30) : doses absorbées par unité d'activité **glandes lacrymales 2,1 Gy/GBq · glandes salivaires 0,63 · reins 0,43 · moelle rouge 0,035**. Sur 6 cycles (44,4 GBq) : **reins ≈ 19 Gy, moelle ≈ 1,5 Gy**, dans les limites tolérées (aucun EI rénal ≥ grade 2). Organes critiques = **glandes salivaires/lacrymales** (xérostomie) et **reins** (clairance urinaire du ligand).[9]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique PSMA : imager la cible (⁶⁸Ga/¹⁸F-PSMA) → sélectionner (avidité PSMA supérieure au foie / SUVmax ≥ 20) → traiter (¹⁷⁷Lu-PSMA-617 ou ²²⁵Ac-PSMA-617) → réévaluer (PSA, RECIP, dosimétrie).",
+            "caption": "Fig. 1 — La boucle théranostique PSMA : on image, on sélectionne, on traite, on réévalue la même cible moléculaire."
+          }
+        },
+        {
+          "title": "D15 - Évaluation de la réponse",
+          "text": "L'évaluation combine **biochimie (PSA)**, **imagerie morphologique** et **imagerie moléculaire PSMA**, en intégrant le caractère ostéoblastique des métastases osseuses qui prend en défaut RECIST. Le cadre de référence reste le **PCWG3** (Prostate Cancer Working Group 3) couplé à **RECIST 1.1**, complété par des critères TEP-PSMA dédiés.[46]\n\n| Domaine | Critère / outil | Définition de la progression |\n|---|---|---|\n| **Biochimique** | Cinétique du PSA | Remontée confirmée ; réponse = déclin ≥ 50 % (seuil TheraP)[28] |\n| **Morphologique** | RECIST 1.1 / PCWG3 | Os non mesurable en RECIST → recours aux critères osseux PCWG3 |\n| **Moléculaire PSMA** | **RECIP 1.0** | **↑ ≥ 20 % du volume tumoral PSMA (PSMA-VOL) ET nouvelle(s) lésion(s)**[46] |\n\n**RECIP 1.0** (Gafita, 2022) segmente le **volume tumoral PSMA-positif** (PSMA-VOL) sur la TEP de référence et à **12 semaines**, et classe la réponse en **RC/RP, stabilité ou progression** ; la **progression** exige à la fois une augmentation **≥ 20 % du PSMA-VOL** et l'apparition de **nouvelles lésions**. RECIP a une valeur pronostique sur la survie globale.[46] Sur le plan prédictif, un **SUVmean tumoral élevé** sur la TEP-PSMA de sélection est associé à une meilleure réponse au ¹⁷⁷Lu-PSMA-617 (analyse quantitative VISION).[48]\n\nEn pratique, la **réévaluation fonctionnelle doit comparer le même traceur** (PSMA vs PSMA) à technique constante. La discordance entre **baisse du PSA** et **imagerie** doit faire évoquer soit un flare précoce (§D17), soit l'émergence d'un **clone PSMA−/FDG+** dédifférencié échappant à la TEP-PSMA mais visible en FDG.[49]",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "L'imagerie **SPECT post-thérapeutique** sur les photons γ accessoires du ¹⁷⁷Lu (**113 et 208 keV**) après chaque administration permet de **vérifier le ciblage** des lésions et d'estimer la dosimétrie lésionnelle — un avantage propre aux émetteurs β⁻ « imageables » que ne partage pas l'alpha-thérapie au ²²⁵Ac.[52]"
+            }
+          ]
+        },
+        {
+          "title": "D16 - Suivi & détection de récidive",
+          "text": "Après traitement à visée curative (prostatectomie ou radiothérapie), la surveillance repose sur le **PSA**, dont la **ré-ascension** définit la **récidive biochimique (BCR)** et déclenche l'imagerie isotopique. La BCR survient chez **20–40 % des patients dans les 10 ans** suivant un traitement définitif.[24]\n\n| Contexte | Définition de la BCR | Seuil déclenchant la TEP-PSMA |\n|---|---|---|\n| **Post-prostatectomie radicale** | **2 valeurs consécutives de PSA ≥ 0,2 ng/mL**[24] | PSMA-PET recommandée dès **PSA > 0,2 ng/mL** (EAU)[50] |\n| **Post-radiothérapie (Phoenix)** | **nadir + 2 ng/mL**[24] | À défaut, choline/fluciclovine si PSA ≥ 1 ng/mL[50] |\n\nLe **PSA doubling time (PSADT)** est un facteur pronostique majeur de survie sans métastase, avec un seuil discriminant à **< 10 mois vs ≥ 10 mois** ; il conditionne, avec la valeur de PSA et le Gleason, le **rendement de la TEP-PSMA**.[24]\n\n**Détection PSA-dépendante** — Le taux de détection de la TEP-⁶⁸Ga-PSMA-11 croît avec le PSA : **≈ 63 % si PSA < 2,0 ng/mL** et **≈ 94 % si PSA ≥ 2,0 ng/mL**, validé sur histopathologie.[41] Même à **PSA ultra-bas ≤ 0,2 ng/mL**, le taux de détection regroupé atteint **≈ 29,6 %**, justifiant un examen précoce capable de modifier la stratégie de rattrapage.[42] La TEP-PSMA surclasse nettement les traceurs antérieurs en récidive (taux de détection regroupés **PSMA 83 % vs fluciclovine 74 % vs choline 66 %**).[17,43]\n\nLa **¹⁸F-choline** garde une place historique/alternative (sensibilité poolée **0,93**, spécificité **0,91**) mais son rendement s'effondre à bas PSA, d'où la préférence pour la TEP-PSMA dans cette fenêtre.[17,43] La **TEP-PSMA ou PET/MR peut désormais être l'outil de première ligne** au staging et en BCR, l'imagerie conventionnelle (TDM + scintigraphie osseuse) n'étant plus un préalable obligatoire (NCCN).[23]",
+          "steps": [
+            {
+              "title": "1 · Surveillance biochimique",
+              "text": "PSA à intervalles réguliers ; toute ré-ascension confirmée définit la BCR (≥ 0,2 ng/mL ×2 post-RP ; nadir + 2 ng/mL post-RT).[24]"
+            },
+            {
+              "title": "2 · Évaluation de la cinétique",
+              "text": "Calcul du PSADT ; un PSADT < 10 mois signe un risque métastatique élevé et oriente vers une imagerie précoce.[24]"
+            },
+            {
+              "title": "3 · TEP-PSMA",
+              "text": "Indiquée dès PSA > 0,2 ng/mL ; localise la récidive (loge, ganglions, os) avec un rendement croissant avec le PSA.[41,50]"
+            },
+            {
+              "title": "4 · Décision thérapeutique",
+              "text": "Radiothérapie de rattrapage si récidive locale, traitement dirigé des oligométastases, ou ligne systémique selon l'extension."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "En récidive à PSA bas, le **¹⁸F-PSMA-1007** à excrétion **biliaire** (faible activité urinaire) facilite l'analyse de la **loge prostatique et du pelvis**, là où l'activité vésicale intense du ⁶⁸Ga-PSMA-11 peut masquer une récidive locale — au prix de foyers osseux bénins plus nombreux (§D17).[31,36]"
+            }
+          ]
+        },
+        {
+          "title": "D17 - Pièges & situations particulières",
+          "text": "L'interprétation de l'imagerie PSMA et osseuse en contexte traité expose à des écueils spécifiques, dominés par la **modulation de l'avidité PSMA par l'ADT**, le **flare osseux** et les **faux positifs** de fixation PSMA. Leur méconnaissance conduit à des erreurs de stadification ou d'éligibilité théranostique.\n\n| Piège | Mécanisme | Conduite |\n|---|---|---|\n| **Flare osseux** | Remodelage ostéoblastique de cicatrisation sous traitement efficace (scinti ⁹⁹ᵐTc-MDP **et** ¹⁸F-NaF) | Contrôle différé ; ne pas conclure à une progression précoce[21] |\n| **« PSMA flare » sous ADT** | ↑ transitoire de l'expression PSMA (pic à 3–4 sem.) en maladie hormono-sensible | Tenir compte du timing ADT/TEP[14,45] |\n| **PSMA−/FDG+** | Dédifférenciation neuroendocrine → perte de PSMA | FDG complémentaire ; exclut la RLT PSMA[49] |\n| **Faux positifs PSMA** | Ganglions cœliaques, os bénin (surtout ¹⁸F-PSMA-1007), Paget, néovascularisation tumorale non prostatique | Corréler topographie/morphologie[36] |\n\n**Effet biphasique de l'ADT sur le PSMA** — La testostérone **réprime** physiologiquement l'expression du PSMA ; la **déprivation androgénique courte augmente transitoirement** l'avidité PSMA des cellules **hormono-sensibles** (« PSMA flare », pic de SUVmax à **3–4 semaines**, surtout osseux, hétérogène).[14,45] À l'inverse, l'**ADT prolongée** peut **abaisser** la captation.[15,44] Conséquence pratique : une ADT en cours n'est pas une contre-indication au staging, mais le **timing** doit être documenté, car il module l'intensité de fixation et donc la sélection théranostique.\n\n**Scintigraphie osseuse et ¹⁸F-NaF** — La scintigraphie planaire **⁹⁹ᵐTc-MDP** (γ 140 keV) a une **sensibilité limitée (≈ 0,60–0,75)** pour les métastases osseuses, contre **0,95–1,00 pour la ¹⁸F-NaF TEP/TDM** ; sa **spécificité** est en outre grevée par les lésions dégénératives, traumatiques et inflammatoires.[19,20] Le ¹⁸F-NaF est un marqueur de **remodelage ostéoblastique non tumeur-spécifique** (échange ¹⁸F⁻/OH⁻ dans l'hydroxyapatite), donc lui aussi sujet au **flare**.\n\n**Faux positifs PSMA à connaître** — captation physiologique intense des **glandes salivaires/lacrymales, reins, foie, rate, intestin grêle et voies urinaires** ; foyers **ganglionnaires cœliaques/sympathiques** ; **os bénin** (fracture, remaniement dégénératif, particulièrement avec le **¹⁸F-PSMA-1007**) ; **maladie de Paget** ; et tumeurs non prostatiques exprimant le PSMA dans leur **néovascularisation** (rein, thyroïde, hépatocarcinome).[12,36]",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — flare osseux post-traitement",
+              "text": "Au début d'un traitement systémique efficace, la **majoration paradoxale** de la fixation osseuse (scinti ⁹⁹ᵐTc-MDP **et** ¹⁸F-NaF) traduit une **cicatrisation ostéoblastique**, non une progression. Un contrôle **différé (≥ 3 mois)** est requis avant toute conclusion de progression osseuse.[21]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — timing ADT et avidité PSMA",
+              "text": "Ne pas surinterpréter une **augmentation de fixation PSMA** survenant dans les **3–4 semaines** suivant l'instauration d'une ADT en maladie hormono-sensible : il peut s'agir d'un **« PSMA flare »** transitoire (surexpression induite), et non d'une progression. Inversement, une **ADT prolongée** peut abaisser l'avidité et minorer l'extension.[14,15,44,45]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — discordance PSMA/FDG",
+              "text": "Devant une baisse du PSA contrastant avec une **TEP-PSMA pauvre** ou des lésions nouvelles non avides, évoquer un **clone dédifférencié PSMA−/FDG+** : une TEP-FDG complémentaire révèle ces lésions, ré-oriente la stratégie et exclut une (poursuite de) radioligand-thérapie PSMA inefficace.[49]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Fixation du ligand PSMA sur la glycoprotéine membranaire et internalisation, avec rappel des sites de captation physiologique (glandes salivaires et lacrymales, reins, intestin) sources de faux positifs.",
+            "caption": "Fig. 2 — Liaison et internalisation du ligand PSMA ; les sites de captation physiologique intense sont les principales sources de faux positifs."
+          }
+        },
+        {
+          "title": "E18 - Algorithme decisionnel global",
+          "text": "De la suspicion a la surveillance prolongee, la **medecine nucleaire (MN)** intervient a chaque jonction decisionnelle de l'adenocarcinome prostatique, articulee autour d'une cible unique mais dominante, le **PSMA** (Prostate-Specific Membrane Antigen). Le fil conducteur est le **PSA** (Prostate-Specific Antigen) : son taux et sa cinetique conditionnent l'opportunite et le rendement de chaque examen.\n\n*Parcours* : PSA eleve / toucher rectal -> biopsie + **score ISUP/Gleason** -> stratification **d'Amico** -> au stade localise haut risque ou intermediaire defavorable, **TEP-PSMA** d'emblee pour le bilan d'extension (gain de precision 92 % vs 65 % pour l'imagerie conventionnelle) [10] -> traitement local (prostatectomie / radiotherapie) -> surveillance du PSA -> en **recidive biochimique (BCR)**, **TEP-PSMA** guidee par le PSA (seuil de recours EAU **PSA > 0,2 ng/mL**) [50] -> maladie metastatique resistante a la castration (**mCRPC**) -> **TEP-PSMA de selection** (companion diagnostic) -> **theranostique** par **177Lu-PSMA-617** -> reevaluation (RECIP/PSA) -> recours **225Ac-PSMA-617** ou lignes ulterieures.\n\n| Etape clinique | Question | Outil MN | Decision conditionnee |\n|---|---|---|---|\n| Staging haut risque | N+ / M+ occultes ? | **TEP-PSMA** 1re ligne [23] | Champ d'irradiation, curage, abstention chirurgicale |\n| BCR | Ou est la rechute ? | **TEP-PSMA** (PSA-dependante) [6] | Radiotherapie de rattrapage ciblee vs traitement systemique |\n| mCRPC | Cible PSMA exprimee ? | **TEP-PSMA de selection** (critere VISION) [47] | Eligibilite au 177Lu-PSMA-617 |\n| Sous RLT | Reponse ? | TEP-PSMA + PSA (**RECIP 1.0**) [46] | Poursuite / arret / escalade alpha |\n\nLa coherence du parcours repose sur le principe **see-and-treat** : on image la cible que l'on traitera, et la negativite PSMA (phenotype dedifferencie PSMA-/FDG+) reoriente d'emblee hors de la voie theranostique [49].",
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Liaison du ligand PSMA a la glycoproteine transmembranaire surexprimee par la cellule prostatique, internalisation du complexe et signal d'imagerie / vecteur therapeutique."
+          }
+        },
+        {
+          "title": "E19 - Cas cliniques commentes",
+          "steps": [
+            {
+              "title": "Cas 1 - Bilan d'extension d'un haut risque (proPSMA-like)",
+              "text": "*Contexte* : homme 64 ans, **PSA 28 ng/mL**, biopsie **ISUP 4 (Gleason 8)**, T2c clinique -> **haut risque d'Amico** [5,39]. *Images* : TDM + scintigraphie osseuse 99mTc-MDP non concluantes ; **TEP-PSMA (68Ga-PSMA-11)** revele deux adenopathies iliaques internes infracentimetriques et un foyer osseux occulte L3. *Analyse* : la **TEP-PSMA** surclasse l'imagerie conventionnelle (precision **92 % vs 65 %**, sensibilite **85 % vs 38 %**) [10] et detecte des metastases N/M occultes chez ~15 % des patients sans faux negatif osseux [10]. *Conclusion* : reclassement en maladie oligometastatique -> abstention de prostatectomie a visee curative, radiotherapie + traitement systemique ; le changement de prise en charge illustre le taux superieur observe dans proPSMA (**28 % vs 15 %**) [10]."
+            },
+            {
+              "title": "Cas 2 - Recidive biochimique a bas PSA",
+              "text": "*Contexte* : homme 70 ans, prostatectomie radicale 3 ans auparavant (ISUP 3), **2 PSA consecutifs a 0,3 ng/mL** = **BCR** post-RP [24] ; **PSADT 8 mois** (cinetique defavorable). *Images* : **TEP-PSMA** (au-dessus du seuil EAU de 0,2 ng/mL) [50] localise un unique foyer ganglionnaire retroperitoneal ; bilan osseux negatif. *Analyse* : a PSA < 2 ng/mL le taux de detection PSMA reste limite (~63 %) mais croit avec le PSA et le PSADT [41,6] ; ici un PSADT court (< 10 mois) signe un risque metastatique eleve et justifie la recherche fonctionnelle [24]. *Conclusion* : radiotherapie de rattrapage ciblee sur le site PSMA-positif, plutot qu'une radiotherapie de loge en aveugle."
+            },
+            {
+              "title": "Cas 3 - Selection theranostique en mCRPC (VISION-like)",
+              "text": "*Contexte* : homme 73 ans, **mCRPC** apres **ARPI** (inhibiteur de la voie du recepteur aux androgenes) + docetaxel, PSA en ascension. *Images* : **TEP-PSMA de selection** -> multiples lesions osseuses et ganglionnaires a captation **superieure au foie** (critere VISION rempli), **aucune lesion exclusionnaire PSMA-negative** [47]. *Analyse* : patient eligible au **177Lu-PSMA-617** ; un complement FDG aurait ecarte un phenotype discordant **PSMA-/FDG+** (dedifferencie, non eligible) [49]. *Conclusion* : 6 cycles de **177Lu-PSMA-617 7,4 GBq/6 semaines** [25] ; reponse PSA et amelioration attendue de la survie globale (mediane **15,3 vs 11,3 mois**, HR 0,62) [8]. Reevaluation par **RECIP 1.0** a 12 semaines [46]."
+            }
+          ]
+        },
+        {
+          "title": "E20 - Points cles / a retenir",
+          "list": [
+            "La cible dominante est le **PSMA**, surexprime dans la quasi-totalite des adenocarcinomes et croissant avec le grade (formes peu differenciees, metastatiques, hormono-resistantes) [12].",
+            "Stratification : **ISUP/Gleason** (GG1 = Gleason <=6 a GG5 = 9-10) [4] et **d'Amico** (haut risque = Gleason 8-10 OU PSA > 20 ng/mL OU >= T2c) [5].",
+            "Au staging haut risque, la **TEP-PSMA** surclasse l'imagerie conventionnelle : precision **92 % vs 65 %**, Se **85 % vs 38 %**, Sp **98 % vs 91 %** [10], et n'est plus subordonnee a la scintigraphie osseuse (NCCN) [23].",
+            "En **BCR**, la TEP-PSMA est **PSA-dependante** : detection ~**63 % si PSA < 2** et ~**94 % si PSA >= 2 ng/mL** [41] ; seuil de recours EAU **PSA > 0,2 ng/mL** [50]. BCR = PSA >= 0,2 ng/mL x2 (post-RP) ou nadir + 2 ng/mL (post-RT, Phoenix) [24].",
+            "Le **PSADT** est un facteur pronostique majeur (seuil **< 10 mois**) qui module l'indication et le rendement de l'imagerie [24].",
+            "Hierarchie des traceurs en BCR : **18F-PSMA 83 % > 18F-fluciclovine 74 % > 18F-choline 66 %** ; la choline est preferee a la PSMA seulement faute de disponibilite (rendement faible si PSA < 1 ng/mL) [17].",
+            "Theranostique : couple **68Ga/18F-PSMA (image) -> 177Lu-PSMA-617 (traite)** ; **VISION** OS **15,3 vs 11,3 mois** (HR 0,62) [8], **TheraP** reponse PSA **66 % vs 37 %** vs cabazitaxel [28], **PSMAfore** rPFS **12,0 vs 5,6 mois** en pre-taxane [38].",
+            "Posologie **Pluvicto** : **7,4 GBq toutes les 6 semaines, jusqu'a 6 cycles** ; AMM FDA initiale **23 mars 2022** (mCRPC post-ARPI + post-taxane), extension pre-chimio 2025 [25,33].",
+            "Organes critiques de la RLT : **glandes lacrymales (2,1 Gy/GBq)** et **salivaires (0,63 Gy/GBq)** -> xerostomie ; **reins (0,43 Gy/GBq)** [9].",
+            "Recours alpha **225Ac-PSMA-617** : **100 kBq/kg / 8 semaines**, declin PSA > 50 % chez **63 %** ; **xerostomie = toxicite dose-limitante** [30].",
+            "Pieges majeurs : **flare osseux** post-traitement efficace [21], **modulation PSMA par l'ADT** (hausse transitoire a 3-4 sem, baisse au long cours) [44], phenotype **PSMA-/FDG+** non eligible a la RLT [49]."
+          ]
+        },
+        {
+          "title": "E21 - FAQ & pieges d'examen",
+          "text": "**TEP-PSMA ou imagerie conventionnelle au staging haut risque ?** La **TEP-PSMA** : sa precision (**92 % vs 65 %**) et sa moindre irradiation l'imposent en 1re ligne, sans scintigraphie osseuse prealable obligatoire (NCCN) [10,23].\n\n**A partir de quel PSA imager une recidive ?** Recours raisonnable des **PSA > 0,2 ng/mL** (seuil EAU) [50] ; le rendement est **PSA-dependant** (~63 % si PSA < 2 ; ~94 % si PSA >= 2 ng/mL) et croit avec un **PSADT court** [41,24]. A PSA < 1 ng/mL, la PSMA est nettement preferee a la choline [17].\n\n**Quel critere rend un patient eligible au 177Lu-PSMA-617 ?** Critere **VISION** : au moins une lesion a captation **superieure au foie** ET **aucune lesion exclusionnaire PSMA-negative** ; pas de seuil SUV impose [47]. **TheraP** etait plus strict (**SUVmax >= 20** + double imagerie FDG pour exclure les discordances) [28].\n\n**Pourquoi adjoindre une TEP-FDG dans certains cas ?** Pour demasquer le phenotype dedifferencie **PSMA-/FDG+** (neuroendocrine/anaplasique), qui echappe a la TEP-PSMA et **n'est pas eligible** a la radioligand-therapie [49].\n\n**L'ADT en cours contre-indique-t-elle le staging PSMA ?** Non, mais attention au timing : la **deprivation androgenique** augmente transitoirement l'expression PSMA (pic SUVmax a **3-4 semaines**, surtout osseux), tandis qu'une ADT prolongee peut au contraire **abaisser** la captation [44,45].\n\n**18F ou 68Ga ?** Le **18F** (T1/2 110 min, energie positon 0,65 MeV) offre une meilleure resolution et une production deportee ; le **68Ga** (T1/2 68 min) depend d'un generateur. Le **18F-PSMA-1007**, a excretion biliaire, degage la loge prostatique mais multiplie les **foyers osseux benins** (piege) [31,36].\n\n**Une hausse de fixation osseuse precoce sous traitement = progression ?** Pas necessairement : un **flare osteoblastique** (scintigraphie comme 18F-NaF) accompagne une reponse efficace -> controle differe avant de conclure [21]."
+        },
+        {
+          "title": "E24 - References & liens",
+          "text": "Bibliographie complete et datee en bas de page (**Sources & References**, 54 refs : GLOBOCAN/IARC, recommandations **EANM/SNMMI PSMA-PET 2.0** [6], **E-PSMA** [7], **AUC SNMMI** [40], essais pivots **proPSMA** [10], **VISION** [8], **TheraP** [28], **PSMAfore** [38], **225Ac-PSMA** [30], approbations FDA/EMA [33,34,35]).\n\n**Carte de liens (la << carte >>)** - la cible biologique vue cote maladie, symetrique des articles Examen correspondants : Examens (**TEP-PSMA 68Ga/18F**, **TEP a la 18F-choline**, **TEP a la 18F-fluciclovine**, **scintigraphie osseuse 99mTc-MDP**, **TEP au 18F-NaF**) - Traceurs / theranostique (**68Ga-PSMA-11**, **18F-DCFPyL / piflufolastat**, **177Lu-PSMA-617 / vipivotide tetraxetan**, **225Ac-PSMA-617**) - Scores (**ISUP/Gleason**, **d'Amico**, **TNM**, **RECIP 1.0**) - Differentiels imagerie (**hyperplasie benigne / prostatite**, **maladie de Paget**, foyers osseux benins) - Variantes (**carcinome neuroendocrine / dedifferencie PSMA-negatif**).\n\n*Valeurs locales (activites, seuils SUV, modalites) a adapter par centre. Derniere mise a jour : juin 2026 - profil medecin nucleaire.*"
+        }
+      ]
+    }
+  }
+}
