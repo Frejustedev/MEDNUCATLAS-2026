@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A1 (carte d'identite) vs Section D15 (dosimetrie)",
+    "problem": "Incoherence interne de la dose efficace a 185 MBq : A1 indique '~3,5 mSv a 185 MBq' alors que D15 (et la fiche etalon) indique '~3 mSv a 185 MBq'. Le calcul exact 0,019 x 185 = 3,5 mSv ; les deux valeurs sont individuellement defendables (3,5 = exact, 3 = arrondi) mais l'incoherence entre deux sections du meme article peut surprendre le lecteur. Aucune des deux n'est fausse.",
+    "fix": "Harmoniser : ecrire '~3,5 mSv a 185 MBq' partout (valeur exacte 0,019 x 185), ou bien '~3-3,5 mSv' dans les deux sections."
+  },
+  {
+    "severity": "minor",
+    "where": "Criteres EORTC (sections A5, C12, B10, E22) : '↓/↑ SUVmax ≥ 25 %'",
+    "problem": "Les criteres EORTC 1999 originaux definissent la progression metabolique par une augmentation '> 25 %' du SUV (et la reponse partielle par '> 25 %' de baisse apres ≥1 cycle, ou >15 % apres 1 cycle), et non par un seuil '≥ 25 %'. La formulation '≥ 25 %' est tres largement reprise dans la litterature secondaire (y compris la fiche etalon) et n'a aucune consequence clinique pratique, mais elle n'est pas strictement fidele au texte princeps de Young et al. 1999.",
+    "fix": "Optionnel : preciser '> 25 %' pour coller au texte original EORTC, ou conserver '≥ 25 %' (usage courant) — non bloquant."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A3 / C11 / D17 : sensibilite TEP metastases cerebrales ~21 % vs IRM ~77 %",
+    "problem": "Les chiffres 21 %/77 % proviennent d'une meta-analyse realisee chez des patients atteints de cancer BRONCHIQUE (lung cancer), pas de melanome. Le contenu les attribue correctement a 'une meta-analyse de reference sur metastases cerebrales' (fiche etalon) sans pretendre qu'ils sont specifiques au melanome, donc l'affirmation reste exacte, mais un lecteur pourrait croire a des donnees melanome-specifiques.",
+    "fix": "Optionnel : ajouter une mention discrete que ces chiffres derivent d'une meta-analyse de metastases cerebrales (toutes tumeurs/cancer bronchique) illustrant la limite physiologique generale, le principe restant transposable au melanome."
+  },
+  {
+    "severity": "minor",
+    "where": "A5 - Indications et E20/D18/E21 (figures \"jusqu'a ~59 % des bilans d'extension et ~33 % des suivis\" attribuees a [2])",
+    "problem": "Les pourcentages exacts d'impact sur la prise en charge (59 % en bilan d'extension, 33 % en suivi) sont attribues a la revue AJR 2015 [2] (Perng/Marcus/Subramaniam). La verification (PubMed/recherche) confirme que [2] est une source reelle, correctement titree/datee et topiquement pertinente, mais n'a pas permis de confirmer positivement que ces chiffres precis figurent dans l'abstract/le texte de [2] specifiquement. Ce sont des donnees plausibles et presentes dans la litterature TEP-melanome (et l'article les co-cite ailleurs avec [23] PMC7331822 et [24], deux sources verifiees comme reelles). Il s'agit donc d'une imprecision d'attribution, non d'une fabrication.",
+    "fix": "Verifier que les valeurs 59 % / 33 % proviennent bien de [2] ; sinon les rattacher aux sources primaires correspondantes ([23] et/ou [24]) deja presentes dans la bibliographie, ou nuancer (\"jusqu'a ~59 % selon les series\")."
+  }
+]
