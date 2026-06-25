@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections D15, D17 (tableau modèles dosimétriques) et coquilles diverses",
+    "problem": "Coquille isotopique récurrente : « ⁹⁰mTc-MAA » au lieu de « ⁹⁹ᵐTc-MAA » (l'isotope correct est le technétium-99m, pas un \"90mTc\" inexistant). Apparaît notamment dans D15 (« via ⁹⁰mTc-MAA SPECT »). Ailleurs dans l'article le ⁹⁹ᵐTc est correctement écrit, c'est donc une faute de frappe ponctuelle, mais sur une fiche médicale elle peut induire en erreur.",
+    "fix": "Remplacer toutes les occurrences de « ⁹⁰mTc » / « 90mTc » par « ⁹⁹ᵐTc » (technétium-99m, photon γ 140 keV)."
+  },
+  {
+    "severity": "minor",
+    "where": "Identité produit résine — incohérence interne entre sections (B7 vs D19/quiz)",
+    "problem": "L'activité spécifique par sphère de la résine SIR-Spheres est donnée à « ~50 Bq/sphère » en B7 (tableau et stats), mais à « ~50–75 Bq/sphère » en D19 et dans l'explication du quiz n°13. La fiche étalon retient 50 Bq (Recherche 2) ou ~75 Bq à calibration (Recherche 1). La valeur n'est pas fausse mais l'article se contredit lui-même d'une section à l'autre.",
+    "fix": "Harmoniser une seule valeur (p. ex. « ~50 Bq/sphère à calibration » partout, ou préciser systématiquement « ~50–75 Bq/sphère selon le moment de la mesure ») pour éviter la contradiction interne."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A5 / D17 / Cas clinique 1 — chiffre de réponse LEGACY",
+    "problem": "Le taux LEGACY est tantôt présenté comme « réponse objective élevée » (A5), tantôt « 84 % » étiqueté « réponse (RC élevée) » (D17 stat « 84 % — réponse complète segmentectomie »), tantôt « réponse complète ~83–84 % (LEGACY/RASER) » (Cas 1). Le 84 % de LEGACY correspond au best objective response rate (et non strictement à un taux de réponse complète isolé), tandis que ~83 % de RC vient de RASER. L'amalgame LEGACY/RASER sur un même chiffre de « réponse complète » est imprécis.",
+    "fix": "Distinguer clairement : LEGACY = ~84 % de réponse objective (taux de contrôle ~100 %) ; RASER = ~83 % de réponse complète. Ne pas étiqueter le 84 % de LEGACY comme « réponse complète »."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [17] — EANM procedure guideline (link.springer.com/article/10.1007/s00259-021-05600-z)",
+    "problem": "Le DOI, le journal (EJNMMI), le volume 49 et les pages 1682-1699 (2022) sont exacts et l'article existe bien. En revanche l'attribution 'Weber M, et al.' n'est pas le premier auteur usuel de cette guideline (souvent listée Konijnenberg/Weber selon les bases). Ce n'est PAS une fabrication — Weber figure parmi les auteurs — mais l'étiquette de premier auteur est potentiellement trompeuse.",
+    "fix": "Conserver la source (URL/DOI valides). Optionnellement remplacer 'Weber M, et al.' par 'Konijnenberg M, Weber M, et al.' ou simplement 'EANM, et al.' pour lever toute ambiguïté d'auteur principal."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [25] — Factors modulating 99mTc-MAA planar lung dosimetry (PMC9797182)",
+    "problem": "Source listée et plausible (J Appl Clin Med Phys 2022) mais citée une seule fois dans tout l'article (section B9), et de façon marginale ; densité de citation très faible par rapport aux autres sources dosimétriques. Non bloquant, aucune fabrication.",
+    "fix": "Soit renforcer son emploi (D15/C12 sur la dosimétrie pulmonaire MAA où elle serait pertinente), soit la conserver telle quelle — elle reste une source réelle et adéquate."
+  }
+]
