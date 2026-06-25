@@ -1,0 +1,367 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// GABARITS ÉDITORIAUX NUCLEATLAS — rubrique machine-readable
+// ─────────────────────────────────────────────────────────────────────────────
+// Transcription fidèle des deux gabarits de l'auteur (Dr B. F. P. Agboton,
+// juin 2026), extraits des PDF par `pdftotext -layout` :
+//   • NucleAtlas_Gabarit_Examen_MedecinNucleaire.pdf  (26 sections, §0→§25)
+//   • NucleAtlas_Gabarit_Maladie_MedecinNucleaire.pdf (25 sections, §0→§24)
+//
+// Ce fichier EST le contrat du pipeline de génération :
+//   – les agents rédacteurs s'y conforment (un agent / mouvement) ;
+//   – le validateur (scripts/validate-article.mjs) vérifie la fidélité au gabarit ;
+//   – l'assembleur (scripts/assemble-article.mjs) sait quelle section va où.
+//
+// Convention de `field` (où la section atterrit dans l'objet Article) :
+//   'lead'          → content.lead (bloc §0, identique aux 4 profils)
+//   'medecin_nuc'   → une Section de content.medecin_nuc.sections[]
+//   'identityCard'  → content.identityCard (composant IdentityCard)
+//   'quiz'          → content.quiz (composant Quiz)
+//   'revisionSheet' → content.revisionSheet (composant FicheButton)
+//   'relatedLinks'  → content.relatedLinks (composant LinkCard)
+// Les profils patient / medecin_non_nuc sont des DÉRIVATIONS allégées du
+// mouvement medecin_nuc (cf. GLOBAL_RULES.profiles).
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Pictogrammes autorisés pour la carte d'identité (doivent exister dans
+// components/IdentityCard.tsx → map ICONS). Le validateur s'appuie dessus.
+export const IDENTITY_ICONS = [
+  'atom', 'syringe', 'clock', 'activity', 'zap', 'target', 'shield', 'droplets',
+  'baby', 'stetho', 'flask', 'radiation', 'list', 'microscope', 'dna', 'pin', 'alert',
+];
+
+// Types de liens autorisés pour la carte de liens (cf. lib/data.ts RelatedLink).
+export const LINK_TYPES = ['traceur', 'maladie', 'examen', 'score', 'theranostique'];
+
+// Règles transverses communes aux deux gabarits (mouvements, ton, charte).
+export const GLOBAL_RULES = {
+  movements: {
+    A: 'Comprendre (le pourquoi / ce qu’elle est)',
+    B: 'Réaliser (le comment) / Diagnostiquer (la repérer & la confirmer)',
+    C: 'Interpréter (le lire) / Stadifier & stratifier (l’étendue & le risque)',
+    D: 'Maîtriser & situer (l’expert) / Traiter & suivre',
+    E: 'Ancrer & évaluer (la maîtrise)',
+  },
+  redaction: [
+    'Ton médecin → médecin : scientifique, présent de vérité générale.',
+    'Terminologie rigoureuse, chaque acronyme défini à sa première apparition.',
+    'Chiffres en unités SI, TOUJOURS sourcés par une citation numérotée [n].',
+    'Gras réservé aux termes-clés et aux chiffres ; jamais des phrases entières.',
+    'Pas de redite : chaque information à sa place, renvois (§) plutôt que répétitions.',
+    'Chaque section autoportante mais reliée (renvois explicites entre sections).',
+    'Concision : découper en blocs (une idée = un bloc), pas d’empilement.',
+  ],
+  visualPreference: 'figure annotée > schéma > tableau > encadré > texte',
+  tables: 'Les tableaux sont écrits en Markdown GFM dans le champ `text` de la section (rendu par react-markdown + remark-gfm), comme dans les exemplaires de référence.',
+  citations: 'Citations inline `[n]` renvoyant à la liste `sources` (dont le titre est préfixé `[n]`). N’inventer AUCUN DOI ni référence : sources réelles EANM / SNMMI / SFMN + sources primaires datées.',
+  charte: 'Bordeaux = structure/titres · or = accents/labels/liens · crème = fonds. Aucune couleur vive imposée dans le texte (la charte est portée par le thème).',
+  profiles: {
+    patient: 'Dérivation grand public : 2–3 sections courtes, zéro jargon, rassurant (à quoi ça sert, préparation, déroulé). Pas de valeurs techniques chiffrées.',
+    medecin_non_nuc: 'Dérivation clinicien non nucléariste : 2–3 sections (quand y penser / indications, démarche, apport de la MN), un infoBox « pourquoi adresser ».',
+    medecin_nuc: 'Couche experte complète : les 5 mouvements, la plus exhaustive — socle dont les autres profils dérivent.',
+  },
+  quiz: 'Minimum 15 questions ; chaque question : énoncé · options · index de bonne réponse · explication · difficulté (facile|moyen|difficile).',
+  identityCard: 'Champs constants et même ordre d’un article à l’autre (comparabilité) ; un pictogramme par champ ; valeurs courtes en unités SI.',
+};
+
+// Helper interne : fabrique une entrée de section homogène.
+const S = (num, code, movement, title, field, objective, includes, rules, visual, links, audience = ['medecin_nuc']) => ({
+  num, code, movement, title, field, objective, includes, rules, visual, links, audience,
+});
+
+// ═════════════════════════════════════════════════════════════════════════════
+// GABARIT EXAMEN — Médecin nucléaire (26 sections / 5 mouvements)
+// ═════════════════════════════════════════════════════════════════════════════
+export const EXAMEN_TEMPLATE = {
+  type: 'examen',
+  label: 'Examen · Médecin nucléaire',
+  sectionCount: 26,
+  reference: 'scripts/content/mibg.mjs (V2_MIBG)',
+  // Numéros de section rendus comme Sections medecin_nuc (le reste = lead / composants).
+  renderedMedecinNuc: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 25],
+  sections: [
+    S(0, '0', 'A', 'Présentation générale', 'lead',
+      'Donner à tout lecteur (patient → spécialiste) une compréhension immédiate de l’examen en 4–5 phrases. Bloc identique aux 4 profils.',
+      ['Ce que c’est', 'À quoi ça sert / ce que ça cherche', 'Comment ça se passe (grossièrement)', 'Est-ce sûr (dose)', 'Durée approximative'],
+      ['Zéro jargon, phrases courtes', '4–5 phrases en prose, ni liste ni tableau', 'Aucune valeur technique chiffrée ici (réservée à §1)', 'Rédiger en dernier', 'Lisible seul', 'Ton neutre et rassurant'],
+      'Iconogramme d’ouverture (bandeau pleine largeur).', [], ['patient', 'medecin_non_nuc', 'medecin_nuc']),
+    S(1, 'A1', 'A', 'Carte d’identité', 'identityCard',
+      'Fiche-réflexe scannable en 5 secondes : tout l’essentiel opérationnel d’un coup d’œil.',
+      ['Acronyme × modalité (planaire/TEMP/TEMP-TDM/TEP-TDM/TEP-IRM)', 'Traceur(s) principal + alternatives', 'Émission & énergie × période', 'Voie × activité adulte typique', 'Délai injection→acquisition × durée', 'Organe/système × dose efficace typique', 'Préparation clé (jeûne ?) × grandes indications', 'Disponibilité × examens liés'],
+      ['Format carte visuelle, jamais un paragraphe', 'Un pictogramme par champ', 'Valeurs courtes, unités SI', 'Champs constants et même ordre d’un article à l’autre', 'Si plusieurs traceurs : principal d’abord'],
+      'Grille 2–3 colonnes (picto + libellé + valeur), ancrée en tête.', ['traceur']),
+    S(2, 'A2', 'A', 'Définition', 'medecin_nuc',
+      'Poser une définition rigoureuse, juste, calibrée pour un médecin : ce qu’EST exactement l’examen.',
+      ['Nature exacte de l’examen', 'Principe d’imagerie fonctionnelle/moléculaire', 'Processus physiologique/moléculaire imagé', 'Type d’information (fonctionnelle vs anatomique, qualitative vs quantitative)', 'Positionnement vs imagerie morphologique'],
+      ['Terminologie précise et sourcée', '1–3 paragraphes denses, sans remplissage', 'Définir chaque acronyme', 'Distinguer explicitement « fonctionnel » de « morphologique »', 'Pas d’indications ici (réservées §5)', 'Gras sur les 2–3 termes-clés'],
+      'Schéma conceptuel fonctionnel vs morphologique.', []),
+    S(3, 'A3', 'A', 'Rappels anatomiques & physiologiques', 'medecin_nuc',
+      'Donner les bases anatomo-physiologiques strictement utiles à la compréhension du principe et à la lecture des images.',
+      ['Anatomie de l’organe/système (repères d’interprétation)', 'Physiologie/biochimie exploitée par le traceur', 'Variations physiologiques pertinentes'],
+      ['Rester ciblé (pas un cours d’anatomie complet)', 'Privilégier un schéma annoté', 'Annoter les repères qui réapparaîtront au §11', 'Relier la physiologie au mécanisme (§4 et §7)', 'Vocabulaire anatomique exact'],
+      'Schéma anatomique annoté de l’organe cible.', []),
+    S(4, 'A4', 'A', 'Principe : la cible biologique imagée', 'medecin_nuc',
+      'Expliquer le « pourquoi ça marche » conceptuel, indépendamment du traceur. Pont entre physiologie (§3) et indications (§5).',
+      ['La cible biologique précise (processus capté/fixé)', 'Ce qui rend une lésion hyper- ou hypofixante', 'Déterminants du contraste image', 'Rationale reliant la cible aux indications'],
+      ['Rester tracer-agnostique (mécanisme par traceur → §7)', 'Court et limpide, un schéma plutôt qu’un paragraphe', 'Toujours formuler « hyperfixation = … / hypofixation = … »', 'Ce bloc PRÉCÈDE les indications', 'Clé pédagogique de tout l’article'],
+      'Schéma du mécanisme de la cible (flux traceur → cible → signal) + encadré hyper/hypofixation.', []),
+    S(5, 'A5', 'A', 'Indications', 'medecin_nuc',
+      'Le cœur clinique : quand et pourquoi prescrire, indication par indication.',
+      ['Indications classées par domaine (onco, cardio, neuro, ostéo, endoc, infection, néphro-uro, pneumo, digestif)', 'Pour chaque indication : question clinique × pourquoi (renvoi §4) × ce qu’il montre × performance × place dans le parcours × niveau de preuve × statut'],
+      ['Chaque indication = entrée structurée identique', 'Toujours expliciter le rationale', 'Chaque indication pointe vers son article Maladie', 'Trier par fréquence/importance'],
+      'Sous-blocs par domaine + mini-graphe Examen→Maladies en clôture.', ['maladie']),
+    S(6, 'A6', 'A', 'Contre-indications & précautions', 'medecin_nuc',
+      'Sécuriser la prescription et la réalisation.',
+      ['CI absolues vs relatives', 'Grossesse × allaitement (délais d’arrêt)', 'Insuffisance rénale × terrain allergique', 'Interférences médicamenteuses', 'Populations particulières', 'Précautions pratiques'],
+      ['Séparer absolues/relatives', 'Délais d’arrêt de l’allaitement en tableau', 'Encadré d’alerte grossesse/allaitement bien visible', 'Interférences en tableau médicament→effet→conduite', 'Renvoyer au §16 (radioprotection)'],
+      'Tableau CI absolues/relatives + tableau interférences + encadré alerte (infoBox warning).', []),
+    S(7, 'B7', 'B', 'Radiopharmaceutique(s) & mécanisme(s) de fixation', 'medecin_nuc',
+      'Tout le volet « produit » : mécanisme moléculaire (comparatif si plusieurs), production, marquage, contrôle qualité, activités.',
+      ['(a) Mécanisme moléculaire par traceur + tableau comparatif si plusieurs', '(b) Production (générateur/cyclotron/réacteur), marquage', '(c) Contrôle qualité du traceur (pureté radiochimique/radionucléidique, pH, stérilité/apyrogénicité, rendement, stabilité)', '(d) Activités adulte & pédiatrie (carte EANM), voie'],
+      ['Si plusieurs traceurs : tableau comparatif côte à côte', 'Mécanisme exhaustif d’un traceur unique → renvoyer à son article Traceur', 'CQ traceur en tableau test→seuil', 'Activités en tableau adulte/enfant'],
+      'Tableau comparatif des traceurs + tableau CQ + schéma du mécanisme.', ['traceur']),
+    S(8, 'B8', 'B', 'Préparation du patient', 'medecin_nuc',
+      'Réunir les conditions d’un examen valide et sûr.',
+      ['Jeûne × hydratation', 'Glycémie (seuil TEP-FDG)', 'Arrêts médicamenteux', 'Prémédication', 'Information/consentement', 'Préparations spécifiques selon l’indication'],
+      ['Check-list chronologique (avant J / le jour J) via `steps`', 'Seuils chiffrés en évidence', 'Distinguer préparation générale vs par indication', 'Encadré « à vérifier impérativement »'],
+      'Frise chronologique (steps) + encadré des seuils.', []),
+    S(9, 'B9', 'B', 'Instrument, contrôle qualité & protocole d’acquisition', 'medecin_nuc',
+      'Garantir une machine apte, puis acquérir des données optimales.',
+      ['(a) CQ instrument — γ-caméra (uniformité, peaking, COR, résolution, sensibilité) / TEP (blank scan, normalisation, étalonnage SUV, NEMA, alignement)', '(b) Délais × positionnement × champ exploré', '(b) Paramètres : collimateur (pourquoi), fenêtre(s) d’énergie (pourquoi), matrice, zoom, temps/pas, mode', '(c) TDM associée : low-dose vs diagnostique', '(d) Corrections (atténuation, diffusé, mouvement), gating'],
+      ['CQ instrument en tête (prérequis)', 'Distinguer γ-caméra vs TEP', 'Pour chaque paramètre : le pourquoi et le compromis', 'Lier CQ ↔ quantification (renvois §10, §12)'],
+      'Encadré CQ + tableau paramètres + frise d’acquisition.', []),
+    S(10, 'B10', 'B', 'Traitement, reconstruction & quantification', 'medecin_nuc',
+      'Transformer les données brutes en images interprétables et en chiffres fiables.',
+      ['Algorithmes (FBP/OSEM : itérations, sous-ensembles, filtres, PSF, TOF et effets)', 'Quantification (SUVmax/mean/peak, MTV, TLG, FEVG, clairance, indices dédiés)', 'Fusion, logiciels, bases de données normales'],
+      ['Expliquer l’effet de chaque paramètre de reconstruction', 'Définir chaque métrique (formule simple + signification)', 'Préciser les pièges de quantification (renvoi §14)', 'Tableau des métriques (nom→définition→usage)'],
+      'Figure avant/après reconstruction + tableau des métriques.', []),
+    S(11, 'C11', 'C', 'Aspect normal & variantes physiologiques', 'medecin_nuc',
+      'Savoir reconnaître le normal avant le pathologique.',
+      ['Biodistribution normale du traceur', 'Variantes anatomiques', 'Pièges physiologiques (graisse brune, captations digestive/musculaire/urinaire…)'],
+      ['Privilégier une image normale de référence annotée (repère de tout l’article)', 'Lister les variantes', 'Distinguer variante physiologique vs artefact (renvoi §14)'],
+      'Grande image normale de référence annotée + galerie de variantes.', []),
+    S(12, 'C12', 'C', 'Sémiologie & interprétation', 'medecin_nuc',
+      'Apprendre à lire l’examen de façon systématique — section centrale de l’apprentissage, la plus iconographique.',
+      ['Méthode de lecture systématique (check-list)', 'Critères de positivité', 'Patterns des pathologies', 'Scores/classifications (Deauville, PERCIST, Krenning, SSS/SRS/SDS…)'],
+      ['Méthode de lecture pas-à-pas (ordre d’analyse explicite)', 'Chaque score dans un encadré dédié (critères + interprétation + lien Score)', 'Distinguer positif/négatif/équivoque', 'Relier patterns→maladies (§5)'],
+      'Check-list de lecture + galerie de patterns + encadrés scores.', ['score', 'maladie']),
+    S(13, 'C13', 'C', 'Compte rendu structuré', 'medecin_nuc',
+      'Produire un compte rendu standardisé, clair et actionnable.',
+      ['Trame type : administratif → technique → résultats → conclusion', 'Items obligatoires', 'Lexique normalisé', 'Exemples de CR rédigés'],
+      ['Fournir un modèle de CR prêt à l’emploi', 'Donner 1–2 exemples (un normal + un pathologique)', 'Lister les items obligatoires', 'Conclusion qui répond à la question clinique'],
+      'Encadré « modèle de compte rendu » + exemples.', []),
+    S(14, 'C14', 'C', 'Pièges, artefacts & faux positifs / négatifs', 'medecin_nuc',
+      'Éviter les erreurs d’interprétation.',
+      ['Artefacts techniques (mouvement, extravasation, troncature TDM)', 'Pièges physiologiques', 'Faux positifs/négatifs pathologiques', 'Méthode pour les reconnaître'],
+      ['Format « Piège » récurrent (infoBoxes warning) pour chaque écueil', 'Pour chaque piège : cause → aspect → comment l’éviter/corriger', 'Tableau récapitulatif faux+/faux-', 'Relier aux variantes (§11) et à la reconstruction (§10)'],
+      'Série d’encadrés « Piège » (infoBoxes) + tableau récap.', []),
+    S(15, 'D15', 'D', 'Dosimétrie', 'medecin_nuc',
+      'Maîtriser la dose délivrée et son calcul.',
+      ['Dose efficace (mSv) × doses aux organes × organe critique × coefficient de dose (mSv/MBq, CIPR 128)', 'Facteurs modulant (activité, biocinétique, fonction rénale, hydratation)', 'Pédiatrie (carte EANM)', 'Grossesse/allaitement (dose fœtale, passage lait)', 'Formalisme (MIRD, CIPR, fantômes, OLINDA/IDAC)', 'Mise en perspective (vs TDM, radio, fond naturel)'],
+      ['Chiffres de référence en tableau de doses', 'Distinguer dose absorbée vs dose efficace', 'Encadré grossesse/allaitement', 'Si théranostique : dosimétrie prédictive → lien thérapeutique'],
+      'Tableau des doses + graphique comparatif (texte).', []),
+    S(16, 'D16', 'D', 'Radioprotection', 'medecin_nuc',
+      'Protéger patient, personnel, entourage et public.',
+      ['Principes : justification × optimisation (ALARA) × limitation', 'Personnel : blindage × distance × temps × dosimétrie × zonage', 'Entourage/public : patient « source », consignes post-examen', 'Effluents & déchets radioactifs', 'Réglementation & traçabilité × conduite en cas de contamination'],
+      ['Structurer par cible de protection (personnel/entourage/public)', 'Consignes post-examen en check-list', 'Tableau « qui/quoi/combien de temps »', 'Renvoyer la fiche patient (§0)'],
+      'Schéma des trois cibles de protection + tableau consignes.', []),
+    S(17, 'D17', 'D', 'Performances diagnostiques & comparaison', 'medecin_nuc',
+      'Situer la valeur diagnostique de l’examen.',
+      ['Se / Sp / VPP / VPN par indication', 'Comparaison aux autres modalités (TDM/IRM/écho/autres MN)', 'Niveau de preuve'],
+      ['Tableau Se/Sp par indication (avec sources)', 'Tableau comparatif des modalités (forces/limites)', 'Rester factuel et sourcé', 'Renvoyer aux examens concurrents (§18)'],
+      'Tableau des performances + tableau comparatif des modalités.', ['examen']),
+    S(18, 'D18', 'D', 'Place dans la stratégie & algorithmes décisionnels', 'medecin_nuc',
+      'Intégrer l’examen dans le parcours de soins.',
+      ['Recommandations (EANM/SNMMI/SFMN)', 'Arbres décisionnels', 'Séquençage optimal (quand, avant/après quoi)'],
+      ['Arbre décisionnel (flowchart décrit en texte)', 'Citer les recommandations sourcées', 'Montrer le séquençage', 'Relier maladies et examens concurrents/complémentaires'],
+      'Arbre décisionnel (texte) + frise du parcours.', ['maladie', 'examen']),
+    S(19, 'D19', 'D', 'Examens apparentés & variantes', 'medecin_nuc',
+      'Relier l’examen à ses variantes et à ses voisins.',
+      ['Variantes de protocole', 'Examens concurrents ou complémentaires', 'Quand préférer l’un à l’autre'],
+      ['Tableau « examen apparenté → différence → quand le préférer »', 'Rester synthétique (le détail est dans chaque article)'],
+      'Tableau comparatif + mini-graphe des examens voisins.', ['examen']),
+    S(20, 'E20', 'E', 'Cas cliniques commentés / Iconographie', 'medecin_nuc',
+      'Ancrer par l’exemple — un véritable teaching file.',
+      ['Cas typiques, formes, pièges', 'Commentés pas à pas : contexte → images → analyse → conclusion'],
+      ['Format « cas » uniforme via `steps` : contexte / images / analyse / réponse', 'Couvrir typique + atypique + piège', 'Relier chaque cas aux sections concernées'],
+      'Cartes « cas clinique » (steps).', []),
+    S(21, 'E21', 'E', 'Points clés / à retenir', 'medecin_nuc',
+      'Synthèse mémorisable, haut rendement pour les compositions.',
+      ['8–15 points essentiels', 'Les chiffres-clés', 'Les pièges majeurs'],
+      ['Format liste à puces denses (`list`) : une idée par puce', 'Chiffres et seuils en gras', 'Tenir sur une « page mémo »', 'Base de la fiche téléchargeable (§24)'],
+      'Encadré « à retenir » pleine largeur (list).', []),
+    S(22, 'E22', 'E', 'FAQ & pièges d’examen', 'medecin_nuc',
+      'Anticiper toutes les questions du résident et les pièges de QCM.',
+      ['Questions fréquentes (Q/R)', 'Confusions classiques', 'Pièges de QCM'],
+      ['Format Q/R en prose', 'Cibler les confusions réelles', 'Réponses courtes et justifiées', 'Alimente la banque du quiz (§23)'],
+      'Accordéon Q/R (texte).', []),
+    S(23, 'E23', 'E', 'Quiz interactif', 'quiz',
+      'Évaluer et fixer les connaissances, avec émulation (leaderboard par article & global).',
+      ['Banque QCM (≥15)', 'Tirage aléatoire', 'Correction justifiée immédiate', 'Score (barème + temps) × niveaux de difficulté'],
+      ['Minimum 15 questions', 'Chaque question : énoncé · options · bonne réponse · explication', 'Difficulté graduée', 'Alimenté par §21 et §22'],
+      'Bloc quiz + deux leaderboards (composant Quiz).', []),
+    S(24, 'E24', 'E', 'Fiche de révision téléchargeable', 'revisionSheet',
+      'Synthèse 1–2 pages à emporter.',
+      ['Carte d’identité', 'Points clés', 'Protocole résumé', 'Scores', 'Pièges majeurs'],
+      ['1–2 pages maximum', 'Générée à partir des §1, §21, §9, §12, §14', 'Imprimable en N&B sans perte'],
+      'Fiche recto/verso + bouton PDF (composant FicheButton).', []),
+    S(25, 'E25', 'E', 'Références & liens sortants typés', 'medecin_nuc',
+      'Sourcer l’article et le connecter au graphe.',
+      ['Bibliographie (recommandations, articles, ouvrages)', 'Tous les liens typés (Traceurs, Maladies, Examens, Scores)'],
+      ['Références sourcées et datées (EANM/SNMMI/SFMN, sources primaires)', 'Récapituler tous les liens typés en fin d’article', 'Style de citation cohérent', 'Dater la dernière mise à jour'],
+      'Liste de références + mini-graphe final (carte de liens).', ['traceur', 'maladie', 'examen', 'score', 'theranostique']),
+  ],
+};
+
+// ═════════════════════════════════════════════════════════════════════════════
+// GABARIT MALADIE — Médecin nucléaire (25 sections / 5 mouvements)
+// ═════════════════════════════════════════════════════════════════════════════
+export const MALADIE_TEMPLATE = {
+  type: 'maladie',
+  label: 'Maladie · Médecin nucléaire',
+  sectionCount: 25,
+  reference: 'scripts/content/pheochromocytome.mjs (V2_PHEOCHROMOCYTOME)',
+  renderedMedecinNuc: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24],
+  sections: [
+    S(0, '0', 'A', 'Présentation générale', 'lead',
+      'Donner à tout lecteur, en 2–3 phrases, ce qu’est la maladie et pourquoi la médecine nucléaire y joue un rôle. Bloc identique aux 4 profils.',
+      ['Ce qu’est la maladie (une phrase)', 'L’organe/système touché', 'Pourquoi la MN intervient (diagnostic, extension, théranostique)', 'Ton neutre et rassurant'],
+      ['Zéro jargon, phrases courtes', '2–4 phrases en prose, ni liste ni tableau', 'Aucun chiffre épidémiologique ici (réservé §1)', 'Rédiger en dernier', 'Symétrie exacte avec le §0 de l’Examen'],
+      'Iconogramme d’ouverture (organe + cible biologique).', ['examen'], ['patient', 'medecin_non_nuc', 'medecin_nuc']),
+    S(1, 'A1', 'A', 'Carte d’identité', 'identityCard',
+      'Fiche-réflexe scannable en 5 secondes : l’essentiel de la maladie vu sous l’angle médecine nucléaire.',
+      ['Type (tumeur/affection ; bénin/malin)', 'Organe/système', 'Épidémiologie clé (incidence, âge, sexe)', 'Marqueurs biologiques', 'Gènes/mutations pertinents', 'Examens nucléaires phares', 'Cible théranostique éventuelle', 'Classification de référence'],
+      ['Format carte visuelle, jamais un paragraphe', 'Un pictogramme par champ', 'Valeurs courtes, unités SI', 'Champs constants et même ordre d’une maladie à l’autre', 'Signaler le(s) gène(s) pour les formes héréditaires'],
+      'Grille 2–3 colonnes, ancrée en tête.', ['examen', 'traceur']),
+    S(2, 'A2', 'A', 'Définition', 'medecin_nuc',
+      'Poser une définition rigoureuse et juste, calibrée pour un médecin : ce qu’est exactement la maladie.',
+      ['Nature exacte (entité/histologie)', 'Origine cellulaire/tissulaire', 'Ce qui la caractérise', 'Place nosologique'],
+      ['Terminologie précise et sourcée', '1–3 paragraphes denses', 'Définir chaque acronyme', 'Pas d’épidémiologie ni de prise en charge ici', 'Gras sur les 2–3 termes-clés', 'Synthétique côté clinique (le détail vit dans la vue clinicien)'],
+      'Schéma conceptuel : origine cellulaire / siège.', []),
+    S(3, 'A3', 'A', 'Épidémiologie & facteurs de risque', 'medecin_nuc',
+      'Cadrer l’épidémiologie utile, sans en faire un traité.',
+      ['Incidence/prévalence', 'Âge × sexe × terrain', 'Facteurs de risque', 'Formes héréditaires/syndromiques (gènes)', 'Pertinence pour l’imagerie (dépistage des formes familiales)'],
+      ['Rester synthétique (3–6 puces via `list`)', 'Chiffres sourcés et datés', 'Mettre en avant ce qui change la stratégie d’imagerie', 'Un encadré « formes héréditaires » si pertinent', 'Renvoyer au §4 et §5'],
+      'Petit graphique/encadré (pas dominant).', ['maladie']),
+    S(4, 'A4', 'A', 'Physiopathologie & cible(s) biologique(s) imageable(s)', 'medecin_nuc',
+      'Le pont vers l’imagerie. CHARNIÈRE DU GRAPHE : la maladie dit « j’exprime X → c’est pourquoi tel examen me voit ». Symétrique du §4 de l’Examen.',
+      ['Physiopathologie utile à l’imagerie', 'La/les « prise(s) » imageable(s) (transporteur/récepteur, captation métabolique, hypermétabolisme, captation iodée…)', 'Pour chaque prise → l’examen/traceur correspondant', 'Ce qui fait varier l’avidité (différenciation, mutations)'],
+      ['Rester tracer-agnostique', 'Formuler « telle cible → tel examen »', 'Ce bloc précède les sections diagnostiques', 'C’est ici que se tisse le graphe : chaque cible pointe vers son examen', 'Un tableau cible→mécanisme→traceur est idéal'],
+      'Schéma « cibles imageables → examens » (maladie au centre, flèches typées).', ['examen', 'traceur']),
+    S(5, 'A5', 'A', 'Classification & formes', 'medecin_nuc',
+      'Donner les classifications utiles à l’imagerie et à la thérapie.',
+      ['Classifications histologiques', 'Sous-types génétiques/moléculaires', 'Formes cliniques', 'Ce que chaque forme implique pour l’imagerie/le traitement'],
+      ['Privilégier un tableau « forme → caractéristique → implication imagerie/thérapie »', 'Marquer les formes qui changent la conduite nucléaire', 'Renvoyer au §4 et §14'],
+      'Tableau des formes (+ arbre de classification si riche).', ['traceur', 'maladie']),
+    S(6, 'B6', 'B', 'Présentation clinique & circonstances de découverte', 'medecin_nuc',
+      'Reconnaître quand et comment la maladie se révèle — vue synthétique.',
+      ['Signes & symptômes', 'Syndromes associés', 'Modes de découverte (fortuite, biologique, symptomatique, dépistage)', 'Formes asymptomatiques'],
+      ['Rester synthétique (le tableau clinique exhaustif relève de la vue clinicien)', 'Relier les signes à ce que l’imagerie cherchera', 'Un encadré « circonstances qui mènent à la MN »'],
+      'Schéma des modes de révélation.', []),
+    S(7, 'B7', 'B', 'Démarche diagnostique', 'medecin_nuc',
+      'Situer où la médecine nucléaire s’insère dans la confirmation du diagnostic.',
+      ['Biologie (marqueurs)', 'Anatomopathologie', 'Imagerie anatomique (TDM/IRM/écho)', 'Place et moment de la MN'],
+      ['Présenter en frise/algorithme (de la suspicion à la preuve) via `steps`', 'Montrer le séquençage (avant/après la preuve histologique)', 'Rester centré MN'],
+      'Arbre/frise de la démarche diagnostique.', ['examen']),
+    S(8, 'B8', 'B', 'Imagerie nucléaire au diagnostic', 'medecin_nuc',
+      'Le cœur nucléaire au diagnostic : quels examens, ce qu’ils montrent, leur sémiologie. SECTION DÉVELOPPÉE.',
+      ['Examens nucléaires pertinents au diagnostic', 'Pour chacun : ce qu’on cherche × aspect typique × performance × place', 'Sémiologie spécifique de la maladie', 'Apport vs imagerie anatomique'],
+      ['Une entrée structurée par examen (renvoi à l’article Examen pour le détail technique)', 'Badge de niveau de preuve par entrée', 'Ne pas dupliquer le protocole : ici « ce que la maladie donne à voir »', 'Tableau examen→ce qu’il cherche→performance'],
+      'Galerie annotée + tableau + carte de liens vers examens.', ['examen', 'score']),
+    S(9, 'B9', 'B', 'Diagnostics différentiels', 'medecin_nuc',
+      'Éviter les confusions, cliniques et en imagerie.',
+      ['Différentiels cliniques', 'Différentiels en imagerie (fixations trompeuses)', 'Éléments discriminants', 'Pièges de faux positifs'],
+      ['Tableau « différentiel → ce qui ressemble → ce qui distingue »', 'Relier aux pièges de l’examen', 'Chaque différentiel pointe vers son article Maladie'],
+      'Tableau différentiel + galerie comparative.', ['maladie']),
+    S(10, 'C10', 'C', 'Bilan d’extension', 'medecin_nuc',
+      'Montrer le rôle pivot de l’imagerie nucléaire corps entier dans l’évaluation de l’étendue.',
+      ['Ce que le bilan recherche (locorégional, ganglionnaire, métastatique)', 'Examens nucléaires corps entier mobilisés', 'Apport vs imagerie anatomique', 'Impact sur la décision thérapeutique'],
+      ['Souligner l’avantage « corps entier en une acquisition »', 'Relier aux examens', 'Montrer l’impact thérapeutique de l’extension'],
+      'Galerie d’atteintes (locale/ganglionnaire/métastatique).', ['examen']),
+    S(11, 'C11', 'C', 'Stadification & scores', 'medecin_nuc',
+      'Donner les systèmes de stadification et les scores d’imagerie.',
+      ['Classifications de stade (TNM, INRG, Ann Arbor…)', 'Scores d’imagerie (Curie, SIOPEN, Deauville, miTNM, Krenning…)', 'Correspondance stade → conduite'],
+      ['Chaque score/classification dans un encadré dédié (critères + interprétation + lien Score)', 'Distinguer stadification anatomique vs métabolique', 'Relier au pronostic (§12) et au suivi (§15)', 'Sourcer chaque système'],
+      'Encadrés de scores + tableau des stades.', ['score']),
+    S(12, 'C12', 'C', 'Facteurs pronostiques & stratification du risque', 'medecin_nuc',
+      'Relier l’imagerie au pronostic et à la stratification du risque.',
+      ['Facteurs pronostiques cliniques/biologiques/histologiques', 'Biomarqueurs d’imagerie (volume métabolique, intensité de fixation, scores)', 'Groupes de risque', 'Impact sur l’intensité du traitement'],
+      ['Mettre en avant les biomarqueurs d’imagerie (l’angle MN)', 'Tableau « facteur → impact pronostique »', 'Relier à la décision thérapeutique (§13–14)', 'Sourcer'],
+      'Tableau des facteurs pronostiques.', ['examen', 'score']),
+    S(13, 'D13', 'D', 'Stratégie thérapeutique générale', 'medecin_nuc',
+      'Donner la vue d’ensemble du traitement, pour situer la place de la MN thérapeutique.',
+      ['Chirurgie', 'Traitements systémiques (chimio, thérapies ciblées, immunothérapie)', 'Radiothérapie externe', 'Place globale de la MN thérapeutique'],
+      ['Rester synthétique (le détail relève de la vue clinicien/onco)', 'Objectif : contextualiser la MN dans l’arsenal', 'Une frise/un encadré des grandes options', 'Renvoyer au §14 pour le détail nucléaire'],
+      'Schéma/frise de l’arsenal thérapeutique.', []),
+    S(14, 'D14', 'D', 'Médecine nucléaire thérapeutique & théranostique', 'medecin_nuc',
+      'Le CŒUR THÉRANOSTIQUE. Sélection des patients par imagerie, traitements par radionucléides, dosimétrie, boucle imager→traiter→réévaluer.',
+      ['Principe théranostique (sélection diagnostique → traitement apparié)', 'Traitements par radionucléides applicables (¹³¹I, ¹³¹I-MIBG, ¹⁷⁷Lu-DOTATATE, Ra-223, ¹⁷⁷Lu-PSMA…)', 'Critères de sélection (avidité, expression de la cible)', 'Dosimétrie × effets × suivi', 'Place vs autres traitements'],
+      ['Dérouler la boucle complète : diagnostic→sélection→traitement→dosimétrie→réévaluation', 'Expliciter le couple diagnostic/thérapie (paire théranostique)', 'Renvoyer aux articles Traceurs', 'Marquer le niveau de preuve / AMM'],
+      'Schéma « boucle théranostique » obligatoire + tableau des options de RIV.', ['traceur', 'examen', 'theranostique']),
+    S(15, 'D15', 'D', 'Évaluation de la réponse', 'medecin_nuc',
+      'Comment la médecine nucléaire évalue la réponse au traitement.',
+      ['Critères de réponse métaboliques/fonctionnels (PERCIST, Lugano/Deauville…)', 'Imagerie de réponse', 'Comparaison des scores dans le temps', 'Réponse complète/partielle/progression'],
+      ['Insister sur la comparaison avant/après (même score, même technique)', 'Distinguer réponse anatomique vs métabolique', 'Relier aux scores (§11) et aux pièges post-thérapeutiques (§17)'],
+      'Figure avant/après + tableau des critères.', ['examen', 'score']),
+    S(16, 'D16', 'D', 'Suivi & détection de récidive', 'medecin_nuc',
+      'Place de la médecine nucléaire dans la surveillance et la détection des rechutes.',
+      ['Rythme et modalités de surveillance', 'Rôle de la MN (détection précoce, marqueur en hausse + imagerie)', 'Seuils de déclenchement d’un examen nucléaire', 'Apport vs imagerie anatomique'],
+      ['Relier « élévation d’un marqueur → imagerie nucléaire »', 'Frise de suivi', 'Renvoyer aux examens et au compte rendu'],
+      'Frise de suivi + galerie de récidives.', ['examen']),
+    S(17, 'D17', 'D', 'Pièges & situations particulières', 'medecin_nuc',
+      'Éviter les erreurs propres au contexte traité.',
+      ['Faux positifs/négatifs en contexte traité', 'Inflammation post-thérapeutique (post-chirurgie, post-radiothérapie)', 'Phénomène de flare', 'Remaniements/cicatrices × délais à respecter'],
+      ['Format « Piège » récurrent (infoBoxes warning) : cause → aspect → comment l’éviter', 'Insister sur les délais post-traitement', 'Relier aux pièges de l’Examen'],
+      'Série d’encadrés « Piège » + tableau récap.', ['examen']),
+    S(18, 'E18', 'E', 'Algorithme décisionnel global', 'medecin_nuc',
+      'Synthèse visuelle : de la suspicion au suivi, le rôle de la MN à chaque étape.',
+      ['Arbre global (suspicion→diagnostic→stadification→traitement→réponse→suivi)', 'Points où la MN intervient', 'Embranchements selon forme/génotype'],
+      ['Un grand flowchart (décrit en texte)', 'Relier aux examens et au théranostique', 'Cohérent avec le §18 de l’Examen'],
+      'Arbre décisionnel global (texte).', ['examen', 'maladie']),
+    S(19, 'E19', 'E', 'Cas cliniques commentés / Iconographie', 'medecin_nuc',
+      'Ancrer par l’exemple — un teaching file orienté maladie.',
+      ['Cas typiques, formes, pièges', 'Commentés pas à pas : contexte → images → analyse → conclusion', 'Idéalement : diagnostic + stadification + théranostique'],
+      ['Format « cas » uniforme via `steps` : contexte / images / analyse / réponse', 'Couvrir typique + atypique + piège', 'Relier chaque cas aux sections concernées'],
+      'Cartes « cas clinique » (steps).', []),
+    S(20, 'E20', 'E', 'Points clés / à retenir', 'medecin_nuc',
+      'Synthèse mémorisable, haut rendement pour les compositions.',
+      ['8–15 points essentiels', 'Les chiffres-clés', 'Les pièges majeurs', 'Le triptyque cible → examen → théranostique'],
+      ['Format liste à puces denses (`list`)', 'Chiffres et seuils en gras', 'Tenir sur une « page mémo »', 'Base de la fiche téléchargeable (§23)'],
+      'Encadré « à retenir » pleine largeur (list).', []),
+    S(21, 'E21', 'E', 'FAQ & pièges d’examen', 'medecin_nuc',
+      'Anticiper les questions du résident et les pièges de QCM.',
+      ['Questions fréquentes (Q/R)', 'Confusions classiques (quel examen pour quelle forme)', 'Pièges de QCM'],
+      ['Format Q/R en prose', 'Cibler les confusions réelles', 'Réponses courtes et justifiées', 'Alimente la banque du quiz (§22)'],
+      'Accordéon Q/R (texte).', []),
+    S(22, 'E22', 'E', 'Quiz interactif', 'quiz',
+      'Évaluer et fixer les connaissances (leaderboard par article & global).',
+      ['Banque QCM (≥15)', 'Tirage aléatoire', 'Correction justifiée immédiate', 'Score × niveaux de difficulté'],
+      ['Minimum 15 questions', 'Chaque question : énoncé · options · bonne réponse · explication', 'Même schéma de données que l’Examen (système mutualisé)'],
+      'Bloc quiz + deux leaderboards (composant Quiz).', []),
+    S(23, 'E23', 'E', 'Fiche de révision téléchargeable', 'revisionSheet',
+      'Synthèse 1–2 pages à emporter.',
+      ['Carte d’identité', 'Points clés', 'Démarche diagnostique résumée', 'Scores/stades', 'Théranostique en bref', 'Pièges'],
+      ['1–2 pages maximum', 'Générée à partir des §1, §11, §14, §17, §20', 'Imprimable en N&B sans perte'],
+      'Fiche recto/verso + bouton PDF (composant FicheButton).', []),
+    S(24, 'E24', 'E', 'Références & liens sortants typés', 'medecin_nuc',
+      'Sourcer l’article et le connecter au graphe.',
+      ['Bibliographie (recommandations, articles, ouvrages)', 'Tous les liens typés (Examens, Traceurs, Maladies, Scores)'],
+      ['Références sourcées et datées (EANM/SNMMI/SFMN + sociétés d’organe)', 'Récapituler tous les liens typés en fin d’article', 'Style de citation cohérent', 'Dater la dernière mise à jour'],
+      'Liste de références + mini-graphe final (carte de liens).', ['examen', 'traceur', 'maladie', 'score', 'theranostique']),
+  ],
+};
+
+export const TEMPLATES = { examen: EXAMEN_TEMPLATE, maladie: MALADIE_TEMPLATE };
+
+// Codes des sections qui doivent apparaître comme Sections rendues dans
+// medecin_nuc (cf. `renderedMedecinNuc`). NB : §1 « Carte d'identité » a un
+// double rôle — il alimente content.identityCard ET apparaît comme section
+// narrative « A1 · Carte d'identité » (le composant IdentityCard est injecté
+// dans la section dont le titre matche /carte d.identit/i, cf. ArticleView).
+export function expectedMedecinNucSectionCodes(type) {
+  const t = TEMPLATES[type];
+  if (!t) throw new Error(`type de gabarit inconnu : ${type}`);
+  const byNum = new Map(t.sections.map((s) => [s.num, s.code]));
+  return t.renderedMedecinNuc.map((n) => byNum.get(n));
+}
+
+export default TEMPLATES;

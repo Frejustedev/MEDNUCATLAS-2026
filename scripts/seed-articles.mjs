@@ -65,6 +65,8 @@ const articles = [...batch1, ...batch2, ...batch3, ...batch4, ...batch5, ...batc
   .concat([mibgArticle, pheoArticle], autoArticles);
 
 const DRY = process.argv.includes('--dry');
+const ONLY_IX = process.argv.indexOf('--only');
+const ONLY_ID = ONLY_IX >= 0 ? process.argv[ONLY_IX + 1] : null;
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\//, '')), '..');
 const ENV_LOCAL = path.join(ROOT, '.env.local');
 
@@ -114,10 +116,12 @@ function validate(a) {
 }
 
 (async () => {
+  const toSeed = ONLY_ID ? articles.filter((a) => a.id === ONLY_ID) : articles;
   log(`Projet ${PROJECT_ID} / base ${DATABASE_ID}`);
-  log(`${articles.length} article(s) à traiter${DRY ? ' (DRY RUN)' : ''}`);
+  log(`${toSeed.length} article(s) à traiter${ONLY_ID ? ` (--only ${ONLY_ID})` : ''}${DRY ? ' (DRY RUN)' : ''}`);
+  if (ONLY_ID && !toSeed.length) fail(`--only ${ONLY_ID} : aucun article de cet id dans le jeu`);
 
-  for (const a of articles) {
+  for (const a of toSeed) {
     const errs = validate(a);
     if (errs.length) {
       log(`✗ ${a.id} ignoré : ${errs.join(', ')}`);

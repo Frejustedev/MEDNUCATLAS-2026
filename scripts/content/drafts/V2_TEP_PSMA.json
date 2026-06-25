@@ -1,0 +1,1246 @@
+{
+  "id": "V2_TEP_PSMA",
+  "type": "examen",
+  "cat": "prostate",
+  "catLabel": "Cancer de la Prostate",
+  "title": "TEP au ⁶⁸Ga-PSMA-11 / ¹⁸F-PSMA",
+  "difficulty": "avancé",
+  "tags": [
+    "TEP-PSMA",
+    "PSMA",
+    "68Ga-PSMA-11",
+    "18F-DCFPyL",
+    "piflufolastat",
+    "18F-PSMA-1007",
+    "cancer de la prostate",
+    "récidive biochimique",
+    "PSMA-RADS",
+    "PROMISE miTNM",
+    "théranostique",
+    "177Lu-PSMA",
+    "proPSMA"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "[68Ga]Ga-PSMA-11: The First FDA-Approved 68Ga-Radiopharmaceutical for PET Imaging of Prostate Cancer (PMC8401928)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401928/",
+      "verified": true
+    },
+    {
+      "title": "E-PSMA: the EANM standardized reporting guidelines v1.0 for PSMA-PET (PMC8113168)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8113168/",
+      "verified": true
+    },
+    {
+      "title": "Diagnostic Performance of 18F-DCFPyL-PET/CT in Men with Biochemically Recurrent Prostate Cancer: CONDOR Phase 3 Multicenter Study (PMC8382991)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8382991/",
+      "verified": true
+    },
+    {
+      "title": "PYLARIFY (piflufolastat F 18) injection — DailyMed label / prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a00e5cbc-4fd5-4280-82ec-cd3498df4553",
+      "verified": true
+    },
+    {
+      "title": "PSMA PET/CT: joint EANM procedure guideline/SNMMI procedure standard for prostate cancer imaging 2.0",
+      "url": "https://link.springer.com/article/10.1007/s00259-022-06089-w",
+      "verified": false
+    },
+    {
+      "title": "EANM/SNMMI PSMA PET Guideline 2.0 (SNMMI PDF, 2023)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2023-01-09/PSMA%20PET%20Guideline%202.0%201.17.23%20PDF%20for%20website.pdf",
+      "verified": false
+    },
+    {
+      "title": "Prostate-specific membrane antigen PET-CT in patients with high-risk prostate cancer before curative-intent surgery or radiotherapy (proPSMA) — Hofman et al., Lancet 2020;395:1208-16",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30314-7/abstract",
+      "verified": false
+    },
+    {
+      "title": "Diagnostic Performance of 18F-DCFPyL-PET/CT in Men with Biochemically Recurrent Prostate Cancer (CONDOR) — Clinical Cancer Research",
+      "url": "https://aacrjournals.org/clincancerres/article/27/13/3674/671523/Diagnostic-Performance-of-18F-DCFPyL-PET-CT-in-Men",
+      "verified": false
+    },
+    {
+      "title": "Lutetium-177–PSMA-617 for Metastatic Castration-Resistant Prostate Cancer (VISION) — Sartor et al., NEJM 2021;385:1091-1103",
+      "url": "https://www.nejm.org/doi/10.1056/NEJMoa2107322",
+      "verified": true
+    },
+    {
+      "title": "Prostate Cancer Molecular Imaging Standardized Evaluation (PROMISE): Proposed miTNM Classification for the Interpretation of PSMA-Ligand PET/CT — JNM 2018",
+      "url": "https://jnm.snmjournals.org/content/59/3/469",
+      "verified": false
+    },
+    {
+      "title": "Second Version of the Prostate Cancer Molecular Imaging Standardized Evaluation Framework (PROMISE V2) — PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36935345/",
+      "verified": false
+    },
+    {
+      "title": "PSMA-RADS 2.0: a revised framework for PSMA-targeted imaging interpretation and clinical decision-making — PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40514459/",
+      "verified": false
+    },
+    {
+      "title": "Reliability and practicability of PSMA-RADS 1.0 for structured reporting of PSMA-PET/CT scans in prostate cancer patients (PMC10853294)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10853294/",
+      "verified": false
+    },
+    {
+      "title": "PSMA-1007 Uptake in Ganglia of the Sympathetic Trunk and Its Intra-individual Reproducibility (PMC10172258)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10172258/",
+      "verified": false
+    },
+    {
+      "title": "F-18 labelled PSMA-1007: biodistribution, radiation dosimetry and histopathological validation — Giesel et al., EJNMMI 2017 (PMC5323462)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5323462/",
+      "verified": false
+    },
+    {
+      "title": "Biokinetics and dosimetry of 18F-PSMA-1007 in patients with prostate cancer — Hvittfeldt et al., 2022 (PubMed 36039853)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36039853/",
+      "verified": false
+    },
+    {
+      "title": "The therapeutic and diagnostic potential of PSMA/glutamate carboxypeptidase II (GCPII) — Evans et al., Br J Pharmacol 2016",
+      "url": "https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/bph.13576",
+      "verified": false
+    },
+    {
+      "title": "Identification of alternative protein targets of glutamate-ureido-lysine associated with PSMA tracer uptake — PNAS",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2025710119",
+      "verified": false
+    },
+    {
+      "title": "PSMA PET and radionuclide therapy in prostate cancer (incl. Morigi PSMA vs choline comparison) — PMC5123597",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5123597/",
+      "verified": false
+    },
+    {
+      "title": "Results from the OSPREY trial: Phase 2/3 Multi-Center Study of 18F-DCFPyL PET/CT — Journal of Nuclear Medicine",
+      "url": "https://jnm.snmjournals.org/content/60/supplement_1/586",
+      "verified": false
+    },
+    {
+      "title": "Haute Autorité de Santé — RADELUMIN ([18F]PSMA-1007) Cancer de la prostate",
+      "url": "https://www.has-sante.fr/jcms/p_3352203/fr/radelumin-18f-psma-1007-cancer-de-la-prostate",
+      "verified": false
+    },
+    {
+      "title": "HAS — PYLCLARI (piflufolastat 18F) Commission de Transparence (CT20528)",
+      "url": "https://www.has-sante.fr/jcms/p_3505567/fr/pylclari-28022024-transcription-ct20528",
+      "verified": false
+    },
+    {
+      "title": "EAU 2024 Guidelines — PSMA PET/CT in staging and biochemical recurrence (UroToday conference highlights)",
+      "url": "https://www.urotoday.com/conference-highlights/eau-2024/eau-2024-prostate-cancer/150959-eau-2024-update-on-psma-pet-ct-when-does-its-use-in-staging-have-an-impact-on-survival.html",
+      "verified": false
+    },
+    {
+      "title": "Detection of Biochemically Recurrent Prostate Cancer with [18F]DCFPyL PET/CT: Updated Systematic Review and Meta-Analysis (PMC10459480)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10459480/",
+      "verified": false
+    },
+    {
+      "title": "E-PSMA reporting guidelines v1.0 (Springer)",
+      "url": "https://link.springer.com/article/10.1007/s00259-021-05245-y",
+      "verified": false
+    },
+    {
+      "title": "PSMA-RADS Version 1.0: standardizing interpretation/reporting of PSMA-targeted PET (Rowe et al.)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6859641/",
+      "verified": true
+    },
+    {
+      "title": "VISION trial: 177Lu-PSMA-617 improves OS in mCRPC (Sartor et al., NEJM 2021) — Novartis release",
+      "url": "https://www.novartis.com/news/media-releases/positive-survival-data-novartis-investigational-radioligand-therapy-177lu-psma-617-published-new-england-journal-medicine",
+      "verified": true
+    },
+    {
+      "title": "VISION Trial: Lu-177–PSMA-617 prolongs survival in mCRPC (The ASCO Post, juin 2021)",
+      "url": "https://ascopost.com/news/june-2021/vision-trial-lu-177-psma-617-radioligand-therapy-prolongs-survival-in-metastatic-castration-resistant-prostate-cancer/",
+      "verified": true
+    },
+    {
+      "title": "Quantitative 68Ga-PSMA-11 PET and outcomes after 177Lu-PSMA-617 (VISION) — Radiology 2024 (SUVmean prognostic)",
+      "url": "https://pubs.rsna.org/doi/full/10.1148/radiol.233460",
+      "verified": true
+    },
+    {
+      "title": "Radiation dosimetry of [68Ga]PSMA-11 in low-risk prostate cancer patients (EJNMMI Physics 2019)",
+      "url": "https://ejnmmiphys.springeropen.com/articles/10.1186/s40658-018-0239-2",
+      "verified": true
+    },
+    {
+      "title": "Estimation of organ absorbed doses and effective dose from 68Ga-PSMA-11 PET scan (Radiat Prot Dosimetry)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30137614/",
+      "verified": true
+    },
+    {
+      "title": "Combined model-based and patient-specific dosimetry for 18F-DCFPyL (EJNMMI 2018)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5918228/",
+      "verified": true
+    },
+    {
+      "title": "Detection Rate of PSMA PET Using Different Ligands in Biochemical Recurrence: systematic review & meta-analysis (Eur Urol 2023)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37770370/",
+      "verified": true
+    },
+    {
+      "title": "Detection rate of 18F-PSMA-1007 PET/CT in staging and BCR by serum PSA: meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9353183/",
+      "verified": true
+    },
+    {
+      "title": "18F-fluciclovine vs 68Ga-PSMA-11 in early biochemical recurrence after prostatectomy (Calais et al., Lancet Oncol 2019)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1470204519304152",
+      "verified": true
+    },
+    {
+      "title": "Diagnostic role of 18F-Choline, 18F-Fluciclovine and 18F-PSMA PET/CT in BCR: a meta-analysis (Frontiers Oncol 2021)",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.684629/full",
+      "verified": true
+    },
+    {
+      "title": "68Ga-PSMA-HBED-CC Uptake in Cervical, Celiac, and Sacral Ganglia: an important pitfall (JNM 2018)",
+      "url": "https://jnm.snmjournals.org/content/59/9/1406",
+      "verified": true
+    },
+    {
+      "title": "Musculoskeletal pitfalls in 68Ga-PSMA PET/CT (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10567088/",
+      "verified": true
+    },
+    {
+      "title": "Nonprostatic diseases on PSMA PET imaging: a spectrum of benign and malignant findings (Cancer Imaging 2020)",
+      "url": "https://link.springer.com/article/10.1186/s40644-020-00300-7",
+      "verified": true
+    },
+    {
+      "title": "Development and evaluation of a 68Ge/68Ga generator for PET imaging (physics 68Ga)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7392752/",
+      "verified": true
+    },
+    {
+      "title": "Gallium-68 PSMA PET: A Practical Guide for Radiologists and Clinicians (PMC8986511)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8986511/",
+      "verified": false
+    },
+    {
+      "title": "AFU/Urofrance — Recommandations cancer de la prostate, actualisation 2022-2024",
+      "url": "https://www.urofrance.org/recommandation/recommandations-du-comite-de-cancerologie-de-lassociation-francaise-durologie-actualisation-2022-2024-cancer-de-la-prostate-diagnostic-et-prise-en-charge-de-la-maladie-localise/",
+      "verified": false
+    },
+    {
+      "title": "18F-Fluciclovine vs 68Ga-PSMA-11 Imaging for BCR (CancerNetwork, synthèse guidelines EAU/NCCN)",
+      "url": "https://www.cancernetwork.com/view/18f-fluciclovine-vs-68ga-psma-11-imaging-for-prostate-cancer-biochemical-recurrence",
+      "verified": true
+    },
+    {
+      "title": "Gallium (68Ga) gozetotide — FDA kits Illuccix/Locametz/Gozellix (Wikipedia, dates d'approbation)",
+      "url": "https://en.wikipedia.org/wiki/Gallium_(68Ga)_gozetotide",
+      "verified": false
+    }
+  ],
+  "lead": "La TEP au PSMA est un examen d'imagerie qui éclaire le cancer de la prostate en repérant une protéine très présente à la surface des cellules tumorales. En une seule acquisition du corps entier, elle cherche où la maladie se trouve, qu'il s'agisse d'un premier bilan d'une forme à haut risque ou d'une réascension de marqueur après traitement. Plus sensible que les imageries classiques, elle modifie souvent la stratégie de prise en charge en révélant des localisations passées inaperçues. Elle sert aussi de porte d'entrée vers un traitement radioactif ciblé, car une fixation marquée des lésions identifie les patients qui pourront en bénéficier. C'est un examen indolore, rapide, qui repose sur l'injection d'un produit faiblement radioactif.",
+  "identityCard": [
+    {
+      "icon": "flask",
+      "label": "Traceurs",
+      "value": "⁶⁸Ga-PSMA-11 · ¹⁸F-DCFPyL · ¹⁸F-PSMA-1007"
+    },
+    {
+      "icon": "target",
+      "label": "Cible biologique",
+      "value": "PSMA / GCPII (FOLH1), glycoprotéine transmembranaire"
+    },
+    {
+      "icon": "zap",
+      "label": "Émission × énergie",
+      "value": "β⁺ → photons 511 keV ; ⁶⁸Ga Emax 1899 keV, ¹⁸F 634 keV"
+    },
+    {
+      "icon": "clock",
+      "label": "Période physique",
+      "value": "⁶⁸Ga 67,7 min · ¹⁸F 109,8 min"
+    },
+    {
+      "icon": "atom",
+      "label": "Production",
+      "value": "⁶⁸Ga : générateur ⁶⁸Ge/⁶⁸Ga · ¹⁸F : cyclotron"
+    },
+    {
+      "icon": "syringe",
+      "label": "Activité adulte",
+      "value": "⁶⁸Ga-PSMA-11 111–259 MBq ; ¹⁸F-DCFPyL ~333 MBq"
+    },
+    {
+      "icon": "clock",
+      "label": "Délai → images",
+      "value": "⁶⁸Ga 50–100 min (~60) · ¹⁸F ~60–120 min"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose efficace",
+      "value": "⁶⁸Ga ~0,022 mSv/MBq · ¹⁸F-DCFPyL ~0,017 mSv/MBq"
+    },
+    {
+      "icon": "droplets",
+      "label": "Élimination",
+      "value": "⁶⁸Ga-PSMA-11 / ¹⁸F-DCFPyL urinaire · ¹⁸F-PSMA-1007 hépatobiliaire"
+    },
+    {
+      "icon": "shield",
+      "label": "Préparation",
+      "value": "Pas de jeûne ; hydratation + miction avant acquisition"
+    },
+    {
+      "icon": "list",
+      "label": "Indications phares",
+      "value": "Bilan haut risque · récidive biochimique · sélection pré-RLT"
+    },
+    {
+      "icon": "microscope",
+      "label": "Scores",
+      "value": "PSMA-RADS 1.0/2.0 · PROMISE miTNM (miT/miN/miM)"
+    },
+    {
+      "icon": "activity",
+      "label": "Quantification",
+      "value": "SUVmax · TBR · score miPSMA 0–3 (E-PSMA)"
+    },
+    {
+      "icon": "alert",
+      "label": "Limite biologique",
+      "value": "~5–10 % de tumeurs PSMA-négatives (neuroendocrines)"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-PSMA-11 (gozétotide)"
+    },
+    {
+      "type": "traceur",
+      "label": "¹⁸F-DCFPyL (piflufolastat)"
+    },
+    {
+      "type": "traceur",
+      "label": "¹⁸F-PSMA-1007"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer de la prostate"
+    },
+    {
+      "type": "maladie",
+      "label": "Récidive biochimique"
+    },
+    {
+      "type": "examen",
+      "label": "TEP à la ¹⁸F-choline"
+    },
+    {
+      "type": "examen",
+      "label": "TEP à la ¹⁸F-fluciclovine"
+    },
+    {
+      "type": "examen",
+      "label": "IRM multiparamétrique prostatique"
+    },
+    {
+      "type": "score",
+      "label": "PSMA-RADS"
+    },
+    {
+      "type": "score",
+      "label": "PROMISE / miTNM"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-PSMA-617 (Pluvicto)"
+    },
+    {
+      "type": "theranostique",
+      "label": "²²⁵Ac-PSMA"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quelle est la cible moléculaire de la TEP au PSMA ?",
+      "options": [
+        "Le transporteur de la noradrénaline (NET)",
+        "Le récepteur de la somatostatine de type 2",
+        "Le PSMA / glutamate carboxypeptidase II (FOLH1)",
+        "Le transporteur du glucose GLUT-1"
+      ],
+      "answer": 2,
+      "explanation": "Le PSMA (Prostate-Specific Membrane Antigen), aussi appelé glutamate carboxypeptidase II ou FOLH1, est une glycoprotéine transmembranaire de type II surexprimée par les cellules de cancer prostatique [2,17].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Que devient le complexe ligand-PSMA après fixation au domaine extracellulaire ?",
+      "options": [
+        "Il est immédiatement métabolisé par la MAO",
+        "Il est internalisé par endocytose, augmentant la rétention",
+        "Il diffuse passivement hors de la cellule",
+        "Il bloque la synthèse des catécholamines"
+      ],
+      "answer": 1,
+      "explanation": "Le complexe ligand-PSMA est internalisé (endocytose et recyclage endosomal), ce qui accroît la rétention intracellulaire et le contraste tumoral [17,18].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la période physique du ⁶⁸Ga ?",
+      "options": [
+        "8,0 jours",
+        "67,7 min",
+        "109,8 min",
+        "271 jours"
+      ],
+      "answer": 1,
+      "explanation": "Le ⁶⁸Ga a une période physique de 67,7 min ; il est produit par générateur ⁶⁸Ge/⁶⁸Ga (le ⁶⁸Ge parent ayant une période d'environ 271 jours) [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Pourquoi le ¹⁸F offre-t-il une meilleure résolution spatiale que le ⁶⁸Ga ?",
+      "options": [
+        "Sa période est plus courte",
+        "Son énergie β⁺ plus basse donne un libre parcours plus court",
+        "Il n'émet pas de photons de 511 keV",
+        "Il est produit par générateur"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁸F émet un positon d'énergie plus basse (Emax ≈ 634 keV vs 1899 keV pour le ⁶⁸Ga), d'où un libre parcours moyen plus court et une meilleure résolution spatiale [41].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel traceur a une excrétion principalement hépatobiliaire, dégageant la loge prostatique ?",
+      "options": [
+        "⁶⁸Ga-PSMA-11",
+        "¹⁸F-DCFPyL",
+        "¹⁸F-PSMA-1007",
+        "Tous ont une excrétion urinaire"
+      ],
+      "answer": 2,
+      "explanation": "Le ¹⁸F-PSMA-1007 a une excrétion hépatobiliaire prédominante avec activité urinaire minime, avantage pour la loge prostatique mais source de faux positifs digestifs/costaux [16].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans l'essai proPSMA (Lancet 2020), quelle était l'exactitude de la TEP-PSMA vs imagerie conventionnelle pour le bilan du cancer à haut risque ?",
+      "options": [
+        "65 % vs 92 %",
+        "92 % vs 65 %",
+        "85 % vs 38 %",
+        "98 % vs 91 %"
+      ],
+      "answer": 1,
+      "explanation": "proPSMA a montré une exactitude globale de 92 % pour la TEP-PSMA vs 65 % pour l'imagerie conventionnelle (TDM + scintigraphie osseuse), soit +27 % [7].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle dose d'irradiation a été rapportée dans proPSMA pour la TEP-PSMA vs imagerie conventionnelle ?",
+      "options": [
+        "8,4 mSv vs 19,2 mSv",
+        "19,2 mSv vs 8,4 mSv",
+        "4,7 mSv vs 6,3 mSv",
+        "2,4 mSv vs 5,0 mSv"
+      ],
+      "answer": 0,
+      "explanation": "Dans proPSMA, la dose efficace totale était de 8,4 mSv pour la TEP-PSMA contre 19,2 mSv pour l'imagerie conventionnelle (TDM + scintigraphie osseuse) [7].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le taux de détection approximatif de la TEP-PSMA en récidive biochimique pour un PSA ≥ 2 ng/mL ?",
+      "options": [
+        "~36 %",
+        "~50 %",
+        "~63 %",
+        "~94 %"
+      ],
+      "answer": 3,
+      "explanation": "La méta-analyse rapporte un taux de détection d'environ 0,94 (IC 0,91–0,96) pour PSA ≥ 2 ng/mL, contre ~0,63 si PSA < 2 ng/mL [33].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans CONDOR (¹⁸F-DCFPyL, PSA médian 0,8 ng/mL), quelle proportion de patients a connu un changement de prise en charge ?",
+      "options": [
+        "28 %",
+        "41 %",
+        "63,9 %",
+        "84,8 %"
+      ],
+      "answer": 2,
+      "explanation": "CONDOR a rapporté un changement de prise en charge chez 63,9 % des patients, avec un taux de localisation correcte (CLR) de 84,8–87,0 % [3].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la principale faiblesse de la TEP-PSMA pour les adénopathies pelviennes en bilan initial (cohorte OSPREY) ?",
+      "options": [
+        "Spécificité faible",
+        "Sensibilité limitée pour les micro-métastases",
+        "Excrétion hépatique gênante",
+        "Fixation osseuse excessive"
+      ],
+      "answer": 1,
+      "explanation": "Dans OSPREY cohorte A (validation histologique), la sensibilité ganglionnaire pelvienne était de 30,6–41,9 % (médiane 40,3 %) malgré une spécificité élevée de 96,3–98,9 % [20].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel ganglion sympathique constitue un piège majeur de faux positif mimant une adénopathie rétropéritonéale ?",
+      "options": [
+        "Ganglion stellaire",
+        "Ganglion cœliaque",
+        "Ganglion sacré",
+        "Ganglion hypogastrique"
+      ],
+      "answer": 1,
+      "explanation": "Les ganglions sympathiques, surtout cœliaques (aspect linéaire para-aortique T12-L1), captent le PSMA de façon bénigne et peuvent mimer des adénopathies rétropéritonéales [14,37].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Comment se définit le score d'expression miPSMA (E-PSMA) de niveau 3 ?",
+      "options": [
+        "< blood pool",
+        "≥ blood pool mais < foie",
+        "≥ foie mais < parotide",
+        "≥ parotide"
+      ],
+      "answer": 3,
+      "explanation": "L'échelle visuelle E-PSMA cote 0 (< blood pool), 1 (≥ blood pool, < foie), 2 (≥ foie, < parotide) et 3 (≥ parotide = élevée) [2,25].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Combien de catégories comporte le score PSMA-RADS version 1.0 ?",
+      "options": [
+        "3 catégories",
+        "4 catégories",
+        "5 catégories (1 à 5)",
+        "6 catégories"
+      ],
+      "answer": 2,
+      "explanation": "PSMA-RADS 1.0 (Rowe et al.) cote de 1 (bénin) à 5 (cancer quasi certain), la catégorie 3 (équivoque) se subdivisant en 3A–3D [26].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Que désigne le composant miM1b de la classification PROMISE / miTNM ?",
+      "options": [
+        "Ganglions pelviens",
+        "Ganglions extra-pelviens",
+        "Métastases osseuses",
+        "Métastases viscérales"
+      ],
+      "answer": 2,
+      "explanation": "Dans PROMISE/miTNM, miM1a = ganglions extra-pelviens, miM1b = métastases osseuses, miM1c = métastases viscérales [10].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le critère d'éligibilité PSMA retenu dans l'essai VISION pour la radioligand-thérapie ?",
+      "options": [
+        "SUVmax tumoral > 10",
+        "Captation d'au moins une métastase supérieure à celle du foie",
+        "Score miPSMA = 1 sur toutes les lésions",
+        "PSA > 2 ng/mL"
+      ],
+      "answer": 1,
+      "explanation": "VISION exigeait une captation PSMA d'au moins une métastase supérieure à la captation hépatique, sans lésion PSMA-négative discordante en TDM/IRM [9,27].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quels résultats de survie globale a montré l'essai VISION (¹⁷⁷Lu-PSMA-617 + SOC vs SOC) dans le mCRPC PSMA-positif ?",
+      "options": [
+        "15,3 vs 11,3 mois, HR 0,62",
+        "8,7 vs 3,4 mois, HR 0,40",
+        "21,4 vs 14,5 mois, HR 0,50",
+        "11,3 vs 15,3 mois, HR 1,62"
+      ],
+      "answer": 0,
+      "explanation": "VISION a montré une survie globale médiane de 15,3 vs 11,3 mois (HR 0,62 ; IC 0,52–0,74 ; p<0,001), et une rPFS de 8,7 vs 3,4 mois (HR 0,40) [9,28].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi un blocage thyroïdien ou un jeûne ne sont-ils pas requis avant une TEP-PSMA ?",
+      "options": [
+        "Le traceur ne contient pas d'iode et la captation n'est pas glucose-dépendante",
+        "Le PSMA est exclusivement prostatique",
+        "L'examen est trop court",
+        "La thyroïde ne capte jamais les positons"
+      ],
+      "answer": 0,
+      "explanation": "Les ligands du PSMA ne contiennent pas d'iode libre et leur captation n'est pas glucose-dépendante (différence avec le ¹⁸F-FDG) : ni jeûne ni blocage thyroïdien ne sont nécessaires [5,6].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Pour quelle raison une TEP-PSMA peut-elle être faussement négative chez un patient avec cancer prostatique avéré ?",
+      "options": [
+        "Excès d'hydratation",
+        "Tumeur PSMA-négative par dédifférenciation neuroendocrine",
+        "Période trop longue du ⁶⁸Ga",
+        "Activité injectée trop élevée"
+      ],
+      "answer": 1,
+      "explanation": "Environ 5–10 % des cancers prostatiques sont PSMA-négatifs (dédifférenciation neuroendocrine), source de faux négatifs ; l'hormonothérapie peut aussi moduler l'expression du PSMA [5].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Selon l'EAU 2024, à partir de quel PSA la TEP-PSMA est-elle proposée pour une récidive après prostatectomie ?",
+      "options": [
+        "PSA > 0,2 ng/mL",
+        "PSA > 1 ng/mL",
+        "PSA > 2 ng/mL",
+        "PSA > 5 ng/mL"
+      ],
+      "answer": 0,
+      "explanation": "L'EAU 2024 recommande la TEP-PSMA en cas de récidive après prostatectomie si PSA > 0,2 ng/mL et si le résultat modifie la prise en charge (recommandation faible) [23].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Comment la TEP-PSMA se compare-t-elle à la TEP-choline à bas PSA (étude Morigi) ?",
+      "options": [
+        "La choline est plus sensible",
+        "Elles sont équivalentes",
+        "La PSMA requalifie positifs ~54 % des patients choline-négatifs",
+        "Aucune des deux ne détecte de lésion"
+      ],
+      "answer": 2,
+      "explanation": "Morigi a montré 14 patients positifs uniquement en PSMA, soit 54 % de patients choline-négatifs requalifiés positifs en PSMA, traduisant la supériorité de la TEP-PSMA à bas PSA [19,35].",
+      "difficulty": "difficile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "Cible = PSMA (GCPII / FOLH1), glycoprotéine transmembranaire surexprimée 100–1000× par les cellules de cancer prostatique ; après fixation, le complexe ligand-PSMA est internalisé (rétention, contraste) [2,17].",
+      "Trois traceurs TEP : ⁶⁸Ga-PSMA-11 (générateur, Emax 1899 keV), ¹⁸F-DCFPyL/piflufolastat et ¹⁸F-PSMA-1007 (cyclotron, meilleure résolution, lots centralisés) [1,41].",
+      "Excrétion urinaire pour ⁶⁸Ga-PSMA-11 et ¹⁸F-DCFPyL (gêne la loge prostatique) vs hépatobiliaire pour ¹⁸F-PSMA-1007 [16].",
+      "Indications phares : bilan initial du cancer à haut risque, récidive biochimique, sélection avant radioligand-thérapie (RLT) [7,23].",
+      "proPSMA : exactitude 92 % vs 65 % pour l'imagerie conventionnelle, avec une dose d'irradiation deux fois moindre (8,4 vs 19,2 mSv) [7].",
+      "Taux de détection en récidive PSA-dépendant : ~50 % si PSA ≤ 0,5 ng/mL, ~90 % si PSA > 3 ng/mL ; CONDOR : changement de prise en charge chez 63,9 % [3,33].",
+      "Couple théranostique : une fixation > foie d'au moins une métastase (critère VISION) ouvre la voie au ¹⁷⁷Lu-PSMA-617 (SG 15,3 vs 11,3 mois) [9].",
+      "~5–10 % de cancers prostatiques PSMA-négatifs (dédifférenciation neuroendocrine) → faux négatifs possibles."
+    ],
+    "protocol": [
+      "Pas de jeûne ; hydratation et miction avant l'acquisition ; diurétique (furosémide) optionnel pour les traceurs à élimination urinaire (⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL) [5,6].",
+      "Activité : ⁶⁸Ga-PSMA-11 111–259 MBq (3–7 mCi) ou 1,8–2,2 MBq/kg ; ¹⁸F-DCFPyL ~333–370 MBq ; ¹⁸F-PSMA-1007 ~3–4 MBq/kg [1,4,16].",
+      "Temps d'incubation : ⁶⁸Ga-PSMA-11 50–100 min (typiquement 60) ; ¹⁸F-PSMA ~60–120 min [5].",
+      "Acquisition TEP corps entier (vertex → mi-cuisses) couplée TDM (low-dose ou diagnostique) ou TEP-IRM ; acquisitions tardives possibles (rinçage urinaire).",
+      "Recueillir le contexte d'hormonothérapie (ADT) : impact sur l'expression du PSMA, interprétation prudente [5]."
+    ],
+    "scores": [
+      "miPSMA / E-PSMA : échelle visuelle 0–3 (0 < blood pool ; 1 ≥ blood pool < foie ; 2 ≥ foie < parotide ; 3 ≥ parotide) [2,25].",
+      "PSMA-RADS 1.0 : échelle 1–5 (1 bénin → 5 cancer quasi certain ; 3 équivoque, sous-catégories 3A–3D) ; version 2.0 actualisée 2025 [26,12].",
+      "PROMISE / miTNM : miT, miN1/2 (ganglions pelviens), miM1a (ganglions extra-pelviens), miM1b (os), miM1c (viscères) ; PROMISE V2 (2023) [10,11].",
+      "Quantification : SUVmax, TBR (tumor-to-background ratio), références E-PSMA = blood pool, foie, parotides [2]."
+    ],
+    "pitfalls": [
+      "Faux positifs : ganglions sympathiques surtout cœliaques (linéaire para-aortique T12-L1), côtes/lésions osseuses bénignes (surtout ¹⁸F-PSMA-1007), ganglions inflammatoires [14,37,38].",
+      "Fixations physiologiques à connaître : glandes lacrymales/salivaires, foie, rate, reins, grêle/duodénum, voies urinaires/vessie [2,39].",
+      "Faux négatifs : ~5–10 % de tumeurs PSMA-négatives (neuroendocrines), micro-métastases ganglionnaires (sensibilité OSPREY ~40 %) [5,20].",
+      "Loge prostatique masquée par l'activité urinaire (⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL) → miction et diurétique ; ¹⁸F-PSMA-1007 plus avantageux localement [16].",
+      "Cancers non prostatiques PSMA+ (rein, thyroïde) et néovascularisation tumorale : interpréter avec corrélation TDM [39]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert cet examen ?",
+        "text": "La TEP au PSMA est un examen d'imagerie qui aide votre équipe médicale à localiser très précisément les cellules du cancer de la prostate dans tout le corps. On vous injecte un produit faiblement radioactif conçu pour se fixer sur une protéine appelée PSMA, présente en grande quantité à la surface des cellules de ce cancer. Là où elles se trouvent, le produit s'accumule et devient visible sur les images, même pour des foyers de petite taille que les examens habituels (scanner, scintigraphie osseuse) peuvent ne pas voir. Cet examen est utile pour faire le point avant un traitement, pour rechercher l'origine d'une remontée du taux de PSA dans le sang après un premier traitement, ou pour vérifier si une thérapie ciblée par radioactivité pourrait vous convenir. Les résultats aident votre médecin à choisir la prise en charge la mieux adaptée à votre situation.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Un examen qui guide les décisions",
+            "text": "Les informations apportées par cette imagerie conduisent souvent à ajuster ou à préciser le traitement proposé, car elle montre l'étendue réelle de la maladie."
+          }
+        ]
+      },
+      {
+        "title": "Comment se déroule l'examen ?",
+        "text": "L'examen est simple et indolore. À votre arrivée, on vous installe et on place une petite perfusion dans une veine du bras pour injecter le produit. Il n'est généralement pas nécessaire d'être à jeun. On vous demandera de bien boire de l'eau et d'aller uriner régulièrement, ce qui aide les images à être plus nettes et limite l'exposition. Après l'injection, vous patientez tranquillement, le plus souvent au repos pendant environ une heure, le temps que le produit se répartisse et se fixe. Vous irez uriner juste avant de passer sous la caméra. L'acquisition des images dure ensuite quelques dizaines de minutes : vous êtes allongé, immobile, sur un lit qui se déplace lentement dans l'appareil. L'ensemble de la visite peut durer environ deux heures, surtout à cause du temps d'attente après l'injection.",
+        "steps": [
+          {
+            "title": "Accueil et injection",
+            "text": "Mise en place d'une perfusion et injection du produit traceur dans une veine du bras."
+          },
+          {
+            "title": "Temps de repos",
+            "text": "Attente d'environ une heure, au calme, le temps que le produit se fixe sur les cellules ciblées."
+          },
+          {
+            "title": "Prise des images",
+            "text": "Vous urinez, puis vous vous allongez sous la caméra pour l'acquisition, qui dure quelques dizaines de minutes."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Bien s'hydrater",
+            "text": "Boire de l'eau avant et après l'examen, et uriner souvent, améliore la qualité des images et accélère l'élimination du produit."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce sûr ? Précautions",
+        "text": "Cet examen est très bien toléré. Le produit injecté contient une faible quantité de radioactivité qui diminue rapidement et s'élimine naturellement par les urines en quelques heures. Les réactions au produit sont exceptionnelles. Par précaution, il est conseillé pendant le reste de la journée de limiter les contacts prolongés et rapprochés avec les jeunes enfants et les femmes enceintes, et de continuer à boire et à uriner régulièrement pour éliminer le produit plus vite. N'hésitez pas à signaler à l'équipe vos traitements en cours, en particulier un traitement hormonal de la prostate, car cela peut être utile pour l'interprétation. Vous pourrez ensuite reprendre vos activités habituelles sans restriction particulière.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Signalez vos traitements",
+            "text": "Pensez à indiquer si vous suivez un traitement hormonal de la prostate : cette information aide le médecin à mieux interpréter vos images."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : indications",
+        "text": "La TEP des ligands du PSMA s'est imposée comme l'imagerie de référence à deux moments clés du parcours du cancer de la prostate. D'abord, le bilan d'extension initial des formes à haut risque (avant traitement à visée curative) : l'essai randomisé proPSMA a montré une exactitude nettement supérieure à l'imagerie conventionnelle (scanner + scintigraphie osseuse), avec une meilleure détection des atteintes ganglionnaires et métastatiques et moins d'examens équivoques. Ensuite, la récidive biochimique après prostatectomie ou radiothérapie : le taux de détection augmente avec le PSA, mais la TEP-PSMA reste performante même à PSA relativement bas, là où les autres examens sont souvent pris en défaut. Elle sert aussi à sélectionner les patients candidats à la radioligand-thérapie par 177Lu-PSMA dans les formes métastatiques résistantes à la castration. Les recommandations européennes (EAU) la placent en première intention pour le staging haut risque et dans la récidive ; en France, elle est remboursée dans la récidive biochimique après traitement curatif.",
+        "list": [
+          "Bilan d'extension des cancers à haut risque avant traitement curatif",
+          "Récidive biochimique (élévation du PSA) après chirurgie ou radiothérapie",
+          "Sélection avant radioligand-thérapie par 177Lu-PSMA dans les formes métastatiques résistantes à la castration",
+          "Caractérisation d'images douteuses non concluantes sur l'imagerie conventionnelle"
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Performance au bilan initial haut risque",
+            "text": "Dans l'essai proPSMA, la TEP-PSMA a surpassé l'imagerie conventionnelle pour détecter les atteintes ganglionnaires et métastatiques, avec moins de résultats équivoques et un impact fréquent sur la prise en charge."
+          }
+        ]
+      },
+      {
+        "title": "Démarche et apport de la médecine nucléaire",
+        "text": "En pratique, l'adressage doit s'accompagner d'éléments cliniques utiles : indication (bilan initial haut risque vs récidive), valeur et cinétique du PSA, traitements en cours notamment l'hormonothérapie (qui peut moduler l'expression du PSMA et doit être prise en compte à l'interprétation), et antécédents thérapeutiques locaux. L'examen ne nécessite pas de jeûne et la préparation est légère (hydratation, miction avant acquisition). La médecine nucléaire apporte une cartographie corps entier de la maladie en un seul examen, avec une lecture standardisée (scores d'expression PSMA, PSMA-RADS, classification miTNM PROMISE) qui facilite le dialogue multidisciplinaire et le suivi. Le compte rendu signale aussi les pièges connus à ne pas surinterpréter : fixations physiologiques (glandes salivaires et lacrymales, reins, intestin), ganglions sympathiques notamment cœliaques, et lésions osseuses bénignes. À noter qu'une minorité de cancers, dédifférenciés ou neuroendocrines, peuvent être PSMA-négatifs, ce qui peut justifier un complément d'imagerie. La TEP-PSMA est globalement plus sensible que la TEP-choline à bas PSA ; l'IRM multiparamétrique reste complémentaire pour l'évaluation locale de la loge prostatique.",
+        "list": [
+          "Préciser à l'adressage : indication, valeur et cinétique du PSA, traitements en cours (surtout hormonothérapie)",
+          "Cartographie corps entier en un examen, avec lecture standardisée (PSMA-RADS, miTNM PROMISE)",
+          "Complémentaire de l'IRM multiparamétrique, qui reste la référence du staging local",
+          "Garder à l'esprit les rares cancers PSMA-négatifs (formes neuroendocrines/dédifférenciées)"
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "La TEP-PSMA détecte la maladie là où l'imagerie conventionnelle échoue souvent, notamment en récidive à PSA bas et pour les atteintes ganglionnaires de petite taille. Elle modifie fréquemment la stratégie thérapeutique (changement de prise en charge documenté chez une part importante des patients) et constitue la porte d'entrée du couple théranostique permettant, le cas échéant, un traitement ciblé par 177Lu-PSMA. Un adressage accompagné du PSON et du contexte thérapeutique optimise l'interprétation."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identite",
+        "text": "**Comment lire la carte d'identite.** La TEP (tomographie par emission de positons) des ligands du **PSMA** (Prostate-Specific Membrane Antigen, alias glutamate carboxypeptidase II / GCPII, FOLH1) repose sur trois traceurs principaux, tous porteurs du meme motif **uree-glutamate-lysine** ciblant le site actif extracellulaire du PSMA, mais marques par des emetteurs de positons differents.\n\nLe choix du couple **radionucleide / chelateur** conditionne la logistique, la qualite d'image et la biodistribution :\n\n| Caracteristique | [⁶⁸Ga]Ga-PSMA-11 | [¹⁸F]DCFPyL (piflufolastat) | [¹⁸F]PSMA-1007 |\n|---|---|---|---|\n| Periode physique | **67,7 min** [1] | **109,8 min** [4] | **109,8 min** [16] |\n| Energie β⁺ max | **1899 keV** [1] | **634 keV** [41] | 634 keV [41] |\n| Production | Generateur ⁶⁸Ge/⁶⁸Ga [40] | Cyclotron [4] | Cyclotron [15] |\n| Excretion dominante | Urinaire [2] | Urinaire [4] | **Hepatobiliaire** [16] |\n| Activite adulte | **111–259 MBq (3–7 mCi)** [1] | **296–370 MBq (8–10 mCi)** [4] | ~**3–4 MBq/kg** [16] |\n| Delai d'imagerie | **50–100 min** (≈60 min) [1] | ~60 min (1–2 h) [4] | **90–120 min** [16] |\n| Dose efficace | ≈**0,022 mSv/MBq** [30] | ≈**0,017 mSv/MBq** [32] | ≈**0,022 mSv/MBq** [16] |\n\nTous emettent un photon d'annihilation de **511 keV** detecte par coincidence (cf. A4). Le **¹⁸F** (parcours du positon plus court) offre une **meilleure resolution spatiale** intrinseque que le ⁶⁸Ga [41]. Les activites et delais exacts sont a adapter au protocole de chaque service et a la RCP locale.",
+        "stats": [
+          {
+            "value": "67,7 min",
+            "label": "Periode du ⁶⁸Ga [1]"
+          },
+          {
+            "value": "109,8 min",
+            "label": "Periode du ¹⁸F [4]"
+          },
+          {
+            "value": "≈60 min",
+            "label": "Delai d'imagerie ⁶⁸Ga-PSMA-11 [1]"
+          },
+          {
+            "value": "≈4–5 mSv",
+            "label": "Dose efficace (200–259 MBq) [30]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — un seul vecteur, trois isotopes",
+            "text": "Les trois traceurs partagent le **meme pharmacophore uree-based** et la **meme cible** (site extracellulaire du PSMA) : leurs performances diagnostiques sont globalement comparables. La difference operationnelle tient au radionucleide (logistique generateur vs cyclotron, resolution) et a la **voie d'excretion** : le [¹⁸F]PSMA-1007, a elimination **hepatobiliaire**, libere la loge prostatique de l'activite urinaire mais majore les faux positifs costaux/ganglionnaires (cf. A6) [16]."
+          }
+        ],
+        "figureKey": "PSMA_BINDING",
+        "figureAlt": "Schema de la liaison d'un ligand uree-glutamate-lysine au site actif extracellulaire du PSMA membranaire, suivie de l'internalisation du complexe ligand-PSMA.",
+        "figureCaption": "Fig. 1 — Liaison du ligand au domaine extracellulaire du PSMA puis internalisation : le mecanisme commun aux trois traceurs TEP."
+      },
+      {
+        "title": "A2 - Definition",
+        "text": "La **TEP au PSMA** est une imagerie fonctionnelle et moleculaire qui cartographie, sur le corps entier, l'expression du **Prostate-Specific Membrane Antigen** par les cellules d'adenocarcinome prostatique. Le PSMA est une **glycoproteine transmembranaire de type II**, identique a la **glutamate carboxypeptidase II (GCPII)** / **folate hydrolase 1 (FOLH1)**, dont le domaine catalytique extracellulaire est la cible des ligands marques [2,17].\n\nContrairement a la TDM (tomodensitometrie) ou a l'IRM (imagerie par resonance magnetique), qui renseignent sur la **morphologie**, la TEP-PSMA revele une **propriete biologique** : la densite d'expression membranaire du PSMA, fortement correlee au caractere tumoral, au grade et a l'agressivite de la maladie [2]. Apres liaison au site actif, le complexe ligand-PSMA est **internalise** (endocytose puis recyclage endosomal), ce qui accroit la retention intracellulaire et le contraste tumeur/fond [17,18].\n\nL'information apportee est double : **caracterisation** (un tissu suspect exprime-t-il le PSMA ?) et **cartographie corps entier** (ou sont toutes les localisations N et M en une seule acquisition ?). C'est en outre un examen **theranostique** : une TEP-PSMA positive identifie les patients candidats a une radioligand-therapie (RLT) au **[¹⁷⁷Lu]Lu-PSMA-617** (cf. A4 et A5) [9,27].",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Une nomenclature, plusieurs noms",
+            "text": "PSMA = GCPII = FOLH1 designent la **meme proteine**. Le [⁶⁸Ga]Ga-PSMA-11 est aussi nomme **⁶⁸Ga-HBED-CC** (d'apres son chelateur) ou **gallium-68 gozetotide** (DCI) ; commercialise sous forme de kits (Illuccix, Locametz, Gozellix) [44]. Le [¹⁸F]DCFPyL porte la DCI **piflufolastat F18** (Pylarify, Pylclari) [4]."
+          }
+        ]
+      },
+      {
+        "title": "A3 - Rappels anatomiques & physiologiques",
+        "text": "La **prostate** est une glande peri-urethrale dont l'adenocarcinome nait majoritairement dans la **zone peripherique**. L'extension se fait par voie **lymphatique** (relais ganglionnaires pelviens — ilio-obturateurs, ilio-internes/externes, presacres — puis retroperitoneaux lombo-aortiques) et par voie **hematogene** vers le **squelette axial** (rachis, bassin, cotes), siege preferentiel des metastases osseuses.\n\nLe PSMA est une **carboxypeptidase membranaire** physiologiquement exprimee, a faible niveau, par l'epithelium prostatique normal, mais aussi par d'autres tissus, ce qui explique la **biodistribution physiologique** a connaitre pour ne pas surinterpreter : **glandes lacrymales, glandes salivaires (parotides, sous-mandibulaires), reins (cortex), foie, rate, duodenum/grele, voies urinaires** (par excretion) et, plus faiblement, ganglions sympathiques [2,39].\n\n| Compartiment | Fixation physiologique | Consequence pratique |\n|---|---|---|\n| Reins, uretere, vessie | Intense (excretion urinaire ⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL) | Gene l'analyse du lit prostatique et des ureteres [2] |\n| Glandes salivaires/lacrymales | Intense | Reference visuelle du score miPSMA = 3 (cf. A4) [2] |\n| Foie, rate | Moderee | Foie = seuil de selection RLT (VISION, cf. A5) [27] |\n| Grele, duodenum | Variable | Piege de proximite avec ganglions retroperitoneaux [39] |\n\nLe foie et les glandes parotides servent de **reperes quantitatifs** dans le systeme E-PSMA (cf. A4) : le bruit de fond sanguin (blood pool), le foie et la parotide bornent l'echelle visuelle d'expression [2,25].",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — PSMA n'est pas strictement prostato-specifique",
+            "text": "Le PSMA est exprime par la **neovascularisation** de nombreuses tumeurs non prostatiques (rein a cellules claires, thyroide, hepatocarcinome, gliome) et par certains tissus benins. Une fixation PSMA hors du contexte prostatique attendu impose la prudence et la correlation TDM (cf. A6) [39]."
+          }
+        ]
+      },
+      {
+        "title": "A4 - Principe : la cible biologique",
+        "text": "**Pourquoi ca marche.** Les ligands PSMA sont de petites molecules portant un motif **uree-glutamate-lysine** qui mime le substrat de la GCPII et se lie avec haute affinite a son **site actif extracellulaire**. La liaison declenche l'**internalisation** du complexe ligand-PSMA (endocytose + recyclage endosomal), piegeant le radionucleide dans la cellule : la retention prolongee et le faible bruit de fond donnent un **contraste tumeur/fond eleve** [17,18].\n\nLa cible est donc le **tissu exprimant fortement le PSMA membranaire** : adenocarcinome prostatique (surexpression jusqu'a **100–1000 fois** la prostate normale, majoree dans les formes peu differenciees et resistantes a la castration) [17].\n\n- **Hyperfixation** = densite elevee de PSMA membranaire (tumeur active, avide).\n- **Hypofixation / absence** = perte d'expression : **5–10 % de cancers PSMA-negatifs** (dedifferenciation neuroendocrine), necrose, ou modulation par l'hormonotherapie.\n\nLa detection finale repose sur la **physique de la TEP** : le positon emis s'annihile avec un electron en deux photons de **511 keV** emis a 180°, detectes en **coincidence** par l'anneau de detecteurs. Le **¹⁸F** (β⁺ max 634 keV) a un parcours plus court que le ⁶⁸Ga (β⁺ max 1899 keV) avant annihilation, d'ou une **resolution spatiale superieure** [41].\n\n**Quantification (E-PSMA).** L'expression se cote sur une echelle visuelle **miPSMA 0–3**, bornee par des organes de reference [2,25] :\n\n| Score miPSMA | Intensite | Reference visuelle |\n|---|---|---|\n| 0 | Absente | < bruit de fond sanguin |\n| 1 | Faible | ≥ blood pool, < foie |\n| 2 | Moderee | ≥ foie, < parotide |\n| 3 | **Elevee** | ≥ parotide |\n\nCette cible est **independante du radio-isotope** : ⁶⁸Ga, ¹⁸F (diagnostic) et ¹⁷⁷Lu (therapie) visent exactement le meme antigene — fondement de la **paire theranostique** (cf. A5) [9,27].",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le seuil hepatique de VISION",
+            "text": "Le critere de selection theranostique repose directement sur l'expression PSMA : la captation d'au moins une metastase doit etre **superieure a celle du foie** sur la TEP-PSMA, sans lesion PSMA-negative discordante en TDM/IRM — critere d'eligibilite de l'essai **VISION** au [¹⁷⁷Lu]Lu-PSMA-617 [27]."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Schema de la detection en coincidence en TEP : emission d'un positon, annihilation avec un electron, emission de deux photons de 511 keV a 180 degres detectes par l'anneau de detecteurs.",
+        "figureCaption": "Fig. 2 — Detection par coincidence des deux photons de 511 keV : le parcours plus court du positon du ¹⁸F (vs ⁶⁸Ga) explique sa meilleure resolution spatiale."
+      },
+      {
+        "title": "A5 - Indications",
+        "text": "Pour chaque indication, le rationale renvoie au A4 : la TEP-PSMA n'est positive que si la cible (PSMA membranaire) est exprimee. Les indications se structurent en trois temps de la maladie, plus l'axe theranostique.\n\n**▸ 1. Bilan initial du cancer a haut risque (stadification avant traitement curatif)**\n\nL'essai randomise **proPSMA** (Hofman, Lancet 2020, n=300) a etabli la superiorite de la TEP au ⁶⁸Ga-PSMA-11 sur l'imagerie conventionnelle (TDM + scintigraphie osseuse) [7] :\n\n| Parametre | TEP-PSMA | Imagerie conventionnelle |\n|---|---|---|\n| Exactitude globale | **92 %** | 65 % |\n| Sensibilite | **85 %** | 38 % |\n| Specificite | **98 %** | 91 % |\n| Examens equivoques | 7 % | 23 % |\n| Dose d'irradiation | **8,4 mSv** | 19,2 mSv |\n\nLa cohorte A d'**OSPREY** ([¹⁸F]DCFPyL, histologie de reference) confirme une **specificite tres elevee (~97,9 %)** mais une **sensibilite limitee (~40,3 %)** pour les micrometastases ganglionnaires pelviennes — un envahissement N negatif n'exclut donc pas une atteinte infraclinique [20].\n\n**▸ 2. Recidive biochimique (apres prostatectomie ou radiotherapie)**\n\nLe taux de detection est fortement **PSA-dependant**. Meta-analyses, tous ligands [33] :\n\n| PSA (ng/mL) | Taux de detection |\n|---|---|\n| 0,2–0,5 | ~**48 %** |\n| 0,5–2,0 | ~**71 %** |\n| > 2,0 | > **88–90 %** |\n\nL'essai de phase 3 **CONDOR** ([¹⁸F]DCFPyL, n=208, PSA median 0,8 ng/mL) rapporte un taux de localisation correcte (CLR) de **84,8–87,0 %** et un **changement de prise en charge chez 63,9 %** des patients [3].\n\n**▸ 3. Comparaison aux autres modalites**\n\nLa TEP-PSMA surclasse la **TEP-choline** a bas PSA (Morigi : 54 % des patients choline-negatifs requalifies positifs en PSMA) [19] et l'IRM multiparametrique pour le **N-staging corps entier** [35,36]. L'IRM-mp reste la reference du staging **local** (capsule, vesicules seminales).\n\n**▸ 4. Selection pre-RLT (axe theranostique)**\n\nLa TEP-PSMA conditionne l'eligibilite au **[¹⁷⁷Lu]Lu-PSMA-617** : essai **VISION** (Sartor, NEJM 2021, n=831, mCRPC PSMA-positif post-ARSI + taxane) : **survie globale 15,3 vs 11,3 mois, HR 0,62 (IC95 % 0,52–0,74), p<0,001** ; rPFS 8,7 vs 3,4 mois (HR 0,40) [9,27,28].\n\n**▸ Recommandations.** L'**EAU** retient la TEP-PSMA comme imagerie de reference en stadification haut risque (recommandation forte) et en recidive biochimique [23,42]. En **France**, la HAS a rendu un avis favorable au remboursement de LOCAMETZ (⁶⁸Ga-PSMA-11), PYLCLARI (¹⁸F-DCFPyL) et RADELUMIN (¹⁸F-PSMA-1007) dans ces indications [21,22].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Precaution — sensibilite a bas PSA",
+            "text": "A **PSA < 0,5 ng/mL**, le taux de detection chute (~36–48 %) : une TEP-PSMA negative en recidive biochimique precoce **n'exclut pas** la maladie residuelle [3,33]. L'EAU pose un seuil indicatif de **PSA > 0,2 ng/mL** apres prostatectomie, a condition que le resultat modifie la prise en charge [23]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la boucle theranostique",
+            "text": "Meme cible PSMA pour le diagnostic (TEP ⁶⁸Ga/¹⁸F) et le traitement ([¹⁷⁷Lu]Lu-PSMA-617, emetteur β⁻ T½ 6,6 j + γ 113/208 keV permettant la TEMP post-therapeutique). Le SUVmean pre-therapeutique a une valeur **pronostique** : dans l'analyse de VISION, un quartile superieur (SUVmean ≥10,2) s'associe a une SG de 21,4 vs 14,5 mois [29]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle theranostique du PSMA : selection diagnostique par TEP au 68Ga/18F-PSMA, traitement par radioligand-therapie au 177Lu-PSMA-617, puis reevaluation.",
+        "figureCaption": "Fig. 3 — Boucle theranostique : imager (TEP-PSMA) → selectionner → traiter ([¹⁷⁷Lu]Lu-PSMA-617) → reevaluer."
+      },
+      {
+        "title": "A6 - Contre-indications & precautions",
+        "text": "Il n'existe **aucune contre-indication absolue** a la TEP-PSMA diagnostique : faibles activites injectees, absence de reaction allergique attendue aux ligands uree-based. La population etant **masculine adulte**, grossesse et allaitement sont sans objet ; les precautions relevent surtout de la **preparation, de l'interpretation et de la radioprotection**.\n\n| Situation | Type | Conduite |\n|---|---|---|\n| Tumeur PSMA-negative (neuroendocrine) | Limite biologique | **5–10 %** de faux negatifs ; envisager ¹⁸F-FDG/imagerie complementaire [17] |\n| Hormonotherapie (ADT) en cours | A documenter | Module l'expression PSMA (souvent ↑ transitoire, parfois ↓) → interpretation prudente [5] |\n| Insuffisance renale | Relative | Effet limite (faible activite) ; adapter l'hydratation [4] |\n| Activite urinaire intense | Technique | Gene le lit prostatique → miction + diuretique optionnel (cf. preparation) [5] |\n\n**Pieges d'interpretation (faux positifs) a connaitre** — ils relevent de la biodistribution physiologique et de fixations benignes [37,38,39] :\n\n- **Ganglions sympathiques**, surtout les **ganglions coeliaques** (aspect lineaire para-aortique T12–L1, SUVmax ≈ 3,13 ± 0,85 avec le ¹⁸F-PSMA-1007) — a ne pas confondre avec des adenopathies retroperitoneales [14,37].\n- **Cotes** : lesion costale unique de faible intensite, le plus souvent benigne (fracture, remaniement degeneratif), faux positif frequent avec le ¹⁸F-PSMA-1007 [38].\n- **Os benins** : maladie de Paget, hemangiome vertebral, Modic 1, lesions fibreuses [39].\n- **Fixations physiologiques** : glandes salivaires/lacrymales, reins, grele — toujours bornees par la correlation TDM et la symetrie [2,39].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — ganglions coeliaques",
+            "text": "Le piege majeur du nucleariste : une fixation **lineaire para-aortique a hauteur de T12–L1**, symetrique et de faible intensite, correspond aux **ganglions sympathiques coeliaques** (benins) et non a une adenopathie retroperitoneale. La reconnaissance de cet aspect topographique evite une surstadification N1/M1a [14,37]."
+          },
+          {
+            "type": "warning",
+            "title": "Precaution — le PSMA-1007 et les os",
+            "text": "L'excretion **hepatobiliaire** du [¹⁸F]PSMA-1007 libere la loge prostatique mais s'accompagne d'une frequence accrue de **fixations osseuses non specifiques** (notamment costales). Toute lesion osseuse unique de faible intensite doit etre confrontee a la TDM avant d'etre cotee maligne [16,38]."
+          },
+          {
+            "type": "info",
+            "title": "Effet de l'hormonotherapie",
+            "text": "L'ADT (androgen deprivation therapy) peut majorer transitoirement ou reduire l'expression du PSMA selon la duree et le contexte. Le statut therapeutique doit etre **systematiquement recueilli** et integre a l'interpretation, conformement au guideline EANM/SNMMI 2.0 [5]."
+          }
+        ]
+      },
+      {
+        "title": "B7 - Radiopharmaceutique(s) & mécanisme(s) de fixation",
+        "text": "**(a) Mécanisme moléculaire.** Le **PSMA** (*Prostate-Specific Membrane Antigen*, alias **glutamate carboxypeptidase II / GCPII**, gène **FOLH1**) est une glycoprotéine transmembranaire de type II surexprimée par >90 % des adénocarcinomes prostatiques, l'expression étant majorée dans les formes peu différenciées, métastatiques et résistantes à la castration [2][17]. Les ligands TEP partagent un motif inhibiteur **urée glutamate-lysine** (urea-based) qui se lie au site actif extracellulaire de la GCPII ; le complexe ligand-PSMA est ensuite **internalisé** (endocytose + recyclage endosomal), ce qui accroît la rétention intracellulaire et le contraste tumoral [17][18]. Le ciblage est **indépendant de l'émetteur de positons** : ⁶⁸Ga et ¹⁸F visent le même épitope, seules changent la résolution spatiale et la dosimétrie — fondement de la **paire théranostique** avec le ¹⁷⁷Lu-PSMA (cf. §B10 et axe RLT).\n\nLimite biologique majeure : ~5-10 % des cancers prostatiques sont **PSMA-négatifs** (dédifférenciation neuroendocrine) → faux négatifs (cf. §C14).\n\n| Caractéristique | **[⁶⁸Ga]Ga-PSMA-11** (gozétotide) | **[¹⁸F]DCFPyL** (piflufolastat) | **[¹⁸F]PSMA-1007** |\n|---|---|---|---|\n| Émission β⁺ × énergie max | **1899 keV** [1] | **634 keV** [41] | **634 keV** [41] |\n| Période physique | **67,7 min** [1] | **109,8 min** [4] | **109,8 min** [41] |\n| Production | **Générateur ⁶⁸Ge/⁶⁸Ga** (sans cyclotron) [40] | Cyclotron (lots multidoses) | Cyclotron (lots multidoses) |\n| Résolution spatiale | Moindre (parcours β⁺ long) | Meilleure | Meilleure |\n| Excrétion dominante | **Urinaire** [1] | **Urinaire** [4] | **Hépatobiliaire** [16] |\n| Avantage / inconvénient | Disponibilité locale ; activité/élution limitée | Imagerie tardive, distribution centralisée | Loge prostatique dégagée ; **faux positifs costaux** plus fréquents [38] |\n\n**(b) Production & marquage.** Le ⁶⁸Ga est élué d'un **générateur ⁶⁸Ge/⁶⁸Ga** (T½ du ⁶⁸Ge parent ≈ 271 j) et chélaté par le **HBED-CC** ; le ¹⁸F (β⁺ max **634 keV**, parcours plus court → meilleure résolution) est produit au **cyclotron** [40][41]. Photon d'annihilation **511 keV** pour tous les traceurs (TEP standard).\n\n**(c) Contrôle qualité du traceur** (EANM/SNMMI 2.0) : pureté radiochimique (HPLC/CCM ; ⁶⁸Ga-PSMA-11 usuellement requise **≥ 91 %**), pureté radionucléidique (pour le ⁶⁸Ga : ⁶⁸Ge *breakthrough*), pH, identité, stérilité/apyrogénicité, activité à l'activimètre [5][6].\n\n**(d) Activités adulte & voie** — bolus IV :\n\n| Traceur | Activité adulte | Source |\n|---|---|---|\n| ⁶⁸Ga-PSMA-11 | **111-259 MBq** (≈ 3-7 mCi) ou **1,8-2,2 MBq/kg** | [1][5] |\n| ¹⁸F-DCFPyL | **296-370 MBq** (8-10 mCi), usuel **333 MBq** | [4] |\n| ¹⁸F-PSMA-1007 | **3-4 MBq/kg** (≈ 200-250 MBq) | [16] |\n\nLe cancer de prostate étant une **pathologie de l'adulte**, il n'existe pas de schéma posologique pédiatrique dédié (indications adulte exclusives, AMM et EANM/SNMMI 2.0) [4][5].",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Le choix du traceur conditionne la lecture de la **loge prostatique** : le ¹⁸F-PSMA-1007, à excrétion **hépatobiliaire**, génère une activité urinaire/vésicale minime qui dégage la loge — mais au prix de **fixations costales/osseuses bénignes** plus fréquentes (cf. §C14) [16][38]. Les traceurs à excrétion **urinaire** (⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL) imposent souvent une vidange vésicale ± diurétique pour désencombrer le lit prostatique (cf. §B8)."
+          }
+        ],
+        "figureKey": "PSMA_BINDING",
+        "figureAlt": "Schéma de la liaison du ligand urée-based au domaine extracellulaire de la GCPII/PSMA puis internalisation du complexe dans la cellule tumorale prostatique.",
+        "figureCaption": "Fig. — Liaison au site actif extracellulaire du PSMA puis internalisation : la cible moléculaire est commune au diagnostic (TEP) et à la thérapie (¹⁷⁷Lu-PSMA).",
+        "stats": [
+          {
+            "value": ">90 %",
+            "label": "des adénocarcinomes prostatiques surexpriment le PSMA [2]"
+          },
+          {
+            "value": "67,7 min",
+            "label": "période du ⁶⁸Ga [1]"
+          },
+          {
+            "value": "109,8 min",
+            "label": "période du ¹⁸F [4]"
+          },
+          {
+            "value": "5-10 %",
+            "label": "de cancers PSMA-négatifs (neuroendocrines) → faux négatifs"
+          }
+        ]
+      },
+      {
+        "title": "B8 - Préparation du patient",
+        "text": "La TEP-PSMA est un examen **simple à préparer** : son rendement dépend surtout de la gestion de l'**activité urinaire** gênant la loge prostatique et du recueil du **contexte thérapeutique**.\n\n**Jeûne — non requis** (différence majeure avec la TEP au ¹⁸F-FDG : la fixation PSMA n'est pas glucose-dépendante) [5][6].\n\n**Hydratation & gestion vésicale.** Faire **boire de l'eau avant l'injection**, puis poursuivre l'hydratation et les **mictions fréquentes** durant les premières heures (radioprotection, réduction de la dose à la paroi vésicale) ; le patient doit **uriner immédiatement avant l'acquisition** pour réduire l'activité vésicale masquant le lit prostatique [4][5]. Un **diurétique (furosémide) ± hydratation forcée** est une option pour les traceurs à élimination urinaire (⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL) afin de dégager loge prostatique et uretères [5][6] ; cette précaution est moins critique avec le ¹⁸F-PSMA-1007 (excrétion hépatobiliaire) [16].\n\n**Contexte thérapeutique à recueillir.** Renseigner systématiquement une **hormonothérapie (ADT)** : la privation androgénique module l'expression du PSMA (le plus souvent **majoration transitoire**, parfois diminution) → interprétation prudente selon le moment du traitement [5][6]. Recueillir aussi le **PSA le plus récent** (détermine la probabilité a priori de détection, cf. §B9/performances) et les traitements antérieurs (prostatectomie, radiothérapie).\n\n**Délai injection → acquisition** (temps d'incubation/*uptake*) :\n\n| Traceur | Délai d'imagerie | Source |\n|---|---|---|\n| ⁶⁸Ga-PSMA-11 | **50-100 min** (typique **60 min**) | [1][5] |\n| ¹⁸F-DCFPyL | **~60 min** (protocoles CONDOR/OSPREY 1-2 h) | [3][4] |\n| ¹⁸F-PSMA-1007 | **~90-120 min** (acquisition tardive) | [16] |\n\n**Acquisition** : TEP corps entier du **vertex/base du crâne aux mi-cuisses** (extension aux pieds si suspicion distale), couplée à une **TDM** (low-dose pour correction d'atténuation/repérage, ou diagnostique avec contraste) ; la **TEP-IRM** est une alternative valorisant l'évaluation locale multiparamétrique [5][6].",
+        "steps": [
+          {
+            "title": "Avant l'examen",
+            "text": "Vérifier l'indication (bilan haut risque / récidive biochimique / sélection pré-RLT) ; recueillir PSA récent, statut ADT et traitements antérieurs (prostatectomie/radiothérapie) ; aucun jeûne ; encourager l'hydratation."
+          },
+          {
+            "title": "Le jour J — injection",
+            "text": "Bolus IV (activité selon traceur, cf. §B7) ; faire boire ; pour les traceurs urinaires, envisager furosémide ± hydratation forcée ; respecter le délai d'incubation propre au traceur (60 min pour le ⁶⁸Ga-PSMA-11)."
+          },
+          {
+            "title": "Le jour J — juste avant l'acquisition",
+            "text": "Faire uriner le patient immédiatement (vidange vésicale) pour dégager la loge prostatique ; positionnement vertex → mi-cuisses ; acquisition TEP/TDM (± contraste) ou TEP-IRM."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — contexte hormonal",
+            "text": "L'**ADT** modifie l'expression du PSMA : une majoration transitoire peut accentuer la fixation, une réponse profonde peut la réduire. Toujours dater le statut hormonal par rapport à l'examen pour ne pas sur- ou sous-interpréter l'intensité de fixation [5][6]."
+          },
+          {
+            "type": "info",
+            "title": "À noter",
+            "text": "Aucune contre-indication absolue : faibles activités, pas de réaction allergique attendue aux ligands urée-based. Grossesse/allaitement sans objet (population masculine). En cas d'insuffisance rénale, l'impact diagnostique est limité ; adapter l'hydratation [5]."
+          }
+        ]
+      },
+      {
+        "title": "B9 - Instrument, contrôle qualité & protocole d'acquisition",
+        "text": "**(a) CQ de l'instrument TEP — prérequis.** *Blank scan* quotidien, **normalisation**, **étalonnage croisé** activimètre↔TEP indispensable à la justesse du **SUV** (*Standardized Uptake Value*), tests **NEMA** (résolution, sensibilité, NECR), contrôle de l'**alignement TEP/TDM** [5][6]. Un SUV n'est interprétable que si l'étalonnage est à jour (renvoi §B10).\n\n**(b) Paramètres d'acquisition & justification.**\n\n| Paramètre | Réglage usuel | Pourquoi / compromis |\n|---|---|---|\n| Fenêtre de coïncidence | 511 keV, fenêtre temporelle TOF | Détection des deux photons d'annihilation ; le **TOF** (*time-of-flight*) améliore le rapport signal/bruit |\n| Délai post-injection | ⁶⁸Ga-PSMA-11 50-100 min ; ¹⁸F-PSMA 60-120 min [1][5][16] | Compromis captation tumorale / fond ; trop tôt = contraste insuffisant |\n| Champ exploré | Vertex/base du crâne → mi-cuisses | Couvre aires ganglionnaires, os axial et viscères en **une acquisition corps entier** |\n| Temps par pas de lit | Adapté au traceur (≈ 2-4 min/pas ⁶⁸Ga) | Statistique de comptage vs durée d'examen ; ⁶⁸Ga = T½ court et activité d'élution limitée |\n| TDM associée | Low-dose (atténuation/repérage) ou diagnostique ± contraste | Low-dose minimise la dose ; diagnostique pour caractérisation morphologique |\n\n**(c) Corrections** : atténuation par la TDM, diffusé, et — atout du ¹⁸F (T½ plus long, parcours β⁺ court) — meilleure **résolution spatiale** que le ⁶⁸Ga [41]. Acquisitions **tardives** ou clichés de *rinçage* urinaire possibles pour différencier rétention urétérale d'une adénopathie.\n\n**(d) Modalités spécifiques.** La **TEP-IRM** combine le N/M-staging corps entier de la TEP et l'évaluation locale multiparamétrique de l'IRM (loge prostatique, capsule) ; la **TEP/TDM** reste le standard de diffusion [5][6].\n\n**Rendement PSA-dépendant en récidive biochimique** (à anticiper avant l'acquisition) — le taux de détection conditionne l'attente clinique :\n\n| PSA (ng/mL) | Taux de détection (tous ligands) | Source |\n|---|---|---|\n| 0,2-0,5 | ~**48 %** | [33] |\n| 0,5-2,0 | ~**71 %** | [33] |\n| > 2,0 | **>88-90 %** | [33] |\n\nLe ¹⁸F-PSMA-1007 affiche des taux élevés dès les bas PSA (≤ 0,5 = **68 %** ; > 2,0 = **97 %**) [34], et la phase 3 **CONDOR** (¹⁸F-DCFPyL, PSA médian 0,8 ng/mL) un **taux de localisation correcte 84,8-87,0 %** [3].",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Avant de programmer l'examen, le **PSA** oriente le choix et l'attente : à très bas PSA (< 0,5 ng/mL) la détection chute (~36-48 %) [3][33], ce qui justifie d'attendre un seuil suffisant ou de privilégier un traceur performant à bas PSA. L'**étalonnage croisé** de la chaîne TEP est la condition d'un SUV comparable entre examens de suivi et entre centres (renvoi §B10)."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — activité urinaire/urétérale",
+            "text": "Avec les traceurs à excrétion **urinaire** (⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL), une stase urétérale peut mimer une adénopathie rétropéritonéale. Vidange vésicale stricte avant acquisition (cf. §B8), corrélation TDM et clichés tardifs lèvent le doute [5]."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Schéma de la détection en coïncidence en TEP : émission de positon, annihilation, deux photons de 511 keV détectés à 180° par l'anneau de détecteurs.",
+        "figureCaption": "Fig. — Détection en coïncidence (511 keV) : socle physique commun au ⁶⁸Ga et au ¹⁸F ; le parcours β⁺ plus court du ¹⁸F confère une meilleure résolution spatiale [41]."
+      },
+      {
+        "title": "B10 - Traitement, reconstruction & quantification",
+        "text": "**Reconstruction.** Algorithme **itératif OSEM** (*Ordered Subset Expectation Maximization*), avec modélisation **PSF** (*Point Spread Function*) et **TOF** selon la machine, correction d'atténuation par la TDM et correction du diffusé [5][6]. Plus d'itérations/sous-ensembles → meilleure résolution mais bruit accru : le compromis est fixé par les recommandations locales pour préserver la comparabilité du SUV dans le temps.\n\n**Quantification — métriques.** L'angle PSMA repose sur le **SUVmax** lésionnel et le **TBR** (*tumor-to-background ratio*) ; les **organes de référence E-PSMA** sont le **pool sanguin** (*blood pool*), le **foie** et les **glandes parotides** [2][25].\n\n| Métrique | Définition | Usage clinique |\n|---|---|---|\n| **SUVmax** | Fixation maximale dans la lésion (normalisée à l'activité injectée et au poids) | Intensité d'expression PSMA ; suivi |\n| **TBR** | Rapport fixation lésion / bruit de fond | Détectabilité, confiance diagnostique |\n| **Score miPSMA (0-3)** | Échelle visuelle d'expression (cf. infra) | Sélection théranostique, standardisation |\n\n**Score d'expression miPSMA / E-PSMA (0-3)** [2][25] : **0** = absente (< pool sanguin) ; **1** = faible (≥ pool sanguin, < foie) ; **2** = modérée (≥ foie, < parotide) ; **3** = élevée (≥ parotide). Ce score, intégré aux cadres standardisés **PROMISE/miTNM** et **PSMA-RADS**, est la pierre angulaire de la **sélection pré-RLT** (cf. §C-Sémiologie).\n\n**Application théranostique — critère VISION.** L'éligibilité au **[¹⁷⁷Lu]Lu-PSMA-617 (Pluvicto)** dans le mCRPC repose sur la TEP-PSMA : **fixation PSMA d'au moins une métastase supérieure à la fixation hépatique**, sans lésion PSMA-négative discordante en TDM/IRM [27]. Dans **VISION** (n=831, mCRPC post-ARPI + 1-2 taxanes), le ¹⁷⁷Lu-PSMA-617 + SOC vs SOC a prolongé la **survie globale médiane à 15,3 vs 11,3 mois (HR 0,62 ; IC95 % 0,52-0,74 ; p<0,001)** [27][28]. La quantification a une **valeur pronostique** : le quartile supérieur de SUVmean (≥ 10,2) s'associe à une SG de **21,4 mois** vs **14,5 mois** pour le quartile inférieur (analyse VISION, Radiology 2024) [29].\n\nLe ¹⁷⁷Lu est un émetteur **β⁻** (T½ **6,6 j**) doublé d'émissions **γ (113/208 keV)** permettant la scintigraphie/TEMP post-thérapeutique : même cible PSMA pour **imager (TEP) et traiter (RLT)** — boucle théranostique fermée.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Le **score miPSMA 0-3**, calé sur foie et parotides, transforme une lecture qualitative en variable reproductible : c'est lui qui opérationnalise le **critère de sélection VISION** (≥ 1 lésion > fixation hépatique) et qui se compare d'un examen à l'autre [2][25][27]. Toujours documenter l'expression PSMA de **l'ensemble des lésions** avant d'autoriser une RLT, à la recherche d'un site PSMA-négatif discordant qui contre-indiquerait le traitement."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique du PSMA : sélection par TEP-PSMA (⁶⁸Ga/¹⁸F), traitement par ¹⁷⁷Lu-PSMA-617, imagerie TEMP post-thérapeutique et réévaluation.",
+        "figureCaption": "Fig. — Boucle théranostique PSMA : imager (TEP ⁶⁸Ga/¹⁸F) → sélectionner (critère VISION) → traiter (¹⁷⁷Lu-PSMA-617) → réévaluer ; cible moléculaire unique pour diagnostic et thérapie [27].",
+        "stats": [
+          {
+            "value": "0-3",
+            "label": "score visuel d'expression miPSMA (E-PSMA) [2]"
+          },
+          {
+            "value": "15,3 vs 11,3 mois",
+            "label": "SG médiane VISION, ¹⁷⁷Lu-PSMA-617 + SOC vs SOC [27]"
+          },
+          {
+            "value": "HR 0,62",
+            "label": "réduction du risque de décès (IC95 % 0,52-0,74) [27]"
+          },
+          {
+            "value": "6,6 j",
+            "label": "période du ¹⁷⁷Lu (β⁻ + γ 113/208 keV)"
+          }
+        ]
+      },
+      {
+        "title": "C11 - Aspect normal & variantes physiologiques",
+        "figureKey": "PSMA_BINDING",
+        "figureAlt": "Liaison du ligand uree-based au domaine extracellulaire de la GCPII/PSMA puis internalisation : la cible qui explique a la fois la fixation tumorale et les fixations physiologiques (glandes salivaires, reins, grele).",
+        "figureCaption": "Fig. 1 - Liaison au domaine extracellulaire du PSMA puis internalisation : meme mecanisme pour la tumeur et pour les organes physiologiquement PSMA+.",
+        "text": "Reconnaitre la **biodistribution physiologique** est le prealable absolu a toute lecture d'une TEP des ligands du PSMA (**Prostate-Specific Membrane Antigen**, alias glutamate carboxypeptidase II / GCPII) : la plupart des faux positifs naissent de la meconnaissance des sites normalement avides. Le PSMA est exprime non seulement par l'adenocarcinome prostatique mais aussi par plusieurs tissus sains, et les ligands marques (**[68Ga]Ga-PSMA-11**, **[18F]DCFPyL**, **[18F]PSMA-1007**) y refletent cette expression.[2,39]\n\n**Captation physiologique intense** (a ne jamais surcaller) :\n\n| Site | Mecanisme | Remarque de lecture |\n|---|---|---|\n| **Glandes lacrymales** | Expression PSMA | Repere de l'echelle E-PSMA (cf. C12) |\n| **Glandes salivaires (parotides, sous-mandibulaires)** | Expression PSMA | Organe de reference visuel (score = 3) |\n| **Reins (cortex)** | Expression + excretion | Site le plus avide ; organe critique dosimetrique[30] |\n| **Foie, rate** | Expression moderee | Foie = reference du seuil VISION (cf. C12)[2] |\n| **Grele / duodenum** | Expression PSMA | Activite digestive parfois marquee |\n| **Voies urinaires, vessie** | Excretion urinaire | Gene la loge prostatique (68Ga-PSMA-11, 18F-DCFPyL) |\n\nCaptation plus faible : glandes lacrymales accessoires, oropharynx, oesophage, larynx, ganglions parasympathiques, pancreas, surrenales.[2,39]\n\n**Variante majeure liee au traceur — la voie d'excretion.** Le **[18F]PSMA-1007** a une elimination **majoritairement hepatobiliaire** : l'activite urinaire/vesicale est faible (avantage pour analyser la loge prostatique et l'anastomose vesico-urethrale), mais la fixation hepatique, vesiculaire biliaire et digestive est plus marquee, et les **fixations osseuses non specifiques** y sont plus frequentes (cf. C14).[16] A l'inverse, le **[68Ga]Ga-PSMA-11** et le **[18F]DCFPyL** ont une excretion **urinaire** : la stagnation d'urine radioactive dans les ureteres et la vessie peut masquer ou mimer une lesion peri-vesicale — d'ou la vidange vesicale et l'option diuretique (cf. C14).[2]",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "Les **glandes salivaires** et le **foie** ne sont pas que des pieges : ce sont les **organes de reference de la quantification visuelle**. L'echelle d'expression E-PSMA cote la lesion par rapport au pool sanguin, au foie et a la parotide (cf. C12), et le critere d'eligibilite VISION compare la fixation tumorale a celle du **foie**. Memoriser ces deux reperes conditionne a la fois l'interpretation et la selection theranostique.[2]"
+          },
+          {
+            "type": "warning",
+            "title": "Piege - asymetrie a ne pas surinterpreter",
+            "text": "Une fixation **ureterale focale** (stase, jonction) peut simuler une adenopathie retroperitoneale ; une fixation **digestive** segmentaire peut mimer une atteinte mesenterique. La correlation TDM et, au besoin, des **acquisitions tardives** (rincage urinaire, transit) redressent le diagnostic.[2,39]"
+          }
+        ]
+      },
+      {
+        "title": "C12 - Semiologie & interpretation",
+        "text": "**Methode de lecture systematique** : (1) controler la qualite technique, le delai d'incubation et la voie d'excretion du traceur ; (2) parcourir la **biodistribution physiologique** (cf. C11) ; (3) reperer toute fixation **focale, asymetrique, extra-physiologique** ; (4) la correler systematiquement a la **TDM** (lesion morphologique ? piege benin ?) ; (5) **graduer l'intensite** (echelle E-PSMA) et **localiser** (cadre miTNM/PROMISE) ; (6) classer le degre de certitude (**PSMA-RADS**) ; (7) conclure en repondant a la question clinique (stadification N/M, recidive, eligibilite RLT).[2,10,26]\n\n**Critere de positivite.** Une fixation **focale superieure au bruit de fond local**, non expliquee par une structure physiologique ou un piege benin (cf. C14), et idealement correspondant a un substrat sur la TDM/IRM, est consideree comme suspecte. L'intensite seule ne fait pas le diagnostic : un ganglion coeliaque tres avide reste benin (cf. C14).[37]\n\n**▸ Score d'expression PSMA (E-PSMA / miPSMA, echelle visuelle 0-3)** — quantification semi-quantitative reperee sur des organes de reference :[2,25]\n\n| Score | Intensite | Reference visuelle |\n|---|---|---|\n| **0** | Absente | < pool sanguin |\n| **1** | Faible | >= pool sanguin, < foie |\n| **2** | Moderee | >= foie, < parotide |\n| **3** | Elevee | >= parotide |\n\n**▸ PSMA-RADS v1.0 (Rowe et al.)** — degre de certitude de malignite, echelle **1-5** : 1 = benin ; 2 = probablement benin ; 3 = equivoque (sous-categories **3A/3B/3C/3D**) ; 4 = cancer hautement probable ; 5 = cancer quasi certain. Une revision **PSMA-RADS 2.0** (2025) actualise ce cadre pour l'interpretation et la decision clinique.[26,12]\n\n**▸ PROMISE / miTNM v1.0 (Eiber et al.)** — cadre standardise de stadification moleculaire combinant localisation **miT / miN / miM** et score d'expression PSMA : miT0 (pas de recidive locale post-therapie) jusqu'a miT2-miT4 ; miN1/miN2 (regions ganglionnaires pelviennes) ; **miM** subdivise en M1a (ganglions extra-pelviens), **M1b (os)**, M1c (visceres). **PROMISE V2** (2023) met a jour le miTNM, ameliore l'evaluation locale, simplifie le score d'expression et integre l'evaluation de reponse pour les essais.[10,11]\n\n**Patterns pathologiques.** Recidive locale en loge prostatique ou anastomose ; adenopathies pelviennes (miN) puis retroperitoneales/extra-pelviennes (M1a) ; **metastases osseuses (M1b)** — site metastatique le plus frequent — focales et avides ; atteinte viscerale (M1c). La conclusion s'enonce en **positif / negatif / equivoque**, intensite E-PSMA et cadre miTNM a l'appui.[10]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert - lire pour la RLT",
+            "text": "Pour une **selection avant radioligand-therapie (RLT)**, ne pas se limiter au compte des lesions : evaluer l'**intensite** (la fixation tumorale doit depasser celle du **foie** selon le critere VISION) et traquer toute **lesion PSMA-negative discordante** sur la TDM/IRM, qui contre-indique le traitement. Le **SUVmean** a une valeur pronostique : dans l'analyse VISION, un quartile superieur (SUVmean >= 10,2) s'associe a une survie globale de 21,4 mois contre 14,5 mois pour le quartile inferieur (~6,0).[29]"
+          },
+          {
+            "type": "info",
+            "title": "Quantification - reperes",
+            "text": "Au-dela du **SUVmax** lesionnel, le **TBR** (tumor-to-background ratio) et les organes de reference E-PSMA (pool sanguin, foie, parotides) structurent la mesure. Conserver les memes reperes d'un examen a l'autre est indispensable pour comparer un patient a lui-meme dans le temps.[2]"
+          }
+        ]
+      },
+      {
+        "title": "C13 - Compte rendu structuré",
+        "text": "Le compte rendu doit etre **reproductible, gradue et actionnable**, en s'appuyant sur les referentiels standardises (E-PSMA, PROMISE/miTNM, PSMA-RADS).[2,10] Trame recommandee :\n\n1. **Technique** : traceur ([68Ga]Ga-PSMA-11, [18F]DCFPyL ou [18F]PSMA-1007) et activite injectee, delai d'incubation, voie d'excretion (urinaire vs hepatobiliaire), modalite (TEP-TDM low-dose / diagnostique avec contraste / TEP-IRM), preparation (hydratation, miction, diuretique eventuel), PSA et contexte therapeutique (hormonotherapie/ADT en cours ?).\n2. **Biodistribution physiologique** : conforme ou non (cf. C11).\n3. **Loge prostatique / lit operatoire** : recidive locale (miT), en precisant la gene eventuelle de l'activite urinaire.\n4. **Ganglions** : pelviens (miN1/miN2) puis extra-pelviens (M1a), localisation, intensite **E-PSMA (0-3)**, correlation TDM.\n5. **Os & visceres** : metastases osseuses (M1b), viscerales (M1c), avec intensite et substrat morphologique.\n6. **Cotation** : synthese **miTNM (PROMISE)** + degre de certitude **PSMA-RADS** des lesions equivoques ; score d'expression de la lesion-cible.\n7. **Conclusion** : reponse explicite a la question clinique (stadification, siege de la recidive selon le PSA, **eligibilite a la RLT** — fixation > foie et absence de lesion discordante).",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert - conclusion orientee decision",
+            "text": "La conclusion doit dire ce que le clinicien attend : en **stadification haut risque**, l'atteinte N/M change l'intention curative ; en **recidive biochimique**, preciser le siege (loge, ganglions, os) oriente la radiotherapie de rattrapage ou le traitement systemique ; en **bilan pre-RLT**, conclure explicitement sur l'**eligibilite** (avidite suffisante, absence de discordance PSMA-negatif). Mentionner le PSA est indispensable car le taux de detection en depend etroitement (cf. performances).[7]"
+          }
+        ]
+      },
+      {
+        "title": "C14 - Pièges, artefacts & faux positifs / négatifs",
+        "figureKey": "BONE_SCAN",
+        "figureAlt": "Squelette axial et thoracique : les fixations costales et osseuses isolees de faible intensite sont des pieges frequents de la TEP-PSMA, surtout avec le 18F-PSMA-1007, et doivent etre correlees a la TDM.",
+        "figureCaption": "Fig. 2 - Atteinte osseuse : une fixation costale unique de faible intensite est le plus souvent benigne (fracture, degeneratif) - correler a la TDM avant de conclure a une metastase.",
+        "text": "Pour chaque piege : identifier la **cause**, reconnaitre l'**aspect**, et corriger (correlation TDM, symetrie, intensite, controle de la preparation et de la voie d'excretion). La TEP-PSMA est tres specifique, mais ses faux positifs sont **stereotypes** et doivent etre connus de memoire.[37,38,39]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege - ganglions sympathiques (surtout coeliaques)",
+            "text": "Les **ganglions du tronc sympathique** (cervico-stellaire, **coeliaque**, hypogastrique, sacre) captent physiologiquement le PSMA et miment des adenopathies. Le **ganglion coeliaque** a un aspect lineaire/fusiforme para-aortique a hauteur **T12-L1**, bilateral, sans substrat ganglionnaire en TDM ; pour le [18F]PSMA-1007, **SUVmax ~ 3,13 +/- 0,85**. Cle : topographie typique, forme allongee, symetrie, absence de masse TDM.[37,14]"
+          },
+          {
+            "type": "warning",
+            "title": "Piege - fixations osseuses benignes (cotes ++)",
+            "text": "Une **lesion costale unique de faible intensite** est benigne dans la grande majorite des cas (fracture, remaniement degeneratif). Les faux positifs osseux non specifiques sont **plus frequents avec le [18F]PSMA-1007** (excretion hepatobiliaire, captation osseuse non specifique). Autres causes : maladie de Paget, hemangiome vertebral, lesions degeneratives/Modic, fibreuse, lesions inflammatoires. Toujours correler a la TDM avant de coter M1b.[16,38]"
+          },
+          {
+            "type": "warning",
+            "title": "Piege - tumeurs PSMA-negatives (faux negatifs)",
+            "text": "Environ **5-10 %** des cancers prostatiques sont **PSMA-negatifs**, notamment en cas de **dedifferenciation neuroendocrine** ou de tumeur peu differenciee : la TEP peut sous-estimer la maladie. Un PSA eleve discordant d'un examen negatif doit faire evoquer cette possibilite (et discuter un [18F]FDG complementaire). C'est aussi le motif d'exclusion d'une RLT : une lesion PSMA-negative visible en TDM/IRM contre-indique le 177Lu-PSMA.[2]"
+          },
+          {
+            "type": "warning",
+            "title": "Piege - activite urinaire / loge prostatique",
+            "text": "Avec les traceurs a **excretion urinaire** ([68Ga]Ga-PSMA-11, [18F]DCFPyL), la stagnation d'urine radioactive (ureteres, vessie, anastomose) peut **masquer une recidive locale** ou **simuler** une lesion peri-vesicale. Corrections : hydratation, miction immediate avant l'acquisition, **diuretique (furosemide)** optionnel, clichés tardifs apres rincage ; le [18F]PSMA-1007 (excretion biliaire) contourne ce probleme pour la loge.[2,16]"
+          },
+          {
+            "type": "warning",
+            "title": "Piege - lesions non prostatiques PSMA-positives",
+            "text": "Le PSMA n'est pas specifique de la prostate : il est exprime par la **neovascularisation** de nombreuses tumeurs (rein, thyroide, hepatocarcinome, gliome) et par certaines lesions benignes (neurofibrome, hemangiome, sarcoidose, ganglions reactionnels). Une fixation atypique hors des sites attendus de dissemination prostatique impose une lecture critique et la correlation morphologique.[39]"
+          }
+        ]
+      },
+      {
+        "title": "D15 - Dosimétrie",
+        "text": "La TEP-PSMA délivre une **dose efficace faible**, dominée par les organes à clairance (reins, vessie) et par les sites de captation physiologique (glandes salivaires et lacrymales). Les coefficients de dose et la dose efficace varient selon le ligand et son mode d'excrétion (urinaire pour le ⁶⁸Ga-PSMA-11 et le ¹⁸F-DCFPyL, hépatobiliaire pour le ¹⁸F-PSMA-1007).\n\n| Traceur | Coefficient de dose (mSv/MBq) | Activité usuelle | Dose efficace estimée | Organe critique |\n|---|---|---|---|---|\n| **⁶⁸Ga-PSMA-11** | **0,022** (plage 0,021–0,025)[30,31] | 111–259 MBq[1,5] | **≈ 2,4–5 mSv**[30,31] | **Reins** (≈ 0,23–0,41 mGy/MBq)[30,31] |\n| **¹⁸F-DCFPyL** | **0,017 ± 0,002**[32] | 296–370 MBq[4] | **≈ 6,3 mSv** pour 370 MBq[32] | Reins, paroi vésicale[32] |\n| **¹⁸F-PSMA-1007** | **0,022**[16] | ≈ 200–250 MBq (3–4 MBq/kg)[5,16] | **≈ 4,4–8 mSv**[15,16] | **Glandes lacrymales**, puis sous-mandibulaires, reins[15,16] |\n\nNoter la **discordance attendue d'organe critique selon l'excrétion** : pour les ligands à élimination urinaire (⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL), ce sont les **reins** et la **paroi vésicale** qui limitent ; pour le ¹⁸F-PSMA-1007 à élimination hépatobiliaire, les **glandes lacrymales et salivaires** deviennent les organes les plus exposés.[15,16,30] Doses d'organe rapportées pour le ¹⁸F-PSMA-1007 : reins ≈ 0,17 mGy/MBq, rate ≈ 0,074, foie ≈ 0,060.[15,16]\n\n**Composante TDM.** À la dose du radiopharmaceutique s'ajoute celle de la TDM couplée (low-dose pour correction d'atténuation/repérage, ou diagnostique avec contraste), à intégrer dans la dose totale de l'examen hybride.\n\n**Mise en perspective clinique** — argument fort de la TEP-PSMA dans le bilan initial à haut risque : la dose effective totale de l'examen est **8,4 mSv (TEP-PSMA) vs 19,2 mSv** pour l'imagerie conventionnelle (TDM + scintigraphie osseuse) dans l'essai proPSMA, soit une **réduction d'environ 56 %** de l'irradiation diagnostique.[7,30]\n\n**Formalisme.** Calculs selon le formalisme **CIPR/ICRP** : fractions absorbées spécifiques de la **CIPR 133**, dose efficace pondérée par les facteurs tissulaires de la **CIPR 103**.[30] Distinguer toujours **dose absorbée par organe** (Gy/mGy) et **dose efficace corps entier** (mSv).\n\n*Pédiatrie / grossesse-allaitement* : sans objet (pathologie de l'homme adulte) — aucun schéma posologique pédiatrique dans les AMM ni dans la carte de dose EANM, indication adulte exclusive.[4]",
+        "stats": [
+          {
+            "value": "≈ 2,4–5 mSv",
+            "label": "Dose efficace ⁶⁸Ga-PSMA-11 (111–259 MBq)[30,31]"
+          },
+          {
+            "value": "0,022 mSv/MBq",
+            "label": "Coefficient de dose ⁶⁸Ga-PSMA-11[30]"
+          },
+          {
+            "value": "≈ 6,3 mSv",
+            "label": "Dose efficace ¹⁸F-DCFPyL (370 MBq)[32]"
+          },
+          {
+            "value": "8,4 vs 19,2 mSv",
+            "label": "TEP-PSMA vs imagerie conventionnelle (proPSMA)[7]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — l'organe critique change avec le ligand",
+            "text": "Ne pas transposer la dosimétrie d'un ligand à l'autre : pour le **⁶⁸Ga-PSMA-11** et le **¹⁸F-DCFPyL** (excrétion urinaire), l'organe limitant est le **rein** (≈ 0,23–0,41 mGy/MBq pour le ⁶⁸Ga) et la paroi vésicale ; pour le **¹⁸F-PSMA-1007** (excrétion hépatobiliaire), ce sont les **glandes lacrymales puis salivaires**.[15,16,30] Conséquence pratique : hydratation et mictions fréquentes réduisent surtout la dose vésicale des deux premiers."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — dosimétrie et axe théranostique",
+            "text": "La cartographie de fixation PSMA en TEP préfigure la **dosimétrie prédictive** du ¹⁷⁷Lu-PSMA-617 : c'est la même cible qui est visualisée puis irradiée (paire théranostique). Le SUVmean PSMA pré-thérapeutique a d'ailleurs une **valeur pronostique** sous ¹⁷⁷Lu-PSMA (cf. D17), reliant directement l'intensité de captation diagnostique à l'effet thérapeutique attendu.[29]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma comparatif des doses efficaces : TEP-PSMA (~8 mSv) face à l'imagerie conventionnelle TDM + scintigraphie osseuse (~19 mSv), avec organes critiques selon le ligand."
+      },
+      {
+        "title": "D16 - Radioprotection",
+        "text": "Les ligands PSMA sont des **émetteurs de positons** (β⁺ suivi de deux photons d'annihilation de **511 keV**), imposant les précautions standard de la TEP : le débit de dose externe au contact du patient est notablement supérieur à celui d'une scintigraphie planaire conventionnelle. La radioprotection se structure selon les trois principes **justification, optimisation (ALARA — *As Low As Reasonably Achievable*), limitation**, et se décline par cible de protection.\n\n| Cible | Mesures clés |\n|---|---|\n| **Personnel** | Préparation en enceinte blindée, blindage de seringue, application stricte du triptyque **distance / temps / écran**, dosimétrie corps entier **et dosimétrie d'extrémités (poignet/doigts)** lors de la manipulation, zonage réglementaire. Photons de 511 keV très pénétrants → blindage plomb épais. |\n| **Entourage / public** | Patient « source » à la sortie : la **décroissance physique rapide** limite l'exposition (⁶⁸Ga T½ **67,7 min**[1], ¹⁸F T½ **109,8 min**[4]). Consignes usuelles de distance temporaire vis-à-vis des enfants et femmes enceintes ; hydratation et mictions fréquentes pour accélérer l'élimination urinaire (ligands urinaires). |\n| **Patient** | Justification de l'indication, optimisation de l'activité injectée (111–259 MBq pour le ⁶⁸Ga-PSMA-11[1,5]), vidange vésicale avant acquisition. |\n\n**Décroissance et logistique.** La période très courte du **⁶⁸Ga (67,7 min)**[1] entraîne une décroissance d'environ 50 % par heure : l'activité disponible par élution du générateur ⁶⁸Ge/⁶⁸Ga est limitée (lots ≈ 1,8–2 GBq) et impose une organisation au plus près de l'injection.[1] Le **¹⁸F (109,8 min)**[4], produit par cyclotron en gros lots, autorise une production centralisée, une distribution multidose et une imagerie tardive (1–2 h) compatible avec une logistique souple.[4]\n\n**Effluents et déchets.** Gestion des urines (élimination rénale prédominante du ⁶⁸Ga-PSMA-11 et du ¹⁸F-DCFPyL) ; la **brièveté des périodes** (heures, contre 8 jours pour un ¹³¹I) simplifie la décroissance des déchets. Traçabilité de l'activité, contrôle qualité radionucléidique (notamment **⁶⁸Ge breakthrough** pour le générateur) et conduite documentée en cas de contamination selon la procédure du service.[5,6]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — débit de dose au contact en TEP",
+            "text": "Les photons d'annihilation de **511 keV** sont bien plus pénétrants que les 140 keV du ⁹⁹ᵐTc : le débit de dose au contact d'un patient TEP est élevé. Privilégier systématiquement **distance et temps** pour le personnel, et la **dosimétrie d'extrémités** lors de toute manipulation de seringue ou de cathéter.[5,6]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — ⁶⁸Ga vs ¹⁸F en radioprotection et logistique",
+            "text": "Le ⁶⁸Ga, issu d'un **générateur** (pas de cyclotron requis), élimine la contrainte d'un accélérateur sur site mais limite l'activité par élution et impose une cadence serrée (T½ 67,7 min).[1] Le ¹⁸F, de période plus longue (109,8 min) et produit en gros lots par cyclotron, permet une **distribution centralisée multidose** et une imagerie tardive ; son parcours β⁺ plus court (Emax 634 keV vs 1899 keV pour le ⁶⁸Ga) confère aussi une **meilleure résolution spatiale**.[4]"
+          }
+        ]
+      },
+      {
+        "title": "D17 - Performances diagnostiques & comparaison",
+        "text": "La valeur diagnostique de la TEP-PSMA dépend du **contexte clinique** (bilan initial à haut risque vs récidive biochimique) et, en récidive, du **taux de PSA** (antigène prostatique spécifique). Globalement, elle **surclasse l'imagerie conventionnelle** au bilan initial et la TEP-choline à bas PSA.\n\n**a) Bilan initial à haut risque** — essai randomisé **proPSMA** (Hofman, Lancet 2020, n=300) : ⁶⁸Ga-PSMA-11 TEP-TDM vs imagerie conventionnelle (TDM + scintigraphie osseuse).\n\n| Paramètre | TEP-PSMA | Imagerie conventionnelle |\n|---|---|---|\n| **Exactitude globale** | **92 %** | **65 %** (+27 points)[7] |\n| **Sensibilité** | **85 %** | **38 %**[7] |\n| **Spécificité** | **98 %** | **91 %**[7] |\n| Atteinte ganglionnaire pelvienne | 91 % | 59 %[7] |\n| Métastases à distance | 95 % | 74 %[7] |\n| Examens équivoques | **7 %** | **23 %**[7] |\n| Changement de prise en charge | **28–41 %** | 15–23 %[7] |\n\nL'étude **OSPREY cohorte A** (¹⁸F-DCFPyL, n=252, référence histologique post-prostatectomie + curage) confirme pour les **adénopathies pelviennes** une **sensibilité limitée (médiane 40,3 %)** mais une **spécificité élevée (médiane 97,9 %)**, VPP 78–91 % : forte spécificité, mais micro-métastases ganglionnaires sous-détectées.[20]\n\n**b) Récidive biochimique — taux de détection PSA-dépendant** (méta-analyses).\n\n| PSA (ng/mL) | Taux de détection (tous ligands)[33] |\n|---|---|\n| 0,2–0,5 | **≈ 48 %**[33] |\n| 0,5–2,0 | **≈ 71 %**[33] |\n| > 2,0 | **> 88–90 %**[33] |\n\nDétail par ligand : ⁶⁸Ga-PSMA-11 ≈ **50 %** (< 0,5), 71 % (0,5–2,0), 88 % (> 2,0) ng/mL[33] ; **¹⁸F-PSMA-1007** ≤ 0,5 = 68 %, 0,51–1,0 = 79 %, 1,1–2,0 = 95 %, > 2,0 = 97 %.[34] L'essai **CONDOR** (¹⁸F-DCFPyL, phase 3, n=208, PSA médian 0,8 ng/mL) rapporte un **taux de localisation correcte (CLR) de 84,8–87,0 %**, une détection de **36,2 % si PSA < 0,5** et **96,7 % si PSA ≥ 5 ng/mL**, avec un **changement de prise en charge chez 63,9 %** des patients.[3]\n\n**c) Comparaison aux autres modalités.**\n\n| Modalité | Apport / limite |\n|---|---|\n| **TEP-choline (¹⁸F-fluorocholine)** | Surclassée par la TEP-PSMA, surtout à **bas PSA** : Morigi (n=38) — 54 % des patients choline-négatifs requalifiés positifs en PSMA.[19] |\n| **TEP-fluciclovine (¹⁸F)** | Taux de détection globaux proches (~83 % PSMA vs ~79 % fluciclovine) mais **PSMA supérieure à bas PSA** et meilleure concordance inter-lecteurs (Calais, Lancet Oncol 2019).[35,36] |\n| **IRM multiparamétrique** | Référence du **staging local** (loge prostatique, capsule) ; la TEP-PSMA est supérieure pour le **staging N/M corps entier**.[7] La TEP-IRM combine les deux. |\n| **TDM + scintigraphie osseuse** | Imagerie conventionnelle, nettement dépassée (cf. proPSMA).[7] |\n\n**Limite biologique à connaître** : ~5–10 % des cancers prostatiques sont **PSMA-négatifs** (dédifférenciation neuroendocrine), source de faux négatifs ; la TEP-FDG ou l'imagerie morphologique gardent alors leur intérêt.",
+        "stats": [
+          {
+            "value": "92 % vs 65 %",
+            "label": "Exactitude TEP-PSMA vs conventionnelle (proPSMA)[7]"
+          },
+          {
+            "value": "85 % / 98 %",
+            "label": "Sensibilité / spécificité TEP-PSMA (proPSMA)[7]"
+          },
+          {
+            "value": "≈ 48 → 90 %",
+            "label": "Détection en récidive selon PSA (0,2 → >2 ng/mL)[33]"
+          },
+          {
+            "value": "63,9 %",
+            "label": "Changement de prise en charge (CONDOR)[3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — spécificité élevée mais sensibilité ganglionnaire limitée",
+            "text": "Pour les **micro-métastases ganglionnaires pelviennes** au bilan initial, la sensibilité reste modeste (OSPREY : médiane **40,3 %**) malgré une spécificité ≈ 98 %.[20] Un curage négatif en TEP-PSMA n'exclut donc pas une atteinte N+ infraclinique : la haute VPP justifie une biopsie/curage ciblé sur les foyers positifs, mais l'absence de fixation ne dispense pas du curage selon le risque."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — performances pilotées par le PSA",
+            "text": "En récidive biochimique, raisonner toujours **en fonction du PSA** : détection ~**36–48 % sous 0,5 ng/mL**, ~**90 % au-delà de 2–3 ng/mL**.[3,33] À bas PSA, la TEP-PSMA garde l'avantage décisif sur la choline et la fluciclovine[19,35] — d'où le seuil de prescription EAU (PSA > 0,2 ng/mL après prostatectomie, cf. D18)."
+          }
+        ]
+      },
+      {
+        "title": "D18 - Place dans la stratégie & algorithmes décisionnels",
+        "text": "La TEP-PSMA s'est imposée comme **imagerie moléculaire de référence** du cancer de la prostate dans deux situations pivots — le bilan initial à haut risque et la récidive biochimique — et comme **porte d'entrée de l'axe théranostique** vers le ¹⁷⁷Lu-PSMA.\n\n**Recommandations.**\n\n| Société | Position |\n|---|---|\n| **EAU 2024** | Staging du **haut risque → TEP-PSMA si disponible (recommandation forte)** ; récidive après prostatectomie → TEP-PSMA si **PSA > 0,2 ng/mL** et si le résultat modifie la prise en charge (recommandation faible). Si TEP-PSMA indisponible et PSA ≥ 1 ng/mL → TEP-fluciclovine ou TEP-choline (alternative faible).[23] |\n| **HAS / SFMN / AFU (France)** | **LOCAMETZ (⁶⁸Ga-PSMA-11)** : SMR important pour stadification initiale haut risque et récidive ; **PYLCLARI (¹⁸F-DCFPyL)** : avis favorable au remboursement, SMR modéré ; **RADELUMIN (¹⁸F-PSMA-1007)** : avis favorable en récidive biochimique.[21,22,42] TEP-choline OU TEP-PSMA = examen de référence après chirurgie pour récidive ganglionnaire/métastatique.[42] |\n| **NCCN** | Intègre la TEP-PSMA et la TEP-fluciclovine dans le staging et la récidive.[43] |\n\n**Séquençage — bilan initial (haut risque).** Diagnostic histologique (biopsie guidée par IRM-mp) → IRM-mp pour le **staging local (T)** → **TEP-PSMA pour le staging N/M corps entier** en une acquisition, en remplacement de la TDM + scintigraphie osseuse (gain de précision +27 points et dose divisée par ~2, cf. D15/D17).[7]\n\n**Séquençage — récidive biochimique.** Élévation du PSA après traitement curatif (prostatectomie : PSA > 0,2 ng/mL ; radiothérapie : critères de Phoenix) → **TEP-PSMA pour localiser la rechute** (loge, ganglions pelviens/rétropéritonéaux, os) → orientation thérapeutique (radiothérapie de rattrapage ciblée, curage, traitement systémique).[23] L'apport est maximal **à bas PSA**, où la TEP-PSMA surclasse la choline et la fluciclovine.[19,35]\n\n**Séquençage — sélection pré-RLT.** Chez le patient en **cancer de la prostate résistant à la castration métastatique (mCRPC)** prétraité (inhibiteur du récepteur aux androgènes + 1–2 lignes de taxane), la TEP-PSMA conditionne l'éligibilité au **¹⁷⁷Lu-PSMA-617** selon le **critère VISION** : captation PSMA d'au moins une métastase **supérieure à la captation hépatique**, et absence de lésion PSMA-négative discordante en TDM/IRM.[9,27]\n\n*Arbre décisionnel synthétique* : **haut risque** → IRM-mp (T) + **TEP-PSMA (N/M)** ; **récidive (PSA en hausse)** → **TEP-PSMA** → traitement guidé par la topographie ; **mCRPC réfractaire** → **TEP-PSMA de sélection** → ¹⁷⁷Lu-PSMA-617 si critère VISION rempli.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — un seul examen, trois rôles dans le parcours",
+            "text": "La même TEP-PSMA sert successivement au **staging N/M initial**, à la **localisation de la récidive biochimique**, puis à la **sélection théranostique** pré-¹⁷⁷Lu-PSMA. Cette continuité (diagnostic → restadification → sélection → suivi) est le socle de la médecine de précision en uro-oncologie nucléaire et explique son adoption rapide par l'EAU, la HAS et le NCCN.[21,22,23,43]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — disponibilité et délai de prescription",
+            "text": "En récidive post-prostatectomie, la recommandation EAU fixe un seuil de **PSA > 0,2 ng/mL** et conditionne la prescription au fait que le résultat **modifie la prise en charge**.[23] Prescrire trop tôt (PSA très bas) expose à un examen négatif sans gain décisionnel ; trop tard fait perdre la fenêtre d'une radiothérapie de rattrapage ciblée."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique du cancer de la prostate : sélection par TEP-PSMA (critère VISION, captation > foie) puis traitement par ¹⁷⁷Lu-PSMA-617, dans le parcours staging → récidive → sélection."
+      },
+      {
+        "title": "D19 - Examens apparentés & variantes",
+        "text": "La TEP-PSMA s'inscrit dans une famille de ligands et d'examens concurrents ou complémentaires, et ouvre directement sur sa **paire thérapeutique** au ¹⁷⁷Lu. Le choix se fait selon la disponibilité, le mode d'excrétion du ligand et la question clinique posée.\n\n| Examen apparenté | Cible / différence | Quand le préférer |\n|---|---|---|\n| **⁶⁸Ga-PSMA-11 (Locametz/Illuccix)** | PSMA, excrétion **urinaire**, T½ 67,7 min, β⁺ Emax 1899 keV[1] | Centre disposant d'un générateur ⁶⁸Ge/⁶⁸Ga ; ligand de référence historique, le plus documenté. |\n| **¹⁸F-DCFPyL (PYLARIFY/PYLCLARI)** | PSMA, excrétion **urinaire**, T½ 109,8 min, **meilleure résolution** (β⁺ Emax 634 keV)[4] | Production cyclotron centralisée, distribution multidose ; imagerie tardive 1–2 h. |\n| **¹⁸F-PSMA-1007 (RADELUMIN)** | PSMA, excrétion **hépatobiliaire** (faible activité urinaire) | Pour **dégager la loge prostatique et les uretères** ; rançon = fixations digestives/biliaires et **faux positifs osseux/costaux** plus fréquents.[15,16] |\n| **TEP-choline (¹⁸F-fluorocholine)** | Métabolisme des phospholipides membranaires | Alternative si TEP-PSMA indisponible ; nettement moins sensible à bas PSA.[19,36] |\n| **TEP-fluciclovine (¹⁸F)** | Transport des acides aminés | Alternative en récidive (PSA ≥ 1 ng/mL) ; détection globale proche mais infériorité à bas PSA.[23,35] |\n| **IRM multiparamétrique** | Anatomie + diffusion/perfusion | **Staging local (T)**, guidage des biopsies ; complémentaire de la TEP pour le N/M. |\n| **¹⁷⁷Lu-PSMA-617 (Pluvicto)** | **Même cible PSMA**, émetteur **β⁻** (T½ 6,6 j) + γ (113/208 keV) imageable | Traitement (RLT) du mCRPC PSMA-positif sélectionné par TEP-PSMA — **paire théranostique**.[9,27] |\n\n**Variantes de protocole.** Acquisition tardive et/ou diurétique (furosémide) pour les ligands urinaires afin de réduire l'activité péri-vésicale ; **TEP-IRM** (loge prostatique + corps entier) en alternative à la TEP-TDM ; clichés tardifs de « rinçage » pour différencier excrétion urétérale et adénopathie.\n\n**Apport théranostique.** Le couple diagnostic/traitement repose sur une cible unique : la TEP-PSMA **visualise** l'expression PSMA, le ¹⁷⁷Lu-PSMA-617 l'**irradie**. L'essai **VISION** (Sartor, NEJM 2021, n=831, mCRPC) a démontré un bénéfice de survie : **survie globale médiane 15,3 vs 11,3 mois (HR 0,62 ; IC95 % 0,52–0,74 ; p < 0,001)** et **rPFS 8,7 vs 3,4 mois (HR 0,40 ; p < 0,001)**.[9,27,28] L'émission γ du ¹⁷⁷Lu autorise en outre une **scintigraphie/TEMP post-thérapeutique** de contrôle de la biodistribution.",
+        "stats": [
+          {
+            "value": "15,3 vs 11,3 mois",
+            "label": "Survie globale ¹⁷⁷Lu-PSMA-617 + SOC vs SOC (VISION)[9,27]"
+          },
+          {
+            "value": "HR 0,62",
+            "label": "Réduction du risque de décès (VISION)[9,27]"
+          },
+          {
+            "value": "8,7 vs 3,4 mois",
+            "label": "rPFS sous ¹⁷⁷Lu-PSMA-617 (VISION)[9]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — choisir le ligand selon la cible anatomique",
+            "text": "Pour évaluer la **loge prostatique et les uretères**, l'excrétion **hépatobiliaire** du ¹⁸F-PSMA-1007 évite l'activité urinaire gênante, mais multiplie les **faux positifs osseux/costaux** et les fixations digestives/biliaires.[15,16] À l'inverse, les ligands urinaires (⁶⁸Ga-PSMA-11, ¹⁸F-DCFPyL) imposent vidange vésicale ± diurétique pour ne pas masquer une récidive locale."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la paire théranostique PSMA",
+            "text": "TEP-PSMA et ¹⁷⁷Lu-PSMA-617 forment une **paire théranostique** parfaite : même vecteur urée-based, même cible (GCPII/PSMA), un isotope pour voir (β⁺) et un pour traiter (β⁻).[9,27] La sélection VISION (captation lésionnelle > foie, sans lésion PSMA-négative discordante) illustre que **l'image diagnostique dicte l'éligibilité thérapeutique** — fondement de l'uro-oncologie nucléaire moderne."
+          }
+        ],
+        "figureKey": "PSMA_BINDING",
+        "figureAlt": "Liaison du ligand urée-based au domaine extracellulaire du PSMA (GCPII) puis internalisation, cible commune à la TEP diagnostique et à la radioligand-thérapie au ¹⁷⁷Lu."
+      },
+      {
+        "title": "E20 - Cas cliniques commentés / Iconographie",
+        "steps": [
+          {
+            "title": "Cas 1 — Bilan initial d'un cancer à haut risque (staging pré-curatif)",
+            "text": "*Contexte* : homme de 67 ans, adénocarcinome prostatique ISUP 5, **PSA (antigène prostatique spécifique) 28 ng/mL**, bilan conventionnel (TDM + scintigraphie osseuse) jugé négatif. *Images* : TEP au **⁶⁸Ga-PSMA-11** corps entier (vertex → mi-cuisses, ~60 min p.i.) : fixation intense de la tumeur primitive (**miPSMA 3**, ≥ parotide), de deux adénopathies iliaques externes infracentimétriques et d'un foyer costal unique. *Analyse* : le foyer costal isolé de faible intensité, sans corrélat TDM lytique/condensant, est classé **PSMA-RADS 3D** (os équivoque) — piège classique (cf. §C14) ; les adénopathies pelviennes sont **miN1**. La TEP-PSMA détecte une atteinte N+ occulte en imagerie conventionnelle, conformément au gain de l'essai proPSMA (**exactitude 92 % vs 65 %**) [7]. *Conclusion* : miT3 **miN1** miM0(équivoque os) ; **upstaging** modifiant la stratégie (extension du champ d'irradiation), changement de prise en charge survenu chez **28 %** des patients dans proPSMA [7]."
+          },
+          {
+            "title": "Cas 2 — Récidive biochimique à bas PSA après prostatectomie",
+            "text": "*Contexte* : homme de 62 ans, prostatectomie radicale 3 ans auparavant, **PSA passé de < 0,1 à 0,4 ng/mL** (récidive biochimique). *Images* : TEP au **¹⁸F-DCFPyL** (piflufolastat, acquisition 1–2 h p.i.) : foyer unique en loge de prostatectomie, sans atteinte ganglionnaire ni osseuse. *Analyse* : à ce niveau de PSA, le taux de détection attendu est modeste (**~36 % si PSA < 0,5 ng/mL** dans CONDOR) [3] ; la détection d'une récidive locale isolée oriente vers une radiothérapie de rattrapage ciblée. L'excrétion urinaire du ¹⁸F-DCFPyL impose une vidange vésicale avant acquisition pour dégager la loge. *Conclusion* : récidive locale isolée **miTr** ; le résultat positif a entraîné un changement de prise en charge — observé chez **63,9 %** des patients de CONDOR [3]."
+          },
+          {
+            "title": "Cas 3 — Sélection théranostique avant ¹⁷⁷Lu-PSMA-617",
+            "text": "*Contexte* : homme de 71 ans, **mCRPC** (cancer de la prostate métastatique résistant à la castration) prétraité par ARSI (inhibiteur de la voie des androgènes) puis taxane, PSA en progression. *Images* : TEP au **⁶⁸Ga-PSMA-11** : multiples métastases osseuses et ganglionnaires, toutes à fixation supérieure au foie (**miPSMA 3**), sans lésion PSMA-négative discordante en TDM. *Analyse* : les **critères VISION** sont remplis — au moins une métastase de captation **> captation hépatique** et absence de lésion mesurable PSMA-négative discordante [27]. La valeur quantitative compte : dans l'analyse de VISION, un **SUVmean ≥ 10,2** (quartile supérieur) s'associe à une SG (survie globale) médiane de **21,4 mois** contre **14,5 mois** pour le quartile inférieur [29]. *Conclusion* : patient **PSMA-avide éligible au ¹⁷⁷Lu-PSMA-617** (Pluvicto), dont l'ajout au SOC prolonge la SG (**15,3 vs 11,3 mois**, HR 0,62) [27,28]."
+          }
+        ],
+        "text": "Trois cas couvrant les trois temps d'utilisation de la TEP-PSMA : le **staging haut risque**, la **récidive biochimique** et la **sélection théranostique**. Chacun est commenté selon la trame *contexte → images → analyse → conclusion*, en renvoyant aux scores standardisés (PSMA-RADS, miTNM/PROMISE — cf. §C12) et aux pièges d'interprétation (cf. §C14).",
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique du PSMA : la TEP au ⁶⁸Ga/¹⁸F-PSMA visualise et sélectionne les patients PSMA-avides, qui sont ensuite traités par radioligand-thérapie au ¹⁷⁷Lu-PSMA-617, puis réévalués — diagnostic et thérapie partageant la même cible PSMA.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Pour une indication théranostique, **conclure explicitement sur l'avidité PSMA de l'ensemble des lésions** et signaler toute lésion discordante PSMA-négative en TDM/IRM : c'est cette discordance, et non la seule positivité d'une métastase, qui disqualifie un patient des critères VISION [27]."
+          }
+        ]
+      },
+      {
+        "title": "E21 - Points clés / à retenir",
+        "list": [
+          "**PSMA** (Prostate-Specific Membrane Antigen / glutamate carboxypeptidase II, FOLH1) = glycoprotéine transmembranaire surexprimée par **> 90 %** des adénocarcinomes prostatiques ; cible commune à l'imagerie (TEP) et à la thérapie (RLT) → **paire théranostique** [2].",
+          "Le ligand se lie au domaine extracellulaire puis est **internalisé**, ce qui accroît rétention et contraste tumoral ; ~**5–10 % des tumeurs sont PSMA-négatives** (dédifférenciation neuroendocrine) → faux négatifs [2].",
+          "Physique : **⁶⁸Ga** T½ **67,6 min**, β⁺ Emax **1899 keV** (générateur ⁶⁸Ge/⁶⁸Ga, sans cyclotron) ; **¹⁸F** T½ **109,8 min**, β⁺ Emax **634 keV** (meilleure résolution, production cyclotron, gros lots) [1,40].",
+          "Trois traceurs : **⁶⁸Ga-PSMA-11** (gozétotide) et **¹⁸F-DCFPyL** à excrétion **urinaire** ; **¹⁸F-PSMA-1007** à excrétion **hépatobiliaire** (loge prostatique dégagée mais faux positifs costaux plus fréquents) [4,16].",
+          "Activités : ⁶⁸Ga-PSMA-11 **111–259 MBq** (1,8–2,2 MBq/kg), incubation **50–100 min** ; ¹⁸F-DCFPyL **~333–370 MBq**, imagerie 1–2 h ; ¹⁸F-PSMA-1007 **3–4 MBq/kg** [3,4,5].",
+          "Préparation : **pas de jeûne** ; hydratation + miction avant acquisition ; **furosémide optionnel** pour réduire l'activité urinaire péri-vésicale [5].",
+          "Bilan initial haut risque (proPSMA) : **exactitude 92 % vs 65 %**, **sensibilité 85 % vs 38 %**, **spécificité 98 % vs 91 %** vs imagerie conventionnelle, avec **dose 8,4 vs 19,2 mSv** [7].",
+          "Récidive biochimique : détection PSA-dépendante — **~48 %** (PSA 0,2–0,5), **~71 %** (0,5–2,0), **> 88 %** (> 2 ng/mL) [33].",
+          "Scores : **PSMA-RADS 1–5** (sémiologie lésionnelle) et **PROMISE/miTNM** (miT, miN, miM) avec **score d'expression miPSMA 0–3** (E-PSMA : 0 < blood pool, 3 ≥ parotide) [2,10,26].",
+          "Pièges majeurs : **ganglions sympathiques (surtout cœliaques** para-aortiques T12-L1), **côtes** (lésion unique de faible intensité = bénigne), fixations physiologiques (glandes salivaires/lacrymales, reins, grêle) [37,38,39].",
+          "Dosimétrie : dose efficace ⁶⁸Ga-PSMA-11 ≈ **0,022 mSv/MBq** (reins = organe critique) ; ¹⁸F-DCFPyL ≈ **0,017 mSv/MBq** ; ¹⁸F-PSMA-1007 ≈ **0,022 mSv/MBq** (glandes lacrymales/salivaires) [30,32,16].",
+          "Sélection théranostique (critère VISION) : **captation d'au moins une métastase > foie** + absence de lésion PSMA-négative discordante → éligibilité au **¹⁷⁷Lu-PSMA-617** (SG **15,3 vs 11,3 mois**, HR 0,62) [27,28].",
+          "Place : la TEP-PSMA **surclasse la TEP-choline** à bas PSA et complète l'**IRM multiparamétrique** (référence du staging local) ; recommandée par l'**EAU** (haut risque + récidive) et remboursée en France (avis HAS favorable) [21,35,36]."
+        ]
+      },
+      {
+        "title": "E22 - FAQ & pièges d'examen",
+        "text": "**Faut-il être à jeun pour une TEP-PSMA ?** Non. Contrairement à la TEP au ¹⁸F-FDG, le **jeûne n'est pas requis** ; on demande seulement hydratation et miction avant l'acquisition, avec furosémide optionnel pour les traceurs à élimination urinaire [5].\n\n**⁶⁸Ga ou ¹⁸F : que choisir ?** Le **¹⁸F** offre une meilleure résolution spatiale (libre parcours du positon plus court, Emax 634 keV vs 1899 keV) et de gros lots produits par cyclotron (distribution centralisée) ; le **⁶⁸Ga** s'obtient sans cyclotron via **générateur ⁶⁸Ge/⁶⁸Ga** mais en activités limitées par élution [1,40]. La cible PSMA est identique : le choix relève surtout de la logistique et de la résolution.\n\n**Pourquoi ¹⁸F-PSMA-1007 a-t-il sa place malgré ses faux positifs osseux ?** Son excrétion **hépatobiliaire** (et non urinaire) laisse la **loge prostatique et les uretères sans activité gênante**, atout pour la récidive locale ; en contrepartie, les **fixations costales/osseuses bénignes** y sont plus fréquentes [16].\n\n**Comment ne pas surcaller un ganglion cœliaque ?** Les **ganglions sympathiques** (cervical/stellaire, **cœliaque**, hypogastrique, sacré) fixent le PSMA de façon bénigne. Le ganglion cœliaque a un **aspect linéaire para-aortique au niveau T12-L1**, à distinguer d'une adénopathie rétropéritonéale arrondie ; la reproductibilité de cette fixation et la corrélation TDM aident [37].\n\n**Une lésion costale unique faiblement fixante, est-ce une métastase ?** Le plus souvent **non** : une lésion costale isolée de faible intensité est bénigne dans la majorité des cas (fracture, remaniement dégénératif) — à classer **PSMA-RADS 3** et à corréler à la TDM [38].\n\n**Que signifie une TEP-PSMA négative à PSA élevé ?** Évoquer d'abord une **tumeur PSMA-négative** (dédifférenciation neuroendocrine, ~5–10 % des cas) ou un effet de l'**hormonothérapie** sur l'expression du PSMA ; envisager alors une TEP au ¹⁸F-FDG ou un autre traceur [2].\n\n**Quel score pour le compte rendu ?** Deux cadres complémentaires : **PSMA-RADS (1–5)** pour la probabilité de malignité **lésion par lésion**, et **PROMISE/miTNM** pour le **staging global** (miT, miN, miM) avec le score d'expression **miPSMA 0–3** [10,26].\n\n**TEP-PSMA ou TEP-choline en récidive ?** La **TEP-PSMA est plus sensible, surtout à bas PSA** : Morigi a montré **54 % de patients choline-négatifs requalifiés positifs en PSMA** [19]. La choline/fluciclovine reste une alternative si le PSMA est indisponible [23].\n\n**Quel seuil retenir pour la sélection avant ¹⁷⁷Lu-PSMA ?** Critère **VISION** : **captation d'au moins une métastase supérieure à celle du foie**, sans lésion PSMA-négative discordante en TDM/IRM [27].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — faux positifs à connaître absolument",
+            "text": "**Ganglions sympathiques** (surtout **cœliaques**, aspect linéaire para-aortique T12-L1) [37], **côtes** (lésion unique de faible intensité) [38], et **cancers non prostatiques PSMA+** (rein, thyroïde, néovascularisation tumorale) ou lésions bénignes (Paget, hémangiome vertébral, lésions inflammatoires/granulomateuses) [39]. Aides au diagnostic : faible intensité, symétrie, et **corrélation TDM systématique**."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Distinguer **taux de détection** (proportion d'examens positifs, PSA-dépendant) et **performance diagnostique vraie** (Se/Sp validées sur histologie). Dans OSPREY cohorte A, la TEP au ¹⁸F-DCFPyL a une **spécificité ~97,9 %** mais une **sensibilité ~40 %** pour les adénopathies pelviennes (référence histologique) — forte spécificité, sensibilité limitée pour les micro-métastases [20]."
+          }
+        ]
+      },
+      {
+        "title": "E25 - Références & liens sortants typés",
+        "text": "**Bibliographie** (sources réelles, citées en bas de page).\n\n*Cible, traceurs & physique* : FDA/⁶⁸Ga-PSMA-11 [1], physique générateur ⁶⁸Ge/⁶⁸Ga [40], guide Gallium-68 PSMA [41], Evans GCPII (cible biologique) [17], PNAS cibles alternatives [18], gozétotide kits FDA [44], DailyMed PYLARIFY/¹⁸F-DCFPyL [4], biodistribution & dosimétrie ¹⁸F-PSMA-1007 (Giesel [15], Hvittfeldt [16]).\n\n*Protocole, reporting & quantification* : guideline conjoint **EANM/SNMMI 2.0** [5,6], **E-PSMA** (reporting, score miPSMA) [2,25], **PSMA-RADS v1.0** (Rowe) [26], fiabilité PSMA-RADS [13], **PSMA-RADS 2.0** [12], **PROMISE/miTNM** [10], **PROMISE V2** [11].\n\n*Performances & comparaisons* : **proPSMA** (staging haut risque) [7], **CONDOR** (¹⁸F-DCFPyL, récidive) [3,8], **OSPREY** [20], méta-analyses de détection par PSA [24,33,34], TEP-PSMA vs choline (Morigi) [19], vs fluciclovine (Calais, Lancet Oncol) [35], méta-analyse choline/fluciclovine/PSMA [36], synthèse guidelines EAU/NCCN [43].\n\n*Pièges* : ganglions sympathiques/cœliaques (JNM) [37] et PSMA-1007 [14], pièges musculosquelettiques (côtes) [38], maladies non prostatiques sur TEP-PSMA [39].\n\n*Dosimétrie* : ⁶⁸Ga-PSMA-11 (EJNMMI Phys [30], Radiat Prot Dosimetry [31]), ¹⁸F-DCFPyL [32], ¹⁸F-PSMA-1007 [16].\n\n*Recommandations* : **EAU 2024** [23], **HAS** RADELUMIN/¹⁸F-PSMA-1007 [21] et PYLCLARI/¹⁸F-DCFPyL [22], **AFU/Urofrance 2022-2024** [42].\n\n*Axe théranostique* : **VISION** (¹⁷⁷Lu-PSMA-617, NEJM/Novartis/ASCO Post) [9,27,28], valeur pronostique du SUVmean (Radiology 2024) [29].\n\n**Carte de liens (réseau de l'article)** — *Traceurs* : ⁶⁸Ga-PSMA-11 (gozétotide), ¹⁸F-DCFPyL (piflufolastat), ¹⁸F-PSMA-1007 · *Maladies* : cancer de la prostate, récidive biochimique, mCRPC · *Examens* : TEP-choline (¹⁸F-fluorocholine), TEP-fluciclovine, IRM multiparamétrique prostatique, scintigraphie osseuse · *Scores* : PSMA-RADS, PROMISE/miTNM, score d'expression miPSMA · *Théranostique* : ¹⁷⁷Lu-PSMA-617 (Pluvicto). *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*"
+      }
+    ]
+  }
+}
