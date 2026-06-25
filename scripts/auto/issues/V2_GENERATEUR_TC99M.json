@@ -1,0 +1,56 @@
+[
+  {
+    "severity": "major",
+    "where": "medecin_nuc section A3, champ \"title\" : \"A3 - Physique de la filiation : équilibre séculaire et transitoire\"",
+    "problem": "Le TITRE de la section conserve la formulation \"équilibre séculaire\" comme s'il s'appliquait au couple 99Mo/99mTc, alors que tout le corps de la section (et l'ensemble de l'article, à juste titre) démontre qu'il s'agit d'un équilibre TRANSITOIRE et que \"séculaire\" est l'erreur classique à corriger. C'est une contradiction interne directe entre le titre affiché et le contenu/les encadrés \"piège\". Un lecteur survolant les titres retient le terme faux. La faute de fond (qualifier le 99Mo/99mTc de séculaire) est précisément celle que les recherches étalon imposent de bannir.",
+    "fix": "Renommer en \"A3 - Physique de la filiation : équilibre transitoire (et non séculaire)\" ou \"A3 - Filiation radioactive : équilibre transitoire du couple 99Mo/99mTc\". Réserver le mot \"séculaire\" à la distinction pédagogique dans le corps, jamais dans un titre rattaché au 99Mo/99mTc."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc section A3, corps : \"À l'équilibre, l'activité théorique de 99mTc serait légèrement supérieure à celle du 99Mo, mais l'embranchement de 87,5 % l'atténue : en pratique... 0,9-0,95×\" ; et section A1/identityCard \"facteur théorique env. 1,1\".",
+    "problem": "Imprécision physique récurrente dans plusieurs sections. En équilibre transitoire, le facteur d'activité fils/parent à l'équilibre est A(Tc)/A(Mo) = λTc/(λTc−λMo) × branching. Le facteur géométrique λTc/(λTc−λMo) vaut ≈1,1 ; multiplié par le branchement 0,875 il donne ≈0,96-0,97, et non \"0,9\" ni \"0,9-0,95\". La valeur usuelle citée dans la littérature (StatPearls/Bateman) pour le ratio d'activité éluable à l'équilibre est d'environ 0,96. \"~0,9×\" (section C7 stat et B6) sous-estime légèrement et n'est pas homogène avec le \"0,9-0,95\" affiché ailleurs.",
+    "fix": "Harmoniser sur ≈0,96 (ou \"0,95-0,96×\") et présenter le calcul : 1,1 (facteur transitoire) × 0,875 (branchement) ≈ 0,96. Corriger le \"~0,9×\" isolé en C7/B6."
+  },
+  {
+    "severity": "minor",
+    "where": "Incohérence d'énergie gamma du 99Mo entre sections : \"740 et 778 keV\" (section 2 fiche, E13) vs \"740 et 780 keV\" (sections B5, D10, E16 figureAlt).",
+    "problem": "Le même article cite tantôt 778 keV, tantôt 780 keV pour le gamma dur du 99Mo. Les deux désignent la même raie (valeur exacte ~778 keV, souvent arrondie à 780). Ce n'est pas une erreur factuelle (les deux sont acceptées dans la littérature) mais une incohérence interne de présentation dans un contenu qui se veut de référence.",
+    "fix": "Uniformiser l'écriture (de préférence \"740 et 778 keV\", valeur tabulée LNHB/ICRP, en mentionnant éventuellement \"~780\" entre parenthèses une seule fois)."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc section D11, tableau CQ : \"Le pot de plomb atténue totalement les 140,5 keV du ⁹⁵Tc\".",
+    "problem": "Coquille de symbole isotopique : \"⁹⁵Tc\" au lieu de \"⁹⁹ᵐTc\". Le 95Tc est un autre radionucléide. Dans un contenu médical de référence destiné à l'apprentissage, une erreur de nombre de masse sur le radionucléide central prête à confusion.",
+    "fix": "Remplacer \"⁹⁵Tc\" par \"⁹⁹ᵐTc\"."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc section A1/A2 et D12 : \"≈ 85 % des scintigraphies diagnostiques\" présenté comme un fait, et chiffres de volume (\">30 M/an\", \"110 000 actes/jour\").",
+    "problem": "Le chiffre \"~85 % des scintigraphies diagnostiques\" et le volume \">30 millions/an\" proviennent d'une seule famille de sources (Frontiers Chem 2022 / WNA) et coexistent avec \"20 à 40 millions\" et \">50 millions toutes modalités\" cités ailleurs dans la même fiche étalon, sans que l'article ne signale l'ordre de grandeur incertain. Ce n'est pas faux mais affiché avec une fausse précision (le \"85 %\" notamment est un ordre de grandeur, pas une donnée consolidée).",
+    "fix": "Présenter ces volumes comme des ordres de grandeur (\"~80-85 %\", \"plusieurs dizaines de millions/an\") et éviter de juxtaposer 30 M et 50 M sans préciser que l'un concerne le 99mTc et l'autre toutes modalités (déjà fait en partie, à généraliser)."
+  },
+  {
+    "severity": "minor",
+    "where": "D10 dosimetrie - blindage 99mTc ('6-12 mm Pb') et infoBox 'deux energies deux blindages'; stat '6-12 mm Pb' avec source [27]",
+    "problem": "La source [27] (UM EHS, verifiee) et la pratique courante donnent ~1/4 de pouce (= 6,35 mm) de plomb pour stocker le 99mTc, pas '6 a 12 mm'. La borne haute de 12 mm (= 1/2 pouce) est introduite par le texte ('1/4 a 1/2 pouce') et n'est pas attestee par [27] qui ne cite que le 1/4 de pouce. Sur-affirmation legere, mais le texte se couvre en mentionnant la plage; valeur centrale correcte.",
+    "fix": "Aligner sur la source : '~6 mm (1/4 pouce) de plomb' pour le 99mTc selon [27], ou retirer la mention '1/2 pouce' non sourcee."
+  },
+  {
+    "severity": "minor",
+    "where": "A2, D12, E14 - chiffres d'epidemiologie ('> 40 000 actes/jour aux Etats-Unis', '> 30 millions de procedures/an', '~110 000 actes/jour')",
+    "problem": "Le '> 30 M/an' et le '> 40 000/jour US' sont attribues a [18][19]/[34]. La source [19] (WNA, verifiee) donne '>50 millions d'actes de MN/an dans le monde' et '>20 millions/an aux USA' (toutes modalites), pas specifiquement '>40 000/jour' de 99mTc. Les chiffres restent plausibles et sont coherents avec [18] (Frontiers), mais le rattachement precis a [19] est approximatif. Aucune valeur inventee.",
+    "fix": "Verifier que les chiffres '110 000/jour' et '>40 000/jour US' proviennent bien de [18] (Frontiers Chemistry) et non de [19]; ajuster le renvoi de source si necessaire."
+  },
+  {
+    "severity": "minor",
+    "where": "E13 tableau et infoBox - 'gamma 740/778 keV' du 99Mo (Cas 3, note d'unites)",
+    "problem": "Incoherence interne de notation : la plupart des sections ecrivent les gammas durs du 99Mo '740/780 keV', mais E13 et D11 ecrivent '740/778 keV'. La valeur reelle de la raie est ~739,5 et ~777,9 keV, donc '778' est plus exact que '780'; les deux ecritures sont acceptables mais l'incoherence devrait etre uniformisee. Non fabrique.",
+    "fix": "Uniformiser sur '740/778 keV' (ou '740/780 keV') dans tout l'article."
+  },
+  {
+    "severity": "minor",
+    "where": "Liste des sources [3],[4],[14],[15],[28],[29],[36]",
+    "problem": "Sept sources fournies sont definies mais jamais citees [n] dans le corps (sur-provisionnement de la liste de sources). Ce n'est pas une fabrication ni un depassement du cap 36, mais E16 omet aussi plusieurs sources reellement citees (ex. [6],[17],[20],[21],[26],[30],[31]) du bloc 'References', ce qui rend la bibliographie de E16 incomplete par rapport aux renvois du corps.",
+    "fix": "Soit retirer les sources non citees, soit completer le bloc References de E16 pour lister toutes les sources effectivement appelees dans le corps."
+  }
+]

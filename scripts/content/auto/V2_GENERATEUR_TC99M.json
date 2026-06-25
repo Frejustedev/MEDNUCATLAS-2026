@@ -1,0 +1,1277 @@
+{
+  "id": "V2_GENERATEUR_TC99M",
+  "cat": "instrumentation",
+  "catLabel": "Instrumentation",
+  "title": "Le générateur 99Mo/99mTc : cœur de la médecine nucléaire",
+  "difficulty": "avancé",
+  "tags": [
+    "générateur 99Mo/99mTc",
+    "technétium-99m",
+    "molybdène-99",
+    "pertechnétate",
+    "équilibre transitoire",
+    "radiopharmacie",
+    "contrôle qualité éluat",
+    "percée du molybdène",
+    "trousses froides",
+    "approvisionnement isotopes",
+    "chromatographie sur alumine",
+    "ICRP 128"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Mo99-Tc99m Generator — StatPearls, NCBI Bookshelf (NIH)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/"
+    },
+    {
+      "title": "[2] Verification on Molybdenum-99 (99Mo) Breakthrough from Non-Fission 99Mo/99mTc Generator to Produce Technetium-99m (99mTc) Medical Radionuclide — IOP Conf. Series J. Phys. (doi:10.1088/1742-6596/2866/1/012056)",
+      "url": "https://iopscience.iop.org/article/10.1088/1742-6596/2866/1/012056"
+    },
+    {
+      "title": "[3] SNMMI procedure standard/EANM practice guideline on pediatric [99mTc]Tc-DMSA renal cortical scintigraphy: an update — Clinical and Translational Imaging (2022)",
+      "url": "https://link.springer.com/article/10.1007/s40336-022-00484-x"
+    },
+    {
+      "title": "[4] Effective dose to adult patients from 338 radiopharmaceuticals estimated using ICRP biokinetic data, ICRP/ICRU computational reference phantoms and ICRP 2007 tissue weighting factors — PMC4545621",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4545621/"
+    },
+    {
+      "title": "[5] Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy — Toxics (MDPI) 2023, 11(10):814",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814"
+    },
+    {
+      "title": "[6] Quality control of 99Mo/99mTc generator eluate (Mo breakthrough, Al limits) — Loyola University LUMEN nuclear medicine module",
+      "url": "https://www.lumen.luc.edu/lumen/meded/radio/nuc_med/radpharm/sect-f1d.htm"
+    },
+    {
+      "title": "[7] Technetium Radiopharmaceutical Chemistry (stannous chloride reduction, cold kits, radiochemical purity) — University of New Mexico Pharmacy CE, Vol.12 Lesson 3",
+      "url": "https://pharmacyce.unm.edu/nuclear_program/freelessonfiles/vol12lesson3.pdf"
+    },
+    {
+      "title": "[8] Appendix I — Paediatric Dosage of Radiopharmaceuticals: EANM Paediatric Dosage Card — IAEA Human Health Campus",
+      "url": "https://humanhealth.iaea.org/hhw/nuclearmedicine/paediatricsandnephrourology/iaea_publications/atlas/appendix_i.pdf"
+    },
+    {
+      "title": "[9] Technetium-99m generator — Wikipedia (history Tucker and Greene 1958, Mo-99 fission, alumina column)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m_generator"
+    },
+    {
+      "title": "[10] Molybdenum-99/Technetium-99m Supply Reliability (in Medical Isotope Production without Highly Enriched Uranium) — National Academies / NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215151/"
+    },
+    {
+      "title": "[11] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — Annals ICRP 44(2S) (Mattsson et al., 2015), SAGE",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[12] Innovative Target for Production of Technetium-99m by Biomedical Cyclotron — Molecules (MDPI), PMC6337538",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6337538/"
+    },
+    {
+      "title": "[13] Sodium Pertechnetate Tc 99m — Drugs and Lactation Database (LactMed), NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501578/"
+    },
+    {
+      "title": "[14] Paediatric radiopharmaceutical administration: harmonization of the 2007 EANM paediatric dosage card and the 2010 North American consensus guidelines — SNMMI",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/EANM%20Pediatric%20Harmonization%20Guideline.pdf"
+    },
+    {
+      "title": "[15] ICRP Task Group 36 — Radiopharmaceutical dosimetry (update of Publication 128; biokinetic models) — ICRP public consultation draft",
+      "url": "https://www.icrp.org/docs/Report%20TG36%20-%20Radiopharmaceuticals%20-%20for%20public%20consultation%20final.pdf"
+    },
+    {
+      "title": "[16] Technetium-99m — Wikipedia (decay scheme, 140.5 keV, ~89% gamma abundance, branching)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m"
+    },
+    {
+      "title": "[17] IAEA Human Health Campus — 99Mo→99mTc radionuclide principles (alumina, pertechnetate, decay equilibrium)",
+      "url": "https://humanhealth.iaea.org/HHW/Radiopharmacy/VirRad/Eluting_the_Generator/Generator_Module/99Mo_-_99mTc_radionuclide_principles/index.html"
+    },
+    {
+      "title": "[18] New strategies for a sustainable 99mTc supply to meet increasing medical demands — Frontiers in Chemistry (2022)",
+      "url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2022.926258/full"
+    },
+    {
+      "title": "[19] Radioisotopes in Medicine — World Nuclear Association (~80% of NM, reactors, HEU→LEU 2023)",
+      "url": "https://world-nuclear.org/information-library/non-power-nuclear-applications/radioisotopes-research/radioisotopes-in-medicine"
+    },
+    {
+      "title": "[20] Technetium-99m — StatPearls, NCBI Bookshelf (NBK559013)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK559013/"
+    },
+    {
+      "title": "[21] Pertechnetic Acid Tc 99m — ScienceDirect Topics (overview, organ doses, Meckel scintigraphy)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/pertechnetic-acid-tc-99m"
+    },
+    {
+      "title": "[22] Quality assurance of Mo-99/Tc-99m radionuclide generators — Acta Scientiae Naturalis (Uzunov & Yordanova, 2018), ResearchGate",
+      "url": "https://www.researchgate.net/publication/323890513_Quality_assurance_of_Mo-99Tc-99m_radionuclide_generators"
+    },
+    {
+      "title": "[23] Comparison of standard and modified 99Mo/99mTc radionuclide generators — J Radioanal Nucl Chem 334:7255-7263 (2025)",
+      "url": "https://link.springer.com/article/10.1007/s10967-025-10423-5"
+    },
+    {
+      "title": "[24] Quality control on radiochemical purity in Technetium-99m radiopharmaceuticals labelling: three years of experience on 2280 procedures — Acta Biomed 88(1):49-56, PMC6166199",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166199/"
+    },
+    {
+      "title": "[25] Overview of radiochemical purity control for 99mTc radiopharmaceuticals commonly used in nuclear medicine — Eur Phys J Plus (2025)",
+      "url": "https://link.springer.com/article/10.1140/epjp/s13360-025-06889-7"
+    },
+    {
+      "title": "[26] Technetium (Tc-99m) labeled Radiopharmaceuticals (stannous reduction, oxidation states) — Broad Learnings",
+      "url": "https://www.broadlearnings.com/lessons/technetium-tc-99m-labeled-radiopharmaceuticals/"
+    },
+    {
+      "title": "[27] Technetium-99m Data Sheet — EHS University of Michigan (shielding, exposure rates)",
+      "url": "https://ehs.umich.edu/wp-content/uploads/2016/04/Technetium-99m.pdf"
+    },
+    {
+      "title": "[28] EANM practice guideline/SNMMI procedure standard for RAIU and thyroid scintigraphy (2019)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2019/EANM%20SNMMI%20Radio%20Iodine%20Uptake%20(RAIU)%20and%20Scintigraphy.pdf"
+    },
+    {
+      "title": "[29] SNMMI and EANM Practice Guideline for Meckel Diverticulum Scintigraphy 2.0 — J Nucl Med Technol 42(3):163-169",
+      "url": "https://tech.snmjournals.org/content/42/3/163"
+    },
+    {
+      "title": "[30] The EANM practice guidelines for bone scintigraphy — Eur J Nucl Med Mol Imaging 43(9):1723-1738 (2016)",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3415-4"
+    },
+    {
+      "title": "[31] ARSAC Notes for Guidance on the clinical administration of radiopharmaceuticals and use of sealed radioactive sources (updated Feb 2025) — GOV.UK",
+      "url": "https://www.gov.uk/government/publications/arsac-notes-for-guidance"
+    },
+    {
+      "title": "[32] Global Production of Molybdenum-99 and Future Prospects (in Molybdenum-99 for Medical Imaging) — NCBI Bookshelf (NBK396165)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK396165/"
+    },
+    {
+      "title": "[33] The Shortage of Technetium-99m and Possible Solutions — Annual Review of Nuclear and Particle Science 70:77 (2020)",
+      "url": "https://www.annualreviews.org/doi/10.1146/annurev-nucl-032020-021829"
+    },
+    {
+      "title": "[34] Celebrating the 60th Anniversary of Technetium-99m — BNL Newsroom",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=213162"
+    },
+    {
+      "title": "[35] Molybdenum-99 production pathways and the sorbents for 99Mo/99mTc generator systems using (n,γ) 99Mo: a review — Discover Applied Sciences / SN Applied Sciences 2:1782 (2020)",
+      "url": "https://link.springer.com/article/10.1007/s42452-020-03524-1"
+    },
+    {
+      "title": "[36] Diagnostic accuracy of [99mTc]pertechnetate scintigraphy in pediatric patients with suspected Meckel's diverticulum: a 12-year, monocentric, retrospective experience — Frontiers in Medicine (2025)",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1585313/full"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "atom",
+        "label": "Parent → fils",
+        "value": "99Mo (β⁻) → 99mTc (TI) → 99Tc"
+      },
+      {
+        "icon": "clock",
+        "label": "Période 99Mo",
+        "value": "66 h (≈ 2,75 j)"
+      },
+      {
+        "icon": "clock",
+        "label": "Période 99mTc",
+        "value": "6,0 h"
+      },
+      {
+        "icon": "zap",
+        "label": "Émission utile",
+        "value": "γ 140,5 keV · abondance ≈ 89 %"
+      },
+      {
+        "icon": "activity",
+        "label": "Type d'équilibre",
+        "value": "Transitoire (rapport T½ ≈ 11)"
+      },
+      {
+        "icon": "target",
+        "label": "Embranchement vers 99mTc",
+        "value": "≈ 87,5 %"
+      },
+      {
+        "icon": "flask",
+        "label": "Colonne",
+        "value": "5–10 g alumine Al₂O₃ acido-lavée"
+      },
+      {
+        "icon": "droplets",
+        "label": "Éluant · volume",
+        "value": "NaCl 0,9 % · éluat 2–3 mL"
+      },
+      {
+        "icon": "microscope",
+        "label": "Espèce éluée",
+        "value": "Na[99mTcO₄] · Tc(+VII)"
+      },
+      {
+        "icon": "clock",
+        "label": "Pic 99mTc post-élution",
+        "value": "≈ 23–24 h (50 % à 4–5 h)"
+      },
+      {
+        "icon": "shield",
+        "label": "CQ percée 99Mo",
+        "value": "≤ 0,15 kBq/MBq (USP) · ≤ 0,1 % (Ph. Eur.)"
+      },
+      {
+        "icon": "alert",
+        "label": "CQ aluminium",
+        "value": "< 10 µg/mL (fission)"
+      },
+      {
+        "icon": "list",
+        "label": "CQ pureté radiochimique",
+        "value": "≥ 95 % TcO₄⁻ (ITLC)"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose pertechnétate (adulte)",
+        "value": "≈ 0,013 mSv/MBq (ICRP 128)"
+      },
+      {
+        "icon": "stetho",
+        "label": "Place du 99mTc",
+        "value": "≈ 80 % des actes de MN"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "99mTc-pertechnétate"
+      },
+      {
+        "type": "traceur",
+        "label": "99mTc-MDP/HDP (os)"
+      },
+      {
+        "type": "traceur",
+        "label": "99mTc-MAG3 / DTPA (rein)"
+      },
+      {
+        "type": "traceur",
+        "label": "99mTc-sestamibi (MIBI)"
+      },
+      {
+        "type": "traceur",
+        "label": "99mTc-HMPAO / ECD (cerveau)"
+      },
+      {
+        "type": "traceur",
+        "label": "99mTc-MAA (poumon)"
+      },
+      {
+        "type": "traceur",
+        "label": "99mTc-DMSA (cortex rénal)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie thyroïdienne"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie du diverticule de Meckel"
+      },
+      {
+        "type": "examen",
+        "label": "Renogramme (MAG3/DTPA)"
+      },
+      {
+        "type": "examen",
+        "label": "Perfusion myocardique SPECT"
+      },
+      {
+        "type": "theranostique",
+        "label": "Paire diagnostique/thérapeutique en MN"
+      },
+      {
+        "type": "score",
+        "label": "Niveaux de référence diagnostiques (NRD)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel type d'équilibre radioactif s'établit entre le 99Mo et le 99mTc dans le générateur ?",
+        "options": [
+          "Équilibre séculaire",
+          "Équilibre transitoire",
+          "Aucun équilibre (no equilibrium)",
+          "Équilibre permanent strict"
+        ],
+        "answer": 1,
+        "explanation": "La demi-vie du parent (66 h) n'est que ≈ 11× celle du fils (6 h) ; un équilibre séculaire exigerait un rapport ≈ 100×. Le couple 99Mo/99mTc est l'exemple-type de l'équilibre TRANSITOIRE [1][9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est l'énergie du photon gamma utile émis par le 99mTc ?",
+        "options": [
+          "80 keV",
+          "140 keV",
+          "364 keV",
+          "511 keV"
+        ],
+        "answer": 1,
+        "explanation": "Le 99mTc émet un γ de 140,5 keV (abondance ≈ 89 %), quasi idéal pour les gamma-caméras à cristal NaI(Tl) [1][16].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est approximativement la demi-vie physique du 99Mo (parent) ?",
+        "options": [
+          "6 heures",
+          "24 heures",
+          "66 heures",
+          "8 jours"
+        ],
+        "answer": 2,
+        "explanation": "Le 99Mo a une demi-vie de ≈ 66 h (≈ 2,75 j), ce qui conditionne le remplacement hebdomadaire typique du générateur [1][9].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Sur quel support le 99Mo est-il adsorbé dans le générateur ?",
+        "options": [
+          "Résine échangeuse d'ions polystyrène",
+          "Colonne d'alumine (Al₂O₃) acido-lavée",
+          "Charbon actif",
+          "Gel de silice"
+        ],
+        "answer": 1,
+        "explanation": "Le 99Mo (molybdate MoO₄²⁻) est fortement retenu sur 5 à 10 g d'alumine acido-lavée ; le pertechnétate, faiblement retenu, est entraîné par l'éluant [1][17].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Sous quelle forme chimique le technétium est-il élué de la colonne ?",
+        "options": [
+          "Technétium métallique Tc⁰",
+          "Pertechnétate 99mTcO₄⁻, Tc(+VII)",
+          "Dioxyde de technétium TcO₂",
+          "Chlorure de technétium"
+        ],
+        "answer": 1,
+        "explanation": "Le 99mTc est élué sous forme de pertechnétate de sodium Na[99mTcO₄], au degré d'oxydation +VII, chimiquement inerte avant réduction [1][7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel agent permet d'éluer le générateur ?",
+        "options": [
+          "Eau distillée",
+          "Sérum physiologique NaCl 0,9 % stérile",
+          "Éthanol",
+          "Solution tampon phosphate"
+        ],
+        "answer": 1,
+        "explanation": "L'éluant est du NaCl 0,9 % stérile et apyrogène ; le volume d'éluat est de 2 à 3 mL [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Combien de temps après une élution l'activité de 99mTc atteint-elle son maximum ?",
+        "options": [
+          "≈ 4 heures",
+          "≈ 12 heures",
+          "≈ 23–24 heures",
+          "≈ 48 heures"
+        ],
+        "answer": 2,
+        "explanation": "Le maximum de 99mTc est atteint ≈ 23–24 h après l'élution précédente ; environ 50 % du maximum est régénéré dès 4–5 h, ce qui autorise des élutions d'urgence [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle proportion des désintégrations du 99Mo passe par l'état métastable 99mTc ?",
+        "options": [
+          "≈ 50 %",
+          "≈ 75 %",
+          "≈ 87,5 %",
+          "100 %"
+        ],
+        "answer": 2,
+        "explanation": "Environ 87,5 % des 99Mo passent par le 99mTc ; ≈ 12,5 % décroissent directement vers le 99Tc fondamental. L'activité de 99mTc à l'équilibre n'égale donc pas exactement celle du 99Mo [1][20].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la limite réglementaire USP de percée du 99Mo (Mo breakthrough) dans l'éluat ?",
+        "options": [
+          "≤ 0,015 kBq/MBq",
+          "≤ 0,15 kBq de 99Mo par MBq de 99mTc",
+          "≤ 1,5 kBq/MBq",
+          "≤ 15 kBq/MBq"
+        ],
+        "answer": 1,
+        "explanation": "La limite USP est de 0,15 kBq de 99Mo par MBq de 99mTc à l'administration (équivalent « 0,15 µCi/mCi ») ; la Ph. Eur. impose ≤ 0,1 % en activité. À déterminer à chaque élution [1][6].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la limite d'aluminium (Al³⁺) dans l'éluat d'un générateur chargé en 99Mo de fission (USP) ?",
+        "options": [
+          "< 1 µg/mL",
+          "< 10 µg/mL",
+          "< 100 µg/mL",
+          "< 200 µg/mL"
+        ],
+        "answer": 1,
+        "explanation": "La limite USP est < 10 µg Al/mL pour le 99Mo de fission (< 20 µg/mL pour l'activation neutronique) ; test colorimétrique à l'acide aurintricarboxylique [1][6].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel pourcentage minimal de pureté radiochimique (forme TcO₄⁻) est exigé pour l'éluat ?",
+        "options": [
+          "≥ 50 %",
+          "≥ 75 %",
+          "≥ 90 %",
+          "≥ 95 %"
+        ],
+        "answer": 3,
+        "explanation": "La pureté radiochimique doit être ≥ 95 % sous forme pertechnétate (Tc au degré +VII), vérifiée par chromatographie sur couche mince instantanée (ITLC) [1][7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel réducteur est utilisé dans les trousses froides pour marquer les molécules au 99mTc ?",
+        "options": [
+          "Borohydrure de sodium uniquement",
+          "Chlorure stanneux (SnCl₂)",
+          "Peroxyde d'hydrogène",
+          "Acide ascorbique seul"
+        ],
+        "answer": 1,
+        "explanation": "Le pertechnétate Tc(+VII) est inerte ; le chlorure stanneux (SnCl₂, ≈ 0,5 mg/trousse) réduit le Tc à un état inférieur pour permettre la chélation par le ligand [7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Par quelle voie principale le 99Mo est-il produit en amont du générateur ?",
+        "options": [
+          "Activation neutronique 98Mo(n,γ)99Mo",
+          "Fission de l'²³⁵U en réacteur",
+          "Désintégration naturelle de l'uranium",
+          "Spallation par protons sur cible de plomb"
+        ],
+        "answer": 1,
+        "explanation": "La voie principale est la fission de l'²³⁵U (99Mo produit de fission, rendement ≈ 6,1 %), donnant une haute activité spécifique ; l'activation 98Mo(n,γ)99Mo est une alternative à faible activité spécifique [9][35].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans environ quelle proportion des procédures de médecine nucléaire le 99mTc est-il employé ?",
+        "options": [
+          "≈ 20 %",
+          "≈ 50 %",
+          "≈ 80 %",
+          "100 %"
+        ],
+        "answer": 2,
+        "explanation": "Le 99mTc est utilisé dans ≈ 80 % de l'ensemble des actes de médecine nucléaire (≈ 85 % des actes diagnostiques), soit des dizaines de millions d'examens par an [18][19].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la dose efficace adulte de référence du pertechnétate 99mTcO₄⁻ (ICRP 128) ?",
+        "options": [
+          "≈ 0,0013 mSv/MBq",
+          "≈ 0,013 mSv/MBq",
+          "≈ 0,13 mSv/MBq",
+          "≈ 1,3 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "La dose efficace du pertechnétate est ≈ 0,013 mSv/MBq chez l'adulte selon ICRP 128 (recoupée par 296 MBq → ≈ 3,8 mSv pour une scintigraphie de Meckel) [11][21].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "À quoi servent les photons gamma de 740 et 778 keV du 99Mo lors du contrôle qualité ?",
+        "options": [
+          "À l'imagerie diagnostique du patient",
+          "À détecter la percée du 99Mo (test au pot de plomb)",
+          "À calibrer la dose thyroïdienne",
+          "À mesurer le pH de l'éluat"
+        ],
+        "answer": 1,
+        "explanation": "Le 99mTc (140 keV) est arrêté par un château de plomb qui laisse passer les γ durs de 740/778 keV du 99Mo, permettant de quantifier la percée du molybdène à chaque élution [1][2].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle correction majeure apporter au qualificatif d'équilibre souvent attribué au couple 99Mo/99mTc ?",
+        "options": [
+          "Il s'agit d'un équilibre séculaire",
+          "Le terme « séculaire » est erroné : c'est un équilibre transitoire",
+          "Il n'y a jamais d'équilibre",
+          "C'est un équilibre chimique, pas radioactif"
+        ],
+        "answer": 1,
+        "explanation": "Le rapport des demi-vies (≈ 11) impose un équilibre transitoire ; le terme « séculaire » (rapport ≈ 100×) est incorrect. À l'équilibre, le système décroît avec la demi-vie effective du 99Mo (66 h) [1][17].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Filiation : 99Mo (T½ 66 h, β⁻) → 99mTc (T½ 6,0 h, TI, γ 140,5 keV ≈ 89 %) → 99Tc quasi stable (2,1×10⁵ ans) [1][9][16].",
+        "Couple en ÉQUILIBRE TRANSITOIRE (rapport des T½ ≈ 11), et non séculaire ; embranchement ≈ 87,5 % vers le 99mTc [1][20].",
+        "Principe : chromatographie sur colonne d'alumine (5–10 g) ; 99Mo (MoO₄²⁻) retenu, 99mTc (TcO₄⁻) élué par NaCl 0,9 % (éluat 2–3 mL) — « traire la vache à technétium » [1][17].",
+        "Pic de 99mTc ≈ 23–24 h après l'élution précédente ; ≈ 50 % du maximum dès 4–5 h (élution d'urgence possible) [1].",
+        "Le 99mTc équipe ≈ 80 % de tous les actes de médecine nucléaire grâce à son énergie idéale, sa courte période et sa chimie versatile (trousses froides) [18][19].",
+        "Amont = 99Mo de fission de l'²³⁵U (rendement ≈ 6,1 %) ; transition mondiale vers cibles LEU et voies sans réacteur (cyclotron 100Mo(p,2n)99mTc) [9][35][12].",
+        "Réduction du Tc(+VII) inerte par SnCl₂ dans les trousses froides lyophilisées (ligand + antioxydant) pour marquer MDP, MAG3, MIBI, HMPAO, MAA, etc. [7][11].",
+        "Dose efficace pertechnétate ≈ 0,013 mSv/MBq (ICRP 128) ; activités pédiatriques selon la carte EANM, principe ALARA [11][8]."
+      ],
+      "protocol": [
+        "Élution quotidienne au NaCl 0,9 % stérile ; recueil de 2–3 mL de Na[99mTcO₄] derrière blindage plomb/tungstène [1].",
+        "CQ obligatoire à CHAQUE élution : percée 99Mo ≤ 0,15 kBq/MBq (USP) / ≤ 0,1 % (Ph. Eur.) au pot de plomb (γ 740/778 keV) [1][2][6].",
+        "CQ chimique : aluminium < 10 µg/mL (fission) au test à l'acide aurintricarboxylique ; pH 4,5–7,5 [1][6].",
+        "CQ radiochimique : pureté ≥ 95 % en TcO₄⁻ par ITLC ; éluat valide ≈ 12 h [1][7].",
+        "Marquage : ajout de l'éluat à la trousse froide (SnCl₂ + ligand), incubation, contrôle ITLC ≥ 95 % avant administration [7].",
+        "Préparation patient : hydratation et miction (os/rein), à jeun pour Meckel/HIDA, blocage thyroïdien au perchlorate si pertechnétate non thyroïdien [11][13]."
+      ],
+      "scores": [
+        "Limites CQ percée 99Mo : ≤ 0,15 kBq/MBq (USP) ; ≤ 0,1 % en activité (Ph. Eur., plus stricte) [1][6][23].",
+        "Limites CQ aluminium : < 10 µg/mL (99Mo de fission) ; < 20 µg/mL (activation neutronique) [1][6].",
+        "Seuil de pureté radiochimique : ≥ 95 % sous forme TcO₄⁻ (ITLC), critère Ph. Eur. [1][25].",
+        "Carte de doses EANM (pédiatrie) : activité = activité de base × facteur poids, avec activité minimale (ex. MDP base 35 MBq, min 40 MBq) [8].",
+        "Gestion des déchets : décroissance sur ≈ 10 demi-vies avant élimination du générateur usagé (≈ 660 h pour le 99Mo) [1]."
+      ],
+      "pitfalls": [
+        "Qualifier le couple d'« équilibre séculaire » : erreur classique — c'est un équilibre transitoire (rapport T½ ≈ 11) [1][17].",
+        "Réduire le γ utile à « 140 keV » sans préciser 140,5 keV / abondance ≈ 89 % ni la conversion interne (≈ 11 %) [16].",
+        "Omettre le CQ de percée 99Mo à chaque élution : risque d'irradiation par les γ durs et de contamination de l'éluat [1][2].",
+        "Excès d'aluminium → précipitation colloïdale et biodistribution anormale du radiopharmaceutique [1].",
+        "Pertechnétate libre (CQ insuffisant ou SnCl₂ oxydé) : fixation thyroïde, estomac, glandes salivaires, plexus choroïdes → artefact ; blocage par perchlorate [7][13].",
+        "Confondre le ligand et l'isotope : sans réduction préalable du Tc(+VII) par SnCl₂, aucun marquage n'est possible [7]."
+      ]
+    },
+    "lead": "Le générateur de technétium est le petit dispositif qui permet à un service de médecine nucléaire de fabriquer chaque matin, sur place, son propre traceur d'imagerie. À l'intérieur, un élément radioactif à vie plus longue se transforme en permanence en un second élément, plus fugace, que l'on récupère en faisant simplement couler du sérum physiologique à travers une colonne. Ce procédé d'une élégance remarquable explique pourquoi, partout dans le monde, la grande majorité des examens scintigraphiques repose sur lui. Sans cette source quotidienne, autonome et bon marché, l'immense répertoire des examens de routine — os, reins, cœur, poumons, thyroïde — ne serait tout simplement pas réalisable. Son approvisionnement, sa fiabilité et son contrôle de qualité conditionnent donc le fonctionnement même de la discipline.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert ce produit dans votre examen",
+          "text": "Pour réaliser une scintigraphie, l'équipe de médecine nucléaire a besoin d'un traceur, c'est-à-dire d'un produit très légèrement radioactif qui se dirige vers l'organe à examiner (os, reins, cœur, thyroïde, poumons, cerveau...) et le rend visible par une caméra spéciale. Ce traceur ne peut pas être stocké à l'avance car il perd rapidement sa propriété au fil des heures. Il est donc préparé chaque jour, sur place, dans le service, à partir d'un petit appareil de laboratoire surnommé la « vache à technétium » : on en recueille tous les matins une nouvelle quantité fraîche, exactement comme on irait chercher du lait. Ce système est utilisé de façon quotidienne dans la grande majorité des examens de médecine nucléaire à travers le monde.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un produit fabriqué sur mesure pour vous",
+              "text": "Parce qu'il ne se conserve pas, votre traceur est préparé le jour même de votre rendez-vous. C'est pourquoi il est important de venir à l'heure et de prévenir le service en cas d'empêchement : la dose préparée vous est destinée."
+            }
+          ]
+        },
+        {
+          "title": "Comment se prépare et se déroule l'examen",
+          "text": "Le produit est mis au point dans une pharmacie spécialisée du service, par des professionnels qui vérifient sa qualité avant qu'il ne vous soit administré, le plus souvent par une simple injection dans une veine du bras. Selon l'organe étudié, on vous demandera parfois d'être à jeun, de boire de l'eau, ou d'aller aux toilettes avant les images. Après l'injection, il y a souvent un temps d'attente, qui peut aller de quelques minutes à quelques heures, le temps que le traceur se fixe bien sur l'organe. Vous passez ensuite sous la caméra, allongé, sans douleur. L'équipe vous expliquera chaque étape et le déroulé propre à votre examen.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Quelques gestes simples qui aident",
+              "text": "Bien s'hydrater et aller aux toilettes quand on vous le demande améliore la qualité des images et aide votre corps à éliminer plus vite le produit. N'hésitez pas à poser toutes vos questions à l'équipe avant de commencer."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce sans danger ?",
+          "text": "La quantité de produit injectée est minime et le traceur s'élimine naturellement de votre corps en quelques heures, à la fois par sa disparition spontanée et par les urines. Les réactions désagréables sont très rares. Par précaution, signalez toujours si vous êtes enceinte, si vous pensez l'être, ou si vous allaitez : l'équipe adaptera alors l'examen ou vous donnera des conseils simples, comme suspendre l'allaitement pendant une courte période. Chez l'enfant, la dose est soigneusement calculée en fonction du poids pour rester la plus faible possible.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "À signaler avant l'examen",
+              "text": "Prévenez le service si vous êtes enceinte, si une grossesse est possible, ou si vous allaitez. Mentionnez aussi vos allergies et vos traitements en cours. Ces informations permettent de réaliser l'examen en toute sécurité."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : un seul traceur, de multiples indications",
+          "text": "Le technétium-99m est le radionucléide de loin le plus utilisé en imagerie scintigraphique : il intervient dans environ 80 % des actes de médecine nucléaire. Sa polyvalence chimique permet de marquer de nombreuses molécules, si bien qu'un même service peut explorer, avec ce seul élément, l'os (recherche de métastases, fractures occultes, ostéomyélite, maladie de Paget), le rein (renogramme, obstruction, cicatrices corticales, fonction relative), le cœur (perfusion myocardique), le poumon (suspicion d'embolie pulmonaire), le cerveau (perfusion, épilepsie, aide au diagnostic de mort encéphalique), la thyroïde et les parathyroïdes, le foie/la rate, les voies biliaires, ou encore le ganglion sentinelle en oncologie. En pratique, dès qu'une question diagnostique porte sur la fonction d'un organe ou sur une cartographie corps entier, la scintigraphie au technétium mérite d'être envisagée.",
+          "list": [
+            "Os : métastases, fractures occultes, ostéomyélite, maladie de Paget",
+            "Néphro-urologie : renogramme, obstruction, cicatrices corticales, fonction rénale relative",
+            "Cardiologie : perfusion myocardique (recherche d'ischémie)",
+            "Pneumologie : scintigraphie de perfusion dans la suspicion d'embolie pulmonaire",
+            "Neurologie : perfusion cérébrale, épilepsie, aide au diagnostic de mort encéphalique",
+            "Endocrinologie/digestif : thyroïde, parathyroïdes, voies biliaires, diverticule de Meckel",
+            "Oncologie : repérage du ganglion sentinelle"
+          ]
+        },
+        {
+          "title": "La démarche en pratique : adresser et préparer",
+          "text": "L'examen se demande auprès d'un service de médecine nucléaire, qui prépare le traceur le jour même : il n'est donc pas réalisable « en urgence improvisée » sans coordination, car le produit est fabriqué quotidiennement et a une durée d'utilisation limitée. Pour optimiser le rendez-vous, précisez la question clinique et le contexte (antécédents, traitements, fonction rénale, statut thyroïdien). Certains examens nécessitent une préparation : être à jeun pour une scintigraphie de Meckel ou hépatobiliaire, une bonne hydratation et une vidange vésicale pour les explorations osseuses et rénales, parfois l'arrêt temporaire de médicaments interférents. Pensez systématiquement à mentionner une grossesse possible (contre-indication relative, à mettre en balance bénéfice/risque) ou un allaitement, qui impose une interruption courte. Chez l'enfant, l'activité administrée est ajustée au poids selon des recommandations dédiées, dans une logique de dose la plus faible possible.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser en médecine nucléaire",
+              "text": "La scintigraphie au technétium-99m apporte une information fonctionnelle et corps entier que l'imagerie anatomique (radiographie, scanner, IRM) ne fournit pas toujours : elle révèle une activité métabolique, une perfusion ou une fonction d'organe. Polyvalente, peu irradiante et largement disponible, elle permet par exemple de cartographier des métastases osseuses, de quantifier la fonction rénale séparée de chaque rein, de dépister une ischémie myocardique ou d'orienter le diagnostic d'embolie pulmonaire. Adresser le patient avec une question clinique précise permet au nucléariste de choisir le traceur le plus adapté et d'optimiser l'examen."
+            }
+          ]
+        },
+        {
+          "title": "Ce qu'apporte l'examen et ses limites",
+          "text": "L'atout majeur du technétium tient à sa polyvalence : un même radionucléide couvre os, rein, cœur, cerveau, poumon, thyroïde, foie/rate et infection/inflammation, ce qui en fait un outil diagnostique large et facilement accessible. L'irradiation reste modérée et l'examen est généralement bien toléré. Les résultats doivent toutefois être interprétés dans leur contexte clinique : en cas d'insuffisance rénale, par exemple, l'interprétation de certaines explorations rénales doit être adaptée. Le compte rendu du nucléariste précise les conditions de réalisation et les éléments d'interprétation ; un dialogue entre le clinicien demandeur et le médecin nucléaire reste la meilleure garantie d'un examen utile et bien orienté."
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité du générateur 99Mo/99mTc",
+          "text": "**Comment lire la carte d'identité.** Le générateur 99Mo/99mTc est un **système chromatographique scellé** qui contient le radionucléide parent **molybdène-99 (99Mo)** fixé sur une colonne, et dont on extrait quotidiennement le radionucléide fils **technétium-99m (99mTc)** sous forme de **pertechnétate de sodium Na[99mTcO4]**. C'est l'outil qui rend le 99mTc disponible « à la demande » dans chaque service, malgré sa demi-vie trop courte pour tout transport ou stockage prolongé. On le surnomme la **« vache à technétium »** (moly cow) que l'on « trait » (élue) chaque jour.[1][9]\n\nInventé au **Brookhaven National Laboratory (BNL) en 1958** par **Walter Tucker et Margaret Greene** — séparation chromatographique dérivée d'un générateur 132Te/132I — il fut adapté à l'usage médical à partir de 1960, lorsque Powell Richards proposa d'exploiter le 99mTc (140 keV, 6 h).[9][34] Soixante ans plus tard, le 99mTc est employé dans environ **80 %** de l'ensemble des actes de médecine nucléaire et environ **85 %** des scintigraphies diagnostiques.[18][19]\n\n| Champ | Valeur |\n|---|---|\n| Nature | Générateur de radionucléide par chromatographie sur colonne (système scellé)[1][9] |\n| Parent (chargé) | **99Mo**, T1/2 = **66 h** (≈2,75 j), sous forme molybdate MoO4(2-)[1][9] |\n| Fils (élué) | **99mTc**, T1/2 = **6,0 h**, sous forme pertechnétate 99mTcO4-[1][16] |\n| Émission utile (99mTc) | photon γ **140,5 keV**, abondance ≈ **89 %**[16] |\n| Type d'équilibre | **transitoire** (rapport des demi-vies ≈ 11)[1][17] |\n| Colonne | **5 à 10 g** d'alumine (Al2O3) acido-lavée[1] |\n| Éluant | **NaCl 0,9 %** stérile apyrogène ; éluat **2 à 3 mL**[1] |\n| Pic de 99mTc post-élution | ≈ **23–24 h**[1] |\n| Durée de vie utile | ≈ **2 semaines** (remplacement hebdomadaire typique)[1][17] |\n| Origine du 99Mo | **fission de l'235U** en réacteur (rendement ≈ 6,1 %)[9][32] |\n| Part du 99mTc en MN | ≈ **80 %** des actes ; > **30 millions** de procédures/an[18][19] |\n\nLes contrôles qualité réglementaires de l'éluat (percée de 99Mo, aluminium, pureté radiochimique) et la dosimétrie des radiopharmaceutiques marqués sont détaillés dans les sections ultérieures ; cette carte ne retient que les constantes opérationnelles du dispositif.",
+          "stats": [
+            {
+              "value": "66 h",
+              "label": "Demi-vie du parent 99Mo"
+            },
+            {
+              "value": "6,0 h",
+              "label": "Demi-vie du fils 99mTc"
+            },
+            {
+              "value": "140,5 keV",
+              "label": "γ du 99mTc (caméra idéale)"
+            },
+            {
+              "value": "≈ 80 %",
+              "label": "Part du 99mTc en médecine nucléaire"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le générateur réalise une séparation **parent/fils par affinité chimique** : le 99Mo (molybdate, fortement retenu sur l'alumine) et le 99mTc (pertechnétate, faiblement retenu) sont deux espèces chimiques distinctes. C'est cette différence de rétention, et non une barrière physique, qui permet d'« extraire » le fils sans entraîner le parent — à condition que la colonne reste intègre (cf. percée de 99Mo, section CQ)."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Coupe d'un générateur 99Mo/99mTc : colonne d'alumine retenant le 99Mo (molybdate), élution du 99mTc (pertechnétate) par le NaCl 0,9 %, flacon sous vide et blindage de plomb.",
+            "caption": "Fig. 1 — Architecture du générateur : la colonne d'alumine retient le 99Mo et libère le 99mTc à chaque élution."
+          }
+        },
+        {
+          "title": "A2 - Pourquoi le 99mTc règne sur l'imagerie : le radionucléide idéal",
+          "text": "Le **99mTc** concentre quasiment toutes les propriétés recherchées pour un radionucléide de scintigraphie et de **TEMP (tomographie d'émission monophotonique)** — au point d'être le seul à dominer simultanément l'ostéologie, la néphro-urologie, la cardiologie, la neurologie, la pneumologie, l'endocrinologie et l'oncologie. Cette suprématie tient à quatre caractéristiques physiques et chimiques, et à un modèle logistique unique.[1][20]\n\n**1) Énergie γ optimale.** Le 99mTc émet un photon γ de **140,5 keV** avec une abondance d'environ **89 %**.[16] Cette énergie est un compromis idéal : assez élevée pour traverser les tissus avec une atténuation acceptable, assez basse pour être efficacement collimatée et détectée par le cristal **NaI(Tl)** des γ-caméras, et pour permettre un blindage léger.[1][20]\n\n**2) Demi-vie courte mais exploitable.** Avec une demi-vie de **6,0 h**, le 99mTc délivre une irradiation patient limitée tout en laissant le temps de marquer, d'injecter et d'imager.[1][16] Cette même brièveté interdit son stockage : d'où la nécessité d'une **production sur place** par le générateur.\n\n**3) Désintégration « propre ».** La transition est **isomérique** (99mTc → 99Tc) : pas d'émission particulaire primaire α ou β-. La dose absorbée non productive d'image est minimisée ; environ **11 %** des transitions se font entièrement par conversion interne (sans photon utile mais contribuant à la dose).[16] L'absence d'émission corpusculaire distingue radicalement le 99mTc des émetteurs β- utilisés en thérapie.\n\n**4) Chimie versatile.** Élué à l'état d'oxydation **+VII** (pertechnétate, inerte), le technétium peut être **réduit** (par le chlorure stanneux) vers des états inférieurs et coordonné à de très nombreux ligands.[7] Un seul radionucléide marque ainsi des phosphonates (os), des dérivés rénaux (MAG3, DTPA, DMSA), cérébraux (HMPAO, ECD), cardiaques (sestamibi, tétrofosmine), pulmonaires (MAA), des nanocolloïdes (ganglion sentinelle), ou s'utilise libre (thyroïde, diverticule de Meckel).[11]\n\n| Propriété | Valeur 99mTc | Conséquence clinique |\n|---|---|---|\n| Énergie γ | **140,5 keV** (≈89 %)[16] | Détection NaI(Tl) optimale, blindage léger |\n| Demi-vie | **6,0 h**[1] | Faible dose ; production locale obligatoire |\n| Émission particulaire | **aucune** (transition isomérique)[16] | Dose absorbée minimisée |\n| État d'élution | **Tc(+VII)**, TcO4-[7] | Marquage versatile après réduction |\n| Disponibilité | générateur quotidien[1] | Indépendance vis-à-vis des livraisons directes |\n\nÀ titre de repère épidémiologique, le 99mTc représente environ **80 %** des actes de médecine nucléaire et environ **85 %** des scintigraphies diagnostiques, soit **plus de 30 millions de procédures par an** dans le monde (≈110 000 actes/jour, dont > 40 000 aux États-Unis).[18][19] La World Nuclear Association cite par ailleurs **plus de 50 millions** d'actes de médecine nucléaire par an, toutes modalités confondues.[19]",
+          "stats": [
+            {
+              "value": "89 %",
+              "label": "Abondance du photon de 140,5 keV"
+            },
+            {
+              "value": "0 %",
+              "label": "Émission particulaire (transition isomérique)"
+            },
+            {
+              "value": "85 %",
+              "label": "Part des scintigraphies diagnostiques"
+            },
+            {
+              "value": "> 30 M/an",
+              "label": "Procédures 99mTc dans le monde"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Le 99mTc n'est pas un traceur, mais un atelier de marquage",
+              "text": "Aucune molécule n'est imagée « par le 99mTc » en soi : le radionucléide est un **marqueur universel** que la radiopharmacie greffe sur le vecteur adapté à chaque question clinique. La sémiologie d'une scintigraphie dépend donc du ligand (MDP, MAG3, sestamibi…), pas du technétium — ce dernier n'apporte que le signal γ. C'est cette dissociation vecteur/signal qui explique l'extraordinaire polyvalence du 99mTc."
+            },
+            {
+              "type": "warning",
+              "title": "Piège - 140 keV n'est pas l'énergie d'excitation",
+              "text": "L'état métastable est à **142,7 keV** ; le photon réellement émis et détecté est à **140,5 keV**, l'écart relaxant par conversion interne.[16] Citer « 140 keV » est correct en pratique, mais retenir 140,5 keV évite les confusions sur l'abondance (≈89 % du photon utile, et non « 98 % des transitions »)."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration du 99mTc : transition isomérique de l'état métastable vers le 99Tc fondamental avec émission du photon γ de 140,5 keV.",
+            "caption": "Fig. 2 — Transition isomérique du 99mTc : un photon γ de 140,5 keV, sans émission particulaire primaire."
+          }
+        },
+        {
+          "title": "A3 - Physique de la filiation : équilibre séculaire et transitoire",
+          "text": "Le générateur exploite une **filiation radioactive** parent → fils. Comprendre sa cinétique est indispensable pour planifier les élutions, interpréter le rendement et — point fréquemment mal enseigné — **qualifier correctement le type d'équilibre**.\n\n**La chaîne de désintégration.** Le 99Mo (β-, T1/2 = **66 h**) décroît en 99mTc dans environ **87,5 %** des cas ; les **12,5 %** restants vont directement à l'état fondamental 99Tc. Le 99mTc (transition isomérique, T1/2 = **6,0 h**) relaxe en **99Tc**, quasi stable (T1/2 ≈ **2,1 × 10⁵ ans**), lui-même β- vers le 99Ru stable.[1][9][16] L'embranchement de 87,5 % explique pourquoi l'activité du fils à l'équilibre **n'égale pas** celle du parent (Tc ≈ 0,875 × Mo en théorie).[1][16]\n\n**Équilibre séculaire vs transitoire — la distinction.** Lorsqu'un parent à vie longue alimente un fils à vie courte, l'activité du fils croît jusqu'à un régime où elle suit la décroissance du parent. Deux cas se distinguent selon le **rapport des demi-vies** :\n\n| Critère | Équilibre **séculaire** | Équilibre **transitoire** |\n|---|---|---|\n| Rapport T(parent)/T(fils) | très grand (≈ ≥ 100) | modéré (quelques unités à ~10–50) |\n| Activité du parent | quasi constante sur l'échelle du fils | décroît visiblement |\n| À l'équilibre | A(fils) ≈ A(parent) | A(fils) légèrement > A(parent), puis décroît avec T(parent) |\n| Exemple | 226Ra/222Rn | **99Mo/99mTc**[1][17] |\n\nPour le couple 99Mo (66 h) / 99mTc (6 h), le rapport vaut environ **11** : c'est un **équilibre TRANSITOIRE**, et non séculaire.[1][17] Un équilibre séculaire strict exigerait T(parent) ≫ T(fils) (rapport de l'ordre de 100), ce qui n'est pas le cas ici. **Cette nuance corrige une erreur répandue** (et le résumé initial de cet article) : le 99Mo/99mTc est l'exemple-type de l'équilibre transitoire. À l'équilibre, le système entier décroît avec la **demi-vie effective du parent (66 h)**.[17]\n\n**Cinétique post-élution — implications pratiques.** Après chaque élution, l'activité de 99mTc repart de zéro puis remonte vers un nouveau maximum :\n- récupération d'environ **50 %** du maximum en **4–5 h** (utile pour les élutions d'urgence) ;[1]\n- **maximum** de 99mTc atteint environ **23–24 h** après l'élution précédente ;[1]\n- l'équilibre est pratiquement atteint après ≈ 4 demi-vies du fils (≈ 24 h).[17]\n\nÀ l'équilibre, l'activité théorique de 99mTc serait légèrement supérieure à celle du 99Mo, mais l'embranchement de 87,5 % l'atténue : en pratique, l'activité de 99mTc éluable représente environ **0,9–0,95×** celle du 99Mo présent.[1][9]",
+          "steps": [
+            {
+              "title": "t = 0 (élution)",
+              "text": "La colonne est « vidée » de son 99mTc ; l'activité de pertechnétate éluable repart de zéro."
+            },
+            {
+              "title": "t ≈ 4–5 h",
+              "text": "Le 99mTc s'est régénéré jusqu'à ≈ 50 % du maximum — fenêtre des élutions d'appoint ou d'urgence.[1]"
+            },
+            {
+              "title": "t ≈ 23–24 h",
+              "text": "Pic d'activité de 99mTc : moment optimal de l'élution quotidienne du lendemain.[1]"
+            },
+            {
+              "title": "À l'équilibre",
+              "text": "Le système décroît globalement avec la demi-vie du 99Mo (66 h) ; le générateur perd ≈ moitié de son activité utile par ≈ 2,75 j.[17]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "≈ 11",
+              "label": "Rapport des demi-vies (66 h / 6 h)"
+            },
+            {
+              "value": "87,5 %",
+              "label": "Embranchement 99Mo → 99mTc"
+            },
+            {
+              "value": "23–24 h",
+              "label": "Délai du pic de 99mTc post-élution"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - « équilibre séculaire » est une erreur classique",
+              "text": "Le 99Mo/99mTc est régulièrement présenté à tort comme un équilibre séculaire. Le rapport des demi-vies (≈ 11, et non ≈ 100) en fait un **équilibre transitoire** : l'activité du parent décroît de façon perceptible sur l'échelle de temps du fils, et l'activité éluable diminue donc d'environ 50 % tous les 66 h.[1][17] Conséquence concrète : un générateur en fin de semaine fournit nettement moins de 99mTc qu'un générateur neuf."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - pourquoi le fils ne dépasse pas franchement le parent",
+              "text": "En équilibre transitoire pur, A(fils) devrait légèrement surpasser A(parent). Ici, l'**embranchement de 87,5 %** (12,5 % du 99Mo court-circuitent l'état métastable) ramène ce facteur sous l'unité : l'activité de 99mTc réellement disponible avoisine 0,9–0,95× celle du 99Mo.[1][9] C'est un déterminant direct du rendement d'élution attendu et de la planification d'activité."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Courbes d'activité comparant l'équilibre transitoire (99Mo/99mTc) et l'équilibre séculaire : montée du fils après élution, pic vers 24 h, puis décroissance suivant le parent.",
+            "caption": "Fig. 3 — Équilibre transitoire du 99Mo/99mTc : l'activité du fils culmine vers 24 h puis décroît avec celle du parent (66 h)."
+          }
+        },
+        {
+          "title": "B4 - Production du 99Mo : réacteurs, fission de l'uranium et voies alternatives",
+          "text": "Le générateur ne fabrique pas le **technétium-99m (99mTc)** : il l'extrait, jour après jour, d'un stock de parent **molybdène-99 (99Mo)** chargé à l'usine. Toute la chaîne d'approvisionnement de la médecine nucléaire — qui repose à **~80 %** sur le 99mTc et totalise **plus de 30 millions de procédures/an** dans le monde [1][18][19] — dépend donc de la production amont du 99Mo, un radionucléide qu'aucun stockage ne peut compenser (demi-vie **66 h**, soit ~2,75 j [1][9][19]).\n\n**▸ Voie principale : la fission de l'²³⁵U.** L'essentiel du 99Mo médical est un **produit de fission de l'uranium-235 (²³⁵U)** : des cibles d'uranium sont irradiées par un flux neutronique dans un **réacteur de recherche**, et le 99Mo est l'un des fragments de fission, avec un **rendement de fission de ~6,1 %** [9]. Cette voie fournit un 99Mo à **haute activité spécifique** (pas de ⁹⁸Mo entraîneur), seul compatible avec l'adsorption efficace sur la petite colonne d'alumine du générateur (cf. B5) [18][35].\n\n**▸ Voie alternative en réacteur : l'activation neutronique.** La réaction **⁹⁸Mo(n,γ)⁹⁹Mo** transmute du molybdène-98 stable en 99Mo. Simple, mais elle produit un 99Mo de **faible activité spécifique** (le produit est chimiquement identique à la cible), ce qui impose des **sorbants spéciaux** (titane, zircone, gel de molybdate) au lieu de l'alumine classique [9][35].\n\n**▸ Voies non-réacteur (sans uranium).** Sous la pression de la non-prolifération et des pénuries, des filières d'accélérateur ont émergé : la **photofission/photonucléaire ¹⁰⁰Mo(γ,n)⁹⁹Mo** (produit du 99Mo pour générateur), et surtout la production **directe au cyclotron par ¹⁰⁰Mo(p,2n)⁹⁹mTc** — qui court-circuite le générateur en synthétisant le 99mTc localement à partir de ¹⁰⁰Mo enrichi (≥99 %) bombardé par des protons (~10–22 MeV) [12][18][33]. S'y ajoutent des systèmes à cible en solution (SHINE, NorthStar RadioGenix) [18][33].\n\n| Voie de production | Réaction | Activité spécifique du 99Mo | Particularité |\n|---|---|---|---|\n| **Fission (référence)** | ²³⁵U(n,fission)→99Mo | Élevée (rdt ~6,1 %) [9] | Colonne d'alumine standard ; cibles LEU depuis 2023 [19] |\n| **Activation neutronique** | ⁹⁸Mo(n,γ)⁹⁹Mo | Faible | Sorbants spéciaux requis [35] |\n| **Photonucléaire** | ¹⁰⁰Mo(γ,n)⁹⁹Mo | Variable | Accélérateur d'électrons, sans uranium [18] |\n| **Cyclotron direct** | ¹⁰⁰Mo(p,2n)⁹⁹mTc | — (99mTc direct) | Production locale, sans générateur [12] |\n\n**▸ Le parc mondial et sa fragilité.** Le 99Mo de fission provient d'une poignée de réacteurs de recherche vieillissants : **HFR (Petten, Pays-Bas), BR-2 (Belgique), OPAL (ANSTO, Australie), SAFARI-1 (Afrique du Sud), Maria (Pologne)** [19][32]. Cette concentration explique les **crises d'approvisionnement** : en 2009–2010, les arrêts prolongés du **NRU (Chalk River, Canada)** et de l'**HFR**, qui fournissaient à eux deux ~2/3 de l'offre mondiale, ont provoqué une pénurie sévère de 99mTc, un rationnement des examens et des retards diagnostiques [10][33]. Ce traumatisme a accéléré la diversification des sources et les voies sans réacteur [18][33].",
+          "stats": [
+            {
+              "value": "~6,1 %",
+              "label": "Rendement de fission du 99Mo (²³⁵U) [9]"
+            },
+            {
+              "value": "66 h",
+              "label": "Demi-vie du 99Mo (parent) [1][19]"
+            },
+            {
+              "value": "~80 %",
+              "label": "Part des actes de MN reposant sur le 99mTc [1][19]"
+            },
+            {
+              "value": "2009–2010",
+              "label": "Crise mondiale d'approvisionnement en 99Mo [10][33]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - séculaire vs transitoire",
+              "text": "Le résumé d'origine évoquait un « équilibre séculaire » : c'est inexact. Le couple **99Mo (66 h) / 99mTc (6 h)** n'a qu'un rapport de demi-vies **~11×**. Un équilibre **séculaire** strict exigerait un parent ~100× plus long que le fils ; ici l'on est dans le régime d'**équilibre transitoire**, où le système décroît finalement avec la demi-vie effective du 99Mo (66 h). C'est le mécanisme détaillé en B6.[1][16][17]"
+            },
+            {
+              "type": "info",
+              "title": "Repère historique",
+              "text": "Le générateur 99Mo/99mTc a été inventé au **Brookhaven National Laboratory en 1958** (Walter Tucker et Margaret Greene), par dérivation d'un générateur ¹³²Te/¹³²I ; **Powell Richards** proposa en 1960 l'usage médical du 99mTc, dont les caractéristiques (140 keV, 6 h) se révéleront idéales.[9][34]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - transition HEU → LEU",
+              "text": "Pour des raisons de non-prolifération, les cibles d'uranium hautement enrichi (HEU) ont été abandonnées : **depuis mars 2023, tous les réacteurs producteurs de 99Mo utilisent des cibles d'uranium faiblement enrichi (LEU)**, au prix d'un surcoût de production de l'ordre de **+20 %**.[19]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration du couple 99Mo → 99mTc → 99Tc : émission bêta-moins du 99Mo (T1/2 66 h) vers l'état métastable 99mTc, branchement ~87,5 %, puis transition isomérique avec photon gamma de 140 keV vers le 99Tc quasi stable.",
+            "caption": "Fig. B4 — Filiation 99Mo → 99mTc → 99Tc : c'est le parent (issu de la fission) qui est chargé dans le générateur."
+          }
+        },
+        {
+          "title": "B5 - Anatomie du générateur : colonne, blindage et circuit d'élution",
+          "text": "Le générateur est un **système chromatographique scellé** dont le principe tient en une phrase : fixer solidement le parent et laisser partir le fils. Il exploite la différence d'affinité de deux espèces chimiques du molybdène et du technétium pour un support solide [1][17].\n\n**▸ La colonne et la séparation chromatographique.** Le cœur est une **colonne d'alumine (Al₂O₃) acido-lavée**, contenant **5 à 10 g** d'oxyde d'aluminium [1][17]. Le 99Mo y est chargé sous forme d'anion **molybdate MoO₄²⁻** (sel d'ammonium ou de sodium), **fortement adsorbé** sur l'alumine [1][9]. À mesure qu'il décroît, le 99Mo engendre le 99mTc sous forme d'anion **pertechnétate ⁹⁹mTcO₄⁻**, beaucoup **moins retenu** : c'est cette différence de rétention qui permet de l'« arracher » sélectivement à chaque élution sans entraîner le parent [1][17].\n\n| Espèce | Forme chimique | Comportement sur l'alumine |\n|---|---|---|\n| Parent **99Mo** | Molybdate **MoO₄²⁻** | Fortement adsorbé — reste sur la colonne [1] |\n| Fils **99mTc** | Pertechnétate **⁹⁹mTcO₄⁻** | Faiblement retenu — élué [1][17] |\n\n**▸ L'éluant.** Le solvant qui « lave » la colonne est du **sérum physiologique stérile et apyrogène (NaCl 0,9 %)** ; il entraîne le pertechnétate et fournit le produit final : le **pertechnétate de sodium Na⁺⁹⁹mTcO₄⁻**, prêt à marquer les trousses froides ou à être injecté tel quel [1][17]. Le **volume d'éluat** recueilli est typiquement de **2 à 3 mL** [1][17].\n\n**▸ Le blindage.** Bien que le 99mTc soit un émetteur de basse énergie (140 keV), le **99Mo retenu sur la colonne** émet des **photons gamma durs de 740 et 780 keV** [1][16]. Le générateur est donc enchâssé dans un **blindage de plomb ou de tungstène** dimensionné pour ces hautes énergies, et non pour le seul technétium [1].\n\n**▸ Systèmes humide vs sec.** Deux architectures coexistent [1] :\n- Le système **humide (« wet »)** comporte un **réservoir de NaCl 0,9 %** intégré ; l'élution se fait en connectant un flacon sous vide qui aspire le volume voulu d'éluant à travers la colonne.\n- Le système **sec (« dry »)**, le plus répandu en routine clinique, possède **deux ports** : on présente un flacon d'éluant calibré sur le port d'entrée et un flacon collecteur **sous vide** sur le port de sortie ; un volume fixe est aspiré à travers la colonne.\n\n**▸ Durée de vie.** Conditionné par la demi-vie de 66 h du 99Mo, un générateur a une **durée d'utilisation utile d'environ 2 semaines** ; en pratique, il est **remplacé chaque semaine** par livraison d'une unité fraîche [1][9][17].",
+          "stats": [
+            {
+              "value": "5–10 g",
+              "label": "Masse d'alumine de la colonne [1][17]"
+            },
+            {
+              "value": "2–3 mL",
+              "label": "Volume d'éluat par élution [1][17]"
+            },
+            {
+              "value": "740 / 780 keV",
+              "label": "Gammas durs du 99Mo → blindage Pb/W [1][16]"
+            },
+            {
+              "value": "~2 semaines",
+              "label": "Durée de vie utile du générateur [1][17]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert - pourquoi l'alumine et l'activité spécifique",
+              "text": "La capacité d'adsorption de la colonne est limitée. Pour charger une activité de 99Mo cliniquement utile sur seulement **5–10 g d'alumine**, il faut un 99Mo de **haute activité spécifique** — d'où la prééminence du 99Mo **de fission** (B4). Le 99Mo d'activation neutronique, de faible activité spécifique, sature l'alumine et impose des sorbants alternatifs.[9][35]"
+            },
+            {
+              "type": "tip",
+              "title": "Le surnom : « vache à technétium »",
+              "text": "On parle de **« moly cow »** (vache au molybdène) que l'on **« trait » (milking)** : la colonne accumule le 99mTc entre deux élutions, et chaque élution « tire le lait » sans épuiser l'animal, qui se reconstitue spontanément (cf. cinétique en B6).[1][17]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Coupe annotée d'un générateur 99Mo/99mTc : blindage en plomb, colonne d'alumine retenant le molybdate 99Mo, ports d'entrée pour l'éluant NaCl 0,9 % et de sortie vers le flacon collecteur sous vide qui recueille le pertechnétate 99mTcO4-.",
+            "caption": "Fig. B5 — Architecture du générateur : colonne d'alumine blindée, circuit d'élution entrée (NaCl 0,9 %) → sortie (flacon sous vide)."
+          }
+        },
+        {
+          "title": "B6 - L'élution au quotidien : « traire » le générateur, pas à pas",
+          "text": "L'élution est le geste central de la radiopharmacie : extraire le 99mTc accumulé sur la colonne, en contrôler la qualité, et l'utiliser dans la fenêtre de temps où l'activité est maximale. Comprendre la **cinétique de l'équilibre transitoire** est indispensable pour cadencer correctement les élutions [1][17].\n\n**▸ La cinétique de régénération (équilibre transitoire).** Après chaque élution, la colonne est « vidée » de son 99mTc, qui se reconstitue ensuite à partir du 99Mo résiduel. Le **branchement** de désintégration est partiel : seuls **~87,5 %** des désintégrations du 99Mo transitent par l'état métastable 99mTc, les **~12,5 %** restants allant directement au 99Tc fondamental [1][16]. Conséquences pratiques :\n- l'activité de 99mTc **remonte d'environ 50 % de son maximum en 4–5 h** (utile pour les **élutions d'urgence** rapprochées) [1] ;\n- le **maximum** de 99mTc disponible est atteint **~23–24 h après l'élution précédente** — d'où l'élution quotidienne matinale [1][17] ;\n- à l'équilibre, à cause du branchement à 87,5 %, l'activité de 99mTc n'égale pas tout à fait celle du 99Mo : le rapport théorique (~1,1×) est ramené en pratique à **~0,9×** environ [1][9]. L'ensemble du système décroît alors avec la **demi-vie effective du 99Mo (66 h)** [16][17].\n\n**▸ Le contrôle qualité de l'éluat.** Avant toute utilisation, l'éluat doit satisfaire à trois contrôles réglementaires, le premier devant être réalisé **à chaque élution** :\n\n| Contrôle | Limite | Méthode |\n|---|---|---|\n| **Percée du 99Mo** (Mo breakthrough) | **≤ 0,15 kBq 99Mo / MBq 99mTc** (USP « 0,15 µCi/mCi ») ; **≤ 0,1 %** (Ph. Eur., plus stricte) | Mesure des γ 740/780 keV en **château de plomb** [1][2][6][23] |\n| **Aluminium (Al³⁺)** | **< 10 µg/mL** (99Mo de fission) ; < 20 µg/mL (activation) | Test colorimétrique à l'**acide aurintricarboxylique** [1][6] |\n| **Pureté radiochimique (PRC)** | **≥ 95 %** sous forme TcO₄⁻ (Tc au degré **+VII**) | **ITLC** (chromatographie sur couche mince instantanée) [1][24][25] |\n\nÀ quoi s'ajoutent un **pH 4,5–7,5**, la **stérilité** et l'**apyrogénicité** ; la **durée de validité** de l'éluat est d'environ **12 h** [1]. Un excès d'aluminium entraîne une précipitation colloïdale et une biodistribution anormale ; une percée de 99Mo accroît inutilement la dose et dégrade l'image (gamma durs) [1][6].\n\n**▸ Le devenir de l'éluat.** Le pertechnétate ⁹⁹mTcO₄⁻ ainsi obtenu est **chimiquement inerte** (Tc à l'état +VII) : tel quel, il sert à l'imagerie thyroïdienne ou à la recherche d'un diverticule de Meckel ; le plus souvent, il est **réduit** (chlorure stanneux) et incorporé à une **trousse froide** lyophilisée pour marquer les radiopharmaceutiques (os, rein, cœur, cerveau, poumon…) — chimie détaillée hors de cette section.",
+          "steps": [
+            {
+              "title": "1 · Décroissance & régénération",
+              "text": "Sur la colonne, le 99Mo (66 h) engendre en continu le 99mTc (6 h) ; ~87,5 % des désintégrations passent par l'état métastable, le 99mTc s'accumulant jusqu'au pic à ~24 h.[1][16]"
+            },
+            {
+              "title": "2 · Élution (« traite »)",
+              "text": "Le NaCl 0,9 % stérile traverse la colonne et entraîne le pertechnétate 99mTcO₄⁻ ; 2–3 mL d'éluat sont recueillis dans le flacon sous vide.[1][17]"
+            },
+            {
+              "title": "3 · Contrôle qualité",
+              "text": "Percée de 99Mo (≤ 0,15 kBq/MBq, château de plomb) à chaque élution ; aluminium (< 10 µg/mL) ; PRC ≥ 95 % par ITLC ; pH 4,5–7,5.[1][6][24]"
+            },
+            {
+              "title": "4 · Mesure & dispensation",
+              "text": "Activité vérifiée à l'activimètre, éluat valable ~12 h ; utilisé directement (pertechnétate libre) ou pour reconstituer les trousses froides.[1]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "~24 h",
+              "label": "Délai au pic de 99mTc post-élution [1][17]"
+            },
+            {
+              "value": "4–5 h",
+              "label": "Régénération de ~50 % du maximum [1]"
+            },
+            {
+              "value": "~87,5 %",
+              "label": "Branchement 99Mo → 99mTc [1][16]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "Pureté radiochimique minimale (TcO₄⁻) [1][24]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution - la percée de 99Mo se vérifie à CHAQUE élution",
+              "text": "Le **Mo breakthrough** n'est pas un contrôle hebdomadaire : il se mesure **à chaque élution**, juste avant l'administration, car la rupture d'une particule d'alumine peut survenir à tout moment. Le seuil USP est **≤ 0,15 kBq de 99Mo par MBq de 99mTc** ; la Pharmacopée Européenne est plus exigeante (**≤ 0,1 %**).[1][2][6][23]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - cadence des élutions",
+              "text": "Une élution non programmée vide partiellement la colonne mais reste exploitable : **~50 % du maximum** est régénéré en **4–5 h**. Pour une demande urgente en milieu de journée, une **réélution** est donc possible — au prix d'une activité réduite. Le pic complet (**~24 h**) n'est retrouvé que le lendemain.[1][17]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Courbe de croissance-décroissance du 99mTc sur le générateur : remontée de l'activité après une élution, pic vers 24 h, et enveloppe décroissant avec la demi-vie du 99Mo (équilibre transitoire), illustrant le moment optimal pour traire le générateur.",
+            "caption": "Fig. B6 — Cinétique de l'équilibre transitoire : le 99mTc se reconstitue après chaque traite, pic à ~24 h."
+          }
+        },
+        {
+          "title": "C7 - Lire les courbes : rendement, repousse et planification d'activité",
+          "text": "Interpréter un générateur ⁹⁹Mo/⁹⁹ᵐTc, c'est avant tout savoir lire la **courbe de croissance du ⁹⁹ᵐTc** entre deux élutions, car elle commande l'organisation de toute la journée de radiopharmacie. Le couple parent-fils ⁹⁹Mo (T₁/₂ = **66 h**, soit ≈ 2,75 j) / ⁹⁹ᵐTc (T₁/₂ = **6,0 h**) réalise un **équilibre transitoire** (transient equilibrium) — et non séculaire : le rapport des demi-vies n'est que d'environ **11×**, alors qu'un équilibre séculaire strict exigerait un rapport ≥ 100× (T_parent ≫ T_fils).[1][16][17] C'est une correction essentielle au lexique courant : seul un parent quasi infiniment plus long que son fils (ex. ²²⁶Ra/²²²Rn) réalise un équilibre séculaire.\n\nDeux phénomènes se superposent sur la colonne après chaque traite (« milking »). D'abord la **repousse (regrowth)** du ⁹⁹ᵐTc à partir du stock de ⁹⁹Mo adsorbé : l'activité repart de zéro et croît selon la loi de filiation de Bateman. La **récupération atteint ≈ 50 % du maximum en 4–5 h**, ce qui rend possible une **élution d'appoint en milieu de journée** (deuxième traite pour une demande urgente).[1] Le **maximum théorique de ⁹⁹ᵐTc est atteint ≈ 23–24 h après l'élution précédente**, soit environ 4 demi-vies du fils.[1] Ensuite, la **décroissance globale du système** : une fois l'équilibre établi, l'activité disponible décroît avec la **demi-vie effective du parent (66 h)**, c'est-à-dire que le rendement maximal d'un générateur chute jour après jour au fil de la semaine.[1][17]\n\nÀ l'équilibre, l'activité de ⁹⁹ᵐTc **n'égale pas exactement** celle du ⁹⁹Mo : l'**embranchement de désintégration** est d'environ **87,5 %** vers l'état métastable ⁹⁹ᵐTc, les ≈ 12,5 % restants décroissant directement vers le ⁹⁹Tc fondamental.[1][16] L'activité de ⁹⁹ᵐTc à l'équilibre vaut donc en pratique ≈ **0,875–0,95 ×** celle du ⁹⁹Mo (le facteur 1,1 attendu pour un transitoire pur est atténué par le branchement).[1][16]\n\n| Paramètre cinétique | Valeur | Conséquence pratique |\n|---|---|---|\n| T₁/₂ du ⁹⁹Mo (parent) | **66 h** (≈ 2,75 j) [1][16] | Décroissance du rendement maximal jour après jour ; livraison hebdomadaire |\n| T₁/₂ du ⁹⁹ᵐTc (fils) | **6,0 h** [1] | Production sur place, quotidienne |\n| Type d'équilibre | **Transitoire** (rapport ≈ 11×) [1][17] | L'activité disponible suit la décroissance du ⁹⁹Mo après le pic |\n| Récupération à 50 % du pic | **4–5 h** [1] | Élution d'appoint possible en milieu de journée |\n| Pic de repousse complet | **≈ 23–24 h** post-élution [1] | Le matin = moment de rendement maximal |\n| Embranchement → ⁹⁹ᵐTc | **≈ 87,5 %** [1][16] | A(⁹⁹ᵐTc) ≈ 0,9 × A(⁹⁹Mo) à l'équilibre |\n\n**Planification d'activité.** La conséquence opérationnelle est directe : on **élue tôt le matin** (au pic de repousse de la nuit) pour disposer de l'activité maximale, puis on **planifie les marquages par ordre décroissant de demi-vie effective et d'activité requise**. Une seconde élution en fin de matinée capte la repousse partielle (≈ 50 %) pour les demandes ajoutées. Le calcul de l'activité à éluer doit intégrer la **décroissance du ⁹⁹ᵐTc pendant le marquage, le contrôle qualité et le transport** (T₁/₂ = 6 h → ≈ 11 % de perte par heure) afin de garantir l'activité prescrite à l'**heure d'injection**, et non à l'heure d'élution.[1] Au fil de la semaine, l'activité éluable au pic du matin décroît avec les 66 h du ⁹⁹Mo, ce qui impose de **remplacer le générateur chaque semaine** (livraison typiquement hebdomadaire).[1][17]",
+          "stats": [
+            {
+              "value": "66 h",
+              "label": "T₁/₂ du ⁹⁹Mo (parent) [1][16]"
+            },
+            {
+              "value": "6,0 h",
+              "label": "T₁/₂ du ⁹⁹ᵐTc (fils) [1]"
+            },
+            {
+              "value": "23–24 h",
+              "label": "Pic de repousse post-élution [1]"
+            },
+            {
+              "value": "≈ 87,5 %",
+              "label": "Embranchement → ⁹⁹ᵐTc [1][16]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — « équilibre séculaire »",
+              "text": "Le couple ⁹⁹Mo/⁹⁹ᵐTc est l'exemple-type de l'**équilibre transitoire**, PAS séculaire. Le rapport des demi-vies (66 h / 6 h ≈ 11×) est très loin du facteur ≥ 100× requis pour un équilibre séculaire. Après le pic, le ⁹⁹ᵐTc disponible décroît avec la demi-vie effective du ⁹⁹Mo (66 h), d'où la baisse de rendement au fil de la semaine.[1][17]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — l'élution d'appoint",
+              "text": "Une demande urgente survenue l'après-midi peut être honorée par une **deuxième traite** : ≈ 50 % de l'activité du pic est déjà régénérée **4–5 h** après la première élution.[1] Inutile d'attendre les 24 h du pic complet — mais penser à corriger l'activité de la décroissance de 6 h jusqu'à l'injection."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Courbe de croissance (repousse) du ⁹⁹ᵐTc après élution et décroissance du générateur ⁹⁹Mo/⁹⁹ᵐTc : équilibre transitoire, pic à 23–24 h, récupération à 50 % en 4–5 h.",
+            "caption": "Fig. C7 — Repousse du ⁹⁹ᵐTc entre deux élutions (équilibre transitoire) : pic ≈ 24 h, récupération 50 % en 4–5 h, l'enveloppe décroît avec les 66 h du ⁹⁹Mo."
+          }
+        },
+        {
+          "title": "C8 - Contrôle qualité de l'éluat : les contrôles obligatoires avant marquage",
+          "text": "Aucun éluat ne doit servir au marquage sans avoir franchi un **contrôle qualité réglementaire**, car toute impureté se traduit ensuite par une biodistribution anormale, une irradiation parasite ou une image dégradée. Trois contrôles structurent la libération de l'éluat : la **pureté radionucléidique** (percée du ⁹⁹Mo), la **pureté chimique** (percée de l'aluminium) et la **pureté radiochimique** (forme pertechnétate), complétés par le pH et les contrôles de stérilité/apyrogénicité.[1][6]\n\n**1. Pureté radionucléidique — percée du ⁹⁹Mo (Mo breakthrough).** Le risque est qu'un peu de ⁹⁹Mo « perce » la colonne et soit administré au patient : le ⁹⁹Mo émet des **γ durs de 740 et 780 keV** et son fils ⁹⁹Tc à vie longue (T₁/₂ ≈ 2,1 × 10⁵ ans) alourdit la dose sans bénéfice d'image.[1][16] Le test se fait à **chaque élution** : on place le flacon dans un **château de plomb** qui arrête les 140 keV du ⁹⁹ᵐTc mais laisse passer les 740/780 keV du ⁹⁹Mo, mesurés à l'activimètre. La **limite USP est < 0,15 kBq de ⁹⁹Mo par MBq de ⁹⁹ᵐTc** (= 0,15 µCi/mCi) **au moment de l'administration** ; la **Pharmacopée Européenne est plus stricte : ≤ 0,1 % d'activité ⁹⁹Mo**.[1][2][6][22][23] Comme le rapport ⁹⁹Mo/⁹⁹ᵐTc augmente avec le temps (le ⁹⁹ᵐTc décroît plus vite), la mesure doit être rapportée à l'**heure d'injection**.\n\n**2. Pureté chimique — percée de l'aluminium (Al³⁺).** L'alumine (Al₂O₃) de la colonne peut relarguer des ions Al³⁺ qui, en excès, **précipitent en colloïde** et perturbent la biodistribution (notamment agglomération des particules de soufre colloïdal, captation pulmonaire anormale).[1] Test colorimétrique au **spot** sur bandelette (acide aurintricarboxylique). **Limites USP : < 10 µg Al/mL** pour un ⁹⁹Mo de fission, **< 20 µg/mL** pour un ⁹⁹Mo d'activation neutronique.[1][6]\n\n**3. Pureté radiochimique (RCP).** L'éluat doit contenir **≥ 95 % de l'activité sous forme de pertechnétate TcO₄⁻** (technétium au degré **+VII**), le reste étant des impuretés de Tc réduit-hydrolysé colloïdal.[1][7] Méthode : **chromatographie sur couche mince instantanée (ITLC / ITLC-SG)**. La Ph. Eur. retient également **RCP ≥ 95 %** pour les radiopharmaceutiques ⁹⁹ᵐTc.[24][25]\n\n**4. Contrôles physico-chimiques et microbiologiques.** **pH 4,5–7,5** ; **stérilité et apyrogénicité** conformes ; la **durée de validité de l'éluat est ≈ 12 h**, au-delà de laquelle il ne doit plus être utilisé pour un marquage.[1]\n\n| Contrôle | Limite réglementaire | Méthode | Fréquence |\n|---|---|---|---|\n| **Percée ⁹⁹Mo** | **< 0,15 kBq/MBq** (USP) ; **≤ 0,1 %** (Ph. Eur.) [1][6][23] | Château de plomb (γ 740/780 keV) [1] | **À chaque élution** [1] |\n| **Aluminium Al³⁺** | **< 10 µg/mL** (fission) ; **< 20 µg/mL** (n,γ) [1][6] | Spot colorimétrique (aurintricarboxylique) [1] | Régulière / 1ʳᵉ élution |\n| **Pureté radiochimique** | **≥ 95 %** TcO₄⁻ (Tc +VII) [1][7][25] | ITLC / ITLC-SG [24] | Selon procédure |\n| **pH** | **4,5–7,5** [1] | Bandelette / pH-mètre | Régulière |\n| **Stérilité / apyrogénicité** | Conformes [1] | Procédure du service | Selon protocole |",
+          "stats": [
+            {
+              "value": "< 0,15 kBq/MBq",
+              "label": "Percée ⁹⁹Mo (USP) [1][6]"
+            },
+            {
+              "value": "< 10 µg/mL",
+              "label": "Aluminium (fission) [1][6]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "Pureté radiochimique TcO₄⁻ [1][7]"
+            },
+            {
+              "value": "≈ 12 h",
+              "label": "Durée de validité de l'éluat [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — percée ⁹⁹Mo à mesurer à l'heure d'injection",
+              "text": "Le rapport ⁹⁹Mo/⁹⁹ᵐTc **augmente avec le temps** car le ⁹⁹ᵐTc (6 h) décroît bien plus vite que le ⁹⁹Mo (66 h). Une mesure conforme à l'élution peut devenir non conforme plusieurs heures plus tard : la limite **< 0,15 kBq/MBq s'apprécie au moment de l'administration**.[1][6] La Ph. Eur. (≤ 0,1 %) est plus stricte que l'USP.[23]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — excès d'aluminium",
+              "text": "Un éluat trop riche en Al³⁺ (> 10 µg/mL pour le ⁹⁹Mo de fission) provoque une **floculation colloïdale** : agglomération des particules (colloïde soufré, MAA) et **captation pulmonaire/hépatique anormale**. Le test au spot doit précéder le marquage des trousses sensibles.[1][6]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le château de plomb",
+              "text": "Le plomb du château absorbe quasi totalement les **140 keV** du ⁹⁹ᵐTc (très majoritaires) mais reste transparent aux **740/780 keV** du ⁹⁹Mo : on isole ainsi le signal du contaminant pour le quantifier à l'activimètre, sans être noyé par l'activité du fils.[1]"
+            }
+          ]
+        },
+        {
+          "title": "C9 - Du pertechnétate au radiopharmaceutique : marquage des trousses froides",
+          "text": "L'éluat livre le technétium sous forme de **pertechnétate ⁹⁹ᵐTcO₄⁻**, où le Tc est au degré d'oxydation **+VII** : sous cette forme, il est **chimiquement inerte** et ne se fixe sur aucun ligand.[7] Tout l'art du marquage consiste à **réduire** le Tc(+VII) vers un état d'oxydation inférieur (typiquement +V, +III ou +I selon la molécule), seul réactif vis-à-vis des chélateurs. C'est l'étape qui transforme un radio-isotope « brut » en **radiopharmaceutique** organotrope.\n\n**Le réducteur de référence : le chlorure stanneux (SnCl₂).** L'ion stanneux **Sn²⁺** cède des électrons au Tc(+VII), à raison d'environ **0,5 mg de SnCl₂ par trousse**.[7] D'autres réducteurs existent (tartrate stanneux, borohydrure, dithionite, FeSO₄) mais le SnCl₂ domine.[7][26] Le Tc réduit se lie alors au ligand pour former l'espèce finale : cœur **oxotechnétium Tc(V)** pour le ⁹⁹ᵐTc-MAG3 (réduction +VII → +V), Tc(I) pour le **⁹⁹ᵐTc-sestamibi (MIBI)** (réduction puis chauffage), etc.[7]\n\n**Les trousses froides (cold kits).** L'industrie fournit des **flacons lyophilisés**, stériles et apyrogènes, contenant le **ligand chélatant + le SnCl₂** (réducteur) et souvent un **antioxydant** (acide ascorbique, gentisique, ou PABA) destiné à protéger le Sn²⁺ de l'oxydation par l'oxygène de l'air.[7] Le marquage se résume alors à un geste simple en enceinte blindée : on **ajoute l'éluat de pertechnétate** au flacon, on **incube** (à température ambiante ou avec chauffage selon la trousse), puis on **contrôle la pureté radiochimique par ITLC (≥ 95 %)** avant libération.[7] Le produit est prêt à injecter, sans purification.",
+          "steps": [
+            {
+              "title": "1. Élution",
+              "text": "Traite du générateur : recueil de l'éluat de **pertechnétate ⁹⁹ᵐTcO₄⁻** (Tc +VII, inerte) dans 2–3 mL de NaCl 0,9 %.[1][7]"
+            },
+            {
+              "title": "2. Contrôle de l'éluat",
+              "text": "Vérifier percée ⁹⁹Mo (< 0,15 kBq/MBq), Al³⁺ (< 10 µg/mL), pureté radiochimique (≥ 95 %) et pH avant toute utilisation (cf. C8).[1][6]"
+            },
+            {
+              "title": "3. Réduction & marquage",
+              "text": "Ajout de l'éluat au flacon lyophilisé : le **Sn²⁺ (≈ 0,5 mg)** réduit le Tc(+VII), qui se chélate au ligand. Incubation selon la notice.[7]"
+            },
+            {
+              "title": "4. Contrôle qualité du produit",
+              "text": "**ITLC** : vérifier RCP **≥ 95 %**, en excluant pertechnétate libre résiduel et Tc réduit-hydrolysé colloïdal avant libération.[7][24]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Le pertechnétate « libre » comme radiopharmaceutique",
+              "text": "Non réduit, le **⁹⁹ᵐTcO₄⁻ libre** est lui-même un traceur : analogue de l'iodure, il est capté par le **symporteur Na/I (NIS)** de la thyroïde, les **glandes salivaires**, la **muqueuse gastrique** (diverticule de Meckel) et les **plexus choroïdes**.[13][21] D'où ses indications propres (scintigraphie thyroïdienne, Meckel) — et la nécessité d'un **blocage au perchlorate de potassium** lorsqu'on ne veut PAS cette captation (scintigraphie cérébrale, recherche de Meckel après blocage thyroïdien).[13]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — pertechnétate libre résiduel sur l'image",
+              "text": "Un marquage incomplet (Sn²⁺ oxydé, antioxydant épuisé, RCP < 95 %) laisse du **TcO₄⁻ libre** qui se fixe sur thyroïde, estomac et glandes salivaires : aspect parasite mimant une pathologie. Toujours **vérifier la RCP par ITLC** avant injection.[7][24]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — versatilité d'un seul radionucléide",
+              "text": "La réduction par le Sn²⁺ ouvre une **chimie de coordination très large** : un même éluat marque l'os (MDP/HDP), le rein (MAG3, DTPA, DMSA), le cerveau (HMPAO, ECD), le cœur et les parathyroïdes (MIBI, tétrofosmine), le poumon (MAA), le ganglion sentinelle (nanocolloïdes) et le système biliaire (HIDA).[11] C'est cette versatilité, plus que la physique seule, qui explique la domination du ⁹⁹ᵐTc.[1]"
+            }
+          ]
+        },
+        {
+          "title": "D10 - Radioprotection, dosimétrie et gestion des déchets du générateur",
+          "text": "La radioprotection autour du générateur **⁹⁹Mo/⁹⁹ᵐTc** (molybdène-99/technétium-99m) repose sur un principe simple : on manipule au quotidien deux radionucléides aux profils d'émission **opposés**. Le fils utile, le **⁹⁹ᵐTc**, émet un photon γ « confortable » de **140,5 keV** d'abondance ≈ **89 %** [16], facile à blinder. Le parent, le **⁹⁹Mo**, émet au contraire des γ **durs de 740 keV et 780 keV** [1], qui imposent le blindage massif (plomb/tungstène) du corps du générateur. Toute la doctrine de radioprotection découle de cette dualité.\n\n**Blindage et débit de dose du ⁹⁹ᵐTc.** Pour les **140,5 keV** du technétium, **¼ à ½ pouce (≈ 6 à 12 mm) de plomb** suffisent à atténuer efficacement le faisceau [27]. La constante de débit de dose pratique est de l'ordre de **0,076 mrem/h à 1 m par mCi** (≈ 0,76 µSv/h à 1 m par 37 MBq) [27]. Combinée à la demi-vie courte de **6,0 h** [1], cette faible énergie minimise l'exposition du personnel de radiopharmacie — c'est précisément ce qui fait du ⁹⁹ᵐTc un radionucléide de routine sûr [1]. La triade **temps / distance / écran** (ALARA) reste le cadre opérationnel : protège-seringue plombé à l'élution et à la préparation, manipulation derrière paravent plombé, dosimétrie passive et opérationnelle, et port systématique de dosimètres de bague (extrémités exposées au contact des flacons).\n\n**Le piège dosimétrique du générateur lui-même.** Le danger n'est pas l'éluat de ⁹⁹ᵐTc mais le **⁹⁹Mo résiduel** dans la colonne d'alumine et, accessoirement, dans l'éluat en cas de percée (voir contrôle qualité, §B). Le blindage intégré du générateur est dimensionné pour les **740/780 keV** [1] : ne jamais désolidariser un générateur de son château de transport, ne jamais ouvrir l'enceinte.\n\n**Dosimétrie patient — coefficients de dose efficace (CIPR 128, 2015).** La force du ⁹⁹ᵐTc tient à sa **versatilité de marquage** : un seul radionucléide irradie le patient selon des coefficients très variables d'un radiopharmaceutique à l'autre, sur une plage allant de **≈ 0,005 à ≈ 0,013 mSv/MBq** [11]. Le tableau ci-dessous récapitule les ordres de grandeur (CIPR 128) ; ce sont des valeurs indicatives à confirmer ligne par ligne dans le document source [11].\n\n| Radiopharmaceutique ⁹⁹ᵐTc | Dose efficace adulte (mSv/MBq) | Repère d'activité |\n|---|---|---|\n| Pertechnétate ⁹⁹ᵐTcO₄⁻ (sans blocage) | **≈ 0,013** [11,21] | thyroïde ≈ 80 MBq ; Meckel 300 MBq |\n| Phosphonates / MDP (os) | **≈ 0,005–0,006** [11] | 740 MBq |\n| MAG3 (rein) | **≈ 0,007** [11] | 70–100 MBq |\n| DTPA (rein) | **≈ 0,005–0,006** [11] | 200 MBq |\n| MIBI / sestamibi (repos) | **≈ 0,008–0,009** [11] | 250–1110 MBq |\n| MAA (perfusion pulmonaire) | **≈ 0,011** [11] | 100–200 MBq |\n\nLe **pertechnétate libre** mérite une vigilance dosimétrique particulière : non marqué, le **TcO₄⁻** se concentre dans l'**estomac (≈ 25 % de la dose administrée à 4 h)**, la thyroïde, les glandes salivaires et les plexus choroïdes [21]. L'organe critique est, selon le modèle, la **paroi du côlon haut** (ex. : Meckel 296 MBq → côlon haut ≈ 16,9 mGy, soit ≈ 0,057 mGy/MBq) [21]. Le **blocage thyroïdien** par le perchlorate modélise une inhibition de la captation thyroïdienne et redistribue la dose [11].\n\n**Vérification croisée (pertechnétate).** Une scintigraphie de Meckel à **296 MBq (8 mCi)** délivre **≈ 3,8 mSv**, soit 3,8/296 ≈ **0,013 mSv/MBq** — cohérent avec la valeur CIPR [21].\n\n**Gestion des déchets et décroissance.** La règle d'or du service est le **stockage par décroissance « 10 demi-vies »** avant élimination en filière conventionnelle. Pour le ⁹⁹ᵐTc (T½ = 6 h), 10 demi-vies = **60 h** ; mais le générateur usagé contient surtout du **⁹⁹Mo (T½ = 66 h)** : son décroissement complet impose **≈ 660 h, soit ≈ 28 jours** de stockage avant restitution au fournisseur ou élimination [1]. À l'horizon long, chaque désintégration du ⁹⁹ᵐTc produit du **⁹⁹Tc fondamental**, faiblement radioactif mais de demi-vie **2,1 × 10⁵ ans (≈ 211 000 ans)** [1] : c'est un **déchet à vie très longue** (émetteur β⁻ de faible activité), géré comme tel dans les effluents.",
+          "stats": [
+            {
+              "value": "140,5 keV",
+              "label": "γ du ⁹⁹ᵐTc (blindage facile)"
+            },
+            {
+              "value": "6–12 mm Pb",
+              "label": "Blindage suffisant du ⁹⁹ᵐTc [27]"
+            },
+            {
+              "value": "≈ 28 j",
+              "label": "Décroissance du ⁹⁹Mo (10 T½) [1]"
+            },
+            {
+              "value": "2,1·10⁵ ans",
+              "label": "T½ du ⁹⁹Tc fondamental [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — deux énergies, deux blindages",
+              "text": "Ne jamais raisonner blindage « ⁹⁹ᵐTc » pour le générateur. L'éluat de **⁹⁹ᵐTc** se blinde avec **6–12 mm de plomb** (140,5 keV) [27], mais le **corps du générateur** contient du **⁹⁹Mo** émettant à **740/780 keV** [1] : c'est lui qui dicte le blindage massif intégré. Désolidariser un générateur de son château expose le manipulateur aux γ durs du molybdène."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le ⁹⁹Tc, déchet caché",
+              "text": "Sous le ⁹⁹ᵐTc « propre » se cache le **⁹⁹Tc fondamental** (T½ ≈ 211 000 ans) [1]. Chaque dose injectée laisse derrière elle un émetteur β⁻ de très faible activité mais de demi-vie quasi infinie : la gestion des effluents urinaires des patients et des déchets de marquage intègre ce devenir à vie longue, même si l'enjeu dosimétrique immédiat est négligeable."
+            },
+            {
+              "type": "info",
+              "title": "Repère — la versatilité a un coût dosimétrique variable",
+              "text": "Un même radionucléide (⁹⁹ᵐTc) couvre l'os, le rein, le cœur, le poumon, la thyroïde et le foie [1], mais avec des coefficients de dose efficace s'étalant de **≈ 0,005** (MDP, DTPA) à **≈ 0,013 mSv/MBq** (pertechnétate) [11]. La dose au patient dépend donc bien plus du **vecteur** et de l'**activité administrée** que du radionucléide lui-même."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Triade temps / distance / écran (ALARA) appliquée à la radiopharmacie : réduire le temps de contact avec le générateur et les flacons, augmenter la distance, interposer un écran plombé adapté aux 140 keV du ⁹⁹ᵐTc et aux 740/780 keV du ⁹⁹Mo.",
+            "caption": "Fig. — Temps / distance / écran : le cadre ALARA de la manipulation quotidienne du générateur et de ses éluats."
+          }
+        },
+        {
+          "title": "D11 - Réglementation, traçabilité et assurance qualité (cGRPP / Ph. Eur.)",
+          "text": "Le générateur n'est pas un simple consommable : c'est le **point de départ d'une chaîne pharmaceutique réglementée**, où chaque éluat devient un médicament radiopharmaceutique préparé extemporanément. La conformité repose sur trois piliers : le **contrôle qualité de l'éluat à chaque traite**, le **respect des bonnes pratiques de radiopharmacie (cGRPP)** pour le marquage des trousses froides, et la **traçabilité** intégrale du parent jusqu'à l'injection.\n\n**Contrôle qualité de l'éluat — les trois tests réglementaires.** Avant toute préparation, l'éluat doit satisfaire des critères chiffrés, à **chaque élution** [1]. La double référence pharmacopée (USP / Ph. Eur.) impose des seuils, la Ph. Eur. étant généralement la plus stricte.\n\n| Test | Cible | Seuil d'acceptation | Méthode |\n|---|---|---|---|\n| **Pureté radionucléidique** (percée du ⁹⁹Mo) | ⁹⁹Mo dans l'éluat | **< 0,15 µCi ⁹⁹Mo / mCi ⁹⁹ᵐTc** (USP) [1] ; **≤ 0,1 %** d'activité (Ph. Eur.) [23] | Pot de plomb (filtre les 740/780 keV) + comptage [1] |\n| **Pureté chimique** (percée de l'aluminium) | Al³⁺ relargué de la colonne | **< 10 µg/mL** (⁹⁹Mo de fission) ; **< 20 µg/mL** (activation n,γ) [1] | Test colorimétrique au spot (acide aurintricarboxylique) [1] |\n| **Pureté radiochimique (RCP)** | ⁹⁹ᵐTcO₄⁻ (Tc au degré +VII) | **≥ 95 %** sous forme pertechnétate [1,25] | ITLC / ITLC-SG [24,25] |\n\nLa **percée du ⁹⁹Mo** (Mo breakthrough) est le contrôle de sécurité majeur : un ⁹⁹Mo de demi-vie longue (66 h) et émetteur de γ durs injecté au patient majorerait la dose. Le **pot de plomb** atténue totalement les 140,5 keV du ⁹⁵Tc et ne laisse passer que les **740/780 keV** du ⁹⁹Mo, dont on mesure l'activité résiduelle [1]. Le seuil **USP < 0,15 µCi/mCi** correspond, en SI, à **≤ 0,15 kBq ⁹⁹Mo par MBq ⁹⁹ᵐTc** ; la Ph. Eur. exprime une limite en **rapport d'activité ≤ 0,1 %**, plus contraignante [23]. La **percée d'aluminium** signe une dégradation de la colonne d'alumine : un excès d'Al³⁺ provoque une **précipitation colloïdale** du pertechnétate et une biodistribution anormale (faux foyers hépatiques/spléniques) [1].\n\n**Pureté radiochimique et bonnes pratiques de marquage.** Après marquage d'une **trousse froide**, l'ITLC sépare le pertechnétate marqué des deux impuretés classiques : le **pertechnétate libre TcO₄⁻** (réduction incomplète) et le **technétium réduit-hydrolysé colloïdal (TcRH, (TcO₂)ₙ)** [25]. Le critère **Ph. Eur. RCP ≥ 95 %** s'applique à chaque préparation [25]. Une expérience publiée sur **2280 procédures** sur trois ans confirme la faisabilité d'un suivi RCP systématique en routine [24]. Ce marquage relève des **cGRPP (current Good Radiopharmacy Practice)** : zone à atmosphère contrôlée, manipulation aseptique derrière protection plombée, libération pharmaceutique avant injection.\n\n**Traçabilité de bout en bout.** La chaîne documentaire couvre : (1) le **lot de générateur** (origine du ⁹⁹Mo — fission vs activation — date de calibration, activité au jour J) ; (2) le **registre d'élution** (date/heure, volume d'éluat 2–3 mL [1], activité éluée, résultats des trois CQ) ; (3) le **registre de marquage** (trousse, lot, activité ajoutée, RCP, péremption) ; (4) l'**administration patient** (activité, voie, opérateur). La **durée de validité de l'éluat** est d'environ **12 h** [1] et celle du générateur d'**≈ 2 semaines** (conditionnée par le T½ de 66 h du ⁹⁹Mo, livraison hebdomadaire typique) [1].\n\n**Cadre des activités administrées et NRD.** Les **niveaux de référence diagnostiques (NRD)** encadrent les activités par acte ⁹⁹ᵐTc ; au Royaume-Uni, l'**ARSAC** (Administration of Radioactive Substances Advisory Committee) publie ses *Notes for Guidance* (mise à jour février 2025) qui fixent les activités maximales par procédure [31]. En pédiatrie, la **carte de doses EANM** régit le calcul (cf. §B) — pour les bisphosphonates osseux : **activité de base 35 MBq, minimum 40 MBq** [30].",
+          "steps": [
+            {
+              "title": "1. Réception & calibration",
+              "text": "Contrôle du **lot de générateur** à réception : origine du ⁹⁹Mo (fission ²³⁵U vs activation ⁹⁸Mo(n,γ)), activité calibrée, intégrité du blindage. Enregistrement au registre des sources radioactives [1]."
+            },
+            {
+              "title": "2. Élution & CQ de l'éluat",
+              "text": "À **chaque traite** : percée ⁹⁹Mo (pot de plomb, **< 0,15 µCi/mCi** USP / **≤ 0,1 %** Ph. Eur.) [1,23], aluminium (**< 10 µg/mL**) [1], RCP du pertechnétate (**≥ 95 %**, ITLC) [1,25]. Consignation au registre d'élution."
+            },
+            {
+              "title": "3. Marquage cGRPP",
+              "text": "Reconstitution des **trousses froides** en conditions aseptiques sous protection plombée ; vérification de la **RCP ≥ 95 %** par ITLC avant libération [24,25]."
+            },
+            {
+              "title": "4. Libération & administration",
+              "text": "Libération pharmaceutique, vérification de l'activité à l'activimètre, respect des **NRD / Notes for Guidance ARSAC** [31] et de la **carte EANM** en pédiatrie [30] ; traçabilité de l'injection (activité, voie, opérateur, patient)."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la percée du ⁹⁹Mo se contrôle à CHAQUE élution",
+              "text": "Le seuil **< 0,15 µCi ⁹⁹Mo/mCi ⁹⁹ᵐTc** (USP) ou **≤ 0,1 %** (Ph. Eur.) [1,23] n'est pas un contrôle « de réception » : il doit être vérifié **à chaque traite**, car la percée peut survenir avec l'usure de la colonne. Mesure obligatoire au **pot de plomb** (seuls les 740/780 keV du ⁹⁹Mo passent le filtre) [1]. Un éluat hors limite est écarté."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — USP vs Ph. Eur., deux écritures de la même limite",
+              "text": "L'**USP** exprime la percée en **rapport d'activité** (0,15 µCi/mCi = 0,15 kBq/MBq) ; la **Ph. Eur.** en **pourcentage d'activité (≤ 0,1 %)** [1,23], plus stricte. Attention aussi à la limite Al : **< 10 µg/mL** pour le ⁹⁹Mo de fission mais **< 20 µg/mL** pour l'activation neutronique [1] — connaître l'origine du ⁹⁹Mo chargé est donc une donnée réglementaire, pas un détail."
+            },
+            {
+              "type": "info",
+              "title": "Repère — péremptions à retenir",
+              "text": "Éluat valable **≈ 12 h** ; générateur utile **≈ 2 semaines** (livraison hebdomadaire, T½ ⁹⁹Mo = 66 h) [1]. Au-delà, l'activité de ⁹⁹ᵐTc disponible chute et le rapport signal/percée se dégrade."
+            }
+          ]
+        },
+        {
+          "title": "D12 - Approvisionnement mondial, crises du 99Mo et réalité africaine",
+          "text": "Le talon d'Achille de la médecine nucléaire mondiale n'est ni la caméra ni le radiopharmacien : c'est la **chaîne d'approvisionnement en ⁹⁹Mo**. Le ⁹⁹ᵐTc, employé dans **≈ 80 % des actes de médecine nucléaire** et **≈ 85 % des scintigraphies diagnostiques** [18,19], soit **> 30 millions de procédures/an** (≈ 110 000 actes/jour dont > 40 000 aux États-Unis) [18,34], dépend d'un parent qui **ne se stocke pas** (T½ 66 h) et n'est produit que dans une **poignée de réacteurs de recherche vieillissants**.\n\n**La géographie de la production.** Le ⁹⁹Mo est très majoritairement un **produit de fission de l'²³⁵U** (haute activité spécifique), généré dans des réacteurs de recherche puis traité en quelques jours [18,35]. Les producteurs historiques majeurs sont concentrés : **HFR Petten (Pays-Bas), BR-2 (Belgique), OPAL (Australie, ANSTO), SAFARI-1 (Afrique du Sud), Maria (Pologne)** [19], auxquels s'ajoutaient le **NRU (Chalk River, Canada)** et **OSIRIS (France)**, aujourd'hui arrêtés. Aucun de ces réacteurs n'est en Afrique subsaharienne, à l'exception notable du **SAFARI-1 sud-africain**, seul producteur du continent.\n\n**Les crises d'approvisionnement.** La fragilité du système a éclaté lors de la **crise 2009–2010** : l'arrêt simultané et prolongé du **NRU canadien** (fuite d'eau lourde, mai 2009 → août 2010) et du **HFR Petten** (début 2010 → septembre 2010), qui fournissaient à eux deux ≈ **2/3 de l'offre mondiale**, a provoqué une **pénurie sévère** — rationnement des examens, report des scintigraphies, recours dégradé au thallium-201 [10,33]. Une nouvelle tension est survenue en **2012–2013** [10]. Ces épisodes ont été le moteur de la **diversification** des sources et des voies de production.\n\n**Transition HEU → LEU.** Pour des raisons de **non-prolifération**, les cibles d'uranium hautement enrichi (HEU) ont été progressivement remplacées par de l'**uranium faiblement enrichi (LEU)**. L'**OPAL australien** fut pionnier de la production LEU [32], et **depuis mars 2023, tous les réacteurs producteurs de ⁹⁹Mo utilisent des cibles LEU** [19], au prix d'un surcoût de production d'environ **+20 %** [19].\n\n**Les voies sans réacteur.** Pour s'affranchir de la dépendance aux réacteurs, plusieurs filières alternatives émergent [12,33,35] :\n\n| Voie | Réaction | Particularité |\n|---|---|---|\n| Activation neutronique | **⁹⁸Mo(n,γ)⁹⁹Mo** | Faible activité spécifique → sorbants spéciaux [35] |\n| Photonucléaire (LINAC) | **¹⁰⁰Mo(γ,n)⁹⁹Mo** | Accélérateur d'électrons, ¹⁰⁰Mo enrichi [33] |\n| Cyclotron direct | **¹⁰⁰Mo(p,2n)⁹⁹ᵐTc** | Produit le ⁹⁹ᵐTc **directement, sans générateur**, en production locale (protons ~10–22 MeV) [12] |\n| Solution LEU | systèmes type SHINE / NorthStar | ⁹⁹Mo sans réacteur de recherche conventionnel [33] |\n\nLa voie **cyclotron ¹⁰⁰Mo(p,2n)⁹⁹ᵐTc** est conceptuellement la plus disruptive pour les pays sans réacteur : elle produit le ⁹⁹ᵐTc **à la demande, sur place**, en s'appuyant sur un cyclotron médical — infrastructure plus accessible qu'un réacteur de recherche [12].\n\n**La réalité africaine.** Pour le médecin nucléaire exerçant en Afrique subsaharienne, la contrainte d'approvisionnement est structurante et quotidienne :\n\n- **Dépendance à l'importation.** Hors Afrique du Sud (SAFARI-1), le continent n'a pas de production de ⁹⁹Mo et importe ses générateurs. La **demi-vie de 66 h** du ⁹⁹Mo [1] transforme chaque retard logistique (douane, fret aérien, jours fériés) en **perte sèche d'activité** : un générateur livré avec 2–3 jours de retard a déjà perdu une part majeure de son ⁹⁹Mo utile.\n- **Calibration et logistique.** La planification doit intégrer la **décroissance** entre la date de calibration (souvent fixée par le fournisseur européen ou sud-africain) et l'arrivée effective. Les livraisons **hebdomadaires** [1] supposent une chaîne du froid documentaire et un dédouanement de matière radioactive maîtrisé.\n- **Vulnérabilité aux crises mondiales.** Les pays importateurs sont les **premières victimes** d'une pénurie : lors des crises 2009–2010 et 2012–2013, l'allocation prioritaire allait aux marchés solvables proches des producteurs [10,33]. La **production locale par cyclotron** [12] représente, à terme, une piste de souveraineté pour les centres africains équipés d'un cyclotron de TEP.\n\nEn pratique, la maîtrise du générateur en contexte africain est autant une affaire de **physique** (équilibre transitoire, courbe de regénération) que de **logistique d'approvisionnement** : commander en activité-jour-d'utilisation et non en activité-jour-de-calibration, anticiper les ruptures de la chaîne mondiale, et suivre les filières alternatives émergentes.",
+          "stats": [
+            {
+              "value": "≈ 80 %",
+              "label": "Actes de MN au ⁹⁹ᵐTc [18,19]"
+            },
+            {
+              "value": "66 h",
+              "label": "T½ du ⁹⁹Mo : ne se stocke pas [1]"
+            },
+            {
+              "value": "mars 2023",
+              "label": "100 % cibles LEU [19]"
+            },
+            {
+              "value": "+20 %",
+              "label": "Surcoût production LEU [19]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — commander en activité-jour-d'utilisation",
+              "text": "En contexte importateur (Afrique hors RSA), raisonner sur l'**activité à la date de calibration** du fournisseur conduit à des sous-dosages ou des ruptures. Le ⁹⁹Mo perd ≈ 21 % de son activité par jour (T½ 66 h) [1] : un retard de fret de 2–3 jours peut amputer le générateur de la moitié de son ⁹⁹Mo utile. Planifier en **activité disponible le jour effectif d'utilisation**."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le cyclotron, une souveraineté possible",
+              "text": "La voie **¹⁰⁰Mo(p,2n)⁹⁹ᵐTc** produit le technétium **directement sur un cyclotron médical**, sans réacteur ni générateur [12]. Pour un centre africain déjà doté d'un cyclotron de TEP, c'est une piste réaliste d'indépendance vis-à-vis des crises mondiales du ⁹⁹Mo — à condition de disposer de ¹⁰⁰Mo enrichi et de la chimie de séparation associée."
+            },
+            {
+              "type": "info",
+              "title": "Repère — pourquoi la crise de 2009 a tout changé",
+              "text": "L'arrêt simultané du **NRU** et du **HFR** (≈ 2/3 de l'offre) en 2009–2010 [10,33] a démontré qu'une poignée de réacteurs vieillissants tenait toute la médecine nucléaire mondiale. La réponse — diversification, transition LEU (mars 2023) [19], voies sans réacteur [12,33] — reste inachevée : la fragilité structurelle persiste."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine retenant le molybdate ⁹⁹MoO₄²⁻, élution du pertechnétate ⁹⁹ᵐTcO₄⁻ au sérum physiologique ; en amont, la production du ⁹⁹Mo par fission de l'²³⁵U en réacteur de recherche, maillon critique de l'approvisionnement mondial.",
+            "caption": "Fig. — Du réacteur au lit du patient : la colonne du générateur n'est que le dernier maillon d'une chaîne mondiale fragile, dépendante de quelques réacteurs producteurs de ⁹⁹Mo."
+          }
+        },
+        {
+          "title": "E13 - Cas pratiques commentés : élution, breakthrough et incidents",
+          "text": "Trois situations canoniques de radiopharmacie, déroulées selon la trame *contexte → mesure/observation → analyse → conduite*. Chaque cas illustre une décision réglementaire chiffrée du contrôle qualité (CQ) de l'éluat (cf. §E11/§4) et la cinétique de l'équilibre transitoire (cf. §A2/§2).\n\n**Repères de décision réutilisés dans les trois cas :**\n\n| Paramètre CQ | Seuil USP | Seuil Ph. Eur. | Méthode | Fréquence |\n|---|---|---|---|---|\n| Percée du **99Mo** | **< 0,15 kBq 99Mo/MBq 99mTc** (0,15 µCi/mCi) à l'administration [1][6] | **≤ 0,1 %** d'activité 99Mo [1] | Château de plomb (γ 740/778 keV filtrés) [1] | **Chaque élution** [1][2] |\n| **Aluminium** (Al³⁺) | **< 10 µg/mL** (99Mo de fission) ; < 20 µg/mL (activation n,γ) [1][6] | idem | Spot colorimétrique (acide aurintricarboxylique) [1][6] | Chaque élution [6] |\n| Pureté radiochimique | **≥ 95 %** sous forme TcO₄⁻ [1][7] | ≥ 95 % [25] | ITLC-SG [7][24] | Sur le radiopharmaceutique marqué [7] |\n\n*Note d'unités* : la limite « 0,15 µCi/mCi » est un **rapport d'activité** sans dimension ; en SI on l'écrit **0,15 kBq 99Mo par MBq 99mTc** [1][6]. À l'inverse, le critère Ph. Eur. exprime un **pourcentage d'activité** (≤ 0,1 %) plus restrictif [1].",
+          "steps": [
+            {
+              "title": "Cas 1 — Élution de routine du matin (situation conforme)",
+              "text": "*Contexte* : générateur livré la veille, dernière élution 24 h auparavant ; activité de 99mTc proche du maximum (le pic est atteint **~23–24 h** après l'élution précédente) [1]. *Mesure* : éluat de **2–3 mL** de Na[99mTcO₄] dans NaCl 0,9 % [1] ; activité à l'activimètre conforme à la prévision ; percée 99Mo mesurée au château de plomb = 0,03 kBq/MBq (< 0,15) [1][6] ; Al³⁺ négatif au spot (< 10 µg/mL) [1][6] ; pH 5,5 (plage 4,5–7,5) [1]. *Analyse* : éluat **conforme** ; à l'équilibre transitoire, l'activité 99mTc reste légèrement inférieure à celle du 99Mo théorique du fait du branchement (**~87,5 %** des désintégrations passent par 99mTc) [1][16]. *Conduite* : éluat libéré pour marquage des trousses froides ; **validité ~12 h** [1]."
+            },
+            {
+              "title": "Cas 2 — Élution d'urgence l'après-midi (rendement réduit, pas un incident)",
+              "text": "*Contexte* : besoin d'une dose supplémentaire 4–5 h après l'élution du matin. *Observation* : seulement **~50 % de l'activité maximale** est régénérée en 4–5 h [1] — c'est attendu, le 99mTc n'a pas eu le temps de se reconstituer. *Analyse* : ce n'est **pas** un dysfonctionnement mais la cinétique de croissance du fils ; l'équilibre pratique n'est réatteint qu'après ~4 demi-vies du 99mTc (~24 h) [1]. La percée 99Mo reste à recontrôler car le rapport n'est pas figé [1][6]. *Conduite* : éluer quand même, ajuster le volume/l'activité prélevée à la dose requise, recalculer la percée à l'heure d'injection."
+            },
+            {
+              "title": "Cas 3 — Breakthrough : percée de 99Mo au-delà du seuil (incident CQ)",
+              "text": "*Contexte* : générateur en fin de semaine, ou choc mécanique lors du transport. *Mesure* : percée = **0,21 kBq 99Mo/MBq 99mTc** au château de plomb, soit > 0,15 [1][6]. *Analyse* : rupture partielle de l'adsorption du molybdate MoO₄²⁻ sur la colonne d'alumine [1][9] ; risque dosimétrique (le 99Mo émet des γ durs de 740/778 keV et un β⁻, T½ long) et dégradation d'image. *Conduite* : éluat **non libéré** ; ne pas administrer ; tracer l'incident, prévenir le radiopharmacien et le fournisseur, remplacer le générateur. *Variante Al³⁺* : un spot positif (> 10 µg/mL) signe un relargage d'alumine → précipitation colloïdale et **biodistribution anormale** (captation hépatique/pulmonaire du colloïde de Tc) [1][6] : même conduite de rejet."
+            }
+          ],
+          "stats": [
+            {
+              "value": "0,15 kBq/MBq",
+              "label": "Seuil USP percée 99Mo (à l'administration) [1][6]"
+            },
+            {
+              "value": "~24 h",
+              "label": "Pic de 99mTc après élution précédente [1]"
+            },
+            {
+              "value": "~50 %",
+              "label": "Activité régénérée en 4–5 h (élution d'urgence) [1]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "Pureté radiochimique requise (TcO₄⁻) [1][7]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la percée se calcule au moment de l'administration, pas de l'élution",
+              "text": "Le 99Mo (T½ = 66 h) décroît **plus lentement** que le 99mTc (T½ = 6 h) [1][9]. Le rapport 99Mo/99mTc **augmente donc avec le temps** après élution : un éluat conforme à H+0 peut dépasser 0,15 kBq/MBq à H+6. Le calcul réglementaire doit projeter le rapport à l'heure prévue d'injection, en décroissant chaque activité avec sa propre période [1][6]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Coupe d'un générateur 99Mo/99mTc : colonne d'alumine retenant le molybdate 99Mo, élution du pertechnétate 99mTcO4- par le NaCl 0,9 %, blindage de plomb et flacon sous vide collecteur de l'éluat.",
+            "caption": "Fig. — Architecture du générateur et trajet de l'éluat : le point de contrôle (percée 99Mo, Al3+) se situe en sortie de colonne, à chaque élution."
+          }
+        },
+        {
+          "title": "E14 - Au-delà du 99Mo/99mTc : la famille des générateurs en médecine nucléaire",
+          "text": "Le 99Mo/99mTc n'est que l'archétype d'une stratégie générale : produire **sur place et à la demande** un fils de période courte à partir d'un parent de période plus longue, fixé sur une colonne. Replacer le 99mTc dans cette famille éclaire deux notions transposables — le **type d'équilibre** (transitoire vs séculaire) et la **logistique d'approvisionnement** (réacteur vs générateur de paillasse) — et fait le pont avec la TEP et la théranostique.\n\n**Pourquoi le 99Mo/99mTc domine.** Le 99mTc couvre **~80 % de l'ensemble des actes** de médecine nucléaire et **~85 % des scintigraphies diagnostiques**, soit plus de **30 millions de procédures/an** dans le monde [18][19]. Aucun autre couple générateur n'atteint ce volume.\n\n| Générateur | T½ parent | T½ fils | Émission utile du fils | Type d'équilibre | Usage clinique typique |\n|---|---|---|---|---|---|\n| **99Mo → 99mTc** | 66 h [1] | 6,0 h [1] | γ **140,5 keV** (~89 %) [16] | **Transitoire** (rapport ~11×) [1] | Scintigraphie/SPECT polyvalente [18] |\n| **68Ge → 68Ga** | 271 j | 68 min | β⁺ (TEP) | **Séculaire** (parent ≫ fils) | TEP des récepteurs (DOTATATE, PSMA) |\n| **82Sr → 82Rb** | 25 j | 76 s | β⁺ (TEP) | Séculaire | TEP de perfusion myocardique |\n| **81Rb → 81mKr** | 4,6 h | 13 s | γ 190 keV | Transitoire | Ventilation pulmonaire (gaz) |\n| **188W → 188Re** | 69 j | 17 h | β⁻ + γ 155 keV | Transitoire | Radiothérapie interne vectorisée |\n\n**La nuance d'équilibre, transposée.** Pour le 99Mo/99mTc, le rapport des demi-vies (~11×) impose un **équilibre transitoire** : à l'équilibre, le couple décroît avec la période effective du parent (66 h) et l'activité du fils est *légèrement supérieure* à celle du parent (atténuée à ~0,9–0,95× par le branchement à 87,5 %) [1][16]. Pour le 68Ge/68Ga (rapport ~5700×), on est en **équilibre séculaire** strict : l'activité du fils égale celle du parent et la colonne tient des mois. C'est exactement la distinction que corrige cet article par rapport au résumé d'origine, qui qualifiait à tort le 99Mo/99mTc de séculaire [1].",
+          "stats": [
+            {
+              "value": "~80 %",
+              "label": "Part du 99mTc dans les actes de MN [18][19]"
+            },
+            {
+              "value": "> 30 M/an",
+              "label": "Procédures 99mTc dans le monde [18]"
+            },
+            {
+              "value": "~6,1 %",
+              "label": "Rendement de fission du 99Mo (235U) [9]"
+            },
+            {
+              "value": "2023",
+              "label": "Bascule complète des cibles vers le LEU [19]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Amont du 99Mo — la chaîne d'approvisionnement",
+              "text": "Le 99Mo chargé sur la colonne provient majoritairement de la **fission de l'²³⁵U** en réacteur de recherche (rendement de fission **~6,1 %**, haute activité spécifique) [9][32]. Alternative : **activation neutronique ⁹⁸Mo(n,γ)⁹⁹Mo**, de faible activité spécifique, nécessitant des sorbants spéciaux [9][35]. Réacteurs producteurs : HFR (Petten), BR-2 (Belgique), OPAL (Australie), SAFARI-1 (Afrique du Sud), Maria (Pologne) [19]. **Depuis mars 2023, tous utilisent des cibles en uranium faiblement enrichi (LEU)** pour la non-prolifération, au prix d'un surcoût ~+20 % [19]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — fragilité structurelle de la filière",
+              "text": "La crise **2009–2010** (arrêts prolongés et simultanés de réacteurs vieillissants, dont NRU/Chalk River et OSIRIS) a provoqué une **pénurie sévère de 99Mo** et le rationnement des examens [10][33]. Le faible nombre de réacteurs et leur âge restent un point de vulnérabilité ; une tension supplémentaire a été observée en 2012–2013 [10]. Cette fragilité justifie la diversification vers les voies **sans réacteur**."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — produire le 99mTc sans générateur",
+              "text": "Des voies alternatives visent à fabriquer le 99mTc (ou le 99Mo) localement : **¹⁰⁰Mo(p,2n)⁹⁹ᵐTc** directement au cyclotron médical (protons 10–22 MeV, ¹⁰⁰Mo enrichi ≥ 99 %) [12] ; **¹⁰⁰Mo(γ,n)⁹⁹Mo** par accélérateur (photonucléaire) ; systèmes à cible LEU en solution (SHINE) et NorthStar RadioGenix [10][12]. Ces filières court-circuitent la dépendance aux réacteurs mais ne reproduisent pas encore l'économie d'échelle du générateur."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration du 99Mo : émission beta-moins vers le 99mTc, transition isomérique avec photon gamma de 140,5 keV vers le 99Tc fondamental quasi stable, puis beta-moins vers le 99Ru stable.",
+            "caption": "Fig. — Filiation 99Mo → 99mTc → 99Tc → 99Ru : le branchement (~87,5 % vers 99mTc) explique l'équilibre transitoire et le ratio d'activité observé."
+          }
+        },
+        {
+          "title": "E15 - Points clés, pièges et FAQ",
+          "text": "**FAQ — confusions classiques et pièges de QCM.**\n\n**Pourquoi le 140,5 keV est-il « idéal » ?** Énergie assez haute pour traverser les tissus, assez basse pour être efficacement absorbée par le cristal NaI(Tl) des γ-caméras, avec un blindage modeste (~¼–½ pouce de plomb) [16][27].\n\n**Pourquoi élue-t-on chaque jour ?** Le 99mTc (6 h) ne se stocke pas : on « trait » la « vache à technétium » quotidiennement, le fils se reconstituant entre deux élutions (pic à ~24 h) [1][9].\n\n**Pourquoi réduire le pertechnétate ?** Au degré +VII, le TcO₄⁻ est chimiquement inerte ; seul le Tc réduit (par SnCl₂) se complexe aux ligands des trousses froides [7].\n\n**Générateur sec ou humide ?** Le système sec (2 ports, flacon sous vide) est le plus répandu en clinique ; le système humide comporte un réservoir de NaCl 0,9 % [1].\n\n**Combien de temps garde-t-on un générateur ?** Typiquement **~2 semaines**, conditionné par la période de 66 h du 99Mo ; livraison hebdomadaire [1].\n\n**Faut-il bloquer la thyroïde pour le pertechnétate libre ?** Oui hors indication thyroïdienne : le TcO₄⁻ est capté par thyroïde, glandes salivaires, muqueuse gastrique et plexus choroïdes → **perchlorate de potassium** (ex. scintigraphie cérébrale, de Meckel) [13].",
+          "list": [
+            "**Le 99mTc est le radionucléide pivot de l'imagerie** : γ de **140,5 keV** (~89 % d'abondance), T½ **6,0 h**, pas d'émission particulaire primaire, chimie versatile — couvre **~80 %** des actes de MN [16][18][19].",
+            "**Filiation** : 99Mo (T½ **66 h**, β⁻) → 99mTc (transition isomérique) → 99Tc (quasi-stable, **2,1×10⁵ ans**) → 99Ru stable [1][16].",
+            "**Équilibre TRANSITOIRE, pas séculaire** : rapport des demi-vies ~11× seulement ; le séculaire exigerait ~100×. À l'équilibre, le couple décroît avec la période du 99Mo (66 h) [1][16].",
+            "**Branchement ~87,5 %** des 99Mo passent par le 99mTc ; ~12,5 % vont directement au 99Tc fondamental → l'activité 99mTc n'égale jamais exactement celle du 99Mo [1][16].",
+            "**Cinétique** : pic de 99mTc **~24 h** après l'élution précédente ; **~50 %** régénéré en 4–5 h [1].",
+            "**Colonne** : **5–10 g** d'alumine (Al₂O₃) ; 99Mo adsorbé sous forme molybdate MoO₄²⁻, 99mTc élué sous forme pertechnétate **TcO₄⁻** par **NaCl 0,9 %**, volume **2–3 mL** [1][9].",
+            "**Trois CQ de l'éluat** : percée **99Mo < 0,15 kBq/MBq** (USP) / ≤ 0,1 % (Ph. Eur.) ; **Al³⁺ < 10 µg/mL** (fission) ; **pureté radiochimique ≥ 95 %** TcO₄⁻ par ITLC [1][6][7].",
+            "**Marquage** : le pertechnétate Tc(+VII) est inerte ; il doit être **réduit par le chlorure stanneux (SnCl₂)** dans les trousses froides lyophilisées avant de se fixer aux ligands [7].",
+            "**Amont** = fission de l'²³⁵U en réacteur (rendement **~6,1 %**) ; cibles **LEU** depuis 2023 ; voies émergentes au cyclotron ¹⁰⁰Mo(p,2n)⁹⁹ᵐTc [9][12][19].",
+            "**Dosimétrie repère** : pertechnétate **~0,013 mSv/MBq** [11] ; scintigraphie osseuse 740 MBq de MDP → **~4,2 mSv** [5][11].",
+            "**Pédiatrie** : carte de doses **EANM** (activité de base × facteur poids, avec minimum) ; ex. MDP, classe B, base 35 MBq, minimum 40 MBq [8].",
+            "**Pertechnétate libre** : capté par thyroïde, glandes salivaires, muqueuse gastrique et plexus choroïdes → **blocage par perchlorate de potassium** en scintigraphie cérébrale ou de Meckel [13]."
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège n°1 — « équilibre séculaire »",
+              "text": "Le couple 99Mo/99mTc est l'exemple-type de l'**équilibre transitoire**, pas séculaire. La confusion vient de la formulation historique du résumé ; en QCM, la bonne réponse repose sur le **rapport des demi-vies ~11×** (séculaire ⇒ ≥ ~100×) [1][16]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège n°2 — confondre les unités de la percée",
+              "text": "« 0,15 µCi/mCi » = **0,15 kBq 99Mo par MBq 99mTc**, un rapport d'activité USP. La Ph. Eur. impose **≤ 0,1 % d'activité**, plus stricte. Et le seuil s'applique **à l'heure d'administration**, où le rapport est plus défavorable qu'à l'élution (le 99Mo décroît plus lentement) [1][6]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège n°3 — le rendement d'une élution d'urgence",
+              "text": "N'attendre que **~50 % de l'activité** 4–5 h après une élution n'est pas une panne : c'est la croissance normale du fils. Le maximum n'est atteint qu'à **~24 h** [1]."
+            }
+          ]
+        },
+        {
+          "title": "E16 - Références & liens sortants typés",
+          "text": "**Sources** (citées par [n] dans l'ensemble de l'article ; recommandations et sources primaires datées) :\n\n[1] Mo99-Tc99m Generator — StatPearls, NCBI Bookshelf (NIH).\n[2] Verification on Molybdenum-99 Breakthrough from Non-Fission 99Mo/99mTc Generator — IOP Conf. Series J. Phys. (2024).\n[3] SNMMI/EANM pediatric [99mTc]Tc-DMSA renal cortical scintigraphy: an update — Clin Transl Imaging (2022).\n[4] Effective dose to adult patients from 338 radiopharmaceuticals (ICRP biokinetic data) — PMC4545621.\n[5] Assessment of Radiation Exposure during 99mTc-MDP Bone Scintigraphy — Toxics (MDPI) 2023;11(10):814.\n[6] Quality control of 99Mo/99mTc generator eluate (Mo breakthrough, Al limits) — Loyola LUMEN module.\n[7] Technetium Radiopharmaceutical Chemistry (SnCl₂ reduction, cold kits, RCP) — Univ. New Mexico CE Vol.12 L3.\n[8] Paediatric Dosage Card — EANM / IAEA Human Health Campus, Appendix I.\n[9] Technetium-99m generator — Wikipedia (Tucker & Greene 1958, colonne d'alumine, fission).\n[10] Mo-99/Tc-99m Supply Reliability — National Academies / NCBI Bookshelf NBK215151.\n[11] ICRP Publication 128. Radiation Dose to Patients from Radiopharmaceuticals — Ann ICRP 44(2S), 2015.\n[12] Innovative Target for Production of 99mTc by Biomedical Cyclotron — Molecules, PMC6337538.\n[13] Sodium Pertechnetate Tc 99m — LactMed, NCBI Bookshelf NBK501578.\n[14] Harmonization of EANM paediatric dosage card and North American consensus guidelines — SNMMI.\n[16] Technetium-99m — Wikipedia (schéma de désintégration, 140,5 keV, abondance ~89 %, branchement).\n[18] New strategies for a sustainable 99mTc supply — Frontiers in Chemistry (2022).\n[19] Radioisotopes in Medicine — World Nuclear Association (~80 % de MN, réacteurs, HEU→LEU 2023).\n[24] QC on radiochemical purity in 99mTc radiopharmaceuticals: 2280 procedures — Acta Biomed, PMC6166199.\n[25] Overview of radiochemical purity control for 99mTc radiopharmaceuticals — Eur Phys J Plus (2025).\n[27] Technetium-99m Data Sheet — EHS University of Michigan (blindage, débits d'exposition).\n[32] Global Production of Molybdenum-99 and Future Prospects — NCBI Bookshelf NBK396165.\n[33] The Shortage of Technetium-99m and Possible Solutions — Annu Rev Nucl Part Sci 70:77 (2020).\n[35] Mo-99 production pathways and sorbents for (n,γ) generators — Discover Appl Sci 2:1782 (2020).\n\n**Carte de liens (réseau de l'article).** Traceurs : 99mTc-pertechnétate, 99mTc-MDP/HDP, 99mTc-MAG3, 99mTc-DMSA, 99mTc-DTPA, 99mTc-HMPAO/ECD, 99mTc-sestamibi/tétrofosmine, 99mTc-MAA, 99mTc-nanocolloïde. Examens : scintigraphie osseuse, rénale (renogramme/DMSA), perfusion myocardique (SPECT), pulmonaire (V/Q), cérébrale, thyroïdienne, de Meckel, ganglion sentinelle. Maladies : métastases osseuses, embolie pulmonaire, obstruction des voies urinaires, hyperthyroïdie/nodule, diverticule de Meckel. Examens/voies apparentés : générateurs 68Ge/68Ga et 82Sr/82Rb (TEP), production au cyclotron 100Mo(p,2n)99mTc. *Dernière mise à jour : juin 2026 — réécriture niveau étalon (profil médecin nucléaire).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note méthodologique sur les valeurs dosimétriques",
+              "text": "Les coefficients de dose efficace adulte cités dans l'article sont les valeurs **ICRP Publication 128 (2015)** [11]. Plusieurs lignes du compendium (au-delà du pertechnétate ~0,013 mSv/MBq et du MDP ~0,0057 mSv/MBq) n'ont pas été relues mot pour mot dans le document source et doivent être vérifiées ligne par ligne avant usage réglementaire [11]. Aucun DOI, PMID ou URL n'a été inventé : seules les sources [1]–[35] réellement fournies sont citées."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
