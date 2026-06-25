@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "major",
+    "where": "Section A3 (Rappels anatomiques), phrase sur la tête et cou",
+    "problem": "Phrase parasite cliniquement absurde : « La diminution du H/M n'a pas cours ici, mais la modification de l'abord chirurgical par la SPECT/CT y atteint 49,4 % ». Le rapport H/M (cœur/médiastin, heart-to-mediastinum ratio) est un paramètre EXCLUSIF de la scintigraphie cardiaque au MIBG (¹²³I-mIBG) et n'a STRICTEMENT AUCUN sens en lymphoscintigraphie du ganglion sentinelle. C'est un résidu de template/contamination d'un autre article qui introduit une notion fausse dans un contexte où elle n'existe pas. Un lecteur médecin y verrait immédiatement une erreur grossière de relecture.",
+    "fix": "Supprimer entièrement le fragment « La diminution du H/M n'a pas cours ici, mais » et ne conserver que l'information valide : « La modification de l'abord chirurgical par la SPECT/CT y atteint 49,4 % (vs 37,4 % toutes localisations) [19]. »"
+  },
+  {
+    "severity": "minor",
+    "where": "Sections A5 / B8 / D18 — seuil d'index mitotique",
+    "problem": "Incohérence interne du seuil d'index mitotique cité comme facteur de risque : « index mitotique ≥ 2/mm² » (A5 facteurs, B8 facteurs), « index mitotique élevé (≥ 1–2/mm²) » (A5 prose), alors que la fiche de référence et l'EANM-EORTC 2009 retiennent « > 1/mm² ». Par ailleurs le taux mitotique n'est plus un critère de stadification AJCC 8e (retiré pour T1), nuance utile à ne pas suggérer comme seuil dur.",
+    "fix": "Harmoniser sur un seuil unique cohérent avec les sources (« index mitotique élevé, ≥ 1/mm² ») dans toutes les occurrences, et préciser qu'il s'agit d'un facteur de risque (non d'un critère de stadification AJCC8)."
+  },
+  {
+    "severity": "minor",
+    "where": "InfoBox 'Point expert' section B7(b) / cohérence dose efficace identityCard vs D15",
+    "problem": "La dose efficace du Nanocoll est donnée à 5,6×10⁻³ mSv/MBq dans l'identityCard, A1 et D15 (source SFMN/Eshima, ère ICRP 60), mais la revue tilmanocept [8] et l'ICRP 128 donnent 7,6×10⁻³ mSv/MBq, valeur citée dans la fiche de référence V2. L'article mentionne bien les deux valeurs en D15 (donc transparence correcte), mais l'identityCard/A1 affichent uniquement 5,6×10⁻³ sans indiquer qu'il s'agit de la valeur ICRP 60 la plus basse, ce qui peut induire en erreur sur la valeur 'de référence' actuelle (ICRP 128 = 7,6×10⁻³).",
+    "fix": "Dans l'identityCard et la stat A1, soit afficher la fourchette « ~5,6–7,6×10⁻³ mSv/MBq (selon ICRP 60 / 128) », soit privilégier la valeur ICRP 128 (7,6×10⁻³) comme référence courante, en cohérence avec la fiche étalon. Les calculs dérivés (0,22–0,30 mSv pour 40 MBq) sont corrects pour cette fourchette."
+  },
+  {
+    "severity": "major",
+    "where": "Section A6 - Contre-indications & précautions, paragraphe \"Terrain allergique au colorant bleu\"",
+    "problem": "La citation [35] est utilisée (\"...on recourt alors à l'isotope seul ou au vert d'indocyanine (ICG) [3][35]\") alors que la liste de sources ne définit que 32 références ([1] à [32]). Référence pendante / hors plage : aucune source [35] n'existe. C'est le seul écart anti-fabrication détecté.",
+    "fix": "Remplacer [35] par une source existante et pertinente : pour l'anaphylaxie au bleu patenté/isosulfan (0,07–2,7 %) et le recours à l'ICG, citer [14] (van den Berg, traceur hybride ICG-99mTc-nanocolloïde) déjà utilisé ailleurs pour l'ICG, ou [3]/[1] qui couvrent les alternatives. Corriger en [3][14] et vérifier que le chiffre 0,07–2,7 % est soutenu par la source retenue."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections E22 (texte) et liste des sections",
+    "problem": "Les sections E23 (quiz) et E24 (fiche de révision) sont annoncées dans le texte de E22 (\"Quiz interactif §23 et fiche de révision §24 : fonctionnalités de la plateforme à activer\") mais absentes du corps des sections. Acceptable car explicitement signalées comme fonctionnalités de plateforme, mais à confirmer côté étalon.",
+    "fix": "Soit ajouter des stubs E23/E24, soit retirer la mention si l'étalon ne les exige pas. Aucune action si l'étalon traite quiz/fiche comme objets séparés (le bloc \"quiz\" est bien présent dans le JSON)."
+  }
+]
