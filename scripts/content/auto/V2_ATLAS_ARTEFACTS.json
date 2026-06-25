@@ -1,0 +1,1412 @@
+{
+  "id": "V2_ATLAS_ARTEFACTS",
+  "cat": "artefacts",
+  "catLabel": "Atlas des Artefacts",
+  "title": "Atlas des artefacts en TEP et TEMP",
+  "difficulty": "avancé",
+  "tags": [
+    "artefacts",
+    "TEP-TDM",
+    "TEMP-TDM",
+    "correction d'atténuation",
+    "mouvement respiratoire",
+    "graisse brune",
+    "atténuation des tissus mous",
+    "troncature",
+    "artefact métallique",
+    "pièges physiologiques",
+    "centre de rotation",
+    "SUV",
+    "halo PSMA",
+    "extravasation"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Pettinato C, et al. Artefacts of PET/CT images. Biomed Imaging Interv J 2006;2(4):e60 (PMC3097808)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097808/"
+    },
+    {
+      "title": "[2] Boellaard R, et al. FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0. Eur J Nucl Med Mol Imaging 2015 (PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[3] Boellaard R, et al. FDG PET and PET/CT: EANM procedure guidelines for tumour PET imaging: version 1.0. Eur J Nucl Med Mol Imaging 2010;37(1):181-200 (PMC2791475)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791475/"
+    },
+    {
+      "title": "[4] Verberne HJ, et al. EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT (2015)",
+      "url": "https://eanm.org/wp-content/uploads/2025/04/2015_myocardial_perfusion.pdf"
+    },
+    {
+      "title": "[5] The Benefits of Prone SPECT Myocardial Perfusion Imaging in Reducing Both Artifact Defects and Patient Radiation Exposure (PMC4632998)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4632998/"
+    },
+    {
+      "title": "[6] ASNC Preferred Practice Statement: Patient-Centered Imaging (2012)",
+      "url": "https://www.asnc.org/wp-content/uploads/2024/06/PCI-2012.pdf"
+    },
+    {
+      "title": "[7] Surasi DS, et al. 18F-FDG PET and PET/CT Patient Preparation: A Review of the Literature. J Nucl Med Technol 2014;42(1):5-13",
+      "url": "https://tech.snmjournals.org/content/42/1/5"
+    },
+    {
+      "title": "[8] Lawhn-Heath C, et al. Scatter Artifact with Ga-68-PSMA-11 PET: Severity Reduced With Furosemide Diuresis and Improved Scatter Correction. Mol Imaging 2018 (PMC6287320)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6287320/"
+    },
+    {
+      "title": "[9] Heusser T, et al. Investigation of the halo-artifact in 68Ga-PSMA-11-PET/MRI. PLoS One 2017;12(8):e0183329 (PMC5560715)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5560715/"
+    },
+    {
+      "title": "[10] Sarji SA. Physiological uptake in FDG PET simulating disease. Biomed Imaging Interv J 2006;2(4):e59 (PMC3097820)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097820/"
+    },
+    {
+      "title": "[11] Fludeoxyglucose F 18 Injection (FDG) FDA label, NDA 21-870 (2005)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2005/021870lbl.pdf"
+    },
+    {
+      "title": "[12] Lassmann M, et al. The new EANM paediatric dosage card: additional notes with respect to F-18. Eur J Nucl Med Mol Imaging 2008;35:1666-1668 (PMID 18574583)",
+      "url": "https://link.springer.com/article/10.1007/s00259-008-0799-9"
+    },
+    {
+      "title": "[13] EANM Dosimetry and Paediatrics Committees. EANM Paediatric Dosage Card (initiative page)",
+      "url": "https://www.eanm.org/initiatives/dosage-card/"
+    },
+    {
+      "title": "[14] Tran-Gia J, et al. Analysis of EuroNet PHL-C2 trial data: a proposal to update the EANM Paediatric Dosage Card (39% reduction in 18F-FDG). Eur J Nucl Med Mol Imaging 2024 (PMC10774179)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10774179/"
+    },
+    {
+      "title": "[15] Rizk TH, Nagalli S. Technetium-99m Sestamibi. StatPearls (NBK553148)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK553148/"
+    },
+    {
+      "title": "[16] Kane SM, et al. Technetium-99m. StatPearls (NBK559013)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK559013/"
+    },
+    {
+      "title": "[17] DePuey EG. Single-Photon Emission Computed Tomography Artifacts (COR, ring/uniformity, ramp filter). Clinical Gate",
+      "url": "https://clinicalgate.com/single-photon-emission-computed-tomography-artifacts/"
+    },
+    {
+      "title": "[18] Imaging SPECT: Quality Control Procedures and Artifact Identification. J Nucl Med Technol 1983;11(2):55-60",
+      "url": "https://tech.snmjournals.org/content/jnmt/11/2/55.full.pdf"
+    },
+    {
+      "title": "[19] Pertechnetic Acid Tc 99m - an overview (free pertechnetate biodistribution: stomach, thyroid, salivary glands). ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/pertechnetic-acid-tc-99m"
+    },
+    {
+      "title": "[20] Patterns, Variants, Artifacts, and Pitfalls in Conventional Radionuclide Bone Imaging and SPECT/CT (Emory Radiology)",
+      "url": "https://med.emory.edu/departments/radiology/clinical_divisions/nuclear-medicine/documents/2020/msk/patterns-variants-artifacts-and-pitfalls-in-conventional-radionuclide-bone-imaging-and-spect.ct.pdf"
+    },
+    {
+      "title": "[21] Sureshbabu W, Mawlawi O. PET/CT Imaging Artifacts. J Nucl Med Technol 2005;33(3):156-161",
+      "url": "https://tech.snmjournals.org/content/33/3/156"
+    },
+    {
+      "title": "[22] Sun T, Mok GSP. Techniques for respiration-induced artifacts reductions in thoracic PET/CT. Quant Imaging Med Surg 2012;2(1):46-52 (PMC3496495)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3496495/"
+    },
+    {
+      "title": "[23] PET/CT — Motion (Introduction to Radiology, artifacts module)",
+      "url": "https://introductiontoradiology.net/courses/rad/PETCT/Motion.html"
+    },
+    {
+      "title": "[24] Morawitz J, et al. Impact of Different Metal Artifact Reduction Techniques on Attenuation Correction of Normal Organs in 18F-FDG-PET/CT. Diagnostics 2022;12(2):375 (PMC8870731)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8870731/"
+    },
+    {
+      "title": "[25] Reinert CP, et al. Value of CT iterative metal artifact reduction in PET/CT - clinical evaluation in 100 patients. Br J Radiol 2019;92:20180756 (PMC6540858)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6540858/"
+    },
+    {
+      "title": "[26] Vangu MDT, Momodu JI. F-18 FDG PET/CT Imaging in Normal Variants, Pitfalls and Artifacts in the Abdomen and Pelvis. Front Nucl Med 2022 (PMC11440875)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11440875/"
+    },
+    {
+      "title": "[27] Sarikaya I, Sarikaya A. PET/CT Image Artifacts Caused by the Arms. J Nucl Med Technol 2021;49(1):19-22",
+      "url": "https://tech.snmjournals.org/content/49/1/19"
+    },
+    {
+      "title": "[28] Perrin S, et al. Development of a classifier for [18F]FDG extravasation severity. EJNMMI Phys 2022;9:61 (PMC9474785)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9474785/"
+    },
+    {
+      "title": "[29] FDG PET/CT: Artifacts and Pitfalls. Contemporary Diagnostic Radiology (LWW CME)",
+      "url": "https://cme.lww.com/files/FDGPETCTArtifactsandPitfalls-1486051971215.pdf"
+    },
+    {
+      "title": "[30] Hall N, et al. Impact of FDG extravasation on SUV measurements in clinical PET/CT. J Nucl Med 2006;47(suppl 1):115P",
+      "url": "https://jnm.snmjournals.org/content/47/suppl_1/115P.2"
+    },
+    {
+      "title": "[31] Quality Control in SPECT and PET Imaging (Thoracic Key)",
+      "url": "https://thoracickey.com/quality-control-in-spect-and-pet-imaging/"
+    },
+    {
+      "title": "[32] Bolstad R, et al. Extrinsic Versus Intrinsic Uniformity Correction for gamma-Cameras. J Nucl Med Technol 2011;39(3):208-212",
+      "url": "https://tech.snmjournals.org/content/39/3/208"
+    },
+    {
+      "title": "[33] Quality Control Requirements in SPECT (VCU, CLRS 322)",
+      "url": "https://people.vcu.edu/~mhcrosthwait/clrs322/QCrequirementsSPECT.html"
+    },
+    {
+      "title": "[34] Burrell S, MacDonald A. Artifacts and Pitfalls in Myocardial Perfusion Imaging. J Nucl Med Technol 2006;34(4):193-211",
+      "url": "https://tech.snmjournals.org/content/34/4/193"
+    },
+    {
+      "title": "[35] Doukky R, et al. Soft Tissue Attenuation Patterns Associated with Supine Acquisition SPECT Myocardial Perfusion Imaging. Open Cardiovasc Med J 2012 (PMC3339431)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3339431/"
+    },
+    {
+      "title": "[36] Dvorak RA, Brown RKJ, Corbett JR. Interpretation of SPECT/CT Myocardial Perfusion Images: Common Artifacts and Quality Control Techniques. RadioGraphics 2011;31(7):2041-2057",
+      "url": "https://pubs.rsna.org/doi/abs/10.1148/rg.317115090"
+    },
+    {
+      "title": "[37] Strok A, et al. Subdiaphragmatic activity-related artifacts in myocardial perfusion scintigraphy. Radiol Oncol 2024;58(3):313-319 (PMC11406902)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11406902/"
+    },
+    {
+      "title": "[38] Shammas A, Lim R, Charron M. Pediatric FDG PET/CT: Physiologic Uptake, Normal Variants, and Benign Conditions. RadioGraphics 2009;29(5):1467-1486",
+      "url": "https://pubs.rsna.org/doi/10.1148/rg.295085247"
+    },
+    {
+      "title": "[39] Persichetti A, et al. Prevalence, Mass, and Glucose-Uptake Activity of 18F-FDG-Detected Brown Adipose Tissue in Humans Living in a Temperate Zone of Italy. PLoS One 2013;8(5):e63391 (PMC3648481)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3648481/"
+    },
+    {
+      "title": "[40] Huang YC, et al. Review Analysis of the Association between the Prevalence of Activated Brown Adipose Tissue and Outdoor Temperature. ScientificWorldJournal 2012 (PMC3349155)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3349155/"
+    },
+    {
+      "title": "[41] Prevention of activated brown adipose tissue on 18F-FDG-PET scans of young lymphoma patients: an ancillary study within the EuroNet-PHL-C2 trial. Sci Rep 2023;13:21944",
+      "url": "https://www.nature.com/articles/s41598-023-48871-2"
+    },
+    {
+      "title": "[42] Use of 68Ga-PSMA-11 and 18F-FDG PET-CT Dual-Tracer to Differentiate Between Lymph Node Metastases and Ganglia. Front Oncol 2021 (PMC7987919)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7987919/"
+    },
+    {
+      "title": "[43] Pontes ICM, et al. Musculoskeletal pitfalls in 68Ga-PSMA PET/CT. Radiol Bras 2023;56(4):220-225 (PMC10567088)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10567088/"
+    },
+    {
+      "title": "[44] Zhang-Yin JT, Panagiotidis E. 68Ga-DOTATOC Uptake by Stellate Ganglia, Mimicking a Right Cervical Metastasis of Neuroendocrine Tumors: A Case Report. J Clin Med 2024 (PMC11642278)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11642278/"
+    },
+    {
+      "title": "[45] Aide N, et al. EANM/EARL harmonization strategies in PET quantification: from daily practice to multicentre oncological studies. Eur J Nucl Med Mol Imaging 2017;44(Suppl 1):17-31 (PMC5541084)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5541084/"
+    },
+    {
+      "title": "[46] Carter LM, et al. Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms. J Nucl Med 2021;62(12):1805-1814 (PMC8612182)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8612182/"
+    },
+    {
+      "title": "[47] Marshall G, et al. Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy. Toxics 2023;11(10):814",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814"
+    },
+    {
+      "title": "[48] Case JA, et al. Status of cardiovascular PET radiation exposure and strategies for reduction: An Information Statement from the Cardiovascular PET Task Force. J Nucl Cardiol 2017 (ASNC)",
+      "url": "https://www.asnc.org/wp-content/uploads/2024/06/Status-of-Cardiovascular-PET-Radiation-Exposure-and-Strategies-for-Reduction_An-Information-Statement-from-the-Cardiovascular-PET-Task-Force_2017.pdf"
+    },
+    {
+      "title": "[49] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals. Ann ICRP 2015;44(2S)",
+      "url": "https://www.academia.edu/68053086/ICRP_Publication_128"
+    },
+    {
+      "title": "[50] Xia T, et al. Ultra-low dose CT attenuation correction for PET/CT. Phys Med Biol 2012;57(2):309-328 (PMC3353418)",
+      "url": "https://ncbi.nlm.nih.gov/pmc/articles/PMC3353418"
+    },
+    {
+      "title": "[51] Image Wisely - Optimizing Oncologic FDG-PET/CT Scans to Decrease Radiation Exposure",
+      "url": "https://www.imagewisely.org/Imaging-Modalities/Nuclear-Medicine/Optimizing-Oncologic-FDG-PETCT-Scans"
+    },
+    {
+      "title": "[52] Hendel RC, et al. Multicenter Clinical Trial to Evaluate the Efficacy of Correction for Photon Attenuation and Scatter in SPECT Myocardial Perfusion Imaging. Circulation 1999;99(21):2742-2749",
+      "url": "https://www.ahajournals.org/doi/full/10.1161/01.cir.99.21.2742"
+    },
+    {
+      "title": "[53] Attenuation correction for myocardial perfusion SPECT imaging: still a controversial issue. Eur J Nucl Med Mol Imaging 2011 (PMID 21874324)",
+      "url": "https://link.springer.com/article/10.1007/s00259-011-1898-6"
+    },
+    {
+      "title": "[54] SPECT/CT overcomes breast-attenuation artifact for improved specificity in MPI (Siemens Healthineers clinical case)",
+      "url": "https://www.siemens-healthineers.com/en-us/molecular-imaging/mi-clinical-corner/clinical-case-studies/case-spect-ct-overcomes-breast-attenuation.html"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "alert",
+        "label": "Nature",
+        "value": "Signal image NON représentatif de la biodistribution réelle"
+      },
+      {
+        "icon": "target",
+        "label": "Source #1 TEP-TDM",
+        "value": "Correction d'atténuation par TDM (désalignement, métal, contraste, troncature)"
+      },
+      {
+        "icon": "activity",
+        "label": "Source #1 TEMP-MPI",
+        "value": "Atténuation des tissus mous (diaphragme, sein)"
+      },
+      {
+        "icon": "list",
+        "label": "Familles TEP",
+        "value": "Métal · mouvement · contraste · troncature · diffusion Ga-68"
+      },
+      {
+        "icon": "microscope",
+        "label": "Règle d'or",
+        "value": "Relire NAC + AC (CTAC) + TDM côte à côte"
+      },
+      {
+        "icon": "zap",
+        "label": "TEP — énergie photons",
+        "value": "511 keV (annihilation) vs TDM ~80 keV"
+      },
+      {
+        "icon": "droplets",
+        "label": "Graisse brune (BAT)",
+        "value": "Prévalence ~3,36 % (n=6454) ; ↓ ~1 %/+5 °C"
+      },
+      {
+        "icon": "shield",
+        "label": "Prévention BAT",
+        "value": "Réchauffement 30-60 min ; pièce ~24 °C (75 °F)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Extravasation FDG",
+        "value": "Jusqu'à 23 % des TEP-FDG"
+      },
+      {
+        "icon": "stetho",
+        "label": "Solution TEMP cardiaque",
+        "value": "Procubitus (prone) ; bras levés ; TEMP/TDM"
+      },
+      {
+        "icon": "flask",
+        "label": "Contaminant TEMP",
+        "value": "Pertechnétate libre (⁹⁹ᵐTcO₄⁻) : estomac, thyroïde, salivaires"
+      },
+      {
+        "icon": "radiation",
+        "label": "Impact CA/diffusion (MPI)",
+        "value": "Faux positifs réduits de 14 % → 3 %"
+      },
+      {
+        "icon": "pin",
+        "label": "Type d'article",
+        "value": "Atlas transversal (toutes indications TEP/TEMP)"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FDG"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-sestamibi"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-tétrofosmine"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁸Ga-PSMA-11"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁸Ga-DOTATATE"
+      },
+      {
+        "type": "traceur",
+        "label": "²⁰¹Tl-chlorure"
+      },
+      {
+        "type": "examen",
+        "label": "TEP-TDM au FDG"
+      },
+      {
+        "type": "examen",
+        "label": "TEMP de perfusion myocardique"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse / TEMP osseuse"
+      },
+      {
+        "type": "examen",
+        "label": "TEP-TDM au ⁶⁸Ga-PSMA"
+      },
+      {
+        "type": "score",
+        "label": "Harmonisation SUV EARL/EANM"
+      },
+      {
+        "type": "maladie",
+        "label": "Graisse brune (variante physiologique)"
+      },
+      {
+        "type": "maladie",
+        "label": "Rebond thymique"
+      },
+      {
+        "type": "theranostique",
+        "label": "Couplage diagnostic/thérapie PSMA"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "En TEP-TDM, quelle est la source dominante des artefacts ?",
+        "options": [
+          "La reconstruction itérative",
+          "La correction d'atténuation dérivée de la TDM",
+          "L'émission de positons elle-même",
+          "Le bruit électronique des détecteurs"
+        ],
+        "answer": 1,
+        "explanation": "La carte d'atténuation est dérivée de la TDM (photons polychromatiques ~80 keV) puis mise à l'échelle vers 511 keV ; toute erreur sur la TDM (mouvement, métal, contraste, troncature) se propage à la TEP corrigée (CTAC) [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la règle d'interprétation systématique pour ne pas prendre un artefact de correction d'atténuation pour une lésion ?",
+        "options": [
+          "Augmenter la dose injectée",
+          "Relire la TEP non corrigée (NAC) en parallèle de la TEP corrigée et de la TDM",
+          "Refaire systématiquement l'examen à 90 min",
+          "N'utiliser que les images corrigées"
+        ],
+        "answer": 1,
+        "explanation": "Il est fortement recommandé de comparer TEP non corrigée (NAC) + TEP corrigée (CTAC) + TDM : un mismatch signe un artefact de correction d'atténuation [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "L'artefact de troncature TDM en TEP-TDM résulte de quel mécanisme ?",
+        "options": [
+          "FOV transverse TDM (~50 cm) plus petit que le FOV TEP (~70 cm)",
+          "Une demi-vie trop courte du traceur",
+          "Une fenêtre photopic mal centrée",
+          "Une erreur de centre de rotation"
+        ],
+        "answer": 0,
+        "explanation": "Quand le patient déborde du FOV TDM (~50 cm) tout en restant dans le FOV TEP (~70 cm), un liseré brillant de hautes valeurs d'atténuation et des stries apparaissent ; les algorithmes de correction récupèrent >90 % de l'activité dans la zone tronquée [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi le mouvement respiratoire crée-t-il un artefact en TEP-TDM ?",
+        "options": [
+          "La TDM dure plusieurs minutes en respiration libre",
+          "La TDM fige une position du diaphragme alors que la TEP moyenne plusieurs cycles respiratoires",
+          "Le FDG se redistribue pendant l'acquisition",
+          "Le collimateur n'est pas adapté"
+        ],
+        "answer": 1,
+        "explanation": "La TEP est la moyenne de nombreux cycles respiratoires (respiration libre, plusieurs minutes) alors que la TDM fige une seule position diaphragmatique ; ce désalignement crée notamment un artefact froid curviligne (banana) au dôme hépatique [21][22][23].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'effet d'un implant métallique dense sur la TEP corrigée ?",
+        "options": [
+          "Une zone froide factice",
+          "Une surestimation de l'activité (foyer hyperintense factice, faux positif)",
+          "Aucun effet sur la quantification",
+          "Une perte totale du signal TEP"
+        ],
+        "answer": 1,
+        "explanation": "Les hautes valeurs HU du métal entraînent une surestimation des coefficients d'atténuation, donc une surestimation locale de l'activité TEP (faux positif), avec des stries sur la TDM ; il faut interpréter sur la TEP non corrigée [1][24].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'impact quantitatif moyen typique d'un produit de contraste positif sur la SUV en TEP-TDM ?",
+        "options": [
+          "Négligeable, < 1 %",
+          "Inférieur à 10 % en moyenne",
+          "Environ 30 %",
+          "Plus de 50 %"
+        ],
+        "answer": 1,
+        "explanation": "Les hautes densités du contraste augmentent localement la carte d'atténuation et donc la fixation apparente, mais l'effet sur la SUV reste typiquement inférieur à 10 % en moyenne [2].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la source la plus fréquente d'artefact en TEMP de perfusion myocardique (MPI) ?",
+        "options": [
+          "L'erreur de centre de rotation",
+          "L'atténuation des tissus mous (diaphragme, sein)",
+          "Le pertechnétate libre",
+          "Le filtre rampe"
+        ],
+        "answer": 1,
+        "explanation": "Le cœur est entouré de tissus de densités variables (os, diaphragme, poumon, sein) : l'atténuation des tissus mous est la source la plus fréquente d'artefact en TEMP-MPI [34][35].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "En TEMP-MPI, l'atténuation diaphragmatique (surtout chez l'homme) crée typiquement un faux déficit de quelle paroi ?",
+        "options": [
+          "Antérieure",
+          "Latérale",
+          "Inférieure",
+          "Apicale"
+        ],
+        "answer": 2,
+        "explanation": "L'atténuation diaphragmatique donne un faux déficit inférieur (homme), tandis que l'atténuation mammaire donne un faux déficit antérieur (femme) [34][35].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment l'imagerie en procubitus (prone) aide-t-elle à lever un artefact d'atténuation diaphragmatique inférieur ?",
+        "options": [
+          "Le diaphragme remonte et comprime le cœur",
+          "Le diaphragme descend et le cœur remonte/avance",
+          "Elle augmente la dose au myocarde",
+          "Elle modifie l'énergie du photopic"
+        ],
+        "answer": 1,
+        "explanation": "En procubitus, le diaphragme descend et le cœur remonte/avance : un déficit inférieur qui se corrige en procubitus est un artefact d'atténuation et non une coronaropathie. Dans une série, l'amélioration est correctement révélée chez 89/120 patients (paroi inférieure) [5][36].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle préparation réduit la captation de FDG par la graisse brune (BAT) ?",
+        "options": [
+          "Le jeûne prolongé de 12 h",
+          "Le réchauffement du patient 30-60 min avant l'injection",
+          "L'injection de furosémide",
+          "L'augmentation de l'activité injectée"
+        ],
+        "answer": 1,
+        "explanation": "Maintenir le patient au chaud 30-60 min avant l'injection (pièce ~24 °C / 75 °F) réduit l'activation de la graisse brune : la prévalence passe de 15,3 % à 3,3 % dans une série [2][7].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la prévalence approximative de la graisse brune détectée au FDG sur une grande série, et son lien avec la température extérieure ?",
+        "options": [
+          "~3,36 % ; prévalence qui diminue d'environ 1 % par +5 °C",
+          "~20 % ; indépendante de la température",
+          "~50 % ; augmente avec la chaleur",
+          "<0,1 % ; uniquement chez l'homme âgé"
+        ],
+        "answer": 0,
+        "explanation": "La prévalence du FDG-BAT est d'environ 3,36 % sur 6 454 patients, avec une corrélation négative à la température extérieure (baisse d'environ 1 % par +5 °C, maximum en décembre-février) [39][40].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "L'extravasation du FDG au site d'injection survient dans quelle proportion des TEP-FDG, et quel en est l'un des effets ?",
+        "options": [
+          "<1 % ; aucun effet",
+          "Jusqu'à 23 % ; point chaud simulant une lésion et SUV global faussement bas si extravasation importante",
+          "Toujours ; perte totale de l'examen",
+          "5 % ; uniquement un effet esthétique"
+        ],
+        "answer": 1,
+        "explanation": "L'extravasation survient dans jusqu'à 23 % des TEP-FDG ; elle peut créer un point chaud simulant une lésion, une captation ganglionnaire de drainage simulant une métastase, et abaisser faussement le SUV global (dose effective délivrée < dose injectée) [28][29].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi recommande-t-on une TDM basse dose SANS contraste pour la correction d'atténuation en TEP-TDM abdominopelvienne ?",
+        "options": [
+          "Pour réduire le coût de l'examen",
+          "Parce que les agents de contraste n'atténuent pas à 511 keV comme à l'énergie X, induisant une correction erronée",
+          "Parce que le contraste est toxique pour le détecteur TEP",
+          "Parce que la TDM contrastée allonge le temps d'acquisition TEP"
+        ],
+        "answer": 1,
+        "explanation": "Les agents de contraste n'atténuent pas à 511 keV comme à l'énergie X : leur conversion HU→µ511 keV est erronée. On réalise donc la TDM diagnostique avec contraste après la TEP, et une TDM basse dose sans contraste pour la correction d'atténuation [26].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Une non-uniformité du champ inondé (flood) de la gamma-caméra se rétroprojette en TEMP sous quel aspect caractéristique ?",
+        "options": [
+          "Artefact en étoile",
+          "Artefact en anneau / œil-de-bœuf (bull's-eye)",
+          "Liseré brillant périphérique",
+          "Halo photopénique"
+        ],
+        "answer": 1,
+        "explanation": "Une non-uniformité du détecteur (photomultiplicateurs, cristal, collimateur, électronique) se rétroprojette en artefact en anneau concentrique / œil-de-bœuf ; d'où le contrôle d'uniformité quotidien (intrinsèque) et hebdomadaire/mensuel (extrinsèque) [17][31][32].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel défaut instrumental de la TEMP entraîne un désalignement systématique des parois ou un artefact en diapason/anneau ?",
+        "options": [
+          "Le filtre rampe",
+          "L'erreur de centre de rotation (COR)",
+          "L'OSEM",
+          "Le pic d'énergie sur 140,5 keV"
+        ],
+        "answer": 1,
+        "explanation": "Une erreur de centre de rotation (COR) produit un flou ou un artefact en anneau/diapason ; son contrôle hebdomadaire/mensuel est indispensable, la sévérité étant proportionnelle à l'amplitude de l'erreur [17][31].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "En TEMP au technétium, une contamination par du pertechnétate libre (⁹⁹ᵐTcO₄⁻) se fixe physiologiquement sur :",
+        "options": [
+          "Le myocarde et les poumons uniquement",
+          "L'estomac, la thyroïde, les glandes salivaires et les plexus choroïdes",
+          "Exclusivement les os longs",
+          "Le cerveau et la moelle épinière"
+        ],
+        "answer": 1,
+        "explanation": "Le pertechnétate libre se fixe sur l'estomac, la thyroïde, les glandes salivaires, les plexus choroïdes et les reins ; un cliché du cou aide à identifier la source. Il témoigne d'une pureté radiochimique insuffisante de la trousse [19][20].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Concernant le ⁶⁸Ga-PSMA-11, quel artefact résulte de la forte excrétion urinaire, et comment l'atténuer ?",
+        "options": [
+          "Un foyer froid hépatique ; par la TDM contrastée",
+          "Un halo photopénique / artefact de diffusion (scatter) péri-vésical ; réduit par le furosémide et une meilleure correction de diffusion",
+          "Une surestimation osseuse diffuse ; par le procubitus",
+          "Une perte du signal cérébral ; par le réchauffement"
+        ],
+        "answer": 1,
+        "explanation": "La forte concentration urinaire induit une erreur de correction de diffusion (artefact halo/scatter péri-vésical pouvant masquer des lésions) ; le furosémide et l'amélioration de l'algorithme de correction de diffusion en réduisent la sévérité [8][9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "En ⁶⁸Ga-PSMA, comment distinguer une captation physiologique des ganglia sympathiques d'un ganglion métastatique ?",
+        "options": [
+          "Les ganglia ne fixent jamais le PSMA",
+          "Le SUVmax des métastases est très supérieur (PSMA 16,4 ± 14,8 vs 2,3 ± 0,7 pour les ganglia)",
+          "Les métastases sont toujours froides",
+          "Seule l'IRM permet de trancher"
+        ],
+        "answer": 1,
+        "explanation": "Les ganglia (cervicaux, cœliaques, sacrés) fixent modérément le PSMA et peuvent simuler un ganglion métastatique ; le SUVmax aide : métastases bien supérieures (PSMA 16,4 ± 14,8 vs 2,3 ± 0,7) [42].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Le thymus en TEP-FDG est un piège classique. Quelle affirmation est exacte ?",
+        "options": [
+          "Toute captation thymique est pathologique chez l'adulte",
+          "Captation en V inversé, physiologique chez l'enfant/adolescent, avec rebond thymique possible après chimiothérapie",
+          "Le thymus ne fixe jamais le FDG",
+          "La captation thymique signe toujours un lymphome"
+        ],
+        "answer": 1,
+        "explanation": "Le thymus a une captation en V inversé, physiologique chez l'enfant et l'adolescent ; il involue à l'âge adulte. Un rebond thymique après chimiothérapie est un piège interprétatif fréquent [10][38].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon l'EANM, à partir de quelle glycémie reporte-t-on en pratique clinique une TEP-FDG ?",
+        "options": [
+          "≥ 5 mmol/L (90 mg/dL)",
+          "≥ 7 mmol/L (126 mg/dL)",
+          "≥ 11 mmol/L (200 mg/dL)",
+          "≥ 20 mmol/L (360 mg/dL)"
+        ],
+        "answer": 2,
+        "explanation": "L'EANM recommande de reporter l'examen clinique si la glycémie est ≥ 11 mmol/L (~200 mg/dL) ; la cible recherche est de 7-8,3 mmol/L (126-150 mg/dL). Un jeûne ≥ 4 h et un délai post-injection de 60 min (55-75 min) sont requis [2].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel effet ont les stries claires (bright streak) et sombres (dark streak) d'un artefact métallique sur la mesure du SUV ?",
+        "options": [
+          "Stries claires → sous-estimation ; stries sombres → surestimation",
+          "Stries claires → surestimation ; stries sombres → sous-estimation",
+          "Aucune des deux n'affecte le SUV",
+          "Les deux entraînent une surestimation"
+        ],
+        "answer": 1,
+        "explanation": "Les stries claires (bright) entraînent une surestimation du SUVmean, les stries sombres (dark) une sous-estimation ; la réduction d'artefact métallique (MAR) atténue ces effets [24].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "La correction d'atténuation + diffusion + résolution en TEMP-MPI multicentrique a réduit les faux positifs dans quelle proportion ?",
+        "options": [
+          "De 30 % à 25 %",
+          "De 14 % à 3 % (>4×)",
+          "Aucune réduction",
+          "De 50 % à 40 %"
+        ],
+        "answer": 1,
+        "explanation": "Dans un essai multicentrique, l'ajout de la correction d'atténuation, de diffusion et de compensation de résolution en TEMP-MPI a amélioré le taux de normalité et réduit les faux positifs de plus de 4 fois (de 14 % à 3 %) [52].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la dose efficace de référence du ¹⁸F-FDG chez l'adulte de 70 kg, et quel est l'organe critique ?",
+        "options": [
+          "0,019 mSv/MBq ; vessie",
+          "0,14 mSv/MBq ; foie",
+          "0,0057 mSv/MBq ; moelle",
+          "0,19 mSv/MBq ; thyroïde"
+        ],
+        "answer": 0,
+        "explanation": "La dose efficace du ¹⁸F-FDG est d'environ 0,019 mSv/MBq chez l'adulte de 70 kg, l'organe critique étant la vessie (rétention urinaire du FDG) [46][49].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pour le ²⁰¹Tl-chlorure utilisé en TEMP de perfusion, quels sont les photopics et la dose efficace ?",
+        "options": [
+          "140,5 keV ; 0,0057 mSv/MBq",
+          "511 keV ; 0,019 mSv/MBq",
+          "69-80 keV (rayons X du Hg) ; 0,19 mSv/MBq",
+          "364 keV ; 0,14 mSv/MBq"
+        ],
+        "answer": 2,
+        "explanation": "Le ²⁰¹Tl émet des rayons X du mercure à 69-80 keV ; activité 74-111 MBq, dose efficace 0,19 mSv/MBq, nettement supérieure à celle des traceurs technétiés (sestamibi ~0,011, tétrofosmine ~0,010 mSv/MBq) [4].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Un artefact = signal image NON représentatif de la biodistribution réelle ; le distinguer d'un piège (captation physiologique trompeuse) évite faux positifs/négatifs.",
+        "En TEP-TDM, la majorité des artefacts viennent de la TDM servant à la correction d'atténuation (CA) : toujours relire la TEP non corrigée (NAC) + corrigée (CTAC) + TDM [1].",
+        "Quatre familles TEP : métal (faux positif par surestimation HU), mouvement respiratoire (zone froide du dôme hépatique), contraste (effet SUV <10 % en moyenne), troncature (liseré brillant si débord du FOV TDM ~50 cm) [1][2].",
+        "Diffusion Ga-68 : halo photopénique péri-vésical en PSMA, réduit par furosémide + meilleure correction de diffusion [8][9].",
+        "En TEMP-MPI, l'atténuation des tissus mous est la source #1 : déficit inférieur (diaphragme, homme) ou antérieur (sein, femme), levé par procubitus, bras levés et TEMP/TDM [34][35][36].",
+        "Artefacts instrumentaux TEMP : non-uniformité → anneau/œil-de-bœuf ; erreur de COR → flou/diapason ; pertechnétate libre → estomac/thyroïde/salivaires [17][19][31].",
+        "Graisse brune : prévalence ~3,36 % (↓ ~1 %/+5 °C) ; prévention par réchauffement 30-60 min (15,3 % → 3,3 %) [2][7][39][40].",
+        "Extravasation au site d'injection : jusqu'à 23 % des TEP-FDG ; point chaud factice + SUV global faussement bas [28][29]."
+      ],
+      "protocol": [
+        "Préparation FDG : jeûne ≥ 4 h ; glycémie < 11 mmol/L (200 mg/dL) en clinique ; délai post-injection 60 min (55-75 min) [2].",
+        "Anti-graisse brune : réchauffer le patient 30-60 min avant l'injection, pièce ~24 °C (75 °F) ; option propranolol 20 mg PO 1 h avant [2][7].",
+        "Anti-désalignement : éviter la TDM en apnée inspiration profonde pour la CA si quantification requise ; éviter toute troncature (bras hors champ) [2].",
+        "Contraste : préférer une TDM basse dose sans contraste pour la CA ; TDM diagnostique contrastée après la TEP [26].",
+        "TEMP-MPI : bras levés en décubitus ; imagerie procubitus (prone) si suspicion d'atténuation inférieure ; TEMP/TDM pour l'atténuation mammaire [5][6][36].",
+        "CQ gamma-caméra : uniformité (flood) intrinsèque quotidienne, extrinsèque hebdo/mensuelle ; centre de rotation (COR) hebdo/mensuel ; pic d'énergie sur 140,5 keV (Tc-99m) [17][31][32].",
+        "Reconstruction : OSEM itératif, filtre rampe contre l'artefact en étoile, correction d'atténuation + diffusion [17][52]."
+      ],
+      "scores": [
+        "Harmonisation SUV EARL/EANM : coefficients de recouvrement de référence pour la comparabilité inter-machines en oncologie [45].",
+        "Voxel reconstruit recommandé EANM : 3,0-4,0 mm dans chaque direction ; filtre spatial FWHM ≤ 7 mm [2].",
+        "Impact CA + diffusion + résolution en TEMP-MPI : faux positifs réduits de 14 % à 3 % (>4×) [52].",
+        "Récupération par correction de troncature : >90 % de l'activité dans la zone tronquée [1]."
+      ],
+      "pitfalls": [
+        "Faux positifs TEP : implant métallique (foyer hyperintense factice), produit de contraste, point chaud d'extravasation, ganglia PSMA simulant un ganglion (SUVmax métastases >> ganglia) [1][24][28][42].",
+        "Faux négatifs / sous-estimation : zone froide du dôme hépatique par désalignement respiratoire ; halo péri-vésical Ga-68 masquant des lésions ; SUV global abaissé si extravasation importante [9][22][28].",
+        "Variantes physiologiques FDG : graisse brune cervico-sus-claviculaire/paravertébrale symétrique, thymus en V (rebond post-chimio), muscle (effort/crispation), jonction iléo-cæcale [10][38][39].",
+        "TEMP : déficit inférieur (homme) ou antérieur (femme) à tester en procubitus/CA avant de conclure à une coronaropathie ; activité sous-diaphragmatique digestive/hépatique parasitant la paroi inférieure [34][37].",
+        "Instrumental TEMP : pertechnétate libre (pureté radiochimique insuffisante), non-uniformité (anneau), erreur de COR — vérifier le CQ avant de conclure [17][19][31].",
+        "Attention : la correction d'atténuation peut elle-même CRÉER de faux déficits (territoire IVA) en TEMP-MPI → relecture AC + NAC obligatoire [53]."
+      ]
+    },
+    "lead": "Reconnaître un artefact, c'est savoir distinguer une image trompeuse d'une vraie lésion. En imagerie hybride combinant la médecine nucléaire au scanner, de nombreux pièges peuvent simuler une maladie qui n'existe pas, ou au contraire masquer une anomalie réelle. Cet atlas rassemble les situations les plus fréquentes que rencontre le praticien, qu'elles viennent de l'appareil, du patient, de son mouvement, ou simplement de captations naturelles de l'organisme. La règle de base reste simple et constante : comparer toujours les images entre elles avant de conclure. C'est la condition pour éviter d'inutiles examens complémentaires et des décisions thérapeutiques fondées sur une fausse alerte.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cet « atlas des artefacts » ?",
+          "text": "En imagerie nucléaire (TEP ou TEMP), les appareils produisent des images très sensibles. Parfois, un détail sur l'image ne correspond pas à une vraie anomalie de votre corps : c'est ce qu'on appelle un « artefact ». Il peut s'agir, par exemple, d'un reflet créé par une prothèse métallique, par un mouvement pendant l'examen, ou par une zone du corps qui « brille » normalement sans que cela soit une maladie. Cet atlas est un guide destiné aux médecins pour reconnaître ces faux-semblants et éviter de les confondre avec une véritable lésion. Pour vous, le message est rassurant : votre médecin sait faire la différence entre une vraie anomalie et un simple piège de l'image."
+        },
+        {
+          "title": "Comment vous aidez à obtenir une image fiable",
+          "text": "La qualité des images dépend en partie de quelques gestes simples de votre part. On vous demandera souvent d'être à jeun avant un examen au sucre marqué, de rester calme et détendu sans trop bouger ni parler après l'injection, et parfois de bien vous couvrir pour rester au chaud. Le froid, l'effort, la mastication ou le stress peuvent en effet « réveiller » certaines zones du corps et brouiller la lecture. L'équipe pourra aussi vous repositionner (par exemple sur le ventre) ou vous demander de lever les bras le temps des images. Tous ces petits ajustements servent à éviter les pièges et à donner au médecin une image la plus nette possible.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Pensez à le signaler",
+              "text": "Avant l'examen, prévenez l'équipe si vous portez une prothèse, un pacemaker, des plombages dentaires, ou si vous avez eu récemment une injection de produit de contraste. Cela aide à interpréter correctement vos images."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce que ces pièges peuvent fausser mon diagnostic ?",
+          "text": "C'est justement pour éviter cela que ce travail existe. Les médecins de médecine nucléaire sont entraînés à repérer les artefacts et disposent de plusieurs vérifications : ils regardent l'image sous différents angles, la comparent à un scanner, et savent quelles zones du corps « brillent » naturellement. En cas de doute, ils peuvent refaire une image dans une autre position ou avec une préparation différente. L'objectif est toujours le même : ne pas vous annoncer une fausse alerte, et ne pas passer à côté de quelque chose de réel."
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser ?",
+          "text": "En tant que prescripteur, gardez à l'esprit que tout résultat de TEP ou de TEMP est interprété à la lumière des artefacts possibles. Certaines situations augmentent le risque de piège et méritent d'être signalées au service de médecine nucléaire : patient porteur d'implants métalliques (prothèse de hanche, amalgames dentaires, pacemaker, chambre implantable), examen réalisé après injection récente de produit de contraste, patient obèse ou ne pouvant lever les bras, diabète mal équilibré avant une TEP au FDG, ou réalisation en période froide (graisse brune). Un foyer isolé qui « tombe » pile sur une prothèse, ou un déficit de perfusion cardiaque inférieur chez l'homme / antérieur chez la femme, sont des situations classiques où l'artefact doit être évoqué avant de conclure."
+        },
+        {
+          "title": "Démarche et apport de la médecine nucléaire",
+          "text": "Le médecin nucléariste dispose de plusieurs leviers pour distinguer un artefact d'une vraie lésion : relire les images non corrigées de l'atténuation en parallèle des images corrigées, corréler systématiquement au scanner couplé, et au besoin refaire une acquisition (par exemple en procubitus pour lever une atténuation diaphragmatique, ou après réchauffement pour la graisse brune). Connaître les captations physiologiques normales (cerveau, cordes vocales, thymus chez l'enfant, tube digestif, muscles, voies urinaires) évite le surdiagnostic. Pour le clinicien, l'intérêt pratique est double : une bonne préparation du patient (jeûne, repos, chaleur, hydratation) réduit fortement ces pièges, et un compte rendu mentionnant un artefact n'est pas un échec mais une garantie de fiabilité.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adresser à un service de médecine nucléaire expérimenté, c'est bénéficier d'une lecture qui intègre d'emblée les artefacts : comparaison images corrigées / non corrigées, corrélation au scanner, repositionnement du patient et connaissance fine des captations physiologiques. Cela limite à la fois les faux positifs (artefact pris pour une lésion) et les faux négatifs (lésion masquée par un artefact), et donc les examens complémentaires inutiles. En signalant en amont les implants, un produit de contraste récent ou un diabète, vous contribuez directement à un résultat fiable."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - A1 · Carte d'identité de l'atlas des artefacts",
+          "text": "**Comment lire cette carte.** Cet atlas n'est pas un examen mais un **outil de relecture transversal** : il s'applique à toute acquisition TEP-TDM (tomographie par émission de positons couplée à la tomodensitométrie) et TEMP-TDM (tomographie d'émission monophotonique couplée à la TDM). Un **artefact** y est défini comme un signal d'image **non représentatif de la biodistribution réelle** du radiopharmaceutique, généré par l'acquisition, la **correction d'atténuation (CA)**, la reconstruction, le patient ou une contamination.[1][21] À distinguer du **piège** : une captation physiologique ou bénigne, *réelle* mais trompeuse, qui simule une lésion.[10]\n\n**Origine dominante en TEP-TDM = la CA dérivée de la TDM.** Les **2 photons d'annihilation de 511 keV** sont fortement atténués dans le corps ; la carte d'atténuation (µ-map) est dérivée d'une TDM à photons polychromatiques (~80 keV) puis convertie vers 511 keV par un algorithme bilinéaire. Toute erreur sur la TDM — mouvement, métal, contraste, troncature — se propage donc à la TEP corrigée (CTAC).[1][24] D'où la **règle d'or** : toujours relire la **TEP non corrigée de l'atténuation (NAC)** en parallèle de la TEP corrigée (AC) et de la TDM.[1][21]\n\n| Champ | Valeur de référence | Source |\n|---|---|---|\n| **Modalités couvertes** | TEP-TDM · TEMP-TDM (planaire/tomographique) | [1][21][34] |\n| **Photon imagé (TEP)** | 2 × **511 keV** (annihilation, émis à 180°) | [11] |\n| **Photon imagé (TEMP, Tc-99m)** | γ **140,5 keV** ; T½ **6,01 h** | [16] |\n| **Origine #1 d'artefact (TEP)** | Correction d'atténuation issue de la TDM | [1][21][24] |\n| **Origine #1 d'artefact (TEMP-MPI)** | Atténuation des tissus mous (diaphragme, sein) | [34][35] |\n| **Artefact le plus fréquent (TEP thorax)** | Mouvement respiratoire (désalignement diaphragmatique) | [21][22] |\n| **Piège physiologique majeur** | Graisse brune (BAT), ~**3,4 %** des TEP-FDG | [39] |\n| **Règle de relecture** | Comparer NAC + AC + TDM côte à côte | [1][21] |\n| **Champ de vue (FOV) TDM vs TEP** | ~**50 cm** (TDM) < ~**70 cm** (TEP) → troncature | [1] |\n| **Voxel TEP recommandé (EANM)** | **3,0–4,0 mm** ; filtre FWHM ≤ **7 mm** | [2] |\n| **Harmonisation quantitative** | Programme **EARL/EANM** (SUV inter-machines) | [45] |\n\n*L'atlas se lit comme une grille de sécurité : avant de conclure à une lésion, on élimine successivement l'artefact instrumental, l'artefact de correction, le piège physiologique et la contamination.*",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation imagés en TEP"
+            },
+            {
+              "value": "140,5 keV",
+              "label": "γ du Tc-99m en TEMP"
+            },
+            {
+              "value": "~3,4 %",
+              "label": "Prévalence de la graisse brune en TEP-FDG"
+            },
+            {
+              "value": "NAC + AC",
+              "label": "Relecture systématique anti-artefact de CA"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la NAC, votre filet de sécurité",
+              "text": "Devant toute hyperfixation au contact d'un **matériel dense** (prothèse, plombage, contraste) ou d'un **désalignement TEP/TDM**, vérifiez la **TEP non corrigée (NAC)** avant de conclure : si le foyer disparaît ou change de topographie, il s'agit d'un **artefact de correction d'atténuation**, non d'une lésion.[1][21]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — artefact ≠ piège",
+              "text": "Ne pas confondre **artefact** (signal faux, généré par la chaîne d'acquisition/correction) et **piège physiologique** (captation vraie mais bénigne : graisse brune, muscle, tube digestif). Le premier se corrige par la technique (NAC, repositionnement) ; le second par la connaissance de la biodistribution normale et la préparation du patient.[10][39]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Détection en coïncidence de deux photons d'annihilation de 511 keV émis à 180° : la base physique de la TEP, dont la quantification dépend de la correction d'atténuation issue de la TDM.",
+            "caption": "Fig. 1 — Coïncidence TEP (2 × 511 keV à 180°) : tout l'atlas découle de la dépendance de la TEP corrigée vis-à-vis de la µ-map TDM."
+          }
+        },
+        {
+          "title": "A2 - A2 · Définitions et taxonomie : artefact, piège, variante, contamination",
+          "text": "Une interprétation fiable suppose un **vocabulaire rigoureux** : quatre catégories d'aspects trompeurs, de mécanismes et de corrections distincts, sont à ne jamais confondre.\n\n**1. Artefact.** Signal d'image **non représentatif de la biodistribution réelle**, généré par la chaîne d'acquisition (instrument, détecteur), la **correction d'atténuation**, la reconstruction, le patient (mouvement, troncature) ou une contamination/extravasation.[1][21] Sa correction est **technique** : relecture de la TEP non corrigée (NAC), repositionnement, contrôle qualité (CQ) de la caméra, retraitement.\n\n**2. Piège (variante physiologique).** Captation **réelle** du radiopharmaceutique sur un tissu **normal**, mais simulant une lésion : graisse brune, muscle squelettique en tension, tissu lymphoïde iléo-cæcal, thymus de l'enfant, ganglia para-rachidiens en TEP-PSMA/DOTATATE.[10][39][42][44] Sa maîtrise est **cognitive** (connaissance de la biodistribution normale) et **préventive** (préparation du patient : jeûne, repos, réchauffement).\n\n**3. Variante anatomique.** Aspect normal mais inhabituel par sa topographie ou son intensité (involution/rebond thymique après chimiothérapie, asymétrie d'activité musculaire), à connaître pour ne pas surstadifier.[10][38]\n\n**4. Contamination.** Activité parasite **extérieure** à la cible : urine sur la peau/les vêtements, extravasation au point d'injection, ou **pertechnétate libre** (Tc-99m-O₄⁻) issu d'une pureté radiochimique insuffisante, qui se fixe sur estomac, thyroïde, glandes salivaires et plexus choroïdes.[19][20][28]\n\n| Catégorie | Mécanisme | Le signal est-il réel ? | Correction / prévention | Exemple-type |\n|---|---|---|---|---|\n| **Artefact** | Acquisition, CA, reconstruction, mouvement | Non (image faussée) | Relire la NAC, repositionner, CQ caméra | Surestimation au contact d'un implant métallique [24] |\n| **Piège physiologique** | Captation vraie sur tissu normal | Oui, mais bénin | Connaître la biodistribution ; préparation | Graisse brune cervico-sus-claviculaire [39] |\n| **Variante** | Anatomie/physiologie inhabituelle | Oui, normale | Reconnaissance, corrélation âge/contexte | Rebond thymique post-chimiothérapie [38] |\n| **Contamination** | Activité externe à la cible | Oui, mais hors cible | Hygiène, contrôle du point d'injection, CQ traceur | Urine cutanée ; pertechnétate libre [19][28] |\n\n**Grandes familles d'artefacts en TEP-TDM** (à mémoriser) : **implants métalliques, mouvement respiratoire, produit de contraste, troncature**, auxquels s'ajoutent l'**extravasation** au point d'injection et le **halo de diffusion** des traceurs au Ga-68.[1][21][27] L'extravasation du FDG est loin d'être rare : elle concerne **jusqu'à 23 %** des TEP-FDG et peut abaisser faussement le SUV global tout en créant un point chaud et une captation ganglionnaire de drainage simulant une métastase.[28]\n\n**Conséquence pratique sur le faux positif / faux négatif.** L'artefact métallique et le contraste **surestiment** localement la fixation (faux **positifs**) ; le mouvement respiratoire et l'extravasation peuvent **sous-corriger** ou diluer le signal (faux **négatifs** ou SUV faussement bas) ; le piège physiologique et la contamination génèrent des foyers extra-lésionnels (faux **positifs**).[1][21][28]",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la contamination par pertechnétate libre (TEMP)",
+              "text": "Une pureté radiochimique insuffisante du traceur marqué au Tc-99m libère du **pertechnétate libre (Tc-99m-O₄⁻)**, qui se fixe sur estomac, thyroïde, glandes salivaires, plexus choroïdes et reins, simulant des foyers pathologiques. Un cliché complémentaire du cou aide à identifier la source ; la prévention passe par le **contrôle qualité du marquage**.[19][20]"
+            },
+            {
+              "type": "info",
+              "title": "Pourquoi cette taxonomie est opératoire",
+              "text": "Chaque catégorie appelle une **action différente** : artefact → geste technique (NAC, CQ) ; piège → connaissance de la biodistribution ; variante → corrélation au contexte ; contamination → hygiène et CQ du traceur. Nommer correctement l'aspect, c'est déjà choisir la bonne correction."
+            }
+          ]
+        },
+        {
+          "title": "A3 - A3 · Bases physiques : pourquoi l'image trahit le réel (atténuation, diffusé, résolution)",
+          "text": "Trois phénomènes physiques expliquent l'essentiel des artefacts : l'**atténuation** et sa correction, le **diffusé (scatter)**, et la **résolution spatiale** finie des systèmes. Les comprendre, c'est anticiper où et pourquoi l'image trahit le réel.\n\n**1. Atténuation et correction d'atténuation (CA) — la source #1 d'artefact en imagerie hybride.** Les photons traversant les tissus sont absorbés ou déviés ; sans correction, les structures profondes apparaissent **artificiellement froides**. En TEP, les deux photons de **511 keV** doivent traverser tout le corps : l'atténuation est majeure et **obligatoirement corrigée** par une carte d'atténuation (µ-map) dérivée de la TDM, après conversion bilinéaire des unités Hounsfield (HU) en coefficient µ à 511 keV.[1][24] **Le talon d'Achille** : la TDM et l'émission ne sont **ni synchrones ni co-enregistrées**. La TEP intègre **plusieurs minutes** de respiration libre tandis que la TDM est quasi instantanée (parfois en apnée) ; tout désalignement — surtout au **diaphragme** — fausse la µ-map et donc le SUV (valeur de fixation normalisée).[21][22]\n\n*Cas particuliers de l'atténuation :*\n- **Métal** (prothèses, amalgames, chambres implantables, pacemaker) : HU très élevés → coefficient µ **surestimé** → **surestimation** factice de l'activité TEP au contact (faux positif) + **stries** sur la TDM. Les stries claires surestiment le SUVmean, les stries sombres le sous-estiment ; la réduction d'artefact métallique (MAR) atténue l'effet.[24][25]\n- **Produit de contraste** (iodé IV, baryté oral) : fortes densités intraluminales → HU élevés → **surestimation** locale de la captation. Or le contraste n'atténue pas à 511 keV comme à l'énergie X : la correction est erronée. L'impact reste typiquement **< 10 %** en moyenne sur le SUV, mais justifie d'utiliser une TDM basse dose **sans contraste** pour la CA.[1][26]\n- **Troncature** : le FOV transverse de la TDM (~**50 cm**) est plus étroit que celui de la TEP (~**70 cm**). Quand le patient déborde (obésité, bras le long du corps), apparaît un **liseré brillant de hautes valeurs d'atténuation + stries** périphériques. Les algorithmes de correction de troncature récupèrent **> 90 %** de l'activité dans la zone tronquée, mais l'EANM recommande fortement d'**éviter toute troncature**, qui rend la TEP non quantitative.[1][2][27]\n\n**2. Diffusé (scatter).** Les photons Compton déviés sont détectés avec une **position erronée**, dégradant le contraste et la quantification. La correction de diffusion (algorithme single-scatter simulation, SSS) peut elle-même **générer** un artefact lorsqu'une source d'activité urinaire est très intense : c'est le **halo photopénique** péri-vésical et péri-rénal des traceurs au **Ga-68** (PSMA, DOTATATE), qui peut masquer des lésions adjacentes. Il est atténué par le **furosémide** et l'amélioration de l'algorithme de scatter.[8][9]\n\n**3. Résolution spatiale finie.** Tout système a une fonction d'étalement (PSF) qui **lisse** les petites structures : c'est l'**effet de volume partiel**, qui **sous-estime** l'activité des lésions de taille inférieure à ~2–3 fois la résolution. L'EANM recommande un **voxel reconstruit de 3,0–4,0 mm** et un filtre spatial de **FWHM ≤ 7 mm** pour un compromis bruit/résolution reproductible.[2] La reconstruction itérative (OSEM) réduit le bruit et certains artefacts de la rétroprojection filtrée ; en TEMP, le **filtre rampe** élimine l'artefact en étoile de cette dernière.[17]\n\n**Spécificités physiques de la TEMP.** En l'absence de TEMP-TDM, l'atténuation des tissus mous **n'est pas corrigée** : elle est la **première source d'artefact** en imagerie de perfusion myocardique (atténuation diaphragmatique → faux déficit inférieur ; atténuation mammaire → faux déficit antérieur).[34][35] S'y ajoutent les artefacts **d'origine instrumentale** : une **non-uniformité du champ** se rétroprojette en **artefact en anneau / œil-de-bœuf (bull's-eye)** ; une **erreur de centre de rotation (COR)** produit un flou ou un artefact en « diapason ». D'où un CQ régulier : uniformité (flood) **quotidienne** (intrinsèque) à **hebdomadaire/mensuelle** (extrinsèque), COR **hebdomadaire/mensuel**.[17][18][31][32]\n\n| Phénomène physique | Conséquence sur l'image | Artefact / piège typique | Source |\n|---|---|---|---|\n| **Atténuation** (mal corrigée) | Faux froid ou faux chaud selon l'erreur de µ-map | Désalignement diaphragmatique, métal, contraste, troncature | [1][24][26] |\n| **Diffusé** (correction excessive) | Halo photopénique péri-source | Halo Ga-68 péri-vessie/reins | [8][9] |\n| **Résolution finie** (PSF) | Lissage, sous-estimation des petits foyers | Effet de volume partiel | [2] |\n| **Non-uniformité détecteur** (TEMP) | Anneaux concentriques | Bull's-eye / ring | [17][31] |\n| **Erreur de COR** (TEMP) | Flou, dédoublement | Artefact « diapason » | [17] |\n\n*Au total, l'image ne trahit jamais « au hasard » : chaque artefact a une signature physique reconnaissable, et c'est cette signature qui en commande la correction.*",
+          "steps": [
+            {
+              "title": "1 · Atténuation",
+              "text": "Les photons (511 keV en TEP, 140,5 keV en TEMP) sont absorbés en profondeur ; la correction par µ-map TDM corrige le déficit mais propage toute erreur de HU (mouvement, métal, contraste, troncature) au SUV.[1][24]"
+            },
+            {
+              "title": "2 · Diffusé",
+              "text": "Les photons déviés (Compton) sont mal positionnés ; la correction de scatter peut générer un halo photopénique péri-source (Ga-68 urinaire).[8][9]"
+            },
+            {
+              "title": "3 · Résolution",
+              "text": "La PSF finie lisse les petits foyers (effet de volume partiel) ; voxel 3,0–4,0 mm et FWHM ≤ 7 mm (EANM) pour un compromis reproductible.[2]"
+            },
+            {
+              "title": "4 · Instrument (TEMP)",
+              "text": "Non-uniformité du champ → anneaux/bull's-eye ; erreur de COR → flou. CQ régulier de la γ-caméra (uniformité, COR).[17][31]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "~50 vs 70 cm",
+              "label": "FOV TDM < FOV TEP → troncature"
+            },
+            {
+              "value": "< 10 %",
+              "label": "Impact moyen du contraste sur le SUV"
+            },
+            {
+              "value": "> 90 %",
+              "label": "Activité récupérée par correction de troncature"
+            },
+            {
+              "value": "3,0–4,0 mm",
+              "label": "Voxel TEP recommandé (EANM)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — désalignement respiratoire TEP/TDM",
+              "text": "Une TDM en **apnée inspiration profonde** fige le diaphragme dans une position absente de la TEP en respiration libre : la µ-map est décalée, créant un **artefact curviligne froid** (« banane ») sous le dôme hépatique ou une fausse lésion pulmonaire basale. Ne pas utiliser une TDM en apnée pour la CA si la quantification est requise.[2][22]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le diffusé corrigé… crée parfois l'artefact",
+              "text": "Le **halo Ga-68** n'est pas un défaut de captation mais un **excès de correction de diffusion** autour d'une source urinaire très concentrée. Le reconnaître évite de masquer une lésion péri-vésicale ; le **furosémide** et une meilleure correction de scatter en réduisent la sévérité.[8][9]"
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'une gamma-caméra (collimateur, cristal NaI(Tl), photomultiplicateurs, électronique de positionnement) : une non-uniformité de ce détecteur ou une erreur de centre de rotation se rétroprojette en artefact en anneau ou en flou sur l'image TEMP reconstruite.",
+            "caption": "Fig. 2 — γ-caméra : la non-uniformité du détecteur et l'erreur de COR sont les sources physiques des artefacts en anneau/bull's-eye en TEMP."
+          }
+        },
+        {
+          "title": "B4 - B4 · Réaliser une acquisition robuste : protocoles anti-artefacts (gating, bras, contraste)",
+          "text": "La meilleure relecture ne rattrape jamais une acquisition fautive : la prévention des artefacts se joue d'abord au protocole. En **TEP-TDM** (tomographie par émission de positons couplée à la tomodensitométrie), l'artefact dominant naît du **couplage émission/transmission** — la TEP est acquise sur plusieurs minutes en respiration libre, la TDM en quelques secondes voire en apnée — qui sert à la **correction d'atténuation (CA)** [21]. La carte d'atténuation (µ-map) est obtenue par conversion bilinéaire des unités Hounsfield (HU) en coefficient d'atténuation à **511 keV** ; toute erreur de HU se propage donc directement en erreur de **SUV** (standardized uptake value) [24]. La règle d'or transversale, posée dès l'acquisition, est de **toujours reconstruire et relire la TEP non corrigée de l'atténuation (NAC) en regard de la TEP corrigée (CTAC) et de la TDM** [1].\n\n**Paramètres de reconstruction recommandés (EANM v2.0).** Pour garantir comparabilité et limiter les artefacts de reconstruction : voxel reconstruit **3,0–4,0 mm** dans chaque direction, filtre spatial de largeur à mi-hauteur **FWHM ≤ 7 mm** [2]. La matrice TEP usuelle est **128×128** et la matrice TDM **512×512**, avec une TDM de CA à **100–140 kV et 60–100 mA** et une TEP de **3–5 min par pas de lit** [1]. L'harmonisation multicentrique des SUV repose sur le programme **EARL/EANM** (coefficients de recouvrement de référence) pour rendre les valeurs comparables entre machines [45].\n\n**Délai et activité (prévention des artefacts physiologiques et de quantification).** Le délai post-injection (uptake time) est de **60 min** (acceptable 55–75 min), reproductible à **± 10 min** pour les études longitudinales [2]. L'activité ¹⁸F-FDG suit le schéma EANM lié au poids et à la durée d'acquisition : **FDG (MBq) = 14 × poids (kg) / temps d'acquisition (min)** pour un recouvrement de lit ≤ 30 % (coefficient **7** si > 30 %), avec un plafond de **530 MBq** pour les systèmes L(Y)SO chez les sujets > 90 kg [2]. La FDA retient **185–370 MBq** chez l'adulte de 70 kg [11].\n\n| Levier d'acquisition | Réglage anti-artefact | Artefact évité | Source |\n|---|---|---|---|\n| **Relecture systématique** | NAC + CTAC + TDM côte à côte | Prendre un artefact de CA pour une lésion | [1] |\n| **TDM de CA** | Respiration libre / fin d'expiration, **pas d'apnée inspiration profonde** | Désalignement diaphragmatique, SUV faussés | [2] |\n| **Champ de vue TDM** | Patient entièrement dans le FOV, **bras hors du champ thoracique** si possible | Troncature (liseré brillant + stries) | [1,27] |\n| **Contraste** | TDM de CA **sans contraste** / contraste dilué ; TDM diagnostique avec contraste après la TEP | Surestimation locale de la fixation | [26] |\n| **Site d'injection** | Voie sûre, contrôle d'extravasation | Point chaud, SUV global faussé | [28] |\n| **Implants métalliques** | Acquisition de la NAC ; MAR (metal artifact reduction) sur la TDM | Foyer hyperintense factice | [25] |\n\n**Gating respiratoire (synchronisation respiratoire).** Le mouvement respiratoire est le problème majeur de la CA basée TDM, surtout au diaphragme et aux bases pulmonaires [22]. La TEP finale étant la **moyenne de nombreux cycles** respiratoires alors que la TDM fige une seule position, le mismatch crée l'artefact [21]. Les techniques de réduction (gating prospectif/rétrospectif, TDM en respiration libre moyennée, ciné-TDM) recalent émission et transmission et restaurent la quantification des lésions basales [22]. À défaut de gating, une **TDM en fin d'expiration normale** est le meilleur compromis de recalage [2].\n\n**Positionnement des bras.** Le compromis dépend de la région explorée : bras le long du corps sur les acquisitions tête-et-cou, mais **levés au-dessus de la tête** sur le thorax et l'abdomen pour éviter la troncature et la surestimation locale au contact des bras [27]. En **TEMP** de perfusion myocardique (TEMP = tomographie d'émission monophotonique), lever le **bras gauche** réduit l'atténuation par les tissus du bras [6].\n\n**Contraste iodé/baryté.** Les agents de contraste élèvent fortement les HU mais **n'atténuent pas à 511 keV** comme à l'énergie des rayons X diagnostiques : la conversion bilinéaire surcorrige et surestime la fixation FDG (faux positifs) [21,26]. La parade : utiliser une **TDM basse dose sans contraste** pour la CA et réserver la TDM diagnostique avec contraste à un temps ultérieur ; l'impact moyen du contraste positif reste **< 10 %** sur la SUV mais peut être focalement trompeur [2,26].\n\n**TDM ultra-basse dose.** Les protocoles de TDM ultra-basse dose pour la CA réduisent la dose additionnelle tout en conservant la qualité de la carte d'atténuation [50] — un levier de radioprotection compatible avec une CA fiable.",
+          "steps": [
+            {
+              "title": "Avant l'acquisition",
+              "text": "Vérifier préparation (jeûne ≥ 4 h, glycémie, réchauffement anti-graisse brune), planifier le positionnement des bras selon la région, choisir une TDM de CA sans contraste, et activer le gating si exploration thoracique [2,22]."
+            },
+            {
+              "title": "Acquisition transmission (TDM de CA)",
+              "text": "TDM basse dose en respiration libre ou fin d'expiration normale, patient entièrement dans le FOV transverse ; activer la MAR si implant métallique connu [25,27]."
+            },
+            {
+              "title": "Acquisition émission (TEP)",
+              "text": "3–5 min/pas de lit, matrice 128×128, recalage temporel avec la TDM ; surveiller le mouvement du patient [1]."
+            },
+            {
+              "title": "Reconstruction",
+              "text": "Voxel 3,0–4,0 mm, filtre FWHM ≤ 7 mm, reconstruction CTAC ET NAC systématiques, calibration EARL/EANM si quantification [2,45]."
+            },
+            {
+              "title": "Contrôle final",
+              "text": "Relire NAC + CTAC + TDM côte à côte ; vérifier le site d'injection pour exclure une extravasation avant de valider les SUV [1,28]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "≤ 7 mm",
+              "label": "FWHM du filtre spatial (EANM v2.0) [2]"
+            },
+            {
+              "value": "3,0–4,0 mm",
+              "label": "Voxel reconstruit recommandé [2]"
+            },
+            {
+              "value": "60 min",
+              "label": "Délai post-injection FDG (55–75 min) [2]"
+            },
+            {
+              "value": "< 10 %",
+              "label": "Impact moyen du contraste positif sur la SUV [2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — TDM de CA en apnée inspiration profonde",
+              "text": "Une **TDM en apnée inspiration profonde** fige le diaphragme dans une position non représentative de la position moyenne de la TEP (respiration libre, plusieurs minutes) : le désalignement rend la TEP non quantitative aux bases pulmonaires et au dôme hépatique. Préférer une respiration libre ou une fin d'expiration normale ; ne pas l'utiliser si la quantification est requise [2,22]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la NAC est votre filet de sécurité",
+              "text": "En TEP-TDM, **la majorité des artefacts proviennent de la TDM** servant à la CA. Toute hyperfixation au contact d'un matériel dense (métal, contraste) ou toute zone froide para-diaphragmatique doit être vérifiée sur la **TEP non corrigée (NAC)** avant de conclure : un foyer présent sur la CTAC mais absent sur la NAC est un artefact de correction, pas une lésion [1,21]."
+            },
+            {
+              "type": "info",
+              "title": "Harmonisation EARL/EANM",
+              "text": "Pour que les SUV soient comparables d'une machine et d'un centre à l'autre, le programme **EARL/EANM** définit des coefficients de recouvrement de référence et des bornes de calibration. C'est le prérequis de toute relecture quantitative multicentrique et de tout suivi longitudinal fiable [45]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence en TEP : deux photons d'annihilation de 511 keV émis à 180°, détectés simultanément, avec la TDM fournissant la carte d'atténuation servant à corriger le signal."
+          }
+        },
+        {
+          "title": "B5 - B5 · Atlas pratique des artefacts de correction d'atténuation (métal, contraste, désalignement)",
+          "text": "La **correction d'atténuation (CA)** par TDM est, en TEP-TDM, la première source d'artefacts. Le mécanisme commun : la µ-map est dérivée de photons polychromatiques (~80 keV) puis mise à l'échelle vers **511 keV** par algorithme bilinéaire ; toute valeur de HU aberrante — métal, contraste, troncature, mouvement — produit une erreur d'atténuation locale qui se traduit par une sur- ou sous-estimation de la fixation [1,24]. Cet atlas décline les quatre grandes familles (métal, contraste, troncature, désalignement) plus la diffusion, avec leur aspect, leur impact quantitatif et la conduite à tenir.\n\n| Famille | Mécanisme | Aspect typique | Conduite | Source |\n|---|---|---|---|---|\n| **Implants métalliques** | HU très élevés → coefficient µ surestimé | Foyer hyperintense factice (faux positif) + stries TDM | Relire NAC ; MAR sur la TDM | [24,25] |\n| **Contraste (IV/oral, iode/baryte)** | HU élevés mais pas d'atténuation réelle à 511 keV | Surestimation focale de la fixation FDG | TDM de CA sans contraste / diluée | [21,26] |\n| **Troncature TDM** | FOV TDM (~50 cm) < FOV TEP (~70 cm) | Liseré brillant de hautes valeurs + stries périphériques | Algorithme de correction de troncature ; bras dans le champ | [1] |\n| **Désalignement / mouvement** | TDM fige une position ≠ position moyenne TEP | Zone froide (« cold/banana ») sous le diaphragme | Gating, recalage, NAC | [22,23] |\n| **Diffusion / halo (Ga-68)** | Forte activité urinaire → erreur de correction de diffusion | Halo photopénique péri-vessie/reins masquant les lésions | Furosémide, amélioration de la correction de diffusion | [8,9] |\n\n**1. Artefacts métalliques.** Prothèses de hanche, amalgames dentaires, chambres implantables, pacemaker, clips : leurs HU élevés se traduisent par une **surestimation des coefficients d'atténuation** et donc de l'activité TEP au contact, mimant un foyer hypermétabolique [24]. Le métal empêche toute quantification fiable au voisinage immédiat ; les techniques de **réduction d'artefact métallique (MAR)** restaurent partiellement les organes adjacents, mais la relecture de la **NAC** reste la sauvegarde indispensable avant de conclure à un faux positif [25]. Sur la TDM, l'aspect associe **stries claires** (bright streak → surestimation du SUVmean) et **stries sombres** (dark streak → sous-estimation) [24].\n\n**2. Produits de contraste.** Le piège est le découplage entre l'atténuation à l'énergie X diagnostique (forte pour l'iode/la baryte) et l'atténuation réelle à **511 keV** (faible) : la conversion bilinéaire surcorrige les zones de contraste concentré et **surestime la captation FDG**, produisant de faux positifs notamment digestifs [21,26]. La parade standard est une **TDM basse dose sans contraste** dédiée à la CA, la TDM diagnostique injectée étant réalisée séparément [26]. L'impact moyen reste **< 10 %** sur la SUV mais peut être focalement décisif [2].\n\n**3. Troncature TDM.** Le **champ de vue (FOV) transverse de la TDM ≈ 50 cm** est inférieur à celui de la TEP **≈ 70 cm** : lorsque le patient déborde du FOV TDM (obésité, bras le long du corps), apparaît un **liseré brillant de hautes valeurs d'atténuation bordé de stries**, qui fausse la quantification périphérique [1]. Les algorithmes de correction de troncature récupèrent **> 90 %** de l'activité dans la zone tronquée [1]. L'EANM recommande fortement d'éviter toute troncature, car elle dégrade aussi la correction de diffusion et rend la TEP non quantitative [2]. Les **bras** sont une cause fréquente : bras le long du corps → troncature et surestimation locale [27].\n\n**4. Désalignement TEP/TDM.** Détaillé en B6 pour le volet mouvement ; sur le plan CA, retenir que tout décalage spatial entre µ-map et émission crée une erreur d'atténuation locale, typiquement une **zone froide curviligne** sous le dôme hépatique [23].\n\n**5. Diffusion et artefact halo des traceurs au Ga-68.** Avec le **⁶⁸Ga-PSMA-11** (ligand de l'antigène membranaire spécifique de la prostate), la forte concentration urinaire vésicale provoque une erreur de l'algorithme de correction de diffusion (single-scatter simulation, SSS), générant un **halo photopénique** autour de la vessie et des reins qui peut masquer des lésions adjacentes [8,9]. La sévérité est réduite par une **diurèse au furosémide** et par l'amélioration des algorithmes de correction de diffusion [8].\n\n**Performance — bénéfice et revers de la CA.** En TEMP de perfusion myocardique, l'association **CA + correction de diffusion + compensation de résolution** réduit les faux positifs de plus de **4× (de 14 % à 3 %)** [52]. Mais la CA peut aussi **créer** de faux déficits (territoire de l'artère interventriculaire antérieure) : d'où l'obligation de relire systématiquement **CA + NAC** [53]. La TEMP/TDM corrige par ailleurs l'atténuation mammaire et améliore la spécificité [54].",
+          "stats": [
+            {
+              "value": "~50 vs ~70 cm",
+              "label": "FOV TDM vs FOV TEP (origine de la troncature) [1]"
+            },
+            {
+              "value": "> 90 %",
+              "label": "Activité récupérée dans la zone tronquée corrigée [1]"
+            },
+            {
+              "value": "14 % → 3 %",
+              "label": "Faux positifs TEMP-MPI : CA + diffusion + résolution [52]"
+            },
+            {
+              "value": "< 10 %",
+              "label": "Impact moyen du contraste positif sur la SUV [2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — foyer métallique factice",
+              "text": "Toute hyperfixation projetée sur une prothèse, un amalgame dentaire ou une chambre implantable est suspecte d'**artefact de surcorrection d'atténuation**. Vérifier sur la TEP NAC : un foyer présent sur la CTAC et **absent sur la NAC** est un artefact, pas une lésion. Le métal interdit toute quantification fiable à son contact, même après MAR [24,25]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — halo photopénique du Ga-68",
+              "text": "Avec le ⁶⁸Ga-PSMA-11, un **halo froid** péri-vésical ou péri-rénal peut effacer une lésion ganglionnaire ou osseuse adjacente. Anticiper par une **diurèse au furosémide** et s'appuyer sur un algorithme de correction de diffusion optimisé ; en cas de doute, relire la NAC et recadrer la fenêtre [8,9]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — lire le sens de la strie",
+              "text": "En présence de métal, le sens de l'erreur de quantification dépend de la strie : **strie claire → surestimation** du SUVmean, **strie sombre → sous-estimation**. Cette dichotomie aide à juger si une valeur mesurée près d'un implant est exploitable ou doit être rejetée [24]."
+            },
+            {
+              "type": "info",
+              "title": "Bénéfice net mais surveillé de la CA",
+              "text": "La CA améliore franchement la spécificité (faux positifs TEMP-MPI divisés par plus de 4) mais peut introduire ses propres faux déficits ; la relecture conjointe **CA + NAC** n'est pas optionnelle, c'est le standard [52,53]."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Protocole d'imagerie de perfusion myocardique illustrant l'acquisition tomographique et la correction d'atténuation, contexte des faux déficits liés à la correction d'atténuation et de leur contrôle par relecture non corrigée."
+          }
+        },
+        {
+          "title": "B6 - B6 · Atlas pratique des artefacts de mouvement et de positionnement",
+          "text": "Les artefacts de mouvement et de positionnement sont la seconde grande famille, et la plus fréquente en pratique. Ils naissent du décalage entre la position du patient (ou d'un organe) pendant l'émission et pendant la transmission, ou d'une atténuation par des tissus mal positionnés. Ils se corrigent largement par le **positionnement, le gating et le repositionnement** — d'où l'importance de les reconnaître pour ne pas surdiagnostiquer.\n\n**1. Mouvement respiratoire (TEP-TDM).** C'est le problème majeur de la CA basée TDM : la TDM fige une position respiratoire (souvent l'apnée), la TEP moyenne plusieurs minutes de respiration libre [22]. Le désalignement maximal siège au **diaphragme** et donne un aspect caractéristique d'**artefact curviligne froid (« cold/banana »)** sous le dôme hépatique, simulant une fausse lésion ou un faux comblement, avec des **SUV faussés** pour les lésions pulmonaires basales [22,23]. Solution : gating respiratoire ou TDM en fin d'expiration, et recalage TEP/TDM (cf. B4) [22].\n\n**2. Mouvement corporel global.** Tout mouvement du patient entre transmission et émission, ou pendant l'émission, dégrade le recalage et la quantification ; la relecture NAC + TDM permet d'objectiver le décalage. La parade est l'immobilisation, le confort du patient, et la sédation chez le jeune enfant [22].\n\n**3. Extravasation au site d'injection.** L'extravasation du FDG survient dans **jusqu'à 23 %** des TEP-FDG [28]. Ses trois conséquences :\n- un **point chaud** au site d'injection simulant une lésion [29] ;\n- une **captation ganglionnaire de drainage** (axillaire, épitrochléen) simulant une métastase [29] ;\n- un **SUV global faussement bas** si l'extravasation est importante (la dose effectivement délivrée est inférieure à la dose injectée) [29,30].\n\nLa relecture du site d'injection est donc systématique avant de valider toute mesure de SUV [28].\n\n**4. Atténuation des tissus mous en TEMP de perfusion myocardique (TEMP-MPI).** Le cœur est entouré de tissus de densités variables (os, diaphragme, poumon, sein) : l'**atténuation des tissus mous est la source la plus fréquente d'artefact** en TEMP-MPI [34]. Deux patterns dominants :\n\n| Atténuation | Terrain | Faux déficit | Manœuvre correctrice | Source |\n|---|---|---|---|---|\n| **Diaphragmatique** | Homme surtout | Paroi **inférieure** | Procubitus (prone) | [35,36] |\n| **Mammaire** | Femme surtout | Paroi **antérieure** (parfois latérale/septale/apicale) | TEMP/TDM, repositionnement du sein | [35,54] |\n| **Bras** | Décubitus | Latéral gauche | **Bras levés** au-dessus de la tête | [6] |\n| **Sous-diaphragmatique** | Activité digestive/hépatique | Paroi **inférieure** (ramp filter/scatter) | Délai, hydratation, repositionnement | [37] |\n\n**5. Manœuvre du procubitus (prone).** En décubitus dorsal, l'atténuation diaphragmatique crée un faux déficit inférieur ; en **procubitus**, le diaphragme descend et le cœur se déplace en avant, levant l'atténuation : un déficit inférieur qui **se corrige en procubitus** signe l'artefact d'atténuation, et non une coronaropathie [5,36]. Dans une série de référence, l'amélioration était correctement révélée chez **89/120 patients** (paroi inférieure) et **12/19** (paroi antérieure) [5]. Le procubitus réduit à la fois les artefacts et l'exposition du patient [5].\n\n**6. Contamination et activité parasite.** En TEMP au **⁹⁹ᵐTc** (technétium-99m, γ 140,5 keV, T½ 6,01 h), une contamination par **pertechnétate libre (⁹⁹ᵐTcO₄⁻)** issu d'un marquage imparfait se fixe sur l'estomac, la thyroïde, les glandes salivaires, les plexus choroïdes et les reins : un cliché du cou aide à identifier la source [16,19,20]. L'activité urinaire ou digestive de voisinage peut de même mimer ou masquer une lésion ; l'hydratation, la vidange vésicale et un délai adapté la limitent [37].\n\n**Origine instrumentale (rappel CQ).** Certains artefacts « de positionnement » sont en réalité instrumentaux et relèvent du contrôle qualité de la gamma-caméra : une **non-uniformité du champ** (flood) se rétroprojette en **artefact en anneau / œil-de-bœuf (bull's-eye)**, et une **erreur de centre de rotation (COR)** produit un flou ou un artefact en « diapason » [31]. Causes de non-uniformité : photomultiplicateurs (PMT), collimateur, hydratation du cristal, électronique [32]. Le contrôle d'uniformité intrinsèque est **quotidien**, le COR **hebdomadaire à mensuel** [31,33].",
+          "steps": [
+            {
+              "title": "Repérer le mouvement respiratoire",
+              "text": "Zone froide « banana » sous le diaphragme sur la CTAC → vérifier la NAC ; si confirmé, gating ou TDM en fin d'expiration [22,23]."
+            },
+            {
+              "title": "Contrôler le site d'injection",
+              "text": "Inspecter le bras d'injection : exclure point chaud, captation de drainage et SUV global abaissé par extravasation [28,29]."
+            },
+            {
+              "title": "Tester l'atténuation en TEMP-MPI",
+              "text": "Déficit inférieur → acquisition en procubitus ; déficit antérieur → TEMP/TDM ; comparer CA et NAC [5,35,36]."
+            },
+            {
+              "title": "Écarter une contamination",
+              "text": "Fixation thyroïde/estomac/salivaires en TEMP-Tc → suspecter du pertechnétate libre ; un cliché du cou identifie la source [19,20]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "jusqu'à 23 %",
+              "label": "Extravasation au site d'injection en TEP-FDG [28]"
+            },
+            {
+              "value": "89/120",
+              "label": "Déficits inférieurs corrigés en procubitus [5]"
+            },
+            {
+              "value": "140,5 keV",
+              "label": "Photon γ du ⁹⁹ᵐTc (T½ 6,01 h) [16]"
+            },
+            {
+              "value": "quotidien",
+              "label": "Contrôle d'uniformité intrinsèque (gamma-caméra) [31]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — zone froide para-diaphragmatique",
+              "text": "Une **zone froide curviligne** sous le dôme hépatique en TEP n'est pas une lésion mais un **désalignement respiratoire TEP/TDM**. Vérifier sur la NAC (où elle disparaît) et, si la quantification basale est critique, réacquérir avec gating ou TDM en fin d'expiration [22,23]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — déficit inférieur ou antérieur en TEMP-MPI",
+              "text": "Un déficit **inférieur** (homme) évoque d'abord une **atténuation diaphragmatique** : le tester en **procubitus** avant de conclure à une coronaropathie. Un déficit **antérieur** (femme) évoque une **atténuation mammaire** : recourir à la TEMP/TDM. Un déficit fixe qui se corrige au repositionnement est un artefact [5,35,36]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — toujours regarder le site d'injection",
+              "text": "Une **extravasation** (jusqu'à 23 % des examens) peut créer un point chaud, une captation ganglionnaire de drainage simulant une métastase, et abaisser faussement tous les SUV. Inspecter systématiquement le bras d'injection avant de valider une quantification ou de conclure à une adénopathie axillaire [28,29,30]."
+            },
+            {
+              "type": "info",
+              "title": "Distinguer artefact instrumental et artefact de positionnement",
+              "text": "Un artefact en **anneau / œil-de-bœuf** ou en « diapason » n'est pas lié au patient mais au **contrôle qualité de la caméra** (non-uniformité du flood, erreur de COR). Le suivi du CQ — uniformité quotidienne, COR hebdomadaire à mensuel — élimine ces artefacts à la source [31,32,33]."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'une gamma-caméra (collimateur, cristal NaI(Tl), photomultiplicateurs, électronique de positionnement) illustrant l'origine instrumentale des artefacts en anneau et de centre de rotation en TEMP."
+          }
+        },
+        {
+          "title": "C7 - C7 · Interpréter les captations physiologiques piégeantes (graisse brune, muscle, digestif, urinaire)",
+          "text": "La **captation physiologique** du ¹⁸F-FDG (²-déoxy-²-[¹⁸F]fluoro-D-glucose, analogue du glucose phosphorylé puis piégé sous forme de FDG-6-phosphate) est le premier pourvoyeur de **faux positifs** en TEP-TDM oncologique. Un piège n'est pas un artefact (signal non représentatif de la biodistribution) mais une **fixation réelle, bénigne et trompeuse** : la connaissance exhaustive de la biodistribution normale en est le seul antidote. Les sièges physiologiques à mémoriser sont le cortex cérébral (substance grise), les cordes vocales et l'anneau de Waldeyer, le thymus, le myocarde du ventricule gauche, le tube digestif, le foie, la rate, la moelle osseuse, les reins, les uretères et la vessie, le muscle squelettique et la graisse brune [10]. La méthode de désamorçage est constante : **vérifier la symétrie, corréler à la TEMP-TDM/TDM, contrôler la préparation** (jeûne, repos, réchauffement, hydratation) et au besoin recourir aux clichés tardifs.\n\n**▸ Graisse brune (BAT, brown adipose tissue) — le piège majeur.** Tissu thermogène riche en mitochondries (protéine découplante UCP-1), activé par le froid via le système sympathique, la BAT capte intensément le FDG aux sièges **cervico-sus-claviculaire, axillaire, médiastinal, paravertébral et péri-surrénalien**, mimant des adénopathies métastatiques [7]. Sa prévalence détectable est d'environ **3,36 %** sur une série de **6 454 patients**, et d'environ **5 %** à température ambiante [39]. Elle est **inversement corrélée à la température extérieure** (baisse d'environ **1 % par +5 °C**, maximum décembre-février) [40], et plus fréquente chez la **femme (4,88 %)** que chez l'homme **(1,77 %)**, le sujet jeune, mince, à glycémie basse [39]. La prévention thermique est efficace : maintenir le patient au chaud **30-60 min avant** l'injection ramène la prévalence de **15,3 % à 3,3 %** [7] ; une température ambiante constante de **24 °C** réduit la captation BAT chez l'enfant en hiver [41]. La clé interprétative : une hyperfixation **symétrique, en chapelet**, superposée sur la TDM à de la **densité graisseuse (−50 à −150 UH)** et non à un ganglion, est une BAT et non une lésion [7].\n\n**▸ Muscle squelettique.** Une fixation **diffuse, bilatérale et symétrique** traduit un effort, une tension, une crispation ou une mastication récents ; elle siège typiquement sur les crura diaphragmatiques, les intercostaux, le psoas, les paravertébraux, les masticateurs et les muscles thénar/hypothénar [10]. Un piège iatrogène fréquent : l'**injection d'insuline** dans les 4 h précédant le FDG redistribue massivement le traceur vers le muscle (captation insulino-dépendante via GLUT-4), d'où la règle de ne pas corriger une hyperglycémie par insuline juste avant l'examen [2]. Prévention : **repos et silence** pendant l'injection et la phase de captation (surtout pour les explorations ORL) [2].\n\n**▸ Tube digestif.** La captation digestive est **très variable**, parfois intense, maximale à la **jonction iléo-cæcale** et dans le côlon ascendant (tissu lymphoïde, flore, péristaltisme) ; l'estomac fixe de façon diffuse modérée et le sphincter anal de façon focale [10]. Un aspect **linéaire le long d'un segment** évoque l'inflammation, tandis qu'un foyer **focal** justifie une coloscopie (polype, néoplasie occulte) [26]. La metformine majore franchement la captation colique diffuse — un piège anamnestique à connaître chez le diabétique [26].\n\n**▸ Voies urinaires.** Le FDG n'étant pas réabsorbé après filtration glomérulaire, l'activité urinaire (reins, uretères, vessie) est intense et constitue à la fois un **piège** (stase urétérale focale simulant une adénopathie) et un **masque** (lésion pelvienne noyée dans l'activité vésicale) [10,26]. Prévention : **hydratation et miction** juste avant l'acquisition ; en cas de doute pelvien, clichés tardifs après vidange.\n\nSièges physiologiques piégeants et leur désamorçage :\n\n| Siège | Aspect piégeant | Mécanisme | Désamorçage |\n|---|---|---|---|\n| **Graisse brune** | Foyers cervico-sus-clav./axillaires/paravertébraux symétriques | Thermogenèse sympathique (UCP-1) | Symétrie + densité graisseuse TDM ; réchauffement préventif [7,39] |\n| **Muscle** | Captation diffuse symétrique | Effort/tension ; **insuline** récente | Repos ; pas d'insuline < 4 h [2,10] |\n| **Digestif** | Iléo-cæcale, côlon ; linéaire ou focal | Lymphoïde, flore, metformine | TEMP-TDM ; focal → coloscopie [10,26] |\n| **Urinaire** | Stase urétérale, vessie pleine | Excrétion non réabsorbée | Hydratation, miction, clichés tardifs [10,26] |\n| **Thymus** | « V » médiastinal | Tissu actif (enfant, rebond) | Âge, contexte post-chimio [38] |",
+          "stats": [
+            {
+              "value": "≈ 3,36 %",
+              "label": "Prévalence de BAT (6 454 patients) [39]"
+            },
+            {
+              "value": "15,3 → 3,3 %",
+              "label": "BAT après réchauffement préventif [7]"
+            },
+            {
+              "value": "≈ 1 % / +5 °C",
+              "label": "Baisse de BAT par température extérieure [40]"
+            },
+            {
+              "value": "≥ 4 h",
+              "label": "Délai insuline-FDG (sinon captation musculaire) [2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — graisse brune par temps froid",
+              "text": "Toute hyperfixation FDG **cervicale, sus-claviculaire, axillaire ou paravertébrale, symétrique et en chapelet**, survenant en période froide chez un sujet jeune/mince, doit faire évoquer en premier la **graisse brune** avant une atteinte ganglionnaire. La superposition exacte sur de la densité graisseuse (−50 à −150 UH) à la TDM tranche. Prévention : réchauffement 30-60 min avant injection (prévalence 15,3 %→3,3 %) [7,39,40]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — rebond thymique",
+              "text": "Le **thymus** capte physiologiquement le FDG en « V » chez l'enfant et l'adolescent, puis involue. Après chimiothérapie, une réascension de captation médiastinale antérieure (**rebond thymique**) est un piège classique de réévaluation — il ne traduit pas une rechute mais une régénération [38]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Biodistribution physiologique normale du ¹⁸F-FDG (corps entier) : cerveau, myocarde, foie, rate, tube digestif, voies urinaires, muscle et sièges de graisse brune — l'image de référence pour distinguer le piège du pathologique.",
+            "caption": "Fig. — Biodistribution physiologique du FDG : repère de référence pour distinguer captation normale piégeante et lésion."
+          }
+        },
+        {
+          "title": "C8 - C8 · Interpréter les artefacts iatrogènes et de contamination (injection, urine, post-thérapeutique)",
+          "text": "À la différence des captations physiologiques (§C7), les **artefacts iatrogènes** naissent du geste, du matériel ou de la contamination : ils introduisent dans l'image un signal **non représentatif de la biodistribution réelle**, susceptible à la fois de **créer** un foyer factice et de **fausser la quantification** (SUV, standardized uptake value). Ils se reconnaissent à leur topographie (site d'injection, trajet de drainage, contamination cutanée/vestimentaire) et se corrigent par la relecture des images **non corrigées de l'atténuation (NAC)**, la corrélation TDM et le contrôle du geste.\n\n**▸ Extravasation au site d'injection (paravénation).** C'est l'artefact iatrogène le plus fréquent : l'extravasation du FDG est rapportée dans **jusqu'à 23 %** des TEP-FDG [28]. Ses conséquences sont triples : (1) un **point chaud** au site d'injection simulant une lésion ; (2) une **captation ganglionnaire de drainage** (axillaire, épitrochléen) mimant une métastase par migration lymphatique du traceur extravasé ; (3) une **sous-estimation globale du SUV** lorsque l'extravasation est importante, la dose effectivement biodisponible étant inférieure à la dose injectée [29]. La quantification SUV repose en effet sur l'hypothèse d'une **injection intraveineuse complète** : toute fuite la rend ininterprétable [30]. Conduite : documenter le site d'injection (cliché dédié), interpréter le drainage avec prudence, et signaler toute extravasation majeure qui invalide le SUV [29,30].\n\n**▸ Contamination urinaire.** L'élimination urinaire intense du FDG (et du ⁶⁸Ga-PSMA, ligand de l'antigène membranaire spécifique de la prostate) expose à deux écueils distincts. D'une part, une **contamination cutanée ou vestimentaire** par des urines radioactives (miction, sondage, incontinence) crée des foyers superficiels factices, démasqués par la TDM (siège cutané, hors plan anatomique) et levés par un changement de tenue et une nouvelle acquisition. D'autre part, en TEP au ⁶⁸Ga-PSMA, la forte **concentration urinaire** vésico-rénale engendre un **artefact de halo (scatter) photopénique** péri-vésical et péri-rénal qui peut **masquer des lésions** adjacentes par erreur de l'algorithme de correction de diffusion (SSS, single-scatter simulation) [8,9]. Sa sévérité est réduite par la **diurèse au furosémide** et par l'amélioration de la correction de diffusion [8].\n\n**▸ Artefacts post-thérapeutiques.** L'inflammation est avide de FDG : tout geste récent génère des faux positifs. La règle générale est de respecter des **délais** : la captation inflammatoire post-chirurgicale, post-biopsie ou post-radiothérapie peut persister plusieurs semaines, et le **phénomène de flare** (poussée de captation post-traitement, notamment osseux) ne traduit pas une progression. Un site opératoire, un drain, une stomie ou un point de ponction fixent l'FDG par afflux de leucocytes activés [29]. En contexte théranostique post-RIV (radiothérapie interne vectorisée), une contamination par le radiopharmaceutique résiduel (urines, salive) doit être distinguée d'une fixation tumorale réelle.\n\n**▸ Matériel dense et produit de contraste — artefacts de correction d'atténuation.** Bien que d'origine physique, ils ont une composante iatrogène par le geste (pose de matériel, injection de contraste). Un **implant métallique** (prothèse, plombage, clip, chambre implantable, pacemaker) élève fortement les unités Hounsfield, surestime le coefficient d'atténuation µ après conversion bilinéaire vers 511 keV, et crée un **foyer hyperintense factice** sur l'image corrigée (CTAC), accompagné de **stries** sur la TDM [1,24]. De même, un **produit de contraste positif** (iodé IV ou baryté) à forte concentration intraluminale surestime localement la fixation [1,21] : l'impact moyen sur le SUV reste **< 10 %** [2], mais peut être trompeur en zone digestive. La parade universelle : **relire systématiquement la TEP NAC** au contact de tout matériel dense avant de conclure à un foyer pathologique [1,2].\n\nArtefacts iatrogènes et de contamination — synthèse :\n\n| Artefact | Aspect | Effet sur le SUV | Conduite |\n|---|---|---|---|\n| **Extravasation** | Point chaud au site ± drainage ganglionnaire | **Sous-estimation** globale | Cliché du site ; prudence sur le drainage [28,29,30] |\n| **Contamination urinaire** | Foyer cutané/vestimentaire ; halo Ga-68 | Local faussé / masquage | Changer de tenue ; furosémide (PSMA) [8,9] |\n| **Post-thérapeutique** | Site opératoire, drain, flare | Surestimation locale | Respecter les délais ; contexte [29] |\n| **Métal** | Foyer factice + stries (CTAC) | **Surestimation** locale | Relire la TEP **NAC** [1,24] |\n| **Contraste positif** | Surfixation intraluminale | < 10 % en moyenne | Diluer si quantification ; relire NAC [1,2] |",
+          "stats": [
+            {
+              "value": "jusqu'à 23 %",
+              "label": "Fréquence d'extravasation en TEP-FDG [28]"
+            },
+            {
+              "value": "< 10 %",
+              "label": "Impact moyen du contraste positif sur le SUV [2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — extravasation et SUV",
+              "text": "Une extravasation (jusqu'à **23 %** des TEP-FDG) peut **abaisser faussement le SUV global** (dose biodisponible < dose injectée) ET créer une **captation ganglionnaire de drainage** simulant une métastase. Devant un SUV anormalement bas ou un foyer axillaire homolatéral au bras injecté, scanner le **site d'injection** avant de conclure [28,29,30]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — toujours relire la TEP NAC",
+              "text": "Toute hyperfixation au contact d'un **matériel dense** (métal, contraste positif) doit être vérifiée sur la TEP **non corrigée de l'atténuation** : si le foyer disparaît sur la NAC, il s'agit d'un artefact de correction d'atténuation et non d'une lésion. La relecture NAC + CTAC + TDM côte à côte est la règle d'or anti-faux positif [1,2]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Liaison du ⁶⁸Ga-PSMA à l'antigène membranaire spécifique de la prostate et excrétion urinaire intense, source de l'artefact de halo photopénique péri-vésical masquant les lésions adjacentes.",
+            "caption": "Fig. — Excrétion urinaire du ⁶⁸Ga-PSMA : origine de l'artefact de halo péri-vésical, atténué par diurèse au furosémide."
+          }
+        },
+        {
+          "title": "C9 - C9 · Spécificités TEMP-TDM : atténuation mammaire/diaphragmatique, mouvement, contamination Tc-99m",
+          "text": "En **TEMP** (tomographie d'émission monophotonique), la physique des artefacts diffère de celle de la TEP : le photon γ unique du ⁹⁹ᵐTc (technétium-99m, T½ physique = **6,01 h**, γ = **140,5 keV**) est fortement atténué par les tissus mous, et l'absence de correction d'atténuation (sans couplage TDM) en fait la **source numéro 1 d'artefact** en imagerie de perfusion myocardique (TEMP-MPI) [16,34]. S'y ajoutent les artefacts **instrumentaux** propres à la γ-caméra, le **mouvement**, l'**activité sous-diaphragmatique** et la **contamination par le pertechnétate libre**.\n\n**▸ Atténuation des tissus mous — diaphragme et sein.** Le cœur est entouré de structures de densités variables (os, diaphragme, poumon, sein) ; l'atténuation des tissus mous est l'artefact le plus fréquent en TEMP-MPI [34]. Deux profils dominent : l'**atténuation diaphragmatique** (surtout chez l'homme) crée un faux déficit de la **paroi inférieure**, et l'**atténuation mammaire** (chez la femme) un faux déficit **antérieur** (parfois latéral, septal ou apical selon la morphologie) [35]. La distinction d'avec une coronaropathie repose sur des manœuvres de **repositionnement** : l'imagerie en **procubitus (prone)** fait descendre le diaphragme et remonter/avancer le cœur — un déficit inférieur qui **se corrige en procubitus** est un artefact d'atténuation, non une ischémie [5,36]. Une série retrouve une amélioration correctement révélée chez **89/120** patients pour la paroi inférieure et **12/19** pour la paroi antérieure [5]. Lever les **bras au-dessus de la tête** en décubitus réduit l'atténuation par le bras gauche [6]. La solution de référence reste la **TEMP-TDM**, dont la correction d'atténuation par carte TDM améliore la **spécificité** en supprimant l'atténuation mammaire/diaphragmatique [54]. L'apport quantitatif est net : l'association **correction d'atténuation + correction de diffusion + compensation de résolution** réduit les faux positifs de plus de **4 fois (de 14 % à 3 %)** [52]. Précaution : la correction d'atténuation peut elle-même **créer** un faux déficit (territoire de l'artère interventriculaire antérieure), d'où l'obligation de relire systématiquement les images **corrigées (AC) ET non corrigées (NAC)** côte à côte [53].\n\n**▸ Mouvement et activité sous-diaphragmatique.** Le mouvement du patient pendant l'acquisition rotationnelle (plusieurs minutes) provoque un **désalignement des projections** et un flou ; en TEMP-TDM s'y ajoute le **désalignement émission-transmission**, source d'artefacts de correction d'atténuation. L'**activité sous-diaphragmatique** (digestive ou hépatique adjacente, intense après effort physique du stress) génère par effet de diffusion et de filtre rampe des artefacts de la **paroi inférieure** [37] : faire boire de l'eau ou répéter l'acquisition après vidange digestive aide à les lever.\n\n**▸ Artefacts instrumentaux de la γ-caméra.** Ils relèvent du contrôle qualité (CQ) et se rétroprojettent en motifs caractéristiques :\n\n| Artefact instrumental | Origine | Aspect | Prévention / CQ |\n|---|---|---|---|\n| **Non-uniformité du champ** | Photomultiplicateurs (PMT), cristal, collimateur, électronique | **Anneaux concentriques / œil-de-bœuf** | Flood intrinsèque **quotidien**, extrinsèque hebdo/mensuel [31,32] |\n| **Erreur de centre de rotation (COR)** | Désalignement mécanique de l'axe | Flou, **« diapason »**, désalignement des parois | Contrôle COR hebdo/mensuel [17,31] |\n| **Fenêtre photopic décentrée** | Mauvais peaking sur 140,5 keV | Perte d'uniformité et de résolution | Peaking quotidien [33] |\n| **Artefact en étoile** | Rétroprojection filtrée brute | Stries radiaires | **Filtre rampe** ; reconstruction **OSEM** [17,18] |\n\nLa non-uniformité du détecteur se rétroprojette en **anneau** (ou bull's-eye) [31] ; l'erreur de COR produit un désalignement systématique des parois dont la sévérité est proportionnelle à l'amplitude de l'erreur [17]. Le **filtre rampe** élimine l'artefact en étoile de la rétroprojection filtrée, et la reconstruction itérative **OSEM** (ordered-subset expectation maximization) réduit ces artefacts [17,18].\n\n**▸ Contamination par le pertechnétate libre (⁹⁹ᵐTcO₄⁻).** Lorsque le contrôle qualité de pureté radiochimique de la trousse froide est insuffisant (sestamibi/tétrofosmine reconstitués avec l'éluat ⁹⁹Mo/⁹⁹ᵐTc), le **pertechnétate libre** non lié se distribue de façon parasite vers l'**estomac, la thyroïde, les glandes salivaires, les plexus choroïdes et les reins** [19,20]. Cette contamination crée des fixations extra-cardiaques trompeuses ; un **cliché du cou** aide à identifier la source (fixation thyroïdienne/salivaire pathognomonique de pertechnétate libre) [19,20]. Sa prévention passe par le **contrôle de pureté radiochimique** (chromatographie) avant injection, détectant le pertechnétate libre et le Tc réduit-hydrolysé [4].\n\nRepères d'activité et de dose des traceurs TEMP (EANM 2015) : sestamibi/tétrofosmine en protocole 1 jour **repos 370 MBq / stress 1110 MBq**, protocole 2 jours **740 MBq par phase** ; dose efficace sestamibi **0,011 mSv/MBq**, tétrofosmine **0,010 mSv/MBq** [4]. Le ²⁰¹Tl-chlorure (photopics 69-80 keV ; activité 74-111 MBq) délivre une dose efficace nettement plus élevée, **0,19 mSv/MBq** [4].",
+          "stats": [
+            {
+              "value": "140,5 keV",
+              "label": "Photon γ du ⁹⁹ᵐTc (T½ = 6,01 h) [16]"
+            },
+            {
+              "value": "14 % → 3 %",
+              "label": "Faux positifs après AC + diffusion + résolution [52]"
+            },
+            {
+              "value": "89 / 120",
+              "label": "Paroi inférieure correctement reclassée en procubitus [5]"
+            },
+            {
+              "value": "0,011 mSv/MBq",
+              "label": "Dose efficace du ⁹⁹ᵐTc-sestamibi [4]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — atténuation vs ischémie",
+              "text": "Un déficit **inférieur chez l'homme** (atténuation diaphragmatique) ou **antérieur chez la femme** (atténuation mammaire) ne doit jamais être conclu coronarien sans manœuvre de levée : un défaut qui **se corrige en procubitus** ou disparaît après **correction d'atténuation TEMP-TDM** est un artefact. Mais relire AC ET NAC, car la correction d'atténuation peut créer un faux déficit antéro-septal (territoire IVA) [5,36,53]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — pertechnétate libre (CQ insuffisant)",
+              "text": "Une fixation parasite **thyroïdienne, gastrique, salivaire ou des plexus choroïdes** signe la présence de **pertechnétate libre (⁹⁹ᵐTcO₄⁻)** par défaut de pureté radiochimique de la trousse. Un cliché du cou identifie la source. Prévention : contrôle de pureté radiochimique par chromatographie avant injection [4,19,20]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — relecture AC + NAC obligatoire",
+              "text": "En TEMP-MPI corrigée de l'atténuation, la relecture conjointe des images **corrigées (AC)** et **non corrigées (NAC)** est impérative : la correction d'atténuation supprime les faux déficits d'atténuation (gain de spécificité, faux positifs 14 %→3 %) mais peut en induire de nouveaux (territoire IVA). Le couplage AC/NAC + TDM est l'équivalent TEMP de la règle NAC/CTAC de la TEP [52,53]."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Protocole de TEMP de perfusion myocardique au ⁹⁹ᵐTc : acquisition en décubitus et en procubitus, correction d'atténuation TEMP-TDM, illustrant la levée des artefacts d'atténuation diaphragmatique et mammaire.",
+            "caption": "Fig. — TEMP-MPI : procubitus et correction d'atténuation TEMP-TDM pour distinguer artefact d'atténuation et ischémie réelle."
+          }
+        },
+        {
+          "title": "D10 - D10 · Maîtriser le diagnostic différentiel : arbre décisionnel artefact vs vraie lésion",
+          "text": "L'expertise se joue ici : transformer la connaissance descriptive des artefacts (cf. §C) en **réflexe décisionnel** appliqué à chaque foyer suspect. La règle fondatrice, valable en TEP-TDM comme en TEMP-TDM, est de ne jamais conclure sur la seule image corrigée de l'atténuation : **relire systématiquement la TEP/TEMP non corrigée (NAC, *non-attenuation-corrected*) en parallèle de l'image corrigée (CTAC, *CT-based attenuation-corrected*) et de la TDM**, fortement recommandé pour ne pas prendre un artefact de correction d'atténuation (CA) pour une lésion.[1][21] Un foyer présent sur la CTAC mais **absent ou déplacé sur la NAC** est, par construction, un artefact de CA (métal, contraste, désalignement) et non une captation vraie.[24]\n\n**Logique générale en TEP-TDM.** L'origine dominante de l'artefact étant la TDM servant à dériver la carte d'atténuation (µ-map, conversion bilinéaire HU→coefficient à 511 keV), toute hyperfixation au contact d'un matériel à haute densité doit être vérifiée sur la NAC avant d'être déclarée pathologique.[1][24] Inversement, une **zone froide curviligne** (« banane ») sous le dôme hépatique ou en base pulmonaire évoque d'abord un désalignement respiratoire TEP/TDM, et non un comblement réel.[22][23]\n\n| Foyer / aspect | Argument « artefact » | Argument « vraie lésion » | Manœuvre discriminante |\n|---|---|---|---|\n| **Hyperfixation au contact d'un métal** (prothèse, amalgame, pacemaker) | Disparaît/diminue sur la NAC ; stries TDM associées | Persiste sur la NAC, corrélat TDM/clinique | Relire NAC ; MAR (*metal artifact reduction*)[24][25] |\n| **Hyperfixation digestive/luminale après contraste** | HU élevés sur la TDM au même niveau ; effet SUV typiquement **< 10 %** | Foyer focal sans corrélat de contraste dense | Comparer NAC ; TDM de CA sans contraste[1][2][21] |\n| **Zone froide dôme hépatique / base pulmonaire** | Aspect curviligne, désalignement diaphragmatique TEP/TDM | Lésion focale congruente sur NAC et TDM | Relire NAC ; ré-acquisition/gating respiratoire[22][23] |\n| **Liseré brillant + stries périphériques** (bras, obésité) | Patient hors FOV TDM (~50 cm) mais dans FOV TEP (~70 cm) | — (purement instrumental) | Correction de troncature ; bras levés[1][27] |\n| **Point chaud au site d'injection ± ganglion de drainage** | Extravasation (jusqu'à **23 %** des TEP-FDG) ; SUV global bas | Adénopathie tumorale vraie à distance | Scanner le site d'injection[28][29][30] |\n| **Halo photopénique péri-vessie/reins (Ga-68)** | Forte activité urinaire → erreur de correction de diffusion (SSS) | Lésion focale hors zone de halo | Furosémide + meilleure correction de diffusion[8][9] |\n\n**Logique en TEMP-TDM (focus perfusion myocardique, MPI).** L'atténuation des tissus mous est la **source la plus fréquente** d'artefact en TEMP-MPI.[34] Un **déficit inférieur fixe chez l'homme** oriente vers une atténuation diaphragmatique ; un **déficit antérieur chez la femme** vers une atténuation mammaire (parfois latéral/septal/apical selon la morphologie).[35] La manœuvre clé reste le **repositionnement** : un défaut inférieur qui se **corrige en procubitus (prone)** — le diaphragme descend, le cœur remonte — signe l'artefact d'atténuation et non une coronaropathie ; bras levés pour lever l'atténuation du bras gauche.[5][6][36] Une activité digestive/hépatique sous-diaphragmatique adjacente peut aussi créer des artefacts de paroi inférieure.[37] La TEMP/TDM, en corrigeant l'atténuation (notamment mammaire), améliore la **spécificité**.[54]\n\n**Pièges des traceurs spécifiques** à ne pas surstager : en ⁶⁸Ga-PSMA-11, les **ganglia** (cervicaux, cœliaques, sacrés) prennent modérément le traceur et miment un ganglion métastatique — discriminant utile, le SUVmax des métastases dépasse largement celui des ganglia (PSMA **16,4 ± 14,8** vs **2,3 ± 0,7**) ; le PSMA exprimé hors prostate (fractures, dysplasie fibreuse) génère des faux positifs musculo-squelettiques.[42][43] En ⁶⁸Ga-DOTATOC/DOTATATE, le **ganglion stellaire** à la jonction cervico-thoracique mime une métastase de tumeur neuroendocrine (TNE).[44] Côté physiologie FDG, **graisse brune** (cervico-sus-claviculaire, axillaire, paravertébrale, symétrique, par temps froid), **rebond thymique** post-chimiothérapie en V inversé, et captations digestive/musculaire diffuses sont à reconnaître comme variantes avant tout diagnostic.[10][38]",
+          "steps": [
+            {
+              "title": "1. Qualité & préparation",
+              "text": "Vérifier l'absence de troncature, le bon centrage du photopic, l'absence de contraste dense sur la TDM de CA, et la conformité de la préparation (jeûne, glycémie, réchauffement).[1][2][7]"
+            },
+            {
+              "title": "2. Relire la NAC",
+              "text": "Tout foyer suspect est confronté à la TEP/TEMP **non corrigée** : présent sur la NAC = candidat lésion ; absent/déplacé = artefact de CA.[21][24]"
+            },
+            {
+              "title": "3. Corréler à la TDM",
+              "text": "Rechercher un substrat dense (métal, contraste, calcification) ou un désalignement diaphragmatique expliquant le foyer ou la zone froide.[1][22]"
+            },
+            {
+              "title": "4. Manœuvre dédiée",
+              "text": "MPI : ré-acquisition en **procubitus**/bras levés. TEP : gating respiratoire, correction de troncature, scan du site d'injection, furosémide (Ga-68).[6][8][27][28]"
+            },
+            {
+              "title": "5. Trancher & tracer",
+              "text": "Conclure **vraie lésion / artefact / équivoque** et consigner le raisonnement dans le compte rendu (cf. §D12).[21]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "< 10 %",
+              "label": "Effet moyen du contraste positif sur la SUV[2]"
+            },
+            {
+              "value": "23 %",
+              "label": "Extravasation au site d'injection en TEP-FDG[28]"
+            },
+            {
+              "value": "16,4 vs 2,3",
+              "label": "SUVmax PSMA : métastases vs ganglia[42]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — conclure sur la seule image corrigée",
+              "text": "La CA peut **créer** un artefact (faux foyer au contact d'un métal/contraste) mais aussi **masquer** ou **fabriquer** un déficit (territoire IVA en MPI). Toute discordance entre l'image corrigée et la NAC impose de trancher en faveur de la **NAC + TDM** : un foyer absent de la NAC n'est pas une lésion.[1][24][53]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la triade de relecture",
+              "text": "Trois écrans côte à côte (NAC · CTAC · TDM) résolvent la majorité des cas : congruence des trois = lésion probable ; foyer sur la CTAC seule = artefact de CA ; déficit MPI qui s'efface en procubitus ou après CA = atténuation.[5][21][36]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Chaîne TEP-TDM : émission des deux photons de 511 keV, détection en coïncidence, et carte d'atténuation dérivée de la TDM dont toute erreur (métal, contraste, mouvement) se propage à l'image corrigée — d'où la relecture systématique de l'image non corrigée."
+          }
+        },
+        {
+          "title": "D11 - D11 · Maîtriser le contrôle qualité et la prévention instrumentale",
+          "text": "Beaucoup d'artefacts ne se corrigent pas a posteriori : ils se **préviennent** par un contrôle qualité (CQ) rigoureux de la chaîne d'acquisition et par une préparation patient optimisée. L'expert distingue deux origines : l'**instrument** (gamma-caméra, anneau TEP, TDM de CA) et le **patient/protocole** (mouvement, troncature, biodistribution physiologique, contamination).\n\n**CQ de la gamma-caméra (TEMP).** Trois contrôles conditionnent l'absence d'artefacts tomographiques :\n\n| Contrôle | Périodicité | Défaut → artefact |\n|---|---|---|\n| **Uniformité du champ (flood)** | Intrinsèque **quotidienne** ; extrinsèque **hebdo/mensuelle** | Non-uniformité → **artefact en anneau / œil-de-bœuf (*bull's-eye*)**[31][32] |\n| **Centre de rotation (COR)** | Hebdomadaire/mensuel | Erreur de COR → désalignement systématique des parois, flou, aspect « diapason »[17][31] |\n| **Photopic / collimateur** | À chaque examen | Fenêtre mal centrée ou mauvais collimateur → perte d'uniformité et de résolution[33] |\n\nLes causes profondes de non-uniformité sont à connaître pour cibler la maintenance : défaut de **photomultiplicateurs (PMT)**, du collimateur, hydratation du cristal, dérive électronique.[17][32] Sur le plan de la reconstruction, le **filtre rampe** élimine l'artefact en étoile de la rétroprojection filtrée, et les algorithmes **itératifs (OSEM)** réduisent ces artefacts par rapport à la rétroprojection ; en MPI, une activité sous-diaphragmatique adjacente (effet « ramp filter / scatter ») reste une source d'artefact de paroi inférieure.[17][18][37]\n\n**CQ de la chaîne TEP-TDM.** Le couplage émission (TEP, plusieurs minutes, respiration libre) + transmission (TDM, rapide voire apnée) génère la **source #1 d'artefact** : le désalignement spatio-temporel de la µ-map.[21] Toute erreur de HU se propage en erreur de SUV ; les stries claires surestiment le SUV moyen, les stries sombres le sous-estiment.[24] Les paramètres de reconstruction recommandés par l'EANM (voxel **3,0–4,0 mm**, filtre spatial **FWHM ≤ 7 mm**) et l'harmonisation **EANM/EARL** des coefficients de recouvrement garantissent la comparabilité inter-machines des SUV.[2][45] Pour la TDM de CA : utiliser une acquisition **basse dose sans contraste** pour la correction, et réaliser la TDM diagnostique avec contraste **après** la TEP, car les agents de contraste n'atténuent pas à 511 keV comme à l'énergie X.[26]\n\n**Prévention liée au patient et au protocole.**\n- **Mouvement respiratoire** : le gating respiratoire et l'appariement des phases TEP/TDM réduisent le désalignement diaphragmatique et les SUV faussés des lésions basales.[22]\n- **Troncature** : éviter que le patient déborde du FOV TDM (~50 cm) alors qu'il reste dans le FOV TEP (~70 cm) ; les algorithmes de correction de troncature récupèrent **> 90 %** de l'activité dans la zone tronquée ; **bras levés** quand le protocole le permet.[1][27]\n- **Métal** : interpréter au voisinage de l'implant sur la NAC ; le **MAR itératif** atténue l'effet sur la CA.[24][25]\n- **Extravasation** : injection IV contrôlée ; un foyer au point d'injection avec SUV global bas doit faire suspecter une dose partiellement extravasée.[28][29]\n- **Pertechnétate libre (Tc-99m-O₄⁻)** en TEMP : une pureté radiochimique insuffisante entraîne une fixation parasite estomac/thyroïde/glandes salivaires/plexus choroïdes ; un cliché du cou aide à identifier la source.[19][20]\n\n**Préparation patient FDG (prévention des artefacts physiologiques).** Jeûne **≥ 4 h** (arrêt des perfusions/nutrition glucosées) ; **glycémie < 11 mmol/L (200 mg/dL)** en clinique, cible recherche 7–8,3 mmol/L (126–150 mg/dL), sans insuline dans les 4 h précédant le FDG ; délai post-injection **60 min** (acceptable 55–75 min, reproductible à ± 10 min) ; repos/silence pendant la captation pour limiter la fixation musculaire.[2][7] Le **réchauffement 30–60 min avant** l'injection (pièce constante ~**24 °C**, couvertures) réduit la graisse brune, dont la prévalence détectée varie négativement avec la température extérieure (≈ –1 % par +5 °C, pic décembre–février).[2][7][39][40][41]",
+          "steps": [
+            {
+              "title": "Avant l'examen",
+              "text": "CQ instrument à jour (flood quotidien, COR, peaking, calibrage SUV) ; vérifier jeûne, glycémie, réchauffement anti-graisse brune, pureté radiochimique du traceur.[2][7][31]"
+            },
+            {
+              "title": "Pendant l'acquisition",
+              "text": "Centrage du photopic, collimateur adapté, bras levés/positionnement anti-troncature, gating respiratoire si thorax/abdomen, TDM de CA basse dose sans contraste.[1][22][26]"
+            },
+            {
+              "title": "Après l'acquisition",
+              "text": "Reconstruction itérative (OSEM) + filtre adapté, correction d'atténuation/diffusion, MAR si métal, paramètres EANM/EARL pour la comparabilité des SUV.[2][24][45]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "> 90 %",
+              "label": "Activité récupérée par correction de troncature[1]"
+            },
+            {
+              "value": "3,0–4,0 mm",
+              "label": "Voxel reconstruit recommandé (EANM)[2]"
+            },
+            {
+              "value": "~24 °C",
+              "label": "Température ambiante anti-graisse brune[2][41]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — la CA ne rattrape pas tout",
+              "text": "La correction d'atténuation TDM **propage** les erreurs de la TDM : un contraste dense, un implant métallique ou une TDM en apnée inspiration profonde corrompent la µ-map et donc la quantification. Préférer une **TDM de CA basse dose sans contraste** et appariée à la respiration moyenne de la TEP.[2][26]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — uniformité et COR avant toute TEMP",
+              "text": "Une non-uniformité de quelques pour-cent se **rétroprojette en anneau** au centre du champ et peut mimer un déficit myocardique ou osseux. Le flood quotidien et le COR périodique sont le rempart le moins coûteux contre des faux positifs récurrents.[31][32]"
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Gamma-caméra TEMP : collimateur, cristal NaI(Tl), photomultiplicateurs et électronique de positionnement — les éléments dont les défauts (non-uniformité, erreur de centre de rotation, mauvais photopic) génèrent les artefacts en anneau et le désalignement des parois."
+          }
+        },
+        {
+          "title": "D12 - D12 · Maîtriser le compte rendu : signaler, quantifier et tracer l'artefact",
+          "text": "Un artefact reconnu mais non documenté reste une source d'erreur pour le lecteur suivant. L'expertise se conclut par un **compte rendu (CR)** qui signale explicitement l'artefact, en mesure l'impact quantitatif et trace les manœuvres entreprises. Le principe de tout le mouvement D s'y matérialise : rendre **traçable** le raisonnement « artefact vs vraie lésion » (cf. §D10) et les contrôles de prévention (cf. §D11).\n\n**Trois exigences rédactionnelles.**\n1. **Signaler** l'artefact en clair dans le corps du CR (localisation, mécanisme présumé, aspect) plutôt que de l'omettre ou de le décrire comme une lésion. Exemple : « Hyperfixation focale en regard de la prothèse de hanche droite, **disparaissant sur les images non corrigées** : artefact de correction d'atténuation lié au matériel métallique, sans traduction lésionnelle. »[1][21][24]\n2. **Quantifier** l'impact lorsqu'il conditionne une décision : préciser que la mesure de SUV est **non fiable** au contact d'un métal/contraste, ou rapporter l'ordre de grandeur de l'effet (contraste positif **< 10 %** en moyenne sur la SUV ; SUV global potentiellement **sous-estimé** en cas d'extravasation importante au site d'injection).[2][28][30] Toute SUV rapportée suppose une chaîne calibrée et harmonisée **EANM/EARL** — à mentionner pour les études longitudinales et multicentriques.[45]\n3. **Tracer** la manœuvre correctrice et son résultat : relecture NAC/CTAC/TDM, ré-acquisition en **procubitus**/bras levés pour un déficit MPI, gating respiratoire, furosémide pour le halo Ga-68, MAR pour le métal.[5][6][8][25][36]\n\n**Trame de CR intégrant l'artefact.**\n\n| Rubrique | Contenu attendu |\n|---|---|\n| **Technique** | Traceur, activité, glycémie/jeûne, délai post-injection, modalité (TEP-TDM/TEMP-TDM), TDM de CA basse dose sans contraste, gating éventuel.[2][7] |\n| **Qualité de l'examen** | Mention explicite des limites : troncature, métal, mouvement, contraste, contamination, biodistribution physiologique gênante.[1][21] |\n| **Résultats** | Foyers décrits avec confrontation **NAC/CTAC/TDM** ; pour chaque foyer douteux : artefact / lésion / équivoque.[24] |\n| **Quantification** | SUV uniquement si fiable ; signaler les zones où la mesure est invalide (voisinage métal/contraste).[24][45] |\n| **Conclusion** | Réponse à la question clinique, **artefacts explicitement écartés ou signalés**, et recommandation de complément si équivoque.[21] |\n\n**Exemples de formulations expertes.**\n- *MPI* : « Hypofixation inférieure en décubitus **entièrement corrigée en procubitus** : artefact d'atténuation diaphragmatique, sans argument pour une ischémie inférieure. »[6][36]\n- *Ga-68-PSMA* : « Plage photopénique péri-vésicale liée à l'activité urinaire (artefact de diffusion), sans lésion focale identifiable dans la zone concernée ; **furosémide** lors d'un éventuel contrôle. »[8][9]\n- *FDG* : « Hyperfixations symétriques cervico-sus-claviculaires et paravertébrales : **graisse brune** (variante physiologique, contexte de temps froid), à ne pas confondre avec des adénopathies. »[2][10][39]\n\n**Pourquoi tracer.** Un CR qui consigne l'artefact et la manœuvre permet la **comparaison fiable** au fil du suivi (même technique, même score, même chaîne calibrée), évite la répétition d'examens et protège le patient d'une décision thérapeutique fondée sur un faux positif/négatif.[45][53]",
+          "steps": [
+            {
+              "title": "Décrire la qualité",
+              "text": "Ouvrir le CR par les limites techniques rencontrées (mouvement, métal, contraste, troncature, contamination, variantes physiologiques).[1][21]"
+            },
+            {
+              "title": "Confronter NAC/CTAC/TDM",
+              "text": "Pour chaque foyer douteux, documenter la confrontation des trois images et la conclusion (artefact / lésion / équivoque).[24]"
+            },
+            {
+              "title": "Quantifier prudemment",
+              "text": "Ne rapporter une SUV que si la chaîne est calibrée/harmonisée et la zone exempte d'artefact ; sinon le signaler.[45]"
+            },
+            {
+              "title": "Tracer la manœuvre",
+              "text": "Consigner procubitus, gating, furosémide, MAR et leur résultat, pour reproductibilité du suivi.[6][8][25][36]"
+            },
+            {
+              "title": "Conclure",
+              "text": "Répondre à la question clinique en écartant ou signalant explicitement les artefacts, et proposer un complément si équivoque.[21]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "NAC + CTAC + TDM",
+              "label": "Triade de relecture à documenter[21]"
+            },
+            {
+              "value": "< 10 %",
+              "label": "Effet du contraste à mentionner sur la SUV[2]"
+            },
+            {
+              "value": "EANM/EARL",
+              "label": "Cadre d'harmonisation des SUV à citer[45]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la phrase qui sauve",
+              "text": "Une seule phrase « foyer présent sur l'image corrigée mais **absent sur l'image non corrigée** → artefact de correction d'atténuation » suffit à immuniser le lecteur suivant contre l'erreur. La rendre systématique pour tout foyer au contact d'un métal ou d'un contraste.[1][21][24]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — rapporter une SUV non fiable",
+              "text": "Au contact d'un implant métallique ou d'un contraste dense, la quantification est faussée (stries claires → surestimation, stries sombres → sous-estimation). Indiquer explicitement que la **SUV n'est pas interprétable** dans cette zone plutôt que de livrer un chiffre trompeur.[24][45]"
+            },
+            {
+              "type": "info",
+              "title": "Harmonisation EANM/EARL",
+              "text": "Pour qu'une SUV soit comparable d'une machine ou d'un centre à l'autre, la chaîne doit respecter les coefficients de recouvrement de référence du programme **EANM/EARL** ; le mentionner dans les CR à visée longitudinale/multicentrique.[45]"
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Carte polaire à 17 segments du ventricule gauche illustrant le compte rendu d'un déficit de perfusion : un déficit inférieur en décubitus se corrigeant en procubitus est signalé comme artefact d'atténuation diaphragmatique plutôt que comme ischémie."
+          }
+        },
+        {
+          "title": "E13 - E13 · Cas commentés : reconnaître l'artefact en situation",
+          "text": "Quatre vignettes type *teaching file*, commentées **contexte → images → analyse → conclusion**, chacune reliée aux sections diagnostiques de l'atlas. La règle de lecture transverse, rappelée dans chaque cas, est de **relire systématiquement la TEP non corrigée de l'atténuation (NAC) à côté de la TEP corrigée (CTAC) et de la TDM** : un foyer présent en CTAC mais absent en NAC, ou un mismatch de position, signe un artefact de correction d'atténuation (CA) et non une lésion.[1,21]\n\n**Cas 1 — Faux positif métallique (prothèse de hanche).** *Contexte* : homme de 72 ans, bilan d'un adénocarcinome pulmonaire en TEP-FDG, prothèse totale de hanche droite. *Images* : foyer hyperintense para-acétabulaire droit sur la TEP corrigée (CTAC), avec stries (*streak*) sur la TDM au contact de l'implant. *Analyse* : les très hautes unités Hounsfield du métal surestiment le coefficient d'atténuation µ → surestimation factice de l'activité locale ; la relecture de la **TEP NAC** ne montre aucun foyer correspondant.[1,24] Une réduction d'artefact métallique (MAR) itérative atténue l'effet en pratique.[25] *Conclusion* : **artefact de CA métallique** — pas de fixation pathologique ; interpréter sur la TEP NAC.\n\n**Cas 2 — Zone froide du dôme hépatique (mouvement respiratoire).** *Contexte* : femme de 60 ans, restaging d'un lymphome, TEP-FDG. *Images* : croissant photopénique curviligne (« banane froide ») sous-diaphragmatique à la base pulmonaire droite / dôme hépatique. *Analyse* : la TDM acquise en apnée (position figée du diaphragme) ne coïncide pas avec la TEP, moyenne de plusieurs minutes en respiration libre → désalignement TEP/TDM au diaphragme, correction d'atténuation erronée et **SUV faussés** des lésions pulmonaires basales.[1,22,23] *Conclusion* : **artefact de mouvement respiratoire**, le plus fréquent ; vérifier le recalage, recourir si besoin à une acquisition respiro-synchronisée.\n\n**Cas 3 — Halo péri-vésical en TEP au ⁶⁸Ga-PSMA.** *Contexte* : homme de 68 ans, récidive biochimique d'un cancer prostatique, TEP au ⁶⁸Ga-PSMA-11. *Images* : couronne photopénique (« halo ») entourant la vessie hyperactive, masquant la paroi vésicale et le plancher pelvien. *Analyse* : la très forte concentration urinaire de traceur déborde la capacité de l'algorithme de correction de diffusion (SSS), créant un artefact de *scatter* ; sa sévérité est réduite par une **diurèse au furosémide** et par l'amélioration de la correction de diffusion.[8,9] *Conclusion* : **artefact de diffusion (halo)** spécifique des traceurs à excrétion urinaire intense ; ne pas conclure à une lacune lésionnelle.\n\n**Cas 4 — Défaut inférieur en TEMP de perfusion myocardique (atténuation diaphragmatique).** *Contexte* : homme de 64 ans, douleur thoracique atypique, TEMP-MPI au ⁹⁹ᵐTc-sestamibi en décubitus dorsal. *Images* : hypofixation de la paroi inférieure du ventricule gauche au stress comme au repos (caractère fixe). *Analyse* : l'atténuation des tissus mous est la première source d'artefact en TEMP-MPI ; chez l'homme, l'atténuation diaphragmatique simule un faux déficit **inférieur**.[34,35] L'acquisition en **procubitus** fait descendre le diaphragme et remonter le cœur : un défaut qui se corrige en procubitus est un artefact d'atténuation.[5,36] La TEMP/TDM (correction d'atténuation) tranche définitivement.[36] *Conclusion* : **artefact d'atténuation diaphragmatique** — répéter en procubitus ou recourir à la correction d'atténuation avant de retenir une maladie coronaire.",
+          "stats": [
+            {
+              "value": "≈ 50 cm vs ≈ 70 cm",
+              "label": "FOV transverse TDM vs TEP (troncature)"
+            },
+            {
+              "value": "< 10 %",
+              "label": "Effet moyen du contraste positif sur la SUV [2]"
+            },
+            {
+              "value": "jusqu'à 23 %",
+              "label": "Fréquence de l'extravasation du FDG [28]"
+            },
+            {
+              "value": "89/120",
+              "label": "Défauts inférieurs corrigés en procubitus [5]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la manœuvre NAC en réflexe",
+              "text": "Devant toute hyperfixation au contact d'un matériel dense (métal, **contraste** iodé/baryté) ou un foyer suspect en zone de mouvement, la première vérification n'est pas un nouvel examen mais la **relecture de la TEP NAC** côte à côte avec la CTAC et la TDM. Un foyer qui disparaît en NAC est un artefact de correction d'atténuation.[1,21,24]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — l'extravasation au site d'injection",
+              "text": "Une extravasation du FDG survient dans **jusqu'à 23 %** des TEP-FDG : elle crée un **point chaud** au bras simulant une lésion, parfois une captation ganglionnaire de drainage trompeuse, et abaisse faussement les **SUV** globaux (la dose réellement délivrée est inférieure à la dose injectée).[28,30] Toujours inspecter le site d'injection si la SUV hépatique de référence paraît anormalement basse."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Schéma d'un protocole de TEMP de perfusion myocardique : acquisition au stress et au repos, illustrant l'origine des défauts d'atténuation inférieurs et antérieurs corrigés par le procubitus ou la TEMP/TDM."
+          }
+        },
+        {
+          "title": "E14 - E14 · Points clés, pièges d'examen et FAQ",
+          "text": "**▸ Points clés à retenir**\n\n- En **TEP-TDM, la majorité des artefacts proviennent de la TDM** servant à la correction d'atténuation (CA) : carte d'atténuation dérivée des photons polychromatiques (~80 keV) puis mise à l'échelle vers **511 keV** → toute erreur de TDM se propage à la TEP corrigée.[1,21] **Réflexe : relire la TEP NAC.**\n- Les quatre familles d'artefacts de CA en TEP : **implants métalliques** (faux positif), **mouvement respiratoire** (zone froide du dôme hépatique, le plus fréquent), **produit de contraste** (surestimation locale), **troncature TDM** (FOV ≈ 50 cm < FOV TEP ≈ 70 cm → liseré brillant + stries).[1,21,27] Effet moyen du contraste positif sur la SUV : **< 10 %**.[2]\n- L'**EANM recommande fortement d'éviter toute troncature TDM** (bras hors champ, obésité), qui dégrade la correction de diffusion et rend la TEP non quantitative.[2,27]\n- Artefact de **diffusion / halo** des traceurs à forte excrétion urinaire (**⁶⁸Ga-PSMA**) : atténué par le **furosémide** et l'amélioration de la correction de diffusion.[8,9]\n- En **TEMP-MPI**, l'**atténuation des tissus mous** est la première cause d'artefact : faux déficit **inférieur** (atténuation diaphragmatique, surtout l'homme) ou **antérieur** (atténuation mammaire, surtout la femme) ; **procubitus** et **TEMP/TDM** corrigent et améliorent la spécificité.[5,34,35,36] La CA + correction de diffusion réduit les faux positifs **de 14 % à 3 %**.[52]\n- Artefacts d'origine **instrumentale** en TEMP : non-uniformité du champ inondé (*flood*) → **anneaux concentriques** ; erreur de **centre de rotation (COR)** → flou / désalignement des parois ; le **filtre rampe** supprime l'artefact en étoile de la rétroprojection filtrée, l'**OSEM** réduit ces artefacts.[17,18,31,32]\n- **Pertechnétate libre (Tc-99m-O4⁻)** : contamination fixant estomac, thyroïde, glandes salivaires, plexus choroïdes — un cliché du cou aide à identifier la source.[19,20]\n- **Graisse brune (BAT)** : piège majeur cervico-sus-claviculaire/axillaire/paravertébral, **plus fréquent chez la femme (4,88 %) que l'homme (1,77 %)**, sujets jeunes/minces ; prévalence corrélée négativement à la température extérieure (max décembre-février).[39,40] Prévention par **réchauffement** (pièce ~24 °C, 30–60 min avant l'injection).[2,7,41]\n- **Extravasation** du FDG (jusqu'à **23 %**) : point chaud, captation ganglionnaire de drainage et SUV globaux faussement bas.[28,30]\n- **Pièges des traceurs spécifiques** : **ganglia** physiologiques (cervicaux, cœliaques, stellaires) en ⁶⁸Ga-PSMA et ⁶⁸Ga-DOTATATE simulant un ganglion métastatique — discriminés par la cinétique et le SUVmax (PSMA métastases 16,4 ± 14,8 vs ganglia 2,3 ± 0,7).[42,44] Rebond thymique post-chimiothérapie chez l'enfant/adolescent.[10,38]\n\n**▸ FAQ & pièges d'examen**\n\n**Pourquoi un foyer hyperfixant au contact d'une prothèse n'est-il pas forcément une lésion ?** Les hautes unités Hounsfield du métal surestiment le coefficient d'atténuation, donc l'activité TEP corrigée ; le foyer disparaît sur la **TEP NAC**. La MAR itérative limite l'effet.[1,24,25]\n\n**Pourquoi voit-on une « banane froide » sous le diaphragme ?** TDM en apnée vs TEP en respiration libre : le **mismatch respiratoire** sous-corrige l'atténuation au dôme hépatique. C'est l'artefact de CA le plus fréquent.[1,22,23]\n\n**Faut-il injecter du contraste iodé pour la TDM de CA ?** Le contraste a des unités Hounsfield élevées qui **n'atténuent pas à 511 keV comme à l'énergie X**, d'où une CA erronée et des faux positifs. On réserve la TDM diagnostique avec contraste après la TEP, en utilisant une TDM basse dose **sans contraste** pour la CA, ou on dilue.[2,21,26]\n\n**Déficit inférieur en TEMP-MPI : ischémie ou atténuation ?** S'il est **fixe** et se corrige en **procubitus** ou avec la **correction d'atténuation** (TEMP/TDM), c'est un artefact d'atténuation diaphragmatique ; chez la femme, penser à l'atténuation mammaire pour un défaut antérieur.[5,35,36]\n\n**Comment distinguer la graisse brune d'adénopathies ?** Captation FDG **symétrique** cervico-sus-claviculaire/paravertébrale, suivant la graisse sur la TDM, favorisée par le froid et le jeune âge ; prévenue par le **réchauffement**.[2,39,40]\n\n**Quel mécanisme crée le halo péri-vésical en ⁶⁸Ga-PSMA ?** Une erreur de **correction de diffusion** (algorithme SSS) face à l'intense activité urinaire ; le **furosémide** et une meilleure correction de diffusion la réduisent.[8,9]\n\n**Une fixation gastrique/thyroïdienne inattendue en TEMP au Tc-99m évoque quoi ?** Du **pertechnétate libre** (pureté radiochimique insuffisante) : fixation estomac/thyroïde/salivaires — contrôler le CQ du traceur.[19,20]\n\n**Pourquoi mes SUV diffèrent-ils d'une machine à l'autre ?** Variabilité de reconstruction et d'étalonnage ; le programme d'harmonisation **EARL/EANM** (coefficients de recouvrement de référence) rend les SUV comparables entre centres.[45]",
+          "stats": [
+            {
+              "value": "14 % → 3 %",
+              "label": "Faux positifs MPI après CA + diffusion [52]"
+            },
+            {
+              "value": "4,88 % vs 1,77 %",
+              "label": "Prévalence BAT femme vs homme [39]"
+            },
+            {
+              "value": "16,4 vs 2,3",
+              "label": "SUVmax métastases PSMA vs ganglia [42]"
+            },
+            {
+              "value": "511 keV",
+              "label": "Énergie des photons d'annihilation TEP [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — confondre artefact de CA et lésion",
+              "text": "Ne jamais conclure à un foyer pathologique TEP sans avoir relu la **TEP NAC**. Un foyer présent en CTAC et absent en NAC, ou décalé par rapport à la TDM, est un **artefact de correction d'atténuation** (métal, contraste, mouvement, troncature) jusqu'à preuve du contraire.[1,21]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — prendre l'atténuation pour une coronaropathie",
+              "text": "Un défaut **fixe** inférieur (homme) ou antérieur (femme) en TEMP-MPI doit faire tester le **procubitus** et/ou la **correction d'atténuation** (TEMP/TDM) avant de retenir une ischémie/nécrose : la CA + correction de diffusion réduit les faux positifs de **14 % à 3 %**.[5,36,52]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — anticiper plutôt que corriger",
+              "text": "Beaucoup d'artefacts se préviennent en amont : **réchauffement** anti-graisse brune (~24 °C, 30–60 min avant l'injection), **hydratation + miction** avant acquisition (clairance urinaire), **bras levés** et absence de troncature, **TDM de CA sans contraste**, vérification du blocage et de la pureté du traceur en TEMP.[2,7,41]"
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma de la biodistribution physiologique normale du ¹⁸F-FDG (cerveau, myocarde, foie, voies urinaires, muscles, graisse brune) servant de référence pour distinguer captations normales et artefacts/pièges."
+          }
+        },
+        {
+          "title": "E15 - E15 · Références & liens sortants typés",
+          "text": "**▸ Bibliographie** — recommandations (EANM/SNMMI/ASNC), revues et sources primaires datées ; chaque valeur chiffrée de l'article renvoie à l'une de ces références par son indice **[n]**.\n\n**Artefacts TEP-TDM & correction d'atténuation** : Pettinato *Artefacts of PET/CT* 2006 [1], Sureshbabu & Mawlawi *PET/CT Imaging Artifacts* 2005 [21], Boellaard *EANM FDG v2.0* 2015 [2] et *v1.0* 2010 [3], Sun & Mok *respiration-induced artifacts* 2012 [22], *PET/CT Motion* (Introduction to Radiology) [23], Morawitz *impact of MAR* 2022 [24], Reinert *iterative MAR in PET/CT* 2019 [25], Vangu & Momodu *normal variants/pitfalls abdomen-pelvis* 2022 [26], Sarikaya *artifacts caused by the arms* 2021 [27].\n\n**Diffusion / halo Ga-68** : Lawhn-Heath *scatter artifact ⁶⁸Ga-PSMA-11* 2018 [8], Heusser *halo-artifact* 2017 [9].\n\n**Extravasation & quantification (SUV)** : Perrin *classifier for FDG extravasation* 2022 [28], *FDG PET/CT Artifacts and Pitfalls* (LWW CME) [29], Hall *impact of FDG extravasation on SUV* 2006 [30], Aide *EANM/EARL harmonization* 2017 [45].\n\n**Artefacts instrumentaux & CQ TEMP** : DePuey *SPECT artifacts (COR, ring, ramp filter)* [17], *SPECT QC procedures* JNMT 1983 [18], *QC in SPECT and PET* (Thoracic Key) [31], Bolstad *uniformity correction* 2011 [32], *QC Requirements in SPECT* (VCU) [33], *Pertechnetic acid Tc-99m* (ScienceDirect) [19], *bone imaging & SPECT/CT pitfalls* (Emory) [20].\n\n**Artefacts TEMP-MPI & atténuation** : Burrell & MacDonald *Artifacts and Pitfalls in MPI* 2006 [34], Doukky *soft tissue attenuation patterns* 2012 [35], Dvorak *SPECT/CT MPI artifacts* 2011 [36], Strok *subdiaphragmatic activity artifacts* 2024 [37], *Benefits of Prone SPECT MPI* [5], ASNC *Patient-Centered Imaging* 2012 [6], Hendel *correction for attenuation & scatter in SPECT MPI* (Circulation) 1999 [52], *AC for MPI: still controversial* 2011 [53], Siemens *SPECT/CT overcomes breast-attenuation* [54].\n\n**Pièges physiologiques (variantes normales, graisse brune, traceurs spécifiques)** : Sarji *physiological uptake simulating disease* 2006 [10], Shammas *pediatric FDG PET/CT* 2009 [38], Surasi *FDG PET preparation* 2014 [7], Persichetti *prevalence of FDG-detected BAT* 2013 [39], Huang *BAT prevalence vs outdoor temperature* 2012 [40], *prevention of activated BAT (EuroNet-PHL-C2)* 2023 [41], *PSMA/FDG dual-tracer ganglia vs nodes* 2021 [42], Pontes *musculoskeletal pitfalls in ⁶⁸Ga-PSMA* 2023 [43], Zhang-Yin *⁶⁸Ga-DOTATOC uptake by stellate ganglia* 2024 [44].\n\n**Traceurs & physique** : *FDG FDA label* NDA 21-870 2005 [11], Lassmann *EANM paediatric dosage card, F-18* 2008 [12], *EANM Paediatric Dosage Card* [13], Tran-Gia *update EANM dosage card (39 % FDG)* 2024 [14], Rizk & Nagalli *Tc-99m sestamibi* (StatPearls) [15], Kane *Technetium-99m* (StatPearls) [16], Verberne *EANM myocardial perfusion SPECT* 2015 [4].\n\n**Dosimétrie & radioprotection** : Carter *patient size-dependent ¹⁸F-FDG dosimetry* 2021 [46], Marshall *radiation exposure ⁹⁹ᵐTc-MDP* 2023 [47], Case *cardiovascular PET radiation* (ASNC) 2017 [48], *ICRP Publication 128* 2015 [49], Xia *ultra-low dose CT AC for PET/CT* 2012 [50], *Image Wisely — Optimizing Oncologic FDG-PET/CT* [51].\n\n**▸ Liens sortants typés (carte de l'article)**\n\n| Type | Nœuds liés |\n|---|---|\n| **Examen** | TEP-TDM au ¹⁸F-FDG · TEP au ⁶⁸Ga-PSMA · TEMP-TDM de perfusion myocardique · TEP au ⁶⁸Ga-DOTATATE |\n| **Traceur** | ¹⁸F-FDG · ⁹⁹ᵐTc-sestamibi / ⁹⁹ᵐTc-tetrofosmine · ⁶⁸Ga-PSMA-11 · pertechnétate ⁹⁹ᵐTc-O4⁻ |\n| **Maladie** | Cancer prostatique · maladie coronaire (TEMP-MPI) · pathologies oncologiques en TEP-FDG |\n| **Score** | Échelles de quantification SUV (EARL/EANM) |\n\n*Périmètre : atlas transversal des artefacts et pièges en TEP-TDM et TEMP-TDM. Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note méthodologique sur les coefficients de dose",
+              "text": "Les coefficients de dose efficace cités dans l'atlas (par ex. **0,019 mSv/MBq** pour le ¹⁸F-FDG adulte) proviennent du compendium **CIPR/ICRP 128** [49] et de publications secondaires qui le citent [46,47,48] ; vérifier la valeur exacte par radiopharmaceutique dans le texte intégral de l'ICRP 128 avant tout usage dosimétrique réglementaire."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

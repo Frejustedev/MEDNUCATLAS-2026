@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section 6.2 / C9 stats — dose efficace ⁹⁹ᵐTc-sestamibi 0,011 mSv/MBq et tétrofosmine 0,010 mSv/MBq (cité EANM 2015 / réf [4])",
+    "problem": "Ces coefficients correspondent à d'anciennes valeurs ICRP 80 'au repos'. Les valeurs ICRP 128 actuellement retenues sont plus basses : sestamibi ~0,0085 mSv/MBq (repos ~0,009 / effort ~0,0079) et tétrofosmine ~0,0069–0,0080 mSv/MBq (repos ~0,0080 / effort ~0,0069). Les chiffres cités surestiment donc d'environ 25–40 % la dose efficace par MBq. Remarque : la valeur figure telle quelle dans le matériel de référence fourni (l'article ne l'a pas inventée) et reste dans la fourchette historique ICRP 80, d'où la gravité 'mineure'.",
+    "fix": "Préciser que 0,011 / 0,010 mSv/MBq sont des valeurs 'au repos' anciennes (ICRP 80) ; mentionner les valeurs ICRP 128 plus récentes (~0,008–0,009 mSv/MBq pour les deux traceurs) ou indiquer une fourchette effort/repos plutôt qu'une valeur unique."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 6.3 / quiz #25 — ²⁰¹Tl-chlorure dose efficace 0,19 mSv/MBq",
+    "problem": "Valeur acceptable mais haute par rapport au compendium ICRP 128, qui retient plutôt ~0,14 mSv/MBq pour le chlorure de thallium-201 (d'autres publications donnent 0,16–0,22 selon le modèle dosimétrique). Le point principal (Tl-201 nettement plus irradiant que les traceurs technétiés) reste correct.",
+    "fix": "Aligner sur ICRP 128 (~0,14 mSv/MBq) ou présenter une fourchette (0,14–0,22 mSv/MBq) en notant que la valeur dépend de la source/du modèle."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [14] (Tran-Gia, EuroNet PHL-C2, EANM Paediatric Dosage Card update) - bibliographic year",
+    "problem": "The source list and the E15 bibliography cite this article as '2024', but WebFetch of PMC10774179 confirms it was published 20 September 2023 (Eur J Nucl Med Mol Imaging). The article itself is genuine and the '39% reduction in 18F-FDG' claim is verified exactly; only the citation year is off by one. Note: E14 (steps/text referencing the dosage card) lists it consistently, so the discrepancy is purely the year label.",
+    "fix": "Change the year from 2024 to 2023 in source [14] (and in the E15 bibliography mention 'Tran-Gia ... 2024 [14]')."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [44] title vs body usage (D10, E14, C9) - tracer naming",
+    "problem": "The verified article title is '68Ga-DOTATOC Uptake by Stellate Ganglia...' (J Clin Med 2024, Zhang-Yin & Panagiotidis), confirmed genuine. The body sometimes generalizes it to '68Ga-DOTATOC/DOTATATE' and to 'ganglion stellaire ... métastase de TNE'. This is a reasonable clinical generalization but the cited case report is specifically DOTATOC; strictly the DOTATATE extension is not directly supported by [44].",
+    "fix": "Either keep the claim tied strictly to DOTATOC when citing [44], or add a second source covering DOTATATE stellate-ganglion uptake if the DOTATOC/DOTATATE generalization is to be retained."
+  },
+  {
+    "severity": "minor",
+    "where": "E15 infoBox 'Note méthodologique sur les coefficients de dose' and identityCard - FDG effective dose figure",
+    "problem": "The note states 0.019 mSv/MBq for adult 18F-FDG attributed to ICRP 128 [49] and corroborating refs [46,47,48]. This value is correct and was independently confirmed (source [46] explicitly reports ICRP 128 reference value = 0.019 mSv/MBq, urinary bladder wall as critical organ). No fabrication; flagging only that the figure appears in an infoBox without an inline numeric source bracket adjacent to the '0,019 mSv/MBq' instance in the note's opening clause (the supporting [49] is present at clause end, so this is borderline acceptable).",
+    "fix": "Optional: place the [49] bracket immediately after the '0,019 mSv/MBq' value for tighter traceability; no factual change needed."
+  },
+  {
+    "severity": "minor",
+    "where": "Cross-section quantitative claim - Hendel 1999 '14% -> 3%' false-positive reduction ([52], used in B5, C9, E14, D11)",
+    "problem": "The Hendel 1999 Circulation multicenter trial [52] is a genuine source and matches the topic (AC + scatter + resolution compensation in SPECT MPI). The specific '14% -> 3%' / '>4x false-positive reduction' framing could not be located verbatim in the publicly retrievable excerpts (AHA full text returned 403; search excerpts report normalcy-rate/sensitivity figures of 76/75/78% rather than a 14%->3% pair). The claim is plausible and consistent with the paper's normalcy-rate improvement, but the exact '14%->3%' numbers were not independently re-confirmed.",
+    "fix": "Verify the exact '14% -> 3%' figure against the full text of Hendel 1999 (Circulation 99(21):2742-9); if it represents normalcy-rate/false-positive improvement, keep; if not directly stated, soften to the paper's reported normalcy-rate improvement."
+  }
+]
