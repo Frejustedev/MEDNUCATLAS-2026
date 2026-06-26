@@ -132,10 +132,10 @@ export function ArticleView({ article: serverArticle }: { article?: Article } = 
             );
           }
           return (
-            <div className="mb-4 flex items-start gap-3 p-3 rounded-lg border bg-orange-500/10 border-orange-500/20 text-orange-400" role="status">
+            <div className="mb-4 flex items-start gap-3 p-3 rounded-lg border bg-amber-400/10 border-amber-400/20 text-amber-600 dark:text-amber-400" role="status">
               <ShieldAlert className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true" />
               <div className="text-[13px] leading-relaxed">
-                <span className="font-medium">Contenu rédigé avec assistance IA, en cours de relecture par un médecin nucléaire.</span>{' '}
+                <span className="font-medium">Article en cours de relecture médicale.</span>{' '}
                 Vérifiez les informations critiques auprès des sources de référence (EANM, SNMMI, HAS).
               </div>
             </div>
