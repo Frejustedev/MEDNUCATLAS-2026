@@ -1,56 +1,44 @@
 [
   {
-    "severity": "major",
-    "where": "Section B1 (b) et (stats) — « une TEP au ¹⁸F-FDG ≈ 2–4 MBq/kg soit de l'ordre de 150–300 MBq chez l'adulte » ; repris dans la stat « ≈ 150–300 MBq · Activité typique d'une TEP-FDG (adulte) »",
-    "problem": "Valeur d'activité FDG sous-estimée. Les recommandations EANM (procedure guidelines tumour imaging) situent l'activité administrée à 2,5–5,0 MBq/kg, et la pratique courante en dose fixe est de l'ordre de 250–470 MBq (souvent ~370 MBq). Une fourchette « 2–4 MBq/kg / 150–300 MBq » présentée comme l'activité TYPIQUE est trop basse : la borne basse (150 MBq ≈ 2 MBq/kg pour 75 kg) correspond à des protocoles à faible activité / scanners modernes très sensibles, pas à l'activité standard. Un patient de 80 kg à 3,7 MBq/kg reçoit ≈ 300 MBq, qui devrait être le milieu de la fourchette et non son plafond. Risque de désinformation sur un repère dosimétrique central.",
-    "fix": "Aligner sur l'EANM : « ≈ 2,5–5 MBq/kg, soit typiquement de l'ordre de 250–400 MBq chez l'adulte (souvent ~370 MBq), variable selon le poids, le type de caméra et la durée d'acquisition ». Corriger la stat en conséquence (p. ex. « ≈ 250–400 MBq »)."
+    "severity": "minor",
+    "where": "Section B2 — tableau « Repères physiques par filière », ligne ⁶⁸Ga ; et section D3",
+    "problem": "Le ⁶⁸Ga est présenté comme produit par « générateur ⁶⁸Ge/⁶⁸Ga » avec une T½ de « ~68 min ». Valeurs exactes (T½ 67,7 min ≈ 68 min, rendement positonique 89 %, parent ⁶⁸Ge). Aucune erreur factuelle, mais le rendement positonique élevé (~89 %) qui justifie son usage TEP n'est pas mentionné — point informatif manquant, pas une faute.",
+    "fix": "Optionnel : préciser le rendement positonique ~89 % du ⁶⁸Ga pour cohérence avec la fiche étalon. Non bloquant."
   },
   {
     "severity": "minor",
-    "where": "Section A1 — infoBox « Point expert — TEMP vs TEP, une distinction physique » : « Émetteur de positons (¹⁸F, ⁶⁸Ga, ¹⁸F, ¹³N, ¹⁵O) »",
-    "problem": "Le ¹⁸F est listé deux fois dans l'énumération des émetteurs de positons (doublon ¹⁸F … ¹⁸F). Erreur de coquille, pas de fond, mais visible et peu sérieuse dans un encart « Point expert ».",
-    "fix": "Supprimer le doublon : « (¹⁸F, ⁶⁸Ga, ¹¹C, ¹³N, ¹⁵O) » — c'est vraisemblablement ¹¹C qui était voulu à la place du second ¹⁸F."
+    "where": "Sections A4 / D2 / E1 — essai NETTER-1 (¹⁷⁷Lu-DOTATATE)",
+    "problem": "Le contenu ne donne que « amélioration significative de la survie sans progression », sans chiffre. C'est prudent et correct (évite l'erreur « 8,5 mois » de la fiche étalon : la vraie médiane PFS du bras contrôle est 8,4 mois, HR 0,21). Le schéma posologique (4 perfusions de 7,4 GBq toutes les 8 semaines + octréotide LAR 30 mg) n'est pas explicité alors qu'il l'est pour VISION.",
+    "fix": "Optionnel : ajouter le schéma NETTER-1 (7,4 GBq × 4, toutes les 8 semaines, octréotide LAR 30 mg) pour symétrie avec VISION. Veiller, si un chiffre de PFS est ajouté, à utiliser 8,4 mois (et non 8,5) pour le bras contrôle. Non bloquant."
   },
   {
     "severity": "minor",
-    "where": "Section A3 — figureAlt/figureCaption du générateur et texte : « le molybdène-99 « père », T½ 66 h » ; cohérent partout (A3, B4 : 66 h)",
-    "problem": "Valeur de période du ⁹⁹Mo donnée à 66 h. La valeur exacte est 65,9–66,0 h (souvent arrondie à 66 h) — donc correcte. Aucune correction nécessaire sur le fond ; je le signale seulement pour confirmer la vérification (pas une erreur). NB : aucun problème non plus sur ⁹⁹ᵐTc 6,0 h, ¹⁸F 110 min (109,8 min), ¹³¹I 8 j (8,02 j), γ 364 keV, 511 keV, C-11 20 min — tous exacts.",
-    "fix": "Aucune correction requise ; item de traçabilité de la vérification. Éventuellement préciser « ≈ 66 h » pour lever toute ambiguïté."
+    "where": "Sections D2 / E2 — portée tissulaire du β⁻ de l'¹³¹I (« ~0,8 mm »)",
+    "problem": "La portée tissulaire des β⁻ de l'¹³¹I est donnée à ~0,8 mm (portée moyenne/effective). Certaines sources citent une portée maximale de ~1,5–2 mm. La valeur 0,8 mm correspond à la portée moyenne et est conforme à la fiche étalon (StatPearls NBK556145), donc acceptable, mais c'est une valeur variable selon la définition (moyenne vs max).",
+    "fix": "Optionnel : préciser « portée moyenne ~0,8 mm (max ~2 mm) » pour lever toute ambiguïté. Non bloquant — la valeur citée est sourcée et correcte en tant que portée moyenne."
   },
   {
     "severity": "minor",
-    "where": "Section A1 stat et corps de texte — « dose efficace typiquement ~1–10 mSv selon l'examen » et « fond naturel ~2–3 mSv/an »",
-    "problem": "Fourchette globalement juste mais la borne haute « ~10 mSv » est un peu basse comme plafond : certains examens TEMP/TEP courants dépassent 10 mSv (TEP-FDG ~6–7 mSv pour 370 MBq, mais une scintigraphie au ⁶⁷Ga ou certaines études cardiaques au thallium/MIBG, ou une TEP-FDG corps entier avec TDM diagnostique, peuvent atteindre 10–25 mSv). Le « typiquement ~1–10 mSv » reste défendable pour la majorité des examens diagnostiques courants ; ce n'est pas une erreur grossière, mais une borne haute potentiellement optimiste.",
-    "fix": "Nuancer en « typiquement de l'ordre de 1–10 mSv pour la plupart des examens diagnostiques courants, davantage pour certains examens (TDM diagnostique associée, traceurs de période plus longue) ». Le fond naturel 2–3 mSv/an est correct."
-  },
-  {
-    "severity": "critical",
-    "where": "Champ racine \"sources\" + corps de toutes les sections (A1, A2, A3, A4, B1, B3, B4, D... )",
-    "problem": "Le tableau \"sources\" est VIDE (\"sources\":[]) alors que le corps comporte des dizaines de marqueurs de citation inline : [1], [2], [3], [5], [6], [7], [8], [9] et des groupes [1,2], [1,3]. Critère 2 (aucune citation [n] ne doit dépasser 0) GRAVEMENT violé : chaque [n] est une citation orpheline (dangling) qui renvoie à une source inexistante. C'est l'anomalie bloquante.",
-    "fix": "Soit (a) fournir réellement le tableau \"sources\" avec des objets {title, url} réels et vérifiés correspondant à chaque numéro cité (EANM, SNMMI, SFMN, IAEA, ICRP 128, IRSN), soit (b) supprimer TOUS les marqueurs [n] du texte pour qu'aucune citation ne dépasse 0. Ne pas laisser des [n] pointer dans le vide."
-  },
-  {
-    "severity": "critical",
-    "where": "Numérotation des citations dans tout le corps",
-    "problem": "La numérotation est incohérente/cassée : on rencontre [1],[2],[3],[5],[6],[7],[8],[9] mais jamais [4]. Cela confirme que les renvois pointent vers une liste de sources qui n'a jamais été attachée (sources:[]). Impossible de vérifier titre/URL/DOI (critère 1) puisqu'il n'existe aucune source à contrôler.",
-    "fix": "Reconstituer une liste de sources continue (1..n sans trou) et faire correspondre chaque marqueur, OU retirer entièrement l'appareil de citation. Vérifier ensuite 2-3 URLs réelles avant publication."
-  },
-  {
-    "severity": "critical",
-    "where": "Section E3 — infoBox \"Note de sourçage\"",
-    "problem": "Contradiction interne directe : l'encadré affirme « Conformément à la charte NucleAtlas, aucune valeur chiffrée n'est avancée sans rattachement à une source réelle » et que les références « sont des organismes et publications réels ». Or l'article est livré avec sources:[] (zéro source attachée) tout en avançant des dizaines de valeurs chiffrées (140 keV, 6 h, 110 min, 66 h, 364 keV, 2-3 mSv/an, etc.). La promesse de sourçage est factuellement démentie par la donnée livrée.",
-    "fix": "Soit attacher effectivement les sources promises (et alors la note devient vraie), soit retirer/réécrire cette note pour ne pas affirmer un sourçage inexistant. En l'état elle constitue une affirmation trompeuse sur la fiabilité."
+    "where": "Vérification d'URL — échantillon de 12 sources sur 70",
+    "problem": "Plusieurs pages (NEJM, certaines PMC/PubMed, SAGE, ScienceDirect, IntechOpen, Frontiers) ont refusé la connexion directe (ECONNREFUSED) au WebFetch. La vérification a donc été menée par recoupement WebSearch indépendant. Toutes les sources testées se sont révélées RÉELLES et conformes au titre/URL annoncés : [2] EANM dosage card, [7] communiqué UNIS Vienne 2026 (réel, daté 12/02/2026), [13] DOI Frontiers 10.3389/fmed.2022.1051309, [21] IntechOpen 81818, [27] PMC10050133 (citation exacte « 40 million / 5.5 per 1000 »), [28] PII ScienceDirect S3051292125000065 (réel, EANM v3.0), [30] DOI ICRP 128 10.1177/0146645314558019, [44] DaTscan Se 78 %/Sp 97 %, [60] JNMT 51(3):239 (vol/n°/page exacts), [62][63] VISION (15,3 vs 11,3 mois, 7,4 GBq), [67] ALSYMPCA (14,9 vs 11,3, HR 0,70). Aucun DOI ni URL inventé détecté.",
+    "fix": "Aucune correction requise ; les sources non ouvertes directement ont été validées par recoupement. Pour publication, ouvrir les PDF primaires (ICRP 128, carte EANM) afin de confirmer in situ les coefficients de dose, comme le recommande déjà la section E3."
   },
   {
     "severity": "minor",
-    "where": "Contenu physique (A1, A4, A3, B2, B3, E1, E2)",
-    "problem": "Aucune valeur physique fabriquée détectée : ⁹⁹ᵐTc 140 keV / T½ 6 h, ¹⁸F 110 min, ⁹⁹Mo 66 h, ¹¹C 20 min, ¹³¹I T½ 8 j et γ 364 keV, 511 keV (annihilation), de Hevesy (Nobel chimie 1943), gamma-caméra d'Anger 1958, ICRP/CIPR 128 (coefficients de dose des radiopharmaceutiques) sont tous exacts. Pas de fabrication de constantes. (Constat positif — pour information.)",
-    "fix": "RAS sur l'exactitude physique ; le seul défaut est l'absence de sources pour étayer ces chiffres (voir constats critiques)."
+    "where": "identityCard (champ « Repère de dose ») et section E2 (Q/R rayonnement naturel + encadré « Activité ≠ dose »)",
+    "problem": "Incohérence interne mineure sur le fond naturel : le texte donne tantôt « ~2,4 mSv/an », tantôt « 2,4–3,0 mSv/an ». La source vérifiée [7] (UNSCEAR/UNIS 2026) fixe désormais la valeur actualisée à ~3,0 mSv/an (radon 1,8 mSv), 2,4 mSv étant l'ancien chiffre UNSCEAR 2008. Les deux valeurs sont sourcées et présentées en fourchette, donc défendable — pas une fabrication.",
+    "fix": "Harmoniser sur « ~2,4 mSv/an (UNSCEAR 2008) à ~3,0 mSv/an (estimation actualisée 2026) [7] » partout pour cohérence, et préférer 3,0 mSv comme valeur de référence courante."
   },
   {
     "severity": "minor",
-    "where": "Couverture structurelle (sections + identityCard)",
-    "problem": "Critères 3 et 4 satisfaits : couverture A→E complète (A1-A4, B1-B4, C1-C3, D1-D3, E1-E3), \"identityCard\" présente (12 entrées), densité experte conforme à l'étalon (stats, infoBoxes, tableaux, steps, quiz de 16 questions). (Constat positif — pour information.)",
-    "fix": "RAS."
+    "where": "Numérotation des citations — ensemble du contenu",
+    "problem": "Contrôle des bornes : l'index source le plus élevé est [70] et aucune citation inline ne dépasse [70]. Le tableau `sources` contient exactement 70 entrées (toutes verified:true). Conforme à la contrainte « aucune citation ne dépasse 70 ».",
+    "fix": "Aucune correction. Remarque de fidélité : le contenu attribue plusieurs valeurs (coefficients ICRP 128, carte EANM 296→100 MBq, Se/Sp) à des sources secondaires non ouvertes intégralement ; la section E3 le signale honnêtement et invite à reconfirmer sur le document primaire — pratique anti-fabrication correcte à conserver."
+  },
+  {
+    "severity": "minor",
+    "where": "Couverture des sections A→E + carte d'identité",
+    "problem": "Vérification de complétude : sections présentes A1–A4, B1–B5, C1–C3, D1–D4, E1–E3, plus `identityCard` (14 champs) et `quiz` (17 questions). Les cinq blocs A, B, C, D, E sont couverts et la carte d'identité est présente. Densité (stats, infoBoxes, tableaux, figures) homogène et conforme à l'étalon attendu.",
+    "fix": "Aucune correction requise."
   }
 ]
