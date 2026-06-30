@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "major",
+    "where": "quiz q6 (Tc-99m share) + identityCard absente + §3-ref vs sections medecin_nuc (A4, B2, etc.)",
+    "problem": "Incohérence interne sur la part des actes couverts par le Tc-99m. Les sections rédigées (A4, B2, B4, E1) disent à juste titre « ~2/3 / deux tiers » (conforme à la source NCBI NBK215133 et à la fiche étalon qui retient explicitement « ~2/3 »). MAIS la question de quiz q6 affirme « il couvre environ 80 % des actes de médecine nucléaire » dans son explication. La littérature donne aussi ~80 % chez certains auteurs, mais le document se contredit lui-même (2/3 ≈ 67 % vs 80 %).",
+    "fix": "Harmoniser sur une seule valeur. Comme la fiche étalon et la source primaire (NBK215133) retiennent « ~2/3 », corriger l'explication du quiz q6 : remplacer « couvre environ 80 % des actes » par « couvre environ deux tiers des actes diagnostiques » [5], cohérent avec le reste de l'article."
+  },
+  {
+    "severity": "major",
+    "where": "section C2 + C1 + section E2 (illustration 201Tl) — « 201Tl cardiaque : 150 MBq peuvent atteindre ≈ 37 mSv »",
+    "problem": "La valeur implique un coefficient de dose efficace de ≈ 0,247 mSv/MBq (37/150), ce qui est plus élevé que les coefficients de référence ICRP (≈ 0,14 à 0,22 mSv/MBq selon ICRP 53 add.5 / ICRP 128). Avec ces coefficients, 150 MBq donnent plutôt ≈ 21–33 mSv. 37 mSv n'est atteint qu'avec les valeurs hautes de notices fabricant (~0,24–0,36 mSv/MBq), non avec la valeur ICRP de référence citée par ailleurs dans l'article. Le document le signale lui-même comme « à vérifier ».",
+    "fix": "Soit aligner sur le coefficient ICRP (≈ 0,14–0,22 mSv/MBq → ≈ 20–33 mSv pour 150 MBq), soit présenter une fourchette « ≈ 20–37 mSv » en précisant la forte variabilité inter-source. Vérifier le coefficient exact dans le tableau primaire ICRP 128 avant publication (comme déjà noté dans l'infoBox)."
+  },
+  {
+    "severity": "minor",
+    "where": "En-tête de fiche + section E2 (« 24 février / 1ᵉʳ mars 1896 ») + §A2/B1 (« 1896 »)",
+    "problem": "Imprécision et incohérence historique sur la date de communication de Becquerel. La fiche écrit « communication à l'Académie le 24 février 1896 », tandis que §E2 écrit « 24 février / 1ᵉʳ mars 1896 », et la source [12] (APS) est datée « March 1, 1896 ». En réalité, la communication du 24 février 1896 portait sur la phosphorescence (rayonnement nécessitant une exposition lumineuse préalable) ; la découverte de la radioactivité SPONTANÉE (sels d'uranium impressionnant la plaque sans excitation lumineuse) a été présentée à la séance du 2 mars 1896.",
+    "fix": "Uniformiser la date et la rattacher au bon événement : « découverte de la radioactivité spontanée présentée à l'Académie des sciences le 2 mars 1896 » (la communication du 24 février 1896 concernait la phosphorescence). Corriger l'en-tête, §E2 et le step « 1896 — Becquerel »."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard (« TEP-FDG (radiotraceur) : 0,019 mSv/MBq → ≈ 4–7 mSv »)",
+    "problem": "Légère incohérence d'affichage avec les sections (B4, C2, D3, E1) qui donnent toutes « ~370 MBq → ≈ 7 mSv ». La fourchette 4–7 mSv de l'identityCard provient d'un dosage au poids (3–4 MBq/kg) non explicité ici, ce qui peut sembler contredire le « ≈ 7 mSv » répété ailleurs.",
+    "fix": "Soit afficher « ≈ 7 mSv (≈ 370 MBq adulte) » pour rester cohérent avec le corps de l'article, soit préciser dans l'identityCard que la fourchette 4–7 mSv correspond à un dosage pondéré au poids (3–4 MBq/kg)."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [3] (UNIS/UNSCEAR) titre + parenthèse « moyenne naturelle ~3,0 mSv/an »",
+    "problem": "L'URL est RÉELLE et NON inventée (communiqué UNIS du 12 fév. 2026, vérifié par WebSearch — titre exact correspond). Cependant, la parenthèse du libellé affirme « moyenne naturelle ~3,0 mSv/an », chiffre que le communiqué ne met pas explicitement en avant et qui contredit le 2,4 mSv/an utilisé partout ailleurs dans l'article (via [4] et [20]). Risque d'incohérence interne plutôt que de fabrication d'URL.",
+    "fix": "Soit citer la valeur 3,0 mSv/an depuis [3] de façon cohérente dans le corps, soit retirer cette précision chiffrée du libellé de [3] et conserver 2,4 mSv/an (UNSCEAR/[4]/[20]) comme valeur de référence affichée. Ne pas laisser deux moyennes naturelles mondiales contradictoires sourcées sans explication."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz, question « demi-vie du Tc-99m » (explication) et §B2/§E1",
+    "problem": "Incohérence interne sur la part du Tc-99m : l'explication du quiz dit « il couvre environ 80 % des actes » alors que le corps de l'article (A4, B2, source [5]) dit systématiquement « environ deux tiers (~2/3) des actes diagnostiques ». Non lié à une URL inventée, mais à une donnée chiffrée non alignée.",
+    "fix": "Uniformiser sur « ~2/3 » (valeur sourcée [5]) ou « ~80 % » dans tout l'article, et n'en garder qu'une."
+  },
+  {
+    "severity": "minor",
+    "where": "§C2 et §C2 infoBox « Coefficient 201Tl à vérifier » (valeur ≈ 37 mSv pour 150 MBq de 201Tl)",
+    "problem": "La valeur ≈37 mSv pour 150 MBq de 201Tl est avancée puis l'article reconnaît lui-même qu'elle « est à confirmer sur le tableau primaire ICRP 128 ». Donnée chiffrée non solidement sourcée signalée comme telle ; à ne pas publier en l'état comme chiffre ferme.",
+    "fix": "Confirmer le coefficient exact du 201Tl dans le tableau primaire ICRP 128 [16] avant publication, ou retirer la valeur chiffrée et ne garder que l'ordre de grandeur qualitatif (« nettement plus irradiant que le Tc-99m »)."
+  }
+]

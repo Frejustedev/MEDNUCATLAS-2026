@@ -1,0 +1,1262 @@
+{
+  "id": "V2_RADIOACTIVITE_EXPLIQUEE",
+  "cat": "generalites",
+  "catLabel": "Généralités",
+  "title": "La radioactivité expliquée simplement",
+  "difficulty": "fondamental",
+  "tags": [
+    "radioactivité",
+    "rayonnement ionisant",
+    "demi-vie",
+    "becquerel",
+    "sievert",
+    "dose efficace",
+    "exposition naturelle",
+    "radon",
+    "ALARA",
+    "vulgarisation",
+    "radioprotection",
+    "médecine nucléaire"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] OMS / WHO — Ionizing radiation and health effects (fact sheet)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/ionizing-radiation-and-health-effects"
+    },
+    {
+      "title": "[2] Radioactive decay — Wikipedia (types alpha/beta/gamma, unités becquerel/curie)",
+      "url": "https://en.wikipedia.org/wiki/Radioactive_decay"
+    },
+    {
+      "title": "[3] UNIS/UNSCEAR — UN scientific report confirms natural background radiation remains the dominant source of public exposure worldwide (moyenne naturelle ~3,0 mSv/an; 2,4 mSv = ancienne valeur 2008)",
+      "url": "https://unis.unvienna.org/unis/en/pressrels/2026/unisous453.html"
+    },
+    {
+      "title": "[4] Background radiation — Wikipedia (moyenne mondiale naturelle ~2,4 mSv/an)",
+      "url": "https://en.wikipedia.org/wiki/Background_radiation"
+    },
+    {
+      "title": "[5] Molybdenum-99/Technetium-99m Production and Use — NCBI Bookshelf (NBK215133; Tc-99m ~2/3 des actes diagnostiques)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215133/"
+    },
+    {
+      "title": "[6] Bone Scan — StatPearls (NCBI, NBK531486; scintigraphie osseuse)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK531486/"
+    },
+    {
+      "title": "[7] Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy — MDPI Toxics 11(10):814",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814"
+    },
+    {
+      "title": "[8] IRSN — Exposition de la population française aux rayonnements ionisants en 2015 (4,5 mSv/an : 2,9 naturel + 1,6 médical)",
+      "url": "https://irsn.fr/rapport-dexpertise/exposition-de-la-population-francaise-aux-rayonnements-ionisants-en-2015"
+    },
+    {
+      "title": "[9] Fluorine-18 — Wikipedia (T½ 109,7 min, β+ 96,7%, annihilation 511 keV, cyclotron)",
+      "url": "https://en.wikipedia.org/wiki/Fluorine-18"
+    },
+    {
+      "title": "[10] RadiologyInfo.org — Radiation Dose (X-Ray and CT Exams, repères mSv)",
+      "url": "https://www.radiologyinfo.org/en/info/safety-xray"
+    },
+    {
+      "title": "[11] FDG PET/CT: EANM procedure guidelines for tumour imaging, version 2.0 — PMC4315529",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[12] APS News — March 1, 1896: Henri Becquerel Discovers Radioactivity",
+      "url": "https://www.aps.org/apsnews/2008/02/becquerel-discovers-radioactivity"
+    },
+    {
+      "title": "[13] WHO Handbook on Indoor Radon — Executive summary / Health effects (NCBI Bookshelf NBK143220)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK143220/"
+    },
+    {
+      "title": "[14] Radiation dose assessment and establishment of diagnostic reference levels for MDP Tc-99m bone scans: A multi-hospital study in Saudi Arabia — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0969804325000405"
+    },
+    {
+      "title": "[15] NRC Information Notice No. 84-85: Molybdenum Breakthrough from Technetium-99m Generators",
+      "url": "https://www.nrc.gov/reading-rm/doc-collections/gen-comm/info-notices/1984/in84085"
+    },
+    {
+      "title": "[16] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (coefficients mSv/MBq) — Annals of the ICRP (SAGE)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[17] [18F]FDG PET/CT: EANM procedure guidelines for tumour imaging, version 3.0 — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065"
+    },
+    {
+      "title": "[18] Duration of Breastfeeding Interruption in Nuclear Medicine Procedures — J Nucl Med Technol 2023;51(3):239-246 (SNMMI; ICRP 84/106)",
+      "url": "https://tech.snmjournals.org/content/51/3/239"
+    },
+    {
+      "title": "[19] EANM — Paediatric Dosage Card / dosage card initiative",
+      "url": "https://www.eanm.org/initiatives/dosage-card/"
+    },
+    {
+      "title": "[20] Canadian Nuclear Safety Commission — Natural background radiation (fact sheet)",
+      "url": "https://www.cnsc-ccsn.gc.ca/eng/resources/fact-sheets/natural-background-radiation/"
+    },
+    {
+      "title": "[21] Banana equivalent dose — Wikipedia (BED ≈ 0,1 µSv ; ~15 Bq/banane ; ~4400-5400 Bq corps humain ; K-40)",
+      "url": "https://en.wikipedia.org/wiki/Banana_equivalent_dose"
+    },
+    {
+      "title": "[22] Doses en scintigraphies et TEP — laradioactivite.com (FDG 19 µSv/MBq, os 5,8 µSv/MBq, scinti cardiaque 231 µSv/MBq)",
+      "url": "https://laradioactivite.com/articles/medecin/dosesendiagnosticsnucleaires"
+    },
+    {
+      "title": "[23] ICRP Publication 103 — The 2007 Recommendations of the ICRP (justification/optimisation/limitation)",
+      "url": "https://www.icrp.org/docs/icrp_publication_103-annals_of_the_icrp_37(2-4)-free_extract.pdf"
+    },
+    {
+      "title": "[24] Health Physics Society — Technical basis for ICRP 1 mSv (public) and 20 mSv/an (travailleurs) dose limits",
+      "url": "https://hps.org/publicinformation/ate/q8900/"
+    },
+    {
+      "title": "[25] Potassium-40 — Wikipedia (demi-vie 1,25 Ga, 0,0117 % du potassium naturel)",
+      "url": "https://en.wikipedia.org/wiki/Potassium-40"
+    },
+    {
+      "title": "[26] Quelle dose annuelle de radioactivité un Français reçoit-il ? — Connaissance des Énergies (~4,5 mSv/an)",
+      "url": "https://www.connaissancedesenergies.org/questions-et-reponses-energies/quelle-dose-annuelle-de-radioactivite-un-francais-recoit-il"
+    },
+    {
+      "title": "[27] L'exposition moyenne des Français et les facteurs de variation — ASNR Recherche et expertise (~4,5 mSv/an)",
+      "url": "https://recherche-expertise.asnr.fr/savoir-comprendre/sante/lexposition-moyenne-francais-facteurs-variation"
+    },
+    {
+      "title": "[28] Shielding resources for four common radiopharmaceuticals: Tc-99m, F-18, I-131, Lu-177 — PMC12059296",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12059296/"
+    },
+    {
+      "title": "[29] Mo99 - Tc99m Generator — StatPearls / NCBI (NBK565854; Tc-99m T½ 6 h, 140 keV)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/"
+    },
+    {
+      "title": "[30] Radionuclides Used in Nuclear Medicine — Radio Rx (F-18, Ga-68, demi-vies)",
+      "url": "http://www.radiopharmaceuticals.info/radionuclides.html"
+    },
+    {
+      "title": "[31] Radiation Dose to Patients From Cardiac Diagnostic Imaging — Einstein et al., Circulation 2007;116:1290-1305 (AHA)",
+      "url": "https://www.ahajournals.org/doi/10.1161/circulationaha.107.688101"
+    },
+    {
+      "title": "[32] Radiation Doses and Risks in Chest Computed Tomography Examinations — Huda, Proc Am Thorac Soc 2007;4(4):316-320",
+      "url": "https://www.atsjournals.org/doi/full/10.1513/pats.200611-172HT"
+    },
+    {
+      "title": "[33] CT Radiation Dose Chart — Liv Hospital (TDM thorax ~7 mSv, abdo-pelvien ~7,7 mSv)",
+      "url": "https://int.livhospital.com/ct-radiation-dose-chart-guide/"
+    },
+    {
+      "title": "[34] 2.3 Units of Radiation — Ministère japonais de l'environnement (becquerel, gray, sievert)",
+      "url": "https://www.env.go.jp/en/chemi/rhm/basic-info/2018/pdf/basic-1st-02-03.pdf"
+    },
+    {
+      "title": "[35] Units of ionising radiation measurement — ARPANSA (Bq/Gy/Sv, activité vs dose)",
+      "url": "https://www.arpansa.gov.au/understanding-radiation/what-is-radiation/radiation/measurement"
+    },
+    {
+      "title": "[36] Radioprotection en médecine nucléaire — CNP-MN (PDF scanné, NRD, doses examens)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2024/02/RadioprotectionEnMedecineNucleaire.pdf"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "atom",
+        "label": "Phénomène",
+        "value": "Transformation spontanée d'un noyau instable"
+      },
+      {
+        "icon": "radiation",
+        "label": "Trois rayonnements",
+        "value": "α (papier) · β (aluminium) · γ (plomb)"
+      },
+      {
+        "icon": "activity",
+        "label": "Unité d'activité",
+        "value": "Becquerel (Bq) = 1 désintégration/s"
+      },
+      {
+        "icon": "zap",
+        "label": "Dose absorbée",
+        "value": "Gray (Gy) = 1 J/kg"
+      },
+      {
+        "icon": "shield",
+        "label": "Risque sanitaire",
+        "value": "Sievert (Sv) ; usuel mSv, µSv"
+      },
+      {
+        "icon": "clock",
+        "label": "Demi-vie repère",
+        "value": "Tc-99m 6,0 h · F-18 110 min"
+      },
+      {
+        "icon": "radiation",
+        "label": "Fond naturel (monde)",
+        "value": "≈ 2,4 mSv/an (UNSCEAR)"
+      },
+      {
+        "icon": "pin",
+        "label": "Fond naturel (France)",
+        "value": "≈ 4,5 mSv/an total dont 2,9 naturel"
+      },
+      {
+        "icon": "alert",
+        "label": "1re source naturelle",
+        "value": "Radon ; réf. OMS 300 Bq/m³"
+      },
+      {
+        "icon": "dna",
+        "label": "Corps humain (40K)",
+        "value": "≈ 4 400–5 400 Bq en permanence"
+      },
+      {
+        "icon": "droplets",
+        "label": "Dose banane (BED)",
+        "value": "≈ 0,1 µSv par banane"
+      },
+      {
+        "icon": "syringe",
+        "label": "TEP-FDG (radiotraceur)",
+        "value": "0,019 mSv/MBq → ≈ 4–7 mSv"
+      },
+      {
+        "icon": "stetho",
+        "label": "Principes CIPR",
+        "value": "Justification · optimisation · limitation"
+      },
+      {
+        "icon": "list",
+        "label": "Limites de dose (public)",
+        "value": "1 mSv/an ; travailleur 20 mSv/an"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "TEP au ¹⁸F-FDG"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse (Tc-99m-MDP)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie myocardique de perfusion"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie thyroïdienne"
+      },
+      {
+        "type": "traceur",
+        "label": "Technétium-99m"
+      },
+      {
+        "type": "traceur",
+        "label": "Fluor-18 (FDG)"
+      },
+      {
+        "type": "traceur",
+        "label": "Générateur ⁹⁹Mo/⁹⁹ᵐTc"
+      },
+      {
+        "type": "examen",
+        "label": "Les désintégrations radioactives"
+      },
+      {
+        "type": "examen",
+        "label": "La médecine nucléaire est-elle dangereuse ?"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹³¹I-iode (thérapie thyroïdienne)"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE (PRRT)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Que mesure le becquerel (Bq) ?",
+        "options": [
+          "L'énergie absorbée par les tissus",
+          "L'activité d'une source (nombre de désintégrations par seconde)",
+          "Le risque de cancer",
+          "La dose reçue par le patient"
+        ],
+        "answer": 1,
+        "explanation": "Le becquerel est l'unité d'activité : 1 Bq = 1 désintégration par seconde. Il quantifie la « quantité » de radioactivité d'une source, et non la dose reçue [2].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle unité exprime le risque pour la santé en intégrant le type de rayonnement et la sensibilité des tissus ?",
+        "options": [
+          "Le gray (Gy)",
+          "Le becquerel (Bq)",
+          "Le sievert (Sv)",
+          "Le curie (Ci)"
+        ],
+        "answer": 2,
+        "explanation": "Le sievert mesure la dose efficace : il pondère la dose absorbée (Gy) par des facteurs de rayonnement et de tissu, reflétant le risque sanitaire. On l'exprime usuellement en mSv ou µSv [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel rayonnement est arrêté par une simple feuille de papier ou par la peau ?",
+        "options": [
+          "Le rayonnement gamma (γ)",
+          "Le rayonnement bêta (β)",
+          "Le rayonnement alpha (α)",
+          "Les neutrons"
+        ],
+        "answer": 2,
+        "explanation": "L'alpha (noyau d'hélium, lourd et chargé) est très peu pénétrant : une feuille de papier ou la peau l'arrête. Il devient dangereux surtout si l'émetteur est inhalé ou ingéré [2].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pourquoi le rayonnement gamma est-il celui utilisé pour l'imagerie médicale ?",
+        "options": [
+          "Parce qu'il est le plus ionisant",
+          "Parce qu'il traverse le corps et ressort pour être détecté",
+          "Parce qu'il est arrêté par l'aluminium",
+          "Parce qu'il est sans énergie"
+        ],
+        "answer": 1,
+        "explanation": "Le gamma est un photon sans masse ni charge qui traverse les tissus ; il ressort du corps et peut être capté par la caméra. Il faut du plomb ou du béton pour le blinder [2].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Que signifie la demi-vie (T½) d'un radionucléide ?",
+        "options": [
+          "Le temps pour que tous les atomes se désintègrent",
+          "Le temps au bout duquel l'activité est divisée par deux",
+          "La durée de l'examen",
+          "La moitié de la dose injectée"
+        ],
+        "answer": 1,
+        "explanation": "La demi-vie est la durée au bout de laquelle la moitié des noyaux se sont désintégrés et l'activité est divisée par 2. En ~10 demi-vies, l'activité devient quasi nulle (< 0,1 %).",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la demi-vie du technétium-99m, isotope le plus utilisé en médecine nucléaire ?",
+        "options": [
+          "6 heures",
+          "110 minutes",
+          "8 jours",
+          "1,25 milliard d'années"
+        ],
+        "answer": 0,
+        "explanation": "Le Tc-99m a une demi-vie de 6,0 h et émet un γ de 140,5 keV ; il couvre environ 80 % des actes de médecine nucléaire et provient d'un générateur ⁹⁹Mo/⁹⁹ᵐTc [5].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la dose efficace moyenne annuelle d'origine naturelle dans le monde ?",
+        "options": [
+          "≈ 0,1 mSv/an",
+          "≈ 2,4 mSv/an",
+          "≈ 20 mSv/an",
+          "≈ 100 mSv/an"
+        ],
+        "answer": 1,
+        "explanation": "La moyenne mondiale d'exposition naturelle est d'environ 2,4 mSv/an (référence UNSCEAR), avec de fortes variations régionales pouvant dépasser 200 fois cette valeur [3][1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "En France, quelle est la première source d'exposition d'origine naturelle ?",
+        "options": [
+          "Le rayonnement cosmique",
+          "Le rayonnement tellurique du sol",
+          "Le radon",
+          "Le potassium-40 des aliments"
+        ],
+        "answer": 2,
+        "explanation": "En France, l'exposition naturelle est dominée par le radon (~32 % de l'exposition totale, soit ≈ 1,4 mSv/an). C'est aussi la 2e cause de cancer du poumon après le tabac [8][13].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi notre propre corps est-il radioactif ?",
+        "options": [
+          "À cause des examens médicaux passés",
+          "Parce qu'il contient du potassium-40 naturel",
+          "À cause de la pollution atmosphérique",
+          "Il ne l'est pas, c'est une idée fausse"
+        ],
+        "answer": 1,
+        "explanation": "Un adulte contient environ 140 g de potassium dont une fraction est du potassium-40 radioactif (demi-vie ≈ 1,25 milliard d'années) : cela représente ≈ 4 400–5 400 Bq d'activité interne permanente [21][25].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "À combien correspond approximativement la « dose banane » (Banana Equivalent Dose) ?",
+        "options": [
+          "≈ 0,1 µSv",
+          "≈ 1 mSv",
+          "≈ 10 mSv",
+          "≈ 100 mSv"
+        ],
+        "answer": 0,
+        "explanation": "Une banane (riche en potassium-40, ~15 Bq) délivre environ 0,1 µSv. C'est un outil pédagogique pour relativiser les faibles doses, non cumulatif car le potassium est éliminé par homéostasie [21].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel coefficient de dose efficace est associé au ¹⁸F-FDG selon la CIPR 128 ?",
+        "options": [
+          "0,0057 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,14 mSv/MBq",
+          "1,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "Le ¹⁸F-FDG a un coefficient de 0,019 mSv/MBq. Pour une activité injectée d'environ 370 MBq, la composante radiopharmaceutique seule représente ≈ 7 mSv [16][22].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Comment se produit le fluor-18 utilisé en TEP ?",
+        "options": [
+          "Par un générateur en service",
+          "En réacteur nucléaire",
+          "Par cyclotron (bombardement d'eau enrichie en ¹⁸O)",
+          "Par désintégration du Tc-99m"
+        ],
+        "answer": 2,
+        "explanation": "Le F-18 (T½ ≈ 109,7 min, émetteur β⁺ donnant deux photons d'annihilation de 511 keV) est produit par cyclotron, en bombardant de l'eau enrichie en oxygène-18 avec des protons [9].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quels sont les trois principes fondamentaux de radioprotection de la CIPR (Publication 103) ?",
+        "options": [
+          "Temps, distance, écran",
+          "Justification, optimisation, limitation",
+          "Détection, blindage, évacuation",
+          "Activité, dose, risque"
+        ],
+        "answer": 1,
+        "explanation": "La CIPR 103 repose sur la justification (bénéfice > détriment), l'optimisation (ALARA) et la limitation de dose. Temps/distance/écran sont les outils pratiques de l'optimisation [23].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la limite annuelle de dose pour le public (hors fond naturel et exposition médicale) ?",
+        "options": [
+          "0,1 mSv/an",
+          "1 mSv/an",
+          "20 mSv/an",
+          "100 mSv/an"
+        ],
+        "answer": 1,
+        "explanation": "La CIPR 103 fixe la limite pour le public à 1 mSv/an, et pour les travailleurs exposés à 20 mSv/an moyennés sur 5 ans (sans dépasser 50 mSv une année donnée). L'exposition médicale du patient n'est pas soumise à ces limites [23][24].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "À partir de quel ordre de dose les effets stochastiques (cancer) sont-ils épidémiologiquement démontrés ?",
+        "options": [
+          "Au-dessus de ~1 mSv",
+          "Au-dessus de ~100 mSv",
+          "Au-dessus de ~1 000 mSv",
+          "Dès la moindre dose"
+        ],
+        "answer": 1,
+        "explanation": "L'augmentation du risque de cancer est démontrée au-dessus d'environ 100 mSv. Les doses diagnostiques (quelques mSv) sont du même ordre que l'exposition naturelle annuelle et leur risque reste hypothétique, géré par précaution [1].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel seuil de dose au corps entier (dose unique) marque l'apparition du syndrome d'irradiation aiguë ?",
+        "options": [
+          "~10 mSv",
+          "~100 mSv",
+          "~1 000 mSv (1 Sv)",
+          "~10 000 mSv"
+        ],
+        "answer": 2,
+        "explanation": "Les effets déterministes à seuil, comme le syndrome d'irradiation aiguë, apparaissent vers ~1 Sv (1 000 mSv) en dose unique corps entier — sans rapport avec la médecine nucléaire diagnostique [1].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle distinction est essentielle à expliquer au patient ?",
+        "options": [
+          "Alpha et bêta",
+          "Activité (Bq) et dose reçue (Sv)",
+          "Gamma et rayons X",
+          "Cyclotron et réacteur"
+        ],
+        "answer": 1,
+        "explanation": "L'activité d'une source (Bq) et la dose reçue par une personne (Sv) sont deux grandeurs différentes : une activité injectée élevée ne signifie pas une dose élevée. Cette distinction est centrale en vulgarisation [35].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "La radioactivité est un phénomène naturel et spontané : un noyau instable se transforme en libérant de l'énergie sous forme de rayonnement (α, β, γ) — découverte par Becquerel en 1896, terme forgé par les Curie [2][12].",
+        "Trois unités à ne pas confondre : becquerel (Bq, activité = désintégrations/s), gray (Gy, dose absorbée = J/kg), sievert (Sv, dose efficace = risque sanitaire) [1][2][35].",
+        "La demi-vie (T½) est le temps pour que l'activité soit divisée par deux : Tc-99m ≈ 6 h, F-18 ≈ 110 min, I-131 ≈ 8 j, Lu-177 ≈ 6,7 j ; en ~10 T½ l'activité est négligeable [5][9].",
+        "Nous sommes exposés en permanence : ≈ 2,4 mSv/an en moyenne mondiale (UNSCEAR), ≈ 4,5 mSv/an en France dont ≈ 2,9 naturel et ≈ 1,6 médical [3][8].",
+        "Notre corps lui-même est radioactif (≈ 4 400–5 400 Bq de potassium-40) ; la « dose banane » (≈ 0,1 µSv) sert à relativiser les faibles doses [21][25].",
+        "Le radon est la 1re source naturelle en France et la 2e cause de cancer du poumon après le tabac ; niveau de référence OMS 300 Bq/m³ [8][13].",
+        "En médecine nucléaire, on administre un radiotraceur en quantité chimique infime qui se fixe sur une fonction biologique (FDG sur le glucose, MDP sur l'os) : on visualise le fonctionnement, pas seulement la forme [11][14].",
+        "Le risque cancérigène n'est démontré qu'au-delà de ~100 mSv ; les doses diagnostiques (quelques mSv) équivalent à quelques mois d'exposition naturelle [1]."
+      ],
+      "protocol": [
+        "Vérifier la justification de l'examen : bénéfice diagnostique > détriment (1er principe CIPR 103) [23].",
+        "Optimiser l'activité injectée (ALARA) : protocoles à activité réduite, stress-first en cardiologie, carte de dose pédiatrique EANM pondérée au poids [19].",
+        "Préparation type TEP-FDG : jeûne ≥ 6 h, glycémie mesurée (cible 4–7 mmol/L), repos au calme après injection, bonne hydratation et miction avant acquisition [11].",
+        "Rechercher systématiquement grossesse et allaitement avant injection ; gérer selon la CIPR 84/106 [18].",
+        "Après l'examen : hydratation et mictions fréquentes pour accélérer l'élimination ; distance temporaire avec femmes enceintes et jeunes enfants [18].",
+        "Appliquer en pratique le triptyque temps – distance – écran pour le personnel."
+      ],
+      "scores": [
+        "Échelle de comparaison patient (ordres de grandeur) : banane ≈ 0,1 µSv · radio thorax ≈ 0,02–0,1 mSv · vol transatlantique ≈ 0,03–0,08 mSv · scinti osseuse ≈ 3–5 mSv · TEP-FDG ≈ 4–7 mSv · TDM thorax ≈ 5–8 mSv · fond naturel annuel ≈ 2,4 mSv [10][16][22].",
+        "Coefficients de dose efficace CIPR 128 : ¹⁸F-FDG 0,019 mSv/MBq · Tc-99m-MDP ≈ 0,0057 mSv/MBq · scinti myocardique repos+effort ≈ 11–12 mSv par protocole complet [16][14][6].",
+        "Limites de dose CIPR 103 : public 1 mSv/an, travailleur exposé 20 mSv/an (moyenné sur 5 ans, max 50 mSv une année) — hors exposition médicale du patient [23][24].",
+        "Seuils d'effets : effets stochastiques démontrés > ~100 mSv ; effets déterministes (syndrome aigu) vers ~1 Sv corps entier [1]."
+      ],
+      "pitfalls": [
+        "Confondre activité (Bq) et dose (Sv) : une activité injectée élevée ne signifie pas une forte dose au patient [35].",
+        "Donner une seule valeur de fond naturel : bien distinguer moyenne mondiale (≈ 2,4 mSv/an, UNSCEAR) et France (≈ 4,5 mSv/an, IRSN) [3][8].",
+        "Citer une valeur chiffrée sans source : chaque coefficient CIPR 128, chaque dose de référence doit être confirmée sur la source primaire avant publication.",
+        "Oublier la composante TDM dans une TEP-TDM : elle peut ajouter ≈ 8 mSv et représenter jusqu'à ~70 % de la dose totale [22].",
+        "Inquiéter inutilement le patient : les doses diagnostiques (quelques mSv) sont du même ordre que l'exposition naturelle annuelle et le risque n'est démontré qu'au-delà de ~100 mSv [1].",
+        "Négliger le radon : 1re source naturelle et 2e cause de cancer du poumon, souvent ignorée du public [13]."
+      ]
+    },
+    "lead": "La radioactivité n'est pas une invention de l'homme : elle existe depuis l'origine de la Terre et nous entoure en permanence. Le sol sous nos pieds, l'air que nous respirons, les aliments que nous mangeons et même notre propre corps émettent naturellement un rayonnement, sans que nous le percevions. Certains atomes, dits instables, se transforment spontanément et libèrent au passage un peu d'énergie. En médecine nucléaire, on exploite ce phénomène en administrant des quantités infimes et soigneusement contrôlées d'un produit faiblement radioactif, afin de regarder comment un organe fonctionne. Comprendre ce mécanisme permet de remettre les doses médicales à leur juste échelle et de dialoguer sereinement avec le patient.",
+    "patient": {
+      "sections": [
+        {
+          "title": "La radioactivité, c'est quoi exactement ?",
+          "text": "La **radioactivité** est un phénomène **naturel**, présent sur Terre bien avant l'être humain. Certains atomes sont un peu « instables » : pour devenir stables, ils libèrent un petit surplus d'énergie sous forme de **rayonnement**. C'est tout. Ce n'est ni une invention de laboratoire, ni quelque chose qui n'existerait qu'autour des centrales : cela nous entoure **en permanence**.\n\nNous baignons dans cette radioactivité naturelle chaque jour, sans nous en rendre compte : elle vient du **sol** sous nos pieds, de l'**air** que nous respirons, des **aliments** que nous mangeons et même des **rayons venus de l'espace**. Plus surprenant : notre **propre corps** est légèrement radioactif, naturellement, depuis toujours. Une simple **banane**, riche en potassium, l'est elle aussi.\n\nEn médecine nucléaire, on utilise ce même phénomène, mais de façon **maîtrisée** : on administre une quantité **infime** d'un produit faiblement radioactif (un « traceur »), juste assez pour qu'une caméra repère le rayonnement qui ressort du corps et fabrique une image de l'organe qui fonctionne.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "La radioactivité fait partie de notre quotidien",
+              "text": "Le sol, les aliments, l'altitude lors d'un vol en avion, et même votre corps émettent en permanence une radioactivité naturelle. C'est un fond permanent et inoffensif auquel chacun est exposé toute sa vie, partout sur la planète."
+            }
+          ]
+        },
+        {
+          "title": "La « demi-vie » : pourquoi le produit disparaît vite",
+          "text": "Vous entendrez peut-être le mot **demi-vie** (ou « période »). C'est simplement le temps au bout duquel la radioactivité d'un produit **diminue de moitié**, puis de moitié encore, et ainsi de suite — jusqu'à devenir négligeable assez vite.\n\nC'est une bonne nouvelle pour vous : les produits utilisés pour les **images** sont choisis justement parce qu'ils ont une demi-vie **courte**. Leur radioactivité s'éteint d'elle-même en quelques heures, et le peu qui reste est **éliminé naturellement** par votre corps, surtout dans les urines. Quelques jours après un examen courant, il ne reste pratiquement plus rien. C'est pour cela qu'on vous conseille souvent de **bien boire** après l'examen : cela aide simplement votre corps à éliminer le produit plus vite.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Un conseil tout simple",
+              "text": "Buvez abondamment après votre examen et urinez régulièrement : c'est le moyen le plus efficace d'aider votre organisme à se débarrasser du traceur. Aucun régime ni précaution compliquée n'est nécessaire dans la grande majorité des cas."
+            }
+          ]
+        },
+        {
+          "title": "Faut-il avoir peur de cette radioactivité ?",
+          "text": "C'est une question naturelle, et la réponse est rassurante. La dose reçue lors d'un examen courant est **faible** : elle est du même ordre que la radioactivité naturelle que nous recevons en **quelques mois** simplement en vivant (sol, aliments, altitude). Autrement dit, on reste dans des niveaux que notre corps côtoie déjà tous les jours.\n\nSurtout, un examen n'est **jamais** prescrit « au cas où » : votre médecin ne le demande que lorsque l'information qu'il apporte est vraiment **utile pour votre santé**, et seulement si ce bénéfice dépasse largement ce très faible risque. Toute la pratique est **encadrée par la loi** et confiée à des professionnels formés à n'utiliser que le strict nécessaire.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Grossesse et allaitement : prévenez toujours",
+              "text": "Si vous êtes enceinte, pensez l'être, ou si vous allaitez, signalez-le avant l'examen. Ce n'est pas forcément un obstacle, mais l'équipe adapte alors la conduite à tenir (report, ajustement, ou courte interruption de l'allaitement). En cas de doute, posez la question : il n'y a pas de mauvaise question."
+            },
+            {
+              "type": "tip",
+              "title": "À retenir pour être tranquille",
+              "text": "Quantités infimes, radioactivité faible qui s'éteint d'elle-même, élimination rapide par votre corps, et un examen prescrit uniquement s'il vous est utile : voilà pourquoi la médecine nucléaire est considérée comme très sûre."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Comprendre les unités et les ordres de grandeur",
+          "text": "Trois unités structurent tout dialogue sur la radioactivité, et il est utile de ne pas les confondre face à un patient inquiet [1, 2] :\n\n- le **becquerel (Bq)** mesure l'**activité** d'une source : 1 Bq = une désintégration par seconde. C'est la « quantité » de radioactivité administrée (on parle de MBq à quelques GBq en pratique) [2] ;\n- le **gray (Gy)** mesure la **dose absorbée** : l'énergie déposée par kilogramme de tissu [1] ;\n- le **sievert (Sv)**, et en pratique le **millisievert (mSv)**, mesure la **dose efficace** : il pondère la dose par le type de rayonnement et la sensibilité des tissus, et reflète donc le **risque pour la santé** [1, 2].\n\nLe message clé à transmettre : l'**activité (Bq) n'est pas la dose reçue (Sv)**. Une activité affichée en mégabecquerels peut impressionner alors que la dose efficace correspondante reste de quelques millisieverts.",
+          "list": [
+            "**Exposition naturelle moyenne mondiale** ≈ 2,4 mSv/an (UNSCEAR) [3].",
+            "**En France**, exposition totale ≈ 4,5 mSv/an, dont ≈ 2,9 mSv d'origine naturelle (radon, sol, aliments, cosmique) et ≈ 1,6 mSv d'origine médicale [8].",
+            "Le **radon** est la 1ʳᵉ source naturelle et la 2ᵉ cause de cancer du poumon après le tabac [13].",
+            "Notre corps contient du **potassium-40** : un repère pédagogique utile (« la dose banane » ≈ 0,1 µSv) pour relativiser les faibles doses [10]."
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Repères pour rassurer un patient",
+              "text": "Radiographie du thorax ≈ 0,02–0,1 mSv ; vol transatlantique ≈ 0,03–0,08 mSv ; banane ≈ 0,1 µSv ; scanner thoracique ≈ 5–8 mSv [10]. Message validé : un examen diagnostique courant délivre une dose comparable à quelques mois d'exposition naturelle."
+            }
+          ]
+        },
+        {
+          "title": "Ce que la médecine nucléaire ajoute, et à quelles doses",
+          "text": "En médecine nucléaire, on n'irradie pas le patient par une source externe : on lui administre un **radiopharmaceutique** en quantité chimique infime (« dose traceur », sans effet pharmacologique), qui se fixe sur une fonction ou un processus biologique, puis une caméra détecte le rayonnement γ émergent. On explore donc le **fonctionnement** d'un organe, souvent **avant** toute traduction morphologique.\n\nLes radionucléides sont choisis pour leur **demi-vie courte**, qui limite l'exposition : le **technétium-99m** (T½ ≈ 6 h, γ 140 keV) couvre environ 80 % des actes mondiaux [5], et le **fluor-18** (T½ ≈ 110 min, photons d'annihilation de 511 keV en TEP) est produit par cyclotron [9]. Cette logique « juste-à-temps » explique aussi pourquoi tous les traceurs ne sont pas disponibles partout.\n\nLes doses efficaces restent **faibles à modérées** et toujours mises en regard du bénéfice diagnostique [16].",
+          "list": [
+            "**TEP au ¹⁸F-FDG** : 0,019 mSv/MBq ; pour une activité oncologique adulte, dose de l'ordre de 4–7 mSv (hors TDM associé) [16].",
+            "**Scintigraphie osseuse (⁹⁹ᵐTc-MDP)** : 0,0057 mSv/MBq ; ≈ 3–5 mSv pour 500–740 MBq [14].",
+            "**Scintigraphie myocardique (TEMP ⁹⁹ᵐTc)** : protocole repos + effort de l'ordre de ~11–12 mSv, cible des optimisations actuelles [6].",
+            "La composante **TDM** d'une TEP/TDM peut représenter une part importante de la dose totale (souvent ~10–15 mSv au total) [16]."
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Le cadre qui sécurise la pratique",
+              "text": "Toute exposition obéit aux trois principes de la CIPR (ICRP 103) : **justification** (bénéfice > détriment), **optimisation** (ALARA, dose aussi basse que raisonnablement possible) et **limitation** (1 mSv/an pour le public, 20 mSv/an pour les travailleurs, hors exposition médicale du patient) [2]. Les Niveaux de Référence Diagnostiques (NRD) encadrent en pratique les activités administrées."
+            }
+          ]
+        },
+        {
+          "title": "Précautions à connaître avant d'adresser",
+          "text": "Quelques situations modifient la conduite à tenir et doivent figurer sur la demande [18, 1] :\n\n- **Grossesse** : précaution majeure à signaler systématiquement. Les seuils de risque fœtal documentés (≈ 100 mSv en semaines 8–15) se situent très au-dessus des doses diagnostiques courantes, mais l'examen est néanmoins réévalué ou reporté (ICRP 84) [18, 1] ;\n- **Allaitement** : pour la plupart des radiopharmaceutiques au ⁹⁹ᵐTc, l'interruption n'est généralement pas requise ; une courte suspension (~4 h) peut être conseillée en cas de pertechnétate libre possible (ICRP 106) [18] ;\n- **Après l'examen** : un examen diagnostique au ⁹⁹ᵐTc n'est en général plus détectable au bout de 3 à 4 jours [18].\n\nAux doses diagnostiques (quelques mSv), aucun effet déterministe n'est attendu (seuils à ~1 Sv) et le risque stochastique reste très faible, géré par précaution — d'où l'attention particulière chez l'enfant et la femme enceinte [1].",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Pensez à la médecine nucléaire quand la décision clinique dépend du **fonctionnement** d'un organe ou d'une lésion plutôt que de sa seule anatomie : caractériser une lésion équivoque, détecter une atteinte précoce avant les modifications morphologiques, réaliser un bilan d'extension corps entier ou évaluer une réponse au traitement. Les doses délivrées sont faibles (quelques mSv, comparables à quelques mois d'exposition naturelle) et toujours justifiées par le bénéfice attendu. Renseignez systématiquement les éléments de sécurité (grossesse, allaitement, fonction rénale, diabète pour la TEP-FDG, traitements interférents) : une question clinique précise et ces informations conditionnent la pertinence, la dose optimisée et la rapidité de l'examen. En cas de doute sur le traceur le plus adapté, un contact préalable avec le médecin nucléaire est toujours utile."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - A1 - Carte d'identité : la radioactivité en un coup d'œil",
+          "text": "**Comment lire cette carte.** La **radioactivité** est la transformation spontanée d'un noyau atomique **instable** vers un état plus stable, avec émission d'énergie sous forme de **rayonnement** — particules (α, β) ou photons (γ, X) [1, 2]. C'est un phénomène **naturel et permanent** : nous y sommes exposés en continu par le sol, l'air, les aliments, le rayonnement cosmique et notre propre corps [3, 4]. La médecine nucléaire n'invente rien : elle exploite ce même phénomène, mais avec des **quantités infimes, contrôlées et ciblées** sur un organe ou une fonction [1].\n\nIl faut distinguer d'emblée trois grandeurs que le grand public confond systématiquement, et qu'un médecin doit savoir séparer pour rassurer un patient [2, 34, 35] :\n\n| Grandeur | Unité (SI) | Ce qu'elle mesure | Analogie |\n|---|---|---|---|\n| **Activité** | **becquerel (Bq)** = 1 désintégration/seconde [2, 34] | la « quantité » de radioactivité d'une source | le débit d'un robinet |\n| **Dose absorbée** | **gray (Gy)** = 1 J/kg [34] | l'énergie déposée par kg de tissu | la quantité d'eau reçue |\n| **Dose efficace** | **sievert (Sv)**, pondéré par le type de rayonnement et la sensibilité des tissus [1, 35] | le **risque pour la santé** | l'effet réel sur le corps |\n\nMessage-clé à transmettre : **activité (Bq) ≠ dose reçue (Sv)** [35]. Les sous-multiples usuels du sievert sont le **millisievert (mSv, 10⁻³)** et le **microsievert (µSv, 10⁻⁶)** [35]. La **demi-vie (T½)** — durée au bout de laquelle la moitié des noyaux se sont désintégrés — est le second concept-pivot : les traceurs médicaux ont des T½ très **courtes** (Tc-99m ≈ **6 h** [29], F-18 ≈ **110 min** [9]), ce qui explique qu'ils disparaissent vite de l'organisme.",
+          "stats": [
+            {
+              "value": "2,4 mSv/an",
+              "label": "Exposition naturelle moyenne (monde, UNSCEAR) [3, 4]"
+            },
+            {
+              "value": "≈ 4,5 mSv/an",
+              "label": "Exposition totale moyenne en France [8]"
+            },
+            {
+              "value": "1 Bq",
+              "label": "= 1 désintégration par seconde [2, 34]"
+            },
+            {
+              "value": "6 h / 110 min",
+              "label": "Demi-vie du Tc-99m / du F-18 [29, 9]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — les trois unités à ne jamais confondre",
+              "text": "Le **becquerel** quantifie une **source** (combien de noyaux se transforment par seconde), le **gray** quantifie l'**énergie déposée** dans la matière, le **sievert** quantifie le **risque biologique** (gray pondéré par les facteurs de rayonnement w_R et de tissu w_T) [1, 34, 35]. C'est le sievert — et lui seul — qui permet de comparer un examen, un vol en avion et le fond naturel sur une même échelle de risque."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des trois rayonnements alpha, bêta et gamma, montrant pour chacun la nature de la particule émise et son pouvoir de pénétration (papier, aluminium, plomb/béton).",
+            "caption": "Fig. 1 — Les trois rayonnements et leur pénétration : la grandeur physique qui structure toute la radioprotection."
+          }
+        },
+        {
+          "title": "A2 - A2 - Qu'est-ce que la radioactivité ? Le noyau instable qui cherche la stabilité",
+          "text": "**Le principe physique.** Un noyau atomique est fait de protons et de neutrons liés par la force nucléaire. Lorsque ce noyau présente un **déséquilibre** (excès de protons, de neutrons, ou simplement trop d'énergie), il est **instable** : il se transforme **spontanément** en un noyau plus stable en libérant l'énergie excédentaire sous forme de **rayonnement** [1, 2]. Le terme-clé est *spontané* : aucune excitation extérieure n'est nécessaire, le phénomène se produit de lui-même, à un rythme propre à chaque isotope. C'est précisément ce caractère spontané qu'**Henri Becquerel** a démontré en 1896 en observant que des sels d'uranium impressionnaient une plaque photographique à l'obscurité, sans aucune source d'énergie externe [12].\n\n**Un peu d'histoire (pour dater les notions).**\n\n| Date | Événement | Acteur |\n|---|---|---|\n| **1896** | Découverte de la radioactivité spontanée de l'uranium | Henri Becquerel [12] |\n| **1898** | Isolement du **polonium** puis du **radium** ; le terme « radioactivité » est forgé | Marie et Pierre Curie [12] |\n| **1903** | Prix Nobel de physique partagé | Becquerel et les époux Curie [12] |\n\n**La loi qui régit tout : la décroissance exponentielle.** Le nombre de noyaux qui se désintègrent par seconde est proportionnel au nombre de noyaux présents. L'activité décroît donc selon **A(t) = A₀ · e^(−λt)**, où λ est la constante de désintégration. La **demi-vie** est reliée à λ par **T½ = ln2 / λ** (cf. §A4) [détaillé §A4]. Ce caractère probabiliste — on ne peut pas prédire *quand* un noyau donné se transformera, seulement la *fraction* qui se transformera dans un intervalle — est ce qui distingue fondamentalement la décroissance radioactive de toute « usure » mécanique.\n\n**Notre propre corps est radioactif.** Pour ancrer l'idée que la radioactivité n'a rien d'exotique : un adulte de 70 kg contient environ **140 g de potassium**, dont une fraction est du **potassium-40** (⁴⁰K), isotope radioactif naturel. Cela représente une activité interne permanente de l'ordre de **4 400 à 5 400 Bq** [21] — soit plusieurs milliers de désintégrations par seconde, en continu, dans le corps de chacun. La demi-vie du ⁴⁰K est de **1,25 milliard d'années** [25], ce qui explique sa persistance depuis la formation de la Terre.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Spontané ≠ dangereux",
+              "text": "Le fait qu'un noyau se transforme **spontanément** ne dit rien de sa dangerosité : tout dépend de la **nature** du rayonnement émis, de l'**énergie** libérée, de la **demi-vie**, et surtout de la **dose** reçue par les tissus (cf. §A1, sievert). Un émetteur naturel de très longue demi-vie comme le ⁴⁰K que nous portons en permanence délivre une dose interne parfaitement tolérée par homéostasie [21]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi un noyau s'instabilise",
+              "text": "L'instabilité reflète la position du noyau par rapport à la « vallée de stabilité » du diagramme N/Z. Un excès de neutrons favorise la désintégration **β⁻** (un neutron → proton + électron), un excès de protons la désintégration **β⁺** ou la capture électronique, et les noyaux très lourds privilégient l'émission **α** (cf. §A3) [2]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de décroissance d'un noyau instable représenté par les niveaux d'énergie, illustrant la transition spontanée vers un état nucléaire plus stable avec émission d'un rayonnement.",
+            "caption": "Fig. 2 — Schéma de décroissance : le noyau instable libère son énergie excédentaire pour rejoindre un niveau plus stable."
+          }
+        },
+        {
+          "title": "A3 - A3 - Les trois rayonnements (alpha, bêta, gamma) : nature, parcours et pénétration",
+          "text": "Trois grands types de rayonnement résultent des désintégrations de base. Leur **nature** (masse, charge) détermine entièrement leur **pouvoir de pénétration** et donc leur usage et leur risque [2, 4]. C'est la notion la plus utile à transmettre, car elle explique à la fois pourquoi certains rayonnements servent à l'imagerie et pourquoi d'autres ne sont dangereux que dans des conditions précises.\n\n| Rayonnement | Nature de l'émission | Charge / masse | Pénétration — arrêté par | Portée dans les tissus |\n|---|---|---|---|---|\n| **Alpha (α)** | noyau d'hélium-4 (2 protons + 2 neutrons) | +2, lourd | une **feuille de papier** / la couche cornée de la peau [2, 4] | **< 0,1 mm** [4] |\n| **Bêta (β)** | électron (β⁻) ou positon (β⁺) | ±1, léger | quelques **mm d'aluminium** [2] | quelques **mm** [4] |\n| **Gamma (γ) / X** | photon (onde électromagnétique) | nulle, sans masse | **plomb / béton** (atténuation, jamais arrêt total) [2] | **traverse le corps entier** [2] |\n\n**Pourquoi c'est le gamma qu'on utilise en imagerie.** Seul le photon γ a un parcours suffisant pour **ressortir du corps** et atteindre une caméra externe : c'est ce qui rend possible la scintigraphie et la TEP [2]. En médecine nucléaire diagnostique, on exploite ainsi le γ de **140,5 keV** du **technétium-99m** (⁹⁹ᵐTc) [29], et les deux photons d'**annihilation de 511 keV** émis par les traceurs **émetteurs de positons (β⁺)** comme le fluor-18 en TEP [9].\n\n**Le paradoxe de l'alpha.** Le rayonnement α, le plus **ionisant** des trois, est aussi le plus facile à arrêter : il ne franchit ni le papier ni la couche superficielle de la peau [2]. Il n'est donc dangereux **que si l'émetteur est ingéré ou inhalé**, car il dépose alors toute son énergie sur une très courte distance, au contact direct des cellules [2, 4]. C'est exactement cette propriété qui fait du **radon** — gaz radioactif naturel α — la **deuxième cause de cancer du poumon après le tabac**, avec **3 à 14 %** des cancers pulmonaires qui lui sont attribuables selon les pays [13]. C'est aussi cette même propriété (dépôt local intense) qui est retournée à des fins **thérapeutiques** en médecine nucléaire (radium-223, émetteur α de portée < 0,1 mm, pour les métastases osseuses).",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — « le rayonnement le plus ionisant est le plus dangereux »",
+              "text": "Faux en l'état. L'**alpha** est le plus ionisant mais s'arrête sur une feuille de papier : en **exposition externe**, il est quasi inoffensif. Le danger dépend du **mode d'exposition** : un émetteur α est redoutable en **contamination interne** (radon inhalé, ingestion) mais négligeable à distance, alors qu'un émetteur γ est pénétrant et concerne aussi l'**exposition externe**. Toujours raisonner *nature du rayonnement × voie d'exposition*."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le 511 keV n'est pas un γ « classique »",
+              "text": "En TEP, les photons détectés ne proviennent pas d'une désexcitation γ du noyau mais de l'**annihilation** du positon (β⁺) avec un électron du milieu : deux photons de **511 keV** émis à 180° l'un de l'autre, dont la détection en coïncidence fonde l'imagerie TEP [9]. C'est pourquoi un émetteur β⁺ comme le F-18 produit une image, alors qu'un émetteur β⁻ pur (thérapeutique) n'en produit pas."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison du pouvoir de pénétration des rayonnements alpha (arrêté par une feuille de papier), bêta (arrêté par une plaque d'aluminium) et gamma (atténué par le plomb ou le béton).",
+            "caption": "Fig. 3 — Pouvoir de pénétration : la même hiérarchie qui dicte le blindage et explique pourquoi le gamma sert à l'imagerie."
+          }
+        },
+        {
+          "title": "A4 - A4 - La demi-vie : comprendre la décroissance qui fait tout disparaître",
+          "text": "**Définition.** La **demi-vie** (ou période, notée **T½**) est la durée au bout de laquelle la **moitié** des noyaux radioactifs d'une source se sont désintégrés — et donc au bout de laquelle l'**activité est divisée par deux** [2, 9, 29]. Elle découle directement de la loi de décroissance exponentielle **A(t) = A₀ · e^(−λt)**, avec la relation **T½ = ln2 / λ** (cf. §A2). C'est une **constante physique** propre à chaque isotope, indépendante de la température, de la pression ou de l'état chimique.\n\n**La règle des « 10 demi-vies ».** Comme l'activité est divisée par 2 à chaque période, elle chute très vite : après **n** demi-vies, il reste **(1/2)ⁿ** de l'activité initiale. C'est le repère pédagogique central pour rassurer un patient sur la disparition du traceur :\n\n| Nombre de T½ écoulées | Activité restante | |\n|---|---|---|\n| 1 | 50 % | |\n| 2 | 25 % | |\n| 3 | 12,5 % | |\n| 5 | ≈ 3 % | |\n| **10** | **< 0,1 %** | (≈ activité nulle) |\n\nPour le **technétium-99m** (T½ = **6 h** [29]), dix demi-vies représentent **60 heures**, soit environ **2,5 jours** : au-delà, l'activité injectée est physiquement quasi nulle. Pour le **fluor-18** (T½ = **109,7 min** [9]), il ne faut qu'environ **18 heures**.\n\n**Demi-vies des principaux radionucléides médicaux.** L'écart de plusieurs ordres de grandeur entre traceurs de diagnostic (heures) et de thérapie (jours) explique l'essentiel des contraintes pratiques — production, logistique, radioprotection de l'entourage :\n\n| Isotope | Demi-vie | Émission | Usage |\n|---|---|---|---|\n| **F-18** | **109,7 min** [9] | β⁺ → 511 keV | TEP (FDG) |\n| **Ga-68** | **≈ 68 min** [30] | β⁺ | TEP (PSMA, DOTATOC) |\n| **Tc-99m** | **6,0 h** [29] | γ 140,5 keV | scintigraphie (≈ ⅔ des actes) [5] |\n| **I-131** | **≈ 8 jours** [28] | β⁻ + γ | thérapie thyroïdienne |\n| **Lu-177** | **6,7 jours** [28] | β⁻ | thérapie ciblée (PRRT, PSMA) |\n| **K-40** (naturel) | **1,25 milliard d'années** [25] | β⁻ + γ | radioactivité corporelle naturelle |\n\n**La période effective (notion experte).** Dans l'organisme, le traceur ne disparaît pas seulement par décroissance physique : il est aussi **éliminé biologiquement** (urines, selles). La **période effective** combine les deux selon **1/T½_eff = 1/T½_phys + 1/T½_biol** : elle est donc toujours **plus courte** que la demi-vie physique seule, ce qui réduit d'autant la dose reçue par le patient [détaillé en dosimétrie]. C'est pourquoi l'**hydratation** et les **mictions fréquentes** après l'injection — qui accélèrent l'élimination biologique — font partie des conseils standard pour abaisser la dose.",
+          "steps": [
+            {
+              "title": "À l'injection (t = 0)",
+              "text": "Activité A₀ injectée, en MBq ou GBq. Pour le Tc-99m, l'activité utile est maximale pour l'acquisition des images."
+            },
+            {
+              "title": "Après 1 demi-vie (Tc-99m : 6 h)",
+              "text": "L'activité physique est divisée par 2. Combinée à l'élimination urinaire (période effective < 6 h), la décroissance réelle dans le corps est encore plus rapide."
+            },
+            {
+              "title": "Après ~3 demi-vies (Tc-99m : ~18 h)",
+              "text": "Il reste ≈ 12,5 % de l'activité physique. Un examen diagnostique au Tc-99m n'est en général plus détectable, même par des moniteurs sensibles, 3 à 4 jours après [18]."
+            },
+            {
+              "title": "Après ~10 demi-vies (Tc-99m : ~2,5 jours)",
+              "text": "Activité résiduelle < 0,1 % : physiquement négligeable. C'est le repère à donner au patient sur la « disparition » du produit."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi une demi-vie courte est un atout",
+              "text": "Une T½ courte est doublement favorable : elle **limite la dose** au patient (le traceur cesse vite d'irradier) et permet d'injecter une **activité suffisante** pour une bonne image sans pénalité dosimétrique durable. C'est l'une des raisons du succès du **Tc-99m** (6 h), qui couvre à lui seul environ **deux tiers** des actes diagnostiques de médecine nucléaire dans le monde [5]. Le revers : une T½ courte impose une **production locale** (générateur ⁹⁹Mo/⁹⁹ᵐTc, cyclotron pour le F-18) et une logistique tendue [9, 29]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — demi-vie physique ≠ durée de présence dans le corps",
+              "text": "Ne pas confondre la **demi-vie physique** (constante de l'isotope) avec la durée réelle pendant laquelle le traceur reste dans l'organisme, gouvernée par la **période effective** (physique + biologique), toujours plus courte [voir texte ci-dessus]. Un patient peut être rassuré : l'élimination urinaire accélère la décroissance apparente bien au-delà de la seule décroissance physique."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma d'un générateur molybdène-99 / technétium-99m illustrant la production locale de Tc-99m, dont la demi-vie de 6 heures impose une élution sur place.",
+            "caption": "Fig. 4 — Le générateur ⁹⁹Mo/⁹⁹ᵐTc : la demi-vie courte du Tc-99m (6 h) impose une production au plus près du patient."
+          }
+        },
+        {
+          "title": "B1 - La radioactivité naturelle : le bain de rayonnement permanent",
+          "text": "**La radioactivité n'est pas une invention de l'homme** : c'est un phénomène spontané par lequel le noyau d'un atome **instable** se transforme vers un état plus stable en libérant de l'énergie sous forme de **rayonnement** — photons (γ, X) ou particules (α, β, neutrons) [1]. Le processus a été mis en évidence par Henri **Becquerel** en 1896 sur des sels d'uranium, puis exploré par Pierre et Marie **Curie** (polonium, radium, 1898) [12]. Ce rayonnement nous entoure depuis l'origine de la Terre : il provient du **sol**, de l'**air**, des **aliments**, de l'**espace** et de **notre propre corps**.\n\n**Trois types de désintégration** sous-tendent toute la radioactivité naturelle comme médicale. Leur pénétration croissante est la clé pour comprendre à la fois le risque et l'imagerie [2] :\n\n| Type | Nature de l'émission | Pénétration (image clé) |\n|---|---|---|\n| **Alpha (α)** | noyau d'hélium-4 (2 p + 2 n), lourd, chargé +2 | arrêté par une **feuille de papier** ou la peau ; dangereux surtout si l'émetteur est inhalé/ingéré [2] |\n| **Bêta (β)** | électron (β⁻) ou positon (β⁺) | arrêté par quelques **mm d'aluminium** [2] |\n| **Gamma (γ) / X** | photon, sans masse ni charge | nécessite **plomb/béton** ; traverse le corps → c'est le rayonnement *utilisé pour l'imagerie* [2] |\n\n**L'ordre de grandeur de référence.** La dose efficace annuelle d'origine **naturelle** vaut en moyenne **≈ 2,4 mSv/an** à l'échelle mondiale (valeur UNSCEAR reprise par les organismes de sûreté) [20]. Dans certaines régions à fort radon ou à sol granitique, l'exposition peut dépasser **200 fois** cette moyenne [1]. En **France métropolitaine**, l'exposition totale moyenne est plus élevée — **≈ 4,5 mSv/an**, dont **≈ 2,9 mSv** d'origine naturelle et **≈ 1,6 mSv** d'origine médicale (données IRSN 2015) [8].\n\n**Décomposition de l'exposition française (IRSN 2015)** [8] :\n\n| Source | Part |\n|---|---|\n| Médical | **35 %** |\n| **Radon** | **32 %** |\n| Rayonnement tellurique (sol) | **14 %** |\n| Radionucléides naturels incorporés (aliments, eau, ⁴⁰K) | **12 %** |\n| Rayonnement cosmique | **7 %** |\n| Industriel + militaire | **< 1 %** |\n\n**Le radon, première source naturelle.** Gaz radioactif issu de la chaîne de l'uranium dans les roches, le radon s'accumule dans les bâtiments. Il est la **2ᵉ cause de cancer du poumon après le tabac**, **3 à 14 %** des cancers pulmonaires lui étant attribuables selon les pays [13]. L'OMS recommande de ne pas dépasser **300 Bq/m³** dans l'habitat (≈ 10 mSv/an) [13].\n\n**Notre corps est lui-même radioactif.** Un adulte de 70 kg contient ≈ 140 g de potassium, dont ≈ 16 mg de **potassium-40** (⁴⁰K), radionucléide primordial de demi-vie **≈ 1,25 milliard d'années** [25]. Il en résulte une activité interne permanente de l'ordre de **4 400 à 5 400 Bq** [21]. C'est un argument pédagogique majeur pour le patient : **être radioactif est la condition normale du vivant**.",
+          "stats": [
+            {
+              "value": "2,4 mSv/an",
+              "label": "Exposition naturelle moyenne mondiale (UNSCEAR) [20]"
+            },
+            {
+              "value": "4,5 mSv/an",
+              "label": "Exposition totale moyenne en France [8]"
+            },
+            {
+              "value": "~4400 Bq",
+              "label": "Radioactivité interne d'un adulte (⁴⁰K) [21]"
+            },
+            {
+              "value": "300 Bq/m³",
+              "label": "Niveau de référence OMS pour le radon [13]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — distinguer activité et dose",
+              "text": "Le **becquerel (Bq)** mesure l'**activité** (1 Bq = 1 désintégration/seconde) : c'est la « quantité » de radioactivité d'une source [2]. Le **sievert (Sv)** mesure la **dose efficace**, c'est-à-dire le **risque biologique**, en pondérant l'énergie déposée par le type de rayonnement et la sensibilité des tissus [1]. Un message à faire passer au patient : *activité (Bq) ≠ dose reçue (Sv)* [35]. Sous-multiples usuels : mSv (10⁻³ Sv), µSv (10⁻⁶ Sv) [35]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la « valeur 2,4 mSv » n'est pas la France",
+              "text": "Ne pas confondre la **moyenne mondiale naturelle (≈ 2,4 mSv/an)** [20] avec l'**exposition totale française (≈ 4,5 mSv/an)** [8] : la première ne concerne que le fond naturel à l'échelle planétaire, la seconde inclut la composante médicale (≈ 1,6 mSv) et le radon plus marqué en France. Toujours préciser le périmètre quand on cite un chiffre."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Pouvoir de pénétration comparé des rayonnements alpha, bêta et gamma : alpha arrêté par une feuille de papier, bêta par quelques millimètres d'aluminium, gamma nécessitant plomb ou béton.",
+            "caption": "Fig. 1 — Alpha / bêta / gamma : la pénétration croissante explique à la fois le risque et l'usage en imagerie."
+          }
+        },
+        {
+          "title": "B2 - La radioactivité artificielle : médecine, énergie, industrie et vie quotidienne",
+          "text": "À côté du fond naturel, l'homme produit et utilise des radionucléides **artificiels**. En France, cette composante artificielle représente ≈ **1,6 mSv/an**, **quasi exclusivement d'origine médicale** [8]. À l'échelle mondiale, le médical pèse **≈ 98 %** de la dose collective d'origine artificielle et **~20 %** de l'exposition totale de la population [1]. Les autres usages (énergie, industrie, recherche, retombées anciennes) restent marginaux dans le bilan dosimétrique individuel (**< 1 %** en France) [8].\n\n**La médecine est de loin le premier usage.** On dénombre dans le monde de l'ordre de **~40 millions** d'actes de médecine nucléaire par an, et plusieurs milliards d'examens de radiologie diagnostique [1]. Deux familles de radionucléides dominent l'imagerie, produits par des moyens artificiels distincts :\n\n| Isotope | Demi-vie (T½) | Émission utile | Production |\n|---|---|---|---|\n| **Tc-99m** | **6,0 h** [29] | γ **140,5 keV** (émetteur γ « pur ») [29] | **générateur ⁹⁹Mo/⁹⁹ᵐTc**, ⁹⁹Mo issu de réacteur [5] |\n| **F-18** | **109,7 min** [9] | β⁺ → 2 photons d'annihilation de **511 keV** (96,7 % β⁺) [9] | **cyclotron** (protons sur eau enrichie en ¹⁸O) [9] |\n\nLe **technétium-99m** est le pilier de la médecine nucléaire conventionnelle : il couvre environ **deux tiers** des actes diagnostiques mondiaux [5]. Sa demi-vie de **6 h** et son photon unique de 140 keV sont quasi idéaux pour la gamma-caméra. Il est obtenu localement par **élution** d'un générateur : du sérum physiologique (NaCl) lave la colonne d'alumine et entraîne le ⁹⁹ᵐTc, laissant le ⁹⁹Mo parent fixé — d'où le surnom de « **vache à molybdène** » que l'on « trait » plusieurs fois par jour [5].\n\nLe **fluor-18**, support du ¹⁸F-FDG (fluorodésoxyglucose) en TEP (tomographie par émission de positons), est lui produit par **cyclotron**, ce qui impose une logistique de proximité du fait de sa demi-vie de **≈ 110 min** [9].\n\n**Au-delà de l'imagerie diagnostique**, la radioactivité artificielle irrigue d'autres champs que le patient connaît souvent : la **production d'énergie** (réacteurs nucléaires), la **stérilisation** de matériel médical et de denrées par irradiation γ, le **contrôle industriel** (gammagraphie de soudures, jauges de niveau/épaisseur), la **datation** (¹⁴C) et la **recherche**. Tous ces usages partagent le même socle physique que la médecine nucléaire — seule change l'échelle des activités mises en jeu.\n\n**En ~10 demi-vies, l'activité d'un radionucléide devient négligeable** (< 0,1 % de l'activité initiale). C'est ce qui distingue fondamentalement un traceur médical à T½ courte — qui **disparaît du corps en quelques heures** — d'une contamination par radionucléides à vie longue. Ce point est central pour rassurer le patient (cf. §B4).",
+          "stats": [
+            {
+              "value": "~40 M",
+              "label": "Actes de médecine nucléaire par an dans le monde [1]"
+            },
+            {
+              "value": "~2/3",
+              "label": "Part des actes diagnostiques utilisant le Tc-99m [5]"
+            },
+            {
+              "value": "1,6 mSv/an",
+              "label": "Composante artificielle (médicale) en France [8]"
+            },
+            {
+              "value": "98 %",
+              "label": "Part du médical dans la dose collective artificielle [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — pourquoi des demi-vies courtes en médecine",
+              "text": "Les radiotraceurs diagnostiques sont choisis pour une **demi-vie courte** (Tc-99m : 6 h [29] ; F-18 : 110 min [9]) afin de limiter la dose au patient : le radionucléide se désintègre vite et s'élimine rapidement (la **période effective** combine décroissance physique et élimination biologique). C'est l'opposé exact des radionucléides à vie longue de l'environnement, comme le ⁴⁰K (T½ ≈ 1,25 Ga) [25]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma d'un générateur molybdène-99 / technétium-99m : colonne d'alumine retenant le ⁹⁹Mo parent, élution par sérum physiologique entraînant le ⁹⁹ᵐTc fils dans le flacon collecteur sous vide.",
+            "caption": "Fig. 2 — Le générateur ⁹⁹Mo/⁹⁹ᵐTc (« vache à molybdène ») : production locale et quotidienne du radionucléide artificiel le plus utilisé."
+          }
+        },
+        {
+          "title": "B3 - Comment on détecte et on mesure la radioactivité",
+          "text": "**On ne perçoit pas la radioactivité par les sens** : sa détection repose sur l'**ionisation** ou l'**excitation** qu'elle produit dans la matière. C'est précisément parce que le rayonnement **γ traverse le corps** (alors que α et β y sont arrêtés, cf. §B1) qu'il peut être détecté **à l'extérieur** du patient et servir à l'imagerie [2].\n\n**Les détecteurs.** Le principe commun est de convertir l'énergie déposée par un photon ou une particule en un signal mesurable :\n- **Détecteurs à scintillation** : un cristal (NaI(Tl) en gamma-caméra) émet un éclair lumineux à chaque interaction, amplifié par des photomultiplicateurs. C'est le cœur de la **gamma-caméra**, qui localise le γ de 140 keV du Tc-99m [29].\n- **Détecteurs à gaz** (compteur Geiger-Müller, chambre d'ionisation) : l'ionisation d'un gaz crée un courant ; utilisés en radioprotection (débitmètres, contrôle de contamination).\n- **Activimètre** (chambre d'ionisation calibrée) : mesure l'**activité en Bq/MBq** d'une seringue avant injection.\n\n**Les unités à ne pas confondre** — c'est le socle de toute communication rigoureuse avec le patient :\n\n| Grandeur | Unité SI | Définition | Ce qu'elle mesure |\n|---|---|---|---|\n| **Activité** | **Becquerel (Bq)** | 1 désintégration par seconde [34] | la « quantité » de radioactivité d'une source |\n| **Dose absorbée** | **Gray (Gy)** | énergie déposée par kg de matière = **1 J/kg** [34] | l'énergie reçue par les tissus |\n| **Dose efficace** | **Sievert (Sv)** | Gy pondéré par le type de rayonnement et la sensibilité des tissus [1] | le **risque pour la santé** |\n\nEn pratique clinique, on injecte des activités en **MBq** (10⁶ Bq) et l'on raisonne le risque en **mSv** (10⁻³ Sv) ou **µSv** (10⁻⁶ Sv) [35]. Le débit de dose ambiant s'exprime en **µSv/h**.\n\n**La demi-vie (T½), concept-clé de la mesure.** L'activité d'une source décroît selon une loi exponentielle, **A(t) = A₀·e^(−λt)**, où la demi-vie est le temps au bout duquel l'activité est **divisée par deux** (T½ = ln2/λ). Elle gouverne autant la planification logistique (un traceur F-18 doit être utilisé dans les heures suivant sa production [9]) que la décroissance résiduelle dans le corps du patient. Quelques repères :\n\n| Radionucléide | T½ | Usage |\n|---|---|---|\n| **F-18** | **109,7 min** [9] | TEP (FDG) |\n| **Tc-99m** | **6,0 h** [29] | imagerie conventionnelle |\n| **I-131** | **≈ 8 j** | thérapie thyroïdienne |\n| **Lu-177** | **≈ 6,7 j** [28] | thérapie ciblée (PRRT, PSMA) |\n\n**Mesurer pour relativiser.** La mesure des doses permet de **comparer** un examen aux expositions de la vie courante — l'outil pédagogique le plus efficace auprès du patient [10] :\n\n| Situation | Dose efficace (ordre de grandeur) |\n|---|---|\n| Banane (⁴⁰K, « dose banane ») | **≈ 0,1 µSv** [21] |\n| Radiographie de thorax | **≈ 0,02–0,05 mSv** [10] |\n| Vol transatlantique (~6 h, cosmique) | **≈ 0,03 mSv** [10] |\n| Fond naturel annuel (monde) | **≈ 2,4 mSv** [20] |\n| Scanner thoracique (TDM) | **≈ 5–8 mSv** [10] |\n\nLa « **dose banane** » (≈ 15 Bq de ⁴⁰K par fruit) illustre que de faibles doses nous accompagnent quotidiennement ; elle n'est pas cumulative, le potassium étant régulé par l'homéostasie [21].",
+          "stats": [
+            {
+              "value": "1 Bq",
+              "label": "= 1 désintégration par seconde [34]"
+            },
+            {
+              "value": "1 Gy = 1 J/kg",
+              "label": "Dose absorbée [34]"
+            },
+            {
+              "value": "140,5 keV",
+              "label": "Photon γ du Tc-99m détecté par la caméra [29]"
+            },
+            {
+              "value": "~0,1 µSv",
+              "label": "Dose équivalente d'une banane (⁴⁰K) [21]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la comparaison qui marche au lit du patient",
+              "text": "La phrase la plus efficace pour relativiser une scintigraphie : *« la dose de votre examen équivaut à quelques mois de rayonnement naturel »*. Une scintigraphie osseuse (≈ 3–5 mSv, cf. §B4) ou un scanner thoracique (≈ 5–8 mSv [10]) se situent dans l'ordre de grandeur de l'exposition naturelle annuelle (≈ 2,4 mSv [20]) — un cadre concret bien plus parlant qu'un chiffre isolé en millisieverts."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — l'activité injectée ne se lit pas en sieverts",
+              "text": "Une activité de **740 MBq** (becquerels) annoncée au patient n'a pas de signification directe en termes de risque : la conversion en dose efficace (mSv) passe par un **coefficient de dose** propre à chaque radiopharmaceutique (cf. §B4). Confondre MBq et mSv conduit à des messages erronés — toujours distinguer ce qu'on **injecte** (Bq) de ce que le patient **reçoit** (Sv) [35]."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'une gamma-caméra : collimateur, cristal scintillant NaI(Tl), réseau de photomultiplicateurs et électronique de positionnement détectant les photons gamma sortant du patient.",
+            "caption": "Fig. 3 — La gamma-caméra : un détecteur à scintillation qui localise le rayonnement γ traversant le corps."
+          }
+        },
+        {
+          "title": "B4 - La radioactivité au service du patient : des quantités infimes et contrôlées",
+          "text": "En médecine nucléaire, on administre un **radiopharmaceutique** : un médicament dont la fraction radioactive est en quantité **chimique infime** (traces) et dont l'activité est **mesurée et contrôlée** avant chaque injection. Le traceur se fixe sur un **organe** ou une **fonction**, puis une caméra détecte le rayonnement γ qui ressort du corps. On observe ainsi **comment l'organe fonctionne**, et pas seulement à quoi il ressemble : c'est tout l'intérêt de l'imagerie fonctionnelle (ex. le ¹⁸F-FDG, analogue du glucose, « allume » les cellules très consommatrices de sucre comme les tumeurs) [11].\n\n**Des doses faibles, chiffrées par des coefficients officiels.** La dose efficace reçue se calcule en multipliant l'activité injectée (MBq) par un **coefficient de dose** (mSv/MBq) tabulé pour chaque traceur par la **CIPR / ICRP** (publication 128) [16]. Quelques valeurs de référence :\n\n| Examen / traceur | Coefficient (mSv/MBq) | Activité usuelle | Dose efficace |\n|---|---|---|---|\n| **TEP au ¹⁸F-FDG** | **0,019** [16] | ~370 MBq (adulte) | **≈ 7 mSv** [16] |\n| **Scintigraphie osseuse (Tc-99m-MDP)** | **≈ 0,0057** [14] | 500–740 MBq | **≈ 3–5 mSv** [14] |\n| **Scintigraphie myocardique (Tc-99m, repos+effort)** | — | protocole complet | **≈ 11 mSv** [31] |\n\nCes valeurs se situent dans l'ordre de grandeur de **l'exposition naturelle de quelques mois à deux ans** (rappel : ≈ 2,4 mSv/an [20]). À titre de comparaison, le seuil au-delà duquel un sur-risque de cancer est démontré épidémiologiquement est de **~100 mSv**, et les effets déterministes graves (syndrome d'irradiation aiguë) n'apparaissent que vers **~1 000 mSv** (1 Sv) en dose unique corps entier — des niveaux **sans rapport** avec la médecine nucléaire diagnostique [1].\n\n**Le cadre réglementaire : les principes de la CIPR.** Toute exposition médicale s'inscrit dans les **trois principes** de la CIPR (publication 103) [23] :\n\n1. **Justification** — l'examen ne se fait que si son bénéfice diagnostique l'emporte sur le détriment.\n2. **Optimisation (ALARA, *As Low As Reasonably Achievable*)** — l'activité est ajustée au plus bas compatible avec une image diagnostique (protocoles à activité réduite, *stress-first* en cardiologie).\n3. **Limitation de dose** — limites réglementaires pour le **public (1 mSv/an)** et les **travailleurs (20 mSv/an** moyennés sur 5 ans) [24] ; à noter que le **patient** n'est pas soumis à une limite de dose, mais aux principes de justification et d'optimisation.\n\n**Un contrôle qualité à chaque étape.** La sécurité repose aussi sur la **pureté** du produit. Pour un générateur de Tc-99m, on vérifie la **« percée du molybdène »** (Mo breakthrough) : la limite est de **≤ 0,15 kBq de ⁹⁹Mo par MBq de ⁹⁹ᵐTc** au moment de l'administration (Pharmacopée européenne plus stricte) [15]. Une percée excessive dégrade l'image et **augmente la dose** au patient [15]. La pureté radiochimique (≥ 95 % du Tc à l'état pertechnétate) est contrôlée par chromatographie [15].\n\n**Des précautions adaptées au terrain.** La **grossesse** est systématiquement recherchée : les seuils de risque fœtal documenté (**100 mSv** en semaines 8–15) sont très au-dessus des doses diagnostiques courantes [18]. Pour l'**allaitement**, les traceurs marqués au Tc-99m (MIBI, tétrofosmine) n'imposent en général **pas** d'interruption ; en cas de pertechnétate libre possible, on interrompt **~4 h** [18]. Après un examen diagnostique au Tc-99m, le patient n'est en général plus détectable, même par des moniteurs sensibles, **3 à 4 jours** plus tard [18]. La **radioprotection pratique** se résume à trois leviers — **temps, distance, écran** — appliqués au personnel comme aux consignes données à l'entourage (hydratation, mictions fréquentes, distance temporaire vis-à-vis des jeunes enfants et femmes enceintes).",
+          "stats": [
+            {
+              "value": "≈ 7 mSv",
+              "label": "Dose d'une TEP au ¹⁸F-FDG (~370 MBq) [16]"
+            },
+            {
+              "value": "3–5 mSv",
+              "label": "Dose d'une scintigraphie osseuse [14]"
+            },
+            {
+              "value": "1 / 20 mSv/an",
+              "label": "Limites public / travailleur (CIPR 103) [24]"
+            },
+            {
+              "value": "100 mSv",
+              "label": "Seuil de sur-risque de cancer démontré [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — \"quantités infimes\" : une réalité chimique",
+              "text": "L'expression « quantités infimes » n'est pas qu'un argument rassurant : la **masse chimique** d'un radiopharmaceutique est de l'ordre du **nanogramme au microgramme**. Le ¹⁸F-FDG, par exemple, est injecté à des concentrations très inférieures au seuil pharmacologique du glucose : il n'a **aucun effet pharmacodynamique**, c'est un pur *traceur*. Le « médicament » agit par son rayonnement détecté, non par une action biochimique."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — toujours rechercher grossesse et allaitement",
+              "text": "Avant toute injection, **interroger systématiquement** sur une grossesse possible et un allaitement. Bien que les doses diagnostiques soient très inférieures aux seuils de risque fœtal (100 mSv en sem. 8–15 [18]), le principe de précaution impose de reporter un examen non urgent et d'adapter les consignes d'allaitement selon le traceur [18]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers de radioprotection ALARA : réduction du temps d'exposition, augmentation de la distance à la source et interposition d'un écran de protection.",
+            "caption": "Fig. 4 — Temps, distance, écran : les trois leviers concrets de l'optimisation (ALARA) pour le personnel et l'entourage."
+          }
+        },
+        {
+          "title": "C1 - C1 - Les unités décodées : becquerel, gray, sievert — ne plus les confondre",
+          "text": "La confusion entre **activité** et **dose** est la source la plus fréquente de malentendus avec un patient — et entre confrères. Trois unités du Système international suffisent à tout dire, à condition de ne jamais les interchanger : le **becquerel** mesure la *source*, le **gray** mesure l'*énergie déposée*, le **sievert** mesure le *risque biologique*. La distinction activité (Bq) ≠ dose reçue (Sv) est le message pédagogique central à transmettre.[35]\n\n| Unité | Mesure | Définition | Ce qu'elle quantifie |\n|---|---|---|---|\n| **Becquerel (Bq)** | Activité | **1 désintégration par seconde** | La « quantité » de radioactivité d'une *source* (nombre de noyaux qui se transforment par seconde)[34,35] |\n| **Gray (Gy)** | Dose absorbée | énergie déposée par unité de masse = **1 J/kg** (1 Gy = 100 rad) | L'énergie *physique* déposée dans la matière, sans préjuger de l'effet biologique[34] |\n| **Sievert (Sv)** | Dose efficace / équivalente | 1 J/kg **pondéré** par le type de rayonnement et la radiosensibilité des tissus | Le *risque pour la santé* — l'unité de la radioprotection[34,35] |\n\nLe passage du gray au sievert se fait par deux pondérations : un **facteur de rayonnement** (w_R) qui majore les rayonnements densément ionisants — α pondéré ×20 par rapport aux β et γ — et un **facteur tissulaire** (w_T) qui tient compte de la radiosensibilité de l'organe irradié.[34] En pratique clinique, on manie surtout des sous-multiples : le **millisievert (mSv = 10⁻³ Sv)** pour les doses d'examen et l'exposition annuelle, le **microsievert (µSv = 10⁻⁶ Sv)** pour les très faibles doses (radiographie simple, banane). Les débits s'expriment en µSv/h ou mSv/an.[35]\n\nUne même activité injectée (en Bq) ne se traduit donc pas par une dose efficace (en Sv) fixe : tout dépend du **radionucléide**, de sa biocinétique et de l'organe-cible. C'est tout le rôle des **coefficients de dose** (mSv/MBq) de la publication **ICRP 128** (International Commission on Radiological Protection — Commission internationale de protection radiologique), qui font le pont entre l'activité administrée et la dose efficace : le ¹⁸F-FDG vaut **0,019 mSv/MBq**, alors que le ²⁰¹Tl est bien plus irradiant à activité comparable (cf. §C2).[16,22]\n\n**Le radionucléide, pas la dose, dicte la décroissance.** Le concept de **demi-vie (T½)** — durée au bout de laquelle l'activité est divisée par deux selon A(t) = A₀·e^(−λt), avec T½ = ln2/λ — est la clé pour rassurer : les radiotraceurs d'imagerie ont des T½ **courtes**, donc disparaissent vite. Le **technétium-99m (⁹⁹ᵐTc)** a une T½ de **6,0 h** et émet un γ de **140,5 keV** sans β, ce qui en fait le traceur le plus utilisé.[29] Le **fluor-18 (¹⁸F)** a une T½ de **≈ 110 min** (109,7 min), émetteur β⁺ donnant deux photons d'annihilation de **511 keV** (TEP-FDG).[9] En une dizaine de demi-vies, l'activité résiduelle est < 0,1 %.",
+          "stats": [
+            {
+              "value": "1 Bq",
+              "label": "= 1 désintégration / seconde (activité)"
+            },
+            {
+              "value": "1 Gy",
+              "label": "= 1 J/kg (dose absorbée)"
+            },
+            {
+              "value": "1 Sv",
+              "label": "= J/kg pondéré (risque, radioprotection)"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Coefficient ICRP 128 du ¹⁸F-FDG"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — confondre l'activité et la dose",
+              "text": "« Combien de becquerels vais-je recevoir ? » est une question mal posée. Le **becquerel** décrit la *source* injectée (son activité) ; le **sievert** décrit le *risque* encouru par le patient. Une activité élevée d'un émetteur γ pur à T½ courte (⁹⁹ᵐTc) peut délivrer **moins** de dose efficace qu'une activité plus faible d'un émetteur à T½ longue et forte capture tissulaire (²⁰¹Tl).[16,22] Toujours traduire en mSv avant de comparer."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — distinguer dose absorbée et dose efficace",
+              "text": "Le **gray** (dose absorbée, par organe) et le **sievert** (dose efficace, corps entier pondéré) ne sont pas interchangeables, même si tous deux valent 1 J/kg. La dose absorbée renseigne sur l'effet déterministe local (cf. §C3) ; la dose efficace, pondérée par w_R et w_T, est l'estimateur conventionnel du **risque stochastique** global et la grandeur des limites réglementaires.[34]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Pouvoir de pénétration comparé des rayonnements α (arrêté par une feuille de papier), β (arrêté par quelques mm d'aluminium) et γ/X (nécessitant plomb ou béton) — base de la pondération w_R du sievert.",
+            "caption": "Fig. 1 — α / β / γ : la nature du rayonnement conditionne le pouvoir de pénétration et la pondération (w_R) qui transforme le gray en sievert."
+          }
+        },
+        {
+          "title": "C2 - C2 - Mettre les doses en perspective : l'échelle qui rassure",
+          "text": "Le meilleur outil pour dédramatiser un examen n'est pas un discours, mais une **échelle de comparaison** : un examen courant équivaut à *quelques mois d'exposition naturelle*. Encore faut-il distribuer les bons chiffres, sourcés et ordonnés.[20]\n\n**Nous sommes irradiés en permanence — et de l'intérieur.** L'exposition naturelle n'est pas une vue de l'esprit : la **moyenne mondiale** de dose efficace d'origine naturelle est de **≈ 2,4 mSv/an** (valeur de référence UNSCEAR, retenue par les agences de sûreté).[20] Elle se décompose typiquement en **radon ≈ 1,8 mSv**, ingestion ≈ 0,5 mSv, rayonnement tellurique ≈ 0,4 mSv et rayonnement cosmique ≈ 0,3 mSv.[20] Notre **propre corps est radioactif** : un adulte de 70 kg contient ≈ 140 g de potassium dont ≈ 16 mg de **potassium-40** (T½ ≈ 1,25 milliard d'années), soit une activité interne permanente de **≈ 4 400–5 400 Bq**.[21,25] C'est ce qui fonde la pédagogique « **dose banane** » (Banana Equivalent Dose) : une banane (≈ 0,5 g de potassium, ≈ 15 Bq de ⁴⁰K) délivre **≈ 0,1 µSv** — non cumulatif, le potassium étant régulé par l'homéostasie.[21]\n\n**En France**, l'exposition totale moyenne est **≈ 4,5 mSv/an**, dont ≈ 2,9 mSv d'origine **naturelle** (le radon pèse à lui seul ≈ 1,4 mSv) et ≈ 1,6 mSv d'origine **médicale**.[8,27] Bien distinguer « moyenne mondiale » (2,4 mSv) et « France » (4,5 mSv) évite les comparaisons fausses.\n\n| Exposition / examen | Dose efficace (ordre de grandeur) | Repère |\n|---|---|---|\n| Banane (⁴⁰K) | **≈ 0,1 µSv** | Référence pédagogique « BED »[21] |\n| Radiographie thoracique (face) | **≈ 0,02–0,05 mSv** | Quelques jours de fond naturel[10,32] |\n| Vol transatlantique (~6 h) | **≈ 0,03 mSv** | Rayonnement cosmique d'altitude[20] |\n| Scintigraphie osseuse (⁹⁹ᵐTc-MDP) | **≈ 3–5 mSv** | 740 MBq → ≈ 4,2 mSv[16,22] |\n| Fond naturel — moyenne mondiale | **≈ 2,4 mSv/an** | UNSCEAR[20] |\n| TEP-FDG (composante radiopharmaceutique) | **≈ 7 mSv** | 370 MBq × 0,019 mSv/MBq[16,22] |\n| Scanner thoracique (adulte) | **≈ 5–8 mSv** | ≈ 7,9 mSv en moyenne[33] |\n| Scintigraphie myocardique repos-effort (⁹⁹ᵐTc-MIBI) | **≈ 11 mSv** | Protocole complet[31] |\n| TEP-TDM corps entier (dose cumulée) | **≈ 10–15 mSv** | La TDM ajoute ≈ 8 mSv[22] |\n\n**Le coefficient de dose explique tout.** À activité égale, le radionucléide fait la différence : la **scintigraphie osseuse** au ⁹⁹ᵐTc-MDP repose sur un coefficient de **≈ 0,0057–0,0058 mSv/MBq** (740 MBq → ≈ 4,2 mSv), tandis que le **²⁰¹Tl** cardiaque est bien plus irradiant — 150 MBq peuvent atteindre **≈ 37 mSv** — ce qui justifie de lui préférer les protocoles ⁹⁹ᵐTc et les stratégies « stress-first » à activité réduite.[16,22] En **TEP-TDM**, la composante scanner peut représenter jusqu'à ~70 % de la dose totale : optimiser le protocole TDM (low-dose vs diagnostique) est le principal levier.[22]\n\nLe cadre est posé par les **trois principes ICRP 103** : **justification** (le bénéfice doit dépasser le détriment), **optimisation** selon le principe **ALARA** (*As Low As Reasonably Achievable*), et **limitation de dose** — cette dernière s'appliquant au public et aux travailleurs, *non* au patient dont l'exposition médicale est gérée par justification/optimisation.[23] Les **limites réglementaires** sont de **1 mSv/an** pour le public et **20 mSv/an** (moyennés sur 5 ans, ≤ 50 mSv une année donnée) pour les travailleurs exposés.[24]",
+          "stats": [
+            {
+              "value": "≈ 2,4 mSv/an",
+              "label": "Fond naturel — moyenne mondiale (UNSCEAR)"
+            },
+            {
+              "value": "≈ 4,5 mSv/an",
+              "label": "Exposition totale moyenne en France"
+            },
+            {
+              "value": "≈ 7 mSv",
+              "label": "TEP-FDG (370 MBq, hors TDM)"
+            },
+            {
+              "value": "≈ 4 400 Bq",
+              "label": "Radioactivité interne (⁴⁰K) d'un adulte"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la phrase qui rassure",
+              "text": "« Cet examen vous délivre l'équivalent de **quelques mois** d'exposition naturelle, et il n'est réalisé que parce que son bénéfice diagnostique le justifie. » Cette formulation, cohérente avec ICRP/IRSN, replace la dose dans une échelle vécue (fond naturel, vol en avion) plutôt qu'abstraite.[20,23]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — ne pas mélanger les référentiels",
+              "text": "Toujours préciser « **monde** » (2,4 mSv/an, UNSCEAR) ou « **France** » (4,5 mSv/an, IRSN/ASNR) : confondre les deux fausse les comparaisons.[8,20] De même, la dose d'une **TEP-TDM** doit être annoncée **cumulée** (radiopharmaceutique + scanner ≈ 10–15 mSv), pas seulement sa composante injectée.[22]"
+            },
+            {
+              "type": "info",
+              "title": "Coefficient ²⁰¹Tl à vérifier",
+              "text": "La valeur ≈ 37 mSv pour 150 MBq de ²⁰¹Tl illustre la forte variabilité inter-radionucléide ; le coefficient exact (et celui du ⁹⁹ᵐTc-sestamibi) sont à confirmer sur le tableau primaire **ICRP 128** avant tout usage chiffré définitif.[16]"
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Les trois leviers de l'optimisation des doses (principe ALARA) : réduire le temps d'exposition, augmenter la distance à la source, interposer un écran (blindage).",
+            "caption": "Fig. 2 — Temps / distance / écran : le triptyque ALARA structure l'optimisation des doses, pierre angulaire des principes ICRP 103."
+          }
+        },
+        {
+          "title": "C3 - C3 - Effets biologiques des rayonnements : ce que dit (et ne dit pas) la science",
+          "text": "Pour expliquer *pourquoi c'est sûr à ces doses*, il faut séparer deux familles d'effets de nature radicalement différente : les effets **déterministes** (à seuil, prévisibles) et les effets **stochastiques** (probabilistes, sans seuil démontré). Les doses de la médecine nucléaire diagnostique se situent très en deçà des premiers, et dans la zone d'incertitude des seconds.[1]\n\n| Effet | Nature | Seuil | Pertinence en MN diagnostique |\n|---|---|---|---|\n| **Déterministe** (radiodermite, syndrome aigu d'irradiation, cataracte…) | À seuil, sévérité ∝ dose | Syndrome aigu vers **~1 Sv = 1 000 mSv** (corps entier, dose unique) | **Aucune** — les doses diagnostiques (quelques mSv) en sont 100 à 1 000 fois en dessous[1] |\n| **Stochastique** (cancer radio-induit, effets héréditaires) | Probabiliste, gravité indépendante de la dose | Pas de seuil démontré ; risque épidémiologiquement établi **au-dessus de ~100 mSv** | Risque **hypothétique** aux doses d'examen, géré par précaution (modèle LNT)[1] |\n\n**Effets déterministes : hors sujet en diagnostic.** Ils n'apparaissent qu'au-delà d'un seuil et concernent la radiothérapie ou les accidents, jamais une scintigraphie ou une TEP. Le **syndrome d'irradiation aiguë** débute vers **~1 Sv** corps entier en dose unique — soit ~150 à 250 fois la dose d'une TEP-FDG.[1]\n\n**Effets stochastiques : la zone d'incertitude.** L'augmentation du risque de cancer n'est démontrée épidémiologiquement qu'**au-dessus de ~100 mSv**.[1] En dessous, et notamment dans la fourchette de quelques mSv des examens courants, le risque individuel est **hypothétique et non démontrable** : il est *géré par précaution* via le modèle **linéaire sans seuil (LNT, Linear No-Threshold)**, qui extrapole conservativement le risque des fortes doses vers les faibles, à des fins de radioprotection — et non comme une prédiction de dommage réel à l'échelle individuelle.[23] C'est la raison d'être de l'optimisation : un examen n'est délivré que si son bénéfice diagnostique justifie cette dose, comparable à **quelques mois d'exposition naturelle** (cf. §C2).\n\n**Grossesse — la précaution majeure.** Le risque tératogène fœtal documenté n'apparaît qu'à partir de **~100 mSv** (semaines 8–15) à **~200 mSv** (semaines 16–25) — des seuils très **au-dessus** des doses diagnostiques courantes (référence ICRP 84).[18,1] La conduite reste néanmoins de **rechercher systématiquement une grossesse** et d'évaluer le rapport bénéfice/risque, en reportant si possible.\n\n**Allaitement.** Pour les radiopharmaceutiques marqués au **⁹⁹ᵐTc**, l'interruption n'est généralement **pas requise** (MIBI/tétrofosmine) ; en cas de pertechnétate libre possible, une interruption **~4 h** suffit.[18] Après un examen diagnostique au ⁹⁹ᵐTc, le patient n'est en général plus détectable, même par des moniteurs sensibles, **3 à 4 jours** plus tard.[18] Quelques précautions simples post-examen suffisent : hydratation et mictions fréquentes (élimination urinaire), et distance temporaire vis-à-vis des femmes enceintes et jeunes enfants pendant la période utile ; des consignes spécifiques et plus strictes s'appliquent aux **thérapies** (ex. ¹³¹I).[18]",
+          "stats": [
+            {
+              "value": "~1 Sv",
+              "label": "Seuil du syndrome aigu d'irradiation (déterministe)"
+            },
+            {
+              "value": "~100 mSv",
+              "label": "Seuil du risque cancéreux épidémiologiquement établi"
+            },
+            {
+              "value": "3–4 jours",
+              "label": "Délai de non-détectabilité après ⁹⁹ᵐTc diagnostique"
+            },
+            {
+              "value": "~4 h",
+              "label": "Interruption d'allaitement si pertechnétate libre"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — grossesse à rechercher systématiquement",
+              "text": "Le seuil de dommage fœtal documenté (**~100 mSv** sem. 8–15) est sans commune mesure avec les doses diagnostiques (quelques mSv), mais une grossesse possible doit **toujours** être recherchée avant l'injection et le bénéfice/risque évalué (ICRP 84).[18,1]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — ce que le modèle LNT dit (et ne dit pas)",
+              "text": "Le modèle **linéaire sans seuil** est un *outil de gestion du risque collectif* en radioprotection, pas une prédiction de dommage individuel aux faibles doses. Aux quelques mSv d'un examen, le risque stochastique additionnel est **non démontrable** et noyé dans le bruit de fond du risque cancéreux spontané : le présenter au patient comme un « danger » serait une erreur scientifique.[1,23]"
+            },
+            {
+              "type": "info",
+              "title": "Allaitement et ⁹⁹ᵐTc",
+              "text": "La majorité des examens au ⁹⁹ᵐTc (MIBI, tétrofosmine) **n'imposent aucune interruption** de l'allaitement ; seule la présence possible de pertechnétate libre justifie ~4 h d'interruption. Toujours se référer aux tables ICRP 106 actualisées par radiopharmaceutique.[18]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration d'un noyau instable vers un état stable avec émission d'énergie : illustration du processus spontané à l'origine du rayonnement, dont les effets biologiques dépendent de la dose déposée.",
+            "caption": "Fig. 3 — La désintégration libère une énergie quantifiable (gray) dont l'effet biologique (sievert) suit deux régimes : déterministe à seuil, stochastique probabiliste."
+          }
+        },
+        {
+          "title": "D1 - Se protéger : justification, optimisation (ALARA) et le trio temps-distance-écran",
+          "text": "La radioprotection est le **socle réglementaire et éthique** de tout usage des rayonnements ionisants. Elle ne vise pas le « risque zéro » — impossible puisque l'exposition naturelle est permanente (§D2 de l'article voisin) — mais à **maintenir l'exposition aussi basse que raisonnablement possible** tout en délivrant le bénéfice médical attendu. La doctrine internationale repose sur **trois principes** énoncés par la Commission internationale de protection radiologique (CIPR, *ICRP* en anglais) dans sa Publication 103 (2007) [23].\n\n| Principe | Énoncé | Application en médecine nucléaire |\n|---|---|---|\n| **Justification** | Toute exposition doit apporter plus de bénéfice que de détriment | Indication validée ; l'examen change la prise en charge |\n| **Optimisation (ALARA)** | Doses *As Low As Reasonably Achievable*, compte tenu des facteurs économiques et sociétaux | Activité minimale utile, protocoles optimisés, équipements modernes |\n| **Limitation de dose** | Limites réglementaires individuelles (hors patient) | S'applique au **personnel** et au **public**, jamais au patient exposé pour son propre bénéfice |\n\n**Point central à transmettre.** La **limitation de dose ne s'applique pas au patient** : un examen justifié peut délivrer plusieurs mSv si le bénéfice diagnostique le justifie. Les limites réglementaires protègent les **travailleurs** et le **public**, pas le malade [23,24].\n\n**Limites de dose réglementaires (CIPR 103)** [23,24] :\n\n| Catégorie | Limite de dose efficace | Référence |\n|---|---|---|\n| **Public** | **1 mSv/an** (hors fond naturel et exposition médicale) | [24] |\n| **Travailleurs exposés** | **20 mSv/an** moyennés sur 5 ans, sans dépasser **50 mSv** une année donnée | [24] |\n\nCes valeurs se comparent au fond naturel — **2,4 mSv/an** en moyenne mondiale (UNSCEAR) [4,20] et **≈ 4,5 mSv/an** en France [8,27] — ce qui rappelle que la limite « public » de 1 mSv/an est *inférieure* à la variabilité naturelle entre régions.\n\n**Le trio opérationnel : temps – distance – écran.** L'optimisation ALARA se décline en trois leviers physiques mémorisables, valables au lit du patient comme en zone contrôlée. La **distance** est de loin le plus puissant : l'exposition décroît selon la **loi de l'inverse du carré** (doubler la distance divise le débit de dose par 4).\n\n| Levier | Principe physique | Geste pratique |\n|---|---|---|\n| **Temps** | Dose ∝ durée d'exposition | Préparer le geste, limiter le contact, manipuler vite et bien |\n| **Distance** | Débit de dose ∝ 1/d² (inverse du carré) | Pince longue, recul d'un pas, ne pas rester au contact de la source |\n| **Écran** | Atténuation exponentielle selon le matériau | Blindage de seringue, paravent plombé ; type d'écran adapté à l'énergie (cf. §D3) |\n\nLe **choix de l'écran dépend de la nature du rayonnement** : une simple feuille de papier arrête l'alpha (α), quelques millimètres d'aluminium arrêtent le bêta (β), mais le gamma (γ) utilisé en imagerie exige du **plomb ou du béton** [2]. C'est précisément parce que le γ traverse les tissus qu'il sert à l'imagerie — et qu'il faut s'en protéger par blindage.",
+          "stats": [
+            {
+              "value": "1 mSv/an",
+              "label": "Limite de dose publique (CIPR 103) [24]"
+            },
+            {
+              "value": "20 mSv/an",
+              "label": "Limite travailleur, moyennée sur 5 ans [24]"
+            },
+            {
+              "value": "1/d²",
+              "label": "Décroissance du débit de dose avec la distance"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - la limitation de dose ne concerne pas le patient",
+              "text": "Erreur classique : appliquer la limite « public » de 1 mSv/an au patient. FAUX. Le patient est exposé pour son propre bénéfice diagnostique ; seuls la **justification** et l'**optimisation** le concernent. Les limites de 1 mSv/an (public) et 20 mSv/an (travailleurs) [24] ne s'appliquent qu'aux personnes exposées sans bénéfice médical direct."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - la distance, levier roi",
+              "text": "Parmi temps-distance-écran, la **distance** offre le meilleur rapport effort/efficacité grâce à la loi en 1/d². Passer de 30 cm à 60 cm d'une seringue de Tc-99m divise le débit de dose aux mains par 4. C'est pourquoi pinces et porte-seringues blindés sont systématiques en radiopharmacie."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schema des trois leviers de la radioprotection : temps (limiter la duree d'exposition), distance (s'eloigner de la source, decroissance en 1/d2) et ecran (interposer un blindage adapte a l'energie du rayonnement).",
+            "caption": "Fig. 1 - Temps, distance, ecran : les trois leviers de l'optimisation ALARA, valables pour le personnel comme pour l'entourage."
+          }
+        },
+        {
+          "title": "D2 - Patient devenu source : consignes pratiques après un examen ou un traitement",
+          "text": "Spécificité majeure de la médecine nucléaire : contrairement à la radiologie (où l'irradiation cesse dès l'arrêt du tube), le radiopharmaceutique **injecté reste dans le patient**, qui devient lui-même une **source radioactive temporaire**. L'entourage et le public peuvent donc être exposés *après* l'examen. L'intensité et la durée de cette « source vivante » dépendent de deux paramètres combinés en une **période effective**.\n\n**La période effective gouverne tout.** L'activité dans l'organisme décroît selon deux mécanismes simultanés : la **décroissance physique** (T½ physique propre à l'isotope) et l'**élimination biologique** (urines, selles). La période effective se calcule par : **1/T½eff = 1/T½phys + 1/T½biol**, et elle est toujours *plus courte* que la période physique. C'est elle qui détermine combien de temps le patient reste « source ».\n\n**Diagnostic vs thérapie : deux mondes.** Pour un examen **diagnostique** au Tc-99m (T½ physique **6,0 h** [29]) ou au F-18 (T½ **≈ 110 min** [9]), les activités sont faibles et les périodes courtes : le patient n'est plus détectable, même par des moniteurs sensibles, **3 à 4 jours** après [18]. À l'inverse, une **thérapie** à l'iode-131 (T½ **≈ 8 jours**) ou au lutétium-177 (T½ **≈ 6,7 jours**) impose des consignes prolongées, parfois une hospitalisation en chambre radioprotégée.\n\n| Type d'acte | Isotope (T½ phys.) | Patient « source » | Consignes |\n|---|---|---|---|\n| **TEP-FDG** | F-18 (110 min [9]) | Quelques heures | Distance temporaire ; éviter contact prolongé enfants/femmes enceintes le jour même |\n| **Scintigraphie Tc-99m** | Tc-99m (6 h [29]) | ≈ 1 jour | Indétectable à 3-4 j [18] ; hydratation |\n| **Thérapie ¹³¹I** | I-131 (8 j) | Plusieurs jours à semaines | Consignes écrites strictes, distance, hospitalisation si forte activité |\n| **Thérapie ¹⁷⁷Lu** | Lu-177 (6,7 j) | Plusieurs jours | Consignes spécifiques, mictions, gestion des effluents |\n\n**Consignes pratiques universelles après examen diagnostique** (à remettre au patient) :\n\n1. **S'hydrater abondamment** et **uriner fréquemment** : accélère l'élimination biologique du traceur et réduit la dose à la vessie et à l'entourage.\n2. **Limiter temporairement le contact rapproché** avec les **jeunes enfants** et les **femmes enceintes** le jour de l'examen (mesure de précaution, distance plutôt que durée).\n3. **Allaitement** : pour les traceurs au Tc-99m, l'interruption n'est généralement **pas nécessaire** ; en cas de pertechnétate libre possible, interrompre **quelques heures** ; pour le pertechnétate, une suspension d'environ **4 h** suffit le plus souvent [18]. Les thérapies (¹³¹I) imposent un **arrêt définitif**.\n4. **Voyages / portiques de sécurité** : prévenir le patient qu'il peut **déclencher les détecteurs** des aéroports plusieurs jours après l'examen ; un certificat médical est utile.\n\n**Élimination = double bénéfice.** L'hydratation et les mictions fréquentes ne protègent pas seulement l'entourage : elles réduisent la **dose au patient lui-même** (paroi vésicale, organe souvent critique). C'est l'illustration concrète de l'optimisation (§D1) au-delà de la salle d'examen.",
+          "steps": [
+            {
+              "title": "Le jour de l'examen",
+              "text": "Hydratation abondante, mictions fréquentes ; éviter le contact rapproché prolongé avec jeunes enfants et femmes enceintes (privilégier la distance)."
+            },
+            {
+              "title": "24-48 h apres (diagnostique)",
+              "text": "Activité résiduelle minime pour le Tc-99m/F-18 ; vie normale. Prévenir du risque de déclenchement des portiques de sécurité."
+            },
+            {
+              "title": "3-4 jours apres (diagnostique)",
+              "text": "Patient au Tc-99m non détectable même par moniteurs sensibles [18] : plus aucune consigne."
+            },
+            {
+              "title": "Apres therapie (¹³¹I, ¹⁷⁷Lu)",
+              "text": "Consignes écrites prolongées (distance, durée de contact, effluents) sur plusieurs jours à semaines ; arrêt définitif de l'allaitement après ¹³¹I [18]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "3-4 j",
+              "label": "Tc-99m indetectable apres examen [18]"
+            },
+            {
+              "value": "6,0 h",
+              "label": "Periode physique du Tc-99m [29]"
+            },
+            {
+              "value": "≈ 8 j",
+              "label": "Periode du ¹³¹I (therapie) - source prolongee"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Precaution - distinguer diagnostic et therapie",
+              "text": "Ne pas calquer les consignes du diagnostique sur la thérapie. Un patient traité par ¹³¹I (T½ 8 j) reste une source significative pendant des jours à semaines et relève de consignes écrites strictes (distance, durée de contact, gestion du linge et des effluents), voire d'une hospitalisation en chambre dédiée. Un patient ayant passé une scintigraphie Tc-99m (T½ 6 h [29]) n'est plus détectable après 3-4 jours [18]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - la periode effective, pas la periode physique",
+              "text": "Le temps pendant lequel le patient reste « source » n'est pas la période physique seule mais la **période effective** (1/T½eff = 1/T½phys + 1/T½biol), toujours plus courte. Pour le F-18, l'élimination urinaire raccourcit encore une demi-vie déjà brève (110 min [9]) : d'où des consignes le jour même seulement, contrairement aux thérapies à élimination lente."
+            }
+          ]
+        },
+        {
+          "title": "D3 - Le cadre réglementaire et les acteurs de la sûreté radiologique",
+          "text": "L'usage médical des rayonnements s'inscrit dans une **architecture normative à plusieurs étages**, du comité scientifique international jusqu'au service de médecine nucléaire. Comprendre cette chaîne aide à situer d'où viennent les chiffres-clés (périodes, coefficients de dose, limites) cités tout au long de cet article.\n\n**Du global au local : qui produit la doctrine ?**\n\n| Acteur | Rôle | Production de référence |\n|---|---|---|\n| **UNSCEAR** (Comité scientifique ONU) | Évalue les niveaux et effets des rayonnements | Estimation du fond naturel ≈ **2,4 mSv/an** [4,20] |\n| **CIPR / ICRP** | Recommande la doctrine de radioprotection | Publication **103** (principes) [23] ; Publication **128** (doses patients) [16] |\n| **OMS / WHO** | Santé publique, effets sanitaires | Fiche « rayonnements ionisants » [1] ; seuils radon [13] |\n| **EANM / SNMMI / SFMN** | Sociétés savantes de médecine nucléaire | Guides de procédure (activités, préparation) [11,17,18,19] |\n| **Autorités nationales** (ex. ASNR en France) | Réglementation, contrôle, NRD | Exposition de la population [8,27] |\n\n**Les coefficients qui chiffrent le risque patient.** Les valeurs de **dose efficace par unité d'activité** (mSv/MBq), citées dans l'évaluation dosimétrique des examens, proviennent de la **Publication 128 de la CIPR** [16]. Quelques repères pour ancrer les ordres de grandeur :\n\n| Examen | Coefficient (mSv/MBq) | Dose efficace typique |\n|---|---|---|\n| **¹⁸F-FDG (TEP)** | **0,019** [16,22] | ≈ **7 mSv** pour 370 MBq (composante traceur seule) [22] |\n| **Scintigraphie osseuse (Tc-99m-MDP)** | **≈ 0,0057-0,0058** [16,22] | ≈ **3-5 mSv** (500-740 MBq) [22] |\n| **Scintigraphie myocardique (Tc-99m-MIBI)** | **≈ 0,0085** (repos) [16] | ≈ **11 mSv** repos+effort [31] |\n\nÀ ces chiffres s'ajoute, en TEP-TDM, la **composante scanner** (≈ 8 mSv, parfois ~70 % de la dose totale), portant un examen corps entier à **≈ 10-15 mSv** [22,33] — d'où l'importance de l'optimisation des protocoles TDM (§D1).\n\n**Les Niveaux de Référence Diagnostiques (NRD).** Outil concret de l'optimisation : un **NRD** est une valeur de dose (ou d'activité) au-delà de laquelle un service doit s'interroger sur ses pratiques. Ce ne sont **ni des limites, ni des seuils de danger**, mais des repères de bonne pratique permettant de détecter les protocoles « hors norme ». Ils encadrent les activités administrées en médecine nucléaire diagnostique [36].\n\n**Mettre le risque en perspective — message pour le patient.** Aux faibles doses des examens diagnostiques (quelques mSv), le risque cancérigène individuel est **hypothétique et non démontré** ; il est géré par précaution selon le modèle **linéaire sans seuil** (LNT) à des fins de radioprotection collective [23]. Les **effets déterministes** (syndrome d'irradiation aiguë) n'apparaissent que vers **~1 Sv = 1 000 mSv** en dose unique corps entier [1] — sans aucun rapport avec la médecine nucléaire diagnostique. Le surcroît de risque de cancer (**effets stochastiques**) n'est démontré épidémiologiquement qu'**au-dessus de ~100 mSv** [1]. Concrètement, un examen courant délivre l'équivalent de **quelques mois à une ou deux années** d'exposition naturelle [4,8,20], et n'est réalisé que si son **bénéfice diagnostique** le justifie (principe de justification, §D1).",
+          "stats": [
+            {
+              "value": "~1 Sv",
+              "label": "Seuil des effets deterministes (corps entier) [1]"
+            },
+            {
+              "value": "~100 mSv",
+              "label": "Seuil de risque cancer demontre (stochastique) [1]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Coefficient ¹⁸F-FDG (CIPR 128) [16]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "D'ou viennent les chiffres de cet article ?",
+              "text": "Le fond naturel (2,4 mSv/an monde [4,20] ; 4,5 mSv/an France [8,27]) vient d'UNSCEAR et de l'ASNR/IRSN. Les principes (justification, ALARA, limitation) et les limites (1 et 20 mSv/an) viennent de la CIPR 103 [23,24]. Les coefficients de dose patient (mSv/MBq) viennent de la CIPR 128 [16]. Les activités et préparations viennent des guides EANM/SNMMI/SFMN [11,17,18,19]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - NRD n'est pas une limite",
+              "text": "Un Niveau de Référence Diagnostique [36] n'est ni une limite réglementaire, ni un seuil de toxicité. C'est un repère statistique de bonne pratique : le dépasser régulièrement doit déclencher une analyse du protocole, pas une alarme sanitaire. Confondre NRD et limite de dose est une erreur fréquente de raisonnement."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - effets deterministes vs stochastiques",
+              "text": "Distinction structurante pour rassurer : les effets **déterministes** (à seuil, ~1 Sv [1]) sont sans rapport avec le diagnostique. Le risque **stochastique** (cancer, sans seuil démontré, significatif > ~100 mSv [1]) est, aux doses diagnostiques (quelques mSv), du même ordre que la variabilité du fond naturel — d'où un risque individuel non mesurable, géré par le modèle LNT à l'échelle des populations."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schema comparatif des trois rayonnements ionisants : alpha (arrete par une feuille de papier), beta (arrete par quelques mm d'aluminium) et gamma (necessite plomb ou beton), illustrant le choix de l'ecran selon l'energie en radioprotection.",
+            "caption": "Fig. 2 - Pouvoir de penetration des rayonnements alpha, beta et gamma : le blindage requis (et donc l'ecran de radioprotection) depend de la nature du rayonnement."
+          }
+        },
+        {
+          "title": "E1 - Idées reçues, FAQ et points clés à retenir",
+          "text": "Cette section consolide les **confusions** les plus fréquentes en consultation, les questions du patient et de l'interne, et la synthèse mémorisable de l'article. Chaque réponse renvoie aux unités et ordres de grandeur établis plus haut.\n\n### Idées reçues à déconstruire\n\n**« La radioactivité est une invention de l'industrie nucléaire. »** Faux : c'est un phénomène **naturel et permanent**. Le fond naturel délivre en moyenne **2,4 mSv/an** dans le monde [3,4] et **≈ 4,5 mSv/an** en France (dont ≈ 3 mSv naturels) [8,26,27]. Notre propre corps est radioactif : un adulte de 70 kg contient ≈ 16 mg de **potassium-40**, soit une activité interne continue de **4 400–5 400 Bq** [21].\n\n**« Activité (becquerel) = dose reçue (sievert). »** Confusion centrale à corriger. Le **becquerel (Bq)** mesure le **nombre de désintégrations par seconde** d'une source (sa « quantité » de radioactivité) [34,35] ; le **sievert (Sv)** mesure l'**impact biologique** de la dose reçue par l'organisme [34,35]. Une source très active n'irradie pas forcément beaucoup l'individu, et inversement.\n\n**« Le patient injecté reste durablement radioactif et dangereux pour son entourage. »** Pour un examen diagnostique au **Tc-99m** (T½ = 6,0 h) [29] ou au **F-18** (T½ ≈ 110 min) [9], la décroissance physique et l'élimination urinaire font disparaître l'essentiel de l'activité en quelques heures. En **~10 demi-vies** l'activité résiduelle est < 0,1 %. Les consignes de distance temporaire ne concernent que les premières heures (et surtout les **thérapies**, ex. ¹³¹I) [1].\n\n**« Un scanner et une scintigraphie, c'est la même dose. »** Non, et le radionucléide change tout : une **scintigraphie osseuse** au Tc-99m-MDP délivre **≈ 3–5 mSv** [14,22], une **TEP-FDG** ≈ **7 mSv** pour la composante radiopharmaceutique seule (370 MBq × 0,019 mSv/MBq) [16,22], tandis qu'un **TEP-TDM corps entier** atteint **≈ 10–15 mSv** une fois la composante TDM ajoutée [22].\n\n### Repères dosimétriques pour rassurer le patient\n\n| Source d'exposition | Dose efficace | Source |\n|---|---|---|\n| Une **banane** (potassium-40) | ≈ **0,1 µSv** | [21] |\n| **Radiographie de thorax** (face) | ≈ **0,02–0,05 mSv** | [10,32] |\n| **Vol transatlantique** (~6 h, rayonnement cosmique) | ≈ **0,03 mSv** | [10,20] |\n| **Fond naturel annuel** (monde) | ≈ **2,4 mSv/an** | [3,4] |\n| **Scintigraphie osseuse** Tc-99m-MDP | ≈ **3–5 mSv** | [14,22] |\n| **TEP-FDG** (radiopharmaceutique seul, 370 MBq) | ≈ **7 mSv** | [16,22] |\n| **Scanner thoracique** adulte | ≈ **5–8 mSv** | [32,33] |\n| **TEP-TDM corps entier** | ≈ **10–15 mSv** | [22] |\n\nMessage validé à transmettre : *un examen diagnostique courant équivaut à quelques mois d'exposition naturelle*, et n'est réalisé que si le **bénéfice diagnostique** le justifie (principe de justification, ICRP 103) [23].\n\n### FAQ\n\n**Pourquoi le technétium-99m est-il l'isotope vedette ?** Émetteur **γ « pur » de 140,5 keV** idéal pour la γ-caméra, demi-vie courte (**6,0 h**) limitant la dose, et produit sur place par un **générateur ⁹⁹Mo/⁹⁹ᵐTc** [29]. Il couvre la grande majorité des actes de médecine nucléaire diagnostiques [5].\n\n**Faut-il craindre les faibles doses des examens ?** En dessous de **~100 mSv**, l'excès de risque cancéreux n'est pas démontré individuellement ; il est géré par précaution selon le modèle linéaire sans seuil, à des fins de radioprotection uniquement [1,23]. Les doses diagnostiques (quelques mSv) sont du même ordre que l'exposition naturelle annuelle.\n\n**À partir de quelle dose y a-t-il un effet aigu ?** Les **effets déterministes** (syndrome d'irradiation aiguë) n'apparaissent qu'à partir de **~1 Sv = 1 000 mSv** en dose unique corps entier [1] — sans aucun rapport avec la médecine nucléaire diagnostique.\n\n**Grossesse et allaitement ?** Toujours signaler une grossesse possible : un dommage fœtal n'est documenté qu'au-delà de **100–200 mSv** selon le terme [18], soit très au-dessus des doses diagnostiques. Pour les radiopharmaceutiques au Tc-99m, l'allaitement n'est en général pas interrompu (MIBI/tétrofosmine) ; en cas de pertechnétate libre, **interrompre ~4 h** [18].\n\n**Quelles sont les trois unités à ne jamais confondre ?** **Becquerel** (activité, désintégrations/s) [34,35], **gray** (dose absorbée, énergie/kg = 1 J/kg) [34], **sievert** (dose efficace, risque biologique pondéré) [34,35].",
+          "list": [
+            "**Radioactivité = phénomène naturel** : un noyau instable se stabilise en émettant un rayonnement (α, β, γ) [1,2] ; nous y sommes exposés en permanence (sol, aliments, cosmique, et notre propre corps : 4 400–5 400 Bq de K-40) [21].",
+            "**Trois unités à distinguer** : becquerel (activité, désintégrations/s) [34,35], gray (dose absorbée, J/kg) [34], sievert (dose efficace, risque biologique) [34,35] — activité ≠ dose.",
+            "**Demi-vie = concept clé** : durée pour diviser l'activité par 2 ; Tc-99m ≈ 6,0 h [29], F-18 ≈ 110 min [9] ; en ~10 demi-vies l'activité est négligeable (< 0,1 %).",
+            "**Trois rayonnements** : α (arrêté par une feuille de papier, dangereux si incorporé) [2], β (quelques mm d'aluminium) [2], γ/X (plomb/béton, mais traverse le corps → utilisé pour l'imagerie) [2].",
+            "**Exposition** : ≈ 2,4 mSv/an (monde) [3,4] ; ≈ 4,5 mSv/an en France dont radon ≈ 1,4 et médical ≈ 1,6 [8,26].",
+            "**Médecine nucléaire = quantités infimes et ciblées** : un traceur (radiopharmaceutique) se fixe sur une fonction et la γ-caméra/TEP détecte le rayonnement émis — on image le fonctionnement, pas seulement l'anatomie.",
+            "**Doses diagnostiques** : scinti os ≈ 3–5 mSv [14,22], TEP-FDG ≈ 7 mSv [16,22], TEP-TDM corps entier ≈ 10–15 mSv [22] — du même ordre que le fond naturel annuel.",
+            "**Sécurité** : effets déterministes seulement > ~1 Sv [1], risque cancéreux démontré seulement > ~100 mSv [1] ; les examens (quelques mSv) sont régis par justification + optimisation (ALARA) [23]."
+          ],
+          "stats": [
+            {
+              "value": "2,4 mSv/an",
+              "label": "Fond naturel moyen (monde) [3,4]"
+            },
+            {
+              "value": "4,5 mSv/an",
+              "label": "Exposition totale moyenne (France) [8,26]"
+            },
+            {
+              "value": "≈ 7 mSv",
+              "label": "TEP-FDG, radiopharmaceutique seul [16,22]"
+            },
+            {
+              "value": "~100 mSv",
+              "label": "Seuil de risque cancéreux démontré [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la dose banane (BED)",
+              "text": "La « Banana Equivalent Dose » ≈ **0,1 µSv** par banane (≈ 15 Bq de K-40) est un excellent outil pédagogique pour relativiser les faibles doses [21]. Préciser toutefois sa limite : elle n'est **pas cumulative**, le potassium étant régulé par homéostasie (excrétion) — manger 100 bananes ne délivre pas 100 fois la dose."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — activité n'est pas dose",
+              "text": "Ne jamais traduire un chiffre en **becquerel** (activité d'une source) en risque pour le patient sans passer par la **dose efficace en sievert** [34,35]. Le sievert seul intègre le type de rayonnement et la radiosensibilité tissulaire ; c'est lui, et non le becquerel, qui mesure le risque sanitaire [1]."
+            },
+            {
+              "type": "info",
+              "title": "Radon — la 1ère source naturelle après le médical en France",
+              "text": "Le **radon**, gaz radioactif naturel issu du sol, est la **2ᵉ cause de cancer du poumon après le tabac** : 3 à 14 % des cancers pulmonaires lui sont attribuables selon les pays (OMS) [13]. Il représente ≈ 1,4 mSv/an en France [8]. Niveau de référence OMS : ne pas dépasser **300 Bq/m³** dans l'habitat [13]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des trois désintégrations radioactives : particule alpha (noyau d'hélium, arrêtée par une feuille de papier), bêta (électron/positon, arrêtée par quelques millimètres d'aluminium) et photon gamma (arrêté par le plomb/béton mais traversant les tissus, d'où son usage en imagerie).",
+            "caption": "Fig. 1 — α / β / γ : pouvoir de pénétration croissant. Le γ traverse le corps, d'où son usage diagnostique."
+          }
+        },
+        {
+          "title": "E2 - Histoire et perspectives : de Becquerel et Curie aux nouveaux isotopes",
+          "text": "Comprendre la radioactivité, c'est suivre une trajectoire de **130 ans** : d'une plaque photographique voilée par hasard à la **médecine théranostique** d'aujourd'hui.\n\n### Les fondateurs (1896–1903)\n\nLe **24 février / 1ᵉʳ mars 1896**, **Henri Becquerel** observe que des sels d'uranium impressionnent une plaque photographique à l'abri de la lumière : il vient de découvrir la **radioactivité spontanée**, sans excitation extérieure — communication à l'Académie des sciences [12]. En **1898**, **Marie et Pierre Curie** isolent le **polonium** puis le **radium**, et forgent le terme « **radioactivité** » [12]. En **1903**, le prix Nobel de physique est partagé entre Becquerel et les époux Curie [12]. Ces travaux établissent que la radioactivité est une propriété du **noyau atomique** lui-même.\n\n### De la découverte aux unités modernes\n\nLes unités qui structurent aujourd'hui la radioprotection portent les noms de ces pionniers et de leurs successeurs : le **becquerel (Bq)**, unité d'activité [34,35], le **gray (Gy)** pour la dose absorbée [34], et le **sievert (Sv)** pour la dose efficace [34,35]. La caractérisation de la **demi-vie** comme constante propre à chaque radionucléide — du **potassium-40** (≈ 1,25 milliard d'années) [25] aux isotopes médicaux de quelques heures — a fondé toute la dosimétrie via la loi de décroissance A(t) = A₀·e^(−λt), avec T½ = ln2/λ.\n\n### L'essor médical : du diagnostic à la théranostique\n\nLa médecine nucléaire moderne s'est construite sur deux innovations de production : le **générateur ⁹⁹Mo/⁹⁹ᵐTc** (la « vache à molybdène »), qui met le Tc-99m (γ 140,5 keV, T½ 6,0 h) à disposition de tout service [29], et le **cyclotron**, qui produit les émetteurs de positons comme le F-18 (T½ 109,7 min, photons d'annihilation à 511 keV) [9]. Aujourd'hui, le paradigme dominant est **théranostique** : un même vecteur moléculaire sert à la fois à imager (isotope γ ou β⁺) et à traiter (isotope β⁻ ou α). Le tableau ci-dessous illustre la diversité des radionucléides selon l'usage.\n\n| Radionucléide | Demi-vie | Émission | Usage type | Source |\n|---|---|---|---|---|\n| **⁹⁹ᵐTc** | 6,0 h | γ 140,5 keV | Diagnostic (γ-caméra), traceur le plus utilisé | [29] |\n| **¹⁸F** | 109,7 min | β⁺ → 511 keV | TEP (FDG, oncologie) | [9] |\n| **⁶⁸Ga** | ≈ 68 min | β⁺ | TEP (PSMA, DOTATOC), générateur ⁶⁸Ge/⁶⁸Ga | [30] |\n| **¹³¹I** | ≈ 8 j | β⁻ + γ | Thérapie thyroïdienne | [28] |\n| **¹⁷⁷Lu** | 6,7 j | β⁻ | Thérapie ciblée (PRRT, PSMA) | [28] |\n| **²²³Ra** | ≈ 11 j | α (portée < 0,1 mm) | Thérapie osseuse | [28] |\n\n### Perspectives\n\nLes axes actuels prolongent directement l'héritage des Curie : montée en puissance des **émetteurs de positons au cyclotron/générateur** (⁶⁸Ga, ¹⁸F) pour la TEP de précision [30], et essor de la **radiothérapie interne vectorisée** (¹⁷⁷Lu, ²²³Ra, et émetteurs α de nouvelle génération) [28]. Le fil conducteur reste inchangé depuis 1896 : exploiter une **propriété nucléaire spontanée** pour voir et traiter une fonction biologique, avec des quantités infimes et un encadrement dosimétrique strict.",
+          "steps": [
+            {
+              "title": "1896 — Becquerel",
+              "text": "Découverte de la **radioactivité spontanée** de l'uranium ; communication à l'Académie des sciences [12]."
+            },
+            {
+              "title": "1898 — Pierre & Marie Curie",
+              "text": "Isolement du **polonium** puis du **radium** ; le terme « **radioactivité** » est forgé [12]."
+            },
+            {
+              "title": "1903 — Nobel de physique",
+              "text": "Prix partagé entre **Becquerel et les époux Curie** [12] ; la radioactivité est reconnue comme propriété du noyau."
+            },
+            {
+              "title": "XXᵉ s. — Générateur & cyclotron",
+              "text": "Production du **⁹⁹ᵐTc** par générateur [29] et des émetteurs β⁺ (¹⁸F) par **cyclotron** [9] : naissance de la médecine nucléaire moderne."
+            },
+            {
+              "title": "XXIᵉ s. — Théranostique",
+              "text": "Un même vecteur pour imager et traiter : ⁶⁸Ga/¹⁸F en TEP [30], **¹⁷⁷Lu et ²²³Ra** en radiothérapie interne vectorisée [28]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le couple générateur/cyclotron",
+              "text": "Deux modes de production conditionnent toute la médecine nucléaire. Le **générateur ⁹⁹Mo/⁹⁹ᵐTc** rend le Tc-99m disponible sur place chaque jour, sans accélérateur [29] ; le **cyclotron** est indispensable aux émetteurs β⁺ de courte demi-vie comme le ¹⁸F (109,7 min) [9], ce qui explique la répartition géographique de la TEP."
+            },
+            {
+              "type": "info",
+              "title": "Le potassium-40, témoin de l'échelle des demi-vies",
+              "text": "La demi-vie couvre des ordres de grandeur immenses : du **K-40 ≈ 1,25 milliard d'années** [25], radioactif présent dans tout organisme vivant, aux isotopes médicaux de quelques heures choisis précisément pour disparaître vite (Tc-99m 6 h [29], F-18 110 min [9])."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration d'un radionucléide montrant la transition du noyau parent instable vers un noyau fils plus stable avec émission d'énergie, illustrant le concept de demi-vie et la loi de décroissance exponentielle A(t) = A0 e^(-lambda t).",
+            "caption": "Fig. 2 — Schéma de désintégration : le noyau instable se stabilise en émettant de l'énergie ; la cadence de ce processus définit la demi-vie."
+          }
+        },
+        {
+          "title": "E3 - Références & liens : sources de référence et pour aller plus loin",
+          "text": "Toutes les valeurs chiffrées de cet article sont sourcées par les références ci-dessous. Pour une fiche de vulgarisation à visée médicale, on privilégie les **sources institutionnelles et primaires** : organisations internationales (OMS, UNSCEAR/ICRP), agences nationales (IRSN/ASNR, CNSC), recommandations professionnelles (EANM, ICRP 128) et publications de référence. Distinguer toujours **moyenne mondiale** (UNSCEAR, 2,4 mSv/an) [3,4] et **donnée France** (IRSN, 4,5 mSv/an) [8].\n\n### Cadre physique, unités et radioprotection\n\n- **OMS — Rayonnements ionisants et effets sanitaires** [1] : effets déterministes/stochastiques, seuils, place du médical dans l'exposition.\n- **Désintégration radioactive — Wikipedia** [2] : types α/β/γ, pénétration, unités becquerel/curie.\n- **Unités de mesure** : Ministère japonais de l'environnement [34] et **ARPANSA** [35] — distinction activité (Bq) vs dose (Gy, Sv).\n- **ICRP 103 (2007)** [23] : principes de justification, optimisation (ALARA) et limitation ; limites public 1 mSv/an, travailleurs 20 mSv/an [24].\n\n### Exposition naturelle et ordres de grandeur\n\n- **UNSCEAR / UNIS** [3] et **Background radiation — Wikipedia** [4] : moyenne mondiale ≈ 2,4 mSv/an.\n- **CNSC (Canada)** [20] : décomposition du fond naturel (radon, tellurique, cosmique, ingestion).\n- **IRSN — Exposition de la population française 2015** [8] ; **Connaissance des Énergies** [26] et **ASNR** [27] : ≈ 4,5 mSv/an en France.\n- **Potassium-40** [25] et **Banana equivalent dose** [21] : radioactivité du corps humain, dose banane.\n- **OMS — Handbook on Indoor Radon** [13] : radon, 2ᵉ cause de cancer du poumon, référence 300 Bq/m³.\n\n### Radio-isotopes, production et dosimétrie médicale\n\n- **Mo99/Tc99m** [5] et **Mo99–Tc99m Generator (StatPearls)** [29] : Tc-99m, 140 keV, T½ 6 h, générateur.\n- **Fluorine-18 — Wikipedia** [9] : T½ 109,7 min, β⁺ 96,7 %, annihilation 511 keV, cyclotron.\n- **Radionuclides Used in Nuclear Medicine** [30] et **Shielding resources (Tc-99m, F-18, I-131, Lu-177)** [28] : caractéristiques des isotopes diagnostiques et thérapeutiques.\n- **ICRP Publication 128** [16] : coefficients de dose efficace (mSv/MBq) des radiopharmaceutiques.\n- **laradioactivite.com — Doses en scintigraphies et TEP** [22] : FDG 19 µSv/MBq, os 5,8 µSv/MBq, comparaisons.\n\n### Indications, doses comparées et précautions\n\n- **EANM tumour imaging v2.0** [11] et **v3.0** [17] : préparation TEP-FDG, jeûne, glycémie.\n- **Bone Scan (StatPearls)** [6], **MDP Tc-99m bone scintigraphy (Toxics)** [7], **DRL MDP — Saudi multi-hospital** [14] : scintigraphie osseuse.\n- **RadiologyInfo.org** [10], **Chest CT doses (Huda)** [32], **CT Radiation Dose Chart** [33] : repères dose radio/scanner.\n- **Cardiac diagnostic imaging dose (Einstein, Circulation)** [31] : doses des protocoles cardiaques.\n- **Breastfeeding interruption (J Nucl Med Technol)** [18] : allaitement, grossesse (ICRP 84/106).\n- **EANM Paediatric Dosage Card** [19] : adaptation pédiatrique des activités.\n- **Molybdenum Breakthrough (NRC)** [15] : contrôle qualité, percée du molybdène.\n- **CNP-MN — Radioprotection en médecine nucléaire** [36] : NRD français.\n\n### Liens internes (réseau de l'article)\n\nGénéralités liées : **Les désintégrations radioactives** · **La médecine nucléaire est-elle dangereuse ?** · **Becquerel, gray, sievert : les unités** · **Demi-vie et décroissance radioactive**. Traceurs : **Tc-99m**, **¹⁸F-FDG**. Examens : **TEP-FDG**, **scintigraphie osseuse**, **scintigraphie myocardique**, **scintigraphie thyroïdienne**.\n\n*Dernière mise à jour des données : 30 juin 2026 — version de travail (catégorie Généralités, type autre).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Hiérarchie des sources",
+              "text": "Pour les valeurs dosimétriques patient, la référence primaire est **ICRP Publication 128** [16] ; pour le fond naturel, citer **UNSCEAR** (monde) [3,4] et **IRSN/ASNR** (France) [8,27] en distinguant explicitement les deux périmètres. Les comparaisons grand public (banane, vol, radio) [10,21] sont pédagogiques mais doivent rester adossées à une source."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution éditoriale",
+              "text": "Certains coefficients secondaires (ex. Tc-99m-sestamibi, pertechnétate) varient selon l'extrait consulté ; toujours vérifier la valeur exacte dans le **tableau primaire ICRP 128** [16] avant publication. Ne jamais extrapoler une dose en sievert à partir d'une activité en becquerel sans le coefficient de dose adéquat."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
