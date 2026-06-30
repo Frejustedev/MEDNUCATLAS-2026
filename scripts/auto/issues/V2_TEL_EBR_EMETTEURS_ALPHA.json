@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "PEACE-3 — répété dans sections 4.1 (Recherche 1), D1, E1 (FAQ), E2 (données pivots), identityCard implicite et plusieurs infoBoxes : « médiane OS 42,3 vs 35,0 mois », « réduction du risque de décès de 31 % (HR ~0,69) »",
+    "problem": "Ces chiffres correspondent à l'ANALYSE INTERMÉDIAIRE de PEACE-3 présentée à l'ESMO 2024. L'ANALYSE FINALE de PEACE-3, désormais publiée (Annals of Oncology 2026, présentée à l'ASCO GU 2026), donne médiane OS 38,2 vs 32,6 mois, HR 0,76 (IC95% 0,60–0,96 ; p=0,0096), soit une réduction de risque de 24 % (gain de 5,6 mois). Comme l'article est daté « dernière mise à jour juin 2026 », citer les valeurs intermédiaires 42,3/35,0 et HR 0,69/−31 % est obsolète et factuellement dépassé par les données finales. Le différentiel n'est pas anodin (gain réel 5,6 mois et non 7,3 ; HR 0,76 et non 0,69).",
+    "fix": "Remplacer partout par les données de l'analyse finale : « médiane OS 38,2 vs 32,6 mois, HR 0,76 (IC95% 0,60–0,96 ; p=0,0096), soit −24 % de risque de décès (Annals of Oncology 2026 / ASCO GU 2026) ». Éventuellement mentionner que l'analyse intermédiaire 2024 montrait 42,3 vs 35,0 mois (HR ~0,69) avant convergence des courbes (hazards non proportionnels)."
+  },
+  {
+    "severity": "minor",
+    "where": "Tableau section 3 (Recherche 1) et fiche-réflexe E1 : « Pb-212 ; fille Bi-212 (T½ 1 h) émettrice alpha » et identityCard",
+    "problem": "Simplification imprécise : le Bi-212 est un émetteur à embranchement (~36 % désintégration alpha directe vers Tl-208 ; ~64 % désintégration bêta vers Po-212 qui émet ensuite l'alpha). Présenter le Bi-212 comme simplement « émetteur alpha » et le Pb-212 comme délivrant « 1 alpha net » via Bi-212 masque ce double embranchement. Le Pb-212 lui-même est un émetteur bêta (générateur in vivo).",
+    "fix": "Préciser : « Pb-212 (émetteur β⁻) → Bi-212 (T½ ~60,6 min, émetteur à embranchement : ~36 % α vers Tl-208 / ~64 % β⁻ vers Po-212 émetteur α) → 1 α net par chaîne ». La valeur T½ Bi-212 ~1 h est correcte (60,6 min)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 4.2 / quiz Q14 / D2 : incidence de xérostomie « 45–87 % » pour 225Ac-PSMA-617 attribuée à la série Kratochwil (40 patients)",
+    "problem": "Dans la série princeps de Kratochwil (JNM 2018, 40 patients), la xérostomie était la cause d'arrêt chez 4/40 (10 %) et constituait la toxicité dose-limitante, mais le chiffre « 45–87 % d'incidence » provient de cohortes/séries ultérieures agrégées (revues 2022–2025), pas de la série Kratochwil elle-même. L'article mélange par endroits la source du « 45–87 % » avec la série swimmer-plot de 40 patients. La fourchette 45–87 % est correcte en tant que donnée agrégée mais doit être attribuée aux revues de tolérance, non à Kratochwil 2018.",
+    "fix": "Dissocier clairement : « xérostomie dose-limitante chez Kratochwil 2018 → arrêt 10 % (4/40) ; incidence agrégée 45–87 % selon les cohortes ultérieures (revues 2022–2025), vs ~3 % sous 177Lu-PSMA »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 4.1 : « délai au premier événement squelettique symptomatique (SSE) 13,6 vs 8,4 mois » (ALSYMPCA)",
+    "problem": "L'analyse actualisée d'ALSYMPCA (et le RCP/NCI) rapporte plutôt 15,6 vs 9,8 mois pour le délai au premier SSE ; 13,6 vs 8,4 correspond à une analyse antérieure/sous-population. La valeur citée n'est pas fausse en soi (elle figure dans la fiche-référence fournie) mais diffère du chiffre le plus couramment cité dans le RCP.",
+    "fix": "Harmoniser sur les valeurs du RCP/analyse finale : SSE 15,6 vs 9,8 mois (ou préciser explicitement l'analyse de référence si 13,6/8,4 est conservé)."
+  },
+  {
+    "severity": "minor",
+    "where": "Titres de sections B1, B2, B3, B4, E1, E2",
+    "problem": "Le préfixe d'identifiant est dupliqué dans le champ title (ex. \"B1 - B1 - Du TEL à la lésion...\", \"E1 - E1 - Synthèse opérationnelle...\"). Artefact cosmétique de formatage, sans impact sur la fidélité ou les sources.",
+    "fix": "Retirer le préfixe en double pour n'avoir qu'un seul \"B1 - ...\" / \"E1 - ...\"."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [12], [30], [37], [38], [43], [49], [56]",
+    "problem": "Ces sources sont définies dans la liste mais ne sont jamais citées par un marqueur [n] dans le corps du texte. Ce n'est pas une fabrication (sur-approvisionnement de sources, toutes vérifiables), mais des références non rattachées.",
+    "fix": "Soit rattacher ces sources à une affirmation pertinente (ex. [12] Geant4-DNA RBE, [49] MSLN-TTC, [56] VMT-α-NET FIH), soit les retirer si non utilisées."
+  }
+]

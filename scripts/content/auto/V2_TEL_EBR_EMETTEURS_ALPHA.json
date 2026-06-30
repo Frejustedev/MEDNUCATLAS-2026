@@ -1,0 +1,1372 @@
+{
+  "id": "V2_TEL_EBR_EMETTEURS_ALPHA",
+  "cat": "radiobiologie",
+  "catLabel": "",
+  "title": "Transfert d'énergie linéique (TEL) et efficacité biologique relative des émetteurs alpha",
+  "difficulty": "avancé",
+  "tags": [
+    "TEL",
+    "LET",
+    "EBR",
+    "RBE",
+    "particules alpha",
+    "thérapie alpha ciblée",
+    "TAT",
+    "radiobiologie",
+    "Radium-223",
+    "Actinium-225",
+    "Plomb-212",
+    "cassures double-brin",
+    "MIRD Pamphlet 22",
+    "microdosimétrie",
+    "facteur de pondération radiologique",
+    "Xofigo"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] MIRD Pamphlet No. 22 (Abridged): Radiobiology and Dosimetry of α-Particle Emitters for Targeted Radionuclide Therapy — Journal of Nuclear Medicine 51(2):311",
+      "url": "https://jnm.snmjournals.org/content/51/2/311"
+    },
+    {
+      "title": "[2] Linear energy transfer — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Linear_energy_transfer"
+    },
+    {
+      "title": "[3] Relative biological effectiveness — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Relative_biological_effectiveness"
+    },
+    {
+      "title": "[4] Targeted α-Therapy of Metastatic Castration-Resistant Prostate Cancer with 225Ac-PSMA-617: Dosimetry Estimate and Empiric Dose Finding (Kratochwil et al., J Nucl Med 2017;58:1624) — PubMed 28408529",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28408529/"
+    },
+    {
+      "title": "[5] HIGHLIGHTS OF PRESCRIBING INFORMATION — Xofigo (radium Ra 223 dichloride) injection",
+      "url": "https://www.xofigo-us.com/sites/g/files/vrxlpx3306/files/2020-09/Xofigo_PI.pdf"
+    },
+    {
+      "title": "[6] Xofigo (radium Ra 223 dichloride) Injection — FDA label (accessdata)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/203971lbl.pdf"
+    },
+    {
+      "title": "[7] Bayer's XOFIGO (radium-223 dichloride) Plus Enzalutamide Demonstrates Significant Overall Survival Benefit in PEACE-3 Trial — BioSpace",
+      "url": "https://www.biospace.com/press-releases/bayers-xofigo-radium-223-dichloride-plus-enzalutamide-demonstrates-significant-overall-survival-benefit-in-peace-3-trial-in-patients-with-metastatic-castration-resistant-prostate-cancer-with-bone-metastases"
+    },
+    {
+      "title": "[8] ALSYMPCA Trial: Updated Analysis of Survival With Radium-223 Treatment in Metastatic Prostate Cancer — The ASCO Post",
+      "url": "https://ascopost.com/issues/october-15-2013/alsympca-trial-updated-analysis-of-survival-with-radium-223-treatment-in-metastatic-prostate-cancer/"
+    },
+    {
+      "title": "[9] Imaging and dosimetry for radium-223: the potential for personalized treatment (Flux, Br J Radiol 2017) — PMC5858794",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5858794/"
+    },
+    {
+      "title": "[10] 223Ra — PRISMAP (radionuclide portfolio, production from Ac-227/Th-227 generator)",
+      "url": "https://www.prismap.eu/radionuclides/portfolio/223Ra/"
+    },
+    {
+      "title": "[11] Targeted Alpha Particle Therapy: Imaging, Dosimetry and Radiation Protection (Lassmann, ICRP 2017)",
+      "url": "https://www.icrp.org/docs/icrp2017/abstract/18%20Lassmann%20Abstract.pdf"
+    },
+    {
+      "title": "[12] Quantifying DNA strand breaks from targeted alpha emitters 225Ac and 227Th via Geant4-DNA: implications for RBE and cell survival — EJNMMI Physics 2025",
+      "url": "https://link.springer.com/article/10.1186/s40658-025-00805-9"
+    },
+    {
+      "title": "[13] Nanostructure of Clustered DNA Damage in Leukocytes after In-Solution Irradiation with the Alpha Emitter Ra-223 (Cancers 2019) — PMC6966434",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6966434/"
+    },
+    {
+      "title": "[14] Clustered DNA Double-Strand Breaks: Biological Effects and Relevance to Cancer Radiotherapy (Genes 2020) — PMC7017136",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7017136/"
+    },
+    {
+      "title": "[15] 225Ac-PSMA-617 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/225Ac-PSMA-617"
+    },
+    {
+      "title": "[16] Actinium-225 targeted alpha particle therapy for prostate cancer (Bidkar et al., Theranostics 2024) — PMC11103494",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11103494/"
+    },
+    {
+      "title": "[17] Actinium-225-PSMA radioligand therapy of metastatic castration-resistant prostate cancer (WARMTH Act): a multicentre, retrospective study — The Lancet Oncology 2024",
+      "url": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(23)00638-1/abstract"
+    },
+    {
+      "title": "[18] ESMO 2025: TiP — PSMAcTION: A Phase 2/3 Randomized Trial of 225Ac-PSMA-617 vs Standard of Care in PSMA-Positive mCRPC Who Progressed on or After 177Lu-PSMA — UroToday",
+      "url": "https://www.urotoday.com/conference-highlights/esmo-2025/esmo-2025-prostate-cancer/164093-esmo-2025-tip-psmaction-a-phase-2-3-randomized-trial-of-225ac-psma-617-versus-standard-of-care-in-patients-with-psma-positive-mcrpc-who-progressed-on-or-after-177lu-psma-therapy.html"
+    },
+    {
+      "title": "[19] Targeted α-Emitter Therapy with 212Pb-DOTAMTATE for the Treatment of Metastatic SSTR-Expressing Neuroendocrine Tumors: First-in-Humans Dose-Escalation Clinical Trial (Delpassand et al., J Nucl Med 2022) — PMC9454455",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9454455/"
+    },
+    {
+      "title": "[20] Press Release: AlphaMedix (212Pb-DOTAMTATE) achieved all primary efficacy endpoints in phase 2 study (GEP-NET) — Sanofi, 2025-10-08",
+      "url": "https://www.sanofi.com/en/media-room/press-releases/2025/2025-10-08-05-00-00-3163053"
+    },
+    {
+      "title": "[21] 212Pb: Production Approaches and Targeted Therapy Applications (Kokov et al., Pharmaceutics 2022) — PMC8777968",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8777968/"
+    },
+    {
+      "title": "[22] [203/212Pb]Pb-VMT-α-NET as a novel theranostic agent for targeted alpha radiotherapy — first clinical experience (Michler et al., EJNMMI 2025) — PMC12397198",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12397198/"
+    },
+    {
+      "title": "[23] Production, purification, and radiolabeling of the 203Pb/212Pb theranostic pair (McNeil et al., EJNMMI Radiopharm Chem 2021) — PMC7851237",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7851237/"
+    },
+    {
+      "title": "[24] Pharma Companies Navigate Their Way through Ac-225 amidst Supply Constraints — EOS Intelligence",
+      "url": "https://www.eos-intelligence.com/perspectives/life-sciences/pharma-companies-navigate-their-way-through-ac-225-amidst-supply-constraints/"
+    },
+    {
+      "title": "[25] Radiopharmaceutical Quality Control Considerations for Accelerator-Produced Actinium Therapies (Abou et al., Cancer Biother Radiopharm 2022)",
+      "url": "https://www.liebertpub.com/doi/10.1089/cbr.2022.0010"
+    },
+    {
+      "title": "[26] Oxygen Enhancement Ratio — an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/oxygen-enhancement-ratio"
+    },
+    {
+      "title": "[27] Chapter 7 — Linear Energy Transfer and Relative Biologic Effectiveness — ASTRO/ARRO",
+      "url": "https://www.astro.org/ASTRO/media/ASTRO/AffiliatePages/arro/Yuan%20Lecture%20PDFs/Chapter7.pdf"
+    },
+    {
+      "title": "[28] Relative Biologic Effectiveness — introductiontoradiology.net",
+      "url": "https://introductiontoradiology.net/courses/rad/radbiol/02bio/bio-02-06.html"
+    },
+    {
+      "title": "[29] The Role of Alpha Particles in Radiotheranostics — Open Medscience",
+      "url": "https://openmedscience.com/the-role-of-alpha-particles-in-radiotheranostics/"
+    },
+    {
+      "title": "[30] A new method in the production of Ac-227, Ra-228, Th-228 and U-232 on Thorium target (Artun) — arXiv 2106.01698",
+      "url": "https://arxiv.org/pdf/2106.01698"
+    },
+    {
+      "title": "[31] Revisiting the Radiobiology of Targeted Alpha Therapy (Pouget & Constanzo, Front Med 2021) — PMC8353448",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8353448/"
+    },
+    {
+      "title": "[32] MIRD Pamphlet No. 22 (Abridged): Radiobiology and Dosimetry of α-Particle Emitters for Targeted Radionuclide Therapy (Sgouros et al., J Nucl Med 2010) — PMC5680544",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5680544/"
+    },
+    {
+      "title": "[33] An Overview of Targeted Alpha Therapy with 225Actinium and 213Bismuth (Morgenstern et al., Curr Radiopharm 2018) — PMC6237921",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6237921/"
+    },
+    {
+      "title": "[34] EANM recommendations for dosimetry in targeted radionuclide therapy with alpha-emitters (EANM Dosimetry Committee, 2025)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051291325000187"
+    },
+    {
+      "title": "[35] EANM dosimetry committee recommendations for dosimetry in targeted radionuclide therapy with alpha-emitters (ResearchGate 400388394)",
+      "url": "https://www.researchgate.net/publication/400388394_EANM_dosimetry_committee_recommendations_for_dosimetry_in_targeted_radionuclide_therapy_with_alpha-emitters"
+    },
+    {
+      "title": "[36] Alpha Emitter Radium-223 and Survival in Metastatic Prostate Cancer (Parker et al., NEJM 2013, ALSYMPCA)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1213755"
+    },
+    {
+      "title": "[37] Radium-223 Improves Survival in Patients with Advanced Prostate Cancer (NCI)",
+      "url": "https://www.cancer.gov/types/prostate/research/radium-223-improves-survival"
+    },
+    {
+      "title": "[38] DailyMed — XOFIGO (radium Ra 223 dichloride) injection label",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a398400e-bd31-41a9-9696-4f7c06569ede"
+    },
+    {
+      "title": "[39] Dosimetry of 223Ra-chloride: dose to normal organs and tissues (Lassmann & Nosske, Eur J Nucl Med Mol Imaging 2013)",
+      "url": "https://link.springer.com/article/10.1007/s00259-012-2265-y"
+    },
+    {
+      "title": "[40] Dosimetry of bone metastases in targeted radionuclide therapy with alpha-emitting 223Ra-dichloride (Pacilio et al., Eur J Nucl Med Mol Imaging 2016) — PubMed 26266887",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26266887/"
+    },
+    {
+      "title": "[41] Radiopharmacokinetic modelling and radiation dose assessment of 223Ra (Höllriegl et al., EJNMMI Physics 2021) — PMC8172819",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8172819/"
+    },
+    {
+      "title": "[42] Targeted Alpha Therapy of mCRPC with 225Actinium-PSMA-617: Swimmer-Plot Analysis (Kratochwil et al., J Nucl Med 2018; 59:795)",
+      "url": "https://jnm.snmjournals.org/content/59/5/795"
+    },
+    {
+      "title": "[43] Activity and Adverse Events of Actinium-225-PSMA-617 in Advanced mCRPC After Failure of Lutetium-177-PSMA (Feuerecker et al., Eur Urol 2021)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0302283820308770"
+    },
+    {
+      "title": "[44] Navigating the safety profile of Actinium-225 targeted alpha therapy: a comprehensive review (Clin Transl Imaging 2025)",
+      "url": "https://link.springer.com/article/10.1007/s40336-025-00733-9"
+    },
+    {
+      "title": "[45] Salivary Gland Toxicity of PSMA-Targeted Radioligand Therapy with 177Lu-PSMA and Combined 225Ac/177Lu Ligands (TANDEM-PRLT; Diagnostics 2022) — PMC9406477",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9406477/"
+    },
+    {
+      "title": "[46] Hematologic Safety of Radium-223 Dichloride: Baseline Prognostic Factors Associated With Myelosuppression in the ALSYMPCA Trial (Vogelzang et al., Clin Genitourin Cancer 2017) — PubMed 27613490",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27613490/"
+    },
+    {
+      "title": "[47] Production of [211At]-Astatinated Radiopharmaceuticals and Applications in Targeted α-Particle Therapy (Guérard et al., Cancer Biother Radiopharm 2013) — PMC3545490",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3545490/"
+    },
+    {
+      "title": "[48] Targeted thorium-227 conjugates as treatment options in oncology (Karlsson et al., Front Med 2023) — PMC9885765",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9885765/"
+    },
+    {
+      "title": "[49] First-in-human study of a thorium-227-labeled mesothelin-targeting antibody-chelator conjugate (MSLN-TTC) in patients with malignant mesothelioma and other solid tumors (ESMO Open 2025)",
+      "url": "https://www.esmoopen.com/article/S2059-7029(25)01774-0/fulltext"
+    },
+    {
+      "title": "[50] Half-lives of 221Fr, 217At, 213Bi, 213Po and 209Pb from the 225Ac decay series (Suliman et al., Appl Radiat Isot 2013) — PubMed 23511775",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23511775/"
+    },
+    {
+      "title": "[51] Current approaches to incorporation of radium-223 in clinical practice (Parker et al., Prostate Cancer Prostatic Dis 2018) — PMC5895600",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5895600/"
+    },
+    {
+      "title": "[52] Radium-223 Dichloride (Xofigo) Advice for hospital staff (Hull University Teaching Hospitals NHS)",
+      "url": "https://www.hey.nhs.uk/nuclearmedicine/information-for-hospital-staff/radium223/"
+    },
+    {
+      "title": "[53] Radiobiological effect of alpha particles. The scientific basis of targeted alpha-particle therapy (ScienceDirect S0969805125000538)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0969805125000538"
+    },
+    {
+      "title": "[54] Alpha emitting nuclides for targeted therapy (Nucl Med Biol 2020; ScienceDirect S0969805120302146)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0969805120302146"
+    },
+    {
+      "title": "[55] Optimization of astatine (211At) imaging for dosimetry in clinical trial using multidetector CZT SPECT/CT (J Nucl Med 2024, 65 suppl 2:24106)",
+      "url": "https://jnm.snmjournals.org/content/65/supplement_2/24106"
+    },
+    {
+      "title": "[56] 212Pb-VMT-α-NET Targeted Alpha Therapy in Metastatic Neuroendocrine Tumors: First in Human (J Nucl Med 2024, 65 suppl 2:242556)",
+      "url": "https://jnm.snmjournals.org/content/65/supplement_2/242556"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "zap",
+        "label": "TEL des alpha (4-8 MeV)",
+        "value": "110 a 61 keV/microm"
+      },
+      {
+        "icon": "zap",
+        "label": "TEL de reference (beta/gamma)",
+        "value": "~0,2 keV/microm"
+      },
+      {
+        "icon": "activity",
+        "label": "EBR therapeutique (MIRD 22)",
+        "value": "5"
+      },
+      {
+        "icon": "shield",
+        "label": "Facteur w_R (CIPR 103)",
+        "value": "20"
+      },
+      {
+        "icon": "target",
+        "label": "Parcours tissulaire alpha",
+        "value": "<=100 microm (<=40 microm os)"
+      },
+      {
+        "icon": "atom",
+        "label": "Energie des alpha therapeutiques",
+        "value": "4 a 10 MeV"
+      },
+      {
+        "icon": "microscope",
+        "label": "Pic d'EBR (TEL optimal)",
+        "value": "~100-200 keV/microm"
+      },
+      {
+        "icon": "droplets",
+        "label": "OER des alpha (4-8 MeV)",
+        "value": "1,3 a 2,1 (=1 si TEL>140)"
+      },
+      {
+        "icon": "dna",
+        "label": "Lesion dominante",
+        "value": "Cassures double-brin groupees (DSB)"
+      },
+      {
+        "icon": "flask",
+        "label": "Seul alpha avec AMM",
+        "value": "223Ra-dichlorure (Xofigo, 2013)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Posologie 223Ra",
+        "value": "55 kBq/kg IV, q4sem x6"
+      },
+      {
+        "icon": "clock",
+        "label": "Periodes cles",
+        "value": "223Ra 11,4 j / 225Ac 9,9 j / 212Pb 10,6 h"
+      },
+      {
+        "icon": "list",
+        "label": "Cibles cliniques",
+        "value": "Os (CPRC), PSMA, SSTR"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "theranostique",
+        "label": "223Ra-dichlorure (Xofigo)"
+      },
+      {
+        "type": "theranostique",
+        "label": "225Ac-PSMA-617"
+      },
+      {
+        "type": "theranostique",
+        "label": "212Pb-DOTAMTATE / VMT-alpha-NET"
+      },
+      {
+        "type": "theranostique",
+        "label": "227Th-TTC (conjugues thorium)"
+      },
+      {
+        "type": "theranostique",
+        "label": "177Lu-PSMA-617"
+      },
+      {
+        "type": "theranostique",
+        "label": "177Lu-DOTATATE"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer de la prostate resistant a la castration (CPRC)"
+      },
+      {
+        "type": "maladie",
+        "label": "Metastases osseuses"
+      },
+      {
+        "type": "maladie",
+        "label": "Tumeurs neuroendocrines (GEP-NET)"
+      },
+      {
+        "type": "examen",
+        "label": "TEP au 68Ga-PSMA-11"
+      },
+      {
+        "type": "examen",
+        "label": "TEP au 68Ga-DOTATATE"
+      },
+      {
+        "type": "score",
+        "label": "Reponse PSA (PSA50)"
+      },
+      {
+        "type": "traceur",
+        "label": "203Pb (imagerie SPECT, paire theranostique)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Le transfert d'energie lineique (TEL) d'une particule alpha de 4 a 8 MeV, dans la gamme d'interet therapeutique, est de l'ordre de :",
+        "options": [
+          "~0,2 keV/microm",
+          "~10 keV/microm",
+          "61 a 110 keV/microm",
+          "~1000 keV/microm"
+        ],
+        "answer": 2,
+        "explanation": "Le TEL initial des alpha de 4-8 MeV va de 110 keV/microm (8 MeV) a 61 keV/microm (4 MeV), soit 2 a 3 ordres de grandeur au-dessus du TEL des beta- de reference (~0,2 keV/microm) [1,32].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi l'efficacite biologique relative (EBR) decroit-elle au-dela d'un TEL d'environ 100-200 keV/microm ?",
+        "options": [
+          "Les ionisations cessent",
+          "Effet d'overkill : energie deposee au-dela du seuil letal, donc gaspillee",
+          "L'oxygene devient indispensable",
+          "La particule se transforme en gamma"
+        ],
+        "answer": 1,
+        "explanation": "L'EBR augmente avec le TEL jusqu'a un pic vers ~100-200 keV/microm puis decroit : au-dela, l'energie supplementaire est deposee dans une cellule deja condamnee (overkill), donc gaspillee [2,3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle valeur d'EBR le MIRD Pamphlet No. 22 recommande-t-il pour projeter les effets deterministes en therapie alpha ciblee ?",
+        "options": [
+          "1",
+          "5",
+          "20",
+          "100"
+        ],
+        "answer": 1,
+        "explanation": "Le MIRD Pamphlet 22 recommande une EBR de 5 pour projeter les effets biologiques deterministes; cette valeur sert de point de depart a la dosimetrie clinique (ex. 225Ac, etudes gammaH2AX) [1,32].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le facteur de ponderation radiologique w_R attribue aux particules alpha en radioprotection (CIPR 103) ?",
+        "options": [
+          "1",
+          "5",
+          "20",
+          "364"
+        ],
+        "answer": 2,
+        "explanation": "Le facteur w_R des alpha est de 20 (CIPR 103), utilise pour le calcul de la dose efficace en radioprotection. A ne pas confondre avec l'EBR therapeutique de 5 (MIRD 22) [1,32].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'ordre de grandeur du parcours d'une particule alpha therapeutique dans les tissus mous ?",
+        "options": [
+          "Quelques millimetres",
+          "<=100 microm (soit 2 a 10 diametres cellulaires)",
+          "Quelques centimetres",
+          "Plusieurs metres"
+        ],
+        "answer": 1,
+        "explanation": "Le parcours des alpha est <=100 microm en tissu equivalent-eau (et <=40 microm dans l'os), soit seulement 2 a 10 diametres cellulaires, ce qui confine l'irradiation a la cellule cible et son voisinage immediat [31].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle lesion de l'ADN explique principalement la forte cytotoxicite et la non-reparabilite des particules alpha ?",
+        "options": [
+          "Cassures simple-brin isolees",
+          "Cassures double-brin complexes et groupees (clustered damage)",
+          "Adduits de bases reversibles",
+          "Mesappariements",
+          "Pontages ADN-proteines reparables"
+        ],
+        "answer": 1,
+        "explanation": "Le haut TEL des alpha produit des cassures double-brin complexes et groupees le long du track, mal ou non reparees, d'ou une letalite par cellule tres superieure au bas TEL [31,14].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pourquoi la therapie alpha conserve-t-elle son efficacite en milieu hypoxique ?",
+        "options": [
+          "Elle augmente l'oxygenation tumorale",
+          "Le rapport d'amplification par l'oxygene (OER) tend vers 1 a haut TEL",
+          "Elle ne touche que les cellules oxygenees",
+          "L'hypoxie n'existe pas dans les tumeurs"
+        ],
+        "answer": 1,
+        "explanation": "L'OER vaut 1 pour TEL > 140 keV/microm et 1,3-2,1 pour les alpha de 4-8 MeV (vs 2,5-3,0 pour les rayons X) : les alpha produisent des DSB sans recours a l'oxygene, restant efficaces en hypoxie [1,26].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Selon la formule du MIRD Pamphlet 22, EBR = 2,9 - 0,167 x Ei (Ei energie initiale en MeV). Pour une alpha de 5 MeV, l'EBR vaut environ :",
+        "options": [
+          "~1",
+          "~2,1",
+          "~5",
+          "~20"
+        ],
+        "answer": 1,
+        "explanation": "EBR = 2,9 - 0,167 x 5 = 2,07. La formule (valide pour 5-8,5 MeV) montre que l'EBR diminue quand l'energie alpha augmente, car le TEL initial baisse [1,32].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le seul radiopharmaceutique alpha disposant d'une AMM large, et son indication ?",
+        "options": [
+          "225Ac-PSMA-617 pour le neuroblastome",
+          "211At pour le gliome",
+          "223Ra-dichlorure pour le CPRC avec metastases osseuses symptomatiques",
+          "212Pb-DOTAMTATE pour le melanome"
+        ],
+        "answer": 2,
+        "explanation": "Le 223Ra-dichlorure (Xofigo) est le seul alpha avec AMM (2013), indique dans le cancer de la prostate resistant a la castration avec metastases osseuses symptomatiques et sans metastases viscerales connues [5,36].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pourquoi l'ion Ra2+ du 223Ra se fixe-t-il preferentiellement sur les metastases osseuses osteoblastiques ?",
+        "options": [
+          "Il se lie au PSMA",
+          "Il mime le Ca2+ et s'incorpore a l'hydroxyapatite des zones d'osteogenese accrue",
+          "Il cible les recepteurs de la somatostatine",
+          "Il est capte par le transporteur de la noradrenaline"
+        ],
+        "answer": 1,
+        "explanation": "L'ion Ra2+ se comporte comme un analogue du calcium : il se fixe sur l'hydroxyapatite des zones d'osteogenese accrue, ciblant ainsi les metastases osseuses osteoblastiques [10].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans l'essai pivot ALSYMPCA, le 223Ra a montre par rapport au placebo une survie globale mediane de :",
+        "options": [
+          "14,9 vs 11,3 mois (HR 0,70)",
+          "42,3 vs 35,0 mois",
+          "9 vs 6 mois",
+          "Aucun benefice de survie"
+        ],
+        "answer": 0,
+        "explanation": "ALSYMPCA (NEJM 2013, 921 patients) a montre une survie globale mediane de 14,9 mois sous 223Ra vs 11,3 mois sous placebo (HR ~0,70, p<0,001), seul alpha a avoir demontre un gain de survie en phase III [36,8].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le schema d'administration AMM du 223Ra-dichlorure ?",
+        "options": [
+          "100 kBq/kg toutes les 8 semaines x 4",
+          "55 kBq/kg IV toutes les 4 semaines x 6 injections",
+          "370 MBq dose unique",
+          "2,5 MBq/kg hebdomadaire a vie"
+        ],
+        "answer": 1,
+        "explanation": "Le 223Ra est administre a 55 kBq/kg IV (injection lente ~1 min), toutes les 4 semaines, pour 6 cycles [5,6].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la toxicite dose-limitante caracteristique du 225Ac-PSMA-617 ?",
+        "options": [
+          "Nephrotoxicite aigue",
+          "Xerostomie (bouche seche severe par captation salivaire)",
+          "Cardiotoxicite",
+          "Fibrose pulmonaire"
+        ],
+        "answer": 1,
+        "explanation": "Les glandes salivaires concentrent le 225Ac-PSMA-617, provoquant une xerostomie severe : c'est la toxicite dose-limitante et la cause majeure d'arret, avec une incidence de 45-87 % selon les cohortes (vs ~3 % sous 177Lu) [16,44].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans la serie de Kratochwil (225Ac-PSMA-617, 3 cycles de 100 kBq/kg), la proportion de patients avec baisse du PSA > 50 % etait d'environ :",
+        "options": [
+          "13 %",
+          "38 %",
+          "63 %",
+          "100 %"
+        ],
+        "answer": 2,
+        "explanation": "Une baisse du PSA > 50 % a ete observee chez 63 % (24/38) des patients mCRPC, et une reponse PSA (toute baisse) chez 87 % (33/38), souvent apres echec des lignes anterieures [42].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "L'association 223Ra + abirateterone + prednisone est deconseillee. Pourquoi ?",
+        "options": [
+          "Inefficacite",
+          "Exces de fractures et de mortalite (essai ERA-223)",
+          "Allergie croisee",
+          "Cout prohibitif"
+        ],
+        "answer": 1,
+        "explanation": "L'essai ERA-223 a montre un surrisque de fractures et de mortalite avec l'association 223Ra + abirateterone/prednisone, conduisant a contre-indiquer cette combinaison [5].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel defi physique specifique aux chaines a filles multiples (ex. 225Ac) complique la dosimetrie et peut causer une toxicite hors-cible ?",
+        "options": [
+          "L'effet photoelectrique",
+          "L'effet de recul (recoil) des filles qui se detachent du chelate apres emission alpha",
+          "La capture electronique",
+          "La conversion interne"
+        ],
+        "answer": 1,
+        "explanation": "Apres emission alpha, l'energie de recul (~100 keV) rompt la liaison chimique : la fille radioactive se detache du chelate et se redistribue (recoil), source de toxicite hors-cible comme la nephrotoxicite [1,34].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel couple de radionucleides constitue une paire theranostique permettant imagerie SPECT puis therapie alpha pour les tumeurs neuroendocrines ?",
+        "options": [
+          "123I / 131I",
+          "68Ga / 177Lu",
+          "203Pb (imagerie) / 212Pb (therapie)",
+          "99mTc / 90Y"
+        ],
+        "answer": 2,
+        "explanation": "Le couple 203Pb/212Pb forme une paire theranostique : le 203Pb (gamma) sert a l'imagerie SPECT et le 212Pb (alpha via 212Bi) a la therapie, avec un meme vecteur (DOTAMTATE/VMT-alpha-NET) [22,23].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "L'effet 'crossfire' (irradiation des cellules voisines par une particule emise dans une cellule adjacente) est :",
+        "options": [
+          "Majeur pour les alpha, negligeable pour les beta-",
+          "Marginal pour les alpha (parcours court), marque pour les beta- (parcours long)",
+          "Identique pour les deux",
+          "Inexistant en therapie radionucleidique"
+        ],
+        "answer": 1,
+        "explanation": "Le parcours ultra-court des alpha rend le crossfire marginal : l'irradiation est ciblee sur la cellule tumorale et epargne le tissu sain, contrairement aux beta- a long parcours [1,54].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "La CIPR 128 (ICRP Publication 128) couvre-t-elle la dosimetrie des emetteurs alpha therapeutiques ?",
+        "options": [
+          "Oui, c'est la reference de la TAT",
+          "Non, elle porte sur les radiopharmaceutiques diagnostiques; les references TAT sont le MIRD 22 et les recommandations EANM",
+          "Oui, mais seulement pour le 223Ra",
+          "Non, elle ne concerne que la radioprotection du personnel"
+        ],
+        "answer": 1,
+        "explanation": "La CIPR 128 porte sur les coefficients de dose des radiopharmaceutiques DIAGNOSTIQUES. Pour la thalalpha ciblee, les references sont le MIRD Pamphlet 22 (radiobiologie/dosimetrie alpha) et les recommandations EANM 2025/2026 [1,34].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Combien de traversees du noyau cellulaire par des particules alpha suffisent generalement a steriliser une cellule ?",
+        "options": [
+          "Plusieurs centaines",
+          "Une a quelques traversees",
+          "Des milliers",
+          "Aucune, l'effet est uniquement chimique"
+        ],
+        "answer": 1,
+        "explanation": "Du fait du depot d'energie dense, une a quelques traversees alpha du noyau suffisent a tuer une cellule, contre des centaines de traversees necessaires avec un rayonnement de bas TEL [1].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le TEL (energie deposee par unite de longueur) classe les rayonnements : bas TEL < 10 keV/microm (beta, gamma, X ~0,2 keV/microm), haut TEL au-dela. Les alpha de 4-8 MeV : 110 a 61 keV/microm [1,2,32].",
+        "L'EBR augmente avec le TEL jusqu'a un pic vers ~100-200 keV/microm (distance inter-ionisation ~ diametre de l'ADN, maximisant les DSB) puis decroit par overkill [2,3,28].",
+        "Deux nombres a ne pas confondre : EBR therapeutique = 5 (MIRD 22, effets deterministes) ; w_R = 20 (CIPR 103, radioprotection, dose efficace) [1,32].",
+        "Parcours alpha <=100 microm (<=40 microm os), soit 2-10 diametres cellulaires : irradiation ciblee, crossfire marginal, epargne du tissu sain [31].",
+        "Lesion dominante : cassures double-brin complexes et groupees, peu reparables -> letalite elevee, 1 a quelques traversees du noyau suffisent [1,14].",
+        "Independance vis-a-vis de l'oxygene (OER 1,3-2,1, =1 si TEL>140), du cycle cellulaire et du debit de dose : atouts en hypoxie et radioresistance [1,26,53].",
+        "223Ra-dichlorure (Xofigo) = seul alpha avec AMM (2013) : CPRC + metastases osseuses symptomatiques sans atteinte viscerale ; ALSYMPCA : SG 14,9 vs 11,3 mois (HR 0,70) [5,36].",
+        "225Ac-PSMA-617 et 212Pb-DOTAMTATE/VMT-alpha-NET restent investigationnels (2026) : PSA50 ~63 % mais xerostomie dose-limitante 45-87 % pour 225Ac [42,44]."
+      ],
+      "protocol": [
+        "223Ra : 55 kBq/kg IV lente (~1 min), toutes les 4 semaines, 6 cycles ; pas de jeune ; hydratation et radioprotection des excreta (elimination fecale ~63 %) [5,6].",
+        "Seuils hematologiques 223Ra avant 1re cure : PNN >=1,5 x10^9/L, plaquettes >=100 x10^9/L, Hb >=10 g/dL ; cures suivantes PNN >=1 x10^9/L, plaquettes >=50 x10^9/L [5].",
+        "225Ac-PSMA-617 (empirique, Kratochwil) : ~100 kBq/kg/cycle, 3 cycles a ~2 mois d'intervalle ; desescalade selon charge tumorale et tolerance salivaire [42].",
+        "212Pb-DOTAMTATE : ~67,6 microCi/kg (~2,5 MBq/kg) par cycle, max 5,5 mCi, toutes les 8 semaines, jusqu'a 4 cycles [19].",
+        "Dosimetrie alpha fondee sur les fractions absorbees (et non les S-values classiques) pour separer dose alpha / dose electrons-photons ; EBR=5 en point de depart [1,32].",
+        "Imagerie post-therapeutique : 223Ra sur pics 82/154/270 keV ; 225Ac sur 218 keV (221Fr) et 440 keV (213Bi) ; 211At fenetre 79 keV +-20 % [9,33,55]."
+      ],
+      "scores": [
+        "Reponse PSA (PSA50) : baisse du PSA > 50 % = critere d'efficacite en TAT prostatique (225Ac-PSMA : 63 %) [42].",
+        "Survie globale et HR : critere pivot d'ALSYMPCA pour le 223Ra (14,9 vs 11,3 mois, HR 0,70) [36].",
+        "Delai au premier evenement squelettique symptomatique (SSE) : 13,6 vs 8,4 mois sous 223Ra (ALSYMPCA) [8].",
+        "Formule EBR-energie (MIRD 22) : EBR = 2,9 - 0,167 x Ei, Ei en MeV (gamme 5-8,5 MeV) [1,32]."
+      ],
+      "pitfalls": [
+        "Confondre EBR therapeutique (5) et facteur w_R de radioprotection (20) : deux grandeurs distinctes pour deux usages [1,32].",
+        "Croire l'EBR croissante a l'infini avec le TEL : elle plafonne puis decroit (overkill) au-dela de ~100-200 keV/microm [2,3].",
+        "Appliquer la CIPR 128 (diagnostique) a la dosimetrie des emetteurs alpha therapeutiques : utiliser MIRD 22 et EANM [1,34].",
+        "Ignorer le recoil des filles (225Ac) : redistribution des radionucleides fils -> toxicite hors-cible (nephrotoxicite) et pureté radionucleidique (Ac-226/Ac-227) a controler [1,25].",
+        "Associer 223Ra + abirateterone/prednisone : surrisque de fractures et de mortalite (ERA-223), association deconseillee [5].",
+        "Negliger la xerostomie sous 225Ac-PSMA (45-87 %) : cause majeure d'arret ; prevoir mesures d'attenuation (cryotherapie, pre-blocage, desescalade) [16,44]."
+      ]
+    },
+    "lead": "Les rayonnements ne se valent pas tous : à dose égale, certains abîment davantage les cellules que d'autres. Cet article explique pourquoi les particules alpha, lourdes et de très courte portée, sont parmi les plus destructrices pour les cellules cancéreuses tout en épargnant les tissus voisins. On y comprend comment cette propriété est mise à profit pour soigner certaines tumeurs métastatiques, en particulier celles de la prostate et de l'os, par des médicaments radioactifs ciblés. C'est le socle scientifique de la thérapie alpha ciblée, une approche de précision en plein essor en médecine nucléaire.",
+    "patient": {
+      "sections": [
+        {
+          "title": "Une thérapie radioactive qui vise très précisément les cellules malades",
+          "text": "Certains traitements de médecine nucléaire utilisent un type de rayonnement particulier, appelé « rayonnement alpha ». Sa caractéristique est d'agir sur une distance minuscule, de l'ordre de quelques cellules seulement : on peut l'imaginer comme une frappe de très courte portée, qui dépose toute son énergie là où elle se trouve sans aller plus loin. Concrètement, lorsque le produit radioactif s'est fixé sur les cellules malades, le rayonnement les abîme fortement et de façon difficilement réparable, tout en épargnant largement les tissus sains situés un peu plus loin. Cette précision est l'un des grands intérêts de cette approche. Ce type de traitement est aujourd'hui utilisé, par exemple, pour certaines formes de cancer de la prostate avec atteinte des os, et il fait l'objet de recherches actives pour d'autres maladies.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi « de courte portée » est un avantage",
+              "text": "Parce que le rayonnement alpha n'agit qu'à très faible distance, il concentre son effet sur la zone visée. Les organes voisins et les cellules saines situés un peu plus loin sont mieux protégés."
+            }
+          ]
+        },
+        {
+          "title": "Comment se déroule un traitement",
+          "text": "Le traitement est administré par une injection dans une veine, réalisée lentement et sans douleur particulière. Il n'y a en général pas de préparation compliquée : pas besoin d'être à jeun ni d'arrêter le calcium. Selon les cas, le traitement est répété à quelques semaines d'intervalle, sur plusieurs séances, afin d'agir progressivement. Avant chaque séance, l'équipe vérifie votre état général, notamment par une prise de sang, car ces traitements peuvent fatiguer temporairement la fabrication des cellules du sang. Vous restez suivi tout au long de la prise en charge, et l'équipe vous explique chaque étape et reste disponible pour vos questions.",
+          "steps": [
+            {
+              "title": "Avant",
+              "text": "Le médecin vérifie que le traitement est adapté à votre situation et réalise une prise de sang de contrôle. Il vous explique le déroulement."
+            },
+            {
+              "title": "Pendant",
+              "text": "Le produit est injecté lentement dans une veine. Vous ne ressentez généralement rien de particulier pendant que le rayonnement agit sur les cellules ciblées."
+            },
+            {
+              "title": "Après",
+              "text": "Quelques précautions simples d'hygiène sont conseillées pour quelques jours. Un suivi régulier est mis en place pour surveiller votre tolérance et l'efficacité."
+            }
+          ]
+        },
+        {
+          "title": "Sécurité et précautions",
+          "text": "Ces traitements sont encadrés et la dose est calculée pour chaque personne afin d'obtenir le meilleur équilibre entre bénéfice attendu et sécurité. Comme le produit radioactif est ensuite éliminé naturellement par l'organisme (surtout par les selles, un peu par les urines), l'équipe vous donne des conseils d'hygiène simples à suivre pendant quelques jours : se laver les mains soigneusement, tirer la chasse d'eau plusieurs fois, laver le linge souillé séparément. Ces gestes protègent votre entourage. Le niveau de rayonnement vers l'extérieur reste faible, si bien qu'une hospitalisation n'est souvent pas nécessaire pour cette raison. Ces traitements sont réservés à l'adulte ; ils ne concernent pas les enfants.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Ce que vous pouvez signaler",
+              "text": "Indiquez à votre équipe l'ensemble de vos traitements en cours et vos antécédents. Certaines associations de médicaments doivent être évitées, et l'équipe ajuste la prise en charge en conséquence."
+            },
+            {
+              "type": "warning",
+              "title": "En cas de doute",
+              "text": "N'hésitez jamais à poser vos questions sur les bénéfices, le déroulement et les précautions de ce traitement : l'équipe est là pour vous informer et vous accompagner."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : la thérapie alpha ciblée en pratique",
+          "text": "La thérapie par émetteurs alpha (Targeted Alpha Therapy) repose sur un principe radiobiologique simple : ces particules déposent leur énergie sur un parcours de quelques diamètres cellulaires seulement, en créant des lésions de l'ADN très denses et difficilement réparables. Il en résulte une efficacité par cellule nettement supérieure à celle des rayonnements conventionnels et des émetteurs bêta, avec une bonne action même en milieu peu oxygéné (tumeurs hypoxiques) et un effet peu dépendant du cycle cellulaire. En pratique de ville ou hospitalière non spécialisée, l'intérêt est surtout de savoir reconnaître les situations où adresser le patient à la médecine nucléaire pour discuter cette option.",
+          "list": [
+            "Cancer de la prostate résistant à la castration avec métastases osseuses symptomatiques et sans métastase viscérale : indication du seul émetteur alpha disposant d'une AMM (radium-223 dichlorure), avec bénéfice démontré sur la survie globale et le report des événements osseux.",
+            "Cancer de la prostate métastatique en progression après les lignes habituelles, notamment après échec d'une thérapie par émetteur bêta : des approches alpha ciblant le PSMA sont évaluées en recours, en milieu spécialisé et le plus souvent dans le cadre d'essais.",
+            "Tumeurs neuroendocrines exprimant les récepteurs de la somatostatine, en progression : des thérapies alpha sont en cours d'évaluation clinique avec des résultats encourageants.",
+            "Douleurs osseuses et altération de la qualité de vie liées à des métastases osseuses d'un cancer de la prostate : motif fréquent justifiant un avis spécialisé sur l'option alpha."
+          ]
+        },
+        {
+          "title": "Démarche et apport de la médecine nucléaire",
+          "text": "La médecine nucléaire évalue l'éligibilité, choisit le radiopharmaceutique adapté à la cible (os, PSMA, récepteurs de la somatostatine) et personnalise la dose et le rythme des cures. Elle assure la surveillance de la tolérance, en particulier hématologique : une numération formule sanguine est contrôlée avant chaque cure, car ces traitements peuvent induire une myélosuppression. Le spécialiste vérifie aussi les associations médicamenteuses (certaines sont déconseillées en raison d'un surrisque, par exemple osseux), informe sur les précautions d'élimination du produit, et organise le suivi de l'efficacité. Pour adresser un patient, transmettez le contexte oncologique complet, la cartographie des métastases (en particulier la présence ou non d'atteinte viscérale), les comptes rendus d'imagerie récents, la numération sanguine et la liste des traitements en cours.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adressez à la médecine nucléaire les patients chez qui une thérapie alpha pourrait être discutée : cancer de la prostate résistant à la castration avec métastases osseuses symptomatiques sans atteinte viscérale (indication établie du radium-223), progression après une thérapie bêta ciblant le PSMA, ou tumeur neuroendocrine progressive exprimant la somatostatine (situations encore largement investigationnelles). Le spécialiste confirmera l'éligibilité, sélectionnera l'agent et le schéma, encadrera la surveillance hématologique et les associations médicamenteuses à risque, et précisera les précautions de radioprotection. Joignez le contexte oncologique, le bilan d'extension récent, l'imagerie et une numération formule sanguine à jour."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité — TEL, EBR et émetteurs alpha en un coup d'œil",
+          "text": "Le **transfert d'énergie linéique (TEL**, en anglais *linear energy transfer*, LET) et l'**efficacité biologique relative (EBR**, *relative biological effectiveness*, RBE) sont les deux grandeurs cardinales qui expliquent pourquoi une particule **alpha (α)** — noyau d'hélium ⁴He²⁺ — est si redoutablement cytotoxique. Cette carte condense l'essentiel physique et radiobiologique mobilisé en thérapie alpha ciblée (**TAT**, *targeted alpha therapy*).\n\n| Grandeur | Valeur de référence | Commentaire |\n|---|---|---|\n| **TEL des α (4–8 MeV)** | **110 → 61 keV/µm** | TEL initial décroissant avec l'énergie ; gamme globale **50–230 keV/µm**.[2,31,32] |\n| **TEL de référence (β⁻, γ, X)** | **~0,2 keV/µm** | Rayonnement « bas TEL » (< 10 keV/µm) ; les α sont **2–3 ordres de grandeur** au-dessus.[2,31,32] |\n| **Énergie des α thérapeutiques** | **4–10 MeV** (le plus souvent 5–9 MeV) | Selon le radionucléide père et la chaîne.[31] |\n| **Parcours dans les tissus** | **≤ 100 µm** (≈ 2–10 diamètres cellulaires) ; **≤ 40 µm dans l'os** | Dépôt confiné à quelques cellules.[31] |\n| **EBR thérapeutique** | **5** (effets déterministes, MIRD 22) | Point de départ de la dosimétrie clinique (γH2AX).[1,32] |\n| **Facteur de pondération w_R** | **20** (CIPR 103, radioprotection) | À ne pas confondre avec l'EBR thérapeutique.[1,32] |\n| **OER (rapport d'oxygénation)** | **1,3–2,1** (≈ 1 si TEL > 140 keV/µm) | Efficacité conservée en hypoxie.[1,26] |\n\nLa logique d'ensemble : un TEL élevé concentre l'énergie sur un trajet ultracourt, y crée des **cassures double-brin (DSB) groupées** non réparables, ce qui élève l'**EBR** jusqu'à un pic puis la fait chuter par **overkill** (cf. A5). Cette densité d'ionisation est aussi ce qui fonde, en radioprotection, le **w_R = 20** des particules α.[1,2,32]",
+          "stats": [
+            {
+              "value": "110→61 keV/µm",
+              "label": "TEL des α de 4–8 MeV"
+            },
+            {
+              "value": "~0,2 keV/µm",
+              "label": "TEL de référence (β⁻/γ/X)"
+            },
+            {
+              "value": "≤ 100 µm",
+              "label": "Parcours α (≈ 2–10 cellules)"
+            },
+            {
+              "value": "EBR = 5",
+              "label": "Valeur thérapeutique (MIRD 22)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Deux nombres à ne jamais confondre. Le **w_R = 20** (CIPR 103) sert au calcul de la **dose efficace** en radioprotection (effets stochastiques) ; l'**EBR = 5** (MIRD 22) sert à pondérer la **dose absorbée thérapeutique** (effets déterministes). Utiliser w_R = 20 pour estimer un effet thérapeutique surestimerait l'efficacité d'un facteur ~4.[1,32]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des modes d'émission : la particule alpha (noyau d'hélium, lourde et doublement chargée, trajet court et dense) opposée aux émissions bêta et gamma (légères, peu ionisantes, trajet long).",
+            "caption": "Fig. 1 — L'émission α (noyau ⁴He²⁺, lourde et doublement chargée) face aux émissions β⁻/γ : c'est la masse et la charge qui dictent le haut TEL."
+          }
+        },
+        {
+          "title": "A2 - Définition rigoureuse du TEL : dE/dx, TEL restreint, pouvoir d'arrêt et structure de trace",
+          "text": "Le **TEL** est défini comme l'énergie moyenne **localement déposée** par une particule chargée par unité de longueur de sa trajectoire, soit **TEL = dE/dx**, exprimé en **keV/µm** (1 keV/µm = 0,1 MeV/cm). Il quantifie la **densité linéique d'ionisation** le long de la trace.[2,27]\n\nIl faut le distinguer du **pouvoir d'arrêt électronique** (*stopping power*), qui mesure la perte d'énergie **totale** de la particule incidente, y compris l'énergie emportée au loin par les **rayons δ** (électrons secondaires énergétiques). Le TEL, lui, se restreint à l'énergie déposée **au voisinage immédiat** de la trace. On formalise cette restriction par le **TEL restreint LET_Δ** : seuls les transferts d'énergie inférieurs à un seuil Δ (typiquement 100 eV à quelques keV) sont comptabilisés comme « locaux » ; au-delà, l'énergie est attribuée à un δ qui crée sa propre microtrace à distance. Quand Δ → ∞, le TEL restreint tend vers le pouvoir d'arrêt total (**TEL non restreint, LET_∞**).[2,27]\n\nLa **structure de trace** (*track structure*) est la conséquence directe de cette densité : un rayonnement bas TEL (β⁻, γ, X ≈ **0,2 keV/µm**) sème des ionisations **éparses**, séparées de plusieurs dizaines de nanomètres, réparables ; un rayonnement haut TEL (α) laboure un **sillon continu et dense** d'ionisations.[2,31,32] La convention courante place la frontière « bas TEL / haut TEL » à **~10 keV/µm**.[2]\n\n| Concept | Définition | Ce qu'il inclut |\n|---|---|---|\n| **TEL (LET)** | Énergie **déposée localement** par unité de trajet (dE/dx) | Dépôt au voisinage de la trace |\n| **Pouvoir d'arrêt** | Énergie **perdue** par la particule par unité de trajet | Inclut l'énergie emportée par les rayons δ |\n| **TEL restreint (LET_Δ)** | dE/dx limité aux transferts < seuil Δ | Exclut les δ énergétiques (microtraces à distance) |\n| **Structure de trace** | Distribution spatiale 3D des ionisations | Détermine la complexité des lésions ADN (A5) |\n\nLa structure de trace est le maillon caché entre la physique (TEL) et la biologie (EBR) : à TEL macroscopiquement égal, deux particules dont la **microdistribution** d'ionisations diffère n'ont pas la même efficacité — d'où le recours, en TAT, à la **microdosimétrie** plutôt qu'aux seules S-values classiques.[34,35]",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi le TEL n'est pas le pouvoir d'arrêt",
+              "text": "Une particule très énergétique peut avoir un pouvoir d'arrêt élevé mais un **TEL local plus faible** si une partie notable de l'énergie part dans des **rayons δ** qui ionisent ailleurs. Pour la radiobiologie, c'est le dépôt **local** (au contact de l'ADN) qui compte — donc le TEL, restreint, est la grandeur pertinente, pas le pouvoir d'arrêt total.[2,27]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — un TEL, plusieurs définitions",
+              "text": "Une même particule α n'a pas « un » TEL : il varie tout au long du parcours (cf. courbe de Bragg, A3) et dépend du seuil Δ choisi pour le TEL restreint. Toute valeur citée (ex. **TEL initial** vs **TEL moyen de trace** vs **TEL au pic de Bragg**) doit préciser le point de mesure, sous peine de comparaisons trompeuses.[31,32]"
+            }
+          ]
+        },
+        {
+          "title": "A3 - Physique de la particule alpha : énergie, parcours, courbe de Bragg et signature micrométrique",
+          "text": "La particule α est un **noyau d'hélium (2 protons + 2 neutrons, charge +2e)**, environ **7 300 fois plus massive qu'un électron**. Sa double charge et sa masse expliquent un ralentissement intense par interactions coulombiennes : elle dépose toute son énergie sur un trajet **micrométrique**, rectiligne, sans diffusion notable.[31]\n\n**Énergie et TEL initial.** Les α thérapeutiques portent **4 à 10 MeV**.[31] Le TEL **décroît** quand l'énergie augmente : une α de **8 MeV** a un TEL initial de **~110 keV/µm**, une α de **4 MeV** de **~61 keV/µm**.[1,32] Aux énergies plus basses, le TEL **moyen de trace** grimpe (≈ **95 keV/µm** pour 5 MeV, ≈ 166 keV/µm pour 2,5 MeV).\n\n**Courbe de Bragg.** Le TEL n'est pas constant le long du parcours : il croît à mesure que la particule ralentit et **culmine en fin de course** — le **pic de Bragg** — où il peut atteindre **~230 keV/µm**, juste avant l'arrêt brutal.[31] La gamme globale du TEL des α couvre ainsi **50–230 keV/µm**.[31] Cette concentration terminale de dose est l'analogue microscopique de ce qu'exploite la protonthérapie à l'échelle macroscopique.\n\n**Parcours et signature micrométrique.** Dans les tissus mous, le parcours est **≤ 100 µm** (typiquement **40–100 µm**), soit **2 à 10 diamètres cellulaires** ; **≤ 40 µm dans l'os** (plus dense).[31] Pour le **²²³Ra**, l'énergie α moyenne pondérée de la chaîne (**5,78 MeV**) est déposée sur un parcours moyen de **~57 µm**.[9] À comparer aux diamètres de référence de la radiobiologie cellulaire : **cellule ~18 µm, noyau ~10 µm**, section efficace nucléaire **~42 µm²**.[31] Conséquence directe : l'effet de **crossfire** (irradiation des cellules voisines) est **marginal** pour les α — irradiation véritablement à l'échelle de la cellule cible — alors qu'il est marqué pour les β⁻ de long parcours.[1,54]\n\n| Particule (radionucléide) | Énergie α | Parcours tissu | TEL caractéristique |\n|---|---|---|---|\n| α de 4 MeV | 4 MeV | quelques dizaines de µm | **~61 keV/µm** (initial)[1,32] |\n| α de 8 MeV | 8 MeV | ~80–100 µm | **~110 keV/µm** (initial)[1,32] |\n| Chaîne **²²³Ra** | moy. **5,78 MeV** | **~57 µm** | haut TEL[9] |\n| Pic de Bragg (toute α) | — | fin de parcours | jusqu'à **~230 keV/µm**[31] |\n| Référence **β⁻** (¹³¹I, ⁹⁰Y) | — | mm | **~0,2 keV/µm**[31] |",
+          "stats": [
+            {
+              "value": "7 300×",
+              "label": "Masse de l'α / électron"
+            },
+            {
+              "value": "~230 keV/µm",
+              "label": "TEL au pic de Bragg"
+            },
+            {
+              "value": "~57 µm",
+              "label": "Parcours moyen (chaîne ²²³Ra)"
+            },
+            {
+              "value": "~42 µm²",
+              "label": "Section efficace du noyau cible"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — l'« obus de char » microscopique",
+              "text": "Le parcours ultracourt (≈ 2–10 cellules) est l'argument central de la TAT : il permet de stériliser une cellule tumorale en **épargnant le voisinage** (crossfire négligeable[1,54]), à condition que le vecteur dépose l'α **au contact** de la cellule cible. C'est aussi la limite : une micrométastase non atteinte par le vecteur échappe au traitement, le crossfire ne « rattrapant » pas comme avec les β⁻."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration illustrant l'émission alpha d'un noyau père vers son noyau fils, avec libération d'une particule alpha de plusieurs MeV déposée sur un parcours micrométrique.",
+            "caption": "Fig. 2 — Émission α et dépôt d'énergie : toute l'énergie (4–10 MeV) est délivrée sur quelques dizaines de micromètres, avec un maximum de TEL au pic de Bragg en fin de course."
+          }
+        },
+        {
+          "title": "A4 - Définition et mesure de l'EBR : dose de référence, point d'isoeffet et dépendances",
+          "text": "L'**EBR** d'un rayonnement test (ici les α) est le **rapport de doses** produisant un **même effet biologique** : EBR = D_réf / D_test, où D_réf est la dose d'un **rayonnement de référence à bas TEL** (X de 250 kV, ou γ du **⁶⁰Co**) et D_test la dose du rayonnement étudié, mesurées à **isoeffet**.[3] Une EBR de 5 signifie qu'il faut **5 fois moins** de dose absorbée d'α que de photons pour obtenir le même effet.\n\n**Point d'isoeffet.** L'EBR n'est pas une constante : elle se lit sur les **courbes de survie cellulaire** à un **niveau d'effet donné** (classiquement la survie à 10 % ou 1 %). Comme la courbe bas TEL présente un **épaulement** (réparation des dommages sublétaux) tandis que la courbe haut TEL est **quasi exponentielle** (peu ou pas d'épaulement), l'écart entre les deux — donc l'EBR — **augmente quand la dose diminue**. Données historiques sur le **²¹⁰Po (α 5,3 MeV)** : EBR ≈ **2,5 à forte dose** et ≈ **6 à faible dose**.[31] Cette propriété (EBR croissante aux faibles doses) est typique du haut TEL et a une portée directe en dosimétrie fractionnée.\n\n**Une formule opérationnelle.** Le **MIRD Pamphlet 22** propose une relation EBR–énergie : **EBR = 2,9 − 0,167 × E_i**, où E_i est l'énergie initiale de l'α en MeV (validée sur la gamme **5–8,5 MeV**).[1,32] Pour la **dosimétrie clinique** (effets déterministes), MIRD 22 recommande une **EBR = 5** comme valeur de projection, confirmée par les travaux sur les **foyers γH2AX** (marqueur de DSB) du **²²⁵Ac**.[1,31,32]\n\n**Dépendances de l'EBR.** Elle varie avec : (1) le **TEL** (relation en cloche, cf. A5) ; (2) le **niveau de dose / d'effet** (↑ aux faibles doses) ; (3) le **critère biologique** mesuré (survie clonogénique, DSB, mutation, transformation) ; (4) le **type cellulaire** et sa capacité de réparation ; (5) la **teneur en oxygène** — mais de façon **atténuée** : l'**OER** (*oxygen enhancement ratio*) tend vers **1** pour TEL > 140 keV/µm, et vaut **1,3–2,1** pour les α de 4–8 MeV (TEL 110–61 keV/µm), contre **2,5–3,0** pour les X.[1,26] L'efficacité α est donc **largement conservée en hypoxie**.\n\n| Déterminant | Effet sur l'EBR des α |\n|---|---|\n| **TEL** | ↑ jusqu'au pic (~100–200 keV/µm) puis ↓ (overkill, A5)[2,3,28] |\n| **Niveau de dose** | ↑ aux faibles doses (²¹⁰Po : 2,5 → 6)[31] |\n| **Énergie de l'α** | EBR = 2,9 − 0,167·E_i (MIRD 22)[1,32] |\n| **Oxygénation** | Faible dépendance (OER 1,3–2,1, ≈ 1 si TEL > 140)[1,26] |\n| **Critère biologique** | EBR(DSB) ≠ EBR(survie) ≠ EBR(mutation)[3,31] |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — « l'EBR » n'existe pas isolément",
+              "text": "Citer une EBR sans préciser le **rayonnement de référence**, le **critère d'effet**, le **niveau de dose** et le **type cellulaire** n'a pas de sens : la même particule α peut afficher une EBR de 2,5 ou de 6 selon ces conditions.[31] En clinique TAT, la **valeur conventionnelle de 5** (MIRD 22) est un compromis de projection, non une constante physique.[1,32]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi l'EBR monte aux faibles doses",
+              "text": "La cellule répare efficacement les dommages **sublétaux** du bas TEL (d'où l'épaulement de la courbe de survie), mais peu ceux du haut TEL (lésions groupées). Aux **faibles doses**, l'avantage relatif de l'α est maximal car le photon « gaspille » sa dose en dommages réparables — d'où une EBR plus élevée. Cela plaide pour la TAT sur la **maladie de faible volume** et les **micrométastases**.[31,53]"
+            }
+          ]
+        },
+        {
+          "title": "A5 - La relation TEL-EBR : montée, pic d'efficacité vers 100-200 keV/µm et chute par overkill",
+          "text": "La relation entre TEL et EBR n'est **pas monotone** : c'est une **courbe en cloche**. Trois régimes la structurent.[2,3,28]\n\n**1) Plateau bas TEL (< ~10 keV/µm).** L'EBR est **proche de 1 et quasi indépendante du TEL** : les ionisations sont trop espacées pour créer systématiquement des lésions complexes ; la cellule répare l'essentiel des dommages.[2,28]\n\n**2) Montée (≈ 10 → 100 keV/µm).** L'EBR **croît fortement** avec le TEL. La distance moyenne entre ionisations se rapproche du **diamètre de la double hélice d'ADN (~2 nm)** : la probabilité de produire des **cassures double-brin (DSB) et des lésions groupées** (*clustered DNA damage*) sur un même tour d'hélice augmente, et ces lésions sont **mal ou non réparées**.[14,28,31]\n\n**3) Pic puis chute par overkill (au-delà de ~100–200 keV/µm).** L'EBR atteint son **maximum vers ~100 keV/µm** (selon le critère, le pic s'étale jusqu'à **~200 keV/µm**), puis **décroît**.[2,3,28] Au-delà du seuil létal, chaque traversée dépose **bien plus d'énergie que nécessaire** pour tuer la cellule : l'excédent est **gaspillé** (*overkill*), et comme moins de cellules sont traversées à dose égale, l'efficacité **par unité de dose** baisse.[2,28]\n\nLes α thérapeutiques (TEL **61–110 keV/µm** pour 4–8 MeV) se situent **sur le flanc montant, au voisinage du pic** — d'où leur efficacité maximale et une EBR clinique de l'ordre de **5**.[1,32] Le pic de Bragg (jusqu'à **~230 keV/µm**) peut localement franchir le sommet et entrer dans la zone d'overkill, ce que la microdosimétrie intègre.[31]\n\n| Régime de TEL | EBR | Mécanisme dominant |\n|---|---|---|\n| **< 10 keV/µm** (β⁻, γ, X) | **≈ 1**, indépendante du TEL | Ionisations éparses, dommages réparables[2,28] |\n| **10 → ~100 keV/µm** | **croissante** | Densité d'ionisation ≈ pas de l'ADN → DSB groupées[14,28,31] |\n| **~100–200 keV/µm** (α de TAT) | **maximale (~pic)** | Lésions complexes non réparables ; létalité par 1–quelques traversées[1,31,32] |\n| **> 200 keV/µm** | **décroissante** | **Overkill** : énergie déposée au-delà du seuil létal gaspillée[2,28] |\n\nCorollaire biologique du pic : **1 à quelques traversées** du noyau par des α suffisent à stériliser une cellule, contre des **centaines** d'événements pour le bas TEL.[1,31,32] C'est cette efficacité, indépendante du cycle cellulaire et peu dépendante du débit de dose et de l'oxygène (A4), qui fait des émetteurs α l'arme de choix contre les **micrométastases**, les **tumeurs radiorésistantes** (hypoxiques) et les **cellules tumorales circulantes**.[31,53]",
+          "stats": [
+            {
+              "value": "~100 keV/µm",
+              "label": "Pic d'EBR (max d'efficacité)"
+            },
+            {
+              "value": "61–110 keV/µm",
+              "label": "TEL des α de TAT (proche du pic)"
+            },
+            {
+              "value": "1–quelques",
+              "label": "Traversées nucléaires létales (vs centaines)"
+            },
+            {
+              "value": "~2 nm",
+              "label": "Pas de l'ADN ≈ inter-ionisation au pic"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "L'overkill, en une phrase",
+              "text": "Au-delà du pic d'EBR, augmenter encore le TEL **n'augmente plus l'efficacité par unité de dose** : la particule « surtue » la cellule et l'énergie excédentaire est perdue, tandis qu'à dose égale moins de cellules sont touchées — l'EBR redescend.[2,28]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi viser le flanc, pas le sommet",
+              "text": "Les α de TAT (61–110 keV/µm) sont positionnés **juste avant le pic**, là où l'EBR est quasi maximale tout en gardant une létalité par traversée élevée. Pousser le TEL plus haut (zone d'overkill) n'apporterait aucun gain thérapeutique net — la nature a calibré la cible au bon endroit de la cloche. C'est aussi pourquoi la relation TEL–EBR justifie l'emploi conventionnel d'une **EBR = 5** plutôt que du w_R = 20 de la radioprotection (A1).[1,2,32]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique reliant l'imagerie diagnostique d'une cible moléculaire au traitement par radionucléide émetteur alpha, illustrant l'exploitation clinique du haut TEL et de l'EBR élevée.",
+            "caption": "Fig. 3 — Du haut TEL à la clinique : l'EBR élevée des α (pic ~100 keV/µm) fonde la thérapie alpha ciblée, où une cible imagée est traitée par un émetteur α apparié."
+          }
+        },
+        {
+          "title": "B1 - B1 - Du TEL à la lésion : lésions groupées de l'ADN, DSB complexes et irréparabilité",
+          "text": "**(a) Le pont TEL → géométrie du dépôt d'énergie.** Le **transfert d'énergie linéique (TEL ; LET, *Linear Energy Transfer*)** est l'énergie déposée par unité de longueur de trajectoire d'une particule ionisante, exprimée en **keV/μm**.[1,2] Il ne décrit pas seulement *combien* d'énergie est déposée, mais surtout *comment* elle est distribuée le long du track : c'est cette densité spatiale d'ionisations qui détermine la nature des lésions de l'ADN. Les rayonnements de référence à **bas TEL** (X, γ du ⁶⁰Co, électrons et β⁻) déposent **~0,2 keV/μm**[3,31] et sèment des ionisations éparses ; les particules **α de 4 à 8 MeV** d'intérêt en thérapie alpha ciblée (TAT, *Targeted Alpha Therapy*) ont un **TEL initial de 110 à 61 keV/μm**[1,32] — soit **2 à 3 ordres de grandeur** au-dessus des β⁻ de ¹³¹I et ⁹⁰Y.[1] La gamme globale du TEL des α s'étend de **50 à 230 keV/μm**, avec un maximum au **pic de Bragg** (fin de parcours).[31] Sur un trajet tissulaire de seulement **≤ 100 μm** (≈ 2–10 diamètres cellulaires, **≤ 40 μm dans l'os**),[31] l'α se comporte comme un microscopique « obus de char » qui laboure l'ADN d'un sillon d'ionisations continu.\n\n**(b) Lésions groupées et DSB complexes.** À haut TEL, les ionisations se succèdent à des distances nanométriques. Lorsqu'une distance inter-ionisation avoisine le **diamètre de la double hélice (~2 nm)**, la probabilité de produire **plusieurs lésions sur un même tour d'hélice** devient élevée : c'est la **lésion groupée (clustered DNA damage)**.[28,14] La forme la plus cytotoxique est la **cassure double-brin complexe (DSB ; *Double-Strand Break*)** — DSB accompagnée de cassures simple-brin et de bases oxydées dans un rayon de quelques paires de bases.[13,14] Là où le bas TEL génère des dégâts dispersés, individuellement réparables par excision de base ou jonction d'extrémités, le haut TEL génère des lésions *localement saturantes*.\n\n**(c) Irréparabilité et létalité.** Les DSB complexes débordent les machineries de réparation (NHEJ, recombinaison homologue) : elles sont **mal ou non réparées**, d'où une létalité par cellule très supérieure à celle du bas TEL.[31,14] Conséquence opérationnelle majeure : **1 à 4 traversées du noyau** par des α suffisent à stériliser une cellule, contre des **centaines** de traversées pour un rayonnement de bas TEL.[1] La cible sensible admise est le **noyau**, dont la section efficace est d'environ **42 μm²**.[31]\n\n| Caractéristique | Bas TEL (X, γ, β⁻) | Haut TEL (α 4–8 MeV) |\n|---|---|---|\n| TEL | **~0,2 keV/μm**[3,31] | **61–110 keV/μm** (track initial)[1,32] |\n| Distribution des ionisations | Éparse | Dense, quasi continue le long du track |\n| Lésion ADN dominante | Cassures simple-brin, DSB simples | **DSB complexes + lésions groupées**[13,14] |\n| Réparabilité | Élevée | **Faible / nulle**[31] |\n| Traversées du noyau pour stériliser | Centaines | **1–4**[1] |\n\n**(d) Trois corollaires radiobiologiques du haut TEL** qui découlent directement de cette physique de dépôt :\n- **Indépendance vis-à-vis de l'oxygène.** Les DSB α se forment sans recours à l'effet indirect oxygène-dépendant. Le **rapport d'amélioration par l'oxygène (OER, *Oxygen Enhancement Ratio*)** tend vers **1 pour un TEL > 140 keV/μm** ; pour les α de 4–8 MeV (TEL 61–110 keV/μm), l'OER vaut **1,3 à 2,1** (vs 2,5–3,0 pour les X),[1,26] d'où une efficacité conservée en **milieu hypoxique**.[53]\n- **Faible dépendance au cycle cellulaire et au débit de dose**, à la différence du bas TEL.[1]\n- **Effet « crossfire » marginal** (parcours court) → irradiation véritablement ciblée sur la cellule porteuse, mais un **effet bystander (RIBE)** non négligeable : ~**30–35 %** des cellules tuées le sont par effet bystander, avec des dommages ADN détectables jusqu'à **1 mm** du site de désintégration.[31]",
+          "stats": [
+            {
+              "value": "61–110 keV/μm",
+              "label": "TEL des α de 4–8 MeV (track initial)"
+            },
+            {
+              "value": "~0,2 keV/μm",
+              "label": "TEL de référence des β⁻ / γ"
+            },
+            {
+              "value": "1–4",
+              "label": "Traversées du noyau pour stériliser une cellule"
+            },
+            {
+              "value": "~2 nm",
+              "label": "Distance inter-ionisation au pic d'EBR ≈ diamètre ADN"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le pic d'EBR coïncide avec le diamètre de l'ADN",
+              "text": "L'**efficacité biologique relative (EBR ; RBE, *Relative Biological Effectiveness*)** croît avec le TEL jusqu'à un **pic vers ~100 keV/μm**, puis **décroît** (effet « overkill » : au-delà du seuil létal, l'énergie excédentaire est gaspillée).[2,28] Le pic à ~100 keV/μm n'est pas fortuit : c'est le TEL pour lequel la distance inter-ionisation moyenne approche le **diamètre de la double hélice (~2 nm)**, maximisant la production de DSB par unité de dose.[28] En deçà de **10 keV/μm**, l'EBR est sensiblement indépendante du TEL.[2]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — « plus d'énergie » n'est pas « plus d'effet »",
+              "text": "Ne pas confondre énergie de la particule et efficacité. Une **α de 2,5 MeV** a un TEL moyen de track **plus élevé** (~166 keV/μm) qu'une **α de 5 MeV** (~95 keV/μm), car l'α ralentie ionise plus densément.[27,28] Et au-delà du pic d'EBR, une particule encore plus densément ionisante devient *moins* efficace par unité de dose (overkill). L'effet biologique est piloté par la **microgéométrie du dépôt**, pas par l'énergie totale."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des types de dépôt d'énergie : track de bas TEL (ionisations éparses, dégâts ADN réparables) versus track de haut TEL alpha (ionisations denses générant des cassures double-brin complexes groupées et irréparables).",
+            "caption": "Fig. 1 — Du TEL à la lésion : le track dense de l'alpha concentre les ionisations à l'échelle du nanomètre, produisant des DSB complexes que la cellule ne peut réparer."
+          }
+        },
+        {
+          "title": "B2 - B2 - EBR des émetteurs alpha en thérapie : valeurs mesurées, plages et incertitudes",
+          "text": "**(a) Définition et grandeur de référence.** L'**EBR** est le rapport (dose d'un rayonnement de référence à bas TEL, X ou γ) / (dose du rayonnement étudié) produisant le **même effet biologique** mesuré.[3] Ce n'est donc pas une constante : sa valeur dépend de l'**effet biologique choisi** (survie clonogénique, foci γH2AX, effets déterministes), du **niveau de dose**, du **type cellulaire** et de l'**énergie de l'α** considérée. Cette multiplicité est la première source de confusion en TAT.\n\n**(b) La valeur de travail clinique : EBR = 5.** Le **MIRD Pamphlet No. 22** (référence de radiobiologie/dosimétrie α de la SNMMI) recommande une **EBR de 5** pour projeter les **effets biologiques déterministes** des émetteurs α.[1,32] C'est cette valeur que retient en pratique la dosimétrie clinique — par exemple pour convertir les doses absorbées α du **²²⁵Ac-PSMA-617** en équivalents pondérés (point de départ établi à partir d'études de foci γH2AX/cassures double-brin).[4,31]\n\n**(c) Dépendance à l'énergie : la formule du MIRD 22.** L'EBR α n'est pas figée : elle décroît quand l'énergie de la particule croît (l'α plus énergétique a, au point d'entrée, un TEL plus faible donc une efficacité moindre). Le MIRD 22 propose une relation empirique :\n\n> **EBR = 2,9 − 0,167 × Eᵢ**, où **Eᵢ** est l'énergie initiale de l'α en MeV (domaine de validité 5–8,5 MeV).[1,32]\n\n**(d) Dépendance à la dose : l'EBR monte quand la dose baisse.** Propriété typique du haut TEL, l'EBR augmente aux faibles doses. Les données expérimentales historiques sur le **²¹⁰Po (5,3 MeV)** donnent une EBR ≈ **2,5 à forte dose** et ≈ **6 à faible dose**.[31] Ce comportement explique qu'une EBR unique soit toujours une approximation.\n\n| Contexte / effet | Valeur d'EBR | Source |\n|---|---|---|\n| Effets déterministes en TAT (valeur de projet clinique) | **5** | MIRD 22[1,32] |\n| Conversion dosimétrique ²²⁵Ac-PSMA-617 (foci γH2AX) | **5** (point de départ) | [4,31] |\n| ²¹⁰Po 5,3 MeV — forte dose | **~2,5** | [31] |\n| ²¹⁰Po 5,3 MeV — faible dose | **~6** | [31] |\n| Domaine théorique (formule énergie, Eᵢ 5–8,5 MeV) | **~1,5 à 2,1** (selon Eᵢ) | MIRD 22[1,32] |\n\n**(e) Incertitudes pratiques.** Trois écueils minent la transposabilité des valeurs : (1) l'EBR mesurée *in vitro* sur lignées cellulaires en suspension ne reflète pas nécessairement le micro-environnement tumoral 3D ni l'hétérogénéité de captation ; (2) les chaînes de désintégration à filles multiples (²²⁵Ac, ²²⁷Th) déposent l'énergie via **plusieurs α de TEL différents**, si bien qu'aucune EBR unique ne décrit le cocktail ; (3) la **redistribution des filles** par recul nucléaire modifie la cible réellement irradiée. La valeur **5** est donc un **consensus opérationnel**, non une mesure biologique universelle.[1,31]",
+          "stats": [
+            {
+              "value": "5",
+              "label": "EBR de projet (effets déterministes, MIRD 22)"
+            },
+            {
+              "value": "2,9 − 0,167·Eᵢ",
+              "label": "EBR en fonction de l'énergie α (MeV)"
+            },
+            {
+              "value": "~2,5 → ~6",
+              "label": "EBR du ²¹⁰Po de forte à faible dose"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'EBR n'est pas un nombre unique",
+              "text": "Reporter « EBR des α = 5 » sans contexte est un raccourci dangereux. Selon l'effet (survie vs déterministe), la dose et l'énergie, les valeurs mesurées s'étalent de **~2,5 à ~6**.[31] Le **5** du MIRD 22 vaut pour les **effets déterministes** et sert de convention de projet ;[1,32] il ne doit pas être présenté comme une propriété physique invariante de la particule α."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi pas la valeur radioprotection ?",
+              "text": "En TAT, on n'utilise **pas** le facteur de pondération radiologique w_R = 20 (cf. §B4) pour calculer un effet thérapeutique. Le w_R est calibré sur les **effets stochastiques** (cancérogenèse, faibles doses) en radioprotection ; appliquer 20 à une dose tumorale thérapeutique **surestimerait grossièrement** l'effet déterministe attendu. La dosimétrie thérapeutique retient l'EBR ≈ **5**.[1,32]"
+            }
+          ]
+        },
+        {
+          "title": "B3 - B3 - Microdosimétrie et dosimétrie à l'échelle cellulaire des alpha : pourquoi la dose absorbée moyenne ne suffit pas",
+          "text": "**(a) Le problème d'échelle.** La dosimétrie conventionnelle de la radiothérapie interne (S-values MIRD, dose absorbée **moyenne** sur un organe) suppose un dépôt d'énergie **homogène**. Cette hypothèse s'effondre avec les α : un **parcours de ≤ 100 μm** (≈ 2–10 diamètres cellulaires)[31] est plus court que la dimension de la plupart des sources biologiques, et l'énergie est déposée par un **petit nombre de traversées discrètes** plutôt que par un continuum. La grandeur pertinente n'est plus la dose moyenne mais la **distribution stochastique de l'énergie spécifique (z)** déposée dans chaque cible cellulaire — c'est l'objet de la **microdosimétrie**.[34,35]\n\n**(b) Géométrie de la cible.** Les ordres de grandeur fixent l'enjeu : **cellule ~18 μm**, **noyau ~10 μm** (section efficace **~42 μm²**).[29,1,31] Une α traversant le cytoplasme mais **manquant le noyau** déposera une dose cytoplasmique élevée pour un effet létal quasi nul, alors qu'une α traversant le noyau sera létale. La dose moyenne « lisse » cette dichotomie tout-ou-rien et peut **surestimer** l'effet quand la captation est superficielle (membranaire), ou le **sous-estimer** quand le radionucléide est internalisé près du noyau. D'où la recommandation du MIRD 22 de fonder la dosimétrie α sur les **fractions absorbées** (séparant explicitement la composante α de la composante électrons-photons) plutôt que sur les seules S-values classiques.[1,32]\n\n**(c) Hétérogénéité de la distribution d'activité.** Aux échelles de la tumeur, la dose absorbée par cellule dépend de la **densité locale de cible** et de la **pénétration du vecteur**. Une micrométastase uniformément marquée reçoit une dose homogène ; un nodule avec captation périphérique laisse un cœur sous-dosé. C'est précisément parce que le **crossfire des α est marginal** (§B1) que l'**homogénéité de distribution devient critique** : contrairement aux β⁻ (parcours millimétrique qui « rattrape » les cellules non marquées par feu croisé), une cellule α-non atteinte n'est pas irradiée par sa voisine.[1]\n\n**(d) Le recul nucléaire et la redistribution des filles — le défi propre à la TAT.** Après chaque émission α, le noyau fils subit un **recul d'énergie ~100 keV**, très supérieur à toute énergie de liaison chimique : la fille radioactive est **éjectée du chélate**.[34] Dans une chaîne comme celle du **²²⁵Ac → ²²¹Fr → ²¹⁷At → ²¹³Bi → ²¹³Po** (4 α nets, énergie nette ≈ **27 MeV/désintégration**),[33] **3 des 4 α** sont émis par des filles potentiellement détachées du vecteur et **redistribuées** dans l'organisme. Cette redistribution déplace la dose vers des organes hors-cible (par ex. néphrotoxicité) et **invalide** toute dosimétrie supposant que toute la chaîne reste au site de fixation.[34,1]\n\n| Échelle de cible | Dimension | Implication dosimétrique |\n|---|---|---|\n| Cellule | **~18 μm**[29] | Plusieurs diamètres dans le parcours α (≤ 100 μm) |\n| Noyau (cible létale) | **~10 μm**, σ ≈ **42 μm²**[1,31] | Traversée nucléaire = critère de létalité (1–4 suffisent) |\n| Parcours α tissu | **≤ 100 μm** (≤ 40 μm os)[31] | < taille de nombreuses sources → dépôt non homogène |\n| Énergie de recul fille | **~100 keV**[34] | Rupture du chélate → redistribution des filles |\n\n**(e) Conséquence opérationnelle.** L'**EANM Dosimetry Committee (2025–2026)** érige en priorités méthodologiques propres à la TAT : la quantification d'activité aux **faibles taux de comptage**, la prise en compte de la **redistribution des filles**, et la **dosimétrie à petite échelle / microdosimétrie**.[34,35] Une dose absorbée moyenne reste utile comme repère d'organe, mais la **personnalisation** de la TAT exige le niveau cellulaire.",
+          "stats": [
+            {
+              "value": "~10 μm",
+              "label": "Diamètre du noyau (cible létale), σ ≈ 42 μm²"
+            },
+            {
+              "value": "≈ 27 MeV",
+              "label": "Énergie α nette par désintégration de ²²⁵Ac"
+            },
+            {
+              "value": "~100 keV",
+              "label": "Recul nucléaire éjectant la fille du chélate"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la dose moyenne d'organe trompe en TAT",
+              "text": "Rapporter une dose α en **Gy moyens d'organe** comme on le fait pour le ¹⁷⁷Lu peut induire en erreur : à l'échelle du parcours α, le dépôt est **discret et hétérogène**, et l'effet dépend de la **traversée nucléaire**, pas de la dose moyenne. Toujours préciser le **niveau d'échelle** et, en chaîne à filles multiples, signaler que la **redistribution** rend la dose d'organe incertaine.[34,1]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi les α battent les β⁻ sur les micrométastases",
+              "text": "L'absence de crossfire est un **défaut** pour une grosse masse hétérogène (cœur sous-dosé) mais un **atout** pour les micrométastases, cellules tumorales circulantes et maladie de petit volume : chaque cellule marquée est stérilisée par 1–4 traversées sans irradier inutilement le tissu sain alentour, et l'efficacité est conservée en **hypoxie** (OER ≈ 1).[1,53] C'est le rationnel du choix α plutôt que β⁻ dans ces situations."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration en chaîne de l'actinium-225 : émission de 4 particules alpha successives via francium-221, astate-217, bismuth-213 et polonium-213, avec recul nucléaire détachant les filles du chélate.",
+            "caption": "Fig. 2 — Chaîne du ²²⁵Ac (4 α, ≈ 27 MeV nets) : à chaque émission, le recul ~100 keV éjecte la fille du vecteur, redistribuant la dose hors de la cible."
+          }
+        },
+        {
+          "title": "B4 - B4 - Le facteur de pondération w_R = 20 : EBR réglementaire vs EBR radiobiologique",
+          "text": "**(a) Deux grandeurs, deux finalités.** La confusion la plus tenace en TAT oppose le **facteur de pondération radiologique w_R** et l'**EBR thérapeutique**. Ce sont des objets distincts, calibrés pour des usages opposés :\n- **w_R = 20** pour les particules α, fixé par la **CIPR 103** (ICRP Publication 103), sert au calcul de la **dose efficace** (en sievert) en **radioprotection** — un cadre dédié aux **effets stochastiques** (cancérogenèse, effets héréditaires) à **faibles doses**.[1,32]\n- **EBR ≈ 5**, recommandée par le **MIRD 22**, sert à projeter les **effets biologiques déterministes** (mort cellulaire, toxicité d'organe) aux **fortes doses** de la **thérapie**.[1,32]\n\n**(b) Pourquoi w_R = 20 et pas 5 ?** Le w_R n'est pas une EBR mesurée : c'est une **valeur conservatrice et arrondie**, choisie par convention pour majorer le risque stochastique des rayonnements de haut TEL dans un objectif de **précaution réglementaire**. Il n'a pas vocation à prédire un effet biologique précis. L'EBR thérapeutique, elle, est ajustée sur un **effet déterministe observé** et donne une valeur bien plus basse (~5, cf. §B2). Appliquer **w_R = 20 à une dose tumorale thérapeutique surestimerait l'effet d'un facteur ≈ 4** — erreur de nature réglementaire/clinique.\n\n| | w_R (réglementaire) | EBR (radiobiologique/thérapeutique) |\n|---|---|---|\n| Valeur pour les α | **20**[1,32] | **~5** (effets déterministes)[1,32] |\n| Référentiel | CIPR 103 | MIRD 22 |\n| Effet visé | **Stochastique** (cancérogenèse) | **Déterministe** (mort cellulaire, toxicité) |\n| Régime de dose | Faibles doses | Fortes doses (thérapie) |\n| Grandeur produite | Dose efficace (Sv) | Dose pondérée par l'EBR (Gy-Eq) |\n| Nature | Convention conservatrice arrondie | Ajustée sur effet observé |\n\n**(c) Conséquence dans la chaîne dosimétrique.** En pratique, on calcule d'abord une **dose absorbée α** (Gy), puis on la pondère par l'EBR pour estimer l'effet déterministe. Ainsi pour le **²²³Ra-dichlorure**, la dose à l'endoste est de **~0,76 Gy/MBq** (cellules ostéogéniques, organe critique) ;[40] en appliquant l'**EBR = 5**, la dose pondérée à l'endoste atteint **~899 mGy/MBq** (gamme 340–2 450 mGy/MBq).[40] Sur un schéma complet de **6 injections × 55 kBq/kg**, la dose α à l'endoste osseux avoisine **16 Gy** et la moelle rouge **~1,5 Gy**.[39] Utiliser ici w_R = 20 au lieu de l'EBR donnerait des chiffres physiologiquement absurdes.\n\n**(d) Un piège normatif à éviter : la CIPR 128.** La **CIPR 128** (ICRP Publication 128, 2015) fournit les coefficients de dose (mSv/MBq) des **radiopharmaceutiques diagnostiques** ; elle **ne couvre pas** les émetteurs α thérapeutiques. Pour la TAT, les références sont le **MIRD 22** (radiobiologie/dosimétrie α) et les **recommandations EANM 2025–2026** (dosimétrie α) ; le **w_R = 20** vient de la **CIPR 103**.[1,32,34] Citer la CIPR 128 pour une dosimétrie α serait un contresens.",
+          "stats": [
+            {
+              "value": "20",
+              "label": "w_R des α (CIPR 103, radioprotection, stochastique)"
+            },
+            {
+              "value": "~5",
+              "label": "EBR thérapeutique des α (MIRD 22, déterministe)"
+            },
+            {
+              "value": "~0,76 Gy/MBq",
+              "label": "Dose endoste ²²³Ra → ~899 mGy/MBq pondérée EBR=5"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — ne jamais utiliser w_R = 20 pour la dose thérapeutique",
+              "text": "Le **w_R = 20** appartient à la **radioprotection** (effets stochastiques, dose efficace en Sv) ; la **thérapie** se pondère par l'**EBR ≈ 5** (effets déterministes).[1,32] Confondre les deux surestime l'effet attendu d'un facteur ≈ 4. Énoncer toujours **quelle grandeur** est employée et **dans quel cadre** (radioprotection vs estimation d'efficacité/toxicité)."
+            },
+            {
+              "type": "info",
+              "title": "Repère normatif",
+              "text": "Trois sources, trois rôles : **CIPR 103** → w_R = 20 (radioprotection α) ; **CIPR 128** → coefficients de dose **diagnostiques** uniquement (ne s'applique pas à la TAT) ; **MIRD 22 + EANM 2025–2026** → radiobiologie et dosimétrie **thérapeutique** des émetteurs α.[1,32,34]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — vers le « Gy-équivalent EBR » personnalisé",
+              "text": "La tendance 2025–2026 est d'abandonner une EBR fixe au profit d'une **dose pondérée EBR par tissu et par radionucléide**, intégrant l'énergie des α (formule du MIRD 22) et la microdosimétrie (§B3). L'EANM 2025–2026 pousse cette personnalisation comme cadre de référence de la TAT, condition d'une optimisation dose-toxicité réelle (ex. arbitrage glandes salivaires / reins en ²²⁵Ac-PSMA).[34,35]"
+            }
+          ]
+        },
+        {
+          "title": "C1 - Interpréter l'OER quasi nul des alpha : indépendance vis-à-vis de l'oxygénation tumorale",
+          "text": "**Ce que le clinicien doit retenir.** Le rendement radiobiologique d'un rayonnement à bas transfert d'énergie linéique (**TEL** ; en anglais *LET*, énergie déposée par unité de longueur de trajectoire, en keV/μm) dépend de l'oxygène présent au moment de l'irradiation : c'est l'**OER** (*Oxygen Enhancement Ratio*), rapport entre la dose nécessaire en hypoxie et la dose nécessaire en normoxie pour un même effet. Pour les photons (X, γ), l'OER vaut **2,5 à 3,0** — il faut deux à trois fois plus de dose pour stériliser une cellule hypoxique qu'une cellule oxygénée.[1] Les particules **α** échappent largement à cette pénalité : leur OER tend vers **1**.\n\n**Le gradient OER-TEL.** L'OER décroît à mesure que le TEL augmente. Au-delà d'un seuil de **TEL > 140 keV/μm**, l'OER vaut **1,0** : l'oxygénation n'influence plus du tout l'effet biologique.[1] Les α thérapeutiques de **4 à 8 MeV** ont un TEL initial de **110 à 61 keV·μm⁻¹**, soit juste en dessous de ce seuil ; leur OER mesuré se situe entre **1,3 et 2,1**.[1] Autrement dit, même dans la fenêtre énergétique clinique, la dépendance à l'oxygène est **réduite de moitié à plus** par rapport aux X.\n\n| Rayonnement | TEL (keV/μm) | OER | Lecture clinique |\n|---|---|---|---|\n| X / γ / β⁻ (bas TEL) | ~0,2–2 [27] | **2,5–3,0** [1] | Radiorésistance hypoxique marquée |\n| α de 4–8 MeV (TAT) | **61–110** [1] | **1,3–2,1** [1] | Dépendance résiduelle faible |\n| α / ions de très haut TEL | > 140 [1] | **1,0** [1] | Oxygène biologiquement indifférent |\n\n**Le mécanisme.** À bas TEL, la létalité passe surtout par des lésions **indirectes** (radicaux libres issus de la radiolyse de l'eau) ; l'oxygène « fixe » ces lésions radicalaires de l'ADN et les rend non réparables — d'où l'amplification par l'O₂. À haut TEL, le dépôt d'énergie est si dense le long du track que les cassures double-brin (**DSB**, *Double-Strand Breaks*) et les lésions groupées (*clustered DNA damage*) sont produites **directement**, sans intermédiaire radicalaire oxygéno-dépendant.[31] La cellule hypoxique est donc tuée presque aussi efficacement que la cellule normoxique.\n\n**Conséquence stratégique.** L'hypoxie est un déterminant majeur de l'échec des radiothérapies à bas TEL et des thérapies β⁻ (¹⁷⁷Lu, ⁹⁰Y). La quasi-indépendance des α vis-à-vis de l'O₂ fonde leur place pour **vaincre la radiorésistance hypoxique** : micrométastases mal vascularisées, cœurs tumoraux nécrotiques-hypoxiques, cellules tumorales circulantes.[31,53] C'est un argument radiobiologique central pour proposer une thérapie alpha ciblée (**TAT**, *Targeted Alpha Therapy*) là où la thérapie β⁻ a échoué.",
+          "stats": [
+            {
+              "value": "1,3–2,1",
+              "label": "OER des α de 4–8 MeV (vs 2,5–3,0 pour les X)"
+            },
+            {
+              "value": "> 140 keV/μm",
+              "label": "Seuil de TEL où OER = 1 (O₂ indifférent)"
+            },
+            {
+              "value": "61–110 keV/μm",
+              "label": "TEL initial des α thérapeutiques"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le seuil OER = 1 à **TEL > 140 keV/μm** n'est pas tout à fait atteint par les α au début de leur parcours (TEL 61–110 keV/μm), mais il l'est **en fin de parcours** : le TEL culmine au **pic de Bragg** (jusqu'à 50–230 keV/μm selon le résidu d'énergie).[1] L'OER effectif intégré sur le track est donc encore plus proche de 1 que ne le suggère la seule valeur initiale."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ne pas confondre OER et EBR",
+              "text": "L'OER décrit la sensibilité à l'**oxygène** ; l'EBR (efficacité biologique relative) décrit l'efficacité par unité de **dose**. Les deux varient avec le TEL mais sont des grandeurs distinctes : un OER abaissé (α efficaces en hypoxie) et une EBR élevée (α plus toxiques à dose égale) sont deux avantages indépendants, pas une seule et même propriété."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison du dépôt d'énergie le long du trajet d'une particule alpha à haut TEL (ionisations denses, lésions directes de l'ADN) versus d'un électron/bêta à bas TEL (ionisations éparses, lésions indirectes oxygéno-dépendantes), illustrant pourquoi l'OER des alpha tend vers 1.",
+            "caption": "Fig. C1 — Densité d'ionisation alpha (haut TEL) vs bêta (bas TEL) : à haut TEL, les lésions directes de l'ADN affranchissent l'effet de la présence d'oxygène."
+          }
+        },
+        {
+          "title": "C2 - Interpréter l'EBR dans le modèle linéaire-quadratique : effet sur α/β, indépendance au débit et au cycle",
+          "text": "**Position du problème.** L'**EBR** (efficacité biologique relative ; en anglais *RBE*) est le rapport (dose d'un rayonnement de référence à bas TEL) / (dose du rayonnement étudié) produisant le **même effet biologique**.[3] Elle croît avec le TEL jusqu'à un pic vers **~100 keV/μm** — coïncidant avec une distance inter-ionisation proche du diamètre de la double hélice (~2 nm), ce qui maximise les cassures double-brin — puis décroît au-delà (effet d'« *overkill* » : énergie gaspillée au-delà du seuil létal).[2,28] Pour les α, deux EBR de référence coexistent et ne doivent pas être confondues.\n\n| Grandeur | Valeur (α) | Usage | Source |\n|---|---|---|---|\n| **w_R** (facteur de pondération radiologique, CIPR 103) | **20** | Radioprotection, effets stochastiques, calcul de dose efficace (Sv) | [1,32] |\n| **EBR thérapeutique** (MIRD 22, effets déterministes) | **5** | Conversion de la dose absorbée α en dose biologiquement pondérée | [32] |\n\n**Ne jamais utiliser w_R = 20 en dosimétrie thérapeutique** : ce facteur sert aux limites de radioprotection (effets stochastiques), pas à prédire la réponse tumorale ou la toxicité déterministe. Pour la dosimétrie clinique de la TAT, le MIRD Pamphlet No. 22 recommande **EBR = 5**, valeur utilisée comme point de départ pour le ²²⁵Ac-PSMA-617 (calibrée sur les foyers γH2AX et les DSB).[31,32]\n\n**EBR dépendante de l'énergie.** L'EBR n'est pas une constante : elle décroît quand l'énergie de la particule augmente (donc quand le TEL baisse). Le MIRD 22 propose la relation linéaire **EBR = 2,9 − 0,167 × E_i**, où E_i est l'énergie initiale de l'α en MeV (domaine 5–8,5 MeV).[32] Sur le ²¹⁰Po (5,3 MeV), l'EBR mesurée est ≈ **2,5 à forte dose** et monte à ≈ **6 à faible dose**.[31]\n\n**Effet sur le rapport α/β du modèle linéaire-quadratique.** Le modèle linéaire-quadratique décrit la survie cellulaire par S = exp(−αD − βD²) ; le rapport **α/β** (en Gy) mesure la part de létalité non réparable (composante α, linéaire) face à la part réparable, dose² (composante β). À haut TEL :\n- la composante **α (linéaire) augmente fortement** : les lésions groupées directes sont létales d'emblée ;\n- la composante **β (quadratique) s'effondre** : il n'y a quasi plus de réparation ni d'épaule de survie ;\n- le rapport **α/β tend donc vers de très grandes valeurs** et la courbe de survie devient **quasi exponentielle (droite en échelle log)**.\n\n**Trois corollaires cliniques majeurs.** Parce que la composante β (réparable) disparaît :\n1. **Indépendance au débit de dose** : l'absence de réparation pendant l'irradiation rend l'effet peu sensible au fractionnement temporel et au débit — atout pour la décroissance lente et prolongée des émetteurs α in vivo.[32]\n2. **Indépendance du cycle cellulaire** : la radiosensibilité varie peu selon la phase (G1/S/G2/M), contrairement au bas TEL où les cellules en S sont radiorésistantes.[31]\n3. **EBR croissante quand la dose diminue** : propriété typique du haut TEL (cf. ²¹⁰Po, EBR 2,5 → 6).[31] Comme les micrométastases reçoivent par construction de faibles doses absorbées, l'EBR y est maximale — ce qui renforce l'intérêt des α sur la maladie de petit volume.",
+          "stats": [
+            {
+              "value": "5",
+              "label": "EBR thérapeutique de référence (MIRD 22, effets déterministes)"
+            },
+            {
+              "value": "20",
+              "label": "w_R des α (CIPR 103, radioprotection)"
+            },
+            {
+              "value": "~100 keV/μm",
+              "label": "TEL du pic d'EBR (DSB maximales)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — w_R = 20 ≠ EBR = 5",
+              "text": "Appliquer w_R = 20 à une dose tumorale absorbée surestimerait l'effet d'un facteur 4. **w_R = 20** appartient au champ de la radioprotection (CIPR 103, effets stochastiques). **EBR = 5** (MIRD 22) est la valeur de travail pour pondérer les effets déterministes en dosimétrie thérapeutique.[1,32] Confusion classique de QCM."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Sur la courbe EBR-TEL, les α de 4–8 MeV se situent au voisinage du pic (~100 keV/μm). Au-delà (TEL très élevé, fin de parcours), l'EBR redescend par *overkill* : chaque traversée du noyau dépose alors bien plus que la dose létale, l'excédent est perdu.[2,28] D'où le constat que **1 à quelques traversées du noyau** suffisent à stériliser une cellule, contre des centaines pour le bas TEL.[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Courbe de l'efficacité biologique relative (EBR) en fonction du transfert d'énergie linéique : plateau à bas TEL, montée jusqu'à un pic vers 100 keV/μm où les cassures double-brin sont maximales, puis décroissance par effet d'overkill, avec positionnement des particules alpha thérapeutiques près du pic.",
+            "caption": "Fig. C2 — EBR en fonction du TEL : pic vers ~100 keV/μm (DSB maximales), décroissance par overkill au-delà ; les α de 4–8 MeV se situent au voisinage du pic."
+          }
+        },
+        {
+          "title": "C3 - Comparer les émetteurs : alpha vs bêta-moins vs Auger, et choisir selon la cible",
+          "text": "**Le critère de choix est géométrique avant d'être radiobiologique.** Trois familles de particules sont utilisées en thérapie par radionucléides vectorisés ; elles diffèrent par leur **parcours**, leur **TEL** et donc l'échelle de cible qu'elles « voient ». Le bon émetteur est celui dont le parcours est apparié à la taille de la cible à stériliser.\n\n| Paramètre | α (²²³Ra, ²²⁵Ac…) | β⁻ (¹⁷⁷Lu, ⁹⁰Y, ¹³¹I) | Électrons Auger (¹²⁵I, ¹¹¹In…) |\n|---|---|---|---|\n| Parcours tissulaire | **≤ 100 μm** (2–10 cellules) [31] | **0,5–12 mm** (¹⁷⁷Lu ~0,7 mm, ⁹⁰Y ~12 mm) | **nanométrique** (< 1 μm) |\n| TEL | **50–230 keV/μm** [31] | **~0,2 keV/μm** [31] | élevé mais très localisé |\n| EBR | élevée (**~5**) [32] | ~1 | conditionnel (proximité ADN) |\n| Effet *crossfire* | **marginal** (parcours court) [54] | **fort** (irradie les voisins) | nul |\n| Cible idéale | micro-amas, cellule isolée, CTC | masse macroscopique hétérogène | noyau, ADN intracellulaire |\n\n**α — la cible est la cellule.** Avec un parcours de **≤ 100 μm** (≤ 40 μm dans l'os) et une section efficace de noyau de l'ordre de **42 μm²**, l'α dépose toute son énergie dans un volume de **2 à 10 diamètres cellulaires**.[31] L'effet *crossfire* (irradiation des cellules voisines non ciblées) est **marginal** : l'irradiation est véritablement confinée à la cellule porteuse de l'antigène et à son voisinage immédiat, épargnant le tissu sain.[54] Revers : si l'expression de la cible est **hétérogène**, les cellules antigène-négatives échappent au traitement — limite majeure de la TAT sur tumeur hétérogène.\n\n**β⁻ — la cible est la masse.** Le long parcours (jusqu'à plusieurs millimètres) crée un fort *crossfire* qui « lisse » les hétérogénéités d'expression : une cellule non marquée est irradiée par ses voisines marquées.[54] C'est l'atout du β⁻ sur les **masses macroscopiques** à expression inhomogène, au prix d'une irradiation accrue du tissu sain péri-tumoral et d'une moindre efficacité sur la **micrométastase** (la cible est plus petite que le parcours : l'essentiel de l'énergie est déposé hors cible).\n\n**Auger — la cible est l'ADN.** Le parcours nanométrique impose une internalisation et une proximité **au contact de l'ADN** pour être cytotoxique ; hors du noyau, l'effet s'effondre. Niche de recherche, indication restreinte.\n\n**Effets non ciblés des α.** Outre le ciblage direct, les α produisent un **effet bystander** (RIBE) : ~**30–35 %** des cellules tuées le sont par signalisation à distance, avec des dommages ADN détectables jusqu'à **~1 mm** du site de désintégration.[31] Cet effet, médié par la membrane, élargit modestement le rayon d'action biologique au-delà du parcours physique.\n\n**Synthèse décisionnelle.**\n- **Micrométastases, maladie résiduelle minime, cellules tumorales circulantes, hypoxie/radiorésistance β** → **α** (parcours apparié à la cellule, OER ≈ 1, EBR ≈ 5).[31]\n- **Masse macroscopique volumineuse, expression antigénique hétérogène** → **β⁻** (le *crossfire* couvre les cellules négatives).[54]\n- **Approche TANDEM** (²²⁵Ac + ¹⁷⁷Lu) : combiner les deux échelles pour traiter à la fois le macro et le micro, tout en réduisant la dose α aux glandes salivaires (limitation de la xérostomie).[45]",
+          "stats": [
+            {
+              "value": "≤ 100 μm",
+              "label": "Parcours des α (vs jusqu'à ~12 mm pour le ⁹⁰Y)"
+            },
+            {
+              "value": "30–35 %",
+              "label": "Cellules tuées par effet bystander (α)"
+            },
+            {
+              "value": "~42 μm²",
+              "label": "Section efficace du noyau (cible des α)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — apparier parcours et cible",
+              "text": "Règle opérationnelle : un émetteur est efficace quand son parcours ≈ taille de la cible. Le β⁻ « gaspille » son énergie hors d'une micrométastase plus petite que son parcours ; l'α « gaspille » son potentiel de couverture sur une grosse masse hétérogène où le crossfire serait utile. Le couple théranostique idéal apparie donc l'émetteur à la **charge tumorale** du patient, pas seulement à l'antigène."
+            },
+            {
+              "type": "info",
+              "title": "Crossfire vs hétérogénéité",
+              "text": "L'absence de crossfire des α est à double tranchant : précision (épargne du sain) mais vulnérabilité à l'hétérogénéité d'expression. Sur une lésion à expression antigénique en mosaïque, un émetteur β⁻ ou une combinaison α/β⁻ peut être radiobiologiquement plus robuste qu'un α pur.[54]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Comparaison des échelles d'action : particule alpha confinée à quelques diamètres cellulaires (cible = cellule, pas de crossfire), particule bêta-moins irradiant un volume millimétrique de cellules voisines (cible = masse, fort crossfire), et électron Auger nanométrique exigeant la proximité de l'ADN.",
+            "caption": "Fig. C3 — Appariement parcours/cible : α (cellule, pas de crossfire), β⁻ (masse, fort crossfire), Auger (ADN). Le choix de l'émetteur suit la taille de la cible à stériliser."
+          }
+        },
+        {
+          "title": "C4 - Interpréter la dosimétrie clinique des alpha : devenir des descendants, recul de désintégration et hétérogénéité",
+          "text": "**Pourquoi la dosimétrie α n'est pas celle des β⁻.** Trois spécificités imposent un cadre dédié — celui du MIRD Pamphlet No. 22 et des recommandations EANM 2026 — et **non** la CIPR 128 (qui ne couvre que les radiopharmaceutiques **diagnostiques**, en mSv/MBq).[34] La dosimétrie α se fonde sur les **fractions absorbées** (et non sur les S-values classiques), pour séparer la dose α de la dose électrons/photons.[32]\n\n**1. Recul de désintégration et redistribution des descendants.** À chaque émission α, le noyau fils encaisse une énergie de **recul de ~100 keV** — largement supérieure à toute liaison chimique. La fille se **détache du chélate (DOTA, TCMC)** et est libérée *in vivo*, libre de migrer selon sa propre pharmacocinétique.[34] Pour une chaîne longue comme celle du **²²⁵Ac** (4 α nets, énergie totale ≈ 27 MeV/désintégration, descendants ²²¹Fr → ²¹⁷At → ²¹³Bi → ²¹³Po), cela signifie que **la dose n'est pas déposée là où le vecteur s'est fixé**.[33,50] La redistribution des fils explique la néphrotoxicité (concentration rénale du ²¹³Bi) et complique radicalement la prévision de dose.\n\n| Radionucléide | Période | α nets | Enjeu dosimétrique des descendants |\n|---|---|---|---|\n| **²²³Ra** | **11,4 j** [5] | 4 (chaîne) | Recul partiellement contenu dans l'os minéralisé (fixation osseuse) |\n| **²²⁵Ac** | **9,9 j** [33] | 4 | Redistribution des fils libres (²¹³Bi rénal) → toxicité hors-cible |\n| **²¹²Pb** | **10,6 h** [21] | 1 (via ²¹²Bi, T½ ~1 h) | Générateur in vivo ; le ²¹²Bi α suit le ²¹²Pb |\n| **²²⁷Th** | **18,7 j** [48] | 5 α + 2 β | Décroît d'abord en ²²³Ra (T½ ~10 j) → 2 cascades successives |\n\n**2. Hétérogénéité micrométrique et microdosimétrie.** Le parcours ≤ 100 μm rend la **dose moyenne à l'organe trompeuse** : à l'échelle de l'organe, la dose paraît homogène, mais à l'échelle cellulaire, une cellule traversée par un α reçoit une dose létale, sa voisine immédiate **zéro**. La survie dépend du **nombre de traversées du noyau** (statistique de Poisson), pas de la dose moyenne. La microdosimétrie et la dosimétrie à petite échelle sont donc indispensables, ainsi que la quantification d'activité aux **faibles taux de comptage** (faible émission γ imageable).[34]\n\n**3. Valeurs dosimétriques cliniques de référence.**\n\n**²²³Ra-dichlorure** — organe critique = cellules ostéogéniques (endoste) + moelle rouge (toxicité limitante hématologique) :\n- Endoste / cellules ostéogéniques : **0,76 Gy/MBq**.[40]\n- Moelle rouge : **0,09 Gy/MBq** (étude japonaise) à **0,37 Gy/MBq** selon le modèle (Lassmann & Nosske, CIPR 67/OLINDA).[9,41]\n- Avec **EBR = 5**, dose pondérée à l'endoste ≈ **899 mGy/MBq** (gamme 340–2 450 mGy/MBq).[40]\n- Schéma complet (6 × 55 kBq/kg, ~21 MBq pour 70 kg) : dose α à l'endoste osseux ≈ **16 Gy**, moelle rouge ≈ **1,5 Gy**.[39]\n- Doses faibles aux organes excréteurs (élimination fécale prédominante) : côlon bas **0,170 Gy**, foie ~**0,011 Gy/MBq**, reins ~**0,012 Gy/MBq**.[39]\n\n**²²⁵Ac-PSMA-617** (dosimétrie pour 1 MBq, EBR = 5) — organes critiques = glandes salivaires et reins :\n- Glandes salivaires **2,3 Sv**, reins **0,7 Sv**, moelle rouge **0,05 Sv** ; composition 99,4 % α / 0,5 % β / 0,1 % photons.[4]\n- La **xérostomie** est la toxicité dose-limitante (captation salivaire des α), motif principal d'arrêt.[16,44]\n\n**4. Imagerie post-thérapeutique pour la dosimétrie.** La faible émission γ de chaque émetteur ouvre une fenêtre quantitative : ²²³Ra sur **82/154/270 keV** (comptage corps entier jusqu'à 24 j) ; ²²⁵Ac en SPECT sur **218 keV (²²¹Fr)** et **440 keV (²¹³Bi)** en double fenêtre ; ²¹¹At sur **79 keV ± 20 %** (X du ²¹¹Po) en SPECT/CT CZT.[9,33,55] Ces acquisitions, malgré de faibles rendements, permettent une dosimétrie patient-spécifique recommandée par l'EANM 2026 pour personnaliser la TAT.[34]",
+          "stats": [
+            {
+              "value": "0,76 Gy/MBq",
+              "label": "Dose à l'endoste osseux (²²³Ra, organe critique)"
+            },
+            {
+              "value": "~100 keV",
+              "label": "Énergie de recul libérant la fille du chélate"
+            },
+            {
+              "value": "2,3 Sv",
+              "label": "Dose aux glandes salivaires (²²⁵Ac-PSMA, 1 MBq, EBR=5)"
+            },
+            {
+              "value": "~16 Gy",
+              "label": "Dose α à l'endoste (schéma complet ²²³Ra 6×55 kBq/kg)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège normatif — CIPR 128 ne s'applique pas",
+              "text": "La **CIPR 128** (2015) ne couvre que les radiopharmaceutiques **diagnostiques** (coefficients mSv/MBq). Pour la TAT, les références sont le **MIRD Pamphlet 22** (radiobiologie/dosimétrie α) et les **recommandations EANM 2026** ; le facteur w_R = 20 vient de la **CIPR 103**. Citer la CIPR 128 pour une dose thérapeutique α est un contresens normatif fréquent.[34]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la dose moyenne à l'organe est trompeuse",
+              "text": "Du fait du parcours ≤ 100 μm, une dose moyenne « rassurante » à l'échelle de l'organe peut masquer des points chauds cellulaires létaux et des zones non irradiées. La survie cellulaire dépend du nombre de **traversées du noyau** (statistique de Poisson), non de la dose moyenne — d'où l'obligation de microdosimétrie en TAT.[34]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le recul, talon d'Achille des chaînes longues",
+              "text": "L'énergie de recul (~100 keV) dépasse toute liaison chimique : aucun chélate ne retient les descendants après la 1re émission α. Pour le ²²⁵Ac, c'est la cause physique de la redistribution des fils (²¹³Bi rénal) et de la toxicité hors-cible. Le ²¹²Pb (chaîne courte, 1 α net via ²¹²Bi) et le ²²³Ra (recul partiellement contenu dans la matrice osseuse) sont, de ce point de vue, plus « propres ».[21,34]"
+            }
+          ],
+          "figure": {
+            "figureRef": "SIRT_LIVER",
+            "alt": "Schéma de la dosimétrie alpha à petite échelle : dépôt d'énergie confiné à quelques cellules autour de chaque désintégration, recul nucléaire détachant le descendant radioactif du chélate vecteur, et redistribution des filles selon leur propre pharmacocinétique vers les organes hors-cible (reins, glandes salivaires).",
+            "caption": "Fig. C4 — Dosimétrie α : dépôt micrométrique hétérogène, recul de désintégration détachant les descendants du chélate, puis redistribution hors-cible — pourquoi la dose moyenne à l'organe ne suffit pas."
+          }
+        },
+        {
+          "title": "D1 - Maîtriser la thérapie alpha ciblée (TAT) : exploiter le fort TEL en clinique",
+          "text": "**De la physique au lit du patient.** Tout l'intérêt thérapeutique des émetteurs alpha découle directement du couple **TEL élevé / parcours ultra-court** établi dans les mouvements précédents : un dépôt d'énergie **densément ionisant (≈ 50–230 keV/μm**, contre ≈ **0,2 keV/μm** pour un β⁻ de référence) confiné à **≤ 100 μm** dans les tissus mous (≈ 2–10 diamètres cellulaires, **≤ 40 μm dans l'os**).[31,32] Maîtriser la TAT (*Targeted Alpha Therapy*, thérapie alpha ciblée), c'est exploiter cette balistique pour stériliser une cible micrométrique tout en épargnant le tissu sain immédiatement voisin — là où une thérapie β (¹⁷⁷Lu) irradie sur plusieurs millimètres par effet *crossfire*.\n\n**Le levier radiobiologique : EBR et indépendance vis-à-vis du microenvironnement.** En pratique clinique, on convertit la dose absorbée alpha (Gy) en dose biologiquement équivalente par une **efficacité biologique relative (EBR) recommandée = 5** pour les effets déterministes (MIRD Pamphlet 22) — à ne pas confondre avec le **facteur de pondération radiologique w_R = 20** de la CIPR 103, réservé au calcul de dose efficace en radioprotection.[32] Le MIRD 22 propose même une relation **EBR = 2,9 − 0,167 × Eᵢ** (Eᵢ = énergie initiale de l'alpha en MeV, gamme 5–8,5 MeV).[32] Trois propriétés du haut-TEL fondent l'efficacité : **cassures double-brin complexes et groupées (clustered DNA damage)** mal réparées ;[31] **indépendance vis-à-vis de l'oxygène** — OER (*Oxygen Enhancement Ratio*) ≈ **1,3–2,1** pour les alpha de 4–8 MeV, et **= 1 dès que le TEL dépasse 140 keV/μm**, soit une efficacité conservée en zone **hypoxique** ;[32,26] et **faible dépendance au cycle cellulaire et au débit de dose**.[1] Conséquence stratégique : les alpha sont privilégiés pour les **micrométastases, tumeurs de petit volume, cellules tumorales circulantes** et pour vaincre la **radiorésistance** (hypoxie, échappement au β⁻).[31]\n\n**Les trois familles cliniques et leurs schémas.**\n\n| Radiopharmaceutique | Cible | Posologie | Statut |\n|---|---|---|---|\n| **²²³Ra-dichlorure** (Xofigo®) | hydroxyapatite (Ra²⁺ mime Ca²⁺) | **55 kBq/kg IV, q4 sem × 6** [5,6] | **AMM (2013)**, mCRPC os symptomatique sans viscéral |\n| **²²⁵Ac-PSMA-617** | PSMA membranaire | **100 kBq/kg × 3 cycles** à 2 mois ; ou 8 MBq puis désescalade [4,42] | Essais (post-¹⁷⁷Lu) |\n| **²¹²Pb-DOTAMTATE / VMT-α-NET** | SSTR2 | **~2,5 MBq/kg (67,6 μCi/kg) q8 sem × 4** [19] | Essais (GEP-NET) |\n\n**Le seul alpha homologué — ²²³Ra.** L'ion **Ra²⁺ mime le Ca²⁺** et se fixe sur l'**hydroxyapatite** des foyers d'ostéogenèse réactionnelle (métastases ostéoblastiques).[10] Le rationale dosimétrique est éloquent : l'organe cible, les **cellules ostéogéniques de l'endoste**, reçoit **0,76 Gy/MBq** (dose absorbée), soit ≈ **16 Gy à l'endoste** sur un schéma complet 6 × 55 kBq/kg (≈ 21 MBq pour 70 kg), pour ≈ **1,5 Gy à la moelle rouge**.[39,40] L'essai pivot **ALSYMPCA** (NEJM 2013, 921 patients) a démontré un gain de survie globale : **médiane 14,9 vs 11,3 mois (HR = 0,70**, p < 0,001) et un **délai au premier événement squelettique symptomatique de 13,6 vs 8,4 mois**.[36,8] Plus récemment, **PEACE-3** (446 patients) montre que ²²³Ra + **enzalutamide** porte la médiane de survie à **42,3 vs 35,0 mois** (réduction du risque de décès ≈ **31 %**, HR ≈ 0,69).[7]\n\n**Les alpha investigationnels — efficacité prometteuse.** Le **²²⁵Ac-PSMA-617** (T½ 9,9 j, **4 alpha** dans sa chaîne, ≈ **27 MeV** déposés par désintégration)[33] a montré, dans la série swimmer-plot de Kratochwil (40 patients mCRPC, 3 × 100 kBq/kg), une **baisse de PSA > 50 % chez 63 %** des patients et **toute réponse PSA chez 87 %**, avec un **contrôle tumoral médian ≈ 9 mois** — chez des patients souvent réfractaires au ¹⁷⁷Lu-PSMA.[42] L'étude rétrospective multicentrique **WARMTH-Act** a confirmé cette activité en mCRPC.[17] Côté tumeurs neuroendocrines, **ALPHAMEDIX-02** (²¹²Pb-DOTAMTATE, phase 2) a atteint **tous ses critères d'efficacité primaires** chez des patients PRRT-naïfs comme pré-traités.[20]",
+          "steps": [
+            {
+              "title": "1 · Confirmer la cible et l'avidité",
+              "text": "Imagerie pré-thérapeutique (²²³Ra : scintigraphie osseuse pour le profil ostéoblastique ; ²²⁵Ac-PSMA : TEP-PSMA ; ²¹²Pb : TEP au ⁶⁸Ga-DOTATATE). Logique théranostique : la paire ²⁰³Pb (SPECT) / ²¹²Pb (thérapie) permet une sélection imagée.[23]"
+            },
+            {
+              "title": "2 · Vérifier les seuils hématologiques",
+              "text": "Avant la 1re cure de ²²³Ra : **PNN ≥ 1,5 × 10⁹/L, plaquettes ≥ 100 × 10⁹/L, Hb ≥ 10 g/dL** ; avant cures suivantes : PNN ≥ 1 × 10⁹/L, plaquettes ≥ 50 × 10⁹/L.[5]"
+            },
+            {
+              "title": "3 · Administrer selon le schéma validé",
+              "text": "²²³Ra : **55 kBq/kg IV lente (~1 min), q4 sem × 6 cycles**.[5] ²²⁵Ac-PSMA : ~100 kBq/kg × 3, q2 mois.[42] ²¹²Pb-DOTAMTATE : ~2,5 MBq/kg q8 sem × 4.[19]"
+            },
+            {
+              "title": "4 · Surveiller et réévaluer",
+              "text": "NFS avant chaque cure (myélosuppression), réponse clinique/biologique (PSA, douleur, événements squelettiques), tolérance des organes à risque (salivaire pour le PSMA)."
+            }
+          ],
+          "stats": [
+            {
+              "value": "≈ 50–230 keV/μm",
+              "label": "TEL des alpha (vs ≈ 0,2 keV/μm pour β⁻) [31,32]"
+            },
+            {
+              "value": "EBR = 5",
+              "label": "Efficacité biologique relative thérapeutique (MIRD 22) [32]"
+            },
+            {
+              "value": "≤ 100 μm",
+              "label": "Parcours alpha dans les tissus mous (≤ 40 μm os) [31]"
+            },
+            {
+              "value": "14,9 vs 11,3 mois",
+              "label": "Survie globale ²²³Ra vs placebo, ALSYMPCA [36]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — EBR thérapeutique (5) ≠ w_R (20)",
+              "text": "Deux nombres cohabitent et leur confusion fausse toute dosimétrie. L'**EBR = 5** (MIRD 22) convertit la dose absorbée alpha (Gy) en dose biologiquement équivalente pour projeter les **effets déterministes** d'un traitement.[32] Le **w_R = 20** (CIPR 103) est un facteur de **radioprotection** qui pondère la dose efficace (mSv) pour estimer les **effets stochastiques** (cancers radio-induits) dans la population.[32] Sur la dosimétrie de la maladie osseuse au ²²³Ra, l'application de l'EBR = 5 porte la dose endostéale pondérée à ≈ **899 mGy/MBq** (gamme 340–2 450).[40] Ne jamais reporter w_R = 20 dans un calcul d'efficacité tumorale."
+            },
+            {
+              "type": "info",
+              "title": "Pourquoi le pic de Bragg compte",
+              "text": "Le TEL de l'alpha n'est pas constant : il **croît le long du parcours** et culmine au **pic de Bragg** (fin de course), là où la particule ralentit et ionise le plus densément.[31] L'EBR culmine elle aussi vers **~100–200 keV/μm** puis décroît (effet *overkill* : énergie gaspillée au-delà du seuil létal). Le pic d'EBR à ~100 keV/μm coïncide avec une distance inter-ionisation proche du diamètre de la double hélice d'ADN, maximisant les cassures double-brin — base moléculaire de la létalité par traversée."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique de la thérapie alpha ciblée : imagerie de sélection (TEP/SPECT) identifiant l'avidité de la cible, puis administration de l'émetteur alpha qui dépose un fort TEL sur un parcours micrométrique, et suivi de la réponse.",
+            "caption": "Fig. D1 — Boucle théranostique de la TAT : on visualise la cible (PSMA, SSTR2, profil ostéoblastique), on traite avec l'émetteur alpha, on évalue la réponse."
+          }
+        },
+        {
+          "title": "D2 - Maîtriser la toxicité et les organes à risque spécifiques des alpha",
+          "text": "**Le corollaire du fort TEL : une fenêtre thérapeutique étroite.** La densité d'ionisation qui fait l'efficacité des alpha rend aussi tout dépôt hors-cible potentiellement délétère. Maîtriser la TAT, c'est connaître l'**organe à risque (OAR) propre à chaque vecteur** et les deux mécanismes physiques de toxicité spécifiques des chaînes alpha : le **recul nucléaire des filles** et la **myélosuppression** liée au tropisme osseux ou médullaire.\n\n**²²³Ra — toxicité hématologique limitante.** L'organe critique est le couple **os (cellules ostéogéniques) + moelle rouge**, siège de la radiotoxicité dose-limitante.[39] La dose absorbée à la **moelle rouge** est estimée entre **0,09 Gy/MBq** (modèle japonais) et **0,37 Gy/MBq** (Lassmann & Nosske, modèle CIPR 67/OLINDA).[9,41] Le profil de myélosuppression d'ALSYMPCA reste **favorable** : toxicité grade 3/4 ²²³Ra vs placebo — **anémie 13 % vs 13 %, neutropénie 2 % vs 1 %, thrombopénie 6–7 % vs 2–3 %**, neutropénie fébrile < 1 %.[46] Sous AMM, on retient néanmoins **~2 %** d'insuffisance médullaire/pancytopénie persistante.[5]\n\n**²²⁵Ac-PSMA-617 — la xérostomie, talon d'Achille.** Les OAR sont les **glandes salivaires** (toxicité dose-limitante) et les **reins** (dose cumulée).[44] La dosimétrie de Kratochwil (1 MBq, EBR = 5) chiffre **2,3 Sv aux glandes salivaires, 0,7 Sv aux reins et 0,05 Sv à la moelle rouge**.[4] La **xérostomie** (bouche sèche sévère) survient chez **45–87 %** des patients selon les cohortes — contre seulement **~3 %** sous ¹⁷⁷Lu-PSMA — et provoque l'arrêt du traitement chez **10 % (4/40)** à **23 % (6/26)** des patients.[44,45] C'est la principale cause d'abandon et le verrou clinique du ²²⁵Ac-PSMA.\n\n| Vecteur | OAR principal | Toxicité dose-limitante | Repère dosimétrique |\n|---|---|---|---|\n| **²²³Ra** | os / moelle rouge | hématologique | moelle 0,09–0,37 Gy/MBq [9,41] |\n| **²²⁵Ac-PSMA** | glandes salivaires, reins | xérostomie (45–87 %) [44] | salivaires 2,3 Sv/MBq [4] |\n| **²¹²Pb-DOTATATE** | reins | rénale (en évaluation) | — |\n\n**Stratégies d'atténuation de la xérostomie.** Plusieurs approches sont à l'essai : **désescalade de dose**, **fractionnement**, **pré-blocage salivaire du PSMA**, **cryothérapie/refroidissement** des glandes, injection de **toxine botulique**, et schéma **TANDEM** (²²⁵Ac + ¹⁷⁷Lu) visant à réduire la composante alpha salivaire.[16,45]\n\n**Le défi physique propre aux chaînes : le recul nucléaire des filles.** À chaque émission alpha, le noyau fils subit un **recul d'énergie ~100 keV**, largement suffisant pour **rompre la liaison chimique** au chélateur (DOTA, TCMC) : la fille radioactive se détache et **redistribue** dans l'organisme, déposant sa propre dose alpha hors-cible.[34,32] Ce phénomène est majeur pour le **²²⁵Ac** (4 alpha successifs, chaîne ²²¹Fr → ²¹⁷At → ²¹³Bi → ²¹³Po) et explique une part de la **néphrotoxicité** observée. Le contrôle qualité doit aussi traquer la **contamination par ²²⁶Ac/²²⁷Ac**, qui suivent la chimie de l'actinium et sont inséparables, dégradant la pureté radionucléidique.[25]\n\n**Contre-indications et précautions transversales.** La seule contre-indication absolue listée pour le ²²³Ra est la **grossesse/femme en âge de procréer** (toxicité fœtale).[6] L'association **²²³Ra + abiratérone + prednisone** est **proscrite** : l'essai **ERA-223** a montré un excès de **fractures et de mortalité**.[5] Une contraception masculine est recommandée ; il n'existe pas d'indication pédiatrique (le mCRPC est une pathologie de l'adulte âgé).[6]",
+          "stats": [
+            {
+              "value": "45–87 %",
+              "label": "Xérostomie sous ²²⁵Ac-PSMA (vs ~3 % sous ¹⁷⁷Lu) [44]"
+            },
+            {
+              "value": "2,3 Sv/MBq",
+              "label": "Dose aux glandes salivaires, ²²⁵Ac-PSMA (EBR 5) [4]"
+            },
+            {
+              "value": "~100 keV",
+              "label": "Énergie de recul de la fille après émission alpha [34]"
+            },
+            {
+              "value": "~2 %",
+              "label": "Insuffisance médullaire persistante sous ²²³Ra [5]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'association ²²³Ra + abiratérone est contre-indiquée",
+              "text": "L'essai **ERA-223** a révélé un **excès de fractures et de décès** lorsque le ²²³Ra était combiné à l'**abiratérone + prednisone/prednisolone**.[5] Ne jamais prescrire cette association ; la combinaison validée bénéfique est ²²³Ra + **enzalutamide** (PEACE-3).[7] Vérifier systématiquement le traitement antiandrogénique concomitant avant d'engager une cure de ²²³Ra."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — recul nucléaire et redistribution des filles",
+              "text": "Le **recul de ~100 keV** subi par chaque noyau fils suffit à le libérer de son chélateur ; pour le **²²⁵Ac**, les filles (²²¹Fr, ²¹³Bi, ²¹³Po) migrent et déposent leur dose alpha hors-cible — source de **néphrotoxicité** et de toxicité salivaire imprévisible.[32,34] Ce phénomène n'a **aucun équivalent** dans les thérapies β (¹⁷⁷Lu) et impose une surveillance rénale rapprochée et une réflexion sur les chélateurs/vecteurs à rétention rapide des filles."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la xérostomie est le verrou du ²²⁵Ac-PSMA",
+              "text": "Avec une dose salivaire de **2,3 Sv/MBq** et une incidence de xérostomie de **45–87 %**, contre ~3 % en β,[4,44] la toxicité salivaire — et non la moelle — limite le ²²⁵Ac-PSMA. C'est l'inverse du ²²³Ra (limite hématologique). Toute personnalisation doit donc cibler en priorité la **protection salivaire** (désescalade, refroidissement, schéma TANDEM ²²⁵Ac/¹⁷⁷Lu).[45]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Liaison du vecteur PSMA-617 marqué à l'actinium-225 sur l'antigène membranaire spécifique de prostate, avec représentation du dépôt d'énergie alpha sur la cellule tumorale et de la captation hors-cible par les glandes salivaires (organe à risque).",
+            "caption": "Fig. D2 — Le vecteur PSMA-617 cible la cellule tumorale, mais la captation salivaire physiologique du PSMA fait des glandes salivaires l'organe à risque dose-limitant de la TAT à l'actinium."
+          }
+        },
+        {
+          "title": "D3 - Pièges, controverses et idées reçues sur le TEL et l'EBR des alpha",
+          "text": "**Maîtriser un domaine, c'est aussi en connaître les écueils conceptuels.** Le TEL et l'EBR sont des notions denses où s'accumulent les contresens — y compris dans la littérature. Voici les pièges récurrents, à désamorcer pour ne pas fausser une dosimétrie ou une lecture d'essai.\n\n**Piège n°1 — confondre EBR thérapeutique (5) et w_R (20).** Détaillé au §D2, c'est l'erreur normative la plus fréquente : l'EBR = 5 sert à projeter les effets **déterministes** d'un traitement (dose biologiquement équivalente, Gy), le w_R = 20 à estimer les effets **stochastiques** en radioprotection (dose efficace, mSv).[32] Reporter l'un pour l'autre fausse d'un facteur 4 toute estimation.\n\n**Piège n°2 — croire l'EBR constante.** L'EBR n'est ni un nombre fixe ni une fonction monotone du TEL. Elle est **indépendante du TEL en dessous de ~10 keV/μm**, **croît jusqu'à un pic vers ~100–200 keV/μm**, puis **décroît** (*overkill*).[2,3] Elle **augmente aussi quand la dose diminue** : pour le ²¹⁰Po (5,3 MeV), l'EBR mesurée passe de ≈ **2,5 à forte dose** à ≈ **6 à faible dose**.[31] Citer « EBR = 5 » sans préciser le niveau de dose et le critère biologique est donc une approximation, pas une vérité absolue.\n\n**Piège n°3 — la mauvaise norme dosimétrique.** La **CIPR 128** est régulièrement invoquée à tort pour la TAT : elle porte sur les **coefficients de dose des radiopharmaceutiques DIAGNOSTIQUES** (mSv/MBq en médecine nucléaire conventionnelle) et **ne couvre pas** les émetteurs alpha thérapeutiques. Les références correctes sont **MIRD Pamphlet 22** (radiobiologie/dosimétrie alpha) et les **recommandations EANM 2025/2026** sur la dosimétrie en TAT ; le w_R = 20 vient de la **CIPR 103**.[32,34]\n\n**Piège n°4 — assimiler crossfire et bystander.** Deux effets distincts, souvent mélangés. Le **crossfire** (irradiation des cellules voisines par des particules dont le parcours dépasse la cellule cible) est **marginal pour les alpha** (parcours court) — d'où une irradiation très ciblée — mais marqué pour les β⁻.[32,54] L'**effet bystander (RIBE**, *Radiation-Induced Bystander Effect*), lui, est un signal cellulaire non lié au parcours : ~**30–35 %** des cellules tuées le sont par effet bystander, avec des dommages ADN détectables jusqu'à **1 mm** du site de désintégration.[31] La cytotoxicité alpha n'est donc pas purement « balistique ».\n\n**Piège n°5 — surestimer la quantification d'activité.** L'imagerie post-thérapeutique alpha est intrinsèquement difficile : très **faibles taux de comptage** (le ²²³Ra n'émet que **1,1 % de son énergie en γ**, pics exploitables à 82/154/270 keV), **redistribution des filles**, et nécessité d'une **microdosimétrie** plutôt que des S-values classiques.[9,34] Le ²²⁵Ac s'image via ses filles (**218 keV du ²²¹Fr, 440 keV du ²¹³Bi**), le ²¹¹At sur la **fenêtre 79 keV ± 20 %** (X du ²¹¹Po).[33,55] Toute valeur dosimétrique alpha porte une incertitude bien supérieure à celle du ¹⁷⁷Lu.\n\n**Controverse n°1 — les alpha vont-ils remplacer le ¹⁷⁷Lu ?** Idée reçue : « plus c'est ionisant, mieux c'est ». La réalité est une **complémentarité**. Les alpha excellent sur les **micrométastases, petits volumes et cellules circulantes** et contre la radiorésistance/hypoxie, mais leur parcours ultra-court les pénalise sur les **grosses masses hétérogènes** (toute cellule non atteinte par une traversée survit), là où le crossfire du β⁻ devient un atout.[31] D'où l'intérêt des approches **TANDEM** (²²⁵Ac + ¹⁷⁷Lu).[45]\n\n**Controverse n°2 — la pénurie d'approvisionnement.** Souvent passée sous silence, c'est un facteur limitant majeur : l'offre mondiale de **²²⁵Ac** par la voie historique du générateur **²²⁹Th** n'est que de **~1,7 Ci/an**. Les voies alternatives (cyclotron : ²²⁶Ra(p,2n) ; ²³²Th par spallation) génèrent des **impuretés ²²⁶Ac/²²⁷Ac** difficiles à séparer, posant un problème de pureté radionucléidique et de dosimétrie.[24,25] L'efficacité clinique d'un alpha ne suffit pas s'il n'est pas produit en quantité et en pureté suffisantes.\n\n**Controverse n°3 — un seul alpha homologué.** Idée reçue à corriger en consultation : hormis le **²²³Ra** (AMM 2013), **tous** les radiopharmaceutiques alpha (²²⁵Ac-PSMA, ²¹²Pb-DOTAMTATE/VMT-α-NET, ²²⁷Th-TTC) restent **investigationnels** à la date de rédaction (2026) ; leurs posologies sont issues d'essais, non d'AMM établies. Ne jamais les présenter comme des standards validés.",
+          "stats": [
+            {
+              "value": "~100 keV/μm",
+              "label": "TEL du pic d'EBR (au-delà : effet overkill) [2,3]"
+            },
+            {
+              "value": "2,5 → 6",
+              "label": "EBR du ²¹⁰Po de forte à faible dose [31]"
+            },
+            {
+              "value": "~30–35 %",
+              "label": "Part des cellules tuées par effet bystander [31]"
+            },
+            {
+              "value": "~1,7 Ci/an",
+              "label": "Offre mondiale de ²²⁵Ac (générateur ²²⁹Th) [24]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la CIPR 128 ne s'applique PAS à la TAT",
+              "text": "La **CIPR 128** fournit les coefficients de dose des produits radiopharmaceutiques **diagnostiques** (mSv/MBq) et **ne couvre pas** les émetteurs alpha thérapeutiques.[32] Pour la dosimétrie alpha, s'appuyer sur **MIRD Pamphlet 22** et les **recommandations EANM 2025/2026** ; le facteur w_R = 20 relève de la **CIPR 103**, et l'EBR thérapeutique = 5 du MIRD 22. Un article ou un protocole qui cite la CIPR 128 pour justifier une dose alpha commet un contresens normatif."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — l'EBR alpha est une plage, pas une constante",
+              "text": "Retenir « EBR = 5 » comme valeur opérationnelle (MIRD 22) est utile, mais l'EBR réelle **dépend de l'énergie** (EBR = 2,9 − 0,167 × Eᵢ), du **niveau de dose** (plus élevée à faible dose : 2,5 → 6 pour le ²¹⁰Po) et du **critère biologique** mesuré (survie, γH2AX-foci, mutations).[31,32] Toujours préciser le contexte quand on annonce une EBR, surtout en réunion de concertation ou dans un protocole de recherche."
+            },
+            {
+              "type": "info",
+              "title": "Crossfire vs bystander — ne pas confondre",
+              "text": "**Crossfire** = effet géométrique lié au parcours de la particule (marginal pour les alpha, marqué pour le β⁻). **Bystander (RIBE)** = effet de signalisation cellule-à-cellule, indépendant du parcours, responsable de ~30–35 % de la létalité alpha et détectable jusqu'à 1 mm.[31,54] Le premier explique l'épargne du tissu sain par les alpha ; le second explique pourquoi leur cytotoxicité dépasse la stricte balistique des traversées."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des types de désintégration et de leur parcours : la particule alpha, densément ionisante, dépose son énergie sur quelques diamètres cellulaires (crossfire marginal), tandis que la particule bêta, faiblement ionisante, irradie sur plusieurs millimètres (crossfire marqué).",
+            "caption": "Fig. D3 — Alpha vs bêta : le parcours ultra-court et le fort TEL de l'alpha expliquent l'épargne du tissu sain (crossfire marginal), mais aussi sa moindre efficacité sur les grosses masses hétérogènes."
+          }
+        },
+        {
+          "title": "E1 - E1 - Synthèse opérationnelle : carte mentale TEL → EBR → choix de l'émetteur, fiches-réflexes et FAQ par profil",
+          "text": "Cette section condense l'article en une **chaîne de raisonnement unique** que tout praticien doit pouvoir dérouler de mémoire : un radionucléide α dépose son énergie sur un parcours **≤ 100 μm** (≤ 40 μm dans l'os) avec un **transfert d'énergie linéique (TEL, énergie déposée par unité de longueur)** de **110 à 61 keV/μm** pour les particules de 4 à 8 MeV — soit 2 à 3 ordres de grandeur au-dessus des β⁻ de référence (≈ 0,2 keV/μm).[1,31] Ce TEL élevé sature la cible : l'**efficacité biologique relative (EBR, dose de référence X/γ rapportée à la dose α produisant le même effet)** culmine vers ~100 keV/μm puis décroît (« overkill »).[2,3] En pratique thérapeutique, on retient une **EBR = 5** pour projeter les effets déterministes, distincte du facteur de pondération radiologique **wR = 20** propre à la radioprotection.[32]\n\n**▸ Carte mentale — du physique au clinique (à dérouler dans cet ordre)**\n\n1. **Physique** : α de 4–10 MeV → TEL 110→61 keV/μm → parcours ≤ 100 μm (2–10 diamètres cellulaires).[31]\n2. **Radiobiologie** : ionisations denses → **cassures double-brin (DSB) complexes et groupées** non réparables ; **OER** (rapport d'amélioration par l'oxygène) = 1,3–2,1 (et = 1 si TEL > 140 keV/μm) → efficacité en hypoxie ; indépendance du cycle cellulaire.[32,26] **1 à 4 traversées** du noyau suffisent à stériliser une cellule.[1]\n3. **Conséquence dosimétrique** : crossfire marginal (parcours court) → ciblage à l'échelle cellulaire, mais **microdosimétrie** obligatoire et gestion du **recul nucléaire** des filles (énergie de recul ~100 keV rompant la liaison au chélate).[34,32]\n4. **Choix de l'émetteur** : selon période, nombre d'α dans la chaîne, émission imageable et disponibilité (tableau ci-dessous).\n5. **Clinique** : ²²³Ra (seul avec AMM) vs émetteurs investigationnels (²²⁵Ac, ²¹²Pb, ²²⁷Th, ²¹¹At, ²¹³Bi).[5,15,19]\n\n**▸ Fiche-réflexe — choix de l'émetteur α**\n\n| Radionucléide | T½ | α/chaîne | Énergie α | Émission imageable | Statut & usage |\n|---|---|---|---|---|---|\n| **²²³Ra** (RaCl₂) | **11,4 j** | 4 | 5–7,5 MeV (95,3 % de l'énergie en α) | γ 82/154/270 keV (1,1 %) | **AMM 2013** — mCRPC os symptomatique[5,6] |\n| **²²⁵Ac** | **9,9 j** | 4 | 5,8–8,4 MeV (~27 MeV nets/désint.) | γ 218 keV (²²¹Fr), 440 keV (²¹³Bi) | Essais — PSMA-617, DOTATATE[33,42] |\n| **²¹²Pb** (→²¹²Bi) | **10,64 h** | 1 (via ²¹²Bi, T½ ~1 h) | ²¹²Bi/²¹²Po | γ 239 keV ; couple ²⁰³Pb/²¹²Pb | Essais — DOTAMTATE, VMT-α-NET (TNE)[21,22] |\n| **²²⁷Th** (TTC) | **18,7 j** | 5 α + 2 β | décroît d'abord en ²²³Ra | — | Essais — PSMA/MSLN/CD22-TTC[48] |\n| **²¹¹At** | **7,2 h** | 1 (~100 % α) | 5,87 / 7,45 MeV | X 79 keV (²¹¹Po) | Essais — gliome, leucémie[47] |\n| **²¹³Bi** | **45,6 min** | 1 (via ²¹³Po) | 8,375 MeV | γ 440 keV (26,1 %) | Essais (générateur ²²⁵Ac/²¹³Bi)[33,50] |\n\n**▸ Fiche-réflexe — ²²³Ra (le seul à maîtriser en routine)**\n\nPosologie **55 kBq/kg IV** (injection lente ~1 min) toutes les **4 semaines × 6 cycles**.[5,8] Mécanisme : l'ion **Ra²⁺ mime le Ca²⁺** et se fixe sur l'**hydroxyapatite** des métastases ostéoblastiques.[10] Organe critique = **cellules ostéogéniques (endoste)** : **0,76 Gy/MBq**, et moelle rouge **0,09 Gy/MBq** (radiotoxicité limitante hématologique).[9,40] Seuils hématologiques avant 1ʳᵉ cure : **PNN ≥ 1,5 × 10⁹/L, plaquettes ≥ 100 × 10⁹/L, Hb ≥ 10 g/dL** ; avant cures suivantes : **PNN ≥ 1 × 10⁹/L, plaquettes ≥ 50 × 10⁹/L**.[5] Élimination **fécale prédominante** → précautions excreta ≥ 1 semaine après la dernière injection.[51,52]\n\n**▸ FAQ par profil**\n\n*Pour le clinicien adresseur (urologue, oncologue, endocrinologue).* **Quand penser à un α ?** mCRPC avec **métastases osseuses symptomatiques sans atteinte viscérale** → ²²³Ra (gain de survie : médiane OS **14,9 vs 11,3 mois**, HR 0,70 dans ALSYMPCA ; **42,3 vs 35,0 mois**, −31 % de risque de décès en association à l'enzalutamide, PEACE-3).[36,7] **Piège majeur** : ne jamais associer ²²³Ra à **abiratérone + prednisone** (surrisque de fractures et de mortalité, essai ERA-223).[5] Les TNE GEP SSTR+ progressives et le mCRPC post-¹⁷⁷Lu-PSMA relèvent d'essais (²¹²Pb-DOTAMTATE, ²²⁵Ac-PSMA).[20,18]\n\n*Pour le médecin nucléaire prescripteur/dosimétriste.* **Pourquoi une EBR = 5 et non wR = 20 ?** Le wR = 20 (CIPR 103) sert au calcul de la dose efficace en radioprotection (effets stochastiques) ; l'**EBR = 5** projette les effets déterministes en thérapie (MIRD 22, calée sur γH2AX).[32,31] **Quelle norme citer ?** Surtout pas la **CIPR 128** (coefficients de dose des radiopharmaceutiques diagnostiques, mSv/MBq) qui ne couvre PAS les α : les références sont **MIRD Pamphlet 22** et les recommandations **EANM α 2025**.[34] **Quel défi de quantification ?** Faibles taux de comptage, **redistribution des filles** après recul, dosimétrie à petite échelle fondée sur les fractions absorbées.[34,32]\n\n*Pour le radiopharmacien/QC.* **Quel verrou pour le ²²⁵Ac ?** La contamination par **Ac-226/Ac-227** (mêmes propriétés chimiques, inséparables) impose un contrôle de pureté radionucléidique, sur fond de pénurie (offre historique ~**1,7 Ci/an** via générateur Th-229).[25,24] **Quelle paire théranostique ?** ²⁰³Pb (imagerie SPECT) / ²¹²Pb (thérapie) ; un générateur Th-228/Pb-212 délivre **9–10 MBq/jour**.[23,21]",
+          "stats": [
+            {
+              "value": "110→61 keV/μm",
+              "label": "TEL des α de 4 à 8 MeV (vs ~0,2 pour β⁻)"
+            },
+            {
+              "value": "EBR = 5",
+              "label": "valeur thérapeutique (MIRD 22) ; wR = 20 en radioprotection"
+            },
+            {
+              "value": "≤ 100 μm",
+              "label": "parcours α dans les tissus (≤ 40 μm dans l'os)"
+            },
+            {
+              "value": "14,9 vs 11,3 mois",
+              "label": "survie globale ²²³Ra vs placebo (ALSYMPCA, HR 0,70)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège normatif — ne pas confondre EBR (5) et wR (20)",
+              "text": "L'**EBR thérapeutique = 5** (MIRD 22, effets déterministes) et le **facteur wR = 20** (CIPR 103, radioprotection, effets stochastiques) répondent à des questions différentes ; les inverser fausse la dosimétrie d'un facteur 4. De même, la **CIPR 128** ne s'applique PAS aux α (elle couvre les radiopharmaceutiques diagnostiques) : citer **MIRD Pamphlet 22** et les recommandations **EANM α 2025**.[32,34]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution clinique — associations contre-indiquées du ²²³Ra",
+              "text": "L'association ²²³Ra + **abiratérone + prednisone/prednisolone** majore les **fractures** et la **mortalité** (essai ERA-223) : à proscrire. Vérifier les **seuils hématologiques** avant chaque cure (PNN, plaquettes, Hb) — la toxicité limitante est médullaire.[5]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi l'α est privilégié sur les micrométastases",
+              "text": "Le parcours court annule le **crossfire** : l'α irradie la cellule cible et épargne le tissu sain voisin, ce qui le rend supérieur au β⁻ (¹⁷⁷Lu) pour les **micrométastases, tumeurs de petit volume et cellules circulantes**, et permet de **vaincre la radiorésistance** liée à l'hypoxie (OER 1,3–2,1).[31,32] Effet bystander complémentaire : ~30–35 % des cellules tuées, dommages détectables jusqu'à 1 mm.[31]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique des émetteurs alpha : imagerie de sélection (paire diagnostique) puis traitement par radionucléide alpha, avec réévaluation dosimétrique — TEL élevé conditionnant le choix de l'émetteur.",
+            "caption": "Fig. 1 — De la physique (TEL → EBR) au choix de l'émetteur α et à la boucle théranostique : la chaîne de raisonnement à dérouler de mémoire."
+          }
+        },
+        {
+          "title": "E2 - E2 - Références, recommandations et liens sortants typés",
+          "text": "**▸ Cadre normatif & sociétés savantes** (à citer en priorité dans un compte rendu ou un protocole dosimétrique α)\n\n| Référentiel | Portée | Valeur-clé retenue |\n|---|---|---|\n| **MIRD Pamphlet 22** (SNMMI, JNM 2010) | Radiobiologie & dosimétrie des émetteurs α | **EBR = 5** (déterministe) ; OER 1,3–2,1 ; formule EBR = 2,9 − 0,167 × Eᵢ[1,32] |\n| **Recommandations EANM α 2025** | Dosimétrie en thérapie α ciblée | Faibles taux de comptage, redistribution des filles, microdosimétrie[34,35] |\n| **CIPR 103** | Radioprotection (dose efficace) | **wR = 20** pour les α[32] |\n| **CIPR — Lassmann 2017** | Imagerie, dosimétrie, radioprotection TAT | Cadre d'imagerie/dosimétrie des α[11] |\n| **NCCN / EAU / ESMO** | Algorithmes mCRPC | ²²³Ra intégré (os symptomatique) ; ²²⁵Ac-PSMA en essais (PSMAcTION)[36,18] |\n\n> ⚠️ **À ne PAS citer pour les α** : la **CIPR 128** (coefficients de dose des radiopharmaceutiques *diagnostiques*, mSv/MBq) — hors champ thérapeutique α.[34]\n\n**▸ Données pivots — niveaux de preuve** (essais à connaître)\n\n- **ALSYMPCA** (Parker, NEJM 2013) — phase III, 921 patients : OS médiane **14,9 vs 11,3 mois**, HR 0,70 ; délai au 1ᵉʳ événement squelettique **13,6 vs 8,4 mois**.[36,8]\n- **PEACE-3** (2025) — phase III, 446 patients, ²²³Ra + enzalutamide : OS **42,3 vs 35,0 mois**, **−31 %** de risque de décès (HR ~0,69).[7]\n- **Kratochwil** (JNM 2018, swimmer-plot) — ²²⁵Ac-PSMA-617, 40 patients, 3 cycles de 100 kBq/kg : **PSA50 = 63 %**, toute réponse PSA 87 % ; **xérostomie 45–87 %** (vs 3 % sous ¹⁷⁷Lu).[42,44]\n- **WARMTH-Act** (Lancet Oncol 2024) — étude multicentrique rétrospective confirmant l'efficacité du ²²⁵Ac-PSMA en mCRPC.[17]\n- **ALPHAMEDIX-02** (²¹²Pb-DOTAMTATE, phase 2, 2025) — tous les critères primaires d'efficacité atteints (GEP-NET, naïfs et pré-traités PRRT).[20]\n\n**▸ Liens sortants typés** (graphe de l'article)\n\n- **Traceurs** : ²²³Ra-dichlorure (Xofigo®) · ²²⁵Ac-PSMA-617 · ²¹²Pb-DOTAMTATE / ²¹²Pb-VMT-α-NET · ²²⁷Th-TTC · ²¹¹At.\n- **Maladies** : cancer de la prostate résistant à la castration (mCRPC) · tumeurs neuroendocrines gastro-entéro-pancréatiques (GEP-NET).\n- **Examens** : ⁶⁸Ga-PSMA TEP · ⁶⁸Ga-DOTATATE TEP · imagerie post-thérapeutique SPECT (²²³Ra 82/154/270 keV ; ²²⁵Ac 218/440 keV ; ²⁰³Pb).\n- **Théranostique** : ¹⁷⁷Lu-PSMA-617 (paire β⁻ → escalade α) · ¹⁷⁷Lu-DOTATATE · couple ²⁰³Pb/²¹²Pb.\n- **Scores / paramètres** : EBR = 5 · wR = 20 · OER · TEL (keV/μm).\n\n*Note de prudence : hormis le **²²³Ra** (AMM 2013, FDA/EMA), les radiopharmaceutiques α (²²⁵Ac-PSMA, ²¹²Pb-DOTAMTATE/VMT-α-NET, ²²⁷Th-TTC, ²¹¹At, ²¹³Bi) restent **investigationnels** à la date de rédaction (2026) ; les posologies citées proviennent d'essais et non d'AMM établies. Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la bonne hiérarchie de sources pour un dossier α",
+              "text": "Pour la **radiobiologie/dosimétrie** : MIRD Pamphlet 22 [1,32] + recommandations EANM α 2025 [34]. Pour la **radioprotection** : CIPR 103 (wR = 20) [32]. Pour la **clinique du ²²³Ra** : RCP/FDA Xofigo [5,6] + ALSYMPCA [36] + PEACE-3 [7]. Pour les émetteurs investigationnels : Kratochwil [42], WARMTH-Act [17], ALPHAMEDIX-02 [20]."
+            },
+            {
+              "type": "info",
+              "title": "Repères chiffrés à retenir",
+              "text": "TEL α (4–8 MeV) = **110→61 keV/μm** (β⁻ ≈ 0,2). EBR thérapeutique = **5** ; wR = **20**. OER = **1,3–2,1**. ²²³Ra : 55 kBq/kg ×6 q4sem, endoste **0,76 Gy/MBq**, moelle **0,09 Gy/MBq**, OS **14,9 vs 11,3 mois**. ²²⁵Ac : T½ 9,9 j, 4 α, ~27 MeV nets, PSA50 **63 %**, xérostomie 45–87 %.[1,32,5,9,42]"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
