@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections B8 (« Quand la réparation échoue ») et C11 (« Radiosensibilité individuelle »), stats et infoBoxes : « olaparib (SOLO-1) SSP médiane 19,1 vs 5,5 mois » / « SSP olaparib vs placebo (ovaire BRCA) [66] »",
+    "problem": "Erreur d'attribution d'essai clinique. Les valeurs de SSP médiane « 19,1 vs 5,5 mois » proviennent de l'essai SOLO-2 (Pujade-Lauraine et al., Lancet Oncol 2017 — olaparib en entretien dans le cancer ovarien BRCA-muté RÉCIDIVANT). L'essai SOLO-1 (Moore et al., NEJM 2018 — première ligne/néo-diagnostiqué) a rapporté une SSP médiane « non atteinte vs 13,8 mois », et non 19,1 vs 5,5 mois. Les chiffres de SSP sont des données olaparib réelles, mais le nom de l'essai est faux. NB : la même confusion est présente dans les FAITS DE RÉFÉRENCE fournis (source [66]/PMC6713455), donc le contenu reproduit fidèlement une erreur de la source — impact clinique nul (donnée oncologique secondaire, illustrative de la létalité synthétique).",
+    "fix": "Remplacer « SOLO-1 » par « SOLO-2 » partout où les chiffres 19,1 vs 5,5 mois sont cités, OU conserver SOLO-1 et corriger les valeurs en « SSP médiane non atteinte vs 13,8 mois » (Moore, NEJM 2018). Vérifier aussi la cohérence des sections D14/E15."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard, item « Saturation lésions groupées » : « ≈ 200 keV/µm »",
+    "problem": "Léger raccourci sémantique : la valeur ~200 keV/µm correspond dans la littérature (et les faits de référence) à la SATURATION du rendement de foyers radio-induits (RIF/µm) et au MAXIMUM de l'EBR, et non à une « saturation des lésions groupées » stricto sensu. La formulation peut laisser croire que les lésions groupées cessent au-delà de 200 keV/µm, ce qui n'est pas le sens.",
+    "fix": "Reformuler en « Saturation RIF/µm & pic d'EBR ≈ 100-200 keV/µm » ou « Maximum d'efficacité (EBR) ≈ 100-200 keV/µm » pour rester fidèle à la source."
+  },
+  {
+    "severity": "minor",
+    "where": "Verification scope (informational, not a defect)",
+    "problem": "12 sources spot-checked by WebFetch/WebSearch across all domain types (PMC, PubMed, JCI, OUP/jrr, EJNMMI/Springer, Oncotarget, BJC, PLoS, MDPI Biomolecules, MIT DSpace, clinicaltrials.gov, immunodeficiencysearch.com): [2],[3],[10],[12],[22],[40],[43],[50],[53],[55],[61], plus base checks. ALL real and accurately attributed (correct title, journal, year, volume/pages). Embedded quantitative claims also verified against primaries: ED50 14 kBq/mL vs 10 MBq/mL and 35%/21% foci [2]; 53BP1 latency 77+/-7 s [43]; blood dose 0.31+/-0.10 Gy and peak at 2 h [3]; Genes Dev 14:278-288 [22]; Aging 3:168-174 [40]. No DOI/URL appears invented. The remaining ~56 sources were not individually fetched but are internally consistent (PMC/PubMed/DOI formats plausible).",
+    "fix": "No action needed; sampling shows zero fabrication. Confidence high."
+  },
+  {
+    "severity": "minor",
+    "where": "Citation bounds / structure / density (all pass)",
+    "problem": "Citation ceiling: highest source is [68]; no inline [n] exceeds 68 across body text, stats, infoBoxes, steps, quiz, and references table. Section coverage: A (A1-A4), B (B5-B8), C (C9-C11), D (D12-D15), E (E16-E17) all present, plus a 14-entry structured identityCard (carte d'identite) AND a narrative carte d'identite in A1. Density: every section densely and inline-cited, with sourced stats and cited quiz explanations - conforms to the etalon.",
+    "fix": "None required."
+  }
+]

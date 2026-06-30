@@ -1,0 +1,1451 @@
+{
+  "id": "V2_RADIOLESIONS_ADN_REPARATION",
+  "cat": "radiobiologie",
+  "catLabel": "",
+  "title": "Lésions de l'ADN par les rayonnements et mécanismes de réparation cellulaire",
+  "difficulty": "avancé",
+  "tags": [
+    "lésions ADN",
+    "cassures double-brin",
+    "réparation ADN",
+    "γ-H2AX",
+    "radiobiologie",
+    "TLE",
+    "NHEJ",
+    "recombinaison homologue",
+    "modèle linéaire-quadratique",
+    "radioprotection",
+    "PARP",
+    "thérapie alpha",
+    "biodosimétrie",
+    "effet oxygène",
+    "lésions groupées"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Quantification of radiation-induced DNA double strand break repair foci to evaluate and predict biological responses to ionizing radiation (NAR Cancer 2021, zcab046 / PMC8693576)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8693576/"
+    },
+    {
+      "title": "[2] DNA Double Strand Breaks as Predictor of Efficacy of the Alpha-Particle Emitter Ac-225 and the Electron Emitter Lu-177 for Somatostatin Receptor Targeted Radiotherapy (PLoS One 2014; e88239 / PMC3917860)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3917860/"
+    },
+    {
+      "title": "[3] In vivo formation of gamma-H2AX and 53BP1 DNA repair foci in blood cells after radioiodine therapy of differentiated thyroid cancer (Lassmann et al., J Nucl Med 2010;51:1318-25)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20660387/"
+    },
+    {
+      "title": "[4] Paradigm Shift in Radiation Biology/Radiation Oncology - Exploitation of the 'H2O2 Effect' for Radiotherapy Using Low-LET Radiation such as X-rays and High-Energy Electrons (PMC4810112)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4810112/"
+    },
+    {
+      "title": "[5] Towards the ionizing radiation induced bond dissociation mechanism in oxygen, water, guanine and DNA fragmentation: a density functional theory simulation (Scientific Reports 2022;12:19853)",
+      "url": "https://www.nature.com/articles/s41598-022-23727-3"
+    },
+    {
+      "title": "[6] Mechanisms of DNA damage, repair and mutagenesis (Chatterjee & Walker, Environ Mol Mutagen 2017 / PMC5474181)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5474181/"
+    },
+    {
+      "title": "[7] ATM Release at Resected Double-Strand Breaks Provides Heterochromatin Reconstitution to Facilitate Homologous Recombination (PMC3731223)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3731223/"
+    },
+    {
+      "title": "[8] The linear quadratic model: usage, interpretation and challenges (McMahon, Phys Med Biol 2019;64:01TR01)",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6560/aaf26a"
+    },
+    {
+      "title": "[9] Chromatin and the Cellular Response to Particle Radiation-Induced Oxidative and Clustered DNA Damage (Danforth et al., Front Cell Dev Biol 2022 / PMC9326100)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9326100/"
+    },
+    {
+      "title": "[10] LET, RBE and Damage to DNA (MIT 22.01 Fall 2006 lecture notes)",
+      "url": "https://dspace.mit.edu/bitstream/handle/1721.1/104092/22-01-fall-2006/contents/lecture-notes/let_and_rbe.pdf"
+    },
+    {
+      "title": "[11] Radiosensitization by the PARP inhibitor olaparib in BRCA1-proficient and deficient high-grade serous ovarian carcinomas (Gynecol Oncol 2018; PMID 30025822)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30025822/"
+    },
+    {
+      "title": "[12] Poly-(ADP-ribose)-polymerase inhibitors as radiosensitizers: a systematic review of pre-clinical and clinical human studies (Oncotarget 2017)",
+      "url": "https://www.oncotarget.com/article/19079/text/"
+    },
+    {
+      "title": "[13] Radioprotectors and Mitigators of Radiation-Induced Normal Tissue Injury (PMC3076305)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3076305/"
+    },
+    {
+      "title": "[14] Pharmacology of natural radioprotectors (PMC6224001)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6224001/"
+    },
+    {
+      "title": "[15] Early diagnosis of ataxia-telangiectasia using radiosensitivity testing (Sun et al., J Pediatr 2002; PMID 12072877)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S002234760200015X"
+    },
+    {
+      "title": "[16] Severe reaction to radiotherapy provoked by hypomorphic germline mutations in ATM (ataxia-telangiectasia mutated gene) (Asadollahi et al., Mol Genet Genomic Med 2020;8:e1409)",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/mgg3.1409"
+    },
+    {
+      "title": "[17] Pathogenesis of ataxia-telangiectasia: the next generation of ATM functions (Ambrose & Gatti, Blood 2013;121:4036-4045)",
+      "url": "https://ashpublications.org/blood/article/121/20/4036/116523/"
+    },
+    {
+      "title": "[18] Radiation-induced bystander effect and its clinical implications (Front Oncol 2023 / PMC10113613)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10113613/"
+    },
+    {
+      "title": "[19] Radiation-induced bystander and abscopal effects: important lessons from preclinical models (Daguenet et al., Br J Cancer 2020)",
+      "url": "https://www.nature.com/articles/s41416-020-0942-3"
+    },
+    {
+      "title": "[20] The 5 Rs of Radiobiology Explained - FRCR Part 1 Guide (PassOncology)",
+      "url": "https://www.passoncology.com/blog/5-rs-radiobiology-frcr-part-1-explained"
+    },
+    {
+      "title": "[21] Linear no-threshold model (Wikipedia; ICRP, stochastic vs deterministic effects)",
+      "url": "https://en.wikipedia.org/wiki/Linear_no-threshold_model"
+    },
+    {
+      "title": "[22] Chk2/hCds1 functions as a DNA damage checkpoint in G1 by stabilizing p53 (Chehab et al., Genes Dev 2000;14:278-288)",
+      "url": "https://genesdev.cshlp.org/content/14/3/278.full"
+    },
+    {
+      "title": "[23] G2 checkpoint abrogation and checkpoint kinase-1 targeting in the treatment of cancer (Br J Cancer 2008 / PMC2243162)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2243162/"
+    },
+    {
+      "title": "[24] Kinetics and dose-response of residual 53BP1/gamma-H2AX foci: co-localization, relationship with DSB repair and clonogenic survival (Int J Radiat Biol 2007; PMID 17457757)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17457757/"
+    },
+    {
+      "title": "[25] Dose response and repair kinetics of gamma-H2AX foci induced by in vitro irradiation of whole blood and T-lymphocytes with X- and gamma-radiation (PMID 20597840)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20597840/"
+    },
+    {
+      "title": "[26] Radiation Damage to DNA: The Indirect Effect of Low Energy Electrons (PMC4071054)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4071054/"
+    },
+    {
+      "title": "[27] BRCAness, DNA gaps, and gain and loss of PARP inhibitor-induced synthetic lethality (Li & Zou, J Clin Invest 2024; 181062)",
+      "url": "https://www.jci.org/articles/view/181062"
+    },
+    {
+      "title": "[28] Modelling of Cellular Survival Following Radiation-Induced DNA Double-Strand Breaks (Scientific Reports 2018)",
+      "url": "https://www.nature.com/articles/s41598-018-34159-3"
+    },
+    {
+      "title": "[29] Mechanisms of Biological Effects - Toxicological Profile for Ionizing Radiation, Chapter 5 (ATSDR / NCBI Bookshelf NBK597563)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK597563/"
+    },
+    {
+      "title": "[30] Changes in the Number of Double-Strand DNA Breaks in Chinese Hamster V79 Cells Exposed to gamma-Radiation with Different Dose Rates (PMC3742213)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3742213/"
+    },
+    {
+      "title": "[31] Direct and indirect effects of radiation (Fiveable Radiobiology study guide)",
+      "url": "https://fiveable.me/radiobiology/unit-3/direct-indirect-effects-radiation/study-guide/wV4OqU35HOde6q02"
+    },
+    {
+      "title": "[32] Free radical damage to DNA (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Free_radical_damage_to_DNA"
+    },
+    {
+      "title": "[33] Radiolysis - an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/immunology-and-microbiology/radiolysis"
+    },
+    {
+      "title": "[34] Double-strand DNA break repair: molecular mechanisms and therapeutic targets (Tan et al., MedComm 2023)",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/mco2.388"
+    },
+    {
+      "title": "[35] DNA Double Strand Break Repair Pathways in Response to Different Types of Ionizing Radiation (van de Kamp et al., Front Genet 2021)",
+      "url": "https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.738230/full"
+    },
+    {
+      "title": "[36] Homologous recombination repairs secondary replication induced DNA double-strand breaks after ionizing radiation (Nucleic Acids Res 2012;40:6585)",
+      "url": "https://academic.oup.com/nar/article/40/14/6585/2414750"
+    },
+    {
+      "title": "[37] New Facets of DNA Double Strand Break Repair: Radiation Dose as Key Determinant of HR versus c-NHEJ Engagement (PMC10573367)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10573367/"
+    },
+    {
+      "title": "[38] The high toxicity of DSB-clusters modelling high-LET-DNA damage derives from inhibition of c-NHEJ and promotion of alt-EJ and SSA despite increases in HR (PMC9574094)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9574094/"
+    },
+    {
+      "title": "[39] Measurement of complex DNA damage induction and repair in human cellular systems after exposure to ionizing radiations of varying linear energy transfer (LET) (Free Radic Res 2016)",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10715762.2016.1232484"
+    },
+    {
+      "title": "[40] Recent developments in the use of gamma-H2AX as a quantitative DNA double-strand break biomarker (Aging (Albany NY) 2011;3:168-174 / PMC3082012)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3082012/"
+    },
+    {
+      "title": "[41] Immediate-Early, Early, and Late Responses to DNA Double Stranded Breaks (Front Genet 2022)",
+      "url": "https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2022.793884/full"
+    },
+    {
+      "title": "[42] Roles for 53BP1 in the repair of radiation-induced DNA double strand breaks (DNA Repair / ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1568786420301634"
+    },
+    {
+      "title": "[43] Recruitment Kinetics of DNA Repair Proteins Mdc1 and Rad52 but Not 53BP1 Depend on Damage Complexity (PMC3408406)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3408406/"
+    },
+    {
+      "title": "[44] ATM and the DNA damage response (workshop report / PMC1369257)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1369257/"
+    },
+    {
+      "title": "[45] ATM's Role in the Repair of DNA Double-Strand Breaks (Shibata & Jeggo, Genes (Basel) 2021 / PMC8466060)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8466060/"
+    },
+    {
+      "title": "[46] Ataxia Telangiectasia (immunodeficiencysearch.com)",
+      "url": "https://www.immunodeficiencysearch.com/ataxia-telangiectasia"
+    },
+    {
+      "title": "[47] Base excision repair | DNA, Mismatch, Glycosylases (Britannica)",
+      "url": "https://www.britannica.com/science/base-excision-repair"
+    },
+    {
+      "title": "[48] The scaffold protein XRCC1 stabilizes the formation of polbeta/gap DNA and ligase IIIalpha/nick DNA complexes in base excision repair (PMC8405949)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8405949/"
+    },
+    {
+      "title": "[49] Nucleotide excision repair (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nucleotide_excision_repair"
+    },
+    {
+      "title": "[50] Protein-Protein Interactions in Base Excision Repair (Rathnaiah & Sweasy, Biomolecules 2025 / PMC12190888)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12190888/"
+    },
+    {
+      "title": "[51] Statistical Radiobiology (OncologyMedicalPhysics.com)",
+      "url": "https://oncologymedicalphysics.com/statistical-radiobiology/"
+    },
+    {
+      "title": "[52] Theoretical analysis of the dose dependence of the oxygen enhancement ratio and its relevance for clinical applications (PMC3283483)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3283483/"
+    },
+    {
+      "title": "[53] Quantifying DNA strand breaks from targeted alpha emitters 225Ac and 227Th via Geant4-DNA: implications for RBE and cell survival (EJNMMI Phys 2025)",
+      "url": "https://link.springer.com/article/10.1186/s40658-025-00805-9"
+    },
+    {
+      "title": "[54] Nanostructure of Clustered DNA Damage in Leukocytes after In-Solution Irradiation with the Alpha Emitter Ra-223 (Cancers 2019 / PMC6966434)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6966434/"
+    },
+    {
+      "title": "[55] Radium-223 and Radiotherapy in Hormone-Naive Men With Oligometastatic Prostate Cancer to Bone (RadSABR study protocol, NCT03304418)",
+      "url": "https://cdn.clinicaltrials.gov/large-docs/18/NCT03304418/Prot_SAP_001.pdf"
+    },
+    {
+      "title": "[56] Auger electrons for cancer therapy - a review (Ku et al., EJNMMI Radiopharm Chem 2019)",
+      "url": "https://link.springer.com/article/10.1186/s41181-019-0075-2"
+    },
+    {
+      "title": "[57] Calculation of DNA strand breaks due to direct and indirect effects of Auger electrons from incorporated 123I and 125I radionuclides using the Geant4 computer code (PMID 22892102)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22892102/"
+    },
+    {
+      "title": "[58] Analysis of 177Lu-DOTA-Octreotate Therapy-Induced DNA Damage in Peripheral Blood Lymphocytes of Patients with Neuroendocrine Tumors (J Nucl Med 2015;56:505)",
+      "url": "https://jnm.snmjournals.org/content/56/4/505"
+    },
+    {
+      "title": "[59] DNA damage in blood leucocytes of prostate cancer patients during therapy with 177Lu-PSMA (Eur J Nucl Med Mol Imaging 2019 / PMC6584247)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6584247/"
+    },
+    {
+      "title": "[60] Dissimilar DNA Damage to Blood Lymphocytes After 177Lu-Labeled DOTATOC or Prostate-Specific Membrane Antigen Therapy (J Nucl Med 2021;62:379)",
+      "url": "https://jnm.snmjournals.org/content/62/3/379"
+    },
+    {
+      "title": "[61] Classification of radiation effects for dose limitation purposes: history, current situation and future prospects (Hamada & Fujimichi, J Radiat Res 2014;55:629-640)",
+      "url": "https://academic.oup.com/jrr/article/55/4/629/930449"
+    },
+    {
+      "title": "[62] The scientific basis for the use of the linear no-threshold (LNT) model at low doses and dose rates in radiological protection (Laurier et al., J Radiol Prot 2023)",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6498/acdfd7"
+    },
+    {
+      "title": "[63] Linear No-Threshold Model and Standards for Protection Against Radiation (US NRC petition denial, 2021 / ML21200A104)",
+      "url": "https://www.nrc.gov/docs/ML2120/ML21200A104.pdf"
+    },
+    {
+      "title": "[64] Radiation-Induced Bystander Effects: Evidence for an Adaptive Response to Low Dose Exposures? (Dose-Response 2006 / PMC2477684)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2477684/"
+    },
+    {
+      "title": "[65] Non-targeted effects of ionizing radiation - implications for low dose risk (PMC4091999)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4091999/"
+    },
+    {
+      "title": "[66] Synthetic Lethality of PARP Inhibition and Ionizing Radiation is p53-dependent (Mol Cancer Res 2018 / PMC6713455)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6713455/"
+    },
+    {
+      "title": "[67] Mechanism of PARP inhibitor resistance and potential overcoming strategies (ScienceDirect 2023)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352304223000661"
+    },
+    {
+      "title": "[68] PARP1 inhibition radiosensitizes HNSCC cells deficient in homologous recombination by disabling the DNA replication fork elongation response (PMC4891080)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4891080/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "dna",
+        "label": "Cible critique",
+        "value": "ADN nucléaire (DSB létales)"
+      },
+      {
+        "icon": "zap",
+        "label": "Effet dominant (faible TLE)",
+        "value": "Indirect ≈ 2/3 (radical ·OH)"
+      },
+      {
+        "icon": "droplets",
+        "label": "Radical clé",
+        "value": "Hydroxyle ·OH (60-70 % des dommages)"
+      },
+      {
+        "icon": "activity",
+        "label": "SSB / Gy / cellule",
+        "value": "≈ 1000 (faible TLE)"
+      },
+      {
+        "icon": "alert",
+        "label": "DSB / Gy / cellule",
+        "value": "≈ 40 (la plus létale)"
+      },
+      {
+        "icon": "microscope",
+        "label": "Dommages de bases / Gy",
+        "value": "≈ 2500-25 000"
+      },
+      {
+        "icon": "target",
+        "label": "Marqueur DSB",
+        "value": "γ-H2AX : 1 foyer ≈ 1 DSB"
+      },
+      {
+        "icon": "radiation",
+        "label": "Rendement RIF (1 Gy)",
+        "value": "17-24 foyers/Gy"
+      },
+      {
+        "icon": "flask",
+        "label": "Voies réparation DSB",
+        "value": "NHEJ (1-2 h) · HR (≥ 8 h, S/G2)"
+      },
+      {
+        "icon": "shield",
+        "label": "Effet oxygène (OER)",
+        "value": "≈ 3 (faible TLE) · ≈ 1 (α)"
+      },
+      {
+        "icon": "atom",
+        "label": "Rapport α/β",
+        "value": "≈ 3 Gy (tardif) · ≈ 10 Gy (précoce)"
+      },
+      {
+        "icon": "list",
+        "label": "Saturation lésions groupées",
+        "value": "≈ 200 keV/µm"
+      },
+      {
+        "icon": "syringe",
+        "label": "α (²²⁵Ac) vs β (¹⁷⁷Lu)",
+        "value": "ED₅₀ 14 kBq/mL vs 10 MBq/mL (~700×)"
+      },
+      {
+        "icon": "stetho",
+        "label": "Détriment (CIPR 103)",
+        "value": "5,5 %/Sv cancer · 0,2 %/Sv héréditaire"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE (émetteur β⁻)"
+      },
+      {
+        "type": "theranostique",
+        "label": "²²⁵Ac-PSMA (thérapie alpha ciblée)"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹³¹I (radioiode)"
+      },
+      {
+        "type": "traceur",
+        "label": "Émetteurs Auger (¹²⁵I, ¹¹¹In)"
+      },
+      {
+        "type": "examen",
+        "label": "Dosimétrie interne (CIPR 128)"
+      },
+      {
+        "type": "examen",
+        "label": "Biodosimétrie γ-H2AX/53BP1"
+      },
+      {
+        "type": "score",
+        "label": "Modèle linéaire-quadratique (α/β)"
+      },
+      {
+        "type": "score",
+        "label": "Modèle linéaire sans seuil (LNT)"
+      },
+      {
+        "type": "maladie",
+        "label": "Ataxie-télangiectasie (mutation ATM)"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancers BRCA / déficit HR (BRCAness)"
+      },
+      {
+        "type": "traceur",
+        "label": "Inhibiteurs de PARP (olaparib)"
+      },
+      {
+        "type": "examen",
+        "label": "Amifostine (radioprotecteur)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "À faible TLE (rayons X, γ, émetteurs β), quelle est la part de l'effet indirect (radicaux issus de la radiolyse de l'eau) dans les dommages à l'ADN ?",
+        "options": [
+          "Environ 1/10",
+          "Environ 1/3",
+          "Environ 2/3",
+          "La totalité"
+        ],
+        "answer": 2,
+        "explanation": "À faible TLE, environ 2/3 des dommages résultent de l'action indirecte via les radicaux de l'eau (notamment ·OH), l'effet direct dominant uniquement à fort TLE [4,31].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel radical libre est le principal responsable des cassures de l'ADN par effet indirect ?",
+        "options": [
+          "Le radical superoxyde O₂·⁻",
+          "Le radical hydroxyle ·OH",
+          "L'électron aqueux e⁻aq",
+          "Le peroxyde d'hydrogène H₂O₂"
+        ],
+        "answer": 1,
+        "explanation": "Le radical hydroxyle ·OH est l'espèce transitoire principale, responsable de 60-70 % des dommages cellulaires par effet indirect [26,32].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pour 1 Gy de rayonnement à faible TLE, combien de cassures double-brin (DSB) sont induites par cellule de mammifère ?",
+        "options": [
+          "Environ 4",
+          "Environ 40",
+          "Environ 400",
+          "Environ 4000"
+        ],
+        "answer": 1,
+        "explanation": "Environ 40 DSB/Gy/cellule, contre ~1000 cassures simple-brin et 2500-25 000 dommages de bases ; les DSB sont rares mais les plus létales [5,28,29].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel type de lésion corrèle le mieux avec la mort cellulaire après irradiation ?",
+        "options": [
+          "Les dommages de bases",
+          "Les cassures simple-brin (SSB)",
+          "Les cassures double-brin (DSB)",
+          "Les pontages ADN-protéines"
+        ],
+        "answer": 2,
+        "explanation": "Les DSB sont les plus longues à réparer et corrèlent le mieux avec la létalité ; les SSB, bien plus nombreuses, sont peu létales car facilement réparées [29].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Que détecte un foyer (focus) de γ-H2AX en immunofluorescence ?",
+        "options": [
+          "Une cassure simple-brin",
+          "Une cassure double-brin (DSB)",
+          "Un dommage de base oxydé",
+          "Un pontage inter-brin"
+        ],
+        "answer": 1,
+        "explanation": "À chaque DSB, des centaines de molécules d'histone H2AX sont phosphorylées (γ-H2AX) dans la chromatine flanquante : 1 foyer ≈ 1 DSB, d'où son usage en biodosimétrie [1,40].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle voie de réparation des DSB est rapide, active dans tout le cycle cellulaire mais infidèle ?",
+        "options": [
+          "La recombinaison homologue (HR)",
+          "La jonction d'extrémités non homologue (NHEJ)",
+          "La réparation par excision de bases (BER)",
+          "Le mismatch repair (MMR)"
+        ],
+        "answer": 1,
+        "explanation": "Le NHEJ ligature directement les extrémités (Ku, DNA-PKcs, ligase IV/XRCC4), rapide (1-2 h) et actif tout le cycle, mais souvent mutagène ; la HR est fidèle mais limitée à S/G2 [1,34,35].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi la recombinaison homologue (HR) n'est-elle active qu'en phases S et G2 du cycle ?",
+        "options": [
+          "Parce qu'elle nécessite la chromatide sœur comme matrice",
+          "Parce que ATM n'est exprimé qu'en S/G2",
+          "Parce que les histones manquent en G1",
+          "Parce que p53 l'inhibe en G1"
+        ],
+        "answer": 0,
+        "explanation": "La HR utilise la chromatide sœur identique comme matrice pour une réparation fidèle ; cette matrice n'existe qu'après réplication (S/G2). La HR est plus lente (≥ 8 h) [1,36].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel complexe protéique est le senseur précoce des DSB qui recrute et active la kinase ATM ?",
+        "options": [
+          "Le complexe Ku70/Ku80",
+          "Le complexe MRN (MRE11-RAD50-NBS1)",
+          "Le complexe RAD51-BRCA2",
+          "Le complexe XRCC1-pol β"
+        ],
+        "answer": 1,
+        "explanation": "Le complexe MRN détecte la DSB et active ATM, qui phosphoryle ensuite H2AX (γ-H2AX), CHK2 et p53 pour déclencher les arrêts de cycle [6,44,45].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Dans le modèle linéaire-quadratique S = exp(−αD − βD²), que représente le rapport α/β ?",
+        "options": [
+          "La dose létale moyenne",
+          "La dose où les composantes linéaire et quadratique sont égales",
+          "Le débit de dose optimal",
+          "Le nombre de DSB par Gy"
+        ],
+        "answer": 1,
+        "explanation": "Le rapport α/β (en Gy) est la dose où contributions linéaire (α) et quadratique (β) s'égalent : ≈ 10 Gy pour les tissus à réponse précoce, ≈ 3 Gy pour les tissus tardifs/tumeurs [8,51].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la valeur approximative de l'OER (oxygen enhancement ratio) pour un rayonnement de faible TLE ?",
+        "options": [
+          "Environ 1",
+          "Environ 3",
+          "Environ 6",
+          "Environ 10"
+        ],
+        "answer": 1,
+        "explanation": "L'OER ≈ 2,5-3 pour les rayonnements de faible TLE : l'oxygène « fixe » les lésions radicalaires, rendant les cellules hypoxiques radiorésistantes. Pour les particules α (fort TLE), l'OER tend vers 1 [8,52].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi les particules α (fort TLE) produisent-elles des lésions quasi irréparables ?",
+        "options": [
+          "Elles n'induisent que des cassures simple-brin",
+          "Elles créent des lésions groupées/complexes par ionisation dense",
+          "Elles n'atteignent jamais le noyau",
+          "Elles sont métabolisées avant d'agir"
+        ],
+        "answer": 1,
+        "explanation": "L'ionisation dense le long de la trace (TLE ≈ 80 keV/µm pour α) génère des lésions groupées (DSB multiples + bases dans 1-2 tours d'hélice) : > 90 % des DSB sont complexes à fort TLE, contre 30-40 % à faible TLE [9,39].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "En radiothérapie interne vectorisée, pourquoi un émetteur α comme ²²⁵Ac est-il bien plus efficace par unité d'activité qu'un émetteur β comme ¹⁷⁷Lu ?",
+        "options": [
+          "Parcours plus long et meilleur effet cross-fire",
+          "DSB groupées à fort TLE, EBR élevée et faible parcours",
+          "Demi-vie beaucoup plus courte",
+          "Meilleure pénétration tissulaire"
+        ],
+        "answer": 1,
+        "explanation": "L'ED₅₀ du ²²⁵Ac-DOTATOC est de 14 kBq/mL contre 10 MBq/mL pour ¹⁷⁷Lu-DOTATOC (~700×), car l'α dépose son énergie sur quelques cellules avec des DSB groupées et une EBR élevée [2].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Lors d'une thérapie au ¹³¹I (cancer thyroïdien différencié), quand observe-t-on le pic des foyers γ-H2AX dans le sang ?",
+        "options": [
+          "À 15 minutes",
+          "À 2 heures",
+          "À 48 heures",
+          "À 7 jours"
+        ],
+        "answer": 1,
+        "explanation": "Après ¹³¹I, le pic des foyers γ-H2AX/53BP1 dans les lymphocytes survient à 2 h, avec une dose moyenne au sang de 0,31 ± 0,10 Gy ; des foyers résiduels persistent jusqu'à 120-144 h [3].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel mécanisme explique la radiosensibilisation des cellules déficientes en BRCA par les inhibiteurs de PARP (olaparib) ?",
+        "options": [
+          "Inhibition de la synthèse d'ADN",
+          "Létalité synthétique : blocage de la réparation des SSB dans un contexte HR-déficient",
+          "Activation de p53",
+          "Blocage des checkpoints G2/M"
+        ],
+        "answer": 1,
+        "explanation": "Les inhibiteurs de PARP bloquent la réparation des cassures simple-brin (BER), converties en DSB lors de la réplication ; en l'absence de HR fonctionnelle (BRCA muté), ces DSB ne sont pas réparées : c'est la létalité synthétique [12,27].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel syndrome constitutionnel se caractérise par une hypersensibilité majeure aux rayonnements due à un défaut de détection des DSB ?",
+        "options": [
+          "Syndrome de Lynch",
+          "Ataxie-télangiectasie (mutation ATM)",
+          "Xeroderma pigmentosum",
+          "Syndrome de Li-Fraumeni"
+        ],
+        "answer": 1,
+        "explanation": "L'ataxie-télangiectasie (mutation ATM, autosomique récessive) altère la détection des DSB et la signalisation DDR, entraînant des réactions sévères voire fatales à des doses conventionnelles ; à rechercher avant irradiation [15,16,17].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Sur quel fondement biologique repose principalement le modèle linéaire sans seuil (LNT) de la CIPR 103 ?",
+        "options": [
+          "L'effet bystander à forte dose",
+          "La linéarité dose-réponse des DSB et la réparation fautive d'une DSB unique",
+          "La saturation des voies de réparation",
+          "L'absence totale de réparation à faible dose"
+        ],
+        "answer": 1,
+        "explanation": "La linéarité du nombre de DSB de 5 mGy à 1 Gy et la possibilité de réparation fautive d'une DSB unique soutiennent l'absence de seuil pour les effets stochastiques ; le détriment nominal est de 5,5 %/Sv (cancer) avec un DDREF de 2 [28,61,62].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Qu'est-ce que l'effet bystander (effet de voisinage) en radiobiologie ?",
+        "options": [
+          "La réparation accélérée des cellules voisines",
+          "Des dommages dans des cellules non irradiées, induits par les cellules irradiées",
+          "L'augmentation de la dose au point d'impact",
+          "Un artefact de mesure du γ-H2AX"
+        ],
+        "answer": 1,
+        "explanation": "L'effet bystander désigne des effets (lésions, instabilité génomique) dans des cellules non directement irradiées, via jonctions communicantes, ROS, NO et cytokines ; il complique l'extrapolation aux faibles doses [18,19,65].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi les émetteurs Auger (¹²⁵I, ¹¹¹In) ne sont-ils très létaux que s'ils sont incorporés près de l'ADN ?",
+        "options": [
+          "Ils émettent des photons de haute énergie",
+          "Leur cascade d'électrons de très courte portée (nm) crée un fort TLE local",
+          "Ils sont métabolisés dans le cytoplasme",
+          "Ils ont une demi-vie trop longue"
+        ],
+        "answer": 1,
+        "explanation": "Les émetteurs Auger libèrent une cascade d'électrons de portée nanométrique : la forte densité d'ionisation locale n'endommage l'ADN que si le radionucléide est internalisé à proximité immédiate (ex. ¹²⁵I-IUdR), avec ¹²⁵I ≈ 1,5× plus efficace que ¹²³I [56,57].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est l'effet du débit de dose sur le rendement de DSB par Gy à faible TLE ?",
+        "options": [
+          "Aucun effet",
+          "Moins de DSB/Gy à faible débit (réparation concurrente)",
+          "Plus de DSB/Gy à faible débit",
+          "Les DSB disparaissent totalement"
+        ],
+        "answer": 1,
+        "explanation": "À faible débit de dose, la réparation se déroule pendant l'irradiation, réduisant le nombre net de DSB/Gy ; cet effet débit de dose est central dans l'interprétation de la radiothérapie interne vectorisée continue [30].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel seul radioprotecteur est approuvé par la FDA et agit comme capteur de radicaux ·OH ?",
+        "options": [
+          "L'amifostine",
+          "Le perchlorate de potassium",
+          "L'olaparib",
+          "La metformine"
+        ],
+        "answer": 0,
+        "explanation": "L'amifostine, prodrogue thiol-phosphate, capte les radicaux hydroxyle, donne des atomes d'hydrogène et induit hypoxie cellulaire et enzymes antioxydantes : c'est le seul radioprotecteur approuvé par la FDA [13,14].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Les rayonnements lèsent l'ADN par effet direct (~1/3) et surtout indirect (~2/3) via les radicaux de l'eau, dont le radical hydroxyle ·OH (60-70 % des dommages) [4,26,32].",
+        "Spectre lésionnel pour 1 Gy à faible TLE : ~2500-25 000 dommages de bases, ~1000 SSB, ~40 DSB ; la DSB est rare mais la plus létale [5,28,29].",
+        "γ-H2AX est le biomarqueur de référence des DSB : 1 foyer ≈ 1 DSB, utilisable en biodosimétrie (détectable < 20 mGy au sang) [1,40].",
+        "Réparation des DSB : NHEJ (rapide, 1-2 h, tout le cycle, infidèle) vs HR (lente ≥ 8 h, S/G2, fidèle, matrice = chromatide sœur) [1,34,35].",
+        "Le fort TLE (α, ions lourds) produit des lésions groupées/complexes (> 90 % des DSB) quasi irréparables, d'où une EBR élevée ; saturation des foyers ~200 keV/µm [9,39].",
+        "Modèle linéaire-quadratique : α/β ≈ 3 Gy (tissus tardifs/tumeurs) vs ≈ 10 Gy (tissus précoces) ; OER ≈ 3 (faible TLE) → ≈ 1 (α) [8,52].",
+        "En théranostique, l'émetteur α ²²⁵Ac est ~700× plus efficace par activité que l'émetteur β ¹⁷⁷Lu pour induire des DSB (ED₅₀ 14 kBq/mL vs 10 MBq/mL) [2].",
+        "Radioprotection (CIPR 103) : modèle LNT pour les effets stochastiques, détriment 5,5 %/Sv (cancer) + 0,2 %/Sv (héréditaire), DDREF = 2 [61,62,63]."
+      ],
+      "protocol": [
+        "Biodosimétrie γ-H2AX/53BP1 : prélèvement sanguin avant et à temps précoce après administration du radionucléide (pic à 2 h pour le ¹³¹I), timing strict car la cinétique de réparation fait chuter le signal [3,40].",
+        "Quantifier les foyers radio-induits (RIF) par immunofluorescence : 17-24 RIF/Gy à 1 Gy de RX faible dose, décroissant à 13-15 RIF/Gy entre 1 et 4 Gy [1].",
+        "Avant radiothérapie ou RIV curative : rechercher un déficit constitutionnel de réparation (anamnèse d'ataxie-télangiectasie, réactions cutanées antérieures, antécédents familiaux) [16].",
+        "Choix de l'émetteur selon la cible : β⁻ (¹⁷⁷Lu, parcours mm, effet cross-fire) pour les masses ; α (²²⁵Ac, parcours ~50-80 µm, DSB groupées) pour la maladie micrométastatique [2].",
+        "Radiosensibilisation ciblée : inhibiteurs de PARP (olaparib) dans les contextes BRCAness/HRD ; inhibiteurs ATM/ATR/DNA-PK/CHK1 pour abroger les checkpoints [11,12,27]."
+      ],
+      "scores": [
+        "Modèle linéaire-quadratique S = exp(−αD − βD²) ; α/β ≈ 3 Gy (réponse tardive) vs ≈ 10 Gy (réponse précoce) [8,51].",
+        "OER (oxygen enhancement ratio) ≈ 2,5-3 à faible TLE, proche de 1 pour les particules α [8,52].",
+        "EBR (efficacité biologique relative) des particules α ≈ 5-10 vs β/γ ; TLE de l'α ≈ 80 keV/µm [2,53].",
+        "Détriment CIPR 103 : 5,5 %/Sv (cancer) + 0,2 %/Sv (effets héréditaires) population entière, DDREF = 2 [61,63].",
+        "Cinétique de réparation biphasique : 70-80 % des DSB réparées rapidement (c-NHEJ, minutes), reste lentement (HR/NHEJ spécialisé, heures) [41]."
+      ],
+      "pitfalls": [
+        "Effet débit de dose : moins de DSB/Gy à faible débit (réparation concurrente) → sous-estimation possible de la dose biologique en RIV continue [30].",
+        "Délai de détection du γ-H2AX : nécessite un timing post-exposition adéquat (pic puis décroissance par réparation) ; sous irradiation continue le signal peut décliner dès 24 h (faux-négatif relatif) [25,59].",
+        "Patients radiosensibles (ataxie-télangiectasie ATM, syndrome de Nimègue NBS1, anémie de Fanconi) : toxicité sévère voire fatale à doses conventionnelles, à dépister [15,17].",
+        "Effets non ciblés (bystander, instabilité génomique, réponse adaptative) : significatifs à faible dose, ils nuancent l'extrapolation LNT [64,65].",
+        "Hypoxie tumorale : radiorésistance (OER ≈ 3) limitant l'efficacité des faibles TLE en zones mal oxygénées [8,52].",
+        "Inhibiteurs de PARP : efficacité restreinte aux tumeurs HR-déficientes (BRCAness) ; peu d'effet sur les tumeurs HR-compétentes [27]."
+      ]
+    },
+    "lead": "Les rayonnements ionisants déposent leur énergie dans les tissus et endommagent l'ADN du noyau, la molécule qui porte l'information génétique de chaque cellule. Une partie de ces dégâts vient d'un impact direct sur l'ADN, mais la plupart proviennent de radicaux libres formés à partir de l'eau qui entoure la molécule. La cellule possède un arsenal de systèmes de réparation capables de corriger la majorité de ces lésions, mais certaines, plus complexes, échappent à la réparation et conduisent à la mort de la cellule, à une mutation ou à un cancer. Comprendre cet équilibre entre dégât et réparation est le socle de toute la médecine nucléaire, car il explique pourquoi un traitement radioactif détruit une tumeur tout en épargnant au mieux les tissus sains. C'est aussi ce qui fonde la radioprotection et le choix entre les différents types de rayonnements utilisés en thérapie.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert de comprendre l'effet des rayons sur les cellules",
+          "text": "Les rayonnements utilisés en médecine (pour examiner ou pour traiter) déposent un peu d'énergie à l'intérieur des cellules de notre corps. Cette énergie peut abîmer l'ADN, qui est la « notice de fonctionnement » présente au cœur de chaque cellule. Comprendre ce mécanisme aide à expliquer pourquoi certains traitements par radioactivité parviennent à détruire les cellules malades, et pourquoi les médecins prennent autant de précautions pour protéger les cellules saines. La bonne nouvelle : nos cellules possèdent des systèmes de réparation très efficaces, comme une équipe de réparateurs qui intervient en permanence pour corriger les petits dégâts du quotidien.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Une réparation naturelle permanente",
+              "text": "Votre corps répare en continu de minuscules dégâts de l'ADN, même sans aucun rayonnement, simplement à cause du fonctionnement normal de vos cellules. Les systèmes de réparation font partie de la vie de tous les jours."
+            }
+          ]
+        },
+        {
+          "title": "Comment cela se passe lors d'un examen ou d'un traitement",
+          "text": "Lors d'un examen d'imagerie, la quantité de rayonnement reçue est faible et les éventuels petits dégâts à l'ADN sont réparés rapidement par la cellule. Lors d'un traitement par médicament radioactif (administré le plus souvent par une injection ou par voie orale), le produit va se fixer surtout sur les cellules malades pour les abîmer plus fortement, là où elles se réparent moins bien que les cellules saines. Selon les cas, l'équipe médicale peut réaliser une prise de sang avant et après le traitement pour suivre la façon dont votre organisme réagit. Il n'y a pas de préparation compliquée à prévoir : l'équipe vous explique chaque étape et reste disponible pour répondre à vos questions.",
+          "steps": [
+            {
+              "title": "Avant",
+              "text": "Le médecin vérifie votre situation et vous explique le déroulement. Une prise de sang de référence est parfois réalisée."
+            },
+            {
+              "title": "Pendant",
+              "text": "Le rayonnement ou le produit radioactif agit sur les cellules ciblées. Vous ne ressentez généralement rien de particulier au moment où il agit."
+            },
+            {
+              "title": "Après",
+              "text": "Vos cellules saines réparent les petits dégâts. Un suivi peut être proposé pour s'assurer que tout se passe bien."
+            }
+          ]
+        },
+        {
+          "title": "Sécurité et précautions",
+          "text": "Les doses utilisées en imagerie sont maîtrisées et choisies pour rester aussi faibles que possible tout en restant utiles au diagnostic. Pour les traitements, le rapport entre le bénéfice attendu et les risques est évalué pour chaque personne. Certaines personnes ont, de naissance, une sensibilité particulière aux rayonnements (en raison d'une maladie rare touchant la réparation de l'ADN) : il est important de signaler à votre médecin tout antécédent personnel ou familial de réactions inhabituelles à une radiothérapie, ainsi que toute maladie génétique connue. Cela permet d'adapter au mieux les précautions.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Ce que vous pouvez signaler",
+              "text": "Mentionnez à votre équipe toute réaction forte de la peau lors d'une radiothérapie passée, ou une maladie génétique connue dans la famille. Ces informations aident à personnaliser votre prise en charge."
+            },
+            {
+              "type": "warning",
+              "title": "En cas de doute",
+              "text": "N'hésitez jamais à poser vos questions sur les bénéfices et les précautions d'un examen ou d'un traitement : l'équipe est là pour vous informer et vous rassurer."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : le concept lésion/réparation en pratique clinique",
+          "text": "Comprendre que les rayonnements ionisants endommagent principalement l'ADN, et que la cassure double-brin non réparée est la lésion la plus létale, éclaire plusieurs décisions cliniques courantes. Ce socle radiobiologique est utile chaque fois que vous prescrivez ou expliquez un examen irradiant, que vous orientez un patient vers une radiothérapie interne vectorisée, ou que vous suspectez un terrain de radiosensibilité particulière. Il sous-tend également le rationnel des inhibiteurs de réparation (comme les inhibiteurs de PARP) utilisés en oncologie sur les tumeurs déficientes en réparation par recombinaison homologue.",
+          "list": [
+            "Patient candidat à une thérapie par radionucléides (cancers neuroendocrines, cancer de prostate métastatique, etc.) : la cible thérapeutique repose sur l'induction de cassures de l'ADN dans les cellules tumorales.",
+            "Antécédent personnel ou familial évoquant un syndrome de radiosensibilité (ataxie-télangiectasie, syndrome de cassure de Nimègue, anémie de Fanconi) avant toute irradiation thérapeutique.",
+            "Tumeur avec déficit de réparation (contexte BRCA / déficit de recombinaison homologue) : sensibilité particulière aux agents endommageant l'ADN et aux inhibiteurs de réparation.",
+            "Réactions tissulaires sévères ou inattendues après une radiothérapie antérieure, devant faire évoquer une anomalie constitutionnelle de la réparation."
+          ]
+        },
+        {
+          "title": "Démarche et apport de la médecine nucléaire",
+          "text": "La médecine nucléaire mobilise ce concept de deux façons complémentaires. D'une part, en thérapie : le choix entre émetteurs bêta (parcours millimétrique, effet de feu croisé sur un volume tumoral) et émetteurs alpha (parcours de quelques cellules, lésions groupées difficilement réparables, efficacité biologique plus élevée) découle directement de la nature des lésions induites sur l'ADN. D'autre part, en biodosimétrie : la détection de marqueurs des cassures double-brin (foyers de réparation dans les lymphocytes) après administration d'un radiopharmaceutique permet d'objectiver et de suivre l'impact biologique réel d'un traitement, en complément de la dosimétrie physique. Pour adresser un patient, un compte rendu d'imagerie récent, le contexte oncologique et les antécédents de radiosensibilité sont les éléments les plus utiles à transmettre.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adressez à la médecine nucléaire les patients pour qui une thérapie par radionucléides est envisagée, ou ceux dont le terrain (déficit de réparation suspecté, antécédent de réaction sévère à une irradiation) justifie une évaluation radiobiologique avant un traitement irradiant. Le spécialiste pourra préciser le rationnel du choix de l'agent (bêta vs alpha), intégrer une biodosimétrie si pertinent, et adapter les précautions au profil individuel de réparation de l'ADN. Transmettez le contexte oncologique, les comptes rendus d'imagerie récents et tout antécédent de radiosensibilité personnelle ou familiale."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité — lésions de l'ADN radio-induites et réparation",
+          "text": "**Comment lire cette carte.** Cet article n'est ni un traceur ni un examen : c'est le **socle radiobiologique** qui sous-tend toute la médecine nucléaire diagnostique et thérapeutique. La **cible critique** est l'**ADN nucléaire** ; l'agression initiale est le **dépôt d'énergie** par les rayonnements ionisants (RI), converti en lésions moléculaires soit par **action directe** (ionisation de l'ADN), soit par **action indirecte** (radicaux issus de la radiolyse de l'eau). La lésion **déterminante** n'est pas la plus fréquente mais la plus létale : la **cassure double-brin (DSB, *double strand break*)**. Le devenir cellulaire dépend ensuite d'un réseau de **réparation** (≥ 5 voies) et de **signalisation des dommages (DDR, *DNA damage response*)** dont la fidélité conditionne mort cellulaire, mutagenèse ou carcinogenèse.[6]\n\n| Paramètre | Valeur de référence (faible TLE, 1 Gy, cellule de mammifère) | Source |\n|---|---|---|\n| Cible critique | **ADN nucléaire** (double hélice, ~2 nm de diamètre) | [6] |\n| Dépôt d'énergie | 1 Gy = **1 J/kg** | [29] |\n| Action indirecte | **~2/3 (≈ 65 %)** des dommages biologiques (•OH) | [31] |\n| Dommages de bases | **~2 500–25 000** /cellule/Gy (les plus fréquents) | [29] |\n| Cassures simple-brin (SSB) | **~1 000** /cellule/Gy | [29] |\n| Cassures double-brin (DSB) | **~40** /cellule/Gy (les plus létales) | [28] |\n| Marqueur quantitatif des DSB | foyers **γ-H2AX / 53BP1** (1 foyer ≈ 1 DSB) | [40] |\n| Voies de réparation des DSB | **c-NHEJ** (rapide, infidèle) · **HR** (fidèle, S/G2) | [34] |\n| Pertinence médecine nucléaire | β⁻ (¹⁷⁷Lu) vs α (²²⁵Ac) vs Auger (¹²⁵I) | [2] |\n\nLes **dommages de bases** et les **SSB** sont abondants mais largement réparés ; ce sont les **~40 DSB/Gy** — et surtout leur sous-population **complexe/groupée** — qui corrèlent le mieux avec la **mort clonogénique**.[29] La quantification *in vivo* de ces DSB par foyers **γ-H2AX** est devenue un **dosimètre biologique** applicable jusque dans le sang des patients traités par radiopharmaceutiques.[3,58]",
+          "stats": [
+            {
+              "value": "~40 DSB/Gy",
+              "label": "Cassures double-brin (faible TLE)"
+            },
+            {
+              "value": "~1000 SSB/Gy",
+              "label": "Cassures simple-brin"
+            },
+            {
+              "value": "≈ 65 %",
+              "label": "Part de l'action indirecte (•OH)"
+            },
+            {
+              "value": "1 foyer = 1 DSB",
+              "label": "Sensibilité du marqueur γ-H2AX"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — pourquoi ce socle compte en médecine nucléaire",
+              "text": "Tout le **théranostique** repose sur cette chaîne : un émetteur **β⁻** (¹⁷⁷Lu) et un émetteur **α** (²²⁵Ac) délivrent une dose absorbée comparable mais une **densité de lésions ADN** radicalement différente. Pour induire des DSB prédictives d'efficacité sur récepteurs de la somatostatine, le ²²⁵Ac est **bien plus efficace** que le ¹⁷⁷Lu par unité d'activité.[2] Comprendre la lésion ADN, c'est comprendre pourquoi.[53]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — fréquence n'est pas létalité",
+              "text": "La hiérarchie d'**incidence** (bases > SSB > pontages > DSB) est l'**inverse** de la hiérarchie de **létalité** : les DSB, minoritaires, sont les plus longues à réparer et les mieux corrélées à la mort cellulaire ; les SSB issues des ROS sont massives mais peu létales.[29]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des modes d'émission (alpha, beta-moins, electrons Auger) et de leur densite d'ionisation le long de la trace, determinant la densite des lesions ADN."
+          }
+        },
+        {
+          "title": "A2 - La cible et le dépôt d'énergie : de l'ionisation à la lésion moléculaire",
+          "text": "**La cible structurale.** L'ADN est une **double hélice** d'environ **2 nm de diamètre**, dont les deux brins antiparallèles sont reliés par les bases appariées ; un tour d'hélice ≈ 10 paires de bases (pb) ≈ **3,4 nm**.[6] Cette géométrie définit la lésion la plus grave : une **DSB** est constituée de deux cassures sur brins opposés séparées de **≤ 1–2 tours d'hélice** (quelques pb) ; au-delà, il s'agit de **deux SSB indépendantes**, réparées séparément et sans létalité majeure.[39] C'est cette **proximité spatiale** — et non le nombre absolu de cassures — qui fait la dangerosité.\n\n**Du dépôt d'énergie à la lésion.** Le RI dépose son énergie par **ionisations et excitations** le long de sa trace. La grandeur qui décrit la **densité** de ce dépôt est le **transfert linéique d'énergie (TLE, *LET*)**, en **keV/µm** :\n\n| Type de rayonnement | TLE | Conséquence sur l'ADN | Source |\n|---|---|---|---|\n| **Faible TLE** (X, γ, β⁻/électrons) | faible | ionisations **éparses** → lésions majoritairement isolées et réparables | [29] |\n| **Fort TLE** (α, neutrons, électrons Auger incorporés) | élevé | ionisations **denses** → forte proportion de lésions **complexes/groupées** | [29] |\n| Particule α (ex. ²²³Ra) | **≈ 80 keV/µm** ; parcours **< 100 µm** (< 10 diamètres cellulaires) | DSB groupées quasi irréparables | [54,55] |\n\n**Lésion groupée (*clustered damage* / LMDS, *locally multiply damaged sites*).** Lorsqu'une **seule trace** produit **≥ 2 lésions dans 1–2 tours d'hélice**, on parle de **site de lésions multiples groupées** : c'est la signature du fort TLE et le déterminant biologique de l'**efficacité biologique relative (EBR, *RBE*)** élevée des particules.[39] Pour 1 Gy de faible TLE, on dénombre déjà **~440 LMDS/cellule**.[29] La proportion de **DSB complexes** passe de **30–40 %** à faible TLE à **> 90 %** à fort TLE, ce qui explique leur **réparabilité réduite** quand la densité d'ionisation augmente.[39]\n\n**Linéarité dose-réponse.** Le rendement de DSB est **linéaire** de **5 mGy** (≈ 0,1 DSB/cellule) à **1 Gy**, fondement biologique du modèle linéaire sans seuil (LNT) discuté plus loin.[28] À noter un **effet débit de dose** : le rendement mesuré est plus élevé à fort débit (**~19,7 DSB/cellule/Gy à 400 mGy/min**) qu'à faible débit, où la réparation concurrente abaisse le compte.[30]",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la proximité, pas le nombre",
+              "text": "Deux SSB sur le même brin, ou éloignées, sont réparées sans difficulté. C'est leur **co-localisation** sur brins opposés à quelques pb qui crée la DSB, et la **superposition de plusieurs lésions** dans le même nanovolume qui crée la lésion groupée. Le fort TLE est dangereux non parce qu'il casse *plus*, mais parce qu'il casse *au même endroit*.[39]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — pertinence Auger en médecine nucléaire",
+              "text": "Un émetteur **Auger** (¹²⁵I, ¹¹¹In, ⁹⁹ᵐTc, ⁶⁷Ga) n'est un agent à **fort TLE local** que s'il est **incorporé au contact de l'ADN** (ex. ¹²⁵I-IUdR) : la cascade d'électrons de très courte portée dépose alors son énergie à l'échelle nm. Loin de l'ADN, son effet biologique est faible. Le **¹²⁵I est ≈ 1,5× plus efficace que le ¹²³I par désintégration** pour induire SSB/DSB.[56,57]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schema du depot d'energie le long d'une trace de particule, illustrant la difference entre ionisations eparses (faible TLE) et ionisations denses generant des lesions groupees (fort TLE) sur la double helice d'ADN."
+          }
+        },
+        {
+          "title": "A3 - Action directe, action indirecte et radiolyse de l'eau",
+          "text": "Le RI lèse l'ADN par **deux voies complémentaires**, dont le poids relatif dépend du TLE.\n\n**Action directe.** L'énergie est déposée **directement** sur la molécule d'ADN, qu'elle ionise et fragmente. Cette voie est minoritaire à faible TLE (**~1/3 des lésions**) mais **prédomine à fort TLE** (α, ions lourds), où la trace dense traverse physiquement la cible.[31]\n\n**Action indirecte.** L'énergie est d'abord déposée sur les **molécules d'eau** environnantes, qui constituent **~60–90 %** du contenu cellulaire ; leur **radiolyse** génère des **espèces réactives** qui diffusent et attaquent l'ADN. À faible TLE (X, γ, électrons de linac, **émetteurs β⁻**), cette voie représente **~2/3 (≈ 65 %)** des dommages biologiques.[4,31] Le radical déterminant est le **radical hydroxyle (•OH)**, responsable de **60–70 %** des dommages à l'ADN (cassures de brins et lésions de bases/sucres).[32]\n\n**La radiolyse de l'eau** produit un cortège d'espèces :\n\n| Espèce | Nature | Rôle vis-à-vis de l'ADN | Source |\n|---|---|---|---|\n| **•OH** (radical hydroxyle) | radical oxydant | **principal** agent de l'effet indirect (SSB, DSB, dommages de bases) | [26,32] |\n| **e⁻aq** (électron aqueux) | espèce réductrice | réagit avec l'eau et l'O₂, génère des radicaux secondaires | [33] |\n| **H•** (atome d'hydrogène) | radical réducteur | arrachement d'hydrogène sur le squelette sucre | [33] |\n| **H₂O₂, H₂** | moléculaires | toxicité oxydante différée (« effet H₂O₂ ») | [4,33] |\n\nLa **durée de vie** de ces radicaux est extrêmement brève (**~10⁻⁹–10⁻¹¹ s**) : leur portée d'action est nanométrique, ce qui explique que seuls les radicaux nés **au voisinage immédiat** de l'ADN contribuent à l'effet indirect.[29]\n\n**Image-clé.** Le rayon ionisant est une grêle d'énergie. À fort TLE, il **scie la double échelle net** (action directe → DSB groupée). À faible TLE, il provoque le plus souvent une **éclaboussure de radicaux •OH** issus de l'eau, qui rongent montants et barreaux à distance.[6,31] Une **DSB non réparée = un barreau et ses deux montants tranchés**, lésion la plus létale.[6]",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — l'effet oxygène (OER)",
+              "text": "L'oxygène **« fixe »** les lésions radicalaires : il réagit avec les radicaux de l'ADN pour les rendre permanents avant qu'une chimie de réparation (par les thiols) ne les restaure. D'où l'**OER (*oxygen enhancement ratio*) ≈ 2,5–3** pour le faible TLE — l'hypoxie tumorale protège de l'irradiation.[51] À **fort TLE (α), l'OER tend vers 1** : l'action directe dominante rend l'effet quasi indépendant de l'oxygène.[51,52] C'est un argument biologique en faveur des émetteurs α dans les tumeurs hypoxiques."
+            },
+            {
+              "type": "info",
+              "title": "Conséquence — radioprotecteurs et radiosensibilisateurs",
+              "text": "Cibler l'action indirecte modifie l'effet : l'**amifostine** (seul radioprotecteur approuvé par la FDA) est une prodrogue thiol qui **capte les radicaux •OH**, donne des atomes H• et induit une hypoxie cellulaire transitoire.[13,14] À l'inverse, l'« **effet H₂O₂** » est exploité pour potentialiser la radiothérapie à faible TLE.[4]"
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schema illustrant les deux voies de lesion de l'ADN : action directe (ionisation de l'ADN) et action indirecte (radiolyse de l'eau generant le radical hydroxyle OH qui diffuse vers l'ADN)."
+          }
+        },
+        {
+          "title": "A4 - Taxonomie complète des lésions de l'ADN radio-induites",
+          "text": "Les RI produisent un **spectre** de lésions dont l'**incidence** est l'inverse de la **gravité**. Pour **1 Gy de faible TLE** dans une cellule de mammifère :\n\n| Lésion | Rendement /cellule/Gy | Voie de réparation dominante | Létalité | Source |\n|---|---|---|---|---|\n| **Dommages de bases** | **~2 500–25 000** | BER (excision de base) | faible | [29,47] |\n| **Cassures simple-brin (SSB)** | **~1 000** | BER / réparation des SSB (PARP1) | faible | [29] |\n| **Pontages ADN–protéines** | moins fréquents que les SSB | voies dédiées | variable | [29] |\n| **Sites de lésions groupées (LMDS)** | **~440** | réparation difficile, fautive | élevée | [29] |\n| **Cassures double-brin (DSB)** | **~40** (jusqu'à **63–70** selon l'ATSDR) | c-NHEJ / HR | **maximale** | [28,29] |\n\n**Hiérarchie d'incidence :** dommages de bases > SSB > pontages ADN–protéines > DSB.[29] **Hiérarchie de létalité :** les **DSB** corrèlent le mieux avec la mort clonogénique et sont les plus longues à réparer ; les SSB, bien que massives, sont peu létales.[29]\n\n**Détail des classes.**\n\n- **Dommages de bases** : oxydation (ex. 8-oxo-guanine), désamination, perte de base (site abasique/AP). Lésion la plus fréquente, traitée par **BER**.[29,47]\n- **SSB** : rupture d'un seul montant du squelette sucre-phosphate. Détectées par **PARP1**, réparées en minutes ; non létales isolément, mais **converties en DSB** si rencontrées par une fourche de réplication — mécanisme exploité par les **inhibiteurs de PARP**.[12,27]\n- **DSB** : rupture des deux brins à ≤ 1–2 tours d'hélice. Lésion **canonique** de la radiobiologie ; quantifiée par foyers **γ-H2AX**.[40]\n- **DSB complexes / lésions groupées (LMDS)** : ≥ 2 lésions dans 1–2 tours d'hélice générées par **une seule trace**. Leur proportion croît de **30–40 % (faible TLE)** à **> 90 % (fort TLE)** ; elles **inhibent le c-NHEJ** et basculent la réparation vers des voies de secours mutagènes (alt-EJ, SSA), d'où une **toxicité accrue**.[38,39]\n\n**Le marqueur de référence — γ-H2AX.** À chaque DSB, **des centaines de molécules d'histone H2AX** sont phosphorylées (γ-H2AX) dans la chromatine flanquante, formant un **foyer** détectable en immunofluorescence : **1 foyer ≈ 1 DSB**.[40] Le **53BP1** co-localise et marque la composante de réparation lente.[42] Ordres de grandeur : **17–24 foyers/Gy** après 1 Gy de RX faible dose, décroissant à **13–15 foyers/Gy** entre 1 et 4 Gy.[1] Ce biomarqueur est sensible à la **lésion unique** (détectable < 20 mGy au sang), ce qui en fait le **dosimètre biologique** utilisé après thérapie au ¹³¹I[3] ou en thérapie au ¹⁷⁷Lu (dose au sang **< 100 mGy à 48 h**, élévation des foyers chez **tous** les patients).[58]\n\n**Mise en perspective.** L'ADN subit en permanence des lésions **endogènes** (oxydation, désamination, dépurination) réparées en continu ; le RI ajoute une **charge ponctuelle** quantifiée au-dessus de ce bruit de fond.[40] C'est cette charge surnuméraire — et la fraction **irréparable** des DSB complexes — qui décide du sort de la cellule.",
+          "stats": [
+            {
+              "value": "~2 500–25 000",
+              "label": "Dommages de bases /cellule/Gy"
+            },
+            {
+              "value": "~440 LMDS/Gy",
+              "label": "Sites de lésions groupées"
+            },
+            {
+              "value": "30–40 % → >90 %",
+              "label": "DSB complexes (faible → fort TLE)"
+            },
+            {
+              "value": "<20 mGy",
+              "label": "Seuil de détection γ-H2AX au sang"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la SSB qui devient DSB (létalité synthétique)",
+              "text": "Une SSB n'est dangereuse que si elle persiste jusqu'à la **réplication** : la fourche la convertit alors en **DSB à une extrémité**, normalement réparée par **recombinaison homologue (HR)**. En cas de **déficit HR (mutations BRCA1/2)**, cette DSB n'est plus réparée fidèlement → **catastrophe réplicative**. C'est le principe des **inhibiteurs de PARP** (blocage de la réparation des SSB + *PARP trapping*) et de leur radiosensibilisation, dépendante de la compétence HR.[12,27,68]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — γ-H2AX, un dosimètre avec une fenêtre temporelle",
+              "text": "Le signal γ-H2AX **monte puis décroît** par réparation : son interprétation impose un **timing post-exposition strict**. À forte dose (≥ 3,5 Gy), les foyers restent détectables en lymphocytes ≥ 4 jours.[40] Sous irradiation **continue** (radiothérapie interne vectorisée), le signal peut décliner dès 24 h malgré une dose croissante (faux-négatif relatif) : interpréter avec la cinétique débit/dose.[59]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Schema reliant le spectre des lesions de l'ADN (bases, SSB, DSB, lesions groupees) a la quantification par foyers gamma-H2AX servant de dosimetre biologique en radiotherapie interne vectorisee."
+          }
+        },
+        {
+          "title": "B5 - Réparer les petites lésions de base : BER, NER et réversion directe",
+          "text": "Sous l'effet d'un rayonnement de **faible TLE** (transfert linéique d'énergie : X, γ, électrons, émetteurs β⁻), la lésion la plus abondante n'est ni la cassure simple-brin ni la cassure double-brin, mais le **dommage de base** : on compte **~2 500–25 000 dommages de bases / Gy / cellule** contre **~1 000 cassures simple-brin (SSB) / Gy / cellule** [5,29]. Ces atteintes — bases oxydées (8-oxoguanine), désaminées, sites abasiques (AP), SSB — sont prises en charge par trois systèmes d'**excision-resynthèse** qui partagent une logique commune : reconnaître, exciser, resynthétiser sur le brin complémentaire intact, religaturer. Le brin opposé sert de matrice : ces voies sont donc intrinsèquement **fidèles**, contrairement à la réparation des cassures double-brin (cf. §B6).\n\n**▸ BER (base excision repair) — le cheval de bataille des dommages radio-induits.** C'est la voie centrale des lésions de bases et des SSB générées par les radicaux issus de la radiolyse de l'eau (le radical hydroxyle **·OH** porte **60–70 %** des dommages par effet indirect) [4,32]. Elle se déroule en cinq étapes [47,48,50] :\n\n| Étape | Acteur(s) | Rôle |\n|---|---|---|\n| 1. Reconnaissance/excision de la base | **ADN glycosylase** (OGG1, NTH1, UNG…) | Clive la liaison N-glycosidique → site abasique (AP) |\n| 2. Incision du site AP | **APE1** (AP-endonucléase 1) | Coupe le squelette en 5′ du site AP |\n| 3. Nettoyage des extrémités | PNKP, pol β (activité dRP-lyase) | Génère des extrémités ligaturables |\n| 4. Resynthèse | **ADN polymérase β** (short-patch) ou pol δ/ε (long-patch) | Comble la brèche |\n| 5. Ligature | **ligase III**α (échafaudage **XRCC1**) ou ligase I | Scelle le squelette phosphodiester |\n\nLa **PARP1** (poly-ADP-ribose polymérase 1) détecte les SSB et recrute l'échafaudage **XRCC1** : c'est ce maillon qu'exploitent les inhibiteurs de PARP (cf. §B8 et létalité synthétique) [12]. La cinétique de BER/réparation des SSB est rapide — de l'ordre de quelques minutes, ce qui explique la faible létalité des SSB malgré leur abondance massive [29].\n\n**▸ NER (nucleotide excision repair) — les lésions encombrantes.** Le NER excise un **oligonucléotide de ~25–30 bases** entourant une lésion qui déforme la double hélice (adduits volumineux, dimères de pyrimidine, photoproduits) [49]. Deux sous-voies : **GG-NER** (global genome, balayage de tout le génome) et **TC-NER** (transcription-coupled, déclenché par l'ARN polymérase bloquée). Le NER est marginal pour les dommages directs des RI mais pertinent pour certaines lésions oxydatives complexes et les adduits induits par des radiosensibilisateurs chimiques.\n\n**▸ MMR (mismatch repair) — les mésappariements.** Corrige les mésappariements Watson-Crick et les boucles d'insertion/délétion échappant à la relecture des polymérases [50]. Son rôle dans la réponse directe aux RI est limité, mais sa perte (instabilité microsatellitaire) module la réponse aux dommages.\n\n**▸ Réversion directe.** Quelques lésions sont annulées sans excision : la **MGMT** (O⁶-méthylguanine-ADN méthyltransférase) transfère le groupement alkyle d'une guanine alkylée sur l'un de ses propres résidus cystéine (enzyme « suicide », consommée stœchiométriquement) — déterminant majeur de la réponse aux agents alkylants associés à l'irradiation.",
+          "stats": [
+            {
+              "value": "~1 000",
+              "label": "SSB / Gy / cellule (faible TLE) [29]"
+            },
+            {
+              "value": "2 500–25 000",
+              "label": "dommages de bases / Gy / cellule [5,29]"
+            },
+            {
+              "value": "60–70 %",
+              "label": "des dommages portés par le radical ·OH [4,32]"
+            },
+            {
+              "value": "5 étapes",
+              "label": "séquence canonique du BER [47,48]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "BER et réparation des SSB sont **fidèles par construction** : le brin opposé intact sert de matrice. Le danger ne vient pas de la SSB isolée — réparée en quelques minutes [29] — mais de sa **conversion en cassure double-brin** lorsqu'une fourche de réplication rencontre une SSB non réparée en phase S. C'est le mécanisme exact de la **létalité synthétique des inhibiteurs de PARP** dans les cellules déficientes en recombinaison homologue (BRCA1/2) : SSB persistante → DSB en réplication → catastrophe mitotique si la HR est défaillante (cf. §B6, §B8) [12,27,68]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — l'abondance ne fait pas la létalité",
+              "text": "Ne pas confondre **fréquence** et **gravité** lésionnelle. Hiérarchie d'incidence : dommages de bases > SSB > pontages ADN-protéines > **DSB** [29]. Hiérarchie de **létalité** : c'est l'inverse — la **DSB** corrèle le mieux avec la mort cellulaire bien qu'elle soit ~25× plus rare que les dommages de bases [29]. Les SSB radio-induites, massives (~1 000/Gy), sont presque toutes réparées sans conséquence [29]."
+            }
+          ]
+        },
+        {
+          "title": "B6 - Réparer la cassure double brin : NHEJ vs recombinaison homologue",
+          "text": "La **cassure double-brin (DSB)** est la lésion radio-induite déterminante : **~40 DSB / Gy / cellule** en faible TLE (jusqu'à **63–70/Gy** selon la modélisation ATSDR), à comparer aux **10–50 DSB/cellule/jour** générées par le métabolisme endogène [5,29]. La dose-réponse est **linéaire de 5 mGy (0,1 DSB/cellule) à 1 Gy**, observation qui sous-tend le modèle linéaire sans seuil en radioprotection [28]. Une DSB se définit par deux cassures de brins opposés séparées de **≤ ~10 paires de bases** (environ un tour d'hélice) ; au-delà, il s'agit de deux SSB indépendantes [1]. Deux voies principales — plus deux voies de secours — se partagent leur réparation, et **le choix entre elles dépend de la phase du cycle, de la complexité de la lésion et de la dose** [34,35,37].\n\n| Caractéristique | **c-NHEJ** (jonction d'extrémités non homologue) | **HR** (recombinaison homologue) |\n|---|---|---|\n| Fidélité | **Infidèle** (mutagène aux jonctions) | **Haute fidélité** |\n| Phase du cycle | **Tout le cycle**, prédominante en **G1** | **S/G2** uniquement (chromatide sœur requise) |\n| Matrice | Aucune (religature directe) | **Chromatide sœur** homologue |\n| Acteurs clés | **Ku70/Ku80, DNA-PKcs, ligase IV/XRCC4**, XLF | **MRN, CtIP, RPA, RAD51, RAD54, BRCA1/2** |\n| Cinétique | **Rapide (1–2 h)** ; Ku sur la lésion en **~1 s** | **Lente (≥ 8 h)** |\n| Part des DSB | **70–80 %** (réparation rapide) | Sous-ensemble (DSB complexes, S/G2) |\n\n**▸ c-NHEJ — rapide, omniprésent, infidèle.** L'hétérodimère **Ku70/Ku80** reconnaît les extrémités libres quasi instantanément (**~1 s** post-irradiation), recrute la **DNA-PKcs** (formant la holoenzyme DNA-PK), qui synapse les deux extrémités ; après traitement minimal des bouts, le complexe **ligase IV / XRCC4 / XLF** religature [1,34,35]. C'est la voie **majoritaire des DSB radio-induites chez les mammifères**, active dans tout le cycle, donc seule disponible en G1/G0. Sa rançon : des **erreurs aux jonctions** (petites délétions/insertions), d'où son caractère mutagène. **70–80 % des DSB sont réparées rapidement** par cette voie (cinétique de quelques minutes à 1–2 h) [29,41].\n\n**▸ HR — lente, fidèle, restreinte à S/G2.** La HR exige une **résection 5′→3′** des extrémités (initiée par MRN/CtIP, déroulée par EXO1/DNA2), générant un ADN simple-brin recouvert de **RPA** puis de **RAD51** ; le filament nucléoprotéique envahit la **chromatide sœur** comme matrice (étape dépendante de **BRCA2**) [34,36]. Comme elle copie une séquence identique, elle restaure l'information **sans erreur** — mais n'est possible qu'en **S/G2**, lorsque la chromatide sœur existe. Sa lenteur (**≥ 8 h**) reflète ces étapes [1].\n\n**▸ Voies de secours (mutagènes).** Quand c-NHEJ et HR sont indisponibles, la cellule recourt au **alt-EJ / MMEJ** (microhomology-mediated, dépendant de la **pol θ** et de PARP1) et au **SSA** (single-strand annealing), tous deux **délétères et hautement mutagènes** [34,38].",
+          "stats": [
+            {
+              "value": "~40 DSB",
+              "label": "par Gy / cellule (faible TLE) [5]"
+            },
+            {
+              "value": "10–50",
+              "label": "DSB endogènes / cellule / jour (bruit de fond) [29]"
+            },
+            {
+              "value": "70–80 %",
+              "label": "des DSB réparées rapidement par c-NHEJ [29,41]"
+            },
+            {
+              "value": "≥ 8 h",
+              "label": "durée de la réparation par HR (vs 1–2 h NHEJ) [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — pourquoi les émetteurs α sont si efficaces",
+              "text": "Le **fort TLE** (particules α : ~**80 keV/µm** ; parcours du ²²³Ra < 100 µm, soit < 10 diamètres cellulaires) dépose une ionisation dense le long de la trace et génère des **DSB groupées/complexes** : **30–40 % des DSB sont complexes en faible TLE, mais > 90 % en fort TLE** [39,54,55]. Ces clusters **inhibent le c-NHEJ**, favorisent la bascule vers **alt-EJ/SSA** mutagènes malgré une HR accrue, et sont donc **quasi irréparables** [38]. C'est le fondement radiobiologique de la **thérapie alpha ciblée** : à expression de cible égale, le **²²⁵Ac** est bien plus létal que le **¹⁷⁷Lu** (β⁻), avec une **EBR des α de ~5–10** [2,53]. En PRRT somatostatinergique, l'ED₅₀ du ²²⁵Ac-DOTATOC est de l'ordre de **14 kBq/mL** contre **10 MBq/mL** pour le ¹⁷⁷Lu-DOTATOC (facteur ~700×) [2]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la phase du cycle conditionne la radiosensibilité",
+              "text": "La HR n'étant disponible qu'en **S/G2**, une cellule en **G1/G0** ne dispose que du c-NHEJ infidèle : la même DSB sera réparée différemment, et avec une fidélité différente, selon le moment de l'irradiation. Cette dépendance explique la **redistribution** dans le cycle (un des 4 R de la radiothérapie) et complique l'interprétation des foyers γ-H2AX [41]. En contexte d'émetteurs Auger (¹²⁵I, ¹¹¹In), la létalité n'est maximale que si le radionucléide est **incorporé dans l'ADN** (ex. ¹²⁵I-IUdR), où la cascade d'électrons crée un fort TLE local nanométrique [56,57]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Schéma de l'aiguillage de réparation d'une cassure double-brin : en G1, l'hétérodimère Ku capte les extrémités et oriente vers le c-NHEJ rapide mais infidèle ; en S/G2, la résection des extrémités et le chargement de RAD51 orientent vers la recombinaison homologue lente et fidèle utilisant la chromatide sœur comme matrice.",
+            "caption": "Fig. B6 — Aiguillage de la réparation des DSB : c-NHEJ (G1, rapide, infidèle) vs HR (S/G2, lente, fidèle) ; la résection des extrémités est le commutateur décisionnel."
+          }
+        },
+        {
+          "title": "B7 - Détecter, signaler, décider : la réponse aux dommages de l'ADN (DDR)",
+          "text": "Avant toute réparation, la cellule doit **détecter** la lésion, **amplifier** le signal et **décider** : arrêter le cycle pour réparer, ou éliminer la cellule. Cette cascade intégrée est la **DDR** (DNA damage response), organisée autour de deux kinases apicales — **ATM** (ataxia-telangiectasia mutated) et **ATR** (ATM- and Rad3-related) — relayées par les kinases effectrices **CHK2** et **CHK1**, le tout convergeant sur **p53** et sur les points de contrôle du cycle [6,44,45].\n\n**▸ Détection et amplification.** Le complexe senseur **MRN (MRE11-RAD50-NBS1)** se lie aux extrémités de la DSB dans la seconde et **recrute et active ATM** [6,45]. ATM phosphoryle alors l'histone **H2AX** sur la sérine 139 : le variant phosphorylé **γ-H2AX** se propage sur des **centaines de kilobases** de chromatine flanquante, créant un **foyer** visible en immunofluorescence et amplifiant le signal [40]. **53BP1** est recruté en aval et co-localise. Le bras **ATR-CHK1** est, lui, activé par l'**ADN simple-brin recouvert de RPA** : fourches de réplication bloquées (stress réplicatif, phase S) et **extrémités résectées** de la HR [22,23].\n\n**▸ Décision — les points de contrôle.** ATM/ATR-CHK2/CHK1 imposent des arrêts qui ouvrent une fenêtre de réparation [22,23] :\n\n| Checkpoint | Voie de signalisation | Effet moléculaire |\n|---|---|---|\n| **G1/S** | ATM → CHK2 → **p53** → **p21** | Inhibition des complexes CDK → blocage en G1 |\n| **Intra-S** | ATM/ATR → CHK1/CHK2 | Ralentissement de la réplication |\n| **G2/M** | ATR/ATM → **CHK1** → inhibition **CDC25** | Phosphorylation inhibitrice de **CDK1** → blocage en G2 |\n\nSi le dommage est **réparable**, l'arrêt est transitoire et le cycle redémarre. Si le dommage est **extensif ou irréparable**, p53 oriente vers l'**apoptose** (transactivation de PUMA, BAX, NOXA), la **sénescence** ou la mort mitotique (cf. §B8). Le **CHK2** est requis pour cette apoptose p53-dépendante [22].",
+          "steps": [
+            {
+              "title": "t ≈ 0–1 s — Détection",
+              "text": "Le complexe **MRN** se fixe sur les extrémités de la DSB et recrute **ATM** ; en phase S, l'ADN simple-brin/RPA active **ATR** [6,45]."
+            },
+            {
+              "title": "t ≈ 1 s–min — Amplification",
+              "text": "ATM phosphoryle **H2AX → γ-H2AX**, qui se propage sur la chromatine flanquante et recrute **53BP1** : formation des **foyers** (1 foyer ≈ 1 DSB) [40]. Recrutement de 53BP1 mesuré : latence T0 ≈ **77 ± 7 s** [43]."
+            },
+            {
+              "title": "t ≈ min–h — Décision",
+              "text": "CHK2/CHK1 imposent les arrêts **G1/S** (p53→p21) et **G2/M** (CHK1→CDC25→CDK1) ; ouverture de la fenêtre de réparation [22,23]."
+            },
+            {
+              "title": "t ≈ 2 h — Pic des foyers",
+              "text": "In vivo après ¹³¹I, **pic des foyers γ-H2AX/53BP1 à 2 h**, puis décroissance de premier ordre ; foyers résiduels détectables jusqu'à **120–144 h** [3]."
+            },
+            {
+              "title": "t = h–j — Résolution ou élimination",
+              "text": "Réparation complète → disparition des foyers et reprise du cycle ; dommage irréparable → **apoptose p53/CHK2-dépendante**, sénescence ou mort mitotique [22]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "MRN → ATM",
+              "label": "senseur → kinase apicale des DSB [6,45]"
+            },
+            {
+              "value": "77 ± 7 s",
+              "label": "latence de recrutement de 53BP1 [43]"
+            },
+            {
+              "value": "pic à 2 h",
+              "label": "foyers γ-H2AX in vivo après ¹³¹I [3]"
+            },
+            {
+              "value": "< 20 mGy",
+              "label": "seuil de détection γ-H2AX au sang [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — γ-H2AX, le dosimètre biologique de la médecine nucléaire",
+              "text": "À chaque DSB correspondent des centaines de molécules γ-H2AX → **1 foyer ≈ 1 DSB**, d'où une sensibilité à la lésion unique : **17–24 foyers/Gy** après 1 Gy de RX, **13–15 foyers/Gy** entre 1 et 4 Gy, détectable **< 20 mGy** au sang [1,40]. En thérapie par radionucléides, c'est un **biodosimètre individuel** validé : après ¹⁷⁷Lu-DOTATATE, **élévation des foyers chez tous les patients**, le pic corrélant à la dose tumorale, à la dose médullaire et à la lymphopénie, pour une **dose sanguine < 100 mGy à 48 h** [58]. Foyers également augmentés dans les leucocytes dès les premières heures après ¹⁷⁷Lu-PSMA [59], avec des profils lésionnels **dissemblables** entre ¹⁷⁷Lu-DOTATOC et ¹⁷⁷Lu-PSMA [60]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — déficits constitutionnels de la DDR = hypersensibilité",
+              "text": "Une **mutation d'un gène de la DDR** abolit la détection ou l'arrêt du cycle et confère une **radiosensibilité dramatique** : **ataxie-télangiectasie** (mutations **ATM**, autosomique récessive), **syndrome de cassure de Nimègue** (**NBN/NBS1**), anémie de Fanconi, syndrome LIG4. Des réactions sévères, parfois fatales, surviennent à des doses conventionnelles — à rechercher (anamnèse familiale, réactions cutanées antérieures) **avant toute irradiation thérapeutique ou RIV à visée curative** [15,16,17,44,46]."
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Représentation en cible concentrique de la cascade DDR : au centre la cassure double-brin détectée par le complexe MRN, première couronne l'activation des kinases apicales ATM et ATR, couronne suivante les kinases effectrices CHK2 et CHK1, couronne externe les points de contrôle G1/S, intra-S et G2/M convergeant sur p53.",
+            "caption": "Fig. B7 — Architecture de la DDR : MRN → ATM/ATR → CHK2/CHK1 → checkpoints du cycle et p53 (réparer ou éliminer)."
+          }
+        },
+        {
+          "title": "B8 - Quand la réparation échoue : mort cellulaire, mutation et survie",
+          "text": "Lorsque la réparation est **fidèle et complète**, la cellule survit indemne. Lorsqu'elle est **infidèle** (c-NHEJ, alt-EJ, SSA) ou **débordée**, trois issues sont possibles : la **mort cellulaire** (objectif thérapeutique), la **mutation/instabilité génomique** (carcinogenèse) ou une **survie avec séquelle**. C'est l'arbitrage entre ces issues que modélise la radiobiologie quantitative et qu'exploite toute la médecine nucléaire thérapeutique.\n\n**▸ Modèle linéaire-quadratique (LQ).** La survie clonogénique suit **S = exp(−αD − βD²)** [8,28,51]. La composante **α** (linéaire) traduit une DSB létale créée par une **trace unique** ; la composante **β** (quadratique) traduit une létalité par **deux traces** indépendantes. Le **rapport α/β** (en Gy) est la dose où les deux contributions s'égalent :\n\n| Tissu / réponse | α/β | Interprétation |\n|---|---|---|\n| Tumeurs / tissus à **renouvellement rapide** (réponse précoce) | **≈ 10 Gy** | Faible courbure → moins sensible au fractionnement |\n| Tissus sains à **réponse tardive** | **≈ 3 Gy** | Forte courbure → épargnés par le fractionnement |\n\nCe rapport est le fondement du **fractionnement** en radiothérapie externe et de la modélisation dosimétrique en RIV [8]. Les **résidus de foyers γ-H2AX** (DSB complexes non résolues) corrèlent à la survie clonogénique : ils sont un substitut mesurable de la composante létale [24].\n\n**▸ Modulateurs de l'issue.**\n\n- **Oxygène (effet « fixation »).** L'O₂ stabilise les lésions radicalaires (les « fixe ») : l'**OER** (oxygen enhancement ratio) ≈ **2,5–3 en faible TLE**, mais **proche de 1 pour les particules α** (l'effet direct domine) [51,52]. Une tumeur **hypoxique** est donc radiorésistante aux faibles TLE — argument biologique en faveur des émetteurs α dans certaines indications.\n- **Débit de dose.** À faible débit, la réparation concurrente réduit le rendement de DSB (**~19,7 DSB/cellule/Gy à 400 mGy/min**, moins à bas débit) : phénomène clé en RIV où l'irradiation est **continue et à débit décroissant**, ce qui peut faire **chuter le signal γ-H2AX dès 24 h** (faux-négatif relatif à interpréter avec la cinétique dose-débit) [25,30].\n- **Effets non ciblés.** Effet **bystander** (cellules non irradiées affectées via ROS, NO, cytokines, jonctions communicantes), **instabilité génomique** transmissible, **réponse adaptative** : significatifs à faible dose, ils nuancent l'extrapolation linéaire [18,19,64,65].\n\n**▸ Exploitation thérapeutique — bloquer la réparation pour tuer.** La cellule tumorale survit en réparant ; l'inhiber la **radiosensibilise** :\n\n- **Inhibiteurs de PARP (létalité synthétique).** En bloquant le BER/réparation des SSB et par **« PARP trapping »**, l'olaparib convertit les SSB en DSB en réplication ; dans une cellule **déficiente en HR** (mutations **BRCA1/2**, BRCAness), ces DSB ne sont pas réparées → **catastrophe de réplication** et mort [12,27,67,68]. En clinique : olaparib (SOLO-1) SSP médiane **19,1 vs 5,5 mois** en cancer ovarien muté BRCA [66]. La radiosensibilisation est **réplication-dépendante** et **p53-dépendante** [66,68].\n- **Inhibiteurs des kinases de la DDR** (ATM, ATR, DNA-PK, CHK1) : abrogent les checkpoints et radiosensibilisent, notamment les cellules **p53-mutées** dépendantes du checkpoint G2/M [23].\n- **Radioprotecteurs** (effet inverse, sur tissu sain) : l'**amifostine** — **seul radioprotecteur approuvé par la FDA** — est une prodrogue thiol-phosphate capteuse de radicaux ·OH, réduisant l'effet indirect [13,14].",
+          "steps": [
+            {
+              "title": "Réparation fidèle et complète",
+              "text": "BER/HR restaurent la séquence → **survie sans séquelle**. Issue dominante des SSB et des DSB simples [1,29]."
+            },
+            {
+              "title": "Réparation infidèle",
+              "text": "c-NHEJ, alt-EJ, SSA introduisent des **erreurs aux jonctions** → mutation ponctuelle, délétion, translocation → **instabilité génomique / carcinogenèse** [34,38]."
+            },
+            {
+              "title": "Réparation débordée",
+              "text": "DSB groupées (fort TLE) ou dose élevée → dommage irréparable → **apoptose p53/CHK2-dépendante**, sénescence ou **mort mitotique** [22] — l'effet recherché en thérapie."
+            },
+            {
+              "title": "Modélisation de la survie",
+              "text": "Issue intégrée par le **modèle LQ** (S = e^(−αD−βD²)) ; α/β ≈ **10 Gy** (précoce) vs **3 Gy** (tardif), modulé par O₂ (OER ≈ 3) et débit de dose [8,51,52]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "α/β ≈ 3 vs 10 Gy",
+              "label": "tissus tardifs vs réponse précoce [8,51]"
+            },
+            {
+              "value": "OER ≈ 3 / ≈ 1",
+              "label": "faible TLE vs particules α [51,52]"
+            },
+            {
+              "value": "19,1 vs 5,5 mois",
+              "label": "SSP olaparib vs placebo (ovaire BRCA) [66]"
+            },
+            {
+              "value": "amifostine",
+              "label": "seul radioprotecteur approuvé FDA [13,14]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la signature lésionnelle commande le choix de l'émetteur",
+              "text": "Tout le raisonnement précédent se condense dans le choix β⁻ vs α en RIV. Un **émetteur β⁻** (¹⁷⁷Lu : T½ 6,65 j, β max ~497 keV, parcours millimétrique) produit une **densité de DSB faible mais étalée**, avec effet **cross-fire** sur les cellules voisines — adapté aux masses hétérogènes. Un **émetteur α** (²²⁵Ac : T½ 9,9 j, 4 α en cascade ; ²²³Ra) délivre des **DSB groupées quasi irréparables** sur quelques diamètres cellulaires (EBR ~5–10), peu dépendantes de l'oxygène (OER ≈ 1) — adapté à la maladie micrométastatique et aux tumeurs hypoxiques [2,53,54]. Les **émetteurs Auger** ne sont létaux que **proches de l'ADN** [56,57]. La quantification γ-H2AX permet de **vérifier in vivo** cette signature et d'**individualiser** la dosimétrie biologique [3,58]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — l'efficacité dépend de la compétence de réparation de la tumeur",
+              "text": "La radiosensibilisation par inhibiteur de PARP n'est **pas universelle** : elle suppose un **déficit de HR** (contexte BRCAness/HRD). Dans une tumeur **HR-compétente**, la létalité synthétique est restreinte et le bénéfice limité [27]. Symétriquement, une **cible thérapeutique présente** ne garantit pas la réponse si la machinerie de réparation tumorale est intacte. À l'inverse, un **patient porteur d'un déficit constitutionnel** (ATM, NBS1, Fanconi) sera **hypersensible** y compris sur les tissus sains — d'où l'importance du dépistage avant irradiation curative (cf. §B7) [15,16,17]."
+            }
+          ]
+        },
+        {
+          "title": "C9 - Interpréter la dose-effet : du nombre de lésions au risque biologique",
+          "text": "L'enjeu de l'interprétation radiobiologique est de relier une grandeur physique — la **dose absorbée** (Gy = J/kg) — à une conséquence biologique : nombre de lésions ADN, mort cellulaire, mutation, cancer. Cette chaîne causale est le socle de la dosimétrie interne, du choix β/α en radiothérapie interne vectorisée (RIV) et de la radioprotection.\n\n**▸ Du dépôt d'énergie au compte de lésions.** Pour un rayonnement de **bas transfert linéique d'énergie** (TLE ; rayons X, γ, électrons des émetteurs β), 1 Gy produit par cellule de mammifère un spectre lésionnel hiérarchisé en incidence mais inversement hiérarchisé en létalité :\n\n| Type de lésion | Rendement / cellule / Gy (bas TLE) | Réparabilité / létalité | Source |\n|---|---|---|---|\n| Dommages de bases | **~2 500–25 000** | Très réparables (BER), peu létaux | [29] |\n| Cassures simple-brin (SSB) | **~1 000** | Réparées en minutes (BER/SSBR), peu létales | [1,29] |\n| Sites de lésions multiples groupées (LMDS) | **~440** | Réparabilité réduite | [29] |\n| Cassures double-brin (DSB) | **~40** (modèle 1 Gy RX) ; **63–70** (ATSDR) | **Corrèlent le mieux avec la mort cellulaire** | [28,29] |\n\nLa **DSB est la lésion critique** : elle corrèle le mieux à la survie clonogénique et à la mutagenèse, alors que les SSB et dommages de bases, bien plus nombreux, sont rapidement et fidèlement réparés [29]. Une DSB est définie par deux cassures de brins opposés à **≤ 1–2 tours d'hélice** (≈ 10–25 pb) ; au-delà, ce sont deux SSB indépendantes.\n\n**▸ Le biomarqueur quantitatif : γ-H2AX.** Chaque DSB déclenche la phosphorylation de centaines de molécules d'histone **H2AX** dans la chromatine flanquante, formant un foyer radio-induit (RIF) détectable en immunofluorescence : **1 foyer ≈ 1 DSB** [1,40]. Le rendement est de **17–24 RIF/Gy après 1 Gy** de RX, décroissant à **13–15 RIF/Gy entre 1 et 4 Gy** [1]. Co-localisé avec **53BP1**, γ-H2AX est le dosimètre biologique de référence, sensible à la lésion unique et détectable au-dessous de **20 mGy** au sang [1,40].\n\n**▸ Le modèle linéaire-quadratique (LQ).** La survie cellulaire suit S = exp(−αD − βD²) : la composante **α** (linéaire) traduit la létalité d'une **DSB létale créée par une trace unique**, la composante **β** (quadratique) la létalité résultant de **deux traces indépendantes** [8,28]. Le **rapport α/β** (en Gy) est la dose où les deux contributions s'égalent :\n\n| α/β | Tissus | Comportement de la courbe de survie | Source |\n|---|---|---|---|\n| **≈ 10 Gy** | Tumeurs / tissus à réponse précoce (renouvellement rapide) | Faible courbure (peu d'épaulement) | [8,51] |\n| **≈ 3 Gy** | Tissus à réponse tardive | Forte courbure (épaulement marqué) | [8,51] |\n\nCette différence fonde le rationnel du **fractionnement** : épargner les tissus tardifs à α/β bas en multipliant les petites fractions.\n\n**▸ TLE, lésions groupées et EBR.** Le fort TLE (particules α, ions lourds, électrons Auger) produit une ionisation dense le long de la trace, générant des **lésions groupées/complexes** (DSB multiples + dommages de bases dans quelques nanomètres). La proportion de DSB complexes passe de **30–40 % en bas TLE à > 90 % en fort TLE**, d'où une réparabilité effondrée [39]. Le rendement de RIF/µm sature vers **~200 keV/µm** [1,9]. L'**efficacité biologique relative (EBR/RBE)** — rapport des doses bas-TLE/haut-TLE pour un même effet — atteint **~5–10 pour les particules α** [2], le maximum se situant vers 100–200 keV/µm.\n\n**▸ Pertinence directe en médecine nucléaire.** Le couple émetteur/EBR détermine l'efficacité de la RIV. Un émetteur **α (²²⁵Ac)** dépose son énergie sur quelques diamètres cellulaires → DSB groupées quasi irréparables ; un émetteur **β (¹⁷⁷Lu)** a un parcours millimétrique (effet « feu croisé ») et une densité de DSB plus faible mais étalée. À effet égal sur des cellules exprimant le récepteur de la somatostatine, l'**ED₅₀ du ²²⁵Ac-DOTATOC est de 14 kBq/mL contre 10 MBq/mL pour le ¹⁷⁷Lu-DOTATOC** — un facteur **~700×** — et les foyers γ-H2AX tumoraux atteignent **35 % (48 kBq ²²⁵Ac) vs 21 % (30 MBq ¹⁷⁷Lu)** [2].",
+          "stats": [
+            {
+              "value": "~40 DSB",
+              "label": "par Gy/cellule (bas TLE) — lésion critique [28]"
+            },
+            {
+              "value": "1 foyer ≈ 1 DSB",
+              "label": "γ-H2AX, dosimètre biologique [1,40]"
+            },
+            {
+              "value": "α/β ≈ 3 vs 10 Gy",
+              "label": "tissus tardifs vs précoces [8]"
+            },
+            {
+              "value": "~700×",
+              "label": "écart ED₅₀ ²²⁵Ac vs ¹⁷⁷Lu [2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi la DSB et pas la SSB",
+              "text": "Le paradoxe quantitatif est instructif : 1 Gy crée **~1 000 SSB** mais seulement **~40 DSB** [29]. Ce sont pourtant ces 40 DSB qui gouvernent la létalité, car une SSB se répare en minutes sur le brin intact (matrice immédiate), alors qu'une DSB supprime toute matrice locale. C'est la justification mécanistique du choix de la DSB comme **lésion-signature** et du γ-H2AX comme biomarqueur dosimétrique."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ne pas confondre dose absorbée et effet biologique",
+              "text": "À dose absorbée égale (Gy), l'effet biologique d'un émetteur **α** est 5–10× supérieur à celui d'un émetteur **β** (EBR) [2]. En RIV, raisonner en Gy « physiques » sans pondérer par l'EBR conduit à **sous-estimer massivement** l'efficacité (et la toxicité) d'une thérapie alpha ciblée. La dose équivalente, pas la dose absorbée, prédit l'effet."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des modes de désintégration : la trace dense et courte d'une particule alpha (lésions groupées, EBR élevée) face à la trace éparse et longue d'un électron bêta (DSB clairsemées, effet feu croisé) — illustrant le lien TLE → complexité lésionnelle → effet biologique."
+          }
+        },
+        {
+          "title": "C10 - Faibles doses : effet bystander, réponse adaptative, instabilité génomique",
+          "text": "Aux faibles doses (< ~100 mGy), pertinentes pour la dosimétrie interne diagnostique, l'irradiation des tissus sains en RIV et la radioprotection, l'extrapolation linéaire depuis les fortes doses se heurte à des phénomènes **non ciblés** (non-targeted effects) qui découplent l'effet de la dose reçue par la cellule individuelle.\n\n**▸ Le cadre de référence : le modèle linéaire sans seuil (LNT).** Le **LNT** (linear no-threshold), retenu par la **CIPR 103 (2007)** pour les effets stochastiques, postule un risque proportionnel à la dose **sans seuil** [61,62]. Son fondement biologique est solide : la **DSB unique réparable de façon fautive** suffit à initier une mutation, et la linéarité dose-réponse des DSB a été démontrée de **5 mGy (0,1 DSB/cellule) à 1 Gy** [28]. Le détriment nominal retenu est de **5,5 %/Sv (cancer) et 0,2 %/Sv (effets héréditaires)** pour la population entière, avec un **DDREF de 2** (facteur d'efficacité dose et débit de dose) [61,63].\n\n| Catégorie d'effet | Seuil | Relation dose-effet | Exemples | Source |\n|---|---|---|---|---|\n| **Stochastique** | Sans seuil (LNT) | Probabilité ∝ dose ; sévérité **indépendante** de la dose | Cancer radio-induit, effets héréditaires | [21,61] |\n| **Déterministe (réaction tissulaire)** | Avec seuil | Sévérité ∝ dose au-delà du seuil | Aplasie, cataracte, radiodermite | [21,61] |\n\n**▸ Trois phénomènes qui nuancent le LNT.** Aux faibles doses, l'effet observé peut être supra- ou infra-linéaire selon le poids relatif de ces mécanismes [65] :\n\n- **Effet bystander (de voisinage).** Des cellules **non traversées** par un rayonnement subissent néanmoins des dommages (DSB, mutations, mort) via des signaux émis par les cellules irradiées : **espèces réactives de l'oxygène (ROS)**, oxyde d'azote (NO), cytokines, transmis par les **jonctions communicantes** et le milieu [18,19]. Conséquence : aux faibles doses, l'effet peut être **supra-linéaire** (plus de cellules atteintes que de cellules touchées). En RIV (émetteurs α, parcours court), le bystander participe à l'effet « feu croisé » biologique.\n- **Réponse adaptative.** Une **faible dose conditionnante** préalable (de l'ordre de quelques dizaines de mGy) peut **réduire** l'effet d'une dose ultérieure plus forte, par induction des systèmes de réparation et antioxydants [64]. Effet **infra-linéaire** potentiel, transitoire et variable selon le type cellulaire.\n- **Instabilité génomique transmissible.** Une irradiation peut induire, dans la **descendance** de cellules survivantes et apparemment indemnes, une augmentation **différée et persistante** sur plusieurs générations du taux de mutations, d'aberrations chromosomiques et de mort cellulaire [65]. Ce phénomène délocalise l'effet dans le temps, au-delà de la cellule initialement irradiée.\n\n**▸ Effet abscopal — le pendant clinique.** À distance du champ irradié, des régressions tumorales **abscopales** (médiation immunitaire) sont décrites, illustrant que les effets non ciblés ne sont pas que délétères et ouvrent des combinaisons radio-immunothérapie [19].\n\n**▸ Conséquence pour l'interprétation.** Ces effets compliquent l'extrapolation linéaire et expliquent la prudence persistante du LNT comme **outil de gestion** (et non de prédiction individuelle du risque) [62]. Le **débit de dose** module également le rendement lésionnel : à bas débit, la réparation concurrente réduit le nombre de DSB/Gy (**~19,7 DSB/cellule/Gy à 400 mGy/min**, moins à débit plus faible) [30] — paramètre central en RIV où l'irradiation est continue et de débit décroissant.",
+          "stats": [
+            {
+              "value": "Sans seuil",
+              "label": "LNT pour les effets stochastiques (CIPR 103) [61]"
+            },
+            {
+              "value": "5,5 %/Sv",
+              "label": "détriment cancer, population entière [61]"
+            },
+            {
+              "value": "DDREF = 2",
+              "label": "facteur efficacité dose/débit [61,63]"
+            },
+            {
+              "value": "5 mGy → 1 Gy",
+              "label": "linéarité dose-réponse des DSB [28]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi cela compte en médecine nucléaire",
+              "text": "En RIV, l'irradiation est **continue, à débit décroissant et hétérogène**. Le rendement de DSB/Gy y est moindre qu'en radiothérapie externe à fort débit (réparation concurrente) [30], et le signal γ-H2AX peut **décliner dès 24 h** malgré une dose absorbée croissante [25] — un faux-négatif relatif du biomarqueur. Les effets bystander participent en revanche à l'efficacité des émetteurs α à parcours court."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — surinterpréter les effets non ciblés",
+              "text": "Bystander, réponse adaptative et instabilité génomique sont **réels mais contextuels** (type cellulaire, dose, débit) et ne justifient ni un seuil d'innocuité (hormèse) ni l'abandon du LNT à visée de radioprotection [62,63]. Les invoquer pour minimiser le risque des faibles doses diagnostiques est une **erreur d'interprétation** : la linéarité DSB de 5 mGy à 1 Gy reste l'observation cardinale [28]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers ALARA (temps, distance, écran) reliant le modèle linéaire sans seuil à la pratique : sans seuil démontré aux faibles doses, toute réduction de dose réduit proportionnellement le risque stochastique."
+          }
+        },
+        {
+          "title": "C11 - Radiosensibilité individuelle et défauts héréditaires de la réparation",
+          "text": "La réponse aux rayonnements n'est pas uniforme : à dose égale, la sévérité des effets varie selon la **compétence des voies de réparation** du sujet. Identifier les patients **hypersensibles** est un enjeu de sécurité avant toute irradiation thérapeutique (radiothérapie externe, RIV), et la même biologie est exploitée à l'inverse pour **radiosensibiliser** les tumeurs déficientes (létalité synthétique).\n\n**▸ Rappel des voies déterminant la radiosensibilité.** La radiosensibilité dépend de l'aptitude à réparer les DSB, qui repose sur deux voies majeures aux propriétés opposées, modulées par le cycle cellulaire [34,35] :\n\n| Voie | Fidélité | Phase du cycle | Acteurs-clés | Cinétique | Source |\n|---|---|---|---|---|---|\n| **c-NHEJ** (jonction d'extrémités non homologue) | **Infidèle** (mutagène aux jonctions) | Tout le cycle (majoritaire en G1) | Ku70/Ku80, DNA-PKcs, ligase IV/XRCC4 | Rapide (**1–2 h** ; 70–80 % des DSB) | [1,34,41] |\n| **HR** (recombinaison homologue) | **Fidèle** | S/G2 (chromatide sœur) | RAD51, RAD54, BRCA1/2 | Lente (**≥ 8 h**) | [1,36] |\n\nLa signalisation (DDR, DNA damage response) en amont est gouvernée par le senseur **MRN (MRE11-RAD50-NBS1)**, qui détecte la DSB et active **ATM** ; ATM phosphoryle H2AX, CHK2 et p53, déclenchant les **checkpoints G1/S et G2/M** qui ménagent le temps de réparation [44,45]. Tout défaut héréditaire dans ce réseau se traduit par une radiosensibilité accrue.\n\n**▸ Syndromes constitutionnels d'hypersensibilité.** Ces déficits exposent à une **toxicité majeure, parfois fatale, à doses conventionnelles** — d'où l'intérêt de leur recherche avant irradiation curative.\n\n| Syndrome | Gène / protéine atteinte | Mécanisme | Conséquence radiobiologique | Source |\n|---|---|---|---|---|\n| **Ataxie-télangiectasie** | **ATM** (> 3 000 variants) | Défaut de détection/signalisation des DSB | Hypersensibilité dramatique, réactions sévères | [15,16,17] |\n| **Syndrome de cassure de Nimègue** | **NBN/NBS1** (complexe MRN) | Senseur de DSB déficient | Radiosensibilité, instabilité chromosomique | [44,46] |\n| **Anémie de Fanconi** | Gènes **FANC** | Réparation des pontages/HR altérée | Hypersensibilité, prédisposition tumorale | [17] |\n| **Syndrome LIG4** | **LIG4** (ligase IV, c-NHEJ) | Ligature des DSB défaillante | Radiosensibilité marquée | [34] |\n\nL'**ataxie-télangiectasie** (transmission autosomique récessive) est le paradigme : le défaut d'ATM abolit la détection des DSB et les checkpoints, rendant les cellules incapables de stopper le cycle pour réparer [15,46]. Même des **mutations hypomorphes hétérozygotes d'ATM** peuvent provoquer des réactions sévères inattendues à la radiothérapie [16].\n\n**▸ Exploiter le déficit : létalité synthétique et inhibiteurs de PARP.** Le versant thérapeutique inverse la logique : on cible une tumeur déjà déficiente pour une voie de réparation. Les **inhibiteurs de PARP (PARPi)** bloquent **PARP1** (acteur central de la réparation des SSB/BER) et le **piègent** sur l'ADN (« PARP trapping ») ; en réplication, les SSB non réparées se convertissent en DSB qui, dans une cellule **HR-déficiente (BRCA1/2 muté, BRCAness/HRD)**, deviennent **létales** — c'est la **létalité synthétique** [12,27,67].\n\n- **Radiosensibilisation.** L'inhibition de PARP1 radiosensibilise spécifiquement les cellules **HR-déficientes**, de façon réplication-dépendante [11,68] ; la synergie PARPi + irradiation est **p53-dépendante** [66].\n- **Preuve clinique (oncologie).** En cancer ovarien muté **BRCA**, l'olaparib (SOLO-1) prolonge la survie sans progression à **médiane 19,1 mois vs 5,5 mois** sous placebo [66]. Le niraparib étend le bénéfice **indépendamment du statut BRCA** (paradigme « biomarker-agnostic »).\n- **Limite.** L'efficacité est **restreinte aux contextes BRCAness/HRD** : les tumeurs **HR-compétentes** échappent à la létalité synthétique [27].\n\n**▸ Modulation pharmacologique de la radiosensibilité.** Au-delà des PARPi, les inhibiteurs d'**ATM/ATR/DNA-PK/CHK1** abrogent les checkpoints et radiosensibilisent (surtout les cellules p53-mutées) [23]. À l'opposé, l'**amifostine** — seul radioprotecteur approuvé par la FDA — est une prodrogue thiol-phosphate capteur de radicaux ·OH, qui réduit l'effet indirect et protège les tissus sains [13,14].\n\n**▸ Biodosimétrie individuelle (application MN).** La quantification des foyers γ-H2AX/53BP1 dans les lymphocytes circulants permet une **dosimétrie biologique individualisée** après administration de radionucléides. Après **¹³¹I** (cancer thyroïdien différencié), le pic des foyers survient à **2 h**, avec des foyers excédentaires détectables jusqu'à **120–144 h** et une dose moyenne au sang de **0,31 ± 0,10 Gy** [3]. En **PRRT au ¹⁷⁷Lu-DOTATATE**, l'élévation des foyers est observée **chez tous les patients**, et le pic corrèle aux doses tumorale et médullaire et à la lymphopénie, pour une dose au sang **< 100 mGy à 48 h** [58]. Ce biomarqueur capture la **variabilité interindividuelle** de réparation que la dosimétrie physique seule ignore.",
+          "stats": [
+            {
+              "value": "ATM",
+              "label": "gène de l'ataxie-télangiectasie, hypersensibilité [15]"
+            },
+            {
+              "value": "19,1 vs 5,5 mois",
+              "label": "SSP olaparib vs placebo, ovaire BRCA [66]"
+            },
+            {
+              "value": "HR-déficience",
+              "label": "cible de la létalité synthétique des PARPi [27]"
+            },
+            {
+              "value": "0,31 ± 0,10 Gy",
+              "label": "dose sang moyenne après ¹³¹I (γ-H2AX) [3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — dépister l'hypersensibilité avant irradiation curative",
+              "text": "Avant une radiothérapie ou une RIV à visée curative, l'anamnèse doit rechercher des **signes d'ataxie-télangiectasie**, des antécédents familiaux évocateurs et des **réactions cutanées/muqueuses sévères** à une irradiation antérieure [16]. Une réaction disproportionnée doit faire évoquer un **déficit constitutionnel de réparation (ATM, NBS1, Fanconi, LIG4)** : une dose conventionnelle peut y être gravement, voire mortellement toxique [15,17]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la même biologie, deux usages opposés",
+              "text": "Un déficit de réparation est un **danger** chez l'hôte (toxicité sur tissus sains) mais une **opportunité** dans la tumeur. La létalité synthétique PARPi/BRCA exploite la HR-déficience tumorale pour tuer sélectivement [27], tandis que la HR-compétence du tissu sain le protège. Cette asymétrie — fenêtre thérapeutique fondée sur le statut de réparation — est le principe directeur des associations radiosensibilisateur + irradiation [11,12,68]."
+            },
+            {
+              "type": "info",
+              "title": "Le biomarqueur γ-H2AX comme dosimètre individuel",
+              "text": "En médecine nucléaire, γ-H2AX/53BP1 offre une dosimétrie **biologique** complémentaire de la dosimétrie physique : sensible (< 20 mGy), elle intègre la **radiosensibilité propre du patient** [1,3]. Limite : sa cinétique de premier ordre (pic ~2 h in vivo, puis décroissance par réparation) impose un **timing de prélèvement strict** ; sous irradiation continue (RIV), le signal peut chuter dès 24 h malgré une dose croissante [25,58]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique annotée du point de vue radiobiologique : sélection du patient (avidité de la cible), traitement par radionucléide (induction de DSB), puis biodosimétrie γ-H2AX intégrant la radiosensibilité individuelle pour la réévaluation."
+          }
+        },
+        {
+          "title": "D12 - Maîtriser en médecine nucléaire diagnostique : faibles doses et réparation efficace",
+          "text": "En imagerie diagnostique, les doses absorbées au sang et aux organes sont **faibles** (typiquement quelques mGy à quelques dizaines de mGy par examen), un régime où la machinerie de réparation est **largement compétente** et où l'interprétation du risque relève de la radioprotection (modèle LNT, cf. *infra*). Le médecin nucléaire doit savoir relier le **rendement lésionnel par gray** à la dose réellement délivrée, puis à la cinétique de réparation qui efface l'essentiel des lésions en quelques heures.\n\n**Charge lésionnelle rapportée à la dose.** Pour un rayonnement de **bas TLE** (transfert linéique d'énergie : RX, γ, électrons, émetteurs β⁻), chaque **1 Gy** produit par cellule ~**2 500–25 000** dommages de bases, ~**1 000** cassures simple-brin (SSB), ~**40** cassures double-brin (DSB, jusqu'à **63–70** selon l'ATSDR) et ~**440** sites de lésions multiples groupées (LMDS) [29][28]. La hiérarchie d'incidence est : dommages de bases > SSB > pontages > DSB ; la hiérarchie de **létalité** est inverse, les **DSB** corrélant le mieux à la mort cellulaire [29]. Aux doses diagnostiques, on raisonne en **fractions de DSB par cellule** : la dose-réponse des DSB est **linéaire de 5 mGy (≈ 0,1 DSB/cellule) à 1 Gy** [28], ce qui justifie l'extrapolation aux faibles doses.\n\n**Réparation : rapide et majoritairement fidèle ici.** Au régime de bas TLE et faible débit, **70–80 % des DSB sont réparées rapidement (minutes)** par le **c-NHEJ** (jonction d'extrémités non homologues classique), le reste lentement (heures) par la **recombinaison homologue (HR)** en S/G2 et le c-NHEJ spécialisé en G1 [41]. Le **recrutement de Ku** sur la lésion est quasi immédiat (~1 s post-irradiation) ; la réparation est complète en **1–2 h** [1]. Cette efficacité explique pourquoi un examen diagnostique unique ne laisse pratiquement pas de lésion résiduelle persistante.\n\n**Effet débit de dose — clé du diagnostic.** À faible débit, la réparation **concurrente** abaisse le rendement de DSB par gray : on mesure ~**19,7 DSB/cellule/Gy à 400 mGy/min**, et **moins à débit inférieur** [30]. L'administration d'un radiopharmaceutique diagnostique délivre une dose **étalée et continue** à très bas débit, situation radiobiologiquement bénigne par rapport à la même dose aiguë.\n\n| Type de lésion (1 Gy, bas TLE, par cellule) | Rendement | Réparabilité | Source |\n|---|---|---|---|\n| Dommages de bases | ~2 500–25 000 | Élevée (BER) | [29] |\n| Cassures simple-brin (SSB) | ~1 000 | Élevée (BER, minutes) | [29] |\n| LMDS (sites groupés) | ~440 | Réduite | [29] |\n| Cassures double-brin (DSB) | ~40 (63–70 ATSDR) | Variable (c-NHEJ rapide / HR fidèle) | [28][29] |\n\n**Biodosimétrie γ-H2AX en pratique diagnostique.** La phosphorylation de l'histone **H2AX (γ-H2AX)** marque chaque DSB : **1 focus ≈ 1 DSB**, avec des centaines de molécules recrutées dans la chromatine flanquante, ce qui confère une sensibilité à la **lésion unique** [40][1]. Ce biodosimètre est utilisable pour de **faibles doses**, y compris après **scanner CT** [40]. Sa contrepartie est une **décroissance par réparation** imposant un timing strict (cf. §D15) ; le marqueur lent **53BP1** co-localise et reflète la composante de réparation lente [42]. En ordre de grandeur, le rendement de foyers radio-induits est de **~17–24 RIF/Gy** après 1 Gy de RX faible dose, retombant à **~13–15 RIF/Gy entre 1 et 4 Gy** [1].",
+          "stats": [
+            {
+              "value": "5 mGy → 1 Gy",
+              "label": "Plage de linéarité dose-réponse des DSB [28]"
+            },
+            {
+              "value": "~40/Gy",
+              "label": "DSB par cellule (bas TLE) [28]"
+            },
+            {
+              "value": "70–80 %",
+              "label": "DSB réparées rapidement (c-NHEJ) [41]"
+            },
+            {
+              "value": "1–2 h",
+              "label": "Réparation complète d'une DSB simple [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — débit de dose, l'allié du diagnostic",
+              "text": "Une même dose absorbée délivrée lentement (radiopharmaceutique) est biologiquement moins agressive qu'une dose aiguë : la réparation opère **en concurrence** avec l'induction. Le rendement chute de ~19,7 DSB/cellule/Gy à 400 mGy/min vers des valeurs inférieures à plus bas débit [30]. C'est l'argument radiobiologique de fond expliquant la bonne tolérance de l'imagerie isotopique aux doses usuelles."
+            },
+            {
+              "type": "info",
+              "title": "Pourquoi le LNT structure la radioprotection diagnostique",
+              "text": "La **DSB unique réparable de façon fautive** par c-NHEJ, jointe à la linéarité des DSB de 5 mGy à 1 Gy [28], fonde le modèle **linéaire sans seuil (LNT)** retenu par la **CIPR 103 (2007)** pour les effets stochastiques [61]. Détriment nominal : **5,5 %/Sv (cancer) + 0,2 %/Sv (héréditaire)** en population, avec **DDREF = 2** [61]. Les effets non ciblés nuancent ce cadre [65]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des types d'émission (alpha, beta, gamma) et de leur densité d'ionisation : le bas TLE des photons et électrons utilisés en imagerie diagnostique génère des ionisations éparses, majoritairement réparables."
+          }
+        },
+        {
+          "title": "D13 - Maîtriser en thérapie vectorisée : exploiter et respecter la réparation",
+          "text": "En **radiothérapie interne vectorisée (RIV / TRT)**, l'objectif s'inverse : il faut **maximiser les DSB non réparées** dans la tumeur tout en limitant la charge aux tissus sains. Le choix de l'émetteur (β⁻ vs α) détermine directement la **densité de DSB**, la **complexité des lésions** et donc leur réparabilité.\n\n**Émetteurs β⁻ (¹⁷⁷Lu, ¹³¹I) — bas TLE, effet « feu croisé ».** Parcours tissulaire **millimétrique** → effet *cross-fire* couvrant plusieurs diamètres cellulaires, mais densité de DSB **faible et étalée**, dont la majorité reste **réparable** par c-NHEJ/HR. Les DSB sont **~proportionnelles à l'activité** [2]. En PRRT au **¹⁷⁷Lu-DOTATATE**, la dose absorbée au sang reste **< 100 mGy à 48 h**, avec une élévation significative des foyers γ-H2AX jusqu'à 48 h **chez tous les patients** ; le pic de foyers corrèle à la **dose tumorale**, à la **dose médullaire** et à la **baisse lymphocytaire** [58]. En **¹⁷⁷Lu-PSMA**, les foyers γ-H2AX + 53BP1 leucocytaires montent **dès les premières heures** post-injection puis décroissent par réparation (dépendance temps/dose) [59] ; les profils lésionnels diffèrent entre ¹⁷⁷Lu-DOTATOC et ¹⁷⁷Lu-PSMA [60].\n\n**Émetteurs α (²²⁵Ac, ²²³Ra, ²²⁷Th) — haut TLE, lésions quasi irréparables.** TLE de l'α ≈ **80 keV/µm**, parcours **< 100 µm (< 10 diamètres cellulaires)** [55][2]. La trace dense génère des **DSB groupées/complexes** : alors que **30–40 % des DSB sont complexes en bas TLE**, cette fraction dépasse **90 % en haut TLE** [39], avec une réparabilité fortement réduite. L'**EBR (efficacité biologique relative) des particules α ≈ 5–10** vs β/γ [2]. Conséquence dosimétrique spectaculaire : l'ED₅₀ du **²²⁵Ac-DOTATOC est de 14 kBq/mL à 48 h** contre **10 MBq/mL** pour le ¹⁷⁷Lu-DOTATOC — un facteur **~700×** [2] ; et les foyers γ-H2AX tumoraux atteignent **35 % (48 kBq ²²⁵Ac) vs 21 % (30 MBq ¹⁷⁷Lu)** [2]. La modélisation Geant4-DNA confirme que ²²⁵Ac et ²²⁷Th induisent des **DSB complexes** déterminant l'EBR et la survie [53].\n\n**Émetteurs Auger (¹²⁵I, ¹¹¹In, ⁶⁷Ga, ⁹⁹ᵐTc, ¹²³I).** Cascade d'électrons de très courte portée (nm–µm) par capture électronique : **maximalement létaux quand incorporés dans l'ADN** (ex. ¹²⁵I-IUdR), créant un **haut TLE local** [56]. Le ¹²⁵I est **~1,5× plus efficace que ¹²³I par désintégration** (SSB/DSB, modélisation Geant4) [57]. La cible nucléaire est donc une condition d'efficacité.\n\n| Émetteur | TLE / parcours | Densité & complexité des DSB | EBR | Réparabilité | Source |\n|---|---|---|---|---|---|\n| **β⁻ (¹⁷⁷Lu, ¹³¹I)** | bas TLE / mm (cross-fire) | faible, étalée, ~peu complexe | ~1 | élevée (c-NHEJ/HR) | [2][58] |\n| **α (²²⁵Ac, ²²³Ra)** | ~80 keV/µm / < 100 µm | groupée, **> 90 % complexes** | **~5–10** | très réduite | [2][39][55] |\n| **Auger (¹²⁵I, ¹¹¹In)** | nm–µm si intranucléaire | haut TLE local | élevée si dans l'ADN | réduite (lésions groupées) | [56][57] |\n\n**Respecter la réparation des tissus sains.** Le **fractionnement de l'activité** et le **débit de dose** exploitent l'asymétrie de réparation entre tumeur et tissus à renouvellement lent. Le modèle **linéaire-quadratique** S = exp(−αD − βD²) garde sa pertinence : **α/β ≈ 10 Gy** pour tumeurs/tissus précoces (faible courbure) vs **≈ 3 Gy** pour tissus tardifs (forte courbure) [8][51]. L'**hypoxie** module l'effet des émetteurs β⁻ : **OER (oxygen enhancement ratio) ≈ 2,5–3 en bas TLE**, mais **proche de 1 pour les α (haut TLE)** [51][52] — un avantage radiobiologique supplémentaire de la TAT en tumeur hypoxique.",
+          "stats": [
+            {
+              "value": "~700×",
+              "label": "Ratio ED₅₀ ²²⁵Ac vs ¹⁷⁷Lu (14 kBq/mL vs 10 MBq/mL) [2]"
+            },
+            {
+              "value": "> 90 %",
+              "label": "DSB complexes en haut TLE vs 30–40 % bas TLE [39]"
+            },
+            {
+              "value": "~80 keV/µm",
+              "label": "TLE des particules α [55]"
+            },
+            {
+              "value": "< 100 mGy",
+              "label": "Dose au sang à 48 h en PRRT ¹⁷⁷Lu [58]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi l'alpha « écrase » la réparation",
+              "text": "L'efficacité supérieure des émetteurs α ne tient pas qu'à un dépôt d'énergie plus dense : elle vient de la **nature des lésions**. Les DSB groupées (> 90 % complexes [39]) **inhibent le c-NHEJ** et orientent vers les voies de secours mutagènes (**alt-EJ, SSA**) malgré une HR accrue, d'où une toxicité élevée [38]. La réparation devient à la fois plus lente et plus infidèle, ce qui fonde l'EBR ~5–10 [2]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — le γ-H2AX peut se « tasser » en irradiation continue",
+              "text": "Sous irradiation prolongée/continue (RIV), le signal γ-H2AX leucocytaire peut **décliner dès 24 h** sous l'effet de la réparation concurrente, créant un **faux-négatif relatif** [25][1]. Interpréter le biomarqueur avec la cinétique dose/débit, jamais à un temps unique tardif."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique : un émetteur d'imagerie sélectionne la cible, l'émetteur thérapeutique (béta ou alpha) délivre la dose ; le choix béta vs alpha conditionne la densité et la complexité des cassures double-brin induites."
+          }
+        },
+        {
+          "title": "D14 - Cibler la réparation en thérapeutique : inhibiteurs, létalité synthétique, radiosensibilisation",
+          "text": "La machinerie de réparation est elle-même une **cible thérapeutique** : la bloquer convertit des lésions réparables en lésions létales, **radiosensibilisant** les cellules tumorales. Le médecin nucléaire doit connaître ces leviers car ils s'articulent avec la RIV et l'irradiation externe.\n\n**Inhibiteurs de PARP (PARPi) et létalité synthétique.** **PARP1** (poly-ADP-ribose polymérase 1) est central dans la réparation par excision de base (**BER**) et la signalisation des SSB. Son inhibition agit par deux mécanismes : **inhibition catalytique** et **« PARP trapping »** (piégeage de l'enzyme sur l'ADN) → blocage des fourches de réplication et catastrophe réplicative [67]. Dans un contexte de **déficit de la HR (mutations BRCA1/2, « BRCAness »/HRD)**, les SSB non réparées deviennent des DSB irréparables : c'est la **létalité synthétique** [27]. L'olaparib **radiosensibilise** les cellules **BRCA-déficientes** de façon **réplication-dépendante** et corrélée à la compétence HR [12][68]. La synergie PARPi + irradiation est par ailleurs **p53-dépendante** [66].\n\n*Jalons d'AMM (PARPi en monothérapie) :* ovaire muté BRCA **2014** (FDA/EMA), sein gBRCA **2018**, pancréas **2019**, sein précoce adjuvant **2022** [12]. *Efficacité (olaparib, SOLO-1, ovaire BRCA-muté) :* SSP médiane **19,1 mois vs 5,5 mois** sous placebo [66]. Le **niraparib** prolonge la SSP **indépendamment du statut BRCA** (paradigme « biomarker-agnostic ») [67].\n\n**Inhibiteurs de la signalisation DDR (réponse aux dommages de l'ADN).** Cibler les kinases de checkpoint abroge l'arrêt du cycle et empêche la réparation avant mitose :\n- **ATM** : senseur des DSB via le complexe **MRN (MRE11-RAD50-NBS1)** → phosphoryle p53, CHK2, H2AX, KAP-1 [44][45][7].\n- **ATR → CHK1** : fourches de réplication bloquées en S, extrémités résectées ; l'**abrogation du checkpoint G2/M** (inhibition CHK1 → levée de l'inhibition de CDC25 → activation de CDK1) radiosensibilise préférentiellement les cellules **p53-mutées** [23][22].\n- **DNA-PKcs** : composant du c-NHEJ, cible d'inhibiteurs bloquant directement la réparation des DSB.\n\n| Cible / classe | Mécanisme de radiosensibilisation | Contexte d'efficacité | Source |\n|---|---|---|---|\n| **PARP1 (olaparib…)** | Blocage BER/SSB + PARP trapping → DSB en réplication | déficit HR (BRCA, HRD) | [12][27][67] |\n| **ATM** | Perte de détection des DSB, abrogation des checkpoints | large (synergie irradiation) | [44][45] |\n| **ATR / CHK1** | Abrogation du checkpoint G2/M | cellules **p53-mutées** | [22][23] |\n| **DNA-PKcs** | Inhibition directe du c-NHEJ | DSB radio-induites | [34][35] |\n\n**Combinaison avec la RIV.** Le rationnel « inhibiteur de réparation + émetteur β⁻ » vise à transformer le faible rendement de DSB du bas TLE en lésions létales : la radiosensibilisation par PARPi est **réplication-dépendante** [68], cohérente avec la dose continue de la RIV. Cette stratégie reste largement en développement, à pondérer par la **toxicité hématologique** (les tissus sains expriment aussi ces voies).\n\n**Radioprotection complémentaire (versant inverse).** Réduire l'effet **indirect** protège les tissus sains : l'**amifostine**, **seul radioprotecteur approuvé par la FDA**, est une prodrogue thiol-phosphate **capteur de radicaux ·OH**, donneuse de H·, induisant hypoxie cellulaire et expression d'enzymes antioxydantes/de réparation [14][13].",
+          "steps": [
+            {
+              "title": "1 · Sélectionner le contexte génomique",
+              "text": "Documenter le statut **HR** : mutations **BRCA1/2**, signature **HRD/BRCAness**. La létalité synthétique des PARPi s'y restreint ; les tumeurs **HR-compétentes** répondent peu [27]."
+            },
+            {
+              "title": "2 · Choisir le levier de réparation",
+              "text": "PARPi (déficit HR), inhibiteur **ATR/CHK1** (cellules p53-mutées, abrogation G2/M [22][23]), inhibiteur **DNA-PKcs** (c-NHEJ). Adapter à la cible et au profil de toxicité."
+            },
+            {
+              "title": "3 · Synchroniser avec l'irradiation",
+              "text": "Exploiter la **réplication-dépendance** (PARPi [68]) et le bas débit continu de la RIV ; séquencer pour maximiser la conversion SSB → DSB en phase S."
+            },
+            {
+              "title": "4 · Surveiller la toxicité des tissus sains",
+              "text": "Ces voies opèrent aussi dans la moelle ; suivre la **lymphopénie** et les cytopénies. Envisager une radioprotection ciblée (amifostine, capteur de ·OH [14])."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la létalité synthétique n'est pas universelle",
+              "text": "Les PARPi ne radiosensibilisent efficacement que dans un contexte de **déficit HR (BRCAness/HRD)** ; en tumeur **HR-compétente**, l'efficacité est moindre [27]. De plus, des mécanismes de **résistance** existent (restauration HR, perte du PARP trapping) [67]. Ne pas généraliser le bénéfice à tout patient."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi cibler CHK1 favorise les tumeurs p53-mutées",
+              "text": "Les cellules **p53-mutées** ont perdu le checkpoint **G1/S** (p53→p21) et dépendent du checkpoint **G2/M** pour réparer avant mitose. L'inhibition de **CHK1** abroge ce dernier rempart : la cellule mutée entre en mitose avec des DSB non réparées (catastrophe mitotique), épargnant relativement la cellule p53-sauvage [22][23]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_NIS",
+            "alt": "Schéma générique d'une cible moléculaire thérapeutique : ici, transposé conceptuellement aux protéines de réparation (PARP1, ATM, ATR-CHK1, DNA-PKcs) bloquées pour convertir des lésions réparables en lésions létales."
+          }
+        },
+        {
+          "title": "D15 - Pièges, idées reçues et erreurs d'interprétation",
+          "text": "La radiobiologie des lésions de l'ADN est dense en **contre-intuitions** ; les erreurs d'interprétation sont fréquentes, tant en biodosimétrie qu'en raisonnement dose-effet.\n\n**Idée reçue n°1 — « plus de cassures = plus de mortalité ».** Faux. Les **SSB sont massives (~1 000/Gy)** mais peu létales, alors que les **DSB (~40/Gy)** corrèlent le mieux à la mort cellulaire [29]. C'est la **DSB**, surtout **complexe/groupée**, qui compte ; le rendement brut de lésions est trompeur.\n\n**Idée reçue n°2 — « γ-H2AX mesure la dose à tout moment ».** Faux : le signal **décroît par réparation**. La détection impose un **timing post-exposition adéquat** (pic puis décroissance) [40]. *In vivo* après **¹³¹I** (cancer thyroïdien différencié), le pic des foyers est à **2 h**, avec foyers excédentaires détectables jusqu'à **120–144 h** [3] ; en irradiation continue, le signal peut **chuter dès 24 h** (faux-négatif) [25]. Pour de fortes doses (**≥ 3,5 Gy**), la détection en lymphocytes/follicules pileux reste possible **≥ 4 j** [40].\n\n**Idée reçue n°3 — « la phase du cycle n'importe pas ».** Faux : la **HR (haute fidélité) n'est disponible qu'en S/G2** (chromatide sœur comme matrice) [36][41]. Une cellule en G1 ne dispose que du c-NHEJ ; le LET et la dose modulent aussi le ratio HR/c-NHEJ [37]. Cela modifie radiosensibilité et interprétation des foyers.\n\n**Idée reçue n°4 — « OER s'applique aux alpha ».** Faux : l'**OER ≈ 2,5–3 vaut pour le bas TLE**, mais tombe **proche de 1 pour les particules α** [51][52]. L'hypoxie protège peu contre la TAT — c'est un argument *pour* l'alpha en tumeur hypoxique, pas une limite.\n\n**Idée reçue n°5 — « le rendement de DSB par Gy est constant ».** Faux : l'**effet débit de dose** l'abaisse à faible débit (~19,7 DSB/cellule/Gy à 400 mGy/min, moins en deçà) [30]. Comparer des doses délivrées à débits différents sans correction conduit à des conclusions erronées.\n\n**Idée reçue n°6 — « les effets sont toujours ciblés sur la cellule irradiée ».** Faux : les **effets non ciblés** existent — effet **bystander** (cellules voisines non irradiées affectées via jonctions communicantes, ROS, NO, cytokines), **instabilité génomique** transmissible, **réponse adaptative** [18][64][65]. Significatifs à faible dose, ils **compliquent l'extrapolation LNT** et peuvent générer des effets **abscopaux** [19].\n\n| « Idée reçue » | Réalité sourcée | Conséquence pratique |\n|---|---|---|\n| SSB = létalité | DSB corrèlent à la mort, pas les SSB [29] | Raisonner en DSB/complexité |\n| γ-H2AX stable | Décroît par réparation, pic ¹³¹I à 2 h [3] | Timing de prélèvement strict |\n| Cycle indifférent | HR limitée à S/G2 [41] | Interpréter selon la phase |\n| OER universel | ≈ 3 (bas TLE) vs ≈ 1 (α) [52] | Hypoxie ≠ frein pour la TAT |\n| DSB/Gy fixe | Effet débit de dose [30] | Corriger du débit |\n| Effets ciblés seuls | Bystander/adaptatif/abscopal [18][65] | Nuancer le risque faible dose |\n\n**Piège clinique majeur — l'hypersensibilité constitutionnelle.** Un déficit de réparation expose à une **toxicité dramatique** à doses conventionnelles : **ataxie-télangiectasie** (mutations **ATM**, autosomique récessive, défaut de détection des DSB — réactions sévères voire fatales), **syndrome de cassure de Nimègue (NBN/NBS1)**, **anémie de Fanconi**, **syndrome LIG4** [17][16][15]. Même des **mutations ATM hypomorphes germinales** peuvent provoquer des réactions sévères à la radiothérapie [16]. À rechercher (anamnèse familiale, signes d'A-T, réactions cutanées antérieures) **avant toute irradiation thérapeutique ou RIV à visée curative**.",
+          "stats": [
+            {
+              "value": "2 h",
+              "label": "Pic des foyers γ-H2AX après ¹³¹I [3]"
+            },
+            {
+              "value": "120–144 h",
+              "label": "Foyers excédentaires encore détectables post-¹³¹I [3]"
+            },
+            {
+              "value": "≈ 1",
+              "label": "OER des particules α (vs ≈ 3 bas TLE) [52]"
+            },
+            {
+              "value": "≥ 4 j",
+              "label": "Détection γ-H2AX si dose ≥ 3,5 Gy [40]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — biodosimétrie γ-H2AX : le temps est tout",
+              "text": "Un prélèvement trop tardif sous-estime la dose (réparation), un prélèvement en irradiation continue peut être faussement rassurant (signal en plateau bas dès 24 h [25]). Standardiser **avant** et au **temps précoce** (pic ¹³¹I à 2 h [3]), conditions de transport contrôlées, et toujours lire avec la cinétique de premier ordre et le débit de dose."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — dépister l'hypersensibilité avant d'irradier",
+              "text": "Une réaction radique disproportionnée doit faire évoquer un **déficit de réparation** (A-T/ATM, NBS1, Fanconi, LIG4) [17][16]. Chez ces patients, des doses conventionnelles peuvent être **sévères voire fatales** [15]. Anamnèse ciblée et, si suspicion, test de radiosensibilité avant radiothérapie ou RIV curative."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — bruit de fond endogène à garder en tête",
+              "text": "L'ADN subit en permanence des lésions endogènes (oxydation, désamination, dépurination) réparées en continu [40] ; on estime un bruit de fond de l'ordre de **10–50 DSB/cellule/jour** de métabolisme [1]. Le rayonnement **ajoute** une charge ponctuelle quantifiée par les foyers γ-H2AX **au-dessus** de ce bruit — d'où l'importance d'une valeur de référence pré-exposition."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Temps, distance, écran : les leviers de radioprotection rappellent que la maîtrise du débit de dose et du temps d'exposition conditionne directement le rendement et la réparabilité des lésions de l'ADN."
+          }
+        },
+        {
+          "title": "E16 - Synthèse opérationnelle : la carte mentale lésion → réparation → devenir",
+          "text": "**Le fil conducteur en une phrase.** Un rayonnement ionisant dépose son énergie sur l'ADN — directement ou, le plus souvent à faible TLE (transfert linéique d'énergie), via le radical hydroxyle •OH issu de la radiolyse de l'eau **(~2/3 de l'effet)** [4][31][32] — ce qui crée un **spectre de lésions** dont la gravité est inversement proportionnelle à la facilité de réparation ; le **devenir cellulaire** (survie fidèle, mutation/carcinogenèse, ou mort) dépend de la voie de réparation engagée, de la phase du cycle et de la complexité de la lésion. Cette section condense l'article en une carte mentale opérationnelle, transposable au quotidien de la médecine nucléaire diagnostique et thérapeutique.\n\n### 1. La cascade en quatre temps\n\n| Temps | Événement | Repère quantitatif (faible TLE, 1 Gy = 1 J/kg) | Source |\n|---|---|---|---|\n| **① Dépôt** | Ionisation directe (ADN) ou indirecte (•OH) | **~1/3 direct · ~2/3 indirect** ; •OH = **60–70 %** des dommages | [4][31][32] |\n| **② Lésion** | Bases > SSB > pontages > DSB ; sites groupés (LMDS) | bases **~2 500–25 000** · SSB **~1 000** · **DSB ~40** (63–70 ATSDR) · **LMDS ~440** | [5][28][29] |\n| **③ Détection & signalisation** | Senseur **MRN** (MRE11-RAD50-NBS1) → **ATM/ATR** → checkpoints | **Ku** sur la lésion en **~1 s** ; foyers **γ-H2AX/53BP1** (1 foyer ≈ 1 DSB) | [1][6][40][44] |\n| **④ Réparation & devenir** | **NHEJ** (rapide, infidèle, tout le cycle) vs **HR** (fidèle, S/G2) ; sinon mort/mutation | NHEJ **1–2 h** · HR **≥ 8 h** ; **70–80 %** des DSB réparées vite | [1][34][41] |\n\nLe principe directeur : **la DSB (cassure double-brin) est la lésion-pivot** — la moins fréquente mais la mieux corrélée à la mort clonogénique [29], et la lésion dont la réparation fautive fonde à la fois la mutagenèse et le rationnel du modèle linéaire sans seuil (LNT) [28][61].\n\n### 2. Le déterminant transversal : la complexité (TLE)\n\nUn seul paramètre réordonne toute la carte mentale — la **densité d'ionisation** (TLE) :\n\n| | **Faible TLE** (X, γ, β⁻ : ¹⁷⁷Lu, ¹³¹I) | **Fort TLE** (α : ²²⁵Ac, ²²³Ra ; Auger intranucléaires) |\n|---|---|---|\n| DSB complexes | **30–40 %** | **> 90 %** | \n| Réparabilité | élevée (NHEJ/HR efficaces) | faible (bascule alt-EJ/SSA, toxicité ↑) |\n| OER (effet oxygène) | **≈ 2,5–3** | **≈ 1** (radiorésistance hypoxique abolie) |\n| EBR (RBE) | référence (= 1) | **α ≈ 5–10** |\n| Signature clinique | DSB étalées, **cross-fire** mm | DSB groupées sur quelques µm, quasi irréparables |\n\nLE point à retenir pour le médecin nucléaire : passer d'un émetteur β⁻ à un émetteur α ne change pas seulement la dose, mais la **nature biologique** de la lésion. C'est ce qui explique l'écart d'efficacité de l'ordre de **~700×** entre ²²⁵Ac-DOTATOC (ED₅₀ **14 kBq/mL**) et ¹⁷⁷Lu-DOTATOC (ED₅₀ **10 MBq/mL**) pour induire des DSB sur le même récepteur somatostatine [2].\n\n### 3. Trois translations pour la pratique\n\n- **Théranostique (choix β vs α).** Le rendement de DSB est prédictif de l'efficacité : foyers γ-H2AX tumoraux **35 %** (48 kBq ²²⁵Ac) vs **21 %** (30 MBq ¹⁷⁷Lu), arrêt G2/M jusqu'à **~60 %** des cellules 24 h après ²²⁵Ac-DOTATOC [2]. L'émetteur α est privilégié quand la radiorésistance (hypoxie, faible avidité, formes radiorésistantes) limite le β⁻.\n- **Biodosimétrie in vivo (γ-H2AX/53BP1 sur lymphocytes).** Dosimètre biologique sensible **< 20 mGy** au sang, 1 foyer ≈ 1 DSB [1][40]. Après ¹³¹I (cancer thyroïdien différencié) : **pic à 2 h**, foyers résiduels jusqu'à **120–144 h**, dose sang moyenne **0,31 ± 0,10 Gy** [3]. PRRT ¹⁷⁷Lu-DOTATATE : élévation des foyers chez **tous** les patients, dose sang **< 100 mGy à 48 h**, pic corrélé aux doses tumorale/médullaire et à la lymphopénie [58].\n- **Radiosensibilisation & terrain.** Les inhibiteurs de PARP (olaparib) exploitent la **létalité synthétique** des déficits HR (BRCA1/2) — SSP **19,1 vs 5,5 mois** en ovaire muté (SOLO-1) [66] — et radiosensibilisent de façon réplication-dépendante [12][68]. À l'inverse, un **déficit constitutionnel** (ataxie-télangiectasie/ATM, syndrome de Nimègue/NBN, anémie de Fanconi) impose la prudence : hypersensibilité majeure, réactions parfois sévères à doses conventionnelles [15][16][17][46].",
+          "steps": [
+            {
+              "title": "① Dépôt d'énergie",
+              "text": "Ionisation **directe** de l'ADN (~1/3) ou **indirecte** par radiolyse de l'eau → radical **•OH** (~2/3 à faible TLE, 60–70 % des dommages). Durée de vie des radicaux ~10⁻⁹–10⁻¹¹ s [4][31][32][29]."
+            },
+            {
+              "title": "② Lésion ADN",
+              "text": "Spectre par Gy : bases **~2 500–25 000** > SSB **~1 000** > pontages > **DSB ~40** ; sites groupés (LMDS) **~440**. La **DSB** est la moins fréquente mais la plus létale ; le fort TLE la rend **complexe** (> 90 %) [5][28][29][39]."
+            },
+            {
+              "title": "③ Détection & signalisation (DDR)",
+              "text": "**MRN** détecte la DSB → active **ATM** (DSB) / **ATR** (fourches bloquées, extrémités résectées) → **γ-H2AX**, p53→p21 (arrêt G1/S), CHK1→CDC25 (arrêt G2/M). **Ku** sur la lésion en **~1 s** [1][6][22][23][44][45]."
+            },
+            {
+              "title": "④ Réparation & devenir",
+              "text": "**NHEJ** (rapide 1–2 h, tout le cycle, infidèle) ou **HR** (≥ 8 h, S/G2, fidèle via chromatide sœur) ; voies de secours **alt-EJ/SSA** (mutagènes). Devenir : survie fidèle, mutation/carcinogenèse, ou **apoptose p53-dépendante** si dommage extensif [1][34][35][37][41]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "~40 DSB/Gy",
+              "label": "Cassures double-brin par Gy (faible TLE) [5][28]"
+            },
+            {
+              "value": "2/3",
+              "label": "Part de l'effet indirect (•OH) à faible TLE [4][31]"
+            },
+            {
+              "value": "~700×",
+              "label": "Écart d'efficacité DSB ²²⁵Ac vs ¹⁷⁷Lu [2]"
+            },
+            {
+              "value": "1–2 h vs ≥8 h",
+              "label": "Cinétique NHEJ (infidèle) vs HR (fidèle) [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la DSB est le pivot de tout l'article",
+              "text": "Tout converge vers la **cassure double-brin** : c'est la lésion la mieux corrélée à la mort cellulaire [29], le substrat du foyer **γ-H2AX** (biodosimètre, 1 foyer ≈ 1 DSB) [1][40], le déterminant de l'efficacité théranostique (β⁻ vs α) [2], et la lésion dont la réparation fautive — linéaire de **5 mGy à 1 Gy** — fonde le modèle **LNT** [28]. Mémoriser la cascade lésion→réparation→devenir, c'est tenir le fil rouge de la radiobiologie appliquée à la médecine nucléaire."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ne pas confondre dose et nature de la lésion",
+              "text": "Deux radionucléides peuvent délivrer une dose absorbée (Gy) comparable et produire des effets biologiques radicalement différents : l'émetteur **α** crée des DSB **groupées quasi irréparables** (EBR 5–10, OER ≈ 1), l'émetteur **β⁻** des DSB **éparses réparables** (cross-fire mm). La dose absorbée seule ne préjuge pas de l'efficacité : raisonner aussi en **TLE / complexité de lésion** [2][39][53][54]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — biomarqueur γ-H2AX et irradiation continue",
+              "text": "Sous administration prolongée/continue (radiothérapie interne vectorisée), le signal γ-H2AX peut **décliner dès 24 h** par réparation concomitante (faux-négatif relatif) : interpréter en intégrant la cinétique de premier ordre et le débit de dose [1][25]. De même, l'**effet débit de dose** réduit le rendement de DSB/Gy à bas débit (~19,7 DSB/cellule/Gy à 400 mGy/min, moins ensuite) [30]."
+            },
+            {
+              "type": "info",
+              "title": "À considérer aux faibles doses — effets non ciblés",
+              "text": "Au-delà de la cible irradiée : effet **bystander** (cellules voisines non irradiées), **instabilité génomique** transmissible, **réponse adaptative**, effet **abscopal**. Ces phénomènes nuancent l'extrapolation linéaire LNT dans le domaine des faibles doses [18][19][64][65]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique illustrant comment le rendement de cassures double-brin de l'ADN (foyers γ-H2AX), plus élevé pour l'émetteur alpha ²²⁵Ac que pour l'émetteur bêta ¹⁷⁷Lu, guide la sélection diagnostique puis le choix du radionucléide thérapeutique et le suivi par biodosimétrie."
+          }
+        },
+        {
+          "title": "E17 - Références, liens et ressources",
+          "text": "Cet article de radiobiologie fondamentale sous-tend l'ensemble des articles **Traceurs**, **Examens** et **Maladies** de NucleAtlas : il fournit le **lien mécanistique** entre dose absorbée et lésion de l'ADN, tandis que les coefficients de dose par radiopharmaceutique relèvent de la **CIPR 128** (ICRP, *Radiation Dose to Patients from Radiopharmaceuticals*, 2015) et le cadre de radioprotection de la **CIPR 103** (2007) — LNT, **DDREF = 2**, détriment **5,5 %/Sv** (cancer) + **0,2 %/Sv** (héréditaire) [61][62][63].\n\n### Bibliographie sourcée\n\nLes 68 références utilisées dans l'article figurent dans la liste **Sources & Références** en bas de page, citées inline par `[n]`. Repères thématiques :\n\n| Thème | Références-clés |\n|---|---|\n| **Physique de l'interaction (direct/indirect, •OH, radiolyse)** | [4][26][31][32][33] |\n| **Rendements de lésions par Gy (bases, SSB, DSB, LMDS)** | [5][28][29] |\n| **Lésions complexes / TLE / clustered damage** | [9][10][39][53][54] |\n| **Marqueurs γ-H2AX / 53BP1 (biodosimétrie)** | [1][24][40][42][43] |\n| **Voies de réparation (NHEJ, HR, BER, NER, MMR, alt-EJ/SSA)** | [6][34][35][36][37][38][47][48][49][50] |\n| **Signalisation DDR (MRN, ATM/ATR, CHK1/2, p53, checkpoints)** | [7][22][23][41][44][45] |\n| **Modèles dose-effet (LQ, α/β, OER, RBE)** | [8][51][52] |\n| **Radionucléides Auger (¹²⁵I/¹²³I, ¹¹¹In)** | [56][57] |\n| **Données médecine nucléaire in vivo (¹³¹I, ¹⁷⁷Lu-DOTATATE/PSMA, ²²⁵Ac/²²⁷Th)** | [2][3][53][54][58][59][60] |\n| **Radioprotection / LNT / faibles doses / effets non ciblés** | [18][19][21][61][62][63][64][65] |\n| **Radiosensibilisation (PARPi, létalité synthétique) & radioprotecteurs (amifostine)** | [11][12][13][14][27][66][67][68] |\n| **Syndromes de radiosensibilité (ataxie-télangiectasie/ATM, NBN, Fanconi)** | [15][16][17][46] |\n\n### Carte de liens (réseau de l'article)\n\n- **Traceurs / émetteurs** : ¹⁷⁷Lu (β⁻), ¹³¹I (β⁻/γ), ²²⁵Ac (α), ²²³Ra (α), émetteurs Auger (¹²⁵I, ¹¹¹In).\n- **Examens / concepts liés** : biodosimétrie γ-H2AX, dosimétrie interne (CIPR 128), TEP ⁶⁸Ga-DOTATATE et thérapie ¹⁷⁷Lu-DOTATATE (PRRT), ¹⁷⁷Lu-PSMA.\n- **Maladies** : tumeurs neuroendocrines (récepteurs somatostatine), cancer de prostate (PSMA), cancer thyroïdien différencié (¹³¹I), cancers BRCA-mutés (ovaire/sein/pancréas — contexte PARPi).\n- **Théranostique** : la paire **diagnostic→traitement** repose sur le rendement de DSB comme prédicteur d'efficacité ; choix **β⁻ vs α** selon la complexité lésionnelle recherchée [2][53].\n\n### Pour aller plus loin\n\n- **Recommandations & cadre** : ICRP 103 (radioprotection, LNT) [61][63] ; ICRP 128 (doses aux patients par radiopharmaceutique — coefficients à référencer dans chaque article Traceur).\n- **Revues de synthèse** : mécanismes de réparation et mutagenèse [6] ; quantification des foyers de réparation des DSB pour prédire la réponse biologique [1] ; bases de la radiothérapie alpha ciblée et modélisation Geant4-DNA des DSB complexes (²²⁵Ac/²²⁷Th) [53].\n\n*Note méthodologique : sujet de radiobiologie transversale, sans modalité d'imagerie ni traceur unique. Les rubriques du gabarit « examen » sont adaptées — la cible biologique est l'ADN nucléaire, et le « radiopharmaceutique » désigne le panorama des émetteurs (β⁻, α, Auger) et des modulateurs de réparation (radiosensibilisateurs, radioprotecteurs). Dernière mise à jour : juin 2026 — profil médecin nucléaire.*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Périmètre des sources chiffrées",
+              "text": "Ce volet radiobiologique fournit le **lien mécanistique** dose absorbée → lésion ADN. Les coefficients de dose canoniques (mSv/MBq) par radiopharmaceutique ne sont **pas** détaillés ici : ils relèvent de la **CIPR 128** et sont à référencer dans l'article de chaque traceur. Le cadre stochastique (LNT, DDREF 2, détriment 5,5 %/Sv cancer + 0,2 %/Sv héréditaire) provient de la **CIPR 103** [61][62][63]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — articuler les trois échelles",
+              "text": "Pour relier cet article au reste de NucleAtlas, garder en tête trois échelles emboîtées : **physique** (dose absorbée en Gy, TLE), **biologique** (DSB, foyers γ-H2AX, voie de réparation) et **clinique/réglementaire** (dose efficace en Sv, détriment, LNT). La radiobiologie est le pont qui transforme une grandeur physique en effet biologique puis en risque — c'est ce qui justifie le choix d'un émetteur, l'interprétation d'un biodosimètre et l'application du principe ALARA."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des principaux types d'émission utilisés en médecine nucléaire (bêta-moins, alpha, électrons Auger) et de leur signature lésionnelle sur l'ADN : parcours millimétrique et cassures éparses pour le bêta, parcours micrométrique et cassures groupées à fort TLE pour l'alpha, dépôt nanométrique intranucléaire pour les émetteurs Auger."
+          }
+        }
+      ]
+    }
+  }
+}
