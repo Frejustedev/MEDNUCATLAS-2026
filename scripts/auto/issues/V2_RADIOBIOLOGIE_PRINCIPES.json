@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "medecin_nuc sections B5/E16 (« Dépression hématopoïétique ~0,5 Gy ») vs D12 (« Hématopoïétique ~1–2 Gy »)",
+    "problem": "L'article donne deux seuils différents pour l'atteinte hématopoïétique sans expliciter qu'il s'agit de deux endpoints distincts : ~0,5 Gy = seuil de dépression médullaire détectable à 1 % d'incidence (CIPR 118), tandis que ~1–2 Gy = forme clinique franche du syndrome aigu d'irradiation (SAI). Les deux valeurs sont individuellement justes (la littérature place le syndrome hématopoïétique manifeste >1 Gy, plage 0,7–10 Gy ; la dépression médullaire aiguë à ~0,5 Gy / 0,4 Gy par an en chronique), mais leur juxtaposition non explicitée peut faire croire à une contradiction.",
+    "fix": "Préciser que 0,5 Gy correspond à la dépression hématopoïétique (CIPR 118, 1 % d'incidence) et 1–2 Gy au syndrome hématopoïétique cliniquement franc (SAI) — deux niveaux d'effet différents."
+  },
+  {
+    "severity": "minor",
+    "where": "quiz, question 12 (« DL50/60 humaine ») — champ explanation",
+    "problem": "L'explication du quiz indique « DL50/60 d'environ 3,5–4,5 Gy sans support », alors que le corps de l'article (sections B5, D12, E16) cite de façon cohérente « 3,5–4 Gy sans traitement ». Incohérence interne mineure sur la borne haute (4,5 vs 4).",
+    "fix": "Harmoniser sur « ~3,5–4 Gy sans traitement, 4,5–7 Gy avec soins intensifs », valeur retenue partout ailleurs dans l'article."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc section D14, tableau « Pré-implantation » (« mort embryonnaire dès ~0,1–0,2 Gy ») vs fiche de référence §3 (« dès 0,2 Gy »)",
+    "problem": "Le seuil de mortalité de l'embryon pré-implantatoire est donné « dès ~0,1–0,2 Gy » dans D14 mais « dès 0,2 Gy » dans la fiche §3. La doctrine ICRP (Publ. 84/90) précise que sous 100 mGy (0,1 Gy) les effets létaux pré-implantatoires sont très rares chez l'humain ; la borne basse de 0,1 Gy est donc à la limite haute du plausible et certaines sources placent l'effet plutôt vers 0,1–0,25 Gy. Imprécision/incohérence interne, sans erreur factuelle grave.",
+    "fix": "Uniformiser la valeur (p. ex. « ~0,1 Gy, effets létaux très rares en deçà » selon ICRP 84/90) entre la fiche et la section D14."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc section A2 / B8 et fiche §2 (« OER = 1,0 pour TLE > 165 keV/µm »)",
+    "problem": "La valeur de TLE à laquelle l'OER atteint 1,0 est présentée comme « > 165 keV/µm ». C'est la valeur classique enseignée (Hall), donc acceptable, mais la littérature récente situe l'extinction complète de l'effet oxygène plutôt vers 150–200, voire jusqu'à ~500 keV/µm selon les modèles. Affirmer un seuil net unique (165) est une simplification.",
+    "fix": "Nuancer en « OER → 1,0 aux TLE élevés (~150–200 keV/µm et au-delà) » pour refléter la dispersion des sources, ou indiquer qu'il s'agit de la valeur classique de référence."
+  },
+  {
+    "severity": "major",
+    "where": "Section C11 (texte) et stat C11 « 9,2-33,3 Gy, dose salivaire prédite, ¹³¹I-MIP-1095 [30] »",
+    "problem": "Statistique fabriquée. La phrase « le ¹³¹I-MIP-1095 (anti-PSMA) délivre une dose absorbée salivaire prédite de 9,2 à 33,3 Gy » est attribuée à [30][31], mais ce chiffre n'apparaît dans AUCUNE des deux sources. La source [30] (abstract J Nucl Med xerostomia 251540) porte sur le ¹⁷⁷Lu-PSMA-617 et non le ¹³¹I-MIP-1095, et la source [31] (Frontiers in Chemistry « Developments in 177Lu-based radiopharmaceutical therapy and dosimetry ») ne mentionne ni le MIP-1095 ni cette plage de dose. La littérature réelle sur le ¹³¹I-MIP-1095 (Zechmann/Afshar-Oromieh, EJNMMI/PMC5397661) donne ~4,62 Gy/GBq soit ~18,5 Gy pour 4 GBq. Le « 33,3 » semble être une collision hallucinatoire avec le chiffre réel « 33,3 % des patients avec xérostomie grade 3 à la 3e thérapie » d'un papier MIP-1095.",
+    "fix": "Supprimer la plage « 9,2 à 33,3 Gy » ou la remplacer par la valeur réellement sourcée (~4,6 Gy/GBq, ~18,5 Gy pour 4 GBq) en citant le papier de dosimétrie du ¹³¹I-MIP-1095 (Afshar-Oromieh/Zechmann, EJNMMI 2014/2017) plutôt que [30][31] qui ne la contiennent pas. Corriger aussi la stat C11 correspondante."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B6 (tableau effets héréditaires) ; carte d'identité implicite",
+    "problem": "Inexactitude sur la dose de doublement « aiguë ». Le tableau B6 indique « Dose de doublement des mutations (aiguë) ~1 Gy [14] ». Or la source [14] (BfS) attribue la valeur 1 Gy à l'exposition CHRONIQUE et 0,3 Gy à l'exposition AIGUË. La qualification « (aiguë) ~1 Gy » inverse donc l'attribution de la source citée.",
+    "fix": "Soit retirer la mention « (aiguë) » et écrire « dose de doublement ~1 Gy (exposition chronique) [14] », soit indiquer « ~0,3 Gy (aiguë) / ~1 Gy (chronique) [14] » conformément au texte exact du BfS."
+  }
+]

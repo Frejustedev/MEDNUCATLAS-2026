@@ -1,0 +1,1386 @@
+{
+  "id": "V2_RADIOBIOLOGIE_PRINCIPES",
+  "cat": "radiobiologie",
+  "catLabel": "Radiobiologie",
+  "title": "Radiobiologie : effets déterministes et stochastiques",
+  "difficulty": "avancé",
+  "tags": [
+    "radiobiologie",
+    "effets déterministes",
+    "effets stochastiques",
+    "réactions tissulaires",
+    "modèle LNT",
+    "dose-effet",
+    "lésions de l'ADN",
+    "radioprotection",
+    "ALARA",
+    "CIPR 103",
+    "détriment",
+    "radiosensibilité"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Deterministic Effects (Tissue Reactions) and Stochastic Effects — Japan Ministry of the Environment (MOE)",
+      "url": "https://www.env.go.jp/en/chemi/rhm/basic-info/1st/03-01-04.html"
+    },
+    {
+      "title": "[2] Classification of radiation effects for dose limitation purposes: history, current situation and future prospects — Journal of Radiation Research (Oxford)",
+      "url": "https://academic.oup.com/jrr/article/55/4/629/930449"
+    },
+    {
+      "title": "[3] Tissue Reactions (Deterministic effects) and Stochastic effects — Hong Kong Observatory",
+      "url": "https://www.hko.gov.hk/en/radiation/monitoring/deterministic_and_stochastic_effects.html"
+    },
+    {
+      "title": "[4] ICRP Publication 118 — Threshold Doses for Tissue Reactions in a Radiation Protection Context (ICRP)",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+118"
+    },
+    {
+      "title": "[5] ICRP publication 118: Statement on Tissue Reactions and early/late effects in normal tissues — threshold doses (PubMed 22925378)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22925378/"
+    },
+    {
+      "title": "[6] Radiosensitivity — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radiosensitivity"
+    },
+    {
+      "title": "[7] Threshold Values for Various Effects (Deterministic Effects / Tissue Reactions) — Japan Ministry of the Environment (MOE)",
+      "url": "https://www.env.go.jp/en/chemi/rhm/basic-info/1st/03-03-04.html"
+    },
+    {
+      "title": "[8] The law of Bergonié and Tribondeau: a nice formula for a first approximation (PubMed 22856587)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22856587/"
+    },
+    {
+      "title": "[9] Linear no-threshold model — Wikipedia (BEIR VII, ICRP, LNT)",
+      "url": "https://en.wikipedia.org/wiki/Linear_no-threshold_model"
+    },
+    {
+      "title": "[10] The Cellular Response to Complex DNA Damage Induced by Ionising Radiation — PMC (SSB/DSB/base lesions per Gy)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10003081/"
+    },
+    {
+      "title": "[11] Review of Radiation Oncology Physics: A Handbook for Teachers and Students — Chapter 14 Basic Radiobiology (IAEA, stages of radiation action)",
+      "url": "https://recherche-expertise.asnr.fr/sites/default/files/documents/professionnels_sante/documentation/syllabus_chapitre_14.pdf"
+    },
+    {
+      "title": "[12] Fundamentals of Water Radiolysis — MDPI Encyclopedia (physical/physicochemical/chemical stages, timescales)",
+      "url": "https://www.mdpi.com/2673-8392/5/1/38"
+    },
+    {
+      "title": "[13] MECHANISMS OF BIOLOGICAL EFFECTS — Toxicological Profile for Ionizing Radiation, NCBI Bookshelf NBK597563",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK597563/"
+    },
+    {
+      "title": "[14] BfS — Hereditary radiation damage (doubling dose, 1 disease per 500 births per Gy, no human evidence)",
+      "url": "https://www.bfs.de/EN/topics/ion/effect/hereditary/hereditary.html"
+    },
+    {
+      "title": "[15] Oxygen Enhancement Ratio — an overview, ScienceDirect Topics (OER vs LET)",
+      "url": "https://www.sciencedirect.com/topics/nursing-and-health-professions/oxygen-enhancement-ratio"
+    },
+    {
+      "title": "[16] Optimisation de la radioprotection / principes (justification, optimisation/ALARA, limitation) — ASNR/IRSN",
+      "url": "https://recherche-expertise.asnr.fr/savoir-comprendre/sante/sante-radioprotection"
+    },
+    {
+      "title": "[17] ICRP Publication 103 — The 2007 Recommendations (NRC reprint ML12338A682) — wR, wT, dose limits",
+      "url": "https://www.nrc.gov/docs/ml1233/ML12338A682.pdf"
+    },
+    {
+      "title": "[18] Radiation weighting factor — ICRPaedia (definition, ICRP 103)",
+      "url": "https://icrpaedia.org/Radiation_weighting_factor"
+    },
+    {
+      "title": "[19] Radiation Weighting Factor — nuclear-power.com (wR values ICRP 103)",
+      "url": "https://www.nuclear-power.com/nuclear-engineering/radiation-protection/equivalent-dose/radiation-weighting-factor/"
+    },
+    {
+      "title": "[20] Principles of Radiobiology — OncologyMedicalPhysics.com (direct/indirect damage, Bergonié-Tribondeau, cell cycle)",
+      "url": "https://oncologymedicalphysics.com/principles-of-radiobiology/"
+    },
+    {
+      "title": "[21] Somatic Effects of Radiation: ARRT Registry Review (erythema, sterility, cataract thresholds)",
+      "url": "https://www.radtechregistry.com/blog/biological-effects-of-radiation-part-3-somatic-effects"
+    },
+    {
+      "title": "[22] Deterministic Effects: Cataracts, Skin, & Sterility — IntroductionToRadiology.net",
+      "url": "https://introductiontoradiology.net/courses/rad/radbiol/03deterministic/deter-01-02.html"
+    },
+    {
+      "title": "[23] Acute Radiation Syndrome: Information for Clinicians — CDC",
+      "url": "https://www.cdc.gov/radiation-emergencies/hcp/clinical-guidance/ars.html"
+    },
+    {
+      "title": "[24] Acute radiation syndrome — Wikipedia (LD50/60, hematopoietic/GI/CNS dose ranges)",
+      "url": "https://en.wikipedia.org/wiki/Acute_radiation_syndrome"
+    },
+    {
+      "title": "[25] Health Effects of Prenatal Radiation Exposure — AAFP (100–200 mGy malformation threshold, 8–15 wk, IQ)",
+      "url": "https://www.aafp.org/pubs/afp/issues/2010/0901/p488.html"
+    },
+    {
+      "title": "[26] Radiation Effects on the Fetus — StatPearls, NCBI Bookshelf NBK564358",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK564358/"
+    },
+    {
+      "title": "[27] Stage-Specific Effects of Ionizing Radiation during Early Development — MDPI IJMS (preimplantation 0.2 Gy)",
+      "url": "https://www.mdpi.com/1422-0067/21/11/3975"
+    },
+    {
+      "title": "[28] Normal-Tissue Tolerance to Radiopharmaceutical Therapies, the Knowns and the Unknowns — J Nucl Med",
+      "url": "https://jnm.snmjournals.org/content/62/Supplement_3/23S"
+    },
+    {
+      "title": "[29] EANM Dosimetry Committee recommendations for dosimetry of 177Lu-labelled SSTR- and PSMA-targeting ligands — Eur J Nucl Med Mol Imaging",
+      "url": "https://link.springer.com/article/10.1007/s00259-022-05727-7"
+    },
+    {
+      "title": "[30] Xerostomia trends reported by FACT-RNT in mCRPC patients under [177Lu]Lu-PSMA-617 RPT and salivary gland dosimetry — J Nucl Med",
+      "url": "https://jnm.snmjournals.org/content/66/supplement_1/251540"
+    },
+    {
+      "title": "[31] Developments in 177Lu-based radiopharmaceutical therapy and dosimetry — Frontiers in Chemistry",
+      "url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2023.1218670/full"
+    },
+    {
+      "title": "[32] The 68Ga/177Lu theragnostic concept in PSMA targeting of castration-resistant prostate cancer: correlation of SUVmax values and absorbed dose estimates — Eur J Nucl Med Mol Imaging",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3609-9"
+    },
+    {
+      "title": "[33] The 4Rs in radiation therapy — Chinese Journal of Radiological Medicine and Protection (CJRMP)",
+      "url": "http://www.cjrmp.net/html/2019/8/20190803.htm"
+    },
+    {
+      "title": "[34] Ionizing Radiation — Health Effects — OSHA (ARS, deterministic/stochastic, dose limits)",
+      "url": "https://www.osha.gov/ionizing-radiation/health-effects"
+    },
+    {
+      "title": "[35] ICRP Publication 103 — Free extract (Annals of the ICRP 37(2-4))",
+      "url": "https://www.icrp.org/docs/icrp_publication_103-annals_of_the_icrp_37(2-4)-free_extract.pdf"
+    },
+    {
+      "title": "[36] Impact of updating the non-radiation parameters in the ICRP 103 detriment model — PMC (≈5.7%/Sv detriment)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5902532/"
+    },
+    {
+      "title": "[37] Radioprotection — Wikipédia (principes CIPR, ALARA, justification, limitation)",
+      "url": "https://fr.wikipedia.org/wiki/Radioprotection"
+    },
+    {
+      "title": "[38] Noncancer Effects of Ionizing Radiation Exposure on the Eye, the Circulatory System and beyond: Developments since the 2011 ICRP Statement on Tissue Reactions (PubMed 37410098)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37410098/"
+    },
+    {
+      "title": "[39] Radiation protection of the eye lens in medical workers — basis and impact of the ICRP recommendations (British Journal of Radiology, 20151034)",
+      "url": "https://academic.oup.com/bjr/article/89/1060/20151034/7445760"
+    },
+    {
+      "title": "[40] The shape of the radiation dose response for DNA double-strand break induction and repair (PMC3616853)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3616853/"
+    },
+    {
+      "title": "[41] Radiation Damage to DNA: The Indirect Effect of Low Energy Electrons (PMC4071054)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4071054/"
+    },
+    {
+      "title": "[42] Sensitivity and latency of ionising radiation-induced cataract (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0014483521003389"
+    },
+    {
+      "title": "[43] Radiosensitivity: Bergonié and Tribondeau Law",
+      "url": "https://adaintymum.blog/radiosensitivity-bergonie-tribondeau/"
+    },
+    {
+      "title": "[44] Alpha-Beta Ratio — an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/alpha-beta-ratio"
+    },
+    {
+      "title": "[45] Alpha/Beta Ratio Explained for FRCR Part 1 (PassOncology)",
+      "url": "https://www.passoncology.com/blog/alpha-beta-ratio-radiobiology-frcr-explained"
+    },
+    {
+      "title": "[46] Linear Quadratic Models — an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/linear-quadratic-models"
+    },
+    {
+      "title": "[47] Radiobiology of the acute radiation syndrome (PMC3863296)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3863296/"
+    },
+    {
+      "title": "[48] Gastrointestinal acute radiation syndrome: current knowledge and perspectives (Cell Death Discovery, Nature s41420-025-02525-6)",
+      "url": "https://www.nature.com/articles/s41420-025-02525-6"
+    },
+    {
+      "title": "[49] Acute Radiation Syndrome — an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/acute-radiation-syndrome"
+    },
+    {
+      "title": "[50] Radiation exposure and pregnancy (Journal of Vascular Surgery)",
+      "url": "https://www.jvascsurg.org/article/S0741-5214(10)01733-7/fulltext"
+    },
+    {
+      "title": "[51] Solid Cancer Incidence among the Life Span Study of Atomic Bomb Survivors: 1958–2009 (Radiation Research, RR14492.1)",
+      "url": "https://bioone.org/journals/radiation-research/volume-187/issue-5/RR14492.1/Solid-Cancer-Incidence-among-the-Life-Span-Study-of-Atomic/10.1667/RR14492.1.full"
+    },
+    {
+      "title": "[52] Solid Cancer Incidence among the Life Span Study of Atomic Bomb Survivors: 1958–2009 (PMC10320812)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10320812/"
+    },
+    {
+      "title": "[53] ICRP Publication 152: Radiation Detriment Calculation Methodology, 2022 (SAGE Journals)",
+      "url": "https://journals.sagepub.com/doi/10.1177/01466453221080101"
+    },
+    {
+      "title": "[54] Table D-5, Tissue Weighting Factors for Calculating Effective Dose (ICRP 103) — Toxicological Profile for Uranium (NCBI NBK158810)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK158810/table/T50/"
+    },
+    {
+      "title": "[55] Tissue weighting factors according to ICRP 103 (European Commission)",
+      "url": "https://ec.europa.eu/health/scientific_committees/opinions_layman/security-scanners/en/figtableboxes/tissue-weighting-factors.htm"
+    },
+    {
+      "title": "[56] Comparison of the ICRP 60 and ICRP 103 Recommendations on the Determination of the Effective Dose from Abdominopelvic Computed Tomography (SCIRP, IJMPCERO)",
+      "url": "https://www.scirp.org/pdf/ijmpcero_2015050518185637.pdf"
+    },
+    {
+      "title": "[57] UNSCEAR 2020/2021 Report Volume III, Annex C: Biological mechanisms relevant for the inference of cancer risks from low dose and low-dose-rate radiation",
+      "url": "https://www.unscear.org/unscear/uploads/documents/publications/UNSCEAR_2020_21_Annex-C-CORR.pdf"
+    },
+    {
+      "title": "[58] Non-targeted effects of ionizing radiation — implications for low dose risk (PMC4091999)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4091999/"
+    },
+    {
+      "title": "[59] Skin Injuries Caused by Fluoroscopically Guided Interventional Procedures (AJR)",
+      "url": "https://www.ajronline.org/doi/10.2214/AJR.07.7140"
+    },
+    {
+      "title": "[60] Radiation-induced skin injury after complex endovascular procedures (PubMed 24768364)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24768364/"
+    },
+    {
+      "title": "[61] Erythema and skin injuries (IAEA RPOP)",
+      "url": "https://www.iaea.org/resources/rpop/health-professionals/radiology/erythema"
+    },
+    {
+      "title": "[62] Emerging issues in radiogenic cataracts and cardiovascular disease (PMC4202294) — Seoul Statement 2011 thresholds",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4202294/"
+    },
+    {
+      "title": "[63] Classification of radiation effects for dose limitation purposes: history, current situation and future prospects (PMC4100010)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4100010/"
+    },
+    {
+      "title": "[64] Le principe de limitation des doses et la tolérabilité du risque radiologique (Radioprotection / SFRP)",
+      "url": "https://www.radioprotection.org/fr/articles/radiopro/full_html/2024/03/radiopro240023/radiopro240023.html"
+    },
+    {
+      "title": "[65] Radioprotection : principes de base et limites de doses (AFCN — Agence fédérale de Contrôle nucléaire)",
+      "url": "https://afcn.fgov.be/fr/dossiers/radioactivite/radioprotection-principes-de-base-et-limites-de-doses"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "microscope",
+        "label": "Discipline",
+        "value": "Effets des rayonnements ionisants sur le vivant"
+      },
+      {
+        "icon": "dna",
+        "label": "Cible critique",
+        "value": "ADN nucléaire — lésion clé : cassure double brin (DSB)"
+      },
+      {
+        "icon": "zap",
+        "label": "Lésions ADN par Gy/cellule",
+        "value": ">1000 bases · ~1000 SSB · 20–40 DSB [10]"
+      },
+      {
+        "icon": "alert",
+        "label": "Effet déterministe",
+        "value": "À seuil, gravité ↑ avec la dose (réaction tissulaire) [3]"
+      },
+      {
+        "icon": "activity",
+        "label": "Effet stochastique",
+        "value": "Sans seuil (LNT), probabilité ↑ avec la dose [9]"
+      },
+      {
+        "icon": "target",
+        "label": "Seuils-repères",
+        "value": "Cristallin 0,5 Gy · érythème 2 Gy · DL50 ~4,5 Gy [4][5]"
+      },
+      {
+        "icon": "radiation",
+        "label": "Détriment stochastique",
+        "value": "≈ 5,7 % par Sv (population, CIPR 103) [36]"
+      },
+      {
+        "icon": "flask",
+        "label": "Grandeurs SI",
+        "value": "Dose absorbée Gy (J/kg) · équivalente/efficace Sv [17]"
+      },
+      {
+        "icon": "shield",
+        "label": "Limites de dose",
+        "value": "Travailleur 20 mSv/an · public 1 mSv/an [65]"
+      },
+      {
+        "icon": "baby",
+        "label": "Fœtus",
+        "value": "Malformations seuil ~100–200 mGy ; QI ~30 pts/Gy (8–15 SA) [26]"
+      },
+      {
+        "icon": "list",
+        "label": "Référentiels pivots",
+        "value": "CIPR 103 (2007) · CIPR 118 (2012) · BEIR VII · LSS"
+      },
+      {
+        "icon": "clock",
+        "label": "Latence stochastique",
+        "value": "Années à décennies (cancers solides) [13]"
+      },
+      {
+        "icon": "droplets",
+        "label": "Mécanisme dominant (bas TLE)",
+        "value": "Effet indirect — radiolyse de l'eau, •OH [10][41]"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "Dosimétrie patient en thérapie par radionucléides"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-PSMA (xérostomie, glandes salivaires)"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹³¹I (thérapie)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie à la MIBG"
+      },
+      {
+        "type": "examen",
+        "label": "TEP au ¹⁸F-FDG"
+      },
+      {
+        "type": "score",
+        "label": "Limites de dose réglementaires (CIPR 103)"
+      },
+      {
+        "type": "score",
+        "label": "Facteurs de pondération wR / wT"
+      },
+      {
+        "type": "maladie",
+        "label": "Syndrome d'irradiation aiguë"
+      },
+      {
+        "type": "maladie",
+        "label": "Cataracte radio-induite"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancers radio-induits"
+      },
+      {
+        "type": "examen",
+        "label": "Principe ALARA / radioprotection"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Qu'est-ce qui caractérise un effet déterministe (réaction tissulaire) ?",
+        "options": [
+          "Il survient sans seuil de dose",
+          "Il existe un seuil et la gravité augmente avec la dose",
+          "Seule la probabilité augmente avec la dose",
+          "Il ne concerne que la descendance"
+        ],
+        "answer": 1,
+        "explanation": "Un effet déterministe a un seuil de dose ; au-dessus, sa gravité croît avec la dose. Le seuil CIPR est défini à 1 % d'incidence [4][5].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle lésion de l'ADN corrèle le mieux avec la mort cellulaire ?",
+        "options": [
+          "Le dommage de base",
+          "La cassure simple brin (SSB)",
+          "La cassure double brin (DSB)",
+          "Le pontage protéine-ADN"
+        ],
+        "answer": 2,
+        "explanation": "Les DSB (~20–40 par Gy et par cellule) génèrent des aberrations chromosomiques létales et corrèlent le mieux avec la mort cellulaire [10].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Combien de cassures double brin sont induites en moyenne par gray dans une cellule (bas TLE) ?",
+        "options": [
+          "1 à 2",
+          "20 à 40",
+          "200 à 400",
+          "Plus de 1000"
+        ],
+        "answer": 1,
+        "explanation": "Par Gy, on compte >1000 dommages de bases, ~1000 SSB et environ 20–40 DSB par cellule [10].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le seuil actuel (CIPR 118) pour la cataracte du cristallin ?",
+        "options": [
+          "0,5 Gy",
+          "2 Gy",
+          "5 Gy",
+          "8 Gy"
+        ],
+        "answer": 0,
+        "explanation": "Le seuil a été abaissé à 0,5 Gy par la CIPR 118 (2012), indépendamment du débit de dose [4][5].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel modèle sert de référence pour estimer le risque stochastique en radioprotection ?",
+        "options": [
+          "Modèle à seuil",
+          "Modèle hormétique",
+          "Modèle linéaire sans seuil (LNT)",
+          "Modèle quadratique pur"
+        ],
+        "answer": 2,
+        "explanation": "Le modèle linéaire sans seuil (LNT) est l'hypothèse de référence ; BEIR VII conclut à une relation dose-réponse linéaire sans seuil démontré pour la cancérogenèse [9].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel est l'ordre de grandeur du coefficient de détriment total (CIPR 103) pour la population entière ?",
+        "options": [
+          "≈ 0,1 % par Sv",
+          "≈ 1 % par Sv",
+          "≈ 5,7 % par Sv",
+          "≈ 20 % par Sv"
+        ],
+        "answer": 2,
+        "explanation": "Le détriment ajusté total est d'environ 5,7 % par Sv (cancer + héréditaire), dont seulement ~0,1 %/Sv pour les effets héréditaires [36].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pour les rayonnements de bas TLE (photons, électrons), le dommage à l'ADN est majoritairement :",
+        "options": [
+          "Direct, par ionisation de l'ADN",
+          "Indirect, via les radicaux de la radiolyse de l'eau",
+          "Thermique",
+          "Mécanique"
+        ],
+        "answer": 1,
+        "explanation": "À bas TLE, la majorité des lésions est indirecte, due aux radicaux (•OH notamment) issus de la radiolyse de l'eau, d'où la sensibilité à l'oxygène [10][41].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon la loi de Bergonié et Tribondeau, une cellule est d'autant plus radiosensible qu'elle est :",
+        "options": [
+          "Différenciée et quiescente",
+          "Indifférenciée, à activité mitotique élevée et avenir mitotique long",
+          "Riche en mitochondries",
+          "De grande taille"
+        ],
+        "answer": 1,
+        "explanation": "La radiosensibilité croît avec l'indifférenciation, l'activité mitotique et la durée de prolifération à venir [8].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la limite de dose efficace annuelle pour un travailleur exposé (CIPR 103) ?",
+        "options": [
+          "1 mSv/an",
+          "6 mSv/an",
+          "20 mSv/an",
+          "50 mSv/an pendant 5 ans sans plafond"
+        ],
+        "answer": 2,
+        "explanation": "La limite est de 20 mSv/an moyennée sur 5 ans, sans dépasser 50 mSv une année donnée ; le public est limité à 1 mSv/an [65].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Le rapport α/β du modèle linéaire-quadratique est typiquement de quel ordre pour les tissus à réponse tardive ?",
+        "options": [
+          "≈ 3 Gy",
+          "≈ 10 Gy",
+          "≈ 20 Gy",
+          "≈ 100 Gy"
+        ],
+        "answer": 0,
+        "explanation": "Les tissus à réponse tardive ont un α/β ≈ 3 Gy (très sensibles au fractionnement) ; tumeurs et tissus à réponse précoce ≈ 10 Gy [45].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Pour les particules alpha, quel est le facteur de pondération radiologique wR (CIPR 103) ?",
+        "options": [
+          "1",
+          "2",
+          "5",
+          "20"
+        ],
+        "answer": 3,
+        "explanation": "wR = 20 pour les particules α, fragments de fission et ions lourds ; wR = 1 pour photons/électrons, 2 pour les protons [17][18].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est environ la DL50/60 humaine en cas d'irradiation corps entier aiguë avec soins minimaux ?",
+        "options": [
+          "~0,5 Gy",
+          "~4,5 Gy",
+          "~10 Gy",
+          "~30 Gy"
+        ],
+        "answer": 1,
+        "explanation": "La DL50/60 est d'environ 3,5–4,5 Gy sans support, jusqu'à 4,5–7 Gy avec soins intensifs ; le syndrome hématopoïétique débute dès ~1–2 Gy [48][24].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel rapport d'amélioration par l'oxygène (OER) attend-on pour les rayonnements de bas TLE ?",
+        "options": [
+          "1,0",
+          "≈ 1,5",
+          "≈ 2,5–3,0",
+          "≈ 10"
+        ],
+        "answer": 2,
+        "explanation": "L'OER est d'environ 2,5–3,0 à bas TLE ; il tend vers 1,0 pour les TLE très élevés (> ~165 keV/µm) [15].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le seuil de dose fœtale en deçà duquel les malformations ne sont pas attendues (organogenèse) ?",
+        "options": [
+          "~1 mGy",
+          "~10 mGy",
+          "~100–200 mGy",
+          "~2 Gy"
+        ],
+        "answer": 2,
+        "explanation": "Le seuil des malformations en organogenèse est d'environ 100–200 mGy ; la baisse de QI (~30 points/Gy) est maximale entre 8 et 15 semaines [25][26].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "En médecine nucléaire, dans quel domaine se situent les doses d'un examen diagnostique standard (quelques mSv) ?",
+        "options": [
+          "Domaine déterministe (au-dessus des seuils)",
+          "Domaine stochastique pur (très en deçà des seuils)",
+          "Au seuil de cataracte",
+          "Au seuil du syndrome hématopoïétique"
+        ],
+        "answer": 1,
+        "explanation": "Les doses diagnostiques (quelques mSv) sont très inférieures à tout seuil déterministe : elles relèvent du domaine stochastique pur, justifiant l'optimisation et la LNT.",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel organe est généralement critique (effet déterministe : xérostomie) lors d'une thérapie par [¹⁷⁷Lu]Lu-PSMA ?",
+        "options": [
+          "Les reins",
+          "Les glandes salivaires",
+          "Le foie",
+          "La moelle osseuse"
+        ],
+        "answer": 1,
+        "explanation": "Les glandes salivaires reçoivent la dose la plus élevée parmi les organes sains pour les ligands PSMA, d'où la xérostomie, effet déterministe à seuil [30][29].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quels sont les trois principes fondamentaux de la radioprotection ?",
+        "options": [
+          "Justification, optimisation (ALARA), limitation",
+          "Détection, décontamination, déclaration",
+          "Distance, écran, temps",
+          "Diagnostic, dosimétrie, déclaration"
+        ],
+        "answer": 0,
+        "explanation": "Les trois principes sont la justification, l'optimisation (ALARA) et la limitation des doses ; ils découlent directement de la dichotomie déterministe/stochastique [37][65].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Concernant les effets héréditaires des rayonnements chez l'Homme :",
+        "options": [
+          "Ils sont fréquents et bien démontrés",
+          "Aucun n'a été mis en évidence à ce jour chez l'Homme",
+          "Ils dépassent le risque de cancer",
+          "Ils n'existent que chez les femmes"
+        ],
+        "answer": 1,
+        "explanation": "Aucun effet héréditaire n'a été démontré chez l'Homme (descendants d'Hiroshima/Nagasaki) ; il n'est établi que chez la souris. La dose de doublement est ~1 Gy [14].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "La cible critique est l'ADN nucléaire ; la lésion clé est la cassure double brin (DSB, ~20–40/Gy), responsable des aberrations chromosomiques létales [10].",
+        "Effet déterministe = à seuil, gravité croissante avec la dose (réaction tissulaire, seuil à 1 % d'incidence, CIPR 118) [4][5].",
+        "Effet stochastique = sans seuil, probabilité croissante avec la dose (cancers, héréditaire) ; modèle LNT, détriment ≈ 5,7 %/Sv [9][36].",
+        "À bas TLE, le dommage est majoritairement indirect (radiolyse de l'eau, radicaux •OH), d'où l'effet oxygène (OER ≈ 2,5–3,0) [15][41].",
+        "Loi de Bergonié-Tribondeau : radiosensibilité ↑ avec l'indifférenciation, l'activité mitotique et l'avenir mitotique de la cellule [8].",
+        "Grandeurs SI : dose absorbée en gray (Gy = J/kg) ; dose équivalente et efficace en sievert (Sv), via wR puis wT [17].",
+        "La distinction déterministe/stochastique fonde les 3 principes (justification, optimisation/ALARA, limitation) et les limites de dose [37][65].",
+        "En médecine nucléaire : diagnostic = domaine stochastique pur ; thérapie par radionucléides = doses d'organe pouvant atteindre le domaine déterministe → dosimétrie."
+      ],
+      "protocol": [
+        "Domaine diagnostique (quelques mSv) : optimiser l'activité injectée (ALARA), pas de seuil déterministe à craindre ; estimer le risque via la LNT.",
+        "Domaine thérapeutique (¹³¹I, ¹⁷⁷Lu, ⁹⁰Y) : dosimétrie patient-spécifique des organes à risque (reins, moelle, glandes salivaires) avec doses-seuils d'organe (modèle LQ/BED) [29].",
+        "Surveiller en priorité les organes à seuil les plus bas : cristallin (0,5 Gy) et moelle (~0,5 Gy aigu) [4][5].",
+        "Grossesse : justification renforcée, dose fœtale < 100 mGy ne justifie pas l'interruption ; décision individualisée entre 100 et 500 mGy [50].",
+        "Respecter les limites : travailleur 20 mSv/an (moyenne 5 ans, max 50 mSv/an), public 1 mSv/an, cristallin travailleur 20 mSv/an [65]."
+      ],
+      "scores": [
+        "Seuils déterministes (CIPR 118) : cristallin 0,5 Gy ; maladie circulatoire 0,5 Gy ; érythème transitoire ~2 Gy ; stérilité temporaire testicule 0,15 Gy [4][5].",
+        "Syndrome d'irradiation aiguë : hématopoïétique ~1–2 Gy ; gastro-intestinal ~6 Gy ; neurovasculaire ~50 Gy ; DL50/60 ~3,5–4,5 Gy [48][24].",
+        "Coefficients stochastiques : détriment total ≈ 5,7 %/Sv ; ERR cancers solides ≈ 0,42/Gy (LSS) ; DDREF = 2 (CIPR 103) [36][51].",
+        "Pondérations : wR = 1 (photons/électrons), 2 (protons), 20 (α/ions lourds), ~5–20 (neutrons) ; wT max 0,12 (moelle, côlon, poumon, estomac, sein) [17]."
+      ],
+      "pitfalls": [
+        "Confondre déterministe et stochastique : ne pas attribuer un cancer radio-induit à un seuil, ni un érythème à une probabilité sans seuil.",
+        "Croire que les limites de dose protègent des effets déterministes par elles seules : elles sont fixées très en dessous des seuils ET maintiennent le risque stochastique acceptable.",
+        "Oublier qu'en thérapie isotopique les doses d'organe peuvent franchir un seuil déterministe (xérostomie sous ¹⁷⁷Lu-PSMA, néphrotoxicité) malgré une dose efficace corps entier modeste [30].",
+        "Négliger l'effet oxygène et le rôle dominant de l'effet indirect à bas TLE en raisonnant comme si tout le dommage était direct [41].",
+        "Appliquer aveuglément les seuils anciens du cristallin (>2 Gy) : la CIPR 118 a abaissé le seuil à 0,5 Gy et la limite travailleur à 20 mSv/an [39]."
+      ]
+    },
+    "lead": "La radiobiologie est la science qui décrit ce que les rayonnements ionisants font au vivant, depuis l'instant où l'énergie est déposée dans une cellule jusqu'aux conséquences qui peuvent apparaître bien des années plus tard. Elle distingue deux grandes familles de conséquences : celles qui n'arrivent qu'au-delà d'une certaine quantité de rayonnement reçue et dont la sévérité s'aggrave avec elle, et celles qui restent des coups du sort dont seule la probabilité augmente avec l'exposition. Cette distinction n'est pas un détail théorique : c'est elle qui justifie pourquoi on protège les soignants, les patients et le public, et pourquoi on cherche toujours à recevoir le moins de rayonnement possible. En médecine nucléaire, elle éclaire à la fois les doses minimes des examens d'imagerie et les doses bien plus élevées des traitements par radio-isotopes. Comprendre ce socle, c'est comprendre la logique de toute la radioprotection.",
+    "patient": {
+      "sections": [
+        {
+          "title": "Ce que la radiobiologie cherche à comprendre",
+          "text": "La radiobiologie est la science qui étudie comment les rayonnements agissent sur les cellules de notre corps. Elle sert avant tout à votre sécurité : c'est grâce à elle que les médecins savent quelles doses sont sans danger, comment protéger les patients et le personnel, et pourquoi un examen n'est proposé que lorsqu'il apporte un vrai bénéfice. En clair, c'est la discipline qui transforme la prudence en règles concrètes pour que chaque examen soit utile et le plus sûr possible.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Une science au service de votre protection",
+              "text": "Tout l'encadrement des examens (doses choisies, précautions, autorisations) repose sur des décennies de recherche en radiobiologie. Vous n'avez rien à calculer ni à surveiller vous-même : ce travail est fait en amont par les professionnels."
+            }
+          ]
+        },
+        {
+          "title": "Deux façons d'agir des rayonnements, expliquées simplement",
+          "list": [
+            "Aux **fortes doses** (très au-dessus de celles d'un examen courant), un effet **n'apparaît qu'à partir d'un certain niveau** : en dessous, il n'y a rien ; au-dessus, il peut survenir et s'aggraver si la dose monte. Ces situations concernent surtout certains **traitements**, jamais les examens d'imagerie habituels.",
+            "Aux **faibles doses** (celles des examens), on ne parle plus que d'un **risque théorique très faible**, sans seuil précis. C'est par grande prudence qu'on le prend en compte, même s'il est minime.",
+            "C'est cette distinction qui explique pourquoi les doses des examens sont maintenues **aussi basses que possible** et pourquoi on évite tout examen inutile."
+          ]
+        },
+        {
+          "title": "Ce que cela change pour vous",
+          "text": "Pour un examen d'imagerie classique, les doses utilisées sont faibles et il n'y a pas d'effet visible attendu sur votre corps. L'équipe adapte toujours la dose à votre situation, et redouble de précautions chez l'enfant et la femme enceinte, plus sensibles. Si un traitement par rayonnement vous est proposé, des consignes précises vous seront remises et un suivi est organisé.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "À retenir, sereinement",
+              "text": "Le principe est simple : on ne fait un examen que s'il est utile, et on utilise alors la plus petite dose qui permette une image fiable. N'hésitez jamais à signaler une grossesse possible ou un allaitement : la conduite est alors adaptée."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "À quoi sert cette distinction en clinique",
+          "text": "La radiobiologie distingue deux familles d'effets, et cette dualité structure toute la radioprotection. Les **effets déterministes** (réactions tissulaires) apparaissent au-delà d'un **seuil** et s'aggravent avec la dose ; ils sont absents aux doses diagnostiques et ne concernent en pratique que la thérapie. Les **effets stochastiques** (cancers radio-induits, effets héréditaires) voient leur **probabilité croître avec la dose, sans seuil démontré** (modèle linéaire sans seuil) : c'est le seul registre pertinent aux faibles doses de l'imagerie. Garder ce cadre en tête permet de prescrire et d'expliquer les examens à bon escient.",
+          "list": [
+            "**Déterministes / réactions tissulaires** : à seuil, gravité croissante avec la dose (érythème, cataracte, atteinte des glandes salivaires en thérapie). Non attendus en imagerie diagnostique.",
+            "**Stochastiques** : probabilité croissante, sans seuil (modèle LNT). Risque très faible mais non nul aux doses diagnostiques, à considérer surtout sur les populations sensibles."
+          ]
+        },
+        {
+          "title": "Démarche pratique de prescription",
+          "text": "Concrètement, chaque demande d'examen s'appuie sur deux principes : la **justification** (le bénéfice attendu doit dépasser le risque) et l'**optimisation** (ALARA : dose aussi basse que raisonnablement possible). Cela suppose de poser la bonne indication, d'éviter les redondances d'examens irradiants, de signaler une grossesse possible, et de moduler la vigilance selon le terrain. La radiosensibilité accrue de l'enfant (risque par unité de dose plus élevé) et la sensibilité de l'embryon justifient une attention renforcée.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Réflexes utiles",
+              "text": "Préférer, à indication équivalente, l'examen le moins irradiant ; mentionner les examens irradiants récents dans la demande ; et signaler systématiquement grossesse ou allaitement, qui modifient la conduite (report, ajustement, ou interruption temporaire de l'allaitement)."
+            }
+          ]
+        },
+        {
+          "title": "Apport de la médecine nucléaire",
+          "text": "En diagnostic, les doses délivrées relèvent du domaine stochastique pur, très en deçà de tout seuil d'effet déterministe : l'enjeu est l'optimisation des activités, non la crainte d'une lésion tissulaire. En thérapie isotopique et théranostique (radiothérapie interne vectorisée), la radiobiologie change de rôle : elle fonde la **dosimétrie patient-spécifique** qui maximise la dose à la cible tumorale tout en respectant les seuils des organes à risque (moelle, reins, glandes salivaires). C'est ce qui permet un traitement à la fois efficace et maîtrisé.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adressez en médecine nucléaire pour bénéficier d'examens fonctionnels à faible dose, choisis et optimisés selon les principes de justification et d'ALARA, ou pour une thérapie par radionucléides encadrée par une dosimétrie qui cible la tumeur tout en protégeant les organes sensibles. Le service précise l'examen le plus pertinent, l'adapte au terrain (enfant, grossesse, fonction rénale) et organise le suivi et les consignes de radioprotection. En cas de doute sur l'indication ou la dose, un avis du nucléariste oriente vers la stratégie la plus sûre et la plus utile."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - A1 - Carte d'identité de la radiobiologie",
+          "text": "**Comment lire cette carte.** La **radiobiologie** est la discipline qui décrit la chaîne reliant le **dépôt physique d'énergie** d'un rayonnement ionisant à ses **conséquences biologiques** — de la mort cellulaire immédiate au cancer survenant des décennies plus tard. Toute la radioprotection repose sur une dichotomie fondatrice que cette carte résume : **effets déterministes** (à seuil) versus **effets stochastiques** (probabilistes, sans seuil).[1][3]\n\nLa **distinction n'est pas sémantique mais opérationnelle** : elle commande la logique des limites de dose (rester sous les seuils déterministes, maintenir le risque stochastique « acceptable ») et structure les trois principes — justification, optimisation/ALARA, limitation (cf. A1 ci-dessous et le corps de l'article).[16]\n\n| Champ | Effets déterministes | Effets stochastiques |\n|---|---|---|\n| **Terme CIPR actuel** | **Réactions tissulaires** (*tissue reactions*, depuis 2011) | Effets stochastiques |\n| **Relation dose–effet** | **Seuil** ; gravité ↗ avec la dose [1][3] | **Sans seuil** (modèle LNT) ; probabilité ↗ avec la dose [1][9] |\n| **Mécanisme cellulaire** | **Mort/déplétion** d'une population de cellules fonctionnelles [1] | **Mutation** non létale d'une cellule **survivante** [9] |\n| **Définition du seuil** | Dose à **1 % d'incidence** (CIPR 118) [4][5] | — (pas de seuil démontré) [9] |\n| **Exemples** | Cataracte, érythème, stérilité, syndrome aigu d'irradiation [4][5] | Cancers (somatique), effets héréditaires (germinal) [9][14] |\n| **Latence** | Heures à mois (parfois années : cataracte, fibrose) | Années à décennies (cancers solides) [13] |\n| **Référentiel pivot** | **CIPR 118 (2012)** — seuils de réactions tissulaires [4][5] | **CIPR 103 (2007)**, **BEIR VII**, **UNSCEAR 2020/2021** [9][57] |\n\n**Repères-seuils à mémoriser** (dose absorbée, exposition aiguë) : cristallin et système circulatoire **0,5 Gy** [4][5] ; érythème cutané transitoire **~2 Gy** [59][61] ; DL50/60 du syndrome aigu **~4–4,5 Gy** avec soins [48] ; malformations fœtales **~100–200 mGy** [25][26].\n\n**Coefficient stochastique de référence** : détriment ajusté total **≈ 5,7 % par Sv** pour la population entière (cancer + héréditaire), dont **~0,1 %/Sv** pour la seule composante héréditaire (CIPR 103).[36]",
+          "stats": [
+            {
+              "value": "0,5 Gy",
+              "label": "Seuil cristallin & circulatoire (CIPR 118) [4][5]"
+            },
+            {
+              "value": "1 %",
+              "label": "Incidence définissant un seuil déterministe [4][5]"
+            },
+            {
+              "value": "≈ 5,7 %/Sv",
+              "label": "Détriment stochastique total (CIPR 103) [36]"
+            },
+            {
+              "value": "20 / 1 mSv/an",
+              "label": "Limites travailleur / public [65]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — pourquoi cette dichotomie est le socle de tout",
+              "text": "Les **limites de dose réglementaires** (travailleur 20 mSv/an, public 1 mSv/an [65]) sont fixées **très en dessous de tout seuil déterministe** (le plus bas étant 0,5 Gy = 500 mSv en dose équivalente photons). Leur seul objet est donc de **maintenir le risque stochastique** à un niveau jugé tolérable selon la LNT. À l'inverse, en thérapie isotopique, ce sont les **seuils déterministes d'organe** (moelle, reins, glandes salivaires) qui deviennent contraignants et imposent une dosimétrie patient-spécifique."
+            },
+            {
+              "type": "warning",
+              "title": "Piège terminologique",
+              "text": "« Déterministe » ne signifie pas « certain pour un individu donné » mais « dont la **gravité** est déterminée par la dose au-delà d'un seuil ». Depuis la CIPR (Séoul 2011, puis CIPR 118), le terme officiel est **réactions tissulaires** car certaines sont **modifiables** après irradiation par des agents biologiques.[38] À l'inverse, « stochastique » = aléatoire : la dose fixe la **probabilité**, jamais la gravité de l'événement."
+            }
+          ]
+        },
+        {
+          "title": "A2 - A2 - La cible : structure de l'ADN et echelles de l'interaction rayonnement-matiere",
+          "text": "La cible critique de l'irradiation est l'**acide désoxyribonucléique (ADN) nucléaire**. C'est une double hélice antiparallèle dont le squelette **sucre (désoxyribose)–phosphate** porte l'information ; le rayonnement « brûle » ce code en plusieurs points, et c'est l'**atteinte de l'intégrité du double brin** qui conditionne le devenir cellulaire.[10][40]\n\n**Spectre lésionnel de l'ADN par gray (rayonnements de bas TLE, par cellule)** [10][40] :\n\n| Type de lésion | Nombre par cellule et par Gy | Conséquence |\n|---|---|---|\n| **Dommages de bases** | **> 1000** [10] | Mutagène ; majoritairement réparé |\n| **Cassures simple brin (SSB)** | **~1000** [10] | Réparée fidèlement (brin complémentaire intact) |\n| **Cassures double brin (DSB)** | **~20–40** [10][40] | **Lésion critique** : la mieux corrélée à la mort cellulaire |\n\nLes **DSB** sont déterminantes parce qu'elles génèrent les **aberrations chromosomiques létales** (dicentriques, anneaux, ponts d'anaphase) à l'origine de la mort mitotique.[10] Les rayonnements de **haut TLE** (transfert linéique d'énergie : α, neutrons, ions lourds) produisent des **dommages groupés (*clustered damage*)** peu réparables, d'où une efficacité biologique relative (EBR) élevée — ce que traduisent les facteurs de pondération w_R.\n\n**Échelles spatio-temporelles de l'interaction rayonnement–matière.** L'événement s'étage sur ~17 ordres de grandeur de temps :[11][12]\n\n- **Échelle spatiale** : la trace d'ionisation (nm) doit coïncider avec la double hélice (diamètre **~2 nm**) pour produire une DSB ; d'où l'importance de la **densité d'ionisation** (TLE).\n- **Échelle temporelle** : de l'ionisation initiale (**~10⁻¹⁸–10⁻¹² s**) à la carcinogenèse (**années–décennies**) — voir la frise en A3.\n\n**Déterminants de la radiosensibilité tissulaire — loi de Bergonié et Tribondeau (1906)** : la radiosensibilité d'une cellule croît avec (a) son **activité mitotique**, (b) la **durée de son avenir prolifératif**, (c) son **caractère indifférencié** (cellule souche).[8][43]\n\n| Très radiosensibles | Très radiorésistants |\n|---|---|\n| Lymphocytes, spermatogonies, érythroblastes, cellules souches des cryptes intestinales et de l'épiderme, ovocytes [6] | Neurones, fibres musculaires, érythrocytes matures, spermatozoïdes (cellules non divisantes) [6] |\n\n**Modélisation de la survie cellulaire — modèle linéaire-quadratique (LQ)** : S = exp[−(αD + βD²)]. Le **rapport α/β** est la dose (Gy) où les composantes linéaire (α, lésion létale d'emblée) et quadratique (β, accumulation de lésions sublétales) contribuent à parts égales.[44][45]\n\n- **Tumeurs et tissus à réponse précoce : α/β ≈ 10 Gy** (peu sensibles au fractionnement).[45]\n- **Tissus à réponse tardive : α/β ≈ 3 Gy** (très sensibles au fractionnement).[45]\n\n**Effet oxygène (OER, *oxygen enhancement ratio*)** : à bas TLE, l'**OER ≈ 2,5–3** — les cellules hypoxiques sont 2,5–3 fois plus radiorésistantes ; l'OER décroît au-delà de ~50 keV/µm et tend vers **1,0 pour un TLE > 165 keV/µm**.[15]",
+          "stats": [
+            {
+              "value": "~20–40",
+              "label": "DSB par cellule et par Gy (bas TLE) [10][40]"
+            },
+            {
+              "value": "~2 nm",
+              "label": "Diamètre de la double hélice (cible) "
+            },
+            {
+              "value": "α/β ≈ 3 vs 10 Gy",
+              "label": "Tissus tardifs vs précoces/tumeurs [45]"
+            },
+            {
+              "value": "OER ≈ 2,5–3",
+              "label": "Radiorésistance de l'hypoxie (bas TLE) [15]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi la DSB et pas la SSB",
+              "text": "Une **SSB** est réparée fidèlement car le brin complémentaire sert de matrice. Une **DSB** supprime cette matrice locale : sa réparation par jonction d'extrémités non homologues (NHEJ, active tout le cycle) est rapide mais infidèle ; la recombinaison homologue (HR), fidèle, n'est disponible qu'en **fin de S et G2** (présence de la chromatide sœur). C'est pourquoi la cellule est **la plus radiorésistante en fin de phase S** et la plus sensible en **mitose et fin de G2**."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des types de rayonnements (alpha, beta, gamma) et de leur transfert linéique d'énergie, illustrant pourquoi les rayonnements de haut TLE produisent des lésions groupées de l'ADN peu réparables.",
+            "caption": "Fig. 1 — Nature du rayonnement et densité d'ionisation : plus le TLE est élevé (α > neutrons > β/γ), plus les lésions de l'ADN sont groupées et létales."
+          }
+        },
+        {
+          "title": "A3 - A3 - Mecanismes moleculaires : action directe, action indirecte et radiolyse de l'eau",
+          "text": "Le rayonnement endommage l'ADN par **deux voies complémentaires**, dont les contributions dépendent du TLE.[10][20][41]\n\n**Action directe.** L'énergie est déposée directement sur la macromolécule : ionisation/excitation du squelette sucre-phosphate ou des bases, rompant une liaison covalente. Cette voie **prédomine pour les rayonnements de haut TLE** (α, neutrons), où la densité d'ionisation le long de la trace est suffisante pour atteindre directement et de façon groupée la double hélice.\n\n**Action indirecte.** L'énergie est d'abord déposée dans l'**eau** (≈ 70–80 % de la masse cellulaire), dont la **radiolyse** engendre des **espèces radicalaires** qui diffusent et attaquent l'ADN voisin. **Pour les rayonnements de bas TLE (X, γ des accélérateurs et de la médecine nucléaire), l'effet indirect est majoritaire (~2/3 des lésions)** et c'est lui qui rend la lésion **oxygène-dépendante** (cf. OER, A2).[41]\n\n**Radiolyse de l'eau — cascade physico-chimique.** L'ionisation de H₂O produit H₂O⁺ et un électron ; H₂O⁺ cède un proton à une molécule d'eau voisine (→ hydronium **H₃O⁺**) et libère le **radical hydroxyle •OH**, espèce la plus délétère pour l'ADN. Les produits stabilisés de la radiolyse sont : **•OH, électron hydraté e⁻aq, atome d'hydrogène H•, dihydrogène H₂, peroxyde d'hydrogène H₂O₂**.[12]\n\n**Rôle fixateur de l'oxygène.** En présence d'O₂, le radical ADN• formé réagit pour donner un **peroxyde organique ADN–O–O•**, lésion **chimiquement stable et difficilement réparable** : l'oxygène « fixe » le dommage. En hypoxie, la lésion radicalaire peut être **restaurée chimiquement** (par des groupements thiols), d'où la radiorésistance des tumeurs hypoxiques — base biologique de l'OER (≈ 2,5–3 à bas TLE).[15]\n\nLes quatre stades de l'action des rayonnements (du dépôt d'énergie à la maladie) sont détaillés dans la frise ci-dessous (steps).",
+          "steps": [
+            {
+              "title": "Stade physique (~10⁻¹⁸–10⁻¹² s)",
+              "text": "Ionisations et excitations le long de la trace ; dépôt d'énergie dans l'eau et l'ADN. La distribution spatiale dépend du **TLE**.[11][12]"
+            },
+            {
+              "title": "Stade physico-chimique (~10⁻¹⁵–10⁻¹² s)",
+              "text": "H₂O⁺ cède un proton → hydronium **H₃O⁺** + radical **•OH** ; thermalisation et hydratation des électrons (**e⁻aq**).[12]"
+            },
+            {
+              "title": "Stade chimique (~10⁻¹²–10⁻⁶ s)",
+              "text": "Diffusion et réactions des espèces radiolytiques (**•OH, e⁻aq, H•, H₂, H₂O₂**) ; attaque de l'ADN → SSB/DSB/dommages de bases. **Fixation par l'O₂** ou restauration par les thiols.[12][15]"
+            },
+            {
+              "title": "Stade biologique (s → années/décennies)",
+              "text": "Réparation enzymatique (minutes–heures), puis devenir cellulaire : survie, mort mitotique, ou **mutation** persistante → carcinogenèse (années–décennies).[12][13]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "~2/3",
+              "label": "Part de l'effet indirect à bas TLE (X, γ) [41]"
+            },
+            {
+              "value": "•OH",
+              "label": "Radical le plus délétère pour l'ADN [12]"
+            },
+            {
+              "value": "~10⁻¹⁵ s",
+              "label": "Début de la radiolyse de l'eau [12]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — « radioprotecteurs » et radiosensibilisants",
+              "text": "La prépondérance de l'effet **indirect** à bas TLE explique l'action des **capteurs de radicaux** (thiols, amifostine) comme radioprotecteurs et, inversement, l'intérêt de cibler l'**hypoxie tumorale**. En médecine nucléaire à bas TLE (β⁻ du ¹³¹I, du ¹⁷⁷Lu), la composante indirecte domine également ; pour les émetteurs **α** (²²³Ra, ²²⁵Ac), l'action **directe** et les **dommages groupés** rendent l'effet **peu oxygène-dépendant** et l'EBR élevée."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi •OH plutôt que e⁻aq",
+              "text": "Parmi les espèces radiolytiques, le **radical hydroxyle •OH** est le principal responsable des lésions de l'ADN par son fort pouvoir oxydant et sa courte distance de diffusion (quelques nm), qui le confine au voisinage immédiat de la cible. On estime que **~65–70 %** des lésions de l'ADN à bas TLE lui sont attribuables."
+            }
+          ]
+        },
+        {
+          "title": "A4 - A4 - Reparation cellulaire, survie et les 5 R de la radiobiologie",
+          "text": "Entre la lésion de l'ADN et le devenir cellulaire s'intercale la **réparation**, déterminant majeur de la survie et de la sélectivité thérapeutique.\n\n**Voies de réparation des DSB** (les plus pertinentes pour la survie) :\n- **Jonction d'extrémités non homologues (NHEJ)** : active **tout au long du cycle**, rapide mais **infidèle** (peut générer délétions et translocations).\n- **Recombinaison homologue (HR)** : **fidèle**, mais disponible seulement en **fin de phase S et en G2** (nécessite la chromatide sœur comme matrice). Ceci sous-tend la **radiorésistance maximale en fin de S**.\n\nLes SSB et dommages de bases sont pris en charge par la réparation par excision de base (BER) et de nucléotide (NER), généralement fidèles. Un **défaut de réparation** (mutations *ATM*, *BRCA1/2*, syndromes de cassure) majore la radiosensibilité.\n\n**Modèle de survie LQ et fractionnement.** La composante **β** du modèle S = exp[−(αD + βD²)] (cf. A2) traduit l'accumulation et l'**interaction de lésions sublétales réparables** : le fractionnement, en laissant le temps de réparer entre séances, **épargne préférentiellement les tissus à α/β bas** (réponse tardive, α/β ≈ 3 Gy) tout en maintenant l'effet sur les tumeurs (α/β ≈ 10 Gy).[44][45] Le concept de **dose biologique efficace (BED)** permet de comparer des schémas de fractionnement et se transpose à la dosimétrie de la **thérapie par radionucléides** (RPT).\n\n**Les « 5 R » de la radiobiologie** — facteurs gouvernant la réponse d'un tissu au fractionnement (les 4 R classiques [33][46], complétés par la radiosensibilité intrinsèque) :\n\n| « R » | Échelle de temps | Effet sur la réponse |\n|---|---|---|\n| **Réparation** des lésions sublétales | heures | Épargne les tissus sains (surtout à réponse tardive) [33] |\n| **Redistribution** dans le cycle | heures | Resynchronise les cellules vers les phases radiosensibles (M, G2) |\n| **Réoxygénation** | heures–jours | Réduit la fraction hypoxique radiorésistante (↘ OER) [15] |\n| **Repopulation** | 5–7 semaines | Repousse accélérée (tumeur ET tissus précoces) — à contrebalancer [33] |\n| **Radiosensibilité** intrinsèque | — | Variabilité inter-tissus/inter-individus (α/β, déficits de réparation) |\n\n**Du survivant cellulaire à l'effet clinique.** Le devenir d'une cellule irradiée détermine le type d'effet (cf. A1) :\n- **Mort cellulaire massive** (déplétion d'une population fonctionnelle au-delà d'un nombre critique) → **effet déterministe** à seuil.[1]\n- **Mutation viable d'une cellule survivante** → **effet stochastique** (cancer ou effet héréditaire), sans seuil démontré.[9]\n\n**Effets non ciblés à faible dose** (*non-targeted effects*) : effet de voisinage (*bystander*), instabilité génomique, réponse adaptative, hormèse. Débattus, ils peuvent moduler le risque à faible dose mais **n'invalident pas le modèle LNT** retenu pour la radioprotection.[58][57]",
+          "stats": [
+            {
+              "value": "5 R",
+              "label": "Réparation, Redistribution, Réoxygénation, Repopulation, Radiosensibilité [33]"
+            },
+            {
+              "value": "fin S / G2",
+              "label": "Phases où la HR fidèle est disponible"
+            },
+            {
+              "value": "DDREF = 2",
+              "label": "Facteur réduisant le risque extrapolé à faible dose/débit (CIPR 103) [36]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — du fractionnement de radiothérapie à la dosimétrie isotopique",
+              "text": "Les 5 R et le modèle LQ ont été établis pour la radiothérapie externe (fortes doses, débit élevé), mais ils **se transposent à la médecine nucléaire thérapeutique** : la RPT délivre la dose à **bas débit, de façon continue et décroissante**, ce qui laisse opérer la **réparation** en permanence et déplace l'équilibre vers l'épargne des tissus sains à α/β bas (reins notamment). C'est pourquoi une même dose absorbée en RPT est généralement **moins toxique** que la dose équivalente en irradiation aiguë externe."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — réparation ne veut pas dire innocuité",
+              "text": "Une réparation **infidèle** (NHEJ) est précisément le mécanisme qui **fixe une mutation** dans une cellule survivante : la cellule ne meurt pas, mais elle porte désormais une lésion potentiellement carcinogène. La réparation protège donc contre l'effet **déterministe** (mort cellulaire) tout en pouvant **alimenter l'effet stochastique** (mutation). Les deux versants de la dichotomie A1 découlent du même carrefour de réparation."
+            }
+          ]
+        },
+        {
+          "title": "B5 - B5 - Caracteriser un effet deterministe : seuil, gravite dose-dependante, exemples cliniques",
+          "text": "Un **effet déterministe** — terminologie CIPR actuelle : **réaction tissulaire** (*tissue reaction*) — résulte de la **mort ou du dysfonctionnement d'un nombre critique de cellules** dans un tissu donné. Sa définition repose sur deux propriétés indissociables [1][3] :\n\n- l'existence d'un **seuil de dose** : en deçà, l'effet ne se manifeste pas cliniquement ; au-delà, il apparaît [1][7] ;\n- une **gravité qui croît avec la dose** une fois le seuil franchi (et non une simple probabilité d'apparition) [1].\n\nLe mécanisme est une **déplétion d'une population de cellules fonctionnelles** : tant que la perte cellulaire est compensée par les cellules souches survivantes et la réparation, le tissu reste cliniquement indemne ; au-delà d'un seuil de déplétion, la fonction tissulaire défaille [1]. La radiosensibilité du tissu obéit à la **loi de Bergonié et Tribondeau (1906)** : un tissu est d'autant plus radiosensible qu'il comporte de cellules indifférenciées, à fort index mitotique et à long avenir prolifératif [8][43]. C'est pourquoi moelle hématopoïétique, gonades, épithélium intestinal, cristallin et embryon sont radiosensibles, tandis que neurones et muscle strié sont radiorésistants [6].\n\nLa CIPR définit conventionnellement le **seuil comme la dose entraînant l'effet chez 1 % des sujets exposés** (incidence 1 %) [4][5]. Le référentiel des seuils est la **CIPR Publication 118 (2012)**, dont l'apport majeur a été d'**abaisser le seuil de la cataracte du cristallin à 0,5 Gy** (contre > 2 Gy aigu auparavant) et de **reconnaître les maladies circulatoires** (cœur, encéphale) comme réactions tissulaires à seuil ≈ **0,5 Gy** [4][5][62]. Cette révision (Seoul Statement 2011) a entraîné l'abaissement de la limite de dose équivalente au cristallin des travailleurs de 150 à **20 mSv/an** moyennés sur 5 ans [39][62].\n\n**Seuils de réactions tissulaires (CIPR 118, exposition aiguë sauf mention)**\n\n| Effet / organe | Seuil de dose absorbée | Source |\n|---|---|---|\n| **Cristallin — cataracte** | **0,5 Gy** (aigu ou cumulé) | [4][5][62] |\n| **Maladie circulatoire** (cœur, encéphale) | **0,5 Gy** | [5][62] |\n| **Dépression hématopoïétique** | **~0,5 Gy** (0,4 Gy/an si chronique) | [1][4] |\n| **Érythème cutané transitoire** | **2 Gy** (plage 2–5 Gy) | [21][61] |\n| **Épilation temporaire** | **~3 Gy** | [60][61] |\n| **Épilation permanente / desquamation sèche** | **> 7 Gy** ; desquamation sèche ~13–14 Gy ; exsudative ~18 Gy | [59][61] |\n| **Stérilité temporaire (testicule)** | **~0,15 Gy** | [2][4] |\n| **Stérilité permanente (testicule)** | **3,5–6,0 Gy** | [2][4] |\n| **Stérilité (ovaire)** | **2,5–6,0 Gy** | [4][22] |\n\nLe **syndrome aigu d'irradiation (SAI)** illustre la hiérarchie des seuils corps entier : forme **hématopoïétique** dès **~1–2 Gy** (décès à 30–60 j sans support), forme **gastro-intestinale** vers **~6 Gy** (décès ~10 j au-delà de 10 Gy), forme **neurovasculaire/cérébrale** au-delà de **~50 Gy** (décès en 24–48 h) [23][47][48][49]. La **DL50 humaine** (mortalité 50 % à 60 j) se situe à **3,5–4 Gy sans traitement** et **4,5–7 Gy avec soins intensifs** [48]. L'embryon/fœtus ajoute des seuils spécifiques : malformations au-delà de **~100–200 mGy** durant l'organogenèse (3–8 SA), retard mental le plus marqué entre **8 et 15 SA** [25][26].",
+          "stats": [
+            {
+              "value": "0,5 Gy",
+              "label": "Seuil cataracte du cristallin (CIPR 118)"
+            },
+            {
+              "value": "2 Gy",
+              "label": "Seuil érythème cutané transitoire"
+            },
+            {
+              "value": "~4 Gy",
+              "label": "DL50/60 du SAI sans traitement"
+            },
+            {
+              "value": "1 %",
+              "label": "Incidence définissant le seuil (CIPR)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le passage de « non stochastique » (1977) à « déterministe » puis à **réaction tissulaire** (CIPR 2011/118) n'est pas qu'un changement de vocabulaire : il acte que certaines de ces lésions, longtemps tenues pour de purs effets à seuil de mort cellulaire (cataracte, maladie circulatoire), comportent une composante inflammatoire/vasculaire **modifiable après irradiation**, et que leur seuil est bien plus bas qu'estimé historiquement [38][62]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — seuil ≠ dose sans danger",
+              "text": "Le seuil déterministe (1 % d'incidence) ne signifie pas qu'aucun effet biologique ne survient en dessous : il existe en parallèle un **risque stochastique sans seuil** (cf. B6). Une dose infraseuil pour la cataracte reste porteuse d'un risque carcinogène. Ne jamais conclure « sous le seuil = sans risque »."
+            }
+          ]
+        },
+        {
+          "title": "B6 - B6 - Caracteriser un effet stochastique : probabilite dose-dependante, sans seuil, cancers et effets hereditaires",
+          "text": "Un **effet stochastique** (probabiliste) résulte non pas de la mort cellulaire massive, mais d'une **mutation non létale dans une cellule survivante** qui conserve sa capacité de prolifération [1][9]. Ses propriétés s'opposent point par point à celles de l'effet déterministe [1][3] :\n\n- c'est la **probabilité d'apparition** — et non la gravité — qui croît avec la dose ;\n- il n'existe **pas de seuil démontré** (hypothèse de référence : modèle linéaire sans seuil, *cf.* B7) ;\n- la gravité de la maladie, une fois déclarée, est **indépendante de la dose** reçue (un cancer radio-induit n'est pas « plus grave » à forte dose) ;\n- la **latence est longue** : quelques années pour les leucémies, des décennies pour les cancers solides [13][51].\n\nOn distingue deux familles selon la cellule mutée :\n\n**1. Effets somatiques — les cancers.** Une mutation dans une cellule somatique survivante peut initier une **carcinogenèse**. La preuve épidémiologique pivot reste la **Life Span Study (LSS)** des survivants d'Hiroshima-Nagasaki : l'incidence des cancers solides y est **linéaire et sans seuil**, le meilleur estimateur du seuil se situant à dose zéro, avec un excès de risque significatif dès la plage **0–0,20 Gy** [51][52]. L'**excès de risque relatif (ERR) des cancers solides est de 0,42 par Gy** (IC 95 % 0,32–0,53) à 70 ans pour une exposition à 30 ans ; l'ERR/Gy décroît avec l'âge atteint tandis que l'excès de risque absolu (EAR) augmente [51][52]. En dessous de **~100–200 mSv**, l'excès devient indétectable par l'épidémiologie directe (puissance statistique insuffisante face au bruit de fond) [1].\n\n**2. Effets germinaux — les effets héréditaires.** Une mutation dans une cellule de la lignée germinale peut être transmise à la descendance. Données de référence [14] :\n\n| Paramètre | Valeur | Source |\n|---|---|---|\n| **Dose de doublement** des mutations (aiguë) | **~1 Gy** | [14] |\n| Excès de maladie sévère | ~**1 cas pour 500 naissances** par Gy gonadique aigu | [14] |\n| Mise en évidence chez l'Homme | **Aucune à ce jour** (descendants d'Hiroshima/Nagasaki) ; démontré seulement chez la souris | [14] |\n\n**Quantification du détriment (CIPR 103, 2007).** Le coefficient de risque nominal ajusté du détriment — cancer + effets héréditaires — est de **~5,7 % par Sv pour la population entière** [36]. La **composante héréditaire (~0,1 %/Sv)** y joue un rôle mineur face aux cancers [36]. Depuis la CIPR 103, le détriment repose sur l'**incidence (morbidité)** pondérée par la gravité (létalité, qualité de vie, années de vie perdues) et non plus sur la seule mortalité ; la **CIPR 152 (2022)** en a actualisé la méthodologie de calcul [36][53].",
+          "stats": [
+            {
+              "value": "0,42 / Gy",
+              "label": "ERR cancers solides (LSS, à 70 ans)"
+            },
+            {
+              "value": "~5,7 %/Sv",
+              "label": "Détriment total (cancer + héréditaire), CIPR 103"
+            },
+            {
+              "value": "~0,1 %/Sv",
+              "label": "Composante héréditaire du détriment"
+            },
+            {
+              "value": "~1 Gy",
+              "label": "Dose de doublement des mutations germinales"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le coefficient historique « 5 %/Sv » de mortalité par cancer (CIPR 60) et le détriment « ~5,7 %/Sv » (CIPR 103) ne mesurent pas la même chose : le premier est une mortalité, le second un détriment d'incidence pondéré par la sévérité. Les citer comme équivalents est une erreur fréquente — ils sont du même ordre de grandeur mais conceptuellement distincts [36]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — héréditaire « démontré »",
+              "text": "Les effets héréditaires des rayonnements n'ont **jamais été mis en évidence chez l'Homme**, y compris dans le suivi multigénérationnel des survivants japonais ; ils ne sont établis qu'expérimentalement (souris) [14]. Leur inclusion dans le détriment relève d'une prudence de radioprotection, non d'une observation clinique humaine."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma opposant l'effet déterministe (mort cellulaire massive au-delà d'un seuil, gravité croissant avec la dose) à l'effet stochastique (mutation d'une cellule survivante, probabilité croissant linéairement sans seuil avec la dose)."
+          }
+        },
+        {
+          "title": "B7 - B7 - Construire la relation dose-effet : modele lineaire sans seuil, alternatives et controverses",
+          "text": "La **relation dose-effet** est la fonction reliant la dose reçue à la probabilité (effets stochastiques) ou à la gravité (effets déterministes) de l'effet. Pour les effets stochastiques, qui n'ont pas de seuil démontré, le choix du modèle d'extrapolation aux faibles doses est l'enjeu central de la radioprotection.\n\n**Le modèle linéaire sans seuil (LNT / *Linear No-Threshold*)** est l'hypothèse de référence adoptée par la CIPR. Il postule que **toute dose, si faible soit-elle, comporte un risque proportionnel à la dose**, sans seuil d'innocuité [9]. Il s'appuie sur trois piliers convergents :\n\n- l'**épidémiologie de la LSS** d'Hiroshima-Nagasaki, linéaire sans seuil pour les cancers solides, avec un excès significatif dès **0–0,20 Gy** [51][52] ;\n- la **mécanistique** : une seule trace ionisante peut produire une cassure double-brin de l'ADN mutagène, rendant plausible un risque non nul à toute dose ;\n- l'évaluation de l'**UNSCEAR 2020/2021 (Annexe C)**, qui conclut que les mécanismes biologiques aux faibles doses et faibles débits **soutiennent l'hypothèse LNT** pour la carcinogenèse radio-induite [57].\n\n**Le facteur DDREF (*Dose and Dose-Rate Effectiveness Factor*).** Comme l'extrapolation part de données acquises à fortes doses et forts débits, la CIPR 103 applique un **DDREF = 2** pour les cancers solides aux faibles doses/débits : le risque extrapolé linéairement est divisé par deux, traduisant une moindre efficacité biologique par unité de dose lorsque la dose est étalée [36].\n\n**Modèles alternatifs et controverses.** Plusieurs formes de relation dose-effet sont débattues aux très faibles doses, là où l'épidémiologie directe est aveugle (< ~100 mSv) :\n\n| Modèle | Hypothèse | Statut |\n|---|---|---|\n| **LNT (linéaire sans seuil)** | Risque proportionnel à la dose, sans seuil | **Référence** CIPR/UNSCEAR/BEIR VII [9][57] |\n| **Linéaire-quadratique** | Composante αD + βD² (courbure aux fortes doses) | Décrit la survie cellulaire et certains cancers [40] |\n| **À seuil** | Risque nul sous une dose seuil | Non retenu pour la carcinogenèse [9] |\n| **Hormèse** | Effet bénéfique/protecteur des très faibles doses | Débattu, non retenu en radioprotection [58] |\n\nLes **effets non ciblés** (effet de voisinage ou *bystander*, instabilité génomique, réponse adaptative) modulent potentiellement la réponse aux faibles doses ; ils sont étudiés mais **n'invalident pas la LNT** pour les finalités de radioprotection [57][58]. Le rapport **BEIR VII (2005)** conclut que les données sont cohérentes avec une relation linéaire sans seuil et qu'aucun seuil d'innocuité n'est démontré [9].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La LNT est moins un fait biologique établi qu'un **choix prudentiel et opérationnel** : elle permet d'additionner les doses (gestion des collectifs), justifie le principe d'optimisation et reste défendable mécanistiquement. La controverse ne porte pas sur le domaine des fortes doses — où la linéarité est observée — mais sur l'extrapolation sous ~100 mSv, où aucun modèle ne peut être départagé épidémiologiquement [57]."
+            },
+            {
+              "type": "info",
+              "title": "À retenir",
+              "text": "Le DDREF = 2 ne s'applique qu'aux **effets stochastiques à faible dose/débit**. Il ne concerne ni les effets déterministes (à seuil), ni les expositions aiguës à forte dose, pour lesquels la pente de risque n'est pas réduite [36]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma de la relation dose-effet : droite linéaire sans seuil (LNT) passant par l'origine, comparée à une courbe à seuil et à une courbe d'hormèse, avec la zone des faibles doses (< 100 mSv) où l'épidémiologie ne tranche pas."
+          }
+        },
+        {
+          "title": "B8 - B8 - Facteurs modulant la reponse : debit de dose, TEL, oxygene, fractionnement, radiosensibilite individuelle",
+          "text": "À dose absorbée égale, l'effet biologique varie selon plusieurs facteurs physiques et biologiques. Les maîtriser est indispensable pour interpréter la dosimétrie en thérapie par radionucléides (RPT) et comprendre les pondérations de radioprotection.\n\n**1. Le débit de dose.** Étaler une même dose dans le temps réduit l'effet biologique, car la **réparation des lésions sublétales** opère pendant l'irradiation. C'est le fondement physique du DDREF = 2 appliqué aux faibles débits pour les cancers (B7) [36]. Exception notable : certains effets « single-hit » comme la composante vasculaire des maladies circulatoires apparaissent **peu réparables et peu dépendants du débit** [5].\n\n**2. Le TEL (transfert linéique d'énergie).** Les rayonnements de **haut TEL** (particules α, neutrons, ions lourds) déposent leur énergie de façon dense le long de la trace, créant des **lésions groupées (*clustered damage*) peu réparables** → efficacité biologique relative (EBR) élevée. Cette EBR est traduite en radioprotection par les **facteurs de pondération radiologique w_R** [17][18][19] :\n\n| Rayonnement | w_R (CIPR 103) | Source |\n|---|---|---|\n| Photons (X, γ), électrons, muons | **1** | [17][18] |\n| Protons (> 2 MeV) | **2** | [17][19] |\n| Neutrons | **fonction continue de l'énergie (~2,5 à ~20 vers 1 MeV)** | [17][19] |\n| Particules α, fragments de fission, ions lourds | **20** | [17][19] |\n\n**3. L'effet oxygène (OER, *Oxygen Enhancement Ratio*).** L'oxygène **fixe** les lésions radio-induites en stabilisant les radicaux issus de la radiolyse de l'eau. Pour les rayonnements de **bas TEL, l'OER vaut ~2,5–3** : les cellules **hypoxiques sont 2,5–3 fois plus radiorésistantes** [15][6]. L'OER décroît avec le TEL et atteint **1,0 pour un TEL > ~165 keV/µm** (haut TEL : effet direct, indépendant de l'oxygène) [15]. C'est le rationnel de la réoxygénation tumorale en irradiation fractionnée.\n\n**4. Le fractionnement.** Diviser la dose en fractions exploite les **« 4 R » de la radiothérapie** : **R**éparation des lésions sublétales (heures), **R**edistribution dans le cycle, **R**éoxygénation, **R**epopulation [33][46]. Le **modèle linéaire-quadratique** S = exp(−αD − βD²) le quantifie : le rapport **α/β** est la dose (Gy) où les composantes linéaire et quadratique contribuent à parts égales [44][45]. **Tumeurs et tissus à réponse précoce : α/β ≈ 10 Gy** (peu sensibles au fractionnement) ; **tissus à réponse tardive : α/β ≈ 3 Gy** (très sensibles au fractionnement) [45]. Le concept de **dose biologique efficace (BED)** permet de comparer des schémas de fractionnement [46].\n\n**5. La radiosensibilité intrinsèque et individuelle.** Au niveau cellulaire, la sensibilité varie selon la **phase du cycle** : maximale en **mitose (M)** et fin de **G2**, minimale en **fin de phase S** (réparation par recombinaison homologue facilitée) [20]. Au niveau tissulaire, la **loi de Bergonié et Tribondeau** prédit la radiosensibilité par l'index mitotique, le degré de différenciation et l'avenir prolifératif [8][43]. Au niveau individuel, des **déficits de réparation de l'ADN** (ataxie-télangiectasie, syndromes de réparation) confèrent une radiosensibilité accrue, à intégrer avant toute irradiation [20].",
+          "steps": [
+            {
+              "title": "Étape physique (10⁻¹⁸–10⁻¹² s)",
+              "text": "Ionisations et excitations le long de la trace : dépôt d'énergie dans l'eau et l'ADN [11][12]."
+            },
+            {
+              "title": "Étape physico-chimique / chimique (10⁻¹⁵–10⁻⁶ s)",
+              "text": "Radiolyse de l'eau → radicaux libres (•OH, électron hydraté e⁻aq, H•, H₂O₂) ; c'est ici que l'oxygène fixe les lésions [12][15]."
+            },
+            {
+              "title": "Étape biologique (s à années)",
+              "text": "Lésions de l'ADN — par Gy et par cellule : > 1000 dommages de bases, ~1000 cassures simple-brin, ~20–40 cassures double-brin (DSB) — puis réparation, mort cellulaire, mutation, carcinogenèse. Les DSB corrèlent le mieux à la mort cellulaire [10][40]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "2,5–3",
+              "label": "OER à bas TEL (radiorésistance hypoxique)"
+            },
+            {
+              "value": "α/β ≈ 10 / 3 Gy",
+              "label": "Réponse précoce / tardive (LQ)"
+            },
+            {
+              "value": "20",
+              "label": "w_R des particules α (CIPR 103)"
+            },
+            {
+              "value": "20–40 DSB/Gy",
+              "label": "Cassures double-brin par cellule"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pertinence en médecine nucléaire",
+              "text": "En RPT par émetteurs β⁻ (¹³¹I, ¹⁷⁷Lu, ⁹⁰Y), l'irradiation est délivrée à **bas débit de dose et de façon continue** : la réparation des lésions sublétales y joue à plein, ce qui modifie l'effet par rapport à une radiothérapie externe à dose égale. Les modèles LQ/BED de la radiothérapie sont transposés, mais avec prudence, pour fixer les doses-seuils d'organe (moelle, reins, glandes salivaires) [28][29]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — confondre w_R et EBR",
+              "text": "Le facteur w_R est une **valeur conventionnelle de radioprotection** moyennée pour le calcul de la dose équivalente, et non l'EBR mesurée d'un effet biologique précis. Pour les neutrons, w_R est une fonction continue de l'énergie ; utiliser une valeur fixe (ancien « 10 ») est une erreur depuis la CIPR 103 [17][19]."
+            }
+          ]
+        },
+        {
+          "title": "C9 - Interpréter aux faibles doses : effet bystander, réponse adaptative, instabilité génomique",
+          "text": "Aux **faibles doses** (< 100 mGy) et aux **faibles débits de dose**, le paradigme historique — une lésion = un événement isolé, proportionnel au nombre de traces traversant le noyau — est mis en défaut par une classe de phénomènes regroupés sous le terme d'**effets non ciblés** (*non-targeted effects*, NTE) [58]. Ils traduisent le fait qu'une cellule non directement traversée par un rayonnement, ou la descendance d'une cellule irradiée plusieurs générations plus tard, peut manifester un effet biologique. Leur enjeu interprétatif est majeur : ils pourraient **moduler la pente de la relation dose-réponse** dans la zone justement inaccessible à l'épidémiologie directe (cf. §C10), sans pour autant invalider l'hypothèse linéaire sans seuil (LNT) retenue en radioprotection [57][58].\n\nIl faut distinguer trois mécanismes, conceptuellement opposés deux à deux quant à leur effet présumé sur le risque :\n\n| Phénomène | Définition | Sens présumé sur le risque |\n|---|---|---|\n| **Effet de voisinage (bystander)** | Une cellule **non traversée** par le rayonnement subit des dommages (cassures, mutations, mort) via des signaux émis par les cellules irradiées voisines (jonctions communicantes, espèces réactives de l'oxygène, cytokines, exosomes) [58] | Plutôt **amplificateur** aux faibles doses (effet supra-linéaire possible) [58] |\n| **Réponse adaptative** | Une **dose conditionnante** faible (~mGy à cGy) rend la cellule **plus résistante** à une dose ultérieure plus élevée (induction de la réparation, des défenses anti-oxydantes) [57][58] | Plutôt **protecteur** (sous-tend en partie l'hypothèse d'hormèse) [58] |\n| **Instabilité génomique** | Apparition **différée et persistante**, dans la descendance des cellules irradiées (plusieurs divisions après l'exposition), de nouvelles mutations, aberrations chromosomiques et amplifications — alors que ces cellules n'étaient pas elles-mêmes lésées au départ [58] | **Pro-carcinogène** (alimente un risque à long terme) [58] |\n\n**Effet bystander.** Sa signature expérimentale est une **réponse non proportionnelle au nombre de cellules touchées** : à très faible fluence (microfaisceaux, particules α uniques), la fraction de cellules présentant des micronoyaux ou des mutations excède largement la fraction réellement traversée [58]. Le signal est médié par un transfert intercellulaire (jonctions gap) et par un milieu de culture « conditionné » porteur d'espèces réactives de l'oxygène (ROS) et de l'azote, de facteur de croissance transformant β (TGF-β) et de cytokines pro-inflammatoires [58]. Conséquence interprétative : aux faibles doses, le nombre de cellules biologiquement affectées peut **dépasser** le nombre de cellules physiquement irradiées, ce qui plaide contre l'existence d'un seuil d'innocuité [57][58].\n\n**Réponse adaptative.** Une exposition de **conditionnement** de l'ordre de 5 à 100 mGy, administrée quelques heures avant une dose de **challenge** plus élevée, réduit le rendement d'aberrations chromosomiques et de mutations par rapport à la dose de challenge seule [58]. Les mécanismes invoqués sont l'induction transitoire des voies de réparation des cassures double-brin (DSB, cf. §C11) et la stimulation des défenses anti-oxydantes [58]. C'est l'argument cellulaire le plus solide en faveur d'une **hormèse** (effet bénéfique net des faibles doses), hypothèse débattue mais **non retenue** comme base réglementaire par la CIPR ni par l'UNSCEAR [57].\n\n**Instabilité génomique.** À la différence des deux précédents, elle s'exprime **dans le temps** : la descendance de cellules survivantes acquiert, après plusieurs cycles, un phénotype mutateur (néo-aberrations, hypersensibilité, retard de croissance, transformation) sans qu'une lésion initiale identifiable ne soit transmise [58]. Elle constitue un pont mécanistique plausible vers la **latence longue** de la carcinogénèse radio-induite (cf. §C10) et illustre que le risque stochastique ne se résume pas à la lésion immédiate de l'ADN.",
+          "stats": [
+            {
+              "value": "< 100 mGy",
+              "label": "Domaine des faibles doses concerné"
+            },
+            {
+              "value": "5-100 mGy",
+              "label": "Dose conditionnante (réponse adaptative)"
+            },
+            {
+              "value": "3 NTE",
+              "label": "Bystander · adaptatif · instabilité génomique"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège d'interprétation — ne pas confondre « non démontré épidémiologiquement » et « absent »",
+              "text": "Les effets non ciblés sont robustes **in vitro** mais leur traduction en termes de **risque de cancer chez l'Homme aux faibles doses reste non quantifiée** [58]. L'erreur serait double : (1) les invoquer pour affirmer un seuil d'innocuité (les données de la *Life Span Study* restent compatibles avec une linéarité sans seuil, cf. §C10) ; (2) les invoquer pour majorer arbitrairement le risque. La CIPR et l'UNSCEAR les considèrent comme des **modulateurs potentiels** n'invalidant pas la LNT en radioprotection [57][58]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi cela compte au quotidien en médecine nucléaire",
+              "text": "Les doses diagnostiques (quelques mSv) se situent **précisément dans la zone des faibles doses** où ces phénomènes opèrent et où l'épidémiologie est aveugle (§C10). C'est la raison pour laquelle on n'invoque jamais un « seuil de sécurité » pour justifier un examen : on s'appuie sur la **justification** et l'**optimisation (ALARA)** [16], en assumant un risque hypothétique non nul mais très faible."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Temps, distance, écran (ALARA) : faute de seuil démontré aux faibles doses, la radioprotection repose sur la réduction de toute dose évitable.",
+            "caption": "Fig. — Aux faibles doses, l'incertitude mécanistique (effets non ciblés) justifie le principe d'optimisation (ALARA) plutôt qu'un seuil d'innocuité."
+          }
+        },
+        {
+          "title": "C10 - Du laboratoire à l'épidémiologie : sources de données et limites de l'estimation du risque",
+          "text": "L'estimation du **risque stochastique** repose sur l'articulation de trois niveaux de preuve hétérogènes : la radiobiologie cellulaire et moléculaire (mécanismes, §C9 et §C11), l'expérimentation animale, et l'**épidémiologie des cohortes humaines exposées** — cette dernière étant la seule à fournir des coefficients de risque directement transposables [51][57]. Comprendre la **hiérarchie et les limites** de ces sources est indispensable pour interpréter sans surestimer ni minimiser.\n\n**La cohorte de référence : la *Life Span Study* (LSS) d'Hiroshima-Nagasaki.** C'est le socle quantitatif de toute la radioprotection. L'analyse de l'incidence des **cancers solides 1958-2009** établit une relation dose-réponse **linéaire, sans seuil démontré** : le meilleur estimateur formel du seuil se situe à la **dose zéro**, avec un excès de risque relatif (ERR) déjà significatif dans la plage **0-0,20 Gy** [51][52]. L'**ERR des cancers solides est de 0,42 par Gy** (IC 95 % : 0,32-0,53) pour une exposition à 30 ans, évalué à l'âge atteint de 70 ans [51]. Deux dépendances temporelles structurent l'interprétation : l'**ERR/Gy décroît** avec l'âge atteint, tandis que l'**excès de risque absolu (EAR) croît** avec l'âge atteint [51].\n\n| Grandeur | Définition | Valeur LSS (cancers solides) |\n|---|---|---|\n| **ERR** (excès de risque relatif) | Augmentation **proportionnelle** du taux de base par unité de dose | **0,42 / Gy** (IC 95 % 0,32-0,53) [51] |\n| **EAR** (excès de risque absolu) | Nombre de cas **en excès** par unité de dose, population et temps | Croît avec l'âge atteint [51] |\n| Seuil estimé | Dose au-dessous de laquelle aucun excès | **Dose zéro** (compatible LNT) [51][52] |\n\n**Le verrou de la puissance statistique.** En dessous de **~100 mSv**, l'excès de cancers radio-induits devient **indétectable** : le signal est noyé dans l'incidence spontanée élevée des cancers et nécessiterait des cohortes de plusieurs millions de sujets suivis sur la vie entière [57]. C'est cette **invisibilité statistique** — et non une preuve d'absence d'effet — qui impose un **modèle** pour extrapoler des fortes doses (où la LSS est informative) vers les faibles doses (domaine d'exposition médicale et professionnelle).\n\n**Le modèle d'extrapolation : LNT + DDREF.** La CIPR retient le modèle **linéaire sans seuil (LNT)**, jugé le plus prudent et cohérent avec les mécanismes (§C9, §C11) [9][57]. Pour tenir compte du fait que les faibles débits de dose laissent le temps à la réparation, elle applique un **facteur d'efficacité dose et débit de dose (DDREF) = 2** pour les cancers solides : le risque par unité de dose extrapolé des fortes doses aiguës de la LSS est **divisé par 2** aux faibles doses/débits [36]. L'UNSCEAR 2020/2021 (Annexe C) conclut que les **mécanismes biologiques à faible dose soutiennent l'hypothèse LNT** pour la carcinogénèse radio-induite [57].\n\n**La traduction en détriment (CIPR 103).** L'agrégation se fait via le **détriment ajusté**, qui pondère l'incidence par la létalité, la perte de qualité de vie et les années de vie perdues — et non plus la seule mortalité de la CIPR 60 [36]. Le coefficient nominal pour la **population entière (0-84 ans) est de ~5,7 % par Sv** (cancer + effets héréditaires), dont seulement **~0,1 % par Sv** pour la composante héréditaire — rappel que les **effets héréditaires n'ont jamais été démontrés chez l'Homme** et restent une extrapolation animale [36]. La CIPR 152 (2022) a actualisé cette méthodologie de calcul [53].",
+          "stats": [
+            {
+              "value": "0,42 /Gy",
+              "label": "ERR cancers solides, LSS (IC 0,32-0,53)"
+            },
+            {
+              "value": "~100 mSv",
+              "label": "Seuil de détectabilité épidémiologique"
+            },
+            {
+              "value": "DDREF = 2",
+              "label": "Réduction du risque aux faibles débits (CIPR 103)"
+            },
+            {
+              "value": "~5,7 %/Sv",
+              "label": "Détriment ajusté, population entière (CIPR 103)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — ERR n'est pas EAR, et la confusion change le message",
+              "text": "Un même coefficient d'**ERR** appliqué à un tissu à forte incidence de base (côlon, sein) produit un **EAR** très supérieur à celui d'un tissu rare. Pour communiquer un risque individuel, c'est l'**EAR** (cas en excès attendus) qui est pertinent ; pour comparer la radiosensibilité relative entre organes, c'est l'**ERR/Gy** [51]. En pédiatrie, l'EAR vie entière est majoré : ERR/Gy plus élevé chez l'enfant et durée de vie résiduelle plus longue [51]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — ne pas multiplier dose collective × coefficient pour compter des morts",
+              "text": "Le coefficient de **~5,7 %/Sv** [36] est un outil d'**optimisation** de la radioprotection, validé pour des doses individuelles modérées. La CIPR déconseille explicitement de l'appliquer à de très faibles doses réparties sur de grandes populations (dose collective) pour **prédire un nombre de décès** : l'incertitude sous ~100 mSv interdit cette arithmétique [57]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Types de désintégration et de rayonnements : la nature et l'énergie du rayonnement (TLE) conditionnent l'efficacité biologique et donc le passage du laboratoire au risque épidémiologique.",
+            "caption": "Fig. — La qualité du rayonnement (TLE) module l'efficacité biologique relative, paramètre intégré entre les données cellulaires et les coefficients de risque épidémiologiques."
+          }
+        },
+        {
+          "title": "C11 - Radiobiologie appliquée à la médecine nucléaire : diagnostic vs thérapie vectorisée",
+          "text": "La dualité **stochastique / déterministe** structure entièrement la lecture radiobiologique des actes de médecine nucléaire. Le clivage est net : le **diagnostic** relève du **domaine stochastique pur** (doses très inférieures à tout seuil de réaction tissulaire), tandis que la **thérapie par radionucléides (RPT)** peut atteindre le **domaine déterministe** au niveau des organes critiques, imposant une **dosimétrie patient-spécifique** [28][29].\n\n**Diagnostic — domaine stochastique pur.** Les doses efficaces des examens diagnostiques se chiffrent en **quelques millisieverts**, soit deux à trois ordres de grandeur **en dessous** des seuils déterministes les plus bas (cristallin et hématopoïèse à ~0,5 Gy). La problématique radiobiologique se réduit donc au **risque stochastique** : aucune réaction tissulaire attendue, mais un risque de cancer hypothétique géré par la **justification** et l'**optimisation (ALARA)** de l'activité administrée [16][28]. C'est ce qui fonde l'usage de la LNT (§C10) et la réduction des activités, sans qu'aucun « seuil de sécurité » ne soit invoqué.\n\n**Thérapie vectorisée — irruption du domaine déterministe.** En RPT (¹³¹I, [¹⁷⁷Lu]Lu-DOTATATE, [¹⁷⁷Lu]Lu-PSMA, ⁹⁰Y), des **doses absorbées de plusieurs dizaines de Gy** sont délivrées à la tumeur — et, inévitablement, à des organes sains avides du vecteur [29]. La radiobiologie de la radiothérapie externe est alors **transposée**, avec une réserve majeure : la RPT délivre la dose à **très faible débit, de façon continue et décroissante** (selon la période effective), là où la radiothérapie externe fractionne à fort débit [28]. Cette différence de débit conditionne réparation, repopulation et tolérance des organes à risque.\n\n| Paramètre | Diagnostic (médecine nucléaire) | Thérapie vectorisée (RPT) |\n|---|---|---|\n| Domaine d'effet | **Stochastique** pur [28] | **Déterministe** possible aux organes critiques [28][29] |\n| Ordre de dose | Quelques **mSv** (dose efficace) | Plusieurs **dizaines de Gy** (dose absorbée tumeur/organe) [29] |\n| Enjeu radiobiologique | Risque de cancer (LNT, ALARA) [16] | Tolérance d'organe, dose-seuil, modèle LQ/BED [28] |\n| Levier de maîtrise | Optimisation de l'activité | **Dosimétrie patient-spécifique** [29] |\n\n**Organes critiques et seuils transposés.** Le comité de dosimétrie de l'EANM identifie pour la RPT au ¹⁷⁷Lu les organes à surveiller : **reins, moelle rouge, glandes salivaires, glandes lacrymales, hypophyse**, ainsi que la peau en cas d'extravasation [29]. La hiérarchie des organes critiques **dépend du vecteur** : pour les ligands **anti-PSMA**, les **glandes salivaires** reçoivent la dose absorbée la plus élevée parmi les tissus sains et constituent l'organe dose-limitant, avec pour effet déterministe attendu la **xérostomie** — un effet **à seuil** caractéristique [30]. À titre d'illustration, le ¹³¹I-MIP-1095 (anti-PSMA) délivre une dose absorbée salivaire prédite de **9,2 à 33,3 Gy**, associée à une xérostomie légère et transitoire (3-4 semaines) chez une minorité de patients [30][31].\n\n**Le socle cellulaire commun.** Diagnostic et thérapie partagent la même cible — l'**ADN** — et la même lésion critique, la **cassure double-brin (DSB)** : ~**20 à 40 DSB par Gy** et par cellule, lésion la mieux corrélée à la mort cellulaire car génératrice d'aberrations chromosomiques létales [40][41]. La différence n'est pas de nature mais de **quantité** : en diagnostic, le nombre de cellules réellement tuées est négligeable (effet stochastique d'une mutation résiduelle) ; en thérapie, la **déplétion cellulaire massive** vise à éradiquer la tumeur tout en restant sous le seuil de défaillance des organes sains [28][40].\n\n**Le couple théranostique.** L'appariement diagnostic/thérapie (ex. ⁶⁸Ga-PSMA → ¹⁷⁷Lu-PSMA) repose sur la **corrélation entre fixation diagnostique et dose absorbée thérapeutique** estimée : une corrélation entre **SUVmax** au ⁶⁸Ga-PSMA et dose absorbée au ¹⁷⁷Lu-PSMA a été rapportée, fondement radiobiologique de la sélection des patients et de la dosimétrie prédictive [32].",
+          "stats": [
+            {
+              "value": "quelques mSv",
+              "label": "Dose efficace diagnostique (stochastique)"
+            },
+            {
+              "value": "10-30+ Gy",
+              "label": "Dose absorbée organe critique en RPT"
+            },
+            {
+              "value": "20-40 DSB/Gy",
+              "label": "Lésion critique commune (ADN) [40]"
+            },
+            {
+              "value": "9,2-33,3 Gy",
+              "label": "Dose salivaire prédite, ¹³¹I-MIP-1095 [30]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — transposer la radiothérapie externe à la RPT sans corriger le débit de dose",
+              "text": "Appliquer brutalement les doses de tolérance d'organe de la radiothérapie externe (fort débit, fractionné) à la RPT (très faible débit, continu) **surestime** la toxicité, car le faible débit autorise davantage de réparation des lésions sublétales [28]. Le formalisme **LQ/BED** doit intégrer la décroissance temporelle de la dose ; les seuils d'organe ne sont pas directement interchangeables entre les deux modalités [28][29]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — l'organe critique est défini par le vecteur, pas par le radionucléide",
+              "text": "C'est la **biodistribution du vecteur** qui désigne l'organe dose-limitant : **glandes salivaires** pour les ligands anti-PSMA [30], **reins** et **moelle** pour les analogues de la somatostatine [¹⁷⁷Lu]Lu-DOTATATE [29]. Le radionucléide (¹⁷⁷Lu) gouverne la microdosimétrie (parcours du β⁻), mais le **ciblage** détermine quel tissu sain atteint le seuil déterministe en premier."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique : l'imagerie diagnostique sélectionne le patient et prédit la dose, le radionucléide thérapeutique délivre la dose absorbée à la tumeur et aux organes critiques.",
+            "caption": "Fig. — Boucle théranostique : la fixation diagnostique (domaine stochastique) prédit la dose absorbée thérapeutique (domaine déterministe), reliant les deux régimes radiobiologiques sur une cible ADN commune."
+          }
+        },
+        {
+          "title": "D12 - D12 - Le syndrome aigu d'irradiation et la prise en charge des fortes doses",
+          "text": "Quand une **irradiation corps entier aiguë** dépasse les seuils déterministes (cf. §D11), la déplétion synchrone de plusieurs populations de cellules souches engendre le **syndrome aigu d'irradiation (SAI)**, ou *acute radiation syndrome*. Il s'agit de l'expression clinique paradigmatique des **réactions tissulaires** : à seuil, dose-dépendant en gravité, et chronologiquement organisé. En médecine nucléaire, ce tableau n'est pas un risque diagnostique (les doses efficaces y sont de l'ordre du mSv, cf. §D14) mais relève de la **médecine de catastrophe radiologique** et fonde, par symétrie, la dosimétrie des organes critiques en thérapie par radionucléides.\n\n**Pathophysiologie — la hiérarchie des radiosensibilités gouverne la chronologie.** L'ordre d'apparition des syndromes suit la **loi de Bergonié et Tribondeau** : les compartiments à fort renouvellement (moelle, épithélium digestif) défaillent les premiers, le système nerveux (cellules non divisantes, radiorésistantes) en dernier mais à des doses massives. À l'échelle moléculaire, c'est l'accumulation de **cassures double-brin (DSB)** irréparables (~20–40 DSB par cellule par Gy [10]) qui provoque la mort cellulaire mitotique des cellules souches.\n\n**Les trois syndromes — seuils et fenêtres.**\n\n| Syndrome | Seuil (dose corps entier) | Fenêtre létale | Mécanisme dominant |\n|---|---|---|---|\n| **Hématopoïétique** | **~1–2 Gy** (forme franche dès 2–2,5 Gy) [47] | Décès à **30–60 j** [47] | Aplasie médullaire → pancytopénie, infection, hémorragie |\n| **Gastro-intestinal** | **~6 Gy** (plage 5–20 Gy) [48] | ≥ 10 Gy : décès en **~10 j** [48] | Destruction des cryptes intestinales → translocation, sepsis, déshydratation |\n| **Cérébro-vasculaire (neurovasculaire)** | **~50–100 Gy** [49] | Décès en **24–48 h** [49] | Œdème cérébral, vascularite, défaillance neurologique |\n\n**Dose létale 50 (DL50/60).** La dose entraînant 50 % de mortalité à 60 jours est, chez l'Homme, de **3,5–4 Gy sans traitement**, repoussée à **4,5–7 Gy avec soins intensifs** (support transfusionnel, antibiothérapie, facteurs de croissance hématopoïétiques) [48]. Cet écart illustre que les réactions tissulaires sont, contrairement aux effets stochastiques, **modifiables après irradiation** — argument central de la requalification CIPR « déterministe → réaction tissulaire » [38].\n\n**Déroulé clinique en quatre phases** (forme hématopoïétique typique) : (1) **prodromique** (nausées, vomissements — leur précocité indexe la dose : vomissements < 1 h évoquent > 4 Gy) ; (2) **latence** (asymptomatique, durée inversement liée à la dose) ; (3) **maladie déclarée** (nadir hématologique, infections) ; (4) **récupération ou décès**.\n\n**Dosimétrie biologique.** En l'absence de dosimètre porté, la dose reçue se reconstitue par la **cinétique de décroissance lymphocytaire** (un effondrement lymphocytaire en 24–48 h signe une dose élevée) et par le **comptage des chromosomes dicentriques** sur lymphocytes du sang périphérique — étalon-or, ces aberrations chromosomiques létales étant la signature directe des DSB mal réparées (cf. §D11) [10].",
+          "stats": [
+            {
+              "value": "3,5–4 Gy",
+              "label": "DL50/60 sans traitement (corps entier) [48]"
+            },
+            {
+              "value": "~6 Gy",
+              "label": "Seuil du syndrome gastro-intestinal [48]"
+            },
+            {
+              "value": "~1–2 Gy",
+              "label": "Seuil du syndrome hématopoïétique [47]"
+            },
+            {
+              "value": "24–48 h",
+              "label": "Décès dans la forme neurovasculaire (>50 Gy) [49]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la latence trompeuse",
+              "text": "La **phase de latence** asymptomatique ne traduit jamais une guérison : elle correspond au délai entre la stérilisation des cellules souches et l'épuisement du pool de cellules fonctionnelles matures encore présentes. Plus la dose est élevée, plus la latence est **courte** — un patient initialement « bien » après une forte irradiation est un patient à risque imminent de défaillance médullaire ou digestive [47][48]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le SAI éclaire la thérapie isotopique",
+              "text": "Les seuils du SAI ne s'appliquent qu'à une irradiation **corps entier aiguë et homogène**. En thérapie par radionucléides (RIV), l'irradiation est **fractionnée dans le temps** (débit de dose décroissant) et **inhomogène** (concentrée sur l'organe cible et les organes critiques). C'est pourquoi la moelle rouge — organe à seuil le plus bas avec le cristallin — devient l'**organe critique systémique** à doser en RIV, et non un syndrome corps entier [29]."
+            }
+          ]
+        },
+        {
+          "title": "D13 - D13 - Des principes radiobiologiques aux principes de radioprotection : justification, optimisation, limitation",
+          "text": "La **dualité déterministe / stochastique** n'est pas une curiosité académique : elle est le **fondement logique** de tout l'édifice de la radioprotection. Comprendre comment chaque famille d'effet engendre un principe de protection distinct est la clé pour appliquer correctement la doctrine de la CIPR (Commission internationale de protection radiologique).\n\n**La traduction radiobiologie → doctrine.**\n\n| Constat radiobiologique | Conséquence pour la protection | Principe CIPR |\n|---|---|---|\n| Effets **déterministes à seuil** | Maintenir toute dose **sous les seuils** → aucune réaction tissulaire | **Limitation** [16][64] |\n| Effets **stochastiques sans seuil (LNT)** | Aucune dose n'est totalement sûre → réduire **toute** dose au plus bas | **Optimisation (ALARA)** [16] |\n| Tout acte porte un **détriment stochastique résiduel** | N'exposer que si le **bénéfice net** le surpasse | **Justification** [16][37] |\n\n**1 · Justification.** Tout acte exposant doit apporter un **bénéfice net** (sanitaire, sociétal) supérieur au détriment qu'il induit [16][37]. Ce principe découle directement du modèle **LNT** (linéaire sans seuil) : puisque aucune dose n'est dépourvue de risque stochastique, une exposition sans bénéfice est par définition injustifiable. En médecine nucléaire, la justification est une décision **partagée** prescripteur–nucléariste, examen par examen.\n\n**2 · Optimisation (ALARA — *As Low As Reasonably Achievable*).** Les doses individuelles et collectives doivent être aussi basses que raisonnablement possible, compte tenu des facteurs économiques et sociétaux [16]. C'est le principe **gouverné par le stochastique** : en l'absence de seuil, chaque mSv évité réduit proportionnellement le détriment. Opérationnellement, ALARA repose sur les trois leviers historiques — **temps, distance, écran** — et, côté patient, sur l'optimisation de l'activité administrée et des protocoles.\n\n**3 · Limitation.** Des **limites de dose** réglementaires plafonnent l'exposition des travailleurs et du public [64][65]. Leur rôle est double et reflète exactement la dualité : rester **très en deçà de tout seuil déterministe** (prévention absolue des réactions tissulaires) et **borner le risque stochastique** à un niveau jugé tolérable (le risque résiduel n'étant jamais nul sous LNT). Les limites ne s'appliquent **pas** aux expositions médicales du patient (régies, elles, par justification + optimisation).\n\n**Limites de dose (CIPR 103 / directive Euratom 2013/59).**\n\n| Catégorie | Limite de dose efficace | Cristallin (dose équivalente) | Peau / extrémités |\n|---|---|---|---|\n| **Travailleur exposé** | **20 mSv/an** (moyenne sur 5 ans, ≤ 50 mSv une année) [65] | **20 mSv/an** (moyenne 5 ans, max 50 mSv) [39] | **500 mSv/an** [65] |\n| **Public** | **1 mSv/an** [65] | 15 mSv/an [65] | 50 mSv/an [65] |\n| **Apprenti/étudiant 16–18 ans** | **6 mSv/an** [65] | — | — |\n\nLa marge entre la limite travailleur (**20 mSv/an**) et le seuil déterministe le plus bas (**0,5 Gy = 500 mSv** pour le cristallin ou la moelle, cf. §D11) atteint un facteur **~25** : la limitation garantit qu'un travailleur respectant les limites ne développera **jamais** de réaction tissulaire, le risque résiduel étant purement stochastique [39][64].",
+          "steps": [
+            {
+              "title": "1 · Justifier",
+              "text": "L'acte exposant apporte-t-il un bénéfice net supérieur au détriment ? (fondé sur le LNT : pas de dose anodine). Décision partagée prescripteur–nucléariste [16][37]."
+            },
+            {
+              "title": "2 · Optimiser (ALARA)",
+              "text": "Réduire toute dose au niveau le plus bas raisonnablement atteignable — temps, distance, écran ; optimisation de l'activité et du protocole. Principe gouverné par le stochastique [16]."
+            },
+            {
+              "title": "3 · Limiter",
+              "text": "Rester sous les limites réglementaires (20 mSv/an travailleur, 1 mSv/an public), elles-mêmes très inférieures aux seuils déterministes. Ne s'applique pas à l'exposition médicale du patient [64][65]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "20 mSv/an",
+              "label": "Limite travailleur, moyenne sur 5 ans [65]"
+            },
+            {
+              "value": "1 mSv/an",
+              "label": "Limite public [65]"
+            },
+            {
+              "value": "~25×",
+              "label": "Marge limite travailleur ↔ seuil déterministe (0,5 Gy) [39]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi trois principes et non un seul",
+              "text": "Une protection fondée uniquement sur des limites de dose serait incohérente avec le **LNT** : elle laisserait croire qu'en dessous de la limite toute dose est anodine. Inversement, une protection fondée uniquement sur ALARA négligerait la prévention catégorique des **réactions tissulaires**. C'est précisément parce qu'il existe **deux types d'effets de natures différentes** qu'il faut **trois principes complémentaires** : justification (pertinence), optimisation (stochastique), limitation (déterministe + plafond stochastique) [16][64]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — les limites ne bornent pas le patient",
+              "text": "Les limites de dose réglementaires concernent les **travailleurs** et le **public**, jamais l'exposition **médicale** du patient. Pour celui-ci, seuls la **justification** et l'**optimisation** s'appliquent — d'où l'usage des **niveaux de référence diagnostiques (NRD)** comme outils d'optimisation, et non comme limites à ne pas dépasser [16][64]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers d'optimisation ALARA — temps, distance, écran — réduisant la dose reçue par l'opérateur, traduction opérationnelle du principe d'optimisation gouverné par les effets stochastiques.",
+            "caption": "Fig. — Temps / distance / écran : la traduction pratique de l'optimisation (ALARA), le principe que la radiobiologie stochastique impose."
+          }
+        },
+        {
+          "title": "D14 - D14 - Cas particuliers : embryon/foetus, enfant, et effets tissulaires tardifs (cardiovasculaire, cataracte)",
+          "text": "Trois situations échappent au raisonnement standard et imposent une vigilance renforcée : l'**exposition in utero**, l'**enfant**, et les **effets tissulaires tardifs** dont les seuils ont été spectaculairement abaissés au cours de la dernière décennie.\n\n**▸ Embryon et fœtus — des effets déterministes fenêtre-dépendants.** La radiosensibilité prénatale varie radicalement selon le stade de développement, car la cible (population de cellules souches en prolifération) change de nature au fil de la gestation [26].\n\n| Période | Effet dominant | Seuil | Mécanisme |\n|---|---|---|---|\n| **Pré-implantation** (0–10 j) | Mort embryonnaire (loi du « tout ou rien ») | dès **~0,1–0,2 Gy** [27] | Cellules totipotentes : létalité ou réparation complète, sans malformation |\n| **Organogenèse** (3–8 sem) | Malformations | **~100–200 mGy** [26] | Atteinte d'ébauches d'organes en différenciation |\n| **8–15 SA** (fenêtre la plus sensible) | Retard mental sévère, baisse de QI | **~100 mGy** (QI) ; retard mental dès ~0,3 Gy [25][26] | Migration neuronale corticale (cohorte Hiroshima-Nagasaki) |\n| **16–25 SA** | Baisse de QI (moindre) | Effet réduit [26] | Fin de la neuronogenèse corticale |\n\nL'effet le mieux documenté est la **réduction du QI d'environ 30 points par Gy** durant la fenêtre 8–15 SA, mesurable au-delà de **~100 mGy** [25][26]. La doctrine CIPR 84 est explicite : une interruption de grossesse n'est **pas justifiée** en dessous de **100 mGy** de dose fœtale ; entre 100 et 500 mGy, la décision est **individualisée** [50]. Or une scintigraphie ou une TEP diagnostique délivre au fœtus une dose typiquement **inférieure à 20–30 mGy** — très en deçà du seuil malformatif. Au risque déterministe s'ajoute le risque **stochastique** (cancer de l'enfant), sans seuil, qui justifie à lui seul la règle de prudence.\n\n**▸ L'enfant — surrisque stochastique structurel.** À dose égale, l'enfant présente un risque stochastique **supérieur à l'adulte**, pour deux raisons radiobiologiques : (1) une **fraction plus élevée de cellules souches en division** (Bergonié-Tribondeau) ; (2) une **espérance de vie résiduelle longue**, laissant le temps aux cancers à latence prolongée de s'exprimer. Le coefficient de risque nominal par Sv est ainsi majoré chez l'enfant, ce qui rend l'optimisation des activités pédiatriques (carte de dose EANM) impérative.\n\n**▸ Effets tissulaires tardifs — la révolution des seuils abaissés (CIPR 118, 2012).** Deux réactions tissulaires longtemps considérées comme à seuil élevé ont vu leur seuil ramené à **0,5 Gy**, bouleversant la radioprotection du cristallin et du système circulatoire.\n\n| Effet tardif | Ancien seuil | Seuil CIPR 118 (2012) | Conséquence réglementaire |\n|---|---|---|---|\n| **Cataracte** (cristallin) | ~2 Gy (aigu) / >8 Gy (chronique) | **0,5 Gy** (indépendant du débit) [4][5][39] | Limite cristallin travailleur : 150 → **20 mSv/an** [39] |\n| **Maladie circulatoire** (cœur, AVC) | Considérée non déterministe | **0,5 Gy** [5][38][62] | 1ère classification des maladies circulatoires comme réaction tissulaire |\n\nL'abaissement du seuil cataracte à **0,5 Gy** (Seoul Statement, 2011) a entraîné la division par **~7,5** de la limite de dose équivalente au cristallin des travailleurs — de 150 à **20 mSv/an** [39]. Cette révision concerne directement les nucléaristes et les opérateurs interventionnels, professionnellement exposés aux mains et aux yeux.",
+          "stats": [
+            {
+              "value": "100–200 mGy",
+              "label": "Seuil malformatif fœtal (organogenèse) [26]"
+            },
+            {
+              "value": "~30 pts/Gy",
+              "label": "Baisse de QI, fenêtre 8–15 SA [25][26]"
+            },
+            {
+              "value": "0,5 Gy",
+              "label": "Seuil cataracte et maladie circulatoire (CIPR 118) [4][5]"
+            },
+            {
+              "value": "20 mSv/an",
+              "label": "Limite cristallin travailleur révisée (était 150) [39]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — grossesse et règle des 100 mGy",
+              "text": "Toute grossesse doit être **systématiquement recherchée** avant une exposition. Selon la CIPR 84, une interruption n'est **pas justifiée** sous **100 mGy** de dose fœtale [50] ; or les examens diagnostiques de médecine nucléaire restent typiquement bien en deçà de ce seuil. Le réflexe correct face à une exposition fœtale accidentelle est l'**estimation dosimétrique** précise, et non la décision hâtive."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la cataracte radio-induite n'a plus de seuil « confortable »",
+              "text": "Considérer la cataracte comme un effet à seuil élevé (l'ancien dogme >2 Gy) est une **erreur datée**. Depuis CIPR 118, le seuil est **0,5 Gy**, sans effet protecteur du fractionnement (mécanisme « single-hit » du cristallin), ce qui justifie le port systématique de **lunettes plombées** en interventionnel et la surveillance dosimétrique du cristallin [4][5][39]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi 8–15 SA et pas avant",
+              "text": "La fenêtre **8–15 SA** est la plus sensible au retard mental parce qu'elle correspond au pic de **prolifération et de migration des neurones corticaux**. Avant l'implantation, l'embryon obéit à la loi du « tout ou rien » (mort ou réparation intégrale, pas de malformation) ; après 25 SA, la neuronogenèse corticale étant achevée, le risque de retard mental s'effondre [25][26]."
+            }
+          ]
+        },
+        {
+          "title": "D15 - D15 - Pieges, idees recues et erreurs d'interpretation en radiobiologie",
+          "text": "La radiobiologie est un champ saturé d'idées reçues, dont certaines ont des conséquences cliniques directes (sur-radioprotection injustifiée, communication anxiogène, mauvaise hiérarchisation des risques). Cette section recense les confusions à proscrire dans le raisonnement médecin-à-médecin.\n\n**Tableau des confusions cardinales.**\n\n| Idée reçue / erreur | Réalité radiobiologique |\n|---|---|\n| « Les effets déterministes augmentent en *probabilité* avec la dose » | NON : c'est la **gravité** qui croît avec la dose (la probabilité, elle, est de ~0 sous le seuil puis ~100 % au-delà). C'est l'inverse pour le stochastique (la *probabilité* croît, la gravité non) [1][3] |\n| « Une dose sous le seuil déterministe est sans aucun risque » | NON : le risque **stochastique** (cancer) subsiste, sans seuil (LNT) [9] |\n| « Gray et Sievert sont interchangeables » | NON : le **gray (Gy)** mesure la dose absorbée physique ; le **sievert (Sv)** pondère par la nocivité biologique (wR) et la radiosensibilité tissulaire (wT). Confondre les deux fausse toute estimation de risque [17] |\n| « Tout rayonnement à 1 Gy fait le même dégât » | NON : à dose absorbée égale, les particules **α** (wR = 20) sont 20× plus nocives que les photons (wR = 1) [17][18] |\n| « Le détriment stochastique est mesurable individuellement » | NON : le coefficient (~5,7 %/Sv) est une moyenne **populationnelle** ; le risque attribuable individuel est indétectable sous ~100 mSv [1][36] |\n| « L'effet héréditaire radio-induit est prouvé chez l'Homme » | NON : **aucune mise en évidence** chez les descendants des survivants d'Hiroshima-Nagasaki ; démontré seulement chez la souris [14] |\n\n**Piège n°1 — l'inversion gravité/probabilité.** C'est l'erreur la plus fréquente et la plus pénalisante. La phrase exacte est : *déterministe = à seuil, gravité croissante avec la dose ; stochastique = sans seuil, probabilité croissante avec la dose* [1]. Le seuil déterministe est conventionnellement défini comme la dose entraînant l'effet chez **1 % des exposés** [4][5].\n\n**Piège n°2 — le LNT n'est pas un fait biologique, c'est une hypothèse de gestion.** Le modèle **linéaire sans seuil** est retenu par prudence pour la radioprotection [9][57]. Aux faibles doses (< ~100 mSv), il n'est ni démontré ni réfuté ; des phénomènes non ciblés (effet bystander, instabilité génomique, réponse adaptative, hormèse) sont débattus mais **n'invalident pas le LNT** comme outil de gestion [58]. Extrapoler un nombre de cancers à partir de doses collectives très faibles est d'ailleurs explicitement déconseillé par la CIPR.\n\n**Piège n°3 — oublier le DDREF.** Le risque stochastique mesuré aux **fortes doses/débits** (Hiroshima) ne se transpose pas linéairement aux faibles doses : la CIPR applique un **facteur d'efficacité dose et débit (DDREF) = 2**, qui divise par deux le risque extrapolé pour les cancers solides aux faibles doses [36]. Ignorer le DDREF revient à **surestimer** le risque d'un facteur 2.\n\n**Piège n°4 — confondre dose absorbée d'organe et dose efficace.** En thérapie isotopique, on raisonne en **dose absorbée d'organe (Gy)** par rapport à des seuils déterministes (reins, glandes salivaires, moelle) ; en imagerie diagnostique, on raisonne en **dose efficace (mSv)** pour estimer un détriment stochastique corps entier. Appliquer un raisonnement de l'un à l'autre est une faute conceptuelle [17][29].\n\n**Piège n°5 — surévaluer le risque diagnostique.** Une scintigraphie ou une TEP délivre quelques mSv (domaine **stochastique pur**, très en deçà de tout seuil déterministe). Communiquer ce risque comme s'il était déterministe (« cela va abîmer vos organes ») est radiobiologiquement faux et délétère pour l'adhésion du patient.",
+          "stats": [
+            {
+              "value": "1 %",
+              "label": "Incidence définissant le seuil déterministe (CIPR) [4][5]"
+            },
+            {
+              "value": "~5,7 %/Sv",
+              "label": "Détriment populationnel, jamais individuel [36]"
+            },
+            {
+              "value": "DDREF = 2",
+              "label": "Facteur de réduction du risque aux faibles doses [36]"
+            },
+            {
+              "value": "0",
+              "label": "Effets héréditaires démontrés chez l'Homme [14]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — « sous le seuil, donc sans risque »",
+              "text": "L'affirmation la plus dangereuse en radioprotection. Sous le seuil **déterministe**, il n'y a effectivement pas de réaction tissulaire — mais le risque **stochastique** (cancer), lui, n'a **pas de seuil** (modèle LNT) [9]. Les deux familles d'effets coexistent : une dose peut être « sûre » du point de vue déterministe et porteuse d'un détriment stochastique résiduel."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le LNT, hypothèse prudentielle assumée",
+              "text": "Le LNT n'est pas présenté par la CIPR comme une vérité biologique aux très faibles doses, mais comme la base de gestion la plus **prudente et cohérente** [9][57]. Sa principale conséquence pratique — l'optimisation systématique (ALARA) — reste valide quelle que soit l'issue du débat scientifique sur l'hormèse ou les effets de seuil hypothétiques [58]. En clinique, on n'oppose donc pas LNT et hormèse : on optimise."
+            },
+            {
+              "type": "info",
+              "title": "Repères-seuils à mémoriser",
+              "text": "Cristallin et moelle (aigu) : **0,5 Gy** [4][5] · Érythème cutané : **~2 Gy** [61] · Malformations fœtales : **~100–200 mGy** [26] · DL50/60 du SAI : **~3,5–4 Gy** [48] · Détriment stochastique : **~5,7 %/Sv** [36] · Limites : **20 mSv/an** (travailleur), **1 mSv/an** (public) [65]."
+            }
+          ]
+        },
+        {
+          "title": "E16 - Synthese operationnelle : la carte mentale deterministe vs stochastique",
+          "text": "Toute la radioprotection se déduit d'**une seule dichotomie** : les effets **déterministes** (réactions tissulaires) et les effets **stochastiques** (probabilistes). Maîtriser cette carte mentale, c'est pouvoir reconstruire de tête les seuils d'organe, les limites réglementaires et la conduite à tenir face à n'importe quelle exposition.\n\n## La distinction fondatrice — tableau de synthèse\n\n| Critère | Effets **déterministes** (réactions tissulaires) | Effets **stochastiques** (probabilistes) |\n|---|---|---|\n| Relation à la dose | **Seuil** ; au-delà, **gravité ↗ avec la dose** [1][3] | **Sans seuil** présumé ; **probabilité ↗ avec la dose**, gravité fixe [1][3] |\n| Mécanisme cellulaire | **Mort/déplétion** d'une population de cellules fonctionnelles [1] | **Mutation** d'une cellule survivante non létale [9][13] |\n| Cible critique | Population tissulaire (souches, cellules en division) | **ADN** d'une seule cellule (DSB → mutation transmise) [10] |\n| Manifestations | Cataracte, érythème, stérilité, syndrome d'irradiation aiguë, atteinte fœtale [4][5] | **Cancers** (somatique) ; **effets héréditaires** (germinal) [9][14] |\n| Latence | Précoce (heures-semaines) à tardive (cataracte : années) [5][38] | Longue : leucémies ~2-5 ans, cancers solides **décennies** [13][51] |\n| Modèle de référence | Seuil à **1 % d'incidence** (CIPR 118) [4][5] | **LNT** (linéaire sans seuil), CIPR / BEIR VII / UNSCEAR [9][57] |\n| Quantification du risque | Seuils d'organe (Gy) | Détriment **≈ 5,7 %/Sv** (population entière) [36] |\n| Levier de radioprotection | **Limites de dose** (rester sous les seuils) [64][65] | **Justification + optimisation (ALARA)** (réduire la probabilité) [16][37] |\n\n## La cascade en une image : du photon à la mutation\n\nLa séquence physico-chimico-biologique s'étage sur **~17 ordres de grandeur de temps**, et c'est elle qui détermine *laquelle* des deux familles d'effets survient :\n\n1. **Stade physique** (~10⁻¹⁸-10⁻¹² s) : ionisation/excitation le long de la trace, dépôt d'énergie [11][12].\n2. **Stade physico-chimique puis chimique** (~10⁻¹²-10⁻⁶ s) : **radiolyse de l'eau** → radicaux **•OH**, e⁻aq, H•, H₂O₂ [12]. Pour les rayonnements de **bas TLE** (X, γ), l'**effet indirect** (radicaux) domine — d'où la sensibilité à l'oxygène [10][41].\n3. **Stade biologique** : par gray et par cellule, on génère **> 1000 dommages de bases, ~1000 cassures simple-brin (SSB) et ~20-40 cassures double-brin (DSB)** [10][40]. **La DSB est la lésion critique** : mal réparée, elle produit soit une **aberration chromosomique létale** (→ effet déterministe) soit une **mutation viable transmise** (→ effet stochastique) [10][40].\n\n**Tout l'arbre décisionnel tient là** : DSB réparée fidèlement = pas d'effet ; DSB mal réparée + mort de la cellule = brique d'un effet déterministe (si assez de cellules meurent) ; DSB mal réparée + survie cellulaire = brique d'un effet stochastique.\n\n## Les seuils-repères à mémoriser (déterministe)\n\n> Référentiel : **CIPR 118 (2012)**, seuils définis à **1 % d'incidence** [4][5].\n\n| Effet | Seuil de dose absorbée | Source |\n|---|---|---|\n| **Cristallin (cataracte)** | **0,5 Gy** (abaissé depuis ~2 Gy ; Seoul Statement 2011) [5][39][62] | [5][39] |\n| **Maladie circulatoire** (cœur, cerveau) | **0,5 Gy** [5][38][62] | [5][38] |\n| Dépression hématopoïétique | **~0,5 Gy** [4][5] | [4] |\n| Stérilité temporaire (testicule, aigu) | **0,15 Gy** [2][4] | [2][4] |\n| Stérilité permanente (testicule, aigu) | **3,5-6,0 Gy** [4] | [4] |\n| Érythème cutané transitoire | **~2 Gy** (2-5 Gy) [59][61] | [59][61] |\n| Malformations fœtales (organogenèse) | **100-200 mGy** [25][26] | [25][26] |\n| **DL50/60 humaine** (syndrome aigu) | **~3,5-4 Gy** (sans soins) ; **4,5-7 Gy** (soins intensifs) [48] | [48] |\n\n## Les chiffres-clés à mémoriser (stochastique)\n\n- Détriment ajusté total **≈ 5,7 %/Sv** (cancer + héréditaire, population entière), dont **~0,1 %/Sv** d'effets héréditaires — rôle **mineur** [36].\n- ERR des cancers solides (LSS Hiroshima-Nagasaki) : **0,42/Gy** (IC 95 % 0,32-0,53), relation **linéaire sans seuil**, meilleur estimateur du seuil à **dose zéro** [51][52].\n- Détectabilité épidémiologique limitée en deçà de **~100-200 mSv** [1] ; CIPR 103 applique un **DDREF = 2** aux faibles doses/débits pour les cancers solides [36].\n- Effets héréditaires : **aucune mise en évidence chez l'Homme** à ce jour (descendants d'Hiroshima/Nagasaki), démontrés seulement chez la souris [14].\n\n## La boucle logique : de la dichotomie aux 3 principes\n\nLa distinction déterministe/stochastique **structure tout l'édifice** de la radioprotection (CIPR / Euratom 2013/59) :\n\n1. **Justification** — tout acte exposant doit apporter un bénéfice net > détriment [16][37][65].\n2. **Optimisation (ALARA, *As Low As Reasonably Achievable*)** — doses individuelles et collectives aussi basses que raisonnablement possible : c'est la réponse directe au **risque stochastique sans seuil** [16][37].\n3. **Limitation** — les **limites de dose** (travailleur **20 mSv/an** moyenné sur 5 ans, public **1 mSv/an**, cristallin travailleur **20 mSv/an**) sont calées **très en deçà de tout seuil déterministe** : elles existent pour **empêcher les réactions tissulaires** et **plafonner la probabilité stochastique** [39][64][65].\n\n## Transposition en médecine nucléaire\n\n- **Diagnostic** (TEP-FDG ~6-7 mSv, scintigraphie osseuse ⁹⁹ᵐTc ~3-6 mSv) : domaine **stochastique pur**, très en deçà des seuils → la justification et l'optimisation des activités priment, le risque s'estime par la LNT.\n- **Thérapie / théranostique** (¹³¹I, ¹⁷⁷Lu-PSMA/DOTATATE, ⁹⁰Y) : les doses absorbées aux **organes critiques** (moelle, reins, **glandes salivaires**) peuvent atteindre le **domaine déterministe** (ex. xérostomie post-[¹⁷⁷Lu]Lu-PSMA), imposant une **dosimétrie patient-spécifique** et le respect de doses-seuils d'organe (modèle LQ/BED transposé de la radiothérapie) [28][29][30].",
+          "stats": [
+            {
+              "value": "0,5 Gy",
+              "label": "Seuil cristallin & circulatoire (CIPR 118)"
+            },
+            {
+              "value": "≈ 5,7 %/Sv",
+              "label": "Détriment stochastique (population, CIPR 103)"
+            },
+            {
+              "value": "20-40 / Gy",
+              "label": "Cassures double-brin (DSB) par cellule"
+            },
+            {
+              "value": "20 / 1 mSv/an",
+              "label": "Limites de dose travailleur / public"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la phrase qui résume tout",
+              "text": "**Déterministe = la dose décide de la GRAVITÉ (avec seuil) ; stochastique = la dose décide de la PROBABILITÉ (sans seuil).** Corollaire opérationnel : on **fixe des limites de dose** pour éviter les effets déterministes, et on **optimise (ALARA)** pour minimiser les effets stochastiques. La même DSB sur l'ADN nourrit les deux familles selon que la cellule meurt (déterministe) ou survit mutée (stochastique) [10]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege — vocabulaire et terminologie CIPR",
+              "text": "Ne pas confondre les **dénominations historiques**. Les « effets déterministes » s'appellent désormais **réactions tissulaires** (*tissue reactions*, CIPR 2011/118), car certaines sont **modifiables après irradiation** [38][63]. La terminologie a évolué : « non stochastiques » (1977) → « déterministes » → « réactions tissulaires ». Piège fréquent de QCM : le seuil CIPR est défini à **1 % d'incidence**, pas à 0 % [4][5]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege — le seuil cristallin a ete abaisse",
+              "text": "Erreur classique : citer l'ancien seuil de cataracte (~2 Gy aigu, >8 Gy chronique). Depuis le **Seoul Statement (2011) / CIPR 118 (2012)**, le seuil est **0,5 Gy**, indépendamment du débit, et la **limite de dose équivalente au cristallin des travailleurs est passée de 150 à 20 mSv/an** (moyenné sur 5 ans, aucun an > 50 mSv) [5][39][62]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Temps, distance, ecran : les trois leviers de reduction de dose (ALARA), traduction operationnelle de l'optimisation contre le risque stochastique sans seuil et du maintien sous les seuils deterministes.",
+            "caption": "Fig. — Temps / distance / ecran (ALARA) : le levier d'optimisation qui repond au risque stochastique et garde les doses sous les seuils deterministes."
+          }
+        },
+        {
+          "title": "E17 - References, liens et ressources de reference",
+          "text": "Bibliographie sourcée et liens typés clôturant l'article. Les références privilégient les **sources primaires et institutionnelles** : recommandations CIPR/ICRP, rapports UNSCEAR et BEIR, cohorte LSS d'Hiroshima-Nagasaki, et guides EANM/SNMMI pour le volet radiopharmaceutique.\n\n## Référentiels pivots (à connaître par cœur)\n\n| Référentiel | Apport structurant | Renvoi |\n|---|---|---|\n| **CIPR / ICRP 103 (2007)** | Recommandations cadres : grandeurs dosimétriques, **w_R / w_T**, détriment, limites de dose | [17][35] |\n| **CIPR / ICRP 118 (2012)** | **Seuils des réactions tissulaires** (cristallin et circulatoire à **0,5 Gy**) | [4][5] |\n| **Seoul Statement (2011)** | Abaissement du seuil cristallin et de la limite au cristallin (150 → 20 mSv/an) | [39][62] |\n| **BEIR VII (2005)** | Bases du **modèle LNT** pour la cancérogenèse | [9] |\n| **UNSCEAR 2020/2021, Annexe C** | Mécanismes biologiques à faible dose **soutenant la LNT** | [57] |\n| **LSS Hiroshima-Nagasaki** | Données épidémiologiques de référence (ERR cancers solides, in utero) | [51][52] |\n| **CIPR 152 (2022)** | Actualisation de la **méthodologie de calcul du détriment** | [53] |\n| **EANM Dosimetry Committee** | Dosimétrie des organes à risque en thérapie ¹⁷⁷Lu (RPT) | [28][29] |\n\n## Carte mentale — la dichotomie en clôture\n\n**Cible = ADN** ; lésion critique = **DSB** (~20-40/Gy) ; effet majoritairement **indirect** (radiolyse de l'eau) à bas TLE [10][40][41].\n\n- **DÉTERMINISTE** = à seuil + gravité ↗ avec la dose → *réactions tissulaires*, seuil à 1 % d'incidence (CIPR 118) → **limites de dose** [4][5][64].\n- **STOCHASTIQUE** = sans seuil + probabilité ↗ avec la dose → cancers + héréditaire, modèle **LNT**, détriment **~5,7 %/Sv** (CIPR 103) → **justification + ALARA** [9][36][16].\n- **Seuils-repères** : cristallin / moelle **0,5 Gy** [5], érythème **~2 Gy** [59], DL50 du syndrome aigu **~4 Gy** [48], malformations fœtales **~100-200 mGy** [25][26].\n- **Pont radioprotection** : la distinction déterministe/stochastique **fonde les 3 principes** (justification, optimisation/ALARA, limitation) et les **limites de dose** (travailleur 20 mSv/an, public 1 mSv/an) [16][37][65].\n\n## Liens typés (réseau de l'article)\n\n- **Concepts** : effets déterministes (réactions tissulaires) · effets stochastiques · modèle LNT · loi de Bergonié et Tribondeau · effet oxygène (OER) · modèle linéaire-quadratique (α/β) · les 4 R de la radiothérapie.\n- **Grandeurs** : dose absorbée (Gy) · dose équivalente (Sv) · dose efficace (Sv) · facteurs de pondération w_R / w_T.\n- **Cliniques** : cataracte radio-induite · syndrome d'irradiation aiguë · effets de l'irradiation in utero · cancers radio-induits.\n- **Radioprotection** : justification · optimisation (ALARA) · limitation · limites de dose.\n- **Médecine nucléaire (déterministe en thérapie)** : ¹³¹I · ¹⁷⁷Lu-PSMA · ¹⁷⁷Lu-DOTATATE · dosimétrie des organes à risque · théranostique.\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). Note de fiabilité : les seuils CIPR cités proviennent des publications CIPR 103/118 et de synthèses indexées concordantes ; les coefficients de détriment et l'ERR sont issus respectivement de PMC5902532 [36] et de la LSS (RR14492.1 / PMC10320812) [51][52].*",
+          "list": [
+            "[1] Deterministic Effects (Tissue Reactions) and Stochastic Effects — Japan Ministry of the Environment (MOE)",
+            "[2] Classification of radiation effects for dose limitation purposes — Journal of Radiation Research (Oxford), 55(4):629",
+            "[3] Tissue Reactions (Deterministic) and Stochastic effects — Hong Kong Observatory",
+            "[4] ICRP Publication 118 — Threshold Doses for Tissue Reactions in a Radiation Protection Context (ICRP, 2012)",
+            "[5] ICRP Publication 118: Statement on Tissue Reactions and early/late effects in normal tissues — threshold doses (PubMed 22925378)",
+            "[6] Radiosensitivity — Wikipedia (échelle de radiosensibilité tissulaire)",
+            "[7] Threshold Values for Various Effects (Deterministic / Tissue Reactions) — Japan Ministry of the Environment (MOE)",
+            "[8] The law of Bergonié and Tribondeau: a nice formula for a first approximation (PubMed 22856587)",
+            "[9] Linear no-threshold model — Wikipedia (BEIR VII, ICRP, LNT)",
+            "[10] The Cellular Response to Complex DNA Damage Induced by Ionising Radiation — PMC10003081 (SSB/DSB/base lesions par Gy)",
+            "[11] Review of Radiation Oncology Physics, Ch. 14 Basic Radiobiology — IAEA (stades de l'action des rayonnements)",
+            "[12] Fundamentals of Water Radiolysis — MDPI Encyclopedia (stades physique/physico-chimique/chimique)",
+            "[13] Mechanisms of Biological Effects — Toxicological Profile for Ionizing Radiation, NCBI Bookshelf NBK597563",
+            "[14] BfS — Hereditary radiation damage (dose de doublement, 1 maladie / 500 naissances / Gy, absence de preuve humaine)",
+            "[15] Oxygen Enhancement Ratio — an overview, ScienceDirect Topics (OER vs TLE)",
+            "[16] Optimisation de la radioprotection / principes (justification, optimisation/ALARA, limitation) — ASNR/IRSN",
+            "[17] ICRP Publication 103 — The 2007 Recommendations (NRC reprint ML12338A682) — w_R, w_T, limites de dose",
+            "[25] Health Effects of Prenatal Radiation Exposure — AAFP (seuil malformation 100-200 mGy, 8-15 sem, QI)",
+            "[26] Radiation Effects on the Fetus — StatPearls, NCBI Bookshelf NBK564358",
+            "[28] Normal-Tissue Tolerance to Radiopharmaceutical Therapies — J Nucl Med 62(Suppl 3):23S",
+            "[29] EANM Dosimetry Committee recommendations for dosimetry of ¹⁷⁷Lu-labelled SSTR- and PSMA-targeting ligands — EJNMMI",
+            "[30] Xerostomia trends in mCRPC under [¹⁷⁷Lu]Lu-PSMA-617 and salivary gland dosimetry — J Nucl Med",
+            "[35] ICRP Publication 103 — Free extract (Annals of the ICRP 37(2-4))",
+            "[36] Impact of updating the non-radiation parameters in the ICRP 103 detriment model — PMC5902532 (≈ 5,7 %/Sv)",
+            "[37] Radioprotection — Wikipédia (principes CIPR, ALARA, justification, limitation)",
+            "[38] Noncancer Effects of Ionizing Radiation on the Eye, the Circulatory System and beyond (PubMed 37410098)",
+            "[39] Radiation protection of the eye lens in medical workers — BJR 89(1060):20151034",
+            "[40] The shape of the radiation dose response for DNA double-strand break induction and repair — PMC3616853",
+            "[41] Radiation Damage to DNA: The Indirect Effect of Low Energy Electrons — PMC4071054",
+            "[48] Gastrointestinal acute radiation syndrome — Cell Death Discovery (Nature s41420-025-02525-6), DL50",
+            "[51] Solid Cancer Incidence among the LSS of Atomic Bomb Survivors 1958-2009 — Radiation Research RR14492.1 (ERR 0,42/Gy)",
+            "[52] Solid Cancer Incidence among the LSS of Atomic Bomb Survivors 1958-2009 — PMC10320812",
+            "[53] ICRP Publication 152: Radiation Detriment Calculation Methodology, 2022 — SAGE Journals",
+            "[54] Table D-5, Tissue Weighting Factors for Effective Dose (ICRP 103) — NCBI NBK158810",
+            "[57] UNSCEAR 2020/2021 Vol. III, Annexe C: Biological mechanisms for cancer risk at low dose/dose-rate",
+            "[59] Skin Injuries Caused by Fluoroscopically Guided Interventional Procedures — AJR (seuil érythème)",
+            "[61] Erythema and skin injuries — IAEA RPOP",
+            "[62] Emerging issues in radiogenic cataracts and cardiovascular disease — PMC4202294 (seuils Seoul Statement 2011)",
+            "[63] Classification of radiation effects for dose limitation purposes — PMC4100010",
+            "[64] Le principe de limitation des doses et la tolérabilité du risque radiologique — Radioprotection / SFRP",
+            "[65] Radioprotection : principes de base et limites de doses — AFCN (Agence fédérale de Contrôle nucléaire)"
+          ]
+        }
+      ]
+    }
+  }
+}
