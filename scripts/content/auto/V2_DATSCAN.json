@@ -79,7 +79,7 @@
     },
     {
       "title": "[13] DaTSCAN, ioflupane (123I) — Résumé des Caractéristiques du Produit / Product Information (Annex I SmPC) — European Medicines Agency",
-      "url": "https://www.ema.europa.eu/fr/documents/product-information/datscan-epar-product-information_fr.pdf"
+      "url": "https://www.medicines.org.uk/emc/product/14810/smpc"
     },
     {
       "title": "[14] DaTSCAN, ioflupane (123I) — Annexe I RCP, Registre communautaire des médicaments (EMA / Commission européenne)",
@@ -216,7 +216,7 @@
       {
         "icon": "alert",
         "label": "Organe critique",
-        "value": "Paroi vésicale 85 µGy/MBq (CIPR 128) [13,21]"
+        "value": "Striatum ~230 µGy/MBq (dose max, CIPR 128) ; paroi vésicale ~53,1 µGy/MBq [13,21]"
       },
       {
         "icon": "droplets",
@@ -423,7 +423,7 @@
           "Le foie"
         ],
         "answer": 2,
-        "explanation": "Selon la CIPR 128 (RCP EMA), l'organe critique est la paroi vésicale à 85 µGy/MBq ; les mictions fréquentes après injection réduisent l'exposition [13,21].",
+        "explanation": "Selon la CIPR 128 (RCP EMA), la paroi vésicale reçoit ~53,1 µGy/MBq et constitue l'organe critique au sens de la radioprotection (élimination urinaire) ; les mictions fréquentes après injection réduisent l'exposition. À noter que l'organe recevant la dose absorbée la plus élevée sous CIPR 128 est en réalité le striatum (~230 µGy/MBq) [13,21].",
         "difficulty": "difficile"
       },
       {
@@ -520,7 +520,7 @@
         "Limite majeure : ne distingue PAS la maladie de Parkinson des parkinsonismes atypiques (AMS, PSP, DCB), tous présynaptiques [10,13].",
         "Un DAT-SPECT normal est un critère d'EXCLUSION absolue de la maladie de Parkinson (critères MDS 2015) ; la baisse de DAT est un biomarqueur indicatif des critères McKeith 2017 (DCL) [8,23].",
         "Performances : MP vs tremblement essentiel Se ~80–98 %, Sp >90 % ; DCL vs Alzheimer Se ~78 %, Sp ~90 % ; modifie la prise en charge dans 54 % des cas suspects [7,9,19].",
-        "Dose efficace ~25 µSv/MBq (CIPR 128) → ~4,63 mSv pour 185 MBq ; organe critique = paroi vésicale (85 µGy/MBq) [13,21]."
+        "Dose efficace ~25 µSv/MBq (CIPR 128) → ~4,63 mSv pour 185 MBq ; sous CIPR 128, dose absorbée maximale au striatum (~230 µGy/MBq), organe critique radioprotection = paroi vésicale (~53,1 µGy/MBq) [13,21]."
       ],
       "protocol": [
         "Blocage thyroïdien : iodure de potassium ~120 mg per os, 1 à 4 h AVANT l'injection (variantes Lugol/perchlorate) [13].",
@@ -623,7 +623,7 @@
       "sections": [
         {
           "title": "A1 - Carte d'identite",
-          "text": "**Comment lire la carte d'identite.** Le **DaTscan** (ioflupane marque a l'**iode 123**, ou **123I-FP-CIT**) est une **TEMP (tomographie d'emission monophotonique) cerebrale** dediee a un seul parametre : la densite des **transporteurs presynaptiques de la dopamine (DAT)** dans le striatum. Le radionucleide 123I est un emetteur gamma pur de **159 keV** (abondance **83 %**), de periode **13,2 h** [1][3] : energie ideale pour la gamma-camera, demi-vie courte (donc faible charge dosimetrique). L'activite adulte recommandee est de **111-185 MBq** (typiquement 185 MBq), injectee en **IV lente >= 15-20 s** [1][3][13]. Le **blocage thyroidien** est obligatoire (le produit contient jusqu'a **6 %** d'iode-123 libre) [1][13], et l'imagerie debute **3 a 6 h** apres l'injection, au plateau de fixation striatale [1][3][5]. La dose efficace de reference (CIPR 128) est de **25 microSv/MBq**, soit **4,63 mSv** pour 185 MBq [13][21]. Les activites exactes et les modalites de blocage sont a adapter au protocole de chaque service.\n\n| Champ | Valeur |\n|---|---|\n| Modalite | TEMP / TEMP-TDM cerebrale (DAT-SPECT) |\n| Traceur | **123I-ioflupane** (123I-FP-CIT, DaTscan) |\n| Emission x energie | gamma pur **159 keV** (83 %) + RX ~27 keV [1][13] |\n| Periode physique | **13,2 h** [1][3] |\n| Voie x activite adulte | IV lente >= 15-20 s x **111-185 MBq** [1][3] |\n| Delai injection -> images | **3-6 h** [1][3][5] |\n| Duree d'acquisition | **30-45 min** (TEMP 360deg) [1][3] |\n| Organe critique x dose efficace | paroi vesicale **85 microGy/MBq** ; **4,63 mSv** pour 185 MBq [13][21] |\n| Preparation cle | blocage thyroidien (~120 mg KI, 1-4 h avant) + arret des medicaments interferant au DAT [13][1] |\n| Indications phares | tremblement essentiel vs syndrome parkinsonien degeneratif ; demence a corps de Lewy vs Alzheimer [13][1] |\n| Examens lies | scintigraphie myocardique a la MIBG (innervation sympathique) ; TEP cerebrale |\n| Premiere AMM | EMA **27 juillet 2000** ; FDA **janvier 2011** [13][11] |",
+          "text": "**Comment lire la carte d'identite.** Le **DaTscan** (ioflupane marque a l'**iode 123**, ou **123I-FP-CIT**) est une **TEMP (tomographie d'emission monophotonique) cerebrale** dediee a un seul parametre : la densite des **transporteurs presynaptiques de la dopamine (DAT)** dans le striatum. Le radionucleide 123I est un emetteur gamma pur de **159 keV** (abondance **83 %**), de periode **13,2 h** [1][3] : energie ideale pour la gamma-camera, demi-vie courte (donc faible charge dosimetrique). L'activite adulte recommandee est de **111-185 MBq** (typiquement 185 MBq), injectee en **IV lente >= 15-20 s** [1][3][13]. Le **blocage thyroidien** est obligatoire (le produit contient jusqu'a **6 %** d'iode-123 libre) [1][13], et l'imagerie debute **3 a 6 h** apres l'injection, au plateau de fixation striatale [1][3][5]. La dose efficace de reference (CIPR 128) est de **25 microSv/MBq**, soit **4,63 mSv** pour 185 MBq [13][21]. Les activites exactes et les modalites de blocage sont a adapter au protocole de chaque service.\n\n| Champ | Valeur |\n|---|---|\n| Modalite | TEMP / TEMP-TDM cerebrale (DAT-SPECT) |\n| Traceur | **123I-ioflupane** (123I-FP-CIT, DaTscan) |\n| Emission x energie | gamma pur **159 keV** (83 %) + RX ~27 keV [1][13] |\n| Periode physique | **13,2 h** [1][3] |\n| Voie x activite adulte | IV lente >= 15-20 s x **111-185 MBq** [1][3] |\n| Delai injection -> images | **3-6 h** [1][3][5] |\n| Duree d'acquisition | **30-45 min** (TEMP 360deg) [1][3] |\n| Organe critique x dose efficace | dose absorbee max au striatum (~230 microGy/MBq, CIPR 128) ; paroi vesicale ~53,1 microGy/MBq ; **4,63 mSv** pour 185 MBq [13][21] |\n| Preparation cle | blocage thyroidien (~120 mg KI, 1-4 h avant) + arret des medicaments interferant au DAT [13][1] |\n| Indications phares | tremblement essentiel vs syndrome parkinsonien degeneratif ; demence a corps de Lewy vs Alzheimer [13][1] |\n| Examens lies | scintigraphie myocardique a la MIBG (innervation sympathique) ; TEP cerebrale |\n| Premiere AMM | EMA **27 juillet 2000** ; FDA **janvier 2011** [13][11] |",
           "stats": [
             {
               "value": "159 keV",
@@ -983,7 +983,7 @@
         },
         {
           "title": "D15 - Dosimétrie",
-          "text": "Deux référentiels coexistent et donnent des chiffres légèrement différents : le **RCP européen (EMA) s'appuie sur la CIPR 128** [13][21], tandis que la **notice US (Curium / DailyMed) s'appuie sur la CIPR 80** avec l'organe critique exprimé différemment [15][2]. Toute valeur rapportée doit donc préciser son référentiel.\n\n**Coefficient de dose efficace (adulte)** : **0,025 mSv/MBq** (CIPR 128) [13][21], soit **4,63 mSv pour 185 MBq** chez un sujet de 70 kg [13] ; la notice US (CIPR 80) retient **0,0213 mSv/MBq → 3,94 mSv pour 185 MBq** [15][1]. Une étude de biodistribution chez volontaires sains européens donne **0,023 ± 0,0015 mSv/MBq** (vs 0,028 ± 0,0045 mSv/MBq chez des sujets chinois, différence non significative) [22]. Calculs effectués sous **blocage thyroïdien** et vidange vésicale à **4,8 h** [13].\n\n**Doses absorbées par organe** (µGy/MBq) :\n\n| Organe | CIPR 128 (RCP EMA) | CIPR 80 (notice US) |\n|---|---|---|\n| Paroi vésicale (**organe critique CIPR 128**) | **85** [13] | 53,1 [15] |\n| Striatum (**organe critique CIPR 80**) | — | **230** [15][1] |\n| Côlon (paroi) | 59 [13] | — |\n| Vésicule biliaire | 44 [13] | — |\n| Poumons | 42 [13] | 41,2 [15] |\n| Thyroïde | 35 [13] | — |\n| Foie | 26 [13] | — |\n| Cerveau | 16 [13] | 18,1 [3] |\n| Ovaires / Testicules | 18 / 9,4 [13] | — / 8,8 [3] |\n\nLa divergence sur l'organe critique (paroi vésicale en CIPR 128 [13] vs striatum à **230 µGy/MBq** en CIPR 80 [15][1]) reflète un changement de modèle biocinétique entre les deux publications, et non une différence d'examen.\n\n- **Pédiatrie** : pas d'AMM ni de données spécifiques (parkinsonisme et démence à corps de Lewy sont des pathologies de l'adulte) ; la carte de dose pédiatrique EANM n'inclut pas l'ioflupane [3]. En recours exceptionnel, fraction de la dose adulte selon le poids (Paediatric Task Group EANM) : **0,46 à 20 kg, 0,76 à 40 kg, 0,96 à 60–62 kg** [3].\n- **Grossesse / allaitement** : cf. §D16 et §A6 ; l'allaitement est suspendu **≥ 3 jours** (RCP EMA) [13], jusqu'à **6 jours** selon la notice FDA, avec tirage et rejet du lait [1].\n- **Mise en perspective** : à **185 MBq**, la dose efficace (~3,9–4,6 mSv) est de l'ordre d'une **année d'irradiation naturelle** [1][22]. La composante TDM d'une éventuelle TEMP/TDM s'y ajoute ; distinguer **dose absorbée** (µGy, par organe) et **dose efficace** (mSv, corps entier pondéré).",
+          "text": "Deux référentiels coexistent et donnent des chiffres légèrement différents : le **RCP européen (EMA) s'appuie sur la CIPR 128** [13][21], tandis que la **notice US (Curium / DailyMed) s'appuie sur la CIPR 80** avec l'organe critique exprimé différemment [15][2]. Toute valeur rapportée doit donc préciser son référentiel.\n\n**Coefficient de dose efficace (adulte)** : **0,025 mSv/MBq** (CIPR 128) [13][21], soit **4,63 mSv pour 185 MBq** chez un sujet de 70 kg [13] ; la notice US (CIPR 80) retient **0,0213 mSv/MBq → 3,94 mSv pour 185 MBq** [15][1]. Une étude de biodistribution chez volontaires sains européens donne **0,023 ± 0,0015 mSv/MBq** (vs 0,028 ± 0,0045 mSv/MBq chez des sujets chinois, différence non significative) [22]. Calculs effectués sous **blocage thyroïdien** et vidange vésicale à **4,8 h** [13].\n\n**Doses absorbées par organe** (µGy/MBq) :\n\n| Organe | CIPR 128 (RCP EMA) | CIPR 80 (notice US) |\n|---|---|---|\n| Paroi vésicale (**organe critique radioprotection CIPR 128**) | **53,1** [13] | 35 [15] |\n| Striatum (**dose absorbée max CIPR 128 ; organe critique CIPR 80**) | **230** [13] | **230** [15][1] |\n| Côlon (paroi) | 59 [13] | — |\n| Vésicule biliaire | 44 [13] | — |\n| Poumons | 42 [13] | 41,2 [15] |\n| Thyroïde | 35 [13] | — |\n| Foie | 26 [13] | 85 [15] |\n| Cerveau | 16 [13] | 18,1 [3] |\n| Ovaires / Testicules | 18 / 9,4 [13] | — / 8,8 [3] |\n\nLa divergence porte sur la désignation de l'organe critique : au sens de la radioprotection, la paroi vésicale (voie d'élimination urinaire) en CIPR 128 [13], tandis que l'organe recevant la **dose absorbée la plus élevée (~230 µGy/MBq) est le striatum**, sous CIPR 128 comme sous CIPR 80 [15][1] ; cela reflète un changement de modèle biocinétique entre les deux publications, et non une différence d'examen.\n\n- **Pédiatrie** : pas d'AMM ni de données spécifiques (parkinsonisme et démence à corps de Lewy sont des pathologies de l'adulte) ; la carte de dose pédiatrique EANM n'inclut pas l'ioflupane [3]. En recours exceptionnel, fraction de la dose adulte selon le poids (Paediatric Task Group EANM) : **0,46 à 20 kg, 0,76 à 40 kg, 0,96 à 60–62 kg** [3].\n- **Grossesse / allaitement** : cf. §D16 et §A6 ; l'allaitement est suspendu **≥ 3 jours** (RCP EMA) [13], jusqu'à **6 jours** selon la notice FDA, avec tirage et rejet du lait [1].\n- **Mise en perspective** : à **185 MBq**, la dose efficace (~3,9–4,6 mSv) est de l'ordre d'une **année d'irradiation naturelle** [1][22]. La composante TDM d'une éventuelle TEMP/TDM s'y ajoute ; distinguer **dose absorbée** (µGy, par organe) et **dose efficace** (mSv, corps entier pondéré).",
           "stats": [
             {
               "value": "0,025 mSv/MBq",
@@ -998,7 +998,7 @@
               "label": "Striatum (organe critique CIPR 80)"
             },
             {
-              "value": "85 µGy/MBq",
+              "value": "53,1 µGy/MBq",
               "label": "Paroi vésicale (CIPR 128)"
             }
           ],
@@ -1006,7 +1006,7 @@
             {
               "type": "warning",
               "title": "Précaution - lire la notice avec son référentiel",
-              "text": "Selon la source citée, l'**organe critique change** : paroi vésicale (85 µGy/MBq, CIPR 128, RCP EMA) [13] ou **striatum (230 µGy/MBq, CIPR 80, notice US)** [15][1]. De même la dose efficace passe de **4,63 mSv** (EMA) à **3,94 mSv** (US) pour 185 MBq [13][15]. Toujours préciser le référentiel du chiffre rapporté."
+              "text": "Selon la source citée, la désignation de l'**organe critique change** : au sens de la radioprotection (élimination urinaire), la paroi vésicale (~53,1 µGy/MBq, CIPR 128, RCP EMA) [13] ; mais l'organe recevant la **dose absorbée la plus élevée est le striatum (~230 µGy/MBq)**, sous CIPR 128 comme sous CIPR 80 (notice US) [15][1]. De même la dose efficace passe de **4,63 mSv** (EMA) à **3,94 mSv** (US) pour 185 MBq [13][15]. Toujours préciser le référentiel du chiffre rapporté."
             },
             {
               "type": "tip",
@@ -1173,7 +1173,7 @@
             "**Limite cardinale** : le DaTscan **ne distingue PAS** MP des parkinsonismes atypiques (AMS, PSP, DCB) — tous présynaptiques [10][13].",
             "Performances : MP/parkinsonisme dégénératif **Se 79–100 %, Sp 97–98 %** ; DLB vs MA **Se ~78 %, Sp ~90 %** ; étude pivot Benamer (TE vs parkinsonisme) **Se et Sp > 90 %** [7][9][19][25].",
             "**Utilité clinique** (méta-analyse, 20 études) : modifie la prise en charge dans **54 %** (IC95 47–61) et le diagnostic dans **31 %** (IC95 22–42) des cas [19][20].",
-            "Dosimétrie (CIPR 128, EMA) : organe critique = **paroi vésicale 85 µGy/MBq** ; **dose efficace 25 µSv/MBq → ~4,63 mSv pour 185 MBq** [13][21].",
+            "Dosimétrie (CIPR 128, EMA) : dose absorbée maximale au **striatum (~230 µGy/MBq)** ; organe critique radioprotection = **paroi vésicale ~53,1 µGy/MBq** ; **dose efficace 25 µSv/MBq → ~4,63 mSv pour 185 MBq** [13][21].",
             "Pièges : **SWEDD** (4–15 % de scans normaux en « MP précoce »), DLB **prodromale** initialement normale, déclin physiologique du DAT lié à l'âge, médicaments interférant au DAT (arrêt ≥ 5 demi-vies) [27][28][32].",
             "Repères : un **DAT-SPECT normal = critère d'exclusion absolu de MP** (MDS 2015) [23] ; baisse de fixation DAT = **biomarqueur indicatif** de DLB (McKeith 2017) [8]."
           ],
