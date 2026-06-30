@@ -1,0 +1,1380 @@
+{
+  "id": "V2_MODELE_LNT_FAIBLES_DOSES",
+  "type": "autre",
+  "cat": "radiobiologie",
+  "catLabel": "",
+  "title": "Modèle linéaire sans seuil et risque des faibles doses",
+  "difficulty": "avancé",
+  "tags": [
+    "LNT",
+    "modèle linéaire sans seuil",
+    "faibles doses",
+    "radioprotection",
+    "effets stochastiques",
+    "DDREF",
+    "détriment",
+    "ICRP 103",
+    "ALARA",
+    "dose efficace",
+    "risque de cancer radio-induit",
+    "radiobiologie",
+    "INWORKS",
+    "Life Span Study",
+    "EPI-CT"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "ICRP Publication 103 — The 2007 Recommendations of the International Commission on Radiological Protection (free extract)",
+      "url": "https://www.icrp.org/docs/icrp_publication_103-annals_of_the_icrp_37(2-4)-free_extract.pdf",
+      "verified": true
+    },
+    {
+      "title": "The scientific nature of the linear no-threshold (LNT) model used in the system of radiological protection (Radiat Environ Biophys 2024, PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11588861/",
+      "verified": true
+    },
+    {
+      "title": "Is the Linear No-Threshold Dose-Response Paradigm Still Necessary for the Assessment of Health Effects of Low Dose Radiation? (J Korean Med Sci 2016, PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4756336/",
+      "verified": true
+    },
+    {
+      "title": "Health Risks from Exposure to Low Levels of Ionizing Radiation: BEIR VII Phase 2 — National Academies",
+      "url": "https://www.nationalacademies.org/publications/11340",
+      "verified": true
+    },
+    {
+      "title": "Solid Cancer Incidence among the Life Span Study of Atomic Bomb Survivors: 1958–2009 (Radiat Res, PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10320812/",
+      "verified": true
+    },
+    {
+      "title": "Cancer mortality after low dose exposure to ionising radiation in workers in France, the United Kingdom, and the United States (INWORKS): cohort study (BMJ 2023, PubMed)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37586731/",
+      "verified": true
+    },
+    {
+      "title": "Risk of cancer associated with low-dose radiation exposure: comparison of results between the INWORKS nuclear workers study and the A-bomb survivors study (Radiat Environ Biophys 2021, PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7902587/",
+      "verified": true
+    },
+    {
+      "title": "Brain cancer after radiation exposure from CT examinations of children and young adults: results from the EPI-CT cohort study — Lancet Oncology 2023",
+      "url": "https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(22)00655-6/abstract",
+      "verified": true
+    },
+    {
+      "title": "Radiation exposure from CT scans in childhood and subsequent risk of leukaemia and brain tumours: a retrospective cohort study (Lancet 2012, PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3418594/",
+      "verified": true
+    },
+    {
+      "title": "The Impact of Dose Rate on DNA Double-Strand Break Formation and Repair in Human Lymphocytes Exposed to Fast Neutron Irradiation (Int J Mol Sci 2019, PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6862539/",
+      "verified": true
+    },
+    {
+      "title": "Classification of radiation effects for dose limitation purposes: history, current situation and future prospects — Journal of Radiation Research (Oxford) 2014",
+      "url": "https://academic.oup.com/jrr/article/55/4/629/930449",
+      "verified": true
+    },
+    {
+      "title": "Low doses of ionising radiation: definitions and contexts — J. Radiol. Prot. 2024 (IOPscience)",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6498/ad83dd",
+      "verified": true
+    },
+    {
+      "title": "The scientific basis for the use of the linear no-threshold (LNT) model at low doses and dose rates in radiological protection — J. Radiol. Prot. 2023 (IOPscience)",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6498/acdfd7",
+      "verified": true
+    },
+    {
+      "title": "UNSCEAR 2020/2021 Report Vol. III, Annex C — Biological mechanisms relevant for the inference of cancer risks from low-dose and low-dose-rate radiation",
+      "url": "https://www.unscear.org/unscear/en/news/content/unscear-publishes-2020-2021-report--annex-c.html",
+      "verified": true
+    },
+    {
+      "title": "What is the basis for the ICRP 1 mSv and 20 mSv dose limits? — Health Physics Society Ask the Experts",
+      "url": "https://hps.org/publicinformation/ate/q8900/",
+      "verified": true
+    },
+    {
+      "title": "The new EANM paediatric dosage card — EJNMMI (Springer)",
+      "url": "https://link.springer.com/article/10.1007/s00259-007-0370-0",
+      "verified": true
+    },
+    {
+      "title": "Dosage card — EANM (official resource page)",
+      "url": "https://eanm.org/publications/useful-resources/dosage-card/",
+      "verified": true
+    },
+    {
+      "title": "Standardization of administered activities in paediatric nuclear medicine: the EANM perspective (EJNMMI 2016)",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3474-6",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms — Journal of Nuclear Medicine 2021",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805",
+      "verified": true
+    },
+    {
+      "title": "International Commission on Radiological Protection Report 152 (2022): Radiation Detriment Calculation Methodology (J Med Phys review, PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10277298/",
+      "verified": true
+    },
+    {
+      "title": "Radiation hormesis — Wikipedia (overview of competing dose-response models)",
+      "url": "https://en.wikipedia.org/wiki/Radiation_hormesis",
+      "verified": true
+    },
+    {
+      "title": "The scientific basis for the use of the linear no-threshold (LNT) model in radiological protection (Laurier et al. 2023) — ASNR repository",
+      "url": "https://recherche-expertise.asnr.fr/sites/default/files/2023-07/scientific-basis-use-Linear-No-Threshold-model-radiological-protection.pdf",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 152: Radiation Detriment Calculation Methodology (2022) — ICRP publication page",
+      "url": "https://icrp.org/publication.asp?id=ICRP+Publication+152",
+      "verified": true
+    },
+    {
+      "title": "Impact of updating the non-radiation parameters in the ICRP 103 detriment model (Radiat Environ Biophys 2018, PMC5902532)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5902532/",
+      "verified": true
+    },
+    {
+      "title": "Health Risks from Exposure to Low Levels of Ionizing Radiation: BEIR VII Phase 2 (NAS/NRC, 2006, PDF)",
+      "url": "https://nap.nationalacademies.org/resource/11340/beir_vii_final.pdf",
+      "verified": true
+    },
+    {
+      "title": "Examining temporal effects on cancer risk in the International Nuclear Workers' Study (INWORKS) — Int J Cancer 2017 (PMC5286034)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5286034/",
+      "verified": true
+    },
+    {
+      "title": "Risk of hematological malignancies from CT radiation exposure in children, adolescents and young adults (EPI-CT) — Nature Medicine 2023",
+      "url": "https://www.nature.com/articles/s41591-023-02620-0",
+      "verified": true
+    },
+    {
+      "title": "Risk of hematological malignancies from CT radiation exposure in children, adolescents and young adults (EPI-CT) — PubMed 37946058",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37946058/",
+      "verified": true
+    },
+    {
+      "title": "Atomic Bomb Survivors Life-Span Study: Insufficient Statistical Power to Select Radiation Carcinogenesis Model (Dose Response 2015, PMC4674181)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4674181/",
+      "verified": true
+    },
+    {
+      "title": "NCRP Commentary No. 27 (2018) — Implications of Recent Epidemiologic Studies for the Linear-Nonthreshold Model and Radiation Protection",
+      "url": "https://ncrponline.org/shop/commentaries/commentary-no-27-implications-of-recent-epidemiologic-studies-for-the-linear-nonthreshold-model-and-radiation-protection-2018/",
+      "verified": true
+    },
+    {
+      "title": "A critical evaluation of the NCRP Commentary 27 endorsement of the linear no-threshold model of radiation effects (Ulsh, Environ. Res. 2018)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0013935118304389",
+      "verified": true
+    },
+    {
+      "title": "La relation dose-effet et l'estimation des effets cancérogènes des faibles doses de rayonnements ionisants (Académie de Médecine / Académie des Sciences, Aurengo & Tubiana 2005, PDF)",
+      "url": "https://www.academie-medecine.fr/wp-content/uploads/2013/12/Aurengo-rapport070405.pdf",
+      "verified": true
+    },
+    {
+      "title": "Dose-effect relationship and estimation of the carcinogenic effects of low doses of ionizing radiation — Joint Report of French Academies (Tubiana, IJROBP 2005, PubMed 16168825)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16168825/",
+      "verified": true
+    },
+    {
+      "title": "Why was the AAPM position statement on radiation risk below 50–100 mSv revised? — Health Physics Society Ask the Experts",
+      "url": "https://hps.org/publicinformation/ate/q13191.html",
+      "verified": true
+    },
+    {
+      "title": "AAPM Position Statement on Radiation Risks from Medical Imaging Procedures",
+      "url": "https://www.aapm.org/org/policies/details.asp?id=2548",
+      "verified": true
+    },
+    {
+      "title": "Radiobiological risks in terms of effective dose and organ dose from 18F-FDG whole-body PET/CT procedures (Saudi J Biol Sci 2021, PMC8459160)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8459160/",
+      "verified": true
+    },
+    {
+      "title": "Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy (Toxics 2023, PMC10610792)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10610792/",
+      "verified": true
+    },
+    {
+      "title": "Radiation exposures in pregnancy, health effects and risks to the embryo/foetus — J. Radiol. Prot. 2021 (IOPscience, 10.1088/1361-6498/ac1c95)",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6498/ac1c95",
+      "verified": true
+    },
+    {
+      "title": "Radiation risk from medical imaging — Harvard Health (dose comparisons mSv)",
+      "url": "https://www.health.harvard.edu/cancer/radiation-risk-from-medical-imaging",
+      "verified": true
+    },
+    {
+      "title": "Radiation Dose from X-Ray and CT Exams — RadiologyInfo.org (RSNA/ACR)",
+      "url": "https://www.radiologyinfo.org/en/info/safety-xray",
+      "verified": true
+    },
+    {
+      "title": "Radiation doses — Canadian Nuclear Safety Commission (background dose references)",
+      "url": "https://www.cnsc-ccsn.gc.ca/eng/resources/radiation/radiation-doses/",
+      "verified": true
+    }
+  ],
+  "lead": "Le modèle linéaire sans seuil est la règle de calcul qui sert, en pratique médicale, à estimer le risque lié aux rayonnements utilisés pour le diagnostic et la thérapie. Il pose un principe simple à comprendre pour le clinicien : même une très petite quantité de rayonnement comporte une part de risque, et ce risque grandit à mesure que les expositions s'additionnent au fil de la vie. Ce modèle n'est pas un examen mais un cadre de décision : il justifie pourquoi chaque acte irradiant doit apporter un bénéfice réel au patient et pourquoi l'on cherche toujours à employer la plus faible exposition possible. Il guide ainsi la protection des patients, des enfants, des femmes enceintes et des soignants. Il aide aussi le médecin à remettre le risque en perspective face au bénéfice diagnostique et au rayonnement naturel que nous recevons tous, afin d'éviter autant l'imprudence que la peur excessive.",
+  "identityCard": [
+    {
+      "icon": "radiation",
+      "label": "Nature du modèle",
+      "value": "Relation dose-risque linéaire sans seuil (effets stochastiques)"
+    },
+    {
+      "icon": "target",
+      "label": "Effets concernés",
+      "value": "Cancers radio-induits + effets héréditaires (sans seuil)"
+    },
+    {
+      "icon": "alert",
+      "label": "Effets exclus",
+      "value": "Effets déterministes / réactions tissulaires (à seuil)"
+    },
+    {
+      "icon": "activity",
+      "label": "Domaine faibles doses",
+      "value": "< ~100 mGy (low-LET)"
+    },
+    {
+      "icon": "clock",
+      "label": "Faible débit de dose",
+      "value": "< 0,1 mGy/min (≈ 6 mGy/h)"
+    },
+    {
+      "icon": "zap",
+      "label": "DDREF (ICRP 60/103)",
+      "value": "2 (cancers solides)"
+    },
+    {
+      "icon": "shield",
+      "label": "Détriment cancer (population)",
+      "value": "5,5 %/Sv"
+    },
+    {
+      "icon": "shield",
+      "label": "Détriment total (population)",
+      "value": "~5,7 %/Sv"
+    },
+    {
+      "icon": "stetho",
+      "label": "Détriment travailleurs",
+      "value": "4,1 %/Sv"
+    },
+    {
+      "icon": "list",
+      "label": "Limites de dose",
+      "value": "Travailleurs 20 mSv/an · public 1 mSv/an"
+    },
+    {
+      "icon": "flask",
+      "label": "Référence dosimétrique",
+      "value": "ICRP 103 (w_T) + ICRP 128 (coeff. radiopharma)"
+    },
+    {
+      "icon": "microscope",
+      "label": "Cible biologique",
+      "value": "ADN nucléaire — cassure double-brin"
+    },
+    {
+      "icon": "baby",
+      "label": "Cadre pédiatrique",
+      "value": "Carte de doses EANM (MàJ août 2016)"
+    },
+    {
+      "icon": "droplets",
+      "label": "Bruit de fond naturel",
+      "value": "≈ 2,4 mSv/an (moyenne mondiale)"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "examen",
+      "label": "TEP au ¹⁸F-FDG"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse au ⁹⁹ᵐTc-MDP"
+    },
+    {
+      "type": "examen",
+      "label": "Scanner (TDM) pédiatrique"
+    },
+    {
+      "type": "examen",
+      "label": "Dosimétrie patient en médecine nucléaire"
+    },
+    {
+      "type": "traceur",
+      "label": "¹⁸F-FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc"
+    },
+    {
+      "type": "score",
+      "label": "Dose efficace (mSv)"
+    },
+    {
+      "type": "score",
+      "label": "Détriment radique (ICRP 103)"
+    },
+    {
+      "type": "score",
+      "label": "Coefficient de risque nominal"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer radio-induit"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹³¹I-MIBG (dosimétrie thérapeutique)"
+    },
+    {
+      "type": "examen",
+      "label": "Principe ALARA / optimisation"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Que postule fondamentalement le modèle linéaire sans seuil (LNT) ?",
+      "options": [
+        "Le risque n'apparaît qu'au-delà d'un seuil de dose",
+        "Le risque d'effet stochastique est proportionnel à la dose, sans seuil",
+        "Les faibles doses sont bénéfiques (hormèse)",
+        "Le risque augmente de façon exponentielle avec la dose"
+      ],
+      "answer": 1,
+      "explanation": "Le LNT postule que le risque d'effet stochastique est directement proportionnel à la dose, sans dose-seuil : N petites doses ont le même risque cumulé qu'une dose unique équivalente (linéarité + additivité) [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "À quels effets le modèle LNT s'applique-t-il ?",
+      "options": [
+        "Aux effets déterministes (cataracte, érythème)",
+        "Aux effets stochastiques (cancer, mutations)",
+        "À tous les effets des rayonnements",
+        "Uniquement aux effets héréditaires"
+      ],
+      "answer": 1,
+      "explanation": "Le LNT concerne les effets stochastiques (probabilité ∝ dose, sans seuil). Les effets déterministes / réactions tissulaires ont un seuil et une sévérité ∝ dose ; ils ne relèvent pas du LNT [1,11].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Selon l'UNSCEAR, quel est le seuil habituellement retenu pour définir une « faible dose » (low-LET) ?",
+      "options": [
+        "< 10 mGy",
+        "< 100 mGy",
+        "< 500 mGy",
+        "< 1 Gy"
+      ],
+      "answer": 1,
+      "explanation": "L'UNSCEAR définit une faible dose comme < ~100 mGy (low-LET) et un faible débit de dose comme < 0,1 mGy/min (≈ 6 mGy/h) [12,14].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Que représente le DDREF dans la construction du risque ?",
+      "options": [
+        "Un facteur qui augmente le risque aux faibles doses",
+        "Le facteur d'efficacité dose et débit de dose, valeur 2 pour les cancers solides",
+        "La limite de dose annuelle des travailleurs",
+        "Le coefficient de pondération radiation w_R"
+      ],
+      "answer": 1,
+      "explanation": "Le DDREF (Dose and Dose-Rate Effectiveness Factor) vaut 2 dans l'ICRP 60/103 et divise par 2 le risque extrapolé des fortes doses/débits vers les faibles, pour les cancers solides [1,11].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle cible moléculaire est au cœur du mécanisme invoqué pour justifier l'absence de seuil ?",
+      "options": [
+        "La membrane mitochondriale",
+        "La cassure double-brin de l'ADN",
+        "Le réticulum endoplasmique",
+        "Les protéines de surface"
+      ],
+      "answer": 1,
+      "explanation": "La lésion centrale est la cassure double-brin de l'ADN, la plus délétère. Une seule trace de rayonnement peut en produire une, ce qui rend plausible un risque sans seuil (UNSCEAR 2020/21) [10,14].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est le coefficient de risque nominal de cancer ajusté du détriment pour la population entière (ICRP 103) ?",
+      "options": [
+        "0,55 %/Sv",
+        "5,5 %/Sv",
+        "55 %/Sv",
+        "0,055 %/Sv"
+      ],
+      "answer": 1,
+      "explanation": "L'ICRP 103 retient un coefficient de risque nominal de cancer de 5,5 %/Sv (5,5 ×10⁻² Sv⁻¹) pour la population entière, et 4,1 %/Sv pour les travailleurs adultes [1,11].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Pourquoi le coefficient de risque des travailleurs (4,1 %/Sv) est-il inférieur à celui de la population (5,5 %/Sv) ?",
+      "options": [
+        "Les travailleurs reçoivent des doses plus faibles",
+        "La population de travailleurs ne comprend pas d'enfants, plus radiosensibles",
+        "Les travailleurs portent une protection",
+        "Le DDREF n'est appliqué qu'aux travailleurs"
+      ],
+      "answer": 1,
+      "explanation": "L'écart tient à l'absence d'enfants chez les travailleurs adultes : l'enfant, plus radiosensible et à espérance de vie résiduelle longue, relève un risque par unité de dose plus élevé [1,4].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Dans la Life Span Study (survivants d'Hiroshima/Nagasaki), quelle est la plus basse plage de dose montrant une réponse significative pour les cancers solides ?",
+      "options": [
+        "0–10 mGy",
+        "0–100 mGy (p = 0,038)",
+        "0–500 mGy",
+        "0–1000 mGy"
+      ],
+      "answer": 1,
+      "explanation": "L'incidence des cancers solides 1958–2009 montre une réponse-dose significative dès la plage 0–100 mGy (p = 0,038), argument fort en faveur de la linéarité aux faibles doses [5].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Que montre la mise à jour 2023 de l'étude INWORKS sur les travailleurs du nucléaire ?",
+      "options": [
+        "Aucun excès de cancer aux faibles doses",
+        "Un excès de mortalité par cancer solide de +52 %/Gy",
+        "Un effet protecteur des faibles doses",
+        "Un excès uniquement au-dessus de 1 Gy"
+      ],
+      "answer": 1,
+      "explanation": "INWORKS 2023 (309 932 travailleurs) montre un excès de mortalité par cancer solide de +52 %/Gy (IC90 27–77 %), avec une association qui persiste dans la tranche 0–100 mGy, confirmant la linéarité aux très faibles doses [6,7].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Dans la cohorte EPI-CT (scanner pédiatrique), quelle relation est observée pour le cancer cérébral ?",
+      "options": [
+        "Aucune relation dose-effet",
+        "Une relation linéaire significative, ERR/100 mGy ≈ 1,27",
+        "Un seuil net à 50 mGy",
+        "Une relation décroissante"
+      ],
+      "answer": 1,
+      "explanation": "EPI-CT (~948 000 sujets scannés avant 22 ans) met en évidence une relation linéaire significative pour le cancer cérébral, avec un ERR/100 mGy d'environ 1,27 [8].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la limite officielle de l'ICRP 103 concernant l'usage du LNT pour la dose collective ?",
+      "options": [
+        "Le LNT doit toujours servir à compter les cancers d'une population",
+        "Le LNT ne doit PAS servir à calculer un nombre de cancers en agrégeant de très faibles doses sur de larges populations",
+        "Le LNT remplace les seuils déterministes",
+        "Le LNT s'applique aussi au haut-LET pour le DDREF"
+      ],
+      "answer": 1,
+      "explanation": "L'ICRP 103 déconseille d'utiliser la dose collective pour estimer un nombre de « cancers excédentaires » par agrégation de très faibles doses sur de longues périodes : les incertitudes sont trop grandes [1].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel coefficient de dose efficace est retenu pour le ¹⁸F-FDG (ICRP 128) ?",
+      "options": [
+        "0,0019 mSv/MBq",
+        "0,019 mSv/MBq",
+        "0,19 mSv/MBq",
+        "1,9 mSv/MBq"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁸F-FDG a un coefficient de 0,019 mSv/MBq (ICRP 128) ; les fantômes maillés ICRP récents donnent ~0,017 mSv/MBq, soit environ −10 % [19].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Comment passe-t-on de la dose délivrée par un radiopharmaceutique à une estimation de risque via le LNT ?",
+      "options": [
+        "Risque = dose absorbée organe × DDREF",
+        "Risque = dose efficace (mSv) × coefficient de détriment (~5,5 %/Sv)",
+        "Risque = activité injectée × période physique",
+        "Risque = dose équivalente × w_R"
+      ],
+      "answer": 1,
+      "explanation": "La dose efficace (mSv) = Σ dose organe × w_T ; le risque s'obtient en la multipliant par le coefficient de risque nominal du LNT (~5,5 %/Sv pour la population) [1,11].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelles sont les limites de dose annuelles (ICRP 103) pour les travailleurs et le public ?",
+      "options": [
+        "50 et 5 mSv/an",
+        "20 et 1 mSv/an",
+        "100 et 10 mSv/an",
+        "5 et 0,1 mSv/an"
+      ],
+      "answer": 1,
+      "explanation": "Travailleurs : 20 mSv/an (moyenné sur 5 ans, ≤ 50 mSv une année donnée) ; public : 1 mSv/an. Ces limites ne s'appliquent pas au patient exposé pour son propre bénéfice [1,15].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel est le bruit de fond naturel mondial moyen, utile pour relativiser le risque face au patient ?",
+      "options": [
+        "≈ 0,24 mSv/an",
+        "≈ 2,4 mSv/an",
+        "≈ 24 mSv/an",
+        "≈ 0,024 mSv/an"
+      ],
+      "answer": 1,
+      "explanation": "Le bruit de fond naturel mondial moyen est d'environ 2,4 mSv/an (UNSCEAR). Un TEP-FDG corps entier (~7 mSv) équivaut ainsi à ~3 ans de fond naturel — un repère contre la radiophobie [14,41].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est l'objectif de la carte de doses pédiatriques de l'EANM, directement issu de la logique LNT ?",
+      "options": [
+        "Délivrer une activité fixe quel que soit le poids",
+        "Obtenir la même dose efficace quelle que soit la taille de l'enfant, en pondérant l'activité par le poids",
+        "Doubler l'activité chez le grand enfant",
+        "Supprimer toute imagerie chez l'enfant"
+      ],
+      "answer": 1,
+      "explanation": "La carte de doses EANM (MàJ août 2016) pondère l'activité par le poids avec une activité minimale, visant la même dose efficace quelle que soit la taille — minimiser le risque linéaire chez le sujet le plus radiosensible [16,17,18].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi le LNT reste-t-il qualifié de « prudentiel et opérationnel » plutôt que de certitude scientifique aux très faibles doses ?",
+      "options": [
+        "Parce qu'il surestime toujours le risque",
+        "Parce qu'aux doses < 100 mGy la linéarité est soutenue mais non prouvée, et les études ne discriminent pas formellement LNT/seuil/hormèse",
+        "Parce qu'il est rejeté par l'ICRP",
+        "Parce qu'il ne repose sur aucune donnée"
+      ],
+      "answer": 1,
+      "explanation": "La preuve est forte > 100 mGy, mais sous ce niveau la linéarité est soutenue sans être prouvée ; la puissance statistique est insuffisante pour discriminer les modèles. Le LNT est donc retenu comme la meilleure approche pratique de gestion du risque [2,4,29].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel phénomène biologique plaide pour une SUR-estimation du risque par le LNT (effet protecteur des faibles débits) ?",
+      "options": [
+        "L'effet bystander",
+        "La réponse adaptative et la réparation efficace des cassures à faible débit",
+        "L'hypersensibilité aux faibles doses (HRS)",
+        "La supralinéarité"
+      ],
+      "answer": 1,
+      "explanation": "La réponse adaptative, la réparation efficace des cassures double-brin à faible débit et l'apoptose des cellules lésées soutiennent une éventuelle surestimation par le LNT (arguments pro-seuil/hormèse). À l'inverse, effet bystander et HRS plaident pour une sous-estimation [3,21].",
+      "difficulty": "difficile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "Le LNT postule un risque d'effet stochastique (cancer, effets héréditaires) proportionnel à la dose, sans seuil et additif : N petites doses = une dose unique équivalente [1].",
+      "Il s'applique aux effets stochastiques uniquement ; les effets déterministes (cataracte, érythème, fibrose) ont un seuil et n'en relèvent pas [1,11].",
+      "Domaine des faibles doses = < ~100 mGy (low-LET) ; faible débit < 0,1 mGy/min (≈ 6 mGy/h) [12,14].",
+      "Coefficients ICRP 103 : détriment cancer 5,5 %/Sv (population) et 4,1 %/Sv (travailleurs) ; détriment total ~5,7 %/Sv ; DDREF = 2 pour les cancers solides [1,11].",
+      "En pratique nucléaire : risque ≈ dose efficace (mSv) × 5,5 %/Sv ; dose efficace = Σ dose organe × w_T (ICRP 103) avec coefficients par MBq de l'ICRP 128 [1,19].",
+      "Données pivots de linéarité aux faibles doses : LSS significative dès 0–100 mGy (p=0,038) [5] ; INWORKS +52 %/Gy [6] ; EPI-CT cerveau ERR/100 mGy ≈ 1,27 [8].",
+      "Limite majeure ICRP 103 : ne pas utiliser la dose collective pour compter des cancers en agrégeant de très faibles doses sur de larges populations [1].",
+      "Le LNT fonde les 3 principes de radioprotection : justification, optimisation (ALARA), limitation des doses [1,15]."
+    ],
+    "protocol": [
+      "Justification : tout acte irradiant doit apporter un bénéfice net supérieur au détriment ; sans justification, pas d'irradiation [1].",
+      "Optimisation / ALARA : activité minimale efficace, hydratation et mictions post-FDG, adaptation pédiatrique (carte EANM) [1,17].",
+      "Limitation (hors patient) : travailleurs 20 mSv/an (moyenné sur 5 ans, ≤ 50 mSv/an), public 1 mSv/an [1,15].",
+      "Pédiatrie : carte de doses EANM (MàJ août 2016) pondérée par le poids, même dose efficace quelle que soit la taille [16,18].",
+      "Grossesse / allaitement : précautions renforcées car embryon/nourrisson très radiosensibles — application stricte du LNT [38].",
+      "Communication : remettre le risque en regard du bénéfice diagnostique et du bruit de fond naturel (~2,4 mSv/an) pour éviter la radiophobie [14,39]."
+    ],
+    "scores": [
+      "Coefficient de risque nominal cancer : 5,5 %/Sv (population) · 4,1 %/Sv (travailleurs) — ICRP 103 [1].",
+      "Détriment total population : ~5,7 %/Sv (réductible à ~5 %/Sv avec paramètres actualisés) [1,24].",
+      "DDREF = 2 (cancers solides) ; leucémie en modèle linéaire-quadratique sans DDREF supplémentaire [1,25].",
+      "ERR cancers solides : LSS femme 0,64/Gy (IC95 0,52–0,77) ; INWORKS ≈ 0,29/Gy et +52 %/Gy en mortalité [5,6].",
+      "BEIR VII : ≈ 1 cancer pour 100 personnes exposées à 100 mSv (low-LET) [4,25].",
+      "Coefficients de dose : ¹⁸F-FDG 0,019 mSv/MBq ; ⁹⁹ᵐTc-MDP ≈ 0,005 mSv/MBq (ICRP 128) [19,37]."
+    ],
+    "pitfalls": [
+      "Confondre effets stochastiques (sans seuil, LNT) et déterministes (à seuil) : ne jamais appliquer le LNT à la cataracte ou à l'érythème [11].",
+      "Utiliser la dose collective pour annoncer un nombre de cancers : usage explicitement déconseillé par l'ICRP 103 (incertitudes majeures) [1].",
+      "Appliquer le DDREF au haut-LET : non applicable ; le DDREF ne vaut que pour le low-LET [1].",
+      "Présenter le LNT comme une certitude < 100 mGy : la linéarité y est soutenue mais non prouvée ; HPS et AAPM déconseillent de chiffrer un risque individuel sous 50–100 mSv [34,35].",
+      "Oublier la radiosensibilité accrue de l'enfant : risque par unité de dose plus élevé → précautions pédiatriques renforcées [4].",
+      "Provoquer une radiophobie en omettant le repère du bruit de fond naturel (~2,4 mSv/an) et du bénéfice diagnostique, conduisant au refus d'examens justifiés [14,39]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert ce principe de prudence",
+        "text": "Le « modèle linéaire sans seuil » est une règle de précaution que les médecins utilisent pour encadrer les examens et les traitements faisant appel aux rayonnements. L'idée est simple : par prudence, on considère qu'il vaut mieux recevoir le moins de rayonnement possible, même quand la quantité est très faible. Ce principe sert avant tout à votre sécurité. C'est lui qui explique pourquoi un examen n'est proposé que lorsqu'il apporte un vrai bénéfice pour votre santé, et pourquoi l'équipe cherche toujours à utiliser la plus petite dose possible. Vous n'avez rien à calculer ni à surveiller : tout ce travail de protection est fait en amont par les professionnels.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Une règle au service de votre protection",
+            "text": "Ce principe de prudence est à la base de toutes les précautions prises autour des examens. Il guide les choix de l'équipe pour que chaque examen reste utile et le plus sûr possible, sans que vous ayez à vous en préoccuper."
+          }
+        ]
+      },
+      {
+        "title": "Faut-il s'inquiéter des examens d'imagerie ?",
+        "text": "Pour un examen d'imagerie courant, la quantité de rayonnement reçue est faible et il n'y a pas d'effet visible attendu sur votre corps. Le principe de prudence invite simplement à ne pas multiplier les examens inutiles et à toujours préférer, quand c'est possible, l'option la moins irradiante. Il est utile de mettre les choses en perspective : nous sommes tous exposés en permanence à un rayonnement naturel, présent dans l'air, le sol et les aliments. Les doses d'un examen d'imagerie restent dans le même ordre de grandeur que ce que l'on reçoit naturellement sur une période courte de la vie quotidienne.",
+        "list": [
+          "Un examen n'est proposé que s'il apporte un bénéfice réel pour votre prise en charge.",
+          "L'équipe adapte toujours la quantité de rayonnement à votre situation personnelle.",
+          "Le but est d'obtenir une image fiable avec la plus petite dose possible.",
+          "Il n'y a aucun geste de surveillance à faire de votre côté."
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "À retenir, sereinement",
+            "text": "Refuser un examen utile par crainte du rayonnement peut être plus risqué que l'examen lui-même, car on se prive d'un diagnostic important. Le bon réflexe est d'en parler avec votre médecin, qui met toujours le bénéfice et la prudence en balance."
+          }
+        ]
+      },
+      {
+        "title": "Les précautions adaptées à chaque personne",
+        "text": "Certaines personnes sont plus sensibles aux rayonnements, et l'équipe en tient compte. C'est le cas des enfants, dont le corps est en pleine croissance, et de la femme enceinte ou qui allaite. Dans ces situations, la conduite est adaptée : la dose est réduite, l'examen peut être reporté, ou une autre solution sans rayonnement est privilégiée. Le message le plus important est de toujours signaler une grossesse possible ou un allaitement avant un examen : cela permet à l'équipe de choisir la solution la plus sûre pour vous et votre enfant.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "À signaler systématiquement",
+            "text": "Prévenez l'équipe si vous êtes enceinte, pensez l'être, ou si vous allaitez, et mentionnez les examens d'imagerie récents. Ces informations changent les précautions prises et n'entraînent jamais de jugement : elles servent uniquement votre protection."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand ce principe entre en jeu dans votre pratique",
+        "text": "Le modèle linéaire sans seuil (LNT) est le cadre de référence que la radioprotection applique aux faibles doses de l'imagerie. Il postule que le risque d'effet à long terme (cancers radio-induits) est proportionnel à la dose, sans seuil en dessous duquel ce risque serait nul. Concrètement, ce principe sous-tend chacune de vos prescriptions d'examens irradiants (scanner, radiographie, médecine nucléaire) et explique pourquoi on ne raisonne pas en « dose sans danger », mais en « dose justifiée et optimisée ». Il ne concerne que les effets dits stochastiques (probabilité croissante avec la dose) ; les effets à seuil, eux, ne surviennent qu'aux doses élevées de certaines thérapies, jamais en imagerie diagnostique.",
+        "list": [
+          "Il s'applique aux faibles doses, c'est-à-dire au domaine de tous les examens d'imagerie diagnostique.",
+          "Le risque individuel reste très faible mais n'est, par prudence, jamais considéré comme strictement nul.",
+          "Il prend toute son importance chez les sujets les plus sensibles : enfant et embryon.",
+          "Il ne sert pas à effrayer le patient, mais à éviter les examens inutiles et les redondances."
+        ]
+      },
+      {
+        "title": "Démarche pratique de prescription",
+        "text": "Le LNT se traduit par deux principes opérationnels à garder en tête à chaque demande. La justification : le bénéfice diagnostique attendu doit dépasser le risque, ce qui suppose une indication bien posée et l'absence d'examen redondant récent. L'optimisation (principe ALARA, dose aussi basse que raisonnablement possible) : à indication équivalente, on privilégie l'examen le moins irradiant ou une alternative non ionisante (échographie, IRM), particulièrement chez l'enfant et la femme en âge de procréer. La sensibilité accrue de l'enfant et de l'embryon justifie une vigilance renforcée, et toute grossesse possible doit être signalée pour adapter la conduite.",
+        "steps": [
+          {
+            "title": "Justifier l'indication",
+            "text": "Vérifier que l'examen modifiera la prise en charge et qu'aucun examen équivalent récent n'est déjà disponible."
+          },
+          {
+            "title": "Optimiser le choix",
+            "text": "À information diagnostique comparable, préférer la modalité la moins irradiante, voire non ionisante (IRM, échographie)."
+          },
+          {
+            "title": "Adapter au terrain",
+            "text": "Renforcer la prudence chez l'enfant et la femme enceinte ; rechercher et signaler une grossesse possible avant tout examen irradiant."
+          },
+          {
+            "title": "Transmettre l'information",
+            "text": "Mentionner dans la demande les examens irradiants récents et le contexte (grossesse, allaitement) pour permettre l'ajustement."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Réflexes utiles",
+            "text": "Une dose se cumule : multiplier les examens irradiants augmente le risque global selon le même principe linéaire. Limiter les redondances et tracer les examens antérieurs sont les leviers les plus simples pour respecter l'optimisation."
+          }
+        ]
+      },
+      {
+        "title": "Apport de la médecine nucléaire",
+        "text": "En imagerie nucléaire diagnostique, les doses délivrées relèvent du domaine des faibles doses : l'enjeu est l'optimisation des activités injectées, et non la crainte d'une lésion. Le service de médecine nucléaire applique systématiquement le LNT en adaptant l'activité au poids, en recourant aux référentiels pédiatriques dédiés pour délivrer la plus faible dose compatible avec une image fiable, et en optimisant la préparation du patient. En thérapie par radionucléides, ce même principe fonde une dosimétrie qui cible la tumeur tout en respectant les organes sensibles. Adresser au nucléariste, c'est donc bénéficier d'examens fonctionnels optimisés et d'un cadre de radioprotection rigoureux, particulièrement précieux dans les situations complexes ou chez les sujets sensibles.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez en médecine nucléaire pour des examens fonctionnels à faible dose, justifiés et optimisés selon le principe linéaire sans seuil. Le service choisit l'examen le plus pertinent, adapte l'activité au terrain (enfant, grossesse, allaitement, fonction rénale) et fournit les consignes de radioprotection et le suivi. En cas de doute sur l'indication, la dose cumulée d'un patient déjà multi-examiné, ou la conduite à tenir chez une patiente enceinte ou allaitante, un avis du nucléariste oriente vers la stratégie la plus sûre et la plus utile, en évitant aussi bien le sous-diagnostic que la sur-irradiation."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - A1 - Carte d'identité du modèle linéaire sans seuil (LNT)",
+        "text": "**Comment lire cette carte.** Le **modèle linéaire sans seuil** (LNT, *Linear No-Threshold*) n'est pas un examen ni un radiopharmaceutique : c'est le **modèle dose-réponse** qui sous-tend toute l'estimation du **risque stochastique** (cancer radio-induit, effets héréditaires) en médecine nucléaire, en radiologie et en radioprotection. Il postule que ce risque est **directement proportionnel à la dose**, **sans dose-seuil** en deçà de laquelle il serait nul, et que les doses fractionnées **s'additionnent** (linéarité + additivité). C'est l'ossature scientifique des trois principes de la radioprotection (justification, optimisation/ALARA, limitation) et de toute conversion d'une **dose efficace** (mSv) en probabilité de cancer.\n\nLe LNT est retenu par la **Commission internationale de protection radiologique** (CIPR, en anglais ICRP) comme « la meilleure approche pratique pour gérer le risque » aux faibles doses, dans ses recommandations générales de 2007 (**Publication 103**).[1] La CIPR souligne qu'il ne s'agit **pas d'une simple hypothèse arbitraire** mais d'une extrapolation appuyée à la fois sur la biologie moléculaire et sur l'épidémiologie.[13] Il s'applique **exclusivement aux effets stochastiques** ; les **effets déterministes** (réactions tissulaires : cataracte, érythème, fibrose), qui ont eux un **seuil** et une sévérité croissante avec la dose, relèvent d'un autre cadre.[11]\n\n| Élément | Valeur / cadre | Source |\n|---|---|---|\n| Nature | Modèle dose-réponse du risque **stochastique** (cancer, effets héréditaires) | [1] |\n| Forme | Risque excédentaire = **β × D** (linéaire, ordonnée à l'origine nulle) | [1] |\n| Domaine | **Faibles doses** (TLE bas) et faibles débits | [12,14] |\n| Référentiel réglementaire | CIPR **Publication 103** (2007) | [1] |\n| Facteur correctif | **DDREF = 2** (cancers solides) | [1] |\n| Détriment ajusté (population) | **5,5 ×10⁻² Sv⁻¹** (5,5 %/Sv) | [1] |\n| N'inclut PAS | Effets **déterministes** (seuil) ; haut-TLE pour le DDREF | [11] |\n| Soutien institutionnel | CIPR, UNSCEAR, NCRP, BEIR VII | [1,4,14,30] |\n\nLe terme **TLE** (transfert linéique d'énergie, en anglais LET) désigne l'énergie déposée par unité de longueur de trajectoire : les rayonnements **à TLE bas** (photons γ, rayons X, électrons — soit l'essentiel de l'imagerie diagnostique et de la médecine nucléaire) sont précisément le domaine du LNT.[12] Le **DDREF** (*Dose and Dose-Rate Effectiveness Factor*, facteur d'efficacité dose et débit de dose) est un coefficient — fixé à **2** par la CIPR pour les cancers solides — qui divise par deux le risque extrapolé depuis les fortes doses/débits (cohortes des survivants des bombes) vers les faibles doses chroniques.[1]",
+        "stats": [
+          {
+            "value": "5,5 %/Sv",
+            "label": "Détriment cancer (population, CIPR 103)"
+          },
+          {
+            "value": "DDREF = 2",
+            "label": "Correction fortes → faibles doses"
+          },
+          {
+            "value": "Sans seuil",
+            "label": "Postulat central du modèle"
+          },
+          {
+            "value": "CIPR 103",
+            "label": "Référentiel réglementaire (2007)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert — stochastique vs déterministe",
+            "text": "Le LNT régit les seuls effets **stochastiques** : la **probabilité** d'un cancer ou d'une mutation croît avec la dose, mais la **gravité de l'événement, lui, ne dépend pas de la dose** (un cancer radio-induit n'est pas « plus grave » à plus forte dose). À l'inverse, les **effets déterministes** (réactions tissulaires) ont un **seuil** franc et une **sévérité proportionnelle** à la dose au-delà du seuil. Confondre les deux est l'erreur conceptuelle la plus fréquente : on n'applique jamais le LNT à une cataracte radique."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — un outil de gestion, pas un compteur de morts",
+            "text": "La CIPR rappelle que le LNT est **prudentiel et opérationnel** : il sert à fixer des limites et à optimiser, **pas** à établir une causalité individuelle ni à calculer un nombre de cancers en multipliant une dose collective par une population (cf. A2 et les limites détaillées du modèle).[1] Aucune des grandes instances (CIPR, UNSCEAR, NCRP, BEIR) n'emploie le LNT à cette fin."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Temps, distance, écran : les trois leviers de réduction de dose (ALARA), corollaire opérationnel direct de l'hypothèse linéaire sans seuil — toute dose évitée réduit proportionnellement le risque."
+      },
+      {
+        "title": "A2 - A2 - Qu'est-ce qu'une « faible dose » ? Définitions, grandeurs et ordres de grandeur",
+        "text": "La pertinence du LNT se joue dans la **région des faibles doses** : c'est là que les données épidémiologiques deviennent imprécises et que l'extrapolation linéaire cesse d'être une mesure pour devenir une **hypothèse**. Il faut donc des définitions métrologiques rigoureuses.\n\n**Faible dose et faible débit.** Le **Comité scientifique des Nations Unies pour l'étude des effets des rayonnements ionisants** (UNSCEAR) définit une **faible dose comme ≤ 100 mGy** (TLE bas), et un **faible débit de dose comme ≤ 0,1 mGy/min** — soit environ **6 mGy/h**, moyenné sur ~1 h.[14] En deçà de **~10 mGy**, on parle de très faibles doses, domaine où aucune cohorte n'a la puissance statistique de trancher entre les modèles concurrents.[12,29] Une particularité du haut-TLE : la « faible dose » s'y définit plutôt comme **≤ 1 traversée de trace par cellule**.[14]\n\n**Les trois grandeurs à ne pas confondre.** La chaîne dosimétrique va de la physique pure au risque :\n\n| Grandeur | Unité (SI) | Définition | Usage |\n|---|---|---|---|\n| **Dose absorbée** (D) | gray (**Gy** = J/kg) | Énergie déposée par unité de masse | Physique, dose à l'organe |\n| **Dose équivalente** (H_T) | sievert (**Sv**) | D × **w_R** (facteur de pondération du rayonnement) | Pondère le type de rayonnement |\n| **Dose efficace** (E) | sievert (**Sv**) | Σ (H_T × **w_T**) sur tous les organes | Risque stochastique global du corps |\n\nLe **w_R** (facteur de pondération radiologique) vaut **1** pour les photons et électrons, **20** pour les particules α ; le **w_T** (facteur de pondération tissulaire) répartit la sensibilité entre organes (cf. A3) et a été révisé dans la **CIPR 103**.[1] C'est la **dose efficace**, exprimée en mSv, qui est ensuite convertie en risque par le coefficient du LNT (5,5 %/Sv, cf. A1).[1]\n\n**Ordres de grandeur — l'échelle de référence du clinicien.** Pour situer une faible dose, le repère le plus parlant est le **bruit de fond naturel** : en moyenne mondiale **≈ 2,4 mSv/an** (UNSCEAR), avec de fortes variations géographiques (≈ 3,1 mSv/an aux États-Unis).[14,41]\n\n| Source | Dose efficace typique | Équivalent fond naturel |\n|---|---|---|\n| Radiographie thoracique | **≈ 0,02 mSv** | ~3 jours | \n| Scintigraphie osseuse (600 MBq ⁹⁹ᵐTc-MDP) | **≈ 3 mSv** | ~15 mois |\n| TEP-FDG corps entier (~7 mSv) | **≈ 7 mSv** | ~3 ans |\n| TDM thoraco-abdomino-pelvienne | **≈ 8–10 mSv** | ~3–4 ans |\n| Limite annuelle public | **1 mSv/an** | < 1 an de fond |\n| Limite annuelle travailleur | **20 mSv/an** | ~8 ans de fond |\n\nSources de ces ordres de grandeur : Harvard Health et RadiologyInfo pour l'imagerie [39,40] ; ⁹⁹ᵐTc-MDP [37] ; ¹⁸F-FDG = **0,019 mSv/MBq** (CIPR 128) [19] ; limites réglementaires CIPR 103 [1,15] ; fond naturel UNSCEAR/CNSC [14,41]. La plupart des examens de médecine nucléaire délivrent donc une dose **de l'ordre de quelques mSv**, c'est-à-dire pleinement dans la **région des faibles doses** où le LNT, et non l'observation directe, gouverne l'estimation du risque.",
+        "stats": [
+          {
+            "value": "≤ 100 mGy",
+            "label": "Définition « faible dose » (UNSCEAR)"
+          },
+          {
+            "value": "≤ 0,1 mGy/min",
+            "label": "Faible débit de dose (≈ 6 mGy/h)"
+          },
+          {
+            "value": "≈ 2,4 mSv/an",
+            "label": "Bruit de fond naturel mondial"
+          },
+          {
+            "value": "≈ 7 mSv",
+            "label": "TEP-FDG corps entier (≈ 3 ans de fond)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert — dose absorbée ≠ dose efficace",
+            "text": "La **dose absorbée** (Gy) est une grandeur physique mesurable, propre à un organe ; la **dose efficace** (Sv) est une grandeur **calculée et conventionnelle** de radioprotection, conçue pour comparer le risque stochastique global de protocoles hétérogènes. Elle n'a de sens qu'aux faibles doses et **ne s'applique pas** à un individu pour prédire son cancer : c'est un outil de population. Confondre Gy et Sv (numériquement égaux pour les photons puisque w_R = 1) masque cette différence de nature.[1]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la zone aveugle sous 10–50 mGy",
+            "text": "Entre ~10 et ~50 mGy, les intervalles de confiance des cohortes sont si larges qu'**aucune étude ne peut distinguer statistiquement** le LNT d'un modèle à seuil ou d'une hormèse.[29] Le LNT y est appliqué **par défaut de prudence**, non par démonstration. Le présenter au patient comme un risque « prouvé » est aussi inexact que le nier."
+          }
+        ]
+      },
+      {
+        "title": "A3 - A3 - Le socle biologique : de la lésion de l'ADN à la cancérogenèse stochastique",
+        "text": "La plausibilité du LNT repose sur une chaîne mécaniste : un dépôt d'énergie → une lésion de l'ADN → une mutation persistante → une cellule transformée → un cancer. Comprendre cette chaîne, c'est comprendre **pourquoi un seuil est biologiquement difficile à postuler**.\n\n**La cible moléculaire centrale : la cassure double-brin de l'ADN.** Le rayonnement ionisant lèse l'ADN directement (ionisation du sucre-phosphate) ou indirectement (radicaux libres issus de la radiolyse de l'eau). La lésion la plus délétère est la **cassure double-brin** (CDB ; en anglais DSB, *double-strand break*), car elle sectionne les deux brins en regard et se répare mal, source d'aberrations chromosomiques et de mutations.[10] Le **marqueur de référence de la CDB** est le foyer **γ-H2AX** (histone H2AX phosphorylée), visualisable en immunofluorescence.[10]\n\n**L'argument clé pro-LNT : une seule trace suffit.** L'UNSCEAR (Annexe C, rapport 2020/2021) conclut qu'il subsiste « une bonne justification à l'usage d'un modèle sans seuil pour l'inférence du risque », pour deux raisons convergentes : (1) le **passage d'une seule trace de rayonnement peut produire une CDB**, donc il n'existe pas de dose en dessous de laquelle aucune lésion initiatrice n'est possible ; (2) la **connaissance robuste du rôle des mutations et aberrations chromosomiques** dans la cancérogenèse rend plausible un risque non nul dès la plus faible dose.[14] C'est le cœur biologique du modèle : si la dose-seuil existait, elle **ne pourrait excéder quelques dizaines de mGy**.[2]\n\n**La loi de radiosensibilité tissulaire (Bergonié-Tribondeau).** Tous les tissus ne sont pas égaux : les tissus à **fort renouvellement et peu différenciés** sont les plus radiosensibles, ce que traduisent les **facteurs de pondération tissulaire w_T** de la CIPR 103.[1]\n\n| Tissu / organe | w_T (CIPR 103) | Sensibilité |\n|---|---|---|\n| Moelle osseuse rouge, côlon, poumon, estomac, **sein** | **0,12** chacun | La plus élevée |\n| Gonades | 0,08 | Élevée (effets héréditaires) |\n| Thyroïde, œsophage, vessie, foie | 0,04 | Intermédiaire |\n| Surface osseuse, peau, cerveau, glandes salivaires | 0,01 | Plus faible |\n\nLa **Life Span Study** (LSS) des survivants d'Hiroshima/Nagasaki confirme un **excès de risque relatif** (ERR) significatif par Gy pour **9 des 17 sites** étudiés : sein, cerveau/SNC, côlon, vessie, prostate, foie, poumon, thyroïde et estomac.[5] L'enfant ajoute deux facteurs aggravants : des **tissus en croissance** plus radiosensibles et une **espérance de vie résiduelle longue** laissant le temps au cancer de s'exprimer — d'où le risque par unité de dose majoré et les précautions pédiatriques renforcées.[4]\n\n**Les phénomènes qui compliquent la stricte linéarité.** Aux très faibles doses, la biologie n'est pas purement linéaire ; deux familles d'effets s'opposent :\n\n| Sens | Phénomène | Effet sur le risque vs LNT |\n|---|---|---|\n| Vers le **supralinéaire** | Effet **bystander** (cellules non irradiées affectées), hypersensibilité aux faibles doses (HRS) | Risque potentiellement **sous-estimé** par le LNT |\n| Vers le **seuil / l'hormèse** | Réponse adaptative, réparation efficace des CDB à faible débit, apoptose des cellules lésées | Risque potentiellement **surestimé** par le LNT |\n\nCes mécanismes opposés [2,3,21] justifient à la fois le maintien prudent du LNT (on ne peut exclure une sous-estimation) et le débat scientifique persistant (cf. A4 pour la genèse historique de ce débat).",
+        "stats": [
+          {
+            "value": "1 trace = 1 CDB",
+            "label": "Base mécaniste du « sans seuil »"
+          },
+          {
+            "value": "w_T = 0,12",
+            "label": "Tissus les plus sensibles (sein, côlon, poumon…)"
+          },
+          {
+            "value": "9 / 17 sites",
+            "label": "ERR significatif par Gy (LSS)"
+          },
+          {
+            "value": "γ-H2AX",
+            "label": "Marqueur de la cassure double-brin"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le DDREF a un substrat biologique mesurable",
+            "text": "Le DDREF = 2 (cf. A1) n'est pas un simple ajustement statistique : il a une contrepartie cellulaire. La formation de foyers γ-H2AX est **~40 % plus élevée à fort débit qu'à faible débit** de dose, car un débit lent laisse à la cellule le temps de réparer ses CDB entre deux événements.[10] La protection conférée par le fractionnement et le faible débit est donc **observable au microscope**, ce qui ancre le DDREF dans la radiobiologie."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — effet bystander et hormèse pointent en sens contraires",
+            "text": "On invoque parfois l'**hormèse** (effet bénéfique des faibles doses) pour réfuter le LNT. Mais l'effet **bystander** et l'hypersensibilité aux faibles doses (HRS) tirent au contraire vers une **sous-estimation** du risque par le LNT.[2] La région des faibles doses est donc le théâtre de mécanismes antagonistes non résolus : aucun argument biologique isolé ne suffit à valider ou invalider la linéarité."
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Types de désintégration et de rayonnements ionisants (α, β, γ) : leur dépôt d'énergie dans le tissu initie la cassure double-brin de l'ADN, lésion fondatrice de la cancérogenèse stochastique sous-tendant le modèle LNT."
+      },
+      {
+        "title": "A4 - A4 - Genèse historique du modèle : de Muller aux mutations, à la CIPR et au paradigme LNT",
+        "text": "Le LNT n'est pas né d'un décret : il est l'aboutissement d'un siècle de génétique, d'épidémiologie et de décisions institutionnelles. Cette généalogie éclaire pourquoi il est aujourd'hui un **paradigme réglementaire** contesté sur ses marges mais maintenu sur son principe.\n\n**Les fondations génétiques.** L'idée d'un effet mutagène sans seuil prend racine dans la démonstration que le rayonnement **induit des mutations** héréditaires de façon dose-dépendante. Cette intuition mutationnelle — le rayonnement agit en altérant le matériel génétique, événement par nature probabiliste — fournit le socle conceptuel : si une seule altération de l'ADN peut initier une lignée cellulaire transformée, alors **aucune dose n'est par principe inoffensive**. C'est précisément l'argument que l'UNSCEAR réactualise aujourd'hui avec la biologie des CDB (cf. A3).[14]\n\n**La cohorte pivot : les survivants des bombes atomiques.** La relation dose-réponse a été établie sur la **Life Span Study** (LSS) d'Hiroshima et Nagasaki, suivie depuis 1958. C'est l'épine dorsale empirique du LNT.[5]\n\n**Frise des recommandations clés :**\n\n| Année | Étape | Apport |\n|---|---|---|\n| **2005** | Rapport conjoint Académies françaises (Tubiana, Aurengo, Averbeck) ; CIPR 99 | Critique du LNT aux faibles doses ; CIPR 99 pose les bases de l'extrapolation [32,33] |\n| **2006** | **BEIR VII** Phase 2 (NAS/NRC) | ≈ **1 cancer pour 100 personnes** à une dose unique de 100 mSv ; DDREF ~1,5 [4,25] |\n| **2007** | **CIPR 103** | Détriment ~5 %/Sv ; nominal **5,5 %/Sv** (pop.), **4,1 %/Sv** (travailleurs) ; DDREF 2 [1] |\n| **2015** | **CIPR 128** | Coefficients de dose des radiopharmaceutiques (¹⁸F-FDG 0,019 mSv/MBq) [19] |\n| **2018** | **NCRP Commentary 27** | Réaffirme l'usage du LNT (± DDREF) en radioprotection [30] |\n| **2020/21** | **UNSCEAR Annexe C** | Mécanismes biologiques soutenant l'inférence du risque aux faibles doses [14] |\n| **2022** | **CIPR 152** | Méthodologie réactualisée du calcul du détriment [20,23] |\n| **2023** | **INWORKS** (BMJ) ; **EPI-CT** | Confirmation de la linéarité aux faibles doses chroniques et pédiatriques [6,8] |\n\n**De la donnée au modèle réglementaire.** Trois cohortes modernes ont, depuis 2012, renforcé le LNT « par le bas », c'est-à-dire dans la zone même où il était le plus fragile :\n\n- **LSS (1958–2009)** : 105 444 sujets, 22 538 cancers solides ; la plus basse plage de dose montrant une réponse significative est **0–100 mGy (p = 0,038)** ; ERR = **0,64/Gy chez la femme** (IC95 0,52–0,77), avec une courbure significative chez l'homme.[5]\n- **INWORKS (2023)** : 309 932 travailleurs du nucléaire (France/Royaume-Uni/États-Unis), 28 089 décès par cancer solide ; **excès de mortalité +52 %/Gy** (IC90 27–77 %), l'association **doublant dans la tranche 0–100 mGy** — confirmation directe de la linéarité aux très faibles doses chroniques.[6,7]\n- **EPI-CT (2023)** : ~948 000 enfants scannés ; relation **linéaire** pour le cancer cérébral (**ERR/100 mGy = 1,27**) et pour les hémopathies (**ERR = 1,96/100 mGy**), avec une dose cérébrale cumulée moyenne de **47,4 mGy**.[8,27]\n\nCes résultats convergents [6,8] expliquent pourquoi, malgré les critiques (cf. encadrés), les grandes instances — CIPR, UNSCEAR, NCRP — **maintiennent le LNT comme paradigme** de gestion. Le débat ne porte plus sur la pertinence opérationnelle du modèle, mais sur sa **signification biologique exacte** dans la zone aveugle des très faibles doses (cf. A2 et A3).",
+        "steps": [
+          {
+            "title": "1916–années 1950 — Le socle mutationnel",
+            "text": "La génétique établit que le rayonnement induit des mutations de façon dose-dépendante. Émerge l'idée fondatrice : un événement mutationnel unique peut initier une transformation, donc le risque n'a pas de seuil par principe. Concept réactualisé aujourd'hui par la biologie de la cassure double-brin de l'ADN.[14]"
+          },
+          {
+            "title": "Depuis 1958 — La Life Span Study",
+            "text": "Le suivi des survivants d'Hiroshima/Nagasaki devient la cohorte pivot. Elle fournit la relation dose-réponse de référence aux fortes et moyennes doses, sur laquelle l'extrapolation linéaire vers les faibles doses sera fondée.[5]"
+          },
+          {
+            "title": "2005–2007 — L'institutionnalisation",
+            "text": "BEIR VII (2006) et surtout la CIPR 103 (2007) figent le cadre réglementaire : détriment ~5–5,7 %/Sv, coefficient nominal 5,5 %/Sv pour la population, DDREF = 2. Le LNT devient le paradigme opérationnel mondial.[1,4]"
+          },
+          {
+            "title": "2018–2023 — La consolidation par le bas",
+            "text": "NCRP 27 (2018) réaffirme le modèle ; UNSCEAR (2020/21) en consolide le socle mécaniste ; INWORKS et EPI-CT (2023) apportent une preuve épidémiologique de linéarité dans la zone < 100 mGy, autrefois inaccessible.[6,8,30]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "1958",
+            "label": "Début du suivi LSS (cohorte pivot)"
+          },
+          {
+            "value": "CIPR 103",
+            "label": "Cadre réglementaire de référence (2007)"
+          },
+          {
+            "value": "+52 %/Gy",
+            "label": "INWORKS 2023 — cancers solides"
+          },
+          {
+            "value": "948 000",
+            "label": "Enfants scannés (EPI-CT 2023)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la controverse n'est pas un consensus anti-LNT",
+            "text": "Le rapport conjoint des Académies des sciences et de médecine françaises (2005, Tubiana-Aurengo) juge le LNT **non étayé** aux faibles doses et évoque une **surestimation** du risque (absence d'effet cancérogène animal en aigu < 100 mSv, en chronique < 500 mSv), au point que la radiophobie induite — renoncement à des examens utiles — serait délétère.[32,33] La Health Physics Society déconseille toute estimation quantitative < 50 mSv/an ou < 100 mSv vie entière [34], et l'AAPM qualifie la preuve < 100 mSv de « non concluante ».[35] Ces positions critiquent l'**usage quantitatif individuel** du modèle ; aucune ne propose d'abandonner le LNT comme base de gestion réglementaire, que CIPR, UNSCEAR et NCRP maintiennent.[1,14,30]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi un modèle imparfait reste le standard",
+            "text": "Le LNT survit non parce qu'il serait démontré au mGy près, mais parce qu'il est **conservateur, additif et simple** : il autorise le cumul des doses (indispensable au suivi dosimétrique), pousse à l'optimisation systématique (ALARA) et reste robuste face à l'incertitude. Les modèles concurrents (seuil, hormèse, supralinéaire, linéaire-quadratique) ne sont ni assez étayés ni assez prudents pour fonder une réglementation protégeant des populations entières.[2,13]"
+          }
+        ]
+      },
+      {
+        "title": "B5 - Construire la relation dose-effet : forme linéaire, extrapolation et facteur DDREF",
+        "text": "**Ce que postule le modèle.** Le **modèle linéaire sans seuil (LNT, *Linear No-Threshold*)** énonce que la probabilité d'un **effet stochastique** (cancer radio-induit, effet héréditaire) est **directement proportionnelle à la dose**, et ce **sans seuil** : aucune dose, si petite soit-elle, n'est réputée sans risque, et N petites doses portent le même risque cumulé qu'une dose unique équivalente (linéarité + **additivité**).[1,2] La forme mathématique est minimale : *risque excédentaire = β × D*, où **β** est le coefficient de pente (le risque par unité de dose) et D la dose. C'est cette additivité qui légitime, en radioprotection, le **cumul des doses** d'un même individu et l'optimisation systématique (cf. §B8 du présent dossier et le principe ALARA).[13]\n\n**À quel domaine s'applique le LNT.** Le modèle est l'outil de la **région des faibles doses** : l'**UNSCEAR** (*United Nations Scientific Committee on the Effects of Atomic Radiation*) définit une **faible dose ≤ 100 mGy** (rayonnement à bas transfert linéique d'énergie, TLE) et un **faible débit de dose ≤ 0,1 mGy/min**.[12,14] À titre de repère, le **bruit de fond naturel mondial moyen ≈ 2,4 mSv/an** se situe très bas dans ce domaine.[41] Le LNT régit les seuls effets stochastiques ; il **ne s'applique pas** aux **effets déterministes / réactions tissulaires** (cataracte, érythème, fibrose), qui possèdent eux un **seuil** propre et dont la sévérité — non la probabilité — croît avec la dose.[1,11]\n\n**Le problème de l'extrapolation.** La relation dose-effet est **solidement établie aux fortes doses** (cohorte d'Hiroshima-Nagasaki, cf. §B6), mais aux doses < 100 mGy les données épidémiologiques deviennent imprécises. Le LNT consiste alors à **extrapoler linéairement** vers le bas la pente observée aux fortes doses — une **hypothèse prudentielle**, non une certitude démontrée.[3,4] La Commission internationale de protection radiologique (**CIPR / ICRP**) le qualifie d'extrapolation appuyée sur la biologie *et* l'épidémiologie, et non de simple postulat arbitraire.[2,13] Si un seuil existait, sa borne supérieure **n'excéderait pas quelques dizaines de mGy**.[2]\n\n**Le facteur correctif DDREF.** L'extrapolation directe de la pente des fortes doses surestimerait le risque aux faibles doses, car les courbes expérimentales sont en réalité **linéaires-quadratiques** : la composante quadratique (proportionnelle à D²) domine aux fortes doses, mais s'efface aux faibles. Pour corriger, on introduit un **DDREF (*Dose and Dose-Rate Effectiveness Factor*)**, facteur qui **divise** le risque extrapolé. La CIPR retient un **DDREF = 2** pour les cancers solides à faible dose et faible débit.[1,11] Le rapport **BEIR VII** (*Biological Effects of Ionizing Radiation*, NAS/NRC 2006) retient une valeur voisine, **≈ 1,5**.[4,25]\n\n| Paramètre du modèle | Valeur | Source |\n|---|---|---|\n| Faible dose (bas TLE) | ≤ **100 mGy** | UNSCEAR[12,14] |\n| Faible débit de dose | ≤ **0,1 mGy/min** | UNSCEAR[12,14] |\n| DDREF cancers solides (CIPR) | **2** | ICRP 103[1] |\n| DDREF cancers solides (BEIR VII) | **≈ 1,5** | BEIR VII[4,25] |\n| Borne supérieure d'un seuil éventuel | quelques dizaines de mGy | Réf. mécanistique[2] |\n| Bruit de fond naturel mondial | **≈ 2,4 mSv/an** | UNSCEAR/CNSC[41] |\n\n**Cas particulier de la leucémie.** Pour les leucémies, la réponse-dose est modélisée par une fonction **linéaire-quadratique** explicite, et **aucune réduction supplémentaire par DDREF n'est appliquée** (la courbure est déjà intégrée au modèle).[4,25] Cette distinction est essentielle : on ne traite pas la leucémie radio-induite avec le même formalisme que les cancers solides.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Ne pas confondre le **DDREF** (réduction d'un risque extrapolé vers les faibles doses/débits) avec le facteur de pondération radiologique **w_R** (qui convertit la dose absorbée en dose équivalente selon la nature du rayonnement). Le DDREF s'applique au **bas TLE** uniquement : pour le **haut TLE** (particules alpha, neutrons), où la réponse est déjà quasi linéaire, **le DDREF n'a pas lieu d'être appliqué**.[1]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — linéaire ne veut pas dire « observé partout »",
+            "text": "La linéarité du LNT est **démontrée aux fortes doses puis prolongée par hypothèse** vers le bas. Affirmer qu'un risque est « prouvé » à 1 mGy est un abus : il est **modélisé**, pas mesuré. La force du LNT est opérationnelle (additivité, simplicité de gestion), non sa capacité à prédire un risque individuel à très faible dose (cf. §B8 et limites CIPR)."
+          }
+        ],
+        "stats": [
+          {
+            "value": "β × D",
+            "label": "Forme du risque excédentaire (LNT)"
+          },
+          {
+            "value": "≤ 100 mGy",
+            "label": "Domaine des faibles doses (UNSCEAR)"
+          },
+          {
+            "value": "2",
+            "label": "DDREF cancers solides (CIPR)"
+          },
+          {
+            "value": "≤ 0,1 mGy/min",
+            "label": "Faible débit de dose"
+          }
+        ]
+      },
+      {
+        "title": "B6 - La preuve maîtresse : la cohorte des survivants d'Hiroshima-Nagasaki (Life Span Study)",
+        "text": "**Pourquoi cette cohorte est centrale.** La **Life Span Study (LSS)** — suivi au long cours des survivants des bombardements atomiques de 1945 — est la **pierre angulaire** de tout le système d'estimation du risque radio-induit. Elle offre ce qu'aucune autre source ne réunit : un **grand effectif**, une **large gamme de doses** (du quasi-nul à plusieurs Gy) reçues en **exposition aiguë, corps entier**, un **groupe de référence interne** (survivants peu ou pas exposés), un **suivi multi-décennal** et une **dosimétrie individuelle reconstruite**. C'est elle qui fournit la pente β extrapolée par le LNT (cf. §B5).[1,5]\n\n**Effectifs et puissance (incidence des cancers solides, 1958–2009).** L'analyse de référence porte sur **105 444 sujets**, totalisant **3 079 484 personnes-années** de suivi, avec **22 538 cancers solides** incidents, dont **≈ 992 attribuables au rayonnement**.[5] Fait décisif pour le LNT : la **plus basse plage de dose montrant une réponse-dose statistiquement significative est 0–100 mGy (p = 0,038)** — c'est-à-dire au cœur même de la région des faibles doses.[5]\n\n**Le coefficient de risque (ERR/Gy).** L'**excès de risque relatif par gray (ERR/Gy, *Excess Relative Risk*)** est le chiffre-phare extrait de la LSS :\n\n| Sous-groupe | Forme de la réponse-dose | ERR/Gy | Source |\n|---|---|---|---|\n| **Femmes** | Linéaire | **0,64** (IC95 % 0,52–0,77) | LSS[5] |\n| **Hommes** | Courbure ascendante significative (p = 0,002) ; ERR ≈ 0,20 à 1 Gy | — | LSS[5] |\n| **Sexe-moyen** (ajusté tabac) | — | **≈ 0,56** (IC95 % 0,46–0,66) | LSS[5] |\n\nLa réponse-dose est **linéaire chez la femme** mais présente une **courbure (composante quadratique) chez l'homme** — observation qui justifie précisément le recours au DDREF et au modèle linéaire-quadratique (cf. §B5).[5] En **mortalité** (analyse d'Ozasa), la courbure de la réponse-dose 0–2 Gy s'est renforcée avec l'allongement du suivi (p de courbure passé de 0,16 à **0,02**), confirmant que la forme de la courbe **dépend du recul** disponible.[5]\n\n**Dose-réponse organe-spécifique.** La LSS ne fournit pas qu'un chiffre global : un **ERR significativement élevé par Gy** est démontré pour **9 des sites tumoraux** étudiés — sein, cerveau/SNC, côlon, vessie, prostate, foie, poumon, thyroïde, estomac.[5] Ces sites recoupent largement les tissus à fort **facteur de pondération tissulaire w_T** de la CIPR (moelle rouge, côlon, poumon, estomac, sein : **w_T = 0,12** chacun).[1] L'effet est par ailleurs **plus marqué pour une exposition à l'âge jeune**, ce qui sous-tend les précautions pédiatriques renforcées.[4,5]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La LSS est une exposition **aiguë, à fort débit, corps entier** : c'est exactement le contexte où l'on observe la **composante quadratique**. Transposer sa pente aux expositions médicales (faibles, fractionnées, partielles) **exige** d'appliquer le DDREF. C'est pourquoi la LSS « brute » et le LNT « réglementaire » ne donnent pas le même chiffre : entre les deux, il y a la division par le DDREF (§B5)."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la LSS ne tranche pas la forme à très basse dose",
+            "text": "Malgré sa taille, la LSS **n'a pas la puissance statistique** pour discriminer formellement, dans le bas de la gamme, entre LNT, modèle à seuil et modèle linéaire-quadratique.[29] Le signal significatif sur 0–100 mGy (p = 0,038) **soutient** le LNT mais ne **réfute pas** un seuil très bas. La cohorte oriente le choix prudentiel du modèle ; elle ne le démontre pas mathématiquement."
+          }
+        ],
+        "stats": [
+          {
+            "value": "105 444",
+            "label": "Survivants suivis (LSS)"
+          },
+          {
+            "value": "0,64/Gy",
+            "label": "ERR cancers solides (femmes, IC95 0,52–0,77)"
+          },
+          {
+            "value": "0–100 mGy",
+            "label": "Plus basse plage significative (p=0,038)"
+          },
+          {
+            "value": "9 sites",
+            "label": "Cancers à ERR/Gy significatif"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Triade temps-distance-écran de la radioprotection : l'extrapolation linéaire sans seuil issue de la cohorte d'Hiroshima-Nagasaki fonde l'optimisation systématique de la dose, dont les trois leviers opérationnels sont le temps d'exposition, la distance à la source et l'écran de protection.",
+        "figureCaption": "Fig. 1 — La pente dose-risque démontrée aux fortes doses de la LSS, extrapolée par le LNT, justifie l'optimisation ALARA : agir sur le temps, la distance et l'écran."
+      },
+      {
+        "title": "B7 - Les autres sources de données : cohortes médicales, professionnelles et radon",
+        "text": "**Pourquoi corroborer la LSS.** La cohorte d'Hiroshima-Nagasaki décrit une exposition **aiguë et à fort débit** ; pour valider le LNT dans les conditions réelles de la radioprotection — expositions **chroniques, à faible débit, faibles doses cumulées** — il faut des cohortes indépendantes. Trois familles convergent désormais vers la pente de la LSS : les **travailleurs du nucléaire**, l'**imagerie pédiatrique** et l'exposition **in utero**.\n\n**INWORKS — travailleurs du nucléaire (France, Royaume-Uni, États-Unis).** La mise à jour 2023 (Richardson, *BMJ*) rassemble **309 932 travailleurs** et **10,7 millions de personnes-années**, avec **28 089 décès par cancer solide**.[6] Le résultat capital : la mortalité par cancer solide augmente de **+52 % par Gy** (IC90 % 27–77 %), avec une latence de 10 ans — estimation **supérieure** à celle qui informe aujourd'hui la radioprotection.[6] Surtout, l'association **se maintient, voire se double, dans la tranche 0–100 mGy**, confirmant la linéarité au plus bas.[6] L'**ERR pour les cancers solides ≈ 0,29/Gy** (IC90 % 0,07–0,53) est remarquablement **cohérent avec la LSS** (≈ 0,28/Gy), ce qui constitue l'argument de convergence le plus fort en faveur du LNT.[7] Pour la **leucémie hors leucémie lymphoïde chronique**, l'ERR atteint **2,96/Gy** (IC90 % 1,17–5,21).[26]\n\n**EPI-CT — scanner pédiatrique (9 pays européens).** Cette cohorte de **948 174 sujets** scannés avant 22 ans (276 hôpitaux) explore la tranche de doses la plus pertinente pour l'imagerie médicale.[8,27] Pour le **cancer cérébral**, la relation est **linéaire et significative**, avec un **ERR/100 mGy = 1,27** ; la dose cérébrale cumulée moyenne est de **47,4 mGy** (76,0 mGy chez les cas).[8] Pour les **hémopathies malignes**, l'**ERR = 1,96 par 100 mGy** (IC95 % 1,10–3,12 ; 790 cas).[27,28] En ordres de grandeur cliniques : **≈ 50 mGy ≈ triplement du risque de leucémie**, **≈ 60 mGy ≈ triplement du cancer cérébral**, soit **≈ 1 cas excédentaire pour 10 000 scanners crâniens** à 10 ans.[9]\n\n**Pearce et al. (Lancet 2012) — première grande cohorte scanner pédiatrique.** Antérieure à EPI-CT, elle reste citée : **ERR leucémie = 0,036 par mGy** (IC95 % 0,005–0,120 ; p = 0,0097) et **ERR tumeur cérébrale = 0,023 par mGy** (IC95 % 0,010–0,049 ; p < 0,0001).[9] Le **risque relatif (RR) de leucémie atteint 3,18** (IC95 % 1,46–6,94) pour une dose cumulée ≥ 30 mGy.[9]\n\n**Exposition in utero.** L'*Oxford Survey of Childhood Cancers* a documenté, à des doses de pelvimétrie historiques **≈ 10 mGy**, un **excès de risque non nul dès ≈ 10 mSv**, l'excès brut de cancer fatal de l'enfance étant estimé à **≈ 0,4 %**.[38] L'embryon et le fœtus comptent parmi les cibles les plus radiosensibles, ce qui fonde les précautions strictes en cas de grossesse.\n\n| Cohorte | Effectif | Estimation-clé | Source |\n|---|---|---|---|\n| **LSS** (A-bomb) | 105 444 | ERR ≈ 0,56/Gy (sexe-moyen) | [5] |\n| **INWORKS** (travailleurs) | 309 932 | +52 %/Gy ; ERR ≈ 0,29/Gy | [6,7] |\n| **EPI-CT** (scanner ped.) | 948 174 | ERR cerveau/100 mGy = 1,27 ; hémopathies 1,96 | [8,27] |\n| **Pearce** (scanner ped.) | ~178 000 | ERR leucémie 0,036/mGy | [9] |\n| **OSCC** (in utero) | — | excès cancer fatal ≈ 0,4 % | [38] |\n\n**La synthèse des grandes instances.** L'**UNSCEAR 2020/2021 (Annexe C)** conclut au maintien d'« une bonne justification à l'usage d'un modèle sans seuil » au vu des mécanismes biologiques.[14] Le **NCRP Commentary No. 27 (2018)**, après revue des études récentes, recommande que **le LNT (éventuellement avec DDREF) continue d'être utilisé** en radioprotection.[30] La convergence INWORKS ↔ LSS rend le signal **détectable et reproductible dès ≈ 50–100 mGy**, renforçant le modèle vers le bas.[6,27]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la convergence vaut plus que chaque étude isolée",
+            "text": "Aucune cohorte prise seule ne « prouve » le LNT à très basse dose. L'argument fort est la **concordance** : une exposition aiguë (LSS, ERR ≈ 0,28/Gy) et une exposition chronique fractionnée (INWORKS, ERR ≈ 0,29/Gy) donnent **la même pente** par des voies indépendantes.[7] C'est cette robustesse croisée — non un essai décisif — qui soutient le maintien réglementaire du modèle."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — biais de confusion et incertitude dosimétrique",
+            "text": "Les cohortes médicales (EPI-CT, Pearce) sont exposées au **biais d'indication par confusion (*reverse causation*)** : un enfant scanné pour une symptomatologie neurologique peut déjà porter une tumeur occulte. Les analyses excluent des fenêtres de latence pour le limiter, mais le biais résiduel impose la prudence. De même, la **reconstruction dosimétrique** individuelle reste une source majeure d'incertitude dans toutes ces études."
+          }
+        ],
+        "stats": [
+          {
+            "value": "+52 %/Gy",
+            "label": "Mortalité cancers solides (INWORKS, IC90 27–77 %)"
+          },
+          {
+            "value": "1,27",
+            "label": "ERR cancer cérébral / 100 mGy (EPI-CT)"
+          },
+          {
+            "value": "948 174",
+            "label": "Sujets scannés < 22 ans (EPI-CT)"
+          },
+          {
+            "value": "0,29/Gy",
+            "label": "ERR solide INWORKS (≈ LSS 0,28/Gy)"
+          }
+        ]
+      },
+      {
+        "title": "B8 - Les modèles concurrents : seuil, hormèse, supra-linéarité et leurs arguments",
+        "text": "**Pourquoi un débat persiste.** En deçà de **≈ 10–50 mGy**, les intervalles de confiance deviennent si larges qu'il est **impossible de discriminer statistiquement** le LNT de ses rivaux.[29,35] Quatre familles de modèles se disputent ce domaine non observable, chacune adossée à des arguments biologiques réels. Comprendre leurs prémisses est indispensable pour situer le caractère **prudentiel** — et non démontré — du LNT.\n\n| Modèle | Postulat | Implication vs LNT | Argument-clé |\n|---|---|---|---|\n| **Linéaire sans seuil (LNT)** | Risque ∝ dose, sans seuil | Référence | Une seule trace peut induire une CDB[14] |\n| **À seuil** | Risque nul sous une dose-seuil | LNT **surestime** | Réparation efficace, réponse adaptative[3] |\n| **Hormèse** | Faibles doses **bénéfiques** (risque < spontané) | LNT **surestime** | Stimulation des défenses cellulaires[21] |\n| **Supra-linéaire** | Risque > linéaire aux faibles doses | LNT **sous-estime** | Effet bystander, hypersensibilité (HRS)[2] |\n| **Linéaire-quadratique** | Pente courbe (composante D²) | Forme intermédiaire | Données A-bomb hommes, leucémie[5] |\n\n**Le mécanisme central qui soutient le LNT.** La cible moléculaire première est l'**ADN nucléaire**, et la lésion la plus délétère la **cassure double-brin (CDB / DSB, *Double-Strand Break*)**, mal réparable. L'argument pro-LNT de l'**UNSCEAR 2020/2021** est qu'**une seule trace de rayonnement peut produire une CDB**, et que le rôle des mutations et aberrations chromosomiques dans la carcinogenèse est suffisamment établi pour rendre **plausible un risque sans seuil**.[14] Le marqueur **γ-H2AX** des CDB apporte un appui au DDREF : la formation de foyers est **≈ 40 % plus élevée à fort débit qu'à faible débit**, ce qui matérialise l'effet protecteur du fractionnement.[10]\n\n**Les arguments « pro-supra-linéarité » (le LNT sous-estimerait).** Deux phénomènes plaident pour un risque accru aux très faibles doses : l'**effet bystander** (des cellules **non irradiées** subissent un dommage transmis par leurs voisines irradiées) et l'**hypersensibilité aux faibles doses (HRS, *Low-dose HyperRadioSensitivity*)**, où la mortalité cellulaire par unité de dose est paradoxalement plus forte à très faible dose.[2]\n\n**Les arguments « pro-seuil / pro-hormèse » (le LNT surestimerait).** À l'opposé, la **réponse adaptative** (une faible dose préalable réduit le dommage d'une dose ultérieure), la **réparation efficace des CDB à faible débit** et l'**apoptose** sélective des cellules lésées suggèrent un seuil, voire un effet protecteur (hormèse).[3,21] Le **rapport conjoint des Académies des Sciences et de Médecine françaises (2005)** (Tubiana, Aurengo, Averbeck) soutient que le LNT aux faibles doses **n'est pas étayé scientifiquement** : absence d'effet cancérogène animal démontré en aigu **< 100 mSv** et en chronique **< 500 mSv**, l'extrapolation LNT **surestimant** alors le risque — avec un effet délétère propre, le **renoncement à des examens utiles**.[32,33]\n\n**Le consensus opérationnel et ses garde-fous.** Le débat n'a pas fait abandonner le LNT, mais a borné ses usages. Plusieurs sociétés savantes refusent de **chiffrer un risque individuel** dans le domaine non observable :\n\n- La **Health Physics Society (HPS)** déconseille toute estimation quantitative du risque **< 50 mSv/an** ou **< 100 mSv vie entière** au-dessus du fond naturel.[34]\n- L'**AAPM** (*American Association of Physicists in Medicine*) qualifie la preuve épidémiologique d'incidence/mortalité accrue **< 100 mSv** de **« non concluante »**.[35]\n- La CIPR elle-même proscrit l'usage le plus contestable : **multiplier une très faible dose individuelle par une grande population** (dose collective) pour en déduire un nombre de « cancers excédentaires » est **explicitement déconseillé** par l'ICRP 103, les incertitudes étant trop grandes.[1] La **NCRP 27** a d'ailleurs été critiquée pour des conclusions jugées plus enthousiastes que ses données.[31]\n\nLe **DDREF** lui-même n'échappe pas à la controverse : les valeurs publiées s'étalent de **1 à 35** (le plus souvent 2–10), ce qui souligne l'incertitude résiduelle du formalisme.[4,35]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège majeur — la dose collective détournée",
+            "text": "L'erreur la plus fréquente et la plus combattue : prendre une dose individuelle infime (ex. quelques µSv d'un examen), la **multiplier par des millions de personnes**, et annoncer un nombre de morts. La CIPR l'interdit : la **dose collective ne doit pas servir à estimer des cancers excédentaires** dans une population exposée à très faible dose.[1] Le LNT est un outil de **gestion** (additivité, optimisation), pas un compteur de cadavres."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi garder le LNT malgré le doute",
+            "text": "Le LNT est conservé non parce qu'il est prouvé au plus bas, mais parce qu'il est **prudent, additif et simple à gérer**.[13,30] Il borne le risque par excès dans le sens de la sécurité, permet de cumuler les doses et fonde les **3 principes** : justification, optimisation (ALARA), limitation — avec les limites réglementaires **20 mSv/an** (travailleurs) et **1 mSv/an** (public).[15] Aucune grande instance (CIPR, UNSCEAR, NCRP, BEIR) ne l'utilise pour une causalité individuelle aux très faibles doses."
+          },
+          {
+            "type": "info",
+            "title": "Communiquer le risque sans nourrir la radiophobie",
+            "text": "Le corollaire clinique du débat : éviter à la fois de **chiffrer un risque individuel illusoire** < 50–100 mSv et d'entretenir la **radiophobie** qui ferait renoncer à un examen justifié. Mettre la dose en regard du **bénéfice diagnostique** et du **bruit de fond naturel (≈ 2,4 mSv/an)** reste la meilleure pédagogie : un TEP-FDG corps entier (~7 mSv) ≈ 3 ans de fond naturel.[39,40,41]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "5 modèles",
+            "label": "Seuil · hormèse · supra-linéaire · LNT · LQ"
+          },
+          {
+            "value": "< 100 mSv",
+            "label": "Domaine jugé « non concluant » (AAPM)"
+          },
+          {
+            "value": "40 %",
+            "label": "Foyers γ-H2AX en plus à fort débit (DDREF)"
+          },
+          {
+            "value": "1–35",
+            "label": "Étendue des valeurs publiées du DDREF"
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma des modes d'émission radioactive (alpha, bêta, gamma) illustrant que le transfert linéique d'énergie conditionne la densité d'ionisations et donc la probabilité de cassure double-brin de l'ADN, lésion au cœur du débat entre modèle linéaire sans seuil et modèles à seuil ou hormèse.",
+        "figureCaption": "Fig. 2 — La nature du rayonnement (TLE) gouverne la densité d'ionisations et la genèse des cassures double-brin, lésion clé qui sous-tend l'argument mécanistique du modèle sans seuil."
+      },
+      {
+        "title": "C9 - Phénomènes non ciblés aux faibles doses : effet bystander, réponse adaptative, instabilité génomique",
+        "text": "Le modèle linéaire sans seuil (LNT, *Linear No-Threshold*) repose sur un postulat mécanistique simple : une **cassure double-brin de l'ADN (CDB)** par trace de rayonnement, un risque de transformation maligne strictement proportionnel au nombre de CDB, donc à la dose [2,14]. Or, dans la région des **faibles doses (< ~100 mGy à bas transfert linéique d'énergie [TLE])** et des **faibles débits (< 0,1 mGy/min)** [12,14], une série de phénomènes dits *non ciblés* (*non-targeted effects*) viennent perturber cette relation un-pour-un entre énergie déposée dans le noyau et effet biologique. Leur enjeu pour le médecin nucléaire n'est pas anecdotique : selon leur sens, ils **renforcent** ou **affaiblissent** la pente du risque que le LNT extrapole linéairement depuis les fortes doses.\n\nOn distingue trois familles principales, qu'il faut savoir classer selon qu'elles plaident pour une **supralinéarité** (le LNT *sous-estime* le risque) ou pour un **seuil/hormèse** (le LNT *surestime* le risque) [2,21].\n\n**▸ Effet bystander (de voisinage).** Des cellules **non traversées** par le rayonnement présentent des dommages (mutations, micronoyaux, mort cellulaire, CDB) parce que les cellules irradiées voisines émettent des signaux délétères — espèces réactives de l'oxygène, cytokines, communication par jonctions communicantes. Conséquence conceptuelle : aux très faibles doses, le nombre de cellules *affectées* peut excéder le nombre de cellules *irradiées*, ce qui produit une **réponse-dose supralinéaire** et constitue un argument contre l'existence d'un seuil protecteur [2]. L'effet bystander est surtout démontré in vitro et son poids in vivo aux doses diagnostiques reste débattu.\n\n**▸ Réponse adaptative et hypersensibilité aux faibles doses (HRS).** Deux phénomènes opposés coexistent dans la zone des faibles doses. La **réponse adaptative** : une faible dose « conditionnante » (de l'ordre de quelques dizaines de mGy) stimule les systèmes de réparation de l'ADN, l'apoptose des cellules lésées et les défenses anti-oxydantes, de sorte qu'une dose ultérieure plus élevée provoque *moins* de dommages qu'attendu — argument **pro-seuil/hormèse**, le LNT surestimant alors le risque [3,21]. À l'inverse, l'**hypersensibilité aux faibles doses (HRS, *Hyper-Radiosensitivity*)** décrit une létalité disproportionnée en dessous de ~0,3–0,5 Gy avant que ne s'installe la radiorésistance induite : argument **pro-supralinéarité** [2].\n\n**▸ Instabilité génomique.** Le rayonnement peut induire, dans la descendance de cellules irradiées et sur plusieurs générations cellulaires, un phénotype d'**instabilité génomique** différée (aberrations chromosomiques, mutations *de novo*, amplification génique) sans que la lésion initiale soit directement transmise. Ce mécanisme, persistant et transmissible, est cohérent avec un risque carcinogène **sans seuil** et alimente l'argumentaire de l'UNSCEAR (*United Nations Scientific Committee on the Effects of Atomic Radiation*) en faveur du LNT [14].\n\n| Phénomène non ciblé | Sens de l'écart à la linéarité stricte | Implication pour le LNT | Source |\n|---|---|---|---|\n| **Effet bystander** | Supralinéarité (cellules non irradiées atteintes) | Pourrait faire **sous-estimer** le risque | [2] |\n| **Hypersensibilité (HRS)** | Supralinéarité (< 0,3–0,5 Gy) | Pourrait faire **sous-estimer** le risque | [2] |\n| **Réponse adaptative** | Pro-seuil / hormèse | Pourrait faire **surestimer** le risque | [3,21] |\n| **Réparation efficace à faible débit** | Pro-seuil (base du DDREF) | Justifie le **DDREF = 2** | [10] |\n| **Instabilité génomique** | Compatible avec l'absence de seuil | **Soutient** le LNT | [14] |\n\nLe support biologique le plus solide du modèle reste la **CDB** et son marqueur, les foyers **γ-H2AX** (histone H2AX phosphorylée). La formation de ces foyers est environ **40 % plus élevée à fort débit qu'à faible débit** de dose, observation qui fonde biologiquement le **DDREF (*Dose and Dose-Rate Effectiveness Factor*) = 2** appliqué par la Commission internationale de protection radiologique (CIPR) : à faible débit, le fractionnement laisse le temps de réparer, et le risque par unité de dose chute de moitié [10,1]. Le DDREF lui-même reste cependant incertain, avec des valeurs publiées s'étendant de ~1 à 35 [4].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — \"non ciblé\" ne veut pas dire \"protecteur\"",
+            "text": "L'existence d'une réponse adaptative est souvent brandie comme preuve d'un seuil, voire d'une hormèse (effet bénéfique des faibles doses). C'est une lecture sélective : sur la même plage de dose coexistent des phénomènes **pro-supralinéarité** (effet bystander, HRS) et **pro-seuil** (réponse adaptative, réparation). Aucun de ces mécanismes, pris isolément, n'a la robustesse épidémiologique nécessaire pour invalider le LNT, qui reste retenu comme cadre prudentiel [2,14]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — l'argument mécanistique de l'UNSCEAR",
+            "text": "L'UNSCEAR 2020/2021 (Annexe C) maintient « une bonne justification à l'usage d'un modèle sans seuil pour l'inférence du risque » sur deux piliers : (1) une **seule trace de rayonnement peut produire une CDB**, lésion potentiellement transformante ; (2) le rôle des mutations et aberrations chromosomiques dans la carcinogenèse est solidement établi. Tant que ces deux faits tiennent, l'hypothèse d'un risque non nul à toute dose reste plausible — c'est un argument de plausibilité mécanistique, non une démonstration de causalité aux doses diagnostiques [14]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "1 trace",
+            "label": "= 1 CDB possible (base mécanistique du LNT) [14]"
+          },
+          {
+            "value": "+40 %",
+            "label": "foyers γ-H2AX à fort vs faible débit [10]"
+          },
+          {
+            "value": "DDREF = 2",
+            "label": "facteur débit-dose (CIPR) [1]"
+          },
+          {
+            "value": "< 0,3–0,5 Gy",
+            "label": "zone d'hypersensibilité (HRS) [2]"
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma des types d'émissions ionisantes (alpha, bêta, gamma, électrons) déposant leur énergie dans la matière ; illustre la trace unique de rayonnement capable de produire une cassure double-brin de l'ADN, fondement mécanistique du modèle sans seuil.",
+        "figureCaption": "Fig. C9 — Le dépôt d'énergie par une trace de rayonnement peut induire une cassure double-brin : socle du postulat \"pas de seuil\". Les phénomènes non ciblés (bystander, adaptatif, instabilité) modulent ensuite la relation dose-effet aux faibles doses."
+      },
+      {
+        "title": "C10 - La limite épidémiologique fondamentale : pourquoi on ne peut pas « prouver » la LNT à bas niveau",
+        "text": "Le débat sur le LNT n'est pas, pour l'essentiel, un débat biologique : c'est un **problème de puissance statistique**. À fortes doses, la relation dose-cancer est solidement établie ; à faibles doses, le **signal recherché devient si petit qu'il se noie dans le bruit de fond du cancer spontané**, qui frappe environ une personne sur trois au cours de la vie. Comprendre cette limite est essentiel pour le médecin nucléaire qui doit informer un patient sans céder ni à la minimisation ni à la radiophobie.\n\n**▸ Le socle solide : au-dessus de ~100 mGy.** La cohorte pivot reste la *Life Span Study* (LSS) des survivants d'Hiroshima-Nagasaki : **105 444 sujets**, **3 079 484 personnes-années**, suivi 1958–2009, **22 538 cancers solides** dont environ **992 attribuables au rayonnement** [5]. La pente est nette et robuste : **ERR (excès de risque relatif) sexe-moyen ≈ 0,56/Gy (IC95 0,46–0,66)** après ajustement tabac, et **0,64/Gy (IC95 0,52–0,77) chez la femme** [5]. À ce niveau de dose, personne ne conteste l'existence d'un excès de cancers.\n\n**▸ La frontière critique : la zone 0–100 mGy.** C'est ici que se joue tout le débat. La plus basse plage de dose montrant encore une réponse statistiquement significative dans la LSS est **0–100 mGy (p = 0,038)** [5]. En dessous, les intervalles de confiance s'élargissent au point que **plusieurs modèles dose-réponse — linéaire sans seuil, avec seuil, linéaire-quadratique, voire hormétique — deviennent statistiquement indiscernables** : la LSS, malgré sa taille, **n'a pas la puissance** de les départager formellement au plus bas niveau [29]. Ce n'est pas que le LNT soit réfuté ; c'est qu'aucune donnée ne peut, à ce niveau, le distinguer de ses concurrents.\n\n**▸ Pourquoi le bruit de fond rend la preuve quasi impossible.** Le **bruit de fond naturel mondial moyen est de ~2,4 mSv/an** [41]. Détecter l'excès de cancers attribuable à, par exemple, 10 mSv supplémentaires revient à chercher quelques cas surnuméraires dans une population où le cancer spontané est déjà massif. La taille d'échantillon nécessaire croît de façon explosive quand la dose diminue : prouver directement un effet à 1 mSv exigerait des cohortes de plusieurs millions à dizaines de millions de sujets parfaitement suivis — irréaliste.\n\n| Niveau de dose | Statut de la preuve | Donnée illustrative | Source |\n|---|---|---|---|\n| **> 100 mGy** | Effet **établi** | LSS : ERR ≈ 0,56/Gy (IC95 0,46–0,66) | [5] |\n| **~50–100 mGy** | Signal **détectable et reproductible** | INWORKS, EPI-CT, LSS 0–100 mGy | [6,8,5] |\n| **~10–50 mGy** | Soutenu mais **non discriminant** (IC larges) | Modèles non départageables | [29] |\n| **< 10 mGy** | **Indémontrable** directement | Puissance insuffisante | [29,34] |\n\n**▸ Les études récentes qui font descendre le signal.** Trois cohortes de grande taille ont, dans les années 2010–2023, repoussé vers le bas la limite de détection, **renforçant la plausibilité du LNT sans pour autant le \"prouver\"** :\n\n- **INWORKS** (travailleurs du nucléaire France/Royaume-Uni/USA, mise à jour BMJ 2023) : **309 932 travailleurs**, ~**10,7 millions de personnes-années**, exposition chronique à très faible débit ; **mortalité par cancer solide augmentée de +52 %/Gy (IC90 27–77 %)**, avec une **association persistante voire renforcée dans la tranche 0–100 mGy** [6]. L'ERR solide (~0,29/Gy, IC90 0,07–0,53) est **cohérent avec celui de la LSS** (~0,28/Gy), ce qui est un argument fort de convergence [7].\n- **EPI-CT** (scanners pédiatriques, 9 pays européens) : **948 174 sujets** scannés avant 22 ans ; relation **linéaire significative** pour les hémopathies malignes, **ERR = 1,96 par 100 mGy (IC95 1,10–3,12 ; 790 cas)** [27,28] et pour le cancer cérébral [8]. La dose cérébrale cumulée moyenne n'était que de ~47 mGy [8].\n- **Pearce et al.** (scanner pédiatrique, *Lancet* 2012) : **ERR leucémie = 0,036/mGy (IC95 0,005–0,120 ; p = 0,0097)** et **ERR tumeur cérébrale = 0,023/mGy (IC95 0,010–0,049 ; p < 0,0001)** [9].\n\nCes trois cohortes ne prouvent pas que la relation est *exactement* linéaire jusqu'à zéro ; elles montrent qu'**un signal existe encore là où l'on pensait ne plus rien voir**, ce qui rend l'hypothèse linéaire la plus parcimonieuse et la plus prudente.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la dose collective ne se transforme pas en \"nombre de morts\"",
+            "text": "La tentation est de multiplier une très faible dose individuelle par une vaste population sur de longues périodes pour annoncer un nombre de « cancers excédentaires ». La CIPR, dans sa Publication 103, **déconseille formellement** cet usage : la **dose collective ne doit pas servir à estimer des cancers excédentaires** car les incertitudes y sont trop grandes [1]. La Health Physics Society et l'AAPM (*American Association of Physicists in Medicine*) recommandent même de **ne pas chiffrer le risque individuel en dessous de ~50 mSv/an ou ~100 mSv vie entière** [34,35]. Calculer « X morts » à partir d'une dose collective médicale est une extrapolation au-delà du domaine observable, non un résultat épidémiologique."
+          },
+          {
+            "type": "info",
+            "title": "Le LNT est prudentiel, pas démontré au plus bas",
+            "text": "Il faut tenir les deux bouts : (1) le LNT n'est **pas prouvé** dans la zone < ~50–100 mGy, où aucune étude ne peut discriminer les modèles ; (2) il reste l'hypothèse **la plus prudente et la plus opérationnelle** (additivité des doses, simplicité de gestion) et il n'est **pas une simple \"assumption\"** mais une extrapolation appuyée sur biologie + épidémiologie [13,22]. La position de prudence n'est ni de la timidité scientifique ni de la certitude : c'est un choix de gestion du risque."
+          }
+        ],
+        "stats": [
+          {
+            "value": "0–100 mGy",
+            "label": "plus basse plage LSS significative (p=0,038) [5]"
+          },
+          {
+            "value": "+52 %/Gy",
+            "label": "cancers solides, INWORKS 2023 [6]"
+          },
+          {
+            "value": "309 932",
+            "label": "travailleurs INWORKS [6]"
+          },
+          {
+            "value": "948 174",
+            "label": "sujets EPI-CT (scanner pédiatrique) [8]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma illustrant les leviers de réduction de dose (temps, distance, écran) du principe ALARA ; rappelle que, faute de pouvoir prouver l'absence de risque aux faibles doses, la stratégie retenue est de minimiser systématiquement l'exposition.",
+        "figureCaption": "Fig. C10 — Faute de pouvoir démontrer (ou exclure) un effet à très faible dose, la réponse opérationnelle n'est pas de calculer des \"morts par dose collective\" mais d'optimiser : justifier et minimiser (ALARA)."
+      },
+      {
+        "title": "C11 - Positions des grandes instances : CIPR, BEIR VII, UNSCEAR, AFNRH/ASNR et le consensus de gestion",
+        "text": "Aucune instance de référence n'affirme que le LNT est *prouvé* aux très faibles doses ; toutes, à l'exception notable des académies françaises, le **retiennent comme base de gestion** du risque stochastique. Pour le médecin nucléaire, connaître la position de chaque organisme évite les confusions de QCM et permet de citer la bonne autorité selon la question (réglementation, coefficients de risque, mécanismes, ou contestation).\n\n**▸ CIPR (Commission internationale de protection radiologique).** Pilier réglementaire. La **Publication 103 (2007)** retient le LNT comme « la meilleure approche pratique pour gérer le risque » aux faibles doses [1]. Elle en tire les **coefficients de risque nominaux ajustés du détriment** : **cancer = 5,5 %/Sv pour la population entière**, **4,1 %/Sv pour les travailleurs adultes** (différence liée à l'absence d'enfants, plus radiosensibles, chez les travailleurs), effets héréditaires **0,2 %/Sv (population)**, soit un **détriment total ≈ 5,7 %/Sv** [1,11]. La CIPR applique un **DDREF = 2** aux cancers solides (modèle **linéaire-quadratique** pour la leucémie, sans DDREF additionnel) [1,4]. La méthodologie de calcul du détriment a été réactualisée par la **Publication 152 (2022)** [20,23].\n\n**▸ BEIR VII (*Biological Effects of Ionizing Radiation*, NAS/NRC, 2006).** Référence nord-américaine. Endosse le LNT et fournit un repère mémorable : **≈ 1 cancer pour 100 personnes** exposées à une dose unique de **100 mSv** (bas TLE) [4,25]. DDREF d'environ 1,5 pour les cancers solides ; données issues des survivants A-bomb complétées par les travailleurs et les expositions médicales [25]. Le rapport précise que ses coefficients **ne doivent pas servir à estimer des risques individuels** aux faibles doses [4].\n\n**▸ UNSCEAR.** Apporte le socle **mécanistique**. L'**Annexe C du rapport 2020/2021** réaffirme la justification biologique d'un modèle sans seuil pour l'inférence du risque (CDB par trace unique, rôle des mutations) [14], et fournit les **définitions métrologiques de référence** : **faible dose ≤ ~100 mGy**, **faible débit ≤ 0,1 mGy/min** [12,14], ainsi que le **bruit de fond naturel ≈ 2,4 mSv/an** [41].\n\n**▸ NCRP (*National Council on Radiation Protection*, USA).** Le **Commentary No. 27 (2018)**, après revue des grandes études faibles doses et de la LSS, conclut que **le LNT — éventuellement assorti d'un DDREF — doit continuer à être utilisé** en radioprotection [30]. Cette conclusion a été critiquée pour le choix des études retenues et un enthousiasme jugé supérieur aux données [31].\n\n**▸ AFNRH / ASNR et académies françaises.** En France, l'expertise a longtemps porté la voix la plus critique. Le **rapport conjoint des Académies des Sciences et de Médecine (2005)** — Tubiana, Aurengo, Averbeck — estime que le LNT aux faibles doses **n'est pas étayé scientifiquement** : absence d'effet cancérogène démontré chez l'animal en aigu < **100 mSv** et en chronique < **500 mSv**, et risque que l'extrapolation LNT **surestime** le danger, avec un effet délétère propre (renoncement à des examens utiles, radiophobie) [32,33]. À l'inverse, l'expertise institutionnelle française récente (ASNR, *Autorité de sûreté nucléaire et de radioprotection*, ex-IRSN) **soutient le maintien du LNT** comme base prudentielle, soulignant qu'il n'est pas une simple hypothèse mais une extrapolation appuyée sur biologie et épidémiologie [13,22].\n\n| Instance | Position sur le LNT | Apport caractéristique | Source |\n|---|---|---|---|\n| **CIPR 103** | **Retenu** (base réglementaire) | Coefficients : 5,5 %/Sv (pop.), 4,1 %/Sv (travailleurs) ; DDREF 2 | [1] |\n| **BEIR VII** | **Endosse** | ≈ 1 cancer / 100 à 100 mSv | [4,25] |\n| **UNSCEAR 2020/21** | **Soutient** (mécanistique) | CDB par trace ; définitions faible dose/débit | [12,14] |\n| **NCRP Comm. 27** | **Maintenir** (+ DDREF) | Revue des études récentes | [30] |\n| **Académies FR (2005)** | **Conteste** (surestimation) | Pas d'effet animal < 100 mSv aigu | [32,33] |\n| **ASNR / Laurier (2023)** | **Soutient** | LNT ≠ simple assumption | [13,22] |\n| **HPS / AAPM** | LNT pour la gestion, **pas pour chiffrer le risque individuel** | Preuve « non concluante » < 100 mSv | [34,35] |\n\n**▸ Le consensus de gestion.** Au-delà des nuances, un point de convergence quasi universel se dégage et structure la pratique de médecine nucléaire — c'est le **socle des trois principes de la CIPR** [1,15] :\n\n1. **Justification** : tout examen doit apporter un bénéfice net (corollaire direct du « pas de seuil » : aucune dose n'est anodine *a priori*).\n2. **Optimisation (ALARA, *As Low As Reasonably Achievable*)** : activité minimale efficace, hydratation et miction post-FDG, adaptation pédiatrique par la **carte de dose EANM** (*European Association of Nuclear Medicine*, dernière mise à jour août 2016) qui pondère l'activité au poids pour viser une **même dose efficace quelle que soit la taille de l'enfant** [16,17,18].\n3. **Limitation** (hors patient) : **travailleurs 20 mSv/an** (moyenné sur 5 ans, ≤ 50 mSv une année donnée), **public 1 mSv/an** [1,15] — bornes définies sous l'hypothèse LNT et qui **ne s'appliquent pas au patient** exposé pour son propre bénéfice.\n\nCe consensus de gestion est ce qui permet de **dépasser la controverse scientifique** : qu'on tienne le LNT pour conservateur ou pour exact, justifier et optimiser chaque examen est la conduite juste dans tous les cas.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — distinguer \"modèle de gestion\" et \"vérité causale\"",
+            "text": "La quasi-totalité des instances s'accordent sur un point souvent mal compris : le LNT est un **outil de gestion prudentiel** (additivité des doses, simplicité opérationnelle), **non un énoncé de causalité individuelle** aux très faibles doses. Aucune des grandes instances (CIPR, UNSCEAR, NCRP, BEIR) n'emploie le LNT pour estimer un nombre de morts par dose collective au plan individuel [1,4]. C'est exactement la même hypothèse qui sert à fixer les limites (20/1 mSv·an⁻¹) et qu'on refuse d'utiliser pour annoncer « X cancers » dans une population : ce n'est pas une contradiction, c'est la frontière entre gérer un risque et le quantifier individuellement."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — l'argument français est souvent caricaturé",
+            "text": "Le rapport des académies françaises de 2005 ne nie pas le risque des fortes doses : il conteste l'**extrapolation linéaire** vers le bas et alerte sur le **coût sanitaire de la radiophobie** (renoncement à des examens justifiés) [32,33]. Le présenter comme une négation de tout risque radique est un contresens. À l'inverse, l'utiliser pour banaliser les faibles doses ignore que les instances internationales — et l'expertise française institutionnelle récente — maintiennent le LNT comme base [13,30]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "5,5 %/Sv",
+            "label": "détriment cancer population (CIPR 103) [1]"
+          },
+          {
+            "value": "4,1 %/Sv",
+            "label": "détriment cancer travailleurs (CIPR 103) [1]"
+          },
+          {
+            "value": "20 / 1 mSv/an",
+            "label": "limite travailleur / public [1,15]"
+          },
+          {
+            "value": "≈ 1/100",
+            "label": "cancers à 100 mSv (BEIR VII) [4]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Schéma en boucle illustrant la logique itérative justification-optimisation-réévaluation ; transposé ici au consensus de gestion du risque radique où, indépendamment du débat sur la validité exacte du LNT, chaque examen est justifié puis optimisé selon ALARA.",
+        "figureCaption": "Fig. C11 — Le consensus de gestion dépasse la controverse : qu'il soit conservateur ou exact, le LNT impose la même boucle pratique — justifier, optimiser (ALARA), limiter — appliquée à chaque acte de médecine nucléaire."
+      },
+      {
+        "title": "D12 - D12 - La LNT en action : justification, optimisation (ALARA) et limites de dose",
+        "text": "Le modèle linéaire sans seuil (**LNT**, *Linear No-Threshold*) n'est pas un objet de laboratoire : c'est l'**armature opérationnelle** de tout le système de radioprotection. Parce qu'il postule un risque proportionnel à la dose, **sans seuil**, et **additif** (N petites doses = une dose unique équivalente), il légitime à la fois le cumul des expositions et l'optimisation systématique. La Commission internationale de protection radiologique (**CIPR**) en fait « la meilleure approche pratique pour gérer le risque » aux faibles doses dans ses recommandations générales de 2007 (**ICRP Publication 103**) [1]. La CIPR insiste : le LNT n'est **pas une simple hypothèse de commodité**, mais une extrapolation appuyée sur la biologie (une trace unique de rayonnement peut produire une cassure double-brin de l'ADN) et l'épidémiologie [13,22].\n\n**Les trois piliers découlent directement du LNT.** L'absence de seuil rend toute dose porteuse d'un risque résiduel — donc tout examen doit se justifier, toute dose se minimiser, et toute exposition non médicale se plafonner :\n\n| Pilier | Énoncé | Ce que le LNT y apporte |\n|---|---|---|\n| **1. Justification** | Tout acte exposant doit produire un bénéfice net supérieur au détriment | Sans seuil → aucun examen n'est « gratuit » en risque : le bénéfice doit être prouvé [1,15] |\n| **2. Optimisation (ALARA)** | Dose **As Low As Reasonably Achievable**, facteurs économiques et sociaux pris en compte | La proportionnalité dose-risque rend tout gain de dose un gain de risque proportionnel [1] |\n| **3. Limitation de dose** | Plafonds réglementaires (hors patient) | Bornes calculées sous l'hypothèse LNT (additivité des doses dans le temps) [1,15] |\n\n**Les limites de dose réglementaires** (cadre ICRP 103, transposé EURATOM/ASNR) sont fixées sous l'hypothèse LNT et **ne s'appliquent jamais au patient** exposé pour son propre bénéfice diagnostique [15] :\n\n| Catégorie | Limite | Précision |\n|---|---|---|\n| **Travailleurs** | **20 mSv/an** | Moyennés sur 5 ans, ≤ **50 mSv** une année donnée [1,15] |\n| **Public** | **1 mSv/an** | Au-dessus du fond naturel [15] |\n| **Cristallin (travailleur)** | seuil déterministe distinct | Hors champ LNT (effet à seuil, cf. D15) |\n\nLe coefficient de risque qui sous-tend ces choix est le **détriment nominal ajusté** de l'ICRP 103 : **5,5 %/Sv** de cancer pour la population entière, **4,1 %/Sv** pour les travailleurs adultes (l'écart tient à l'absence d'enfants, plus radiosensibles, dans la population active), pour un **détriment total ≈ 5,7 %/Sv** [1,24]. Ce coefficient intègre un **facteur d'efficacité dose/débit (DDREF, *Dose and Dose-Rate Effectiveness Factor*) = 2**, qui divise par deux le risque extrapolé des fortes doses vers les faibles, pour les cancers solides ; la leucémie, elle, suit un modèle **linéaire-quadratique** sans DDREF supplémentaire [1,25].\n\n**Limite officielle majeure (à retenir absolument)** : la CIPR recommande explicitement de **NE PAS** utiliser le LNT pour calculer un nombre de cancers en agrégeant de très faibles doses sur de larges populations et de longues périodes. La **dose collective** est un outil d'optimisation, pas un compteur de morts [1].",
+        "stats": [
+          {
+            "value": "5,5 %/Sv",
+            "label": "Détriment cancer, population entière (ICRP 103)"
+          },
+          {
+            "value": "4,1 %/Sv",
+            "label": "Détriment, travailleurs adultes"
+          },
+          {
+            "value": "20 / 1 mSv·an⁻¹",
+            "label": "Limite travailleur / public"
+          },
+          {
+            "value": "DDREF = 2",
+            "label": "Facteur dose/débit, cancers solides"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi le LNT et pas un autre modèle ?",
+            "text": "Cinq modèles dose-réponse coexistent (linéaire sans seuil, à seuil, supralinéaire, linéaire-quadratique, hormèse). La CIPR retient le LNT non parce qu'il serait prouvé au plus bas, mais parce qu'il est **prudentiel, additif et simple à administrer** : il permet de sommer des doses hétérogènes (médicales, professionnelles, naturelles) dans un cadre cohérent [1,21]. Le NCRP Commentary No. 27 (2018), après revue des études récentes, conclut que le LNT (éventuellement avec DDREF) **doit continuer à servir** en radioprotection [30]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — confondre limite de dose et seuil de risque",
+            "text": "La limite de **1 mSv/an** pour le public n'est **pas** un seuil en deçà duquel le risque serait nul (ce serait contradictoire avec le « sans seuil »). C'est un **plafond de gestion** socialement acceptable. De même, les limites travailleur ne s'appliquent **jamais** au patient : un examen justifié peut délivrer bien plus que 20 mSv si le bénéfice le commande [15]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers ALARA — temps, distance, écran — illustrant l'optimisation de dose qui découle du modèle linéaire sans seuil."
+      },
+      {
+        "title": "D13 - D13 - Application à la médecine nucléaire diagnostique : estimer et communiquer le risque d'un examen",
+        "text": "En médecine nucléaire, le LNT fournit le **coefficient de conversion** qui transforme une dose efficace en risque estimé. La chaîne est explicite : l'activité administrée (en MBq) délivre une **dose absorbée** organe (en Gy) selon la biocinétique du radiopharmaceutique et son émission (β⁺, β⁻, γ, électrons Auger) ; la pondération par le facteur radiation (w_R) puis par les facteurs tissulaires (w_T) de l'ICRP 103 donne la **dose efficace** (en mSv) ; enfin, risque ≈ dose efficace × **5,5 %/Sv** [1]. Les coefficients de dose par unité d'activité sont compilés dans l'**ICRP Publication 128** (2015), recueil de référence bâti sur les biocinétiques et les fantômes ICRP/ICRU [19].\n\n**Coefficients de dose des traceurs pivots :**\n\n| Traceur | Émission × énergie | Période | Dose efficace | Organe critique | Source |\n|---|---|---|---|---|---|\n| **¹⁸F-FDG** | β⁺ ; photons d'annihilation **511 keV** | **109,8 min** | **0,019 mSv/MBq** | Paroi vésicale (excrétion urinaire) | [19] |\n| ¹⁸F-FDG (fantômes maillés ICRP) | — | — | **0,017 mSv/MBq** (≈ −10 %) | — | [19] |\n| **⁹⁹ᵐTc** (le plus utilisé) | γ **140 keV** | **6,02 h** | variable selon vecteur | selon vecteur | [19,37] |\n| ⁹⁹ᵐTc-MDP (scinti. osseuse) | γ 140 keV | 6,02 h | **≈ 0,005 mSv/MBq** ; 600 MBq ⇒ ≈ **3 mSv** | Paroi vésicale / os | [37] |\n\n**Mise en perspective — la clé d'une communication juste.** Un risque cité dans le vide effraie ; rapporté au fond naturel et au bénéfice diagnostique, il s'interprète. Le **bruit de fond naturel mondial moyen** est de **≈ 2,4 mSv/an** [41] :\n\n| Acte / exposition | Dose efficace | Équivalent fond naturel |\n|---|---|---|\n| Radiographie thoracique | **≈ 0,02 mSv** | ~3 jours [39,40] |\n| TEP-FDG corps entier (~7 mSv estimés) | ~7 mSv | **≈ 3 ans** [39,41] |\n| Scanner thoracique | **≈ 7 mSv** | ~3 ans [39,40] |\n| TDM abdomino-pelvienne | **≈ 8–10 mSv** | ~3–4 ans [39] |\n| Fond naturel (référence) | **2,4 mSv/an** | — [41] |\n\n**Le geste pratique en médecine nucléaire diagnostique est l'optimisation par traceur** : choix du radionucléide adapté (¹⁸F vs ⁹⁹ᵐTc), activité minimale garantissant la qualité image, et mesures réduisant la dose à l'organe critique. Pour le ¹⁸F-FDG, environ **12 % de l'activité** se concentre dans la vessie à 60 min [36] : **hydratation et mictions fréquentes** réduisent directement la dose vésicale — application clinique immédiate du principe d'optimisation issu du LNT.",
+        "stats": [
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "¹⁸F-FDG, dose efficace (ICRP 128)"
+          },
+          {
+            "value": "≈ 7 mSv",
+            "label": "TEP-FDG corps entier ≈ 3 ans de fond naturel"
+          },
+          {
+            "value": "2,4 mSv/an",
+            "label": "Bruit de fond naturel mondial moyen"
+          },
+          {
+            "value": "0,005 mSv/MBq",
+            "label": "⁹⁹ᵐTc-MDP, scintigraphie osseuse"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le risque cité doit toujours être borné par l'incertitude",
+            "text": "Multiplier 7 mSv par 5,5 %/Sv donne ≈ 1 chance sur 2 600 d'induire un cancer mortel. Ce chiffre est légitime pour **comparer des protocoles** et optimiser, mais l'incertitude au niveau individuel est telle que les sociétés savantes recommandent de **ne pas le présenter comme une prédiction personnelle** (cf. D15). La Health Physics Society déconseille toute estimation quantitative du risque en dessous de **50 mSv/an** ou **100 mSv vie entière** au-dessus du fond [34]."
+          },
+          {
+            "type": "info",
+            "title": "Le ¹²⁴I et la dosimétrie prédictive",
+            "text": "Le LNT régit l'estimation du risque stochastique en diagnostic, mais la même logique dosimétrique (dose absorbée organe) fonde, en versant thérapeutique, la dosimétrie patient-spécifique. Les fantômes maillés (mesh) de l'ICRP affinent désormais les coefficients : −10 % environ pour le ¹⁸F-FDG par rapport aux fantômes stylisés historiques [19]."
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Biodistribution du ¹⁸F-FDG : la dose efficace résultante (0,019 mSv/MBq) est convertie en risque stochastique par le coefficient LNT de 5,5 %/Sv."
+      },
+      {
+        "title": "D14 - D14 - Populations sensibles et seuil de l'absurde : enfant, fœtus et l'écueil du collectif de dose",
+        "text": "Le LNT pose que le risque par unité de dose dépend de la radiosensibilité du sujet. Or celle-ci varie : **enfant** et **fœtus** présentent un risque par gray supérieur à l'adulte (tissus en croissance, espérance de vie résiduelle longue pour exprimer un cancer) — d'où des précautions renforcées qui découlent directement du modèle [4,25].\n\n**L'enfant.** La preuve la plus robuste vient des cohortes de scanner pédiatrique. Pearce et al. (Lancet 2012) montrent une relation dose-réponse linéaire significative : **ERR leucémie = 0,036 par mGy** (IC95 % 0,005–0,120 ; p = 0,0097) et **ERR tumeur cérébrale = 0,023 par mGy** (IC95 % 0,010–0,049 ; p < 0,0001) ; le risque relatif de leucémie atteint **3,18** (IC95 % 1,46–6,94) au-delà de **30 mGy** cumulés [9]. La cohorte **EPI-CT** (9 pays, ~948 000 sujets scannés avant 22 ans) confirme : pour le cancer cérébral, **ERR/100 mGy = 1,27**, avec une dose cérébrale cumulée moyenne de **47,4 mGy** [8] ; pour les hémopathies malignes, **ERR = 1,96 par 100 mGy** (IC95 % 1,10–3,12) [27,28]. En pratique de médecine nucléaire, ce surcroît de risque justifie la **carte de doses pédiatriques EANM** (mise à jour août 2016) : activité = activité de base **pondérée par le poids** + activité minimale garantissant la qualité image, chaque radiopharmaceutique classé en cluster A, B ou C, avec pour objectif une **dose efficace constante quelle que soit la taille de l'enfant** [16,17,18].\n\n**Le fœtus.** L'Oxford Survey of Childhood Cancers, sur des doses de pelvimétrie historiques (**≈ 10 mGy**), retrouvait un excès de risque non nul dès ~10 mSv, avec un excès brut de cancer fatal de l'enfance de l'ordre de **0,4 %** [38] — soutien historique majeur au LNT et fondement des précautions de grossesse (transfert placentaire) et d'allaitement (excrétion lactée) en médecine nucléaire.\n\n**Le seuil de l'absurde : l'écueil de la dose collective.** Voici l'erreur conceptuelle la plus citée. Le LNT, parce qu'il est linéaire et additif, autorise mathématiquement à écrire : *N personnes × dose individuelle infime = X cancers*. C'est précisément ce que la CIPR **interdit** [1]. Multiplier 0,1 mSv reçus par 10 millions de personnes pour annoncer « 55 cancers » extrapole le modèle **hors de son domaine de validité observable** et confère une fausse précision à une incertitude massive [1]. Les grandes instances (CIPR, UNSCEAR, NCRP, BEIR) **n'utilisent aucune** ce calcul pour annoncer un bilan de morts [1,30].\n\n| Niveau d'exposition | Statut de la preuve | Usage légitime du LNT |\n|---|---|---|\n| **> 100 mGy** | Preuve **forte** (LSS, INWORKS, EPI-CT) | Estimation de risque populationnel défendable [5,6] |\n| **~50–100 mGy** | Signal détectable, reproductible | Optimisation, comparaison de protocoles [6,8] |\n| **< 10–50 mGy** | Incertitude majeure, IC larges | **Optimisation oui** ; chiffrage individuel **non** [29,34] |\n| **Dose collective (faible × grand N)** | Hors domaine observable | **Jamais** pour compter des cancers [1] |",
+        "stats": [
+          {
+            "value": "ERR 1,27/100 mGy",
+            "label": "Cancer cérébral, scanner pédiatrique (EPI-CT)"
+          },
+          {
+            "value": "RR 3,18",
+            "label": "Leucémie au-delà de 30 mGy (Pearce 2012)"
+          },
+          {
+            "value": "Août 2016",
+            "label": "Dernière carte de doses pédiatriques EANM"
+          },
+          {
+            "value": "≈ 0,4 %",
+            "label": "Excès de cancer fatal in utero (OSCC)"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Identifier le terrain à risque majoré",
+            "text": "Enfant (tissus en croissance, longue espérance de vie), fœtus, jeune adulte : risque par mGy supérieur à l'adulte [9,25]."
+          },
+          {
+            "title": "2 · Adapter l'activité (médecine nucléaire pédiatrique)",
+            "text": "Appliquer la carte EANM : activité de base pondérée par le poids + activité minimale ; objectif de dose efficace constante quelle que soit la taille [16,18]."
+          },
+          {
+            "title": "3 · Privilégier le non-ionisant quand c'est possible",
+            "text": "Chez l'enfant et la femme enceinte, préférer échographie/IRM lorsque la question clinique le permet (sensibilité accrue confirmée par EPI-CT, Pearce) [8,9]."
+          },
+          {
+            "title": "4 · Refuser le calcul de dose collective comme bilan de cancers",
+            "text": "Optimiser oui ; convertir une dose collective faible en nombre de morts, jamais — extrapolation hors domaine observable [1]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la fausse précision du collectif de dose",
+            "text": "Annoncer un nombre de cancers issu d'une dose collective (faible dose × grande population) est le **détournement le plus fréquent** du LNT, condamné explicitement par l'ICRP 103 [1]. Le modèle sert à **optimiser** (comparer deux organisations, deux protocoles), pas à compter des victimes individualisées."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi l'enfant change l'équation",
+            "text": "Le coefficient de détriment population (5,5 %/Sv) est **supérieur** à celui des travailleurs (4,1 %/Sv) précisément parce que la population inclut des enfants [1,24]. En pédiatrie nucléaire, l'optimisation n'est donc pas un luxe mais l'application la plus rigoureuse du LNT : on minimise la dose chez le sujet le plus radiosensible [4,18]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Application renforcée du principe ALARA aux populations sensibles — enfant et fœtus — où le risque par unité de dose est majoré."
+      },
+      {
+        "title": "D15 - D15 - Pièges, idées reçues et erreurs d'interprétation sur la LNT et les faibles doses",
+        "text": "Le LNT est robuste comme **outil de gestion**, fragile comme **énoncé de causalité individuelle** aux très faibles doses. Confondre les deux registres est la source de presque toutes les erreurs. Voici les pièges majeurs, chacun avec sa correction.\n\n**Piège 1 — « Le LNT est prouvé jusqu'à zéro ».** Faux. La relation est solidement établie **au-dessus de ~100 mGy** (cohorte pivot Hiroshima-Nagasaki, *Life Span Study*, LSS) : 105 444 sujets, suivi 1958–2009, **22 538 cancers solides**, plus basse plage de dose montrant une réponse significative **0–100 mGy (p = 0,038)**, **ERR/Gy = 0,64 chez la femme** (IC95 % 0,52–0,77) [5]. Les données récentes **abaissent** le seuil de détectabilité : INWORKS (309 932 travailleurs du nucléaire, 10,7 M personnes-années) montre une mortalité par cancer solide augmentée de **52 %/Gy** (IC90 % 27–77 %), avec une association qui **se maintient dans la tranche 0–100 mGy**, soit un **ERR ≈ 0,29/Gy** cohérent avec la LSS (≈ 0,28/Gy) [6,7]. Mais en deçà de ~10–50 mGy, la linéarité reste **soutenue, non prouvée** : la LSS elle-même n'a **pas la puissance statistique** de discriminer LNT, seuil et linéaire-quadratique au plus bas [29].\n\n**Piège 2 — « Le LNT s'applique à tous les effets des rayonnements ».** Faux. Le LNT concerne les **effets stochastiques** (probabilité ∝ dose, sans seuil : cancers, effets héréditaires). Il **ne s'applique pas** aux **effets déterministes / réactions tissulaires** (cataracte, érythème, fibrose), qui ont un **seuil** et dont la **sévérité** croît avec la dose [11]. Utiliser le LNT pour une cataracte radique est une faute de catégorie.\n\n**Piège 3 — « Hormèse contre LNT : la science a tranché ».** Faux, dans les deux sens. Des phénomènes biologiques contredisent la stricte linéarité, à la hausse comme à la baisse :\n\n| Phénomène | Sens | Effet sur l'estimation LNT |\n|---|---|---|\n| Effet *bystander*, hypersensibilité aux faibles doses (HRS) | Supralinéaire | LNT **sous-estimerait** le risque [2] |\n| Réponse adaptative, réparation des CDB à faible débit, apoptose | Pro-seuil / hormèse | LNT **surestimerait** le risque [3,21] |\n\nLe support biologique du DDREF est tangible : les foyers γ-H2AX (marqueurs de cassure double-brin, **CDB**) sont **~40 % plus nombreux à fort débit qu'à faible débit** [10]. À l'inverse, UNSCEAR 2020/2021 (Annexe C) maintient qu'une **seule trace** peut produire une CDB et que le rôle des mutations dans la carcinogenèse rend **plausible** un risque sans seuil [14].\n\n**Piège 4 — « Toutes les autorités endossent le LNT de la même façon ».** Faux. La position varie :\n\n| Instance | Position | Source |\n|---|---|---|\n| **CIPR / NCRP / UNSCEAR** | Maintenir le LNT (+DDREF) en radioprotection | [1,30,14] |\n| **Health Physics Society** | Ne pas chiffrer le risque < 50 mSv/an ou < 100 mSv vie entière | [34] |\n| **AAPM** | Preuve épidémiologique « non concluante » sous 100 mSv | [35] |\n| **Académies françaises (2005)** | LNT non étayé au plus bas ; surestimerait le risque ; discute l'hormèse | [32,33] |\n\nLe rapport conjoint des Académies des Sciences et de Médecine (Tubiana, Aurengo, Averbeck, 2005) souligne l'absence d'effet cancérogène animal démontré en aigu **< 100 mSv** et en chronique **< 500 mSv**, et alerte sur un risque **délétère** de la radiophobie : le renoncement à des examens utiles [32,33].\n\n**Piège 5 — « Le BEIR VII donne le risque d'un patient donné ».** Faux. BEIR VII estime **≈ 1 cancer pour 100 personnes** exposées à une dose unique de **100 mSv** [4,25], mais ses coefficients sont des **moyennes populationnelles** ; HPS et AAPM rappellent qu'ils **ne doivent pas servir** à un risque individuel aux faibles doses [25,34,35].\n\n**Piège 6 — la radiophobie iatrogène.** L'erreur de communication la plus dommageable consiste à présenter un risque infime comme une menace certaine, conduisant au refus d'examens justifiés. Le contrepoison : rapporter systématiquement la dose au **bénéfice diagnostique** et au **fond naturel** (≈ 2,4 mSv/an [41]).",
+        "stats": [
+          {
+            "value": "ERR 0,64/Gy",
+            "label": "Cancers solides, femmes, LSS Hiroshima-Nagasaki"
+          },
+          {
+            "value": "+52 %/Gy",
+            "label": "Mortalité cancer solide, travailleurs (INWORKS 2023)"
+          },
+          {
+            "value": "< 100 mSv",
+            "label": "Seuil sous lequel l'AAPM juge la preuve non concluante"
+          },
+          {
+            "value": "~40 %",
+            "label": "Excès de foyers γ-H2AX à fort vs faible débit (DDREF)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le piège statistique de la LSS",
+            "text": "La *Life Span Study* est la meilleure cohorte disponible, mais elle **n'a pas la puissance** de départager formellement LNT, modèle à seuil et linéaire-quadratique dans la zone la plus basse [29]. Conclure « la LSS prouve le LNT à zéro » est une surinterprétation : elle est **compatible** avec le LNT, sans l'établir au plus bas. Le DDREF lui-même reste incertain (valeurs publiées de 1 à 35, le plus souvent 2–10) [25]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la bonne formule de communication",
+            "text": "Le LNT est **prudentiel et opérationnel**, pas un énoncé de causalité individuelle aux très faibles doses [1,30]. La posture juste : utiliser le LNT pour **justifier et optimiser** (registre collectif), et au lit du patient, rapporter la dose au fond naturel et au bénéfice diagnostique plutôt que d'asséner une probabilité de cancer individuelle que ni HPS ni AAPM ne jugent défendable sous 100 mSv [34,35]."
+          },
+          {
+            "type": "info",
+            "title": "Où la recherche progresse",
+            "text": "Le domaine < 100 mGy reste la frontière : programmes européens (MELODI), suivi prolongé de la LSS et d'INWORKS, et cohortes EPI-CT comblent progressivement l'écart entre preuve forte (> 100 mGy) et extrapolation prudente (faibles doses) [6,8,14]."
+          }
+        ]
+      },
+      {
+        "title": "E16 - Synthèse opérationnelle : carte mentale du débat LNT et conduite à tenir",
+        "text": "Le modèle linéaire sans seuil (**LNT**, *linear no-threshold*) n'est pas une vérité physique démontrée mais le **postulat opérationnel** qui structure tout le système de radioprotection : le risque d'effet stochastique (cancer, effets héréditaires) est **proportionnel à la dose, sans seuil**, et les doses successives **s'additionnent** [1,2]. Cette section condense en une carte mentale ce qu'un médecin nucléaire doit savoir trancher : ce que le LNT affirme, ce qu'il ne dit pas, où il est solide, où il est extrapolé, et comment il dicte la conduite à tenir au quotidien.\n\n### 1. Les trois territoires de la dose\n\nLe débat LNT n'a de sens que rapporté au domaine de dose considéré. La preuve épidémiologique change radicalement de nature selon qu'on se situe au-dessus ou au-dessous de **~100 mGy**, borne haute du domaine des faibles doses définie par l'UNSCEAR (faible débit associé : **< 0,1 mGy/min**) [12,14].\n\n| Territoire de dose | Niveau de preuve | Ce qu'on peut affirmer | Posture |\n|---|---|---|---|\n| **> 100 mGy** (fortes doses) | **Robuste** (LSS Hiroshima-Nagasaki) | Excès de cancers solides **démontré** ; ERR sexe-moyen **≈ 0,56/Gy** [5] | Le risque est mesurable, pas hypothétique |\n| **~10–100 mGy** (faibles doses) | **Soutenu mais non prouvé** | Signal désormais **détectable** (INWORKS, EPI-CT) mais IC larges [6,8] | LNT = hypothèse prudente retenue [13,14] |\n| **< 10 mGy** (très faibles doses) | **Indiscernable** | Impossible de distinguer LNT / seuil / hormèse [29] | Ne **pas** chiffrer un risque individuel [34,35] |\n\n### 2. Ce que le LNT s'applique — et ne s'applique PAS\n\nDistinction cardinale, source de la majorité des pièges de raisonnement. Le LNT ne gouverne que les **effets stochastiques** (probabilité ∝ dose, **sans seuil**) ; les **effets déterministes / réactions tissulaires** (cataracte, érythème, fibrose) ont au contraire un **seuil** et une sévérité ∝ dose, et ne relèvent jamais du LNT [11].\n\n| | Effets stochastiques | Effets déterministes |\n|---|---|---|\n| Relation dose | Linéaire **sans seuil** (LNT) | **Avec seuil** |\n| Ce qui varie avec la dose | La **probabilité** | La **sévérité** |\n| Exemples | Cancer radio-induit, mutations | Cataracte, érythème, aplasie |\n| Modèle applicable | LNT (+ DDREF) | Courbe à seuil |\n\n### 3. Les chiffres-clés de conversion dose → risque\n\nEn pratique nucléaire, le LNT fournit le **coefficient de risque** appliqué à la dose efficace : risque ≈ dose efficace (Sv) × coefficient nominal détriment-ajusté. La CIPR (Commission internationale de protection radiologique) retient, à faible débit et **DDREF = 2** (*dose and dose-rate effectiveness factor*) [1,4] :\n\n| Coefficient (CIPR 103) | Valeur | Population concernée |\n|---|---|---|\n| Détriment cancer | **5,5 %/Sv** | Population entière [1] |\n| Détriment total (cancer + héréditaire) | **≈ 5,7 %/Sv** | Population entière [1] |\n| Détriment cancer | **4,1 %/Sv** | Travailleurs adultes [1] |\n| Ordre de grandeur intégrateur | **≈ 1 cancer / 100 personnes à 100 mSv** | BEIR VII [4,25] |\n\nAppliqué à la dosimétrie : un **¹⁸F-FDG** (¹⁸F-fluorodésoxyglucose) délivre **0,019 mSv/MBq** [19] ; une TEP-FDG corps entier (~7 mSv) équivaut à **~3 ans de bruit de fond naturel** (≈ **2,4 mSv/an** mondial) [12,14], mise en perspective essentielle face à la radiophobie.\n\n### 4. La carte des cinq modèles concurrents\n\nLe LNT est un parmi cinq modèles dose-réponse débattus. Comprendre où chacun situe le risque par rapport à la droite LNT permet de lire la littérature critique.\n\n- **LNT** (référence réglementaire) : droite passant par l'origine [1,13].\n- **Supralinéaire** (risque sous-estimé par LNT) : appuyé par l'**effet bystander** et l'**hypersensibilité aux faibles doses (HRS)** [2,22].\n- **Linéaire-quadratique** : retenu pour la **leucémie** (pas de DDREF supplémentaire) [4,25].\n- **À seuil** : pas d'effet en deçà d'un seuil ; un seuil éventuel ne pourrait excéder **quelques dizaines de mGy** [2].\n- **Hormèse** (risque surestimé par LNT) : effet protecteur des faibles doses via réponse adaptative et réparation efficace des cassures double-brin [3,21].\n\nLe support biologique du LNT repose sur le fait qu'**une seule trace de rayonnement peut produire une cassure double-brin de l'ADN** [14], lésion mal réparable ; le support du DDREF, sur l'observation que les foyers γ-H2AX sont **~40 % plus nombreux à fort débit qu'à faible débit** [10].\n\n### 5. La controverse en deux camps\n\n| Position « pro-LNT » | Position « anti-LNT / sceptique » |\n|---|---|\n| CIPR : LNT = meilleure approche pratique [1] | Académies françaises (2005) : LNT non étayé < **100 mSv** aigu, surestime le risque [32,33] |\n| NCRP Commentary 27 (2018) : maintenir le LNT [30] | Health Physics Society : ne pas chiffrer < **50 mSv/an** ou **100 mSv** vie entière [34] |\n| UNSCEAR 2020/21 : justification biologique maintenue [14] | AAPM : preuve < **100 mSv** « non concluante » [35] |\n| Signal renforcé vers le bas (INWORKS +52 %/Gy [6], EPI-CT [8]) | Critique méthodologique du NCRP 27 [31] ; puissance statistique insuffisante de la LSS [29] |\n\n### 6. La conduite à tenir (corollaire des trois principes)\n\nLe LNT, par la proportionnalité sans seuil et l'additivité, **fonde directement** les trois principes de la CIPR : justification, optimisation (**ALARA**, *as low as reasonably achievable*), limitation [1,15]. Le passage du modèle à la pratique est résumé ci-dessous.",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers de réduction de dose — temps, distance, écran — illustrant le principe ALARA qui découle directement de l'additivité sans seuil du modèle LNT.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran : l'optimisation ALARA est le corollaire opérationnel direct de la proportionnalité sans seuil du LNT.",
+        "stats": [
+          {
+            "value": "< 100 mGy",
+            "label": "Domaine des faibles doses (UNSCEAR) [12,14]"
+          },
+          {
+            "value": "5,5 %/Sv",
+            "label": "Détriment cancer, population (CIPR 103) [1]"
+          },
+          {
+            "value": "2",
+            "label": "DDREF appliqué aux cancers solides [1,4]"
+          },
+          {
+            "value": "20 / 1 mSv·an⁻¹",
+            "label": "Limite travailleur / public [15]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1. Justifier",
+            "text": "Aucun examen sans bénéfice net supérieur au détriment. Corollaire direct du « pas de seuil » : toute dose comporte une probabilité de risque, donc toute irradiation doit être justifiée [1,15]."
+          },
+          {
+            "title": "2. Optimiser (ALARA)",
+            "text": "Activité minimale efficace, hydratation et miction post-FDG (organe critique = vessie), adaptation pédiatrique par la carte de dose EANM (mise à jour août 2016) qui vise une **même dose efficace quelle que soit la taille de l'enfant** [16,17,18]."
+          },
+          {
+            "title": "3. Limiter (hors patient)",
+            "text": "Travailleurs **20 mSv/an** (moyenné sur 5 ans, ≤ 50 mSv une année donnée), public **1 mSv/an** ; ces limites ne s'appliquent PAS au patient exposé pour son propre bénéfice diagnostique [15,1]."
+          },
+          {
+            "title": "4. Protéger les terrains radiosensibles",
+            "text": "Enfant (tissus en croissance, espérance de vie longue) et embryon/fœtus : risque par unité de dose majoré [4,38] ; précautions renforcées en grossesse/allaitement, privilégier le non-ionisant [38]."
+          },
+          {
+            "title": "5. Communiquer sans effrayer",
+            "text": "Mettre le risque en regard du bénéfice diagnostique et du bruit de fond naturel ; **ne jamais chiffrer** un risque individuel sous ~50–100 mSv (recommandation conjointe HPS/AAPM) pour éviter le renoncement à des examens utiles [34,35]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la dose collective",
+            "text": "La CIPR (CIPR 103) recommande explicitement de **NE PAS** multiplier une très faible dose individuelle par une grande population pour calculer un « nombre de cancers excédentaires » : les incertitudes sont trop grandes et l'extrapolation sort du domaine observable. Le LNT est un outil de **gestion** prudentielle, **pas** un outil de comptage des morts [1,13]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — confondre stochastique et déterministe",
+            "text": "Le LNT ne s'applique **qu'aux effets stochastiques**. Appliquer un raisonnement « sans seuil » à une cataracte ou un érythème (effets à seuil) est une erreur conceptuelle classique [11]. De même, le **DDREF ne s'applique pas au haut-LET** [1]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi le LNT tient malgré tout",
+            "text": "Trois faits le maintiennent comme référence : (1) une **seule trace ionisante suffit à créer une cassure double-brin** de l'ADN, support mécanistique d'un risque sans seuil [14] ; (2) le signal épidémiologique est désormais **détectable dès ~50–100 mGy** (INWORKS, EPI-CT), confirmant la linéarité vers le bas [6,8] ; (3) son **additivité** offre une cohérence de gestion qu'aucun modèle à seuil ne fournit. Sa faiblesse reste l'absence de preuve directe sous ~10 mGy, où il demeure une hypothèse prudente assumée [13,29]."
+          },
+          {
+            "type": "info",
+            "title": "Repère — additivité",
+            "text": "Conséquence pratique majeure du LNT : **N petites doses ont le même risque cumulé qu'une dose unique équivalente** [2]. C'est ce qui légitime le cumul dosimétrique (dossier d'exposition du travailleur, historique d'irradiation médicale du patient) et l'optimisation systématique de chaque acte."
+          }
+        ]
+      },
+      {
+        "title": "E17 - Références, liens et ressources de référence",
+        "text": "Références primaires et institutionnelles ayant servi à la rédaction de l'article. Les sources sont hiérarchisées : **recommandations/rapports officiels** (CIPR, UNSCEAR, BEIR, NCRP, EANM, HPS, AAPM) en premier rang ; **cohortes épidémiologiques pivots** (LSS, INWORKS, EPI-CT, Pearce) en second ; **revues mécanistiques et critiques** en appui. Chaque valeur chiffrée du corps de l'article renvoie à l'une de ces entrées [1–41].\n\n### Cadre conceptuel et recommandations de radioprotection\n\n- **[1]** CIPR Publication 103 — *The 2007 Recommendations of the International Commission on Radiological Protection* (extrait libre). Référence réglementaire fondatrice (détriment ~5,5 %/Sv population, DDREF = 2, facteurs w_T). https://www.icrp.org/docs/icrp_publication_103-annals_of_the_icrp_37(2-4)-free_extract.pdf\n- **[13]** *The scientific basis for the use of the linear no-threshold (LNT) model at low doses and dose rates in radiological protection*. J. Radiol. Prot. 2023 (IOPscience). https://iopscience.iop.org/article/10.1088/1361-6498/acdfd7\n- **[14]** UNSCEAR 2020/2021 Report Vol. III, Annexe C — *Biological mechanisms relevant for the inference of cancer risks from low-dose and low-dose-rate radiation*. https://www.unscear.org/unscear/en/news/content/unscear-publishes-2020-2021-report--annex-c.html\n- **[15]** *What is the basis for the ICRP 1 mSv and 20 mSv dose limits?* Health Physics Society — Ask the Experts. https://hps.org/publicinformation/ate/q8900/\n- **[20]** CIPR Publication 152 (2022) — *Radiation Detriment Calculation Methodology* (revue J Med Phys, PMC). https://pmc.ncbi.nlm.nih.gov/articles/PMC10277298/\n- **[22]** Laurier et al. 2023 — *The scientific basis for the use of the LNT model in radiological protection* (dépôt ASNR). https://recherche-expertise.asnr.fr/sites/default/files/2023-07/scientific-basis-use-Linear-No-Threshold-model-radiological-protection.pdf\n- **[23]** CIPR Publication 152 — *Radiation Detriment Calculation Methodology* (2022), page éditeur. https://icrp.org/publication.asp?id=ICRP+Publication+152\n- **[24]** *Impact of updating the non-radiation parameters in the ICRP 103 detriment model*. Radiat Environ Biophys 2018 (PMC5902532). https://pmc.ncbi.nlm.nih.gov/articles/PMC5902532/\n- **[30]** NCRP Commentary No. 27 (2018) — *Implications of Recent Epidemiologic Studies for the Linear-Nonthreshold Model and Radiation Protection*. https://ncrponline.org/shop/commentaries/commentary-no-27-implications-of-recent-epidemiologic-studies-for-the-linear-nonthreshold-model-and-radiation-protection-2018/\n\n### Bases scientifiques du modèle, mécanismes et nature de la dose\n\n- **[2]** *The scientific nature of the linear no-threshold (LNT) model used in the system of radiological protection*. Radiat Environ Biophys 2024 (PMC11588861). https://pmc.ncbi.nlm.nih.gov/articles/PMC11588861/\n- **[10]** *The Impact of Dose Rate on DNA Double-Strand Break Formation and Repair in Human Lymphocytes Exposed to Fast Neutron Irradiation*. Int J Mol Sci 2019 (PMC6862539). https://pmc.ncbi.nlm.nih.gov/articles/PMC6862539/\n- **[11]** *Classification of radiation effects for dose limitation purposes: history, current situation and future prospects*. J Radiat Res (Oxford) 2014 — distinction stochastique / déterministe. https://academic.oup.com/jrr/article/55/4/629/930449\n- **[12]** *Low doses of ionising radiation: definitions and contexts*. J. Radiol. Prot. 2024 (IOPscience). https://iopscience.iop.org/article/10.1088/1361-6498/ad83dd\n\n### Données épidémiologiques pivots (cohortes)\n\n- **[4]** BEIR VII Phase 2 (NRC/NAS, 2006) — *Health Risks from Exposure to Low Levels of Ionizing Radiation* (page éditeur). https://www.nationalacademies.org/publications/11340\n- **[25]** BEIR VII Phase 2 (PDF intégral). https://nap.nationalacademies.org/resource/11340/beir_vii_final.pdf\n- **[5]** *Solid Cancer Incidence among the Life Span Study of Atomic Bomb Survivors: 1958–2009*. Radiat Res (PMC10320812) — cohorte LSS pivot. https://pmc.ncbi.nlm.nih.gov/articles/PMC10320812/\n- **[6]** Richardson et al. — *Cancer mortality after low dose exposure to ionising radiation in workers (INWORKS)*. BMJ 2023 (PubMed 37586731). https://pubmed.ncbi.nlm.nih.gov/37586731/\n- **[7]** *Risk of cancer associated with low-dose radiation exposure: comparison INWORKS vs A-bomb survivors*. Radiat Environ Biophys 2021 (PMC7902587). https://pmc.ncbi.nlm.nih.gov/articles/PMC7902587/\n- **[26]** *Examining temporal effects on cancer risk in the INWORKS study*. Int J Cancer 2017 (PMC5286034) — leucémie ERR 2,96/Gy. https://pmc.ncbi.nlm.nih.gov/articles/PMC5286034/\n- **[8]** *Brain cancer after radiation exposure from CT examinations of children and young adults (EPI-CT)*. Lancet Oncology 2023. https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(22)00655-6/abstract\n- **[27]** *Risk of hematological malignancies from CT radiation exposure (EPI-CT)*. Nature Medicine 2023. https://www.nature.com/articles/s41591-023-02620-0\n- **[28]** EPI-CT hémopathies — PubMed 37946058. https://pubmed.ncbi.nlm.nih.gov/37946058/\n- **[9]** Pearce et al. — *Radiation exposure from CT scans in childhood and subsequent risk of leukaemia and brain tumours*. Lancet 2012 (PMC3418594). https://pmc.ncbi.nlm.nih.gov/articles/PMC3418594/\n- **[29]** *Atomic Bomb Survivors Life-Span Study: Insufficient Statistical Power to Select Radiation Carcinogenesis Model*. Dose Response 2015 (PMC4674181). https://pmc.ncbi.nlm.nih.gov/articles/PMC4674181/\n- **[38]** *Radiation exposures in pregnancy, health effects and risks to the embryo/foetus*. J. Radiol. Prot. 2021 (IOPscience). https://iopscience.iop.org/article/10.1088/1361-6498/ac1c95\n\n### Positions critiques et controverse\n\n- **[3]** *Is the Linear No-Threshold Dose-Response Paradigm Still Necessary for the Assessment of Health Effects of Low Dose Radiation?* J Korean Med Sci 2016 (PMC4756336). https://pmc.ncbi.nlm.nih.gov/articles/PMC4756336/\n- **[21]** *Radiation hormesis* — Wikipedia (panorama des modèles dose-réponse concurrents). https://en.wikipedia.org/wiki/Radiation_hormesis\n- **[31]** Ulsh — *A critical evaluation of the NCRP Commentary 27 endorsement of the LNT model*. Environ. Res. 2018. https://www.sciencedirect.com/science/article/abs/pii/S0013935118304389\n- **[32]** Aurengo & Tubiana et al. — *La relation dose-effet et l'estimation des effets cancérogènes des faibles doses* (Académie de Médecine / Académie des Sciences, 2005, PDF). https://www.academie-medecine.fr/wp-content/uploads/2013/12/Aurengo-rapport070405.pdf\n- **[33]** Tubiana et al. — *Dose-effect relationship and estimation of the carcinogenic effects of low doses* (Rapport conjoint des Académies françaises, IJROBP 2005, PubMed 16168825). https://pubmed.ncbi.nlm.nih.gov/16168825/\n- **[34]** *Why was the AAPM position statement on radiation risk below 50–100 mSv revised?* Health Physics Society — Ask the Experts. https://hps.org/publicinformation/ate/q13191.html\n- **[35]** *AAPM Position Statement on Radiation Risks from Medical Imaging Procedures*. https://www.aapm.org/org/policies/details.asp?id=2548\n\n### Application à la médecine nucléaire et dosimétrie pratique\n\n- **[16]** *The new EANM paediatric dosage card* (Lassmann et al.). EJNMMI (Springer). https://link.springer.com/article/10.1007/s00259-007-0370-0\n- **[17]** *Dosage card* — EANM (page ressource officielle, mise à jour août 2016). https://eanm.org/publications/useful-resources/dosage-card/\n- **[18]** *Standardization of administered activities in paediatric nuclear medicine: the EANM perspective*. EJNMMI 2016. https://link.springer.com/article/10.1007/s00259-016-3474-6\n- **[19]** *Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms*. J Nucl Med 2021. https://jnm.snmjournals.org/content/62/12/1805\n- **[36]** *Radiobiological risks in terms of effective dose and organ dose from 18F-FDG whole-body PET/CT*. Saudi J Biol Sci 2021 (PMC8459160). https://pmc.ncbi.nlm.nih.gov/articles/PMC8459160/\n- **[37]** *Assessment of Radiation Exposure during 99mTc-MDP Bone Scintigraphy*. Toxics 2023 (PMC10610792). https://pmc.ncbi.nlm.nih.gov/articles/PMC10610792/\n\n### Mise en perspective des doses (vulgarisation rigoureuse)\n\n- **[39]** *Radiation risk from medical imaging* — Harvard Health (comparaisons de doses en mSv). https://www.health.harvard.edu/cancer/radiation-risk-from-medical-imaging\n- **[40]** *Radiation Dose from X-Ray and CT Exams* — RadiologyInfo.org (RSNA/ACR). https://www.radiologyinfo.org/en/info/safety-xray\n- **[41]** *Radiation doses* — Canadian Nuclear Safety Commission (références de bruit de fond naturel). https://www.cnsc-ccsn.gc.ca/eng/resources/radiation/radiation-doses/\n\n### Liens typés (réseau de l'article)\n\n- **Concepts** : effets stochastiques · effets déterministes / réactions tissulaires · DDREF · détriment · dose efficace (Sv) · dose absorbée (Gy) · ALARA.\n- **Examens / traceurs reliés** : TEP au ¹⁸F-FDG (dosimétrie 0,019 mSv/MBq) [19] · scintigraphie osseuse au ⁹⁹ᵐTc-MDP [37] · TDM (mise en perspective des doses) [39,40].\n- **Cadres réglementaires** : justification · optimisation · limitation (CIPR 103) [1] · carte de dose pédiatrique EANM [17].\n\n*Dernière mise à jour : juin 2026 — version de travail, profil médecin nucléaire. Aucune valeur chiffrée n'est avancée sans renvoi à l'une des sources [1–41] ci-dessus.*",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — quoi lire en priorité",
+            "text": "Pour fonder une pratique : **CIPR 103** [1] (le cadre), **UNSCEAR 2020/21 Annexe C** [14] (les mécanismes), **NCRP Commentary 27** [30] (la réaffirmation 2018). Pour comprendre la controverse : le **rapport des Académies françaises** [32,33] et les positions **HPS/AAPM** [34,35]. Pour les données récentes qui renforcent le LNT vers le bas : **INWORKS 2023** [6] et **EPI-CT 2023** [8,27]."
+          }
+        ]
+      }
+    ]
+  }
+}

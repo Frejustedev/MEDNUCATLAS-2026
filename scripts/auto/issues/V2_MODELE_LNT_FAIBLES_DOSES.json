@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections B6 (tableau ERR + stat n'est pas ici mais texte), C10 (\"ERR sexe-moyen ≈ 0,56/Gy (IC95 0,46–0,66) après ajustement tabac\"), et mention récurrente issue de la FICHE ETALON",
+    "problem": "La valeur d'ERR sexe-moyen pour les cancers solides de la Life Span Study (Grant et al., Radiat Res 2017, PMC10320812) est donnée à ≈ 0,56/Gy (IC95 0,46–0,66) après ajustement tabac. La source primaire rapporte en réalité un ERR sexe-moyen linéaire de 0,50/Gy (IC95 0,42–0,59) SANS ajustement tabac, et 0,47/Gy AVEC ajustement tabac multiplicatif. La valeur 0,56 et son IC (0,46–0,66) ne correspondent à aucun chiffre de l'article ; l'attribution \"après ajustement tabac\" est en outre inversée (l'ajustement tabac ABAISSE l'ERR à 0,47, il ne le porte pas à 0,56). Erreur héritée de la fiche étalon mais contredite par la source primaire. Note : l'argument de convergence INWORKS↔LSS (ailleurs dans le texte) utilise correctement la valeur de MORTALITÉ 0,28/Gy du sous-cohorte appariée — il n'est pas affecté. Les valeurs sexe-spécifiques (0,64/Gy femme linéaire ; 0,20/Gy homme à 1 Gy avec courbure) sont, elles, exactes.",
+    "fix": "Remplacer \"ERR sexe-moyen ≈ 0,56/Gy (IC95 0,46–0,66) après ajustement tabac\" par \"ERR sexe-moyen ≈ 0,50/Gy (IC95 0,42–0,59) sans ajustement tabac, ≈ 0,47/Gy après ajustement tabac\" partout où la valeur 0,56 apparaît (texte C10, et le repère chiffré correspondant)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D13, infoBox \"Point expert — le risque cité doit toujours être borné par l'incertitude\" : \"Multiplier 7 mSv par 5,5 %/Sv donne ≈ 1 chance sur 2 600 d'induire un cancer mortel.\"",
+    "problem": "Le calcul 0,007 Sv × 5,5 %/Sv = 3,85·10⁻⁴ ≈ 1/2 600 est arithmétiquement exact, mais le coefficient 5,5 %/Sv de l'ICRP 103 est le détriment ajusté pour le cancer en INCIDENCE (toutes localisations), pas la mortalité. Le qualifier de risque de \"cancer mortel\" surestime la létalité et confond incidence et mortalité. Le coefficient de mortalité par cancer de l'ICRP 103 est nettement plus bas (~4 %/Sv pour la fatalité ajustée).",
+    "fix": "Remplacer \"d'induire un cancer mortel\" par \"d'induire un cancer (incidence, détriment ICRP 103)\", ou utiliser un coefficient de mortalité approprié si l'on veut parler de cancer mortel."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [5] — Solid Cancer Incidence among the Life Span Study of Atomic Bomb Survivors: 1958–2009",
+    "problem": "The article is real and the title/journal (Radiation Research) match exactly, but the canonical publication year of this specific paper is 2017 (Radiat Res, Vol 187, Issue 5, pp. 513–537). The source title string itself does not state a year, so no citation is factually wrong; flagging only for bibliographic precision if a year is ever appended.",
+    "fix": "If a year is added to source [5], use 2017 (Radiat Res 187(5):513–537). No change needed to in-text claims, which correctly cite the 1958–2009 follow-up data."
+  },
+  {
+    "severity": "minor",
+    "where": "Identity card + quiz — label 'DDREF (ICRP 60/103)' / 'ICRP 60/103'",
+    "problem": "References 'ICRP 60' as a publication name although ICRP 60 is not in the [1]–[41] source list (only ICRP 103, 128, 152 are sourced). This is a textual publication label, not a bracket citation, so it does not breach the ≤41 rule, but ICRP 60 is mentioned without a backing source entry.",
+    "fix": "Either drop the '60' (DDREF=2 is fully supported by the cited ICRP 103 [1]) or keep as-is since it is historically accurate; not a fabrication, purely a sourcing-completeness nuance."
+  }
+]
