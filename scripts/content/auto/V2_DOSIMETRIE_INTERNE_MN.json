@@ -1,0 +1,1454 @@
+{
+  "id": "V2_DOSIMETRIE_INTERNE_MN",
+  "cat": "bases_physiques",
+  "catLabel": "",
+  "title": "Dosimétrie interne en médecine nucléaire : du becquerel à la dose absorbée (formalisme MIRD)",
+  "difficulty": "avancé",
+  "tags": [
+    "dosimétrie interne",
+    "formalisme MIRD",
+    "dose absorbée",
+    "activité cumulée",
+    "valeur S",
+    "MIRDcalc",
+    "OLINDA/EXM",
+    "ICRP 128",
+    "dose efficace",
+    "PRRT",
+    "radiothérapie interne vectorisée",
+    "becquerel",
+    "gray",
+    "théranostique"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] MIRD Pamphlet No. 21: A Generalized Schema for Radiopharmaceutical Dosimetry—Standardization of Nomenclature (Bolch WE, Eckerman KF, Sgouros G, Thomas SR), J Nucl Med 2009;50(3):477-484",
+      "url": "https://jnm.snmjournals.org/content/50/3/477"
+    },
+    {
+      "title": "[2] MIRD pamphlet No. 21: a generalized schema for radiopharmaceutical dosimetry — PubMed (PMID 19258258)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19258258/"
+    },
+    {
+      "title": "[3] MIRD Pamphlet No. 28, Part 1: MIRDcalc—A Software Tool for Medical Internal Radiation Dosimetry, J Nucl Med 2023;64(7):1117-1124",
+      "url": "https://jnm.snmjournals.org/content/64/7/1117"
+    },
+    {
+      "title": "[4] MIRD Pamphlet No. 28, Part 2: Comparative Evaluation of MIRDcalc Dosimetry Software Across a Compendium of Diagnostic Radiopharmaceuticals — PubMed (PMID 37268423)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37268423/"
+    },
+    {
+      "title": "[5] MIRD Pamphlet No. 28, Part 2: Comparative Evaluation of MIRDcalc Dosimetry Software (PMC10394313)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10394313/"
+    },
+    {
+      "title": "[6] MIRDcalc — MIRDSoft (download & description)",
+      "url": "https://mirdsoft.org/mirdcalc"
+    },
+    {
+      "title": "[7] IAEA Nuclear Medicine Physics Handbook — Chapter 18: Internal Dosimetry (C. Hindorf)",
+      "url": "https://unm.lf1.cuni.cz/trnka/IAEA/Chapter_18_Internal_Dosimetry_text.pdf"
+    },
+    {
+      "title": "[8] Internal Dosimetry: the MIRD Approach (RadCommons residents physics notes)",
+      "url": "https://www.radcommons.org/residents/files/physics/20161208-MIRD-Internal-Dosimetry.pdf"
+    },
+    {
+      "title": "[9] MIRD Internal Dosimetry — OncologyMedicalPhysics.com",
+      "url": "https://oncologymedicalphysics.com/mird-internal-dosimetry/"
+    },
+    {
+      "title": "[10] OLINDA/EXM: The Second-Generation Personal Computer Software for Internal Dose Assessment in Nuclear Medicine (Stabin MG, Sparks RB, Crowe E), J Nucl Med 2005;46(6):1023-1027",
+      "url": "https://jnm.snmjournals.org/content/46/6/1023"
+    },
+    {
+      "title": "[11] OLINDA/EXM: the second-generation personal computer software for internal dose assessment — PubMed (PMID 15937315)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15937315/"
+    },
+    {
+      "title": "[12] Principal Author of OLINDA/EXM Software Joins Voximetry (FDA 510(k) K033960, 15 Jun 2004; >2000 sites) — Voximetry",
+      "url": "https://voximetry.com/2024/11/13/principal-author-of-olinda-exm-software-joins-voximetry/"
+    },
+    {
+      "title": "[13] ICRP Publication 103. The 2007 Recommendations of the International Commission on Radiological Protection — free extract PDF (icrp.org)",
+      "url": "https://www.icrp.org/docs/icrp_publication_103-annals_of_the_icrp_37(2-4)-free_extract.pdf"
+    },
+    {
+      "title": "[14] Radiation weighting factor — ICRPaedia",
+      "url": "https://icrpaedia.org/Radiation_weighting_factor"
+    },
+    {
+      "title": "[15] Tissue weighting factor — ICRPaedia",
+      "url": "https://icrpaedia.org/Tissue_weighting_factor"
+    },
+    {
+      "title": "[16] Table 1: Tissue weighting factors according to ICRP 103 (ICRP 2007) — European Commission / GreenFacts",
+      "url": "https://ec.europa.eu/health/scientific_committees/opinions_layman/security-scanners/en/figtableboxes/tissue-weighting-factors.htm"
+    },
+    {
+      "title": "[17] ICRP Publication 107. Nuclear decay data for dosimetric calculations — PubMed (PMID 19285593)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19285593/"
+    },
+    {
+      "title": "[18] ICRPædia Guide to Dose Coefficients — ICRPaedia",
+      "url": "https://icrpaedia.org/ICRP%C3%A6dia_Guide_to_Dose_Coefficients"
+    },
+    {
+      "title": "[19] Effective dose to adult patients from 338 radiopharmaceuticals estimated using ICRP biokinetic data, ICRP/ICRU reference phantoms and ICRP 2007 tissue weighting factors (PMC4545621)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4545621/"
+    },
+    {
+      "title": "[20] IDAC-Dose 2.1, an internal dosimetry program for diagnostic nuclear medicine based on the ICRP adult reference voxel phantoms (PMC5668221)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5668221/"
+    },
+    {
+      "title": "[21] Radiobiological risks in terms of effective dose and organ dose from 18F-FDG whole-body PET/CT procedures (PMC8459160)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8459160/"
+    },
+    {
+      "title": "[22] Optimizing Oncologic FDG-PET/CT Scans to Decrease Radiation Exposure — Image Wisely",
+      "url": "https://www.imagewisely.org/Imaging-Modalities/Nuclear-Medicine/Optimizing-Oncologic-FDG-PETCT-Scans"
+    },
+    {
+      "title": "[23] Dosimetry Evaluation on the Use of 18F-FDG for PET/CT Imaging using OLINDA/EXM and Geant4 Monte Carlo Simulations (ICRP-128 compliance) (PMC12513526)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12513526/"
+    },
+    {
+      "title": "[24] [68Ga]Ga-PSMA-11: The First FDA-Approved 68Ga-Radiopharmaceutical for PET Imaging of Prostate Cancer (PMC8401928)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401928/"
+    },
+    {
+      "title": "[25] Radiation dosimetry of [68Ga]PSMA-11 in low-risk prostate cancer patients — EJNMMI Physics 2018 (PMC6328430)",
+      "url": "https://ejnmmiphys.springeropen.com/articles/10.1186/s40658-018-0239-2"
+    },
+    {
+      "title": "[26] Radiation dosimetry of [68Ga]PSMA-11 in low-risk prostate cancer patients — PubMed (PMID 30631980)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30631980/"
+    },
+    {
+      "title": "[27] The SNMMI Practice Guideline for Therapy of Thyroid Disease with 131I 3.0 (Silberstein EB et al.), J Nucl Med 2012;53(10):1633-1651",
+      "url": "https://jnm.snmjournals.org/content/53/10/1633"
+    },
+    {
+      "title": "[28] Improved Patient Dosimetry at Radioiodine Therapy by Combining the ICRP Compartment Model and the EANM Pre-Therapeutic Standard Procedure for Benign Thyroid Diseases — Frontiers Endocrinol 2021",
+      "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2021.634955/full"
+    },
+    {
+      "title": "[29] Dosimetry in Lu-177-DOTATATE peptide receptor radionuclide therapy: a systematic review — Clin Transl Imaging 2023 (10.1007/s40336-023-00589-x)",
+      "url": "https://link.springer.com/article/10.1007/s40336-023-00589-x"
+    },
+    {
+      "title": "[30] Individualized Dosimetry of Kidney and Bone Marrow in Patients Undergoing 177Lu-DOTA-Octreotate Treatment — PubMed (PMID 23223392)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23223392/"
+    },
+    {
+      "title": "[31] Individualized Dosimetry of Kidney and Bone Marrow in Patients Undergoing 177Lu-DOTA-Octreotate Treatment, J Nucl Med 2013;54(1):33-41",
+      "url": "https://jnm.snmjournals.org/content/54/1/33"
+    },
+    {
+      "title": "[32] Dosimetry of [177Lu]Lu-DOTATATE in Patients with Advanced Midgut Neuroendocrine Tumors: Results from a Substudy of the Phase III NETTER-1 Trial (PMC11876735)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11876735/"
+    },
+    {
+      "title": "[33] Phase 3 Trial of 177Lu-Dotatate for Midgut Neuroendocrine Tumors — NETTER-1 (Strosberg J et al., N Engl J Med 2017; PMID 28076709)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28076709/"
+    },
+    {
+      "title": "[34] Renal and Multiorgan Safety of 177Lu-PSMA-617 in Patients with mCRPC in the VISION Dosimetry Substudy, J Nucl Med 2024;65(1):71-78",
+      "url": "https://jnm.snmjournals.org/content/65/1/71"
+    },
+    {
+      "title": "[35] Renal and Multiorgan Safety of 177Lu-PSMA-617 — VISION Dosimetry Substudy (PMC10755516)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10755516/"
+    },
+    {
+      "title": "[36] Dosimetry of 177Lu-PSMA-617 for the treatment of mCRPC: results from the VISION trial sub-study — ASCO JCO 2022;40(6_suppl):097",
+      "url": "https://ascopubs.org/doi/abs/10.1200/JCO.2022.40.6_suppl.097"
+    },
+    {
+      "title": "[37] EANM dosimetry committee recommendations for dosimetry of 177Lu-labelled somatostatin-receptor- and PSMA-targeting ligands (PMC9015994 / 10.1007/s00259-022-05727-7)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9015994/"
+    },
+    {
+      "title": "[38] Joint EANM/SNMMI procedure guideline for the use of 177Lu-labeled PSMA-targeted radioligand-therapy (177Lu-PSMA-RLT) (2023; 10.1007/s00259-023-06255-8 / PMC10317889)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10317889/"
+    },
+    {
+      "title": "[39] Lutetium 177 — an overview (half-life 6.647 d, β max ~498 keV, γ 113/208 keV) — ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/lutetium-177"
+    },
+    {
+      "title": "[40] Production of 177Lu for Targeted Radionuclide Therapy: Available Options (PMC4463871)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4463871/"
+    },
+    {
+      "title": "[41] Evaluation of the 177mLu-concentration in in-house produced 177Lu-radiopharmaceuticals and commercially available Lutathera® — EJNMMI Radiopharm Chem 2023 (PMC10628054)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10628054/"
+    },
+    {
+      "title": "[42] Dosimetric Techniques in 90Y-Microsphere Therapy of Liver Cancer: The MIRD Equations for Dose Calculations, J Nucl Med 2006;47(7):1209-1211",
+      "url": "https://jnm.snmjournals.org/content/47/7/1209"
+    },
+    {
+      "title": "[43] Y-90 Radioembolization (TARE) Guide (lung shunt >20% absolute contraindication) — RadCall",
+      "url": "https://rad-call.com/guides/procedures/y90-radioembolization"
+    },
+    {
+      "title": "[44] Y-90 SIRT: evaluation of TCP variation across dosimetric models — EJNMMI Physics 2021 (PMC8192668)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8192668/"
+    },
+    {
+      "title": "[45] How does a Tc-99m generator work? (Mo-99/Tc-99m) — Learn Radiology Physics",
+      "url": "https://learnradiologyphysics.com/how-does-a-tc-99m-generator-work/"
+    },
+    {
+      "title": "[46] Nuclear Medicine: The 5 Types of Purity — The Radiology Review",
+      "url": "https://www.theradiologyreview.com/blog/nuclear-medicine-the-5-types-of-purity"
+    },
+    {
+      "title": "[47] The new EANM paediatric dosage card (Lassmann M et al., 2008) — PubMed (PMID 18719912)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18719912/"
+    },
+    {
+      "title": "[48] Dosage card — EANM (official page)",
+      "url": "https://eanm.org/publications/useful-resources/dosage-card/"
+    },
+    {
+      "title": "[49] EANM_Dosage_Card_040214.pdf — EANM (official PDF, v5.7.2016)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[50] Standardization of Administered Activities in Pediatric Nuclear Medicine: First Nuclear Medicine Global Initiative Project, Part 2, J Nucl Med 2016;57(7):1148-1157",
+      "url": "https://jnm.snmjournals.org/content/57/7/1148"
+    },
+    {
+      "title": "[51] MIRD Pamphlet No. 17: The Dosimetry of Nonuniform Activity Distributions—Radionuclide S Values at the Voxel Level (Bolch WE, Bouchet LG et al., PMID 9935083)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9935083/"
+    },
+    {
+      "title": "[52] Dosimetry — Nuclear Medicine (IAEA Human Health Campus)",
+      "url": "https://www.iaea.org/resources/hhc/medical-physics/nuclear-medicine/dosimetry"
+    },
+    {
+      "title": "[53] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals: a Compendium of Current Information (Mattsson S et al., Ann ICRP 2015; 10.1177/0146645314558019)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[54] ICRP Publication 110: Adult Reference Computational Phantoms — icrp.org",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+110"
+    },
+    {
+      "title": "[55] Adult male and female reference computational phantoms. ICRP publication 110 — INIS/IAEA",
+      "url": "https://inis.iaea.org/records/khhgm-vze13"
+    },
+    {
+      "title": "[56] 68Ga-PSMA PET/CT: Joint EANM and SNMMI procedure guideline for prostate cancer imaging: version 1.0 (Fendler WP et al., 10.1007/s00259-017-3670-z)",
+      "url": "https://link.springer.com/article/10.1007/s00259-017-3670-z"
+    },
+    {
+      "title": "[57] MIRD Pamphlet No. 26: Joint EANM/MIRD Guidelines for Quantitative 177Lu SPECT Applied for Dosimetry of Radiopharmaceutical Therapy (Ljungberg M et al.), J Nucl Med 2016;57(1):151-162",
+      "url": "https://jnm.snmjournals.org/content/57/1/151"
+    },
+    {
+      "title": "[58] Normal-Tissue Tolerance to Radiopharmaceutical Therapies, the Knowns and the Unknowns (Wahl RL et al.), J Nucl Med 2021;62(Suppl 3):23S-35S",
+      "url": "https://jnm.snmjournals.org/content/62/Supplement_3/23S"
+    },
+    {
+      "title": "[59] Relevance of External Beam Dose–Response Relationships to Kidney Toxicity Associated with Radionuclide Therapy (O'Donoghue J, PMID 15285886)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15285886/"
+    },
+    {
+      "title": "[60] Nephrotoxicity after radionuclide therapies (PMC8633679)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8633679/"
+    },
+    {
+      "title": "[61] An indirect high iodine (131I) effective dose used for thyroid ablation in patients with thyroid cancer — Benua/Leeper limits (PMC7386177)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7386177/"
+    },
+    {
+      "title": "[62] SNMMI Procedure Standard for Bone Scintigraphy 4.0 (Bartel TB et al.), J Nucl Med Technol 2018;46(4):398-404",
+      "url": "https://tech.snmjournals.org/content/46/4/398"
+    },
+    {
+      "title": "[63] SNMMI Procedure Standard/EANM Practice Guideline for Nuclear Medicine Evaluation and Therapy of Differentiated Thyroid Cancer: Abbreviated Version, J Nucl Med 2022;63(6):15N-35N",
+      "url": "https://jnm.snmjournals.org/content/63/6/15N"
+    },
+    {
+      "title": "[64] FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 (Boellaard R et al., PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[65] EANM/EARL FDG-PET/CT accreditation — summary results from the first 200 accredited imaging systems (Kaalep A et al., PMC5787222)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5787222/"
+    },
+    {
+      "title": "[66] Evaluation of SUV normalized by lean body mass (SUL) in 68Ga-PSMA11 PET/CT: a bi-centric analysis (PMC6889088)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6889088/"
+    },
+    {
+      "title": "[67] Standardized uptake value (SUV) — Turku PET Centre methodology",
+      "url": "https://www.turkupetcentre.net/petanalysis/model_suv.html"
+    },
+    {
+      "title": "[68] The new EANM paediatric dosage card (Lassmann M, Biassoni L, Monsieurs M, Franzius C, Jacobs F, 2007) — PubMed (PMID 17406866)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17406866/"
+    },
+    {
+      "title": "[69] ICRP Publication 94: Release of patients after therapy with unsealed radionuclides — icrp.org",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+94"
+    },
+    {
+      "title": "[70] A practical individualized radiation precaution based on dose rate at release after 131I ablation (PMC8139448, PLOS One)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8139448/"
+    },
+    {
+      "title": "[71] ICRP Publication 140: Radiological Protection in Therapy with Radiopharmaceuticals (Yonekura Y et al., PMID 31565950)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31565950/"
+    },
+    {
+      "title": "[72] Xofigo (radium Ra-223 dichloride) Injection — FDA label (accessdata.fda.gov, NDA 203971)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/203971lbl.pdf"
+    },
+    {
+      "title": "[73] Predictive SIRT dosimetry based on a territorial model (partition model 90Y) — EJNMMI Physics 2017 (PMC5663990)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5663990/"
+    },
+    {
+      "title": "[74] Personalised versus standard dosimetry approach of selective internal radiation therapy in patients with locally advanced HCC (DOSISPHERE-01) (Garin E et al., Lancet Gastroenterol Hepatol)",
+      "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(20)30290-9/abstract"
+    },
+    {
+      "title": "[75] MIRD Pamphlet No. 16: Techniques for Quantitative Radiopharmaceutical Biodistribution Data Acquisition and Analysis for Use in Human Radiation Dose Estimates (Siegel JA et al.), J Nucl Med 1999;40(2):37S-61S",
+      "url": "https://jnm.snmjournals.org/content/40/2/37S.long"
+    },
+    {
+      "title": "[76] MIRD Pamphlet No. 30: MIRDfit—A Tool for Fitting of Biodistribution Time–Activity Data for Internal Dosimetry (PMC11533917)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11533917/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "atom",
+        "label": "Cadre méthodologique",
+        "value": "Schéma MIRD (MIRD Pamphlet 21, JNM 2009)"
+      },
+      {
+        "icon": "list",
+        "label": "Équation fondamentale",
+        "value": "D(r_T) = Σ Ã(r_S) · S(r_T ← r_S)"
+      },
+      {
+        "icon": "activity",
+        "label": "Activité cumulée Ã",
+        "value": "Nombre total de désintégrations (Bq·s)"
+      },
+      {
+        "icon": "zap",
+        "label": "Valeur S",
+        "value": "Dose/désintégration (Gy·(Bq·s)⁻¹)"
+      },
+      {
+        "icon": "target",
+        "label": "Grandeur résultante",
+        "value": "Dose absorbée (Gy = J·kg⁻¹)"
+      },
+      {
+        "icon": "shield",
+        "label": "Dose efficace",
+        "value": "E = Σ w_T·H_T (Sv), Σw_T = 1 (ICRP 103)"
+      },
+      {
+        "icon": "flask",
+        "label": "Données de décroissance",
+        "value": "ICRP 107 : 1252 radionucléides"
+      },
+      {
+        "icon": "microscope",
+        "label": "Fantômes de référence",
+        "value": "Voxélisés adultes H/F (ICRP 110)"
+      },
+      {
+        "icon": "radiation",
+        "label": "Coefficients diagnostiques",
+        "value": "ICRP 128 : 120 radiopharmaceutiques"
+      },
+      {
+        "icon": "droplets",
+        "label": "Réf. ¹⁸F-FDG (adulte)",
+        "value": "0,019 mSv/MBq ; vessie ~0,16 mGy/MBq"
+      },
+      {
+        "icon": "alert",
+        "label": "Seuils PRRT/RLT",
+        "value": "Reins 23 Gy · moelle 2 Gy"
+      },
+      {
+        "icon": "syringe",
+        "label": "Logiciels de calcul",
+        "value": "OLINDA/EXM, IDAC-Dose, MIRDcalc"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie",
+        "value": "Carte de dose EANM (clusters A/B/C)"
+      },
+      {
+        "icon": "stetho",
+        "label": "w_R particules α",
+        "value": "20 (ICRP 103)"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "TEP au ¹⁸F-FDG"
+      },
+      {
+        "type": "examen",
+        "label": "TEP au ⁶⁸Ga-PSMA-11"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse au ⁹⁹ᵐTc"
+      },
+      {
+        "type": "theranostique",
+        "label": "PRRT au ¹⁷⁷Lu-DOTATATE"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-PSMA-617 (RLT)"
+      },
+      {
+        "type": "theranostique",
+        "label": "Radioembolisation hépatique à l'⁹⁰Y (SIRT)"
+      },
+      {
+        "type": "theranostique",
+        "label": "Traitement du cancer thyroïdien à l'¹³¹I"
+      },
+      {
+        "type": "traceur",
+        "label": "²²³Ra-dichlorure (émetteur α)"
+      },
+      {
+        "type": "traceur",
+        "label": "Générateur ⁹⁹Mo/⁹⁹ᵐTc"
+      },
+      {
+        "type": "maladie",
+        "label": "Tumeurs neuroendocrines"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer de la prostate mCRPC"
+      },
+      {
+        "type": "score",
+        "label": "Dose biologique efficace (BED)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Dans le formalisme MIRD (Pamphlet 21), la dose absorbée à une région cible s'écrit D(r_T) = Σ Ã(r_S) · S(r_T ← r_S). Que représente le terme Ã(r_S) ?",
+        "options": [
+          "L'activité administrée au patient",
+          "L'activité intégrée dans le temps (nombre total de désintégrations dans la source)",
+          "Le débit de dose instantané dans la cible",
+          "La fraction absorbée spécifique"
+        ],
+        "answer": 1,
+        "explanation": "Ã(r_S) est l'activité intégrée dans le temps (anciennement « activité cumulée »), égale au nombre total de désintégrations dans la région source, en Bq·s. C'est l'intégrale de la courbe activité-temps jusqu'à décroissance complète [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est l'unité de la valeur S, S(r_T ← r_S) ?",
+        "options": [
+          "Bq·s",
+          "Gy",
+          "Gy·(Bq·s)⁻¹",
+          "Sv·MBq⁻¹"
+        ],
+        "answer": 2,
+        "explanation": "La valeur S est la dose absorbée délivrée à la cible par unité d'activité cumulée dans la source, soit Gy·(Bq·s)⁻¹ (p. ex. mGy·(MBq·s)⁻¹). Elle dépend du radionucléide, de la géométrie source-cible et de la masse de la cible [1,7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "La fraction absorbée φ(r_T ← r_S) qui entre dans le calcul de la valeur S est une grandeur :",
+        "options": [
+          "Comprise entre 0 et 1, sans dimension",
+          "Exprimée en gray",
+          "Toujours égale à 1 pour les photons",
+          "Exprimée en kg⁻¹"
+        ],
+        "answer": 0,
+        "explanation": "La fraction absorbée est la part de l'énergie émise par la source qui est absorbée dans la cible : un nombre sans dimension entre 0 et 1. La fraction absorbée spécifique Φ = φ/M(r_T) est, elle, exprimée par unité de masse [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon l'ICRP 103, quel est le facteur de pondération radiologique w_R des particules alpha ?",
+        "options": [
+          "1",
+          "2",
+          "5",
+          "20"
+        ],
+        "answer": 3,
+        "explanation": "L'ICRP 103 (2007) attribue w_R = 20 aux particules alpha, contre 1 pour les photons et les électrons. Ce facteur traduit l'efficacité biologique relative élevée des rayonnements de TEL élevé et sert au calcul de la dose équivalente H_T [13,14].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Dans le système ICRP 103, que vaut la somme de tous les facteurs de pondération tissulaire Σ w_T ?",
+        "options": [
+          "0,12",
+          "0,5",
+          "1,0",
+          "Variable selon l'âge"
+        ],
+        "answer": 2,
+        "explanation": "La somme des facteurs de pondération tissulaire w_T vaut exactement 1,0 ; les valeurs individuelles vont de 0,01 (p. ex. peau, cerveau) à 0,12 (moelle rouge, côlon, poumon, estomac, sein). La dose efficace est E = Σ w_T·H_T [13,15].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle publication de l'ICRP fournit la base de données de décroissance nucléaire (demi-vies, énergies, rendements) utilisée pour la dosimétrie ?",
+        "options": [
+          "ICRP 103",
+          "ICRP 107",
+          "ICRP 110",
+          "ICRP 128"
+        ],
+        "answer": 1,
+        "explanation": "L'ICRP 107 (2009) fournit les données de décroissance pour 1252 radionucléides de 97 éléments et remplace l'ICRP 38. L'ICRP 103 donne les pondérations, l'ICRP 110 les fantômes voxélisés, l'ICRP 128 les coefficients diagnostiques [17,54].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la dose efficace de référence du ¹⁸F-FDG chez l'adulte ?",
+        "options": [
+          "0,0019 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,19 mSv/MBq",
+          "1,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "La dose efficace adulte du ¹⁸F-FDG est de 0,019 mSv/MBq (ICRP 128). L'organe critique est la paroi vésicale (~0,16 mGy/MBq), d'où l'intérêt de l'hydratation et des mictions fréquentes [21,53].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "En PRRT par ¹⁷⁷Lu-DOTATATE, quels sont les deux organes à risque dose-limitants ?",
+        "options": [
+          "Foie et poumons",
+          "Reins et moelle osseuse rouge",
+          "Thyroïde et glandes salivaires",
+          "Cœur et vessie"
+        ],
+        "answer": 1,
+        "explanation": "Les reins (réabsorption tubulaire proximale du peptide) et la moelle osseuse rouge sont les organes dose-limitants de la PRRT au ¹⁷⁷Lu-DOTATATE. La protection rénale repose sur la co-perfusion d'acides aminés [29,31,37].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle valeur de dose absorbée à la moelle osseuse rouge est classiquement retenue comme seuil hématologique en thérapie par radioligand ?",
+        "options": [
+          "0,5 Gy",
+          "2 Gy",
+          "10 Gy",
+          "23 Gy"
+        ],
+        "answer": 1,
+        "explanation": "Le seuil de 2 Gy à la moelle osseuse rouge est retenu comme limite hématologique pour une exposition de RLT. Le seuil rénal historique est de 23 Gy, dérivé de la radiothérapie externe (Emami 1991), avec une tolérance étendue à 28–40 Gy selon les facteurs de risque [37,58,59].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans la sous-étude dosimétrique de l'essai VISION (¹⁷⁷Lu-PSMA-617), quel organe reçoit la dose par unité d'activité la plus élevée ?",
+        "options": [
+          "Les reins",
+          "La moelle rouge",
+          "Les glandes lacrymales",
+          "Le foie"
+        ],
+        "answer": 2,
+        "explanation": "Les glandes lacrymales reçoivent ~2,1 Gy/GBq, contre 0,63 Gy/GBq pour les glandes salivaires, 0,43 Gy/GBq pour les reins et 0,035 Gy/GBq pour la moelle rouge. Sur 6 cycles, les lacrymales cumulent ~92 Gy estimés [34,35].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "En radioembolisation hépatique à l'⁹⁰Y, quel niveau de shunt hépato-pulmonaire constitue une contre-indication absolue ?",
+        "options": [
+          "> 5 %",
+          "> 10 %",
+          "> 20 %",
+          "> 50 %"
+        ],
+        "answer": 2,
+        "explanation": "Un shunt hépato-pulmonaire supérieur à 20 % (estimé par SPECT au ⁹⁹ᵐTc-MAA) contre-indique le traitement par microsphères d'⁹⁰Y, en raison du risque de pneumopathie radique [43,44].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel logiciel de dosimétrie interne a obtenu une autorisation FDA 510(k) en juin 2004 et a remplacé MIRDOSE3.1 ?",
+        "options": [
+          "IDAC-Dose 2.1",
+          "MIRDcalc",
+          "OLINDA/EXM",
+          "MIRDfit"
+        ],
+        "answer": 2,
+        "explanation": "OLINDA/EXM (Organ Level INternal Dose Assessment / EXponential Modeling), publié par Stabin et al. (JNM 2005), a obtenu l'autorisation FDA 510(k) en juin 2004 et a remplacé MIRDOSE3.1, dont il reproduit les doses à 1–2 % près [10,11,12].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "MIRDcalc (MIRD Pamphlet 28) est un outil de calcul de dose dont la principale caractéristique est :",
+        "options": [
+          "Un logiciel commercial réservé à l'⁹⁰Y",
+          "Un outil gratuit approuvé SNMMI, basé sur les fantômes et coefficients ICRP",
+          "Un module de planification de radiothérapie externe",
+          "Un système exclusivement dédié à la dosimétrie cellulaire"
+        ],
+        "answer": 1,
+        "explanation": "MIRDcalc (JNM 2023;64(7):1117) est un outil organe-niveau gratuit approuvé par la SNMMI, basé sur les fantômes et coefficients de référence ICRP, avec propagation d'incertitude et calcul de la dose efficace via les w_T de l'ICRP 103 [3,6].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "La carte de dose pédiatrique de l'EANM répartit les radiopharmaceutiques en clusters. Que vise principalement cette approche ?",
+        "options": [
+          "Une activité administrée fixe quel que soit le poids",
+          "Une dose efficace indépendante du poids tout en garantissant une qualité d'image minimale",
+          "Une dose absorbée maximale à la tumeur",
+          "Une élimination urinaire accélérée"
+        ],
+        "answer": 1,
+        "explanation": "La carte de dose EANM (clusters A = études rénales, B = la plupart des autres, C = études thyroïdiennes à l'iode) ajuste l'activité au poids pour obtenir une dose efficace quasi indépendante du poids, avec une activité minimale garantissant une qualité d'image suffisante [47,50].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "La méthode Benua–Leeper pour le cancer thyroïdien à l'¹³¹I limite la dose au sang à :",
+        "options": [
+          "0,5 Gy",
+          "2 Gy",
+          "10 Gy",
+          "23 Gy"
+        ],
+        "answer": 1,
+        "explanation": "La méthode Benua–Leeper (« plus forte activité sûre ») impose une dose au sang inférieure à 2 Gy (200 rad), une rétention corps entier à 48 h < 4,4 GBq et une captation pulmonaire à 24 h < 3 GBq [61].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Comment se construit la courbe activité-temps d'un organe avant intégration pour obtenir l'activité cumulée ?",
+        "options": [
+          "Par une mesure unique au temps zéro",
+          "Par ajustement mono- ou bi-exponentiel de points d'imagerie séquentiels, intégré jusqu'à l'infini",
+          "Par calcul direct à partir de la seule demi-vie physique",
+          "Uniquement à partir de prélèvements sanguins"
+        ],
+        "answer": 1,
+        "explanation": "Selon MIRD Pamphlet 16, les courbes activité-temps d'organe sont obtenues par imagerie séquentielle, ajustées par une fonction mono- ou bi-exponentielle, puis intégrées de 0 à l'infini pour donner l'activité cumulée. La précision de cette quantification conditionne celle de la dose [75,57].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon l'ICRP 94, quelle est la dose efficace maximale recommandée pour un proche aidant par séance de traitement à radionucléides ?",
+        "options": [
+          "1 mSv",
+          "5 mSv",
+          "20 mSv",
+          "50 mSv"
+        ],
+        "answer": 1,
+        "explanation": "L'ICRP 94 recommande une dose efficace maximale de 5 mSv par séance de traitement pour les proches aidants, tandis que la limite pour le public est de 1 mSv/an. Le débit de dose à 1 m à la sortie ne doit généralement pas dépasser 25 µSv/h [69,70].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi la dose efficace (Sv) est-elle un indicateur discutable au niveau du patient individuel ?",
+        "options": [
+          "Parce qu'elle ne tient pas compte du type de rayonnement",
+          "Parce qu'elle est conçue comme un indicateur de risque stochastique de population, non un prédicteur individuel",
+          "Parce qu'elle s'exprime en gray",
+          "Parce qu'elle ignore la masse des organes"
+        ],
+        "answer": 1,
+        "explanation": "La dose efficace combine des pondérations tissulaires et radiologiques moyennes destinées à estimer un risque stochastique à l'échelle d'une population de référence. Elle n'est pas un prédicteur du risque pour un patient donné, dont la dosimétrie thérapeutique requiert la dose absorbée par organe [13].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle grandeur, dérivée du modèle linéaire-quadratique, est recommandée pour comparer les effets rénaux à débit de dose très différents entre radiothérapie externe et thérapie par radioligand ?",
+        "options": [
+          "La dose efficace",
+          "La dose équivalente",
+          "La dose biologique efficace (BED)",
+          "L'activité cumulée"
+        ],
+        "answer": 2,
+        "explanation": "La BED (biologically effective dose), issue du modèle linéaire-quadratique, intègre le débit de dose et la réparation tissulaire. Pour le rein, une BED < 40 Gy est jugée sûre sans facteur de risque, < 28 Gy en présence de facteurs de risque [57,58,60].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Le ²²³Ra-dichlorure (émetteur alpha utilisé dans le cancer de la prostate métastatique osseux) se fixe préférentiellement :",
+        "options": [
+          "Sur le transporteur de la noradrénaline",
+          "Sur les récepteurs de la somatostatine",
+          "Sur l'hydroxyapatite des zones de remodelage osseux, en mimant le calcium",
+          "Sur le transporteur du glucose"
+        ],
+        "answer": 2,
+        "explanation": "Le ²²³Ra mime le calcium et se fixe sur l'hydroxyapatite des zones de remodelage osseux. Ses particules alpha de TEL élevé (~80 keV/µm) ont une portée < 100 µm, ce qui concentre la dose et épargne la moelle adjacente. Schéma : 50 kBq/kg, 6 cycles [72].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le formalisme MIRD relie la dose absorbée à deux facteurs : D(r_T) = Σ Ã(r_S) · S(r_T ← r_S), où Ã est l'activité intégrée dans le temps (Bq·s) et S la valeur S (Gy·(Bq·s)⁻¹) [1].",
+        "La dose absorbée s'exprime en gray (Gy = J·kg⁻¹) ; la dose équivalente H_T = Σ w_R·D et la dose efficace E = Σ w_T·H_T en sievert (Sv), avec Σ w_T = 1 (ICRP 103) [13].",
+        "Quatre référentiels ICRP structurent la chaîne : ICRP 103 (pondérations), ICRP 107 (décroissance, 1252 radionucléides), ICRP 110 (fantômes voxélisés), ICRP 128 (coefficients de 120 radiopharmaceutiques diagnostiques) [13,17,54,53].",
+        "La valeur S intègre l'énergie, le rendement et la fraction absorbée φ (sans dimension, 0–1) divisés par la masse de la cible ; w_R = 1 pour photons/électrons, 20 pour alpha [1,13].",
+        "Le ¹⁸F-FDG délivre 0,019 mSv/MBq chez l'adulte (organe critique = vessie, ~0,16 mGy/MBq) ; ⁶⁸Ga-PSMA-11 ~0,022 mSv/MBq [21,25].",
+        "En thérapie, on raisonne en dose absorbée par organe à risque : seuils repères reins 23 Gy et moelle rouge 2 Gy, BED rénale < 40 Gy (< 28 si facteurs de risque) [37,58,60].",
+        "L'activité cumulée vient de l'ajustement mono- ou bi-exponentiel d'images séquentielles intégré à l'infini ; sa précision conditionne celle de la dose (MIRD 16/26) [75,57].",
+        "Trois logiciels de référence : OLINDA/EXM (FDA 510(k) 2004), IDAC-Dose 2.1 et MIRDcalc (MIRD Pamphlet 28, gratuit, approuvé SNMMI) [10,20,3]."
+      ],
+      "protocol": [
+        "Acquérir des images quantitatives séquentielles (planaire et/ou SPECT/TDM quantitative, MIRD 26) à plusieurs temps après injection [57].",
+        "Segmenter les régions source, corriger l'atténuation, le diffusé, le temps mort et l'effet de volume partiel.",
+        "Construire la courbe activité-temps de chaque source, l'ajuster (mono/bi-exponentielle) et l'intégrer jusqu'à décroissance complète pour obtenir Ã [75].",
+        "Appliquer les valeurs S adaptées au radionucléide et au fantôme (ICRP 110) via un logiciel (OLINDA/EXM, IDAC-Dose, MIRDcalc) pour obtenir la dose absorbée par organe [3,10].",
+        "Pour la thérapie, convertir en BED (modèle linéaire-quadratique) afin de comparer les contraintes d'organe et personnaliser l'activité [57,58].",
+        "Vérifier le respect des seuils d'organes à risque (reins 23–40 Gy, moelle 2 Gy) et documenter la dosimétrie au dossier [37]."
+      ],
+      "scores": [
+        "Dose absorbée (Gy) : grandeur physique par organe, base de la dosimétrie thérapeutique.",
+        "Dose efficace (mSv/MBq) : indicateur de risque stochastique de population (ICRP 128 pour les traceurs diagnostiques) [53].",
+        "BED — dose biologique efficace : intègre débit de dose et réparation ; rein sûr < 40 Gy (< 28 si facteurs de risque) [60].",
+        "Seuils d'organes à risque : reins 23 Gy (étendu 28–40 Gy), moelle rouge 2 Gy ; sang < 2 Gy (Benua–Leeper, ¹³¹I) [37,61]."
+      ],
+      "pitfalls": [
+        "Confondre activité administrée (Bq) et activité cumulée Ã (Bq·s) : seule cette dernière, intégrée dans le temps, alimente l'équation MIRD [1].",
+        "Confondre dose absorbée (Gy, par organe) et dose efficace (Sv, corps entier pondéré) — cette dernière n'est pas un prédicteur de risque individuel [13].",
+        "Sous-échantillonner la courbe activité-temps ou mal extrapoler à l'infini : principale source d'incertitude sur la dose [75].",
+        "Transposer sans précaution les seuils de tolérance issus de la radiothérapie externe (23 Gy rénal) au débit de dose très inférieur des thérapies à radionucléides : préférer la BED [58,59].",
+        "Négliger les effets hors-cible : glandes lacrymales et salivaires en ¹⁷⁷Lu-PSMA, shunt pulmonaire > 20 % en ⁹⁰Y, organe critique vésical en ¹⁸F-FDG [34,43,21].",
+        "Oublier la spécificité pédiatrique : la dose par MBq est plus élevée chez l'enfant — utiliser la carte de dose EANM [47]."
+      ]
+    },
+    "lead": "La dosimétrie interne est la discipline qui permet de relier la quantité de produit radioactif administrée à un patient à l'énergie réellement déposée dans ses organes. Elle répond à une question simple en apparence mais centrale en médecine nucléaire : combien chaque tissu a-t-il vraiment reçu, et avec quel risque ou quel bénéfice attendu. Pour cela, on suit le radiopharmaceutique dans le corps au fil du temps, puis on traduit ce parcours en une grandeur physique comparable d'un patient à l'autre. Cette démarche est devenue indispensable aux traitements ciblés modernes, où l'on cherche à délivrer le maximum d'effet à la tumeur tout en préservant les organes sensibles. Elle constitue le langage commun qui permet d'optimiser, de personnaliser et de sécuriser les actes diagnostiques comme thérapeutiques.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert le calcul de dose en médecine nucléaire",
+          "text": "Quand on vous administre un produit radioactif, soit pour réaliser des images, soit pour traiter une maladie, l'équipe veut savoir exactement quelle quantité de rayonnement va atteindre chaque organe. C'est le rôle de ce que l'on appelle le calcul de dose. L'idée est simple : choisir la juste quantité de produit, ni trop ni trop peu. Pour un examen d'imagerie, on cherche la plus petite quantité qui donne quand même de belles images. Pour un traitement, on cherche à déposer assez d'énergie là où se trouve la maladie tout en protégeant les organes voisins, comme les reins ou la moelle osseuse. Ce travail, fait sur mesure pour vous, permet à votre médecin d'adapter le traitement à votre situation et de surveiller que tout reste dans des limites sûres.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un calcul fait pour vous protéger",
+              "text": "Estimer la dose reçue par chaque organe n'est pas une formalité : c'est ce qui permet de personnaliser votre prise en charge, d'éviter d'exposer inutilement les organes sensibles et de vérifier, traitement après traitement, que les limites de sécurité sont respectées."
+            }
+          ]
+        },
+        {
+          "title": "Comment cela se passe pour vous",
+          "text": "Pour vous, rien de compliqué : le calcul de dose se fait à partir d'images et parfois de prises de sang, sans geste supplémentaire pénible. Le produit vous est administré, le plus souvent par une simple injection dans une veine, parfois à avaler. Ensuite, pour estimer comment le produit se répartit et s'élimine dans votre corps, on peut vous demander de revenir passer une ou plusieurs séries d'images sous la caméra à différents moments, par exemple le jour même puis les jours suivants. Vous ne sentez rien sous la caméra : il suffit de rester allongé et immobile. Selon le produit, on peut aussi vous demander de bien vous hydrater, d'aller régulièrement aux toilettes, ou de recevoir une perfusion qui protège vos reins. L'équipe vous explique chaque étape et vous remet des consignes claires.",
+          "steps": [
+            {
+              "title": "Administration du produit",
+              "text": "Le produit vous est donné, le plus souvent par une petite injection dans le bras, parfois par voie orale."
+            },
+            {
+              "title": "Mesures sur plusieurs moments",
+              "text": "On réalise une ou plusieurs séries d'images, parfois sur plusieurs jours, pour suivre comment le produit se répartit et s'élimine. Tout est indolore."
+            },
+            {
+              "title": "Calcul personnalisé",
+              "text": "À partir de ces mesures, l'équipe estime la dose reçue par vos organes et adapte, si besoin, la suite du traitement."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce sans danger ?",
+          "text": "Ces méthodes sont utilisées et encadrées depuis très longtemps, partout dans le monde. Justement, le calcul de dose existe pour renforcer votre sécurité : il garantit que la quantité de rayonnement reçue par vos organes reste maîtrisée et adaptée à votre cas. Pour les examens d'imagerie, la quantité de produit est volontairement réduite au minimum utile, et le rayonnement diminue rapidement de lui-même, aidé par votre corps qui élimine le produit dans les urines. Pour les traitements, la surveillance est plus poussée encore, avec des contrôles réguliers de vos reins et de votre sang. Quelques précautions simples et temporaires peuvent vous être demandées après certains traitements, comme bien boire ou garder un peu de distance pendant un jour ou deux avec les jeunes enfants et les femmes enceintes.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Signalez une grossesse ou un allaitement",
+              "text": "Si vous êtes ou pourriez être enceinte, ou si vous allaitez, prévenez impérativement l'équipe avant tout examen ou traitement. Des précautions particulières, voire un report, sont alors nécessaires pour protéger votre enfant."
+            },
+            {
+              "type": "tip",
+              "title": "Bien s'hydrater aide votre corps",
+              "text": "Boire et uriner régulièrement après l'examen aide votre corps à éliminer plus vite le produit et à réduire l'exposition de votre vessie. C'est simple et utile."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : la dose absorbée, pas seulement l'activité injectée",
+          "text": "Pour un clinicien non nucléariste, le point essentiel est de distinguer l'activité administrée (la quantité de produit injectée) de la dose absorbée réellement déposée dans chaque tissu, qui est la grandeur qui détermine à la fois l'efficacité thérapeutique et la toxicité. C'est tout l'objet de la dosimétrie interne. Elle devient particulièrement pertinente dès qu'un patient relève d'un traitement par radiopharmaceutique vectorisé : tumeurs neuroendocrines, cancer de la prostate métastatique résistant à la castration, cancer thyroïdien différencié, ou tumeurs hépatiques traitées par voie endovasculaire. Dans ces situations, la dose reçue par les organes à risque (typiquement les reins et la moelle osseuse) conditionne le nombre de cycles possibles et la sécurité du traitement. Pensez aussi à la dosimétrie chaque fois que se pose la question de l'exposition d'un patient, notamment en pédiatrie ou en cas de répétition d'examens.",
+          "list": [
+            "Patient candidat à une thérapie vectorisée (radioligand) : la dose aux organes à risque guide la planification et le nombre de cycles",
+            "Besoin d'individualiser un traitement plutôt que d'appliquer une activité fixe pour tous, afin de maximiser l'efficacité sans dépasser les limites de tolérance des organes sains",
+            "Toute question d'exposition à optimiser : suivi de la dose reçue, populations sensibles, examens répétés"
+          ]
+        },
+        {
+          "title": "Démarche pratique et apport de la médecine nucléaire",
+          "text": "Concrètement, estimer la dose absorbée suppose de connaître la répartition du produit dans l'organisme et son évolution dans le temps : cela repose sur une ou plusieurs séries d'images quantitatives, parfois complétées de prélèvements, acquises à différents temps après l'administration. Le service de médecine nucléaire en déduit la dose reçue par les organes cibles et par les organes à risque, et confronte ces valeurs aux seuils de tolérance connus. Pour un adressage utile, précisez la question clinique et transmettez les éléments pertinents : antécédents, fonction rénale (déterminante pour plusieurs traitements), traitements en cours, grossesse possible ou allaitement. L'apport propre de la médecine nucléaire est de transformer une simple activité injectée en une estimation, organe par organe, de l'énergie réellement déposée : c'est ce qui permet de personnaliser le traitement, d'anticiper les toxicités et de décider en sécurité de la poursuite des cycles.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La médecine nucléaire ne se limite pas à administrer un produit : elle peut estimer la dose réellement absorbée par chaque organe et l'adapter à votre patient. Cette dosimétrie personnalisée permet de viser une efficacité maximale sur la cible tout en respectant les limites de tolérance des organes sensibles, en particulier les reins et la moelle osseuse, et de décider en sécurité du nombre de cycles. Un avis spécialisé précoce est utile dès qu'une thérapie vectorisée est envisagée, ou lorsqu'il faut optimiser et surveiller l'exposition d'un patient. Transmettez la question clinique, la fonction rénale, les traitements en cours et toute grossesse possible ; en cas de doute sur l'indication, contactez le service de médecine nucléaire en amont."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité — la dosimétrie interne en un coup d'œil",
+          "text": "**Comment lire cette carte.** La **dosimétrie interne** est la discipline qui convertit une **activité administrée** (en **becquerels, Bq**) en **dose absorbée** (en **grays, Gy = J·kg⁻¹**) délivrée à chaque organe par un radiopharmaceutique distribué *dans* l'organisme. Elle ne se mesure pas directement au lit du patient : elle se **reconstruit** à partir d'images quantitatives et d'un modèle de transport du rayonnement. Le cadre de référence universel est le **schéma MIRD** (*Medical Internal Radiation Dose*), édité par le comité MIRD de la *Society of Nuclear Medicine* (SNM/SNMMI), publié à l'origine en **1968** puis refondu dans le **MIRD Pamphlet No. 21** (*J Nucl Med* 2009;50(3):477-484) qui en standardise la nomenclature actuelle.[1,2]\n\nL'**équation maîtresse** y tient en une ligne : la dose absorbée moyenne à une région cible **r_T** est la somme, sur toutes les régions sources **r_S**, du produit de l'**activité intégrée dans le temps** Ã(r_S) par la **valeur S** S(r_T←r_S), soit **D(r_T) = Σ_rS Ã(r_S)·S(r_T←r_S)**.[1] Tout le reste de la dosimétrie interne consiste à mesurer le premier terme (la biocinétique, propre au patient) et à tabuler le second (la physique, propre au radionucléide et à l'anatomie de référence).\n\n| Champ | Valeur |\n|---|---|\n| **Discipline** | Dosimétrie interne (rayonnement non scellé), par opposition à la dosimétrie de radiothérapie externe |\n| **Grandeur d'entrée** | Activité administrée A₀ (Bq, MBq, GBq) |\n| **Grandeur de sortie** | Dose absorbée D par organe (Gy) ; dose efficace E (Sv) en radioprotection diagnostique[1] |\n| **Formalisme** | Schéma MIRD (1968 → MIRD Pamphlet 21, 2009)[1,2] |\n| **Équation** | D(r_T) = Σ_rS Ã(r_S)·S(r_T←r_S)[1] |\n| **Termes** | Ã = activité intégrée dans le temps (Bq·s) ; S = dose absorbée par désintégration (Gy·(Bq·s)⁻¹)[1,7] |\n| **Données nucléaires** | CIPR 107 (décroissance de 1252 radionucléides)[17] |\n| **Fantômes de référence** | CIPR 110 (fantômes voxélisés adultes H/F)[54,55] |\n| **Pondérations** | CIPR 103 (w_R, w_T)[13] |\n| **Doses diagnostiques de référence** | CIPR 128 (120 radiopharmaceutiques)[53] |\n| **Logiciels phares** | OLINDA/EXM, IDAC-Dose, MIRDcalc[10,20,3] |\n| **Enjeu clinique** | Radioprotection (diagnostic) ; planification & sécurité des organes à risque (radiothérapie interne vectorisée)[71] |\n\nLa logique est strictement **séquentielle** et constitue la trame des sections suivantes : (A2) pourquoi la dose interne échappe à la mesure et impose un calcul ; (A3) les grandeurs élémentaires — activité, désintégration, énergie déposée, dose absorbée — sur lesquelles repose toute la chaîne.",
+          "stats": [
+            {
+              "value": "Bq → Gy",
+              "label": "De l'activité administrée à la dose absorbée"
+            },
+            {
+              "value": "1968",
+              "label": "Première publication du schéma MIRD[1]"
+            },
+            {
+              "value": "2009",
+              "label": "MIRD Pamphlet 21 — nomenclature actuelle[1]"
+            },
+            {
+              "value": "1252",
+              "label": "Radionucléides tabulés (CIPR 107)[17]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La carte distingue d'emblée deux mondes que la dosimétrie interne articule. Le terme **Ã** (activité intégrée dans le temps) est **propre au patient** : il dépend de la biocinétique réelle du traceur, donc de l'imagerie quantitative à plusieurs temps. Le terme **S** est **propre au couple radionucléide-anatomie de référence** : il est tabulé une fois pour toutes à partir des données de décroissance (CIPR 107[17]) et des fantômes (CIPR 110[54]). Personnaliser une dosimétrie revient essentiellement à mesurer Ã chez *ce* patient ; standardiser un coefficient de dose diagnostique (CIPR 128[53]) revient à fixer Ã via un modèle biocinétique de référence."
+            },
+            {
+              "type": "tip",
+              "title": "Repère d'unités",
+              "text": "Trois unités SI à ne jamais confondre : le **becquerel (Bq = 1 désintégration·s⁻¹)** quantifie l'**activité** ; le **gray (Gy = 1 J·kg⁻¹)** quantifie la **dose absorbée** (énergie déposée par unité de masse) ; le **sievert (Sv)** quantifie la **dose équivalente/efficace** (dose absorbée pondérée du risque stochastique). Gy et Sv ont la même dimension physique mais ne décrivent pas la même grandeur — voir §A3."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique : un radiopharmaceutique diagnostique sélectionne le patient et quantifie la biodistribution, puis un radionucléide thérapeutique délivre la dose — la dosimétrie interne ferme la boucle en convertissant l'activité administrée en dose absorbée aux cibles et aux organes à risque.",
+            "caption": "Fig. A1 — La dosimétrie interne ferme la boucle théranostique : convertir le becquerel administré en gray reçu par la tumeur et les organes à risque."
+          }
+        },
+        {
+          "title": "A2 - Le problème fondamental : pourquoi la dose interne ne se mesure pas, elle se calcule",
+          "text": "**Le cœur du problème.** En radiothérapie externe, la dose se mesure directement : un faisceau connu traverse un détecteur, un fantôme d'eau, et l'on étalonne en Gy avec une incertitude de l'ordre de quelques pour-cent. En **dosimétrie interne, la source est à l'intérieur du patient**, mobile, diffuse, et son intensité **décroît dans le temps** au double rythme de la décroissance physique et de l'élimination biologique. Aucun dosimètre ne peut être placé à l'intérieur de chaque organe pendant toute la durée d'irradiation. La dose absorbée n'est donc **pas une quantité mesurée mais une quantité reconstruite** : on mesure des grandeurs accessibles — l'activité présente dans chaque organe à plusieurs instants — et l'on en **déduit** la dose par un modèle physique de transport du rayonnement.[1,7]\n\n**Ce qu'il faut reconstruire.** La dose absorbée à un organe dépend du **nombre total de désintégrations** qui s'y produisent, et de l'**énergie déposée par désintégration** dans chaque tissu. Ces deux ingrédients ne sont jamais directement observables :\n\n- Le **nombre de désintégrations** s'obtient en intégrant la **courbe activité-temps** (TAC, *time-activity curve*) de l'organe, de l'instant de l'injection jusqu'à décroissance complète. Or on ne dispose que de **quelques points de mesure** (typiquement 3 à 5 acquisitions SPECT/CT quantitatives en radiothérapie interne) ; il faut **ajuster** une fonction mono- ou bi-exponentielle à ces points puis **l'intégrer jusqu'à l'infini**, ce qui suppose une extrapolation de la phase terminale.[75,76]\n- L'**énergie déposée par désintégration** dépend du schéma de décroissance du radionucléide (types et énergies des émissions, rendements) et de la **géométrie** source-cible (quelle fraction de l'énergie émise dans l'organe source atteint et reste dans l'organe cible). Cette fraction — la **fraction absorbée φ** — se calcule par **simulation Monte-Carlo du transport** des particules dans un **fantôme anatomique de référence**, jamais dans l'anatomie réelle du patient.[1,54]\n\n**Pourquoi un fantôme et non le patient.** Les valeurs S tabulées sont calculées sur des **fantômes computationnels de référence** : modèles voxélisés homme et femme adultes de la **CIPR 110** (2009), construits à partir d'images tomographiques réelles ajustées aux masses d'organes de référence de la **CIPR 89**.[54,55] La dose ainsi obtenue est celle d'un patient *de référence* ; la dosimétrie réellement **individualisée** exige de corriger au minimum la **masse des organes** du patient (la valeur S varie en 1/M de la cible, cf. §A3) et idéalement de recalculer le transport sur l'anatomie propre du patient.[1]\n\n**La conséquence pratique : une chaîne d'incertitudes.** Parce qu'elle est calculée, la dose interne hérite de **toutes** les incertitudes de la chaîne. La précision de la dose absorbée en radiothérapie interne personnalisée est directement liée à la précision de la **quantification d'activité** à chaque temps d'imagerie.[57] Les principales sources d'erreur sont identifiées et hiérarchisées par les guides MIRD :[75,57]\n\n| Étape de la chaîne | Source d'incertitude | Conséquence sur la dose |\n|---|---|---|\n| Quantification de l'activité | Segmentation, effet de volume partiel, correction du temps mort, étalonnage caméra | Biais sur chaque point de la TAC |\n| Échantillonnage temporel | Nombre et répartition des acquisitions (souvent 3-5 seulement) | Mauvais ajustement de la courbe |\n| Ajustement de la courbe | Choix du modèle (mono- vs bi-exponentiel), extrapolation à l'infini | Erreur sur Ã (aire sous la courbe) |\n| Calcul du transport | Fantôme de référence ≠ anatomie du patient, masse d'organe | Erreur sur S |\n\nC'est cette nature *reconstruite* qui explique le constat de la **CIPR 140** (2019) : malgré son rôle clé pour la sécurité (organes à risque) et l'efficacité (dose à la tumeur), la dosimétrie interne quantitative n'est employée en routine que dans une **minorité de centres** de radiothérapie interne vectorisée.[71]",
+          "steps": [
+            {
+              "title": "1 · Mesurer l'activité aux organes",
+              "text": "Imagerie quantitative (SPECT/CT calibrée, planaires, voire prélèvements sanguins) à plusieurs temps après injection. On obtient l'activité présente dans chaque région source à quelques instants discrets.[57,75]"
+            },
+            {
+              "title": "2 · Reconstruire la courbe activité-temps",
+              "text": "Ajuster une fonction mono- ou bi-exponentielle aux points mesurés (logiciels d'ajustement type MIRDfit), puis l'intégrer de 0 à l'infini pour obtenir l'activité intégrée dans le temps Ã (Bq·s) = nombre total de désintégrations.[75,76]"
+            },
+            {
+              "title": "3 · Appliquer le transport du rayonnement",
+              "text": "Multiplier Ã par la valeur S (Gy·(Bq·s)⁻¹), tabulée par Monte-Carlo sur un fantôme de référence (CIPR 110) à partir des données de décroissance (CIPR 107). La somme sur toutes les sources donne la dose à la cible.[1,17,54]"
+            },
+            {
+              "title": "4 · Individualiser",
+              "text": "Corriger au minimum la masse des organes du patient (S ∝ 1/M_cible) ; en dosimétrie avancée, recalculer le transport sur l'anatomie propre du patient au niveau du voxel.[1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — confondre activité présente et dose reçue",
+              "text": "Une image SPECT/CT montre l'**activité** (Bq) à un instant donné, pas la **dose** (Gy). Deux organes qui captent la même activité au pic peuvent recevoir des doses très différentes selon leur **temps de rétention** (donc l'aire sous la courbe activité-temps) et leur **masse** (S ∝ 1/M). Lire une seule image, c'est ignorer l'intégrale temporelle : la dose est une histoire complète, pas un instantané."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — l'extrapolation à l'infini",
+              "text": "L'intégration de la courbe activité-temps jusqu'à décroissance complète repose sur l'**extrapolation de la phase terminale** au-delà du dernier point mesuré. Pour un émetteur à période longue (ex. ¹⁷⁷Lu, T½ = 6,647 j[39]), une queue de rétention mal échantillonnée peut porter une fraction importante de la dose. Un nombre insuffisant de points temporels tardifs est une cause classique de sous- ou surestimation de Ã.[57,75]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de décroissance d'un radionucléide montrant les niveaux d'énergie, l'émission bêta, l'émission gamma à 140 keV et la cascade vers l'état fondamental — le schéma de désintégration est l'une des deux données physiques (avec la géométrie) nécessaires pour calculer l'énergie déposée par désintégration.",
+            "caption": "Fig. A2 — Le schéma de décroissance fixe les types, énergies et rendements des émissions : la moitié « physique » du calcul de dose, indépendante du patient."
+          }
+        },
+        {
+          "title": "A3 - Les grandeurs de base : activité, désintégration, énergie déposée et dose absorbée",
+          "text": "Quatre grandeurs structurent toute la chaîne, du becquerel au gray. Chacune se définit rigoureusement, et leur enchaînement *est* le formalisme MIRD.\n\n**▸ 1. L'activité (A) — le point de départ.** L'**activité** d'une source est son **taux de désintégration** : nombre de transformations nucléaires par seconde. Son unité SI est le **becquerel (Bq) = 1 désintégration·s⁻¹** ; l'ancienne unité, le curie (Ci), vaut **3,7 × 10¹⁰ Bq**. L'activité décroît exponentiellement selon la **période physique T½**, propre au radionucléide : 6,0 h pour le ⁹⁹ᵐTc, 67,7 min pour le ⁶⁸Ga, 6,647 j pour le ¹⁷⁷Lu.[45,24,39] *In vivo*, l'activité dans un organe décroît plus vite encore, car s'ajoute l'**élimination biologique** : la **période effective** combine période physique et période biologique (1/T_eff = 1/T_phys + 1/T_biol).\n\n**▸ 2. La désintégration et son intégrale temporelle (Ã).** Ce qui détermine la dose n'est pas l'activité à un instant, mais le **nombre total de désintégrations** survenues dans l'organe source sur toute la durée d'irradiation. C'est l'**activité intégrée dans le temps Ã** (*time-integrated activity*, anciennement « activité cumulée »), aire sous la courbe activité-temps de 0 à l'infini ; son unité est le **Bq·s** (ou MBq·h, µCi·h).[7,75] Normalisée par l'activité administrée A₀, elle donne le **coefficient d'activité intégrée dans le temps (TIAC)**, sans dimension, qui représente le **temps de séjour** équivalent du traceur dans la région source (ancienne « *residence time* » τ).[7,1] Ce terme est la **signature biocinétique** du radiopharmaceutique chez le patient : tout ce que l'imagerie quantitative cherche à mesurer (§A2).\n\n**▸ 3. L'énergie déposée — types de rayonnement et fractions absorbées.** Chaque désintégration libère de l'énergie sous forme de particules dont le devenir dépend du **type** d'émission. C'est ici que se joue la séparation entre imagerie et thérapie :\n\n| Émission | Nature | Portée dans les tissus | Rôle dosimétrique |\n|---|---|---|---|\n| **α** | Noyau d'⁴He (lourd, chargé +2) | < 100 µm (< 10 diamètres cellulaires)[72] | Dépôt local très dense (LET ~80 keV·µm⁻¹) ; toute l'énergie reste dans l'organe source[72] |\n| **β⁻ / β⁺** | Électron / positon | Millimétrique (ex. ¹⁷⁷Lu : β⁻ max 497 keV)[39] | Dépôt majoritairement local ; effet thérapeutique β⁻ |\n| **γ / X** | Photon | Traverse l'organisme | Dépôt à distance + sortie du corps → imagerie, mais irradiation des organes voisins |\n\nLa fraction de l'énergie émise par la source **r_S** qui est **absorbée** par la cible **r_T** est la **fraction absorbée φ(r_T←r_S)**, comprise **entre 0 et 1**.[1] Pour une particule non pénétrante (α, β) et une cible = source, φ ≈ 1 (auto-irradiation totale) ; pour un photon, φ peut être faible et la cible peut être un organe distinct de la source. Rapportée à la masse de la cible, on définit la **fraction absorbée spécifique Φ = φ/M(r_T)** (kg⁻¹).[1] La quantité d'énergie émise par désintégration, propre au seul radionucléide, est la **constante d'équilibre de dose absorbée Δ = Σᵢ nᵢ·Eᵢ** (somme sur les émissions du produit rendement × énergie).[7]\n\n**▸ 4. La dose absorbée (D) — l'aboutissement.** La **dose absorbée** est l'**énergie déposée par unité de masse** de tissu : unité SI le **gray (Gy) = 1 J·kg⁻¹** (ancienne unité : 1 rad = 0,01 Gy). Elle se construit en deux temps. D'abord la **valeur S**, qui condense toute la physique « par désintégration » : c'est la dose absorbée à la cible par unité d'activité intégrée dans la source, d'unité **Gy·(Bq·s)⁻¹**, définie par **S(r_T←r_S) = (1/M(r_T))·Σᵢ Eᵢ·Yᵢ·φᵢ(r_T←r_S)** (Eᵢ énergie, Yᵢ rendement, φᵢ fraction absorbée de la i-ème émission, M masse de la cible).[1,7] La dose totale est alors la somme sur toutes les sources : **D(r_T) = Σ_rS Ã(r_S)·S(r_T←r_S)**.[1]\n\n**▸ Du gray au sievert — la pondération du risque.** En **radioprotection** (contexte diagnostique surtout), on convertit la dose absorbée en grandeurs de risque adoptées formellement par le MIRD Pamphlet 21 et définies par la **CIPR 103** (2007).[1,13] La **dose équivalente H_T = Σ_R w_R·D_{T,R}** (en **sievert, Sv**) pondère la dose par le **facteur de pondération radiologique w_R**, qui traduit la nocivité du type de rayonnement : **photons et électrons = 1**, **protons = 2**, **particules α = 20**, neutrons = fonction continue de l'énergie.[13,14] La **dose efficace E = Σ_T w_T·H_T** (Sv) pondère ensuite par le **facteur de pondération tissulaire w_T**, qui traduit la radiosensibilité de chaque organe et dont la **somme vaut 1,00** : **0,12** (moelle rouge, côlon, poumon, estomac, sein, tissus restants), **0,08** (gonades), **0,04** (vessie, œsophage, foie, thyroïde), **0,01** (surface osseuse, cerveau, glandes salivaires, peau).[13,15,16]\n\n| Grandeur | Symbole | Unité SI | Ce qu'elle décrit |\n|---|---|---|---|\n| Activité | A | Bq (= s⁻¹) | Taux de désintégration de la source |\n| Activité intégrée | Ã | Bq·s | Nombre total de désintégrations (∫ activité-temps) |\n| Fraction absorbée | φ | sans dim. (0-1) | Part de l'énergie source absorbée par la cible |\n| Valeur S | S | Gy·(Bq·s)⁻¹ | Dose à la cible par désintégration dans la source |\n| Dose absorbée | D | Gy (= J·kg⁻¹) | Énergie déposée par unité de masse |\n| Dose équivalente | H_T | Sv | Dose absorbée pondérée du type de rayonnement (w_R) |\n| Dose efficace | E | Sv | Dose pondérée du risque stochastique global (w_T) |",
+          "stats": [
+            {
+              "value": "1 Bq",
+              "label": "= 1 désintégration·s⁻¹ (activité)[7]"
+            },
+            {
+              "value": "1 Gy",
+              "label": "= 1 J·kg⁻¹ (dose absorbée)"
+            },
+            {
+              "value": "w_R(α) = 20",
+              "label": "Pondération radiologique des particules α (CIPR 103)[13]"
+            },
+            {
+              "value": "Σ w_T = 1,00",
+              "label": "Somme des pondérations tissulaires (CIPR 103)[13]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi S varie en 1/masse",
+              "text": "La valeur S porte un facteur **1/M(r_T)** : à activité intégrée égale, **plus l'organe cible est petit, plus la dose absorbée est élevée**, car la même énergie est concentrée dans moins de masse.[1] C'est la justification physique de la première étape de toute individualisation : corriger la masse d'organe du patient par rapport au fantôme de référence. C'est aussi pourquoi de petites structures à forte rétention (glandes salivaires, glandes lacrymales) peuvent recevoir des doses très élevées en radiothérapie interne ciblée."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — gray et sievert ne sont pas interchangeables",
+              "text": "Gy et Sv ont la **même dimension** (J·kg⁻¹) mais ne sont **pas** la même grandeur. La **dose absorbée (Gy)** est physique et locale : c'est elle qui gouverne les effets déterministes sur les organes à risque en thérapie (reins, moelle). La **dose efficace (Sv)** est un indicateur de **risque stochastique de population**, pondéré (w_R, w_T) : pertinente en radioprotection diagnostique, elle **n'est pas un prédicteur de risque individuel** ni une grandeur de planification thérapeutique. En radiothérapie interne, on raisonne en **Gy par organe**, jamais en Sv corps entier."
+            },
+            {
+              "type": "info",
+              "title": "Données nucléaires sous-jacentes",
+              "text": "Les énergies Eᵢ et rendements Yᵢ de chaque émission — indispensables au calcul de Δ et de S — proviennent de la base de décroissance nucléaire de référence, la **CIPR 107** (2009), qui couvre **1252 radionucléides** de 97 éléments (demi-vies, schémas, énergies, rendements) et remplace l'ancienne CIPR 38.[17] C'est cette base que partagent les logiciels OLINDA/EXM, IDAC-Dose et MIRDcalc.[20,3]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma des trois modes de désintégration : particule alpha lourde de très faible portée (dépôt local dense), particules bêta moins/plus de portée millimétrique (effet thérapeutique), et photon gamma qui traverse les tissus (imagerie) — chaque type détermine la fraction absorbée et donc la dose déposée localement ou à distance.",
+            "caption": "Fig. A3 — Type d'émission, portée et fraction absorbée : pourquoi α et β déposent localement (thérapie) tandis que γ traverse les tissus (imagerie + irradiation à distance)."
+          }
+        },
+        {
+          "title": "B4 - Première brique : l'activité cumulée et le temps de séjour",
+          "text": "Le problème central de la dosimétrie interne est que la source de rayonnement n'est pas un faisceau externe stable, mais un **radiopharmaceutique en mouvement** : il se distribue, se concentre, puis s'élimine, et il décroît physiquement pendant tout ce temps. La dose absorbée ne dépend donc pas de l'activité administrée à l'instant *t* = 0, mais du **nombre total de désintégrations** qui se produisent dans chaque région source pendant toute la durée de présence du traceur. Cette quantité est la première brique de l'équation MIRD : l'**activité intégrée dans le temps** (time-integrated activity, TIA), notée **Ã**, anciennement appelée *activité cumulée*.[1]\n\nFormellement, Ã(r_S, T_D) est l'intégrale de la courbe activité-temps A(r_S, t) de la région source r_S, depuis l'administration jusqu'à la fin de la période d'intégration T_D (en pratique jusqu'à décroissance complète, T_D → ∞) :\n\n> **Ã(r_S, T_D) = ∫₀^{T_D} A(r_S, t) dt**\n\nL'unité de Ã est donc une **activité multipliée par un temps : le becquerel-seconde (Bq·s)**, soit le nombre de désintégrations (en pratique on manipule des MBq·h ou des µCi·h).[7] C'est le sens physique le plus important à retenir : **Ã est un comptage de désintégrations**, pas une activité. L'aire sous la courbe A(t), et non sa valeur à un instant donné, porte toute l'information dosimétrique de la cinétique.\n\n**La double décroissance.** Dans un organe, l'activité diminue pour deux raisons indépendantes qui se multiplient : la **décroissance physique** (constante λ_p = ln2 / T_p, propriété du radionucléide) et l'**élimination biologique** (constante λ_b = ln2 / T_b, propriété du traceur et du patient). La constante effective est leur somme, λ_eff = λ_p + λ_b, ce qui se traduit sur les demi-vies par la relation harmonique :\n\n> **1/T_eff = 1/T_p + 1/T_b**, soit **T_eff = (T_p · T_b)/(T_p + T_b)**\n\nLa demi-vie effective est donc toujours **plus courte que la plus courte des deux demi-vies** composantes. Pour une biodistribution mono-exponentielle simple (uptake instantané, captation fraction f de A₀, élimination par λ_eff), l'intégrale se calcule analytiquement :\n\n> **Ã = f · A₀ / λ_eff = 1,443 · f · A₀ · T_eff**\n\noù le facteur **1,443 = 1/ln2** convertit la demi-vie en constante de temps. Cette formule rend explicite l'intuition clinique : à activité administrée égale, **plus le traceur est retenu longtemps (T_eff grand), plus Ã — donc la dose — est élevée**.\n\n| Radionucléide | T physique (T_p) | Pertinence pour Ã | Source |\n|---|---|---|---|\n| ⁹⁹ᵐTc | **6,0 h** | T_p court → l'élimination biologique compte peu | [45] |\n| ⁶⁸Ga | **67,7 min** | T_p très court → Ã quasi gouvernée par la physique | [24] |\n| ¹⁸F | ~110 min | idem, cinétique rapide | [21] |\n| ¹³¹I | ~8,0 j | T_p long → la biocinétique domine Ã | [27] |\n| ¹⁷⁷Lu | **6,647 j** | T_p long → rétention tumorale/rénale critique | [39] |\n\n**Le coefficient d'activité intégrée dans le temps (TIAC), ou « temps de séjour ».** Pour comparer des traceurs et des patients indépendamment de l'activité administrée, on normalise Ã par l'activité administrée A₀ :\n\n> **τ(r_S) = Ã(r_S) / A₀**\n\nLe TIAC τ (en secondes, ou heures) — historiquement nommé *residence time*, « temps de séjour » — représente le **temps pendant lequel l'activité administrée devrait rester constante dans la région source pour produire le même nombre de désintégrations** que la cinétique réelle.[1][7] C'est un paramètre purement biocinétique : il résume toute la courbe activité-temps d'un organe en un seul nombre, indépendant de l'activité injectée. La somme des τ de toutes les régions sources (organes + corps entier résiduel) est bornée par le temps de séjour physique total du radionucléide.\n\n**Obtention pratique : la mesure de la courbe A(t).** Ã est la grandeur **la plus coûteuse à mesurer** de toute la chaîne dosimétrique car elle exige une imagerie quantitative **à plusieurs temps**. La méthodologie est codifiée par le **MIRD Pamphlet No. 16** : acquérir des données de biodistribution (gamma-caméra planaire conjuguée, ou mieux **SPECT/CT quantitatif** étalonné) à plusieurs instants couvrant l'uptake, le plateau et la décroissance, segmenter les régions source, puis ajuster les points par une fonction **mono- ou bi-exponentielle** et intégrer jusqu'à l'infini.[75] Pour le ¹⁷⁷Lu, le **MIRD Pamphlet No. 26** fixe le cadre du SPECT quantitatif, avec des facteurs d'étalonnage caméra de l'ordre de **6,11 ± 0,01 counts/s/MBq** (planaire) et **5,67 ± 0,08 counts/s/MBq** (SPECT/CT).[57] Les outils d'ajustement dédiés (MIRDfit, MIRD Pamphlet No. 30) automatisent cette étape.[76]",
+          "steps": [
+            {
+              "title": "1 · Acquérir A(t) à plusieurs temps",
+              "text": "Imagerie quantitative (SPECT/CT étalonné, ou planaire conjuguée) à plusieurs instants couvrant uptake, plateau et décroissance — méthodologie MIRD 16.[75]"
+            },
+            {
+              "title": "2 · Segmenter les régions sources",
+              "text": "Délimiter chaque organe source (reins, foie, moelle, tumeur, corps entier résiduel) sur l'imagerie, en gérant l'effet de volume partiel.[57]"
+            },
+            {
+              "title": "3 · Ajuster la courbe",
+              "text": "Modéliser les points par une fonction mono- ou bi-exponentielle, en cohérence avec la double décroissance physique + biologique (T_eff).[75][76]"
+            },
+            {
+              "title": "4 · Intégrer jusqu'à l'infini",
+              "text": "Calculer Ã = ∫ A(t) dt, puis normaliser par A₀ pour obtenir le TIAC τ (temps de séjour) de chaque source.[1]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "Bq·s",
+              "label": "Unité de Ã (nombre de désintégrations)"
+            },
+            {
+              "value": "1,443",
+              "label": "Facteur 1/ln2 (aire de l'exponentielle)"
+            },
+            {
+              "value": "6,647 j",
+              "label": "T physique ¹⁷⁷Lu → biocinétique critique [39]"
+            },
+            {
+              "value": "T_eff < T_min",
+              "label": "Demi-vie effective toujours < la plus courte"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — Ã n'est PAS une activité",
+              "text": "L'erreur conceptuelle la plus fréquente est de confondre Ã (en **Bq·s**, un nombre de désintégrations) avec une activité instantanée (en Bq). Ã est l'**aire sous la courbe** activité-temps : deux traceurs injectés à la même activité A₀ peuvent avoir des Ã — donc des doses — très différentes si leurs demi-vies effectives diffèrent. C'est la rétention, pas l'activité initiale, qui irradie."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le facteur 1,443",
+              "text": "Le coefficient **1,443 = 1/ln2 ≈ 1/0,693** revient partout en dosimétrie : Ã = 1,443 · f · A₀ · T_eff pour une décroissance mono-exponentielle. Mémoriser que « l'aire sous une exponentielle = valeur initiale × 1,443 × demi-vie » permet une estimation de tête du temps de séjour, utile pour vérifier l'ordre de grandeur d'un calcul logiciel."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Schéma de la chaîne dosimétrique théranostique : injection de l'activité administrée A₀, distribution dans les organes sources, imagerie quantitative à plusieurs temps, courbe activité-temps et son intégrale (activité cumulée Ã) menant au calcul de dose."
+          }
+        },
+        {
+          "title": "B5 - Deuxième brique : le facteur S et l'énergie déposée par désintégration",
+          "text": "La première brique (§B4) répond à la question *combien de désintégrations* ont lieu dans la source. La deuxième brique répond à la question complémentaire : *quelle dose absorbée chaque désintégration de la source dépose-t-elle dans la cible* ? Cette grandeur est le **facteur S** (S-value), noté **S(r_T ← r_S)**, qui se lit « S de la source r_S vers la cible r_T ».[1]\n\n**Définition et unité.** Le facteur S est la **dose absorbée moyenne dans la région cible r_T par unité d'activité intégrée dans la région source r_S**. Son unité est donc le **gray par becquerel-seconde, Gy·(Bq·s)⁻¹** (en pratique mGy·(MBq·s)⁻¹ ou mGy/(MBq·h)).[1][7] C'est, par construction, exactement le complément dimensionnel de Ã : multiplier des Bq·s par des Gy/(Bq·s) redonne des Gy. Le facteur S est une **propriété de couplage géométrique et physique** entre deux régions d'un fantôme anatomique de référence ; il ne dépend ni du patient individuel, ni de la cinétique du traceur, mais uniquement du radionucléide et de la géométrie source-cible.\n\n**La formule du facteur S.** Le facteur S se décompose en trois ingrédients :\n\n> **S(r_T ← r_S) = (1/M(r_T)) · Σᵢ Eᵢ · Yᵢ · φᵢ(r_T ← r_S)**\n\noù, pour chaque type d'émission *i* du radionucléide :\n- **Eᵢ** = énergie de l'émission *i* (keV ou MeV) ;\n- **Yᵢ** = rendement, ou nombre moyen de particules/photons de type *i* émis par désintégration (probabilité d'émission par transition) ;\n- **φᵢ(r_T ← r_S)** = **fraction absorbée** : fraction de l'énergie Eᵢ émise dans r_S qui est effectivement absorbée dans r_T (sans dimension, **comprise entre 0 et 1**) ;\n- **M(r_T)** = masse de la région cible (kg).[1]\n\nLa division par la masse cible exprime que la dose est une énergie *par unité de masse*. On définit aussi la **fraction absorbée spécifique Φ = φ / M(r_T)**, qui regroupe transport et masse, de sorte que S = Σᵢ Eᵢ Yᵢ Φᵢ.[1]\n\n**Premier facteur : l'énergie émise par désintégration (la constante Δ).** Le terme Σᵢ Eᵢ · Yᵢ est une **propriété intrinsèque du seul radionucléide** : c'est l'énergie totale moyenne émise par désintégration, formalisée par la **constante d'équilibre de dose absorbée Δ = Σᵢ nᵢ Eᵢ** (où nᵢ = Yᵢ).[7] Elle ne dépend ni de l'anatomie ni du traceur — uniquement du schéma de désintégration. Les rendements et énergies de référence proviennent de la base de données **ICRP Publication 107**, qui tabule les données de décroissance nucléaire (demi-vies, énergies, rendements) pour **1252 radionucléides de 97 éléments**, et qui remplace l'ancienne ICRP 38.[17]\n\n| Radionucléide | Émission(s) principale(s) | Énergie / rendement | Conséquence dosimétrique | Source |\n|---|---|---|---|---|\n| ⁹⁹ᵐTc | γ pur | **140 keV** | imagerie ; faible dépôt local | [45] |\n| ¹⁸F | β⁺ → annihilation | **511 keV** (×2) | TEP ; dose modérée | [21] |\n| ⁶⁸Ga | β⁺ | **~836 keV** (β⁺ moyen) | énergie β⁺ élevée → dose locale | [24] |\n| ¹⁷⁷Lu | β⁻ max **497 keV** (79 %) ; γ **113 keV** (6,2 %), **208 keV** (10,4 %) | β⁻ traite, γ image | théranostique : β⁻ thérapeutique + γ imageable | [39] |\n| ²²³Ra | α | LET **~80 keV/µm** | dépôt très dense, hautement cytotoxique | [72] |\n\n**Deuxième facteur : la fraction absorbée φ (le transport).** φ encode **comment** le rayonnement voyage de la source à la cible, et c'est là que la **nature de l'émission** devient décisive :\n\n- Pour les **particules chargées de courte portée** (électrons β⁻, électrons Auger, particules α), le parcours dans la matière est de l'ordre du **millimètre (β⁻) à quelques micromètres (α)**. L'énergie est donc déposée **localement** : pour l'**auto-irradiation** (cible = source, r_T = r_S), φ ≈ 1 ; pour deux organes distincts, φ ≈ 0. La portée α est **< 100 µm**, soit moins de 10 diamètres cellulaires.[72]\n- Pour les **photons (γ, X, annihilation)**, le parcours est de l'ordre du **centimètre à la dizaine de centimètres** : une partie de l'énergie s'échappe de la source et irradie des organes à **distance** (irradiation croisée, cross-fire), φ prenant des valeurs intermédiaires non nulles entre organes éloignés.[7]\n\n**Troisième facteur : la masse cible M(r_T) et les fantômes de référence.** Le facteur S est **inversement proportionnel à la masse de la cible** : à énergie déposée égale, un organe plus petit reçoit une dose plus forte. Les masses d'organes de référence, et la géométrie qui détermine φ, proviennent des **fantômes computationnels voxélisés de référence ICRP 110** (homme et femme adultes, dérivés d'images tomographiques réelles, cohérents avec les valeurs anatomiques de l'ICRP 89), qui ont remplacé les anciens fantômes mathématiques stylisés.[54][55] C'est pourquoi le facteur S est tabulé : le comité MIRD a publié des tables de S pour **120 radionucléides** au niveau organe, et jusqu'au niveau **voxel** (MIRD Pamphlet No. 17) pour les distributions non uniformes.[51]",
+          "stats": [
+            {
+              "value": "Gy·(Bq·s)⁻¹",
+              "label": "Unité du facteur S"
+            },
+            {
+              "value": "0 → 1",
+              "label": "Plage de la fraction absorbée φ"
+            },
+            {
+              "value": "1252",
+              "label": "Radionucléides tabulés (ICRP 107) [17]"
+            },
+            {
+              "value": "120",
+              "label": "Radionucléides à facteurs S publiés (MIRD) [51]"
+            },
+            {
+              "value": "S ∝ 1/M",
+              "label": "Dose inversement proportionnelle à la masse cible"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi M cible au dénominateur impose la dosimétrie personnalisée",
+              "text": "Le facteur S tabulé suppose la masse d'organe **de référence** (fantôme ICRP 110). Or un rein atrophique, une tumeur volumineuse ou une glande salivaire individuelle peuvent avoir une masse très différente. Comme S ∝ 1/M, une masse réelle deux fois plus petite double la dose. En théranostique (¹⁷⁷Lu), il faut donc corriger le facteur S par la **masse réelle** segmentée sur la TDM du patient — sinon le calcul est biaisé."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — auto-irradiation vs irradiation croisée",
+              "text": "Un organe peut être à la fois **source et cible** (auto-irradiation, S(r_T ← r_T)) : pour les émetteurs β⁻/α de courte portée, c'est ce terme qui domine presque toute la dose. À l'inverse, pour un émetteur γ, ne pas négliger l'irradiation **croisée** d'organes voisins non sources. Oublier l'un ou l'autre terme dans la somme Σ_{r_S} fausse la dose."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration d'un radionucléide montrant les transitions, les énergies des émissions (β, γ, X) et leurs rendements, illustrant l'origine du terme Σ Eᵢ·Yᵢ de la constante d'équilibre de dose absorbée Δ qui entre dans le facteur S."
+          }
+        },
+        {
+          "title": "B6 - Assembler l'équation MIRD : D = Ã × S",
+          "text": "Les deux briques sont prêtes : Ã (§B4) compte les désintégrations dans la source, S (§B5) convertit chaque désintégration en dose dans la cible. Leur produit donne la **dose absorbée**, et l'assemblage de tous les couples source-cible constitue le **schéma MIRD**, standardisé sous sa forme moderne par le **MIRD Pamphlet No. 21** (Bolch, Eckerman, Sgouros, Thomas), *J Nucl Med* 2009;50(3):477-484.[1][2]\n\n**L'équation fondamentale.** La dose absorbée moyenne dans une région cible r_T, sur la période d'intégration T_D, est la **somme, sur toutes les régions sources r_S**, du produit activité cumulée × facteur S :\n\n> **D(r_T, T_D) = Σ_{r_S} Ã(r_S, T_D) · S(r_T ← r_S)**\n\nLa structure de l'équation est limpide : la **somme** rappelle qu'une cible reçoit de la dose de *toutes* les sources (elle-même par auto-irradiation, et les organes voisins par irradiation croisée). Toute la **biologie du patient** est dans Ã ; toute la **physique du radionucléide et la géométrie anatomique** sont dans S. C'est cette séparation propre des variables qui fait la puissance du formalisme : on mesure la cinétique une fois (coûteux, propre au patient) et on la combine à des facteurs S tabulés (universels, calculés une fois pour toutes sur les fantômes de référence).[1]\n\n**Vérification dimensionnelle.** L'homogénéité confirme l'édifice :\n\n> **[Ã] × [S] = (Bq·s) × Gy·(Bq·s)⁻¹ = Gy**\n\nLe becquerel-seconde de Ã s'annule exactement avec le (Bq·s)⁻¹ de S : il reste des **grays**, l'unité SI de dose absorbée (1 Gy = 1 J/kg). La grandeur produite est la dose absorbée moyenne **par organe**, fondement de toute la chaîne dosimétrique.\n\n| Brique | Symbole | Unité SI | Ce qu'elle encode | Section |\n|---|---|---|---|---|\n| Activité cumulée | Ã | **Bq·s** | nombre de désintégrations dans la source (cinétique patient) | §B4 |\n| Facteur S | S | **Gy·(Bq·s)⁻¹** | dose/désintégration (physique + géométrie de référence) | §B5 |\n| **Dose absorbée** | **D** | **Gy** | **énergie déposée par unité de masse cible** | §B6 |\n\n**De la dose absorbée aux grandeurs de radioprotection.** Le MIRD Pamphlet 21 a formellement adopté les grandeurs de protection de la CIPR. Deux pondérations successives transforment la dose absorbée physique en indicateurs de risque :\n\n1. **Dose équivalente** : H_T = Σ_R w_R · D_{T,R}, en **sieverts (Sv)**, qui pondère la dose absorbée par un facteur de pondération radiologique w_R rendant compte de la nocivité du type de rayonnement.[13]\n2. **Dose efficace** : E = Σ_T w_T · H_T, en Sv, qui pondère par un facteur tissulaire w_T (radiosensibilité de l'organe), avec **Σ w_T = 1,00**.[13]\n\nValeurs de référence des pondérations (**CIPR 103, 2007**) :\n\n| Facteur w_R (CIPR 103) | Valeur | | Facteur w_T (CIPR 103) | Valeur |\n|---|---|---|---|---|\n| Photons, électrons | **1** | | Moelle rouge, côlon, poumon, estomac, sein, restants | **0,12** chacun |\n| Protons (> 2 MeV) | **2** | | Gonades | **0,08** |\n| Particules **α** | **20** | | Vessie, œsophage, foie, thyroïde | **0,04** chacun |\n| Neutrons | fonction de l'énergie | | Surface osseuse, cerveau, gl. salivaires, peau | **0,01** chacun |\n\nLe facteur **w_R = 20 pour les particules α** explique la cytotoxicité du ²²³Ra (LET ~80 keV/µm) : à dose absorbée égale, une émission α est **20 fois plus délétère** qu'un β⁻ ou un γ.[14][72]\n\n**Le calcul en pratique : les logiciels.** Personne ne calcule l'équation MIRD à la main. La chaîne historique part de **MIRDOSE** (Stabin, années 1990), réécrit en Java sous le nom **OLINDA/EXM** (autorisation FDA 510(k) K033960, **15 juin 2004**), aujourd'hui dans sa version 2.x — celle utilisée par la sous-étude dosimétrique de l'essai VISION (OLINDA/EXM v2.2).[10][11][12][34] Les outils plus récents, fondés sur les fantômes voxélisés ICRP 110 et les données ICRP 107, incluent **IDAC-Dose 2.1** (1252 radionucléides)[20] et **MIRDcalc** (MIRD Pamphlet No. 28, *J Nucl Med* 2023;64(7):1117), outil organe-niveau gratuit approuvé par la SNMMI, avec propagation d'incertitude et calcul de la dose efficace par les w_T de la CIPR 103.[3][6]\n\n**L'enjeu clinique : la précision de Ã domine l'incertitude.** En thérapie par radionucléides (RPT, radiopharmaceutical therapy), la précision de la dose absorbée personnalisée est directement liée à la précision de la **quantification d'activité à chaque temps d'imagerie** (MIRD 26).[57] Les sources d'incertitude résiduelles — segmentation, effet de volume partiel, correction du temps mort, nombre de points temporels, modèle d'ajustement, extrapolation à l'infini — pèsent toutes sur Ã, alors que le facteur S est connu avec une bonne fiabilité.[75] **C'est donc la mesure de la courbe activité-temps, et non la physique du facteur S, qui est le maillon faible** : améliorer la dosimétrie clinique signifie d'abord améliorer la quantification SPECT/CT et l'échantillonnage temporel. Cet enjeu est central pour respecter les seuils d'organes à risque en théranostique (rein **~23 Gy**, moelle **2 Gy**), dont le calcul repose entièrement sur cette équation D = Ã × S.[37][58]",
+          "stats": [
+            {
+              "value": "D = Ã·S",
+              "label": "Équation MIRD (MIRD Pamphlet 21) [1]"
+            },
+            {
+              "value": "Gy",
+              "label": "Dose absorbée = (Bq·s)·Gy/(Bq·s)"
+            },
+            {
+              "value": "Σ w_T = 1,00",
+              "label": "Pondérations tissulaires CIPR 103 [13]"
+            },
+            {
+              "value": "w_R(α) = 20",
+              "label": "Particules α 20× plus délétères [14]"
+            },
+            {
+              "value": "15 juin 2004",
+              "label": "FDA 510(k) OLINDA/EXM [12]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la beauté de la séparation des variables",
+              "text": "Tout le génie du schéma MIRD tient dans la séparation : **Ã = la biologie (patient, traceur, cinétique)**, mesurée une fois par imagerie ; **S = la physique + la géométrie (radionucléide, fantôme de référence)**, tabulée une fois pour toutes. On ne re-calcule jamais S pour chaque patient (sauf correction de masse, cf. §B5) : on l'extrait des tables et on le multiplie par le Ã mesuré. C'est ce découplage qui rend la dosimétrie clinique réalisable."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — dose absorbée (Gy) ≠ dose efficace (Sv)",
+              "text": "L'équation MIRD produit une **dose absorbée par organe (Gy)**, grandeur physique pertinente pour la toxicité d'organe en thérapie. La **dose efficace (Sv)** qui en dérive par les pondérations w_R et w_T est un indicateur de **risque stochastique de population**, conçu pour la radioprotection — elle n'est PAS un prédicteur de risque individuel patient et n'a pas de sens en thérapie pour décrire la toxicité d'un organe à risque. Ne jamais confondre les deux."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma d'assemblage de l'équation MIRD : à gauche la courbe activité-temps intégrée donnant Ã (Bq·s), au centre le facteur S (Gy par Bq·s) reliant région source et région cible, à droite leur produit donnant la dose absorbée D en gray, puis les pondérations w_R et w_T menant à la dose efficace en sievert."
+          }
+        },
+        {
+          "title": "C7 - Lire et interpréter une courbe activité-temps",
+          "text": "L'équation maîtresse du schéma **MIRD** (*Medical Internal Radiation Dose*) — refondue dans le **MIRD Pamphlet No. 21** [1] — relie la dose absorbée au tissu cible r_T à deux facteurs indépendants : **D(r_T) = Σ_{r_S} Ã(r_S) · S(r_T ← r_S)** [1,7]. Le terme **S(r_T ← r_S)** (valeur S) est une constante physique du couple source-cible, tabulée pour le radionucléide et la géométrie anatomique (fantôme de référence). Tout ce que le clinicien apporte de spécifique au patient se concentre dans l'autre terme : **Ã(r_S)**, l'**activité intégrée dans le temps** (*time-integrated activity*, anciennement « activité cumulée »). Interpréter une courbe activité-temps, c'est donc lire la seule grandeur biologique de l'équation.\n\n**Ce que représente Ã.** L'activité intégrée dans le temps est, par définition, le **nombre total de désintégrations** survenant dans la région source sur toute la durée de présence du traceur ; elle s'exprime en **Bq·s** (en pratique MBq·h ou µCi·h) [7]. Géométriquement, c'est l'**aire sous la courbe activité-temps (TAC)**, intégrée de l'instant d'injection (t = 0) jusqu'à l'infini [75]. Normalisée par l'activité administrée A₀, elle devient le **coefficient d'activité intégré dans le temps (TIAC)**, ou « temps de séjour » τ, homogène à un temps : il représente la durée pendant laquelle l'activité administrée, si elle restait fixe, produirait le même nombre de désintégrations [7].\n\n**De quoi est faite la décroissance observée.** La pente d'une TAC d'organe combine toujours deux phénomènes que l'on doit distinguer mentalement :\n\n| Composante | Origine | Constante |\n|---|---|---|\n| **Décroissance physique** | Désintégration du radionucléide | λ_phys = ln2 / T½_phys |\n| **Élimination biologique** | Excrétion, redistribution du traceur | λ_biol = ln2 / T½_biol |\n| **Décroissance effective** | Somme des deux | **λ_eff = λ_phys + λ_biol** |\n\nD'où la relation fondamentale **1/T½_eff = 1/T½_phys + 1/T½_biol** : la demi-vie effective est toujours **plus courte** que la plus courte des deux demi-vies. Un traceur dont l'élimination biologique est rapide « voit » sa rétention dominée par la biologie ; un traceur fixé et lentement éliminé (ex. ¹⁷⁷Lu dans les reins) est dominé par la physique (T½_phys = **6,647 j** [39]).\n\n**Méthode d'acquisition et d'ajustement (MIRD Pamphlet 16).** En pratique, on échantillonne l'activité dans chaque région source à plusieurs temps post-injection — par imagerie planaire conjuguée ou, mieux, par **TEMP/TDM quantitative** (MIRD Pamphlet 26 pour le ¹⁷⁷Lu [57]) — puis on ajuste les points expérimentaux par une fonction **mono- ou bi-exponentielle**, que l'on intègre analytiquement jusqu'à l'infini [75,76]. La qualité de Ã repose entièrement sur cette chaîne : segmentation des volumes, **correction de l'effet de volume partiel**, correction du temps mort, **nombre et répartition des points temporels**, choix du modèle d'ajustement et extrapolation de la queue terminale [75,57]. Chacune de ces étapes est une source d'incertitude propagée directement dans la dose finale [57].\n\n**Lecture experte de la courbe.** Trois régions de la TAC portent l'essentiel de l'information :\n1. **La phase de captation (montée)** : reflète l'avidité de la cible biologique ; un seul point précoce mal placé biaise l'aire totale.\n2. **Le plateau / pic** : fixe l'activité maximale, déterminante pour les organes à risque.\n3. **La phase terminale (décroissance lente)** : c'est elle qui contribue le plus à Ã pour un traceur rétentif ; un dernier point trop précoce sous-estime systématiquement la dose. C'est la justification d'une **imagerie tardive** (24–72 h, voire J7 en RIV).",
+          "stats": [
+            {
+              "value": "Bq·s",
+              "label": "Unité de l'activité intégrée Ã (= nb de désintégrations)"
+            },
+            {
+              "value": "λ_phys + λ_biol",
+              "label": "Constante de décroissance effective λ_eff"
+            },
+            {
+              "value": "0 → ∞",
+              "label": "Bornes d'intégration de la courbe activité-temps [75]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - séparer les deux horloges",
+              "text": "Quand on parle de « demi-vie » d'un traceur dans un organe, exiger la précision : physique, biologique ou effective ? Seule la **demi-vie effective** gouverne l'aire sous la courbe et donc la dose. Pour le ¹⁷⁷Lu (T½_phys = 6,647 j [39]) fixé durablement dans les reins, T½_eff ≈ T½_phys ; pour le ⁶⁸Ga (T½_phys ≈ 68 min [24]), l'activité disparaît avant toute redistribution lente, ce qui limite intrinsèquement la dose intégrée."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - sous-echantillonnage de la queue",
+              "text": "L'erreur la plus fréquente en dosimétrie personnalisée n'est pas dans la valeur S (constante tabulée) mais dans Ã : un nombre insuffisant de points tardifs, un mauvais modèle d'ajustement (mono-exponentiel imposé à une cinétique bi-phasique) ou une extrapolation hâtive à l'infini faussent l'intégrale [75,57]. En RIV, la précision de la dose absorbée est directement liée à la précision de la quantification d'activité à chaque temps d'imagerie [57]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique imager-quantifier-traiter : l'imagerie quantitative à plusieurs temps construit la courbe activité-temps dont l'aire (activité intégrée Ã) alimente le calcul de dose absorbée.",
+            "caption": "Fig. 1 - La courbe activité-temps, charnière entre l'imagerie quantitative et le calcul de dose : c'est son aire (Ã) qui personnalise la dosimétrie MIRD."
+          }
+        },
+        {
+          "title": "C8 - Des grandeurs physiques aux grandeurs de protection : dose équivalente et dose efficace",
+          "text": "La dose absorbée **D**, exprimée en **gray (Gy = J·kg⁻¹)**, est une grandeur purement physique : énergie déposée par unité de masse, sans information sur la nature du rayonnement ni sur l'organe touché. Or, à dose absorbée égale, une particule **α** produit bien plus de dommages biologiques qu'un photon, et tous les organes n'ont pas la même radiosensibilité. Le système de la **CIPR** (Commission internationale de protection radiologique), formalisé dans la **CIPR 103 (2007)** et formellement adopté par le MIRD Pamphlet 21 [1,13], introduit donc deux grandeurs de **protection** dérivées par pondérations successives.\n\n**Étape 1 - Dose équivalente H_T (pondération par le type de rayonnement).**\n**H_T = Σ_R w_R · D_{T,R}** [1,13]. Le **facteur de pondération radiologique w_R** corrige la dose absorbée de l'**efficacité biologique relative** du rayonnement. Le résultat s'exprime en **sievert (Sv)**, dimensionnellement identique au gray mais réservé aux grandeurs de protection.\n\n| Type de rayonnement | w_R (CIPR 103) |\n|---|---|\n| Photons (γ, X) | **1** [14] |\n| Électrons, muons | **1** (indépendant de l'énergie) [14] |\n| Protons (> 2 MeV) | **2** [13] |\n| Particules **α**, fragments de fission, ions lourds | **20** [14] |\n| Neutrons | fonction continue de l'énergie [13,14] |\n\nCe tableau a une conséquence directe en médecine nucléaire : les émetteurs β⁻ et γ (¹³¹I, ¹⁷⁷Lu, ⁹⁰Y) ont w_R = 1, mais un émetteur **α** comme le **²²³Ra** porte w_R = **20** [14] — sa dose équivalente à un tissu est vingt fois sa dose absorbée, ce qui fonde le rationale de la thérapie alpha ciblée (fort transfert linéique d'énergie, ~80 keV/µm, portée < 100 µm) [72].\n\n**Étape 2 - Dose efficace E (pondération par l'organe).**\n**E = Σ_T w_T · H_T** [1,13]. Le **facteur de pondération tissulaire w_T** pondère la contribution de chaque organe au **détriment stochastique total** (cancers radio-induits + effets héréditaires). Par construction, **Σ w_T = 1,00** [13].\n\n| w_T (CIPR 103) | Tissus / organes |\n|---|---|\n| **0,12** | Moelle osseuse rouge, côlon, poumon, estomac, sein, tissus restants (somme) [13,15,16] |\n| **0,08** | Gonades [15,16] |\n| **0,04** | Vessie, œsophage, foie, thyroïde [15,16] |\n| **0,01** | Surface osseuse, cerveau, glandes salivaires, peau [15,16] |\n\nLe sein est passé de **0,05 (CIPR 60) à 0,12 (CIPR 103)** [13], reflet de l'actualisation des données de radiosensibilité. Le calcul de E s'appuie sur des **fantômes computationnels voxelisés de référence** (homme/femme adultes) définis par la **CIPR 110 (2009)**, cohérents avec les valeurs anatomiques de la **CIPR 89 (2002)** [54,55], et sur les données de décroissance nucléaire de la **CIPR 107 (1252 radionucléides)** [17]. Les logiciels de référence (**OLINDA/EXM** [10], **IDAC-Dose 2.1** [20], **MIRDcalc** [3]) implémentent cette chaîne, MIRDcalc calculant directement E via les w_T de la CIPR 103 [3].\n\n**Limite conceptuelle majeure.** La dose efficace est un **indicateur de risque stochastique populationnel**, dérivé de coefficients de risque de référence (sexe- et âge-moyennés) : **elle n'est pas un prédicteur du risque individuel d'un patient donné**. Elle sert à **comparer des procédures** entre elles ou à un niveau de référence, non à quantifier le risque d'un sujet particulier. En thérapie, elle est inadaptée : on raisonne alors en **dose absorbée à l'organe (Gy)**, seule grandeur prédictive de toxicité et d'efficacité tumorale (cf. C9).",
+          "stats": [
+            {
+              "value": "w_R(α) = 20",
+              "label": "Pondération radiologique des émetteurs alpha (CIPR 103) [14]"
+            },
+            {
+              "value": "Σ w_T = 1,00",
+              "label": "Somme des pondérations tissulaires (CIPR 103) [13]"
+            },
+            {
+              "value": "0,12",
+              "label": "w_T max (moelle, côlon, poumon, estomac, sein) [13]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - confondre Gy et Sv",
+              "text": "Gray et sievert ont la même dimension (J·kg⁻¹) mais des usages opposés. Le **gray** (dose absorbée) décrit un dépôt d'énergie physique réel, utilisé pour prédire les effets **déterministes** et l'efficacité thérapeutique. Le **sievert** (dose équivalente/efficace) est une construction de radioprotection, pondérée, destinée à gérer le risque **stochastique**. On ne planifie jamais une RIV en sievert ; on ne compare jamais deux examens diagnostiques en gray d'organe isolé sans pondération."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - la dose efficace ne s'additionne pas comme un risque patient",
+              "text": "Sommer les doses efficaces de plusieurs examens pour « estimer le risque » d'un patient âgé est un abus de la grandeur [reference CIPR 103, 13]. La dose efficace optimise et compare des protocoles ; pour un individu, c'est la dose absorbée aux organes critiques (vessie, moelle, reins, cristallin) qui compte. La CIPR 140 (2019) cadre d'ailleurs explicitement la dosimétrie tumeur + organes à risque en Gy pour la thérapie [71]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Cascade des grandeurs dosimétriques : dose absorbée en gray, pondérée par le type de rayonnement (w_R) pour donner la dose équivalente, puis par l'organe (w_T) pour donner la dose efficace en sievert.",
+            "caption": "Fig. 2 - Du gray physique au sievert de protection : deux pondérations successives (w_R puis w_T) transforment l'énergie déposée en indicateur de risque stochastique."
+          }
+        },
+        {
+          "title": "C9 - Ordres de grandeur et repères : du diagnostic à la thérapie vectorisée",
+          "text": "Le saut conceptuel le plus important pour le clinicien est l'**échelle** : le diagnostic se chiffre en **milligrays par organe** et en **millisieverts de dose efficace**, la thérapie vectorisée (RIV) en **grays par organe** — soit un facteur **~1000**. Maîtriser ces ordres de grandeur, c'est savoir d'emblée si une valeur annoncée est plausible.\n\n**▸ Repères diagnostiques (dose efficace adulte, CIPR 128 [53]).** La CIPR 128 est le compendium de référence des coefficients de dose pour ~120 radiopharmaceutiques diagnostiques, par âge de fantôme (1, 5, 10, 15 ans, adulte) [53].\n\n| Traceur | Dose efficace adulte | Organe critique |\n|---|---|---|\n| **¹⁸F-FDG** | **0,019 mSv/MBq** [21,22] | Vessie (**0,16 mGy/MBq**) [21] |\n| **⁹⁹ᵐTc-MDP** (os) | **~0,0057 mSv/MBq** [53] | Surface osseuse / vessie |\n| **⁹⁹ᵐTc-MAA** (perfusion pulm.) | **~0,008 mSv/MBq** [2] | Poumons |\n| **⁶⁸Ga-PSMA-11** | **~0,022 mSv/MBq** [25,26] | Reins (~40 mGy / 160 MBq) ; glandes lacrymales [25] |\n\nÀ titre d'illustration : une TEP au ¹⁸F-FDG de **370 MBq** délivre ≈ **7 mSv** de dose efficace [21], et l'organe critique reste la **vessie** — d'où l'**hydratation et les mictions fréquentes** comme première mesure d'optimisation [22]. La réduction de la dose vésicale relève directement de la lecture de la courbe activité-temps (C7) : raccourcir le temps de séjour urinaire diminue Ã dans la paroi vésicale.\n\n**▸ Repères thérapeutiques (dose absorbée par unité d'activité, Gy/GBq).** Ici on quitte la dose efficace pour la **dose absorbée à l'organe**, seule pertinente. L'enjeu est double : délivrer une dose tumoricide tout en respectant les **seuils de tolérance** des organes à risque.\n\n| Traitement | Organe | Dose par unité d'activité |\n|---|---|---|\n| **¹⁷⁷Lu-DOTATATE** (NET, NETTER-1) | Reins | **0,64 Gy/GBq** (médiane ; 0,47–0,90) [29,30] |\n| | Moelle osseuse | **0,04 Gy/GBq** (0,02–0,06) [29] |\n| **¹⁷⁷Lu-PSMA-617** (mCRPC, VISION) | Glandes lacrymales | **2,1 Gy/GBq** [34] |\n| | Glandes salivaires | **0,63 Gy/GBq** [34] |\n| | Reins | **0,43 Gy/GBq** [34] |\n| | Moelle rouge | **0,035 Gy/GBq** [34] |\n\n**Schémas d'administration et doses cumulées.** Le ¹⁷⁷Lu-DOTATATE suit le schéma NETTER-1 : **4 cycles de 7,4 GBq** (cumul **29,6 GBq**), sous co-perfusion d'**acides aminés** néphroprotectrice [32,33]. Le ¹⁷⁷Lu-PSMA-617 (VISION) délivre jusqu'à **6 cycles de 7,4 GBq** (cumul **44,4 GBq**), exposant les glandes lacrymales à **~92 Gy** et les reins à **~19 Gy** cumulés [34]. En radioembolisation, le **⁹⁰Y** délivre **120–180 Gy** au foie traité pour **3,7 GBq (100 mCi)** [42], avec ciblage par **modèle de partition** (tumeur / foie sain / poumon via ⁹⁹ᵐTc-MAA SPECT) [73] ; l'essai DOSISPHERE-01 a montré qu'une dose personnalisée **≥ 205 Gy** à la lésion index double quasiment le taux de réponse (**71 % vs 36 %**) face au standard de **120 Gy** [74].\n\n**▸ Seuils de tolérance des organes à risque (RIV).** Ce sont les bornes qui transforment un chiffre de dose en décision clinique :\n\n| Organe | Seuil de référence | Origine / nuance |\n|---|---|---|\n| **Moelle osseuse rouge** | **2 Gy** (exposition unique) | Seuil hématologique [37,29] |\n| **Reins** | **23 Gy** | Tolérance historique EBRT (Emami 1991) [58,59] |\n| **Reins (BED)** | **< 40 Gy** sûr ; **< 28 Gy** si facteurs de risque ; **> 45 Gy** = risque élevé | Dose biologiquement efficace, modèle LQ [60] |\n| **Sang (¹³¹I, méthode Benua)** | **< 2 Gy** | Plus haute activité sûre, DTC [61] |\n\n**Précaution méthodologique majeure.** Le seuil rénal de 23 Gy provient de la **radiothérapie externe** (débit de dose ~1000× supérieur à la RIV) ; en thérapie par radionucléides, le très faible débit de dose autorise une **réparation tissulaire** que le seuil brut ignore. On raisonne donc plutôt en **dose biologiquement efficace (BED)** via le modèle linéaire-quadratique (α/β rein ≈ 1,5–3 Gy), ce qui étend la tolérance rénale à **28–40 Gy** selon le profil de risque [58,60]. C'est précisément l'objet des recommandations du comité de dosimétrie de l'EANM [37] et de la CIPR 140 [71], qui appellent à généraliser la dosimétrie individualisée — encore minoritaire en routine [71].",
+          "stats": [
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace ¹⁸F-FDG adulte (CIPR 128) [21]"
+            },
+            {
+              "value": "0,64 Gy/GBq",
+              "label": "Dose rénale médiane ¹⁷⁷Lu-DOTATATE [29]"
+            },
+            {
+              "value": "23 Gy",
+              "label": "Seuil rénal historique EBRT (à corriger en BED) [58]"
+            },
+            {
+              "value": "2 Gy",
+              "label": "Seuil hématologique moelle osseuse rouge [37]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - le facteur 1000 diagnostic/therapie",
+              "text": "Repère mental : un examen diagnostique délivre des **mGy par organe** (FDG : 0,16 mGy/MBq à la vessie [21]), une RIV des **Gy par organe** (¹⁷⁷Lu-PSMA : 2,1 Gy/GBq aux glandes lacrymales [34]). Une dose absorbée thérapeutique annoncée en mGy, ou une dose diagnostique en Gy d'organe, doit immédiatement alerter sur une erreur d'unité ou de virgule."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - transposer un seuil EBRT a la RIV",
+              "text": "Appliquer tel quel le seuil rénal de 23 Gy (issu de la radiothérapie externe, Emami 1991 [58,59]) à une RIV au ¹⁷⁷Lu est trop conservateur : le débit de dose y est ~1000× plus faible, autorisant la réparation. Le raisonnement correct passe par la **BED** (modèle LQ) [58,60], qui repousse la tolérance rénale à 28–40 Gy selon les facteurs de risque [37]."
+            },
+            {
+              "type": "info",
+              "title": "Hierarchie des references dosimetriques",
+              "text": "Décroissance nucléaire → **CIPR 107** (1252 radionucléides) [17] ; pondérations w_R/w_T → **CIPR 103** [13] ; fantômes voxelisés → **CIPR 110** [54] ; doses diagnostiques → **CIPR 128** [53] ; protection en thérapie → **CIPR 140** [71]. Méthodologie de calcul → MIRD Pamphlet 21 [1] et, pour le ¹⁷⁷Lu quantitatif, MIRD Pamphlet 26 [57]."
+            }
+          ],
+          "figure": {
+            "figureRef": "SIRT_LIVER",
+            "alt": "Radioembolisation hépatique au ⁹⁰Y : le modèle de partition sépare les doses absorbées délivrées à la tumeur, au foie sain et aux poumons, illustrant l'échelle en grays de la thérapie vectorisée.",
+            "caption": "Fig. 3 - Échelle thérapeutique : en RIV, on planifie en grays par organe (ici ⁹⁰Y hépatique), avec ciblage tumoral maximal sous contrainte des organes à risque."
+          }
+        },
+        {
+          "title": "D10 - Du formalisme générique à la dosimétrie spécifique-patient",
+          "text": "Le schéma MIRD (**Medical Internal Radiation Dose**, comité de la Society of Nuclear Medicine) est né comme un outil de **dosimétrie de population** : appliqué à un fantôme de référence, il fournit des coefficients de dose moyens (mSv/MBq) destinés à comparer des radiopharmaceutiques et à encadrer la radioprotection diagnostique. La même équation **D(r_T, T_D) = Σ_{r_S} Ã(r_S, T_D) · S(r_T ← r_S)** [1] devient, en thérapie par radionucléides (radiopharmaceutical therapy, RPT), l'ossature d'une dosimétrie **spécifique-patient** où chaque terme est mesuré chez l'individu. La transition repose sur deux substitutions :\n\n1. **L'activité intégrée dans le temps Ã** (anciennement « activité cumulée », unité Bq·s, soit le nombre total de désintégrations dans la région source) cesse d'être tabulée pour être **mesurée** : on acquiert une série d'images quantitatives à plusieurs temps, on construit la courbe activité-temps (time-activity curve, TAC) de chaque organe, et on l'intègre de 0 à l'infini [7]. C'est l'objet de **MIRD Pamphlet No. 16** (Siegel et al., 1999), qui codifie l'acquisition et l'ajustement mono- ou bi-exponentiel des TAC [75], et de **MIRD Pamphlet No. 30 (MIRDfit)** pour l'ajustement des courbes [76].\n2. **La valeur S** [S(r_T ← r_S) = (1/M(r_T)) · Σ_i E_i · Y_i · φ_i, unité Gy·(Bq·s)⁻¹] [1,7] est, dans l'approche générique, lue dans une table de fantôme de référence ; dans l'approche personnalisée, elle est **recalculée pour la masse réelle des organes du patient** (segmentés sur la TDM) — la dépendance en 1/M(r_T) rend la dose très sensible à la taille de l'organe.\n\n| Niveau de personnalisation | Ã | Valeur S | Outil-type |\n|---|---|---|---|\n| **Générique (population)** | Coefficient tabulé (biocinétique de référence) | Fantôme de référence ICRP 110 [54,55] | ICRP 128 [53], MIRDcalc [3] |\n| **Hybride** | TAC mesurée du patient | Valeur S de fantôme mise à l'échelle de la masse | OLINDA/EXM [10,11] |\n| **Spécifique-patient** | TAC mesurée, organes segmentés | Valeur S recalculée (masse réelle, Monte-Carlo voxel) | IDAC-Dose [20], MIRDcalc avec masses personnalisées [3] |\n\nLa chaîne logicielle reflète cette montée en personnalisation. **MIRDOSE** (Stabin, années 1990) a été réécrit en **OLINDA/EXM**, autorisé par la FDA (510(k) K033960, 15 juin 2004) et diffusé dans plus de **2000 sites** ; l'accord MIRDOSE3.1 vs OLINDA/EXM est de **1 à 2 %** dans la plupart des cas [10,11,12]. **IDAC-Dose 2.1** s'appuie sur les fantômes voxélisés ICRP de référence et la base de décroissance **ICRP 107** (1252 radionucléides) [17,20]. **MIRDcalc** (MIRD Pamphlet No. 28 Part 1, J Nucl Med 2023;64(7):1117) ajoute la propagation d'incertitude, les régions source dynamiques et l'intégration tumorale, et est approuvé par la SNMMI [3,4,5,6].\n\nEn RPT, la valeur S incorpore aussi la **constante d'équilibre de dose absorbée Δ** (Δ = Σ_i n_i·E_i, énergie émise par unité d'activité cumulée), propriété intrinsèque du radionucléide [7], et la **fraction absorbée φ** (fraction de l'énergie émise par la source absorbée dans la cible, valeur entre 0 et 1) ; sa contrepartie massique est la **fraction absorbée spécifique Φ = φ/M(r_T)** [1]. Pour un émetteur β⁻ comme le **¹⁷⁷Lu** (demi-vie physique 6,647 j, β⁻ max 497 keV, parcours millimétrique), l'auto-irradiation (r_T = r_S) domine et φ ≈ 1 pour les organes de plusieurs grammes ; pour un émetteur α comme le **²²³Ra** (LET ~80 keV/µm, parcours < 100 µm) [72], la dose est déposée à l'échelle micrométrique, hors de portée des valeurs S au niveau organe — ce qui impose des modèles au niveau voxel (MIRD Pamphlet No. 17 [51]) ou cellulaire.\n\nLe passage à la **dose biologiquement efficace (BED, biologically effective dose)** parachève la personnalisation : MIRD Pamphlet No. 26 introduit la convolution pour la réparation cellulaire et la conversion en BED, indispensable car le **débit de dose** en RPT est inférieur de ~**3 ordres de grandeur** à celui de la radiothérapie externe (external beam radiotherapy, EBRT) [57,58]. C'est cette BED, et non la dose physique brute, qui se compare aux seuils de tolérance (cf. D11).",
+          "stats": [
+            {
+              "value": "1968",
+              "label": "Première publication du schéma MIRD [1]"
+            },
+            {
+              "value": "1252",
+              "label": "Radionucléides de la base ICRP 107 [17]"
+            },
+            {
+              "value": "1–2 %",
+              "label": "Accord MIRDOSE3.1 vs OLINDA/EXM [10]"
+            },
+            {
+              "value": "~10³",
+              "label": "Facteur débit de dose EBRT/RPT [58]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Toute la personnalisation tient dans deux gestes : **mesurer Ã** (imagerie quantitative multi-temps + intégration de la TAC, MIRD 16/30 [75,76]) et **recaler la valeur S** sur la masse réelle des organes (dépendance en 1/M). Le formalisme reste rigoureusement identique à celui de la dosimétrie de population — seules changent l'origine des deux termes et l'échelle (organe → voxel → cellule selon le type d'émission)."
+            },
+            {
+              "type": "info",
+              "title": "Repère de nomenclature (MIRD 21)",
+              "text": "MIRD Pamphlet No. 21 (2009) a rebaptisé l'ancienne « activité cumulée » en **activité intégrée dans le temps Ã** et l'ancien « residence time » τ en **coefficient d'activité intégrée dans le temps** (Ã normalisée par l'activité administrée A₀, homogène à un temps) [1,7]. MIRD 21 a aussi adopté formellement la dose équivalente H_T = Σ_R w_R·D_{T,R} et la dose efficace E = Σ_T w_T·H_T (Sv) avec les pondérations ICRP 103 [1,13]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique : une imagerie quantitative diagnostique fournit l'activité intégrée Ã et les masses d'organes, qui alimentent le calcul de dose absorbée personnalisé guidant l'activité thérapeutique administrée puis la réévaluation post-traitement."
+          }
+        },
+        {
+          "title": "D11 - Incertitudes, hypothèses cachées et limites du modèle",
+          "text": "La dose absorbée calculée par le schéma MIRD est une **estimation**, jamais une mesure directe. Sa fiabilité est gouvernée par la précision de la **quantification d'activité à chaque temps d'imagerie**, elle-même affectée d'une cascade d'incertitudes (MIRD Pamphlet No. 26) [57]. Les ignorer revient à manier des chiffres faussement rassurants ; les expliciter est le préalable à toute décision thérapeutique fondée sur la dosimétrie.\n\n**Sources d'incertitude sur Ã (activité intégrée dans le temps).**\n\n| Source | Effet sur l'estimation | Levier de réduction |\n|---|---|---|\n| Segmentation de l'organe / tumeur | Erreur sur la masse (terme 1/M) et sur les comptes | Délinéation TDM/IRM, opérateur unique |\n| **Effet de volume partiel** | Sous-estimation des petites lésions (< ~3× la résolution) | Coefficients de recouvrement, correction PVE |\n| Correction de temps mort / diffusé / atténuation | Biais d'étalonnage en Bq | Calibration croix-caméra, MIRD 26 [57] |\n| **Nombre et répartition des points temporels** | Erreur sur l'aire de la TAC | ≥ 3–4 temps couvrant la rétention |\n| Modèle d'ajustement (mono/bi-exponentiel) | Erreur de forme de courbe | MIRD 16/30, choix guidé par les résidus [75,76] |\n| **Extrapolation à l'infini** | Dépend de la composante lente, souvent mal échantillonnée | Imagerie tardive dédiée |\n\nPour la quantification SPECT du ¹⁷⁷Lu, MIRD 26 rapporte des facteurs de sensibilité de **6,11 ± 0,01 counts·s⁻¹·MBq⁻¹** en planaire et **5,67 ± 0,08** en SPECT/CT [57] — l'incertitude affichée porte sur l'étalonnage seul, pas sur l'ensemble de la chaîne, qui est bien plus large.\n\n**Hypothèses cachées du formalisme au niveau organe.**\n\n- **Distribution uniforme de l'activité** dans chaque région source : c'est l'hypothèse fondatrice de la valeur S au niveau organe. Elle est prise en défaut chaque fois que la fixation est hétérogène. En radioembolisation Y-90, le **modèle de partition** suppose explicitement une répartition uniforme des microsphères et ignore les variations spatiales et temporelles de dose et de débit, ainsi que les effets radiobiologiques [73].\n- **Géométrie de référence** : les valeurs S génériques supposent des organes de **masse et de position de référence** (ICRP 89, ICRP 110) [54,55]. Un organe atrophié, hypertrophié ou déplacé invalide la mise à l'échelle simple.\n- **Indépendance des termes** : Ã et S sont supposés séparables, ce qui suppose une biocinétique stable et une anatomie figée pendant toute l'intégration — discutable sur plusieurs jours de rétention.\n- **Transposition des seuils EBRT** : la limite rénale historique de **23 Gy** dérive de la tolérance d'Emami et al. (1991), établie en radiothérapie externe [58,59]. Or, en RPT, le débit de dose est ~3 ordres de grandeur plus faible (cf. D10), ce qui rend la comparaison directe physiquement contestable ; le modèle linéaire-quadratique avec **α/β rénal ≈ 1,5–3 Gy** [58] et la conversion en BED sont alors nécessaires.\n\n**De l'incertitude au seuil clinique.** La dosimétrie personnalisée ne prend son sens qu'au regard des contraintes de tolérance — qui sont elles-mêmes incertaines.\n\n| Organe à risque | Seuil usuel | Nature / précision du seuil |\n|---|---|---|\n| Moelle osseuse rouge | **2 Gy** (exposition unique) | Seuil hématologique empirique [37] |\n| Reins (dose physique) | **23 Gy** ; tolérance étendue **28–40 Gy** selon facteurs de risque | Issu de l'EBRT, à pondérer par le débit [37,58,59] |\n| Reins (BED, Bodei) | < **40 Gy** sans facteur de risque ; < **28 Gy** si facteurs de risque ; > **45 Gy** = risque élevé | Recommandation fondée sur la BED [60] |\n\nLes valeurs de dose par activité illustrent l'ampleur de la variabilité inter-patient, qui n'est pas du bruit mais une réalité biologique. En PRRT par **[¹⁷⁷Lu]Lu-DOTATATE** (essai NETTER-1, 4 cycles de 7,4 GBq, cumul 29,6 GBq) [32,33], la dose rénale médiane est de **0,64 Gy/GBq** (intervalle 0,47–0,90) et la dose médullaire de **0,04 Gy/GBq** (0,02–0,06) [29,30,31]. En **[¹⁷⁷Lu]Lu-PSMA-617** (sous-étude dosimétrique VISION, OLINDA/EXM v2.2), la dose absorbée par activité atteint **2,1 ± 0,47 Gy/GBq** aux glandes lacrymales, **0,63 ± 0,36** aux glandes salivaires, **0,43 ± 0,16** aux reins et **0,035 ± 0,02** à la moelle (sang) ; sur 6 cycles (44,4 GBq), la dose rénale cumulée prédite est de **19 Gy** mais mesurée à **16 ± 7 Gy** [34,35,36] — l'écart prédiction/mesure résume à lui seul la marge d'incertitude du modèle.",
+          "stats": [
+            {
+              "value": "23 Gy",
+              "label": "Seuil rénal historique (EBRT, Emami 1991) [59]"
+            },
+            {
+              "value": "2 Gy",
+              "label": "Seuil hématologique moelle rouge [37]"
+            },
+            {
+              "value": "0,64 Gy/GBq",
+              "label": "Dose rénale médiane ¹⁷⁷Lu-DOTATATE [29]"
+            },
+            {
+              "value": "16 ± 7 Gy",
+              "label": "Dose rénale mesurée à 6 cycles, ¹⁷⁷Lu-PSMA-617 [34]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'incertitude affichée n'est pas l'incertitude réelle",
+              "text": "Un facteur d'étalonnage donné à **6,11 ± 0,01 counts·s⁻¹·MBq⁻¹** [57] n'exprime que la reproductibilité d'une calibration. L'incertitude réelle sur la dose absorbée agrège segmentation, effet de volume partiel, correction de temps mort, nombre de points temporels, modèle d'ajustement et extrapolation à l'infini [57,75] — elle se chiffre en dizaines de pourcent, pas en pourcent. Ne jamais présenter une dose calculée comme une valeur déterministe sans barre d'incertitude."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — transposer les seuils EBRT au RPT",
+              "text": "La limite rénale de 23 Gy est née de la radiothérapie externe (Emami 1991) [59]. En RPT, le débit de dose est inférieur de ~3 ordres de grandeur (cf. D10) [58] : la dose physique brute n'est pas comparable au seuil EBRT. Il faut passer par la **BED** (modèle linéaire-quadratique, α/β rénal ≈ 1,5–3 Gy) et appliquer les recommandations dérivées (Bodei : BED < 40 Gy sans facteur de risque, < 28 Gy avec) [58,60]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la variabilité inter-patient justifie la dosimétrie personnalisée",
+              "text": "Une dose rénale de 0,47 à 0,90 Gy/GBq en ¹⁷⁷Lu-DOTATATE [29] signifie un facteur ~2 entre patients pour une même activité administrée. C'est précisément ce qui condamne l'activité fixe « one-size-fits-all » et fonde la dosimétrie spécifique-patient : à activité égale, certains patients restent loin du seuil, d'autres l'atteignent dès quelques cycles."
+            }
+          ],
+          "figure": {
+            "figureRef": "SIRT_LIVER",
+            "alt": "Radioembolisation hépatique au Y-90 illustrant l'hypothèse de distribution uniforme du modèle de partition : la dose calculée suppose une répartition homogène des microsphères dans le compartiment tumoral, le foie sain et le poumon, alors que la fixation réelle est hétérogène."
+          }
+        },
+        {
+          "title": "D12 - Pièges, idées reçues et erreurs d'interprétation",
+          "text": "La dosimétrie interne accumule les confusions de vocabulaire et les raccourcis dangereux. Les recenser évite de transformer un formalisme rigoureux en source d'erreurs cliniques.\n\n**▸ Confusion dose absorbée / dose équivalente / dose efficace.** Trois grandeurs, trois usages, deux unités.\n\n| Grandeur | Définition | Unité | Usage légitime |\n|---|---|---|---|\n| **Dose absorbée D** | Énergie déposée par unité de masse | Gy | Tolérance des organes, RPT [1] |\n| **Dose équivalente H_T** | H_T = Σ_R w_R·D_{T,R} | Sv | Pondération du type de rayonnement [13] |\n| **Dose efficace E** | E = Σ_T w_T·H_T | Sv | Comparaison de risque, radioprotection diagnostique [13] |\n\nLes facteurs de pondération radiologique **w_R** valent **1** pour les photons et les électrons (indépendamment de l'énergie) et **20** pour les particules α (ICRP 103) [13,14]. Les facteurs tissulaires **w_T** valent **0,12** pour moelle rouge, sein, poumon, côlon, estomac et tissus restants, **0,08** pour les gonades, **0,04** pour vessie, œsophage, foie et thyroïde, **0,01** pour surface osseuse, cerveau, glandes salivaires et peau ; leur somme fait **1,00** [13,15,16].\n\n**▸ Idée reçue n°1 : « la dose efficace prédit le risque individuel du patient ».** Faux. La dose efficace est un indicateur de **risque stochastique de population**, construit sur des fantômes et des pondérations de référence ; elle n'est pas un prédicteur de risque pour un individu donné [13]. En thérapie, elle n'a aucune place : seules comptent les **doses absorbées aux organes** (Gy) et leur BED.\n\n**▸ Idée reçue n°2 : « activité administrée = dose absorbée ».** L'activité (Bq) est ce qu'on injecte ; la dose (Gy) est ce qui est déposé. Le lien passe par la biocinétique (Ã) et la géométrie (valeur S), tous deux variables d'un patient à l'autre (cf. D11). À titre de repère diagnostique, la dose efficace du **¹⁸F-FDG** est de **0,019 mSv/MBq** chez l'adulte, avec la **paroi vésicale** comme organe critique (~**0,16 mGy/MBq**), réductible par hydratation et mictions fréquentes [21,22] ; celle du **⁶⁸Ga-PSMA-11** est de **0,022 mSv/MBq** (reins ~40 mGy après 160 MBq) [25,26]. Ces coefficients diagnostiques sont compilés dans **ICRP 128** (120 radiopharmaceutiques, fantômes 1/5/10/15 ans et adulte) [53] — ils ne s'appliquent qu'au cadre de population, jamais à la planification thérapeutique.\n\n**▸ Piège n°3 : oublier l'organe critique propre au traceur.** Il dépend de la biodistribution, pas d'une règle générale. FDG → vessie [21] ; PRRT/PSMA au ¹⁷⁷Lu → reins et moelle, et pour le PSMA, glandes lacrymales et salivaires (effet hors-cible, **2,1 Gy/GBq** aux lacrymales) [34,35,37] ; radioembolisation Y-90 → foie non tumoral et poumons (via le shunt) [42,44]. En SIRT, un **shunt hépato-pulmonaire > 20 %** est une contre-indication absolue (pneumopathie radique) [43].\n\n**▸ Piège n°4 : la dose au fantôme n'est pas la dose au patient.** Les valeurs S génériques supposent une masse d'organe de référence. Comme S varie en **1/M(r_T)** [1], un rein de 120 g et un rein de 180 g reçoivent, pour une même activité cumulée, des doses dans un rapport inverse de leurs masses. La segmentation TDM individuelle n'est pas un luxe mais une condition de validité (cf. D10).\n\n**▸ Piège n°5 : confondre dose physique et dose biologiquement efficace.** À dose physique égale, l'effet biologique dépend du débit et du fractionnement. Les **120–180 Gy** délivrés au foie pour 3,7 GBq (100 mCi) de microsphères de verre [42] ne se comparent pas terme à terme aux doses EBRT ; et **DOSISPHERE-01** a montré qu'un bras personnalisé visant ≥ **205 Gy** à la lésion index double presque le taux de réponse à 3 mois (**71 % vs 36 %**) par rapport au bras standard à **120 ± 20 Gy** [74] — démonstration que la dose, correctement personnalisée, est un déterminant d'efficacité, pas seulement de toxicité.\n\n**▸ Piège n°6 : croire que la pédiatrie se déduit en divisant l'activité adulte.** L'objectif de la **carte de dosage pédiatrique EANM** (v5.7.2016) est une **dose efficace indépendante du poids**, obtenue par activité de base × multiple lié au poids, avec une activité minimale garantissant la qualité d'image ; les radiopharmaceutiques y sont classés en clusters **A** (études rénales), **B** (la plupart) et **C** (études thyroïdiennes à l'iode) [47,48,50]. Aucune règle de trois linéaire ne reproduit ce résultat.",
+          "stats": [
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace adulte ¹⁸F-FDG [21]"
+            },
+            {
+              "value": "1,00",
+              "label": "Somme des w_T (ICRP 103) [13]"
+            },
+            {
+              "value": "71 % vs 36 %",
+              "label": "Réponse à 3 mois, dosimétrie personnalisée vs standard (DOSISPHERE-01) [74]"
+            },
+            {
+              "value": "> 20 %",
+              "label": "Shunt pulmonaire = CI absolue SIRT [43]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — Gy n'est pas Sv",
+              "text": "La **dose absorbée** (Gy) régit la tolérance des organes et toute la RPT ; la **dose efficace** (Sv) est un outil de radioprotection et de comparaison de risque de population [1,13]. Annoncer une « dose » thérapeutique en Sv, ou inversement déduire un risque individuel d'une dose efficace, sont deux erreurs symétriques. w_R(α) = 20, w_R(photon) = w_R(électron) = 1 [13,14]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la dose efficace ne prédit pas le risque d'un patient donné",
+              "text": "La dose efficace est calibrée sur des fantômes et des pondérations de population (ICRP 103) ; c'est un indicateur de risque stochastique collectif, non un prédicteur individuel [13]. En thérapie, elle est sans objet : raisonner en dose absorbée aux organes (Gy) et en BED."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la dose personnalisée améliore l'efficacité, pas seulement la sécurité",
+              "text": "DOSISPHERE-01 a établi qu'optimiser la dose à la lésion (≥ 205 Gy vs 120 ± 20 Gy) fait passer la réponse à 3 mois de 36 % à 71 % [74]. La dosimétrie spécifique-patient n'est donc pas seulement un garde-fou de toxicité : c'est un levier thérapeutique. Le corollaire — sous-doser par prudence excessive — peut coûter en efficacité."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma temps-distance-écran rappelant que les coefficients de dose efficace diagnostiques relèvent du cadre de radioprotection de population, distinct de la dose absorbée aux organes utilisée en thérapie."
+          }
+        },
+        {
+          "title": "E13 - Cas pratiques commentés : calculer une dose pas à pas",
+          "text": "Quatre cas déroulent la chaîne **Bq → Gy** dans l'ordre du schéma MIRD : (1) acquérir la cinétique, (2) intégrer l'activité-temps Ã, (3) appliquer la valeur **S**, (4) lire la dose absorbée et la confronter aux seuils d'organe. Chaque cas est volontairement chiffré pour servir de gabarit de calcul reproductible.\n\n**Rappel de l'équation de travail (MIRD Pamphlet No. 21).** La dose absorbée moyenne à la cible r_T vaut **D(r_T) = Σ Ã(r_S) · S(r_T ← r_S)**, où Ã est l'activité intégrée dans le temps (nombre total de désintégrations dans la source, unité **Bq·s**) et S le débit de dose par désintégration (**Gy·(Bq·s)⁻¹**).[1] L'activité intégrée s'obtient en ajustant la courbe activité-temps (TAC) de l'organe par une fonction **mono- ou bi-exponentielle**, puis en l'intégrant de 0 à l'infini ; c'est la méthode standardisée par le **MIRD Pamphlet No. 16** pour la biodistribution, désormais outillée par **MIRDfit (MIRD Pamphlet No. 30)**.[75,76]",
+          "steps": [
+            {
+              "title": "Cas 1 — ¹⁸F-FDG : du coefficient de dose à la dose efficace (raisonnement « catalogue »)",
+              "text": "*Contexte* : TEP-TDM oncologique, **350 MBq** de ¹⁸F-FDG chez l'adulte. *Calcul* : le coefficient de dose efficace tabulé est **0,019 mSv/MBq** (CIPR 128, fantômes CIPR 110, pondérations w_T CIPR 103).[53] Dose efficace ≈ 0,019 × 350 ≈ **6,7 mSv**. *Organe critique* : la **paroi vésicale**, dont le coefficient de dose absorbée est **≈ 0,16 mGy/MBq** → ≈ 56 mGy à la vessie pour 350 MBq.[21] *Leçon* : pour un radiopharmaceutique diagnostique standard, on n'intègre pas soi-même la cinétique — on lit le coefficient pré-calculé du catalogue CIPR 128, qui a déjà appliqué tout le formalisme MIRD. L'hydratation et les mictions fréquentes réduisent directement la dose vésicale.[22]"
+            },
+            {
+              "title": "Cas 2 — ⁶⁸Ga-PSMA-11 : convertir une activité en dose d'organe",
+              "text": "*Contexte* : TEP de cancer prostatique, posologie EANM/SNMMI **1,8–2,2 MBq/kg** → **160 MBq** pour 80 kg.[56] *Calcul* : coefficient de dose efficace **≈ 0,022 mSv/MBq** → ≈ **3,5 mSv**.[25] *Organe à dose la plus élevée* : les **reins**, ≈ **40 mGy pour 160 MBq** (mesure dosimétrique EJNMMI Physics).[25] *Leçon* : la courte demi-vie du ⁶⁸Ga (**67,7 min**) limite Ã, mais la réabsorption tubulaire concentre la dose rénale — d'où l'intérêt de raisonner par organe et non seulement en dose efficace corps entier."
+            },
+            {
+              "title": "Cas 3 — [¹⁷⁷Lu]Lu-DOTATATE (PRRT) : dosimétrie thérapeutique patient-spécifique",
+              "text": "*Contexte* : TNE de l'intestin moyen, schéma **NETTER-1 : 4 cycles de 7,4 GBq** (cumul 29,6 GBq).[33] *Calcul* (quantification SPECT/CT quantitatif, MIRD Pamphlet No. 26) : la dose médiane par unité d'activité au rein est **0,64 Gy/GBq** (intervalle 0,47–0,90), à la moelle **0,04 Gy/GBq**.[29,57] Par cycle de 7,4 GBq : reins ≈ **2–10 Gy**, moelle ≈ **0,05–0,4 Gy**.[29] *Confrontation aux seuils* : la **moelle** ne doit pas dépasser **2 Gy** par exposition (seuil hématologique) ; le **rein** a un seuil historique de **23 Gy** (BED rénale sûre **< 40 Gy**, **< 28 Gy** si facteurs de risque).[37,58,60] *Leçon* : ici l'on intègre réellement la cinétique de chaque organe sur plusieurs temps d'imagerie — c'est de la dosimétrie individualisée, pas un coefficient catalogue."
+            },
+            {
+              "title": "Cas 4 — Y-90 microsphères (SIRT) : le modèle MIRD mono-compartiment",
+              "text": "*Contexte* : radioembolisation hépatique, microsphères de verre. *Calcul (MIRD mono-compartiment)* : la dose au foie atteint **120–180 Gy pour 3,7 GBq (100 mCi)** ; cible thérapeutique usuelle **80–150 Gy** au volume traité.[42] Le **modèle de partition** (multi-compartiment, via SPECT au ⁹⁹ᵐTc-MAA) sépare tumeur / foie sain / poumon et maximise la dose tumorale.[73] *Sécurité* : un **shunt hépato-pulmonaire > 20 %** est une **contre-indication absolue** (pneumopathie radique).[43] *Validation clinique du gain dosimétrique* : DOSISPHERE-01 a comparé **120 ± 20 Gy** (standard) à **≥ 205 Gy** à la lésion index (personnalisé) → réponse à 3 mois **71 % vs 36 %**.[74] *Leçon* : la dose absorbée pilote directement l'efficacité — la dosimétrie n'est pas un contrôle a posteriori mais un outil de prescription."
+            }
+          ],
+          "stats": [
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Coeff. dose efficace ¹⁸F-FDG (CIPR 128)"
+            },
+            {
+              "value": "0,64 Gy/GBq",
+              "label": "Dose rénale médiane ¹⁷⁷Lu-DOTATATE"
+            },
+            {
+              "value": "2 Gy",
+              "label": "Seuil médullaire (exposition unique)"
+            },
+            {
+              "value": "120–180 Gy",
+              "label": "Dose foie / 3,7 GBq Y-90 (MIRD)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la décroissance effective",
+              "text": "Dans chaque organe, l'activité ne décroît pas seulement par la **demi-vie physique T_p** mais aussi par l'épuration biologique T_b : la constante effective est **λ_eff = λ_p + λ_b**, soit 1/T_eff = 1/T_p + 1/T_b. C'est T_eff (et non T_p) qui gouverne l'aire sous la courbe activité-temps, donc Ã. Confondre les deux est l'erreur de calcul la plus fréquente."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique : imagerie diagnostique quantitative → calcul dosimétrique patient-spécifique (activité cumulée × valeur S) → traitement par radionucléide → réévaluation, illustrant l'enchaînement becquerel injecté vers gray délivré.",
+            "caption": "Fig. 1 — La dosimétrie patient-spécifique boucle l'imagerie quantitative et le traitement : c'est l'application clinique directe de l'équation MIRD."
+          }
+        },
+        {
+          "title": "E14 - Synthèse opérationnelle : la chaîne becquerel → gray en une carte mentale",
+          "text": "Toute la dosimétrie interne tient en **une équation et cinq maillons**. Garder cette carte mentale évite de confondre les grandeurs et leurs unités.\n\n**▸ L'équation pivot.** **D(r_T) = Σ Ã(r_S) · S(r_T ← r_S)** : la dose à la cible est la somme, sur toutes les sources, du produit « combien de désintégrations » × « combien de dose par désintégration ».[1]\n\n**▸ Les cinq maillons (de l'activité injectée à la dose absorbée) :**\n\n| Maillon | Grandeur | Unité SI | D'où vient-elle | Source |\n|---|---|---|---|---|\n| 1. Activité injectée | A₀ | **Bq** | Mesurée à l'activimètre | — |\n| 2. Cinétique | courbe activité-temps | Bq vs s | Imagerie quantitative (planaire/SPECT/PET) | [75] |\n| 3. Activité cumulée | **Ã** (TIAC × A₀) | **Bq·s** | Intégrale de la courbe (0→∞) | [1,7] |\n| 4. Valeur S | **S(r_T ← r_S)** | **Gy·(Bq·s)⁻¹** | Δ, fraction absorbée φ, masse cible | [1,7] |\n| 5. Dose absorbée | **D** | **Gy** | Ã × S | [1] |\n\n**▸ Le facteur radionucléide pur.** La **constante d'équilibre de dose absorbée Δ = Σ nᵢ·Eᵢ** ne dépend que du radionucléide (énergies Eᵢ et rendements nᵢ de chaque émission) ; les données de décroissance proviennent de la base **CIPR 107 (1252 radionucléides, 97 éléments)**.[7,17] La **valeur S** y ajoute la géométrie : S = (1/M_cible)·Σ Eᵢ·Yᵢ·φᵢ, où **φ** est la fraction absorbée (entre 0 et 1) et **M** la masse de l'organe cible issue des **fantômes voxélisés CIPR 110**.[1,54]\n\n**▸ Du gray au sievert (radioprotection).** Pour le risque stochastique, la dose absorbée est pondérée deux fois : **dose équivalente H_T = Σ w_R·D_{T,R}** puis **dose efficace E = Σ w_T·H_T** (en **Sv**).[1,13]\n\n| Pondération | Symbole | Valeurs (CIPR 103) | Source |\n|---|---|---|---|\n| Radiologique | **w_R** | photons/électrons = **1** ; protons = 2 ; **α = 20** ; neutrons = f(E) | [13,14] |\n| Tissulaire | **w_T** | **0,12** (moelle, côlon, poumon, estomac, sein, restants) ; **0,08** gonades ; **0,04** vessie/œsophage/foie/thyroïde ; **0,01** os/cerveau/salivaires/peau ; **Σ = 1,0** | [13,15,16] |",
+          "stats": [
+            {
+              "value": "1252",
+              "label": "Radionucléides de la base CIPR 107"
+            },
+            {
+              "value": "Σ w_T = 1,0",
+              "label": "Somme des pondérations tissulaires (CIPR 103)"
+            },
+            {
+              "value": "w_R(α) = 20",
+              "label": "Pondération des particules alpha"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — dose absorbée (Gy) ≠ dose efficace (Sv)",
+              "text": "La **dose absorbée** (Gy) est une énergie déposée par unité de masse dans un organe donné : c'est la grandeur pertinente en thérapie (efficacité, toxicité d'organe). La **dose efficace** (Sv) est une grandeur de radioprotection, pondérée par le type de rayonnement et la radiosensibilité tissulaire, conçue comme indicateur de **risque stochastique de population — pas un prédicteur de risque individuel patient**.[1,13] En radiothérapie interne (PRRT, SIRT, ¹³¹I), on raisonne en **Gy aux organes à risque**, jamais en Sv corps entier."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — TIAC, l'ex « residence time »",
+              "text": "Le **coefficient d'activité intégrée dans le temps (TIAC)** = Ã / A₀ : c'est la fraction d'activité administrée exprimée en temps de séjour équivalent (s ou h).[7] L'ancienne nomenclature « residence time τ » du MIRD Primer désigne exactement la même quantité ; MIRD Pamphlet No. 21 a harmonisé le vocabulaire en 2009. Les valeurs S des logiciels attendent en entrée des TIAC, pas des activités brutes."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration générique : niveaux d'énergie d'un radionucléide, transitions avec leurs rendements et énergies d'émission, données qui alimentent la constante d'équilibre de dose absorbée Delta et la valeur S.",
+            "caption": "Fig. 2 — Le schéma de désintégration (énergies × rendements) fonde Δ, le facteur « radionucléide pur » de la valeur S."
+          }
+        },
+        {
+          "title": "E15 - Normes, recommandations et référentiels pivots",
+          "text": "La dosimétrie interne repose sur un socle normatif structuré en trois familles : le **formalisme** (comité MIRD/SNMMI), les **données et coefficients de dose** (CIPR), et les **guides cliniques par application** (EANM/SNMMI). Tout référentiel étalon doit s'y rattacher explicitement.\n\n**▸ Famille 1 — Formalisme MIRD (SNMMI).**\n\n| Référentiel | Apport | Source |\n|---|---|---|\n| **MIRD Pamphlet No. 21** (2009) | Schéma généralisé, nomenclature standardisée (Ã, S, TIAC, dose équivalente/efficace) | [1,2] |\n| **MIRD Pamphlet No. 16** (1999) | Acquisition/analyse de la biodistribution ; ajustement mono/bi-exponentiel des TAC | [75] |\n| **MIRD Pamphlet No. 17** (1999) | Valeurs S au niveau **voxel** (distributions non uniformes) | [51] |\n| **MIRD Pamphlet No. 26** (2016) | Guide EANM/MIRD de SPECT ¹⁷⁷Lu quantitatif pour la dosimétrie de RIV | [57] |\n| **MIRD Pamphlet No. 28** (2023) | **MIRDcalc** : outil organe-niveau gratuit, validé | [3,4,5] |\n| **MIRD Pamphlet No. 30** (2024) | **MIRDfit** : ajustement des courbes activité-temps | [76] |\n\n**▸ Famille 2 — Données et coefficients (CIPR).**\n\n| Publication | Rôle | Source |\n|---|---|---|\n| **CIPR 103** (2007) | Pondérations w_R et w_T, définitions H_T et E | [13] |\n| **CIPR 107** (2009) | Base de décroissance nucléaire (1252 radionucléides) | [17] |\n| **CIPR 110** (2009) | Fantômes computationnels voxélisés adultes de référence | [54,55] |\n| **CIPR 128** (2015) | Compendium des doses des **120 radiopharmaceutiques diagnostiques** (mSv/MBq, par âge : 1/5/10/15 ans/adulte) | [53] |\n| **CIPR 140** (2019) | Protection radiologique en thérapie par radiopharmaceutiques (dose tumeur + organes à risque, TCP/NTCP) | [71] |\n\n**▸ Famille 3 — Guides cliniques par application.**\n\n| Application | Référentiel | Repère dosimétrique | Source |\n|---|---|---|---|\n| TEP-FDG oncologie | EANM tumour imaging v2.0 (2015) | activité standardisée | [64] |\n| TEP PSMA | EANM/SNMMI PSMA v1.0 | **1,8–2,2 MBq/kg** | [56] |\n| Scintigraphie osseuse | SNMMI Procedure Standard 4.0 | adulte **500–1110 MBq** | [62] |\n| ¹³¹I cancer thyroïdien | SNMMI/EANM DTC ; méthode **Benua–Leeper** | dose sang **< 2 Gy**, rétention CE 48 h **< 4,4 GBq** | [61,63] |\n| ¹⁷⁷Lu-PSMA-RLT | Joint EANM/SNMMI (2023) | **7,4 GBq/cycle** | [38] |\n| PRRT/PSMA — dosimétrie | EANM dosimetry committee (2022) | seuils rein **23 Gy**, moelle **2 Gy** | [37] |\n| Pédiatrie (toutes applications) | **EANM Paediatric Dosage Card** v5.7.2016 | dose efficace indépendante du poids | [47,48,49,50] |\n\n**▸ Logiciels validés (chaîne de calcul).** **OLINDA/EXM** (FDA 510(k) juin 2004, > 2000 sites ; v2.2 utilisé dans la sous-étude VISION), **IDAC-Dose 2.1/2.2** (fantômes voxel CIPR, données CIPR 107) et **MIRDcalc** (approuvé SNMMI) constituent la chaîne logicielle de référence ; MIRDOSE et OLINDA/EXM concordaient à **1–2 %** lors de la transition.[10,11,12,20,34]",
+          "stats": [
+            {
+              "value": "120",
+              "label": "Radiopharmaceutiques tabulés dans CIPR 128"
+            },
+            {
+              "value": "23 Gy",
+              "label": "Seuil rénal historique (Emami 1991)"
+            },
+            {
+              "value": "5 mSv",
+              "label": "Dose max soignant/séance (CIPR 94)"
+            },
+            {
+              "value": "≤ 25 µSv/h",
+              "label": "Débit à 1 m à la sortie du patient"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Hiérarchie des seuils en radiothérapie interne",
+              "text": "Pour la **PRRT/RLT au ¹⁷⁷Lu**, les contraintes dose-organe à mémoriser : **moelle osseuse rouge 2 Gy** par exposition (seuil hématologique), **rein 23 Gy** (seuil historique EBRT d'Emami 1991), tolérance étendue **28–40 Gy** selon facteurs de risque ; BED rénale **< 40 Gy** sûre, **< 28 Gy** si facteurs de risque, **> 45 Gy** = risque élevé de déclin rénal.[37,58,59,60]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — radioprotection de l'entourage après thérapie",
+              "text": "Après administration thérapeutique (CIPR 94), la dose efficace aux **soignants/aidants** ne doit pas dépasser **5 mSv par séance de traitement** ; la limite **public est de 1 mSv/an**, et le débit de dose à **1 m à la sortie ≤ 25 µSv/h** garantit son respect.[69,70] Ces contraintes conditionnent les critères de sortie d'hospitalisation après ¹³¹I et ¹⁷⁷Lu."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Triade ALARA temps-distance-écran appliquée à la radioprotection autour d'un patient porteur d'un radiopharmaceutique thérapeutique, support des consignes de sortie et des contraintes de dose à l'entourage.",
+            "caption": "Fig. 3 — Les référentiels de radioprotection (CIPR 94) traduisent les seuils de dose en consignes ALARA opposables à la sortie du patient."
+          }
+        },
+        {
+          "title": "E16 - Références & liens",
+          "text": "Références complètes et datées (les valeurs chiffrées de l'article renvoient à ces sources par leur numéro **[n]**).\n\n**▸ Formalisme & logiciels MIRD (SNMMI).**\n[1] Bolch WE, Eckerman KF, Sgouros G, Thomas SR. **MIRD Pamphlet No. 21** : A Generalized Schema for Radiopharmaceutical Dosimetry. *J Nucl Med* 2009;50(3):477-484. — [2] PubMed PMID 19258258. — [3] Kesner A, Carter LM, et al. **MIRD Pamphlet No. 28, Part 1 : MIRDcalc**. *J Nucl Med* 2023;64(7):1117-1124. — [4] MIRD Pamphlet No. 28, Part 2 (PMID 37268423). — [5] PMC10394313. — [6] MIRDcalc, mirdsoft.org. — [51] **MIRD Pamphlet No. 17** : S Values au niveau voxel (PMID 9935083). — [57] Ljungberg M, et al. **MIRD Pamphlet No. 26** : Joint EANM/MIRD Guidelines for Quantitative ¹⁷⁷Lu SPECT. *J Nucl Med* 2016;57(1):151-162. — [75] Siegel JA, et al. **MIRD Pamphlet No. 16**. *J Nucl Med* 1999;40(2):37S-61S. — [76] **MIRD Pamphlet No. 30 : MIRDfit** (PMC11533917). — [7] Hindorf C. IAEA NM Physics Handbook, Chapter 18 : Internal Dosimetry.\n\n**▸ Données, coefficients & fantômes (CIPR).**\n[13] **CIPR 103** : 2007 Recommendations of the ICRP. — [14] Radiation weighting factor (ICRPaedia). — [15] Tissue weighting factor (ICRPaedia). — [16] Tissue weighting factors per ICRP 103 (Commission UE / GreenFacts). — [17] **CIPR 107** : Nuclear decay data for dosimetric calculations (PMID 19285593). — [18] ICRPædia Guide to Dose Coefficients. — [19] Effective dose from 338 radiopharmaceuticals (PMC4545621). — [53] Mattsson S, et al. **CIPR 128** : Radiation Dose to Patients from Radiopharmaceuticals. *Ann ICRP* 2015. — [54] **CIPR 110** : Adult Reference Computational Phantoms (icrp.org). — [55] CIPR 110 (INIS/IAEA). — [71] **CIPR 140** : Radiological Protection in Therapy with Radiopharmaceuticals (PMID 31565950). — [69] **CIPR 94** : Release of patients after therapy with unsealed radionuclides.\n\n**▸ Logiciels de dosimétrie.**\n[10] Stabin MG, et al. **OLINDA/EXM**. *J Nucl Med* 2005;46(6):1023-1027. — [11] PubMed PMID 15937315. — [12] OLINDA/EXM — FDA 510(k) K033960 (Voximetry, 2024). — [20] **IDAC-Dose 2.1** (PMC5668221).\n\n**▸ Dosimétrie diagnostique & quantification.**\n[21] Dose efficace/organe ¹⁸F-FDG PET/CT (PMC8459160). — [22] Optimizing FDG-PET/CT — Image Wisely. — [23] FDG dosimetry OLINDA/Geant4 (PMC12513526). — [24] [⁶⁸Ga]Ga-PSMA-11 — first FDA-approved (PMC8401928). — [25] Radiation dosimetry of [⁶⁸Ga]PSMA-11 — EJNMMI Phys 2018 (PMC6328430). — [26] PMID 30631980. — [56] **EANM/SNMMI ⁶⁸Ga-PSMA-11 procedure guideline v1.0**. — [62] **SNMMI Procedure Standard for Bone Scintigraphy 4.0**. *J Nucl Med Technol* 2018;46(4):398-404. — [64] **EANM tumour imaging guideline v2.0** (PMC4315529). — [65] EANM/EARL FDG-PET/CT accreditation (PMC5787222). — [66] SUL en ⁶⁸Ga-PSMA-11 (PMC6889088). — [67] SUV methodology (Turku PET Centre). — [52] IAEA Human Health Campus — Dosimetry.\n\n**▸ Radiothérapie interne (Gy & organes à risque).**\n[29] Dosimetry in ¹⁷⁷Lu-DOTATATE PRRT — systematic review. *Clin Transl Imaging* 2023. — [30] Individualized Dosimetry Kidney/Bone Marrow ¹⁷⁷Lu-DOTATATE (PMID 23223392). — [31] *J Nucl Med* 2013;54(1):33-41. — [32] Dosimetry NETTER-1 substudy (PMC11876735). — [33] Strosberg J, et al. **NETTER-1** (PMID 28076709). — [34] **VISION dosimetry substudy** : ¹⁷⁷Lu-PSMA-617. *J Nucl Med* 2024;65(1):71-78. — [35] PMC10755516. — [36] VISION dosimetry — ASCO JCO 2022. — [37] **EANM dosimetry committee** : ¹⁷⁷Lu SSTR/PSMA ligands (PMC9015994). — [38] **Joint EANM/SNMMI ¹⁷⁷Lu-PSMA-RLT guideline** (2023, PMC10317889). — [39] Lutetium-177 overview (ScienceDirect). — [40] Production of ¹⁷⁷Lu (PMC4463871). — [41] ¹⁷⁷ᵐLu impurity (PMC10628054). — [42] **¹⁰⁰⁹⁰Y-microspheres : MIRD equations**. *J Nucl Med* 2006;47(7):1209-1211. — [43] Y-90 radioembolization guide (RadCall). — [44] Y-90 SIRT TCP variation (PMC8192668). — [73] Partition model ⁹⁰Y (PMC5663990). — [74] **DOSISPHERE-01** (Garin E, et al., *Lancet Gastroenterol Hepatol* 2021). — [27] **SNMMI Practice Guideline Therapy of Thyroid Disease with ¹³¹I 3.0**. *J Nucl Med* 2012;53(10):1633-1651. — [28] ICRP compartment + EANM standard procedure I-131 (Frontiers Endocrinol 2021). — [61] Benua/Leeper limits (PMC7386177). — [63] **SNMMI/EANM DTC guideline**. *J Nucl Med* 2022;63(6):15N-35N. — [72] Xofigo (Ra-223) — FDA label NDA 203971. — [58] Wahl RL, et al. Normal-Tissue Tolerance to RPT. *J Nucl Med* 2021;62(Suppl 3):23S. — [59] O'Donoghue J. EBRT dose-response & kidney toxicity (PMID 15285886). — [60] Nephrotoxicity after radionuclide therapies (PMC8633679).\n\n**▸ Pédiatrie.**\n[47] Lassmann M, et al. **EANM paediatric dosage card** (PMID 18719912). — [48] Dosage card — EANM. — [49] EANM Dosage Card v5.7.2016 (PDF officiel). — [50] Standardization of Administered Activities in Pediatric NM, Part 2. *J Nucl Med* 2016;57(7):1148-1157. — [68] EANM paediatric dosage card (PMID 17406866). — [70] Individualized radiation precaution after ¹³¹I (PMC8139448).\n\n**▸ Liens typés (réseau de l'article)** — *Traceurs* : ¹⁸F-FDG, ⁶⁸Ga-PSMA-11, ¹³¹I-NaI, ¹⁷⁷Lu-DOTATATE, ¹⁷⁷Lu-PSMA-617, ⁹⁰Y-microsphères · *Examens* : TEP-FDG, TEP-PSMA, scintigraphie osseuse, SPECT/CT quantitatif ¹⁷⁷Lu · *Théranostique* : ¹⁷⁷Lu-DOTATATE, ¹⁷⁷Lu-PSMA-617, ¹³¹I, ⁹⁰Y-SIRT, Ra-223 · *Scores/outils* : MIRDcalc, OLINDA/EXM, BED rénale. *Dernière mise à jour : juin 2026 — profil médecin nucléaire (catégorie bases physiques).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note de méthode sur les sources",
+              "text": "Les références méthodologiques actuelles sont **MIRD Pamphlet No. 21** (formalisme, 2009) et **MIRD Pamphlet No. 28 / MIRDcalc** (outil, 2023). Le partage des rôles CIPR est à retenir : **CIPR 128** = doses diagnostiques de référence ; **CIPR 107** = données de décroissance ; **CIPR 103** = pondérations w_R/w_T ; **CIPR 110** = fantômes ; **CIPR 140** = cadre thérapeutique. Aucune valeur chiffrée n'est avancée sans renvoi à l'une de ces sources."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

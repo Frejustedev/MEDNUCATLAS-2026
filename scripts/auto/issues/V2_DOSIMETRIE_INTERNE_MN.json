@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "Quiz, dernière question (Ra-223) — explication : « Schéma : 50 kBq/kg, 6 cycles » ; idem fiche de référence Recherche 2, section Ra-223 : « 50 kBq/kg par cycle, 6 doses »",
+    "problem": "La dose de radium-223 (Xofigo) indiquée à 50 kBq/kg est PÉRIMÉE. Depuis la révision du standard primaire NIST de mars 2015 (écart de standardisation de ~+10,5 %), la dose officielle de l'AMM/FDA/EMA est de 55 kBq/kg de poids corporel, toutes les 4 semaines, 6 injections. La masse réellement administrée n'a pas changé, mais la valeur numérique correcte à publier aujourd'hui est 55 kBq/kg. Citer 50 kBq/kg est une valeur d'activité fausse au regard des recommandations actuelles — exactement le type d'erreur traquée (activité erronée).",
+    "fix": "Remplacer « 50 kBq/kg » par « 55 kBq/kg » (dose recalibrée NIST 2015 ; FDA label Xofigo NDA 203971, version courante) dans l'explication du quiz ET dans la fiche de faits. Optionnellement préciser « (anciennement 50 kBq/kg avant recalibration NIST 2015 ; même masse de Ra-223 administrée) »."
+  },
+  {
+    "severity": "minor",
+    "where": "Section C9 / E13 Cas 1 — exemple FDG : « une TEP au ¹⁸F-FDG de 370 MBq délivre ≈ 7 mSv »",
+    "problem": "Cohérence interne à surveiller : 0,019 mSv/MBq × 370 MBq = 7,03 mSv (correct). Mais le Cas 1 de E13 utilise 350 MBq → 6,7 mSv (correct aussi). Aucune erreur de calcul, simplement deux activités d'exemple différentes (350 vs 370 MBq) selon les sections, ce qui peut désorienter le lecteur. Valeur physique exacte dans les deux cas.",
+    "fix": "Harmoniser l'activité d'exemple FDG (350 ou 370 MBq) entre les sections C9 et E13 pour éviter toute confusion, ou conserver mais sans impact clinique. Non bloquant."
+  },
+  {
+    "severity": "minor",
+    "where": "sources[7] (source [8], radcommons.org PDF) — verified flag",
+    "problem": "La source [8] est marquée verified:false dans le JSON et annotée « NON confirmee » dans la liste, mais le PDF existe réellement (document académique de 3,7 Mo sur la dosimétrie interne MIRD, récupéré avec succès). Le drapeau d'incertitude est donc trop pessimiste — la source n'est PAS fabriquée.",
+    "fix": "Passer verified à true (URL fonctionnelle, contenu MIRD confirmé), ou conserver une note de prudence allégée puisque l'URL résout bien. Aucune action critique : la source est authentique."
+  },
+  {
+    "severity": "minor",
+    "where": "sources[66] (source [67], turkupetcentre.net/petanalysis/model_suv.html) — verified flag",
+    "problem": "Source [67] marquée verified:false / « NON confirmee », mais la page existe et traite bien de la méthodologie SUV (page active du Turku PET Centre, 40+ références, MAJ 2023). Non fabriquée.",
+    "fix": "Passer verified à true. La page est réelle et pertinente ; le drapeau d'incertitude peut être levé."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections (section E16 / références) et identityCard — couverture des sources",
+    "problem": "Plusieurs sources de la bibliographie ne sont jamais citées par [n] dans le corps (ex. [18] ICRPaedia Guide, [19] PMC4545621, [23] PMC12513526, [28] Frontiers I-131, [40]/[41] production 177Lu, [52] IAEA dosimetry, [65] EARL, [66] SUL, [68] EANM 2007, [70] dans la section D11 seulement). Ce n'est pas une fabrication mais une légère sur-bibliographie (sources listées non rattachées à une affirmation chiffrée précise).",
+    "fix": "Optionnel : soit rattacher ces sources à une affirmation (densité), soit les déplacer en « lectures complémentaires ». N'affecte pas la fidélité factuelle."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections, section C9 / E13 — chiffre dose rénale 177Lu-DOTATATE « 0,64 Gy/GBq »",
+    "problem": "L'article cite « 0,64 Gy/GBq » comme dose rénale médiane (source [29], revue systématique 2023). Une recherche montre par ailleurs un chiffre homonyme « 0,64 Gy à la moelle par 24 GBq » dans une autre étude (métrique différente). Le risque de confusion existe pour un relecteur, mais l'article attribue correctement la valeur à la dose rénale par GBq via [29]/[30]/[31] ; la donnée NETTER-1 cumulée (~19 Gy reins pour 4×7,4 GBq) est cohérente. Pas d'erreur, simple homonymie potentiellement déroutante.",
+    "fix": "Aucune correction nécessaire ; éventuellement préciser « dose absorbée rénale par unité d'activité » pour écarter toute confusion avec les métriques /24 GBq."
+  }
+]
