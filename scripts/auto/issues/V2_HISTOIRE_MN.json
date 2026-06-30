@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections D1, E1, et carte d'identité — effectif NETTER-1 « n=229 »",
+    "problem": "L'essai NETTER-1 a randomisé 231 patients au total (116 bras 177Lu-DOTATATE + 115/113 bras contrôle selon les publications NEJM 2017 / Lancet Oncol 2021). Le chiffre « 229 » correspond à la population d'efficacité retenue par la FDA, mais l'article le présente comme l'effectif de l'essai sans le préciser, ce qui peut être lu comme inexact face à la source primaire NEJM (231 enrôlés/randomisés).",
+    "fix": "Préciser « 229 patients (population d'efficacité ; 231 randomisés au total dans NETTER-1) » ou aligner sur 231 si l'on cite l'enrôlement. Vérifier sur NEJM 2017 (PMID 28076709)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A1 / A4 — conversion « 2,1 mCi (≈ 78 MBq) »",
+    "problem": "2,1 mCi = 2,1 × 37 MBq = 77,7 MBq, donc « ≈ 78 MBq » est exact. Aucune erreur de calcul ; je le note uniquement comme point vérifié car ce type de conversion mCi→MBq est une source classique d'erreur (cf. antécédent ×37 dans d'autres projets). RAS ici.",
+    "fix": "Aucun correctif nécessaire ; conversion confirmée correcte (37 MBq/mCi)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B3 / Fig.3 — coquille typographique sur le radionucléide",
+    "problem": "Dans le texte de B3 figure « régénère en continu le ⁹⁵ᵐTc élué à la demande » : il s'agit d'une coquille, le radionucléide est le ⁹⁹ᵐTc (technétium-99m), pas un « 95mTc ». Erreur de transcription qui, chez un lecteur médecin, passe pour une faute de fond sur le radionucléide étalon de la discipline.",
+    "fix": "Remplacer « ⁹⁵ᵐTc » par « ⁹⁹ᵐTc » dans la section B3."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A4 — date de la radioactivité artificielle (tableau : « 1934 »)",
+    "problem": "La découverte de la radioactivité artificielle par Frédéric et Irène Joliot-Curie date de janvier 1934 (Nobel de chimie 1935). La valeur « 1934 » est correcte ; le libellé « (contexte Joliot-Curie) » sans nommer explicitement les auteurs est faible mais non erroné.",
+    "fix": "Optionnel : nommer « Joliot-Curie, 1934 » pour la rigueur ; aucune valeur à corriger."
+  },
+  {
+    "severity": "minor",
+    "where": "Vérification URLs (échantillon)",
+    "problem": "Aucune source fabriquée détectée. 7 sources vérifiées en direct (titre + URL + contenu concordants) : [1] Saul Hertz/PMC5407393 (titre exact ; 31 mars 1941 et 2,1 mCi I-130/I-131 confirmés mot pour mot), [6] FDA Lutathera (URL réelle confirmée par recherche ; 26 janv. 2018, NETTER-1 n=229, SSTR+, extension pédiatrique ≥12 ans 23 avr. 2024 tous exacts), [14]/[33] BNL Tc-99m (Tucker & Greene 1957, ~80 % des actes confirmés), [16]/[35] Hal Anger (1957-58, NaI(Tl), 7 PMT, 'Scintillation Camera' Rev Sci Instrum 1958 exacts), [22] PMC8401928 (titre exact ; 1er 68Ga FDA, 1er déc. 2020 confirmés), [25] JNM 64:1998 'One Hundred Years of the Tracer Principle' (titre + thèse Hevesy confirmés), [28] Iodine-131 (8,02 j / γ 364 keV / β⁻ max 606 keV confirmés). Aucun DOI/URL douteux.",
+    "fix": "Aucune correction nécessaire ; sources jugées fiables."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections (E3) & source list",
+    "problem": "La source [10] (ScienceDirect, History of PET) et la source [51] (FDG PET/CT Staging Lung Cancer, PMC8206197) figurent dans la liste de sources et la bibliographie E3 mais ne sont jamais citées comme appui d'une affirmation chiffrée dans le corps des sections. Ce ne sont pas des fabrications (URLs plausibles, non vérifiées une à une mais cohérentes), mais des sources orphelines.",
+    "fix": "Soit citer [10] et [51] à l'endroit pertinent (ex. [51] sur le staging TEP-FDG du cancer du poumon en C2/quiz), soit les retirer de la liste pour éviter des références inutilisées."
+  },
+  {
+    "severity": "minor",
+    "where": "section D1 / C3 — datation 68Ga-PSMA-11",
+    "problem": "Le texte date les 'premières publications cliniques du 68Ga-PSMA-11' de 2012 (Heidelberg/DKFZ, Afshar-Oromieh). La source [22] confirme la publication de biodistribution d'Afshar-Oromieh en 2012, mais signale que la toute première utilisation chez le patient remonte à 2011. La formulation 'premières publications cliniques = 2012' reste défendable (1re publication), mais la nuance 2011 (1re administration) mérite d'être connue.",
+    "fix": "Optionnel : préciser '1re administration patient 2011, 1re publication 2012' pour une exactitude maximale ; en l'état la formulation n'est pas fausse."
+  }
+]
