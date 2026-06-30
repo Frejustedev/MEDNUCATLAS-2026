@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections A3, B2, C2, E1 (tableaux de dose) vs valeur de référence — scintigraphie de perfusion myocardique au 99mTc-MIBI",
+    "problem": "La dose efficace d'une perfusion myocardique 99mTc (repos+effort) est citée avec des fourchettes legerement variables d'une section a l'autre (~6,5–10 mSv en A3/B2/C2 ; ~6,5–12 mSv dans le tableau E1), alors que la fiche de reference cite ~12,1 mSv pour le volet effort. Toutes ces valeurs sont dans l'intervalle de la litterature (les enquetes dosimetriques donnent ~6,5 a 16 mSv selon protocole/activite), mais l'incoherence interne entre sections peut surprendre un lecteur attentif et la borne basse est un peu optimiste vs Mettler 2008 (~9 mSv typique).",
+    "fix": "Harmoniser une seule fourchette dans tout l'article (p.ex. ~7–12 mSv, repos+effort, selon protocole 1 jour/2 jours et activite) et la presenter comme dependante du protocole. Eviter de faire coexister deux bornes hautes differentes (10 vs 12 mSv) pour le meme examen."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections D1 et E1 — dose a la thyroide foetale du 131I",
+    "problem": "La formulation '1 MBq de 131I ≈ 230 mGy a la thyroide foetale au 3e mois' est juxtaposee a la valeur globale '0,5–1,1 Gy/MBq' (=500–1100 mGy/MBq). Les deux chiffres sont corrects mais correspondent a des ages gestationnels differents (≈230 au 3e mois, ≈580 au 5e mois, 0,5–1,1 Gy/MBq en fin de grossesse) ; presentes cote a cote sans souligner cette dependance, ils peuvent paraitre contradictoires (facteur ~2–5 d'ecart).",
+    "fix": "Indiquer explicitement la dependance a l'age gestationnel a chaque mention (p.ex. '≈230 mGy/MBq au 3e mois, ≈580 mGy/MBq au 5e mois, atteignant 0,5–1,1 Gy/MBq plus tard'), comme le fait deja la note de fiabilite de la fiche, pour eviter l'impression d'incoherence. Le message clinique (CI absolue) reste juste."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 201Tl — fourchette de dose ~18–37 mSv (A3, C2, E1, quiz)",
+    "problem": "La borne haute ~37 mSv pour 150 MBq de 201Tl provient d'une source de vulgarisation ; les catalogues dosimetriques (Mettler/ICRP) donnent plutot ~18–22 mSv pour une perfusion standard. La fiche le signale dans ses notes de fiabilite et le contenu cite bien une fourchette, ce qui est correct, mais la borne 37 mSv est repetee dans des stats accrocheuses (identityCard, quiz) ou la nuance se perd.",
+    "fix": "Maintenir la fourchette mais ancrer la valeur 'centrale' sur ~18–22 mSv (Mettler/ICRP) dans les stats mises en avant, et reserver ~37 mSv au cas extreme contextualise, afin de ne pas surestimer systematiquement la dose du thallium."
+  },
+  {
+    "severity": "major",
+    "where": "Section C3, tableau de performances diagnostiques, ligne « Lymphome de Hodgkin (TEP-FDG, staging) » citée [11]",
+    "problem": "L'article attribue à la source [11] (PMC10171757, « Validation of Deauville Score… in Hodgkin's Lymphoma ») une sensibilité de 97 % et une spécificité de 100 %. Vérification de la source : cet article ne rapporte PAS de sensibilité/spécificité ; il rapporte des valeurs prédictives (VPN > 95 %, ex. 95,2 % de réponse complète pour Deauville 1-3, 70,58 % de progression pour Deauville 4-5 non escaladés, kappa 0,853). Les chiffres « Se 97 % / Sp 100 % » ne figurent pas dans la source citée — données non fidèles à la référence (risque de fabrication de métriques).",
+    "fix": "Soit remplacer par les métriques réellement présentes dans [11] (valeurs prédictives, VPN >95 %), soit sourcer les valeurs Se 97 %/Sp 100 % par une référence qui les contient effectivement. Ne pas présenter des sensibilités/spécificités comme issues d'une étude qui n'en publie pas."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard, entrée « Décroissance » value « …⁹⁹ᵐTc 6 h, ¹⁸F 110 min [5][7] »",
+    "problem": "La demi-vie du ⁹⁹ᵐTc (6 h) et du ¹⁸F est sourcée par [5][7] ; or [7] est la guideline EANM FDG PET/CT v3.0, qui n'est pas la source naturelle pour la demi-vie physique de 6 h du ⁹⁹ᵐTc (couverte par [5]/[6]). Imprécision d'attribution, sans fabrication.",
+    "fix": "Utiliser [5][6] pour les demi-vies physiques, réserver [7] au contexte FDG/TEP."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard, entrée « Coefficient ¹⁸F-FDG » value « 0,019 mSv/MBq [1][41]»",
+    "problem": "Le coefficient 0,019 mSv/MBq est correctement sourçable par [41] (CIPR 128) ; l'ajout de [1] (SNMMI Fact Sheet, document grand public) comme co-source d'une valeur dosimétrique précise est faible. Cohérence interne : ailleurs (C1) la même valeur est citée [1], donc tolérable, mais [41] est la source de référence.",
+    "fix": "Privilégier [41] (ICRP 128) comme source primaire du coefficient ; [1] est accessoire."
+  }
+]
