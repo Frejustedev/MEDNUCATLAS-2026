@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections B3, B6, C1, D3, identityCard, quiz, et reference S33 — formation du radiopharmacien",
+    "problem": "L'article décrit la formation du radiopharmacien comme un « DES/DESC de Radiopharmacie et Radiobiologie » (et la source [33] est intitulée « DES de Radiopharmacie »). Or, depuis la réforme du 3e cycle (R3C, arrêté du 21 avril 2017), il n'existe PAS de DES autonome de radiopharmacie : la voie actuelle est le DES de Pharmacie Hospitalière, option (précoce) Radiopharmacie (5 ans). Le DESC de Radiopharmacie et Radiobiologie est l'ancien dispositif, désormais en extinction (statut de reconnaissance acquise). Présenter « DES/DESC de Radiopharmacie » comme intitulé courant est imprécis, même si l'article reconnaît partiellement les deux termes.",
+    "fix": "Remplacer par : « DES de Pharmacie Hospitalière, option Radiopharmacie (5 ans), incluant des stages en médecine nucléaire ; les anciens titulaires du DESC de Radiopharmacie et Radiobiologie conservent leur reconnaissance ». Aligner l'intitulé de la source [33] en conséquence."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B3 — « Internat de pharmacie hospitalière (4 ans) puis DES/DESC » / quiz Q4 et D3 (« internat pharma 4 ans + 4 stages de 6 mois en MN »)",
+    "problem": "La présentation « internat 4 ans PUIS DES/DESC » suggère deux temps successifs alors que le DES de Pharmacie Hospitalière option Radiopharmacie EST l'internat (cursus de 4 à 5 ans, l'option radiopharmacie portant la durée à 5 ans selon les sources). La formulation séquentielle (4 ans + diplôme complémentaire) est ambiguë et peut laisser croire à une durée totale supérieure à la réalité.",
+    "fix": "Clarifier que le DES (option radiopharmacie) constitue l'internat lui-même (durée 4 ans pour le DES PH, portée à 5 ans avec l'option radiopharmacie), et non une formation ajoutée après l'internat."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections B5, C2, E2 et tableaux de limites de dose — attribution de la limite cristallin à « CIPR 60/103 »",
+    "problem": "Les tableaux rattachent la limite cristallin de 20 mSv/an à « CIPR 60/103 ». Or l'abaissement du cristallin de 150 à 20 mSv/an provient de la Déclaration de Séoul de la CIPR (2011), pas de la CIPR 103 (2007), qui maintenait encore 150 mSv/an. L'article le dit correctement en texte (« abaissée par la CIPR, contre 150 auparavant ») mais l'en-tête de tableau « CIPR 60/103 » est trompeur pour cette ligne précise.",
+    "fix": "Préciser que la limite cristallin de 20 mSv/an découle de la déclaration CIPR de 2011 (transposée par Euratom 2013/59), et non de la CIPR 103 elle-même."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections A2, B2, B5, C1, C2, E1, identityCard, quiz — chiffres dosimétriques d'extrémité",
+    "problem": "[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] Erreur d'attribution de citation répétée (non-fidélité, pas fabrication). Les valeurs chiffrées précises — doigts ~10,7 ± 8,2 mSv/an (main gauche), ~12,7 ± 12,9 mSv/an (main droite), labo de dispensation ~19,6 ± 12,6 mSv/an, gamma-caméra ~13,2 mSv/an, et le facteur « ≥ 12× la dose corps entier » — sont systématiquement attribuées à [43] et [44]. Or vérification faite : ces valeurs proviennent EXCLUSIVEMENT de la source [45] (RPD Oxford, « Measurement of extremity doses of nuclear energy worker by using ring dosimeter », étude menée à l'Atomic Energy Center de Dhaka, Bangladesh ; abstract confirmé mot pour mot). La source [43] (JNMT, Finger Doses) rapporte des doses en µSv/GBq et conclut que la dose annuelle aux extrémités reste < 500 mSv/an (sauf un médecin ¹³¹I) — elle ne contient PAS ces valeurs annuelles. La source [44] (éditorial EJNMMI PMC3276764) cite les données ORAMED en µSv/GBq (99mTc 432, 18F 1205, 90Y 11000 µSv/GBq) et le constat « 1 travailleur sur 5 dépasse 500 mSv/an », mais PAS les chiffres annuels cités.",
+    "fix": "Rattacher tous les chiffres dosimétriques d'extrémité annuels (10,7/12,7 mSv, 19,6 mSv labo, 13,2 mSv caméra, ≥12×) à la source [45] uniquement. Ne conserver [43] que pour la mention qualitative (doses aux doigts > base/bout des doigts, < 500 mSv/an) et [44] pour le constat ORAMED en µSv/GBq et « 1 sur 5 ». Corriger toutes les occurrences (env. 8 endroits, dont stats et explications de quiz)."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [46] — titre",
+    "problem": "Le titre cité « Effect of dosimeter's position on occupational extremity dose during 18F-FDG preparation for PET/CT » est légèrement raccourci/inexact par rapport au titre réel vérifié : « Effect of dosimeter's position on occupational radiation extremity dose measurement for nuclear medicine workers during 18F-FDG preparation for PET/CT ». L'URL (PMC4975735) et le sujet sont corrects et le contenu (ratio P3/P1 = 1,67, dose au bout des doigts) est fidèle.",
+    "fix": "Aligner le titre de la source [46] sur l'intitulé exact de l'article, ou le marquer comme abrégé. Non bloquant."
+  }
+]
