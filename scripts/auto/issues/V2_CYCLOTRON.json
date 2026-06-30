@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Portée du positon du 18F — divergence entre les deux fiches étalon (Recherche 1 vs Recherche 2/medecin_nuc)",
+    "problem": "La Recherche 1 indique « Parcours (range) MAXIMAL du positon dans l'eau ≈ 2,3 mm » alors que le contenu livré (medecin_nuc, identityCard, stats, quiz) utilise systématiquement « portée MOYENNE ~0,6 mm ». Les deux valeurs sont en fait correctes mais décrivent des grandeurs différentes (max ≈ 2,3 mm vérifié ; moyenne ≈ 0,6 mm vérifié). Risque de confusion pour le lecteur si les deux chiffres se côtoient sans préciser à chaque fois 'moyen' vs 'maximal'.",
+    "fix": "Conserver « portée MOYENNE ~0,6 mm » (correct et bien étiqueté dans le contenu livré). Vérifier qu'aucun passage ne juxtapose 0,6 mm et 2,3 mm sans qualificatif. Idéalement mentionner les deux (moyenne ~0,6 mm / maximale ~2,3 mm) pour lever toute ambiguïté. Aucune valeur n'est fausse."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc section E15, infoBox « hyperglycémie » + section 4 contre-indications",
+    "problem": "Le seuil glycémique est présenté de façon hétérogène entre sources (< 11 mmol/L ~200 mg/dL selon EANM ; < 120 mg/dL selon StatPearls ; cible 7–8,3 mmol/L pour la recherche). Ce n'est pas une erreur factuelle (toutes ces valeurs sont sourcées et correctes), mais la coexistence de seuils différents sans hiérarchisation claire peut prêter à confusion sur le seuil opérationnel à retenir.",
+    "fix": "Préciser que le seuil de réalisabilité EANM est < 11 mmol/L (~200 mg/dL) et que < 7–8,3 mmol/L est un objectif d'optimisation (recherche/qualité d'image), pour éviter de laisser croire à des seuils contradictoires."
+  },
+  {
+    "severity": "minor",
+    "where": "Recherche 1 §3 (performances lymphome) — Se 27 %, Sp 100 %, exactitude 57 % pour l'envahissement médullaire",
+    "problem": "Cette performance (Se très basse 27 %) provient d'une étude unique (PMC DLBCL Deauville) et n'est PAS représentative de la littérature globale sur l'atteinte médullaire en lymphome (les méta-analyses Hodgkin donnent Se ~97 %, Sp ~99,7 %; séries NHL Se 50–63 %). La valeur est correctement attribuée ('a montré') et n'apparaît pas dans le contenu livré aux sections medecin_nuc, donc impact clinique nul, mais si elle était reprise telle quelle sans contexte elle sous-estimerait fortement la sensibilité réelle.",
+    "fix": "Si cette valeur devait être affichée dans le contenu publié, la contextualiser comme résultat d'une seule série (et préciser qu'elle dépend fortement du sous-type histologique et du gold standard), ou préférer les chiffres de méta-analyse. En l'état (non publiée dans medecin_nuc), aucune correction obligatoire."
+  },
+  {
+    "severity": "major",
+    "where": "Sections B4, C9, D12, E13, E15 (et stats associées) — chiffre attribué à la source [33] (Front Med 2022, 68Ga)",
+    "problem": "Affirmation répétée « production cyclotronique du 68Ga par 68Zn(p,n)68Ga jusqu'à 370 GBq (10 Ci) en ~2 h, soit 100–200× la sortie d'un générateur », systématiquement citée [33]. Vérification de la source [33] (frontiersin 10.3389/fmed.2022.812050) : l'article indique « up to 194 GBq » et NE contient NI le chiffre de 370 GBq / 10 Ci NI la comparaison « 100–200× ». Le 370 GBq semble repris par contamination depuis le rendement 18F par lot ([1]/[4]) et le « 100–200× » est inventé. C'est une donnée chiffrée fabriquée, répétée dans au moins 5 sections.",
+    "fix": "Remplacer par la valeur réellement sourcée : « jusqu'à ~194 GBq » (cf. [33]) et supprimer le facteur « 100–200× » non soutenu, ou le réattribuer à une source qui l'établit explicitement. Corriger toutes les occurrences (B4, C9, D12, E13, E15, infoBoxes)."
+  },
+  {
+    "severity": "minor",
+    "where": "Carte d'identité + multiples sections — branchement β+ du 18F « 96,7 % / CE 3,3 % »",
+    "problem": "Le document donne 96,7 % β+ / 3,3 % CE. La source primaire [1] (Wikipedia Fluorine-18) énonce 97 % (et ~3 %). La valeur 96,7 % est défendable (données nucléaires usuelles) mais n'est pas exactement celle de la source citée [1] qui dit 97 %. Écart mineur de fidélité au libellé de la source, sans gravité scientifique.",
+    "fix": "Aligner sur la source ([1] : ~97 % β+, ~3 % CE) ou citer une source de données nucléaires qui donne précisément 96,7 % / 3,3 %."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [34] (Deppen, JAMA 2014) — liste des sources",
+    "problem": "La source [34] est listée et vérifiée comme réelle (JAMA 2014;312(12):1227, meta-analyse FDG-PET / maladie infectieuse pulmonaire), mais elle n'est citée nulle part dans le corps de l'article (aucune occurrence de [34] dans les sections, infoBoxes, quiz ou E16). Source orpheline.",
+    "fix": "Soit intégrer une mention sourcée par [34] (p. ex. faux positifs FDG en zone d'endémie infectieuse, spécificité abaissée ~16 %), soit retirer [34] de la liste pour cohérence."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence interne portée du positon — C9/E13 (~8 mm O-15) vs JNM 404P [29]",
+    "problem": "Le document attribue les portées MOYENNES (18F ~0,6 mm ; Ga-68 ~3,5 mm ; O-15 max ~8 mm) à [25] (PMC4894854), ce qui est correct et vérifié (R_max O-15 = 8,4 mm, range moyen Ga-68 3,5 mm). En revanche la source [29] (abstract JNM 404P) donne des valeurs MAXIMALES différentes (F-18 2,3 mm ; Ga-68 8,9 mm ; Zr-89 3,6 mm ; I-124 6,9/10,2 mm) et n'est citée qu'en E13 sans que ses chiffres soient utilisés. Pas d'erreur factuelle, mais mélange potentiel de référentiels (moyen vs max) à surveiller.",
+    "fix": "Préciser systématiquement « portée moyenne » vs « portée maximale » et veiller à ce que chaque valeur soit rattachée à la bonne source ([25] pour les moyennes/8,4 mm O-15 ; [29] pour les maxima 2,3/8,9 mm)."
+  }
+]
