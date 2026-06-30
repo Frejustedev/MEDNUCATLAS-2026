@@ -1,5 +1,24 @@
 import { Article, Category, ArticleContent } from './data';
 
+// Libellés de catégorie (miroir du registre de navigation de data.ts). Sert de
+// repli quand un article a un catLabel vide (cas des nouvelles catégories
+// générées en masse), pour que le badge de catégorie s'affiche toujours.
+const CAT_LABELS: Record<string, string> = {
+  generalites: 'Généralités', bases_physiques: 'Bases Physiques', radiobiologie: 'Radiobiologie',
+  radioprotection: 'Radioprotection', reglementation: 'Réglementation', endocrinologie: 'Endocrinologie',
+  oncologie: 'Oncologie (Tumeurs Solides)', hematologie: 'Hématologie & Lymphomes', cardiologie: 'Cardiologie',
+  neurologie: 'Neurologie', nephro_urologie: 'Néphro-Urologie', pneumologie: 'Pneumologie',
+  gastro_enterologie: 'Gastro-entérologie', rhumatologie: 'Rhumatologie & Os',
+  senologie_gynecologie: 'Sénologie & Gynécologie', dermatologie_melanome: 'Dermatologie & Mélanome',
+  orl_salivaires: 'ORL & Glandes Salivaires', vasculaire_lymphatique: 'Vasculaire & Lymphatique',
+  infection_inflammation: 'Infection & Inflammation', urgences: 'Urgences en MN', pediatrie: 'Pédiatrie',
+  theranostique_thyroide: 'Pathologies Thyroïdiennes', tne: 'Tumeurs Neuroendocrines',
+  prostate: 'Cancer de la Prostate', sirt: 'Radioembolisation (SIRT)', radiopharmacie: 'Radiopharmacie',
+  instrumentation: 'Instrumentation', scores: 'Scores & Classifications', calculateurs: 'Calculateurs',
+  artefacts: 'Atlas des Artefacts', cas_cliniques: 'Cas Cliniques & Quiz', preparation: 'Préparation Patient',
+  guidelines: 'Guidelines (EANM/SNMMI)',
+};
+
 /**
  * Convertit les données brutes d'un document Firestore `articles` en objet
  * `Article` typé. Le champ `content` est stocké en JSON string (Firestore
@@ -25,7 +44,7 @@ export function articleFromDocData(data: Record<string, unknown>): Article {
   return {
     id: data.id as string,
     cat: data.cat as Category,
-    catLabel: (data.catLabel as string) ?? '',
+    catLabel: (data.catLabel as string) || CAT_LABELS[data.cat as string] || '',
     title: (data.title as string) ?? '',
     tags: (data.tags as string[]) ?? [],
     difficulty: (data.difficulty as Article['difficulty']) ?? 'fondamental',
