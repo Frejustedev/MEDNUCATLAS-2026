@@ -1,0 +1,20 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section B1 (tableau des coefficients de dose) — colonne 'Organe critique' pour ⁶⁸Ga-DOTATATE",
+    "problem": "Incohérence interne sur l'organe critique du ⁶⁸Ga-DOTATATE. La section B1 indique 'reins / paroi vésicale' alors que la section D1 indique correctement 'rate / paroi vésicale'. Selon la source citée (Sandström et al., J Nucl Med 2013, PubMed 23929824), l'organe critique réel — celui recevant la dose absorbée la plus élevée — est la RATE (spleen, ~2,82 × 10⁻¹ mGy/MBq), suivie de l'uroépithélium vésical, des reins puis du foie. La valeur de dose efficace (0,021 ± 0,003 mSv/MBq) est correcte dans les deux sections.",
+    "fix": "Harmoniser : remplacer en B1 'reins / paroi vésicale' par 'rate / paroi vésicale' pour ⁶⁸Ga-DOTATATE, conformément à la section D1 et à la source Sandström 2013. (Noter que pour le ⁶⁸Ga-PSMA-11, en revanche, 'reins / paroi vésicale' est bien correct — ne pas confondre les deux traceurs.)"
+  },
+  {
+    "severity": "minor",
+    "where": "Source [12] — DOI https://journals.sagepub.com/doi/10.1177/01466453241283931k",
+    "problem": "Le DOI se termine par un suffixe 'k' inhabituel (01466453241283931k). J'ai vérifié par WebSearch : l'URL résout bien vers le bon article (Otto, 'ICRU Report 95: new operational quantities for external radiation exposure', Annals of the ICRP 53, 2024). Ce n'est donc PAS une fabrication, mais le 'k' terminal est atypique pour un DOI canonique (le DOI réel est probablement 10.1177/01466453241283931 sans le 'k', ou le 'k' est un fragment de fin d'article). Source authentique, lien fonctionnel — signalé uniquement par prudence.",
+    "fix": "Optionnel : retirer le 'k' final et tester l'URL https://journals.sagepub.com/doi/10.1177/01466453241283931 ; sinon conserver tel quel puisque le lien actuel fonctionne."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence interne — coefficient ¹⁸F-FDG dans la carte d'identité vs corps (sections A5, B1, C1, C3, D1, E2)",
+    "problem": "La carte d'identité affiche '0,019 mSv/MBq' (CIPR 128) sans nuance, alors que le corps précise à plusieurs reprises (D1, E2, C1, §23/49) que le recalcul avec les fantômes maillés CIPR récents donne 0,017 mSv/MBq. Les deux valeurs sont exactes et vérifiées (ICRP 128 = 0,019 ; mesh = 0,017), mais la carte d'identité ne porte pas la mention du référentiel.",
+    "fix": "Optionnel : préciser dans la carte d'identité « 0,019 mSv/MBq (CIPR 128 ; 0,017 avec fantômes maillés) » pour éviter qu'un lecteur pressé ne fige la valeur sans son référentiel."
+  }
+]

@@ -1,0 +1,1450 @@
+{
+  "id": "V2_UNITES_RADIOACTIVITE",
+  "type": "autre",
+  "cat": "bases_physiques",
+  "catLabel": "",
+  "title": "Les unités de la radioactivité et des doses (becquerel, gray, sievert)",
+  "difficulty": "avancé",
+  "tags": [
+    "becquerel",
+    "gray",
+    "sievert",
+    "activité",
+    "dose absorbée",
+    "dose efficace",
+    "radioprotection",
+    "dosimétrie",
+    "CIPR 103",
+    "curie",
+    "facteurs de pondération",
+    "unités SI"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "EANM Dosage Card (Version 5.7.2016) — Paediatric administered activities, baseline activities & weight-class multiples",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiation Quantities and Units, Definitions, Acronyms (Bq, Ci, Gy, rad, Sv, rem, effective dose E=ΣwT·HT) — NCBI Bookshelf NBK230653",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK230653/",
+      "verified": true
+    },
+    {
+      "title": "Table D-5, Tissue Weighting Factors for Calculating Effective Dose (ICRP 103) — NCBI Bookshelf NBK158810",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK158810/table/T50/",
+      "verified": true
+    },
+    {
+      "title": "Kerma (physics) — definition, gray, air kerma, charged-particle equilibrium — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kerma_(physics)",
+      "verified": true
+    },
+    {
+      "title": "Radiation Weighting Factor — ICRP 103 wR values (photons 1, protons 2, alpha 20, neutron continuous) — nuclear-power.com",
+      "url": "https://www.nuclear-power.com/nuclear-engineering/radiation-protection/equivalent-dose/radiation-weighting-factor/",
+      "verified": true
+    },
+    {
+      "title": "Radiation weighting factors — ENS European Nuclear Society glossary",
+      "url": "https://www.euronuclear.org/glossary/radiation-weighting-factors/",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 103: The 2007 Recommendations of the ICRP (free extract PDF)",
+      "url": "https://www.icrp.org/docs/ICRP_Publication_103-Annals_of_the_ICRP_37(2-4)-Free_extract.pdf",
+      "verified": true
+    },
+    {
+      "title": "Dose limits — ICRPaedia (occupational 20 mSv/yr, public 1 mSv/yr, lens 20 mSv, skin 500 mSv)",
+      "url": "https://icrpaedia.org/Dose_limits",
+      "verified": true
+    },
+    {
+      "title": "Radiation weighting factor — ICRPaedia",
+      "url": "https://icrpaedia.org/Radiation_weighting_factor",
+      "verified": true
+    },
+    {
+      "title": "Personal Dose Equivalent Hp(10)/Hp(0.07) & Ambient Dose Equivalent H*(10) — operational quantities — nuclear-power.com",
+      "url": "https://www.nuclear-power.com/nuclear-engineering/radiation-protection/protection-from-exposures/radiation-dose-measuring-and-monitoring-operational-quantities/personal-dose-equivalent/",
+      "verified": true
+    },
+    {
+      "title": "ICRU Report 95: Operational Quantities for External Radiation Exposure (2020) — ICRU",
+      "url": "https://www.icru.org/report/icru-report-95-operational-quantities-for-external-radiation-exposure/",
+      "verified": true
+    },
+    {
+      "title": "ICRU Report 95: new operational quantities for external radiation exposure — T. Otto, 2024 (SAGE/Annals ICRP)",
+      "url": "https://journals.sagepub.com/doi/10.1177/01466453241283931k",
+      "verified": true
+    },
+    {
+      "title": "Becquerel — unit definition, 1975 CGPM adoption, Henri Becquerel — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Becquerel",
+      "verified": true
+    },
+    {
+      "title": "What is the unit called a gray? — 1975 CGPM, Louis Harold Gray — Sizes.com",
+      "url": "https://www.sizes.com/units/gray.htm",
+      "verified": true
+    },
+    {
+      "title": "Rolf Maximilian Sievert (1896-1966), sievert adopted 1979 (16th CGPM) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rolf_Maximilian_Sievert",
+      "verified": true
+    },
+    {
+      "title": "Sievert (Sv) — definition, 1 Sv = 100 rem — U.S. Nuclear Regulatory Commission glossary",
+      "url": "https://www.nrc.gov/reading-rm/basic-ref/glossary/sievert-sv",
+      "verified": true
+    },
+    {
+      "title": "Conversion Table (Units of Radiation Measure): Ci=3.7e10 Bq, rad=0.01 Gy, rem=0.01 Sv — SRS.gov",
+      "url": "https://www.srs.gov/general/pubs/ERsum/er05/04erpdfs/fraction.pdf",
+      "verified": true
+    },
+    {
+      "title": "Tissue Reactions (Deterministic) vs Stochastic effects; cataract/lens threshold ~0.5 Gy — Hong Kong Observatory",
+      "url": "https://www.hko.gov.hk/en/radiation/monitoring/deterministic_and_stochastic_effects.html",
+      "verified": true
+    },
+    {
+      "title": "Classification of radiation effects for dose limitation purposes: history, current situation and future prospects — Hamada & Fujimichi, J Radiat Res 2014 / PMC4100010",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4100010/",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (effective dose coefficients mSv/MBq) — SAGE/Annals ICRP",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy — MDPI Toxics 2023, 11(10):814",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814",
+      "verified": true
+    },
+    {
+      "title": "Comparative Biodistribution and Radiation Dosimetry of 68Ga-DOTATOC and 68Ga-DOTATATE in Patients with Neuroendocrine Tumors (0.021 mSv/MBq) — Sandström et al., J Nucl Med 2013 / PubMed 23929824",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23929824/",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms — Journal of Nuclear Medicine 2021;62(12):1805",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805",
+      "verified": true
+    },
+    {
+      "title": "Shielding resources for four common radiopharmaceuticals: Tc-99m, F-18, I-131, Lu-177 — Oumano 2025, J Appl Clin Med Phys",
+      "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/acm2.70084",
+      "verified": true
+    },
+    {
+      "title": "Radionuclides Used in Nuclear Medicine (T½, decay, gamma/positron energies) — radiopharmaceuticals.info",
+      "url": "http://www.radiopharmaceuticals.info/radionuclides.html",
+      "verified": true
+    },
+    {
+      "title": "Sodium Iodide I 131 — therapy activities hyperthyroidism & DTC ablation — StatPearls NBK556145",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK556145/",
+      "verified": true
+    },
+    {
+      "title": "Dosimetry for 177Lu-DKFZ-PSMA-617: a new radiopharmaceutical for the treatment of metastatic prostate cancer (kidney/salivary mGy/MBq) — PubMed 26318602",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26318602/",
+      "verified": true
+    },
+    {
+      "title": "Joint EANM/SNMMI procedure guideline for the use of 177Lu-labeled PSMA-targeted radioligand-therapy (177Lu-PSMA-RLT) — PMC10317889",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10317889/",
+      "verified": true
+    },
+    {
+      "title": "Exposition de la population française aux rayonnements ionisants (4,5 mSv/an, médical 34%) — IRSN/ASNR rapport EXPOP",
+      "url": "https://www.irsn.fr/sites/default/files/documents/actualites_presse/communiques_et_dossiers_de_presse/IRSN_Rapport%20EXPOP_def.pdf",
+      "verified": true
+    },
+    {
+      "title": "Natural background radiation (~2.4 mSv/yr worldwide; radon/cosmic/terrestrial breakdown) — CNSC Canada",
+      "url": "https://www.cnsc-ccsn.gc.ca/eng/resources/fact-sheets/natural-background-radiation/",
+      "verified": true
+    },
+    {
+      "title": "CT Radiation Dose Chart / typical effective doses of imaging (mSv) — Liv Hospital",
+      "url": "https://int.livhospital.com/ct-radiation-dose-chart-guide/",
+      "verified": true
+    },
+    {
+      "title": "The new EANM paediatric dosage card — Lassmann et al., Eur J Nucl Med Mol Imaging (2008 version, PubMed 18719912)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18719912/",
+      "verified": true
+    },
+    {
+      "title": "2.3 Units of Radiation: Becquerel, Gray, Sievert — Japan Ministry of the Environment",
+      "url": "https://www.env.go.jp/en/chemi/rhm/basic-info/2018/pdf/basic-1st-02-03.pdf",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 147: Use of Dose Quantities in Radiological Protection — ICRP",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+147",
+      "verified": true
+    },
+    {
+      "title": "Sievert - Gray - Becquerel - Conversion - Calculation | nuclear-power.com",
+      "url": "https://www.nuclear-power.com/nuclear-engineering/radiation-protection/equivalent-dose/sievert-unit-of-equivalent-dose/sievert-gray-becquerel-conversion-calculation/",
+      "verified": true
+    },
+    {
+      "title": "Bq = becquerel, Gy = gray, Sv = sievert (University of Oslo, chap05)",
+      "url": "https://www.mn.uio.no/fysikk/english/services/knowledge/radiation-and-health/chap05.pdf",
+      "verified": true
+    },
+    {
+      "title": "The Units to Measure Radiation: Explained - Versant Medical Physics and Radiation Safety",
+      "url": "https://www.versantphysics.com/2023/09/13/the-units-to-measure-radiation-explained/",
+      "verified": true
+    },
+    {
+      "title": "Gray (unit) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gray_(unit)",
+      "verified": true
+    },
+    {
+      "title": "Explained: rad, rem, sieverts, becquerels | MIT News",
+      "url": "https://news.mit.edu/2011/explained-radioactivity-0328",
+      "verified": true
+    },
+    {
+      "title": "Radiation Converter – Gray, Sievert, Becquerel, Curie & More (skalda.io)",
+      "url": "https://units.skalda.io/converters/radiation/",
+      "verified": true
+    },
+    {
+      "title": "Radiation-Activity Converter (unitconverters.net)",
+      "url": "https://www.unitconverters.net/radiation-activity-converter.html",
+      "verified": true
+    },
+    {
+      "title": "Derived units - BIPM (SI Brochure, Annex 1)",
+      "url": "https://www.bipm.org/en/publications/si-brochure/annex-1/derived-units",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 103 (full text, NRC ML12338A682)",
+      "url": "https://www.nrc.gov/docs/ml1233/ML12338A682.pdf",
+      "verified": true
+    },
+    {
+      "title": "Comparison of the ICRP 60 and ICRP 103 (IJMPCERO, scirp.org)",
+      "url": "https://www.scirp.org/pdf/ijmpcero_2015050518185637.pdf",
+      "verified": true
+    },
+    {
+      "title": "What weighting factor is used in converting organ dose to effective dose? — Health Physics Society Q8966",
+      "url": "https://hps.org/publicinformation/ate/q8966/",
+      "verified": true
+    },
+    {
+      "title": "CT effective dose per dose length product using ICRP 103 weighting factors — Huda 2011, Med Phys (PubMed 21520838)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21520838/",
+      "verified": true
+    },
+    {
+      "title": "ARPANSA — Statement on Proposed Changes to Australia's Radiation Protection Standards",
+      "url": "https://www.arpansa.gov.au/sites/default/files/rhc-statement-proposed-changes-radiation-protection-standards.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiation Dose to Patients in Diagnostic Nuclear Medicine — ICRP page 704",
+      "url": "https://www.icrp.org/page.asp?id=704",
+      "verified": true
+    },
+    {
+      "title": "A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG (PMC9908780)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9908780/",
+      "verified": true
+    },
+    {
+      "title": "Radiation dosimetry of 68Ga-PSMA-11 (HBED-CC) and preliminary evaluation of optimal imaging timing (PubMed 27260521)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27260521/",
+      "verified": true
+    },
+    {
+      "title": "131I thyroid activity and committed dose assessment among family members (PMC7368868)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7368868/",
+      "verified": true
+    },
+    {
+      "title": "Radiation protection of patients during PET/CT scanning — IAEA RPOP",
+      "url": "https://www.iaea.org/resources/rpop/health-professionals/nuclear-medicine/pet-ct/patients",
+      "verified": true
+    },
+    {
+      "title": "Radiation Doses and Radiation Protection | Radiology Key",
+      "url": "https://radiologykey.com/radiation-doses-and-radiation-protection/",
+      "verified": true
+    },
+    {
+      "title": "Technical basis for ICRP 1 mSv and 20 mSv dose limits — Health Physics Society Q8900",
+      "url": "https://hps.org/publicinformation/ate/q8900/",
+      "verified": true
+    },
+    {
+      "title": "Dose Limit Comparison Chart ICRP 26 / ICRP 60 / ICRP 103 (NRC ML081690717)",
+      "url": "https://www.nrc.gov/docs/ML0816/ML081690717.pdf",
+      "verified": true
+    },
+    {
+      "title": "New ICRP Recommendations on the Annual Dose Limit to the Lens of the Eye — Federal Register 2011-21900",
+      "url": "https://www.federalregister.gov/documents/2011/08/30/2011-21900/new-international-commission-on-radiological-protection-recommendations-on-the-annual-dose-limit-to",
+      "verified": true
+    },
+    {
+      "title": "Dose limits to the lens of the eye — Boal, ICRP 2013",
+      "url": "https://www.icrp.org/docs/ICRP2013%20S2%20Boal.pdf",
+      "verified": true
+    },
+    {
+      "title": "Henri Becquerel and the Discovery of Radioactivity — ANS Nuclear Newswire",
+      "url": "https://www.ans.org/news/article-879/henri-becquerels-discovery-of-radioactivity/",
+      "verified": true
+    },
+    {
+      "title": "Henri Becquerel | French Physicist & Radioactivity Pioneer — Britannica",
+      "url": "https://www.britannica.com/biography/Henri-Becquerel",
+      "verified": true
+    },
+    {
+      "title": "Units of Radioactivity: Unveiling the Power of Radiation — OpenMedScience",
+      "url": "https://openmedscience.com/units-of-radioactivity-unveiling-the-power-of-radiation/",
+      "verified": true
+    },
+    {
+      "title": "What is the unit called a sievert? — Sizes.com",
+      "url": "https://www.sizes.com/units/sievert.htm",
+      "verified": true
+    },
+    {
+      "title": "Air-kerma to Hp(0.07), Hp(3), Hp(10) conversion coefficients for monoenergetic photons (ScienceDirect S0969804320300051)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0969804320300051",
+      "verified": true
+    },
+    {
+      "title": "Conversion Coefficients from Kerma to Ambient Dose and Personal Dose (arXiv 1906.05411)",
+      "url": "https://arxiv.org/pdf/1906.05411",
+      "verified": true
+    },
+    {
+      "title": "How Effective Is Effective Dose as a Predictor of Radiation Risk? — AJR",
+      "url": "https://ajronline.org/doi/pdf/10.2214/AJR.09.4179",
+      "verified": true
+    },
+    {
+      "title": "Médecine nucléaire — IRSN / ASNR (radioprotection des patients)",
+      "url": "https://recherche-expertise.asnr.fr/professionnels-sante/radioprotection-patients/medecine-nucleaire",
+      "verified": true
+    },
+    {
+      "title": "NRD — Niveaux de référence diagnostiques — IRSN / ASNR",
+      "url": "https://recherche-expertise.asnr.fr/professionnels-sante/radioprotection-patients/nrd-niveaux-de-reference-diagnostiques",
+      "verified": true
+    },
+    {
+      "title": "Niveaux de référence diagnostiques en médecine nucléaire — AFCN (Belgique)",
+      "url": "https://afcn.fgov.be/fr/professionnels/professions-medicales/medecine-nucleaire/obligations-reglementaires/nrd",
+      "verified": true
+    },
+    {
+      "title": "Les niveaux de référence diagnostiques — Docteur Imago",
+      "url": "https://docteurimago.fr/grand-angle/reperes-documents/les-niveaux-de-reference-diagnostiques/",
+      "verified": true
+    },
+    {
+      "title": "The new EANM paediatric dosage card — Lassmann et al., Eur J Nucl Med Mol Imaging 2007 (PubMed 17406866)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17406866/",
+      "verified": true
+    },
+    {
+      "title": "Dosage card — EANM",
+      "url": "https://eanm.org/publications/useful-resources/dosage-card/",
+      "verified": true
+    },
+    {
+      "title": "Operational Quantities for External Radiation Exposure — ICRP consultation",
+      "url": "https://www.icrp.org/consultation_viewitem.asp?guid=%7B93660A77-0821-4650-A246-5A9605D3CD2C%7D",
+      "verified": true
+    }
+  ],
+  "lead": "Toute la médecine nucléaire repose sur trois grandeurs que l'on confond pourtant facilement entre elles. La première compte ce que fait une source radioactive, la deuxième mesure l'énergie qu'un tissu reçoit, et la troisième estime le risque biologique correspondant. On n'administre jamais l'une à la place de l'autre : on injecte une quantité de matière radioactive qui produit un dépôt d'énergie dans les organes, dépôt que l'on traduit ensuite en risque pour le patient et son entourage. Maîtriser ce vocabulaire, ses anciennes unités et le cadre réglementaire qui l'encadre est le socle de toute prescription, de toute dosimétrie et de toute décision de radioprotection.",
+  "identityCard": [
+    {
+      "icon": "activity",
+      "label": "Activité (SI)",
+      "value": "becquerel (Bq) = 1 désintégration·s⁻¹"
+    },
+    {
+      "icon": "zap",
+      "label": "Dose absorbée (SI)",
+      "value": "gray (Gy) = 1 J·kg⁻¹"
+    },
+    {
+      "icon": "shield",
+      "label": "Dose équivalente / efficace",
+      "value": "sievert (Sv) = 1 J·kg⁻¹ pondéré"
+    },
+    {
+      "icon": "flask",
+      "label": "Activité — ancienne unité",
+      "value": "1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose — anciennes unités",
+      "value": "1 Gy = 100 rad · 1 Sv = 100 rem"
+    },
+    {
+      "icon": "list",
+      "label": "Conversion clinique clé",
+      "value": "1 mCi = 37 MBq"
+    },
+    {
+      "icon": "target",
+      "label": "w_R photons / α",
+      "value": "1 (X, γ, β) · 20 (α)"
+    },
+    {
+      "icon": "microscope",
+      "label": "w_T max (moelle, côlon, sein…)",
+      "value": "0,12 (Σ w_T = 1,00)"
+    },
+    {
+      "icon": "stetho",
+      "label": "Limite travailleur",
+      "value": "20 mSv/an (moy. 5 ans, ≤ 50 mSv/an)"
+    },
+    {
+      "icon": "alert",
+      "label": "Limite public",
+      "value": "1 mSv/an"
+    },
+    {
+      "icon": "clock",
+      "label": "Adoption SI",
+      "value": "Bq et Gy 1975 · Sv 1979"
+    },
+    {
+      "icon": "droplets",
+      "label": "Exposition naturelle moyenne",
+      "value": "≈ 2,4 mSv/an (monde)"
+    },
+    {
+      "icon": "atom",
+      "label": "Coeff. dose ¹⁸F-FDG",
+      "value": "0,019 mSv/MBq (adulte)"
+    },
+    {
+      "icon": "pin",
+      "label": "Référentiel de protection",
+      "value": "CIPR 103 (2007) · Euratom 2013/59"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "¹⁸F-FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc (générateur ⁹⁹Mo/⁹⁹ᵐTc)"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-DOTATATE"
+    },
+    {
+      "type": "traceur",
+      "label": "¹³¹I (iodure)"
+    },
+    {
+      "type": "examen",
+      "label": "TEP-TDM au ¹⁸F-FDG"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse ⁹⁹ᵐTc-MDP"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie à la MIBG"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-PSMA-617"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹³¹I thérapeutique"
+    },
+    {
+      "type": "score",
+      "label": "Niveaux de référence diagnostiques (NRD)"
+    },
+    {
+      "type": "score",
+      "label": "Carte de dose pédiatrique EANM"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Que mesure exactement le becquerel ?",
+      "options": [
+        "L'énergie déposée par kilogramme de tissu",
+        "Le nombre de désintégrations par seconde de la source",
+        "Le risque biologique pondéré",
+        "La fluence de photons"
+      ],
+      "answer": 1,
+      "explanation": "Le becquerel est l'unité SI d'activité : 1 Bq = 1 désintégration (transformation nucléaire) par seconde, soit une unité homogène à des s⁻¹ [2,33].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Combien de becquerels vaut 1 curie ?",
+      "options": [
+        "3,7 × 10⁷ Bq",
+        "3,7 × 10¹⁰ Bq",
+        "1 × 10⁶ Bq",
+        "100 Bq"
+      ],
+      "answer": 1,
+      "explanation": "1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq (activité de 1 g de radium-226). En pratique : 1 mCi = 37 MBq [2,17].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Une prescription porte « 10 mCi ». À combien de MBq cela correspond-il ?",
+      "options": [
+        "100 MBq",
+        "270 MBq",
+        "370 MBq",
+        "740 MBq"
+      ],
+      "answer": 2,
+      "explanation": "Pour convertir mCi → MBq, on multiplie par 37 : 10 mCi = 370 MBq. Confondre mCi et MBq introduit un facteur ~37, piège classique de prescription [37].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle est la définition du gray ?",
+      "options": [
+        "1 désintégration par seconde",
+        "1 joule par kilogramme d'énergie absorbée",
+        "1 joule par seconde",
+        "1 sievert pondéré par le tissu"
+      ],
+      "answer": 1,
+      "explanation": "Le gray est l'unité SI de dose absorbée : 1 Gy = 1 J/kg, énergie déposée par les rayonnements par unité de masse de matière [33,38].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle conversion relie le gray et le rad ?",
+      "options": [
+        "1 Gy = 10 rad",
+        "1 Gy = 100 rad",
+        "1 Gy = 1000 rad",
+        "1 Gy = 1 rad"
+      ],
+      "answer": 1,
+      "explanation": "1 Gy = 100 rad (1 rad = 0,01 Gy = 100 erg/g). De même 1 Sv = 100 rem [2,17,39].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Le sievert est-il une grandeur directement mesurable sur un patient avec un dosimètre ?",
+      "options": [
+        "Oui, c'est ce que mesure tout radiamètre",
+        "Non, c'est une grandeur calculée de radioprotection",
+        "Oui, mais seulement pour les émetteurs α",
+        "Non, seul le becquerel se mesure"
+      ],
+      "answer": 1,
+      "explanation": "Le sievert (dose équivalente/efficace) n'est pas mesurable directement : on mesure le gray ou des grandeurs opérationnelles, et le Sv est calculé via les facteurs de pondération. Il vaut pour les faibles doses (effets stochastiques) [36,71].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel facteur de pondération radiologique w_R s'applique aux particules α dans la CIPR 103 ?",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "20"
+      ],
+      "answer": 3,
+      "explanation": "w_R = 20 pour les particules α, fragments de fission et ions lourds (densité d'ionisation élevée). Photons et électrons : w_R = 1 ; protons/pions : 2 [5,6,43].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En imagerie diagnostique conventionnelle (γ, X, β⁺), quelle est la relation numérique entre dose absorbée et dose équivalente ?",
+      "options": [
+        "1 Gy = 0,1 Sv",
+        "1 Gy = 1 Sv",
+        "1 Gy = 20 Sv",
+        "Aucune relation possible"
+      ],
+      "answer": 1,
+      "explanation": "Pour les photons et électrons, w_R = 1, donc numériquement 1 Gy = 1 Sv pour la dose équivalente. La distinction Gy/Sv devient critique pour les émetteurs α (w_R = 20) en thérapie alpha [5,6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quels tissus reçoivent le facteur de pondération tissulaire w_T le plus élevé (0,12) dans la CIPR 103 ?",
+      "options": [
+        "Peau, cerveau, glandes salivaires",
+        "Thyroïde, foie, vessie",
+        "Moelle osseuse rouge, côlon, poumon, estomac, sein",
+        "Gonades uniquement"
+      ],
+      "answer": 2,
+      "explanation": "w_T = 0,12 pour moelle rouge, côlon, poumon, estomac, sein et le « reste ». Les gonades sont à 0,08 ; peau/cerveau/salivaires/surface osseuse à 0,01. La somme des w_T = 1,00 [3,43,45].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Comment calcule-t-on la dose efficace E ?",
+      "options": [
+        "E = activité × période",
+        "E = Σ w_T · H_T (somme des doses équivalentes pondérées par tissu)",
+        "E = dose absorbée × masse",
+        "E = Σ w_R · D seulement"
+      ],
+      "answer": 1,
+      "explanation": "La chaîne CIPR : D (Gy) → ×w_R → dose équivalente H_T (Sv) → ×w_T → dose efficace E = Σ w_T · H_T (Sv), grandeur globale d'estimation du risque stochastique [2,7].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la limite de dose efficace pour un travailleur exposé (CIPR 103 / Euratom 2013/59) ?",
+      "options": [
+        "1 mSv/an",
+        "20 mSv/an (moyenne sur 5 ans, ≤ 50 mSv une année isolée)",
+        "50 mSv/an fixe",
+        "100 mSv/an"
+      ],
+      "answer": 1,
+      "explanation": "Travailleur exposé : 20 mSv/an en moyenne sur 5 ans, avec un maximum de 50 mSv une année isolée. La limite public est de 1 mSv/an [8,54,55].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Existe-t-il une limite de dose réglementaire pour l'exposition médicale du patient ?",
+      "options": [
+        "Oui, 20 mSv/an comme un travailleur",
+        "Oui, 1 mSv par examen",
+        "Non : justification et optimisation, encadrement par les NRD",
+        "Non, aucune règle ne s'applique"
+      ],
+      "answer": 2,
+      "explanation": "Pas de limite de dose pour l'exposition médicale du patient : le cadre repose sur la justification et l'optimisation (ALARA), avec encadrement par les niveaux de référence diagnostiques (NRD), qui ne sont ni des limites ni des doses optimales [8,66].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le coefficient de dose efficace adulte du ¹⁸F-FDG (CIPR 128) ?",
+      "options": [
+        "0,0019 mSv/MBq",
+        "0,019 mSv/MBq",
+        "0,14 mSv/MBq",
+        "1,9 mSv/MBq"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁸F-FDG : ≈ 0,019 mSv/MBq (1,9 × 10⁻²) chez l'adulte, organe critique = paroi vésicale. Une activité de ~150–400 MBq donne ~3–7 mSv [20,23].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "À quoi servent les grandeurs opérationnelles Hp(10) et H*(10) ?",
+      "options": [
+        "À prescrire l'activité injectée",
+        "À mesurer/estimer la dose efficace via les dosimètres et radiamètres",
+        "À calculer la période physique",
+        "À doser l'iode libre"
+      ],
+      "answer": 1,
+      "explanation": "Ce sont des grandeurs mesurables : H*(10) (équivalent de dose ambiant, ambiance) et Hp(10) (individuel, profondeur 10 mm) estiment la dose efficace ; Hp(0,07) estime la dose à la peau. Elles servent à étalonner dosimètres et radiamètres [10,71].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "À combien la CIPR a-t-elle abaissé la limite de dose au cristallin du travailleur en 2011 ?",
+      "options": [
+        "De 50 à 15 mSv/an",
+        "De 150 à 20 mSv/an (moyenne sur 5 ans)",
+        "De 500 à 150 mSv/an",
+        "Elle l'a supprimée"
+      ],
+      "answer": 1,
+      "explanation": "La déclaration de Séoul (2011) a abaissé la limite cristallin de 150 mSv/an à 20 mSv/an en moyenne sur 5 ans (max 50 mSv/an), en raison du risque de cataracte (effet déterministe, seuil ramené à ~0,5 Gy) [8,18,56].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Pourquoi le hertz et le becquerel, tous deux homogènes à des s⁻¹, ne sont-ils pas interchangeables ?",
+      "options": [
+        "Le hertz vaut le double du becquerel",
+        "Le hertz concerne les phénomènes périodiques, le becquerel les désintégrations stochastiques",
+        "Le becquerel n'est pas une unité SI",
+        "Ils le sont en réalité"
+      ],
+      "answer": 1,
+      "explanation": "Le hertz est réservé aux phénomènes périodiques et le becquerel aux processus stochastiques de désintégration radioactive, bien que tous deux vaillent l'inverse de la seconde [42].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est l'organe critique dosimétrique en cas de forte fixation thyroïdienne d'¹³¹I-iodure ?",
+      "options": [
+        "La vessie",
+        "Les reins",
+        "La thyroïde",
+        "Le foie"
+      ],
+      "answer": 2,
+      "explanation": "Pour l'¹³¹I-iodure chez un patient à forte fixation thyroïdienne, la thyroïde est l'organe critique majeur ; la dosimétrie est très dépendante du taux de fixation [51].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi la dose efficace (Sv) ne doit-elle pas servir à évaluer le risque individuel d'un patient ?",
+      "options": [
+        "Elle est trop précise",
+        "Elle est définie pour une personne de référence (sexe/âge moyennés) et destinée aux faibles doses en radioprotection",
+        "Elle ne s'applique qu'aux émetteurs β",
+        "Elle est mesurée et non calculée"
+      ],
+      "answer": 1,
+      "explanation": "La dose efficace est une grandeur de radioprotection pour une personne de référence, non destinée à l'évaluation individuelle du risque ni aux fortes doses thérapeutiques (où l'on raisonne en dose absorbée aux organes, en Gy) [34,64].",
+      "difficulty": "difficile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "Trois unités, trois questions : becquerel = combien de désintégrations/s à la source ; gray = combien de joules par kg déposés dans le tissu ; sievert = quel risque biologique pondéré.",
+      "Définitions SI : 1 Bq = 1 désintégration·s⁻¹ ; 1 Gy = 1 J/kg ; 1 Sv = 1 J/kg pondéré par la nocivité biologique [2,33,38].",
+      "Conversions vitales : 1 Ci = 37 GBq, 1 mCi = 37 MBq ; 1 Gy = 100 rad ; 1 Sv = 100 rem [2,17,39].",
+      "Chaîne CIPR 103 : D (Gy) → ×w_R → dose équivalente H_T (Sv) → ×w_T → dose efficace E = Σ w_T·H_T (Sv) [2,7].",
+      "Facteurs w_R : photons/électrons/β = 1 ; protons = 2 ; α = 20 ; neutrons = fonction de l'énergie (max ≈ 20). En diagnostic conventionnel, 1 Gy = 1 Sv [5,6].",
+      "Facteurs w_T (Σ = 1,00) : 0,12 pour moelle, côlon, poumon, estomac, sein ; 0,08 gonades ; 0,04 thyroïde/foie/vessie/œsophage ; 0,01 peau/cerveau/salivaires/surface osseuse [3,43].",
+      "Le sievert n'est pas mesurable directement : on mesure le gray et les grandeurs opérationnelles Hp(10)/H*(10) qui l'estiment ; il vaut pour les faibles doses [10,36].",
+      "Coefficients utiles : ¹⁸F-FDG ≈ 0,019 mSv/MBq (organe critique vessie) ; ⁹⁹ᵐTc-MDP ≈ 0,0057 mSv/MBq ; ¹³¹I-iodure organe critique = thyroïde [20,23,51]."
+    ],
+    "protocol": [
+      "Prescrire et dispenser en activité (MBq/GBq), vérifier l'activité réelle à l'activimètre avant injection (maillon CQ critique entre Bq mesuré et dose délivrée).",
+      "Raisonner en dose absorbée (Gy) pour la thérapie et la dosimétrie tumeur/organes à risque ; en dose efficace (mSv) pour l'optimisation et la radioprotection.",
+      "Pédiatrie : carte de dose EANM — A administrée = activité de base × multiple (poids), avec respect de l'activité minimale et des NRD [1,69].",
+      "Surveillance des travailleurs : dosimétrie passive et opérationnelle calibrée en Hp(10) (dose efficace) et Hp(0,07) (peau/cristallin) [10].",
+      "Toujours préciser le référentiel (CIPR 60 vs 103) lorsqu'une dose efficace est rapportée, car les w_T diffèrent (sein 0,05→0,12, gonades 0,20→0,08) [44]."
+    ],
+    "scores": [
+      "Niveaux de référence diagnostiques (NRD) : indicateurs d'optimisation des pratiques en mSv/mGy, ni limites ni doses optimales (arrêté 2011, décision ASN 2019-DC-0667) [66,68].",
+      "Limites de dose CIPR 103 : travailleur 20 mSv/an (moy. 5 ans, ≤ 50 mSv/an) ; public 1 mSv/an ; cristallin 20 mSv/an ; peau 500 mSv/an [8,55].",
+      "Exposition de référence : naturelle moyenne mondiale ≈ 2,4 mSv/an ; France ≈ 4,5 mSv/an dont médical ~34 % [29,30]."
+    ],
+    "pitfalls": [
+      "Confondre mCi et MBq (facteur ~37) sur une prescription : erreur d'activité majeure [37].",
+      "Sommer ou convertir directement Bq, Gy et Sv : ce sont des grandeurs distinctes (source / matière / risque), reliées seulement par un modèle dosimétrique [36].",
+      "Croire que le sievert se mesure : seules les grandeurs opérationnelles (Hp(10), H*(10)) sont mesurées et servent d'estimateurs de la dose efficace [10].",
+      "Utiliser la dose efficace (Sv) pour estimer un risque individuel ou une forte dose thérapeutique : elle est définie pour une personne de référence et les faibles doses [34,64].",
+      "Oublier de préciser le référentiel CIPR : une même irradiation donne une dose efficace différente selon CIPR 60 ou 103 [44]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "Ces mots un peu techniques que vous pouvez entendre : à quoi servent-ils ?",
+        "text": "Lors d'un examen ou d'un traitement de médecine nucléaire, on vous donne un médicament très légèrement radioactif. Pour en parler avec précision, les soignants utilisent des mots savants qui désignent des choses différentes : la **quantité de produit** que l'on vous administre, l'**énergie** que ce produit dépose dans votre corps, et une estimation du **risque très faible** que cela représente pour votre santé. Vous n'avez pas besoin de retenir ces termes : ils servent aux équipes à travailler avec rigueur, à doser exactement ce qu'il faut et à tout vérifier. L'essentiel à savoir, c'est que rien n'est laissé au hasard : chaque dose est calculée pour être la plus faible possible tout en permettant un examen de bonne qualité.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Trois mots, trois idées simples",
+            "text": "Quand l'équipe parle de « la quantité de produit », « l'énergie reçue » ou « le risque », elle décrit en réalité la même chose vue sous trois angles : combien on vous administre, ce que cela représente pour vos organes, et la sécurité globale. Ces repères aident les médecins à toujours faire le bon choix pour vous."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce dangereux ? Ce qu'il faut vraiment savoir",
+        "text": "C'est une question légitime, et la réponse est rassurante. La quantité de produit utilisée pour un examen est très faible et choisie avec soin : juste assez pour obtenir de belles images, jamais plus. Le rayonnement que vous recevez est comparable, dans l'ensemble, à ce que reçoit naturellement chacun d'entre nous au fil des mois, simplement en vivant sur Terre (le sol, l'air, l'altitude et même l'alimentation nous exposent un peu en permanence). Le produit s'élimine ensuite tout seul, en partie par les urines, dans les heures qui suivent. Votre médecin a toujours pesé l'intérêt de l'examen face à cette très faible exposition avant de vous le proposer : on ne réalise un examen que lorsqu'il apporte une information utile pour votre santé.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Quelques gestes simples qui aident",
+            "text": "Après l'examen, boire normalement et aller aux toilettes régulièrement aide votre corps à éliminer plus vite le produit. L'équipe peut aussi vous conseiller, pendant quelques heures, de garder un peu de distance avec les jeunes enfants et les femmes enceintes : c'est une simple précaution de bon sens, pas le signe d'un danger."
+          },
+          {
+            "type": "warning",
+            "title": "Grossesse et allaitement : à signaler",
+            "text": "Si vous êtes enceinte, si vous pensez l'être, ou si vous allaitez, prévenez l'équipe avant l'examen. Ce n'est pas forcément un obstacle, mais cela permet d'adapter la conduite à tenir et de prendre les précautions qui conviennent. Mieux vaut le dire spontanément, même en cas de doute."
+          }
+        ]
+      },
+      {
+        "title": "Pourquoi vous entendez parfois parler de doses",
+        "text": "Vous pouvez lire ou entendre le mot « dose » sur votre compte rendu ou dans la bouche des soignants. C'est tout simplement la façon dont les professionnels mesurent et tracent ce que vous recevez, pour garder le contrôle d'un examen à l'autre. En médecine nucléaire, comme pour une radio classique ou un scanner, ces doses sont surveillées et encadrées par des règles strictes. Vous pouvez poser toutes vos questions à l'équipe : combien de produit, pour quel examen, avec quelles précautions. Une équipe de médecine nucléaire est là pour vous expliquer simplement, vous rassurer, et s'assurer que l'examen se déroule dans les meilleures conditions de sécurité.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Un suivi, pas une inquiétude",
+            "text": "Garder une trace des doses ne veut pas dire que l'examen est risqué : c'est une démarche de qualité, exactement comme on note un poids ou une tension. Cela permet d'éviter les examens inutiles et de toujours privilégier votre intérêt."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Trois unités à ne pas confondre : ce que vos correspondants nucléaristes manipulent",
+        "text": "En pratique courante, vous croisez trois grandeurs qui répondent à trois questions différentes, et les confondre est l'erreur conceptuelle la plus fréquente. On n'« administre » jamais un risque à un patient : on lui administre une **activité** (la quantité de radiopharmaceutique), qui produit une **dose absorbée** dans ses organes (l'énergie déposée), elle-même traduite en une **dose efficace** qui sert uniquement à estimer un niveau de risque pour comparer des examens entre eux. Retenir cette distinction suffit à dialoguer juste avec le service de médecine nucléaire et à lire un compte rendu sans surinterpréter.",
+        "list": [
+          "**L'activité** correspond à la quantité de produit radioactif administrée ; c'est elle que l'on prescrit et que l'on dispense, jamais « une dose de risque ».",
+          "**La dose absorbée** mesure l'énergie réellement déposée dans un organe ; c'est la grandeur pertinente en thérapie (radiothérapie interne vectorisée), où l'on raisonne en dose à la tumeur et aux organes à risque.",
+          "**La dose efficace** est une grandeur de radioprotection, calculée et non mesurable directement : elle sert à situer un examen sur une échelle d'exposition, pas à prédire le risque d'un patient donné.",
+          "**Piège classique** : ne jamais convertir directement l'une en l'autre ni les additionner — ce sont trois concepts distincts, reliés par un modèle dosimétrique et non par une simple règle de trois.",
+          "**Erreur de prescription connue** : confondre les anciennes et nouvelles unités d'activité fait varier la quantité d'un facteur important ; en cas de doute, faire confirmer par le radiopharmacien ou le médecin nucléaire."
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma des différents types de rayonnements émis par un noyau instable (alpha, bêta, gamma).",
+        "figureCaption": "Selon le type de rayonnement émis, le même dépôt d'énergie n'a pas la même nocivité biologique : c'est ce qui distingue l'énergie reçue du risque estimé.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adresser à un service de médecine nucléaire, c'est confier la gestion fine de ces trois grandeurs à l'équipe la mieux outillée pour le faire. Le médecin nucléaire choisit l'activité optimale, l'adapte au poids et à l'âge (notamment chez l'enfant), vérifie l'activité réelle avant injection, et trace l'exposition selon les référentiels en vigueur. Pour le clinicien adresseur, l'intérêt est double : une information diagnostique ou thérapeutique inaccessible autrement, et une exposition maîtrisée, justifiée et optimisée. Une demande utile précise la question clinique, le contexte (grossesse possible, allaitement, fonction rénale, antécédents d'examens irradiants récents) et l'objectif attendu : c'est ce qui permet d'optimiser le choix du traceur et de la dose, et d'éviter les examens redondants."
+          }
+        ]
+      },
+      {
+        "title": "La démarche : justifier, comparer et resituer l'exposition",
+        "text": "Face à un patient, la bonne réflexe n'est pas de craindre « les rayons » mais de raisonner en bénéfice attendu rapporté à une exposition que l'on sait estimer et comparer. Il n'existe pas de limite de dose pour l'exposition médicale d'un patient : le cadre repose sur la **justification** (l'examen apporte-t-il une information utile et non redondante ?) et l'**optimisation** (faire au plus juste). Resituer l'ordre de grandeur d'un examen de médecine nucléaire par rapport à l'exposition naturelle reçue de toute façon chaque année, et par rapport à d'autres examens d'imagerie, aide à informer le patient sereinement et à arbitrer entre les options.",
+        "list": [
+          "**Justification** : avant de demander un examen irradiant, vérifier qu'aucune information équivalente n'est déjà disponible (examens récents, imagerie non irradiante alternative).",
+          "**Mise en perspective** : l'exposition d'un examen courant de médecine nucléaire reste du même ordre que ce que chacun reçoit naturellement sur une période donnée ; ce repère rassure et objective la décision.",
+          "**Populations particulières** : grossesse, allaitement et pédiatrie justifient un échange anticipé avec le médecin nucléaire, qui adapte ou diffère l'examen et ajuste l'activité.",
+          "**Information du patient** : un message simple et honnête sur le très faible niveau de risque, l'élimination rapide du produit et les précautions transitoires renforce l'adhésion sans inquiéter inutilement.",
+          "**Traçabilité** : l'exposition est documentée, ce qui permet un suivi cohérent si plusieurs examens se succèdent dans le parcours du patient."
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le bon réflexe en consultation",
+            "text": "Plutôt que de répondre « c'est sans danger » ou « il y a des rayons », situer l'examen : « l'exposition est faible, comparable à ce que l'on reçoit naturellement, et elle est justifiée parce qu'elle va répondre à telle question précise ». Ce cadrage, repris du principe de justification-optimisation, est à la fois exact, rassurant et professionnel."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identité : becquerel, gray et sievert en un coup d'œil",
+        "text": "Trois grandeurs, trois questions, trois unités SI dotées d'un **nom propre**. On n'administre jamais « des sieverts » à un patient : on lui injecte une **activité** (en becquerels) qui produit une **dose absorbée** (en grays) dans ses organes, traduite ensuite en **dose efficace** (en sieverts) pour estimer le risque.[2,33] Confondre ces trois unités est l'erreur conceptuelle la plus fréquente de la radioprotection.[36]\n\n| Grandeur | Unité SI | Symbole | Dimension SI | Ce qu'elle mesure | Mesurable ? |\n|---|---|---|---|---|---|\n| **Activité** | becquerel | **Bq** | s⁻¹ | nombre de désintégrations par seconde, à la **source** | Oui (activimètre) |\n| **Dose absorbée** | gray | **Gy** | J·kg⁻¹ | énergie déposée par unité de masse dans la **matière** | Oui (dosimètre) |\n| **Dose équivalente / efficace** | sievert | **Sv** | J·kg⁻¹ | dose absorbée pondérée par la **nocivité biologique** | Non (grandeur calculée) |\n\nLe **becquerel (Bq)** vaut **1 désintégration par seconde**, soit 1 s⁻¹ ; c'est l'unité SI de l'activité.[2,33] Le **gray (Gy)** vaut **1 joule par kilogramme** de matière irradiée.[33,38] Le **sievert (Sv)** a la **même dimension** que le gray (1 J·kg⁻¹) mais résulte d'une pondération destinée à refléter le risque stochastique.[35,37] Les trois figurent parmi les unités SI dérivées à nom spécial validées par le BIPM (Bureau international des poids et mesures).[42]\n\n**Point critique d'emblée** : le sievert n'est **pas** une grandeur physique mesurable par un instrument. On mesure le gray (dose absorbée) ou une grandeur opérationnelle ; la dose équivalente/efficace en sieverts est toujours **calculée** à partir de coefficients de pondération.[36] Bien que hertz (Hz) et becquerel partagent la dimension s⁻¹, le hertz est réservé aux phénomènes périodiques et le becquerel aux processus stochastiques de désintégration.[42]",
+        "stats": [
+          {
+            "value": "1 désint./s",
+            "label": "1 becquerel (Bq) — activité"
+          },
+          {
+            "value": "1 J/kg",
+            "label": "1 gray (Gy) — dose absorbée"
+          },
+          {
+            "value": "1 J/kg pondéré",
+            "label": "1 sievert (Sv) — dose équivalente/efficace"
+          },
+          {
+            "value": "≈ 2,4 mSv/an",
+            "label": "Exposition naturelle moyenne mondiale [30]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le sievert ne se mesure pas",
+            "text": "Aucun dosimètre n'affiche directement des sieverts « patient ». Les appareils mesurent une **dose absorbée** (Gy) ou une **grandeur opérationnelle** — H*(10), Hp(10) — qui ESTIME la dose efficace. Le sievert (dose équivalente/efficace) reste une grandeur de **calcul** propre à la radioprotection, valable pour les faibles doses et non destinée au risque individuel ni aux fortes doses thérapeutiques.[34,36,64]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la chaîne mentale en une ligne",
+            "text": "Bq (combien de désintégrations à la source ?) → Gy (combien d'énergie déposée dans le tissu ?) → ×w_R → H_T en Sv (dose équivalente, pondérée par le type de rayonnement) → ×w_T → E en Sv (dose efficace, pondérée par les tissus). Tout le reste de l'article déroule cette chaîne D → ×w_R → H_T → ×w_T → E.[2,7]"
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma des modes de désintégration (alpha, bêta moins, bêta plus, gamma) reliant le nombre de transformations nucléaires comptées par le becquerel aux différents types de rayonnements qui, eux, déposent une énergie mesurée en gray."
+      },
+      {
+        "title": "A2 - Pourquoi trois unités et pas une seule ? Activité, énergie déposée, risque",
+        "text": "Une source radioactive émet ; un tissu encaisse ; un organisme subit un risque. Ces trois étapes physiques sont **disjointes** et nécessitent chacune leur grandeur, car aucune ne se déduit linéairement de la précédente sans modèle.\n\n**1. L'activité (Bq) caractérise la SOURCE, pas la cible.** Le becquerel compte les transformations nucléaires par seconde : A = dN/dt.[2] Deux sources de même activité mais d'énergie ou de type de rayonnement différents ne déposeront pas la même énergie dans un tissu donné. L'activité ignore totalement la géométrie, la distance, l'écran et la nature de la cible : 100 MBq d'un émetteur γ pénétrant et 100 MBq d'un émetteur α arrêté par quelques µm de tissu n'ont rien de comparable en termes d'effet.\n\n**2. La dose absorbée (Gy) caractérise l'ÉNERGIE reçue par la matière.** Le gray quantifie les joules déposés par kilogramme, **indépendamment** du type de rayonnement et de l'organe.[33,38] C'est la grandeur physique fondamentale, mesurable, qui gouverne les **effets déterministes** (radiothérapie, radiothérapie interne vectorisée) où l'on raisonne en Gy à la tumeur et aux organes à risque. Mais à dose absorbée égale, un rayonnement α est biologiquement bien plus délétère qu'un photon : le gray seul ne suffit donc pas à prédire le risque.\n\n**3. La dose équivalente / efficace (Sv) caractérise le RISQUE biologique stochastique.** Le sievert applique au gray deux pondérations successives : l'une pour la **dangerosité du rayonnement** (facteur w_R), l'autre pour la **radiosensibilité des tissus** touchés (facteur w_T).[7] C'est la grandeur de **protection radiologique**, conçue pour gérer les **effets stochastiques** (cancers, effets héréditaires) à faible dose, sous l'hypothèse linéaire sans seuil (LNT, *Linear No-Threshold*).[19]\n\n| Niveau | Question posée | Grandeur | Unité | Autorité de référence |\n|---|---|---|---|---|\n| Source | Combien de désintégrations/s ? | Activité | Bq | BIPM (SI) [42] |\n| Matière | Combien d'énergie déposée/kg ? | Dose absorbée | Gy | ICRU [2] |\n| Organisme | Quel risque biologique ? | Dose équivalente, dose efficace | Sv | ICRP (CIPR 103, 2007) [7,43] |\n\n**Architecture des grandeurs.** L'ICRU (*International Commission on Radiation Units and Measurements*) définit les grandeurs **physiques mesurables** : activité (Bq), fluence, kerma (Gy), dose absorbée (Gy).[2] La CIPR / ICRP (*International Commission on Radiological Protection*) définit les grandeurs **de protection calculées** : dose équivalente H_T et dose efficace E (Sv), publiées dans la CIPR 103 (2007).[7,43] S'y ajoutent les grandeurs **opérationnelles** (H*(10), Hp(10), Hp(0,07)), mesurables, qui servent à étalonner les dosimètres et à estimer les grandeurs de protection.[10,71]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi pas un facteur de conversion unique Bq → Sv ?",
+            "text": "Parce que le passage activité → dose absorbée → dose efficace dépend de la **biocinétique** du radiopharmaceutique (où va-t-il, combien de temps y reste-t-il ?), de la **géométrie** des organes (fantômes anthropomorphes) et du **type de rayonnement**. C'est précisément l'objet des coefficients de dose (mSv/MBq) de la CIPR 128, calculés organe par organe pour chaque traceur — il n'existe donc qu'un coefficient par radiopharmaceutique, pas une constante universelle.[20,48]"
+          },
+          {
+            "type": "info",
+            "title": "Effets déterministes vs stochastiques — deux grandeurs, deux logiques",
+            "text": "Effets **déterministes** (réactions tissulaires) : SEUIL, gravité ∝ dose, exprimés en **Gy** — cataracte (seuil abaissé à ≈ 0,5 Gy), érythème, dépression médullaire, mucite.[18,19] Effets **stochastiques** : SANS seuil, probabilité ∝ dose, exprimés via la dose efficace en **Sv** — cancers et effets héréditaires, modèle LNT.[19] Le gray protège des premiers (limites de dose équivalente aux organes), le sievert des seconds (limite de dose efficace)."
+          }
+        ]
+      },
+      {
+        "title": "A3 - Le becquerel : mesurer l'activité d'une source radioactive",
+        "text": "L'**activité** A d'une source est le nombre de noyaux qui se désintègrent par unité de temps : A = dN/dt = λ·N, où λ est la constante de désintégration et N le nombre de noyaux radioactifs présents. Son unité SI est le **becquerel (Bq)** : **1 Bq = 1 désintégration (transformation nucléaire) par seconde = 1 s⁻¹**.[2,33] C'est une unité dérivée du SI, homogène à l'inverse d'une seconde.[42]\n\n**Repères historiques.** La radioactivité est découverte par **Henri Becquerel**, rapportée à l'Académie des sciences le **24 février 1896** (sels d'uranium « particulièrement actifs »).[58,59] Le becquerel est **adopté en 1975** par la 15ᵉ CGPM (Conférence générale des poids et mesures), nommé en l'honneur de Becquerel — Prix Nobel de physique 1903 avec Pierre et Marie Curie — et remplace alors le curie comme unité officielle d'activité dans le SI.[13,39,60]\n\n**Ancienne unité — le curie (Ci).** Encore présent sur les flacons, dans la littérature nord-américaine et les dossiers anciens, le curie correspondait à l'activité de 1 g de radium-226 :\n\n| Activité | Conversion SI exacte |\n|---|---|\n| **1 curie (Ci)** | **3,7 × 10¹⁰ Bq = 37 GBq** [17,35] |\n| **1 millicurie (mCi)** | **37 MBq** [40,41] |\n| **1 microcurie (µCi)** | **37 kBq** [40,41] |\n| 1 Bq | ≈ 27 pCi [17] |\n\n**Astuce clinique de conversion** : pour passer des mCi aux MBq, **multiplier par 37**. À mémoriser : **5 mCi ≈ 185 MBq, 10 mCi = 370 MBq, 20 mCi = 740 MBq**.[37]\n\n**Ordres de grandeur en pratique.** Une injection diagnostique typique met en jeu quelques **dizaines à centaines de MBq** ; une thérapie par radionucléides se chiffre en **GBq**. Quelques exemples :\n\n| Acte | Activité typique adulte | Source |\n|---|---|---|\n| TEP au ¹⁸F-FDG | ≈ 150–400 MBq (2–4 MBq/kg) | EANM/ICRP [1,20] |\n| Scintigraphie osseuse ⁹⁹ᵐTc-MDP | 600–740 MBq | ICRP 128 [20] |\n| ⁶⁸Ga-DOTATATE (TNE) | ≈ 100–200 MBq | ICRP 128 [20] |\n| I-131 hyperthyroïdie | ≈ 370–740 MBq (10–20 mCi) | StatPearls [26] |\n| Ablation post-thyroïdectomie (CDT) | ≈ 1110–3700 MBq, jusqu'à 7400 MBq (200 mCi) | StatPearls [26] |\n\n**Métrologie de l'activité (« CQ » du becquerel).** L'activité réellement injectée au patient est mesurée par l'**activimètre** (chambre d'ionisation à puits), dont la justesse est garantie par des contrôles qualité réguliers — constance, exactitude, linéarité, dépendance géométrique — tracés à des étalons nationaux (LNHB, PTB, NIST).[20] Le becquerel mesuré au pied du patient conditionne directement la dose absorbée délivrée : c'est un **maillon métrologique critique**, à vérifier systématiquement avant injection.",
+        "stats": [
+          {
+            "value": "1 Bq = 1 s⁻¹",
+            "label": "1 désintégration par seconde [2,33]"
+          },
+          {
+            "value": "1 Ci = 37 GBq",
+            "label": "Curie → becquerel [17,35]"
+          },
+          {
+            "value": "1 mCi = 37 MBq",
+            "label": "Conversion clinique de poche [40,41]"
+          },
+          {
+            "value": "1975",
+            "label": "Adoption du Bq (15ᵉ CGPM) [13]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — mCi vs MBq : un facteur ≈ 37 sur la prescription",
+            "text": "Confondre **millicuries** et **mégabecquerels** sur une prescription introduit un facteur d'environ **37** : 10 mCi = 370 MBq, pas 10 MBq. C'est l'une des erreurs de dispensation les plus dangereuses. Toujours expliciter l'unité et recouper à l'activimètre.[37]"
+          },
+          {
+            "type": "info",
+            "title": "Becquerel ≠ hertz",
+            "text": "Les deux valent l'inverse de la seconde (s⁻¹), mais le **hertz** décrit un phénomène **périodique** (fréquence) et le **becquerel** un processus **stochastique** (désintégration aléatoire). Ils ne sont jamais interchangeables.[42]"
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Schéma d'un générateur 99Mo/99mTc illustrant la production d'une activité (becquerels) de technétium-99m éluée à partir du molybdène-99, ordre de grandeur des dizaines à centaines de MBq pour un examen diagnostique."
+      },
+      {
+        "title": "A4 - Le gray : quantifier l'énergie absorbée par la matière",
+        "text": "La **dose absorbée** D est l'énergie moyenne déposée par les rayonnements ionisants par unité de masse de matière. Son unité SI est le **gray (Gy)** : **1 Gy = 1 joule par kilogramme = 1 J·kg⁻¹**.[33,38] C'est la grandeur dosimétrique **physique fondamentale** : mesurable, additive, indépendante du type de rayonnement et de l'organe considéré.\n\n**Repères historiques.** Le gray est **adopté en 1975** (15ᵉ CGPM), nommé d'après le physicien et radiobiologiste britannique **Louis Harold Gray (1905-1965)**.[14,60] Il remplace le rad.\n\n**Ancienne unité — le rad.** **1 rad = 0,01 Gy = 100 erg/g**, donc **1 Gy = 100 rad**.[17,39] Encore fréquent dans la littérature nord-américaine ancienne et sur certains rapports de radiothérapie.\n\n**Pourquoi le gray gouverne les effets déterministes.** Au-delà d'un **seuil**, l'énergie déposée détruit suffisamment de cellules d'un tissu pour provoquer une réaction tissulaire dont la gravité croît avec la dose : cataracte du cristallin (**seuil abaissé à ≈ 0,5 Gy**, déclaration ICRP 2011), érythème, dépression médullaire, mucite.[18,19] C'est donc en **Gy** que l'on raisonne en radiothérapie externe, en curiethérapie et en **radiothérapie interne vectorisée (RIV)** : on prescrit une dose à la tumeur et on limite la dose aux **organes à risque**.\n\n| Domaine | Raisonnement en Gy | Exemple |\n|---|---|---|\n| Radiothérapie / RIV — tumeur | dose tumoricide visée | Lu-177-PSMA-617 : tumeur ≈ 6,1 Gy/GBq [27] |\n| RIV — organes à risque | dose limitée aux organes critiques | Lu-177-PSMA : reins ≈ 0,5–0,6 Gy/GBq ; **glandes salivaires ≈ 1,0–1,4 Gy/GBq** [27,28] |\n| Imagerie | dose absorbée aux organes (TDM associée) | CTDIvol de quelques mGy par série |\n\n**Kerma — la grandeur voisine, aussi en gray.** Le **kerma** (*Kinetic Energy Released per unit MAss*) est la somme des énergies cinétiques initiales de toutes les particules chargées libérées par un rayonnement **indirectement ionisant** (photons, neutrons) par unité de masse ; il s'exprime aussi en gray (J·kg⁻¹) et a été introduit par l'ICRU.[4] Il décrit l'énergie **transférée** aux particules chargées, à distinguer de l'énergie finalement **absorbée** (dose). L'**air kerma** caractérise l'intensité d'un faisceau de rayons X et a remplacé le roentgen.[4] Kerma ≈ dose absorbée lorsque l'**équilibre électronique** est atteint et les pertes radiatives négligeables ; à haute énergie, le kerma dépasse la dose (fuite par bremsstrahlung).[4]\n\n**Le roentgen (R).** Ancienne unité d'**exposition** dans l'air, réservée aux rayons X et γ, aujourd'hui obsolète et remplacée par le gray (et le sievert pour le risque).[37]",
+        "stats": [
+          {
+            "value": "1 Gy = 1 J/kg",
+            "label": "Définition de la dose absorbée [33,38]"
+          },
+          {
+            "value": "1 Gy = 100 rad",
+            "label": "Conversion historique [17,39]"
+          },
+          {
+            "value": "≈ 0,5 Gy",
+            "label": "Seuil de cataracte du cristallin [18]"
+          },
+          {
+            "value": "1975",
+            "label": "Adoption du gray (15ᵉ CGPM) [14]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — Gy ≠ Sv même si la dimension est identique",
+            "text": "Le gray et le sievert valent tous deux 1 J·kg⁻¹, mais le **gray** est la dose physique réellement déposée et le **sievert** est cette dose **pondérée** par le risque biologique. En thérapie (fortes doses, effets déterministes) on raisonne en **Gy aux organes** ; la dose efficace en Sv n'y a aucun sens et ne doit jamais y être utilisée.[34,64]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — kerma n'est pas dose absorbée",
+            "text": "Le kerma (énergie TRANSFÉRÉE aux particules chargées) et la dose absorbée (énergie DÉPOSÉE) ne coïncident que sous équilibre électronique et pertes radiatives négligeables. À haute énergie, le kerma > dose (fuite par rayonnement de freinage). Les dosimètres sont étalonnés via des coefficients de conversion kerma-dans-l'air → grandeur opérationnelle.[4,62,63]"
+          }
+        ],
+        "figureKey": "SIRT_LIVER",
+        "figureAlt": "Schéma d'une radiothérapie interne vectorisée hépatique illustrant le raisonnement en dose absorbée (grays) : dose tumoricide visée à la tumeur et dose limitée au parenchyme sain environnant, organe à risque."
+      },
+      {
+        "title": "A5 - Le sievert : du gray au risque, dose équivalente et dose efficace",
+        "text": "Le **sievert (Sv)** est l'unité SI des **grandeurs de protection** : la dose équivalente H_T et la dose efficace E. Il a la **même dimension** que le gray (**1 Sv = 1 J·kg⁻¹**) mais résulte d'une **double pondération** destinée à refléter le risque biologique stochastique.[7,33,35] **Adopté en 1979** (16ᵉ CGPM, Résolution 5), il honore le physicien médical suédois **Rolf Maximilian Sievert (1896-1966)**, pionnier de la dosimétrie et de la radioprotection.[15,60,61] Ancienne unité : le **rem** (**1 rem = 0,01 Sv ; 1 Sv = 100 rem**).[16,39]\n\n## La chaîne de calcul (CIPR 103, 2007)\n\n**(a) Dose équivalente** — pondération par le **type de rayonnement** :\n\n**H_T = Σ_R w_R · D_{T,R}** (somme sur les rayonnements R des doses absorbées D_{T,R} dans le tissu T, pondérées par w_R). Unité : Sv.[7,43]\n\n**(b) Dose efficace** — pondération supplémentaire par la **radiosensibilité des tissus** :\n\n**E = Σ_T w_T · H_T** (somme sur tous les tissus T des doses équivalentes, pondérées par w_T). Unité : Sv.[2,7]\n\n### Facteurs de pondération radiologique w_R (CIPR 103)\n\n| Rayonnement | w_R |\n|---|---|\n| Photons (X, γ — toutes énergies) | **1** |\n| Électrons et muons | **1** |\n| Protons et pions chargés | **2** (abaissé de 5 → 2 vs CIPR 60) |\n| Particules α, fragments de fission, ions lourds | **20** |\n| Neutrons | **fonction continue de l'énergie** (≈ 2,5 thermiques → max ≈ 20 autour de 1 MeV) |\n\nSources : [5,6,7,9,43,44]. En médecine nucléaire diagnostique conventionnelle (γ, X, β⁺ → photons d'annihilation de **511 keV**, électrons), **w_R = 1**, donc numériquement **1 Gy = 1 Sv** pour la dose équivalente. La distinction Gy/Sv devient **critique pour les émetteurs α** (Ra-223, Ac-225 : w_R = 20) en **thérapie alpha ciblée**.\n\n### Facteurs de pondération tissulaire w_T (CIPR 103 ; Σ w_T = 1,00)\n\n| Tissu | w_T |\n|---|---|\n| Moelle osseuse rouge, côlon, poumon, estomac, **sein**, + tissus restants | **0,12** chacun |\n| Gonades | **0,08** |\n| Vessie, œsophage, foie, thyroïde | **0,04** chacun |\n| Surface osseuse, cerveau, glandes salivaires, peau | **0,01** chacun |\n| **Total** | **1,00** |\n\nSources : [3,43,44,45]. Changements clés CIPR 60 (1990) → CIPR 103 (2007) : **gonades 0,20 → 0,08** ; **sein 0,05 → 0,12**.[44,47] Conséquence pratique : une même irradiation donne une dose efficace **différente** selon le jeu de facteurs — toujours préciser le référentiel (impact sur la dose efficace TDM : tête +≈ 11 %, thorax +≈ 20 %, pelvis −≈ 25 %).[46]\n\n## Doses efficaces de référence (mise en perspective)\n\n| Source d'exposition | Dose efficace | Source |\n|---|---|---|\n| Radiographie thoracique de face | ≈ **0,02 mSv** | [31,53] |\n| TDM crâne | ≈ 2 mSv | [31] |\n| TEP au ¹⁸F-FDG (≈ 400 MBq) | ≈ **6–8 mSv** | [52,53] |\n| TDM thorax-abdomen-pelvis | ≈ 8–10 mSv | [31,53] |\n| TEP/TDM corps entier | ≈ 13–32 mSv (selon TDM associée) | [31] |\n| **Fond naturel — moyenne mondiale** | ≈ **2,4 mSv/an** | [30] |\n| France — exposition moyenne | ≈ **4,5 mSv/an** (médical ≈ 34 %) | [29] |\n\nLes coefficients de dose efficace par traceur (mSv/MBq, adulte) proviennent de la **CIPR 128** : ¹⁸F-FDG ≈ **0,019 mSv/MBq** (organe critique : paroi vésicale) ; ⁶⁸Ga-DOTATATE ≈ **0,021 mSv/MBq** ; ¹³¹I-iodure : très variable, organe critique **thyroïde**.[20,22,23,48,49]\n\n## Limites de dose (CIPR 103 / Directive Euratom 2013/59)\n\n| Catégorie | Dose efficace | Cristallin | Peau / extrémités |\n|---|---|---|---|\n| **Travailleur exposé** | **20 mSv/an** (moy. 5 ans, ≤ 50 mSv une année isolée) | **20 mSv/an** (abaissé de 150 en 2011) | 500 mSv/an |\n| **Public** | **1 mSv/an** | 15 mSv/an | 50 mSv/an |\n\nSources : [8,54,55,56,57]. Il n'existe **aucune limite de dose pour l'exposition médicale du patient** : le cadre est celui de la **justification + optimisation (ALARA/ALADA)**, encadré par les **niveaux de référence diagnostiques (NRD)** — indicateurs d'optimisation, et non des limites ni des « doses optimales ».[7,8,65,66,68]",
+        "stats": [
+          {
+            "value": "1 Sv = 1 J/kg",
+            "label": "Même dimension que le gray, pondérée [35]"
+          },
+          {
+            "value": "1 Sv = 100 rem",
+            "label": "Conversion historique [16]"
+          },
+          {
+            "value": "w_R(α) = 20",
+            "label": "Facteur des émetteurs alpha (CIPR 103) [5,7]"
+          },
+          {
+            "value": "20 / 1 mSv/an",
+            "label": "Limites travailleur / public [8,54]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — en MN diagnostique, 1 Gy = 1 Sv ; en thérapie α, non",
+            "text": "Pour les photons, électrons et positons (toute la MN diagnostique), w_R = 1 : la dose équivalente en Sv égale numériquement la dose absorbée en Gy. La distinction n'a d'enjeu réel que pour les **émetteurs α** (Ra-223, Ac-225, w_R = 20) en thérapie alpha ciblée — où 1 Gy d'α « pèse » 20 Sv en dose équivalente.[5,7]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — la dose efficace n'estime pas le risque individuel",
+            "text": "La dose efficace (Sv) est définie pour une **personne de référence** (sexe et âge moyennés) au moyen de fantômes anthropomorphes. Elle sert à **comparer des pratiques** et à gérer la radioprotection collective, JAMAIS à évaluer le risque d'un patient donné ni à raisonner sur de fortes doses thérapeutiques (utiliser alors la dose absorbée aux organes, en Gy).[34,64]"
+          },
+          {
+            "type": "info",
+            "title": "Grandeurs opérationnelles — ce que mesurent les dosimètres",
+            "text": "Faute de pouvoir mesurer directement la dose efficace, on mesure des grandeurs opérationnelles (ICRU) qui l'estiment : H*(10) (équivalent de dose ambiant, surveillance d'ambiance), Hp(10) (individuel, profondeur 10 mm → dose efficace), Hp(0,07) (peau) et Hp(3) (cristallin). L'ICRU Report 95 (2020) les refonde sur les mêmes fantômes que la dose efficace.[10,11,12,71]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique illustrant le passage de l'activité injectée (becquerels) à la dose absorbée tumorale et aux organes à risque (grays), puis à la dose efficace pondérée (sieverts) servant la radioprotection, avec le cas particulier des émetteurs alpha (w_R = 20)."
+      },
+      {
+        "title": "B1 - Calculer et convertir : passer de l'activité à la dose en pratique",
+        "text": "En médecine nucléaire on ne prescrit jamais « une dose en sievert » : on prescrit une **activité** en mégabecquerels (MBq), et c'est le radiopharmaceutique, sa biocinétique et le radionucléide qui déterminent ensuite la **dose absorbée** (Gy) aux organes puis la **dose efficace** (Sv). Savoir naviguer entre ces trois grandeurs — et entre unités SI et anciennes unités — est un geste quotidien. Cette section fournit les conversions, les coefficients de dose et la chaîne de calcul réglementaire.\n\n**▸ 1. Conversions d'activité (le piège du facteur 37).** Le **curie (Ci)** reste présent sur les flacons importés et la littérature nord-américaine. La table à mémoriser :\n\n| Conversion | Valeur exacte |\n|---|---|\n| 1 Ci | **3,7 × 10¹⁰ Bq = 37 GBq** [17][39] |\n| 1 mCi | **37 MBq** [17][40] |\n| 1 µCi | **37 kBq** [40] |\n| 1 Bq | 27 pCi [17] |\n\n**Méthode mentale** : pour passer de **mCi → MBq, multiplier par 37**. Repères cliniques utiles : 5 mCi ≈ **185 MBq**, 10 mCi = **370 MBq**, 20 mCi = **740 MBq** [17][37]. Une prescription confondant mCi et MBq induit une erreur de facteur **~37** — surdosage ou sous-dosage majeur (cf. §B3) [37].\n\n**▸ 2. Conversions de dose (rad et rem).** Les anciennes unités de dose suivent une règle unique de facteur 100 :\n\n| Grandeur | Conversion |\n|---|---|\n| Dose absorbée | **1 Gy = 100 rad** (1 rad = 0,01 Gy) [17][39] |\n| Dose équivalente / efficace | **1 Sv = 100 rem** (1 rem = 0,01 Sv) [16][39] |\n\nLe **roentgen (R)**, ancienne unité d'exposition réservée aux X/γ dans l'air, n'a plus d'usage courant et a été remplacé par le gray et le sievert (et, pour caractériser un faisceau, par le **kerma dans l'air**, cf. §B2) [37].\n\n**▸ 3. De l'activité à la dose efficace : les coefficients de dose (CIPR 128).** Pour un radiopharmaceutique diagnostique, la **dose efficace** se calcule simplement : **E (mSv) = activité administrée (MBq) × coefficient de dose efficace (mSv/MBq)**. Ces coefficients adultes proviennent de la **CIPR Publication 128**, compendium qui met à jour les CIPR 53/80/106 et fournit les valeurs pour fantômes de 1, 5, 10, 15 ans et adulte [20].\n\n| Radiopharmaceutique | Coeff. (mSv/MBq, adulte) | Organe critique | Source |\n|---|---|---|---|\n| **¹⁸F-FDG** | **1,9 × 10⁻²** (≈ 0,019) | paroi vésicale | [20][23] |\n| ⁹⁹ᵐTc-MDP (os) | ≈ **5,7 × 10⁻³** | surface osseuse / vessie | [20][21] |\n| ⁹⁹ᵐTc-MIBI (repos) | ≈ **6,2 × 10⁻³** | paroi vésicale / vésicule biliaire | [20] |\n| ⁶⁸Ga-DOTATATE | **0,021 ± 0,003** | reins / paroi vésicale | [22] |\n| ⁶⁸Ga-PSMA-11 | ≈ **2,3 × 10⁻²** | reins / paroi vésicale | [50] |\n| ¹³¹I-iodure (forte fixation) | très variable (~24 mSv/MBq) | **thyroïde** | [51] |\n\n*Exemple* : une TEP au **¹⁸F-FDG de 400 MBq** délivre E ≈ 400 × 0,019 ≈ **7,6 mSv** [20][23]. La part TEP d'une TEP-TDM corps entier est de l'ordre de **7–8 mSv** [52][53], à laquelle s'ajoute la dose du scanner associé.\n\n**▸ 4. Du gray au sievert : la chaîne de calcul (CIPR 103).** Lorsqu'on dispose de la **dose absorbée** D (Gy) à un organe, on remonte à la dose efficace en deux pondérations successives :\n\n1. **Dose équivalente** d'un tissu : **H_T = Σ_R w_R · D_T,R** (Sv), où w_R est le facteur de pondération du rayonnement [43].\n2. **Dose efficace** : **E = Σ_T w_T · H_T** (Sv), où w_T est le facteur de pondération tissulaire (Σ w_T = 1,00) [2][43].\n\n| w_R (CIPR 103) | Valeur |\n|---|---|\n| Photons (X, γ — toutes énergies), électrons, muons | **1** [5][6] |\n| Protons et pions chargés | **2** (abaissé de 5 → 2 vs CIPR 60) [5][44] |\n| Neutrons | fonction continue de E, **max ≈ 20 vers 1 MeV** [5] |\n| Particules **α**, fragments de fission, ions lourds | **20** [5][6] |\n\n**Conséquence clinique majeure** : en imagerie diagnostique conventionnelle (γ, X, photons d'annihilation **511 keV** des émetteurs β⁺, électrons), **w_R = 1**, donc numériquement **1 Gy = 1 Sv** pour la dose équivalente [5]. La distinction Gy/Sv ne devient critique que pour la **thérapie alpha ciblée** (²²³Ra, ²²⁵Ac : w_R = 20), où 1 Gy d'α équivaut à 20 Sv en termes de risque stochastique [6].\n\nLes facteurs tissulaires w_T (CIPR 103) hiérarchisent la radiosensibilité : **0,12** (moelle rouge, côlon, poumon, estomac, sein, + reste), **0,08** (gonades), **0,04** (vessie, œsophage, foie, thyroïde), **0,01** (surface osseuse, cerveau, glandes salivaires, peau) [3][43]. Toujours **préciser le référentiel** : le passage CIPR 60 → 103 (sein 0,05 → 0,12 ; gonades 0,20 → 0,08) modifie la dose efficace calculée pour une même irradiation — en TDM, tête **+ ~11 %**, thorax **+ ~20 %**, pelvis **− ~25 %** [44][46].",
+        "stats": [
+          {
+            "value": "× 37",
+            "label": "Facteur mCi → MBq (1 mCi = 37 MBq) [17]"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Coefficient de dose efficace du ¹⁸F-FDG (adulte) [20]"
+          },
+          {
+            "value": "1 Gy = 1 Sv",
+            "label": "Si w_R = 1 (γ, X, β⁺, e⁻) en imagerie diagnostique [5]"
+          },
+          {
+            "value": "1 Sv = 100 rem",
+            "label": "Conversion dose équivalente/efficace [16][39]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — confondre mCi et MBq",
+            "text": "Une prescription rédigée en **mCi** mais lue en **MBq** (ou l'inverse) introduit une erreur de **facteur ~37** : 10 mCi valent **370 MBq**, pas 10 MBq. C'est l'erreur de conversion la plus dangereuse en routine ; toujours vérifier l'unité ET l'activité réelle à l'activimètre avant injection (cf. §B2) [37][17]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la dose efficace est un raccourci, pas une mesure",
+            "text": "E = activité × coefficient (mSv/MBq) donne une estimation **populationnelle** valable en radioprotection, pas le risque d'un patient donné. Pour les **fortes doses thérapeutiques** (RIV), ce raccourci est invalide : on raisonne alors en **dose absorbée par organe (Gy)** — tumeur vs organes à risque — et non en sievert [34][64]."
+          }
+        ]
+      },
+      {
+        "title": "B2 - Mesurer concrètement : activimètre, débitmètre, dosimètre",
+        "text": "Chaque grandeur a son instrument et sa chaîne métrologique. Point conceptuel cardinal : **le sievert n'est pas mesurable directement** par un appareil — on mesure une grandeur physique (activité en Bq, kerma ou dose en Gy) et l'on **estime** la grandeur de protection via des grandeurs opérationnelles calibrées [36]. Cette section décrit les trois familles d'appareils et leur traçabilité (« CQ » des unités).\n\n**▸ 1. L'activimètre — mesurer l'activité (Bq) administrée.** L'activité à injecter est mesurée par un **activimètre** (chambre d'ionisation à puits), juste avant l'injection. C'est un maillon critique : le **Bq mesuré au pied du patient** conditionne directement la dose absorbée délivrée et la qualité de l'image. Sa justesse est garantie par des **contrôles qualité** réguliers — constance (quotidien), exactitude, linéarité sur la gamme d'activités, et reproductibilité géométrique — tracés à des **étalons nationaux** (LNHB en France, PTB, NIST). Une dérive non détectée fausse toutes les activités administrées et toute la dosimétrie qui en découle [20].\n\n**▸ 2. Du kerma à la dose absorbée (Gy) — caractériser un faisceau.** Le **kerma** (*Kinetic Energy Released per unit MAss*), exprimé en Gy (J/kg), mesure l'énergie cinétique transférée aux particules chargées par un rayonnement indirectement ionisant (photons, neutrons) par unité de masse. L'**air kerma** caractérise l'intensité d'un faisceau de rayons X et a remplacé le roentgen [4]. Le kerma se distingue de la **dose absorbée** : les deux ne sont égales qu'à l'**équilibre électronique** et lorsque les pertes radiatives (bremsstrahlung) sont négligeables ; à haute énergie, le kerma dépasse la dose absorbée par fuite de freinage [4]. Les coefficients de conversion kerma-dans-l'air → grandeur opérationnelle sont la base de l'étalonnage des dosimètres [62][63].\n\n**▸ 3. Débitmètres et radiamètres — surveiller l'ambiance.** Les **radiamètres** (débitmètres de dose d'ambiance) mesurent l'**équivalent de dose ambiant H*(10)** : équivalent de dose, à 10 mm de profondeur, utilisé pour la surveillance de zone et le zonage radiologique ; il **estime la dose efficace** d'un travailleur présent dans le champ [10]. Historiquement défini à 10 mm dans la **sphère ICRU** (30 cm de matériau tissu-équivalent) [10].\n\n**▸ 4. Dosimètres individuels — surveiller le travailleur.** Le dosimètre porté à la poitrine mesure des **grandeurs opérationnelles** individuelles, exprimées en Sv mais qui restent des **estimateurs mesurables** des grandeurs de protection :\n\n| Grandeur opérationnelle | Profondeur | Estime | Source |\n|---|---|---|---|\n| **H*(10)** ambiant | 10 mm | dose efficace (ambiance) | [10] |\n| **Hp(10)** individuel | 10 mm | **dose efficace** (corps entier) | [10] |\n| **Hp(0,07)** | 0,07 mm | dose à la **peau** | [10][62] |\n| **Hp(3)** | 3 mm | dose au **cristallin** | [62] |\n\n**▸ 5. Mise à jour métrologique — ICRU Report 95 (2020).** Le rapport conjoint **ICRU/ICRP** Report 95 (2020) refonde les grandeurs opérationnelles : les nouvelles Hp et H* sont désormais fondées sur les **mêmes fantômes anthropomorphes et coefficients de pondération que la dose efficace E** (abandon de la sphère ICRU), offrant une meilleure approximation de E ; des coefficients de conversion sont fournis pour photons, électrons, neutrons, protons, muons, pions et ions hélium [11][12].\n\n**Architecture des grandeurs** (qui mesure / qui calcule) : les **grandeurs physiques** (activité, kerma, dose absorbée — mesurables) relèvent de l'**ICRU** ; les **grandeurs de protection** (H_T, E — calculées, non mesurables) relèvent de l'**ICRP/CIPR** (référence : CIPR 103, 2007) ; les **grandeurs opérationnelles** (mesurables, servant à calibrer dosimètres et radiamètres) font le pont entre les deux [2][10].",
+        "steps": [
+          {
+            "title": "1 · Avant injection — mesurer le Bq",
+            "text": "Mesurer l'activité réelle du radiopharmaceutique à l'**activimètre** (chambre à puits) et la comparer à la prescription (en MBq) ; l'appareil doit être à jour de ses CQ de constance/linéarité tracés à un étalon national [20]."
+          },
+          {
+            "title": "2 · En zone — mesurer le Gy/H*(10)",
+            "text": "Utiliser un **radiamètre** étalonné en **H*(10)** pour vérifier le débit de dose d'ambiance, contrôler le zonage et déclencher les mesures d'optimisation (distance, écran) [10]."
+          },
+          {
+            "title": "3 · Sur le travailleur — estimer le Sv",
+            "text": "Porter le **dosimètre individuel** (Hp(10) poitrine ; Hp(0,07) peau ; Hp(3) cristallin si exposition oculaire), qui fournit l'estimation mesurée de la dose efficace et des doses équivalentes [10][62]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Temps, distance, écran : les trois leviers de réduction de dose (ALARA), qui orientent l'usage des débitmètres d'ambiance et des dosimètres individuels.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran (ALARA) : les mesures de débit de dose H*(10) et de dose individuelle Hp(10) pilotent l'optimisation au poste de travail.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — « mon dosimètre affiche des sieverts »",
+            "text": "Un dosimètre n'« affiche » jamais la vraie dose efficace : il mesure une **grandeur opérationnelle** (Hp(10), Hp(0,07)) calibrée pour l'**estimer**. Le sievert de protection (E) reste une grandeur **calculée**, non mesurable directement sur un individu [36][10]. Ne jamais sommer un Hp(10) lu et une dose efficace calculée comme s'il s'agissait de la même quantité."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — kerma ≠ dose absorbée",
+            "text": "Kerma et dose absorbée se confondent uniquement à l'**équilibre électronique** et quand le bremsstrahlung est négligeable. Aux hautes énergies, le **kerma surestime la dose absorbée** (fuite radiative). En pratique d'étalonnage, c'est l'air kerma qui sert de point de départ aux coefficients de conversion vers Hp et H* [4][62][63]."
+          }
+        ]
+      },
+      {
+        "title": "B3 - Les sous-multiples et la rigueur d'écriture (MBq, mGy, µSv)",
+        "text": "En clinique, les grandeurs « brutes » (Bq, Gy, Sv) sont presque toujours maniées avec un **préfixe SI** : on injecte des **MBq**, on raisonne en **mGy** ou **cGy** à l'organe, on compte les expositions en **mSv** voire **µSv**. Une écriture rigoureuse n'est pas cosmétique : une erreur de préfixe est une erreur de **facteur 1000**. Cette section fixe les ordres de grandeur, les règles d'écriture et les confusions à proscrire.\n\n**▸ 1. Les préfixes SI utiles et leurs ordres de grandeur cliniques.** Le becquerel, le gray et le sievert sont des **unités SI dérivées dotées d'un nom spécial**, et se combinent normalement avec les préfixes du Système international [42].\n\n| Préfixe | Facteur | Activité (Bq) | Dose (Gy / Sv) |\n|---|---|---|---|\n| giga- (G) | 10⁹ | **GBq** : thérapies (¹³¹I, ¹⁷⁷Lu-PSMA) | — |\n| méga- (M) | 10⁶ | **MBq** : injections diagnostiques (dizaines à centaines) | — |\n| kilo- (k) | 10³ | kBq | — |\n| centi- (c) | 10⁻² | — | **cGy** : dosimétrie RIV/radiothérapie |\n| milli- (m) | 10⁻³ | — | **mGy** (dose organe) · **mSv** (dose efficace) |\n| micro- (µ) | 10⁻⁶ | — | **µSv** (faibles expositions, fond, radio simple) |\n\nOrdres de grandeur à ancrer : injection diagnostique = quelques **dizaines à centaines de MBq** ; thérapie = **GBq** [13]. Côté dose : radio thorax PA ≈ **0,02 mSv** ; TEP-FDG ≈ **7–8 mSv** ; TDM abdomen ≈ **8–10 mSv** [31][53]. Le **fond naturel mondial moyen ≈ 2,4 mSv/an** [30] ; en **France, exposition moyenne ≈ 4,5 mSv/an**, dont **34 % médical** (≈ 1,5 mSv/an) [29].\n\n**▸ 2. Règles d'écriture (typographie SI).** Quelques conventions à respecter dans un compte rendu ou une prescription :\n- Le **symbole d'unité** s'écrit en minuscule (bq ? non : **Bq**, **Gy**, **Sv** — majuscule car dérivés de noms propres : **B**ecquerel, **G**ray, **S**ievert) ; le **nom** de l'unité reste en minuscule (« becquerel », « gray », « sievert ») [13][14][16].\n- **Espace** entre la valeur et l'unité : « 370 MBq », « 6 mSv ».\n- Préfixe **µ** (micro) pour 10⁻⁶, jamais « u » ni « mc » : **µSv**, **µCi**.\n- Ne pas mélanger préfixe et puissance de dix d'une même grandeur dans une même expression.\n\n**▸ 3. Hertz et becquerel : même dimension, usages distincts.** Le **becquerel** et le **hertz** valent tous deux l'inverse de la seconde (**s⁻¹**), mais ils ne sont **pas interchangeables** : le hertz est réservé aux phénomènes **périodiques**, le becquerel aux processus **stochastiques** de désintégration radioactive [42]. Écrire « 370 MHz » pour une activité est une faute de sens, pas seulement de symbole.\n\n**▸ 4. Les trois confusions d'unités à proscrire.** Au-delà de l'écriture, trois confusions conceptuelles génèrent des erreurs cliniques :\n\n| Confusion | Conséquence | Règle |\n|---|---|---|\n| **Bq ↔ Gy ↔ Sv** | sommer/convertir directement sans modèle dosimétrique | Bq = source, Gy = énergie dans la matière, Sv = risque biologique — trois questions distinctes [36] |\n| **mCi ↔ MBq** | erreur de facteur **~37** sur l'activité | toujours expliciter l'unité (cf. §B1) [39] |\n| **préfixe milli ↔ micro** | erreur de **facteur 1000** sur la dose | mSv ≠ µSv : 1 mSv = 1000 µSv |\n\n**▸ 5. Le sievert : une grandeur de population, pas un risque individuel.** Rigueur d'usage autant que d'écriture : la **dose efficace (Sv)** est définie pour une **personne de référence** (sexe et âge moyennés) ; elle sert à comparer des protocoles et à vérifier des limites réglementaires, **pas à évaluer le risque d'un patient donné** ni à quantifier un effet déterministe [64][34]. Pour mémoire, les **limites CIPR 103** (Directive Euratom 2013/59) : travailleur **20 mSv/an** (moyenne 5 ans, ≤ 50 mSv une année isolée), public **1 mSv/an**, cristallin **20 mSv/an** (abaissé de 150 en 2011) [8][54][56]. Il n'existe **aucune limite de dose pour l'exposition médicale du patient** : la maîtrise passe par la **justification, l'optimisation (ALARA)** et les **niveaux de référence diagnostiques (NRD)** — qui sont des indicateurs d'optimisation, et non des limites [8][66].",
+        "stats": [
+          {
+            "value": "× 1000",
+            "label": "Écart mSv ↔ µSv : une erreur de préfixe = facteur 1000"
+          },
+          {
+            "value": "s⁻¹",
+            "label": "Dimension commune au Bq et au Hz, non interchangeables [42]"
+          },
+          {
+            "value": "2,4 mSv/an",
+            "label": "Fond naturel mondial moyen [30] (France ≈ 4,5 mSv/an [29])"
+          },
+          {
+            "value": "20 / 1 mSv/an",
+            "label": "Limites dose efficace travailleur / public (CIPR 103) [8][54]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — milli vs micro (facteur 1000)",
+            "text": "Confondre **mSv** et **µSv** fausse d'un facteur **1000** toute comparaison de doses : une radio de thorax (~0,02 mSv = 20 µSv) n'est pas « 0,02 µSv ». Vérifier systématiquement le préfixe avant de comparer une exposition au fond naturel ou aux NRD [31][30]."
+          },
+          {
+            "type": "info",
+            "title": "Symboles : majuscules car noms propres",
+            "text": "**Bq, Gy, Sv** prennent une majuscule au symbole (unités dérivées de Becquerel, Gray, Sievert) mais s'écrivent en minuscules en toutes lettres. Le préfixe micro est **µ** (jamais « u » ni « mc ») : on écrit **µSv**, **µCi** [13][14][16]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — préciser le référentiel CIPR",
+            "text": "Une dose efficace n'a de sens qu'avec son jeu de facteurs : indiquer **CIPR 103** (vs CIPR 60) car les w_T diffèrent (sein, gonades) et la même irradiation donne une E différente. De même, préciser le coefficient de dose (CIPR 128) utilisé pour un radiopharmaceutique [44][20]."
+          }
+        ]
+      },
+      {
+        "title": "C1 - Mettre les doses en perspective : l'échelle des sieverts",
+        "text": "L'interprétation d'une dose n'a de sens que **relative** : un chiffre brut en millisievert (mSv) ne dit rien tant qu'on ne le compare pas au **fond naturel**, aux autres examens et aux seuils réglementaires. Cette section construit l'échelle de référence qui transforme un coefficient de dose efficace (cf. §A4 sur la chaîne D→H_T→E) en jugement clinique.\n\n**▸ Le mètre-étalon : l'irradiation naturelle.** L'exposition naturelle moyenne mondiale est d'environ **2,4 mSv/an**, dominée par le radon (~1,3 mSv), le rayonnement tellurique (~0,48 mSv), cosmique (~0,39 mSv) et l'ingestion d'isotopes naturels comme le ⁴⁰K (~0,29 mSv) [30]. En France, l'exposition moyenne totale atteint **~4,5 mSv/an**, dont la part **médicale représente 34 %** (≈ 1,5 mSv/an), désormais comparable au radon (33 %) [29]. Convertir une dose d'examen en « équivalent-fond naturel » (combien de mois ou d'années d'irradiation naturelle ?) est la manière la plus parlante de la restituer à un patient ou à un confrère.\n\n**▸ L'échelle des examens (ordres de grandeur, adulte).** Les doses efficaces s'étagent sur plus de trois ordres de grandeur :\n\n| Examen | Dose efficace typique | Équivalent fond naturel (~2,4 mSv/an) |\n|---|---|---|\n| Radiographie thoracique PA | **~0,02 mSv** [31] | ~3 jours |\n| Mammographie | ~0,4 mSv [31] | ~2 mois |\n| TDM crâne | ~2 mSv [31] | ~10 mois |\n| Scintigraphie osseuse ⁹⁹ᵐTc-MDP (~740 MBq) | **~4,2 mSv** [20,21] | ~1,8 an |\n| TEP au ¹⁸F-FDG (~400 MBq, partie TEP) | **~7–8 mSv** [52,53] | ~3 ans |\n| TDM thorax-abdomen-pelvis | ~8–10 mSv [31,53] | ~3–4 ans |\n| TEP-TDM corps entier (TDM diagnostique associée) | ~13–32 mSv [31] | ~5–13 ans |\n\nDeux repères mnémotechniques utiles : une **TDM abdomen ≈ ~400 radiographies de thorax**, et la dose de la partie TEP d'un TEP-FDG (~7 mSv) équivaut à peu près à **trois ans de fond naturel** [31,52]. Pour un examen hybride, la **dose totale = dose du radiopharmaceutique + dose du scanner** ; selon que la TDM est *low-dose* (correction d'atténuation et repérage) ou *diagnostique*, la part TDM peut dépasser celle du traceur — d'où la dispersion des valeurs TEP-TDM corps entier [31].\n\n**▸ Le coefficient de dose, brique de calcul.** Pour un radiopharmaceutique, la dose efficace se déduit de l'activité injectée par le **coefficient de dose efficace** (mSv/MBq, recensé par la CIPR 128 [20]). Exemples adultes : ¹⁸F-FDG **0,019 mSv/MBq** [20,23], ⁶⁸Ga-DOTATATE **0,021 mSv/MBq** [22], ⁹⁹ᵐTc-MDP **~0,0057 mSv/MBq** [20,21]. Ainsi 200 MBq de FDG ≈ 0,019 × 200 ≈ **3,8 mSv**. À noter qu'un recalcul avec les fantômes maillés CIPR actuels abaisse le coefficient FDG à **0,017 mSv/MBq** : l'ordre de grandeur est stable, mais la valeur exacte dépend du référentiel de fantôme retenu [23,49] — toujours préciser la source.\n\n**▸ Le piège des grandes échelles.** Au-delà de quelques dizaines de mSv, raisonner en sievert perd son sens : la dose efficace est une grandeur de **radioprotection des faibles doses** (effets stochastiques), pas un descripteur des fortes doses thérapeutiques. Une radiothérapie interne vectorisée délivre **plusieurs grays** à la tumeur et aux organes critiques — on quitte alors l'échelle des sieverts pour celle des grays (cf. C2 et C3).",
+        "stats": [
+          {
+            "value": "2,4 mSv/an",
+            "label": "Fond naturel moyen mondial [30]"
+          },
+          {
+            "value": "4,5 mSv/an",
+            "label": "Exposition moyenne en France (médical 34 %) [29]"
+          },
+          {
+            "value": "~7–8 mSv",
+            "label": "TEP-FDG, partie TEP (~400 MBq) [52]"
+          },
+          {
+            "value": "~0,02 mSv",
+            "label": "Radiographie thoracique (≈ 3 j de fond) [31]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — convertir en langage commun",
+            "text": "Pour communiquer une dose, traduisez-la toujours en **équivalent fond naturel** : « votre TEP-FDG, c'est l'ordre de trois années d'irradiation naturelle » est plus juste et moins anxiogène qu'un chiffre brut. La référence est le fond mondial ≈ **2,4 mSv/an** [30], ou ≈ 4,5 mSv/an en France [29]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — additionner traceur et scanner",
+            "text": "En TEP-TDM ou TEMP-TDM, ne jamais oublier la **dose du scanner** : selon que la TDM est *low-dose* ou *diagnostique*, elle peut **dépasser** la dose du radiopharmaceutique. C'est ce qui explique l'écart de ~13 à ~32 mSv pour un TEP-TDM corps entier [31]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Échelle comparative des doses efficaces : du fond naturel (~2,4 mSv/an) à la radiographie thoracique, la scintigraphie osseuse, le TEP-FDG et la TDM corps entier, illustrant les ordres de grandeur en millisievert."
+      },
+      {
+        "title": "C2 - Ce que le sievert mesure vraiment — et ses limites",
+        "text": "Le sievert (Sv) est l'unité la plus mal comprise de la radioprotection parce qu'elle **partage la dimension physique du gray** (1 Sv = 1 J/kg) tout en désignant une grandeur d'une **nature radicalement différente** : non plus une énergie déposée, mais un **risque biologique stochastique estimé** [33,36]. Comprendre ce que le sievert mesure — et surtout ce qu'il **ne mesure pas** — conditionne tout usage correct.\n\n**▸ Ce qu'il mesure : un risque pondéré, calculé.** La dose efficace E = Σ_T w_T · H_T est une construction de la CIPR 103 destinée à un seul objectif : **estimer et limiter le risque stochastique** (cancers et effets héréditaires) sous l'hypothèse **linéaire sans seuil (LNT)** [7,43]. Les facteurs de pondération tissulaire w_T (somme = 1,00) traduisent la radiosensibilité relative : moelle osseuse rouge, côlon, poumon, estomac, sein à **0,12** ; gonades **0,08** ; vessie, œsophage, foie, thyroïde **0,04** ; surface osseuse, cerveau, glandes salivaires, peau **0,01** [3,43,45]. Le sievert répond donc à la question « *quel détriment stochastique global pour une personne de référence ?* », pas « *combien d'énergie dans cet organe ?* ».\n\n**▸ Limite n° 1 : ce n'est pas une grandeur mesurable.** Aucun dosimètre ne « lit » des sieverts de dose efficace : on **mesure** un kerma dans l'air ou une grandeur opérationnelle (cf. infra), et la dose efficace en Sv est **calculée** à partir de modèles (fantômes, coefficients de conversion) [36]. Le sievert est une grandeur de **calcul**, pas de mesure directe.\n\n**▸ Limite n° 2 : il vaut pour une personne de référence, jamais pour un individu.** E est défini pour un **sujet de référence** moyennant le sexe et l'âge (fantôme androgyne, w_T moyennés). Il **ne doit pas servir à évaluer le risque d'un patient donné** : à dose efficace égale, une jeune femme et un homme âgé n'ont pas le même risque réel [34,64]. La CIPR 147 le rappelle explicitement : la dose efficace est un outil d'**optimisation et de comparaison de procédures**, pas un prédicteur de risque individuel [34].\n\n**▸ Limite n° 3 : il ne vaut que pour les faibles doses.** Le formalisme LNT et les w_T ne s'appliquent qu'au domaine **stochastique**. Pour les fortes doses — réactions tissulaires déterministes (cataracte, érythème, mucite, dépression médullaire), radiothérapie, RIV — il faut revenir à la **dose absorbée à l'organe en gray** (cf. C3). Convertir une dose thérapeutique en sievert est une **erreur conceptuelle** [34,64].\n\n**▸ Les grandeurs opérationnelles : le pont entre mesure et protection.** Parce que la dose efficace n'est pas mesurable, la CIPRU/ICRU définit des **grandeurs opérationnelles**, elles mesurables, qui l'estiment :\n\n| Grandeur | Définition | Estime |\n|---|---|---|\n| **H*(10)** — équivalent de dose ambiant | à 10 mm dans la sphère ICRU, surveillance de zone | dose efficace (ambiance) [10,71] |\n| **Hp(10)** — équivalent de dose individuel | à 10 mm de profondeur (dosimètre poitrine) | dose efficace (corps entier) [10] |\n| **Hp(0,07)** | à 0,07 mm de profondeur | dose à la **peau** [10] |\n| **Hp(3)** | à 3 mm de profondeur | dose au **cristallin** [62,71] |\n\n**Mise à jour majeure — ICRU Report 95 (2020, conjoint ICRU/ICRP)** : les nouvelles grandeurs opérationnelles abandonnent la sphère ICRU et sont **fondées sur les mêmes fantômes anthropomorphes et coefficients de pondération que la dose efficace**, offrant une bien meilleure approximation de E ; des coefficients de conversion sont fournis pour photons, électrons, neutrons, protons, muons, pions et ions hélium [11,12].\n\n**▸ Variabilité selon le référentiel.** Une même irradiation donne des sieverts **différents** selon le jeu de w_T employé : le passage CIPR 60 → CIPR 103 (sein 0,05 → 0,12 ; gonades 0,20 → 0,08) modifie la dose efficace TDM de **+~11 % (tête), +~20 % (thorax), −~25 % (pelvis)** [44,46]. Toujours préciser le référentiel CIPR sous-jacent.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le sievert n'est pas mesurable directement",
+            "text": "Aucun appareil ne mesure une dose efficace en sievert : on mesure le **kerma/Gy** ou une grandeur **opérationnelle** (Hp(10), H*(10)), et E est **calculée** par modèle [36]. Confondre la lecture d'un dosimètre opérationnel (Sv) avec la dose efficace de la personne est une erreur fréquente."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — risque individuel",
+            "text": "Ne **jamais** utiliser la dose efficace pour estimer le risque d'un patient précis : elle est définie pour une **personne de référence** (sexe/âge moyennés) et destinée à l'optimisation des procédures, pas à la prédiction individuelle (CIPR 147) [34,64]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — préciser le référentiel CIPR",
+            "text": "Une dose efficace n'est interprétable qu'avec son jeu de w_T : entre CIPR 60 et CIPR 103, la même TDM thoracique varie de **~+20 %** [46]. Indiquez toujours « dose efficace (CIPR 103) » pour éviter toute comparaison biaisée."
+          }
+        ]
+      },
+      {
+        "title": "C3 - Activité ≠ dose : démêler les pièges d'interprétation",
+        "text": "La triade **becquerel → gray → sievert** répond à trois questions distinctes — *combien de désintégrations ? combien d'énergie déposée ? quel risque biologique ?* — et la **confusion entre ces trois grandeurs** est l'erreur d'interprétation la plus fréquente et la plus lourde de conséquences [33,36]. Cette section recense les pièges, du plus grossier (erreur d'unité de prescription) au plus subtil (mésusage du sievert en thérapie).\n\n**▸ Piège n° 1 — Bq ≠ Gy ≠ Sv : trois questions, jamais interchangeables.** On **n'administre pas des sieverts** : on injecte une **activité** (MBq) qui produit une **dose absorbée** (mGy) dans les organes, traduite ensuite en **dose efficace** (mSv) [33,36]. Ces grandeurs ne se somment ni ne se convertissent l'une en l'autre sans **modèle dosimétrique** (biocinétique, fantôme, coefficient de dose). Un becquerel mesure un événement à la **source**, un gray une énergie déposée dans la **matière**, un sievert un **risque** pondéré [36].\n\n**▸ Piège n° 2 — mCi vs MBq : le facteur 37.** L'erreur de prescription la plus dangereuse : **1 mCi = 37 MBq** (car 1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq) [17,37,39]. Confondre les deux unités sur une ordonnance induit un facteur **~37** dans l'activité administrée. Repères à mémoriser : 5 mCi ≈ 185 MBq, 10 mCi = 370 MBq, 20 mCi = 740 MBq [37]. Les anciennes unités persistent sur les flacons et dans la littérature américaine — d'où le risque.\n\n| Conversion vitale | Valeur |\n|---|---|\n| Activité | **1 Ci = 37 GBq** ; 1 mCi = 37 MBq ; 1 µCi = 37 kBq [17,40,41] |\n| Dose absorbée | **1 Gy = 100 rad** [17,39] |\n| Dose équivalente | **1 Sv = 100 rem** [16,39] |\n\n**▸ Piège n° 3 — Hz et Bq, même dimension mais incompatibles.** Le becquerel et le hertz valent tous deux s⁻¹, mais le hertz est réservé aux phénomènes **périodiques** et le becquerel aux processus **stochastiques** de désintégration : ils ne sont **pas interchangeables** [42].\n\n**▸ Piège n° 4 — 1 Gy = 1 Sv… seulement pour les photons.** Pour les rayonnements de la médecine nucléaire diagnostique conventionnelle (γ, X, β⁺ → photons d'annihilation de 511 keV, électrons), le facteur de pondération **w_R = 1**, donc numériquement la dose équivalente en Sv égale la dose absorbée en Gy [5,6,43]. **L'assimilation devient fausse pour les émetteurs α** (Ra-223, Ac-225 en thérapie alpha ciblée), où **w_R = 20** : 1 Gy d'irradiation α correspond à **20 Sv** de dose équivalente [5,9,43]. La distinction Gy/Sv est donc critique dès qu'on quitte les photons.\n\n| Rayonnement | w_R (CIPR 103) | Implication pratique |\n|---|---|---|\n| Photons, électrons (γ, X, β⁺, e⁻) | **1** | 1 Gy ≡ 1 Sv (MN diagnostique conventionnelle) [5,43] |\n| Protons, pions chargés | **2** | abaissé de 5 → 2 vs CIPR 60 [5,44] |\n| Particules α, ions lourds, fragments de fission | **20** | thérapie alpha : 1 Gy ≡ 20 Sv [5,9] |\n| Neutrons | fonction continue de E (max ~20 vers 1 MeV) | non concerné en MN [5,6] |\n\n**▸ Piège n° 5 — la dose efficace n'est ni une dose d'organe, ni un risque individuel.** La dose efficace (Sv) est une grandeur de **radioprotection populationnelle**, pas un indicateur du risque d'un patient donné ni de la dose à un organe précis ; elle **ne doit pas servir à estimer un effet déterministe individuel** [34,64]. Pour les effets déterministes (à **seuil**, gravité ∝ dose), on raisonne en **dose absorbée à l'organe (Gy)** : seuil de cataracte du cristallin abaissé à **~0,5 Gy** (déclaration CIPR 2011) [18,19].\n\n**▸ Piège n° 6 — la thérapie se raisonne en gray, pas en sievert.** En radiothérapie interne vectorisée, le sievert n'a **pas de place** : on cible une **dose absorbée tumorale** et on protège les **organes à risque en Gy/GBq**. Exemples au ¹⁷⁷Lu-PSMA-617 (mCRPC) : tumeur ~6,1 Gy/GBq, reins ~0,5–0,6 Gy/GBq, **glandes salivaires ~1,0–1,4 Gy/GBq** (organes critiques) [27,28]. Pour le ¹³¹I, l'organe critique est la **thyroïde fixante**, avec une dosimétrie très dépendante de la fixation (jusqu'à ~24 mSv/MBq en cas de forte captation) [51]. C'est la frontière conceptuelle finale : **becquerel pour prescrire, gray pour traiter et protéger les organes, sievert pour optimiser et comparer les procédures diagnostiques** [33,34].",
+        "steps": [
+          {
+            "title": "1. Becquerel (la prescription)",
+            "text": "On prescrit et dispense une **activité** en MBq/GBq, contrôlée à l'activimètre. Vigilance absolue sur la conversion **mCi ↔ MBq (×37)** [17,37]."
+          },
+          {
+            "title": "2. Gray (l'énergie déposée)",
+            "text": "L'activité produit une **dose absorbée** aux organes (mGy diagnostique, Gy thérapeutique), grandeur physique mesurable indépendante du type de rayonnement [33,38]."
+          },
+          {
+            "title": "3. Pondération radiologique w_R",
+            "text": "Dose équivalente H_T = Σ w_R · D : **w_R = 1** pour photons/électrons (1 Gy ≡ 1 Sv), **20** pour les α (1 Gy ≡ 20 Sv) [5,43]."
+          },
+          {
+            "title": "4. Pondération tissulaire w_T",
+            "text": "Dose efficace E = Σ w_T · H_T (Σ w_T = 1,00) : estime le **risque stochastique** d'une personne de référence, pour l'optimisation des procédures [3,43]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — mCi vs MBq (facteur 37)",
+            "text": "**1 mCi = 37 MBq.** Confondre les deux unités sur une prescription induit une erreur d'activité d'un facteur **~37** [17,37]. Mémoriser : 10 mCi = 370 MBq, 20 mCi = 740 MBq. Les flacons et la littérature US emploient encore le curie."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — 1 Gy = 1 Sv n'est vrai que pour les photons",
+            "text": "Pour γ/X/β⁺/électrons, w_R = 1 donc 1 Gy ≡ 1 Sv [5,43]. **Faux pour les émetteurs α** (Ra-223, Ac-225) : w_R = 20 → 1 Gy ≡ 20 Sv [5,9]. Ne jamais transposer la dose équivalente d'un faisceau α comme s'il s'agissait de photons."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — gray pour traiter, sievert pour optimiser",
+            "text": "En RIV, raisonnez en **dose absorbée à l'organe (Gy/GBq)** — ex. ¹⁷⁷Lu-PSMA : glandes salivaires et reins comme organes critiques [27,28]. Réservez la **dose efficace (Sv)** au diagnostic et à l'optimisation des procédures ; elle est inadaptée aux fortes doses et au risque individuel [34,64]."
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma des trois grandeurs : le becquerel compte les désintégrations à la source, le gray mesure l'énergie déposée dans le tissu, le sievert pondère par la nocivité du rayonnement (w_R) et la radiosensibilité du tissu (w_T)."
+      },
+      {
+        "title": "D1 - Les unités au lit du patient : dosimétrie des radiopharmaceutiques",
+        "text": "En médecine nucléaire, la chaîne dosimétrique noue les **trois unités** entre elles : on prescrit une **activité** en mégabecquerels (**MBq**, 1 Bq = 1 désintégration par seconde) [2,33], cette activité dépose dans chaque organe une **dose absorbée** en milligrays (**mGy**, 1 Gy = 1 J/kg) [4,38], et la pondération biologique aboutit à une **dose efficace** en millisieverts (**mSv**) servant à estimer le risque stochastique global [7,3]. Le passage de l'activité injectée à la dose s'opère par un **coefficient de dose** propre à chaque radiopharmaceutique, exprimé en **mSv/MBq** (dose efficace) ou en mGy/MBq (dose absorbée par organe), compilé pour les produits diagnostiques par la **CIPR 128** (Commission internationale de protection radiologique, publication 128, 2015) [20,48].\n\nLa CIPR 128 est le compendium de référence : elle met à jour les CIPR 53, 80 et 106, fournit les coefficients pour l'adulte et des fantômes pédiatriques aux âges 1, 5, 10 et 15 ans, et identifie pour chaque traceur l'**organe critique** (celui qui reçoit la dose absorbée la plus élevée) [20,48]. Connaître cet organe critique conditionne les consignes pratiques : pour les traceurs à élimination urinaire (¹⁸F-FDG, ¹⁸F-fluorure), c'est la **paroi vésicale** — d'où l'hydratation et les mictions fréquentes ; pour l'iode-131, c'est la **thyroïde** ; pour le ⁶⁸Ga-PSMA-11, ce sont les **reins** et la paroi vésicale [49,50,51].\n\n**Coefficients de dose efficace et organe critique des principaux traceurs (adulte)**\n\n| Radiopharmaceutique | Dose efficace (mSv/MBq) | Organe critique | Source |\n|---|---|---|---|\n| ¹⁸F-FDG | **1,9 × 10⁻²** (≈ 0,019) | paroi vésicale (~7,5 × 10⁻² mGy/MBq) | [20,49] |\n| ⁹⁹ᵐTc-MDP (os) | ≈ **5,7 × 10⁻³** | paroi vésicale / surface osseuse | [20,21] |\n| ⁹⁹ᵐTc-MIBI (sestamibi, repos) | ≈ 6,2 × 10⁻³ | paroi vésicale / vésicule biliaire / côlon | [20] |\n| ⁶⁸Ga-DOTATATE | **2,1 × 10⁻²** (0,021 ± 0,003) | rate / paroi vésicale | [22] |\n| ⁶⁸Ga-PSMA-11 | ≈ 2,3 × 10⁻² | reins / paroi vésicale | [50] |\n| ²⁰¹Tl-chlorure | ≈ **0,14** (élevé) | rein / côlon | [20] |\n| ¹³¹I-iodure (thyroïde fixante) | très variable (~24 mSv/MBq si forte fixation) | **thyroïde** | [51] |\n\nÀ partir de ces coefficients, on retrouve la dose efficace d'un examen en multipliant par l'activité réellement administrée (vérifiée à l'**activimètre**, cf. D3). Ainsi une scintigraphie osseuse au ⁹⁹ᵐTc-MDP de **740 MBq** délivre ≈ **4,2 mSv** [20,21], et une TEP au ¹⁸F-FDG de ≈ **400 MBq** ≈ **7–8 mSv** pour la seule composante TEP [52,53], à laquelle s'ajoute la dose du scanner couplé.\n\nDeux nuances expertes méritent d'être posées. D'abord, le coefficient n'est pas figé : recalculé avec les fantômes maillés (mesh) actuels de la CIPR, le coefficient du FDG passe de **1,9 × 10⁻²** à **1,7 × 10⁻² mSv/MBq** — il faut donc toujours préciser le référentiel dosimétrique invoqué [23,49]. Ensuite, pour l'iode-131, la dose dépend massivement de la fixation thyroïdienne : dans un cas rapporté de faible fixation, **97,5 %** de la dose efficace provenait d'organes autres que la thyroïde [51]. Enfin, en **pédiatrie**, la dose par MBq est plus élevée qu'à l'âge adulte ; la **carte de doses pédiatrique de l'EANM** (Association européenne de médecine nucléaire) module l'activité par le poids et impose une activité minimale, de façon à viser une dose efficace **indépendante du poids** de l'enfant [1,69].",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — dose absorbée (Gy) vs dose efficace (Sv)",
+            "text": "Le coefficient en **mSv/MBq** sert à la radioprotection et au choix de l'examen, jamais à la conduite d'une thérapie. En radiothérapie interne vectorisée (¹³¹I, ¹⁷⁷Lu-PSMA, ¹⁷⁷Lu-DOTATATE), on raisonne en **dose absorbée à l'organe en Gy** (Gy à la tumeur, Gy aux glandes salivaires et aux reins comme organes à risque), car le sievert n'est valable que pour les faibles doses et les effets stochastiques [34]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — toujours nommer le référentiel dosimétrique",
+            "text": "Un même examen donne une dose efficace **différente** selon le jeu de facteurs employé : le passage CIPR 60 → CIPR 103 modifie la dose efficace TDM de ≈ **+11 % au crâne, +20 % au thorax et −25 % au pelvis** [46]. Un chiffre de dose efficace n'est interprétable qu'accompagné de sa source (CIPR 103, fantôme employé)."
+          }
+        ],
+        "stats": [
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "¹⁸F-FDG, dose efficace adulte [20]"
+          },
+          {
+            "value": "≈ 4,2 mSv",
+            "label": "Scinti osseuse ⁹⁹ᵐTc-MDP (740 MBq) [20,21]"
+          },
+          {
+            "value": "≈ 7–8 mSv",
+            "label": "TEP-FDG (~400 MBq, volet TEP) [52,53]"
+          },
+          {
+            "value": "thyroïde",
+            "label": "Organe critique de l'¹³¹I-iodure [51]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle activité (MBq) injectee au patient produisant une dose absorbee (mGy) par organe, traduite en dose efficace (mSv) via les coefficients CIPR 128 : la chaine des trois unites au lit du patient.",
+        "figureCaption": "Fig. — De l'activité injectée (Bq) à la dose absorbée par organe (Gy) puis à la dose efficace (Sv) : la chaîne dosimétrique du radiopharmaceutique."
+      },
+      {
+        "title": "D2 - Niveaux de référence diagnostiques (NRD) et optimisation",
+        "text": "L'exposition médicale du patient échappe au régime des **limites de dose** : les principes de **justification** et d'**optimisation** s'appliquent, mais il n'existe **aucune limite réglementaire de dose pour le patient** soumis à un acte diagnostique justifié [7,8]. L'outil opérationnel de l'optimisation n'est donc pas une limite mais le **niveau de référence diagnostique (NRD)**.\n\nLe NRD est un **indicateur dosimétrique de la qualité des pratiques**, établi pour un examen et une morphologie de patient standard : il n'est ni une limite de dose, ni une dose « optimale », ni un seuil à ne jamais dépasser pour un patient donné [66,68]. Sa logique est statistique : un service dont la dose médiane sur un échantillon de patients standards dépasse régulièrement le NRD doit **analyser et optimiser** sa pratique. En médecine nucléaire, le NRD s'exprime naturellement en **activité administrée (MBq)** par type d'examen, complétée le cas échéant par la dose du scanner couplé [66,67].\n\n**Cadre français des NRD** [66,68] :\n\n| Texte | Apport | Source |\n|---|---|---|\n| Arrêté du 24 octobre 2011 (JO 14 janvier 2012) | Instaure le dispositif des NRD | [68] |\n| Décret « expositions médicales » du 13 février 2020 | Refonte du cadre d'optimisation | [68] |\n| Décision ASN n° 2019-DC-0667 (homologuée arr. 23 mai 2019) | Modalités d'établissement et de recueil | [68] |\n\nL'**IRSN/ASNR** (Institut de radioprotection et de sûreté nucléaire, intégré à l'Autorité de sûreté nucléaire et de radioprotection) est responsable de l'établissement et de la mise à jour des NRD à partir des recueils transmis par les services [66]. Le dispositif belge est analogue, l'AFCN publiant des NRD propres aux examens de médecine nucléaire [67].\n\nLa **carte de doses pédiatrique de l'EANM** prolonge cette logique d'optimisation à l'enfant : l'activité administrée est **pondérée au poids** par un multiple croissant et bornée par une **activité minimale recommandée**, l'objectif étant une dose efficace homogène quel que soit le gabarit [1,32,69]. La formule est simple — **A(MBq) = activité de base × multiple** —, le multiple variant de **1,00 à 3 kg** à **14,00 à 68 kg** pour la classe la plus courante ; si l'activité calculée tombe sous le minimum recommandé, on administre le **minimum** [1]. Exemple officiel : une TEP-FDG cérébrale chez un enfant de 50 kg = 14,0 × 10,71 ≈ **150 MBq** [1].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le NRD n'est pas une limite",
+            "text": "Un NRD ne s'applique **jamais à un patient individuel** : dépasser le NRD pour un patient particulier (forte corpulence, indication exigeante) n'est ni une faute ni un incident. Le NRD se juge sur la **médiane d'un échantillon** de patients standards. À l'inverse, être systématiquement très en dessous peut signaler une qualité d'image insuffisante [66,68]."
+          },
+          {
+            "type": "info",
+            "title": "Justification — optimisation — (pas de) limitation",
+            "text": "Les trois principes de la CIPR 103 s'appliquent au patient de manière dégradée : **justification** (l'acte apporte-t-il un bénéfice net ?) et **optimisation** (ALARA / ALADA : As Low As Diagnostically Achievable) sont pleinement requises, mais la **limitation de dose** ne concerne PAS l'exposition médicale du patient — uniquement les travailleurs et le public (cf. D3) [7,8]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "0",
+            "label": "Limite de dose réglementaire pour le patient [8]"
+          },
+          {
+            "value": "MBq",
+            "label": "Unité d'expression des NRD en médecine nucléaire [66]"
+          },
+          {
+            "value": "2011",
+            "label": "Arrêté instaurant les NRD en France [68]"
+          },
+          {
+            "value": "≈ 150 MBq",
+            "label": "TEP-FDG cérébrale, enfant 50 kg (carte EANM) [1]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schema de l'optimisation des doses en imagerie : niveau de reference diagnostique servant de repere statistique pour ajuster l'activite administree, distinct d'une limite de dose.",
+        "figureCaption": "Fig. — Le NRD : un repère statistique d'optimisation (activité médiane d'un échantillon), à ne pas confondre avec une limite de dose."
+      },
+      {
+        "title": "D3 - Le cadre normatif des unités : SI, CIPR, CIPM et réglementation",
+        "text": "Les trois unités reposent sur une architecture institutionnelle qu'il faut connaître pour citer juste. Le **becquerel**, le **gray** et le **sievert** sont des **unités dérivées du Système international (SI) dotées d'un nom spécial**, sous l'autorité métrologique du **BIPM** (Bureau international des poids et mesures) et de la **CGPM** (Conférence générale des poids et mesures) [42]. Le becquerel et le gray ont été adoptés par la **15ᵉ CGPM en 1975**, le sievert par la **16ᵉ CGPM en 1979** [14,15,60]. Subtilité dimensionnelle exploitée en QCM : becquerel et hertz valent tous deux **s⁻¹**, mais le **hertz** est réservé aux phénomènes périodiques et le **becquerel** aux processus stochastiques de désintégration — ils ne sont **pas interchangeables** [42].\n\nLa hiérarchie des grandeurs distingue trois familles, chacune avec son autorité [2,10] :\n\n| Famille | Grandeurs | Mesurable ? | Autorité |\n|---|---|---|---|\n| **Physiques** | activité (Bq), kerma (Gy), dose absorbée (Gy) | Oui | **ICRU** (Commission internationale des unités et mesures de radiation) |\n| **De protection** | dose équivalente Hₜ, dose efficace E (Sv) | **Non** (calculées) | **CIPR** (réf. CIPR 103, 2007) |\n| **Opérationnelles** | H*(10), Hp(10), Hp(0,07), Hp(3) (Sv) | Oui (dosimètres) | **ICRU / CIPR** |\n\nLe **kerma** (Kinetic Energy Released per unit MAss) est, comme la dose absorbée, exprimé en gray : il quantifie l'énergie cinétique transférée aux particules chargées par unité de masse, et coïncide avec la dose absorbée à l'équilibre électronique [4]. Les **grandeurs opérationnelles** sont celles que mesurent réellement les dosimètres et radiamètres, en estimant par excès les grandeurs de protection : **H*(10)** (équivalent de dose ambiant, surveillance de zone), **Hp(10)** (dosimètre individuel de poitrine → estime la dose efficace), **Hp(0,07)** (peau) et **Hp(3)** (cristallin) [10,62]. La mise à jour **ICRU Report 95 (2020)**, conjointe ICRU/CIPR, refonde ces grandeurs sur les **mêmes fantômes et coefficients que la dose efficace**, abandonnant la sphère ICRU historique [11,12].\n\nLa traçabilité métrologique est le maillon « CQ » des unités. L'**activité (Bq)** administrée est mesurée par l'**activimètre** (chambre d'ionisation à puits), dont la justesse — constance, exactitude, linéarité, géométrie — est vérifiée par rapport à des **étalons nationaux** (LNHB, PTB, NIST) ; le Bq mesuré au pied du patient conditionne directement la dose délivrée [62,63]. Les **dosimètres** sont eux étalonnés en H*(10) ou Hp(10) via des coefficients de conversion kerma-dans-l'air → grandeur opérationnelle [62,63].\n\n**Limites de dose (CIPR 103, transposées par la directive Euratom 2013/59)** [8,54,55] :\n\n| Catégorie | Dose efficace | Cristallin | Peau / extrémités |\n|---|---|---|---|\n| **Travailleur exposé** | **20 mSv/an** (moy. 5 ans, ≤ 50 mSv une année isolée) | **20 mSv/an** (moy. 5 ans) | 500 mSv/an |\n| **Public** | **1 mSv/an** | 15 mSv/an | peau 50 mSv/an |\n\nLa limite au **cristallin a été abaissée de 150 à 20 mSv/an** par la déclaration de Séoul de la CIPR (2011), au vu d'un seuil de cataracte révisé à ≈ **0,5 Gy** [18,56,57]. Ces limites encadrent les **effets stochastiques** (cancers, sans seuil, hypothèse linéaire sans seuil), tandis que les limites aux organes visent à prévenir les **réactions tissulaires déterministes** (avec seuil, en Gy) [18,19].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le sievert n'évalue pas le risque individuel",
+            "text": "La dose efficace (Sv) est définie pour une **personne de référence** (sexe et âge moyennés) et destinée à la **gestion populationnelle** de la radioprotection. Elle ne doit servir ni à estimer le risque d'un patient donné, ni à quantifier un effet déterministe individuel, ni à décrire une forte dose thérapeutique — où l'on utilise la **dose absorbée à l'organe en Gy** [34,64]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — toujours préciser CIPR 60 ou CIPR 103",
+            "text": "Les facteurs tissulaires diffèrent entre référentiels : le **sein** passe de wₜ = 0,05 (CIPR 60) à **0,12** (CIPR 103) et les **gonades** de 0,20 à **0,08** [44,47]. Une même irradiation produit donc une dose efficace différente selon le jeu de facteurs ; en publication comme en expertise, nommer explicitement le référentiel est impératif."
+          }
+        ],
+        "stats": [
+          {
+            "value": "1975 / 1979",
+            "label": "Adoption CGPM : Bq + Gy / Sv [14,15]"
+          },
+          {
+            "value": "20 mSv/an",
+            "label": "Limite travailleur, dose efficace (CIPR 103) [8]"
+          },
+          {
+            "value": "1 mSv/an",
+            "label": "Limite public, dose efficace [8]"
+          },
+          {
+            "value": "≈ 0,5 Gy",
+            "label": "Seuil révisé de cataracte du cristallin [18,56]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Architecture des grandeurs de radioprotection : grandeurs physiques mesurables (Bq, Gy) sous l'ICRU, grandeurs de protection calculees (Sv) sous la CIPR, grandeurs operationnelles mesurees par les dosimetres, et limites de dose reglementaires.",
+        "figureCaption": "Fig. — L'architecture normative : grandeurs physiques (ICRU) → grandeurs de protection (CIPR) → grandeurs opérationnelles mesurées → limites réglementaires."
+      },
+      {
+        "title": "E1 - Idées reçues, erreurs fréquentes et FAQ sur les unités",
+        "text": "Les trois unités SI de la radioactivité — **becquerel (Bq)**, **gray (Gy)**, **sievert (Sv)** — répondent à trois questions distinctes, et leur confusion est la source d'erreur la plus répandue, du compte rendu à la conversation avec le patient. La règle conceptuelle tient en une phrase : on **administre une activité (Bq)**, qui produit une **dose absorbée (Gy)** dans les organes, traduite en **dose efficace (Sv)** pour estimer un risque stochastique. On n'« injecte » jamais des sieverts.[2,33,36]\n\n| Question posée | Grandeur | Unité SI | Définition de base | Niveau de la chaîne |\n|---|---|---|---|---|\n| Combien de désintégrations ? | Activité | **Bq** | **1 Bq = 1 désintégration/s** (s⁻¹) [2,33] | à la **source** |\n| Combien d'énergie déposée ? | Dose absorbée | **Gy** | **1 Gy = 1 J/kg** [33,38] | dans la **matière** |\n| Quel risque biologique ? | Dose équivalente / efficace | **Sv** | **1 Sv = 1 J/kg**, pondéré par w_R et w_T [7,33] | **risque** stochastique |\n\n**▸ Idée reçue n°1 : « le sievert se mesure avec un dosimètre ».** Faux. Le sievert (dose équivalente / dose efficace) est une grandeur de **protection calculée**, non mesurable directement sur un individu. Ce qu'un dosimètre mesure réellement, ce sont des **grandeurs opérationnelles** — équivalent de dose individuel **Hp(10)** (estimateur de la dose efficace), **Hp(0,07)** (peau) et **Hp(3)** (cristallin) pour la dosimétrie individuelle, **H*(10)** (équivalent de dose ambiant) pour la surveillance d'ambiance — qui servent d'**estimateurs** prudents des grandeurs de protection.[10,36,62,71] L'ICRU Report 95 (2020, conjoint ICRU/ICRP) a refondé ces grandeurs opérationnelles sur les **mêmes fantômes anthropomorphes** que la dose efficace, abandonnant la sphère ICRU historique.[11,12]\n\n**▸ Idée reçue n°2 : « 1 Gy = 1 Sv, toujours ».** Vrai uniquement en imagerie diagnostique conventionnelle, où le facteur de pondération radiologique **w_R = 1** pour les photons (X, γ), les photons d'annihilation de **511 keV** et les électrons. La distinction devient critique en **thérapie alpha ciblée** (²²³Ra, ²²⁵Ac) : pour les particules **α, w_R = 20**, si bien que **1 Gy déposé par un α équivaut à 20 Sv** de dose équivalente.[5,6,7,43] Confondre Gy et Sv dans ce contexte fausse d'un facteur 20 toute estimation de nocivité.\n\n**▸ Idée reçue n°3 : « la dose efficace mesure le risque de CE patient ».** Non. La dose efficace (Sv) est définie pour une **personne de référence** (sexe et âge moyennés via les facteurs de pondération tissulaire w_T) et est destinée à l'**optimisation et la comparaison des pratiques**, pas à l'évaluation d'un risque individuel ni aux fortes doses thérapeutiques — où l'on raisonne en **dose absorbée aux organes (Gy)**.[34,64] L'usage abusif de la dose efficace comme prédicteur de risque individuel est explicitement déconseillé.[64]\n\n**▸ FAQ rapide**\n\n| Question | Réponse courte |\n|---|---|\n| Bq et Hz sont tous deux des s⁻¹, pourquoi deux unités ? | Le **hertz** est réservé aux phénomènes **périodiques** ; le **becquerel** aux processus **stochastiques** de désintégration. Dimension identique, sémantique différente.[42] |\n| Un patient injecté est-il « radioactif en Sv » ? | Non : il porte une **activité résiduelle (Bq/MBq)** ; la dose à l'entourage se calcule, elle ne se lit pas sur le flacon. |\n| Pourquoi pas de limite de dose au patient ? | L'exposition médicale relève de la **justification + optimisation** (pas de limitation) ; elle est encadrée par les **niveaux de référence diagnostiques (NRD)**, qui ne sont ni des limites ni des doses « optimales ».[7,66,68] |\n| CIPR 60 ou CIPR 103 ? | Toujours préciser le référentiel : les **w_T diffèrent** (sein 0,05 → 0,12 ; gonades 0,20 → 0,08), donc une même irradiation donne une dose efficace différente (TDM thorax +~20 %, pelvis −~25 %).[44,46] |\n\n**▸ Le piège clinique le plus coûteux : mCi vs MBq.** Sur un flacon, une littérature anglo-saxonne ou un vieux dossier, l'activité peut encore figurer en **curie**. La conversion **1 mCi = 37 MBq** (1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq) doit être un réflexe : confondre les deux unités sur une prescription introduit un facteur **≈ 37**, soit une erreur d'activité administrée potentiellement majeure.[2,17,37,39]",
+        "stats": [
+          {
+            "value": "37 MBq",
+            "label": "= 1 mCi (réflexe de conversion)"
+          },
+          {
+            "value": "w_R = 20",
+            "label": "particules α : 1 Gy → 20 Sv"
+          },
+          {
+            "value": "Hp(10)",
+            "label": "ce que mesure réellement le dosimètre"
+          },
+          {
+            "value": "1 Bq = 1 s⁻¹",
+            "label": "une désintégration par seconde"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — mCi ↔ MBq (facteur ≈ 37)",
+            "text": "Devant toute valeur d'activité, **vérifier l'unité avant de prescrire ou de calibrer**. **1 mCi = 37 MBq**, **1 µCi = 37 kBq**, **1 Ci = 37 GBq** [17,37,40,41]. Mémoriser la table clinique : 5 mCi ≈ **185 MBq**, 10 mCi = **370 MBq**, 20 mCi = **740 MBq**. Une confusion mCi/MBq fait varier l'activité injectée d'un facteur ~37."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — ne jamais sommer Bq, Gy et Sv",
+            "text": "Les trois grandeurs vivent à des **niveaux différents** de la chaîne (source → matière → risque) et ne se convertissent pas directement l'une en l'autre sans **modèle dosimétrique** (biocinétique, w_R, w_T) [36]. Additionner ou « égaliser » Bq, Gy et Sv n'a aucun sens physique."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — Gy ≠ Sv en thérapie alpha",
+            "text": "En **médecine nucléaire diagnostique** (γ, X, β⁺ → 511 keV), w_R = 1 et numériquement 1 Gy = 1 Sv pour la dose équivalente.[5] La distinction Gy/Sv redevient **opérationnellement critique** dès qu'interviennent des émetteurs **α (w_R = 20)** ou des neutrons (w_R variable, max ≈ 20 vers 1 MeV) [6,43] — d'où l'usage exclusif du **gray (dose absorbée aux organes)** pour raisonner en thérapie vectorisée."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma temps-distance-écran (ALARA) illustrant que la protection s'optimise sur la dose (grandeurs en gray/sievert opérationnel), distincte de l'activité de la source exprimée en becquerel.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran : la radioprotection agit sur la dose reçue (Gy/Sv opérationnel), grandeur à ne pas confondre avec l'activité de la source (Bq)."
+      },
+      {
+        "title": "E2 - Histoire et évolution : de Becquerel et Curie au système SI moderne",
+        "text": "Les noms des trois unités sont ceux des pionniers qui ont, successivement, **découvert** le phénomène, **mesuré l'énergie déposée**, puis **quantifié l'effet biologique** — une trajectoire qui épouse exactement la chaîne conceptuelle activité → dose absorbée → dose équivalente.\n\n**▸ 1896 — la découverte fondatrice.** **Henri Becquerel** rapporte à l'Académie des sciences, le **24 février 1896**, que des sels d'uranium impressionnent une plaque photographique à l'obscurité, sans excitation externe : c'est la **radioactivité spontanée**.[58,59] Deux ans plus tard, **Marie et Pierre Curie** isolent le **polonium** puis le **radium** et forgent le terme « radioactivité ». Le **prix Nobel de physique 1903** récompense conjointement Becquerel et les époux Curie.[13,58,59]\n\n**▸ Du curie au becquerel — la mue métrologique.** L'unité historique d'activité, le **curie (Ci)**, était calquée sur l'activité d'**1 gramme de radium-226**, soit **3,7 × 10¹⁰ désintégrations/s**. En **1975**, la **15ᵉ Conférence générale des poids et mesures (CGPM)** adopte le **becquerel** comme unité SI d'activité — **1 Bq = 1 désintégration/s** — qui remplace officiellement le curie ; d'où la conversion pérenne **1 Ci = 37 GBq**.[13,17,39] La même 15ᵉ CGPM (1975) crée le **gray**, en l'honneur du physicien et radiobiologiste britannique **Louis Harold Gray (1905-1965)**, pour la dose absorbée : **1 Gy = 1 J/kg = 100 rad**.[14,38]\n\n**▸ 1979 — le sievert et la dimension biologique.** La **16ᵉ CGPM** adopte en **1979** le **sievert**, du nom du physicien médical suédois **Rolf Maximilian Sievert (1896-1966)**, pionnier de la mesure des effets biologiques des rayonnements et de la radioprotection : **1 Sv = 1 J/kg = 100 rem**, mais **pondéré** pour refléter le risque stochastique.[15,16,60,61] Les anciennes unités (rad, rem, et le **roentgen** pour l'exposition des X/γ dans l'air) persistent dans la littérature ancienne et anglo-saxonne — d'où l'utilité des conversions ci-dessous.\n\n| Grandeur | Ancienne unité | Conversion SI exacte | Source |\n|---|---|---|---|\n| Activité | curie (Ci) | **1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq** | [17,40] |\n| | millicurie / microcurie | **1 mCi = 37 MBq · 1 µCi = 37 kBq** | [40,41] |\n| Dose absorbée | rad | **1 Gy = 100 rad** | [17,39] |\n| Dose équivalente | rem | **1 Sv = 100 rem** | [16,39] |\n| Exposition (X/γ, air) | roentgen (R) | unité historique, ≈ remplacée par Gy/Sv | [37] |\n\n**▸ La codification du calcul de dose (CIPR).** Au-delà des unités, c'est l'architecture des grandeurs qui s'est construite par étapes. Les **facteurs de pondération radiologique w_R** et **tissulaire w_T** sont la pierre angulaire de la chaîne **D (Gy) → ×w_R → H_T (Sv) → ×w_T → E (Sv)**.[3,7,43,45] Le passage de la **CIPR 60 (1990)** à la **CIPR 103 (2007)** a notablement modifié les w_T : **gonades 0,20 → 0,08** et **sein 0,05 → 0,12**, reflétant l'actualisation des données épidémiologiques de radiosensibilité.[44,47] Les w_T de la CIPR 103 somment à **1,00** : moelle rouge, côlon, poumon, estomac, sein et tissus restants à **0,12** ; gonades **0,08** ; vessie, œsophage, foie, thyroïde à **0,04** ; surface osseuse, cerveau, glandes salivaires, peau à **0,01**.[3,43,45]\n\n**▸ Une évolution toujours en cours.** L'abaissement de la **limite de dose au cristallin** de 150 à **20 mSv/an** (moyenne sur 5 ans), décidé par la CIPR en 2011 (« déclaration de Séoul »), illustre que le système n'est pas figé.[56,57] De même, l'**ICRU Report 95 (2020)** a refondé les grandeurs opérationnelles sur des fantômes anthropomorphes, et la dosimétrie des radiopharmaceutiques continue d'être affinée — par exemple le coefficient du **¹⁸F-FDG**, recalculé à **1,7 × 10⁻² mSv/MBq** avec les fantômes-maillés CIPR récents contre **1,9 × 10⁻²** dans la CIPR 128.[11,23,49]",
+        "stats": [
+          {
+            "value": "1896",
+            "label": "découverte (H. Becquerel)"
+          },
+          {
+            "value": "1975",
+            "label": "becquerel & gray (15ᵉ CGPM)"
+          },
+          {
+            "value": "1979",
+            "label": "sievert (16ᵉ CGPM)"
+          },
+          {
+            "value": "Σ w_T = 1,00",
+            "label": "facteurs tissulaires CIPR 103"
+          }
+        ],
+        "steps": [
+          {
+            "title": "24 février 1896 — Découverte",
+            "text": "Henri Becquerel observe l'émission spontanée des sels d'uranium ; naissance de la radioactivité [58,59]."
+          },
+          {
+            "title": "1898 — Polonium & radium",
+            "text": "Marie et Pierre Curie isolent polonium puis radium et forgent le terme « radioactivité » ; le curie sera calqué sur l'activité d'1 g de ²²⁶Ra [13]."
+          },
+          {
+            "title": "1903 — Prix Nobel",
+            "text": "Nobel de physique partagé entre Becquerel et les époux Curie [58,59]."
+          },
+          {
+            "title": "1975 — becquerel & gray",
+            "text": "15ᵉ CGPM : le becquerel (1 Bq = 1 s⁻¹) remplace le curie ; le gray (1 J/kg, d'après L. H. Gray) devient l'unité de dose absorbée [13,14,38,39]."
+          },
+          {
+            "title": "1979 — sievert",
+            "text": "16ᵉ CGPM : le sievert (1 J/kg pondéré, d'après R. M. Sievert) formalise la dose équivalente/efficace [15,16,60]."
+          },
+          {
+            "title": "1990 → 2007 — CIPR 60 → 103",
+            "text": "Révision des w_T (gonades 0,20→0,08 ; sein 0,05→0,12) modifiant la dose efficace ; cadre de référence actuel [43,44,47]."
+          },
+          {
+            "title": "2011 → 2020 — Affinages récents",
+            "text": "Limite cristallin abaissée à 20 mSv/an (CIPR, Séoul 2011) [56,57] ; refonte des grandeurs opérationnelles (ICRU Report 95, 2020) [11,12]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — trois noms, trois étapes de la chaîne",
+            "text": "L'ordre historique recoupe la logique physique : **Becquerel** (1896, *combien de désintégrations ?*) → **Gray** (énergie déposée, *combien de J/kg ?*) → **Sievert** (effet biologique, *quel risque ?*). Mémoriser cette filiation aide à ne jamais confondre les trois grandeurs.[2,33]"
+          },
+          {
+            "type": "info",
+            "title": "Pourquoi le curie valait 3,7 × 10¹⁰ Bq",
+            "text": "Le **curie** n'était pas un nombre rond arbitraire : il correspondait à l'**activité d'1 gramme de radium-226**, soit ≈ **3,7 × 10¹⁰ désintégrations/s**. La conversion **1 Ci = 37 GBq** en découle directement et reste l'ancrage de toutes les tables mCi ↔ MBq [17,39]."
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schéma de désintégration nucléaire montrant la transition d'un noyau instable vers un état plus stable avec émission de rayonnement — le phénomène compté par le becquerel (désintégrations par seconde).",
+        "figureCaption": "Fig. 2 — Schéma de désintégration : chaque transformation nucléaire est l'événement compté par le becquerel (1 Bq = 1 désintégration/s), grandeur fondatrice mise en évidence par Becquerel en 1896."
+      },
+      {
+        "title": "E3 - Références & liens : sources de référence et pour aller plus loin",
+        "text": "Les valeurs chiffrées de cet article s'appuient sur des **sources primaires** (textes CIPR/ICRU, brochure SI du BIPM, cartes de dose EANM) complétées de synthèses pédagogiques de référence. Le bloc « **Sources & Références** » en bas de page liste l'intégralité des références [1] à [71] avec leurs liens ; les citations [n] du corps y renvoient.\n\n**▸ Cadre métrologique & définitions des unités**\n- **BIPM — Brochure SI, unités dérivées** : becquerel, gray et sievert comme unités SI dérivées à nom spécial ; distinction Hz vs Bq.[42]\n- **NCBI Bookshelf NBK230653** — *Radiation Quantities and Units* : définitions Bq/Gy/Sv, conversions Ci/rad/rem, formule E = Σ w_T·H_T.[2]\n- **Japan Ministry of the Environment — 2.3 Units of Radiation** : Bq, Gy, Sv (référence pédagogique sourçable).[33]\n- **Wikipedia — Gray (unit)** ; **Versant Medical Physics** ; **MIT News** ; **Sizes.com (gray, sievert)** : repères de définition et conversions.[14,37,38,39,61]\n\n**▸ Système de protection radiologique (CIPR / ICRU)**\n- **CIPR Publication 103 (2007)** — recommandations de référence ; texte intégral via **NRC ML12338A682**.[7,43]\n- **Facteurs w_R / w_T** : NCBI **NBK158810 (Table D-5)**, ICRPaedia, nuclear-power.com, ENS glossary, HPS Q8966 ; comparaison **CIPR 60 vs 103** (scirp.org, ARPANSA, Huda 2011).[3,5,6,8,9,44,45,46,47]\n- **Grandeurs opérationnelles** : Hp(10)/Hp(0,07)/Hp(3) et H*(10) (nuclear-power.com, ICRP consultation, ScienceDirect, arXiv) ; refonte **ICRU Report 95 (2020)** (ICRU, T. Otto 2024).[10,11,12,62,63,71]\n- **CIPR 147** — *Use of Dose Quantities* (bon usage des grandeurs) ; **AJR** — limites de la dose efficace comme prédicteur de risque.[34,64]\n\n**▸ Limites de dose & effets biologiques**\n- **Limites CIPR 103** : ICRPaedia *Dose limits*, HPS Q8900, NRC ML081690717 ; abaissement cristallin (Federal Register 2011, Boal 2013).[8,54,55,56,57]\n- **Effets déterministes vs stochastiques** ; seuil cataracte ~0,5 Gy : Hong Kong Observatory, Hamada & Fujimichi (PMC4100010).[18,19]\n\n**▸ Dosimétrie des radiopharmaceutiques & activités**\n- **CIPR Publication 128 (2015)** — coefficients de dose efficace (mSv/MBq) des radiopharmaceutiques diagnostiques ; page ICRP 704.[20,48]\n- Valeurs spécifiques : FDG (PMC9908780, JNM 2021), ⁶⁸Ga-DOTATATE (Sandström 2013), ⁶⁸Ga-PSMA-11 (PubMed 27260521), ¹³¹I (PMC7368868), ⁹⁹ᵐTc-MDP (MDPI Toxics 2023), ¹⁷⁷Lu-PSMA-617 (PubMed 26318602, EANM/SNMMI PMC10317889), ¹³¹I thérapie (StatPearls NBK556145), blindage (Oumano 2025), T½ des radionucléides (radiopharmaceuticals.info).[20,21,22,23,24,25,26,27,28,49,50,51]\n- **Carte de dose pédiatrique EANM (v5.7.2016)** et son fondement (Lassmann et al.).[1,32,69,70]\n\n**▸ Exposition & cadre réglementaire (France)**\n- Exposition naturelle ~2,4 mSv/an (CNSC/UNSCEAR) ; France ~4,5 mSv/an, médical 34 % (IRSN/ASNR EXPOP) ; doses d'examens d'imagerie (Liv Hospital, IAEA RPOP, Radiology Key).[29,30,31,52,53]\n- **Niveaux de référence diagnostiques (NRD)** : IRSN/ASNR, AFCN, Docteur Imago — outil d'optimisation, **distinct des limites de dose**.[65,66,67,68]\n\n**▸ Cartographie des liens (réseau de l'article)**\n\n| Type de lien | Articles cibles |\n|---|---|\n| **Concept** | Becquerel · Gray · Sievert · Activité · Dose absorbée · Dose efficace · Demi-vie |\n| **Bases physiques** | Désintégration radioactive (α/β/γ) · Kerma · TEL · Facteurs w_R / w_T |\n| **Examen / dosimétrie** | TEP-FDG · Scintigraphie osseuse · Carte de dose pédiatrique EANM |\n| **Radioprotection** | ALARA · Limites de dose (CIPR 103) · NRD · Grandeurs opérationnelles Hp(10)/H*(10) |\n| **Thérapie** | Radiothérapie interne vectorisée · Thérapie alpha ciblée (²²³Ra, ²²⁵Ac) · ¹⁷⁷Lu-PSMA |\n\n**Pour aller plus loin (lectures-socles).** Pour un médecin nucléaire, trois documents constituent le socle à consulter directement : la **CIPR Publication 103** (architecture des grandeurs et w_R/w_T) [7], la **CIPR Publication 128** (coefficients de dose des radiopharmaceutiques) [20], et la **carte de dose pédiatrique EANM** (activités à administrer chez l'enfant) [1,70]. *Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire).*",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — quelle source pour quelle valeur",
+            "text": "Pour **citer juste** : définitions d'unités et conversions → **NCBI NBK230653** [2] et **BIPM** [42] ; facteurs w_R/w_T et limites de dose → **CIPR 103** [7] (via NRC ML12338A682 [43]) ; coefficients mSv/MBq des traceurs → **CIPR 128** [20] ; activités pédiatriques → **carte EANM** [1]. Toujours préciser le **référentiel CIPR** (60 vs 103) quand on rapporte une dose efficace [44]."
+          },
+          {
+            "type": "info",
+            "title": "Hiérarchie des sources",
+            "text": "Privilégier les **sources primaires** (CIPR, ICRU, BIPM, EANM/SNMMI) ; les pages de vulgarisation (nuclear-power.com, MIT News, Sizes.com) servent de repère pédagogique mais ne remplacent pas le document officiel pour une valeur publiée. Plusieurs coefficients de dose individuels et la fonction continue exacte du w_R des neutrons nécessitent l'accès aux PDF originaux CIPR 103/128 [7,20,43]."
+          }
+        ]
+      }
+    ]
+  }
+}
