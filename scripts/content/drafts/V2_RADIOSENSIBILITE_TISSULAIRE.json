@@ -1,0 +1,1447 @@
+{
+  "id": "V2_RADIOSENSIBILITE_TISSULAIRE",
+  "type": "autre",
+  "cat": "radiobiologie",
+  "catLabel": "",
+  "title": "Radiosensibilité des tissus et organes à risque en médecine nucléaire",
+  "difficulty": "avancé",
+  "tags": [
+    "radiosensibilité",
+    "radiobiologie",
+    "organes à risque",
+    "loi de Bergonié-Tribondeau",
+    "facteurs de pondération tissulaire",
+    "réactions tissulaires",
+    "ICRP 103",
+    "ICRP 118",
+    "dose efficace",
+    "dosimétrie interne",
+    "radioprotection",
+    "effets stochastiques",
+    "effets déterministes",
+    "moelle osseuse",
+    "cristallin"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "Tissue weighting factor — ICRPaedia",
+      "url": "https://icrpaedia.org/Tissue_weighting_factor",
+      "verified": true
+    },
+    {
+      "title": "Table D-5, Tissue Weighting Factors for Calculating Effective Dose (or Effective Dose Equivalent) for Selected Tissues — Toxicological Profile for Uranium (NCBI Bookshelf NBK158810)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK158810/table/T50/",
+      "verified": true
+    },
+    {
+      "title": "Comparison of the ICRP 60 and ICRP 103 Recommendations on the Determination of the Effective Dose from Abdominopelvic Computed Tomography (SCIRP, IJMPCERO 2015)",
+      "url": "https://www.scirp.org/html/10-2660137_56123.htm",
+      "verified": true
+    },
+    {
+      "title": "Law of Bergonié and Tribondeau (University of Mustansiriyah lecture, PDF)",
+      "url": "https://uomus.edu.iq/uploads/lectures/29/b58262c041ee46688a7e1b7d28faac39.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiosensitivity and Rate of Cell Division: 'Law of Bergonié and Tribondeau' (Science 1969;163:1338)",
+      "url": "https://www.science.org/doi/10.1126/science.163.3873.1338",
+      "verified": true
+    },
+    {
+      "title": "Principles of Radiobiology — OncologyMedicalPhysics.com",
+      "url": "https://oncologymedicalphysics.com/principles-of-radiobiology/",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 118: Statement on Tissue Reactions — Threshold Doses for Tissue Reactions in a Radiation Protection Context (Ann ICRP 2012;41(1-2))",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+118",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 118: ICRP Statement on Tissue Reactions (Annals of the ICRP, SAGE; DOI 10.1016/j.icrp.2012.02.001)",
+      "url": "https://journals.sagepub.com/doi/10.1016/j.icrp.2012.02.001",
+      "verified": true
+    },
+    {
+      "title": "Dose limits to the lens of the eye: International Basic Safety Standards and related guidance (Boal, ICRP 2013 Symposium, PDF)",
+      "url": "https://www.icrp.org/docs/ICRP2013%20S2%20Boal.pdf",
+      "verified": true
+    },
+    {
+      "title": "Effects on Tissues — cell/tissue/organ hierarchy & Rubin-Casarett classification (Ohio Univ PHY569 Module 7, PDF)",
+      "url": "https://inpp.ohio.edu/~massey/PHY569L/Module7.pdf",
+      "verified": true
+    },
+    {
+      "title": "International Commission on Radiological Protection Publication 152 (2022): Radiation Detriment Calculation Methodology (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10277298/",
+      "verified": true
+    },
+    {
+      "title": "Draft Recommendations of the International Commission on Radiological Protection (ICRP, nominal risk coefficients, public consultation, PDF)",
+      "url": "https://www.icrp.org/docs/icrp_recs_02_276_06_web_cons_5_june.pdf",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — A Compendium of Current Information Related to Frequently Used Substances (Mattsson et al., Ann ICRP 2015;44(2S))",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Dose Estimates for Nuclear Medicine Scans (Columbia University EHS, PDF)",
+      "url": "https://research.columbia.edu/sites/default/files/content/EHS/Rad%20Safety/NuclearMedicineScans.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiation dose from 18F-FDG PET/CT procedures: influence of specific CT model and protocols (Radioprotection 2018)",
+      "url": "https://www.radioprotection.org/articles/radiopro/full_html/2018/02/radiopro170056/radiopro170056.html",
+      "verified": true
+    },
+    {
+      "title": "Dosage Card — EANM (initiatives)",
+      "url": "https://www.eanm.org/initiatives/dosage-card/",
+      "verified": true
+    },
+    {
+      "title": "EANM Paediatric Dosage Card (PDF)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf",
+      "verified": true
+    },
+    {
+      "title": "Standardization of administered activities in paediatric nuclear medicine: the EANM perspective (Lassmann & Treves, EJNMMI 2016;43:2456)",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3474-6",
+      "verified": true
+    },
+    {
+      "title": "Pediatric Injected Activity Tool — SNMMI",
+      "url": "https://snmmi.org/Web/Clinical-Practice/Dose-Optimization/Pediatric-Injected-Activity-Tool.aspx",
+      "verified": true
+    },
+    {
+      "title": "Technetium-99m — Wikipedia (decay, 140.5 keV, 6 h half-life)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m",
+      "verified": true
+    },
+    {
+      "title": "Mo99-Tc99m Generator — StatPearls (NCBI Bookshelf NBK565854)",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK565854/",
+      "verified": true
+    },
+    {
+      "title": "99Mo → 99mTc radionuclide principles — IAEA Human Health Campus (Radiopharmacy)",
+      "url": "https://humanhealth.iaea.org/HHW/Radiopharmacy/VirRad/Eluting_the_Generator/Generator_Module/99Mo_-_99mTc_radionuclide_principles/index.html",
+      "verified": true
+    },
+    {
+      "title": "Individualized Dosimetry of Kidney and Bone Marrow in Patients Undergoing 177Lu-DOTA-Octreotate Treatment (Sandström et al., J Nucl Med 2013;54:33)",
+      "url": "https://jnm.snmjournals.org/content/54/1/33",
+      "verified": true
+    },
+    {
+      "title": "Developments in 177Lu-based radiopharmaceutical therapy and dosimetry (George & Samuel, Frontiers in Chemistry 2023)",
+      "url": "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2023.1218670/full",
+      "verified": true
+    },
+    {
+      "title": "Phase 3 Trial of 177Lu-Dotatate for Midgut Neuroendocrine Tumors — NETTER-1 (Strosberg et al., NEJM 2017;376:125)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1607427",
+      "verified": true
+    },
+    {
+      "title": "Radioactive Iodine Therapy for Thyroid Malignancies — StatPearls (NCBI Bookshelf NBK580567)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK580567/",
+      "verified": true
+    },
+    {
+      "title": "SPECT/CT-based dosimetry of salivary glands and iodine-avid lesions following 131I therapy (Health and Technology 2023; PMC9817440)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9817440/",
+      "verified": true
+    },
+    {
+      "title": "The Impact of Radioiodine (131I) Therapy of Thyroid Disease on Salivary Glands Function and Inflammation: A Comprehensive Review (Biomedicines 2025; PMC12190391)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12190391/",
+      "verified": true
+    },
+    {
+      "title": "Duration of Breastfeeding Interruption in Nuclear Medicine Procedures (J Nucl Med Technol 2023;51:239)",
+      "url": "https://tech.snmjournals.org/content/51/3/239",
+      "verified": true
+    },
+    {
+      "title": "Radiation protection of pregnant women in nuclear medicine — IAEA RPOP",
+      "url": "https://www.iaea.org/resources/rpop/health-professionals/nuclear-medicine/pregnant-women",
+      "verified": true
+    },
+    {
+      "title": "Les Cancers Radio-Induits (B. Le Guen, SFRP, PDF)",
+      "url": "https://sfrp.asso.fr/wp-content/uploads/2021/11/ST3-LeGuen.pdf",
+      "verified": true
+    },
+    {
+      "title": "Quelles contraintes pour quels organes à risque en radiothérapie chez l'enfant ? (Cancer/Radiothérapie 2015, ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1278321815001870",
+      "verified": true
+    },
+    {
+      "title": "Subacute haematotoxicity after PRRT with 177Lu-DOTA-octreotate: prognostic factors, incidence and course (Bergsma et al., EJNMMI 2016; PMC4731438)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731438/",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 103 — The 2007 Recommendations of the International Commission on Radiological Protection",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+103",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 103 — free extract (Annals of the ICRP 37(2-4), PDF)",
+      "url": "https://www.icrp.org/docs/icrp_publication_103-annals_of_the_icrp_37(2-4)-free_extract.pdf",
+      "verified": true
+    },
+    {
+      "title": "Tissue weighting factor — European Nuclear Society (ENS) glossary (ICRP 60 vs ICRP 103 values)",
+      "url": "https://www.euronuclear.org/glossary/tissue-weighting-factor/",
+      "verified": true
+    },
+    {
+      "title": "Radiation protection of the eye lens in medical workers — basis and impact of the ICRP recommendations (Barnard et al., British Journal of Radiology 2016;89(1060):20151034)",
+      "url": "https://academic.oup.com/bjr/article/89/1060/20151034/7445760",
+      "verified": true
+    },
+    {
+      "title": "ICRP TG36 — Radiation Dose to Patients in Diagnostic Nuclear Medicine (public consultation draft, PDF)",
+      "url": "https://www.icrp.org/docs/Report%20TG36%20-%20Radiopharmaceuticals%20-%20for%20public%20consultation%20final.pdf",
+      "verified": true
+    },
+    {
+      "title": "Effective dose to adult patients from 338 radiopharmaceuticals estimated using ICRP biokinetic data, ICRP/ICRU computational reference phantoms and ICRP 2007 tissue weighting factors (Andersson et al., EJNMMI Physics 2014; PMC4545621)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4545621/",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms (J Nucl Med 2021;62:1805; PMC8612182)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8612182/",
+      "verified": true
+    },
+    {
+      "title": "A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG (EJNMMI Physics 2023; PMC9908780)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9908780/",
+      "verified": true
+    },
+    {
+      "title": "FDG PET/CT: EANM procedure guidelines for tumour imaging version 2.0 (Boellaard et al., EJNMMI 2015;42:328; PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/",
+      "verified": true
+    },
+    {
+      "title": "[18F]FDG PET/CT: EANM procedure guidelines for tumour imaging version 3.0 (Boellaard et al., 2025, ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065",
+      "verified": true
+    },
+    {
+      "title": "The new EANM paediatric dosage card: additional notes with respect to F-18 (Lassmann et al., PubMed 18719912)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18719912/",
+      "verified": true
+    },
+    {
+      "title": "Comparative Biodistribution and Radiation Dosimetry of 68Ga-DOTATOC and 68Ga-DOTATATE in Patients with Neuroendocrine Tumors (Sandström et al., J Nucl Med 2013;54:1755)",
+      "url": "https://jnm.snmjournals.org/content/54/10/1755",
+      "verified": true
+    },
+    {
+      "title": "Radiation dosimetry of [68Ga]PSMA-11 in low-risk prostate cancer patients (EJNMMI Physics 2018; PMC6328430)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6328430/",
+      "verified": true
+    },
+    {
+      "title": "Gallium Ga 68 PSMA-11 Injection — FDA prescribing information / label (NDA 212642, 2020)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/212642s000lbl.pdf",
+      "verified": true
+    },
+    {
+      "title": "Dosimetry of [177Lu]Lu-DOTATATE in Patients with Advanced Midgut Neuroendocrine Tumors: Results from a Substudy of the Phase III NETTER-1 Trial (J Nucl Med 2025;66:449; PMC11876735)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11876735/",
+      "verified": true
+    },
+    {
+      "title": "Prospective observational study of 177Lu-DOTA-octreotate therapy in 200 patients with advanced metastasized NETs: feasibility and impact of a dosimetry-guided protocol (kidney 23 Gy; Garske-Román et al., EJNMMI 2018; PMC5915504)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5915504/",
+      "verified": true
+    },
+    {
+      "title": "The SNMMI Practice Guideline for Therapy of Thyroid Disease with 131I 3.0 (Silberstein et al., J Nucl Med 2012;53:1633)",
+      "url": "https://jnm.snmjournals.org/content/53/10/1633",
+      "verified": true
+    },
+    {
+      "title": "Radiosensitivity and rate of cell division: law of Bergonié and Tribondeau (PubMed 5765114)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5765114/",
+      "verified": true
+    },
+    {
+      "title": "Radiosensitivity — Wikipedia (Bergonié-Tribondeau, tissue hierarchy)",
+      "url": "https://en.wikipedia.org/wiki/Radiosensitivity",
+      "verified": true
+    },
+    {
+      "title": "Arrêté du 23 mai 2019 portant homologation de la décision ASN 2019-DC-0667 (NRD médecine nucléaire) — Légifrance",
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000038529178",
+      "verified": true
+    },
+    {
+      "title": "NRD — Niveaux de référence diagnostiques (IRSN/ASNR, médecine nucléaire)",
+      "url": "https://recherche-expertise.asnr.fr/professionnels-sante/radioprotection-patients/nrd-niveaux-de-reference-diagnostiques",
+      "verified": true
+    }
+  ],
+  "lead": "La radiosensibilité décrit la facilité avec laquelle un tissu ou un organe peut être abîmé par les rayonnements utilisés en médecine nucléaire. Elle n'est pas la même partout dans le corps : certaines cellules, qui se renouvellent vite, sont très vulnérables, tandis que d'autres, stables et spécialisées, résistent beaucoup mieux. Comprendre cette inégalité permet de prévoir quels organes sont les plus exposés lors d'un examen ou d'un traitement, et de les protéger en conséquence. C'est ce principe qui guide le choix des doses, la préparation du patient et la surveillance des organes les plus fragiles. Il constitue le socle commun à toute la radioprotection, en imagerie comme en thérapie.",
+  "identityCard": [
+    {
+      "icon": "dna",
+      "label": "Cible critique",
+      "value": "ADN nucléaire (cassures double-brin)"
+    },
+    {
+      "icon": "microscope",
+      "label": "Loi fondatrice",
+      "value": "Bergonié & Tribondeau (1906)"
+    },
+    {
+      "icon": "list",
+      "label": "Classification cellulaire",
+      "value": "Rubin & Casarett (VIM > DIM > RPM > FPM)"
+    },
+    {
+      "icon": "alert",
+      "label": "Tissus les plus sensibles",
+      "value": "Moelle rouge, gonades, cryptes, cristallin"
+    },
+    {
+      "icon": "shield",
+      "label": "Tissus radiorésistants",
+      "value": "Neurones, muscle, os mature (type IV)"
+    },
+    {
+      "icon": "activity",
+      "label": "wT max (ICRP 103)",
+      "value": "0,12 (moelle, côlon, poumon, estomac, sein)"
+    },
+    {
+      "icon": "target",
+      "label": "wT gonades",
+      "value": "0,08 (ICRP 103, vs 0,20 ICRP 60)"
+    },
+    {
+      "icon": "radiation",
+      "label": "Détriment nominal",
+      "value": "5,5-5,7 × 10⁻² par Sv (population)"
+    },
+    {
+      "icon": "zap",
+      "label": "Seuil cataracte (cristallin)",
+      "value": "0,5 Gy (ICRP 118)"
+    },
+    {
+      "icon": "alert",
+      "label": "Limite cristallin travailleur",
+      "value": "20 mSv/an (post-ICRP 118)"
+    },
+    {
+      "icon": "flask",
+      "label": "Organe critique ¹⁸F-FDG",
+      "value": "Vessie ; E ≈ 0,019 mSv/MBq"
+    },
+    {
+      "icon": "droplets",
+      "label": "OAR thérapie ¹⁷⁷Lu-PRRT",
+      "value": "Reins 23 Gy ; moelle 2 Gy"
+    },
+    {
+      "icon": "baby",
+      "label": "Sensibilité pédiatrique",
+      "value": "≈ 15 %/Sv (<10 ans) vs ~1 %/Sv (60 ans)"
+    },
+    {
+      "icon": "stetho",
+      "label": "OAR ¹³¹I",
+      "value": "Glandes salivaires, moelle, poumon"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "score",
+      "label": "Facteurs de pondération tissulaire wT (ICRP 103)"
+    },
+    {
+      "type": "score",
+      "label": "Seuils de réactions tissulaires (ICRP 118)"
+    },
+    {
+      "type": "score",
+      "label": "Niveaux de Référence Diagnostiques (NRD)"
+    },
+    {
+      "type": "examen",
+      "label": "TEP au ¹⁸F-FDG"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse au ⁹⁹ᵐTc-MDP"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie thyroïdienne"
+    },
+    {
+      "type": "traceur",
+      "label": "¹⁸F-FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-DOTATATE"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-PSMA-11"
+    },
+    {
+      "type": "traceur",
+      "label": "¹³¹I-NaI (iodure)"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-DOTATATE (PRRT)"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-PSMA"
+    },
+    {
+      "type": "theranostique",
+      "label": "Traitement par ¹³¹I (cancer thyroïdien)"
+    },
+    {
+      "type": "maladie",
+      "label": "Cataracte radio-induite"
+    },
+    {
+      "type": "maladie",
+      "label": "Sialadénite post-¹³¹I"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Selon la loi de Bergonié et Tribondeau (1906), une cellule est d'autant plus radiosensible qu'elle est :",
+      "options": [
+        "Très différenciée et à division lente",
+        "Peu différenciée, à forte activité mitotique et à long avenir prolifératif",
+        "Riche en mitochondries",
+        "Située en profondeur dans l'organisme"
+      ],
+      "answer": 1,
+      "explanation": "La radiosensibilité est directement proportionnelle à l'activité mitotique et inversement proportionnelle au degré de différenciation des cellules [4,5,51].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle phase du cycle cellulaire est la PLUS radiosensible ?",
+      "options": [
+        "Phase S tardive",
+        "Phase G1",
+        "Mitose (M) et fin de G2",
+        "Phase G0"
+      ],
+      "answer": 2,
+      "explanation": "La sensibilité est maximale en mitose et fin de G2, minimale en phase S tardive (réparation active, deux copies d'ADN) ; ordre de résistance M < G2 < G1 < S [6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la lésion de l'ADN la plus létale après irradiation ?",
+      "options": [
+        "La cassure simple-brin",
+        "Le dommage de base isolé",
+        "La cassure double-brin (DSB)",
+        "Le pontage protéine-ADN seul"
+      ],
+      "answer": 2,
+      "explanation": "La cassure double-brin, mal réparée par NHEJ/recombinaison homologue, conduit à la mort mitotique, à l'apoptose ou à une mutation initiatrice de cancer [6,7].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans la classification de Rubin & Casarett, quel type cellulaire est le PLUS radiosensible ?",
+      "options": [
+        "Cellules postmitotiques fixes (FPM, type IV)",
+        "Cellules postmitotiques réversibles (RPM, type III)",
+        "Cellules vegetative intermitotic (VIM, type I)",
+        "Cellules différenciées intermitotic (DIM, type II)"
+      ],
+      "answer": 2,
+      "explanation": "Les VIM (cellules souches indifférenciées en division régulière : moelle, cryptes, spermatogonies) sont les plus radiosensibles ; les FPM (neurones, muscle) les plus résistantes [10].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel facteur de pondération tissulaire wT l'ICRP 103 (2007) attribue-t-il à la moelle osseuse rouge, au côlon, au poumon, à l'estomac et au sein ?",
+      "options": [
+        "0,01",
+        "0,04",
+        "0,08",
+        "0,12"
+      ],
+      "answer": 3,
+      "explanation": "Ces cinq tissus, plus les tissus restants, ont le wT le plus élevé de 0,12 dans l'ICRP 103 ; la somme de tous les wT vaut 1,00 [1,34].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Comment le facteur wT du sein a-t-il évolué de l'ICRP 60 (1990) à l'ICRP 103 (2007) ?",
+      "options": [
+        "Il a baissé de 0,12 à 0,05",
+        "Il est passé de 0,05 à 0,12",
+        "Il est resté à 0,12",
+        "Il a été supprimé"
+      ],
+      "answer": 1,
+      "explanation": "Le sein a été réévalué à la hausse (0,05 → 0,12) tandis que les gonades passaient de 0,20 à 0,08 (risque héréditaire revu à la baisse) [3,36].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le seuil de dose pour la cataracte (opacité altérant la vision) selon l'ICRP 118 (2012) ?",
+      "options": [
+        "0,5 Gy",
+        "2 Gy",
+        "5 Gy",
+        "10 Gy"
+      ],
+      "answer": 0,
+      "explanation": "L'ICRP 118 a abaissé le seuil de cataracte à 0,5 Gy (suivi > 20 ans), entraînant la baisse de la limite cristallin du travailleur de 150 à 20 mSv/an [7,8,37].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est le coefficient de dose efficace du ¹⁸F-FDG et son organe critique ?",
+      "options": [
+        "0,019 mSv/MBq, vessie",
+        "0,14 mSv/MBq, foie",
+        "0,005 mSv/MBq, moelle",
+        "0,1 mSv/MBq, thyroïde"
+      ],
+      "answer": 0,
+      "explanation": "Le ¹⁸F-FDG a un coefficient de 0,019 mSv/MBq (ICRP 128), la vessie étant l'organe critique du fait de l'excrétion urinaire [13,14].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En thérapie par ¹⁷⁷Lu-DOTATATE (PRRT), quel est l'organe dose-limitant et son seuil classique ?",
+      "options": [
+        "La moelle, 0,5 Gy",
+        "Le foie, 30 Gy",
+        "Les reins, 23 Gy",
+        "La rate, 10 Gy"
+      ],
+      "answer": 2,
+      "explanation": "Le rein est l'organe dose-limitant de la PRRT avec un seuil conservateur de 23 Gy ; la moelle est limitée à 2 Gy. Néphroprotection par acides aminés (lysine/arginine) [23,49].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Dans le traitement par ¹³¹I du cancer thyroïdien, à combien limite-t-on classiquement la dose au sang/moelle ?",
+      "options": [
+        "< 0,5 Gy",
+        "< 2 Gy",
+        "< 10 Gy",
+        "< 23 Gy"
+      ],
+      "answer": 1,
+      "explanation": "Le SNMMI recommande de limiter la dose au sang/moelle à < 2 Gy (200 cGy) et la rétention corps entier à < 4,4 GBq à 48 h [50].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est l'organe critique du ⁶⁸Ga-PSMA-11 ?",
+      "options": [
+        "La vessie",
+        "Les reins (et glandes lacrymales/salivaires)",
+        "La moelle osseuse",
+        "Le poumon"
+      ],
+      "answer": 1,
+      "explanation": "Le ⁶⁸Ga-PSMA-11 a pour organe critique les reins (0,23-0,41 mGy/MBq) ; en thérapie ¹⁷⁷Lu-PSMA, les glandes salivaires/lacrymales deviennent dose-limitantes (xérostomie) [46,47].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le coefficient de risque nominal de cancer + effets héréditaires retenu par l'ICRP 103 pour la population entière ?",
+      "options": [
+        "~0,5 %/Sv",
+        "~5,5-5,7 %/Sv",
+        "~20 %/Sv",
+        "~50 %/Sv"
+      ],
+      "answer": 1,
+      "explanation": "L'ICRP 103 retient un détriment global d'environ 5,5-5,7 % par Sv pour la population entière, et ~4,1 %/Sv pour les travailleurs adultes [11,12,34].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi l'enfant est-il plus radiosensible que l'adulte ?",
+      "options": [
+        "Sa peau est plus fine",
+        "Organisme en croissance, forte fraction cellulaire en mitose et espérance de vie plus longue",
+        "Il reçoit toujours des activités plus élevées",
+        "Ses reins éliminent plus lentement"
+      ],
+      "answer": 1,
+      "explanation": "L'organisme en croissance comporte beaucoup de cellules en division et l'enfant a une espérance de vie plus longue : risque ~15 %/Sv avant 10 ans vs ~1 %/Sv à 60 ans [31,32].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Concernant l'allaitement, lequel impose un ARRÊT DÉFINITIF ?",
+      "options": [
+        "⁹⁹ᵐTc-pertechnétate",
+        "¹³¹I-NaI (iodure)",
+        "⁹⁹ᵐTc-sestamibi",
+        "⁹⁹ᵐTc-MAA"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹³¹I-NaI impose un arrêt définitif de l'allaitement ; le pertechnétate ⁹⁹ᵐTc et le MAA n'imposent qu'une interruption de 12 h, et le sestamibi aucune [29].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En ¹³¹I, l'atteinte des glandes salivaires (OAR majeur) repose sur quel mécanisme ?",
+      "options": [
+        "Diffusion passive dans la salive",
+        "Concentration de l'iode par le NIS, jusqu'à 24 % de l'activité excrétée dans la salive",
+        "Récepteurs de la somatostatine",
+        "Captation par le transporteur du glucose"
+      ],
+      "answer": 1,
+      "explanation": "Le NIS concentre l'iode 7-700× le sérum ; jusqu'à 24 % du ¹³¹I est excrété dans la salive, dose parotidienne 0,04-0,97 Gy/GBq (médiane 0,26), d'où la sialadénite [27,28].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel essai de phase III a établi l'efficacité de la PRRT par ¹⁷⁷Lu-DOTATATE dans les TNE de l'intestin moyen ?",
+      "options": [
+        "ADMIRE-HF",
+        "NETTER-1",
+        "BEIR VII",
+        "SIOPEN-R-NET"
+      ],
+      "answer": 1,
+      "explanation": "NETTER-1 (Strosberg, NEJM 2017) a montré un HR de survie sans progression de 0,18 vs octréotide LAR ; OAR = reins et moelle [25,48].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi ne faut-il JAMAIS appliquer les facteurs wT à la dosimétrie thérapeutique ?",
+      "options": [
+        "Parce que les wT changent chaque année",
+        "Parce que la thérapie relève d'effets déterministes (dose absorbée en Gy par organe), non stochastiques (dose efficace en mSv)",
+        "Parce que la thérapie n'irradie qu'un seul organe",
+        "Parce que les wT ne concernent que les enfants"
+      ],
+      "answer": 1,
+      "explanation": "Les wT et la dose efficace (mSv) quantifient le risque stochastique corps entier ; la thérapie vise des doses absorbées par organe (Gy, effets déterministes/réactions tissulaires) — confondre les deux est une erreur [7,34].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le Niveau de Référence Diagnostique (NRD) français approximatif pour une TEP au ¹⁸F-FDG chez l'adulte ?",
+      "options": [
+        "~35 MBq",
+        "~350 MBq",
+        "~740 MBq",
+        "~3700 MBq"
+      ],
+      "answer": 1,
+      "explanation": "Le NRD FDG TEP adulte est d'environ 350 MBq (décision ASN 2019-DC-0667, homologuée le 23 mai 2019) [53,54].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Le ¹³¹I est formellement contre-indiqué pendant la grossesse parce que :",
+      "options": [
+        "Il provoque des nausées maternelles",
+        "Il passe le placenta et est capté par la thyroïde fœtale dès ~10-12 SA",
+        "Il est trop coûteux",
+        "Il dégrade la qualité d'image"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹³¹I traverse le placenta et est capté par la thyroïde fœtale dès la 10e-12e semaine ; risque de cancer radio-induit et de malformations en organogenèse [30].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel principe gouverne la justification et l'optimisation de tout examen de médecine nucléaire ?",
+      "options": [
+        "Le principe d'inertie",
+        "Le principe ALARA (As Low As Reasonably Achievable)",
+        "Le principe de précaution maximale absolue",
+        "La règle des trois minutes"
+      ],
+      "answer": 1,
+      "explanation": "L'optimisation suit le principe ALARA : maintenir les doses aussi basses que raisonnablement possible, en s'appuyant sur la radiosensibilité différentielle des organes à risque [34].",
+      "difficulty": "facile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "Loi de Bergonié & Tribondeau (1906) : radiosensibilité ∝ activité mitotique et ∝ inverse de la différenciation ; cible critique = ADN (cassure double-brin) [4,5,6].",
+      "Hiérarchie de Rubin & Casarett : VIM (moelle, cryptes, spermatogonies) très sensibles > DIM > RPM (foie, rein) > FPM (neurones, muscle) radiorésistants [10].",
+      "Effets stochastiques sans seuil (cancer, héréditaires) traduits par les wT de l'ICRP 103 : 0,12 pour moelle/côlon/poumon/estomac/sein ; gonades 0,08 ; Σ wT = 1 [1,34].",
+      "Détriment global ≈ 5,5-5,7 % par Sv (population), ~4,1 %/Sv (travailleurs) [11,12,34].",
+      "Effets déterministes (réactions tissulaires, ICRP 118) à seuil : cataracte 0,5 Gy, dépression médullaire 0,5 Gy, stérilité temporaire testicule 0,1 Gy [7,8].",
+      "Imagerie : ¹⁸F-FDG E ≈ 0,019 mSv/MBq (vessie) ; ⁶⁸Ga-DOTATATE → rate ; PSMA → reins [13,46].",
+      "Thérapie : OAR dose-limitants = reins 23 Gy et moelle 2 Gy (¹⁷⁷Lu-PRRT) ; salivaires et moelle (¹³¹I) [23,49,50].",
+      "Enfant et conceptus nettement plus radiosensibles (~15 %/Sv avant 10 ans) → activités réduites (carte EANM), justification renforcée [31,32]."
+    ],
+    "protocol": [
+      "Calcul de la dose efficace E = Σ wT × HT (ICRP 103) pour comparer le risque stochastique des examens diagnostiques [34].",
+      "Préparation ALARA selon l'organe critique : hydratation + mictions fréquentes (vessie, FDG/MDP), jeûne et glycémie contrôlée (FDG) [42].",
+      "¹³¹I : régime pauvre en iode, stimulation salivaire (citron/bonbons acidulés) et hydratation pour protéger les glandes salivaires [26].",
+      "PRRT ¹⁷⁷Lu : perfusion d'acides aminés (lysine/arginine) pour néphroprotection + surveillance hématologique [23,49].",
+      "Pédiatrie : activité = activité de base × multiple selon le poids, avec activités minimales (carte de dosage EANM 2016) [16,17,18].",
+      "Allaitement : arrêt définitif (¹³¹I-NaI), interruption 12 h (⁹⁹ᵐTc-pertechnétate, MAA), aucune (sestamibi) ; dose nourrisson < 1 mSv [29]."
+    ],
+    "scores": [
+      "Facteurs de pondération tissulaire wT (ICRP 103) : 0,12 (moelle, côlon, poumon, estomac, sein, restants) ; 0,08 (gonades) ; 0,04 (vessie, œsophage, foie, thyroïde) ; 0,01 (surface osseuse, cerveau, salivaires, peau) [1,34].",
+      "Seuils de réactions tissulaires (ICRP 118) : cristallin/cataracte 0,5 Gy ; moelle 0,5 Gy ; stérilité testiculaire temporaire 0,1 Gy / permanente ~6 Gy ; ovaires ~3-6 Gy [7].",
+      "Doses-limites OAR thérapie : moelle rouge 2 Gy ; reins 23 Gy (PRRT) ; glandes salivaires 35 Gy [23,24].",
+      "Limites réglementaires : cristallin travailleur 20 mSv/an, corps entier travailleur 20 mSv/an, public 1 mSv/an [8,34,37]."
+    ],
+    "pitfalls": [
+      "Confondre dose absorbée (Gy, par organe, déterministe) et dose efficace (mSv, corps entier, stochastique) : ne jamais appliquer les wT à la thérapie [7,34].",
+      "Captation physiologique dans des organes radiosensibles (moelle après G-CSF, thymus de l'enfant, graisse brune) = faux positifs ET sites de dose accrue [42].",
+      "Seuil rénal PRRT de 23 Gy probablement trop conservateur : privilégier une dosimétrie individualisée plutôt qu'une limite fixe [49].",
+      "Sous-estimer la radiosensibilité de l'enfant et de la femme enceinte : moelle et gonades fœtales hautement sensibles → ¹³¹I contre-indiqué en grossesse [30].",
+      "Blocage thyroïdien ou stimulation salivaire négligés en ¹³¹I → irradiation et sialadénite des glandes salivaires (OAR majeur) [27,28].",
+      "Oublier que la variation est isotopique : l'organe critique dépend de la biodistribution du traceur, pas du seul rayonnement (vessie pour FDG, reins pour PSMA) [13]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "Pourquoi parle-t-on d'organes plus ou moins sensibles aux rayons ?",
+        "text": "Quand on réalise un examen ou un traitement de médecine nucléaire, on utilise de très petites quantités de produits faiblement radioactifs. Or, tous les organes ne réagissent pas de la même façon à ces rayonnements : certains tissus sont naturellement plus **fragiles** (on dit « radiosensibles »), d'autres beaucoup plus **résistants**. C'est un peu comme la peau : certaines zones bronzent vite au soleil, d'autres sont plus robustes.\n\nCette différence n'a rien d'inquiétant en soi : c'est une **connaissance médicale précieuse**. En sachant quels organes sont les plus délicats, votre équipe choisit le produit, la dose et les précautions de façon à les **protéger au mieux**, tout en obtenant les images dont votre médecin a besoin. Tout l'examen est pensé autour de cette idée : voir ce qu'il faut voir, en respectant votre corps.\n\nLes tissus les plus délicats sont par exemple ceux dont les cellules se renouvellent vite. Les os solides, les muscles ou les nerfs, eux, sont parmi les plus résistants. Connaître cette « carte de sensibilité » permet de personnaliser chaque examen.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Une science au service de votre sécurité",
+            "text": "Cette « carte de sensibilité » des organes est étudiée depuis plus d'un siècle. Elle sert aujourd'hui à régler chaque examen et chaque traitement pour qu'ils soient à la fois utiles et sûrs pour vous."
+          }
+        ]
+      },
+      {
+        "title": "Comment cette précaution se traduit pendant votre examen ?",
+        "text": "Vous n'avez rien de particulier à faire : c'est l'équipe qui s'occupe de tout. Mais en coulisses, plusieurs gestes simples visent justement à ménager les organes les plus sensibles. Selon l'examen, on peut vous demander de **bien boire** et d'**aller souvent aux toilettes** : cela aide votre corps à évacuer rapidement le produit et à protéger la vessie. Pour d'autres examens, on vous proposera par exemple de **sucer un bonbon acidulé ou un quartier de citron** pour faire travailler les glandes salivaires et les ménager.\n\nLes consignes vous sont toujours expliquées clairement à l'avance. Elles sont faciles à suivre et font partie du soin.",
+        "steps": [
+          {
+            "title": "Avant",
+            "text": "L'équipe choisit le produit et la quantité les mieux adaptés à votre situation (âge, poids, organe étudié) pour ménager les tissus les plus délicats."
+          },
+          {
+            "title": "Pendant",
+            "text": "On vous demande surtout de rester tranquille. La caméra ne vous touche pas et n'envoie aucun rayon vers vous : elle se contente d'enregistrer le faible signal du produit déjà présent dans votre corps."
+          },
+          {
+            "title": "Après",
+            "text": "On vous conseille souvent de boire abondamment et d'aller régulièrement aux toilettes : c'est la façon la plus simple d'aider votre corps à se débarrasser du produit."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le bon réflexe : poser vos questions",
+            "text": "Si une consigne vous surprend (boire beaucoup, sucer un bonbon acidulé...), demandez à quoi elle sert : elle vise presque toujours à protéger un organe sensible. Vous avez le droit de tout comprendre."
+          }
+        ]
+      },
+      {
+        "title": "Faut-il s'inquiéter pour ses organes ?",
+        "text": "La réponse est rassurante : **non**, pour un examen de diagnostic courant. Les quantités utilisées sont infimes et la radioactivité est faible et passagère : elle diminue d'elle-même et s'élimine naturellement. Les doses reçues lors d'un examen restent très loin des niveaux qui pourraient gêner le fonctionnement d'un organe. La connaissance de la sensibilité des tissus sert justement à garder une **large marge de sécurité**.\n\nLes situations qui demandent le plus d'attention sont d'une part la **grossesse** et l'**allaitement**, et d'autre part les **enfants**, dont le corps en croissance est plus sensible : dans ces cas, l'équipe adapte ou reporte l'examen, ou ajuste précisément la dose. C'est pourquoi il faut toujours signaler une grossesse possible ou un allaitement avant l'examen.\n\nDans les **traitements** par médecine nucléaire (plus rares que les examens d'images), des précautions supplémentaires sont prises pour surveiller spécifiquement les organes à ménager : tout est encadré et suivi de près.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Grossesse, allaitement, enfants : prévenez l'équipe",
+            "text": "Si vous êtes enceinte, pensez l'être, allaitez, ou s'il s'agit d'un enfant, dites-le toujours avant l'examen. Ce n'est pas forcément une contre-indication, mais l'équipe adaptera la dose et les précautions pour protéger les organes les plus sensibles."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Pourquoi la radiosensibilité concerne aussi le clinicien prescripteur",
+        "text": "La **radiosensibilité différentielle** des tissus — c'est-à-dire le fait que chaque organe réagit différemment aux rayonnements ionisants — n'est pas qu'une notion théorique de radiobiologie. C'est le socle qui sous-tend la **justification** et l'**optimisation** de tout examen ou traitement de médecine nucléaire. Pour le clinicien non nucléariste, elle éclaire trois questions concrètes du quotidien : quel patient orienter, avec quel niveau de prudence, et comment interpréter la balance bénéfice/risque.\n\nLe principe fondateur (loi de Bergonié et Tribondeau) est simple à retenir : un tissu est d'autant plus sensible que ses cellules se **divisent vite**, sont **peu différenciées** et ont un long avenir prolifératif. Cela explique pourquoi certaines populations et situations méritent une vigilance particulière.",
+        "list": [
+          "Tissus les plus sensibles : moelle osseuse (hématopoïèse), gonades, cristallin, muqueuse digestive, glandes salivaires, thyroïde — ce sont les organes que l'on cherche à ménager en priorité.",
+          "Tissus les plus résistants : os mature, muscle, neurones — cellules différenciées qui ne se divisent plus.",
+          "Patients à radiosensibilité majorée : femme enceinte (fœtus en organogenèse), enfant (organisme en croissance, espérance de vie longue), à signaler systématiquement.",
+          "C'est cette hiérarchie qui justifie d'adapter le choix du traceur, l'activité administrée et les précautions au cas par cas."
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Réflexe utile",
+            "text": "Avant d'adresser un patient pour un examen irradiant, deux réflexes suffisent : se demander si l'information attendue modifiera la prise en charge (justification), et signaler grossesse, allaitement, âge pédiatrique et traitements interférents. Le médecin nucléaire optimise ensuite la protection des organes sensibles."
+          }
+        ]
+      },
+      {
+        "title": "Quand y penser : du diagnostic au suivi des organes à risque",
+        "text": "En pratique diagnostique courante, les seuils d'atteinte tissulaire ne sont **jamais approchés** : la notion de radiosensibilité sert surtout à choisir le traceur le mieux toléré et à informer le patient. C'est en **thérapie radiométabolique** (radiothérapie interne vectorisée) que la radiosensibilité devient un déterminant direct de la décision et du suivi, car on y délivre des doses bien plus élevées à des organes ciblés ou de voisinage.\n\nLe clinicien orienteur a intérêt à connaître les organes à risque (OAR) propres à chaque traitement, car ils conditionnent les bilans préalables et la surveillance partagée.",
+        "list": [
+          "Traitement par iode 131 (cancer thyroïdien différencié, hyperthyroïdie) : organes à ménager = moelle osseuse et glandes salivaires (risque de sialadénite, sécheresse buccale).",
+          "Traitement des tumeurs neuroendocrines (177Lu-DOTATATE) : organes à risque = reins (organe dose-limitant) et moelle ; une fonction rénale altérée majore le risque.",
+          "Traitement du cancer de la prostate (177Lu-PSMA) : reins et glandes salivaires/lacrymales (xérostomie).",
+          "Suivi attendu : surveillance hématologique, fonction rénale, et symptômes de sécheresse buccale/oculaire selon le traitement.",
+          "Côté personnel et entourage : la limite de dose au cristallin du travailleur a été abaissée, ce qui illustre l'attention portée aux tissus sensibles dans toute la chaîne."
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez ou échangez avec le médecin nucléaire chaque fois que la radiosensibilité d'un organe pèse sur la décision : pour optimiser un examen chez une population sensible (enfant, femme jeune, grossesse à écarter), pour discuter l'indication d'un traitement par radionucléides dont l'efficacité se joue sur l'épargne des organes à risque (reins, moelle, glandes salivaires), ou pour organiser la surveillance partagée après thérapie. Une question clinique précise et le signalement des éléments de sécurité (grossesse, allaitement, fonction rénale, antécédents hématologiques, traitements interférents) permettent au médecin nucléaire d'optimiser la balance bénéfice/risque et de personnaliser la dosimétrie. En cas de doute sur la pertinence ou le moment de l'examen, un contact préalable est toujours utile."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identité — Radiosensibilité tissulaire & organes à risque",
+        "text": "**Comment lire cette carte.** Cet article ne décrit pas un radiopharmaceutique mais le **socle radiobiologique** qui sous-tend toute la médecine nucléaire : pourquoi un tissu est lésé par les rayonnements, lesquels le sont en premier, et comment cette hiérarchie se traduit en outils opérationnels — facteurs de pondération tissulaire **w_T** (effets stochastiques), seuils de **réactions tissulaires** (effets déterministes) et **organes à risque (OAR)** en thérapie radiométabolique. Les chiffres-phares ci-dessous sont les invariants à mémoriser ; ils sont détaillés et sourcés dans les sections suivantes et dans les articles dédiés (dosimétrie, radioprotection).\n\n| Champ | Valeur de référence |\n|---|---|\n| **Concept** | Radiosensibilité = aptitude relative d'une cellule/tissu à être lésé par les rayonnements ionisants |\n| **Loi fondatrice** | Bergonié & Tribondeau (1906) : sensibilité ∝ activité mitotique, ∝ avenir prolifératif, ∝ 1/différenciation [4,51] |\n| **Tissus les plus sensibles** | Moelle osseuse rouge, cryptes intestinales, gonades, épiderme basal, cristallin, tissu lymphoïde [7,52] |\n| **Tissus les plus résistants** | Neurones, muscle, os mature (cellules fixes postmitotiques) [10,52] |\n| **Cible critique** | ADN nucléaire — cassure double-brin (DSB) [6] |\n| **w_T le plus élevé (ICRP 103)** | 0,12 (moelle, côlon, poumon, estomac, sein, restants) [34] |\n| **Détriment nominal** | ≈ 5,7 × 10⁻² par Sv (population entière, ICRP 103) [34] |\n| **Seuil-phare déterministe** | Cataracte du cristallin : 0,5 Gy [7] |\n| **OAR-phares en thérapie** | Moelle (< 2 Gy, ¹³¹I), rein (23 Gy, ¹⁷⁷Lu-PRRT), glandes salivaires [23,49,50] |\n\n**Articulation conceptuelle.** La radiosensibilité différentielle alimente trois familles d'outils, à ne jamais confondre : (i) les **w_T** pondèrent les effets **stochastiques** sans seuil (calcul de la dose efficace, en sievert) ; (ii) les **seuils de réactions tissulaires** bornent les effets **déterministes** avec seuil (en gray, par organe) ; (iii) les **doses-limites aux OAR** encadrent la **thérapie** par radionucléides. Confondre dose efficace (mSv, stochastique, corps entier pondéré) et dose absorbée (Gy, déterministe, par organe) est l'erreur de raisonnement la plus fréquente.",
+        "stats": [
+          {
+            "value": "0,12",
+            "label": "w_T max (moelle, côlon, poumon, estomac, sein) [34]"
+          },
+          {
+            "value": "5,7 %/Sv",
+            "label": "Détriment nominal population (ICRP 103) [34]"
+          },
+          {
+            "value": "0,5 Gy",
+            "label": "Seuil cataracte du cristallin [7]"
+          },
+          {
+            "value": "< 2 Gy",
+            "label": "Dose-limite moelle en thérapie ¹³¹I [50]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "En imagerie diagnostique standard, les **seuils déterministes ne sont jamais atteints** chez le patient (doses de l'ordre du mSv au Gy local près des sources). La radiosensibilité y compte par son volet **stochastique** (w_T, optimisation ALARA). Les seuils déterministes ne deviennent cliniquement pertinents qu'en **thérapie radiométabolique** et pour l'**exposition du personnel** (cristallin notamment)."
+          }
+        ]
+      },
+      {
+        "title": "A2 - Définition & périmètre : radiosensibilité, radiorésistance, radiocurabilité",
+        "text": "La **radiosensibilité** désigne l'aptitude relative d'une cellule, d'un tissu ou d'un organe à subir des dommages — mort cellulaire, mutation, aberration chromosomique — sous l'effet des rayonnements ionisants. Elle se **quantifie** par la dose nécessaire pour produire un effet biologique donné : plus la dose requise est basse, plus le tissu est radiosensible.[6,52] La **radiorésistance** en est le pendant : un tissu radiorésistant tolère des doses élevées avant d'exprimer un dommage manifeste (neurones, muscle, os mature).[10,52]\n\nTrois notions doivent être distinguées avec rigueur, car elles ne se superposent pas :\n\n| Notion | Définition | Échelle | Exemple |\n|---|---|---|---|\n| **Radiosensibilité** | Propension intrinsèque d'un tissu à être lésé | Cellule / tissu | Moelle osseuse très radiosensible [7] |\n| **Radiorésistance** | Tolérance élevée avant dommage manifeste | Cellule / tissu | Neurone radiorésistant [52] |\n| **Radiocurabilité** | Possibilité d'éradiquer une tumeur sans détruire les tissus sains environnants | Tumeur dans son contexte | Dépend du différentiel tumeur/OAR |\n\nLa **radiocurabilité** est une notion clinique : une tumeur peut être radiosensible sans être radiocurable si elle est entourée d'organes encore plus sensibles, et inversement. C'est précisément ce différentiel — entre la cible et les **organes à risque (OAR)** — qui fonde la thérapie par radionucléides vectorisés.\n\n**Périmètre de cet article.** On couvre exclusivement les déterminants et les conséquences de la radiosensibilité différentielle : la loi fondatrice (§A3), les mécanismes lésionnels de l'ADN au tissu (§A4) et la cinétique de réponse précoce vs tardive (§A5). Le détail des w_T, des seuils déterministes chiffrés, de la dosimétrie interne et de la radioprotection appliquée relève des articles dédiés et des sections opérationnelles correspondantes.\n\n**Deux registres d'effets** structurent tout le champ et reposent sur la radiosensibilité :\n\n- **Effets stochastiques** (cancers radio-induits, effets héréditaires) : **sans seuil** (modèle linéaire sans seuil, LNT), probabilité croissante avec la dose mais gravité indépendante de la dose. Le coefficient de risque nominal ajusté au détriment est de **≈ 5,7 × 10⁻² par Sv** pour la population entière et **≈ 4,1 × 10⁻² par Sv** pour les travailleurs adultes (ICRP 103, 2007 ; méthodologie révisée ICRP 152, 2022).[11,34]\n- **Effets déterministes**, renommés **réactions tissulaires** par l'ICRP 118 (2012) : existence d'un **seuil** de dose, gravité croissante au-delà du seuil ; le terme « réaction tissulaire » a été préféré parce que ces effets sont modulables par des modificateurs biologiques.[7,8]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège terminologique",
+            "text": "Ne pas confondre **radiosensibilité** (propriété d'un tissu) et **détriment radiologique** (mesure du préjudice pour la radioprotection, intégrant fréquence, létalité et perte d'espérance de vie). Un tissu très radiosensible n'a pas forcément le **w_T** le plus élevé : le w_T reflète le détriment stochastique global, pas la seule propension à être lésé. Exemple : le cristallin est très radiosensible (cataracte dès 0,5 Gy) mais ne porte pas de w_T (effet déterministe, non cancéreux).[7,34]"
+          },
+          {
+            "type": "info",
+            "title": "Vocabulaire ICRP 118",
+            "text": "Depuis 2012, dire « **réactions tissulaires** » plutôt qu'« effets déterministes » : ce changement n'est pas cosmétique, il acte que ces effets à seuil peuvent être atténués par des modificateurs biologiques administrés après l'exposition.[7]"
+          }
+        ]
+      },
+      {
+        "title": "A3 - Loi de Bergonié-Tribondeau & déterminants cellulaires de la radiosensibilité",
+        "text": "La **loi de Bergonié & Tribondeau** (1906) est le fondement historique et toujours opérant : *la radiosensibilité d'un tissu est directement proportionnelle à l'activité mitotique de ses cellules et inversement proportionnelle à leur degré de différenciation*.[4,51] En d'autres termes, une cellule est d'autant plus radiosensible qu'elle **se divise vite**, qu'elle est **peu différenciée**, et qu'elle a un **avenir prolifératif long**.[5,52] Cette loi explique d'emblée pourquoi la moelle osseuse, les cryptes intestinales et les gonades sont en première ligne, et pourquoi le neurone mature — hautement différencié, post-mitotique — est le prototype du tissu radiorésistant.\n\n**Classification cinétique de Rubin & Casarett** — la traduction cellulaire moderne de la loi, du plus sensible au plus résistant :[10]\n\n| Type | Catégorie cellulaire | Caractéristique | Exemples | Radiosensibilité |\n|---|---|---|---|---|\n| **I — VIM** | Vegetative intermitotic | Souches en division régulière, indifférenciées | Moelle, cryptes intestinales, couche basale épidermique, spermatogonies | **Maximale** |\n| **II — DIM** | Differentiating intermitotic | En différenciation, divisions limitées | Spermatocytes, myélocytes | Élevée |\n| **III — RPM** | Reverting postmitotic | Différenciées, peuvent revenir au cycle | Foie, rein | Relative (réparateurs) |\n| **IV — FPM** | Fixed postmitotic | Hautement différenciées, sans division | Neurones, cellules musculaires | **Minimale** |\n\n**Modulation par le cycle cellulaire.** À type cellulaire donné, la radiosensibilité varie au fil du cycle : maximale en **mitose (M)** et en fin de **G2**, minimale en **phase S tardive** (deux copies d'ADN disponibles, réparation par recombinaison active). L'ordre croissant de résistance est : **M < G2 < G1 < S**.[6] C'est l'un des fondements du fractionnement en radiothérapie externe (redistribution dans le cycle), moins maniable en thérapie radiométabolique où l'irradiation est continue et à faible débit.\n\n**Modulation par l'âge — déterminant majeur en pratique.** Le conceptus et l'enfant sont nettement plus radiosensibles que l'adulte : organisme en croissance, forte fraction de cellules en mitose, et **espérance de vie plus longue** qui laisse au cancer radio-induit le temps de s'exprimer.[31,32] Le risque par sievert est ainsi très âge-dépendant : de l'ordre de **15 %/Sv pour une exposition avant 10 ans contre ≈ 1 %/Sv vers 60 ans** chez les survivants des bombardements (conversion dose→risque via BEIR VII).[31] Conséquence directe en médecine nucléaire pédiatrique : adaptation des activités par la **carte de dose EANM**, justification renforcée, préférence pour les modalités non irradiantes quand elles répondent à la question clinique.[16,18]\n\n**Synthèse des déterminants.** La radiosensibilité d'un tissu se modélise comme le produit de trois facteurs : **[nombre de cellules-cibles en cycle] × [1/capacité de réparation de l'ADN] × [1/capacité de repeuplement]**. Cette formulation prépare directement le passage à l'échelle tissulaire (§A4) et à la cinétique de réponse (§A5).[6]",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Trois leviers de réduction de dose — temps, distance, écran — illustrant l'application pratique du principe ALARA découlant de la radiosensibilité différentielle des tissus.",
+        "figureCaption": "Fig. 1 — La hiérarchie de radiosensibilité justifie l'optimisation (ALARA) : protéger d'abord les tissus de type I (moelle, gonades, cristallin).",
+        "stats": [
+          {
+            "value": "1906",
+            "label": "Loi de Bergonié & Tribondeau [4,51]"
+          },
+          {
+            "value": "M < G2 < G1 < S",
+            "label": "Ordre croissant de radiorésistance dans le cycle [6]"
+          },
+          {
+            "value": "≈ 15 %/Sv",
+            "label": "Risque cancer si exposition < 10 ans (vs ≈ 1 %/Sv à 60 ans) [31]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La loi de Bergonié-Tribondeau souffre d'**exceptions notables** : le **lymphocyte** est extrêmement radiosensible (apoptose en interphase) alors qu'il ne se divise pas activement, et l'**ovocyte mature** est sensible sans cycler. La radiosensibilité ne se réduit donc pas au taux de division : elle intègre aussi le **programme apoptotique** propre au type cellulaire."
+          }
+        ]
+      },
+      {
+        "title": "A4 - Mécanismes lésionnels : de l'ADN à l'effet tissulaire",
+        "text": "**(a) Du dépôt d'énergie à la lésion de l'ADN.** Le rayonnement ionisant dépose son énergie sous forme d'ionisations, qui endommagent la **molécule d'ADN nucléaire** — la cible critique. Deux voies coexistent :[6]\n\n- **Action directe** : ionisation directe de l'ADN ; elle prédomine pour les rayonnements à **transfert d'énergie linéique (TEL) élevé**, en particulier les particules **α**.\n- **Action indirecte** : radiolyse de l'eau générant des radicaux libres (le radical hydroxyle •OH au premier chef) qui attaquent l'ADN ; elle prédomine pour les rayonnements à **faible TEL** (γ, β⁻, X) et représente environ **deux tiers** des dommages induits par les photons.[6]\n\nCe point est central en médecine nucléaire : la majorité des traceurs diagnostiques (⁹⁹ᵐTc, ¹⁸F) et plusieurs vecteurs thérapeutiques (¹³¹I, ¹⁷⁷Lu, émetteurs β⁻) agissent surtout par **voie indirecte**, tandis que les émetteurs **α** (²²³Ra, ²²⁵Ac) misent sur l'action directe à TEL élevé et son efficacité biologique supérieure.\n\n**(b) Le spectre des lésions de l'ADN et leur réparation.** Toutes les lésions n'ont pas le même poids biologique :\n\n| Lésion | Réparabilité | Conséquence si mal réparée |\n|---|---|---|\n| Cassure **simple-brin** (SSB) | Aisée, fidèle | Le plus souvent sans suite |\n| Dommage de base / pontage | Réparation par excision | Mutation ponctuelle possible |\n| Cassure **double-brin (DSB)** | Difficile (NHEJ / recombinaison homologue) | **Aberration chromosomique, mort, mutation** |\n\nLa **cassure double-brin (DSB)** est la lésion la plus létale. Sa réparation par jonction d'extrémités non homologues (NHEJ) ou recombinaison homologue est sujette à erreurs : une DSB non ou mal réparée conduit à une **aberration chromosomique**, puis à l'un des devenirs cellulaires ci-dessous.[6]\n\n**(c) Les devenirs cellulaires.** Après irradiation, une cellule peut : (i) **réparer fidèlement** et survivre intacte ; (ii) mourir par **mort mitotique** (la plus fréquente, lors d'une division ultérieure, du fait d'aberrations) ; (iii) mourir par **apoptose** (mort programmée en interphase, prépondérante pour les lymphocytes) ; ou (iv) **survivre avec mutation**, événement fondateur de la cancérogenèse radio-induite (effet stochastique).[6]\n\n**(d) Du cellulaire au tissulaire — la formule de la radiosensibilité.** L'effet tissulaire intègre trois propriétés : le **nombre de cellules-cibles en cycle**, la **capacité de réparation de l'ADN** et la **capacité de repeuplement** du tissu. Un tissu très sensible (type I de Rubin-Casarett) cumule beaucoup de cellules cyclantes et une réparation limitée ; un tissu résistant (type IV) en est dépourvu. Cette modélisation explique la double traduction réglementaire : la voie **stochastique** (DSB → mutation → cancer, sans seuil, pondérée par w_T) et la voie **déterministe** (déplétion d'un pool de cellules-cibles au-delà d'un seuil → réaction tissulaire).[6,7]",
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Types d'émission radioactive (alpha, bêta, gamma) et leur transfert d'énergie linéique relatif, déterminant la prédominance de l'action directe (TEL élevé, alpha) ou indirecte (faible TEL, bêta/gamma) sur l'ADN.",
+        "figureCaption": "Fig. 2 — Le type d'émission (α haut-TEL / β-γ bas-TEL) gouverne l'équilibre entre action directe et action indirecte sur l'ADN.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — α vs β en théranostique",
+            "text": "Les émetteurs **α** (²²³Ra, ²²⁵Ac) déposent leur énergie sur un parcours micrométrique avec un **TEL très élevé** : densité d'ionisations et taux de DSB par traversée bien supérieurs aux émetteurs β⁻, d'où une efficacité biologique relative (EBR) plus grande et une moindre dépendance à l'oxygène. Cela modifie le raisonnement OAR : la **micro-dosimétrie** prime sur la dose absorbée moyenne à l'organe."
+          },
+          {
+            "type": "info",
+            "title": "Repère mécanistique",
+            "text": "La hiérarchie SSB → DSB → aberration chromosomique → mort/mutation est le fil rouge reliant la physique (dépôt d'énergie) à la clinique (réaction tissulaire et cancer). La **DSB non réparée** est le verrou : c'est le nombre de DSB par cellule, et leur réparabilité, qui fait la radiosensibilité."
+          }
+        ]
+      },
+      {
+        "title": "A5 - Cinétique de réponse : tissus à réponse précoce vs tardive",
+        "text": "La radiosensibilité ne dit pas seulement *combien* un tissu est lésé, mais aussi *quand* la lésion s'exprime. On oppose classiquement les tissus à **réponse précoce** et à **réponse tardive**, distinction qui découle directement de la cinétique cellulaire (§A3) et conditionne la temporalité des **réactions tissulaires** (§A4).\n\n| Critère | Tissus à réponse **précoce** | Tissus à réponse **tardive** |\n|---|---|---|\n| Cinétique cellulaire | Renouvellement rapide (type I VIM) | Renouvellement lent (type III RPM, IV FPM) |\n| Exemples | Moelle, muqueuse digestive, épiderme basal, spermatogonies | Rein, foie, poumon, tissu nerveux, os mature |\n| Délai d'expression | Jours à semaines | Mois à années |\n| Mécanisme dominant | Déplétion des cellules souches/fonctionnelles | Atteinte vasculaire et stromale, fibrose |\n| Réversibilité | Souvent réversible (repeuplement) | Souvent peu/non réversible |\n\n**Tissus à réponse précoce.** Leur dommage apparaît rapidement parce que les cellules fonctionnelles, à durée de vie courte, ne sont plus remplacées : la **dépression hématopoïétique** suit l'irradiation médullaire, la **mucite/diarrhée** suit l'atteinte des cryptes, l'**érythème/dépilation** suit l'atteinte de la couche basale. Ces effets surviennent en **jours à semaines** et sont volontiers réversibles si le pool de cellules souches survivantes permet le repeuplement.[7,10]\n\n**Tissus à réponse tardive.** Leur dommage s'exprime en **mois à années** : la **cataracte** du cristallin (suivi > 20 ans), la **néphropathie** radique, la **fibrose** pulmonaire ou hépatique, l'atteinte du système nerveux. Le mécanisme y est davantage **vasculo-stromal** que lié au seul épuisement parenchymateux, ce qui le rend peu réversible.[7] En médecine nucléaire, le **cristallin** illustre la dimension tardive et a fondé un changement réglementaire majeur — sa pertinence touche au premier chef le **personnel** manipulant les sources.\n\n**Cinétique et organes à risque en thérapie radiométabolique.** Cette dichotomie structure la définition des OAR : la **moelle** (réponse précoce) limite à court terme par l'hématotoxicité subaiguë, tandis que le **rein** (réponse tardive) limite à long terme par une néphropathie qui peut n'apparaître que des mois après le traitement.[33] En PRRT (peptide receptor radionuclide therapy) au ¹⁷⁷Lu-DOTATATE, c'est le plus souvent le **rein** qui atteint son seuil avant la moelle, d'où le rationnel de la néphroprotection par perfusion d'acides aminés et d'une dosimétrie individualisée.[23,49] La cinétique de réponse impose donc un **double horizon de surveillance** : hématologique à court terme, rénal/fibrotique à long terme.",
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique imager-traiter-réévaluer, illustrant le suivi des organes à risque à double horizon temporel : toxicité précoce (moelle) et toxicité tardive (rein) en thérapie par radionucléides.",
+        "figureCaption": "Fig. 3 — La cinétique de réponse impose un suivi des OAR à double horizon : moelle (précoce) puis rein (tardif) le long de la boucle théranostique.",
+        "stats": [
+          {
+            "value": "Jours–semaines",
+            "label": "Délai d'expression des tissus à réponse précoce [7,10]"
+          },
+          {
+            "value": "Mois–années",
+            "label": "Délai d'expression des tissus à réponse tardive [7]"
+          },
+          {
+            "value": "> 20 ans",
+            "label": "Fenêtre de suivi de la cataracte radique [7]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "En thérapie radiométabolique, ne pas raisonner sur un seul horizon : un bilan hématologique rassurant à court terme **n'exclut pas** une néphrotoxicité tardive. La moelle (précoce) et le rein (tardif) doivent être surveillés selon des calendriers distincts ; la toxicité hématologique subaiguë post-PRRT est un marqueur direct de radiosensibilité médullaire et appelle un suivi prolongé.[33]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — extrapoler la radiothérapie externe",
+            "text": "Les seuils de tolérance des OAR (ex. rein 23 Gy) sont historiquement **extrapolés de la radiothérapie externe**, à débit de dose élevé et fractionné. La thérapie par radionucléides délivre une irradiation **continue à faible débit**, où la réparation inter-lésionnelle est plus efficace : appliquer tels quels les seuils externes peut sous-estimer la tolérance réelle. D'où le mouvement vers une **dosimétrie individualisée** plutôt que des limites fixes.[23,49]"
+          }
+        ]
+      },
+      {
+        "title": "B1 - Du physique au biologique : doses absorbée, équivalente, efficace en MN",
+        "text": "**Trois grandeurs, trois usages.** Toute la radioprotection en médecine nucléaire (MN) repose sur l'enchaînement rigoureux de trois grandeurs dosimétriques qu'il ne faut jamais confondre — le piège récurrent étant d'appliquer un raisonnement « dose efficace » à un problème de toxicité d'organe en thérapie (cf. B4).[34]\n\n**(a) Dose absorbée D (gray, Gy = J/kg).** Grandeur physique fondamentale : énergie déposée par unité de masse dans un tissu, indépendante de la nature du rayonnement. C'est la seule grandeur **mesurable/calculable directement** et la seule pertinente pour les **réactions tissulaires (effets déterministes)** : c'est en Gy à l'organe que l'on raisonne en thérapie radiométabolique (2 Gy moelle, 23 Gy rein — cf. B4).[7][8]\n\n**(b) Dose équivalente H_T (sievert, Sv).** H_T = Σ_R w_R · D_T,R, où **w_R** est le facteur de pondération radiologique traduisant la nocivité biologique relative selon le transfert d'énergie linéique (TEL). En MN courante (γ, X, β⁻, β⁺) **w_R = 1** ; pour les **particules α** (ex. ²²³Ra, ²²⁵Ac) **w_R = 20** ; neutrons : 2,5 à 20 selon l'énergie.[34][35] Conséquence pratique : 1 Gy d'émetteur α au tissu = 20 Sv de dose équivalente — d'où l'efficacité biologique majeure des émetteurs α en théranostique.\n\n**(c) Dose efficace E (Sv).** E = Σ_T w_T · H_T, somme pondérée sur tous les organes par les **facteurs de pondération tissulaire w_T (ICRP 103)** détaillés en B2. C'est une grandeur **de radioprotection, conventionnelle**, conçue pour gérer les **effets stochastiques** (cancer, effets héréditaires) du corps entier et pour comparer des expositions hétérogènes. Elle n'est **pas** une mesure de risque individuel.[34][35]\n\n| Grandeur | Symbole | Unité (SI) | Pondération | Effet visé | Usage en MN |\n|---|---|---|---|---|---|\n| Dose absorbée | D_T | gray (Gy) | aucune | déterministe | dosimétrie thérapeutique (Gy/organe) |\n| Dose équivalente | H_T | sievert (Sv) | w_R (rayonnement) | stochastique | exposition d'organe pondérée |\n| Dose efficace | E | sievert (Sv) | w_T (tissu) | stochastique | dose patient diagnostique, comparaison [34] |\n\n**Du physique au biologique.** Le dépôt physique (Gy) devient risque biologique parce que les tissus n'ont pas la même radiosensibilité : la même dose absorbée à la moelle rouge et au cerveau ne porte pas le même détriment. Les w_T (B2) sont précisément la traduction réglementaire de cette **radiosensibilité différentielle** des tissus. Le **coefficient de risque nominal ajusté au détriment** vaut **5,7 % par Sv** pour la population entière (cancer + effets héréditaires) et **~4,1 % par Sv** pour les travailleurs adultes (méthodologie révisée par l'ICRP 152, 2022).[11][34][35]\n\n**Application en MN diagnostique.** Pour un radiopharmaceutique, la dose patient se calcule via le **coefficient de dose efficace (mSv/MBq)** propre au traceur (compendium ICRP 128), multiplié par l'activité administrée : E = coefficient × A.[13] Exemple : ¹⁸F-FDG (coefficient **0,019 mSv/MBq**) à **350 MBq** → **≈ 6,7 mSv**, à quoi s'ajoute la dose TDM du TEP-TDM (souvent 3–15 mSv selon protocole).[13][15]",
+        "stats": [
+          {
+            "value": "5,7 %/Sv",
+            "label": "Détriment nominal population (ICRP 103)"
+          },
+          {
+            "value": "w_R = 20",
+            "label": "Facteur de pondération des particules α"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Coefficient de dose efficace du ¹⁸F-FDG (ICRP 128)"
+          },
+          {
+            "value": "≈ 6,7 mSv",
+            "label": "E pour 350 MBq de ¹⁸F-FDG (hors TDM)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — ne jamais appliquer w_T à la thérapie",
+            "text": "La dose efficace E (mSv, pondérée par w_T) est un outil de **radioprotection des effets stochastiques** du corps entier. En **thérapie radiométabolique**, ce sont des effets **déterministes** d'organe (réactions tissulaires) qui limitent le traitement : on raisonne en **dose absorbée (Gy) à l'organe à risque** (moelle, rein, glandes salivaires — cf. B4), jamais en dose efficace. Confondre les deux conduit à des contraintes de traitement erronées.[34][7]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la dose efficace n'est pas un risque individuel",
+            "text": "E est calculée avec des **w_T moyennés** sur les deux sexes et tous les âges, sur des **fantômes de référence** ICRP. Elle sert à **comparer et optimiser** des protocoles (ALARA), pas à estimer le risque d'un patient donné. Pour un risque individualisé, il faut repartir des **doses absorbées aux organes** et de coefficients risque/dose dépendant de l'âge et du sexe (BEIR VII).[34][35]"
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma des types de désintégration (α, β⁻, β⁺, γ) reliant le mode d'émission au facteur de pondération radiologique w_R et au transfert d'énergie linéique."
+      },
+      {
+        "title": "B2 - Facteurs de pondération tissulaire wT (ICRP 103) : lecture et usage",
+        "text": "**Définition et rôle.** Le facteur de pondération tissulaire **w_T** quantifie la contribution relative de chaque organe au **détriment total** lié aux effets stochastiques (cancers radio-induits + effets héréditaires). Il est la traduction réglementaire de la **radiosensibilité différentielle** des tissus. Par construction **Σ w_T = 1,00**, et la dose efficace s'écrit **E = Σ w_T · H_T** (en Sv).[1][34][36] Les valeurs en vigueur sont celles de l'**ICRP 103 (2007)**, qui ont remplacé celles de l'ICRP 60 (1990).\n\n| w_T (ICRP 103, 2007) | Organes / tissus |\n|---|---|\n| **0,12** | Moelle osseuse (rouge), Côlon, Poumon, Estomac, Sein, **Tissus restants** (reste, 13–14 organes) |\n| **0,08** | Gonades |\n| **0,04** | Vessie, Œsophage, Foie, Thyroïde |\n| **0,01** | Surface osseuse, Cerveau, Glandes salivaires, Peau |\n\nSource : ICRP 103, table de référence.[1][2][34] Le groupe **« tissus restants »** (w_T global 0,12, réparti à parts égales) comprend : surrénales, région extrathoracique, vésicule biliaire, cœur, rein, ganglions lymphatiques, muscle, muqueuse buccale, pancréas, prostate (♂) / utérus-col (♀), intestin grêle, rate, thymus.[1][34]\n\n**Évolution ICRP 60 → ICRP 103 (recalibrage radiobiologique).** Trois changements structurent la lecture moderne :[3][36][34]\n\n| Tissu | ICRP 60 (1990) | ICRP 103 (2007) | Sens |\n|---|---|---|---|\n| **Sein** | 0,05 | **0,12** | hausse — radiosensibilité mammaire réévaluée, surtout sujet jeune |\n| **Gonades** | 0,20 | **0,08** | baisse — risque héréditaire estimé revu fortement à la baisse |\n| **Thyroïde** | 0,05 | **0,04** | légère baisse |\n| Glandes salivaires, Cerveau | (dans le reste) | **0,01** chacun | introduits explicitement |\n\nLa réévaluation du **sein à 0,12** et la chute des **gonades à 0,08** sont les deux faits saillants à retenir : ils déplacent le poids du détriment vers les tissus à forte prolifération réellement cancérogènes, et abaissent la contribution héréditaire conformément aux données épidémiologiques (descendance des survivants A-bomb).[3][36]\n\n**Usage concret en MN.** Les compendia de dose patient (ICRP 53/80/106, synthétisés par **ICRP 128, 2015**) appliquent ces w_T 2007 aux modèles biocinétiques de chaque radiopharmaceutique et aux fantômes voxel ICRP, pour fournir le **coefficient de dose efficace (mSv/MBq)** utilisé en routine (cf. B1, B3).[13][39] Le choix d'un traceur, à indication égale chez un sujet jeune ou une femme, peut intégrer le **w_T cumulé des organes les plus exposés** (ALARA).[34]",
+        "stats": [
+          {
+            "value": "Σ w_T = 1,00",
+            "label": "Somme normalisée (ICRP 103)"
+          },
+          {
+            "value": "0,12",
+            "label": "w_T moelle rouge, côlon, poumon, estomac, sein"
+          },
+          {
+            "value": "0,20 → 0,08",
+            "label": "Gonades : effondrement du poids héréditaire (ICRP 60→103)"
+          },
+          {
+            "value": "0,05 → 0,12",
+            "label": "Sein : radiosensibilité réévaluée à la hausse"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — w_T n'est pas un classement de radiosensibilité pure",
+            "text": "Un w_T élevé combine **radiosensibilité intrinsèque** ET **létalité/incidence** du cancer correspondant. Ainsi le côlon (0,12) n'est pas plus « radiosensible » que la moelle au sens cellulaire, mais son cancer pèse lourd dans le détriment. À l'inverse, les **gonades** restent biologiquement très radiosensibles (stérilité dès 0,1 Gy au testicule — cf. B4) malgré un w_T abaissé à 0,08, car celui-ci ne pondère que le risque **héréditaire**.[34][36]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi 0,12 pour les « tissus restants »",
+            "text": "Le bloc « remainder » reçoit globalement 0,12 réparti sur ~13 organes individuellement peu radiosensibles. Cette astuce de normalisation garantit Σ w_T = 1 sans multiplier les coefficients minuscules. Lors d'un calcul de dose efficace d'un radiopharmaceutique à forte fixation splénique ou rénale (²²³Ra, ⁶⁸Ga-DOTATATE, PSMA), la rate et le rein contribuent **via ce groupe restant**, pas par un w_T propre.[1][34]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma de hiérarchie des facteurs de pondération tissulaire w_T de l'ICRP 103, du plus élevé (0,12) au plus faible (0,01), illustrant la radiosensibilité différentielle des organes."
+      },
+      {
+        "title": "B3 - Cartographie des organes à risque en médecine nucléaire diagnostique",
+        "text": "**Principe de la cartographie.** En imagerie diagnostique, l'**organe critique** d'un radiopharmaceutique est celui qui reçoit la **dose absorbée la plus élevée**, déterminée par la biocinétique du traceur (captation spécifique, voie d'excrétion, organe de stockage transitoire). Aux activités diagnostiques, les **seuils des réactions tissulaires ne sont jamais atteints** chez le patient : le risque est purement **stochastique**, géré par la dose efficace (B1–B2). L'organe critique guide néanmoins la préparation (hydratation, vidange vésicale) et l'optimisation.[13][14]\n\n**Coefficients de dose efficace et organe critique (ICRP 128, 2015) :**[13][39]\n\n| Radiopharmaceutique | E (mSv/MBq) | Organe critique | Voie / mécanisme |\n|---|---|---|---|\n| **¹⁸F-FDG** | **0,019** | **Vessie (paroi)** | excrétion urinaire |\n| **⁶⁸Ga-DOTATATE** | **0,021–0,024** | **Rate** ; reins, vessie | SSTR + clairance rénale [45] |\n| **⁶⁸Ga-PSMA-11** | **0,022–0,030** | **Reins** ; glandes lacrymales/salivaires | excrétion + expression PSMA [46][47] |\n| **¹⁸F-NaF (os)** | ~0,017–0,024 | Vessie / surface osseuse | excrétion + fixation osseuse |\n| **⁹⁹ᵐTc-MDP/HDP (os)** | ~0,005–0,006 | Surface osseuse / vessie | adsorption osseuse |\n| **⁹⁹ᵐTc-MIBI (repos)** | ~0,009 | Paroi vésiculaire / côlon | excrétion hépatobiliaire |\n| **⁹⁹ᵐTc-DMSA** | ~0,0088 | **Cortex rénal** | fixation tubulaire |\n| **¹²³I-iodure** | ~0,1–0,2 | **Thyroïde** | captation NIS |\n| **¹³¹I-iodure (diagnostic)** | élevé | **Thyroïde** | captation NIS + β⁻ |\n| **⁶⁷Ga-citrate** | ~0,1 | Côlon / os | excrétion digestive |\n\nOrdre de grandeur clinique : **¹⁸F-FDG 350 MBq → ~6–7 mSv** (organe le plus exposé = la **vessie**) ; le TEP-TDM ajoute la dose TDM.[13][15]\n\n**Lecture par radiosensibilité.** Croiser cette cartographie avec les w_T (B2) hiérarchise les priorités d'optimisation : la **vessie** (w_T 0,05) du FDG/NaF, la **thyroïde** (w_T 0,04) des iodures, le **côlon** (w_T 0,12) du ⁶⁷Ga. La rate (PSMA/DOTATATE) et le rein (DMSA, PSMA), bien que fortement dosés, ne contribuent à E que via le groupe **« tissus restants »** (cf. B2).[13][34]\n\n**Niveaux de Référence Diagnostiques (NRD), France.** Les NRD encadrent l'optimisation : pour le **TEP-FDG adulte**, NRD ≈ **350 MBq** (décision ASN **2019-DC-0667**, homologuée par arrêté du 23 mai 2019 ; collecte/analyse IRSN-ASNR).[53][54]\n\n**Pédiatrie — radiosensibilité majorée.** L'enfant est nettement plus radiosensible (forte fraction de cellules en mitose, espérance de vie longue) : risque de cancer radio-induit **~15 %/Sv pour une exposition avant 10 ans vs ~1 %/Sv à 60 ans** (survivants A-bomb).[31][32] Les activités sont donc indexées sur la masse via la **carte de dosage pédiatrique EANM** (dernière mise à jour août 2016) : activité = activité de base × multiple lié au poids, avec activités minimales garantissant la qualité d'image, ce qui rend la dose efficace pédiatrique quasi indépendante du poids.[16][17][18]",
+        "stats": [
+          {
+            "value": "Vessie",
+            "label": "Organe critique du ¹⁸F-FDG"
+          },
+          {
+            "value": "Reins",
+            "label": "Organe critique du ⁶⁸Ga-PSMA-11"
+          },
+          {
+            "value": "≈ 350 MBq",
+            "label": "NRD français du TEP-FDG adulte (ASN 2019-DC-0667)"
+          },
+          {
+            "value": "~15 %/Sv",
+            "label": "Risque cancer radio-induit, exposition < 10 ans"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1. Identifier l'organe critique du traceur",
+            "text": "Selon biocinétique : vessie (FDG, NaF), thyroïde (iodures), cortex rénal (DMSA), rate (DOTATATE), reins (PSMA). Source ICRP 128.[13]"
+          },
+          {
+            "title": "2. Optimiser l'activité administrée",
+            "text": "Adulte : respecter le NRD (≈350 MBq pour le FDG TEP, ASN 2019-DC-0667).[53] Enfant : carte de dosage EANM indexée sur la masse.[16][18]"
+          },
+          {
+            "title": "3. Réduire la dose à l'organe critique",
+            "text": "Pour les traceurs à excrétion urinaire (FDG, NaF) : hydratation + mictions fréquentes → vidange vésicale, réduisant la dose à la **vessie** ET aux **gonades** adjacentes.[15][42]"
+          },
+          {
+            "title": "4. Mettre en perspective",
+            "text": "Comparer la dose efficace (≈6–7 mSv pour un FDG) au fond naturel (~2,4 mSv/an) et à la TDM associée, pour la justification et l'information patient.[15]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — la dose à la vessie dépend du modèle de fantôme et de la miction",
+            "text": "L'estimation de la dose vésicale du ¹⁸F-FDG varie selon le **fantôme** (Cristy-Eckerman vs maillage ICRP 2021) et surtout selon l'**intervalle de miction** supposé. Une vessie vidée fréquemment reçoit nettement moins : l'hydratation et la miction avant acquisition sont la mesure ALARA la plus efficace pour cet organe critique.[40][15]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — choisir le traceur selon l'organe critique chez le sujet à risque",
+            "text": "Chez la femme jeune ou l'enfant, à indication équivalente, intégrer l'organe critique et son w_T : préférer un traceur à faible dose efficace (FDG 0,019) et veiller à la protection de la vessie/gonades ; surveiller spécifiquement reins et glandes salivaires/lacrymales avec les ligands **PSMA**.[13][46]"
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Cartographie de biodistribution du ¹⁸F-FDG montrant la vessie comme organe critique par excrétion urinaire, avec captation physiologique cérébrale, myocardique et rénale."
+      },
+      {
+        "title": "B4 - Organes à risque en thérapie isotopique (RIT/PRRT/iode/radium)",
+        "text": "**Changement de paradigme.** En thérapie radiométabolique (radionucléide therapy, RNT ; peptide receptor radionuclide therapy, PRRT ; radio-iode), on délivre volontairement des **doses absorbées élevées (Gy)** à la tumeur. Le facteur limitant n'est plus le risque stochastique mais les **réactions tissulaires (effets déterministes, ICRP 118, 2012)** des organes sains : seuil de dose, gravité croissante au-delà. On raisonne en **dose absorbée à l'organe à risque (OAR)**, jamais en dose efficace (cf. B1).[7][8]\n\n**Seuils de réactions tissulaires (ICRP 118, 2012) — repères généraux :**[7][8]\n\n| Tissu / effet | Seuil (dose absorbée) |\n|---|---|\n| **Cristallin — cataracte** | **0,5 Gy** (suivi > 20 ans ; vs 2–5 Gy auparavant) |\n| **Moelle osseuse — dépression hématopoïétique** | **0,5 Gy** aigu ; ~0,4 Gy/an chronique |\n| **Testicules — stérilité** | **~0,1 Gy** (temporaire) ; ~6 Gy (permanente) |\n| **Ovaires — stérilité permanente** | **~2,5–6 Gy** (adulte) |\n| **Peau — érythème / desquamation** | ~3–6 Gy / > 10 Gy |\n\nConséquence réglementaire majeure : abaissement de la **limite de dose équivalente au cristallin du travailleur de 150 → 20 mSv/an** (moyenne sur 5 ans, max 50 mSv une année) — pertinent pour les manipulateurs préparant/injectant les seringues (proximité mains-yeux).[7][9][37]\n\n**Contraintes aux OAR en thérapie par radionucléides (EANM/SNMMI) :**\n\n**▸ ¹³¹I — cancer thyroïdien différencié / hyperthyroïdie.** OAR dose-limitant = **moelle osseuse** : limiter la dose au sang/moelle à **< 2 Gy** ; rétention corps entier **< 4,4 GBq (120 mCi) à 48 h**.[50] **Glandes salivaires** (OAR majeur, concentrent l'iode via le NIS) : dose absorbée parotides **0,04–0,97 Gy/GBq (médiane 0,26)**, sous-maxillaires médiane **0,14 Gy/GBq** ; sialadénite jusqu'à ~20 % des patients (dose-dépendante), xérostomie ; atteinte lacrymale → épiphora.[27][28] Activités d'ablation usuelles 1,1–1,85 GBq (30–50 mCi).[26]\n\n**▸ ¹⁷⁷Lu-DOTATATE (PRRT des tumeurs neuroendocrines) — essai NETTER-1.** OAR dose-limitant = **reins** (seuil conservateur **23 Gy** extrapolé de la radiothérapie externe) ; **moelle 2 Gy**.[23][49] Schéma pivot : **7,4 GBq × 4 cycles (toutes 8 semaines)** vs octréotide LAR ; survie sans progression HR **0,18** (IC95 % 0,11–0,29 ; p < 0,0001).[25] Sous-étude dosimétrique : moyenne **rein 19,4 Gy** et **moelle 1,0 Gy** sur 4 cycles, sous les seuils ; quelques patients 28–33 Gy avec toxicité légère seulement.[48] Dans 197/200 patients d'une cohorte dosimétrique, le rein atteint 23 Gy **avant** que la moelle n'atteigne 2 Gy → rein dose-limitant.[49] **Néphroprotection impérative par acides aminés (lysine/arginine)** en co-perfusion.[24][49] L'hématotoxicité subaiguë post-PRRT est un marqueur direct de la radiosensibilité médullaire.[33]\n\n**▸ ⁶⁸Ga/¹⁷⁷Lu-PSMA (cancer de la prostate).** OAR principal = **reins** ; OAR dose-limitant **fonctionnel** = **glandes salivaires et lacrymales** (xérostomie, par fixation PSMA spécifique).[46][47]\n\n**▸ Émetteurs α (²²³Ra-dichlorure, théranostique α émergent).** w_R = 20 (cf. B1) : TEL très élevé, DSB groupées peu réparables, parcours micrométrique épargnant la moelle voisine — d'où le profil hématologique favorable du ²²³Ra ciblant l'os.[34]",
+        "stats": [
+          {
+            "value": "< 2 Gy",
+            "label": "Dose moelle/sang limite en thérapie ¹³¹I [50]"
+          },
+          {
+            "value": "23 Gy",
+            "label": "Seuil rénal conservateur en PRRT ¹⁷⁷Lu [49]"
+          },
+          {
+            "value": "HR 0,18",
+            "label": "SSP du ¹⁷⁷Lu-DOTATATE vs octréotide (NETTER-1) [25]"
+          },
+          {
+            "value": "0,5 Gy",
+            "label": "Seuil cataracte (ICRP 118) ; limite cristallin pro 20 mSv/an [7]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1. Sélection théranostique",
+            "text": "Confirmer l'expression de la cible par imagerie appariée (⁶⁸Ga-DOTATATE pour SSTR, ⁶⁸Ga-PSMA-11 pour PSMA, ¹²³I/¹²⁴I pour le NIS) avant tout traitement.[45][47]"
+          },
+          {
+            "title": "2. Dosimétrie pré- et per-thérapeutique",
+            "text": "Estimer la dose aux OAR (rein, moelle, glandes salivaires) par SPECT/CT post-injection ou TEP pré-thérapeutique, pour rester sous les seuils (2 Gy moelle / 23 Gy rein).[23][48]"
+          },
+          {
+            "title": "3. Néphro- et radioprotection per-traitement",
+            "text": "PRRT : co-perfusion d'acides aminés (lysine/arginine). ¹³¹I : stimulation salivaire (jus de citron, bonbons acidulés), hydratation, mictions fréquentes pour réduire la dose salivaire et vésicale.[27][49]"
+          },
+          {
+            "title": "4. Réévaluation et suivi de toxicité",
+            "text": "Surveillance hématologique (hématotoxicité subaiguë = marqueur de radiosensibilité médullaire) et de la fonction rénale/salivaire ; adapter ou poursuivre les cycles selon dose cumulée.[33]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — le seuil rénal fixe de 23 Gy est probablement trop bas",
+            "text": "La valeur **23 Gy** est extrapolée de la radiothérapie externe (débit de dose très différent de la PRRT, où l'effet de réparation joue). Des données récentes plaident pour une **dosimétrie individualisée** (SPECT/CT répétés) plutôt qu'une limite fixe, certains patients tolérant 28–33 Gy sans toxicité significative. Ne pas refuser un cycle utile sur la seule foi du seuil moyen.[48][49]"
+          },
+          {
+            "type": "warning",
+            "title": "Precaution — grossesse et allaitement en thérapie isotopique",
+            "text": "La thérapie est **contre-indiquée pendant la grossesse** : le ¹³¹I franchit le placenta et est capté par la thyroïde fœtale dès ~10–12 SA (hypothyroïdie/ablation fœtale ; risque de cancer et de malformations en organogenèse).[30] Allaitement : **arrêt définitif** pour le ¹³¹I-NaI ; pour le diagnostic, interruptions variables selon le traceur (ex. ⁹⁹ᵐTc-pertechnétate 12 h ; aucune pour ⁹⁹ᵐTc-sestamibi), dose-cible nourrisson < 1 mSv (ICRP 106).[29][30]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — boucle théranostique « imager-traiter-réévaluer »",
+            "text": "La radiosensibilité différentielle fonde la logique théranostique : on **visualise** l'expression de la cible (NIS, SSTR2, PSMA) avec un isotope diagnostique, on **traite** avec l'isotope thérapeutique apparié en surveillant les OAR par dosimétrie (rein, moelle, glandes salivaires), puis on **réévalue** la réponse et la toxicité avant le cycle suivant.[25][45][47]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique imager-traiter-réévaluer reliant l'imagerie de sélection (cible exprimée) à la thérapie par radionucléides sous contrainte de dose aux organes à risque (rein, moelle, glandes salivaires)."
+      },
+      {
+        "title": "C1 - Effets déterministes : seuils, tissus cibles et expression clinique",
+        "text": "**Comment lire une exposition sous l'angle déterministe.** Les **effets déterministes** — rebaptisés **réactions tissulaires** par la CIPR/ICRP (Commission internationale de protection radiologique) dans sa **Publication 118 (2012)** — sont des effets à **seuil** : en deçà d'une dose absorbée caractéristique, l'effet ne s'exprime pas cliniquement ; au-delà, sa **gravité croît avec la dose** [7,8]. Ce profil les oppose terme à terme aux effets stochastiques (§C2) et découle directement de leur mécanisme : ils traduisent la **mort d'une population suffisante de cellules-cibles** d'un tissu, là où l'effet stochastique naît d'une seule cellule survivante mutée. Le terme « réaction tissulaire » a été préféré parce que ces effets sont **modulables** par des modificateurs biologiques (réparation, repeuplement, agents protecteurs/sensibilisants) [7,8].\n\nLe socle conceptuel est la **loi de Bergonié & Tribondeau (1906)** : la radiosensibilité d'un tissu est d'autant plus grande que ses cellules sont **peu différenciées**, à **fort taux de division** (activité mitotique élevée) et à **avenir prolifératif long** [4,5,51]. La hiérarchie de Rubin & Casarett précise la cinétique : les cellules **VIM** (vegetative intermitotic — souches indifférenciées en division régulière : moelle, cryptes intestinales, couche basale épidermique, spermatogonies) sont les **plus radiosensibles**, les cellules **FPM** (fixed postmitotic — neurones, fibres musculaires) les **plus radiorésistantes** [10,52]. C'est pourquoi les organes à risque (OAR) déterministes en médecine nucléaire (MN) sont presque toujours des tissus à renouvellement rapide : **moelle hématopoïétique, gonades, épithélium des glandes salivaires, cristallin**.\n\n**Seuils de référence des réactions tissulaires (ICRP 118, 2012).** Plusieurs seuils ont été abaissés par rapport aux estimations antérieures, en particulier pour le cristallin et les pathologies circulatoires :\n\n| Tissu / effet | Seuil (dose absorbée) | Particularité | Source |\n|---|---|---|---|\n| **Cristallin — cataracte** (opacités altérant la vision) | **0,5 Gy** | Latence > 20 ans ; quasi indépendant du débit de dose | [7,8,37] |\n| **Moelle osseuse — dépression hématopoïétique** | **0,5 Gy** (aigu) ; **0,4 Gy/an** (chronique) | Lymphopénie précoce, marqueur le plus sensible | [7,8] |\n| **Testicule — stérilité temporaire** | **~0,1 Gy** | Spermatogonies = cible la plus radiosensible de l'organisme | [7,8] |\n| **Testicule — stérilité permanente** | **~6 Gy** | Atteinte des spermatogonies souches | [7,8] |\n| **Ovaire — stérilité permanente** | **~3 Gy** (chronique) ; **4–6 Gy** (aiguë) | Dépend fortement de l'âge (réserve folliculaire) | [7,8] |\n| **Maladie circulatoire** (cœur/cerveau) | **~0,5 Gy** | Donnée révisée Hiroshima/Nagasaki | [7,8] |\n| **Peau — érythème / épilation** | **~3–6 Gy** ; desquamation > 10 Gy | Pertinent surtout en interventionnel | [7,8] |\n\n**Conséquence réglementaire majeure.** L'abaissement du seuil de cataracte à **0,5 Gy** a entraîné la révision de la **limite de dose équivalente au cristallin du travailleur** de **150 mSv/an → 20 mSv/an** (moyenne sur 5 ans, plafond 50 mSv une année donnée) [7,8,37,9]. Cette limite concerne directement les manipulateurs qui préparent et injectent les seringues (proximité mains-yeux), et justifie la dosimétrie spécifique du cristallin.\n\n**Expression clinique en pratique de médecine nucléaire.** En **imagerie diagnostique**, ces seuils ne sont **jamais atteints** chez le patient : la dose absorbée à n'importe quel organe reste très inférieure au gray (cf. §C2 pour l'ordre de grandeur). Les réactions tissulaires deviennent pertinentes dans **deux contextes** : (1) la **thérapie radiométabolique** (radionucléides vectorisés), où l'on délivre volontairement plusieurs grays aux cibles tumorales et, par débordement, aux OAR ; (2) le **personnel** exposé de façon chronique (cristallin, extrémités).\n\n**Doses-limites aux OAR en thérapie par radionucléides.** Trois OAR structurent la dosimétrie thérapeutique :\n\n| OAR | Dose-limite usuelle | Effet clinique redouté | Source |\n|---|---|---|---|\n| **Moelle rouge** | **< 2 Gy** (exposition unique cumulée) | Cytopénies, à ~2 Gy risque de leucémie ~2 % | [23,50] |\n| **Reins** | **23 Gy** (extrapolé de la radiothérapie externe) | Néphropathie radique, débit de filtration abaissé | [23,49] |\n| **Glandes salivaires** | **~35 Gy** ; sialadénite dose-dépendante | Xérostomie, sialadénite | [27,28] |\n\nPour le **¹³¹I** (cancer thyroïdien différencié, hyperthyroïdie), la moelle est l'organe dose-limitant : la règle empirique limite la dose au sang à **< 2 Gy (200 cGy)** et la rétention corps entier à **< 4,4 GBq (120 mCi) à 48 h** [50]. Les **glandes salivaires**, qui concentrent l'iode via le symporteur sodium-iode (NIS), reçoivent une dose absorbée de **0,04–0,97 Gy/GBq aux parotides** (médiane **0,26**) et **0,14 Gy/GBq aux sous-maxillaires** (médiane), exposant à une **sialadénite chez jusqu'à 20 %** des patients et à une épiphora par atteinte des canaux lacrymaux [27,28]. Pour la **PRRT** (peptide receptor radionuclide therapy) au **¹⁷⁷Lu-DOTATATE**, le rein est l'organe dose-limitant : dans la sous-étude dosimétrique de NETTER-1, la dose rénale moyenne sur 4 cycles atteint **19,4 Gy** et la dose médullaire **1,0 Gy**, donc sous les seuils [48,49]. Dans 197 patients sur 200 d'une cohorte dédiée, le rein atteint **23 Gy avant** que la moelle n'atteigne 2 Gy → **le rein est limitant**, d'où la néphroprotection par acides aminés (lysine/arginine) [49].",
+        "stats": [
+          {
+            "value": "0,5 Gy",
+            "label": "Seuil cataracte (ICRP 118)"
+          },
+          {
+            "value": "20 mSv/an",
+            "label": "Limite cristallin travailleur (vs 150 avant)"
+          },
+          {
+            "value": "~0,1 Gy",
+            "label": "Stérilité testiculaire temporaire"
+          },
+          {
+            "value": "23 Gy",
+            "label": "Dose-limite rénale en PRRT"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — confondre dose efficace et dose absorbée",
+            "text": "Les seuils déterministes s'expriment en **dose absorbée (Gy, par organe)**, jamais en dose efficace (mSv, corps entier). Ne JAMAIS appliquer les facteurs de pondération tissulaire wT à la dosimétrie thérapeutique : wT sert au calcul du risque stochastique (§C2), pas à comparer une dose médullaire de 2 Gy à un seuil [7,8,34]. Un raccourci fréquent consiste à raisonner « mSv » en thérapie radiométabolique : c'est une erreur de catégorie."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le seuil rénal de 23 Gy est probablement conservateur",
+            "text": "Le seuil de **23 Gy** pour le rein en PRRT est extrapolé de la radiothérapie externe (débit de dose et fractionnement très différents). Les données récentes plaident pour une **dosimétrie individualisée** plutôt qu'une limite fixe : des patients ayant reçu **28–33 Gy** n'ont présenté qu'une toxicité légère [48,49]. La tendance est au protocole guidé par la dosimétrie SPECT/CT cycle par cycle."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers temps-distance-écran (ALARA) appliqués à la protection du personnel : la maîtrise de la dose au cristallin et aux extrémités relève de ces mesures en pratique de médecine nucléaire.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran : leviers de réduction de la dose au personnel, dont dépend le respect de la limite cristallin de 20 mSv/an."
+      },
+      {
+        "title": "C2 - Effets stochastiques : cancer radio-induit et risque héréditaire",
+        "text": "**Le versant probabiliste de l'exposition.** Les **effets stochastiques** — **cancer radio-induit** et **effets héréditaires** — sont **sans seuil** dans le modèle de référence : leur **probabilité** d'apparition croît avec la dose, mais leur **gravité** est indépendante de la dose [34]. Mécaniquement, ils naissent d'**une cellule survivante porteuse d'une mutation non létale** (cassure double-brin de l'ADN mal réparée → aberration chromosomique ou mutation ponctuelle initiatrice), à la différence des réactions tissulaires qui exigent la mort d'une population cellulaire (§C1). C'est ce mécanisme mono-cellulaire qui justifie l'hypothèse **LNT** (linear no-threshold) : extrapolation linéaire sans seuil utilisée comme socle prudentiel de la radioprotection [34].\n\n**Quantifier le risque : le facteur de pondération tissulaire wT.** La radiosensibilité **stochastique** différentielle des organes est traduite réglementairement par les **wT** de la CIPR/ICRP 103 (2007), dont la somme vaut **1,00**. Ils servent à calculer la **dose efficace** E = Σ wT·HT (en mSv, HT = dose équivalente à l'organe T), seule grandeur permettant de comparer le **détriment** stochastique global d'examens hétérogènes [34,1].\n\n| wT (ICRP 103, 2007) | Organes / tissus |\n|---|---|\n| **0,12** | Moelle osseuse rouge, **côlon**, poumon, estomac, **sein**, tissus restants (13–14 organes) |\n| **0,08** | Gonades |\n| **0,04** | Vessie, œsophage, foie, thyroïde |\n| **0,01** | Surface osseuse, cerveau, glandes salivaires, peau |\n\nL'**évolution ICRP 60 (1990) → ICRP 103 (2007)** reflète l'actualisation des données radiobiologiques et épidémiologiques (survivants des bombes A) :\n\n| Tissu | wT — ICRP 60 (1990) | wT — ICRP 103 (2007) | Signification |\n|---|---|---|---|\n| **Sein** | 0,05 | **0,12** | Radiosensibilité mammaire réévaluée à la hausse (sujet jeune ++) |\n| **Gonades** | 0,20 | **0,08** | Risque héréditaire estimé revu fortement à la baisse |\n| **Thyroïde** | 0,05 | **0,04** | Léger ajustement |\n| **Glandes salivaires / cerveau** | — | **0,01** | Introduits explicitement |\n\n[Sources : 1,2,3,34,36]. Cette hausse du wT mammaire et cette baisse du wT gonadique sont les deux changements les plus structurants pour la MN : ils déplacent l'attention de la protection gonadique « historique » vers la protection mammaire chez la femme jeune.\n\n**Coefficient de risque nominal.** Le détriment stochastique total (cancer + effets héréditaires, ajusté à la gravité) est estimé à **~5,5–5,7 × 10⁻² par Sv** pour la **population générale** et **~4,1 × 10⁻² par Sv** pour les **travailleurs adultes** [11,12,34]. La méthodologie de calcul du détriment a été révisée par l'**ICRP 152 (2022)**, sans bouleverser ces ordres de grandeur [11].\n\n**Mise en perspective des doses en médecine nucléaire.** En diagnostic, la dose efficace découle du **coefficient de dose efficace (mSv/MBq)** propre à chaque radiopharmaceutique, compilé par l'**ICRP 128 (2015)** ; l'**organe critique** (celui qui reçoit la dose absorbée la plus élevée) varie selon la biodistribution :\n\n| Radiopharmaceutique | E (mSv/MBq) | Organe critique | Source |\n|---|---|---|---|\n| **¹⁸F-FDG** (fluorodésoxyglucose) | **0,019** | **Vessie** (paroi) | [13,14,40] |\n| **⁶⁸Ga-DOTATATE** | **0,021–0,024** | **Rate**, reins, vessie | [45] |\n| **⁶⁸Ga-PSMA-11** (prostate-specific membrane antigen) | **0,022–0,030** | **Reins**, glandes lacrymales | [46,47] |\n| **¹⁸F-NaF** (os) | **~0,017–0,024** | Surface osseuse / vessie | [13] |\n| **⁹⁹ᵐTc-MDP/HDP** (os) | **~0,005–0,006** | Surface osseuse / vessie | [13,14] |\n| **¹²³I-iodure** (thyroïde) | **~0,1–0,2** | **Thyroïde** | [13] |\n\nOrdre de grandeur clinique : un **¹⁸F-FDG ~350 MBq → ~6–7 mSv** (dose du radiopharmaceutique seul, hors composante TDM du TEP-TDM qui ajoute 3–15 mSv) [13,42]. En France, le **niveau de référence diagnostique (NRD)** du TEP-FDG adulte est d'environ **350 MBq** (décision ASN 2019-DC-0667, homologuée le 23 mai 2019) [53,54]. À ces niveaux, le risque stochastique est **faible mais non nul**, ce qui fonde l'obligation de **justification** de chaque examen.\n\n**Effets héréditaires : un risque réévalué à la baisse.** La chute du wT gonadique (0,20 → 0,08) traduit le constat épidémiologique majeur des cohortes de descendants de survivants des bombes A : **aucun excès statistiquement significatif** d'effets héréditaires n'a été démontré chez l'homme ; le risque reste **théorique**, extrapolé de l'animal, et désormais considéré comme une **fraction minoritaire** du détriment total [34]. Cela ne dispense pas de la protection gonadique, mais hiérarchise différemment les priorités (cancer >> héréditaire).",
+        "stats": [
+          {
+            "value": "5,5–5,7 %/Sv",
+            "label": "Détriment stochastique (population)"
+          },
+          {
+            "value": "0,12",
+            "label": "wT sein (×2,4 vs ICRP 60)"
+          },
+          {
+            "value": "0,08",
+            "label": "wT gonades (vs 0,20 en ICRP 60)"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Coefficient de dose du ¹⁸F-FDG"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Stochastique vs déterministe — la distinction clé",
+            "text": "**Stochastique** (cancer, héréditaire) : sans seuil (LNT), probabilité ∝ dose, gravité indépendante de la dose → quantifié par wT et la dose efficace (mSv). **Déterministe / réaction tissulaire** (§C1) : à seuil, gravité ∝ dose au-delà du seuil → quantifié par la dose absorbée (Gy) à l'organe. Le diagnostic relève du registre stochastique ; la thérapie radiométabolique mobilise les deux [34,7]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le SUV ne dépend pas de la dose",
+            "text": "La dose administrée conditionne la **qualité statistique** des images (bruit, comptage) mais n'entre PAS dans le calcul du **SUV** (standardized uptake value), normalisé sur l'activité injectée et le poids. Augmenter l'activité au-delà du NRD n'améliore donc pas la quantification au prix d'une dose accrue : l'optimisation ALARA reste prioritaire, et l'harmonisation EARL gère la comparabilité multicentrique [42]."
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma comparant les types de désintégration et de rayonnement (alpha, bêta, gamma) et leur transfert linéique d'énergie : à TEL élevé prédomine l'action directe sur l'ADN, à faible TEL l'action indirecte par radicaux libres, déterminant l'efficacité mutagène.",
+        "figureCaption": "Fig. 2 — Types de rayonnement et transfert linéique d'énergie (TEL) : l'efficacité mutagène par unité de dose conditionne le risque stochastique."
+      },
+      {
+        "title": "C3 - Moduler la lecture : âge, sexe, terrain, génétique et grossesse",
+        "text": "**Un même Sv n'emporte pas le même risque.** Les coefficients de risque nominaux (§C2) et les seuils déterministes (§C1) sont des **moyennes de population** : le risque réel d'un patient donné est **modulé** par l'âge, le sexe, le terrain, la susceptibilité génétique et l'état physiologique. Interpréter une exposition impose d'intégrer ces facteurs, faute de quoi on sur- ou sous-estime le détriment individuel.\n\n**Âge — le déterminant majeur.** La radiosensibilité décroît avec l'âge. Le conceptus et l'enfant sont nettement plus sensibles que l'adulte pour **deux raisons cumulatives** : (1) un organisme en croissance comporte une **forte fraction de cellules en mitose et peu différenciées** (loi de Bergonié & Tribondeau, §C1) [4,5,52] ; (2) l'**espérance de vie résiduelle longue** laisse le temps au cancer radio-induit (latence de plusieurs décennies) de s'exprimer [31]. L'effet est quantitativement spectaculaire : le risque de cancer radio-induit est de l'ordre de **~15 %/Sv pour une exposition avant 10 ans contre ~1 %/Sv vers 60 ans** (données des survivants des bombes A, conversion dose→risque via BEIR VII) [31,32]. C'est le fondement de la **carte de dosage pédiatrique EANM** (cf. §C4 et infra) et de la priorité absolue donnée à la justification chez l'enfant.\n\n**Sexe.** À dose égale, la femme porte un détriment stochastique légèrement supérieur, dominé par les cancers du **sein** (wT 0,12) et de la **thyroïde**, plus radiosensibles, surtout chez la **femme jeune** — d'où le poids accru de ces organes dans la décision d'exposer (§C2) [34,36].\n\n**Terrain & physiologie.** L'**insuffisance rénale** ralentit l'élimination des radiopharmaceutiques à excrétion urinaire, augmentant la dose à la moelle et — en PRRT — la néphrotoxicité ; elle impose une néphroprotection renforcée [49]. L'**hydratation et la fréquence des mictions** modulent directement la dose à l'organe critique de nombreux traceurs (vessie pour le ¹⁸F-FDG) [13,42]. La **réserve hématopoïétique** (chimiothérapie antérieure, envahissement médullaire) abaisse le seuil de toxicité déterministe en thérapie [33].\n\n**Susceptibilité génétique.** Certains terrains constitutionnels majorent la radiosensibilité par déficit de réparation de l'ADN : la cible critique restant la **cassure double-brin** mal réparée (§C1), tout défaut des voies de réparation accroît la conversion dose→mutation/mort cellulaire. Ces situations imposent une vigilance accrue sur la justification et l'optimisation [6,10].\n\n**Limites d'exposition selon la catégorie de personne (cadre CIPR 103 / Euratom).** Le statut conditionne les limites annuelles :\n\n| Catégorie | Limite corps entier | Limite cristallin | Source |\n|---|---|---|---|\n| **Travailleur exposé** | **20 mSv/an** | **20 mSv/an** (post-ICRP 118) | [34,7,37] |\n| **Public** | **1 mSv/an** | 15 mSv/an | [34] |\n| **Patient** | Pas de limite (justification + optimisation) | — | [34] |\n\nLe patient n'est **pas soumis à une limite de dose** : sa protection repose sur les deux premiers principes de la radioprotection — **justification** (le bénéfice attendu surpasse le détriment) et **optimisation** (ALARA, as low as reasonably achievable) — le troisième principe (limitation) ne s'appliquant qu'aux travailleurs et au public [34].\n\n**Femme en âge de procréer & grossesse.** Avant tout examen ou traitement, la **grossesse et l'allaitement sont systématiquement recherchés** [30]. La grossesse est une **contre-indication relative** des examens diagnostiques (évaluation bénéfice/risque, report si possible) et une **contre-indication absolue** de la thérapie radiométabolique [30]. Le ¹³¹I est formellement proscrit (cf. §C4). Pour l'**allaitement**, la conduite dépend du traceur :\n\n| Radiopharmaceutique | Interruption de l'allaitement | Source |\n|---|---|---|\n| **¹³¹I-NaI** | **Arrêt définitif** | [29] |\n| **¹²³I/¹³¹I-iodohippurate, ⁹⁹ᵐTc-pertechnétate, ⁹⁹ᵐTc-MAA** | **12 h** | [29] |\n| **⁹⁹ᵐTc-sestamibi / tétrofosmine** | **Aucune** | [29] |\n\nLa fraction de l'activité excrétée dans le lait va de **0,0057 % (⁹⁹ᵐTc-globules rouges)** à **19 % (⁹⁹ᵐTc-pertechnétate)**, pour une dose efficace au nourrisson de **6,7 × 10⁻⁶ à 3,6 × 10⁻² mSv/MBq** ; l'objectif est de maintenir la dose au nourrisson **< 1 mSv** [29].\n\n**Pédiatrie — la carte de dosage EANM.** Pour neutraliser la radiosensibilité majorée de l'enfant, l'activité administrée est calculée par la **carte de dosage pédiatrique EANM** (European Association of Nuclear Medicine, version 2016) : **activité = activité de base × multiple indexé sur le poids**, avec des **activités minimales** garantissant la qualité d'image (p. ex. **¹⁸F-FDG : 26 MBq en mode 2D / 14 MBq en mode 3D**) [16,17,18,44]. Le principe rend la **dose efficace pédiatrique quasi indépendante du poids**, harmonisant le risque entre enfants [18].",
+        "stats": [
+          {
+            "value": "~15 %/Sv",
+            "label": "Risque cancer si exposition < 10 ans"
+          },
+          {
+            "value": "~1 %/Sv",
+            "label": "Risque cancer à ~60 ans"
+          },
+          {
+            "value": "1 mSv/an",
+            "label": "Limite de dose au public"
+          },
+          {
+            "value": "< 1 mSv",
+            "label": "Cible de dose au nourrisson allaité"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — rechercher grossesse et allaitement avant TOUTE injection",
+            "text": "La recherche d'une grossesse (date des dernières règles, test si doute) et d'un allaitement est **systématique** avant l'injection de tout radiopharmaceutique [30]. Pour l'allaitement, la durée d'interruption dépend strictement du traceur : **arrêt définitif** pour le ¹³¹I-NaI, **12 h** pour le ⁹⁹ᵐTc-pertechnétate, **aucune** pour le ⁹⁹ᵐTc-sestamibi [29]. Ne jamais appliquer une consigne « universelle » : elle est traceur-spécifique."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — patient ≠ travailleur pour les limites",
+            "text": "Les limites de 20 mSv/an (travailleur) et 1 mSv/an (public) ne s'appliquent PAS au patient : sa protection repose exclusivement sur la **justification** et l'**optimisation (ALARA)** [34]. Confondre les deux registres conduit à l'erreur fréquente de refuser un examen justifié au nom d'une « limite patient » qui n'existe pas, ou inversement à banaliser une exposition non justifiée."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique imager-traiter-réévaluer : la modulation de la radiosensibilité individuelle (âge, terrain, fonction rénale, réserve médullaire) conditionne la sélection des patients et l'adaptation des activités à chaque étape.",
+        "figureCaption": "Fig. 3 — Boucle théranostique : la radiosensibilité individuelle module la sélection des patients et l'adaptation des doses aux organes à risque."
+      },
+      {
+        "title": "C4 - Interpréter une exposition fœtale et embryonnaire",
+        "text": "**Le cas le plus sensible.** Le conceptus est le tissu le plus radiosensible de l'organisme : forte fraction de cellules indifférenciées en mitose intense (loi de Bergonié & Tribondeau, §C1) et espérance de vie maximale [4,5,32]. L'effet d'une exposition prénatale dépend **moins de la dose seule que du stade de gestation** au moment de l'irradiation, chaque fenêtre développementale exprimant un type d'effet dominant. Interpréter une exposition fœtale impose donc de croiser **dose absorbée à l'utérus/conceptus** et **âge gestationnel**.\n\n**Effets selon la fenêtre de développement.** On distingue classiquement quatre périodes, du registre déterministe (à seuil, fenêtres précoces) au registre stochastique (sans seuil, tout au long) :\n\n| Stade (semaines post-conception) | Effet dominant | Registre | Particularité |\n|---|---|---|---|\n| **Pré-implantation** (~0–2 SA) | « Tout ou rien » : mort embryonnaire ou survie indemne | Déterministe (seuil) | Pas de malformation si l'embryon survit |\n| **Organogenèse** (~3–8 SA) | **Malformations** congénitales | Déterministe (seuil) | Période de **sensibilité tératogène maximale** |\n| **Fœtale précoce** (~8–25 SA, pic 8–15) | **Retard mental**, microcéphalie, baisse de QI | Déterministe (seuil ~0,1–0,3 Gy) | Atteinte de la migration neuronale corticale |\n| **Toute la gestation** | **Cancer radio-induit** de l'enfant | Stochastique (sans seuil) | Risque le plus élevé de la vie (cf. §C3) |\n\n[Sources : 30,31,32]. La période d'organogenèse correspond à la sensibilité tératogène maximale, et la fenêtre **8–15 SA** à la vulnérabilité maximale du système nerveux central (effet sur le QI) [30,32].\n\n**¹³¹I : la contre-indication absolue.** Le **¹³¹I** est **formellement contre-indiqué** pendant la grossesse [30]. Le mécanisme est double : (1) l'iodure **traverse le placenta** ; (2) la **thyroïde fœtale capte l'iode dès ~10–12 SA** via le NIS, devenant elle-même fonctionnelle. Une thérapie au ¹³¹I administrée après ce terme **ablate la thyroïde fœtale**, induisant une hypothyroïdie congénitale définitive, en sus du risque tératogène et carcinogène général [30]. Toute thérapie radiométabolique est donc proscrite ; un test de grossesse est requis avant administration chez la femme en âge de procréer.\n\n**Ordre de grandeur des doses fœtales en diagnostic.** En imagerie diagnostique de MN, la dose absorbée au conceptus reste **très inférieure aux seuils déterministes** (organogenèse, retard mental), de l'ordre du **milligray à quelques milligrays** pour la plupart des examens — sous la dose à partir de laquelle un risque déterministe devient mesurable. Le risque résiduel est **stochastique** (cancer de l'enfant), pris en compte dans la décision de justification [30]. La conduite repose donc sur le **report** de l'examen quand il est possible et l'**optimisation** (activité minimale, hydratation et **mictions fréquentes** pour réduire l'irradiation utérine par la vessie remplie, organe critique de nombreux traceurs) [13,30].\n\n**Démarche d'interprétation d'une exposition prénatale.**",
+        "steps": [
+          {
+            "title": "1 — Dater précisément la grossesse",
+            "text": "Établir l'âge gestationnel (en semaines post-conception) au moment de l'exposition : c'est lui, plus que la dose, qui détermine la nature de l'effet redouté (pré-implantation / organogenèse / fœtale) [30,32]."
+          },
+          {
+            "title": "2 — Estimer la dose absorbée au conceptus",
+            "text": "Reconstituer l'activité administrée, le radiopharmaceutique et sa biodistribution, puis estimer la dose à l'utérus/conceptus (modèles ICRP). Distinguer dose absorbée (Gy) — pertinente pour le risque déterministe — et risque stochastique [13,30]."
+          },
+          {
+            "title": "3 — Confronter dose et seuils selon le stade",
+            "text": "Comparer la dose estimée aux seuils déterministes de la fenêtre concernée (organogenèse, effet SNC 8–15 SA). En diagnostic, ces seuils sont quasi toujours non atteints ; ne reste que le risque stochastique [30,32]."
+          },
+          {
+            "title": "4 — Conclure et conseiller",
+            "text": "Rassurer si la dose est très inférieure aux seuils (cas habituel en diagnostic) ; documenter ; ne jamais proposer d'interruption de grossesse sur la seule base d'une exposition diagnostique de MN, dont les doses sont sans commune mesure avec les seuils tératogènes [30]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "3–8 SA",
+            "label": "Fenêtre de tératogenèse maximale"
+          },
+          {
+            "value": "8–15 SA",
+            "label": "Vulnérabilité SNC maximale (QI)"
+          },
+          {
+            "value": "~10–12 SA",
+            "label": "Captation iodée par la thyroïde fœtale"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — ¹³¹I et thyroïde fœtale après 10–12 SA",
+            "text": "Après ~10–12 SA, la thyroïde fœtale capte l'iode via le NIS : une administration de ¹³¹I à ce terme **détruit la thyroïde fœtale** (hypothyroïdie congénitale définitive), au-delà du risque tératogène/carcinogène. Le ¹³¹I est une **contre-indication absolue** de la grossesse, et un test de grossesse est requis avant toute thérapie chez la femme en âge de procréer [30]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — proportionner le message",
+            "text": "Les doses fœtales en imagerie diagnostique de MN (ordre du mGy) sont **plusieurs ordres de grandeur sous les seuils** tératogènes et de retard mental. Une exposition diagnostique accidentelle ne justifie ni anxiété disproportionnée ni geste sur la grossesse : la réponse correcte est l'estimation dosimétrique, la documentation et la réassurance — pas l'interruption [30,32]."
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Symporteur sodium-iode (NIS) de la cellule thyroïdienne captant l'iodure : ce mécanisme, fonctionnel dans la thyroïde fœtale dès la 10e-12e semaine, fonde la contre-indication absolue du ¹³¹I pendant la grossesse.",
+        "figureCaption": "Fig. 4 — Captation de l'iode par le NIS : actif dans la thyroïde fœtale dès ~10–12 SA, il fonde l'interdiction du ¹³¹I pendant la grossesse."
+      },
+      {
+        "title": "D1 - Du risque à l'action : justification, optimisation, ALARA",
+        "text": "La radiosensibilité différentielle des tissus n'a de valeur opérationnelle que traduite en **décisions** : justifier l'acte, optimiser l'activité, surveiller les organes à risque (OAR). Trois principes structurent toute exposition médicale — **justification**, **optimisation (ALARA, *as low as reasonably achievable*)**, **limitation** —, l'optimisation étant le levier dominant en médecine nucléaire puisque la limitation de dose ne s'applique pas au patient bénéficiaire mais au personnel et au public.[34]\n\n**De la radiosensibilité aux deux registres de risque.** La hiérarchie de radiosensibilité se décline en deux familles d'effets dont la maîtrise n'obéit pas à la même logique :\n\n- **Effets stochastiques** (cancer, effets héréditaires) : sans seuil (modèle linéaire sans seuil, LNT), probabilité proportionnelle à la dose. Ils gouvernent le **diagnostic**, où les doses restent faibles. Le poids relatif de chaque organe est porté par les **facteurs de pondération tissulaire w_T** (CIPR/ICRP 103, 2007), traduction réglementaire de la radiosensibilité : la dose efficace E = Σ w_T × H_T (mSv) somme les détriments d'organe.[34][1] Le détriment nominal global est de **5,7 % par Sv** pour la population entière, **~4,1 % par Sv** pour les travailleurs adultes.[34][11]\n- **Réactions tissulaires (effets déterministes)** : à seuil, gravité croissante au-delà du seuil. Elles ne deviennent pertinentes qu'en **thérapie radiométabolique** et, marginalement, pour le **cristallin du personnel interventionnel** ; en diagnostic standard, ces seuils ne sont JAMAIS atteints chez le patient.[7][8]\n\n**Justifier.** Tout examen doit apporter un bénéfice net. Le raisonnement bénéfice/risque est asymétrique selon le terrain : chez l'**enfant** et la **femme jeune**, dont les tissus sont plus radiosensibles et l'espérance de vie plus longue, le détriment est majoré — le risque de cancer radio-induit est estimé à **~15 % par Sv pour une exposition avant 10 ans contre ~1 % par Sv à 60 ans** (survivants des bombardements, conversion BEIR VII).[31][32] La justification privilégie alors, à information clinique égale, les modalités non irradiantes (échographie, IRM) ou les radiopharmaceutiques au détriment cumulé le plus faible.[34]\n\n**Optimiser (ALARA).** L'optimisation joue sur trois variables : l'**activité administrée**, la **biocinétique** (préparation du patient) et l'**acquisition**. Le repère réglementaire en est le **niveau de référence diagnostique (NRD)** : pas une limite, mais une valeur d'alerte au-delà de laquelle la pratique doit être analysée. En France, les NRD relèvent de la **décision ASN 2019-DC-0667** (homologuée par arrêté du 23 mai 2019), avec collecte et analyse par l'IRSN/ASNR ; le NRD du **¹⁸F-FDG en TEP adulte est ≈ 350 MBq**.[53][54] L'optimisation pédiatrique est codifiée par la **carte de dosage EANM** (1ʳᵉ version 2008, mise à jour août 2016) : l'activité = activité de base × multiple indexé sur le poids, avec des **activités minimales** garantissant la qualité d'image (p. ex. ¹⁸F-FDG : 26 MBq en 2D, 14 MBq en 3D) ; le dispositif rend la dose efficace quasi indépendante du poids.[16][17][18]\n\n| Levier ALARA | Action concrète | Organe(s) protégé(s) | Source |\n|---|---|---|---|\n| Activité administrée | Indexer sur le poids ; respecter NRD/carte EANM | Corps entier (stochastique) | [53][16][18] |\n| Préparation/biocinétique | Hydratation + mictions fréquentes | **Vessie** (OAR du FDG), gonades | [42][13] |\n| Préparation/biocinétique | Stimulation salivaire, hydratation (¹³¹I) | **Glandes salivaires** | [27][28] |\n| Acquisition | TDM low-dose pour atténuation/repérage | Corps entier | [15] |\n| Sélection du traceur | Préférer faible E à information égale | Tissus à w_T élevé | [13][39] |\n\n**Ordre de grandeur à garder en tête.** Un **¹⁸F-FDG (E = 0,019 mSv/MBq) à 350 MBq délivre ~6–7 mSv**, auxquels s'ajoute la dose du TDM couplé (souvent 3–15 mSv selon le protocole) — d'où l'importance d'un TDM low-dose lorsqu'une finalité diagnostique du scanner n'est pas requise.[13][15][42] La radiosensibilité, en somme, ne se \"traite\" pas : elle se **respecte** par une chaîne de décisions justifiées et optimisées.",
+        "stats": [
+          {
+            "value": "5,7 %/Sv",
+            "label": "Détriment nominal global (ICRP 103)"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "E du ¹⁸F-FDG (organe critique : vessie)"
+          },
+          {
+            "value": "≈ 350 MBq",
+            "label": "NRD FDG TEP adulte (ASN 2019)"
+          },
+          {
+            "value": "~15 %/Sv",
+            "label": "Risque cancer si exposition <10 ans"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — w_T n'est PAS un outil de dosimétrie thérapeutique",
+            "text": "Les facteurs de pondération tissulaire w_T et la dose efficace (mSv) quantifient un **risque stochastique de population** : ils ne s'appliquent qu'au diagnostic. En thérapie par radionucléides, on raisonne en **dose absorbée (Gy) par organe** (effet déterministe). Appliquer w_T à la planification d'un traitement par ¹⁷⁷Lu ou ¹³¹I est une erreur conceptuelle.[34][7]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — terrain et radiosensibilité",
+            "text": "Le même mSv ne porte pas le même détriment : enfant, femme jeune et conceptus sont nettement plus radiosensibles (forte fraction mitotique, organisme en croissance, espérance de vie longue). La justification doit être renforcée et l'activité strictement optimisée (carte EANM).[31][32][18]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers ALARA — temps, distance, écran — appliqués à la réduction de dose, ici décliné pour le personnel et l'entourage du patient porteur d'un radiopharmaceutique."
+      },
+      {
+        "title": "D2 - Protéger les organes à risque : leviers techniques et pharmacologiques",
+        "text": "Protéger un OAR, c'est connaître son **seuil de réaction tissulaire** puis interposer un levier — pharmacologique, biocinétique ou dosimétrique — entre le radiopharmaceutique et le tissu cible. Le préalable est de fixer les bornes.\n\n**Seuils de réactions tissulaires (CIPR/ICRP 118, 2012).** La publication 118 a renommé les \"effets déterministes\" en **réactions tissulaires** (modulables par des modificateurs biologiques) et abaissé plusieurs seuils :[7][8]\n\n| Tissu / effet | Seuil (dose absorbée) | Source |\n|---|---|---|\n| **Cristallin** — cataracte | **0,5 Gy** (vs 2–5 Gy auparavant ; suivi >20 ans) | [7][37] |\n| **Moelle osseuse** — dépression hématopoïétique | **0,5 Gy** aigu ; **0,4 Gy/an** chronique | [7] |\n| **Testicules** — stérilité temporaire / permanente | **~0,1 Gy** / **~6 Gy** | [7] |\n| **Ovaires** — stérilité permanente | **~2,5–6 Gy** | [7] |\n| **Maladie circulatoire** (cœur/cerveau) | **0,5 Gy** | [7] |\n| **Peau** — érythème / desquamation | ~3–6 Gy / >10 Gy | [7] |\n\nConséquence réglementaire majeure : l'abaissement de la **limite de dose équivalente au cristallin du travailleur de 150 → 20 mSv/an** (moyenne sur 5 ans, maximum 50 mSv une année), qui impose une dosimétrie du cristallin pour les manipulateurs préparant et injectant les seringues (proximité mains-yeux).[7][9][37]\n\n**Doses-limites aux OAR en thérapie (EANM).** En radionucléidothérapie, les contraintes opérationnelles, largement extrapolées de la radiothérapie externe, sont : **moelle rouge < 2 Gy** par cure (à 2 Gy, probabilité de leucémie ~2 %) ; **reins 23 Gy** (seuil classique conservateur, 28–40 Gy après correction de masse) ; **glandes salivaires ~35 Gy**.[23][24][50]\n\n**Les leviers, organe par organe.**\n\n*Reins — OAR limitant de la PRRT (¹⁷⁷Lu-DOTATATE).* Levier pharmacologique central : **perfusion d'acides aminés** (lysine/arginine) co-administrée pour saturer la réabsorption tubulaire et réduire la rétention rénale. Dans NETTER-1, la dose rénale moyenne sur 4 cycles est restée à **19,4 Gy** (moelle 1,0 Gy), sous les seuils ; chez **197/200 patients d'une cohorte dosimétrique, le rein atteint 23 Gy AVANT que la moelle n'atteigne 2 Gy**, confirmant le rein comme organe dose-limitant.[25][48][49][23]\n\n*Glandes salivaires — OAR majeur du ¹³¹I.* Le symporteur sodium-iodure (NIS) y concentre l'iode 7–700× le sérum ; jusqu'à 24 % de l'activité est excrétée dans la salive ; la dose absorbée parotidienne est de **0,04–0,97 Gy/GBq (médiane 0,26)** et sous-maxillaire **0,14 Gy/GBq (médiane)**.[27] Leviers : **stimulation salivaire** (jus de citron, bonbons acidulés), **hydratation abondante** et massage glandulaire pour accélérer le wash-out de l'iode et réduire le temps de résidence.[28]\n\n*Vessie — OAR du ¹⁸F-FDG.* La paroi vésicale reçoit la dose la plus élevée (organe critique). Leviers biocinétiques : **hydratation + mictions fréquentes**, qui réduisent la dose à la vessie ET, par effet de proximité, aux gonades.[42][13]\n\n*Thyroïde — protection par blocage NIS.* Avant tout traceur libérant de l'iode libre (¹²³I/¹³¹I-MIBG, etc.), un **blocage thyroïdien** (iodure de potassium/Lugol/perchlorate) sature le NIS et empêche l'irradiation thyroïdienne.[26]\n\n*Moelle osseuse — surveillance.* Levier essentiellement dosimétrique et de suivi : numération avant chaque cure, dose-au-sang/moelle plafonnée à **2 Gy** (objectif équivalent en ¹³¹I : rétention corps entier < 4,4 GBq/120 mCi à 48 h).[50][33]",
+        "steps": [
+          {
+            "title": "1 · Identifier l'OAR selon le traceur",
+            "text": "Cartographier l'organe critique (vessie pour le FDG, reins pour PSMA/PRRT, salivaires + moelle pour le ¹³¹I) à partir des coefficients de dose et des seuils CIPR 118.[13][7]"
+          },
+          {
+            "title": "2 · Interposer le levier pharmacologique",
+            "text": "Acides aminés (néphroprotection PRRT), blocage NIS (thyroïde), stimulation salivaire (¹³¹I), avant et pendant l'administration.[49][26][28]"
+          },
+          {
+            "title": "3 · Optimiser la biocinétique",
+            "text": "Hydratation et mictions fréquentes (vessie/gonades), favoriser l'élimination du traceur libre.[42]"
+          },
+          {
+            "title": "4 · Plafonner et surveiller la dose absorbée",
+            "text": "Dosimétrie personnalisée pour rester sous moelle 2 Gy / rein 23 Gy ; NFS itérative ; ajuster les cures suivantes.[23][50][33]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — dosimétrie individualisée plutôt que limite fixe",
+            "text": "Le seuil rénal de 23 Gy, importé de la radiothérapie externe, est probablement **trop conservateur** en PRRT : 3 patients de NETTER-1 ont atteint 28–33 Gy avec une toxicité seulement légère. Les données récentes plaident pour une **dosimétrie personnalisée par cure** (SPECT/CT post-injection) afin de délivrer le maximum sûr, plutôt que de s'arrêter à une borne unique.[48][49]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — cristallin du manipulateur",
+            "text": "Depuis ICRP 118, la limite cristallin est de **20 mSv/an** (et non plus 150). La préparation et l'injection des seringues exposent mains et yeux : blindage de seringue, distance, et dosimétrie du cristallin pour les opérateurs réguliers sont désormais requis.[7][37]"
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Schéma du symporteur sodium-iodure (NIS) concentrant l'iode dans la cellule thyroïdienne et salivaire — cible du blocage thyroïdien protecteur et explication de la dose aux glandes salivaires en thérapie par ¹³¹I."
+      },
+      {
+        "title": "D3 - Cas particuliers, pièges et controverses de maîtrise",
+        "text": "La maîtrise de la radiosensibilité achoppe sur des situations frontières et des confusions conceptuelles récurrentes. Les expliciter prévient les erreurs de dose et de prescription.\n\n**Grossesse — la maîtrise par l'abstention.** La moelle et les gonades fœtales sont parmi les tissus les plus radiosensibles (organogenèse = pic de cellules en mitose). Les examens diagnostiques sont en **contre-indication relative** (bénéfice/risque, report ou adaptation), la thérapie en **contre-indication absolue**. Le **¹³¹I est formellement contre-indiqué** : il franchit le placenta et est capté par la thyroïde fœtale dès ~10–12 SA, exposant à l'ablation thyroïdienne fœtale, au cancer radio-induit et, en organogenèse, au risque malformatif/retard mental.[30]\n\n**Allaitement — des délais d'interruption qui varient d'un facteur >1000.** L'objectif est une dose au nourrisson < 1 mSv. La fraction excrétée dans le lait va de **0,0057 % (⁹⁹ᵐTc-globules rouges) à 19 % (⁹⁹ᵐTc-pertechnétate)**, et la dose efficace au nourrisson de **6,7×10⁻⁶ à 3,6×10⁻² mSv/MBq** selon le traceur.[29]\n\n| Traceur | Interruption de l'allaitement | Source |\n|---|---|---|\n| **¹³¹I-NaI** | **Définitive** (arrêt complet) | [29] |\n| ¹²³I/¹³¹I-iodohippurate, ⁹⁹ᵐTc-pertechnétate, ⁹⁹ᵐTc-MAA | **12 h** | [29] |\n| ⁹⁹ᵐTc-sestamibi / tétrofosmine | Aucune nécessaire | [29] |\n\n**Insuffisance rénale et PRRT.** Une fonction rénale altérée ralentit la clairance du ¹⁷⁷Lu-DOTATATE, majorant simultanément l'exposition médullaire et la néphrotoxicité — la néphroprotection par acides aminés y devient impérative, et la dosimétrie personnalisée d'autant plus justifiée.[49][33]\n\n**Pièges et controverses.**",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — confondre dose absorbée (Gy) et dose efficace (mSv)",
+            "text": "La **dose efficace (mSv, pondérée par w_T)** mesure un risque stochastique de corps entier ; la **dose absorbée (Gy, par organe)** gouverne les réactions tissulaires en thérapie. Ne JAMAIS appliquer les w_T à la dosimétrie thérapeutique, ni raisonner en mSv pour planifier une cure : ce sont deux registres distincts (CIPR 103 vs CIPR 118).[34][7]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — captation physiologique dans les organes radiosensibles",
+            "text": "Moelle stimulée par G-CSF, thymus hyperplasique de l'enfant, graisse brune : ces sites sont à la fois des **faux positifs FDG** et des **sites de dose accrue**. Ils faussent l'interprétation et déplacent localement la distribution de dose.[42]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la dose à la vessie dépend du modèle dosimétrique",
+            "text": "La dose vésicale du ¹⁸F-FDG varie sensiblement selon le fantôme (Cristy-Eckerman vs fantômes maillés ICRP 2021) et les hypothèses de miction. Une même activité peut donner des estimations de dose à l'OAR notablement différentes : préciser le référentiel utilisé.[40][41]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le seuil rénal de 23 Gy en débat",
+            "text": "Plusieurs équipes considèrent ce seuil comme **trop bas** : il sous-traite des patients qui pourraient recevoir davantage de cures en sécurité. La tendance est à remplacer la limite fixe par une **dosimétrie guidée individuelle** (imagerie pré-thérapeutique par ¹²⁴I PET, SPECT/CT séquentiel), au plus près du maximum tolérable réel.[49][23]"
+          },
+          {
+            "type": "info",
+            "title": "Cas particulier — choix du traceur guidé par l'organe critique",
+            "text": "À information clinique comparable, le choix intègre l'OAR : ¹⁸F-FDG (E 0,019, vessie) reste raisonnable ; en ⁶⁸Ga-DOTATATE l'organe critique est la **rate** (~0,26–0,28 mGy/MBq) ; en ⁶⁸Ga-/¹⁷⁷Lu-PSMA, ce sont les **reins** (0,23–0,41 mGy/MBq) et les glandes salivaires/lacrymales — d'où une surveillance ciblée différente selon le traceur.[13][45][46][47]"
+          }
+        ]
+      },
+      {
+        "title": "E1 - Points clés, fiches-réflexes & FAQ par profil",
+        "text": "Cette section condense, en haut rendement, ce qu'un médecin nucléaire doit retenir de la radiosensibilité tissulaire pour la pratique quotidienne — dosimétrie diagnostique, surveillance des organes à risque (OAR) en thérapie radiométabolique, radioprotection du patient et du personnel — puis répond aux confusions classiques par profil de questionneur.\n\n## Points clés / à retenir\n\n- **Loi de Bergonié & Tribondeau (1906)** : un tissu est d'autant plus radiosensible que ses cellules sont **peu différenciées, à forte activité mitotique et à avenir prolifératif long** [4,5,51]. Cellules les plus sensibles (type I VIM de Rubin-Casarett) : moelle osseuse rouge, cryptes intestinales, spermatogonies, couche basale épidermique [10]. Les plus résistantes (type IV, fixes postmitotiques) : **neurones, muscle, os mature** [10,52].\n- La cible critique est l'**ADN nucléaire** ; la lésion létale est la **cassure double-brin (DSB)**, mal réparée → mort mitotique, apoptose ou mutation (initiation cancéreuse) [6,7].\n- **Effets stochastiques** (cancer, héréditaires) : sans seuil (modèle LNT), probabilité ∝ dose → traduits par les **facteurs de pondération tissulaire w_T** (ICRP 103, Σ = 1) [34,35]. **Effets déterministes / réactions tissulaires** : avec seuil, gravité ∝ dose au-delà du seuil [7,8].\n- **w_T = 0,12** (les plus pondérés) : moelle osseuse, côlon, poumon, estomac, **sein**, tissus restants ; **gonades 0,08** ; vessie/œsophage/foie/thyroïde **0,04** ; surface osseuse/cerveau/glandes salivaires/peau **0,01** [1,34,36].\n- Recalibrage **ICRP 60 → 103** : **sein 0,05 → 0,12** (radiosensibilité réévaluée à la hausse, surtout sujet jeune), **gonades 0,20 → 0,08** (risque héréditaire revu à la baisse) [3,36].\n- **Détriment global ≈ 5,7 % par Sv** (population entière) ; **≈ 4,1 % par Sv** chez le travailleur adulte [11,34].\n- **Seuils de réactions tissulaires (ICRP 118)** : cataracte **0,5 Gy**, dépression hématopoïétique **~0,5 Gy** aigu, stérilité temporaire testiculaire **~0,1 Gy** (permanente ~6 Gy) [7,8].\n- Conséquence réglementaire majeure : la limite de dose équivalente au **cristallin du travailleur est passée de 150 à 20 mSv/an** (moyenne sur 5 ans, max 50 mSv une année) [9,37].\n- En diagnostic, **organe critique et coefficient de dose efficace** : ¹⁸F-FDG **0,019 mSv/MBq → vessie** [13,15] ; ⁶⁸Ga-DOTATATE **0,021–0,024 mSv/MBq → rate** [45] ; ⁶⁸Ga-PSMA-11 **0,022–0,030 mSv/MBq → reins** (et glandes lacrymales) [46,47] ; ⁹⁹ᵐTc-MDP **~0,005–0,006 mSv/MBq → surface osseuse/vessie** [13].\n- En **thérapie radiométabolique**, ce sont les **doses absorbées (Gy)** aux OAR qui comptent, jamais la dose efficace : **moelle < 2 Gy** (¹³¹I, dose au sang) [50], **reins 23 Gy** (¹⁷⁷Lu-PRRT, seuil conservateur) [23,49], **glandes salivaires ~35 Gy** [27,28].\n- **NETTER-1** : SSP très en faveur du ¹⁷⁷Lu-DOTATATE ; la sous-étude dosimétrie retrouve en moyenne **rein 19,4 Gy** et **moelle 1,0 Gy** sur 4 cycles → sous les seuils [25,48].\n- **Pédiatrie** : enfant beaucoup plus radiosensible (organisme en croissance, espérance de vie longue) → activités selon la **carte de dosage EANM (MAJ 2016)**, rendant la dose efficace quasi indépendante du poids [16,18]. Risque de cancer radio-induit **~15 %/Sv avant 10 ans vs ~1 %/Sv à 60 ans** (survivants A-bomb) [31].\n- **France** : NRD ¹⁸F-FDG TEP adulte **≈ 350 MBq** (décision ASN 2019-DC-0667, homologuée le 23 mai 2019) [53,54].\n\n## Fiche-réflexe — OAR par radiopharmaceutique thérapeutique\n\n| Agent | OAR dose-limitant | Limite retenue | Néphro/protection |\n|---|---|---|---|\n| **¹³¹I-NaI** (CTD, hyperthyroïdie) | Moelle (dose au sang) ; glandes salivaires | **Sang < 2 Gy** ; rétention corps entier < 4,4 GBq à 48 h | Stimulation salivaire (citron), hydratation [27,50] |\n| **¹⁷⁷Lu-DOTATATE** (TNE) | **Reins** ; moelle | Rein **23 Gy** ; moelle **2 Gy** | Perfusion d'acides aminés (lysine/arginine) [23,49] |\n| **¹⁷⁷Lu-PSMA** (prostate) | Reins ; glandes salivaires/lacrymales | Rein 23 Gy ; xérostomie fonctionnelle | Surveillance fonction salivaire [46,47] |\n\n## FAQ & pièges par profil\n\n**▸ Profil médecin nucléaire (pièges de QCM)**\n\n- *w_T traduit-il une dose ?* Non : **w_T pondère le détriment stochastique** par organe (effets sans seuil), il sert au calcul de la dose efficace E = Σ w_T·H_T. Il ne s'applique **jamais** à la dosimétrie thérapeutique, qui est déterministe et raisonne en dose absorbée (Gy) [34,7].\n- *Le plus sensible des changements ICRP 60 → 103 ?* Le **sein (0,05 → 0,12)** à la hausse et les **gonades (0,20 → 0,08)** à la baisse — piège classique [3,36].\n- *Organe critique du FDG ?* La **vessie** (et non la cible tumorale) : d'où hydratation + mictions fréquentes comme mesure ALARA, qui réduit aussi la dose aux gonades [13,42].\n- *Pourquoi le rein est-il limitant avant la moelle en PRRT ?* Dans la grande série dosimétrique, le rein atteint 23 Gy avant que la moelle n'atteigne 2 Gy chez la quasi-totalité des patients → **rein dose-limitant** [49].\n\n**▸ Profil clinicien adresseur**\n\n- *Le risque déterministe (cataracte, stérilité) concerne-t-il mon patient en diagnostic ?* Non : les **seuils ICRP 118 ne sont jamais atteints** chez le patient en imagerie standard ; ils deviennent pertinents en thérapie radiométabolique et pour le personnel [7,8].\n- *Faut-il craindre la dose chez l'enfant ?* L'enfant est plus radiosensible, mais les activités sont **adaptées au poids (carte EANM)** pour maintenir une dose efficace maîtrisée ; la justification de l'examen prime [16,18].\n\n**▸ Profil radioprotection / personnel**\n\n- *Quelle est la conséquence pratique d'ICRP 118 pour le manipulateur ?* La **limite cristallin abaissée à 20 mSv/an** impose une surveillance dosimétrique du cristallin lors de la préparation/injection (proximité mains-yeux des seringues) [9,37].\n- *Dose absorbée ou dose efficace ?* Ne jamais confondre : **Gy par organe (déterministe)** vs **mSv corps entier pondéré (stochastique)** — confusion fréquente et source d'erreurs de raisonnement [34,7].",
+        "stats": [
+          {
+            "value": "5,7 %/Sv",
+            "label": "Détriment global (ICRP 103)"
+          },
+          {
+            "value": "0,5 Gy",
+            "label": "Seuil cataracte (ICRP 118)"
+          },
+          {
+            "value": "20 mSv/an",
+            "label": "Limite cristallin travailleur"
+          },
+          {
+            "value": "23 Gy",
+            "label": "Seuil rénal ¹⁷⁷Lu-PRRT"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — dose efficace vs dose absorbée",
+            "text": "Ne jamais appliquer les facteurs de pondération tissulaire w_T à la dosimétrie thérapeutique. Les w_T pondèrent le détriment stochastique (cancer, sans seuil, en mSv corps entier) ; la thérapie radiométabolique raisonne en dose absorbée déterministe (Gy, par organe à risque : moelle < 2 Gy, rein 23 Gy). Confondre les deux conduit à des conclusions fausses [7,34,49]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — hiérarchie mémorisable",
+            "text": "Très radiosensibles (OAR prioritaires) : moelle osseuse rouge (0,5–2 Gy) > spermatogonies/gonades (stérilité testiculaire dès ~0,1 Gy) > cristallin (cataracte 0,5 Gy) > cryptes digestives > glandes salivaires (OAR du ¹³¹I) > thyroïde. Radiorésistants : neurones, muscle, os mature (cellules fixes postmitotiques). Reins et foie sont des cellules réparatrices (type III), radiorésistantes en soi, mais OAR fonctionnels majeurs en thérapie [7,10,52]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse & allaitement",
+            "text": "Grossesse : contre-indication relative en diagnostic (bénéfice/risque), absolue en thérapie ; ¹³¹I formellement contre-indiqué (placenta + thyroïde fœtale dès ~10–12 SA). Allaitement : arrêt définitif pour ¹³¹I-NaI, interruption ~12 h pour ⁹⁹ᵐTc-pertechnétate, aucune interruption requise pour ⁹⁹ᵐTc-sestamibi/tétrofosmine (dose-cible nourrisson < 1 mSv) [29,30]."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers de radioprotection — temps, distance, écran (ALARA) — appliqués à la réduction de dose aux organes radiosensibles du personnel et de l'entourage.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran : les leviers ALARA structurent la protection des tissus radiosensibles du personnel (cristallin, mains) et de l'entourage."
+      },
+      {
+        "title": "E2 - Références, recommandations & liens sortants typés",
+        "text": "Article transversal de radiobiologie/radioprotection appliquée : il fournit le socle conceptuel (radiosensibilité différentielle des tissus) qui sous-tend la dosimétrie interne, le choix des activités, la radioprotection et le suivi des organes à risque en imagerie comme en thérapie radiométabolique. Les références ci-dessous privilégient les sources primaires et les recommandations internationales (ICRP, EANM, SNMMI) et la réglementation française (ASN/ASNR).\n\n## Recommandations & textes de référence\n\n| Domaine | Référence-pivot | Apport |\n|---|---|---|\n| **Pondération tissulaire (stochastique)** | ICRP 103 (2007) [34,35] ; ICRPaedia [1] ; ENS glossary [36] | w_T, dose efficace, détriment 5,7 %/Sv |\n| **Réactions tissulaires (déterministe)** | ICRP 118 (2012) [7,8] ; Boal 2013 [9] ; Barnard BJR 2016 [37] | Seuils (cataracte 0,5 Gy) ; limite cristallin 20 mSv/an |\n| **Méthodologie du détriment** | ICRP 152 (2022) [11] | Révision du calcul du détriment radiologique |\n| **Radiobiologie fondamentale** | Bergonié & Tribondeau [4,5,51] ; Rubin-Casarett [10] ; OncologyMedicalPhysics [6] | Loi historique ; classification cellulaire ; mécanismes ADN |\n| **Dose patient diagnostique** | ICRP 128 (2015) [13] ; Andersson EJNMMI Phys 2014 [39] ; TG36 [38] | Coefficients mSv/MBq, organe critique (~120–338 agents) |\n| **Imagerie FDG & protocole** | EANM tumour imaging v2.0 (2015) [42] / v3.0 (2025) [43] ; mesh phantoms JNM 2021 [40] | Activité, préparation, dosimétrie vessie |\n| **Pédiatrie** | EANM Dosage Card 2016 [16,17] ; Lassmann & Treves 2016 [18,44] ; SNMMI Pediatric Tool [19] | Activités adaptées au poids |\n| **Thérapie ¹³¹I** | SNMMI Practice Guideline ¹³¹I v3.0 [50] ; StatPearls [26] ; dosimétrie salivaire [27,28] | Sang < 2 Gy ; OAR salivaires |\n| **PRRT ¹⁷⁷Lu / TNE** | NETTER-1 (NEJM 2017) [25] ; sous-étude dosimétrie JNM 2025 [48] ; Sandström JNM 2013 [23,45] ; Garske-Román 2018 [49] ; Bergsma 2016 [33] ; Frontiers Chem 2023 [24] | Rein 23 Gy ; moelle 2 Gy ; néphroprotection |\n| **PSMA / prostate** | EJNMMI Phys 2018 [46] ; FDA PSMA-11 label 2020 [47] | OAR reins, glandes salivaires/lacrymales |\n| **Grossesse / allaitement** | IAEA RPOP [30] ; ICRP 106 (via JNMT 2023) [29] | Délais d'interruption, dose fœtale |\n| **Populations sensibles** | Le Guen/SFRP [31] ; OAR pédiatrie radiothérapie [32] | Cancers radio-induits, enfant |\n| **Production ⁹⁹ᵐTc** | Technetium-99m [20] ; StatPearls générateur [21] ; IAEA Radiopharmacy [22] | Générateur ⁹⁹Mo/⁹⁹ᵐTc, CQ |\n| **Réglementation France (NRD)** | Arrêté 23 mai 2019 / ASN 2019-DC-0667 (Légifrance) [53] ; IRSN-ASNR [54] | NRD ¹⁸F-FDG ≈ 350 MBq |\n\n## Liens sortants typés (carte de connaissances)\n\n- **Concepts / scores** : Facteurs de pondération tissulaire w_T (ICRP 103) [34] · Dose efficace · Réactions tissulaires & seuils (ICRP 118) [7] · Détriment radiologique (ICRP 152) [11] · Loi de Bergonié & Tribondeau [5] · Modèle LNT.\n- **Examens (dosimétrie / organe critique)** : ¹⁸F-FDG TEP (vessie) [13] · ⁶⁸Ga-DOTATATE TEP (rate) [45] · ⁶⁸Ga-PSMA-11 TEP (reins) [46] · Scintigraphie osseuse ⁹⁹ᵐTc-MDP (surface osseuse) [13] · Scintigraphie thyroïdienne ¹²³I/¹³¹I.\n- **Thérapeutiques (OAR)** : ¹³¹I-NaI (moelle, salivaires) [50] · ¹⁷⁷Lu-DOTATATE (reins, moelle) [25,49] · ¹⁷⁷Lu-PSMA (reins, salivaires) [47].\n- **Maladies associées** : Tumeurs neuroendocrines · Cancer thyroïdien différencié · Cancer de la prostate · Cataracte radio-induite · Cancers radio-induits.\n- **Radioprotection** : ALARA · NRD médecine nucléaire (ASN/ASNR) [54] · Limite de dose au cristallin [37].\n\n*Style de citation : sources primaires et recommandations datées privilégiées (ICRP / EANM / SNMMI / ASNR). Toutes les valeurs chiffrées des sections sont sourcées par renvoi [n] vers la bibliographie de bas de page. Dernière mise à jour : juin 2026 — profil médecin nucléaire.*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Hiérarchie documentaire à connaître",
+            "text": "Pour la pondération stochastique et le détriment, la référence est ICRP 103 (2007), affinée par ICRP 152 (2022) [34,11]. Pour les seuils déterministes et la limite cristallin, c'est ICRP 118 (2012) [7]. Pour la dose patient diagnostique par radiopharmaceutique, c'est le compendium ICRP 128 (2015) [13]. Ne pas mélanger ces trois corpus : ils répondent à trois questions distinctes (risque stochastique vs réaction tissulaire vs dose patient)."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — vers une dosimétrie individualisée",
+            "text": "Le seuil rénal de 23 Gy en PRRT, extrapolé de la radiothérapie externe, est probablement trop conservateur : les données récentes plaident pour une dosimétrie individualisée (SPECT/CT post-traitement, ¹²⁴I/⁶⁸Ga pré-thérapeutique) plutôt qu'une limite fixe, afin de ne pas sous-traiter des patients dont les reins toléreraient davantage [48,49]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique reliant l'imagerie (sélection, dosimétrie prédictive) et la thérapie radiométabolique, avec surveillance des organes à risque dose-limitants (reins, moelle, glandes salivaires).",
+        "figureCaption": "Fig. 2 — Boucle théranostique : la radiosensibilité des organes sains définit les OAR dose-limitants (rein 23 Gy, moelle 2 Gy) qui bornent l'activité administrée [23,49,50]."
+      }
+    ]
+  }
+}

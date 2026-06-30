@@ -1,0 +1,20 @@
+[
+  {
+    "severity": "minor",
+    "where": "Incohérence interne sur le coefficient de détriment nominal (sections A1/B1/D1 vs C2/identityCard/quiz Q12)",
+    "problem": "L'article donne tantôt '5,7 %/Sv' (A1, B1, D1, points-clés E1) tantôt '5,5–5,7 %/Sv' (C2, identityCard, quiz). La valeur ICRP 103 du détriment TOTAL (cancer + héréditaire) pour la population entière est 5,7×10⁻²/Sv ; la valeur 5,5×10⁻²/Sv correspond au détriment CANCER SEUL (uniforme). Présenter '5,5–5,7' comme une fourchette du détriment total est imprécis (mélange deux grandeurs distinctes). Pour les travailleurs, l'article cite ~4,1 %/Sv : c'est le cancer seul ; le détriment total travailleurs ICRP 103 est ~4,2×10⁻²/Sv.",
+    "fix": "Harmoniser sur 5,7×10⁻²/Sv pour le détriment TOTAL population (et 4,2×10⁻²/Sv travailleurs), en réservant 5,5 et 4,1 %/Sv au détriment cancer seul si l'on souhaite distinguer les deux composantes. Supprimer la fourchette '5,5–5,7' qui amalgame cancer-seul et total."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A4 / synthèse — affirmation '≈ 2/3 des dommages des photons via action indirecte'",
+    "problem": "Le chiffre classiquement enseigné est que ~2/3 (≈ 65 %) des lésions de l'ADN par rayonnement à faible TEL résultent de l'action indirecte (radiolyse de l'eau). Cette valeur est une approximation pédagogique répandue mais variable selon les sources (60–70 %) ; elle est ici présentée comme un fait précis. Non erronée, mais à nuancer.",
+    "fix": "Reformuler en 'environ 60–70 % (≈ deux tiers)' pour refléter l'incertitude de la littérature, ou conserver '≈ 2/3' en le qualifiant d'ordre de grandeur."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A4 / D2 — w_R des neutrons et facteur EBR des émetteurs alpha",
+    "problem": "En B1, w_R alpha = 20 (correct, ICRP 103) et neutrons '2,5 à 20 selon l'énergie' : la fourchette ICRP 103 pour les neutrons est en réalité une fonction continue allant d'un minimum de 2,5 jusqu'à un MAXIMUM de ~20 (pic vers 1 MeV). La borne basse de 2,5 correspond aux très basses/hautes énergies. Formulation acceptable mais la borne 2,5 peut induire en erreur (le minimum réel de la courbe est 2,5 aux extrêmes, pas une valeur 'plancher' uniforme).",
+    "fix": "Préciser 'de 2,5 (aux énergies extrêmes) jusqu'à ~20 au pic (~1 MeV)' pour éviter de laisser croire à un plancher de 2,5."
+  }
+]
