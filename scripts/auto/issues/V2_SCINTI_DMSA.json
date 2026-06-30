@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "medecin_nuc > E20 - Cas cliniques commentés > Cas 2 (séquelle)",
+    "problem": "Erreur de cotation de Goldraich, en contradiction interne avec les définitions données ailleurs dans la même fiche. Le cas décrit « deux défects corticaux du rein gauche » puis conclut « (Goldraich grade 2 : > 2 cicatrices, parenchyme intermédiaire normal) ». Or, selon la classification de Goldraich (et selon les définitions énoncées par cette même fiche en B10, C12 et dans le quiz), le grade 1 = ≤ 2 cicatrices et le grade 2 = > 2 cicatrices. Deux cicatrices correspondent donc à un GRADE 1, pas à un grade 2. Le texte se contredit lui-même (« deux défects » étiquetés « > 2 cicatrices »). Erreur factuelle dans un cas pédagogique, susceptible d'induire une mauvaise cotation par l'apprenant.",
+    "fix": "Soit corriger le grade en « Goldraich grade 1 (≤ 2 cicatrices) », soit modifier le cas pour décrire « trois défects ou plus » afin de justifier le grade 2. Harmoniser avec les définitions de B10/C12/quiz (grade 1 = ≤2 ; grade 2 = >2)."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc > A5 (tableau Se/Sp) et E20 Cas 1 : « Se 92,1 % / Sp 93,8 % en TEMP au niveau rénal »",
+    "problem": "Valeur exacte mais attribution à vérifier : dans Majd 2001 (Radiology, modèle porcin), les chiffres Se 94,1 % / Sp 95,4 % sont au niveau ZONAL et Se 92,1 % / Sp 93,8 % au niveau RÉNAL. La recherche de référence et la publication confirment ces deux jeux de valeurs. La fiche utilise correctement 92,1/93,8 « au niveau rénal », ce qui est cohérent. Pas d'erreur en soi, mais la carte d'identité (« Se ~91 % / Sp ~99 % ») et D17 (« Sp ~99 % ») mélangent les chiffres du modèle porcin (Sp ~94 %) avec des chiffres de séries cliniques (Sp ~99 %) sans toujours préciser la source — risque de confusion sur l'origine de la spécificité ~99 %.",
+    "fix": "Préciser systématiquement le référentiel : Sp ~94 % = modèle porcin Majd 2001 (niveau rénal) ; Sp ~99 % = séries cliniques. Éviter de présenter « Se ~91 % / Sp ~99 % » comme issu du modèle porcin sur la carte d'identité."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc > A5 tableau d'interprétation DRF (et A1/E21) : « > 55 % = supranormal »",
+    "problem": "Le terme « supranormal » pour une fonction relative > 55 % est repris de la source PMC11335390 et donc sourcé, mais il est cliniquement trompeur s'il n'est pas explicité : une fonction relative > 55 % d'un côté traduit presque toujours une ALTÉRATION du rein controlatéral (la fonction relative étant un partage à 100 %), et non un rein réellement « supra-normal ». La fiche le mentionne entre parenthèses (« controlatéral altéré ») en A5 mais pas partout (A1, E21).",
+    "fix": "Ajouter systématiquement la précision « reflète une atteinte du rein controlatéral » à chaque occurrence de « supranormal/> 55 % » pour éviter l'interprétation erronée d'un rein hyperfonctionnel."
+  },
+  {
+    "severity": "minor",
+    "where": "Numérotation des sections (sauts E22 -> E25, absence de E23/E24)",
+    "problem": "L'article passe de la section 'E22 - FAQ & pièges d'examen' directement à 'E25 - Références & liens sortants typés', sans E23 ni E24. Le texte de E22 mentionne d'ailleurs explicitement '(Quiz interactif §23 et fiche de révision téléchargeable §24 : fonctionnalités de la plateforme à activer.)' : ce sont donc des sections volontairement non rédigées (fonctionnalités plateforme). Ce n'est PAS une fabrication, mais la numérotation discontinue peut surprendre le lecteur. Aucune source inventée n'est en cause.",
+    "fix": "Soit renommer la section de références en 'E23', soit conserver E25 mais ajouter une note de bas de page expliquant que §23 (quiz) et §24 (fiche) sont des modules interactifs non textuels — ce qui est déjà partiellement fait dans E22. Acceptable en l'état."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D15 - Dosimétrie, attribution de la valeur '0,0088 mSv/MBq' à la CIPR 128 [11]",
+    "problem": "La valeur de dose efficace adulte CIPR 128 de 0,0088 mSv/MBq est plausible et cohérente (le DMSA est bien le radiopharmaceutique rénal le plus irradiant, ~le double des autres, ce qui est corroboré par les sources [28] et la littérature Monte-Carlo [10]). La vérification directe du chiffre exact dans le PDF CIPR 128 n'a pas été possible (paywall SAGE), mais aucune incohérence n'a été détectée et l'ordre de grandeur est confirmé par recherche. Risque de fabrication faible mais non nul.",
+    "fix": "Optionnel : confirmer la valeur exacte 0,0088 mSv/MBq sur la table CIPR 128 (entrée DMSA) si accès disponible. La valeur SFMN concordante (0,0086 mSv/MBq [2]) est solidement référencée et suffit à étayer l'affirmation."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D15 et infoBox - 'temps de résidence rénal ≈ 3,7 h (CIPR 128)'",
+    "problem": "La valeur précise de temps de résidence rénal de 3,7 h attribuée à la CIPR 128 [11] n'a pas pu être vérifiée directement (source paywall). Elle est cohérente avec la rétention corticale prolongée décrite, mais c'est le type de chiffre précis qui mérite confirmation.",
+    "fix": "Vérifier la valeur sur le modèle biocinétique CIPR 128 du DMSA, ou la présenter de façon moins catégorique (ex. 'temps de résidence rénal prolongé') si la source exacte ne peut être confirmée."
+  }
+]

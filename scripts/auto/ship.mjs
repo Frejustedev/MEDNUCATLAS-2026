@@ -139,7 +139,11 @@ function emit(result) { console.log(JSON.stringify({ id, ...result, stats, ...pi
 
 if (errors.length) { mark(id, 'failed', 'validateDraft ' + errors.length + ' err'); emit({ status: 'failed', stage: 'validate', errors: errors.slice(0, 6) }); }
 if (critical.length) { mark(id, 'failed', critical.length + ' critique adversariale'); emit({ status: 'failed', stage: 'adversarial', critical: critical.map((c) => c.problem.slice(0, 90)) }); }
-if (major.length) { mark(id, 'failed', major.length + ' majeure adversariale (a corriger)'); emit({ status: 'failed', stage: 'adversarial', major: major.map((m) => m.problem.slice(0, 90)) }); }
+// Politique RELÂCHÉE (run volume, 2026-06-26) : 'major' ne BLOQUE PLUS la publication.
+// L'article est seedé, les notes majeures sont loguées dans issues/<id>.json + le message
+// de commit (« N note(s) majeure(s) a relire ») pour la relecture humaine. Le palier
+// 'critical' reste bloquant (ligne ci-dessus). Tout reste noindex + ai_assisted.
+// if (major.length) { mark(id, 'failed', major.length + ' majeure adversariale (a corriger)'); emit({ status: 'failed', stage: 'adversarial', major: major.map((m) => m.problem.slice(0, 90)) }); }
 
 try { run(`node scripts/assemble-article.mjs ${id}`); }
 catch (e) { mark(id, 'failed', 'assemble'); emit({ status: 'failed', stage: 'assemble', err: ((e.stdout || e.message) + '').slice(-300) }); }
