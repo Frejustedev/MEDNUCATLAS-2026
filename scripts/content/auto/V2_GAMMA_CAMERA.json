@@ -1,0 +1,1330 @@
+{
+  "id": "V2_GAMMA_CAMERA",
+  "cat": "instrumentation",
+  "catLabel": "Instrumentation",
+  "title": "La gamma-caméra (caméra d’Anger) : principe et composants",
+  "difficulty": "avancé",
+  "tags": [
+    "gamma-caméra",
+    "caméra d'Anger",
+    "collimateur",
+    "NaI(Tl)",
+    "photomultiplicateur",
+    "CZT",
+    "TEMP",
+    "SPECT",
+    "scintigraphie",
+    "logique d'Anger",
+    "Tc-99m",
+    "contrôle qualité"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] SPECT detectors: the Anger Camera and beyond — Peterson & Furenlid, Phys Med Biol 2011 (PMC3178269)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3178269/"
+    },
+    {
+      "title": "[2] Physics:Gamma camera — HandWiki",
+      "url": "https://handwiki.org/wiki/Physics:Gamma_camera"
+    },
+    {
+      "title": "[3] Imaging of gamma emitters using scintillation cameras — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168900204004760"
+    },
+    {
+      "title": "[4] The Gamma Camera: Performance Characteristics — Radiology Key",
+      "url": "https://radiologykey.com/the-gamma-camera-performance-characteristics/"
+    },
+    {
+      "title": "[5] The Gamma Camera: Performance Characteristics — Clinical Tree",
+      "url": "https://clinicalpub.com/the-gamma-camera-performance-characteristics/"
+    },
+    {
+      "title": "[6] Design and characterization of a low profile NaI(Tl) gamma camera for dedicated molecular breast tomosynthesis (PMC5565202)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5565202/"
+    },
+    {
+      "title": "[7] Characterization of parallel-hole collimator using Monte Carlo Simulation (PMC4379671)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4379671/"
+    },
+    {
+      "title": "[8] Characterisation of a hand-held CZT-based gamma camera for 177Lu imaging (PMC7343677)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7343677/"
+    },
+    {
+      "title": "[9] Analytical and experimental FWHM of a gamma camera: theoretical and practical issues (PMC4319318)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4319318/"
+    },
+    {
+      "title": "[10] Evaluation of Improved Imaging Properties with Tungsten-Based Parallel-Hole Collimators: A Monte Carlo Study (PMC11199031)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11199031/"
+    },
+    {
+      "title": "[11] Impact of Wolfmet Tungsten Alloys as Parallel-Hole Collimator Material on SPECT Image Quality and Functional Parameters: A SIMIND Monte Carlo Study (PMC10581757)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10581757/"
+    },
+    {
+      "title": "[12] Gamma Camera Collimator Types and Design Trade-offs — Bohrium Sciencepedia",
+      "url": "https://www.bohrium.com/en/sciencepedia/feynman/foundations_of_medical_imaging_undergraduate-gamma_camera_collimator_types_and_design_trade-offs"
+    },
+    {
+      "title": "[13] CZT cameras: A technological jump for myocardial perfusion SPECT — Imbert & Marie, J Nucl Cardiol (Springer 2016)",
+      "url": "https://link.springer.com/article/10.1007/s12350-015-0216-2"
+    },
+    {
+      "title": "[14] Evaluation of CZT gamma cameras for human SPECT and small FOV imaging — JNM 2018 (suppl 1, abstract 220)",
+      "url": "https://jnm.snmjournals.org/content/59/supplement_1/220"
+    },
+    {
+      "title": "[15] Simultaneous dual-isotope SPECT imaging using a cardiac CZT camera with various Tc-99m to I-123 ratios (PMC12535947)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12535947/"
+    },
+    {
+      "title": "[16] Filtering in SPECT Image Reconstruction — Lyra & Ploussi, Int J Biomed Imaging 2011",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2011/693795"
+    },
+    {
+      "title": "[17] Comparison of Different Types of Commercial FBP and OSEM SPECT Reconstruction Software — JNMT 37/3/179",
+      "url": "https://tech.snmjournals.org/content/37/3/179"
+    },
+    {
+      "title": "[18] Adaptive Bayesian Iterative Transmission Reconstruction for Attenuation Correction in Myocardial Perfusion Imaging with SPECT/Slow-Rotation Low-Output CT Systems (PMC1893015)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1893015/"
+    },
+    {
+      "title": "[19] Quality Control of Gamma Camera with SPECT Systems — ResearchGate",
+      "url": "https://www.researchgate.net/publication/317731595_Quality_Control_of_Gamma_Camera_with_SPECT_Systems"
+    },
+    {
+      "title": "[20] IAEA Quality Control Atlas for Scintillation Camera Systems (STI/PUB/1141)",
+      "url": "https://www-pub.iaea.org/MTCD/publications/PDF/Pub1141_web.pdf"
+    },
+    {
+      "title": "[21] EANM Paediatric Dosage Card (2016 version)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[22] The new EANM paediatric dosage card — Lassmann et al., Eur J Nucl Med Mol Imaging 2007",
+      "url": "https://www.researchgate.net/publication/23975140_The_new_EANM_paediatric_dosage_card"
+    },
+    {
+      "title": "[23] TechneLite (Technetium Tc 99m Generator) — DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3ae14c6b-3daf-4dd1-bbdb-e990fe8100e4"
+    },
+    {
+      "title": "[24] Mo99-Tc99m Generator — StatPearls (NBK565854)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/"
+    },
+    {
+      "title": "[25] Molybdenum-99/Technetium-99m Production and Use — NCBI Bookshelf (Medical Isotope Production without Highly Enriched Uranium, NBK215133)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215133/"
+    },
+    {
+      "title": "[26] Technetium-99m radiopharmaceutical preparation by surface adsorbed stannous ions — PubMed 3675734",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3675734/"
+    },
+    {
+      "title": "[27] Tc-99m radiopharmaceuticals and in-house chromatographic methods — European Pharmaceutical Review",
+      "url": "https://www.europeanpharmaceuticalreview.com/article/103988/tc-99m-radiopharmaceuticals-and-in-house-chromatographic-methods/"
+    },
+    {
+      "title": "[28] Technetium-99m MAG3: Labeling Conditions and Quality Control — JNMT 21/2/69",
+      "url": "https://tech.snmjournals.org/content/jnmt/21/2/69.full.pdf"
+    },
+    {
+      "title": "[29] SNMMI Procedure Standard for Bone Scintigraphy 4.0 — JNMT 46/4/398",
+      "url": "https://tech.snmjournals.org/content/46/4/398"
+    },
+    {
+      "title": "[30] SNMMI Practice Guideline for Bone Scintigraphy 4.0 (PDF, updated 2024)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2023/Bone%20Scintigraphy_UPDATED2024.pdf"
+    },
+    {
+      "title": "[31] Guide SFMN/CNP-MN pour la rédaction de protocole pour la scintigraphie osseuse (v2.0)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Os-V2.0.pdf"
+    },
+    {
+      "title": "[32] Guide SFMN pour la rédaction de protocoles pour la scintigraphie pulmonaire — CNP-MN",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/11/Guide-SFMN-scintigraphie-pulmonaire_.pdf"
+    },
+    {
+      "title": "[33] Diagnostic Performance of CMR, SPECT, and PET Imaging for the Identification of Coronary Artery Disease: A Meta-Analysis — Front Cardiovasc Med 2021",
+      "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2021.621389/full"
+    },
+    {
+      "title": "[34] Diagnostic Performance of Noninvasive Myocardial Perfusion Imaging Using SPECT, CMR, and PET for the Detection of Obstructive CAD: A Meta-Analysis — Jaarsma et al., JACC 2012",
+      "url": "https://www.jacc.org/doi/10.1016/j.jacc.2011.12.040"
+    },
+    {
+      "title": "[35] Bone Scan — StatPearls (NBK531486)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK531486/"
+    },
+    {
+      "title": "[36] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals: a Compendium — Mattsson et al., Ann ICRP 2015 (SAGE)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[37] Radiation dosimetry for technetium-99m-MAG3, technetium-99m-DTPA, and iodine-131-OIH based on human biodistribution studies — PubMed 1530968",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1530968/"
+    },
+    {
+      "title": "[38] Radiation Dosimetry of Technetium-99m-DMSA in Children — JNM 37/8/1336",
+      "url": "https://jnm.snmjournals.org/content/jnumed/37/8/1336.full.pdf"
+    },
+    {
+      "title": "[39] Technetium 99m Sestamibi — StatPearls (NBK553148)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK553148/"
+    },
+    {
+      "title": "[40] Current Status of Radionuclide Renal Cortical Imaging in Pyelonephritis — JNMT 47/4/309",
+      "url": "https://tech.snmjournals.org/content/47/4/309"
+    },
+    {
+      "title": "[41] EANM/ESC procedural guidelines for myocardial perfusion imaging in nuclear cardiology — Hesse et al., EJNMMI 2005",
+      "url": "https://eanm.org/wp-content/uploads/2025/04/2015_myocardial_perfusion.pdf"
+    },
+    {
+      "title": "[42] Performance of cardiac cadmium-zinc-telluride gamma camera imaging in coronary artery disease: a review from the cardiovascular committee of the EANM — Eur J Nucl Med Mol Imaging 2016 (PubMed 27542010)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27542010/"
+    },
+    {
+      "title": "[43] Nuclear Imaging — The Gamma Camera — Radiology Key",
+      "url": "https://radiologykey.com/nuclear-imaging-the-gamma-camera-2/"
+    },
+    {
+      "title": "[44] Development of NEMA-based Software for Gamma Camera Quality Control (PMC3043858)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3043858/"
+    },
+    {
+      "title": "[45] SPECT: Quality Control Procedures and Artifact Identification — Harkness et al., JNMT 11/2/55",
+      "url": "https://tech.snmjournals.org/content/jnmt/11/2/55.full.pdf"
+    },
+    {
+      "title": "[46] Quantitative Accuracy of Clinical 99mTc SPECT/CT Using OSEM with 3D Resolution Recovery, Attenuation, and Scatter Correction — Zeintl et al., J Nucl Med 2010;51:921",
+      "url": "https://jnm.snmjournals.org/content/51/6/921"
+    },
+    {
+      "title": "[47] The Impact of Dual and Triple Energy Window Scatter Correction on I-123 Postsurgical Thyroid SPECT/CT Imaging Using a Phantom with Small Thyroid Remnants (PMC10821084)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10821084/"
+    },
+    {
+      "title": "[48] Evidence for myocardial CT perfusion imaging in the diagnosis of hemodynamically significant coronary artery disease (PMC4329165)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4329165/"
+    },
+    {
+      "title": "[49] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals: a Compendium (PDF, Ann ICRP, SAGE)",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/0146645314558019"
+    },
+    {
+      "title": "[50] Interpreting myocardial perfusion scintigraphy using single-photon emission computed tomography. Part 1 (PMC5701596)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5701596/"
+    },
+    {
+      "title": "[51] Prognostic validation of a 17-segment score derived from a 20-segment score for myocardial perfusion SPECT interpretation — Berman et al., J Nucl Cardiol (PubMed 15295410)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15295410/"
+    },
+    {
+      "title": "[52] Role of myocardial perfusion imaging for risk stratification in suspected or known coronary artery disease — Heart 2003 (PMC1767933)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1767933/"
+    },
+    {
+      "title": "[53] SPECT/CT in the Evaluation of Suspected Skeletal Pathology — Tomography 2021 (PMC8544734)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8544734/"
+    },
+    {
+      "title": "[54] The EANM practice guidelines for bone scintigraphy — Eur J Nucl Med Mol Imaging 2016 (PMC4932135)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4932135/"
+    },
+    {
+      "title": "[55] Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy — Toxics 2023 (PMC10610792)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10610792/"
+    },
+    {
+      "title": "[56] Critical Organ Dose Estimation from Tc-99m-MIBI in Nuclear Medicine Cardiology Based on Distribution Data in Rats — Frontiers in Biomedical Technology",
+      "url": "https://fbt.tums.ac.ir/index.php/fbt/article/view/460"
+    },
+    {
+      "title": "[57] 99mTc-MAG3: Image Wisely — Taylor et al., Radiology 2017 (PMC5495132)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5495132/"
+    },
+    {
+      "title": "[58] Nuclear medicine artifact and image quality — J Nucl Med Technol 1991 (ResearchGate)",
+      "url": "https://www.researchgate.net/publication/21278753_Nuclear_medicine_artifact_and_image_quality"
+    },
+    {
+      "title": "[59] Recognizing and preventing artifacts with SPECT and PET imaging — Radiology Key",
+      "url": "https://radiologykey.com/recognizing-and-preventing-artifacts-with-spect-and-pet-imaging/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "microscope",
+        "label": "Type d'appareil",
+        "value": "Détecteur à scintillation monophotonique (Anger)"
+      },
+      {
+        "icon": "flask",
+        "label": "Cristal détecteur",
+        "value": "NaI(Tl), ~54 × 40 × 1 cm [2]"
+      },
+      {
+        "icon": "zap",
+        "label": "Rendement lumineux NaI(Tl)",
+        "value": "~38–40 photons/keV [1][2]"
+      },
+      {
+        "icon": "atom",
+        "label": "Photodétection",
+        "value": "30–100 photomultiplicateurs (réseau hexagonal) [1]"
+      },
+      {
+        "icon": "target",
+        "label": "Collimateur de référence",
+        "value": "Trous parallèles plomb (LEHR pour 140 keV) [7]"
+      },
+      {
+        "icon": "activity",
+        "label": "Résolution énergétique @140 keV",
+        "value": "~10 % FWHM (NaI) ; <5–6 % (CZT) [1][13]"
+      },
+      {
+        "icon": "pin",
+        "label": "Résolution spatiale intrinsèque",
+        "value": "~2,9–4,5 mm FWHM (Tc-99m) [4]"
+      },
+      {
+        "icon": "list",
+        "label": "Résolution système LEHR @10 cm",
+        "value": "~7,2–7,4 mm FWHM [8][9]"
+      },
+      {
+        "icon": "droplets",
+        "label": "Sensibilité système LEHR",
+        "value": "~96–109 cps/MBq [8]"
+      },
+      {
+        "icon": "clock",
+        "label": "Taux de comptage max",
+        "value": "~10⁵ coups/s (NaI) [2]"
+      },
+      {
+        "icon": "radiation",
+        "label": "Isotope pivot",
+        "value": "⁹⁹ᵐTc, γ 140 keV, T½ 6,0 h [23][24]"
+      },
+      {
+        "icon": "stetho",
+        "label": "Modes d'acquisition",
+        "value": "Planaire 2D + TEMP/SPECT 3D"
+      },
+      {
+        "icon": "dna",
+        "label": "CZT (semi-conducteur)",
+        "value": "Conversion directe, ~30 000 e⁻/photon @140 keV [13]"
+      },
+      {
+        "icon": "shield",
+        "label": "Contrôle qualité socle",
+        "value": "Uniformité quotidienne (NEMA NU-1) [19][20]"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "TEMP/SPECT"
+      },
+      {
+        "type": "examen",
+        "label": "TEMP/TDM (SPECT/CT)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse"
+      },
+      {
+        "type": "examen",
+        "label": "TEMP de perfusion myocardique"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie thyroïdienne"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie rénale (MAG3/DMSA)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie pulmonaire (V/Q)"
+      },
+      {
+        "type": "examen",
+        "label": "TEP (caméra à coïncidence)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-pertechnétate"
+      },
+      {
+        "type": "traceur",
+        "label": "Générateur ⁹⁹Mo/⁹⁹ᵐTc"
+      },
+      {
+        "type": "traceur",
+        "label": "¹²³I-MIBG"
+      },
+      {
+        "type": "score",
+        "label": "Summed Stress Score (SSS)"
+      },
+      {
+        "type": "score",
+        "label": "Modèle à 17 segments AHA"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹³¹I-MIBG"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel composant de la gamma-caméra ne laisse passer que les photons d'incidence quasi perpendiculaire et conditionne la formation de l'image ?",
+        "options": [
+          "Le cristal NaI(Tl)",
+          "Le collimateur",
+          "Le photomultiplicateur",
+          "L'analyseur d'amplitude"
+        ],
+        "answer": 1,
+        "explanation": "Le collimateur (le plus souvent en plomb, à trous parallèles séparés par des septa) absorbe les photons obliques et ne transmet que ceux quasi perpendiculaires à la face du détecteur, condition sine qua non de la projection de l'image [7].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Qui a inventé la caméra à scintillation portant son nom à la fin des années 1950 ?",
+        "options": [
+          "Godfrey Hounsfield",
+          "Hal O. Anger",
+          "Benedict Cassen",
+          "David Kuhl"
+        ],
+        "answer": 1,
+        "explanation": "Hal O. Anger, à Berkeley, remplaça la combinaison film-écran par un grand cristal NaI(Tl) unique couplé à plusieurs photomultiplicateurs ; son prototype comportait un cristal de ~13 cm de diamètre, ¼ pouce d'épaisseur, et 7 PM [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment la logique d'Anger calcule-t-elle la position (X,Y) d'un événement détecté ?",
+        "options": [
+          "Par le PM ayant reçu le plus de lumière",
+          "Par le barycentre pondéré des signaux de tous les PM",
+          "Par triangulation entre deux collimateurs",
+          "Par le temps de vol du photon"
+        ],
+        "answer": 1,
+        "explanation": "La position est obtenue comme barycentre (centre de gravité) pondéré des signaux des PM, tandis que l'énergie résulte de la somme de tous les signaux [1][3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le rendement lumineux approximatif du cristal NaI(Tl) ?",
+        "options": [
+          "~4 photons/keV",
+          "~40 photons/keV",
+          "~400 photons/keV",
+          "~4000 photons/keV"
+        ],
+        "answer": 1,
+        "explanation": "Le NaI(Tl) produit environ 38–40 photons lumineux par keV déposé, l'un des rendements les plus élevés des scintillateurs, déterminant pour les résolutions énergétique et spatiale [1][2].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est l'énergie du photon gamma du ⁹⁹ᵐTc, isotope d'environ 80 % des examens monophotoniques ?",
+        "options": [
+          "80 keV",
+          "140 keV",
+          "364 keV",
+          "511 keV"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹ᵐTc émet un photon γ pur de 140 keV, idéalement adapté au cristal NaI(Tl) et à la collimation par le plomb [25].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est l'ordre de grandeur de la résolution en énergie (FWHM) d'une caméra NaI(Tl) à 140 keV ?",
+        "options": [
+          "~1 %",
+          "~10 %",
+          "~25 %",
+          "~50 %"
+        ],
+        "answer": 1,
+        "explanation": "La résolution énergétique d'une caméra d'Anger NaI(Tl) à 140 keV est d'environ 10 % FWHM (mesures ~9,8–11 %) ; le CZT fait environ deux fois mieux [1][6].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "À 140 keV, par rapport au NaI(Tl), un détecteur CZT génère environ :",
+        "options": [
+          "10× moins de porteurs de charge",
+          "Le même nombre de porteurs",
+          "~20× plus d'électrons",
+          "~1000× plus d'électrons"
+        ],
+        "answer": 2,
+        "explanation": "Le CZT, semi-conducteur à conversion directe, génère ~30 000 électrons à 140 keV, soit environ 20 fois plus qu'un cristal NaI(Tl) scintillant, d'où une bien meilleure résolution énergétique [13].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel avantage majeur le CZT confère-t-il en cardiologie nucléaire ?",
+        "options": [
+          "Une rotation plus rapide du statif",
+          "Une meilleure séparation spectrale permettant l'imagerie double isotope",
+          "L'élimination du collimateur",
+          "L'absence de contrôle qualité"
+        ],
+        "answer": 1,
+        "explanation": "La résolution énergétique du CZT (<5–6 %) autorise une fenêtre plus étroite et facilite les protocoles double isotope (ex. Tc-99m/I-123), tout en réduisant d'environ 25 % le temps d'acquisition sur caméras dédiées (D-SPECT) [13].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le compromis fondamental d'un collimateur à trous parallèles ?",
+        "options": [
+          "Coût contre poids",
+          "Résolution spatiale contre sensibilité",
+          "Énergie contre champ de vue",
+          "Vitesse contre dose patient"
+        ],
+        "answer": 1,
+        "explanation": "Des trous plus petits et plus longs (LEHR) améliorent la résolution mais réduisent la sensibilité ; des trous plus larges (LEGP) gagnent en sensibilité au prix de la résolution [12].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi un collimateur haute énergie est-il obligatoire pour les émetteurs comme le ¹³¹I ?",
+        "options": [
+          "Pour augmenter la lumière du cristal",
+          "Pour limiter la pénétration septale par des septa plus épais",
+          "Pour réduire la dose au patient",
+          "Pour accélérer le comptage"
+        ],
+        "answer": 1,
+        "explanation": "Plus l'énergie photonique augmente, plus les septa doivent être épais pour absorber les photons obliques et limiter la pénétration septale, au prix de la sensibilité et de la résolution [12].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel coefficient d'atténuation linéique le NaI(Tl) présente-t-il à 140 keV ?",
+        "options": [
+          "0,15 cm⁻¹",
+          "2,64 cm⁻¹",
+          "10,5 cm⁻¹",
+          "94 cm⁻¹"
+        ],
+        "answer": 1,
+        "explanation": "À 140 keV, μ = 2,64 cm⁻¹ pour le NaI(Tl), soit une efficacité de détection totale de 94 % pour un cristal de ½ pouce [1].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel test de contrôle qualité est le plus important et réalisé quotidiennement sur une gamma-caméra ?",
+        "options": [
+          "Le centre de rotation",
+          "L'uniformité planaire (flood)",
+          "La résolution énergétique",
+          "La sensibilité tomographique"
+        ],
+        "answer": 1,
+        "explanation": "L'uniformité planaire (intrinsèque sans collimateur, journalière) est le test CQ central : elle mesure les déviations à une distribution de comptage parfaitement uniforme et prévient les artefacts en anneau [19].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "En TEMP, quelle méthode de reconstruction est aujourd'hui préférée à la rétroprojection filtrée ?",
+        "options": [
+          "La transformée de Fourier directe",
+          "La reconstruction itérative OSEM/MLEM",
+          "L'interpolation bilinéaire",
+          "Le filtrage médian"
+        ],
+        "answer": 1,
+        "explanation": "La reconstruction itérative OSEM/MLEM offre une meilleure qualité visuelle en zones de faible comptage et intègre les corrections d'atténuation, de diffusion et de résolution dépendante de la profondeur [17].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Un défaut de centre de rotation (COR) en TEMP produit typiquement :",
+        "options": [
+          "Une surestimation de l'énergie",
+          "Des artefacts en anneau sur les coupes transaxiales",
+          "Une perte totale du signal",
+          "Une augmentation de la sensibilité"
+        ],
+        "answer": 1,
+        "explanation": "Un désalignement du centre de rotation décale les projections lors de la reconstruction et génère des artefacts en anneau qui peuvent mimer un déficit ischémique [45][59].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Le ⁹⁹ᵐTc utilisé en routine est obtenu :",
+        "options": [
+          "Directement par un cyclotron à chaque examen",
+          "Par élution d'un générateur ⁹⁹Mo/⁹⁹ᵐTc",
+          "Par fission de l'uranium au lit du patient",
+          "Par décroissance du ¹²³I"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹Mo (T½ ≈ 66 h) décroît en ⁹⁹ᵐTc (T½ = 6,0 h), élué sous forme de pertechnétate par passage de sérum physiologique sur une colonne d'alumine [23][24].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle réaction chimique permet le marquage d'un kit froid par le pertechnétate ?",
+        "options": [
+          "Oxydation du Tc de +IV vers +VII",
+          "Réduction du Tc de +VII vers +IV par le chlorure stanneux",
+          "Précipitation par l'aluminium",
+          "Sublimation thermique"
+        ],
+        "answer": 1,
+        "explanation": "L'agent réducteur (chlorure stanneux, SnCl₂) du kit lyophilisé réduit le pertechnétate du degré +VII vers +IV, ce qui permet la complexation du Tc par le ligand [26].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel artefact en \"étoile\" peut apparaître autour d'un foyer très intense en imagerie au ¹²³I avec un collimateur basse énergie ?",
+        "options": [
+          "L'effet de volume partiel",
+          "La pénétration septale",
+          "Le speckle",
+          "La saturation du PM"
+        ],
+        "answer": 1,
+        "explanation": "Le ¹²³I émet aussi des photons de haute énergie (~529 keV) qui traversent les septa fins d'un collimateur basse énergie, créant un artefact en étoile ; un collimateur moyenne énergie (MEGP) limite ce phénomène [5][12].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "La précision quantitative d'une TEMP itérative 3D avec corrections atteint environ :",
+        "options": [
+          "± 50 %",
+          "± 25 %",
+          "± 5 %",
+          "± 0,1 %"
+        ],
+        "answer": 2,
+        "explanation": "Après corrections d'atténuation (CT), de diffusion, du temps mort et de la décroissance avec étalonnage croisé, la reconstruction OSEM 3D atteint une exactitude d'environ ± 5 % de la concentration d'activité vraie [46].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "La gamma-caméra (Anger) détecte les photons γ et forme une image planaire 2D ou tomographique 3D (TEMP/SPECT) de la distribution du radiopharmaceutique [1][2].",
+        "Chaîne de détection en 4 étages : collimation → scintillation dans NaI(Tl) → conversion/amplification par les photomultiplicateurs → logique d'Anger (position par barycentre, énergie par sommation) [1][3].",
+        "Le cristal NaI(Tl) (~54 × 40 × 1 cm, ~40 photons/keV, μ = 2,64 cm⁻¹ à 140 keV) offre 94 % d'efficacité pour ½ pouce et un taux de comptage jusqu'à ~10⁵ cps [1][2].",
+        "Le collimateur définit la résolution du système et impose le compromis résolution/sensibilité ; LEHR pour 140 keV, haute énergie obligatoire pour le ¹³¹I [7][12].",
+        "Performances NaI à 140 keV : résolution énergétique ~10 % FWHM, résolution intrinsèque ~2,9–4,5 mm, résolution système LEHR ~7,2–7,4 mm à 10 cm [1][4][8].",
+        "Le CZT (semi-conducteur à conversion directe, ~20× plus de porteurs à 140 keV) double la résolution énergétique (<5–6 %) et permet l'imagerie double isotope sur caméras cardiaques dédiées [13].",
+        "Le ⁹⁹ᵐTc (γ 140 keV, T½ 6,0 h, issu du générateur ⁹⁹Mo/⁹⁹ᵐTc) est l'isotope d'environ 80 % des examens monophotoniques [24][25].",
+        "Reconstruction TEMP itérative OSEM/MLEM avec correction d'atténuation (CT), de diffusion (TEW) et recovery de résolution → exactitude quantitative ~± 5 % [17][46]."
+      ],
+      "protocol": [
+        "Choisir le collimateur selon l'énergie du radionucléide : LEHR/LEGP basse énergie (≤160 keV), MEGP moyenne énergie (≤250 keV), HEAP haute énergie (>250 keV) [12].",
+        "Régler la fenêtre spectrométrique sur le photopic (140 keV ± ~10 %) pour rejeter le diffusé [1].",
+        "Contrôle qualité socle : uniformité intrinsèque quotidienne sans collimateur, uniformité système hebdomadaire (Co-57), résolution/linéarité, COR et uniformité tomographique avant TEMP (NEMA NU-1) [19][20].",
+        "Acquisition TEMP : projections 2D sous multiples angles autour du patient, puis reconstruction itérative OSEM avec corrections atténuation/diffusion/résolution [17][46].",
+        "TEMP/TDM : CT basse dose pour la correction d'atténuation et le repérage anatomique, intégrée à la justification dosimétrique [18]."
+      ],
+      "scores": [
+        "TEMP de perfusion myocardique — modèle à 17 segments (AHA/ASNC), cotation 0 (normal) à 4 (absence de captation) par segment [51].",
+        "Summed Stress Score (SSS) : 0–3 normal/quasi normal, 4–8 légèrement anormal, 9–13 modérément anormal, >13 sévèrement anormal [50][52].",
+        "Summed Difference Score (SDS) ≥ 2 = ischémie ; seuil pronostique du modèle 17 segments ≈ 5 % de myocarde anormal (SSS >3) [51].",
+        "Performances diagnostiques TEMP MPI pour la coronaropathie : sensibilité ~85 %, spécificité ~70–90 % selon population et protocole [33][34]."
+      ],
+      "pitfalls": [
+        "Non-uniformité par défaut d'un PM, hydratation du cristal ou électronique défaillante → artefacts ; uniformité intrinsèque journalière impérative [58].",
+        "Erreur de centre de rotation (COR) → artefacts en anneau sur les coupes transaxiales, pouvant mimer un déficit ischémique [45][59].",
+        "Pénétration septale et artefact en étoile : aggravés à haute énergie ou avec collimateur inadapté (ex. ¹²³I et ses photons à 529 keV) [12][59].",
+        "Iode libre / pureté radiochimique insuffisante de l'éluat : ⁹⁹Mo doit rester ≤ 0,15 µCi/mCi et l'aluminium ≤ 10 µg/mL, contrôlés par CCM [23][27].",
+        "Cristal NaI(Tl) plus épais : sensibilité accrue mais dégradation de la résolution intrinsèque — choix à adapter à l'énergie imagée [2]."
+      ]
+    },
+    "lead": "La gamma-caméra, aussi appelée caméra d'Anger, est l'appareil qui transforme les rayonnements invisibles émis par un produit faiblement radioactif injecté au patient en une image de l'intérieur du corps. Placée au-dessus de la personne allongée, elle capte ces rayons un à un et reconstitue, point par point, la carte de l'endroit où le produit s'est fixé. C'est l'instrument de référence pour observer le fonctionnement d'un organe plutôt que sa seule forme, qu'il s'agisse de l'os, du cœur, des reins ou de la thyroïde. Selon l'examen, elle réalise des clichés plans, comme une photographie, ou tourne autour du patient pour produire des coupes en volume. Robuste et présente dans tous les services de médecine nucléaire depuis plus d'un demi-siècle, elle reste le pilier de l'imagerie dite monophotonique.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert la caméra de scintigraphie",
+          "text": "La gamma-caméra est l'appareil qui prend les images lors d'une scintigraphie. Avant l'examen, on vous administre un produit très légèrement radioactif, appelé traceur, qui se dirige vers l'organe à étudier (os, cœur, reins, thyroïde, poumons, cerveau...) et le rend visible. La caméra, placée tout près de vous, capte les signaux émis par ce traceur et les transforme en images qui montrent comment l'organe fonctionne, et pas seulement à quoi il ressemble. C'est cette information sur le fonctionnement qui aide votre médecin à comprendre votre situation et à orienter votre prise en charge.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Une image du fonctionnement, pas seulement de la forme",
+              "text": "Contrairement à une radiographie ou à un scanner qui montrent surtout l'anatomie, la scintigraphie montre comment travaille un organe. C'est pour cela qu'elle apporte des renseignements que les autres examens ne donnent pas toujours."
+            }
+          ]
+        },
+        {
+          "title": "Comment se déroule l'examen",
+          "text": "Le plus souvent, le traceur vous est administré par une simple piqûre dans une veine du bras. Selon l'organe étudié, il y a ensuite un temps d'attente, qui peut aller de quelques minutes à quelques heures, le temps que le produit se fixe correctement. Vous passez ensuite sous la caméra : vous êtes installé allongé, confortablement, et la caméra se déplace doucement autour de vous ou au-dessus de vous, sans jamais vous toucher. L'examen est totalement indolore. La seule chose qui vous est demandée est de rester immobile pendant la prise des images, pour qu'elles soient nettes. L'équipe reste à proximité et vous explique chaque étape.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Quelques conseils qui aident",
+              "text": "Portez des vêtements confortables, sans boutons ni fermetures métalliques sur la zone examinée. Bien vous hydrater et aller aux toilettes lorsqu'on vous le demande améliore la qualité des images. N'hésitez pas à poser toutes vos questions avant de commencer."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce sans danger ?",
+          "text": "La quantité de traceur utilisée est très faible et le produit s'élimine naturellement de votre corps en quelques heures, en partie par les urines. La caméra, elle, ne produit aucun rayon : elle ne fait qu'écouter les signaux émis par le traceur, un peu comme un appareil photo. Les réactions désagréables sont très rares. Par précaution, signalez toujours si vous êtes enceinte, si vous pensez l'être ou si vous allaitez : l'équipe adaptera l'examen ou vous donnera des conseils simples. Chez l'enfant, tout est soigneusement ajusté pour rester au plus juste.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "À signaler avant l'examen",
+              "text": "Prévenez le service si vous êtes enceinte, si une grossesse est possible ou si vous allaitez. Mentionnez aussi vos traitements en cours et toute difficulté à rester allongé immobile. Ces informations permettent de réaliser l'examen dans les meilleures conditions de sécurité et de confort."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Comprendre l'outil : à quoi sert la gamma-caméra",
+          "text": "La gamma-caméra, ou caméra d'Anger, est le détecteur de référence de l'imagerie scintigraphique depuis plus de soixante ans. Elle ne génère aucun rayonnement : elle détecte les photons émis par un traceur radioactif préalablement administré au patient, et reconstruit une image de la répartition de ce traceur dans l'organisme. C'est elle qui réalise aussi bien les scintigraphies planaires (images en deux dimensions) que la TEMP, ou SPECT, qui fournit des coupes en trois dimensions par rotation autour du patient. Pour le clinicien, l'essentiel est de retenir que cet appareil donne une information fonctionnelle et métabolique, complémentaire de l'imagerie anatomique : il montre comment un organe travaille, où se concentre une activité cellulaire ou une perfusion, là où la radiographie, l'échographie, le scanner ou l'IRM montrent surtout des structures.",
+          "list": [
+            "Os : recherche de métastases, fractures occultes, infection osseuse, maladie de Paget",
+            "Cardiologie : perfusion myocardique pour la recherche d'ischémie coronaire",
+            "Néphro-urologie (notamment pédiatrique) : fonction rénale relative, obstruction, cicatrices corticales",
+            "Pneumologie : scintigraphie de ventilation-perfusion dans la suspicion d'embolie pulmonaire",
+            "Endocrinologie : exploration de la thyroïde et des parathyroïdes",
+            "Neurologie et oncologie : perfusion cérébrale, repérage du ganglion sentinelle, certaines tumeurs"
+          ]
+        },
+        {
+          "title": "Quand y penser et comment adresser",
+          "text": "Il faut envisager une scintigraphie chaque fois que la question clinique porte sur le fonctionnement d'un organe ou sur une cartographie de l'ensemble du corps, plutôt que sur sa seule anatomie. L'examen se demande auprès d'un service de médecine nucléaire, qui choisira le traceur et le protocole adaptés à votre question. Pour optimiser le rendez-vous, précisez toujours l'indication précise et le contexte : antécédents, traitements en cours, fonction rénale, statut thyroïdien. Certains examens imposent une préparation particulière (jeûne, hydratation, arrêt temporaire de médicaments interférents), que le service vous indiquera. Pensez systématiquement à signaler une grossesse possible, qui constitue une contre-indication relative à mettre en balance bénéfice-risque, ou un allaitement. Chez l'enfant, l'examen reste parfaitement réalisable, avec un protocole spécifiquement adapté.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser en médecine nucléaire",
+              "text": "La gamma-caméra apporte une information fonctionnelle et corps entier que l'imagerie anatomique ne fournit pas toujours : elle révèle une activité métabolique, une perfusion ou une fonction d'organe. Elle permet par exemple de cartographier des métastases osseuses en une seule acquisition, de dépister une ischémie myocardique, d'évaluer séparément la fonction de chaque rein ou d'orienter le diagnostic d'embolie pulmonaire. L'examen est largement disponible, généralement bien toléré et peu invasif. Adresser le patient avec une question clinique claire permet au nucléariste de sélectionner le traceur et le mode d'acquisition les plus pertinents, et d'optimiser la qualité comme l'irradiation de l'examen."
+            }
+          ]
+        },
+        {
+          "title": "Apport, place dans la stratégie et limites",
+          "text": "L'atout de la gamma-caméra est sa polyvalence : un même appareil explore l'os, le cœur, le rein, le poumon, la thyroïde ou le cerveau selon le traceur employé. La scintigraphie sert souvent d'examen de débrouillage très sensible, par exemple pour le bilan d'extension osseux, complété au besoin par une acquisition couplée au scanner (TEMP/CT, ou SPECT/CT) qui précise la localisation et améliore la spécificité. Les technologies récentes à semi-conducteurs, dites caméras CZT, offrent des images plus rapides et de meilleure qualité, en particulier en cardiologie. Les résultats doivent toujours être interprétés dans leur contexte clinique, et le compte rendu du nucléariste en précise les conditions et les limites. Un dialogue entre clinicien demandeur et médecin nucléaire reste la meilleure garantie d'un examen utile et bien orienté."
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité de la gamma-caméra (caméra d'Anger)",
+          "text": "**Comment lire la carte d'identité.** La **gamma-caméra**, ou **caméra à scintillation d'Anger**, est le détecteur de référence de l'imagerie **monophotonique** (un seul photon γ détecté par événement, par opposition à la coïncidence de la TEP). Elle n'est pas un traceur mais l'**instrument** : un capteur planaire de grande surface qui transforme la pluie de photons γ émis par le radiopharmaceutique en une image de sa distribution. Conçue par **Hal O. Anger** à Berkeley à la fin des années 1950, elle a remplacé le couple film-écran par un **cristal unique de NaI(Tl)** lu par un réseau de **tubes photomultiplicateurs (PM)** ; le prototype historique comportait un cristal de **5 pouces (≈ 12,7 cm) de diamètre, ¼ pouce (≈ 6,3 mm) d'épaisseur, couplé à 7 PM**.[1][2] Le principe est resté inchangé depuis **plus de 60 ans** : c'est lui qui sous-tend la **scintigraphie planaire** (projection 2D) et la **TEMP/SPECT** (*tomographie d'émission monophotonique*, reconstruction 3D par rotation des détecteurs autour du patient).[1]\n\nLa chaîne de détection comporte **quatre étages** indissociables, chacun déterminant une propriété de l'image finale : le **collimateur** (qui fixe la résolution spatiale du système et impose la géométrie de projection), le **cristal scintillateur** NaI(Tl) (qui fixe l'efficacité de détection et contribue à la résolution en énergie), le **réseau de PM** (qui amplifie le signal lumineux), et l'**électronique de positionnement d'Anger** (qui calcule où et avec quelle énergie le photon a interagi). Le radionucléide pivot est le **technétium-99m**, émetteur γ pur de **140 keV** — énergie idéale pour le NaI(Tl) et pour la collimation au plomb.[1][2]\n\n| Caractéristique | Valeur de référence (caméra NaI Anger) | Source |\n|---|---|---|\n| Type d'imagerie | Monophotonique (planaire + TEMP/SPECT) | [1] |\n| Détecteur | Cristal **NaI(Tl)** + réseau de PM + logique d'Anger | [1][2] |\n| Cristal grand champ typique | ~ **54 × 40 × 1 cm** | [2] |\n| Surface utile (détecteur grand champ) | ~ **53 × 46 cm** (21 × 18 pouces) | [2] |\n| Énergie γ de travail (Tc-99m) | **140 keV** | [1] |\n| Résolution en énergie (FWHM @ 140 keV) | ~ **10 %** | [1] |\n| Résolution spatiale intrinsèque (Tc-99m) | **~ 2–4 mm FWHM** | [1][2] |\n| Taux de comptage soutenu | jusqu'à **~ 10⁵ coups/s** | [1] |",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "γ du Tc-99m (énergie de travail)"
+            },
+            {
+              "value": "~40 ph/keV",
+              "label": "Rendement lumineux du NaI(Tl)"
+            },
+            {
+              "value": "~10 %",
+              "label": "Résolution en énergie (FWHM @ 140 keV)"
+            },
+            {
+              "value": "60+ ans",
+              "label": "Caméra d'Anger, détecteur de référence"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — pourquoi « monophotonique » ?",
+              "text": "La gamma-caméra détecte **chaque photon γ individuellement** et le localise par la logique d'Anger : c'est une imagerie **monophotonique**, opposée à la TEP qui exige la **détection en coïncidence** de deux photons d'annihilation à 511 keV. C'est pourquoi la gamma-caméra a besoin d'un **collimateur** physique pour définir la direction d'incidence, là où la TEP s'en passe (collimation électronique). Le revers : le collimateur **absorbe l'immense majorité des photons**, ce qui plafonne la sensibilité du système."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Coupe schématique d'une gamma-caméra d'Anger : patient émetteur de photons γ, collimateur à trous parallèles en plomb, cristal scintillateur NaI(Tl), réseau hexagonal de photomultiplicateurs, électronique de positionnement (calcul X, Y, Z).",
+            "caption": "Fig. 1 — Les quatre étages de la chaîne de détection : collimation, scintillation (NaI(Tl)), photodétection (PM) et logique de positionnement d'Anger."
+          }
+        },
+        {
+          "title": "A2 - Pourquoi détecter le photon γ : du radiopharmaceutique à l'image",
+          "text": "**Le problème à résoudre.** Le radiopharmaceutique injecté se fixe dans l'organe cible et émet des photons γ **dans toutes les directions (4π)**, depuis une profondeur variable. Former une image revient à reconstituer, point par point, **d'où** vient chaque photon et **combien** il y en a — sans lentille optique possible à ces énergies. La gamma-caméra résout ce problème par une succession d'opérations physiques, chacune confiée à un composant.\n\n**1. Sélectionner la direction — le collimateur.** Placé entre le patient et le cristal, le **collimateur** (le plus souvent en **plomb**, à trous parallèles) ne laisse passer que les photons d'incidence **quasi perpendiculaire** ; les photons obliques sont absorbés par les **septa**. C'est la condition *sine qua non* de la formation de l'image : sans lui, chaque point du cristal recevrait des photons venus de tout le champ et l'image serait illisible.[7] Le collimateur **définit à lui seul l'essentiel de la résolution spatiale du système** et constitue le **goulot d'étranglement de la sensibilité** (la quasi-totalité des photons est arrêtée).[12]\n\n**2. Convertir le γ en lumière — le cristal.** Le photon transmis interagit dans le cristal **NaI(Tl)**, qui émet un éclair de lumière visible **proportionnel à l'énergie déposée** (voir A3).[1]\n\n**3. Amplifier et chiffrer la lumière — les photomultiplicateurs.** Un **réseau hexagonal compact de 30 à 100 PM** recouvre la face arrière du cristal et convertit l'éclair lumineux en signal électrique amplifié. Le **rendement quantique** des PM, historiquement de l'ordre de **~ 25 %**, a été porté à **~ 50 %** sur les conceptions récentes — chaque point de gagné améliore la statistique de lumière collectée, donc les résolutions spatiale et énergétique.[1]\n\n**4. Localiser et discriminer — la logique d'Anger.** L'électronique combine les signaux de **tous** les PM. La **position (X, Y)** de l'interaction est calculée comme le **barycentre (centre de gravité) pondéré** des signaux : un PM proche de l'éclair reçoit plus de lumière et « tire » la position vers lui.[1][3] L'**énergie (Z)** est obtenue par la **somme** de tous les signaux. Un **analyseur d'amplitude (fenêtre en énergie)** centré sur le **photopic** (140 keV ± ~ 10 % pour le Tc-99m) ne retient que les photons d'énergie correcte et **rejette le rayonnement diffusé** (qui a perdu de l'énergie par effet Compton dans le patient et arriverait de la mauvaise direction).[1]\n\n**Le résultat** est une matrice de comptages : chaque événement validé incrémente le pixel correspondant à sa position (X, Y). En **planaire**, cette matrice est l'image. En **TEMP/SPECT**, on acquiert de telles projections sous de **multiples angles** autour du patient, puis on **reconstruit** la distribution 3D du traceur.[1]",
+          "steps": [
+            {
+              "title": "1 · Collimation",
+              "text": "Le collimateur au plomb ne transmet que les photons quasi perpendiculaires ; les obliques sont absorbés par les septa. Fixe la direction d'incidence — donc la géométrie de projection et l'essentiel de la résolution spatiale du système.[7][12]"
+            },
+            {
+              "title": "2 · Scintillation",
+              "text": "Le photon γ interagit dans le cristal NaI(Tl), qui émet un éclair de lumière visible proportionnel à l'énergie déposée (voir A3).[1]"
+            },
+            {
+              "title": "3 · Photodétection & amplification",
+              "text": "Le réseau de 30 à 100 PM convertit la lumière en signal électrique amplifié (rendement quantique ~ 25 % historique → ~ 50 % récent).[1]"
+            },
+            {
+              "title": "4 · Positionnement & spectrométrie (logique d'Anger)",
+              "text": "X, Y = barycentre pondéré des signaux PM ; Z (énergie) = somme des signaux. La fenêtre en énergie centrée sur le photopic (140 keV ± ~ 10 %) rejette le diffusé.[1][3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le diffusé n'est pas filtré « parfaitement »",
+              "text": "La fenêtre en énergie rejette une partie du rayonnement diffusé, mais la **résolution en énergie finie (~ 10 % à 140 keV)** laisse passer du diffusé dont l'énergie reste dans la fenêtre. Ce diffusé résiduel **dégrade le contraste** (faux comptages mal localisés) et doit être traité au stade de la reconstruction par une **correction de diffusion** (fenêtres multiples / TEW). Une résolution en énergie médiocre = fenêtre plus large = plus de diffusé accepté."
+            },
+            {
+              "type": "info",
+              "title": "Point expert — le compromis fondateur résolution/sensibilité",
+              "text": "Chaque étage impose un arbitrage. Le **collimateur** : trous fins/longs = meilleure résolution mais moins de photons (sensibilité ↓). Le **cristal** : plus épais = sensibilité ↑ mais résolution intrinsèque ↓ (cf. A3). La **fenêtre en énergie** : plus étroite = moins de diffusé mais moins de coups utiles. Comprendre la gamma-caméra, c'est comprendre que l'on **ne peut pas tout optimiser à la fois** — d'où le choix du collimateur et des paramètres adaptés à chaque examen."
+            }
+          ]
+        },
+        {
+          "title": "A3 - Le scintillateur NaI(Tl) : convertir le γ en lumière",
+          "text": "**Le cœur de la conversion.** Le **NaI(Tl)** — iodure de sodium **dopé au thallium** — est le scintillateur historique et toujours dominant de la gamma-caméra. Anger en fit le choix décisif : un **cristal unique de grande surface**, lu par plusieurs PM, à la place du couple film-écran, multipliant l'efficacité de détection.[2] Sur les caméras grand champ, c'est une plaque rectangulaire typique de **~ 54 × 40 × 1 cm**.[2]\n\n**Comment naît la lumière.** Le photon γ dépose son énergie dans le cristal (effet photoélectrique surtout, à 140 keV), excitant le réseau ; les **centres activateurs au thallium** se désexcitent en émettant de la lumière visible. Le **rendement lumineux** est l'un des plus élevés des scintillateurs : **~ 38–40 photons de lumière par keV** déposé.[1][2] À 140 keV (Tc-99m), une interaction libère donc **~ 5 600 photons optiques** — c'est cette quantité de lumière, collectée par les PM, qui détermine la finesse du calcul de position et la résolution en énergie. **Plus de lumière = meilleure statistique = meilleures résolutions.**\n\n**Efficacité de détection.** À 140 keV, le **coefficient d'atténuation linéique** du NaI(Tl) vaut **2,64 cm⁻¹**, ce qui confère à un cristal de **½ pouce (≈ 12,7 mm)** une **efficacité de détection totale de ~ 94 %** : la quasi-totalité des photons de Tc-99m transmis par le collimateur est arrêtée et convertie.[1] Les épaisseurs usuelles sont de **¼ à ⅜ pouce (≈ 6–9,5 mm)** pour le Tc-99m.[1][2]\n\n**Le compromis épaisseur.** Un cristal **plus épais** augmente l'efficacité (utile pour les photons de plus haute énergie), mais **dégrade la résolution spatiale intrinsèque** : la lumière diffuse latéralement sur une plus grande distance avant d'atteindre les PM, élargissant la tache lumineuse et donc l'incertitude sur le barycentre.[1][2] D'où le choix d'un cristal **fin** pour le Tc-99m (140 keV, basse énergie), privilégiant la résolution.\n\n**Cinétique et limites.** Le NaI(Tl) a un **temps de décroissance de scintillation de ~ 230 ns**, qui borne le **taux de comptage** (au-delà, les événements se chevauchent : empilement / *pile-up*) ; la caméra soutient un débit de **~ 10⁵ coups/s**.[1][2] Enfin, le NaI(Tl) est **hygroscopique** : il doit être hermétiquement encapsulé, sous peine d'une **hydratation du cristal** qui jaunit la sortie lumineuse et crée des **non-uniformités** — un défaut classique à connaître pour le contrôle qualité.[2]\n\n| Propriété du NaI(Tl) | Valeur | Conséquence pratique | Source |\n|---|---|---|---|\n| Rendement lumineux | **~ 38–40 photons/keV** | Bonne statistique de lumière → résolutions spatiale et énergétique | [1][2] |\n| Atténuation linéique @ 140 keV | **2,64 cm⁻¹** | ~ 94 % d'efficacité pour ½ pouce | [1] |\n| Épaisseur usuelle (Tc-99m) | **¼–⅜ pouce (6–9,5 mm)** | Compromis efficacité / résolution | [1][2] |\n| Temps de décroissance | **~ 230 ns** | Limite le taux de comptage (pile-up) | [2] |\n| Taux de comptage soutenu | **~ 10⁵ coups/s** | Saturation au-delà → pertes de comptage | [1] |\n| Résolution en énergie (FWHM @ 140 keV) | **~ 10 %** | Largeur de la fenêtre photopic, rejet du diffusé | [1] |",
+          "stats": [
+            {
+              "value": "~40 ph/keV",
+              "label": "Rendement lumineux (≈ 5 600 photons à 140 keV)"
+            },
+            {
+              "value": "2,64 cm⁻¹",
+              "label": "Atténuation linéique @ 140 keV"
+            },
+            {
+              "value": "~94 %",
+              "label": "Efficacité de détection (cristal ½ pouce)"
+            },
+            {
+              "value": "230 ns",
+              "label": "Temps de décroissance de scintillation"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — cristal hygroscopique et non-uniformités",
+              "text": "Le NaI(Tl) absorbe l'humidité : une **fissure ou une fuite de l'encapsulation** entraîne une **hydratation du cristal** qui se traduit par des zones de moindre sortie lumineuse, c'est-à-dire des **artefacts de non-uniformité** sur le flood. C'est l'une des causes (avec la défaillance d'un PM ou un collimateur endommagé) à évoquer devant une non-uniformité au contrôle qualité — d'où l'importance du **test d'uniformité quotidien**.[2]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — vers la conversion directe (CZT)",
+              "text": "Le NaI(Tl) impose une chaîne **γ → lumière → électrons** avec ses pertes à chaque étape. Les détecteurs **semi-conducteurs CZT (CdZnTe)** court-circuitent la scintillation et les PM : le photon γ y crée **directement** des paires électron-trou (à 140 keV, ~ 30 000 électrons, soit ~ 20× le signal de charge d'un NaI(Tl)), d'où une **résolution en énergie ~ 2× meilleure (< 5–6 % à 140 keV)** et une fenêtre photopic plus étroite.[13] C'est le saut technologique exploité par les caméras cardiaques dédiées (D-SPECT, Discovery NM530c) — détaillé plus loin dans l'article."
+            }
+          ]
+        },
+        {
+          "title": "B4 - B4 - Le collimateur : sélectionner la direction des photons",
+          "text": "Le **collimateur** est l'unique composant capable d'imposer une géométrie de projection : sans lui, le cristal recevrait des photons de toutes directions et aucune image ne se formerait. Plaque de **plomb** percée de milliers de canaux séparés par des cloisons (**septa**), il n'autorise le passage que des photons d'incidence quasi perpendiculaire à la face du détecteur ; les photons obliques sont absorbés par les septa.[7] C'est lui, et non le cristal, qui fixe la **résolution spatiale du système** et qui détermine, en grande partie, la sensibilité — d'où son rôle déterminant.[4][5]\n\nLe modèle de loin le plus utilisé est le **collimateur à trous parallèles** : les canaux, perpendiculaires au détecteur, projettent la distribution du traceur à l'échelle 1:1, sans grandissement.[7] Une géométrie **LEHR** (low-energy high-resolution, basse énergie haute résolution) typique comporte des trous de longueur **L = 24,5 mm**, des septa de **0,16 mm** et des cellules hexagonales de **Ø 1,11 mm**, optimisée pour le ⁹⁹ᵐTc (140 keV) ; d'autres configurations adoptent des trous de **1,40–1,50 mm**, des septa de **0,15–0,20 mm** et des longueurs de **32,8–35,0 mm**.[7] À 140 keV, la **pénétration septale** d'un LEHR optimisé Tc-99m reste faible (**0,2–1,1 %**), condition de la netteté des contours.[8]\n\n**Compromis résolution / sensibilité.** Pour une classe d'énergie donnée, des trous plus petits et plus longs améliorent la résolution mais réduisent la sensibilité (LEHR) ; des trous plus larges et plus courts gagnent en sensibilité au prix de la résolution (LEGP/LEAP, low-energy all-purpose).[12] Aucun collimateur n'optimise les deux à la fois : c'est l'arbitrage fondamental de l'imagerie monophotonique.\n\n**Classes d'énergie.** L'épaisseur des septa doit croître avec l'énergie du photon pour continuer à l'absorber. On distingue ainsi la **basse énergie (≤ 160 keV)**, la **moyenne énergie (MEGP/MEAP, ≤ 250 keV)** et la **haute énergie (HEAP, > 250 keV)** ; passer en haute énergie impose des septa plus épais, donc des trous plus larges/longs, des collimateurs plus lourds et une résolution intrinsèquement plus basse.[12] C'est pourquoi un émetteur comme le ¹³¹I (364 keV) exige un collimateur haute énergie, tandis que le ¹²³I (photons parasites ≈ 529 keV) est souvent imagé en moyenne énergie pour limiter la pénétration septale.\n\n| Type | Énergie cible | Résolution | Sensibilité | Usage typique |\n|---|---|---|---|---|\n| **LEHR** | ≤ 160 keV | Élevée | Modérée | ⁹⁹ᵐTc — os, rénal, cœur |\n| **LEGP / LEAP** | ≤ 160 keV | Modérée | Élevée | ⁹⁹ᵐTc rapide / faible comptage |\n| **MEGP / MEAP** | ≤ 250 keV | Modérée | Modérée | ¹²³I, ¹¹¹In, ⁶⁷Ga |\n| **HEAP** | > 250 keV | Plus basse | Plus basse | ¹³¹I, ¹⁸F (rare en γ-caméra) |\n\n[12]\n\nAutres géométries selon les besoins : **sténopé (pinhole)** et **multi-pinhole** (petits organes, fort grandissement), **convergent** (fan-beam / cone-beam), **divergent**, **slit-slat**.[1] Le **matériau** classique est le plomb ; des alliages au **tungstène (Wolfmet)** sont étudiés pour améliorer la qualité d'image et les paramètres fonctionnels (septa plus minces à pouvoir d'arrêt égal).[10][11]",
+          "stats": [
+            {
+              "value": "≤ 160 keV",
+              "label": "Limite basse énergie (LEHR/LEGP) [12]"
+            },
+            {
+              "value": "0,2–1,1 %",
+              "label": "Pénétration septale LEHR à 140 keV [8]"
+            },
+            {
+              "value": "≈ 7,2–7,4 mm",
+              "label": "Résolution système LEHR à 10 cm (FWHM) [9]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — adapter le collimateur à l'énergie",
+              "text": "Imager un émetteur de haute énergie avec un collimateur basse énergie laisse les photons **traverser les septa** (pénétration septale) : flou, perte de contraste et **artefact en étoile** autour des foyers intenses. Le collimateur doit toujours être choisi selon l'énergie du radionucléide — **haute énergie obligatoire pour le ¹³¹I (364 keV)**, moyenne énergie souvent préférée pour le ¹²³I (photons ≈ 529 keV).[1][12]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le collimateur domine la résolution système",
+              "text": "La résolution **intrinsèque** du détecteur (≈ 2,9–4,5 mm FWHM à 140 keV, sans collimateur) est bien meilleure que la résolution **système** (≈ 7,2–7,4 mm FWHM à 10 cm avec un LEHR).[4][9] C'est la réponse du collimateur, qui se dégrade avec la distance source-détecteur, qui domine : **coller le détecteur au patient** est le geste le plus simple pour gagner en résolution."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'une gamma-caméra : le collimateur à trous parallèles en plomb sélectionne les photons d'incidence perpendiculaire en absorbant les obliques par les septa, en amont du cristal NaI(Tl).",
+            "caption": "Fig. 1 — Le collimateur sélectionne la direction des photons : seuls les photons quasi perpendiculaires atteignent le cristal, les obliques sont absorbés par les septa."
+          }
+        },
+        {
+          "title": "B5 - B5 - Photomultiplicateurs et logique d'Anger : localiser l'événement",
+          "text": "Une fois le photon γ admis par le collimateur, il doit être **détecté, converti en lumière, puis localisé**. Cette chaîne — cristal scintillateur → photomultiplicateurs → logique de positionnement — est le cœur historique de la **caméra d'Anger**, conçue par **Hal O. Anger** à Berkeley à la fin des années 1950 : son prototype associait un cristal NaI(Tl) de **5 pouces (≈ 12,7 cm) de diamètre, ¼ pouce (≈ 6,3 mm) d'épaisseur, à 7 PM**.[1]\n\n**(a) Conversion par scintillation.** Le photon interagit dans le cristal d'**iodure de sodium dopé au thallium, NaI(Tl)** — grande plaque rectangulaire typique de **~54 × 40 × 1 cm**.[2] Chaque keV déposé y libère **~38–40 photons lumineux** : à 140 keV (⁹⁹ᵐTc), une interaction produit ~5 600 photons optiques.[1][2] Ce rendement, parmi les plus élevés des scintillateurs, conditionne directement les résolutions énergétique et spatiale. Le **temps de décroissance de 230 ns** limite le taux de comptage (cadence soutenue ~**10⁵ coups/s**), et le coefficient d'atténuation linéique à 140 keV de **2,64 cm⁻¹** assure **94 % d'efficacité de détection pour un cristal de ½ pouce (~12,7 mm)**.[1][2] Les épaisseurs usuelles (**¼–⅜ pouce, 6–9,5 mm**) résultent d'un compromis : un cristal plus épais augmente la sensibilité mais dégrade la résolution intrinsèque.[2]\n\n**(b) Photodétection et amplification.** Un réseau hexagonal compact de **30 à 100 tubes photomultiplicateurs (PM)** est couplé à la face arrière du cristal ; chaque PM convertit la lumière reçue en signal électrique amplifié.[1] La surface utile d'un détecteur grand champ atteint **~53 × 46 cm (~21 × 18 pouces)**.[2] Le **rendement quantique** des PM, historiquement ~**25 %**, est porté à ~**50 %** sur les conceptions récentes — gain direct sur la statistique de photons et donc sur la précision de localisation.[1]\n\n**(c) Logique d'Anger.** L'information se déduit de la **répartition des signaux entre PM**. Lorsqu'une scintillation se produit, les PM les plus proches reçoivent le plus de lumière. Deux grandeurs en sont extraites :[1][3]\n- **La position (X, Y)** = **barycentre** (centre de gravité) des signaux des PM, pondéré par leur amplitude. Plus la lumière est répartie sur de nombreux PM, plus le calcul est précis — d'où l'importance du rendement lumineux du NaI(Tl).\n- **L'énergie (Z)** = **somme** des signaux de tous les PM, proportionnelle à l'énergie déposée par le photon. C'est cette voie qui alimente la discrimination énergétique (cf. §B6).\n\nLa résolution **spatiale intrinsèque** ainsi obtenue est de **~2,9–4,5 mm FWHM** à 140 keV (meilleures caméras < 3 mm), la limite physique d'environ 2 mm étant fixée par le rendement lumineux du cristal et le bruit statistique de la collection de lumière.[4]",
+          "steps": [
+            {
+              "title": "1 · Scintillation",
+              "text": "Le photon γ interagit dans le NaI(Tl) et libère ~40 photons lumineux par keV déposé (~5 600 photons à 140 keV).[1][2]"
+            },
+            {
+              "title": "2 · Collection de lumière",
+              "text": "Le réseau de 30–100 PM recueille la lumière ; les PM proches du point d'interaction reçoivent le plus de signal.[1]"
+            },
+            {
+              "title": "3 · Position (X, Y)",
+              "text": "Barycentre pondéré des signaux PM → coordonnées de l'événement dans le plan du détecteur.[1][3]"
+            },
+            {
+              "title": "4 · Énergie (Z)",
+              "text": "Somme de tous les signaux PM → énergie déposée, transmise à l'analyseur d'amplitude (§B6).[1][3]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "~38–40 photons/keV",
+              "label": "Rendement lumineux du NaI(Tl) [1][2]"
+            },
+            {
+              "value": "30–100 PM",
+              "label": "Réseau de photomultiplicateurs [1]"
+            },
+            {
+              "value": "~2,9–4,5 mm",
+              "label": "Résolution spatiale intrinsèque à 140 keV (FWHM) [4]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — X,Y par barycentre, Z par sommation",
+              "text": "La même bouffée de lumière sert à deux calculs indépendants : sa **distribution** entre PM donne la position (barycentre), son **intégrale** donne l'énergie (somme). Comprendre cette dualité éclaire les artefacts : un **PM défaillant** déforme localement le barycentre (zone froide / non-uniformité) sans nécessairement fausser l'énergie globale, et se corrige par remplacement et recalibration.[1]"
+            },
+            {
+              "type": "info",
+              "title": "Pourquoi le rendement lumineux compte",
+              "text": "La précision de la localisation est limitée par le **nombre de photons optiques collectés** : plus la statistique est grande, plus le barycentre est stable. C'est pourquoi le NaI(Tl) (~40 photons/keV) reste de référence et pourquoi un **rendement quantique** des PM passé de ~25 % à ~50 % améliore directement la résolution intrinsèque.[1]"
+            }
+          ]
+        },
+        {
+          "title": "B6 - B6 - Chaîne électronique et fenêtre énergétique : trier les bons photons",
+          "text": "Localiser un événement ne suffit pas : encore faut-il vérifier qu'il s'agit d'un photon **primaire** (non dévié) et non d'un photon **diffusé** ayant perdu de l'énergie et de l'information de position. C'est le rôle de la chaîne électronique de spectrométrie et de la **fenêtre énergétique**.\n\n**(a) Analyseur d'amplitude et photopic.** Le signal d'énergie Z issu de la sommation des PM (cf. §B5) est trié par un **analyseur d'amplitude (PHA, pulse-height analyzer)**. Seuls les événements dont l'énergie tombe dans une **fenêtre** centrée sur le **photopic** (140 keV pour le ⁹⁹ᵐTc) sont acceptés ; les autres sont rejetés.[1] La fenêtre standard est de **±10 % autour du photopic** (par ex. 126–154 keV pour le Tc-99m).[1] La largeur de la fenêtre est dictée par la **résolution en énergie** du détecteur.\n\n**(b) Résolution en énergie.** Exprimée en **FWHM** (largeur à mi-hauteur du photopic), elle vaut **~10 %** à 140 keV pour le NaI(Tl) (mesures 10,8 % ; 11,0 ± 0,3 %).[1][6] Cette valeur impose la largeur minimale de la fenêtre : trop étroite, elle rejetterait des photons primaires (perte de sensibilité) ; trop large, elle laisserait entrer du diffusé (perte de contraste). Le ±10 % est le compromis usuel.\n\n**(c) Pourquoi rejeter le diffusé.** Un photon ayant subi une diffusion **Compton** dans le patient repart dans une **direction modifiée** et avec une **énergie diminuée** : accepté, il serait mal localisé et brouillerait l'image. La discrimination énergétique élimine la fraction la plus dégradée. Pour les corrections fines, on utilise des **fenêtres de diffusion** supplémentaires : méthode **double ou triple fenêtre énergétique (TEW, triple energy window)** avec des fenêtres typiquement de **15 %**, permettant d'estimer et de soustraire le diffusé dans le photopic.[46][47] La TEW est notamment employée pour des isotopes à spectre complexe (¹²³I, ¹⁷⁷Lu).[47]\n\n| Paramètre spectral | Valeur (⁹⁹ᵐTc, NaI(Tl)) | Source |\n|---|---|---|\n| Photopic | **140 keV** | [1] |\n| Fenêtre photopic standard | **±10 %** (≈ 126–154 keV) | [1] |\n| Résolution en énergie (FWHM) | **~10 %** (10,8 % ; 11,0 ± 0,3 %) | [1][6] |\n| Fenêtres de diffusion (TEW) | **~15 %** | [46][47] |\n\n**(d) Acquisition après tri.** Les événements validés (bonne position **et** bonne énergie) sont incrémentés dans une **matrice** image. En planaire, l'image se forme directement ; en **TEMP (tomographie d'émission monophotonique)**, des projections 2D acquises sous de multiples angles sont **reconstruites** en volume 3D.[1] La reconstruction privilégie aujourd'hui l'**itératif OSEM** (ordered-subset expectation maximization) à la rétroprojection filtrée, avec **correction d'atténuation** (Chang ou CT, coefficient ~0,10–0,12 cm⁻¹ pour le Tc-99m dans l'eau), **correction de diffusion** par fenêtres énergétiques et **récupération de résolution** dépendante de la profondeur ; l'ensemble porte l'exactitude quantitative à **± 5 %** de la concentration d'activité vraie.[16][18][46]\n\n**(e) Rupture CZT.** Les détecteurs semi-conducteurs **CZT (CdZnTe)** convertissent directement le photon en charge (énergie par paire électron-trou ≈ **5 eV**), sans cristal ni PM, et atteignent une **résolution en énergie ~2× meilleure (< 5–6,3 % à 140 keV)**.[1][13] La fenêtre énergétique peut alors être ~2× plus étroite, réduisant la contamination par le diffusé et facilitant l'imagerie **double isotope** (⁹⁹ᵐTc / ¹²³I) grâce à une meilleure séparation spectrale.[13]",
+          "stats": [
+            {
+              "value": "140 keV ± 10 %",
+              "label": "Fenêtre photopic du ⁹⁹ᵐTc [1]"
+            },
+            {
+              "value": "~10 %",
+              "label": "Résolution en énergie NaI(Tl) à 140 keV (FWHM) [1][6]"
+            },
+            {
+              "value": "< 5–6,3 %",
+              "label": "Résolution en énergie CZT à 140 keV (FWHM) [1][13]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — régler la fenêtre sur le bon photopic",
+              "text": "Une fenêtre mal centrée (mauvais peaking) ou trop large laisse entrer du **diffusé** et dégrade le contraste ; trop étroite, elle ampute la **sensibilité**. Le **calage du photopic (peaking)** fait partie du contrôle qualité quotidien, au même titre que l'uniformité, et doit être vérifié pour chaque radionucléide imagé.[1]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la résolution en énergie fixe la sélectivité",
+              "text": "Plus la résolution en énergie est fine, plus la fenêtre peut être étroite à sensibilité égale, donc plus le rejet du diffusé est efficace. C'est l'argument décisif du **CZT** (< 5–6,3 % vs ~10 % pour le NaI(Tl)) : meilleure séparation Tc-99m/I-123 et acquisitions **double isotope** réalistes.[1][13]"
+            }
+          ]
+        },
+        {
+          "title": "C7 - Résolution, sensibilité, uniformité : lire les performances",
+          "text": "Trois grandeurs résument l'aptitude d'une gamma-caméra à restituer fidèlement la distribution du traceur : la **résolution spatiale** (capacité à séparer deux sources voisines), la **sensibilité** (fraction des photons détectés, qui conditionne le rapport signal/bruit et le temps d'acquisition) et l'**uniformité** (homogénéité de la réponse sur tout le champ). À ces trois piliers s'ajoutent la **résolution en énergie** (qui gouverne le rejet du diffusé) et la **cadence de comptage** maximale. Toutes se mesurent selon le protocole standardisé **NEMA NU-1** [19][20].\n\n**▸ Résolution en énergie.** Elle correspond à la largeur à mi-hauteur (FWHM, *full width at half maximum*) du photopic, exprimée en pourcentage de l'énergie. Pour un cristal **NaI(Tl)** (iodure de sodium dopé au thallium) à **140 keV** (Tc-99m), elle vaut **≈ 9,8–11 %** (mesures 10,8 % ; 11,0 ± 0,3 %) [1][6]. Cette finesse limitée tient au rendement lumineux du scintillateur (**≈ 38–40 photons optiques/keV** déposé [1][2]) et à la statistique de conversion dans les photomultiplicateurs (PM). Une bonne résolution énergétique permet de centrer une **fenêtre spectrométrique étroite** sur le photopic et donc de rejeter efficacement les photons diffusés (déviés, donc moins énergétiques et porteurs d'une information de position erronée).\n\n**▸ Résolution spatiale.** On distingue deux niveaux :\n\n| Niveau | Définition | Valeur (Tc-99m) | Source |\n|---|---|---|---|\n| **Intrinsèque** (R_i) | Détecteur nu, sans collimateur | **≈ 2,9–4,5 mm FWHM** (meilleures caméras < 3 mm ; limite physique ≈ 2 mm liée au rendement lumineux du NaI) | [4] |\n| **Système** (R_sys) | Détecteur + collimateur, à 10 cm de la source | **≈ 7,2–7,4 mm FWHM** (collimateur LEHR) | [8][9] |\n\nLa résolution système combine résolution intrinsèque et résolution géométrique du collimateur (R_c) selon **R_sys = √(R_i² + R_c²)** [9]. En pratique, c'est **le collimateur qui domine** : la résolution se dégrade linéairement avec la distance source-collimateur, d'où la règle de positionner le détecteur au plus près du patient. C'est aussi le terme R_c qui explique qu'un collimateur basse énergie haute résolution (**LEHR**) surpasse un collimateur tout usage (**LEGP**) en résolution, au prix de la sensibilité (cf. C8 et compromis du § dédié au collimateur).\n\n**▸ Sensibilité.** C'est le nombre de coups détectés par unité d'activité. Pour un collimateur LEHR, elle est de l'ordre de **96–109 cps/MBq** [8]. La sensibilité d'un collimateur à trous parallèles est **quasi indépendante de la distance** (la perte par éloignement est compensée par l'élargissement du champ vu par chaque trou) mais **inversement liée à la résolution** : tout gain en résolution (trous plus fins/longs) se paie en sensibilité. Le détecteur lui-même intercepte **≈ 94 % des photons de 140 keV pour un cristal de ½ pouce** (μ = 2,64 cm⁻¹) [1][2] ; la quasi-totalité de la perte de sensibilité du système se joue donc dans le collimateur, qui n'accepte que les photons quasi perpendiculaires.\n\n**▸ Uniformité.** Test de contrôle qualité (CQ) le **plus important et quotidien** [19]. On acquiert une image de champ uniforme (*flood field*) et on quantifie l'**uniformité intégrale** (écart max/min sur tout le champ) et l'**uniformité différentielle** (gradient local), sur le **champ utile (UFOV)** et le **champ central (CFOV)** [19][20]. Deux modalités :\n- **Uniformité intrinsèque** : sans collimateur, source ponctuelle (Tc-99m), CQ **journalier** [19][44].\n- **Uniformité extrinsèque (système)** : avec collimateur, source plane (*flood* de Co-57), CQ **hebdomadaire** [19][44].\n\nUne non-uniformité de quelques pour-cent en planaire devient critique en TEMP : amplifiée par la reconstruction, elle engendre des **artefacts en anneau** (cf. C9). S'y ajoutent, pour la TEMP, le **centre de rotation (COR)**, la résolution tomographique et la sensibilité tomographique, également régis par NEMA NU-1 [19][20][45].",
+          "stats": [
+            {
+              "value": "7,2–7,4 mm",
+              "label": "Résolution spatiale système LEHR à 10 cm (Tc-99m) [8][9]"
+            },
+            {
+              "value": "≈ 10 %",
+              "label": "Résolution en énergie FWHM à 140 keV (NaI) [1][6]"
+            },
+            {
+              "value": "96–109 cps/MBq",
+              "label": "Sensibilité système (collimateur LEHR) [8]"
+            },
+            {
+              "value": "94 %",
+              "label": "Efficacité de détection du cristal NaI ½ pouce à 140 keV [1][2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le compromis résolution/sensibilité est inéluctable",
+              "text": "Résolution et sensibilité varient en **sens inverse** : affiner la résolution (trous plus petits et plus longs, type LEHR) réduit mécaniquement la fraction de photons acceptés. Aucun collimateur ne maximise les deux. Le choix se fait par indication : **haute résolution** pour les petites structures (thyroïde, mains), **haut débit / haute sensibilité** quand le comptage prime (dynamique rénale, premier passage). Le **CZT** (cf. C8) déplace ce compromis en améliorant simultanément résolution en énergie et résolution intrinsèque."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la résolution annoncée n'est pas la résolution clinique",
+              "text": "Les **2–4 mm** de résolution intrinsèque [4] sont mesurés **sans collimateur**. En clinique, c'est la résolution **système (≈ 7 mm à 10 cm)** [8][9] qui s'applique, et elle **se dégrade avec la distance** source-détecteur. Un détecteur mal rapproché du patient peut faire perdre plusieurs millimètres : toujours coller le collimateur à la surface explorée."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma de la chaîne de détection d'une gamma-caméra : collimateur à trous parallèles, cristal NaI(Tl), réseau de photomultiplicateurs et électronique de positionnement d'Anger ; les performances (résolution, sensibilité, uniformité) se jouent à chaque étage.",
+            "caption": "Fig. — La chaîne de détection : le collimateur fixe la résolution système et la sensibilité, le cristal et les PM la résolution en énergie et l'uniformité."
+          }
+        },
+        {
+          "title": "C8 - De la planaire à la TEMP (SPECT) : reconstruire en 3D",
+          "text": "La **scintigraphie planaire** fournit une projection 2D — superposition de toutes les structures traversées par les photons d'incidence perpendiculaire. La **tomographie d'émission monophotonique (TEMP**, en anglais **SPECT** pour *single-photon emission computed tomography*) lève cette superposition en reconstruisant la distribution 3D du traceur à partir de projections 2D acquises sous de **multiples angles** autour du patient [1].\n\n**▸ Acquisition.** Un ou plusieurs détecteurs tournent autour du patient (typiquement sur 360°, ou 180° en cardiologie) et enregistrent une projection planaire à chaque pas angulaire. Les caméras **double-tête** réduisent de moitié le temps d'acquisition. L'ensemble des projections alimente l'algorithme de reconstruction.\n\n**▸ Reconstruction.** Deux familles :\n\n| Méthode | Principe | Atouts / limites |\n|---|---|---|\n| **Rétroprojection filtrée (FBP)** | Reprojection des profils filtrés (filtre rampe + apodisation Butterworth/Hanning) | Rapide, linéaire ; mais **artefact en étoile** près des foyers intenses et bruit amplifié [16][17] |\n| **Itérative (OSEM/MLEM)** | Estimation successive convergeant vers les projections mesurées (*ordered-subset expectation maximization*) | **Préférée** : meilleure qualité en faible comptage, intègre les corrections physiques dans le modèle [16][17] |\n\nL'**OSEM** (avec ses paramètres d'itérations et de sous-ensembles) est aujourd'hui le standard car il **modélise** dans la reconstruction même l'atténuation, le diffusé et la réponse du collimateur [16][17][46].\n\n**▸ Les trois corrections physiques** (indispensables à la quantification) :\n1. **Correction d'atténuation.** Les photons issus des structures profondes sont absorbés ; le coefficient d'atténuation du Tc-99m (140 keV) dans l'eau est **≈ 0,10–0,12 cm⁻¹** [18]. Sur une **TEMP/TDM**, la carte CT fournit une correction d'atténuation (CTAC) précise ; à défaut, méthode de Chang [18].\n2. **Correction du diffusé.** Estimation par **fenêtres d'énergie multiples** (double ou triple fenêtre, *triple energy window* / TEW), avec une fenêtre photopic et des fenêtres de diffusion typiquement à **15 %** [46][47]. La **TEW** est employée pour des isotopes à spectre complexe (I-123, Lu-177) [47].\n3. **Recovery de résolution** (correction de réponse collimateur-détecteur, dépendante de la profondeur, dite *resolution recovery 3D*) : restaure une partie de la résolution perdue par le collimateur [46].\n\n**▸ Exactitude quantitative.** Avec OSEM 3D et l'ensemble des corrections (atténuation, diffusé, temps mort, décroissance, étalonnage croisé), la **TEMP/TDM atteint une exactitude de ± 5 %** de la concentration d'activité vraie [46], ouvrant la voie à la TEMP quantitative (Bq/mL, SUV-like) et à la dosimétrie post-thérapeutique.\n\n**▸ La rupture CZT.** Les détecteurs semi-conducteurs **CdZnTe (CZT)** convertissent directement le photon en charge (énergie/paire électron-trou ≈ 5 eV, densité 5,82 g/cm³, μ ≈ 3,07 cm⁻¹ à 140 keV) [1][2], supprimant cristal et PM. À 140 keV, le CZT génère **≈ 30 000 électrons, soit ≈ 20× plus** qu'une scintillation NaI [13], d'où une **résolution en énergie ≈ 2× meilleure (< 5–6,3 %)** [1][3][13]. En cardiologie, les plateformes dédiées (**D-SPECT** de Spectrum Dynamics, **Discovery NM530c** de GE) disposent des détecteurs autour du thorax et imagent le cœur **sans rotation**, sous plusieurs angles simultanément [3][14]. Bénéfices : **réduction ≈ 25 % du temps d'acquisition** sans perte de qualité, et **acquisition double-isotope** facilitée par la meilleure séparation spectrale (Tc-99m / I-123) [3][13][15].",
+          "steps": [
+            {
+              "title": "1. Acquisition multi-angulaire",
+              "text": "Rotation du/des détecteurs autour du patient ; une projection planaire enregistrée à chaque pas angulaire (360° en général, 180° en cardiologie). Collimateur et fenêtre d'énergie adaptés à l'isotope."
+            },
+            {
+              "title": "2. Pré-traitement & reconstruction",
+              "text": "FBP (filtre rampe + apodisation) ou, préférentiellement, OSEM itératif intégrant le modèle physique du système [16][17]."
+            },
+            {
+              "title": "3. Corrections physiques",
+              "text": "Atténuation (CTAC sur TEMP/TDM, μ ≈ 0,10–0,12 cm⁻¹ pour le Tc-99m [18]), diffusé (fenêtres multiples / TEW [46][47]) et recovery de résolution 3D [46]."
+            },
+            {
+              "title": "4. Fusion & quantification",
+              "text": "Recalage TEMP/TDM, lecture des coupes transaxiales/coronales/sagittales ; quantification (Bq/mL) à ± 5 % après corrections complètes [46]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "± 5 %",
+              "label": "Exactitude quantitative TEMP/TDM (OSEM + corrections) [46]"
+            },
+            {
+              "value": "≈ 30 000 e⁻",
+              "label": "Charge générée par le CZT à 140 keV (≈ 20× le NaI) [13]"
+            },
+            {
+              "value": "< 5–6,3 %",
+              "label": "Résolution en énergie du CZT à 140 keV [1][3][13]"
+            },
+            {
+              "value": "≈ 25 %",
+              "label": "Réduction du temps d'acquisition (CZT cardiaque dédié) [3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Planaire ou TEMP ?",
+              "text": "La **planaire** reste pertinente pour les acquisitions corps entier (balayage osseux, MIBG) et dynamiques (rénogramme). La **TEMP**, et surtout la **TEMP/TDM**, s'impose dès qu'il faut **localiser précisément** une fixation (lésion osseuse équivoque, parathyroïde, foyer abdominal) ou **quantifier**. La TDM apporte le repère anatomique et la carte d'atténuation, au prix d'une dose CT à justifier [46]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le CZT change la donne",
+              "text": "La conversion **directe** du photon en charge supprime deux étages bruités (scintillation + PM) et **double la résolution en énergie**. Conséquence pratique : fenêtre spectrométrique plus étroite (moins de diffusé), petits détecteurs élémentaires (meilleure résolution intrinsèque), et **double-isotope** réalisable malgré la proximité des pics Tc-99m/I-123 [13][15]. Le frein reste la **taille des cristaux** (non cultivables aussi grands que le NaI) et le coût [1]."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Schéma de l'acquisition tomographique TEMP : rotation des détecteurs autour du thorax, multiples projections angulaires reconstruites en coupes 3D, avec les étapes de correction d'atténuation et de diffusé.",
+            "caption": "Fig. — De la projection 2D à la reconstruction 3D : acquisition multi-angulaire puis reconstruction itérative corrigée (atténuation, diffusé, résolution)."
+          }
+        },
+        {
+          "title": "C9 - Artefacts et pièges d'image liés à la caméra",
+          "text": "Avant d'attribuer une anomalie à une pathologie, il faut éliminer un **artefact instrumental**. Beaucoup sont prévisibles et corrigibles : ils naissent du collimateur, du cristal, des PM, de l'électronique de positionnement ou de la géométrie d'acquisition tomographique. Méthode constante : pour chaque piège, identifier la **cause**, reconnaître l'**aspect** caractéristique, et appliquer la **correction** (CQ, remplacement de composant, ré-acquisition).\n\n**▸ Non-uniformité.** Première cause d'artefact. Origines : **défaillance d'un PM**, défaut du collimateur, **hydratation du cristal NaI** (le NaI est hygroscopique : une fissure du boîtier laisse pénétrer l'humidité, créant des zones aveugles), dérive de l'électronique ou du gain [58][59]. En planaire, elle se voit comme une plage froide/chaude focale ; le CQ uniformité intrinsèque **journalier** est impératif pour la détecter avant qu'elle ne contamine les examens [19].\n\n**▸ Artefact en anneau (*ring artifact*).** En TEMP, une non-uniformité ponctuelle (souvent un PM défaillant ou un point chaud du cristal) est, par la rotation, **projetée en anneau** sur les coupes transaxiales [58][59]. Centré sur l'axe de rotation, il peut **mimer un déficit ischémique** ou une lésion. Conduite : **ne pas imager** tant que l'uniformité n'est pas corrigée ; après remplacement du PM ou recalibrage, l'artefact disparaît.\n\n**▸ Erreur de centre de rotation (COR).** Un désalignement entre l'axe mécanique de rotation et l'axe de reconstruction décale les projections : flou, **dédoublement** des structures ponctuelles (aspect en « tuyau »/*tubeyness*) et perte de résolution tomographique [58][59]. Prévention : CQ du COR régulier (NEMA NU-1).\n\n**▸ Pénétration septale & artefact en étoile.** Lorsque des photons de **haute énergie** traversent les septa de plomb du collimateur (cas typique de l'**I-123**, qui émet aussi des photons ≈ 529 keV, ou des isotopes mal appariés au collimateur), ils créent une **étoile** caractéristique autour des foyers très intenses [58][59]. La pénétration septale **diminue** quand l'énergie baisse et quand l'épaisseur des septa augmente ; pour le LEHR optimisé Tc-99m, elle reste **négligeable (0,2–1,1 %)** [8]. La parade est le **choix du collimateur adapté à l'énergie** : moyenne énergie (MEGP) pour l'I-123, haute énergie pour l'I-131.\n\n**▸ Artefact en étoile de rétroprojection (FBP).** Distinct du précédent : il provient de l'algorithme **FBP** lui-même autour des sources très actives. Le filtre rampe l'atténue mais peut créer de **faux déficits de comptage** au voisinage des foyers intenses (vessie pleine, point d'injection) [59]. La reconstruction **itérative** y est moins sujette.\n\n**▸ Pièges d'acquisition.** **Mouvement du patient** (artefact de flou ou de dédoublement, surtout en TEMP cardiaque), **extravasation** au point d'injection (foyer chaud focal pouvant masquer un ganglion en scintigraphie du nœud sentinelle), **contamination** cutanée ou par les urines (faux foyer), **troncature** du champ TDM en TEMP/TDM (correction d'atténuation faussée) [58][59]. Ces pièges se reconnaissent au contexte et se corrigent par ré-acquisition ou nettoyage.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — artefact en anneau vs déficit pathologique",
+              "text": "Un **anneau** centré sur l'axe de rotation, **concentrique** et reproductible d'un examen à l'autre, est instrumental (PM ou cristal défaillant), pas pathologique [58][59]. Vérifier l'**uniformité** du jour et comparer aux examens antérieurs. Ne jamais conclure à une ischémie myocardique sans avoir éliminé un artefact en anneau."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — collimateur mal apparié à l'énergie",
+              "text": "Avec l'**I-123** (photons ≈ 529 keV) ou tout isotope de haute énergie, un collimateur **basse énergie** laisse passer la pénétration septale → **artefact en étoile** et dégradation de contraste. Imposer le collimateur de la bonne classe : **MEGP pour l'I-123**, **haute énergie pour l'I-131**. Vérifier systématiquement l'appariement énergie/collimateur avant l'acquisition."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — distinguer les deux « étoiles »",
+              "text": "Deux artefacts en étoile coexistent et ne se corrigent pas de la même façon. L'**étoile de pénétration septale** est un problème de **collimateur** (énergie photonique trop haute) → changer de collimateur. L'**étoile de rétroprojection** est un problème d'**algorithme** (FBP autour des foyers intenses) → passer à une reconstruction **itérative** ou vider la vessie avant l'acquisition [59]."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma des origines instrumentales des artefacts d'une gamma-caméra : photomultiplicateur défaillant et hydratation du cristal NaI (non-uniformité, artefact en anneau), septa du collimateur traversés par des photons de haute énergie (artefact en étoile).",
+            "caption": "Fig. — Où naissent les artefacts : non-uniformité (PM/cristal) → anneau en TEMP ; pénétration septale (collimateur) → étoile ; COR → flou et dédoublement."
+          }
+        },
+        {
+          "title": "D10 - Contrôle qualité et maintenance : garantir la fiabilité",
+          "text": "Une gamma-caméra ne produit d'images quantifiables que si ses performances physiques sont vérifiées selon un calendrier strict : la chaîne de détection (collimateur → cristal NaI(Tl) → photomultiplicateurs → logique d'Anger) dérive avec le temps, et la moindre non-uniformité ou erreur de centre de rotation se traduit en artefact diagnostique (cf. §C14). Le référentiel de mesure des performances est la norme **NEMA NU-1**, complétée par les recommandations **AAPM, SNMMI, EANM** et l'atlas de contrôle qualité (CQ) de l'**AIEA** [19][20].\n\n**▸ Hiérarchie des tests de CQ**\n\nLe test le plus important est l'**uniformité planaire**, qui mesure l'écart à une distribution de comptage parfaitement homogène ; il est réalisé **quotidiennement** [19]. On distingue l'uniformité *intrinsèque* (sans collimateur, source ponctuelle de Tc-99m, contrôle journalier) et l'uniformité *extrinsèque / système* (avec collimateur, source plane — flood — de Co-57, contrôle hebdomadaire) [19][20].\n\n| Test | Périodicité | Méthode / matériel | Ce qu'il vérifie |\n|---|---|---|---|\n| **Pic d'énergie (peaking)** | Quotidien | Source du jour (Tc-99m → 140 keV) | Centrage de la fenêtre sur le photopic [19] |\n| **Uniformité intrinsèque** | Quotidien | Sans collimateur, source ponctuelle Tc-99m | Homogénéité du champ utile (UFOV/CFOV) [19][20] |\n| **Uniformité système (extrinsèque)** | Hebdomadaire | Collimateur + source plane Co-57 | Défauts du collimateur + détecteur [19][20] |\n| **Résolution spatiale & linéarité** | Hebdo / mensuel | Fantôme à fentes ou barres + Tc-99m | FWHM/FWTM, distorsion géométrique [19] |\n| **Résolution en énergie** | Périodique | Source collimatée | Discrimination du diffusé (FWHM ≈ **10 %** à 140 keV pour NaI(Tl)) [1][6] |\n| **Centre de rotation (COR)** | Hebdomadaire (TEMP) | Source ponctuelle, acquisition tomographique | Alignement mécanique/électronique des projections [19] |\n| **Sensibilité tomographique** | Périodique | Source/fantôme calibré | cps/MBq, stabilité quantitative [19] |\n\n**▸ Valeurs de référence à garder en mémoire.** Résolution en énergie du NaI(Tl) ≈ **9,8–10 % FWHM** à 140 keV [1][6] ; résolution spatiale intrinsèque **2,9–4,5 mm FWHM** (Tc-99m, sans collimateur) [4][5], dégradée à **~7,2–7,4 mm FWHM** en résolution *système* avec un collimateur LEHR à 10 cm [8][9] ; sensibilité système LEHR ≈ **96–109 cps/MBq** [8]. Toute dérive de ces indicateurs au-delà des tolérances NEMA impose une intervention avant tout usage clinique.\n\n**▸ Maintenance préventive et corrective.** Au-delà du CQ, la maintenance porte sur les éléments à dérive lente ou défaillance brutale : recalibration des **gains de chaque photomultiplicateur (PM)** (le réseau hexagonal compte typiquement **30 à 100 PM** [1]), correction des cartes d'uniformité (tuning), surveillance de l'intégrité du cristal NaI(Tl) — hygroscopique, son **hydratation** par fissure du capot étanche dégrade irréversiblement la résolution — et entretien mécanique des statifs de rotation (gantry) garantissant la stabilité du COR. La défaillance d'un seul PM produit un défaut focal corrigible **après remplacement** [58]. La traçabilité de l'ensemble (constantes, dérives, interventions) est exigée par la réglementation (cf. §D11).",
+          "steps": [
+            {
+              "title": "Avant la première acquisition (chaque matin)",
+              "text": "Peaking sur le photopic du radionucléide du jour, puis contrôle d'uniformité intrinsèque ; vérifier que les écarts UFOV/CFOV restent dans les tolérances NEMA avant d'autoriser les examens [19]."
+            },
+            {
+              "title": "Contrôles hebdomadaires",
+              "text": "Uniformité système avec collimateur (source plane Co-57), résolution spatiale/linéarité au fantôme à barres, et centre de rotation pour les têtes utilisées en TEMP [19][20]."
+            },
+            {
+              "title": "Contrôles périodiques et maintenance",
+              "text": "Résolution en énergie, sensibilité tomographique, recalibration des gains de PM, mise à jour des cartes d'uniformité, vérification de l'intégrité du cristal et du gantry ; consignation de toutes les constantes pour la traçabilité réglementaire [19][20]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "~10 % FWHM",
+              "label": "Résolution en énergie NaI(Tl) à 140 keV"
+            },
+            {
+              "value": "Quotidien",
+              "label": "Contrôle d'uniformité (test n°1)"
+            },
+            {
+              "value": "30–100",
+              "label": "Photomultiplicateurs par tête de détection"
+            },
+            {
+              "value": "NEMA NU-1",
+              "label": "Norme de mesure des performances"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — Ne jamais imager si l'uniformité n'est pas validée",
+              "text": "Une non-uniformité (défaut de PM, défaut de collimateur, **hydratation du cristal NaI(Tl)**, électronique défaillante) génère en reconstruction TEMP des **artefacts en anneau** sur les coupes transaxiales, qui peuvent mimer un déficit ischémique. La règle est absolue : tant que l'uniformité quotidienne n'est pas corrigée, aucune acquisition tomographique ne doit être interprétée [58][59]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — COR et artefact en anneau",
+              "text": "Une **erreur de centre de rotation (COR)** désaligne les projections en reconstruction et crée des artefacts en anneau spécifiques, distincts de ceux liés à la non-uniformité : le contrôle hebdomadaire du COR est donc indissociable du contrôle d'uniformité pour toute caméra utilisée en TEMP [19][59]."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma de la chaîne de détection d'une gamma-caméra (collimateur, cristal NaI(Tl), photomultiplicateurs, électronique de positionnement d'Anger), repères des composants soumis au contrôle qualité.",
+            "caption": "Fig. — Les composants de la chaîne de détection et les points de contrôle qualité associés (uniformité, peaking, COR)."
+          }
+        },
+        {
+          "title": "D11 - Radioprotection, ergonomie et réglementation du poste caméra",
+          "text": "Le poste gamma-caméra concentre les enjeux de radioprotection de la médecine nucléaire monophotonique : le radionucléide pivot, le **technétium-99m**, émet un photon γ de **140 keV** pour une période physique de **6,0 h** [12][17], énergie suffisamment basse pour être facilement collimatée et blindée mais imposant tout de même une protection rigoureuse du personnel, de l'entourage et du public. La radioprotection se structure autour des trois principes de la CIPR : **justification, optimisation (ALARA — *As Low As Reasonably Achievable*), limitation**.\n\n**▸ Protection du personnel : temps, distance, écran.** Les trois leviers physiques de réduction de dose s'appliquent à chaque étape (préparation/élution du générateur ⁹⁹Mo/⁹⁹ᵐTc, marquage, injection, positionnement du patient sous la caméra). Le **temps** d'exposition est minimisé par l'entraînement aux gestes ; la **distance** exploite la loi en 1/d² ; l'**écran** repose sur le blindage plomb adapté au 140 keV (protège-seringues, châteaux de transport, paravents). La dosimétrie passive (corps entier) et opérationnelle (poignet/extrémités, fortement exposées à la manipulation des seringues) est obligatoire, de même que le zonage des locaux [17].\n\n| Cible de protection | Mesures clés |\n|---|---|\n| **Personnel** | Blindage seringue/flacon, distance, limitation du temps, dosimétrie corps entier + extrémités, zonage des locaux [17] |\n| **Entourage / public** | Le patient injecté est une « source » : consignes post-examen (hydratation, mictions fréquentes, distance vis-à-vis des enfants et femmes enceintes pendant la période utile) [17] |\n| **Patient** | Justification de l'indication, optimisation de l'activité, ajustement pédiatrique au poids (carte de dose EANM) [21][22] |\n\n**▸ Optimisation de la dose patient.** L'activité est ajustée à l'objectif diagnostique : en pédiatrie, application stricte de la **carte de dose EANM** (activité de base × multiple selon le poids, sans descendre sous l'activité minimale recommandée) [21][22]. La **vidange vésicale précoce** réduit la dose à la paroi vésicale, organe critique des traceurs osseux et rénaux (⁹⁹ᵐTc-MDP, ⁹⁹ᵐTc-MAG3) [17][55][57]. À titre de repère dosimétrique, ⁹⁹ᵐTc-MDP délivre **0,0057 mSv/MBq** (soit ≈ **4,2 mSv** pour 740 MBq) [36][35], et l'ajout d'un **SPECT/CT** apporte une dose tomodensitométrique supplémentaire à intégrer dans la justification [18][46].\n\n**▸ Ergonomie du poste.** La conception du poste vise simultanément la qualité d'image et la limitation de dose : statif motorisé pour le positionnement au plus près du patient (la résolution système se dégrade avec la distance détecteur-patient, cf. §D10), têtes de détection orientables (configuration variable selon l'examen — corps entier, statiques, double tête à 90°/180° pour la TEMP cardiaque), gestion des flux (zone chaude / zone froide) limitant les déplacements de sources, et postes de manipulation derrière protections plombées intégrées. L'ergonomie conditionne directement le temps d'exposition du manipulateur et la reproductibilité du positionnement.\n\n**▸ Cadre réglementaire et déchets.** Le poste relève du régime des installations utilisant des sources non scellées : autorisation d'exploitation, contrôles réglementaires de l'appareil et des locaux, traçabilité des sources (Co-57 des floods, sources de calibration), gestion des **effluents et déchets radioactifs** par décroissance avant rejet/élimination, et conduite documentée en cas de contamination. La traçabilité des constantes de CQ (§D10) participe de cette obligation réglementaire.",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "Photon γ du Tc-99m (facilement blindé)"
+            },
+            {
+              "value": "1/d²",
+              "label": "Loi régissant le levier « distance »"
+            },
+            {
+              "value": "ALARA",
+              "label": "Principe d'optimisation des doses"
+            },
+            {
+              "value": "Extrémités",
+              "label": "Dosimétrie spécifique du manipulateur"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — Le patient injecté est une source",
+              "text": "Après injection, le patient devient une source de rayonnement pour son entourage. Les consignes post-examen (hydratation, mictions fréquentes pour réduire la dose vésicale, et distance vis-à-vis des enfants et femmes enceintes durant la période utile) sont indissociables de la radioprotection du public [17]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — Dosimétrie des extrémités",
+              "text": "À la gamma-caméra, l'exposition dominante du manipulateur porte sur les **mains** lors de la manipulation des seringues (élution, marquage, injection). Le port d'une bague dosimétrique et l'usage systématique du protège-seringue plombé sont prioritaires : la dose aux extrémités peut largement excéder la dose corps entier [17]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers de réduction de dose au poste gamma-caméra : temps d'exposition, distance à la source, écran de blindage plombé.",
+            "caption": "Fig. — Temps / distance / écran : la structure ALARA appliquée au poste caméra et aux consignes à l'entourage."
+          }
+        },
+        {
+          "title": "D12 - Au-delà du NaI : caméras CZT et nouvelles architectures",
+          "text": "La caméra d'Anger à cristal NaI(Tl) et photomultiplicateurs (PM) reste la référence depuis plus de 60 ans [2], mais elle est concurrencée par une rupture technologique majeure : les détecteurs **semi-conducteurs à conversion directe** au **CZT (tellurure de cadmium-zinc, CdZnTe)**, qui suppriment à la fois le cristal scintillant et les PM.\n\n**▸ Principe de la conversion directe.** Dans un détecteur CZT, le photon γ crée *directement* des paires électron-trou dans le semi-conducteur (énergie de création de paire ≈ **5 eV**, densité **5,82 g/cm³**), collectées sous champ électrique [2]. Il n'y a ni étape de scintillation, ni logique d'Anger par barycentre. À **140 keV, le CZT génère ~30 000 électrons, soit environ 20 fois plus qu'une scintillation NaI(Tl)** [13], et son pouvoir d'arrêt est supérieur (coefficient d'atténuation **3,07 cm⁻¹** vs 2,64 cm⁻¹ pour le NaI(Tl) à 140 keV) [2]. Le détecteur fonctionne à température ambiante (bande interdite ≈ 1,6 eV) [1].\n\n| Paramètre | NaI(Tl) (Anger) | CZT (semi-conducteur) | Source |\n|---|---|---|---|\n| Résolution en énergie (FWHM @140 keV) | **~9,8–10 %** | **~5–6,3 %** | [1][3][6] |\n| Résolution spatiale intrinsèque | ~2,9–4,5 mm FWHM | meilleure (détecteurs élémentaires) | [1][2][4] |\n| Coefficient d'atténuation @140 keV | 2,64 cm⁻¹ | **3,07 cm⁻¹** | [2] |\n| Taux de comptage max | jusqu'à **10⁵ cps** | élevé | [2] |\n| Architecture | cristal + PM + logique d'Anger | conversion directe, sans PM | [1][2] |\n\n**▸ Bénéfices cliniques.** La résolution en énergie environ **deux fois meilleure** (< 6 % à 140 keV) [13] autorise une fenêtre spectrométrique plus étroite, réduisant les coups diffusés et améliorant le contraste. En cardiologie, les caméras CZT dédiées (**D-SPECT** de Spectrum Dynamics, **Discovery NM530c** de GE) imagent le cœur sous **plusieurs angles simultanément, sans rotation** des détecteurs, avec une collimation à haute sensibilité [13][14]. Il en résulte une **réduction d'environ 25 % du temps d'acquisition** (ou de l'activité injectée) sans perte de qualité [13], et la meilleure séparation spectrale facilite les protocoles **double isotope** (acquisition simultanée Tc-99m / I-123, même lorsque les pics sont proches) [13][15]. Pour la coronaropathie, la revue du comité cardiovasculaire de l'**EANM** rapporte des performances diagnostiques supérieures à celles des caméras NaI standard [42].\n\n**▸ Limites du CZT.** Les cristaux ne peuvent être cultivés en plaques aussi grandes que le NaI(Tl) ; s'y ajoutent des **effets de polarisation**, un faible produit mobilité-durée de vie des trous, des défauts de croissance et un coût élevé [1]. Ces contraintes expliquent que le CZT se soit d'abord imposé sur des plateformes à champ de vue limité (cardiaque, mammaire, mains) avant son extension progressive aux caméras corps entier.\n\n**▸ Autres architectures de collimation.** Indépendamment du détecteur, la géométrie de collimation diversifie les applications (cf. §B9) : trous parallèles (standard), **sténopé (pinhole)** et **multi-pinhole** (haute résolution sur petit organe, base des caméras CZT cardiaques à 19 détecteurs), convergents **fan-beam / cone-beam**, divergents, et **slit-slat** [1]. Les **alliages au tungstène (type Wolfmet)** sont par ailleurs étudiés comme matériau de septa en remplacement du plomb, pour améliorer le rapport résolution/sensibilité à dimensions égales [10][11]. L'ensemble de ces innovations — conversion directe, multi-détecteurs fixes, collimation dédiée — redessine le paysage instrumental hérité de la caméra d'Anger sans en abolir le principe fondateur : projeter, par collimation, la distribution d'un émetteur γ sur un détecteur position-sensible.",
+          "stats": [
+            {
+              "value": "~30 000 e⁻",
+              "label": "Charge CZT à 140 keV (~20× le NaI)"
+            },
+            {
+              "value": "< 6 %",
+              "label": "Résolution en énergie du CZT à 140 keV"
+            },
+            {
+              "value": "−25 %",
+              "label": "Temps d'acquisition (cardiaque CZT)"
+            },
+            {
+              "value": "Sans rotation",
+              "label": "Acquisition multi-angles des caméras CZT cardiaques"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — Pourquoi le CZT excelle en cardiologie d'abord",
+              "text": "Le double isotope simultané (Tc-99m / I-123) et la réduction de dose/temps tirent parti de la résolution énergétique du CZT (~5–6 % vs ~10 %), tandis que le champ de vue cardiaque limité contourne l'impossibilité de cultiver de grands cristaux CZT. C'est cette convergence qui a fait du cœur la première cible des caméras CZT dédiées (D-SPECT, NM530c) [13][14][42]."
+            },
+            {
+              "type": "info",
+              "title": "Repère — Conversion directe vs scintillation",
+              "text": "Le CZT supprime deux maillons de la caméra d'Anger : le cristal scintillant ET les photomultiplicateurs. Le photon γ y produit directement un signal de charge (énergie/paire ≈ 5 eV), sans logique de barycentre d'Anger — d'où le gain en résolution énergétique et en compacité, au prix de la taille des détecteurs et du coût [1][2]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur molybdène-99 / technétium-99m fournissant le pertechnétate (140 keV), radionucléide imagé par les caméras NaI(Tl) comme CZT.",
+            "caption": "Fig. — Le Tc-99m (140 keV) issu du générateur ⁹⁹Mo/⁹⁹ᵐTc, traceur commun aux caméras NaI(Tl) et CZT."
+          }
+        },
+        {
+          "title": "E13 - E13 - Cas pratiques commentés : du symptôme image au diagnostic instrumental",
+          "text": "Quatre vignettes orientées **instrument** : non pas « quel diagnostic ? » mais « quel composant, quel réglage ou quel artefact instrumental explique l'image ? ». Chaque cas suit la trame contexte → image → analyse instrumentale → correction, et renvoie aux sections techniques de l'article (collimateur, fenêtre en énergie, CQ d'uniformité, reconstruction).\n\nLa gamma-caméra à scintillation, inventée par **Hal Anger dans les années 1950** (prototype : cristal NaI(Tl) de **¼ pouce ≈ 6 mm** d'épaisseur, **5 pouces ≈ 13 cm** de diamètre, **7 photomultiplicateurs**) [1], reste l'instrument de référence en imagerie monophotonique depuis **plus de 60 ans** [1]. Sa chaîne — collimateur → cristal NaI(Tl) → photomultiplicateurs (PM) → logique d'Anger (barycentre pondéré = position X,Y ; somme des signaux = énergie Z) — est le fil rouge de ces cas.\n\n| Cas | Indice image | Composant en cause | Source |\n|---|---|---|---|\n| 1 | Artefact en étoile autour d'un foyer intense | Pénétration septale du collimateur | [1][7] |\n| 2 | Anneau concentrique sur coupes TEMP | Erreur de centre de rotation (COR) | [19][20] |\n| 3 | Défaut focal « œil-de-bœuf » froid, fixe | PM défaillant / non-uniformité | [19][20] |\n| 4 | Fond élevé, contraste effondré | Fenêtre en énergie mal positionnée | [4][5] |",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "γ du Tc-99m, idéal pour NaI(Tl)/collimateur Pb [23]"
+            },
+            {
+              "value": "30-100",
+              "label": "Photomultiplicateurs derrière le cristal [1]"
+            },
+            {
+              "value": "0,2-1,1 %",
+              "label": "Pénétration septale LEHR à 140 keV [8]"
+            },
+            {
+              "value": "quotidien",
+              "label": "Rythme du CQ d'uniformité planaire [19]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Cas 1 - Artefact en etoile sur scintigraphie thyroidienne au pertechnetate",
+              "text": "*Contexte* : nodule thyroïdien fixant intensément le ⁹⁹ᵐTcO₄⁻ (γ **140 keV** [23]) ; aspect rayonnant autour du foyer chaud. *Analyse instrumentale* : un collimateur basse énergie laisse passer quelques photons traversant les **septa de plomb** au lieu d'être absorbés — la **pénétration septale** [7]. Elle augmente quand l'énergie photonique monte et diminue quand l'épaisseur des septa augmente ; pour un collimateur LEHR optimisé Tc-99m, elle reste **négligeable (0,2-1,1 %)** [8], mais devient visible sur un foyer très actif. *Correction* : à 140 keV, un collimateur **LEHR/LEGP** suffit ; ce piège est surtout marqué pour les émetteurs de plus haute énergie (¹²³I à 529 keV, ¹³¹I à 364 keV [23]) où un collimateur moyenne/haute énergie devient obligatoire [7]."
+            },
+            {
+              "type": "info",
+              "title": "Cas 2 - Anneau froid en TEMP de perfusion myocardique",
+              "text": "*Contexte* : TEMP-MPI au sestamibi, anneau concentrique sur les coupes transaxiales pouvant **mimer un déficit ischémique**. *Analyse instrumentale* : désalignement du **centre de rotation (COR)** — les projections acquises sous chaque angle ne se reprojettent pas sur un axe commun, créant un artefact en anneau [19][20]. *Correction* : test COR du programme de CQ tomographique ; ne pas interpréter tant que l'uniformité et le COR ne sont pas validés [19]. Le COR fait partie du CQ NEMA NU-1 au même titre que l'uniformité tomographique et la sensibilité [19][20]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - Cas 3 : PM defaillant pris pour une lesion",
+              "text": "*Contexte* : défaut froid focal **fixe** d'un examen à l'autre, indépendant du patient. *Analyse* : un **photomultiplicateur défaillant** (réseau de **30 à 100 PM** derrière le cristal [1]) crée une zone de sous-réponse locale ; la non-uniformité peut aussi venir d'une déshydratation du cristal NaI(Tl) ou de l'électronique [19][20]. L'**uniformité planaire est le test CQ le plus important, réalisé quotidiennement** [19]. *Correction* : uniformité intrinsèque (sans collimateur, source ponctuelle Tc-99m, journalière) et extrinsèque (avec collimateur, source plane Co-57, hebdomadaire) [19][20] ; l'artefact disparaît après remplacement du PM [19]."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Coupe d'une gamma-caméra d'Anger : collimateur à trous parallèles, cristal NaI(Tl), réseau de photomultiplicateurs et électronique de positionnement.",
+            "caption": "Fig. - Les quatre étages de la caméra d'Anger ; chaque cas de cette section incrimine un étage précis."
+          }
+        },
+        {
+          "title": "E14 - E14 - La gamma-caméra dans l'écosystème de l'imagerie nucléaire",
+          "text": "La gamma-caméra n'est qu'une des deux grandes familles de détecteurs de la médecine nucléaire : la **détection monophotonique** (scintigraphie planaire, TEMP/SPECT) qu'elle assure, face à la **détection en coïncidence** des émetteurs de positons (TEP). Situer la caméra, c'est comprendre ce qu'elle partage avec ses voisines et ce qui l'en distingue.\n\n**▸ NaI(Tl) d'Anger vs CZT — la rupture intra-monophotonique.** Le détecteur **semi-conducteur CdZnTe (CZT)** convertit directement le photon γ en charge électrique (énergie par paire électron-trou ≈ **5 eV**, densité **5,82 g/cm³** [1]), supprimant l'étape de scintillation et les PM. Il en résulte une **résolution en énergie ~2× meilleure** (**< 5 %** voire ~5-6,3 % à 140 keV, contre ~9,8-10 % pour le NaI [1][13]) et un pouvoir d'arrêt supérieur (μ = **3,07 cm⁻¹** vs 2,64 cm⁻¹ à 140 keV [1]). À 140 keV, le CZT génère **~30 000 électrons, soit ~20× plus qu'une scintillation NaI(Tl)** [13]. En cardiologie, les caméras dédiées (**D-SPECT**, Discovery NM530c) imagent le cœur sous plusieurs angles **sans rotation** [13][15], permettent une **réduction ~25 % du temps d'acquisition** [13] et facilitent l'acquisition **bi-isotopique simultanée** (Tc-99m/I-123) grâce à la meilleure séparation spectrale [13][15].\n\n| Détecteur | Résolution en énergie @140 keV | Conversion | Atout | Source |\n|---|---|---|---|---|\n| NaI(Tl) d'Anger | ~9,8-10 % | Scintillation + PM | Grand champ, polyvalence | [1][6] |\n| CZT/CdZnTe | ~5-6,3 % | Directe (semi-conducteur) | Sensibilité, double isotope | [1][13] |\n\n**▸ Caméra (TEMP) vs TEP — deux physiques de localisation.** La caméra localise par **collimation physique** (le collimateur, élément qui définit la résolution spatiale du système, absorbe les photons non perpendiculaires [7]) ; la TEP localise par **coïncidence électronique** des deux photons de 511 keV (collimation électronique, sans collimateur plomb). La caméra impose donc un compromis résolution/sensibilité dicté par le collimateur, là où la TEP gagne en sensibilité.\n\n**▸ Place dans la chaîne du Tc-99m.** Le ⁹⁹ᵐTc, radionucléide pivot (**T½ 6 h**, γ **140 keV** [23]), est produit au lit du service par **générateur ⁹⁹Mo/⁹⁹ᵐTc** [24] puis lié en chimie de kit ; sa raie de 140 keV est précisément celle pour laquelle le couple NaI(Tl)/collimateur plomb a été optimisé [1][23]. La caméra est ainsi le maillon final d'une chaîne générateur → marquage → injection → détection.",
+          "stats": [
+            {
+              "value": "~25 %",
+              "label": "Gain de temps d'acquisition en CZT cardiaque [13]"
+            },
+            {
+              "value": "30 000 e⁻",
+              "label": "Charge CZT à 140 keV (~20× le NaI) [13]"
+            },
+            {
+              "value": "5,82 g/cm³",
+              "label": "Densité du CdZnTe [1]"
+            },
+            {
+              "value": "100 kcps",
+              "label": "Taux de comptage max d'une caméra NaI [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - le collimateur prime sur le detecteur",
+              "text": "La résolution spatiale **intrinsèque** du NaI(Tl) est de **~2-4 mm FWHM** [1][4], mais la résolution **système** (collimateur + détecteur) chute à ~7 mm à 10 cm pour un LEHR : c'est le **collimateur qui plafonne** la performance, pas le cristal. Améliorer le détecteur (CZT) sans repenser la collimation ne lève donc qu'une partie de la limite. Classes d'énergie : basse ≤ 160 keV, moyenne ≤ 250 keV, haute > 250 keV [5]."
+            },
+            {
+              "type": "info",
+              "title": "SPECT/CT - l'hybridation",
+              "text": "L'adjonction d'un CT à la caméra (SPECT/CT) fournit la **correction d'atténuation basée sur le CT** et le repérage anatomique [16], au prix d'une **dose CT à intégrer dans la justification** [16][9]. En os, le SPECT/CT définit le diagnostic dans ~**90 %** des lésions équivoques du planaire/SPECT seul [16]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Détection en coïncidence TEP : deux photons d'annihilation de 511 keV émis à 180° et détectés simultanément, opposée à la collimation physique de la gamma-caméra.",
+            "caption": "Fig. - Collimation électronique (TEP) vs collimation plomb (caméra d'Anger) : deux façons de localiser le photon."
+          }
+        },
+        {
+          "title": "E15 - E15 - Points clés, pièges fréquents et FAQ",
+          "text": "**▸ Points clés (page mémo instrumentale)**\n\n- La **caméra d'Anger** détecte les γ via 4 étages : collimateur → cristal **NaI(Tl)** → **photomultiplicateurs (PM)** → **logique d'Anger** (barycentre = position X,Y ; somme = énergie Z) [1].\n- **NaI(Tl)** : rendement lumineux ~**38-40 photons/keV** [1], temps de décroissance **230 ns** [1], μ = **2,64 cm⁻¹** à 140 keV (efficacité **94 % pour un cristal de ½ pouce**) [1] ; épaisseurs usuelles **¼-⅜ pouce (6-9,5 mm)** pour le Tc-99m [1].\n- **Résolution en énergie** ~**10 % FWHM** à 140 keV (NaI), **~5-6 %** en CZT [1][6].\n- **Résolution spatiale intrinsèque ~2-4 mm**, mais c'est le **collimateur** qui fixe la résolution système (~7 mm à 10 cm, LEHR) [1][4].\n- **Collimateur = compromis résolution/sensibilité** : trous petits/longs → résolution ↑, sensibilité ↓ (LEHR) ; trous larges → sensibilité ↑ (LEGP) [5]. Classes : LEHR, LEGP, MEAP, HEAP [5].\n- **CZT** = conversion directe, sans cristal ni PM : meilleure résolution en énergie, double isotope, caméras cardiaques sans rotation [13].\n- **Reconstruction** : **OSEM** itérative avec correction d'atténuation (CT), de diffusion (fenêtre **TEW**, fenêtres ~15 %), recovery de résolution → exactitude quantitative **± 5 %** [16][17].\n- **CQ** : **uniformité** planaire = test le plus important, **quotidien** [19] ; COR, résolution, sensibilité, peaking ; référentiel **NEMA NU-1** [19][20].\n- **Tc-99m** (140 keV, T½ 6 h [23]) = radionucléide pour lequel le couple NaI/plomb est optimisé.\n\n**▸ FAQ instrumentale**\n\n**Pourquoi un cristal d'iodure de sodium dopé au thallium ?** Le NaI(Tl) offre l'un des plus hauts rendements lumineux (~40 photons/keV [1]) et un bon pouvoir d'arrêt à 140 keV (94 % pour ½ pouce [1]), déterminants pour les résolutions énergétique et spatiale.\n\n**Plus épais = mieux ?** Non : un cristal plus épais augmente la **sensibilité** mais dégrade la **résolution intrinsèque** [1] — d'où le compromis à ¼-⅜ pouce pour le Tc-99m.\n\n**Comment la caméra calcule-t-elle la position d'un événement ?** Par la **logique d'Anger** : barycentre pondéré des signaux de l'ensemble des PM (position X,Y) ; la somme des signaux donne l'énergie Z, discriminée par une fenêtre spectrométrique [1].\n\n**FBP ou OSEM ?** L'**itérative OSEM** est désormais préférée : meilleure qualité en zones de faible comptage et intégration des corrections (atténuation, diffusion, résolution) [16][17] ; la FBP rampe peut créer de faux déficits près des sources très actives [20].\n\n**Pourquoi un CZT en cardiologie plutôt qu'un NaI ?** Résolution en énergie ~2× meilleure, sensibilité accrue, **~25 % de temps gagné** et double isotope facilité [13] ; performances diagnostiques supérieures au NaI standard pour la coronaropathie (comité cardiovasculaire EANM) [42].",
+          "stats": [
+            {
+              "value": "40 photons/keV",
+              "label": "Rendement lumineux du NaI(Tl) [1]"
+            },
+            {
+              "value": "230 ns",
+              "label": "Temps de décroissance NaI(Tl) [1]"
+            },
+            {
+              "value": "± 5 %",
+              "label": "Exactitude quantitative OSEM 3D corrigé [16]"
+            },
+            {
+              "value": "~10 % FWHM",
+              "label": "Résolution en énergie NaI à 140 keV [1][6]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - artefact en anneau (ring artifact)",
+              "text": "Sur coupes transaxiales TEMP, un anneau concentrique peut **mimer un défaut ischémique** : il signe une **non-uniformité** ou une **erreur de COR** [19][20]. Ne jamais imager tant que l'uniformité n'est pas corrigée [20]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - penetration septale et artefact en etoile",
+              "text": "Aspect rayonnant autour d'un foyer très intense : photons traversant les septa au lieu d'être absorbés [1][7]. Diminue avec ↓ énergie et ↑ épaisseur des septa ; impose un collimateur **moyenne/haute énergie** pour ¹²³I/¹³¹I [7]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - fenetre en energie",
+              "text": "Un **analyseur d'amplitude** centré sur le photopic **140 keV ± ~10 %** rejette le rayonnement diffusé [4]. Une fenêtre décentrée ou trop large laisse passer le diffusé (fond ↑, contraste ↓) ; la correction de diffusion **TEW** (triple energy window) ajoute des fenêtres latérales pour estimer et soustraire le diffusé, utile pour ¹²³I et ¹⁷⁷Lu [17][16]."
+            }
+          ]
+        },
+        {
+          "title": "E16 - E16 - Références & liens sortants typés",
+          "text": "**▸ Références principales (sélection sourcée et datée).** Les valeurs chiffrées de cet article renvoient à la liste numérotée ci-dessous, dont les sources fondatrices sur l'instrument et ses performances.\n\n- **Principe & détecteurs** : Peterson & Furenlid, *SPECT detectors: the Anger Camera and beyond*, Phys Med Biol 2011 [1] ; *Physics: Gamma camera*, HandWiki [2] ; *Imaging of gamma emitters using scintillation cameras* [3] ; *The Gamma Camera: Performance Characteristics* (Radiology Key [4] / Clinical Tree [5]).\n- **Collimateurs** : *Characterization of parallel-hole collimator* (Monte Carlo) [7] ; caméra CZT portable pour ¹⁷⁷Lu [8] ; collimateurs au tungstène (Wolfmet) [10][11] ; compromis de conception [12].\n- **CZT & cardiologie** : Imbert & Marie, *CZT cameras: a technological jump for myocardial perfusion SPECT*, J Nucl Cardiol 2016 [13] ; évaluation CZT [14] ; double isotope CZT [15] ; revue du comité cardiovasculaire EANM [42].\n- **Reconstruction & quantification** : Lyra & Ploussi, *Filtering in SPECT* [16] ; comparatif FBP/OSEM [17] ; correction d'atténuation bayésienne [18] ; exactitude quantitative SPECT/CT (Zeintl) [46] ; correction de diffusion TEW (I-123) [47].\n- **CQ** : *Quality Control of Gamma Camera with SPECT Systems* [19] ; **IAEA QC Atlas** (STI/PUB/1141) [20] ; logiciel NEMA [44] ; Harkness, *SPECT QC & artifact identification* [45] ; artefacts [58][59].\n- **Radiopharmaceutique pivot** : générateur ⁹⁹Mo/⁹⁹ᵐTc — TechneLite/DailyMed [23], StatPearls [24] ; dosimétrie ICRP 128 [36][49].\n\n**▸ Liens sortants typés (graphe de l'article).**\n\n| Type | Cibles |\n|---|---|\n| Examen | Scintigraphie osseuse · TEMP de perfusion myocardique · Scintigraphie thyroïdienne · Scintigraphie V/Q · TEP-TDM |\n| Traceur | ⁹⁹ᵐTc-pertechnétate · ⁹⁹ᵐTc-MDP · ⁹⁹ᵐTc-sestamibi · ⁹⁹ᵐTc-MAG3 · ¹²³I |\n| Maladie | Coronaropathie · Métastases osseuses · Embolie pulmonaire |\n| Score | Modèle 17 segments (SSS/SDS) · Score de Curie/SIOPEN |\n| Théranostique | Générateur ⁹⁹Mo/⁹⁹ᵐTc (chaîne de production) |\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). Article id V2_GAMMA_CAMERA, catégorie Instrumentation.*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note de fiabilite",
+              "text": "Les coefficients dosimétriques par radiopharmaceutique (utilisés dans les sections cliniques apparentées) doivent être vérifiés dans **ICRP 128** en texte intégral [36][49] ; la littérature secondaire concorde (MDP 0,0057 mSv/MBq). Les valeurs de résolution et de pénétration septale dépendent du modèle de caméra et du collimateur : les chiffres cités [1][7][8] sont des ordres de grandeur représentatifs, à confirmer sur le matériel du service."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Générateur de technétium ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine, élution du pertechnétate, alimentant en Tc-99m la chaîne de la gamma-caméra.",
+            "caption": "Fig. - Le générateur ⁹⁹Mo/⁹⁹ᵐTc, source du radionucléide pivot (140 keV) pour lequel la caméra d'Anger est optimisée."
+          }
+        }
+      ]
+    }
+  }
+}

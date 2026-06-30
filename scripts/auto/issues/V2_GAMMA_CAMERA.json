@@ -1,0 +1,50 @@
+[
+  {
+    "severity": "minor",
+    "where": "Fiche de référence 1 (Recherche 1), §9 Dosimétrie — ligne ⁹⁹ᵐTc MAG3",
+    "problem": "La fiche étalon 1 donne MAG3 « ~0,010 mSv/MBq » (source PubMed 1530968, qui est une étude pré-ICRP). C'est la valeur ancienne. Le coefficient ICRP 128 de référence pour le ⁹⁹ᵐTc-MAG3 (fonction rénale normale, miction à 3,5 h) est 0,007 mSv/MBq — valeur que donne correctement la fiche 2. Contradiction interne entre les deux fiches de référence. NB : cette valeur n'apparaît PAS dans le JSON publié (sections medecin_nuc/quiz), donc l'article livré n'est pas affecté ; le risque est la propagation vers un futur article MAG3.",
+    "fix": "Harmoniser sur ICRP 128 : MAG3 ≈ 0,007 mSv/MBq (et non 0,010). Conserver l'exemple « 370 MBq → ~2,6 mSv » plutôt que 3,7 mSv si l'on retient 0,007."
+  },
+  {
+    "severity": "minor",
+    "where": "Fiche de référence 1 (Recherche 1), §9 — ligne ⁹⁹ᵐTc Sestamibi",
+    "problem": "Les coefficients repos/effort semblent intervertis : la fiche écrit « 0,0079 (repos) – 0,0080 (stress) ». Selon ICRP 128, le sestamibi est plus dosant au REPOS (≈ 0,0090 mSv/MBq) qu'à l'EFFORT (≈ 0,0079 mSv/MBq), car la rétention hépatobiliaire/colique est moindre à l'effort. Étiquettes repos/effort inversées et valeur de repos sous-estimée. N'apparaît pas dans le JSON publié.",
+    "fix": "Corriger : repos ≈ 0,0090 mSv/MBq ; effort ≈ 0,0079 mSv/MBq (ICRP 128)."
+  },
+  {
+    "severity": "minor",
+    "where": "JSON publié — section B4 (tableau collimateurs) et quiz Q18 ; classification I-123 en « moyenne énergie ≤ 250 keV »",
+    "problem": "Imprécision conceptuelle : l'I-123 émet des photons parasites à ≈ 529 keV (>250 keV), donc le classer dans la rangée « MEGP ≤ 250 keV » est physiquement bancal. La RECOMMANDATION pratique (collimateur moyenne énergie pour l'I-123) est néanmoins exacte et conforme à la pratique clinique (septa MEGP 1,14 mm vs LEHR ~0,15 mm réduisent la pénétration septale). Ce n'est donc pas une erreur clinique, juste une présentation qui peut laisser croire que l'énergie max de l'I-123 est ≤ 250 keV.",
+    "fix": "Préciser que l'I-123 est imagé en moyenne énergie malgré ses photons de 529 keV (compromis pratique : abondance faible ~1,4 %, le MEGP suffit en routine), pour lever l'apparente contradiction avec la limite « ≤ 250 keV »."
+  },
+  {
+    "severity": "major",
+    "where": "Sections B4, C7, D10, E13 et carte d'identité — chiffres de sensibilité système « ~96–109 cps/MBq » et de pénétration septale « 0,2–1,1 % » attribués à [8]",
+    "problem": "Mauvaise attribution de source (non-fidélité). La source [8] (Characterisation of a hand-held CZT-based gamma camera for 177Lu imaging, PMC7343677) est une étude d'une caméra CZT portable testée pour le 177Lu ; vérification du texte intégral : elle rapporte des sensibilités de l'ordre de 26–28 cps/MBq pour le 177Lu (113/208 keV), PAS 96–109 cps/MBq pour un LEHR au Tc-99m, et ne fournit aucune valeur chiffrée de pénétration septale « 0,2–1,1 % » à 140 keV. Les ordres de grandeur cités sont plausibles pour un vrai LEHR mais la source invoquée ne les contient pas. Répété 4–5 fois (B4, C7, D10, E13, identityCard).",
+    "fix": "Soit rattacher ces chiffres (96–109 cps/MBq ; 0,2–1,1 % de pénétration septale à 140 keV) à une source qui les documente réellement pour un collimateur LEHR/Tc-99m (p. ex. fiche constructeur ou étude NEMA dédiée au LEHR), soit les retirer/remplacer par des valeurs effectivement supportées par [8] (177Lu) ou par une autre référence de la liste. Ne pas laisser [8] porter ces affirmations."
+  },
+  {
+    "severity": "major",
+    "where": "Liste des sources vs corps de l'article (sources [27]–[34], [37]–[41], [43], [48], [50]–[53], [56])",
+    "problem": "20 des 59 sources déclarées ne sont JAMAIS citées dans le corps (texte, infoBoxes, stats, quiz, carte d'identité) : 27, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 43, 48, 50, 51, 52, 53, 56. Ce sont des sources réelles (vérifié [56] = Critical Organ Dose Tc-99m-MIBI, FBT, existe bien) mais orphelines — vraisemblablement héritées d'un gabarit/article voisin (scintigraphie osseuse, MPI, MAG3, DMSA…) sans rapport direct avec un article d'instrumentation. Gonfle artificiellement l'appareil de références.",
+    "fix": "Supprimer de la liste les sources non citées, ou les rattacher à des affirmations existantes si pertinentes (p. ex. [56] pour le repère dosimétrique MIBI déjà évoqué en D11, [54] EANM os déjà cité une fois en E16). Aligner la liste finale sur les sources réellement appelées."
+  },
+  {
+    "severity": "minor",
+    "where": "Titres des sections B4, B5, B6, E13, E14, E15, E16",
+    "problem": "Préfixe de section dupliqué dans le champ title : « B4 - B4 - Le collimateur… », « B5 - B5 - … », « B6 - B6 - … », « E13 - E13 - … », « E14 - E14 - … », « E15 - E15 - … », « E16 - E16 - … ». Défaut de formatage, incohérent avec A1–A3, C7–C9, D10–D12 qui n'ont qu'un préfixe.",
+    "fix": "Retirer le préfixe redondant pour ne garder qu'un seul « B4 - … », « E13 - … », etc."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz, question 5 (~80 % des examens monophotoniques au Tc-99m) attribuée à [25]",
+    "problem": "Affirmation « isotope d'environ 80 % des examens monophotoniques » non présente dans le corps de l'article et rattachée à [25] (NBK215133) sans que ce pourcentage soit surfacé. Le chiffre ~80 % est exact et classique dans la littérature, mais l'attribution précise n'est pas démontrée et la source n'a pu être ouverte (ECONNREFUSED).",
+    "fix": "Soit ajouter une mention sourcée du ~80 % dans le corps avec une référence qui l'énonce explicitement, soit retirer le pourcentage de l'énoncé du quiz. Vérifier que [25] contient bien cette statistique."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [21] EANM Paediatric Dosage Card — URL eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf",
+    "problem": "PDF non récupérable au moment du contrôle (ECONNREFUSED), donc lien non confirmé en accès direct. La carte de dose EANM existe sans ambiguïté et le nom de fichier (040214) correspond à l'édition 2014/2016 ; pas de fabrication suspectée, mais lien non vérifié en ligne.",
+    "fix": "Confirmer que l'URL exacte est accessible ; à défaut, pointer vers la page officielle eanm.org/initiatives/dosage-card/ ou la dernière version 2016 hébergée."
+  }
+]
