@@ -7,7 +7,7 @@ import { AuthModal } from '@/components/AuthModal';
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col h-screen bg-bg text-text-main overflow-hidden">
+    <div className="flex flex-col h-dvh bg-bg text-text-main overflow-hidden">
       <Topbar />
       <div className="flex flex-1 overflow-hidden relative">
         <Sidebar />
