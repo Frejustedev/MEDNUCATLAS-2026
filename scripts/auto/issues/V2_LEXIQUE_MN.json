@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section E2 « Glossaire express patient » — sous-section D (Le mot demi-vie) et sous-section E (mini-table physique des radionucléides) ; ainsi que Section E1, tableau des faux-amis, ligne TEP vs TEMP",
+    "problem": "[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] Le traceur de TEMP est noté à plusieurs reprises « ¹⁰⁰Tc » (technétium-100) au lieu de « ⁹⁹ᵐTc » (technétium-99 métastable). Or ¹⁰⁰Tc est un radionucléide RÉEL et DISTINCT : émetteur β⁻ de très courte période (~15,5 s, Emax ~2,8 MeV), sans aucun usage en imagerie. Occurrences fautives relevées : (1) « ex. ¹⁰⁰Tc ≈ 6 h [37] » ; (2) la 1re ligne du tableau « | ¹⁰⁰Tc | ≈ 6 h | γ 140 keV | TEMP (≈ 85 % des actes Dx) | » ; (3) dans E1 « TEMP = émetteur monophotonique (un seul γ, ex. ¹⁰⁰Tc 140 keV) ». Le reste de l'article écrit pourtant correctement ⁹⁹ᵐTc (sections A1, A3, B1, B2, B3, C1, D1, et même l'infoBox de E2). Dans un glossaire normatif dont la raison d'être est la rigueur de chaque définition isotopique, attribuer la période 6 h et le γ 140 keV à « technétium-100 » est une erreur factuelle visible par le lecteur, d'autant que la valeur 6 h / 140 keV citée appartient sans ambiguïté au ⁹⁹ᵐTc.",
+    "fix": "Remplacer les trois occurrences de « ¹⁰⁰Tc » par « ⁹⁹ᵐTc » (99mTc) pour homogénéiser avec le reste de l'article. La période ≈ 6 h et le γ 140,5 keV correspondent au technétium-99 MÉTASTABLE, jamais au technétium-100."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E3 « Points clés, index transversal & quiz » — explication de la question 6 du mini-quiz (organe critique du 18F-FDG)",
+    "problem": "L'explication indique « la vessie (≈ 0,16 mGy/MBq) ». La valeur de dose absorbée à la paroi vésicale du 18F-FDG retenue par l'ICRP (Publ. 106/128, modèle de miction à 2 h) est plutôt de l'ordre de 0,13 mGy/MBq, et les modèles biocinétiques révisés donnent encore moins (~0,075–0,089 mGy/MBq). 0,16 mGy/MBq est légèrement surévalué (correspond à des hypothèses de miction très conservatrices/anciennes type ICRP 80). L'affirmation principale — vessie = organe critique — reste exacte.",
+    "fix": "Remplacer « ≈ 0,16 mGy/MBq » par « ≈ 0,13 mGy/MBq (paroi vésicale, ICRP) » ou supprimer la valeur chiffrée et conserver seulement « organe critique = vessie », pour rester cohérent avec le coefficient de dose efficace 0,019 mSv/MBq cité par ailleurs."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E2 (Glossaire express patient), sous-section D « Le mot demi-vie » et sous-section E « Mini-table physique » ; également section E1 tableau des faux-amis (ligne TEP vs TEMP) et infoBox « Le 99mTc, cheval de bataille »",
+    "problem": "[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] Le traceur d'imagerie est noté à plusieurs reprises « ¹⁰⁰Tc » (technétium-100) au lieu de « ⁹⁹ᵐTc » (technétium-99m). Le ¹⁰⁰Tc est un isotope RÉELLEMENT DIFFÉRENT (émetteur β⁻, période ≈ 15,8 s) : lui attribuer une période de 6 h, un γ de 140 keV et ~85 % des actes diagnostiques est une erreur scientifique factuelle. Le reste de l'article (A1, A3, B2, C1, E3, identityCard) écrit correctement 99mTc, donc l'incohérence est interne. Ce n'est PAS une fabrication de source mais une faute de fidélité/typographie sur un nombre de masse.",
+    "fix": "Remplacer toutes les occurrences de « ¹⁰⁰Tc » par « ⁹⁹ᵐTc » (ou « 99mTc ») dans les sections E1 et E2. Vérifier en particulier : « ex. ¹⁰⁰Tc ≈ 6 h [37] », la ligne de la mini-table « | ¹⁰⁰Tc | ≈ 6 h | γ 140 keV | », et la mention « (un seul γ, ex. ¹⁰⁰Tc 140 keV) » du tableau des faux-amis E1."
+  },
+  {
+    "severity": "minor",
+    "where": "Liste des sources [26] (MDPI Toxics 2023) et [44] (UNSCEAR)",
+    "problem": "Légères divergences de titre/valeur entre la liste de sources et la réalité de la cible : [26] s'intitule en réalité « Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy » (mention « in a Nuclear Medicine Department » omise) ; le titre de [44] cite « ~2,4 mSv/an » alors que le rapport UNSCEAR le plus récent réévalue la moyenne mondiale à ~3,0 mSv/an (2,4 = valeur 2008). Aucune des deux n'est une fabrication : les URL existent et sont correctement décrites, et le CORPS de l'article gère bien la nuance 2,4→3 mSv/an (« réévaluée autour de 3 mSv/an »).",
+    "fix": "Optionnel : aligner le libellé de [26] sur le titre exact et préciser dans le titre de [44] que 2,4 mSv/an est la valeur 2008 réévaluée à ~3,0 mSv/an. Sans impact sur la véracité ; à corriger uniquement par souci d'exactitude bibliographique."
+  }
+]

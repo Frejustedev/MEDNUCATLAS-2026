@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section C3 (table de preuve, Se/Sp SPECT) vs Section E3 (stats)",
+    "problem": "La sensibilité/spécificité de la SPECT de perfusion myocardique est donnée avec deux valeurs légèrement différentes selon la section : C3 indique « Se poolée ≈ 0,83 (IC95 0,73–0,89), Sp ≈ 0,77 » (source [2]/[3], PMC3411304) tandis que E3 indique « Se ≈ 0,82 (IC95 0,78–0,85), Sp ≈ 0,74 » (source [12], Front Cardiovasc Med 2021). Chaque valeur est correctement attribuée à sa méta-analyse respective et reste dans la fourchette de la littérature (85%/70% en routine ; 82–88% en SPECT d'effort), donc il ne s'agit pas d'une erreur factuelle, mais la coexistence de deux chiffres sans note explicative peut sembler incohérente au lecteur.",
+    "fix": "Optionnel : harmoniser ou ajouter une phrase précisant que les deux chiffres proviennent de deux méta-analyses distinctes (d'où la légère variation), ou citer une seule valeur de référence de façon cohérente dans tout l'article."
+  },
+  {
+    "severity": "minor",
+    "where": "Plusieurs sections (B1, B3, C1, quiz #11) — période du F-18",
+    "problem": "La période du F-18 est notée « ≈ 110 min » (valeur arrondie usuelle, parfaitement acceptable). La valeur physique exacte est 109,7–109,8 min. Aucune conséquence clinique ; simple précision possible.",
+    "fix": "Aucune correction nécessaire ; on pourrait écrire « ≈ 110 min (109,8 min) » pour la rigueur, mais l'arrondi est standard et correct."
+  },
+  {
+    "severity": "critical",
+    "where": "Sections E1, E2, E3, E4 (medecin_nuc.sections) — all in-text [n] citations",
+    "problem": "Les sections E utilisent un schema de numerotation des citations ENTIEREMENT SEPARE qui ne correspond PAS a la liste globale sources[1]-[58]. Chaque citation [n] des sections E pointe vers la mauvaise source. Exemples verifies: E1 cite [2] pour 'dose 0,3-20 mSv' (or source globale 2 = meta-analyse SPECT coronaropathie, la bonne est 1=Mettler); [31] pour 'fond naturel 2,4 mSv/an' (or 31=Dorbala Image Wisely, la bonne est 57=UNSCEAR); [20,21] pour 'coef FDG 0,019 mSv/MBq' (or 20=QC radiopharma, 21=BNMS QA, la bonne est 32=ICRP128); [22,23] pour 'Tc-99m 6h/140 keV' (or 22=allaitement JNMT, 23=ABM Protocol 31); [5] pour 'F-18 110 min' (or 5=PSMA 2005 patients); [11,33,34] pour 'reactions 1-6/100 000' (or 11=activites pediatriques, 33=NRD, 34=Legifrance; les bonnes sont 26+38); [29] pour 'criteres de sortie NRC I-131' (or 29=IAEA RPOP, la bonne est 27=NRC); [35,36] pour 'portiques aeroport' (or 35=NRD ASNR, 36=IAEA; les bonnes sont 51+52); E3 cite [12] pour 'Se SPECT 0,82' (or 12=Lassmann pediatrique F-18) et [17] pour 'proPSMA 92% vs 65%' (or 17=FDG colorectal, la bonne est 43=proPSMA Lancet).",
+    "fix": "Renumeroter integralement toutes les citations des sections E1-E4 pour les aligner sur la liste globale sources[1]-[58], en associant chaque affirmation chiffree a la source globale correcte (ex. Mettler=1, ICRP128=32, UNSCEAR=57, NRC=27, portiques=51/52, Schreuder=26, Silberstein=38, proPSMA=43, meta SPECT=2/3, Deauville=6/7). Verifier item par item."
+  },
+  {
+    "severity": "major",
+    "where": "Section E4 - liste de references en prose ('Pour aller plus loin', 'Doses, radioprotection & risque', 'Securite du traceur', etc.)",
+    "problem": "La prose de E4 cite et decrit des sources ABSENTES de la liste globale sources[1]-[58] (sources orphelines/non listees): 'SNMMI Nuclear Medicine Radiation Dose Tool' [1], fiche SNMMI [3], fiche SNMMI radioiode I-131 [30], 'Sampson CB. Adverse Reactions and Drug Interactions with Radiopharmaceuticals. Drug Saf 1993' [33], 'NCI risques TDM pediatrique' [41], 'IAEA Patients and therapeutic nuclear medicine' [42], 'pharmacovigilance portugaise Ann Pharmacother 2025' [34], 'EANM FDG PET/CT guidelines v3.0' [26], 'EANM RAIU & thyroid scintigraphy 2019' [16], 'Image Gently/Image Wisely', 'PERCIST/SUL' (cite dans le quiz). Ces references ne figurent dans aucune des 58 entrees de sources et ne sont donc pas verifiables ni numerotees dans l'article publie.",
+    "fix": "Soit supprimer ces references orphelines de E4, soit les ajouter formellement a la liste globale sources avec titre+URL verifiables, puis aligner la numerotation. A minima, ne pas presenter en E4 une bibliographie a numerotation parallele incompatible avec la liste finale."
+  },
+  {
+    "severity": "minor",
+    "where": "Quiz - explication question generateur Tc-99m (embranchement ~87%) et SUV/PERCIST",
+    "problem": "L'explication du quiz sur l'embranchement 99Mo->99mTc (~87%) cite [14][15] (Mo99/Tc99m production NBK215133 + Wikipedia generateur) ce qui est coherent avec la liste globale; en revanche l'explication SUV/PERCIST renvoie a [45] (Boellaard EANM FDG v2.0) qui ne couvre pas explicitement le SUL/reference hepatique PERCIST. A verifier que la valeur 'embranchement 87%' est bien soutenue par les sources 14/15.",
+    "fix": "Confirmer que le rapport d'embranchement ~87% et la definition PERCIST/SUL sont effectivement appuyes par les sources citees (14/15 pour l'embranchement, et idealement une source PERCIST dediee pour le SUL); sinon ajuster la citation."
+  }
+]
