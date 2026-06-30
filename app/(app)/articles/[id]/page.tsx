@@ -15,7 +15,7 @@ export const revalidate = 3600;
 // par un médecin). C'est une décision SEO/juridique qui appartient au
 // propriétaire du site : tant que le contenu n'est pas relu médicalement, on
 // peut vouloir le tenir hors de l'index Google pour limiter le risque.
-const NOINDEX_UNTIL_REVIEWED = false;
+const NOINDEX_UNTIL_REVIEWED = true;
 
 type Params = { id: string };
 
