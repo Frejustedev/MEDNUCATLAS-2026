@@ -1,0 +1,1380 @@
+{
+  "id": "V2_INTERACTION_RAYONNEMENT",
+  "cat": "bases_physiques",
+  "catLabel": "Bases Physiques",
+  "title": "Interaction des rayonnements avec la matière",
+  "difficulty": "avancé",
+  "tags": [
+    "effet photoélectrique",
+    "diffusion Compton",
+    "production de paires",
+    "atténuation",
+    "coefficient d'atténuation",
+    "couche de demi-atténuation",
+    "rayonnement diffusé",
+    "annihilation",
+    "parcours du positron",
+    "scintillateur",
+    "blindage",
+    "correction d'atténuation",
+    "ionisation",
+    "détection",
+    "physique"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] NIST — X-Ray Mass Attenuation Coefficients, Water, Liquid",
+      "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/water.html"
+    },
+    {
+      "title": "[2] NIST — X-Ray Mass Attenuation Coefficients, Lead (Z=82)",
+      "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html"
+    },
+    {
+      "title": "[3] Gamma ray cross section — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gamma_ray_cross_section"
+    },
+    {
+      "title": "[4] Ionizing Radiation Interactions — OncologyMedicalPhysics.com",
+      "url": "https://oncologymedicalphysics.com/radiation-interactions/"
+    },
+    {
+      "title": "[5] Gamma- and X-Ray Interactions in Matter (Chapter 7) — University of Toledo",
+      "url": "https://www.utoledo.edu/med/depts/radther/pdf/RDII%20-%20Chapter%207n%20handout.pdf"
+    },
+    {
+      "title": "[6] Gamma-Ray Interactions with Matter (Karpius & Reilly, 2024) — Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-58277-6_3"
+    },
+    {
+      "title": "[7] Klein-Nishina Formula for Compton Effect — Wolfram Demonstrations",
+      "url": "https://demonstrations.wolfram.com/KleinNishinaFormulaForComptonEffect/"
+    },
+    {
+      "title": "[8] The Compton Effect — Compton Scattering and Gamma Ray Spectroscopy (Univ. Trieste)",
+      "url": "https://moodle2.units.it/pluginfile.php/401380/mod_resource/content/1/FED_Compton%20Scattering%20Experiment.pdf"
+    },
+    {
+      "title": "[9] Lab Experiment 3: Gamma-Ray Absorption in Matter (Basic) — Mirion",
+      "url": "https://www.mirion.com/discover/knowledge-hub/articles/education/gamma-ray-absorption-in-matter-basic"
+    },
+    {
+      "title": "[10] Pair Production — an overview — ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/chemistry/pair-production"
+    },
+    {
+      "title": "[11] Tc-99m in Nuclear Medicine Imaging — Stanford PH241 (Mazumder)",
+      "url": "http://large.stanford.edu/courses/2026/ph241/mazumder2/"
+    },
+    {
+      "title": "[12] Single Photon Emission Computed Tomography — NCBI Bookshelf (NBK232492)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK232492/"
+    },
+    {
+      "title": "[13] Evaluation of six scatter correction methods based on spectral analysis in 99mTc SPECT using SIMIND Monte Carlo — PMC3958999",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3958999/"
+    },
+    {
+      "title": "[14] SNMMI/ASNC/SCCT Guideline for Cardiac SPECT/CT and PET/CT 1.0 (Dorbala et al.) — J Nucl Med 2013;54:1485",
+      "url": "https://jnm.snmjournals.org/content/54/8/1485"
+    },
+    {
+      "title": "[15] 2022 ASNC/AAPM/SCCT/SNMMI guideline for the use of CT in hybrid nuclear/CT cardiac imaging — J Nucl Cardiol",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1071358123007274"
+    },
+    {
+      "title": "[16] Shielding resources for Tc-99m, F-18, I-131, Lu-177 (Oumano et al.) — JACMP 2025 (PMC12059296)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12059296/"
+    },
+    {
+      "title": "[17] PET Shielding and Radiation Protection — AAPM Summer School 2007 (Anderson)",
+      "url": "https://www.aapm.org/meetings/07ss/documents/Anderson__PETProtectionAndShielding_AAPMSummerSchool2007d.pdf"
+    },
+    {
+      "title": "[18] Recommended Nuclear Decay Data Tc-99m (IT, 140.51 keV) — Eckert & Ziegler",
+      "url": "https://www.ezag.com/wp-content/uploads/2023/08/Tc-99m-1.pdf"
+    },
+    {
+      "title": "[19] Technetium-99m isotope data (T½ 6.0067 h; γ 140.51 keV) — Radiacode",
+      "url": "https://www.radiacode.com/isotope/tc-99m?lang=en"
+    },
+    {
+      "title": "[20] Targeted and non-targeted effects of ionizing radiation — ScienceDirect (J Radiat Res Appl Sci 2015)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1687850715000333"
+    },
+    {
+      "title": "[21] Molecular Insights into Radiation Effects and Protective Mechanisms — MDPI Curr. Issues Mol. Biol. 2024",
+      "url": "https://www.mdpi.com/1467-3045/46/11/755"
+    },
+    {
+      "title": "[22] The new EANM paediatric dosage card — Lassmann et al., EJNMMI 2007;34:796 (PubMed 17406866)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17406866/"
+    },
+    {
+      "title": "[23] EANM Dosage Card (Version 5.7.2016) — PDF",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[24] Dosage card — EANM (official page)",
+      "url": "https://eanm.org/publications/useful-resources/dosage-card/"
+    },
+    {
+      "title": "[25] Interaction of High-Energy Radiation With Matter — Radiology Key",
+      "url": "https://radiologykey.com/interaction-of-high-energy-radiation-with-matter/"
+    },
+    {
+      "title": "[26] Evaluation of Compton attenuation and photoelectric absorption coefficients — PMC4479913",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4479913/"
+    },
+    {
+      "title": "[27] AI-based data corrections for attenuation and scatter in PET and SPECT — PMC10562009",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10562009/"
+    },
+    {
+      "title": "[28] Interaction with matter — Radiology Cafe (FRCR Physics Notes)",
+      "url": "https://www.radiologycafe.com/frcr-physics-notes/x-ray-imaging/interaction-with-matter/"
+    },
+    {
+      "title": "[29] Pair Production and Annihilation — Portland State University (R. Egerton)",
+      "url": "https://web.pdx.edu/~egertonr/ph311-12/pair-p&a.htm"
+    },
+    {
+      "title": "[30] Limit of Spatial Resolution in FDG-PET due to Annihilation Photon Non-Collinearity (Shibuya et al.)",
+      "url": "https://www.researchgate.net/publication/226079731_Limit_of_Spatial_Resolution_in_FDG-PET_due_to_Annihilation_Photon_Non-Collinearity"
+    },
+    {
+      "title": "[31] The Impact of Positron Range on PET Resolution (PHITS Monte Carlo) — PMC6805144",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6805144/"
+    },
+    {
+      "title": "[32] Method for transforming CT images for attenuation correction in PET/CT imaging (Carney et al.) — PubMed 16696474",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16696474/"
+    },
+    {
+      "title": "[33] Properties of LYSO and recent LSO scintillators for phoswich PET detectors",
+      "url": "https://www.researchgate.net/publication/3138719_Properties_of_LYSO_and_recent_LSO_scintillators_for_phoswich_PET_detectors"
+    },
+    {
+      "title": "[34] A study on energy window-based scatter correction methods in 99mTc and 123I imaging (DEW/TEW)",
+      "url": "https://www.researchgate.net/publication/374579350_A_study_on_energy_window-based_scatter_correction_methods_in_99m_Tc_and_123_I_imaging"
+    },
+    {
+      "title": "[35] Recent developments in time-of-flight PET — PMC4754240",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4754240/"
+    },
+    {
+      "title": "[36] Artefacts of PET/CT images — PMC3097808",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097808/"
+    },
+    {
+      "title": "[37] Optimizing Attenuation Correction in 68Ga-PSMA PET Imaging (halo artifact) — PMC12155494",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12155494/"
+    },
+    {
+      "title": "[38] Attenuation Correction in Myocardial Perfusion SPECT/CT: Effects of Misregistration (Brown et al.) — J Nucl Med 2007;48:1090",
+      "url": "https://jnm.snmjournals.org/content/48/7/1090"
+    },
+    {
+      "title": "[39] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson et al., Ann ICRP 2015) — SAGE",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[40] Radiobiological risks in terms of effective dose and organ dose from 18F-FDG whole-body PET/CT — PMC8459160",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8459160/"
+    },
+    {
+      "title": "[41] FDG PET/CT: EANM procedure guidelines for tumour imaging version 2.0 (Boellaard et al.) — PMC4315529",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[42] Comparative analysis of corneal and lens doses in nuclear medicine and impact of lead eyeglasses (Monte Carlo) — arXiv 2508.19370",
+      "url": "https://arxiv.org/abs/2508.19370"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "atom",
+        "label": "Processus dominants",
+        "value": "Photoélectrique · Compton · paires"
+      },
+      {
+        "icon": "zap",
+        "label": "Énergies d'intérêt",
+        "value": "≈ 10 keV – 10 MeV (NM : 140 / 511 keV)"
+      },
+      {
+        "icon": "radiation",
+        "label": "Loi d'atténuation",
+        "value": "I = I₀·e^(−µx) (faisceau étroit)"
+      },
+      {
+        "icon": "activity",
+        "label": "µ eau/tissu @140 keV",
+        "value": "≈ 0,15 cm⁻¹ → CDA ≈ 4,5 cm"
+      },
+      {
+        "icon": "target",
+        "label": "Photoélectrique",
+        "value": "τ ∝ Z⁴ · ∝ 1/E³ ; K-edge Pb 88 keV"
+      },
+      {
+        "icon": "droplets",
+        "label": "Compton",
+        "value": "σ ∝ Z ; λ Compton 2,43 pm ; domine tissus 30 keV–30 MeV"
+      },
+      {
+        "icon": "flask",
+        "label": "Seuil création de paires",
+        "value": "1,022 MeV (= 2 × 511 keV)"
+      },
+      {
+        "icon": "dna",
+        "label": "Lésions ADN indirectes",
+        "value": "≈ ⅔ ; 60–70 % via •OH"
+      },
+      {
+        "icon": "microscope",
+        "label": "Scintillateur TEMP",
+        "value": "NaI(Tl) 3,67 g/cm³ ; rés. ~9–10 % à 140 keV"
+      },
+      {
+        "icon": "shield",
+        "label": "CDA plomb @140 keV",
+        "value": "0,243 mm (Tc-99m)"
+      },
+      {
+        "icon": "shield",
+        "label": "CDA plomb @511 keV",
+        "value": "≈ 4,75 mm (F-18) → ×20"
+      },
+      {
+        "icon": "clock",
+        "label": "γ de référence",
+        "value": "Tc-99m 140,5 keV (89 %) ; F-18 → 2×511 keV à 180°"
+      },
+      {
+        "icon": "pin",
+        "label": "Parcours positron (eau)",
+        "value": "F-18 ~0,6 mm < Ga-68 ~2,9 mm < Rb-82 ~5,9 mm"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "TEMP / TEMP-TDM"
+      },
+      {
+        "type": "examen",
+        "label": "TEP / TEP-TDM"
+      },
+      {
+        "type": "examen",
+        "label": "Correction d'atténuation par TDM (CTAC)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie myocardique de perfusion"
+      },
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FDG"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-pertechnétate"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁸Ga-PSMA"
+      },
+      {
+        "type": "traceur",
+        "label": "¹³¹I (iode)"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE"
+      },
+      {
+        "type": "score",
+        "label": "SUV (quantification)"
+      },
+      {
+        "type": "maladie",
+        "label": "Effets biologiques des rayonnements ionisants"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quels sont les trois processus dominants d'interaction d'un photon γ avec la matière dans la gamme de la médecine nucléaire ?",
+        "options": [
+          "Photoélectrique, Compton, production de paires",
+          "Compton, Rayleigh, Auger",
+          "Photoélectrique, fluorescence, Bremsstrahlung",
+          "Ionisation, excitation, annihilation"
+        ],
+        "answer": 0,
+        "explanation": "Dans la gamme ≈ 10 keV–10 MeV, un photon interagit principalement par effet photoélectrique, diffusion Compton et production de paires (la diffusion Rayleigh/cohérente reste mineure) [1, 3].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Comment varie la section efficace de l'effet photoélectrique avec le numéro atomique Z et l'énergie E ?",
+        "options": [
+          "∝ Z et ∝ E",
+          "∝ Z² et ∝ 1/E",
+          "∝ Z⁴ et ∝ 1/E³",
+          "∝ Z et indépendante de E"
+        ],
+        "answer": 2,
+        "explanation": "L'effet photoélectrique varie approximativement en Z⁴ (par atome) et en 1/E³ : un photon de 50 keV interagit ≈ 11 000 fois plus avec le plomb (Z=82) qu'avec l'oxygène (Z=8), et un photon de 45 keV ≈ 8 fois plus qu'un de 90 keV [1, 2].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel processus domine l'atténuation des photons dans les tissus mous sur l'essentiel de la gamme diagnostique (≈ 30 keV à 30 MeV) ?",
+        "options": [
+          "L'effet photoélectrique",
+          "La diffusion Compton",
+          "La production de paires",
+          "La diffusion Rayleigh"
+        ],
+        "answer": 1,
+        "explanation": "La diffusion Compton est le processus prépondérant dans les tissus mous de ≈ 30 keV à ≈ 30 MeV : elle gouverne donc l'atténuation à 140 keV comme à 511 keV [1, 3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le seuil énergétique de la production de paires ?",
+        "options": [
+          "0,511 MeV",
+          "1,022 MeV",
+          "1,5 MeV",
+          "2,5 MeV"
+        ],
+        "answer": 1,
+        "explanation": "La production de paires exige E > 1,022 MeV, soit deux fois la masse au repos de l'électron (2 × 0,511 MeV) pour créer la paire e⁻/e⁺ ; elle est donc marginale aux énergies diagnostiques [2, 6].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "En diffusion Compton, à quel angle l'énergie transférée à l'électron est-elle maximale ?",
+        "options": [
+          "0° (vers l'avant)",
+          "45°",
+          "90°",
+          "180° (rétrodiffusion)"
+        ],
+        "answer": 3,
+        "explanation": "Le décalage en longueur d'onde Δλ = (h/mₑc)(1−cos θ) est maximal à θ = 180° (rétrodiffusion). Un photon de 140 keV rétrodiffusé conserve ≈ 90 keV, valeur utile pour comprendre le diffusé du Tc-99m [2, 5].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la longueur d'onde Compton de l'électron, qui fixe l'amplitude du décalage Compton ?",
+        "options": [
+          "2,43 × 10⁻¹² m",
+          "0,511 × 10⁻¹² m",
+          "5,3 × 10⁻¹¹ m",
+          "1,0 × 10⁻¹⁰ m"
+        ],
+        "answer": 0,
+        "explanation": "La longueur d'onde Compton h/mₑc vaut 2,43 × 10⁻¹² m (2,43 pm) ; elle est indépendante de l'énergie incidente et du matériau, et le décalage maximal à 180° vaut 2λ_c [5].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "L'annihilation d'un positron produit :",
+        "options": [
+          "Un photon unique de 1,022 MeV",
+          "Deux photons de 0,511 MeV émis à ≈ 180°",
+          "Trois photons de 0,341 MeV",
+          "Un électron et un neutrino"
+        ],
+        "answer": 1,
+        "explanation": "Le positron ralentit puis s'annihile avec un électron, produisant deux photons de 0,511 MeV émis à ≈ 180° par conservation de la quantité de mouvement : c'est le fondement de la détection en coïncidence en TEP [6].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pourquoi le ¹⁸F offre-t-il une meilleure résolution spatiale intrinsèque que le ⁶⁸Ga ou le ⁸²Rb en TEP ?",
+        "options": [
+          "Sa période est plus longue",
+          "Son parcours de positron est plus court (~0,6 mm vs ~2,9 et ~5,9 mm)",
+          "Il émet des photons de plus haute énergie",
+          "Il n'émet pas de rayonnement diffusé"
+        ],
+        "answer": 1,
+        "explanation": "Le parcours du positron dans l'eau est ~0,6 mm pour le ¹⁸F, ~2,9 mm pour le ⁶⁸Ga et ~5,9 mm pour le ⁸²Rb : plus il est court, moins le flou de résolution est important [8].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est approximativement la couche de demi-atténuation (CDA) des photons de 140 keV dans l'eau/tissu mou ?",
+        "options": [
+          "≈ 0,5 cm",
+          "≈ 4,5 cm",
+          "≈ 10 cm",
+          "≈ 20 cm"
+        ],
+        "answer": 1,
+        "explanation": "Avec µ ≈ 0,15 cm⁻¹, la CDA = 0,693/µ ≈ 4,5 cm d'eau : un photon de 140 keV émis à plusieurs centimètres de profondeur a une probabilité substantielle d'être atténué avant de sortir, d'où la nécessité d'une correction d'atténuation [2, 9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi le blindage de la TEP (511 keV) exige-t-il bien plus de plomb que celui de la TEMP au Tc-99m (140 keV) ?",
+        "options": [
+          "Parce que le F-18 a une période plus longue",
+          "Parce que la CDA du plomb passe de ≈ 0,24 mm à ≈ 4,75 mm (×20)",
+          "Parce que la production de paires domine à 140 keV",
+          "Parce que le plomb ne s'oppose pas du tout aux 511 keV"
+        ],
+        "answer": 1,
+        "explanation": "La CDA du plomb passe de 0,243 mm à 140 keV à ≈ 4,75 mm à 511 keV, soit un facteur ~20 : à 140 keV le photoélectrique (Z élevé) est très efficace, à 511 keV le Compton domine, d'où un blindage bien plus lourd, souvent en tungstène [16, 19].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Sur quel effet repose principalement la formation d'un pic photoélectrique net dans un scintillateur de détection ?",
+        "options": [
+          "La diffusion Compton",
+          "L'absorption totale par effet photoélectrique",
+          "La production de paires",
+          "La diffusion Rayleigh"
+        ],
+        "answer": 1,
+        "explanation": "La détection repose idéalement sur l'absorption totale du photon par effet photoélectrique dans le cristal (Z effectif élevé), qui dépose toute l'énergie et produit un pic photoélectrique exploitable pour le fenêtrage en énergie [1, 2].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle largeur de fenêtre d'énergie est typiquement utilisée autour du photopic de 140 keV du Tc-99m en TEMP ?",
+        "options": [
+          "± 1 % (≈ 2 %)",
+          "15–20 % (ex. 126–154 keV pour 20 %)",
+          "± 40 %",
+          "100 %"
+        ],
+        "answer": 1,
+        "explanation": "On utilise une fenêtre symétrique de 15–20 % centrée sur 140 keV ; une fenêtre de 20 % couvre ≈ 126–154 keV, ce qui rejette une partie du diffusé tout en gardant les photons primaires [12].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel principe explique la transformation des unités Hounsfield du scanner en coefficient d'atténuation à 511 keV pour la correction d'atténuation en TEP ?",
+        "options": [
+          "Une transformation linéaire unique",
+          "Une transformation bilinéaire (deux pentes : tissus mous et os)",
+          "Une simple multiplication par la densité",
+          "Aucune conversion n'est nécessaire"
+        ],
+        "answer": 1,
+        "explanation": "La conversion UH → µ(511 keV) utilise une transformation bilinéaire avec deux segments (tissus mous vs os) car leurs compositions et donc leur comportement d'atténuation diffèrent entre l'énergie du scanner et 511 keV [10].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "En SPECT, quelle méthode estime le rayonnement diffusé à partir de fenêtres latérales encadrant le photopic ?",
+        "options": [
+          "La correction de troncature",
+          "La triple fenêtre d'énergie (TEW)",
+          "La correction de non-colinéarité",
+          "La segmentation par seuillage"
+        ],
+        "answer": 1,
+        "explanation": "La méthode de la triple fenêtre d'énergie (TEW) estime le diffusé sous le photopic à partir de deux fenêtres latérales basse et haute ; elle améliore nettement le contraste (par exemple un point froid passant de 70 % à >96 %) [12, 13].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "À quoi correspond l'artefact en « banane » sur une TEP-TDM ?",
+        "options": [
+          "Une surcorrection due à un implant métallique",
+          "Un mismatch respiratoire entre la carte d'atténuation TDM et l'émission TEP",
+          "Une troncature du champ de vue",
+          "Un halo autour de la vessie"
+        ],
+        "answer": 1,
+        "explanation": "L'artefact en banane provient d'un mauvais recalage entre la TDM (apnée/instant unique) et la TEP (moyennée sur le cycle respiratoire), créant une fausse hypofixation curviligne au niveau du diaphragme [14].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle proportion des lésions de l'ADN induites par un rayonnement de bas TEL relève de l'effet indirect, et quel radical en est le principal responsable ?",
+        "options": [
+          "≈ 10 %, l'électron hydraté",
+          "≈ ⅓, l'ion superoxyde",
+          "≈ ⅔, le radical hydroxyle •OH",
+          "≈ 90 %, le peroxyde d'hydrogène"
+        ],
+        "answer": 2,
+        "explanation": "Environ deux tiers des lésions de l'ADN sont indirectes via la radiolyse de l'eau, le radical hydroxyle •OH étant responsable de 60–70 % d'entre elles ; les rayonnements γ/X de bas TEL produisent surtout des ionisations dispersées [20].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la dose efficace approximative du ¹⁸F-FDG selon la CIPR 128 ?",
+        "options": [
+          "≈ 0,002 mSv/MBq",
+          "≈ 0,019 mSv/MBq",
+          "≈ 0,14 mSv/MBq",
+          "≈ 1,0 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "La CIPR 128 retient une dose efficace du ¹⁸F-FDG d'environ 0,019 mSv/MBq, l'organe critique étant la paroi vésicale (≈ 0,075 mGy/MBq), d'où l'intérêt de l'hydratation et de mictions fréquentes [16, 17, 18].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi le NaI(Tl) (résolution en énergie ~9–10 % à 140 keV) ne supprime-t-il pas totalement le diffusé Compton ?",
+        "options": [
+          "Parce que sa densité est trop élevée",
+          "Parce que sa résolution en énergie médiocre ne sépare pas parfaitement primaires et diffusés",
+          "Parce qu'il ne détecte pas les photons de 140 keV",
+          "Parce que le diffusé a exactement la même énergie que le photon primaire"
+        ],
+        "answer": 1,
+        "explanation": "La résolution en énergie ~9–10 % FWHM à 140 keV laisse se chevaucher dans la fenêtre photopic des photons diffusés porteurs d'une information de position erronée, ce qui dégrade le contraste et impose une correction de diffusé [13].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Un photon γ interagit de façon probabiliste « tout ou rien » par trois processus dominants : effet photoélectrique, diffusion Compton et production de paires [1, 3].",
+        "Effet photoélectrique : absorption totale, section efficace ∝ Z⁴ et ∝ 1/E³ ; base du contraste à Z élevé, du blindage au plomb et de la détection dans le cristal ; K-edge Pb ≈ 88 keV [1, 2].",
+        "Diffusion Compton : transfert partiel d'énergie, section efficace ∝ Z (densité électronique) ; domine dans les tissus mous de ≈ 30 keV à 30 MeV → interaction prépondérante à 140 et 511 keV [1, 3].",
+        "Production de paires : seuil 1,022 MeV ; l'annihilation du positron donne 2 photons de 0,511 MeV à ≈ 180° → détection en coïncidence (TEP) [2, 6].",
+        "Atténuation exponentielle I = I₀·e^(−µx) ; CDA = 0,693/µ. Eau/tissu @140 keV : µ ≈ 0,15 cm⁻¹, CDA ≈ 4,5 cm [2, 9].",
+        "Détection = absorption dans un scintillateur (NaI(Tl) en TEMP ; LSO/LYSO denses et rapides en TEP/TOF) ; résolution en énergie NaI(Tl) ~9–10 % à 140 keV [11, 13].",
+        "Le diffusé porte une information de position erronée → dégrade le contraste ; à corriger (TEW en SPECT, single-scatter simulation en TEP) [12, 13].",
+        "Parcours du positron : F-18 ~0,6 mm < Ga-68 ~2,9 mm < Rb-82 ~5,9 mm ; non-colinéarité ≈ 0,54° FWHM → limites de résolution en TEP [7, 8]."
+      ],
+      "protocol": [
+        "Correction d'atténuation : carte µ obtenue par TDM, convertie de l'échelle Hounsfield vers l'énergie du radionucléide (bilinéaire UH → 511 keV en TEP) [10].",
+        "Fenêtrage en énergie : fenêtre photopic symétrique 15–20 % centrée sur 140 keV en TEMP (20 % ≈ 126–154 keV) ; fenêtre de coïncidence 4,5–12 ns en TEP [12, 13].",
+        "Correction du diffusé : triple fenêtre d'énergie (TEW) en SPECT ; modèle single-scatter simulation en TEP ; reconstruction itérative (OSEM 3D) avec recovery de résolution [12, 13].",
+        "Toujours relire les images avec et sans correction d'atténuation pour repérer artefacts (métal, contraste, mismatch respiratoire) [14].",
+        "Blindage adapté à l'énergie : plomb très efficace à 140 keV (CDA 0,243 mm), beaucoup moins à 511 keV (CDA ≈ 4,75 mm) → tungstène et règles temps/distance renforcées en TEP [16, 19].",
+        "Préparation TEP au ¹⁸F : hydratation et mictions fréquentes (organe critique = vessie), glycémie reprogrammée si ≥ 11 mmol/L, délai d'injection ≈ 60 min [18]."
+      ],
+      "scores": [
+        "Effet photoélectrique : ∝ Z⁴ · ∝ 1/E³ ; K-edge Pb ≈ 88 keV, K-edge iode ≈ 32 keV [2].",
+        "Compton : section ∝ Z ; longueur d'onde Compton 2,43 pm ; photon de 140 keV rétrodiffusé ≈ 90 keV [2, 5].",
+        "Production de paires : seuil 1,022 MeV ; ∝ Z² ; annihilation → 2 × 0,511 MeV à ≈ 180° ; non-colinéarité ≈ 0,54° FWHM [2, 6, 7].",
+        "µ et CDA : eau @140 keV µ ≈ 0,15 cm⁻¹ / CDA ≈ 4,5 cm ; plomb @140 keV CDA 0,243 mm ; plomb @511 keV CDA ≈ 4,75–5,1 mm [9, 16, 19].",
+        "Dosimétrie ¹⁸F-FDG ≈ 0,019 mSv/MBq (CIPR 128), organe critique vessie ; Tc-99m pertechnétate ≈ 0,014 mSv/MBq [16, 17].",
+        "Lésions ADN : ≈ ⅔ indirectes via radiolyse de l'eau, dont 60–70 % via •OH ; γ/X = bas TEL (ionisations dispersées) [20]."
+      ],
+      "pitfalls": [
+        "Confondre atténuation (perte de photons primaires → sous-estimation de l'activité) et diffusé (photons déviés → fausse localisation, perte de contraste) : ce sont deux conséquences distinctes des interactions [1].",
+        "Croire que le plomb protège aussi bien à 511 keV qu'à 140 keV : la CDA augmente d'un facteur ~20, et les lunettes plombées efficaces à 140 keV le sont peu à 511 keV [16, 19].",
+        "Surcorrection d'atténuation sur métal/produit de contraste iodé (UH surestimées) → fausse hyperfixation focale ; toujours relire avec et sans AC [14].",
+        "Artefacts de mismatch respiratoire (« banane » diaphragmatique) et de troncature (FOV TDM < FOV TEP) faussant le SUV [14].",
+        "En SPECT myocardique, l'atténuation des tissus mous (sein, diaphragme) simule des défauts inféro-postérieurs ; la CTAC aide mais un mésalignement émission/transmission peut créer de nouveaux artefacts [14, 38].",
+        "Négliger le diffusé sous prétexte de fenêtrage : la résolution en énergie médiocre du NaI(Tl) (~9–10 % à 140 keV) laisse passer du diffusé dans le photopic → correction nécessaire [13]."
+      ]
+    },
+    "lead": "Lorsqu'un rayonnement traverse la matière, il ne s'arrête pas progressivement mais cède son énergie au gré de rencontres imprévisibles avec les atomes du milieu. Comprendre ces rencontres, c'est comprendre à la fois pourquoi une partie du signal se perd dans le corps du patient, pourquoi des images parasites brouillent parfois le résultat, et comment le détecteur parvient malgré tout à former une image fidèle. Ces mêmes phénomènes expliquent aussi pourquoi certains murs et tabliers protègent efficacement le personnel et l'entourage. C'est le socle physique commun à toute l'imagerie isotopique et à la radioprotection. Le maîtriser, c'est savoir lire une image en connaissance de cause et reconnaître ce qui relève du vrai et ce qui relève de l'artefact.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cette étape invisible",
+          "text": "Lors d'un examen de médecine nucléaire, on vous administre une petite quantité d'un produit qui émet un rayonnement très faible. Pour fabriquer vos images, une caméra spéciale doit « capter » ce rayonnement après qu'il a traversé votre corps. Comprendre comment ce rayonnement chemine à travers les tissus n'est pas un détail technique pour vous : c'est exactement ce qui permet à l'équipe d'obtenir des images nettes et fiables de la zone étudiée. Rien ne vous est demandé de particulier : tout se passe naturellement à l'intérieur de votre organisme, sans aucune sensation."
+        },
+        {
+          "title": "Comment se passe l'examen",
+          "text": "Après l'administration du produit, vous patientez le temps qu'il se répartisse dans l'organe à explorer. Vous vous allongez ensuite confortablement, et la caméra se positionne autour de vous sans vous toucher. Il vous suffit de rester immobile et détendu pendant la prise des images—à peu près comme pour une photographie. L'équipe reste à vos côtés et vous explique chaque étape. Certains appareils réalisent en plus un scéo rapide (scanner) qui aide à corriger l'image pour qu'elle reflète au mieux la réalité.",
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Illustration de rayonnements quittant le corps pour être capturés par les détecteurs de la caméra.",
+            "caption": "Le rayonnement traverse les tissus avant d'être détecté par la caméra qui forme vos images."
+          }
+        },
+        {
+          "title": "Est-ce que c'est sûr ?",
+          "text": "Oui. La quantité de produit utilisée est volontairement très faible, juste suffisante pour obtenir de bonnes images. Le rayonnement émis disparaît rapidement de lui-même et s'élimine naturellement de votre corps. L'équipe applique le principe de la plus faible exposition possible et adapte toujours l'examen à votre situation. Boire de l'eau et aller aux toilettes après l'examen aide votre corps à éliminer plus vite le produit.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "N'hésitez pas à poser vos questions",
+              "text": "Si vous êtes enceinte, susceptible de l'être, ou si vous allaitez, signalez-le avant l'examen : l'équipe adaptera la marche à suivre. Pour toute inquiétude sur le déroulement, l'équipe de médecine nucléaire est là pour vous répondre."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Pourquoi ces notions concernent le clinicien adresseur",
+          "text": "Les rayonnements (photons γ ou X) interagissent avec la matière selon trois mécanismes : l'**effet photoélectrique** (absorption totale du photon, dominant à basse énergie et dans les milieux denses—base du contraste osseux/iodé en TDM et de la détection), la **diffusion Compton** (le photon cède une partie de son énergie et dévie—mécanisme prépondérant aux énergies de la médecine nucléaire, source du « diffusé »), et la **création de paires** (seulement à haute énergie, non pertinente en diagnostic). Pour le clinicien non nucléariste, l'enjeu n'est pas de maîtriser cette physique, mais de comprendre qu'elle conditionne directement la **qualité et la fiabilité des images** qu'il reçoit—et certains pièges d'interprétation."
+        },
+        {
+          "title": "Ce que cela change pour la lecture d'un examen",
+          "text": "Deux phénomènes ont des conséquences cliniques concrètes. L'**atténuation** (perte de photons le long du trajet dans les tissus) peut faire sous-estimer la fixation en profondeur : en imagerie cardiaque, elle explique de faux défauts de perfusion (paroi inférieure, sein), corrigés par la fusion avec un scanner. Le **diffusé** (photons déviés portant une information de position erronée) dégrade le contraste—d'où les corrections dédiées appliquées en routine. En pratique, c'est pour cela que les services s'appuient sur l'**imagerie hybride** (TEMP/TDM, TEP/TDM) : le volet scanner sert à corriger l'atténuation et à localiser précisément les anomalies.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Atténuation et faux défauts",
+              "text": "Un « défaut » sur une image non corrigée peut être un simple artefact d'atténuation (tissus mous, implant, calcification dense) et non une lésion réelle. C'est le médecin nucléariste qui fait la part des choses en relisant les images avec et sans correction—une raison de plus de lui transmettre le contexte clinique complet."
+            }
+          ]
+        },
+        {
+          "title": "Apport de la médecine nucléaire et quand y penser",
+          "text": "La maîtrise de ces interactions est ce qui permet à la médecine nucléaire de fournir une information **fonctionnelle quantifiée** (et non seulement anatomique) : choix de l'isotope, réglage des fenêtres de détection, correction d'atténuation et de diffusé aboutissent à des images fiables et, en TEP, à une quantification reproductible. Pour l'adresseur, il faut surtout retenir que la performance d'un examen dépend de cette chaîne technique : une demande bien renseignée (indication, antécédents, matériel implanté, traitements) aide le service à optimiser l'acquisition et l'interprétation.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adressez en médecine nucléaire lorsqu'une information fonctionnelle est utile là où l'imagerie anatomique seule reste insuffisante. Précisez la question clinique, les antécédents, le matériel implanté (prothèses, pacemaker) et les traitements en cours : ces éléments permettent au service d'anticiper les artefacts liés à l'atténuation et au diffusé, de choisir le protocole adapté et de vous rendre une interprétation fiable."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité : interaction rayonnement-matière en un coup d'œil",
+          "text": "**Comment lire cette carte.** L'interaction des rayonnements avec la matière n'est pas un examen mais le **socle physique** de toute la médecine nucléaire : c'est elle qui explique simultanément l'**atténuation** (perte de photons primaires dans le patient), le **rayonnement diffusé** (photons déviés qui brouillent l'image) et la **détection** elle-même (dépôt d'énergie dans le cristal). Trois processus gouvernent le devenir d'un photon γ ou X dans la gamme d'intérêt (≈ 10 keV–10 MeV) : l'**effet photoélectrique**, la **diffusion Compton** et la **production de paires** [3,4]. Le fil rouge chiffré de cet article s'appuie sur les deux radionucléides de référence : le **⁹⁹ᵐTc à 140 keV** (TEMP) et l'annihilation du **¹⁸F → 511 keV** (TEP).\n\n| Champ | Valeur de référence | Source |\n|---|---|---|\n| **Processus dominants (10 keV–10 MeV)** | photoélectrique · Compton · production de paires (+ Rayleigh, mineur) | [3,4] |\n| **Photoélectrique — dépendances** | section efficace atomique ∝ **Z⁴**, ∝ **1/E³** | [1,2] |\n| **Compton — dépendances** | ∝ **Z** (densité électronique) ; faiblement décroissant en énergie | [1,2] |\n| **Production de paires — seuil** | **1,022 MeV** (= 2 × 0,511 MeV) ; ∝ Z² | [2,10] |\n| **Loi d'atténuation (faisceau étroit)** | I = I₀·e^(−µx) ; CDA = ln2/µ = 0,693/µ | [2] |\n| **µ — ⁹⁹ᵐTc (140 keV), eau/tissu mou** | ≈ **0,15 cm⁻¹** → CDA ≈ **4,5 cm** | [11] |\n| **CDA — 511 keV dans le plomb** | ≈ **5,1 mm** (faisceau large) | [16] |\n| **Compton — domaine de prédominance (tissus mous)** | ≈ **30 keV–30 MeV** → **interaction prépondérante en MN** | [3] |\n| **µ/ρ de l'eau** | **1,505×10⁻¹ cm²/g** à 150 keV · **9,687×10⁻² cm²/g** à 500 keV | [1] |\n\nChacune de ces valeurs est développée et resourcée dans les sections suivantes ; cette carte sert de fiche-réflexe scannable.",
+          "stats": [
+            {
+              "value": "Z⁴ · 1/E³",
+              "label": "Lois du photoélectrique"
+            },
+            {
+              "value": "0,15 cm⁻¹",
+              "label": "µ du ⁹⁹ᵐTc (140 keV, tissu)"
+            },
+            {
+              "value": "1,022 MeV",
+              "label": "Seuil de production de paires"
+            },
+            {
+              "value": "30 keV–30 MeV",
+              "label": "Domaine Compton dans les tissus"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi commencer par cette carte",
+              "text": "Trois nombres résument la médecine nucléaire diagnostique : aux énergies utiles (**140 keV** et **511 keV**), on est **toujours en régime Compton** dans les tissus mous, **jamais** en production de paires (seuil 1,022 MeV non franchi par le photon utile), et l'effet photoélectrique ne redevient roi que dans le **cristal détecteur** (Z effectif élevé) et le **blindage de plomb** (Z=82) [1,2,3]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence en TEP : l'annihilation du positon du ¹⁸F produit deux photons de 511 keV émis à 180°, détectés par paires d'anneaux — illustration de la production de paires/annihilation comme socle physique de l'imagerie."
+          }
+        },
+        {
+          "title": "A2 - Pourquoi ces interactions gouvernent toute la médecine nucléaire",
+          "text": "Un photon γ ou X ne s'atténue pas progressivement comme une particule chargée : il subit des interactions **probabilistes, « tout ou rien »**, dont chacune le retire du faisceau primaire. La probabilité totale d'interaction par unité de longueur est le **coefficient d'atténuation linéique µ (cm⁻¹)**, somme des contributions des trois processus principaux [3,4]. Cette physique, apparemment abstraite, **conditionne directement l'image et sa quantification** à travers trois phénomènes cliniques.\n\n**(1) L'atténuation** — perte de photons primaires sur le trajet entre la source (le radiopharmaceutique fixé) et le détecteur. Concrètement, un photon de **140 keV** émis à 10 cm de profondeur dans les tissus a déjà franchi plus de **deux CDA** (CDA ≈ 4,5 cm d'eau) [11] : sans correction, l'activité profonde est **sous-estimée**. C'est la base physique de la **correction d'atténuation** (CTAC, conversion bilinéaire des unités Hounsfield vers µ à l'énergie du radionucléide) [16,32].\n\n**(2) Le rayonnement diffusé** — la diffusion Compton dévie des photons qui, détectés, portent une information de **position erronée** : le contraste et la détectabilité des lésions se dégradent. La **fraction de diffusé** en TEP cérébrale est attendue à **30–35 %** [16], imposant une correction de diffusé (méthode triple-fenêtre TEW en TEMP, single-scatter simulation en TEP) [13,16].\n\n**(3) La détection** — l'image n'existe que parce que le photon **dépose son énergie dans le scintillateur**, idéalement par effet photoélectrique (dépôt total → pic photoélectrique net) ; c'est ce dépôt qui, par les électrons secondaires, ionise le cristal puis génère la lumière [4,5].\n\nL'enjeu est donc clinique autant que physique : sans correction adéquate de l'atténuation et du diffusé, le biais sur le **SUV** (Standardized Uptake Value, indice semi-quantitatif de fixation) peut dépasser **16 %** par segmentation imparfaite, contre **< 8 %** avec les approches deep-learning [16]. La compréhension des trois interactions est donc **indissociable de toute lecture quantitative fiable**.",
+          "stats": [
+            {
+              "value": "≈ 4,5 cm",
+              "label": "CDA des 140 keV dans l'eau"
+            },
+            {
+              "value": "30–35 %",
+              "label": "Fraction de diffusé (TEP cérébrale)"
+            },
+            {
+              "value": "> 16 %",
+              "label": "Biais SUV si correction imparfaite"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — un photon détecté n'est pas forcément un photon primaire",
+              "text": "Le diffusé Compton est aggravé par la **résolution en énergie médiocre** du NaI(Tl), de l'ordre de **9–10 % FWHM à 140 keV**, qui ne sépare pas nettement les photons primaires des photons diffusés sous le photopic [13]. Un fenêtrage trop large laisse entrer du diffusé ; un fenêtrage trop étroit perd du signal primaire. D'où la fenêtre symétrique typique de **15–20 %** centrée sur 140 keV (soit **126–154 keV** pour 20 %) [12,13]."
+            },
+            {
+              "type": "info",
+              "title": "Repère de cohérence µ ↔ µ/ρ",
+              "text": "Le coefficient massique µ/ρ (cm²/g) est **indépendant de la densité** : pour l'eau, **0,15 cm²/g** vers 150 keV [1]. Comme ρ_eau ≈ 1 g/cm³, on retrouve directement **µ ≈ 0,15 cm⁻¹** à 140 keV [1,11] — la cohérence interne des sources est ainsi vérifiable."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma de la gamma-caméra : collimateur, cristal NaI(Tl), photomultiplicateurs — illustrant le trajet du photon (atténué et diffusé dans le patient) jusqu'à sa détection par dépôt d'énergie dans le cristal."
+          }
+        },
+        {
+          "title": "A3 - Rayonnements directement vs indirectement ionisants : la dichotomie fondatrice",
+          "text": "Toute la physique de détection et de radioprotection en médecine nucléaire repose sur une distinction première : selon qu'un rayonnement ionise la matière **directement** ou **indirectement**.\n\n**▸ Rayonnements directement ionisants** — les **particules chargées** (électrons et positons des émetteurs β, particules α, électrons de conversion et Auger). Elles déposent leur énergie de manière **quasi continue** le long de leur trajet, par interactions coulombiennes répétées avec les électrons du milieu. Ce sont les **vecteurs du dépôt de dose** : le positon du ¹⁸F, par exemple, ralentit puis s'annihile, mais c'est aussi son **parcours** dans les tissus qui limite la résolution spatiale en TEP.\n\n**▸ Rayonnements indirectement ionisants** — les **photons (γ, X)** et les **neutrons**, électriquement neutres. Ils ne ionisent pas directement : ils **transfèrent d'abord leur énergie à des particules chargées secondaires** (photoélectrons, électrons Compton, paires e⁻/e⁺), lesquelles ionisent ensuite le milieu. C'est cette mise en mouvement d'électrons secondaires qui sous-tend **à la fois la détection et l'effet biologique** [4,5].\n\nLa conséquence est centrale : un photon γ se comporte de façon **« tout ou rien »** (cf. §A2), tandis qu'un électron dépose son énergie progressivement. Cette dichotomie explique pourquoi le **TEL (transfert d'énergie linéique)** différencie les rayonnements selon la densité d'ionisation produite.\n\n**Notion de TEL et conséquence biologique.** Les γ/X sont des rayonnements à **bas TEL** : les ionisations qu'engendrent leurs électrons secondaires sont **dispersées**, produisant surtout des cassures simple brin réparables de l'ADN [20,21]. Les particules lourdes (ions carbone) sont à **haut TEL** : lésions complexes « en grappes », bien plus difficiles à réparer.\n\n**De l'interaction au dommage moléculaire.** L'énergie déposée par les électrons secondaires lèse l'ADN par deux voies : **action directe** (environ ⅓ des lésions) et **action indirecte** (environ ⅔) via la **radiolyse de l'eau**, qui génère des espèces réactives (•OH, H•, e⁻ aqueux). Le **radical hydroxyle •OH est responsable de 60–70 % des lésions de l'ADN** par effet indirect ; la lésion grave de référence reste la **cassure double brin (DSB)** [20]. Cette même cascade fonde la **radiobiologie** de la radiothérapie interne vectorisée.",
+          "steps": [
+            {
+              "title": "1 · Photon incident (indirectement ionisant)",
+              "text": "Le γ/X traverse la matière sans interagir, puis subit une interaction « tout ou rien » (photoélectrique, Compton ou paires selon l'énergie) [3,4]."
+            },
+            {
+              "title": "2 · Mise en mouvement d'un électron secondaire",
+              "text": "L'interaction éjecte un électron énergétique (photoélectron, électron Compton) ou crée une paire e⁻/e⁺ : la particule chargée devient directement ionisante [4]."
+            },
+            {
+              "title": "3 · Ionisation du milieu (dépôt de dose)",
+              "text": "L'électron secondaire ionise et excite les atomes sur son parcours — bas TEL pour les γ/X → ionisations dispersées [20,21]."
+            },
+            {
+              "title": "4 · Lésion moléculaire",
+              "text": "≈ ⅓ d'atteinte directe de l'ADN, ≈ ⅔ d'atteinte indirecte via radiolyse de l'eau (•OH responsable de 60–70 % des lésions) → cassures double brin [20]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "≈ ⅔",
+              "label": "Part des lésions ADN d'origine indirecte"
+            },
+            {
+              "value": "60–70 %",
+              "label": "Lésions ADN dues au radical •OH"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi cette distinction est opérationnelle",
+              "text": "C'est parce que le photon est **indirectement ionisant** qu'il peut traverser plusieurs centimètres de tissu avant d'interagir — ce qui rend l'imagerie corps entier possible, mais impose l'atténuation. Et c'est parce qu'il **mobilise des électrons secondaires** que le même photon contribue à la dose au patient (cf. dosimétrie) : détection et irradiation procèdent du même mécanisme physique [4,5]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma des types de désintégration et d'émission (α, β⁻, β⁺, γ) : distinction entre particules chargées directement ionisantes et photons indirectement ionisants, fondement de la dichotomie détection/dose."
+          }
+        },
+        {
+          "title": "A4 - Anatomie d'un atome cible : couches électroniques, énergies de liaison et Z effectif",
+          "text": "Pour comprendre *pourquoi* un photon interagit ici plutôt que là, il faut décrire l'atome qu'il rencontre — le « milieu » traversé étant in fine une collection d'atomes définis par leur **numéro atomique Z** et l'organisation de leurs **couches électroniques** (K, L, M…), chacune caractérisée par une **énergie de liaison** propre.\n\n**Énergie de liaison et hiérarchie des couches.** Un électron de couche interne (K) est plus fortement lié qu'un électron périphérique. L'effet photoélectrique exige que l'énergie du photon **dépasse l'énergie de liaison** de l'électron à éjecter : le photoélectron sort avec **E = hν − Eₗ**. Le réarrangement électronique qui suit produit des **X de fluorescence** ou des **électrons Auger** [4,5]. Symétriquement, la diffusion Compton suppose un électron **faiblement lié** (énergie de liaison de quelques eV, négligeable devant hν), traité comme **quasi libre** [5].\n\n**Discontinuités d'absorption (K-edges).** La loi en 1/E³ du photoélectrique n'est pas continue : lorsque l'énergie du photon atteint l'énergie de liaison d'une couche, la section efficace **bondit** brutalement (une couche supplémentaire devient « accessible »). Le **K-edge du plomb ≈ 88 keV** et celui de l'**iode ≈ 32 keV** [2] expliquent à la fois l'efficacité du blindage de plomb et le contraste élevé des produits iodés en TDM.\n\n**Le numéro atomique Z, déterminant majeur.** Parce que le photoélectrique varie en **Z⁴** par atome [1,2], le contraste entre matériaux dépend dramatiquement de Z. À 50 keV, un photon interagit par effet photoélectrique **≈ 11 000 fois** plus volontiers avec le plomb (Z=82) qu'avec l'oxygène (Z=8), puisque 82⁴/8⁴ ≈ 11 000 [1,2]. À l'inverse, le Compton ne varie qu'en **Z** (densité électronique) : il est **quasi indépendant du matériau** [1,2].\n\n**Le Z effectif (Z_eff) d'un milieu composite.** Les tissus biologiques ne sont pas un élément pur : on leur attribue un **Z effectif**, moyenne pondérée traduisant leur comportement vis-à-vis des photons. Les **tissus mous** (≈ 70 % d'eau) ont un **Z_eff ≈ 7,4** → Compton dominant dès ≈ 50 keV ; l'**os** (calcium) relève un peu le photoélectrique. À l'opposé, on choisit pour les **détecteurs** des matériaux à **Z_eff élevé** afin de maximiser le photoélectrique et la résolution en énergie.\n\n| Milieu / matériau | Z (ou Z_eff) | Densité (g/cm³) | Régime dominant aux énergies MN |\n|---|---|---|---|\n| **Tissus mous / eau** | ≈ 7,4 | ≈ 1,0 | Compton dès ≈ 50 keV [2] |\n| **NaI(Tl)** (cristal TEMP) | élevé | 3,67 [16] | photoélectrique jusqu'à ≈ 300 keV [2] |\n| **LSO / LYSO** (cristaux TEP) | 66 (LSO) [16] | 7,1–7,4 [16] | photoélectrique privilégié à 511 keV [16] |\n| **Plomb** (blindage) | 82 [2] | 11,35 | photoélectrique jusqu'à ≈ 1 MeV [2] |\n\nCette « anatomie atomique » est la clé de tout le reste : c'est la combinaison **Z + énergie de liaison + énergie du photon** qui décide, atome par atome, quel processus l'emporte — et donc si le photon sera atténué dans le patient, diffusé, ou utilement détecté dans le cristal.",
+          "stats": [
+            {
+              "value": "≈ 11 000×",
+              "label": "Photoélectrique Pb vs O à 50 keV (Z⁴)"
+            },
+            {
+              "value": "88 keV",
+              "label": "K-edge du plomb"
+            },
+            {
+              "value": "32 keV",
+              "label": "K-edge de l'iode"
+            },
+            {
+              "value": "≈ 7,4",
+              "label": "Z effectif des tissus mous"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi NaI(Tl) puis LSO/LYSO",
+              "text": "Un bon détecteur veut un **Z_eff et une densité élevés** (maximiser le dépôt total par photoélectrique) et une décroissance rapide. Le NaI(Tl) (ρ = 3,67 g/cm³) suffit à 140 keV en TEMP, mais à **511 keV** il faut des cristaux lutéciés bien plus denses — **LSO/LYSO** (ρ ≈ 7,1–7,4 g/cm³, Z_eff ≈ 66) — pour arrêter ces photons très pénétrants ; c'est ce qui a rendu possible la **TEP temps de vol** [16]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ne pas confondre Z et densité",
+              "text": "Le **Z (ou Z_eff)** gouverne la *probabilité par atome* du photoélectrique (∝ Z⁴) ; la **densité** ρ gouverne le *nombre d'atomes par cm³* et donc µ (via µ/ρ). Deux matériaux de même Z mais de densités différentes auront le même µ/ρ (cm²/g) mais des µ (cm⁻¹) différents [1,2] — distinction essentielle pour comparer blindages et cristaux."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de niveaux d'énergie atomique/nucléaire montrant couches électroniques et transitions : visualise les énergies de liaison (K, L) et les discontinuités d'absorption (K-edges) qui structurent l'effet photoélectrique."
+          }
+        },
+        {
+          "title": "B1 - L'effet photoélectrique : absorption totale et signature en Z⁴/E³",
+          "text": "Dans la gamme d'énergie de la médecine nucléaire (≈ 10 keV à 10 MeV), un photon γ ou X traversant la matière ne s'atténue pas progressivement comme une particule chargée : il subit des interactions **probabilistes, « tout ou rien »**, chacune le retirant du faisceau primaire. Trois processus dominent — **effet photoélectrique**, **diffusion Compton**, **production de paires** — auxquels s'ajoute la diffusion Rayleigh/cohérente, mineure.[3,4] L'effet photoélectrique est le plus simple : il fonde la **détection** (dépôt total dans le cristal → pic photoélectrique net), le **blindage** au plomb et le **contraste** osseux/iodé en TDM.\n\n**Mécanisme.** Le photon cède la **totalité** de son énergie à un électron de couche interne (le plus souvent la couche K), éjecté comme photoélectron avec une énergie cinétique E = hν − E_liaison. La lacune créée est comblée par réarrangement du cortège électronique → émission de **rayons X de fluorescence** ou d'un **électron Auger**. Le photon primaire disparaît : c'est une **absorption totale**.\n\n**Dépendance au numéro atomique Z.** La section efficace par atome varie comme **τ ∝ Z⁴** (jusqu'à Z⁴·⁵ selon l'énergie).[5,6] Concrètement, un photon de 50 keV interagit par effet photoélectrique **≈ 11 000 fois** plus volontiers avec le plomb (Z = 82) qu'avec l'oxygène (Z = 8), puisque 82⁴/8⁴ ≈ 11 000.[5,6] C'est cette loi qui explique l'efficacité du plomb en radioprotection et le contraste élevé des structures riches en calcium ou en iode.\n\n**Dépendance à l'énergie.** La section efficace décroît comme **τ ∝ 1/E³** (loi en inverse du cube).[6] Un photon de 45 keV est ainsi **≈ 8 fois** plus susceptible d'interagir par effet photoélectrique qu'un photon de 90 keV (90³/45³ = 8).[6] L'effet photoélectrique **domine donc à basse énergie** et dans les milieux à Z élevé ; dans les tissus mous, il cède la place au Compton dès **≈ 50 keV**.[6]\n\n**Discontinuités d'absorption (K-edges).** La loi en 1/E³ présente des ruptures brutales : dès que l'énergie du photon dépasse l'énergie de liaison d'une couche, l'ionisation de cette couche devient possible et la section efficace remonte d'un coup. Le **K-edge du plomb ≈ 88 keV** et le **K-edge de l'iode ≈ 32 keV** sont les plus exploités cliniquement (contraste iodé, blindage).[6]\n\n| Matériau | Effet photoélectrique dominant jusqu'à | Conséquence |\n|---|---|---|\n| **Tissus mous** (Z_eff ≈ 7,4) | ≈ 50 keV [6] | Compton domine sur toute la gamme MN |\n| **NaI(Tl)** (Z élevé) | ≈ 300 keV [6] | Bon dépôt total à 140 keV → photopic net |\n| **Plomb** (Z = 82) | ≈ 1 MeV [6] | Blindage très efficace à 140 keV |\n\nLe corollaire pratique : le **NaI(Tl)** capte les 140 keV du ⁹⁹ᵐTc majoritairement par effet photoélectrique, d'où un **pic photoélectrique** propre et une bonne résolution en énergie — socle du fenêtrage et de la correction du diffusé (cf. §B2).",
+          "stats": [
+            {
+              "value": "∝ Z⁴",
+              "label": "Section efficace photoélectrique vs numéro atomique [5,6]"
+            },
+            {
+              "value": "∝ 1/E³",
+              "label": "Section efficace vs énergie du photon [6]"
+            },
+            {
+              "value": "88 keV",
+              "label": "K-edge du plomb [6]"
+            },
+            {
+              "value": "32 keV",
+              "label": "K-edge de l'iode [6]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le NaI(Tl) est un bon détecteur à 140 keV",
+              "text": "À 140 keV, l'effet photoélectrique reste dominant dans le NaI(Tl) (Z effectif élevé) jusqu'à **≈ 300 keV**.[6] Le photon y dépose **toute** son énergie en une seule interaction → un pic photoélectrique étroit, indispensable au fenêtrage en énergie. À 511 keV en revanche (TEP), le Compton prend le dessus même dans le cristal : on privilégie alors des scintillateurs **lutéciés (LSO/LYSO)** à haute densité et Z effectif élevé pour rétablir une probabilité d'absorption totale suffisante."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ne pas confondre Z⁴ (par atome) et Z effectif (par milieu)",
+              "text": "La loi τ ∝ Z⁴ vaut **par atome**. Dans un tissu composite (eau, os), c'est le **Z effectif** qui gouverne : ≈ 7,4 pour les tissus mous, plus élevé pour l'os (calcium). C'est pourquoi l'os « ressort » en TDM par renforcement photoélectrique, alors que dans les tissus mous c'est le Compton (§B2) qui prédomine dès ≈ 50 keV.[6]"
+            }
+          ]
+        },
+        {
+          "title": "B2 - La diffusion Compton : le photon qui dévie et la formule clé",
+          "text": "La **diffusion Compton** (ou diffusion incohérente) est l'interaction **prépondérante en médecine nucléaire**, aux deux énergies de référence : **140 keV** (TEMP au ⁹⁹ᵐTc) et **511 keV** (TEP). Comprendre sa physique, c'est comprendre à la fois l'**atténuation** des photons utiles et le **rayonnement diffusé** qui dégrade le contraste.\n\n**Mécanisme.** Le photon interagit avec un électron **faiblement lié**, considéré comme quasi-libre puisque l'énergie du photon (≫ keV) dépasse de loin l'énergie de liaison de quelques eV.[8] Le photon cède **une partie** de son énergie à cet électron (l'électron Compton qui recule) et est **dévié** d'un angle θ. Contrairement au photoélectrique, le photon **survit** mais avec une énergie moindre et une direction nouvelle — porteuse d'une information de position désormais **erronée**.\n\n**Formule clé — décalage de Compton.** Le décalage en longueur d'onde entre photon incident et diffusé s'écrit :\n\n**Δλ = (h/mₑc) · (1 − cos θ)**\n\noù h/mₑc est la **longueur d'onde Compton de l'électron = 2,43 × 10⁻¹² m** (soit 2,43 pm).[8] Trois propriétés remarquables : Δλ est **indépendant de l'énergie incidente** et **du matériau**, il est **nul à θ = 0°** (diffusion vers l'avant, peu d'énergie perdue) et **maximal à θ = 180°** (rétrodiffusion, décalage = 2λ_c).[8] La section efficace différentielle exacte est donnée par la **formule de Klein–Nishina (1929, électrodynamique quantique)**.[6]\n\n**Énergie du photon rétrodiffusé (θ = 180°, front Compton).** La rétrodiffusion correspond au transfert maximal d'énergie à l'électron ; le photon diffusé conserve une énergie minimale, cliniquement importante car elle conditionne le diffusé détectable :[6]\n\n| Photon incident | Photon rétrodiffusé (180°) | Contexte |\n|---|---|---|\n| **140 keV** | **≈ 90 keV** [6] | ⁹⁹ᵐTc — diffusé sous le photopic |\n| **360 keV** | ≈ 148 keV [6] | ≈ ¹³¹I |\n| **1 MeV** | ≈ 200 keV [6] | Haute énergie |\n\n**Dépendances.** La section efficace par atome varie comme **σ ∝ Z** (elle suit la densité électronique du milieu) et décroît faiblement avec l'énergie dans la gamme diagnostique.[5,6] Le Compton est ainsi **quasi indépendant de Z** par unité de masse — d'où sa **prédominance dans les tissus mous sur toute la gamme 30 keV–30 MeV**, et le fait qu'à 511 keV l'atténuation tissulaire soit **essentiellement compton­ienne**.[5]\n\n**Conséquence clinique : le rayonnement diffusé.** Le Compton est la **source principale du diffusé** qui dégrade le contraste et fausse la localisation. En TEP cérébrale, la **fraction de diffusé attendue est de 30–35 %**.[3] Sa correction est donc une étape obligatoire de toute quantification (SUV) — en TEMP, l'estimation par **triple fenêtre d'énergie (TEW)** améliore le contraste d'un point froid de **70 % à plus de 96 %**.[12]",
+          "stats": [
+            {
+              "value": "2,43 pm",
+              "label": "Longueur d'onde Compton de l'électron h/mₑc [8]"
+            },
+            {
+              "value": "≈ 90 keV",
+              "label": "Photon de 140 keV rétrodiffusé à 180° [6]"
+            },
+            {
+              "value": "30 keV–30 MeV",
+              "label": "Domaine de prédominance du Compton dans les tissus [5]"
+            },
+            {
+              "value": "30–35 %",
+              "label": "Fraction de diffusé en TEP cérébrale [3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le diffusé est mal rejeté par le NaI(Tl)",
+              "text": "À 140 keV, un photon rétrodiffusé conserve **≈ 90 keV** : il est franchement séparable.[6] Mais beaucoup de photons sont diffusés à petit angle, avec une perte d'énergie faible, qui tombe **dans la fenêtre photopic**. La résolution en énergie limitée du NaI(Tl) ne sépare alors pas primaires et diffusés → contraste dégradé. D'où le recours à la **correction de diffusé (TEW)** plutôt qu'au seul fenêtrage.[12]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — Δλ est universel, pas l'énergie perdue",
+              "text": "Le décalage **en longueur d'onde** Δλ ne dépend ni de l'énergie incidente ni du matériau (il vaut au plus 2λ_c = 4,85 pm à 180°).[8] Mais la **fraction d'énergie** perdue, elle, croît avec l'énergie incidente : à 1 MeV, un photon rétrodiffusé perd 80 % de son énergie (200 keV restants), alors qu'à 140 keV il en conserve 64 % (90 keV).[6] Un même Δλ « coûte » donc proportionnellement plus cher à haute énergie."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de détection en coïncidence en TEP : un photon dévié par diffusion Compton porte une information de position erronée, illustrant pourquoi le diffusé dégrade la localisation et impose une correction."
+          }
+        },
+        {
+          "title": "B3 - Diffusion Rayleigh, création de paires et interactions mineures en MN",
+          "text": "Au-delà du photoélectrique et du Compton, deux processus complètent le tableau : la **diffusion Rayleigh** (cohérente, très basse énergie) et la **production de paires** (très haute énergie). Tous deux sont **marginaux aux énergies diagnostiques** de la médecine nucléaire (140–511 keV), mais la production de paires mérite une attention particulière car son processus inverse — l'**annihilation du positon** — est le **fondement physique de la TEP**.\n\n**Diffusion Rayleigh (cohérente).** Le photon est diffusé par l'atome **dans son ensemble** (et non par un électron isolé), sans transfert d'énergie : seule sa direction change, faiblement, vers l'avant. Elle ne produit ni ionisation ni électron de recul. Sa contribution reste **mineure** dans la gamme MN ; elle n'est notable qu'à très basse énergie et pour les Z élevés, et participe marginalement au flou des images.[3,4]\n\n**Production de paires — seuil et dépendance.** Au voisinage du champ électrique du noyau, un photon peut se matérialiser en une paire électron-positon. Le processus exige une énergie **supérieure au seuil de 1,022 MeV**, soit exactement **2 × 0,511 MeV**, l'énergie de masse au repos de l'électron et du positon.[6,10] La section efficace croît ensuite comme **∝ Z²**.[6] Ce seuil étant très au-dessus de 511 keV, la production de paires est **totalement absente** de l'imagerie diagnostique — elle ne concerne que la haute énergie (radiothérapie, métrologie).\n\n**Annihilation du positon — la clé de la TEP.** Le phénomène exploité en TEP est le **processus inverse**. Un positon émis par un radionucléide β⁺ (¹⁸F, ⁶⁸Ga…) ralentit dans la matière, puis s'annihile avec un électron du milieu → émission de **deux photons de 0,511 MeV** à **≈ 180° l'un de l'autre**, par conservation de la quantité de mouvement.[10] C'est cette émission **colinéaire** qui permet la **détection en coïncidence** le long d'une ligne de réponse (LOR).\n\n**Deux limites physiques intrinsèques de la résolution TEP :**\n\n- **Acolinéarité (non-colinéarité).** Le positon n'étant pas parfaitement au repos lors de l'annihilation, les deux photons ne sont pas exactement à 180° : la distribution angulaire a une **FWHM ≈ 0,54°**.[7] Le flou induit **croît avec le diamètre de l'anneau** de détecteurs.\n- **Parcours du positon (positron range).** Avant de s'annihiler, le positon parcourt une distance finie qui dépend de son énergie maximale ; le point d'annihilation est décalé du point d'émission, ce qui dégrade la résolution :[8]\n\n| Radionucléide | E_max (β⁺) | Parcours dans l'eau | Conséquence |\n|---|---|---|---|\n| **¹⁸F** | 0,63 MeV | **≈ 0,6 mm** [8] | Excellente résolution → isotope de référence |\n| **⁶⁸Ga** | 1,9 MeV | **≈ 2,9 mm** [8] | Flou notable |\n| **⁸²Rb** | 3,4 MeV | **≈ 5,9 mm** [8] | Dégrade la quantification |\n\nC'est cette physique qui fait du **¹⁸F le positon-émetteur de référence** : son faible parcours (0,6 mm) garantit la meilleure résolution spatiale possible, là où le ⁸²Rb (5,9 mm) impose un compromis quantitatif.[8]",
+          "stats": [
+            {
+              "value": "1,022 MeV",
+              "label": "Seuil de production de paires (2 × 0,511 MeV) [6,10]"
+            },
+            {
+              "value": "2 × 511 keV",
+              "label": "Photons d'annihilation, émis à ≈ 180° [10]"
+            },
+            {
+              "value": "0,54°",
+              "label": "Acolinéarité (FWHM) des photons d'annihilation [7]"
+            },
+            {
+              "value": "≈ 0,6 mm",
+              "label": "Parcours du positon du ¹⁸F dans l'eau [8]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Repère — pourquoi exactement 511 keV ?",
+              "text": "Le seuil de production de paires (1,022 MeV) et l'énergie des photons d'annihilation (511 keV) sont les **deux faces d'une même équivalence masse-énergie**. La masse au repos d'un électron (ou d'un positon) vaut mₑc² = 0,511 MeV. Créer une paire coûte donc 2 × 0,511 = 1,022 MeV ; annihiler une paire restitue cette énergie sous forme de **deux** photons de 0,511 MeV.[6,10] Toute la TEP repose sur cette constante physique."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le choix de l'isotope est d'abord un choix de résolution",
+              "text": "À performances de détecteur égales, le **parcours du positon** est souvent la principale limite de résolution. ¹⁸F (0,6 mm) < ⁶⁸Ga (2,9 mm) < ⁸²Rb (5,9 mm) :[8] un ⁶⁸Ga-PSMA ou un ⁸²Rb cardiaque seront intrinsèquement moins résolus qu'un ¹⁸F-FDG, indépendamment de la machine. À l'acolinéarité (0,54° FWHM)[7] s'ajoute donc le parcours pour fixer le plancher de résolution."
+            }
+          ]
+        },
+        {
+          "title": "B4 - Interactions des particules chargées : ionisation, excitation, Bremsstrahlung et parcours fini",
+          "text": "Les **particules chargées** — électrons secondaires libérés par les interactions γ (§B1–B2), électrons β⁻, positons β⁺ — interagissent tout autrement que les photons. Là où un photon s'atténue de façon exponentielle et probabiliste, une particule chargée **dépose son énergie continûment** le long de sa trajectoire, par une multitude de petites interactions coulombiennes, jusqu'à s'arrêter après un **parcours fini**. C'est ce dépôt d'énergie qui sous-tend à la fois la **détection** (signal dans le cristal) et l'**effet biologique** (lésions de l'ADN).\n\n**(a) Ionisation et excitation (pertes collisionnelles).** En traversant le milieu, la particule chargée arrache des électrons aux atomes (**ionisation**) ou les fait passer à un niveau supérieur (**excitation**). Ce sont les pertes **collisionnelles**, dominantes aux énergies de la médecine nucléaire. Chaque ionisation libère un peu d'énergie ; la somme de ces dépôts le long du trajet constitue la **dose absorbée** (Gy). C'est la cause physique première de l'**effet biologique** des rayonnements.\n\n**(b) Bremsstrahlung (rayonnement de freinage, pertes radiatives).** Au voisinage d'un noyau, la particule chargée est déviée et **freinée** : elle rayonne un photon X de freinage (Bremsstrahlung). Ces pertes **radiatives** croissent avec l'énergie de la particule et avec le **Z du milieu** (∝ Z). Elles sont mineures aux énergies des β⁻ thérapeutiques courants, mais imposent une règle de radioprotection : on **blinde les émetteurs β⁻ avec des matériaux à faible Z** (plexiglas, aluminium) plutôt qu'avec le plomb, pour ne pas générer de Bremsstrahlung pénétrant.\n\n**(c) Parcours fini et transfert d'énergie linéique (TEL).** À la différence du photon, l'électron a une **portée maximale** : au-delà, il est arrêté. Cette portée et la densité d'ionisation dépendent du **TEL (transfert d'énergie linéique)**, c'est-à-dire l'énergie déposée par unité de longueur. Les rayonnements de la médecine nucléaire (γ, X, β) sont des rayonnements à **bas TEL** : ionisations **dispersées**, donc lésions surtout réparables.\n\n**Application directe : le parcours du positon.** Le positon β⁺ est précisément une particule chargée à parcours fini : avant de pouvoir s'annihiler (§B3), il doit d'abord **dissiper toute son énergie cinétique** par ionisation et excitation. C'est ce parcours (¹⁸F ≈ 0,6 mm ; ⁶⁸Ga ≈ 2,9 mm ; ⁸²Rb ≈ 5,9 mm dans l'eau)[8] qui décale le point d'annihilation du point d'émission et fixe une limite de résolution en TEP.\n\n**(d) Effet biologique — du dépôt d'énergie à la lésion de l'ADN.** Les électrons secondaires ionisent le milieu sur leur parcours ; ce dépôt agit sur l'ADN par **deux voies** :\n\n- **Action directe** : ionisation directe de la molécule d'ADN (≈ ⅓ des lésions).\n- **Action indirecte** : **radiolyse de l'eau** générant des radicaux libres (•OH, H•, e⁻ₐq) qui attaquent l'ADN (≈ ⅔ des lésions). Le **radical hydroxyle •OH est responsable de 60–70 % des lésions de l'ADN** par cette voie indirecte.[20]\n\nLa lésion grave est la **cassure double brin (DSB)**. Aux rayonnements de **bas TEL** (γ, X, β), les ionisations dispersées produisent surtout des **cassures simple brin réparables** ; les particules lourdes (ions carbone), à **haut TEL**, créent au contraire des lésions complexes « en grappes », beaucoup plus difficiles à réparer.[21]\n\n| Mode d'interaction | Particule chargée | Conséquence dominante |\n|---|---|---|\n| **Ionisation / excitation** (collisionnel) | Électrons, β, positons | Dépôt de dose → effet biologique |\n| **Bremsstrahlung** (radiatif, ∝ Z) | β⁻ de haute énergie | Blinder à faible Z (plexiglas) |\n| **Annihilation** (positon arrêté) | β⁺ après parcours fini | 2 × 511 keV → TEP (§B3) |",
+          "stats": [
+            {
+              "value": "∝ Z",
+              "label": "Bremsstrahlung vs numéro atomique du milieu"
+            },
+            {
+              "value": "≈ ⅔",
+              "label": "Part des lésions de l'ADN par action indirecte (radiolyse) [20]"
+            },
+            {
+              "value": "60–70 %",
+              "label": "Lésions de l'ADN attribuables au radical •OH [20]"
+            },
+            {
+              "value": "Bas TEL",
+              "label": "γ / X / β → ionisations dispersées, surtout réparables [21]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — blinder les émetteurs β⁻ avec un matériau de bas Z",
+              "text": "Le Bremsstrahlung croît avec le Z du milieu. Blinder une source β⁻ pure (¹⁸F résiduel, ³²P, ⁹⁰Y) avec du **plomb** génèrerait des X de freinage pénétrants. On utilise donc d'abord un écran à **faible Z** (plexiglas, aluminium), éventuellement doublé d'un fin écran à Z élevé pour absorber le Bremsstrahlung résiduel. La règle s'inverse par rapport aux émetteurs γ, où le plomb est optimal (§B1)."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — bas TEL = réparable, haut TEL = complexe",
+              "text": "Les rayonnements de la MN diagnostique (γ, X, β⁺/β⁻) sont à **bas TEL** : ionisations dispersées, ⅔ des lésions de l'ADN par voie indirecte via les radicaux (•OH responsable de 60–70 %),[20] et lésions majoritairement réparables.[21] C'est ce qui distingue radicalement l'irradiation diagnostique des hadronthérapies à haut TEL et oriente l'évaluation du risque (cassures simple brin vs grappes de DSB)."
+            }
+          ]
+        },
+        {
+          "title": "C1 - L'atténuation des photons : loi exponentielle, µ, CDA et coefficient massique",
+          "text": "**Pourquoi cela compte.** Un photon γ ou X traversant la matière n'est pas freiné progressivement comme une particule chargée : il subit des interactions **probabilistes, « tout ou rien »**, chacune le retirant du faisceau primaire (absorption complète ou déviation). C'est ce comportement qui fonde l'**atténuation** — la perte de photons primaires le long du trajet patient→détecteur — et qui impose, en imagerie quantitative, de la corriger (cf. §C4).\n\n**La loi exponentielle.** En géométrie de faisceau étroit, l'intensité transmise suit I = I₀·e^(−µx), où **µ est le coefficient d'atténuation linéique (cm⁻¹)** et x l'épaisseur traversée. µ est la somme des probabilités des trois processus pertinents en médecine nucléaire — effet photoélectrique, diffusion Compton, création de paires —, chacun avec sa propre dépendance en énergie et en numéro atomique [4]. On en déduit la **couche de demi-atténuation (CDA, ou HVL pour *half-value layer*)** : x₁/₂ = ln2/µ = **0,693/µ**, épaisseur qui réduit le faisceau de moitié [9].\n\n**Le coefficient massique.** Pour s'affranchir de la densité, on rapporte µ à la masse volumique ρ : le **coefficient massique µ/ρ (cm²/g)** ne dépend plus que de la composition atomique et de l'énergie [1,2]. Pour l'eau liquide, le NIST tabule **µ/ρ ≈ 1,505×10⁻¹ cm²/g à 150 keV** et **9,687×10⁻² cm²/g à 500 keV** [1] ; avec ρ_eau ≈ 1 g/cm³, cela donne directement µ ≈ 0,15 cm⁻¹ à l'énergie du ⁹⁹ᵐTc.\n\n**Les trois processus et leurs dépendances :**\n\n| Processus | Mécanisme | Dépendance Z | Dépendance E | Domaine |\n|---|---|---|---|---|\n| **Effet photoélectrique** | absorption **totale** par un e⁻ de couche interne (souvent K) ; émission X de fluorescence / e⁻ Auger | section ∝ **Z⁴** par atome [4,5] | ∝ **1/E³** [5] | basse E, Z élevé |\n| **Diffusion Compton** | cession **partielle** d'énergie à un e⁻ quasi-libre + déviation θ | ∝ **Z** (densité électronique) [4,5] | faiblement décroissante | **dominant tissus 30 keV–30 MeV** [3] |\n| **Création de paires** | conversion γ → e⁻ + e⁺ dans le champ du noyau | ∝ **Z²** [5] | **seuil 1,022 MeV** [5,10] | haute E (marginal en diagnostic) |\n\nLa **forte dépendance en Z⁴** du photoélectrique explique deux usages : un photon de 50 keV interagit ≈ **11 000 fois** plus volontiers avec le plomb (Z=82) qu'avec l'oxygène (Z=8), car 82⁴/8⁴ ≈ 11 000 [4,5] — d'où le blindage au plomb et le contraste osseux/iodé en TDM. La **dépendance en 1/E³** explique les **discontinuités d'absorption (K-edges)** : ruptures de la loi en 1/E³ au franchissement de l'énergie de liaison de la couche K — **88 keV pour le plomb, 32 keV pour l'iode** [2,5].\n\n**Ce que cela donne en pratique** aux deux énergies-phares de l'imagerie : à **140 keV (⁹⁹ᵐTc)**, l'atténuation dans l'eau/les tissus mous est gouvernée par le Compton, avec **µ ≈ 0,15 cm⁻¹ → CDA ≈ 4,5 cm d'eau** [11,9] ; à **511 keV (TEP)**, l'atténuation tissulaire est essentiellement Compton [3]. Concrètement, un photon de 140 keV émis à 10 cm de profondeur (soit ≈ 2,2 CDA) a moins d'une chance sur cinq d'atteindre le détecteur sans interaction — d'où la nécessité d'une correction d'atténuation.",
+          "stats": [
+            {
+              "value": "I = I₀·e^(−µx)",
+              "label": "Loi d'atténuation (faisceau étroit)"
+            },
+            {
+              "value": "≈ 0,15 cm⁻¹",
+              "label": "µ à 140 keV dans l'eau/tissu [11]"
+            },
+            {
+              "value": "≈ 4,5 cm",
+              "label": "CDA à 140 keV dans l'eau [9]"
+            },
+            {
+              "value": "Z⁴ · 1/E³",
+              "label": "Dépendance de l'effet photoélectrique [4,5]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — Compton est l'interaction de la médecine nucléaire",
+              "text": "Aux énergies diagnostiques (140 et 511 keV) et dans les tissus mous (Z effectif ≈ 7,4), la **diffusion Compton domine sur toute la gamme 30 keV–30 MeV** [3]. Le photoélectrique ne reprend la main qu'à basse énergie ou dans les milieux à Z élevé (plomb, cristal détecteur, os, iode). La création de paires, de seuil **1,022 MeV** [5,10], reste totalement marginale en diagnostic. Retenir : **dans le patient, on atténue par Compton ; dans le détecteur, on détecte par photoélectrique.**"
+            },
+            {
+              "type": "info",
+              "title": "CDA et coefficient massique",
+              "text": "Le **µ/ρ** est indépendant de la densité : il caractérise un matériau, pas un échantillon [1,2]. Pour passer d'un µ/ρ tabulé (NIST) au µ d'un tissu réel, multiplier par la masse volumique. La CDA, elle, est l'expression intuitive de µ — **chaque CDA divise le faisceau par 2** ; n CDA le divisent par 2ⁿ. Pratique pour estimer un blindage : à 140 keV, ≈ 0,24 mm de plomb suffisent à diviser le faisceau par 2 [16]."
+            }
+          ]
+        },
+        {
+          "title": "C2 - Le rayonnement diffusé : conséquences sur le contraste, le bruit et la quantification",
+          "text": "**Le diffusé naît du Compton.** Lors d'une diffusion Compton, le photon cède une **partie** de son énergie à un électron quasi-libre (l'énergie de liaison de quelques eV étant négligeable devant l'énergie du photon) et repart **dévié d'un angle θ** [5]. Ce photon diffusé est **plus mou** (énergie réduite) et porte une information de **position erronée** : s'il est détecté, il sera attribué à tort à la ligne reliant le détecteur à son point d'arrivée, et non à son lieu d'émission. C'est la source physique de la dégradation d'image en médecine nucléaire.\n\n**Cinématique du photon diffusé.** Le décalage en longueur d'onde s'écrit Δλ = (h/mₑc)(1 − cos θ), avec la **longueur d'onde Compton de l'électron h/mₑc = 2,43×10⁻¹² m** [5]. Le transfert d'énergie est **maximal à θ = 180°** (rétrodiffusion). À cette géométrie, un photon incident de **140 keV ressort à ≈ 90 keV**, un photon de 360 keV (≈ ¹³¹I) à 148 keV [2,5]. Conséquence majeure : pour le ⁹⁹ᵐTc, **même un diffusé à grand angle (140→90 keV) ne perd que ≈ 36 % de son énergie** — bien trop peu pour qu'un détecteur à résolution en énergie médiocre le sépare des photons primaires.\n\n**Pourquoi le diffusé dégrade l'image :**\n- **Contraste ↓** : les photons diffusés ajoutent un fond diffus relativement uniforme qui « remplit » les zones froides et réduit la différence de comptage lésion/fond.\n- **Bruit / faux positionnement** : chaque diffusé détecté est un événement mal localisé → flou et artefacts de quantification.\n- **Sous-correction du primaire** : sans correction, le diffusé fausse la mesure d'activité absolue (SUV, indices semi-quantitatifs).\n\n**L'ampleur du problème.** La **fraction de diffusé** (part des événements détectés qui sont des diffusés) est loin d'être négligeable : en **TEP cérébrale, elle est attendue à 30–35 %** [27]. En TEMP au ⁹⁹ᵐTc, le diffusé représente une fraction substantielle des coups dans la fenêtre photopic.\n\n**Le verrou instrumental : la résolution en énergie.** Le rejet du diffusé par fenêtrage repose entièrement sur la capacité du détecteur à mesurer l'énergie. Or le **NaI(Tl)**, scintillateur de référence en TEMP, n'offre qu'une **résolution en énergie de ~9–10 % FWHM à 140 keV** [13]. Une fenêtre photopic typiquement réglée à **15–20 % (soit ±10 %)** autour de 140 keV — couvrant ≈ **126–154 keV** pour une fenêtre 20 % [12] — laisse donc passer une part importante des diffusés à petit angle, dont l'énergie chevauche le photopic. Améliorer la résolution en énergie (détecteurs semi-conducteurs CZT) resserre la fenêtre et réduit mécaniquement le diffusé accepté.\n\n**La parade par fenêtres d'énergie (introduction à §C4).** La méthode de référence en TEMP est la **triple fenêtre d'énergie (TEW, *triple energy window*)** : une fenêtre principale sur le photopic, encadrée de deux fenêtres latérales étroites (sous et au-dessus du photopic) qui **estiment le diffusé contaminant le photopic** par interpolation, puis le soustraient image par image [13,34]. C'est la traduction directe, en correction, de la physique exposée ici.",
+          "stats": [
+            {
+              "value": "30–35 %",
+              "label": "Fraction de diffusé en TEP cérébrale [27]"
+            },
+            {
+              "value": "~9–10 %",
+              "label": "Résolution en énergie NaI(Tl) à 140 keV [13]"
+            },
+            {
+              "value": "140 → 90 keV",
+              "label": "Diffusé Compton à 180° (⁹⁹ᵐTc) [2,5]"
+            },
+            {
+              "value": "126–154 keV",
+              "label": "Fenêtre photopic 20 % du ⁹⁹ᵐTc [12]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le diffusé porte une fausse position",
+              "text": "Un photon diffusé conserve l'essentiel de son énergie aux petits angles (140 keV ne devient 90 keV qu'à 180° [2,5]) : il **franchit donc la fenêtre photopic** et est compté comme un primaire, mais avec une **localisation erronée**. Résultat : contraste et détectabilité des lésions abaissés, et **biais de quantification**. La résolution en énergie médiocre du NaI(Tl) (~10 % FWHM [13]) aggrave le phénomène en empêchant de discriminer primaires et diffusés sur la seule énergie."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — séparer atténuation et diffusé",
+              "text": "Deux phénomènes Compton, deux effets opposés sur le comptage : l'**atténuation** *retire* des photons primaires (sous-estimation de l'activité ; §C1) tandis que le **diffusé** *ajoute* des événements mal placés (sur-estimation locale du fond, perte de contraste). Une chaîne quantitative correcte exige de corriger **les deux** — c'est l'objet du §C4."
+            }
+          ]
+        },
+        {
+          "title": "C3 - Détecter, c'est interagir : du photon au signal dans le cristal scintillateur",
+          "text": "**La détection est une interaction provoquée.** Faire une image, c'est **forcer le photon à interagir** dans le détecteur pour y déposer son énergie. L'événement idéal est l'**absorption photoélectrique totale** : le photon disparaît en cédant toute son énergie, donnant un **pic photoélectrique net** dans le spectre, sur lequel on règle la fenêtre. Le Compton dans le cristal, lui, ne dépose qu'une fraction de l'énergie (le photon diffusé peut s'échapper) et produit le **fond Compton** sous le pic. La qualité d'un scintillateur tient donc à sa capacité à **maximiser l'absorption photoélectrique**, ce qui dépend de son **numéro atomique effectif (Z_eff)** et de sa **densité** [4,5].\n\n**La chaîne de conversion (γ-caméra).** Le photon traverse d'abord le **collimateur** (qui n'accepte que les directions utiles), interagit dans le **cristal scintillateur** où l'énergie déposée est convertie en lumière de scintillation, laquelle est lue par les **photomultiplicateurs (PMT)** ; l'électronique de positionnement (logique d'Anger) reconstruit le lieu et l'énergie de l'événement. Le réglage en énergie (*peaking*) cale la fenêtre sur le photopic — 159 keV pour l'¹²³I, 140 keV pour le ⁹⁹ᵐTc.\n\n**Pourquoi le NaI(Tl) en TEMP.** L'**iodure de sodium dopé thallium**, de **densité 3,67 g/cm³** [33], reste la référence : son Z_eff élevé assure une **absorption photoélectrique dominante jusqu'à ≈ 300 keV** [25], idéale pour les 140–159 keV des traceurs TEMP, qu'il **capte avec une efficacité ≈ 90 %** lorsqu'ils atteignent le cristal. Sa CDA à 140 keV n'est que de ≈ **0,3 cm** [12], d'où des cristaux fins. Limite : sa résolution en énergie modeste (cf. §C2) et son temps de décroissance lent (230 ns).\n\n**Pourquoi d'autres cristaux en TEP.** À 511 keV, il faut des cristaux **denses, à Z_eff élevé et rapides** pour arrêter des photons plus pénétrants et soutenir la mesure de coïncidence :\n\n| Scintillateur | Usage | Densité (g/cm³) | Z_eff | Temps de décroissance |\n|---|---|---|---|---|\n| **NaI(Tl)** | TEMP (réf.) | **3,67** [33] | — | 230 ns |\n| **LSO** | TEP | **7,4** [33] | **66** [33] | **~42 ns** [33] |\n| **LYSO** | TEP / TOF | **7,1** [33] | — | ~36–51 ns [33] |\n| **BGO** | TEP (anciens) | 7,1 | — | ~300 ns (lent) [33] |\n\nLa haute densité et la décroissance rapide des cristaux **lutéciés (LSO/LYSO)** ont permis la **TEP temps de vol (TOF-PET)** [33,35].\n\n**Le cas TEP : détecter une annihilation.** L'¹⁸F est un émetteur **β⁺** ; le positron émis ralentit dans les tissus puis **s'annihile** avec un électron du milieu, produisant **deux photons de 511 keV émis à ≈ 180°** [29]. La TEP exploite cette colinéarité par la **détection en coïncidence** : deux événements reçus dans une **fenêtre de coïncidence conventionnelle de 4,5–12 ns** [35] sont attribués à la même annihilation, le long de la **ligne de réponse (LOR)** joignant les deux détecteurs touchés — aucune collimation physique n'est nécessaire. La résolution est ultimement bornée par deux phénomènes physiques : le **parcours du positron** avant annihilation (positron range : **~0,6 mm pour ¹⁸F**, contre ~2,9 mm pour ⁶⁸Ga et ~5,9 mm pour ⁸²Rb [31]) et l'**acolinéarité** des deux photons (FWHM ≈ 0,54°). En **TOF**, une résolution temporelle de **~500–800 ps** localise l'annihilation le long de la LOR à **~75–120 mm FWHM** [35], gain reporté en réduction de bruit.\n\n**Le fenêtrage en énergie comme contrôle qualité.** Qu'il s'agisse de la fenêtre photopic **15–20 %** du ⁹⁹ᵐTc en TEMP [12] ou de la fenêtre à 511 keV en TEP, le réglage en énergie est l'outil de premier rang pour **rejeter le diffusé** (cf. §C2) — il découle directement du fait que la détection repose sur une absorption photoélectrique d'énergie connue.",
+          "stats": [
+            {
+              "value": "2 × 511 keV",
+              "label": "Photons d'annihilation, émis à ≈ 180° [29]"
+            },
+            {
+              "value": "~0,6 mm",
+              "label": "Parcours du positron du ¹⁸F dans l'eau [31]"
+            },
+            {
+              "value": "4,5–12 ns",
+              "label": "Fenêtre de coïncidence TEP [35]"
+            },
+            {
+              "value": "3,67 / 7,4 g/cm³",
+              "label": "Densité NaI(Tl) vs LSO [33]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le pic photoélectrique structure tout",
+              "text": "On règle la fenêtre sur le **pic photoélectrique** parce que lui seul correspond à un dépôt d'énergie **total et connu** : c'est la signature des photons non diffusés à l'énergie nominale. Le **fond Compton** sous le pic correspond aux dépôts partiels (photon diffusé ressorti du cristal) et aux diffusés venus du patient — précisément ce qu'on cherche à exclure. La pertinence du fenêtrage dépend donc directement de la **résolution en énergie** du détecteur (§C2)."
+            },
+            {
+              "type": "info",
+              "title": "TEMP collimatée vs TEP en coïncidence",
+              "text": "En **TEMP**, la direction du photon est fixée par un **collimateur physique** (qui sacrifie la sensibilité au profit de la résolution). En **TEP**, la colinéarité des deux 511 keV remplace le collimateur : la **détection en coïncidence** [35] définit électroniquement la ligne de réponse — d'où une sensibilité bien supérieure, au prix d'un cristal plus dense et plus rapide (LSO/LYSO) [33]."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection d'une gamma-caméra : photon γ issu du patient, collimateur, cristal scintillateur NaI(Tl), photomultiplicateurs et électronique de positionnement.",
+            "caption": "Fig. 1 — Du photon au signal : collimateur → absorption photoélectrique dans le cristal → conversion en lumière → PMT → positionnement et fenêtrage en énergie."
+          }
+        },
+        {
+          "title": "C4 - Correction d'atténuation et de diffusé : restaurer une image quantitative",
+          "text": "**L'objectif.** Les §C1 et §C2 montrent que, sans correction, l'atténuation **sous-estime** l'activité en profondeur tandis que le diffusé **ajoute** des événements mal localisés. Restaurer une image **quantitative** — fixation absolue, SUV fiable — suppose de corriger les deux, plus la résolution. C'est la chaîne TEMP-TDM / TEP-TDM moderne.\n\n**Correction d'atténuation par TDM (CTAC).** Une acquisition TDM fournit une **carte des µ** du patient. Comme le TDM mesure les coefficients à son propre spectre (≈ 70–140 kVp), il faut **convertir l'échelle Hounsfield (UH) vers le µ à l'énergie du radionucléide** : en TEP, cette conversion vers le **µ(511 keV)** se fait par une **transformation bilinéaire des UH**, à deux pentes (tissus mous vs os), car la composition — et donc le rapport photoélectrique/Compton — diffère entre ces milieux [32]. La carte ainsi obtenue pondère chaque ligne de projection par e^(+µx) pour rendre l'activité comparable quelle que soit la profondeur.\n\n**Correction du diffusé.**\n- **En TEMP** : méthode de référence par **triple fenêtre d'énergie (TEW)** — la contamination du photopic par le diffusé est estimée à partir de deux fenêtres latérales puis soustraite [13,34]. L'amélioration est tangible : le contraste d'un point froid passe de **70 % à plus de 96 %** [12].\n- **En TEP** : correction par **modèle (single-scatter simulation)**, qui simule la distribution du diffusé à partir de la carte d'atténuation et de l'activité estimée.\n\n**Reconstruction itérative.** La correction s'intègre à une reconstruction **itérative de type OSEM**, qui modélise dans la matrice système l'atténuation, le diffusé et la **réponse en résolution** (recovery), restituant une quantification absolue [12].\n\n**L'impact sur la quantification.** Sans correction adéquate, le biais sur le **SUV** est important : les approches de correction d'atténuation par segmentation (TEP/IRM) laissent un **biais SUV > 16 %**, ramené à **< 8 %** par les méthodes d'apprentissage profond [27]. La correction de diffusé est l'une des corrections fondamentales pour une lecture quantitative fiable.\n\n**Le revers : la correction crée ses propres artefacts.** Toute correction d'atténuation suppose un **recalage parfait** entre la carte TDM et les données d'émission. Quand ce recalage échoue, on **substitue un artéfact iatrogène** au défaut qu'on voulait corriger :\n\n| Artéfact | Cause | Aspect |\n|---|---|---|\n| **« Banane » (mismatch respiratoire)** | TDM en apnée mal recalée sur la TEP moyennée sur le cycle | bande de fausse hypofixation au diaphragme [36] |\n| **Sur-correction métallique / contraste iodé** | UH localement surestimées → µ surestimé | fausse hyperfixation focale [36] |\n| **Troncature** | FOV TDM < FOV TEP (bras le long du corps) | erreur de quantification du SUV [36] |\n| **« Halo »** | foyer très fixant (rein, vessie en TEP ⁶⁸Ga-PSMA) | halo froid pouvant masquer une lésion adjacente [37] |\n| **Mésalignement cardiaque** | décalage émission ↔ transmission en TEMP myocardique | faux défaut, ou correction d'un vrai défaut [38] |\n\n**La règle de sécurité.** En cardiologie nucléaire, l'atténuation des tissus mous (sein, diaphragme) crée des **faux défauts de perfusion** inféro-postérieurs que la **CTAC corrige** — élevant la spécificité sans baisse de sensibilité. La recommandation **SNMMI/ASNC** est formelle : **toujours relire les images avec ET sans correction d'atténuation** pour distinguer un vrai défaut d'un artéfact (et repérer un artéfact de sur-correction) [14]. Sur le plan de la performance, la TEMP myocardique avec CTAC atteint une sensibilité ≈ 0,57 et une **spécificité ≈ 0,94**, cette dernière étant attribuée à la réduction des faux positifs par artéfact d'atténuation [38] ; en mode *stress-only*, la part d'examens classés « clairement normaux ou anormaux » passe de **37 % à 84 %** avec correction (p<0,005) [14].",
+          "steps": [
+            {
+              "title": "1 · Acquérir la carte d'atténuation",
+              "text": "TDM dédiée (basse dose) en imagerie hybride → carte des µ ; soigner le recalage (apnée/respiration, mouvement) pour éviter les artéfacts de correction [14]."
+            },
+            {
+              "title": "2 · Convertir UH → µ(énergie)",
+              "text": "Transformation bilinéaire de l'échelle Hounsfield vers le µ à l'énergie du radionucléide (511 keV en TEP), à deux pentes tissus mous/os [32]."
+            },
+            {
+              "title": "3 · Corriger le diffusé",
+              "text": "TEW (triple fenêtre d'énergie) en TEMP [13,34] ; single-scatter simulation en TEP — soustraction du diffusé estimé."
+            },
+            {
+              "title": "4 · Reconstruire en itératif",
+              "text": "OSEM intégrant atténuation, diffusé et recovery de résolution → quantification absolue (SUV, fixation) [12]."
+            },
+            {
+              "title": "5 · Relire avec ET sans correction",
+              "text": "Comparaison systématique pour démasquer artéfacts de sur-correction (métal, mismatch, troncature) avant de conclure [14]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "70 % → 96 %",
+              "label": "Contraste d'un point froid après TEW (TEMP) [12]"
+            },
+            {
+              "value": "> 16 % → < 8 %",
+              "label": "Biais SUV (segmentation vs deep-learning) [27]"
+            },
+            {
+              "value": "37 % → 84 %",
+              "label": "Examens « clairement N/A » avec correction [14]"
+            },
+            {
+              "value": "Bilinéaire UH→µ",
+              "label": "Conversion TDM pour CTAC en TEP [32]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la correction peut fabriquer la lésion qu'elle prétend corriger",
+              "text": "Un **mauvais recalage** TDM↔émission transforme la correction en source d'erreur : bande « banane » de fausse hypofixation diaphragmatique (mismatch respiratoire) [36], **fausse hyperfixation focale** sur clip métallique ou contraste iodé (sur-correction) [36], artéfact de troncature [36], halo froid masquant une lésion en TEP ⁶⁸Ga-PSMA [37]. Le réflexe : **relire avec ET sans correction d'atténuation** [14]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la correction améliore la performance diagnostique",
+              "text": "Bien conduite, la correction d'atténuation **augmente la spécificité sans réduire la sensibilité** : en TEMP myocardique, spécificité ≈ 0,94 attribuée à la CTAC [38], et en *stress-only* la proportion d'examens tranchés (clairement normaux/anormaux) passe de 37 % à 84 % [14]. La compréhension des trois interactions (§C1–C3) conditionne donc directement la fiabilité de toute lecture quantitative (SUV)."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Détection en coïncidence en TEP : deux photons d'annihilation de 511 keV émis à 180° définissent une ligne de réponse à travers l'anneau de détecteurs, sur laquelle s'appliquent les corrections d'atténuation et de diffusé.",
+            "caption": "Fig. 2 — La ligne de réponse en TEP : support des corrections d'atténuation (pondération par e^(+µx)) et de diffusé qui restaurent la quantification."
+          }
+        },
+        {
+          "title": "D1 - Choisir le bon couple énergie/radionucléide : un compromis d'interactions",
+          "text": "Le choix d'un radionucléide d'imagerie n'est jamais purement chimique : il est d'abord **physique**, dicté par la façon dont le photon utile interagira avec deux milieux successifs — le **corps du patient** (atténuateur/diffuseur) et le **cristal du détecteur** (absorbeur). Toute énergie photonique optimale résout le même conflit : assez haute pour **échapper à l'atténuation** tissulaire et limiter l'auto-absorption, mais assez basse pour être **arrêtée efficacement dans le scintillateur** (par effet photoélectrique, seul dépôt total générant un photopic net) et pour ne pas exiger un blindage prohibitif.[1,2]\n\n**Pourquoi 140 keV est le compromis du ⁹⁹ᵐTc.** À cette énergie, l'effet photoélectrique domine encore dans le NaI(Tl) — scintillateur de référence de la TEMP (tomographie d'émission monophotonique) — jusqu'à environ **300 keV**, ce qui garantit un dépôt total et une bonne résolution en énergie ; au-delà, le Compton prend le relais et dégrade le photopic.[2] Dans les tissus mous en revanche, le Compton domine **dès ≈ 50 keV**, si bien que les 140 keV traversent une épaisseur clinique avec un coefficient d'atténuation **μ ≈ 0,15 cm⁻¹** dans l'eau/tissu mou, soit une **couche de demi-atténuation (CDA) ≈ 4,5 cm**.[11] Concrètement, un photon émis à 10 cm de profondeur a déjà franchi plus de deux CDA : l'atténuation est substantielle mais corrigeable, et la majorité de l'information de position est préservée.\n\n**Pourquoi 511 keV change la donne (TEP).** Le ¹⁸F est un émetteur β⁺ : le positon émis s'annihile avec un électron du milieu pour produire **deux photons de 0,511 MeV** à ≈ 180°, fondement de la détection en coïncidence.[6] À 511 keV, l'atténuation tissulaire est **presque exclusivement Compton**[1] et le pouvoir d'arrêt requis du cristal impose des scintillateurs **plus denses et à Z effectif plus élevé** (LSO/LYSO) que le NaI(Tl).[11] À ces énergies, deux limites physiques propres au positon plafonnent la résolution intrinsèque, indépendamment du détecteur.\n\n| Phénomène (TEP) | Mécanisme | Valeur | Impact résolution |\n|---|---|---|---|\n| **Acolinéarité** | Le positon n'est pas parfaitement au repos lors de l'annihilation | FWHM ≈ **0,54°** [7] | Flou croissant avec le diamètre de l'anneau |\n| **Parcours du positon (¹⁸F)** | Distance β⁺ avant annihilation (E_max 0,63 MeV) | ≈ **0,6 mm** dans l'eau [8] | Excellente résolution |\n| **Parcours du positon (⁶⁸Ga)** | E_max 1,9 MeV | ≈ **2,9 mm** [8] | Flou notable |\n| **Parcours du positon (⁸²Rb)** | E_max 3,4 MeV | ≈ **5,9 mm** [8] | Dégrade la quantification |\n\nLe choix du radionucléide TEP est donc, lui aussi, un compromis d'interactions : le **¹⁸F est privilégié pour sa résolution** parce que son faible parcours de positon (≈ 0,6 mm) minimise le déplacement entre point d'émission et point d'annihilation.[8] La **production de paires** (seuil **1,022 MeV**), qui ne deviendrait significative qu'au-delà de ≈ 2,5 MeV, reste **marginale aux énergies diagnostiques** et n'intervient pas dans le choix du couple.[10]",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "γ ⁹ᵐ⁹Tc : photoélectrique dans NaI(Tl) jusqu'à ≈300 keV [2]"
+            },
+            {
+              "value": "≈ 4,5 cm",
+              "label": "CDA des 140 keV dans l'eau/tissu (μ ≈ 0,15 cm⁻¹) [11]"
+            },
+            {
+              "value": "2×511 keV",
+              "label": "Photons d'annihilation ¹⁸F (TEP), à ≈180° [6]"
+            },
+            {
+              "value": "≈ 0,6 mm",
+              "label": "Parcours du positon ¹⁸F dans l'eau [8]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le scintillateur de la TEMP voit l'effet photoélectrique comme un allié (dépôt total → photopic), alors que le tissu du patient le subit à peine aux énergies utiles (Compton dominant dès ≈ 50 keV).[2] C'est la même interaction qui sert à **détecter** dans le cristal et qui pénalise peu le signal dans le patient : tout l'art du choix de l'énergie est de placer le photon là où le photoélectrique reste utile au détecteur sans que l'atténuation tissulaire devienne ingérable."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — confondre énergie d'émission et énergie détectée",
+              "text": "Un photon ayant subi une **diffusion Compton** dans le patient arrive au détecteur avec une **énergie abaissée** et une **direction faussée** : à 140 keV incident, un photon rétrodiffusé à 180° ne porte plus que ≈ **90 keV**.[2] Sans fenêtrage en énergie suffisamment serré, ces photons diffusés contaminent le photopic et dégradent le contraste — d'où l'importance de la résolution en énergie du cristal (cf. D4)."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Annihilation d'un positon ¹⁸F en deux photons de 511 keV émis à 180°, détectés en coïncidence par l'anneau TEP le long de la ligne de réponse.",
+            "caption": "Fig. 1 — Annihilation β⁺ → 2×511 keV en coïncidence : le couple émetteur/énergie commande la résolution (acolinéarité, parcours du positon) et le pouvoir d'arrêt requis du cristal."
+          }
+        },
+        {
+          "title": "D2 - Du dépôt d'énergie à la dose : KERMA, dose absorbée et grandeurs dosimétriques",
+          "text": "Toute interaction photonique se traduit, in fine, par un **transfert d'énergie à des électrons secondaires** qui ionisent le milieu sur leur parcours : c'est ce dépôt qui sous-tend simultanément la **détection** (lumière de scintillation) et l'**effet biologique** (irradiation du patient). La chaîne énergétique se lit en deux temps. Le **KERMA** (*Kinetic Energy Released per unit MAss*) quantifie l'énergie cinétique **transférée** aux particules chargées par les photons au point d'interaction ; la **dose absorbée** (énergie effectivement **déposée** par unité de masse) en découle après le parcours de ces électrons. Toutes deux s'expriment en **gray (Gy = J/kg)** ; sous équilibre électronique et en négligeant le rayonnement de freinage, KERMA et dose absorbée coïncident. La **dose efficace** (sievert, Sv) pondère ensuite la dose aux organes par leur radiosensibilité (facteurs de pondération tissulaire de la CIPR 103) pour estimer le risque stochastique corps entier.[16]\n\n**Mécanisme du dépôt — direct vs indirect.** Aux énergies de la médecine nucléaire, le rayonnement est de **bas transfert d'énergie linéique (TEL)** : les ionisations sont **dispersées**, majoritairement réparables. Environ **un tiers** des lésions de l'ADN sont **directes** (ionisation de la macromolécule), **deux tiers indirectes** via la **radiolyse de l'eau** : le **radical hydroxyle •OH est responsable de 60–70 % des lésions de l'ADN** par voie indirecte.[20] La lésion la plus grave reste la **cassure double brin (DSB)** ; le bas TEL des γ/X produit surtout des cassures simple brin et des dommages isolés, à la différence des ions lourds (haut TEL, lésions complexes en grappes).[21]\n\n**Coefficients de dose — valeurs de référence (CIPR/ICRP 128).** Le compendium **ICRP Publication 128** (Mattsson et al., 2015) tabule les doses aux patients par radiopharmaceutique, calculées avec les facteurs CIPR 103.[16]\n\n| Radiopharmaceutique | Dose efficace | Organe critique | Source |\n|---|---|---|---|\n| **¹⁸F-FDG** | **0,019 mSv/MBq** (CIPR 128) ; ≈ 0,016 avec facteurs CIPR 103 | **Paroi vésicale** (≈ 7,5×10⁻² mGy/MBq, miction à 45 min) | [16,17,18] |\n| **⁹⁹ᵐTc pertechnétate** | **0,014 mSv/MBq** | Paroi vésicale / muqueuse colique | [17] |\n\nOrdres de grandeur cliniques dérivés (¹⁸F-FDG) : pour **555 MBq (15 mCi)**, dose efficace ≈ **10,6 mSv**, vessie ≈ 72 mGy, cœur ≈ 37 mGy ; pour **185 MBq**, dose efficace ≈ **3 mSv**.[17,18] Ces chiffres illustrent que la **biocinétique** (élimination urinaire, hydratation, fréquence des mictions) module fortement la dose à l'organe critique : une **miction précoce** réduit la dose vésicale, ce qui relie directement la préparation du patient à la dosimétrie.[18]\n\nLe principe **ALARA** (*As Low As Reasonably Achievable*) s'applique ici comme un compromis d'interactions : abaisser l'activité injectée réduit la dose mais aussi le **nombre de photons détectés**, déjà amputé par l'atténuation — il faut donc minimiser la dose **tout en garantissant un comptage suffisant** pour une image diagnostique.",
+          "steps": [
+            {
+              "title": "1 · Émission",
+              "text": "Le radionucléide émet le photon utile (140 keV pour le ⁹⁹ᵐTc, 511 keV pour le ¹⁸F après annihilation β⁺).[6]"
+            },
+            {
+              "title": "2 · Transfert (KERMA)",
+              "text": "Le photon interagit (surtout Compton aux énergies diagnostiques) et **transfère** son énergie cinétique à des électrons secondaires (Gy).[1]"
+            },
+            {
+              "title": "3 · Dépôt (dose absorbée)",
+              "text": "Les électrons secondaires **ionisent** le milieu sur leur parcours → énergie déposée par unité de masse (Gy)."
+            },
+            {
+              "title": "4 · Effet biologique",
+              "text": "≈ ⅔ des lésions ADN sont indirectes via la radiolyse de l'eau ; le **•OH** porte 60–70 % de l'effet indirect ; lésion grave = DSB.[20]"
+            },
+            {
+              "title": "5 · Risque (dose efficace)",
+              "text": "Pondération par radiosensibilité tissulaire (CIPR 103) → dose efficace en mSv, estimateur du risque stochastique.[16]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace ¹⁸F-FDG (CIPR 128) [16,17]"
+            },
+            {
+              "value": "≈ 10,6 mSv",
+              "label": "Dose efficace pour 555 MBq (15 mCi) ¹⁸F-FDG [17]"
+            },
+            {
+              "value": "60–70 %",
+              "label": "Part des lésions ADN portée par le radical •OH (voie indirecte) [20]"
+            },
+            {
+              "value": "Vessie",
+              "label": "Organe critique du ¹⁸F-FDG (miction à 45 min) [18]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Distinguer dose absorbée et dose efficace",
+              "text": "La **dose absorbée** (Gy) est une grandeur **physique, par organe**, mesurant l'énergie déposée par unité de masse. La **dose efficace** (Sv) est une grandeur **de radioprotection, corps entier**, obtenue en pondérant les doses aux organes par leur radiosensibilité (CIPR 103) ; elle estime un **risque stochastique**, pas un effet déterministe local. Les coefficients de dose (mSv/MBq) de la CIPR 128 sont des doses efficaces normalisées par l'activité.[16]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la miction comme levier dosimétrique",
+              "text": "L'organe critique du ¹⁸F-FDG est la **paroi vésicale** parce que le traceur s'élimine par voie urinaire.[18] L'hypothèse de calcul CIPR 128 (miction à 45 min) est un paramètre, pas une fatalité : **hydrater et faire uriner fréquemment** le patient vide le réservoir radioactif et réduit la dose vésicale réelle. La dosimétrie n'est donc pas figée par le radionucléide seul — elle dépend de la **biocinétique** que la préparation du patient peut infléchir."
+            }
+          ]
+        },
+        {
+          "title": "D3 - Blindage et radioprotection : arrêter chaque rayonnement par la bonne matière",
+          "text": "Le blindage est l'**application directe de la loi d'atténuation** I = I₀·e^(−μx) : on interpose une épaisseur de matériau choisie pour que μx soit suffisant. Deux grandeurs opérationnelles en découlent — la **CDA (couche de demi-atténuation, HVL)** = ln2/μ = **0,693/μ**, qui divise le débit par 2, et la **couche de dixième-atténuation (CDixA, TVL)**, qui le divise par 10. Le matériau idéal dépend de l'énergie **et donc de l'interaction dominante** : à basse énergie, l'effet **photoélectrique** (∝ Z⁴ par atome) rend les matériaux à **Z élevé** (plomb, Z = 82 ; tungstène) extraordinairement efficaces ; à haute énergie, le **Compton** prend le relais et l'avantage du Z s'effondre, imposant des épaisseurs bien plus grandes.[1,2]\n\n**Valeurs de référence — CDA/CDixA en plomb** (Tran et al., JACMP 2025) :[16]\n\n| Radionucléide | Période | Photon principal | CDA (HVL) Pb | CDixA (TVL) Pb |\n|---|---|---|---|---|\n| **⁹⁹ᵐTc** | 6,02 h | 140 keV (89 %) | **0,243 mm** | 0,87 mm |\n| **¹⁸F** | 109,8 min | 511 keV | **4,75 mm** | 15,4 mm |\n| **¹³¹I** | 8,02 j | 364 keV (81 %) | **2,48 mm** | 10,5 mm |\n| **¹⁷⁷Lu** | 6,65 j | 113/208 keV | **0,511 mm** | 1,99 mm |\n\nLa conséquence physique est spectaculaire : il faut **≈ 20 fois plus de plomb** pour atténuer de moitié les 511 keV du ¹⁸F (CDA 4,75 mm) que les 140 keV du ⁹⁹ᵐTc (CDA 0,243 mm).[16] À 140 keV, le photoélectrique domine dans le plomb (jusqu'à ≈ 1 MeV) et l'atténuation est massive ; à 511 keV, le Compton domine et le blindage devient lourd — d'où le recours fréquent au **tungstène** (plus dense) pour les protège-seringues et les enceintes TEP.[2,16] Le **¹³¹I** (364 keV, période 8 j, émission β⁻ associée) cumule une CDA élevée (2,48 mm Pb) et une décroissance lente qui impose un **stockage prolongé** des déchets et des effluents.[16]\n\n**Radioprotection structurée par cible.** Les trois leviers d'optimisation — **temps, distance, écran** (ALARA) — se déclinent selon qui l'on protège.\n\n| Cible | Mesures clés liées aux interactions |\n|---|---|\n| **Personnel** | Protège-seringue (Pb pour ⁹⁹ᵐTc, **tungstène** pour ¹⁸F/511 keV), distance, temps, dosimétrie ; vigilance accrue en TEP (511 keV pénétrants) et avec le ¹³¹I (haute énergie + β⁻).[16,17] |\n| **Entourage / public** | Patient « source » : consignes post-examen (hydratation, mictions fréquentes, distance vis-à-vis des enfants et femmes enceintes pendant la période utile). |\n| **Patient** | Justification, optimisation de l'activité (ALARA), correction d'atténuation pour ne pas surdoser à la recherche d'un signal perdu. |\n\n**Cas particulier — les lunettes plombées.** Parce que leur efficacité dépend de l'interaction dominante, les lunettes plombées **protègent bien le cristallin à 140 keV** (photoélectrique, fort Z) mais **peu à 511 keV** (Compton) : une étude Monte-Carlo confirme que la réduction de dose cornéenne/cristallinienne par verres plombés est marginale aux énergies TEP.[42] C'est l'illustration clinique que **le bon écran dépend du rayonnement** : aucun matériau n'est universellement protecteur.",
+          "stats": [
+            {
+              "value": "0,243 mm",
+              "label": "CDA des 140 keV (⁹ᵐ⁹Tc) dans le plomb [16]"
+            },
+            {
+              "value": "4,75 mm",
+              "label": "CDA des 511 keV (¹⁸F) dans le plomb — ≈ 20× plus [16]"
+            },
+            {
+              "value": "2,48 mm",
+              "label": "CDA des 364 keV (¹³¹I) dans le plomb [16]"
+            },
+            {
+              "value": "Tungstène",
+              "label": "Blindage privilégié à 511 keV (Compton dominant) [16]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — appliquer le blindage TEMP à la TEP",
+              "text": "Un protège-seringue dimensionné pour les 140 keV du ⁹⁹ᵐTc est **largement insuffisant** pour les 511 keV du ¹⁸F : à énergie ≈ 3,6× plus élevée, la CDA en plomb passe de 0,243 mm à **4,75 mm**, soit ≈ 20× plus d'épaisseur pour le même facteur 2.[16] La TEP exige des écrans dédiés (souvent **tungstène**) et des règles de distance/temps strictes — transposer le matériel TEMP sans recalcul expose le personnel."
+            },
+            {
+              "type": "info",
+              "title": "Pourquoi le plomb à basse énergie et le tungstène à haute énergie",
+              "text": "L'efficacité d'un écran à Z élevé vient surtout de l'effet **photoélectrique** (∝ Z⁴ par atome), qui s'effondre quand l'énergie monte et que le **Compton** (∝ Z, ∝ densité électronique) devient dominant.[1,2] À 511 keV, l'avantage du numéro atomique se réduit : on compense par la **densité** (tungstène ρ élevé) plutôt que par le seul Z. Le choix du matériau de blindage est donc gouverné par l'interaction dominante à l'énergie considérée."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Les trois leviers de réduction de dose — temps, distance, écran — appliqués au blindage des photons selon leur énergie.",
+            "caption": "Fig. 2 — Temps / distance / écran (ALARA) : le levier « écran » dépend de l'énergie du photon, car CDA et matériau optimal suivent l'interaction dominante (photoélectrique à basse E, Compton à haute E)."
+          }
+        },
+        {
+          "title": "D4 - Pièges, idées reçues et erreurs d'interprétation liées aux interactions",
+          "text": "La méconnaissance des interactions photon-matière génère des erreurs récurrentes, à la fois conceptuelles (QCM, raisonnement) et cliniques (artefacts d'image). Les regrouper permet de les anticiper.\n\n**Idées reçues physiques.** Trois confusions reviennent. (1) « L'atténuation efface le signal » : non, elle le **retire du faisceau primaire** mais le diffusé Compton **réinjecte** des photons déviés porteurs d'une **information de position erronée**, ce qui dégrade le contraste sans réduire le comptage total — d'où la nécessité d'une **correction de diffusé** distincte de la correction d'atténuation.[3] (2) « Plus l'énergie est haute, mieux on détecte » : au-delà de ≈ 300 keV dans le NaI(Tl), le photoélectrique cède au Compton et le **photopic se dégrade** — une énergie trop haute pénalise la résolution en énergie et le pouvoir d'arrêt du cristal.[2] (3) « La création de paires intervient en imagerie » : faux, son **seuil de 1,022 MeV** la rend marginale aux énergies diagnostiques (140–511 keV).[10]\n\n**La résolution en énergie, clé du diffusé.** Le NaI(Tl) a une **résolution en énergie médiocre (~9–10 % FWHM à 140 keV)**[13] : il ne sépare pas nettement les photons primaires des diffusés, qui ne sont décalés que de quelques dizaines de keV. Une fenêtre photopic typique de **±10 % (soit 20 %)** centrée sur 140 keV — couvrant **126–154 keV**[12] — laisse donc passer une part du diffusé. D'où les méthodes de correction : la **triple fenêtre d'énergie (TEW)**, qui estime le diffusé sous le photopic à partir de deux fenêtres latérales, améliore le contraste d'un point froid de **70 % à > 96 %**.[12] En TEP cérébrale, la **fraction de diffusé attendue est de 30–35 %** : sans correction, le biais sur le SUV est majeur (méthodes par segmentation > 16 %, approches deep-learning < 8 %).[3]\n\n**Artefacts cliniques d'atténuation/diffusé — à reconnaître.** Pour chacun : cause physique → aspect → correction.",
+          "list": [
+            "**L'atténuation retire le primaire, le diffusé réinjecte du faux** : deux corrections distinctes (atténuation ≠ diffusé) sont nécessaires.[3]",
+            "**Compton ≠ effacement** : le photon diffusé porte une position erronée ; il dégrade le contraste sans baisser le comptage.[3]",
+            "**Au-delà de ≈ 300 keV dans NaI(Tl)**, le Compton détrône le photoélectrique → photopic dégradé : monter l'énergie n'améliore pas indéfiniment la détection.[2]",
+            "**Seuil création de paires = 1,022 MeV** → phénomène marginal en imagerie diagnostique (140–511 keV).[10]",
+            "**Résolution en énergie médiocre du NaI(Tl) (~9–10 % à 140 keV)** : fenêtre 20 % (126–154 keV) contaminée par le diffusé → correction TEW (70 % → >96 % de contraste).[12,13]",
+            "**Artefacts d'atténuation** (banane respiratoire, surcorrection métal/iode, faux défaut myocardique) : toujours relire **avec et sans correction**.[14,15]",
+            "**La CTAC fait la spécificité** de la TEMP myocardique (Sp ≈ 0,94) en supprimant les faux positifs d'atténuation des tissus mous.[15]"
+          ],
+          "stats": [
+            {
+              "value": "~9–10 %",
+              "label": "Résolution en énergie FWHM du NaI(Tl) à 140 keV [13]"
+            },
+            {
+              "value": "126–154 keV",
+              "label": "Fenêtre photopic 20 % centrée sur 140 keV [12]"
+            },
+            {
+              "value": "70 % → >96 %",
+              "label": "Contraste d'un point froid après correction TEW [12]"
+            },
+            {
+              "value": "30–35 %",
+              "label": "Fraction de diffusé attendue en TEP cérébrale [3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — artefact « banane » (mismatch respiratoire)",
+              "text": "La carte d'atténuation CT (apnée, instant unique) est **mal recalée** sur l'émission TEP/TEMP (moyennée sur le cycle respiratoire) : il en résulte des **bandes de fausse hypofixation** à la coupole diaphragmatique (paroi inférieure du cœur).[14] Correction : vérifier le recalage émission ↔ transmission, relire **avec et sans correction d'atténuation**."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — surcorrection sur métal et produit de contraste iodé",
+              "text": "Un objet métallique dense ou le **produit de contraste iodé** surestiment localement les unités Hounsfield ; converties en μ, elles entraînent une **surcorrection d'atténuation** → **fausse hyperfixation focale** iatrogène.[14] Correction : confronter aux images non corrigées, retirer les objets métalliques amovibles."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — faux défaut de perfusion myocardique (SPECT)",
+              "text": "L'atténuation des **tissus mous** (sein, diaphragme) crée de faux défauts inféro-postérieurs en TEMP myocardique.[15] La **correction d'atténuation par CT (CTAC)** les distingue des vrais défauts — mais un **mésalignement** émission/transmission peut au contraire **créer** de nouveaux artéfacts. Correction : toujours vérifier le recalage et relire avec/sans CTAC."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la haute spécificité de la TEMP myocardique vient de la correction d'atténuation",
+              "text": "En TEMP myocardique, la sensibilité avoisine **0,57** et la spécificité **0,94** ; cette haute spécificité est attribuée à l'usage de la **CTAC**, qui réduit les faux positifs liés à l'atténuation des tissus mous.[15] Maîtriser les interactions n'est donc pas un raffinement théorique : c'est ce qui transforme un artéfact en diagnostic fiable. La correction deep-learning de l'atténuation réduit elle aussi ces faux positifs.[15]"
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection d'une gamma-caméra (collimateur, cristal NaI(Tl), photomultiplicateurs) où le fenêtrage en énergie sépare imparfaitement photons primaires et diffusés.",
+            "caption": "Fig. 3 — La résolution en énergie du cristal (~9–10 % à 140 keV) conditionne la séparation primaire/diffusé : un fenêtrage trop large laisse passer le diffusé, d'où les corrections TEW."
+          }
+        },
+        {
+          "title": "E1 - Synthèse : la matrice énergie × Z × densité qui résume tout",
+          "text": "**Toute la physique d'interaction des photons γ et X en médecine nucléaire tient dans une matrice à trois variables : l'énergie du photon, le numéro atomique Z du milieu, et sa densité ρ.** Ces trois paramètres déterminent quelle interaction domine, donc l'atténuation, le diffusé et la détection — les trois phénomènes cliniques que cet article a dépliés. Cette section noue les fils chiffrés en un seul cadre mémorisable.\n\n**▸ La règle de prédominance (le cœur de tout).** Dans la gamme d'énergie de la médecine nucléaire (≈ 10 keV–10 MeV), trois processus se relaient :[3,4]\n\n| Interaction | Dépendance Z | Dépendance énergie | Domaine de prédominance | Pertinence MN |\n|---|---|---|---|---|\n| **Effet photoélectrique** | ∝ **Z⁴** par atome [1,5] | ∝ **1/E³** [5] | Basse E, Z élevé | Détection (NaI Z élevé), blindage Pb, contraste osseux/iodé |\n| **Diffusion Compton** | ∝ **Z** (densité électronique) [1,5] | faiblement décroissante | E intermédiaire | **Interaction prépondérante dans les tissus (30 keV–30 MeV)** [3] ; source du diffusé |\n| **Production de paires** | ∝ Z² [5] | seuil **1,022 MeV** [5,10] | Haute E | Marginale au diagnostic ; mais l'annihilation (2×511 keV) fonde la TEP [10] |\n\n**Lecture clinique de la matrice :** dans les **tissus mous** (Z effectif ≈ 7,4, ρ ≈ 1 g/cm³), le Compton **domine dès ≈ 50 keV** et **persiste jusqu'à ≈ 30 MeV** — c'est pourquoi l'atténuation du patient, aux 140 keV du ⁹⁹ᵐTc comme aux 511 keV de la TEP, est essentiellement comptonienne [3]. Dans le **plomb** (Z=82), le photoélectrique reste dominant jusqu'à ≈ 1 MeV [5] : un photon de 50 keV interagit ≈ **11 000 fois** plus volontiers avec le plomb qu'avec l'oxygène (82⁴/8⁴) [1,5], ce qui explique l'efficacité du blindage et le contraste TDM. La loi en **1/E³** se vérifie tout aussi simplement : un photon de 45 keV est ≈ **8 fois** plus absorbé par effet photoélectrique qu'un photon de 90 keV (90³/45³) [5].\n\n**▸ La loi d'atténuation, dénominateur commun.** I = I₀·e^(−µx) résume la perte de photons primaires ; la **couche de demi-atténuation (CDA)** x₁/₂ = ln2/µ = 0,693/µ traduit µ en épaisseur tangible [5]. Le **coefficient massique µ/ρ (cm²/g)** élimine la densité : µ/ρ de l'eau = **1,707×10⁻¹ cm²/g à 100 keV**, **1,505×10⁻¹ cm²/g à 150 keV** et **9,687×10⁻² cm²/g à 500 keV** [1] — la décroissance avec l'énergie est la signature du recul du photoélectrique.\n\n**▸ Le tableau-pivot atténuation/blindage** (la même physique vue côté patient et côté radioprotection) :\n\n| Énergie (radionucléide) | µ tissu mou | CDA tissu/eau | CDA / HVL plomb | Interaction dominante |\n|---|---|---|---|---|\n| **140 keV (⁹⁹ᵐTc)** | **≈ 0,15 cm⁻¹** [11] | **≈ 4,5 cm** [11] | **0,243 mm** (HVL) [16] | Compton (tissu) / photoélectrique (Pb) |\n| **364 keV (¹³¹I)** | — | — | **2,48 mm** (HVL) [16] | Compton |\n| **511 keV (TEP, ¹⁸F)** | — | — | **4,75 mm** (HVL) [16] | Compton (tissu et Pb) |\n\nLe rapport **HVL_Pb(511)/HVL_Pb(140) ≈ 20** [16] est la conséquence directe de la matrice : à 511 keV le Compton domine **aussi dans le plomb**, où le photoélectrique (∝1/E³) s'est effondré → le blindage TEP exige beaucoup plus de matière et privilégie le **tungstène** [16].\n\n**▸ Du dépôt d'énergie à l'image et à la dose.** Toute interaction libère des **électrons secondaires** qui ionisent le milieu : ce dépôt sous-tend simultanément la **détection** (absorption photoélectrique dans le cristal → pic photoélectrique net) et l'**effet biologique** (cassures de l'ADN, dont **~⅔ par voie indirecte** via les radicaux de la radiolyse de l'eau) [20]. Côté détection, le choix de l'isotope intègre la matrice : le **parcours du positron** — **F-18 ≈ 0,6 mm < Ga-68 ≈ 2,9 mm < Rb-82 ≈ 5,9 mm** [8] — explique pourquoi le ¹⁸F offre la meilleure résolution TEP.\n\n**En une phrase :** *énergie basse + Z élevé → photoélectrique (détection, blindage) ; énergie intermédiaire + tissu → Compton (atténuation, diffusé, tout le diagnostic MN) ; énergie > 1,022 MeV → paires, et son corollaire l'annihilation, qui fonde la TEP.*",
+          "stats": [
+            {
+              "value": "Z⁴ · 1/E³",
+              "label": "Photoélectrique (Z, énergie) [1,5]"
+            },
+            {
+              "value": "30 keV–30 MeV",
+              "label": "Domaine Compton dans les tissus [3]"
+            },
+            {
+              "value": "1,022 MeV",
+              "label": "Seuil de production de paires [5,10]"
+            },
+            {
+              "value": "≈ 4,5 cm",
+              "label": "CDA des 140 keV dans l'eau [11]"
+            },
+            {
+              "value": "× 20",
+              "label": "HVL Pb 511 keV / 140 keV [16]"
+            },
+            {
+              "value": "≈ ⅔",
+              "label": "Lésions ADN par voie indirecte (•OH) [20]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le réflexe à trois questions",
+              "text": "Devant tout problème d'interaction (atténuation à corriger, diffusé à soustraire, blindage à dimensionner, détecteur à choisir), poser les trois mêmes questions dans l'ordre : **(1) quelle énergie ?** (140 vs 364 vs 511 keV) — **(2) quel Z du milieu ?** (tissu ≈ 7,4 vs plomb 82 vs NaI) — **(3) quelle densité ?** (µ = µ/ρ × ρ). La réponse désigne l'interaction dominante, donc la stratégie. C'est la même grille qui explique pourquoi le Compton règne sur le patient et le photoélectrique sur le détecteur et le blindage."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — « plomb = bon blindage » est énergie-dépendant",
+              "text": "Le plomb est remarquable à 140 keV (photoélectrique dominant, HVL **0,243 mm**) mais médiocre relativement à 511 keV (HVL **4,75 mm**, ×20) car le Compton y prend le dessus [16]. De même, les **lunettes plombées** protègent efficacement à 140 keV mais peu à 511 keV [42]. Ne jamais transposer une épaisseur de blindage d'un radionucléide à l'autre sans repasser par la matrice énergie × Z."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Annihilation positron-électron produisant deux photons de 511 keV émis à ~180°, détectés en coïncidence le long de la ligne de réponse — illustration du débouché clinique de la production de paires."
+          }
+        },
+        {
+          "title": "E2 - Auto-évaluation : quiz et cas de raisonnement",
+          "text": "Les questions ci-dessous évaluent la **maîtrise de la matrice énergie × Z × densité** et son application au lit du patient. Chaque réponse renvoie à la valeur sourcée correspondante.\n\n**▸ QCM (réponse + justification chiffrée)**\n\n**Q1.** Quelle interaction est *prépondérante* lors de la traversée des tissus mous par les 140 keV du ⁹⁹ᵐTc *et* les 511 keV de la TEP ?\n*R : la diffusion Compton.* Elle domine dans les tissus de **≈ 30 keV à ≈ 30 MeV** [3] ; à 511 keV l'atténuation tissulaire est essentiellement comptonienne [3].\n\n**Q2.** Un photon de 50 keV interagit combien de fois plus par effet photoélectrique avec le plomb (Z=82) qu'avec l'oxygène (Z=8) ?\n*R : ≈ 11 000 fois* (82⁴/8⁴), car la section efficace photoélectrique par atome est **∝ Z⁴** [1,5].\n\n**Q3.** Quel est le seuil énergétique de la production de paires, et d'où vient-il ?\n*R : 1,022 MeV*, soit **2 × 0,511 MeV** (masse au repos de l'électron + du positron) [5,10] — d'où son inapplicabilité aux énergies diagnostiques (140–511 keV).\n\n**Q4.** Pourquoi un blindage TEP exige-t-il beaucoup plus de plomb qu'un blindage TEMP au ⁹⁹ᵐTc ?\n*R :* l'HVL du plomb passe de **0,243 mm à 140 keV** à **4,75 mm à 511 keV** (≈ ×20) [16] : à haute énergie le photoélectrique (∝1/E³) s'effondre et le Compton domine **dans le plomb même** → on recourt souvent au **tungstène** [16].\n\n**Q5.** Quelle largeur de fenêtre photopic est typique pour le ⁹⁹ᵐTc, et que couvre-t-elle ?\n*R : fenêtre symétrique de 15–20 %* centrée sur 140 keV ; une fenêtre de 20 % couvre **126–154 keV** [12].\n\n**Q6.** Classez F-18, Ga-68 et Rb-82 par résolution TEP attendue, et expliquez.\n*R : F-18 > Ga-68 > Rb-82*, par parcours croissant du positron : **0,6 mm < 2,9 mm < 5,9 mm** dans l'eau [8] — plus l'énergie β⁺ max est élevée, plus le flou est grand.\n\n**Q7.** Quelle est l'énergie minimale d'un photon de 140 keV rétrodiffusé à 180° ?\n*R : ≈ 90 keV* (front Compton / rétrodiffusion) [5] — pertinent pour le réglage des fenêtres de correction du diffusé en imagerie du ⁹⁹ᵐTc.\n\n**Q8.** Le diffusé Compton dégrade-t-il le contraste, et comment le corrige-t-on en TEMP ?\n*R : oui*, les photons diffusés portent une information de position erronée. Correction par **triple fenêtre d'énergie (TEW)** : une fenêtre principale + deux fenêtres latérales estimant le diffusé sous le photopic ; le contraste d'un point froid passe ainsi de **70 % à > 96 %** [12].\n\n**▸ Cas de raisonnement**\n\n| Cas | Situation | Raisonnement attendu (matrice) | Conduite |\n|---|---|---|---|\n| **A** | TEMP/TDM myocardique : faux défaut inféro-postérieur sur les images **sans** correction d'atténuation | Atténuation **Compton** des tissus mous (diaphragme, sein) : les photons issus de la paroi inférieure sont « perdus » → sous-estimation [14,38] | Comparer **avec et sans CTAC** ; un défaut qui disparaît sous CTAC est un artefact d'atténuation, non une ischémie [14] |\n| **B** | TEP/TDM : bande de fausse hypofixation au diaphragme | **Mismatch respiratoire** : la carte d'atténuation TDM (apnée) est mal recalée sur la TEP (cycle moyenné) → artefact « banane » [36] | Vérifier le recalage émission/transmission ; relire avec/sans AC |\n| **C** | TEP Ga-68-PSMA : foyer suspect près de la vessie très active | Sur-correction d'atténuation et **artefact en halo** autour des zones très fixantes [37] | Corréler à la TDM ; se méfier d'une fausse lésion juxta-vésicale |\n| **D** | Choix du radionucléide pour une étude cérébrale de haute résolution | Le **parcours du positron** limite la résolution intrinsèque : F-18 (0,6 mm) ≪ Rb-82 (5,9 mm) [8] | Préférer le **¹⁸F** quand la résolution prime |",
+          "steps": [
+            {
+              "title": "Étape 1 — Identifier l'énergie en jeu",
+              "text": "140 keV (⁹⁹ᵐTc) ? 364 keV (¹³¹I) ? 511 keV (¹⁸F, annihilation) ? L'énergie conditionne le poids relatif photoélectrique/Compton/paires [3,16]."
+            },
+            {
+              "title": "Étape 2 — Caractériser le milieu (Z, ρ)",
+              "text": "Tissu mou (Z≈7,4 → Compton) ? Os/iode (Z élevé → photoélectrique renforcé) ? Plomb/NaI/tungstène (Z très élevé) ? µ = µ/ρ × ρ [1,5]."
+            },
+            {
+              "title": "Étape 3 — Désigner l'interaction dominante",
+              "text": "Croiser énergie × Z : Compton dans le patient (atténuation, diffusé), photoélectrique dans le détecteur et le blindage [3,5]."
+            },
+            {
+              "title": "Étape 4 — En déduire la conséquence clinique",
+              "text": "Atténuation à corriger (CTAC), diffusé à soustraire (TEW/single-scatter), blindage à dimensionner (HVL), ou artefact à reconnaître (banane, halo, faux défaut) [12,14,16,37]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège de QCM — confondre les dépendances en Z",
+              "text": "Erreur classique : attribuer une dépendance en Z au Compton aussi forte qu'au photoélectrique. La section efficace **photoélectrique** est **∝ Z⁴** (par atome) tandis que la **Compton** n'est que **∝ Z** (densité électronique) [1,5]. C'est précisément cette différence qui rend le Compton « quasi indépendant de Z » et le photoélectrique si sensible au matériau (blindage, contraste iodé)."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — relier diffusé et résolution en énergie",
+              "text": "La capacité à séparer photons primaires et diffusés dépend de la **résolution en énergie** du détecteur. Le NaI(Tl) plafonne à **~9–10 % FWHM à 140 keV** [13], d'où la nécessité de méthodes actives (TEW) plutôt que d'un simple fenêtrage étroit. Un bon raisonnement intègre toujours cette limite instrumentale au moment d'interpréter un fond diffusé résiduel."
+            }
+          ]
+        },
+        {
+          "title": "E3 - Références, sources vérifiées et liens NucleAtlas",
+          "text": "**▸ Note méthodologique.** Chaque valeur chiffrée de cet article est rattachée à une source réelle de la liste ci-dessous (numérotation [1]–[42]). Les coefficients d'atténuation massiques de l'eau et du plomb proviennent des **tables NIST** [1,2] (niveau étalon, consultées directement). Les valeurs de blindage (HVL/TVL plomb pour ⁹⁹ᵐTc, ¹⁸F, ¹³¹I, ¹⁷⁷Lu) sont issues de **Tran et al., JACMP** [16]. Les données de décroissance du ⁹⁹ᵐTc (T½ = 6,0067 h ; γ 140,51 keV à 89 %) sont vérifiées sur **LNHB/Eckert & Ziegler** [18] et **Radiacode** [19]. Les coefficients de dose patient relèvent de la **CIPR/ICRP 128** [39]. Certaines valeurs cliniques (correction du diffusé, gains de contraste, fractions de diffusé) proviennent de travaux Monte-Carlo et de revues [12,13,27] et gagneraient à être recontrôlées sur texte intégral avant usage réglementaire.\n\n**▸ Sources primaires & tables physiques**\n\n| [n] | Référence (abrégée) | Usage dans l'article |\n|---|---|---|\n| [1] | NIST — µ/ρ de l'eau liquide | Coefficients massiques eau ; Z⁴ photoélectrique |\n| [2] | NIST — µ/ρ du plomb (Z=82) | Blindage, dépendances Z/E |\n| [3] | Gamma ray cross section (Wikipedia) | Domaines de prédominance, Compton 30 keV–30 MeV |\n| [4] | OncologyMedicalPhysics — interactions | Vue d'ensemble des trois processus |\n| [5] | Univ. Toledo, Ch.7 — interactions γ/X | Z⁴, 1/E³, K-edges, seuil paires |\n| [6] | Karpius & Reilly (Springer 2024) | Interactions γ avec la matière |\n| [7] | Wolfram — Klein–Nishina | Section efficace différentielle Compton |\n| [8] | Univ. Trieste — Compton scattering | Décalage de longueur d'onde, rétrodiffusion |\n| [9] | Mirion — absorption γ | Loi exponentielle, CDA |\n| [10] | ScienceDirect — Pair Production | Seuil 1,022 MeV, annihilation |\n| [11] | Stanford PH241 (Mazumder) — Tc-99m | µ ≈ 0,15 cm⁻¹, CDA 140 keV |\n| [12] | NCBI Bookshelf — SPECT | Fenêtre 15–20 %, TEW |\n| [13] | PMC3958999 — scatter correction SIMIND | Résolution NaI, TEW |\n\n**▸ Sources cliniques, instrumentation & dosimétrie**\n\n| [n] | Référence (abrégée) | Usage dans l'article |\n|---|---|---|\n| [14] | SNMMI/ASNC/SCCT 2013 (JNM 54:1485) | CTAC cardiaque, lecture avec/sans AC |\n| [15] | 2022 ASNC/AAPM/SCCT/SNMMI guideline | CT en imagerie hybride cardiaque |\n| [16] | Oumano/Tran et al., JACMP 2025 (PMC12059296) | HVL/TVL plomb (⁹⁹ᵐTc, ¹⁸F, ¹³¹I, ¹⁷⁷Lu) |\n| [17] | AAPM Summer School 2007 (Anderson) | Blindage et radioprotection TEP |\n| [18] | Eckert & Ziegler / LNHB — Tc-99m | γ 140,51 keV (89 %), IT |\n| [19] | Radiacode — Tc-99m | T½ 6,0067 h |\n| [20] | ScienceDirect 2015 — effets ciblés/non ciblés | Lésions ADN indirectes (~⅔, •OH) |\n| [21] | MDPI 2024 — effets/protection moléculaires | Radiolyse, mécanismes |\n| [22] | Lassmann et al., EJNMMI 2007 (PubMed 17406866) | Carte de dose pédiatrique EANM |\n| [23] | EANM Dosage Card v5.7.2016 (PDF) | Activité = base × facteur poids, activité minimale |\n| [24] | EANM — Dosage Card (page officielle) | Clusters A/B/C |\n| [25] | Radiology Key — radiation haute énergie | Interactions, vue d'ensemble |\n| [26] | PMC4479913 — coefficients Compton/photoélectrique | Évaluation des coefficients |\n| [27] | PMC10562009 — corrections IA AC/scatter | Biais SUV, correction PET/SPECT |\n| [28] | Radiology Cafe (FRCR) — interaction matière | Pédagogie interactions |\n| [29] | Portland State (Egerton) — paires/annihilation | Annihilation, 2×511 keV |\n| [30] | Shibuya et al. — non-colinéarité FDG-PET | Acolinéarité ≈ 0,54° |\n| [31] | PMC6805144 — positron range (PHITS) | Parcours F-18/Ga-68/Rb-82 |\n| [32] | Carney et al. (PubMed 16696474) | Conversion bilinéaire UH → µ(511 keV) |\n| [33] | LYSO/LSO scintillators | Propriétés des scintillateurs TEP |\n| [34] | DEW/TEW ⁹⁹ᵐTc & ¹²³I | Correction du diffusé par fenêtres |\n| [35] | PMC4754240 — TOF-PET | Résolution temporelle, coïncidence |\n| [36] | PMC3097808 — artefacts PET/CT | Artefact banane (mismatch) |\n| [37] | PMC12155494 — AC en ⁶⁸Ga-PSMA | Artefact en halo |\n| [38] | Brown et al., JNM 2007;48:1090 | Mésalignement émission/transmission |\n| [39] | ICRP 128 (Mattsson, Ann ICRP 2015) | Coefficients de dose patient |\n| [40] | PMC8459160 — dose ¹⁸F-FDG corps entier | Doses organes/efficace FDG |\n| [41] | PMC4315529 — EANM FDG v2.0 | Activité, délai, glycémie |\n| [42] | arXiv 2508.19370 — doses cornée/cristallin | Lunettes plombées 140 vs 511 keV |\n\n**▸ Liens NucleAtlas (carte de l'article)**\n\nCet article *Bases physiques* irrigue l'ensemble de l'encyclopédie. Liens sortants typés :\n- **Examens** : TEMP/TDM (correction d'atténuation, fenêtrage), **TEP/TDM** (annihilation, coïncidence, conversion UH→µ), scintigraphie planaire (γ-caméra, collimation).\n- **Traceurs** : **⁹⁹ᵐTc** (140 keV, fil rouge atténuation/détection), **¹⁸F** (511 keV, annihilation), Ga-68 et Rb-82 (parcours du positron), ¹³¹I et ¹⁷⁷Lu (blindage).\n- **Notions liées** : atténuation & CTAC, diffusé & correction (TEW), résolution spatiale/énergétique, dosimétrie patient (CIPR 128), radioprotection (HVL/TVL, ALARA).\n\n*Article physique transversal — bases physiques. Dernière mise à jour : juin 2026 (version de travail, profil médecin nucléaire). Aucune référence, DOI ou URL n'a été inventée : seules les sources [1]–[42] réellement fournies sont citées.*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Fiabilité des valeurs citées",
+              "text": "Niveau **étalon** (consultation directe de tables de référence) : µ/ρ eau et plomb (NIST [1,2]), données de décroissance ⁹⁹ᵐTc (LNHB [18]), HVL/TVL plomb (JACMP [16]), coefficients de dose (ICRP 128 [39]). Niveau **revue/Monte-Carlo** (à recontrôler sur texte intégral avant usage réglementaire) : gains de contraste après correction du diffusé, fractions de diffusé, biais SUV [12,13,27]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — où approfondir",
+              "text": "Pour la physique des sections efficaces différentielles, la formule de **Klein–Nishina** (1929, électrodynamique quantique) [7] est la référence ; pour le blindage opérationnel, les tables **JACMP/AAPM** [16,17] ; pour la dose patient, **ICRP 128** [39] et les guidelines **EANM** [22–24,41]. La conversion CT→µ(511 keV) en TEP/TDM repose sur la transformation **bilinéaire** des unités Hounsfield de Carney et al. [32]."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

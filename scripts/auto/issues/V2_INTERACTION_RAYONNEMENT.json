@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Recherche 1 §A4 / §B1 / E2 — « K-edge de l'iode ≈ 32 keV » (répété dans plusieurs sections et stats)",
+    "problem": "La valeur du K-edge (énergie de liaison de la couche K) de l'iode (Z=53) est de 33,2 keV, pas 32 keV. La valeur correcte est confirmée par NIST/littérature radiophysique (l'iode est ~6× plus absorbant à 33,2 keV qu'à 33,1 keV). 32 keV est une approximation un peu basse.",
+    "fix": "Remplacer « 32 keV » par « ≈ 33 keV (33,2 keV exactement) » pour le K-edge de l'iode. Le K-edge du plomb (88 keV) est correct."
+  },
+  {
+    "severity": "minor",
+    "where": "Recherche 1 §1 — « (b) Effet photoélectrique … » non, en fait : « Création de paires … significative au-dessus de ~2,5 MeV [Mirion ; ScienceDirect Pair Production] »",
+    "problem": "L'affirmation « significative au-dessus de ~2,5 MeV » est une généralisation. Dans l'EAU/les tissus mous (Z effectif ~7,4), la création de paires ne devient appréciable que vers ~10 MeV et ne domine le Compton que vers ~20–30 MeV ; le seuil de ~2,5 MeV correspond plutôt aux milieux à Z élevé. Pour un article centré sur l'imagerie (140–511 keV) ce n'est pas cliniquement trompeur — l'article répète à juste titre que la création de paires est « non pertinente / marginale aux énergies diagnostiques » — mais la borne de 2,5 MeV est imprécise pour le tissu.",
+    "fix": "Préciser la dépendance au milieu : « devient appréciable nettement au-dessus du seuil, vers ~5–6 MeV dans les milieux à Z élevé (plomb) et seulement ~10–30 MeV dans l'eau/tissu mou ». Conserver le message clé inchangé (marginale en diagnostic)."
+  },
+  {
+    "severity": "minor",
+    "where": "Recherche 1 §1 vs §5 / tableau — cohérence interne CDA/CDixA du plomb à 140 keV",
+    "problem": "Le §1 prose indique « CDA dans le plomb < 1 mm ; couche de dixième-atténuation (CDixA) ≈ 1 mm », alors que les tableaux donnent HVL 0,243 mm et TVL 0,87 mm (Tran/Oumano). « CDixA ≈ 1 mm » est une grosse approximation arrondissante (la vraie TVL ≈ 0,87 mm) et la formulation « CDA < 1 mm » est très large pour une HVL réelle de ~0,24 mm. Pas d'erreur factuelle franche, mais incohérence de précision entre sections.",
+    "fix": "Harmoniser : HVL(140 keV, Pb) ≈ 0,24–0,28 mm, TVL ≈ 0,8–0,9 mm. Remplacer « CDixA ≈ 1 mm » par « ≈ 0,87 mm » et « CDA < 1 mm » par « ≈ 0,25 mm »."
+  },
+  {
+    "severity": "minor",
+    "where": "Recherche 2 §9 / quiz — unité de l'activité EANM FDG (« ≈ 14 MBq·min·lit⁻¹·kg⁻¹ »)",
+    "problem": "La notation « lit⁻¹ » (lit = pas de lit / bed position) est correcte sur le fond (le coefficient EANM v2.0 est bien 14 MBq·min·bed⁻¹·kg⁻¹, activité = 14 × poids / temps par pas de lit), mais l'abréviation « lit » est ambiguë/non standard et pourrait être lue comme « litre ». Le coefficient 7 pour chevauchement >30 % et 14 pour ≤30 % est exact.",
+    "fix": "Écrire explicitement « MBq·min·(pas de lit)⁻¹·kg⁻¹ » ou « bed⁻¹ », et rappeler la formule activité = coefficient × poids (kg) / durée d'acquisition par pas de lit (min)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E3 (note méthodologique + tableau des sources) ; stats D3/E1 ; cohérence avec source [16]",
+    "problem": "La source [16] est correctement intitulée « Oumano et al. » dans la liste de sources et la carte A1, mais elle est attribuée à « Tran et al., JACMP » dans la note méthodologique de E3 (« sont issues de Tran et al., JACMP [16] ») et dans le tableau des sources (« Oumano/Tran et al., JACMP 2025 »). Le premier auteur réel de l'article JACMP 2025 (PMC12059296) est bien Michael Oumano (vérifié par WebSearch : Wiley acm2.70084). Il s'agit d'une incohérence d'attribution interne, PAS d'une URL/source inventée (l'URL et le titre [16] sont exacts).",
+    "fix": "Uniformiser l'attribution de [16] sur « Oumano et al. » partout (remplacer « Tran et al. » et « Oumano/Tran et al. » par « Oumano et al. ») pour la cohérence."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections D2 et E3 — attribution des données de décroissance du Tc-99m à la source [18]",
+    "problem": "Le texte attribue les données de décroissance du ⁹⁹ᵐTc à « LNHB/Eckert & Ziegler [18] » (E3) et « LNHB/Eckert & Ziegler [18] » (note de fiabilité), or la source [18] de la liste est uniquement « Eckert & Ziegler » (ezag.com). La mention « LNHB » est ajoutée alors qu'elle ne correspond pas au fournisseur déclaré de [18]. Aucune URL inventée, mais légère sur-attribution d'autorité.",
+    "fix": "Soit retirer « LNHB » de l'attribution de [18], soit ajouter explicitement LNHB comme provenance documentée des données E&Z. Vérification recommandée que la fiche E&Z cite bien le LNHB en amont."
+  }
+]
