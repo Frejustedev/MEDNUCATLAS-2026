@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section D19 (Examens apparentés & variantes) — description du score de Sostre : « fraction de vidange cholédocienne anormale si > 50 % à 60 min un critère ».",
+    "problem": "Direction du critère physiologiquement inversée/ambiguë. Dans la dysfonction du sphincter d'Oddi (SOD), le sphincter est hypertonique/obstructif → la vidange du cholédoque est RÉDUITE. C'est donc une FAIBLE fraction de vidange cholédocienne (CBDEF basse) qui est anormale ; une vidange > 50 % traduit au contraire un bon drainage (normal). Formulé tel quel (« anormale si > 50 % »), le critère suggère le contraire de la physiopathologie. NB : la même formulation figure dans la fiche étalon de référence (Recherche 2, §7), donc le contenu a fidèlement recopié la source — mais la source elle-même est trompeuse sur ce point. Le score de Sostre original (JNM 1992;33:1216) cote une vidange cholédocienne RÉDUITE comme contributive à la SOD.",
+    "fix": "Reformuler en : « réduction de la vidange cholédocienne (fraction de vidange basse) à 60 min = critère en faveur d'une SOD », ou supprimer le seuil « > 50 % » mal interprétable. Préciser que c'est la cinétique d'évacuation lente/insuffisante du cholédoque qui est pathologique. Idéalement corriger aussi la fiche étalon source."
+  },
+  {
+    "severity": "minor",
+    "where": "Section B7, tableau comparatif mébrofénine/disofénine : ligne « Pic d'activité hépatique ≈ 11 min » attribuée identiquement à la disofénine, et « Clairance plasmatique plus lente » pour la disofénine.",
+    "problem": "Les valeurs cinétiques fines de la disofénine (pic hépatique exact, clairance) sont présentées avec une précision (« ≈ 11 min ») qui n'est pas explicitement sourcée pour la disofénine — elles sont extrapolées de la mébrofénine. Risque faible de fausse précision, mais l'ordre de grandeur et le sens (disofénine moins bien extraite, clairance biliaire plus lente, excrétion urinaire plus élevée ~9 % vs <1 %) sont corrects et conformes à la littérature.",
+    "fix": "Indiquer la cinétique disofénine en termes qualitatifs (« pic hépatique comparable, clairance et excrétion biliaire un peu plus lentes, excrétion urinaire plus élevée ~9 % ») plutôt qu'avec un chiffre précis non sourcé, ou ajouter la source. Non bloquant."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [21] — ICRP Publication 128 (URL academia.edu/68053086)",
+    "problem": "La source ICRP 128 est citée via un lien academia.edu (hébergeur tiers de mise en ligne par utilisateurs), pas via le site officiel ICRP/SAGE. La publication ICRP 128 (Ann. ICRP 2015) est authentique et le contenu dosimétrique cité (organe critique = paroi vésiculaire, ~0,017 mSv/MBq, ~3,8 mSv pour 222 MBq) est cohérent avec les modèles ICRP, mais le lien lui-même n'a pas pu être vérifié et repose sur un dépôt non officiel.",
+    "fix": "Remplacer l'URL par la référence ICRP officielle (https://www.icrp.org/publication.asp?id=ICRP%20Publication%20128) ou le DOI SAGE, pour éviter un lien potentiellement instable/non pérenne."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [5],[6],[7],[24] (jnm.snmjournals.org, tech.snmjournals.org, drugs.com, pubs.rsna.org) — accès direct",
+    "problem": "Quatre URL ont renvoyé HTTP 403 (protection anti-bot des éditeurs), donc non vérifiables par fetch direct. Il ne s'agit PAS de liens inventés : l'existence et le contenu de chacun ont été confirmés par recherche web croisée (RadioGraphics 2023 e220104 DOI 10.1148/rg.220104 confirmé ; SNM Guideline 4.0 et Ziessman JNM 2010 51(2):277 confirmés par citations PubMed). Aucune action de fond requise.",
+    "fix": "Aucune correction de fond. Optionnel : doubler ces liens éditeurs d'un identifiant pérenne (PMID/DOI) déjà partiellement présent dans les titres."
+  },
+  {
+    "severity": "minor",
+    "where": "D19 - Examens apparentés (score de Sostre, vidange cholédocienne)",
+    "problem": "Le critère 'fraction de vidange cholédocienne anormale si > 50 % à 60 min un critère' est formulé de façon ambiguë/elliptique (phrase grammaticalement incomplète) et le seuil exact attribué au score de Sostre [11] n'a pas pu être vérifié indépendamment (source UT Southwestern en PDF). Le score de Sostre existe bien (6 critères, 0-12) mais le détail du seuil de vidange cholédocienne mériterait vérification.",
+    "fix": "Reformuler la phrase et vérifier/sourcer précisément le seuil de vidange cholédocienne dans la référence du score de Sostre, ou retirer la valeur chiffrée si non confirmée par [11]."
+  }
+]
