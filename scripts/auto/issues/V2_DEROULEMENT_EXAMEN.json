@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "medecin_nuc › section A1 (Carte d'identité), ligne du tableau « Radionucléide TEP de référence »",
+    "problem": "Le tableau écrit « ¹⁸F (²⁹F-FDG) ». Le « ²⁹F » est une coquille de nombre de masse : le fluor-29 n'existe pas comme traceur TEP. Le FDG est marqué au ¹⁸F (fluor-18, T½ ≈ 109,8 min). L'erreur figure dans une carte d'identité censée fixer les valeurs de référence, ce qui peut induire en erreur un lecteur non spécialiste.",
+    "fix": "Remplacer « ²⁹F-FDG » par « ¹⁸F-FDG »."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc › section C1 (b), tableau des compléments — ligne « Scintigraphie osseuse / Clichés tardifs (6–24 h) »",
+    "problem": "Affirmation « Clichés tardifs (6–24 h) » pour la scintigraphie osseuse. Les clichés tardifs osseux sont typiquement réalisés à 3–5 h, et des images très tardives à ~24 h sont utilisées surtout pour l'ostéomyélite / la rétention lente, mais une fenêtre annoncée « 6–24 h » comme complément standard est imprécise et déborde la pratique courante (l'EANM cale l'imagerie tardive osseuse à 2–5 h). Non chiffré dans la fiche de référence ; à nuancer.",
+    "fix": "Préciser « clichés très tardifs (généralement ~24 h) en cas de suspicion d'infection/rétention lente », ou aligner sur 2–5 h pour l'imagerie tardive standard."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc › section C2, infoBox/texte sur 99mTc-sestamibi et dosimétrie myocardique — cohérence des valeurs entre D1 et littérature",
+    "problem": "Les coefficients de dose myocardiques (sestamibi repos 0,0070 mSv/MBq ; tétrofosmine 0,0058 effort / 0,0063 repos) sont corrects et conformes à l'EANM 2015/ICRP 128. Aucune erreur factuelle — point de vigilance signalé seulement parce que ces valeurs sont parfois confondues avec les anciens coefficients (~20 % plus élevés) ; ici elles sont justes.",
+    "fix": "Aucune correction nécessaire ; conserver les valeurs EANM 2015 actuelles."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A1 — carte d'identité, ligne « Radionucléide TEP de référence »",
+    "problem": "Coquille sur l'isotope : le tableau écrit « **¹⁸F** (²⁹F-FDG) ». Le marqueur « ²⁹F » n'existe pas (le fluor-18 n'a pas d'isotope 29). Il s'agit manifestement d'une faute de frappe pour ¹⁸F-FDG. Ce n'est pas une fabrication de source mais une erreur factuelle/typographique sur un libellé d'isotope.",
+    "fix": "Remplacer « ²⁹F-FDG » par « ¹⁸F-FDG »."
+  },
+  {
+    "severity": "minor",
+    "where": "Verification couverture A→E (contrôle structurel demandé)",
+    "problem": "Vérification effectuée, aucun défaut : sections A1-A4, B1-B4, C1-C3, D1-D3, E1-E3 toutes présentes ; carte d'identité présente à la fois en A1 et via le tableau dédié identityCard (15 entrées). Citation max = [34], égale au nombre de sources (34) — aucune citation hors borne ([n]>34) trouvée. Densité homogène et conforme (chaque section : texte fourni + tableaux + stats + infoBoxes ; quiz de 18 questions). Signalé comme constat de conformité, non comme problème.",
+    "fix": "Aucune action requise — contrôle conforme."
+  }
+]
