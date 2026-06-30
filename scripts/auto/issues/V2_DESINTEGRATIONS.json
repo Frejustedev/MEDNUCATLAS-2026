@@ -1,0 +1,20 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections B1, E2 (Cas 3), quiz Q13 — dose du ²²³Ra (Xofigo) attribuée à ALSYMPCA",
+    "problem": "L'article indique « 55 kBq/kg en intraveineux toutes les 4 semaines pendant 6 cycles » en l'attribuant directement à l'essai pivot ALSYMPCA. Or l'essai ALSYMPCA original (Parker et al., NEJM 2013) a utilisé un schéma de 50 kBq/kg. La valeur de 55 kBq/kg correspond à la RECALIBRATION du standard NIST 2015 (mise à jour de l'étiquette Xofigo en 12/2019 : 50→55 kBq/kg et 1000→1100 kBq/mL), qui décrit la MÊME dose physique avec une numérotation actualisée. Attribuer « 55 kBq/kg » à ALSYMPCA est donc une imprécision historique.",
+    "fix": "Conserver 55 kBq/kg comme dose standard ACTUELLE (étiquette post-2019), mais préciser que l'essai ALSYMPCA était libellé 50 kBq/kg (même dose physique, recalibration NIST 2015). Ex. : « 55 kBq/kg (anciennement libellé 50 kBq/kg dans ALSYMPCA, avant recalibration NIST 2015) ». Vérifié vs label Xofigo FDA/drugs.com et Parker NEJM 2013 / PMC4467240."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 6 de la fiche étalon / sections pédiatriques — activité de base F-18 EANM « ~25,6 MBq »",
+    "problem": "La valeur d'activité de base F-18 de la carte EANM 2016 (~25,6 MBq, classe B) est donnée comme référence ; les mises à jour 2021 (technologie TEP moderne, PMC9016049) l'ont abaissée à ~10,7 MBq (minimum recommandé 10 MBq). L'article cite bien les mises à jour ultérieures mais la valeur mise en avant reste l'ancienne.",
+    "fix": "Acceptable car les révisions 2021/2023 sont explicitement mentionnées, mais préciser que la valeur de base ~10,7 MBq (carte révisée 2021) remplace désormais ~25,6 MBq pour les TEP modernes, afin d'éviter de surdoser un enfant si l'on s'appuie sur l'ancienne carte. Vérifié vs PubMed 18574583 et PMC9016049."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections[].title (A1, A3, C1, C2, C3, E1, E2, E3)",
+    "problem": "Cosmetic title duplication: several section titles repeat their prefix, e.g. \"A1 - A1 - Carte d'identite...\", \"C1 - C1 - La loi de decroissance...\", \"E1 - E1 - Synthese...\". This is a display artifact, not a fabrication or sourcing problem.",
+    "fix": "Remove the duplicated prefix so each title reads once, e.g. \"A1 - Carte d'identite de la desintegration radioactive\"."
+  }
+]

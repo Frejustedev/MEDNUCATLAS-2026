@@ -1,0 +1,1369 @@
+{
+  "id": "V2_DESINTEGRATIONS",
+  "cat": "bases_physiques",
+  "catLabel": "Bases Physiques",
+  "title": "Les désintégrations radioactives (α, β, γ) et la décroissance",
+  "difficulty": "avancé",
+  "tags": [
+    "désintégration radioactive",
+    "alpha",
+    "bêta",
+    "gamma",
+    "demi-vie",
+    "décroissance exponentielle",
+    "becquerel",
+    "période effective",
+    "constante de désintégration",
+    "annihilation positon",
+    "théranostique",
+    "radionucléide"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Technetium-99m in Nuclear Medicine Imaging — Stanford University (PH241, Mazumder)",
+      "url": "http://large.stanford.edu/courses/2026/ph241/mazumder2/"
+    },
+    {
+      "title": "[2] Technetium-99m — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m"
+    },
+    {
+      "title": "[3] Technetium-99m (99mTc) Fact Sheet 320-083 — Washington State Dept of Health",
+      "url": "https://doh.wa.gov/sites/default/files/legacy/Documents/Pubs//320-083_tc99_fs.pdf"
+    },
+    {
+      "title": "[4] Alpha-Emitting Radionuclides: Current Status and Future Perspectives — PMC10821197",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10821197/"
+    },
+    {
+      "title": "[5] Alpha and Beta Emitters in Translational Nuclear Medicine: Clinical Advances, Challenges, and Future Direction — PMC12985603",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12985603/"
+    },
+    {
+      "title": "[6] Physics, Radiation and Cameras — British Nuclear Cardiology Society",
+      "url": "https://www.bncs.org.uk/physics-radiation-and-cameras"
+    },
+    {
+      "title": "[7] 17.3 Types of Radioactivity: Alpha, Beta, and Gamma Decay — Chemistry LibreTexts",
+      "url": "https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(LibreTexts)/17:_Radioactivity_and_Nuclear_Chemistry/17.03:_Types_of_Radioactivity-_Alpha_Beta_and_Gamma_Decay"
+    },
+    {
+      "title": "[8] 31.5 Half-Life and Activity — Physics LibreTexts (OpenStax College Physics)",
+      "url": "https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_(OpenStax)/31:_Radioactivity_and_Nuclear_Physics/31.05:_Half-Life_and_Activity"
+    },
+    {
+      "title": "[9] Activity, Decay Constant and Half-Life (A = λN, N = N0 e^-λt) — Mini Physics",
+      "url": "https://www.miniphysics.com/activity-half-life-and-decay-constant.html"
+    },
+    {
+      "title": "[10] Fluorine-18 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fluorine-18"
+    },
+    {
+      "title": "[11] Fludeoxyglucose F 18 Injection — FDA label NDA 21-870",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2005/021870lbl.pdf"
+    },
+    {
+      "title": "[12] Gallium-68 generator — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gallium-68_generator"
+    },
+    {
+      "title": "[13] Gallium Dotatate Ga 68 — overview, ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/gallium-dotatate-ga-68"
+    },
+    {
+      "title": "[14] Iodine-131 — radiacode isotope database",
+      "url": "https://www.radiacode.com/isotope/i-131"
+    },
+    {
+      "title": "[15] Iodine-131 — CDC Radiation Emergencies",
+      "url": "https://www.cdc.gov/radiation-emergencies/hcp/isotopes/iodine-131.html"
+    },
+    {
+      "title": "[16] Lutetium-177 PSMA — intheranostics (Prof)",
+      "url": "https://www.intheranostics.com/prof/en/lutetium-177-psma/"
+    },
+    {
+      "title": "[17] External radiation exposure, excretion, and effective half-life in 177Lu-PSMA-targeted therapies — PMC5897276",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5897276/"
+    },
+    {
+      "title": "[18] Radium-223 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radium-223"
+    },
+    {
+      "title": "[19] Radium Ra 223 Dichloride (Xofigo) — Aetna Clinical Policy Bulletin 0874",
+      "url": "https://www.aetna.com/cpb/medical/data/800_899/0874.html"
+    },
+    {
+      "title": "[20] Yttrium-90 Radioembolization — Endovascular Today (June 2008)",
+      "url": "https://evtoday.com/articles/2008-june/EVT0608_08-php"
+    },
+    {
+      "title": "[21] AAPM Medical Physics Practice Guideline 14.a: Yttrium-90 microsphere radioembolization (2024)",
+      "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/acm2.14157"
+    },
+    {
+      "title": "[22] Molybdenum-99/Technetium-99m Production and Use — NCBI Bookshelf NBK215133",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215133/"
+    },
+    {
+      "title": "[23] Mo-99 (fission) Fact Sheet, Half-Life 66 hours — Nordion",
+      "url": "http://www.nordion.com/wp-content/uploads/2016/02/Mo-99_252F.pdf"
+    },
+    {
+      "title": "[24] Technetium-99m generator — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m_generator"
+    },
+    {
+      "title": "[25] EANM Paediatric Dosage Card (2016) — PDF officiel EANM",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[26] Dosage Card — EANM Initiatives",
+      "url": "https://www.eanm.org/initiatives/dosage-card/"
+    },
+    {
+      "title": "[27] The new EANM paediatric dosage card: additional notes with respect to F-18 — PubMed 18574583",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18574583/"
+    },
+    {
+      "title": "[28] The effect of modern PET technology and techniques on the EANM paediatric dosage card — PMC9016049",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9016049/"
+    },
+    {
+      "title": "[29] Analysis of image data from the EuroNet PHL-C2 trial: a proposal to update the EANM Paediatric Dosage Card (F-18 FDG) — PMC10774179",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10774179/"
+    },
+    {
+      "title": "[30] The EANM practice guidelines for bone scintigraphy (2016) — Eur J Nucl Med Mol Imaging",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3415-4"
+    },
+    {
+      "title": "[31] FDG PET/CT: EANM procedure guidelines for tumour imaging version 2.0 — PMC4315529",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[32] EANM/SNMMI Guideline for 18F-FDG Use in Inflammation and Infection — J Nucl Med 54(4):647",
+      "url": "https://jnm.snmjournals.org/content/54/4/647"
+    },
+    {
+      "title": "[33] Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy — MDPI Toxics 11(10):814",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814"
+    },
+    {
+      "title": "[34] Radiation dosimetry for technetium-99m-MAG3, -DTPA and iodine-131-OIH — J Nucl Med 33(1):33",
+      "url": "https://jnm.snmjournals.org/content/jnumed/33/1/33.full.pdf"
+    },
+    {
+      "title": "[35] Quality control on radiochemical purity in Technetium-99m radiopharmaceuticals labelling: 2280 procedures — PMC6166199",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166199/"
+    },
+    {
+      "title": "[36] A new two-strip TLC method for the quality control of 99mTc-MAG3 — PMC5852202",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5852202/"
+    },
+    {
+      "title": "[37] The EANM guideline on radioiodine therapy of benign thyroid disease (2023) — Eur J Nucl Med Mol Imaging",
+      "url": "https://link.springer.com/article/10.1007/s00259-023-06274-5"
+    },
+    {
+      "title": "[38] The SNMMI Practice Guideline for Therapy of Thyroid Disease with 131I 3.0 — J Nucl Med 53(10):1633",
+      "url": "https://jnm.snmjournals.org/content/53/10/1633"
+    },
+    {
+      "title": "[39] Sodium Iodide I 131 — Drugs and Lactation Database (LactMed) NCBI NBK501563",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK501563/"
+    },
+    {
+      "title": "[40] Radioactive Decay Law — BYJU'S Physics",
+      "url": "https://byjus.com/physics/radioactive-decay/"
+    },
+    {
+      "title": "[41] Ra-223 induces clustered DNA damage and inhibits cell survival in several prostate cancer cell lines — ScienceDirect S1936523322002029",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1936523322002029"
+    },
+    {
+      "title": "[42] Becquerel | physics | Britannica",
+      "url": "https://www.britannica.com/science/becquerel"
+    },
+    {
+      "title": "[43] Becquerel - Unit of Radioactivity | nuclear-power.com",
+      "url": "https://www.nuclear-power.com/nuclear-engineering/radiation-protection/units-of-radioactivity/becquerel-unit-of-radioactivity/"
+    },
+    {
+      "title": "[44] Becquerel (Bq) | U.S. NRC Glossary",
+      "url": "https://www.nrc.gov/reading-rm/basic-ref/glossary/becquerel-bq"
+    },
+    {
+      "title": "[45] Radioactive decay — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radioactive_decay"
+    },
+    {
+      "title": "[46] Half Life Radiation: Essential Facts About Decay Formulas — Liv Hospital",
+      "url": "https://int.livhospital.com/half-life-radiation-essential-facts/"
+    },
+    {
+      "title": "[47] Radioactive Decay | Alpha, Beta, and Gamma | ChemTalk",
+      "url": "https://chemistrytalk.org/radioactive-decay-alpha-beta-gamma/"
+    },
+    {
+      "title": "[48] Chapter 3 Radioactive Decay Laws / Half-life — University of Oslo",
+      "url": "https://www.mn.uio.no/fysikk/english/services/knowledge/radiation-and-health/chap03.pdf"
+    },
+    {
+      "title": "[49] Mo99-Tc99m Generator — StatPearls NCBI NBK565854",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/"
+    },
+    {
+      "title": "[50] [68Ga]Ga-PSMA-11: The First FDA-Approved 68Ga-Radiopharmaceutical for PET Imaging of Prostate Cancer — PMC8401928",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401928/"
+    },
+    {
+      "title": "[51] Gallium 68 — an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/gallium-68"
+    },
+    {
+      "title": "[52] 131I Effective Half-Life and Dosimetry in Thyroid Cancer Patients — J Nucl Med 49(9):1445",
+      "url": "https://jnm.snmjournals.org/content/49/9/1445"
+    },
+    {
+      "title": "[53] EANM dosimetry committee recommendations for dosimetry of 177Lu-labelled SSTR- and PSMA-targeting ligands — PMC9015994",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9015994/"
+    },
+    {
+      "title": "[54] Treatment of castration-resistant prostate cancer and bone metastases with radium-223 dichloride — PMC4467240 (ALSYMPCA)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4467240/"
+    },
+    {
+      "title": "[55] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — SAGE Journals",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[56] Radiation Dose to Patients in Diagnostic Nuclear Medicine — ICRP page 718",
+      "url": "https://www.icrp.org/page.asp?id=718"
+    },
+    {
+      "title": "[57] Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms — J Nucl Med 62(12):1805",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805"
+    },
+    {
+      "title": "[58] Comparative Dosimetry for 68Ga-DOTATATE: Impact of Using Updated ICRP Phantoms, S Values, and Tissue-Weighting Factors — J Nucl Med",
+      "url": "https://jnm.snmjournals.org/content/early/2018/02/08/jnumed.117.203893"
+    },
+    {
+      "title": "[59] Radiation dosimetry of [68Ga]PSMA-11 in low-risk prostate cancer patients — EJNMMI Physics 2018",
+      "url": "https://ejnmmiphys.springeropen.com/articles/10.1186/s40658-018-0239-2"
+    },
+    {
+      "title": "[60] Effective, physical and biological half-life — WikiLectures",
+      "url": "https://www.wikilectures.eu/w/Effective,_physical_and_biological_half-life"
+    },
+    {
+      "title": "[61] The Half-Lives: Physical, Biological, and Effective — nucmedtutorials",
+      "url": "https://nucmedtutorials.com/wp-content/uploads/2016/12/half-lives1.pdf"
+    },
+    {
+      "title": "[62] Recombinant TSH Performs as Well as Thyroid Hormone Withdrawal for Iodine-131 Therapy With Dosimetry for Thyroid Cancer — PMC11965782",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11965782/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "atom",
+        "label": "Phénomène",
+        "value": "Transformation spontanée d'un noyau instable"
+      },
+      {
+        "icon": "radiation",
+        "label": "Trois modes",
+        "value": "α (noyau ⁴He) · β (e⁻/e⁺) · γ (photon)"
+      },
+      {
+        "icon": "zap",
+        "label": "Énergie α",
+        "value": "5–9 MeV · LET ~80–100 keV/µm"
+      },
+      {
+        "icon": "zap",
+        "label": "Énergie β / portée",
+        "value": "LET ~0,2 keV/µm · parcours 2–12 mm"
+      },
+      {
+        "icon": "target",
+        "label": "Annihilation β⁺",
+        "value": "2 photons de 511 keV à 180° (TEP)"
+      },
+      {
+        "icon": "clock",
+        "label": "Loi de décroissance",
+        "value": "A(t) = A₀·e^(−λt) · λ = 0,693/T½"
+      },
+      {
+        "icon": "activity",
+        "label": "Unité SI d'activité",
+        "value": "1 becquerel (Bq) = 1 désintégration/s"
+      },
+      {
+        "icon": "flask",
+        "label": "Ancienne unité",
+        "value": "1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq"
+      },
+      {
+        "icon": "clock",
+        "label": "Période effective",
+        "value": "1/T_eff = 1/T_phys + 1/T_biol (≤ T_phys)"
+      },
+      {
+        "icon": "microscope",
+        "label": "Parcours α tissu",
+        "value": "< 100 µm (~quelques cellules)"
+      },
+      {
+        "icon": "list",
+        "label": "Diagnostic",
+        "value": "γ pur ou β⁺ (le rayonnement doit sortir)"
+      },
+      {
+        "icon": "syringe",
+        "label": "Thérapie",
+        "value": "β⁻ ou α (l'énergie reste dans la lésion)"
+      },
+      {
+        "icon": "shield",
+        "label": "Blindage selon émission",
+        "value": "α : papier/peau · β : plexiglas · γ : plomb"
+      },
+      {
+        "icon": "dna",
+        "label": "Cible biologique",
+        "value": "ADN nucléaire (cassures simple/double brin)"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-pertechnétate"
+      },
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FDG"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁸Ga-DOTATATE"
+      },
+      {
+        "type": "traceur",
+        "label": "¹³¹I (iodure de sodium)"
+      },
+      {
+        "type": "traceur",
+        "label": "²²³Ra-dichlorure (Xofigo)"
+      },
+      {
+        "type": "examen",
+        "label": "TEP (tomographie par émission de positons)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie / TEMP (SPECT)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse au ⁹⁹ᵐTc-MDP"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-PSMA-617"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE"
+      },
+      {
+        "type": "theranostique",
+        "label": "⁹⁰Y-radioembolisation (SIRT/TARE)"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer de la prostate métastatique (CPRC)"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer thyroïdien différencié"
+      },
+      {
+        "type": "score",
+        "label": "Niveaux de référence diagnostiques (NRD)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quelle particule est émise lors d'une désintégration alpha (α) ?",
+        "options": [
+          "Un électron",
+          "Un noyau d'hélium-4 (2 protons + 2 neutrons)",
+          "Un photon de haute énergie",
+          "Un positon"
+        ],
+        "answer": 1,
+        "explanation": "La désintégration α émet une particule α, c'est-à-dire un noyau d'hélium-4 (²He²⁺) ; le noyau père perd alors Z−2 et A−4 [7,47].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est l'unité SI de l'activité radioactive ?",
+        "options": [
+          "Le gray (Gy)",
+          "Le sievert (Sv)",
+          "Le becquerel (Bq)",
+          "Le curie (Ci)"
+        ],
+        "answer": 2,
+        "explanation": "L'unité SI est le becquerel : 1 Bq = 1 désintégration par seconde. Le curie est l'ancienne unité (1 Ci = 3,7 × 10¹⁰ Bq) [42,44].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "À combien de becquerels correspond 1 curie (Ci) ?",
+        "options": [
+          "3,7 × 10⁶ Bq",
+          "3,7 × 10¹⁰ Bq = 37 GBq",
+          "1 × 10⁹ Bq",
+          "6,02 × 10²³ Bq"
+        ],
+        "answer": 1,
+        "explanation": "Par définition, 1 Ci = 3,7 × 10¹⁰ Bq, soit 37 GBq (≈ activité de 1 g de ²²⁶Ra) [8,43].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle relation lie la constante de désintégration λ et la demi-vie T½ ?",
+        "options": [
+          "λ = T½ × ln2",
+          "λ = ln2 / T½ ≈ 0,693 / T½",
+          "λ = T½ / 2",
+          "λ = e^(−T½)"
+        ],
+        "answer": 1,
+        "explanation": "La période vérifie T½ = ln2/λ, donc λ = 0,693/T½. L'activité décroît selon A(t) = A₀·e^(−λt) [8,40,48].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Lors de l'annihilation d'un positon (β⁺) avec un électron, que produit-on ?",
+        "options": [
+          "Un seul photon de 1022 keV",
+          "Deux photons de 511 keV émis à 180°",
+          "Une particule alpha",
+          "Un neutron et un proton"
+        ],
+        "answer": 1,
+        "explanation": "Le positon s'annihile avec un électron en produisant 2 photons de 511 keV émis à 180° ; c'est le principe de détection en coïncidence de la TEP [10,11].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pourquoi les émetteurs α (ex. ²²³Ra) sont-ils intéressants en thérapie ciblée ?",
+        "options": [
+          "Leur parcours de plusieurs centimètres irradie un large volume",
+          "Leur LET très élevé et leur parcours < 100 µm concentrent les dégâts sur la lésion en épargnant l'alentour",
+          "Ils traversent le patient et permettent l'imagerie",
+          "Ils ne provoquent aucune cassure de l'ADN"
+        ],
+        "answer": 1,
+        "explanation": "Les particules α ont un LET très élevé (~80–100 keV/µm) et un parcours < 100 µm, induisant des cassures double brin groupées et peu réparables très localisées [4,41,54].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le mode de désexcitation du ⁹⁹ᵐTc utilisé en imagerie ?",
+        "options": [
+          "Désintégration alpha",
+          "Émission β⁻ pure",
+          "Transition isomérique avec émission γ de 140 keV",
+          "Capture électronique suivie de β⁺"
+        ],
+        "answer": 2,
+        "explanation": "Le ⁹⁹ᵐTc est un isomère métastable qui se désexcite par transition isomérique pure en émettant un γ de ~140 keV, idéal pour la gamma-caméra [1,2,22].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la période physique (T½) approximative du ⁹⁹ᵐTc ?",
+        "options": [
+          "6 heures",
+          "8 jours",
+          "68 minutes",
+          "110 minutes"
+        ],
+        "answer": 0,
+        "explanation": "Le ⁹⁹ᵐTc a une T½ d'environ 6,0 h, durée adaptée à la logistique : ~94 % de l'activité injectée a décru le lendemain matin [2,22].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle émission caractérise principalement le ¹³¹I, le rendant à la fois imageable et thérapeutique ?",
+        "options": [
+          "α seule",
+          "β⁻ (606 keV) + γ (364 keV)",
+          "β⁺ pur",
+          "γ de 140 keV seul"
+        ],
+        "answer": 1,
+        "explanation": "Le ¹³¹I (T½ 8,02 j) émet un β⁻ thérapeutique (~606 keV) ET un γ de 364 keV imageable, d'où son usage théranostique en pathologie thyroïdienne [14,15].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment définit-on la période effective (T_eff) d'un radiopharmaceutique ?",
+        "options": [
+          "T_eff = T_phys + T_biol",
+          "1/T_eff = 1/T_phys + 1/T_biol",
+          "T_eff = T_phys × T_biol",
+          "T_eff = T_phys uniquement"
+        ],
+        "answer": 1,
+        "explanation": "La période effective combine décroissance physique et élimination biologique : 1/T_eff = 1/T_phys + 1/T_biol, donc T_eff est toujours ≤ T_phys [60,61].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pour un examen TEP au ¹⁸F-FDG, quelle est la dose efficace de référence (ICRP 128) ?",
+        "options": [
+          "0,0057 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,14 mSv/MBq",
+          "1,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "Selon l'ICRP 128, la dose efficace du ¹⁸F-FDG est de 0,019 mSv/MBq, soit environ 7 mSv pour 370 MBq [55,57].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel principe gouverne le choix entre un radionucléide diagnostique et thérapeutique ?",
+        "options": [
+          "La couleur du rayonnement émis",
+          "Le type d'émission : γ/β⁺ pour voir (sortir), α/β⁻ pour traiter (rester)",
+          "Uniquement le coût du produit",
+          "La taille de la seringue"
+        ],
+        "answer": 1,
+        "explanation": "Le rayonnement doit sortir du patient pour l'imagerie (γ, β⁺) et au contraire rester déposé dans la lésion pour la thérapie (α, β⁻) ; le type d'émission décide [4,5].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel radionucléide émetteur α est utilisé contre les métastases osseuses du cancer de la prostate résistant à la castration ?",
+        "options": [
+          "⁹⁰Y",
+          "²²³Ra (Xofigo)",
+          "⁶⁸Ga",
+          "¹⁸F"
+        ],
+        "answer": 1,
+        "explanation": "Le ²²³Ra-dichlorure (T½ 11,4 j), mime du calcium, cible l'ostéogenèse ; l'essai ALSYMPCA a montré un gain de survie globale (14,9 vs 11,3 mois) [18,54].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment le générateur ⁹⁹Mo/⁹⁹ᵐTc fournit-il le ⁹⁹ᵐTc en milieu hospitalier ?",
+        "options": [
+          "Par cyclotron sur place",
+          "⁹⁹Mo (T½ ~66 h) adsorbé sur colonne d'alumine, ⁹⁹ᵐTc élué au sérum physiologique",
+          "Par réaction ¹⁸O(p,n)¹⁸F",
+          "Par fission directe dans le service"
+        ],
+        "answer": 1,
+        "explanation": "Le parent ⁹⁹Mo (T½ ~66 h, issu de la fission de ²³⁵U) est fixé sur une colonne d'alumine ; le ⁹⁹ᵐTcO₄⁻ est élué au NaCl, l'équilibre transitoire étant atteint en ~24 h [22,23,24].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le seuil usuel de pureté radiochimique (PRC) exigé pour un radiopharmaceutique au ⁹⁹ᵐTc (Pharmacopée européenne) ?",
+        "options": [
+          "≥ 50 %",
+          "≥ 75 %",
+          "≥ 95 %",
+          "≥ 99,9 %"
+        ],
+        "answer": 2,
+        "explanation": "La PRC, contrôlée par chromatographie sur couche mince (ITLC), doit être ≥ 95 % ; les impuretés typiques sont le pertechnétate libre et le ⁹⁹ᵐTc colloïdal/hydrolysé [35,36].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel facteur explique qu'un noyau riche en neutrons se désintègre préférentiellement par β⁻ ?",
+        "options": [
+          "Un excès de protons",
+          "Un excès de neutrons converti en proton + électron + antineutrino",
+          "Un excès d'énergie sans changement de composition",
+          "Une masse atomique trop faible"
+        ],
+        "answer": 1,
+        "explanation": "En β⁻, un neutron en excès se transforme en proton avec émission d'un électron et d'un antineutrino (Z+1, A inchangé), ramenant le noyau vers la vallée de stabilité [7,47].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la dose efficace de référence d'une scintigraphie osseuse au ⁹⁹ᵐTc-MDP (740 MBq, ICRP 128) ?",
+        "options": [
+          "≈ 0,5 mSv",
+          "≈ 4,2 mSv",
+          "≈ 20 mSv",
+          "≈ 50 mSv"
+        ],
+        "answer": 1,
+        "explanation": "Avec un coefficient d'environ 0,0057 mSv/MBq, l'injection de 740 MBq de ⁹⁹ᵐTc-MDP délivre une dose efficace d'environ 4,2 mSv [33,55].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle précaution est absolue avant une thérapie à l'¹³¹I chez une femme en âge de procréer ?",
+        "options": [
+          "Un jeûne de 12 heures",
+          "Un dosage de β-hCG sérique dans les 72 h (grossesse = contre-indication absolue)",
+          "Une injection de corticoïdes",
+          "Une scintigraphie osseuse préalable"
+        ],
+        "answer": 1,
+        "explanation": "La grossesse est une contre-indication absolue ; un β-hCG sérique doit être réalisé dans les 72 h précédant l'administration, la thyroïde fœtale concentrant l'iode dès 10–13 SA [37,38].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Parmi ces radionucléides, lequel est un émetteur β⁻ pur utilisé pour la radioembolisation hépatique ?",
+        "options": [
+          "⁹⁹ᵐTc",
+          "⁶⁸Ga",
+          "⁹⁰Y",
+          "¹²³I"
+        ],
+        "answer": 2,
+        "explanation": "Le ⁹⁰Y (T½ 64,04 h) est un émetteur β⁻ pur (E_max 2,27 MeV, parcours moyen ~2,5 mm) employé pour la SIRT/TARE hépatique [20,21].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment évolue l'activité d'une source après 3 périodes (3 × T½) ?",
+        "options": [
+          "Elle est divisée par 3",
+          "Elle est divisée par 8 (½)³",
+          "Elle est nulle",
+          "Elle est divisée par 6"
+        ],
+        "answer": 1,
+        "explanation": "Après n périodes, la fraction restante est (½)ⁿ ; après 3 périodes il reste donc 1/8 de l'activité initiale [46,48].",
+        "difficulty": "facile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Une désintégration radioactive est la transformation spontanée d'un noyau instable vers un état plus stable : aléatoire au niveau d'un noyau, déterministe statistiquement sur une population [45].",
+        "Trois modes : α = noyau d'hélium-4 (Z−2, A−4, LET élevé, parcours < 100 µm) ; β = électron β⁻ ou positon β⁺ ; γ = photon de désexcitation sans changement de Z ni A [4,7,47].",
+        "Loi de décroissance : N(t) = N₀·e^(−λt) et A(t) = A₀·e^(−λt), avec λ = 0,693/T½ ; l'activité se mesure en becquerels (1 Bq = 1 désintégration/s) [8,40].",
+        "1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq (équivalences à connaître) [8,43].",
+        "Le β⁺ s'annihile en 2 photons de 511 keV à 180° : c'est le fondement de la TEP ; le ⁹⁹ᵐTc émet un γ de 140 keV (transition isomérique) pour la TEMP [10,22].",
+        "Règle de choix : γ/β⁺ pour le diagnostic (le rayonnement doit sortir) ; α/β⁻ pour la thérapie (l'énergie doit rester dans la lésion) [4,5].",
+        "Période effective : 1/T_eff = 1/T_phys + 1/T_biol, toujours ≤ T_phys — paramètre clinique réel de l'irradiation [60,61].",
+        "Dosimétrie de référence (ICRP 128) : ¹⁸F-FDG 0,019 mSv/MBq ; ⁹⁹ᵐTc-MDP ~0,0057 mSv/MBq (≈ 4,2 mSv pour 740 MBq) [55,57]."
+      ],
+      "protocol": [
+        "Identifier le besoin clinique : voir (diagnostic) ou traiter (thérapie), puis sélectionner le type d'émission adapté (γ/β⁺ vs α/β⁻).",
+        "Choisir la période : assez longue pour la logistique et la biodistribution, assez courte pour limiter la dose (ex. ⁹⁹ᵐTc 6 h, ¹⁸F 110 min, ¹³¹I 8 j).",
+        "Vérifier la production/disponibilité : générateur ⁹⁹Mo/⁹⁹ᵐTc (élution NaCl sur alumine) ou ⁶⁸Ge/⁶⁸Ga ; cyclotron pour le ¹⁸F [22,12].",
+        "Contrôler la qualité : pureté radiochimique ≥ 95 % par ITLC, pureté radionucléidique (breakthrough ⁹⁹Mo), pH, stérilité avant injection [35].",
+        "Respecter les NRD nationaux et administrer l'activité minimale recommandée chez l'enfant (carte de dosage pédiatrique EANM) [25,27].",
+        "Exclure la grossesse (β-hCG < 72 h) avant toute thérapie ¹³¹I et organiser l'arrêt de l'allaitement [37,38]."
+      ],
+      "scores": [
+        "Activité : A = λN, unité becquerel (Bq) ; 1 Ci = 37 GBq [8,43].",
+        "Décroissance : A(t) = A₀·e^(−λt) ; après n périodes, fraction restante = (½)ⁿ [46,48].",
+        "Demi-vie ↔ constante : λ = 0,693/T½ ; période effective 1/T_eff = 1/T_phys + 1/T_biol [60,61].",
+        "Énergies repères : α 5–9 MeV ; annihilation β⁺ → 511 keV ; γ du ⁹⁹ᵐTc 140 keV ; γ du ¹³¹I 364 keV [4,10,22,15]."
+      ],
+      "pitfalls": [
+        "Confondre dose absorbée (Gy, par organe) et dose efficace (mSv, corps entier pondéré) — ce sont deux grandeurs distinctes [55].",
+        "Oublier que la période effective (et non la période physique seule) gouverne l'irradiation réelle du patient [60,61].",
+        "Croire que le type d'isotope change la cible biologique : ce sont l'émission et la période qui décident de l'usage, pas la cible [4].",
+        "Négliger le blindage adapté à l'émission : α arrêté par le papier/la peau mais dangereux en contamination interne ; γ exige un écran plombé [54].",
+        "Mésestimer l'iode libre/impuretés en contrôle qualité : une PRC < 95 % dégrade l'image et augmente l'irradiation [35].",
+        "Administrer une activité pédiatrique non ajustée : appliquer la carte de dosage EANM et le minimum recommandé [25,27]."
+      ]
+    },
+    "lead": "Les noyaux atomiques instables se transforment spontanément pour gagner en stabilité, en libérant de l'énergie sous forme de particules ou de rayonnement. On distingue trois grandes familles de transformation, repérées historiquement par les premières lettres de l'alphabet grec, qui se différencient par la nature de ce qui est émis et par la distance que ce rayonnement parcourt dans la matière vivante. Cette transformation n'obéit à aucun calendrier pour un noyau pris isolément, mais une population de noyaux se vide de façon parfaitement régulière, divisée par deux à intervalles de temps constants. C'est précisément ce double caractère, le type d'émission d'un côté et la rapidité de disparition de l'autre, qui guide le médecin nucléaire dans le choix d'un produit pour voir une maladie ou pour la traiter. Comprendre ces deux paramètres revient à comprendre la logique même de toute la discipline.",
+    "patient": {
+      "sections": [
+        {
+          "title": "Comprendre la radioactivité utilisée en médecine",
+          "text": "En médecine nucléaire, on utilise de toutes petites quantités d'un produit légèrement radioactif. Cela peut surprendre, mais c'est un outil sûr et bien maîtrisé, utilisé chaque jour dans le monde entier. Le principe est simple : certains atomes sont naturellement instables et se transforment doucement en émettant un rayonnement. Ce rayonnement peut servir de deux façons. Soit il agit comme une lampe torche qui éclaire l'intérieur du corps : il traverse les tissus et est capté par une caméra spéciale pour fabriquer des images très précises, sans avoir à opérer. Soit il agit comme un traitement ciblé qui dépose son énergie au bon endroit pour détruire des cellules malades, en épargnant au mieux les tissus voisins. Selon votre situation, votre médecin choisit le produit le plus adapté : un produit fait pour voir (pour le diagnostic) ou un produit fait pour soigner (pour le traitement).",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Une dose qui diminue toute seule",
+              "text": "Le produit perd naturellement sa radioactivité avec le temps, sans rien faire. C'est ce qu'on appelle la décroissance. Les produits utilisés sont choisis pour disparaître assez vite de votre corps, ce qui limite l'exposition."
+            }
+          ]
+        },
+        {
+          "title": "Comment se passe l'examen ou le traitement",
+          "text": "Le déroulement dépend du produit utilisé, et l'équipe vous explique tout à l'avance. En général, le produit vous est administré le plus souvent par une simple injection dans une veine, parfois à avaler. Il faut ensuite un temps d'attente, le temps que le produit se rende dans l'organe étudié. Puis, pour un examen d'imagerie, vous vous installez tranquillement sous une caméra qui prend les images : vous ne sentez rien, il n'y a ni bruit fort ni douleur, il suffit de rester immobile. Selon l'examen, on peut vous demander d'être à jeun quelques heures, de bien vous hydrater ou de vider votre vessie avant les images. Suivez simplement les consignes qui vous sont données lors de la prise de rendez-vous : elles servent à obtenir des images de bonne qualité ou un traitement efficace.",
+          "steps": [
+            {
+              "title": "Préparation",
+              "text": "L'équipe vérifie votre identité et la raison de l'examen, et vous rappelle les consignes (à jeun ou non, hydratation, médicaments). N'hésitez pas à poser vos questions."
+            },
+            {
+              "title": "Administration du produit",
+              "text": "Le produit vous est donné, le plus souvent par une petite injection dans le bras, parfois par voie orale."
+            },
+            {
+              "title": "Temps d'attente",
+              "text": "Vous patientez un moment pour laisser le produit se fixer là où il doit agir ou être vu."
+            },
+            {
+              "title": "Images ou traitement",
+              "text": "Vous passez sous la caméra pour les images, ou bien le traitement agit dans votre corps. Tout est indolore."
+            }
+          ]
+        },
+        {
+          "title": "Sécurité : ce qu'il faut savoir et quelques précautions",
+          "text": "Ces produits sont utilisés depuis très longtemps et leur sécurité est étroitement encadrée. Le rayonnement diminue rapidement et la quantité reçue est maîtrisée selon le principe de n'utiliser que ce qui est nécessaire. Après certains examens ou traitements, l'équipe peut vous donner des conseils simples et temporaires : bien boire pour éliminer le produit dans les urines, et parfois garder un peu de distance pendant un jour ou deux avec les jeunes enfants et les femmes enceintes, le temps que la radioactivité décroisse. Ces gestes sont faciles à suivre et l'équipe vous remet des consignes claires si besoin.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Prévenez l'équipe avant l'examen",
+              "text": "Si vous êtes ou pourriez être enceinte, ou si vous allaitez, signalez-le impérativement avant tout examen ou traitement. Certaines précautions ou un report sont alors nécessaires pour protéger votre enfant."
+            },
+            {
+              "type": "tip",
+              "title": "Buvez et urinez régulièrement",
+              "text": "Après l'examen, bien vous hydrater et uriner souvent aide votre corps à éliminer plus vite le produit. C'est simple et utile."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : voir ou traiter selon le rayonnement",
+          "text": "Le point clé à retenir pour orienter un patient est le couple type d'émission / parcours du rayonnement. Les émetteurs dont le rayonnement sort du corps (gamma pour la scintigraphie/SPECT, positons pour la TEP) servent à l'imagerie fonctionnelle : on cherche à voir un processus biologique (métabolisme, perfusion, expression d'un récepteur), ce que l'imagerie morphologique ne montre pas toujours. À l'inverse, les émetteurs de particules qui déposent toute leur énergie localement (bêta-moins, alpha) servent à la thérapie ciblée : l'énergie reste dans la lésion. Pensez donc à la médecine nucléaire devant un besoin de caractérisation fonctionnelle (bilan d'extension oncologique, viabilité, foyer infectieux ou inflammatoire occulte, fonction d'un organe) ou lorsqu'une cible spécifique de la maladie est connue (par exemple un récepteur tumoral) ouvrant la voie à un traitement vectorisé.",
+          "list": [
+            "Imagerie quand il faut voir une fonction et non seulement une anatomie : la TEP et la scintigraphie reposent sur des traceurs gamma ou positons qui sortent du corps pour être détectés",
+            "Thérapie quand il faut traiter une cible précise : les traitements vectorisés utilisent des émetteurs bêta-moins ou alpha à dépôt d'énergie local",
+            "Logique théranostique : un même couple moléculaire peut servir à imager puis à traiter la même cible, ce qui justifie un avis spécialisé précoce"
+          ]
+        },
+        {
+          "title": "Démarche pratique et apport de la médecine nucléaire",
+          "text": "Concrètement, l'examen repose sur l'administration (le plus souvent intraveineuse) d'un radiopharmaceutique dont le vecteur cible un organe ou un processus, couplé à un radionucléide adapté. Le choix du radionucléide dépend de deux paramètres : son type d'émission (pour voir ou pour traiter) et sa période, qui doit être compatible avec la logistique et la biodistribution tout en limitant l'irradiation. Pour un adressage utile, précisez la question clinique (diagnostic, stadification, évaluation de réponse, recherche de cible thérapeutique) et transmettez les éléments pertinents : antécédents, grossesse possible ou allaitement, fonction rénale selon le traceur, traitements en cours. L'apport propre est l'information fonctionnelle et la possibilité, dans certaines indications, d'enchaîner diagnostic et traitement sur la même cible.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser en médecine nucléaire",
+              "text": "La médecine nucléaire apporte une information fonctionnelle ciblée que l'imagerie conventionnelle ne fournit pas, et ouvre l'approche théranostique : on peut d'abord imager une cible spécifique de la maladie (émetteurs gamma ou positons), puis la traiter avec un produit dirigé contre cette même cible (émetteurs bêta ou alpha). Un avis spécialisé permet de choisir le bon traceur selon votre question clinique, de vérifier les précautions (grossesse, allaitement, fonction rénale) et de planifier au mieux le parcours du patient. En cas de doute sur l'indication, contactez le service de médecine nucléaire en amont."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - A1 - Carte d'identité de la désintégration radioactive",
+          "text": "**Comment lire cette carte.** La **désintégration radioactive** est la transformation spontanée d'un noyau **instable** (le radionucléide) vers un état plus stable, avec émission de particules et/ou de photons [42]. Le phénomène a été découvert par **Henri Becquerel en 1896** [42] ; il est **aléatoire** au niveau du noyau individuel mais **déterministe statistiquement** sur une grande population, ce qui le rend prévisible et exploitable en clinique [45]. Trois modes historiques structurent tout le champ — **alpha (α)**, **bêta (β)** et **gamma (γ)** — et c'est le **couple type d'émission ↔ parcours** qui décide de l'usage : les rayonnements pénétrants (**γ, β⁺**) sortent du patient et servent à **imager** ; les particules à dépôt local (**β⁻, α**) déposent leur énergie *dans* la lésion et servent à **traiter**.\n\n| Mode | Particule émise | Variation (Z, A) | Énergie typique | Parcours tissulaire | Usage dominant |\n|---|---|---|---|---|---|\n| **α** | noyau ⁴He (2 p + 2 n) | Z−2, A−4 | **4–9 MeV** [4] | **< 100 µm** [4] | Thérapie (alpha-thérapie ciblée) [54] |\n| **β⁻** | électron (+ antineutrino) | Z+1, A inchangé | spectre continu, ex. **606 keV** (¹³¹I) [14] | millimétrique | Thérapie (RLT) [16] |\n| **β⁺** | positon (+ neutrino) → 2 γ de **511 keV** à 180° | Z−1, A inchangé | ex. Emax **633 keV** (¹⁸F) [11] | millimétrique | Imagerie TEP [10] |\n| **γ / transition isomérique** | photon | aucune | ex. **140 keV** (⁹⁹ᵐTc) [2] | très pénétrant | Imagerie scintigraphie/SPECT [22] |\n\nLes émissions associées, moins enseignées mais cliniquement majeures, complètent ce tableau : **capture électronique (CE)**, **conversion interne**, **rayons X caractéristiques** et **électrons Auger** (parcours nanométrique, intérêt thérapeutique émergent) [7]. La cinétique de toute désintégration obéit à la **loi exponentielle N(t) = N₀·e^(−λt)**, gouvernée par la **période physique (T½)**, paramètre-clé du choix d'un radionucléide (cf. A3) [8].",
+          "stats": [
+            {
+              "value": "1896",
+              "label": "Découverte (H. Becquerel) [42]"
+            },
+            {
+              "value": "3 modes",
+              "label": "α, β, γ (+ CE, Auger) [7]"
+            },
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation β⁺ → TEP [10]"
+            },
+            {
+              "value": "< 100 µm",
+              "label": "Parcours α dans les tissus [4]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la règle qui structure toute la médecine nucléaire",
+              "text": "Le **type d'émission** et la **période** sont les deux paramètres qui gouvernent le choix d'un radionucléide. Émetteurs **γ purs ou β⁺** (faible dépôt local, rayonnement qui sort) → **diagnostic** : ⁹⁹ᵐTc (γ 140 keV) en SPECT, ¹⁸F et ⁶⁸Ga (β⁺) en TEP [22,50]. Émetteurs de **particules β⁻ ou α** (dépôt d'énergie local élevé) → **thérapie** : ¹³¹I et ¹⁷⁷Lu (β⁻), ²²³Ra (α) [16,53,54]. Un même couple cible/vecteur exploité avec deux isotopes complémentaires fonde la logique **théranostique** (ex. ⁶⁸Ga/¹⁷⁷Lu pour PSMA ou DOTATATE) [53]."
+            },
+            {
+              "type": "info",
+              "title": "Le « m » de ⁹⁹ᵐTc",
+              "text": "Le **⁹⁹ᵐTc** est un **isomère métastable** de ⁹⁹Tc : un noyau piégé dans un état excité de longue durée de vie, qui se désexcite par **transition isomérique pure** (émission γ de 140 keV, sans particule α ni β) [2]. C'est précisément cette pureté qui en fait le « cheval de bataille » de la scintigraphie : ~**80 %** des examens diagnostiques de médecine nucléaire reposent sur lui [22]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des désintégrations alpha, bêta et gamma montrant la particule émise, la transformation du noyau et le pouvoir de pénétration croissant (alpha arrêté par une feuille, bêta par du plexiglas, gamma par du plomb).",
+            "caption": "Fig. 1 — Les trois modes de désintégration (α, β, γ) : nature de l'émission, variation du couple (Z, A) et pouvoir de pénétration relatif."
+          }
+        },
+        {
+          "title": "A2 - A2 - Pourquoi un noyau est-il instable ? Force nucléaire, défaut de masse et vallée de stabilité",
+          "text": "La stabilité d'un noyau résulte d'un **équilibre de forces** : l'**interaction nucléaire forte**, attractive et de très courte portée, lie protons et neutrons entre eux, tandis que la **répulsion électrostatique** entre protons tend à disloquer le noyau. La cohésion se mesure par l'**énergie de liaison par nucléon**, elle-même expression du **défaut de masse** (la masse d'un noyau est inférieure à la somme des masses de ses constituants, l'écart étant converti en énergie de liaison selon E = mc²). Un noyau est **instable**, donc radioactif, dès lors que sa configuration n'est pas la plus liée possible : il porte un **excès de protons, de neutrons ou d'énergie** [42].\n\nReprésentés dans un plan (nombre de neutrons N en ordonnée, nombre de protons Z en abscisse), les nucléides stables se regroupent le long d'une **vallée de stabilité**. Tout noyau situé en dehors se désintègre **vers cette vallée**, et la nature de l'émission est dictée par le type de déséquilibre :\n\n| Déséquilibre du noyau | Mode de désintégration | Effet | Exemple clinique |\n|---|---|---|---|\n| **Excès de neutrons** (rapport N/Z trop élevé) | **β⁻** : un neutron → proton + électron + antineutrino | Z+1, se rapproche de la vallée | ¹³¹I (β⁻ 606 keV) [14] ; ¹⁷⁷Lu (β⁻ 497 keV) [53] |\n| **Excès de protons** (N/Z trop bas) | **β⁺** ou **capture électronique** | Z−1 | ¹⁸F (97 % β⁺) [10,11] ; ⁶⁸Ga (89 % β⁺) [51] |\n| **Noyaux très lourds** (Z élevé) | **α** : émission d'un noyau ⁴He | Z−2, A−4 | ²²³Ra (α, métastases osseuses) [54] |\n| **Excès d'énergie** (état métastable) | **γ / transition isomérique** | Z et A inchangés | ⁹⁹ᵐTc (γ 140 keV) [2] |\n\nLa **désintégration β⁻** convertit un neutron excédentaire en proton ; la **β⁺** (ou la **capture électronique**, où le noyau capte un électron orbital) corrige à l'inverse un excès de protons. Les noyaux les plus lourds, où la répulsion coulombienne devient prépondérante, allègent leur charge par **émission α**. Enfin, un noyau qui a subi une désintégration peut rester dans un **état excité** : il restitue cet excès d'énergie par émission d'un **photon γ**, sans modifier ni Z ni A — c'est la **désexcitation gamma**, dont les énergies (typiquement **0,1–10 MeV**) sont très supérieures à celles des transitions électroniques atomiques, signature de l'échelle nucléaire [47].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la désintégration α n'est pas une fission",
+              "text": "Émettre une particule α (un noyau ⁴He **très lié**, donc énergétiquement favorable à éjecter) est le mécanisme privilégié des noyaux lourds pour gagner en stabilité, et reste un phénomène **spontané** distinct de la fission. La fission de ²³⁵U, elle, est **provoquée** et sert à *produire* des radionucléides médicaux : le ⁹⁹Mo (parent du ⁹⁹ᵐTc) en est le produit le plus exploité [22]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — l'émission β⁺ ne « voit » pas directement le positon",
+              "text": "En TEP, ce n'est pas le **positon** émis qui est détecté, mais les **deux photons de 511 keV** issus de son **annihilation** avec un électron du milieu, émis à ≈ 180° l'un de l'autre [11]. Le positon parcourt d'abord une courte distance avant de s'annihiler (le « libre parcours du positon ») : cette distance, plus grande pour le ⁶⁸Ga (Emax ≈ 1899 keV) que pour le ¹⁸F (Emax 633 keV), dégrade légèrement la résolution spatiale intrinsèque [10,51]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Diagramme de niveaux d'énergie illustrant la transition d'un noyau parent instable vers un noyau fils plus stable, avec les flèches des désintégrations bêta-moins, bêta-plus et alpha, et la cascade gamma de désexcitation.",
+            "caption": "Fig. 2 — Schéma de désintégration : un noyau instable rejoint la vallée de stabilité par β⁻, β⁺/CE ou α, avec désexcitation γ éventuelle de l'état excité résiduel."
+          }
+        },
+        {
+          "title": "A3 - A3 - Les grandeurs fondamentales : activité, becquerel, curie et énergie des émissions",
+          "text": "Quantifier la radioactivité repose sur quelques grandeurs reliées par la **loi de décroissance exponentielle**. Le nombre de noyaux non encore désintégrés décroît selon **N(t) = N₀·e^(−λt)**, où **λ** est la **constante de désintégration** — la probabilité, par unité de temps, qu'un noyau donné se transforme [42,45]. L'**activité (A)** est le nombre de désintégrations par unité de temps : **A = λ·N**, d'où **A(t) = A₀·e^(−λt)** [8,9].\n\n**Unités.** L'unité SI de l'activité est le **becquerel (Bq) = 1 désintégration par seconde** [42,44]. L'ancienne unité, le **curie (Ci)**, correspond à **1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq** (historiquement l'activité d'environ 1 g de ²²⁶Ra) [43]. En pratique clinique, les activités s'expriment en **MBq** ou **GBq** (ex. une scintigraphie osseuse au ⁹⁹ᵐTc-MDP : ~740 MBq [33]).\n\n**Période physique.** La **demi-vie ou période physique (T½)** est le temps au bout duquel la moitié des noyaux se sont désintégrés. Elle se déduit directement de λ : **T½ = ln2/λ = 0,693/λ** [46,48]. Après *n* périodes, la fraction restante vaut **(½)ⁿ** [48] : pour le ⁹⁹ᵐTc (T½ = 6,01 h), ~94 % de l'activité injectée a décru le lendemain matin, ce qui dimensionne toute la logistique d'un service.\n\n| Radionucléide | Période physique (T½) | Émission(s) | Énergie principale | Usage |\n|---|---|---|---|---|\n| **⁹⁹ᵐTc** | **6,01 h** [22] | γ (transition isomérique) | **140 keV** [2] | SPECT (référence diagnostique) [22] |\n| **¹⁸F** | **110 min** [11] | β⁺ (97 %) | Emax **633 keV** [11] | TEP au FDG [11] |\n| **⁶⁸Ga** | **67,7 min** [51] | β⁺ (89,1 %) | Emax **1899 keV** (moy. 836 keV) [51] | TEP DOTATATE / PSMA [50] |\n| **¹³¹I** | **8,02 j** [14] | β⁻ + γ | β 606 keV ; **γ 364 keV** [14] | Thérapie/imagerie thyroïde [15] |\n| **¹⁷⁷Lu** | **6,647 j** [53] | β⁻ + γ | β Emax **497 keV** ; γ 113 & 208 keV [53] | RLT (PSMA, SSTR) [16] |\n| **²²³Ra** | **11,4 j** [54] | **α** | α 5–7,5 MeV, portée < 100 µm [54] | Alpha-thérapie osseuse (CPRC) [54] |\n\n**Énergie des émissions.** L'énergie déposée par les particules conditionne à la fois l'usage et la radioprotection. Elle se traduit par le **transfert d'énergie linéique (TEL/LET)** : très élevé pour les **α** (forte densité d'ionisation sur < 100 µm, cassures double brin de l'ADN groupées et peu réparables), faible pour les **β⁻** (parcours millimétrique, effet de « feu croisé » utile sur les tumeurs hétérogènes) [4,5]. C'est ce contraste qui explique que l'α excelle sur les micrométastases et le β⁻ sur les volumes tumoraux plus larges.",
+          "stats": [
+            {
+              "value": "1 Bq",
+              "label": "= 1 désintégration/s (SI) [44]"
+            },
+            {
+              "value": "37 GBq",
+              "label": "= 1 curie (Ci) [43]"
+            },
+            {
+              "value": "T½ = 0,693/λ",
+              "label": "Période ↔ constante λ [46]"
+            },
+            {
+              "value": "6,01 h",
+              "label": "Période du ⁹⁹ᵐTc [22]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la période EFFECTIVE, celle qui compte au lit du patient",
+              "text": "L'élimination biologique du traceur s'ajoute à la décroissance physique. La **période effective (T_eff)** combine les deux : **1/T_eff = 1/T_physique + 1/T_biologique**, soit T_eff = (Tp·Tb)/(Tp+Tb) [60,61]. T_eff est **toujours ≤ T_physique** [61]. Exemple : la T_eff du ¹³¹I chez le patient traité pour cancer thyroïdien est d'environ **10,5 h après rhTSH contre 15,7 h après sevrage hormonal** [52] — un écart qui modifie directement la dose délivrée et les consignes de radioprotection."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — distinguer activité, dose absorbée et dose efficace",
+              "text": "L'**activité** (Bq) mesure un *nombre de désintégrations*, non une dose. La **dose absorbée** (Gy) quantifie l'énergie déposée par unité de masse dans un organe ; la **dose efficace** (mSv) la pondère par la radiosensibilité des tissus pour estimer le risque corps entier [55]. Les coefficients de dose efficace (mSv/MBq) sont compilés dans l'**ICRP Publication 128** : ex. **0,019 mSv/MBq** pour le ¹⁸F-FDG (≈ 7 mSv pour 370 MBq) et **~4,2 mSv** pour 740 MBq de ⁹⁹ᵐTc-MDP [33,55,57]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Courbe de décroissance exponentielle de l'activité en fonction du temps, marquée aux multiples successifs de la demi-vie (50 %, 25 %, 12,5 %), illustrant la relation T-demi égale 0,693 sur lambda.",
+            "caption": "Fig. 3 — Courbe de décroissance exponentielle A(t) = A₀·e^(−λt) : l'activité chute de moitié à chaque période T½, fondement du choix logistique et dosimétrique d'un radionucléide."
+          }
+        },
+        {
+          "title": "B1 - La désintégration alpha (α) : noyau d'hélium, forte ionisation, portée micrométrique",
+          "text": "**(a) Définition physique.** La désintégration **alpha (α)** est l'émission, par un noyau lourd instable, d'une **particule α** identique à un **noyau d'hélium-4** (²He²⁺ : 2 protons + 2 neutrons) [47]. Le noyau père voit son numéro atomique **Z diminuer de 2** et son nombre de masse **A diminuer de 4** ; il se rapproche ainsi de la vallée de stabilité [47]. C'est le mode privilégié des noyaux **très lourds (Z élevé)**, pour lesquels la répulsion coulombienne entre protons l'emporte sur la force nucléaire de cohésion.\n\n**(b) Énergie, parcours et transfert linéique d'énergie (TEL).** La particule α emportée est **mono-énergétique** (spectre de raies, à la différence du spectre β continu) et porte une énergie élevée, typiquement **4–9 MeV** [4]. Sa masse importante et sa double charge lui confèrent un **transfert linéique d'énergie (TEL, énergie déposée par unité de longueur)** très élevé — de l'ordre de **80–100 keV/µm** [4] — au prix d'un **parcours tissulaire extrêmement court, inférieur à 100 µm** (quelques diamètres cellulaires) [4][54]. En d'autres termes, l'α dépose toute son énergie sur une distance plus courte que l'épaisseur de la peau.\n\n**(c) Conséquence radiobiologique.** Cette densité d'ionisation extrême génère des **cassures double brin de l'ADN groupées (« clustered »)**, peu réparables par la cellule [54]. À l'échelle d'une micrométastase, l'énergie reste **confinée à la lésion** tout en épargnant les tissus sains voisins, ce qui fait de l'alpha-thérapie ciblée un outil de choix sur la **maladie résiduelle de petit volume** [4][54].\n\n**(d) Application clinique paradigmatique — le ²²³Ra (dichlorure de radium, Xofigo®).** Émetteur α de période physique **11,4 jours** [18], le ²²³Ra mime le **calcium** et se fixe spontanément sur les zones d'**ostéogenèse réactionnelle** des métastases osseuses [54]. Administré à **55 kBq/kg en intraveineux toutes les 4 semaines pendant 6 cycles** [54], il a démontré, dans l'essai pivot de phase III **ALSYMPCA** (cancer de la prostate résistant à la castration), une **survie globale médiane de 14,9 vs 11,3 mois** et un délai au **premier événement osseux symptomatique de 15,6 vs 9,8 mois** versus placebo [54].\n\n| Grandeur | Valeur typique | Source |\n|---|---|---|\n| Composition de la particule α | Noyau ⁴He (2 p⁺ + 2 n) | [47] |\n| Variation du noyau | Z − 2 ; A − 4 | [47] |\n| Énergie cinétique | **4–9 MeV** (spectre de raies) | [4] |\n| TEL | **~80–100 keV/µm** | [4] |\n| Parcours dans les tissus | **< 100 µm** | [4][54] |\n| Radionucléide thérapeutique de référence | ²²³Ra (T½ **11,4 j**) | [18][54] |",
+          "stats": [
+            {
+              "value": "4–9 MeV",
+              "label": "Énergie de la particule α [4]"
+            },
+            {
+              "value": "< 100 µm",
+              "label": "Parcours tissulaire [4][54]"
+            },
+            {
+              "value": "~80–100 keV/µm",
+              "label": "TEL (transfert linéique d'énergie) [4]"
+            },
+            {
+              "value": "11,4 j",
+              "label": "Période du ²²³Ra (Xofigo®) [18]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — radioprotection : un risque interne, pas externe",
+              "text": "Une particule α est arrêtée par une **feuille de papier** ou les **couches mortes de l'épiderme** (< 100 µm de tissu) : elle ne constitue **aucun danger d'irradiation externe** [54]. Le danger devient majeur en cas de **contamination interne** (inhalation, ingestion, plaie), où tout le dépôt d'énergie se fait au contact direct des cellules radiosensibles. La gestion d'un émetteur α se pense donc en termes de **contamination**, jamais d'exposition externe."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi l'α est-il « le scalpel » des émissions thérapeutiques",
+              "text": "Le couple **TEL très élevé + parcours micrométrique** explique la place émergente de l'alpha-thérapie ciblée : on dépose une dose létale dans la cellule cible et ses voisines immédiates sans irradier le tissu sain à distance. C'est l'argument décisif sur les **micrométastases** et la **maladie résiduelle**, là où l'effet « feu croisé » plus étendu du β⁻ (cf. B2) devient un inconvénient."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des trois modes de désintégration : la particule alpha (noyau d'hélium, 2 protons + 2 neutrons) à parcours très court et forte ionisation, la particule bêta à parcours intermédiaire, et le photon gamma pénétrant."
+          }
+        },
+        {
+          "title": "B2 - Les désintégrations bêta : β⁻, β⁺ et capture électronique",
+          "text": "Les désintégrations **bêta (β)** regroupent trois transformations isobariques (**A constant**) qui ajustent le rapport neutrons/protons (N/Z) du noyau. Elles concernent les noyaux situés **de part et d'autre** de la vallée de stabilité : excès de neutrons → β⁻ ; excès de protons → β⁺ ou capture électronique.\n\n**(a) Désintégration β⁻ (béta-moins).** Un **neutron se transforme en proton**, avec émission d'un **électron** (la particule β⁻) et d'un **antineutrino** ; **Z augmente de 1**, A reste inchangé [47]. L'électron émis présente un **spectre énergétique continu** (de 0 à une énergie maximale **Emax**), l'énergie étant partagée aléatoirement avec l'antineutrino. Le **TEL est faible** et le **parcours tissulaire millimétrique** (typiquement quelques mm), ce qui adapte le β⁻ au traitement de **volumes tumoraux** plus larges via un effet de **« feu croisé » (crossfire)** utile sur les masses hétérogènes. C'est le mode thérapeutique le plus répandu : **¹³¹I** (Emax β⁻ **606 keV**) pour la thyroïde [14], **¹⁷⁷Lu** (Emax β⁻ **497 keV**) pour la radioligand-thérapie PSMA/SSTR [53], **⁹⁰Y** (β⁻ pur, Emax **2,27 MeV**) pour la radioembolisation hépatique.\n\n**(b) Désintégration β⁺ (positons).** Un **proton se transforme en neutron**, avec émission d'un **positon** (la particule β⁺) et d'un **neutrino** ; **Z diminue de 1**, A inchangé. Le positon, après un court parcours, s'**annihile** avec un électron du milieu : leur masse se convertit en **deux photons de 511 keV émis à ~180° l'un de l'autre** [10][11]. Cette **émission en coïncidence** est le principe physique fondateur de la **TEP (tomographie par émission de positons)** [11]. Traceurs phares : **¹⁸F** (T½ **110 min**, ~97 % β⁺, Emax **633 keV**) [10][11] et **⁶⁸Ga** (T½ **67,7 min**, ~89 % β⁺) [50][51].\n\n**(c) Capture électronique (CE).** Un noyau riche en protons peut, au lieu d'émettre un positon, **capturer un électron de sa couche interne** : un proton se combine à cet électron pour donner un neutron + neutrino. **Z diminue de 1**, A inchangé — le résultat sur le noyau est identique à celui du β⁺, et les deux voies sont souvent en **compétition** (ex. ¹⁸F : ~97 % β⁺, ~3 % CE [10] ; ⁶⁸Ga : ~89 % β⁺, ~11 % CE [12]). Le réarrangement du cortège électronique qui s'ensuit émet des **rayons X caractéristiques** et des **électrons Auger** — ces derniers, de parcours **nanométrique**, suscitent un intérêt thérapeutique émergent quand le radionucléide est interne à l'ADN.\n\n| Mode | Transformation nucléaire | ΔZ | Particule(s) émise(s) | Spectre | Exemple clinique |\n|---|---|---|---|---|---|\n| **β⁻** | n → p | **+1** | électron + antineutrino | continu (Emax) | ¹³¹I (606 keV) [14], ¹⁷⁷Lu (497 keV) [53] |\n| **β⁺** | p → n | **−1** | positon + neutrino → 2 γ de **511 keV** | continu (Emax) | ¹⁸F (633 keV) [10][11], ⁶⁸Ga [50] |\n| **Capture électronique** | p + e⁻ → n | **−1** | neutrino + X / Auger | — (raies X) | ⁶⁸Ga (~11 %) [12] |",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation β⁺ (base de la TEP) [11]"
+            },
+            {
+              "value": "180°",
+              "label": "Angle d'émission des 2 photons d'annihilation [11]"
+            },
+            {
+              "value": "606 keV",
+              "label": "Emax β⁻ de l'¹³¹I [14]"
+            },
+            {
+              "value": "1,022 MeV",
+              "label": "Seuil énergétique minimal du β⁺"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "β⁺ et capture électronique : deux issues pour un même déséquilibre",
+              "text": "β⁺ et CE corrigent le **même excès de protons** et aboutissent à la **même variation Z − 1**. La désintégration β⁺ exige toutefois un surplus d'énergie d'au moins **1,022 MeV** (l'équivalent masse des deux électrons mis en jeu) ; en deçà, seule la capture électronique est possible. Pour de nombreux radionucléides riches en protons, les deux voies coexistent avec des proportions fixes (branching), ce qui explique le rendement de positons toujours < 100 % d'un traceur TEP."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le β⁻ « imageable »",
+              "text": "Plusieurs émetteurs β⁻ thérapeutiques émettent **aussi** des photons γ de basse énergie exploitables par une γ-caméra : ¹³¹I (**γ 364 keV**) [14] et ¹⁷⁷Lu (**γ 113 et 208 keV**) [53]. On peut ainsi **traiter et imager avec le même radionucléide** — base de la dosimétrie post-thérapeutique et fondement de la logique théranostique (cf. B3 pour le rôle imageur du photon)."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de l'annihilation positon-électron : le positon émis par désintégration β⁺ s'annihile avec un électron pour produire deux photons de 511 keV émis à 180°, détectés en coïncidence par l'anneau de détecteurs TEP."
+          }
+        },
+        {
+          "title": "B3 - L'émission gamma et la transition isomérique : le photon de l'imagerie",
+          "text": "**(a) Nature du rayonnement γ.** Le rayonnement **gamma (γ)** est un **photon de haute énergie** émis lorsqu'un noyau dans un **état excité** se désexcite vers un état d'énergie inférieure [47]. Contrairement à l'α et au β, l'émission γ ne modifie **ni Z ni A** : c'est une simple **réorganisation énergétique** du noyau. Les énergies γ (typiquement de l'ordre de 0,1 à plusieurs MeV) sont **très supérieures** à celles des transitions du cortège électronique, ce qui les distingue des rayons X [47].\n\n**(b) Pourquoi le γ est « le photon de l'imagerie ».** Du fait de leur faible TEL et de leur grand pouvoir de pénétration, les photons γ de plusieurs dizaines à quelques centaines de keV **sortent du patient** et peuvent être détectés par une γ-caméra : ils n'irradient que peu le tissu traversé mais portent l'information spatiale de la fixation du traceur. C'est cette propriété qui fait du γ la **base de la scintigraphie et de la TEMP (tomographie d'émission monophotonique, SPECT)**. L'énergie idéale est un compromis : assez élevée pour s'échapper du corps, assez basse pour être efficacement arrêtée par le cristal détecteur — la **fenêtre 100–250 keV** est optimale, ce qui explique le rôle central du **⁹⁹ᵐTc (140 keV)** [22].\n\n**(c) La transition isomérique — le cas du ⁹⁹ᵐTc.** Lorsque l'état excité du noyau a une **durée de vie mesurable** (de la nanoseconde à plusieurs heures), on parle d'**état métastable** (noté par un **« m »** suffixé au nombre de masse) et la désexcitation est appelée **transition isomérique**. Le **⁹⁹ᵐTc** est l'**isomère métastable** du ⁹⁹Tc : il se désexcite par **transition isomérique quasi pure**, en émettant un **photon γ de 140 keV** sans particule α ni β associée [22]. Cette pureté — un photon imageur idéal, **aucune** particule chargée irradiante superflue, période de **6,01 h** [22] — fait du ⁹⁹ᵐTc le **« cheval de bataille »** de la médecine nucléaire diagnostique, présent dans **~80 % des examens scintigraphiques** [22].\n\n**(d) Phénomènes associés — conversion interne, X, Auger.** L'énergie de désexcitation peut, en compétition avec l'émission γ, être directement transférée à un **électron du cortège** qui est alors éjecté (**conversion interne**), suivie de l'émission de **rayons X caractéristiques** et d'**électrons Auger**. Ces voies réduisent le rendement photonique utile et augmentent la dose locale ; elles sont à prendre en compte en dosimétrie.\n\n| Radionucléide γ | Énergie principale | Période | Modalité | Usage |\n|---|---|---|---|---|\n| **⁹⁹ᵐTc** | **140 keV** (transition isomérique pure) | **6,01 h** | TEMP/scintigraphie | ~80 % des actes diagnostiques [22] |\n| **¹²³I** | 159 keV | 13,2 h | TEMP | scintigraphie thyroïde, MIBG |\n| **¹³¹I** | **364 keV** (associé au β⁻) | 8,02 j | imagerie + thérapie | thyroïde, théranostique [14] |\n| **⁶⁷Ga / ¹¹¹In** | 93–300 keV | — | TEMP | infection, TNE |",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "Photon γ du ⁹⁹ᵐTc [22]"
+            },
+            {
+              "value": "6,01 h",
+              "label": "Période du ⁹⁹ᵐTc [22]"
+            },
+            {
+              "value": "~80 %",
+              "label": "Part des actes diagnostiques au ⁹⁹ᵐTc [22]"
+            },
+            {
+              "value": "ΔZ = 0",
+              "label": "Z et A inchangés en émission γ [47]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — γ ≠ X malgré une énergie comparable",
+              "text": "Un photon γ et un rayon X peuvent avoir la même énergie ; ils diffèrent par leur **origine**. Le **γ provient du noyau** (désexcitation nucléaire ou transition isomérique), le **X provient du cortège électronique** (réarrangement après capture électronique ou conversion interne). Cette distinction d'origine, et non d'énergie, est la règle exacte [47]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — blindage du γ : ni papier ni plexiglas",
+              "text": "Le pouvoir de pénétration qui rend le γ utile à l'imagerie en fait aussi le rayonnement le plus exigeant en radioprotection : un **écran plombé** est nécessaire (l'α s'arrête sur une feuille de papier, le β⁻ sur du plexiglas/bas Z, mais le γ traverse les tissus). Le **¹³¹I (γ 364 keV)**, particulièrement pénétrant, impose des **chambres radioprotégées** et conditionne la sortie du patient traité (seuils réglementaires d'exposition du public) [14]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de désintégration en niveaux d'énergie : le noyau métastable se désexcite par transition isomérique en émettant un photon gamma vers l'état fondamental, sans changement de numéro atomique ni de nombre de masse."
+          }
+        },
+        {
+          "title": "B4 - Filiations, schémas de désintégration et chaînes radioactives",
+          "text": "**(a) Le schéma de désintégration : la carte d'identité d'un radionucléide.** Un **schéma de désintégration** représente, sur un diagramme de niveaux d'énergie, les transitions par lesquelles un noyau père rejoint un (ou des) noyau(x) fils, avec les **types d'émission**, les **énergies** et les **probabilités (branching ratios)** de chaque voie. Il synthétise tout ce qui précède : un même père peut emprunter **plusieurs chemins concurrents** (ex. β⁺ vs CE pour ¹⁸F et ⁶⁸Ga, cf. B2 ; β⁻ + γ pour ¹³¹I et ¹⁷⁷Lu).\n\n**(b) Loi de filiation et équilibres.** Quand un père (constante de désintégration λ₁, période T₁) engendre un fils radioactif (λ₂, période T₂), l'activité du fils dépend du **rapport des périodes** :\n\n- **Équilibre transitoire** (T_père > T_fils, d'un facteur modéré) : l'activité du fils croît, dépasse légèrement puis **suit** la décroissance du père. C'est le régime du couple **⁹⁹Mo (T½ ~66 h) → ⁹⁹ᵐTc (T½ 6,01 h)** [22][23], qui régit l'éluabilité du générateur.\n- **Équilibre séculaire** (T_père ≫ T_fils) : l'activité du fils égale celle du père et reste stable sur la durée d'usage. C'est le régime du couple **⁶⁸Ge (T½ 270,8 j) → ⁶⁸Ga (T½ 67,7 min)** [12][51], qui permet l'usage hospitalier prolongé d'un générateur sans cyclotron.\n\n**(c) Application — les générateurs, fille naturelle des filiations.** Toute la logistique des générateurs découle de ces filiations [22] :\n\n| Générateur | Père (T½) | Fils utile (T½) | Type d'équilibre | Mise en œuvre |\n|---|---|---|---|---|\n| **⁹⁹Mo/⁹⁹ᵐTc** | ⁹⁹Mo (**~66 h**) [23] | ⁹⁹ᵐTc (**6,01 h**) [22] | transitoire | ⁹⁹Mo (fission de ²³⁵U) adsorbé sur **colonne d'alumine** ; élution saline du pertechnétate ⁹⁹ᵐTcO₄⁻ [22][24] |\n| **⁶⁸Ge/⁶⁸Ga** | ⁶⁸Ge (**270,8 j**) [12] | ⁶⁸Ga (**67,7 min**) [51] | séculaire | production hospitalière TEP sans cyclotron [12] |\n\n**(d) Chaînes radioactives.** Certains noyaux très lourds n'atteignent la stabilité qu'au terme d'une **chaîne** de plusieurs désintégrations successives (α et β⁻ alternées). Le **²²³Ra** (cf. B1) en est l'exemple thérapeutique : sa désintégration libère, en cascade, une série de **descendants émetteurs α** dont l'énergie totale déposée localement (**> 95 % sous forme α**) renforce l'effet cytotoxique osseux [18][54].\n\n**(e) Lien avec la cinétique de décroissance.** Le choix d'un radionucléide en pratique combine **type d'émission** (B1–B3) et **période** : la période doit être **assez longue** pour la production, le transport et la biodistribution, mais **assez courte** pour limiter la dose intégrée au patient. Au-delà de la **période physique**, c'est la **période effective** — combinant décroissance physique et élimination biologique selon 1/T_eff = 1/T_phys + 1/T_biol [60][61] — qui gouverne la dose réellement délivrée (T_eff toujours **≤ T_phys** [60]). Exemple : la T_eff de l'¹³¹I dans le cancer thyroïdien est de **~10,5 h après rhTSH vs ~15,7 h après sevrage hormonal** [52], illustrant l'impact de la cinétique biologique sur une même physique nucléaire.",
+          "stats": [
+            {
+              "value": "~66 h",
+              "label": "Période du ⁹⁹Mo, père du ⁹⁹ᵐTc [23]"
+            },
+            {
+              "value": "270,8 j",
+              "label": "Période du ⁶⁸Ge (équilibre séculaire) [12]"
+            },
+            {
+              "value": "~23 h",
+              "label": "Reconstitution du ⁹⁹ᵐTc entre deux élutions [22]"
+            },
+            {
+              "value": "> 95 %",
+              "label": "Part d'énergie α du ²²³Ra et descendants [18]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le générateur ⁹⁹Mo/⁹⁹ᵐTc se réélue chaque jour",
+              "text": "En équilibre transitoire, l'activité du ⁹⁹ᵐTc se reconstitue après chaque élution et atteint un nouveau maximum en **~23 h** (≈ 4 × T½ du fils). C'est la traduction concrète de la filiation : on « trait » la vache à pertechnétate le matin, elle s'est reconstituée le lendemain, tant que le père ⁹⁹Mo (T½ ~66 h) n'est pas épuisé [22][23]. Le rythme d'élution quotidien découle directement du rapport des deux périodes."
+            },
+            {
+              "type": "info",
+              "title": "Lire un schéma de désintégration",
+              "text": "Par convention, une transition vers la **droite** sur le diagramme (Z augmente) figure un **β⁻**, une transition vers la **gauche** (Z diminue) un **β⁺ ou une capture électronique**, une chute **verticale** sans déplacement horizontal une **émission γ / transition isomérique** (Z et A inchangés). Les **pourcentages** annotés sur chaque flèche sont les rapports de branchement, qui déterminent le rendement imageur ou thérapeutique réellement disponible."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur ⁹⁹Mo/⁹⁹ᵐTc : le molybdène-99 père adsorbé sur une colonne d'alumine se désintègre en technétium-99m fils, élué sous forme de pertechnétate par du sérum physiologique, illustrant la filiation et l'équilibre transitoire."
+          }
+        },
+        {
+          "title": "C1 - C1 - La loi de décroissance : λ, demi-vie et démonstration A(t) = A₀·e^(−λt)",
+          "text": "**Le postulat fondateur.** La désintégration radioactive est un phénomène **aléatoire au niveau du noyau individuel** mais **déterministe statistiquement** sur une population : on ne peut prédire l'instant où un noyau donné se transforme, mais la **probabilité de désintégration par unité de temps est constante**, indépendante de l'âge du noyau et des conditions physico-chimiques (température, pression, liaison chimique) [45]. Cette probabilité est la **constante de désintégration λ** (unité : s⁻¹), qui caractérise intrinsèquement chaque radionucléide [42].\n\n**Démonstration.** Soit **N(t)** le nombre de noyaux radioactifs présents à l'instant t. Le nombre de désintégrations pendant un intervalle dt est proportionnel à N et à λ :\n\n$$ -dN = \\lambda \\cdot N \\cdot dt $$\n\nLe signe négatif traduit la décroissance (N diminue). En séparant les variables puis en intégrant :\n\n$$ \\frac{dN}{N} = -\\lambda\\,dt \\;\\Rightarrow\\; \\ln N - \\ln N_0 = -\\lambda t $$\n\nd'où la **loi de décroissance exponentielle** :\n\n$$ \\boxed{N(t) = N_0 \\cdot e^{-\\lambda t}} $$\n\noù **N₀** est le nombre de noyaux à t = 0 [8][40][45]. L'**activité A** étant définie comme le nombre de désintégrations par seconde, soit **A = λN** [9], on obtient en multipliant l'équation par λ la forme directement exploitable en clinique :\n\n$$ \\boxed{A(t) = A_0 \\cdot e^{-\\lambda t}} $$\n\nC'est cette grandeur — l'**activité**, et non le nombre de noyaux — que mesure l'activimètre et que prescrit le médecin.\n\n**Du λ à la demi-vie.** La **demi-vie physique (T½, ou période)** est le temps au bout duquel l'activité a chuté de moitié : A(T½) = A₀/2. En reportant dans la loi : ½ = e^(−λT½), soit λT½ = ln 2. On obtient la relation **réciproque** centrale :\n\n$$ \\boxed{T_{1/2} = \\frac{\\ln 2}{\\lambda} = \\frac{0{,}693}{\\lambda}} \\qquad \\lambda = \\frac{0{,}693}{T_{1/2}} $$\n\nλ et T½ sont donc deux expressions de la **même** information [8][46][48]. Après **n périodes**, la fraction d'activité restante est exactement **(½)ⁿ** [46][48] : 50 % après 1 T½, 25 % après 2 T½, 12,5 % après 3 T½, et **moins de 1 % au-delà de ~7 périodes** — règle pratique pour la décroissance des effluents et des sources.\n\n**Unités SI de l'activité.** L'unité SI est le **becquerel (Bq) = 1 désintégration par seconde** [42][44]. L'ancienne unité, le **curie (Ci)**, correspond à l'activité d'environ 1 g de ²²⁶Ra : **1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq** [42][43]. En pratique nucléaire on raisonne en MBq (examens diagnostiques) à GBq (thérapies).\n\n| Grandeur | Symbole | Définition | Unité SI |\n|---|---|---|---|\n| Constante de désintégration | **λ** | probabilité de désintégration / unité de temps | s⁻¹ [42] |\n| Activité | **A = λN** | désintégrations / seconde | **Bq** (1 Ci = 37 GBq) [42][43] |\n| Demi-vie physique | **T½** | temps pour réduire A de moitié = ln2/λ | s, min, h, j [8][48] |\n| Nombre de noyaux | **N(t)** | N₀·e^(−λt) | — [45] |\n\n**Lecture clinique immédiate.** Pour le **⁹⁹ᵐTc** (T½ = 6,01 h), 0,693/6,01 ≈ 0,115 h⁻¹ : l'activité chute d'environ **11,5 % par heure**, et après une nuit (~18 h ≈ 3 périodes) il reste **~12,5 %** de l'activité injectée [22]. Pour le **¹⁸F** (T½ = 110 min), la décroissance impose une logistique « juste à temps » entre cyclotron et patient [10][11].",
+          "stats": [
+            {
+              "value": "0,693 / T½",
+              "label": "Constante de désintégration λ [8]"
+            },
+            {
+              "value": "37 GBq",
+              "label": "1 curie (Ci) en SI [42][43]"
+            },
+            {
+              "value": "1 Bq",
+              "label": "= 1 désintégration / seconde [44]"
+            },
+            {
+              "value": "(½)ⁿ",
+              "label": "Fraction restante après n périodes [48]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi λ est rigoureusement constant",
+              "text": "La constance de λ (indépendance vis-à-vis de l'âge, de la température et de l'environnement chimique) est ce qui rend la décroissance **purement exponentielle** et **prédictible**. C'est la base de la datation, de la correction de décroissance entre l'étalonnage et l'injection, et du calcul des temps d'attente avant relâchement des effluents [45]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — activité ≠ nombre de noyaux ≠ masse",
+              "text": "Une **forte activité** peut correspondre à une **masse pondérale infime** (notion d'activité spécifique) : 37 GBq de ⁹⁹ᵐTc ne représentent que quelques nanogrammes. Ne jamais confondre **A(t)** (ce qu'on mesure et prescrit, en Bq) avec **N(t)** (le stock de noyaux). La relation qui les lie, A = λN [9], dépend du radionucléide via λ."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des trois modes de désintégration : émission α (noyau d'hélium-4, Z−2 A−4), β (β⁻ : n→p+e⁻+antineutrino, Z+1 ; β⁺ : p→n+e⁺+neutrino, Z−1) et γ (photon de désexcitation sans changement de Z ni A), avec la courbe de décroissance exponentielle A(t)=A₀·e^(−λt) repérant les demi-vies successives.",
+            "caption": "Fig. 1 — Les trois modes de désintégration et la courbe exponentielle : à chaque période, l'activité est divisée par deux."
+          }
+        },
+        {
+          "title": "C2 - C2 - Période physique, biologique et effective : la grandeur qui gouverne la dosimétrie",
+          "text": "**Trois horloges, pas une seule.** La loi A(t) = A₀·e^(−λt) (§C1) ne décrit que la **disparition physique** des noyaux. Or, in vivo, un radiopharmaceutique disparaît aussi du compartiment irradié par **élimination biologique** (urines, selles, sueur, voies hépato-biliaires). La dose délivrée à un organe dépend donc de la **vitesse réelle de disparition de l'activité de cet organe**, qui combine les deux processus.\n\n**Définitions.**\n- **Période physique (T_phys)** : disparition par décroissance nucléaire seule ; constante intrinsèque du radionucléide (§C1) [48].\n- **Période biologique (T_biol)** : temps pour que l'organisme élimine, par les voies physiologiques, la **moitié** de la substance — indépendamment de sa radioactivité [60][61].\n- **Période effective (T_eff)** : temps réel de réduction de moitié de l'**activité présente dans l'organe**, intégrant les deux mécanismes.\n\n**Loi de combinaison.** Les processus étant indépendants et chacun de type exponentiel (constantes additives), les **inverses des périodes s'ajoutent** :\n\n$$ \\frac{1}{T_{eff}} = \\frac{1}{T_{phys}} + \\frac{1}{T_{biol}} \\qquad\\Rightarrow\\qquad \\boxed{T_{eff} = \\frac{T_{phys}\\cdot T_{biol}}{T_{phys}+T_{biol}}} $$\n\nConséquence mathématique fondamentale : **T_eff est toujours inférieure (ou égale) à la plus courte des deux périodes** [60][61][62]. Une élimination biologique rapide réduit l'irradiation bien en deçà de ce que prédirait la seule décroissance physique.\n\n| Cas de figure | Relation des périodes | T_eff ≈ | Conséquence dosimétrique |\n|---|---|---|---|\n| Élimination biologique très lente | T_biol ≫ T_phys | ≈ **T_phys** | la dose est gouvernée par la **physique** du radionucléide |\n| Élimination biologique très rapide | T_biol ≪ T_phys | ≈ **T_biol** | la dose est gouvernée par la **biocinétique** du vecteur |\n| Ordres comparables | T_biol ≈ T_phys | < les deux | les deux contribuent — calcul indispensable |\n\n**Exemple clinique chiffré — ¹³¹I dans le cancer thyroïdien différencié.** Pour un même radionucléide (T_phys = **8,02 j** [14]), la T_eff mesurée dans le tissu thyroïdien dépend de l'état hormonal : **≈ 10,5 h après stimulation par rhTSH** contre **≈ 15,7 h après sevrage hormonal** [52]. La biocinétique modifie donc la T_eff — et la dose absorbée — à physique constante : argument dosimétrique direct pour le choix du protocole de préparation.\n\n**Pourquoi c'est la grandeur qui gouverne la dosimétrie.** La dose absorbée par un organe est proportionnelle à l'**activité cumulée** (aire sous la courbe activité-temps), soit Ã = A₀ · T_eff / ln2 dans le modèle mono-exponentiel : c'est la **T_eff**, et non la T_phys seule, qui pondère le nombre total de désintégrations subies par le tissu. C'est ce principe qui sous-tend les coefficients de dose efficace tabulés (mSv/MBq) de la **CIPR Publication 128 (2015)**, compendium de référence pour les radiopharmaceutiques courants [55][56] : ¹⁸F-FDG ≈ **0,019 mSv/MBq** chez l'adulte, organe critique = **paroi vésicale** (d'où l'hyperhydratation et la miction avant acquisition) [57] ; ⁹⁹ᵐTc-MDP ≈ **4,2 mSv** pour 740 MBq [33].\n\n**Implications pratiques** : (1) **hydratation et mictions fréquentes** raccourcissent la T_biol des traceurs à élimination urinaire et abaissent la dose vésicale [57] ; (2) une **insuffisance rénale** allonge T_biol → T_eff se rapproche de T_phys → dose accrue ; (3) la **décroissance des effluents** repose, elle, sur la T_phys seule (la biologie ne joue plus une fois hors du patient) [48].",
+          "stats": [
+            {
+              "value": "1/T_eff = 1/T_p + 1/T_b",
+              "label": "Loi de la période effective [60]"
+            },
+            {
+              "value": "10,5 vs 15,7 h",
+              "label": "T_eff ¹³¹I : rhTSH vs sevrage [52]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace ¹⁸F-FDG (CIPR 128) [57]"
+            },
+            {
+              "value": "T_eff ≤ T_phys",
+              "label": "Toujours vérifié [62]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la règle d'or",
+              "text": "**T_eff ≤ min(T_phys, T_biol)**. Retenir que le processus le **plus rapide impose** la cinétique : si le rein élimine vite un traceur à T_phys longue, c'est la biologie qui protège le patient. Inversement, un traceur séquestré durablement (T_biol longue) « épuise » son risque par la seule physique [60][61]."
+            },
+            {
+              "type": "info",
+              "title": "Activité cumulée et dose",
+              "text": "Dans le modèle mono-exponentiel, l'**activité cumulée** Ã = A₀ · T_eff / ln2 est proportionnelle à T_eff. C'est elle, multipliée par le facteur S (dose par désintégration, formalisme MIRD), qui donne la dose absorbée à l'organe — fondement des tables CIPR 128 [55][56]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de décroissance illustrant la combinaison des trois horloges : courbe de décroissance physique (T_phys) et courbe d'élimination biologique (T_biol) se composant en une courbe effective (T_eff) plus raide que chacune des deux, dont l'aire sous la courbe représente l'activité cumulée déterminant la dose absorbée à l'organe.",
+            "caption": "Fig. 2 — Combinaison des décroissances physique et biologique : la période effective gouverne l'activité cumulée, donc la dose."
+          }
+        },
+        {
+          "title": "C3 - C3 - Choisir le bon radionucléide : adéquation type d'émission / demi-vie / usage clinique",
+          "text": "**Le principe directeur.** Le choix d'un radionucléide en médecine nucléaire repose sur **deux paramètres couplés** : **(1) le type d'émission** — détermine si le rayonnement doit *sortir* du patient (imagerie) ou *rester* dans la lésion (thérapie) — et **(2) la demi-vie** — qui doit être assez longue pour la logistique et la biodistribution du vecteur, mais assez courte pour limiter la dose au patient [4][5].\n\n**La règle « voir vs traiter ».** Elle découle directement des propriétés de parcours des particules :\n- **Émetteurs γ purs et β⁺ → diagnostic** : le photon (γ de 100–400 keV, ou les deux photons d'annihilation de **511 keV** issus du β⁺) traverse les tissus et est détecté par la caméra. L'énergie déposée *dans* le patient doit être minimale [10][45].\n- **Émetteurs β⁻ et α → thérapie** : la particule chargée dépose toute son énergie sur un court parcours, *à l'intérieur* de la lésion. Le **β⁻** (TEL faible ~0,2 keV/µm, parcours **2–12 mm**) convient aux volumes tumoraux par effet de feu croisé (*crossfire*) ; l'**α** (TEL très élevé, parcours **< 100 µm**, soit quelques diamètres cellulaires) provoque des cassures double-brin groupées peu réparables, idéal pour les **micrométastases** [4][5].\n\n**Radionucléides DIAGNOSTIQUES (γ ou β⁺).**\n\n| Radionucléide | T½ physique | Émission utile | Énergie principale | Usage clé |\n|---|---|---|---|---|\n| **⁹⁹ᵐTc** | **6,01 h** [22] | γ (transition isomérique pure) | **140 keV** [22] | « cheval de bataille » SPECT (os, rein, cœur, thyroïde) — **~80 %** des actes diagnostiques [22] |\n| **¹⁸F** (FDG) | **110 min** [10] | β⁺ (~97 %) → 511 keV | Emax **633 keV** [11] | TEP oncologie / neuro / infection [10][11] |\n| **⁶⁸Ga** | **67,7 min** [51] | β⁺ (89 %) → 511 keV | Emax **1899 keV** [51] | TEP PSMA / DOTATATE ; **générateur ⁶⁸Ge/⁶⁸Ga** (parent T½ 270,8 j) [12][50] |\n\n**Radionucléides THÉRAPEUTIQUES (β⁻ ou α).**\n\n| Radionucléide | T½ physique | Émission | Énergie / parcours | Indication (niveau de preuve) |\n|---|---|---|---|---|\n| **¹³¹I** | **8,02 j** [14] | β⁻ + γ | β Emax **606 keV** ; **γ 364 keV** (imageable) [14] | hyperthyroïdie, cancer thyroïdien différencié — **théranostique intrinsèque** [37][38] |\n| **¹⁷⁷Lu** | **6,647 j** [53] | β⁻ + γ | β Emax **497 keV** ; γ 113/208 keV (imageables) [53] | ¹⁷⁷Lu-PSMA-617 (PCa résistant à la castration), ¹⁷⁷Lu-DOTATATE (TNE) [16][53] |\n| **²²³Ra** (Xofigo) | **11,4 j** [54] | **α** | haute énergie, parcours **< 100 µm** [54] | métastases osseuses du PCa-RC symptomatique [18][54] |\n| **⁹⁰Y** | **64,04 h** [20] | **β⁻ pur** | Emax **2,27 MeV**, parcours moy. 2,5 mm [20] | radioembolisation hépatique (SIRT/TARE) ; cadre AAPM MPPG 14.a (2024) [21] |\n\n**L'arbitrage de la demi-vie.** Une T½ trop **courte** rend la chaîne logistique impossible (cas extrême : le ¹⁸F, 110 min, exige un cyclotron à proximité ou un transport « juste à temps » [10]) ; une T½ trop **longue** prolonge inutilement l'irradiation et le confinement. Le **⁹⁹ᵐTc** (6 h) illustre l'optimum diagnostique : assez long pour marquer, injecter et imager dans la journée, assez court pour qu'il **reste ~12,5 % de l'activité le lendemain matin** (~3 périodes) [22]. En thérapie, la T½ doit être **appariée à la cinétique tumorale** : quelques jours (¹³¹I 8 j, ¹⁷⁷Lu 6,6 j) pour laisser le vecteur se fixer et irradier durablement [53].\n\n**Le couronnement : la théranostique.** L'idéal est un **couple diagnostic/thérapie partageant la même cible biologique**, l'un émettant un rayonnement *imageable* (γ/β⁺) pour sélectionner et suivre, l'autre un rayonnement *cytotoxique* (β⁻/α) pour traiter. Exemples paradigmatiques : **⁶⁸Ga-PSMA → ¹⁷⁷Lu-PSMA** et **⁶⁸Ga-DOTATATE → ¹⁷⁷Lu-DOTATATE** [50][53]. Le **¹³¹I** est théranostique *à lui seul* : son γ de 364 keV permet l'imagerie et son β⁻ assure le traitement [14][37]. Les recommandations de dosimétrie EANM encadrent la boucle imager→traiter→réévaluer (reins, moelle, glandes salivaires) [53].\n\n**Synthèse opérationnelle.** Pour prescrire, raisonner en trois temps : *(1) Quel processus biologique cibler ?* → choix du **vecteur** ; *(2) Voir ou traiter ?* → choix du **type d'émission** (γ/β⁺ vs β⁻/α) ; *(3) Quelle logistique et quelle cinétique ?* → choix de la **demi-vie** (et vérification de la **T_eff**, §C2). C'est cet alignement vecteur–émission–période qui définit un radiopharmaceutique pertinent.",
+          "stats": [
+            {
+              "value": "140 keV / 6,01 h",
+              "label": "⁹⁹ᵐTc : optimum SPECT [22]"
+            },
+            {
+              "value": "511 keV ×2 à 180°",
+              "label": "Annihilation β⁺ → base de la TEP [10]"
+            },
+            {
+              "value": "< 100 µm",
+              "label": "Parcours α (²²³Ra) : ciblage cellulaire [54]"
+            },
+            {
+              "value": "8,02 j",
+              "label": "T½ ¹³¹I : théranostique β⁻ + γ 364 keV [14]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — un radionucléide « mixte » est un atout théranostique",
+              "text": "Le ¹³¹I (β⁻ thérapeutique **+** γ 364 keV imageable) et le ¹⁷⁷Lu (β⁻ **+** γ 113/208 keV) permettent d'**imager le traitement lui-même** (scintigraphie post-thérapeutique, dosimétrie patient-spécifique). Le γ « parasite » d'un émetteur thérapeutique devient ainsi un outil de vérification de la biodistribution [14][53]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — le γ thérapeutique impose des contraintes de radioprotection",
+              "text": "Le γ pénétrant qui rend le ¹³¹I imageable (364 keV) impose aussi un **blindage plombé** et l'**hospitalisation en chambre radioprotégée** : le patient devient une source externe. Le type d'émission qui sert le diagnostic complique la radioprotection en thérapie — toujours anticiper le confinement et les seuils de relâchement [37]."
+            },
+            {
+              "type": "info",
+              "title": "Disponibilité = critère de choix réel",
+              "text": "Le mode de **production** conditionne l'accès : ⁹⁹ᵐTc par **générateur ⁹⁹Mo/⁹⁹ᵐTc** (élution saline sur colonne d'alumine, disponible à l'hôpital) [22] ; ⁶⁸Ga par **générateur ⁶⁸Ge/⁶⁸Ga** (sans cyclotron) [12] ; ¹⁸F par **cyclotron** (réaction ¹⁸O(p,n)¹⁸F) — d'où sa dépendance à la proximité d'un site de production [10][11]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique illustrant l'adéquation type d'émission / demi-vie : un radionucléide émetteur γ ou β⁺ (ex. ⁶⁸Ga, demi-vie courte) sélectionne et image la cible biologique, puis un radionucléide émetteur β⁻ ou α partageant le même vecteur (ex. ¹⁷⁷Lu ou ²²³Ra, demi-vie de plusieurs jours) la traite, avant réévaluation par imagerie.",
+            "caption": "Fig. 3 — Le couple diagnostic (γ/β⁺) → thérapie (β⁻/α) sur une cible commune : l'aboutissement du raisonnement type d'émission / demi-vie."
+          }
+        },
+        {
+          "title": "D1 - Du noyau au patient : portée des particules, TEL et conséquences dosimétriques",
+          "text": "Le **type d'émission** détermine entièrement le devenir physique d'un radionucléide dans la matière vivante. Trois grandeurs gouvernent ce devenir et conditionnent le choix diagnostique ou thérapeutique : le **parcours** (portée dans les tissus), le **transfert d'énergie linéique (TEL)** — quantité d'énergie déposée par unité de longueur, en keV/µm — et la **dose absorbée** qui en résulte. Ces trois paramètres se déduisent de la nature de la particule, elle-même fixée par le mode de désintégration (§A1-A4).\n\n## Portée et TEL des trois rayonnements\n\nLes particules **α** (noyaux d'hélium-4, 2 protons + 2 neutrons) sont massives et doublement chargées : elles déposent toute leur énergie sur une distance très courte, d'où un **TEL très élevé** et un pouvoir ionisant maximal. Les particules **β⁻** (électrons) sont légères, de TEL faible, et parcourent plusieurs millimètres. Les photons **γ** n'ont ni masse ni charge : faiblement ionisants, ils traversent les tissus et **sortent du patient**, ce qui les rend détectables de l'extérieur (base de l'imagerie, §D2).\n\n| Rayonnement | Énergie typique | TEL | Parcours tissulaire | Conséquence |\n|---|---|---|---|---|\n| **α** | **4–9 MeV** [4,47] | **~80–100 keV/µm** [4,5] | **< 100 µm** (≈ < 10 diamètres cellulaires) [4,18] | Dépôt ultra-localisé, cassures ADN double-brin groupées (« clustered ») [41] |\n| **β⁻** | spectre continu (E_max) | **~0,2 keV/µm** [5] | **2–12 mm** selon E_max [5] | Effet de feu croisé (« crossfire ») sur tumeurs hétérogènes |\n| **β⁺ (positon)** | E_max variable | faible | quelques mm puis **annihilation** | 2 photons de **511 keV à 180°** → TEP [10,11] |\n| **γ** | **0,1–10 MeV** [47] | très faible | traverse et sort du corps | Détection externe → imagerie [6] |\n\n## Pourquoi la portée dicte l'usage clinique\n\nLe couple **type d'émission ↔ parcours** est le principe de sélection fondamental du domaine. Pour **voir**, le rayonnement doit **sortir** : on retient les émetteurs **γ purs** (ex. **Tc-99m, 140 keV** [22]) ou **β⁺** (annihilation → 511 keV : F-18, Ga-68 [11,50]). Pour **traiter**, l'énergie doit **rester dans la lésion** : on retient les émetteurs de particules chargées (**β⁻** ou **α**), dont le parcours fini garantit un dépôt local.\n\nLa portée fixe l'échelle de la cible accessible :\n- **α** (< 100 µm) : idéal pour les **micrométastases** et l'atteinte médullaire diffuse, en épargnant les tissus sains voisins. Le **Ra-223** (Xofigo), émetteur α de période **11,4 j**, mime le calcium et se fixe aux zones d'ostéogenèse des métastases osseuses du cancer prostatique résistant à la castration ; l'essai pivot **ALSYMPCA** a montré une survie globale médiane de **14,9 vs 11,3 mois** et un délai au 1er événement osseux symptomatique de **15,6 vs 9,8 mois** [54].\n- **β⁻** (2–12 mm) : adapté aux **volumes tumoraux plus larges** et hétérogènes, où le feu croisé compense l'expression cible irrégulière. Exemples : **Lu-177** (β E_max **497 keV**, T½ **6,647 j** [53]) en radioligand-thérapie PSMA/SSTR ; **Y-90** (β⁻ pur, E_max **2,27 MeV**, parcours moyen **2,5 mm**, max **11 mm**, T½ **64,04 h** [20,21]) en radioembolisation hépatique.\n\nL'**α** d'un Ra-223 emporte ainsi **95 %** de l'énergie de la chaîne de désintégration sur une distance inférieure au dixième de millimètre [18], là où le **β⁻** d'un Y-90 dépose la sienne sur quelques millimètres : à activité égale, ce ne sont pas les mêmes tissus qui sont irradiés, ni les mêmes structures épargnées.",
+          "stats": [
+            {
+              "value": "< 100 µm",
+              "label": "Parcours des α (Ra-223) [4,18]"
+            },
+            {
+              "value": "2–12 mm",
+              "label": "Parcours des β⁻ thérapeutiques [5]"
+            },
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation β⁺ (TEP) [10]"
+            },
+            {
+              "value": "~80–100 keV/µm",
+              "label": "TEL des α (vs ~0,2 pour β⁻) [4,5]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le TEL, pas seulement l'énergie",
+              "text": "Une particule α de 6 MeV et un photon γ de 6 MeV ne produisent pas le même effet biologique : c'est le **TEL** (densité d'ionisation le long de la trajectoire) qui gouverne le dommage. Le TEL élevé de l'α concentre les cassures double-brin de l'ADN en lésions **groupées (« clustered »), peu réparables** [41], d'où une efficacité biologique relative très supérieure à dose absorbée égale. C'est le fondement de l'alpha-thérapie ciblée : maximiser le dommage par unité d'activité tout en confinant le parcours à la lésion [4]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — confondre dose absorbée et dose efficace",
+              "text": "La **dose absorbée** (gray, Gy) quantifie l'énergie déposée par unité de masse dans un organe donné ; la **dose efficace** (sievert, mSv) pondère ces doses par la radiosensibilité des tissus pour estimer le risque stochastique corps entier. Un α délivre une dose absorbée énorme localement mais sur un volume minuscule ; un γ irradie largement à faible TEL. Les coefficients de dose efficace par radiopharmaceutique (mSv/MBq) sont compilés dans l'**ICRP Publication 128** [55,56] et détaillés au §D-Dosimétrie de chaque article d'examen."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des trois désintégrations : la particule alpha (noyau d'hélium) arrêtée en moins de 100 µm avec un fort dépôt d'énergie, l'électron bêta traversant quelques millimètres, et le photon gamma traversant les tissus et sortant du corps."
+          }
+        },
+        {
+          "title": "D2 - Mesurer la désintégration : détection, spectrométrie et contrôle qualité",
+          "text": "Toute la médecine nucléaire repose sur la capacité à **compter** les désintégrations et à **identifier** leur signature en énergie. L'unité SI de l'activité est le **becquerel (Bq) = 1 désintégration par seconde** [42,44] ; l'ancienne unité, le **curie**, vaut **1 Ci = 3,70 × 10¹⁰ Bq = 37 GBq** (activité d'environ 1 g de Ra-226) [43]. La décroissance suit la loi exponentielle **A(t) = A₀·e^(−λt)**, avec la constante de désintégration **λ = ln2 / T½ ≈ 0,693 / T½** [8,40] : c'est elle qui impose, à chaque étape, de **corriger les mesures de la décroissance** entre l'étalonnage et l'administration.\n\n## Détecter : le bon détecteur pour la bonne émission\n\nLe type d'émission conditionne le détecteur, exactement comme il conditionne le blindage (§D1).\n\n| Émission | Instrument principal | Principe |\n|---|---|---|\n| **γ (sortant du corps)** | Gamma-caméra / SPECT | Cristal scintillant NaI(Tl) + photomultiplicateurs, collimateur, fenêtre d'énergie centrée sur le photopic |\n| **β⁺ → 511 keV** | TEP (coïncidence) | Détection des **deux photons de 511 keV à 180°** en coïncidence temporelle [10] |\n| **Activité d'une seringue** | Activimètre (chambre d'ionisation puits) | Mesure de l'ionisation produite ; étalonnage par radionucléide |\n| **Contamination, débit de dose** | Compteur Geiger-Müller, sondes | Comptage d'impulsions / mesure du débit de dose |\n\nLa **fenêtre d'énergie** se cale sur le **photopic** du radionucléide : **140 keV** pour le Tc-99m [22], **159 keV** pour l'I-123, **364 keV** pour l'I-131 [14]. Ce calage (« peaking ») est un prérequis quotidien : une fenêtre mal centrée dégrade le contraste et fausse la quantification.\n\n## La spectrométrie comme signature d'identité\n\nChaque radionucléide émet à des énergies caractéristiques : le **spectre** est sa carte d'identité. Cette propriété fonde deux usages :\n- la **discrimination des impuretés radionucléidiques** (un pic parasite trahit un contaminant) ;\n- l'**imagerie théranostique** des émetteurs mixtes. L'**I-131** émet à la fois un **β⁻ (E_max 606 keV, 89 %)** thérapeutique et un **γ de 364 keV (81 %)** imageable [14,15] ; le **Lu-177** associe un β⁻ thérapeutique (E_max **497 keV**) à des **γ de 113 et 208 keV** permettant la scintigraphie post-thérapeutique et la dosimétrie [53]. C'est précisément la coexistence d'une émission qui traite et d'une émission qui se voit qui rend ces radionucléides théranostiques.\n\n## Contrôle qualité : du générateur à l'injection\n\nLe contrôle qualité (CQ) vérifie qu'on injecte la bonne molécule, marquée, pure et stérile. Pour le **générateur ⁹⁹Mo/⁹⁹ᵐTc** — colonne d'alumine où le ⁹⁹Mo parent (T½ **~66 h** [23]) est élué en pertechnétate ⁹⁹ᵐTcO₄⁻ au sérum physiologique [22,49] — les contrôles clés sont :\n\n| Contrôle | Cible | Seuil / méthode |\n|---|---|---|\n| **Pureté radiochimique (PRC)** | molécule correctement marquée | **≥ 95 %**, chromatographie couche mince (ITLC/r-TLC) [35] |\n| **Pureté radionucléidique** | « breakthrough » du ⁹⁹Mo parent | limite réglementaire (Mo-99 dans l'éluat) |\n| **Pureté chimique** | relargage d'aluminium (Al³⁺) | seuil pharmacopée |\n| Stérilité / apyrogénicité / pH | sécurité d'injection | tests dédiés |\n\nLes impuretés radiochimiques typiques du ⁹⁹ᵐTc sont le **pertechnétate libre ⁹⁹ᵐTcO₄⁻** (fixation thyroïde/estomac/salivaires) et le **⁹⁹ᵐTc hydrolysé-colloïdal (TcO₂)ₙ** (fixation hépatique/réticulo-endothéliale) [35,36]. Une PRC insuffisante se traduit directement par des fixations parasites à l'image.",
+          "steps": [
+            {
+              "title": "1. Étalonnage à l'activimètre",
+              "text": "Mesure de l'activité de la seringue à l'heure de référence ; correction de décroissance via A(t) = A₀·e^(−λt) jusqu'à l'heure d'injection [8]."
+            },
+            {
+              "title": "2. Contrôle de pureté radiochimique",
+              "text": "Chromatographie (ITLC/r-TLC) ; PRC exigée ≥ 95 % avant libération du lot [35]. Toute fixation parasite anticipée est tracée à cette étape."
+            },
+            {
+              "title": "3. Calage de la fenêtre d'énergie (peaking)",
+              "text": "Centrage sur le photopic du radionucléide (140 keV Tc-99m, 364 keV I-131) avant acquisition [22,14]."
+            },
+            {
+              "title": "4. Acquisition et correction de décroissance",
+              "text": "Comptage sur gamma-caméra/SPECT (γ) ou TEP (coïncidence 511 keV) ; les valeurs quantitatives sont corrigées de la décroissance physique [10]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "1 Bq",
+              "label": "= 1 désintégration/seconde (unité SI) [42,44]"
+            },
+            {
+              "value": "37 GBq",
+              "label": "= 1 Ci = 3,70 × 10¹⁰ Bq [43]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "Seuil de pureté radiochimique (ITLC) [35]"
+            },
+            {
+              "value": "364 keV",
+              "label": "Photopic γ de l'I-131 (théranostique) [14]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Équilibre du générateur ⁹⁹Mo/⁹⁹ᵐTc",
+              "text": "Le ⁹⁹Mo (T½ ~66 h [23]) décroît vers le ⁹⁹ᵐTc (T½ 6,01 h [22]) : la période du parent étant nettement plus longue que celle du fils, le système atteint un **équilibre transitoire** environ 23–24 h après l'élution précédente, moment où l'activité de ⁹⁹ᵐTc disponible est maximale [24,49]. C'est ce qui dicte le rythme d'élution quotidien des services. La même logique parent-fils régit le générateur **⁶⁸Ge/⁶⁸Ga** (parent T½ ~270,8 j), qui produit le ⁶⁸Ga sur place sans cyclotron [12,51]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — oublier la correction de décroissance",
+              "text": "Entre l'étalonnage du lot et l'injection, l'activité a déjà décru selon A(t) = A₀·e^(−λt). Pour un radionucléide à période courte, l'erreur est majeure : le **F-18 (T½ ≈ 110 min)** perd ~12 %/h, le **Ga-68 (T½ ≈ 68 min)** ~50 % par heure [10,12,50]. Toute activité administrée doit être recalculée à l'heure réelle d'injection, faute de quoi la dose délivrée et la quantification (SUV) sont fausses."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur molybdène-99 / technétium-99m : colonne d'alumine retenant le Mo-99 parent, élution au sérum physiologique du Tc-99m fils sous forme de pertechnétate, avec le profil d'équilibre transitoire atteint vers 23 heures."
+          }
+        },
+        {
+          "title": "D3 - Pièges, idées reçues et erreurs fréquentes sur la désintégration",
+          "text": "La physique de la désintégration recèle plusieurs contre-intuitions dont les conséquences sont concrètes au lit du patient : choix d'isotope, calcul d'activité, radioprotection, durée d'éviction. Voici les confusions les plus fréquentes, et leur correction.\n\n## Confusions de grandeurs et de lois\n\n- **« Demi-vie physique = durée d'action dans le patient. »** Faux. La grandeur cliniquement pertinente est la **période effective**, qui combine décroissance physique et élimination biologique : **1/T_eff = 1/T_phys + 1/T_biol**, soit T_eff = (T_phys·T_biol)/(T_phys+T_biol) [60,61]. Le **T_eff est toujours ≤ T_phys** [60]. L'écart peut être considérable : pour l'I-131 dans le cancer thyroïdien, le T_eff est d'environ **10,5 h après rhTSH vs 15,7 h après sevrage** [52], alors que la période physique est de 8,02 j [14]. Raisonner sur la seule période physique surestime l'irradiation et l'éviction.\n- **« La décroissance est linéaire / on peut extrapoler de tête. »** Faux : elle est **exponentielle** (A = A₀·e^(−λt)) [8,45]. Après n périodes, il reste (½)ⁿ de l'activité — soit ~50 % à 1 période, ~25 % à 2, ~12,5 % à 3 [46,48]. Un Tc-99m (T½ 6,01 h) injecté le matin a perdu près de **94 %** de son activité le lendemain [1,22].\n- **« 1 mCi ≈ 1 MBq. »** Erreur d'un facteur 37 : **1 mCi = 37 MBq** et **1 Ci = 37 GBq** [43]. Cette confusion d'unités est une source classique d'erreur de calcul d'activité.\n\n## Confusions sur le choix de l'émission\n\n- **« Le radio-isotope qui se voit le mieux est aussi le meilleur pour traiter. »** Faux, et c'est le cœur du sujet : pour **voir**, le rayonnement doit **sortir** (γ, β⁺) ; pour **traiter**, il doit **rester** (β⁻, α). Un émetteur γ pur comme le Tc-99m est idéal en imagerie mais inutile en thérapie ; un β⁻ pur comme l'Y-90 traite sans donner d'image native exploitable [20].\n- **« Le choix d'isotope change la cible biologique. »** Faux : pour un même vecteur, l'I-123 et l'I-131 ciblent exactement le même transporteur ; seules la qualité d'image et la dosimétrie diffèrent. C'est ce qui fonde la **paire théranostique** (on visualise avec l'un, on traite avec l'autre).\n- **« Capture électronique, conversion interne et électrons Auger sont négligeables. »** Faux. Ces émissions associées sont cliniquement importantes : les **rayons X caractéristiques** et **électrons Auger** (parcours nanométrique, fort potentiel cytotoxique s'ils sont internalisés près de l'ADN) sont un axe thérapeutique émergent ; la **capture électronique** accompagne nombre d'émetteurs β⁺ (ex. ~11 % pour le Ga-68 [12]).\n\n## Pièges de radioprotection et de préparation\n\n- **« Les α sont les plus dangereux, donc à blinder en priorité. »** À nuancer : en **irradiation externe**, les α sont arrêtés par une feuille de papier ou la couche cornée (< 100 µm de tissu) et ne traversent pas la peau [54]. Le danger réel des α est la **contamination interne** (inhalation, ingestion, injection), où leur TEL élevé dévaste les tissus de proximité. Le blindage se pense **par émission** : α → négligeable en externe ; **β⁻ → écran de bas Z** (plexiglas) pour limiter le rayonnement de freinage ; **γ → écran plombé** (le γ 364 keV de l'I-131 impose des chambres radioprotégées) [14].\n- **« Un examen négatif à forte suspicion = absence de cible. »** Souvent un **faux négatif iatrogène** : médicament interférent non arrêté, blocage thyroïdien insuffisant (iode libre → thyroïde/estomac), ou activité administrée erronée par oubli de correction de décroissance (§D2).\n\n## Pièges de population particulière\n\nLa désintégration ne s'arrête pas aux barrières physiologiques. Les radionucléides iodés se concentrent dans la **thyroïde fœtale** (active dès ~10–13 SA) et dans le **lait** : d'où une **contre-indication absolue** de la thérapie à l'I-131 pendant la grossesse, un **β-hCG sérique < 72 h** avant administration chez toute femme en âge de procréer, l'**interruption de l'allaitement** et un **délai avant grossesse de 4–6 mois** après traitement [37,38,39]. Ces consignes découlent directement des propriétés d'émission et de la biocinétique, pas d'une précaution générique.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège majeur — la période effective gouverne l'éviction, pas la période physique",
+              "text": "Estimer la durée pendant laquelle un patient reste « source » à partir de la seule **période physique** conduit à des consignes erronées. Le débit de dose à l'entourage décroît selon la **période effective** (T_eff ≤ T_phys [60]), qui intègre l'élimination urinaire et digestive. Pour l'I-131, le T_eff réel (~10,5 h après rhTSH [52]) est bien plus court que les 8,02 j physiques [14] : la libération conditionnelle du patient traité (ex. seuil de 5 mSv au public dans certaines juridictions) se fonde sur la cinétique effective mesurée, pas sur la décroissance physique théorique [62]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi la période impose un compromis logistique",
+              "text": "La période idéale n'est ni trop courte ni trop longue. **Trop courte** : la production, le transport et le marquage deviennent ingérables (le Ga-68, T½ ~68 min [12], impose une production sur place par générateur ou cyclotron). **Trop longue** : l'activité résiduelle prolonge inutilement l'irradiation et les contraintes de déchets (l'I-131, T½ 8 j, impose un stockage prolongé des effluents). Le choix d'un radionucléide arbitre toujours entre **logistique/biodistribution** (assez de période pour atteindre la cible) et **dosimétrie/radioprotection** (assez peu pour limiter la dose)."
+            },
+            {
+              "type": "info",
+              "title": "À retenir — les deux paramètres de sélection",
+              "text": "Le choix d'un radionucléide se ramène à deux questions : (1) **quel type d'émission ?** — γ/β⁺ pour voir, β⁻/α pour traiter ; (2) **quelle période ?** — physique pour la logistique, mais surtout **effective** pour la dose réelle. La décroissance suit A(t) = A₀·e^(−λt) avec λ = 0,693/T½, activité exprimée en becquerels (1 Ci = 37 GBq) [8,40,43]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Schéma de la boucle théranostique illustrant que le choix de l'émission sépare le diagnostic du traitement : un isotope émetteur gamma ou bêta-plus visualise la cible (le rayonnement sort), un isotope émetteur bêta-moins ou alpha la traite (l'énergie reste dans la lésion), les deux partageant le même vecteur biologique."
+          }
+        },
+        {
+          "title": "E1 - E1 - Synthèse, formulaire et points clés à retenir",
+          "text": "Cette section condense en une « page mémo » les **lois de décroissance**, les **propriétés d'émission** des trois modes (α, β, γ) et la **règle de choix** d'un radionucléide. Tout chiffre renvoie à sa source primaire ; les renvois (§) pointent vers les sections de l'article où la notion est développée.\n\n## Formulaire de la décroissance radioactive\n\nLa décroissance est un processus **aléatoire au niveau du noyau individuel mais déterministe statistiquement** sur une population [45]. Les quatre relations à maîtriser :\n\n| Grandeur | Formule | Notes |\n|---|---|---|\n| Nombre de noyaux | **N(t) = N₀ · e^(−λt)** | décroissance exponentielle [8,45,40] |\n| Activité | **A(t) = A₀ · e^(−λt)** ; **A = λ·N** | dérive directement de N(t) [8,9] |\n| Période ↔ constante | **T½ = ln2 / λ ≈ 0,693 / λ** | équivalent : λ = 0,693/T½ [8,46,48] |\n| Fraction restante | **(½)ⁿ** après n périodes | n = t/T½ [46,48] |\n\n**Unités.** L'activité s'exprime en **becquerel (Bq) = 1 désintégration/seconde** [42,44]. L'ancienne unité curie vaut **1 Ci = 3,7 × 10¹⁰ Bq = 37 GBq** (≈ activité de 1 g de ²²⁶Ra) [43,8]. Le becquerel honore **Henri Becquerel**, qui découvrit la radioactivité en 1896 [42].\n\n**Période effective — la grandeur clinique.** La décroissance réellement observée chez le patient combine décroissance **physique** et élimination **biologique** :\n\n**1/T_eff = 1/T_phys + 1/T_biol**, soit **T_eff = (T_phys · T_biol)/(T_phys + T_biol)** [60,61]. T_eff est **toujours ≤ T_phys** [60]. Exemple : T_eff du ¹³¹I dans le cancer thyroïdien ≈ **10,5 h après rhTSH vs 15,7 h après sevrage hormonal** [52] ; T_eff moyenne du ¹⁷⁷Lu-PSMA ≈ **40,5 ± 9,6 h** alors que sa T_phys est de **6,647 j** [17].\n\n## Les trois modes : carte d'identité physique\n\n| Mode | Particule émise | ΔZ / ΔA | Énergie typique | TEL (LET) | Parcours tissulaire | Rôle clinique |\n|---|---|---|---|---|---|---|\n| **α** | noyau d'⁴He (2 p + 2 n) | Z−2, A−4 | **5–9 MeV** [4,5] | **~80–100 keV/µm** [4,5] | **50–80 µm (< 100 µm)** [4,54] | thérapie ciblée (micrométastases) |\n| **β⁻** | électron + antineutrino | Z+1, A= | continu, ex. ¹⁷⁷Lu Emax **497 keV** [53] | **~0,2 keV/µm** [5] | **2–12 mm** [5] | thérapie (volumes tumoraux) |\n| **β⁺** | positon + neutrino → 2 γ de **511 keV à 180°** [10,11] | Z−1, A= | ex. ¹⁸F Emax **0,633 MeV** [10,11] | faible | mm | imagerie TEP |\n| **γ / TI** | photon | Z= , A= | ex. ⁹⁹ᵐTc **140,5 keV** [2,22] | très faible | très pénétrant (sort du corps) | imagerie SPECT/scinti |\n\nÉmissions associées à connaître : **capture électronique (CE)**, **conversion interne**, **rayons X caractéristiques**, **électrons Auger** (intérêt thérapeutique émergent, parcours nanométrique) — cf. §A4.\n\n## Règle de choix d'un radionucléide (cœur du sujet)\n\nLe choix dépend de **deux paramètres** : **(1) le type d'émission** et **(2) la période**.\n\n- **Le rayonnement doit-il SORTIR ou RESTER ?** → **γ / β⁺ = imagerie** (il faut détecter le rayonnement hors du patient) ; **α / β⁻ = thérapie** (l'énergie doit se déposer *dans* la lésion). C'est le couple **type d'émission ↔ parcours** qui décide [4,5,6].\n- **La période** doit être assez longue pour la logistique et la biodistribution, mais assez courte pour limiter la dose. Exemple : ⁹⁹ᵐTc (T½ **6,0067 h** [2]) → la majeure partie de l'activité injectée a décru le lendemain matin, ce qui minimise l'irradiation [1].",
+          "list": [
+            "**Désintégration radioactive** = transformation spontanée d'un noyau **instable** vers un état plus stable, avec émission de particules et/ou de photons ; aléatoire par noyau, **déterministe statistiquement** sur une population [45].",
+            "**α** : émission d'un noyau d'⁴He, **Z−2 / A−4**, énergie **5–9 MeV**, **TEL ~80–100 keV/µm**, parcours **< 100 µm** → dépôt d'énergie ultra-localisé, idéal en **alpha-thérapie ciblée** des micrométastases [4,5,54].",
+            "**β⁻** : neutron → proton + électron + antineutrino, **Z+1**, spectre continu, parcours **mm** → **thérapie** par effet de feu croisé (¹³¹I, ¹⁷⁷Lu, ⁹⁰Y) [5,14,53].",
+            "**β⁺** : proton → neutron + positon + neutrino, **Z−1** ; le positon s'annihile en **2 photons de 511 keV émis à 180°** → base de la **TEP** (¹⁸F, ⁶⁸Ga) [10,11].",
+            "**γ / transition isomérique** : photon émis par un noyau métastable **sans changement de Z ni A** ; ⁹⁹ᵐTc est l'archétype (TI pure, **140,5 keV**) → base de la **scintigraphie/SPECT** [2,22].",
+            "Lois clés : **N(t)=N₀·e^(−λt)**, **A(t)=A₀·e^(−λt)**, **A=λN**, **T½=0,693/λ** ; unité SI = **Bq**, **1 Ci = 37 GBq** [8,9,42,43].",
+            "**Période effective** : **1/T_eff = 1/T_phys + 1/T_biol** (toujours ≤ T_phys) — paramètre déterminant pour la dosimétrie patient [60,61].",
+            "Stabilité nucléaire : excès de neutrons → **β⁻** ; excès de protons → **β⁺ ou CE** ; noyaux très lourds → **α** ; excès d'énergie (état métastable) → **γ/TI** (cf. §A2).",
+            "**Règle d'or du choix** : type d'émission (γ/β⁺ = voir ; α/β⁻ = traiter) **et** période adaptée à la logistique/biodistribution sans surdoser [4,5,6].",
+            "Repères dosimétriques diagnostiques (CIPR 128) : **¹⁸F-FDG 0,019 mSv/MBq** (~7,0 mSv pour 370 MBq) [57], **⁹⁹ᵐTc-MDP ~0,0057 mSv/MBq** (~4,2 mSv pour 740 MBq) [33], **⁶⁸Ga-DOTATATE ~0,023 mSv/MBq** [58]."
+          ],
+          "stats": [
+            {
+              "value": "0,693/T½",
+              "label": "Constante de désintégration λ [8]"
+            },
+            {
+              "value": "37 GBq",
+              "label": "Équivalent de 1 curie [43]"
+            },
+            {
+              "value": "< 100 µm",
+              "label": "Parcours tissulaire des α [4,54]"
+            },
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation β⁺ (×2, 180°) [10]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la cible est indépendante de l'isotope",
+              "text": "Au sein d'une paire théranostique, l'isotope diagnostique et l'isotope thérapeutique visent **la même cible biologique** (ex. ¹⁸F/⁶⁸Ga pour voir, ¹⁷⁷Lu pour traiter dans une logique PSMA ou DOTATATE). Le mode d'émission ne change que la qualité d'image et la dosimétrie, jamais le ciblage. C'est ce qui fonde la boucle **imager → traiter** : ⁶⁸Ga-DOTATATE/¹⁷⁷Lu-DOTATATE, ⁶⁸Ga-PSMA/¹⁷⁷Lu-PSMA-617 [16,50,53]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — confondre dose absorbée et dose efficace",
+              "text": "La **dose absorbée** (Gy) quantifie l'énergie déposée par unité de masse dans un organe ; la **dose efficace** (mSv) la pondère par radiosensibilité tissulaire pour estimer le risque stochastique corps entier. En diagnostic on raisonne en **coefficient de dose efficace (mSv/MBq)** issu de la CIPR 128 [55,56] — ex. **¹⁸F-FDG : 0,019 mSv/MBq** [57]. En thérapie α/β⁻, c'est la **dose absorbée à la cible et aux organes à risque** (Gy) qui gouverne, pas la dose efficace."
+            },
+            {
+              "type": "info",
+              "title": "Mémo des cinq constantes",
+              "text": "becquerel = **1 désint./s** [42,44] ; **1 Ci = 37 GBq** [43] ; **λ = 0,693/T½** [8] ; annihilation β⁺ → **2 × 511 keV à 180°** [10] ; α : parcours **< 100 µm**, β : **mm**, γ : **traverse le corps** [4,5]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schéma comparatif des trois modes de désintégration : la particule α (noyau d'hélium, parcours < 100 µm), l'électron β (parcours millimétrique) et le photon γ (très pénétrant, traversant le tissu), illustrant le couple type d'émission ↔ parcours qui distingue imagerie et thérapie.",
+            "caption": "Fig. E1 — α, β, γ : pouvoir de pénétration croissant et règle de choix (rayonnement qui reste = thérapie ; rayonnement qui sort = imagerie)."
+          }
+        },
+        {
+          "title": "E2 - E2 - FAQ, cas d'application et quiz d'ancrage",
+          "text": "Cette section anticipe les questions du résident, applique les lois de décroissance à des situations concrètes, puis propose un quiz d'ancrage. Chaque réponse renvoie à sa source.\n\n## FAQ — pièges classiques\n\n**Pourquoi un émetteur γ pur comme le ⁹⁹ᵐTc est-il idéal en imagerie ?** Parce que le photon **n'a aucune particule chargée associée** (transition isomérique pure) : il dépose peu de dose et son énergie de **140,5 keV** est parfaitement détectée par la γ-caméra, tout en traversant le patient [2,22]. C'est la raison pour laquelle ⁹⁹ᵐTc représente l'essentiel des examens diagnostiques de médecine nucléaire [22].\n\n**Pourquoi le β⁺ produit-il deux photons et pas un ?** Le positon émis s'annihile avec un électron du milieu : leurs masses se convertissent en énergie selon E = mc², donnant **deux photons de 511 keV émis à 180°** (conservation de la quantité de mouvement). La détection en **coïncidence** de cette paire est le principe même de la TEP [10,11].\n\n**Pourquoi l'α est-il réservé à la thérapie et jamais à l'imagerie ?** Son parcours tissulaire est **< 100 µm** [4,54] : le rayonnement ne sort pas du patient, donc rien à détecter de l'extérieur. En revanche, ce dépôt d'énergie massif (**TEL ~80–100 keV/µm** [4]) sur quelques diamètres cellulaires crée des **cassures double brin groupées (« clustered ») peu réparables** [41] — l'arme idéale contre les micrométastases.\n\n**β⁻ ou α : comment trancher en thérapie ?** Le **β⁻** (parcours **2–12 mm** [5]) exploite l'effet de **feu croisé** : utile sur des tumeurs **volumineuses et hétérogènes** où toutes les cellules n'ont pas fixé le traceur. L'**α** (parcours **< 100 µm**) est plus adapté aux **petites lésions / atteintes micrométastatiques** où il épargne les tissus sains voisins [4,5,54].\n\n**Période physique ou effective : laquelle compte pour la dose au patient ?** La **période effective**, car elle intègre l'élimination biologique : **1/T_eff = 1/T_phys + 1/T_biol**, et **T_eff ≤ T_phys** [60,61]. Une élimination rénale/urinaire rapide raccourcit T_eff et diminue la dose (d'où l'hydratation et les mictions fréquentes).\n\n**Pourquoi le ¹³¹I est-il dit « théranostique » à lui seul ?** Parce qu'il émet **à la fois** un β⁻ thérapeutique (**Emax ~606 keV** [14]) et un γ imageable (**364 keV** [14,15]) : on peut donc traiter et imager le traitement avec le même isotope. Inconvénient : ce γ de 364 keV très pénétrant impose des **chambres radioprotégées** [15].\n\n## Cas d'application — la décroissance en pratique\n\n**Cas 1 — Décroissance du ⁹⁹ᵐTc d'un jour à l'autre.** *Contexte* : une activité de ⁹⁹ᵐTc-MDP est éluée le soir ; combien en reste-t-il ~18 h plus tard ? *Calcul* : T½ = 6,0067 h [2], donc en 18 h ≈ 3 périodes → fraction restante = (½)³ = **1/8 ≈ 12,5 %** [46,48]. *Conclusion* : la quasi-totalité de l'activité a décru, ce qui illustre pourquoi la T½ courte du ⁹⁹ᵐTc minimise l'irradiation tout en restant compatible avec une imagerie le jour même [1].\n\n**Cas 2 — Logistique du ¹⁸F-FDG et péremption.** *Contexte* : un site sans cyclotron reçoit une livraison de ¹⁸F-FDG (T½ **109,77 min** [10]). *Calcul* : après ~3,5 h (≈ 2 périodes), il ne reste que **~25 %** de l'activité [46]. *Conclusion* : la **courte période** du ¹⁸F (production cyclotron) impose une chaîne logistique tendue et explique pourquoi ⁶⁸Ga (T½ **68 min** [12], générateur ⁶⁸Ge/⁶⁸Ga sur place [12,51]) est parfois préféré pour s'affranchir du cyclotron.\n\n**Cas 3 — Sélection d'un émetteur pour métastases osseuses du cancer de la prostate.** *Contexte* : CPRC symptomatique avec métastases osseuses multiples. *Raisonnement* : le **²²³Ra** (Xofigo, T½ **11,4 j**) émet des **α** (parcours **< 100 µm**) ciblant l'ostéogenèse en mimant le calcium ; son essai pivot **ALSYMPCA** a montré une survie globale médiane **14,9 vs 11,3 mois** et un délai au 1ᵉʳ événement osseux symptomatique **15,6 vs 9,8 mois** [18,54]. *Conclusion* : un **α-émetteur** à parcours ultracourt est le choix rationnel pour une atteinte osseuse diffuse où l'on veut épargner la moelle adjacente.\n\n## Quiz d'ancrage\n\n1. *Quelle relation lie la période et la constante de désintégration ?* → **T½ = 0,693/λ** [8]. \n2. *Combien de photons l'annihilation d'un positon produit-elle, et à quelle énergie ?* → **deux photons de 511 keV émis à 180°** [10]. \n3. *Quel mode de désintégration n'entraîne aucune variation de Z ni de A ?* → la **transition isomérique / émission γ** (ex. ⁹⁹ᵐTc) [2]. \n4. *Vrai/Faux : la période effective peut être supérieure à la période physique.* → **Faux**, T_eff ≤ T_phys toujours [60]. \n5. *Pourquoi l'α convient-il à la thérapie mais pas à l'imagerie ?* → parcours **< 100 µm**, ne sort pas du corps, mais TEL très élevé déposé localement [4,54]. \n6. *Quelle est la valeur de 1 curie en becquerels ?* → **3,7 × 10¹⁰ Bq = 37 GBq** [43].",
+          "steps": [
+            {
+              "title": "Étape 1 — Identifier l'objectif",
+              "text": "Imager (détecter hors du corps) ou traiter (déposer l'énergie dans la lésion) ? Cela fixe la famille d'émission : **γ/β⁺ = imagerie**, **α/β⁻ = thérapie** [4,5,6]."
+            },
+            {
+              "title": "Étape 2 — Choisir le mode d'émission",
+              "text": "Imagerie : γ pur (⁹⁹ᵐTc, 140,5 keV [2]) pour SPECT, β⁺ (¹⁸F/⁶⁸Ga [10,12]) pour TEP. Thérapie : β⁻ (¹³¹I, ¹⁷⁷Lu, ⁹⁰Y [14,53]) pour volumes, α (²²³Ra [18]) pour micrométastases osseuses."
+            },
+            {
+              "title": "Étape 3 — Vérifier la période",
+              "text": "Assez longue pour la logistique et la biodistribution du vecteur, assez courte pour limiter la dose : ⁹⁹ᵐTc 6 h [2], ¹⁸F 110 min [10], ¹³¹I 8,02 j [14], ²²³Ra 11,4 j [18]."
+            },
+            {
+              "title": "Étape 4 — Raisonner sur la période effective",
+              "text": "Intégrer l'élimination biologique : **1/T_eff = 1/T_phys + 1/T_biol** pour estimer la dose réelle au patient et aux organes à risque [60,61]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège de QCM — « gamma » n'est pas une désintégration au sens strict",
+              "text": "L'émission γ (transition isomérique) ne modifie ni Z ni A : ce n'est pas une transmutation mais une **désexcitation** d'un noyau déjà formé dans un état métastable. Un QCM qui demande « lequel change le nombre de masse A ? » exclut donc le γ ; seul l'α change A (−4) [2,7,47]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — penser en nombre de périodes",
+              "text": "Pour estimer mentalement une activité résiduelle, comptez les périodes (n = t/T½) et appliquez **(½)ⁿ** : 1 T½ → 50 %, 2 → 25 %, 3 → 12,5 %, ~3,3 → 10 %, 10 → ~0,1 % [46,48]. Inutile de sortir l'exponentielle pour une estimation clinique rapide."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence en TEP : annihilation d'un positon issu d'une désintégration β⁺, émission de deux photons de 511 keV à 180°, captés simultanément par deux détecteurs opposés de l'anneau pour reconstruire la ligne de réponse.",
+            "caption": "Fig. E2 — De la désintégration β⁺ à l'image TEP : annihilation → 2 photons de 511 keV à 180° → détection en coïncidence."
+          }
+        },
+        {
+          "title": "E3 - E3 - Références, sources primaires & liens",
+          "text": "Références sourcées et datées, classées par thème. Les **valeurs physiques** (périodes, énergies, lois, becquerel/curie) sont des constantes nucléaires concordantes entre sources tertiaires (bases NNDC/Wikipedia, fiches fabricants) ; les **valeurs cliniques** (activités, coefficients de dose, essais) proviennent de référentiels **EANM / SNMMI / CIPR** et de sources primaires datées. Aucun DOI, PMID ou URL n'a été inventé.\n\n## Lois de décroissance & grandeurs fondamentales\n\n- **[8]** 31.5 Half-Life and Activity — Physics LibreTexts / OpenStax College Physics (N(t)=N₀e^(−λt), A=λN, becquerel, 1 Ci = 3,7×10¹⁰ Bq). \n- **[9]** Activity, Decay Constant and Half-Life (A=λN) — Mini Physics. \n- **[40]** Radioactive Decay Law — BYJU'S Physics. \n- **[45]** Radioactive decay — Wikipedia (caractère aléatoire/déterministe statistique). \n- **[46]** Half Life Radiation: Essential Facts About Decay Formulas — Liv Hospital (fraction (½)ⁿ). \n- **[48]** Chapter 3 — Radioactive Decay Laws / Half-life — University of Oslo. \n- **[42]** Becquerel — Britannica (Henri Becquerel 1896 ; définition de λ). \n- **[43]** Becquerel — Unit of Radioactivity — nuclear-power.com (1 Ci ≈ activité de 1 g de ²²⁶Ra). \n- **[44]** Becquerel (Bq) — U.S. NRC Glossary (1 désintégration/seconde).\n\n## Types de désintégration (α, β, γ) & propriétés d'émission\n\n- **[7]** Types of Radioactivity: Alpha, Beta, and Gamma Decay — Chemistry LibreTexts. \n- **[47]** Radioactive Decay | Alpha, Beta, Gamma — ChemTalk (β⁺, énergies γ 0,1–10 MeV). \n- **[4]** Alpha-Emitting Radionuclides: Current Status and Future Perspectives — PMC10821197 (TEL, parcours < 100 µm). \n- **[5]** Alpha and Beta Emitters in Translational Nuclear Medicine — PMC12985603 (TEL, parcours β 2–12 mm). \n- **[41]** Ra-223 induces clustered DNA damage… — ScienceDirect S1936523322002029. \n- **[6]** Physics, Radiation and Cameras — British Nuclear Cardiology Society (détection du γ pour l'imagerie). \n- **[10]** Fluorine-18 — Wikipedia (T½ 109,77 min ; β⁺ ; 511 keV). \n- **[11]** Fludeoxyglucose F 18 Injection — FDA label NDA 21-870.\n\n## Période effective (physique × biologique)\n\n- **[60]** Effective, physical and biological half-life — WikiLectures. \n- **[61]** The Half-Lives: Physical, Biological, and Effective — nucmedtutorials. \n- **[52]** ¹³¹I Effective Half-Life and Dosimetry in Thyroid Cancer Patients — J Nucl Med 49(9):1445. \n- **[17]** External radiation exposure, excretion, and effective half-life in ¹⁷⁷Lu-PSMA therapies — PMC5897276.\n\n## Radionucléides diagnostiques (γ, β⁺) & générateurs\n\n- **[1]** Technetium-99m in Nuclear Medicine Imaging — Stanford (PH241). \n- **[2]** Technetium-99m — Wikipedia (T½ 6,0067 h ; γ 140,5 keV ; TI pure). \n- **[3]** Technetium-99m (⁹⁹ᵐTc) Fact Sheet 320-083 — Washington State DoH. \n- **[22]** Molybdenum-99/Technetium-99m Production and Use — NCBI NBK215133 (~80 % des examens). \n- **[23]** Mo-99 (fission) Fact Sheet — Nordion (T½ Mo-99 ≈ 66 h). \n- **[24]** Technetium-99m generator — Wikipedia (équilibre transitoire, alumine, NaCl). \n- **[49]** Mo99-Tc99m Generator — StatPearls NCBI NBK565854. \n- **[12]** Gallium-68 generator — Wikipedia (T½ 68 min ; ⁶⁸Ge T½ 270,8 j). \n- **[51]** Gallium 68 — overview, ScienceDirect Topics. \n- **[50]** [⁶⁸Ga]Ga-PSMA-11: First FDA-Approved ⁶⁸Ga-Radiopharmaceutical — PMC8401928. \n- **[13]** Gallium Dotatate Ga 68 — ScienceDirect Topics.\n\n## Radionucléides thérapeutiques (β⁻, α) & essais\n\n- **[14]** Iodine-131 — radiacode isotope database (T½ 8,02 j ; β⁻ 606 keV ; γ 364 keV). \n- **[15]** Iodine-131 — CDC Radiation Emergencies. \n- **[16]** Lutetium-177 PSMA — intheranostics. \n- **[53]** EANM dosimetry committee recommendations for ¹⁷⁷Lu-labelled SSTR/PSMA ligands — PMC9015994 (β⁻ Emax 497 keV ; γ 113/208 keV). \n- **[18]** Radium-223 — Wikipedia (T½ 11,4 j ; α ; parcours < 100 µm). \n- **[19]** Radium Ra 223 Dichloride (Xofigo) — Aetna CPB 0874. \n- **[54]** Radium-223 dichloride in CRPC & bone metastases — PMC4467240 (ALSYMPCA : SG 14,9 vs 11,3 mois ; 1ᵉʳ événement osseux 15,6 vs 9,8 mois). \n- **[20]** Yttrium-90 Radioembolization — Endovascular Today (β⁻ pur Emax 2,27 MeV). \n- **[21]** AAPM MPPG 14.a — ⁹⁰Y microsphere radioembolization (2024).\n\n## Dosimétrie patient (CIPR 128) & activités EANM/SNMMI\n\n- **[55]** ICRP Publication 128 — Radiation Dose to Patients from Radiopharmaceuticals — SAGE Journals. \n- **[56]** Radiation Dose to Patients in Diagnostic Nuclear Medicine — ICRP page 718. \n- **[57]** Patient Size-Dependent Dosimetry… ¹⁸F-FDG (ICRP mesh phantoms) — J Nucl Med 62(12):1805 (FDG 0,019 mSv/MBq). \n- **[58]** Comparative Dosimetry for ⁶⁸Ga-DOTATATE — J Nucl Med (≈ 0,023 mSv/MBq). \n- **[59]** Radiation dosimetry of [⁶⁸Ga]PSMA-11 — EJNMMI Physics 2018 (≈ 0,022 mSv/MBq). \n- **[33]** Radiation Exposure during ⁹⁹ᵐTc-MDP Bone Scintigraphy — MDPI Toxics 11(10):814 (~4,2 mSv pour 740 MBq). \n- **[34]** Radiation dosimetry for ⁹⁹ᵐTc-MAG3, -DTPA and ¹³¹I-OIH — J Nucl Med 33(1):33. \n- **[25]** EANM Paediatric Dosage Card (2016) — EANM. \n- **[26]** Dosage Card — EANM Initiatives. \n- **[27]** EANM paediatric dosage card: additional notes (F-18) — PubMed 18574583. \n- **[28]** Effect of modern PET technology on the EANM paediatric dosage card — PMC9016049. \n- **[29]** EuroNet PHL-C2: proposal to update the EANM Paediatric Dosage Card (¹⁸F-FDG) — PMC10774179. \n- **[30]** EANM practice guidelines for bone scintigraphy (2016) — Eur J Nucl Med Mol Imaging.\n\n## Préparation, contrôle qualité & guides cliniques\n\n- **[31]** FDG PET/CT: EANM procedure guidelines for tumour imaging v2.0 — PMC4315529. \n- **[32]** EANM/SNMMI Guideline for ¹⁸F-FDG in Inflammation and Infection — J Nucl Med 54(4):647. \n- **[35]** Quality control on radiochemical purity in ⁹⁹ᵐTc radiopharmaceuticals (2280 procedures) — PMC6166199. \n- **[36]** A new two-strip TLC method for QC of ⁹⁹ᵐTc-MAG3 — PMC5852202. \n- **[37]** EANM guideline on radioiodine therapy of benign thyroid disease (2023) — Eur J Nucl Med Mol Imaging. \n- **[38]** SNMMI Practice Guideline for Therapy of Thyroid Disease with ¹³¹I 3.0 — J Nucl Med 53(10):1633. \n- **[39]** Sodium Iodide I 131 — LactMed, NCBI NBK501563. \n- **[62]** Recombinant TSH vs Thyroid Hormone Withdrawal for ¹³¹I Therapy with Dosimetry — PMC11965782.\n\n## Liens sortants typés (carte de l'article)\n\n- **Examens** : Scintigraphie/SPECT (γ) · TEP (β⁺) · Scintigraphie osseuse au ⁹⁹ᵐTc-MDP · TEP au ¹⁸F-FDG · Générateur ⁶⁸Ge/⁶⁸Ga. \n- **Traceurs** : ⁹⁹ᵐTc · ¹⁸F-FDG · ⁶⁸Ga-DOTATATE / ⁶⁸Ga-PSMA-11 · ¹³¹I · ¹⁷⁷Lu · ²²³Ra · ⁹⁰Y. \n- **Théranostique** : ⁶⁸Ga/¹⁷⁷Lu-DOTATATE (TNE) · ⁶⁸Ga/¹⁷⁷Lu-PSMA (prostate) · ¹²³I/¹³¹I (thyroïde). \n- **Concepts liés** : période physique / biologique / effective · dose absorbée (Gy) vs dose efficace (mSv) · TEL (LET).\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). Article de bases physiques : les volets « instrument/CQ », « sémiologie d'organe » et « Se/Sp » du gabarit Examen sont sans objet et remplacés par les rubriques physiques pertinentes (lois, émissions, dosimétrie).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note de fiabilité",
+              "text": "Les constantes physiques (T½, énergies, 1 Bq = 1 désint./s, 1 Ci = 37 GBq, lois exponentielles) sont robustes et multi-sources concordantes. Les coefficients CIPR 128 (¹⁸F-FDG 0,019 mSv/MBq [57] ; ⁹⁹ᵐTc-MDP ~4,2 mSv pour 740 MBq [33]) sont confirmés par sources secondaires ; pour un usage réglementaire, se reporter au texte CIPR 128 lui-même [55]. Le détail des raies γ du ¹⁷⁷Lu (113/208 keV [53]) mérite une vérification page-à-page sur la source primaire."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
