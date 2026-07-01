@@ -1,0 +1,1399 @@
+{
+  "id": "V2_PANORAMA_RADIOPHARMA",
+  "type": "autre",
+  "cat": "radiopharmacie",
+  "catLabel": "Radiopharmacie",
+  "title": "Panorama des principaux radiopharmaceutiques",
+  "difficulty": "fondamental",
+  "tags": [
+    "radiopharmaceutiques",
+    "99mTc",
+    "18F",
+    "traceurs",
+    "générateur 99Mo/99mTc",
+    "cyclotron",
+    "théranostique",
+    "68Ga-PSMA",
+    "177Lu-DOTATATE",
+    "223Ra",
+    "dosimétrie CIPR 128",
+    "18F-FDG"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "Technetium-99m — Wikipedia (propriétés physiques : 140 keV, période 6 h, décroissance en 99Tc 2,13×10^5 ans)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m",
+      "verified": true
+    },
+    {
+      "title": "Technetium-99m generator — Wikipedia (principe du générateur 99Mo/99mTc)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m_generator",
+      "verified": true
+    },
+    {
+      "title": "IAEA Human Health Campus — 99Mo → 99mTc radionuclide principles",
+      "url": "https://humanhealth.iaea.org/HHW/Radiopharmacy/VirRad/Eluting_the_Generator/Generator_Module/99Mo_-_99mTc_radionuclide_principles/index.html",
+      "verified": true
+    },
+    {
+      "title": "Molybdenum-99 production pathways and the sorbents for 99Mo/99mTc generator systems using (n, γ) 99Mo: a review — Discover Applied Sciences (Springer) 2020",
+      "url": "https://link.springer.com/article/10.1007/s42452-020-03524-1",
+      "verified": true
+    },
+    {
+      "title": "Quality assurance of Mo-99/Tc-99m radionuclide generators (limites de breakthrough 99Mo : USP 0,15 kBq/MBq, Ph. Eur. 0,1 kBq/MBq)",
+      "url": "https://www.researchgate.net/publication/323890513_Quality_assurance_of_Mo-99Tc-99m_radionuclide_generators",
+      "verified": true
+    },
+    {
+      "title": "EANM Paediatric Dosage Card (initiatives / dosage-card) — mise à jour août 2016",
+      "url": "https://www.eanm.org/initiatives/dosage-card/",
+      "verified": true
+    },
+    {
+      "title": "Dosage card — EANM (publications / useful resources)",
+      "url": "https://eanm.org/publications/useful-resources/dosage-card/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline on Pediatric 18F-FDG PET/CT for Oncology 1.0 — JNM 62(1):99 (activités pédiatriques FDG)",
+      "url": "https://jnm.snmjournals.org/content/62/1/99",
+      "verified": true
+    },
+    {
+      "title": "[18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0 — ScienceDirect (EANM Journal 2025, DOI 10.1016/j.eanmj.2025.100006)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065",
+      "verified": true
+    },
+    {
+      "title": "EANM procedure guidelines for brain PET imaging using [18F]FDG, version 3 — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8803744/",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Applied to 18F-FDG Using ICRP Mesh Phantoms — JNM 62(12):1805 (dose efficace 0,019 mSv/MBq, ICRP 128)",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805",
+      "verified": true
+    },
+    {
+      "title": "Analysis of EuroNet PHL-C2 data: proposal to update the EANM Paediatric Dosage Card — EJNMMI 2023 (baisse des activités FDG pédiatriques)",
+      "url": "https://link.springer.com/article/10.1007/s00259-023-06396-w",
+      "verified": true
+    },
+    {
+      "title": "ASNC imaging guidelines for SPECT nuclear cardiology: Stress, protocols, and tracers — J Nucl Cardiol (Springer) 2015 (activités sestamibi/tétrofosmine)",
+      "url": "https://link.springer.com/article/10.1007/s12350-015-0387-x",
+      "verified": true
+    },
+    {
+      "title": "EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT: 2015 revision (PDF EANM)",
+      "url": "https://eanm.org/wp-content/uploads/2025/04/2015_myocardial_perfusion.pdf",
+      "verified": true
+    },
+    {
+      "title": "Sodium Iodide I-131 — StatPearls / NCBI Bookshelf (β−/γ 364 keV, période 8 j, activités thérapeutiques thyroïde)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK556145/",
+      "verified": true
+    },
+    {
+      "title": "The SNMMI Practice Guideline for Therapy of Thyroid Disease with 131I 3.0 — JNM 53(10):1633",
+      "url": "https://jnm.snmjournals.org/content/53/10/1633",
+      "verified": true
+    },
+    {
+      "title": "Dynamic Bone Imaging with 99mTc-Labeled Diphosphonates and 18F-NaF — JNM 54(4):590 (chimisorption/hydroxyapatite, dose efficace MDP 0,0057 mSv/MBq)",
+      "url": "https://jnm.snmjournals.org/content/54/4/590",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Practice Guideline for Bone Scintigraphy 4.0 (2023, PDF SNMMI)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2023/Bone%20Scintigraphy_UPDATED2024.pdf",
+      "verified": true
+    },
+    {
+      "title": "The SNMMI and EANM practice guideline for renal scintigraphy in adults (DMSA/DTPA/MAG3) 2018 (PDF)",
+      "url": "https://nephroscan.com/wp-content/uploads/2022/02/2018-SNMMI-EANM-DMSA-adult-guidelines.pdf",
+      "verified": true
+    },
+    {
+      "title": "Diuretic Renal Scintigraphy Protocol Considerations — J Nucl Med Technol 50(4):309 (MAG3 tubulaire, DTPA glomérulaire, activités)",
+      "url": "https://tech.snmjournals.org/content/50/4/309",
+      "verified": true
+    },
+    {
+      "title": "Tailoring 99mTc-Macroaggregated Albumin Administration to Optimize Patient Dose Reduction — J Nucl Med Technol 43(3):220 (nombre de particules MAA 200 000–700 000)",
+      "url": "https://tech.snmjournals.org/content/43/3/220",
+      "verified": true
+    },
+    {
+      "title": "99mTc technegas ventilation and perfusion lung scintigraphy for the diagnosis of pulmonary embolus — PubMed 10210216",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10210216/",
+      "verified": true
+    },
+    {
+      "title": "Prostate-specific membrane antigen PET-CT in patients with high-risk prostate cancer before curative-intent surgery or radiotherapy (proPSMA) — The Lancet 2020",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30314-7/abstract",
+      "verified": true
+    },
+    {
+      "title": "EAU 2020: ProPSMA Study — UroToday (précision 92% vs 65%, dose 8,4 vs 19,2 mSv, changements de prise en charge)",
+      "url": "https://www.urotoday.com/conference-highlights/eau-2020/prostate-cancer/123157-eau-2020-propsma-study.html",
+      "verified": true
+    },
+    {
+      "title": "FDA Approval Summary: Lutetium Lu 177 Vipivotide Tetraxetan (177Lu-PSMA-617) for mCRPC — PMC (VISION, 7,4 GBq)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10159870/",
+      "verified": true
+    },
+    {
+      "title": "FDA approves 177Lu-PSMA-617 for PSMA-positive mCRPC — Urology Times (approbation 23 mars 2022)",
+      "url": "https://www.urologytimes.com/view/fda-approves-177lu-psma-617-for-psma-positive-mcrpc",
+      "verified": true
+    },
+    {
+      "title": "FDA approves expanded label for 177Lu-PSMA-617 in mCRPC — Urology Times (extension 28 mars 2025, PSMAfore)",
+      "url": "https://www.urologytimes.com/view/fda-approves-expanded-label-for-177lu-psma-617-in-mcrpc",
+      "verified": true
+    },
+    {
+      "title": "EAU-EANM-ESTRO-ESUR-ISUP-SIOG Guidelines on Prostate Cancer. Part II—2024 Update — European Urology",
+      "url": "https://www.europeanurology.com/article/S0302-2838(24)02306-6/fulltext",
+      "verified": true
+    },
+    {
+      "title": "Final overall survival, phase 3 NETTER-1 study of 177Lu-DOTATATE — JCO 2021 abstr 4112",
+      "url": "https://ascopubs.org/doi/10.1200/JCO.2021.39.15_suppl.4112",
+      "verified": true
+    },
+    {
+      "title": "Dosimetry of [177Lu]Lu-DOTATATE in Patients with Advanced Midgut NETs: substudy of Phase III NETTER-1 — JNM 66(3):449",
+      "url": "https://jnm.snmjournals.org/content/66/3/449",
+      "verified": true
+    },
+    {
+      "title": "ALSYMPCA Trial: Updated Analysis of Survival With Radium-223 — ASCO Post (55 kBq/kg ×6, SG 14,9 vs 11,3 mois, HR 0,70)",
+      "url": "https://ascopost.com/issues/october-15-2013/alsympca-trial-updated-analysis-of-survival-with-radium-223-treatment-in-metastatic-prostate-cancer/",
+      "verified": true
+    },
+    {
+      "title": "Radium-223 for Advanced Prostate Cancer — NCI (mécanisme α, métastases osseuses)",
+      "url": "https://www.cancer.gov/types/prostate/research/radium-223-improves-survival",
+      "verified": true
+    },
+    {
+      "title": "Generator-produced rubidium-82 PET myocardial perfusion imaging — J Cardiol (ScienceDirect) 2010 (82Rb période ~76 s, générateur 82Sr/82Rb 4–6 sem)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0914508710000109",
+      "verified": true
+    },
+    {
+      "title": "MIBG (metaiodobenzylguanidine) theranostics in pediatric and adult malignancies — PMC (123I/131I-MIBG, NET/uptake-1, neuroblastome >90% avides)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6475939/",
+      "verified": true
+    },
+    {
+      "title": "Molecular Imaging and Therapy of Neuroendocrine Tumors — NCBI Bookshelf (90Y SIR-spheres, radioembolisation hépatique)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK599137/",
+      "verified": true
+    },
+    {
+      "title": "Mo99 - Tc99m Generator - StatPearls - NCBI Bookshelf (NBK565854)",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK565854/",
+      "verified": true
+    },
+    {
+      "title": "RADIOPHARMACY: AN UPDATE — A TECHNOLOGIST'S GUIDE (EANM 2019)",
+      "url": "https://eanm.org/wp-content/uploads/2024/06/EANM_2019_TechGuide.pdf",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (Mattsson et al., Ann ICRP 2015)",
+      "url": "https://journals.sagepub.com/doi/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Applied to 18F-FDG Using New ICRP Mesh Phantoms (PMC8612182)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8612182/",
+      "verified": true
+    },
+    {
+      "title": "Radiobiological risks in effective/organ dose from 18F-FDG whole-body PET/CT (PMC8459160)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8459160/",
+      "verified": true
+    },
+    {
+      "title": "Human Radiation Dosimetry for Orally and Intravenously Administered 18F-FDG (J Nucl Med 61(4):613)",
+      "url": "https://jnm.snmjournals.org/content/61/4/613",
+      "verified": true
+    },
+    {
+      "title": "A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG (PMC9908780)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9908780/",
+      "verified": true
+    },
+    {
+      "title": "Gallium 68 - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/gallium-68",
+      "verified": true
+    },
+    {
+      "title": "Fluorine-18 - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/fluorine-18",
+      "verified": true
+    },
+    {
+      "title": "Synthesis of Fluorine-18 for PET Imaging | Open Medscience",
+      "url": "https://openmedscience.com/synthesis-of-fluorine-18-for-advanced-pet-imaging/",
+      "verified": true
+    },
+    {
+      "title": "Rubidium 82 - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/rubidium-82",
+      "verified": true
+    },
+    {
+      "title": "Cardiac PET - Wikipedia (82Rb, 13N-ammonia)",
+      "url": "https://en.wikipedia.org/wiki/Cardiac_PET",
+      "verified": true
+    },
+    {
+      "title": "Phase 3 Trial of 177Lu-Dotatate for Midgut Neuroendocrine Tumors (NETTER-1, NEJM 2017)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1607427",
+      "verified": true
+    },
+    {
+      "title": "Phase 3 Trial of 177Lu-Dotatate for Midgut NETs (NETTER-1, PMC5895095)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5895095/",
+      "verified": true
+    },
+    {
+      "title": "Cost-Effectiveness of [177Lu]Lu-DOTATATE based on the NETTER-2 Trial (PMC12212402)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12212402/",
+      "verified": true
+    },
+    {
+      "title": "Positive survival data for 177Lu-PSMA-617 published in NEJM (VISION) — Novartis",
+      "url": "https://www.novartis.com/news/media-releases/positive-survival-data-novartis-investigational-radioligand-therapy-177lu-psma-617-published-new-england-journal-medicine",
+      "verified": true
+    },
+    {
+      "title": "VISION Trial: Lu-177–PSMA-617 Prolongs Survival in mCRPC — The ASCO Post (June 2021)",
+      "url": "https://ascopost.com/news/june-2021/vision-trial-lu-177-psma-617-radioligand-therapy-prolongs-survival-in-metastatic-castration-resistant-prostate-cancer/",
+      "verified": true
+    },
+    {
+      "title": "Radium-223 Dichloride (Xofigo): Targeted Alpha Therapy — Open Medscience",
+      "url": "https://openmedscience.com/radium-223-dichloride-xofigo-targeted-alpha-therapy-for-castration-resistant-prostate-cancer-with-bone-metastases/",
+      "verified": true
+    },
+    {
+      "title": "Tc-99m-PYP imaging for cardiac amyloidosis: best protocol — J Nucl Cardiol (Springer)",
+      "url": "https://link.springer.com/article/10.1007/s12350-020-02273-3",
+      "verified": true
+    },
+    {
+      "title": "Cardiology fellow's take-home points from ASNC Tc-99m-PYP webinar (PMC7924912)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7924912/",
+      "verified": true
+    },
+    {
+      "title": "99mTc-Pyrophosphate Scintigraphy for Differentiating Light-Chain from Transthyretin Cardiac Amyloidoses — Circ Cardiovasc Imaging (AHA)",
+      "url": "https://www.ahajournals.org/doi/10.1161/circimaging.112.000132",
+      "verified": true
+    },
+    {
+      "title": "123I-Ioflupane/SPECT DAT binding in PD, MSA, PSP — PubMed 14598060",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14598060/",
+      "verified": true
+    },
+    {
+      "title": "Improved diagnostic accuracy of PD on 123I-FP-CIT SPECT (PMC7354240)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7354240/",
+      "verified": true
+    },
+    {
+      "title": "FDG PET/CT: EANM procedure guidelines for tumour imaging version 2.0 (PMC4315529)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/",
+      "verified": true
+    },
+    {
+      "title": "18F-FDG PET and PET/CT Patient Preparation: A Review — J Nucl Med Technol 42:5",
+      "url": "https://tech.snmjournals.org/content/42/1/5",
+      "verified": true
+    },
+    {
+      "title": "Quality control (99Mo/Al breakthrough limits) — Loyola Lumen radiopharmacy",
+      "url": "https://www.lumen.luc.edu/lumen/meded/radio/nuc_med/radpharm/sect-f1d.htm",
+      "verified": true
+    },
+    {
+      "title": "A practical method of I-131 thyroid cancer therapy dose optimization (PMC5724631)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5724631/",
+      "verified": true
+    },
+    {
+      "title": "Biokinetics, dosimetry, and radiation risk in infants after 99mTc-MAG3 scans (PMC5796928)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5796928/",
+      "verified": true
+    }
+  ],
+  "lead": "Un radiopharmaceutique associe une molécule qui reconnaît une cible dans l'organisme à un noyau atomique instable qui émet un rayonnement. La première partie décide où le produit se rend, la seconde permet soit de fabriquer une image, soit de délivrer un traitement là où la maladie se cache. La médecine nucléaire moderne s'appuie sur une poignée de ces couples, du traceur le plus courant en imagerie osseuse ou cardiaque jusqu'aux produits qui repèrent puis irradient de façon ciblée certains cancers. Ce panorama parcourt les grandes familles, leur mode de fabrication, leurs principales indications et la logique théranostique qui relie le diagnostic au traitement. L'objectif est d'offrir une vue d'ensemble cohérente, du produit le plus simple au plus spécialisé.",
+  "identityCard": [
+    {
+      "icon": "atom",
+      "label": "Définition",
+      "value": "Vecteur (ciblage) + radionucléide (signal ou dose)"
+    },
+    {
+      "icon": "flask",
+      "label": "Radionucléide SPECT dominant",
+      "value": "99mTc — γ 140,5 keV, T½ 6,0 h [1]"
+    },
+    {
+      "icon": "zap",
+      "label": "Radionucléide TEP dominant",
+      "value": "18F — β+ 97 %, annihilation 511 keV, T½ 109,8 min [44][45]"
+    },
+    {
+      "icon": "clock",
+      "label": "Générateur clé",
+      "value": "99Mo (T½ 66 h) → 99mTc, élution NaCl 0,9 % [2][36]"
+    },
+    {
+      "icon": "target",
+      "label": "Traceur métabolique universel",
+      "value": "18F-FDG (analogue du glucose, piégeage) [9]"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose efficace 18F-FDG",
+      "value": "0,019 mSv/MBq (CIPR 128) [11][38]"
+    },
+    {
+      "icon": "syringe",
+      "label": "Activité 18F-FDG adulte",
+      "value": "2,5–5,0 MBq/kg IV [8]"
+    },
+    {
+      "icon": "shield",
+      "label": "CQ générateur — percée 99Mo",
+      "value": "USP < 0,15 kBq/MBq ; Ph. Eur. 0,1 kBq/MBq [5][61]"
+    },
+    {
+      "icon": "microscope",
+      "label": "Émetteurs β− thérapeutiques",
+      "value": "131I (T½ 8,0 j), 177Lu (T½ 6,7 j), 90Y [15]"
+    },
+    {
+      "icon": "dna",
+      "label": "Émetteur α (os prostate)",
+      "value": "223Ra — portée < 100 µm, 55 kBq/kg × 6 [31][53]"
+    },
+    {
+      "icon": "activity",
+      "label": "Couples théranostiques phares",
+      "value": "PSMA (68Ga/177Lu), SSTR (68Ga/177Lu-DOTATATE) [23][25][29]"
+    },
+    {
+      "icon": "baby",
+      "label": "Pédiatrie",
+      "value": "Carte de dose EANM ; FDG 3,7 MBq/kg, min 26 MBq [6][8]"
+    },
+    {
+      "icon": "list",
+      "label": "Part du 99mTc en diagnostic",
+      "value": "≈ 80–85 % des actes SPECT [4]"
+    },
+    {
+      "icon": "droplets",
+      "label": "Forme éluée du 99mTc",
+      "value": "Pertechnétate 99mTcO4− (ion) [3][36]"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "18F-FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "99mTc-MDP / HDP (os)"
+    },
+    {
+      "type": "traceur",
+      "label": "99mTc-sestamibi (MIBI)"
+    },
+    {
+      "type": "traceur",
+      "label": "99mTc-MAG3 / DMSA (rein)"
+    },
+    {
+      "type": "traceur",
+      "label": "68Ga-DOTATATE"
+    },
+    {
+      "type": "traceur",
+      "label": "68Ga / 18F-PSMA"
+    },
+    {
+      "type": "examen",
+      "label": "TEP au 18F-FDG"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse"
+    },
+    {
+      "type": "examen",
+      "label": "Perfusion myocardique (SPECT / TEP 82Rb)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie pulmonaire V/Q"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie à la MIBG"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer de la prostate (mCRPC)"
+    },
+    {
+      "type": "maladie",
+      "label": "Tumeurs neuroendocrines (TNE)"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer différencié de la thyroïde"
+    },
+    {
+      "type": "score",
+      "label": "Score de Perugini (amylose ATTR)"
+    },
+    {
+      "type": "theranostique",
+      "label": "177Lu-PSMA-617 (Pluvicto)"
+    },
+    {
+      "type": "theranostique",
+      "label": "177Lu-DOTATATE (Lutathera)"
+    },
+    {
+      "type": "theranostique",
+      "label": "223Ra-dichlorure (Xofigo)"
+    },
+    {
+      "type": "theranostique",
+      "label": "131I (thyroïde)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quelles sont les deux composantes obligatoires d'un radiopharmaceutique ?",
+      "options": [
+        "Un colorant et un anticorps",
+        "Un vecteur (ciblage) et un radionucléide (rayonnement)",
+        "Un excipient et un conservateur",
+        "Deux radionucléides complémentaires"
+      ],
+      "answer": 1,
+      "explanation": "Le vecteur détermine la biodistribution / la cible, le radionucléide fournit le signal détecté (imagerie) ou la dose (thérapie). C'est la définition même du produit.",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle est l'énergie du photon γ principal du 99mTc, idéale pour la gamma-caméra ?",
+      "options": [
+        "70 keV",
+        "140,5 keV",
+        "364 keV",
+        "511 keV"
+      ],
+      "answer": 1,
+      "explanation": "Le 99mTc émet un photon γ quasi monoénergétique de 140,5 keV par transition isomérique, avec une période de 6,0 h [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Comment le 99mTc est-il obtenu au quotidien dans un service de médecine nucléaire ?",
+      "options": [
+        "Directement par cyclotron",
+        "Par élution d'un générateur 99Mo/99mTc sur colonne d'alumine",
+        "Par fission directe de l'uranium au lit du patient",
+        "Par un générateur 68Ge/68Ga"
+      ],
+      "answer": 1,
+      "explanation": "Le parent 99Mo (T½ 66 h) est fixé sur une colonne d'alumine et décroît en 99mTc, élué au sérum physiologique sous forme de pertechnétate 99mTcO4− [2][36].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle limite de percée (breakthrough) du 99Mo impose la Pharmacopée américaine (USP) ?",
+      "options": [
+        "< 0,15 kBq de 99Mo par MBq de 99mTc",
+        "< 1,5 kBq/MBq",
+        "< 10 kBq/MBq",
+        "Aucune limite"
+      ],
+      "answer": 0,
+      "explanation": "La limite USP est de 0,15 kBq 99Mo/MBq 99mTc ; la Pharmacopée européenne est plus stricte (0,1 kBq/MBq) [5][61].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est le coefficient de dose efficace de référence du 18F-FDG chez l'adulte (CIPR 128) ?",
+      "options": [
+        "0,0019 mSv/MBq",
+        "0,019 mSv/MBq",
+        "0,19 mSv/MBq",
+        "1,9 mSv/MBq"
+      ],
+      "answer": 1,
+      "explanation": "La CIPR 128 retient 0,019 mSv/MBq pour le 18F-FDG (organe critique : la vessie) ; des modèles maillés récents proposent ~0,017 mSv/MBq [11][38][39].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Par quel mécanisme le 18F-FDG est-il retenu dans les cellules ?",
+      "options": [
+        "Fixation sur l'hydroxyapatite",
+        "Captation par GLUT puis phosphorylation par l'hexokinase (piégeage métabolique)",
+        "Liaison au récepteur de la somatostatine",
+        "Chimisorption osseuse"
+      ],
+      "answer": 1,
+      "explanation": "Analogue du glucose, le FDG est capté par les transporteurs GLUT et phosphorylé par l'hexokinase, puis « piégé » car non métabolisé au-delà — d'où l'accumulation dans les tissus à forte activité glycolytique [9].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Pourquoi le 18F offre-t-il une excellente résolution spatiale en TEP ?",
+      "options": [
+        "Parce que son photon a une très haute énergie",
+        "Parce que son positon a une énergie faible, donc un parcours court (< 2,4 mm)",
+        "Parce qu'il n'émet pas de rayonnement",
+        "Parce qu'il a une longue période"
+      ],
+      "answer": 1,
+      "explanation": "Le positon du 18F a la plus basse énergie des isotopes TEP (max ≈ 634 keV) → parcours court dans les tissus avant annihilation, ce qui améliore la résolution [44][45].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel radiopharmaceutique explore la perfusion myocardique en SPECT en se fixant dans les mitochondries des cardiomyocytes ?",
+      "options": [
+        "99mTc-MDP",
+        "99mTc-sestamibi (MIBI)",
+        "99mTc-DMSA",
+        "99mTc-MAA"
+      ],
+      "answer": 1,
+      "explanation": "Le sestamibi (cation lipophile) est capté proportionnellement au flux coronaire et séquestré dans les mitochondries, sans redistribution cliniquement significative [13].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel agent rénal reflète la sécrétion tubulaire et est recommandé pour la scintigraphie diurétique ?",
+      "options": [
+        "99mTc-DTPA",
+        "99mTc-DMSA",
+        "99mTc-MAG3",
+        "99mTc-MAA"
+      ],
+      "answer": 2,
+      "explanation": "Le MAG3 est éliminé par sécrétion tubulaire (fraction d'extraction > 2× celle du DTPA) et explore fonction et drainage ; le DTPA mesure le DFG (filtration glomérulaire) et le DMSA fixe le cortex [19][20].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Le 131I utilisé pour la thyroïde émet-il un rayonnement à visée thérapeutique et/ou d'imagerie ?",
+      "options": [
+        "γ pur, imagerie seule",
+        "β− pur, thérapie seule",
+        "β− thérapeutique + γ 364 keV pour l'imagerie",
+        "α thérapeutique"
+      ],
+      "answer": 2,
+      "explanation": "Le 131I est un émetteur mixte : β− (majorité de l'irradiation locale, effet thérapeutique) et γ de 364 keV (imagerie) ; période 8,0 jours [15].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans l'essai proPSMA (Lancet 2020), quelle était l'exactitude du PSMA-TEP versus l'imagerie conventionnelle pour le staging du cancer de prostate à haut risque ?",
+      "options": [
+        "92 % vs 65 %",
+        "65 % vs 92 %",
+        "50 % vs 50 %",
+        "85 % vs 85 %"
+      ],
+      "answer": 0,
+      "explanation": "proPSMA (302 patients) : 68Ga-PSMA-11 exactitude 92 % vs 65 % ; Se 85 % vs 38 %, Sp 98 % vs 91 %, avec moins d'irradiation [23][24].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le schéma d'administration du 177Lu-PSMA-617 (Pluvicto) validé par l'essai VISION ?",
+      "options": [
+        "3,7 GBq toutes les 2 semaines, 12 cycles",
+        "7,4 GBq toutes les 6 semaines, jusqu'à 6 cycles",
+        "55 kBq/kg toutes les 4 semaines",
+        "1,1 GBq en dose unique"
+      ],
+      "answer": 1,
+      "explanation": "VISION : 7,4 GBq IV toutes les 6 semaines, max 6 cycles ; survie globale médiane 15,3 vs 11,3 mois (HR 0,62) ; approbation FDA mars 2022 [25][51][52].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle cible moléculaire est visée par le 68Ga-DOTATATE et le 177Lu-DOTATATE dans les tumeurs neuroendocrines ?",
+      "options": [
+        "L'antigène PSMA",
+        "Le transporteur du glucose",
+        "Les récepteurs de la somatostatine (SSTR)",
+        "Le symporteur sodium-iode"
+      ],
+      "answer": 2,
+      "explanation": "Les analogues DOTA-peptides ciblent le SSTR : 68Ga-DOTATATE pour l'imagerie TEP, 177Lu-DOTATATE (Lutathera) pour la radiothérapie interne vectorisée (essais NETTER-1/2) [29][48][50].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans l'essai NETTER-1, le 177Lu-DOTATATE a été administré selon quel schéma ?",
+      "options": [
+        "7,4 GBq × 4 cycles toutes les 8 semaines",
+        "3,7 GBq × 6 cycles",
+        "1,85 GBq en dose unique",
+        "55 kBq/kg × 6"
+      ],
+      "answer": 0,
+      "explanation": "NETTER-1 : 4 cycles de 7,4 GBq toutes les 8 semaines (cumul 29,6 GBq) ; SSP à 20 mois 65,2 % vs 10,8 % sous octréotide LAR [29][30][48].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la particularité de l'émission du 223Ra (Xofigo) exploitée dans les métastases osseuses de la prostate ?",
+      "options": [
+        "Émetteur γ pur détecté par la caméra",
+        "Émetteur α de très courte portée (< 100 µm), épargnant la moelle",
+        "Émetteur β+ pour la TEP",
+        "Émetteur β− de longue portée"
+      ],
+      "answer": 1,
+      "explanation": "Analogue du calcium fixé sur l'os métaboliquement actif, le 223Ra émet des particules α de portée < 100 µm : cassures double-brin ciblées avec épargne médullaire ; ALSYMPCA : SG 14,9 vs 11,3 mois (HR 0,70) [31][32][53].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel générateur permet de réaliser une TEP de perfusion myocardique sans cyclotron sur site ?",
+      "options": [
+        "99Mo/99mTc",
+        "68Ge/68Ga",
+        "82Sr/82Rb",
+        "225Ac/213Bi"
+      ],
+      "answer": 2,
+      "explanation": "Le 82Rb (analogue du potassium, T½ ~76 s) provient d'un générateur 82Sr/82Rb, remplacé toutes les 4–6 semaines, autorisant un protocole repos/stress en moins de 30 min [33][46].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel radiopharmaceutique est utilisé pour la perfusion pulmonaire dans le bilan d'embolie et en cartographie avant radioembolisation ?",
+      "options": [
+        "99mTc-MAA (macroagrégats d'albumine)",
+        "99mTc-HMPAO",
+        "99mTc-PYP",
+        "99mTc-sestamibi"
+      ],
+      "answer": 0,
+      "explanation": "Les macroagrégats d'albumine (200 000–700 000 particules) provoquent une microembolisation capillaire pulmonaire ; ils servent aussi à mesurer le shunt pulmonaire avant radioembolisation au 90Y [21][35].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Selon la carte de dose pédiatrique EANM, quelle est l'activité minimale recommandée de 18F-FDG corps entier chez l'enfant ?",
+      "options": [
+        "26 MBq",
+        "100 MBq",
+        "0,7 GBq",
+        "185 MBq"
+      ],
+      "answer": 0,
+      "explanation": "La carte EANM prévoit 3,7–5,2 MBq/kg pour le FDG corps entier avec un minimum de 26 MBq (0,7 mCi), afin de limiter l'activité chez le jeune enfant [6][8].",
+      "difficulty": "moyen"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "Radiopharmaceutique = vecteur (ciblage) + radionucléide (imagerie ou thérapie) ; le vecteur porte la spécificité, le radionucléide porte le signal ou l'effet.",
+      "Deux piliers du diagnostic : 99mTc (γ 140,5 keV, T½ 6,0 h, générateur 99Mo/99mTc, ~80–85 % des actes SPECT) [1][4] et 18F (β+, 511 keV, T½ 109,8 min, cyclotron) pour la TEP [44][45].",
+      "Le 18F-FDG est le traceur métabolique universel (piégeage GLUT/hexokinase) ; dose efficace 0,019 mSv/MBq (CIPR 128) [9][11][38].",
+      "Panel 99mTc : MDP/HDP (os, chimisorption hydroxyapatite), sestamibi (myocarde, parathyroïdes), MAG3/DTPA/DMSA (rein), MAA (poumon) [13][17][19].",
+      "Émetteurs thérapeutiques β− : 131I (thyroïde, T½ 8 j), 177Lu (DOTATATE/PSMA, T½ 6,7 j), 90Y (radioembolisation) ; α : 223Ra (os) [15][53].",
+      "Théranostique = même vecteur imagé puis traité : PSMA (68Ga → 177Lu-PSMA-617), SSTR (68Ga-DOTATATE → 177Lu-DOTATATE) [23][25][29].",
+      "Essais pivots : proPSMA (imagerie), VISION (177Lu-PSMA), NETTER-1/2 (177Lu-DOTATATE), ALSYMPCA (223Ra) [23][25][29][31].",
+      "CIPR 128 est la référence dosimétrique patient pour l'ensemble des radiopharmaceutiques [38]."
+    ],
+    "protocol": [
+      "Générateur 99Mo/99mTc : élution au NaCl 0,9 % ; CQ à chaque élution — percée 99Mo (USP < 0,15 kBq/MBq, Ph. Eur. 0,1 kBq/MBq), aluminium (< 10 µg/mL de fission), pureté radiochimique [5][61].",
+      "18F-FDG : jeûne ≈ 4–6 h, contrôle glycémique (cible ~4–7 mmol/L), repos, hydratation ; activité 2,5–5,0 MBq/kg IV [8][60].",
+      "131I thyroïde : régime pauvre en iode, éviter produits de contraste iodés, stimulation TSH selon protocole ; activités 8–30 mCi (bénin) ou 1,85–5,5 GBq (ablation cancer) [15][62].",
+      "68Ga/18F-PSMA puis 177Lu-PSMA-617 : 7,4 GBq / 6 semaines, jusqu'à 6 cycles (VISION) [25].",
+      "68Ga-DOTATATE puis 177Lu-DOTATATE : 7,4 GBq × 4 cycles / 8 semaines (NETTER-1) [29][30].",
+      "223Ra : 55 kBq/kg IV toutes les 4 semaines, 6 injections (ALSYMPCA) [31].",
+      "Pédiatrie : appliquer la carte de dose EANM (activité de base × multiple pondéral, activité minimale) [6][12]."
+    ],
+    "scores": [
+      "Dose efficace 18F-FDG : 0,019 mSv/MBq (CIPR 128 ; ~0,017 avec fantômes maillés) [11][38][39].",
+      "proPSMA : PSMA-TEP exactitude 92 % vs 65 %, Se 85 % vs 38 %, Sp 98 % vs 91 % [23][24].",
+      "VISION (177Lu-PSMA-617) : SG médiane 15,3 vs 11,3 mois, HR 0,62 [25][51].",
+      "NETTER-1 (177Lu-DOTATATE) : SSP à 20 mois 65,2 % vs 10,8 % ; réponse objective 18 % vs 3 % [48][49].",
+      "ALSYMPCA (223Ra) : SG médiane 14,9 vs 11,3 mois, HR 0,70 [31].",
+      "Amylose cardiaque ATTR (99mTc-PYP/DPD, score de Perugini) : grade 2–3 Sp ≈ 100 %, Se ≈ 72 % ; ratio H/CL > 1,5 : Se 97 %, Sp 100 % [54][56]."
+    ],
+    "pitfalls": [
+      "Confondre les cibles rénales : MAG3 = tubulaire (drainage), DTPA = glomérulaire (DFG), DMSA = cortical (cicatrices) [19][20].",
+      "Oublier le CQ du générateur : une percée de 99Mo ou un excès d'aluminium rend l'éluat non conforme [5][61].",
+      "Négliger la préparation glycémique du 18F-FDG : une hyperglycémie dégrade le contraste tumoral [59][60].",
+      "Assimiler tous les émetteurs β−/α : 131I (mixte β−/γ), 177Lu (β−), 223Ra (α très courte portée) ont des logiques dosimétriques et de radioprotection distinctes [15][53].",
+      "Sous-estimer la radioprotection TEP : les photons d'annihilation de 511 keV, très pénétrants, imposent un blindage plomb épais et des protège-seringues tungstène.",
+      "Utiliser une activité adulte fixe en pédiatrie au lieu de la carte de dose EANM adaptée au poids [6][12]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "C'est quoi un traceur ?",
+        "text": "Un examen de médecine nucléaire utilise un produit appelé traceur. C'est une molécule choisie pour aller se fixer sur l'organe ou la fonction que l'on veut étudier (les os, le cœur, la thyroïde, une tumeur...). Cette molécule est accrochée à une toute petite quantité de produit très légèrement radioactif : c'est ce signal, invisible et indolore, que la caméra détecte pour construire les images. La quantité de molécule injectée est infime : elle ne modifie pas le fonctionnement de votre corps et n'a pas d'effet comme un médicament classique."
+      },
+      {
+        "title": "D'où viennent ces produits et comment se passe l'examen ?",
+        "text": "Parce qu'ils cessent d'être actifs en quelques heures seulement, ces produits ne peuvent pas être stockés à l'avance : ils sont préparés le jour même, soit sur place à partir d'un petit appareil de la pharmacie de l'hôpital, soit livrés le matin depuis un site de production voisin. Le déroulé est simple : on vous injecte le traceur, le plus souvent dans une veine du bras, puis on attend un temps variable selon l'examen que le produit se fixe sur la bonne cible. Vous vous allongez ensuite sous une caméra qui reste à distance de vous et ne délivre aucun rayon : elle se contente d'écouter le signal du traceur. L'examen est indolore en dehors de la petite piqûre."
+      },
+      {
+        "title": "Est-ce que c'est dangereux ?",
+        "text": "La dose de rayonnement reçue lors d'un examen d'imagerie de médecine nucléaire est faible et comparable à celle d'autres examens radiologiques courants ; elle est toujours justifiée par le bénéfice attendu pour votre santé. Le traceur s'élimine naturellement, surtout par les urines : on vous conseillera de bien boire et d'uriner régulièrement après l'examen pour aider votre corps à l'évacuer plus vite. Les réactions au produit sont exceptionnelles. Signalez toujours à l'équipe si vous êtes enceinte, si vous pensez l'être ou si vous allaitez : des précautions particulières sont alors prises. Certains traitements par un produit radioactif, utilisés pour soigner (et non pour voir), demandent quelques mesures de précaution vis-à-vis de l'entourage, qui vous seront expliquées en détail.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Le bon réflexe après l'examen",
+            "text": "Buvez abondamment et allez uriner souvent dans les heures qui suivent : cela aide votre corps à éliminer le traceur plus rapidement. Pour un examen d'imagerie simple, aucune précaution vis-à-vis de vos proches n'est nécessaire."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Comprendre le principe : vecteur + radionucléide",
+        "text": "Tout radiopharmaceutique combine deux éléments : un vecteur, qui détermine la cible biologique (un organe, un récepteur, une voie métabolique), et un radionucléide, qui porte le signal détecté en imagerie ou l'effet délivré en thérapie. Deux radionucléides couvrent l'essentiel du diagnostic : le technétium-99m, issu d'un générateur au laboratoire chaud et utilisé en scintigraphie et en TEMP (SPECT), qui représente la grande majorité des actes ; et le fluor-18, produit par cyclotron et vecteur dominant de la TEP. En pratique clinique, retenez la logique de la cible plutôt que la chimie : un traceur osseux se fixe sur l'os en remaniement, un traceur métabolique (FDG) sur les tissus avides de glucose, un traceur de récepteur (PSMA, somatostatine) sur les tumeurs qui l'expriment."
+      },
+      {
+        "title": "Quand y penser : les grandes indications par cible",
+        "text": "Le choix du traceur découle directement de la question clinique posée.",
+        "list": [
+          "Os : scintigraphie osseuse (99mTc-biphosphonates) pour métastases, fractures occultes, infection osseuse.",
+          "Cœur : perfusion myocardique (99mTc-MIBI/tétrofosmine, ou traceurs TEP) pour l'ischémie et la viabilité ; traceurs osseux (PYP/DPD) pour dépister l'amylose cardiaque à transthyrétine.",
+          "Rein : traceurs dédiés selon la question (fonction et drainage, filtration glomérulaire, ou morphologie corticale/cicatrices).",
+          "Poumon : perfusion pulmonaire pour l'embolie et le bilan avant certains traitements du foie.",
+          "Endocrinologie/oncologie : FDG pour le bilan et la réévaluation en cancérologie, l'infection et la neurologie ; PSMA pour le cancer de la prostate ; récepteurs de la somatostatine pour les tumeurs neuroendocrines ; iode et MIBG pour la thyroïde et le tissu chromaffine (phéochromocytome, neuroblastome).",
+          "Neurologie : traceur du transporteur de la dopamine (DaTscan) pour distinguer un syndrome parkinsonien d'un tremblement essentiel."
+        ]
+      },
+      {
+        "title": "Apport de la médecine nucléaire et logique théranostique",
+        "text": "L'imagerie fonctionnelle apporte une information que l'imagerie morphologique seule ne donne pas : elle renseigne sur l'activité d'un processus (métabolisme, perfusion, expression d'un récepteur) et pas seulement sur son anatomie. Elle est particulièrement utile pour un bilan d'extension en une seule acquisition corps entier, pour évaluer la réponse à un traitement, ou pour caractériser une lésion indéterminée. La grande évolution récente est la théranostique : un même vecteur permet d'abord de visualiser la cible avec un radionucléide d'imagerie, puis de la traiter avec un radionucléide thérapeutique. Deux couples sont désormais validés par des essais de phase III et disponibles en pratique : imagerie puis traitement des tumeurs neuroendocrines exprimant les récepteurs de la somatostatine (DOTATATE), et imagerie puis traitement du cancer de la prostate métastatique résistant à la castration (PSMA). Un émetteur ciblant l'os est également validé pour les métastases osseuses douloureuses de la prostate.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez pour une question fonctionnelle qui reste ouverte après l'imagerie conventionnelle : caractériser une lésion (bénin/malin, actif/séquellaire), réaliser un bilan d'extension corps entier, évaluer une réponse thérapeutique, ou repérer une cible avant un traitement vectorisé. La médecine nucléaire ouvre aussi l'accès à la théranostique : identifier un patient candidat à une thérapie par 177Lu (tumeurs neuroendocrines, cancer de la prostate) ou à l'iode-131 (thyroïde) passe par une imagerie préalable qui confirme l'expression de la cible. En cas de doute sur le traceur pertinent ou la faisabilité, un simple avis du service de médecine nucléaire oriente la demande et évite un examen inutile."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - A1 · Carte d'identité de la radiopharmacie",
+        "text": "**Comment lire cette carte.** La radiopharmacie moderne repose sur un très petit nombre de radionucléides « chevaux de trait » : le **99mTc** (technétium métastable), issu d'un **générateur 99Mo/99mTc**, qui alimente la quasi-totalité de la scintigraphie et de la TEMP (tomographie d'émission monophotonique, SPECT en anglais), et le **18F** (fluor-18), produit au **cyclotron**, traceur dominant de la TEP (tomographie par émission de positons, PET). Autour de ce socle gravitent des générateurs annexes (68Ge/68Ga, 82Sr/82Rb), des isotopes de l'iode (123I, 131I) et les émetteurs thérapeutiques β⁻ (131I, 177Lu, 90Y) et α (223Ra). Les valeurs ci-dessous sont les repères opérationnels de terrain ; le détail physique est développé en A4, l'anatomie moléculaire en A3.\n\n| Grandeur | 99mTc (référence SPECT) | 18F (référence TEP) |\n|---|---|---|\n| Mode d'obtention | **Générateur 99Mo/99mTc** (colonne d'alumine) [2,36] | **Cyclotron** — réaction 18O(p,n)18F [45] |\n| Émission utile | **γ mono-énergétique 140,5 keV** (transition isomérique) [1] | **β⁺ (positon)** → 2 photons d'annihilation **511 keV** [44] |\n| Période physique | **6,0 h** (6,0066 h) [1] | **109,8 min** (~110 min) [44] |\n| Décroissance | → 99Tc (période 2,13×10⁵ ans) [1] | β⁺ à 97 %, positon max ≈ 634 keV [44] |\n| Forme éluée / marquage | **pertechnétate 99mTcO4⁻** (élution NaCl 0,9 %) [1,3] | fluorure-18 « no-carrier-added » [45] |\n| Part de l'activité mondiale | ~**85 %** des ~30 millions d'actes diagnostiques/an [4] | traceur TEP le plus utilisé [9] |\n\nLe **99mTc est un émetteur γ quasi pur** (≈0,14 MeV), sans particule chargée notable, ce qui limite la dose au patient tout en offrant un photon idéalement détecté par la gamma-caméra [1,3]. Le **18F** est à l'inverse un émetteur de positons dont la faible énergie cinétique (parcours court, **<2,4 mm** dans les tissus) confère à la TEP sa résolution spatiale supérieure [44]. Ces deux propriétés physiques, opposées mais complémentaires, structurent toute la carte de la radiopharmacie diagnostique.",
+        "stats": [
+          {
+            "value": "140,5 keV",
+            "label": "γ du 99mTc (caméra idéale) [1]"
+          },
+          {
+            "value": "6,0 h",
+            "label": "Période du 99mTc [1]"
+          },
+          {
+            "value": "511 keV",
+            "label": "Photons d'annihilation TEP (18F) [44]"
+          },
+          {
+            "value": "~85 %",
+            "label": "Actes diagnostiques réalisés au 99mTc [4]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi 140,5 keV et 511 keV",
+            "text": "Les 140,5 keV du 99mTc sont un optimum : assez énergétiques pour traverser les tissus, assez bas pour être collimatés efficacement par une gamma-caméra classique et donner un bon rendement de détection [1,3]. Les 511 keV de l'annihilation β⁺ sont, eux, très pénétrants : ils imposent un blindage plomb épais et des protège-seringues en tungstène, mais permettent la détection en coïncidence (deux photons colinéaires) qui définit la TEP [44]."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Schéma du générateur 99Mo/99mTc : colonne d'alumine fixant le 99Mo parent, décroissance β⁻ vers le 99mTc, élution au sérum physiologique produisant le pertechnétate 99mTcO4⁻.",
+        "figureCaption": "Fig. 1 — Le générateur 99Mo/99mTc : pierre angulaire de la médecine nucléaire monophotonique, source quotidienne de 99mTc à partir du parent 99Mo."
+      },
+      {
+        "title": "A2 - A2 · Définition : qu'est-ce qu'un radiopharmaceutique ?",
+        "text": "Un **radiopharmaceutique** est un médicament — donc soumis aux exigences pharmaceutiques de qualité, de sécurité et de traçabilité — qui associe deux composants indissociables : un **vecteur** et un **radionucléide** [37].\n\n- Le **vecteur** (molécule, ion, particule ou cellule) porte la **spécificité biologique** : c'est lui qui détermine la biodistribution, la cible (organe, récepteur, transporteur, fonction métabolique) et donc l'indication clinique.\n- Le **radionucléide** porte le **signal ou l'effet** : son rayonnement est soit détecté de l'extérieur pour former l'image (diagnostic), soit déposé localement dans le tissu cible pour délivrer une dose (thérapie).\n\nCette dualité fonde une distinction majeure avec la radiologie conventionnelle. La TDM et l'IRM produisent une **image morphologique** (où est la lésion, quelle est sa forme). Le radiopharmaceutique produit une **image fonctionnelle et moléculaire** : il révèle une **propriété biologique** — une cellule surexprime-t-elle un transporteur, consomme-t-elle du glucose, exprime-t-elle un récepteur ? Ainsi le **18F-FDG** (fluorodésoxyglucose) n'imagerie pas une masse mais l'**hypermétabolisme glucidique** : capté par les transporteurs GLUT, phosphorylé par l'hexokinase, il est « piégé » dans la cellule (metabolic trapping), traduisant l'activité métabolique et non la simple anatomie [9].\n\nLe radiopharmaceutique se définit aussi par ses **grandeurs physiques** propres : l'**activité** (en becquerels, Bq, ou en multiples MBq/GBq ; 1 Bq = 1 désintégration/s), qui quantifie ce qui est administré, et la **dose efficace** (en millisieverts, mSv), qui quantifie l'exposition du patient. Ces deux grandeurs, distinctes de la masse pondérale d'un médicament classique, gouvernent la prescription (voir A4 pour leur détermination physique).\n\nDeux grands régimes d'usage découlent du mode d'émission du radionucléide, développés en A4 :\n\n- **Diagnostic** : émetteurs γ / rayons X (→ scintigraphie, TEMP) ou β⁺ (→ TEP), choisis pour être détectés sans délivrer de dose thérapeutique.\n- **Thérapie** : émetteurs corpusculaires **β⁻** (131I, 177Lu, 90Y) ou **α** (223Ra), choisis au contraire pour déposer localement leur énergie et détruire le tissu cible.\n\nLorsqu'un **même vecteur** peut être marqué successivement par un radionucléide d'imagerie puis par un radionucléide thérapeutique, on obtient un couple **théranostique** (contraction de « thérapie » et « diagnostic ») : on visualise la cible, on confirme son avidité, puis on la traite. Les paradigmes actuels — **PSMA** pour la prostate (68Ga/18F puis 177Lu) et **SSTR** pour les tumeurs neuroendocrines (68Ga puis 177Lu) — sont détaillés dans les sections dédiées.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Vecteur + radionucléide : les deux moitiés indissociables",
+            "text": "Changer le vecteur change la cible et l'indication (99mTc-MDP va à l'os, 99mTc-MAG3 au rein) ; changer le radionucléide sur un même vecteur change l'usage (imagerie vs thérapie) sans changer la cible. C'est précisément cette dissociation qui rend possible la théranostique : le vecteur reste identique, seul l'isotope diffère entre le temps diagnostique et le temps thérapeutique."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — image de fonction, non d'anatomie",
+            "text": "La force du radiopharmaceutique est aussi sa limite : une lésion morphologiquement présente mais métaboliquement muette (nécrose, tissu dédifférencié n'exprimant plus la cible) peut être invisible en imagerie fonctionnelle. D'où l'intérêt systématique de la fusion TEMP/TDM ou TEP/TDM, qui superpose fonction et anatomie."
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Mécanisme de captation du 18F-FDG : transport intracellulaire par les transporteurs GLUT, phosphorylation par l'hexokinase, puis piégeage métabolique du FDG-6-phosphate non métabolisable.",
+        "figureCaption": "Fig. 2 — Le 18F-FDG illustre le principe fonctionnel : le vecteur (analogue du glucose) cible une fonction (métabolisme glucidique), le radionucléide (18F) fournit le signal TEP."
+      },
+      {
+        "title": "A3 - A3 · Anatomie d'un radiopharmaceutique : vecteur, chélateur, radionucléide",
+        "text": "Sur le plan chimique, un radiopharmaceutique s'assemble en **deux ou trois briques**, selon que le radionucléide se lie directement au vecteur ou qu'il faille un intermédiaire de liaison.\n\n**1. Le vecteur (ligand de ciblage).** Il définit la destination. Sa nature est très variable et conditionne le mécanisme de fixation :\n\n| Type de vecteur | Exemple | Cible / mécanisme |\n|---|---|---|\n| Analogue métabolique | **18F-FDG** | transport GLUT + piégeage par phosphorylation [9] |\n| Particule minérale | **99mTc-MDP / HDP** (biphosphonates) | chimisorption sur l'**hydroxyapatite** osseuse [17] |\n| Cation lipophile | **99mTc-sestamibi (MIBI)** | captation passive par les cardiomyocytes, séquestration mitochondriale [13] |\n| Petit peptide | **DOTATATE** (analogue de la somatostatine) | liaison au **récepteur SSTR** des tumeurs neuroendocrines [48] |\n| Ligand de récepteur | **PSMA-617 / PSMA-11** | liaison à l'antigène membranaire spécifique de la prostate [23,25] |\n| Ion mimétique | **131I⁻ (iodure)**, **223Ra²⁺** | symporteur NIS (thyroïde) [15] ; analogue du **calcium** sur l'os [31] |\n| Macroagrégat | **99mTc-MAA** (albumine) | microembolisation capillaire pulmonaire (200 000–700 000 particules) [21] |\n\n**2. Le chélateur (ou agent de liaison), quand il est nécessaire.** Certains vecteurs se marquent directement (l'iode radioactif s'incorpore par substitution dans la molécule de MIBG ou d'iodure). Mais les **radiométaux** — 68Ga, 177Lu, 90Y, 111In — ne forment pas de liaison covalente stable avec un peptide organique : il faut un **chélateur** bifonctionnel qui emprisonne le cation métallique dans une cage moléculaire d'un côté et est conjugué au vecteur de l'autre. Le chélateur emblématique est le **DOTA** (acide tétraazacyclododécane-tétraacétique), présent dans le nom même des traceurs **DOTATATE, DOTATOC, DOTANOC** [43,48]. La qualité de la chélation gouverne la stabilité in vivo : un radiométal relargué se redistribue (68Ga libre vers l'os, 90Y vers l'os) et dégrade l'image ou irradie hors cible.\n\n**3. Le radionucléide.** Il est choisi pour ses propriétés physiques (A4) et sa compatibilité chimique avec le vecteur. Un même vecteur peut ainsi être décliné :\n\n- **DOTATATE** marqué au **68Ga** (émetteur β⁺ → TEP diagnostique) [43] ou au **177Lu** (émetteur β⁻ → thérapie, Lutathera) [48] : couple théranostique parfait, le chélateur DOTA acceptant les deux radiométaux ;\n- **PSMA** marqué au **68Ga**/18F pour l'imagerie [23] puis au **177Lu** pour le traitement (Pluvicto) [25].\n\n**Assemblage et contrôle qualité.** L'assemblage se fait le plus souvent à la radiopharmacie, par « kit froid » (le vecteur lyophilisé auquel on ajoute l'éluat de 99mTc) ou par radiosynthèse automatisée (traceurs fluorés). Trois puretés doivent être vérifiées avant libération du lot [3,5,61] :\n\n| Contrôle | Ce qu'il vérifie | Repère / seuil |\n|---|---|---|\n| Pureté **radionucléidique** | absence du radionucléide parent (« breakthrough » du 99Mo dans l'éluat) | USP **≤ 0,15 kBq 99Mo/MBq 99mTc** ; Ph. Eur. **≤ 0,1 kBq/MBq** [5] |\n| Pureté **chimique** | absence d'aluminium relargué par la colonne | USP **< 10 µg Al³⁺/mL** (générateur de fission) [61] |\n| Pureté **radiochimique** | rendement de marquage, détection du 99mTc libre / hydrolysé (TLC/ITLC) | pertechnétate élué typiquement ≈ 99,8 % pur [5] |\n\nUn marquage insuffisant laisse du **99mTcO4⁻ libre** qui se fixe sur la thyroïde, l'estomac et les glandes salivaires, produisant un artefact caractéristique — signal d'alerte d'un défaut de pureté radiochimique.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le radiométal a besoin d'un chélateur, l'iode non",
+            "text": "Ne pas confondre les deux logiques de marquage. L'iode (123I, 131I) s'incorpore par liaison covalente directe dans le vecteur (MIBG, iodure) : pas de chélateur. Les radiométaux (68Ga, 177Lu, 90Y) exigent un chélateur type DOTA ; une chélation instable entraîne un relargage du métal libre (redistribution osseuse du 68Ga ou du 90Y) qui fausse l'interprétation et irradie hors cible."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi DOTA est la clé de la théranostique",
+            "text": "Le chélateur DOTA accepte indifféremment le 68Ga (imagerie TEP) et le 177Lu ou le 90Y (thérapie β⁻) dans la même cage moléculaire. C'est ce qui permet, sur un peptide DOTATATE strictement identique, de passer du 68Ga-DOTATATE diagnostique au 177Lu-DOTATATE thérapeutique : le vecteur et le chélateur ne changent pas, seul le radiométal logé au centre change [43,48]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : un même vecteur peptidique porté par un chélateur DOTA est marqué au 68Ga pour l'imagerie TEP diagnostique puis au 177Lu pour la thérapie interne vectorisée, avec réévaluation.",
+        "figureCaption": "Fig. 3 — Vecteur + chélateur + radionucléide : la modularité du trio permet, en changeant le seul radiométal logé dans le DOTA, de passer de l'imagerie (68Ga) à la thérapie (177Lu)."
+      },
+      {
+        "title": "A4 - A4 · Le radionucléide : propriétés physiques déterminantes",
+        "text": "Le choix du radionucléide obéit à quatre propriétés physiques qui, ensemble, déterminent s'il convient au diagnostic ou à la thérapie, et avec quelle qualité d'image et quelle dose.\n\n**1. Le mode d'émission** — c'est le critère structurant.\n\n| Mode | Nature | Usage | Détection / effet | Exemples |\n|---|---|---|---|---|\n| **γ / rayons X** | photon mono-énergétique | Scintigraphie, **TEMP** | collimation par gamma-caméra | 99mTc (140,5 keV) [1], 123I (159 keV), 201Tl |\n| **β⁺ (positon)** | positon → annihilation | **TEP** | coïncidence de 2 photons **511 keV** | 18F [44], 68Ga [43], 82Rb [46], 13N |\n| **β⁻** | électron | **Thérapie** | dépôt d'énergie sur quelques mm | 131I [15], 177Lu, 90Y |\n| **α** | noyau d'hélium | **Thérapie** | dépôt dense sur **<100 µm** | 223Ra [31,53], 225Ac |\n\nLes émetteurs γ purs (99mTc) sont idéaux en diagnostic car ils délivrent peu de dose. Les émetteurs β⁺ permettent la TEP par détection en coïncidence. Les émetteurs corpusculaires (β⁻, α) sont réservés à la thérapie : leur énergie est déposée **localement**, sur une portée courte (quelques millimètres pour β⁻, moins de 100 µm pour α), ce qui concentre l'effet destructeur sur la cible et épargne les tissus voisins — l'α, de très courte portée, épargne particulièrement la moelle osseuse [31,53].\n\n**2. L'énergie du rayonnement.** Pour l'imagerie γ, l'énergie doit être un compromis (140,5 keV pour le 99mTc est l'optimum de collimation [1]). Pour la TEP, une **faible énergie du positon** est recherchée : le 18F a le positon le moins énergétique des isotopes TEP (parcours <2,4 mm), d'où la meilleure résolution spatiale ; le 68Ga, plus énergétique (β⁺ max ≈1899 keV), a une résolution un peu moindre [43,44]. L'iode-131 illustre la **double émission** : ~90 % de l'irradiation locale provient du β⁻ (thérapeutique) et le γ 364 keV (~10 %) permet l'imagerie de contrôle post-thérapeutique [15].\n\n**3. La période physique (demi-vie).** Elle doit être **appariée au processus biologique** exploré et à la logistique.\n\n| Radionucléide | Période | Conséquence pratique |\n|---|---|---|\n| **99Mo** (parent) | **66 h** (2,75 j) [1] | permet le transport du générateur, élution répétée pendant ~1 semaine |\n| **99mTc** | **6,0 h** [1] | idéale : imagerie le jour même, dose limitée |\n| **18F** | **109,8 min** [44] | production cyclotron + transport régional possible |\n| **68Ga** | **67,7 min** [43] | générateur sur site (parent 68Ge, 270,8 j) [43] |\n| **82Rb** | **~76 s** [33,46] | générateur 82Sr/82Rb, protocole repos/stress <30 min, sans cyclotron [33] |\n| **123I** | **13,2 h** | imagerie différée (MIBG, DaTscan) |\n| **131I** | **8,02 j** [15] | thérapie ; impose hospitalisation/isolement et stockage des déchets |\n| **177Lu** | **6,7 j** | thérapie vectorisée (DOTATATE, PSMA) |\n| **223Ra** | (α, 6 injections/4 sem.) [31] | thérapie osseuse |\n\nUne période trop courte interdit la logistique (d'où les générateurs sur site pour le 68Ga et le 82Rb, qui régénèrent en continu le descendant à vie brève [33,43]) ; une période longue augmente la dose et complique la radioprotection (le 131I, 8 jours, impose un stockage prolongé des déchets et l'isolement du patient traité).\n\n**4. Le mode de production.** Il conditionne la disponibilité :\n\n- **Générateur** : le descendant à vie courte est isolé de façon répétée à partir d'un parent à vie plus longue fixé sur une colonne. Le **99Mo/99mTc** (parent 99Mo issu de la **fission de l'235U** en réacteur [4]) est le modèle ; le **68Ge/68Ga** et le **82Sr/82Rb** apportent la TEP sans cyclotron sur site [33,43].\n- **Cyclotron** : accélération de protons produisant le **18F** (18O(p,n)18F sur eau enrichie [45]), le 11C, 13N, 15O, 123I. Le 13N-ammoniac (période ~10 min) et le 15O-eau imposent un cyclotron **sur place** [47].\n- **Réacteur** : production du 99Mo, du 131I, du 177Lu.\n\n**Traduction dosimétrique.** Ces propriétés se résument in fine dans le **coefficient de dose efficace** (mSv/MBq), tabulé par la **CIPR 128** (Commission internationale de protection radiologique, publication 128) [38], référence de la dose au patient :\n\n| Radiopharmaceutique | Dose efficace (mSv/MBq) | Repère |\n|---|---|---|\n| **18F-FDG** | **0,019** (organe critique : vessie) [11,38] | ~0,017 avec fantômes maillés récents [39] |\n| **99mTc-sestamibi** | ≈ **0,009** (repos) [38] | perfusion myocardique |\n| **99mTc-MAG3** | ≈ **0,007** (adulte) [63] | 0,02 chez le nourrisson [63] |\n| **99mTc-MDP** | ≈ **0,0057** (~8,9 mSv pour 925 MBq) [17] | scintigraphie osseuse |\n\nAinsi, la période (6 h), l'émission (γ pur) et l'énergie (140,5 keV) du 99mTc convergent vers une dose faible et une image de qualité, expliquant sa domination diagnostique ; à l'inverse, la période longue et le β⁻ du 131I en font l'archétype thérapeutique.",
+        "stats": [
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Dose efficace 18F-FDG (CIPR 128) [11,38]"
+          },
+          {
+            "value": "≤ 0,15 kBq/MBq",
+            "label": "Limite USP de breakthrough du 99Mo [5]"
+          },
+          {
+            "value": "<100 µm",
+            "label": "Portée des particules α (223Ra) [31,53]"
+          },
+          {
+            "value": "66 h",
+            "label": "Période du parent 99Mo [1]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — apparier la période au geste, pas l'inverse",
+            "text": "Une demi-vie inadaptée est une erreur de conception. Trop courte, elle rend le traceur inutilisable hors du site de production (82Rb, ~76 s ; 15O-eau, ~2 min → cyclotron sur place obligatoire). Trop longue, elle majore la dose intégrée et alourdit la radioprotection : le 131I (8,02 j) impose isolement du patient et stockage des effluents par décroissance."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le coefficient de dose (CIPR 128) synthétise toute la physique",
+            "text": "Le coefficient en mSv/MBq intègre l'énergie déposée, la période effective (physique + biologique) et la biodistribution. C'est la grandeur à retenir pour prescrire : à activité égale, il permet de comparer objectivement l'exposition entre traceurs, et il est majoré chez l'enfant (fantômes plus petits), d'où l'adaptation pédiatrique par la carte de dose EANM [6,38]."
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Comparaison des modes de désintégration utilisés en médecine nucléaire : émission gamma (imagerie TEMP), émission bêta-plus avec annihilation en deux photons de 511 keV (TEP), émission bêta-moins et émission alpha (thérapie), avec leurs portées respectives dans les tissus.",
+        "figureCaption": "Fig. 4 — Les modes d'émission déterminent l'usage : γ et β⁺ pour l'imagerie (détection externe), β⁻ et α pour la thérapie (dépôt local d'énergie sur portée courte)."
+      },
+      {
+        "title": "B5 - B5 · Production : générateur, cyclotron, réacteur",
+        "text": "La disponibilité d'un radiopharmaceutique dépend d'abord de la **voie de production de son radionucléide**. Trois filières couvrent l'essentiel de la pratique : le **générateur** (isolement d'un descendant à vie courte à partir d'un parent à vie plus longue), le **cyclotron** (bombardement d'une cible par des particules chargées) et le **réacteur nucléaire** (fission ou activation neutronique). Le choix conditionne la logistique (production sur site vs livraison), le coût et la période utilisable.\n\n### Le générateur ⁹⁹Mo/⁹⁹ᵐTc — pilier du SPECT\n\nLe **générateur ⁹⁹Mo/⁹⁹ᵐTc** est le générateur le plus utilisé en médecine nucléaire et alimente la majorité des scintigraphies monophotoniques [36]. Son principe est l'**équilibre transitoire** : le parent **⁹⁹Mo** (période **66,0 h**, soit ~2,75 j) est fixé sur une colonne d'**alumine (Al₂O₃)** ; il décroît par β⁻ — **> 87 % des désintégrations conduisent au ⁹⁹ᵐTc** [1]. Le descendant est **élué au sérum physiologique (NaCl 0,9 %)** sous forme de **pertechnétate ⁹⁹ᵐTcO₄⁻**, moins retenu sur l'alumine que le molybdate parent, d'où la séparation sélective [2][3]. La période longue du ⁹⁹Mo autorise le **transport du générateur** et une exploitation de plusieurs jours [1].\n\n| Grandeur | Valeur | Source |\n|---|---|---|\n| Période ⁹⁹Mo (parent) | **66,0 h** (~2,75 j) | [1][4] |\n| Période ⁹⁹ᵐTc (descendant) | **6,0 h** (6,0066 h) | [1] |\n| Émission ⁹⁹ᵐTc | γ monoénergétique **140,5 keV**, transition isomérique | [1] |\n| Rendement ⁹⁹Mo → ⁹⁹ᵐTc | **> 87 %** | [1] |\n| Forme éluée | pertechnétate ⁹⁹ᵐTcO₄⁻ | [2][3] |\n| Support | colonne d'alumine (Al₂O₃) | [2] |\n\nLe ⁹⁹Mo est majoritairement produit par **fission de l'²³⁵U** en réacteur ; des voies alternatives par capture neutronique ⁹⁸Mo(n,γ)⁹⁹Mo existent mais fournissent une activité spécifique plus faible [4]. L'énergie de **140,5 keV** est proche de l'optimum des gamma-caméras (compromis pénétration tissulaire / rendement du cristal NaI(Tl)), ce qui explique la domination historique du ⁹⁹ᵐTc [1].\n\n### Le cyclotron — ¹⁸F et émetteurs de positons à vie courte\n\nLe **cyclotron médical** produit les émetteurs β⁺ à courte période. Le **¹⁸F**, traceur TEP dominant, est obtenu par la réaction **¹⁸O(p,n)¹⁸F** — bombardement de protons sur de l'**eau enrichie en ¹⁸O** — produisant du fluorure-18 « **no-carrier-added** » (sans entraîneur) [45]. Le ¹⁸F présente une période de **109,8 min** et une désintégration **β⁺ à ~97 %** ; l'**énergie maximale du positon ≈ 634–635 keV** (la plus basse des isotopes TEP courants) confère un **parcours court (< 2,4 mm)** dans les tissus, donc une **excellente résolution spatiale** ; l'annihilation génère **2 photons de 511 keV** détectés en coïncidence [44][45].\n\nLe cyclotron produit aussi les émetteurs « ultracourts » nécessitant une production **sur site** : **¹³N-ammoniac** (~10 min), **¹⁵O** (~2 min), **¹¹C** (~20 min), ainsi que le **¹²³I** (γ 159 keV, période **13,2 h**) utilisé pour la MIBG et l'ioflupane.\n\n### Générateurs de deuxième génération pour la TEP\n\nDeux générateurs affranchissent certains sites de TEP de la contrainte du cyclotron :\n\n| Générateur | Descendant | Période descendant | Parent (période) | Usage | Source |\n|---|---|---|---|---|---|\n| **⁶⁸Ge/⁶⁸Ga** | ⁶⁸Ga | **67,7 min** | ⁶⁸Ge (270,8 j) | PSMA, DOTATATE (SSTR) | [43] |\n| **⁸²Sr/⁸²Rb** | ⁸²Rb | **76 s** | ⁸²Sr (25 j) | Perfusion myocardique TEP | [33][46] |\n\nLe **⁶⁸Ga** (rendement positon 89,1 %, β⁺ max 1899 keV) permet le marquage sur place des peptides PSMA et DOTA, mais le nombre de générateurs disponibles est limité [43]. Le **⁸²Rb**, analogue du potassium capté par la pompe Na/K-ATPase myocardique, autorise un **protocole repos/stress en < 30 min** sans cyclotron sur site ; le générateur ⁸²Sr/⁸²Rb est **remplacé toutes les 4–6 semaines** [33][46][47].\n\n### Le réacteur — radionucléides thérapeutiques\n\nLe **réacteur nucléaire** fournit, outre le ⁹⁹Mo, plusieurs radionucléides thérapeutiques par activation neutronique ou fission : le **¹³¹I** (β⁻ moyen 192 keV, γ 364 keV, période **8,02 j**) [15][62], le **¹⁷⁷Lu** (β⁻, période 6,7 j) support des thérapies DOTATATE et PSMA, et le **⁹⁰Y** (β⁻ pur) des microsphères de radioembolisation hépatique [35].",
+        "stats": [
+          {
+            "value": "66,0 h",
+            "label": "Période du ⁹⁹Mo (parent du générateur) [1][4]"
+          },
+          {
+            "value": "109,8 min",
+            "label": "Période du ¹⁸F (cyclotron) [44]"
+          },
+          {
+            "value": "76 s",
+            "label": "Période du ⁸²Rb (générateur ⁸²Sr/⁸²Rb) [33]"
+          },
+          {
+            "value": "> 87 %",
+            "label": "Désintégrations ⁹⁹Mo → ⁹⁹ᵐTc [1]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le générateur est un « moteur » à demi-vie",
+            "text": "L'activité de ⁹⁹ᵐTc disponible réélue croît par régénération à partir du ⁹⁹Mo fixé sur la colonne. En équilibre transitoire, le maximum de ⁹⁹ᵐTc est atteint **~24 h après une élution** ; en pratique on élue quotidiennement. Comme le parent ⁹⁹Mo a une période de **66,0 h** [1][4], l'activité maximale utile décroît d'environ un facteur 2 tous les ~3 jours, ce qui fixe la durée de vie commerciale du générateur (typiquement une à deux semaines)."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — confondre voie de production et disponibilité clinique",
+            "text": "Un radionucléide à période ultracourte impose une production **sur site** : le ¹⁵O (~2 min) et le ¹³N-ammoniac (~10 min) exigent un cyclotron dans l'établissement [47], tandis que le ¹⁸F (**109,8 min** [44]) supporte une livraison régionale. Ne jamais planifier un examen sans vérifier la logistique du traceur : c'est elle, autant que l'indication, qui détermine sa faisabilité."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Schéma du générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine retenant le parent ⁹⁹Mo, décroissance β⁻ vers le ⁹⁹ᵐTc, élution au sérum physiologique du pertechnétate ⁹⁹ᵐTcO₄⁻.",
+        "figureCaption": "Fig. B5 — Le générateur ⁹⁹Mo/⁹⁹ᵐTc : le parent (66 h) régénère continûment le descendant (6 h), élué en pertechnétate."
+      },
+      {
+        "title": "B6 - B6 · Marquage, radiochimie et préparation en radiopharmacie",
+        "text": "Le radionucléide produit (§B5) n'est qu'un émetteur : c'est le **marquage** — la fixation stable du radionucléide sur le vecteur — qui crée le radiopharmaceutique et lui confère sa biodistribution. Les procédés diffèrent selon le radionucléide et le vecteur.\n\n### Marquage du ⁹⁹ᵐTc — la chimie de la trousse (« kit »)\n\nÉlué en **pertechnétate ⁹⁹ᵐTcO₄⁻**, le technétium est au degré d'oxydation **+VII**, chimiquement inerte et non fixé par les vecteurs. La radiopharmacie hospitalière utilise des **trousses de marquage prêtes à l'emploi** : un flacon lyophilisé contenant le vecteur (MDP, MAG3, sestamibi, MAA…) et un **agent réducteur — le chlorure stanneux (Sn²⁺)** — qui réduit le Tc à un degré inférieur, le rendant réactif pour se complexer au ligand. L'ajout de l'éluat, parfois suivi d'un chauffage, donne le radiopharmaceutique en quelques minutes.\n\n| Traceur ⁹⁹ᵐTc | Vecteur / nature | Cible – application | Source |\n|---|---|---|---|\n| ⁹⁹ᵐTc-MDP / HDP | biphosphonate | chimisorption sur l'hydroxyapatite osseuse | [17][18] |\n| ⁹⁹ᵐTc-sestamibi / tétrofosmine | cation lipophile | mitochondries des cardiomyocytes (perfusion) | [13][14] |\n| ⁹⁹ᵐTc-MAG3 | mercaptoacétyltriglycine | sécrétion tubulaire rénale | [19][20] |\n| ⁹⁹ᵐTc-DTPA | chélate | filtration glomérulaire (DFG) | [19] |\n| ⁹⁹ᵐTc-DMSA | acide dimercaptosuccinique | cortex rénal (cellules tubulaires) | [19] |\n| ⁹⁹ᵐTc-MAA | macroagrégats d'albumine | microembolisation capillaire pulmonaire | [21] |\n\nCertaines particularités galéniques sont cliniquement déterminantes. Pour la **perfusion pulmonaire**, les **macroagrégats d'albumine (MAA)** doivent respecter un **nombre de particules optimal de 200 000–700 000** (minimum 100 000) par injection adulte : trop peu dégrade l'échantillonnage capillaire, trop en excès majore l'occlusion vasculaire [21]. Pour la **ventilation**, le **Technegas** est un aérosol de carbone marqué au ⁹⁹ᵐTc généré par vaporisation à haute température [22].\n\n### Marquage du ¹⁸F et des peptides — synthèse et chélation\n\nLe **¹⁸F-FDG** est produit par **substitution nucléophile** du fluorure-18 sur un précurseur mannose, suivie d'hydrolyse, dans un **automate de synthèse** en enceinte blindée. À la différence des trousses au ⁹⁹ᵐTc, la synthèse TEP est un procédé chimique complet imposant un module dédié.\n\nLes peptides des couples **théranostiques** exploitent un **chélateur bifonctionnel** — le **DOTA** — greffé sur le vecteur : il piège le cation métallique (⁶⁸Ga³⁺ pour l'imagerie, ¹⁷⁷Lu³⁺ pour la thérapie) tout en laissant le vecteur reconnaître sa cible. C'est le fondement chimique de la théranostique : **un même vecteur DOTA-peptide, deux radiométaux** — ⁶⁸Ga-DOTATATE pour imager, ¹⁷⁷Lu-DOTATATE pour traiter les tumeurs neuroendocrines SSTR+ [48][50] ; ⁶⁸Ga-PSMA-11 puis ¹⁷⁷Lu-PSMA-617 pour la prostate [25][51].\n\n### Marquage de l'iode et cas particuliers\n\nLes traceurs iodés (**¹²³I/¹³¹I-MIBG**, **¹²³I-ioflupane**, **iodure ¹³¹I**) reposent sur une **liaison covalente carbone-iode**. L'iodure de sodium (¹³¹I) est administré tel quel, sans marquage. Le **⁸²Rb** (chlorure) et le **²²³Ra** (dichlorure) sont des **cations administrés directement**, sans vecteur organique : leur biodistribution découle de leur analogie ionique (Rb⁺ ↔ K⁺ myocardique [46] ; Ra²⁺ ↔ Ca²⁺ osseux [53]).",
+        "steps": [
+          {
+            "title": "1 · Réception de l'éluat",
+            "text": "Élution du générateur (§B5) : pertechnétate ⁹⁹ᵐTcO₄⁻ au degré +VII, contrôlé à l'activimètre. Vérifier l'aspect limpide et l'activité volumique."
+          },
+          {
+            "title": "2 · Réduction & complexation",
+            "text": "Injection de l'éluat dans la trousse lyophilisée : le chlorure stanneux (Sn²⁺) réduit le Tc, qui se complexe au vecteur (MDP, MAG3, MAA…). Incubation ± chauffage selon la notice."
+          },
+          {
+            "title": "3 · Contrôle du marquage",
+            "text": "Mesure de la pureté radiochimique (rendement de marquage) par chromatographie ITLC avant toute libération — objet du §B7."
+          },
+          {
+            "title": "4 · Fractionnement & dispensation",
+            "text": "Prélèvement de l'activité individuelle sous protège-seringue tungstène ; étiquetage patient, calcul de l'activité corrigée de la décroissance à l'heure d'injection."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi une trousse ?",
+            "text": "La trousse « kit froid » découple la chimie (stable, préparée par l'industriel) de la radioactivité (ajoutée à la dernière minute à l'hôpital). Elle transforme une synthèse complexe en un geste de quelques minutes reproductible en radiopharmacie hospitalière, et explique la souplesse d'usage du ⁹⁹ᵐTc — un seul générateur permet de préparer une dizaine de radiopharmaceutiques différents [36]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — le nombre de particules du ⁹⁹ᵐTc-MAA",
+            "text": "Respecter la fourchette **200 000–700 000 particules** par injection adulte (min. 100 000) [21]. Chez l'enfant, l'hypertension artérielle pulmonaire ou après pneumonectomie, réduire drastiquement le nombre de particules pour limiter l'occlusion d'un lit capillaire déjà réduit — un surdosage particulaire peut avoir des conséquences hémodynamiques."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : un même vecteur DOTA-peptide marqué au ⁶⁸Ga pour l'imagerie TEP puis au ¹⁷⁷Lu pour la thérapie β⁻ ; le chélateur bifonctionnel piège le radiométal sans altérer la reconnaissance de la cible.",
+        "figureCaption": "Fig. B6 — La chélation DOTA fonde la théranostique : même vecteur, deux radiométaux (⁶⁸Ga pour voir, ¹⁷⁷Lu pour traiter)."
+      },
+      {
+        "title": "B7 - B7 · Contrôle qualité et assurance de la sécurité du produit",
+        "text": "Aucune activité n'est administrée sans un **contrôle qualité (CQ)** couvrant trois puretés — **radionucléidique, chimique, radiochimique** — plus les paramètres galéniques (pH, stérilité, apyrogénicité). Le CQ garantit à la fois l'efficacité diagnostique (contraste de l'image) et la sécurité du patient (limitation de la dose parasite).\n\n### Pureté radionucléidique — la percée (« breakthrough ») du ⁹⁹Mo\n\nLe test le plus emblématique du générateur ⁹⁹Mo/⁹⁹ᵐTc est la recherche de **⁹⁹Mo dans l'éluat** : le parent, émetteur β⁻ à haute énergie et à longue période (**66,0 h** [1]), délivrerait une dose parasite sans contribuer à l'image. La limite réglementaire est stricte :\n\n| Norme | Limite ⁹⁹Mo / ⁹⁹ᵐTc | Équivalent | Source |\n|---|---|---|---|\n| **USP** | **0,15 kBq ⁹⁹Mo / MBq ⁹⁹ᵐTc** | 0,15 µCi/mCi | [5][61] |\n| **Pharmacopée européenne** | **0,1 kBq/MBq** (0,1 %) | plus stricte | [5] |\n| Canada | 0,03 kBq/MBq | | [5] |\n\nEn pratique, la pureté radiochimique du pertechnétate élué est **≈ 99,8 %** et la teneur médiane en ⁹⁹Mo des générateurs commerciaux **≈ 3,8 × 10⁻⁴ %**, bien en deçà des seuils [5]. La mesure se fait par comptage de l'éluat dans un **blindage de plomb** absorbant le γ de 140 keV du ⁹⁹ᵐTc mais laissant passer le γ de 740 keV du ⁹⁹Mo.\n\n### Pureté chimique — l'aluminium\n\nLe support du générateur étant une colonne d'**alumine**, un relargage d'**ions Al³⁺** peut survenir. Au-delà d'un seuil, l'aluminium colloïde le pertechnétate et perturbe le marquage (agrégation, fixation hépatique/pulmonaire anormale). Limites USP : **< 10 µg Al³⁺/mL** (générateur de fission) ou **< 20 µg/mL** (générateur par activation neutronique), vérifiées par test colorimétrique [5].\n\n### Pureté radiochimique — le rendement de marquage\n\nElle vérifie que le radionucléide est bien lié au vecteur voulu, par **chromatographie sur couche mince (TLC/ITLC)**. On quantifie les impuretés :\n- le **⁹⁹ᵐTc libre** (pertechnétate non complexé) → fixation gastrique, thyroïdienne, salivaire ;\n- le **⁹⁹ᵐTc hydrolysé-réduit** (colloïde) → fixation hépatique et rate.\n\nPour les traceurs iodés, l'**iode libre** (contrôle radiochimique insuffisant) se fixe sur la **thyroïde, l'estomac et les glandes salivaires**, dégradant l'image et irradiant la thyroïde — d'où le **blocage thyroïdien** systématique avant MIBG ou ioflupane [1][5].\n\n### Sécurité du produit et radioprotection à l'administration\n\nLe CQ intègre les paramètres pharmaceutiques : **pH** compatible, **stérilité** et **apyrogénicité** (préparation en zone d'atmosphère contrôlée), **activité** vérifiée à l'**activimètre** à l'heure d'injection après correction de décroissance.\n\nLa manipulation impose une radioprotection graduée selon l'émission :\n\n| Radionucléide | Contrainte de radioprotection | Source |\n|---|---|---|\n| ⁹⁹ᵐTc (γ 140 keV) | protège-seringue plomb standard | [1] |\n| ¹⁸F / émetteurs β⁺ (γ 511 keV) | **blindage plomb épais, protège-seringue tungstène** (photons très pénétrants) | [44][45] |\n| ¹³¹I (γ 364 keV + β⁻) | collimateur/enceinte haute énergie, gestion des effluents (période 8 j) | [15] |\n| ²²³Ra (α, portée < 100 µm) | faible irradiation externe ; épargne médullaire, mais gestion des déchets α | [53] |\n\nLes **photons d'annihilation de 511 keV** de la TEP sont bien plus pénétrants que le γ de 140 keV du ⁹⁹ᵐTc, imposant tungstène et gestion du débit de dose au contact du patient injecté [44]. À l'inverse, la **très courte portée des particules α du ²²³Ra (< 100 µm)** confine le dépôt d'énergie à quelques diamètres cellulaires, épargnant la moelle et limitant l'irradiation externe [53].",
+        "stats": [
+          {
+            "value": "0,15 kBq/MBq",
+            "label": "Limite USP de percée du ⁹⁹Mo dans l'éluat [5]"
+          },
+          {
+            "value": "< 10 µg/mL",
+            "label": "Limite USP de l'aluminium (générateur de fission) [5]"
+          },
+          {
+            "value": "511 keV",
+            "label": "Photons d'annihilation TEP → tungstène requis [44]"
+          },
+          {
+            "value": "≈ 99,8 %",
+            "label": "Pureté radiochimique typique du pertechnétate élué [5]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — l'iode libre et le ⁹⁹ᵐTc libre trahissent un marquage défaillant",
+            "text": "Une fixation inattendue sur la **thyroïde, l'estomac et les glandes salivaires** signe la présence de radionucléide non lié : **⁹⁹ᵐTc libre** (pertechnétate) pour les traceurs technétiés, ou **iode libre** pour les traceurs iodés [1][5]. Devant ce pattern, remettre en cause le contrôle radiochimique du lot et, pour les iodés, vérifier l'efficacité du blocage thyroïdien avant de conclure sur les images."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la percée du ⁹⁹Mo se mesure au temps d'administration",
+            "text": "Le rapport ⁹⁹Mo/⁹⁹ᵐTc **augmente avec le temps** après élution : le ⁹⁹ᵐTc (6 h) décroît vite tandis que le ⁹⁹Mo contaminant (66 h) persiste [1]. Un éluat conforme à la sortie du générateur peut dépasser la limite USP de 0,15 kBq/MBq [5] plusieurs heures plus tard. La conformité doit donc être vérifiée — ou recalculée — **à l'heure d'administration**, pas seulement à l'élution."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers de radioprotection à l'administration — temps, distance, écran (ALARA) — modulés selon l'énergie d'émission : plomb pour le γ 140 keV du ⁹⁹ᵐTc, tungstène pour les 511 keV de la TEP.",
+        "figureCaption": "Fig. B7 — Temps / distance / écran : le blindage est adapté à l'énergie du radionucléide (plomb pour le ⁹⁹ᵐTc, tungstène pour la TEP)."
+      },
+      {
+        "title": "C8 - C8 · Les traceurs du ⁹⁹ᵐTc : la colonne vertébrale de la scintigraphie",
+        "text": "**Pourquoi le ⁹⁹ᵐTc domine la scintigraphie.** Le **technétium-99m (⁹⁹ᵐTc)** est le radionucléide monophotonique de référence de la médecine nucléaire : il émet un **photon γ quasi monoénergétique de 140,5 keV** (≈89 % des désintégrations, par **transition isomérique**), énergie idéale pour le cristal des gamma-caméras, avec une **demi-vie physique de 6,0 h** [1]. Cette combinaison — photon détectable sans β⁻ accompagnateur, période courte limitant la dose, chimie de coordination souple — explique qu'il porte à lui seul la majorité des actes de scintigraphie mondiaux [1,36]. Il est produit **sur place** par le **générateur ⁹⁹Mo/⁹⁹ᵐTc**, élué au sérum physiologique (NaCl 0,9 %) sous forme de **pertechnétate ⁹⁹ᵐTcO₄⁻** puis complexé à un vecteur à froid en kit (cf. §B7 et C11). L'**activité diagnostique administrée est de 400–1100 MBq** selon l'examen [1].\n\n**Le principe fondateur : un même radionucléide, de multiples vecteurs.** Le ⁹⁹ᵐTc ne cible rien par lui-même ; c'est le **vecteur** greffé qui détermine la biodistribution. On passe ainsi d'une même chimie de marquage à des explorations d'organes entièrement différents. Le tableau ci-dessous synthétise les grandes familles ⁹⁹ᵐTc, leur mécanisme de fixation et leur dosimétrie de référence.\n\n| Traceur ⁹⁹ᵐTc | Cible / mécanisme | Activité adulte | Dose efficace | Indication phare |\n|---|---|---|---|---|\n| **MDP / HDP** (biphosphonates) | Chimisorption sur l'**hydroxyapatite** osseuse (~50–60 % fixés à 3–4 h) | **740–1110 MBq** (20–30 mCi) [18] | **0,0057 mSv/MBq** (≈8,9 mSv pour 925 MBq) [17] | Métastases osseuses, fractures occultes, ostéomyélite [18] |\n| **Sestamibi (MIBI) / tétrofosmine** | Cations lipophiles séquestrés dans les mitochondries des cardiomyocytes proportionnellement au flux (**pas de redistribution**) | **925–1110 MBq** (25–30 mCi) / injection, protocole 2 jours [13] | ≈**0,009 mSv/MBq** (repos) [38] | Perfusion myocardique ; scintigraphie parathyroïdienne |\n| **MAG3** (mercaptoacétyltriglycine) | **Sécrétion tubulaire** (extraction >2× celle du DTPA) → fonction et drainage | **37–185 MBq** (1–5 mCi) préférés [20] | ≈**0,007 mSv/MBq** adulte (0,02 chez le nourrisson) [63] | Rénogramme, uropathie obstructive [19,20] |\n| **DTPA** | **Filtration glomérulaire** pure | — | — | Mesure du DFG [20] |\n| **DMSA** | Fixation **corticale** (tubules proximaux) | — | — | Cicatrices, pyélonéphrite [19] |\n| **MAA** (macroagrégats d'albumine) | Microembolisation capillaire pulmonaire | **200 000–700 000 particules** (min. 100 000) [21] | — | Perfusion pulmonaire (EP), cartographie pré-SIRT [21] |\n| **PYP / DPD / HMDP** (pyrophosphate) | Fixation myocardique dans l'**amylose à transthyrétine** | — | — | Amylose cardiaque ATTR (score de Perugini) [54] |\n\n**Le générateur : logistique et pierre angulaire.** Le parent **⁹⁹Mo** (demi-vie **66 h**, soit ~2,75 jours) est fixé sur une colonne d'alumine (Al₂O₃) et décroît par β⁻ ; **>87 % des désintégrations du ⁹⁹Mo conduisent au ⁹⁹ᵐTc** [1]. La longue période du parent autorise le **transport hebdomadaire** du générateur et l'élution répétée du descendant à vie courte [2,36]. Le ⁹⁹Mo est majoritairement produit par **fission de l'²³⁵U** en réacteur [4].",
+        "stats": [
+          {
+            "value": "140,5 keV",
+            "label": "γ monoénergétique du ⁹⁹ᵐTc"
+          },
+          {
+            "value": "6,0 h",
+            "label": "Demi-vie physique du ⁹⁹ᵐTc"
+          },
+          {
+            "value": "66 h",
+            "label": "Demi-vie du parent ⁹⁹Mo"
+          },
+          {
+            "value": "400–1100 MBq",
+            "label": "Activité diagnostique typique"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — percée du ⁹⁹Mo (« breakthrough »)",
+            "text": "La pureté radionucléidique de l'éluat est contrôlée à chaque élution : la limite USP est de **0,15 kBq de ⁹⁹Mo par MBq de ⁹⁹ᵐTc** (≡ 0,15 µCi/mCi) au moment de l'administration [5,61] ; la **Pharmacopée européenne est plus stricte (0,1 kBq/MBq, soit 0,1 %)** [5]. Un test complémentaire vérifie l'**aluminium** relargué par la colonne : limite USP **<10 µg Al³⁺/mL** (générateur de fission) [61]. Au-delà, l'éluat est non conforme."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pas de redistribution en MPI",
+            "text": "Contrairement au ²⁰¹Tl, le sestamibi et la tétrofosmine ne se redistribuent pas cliniquement : la distribution figée après injection impose **deux injections séparées (repos et stress)**, base des protocoles 1 jour (rapport d'activité repos/stress ~1:3 à 1:4) et 2 jours [13,14]."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureCaption": "Générateur ⁹⁹Mo/⁹⁹ᵐTc : le parent ⁹⁹Mo fixé sur alumine décroît en ⁹⁹ᵐTc, élué chaque jour en pertechnétate — la source quotidienne de technétium de la radiopharmacie.",
+        "figureAlt": "Schéma du générateur 99Mo/99mTc : colonne d'alumine, élution du pertechnétate 99mTcO4- au sérum physiologique, décroissance du parent 99Mo en 99mTc."
+      },
+      {
+        "title": "C9 - C9 · Les traceurs TEP : ¹⁸F, ⁶⁸Ga et au-delà",
+        "text": "**Le principe physique commun : la coïncidence à 511 keV.** Les traceurs de **tomographie par émission de positons (TEP / PET)** reposent tous sur des radionucléides **émetteurs β⁺** : le positon émis parcourt une courte distance dans les tissus, s'annihile avec un électron et libère **deux photons de 511 keV émis à 180°**, détectés en **coïncidence** par la couronne du tomographe [44]. La qualité de résolution dépend directement de l'énergie du positon (donc de son parcours avant annihilation), ce qui hiérarchise les radionucléides TEP.\n\n**Le ¹⁸F : le traceur PET dominant.** Le **fluor-18 (¹⁸F)** a une **demi-vie de 109,8 min**, se désintègre par **β⁺ à 97 %**, et son positon de **faible énergie (max ≈634–635 keV, la plus basse des isotopes PET)** a un **parcours court (<2,4 mm)** dans les tissus, d'où une **excellente résolution spatiale** [44]. Il est produit en cyclotron par la réaction **¹⁸O(p,n)¹⁸F** sur eau enrichie en ¹⁸O, en forme « no-carrier-added » [45]. Son porte-étendard clinique est le **¹⁸F-FDG (fluorodésoxyglucose)** : analogue du glucose capté par les transporteurs **GLUT** et phosphorylé par l'hexokinase, puis **piégé** dans la cellule (metabolic trapping).\n\n| Radionucléide TEP | Demi-vie | Production | β⁺ / énergie | Usage clinique majeur |\n|---|---|---|---|---|\n| **¹⁸F** | 109,8 min [44] | Cyclotron ¹⁸O(p,n)¹⁸F [45] | 97 %, max ≈634 keV [44] | FDG (onco/neuro/infection), PSMA, NaF |\n| **⁶⁸Ga** | 67,7 min [43] | **Générateur ⁶⁸Ge/⁶⁸Ga** (parent 270,8 j) [43] | 89,1 %, max 1899 keV [43] | DOTATATE (TNE), PSMA-11 (prostate) |\n| **⁸²Rb** | 76 s [46] | **Générateur ⁸²Sr/⁸²Rb** (parent 25 j) [46] | analogue K⁺ (Na/K-ATPase) [46] | Perfusion myocardique quantitative [33,47] |\n| **¹³N-ammoniac** | ~10 min [47] | Cyclotron sur site | — | Perfusion myocardique PET [47] |\n\n**⁶⁸Ga et l'essor sans cyclotron.** Le **gallium-68** (demi-vie **67,7 min**, β⁺ 89,1 %) est délivré par un **générateur ⁶⁸Ge/⁶⁸Ga** dont le parent ⁶⁸Ge a une demi-vie de **270,8 jours**, autorisant une TEP sans cyclotron sur site [43]. Il porte les vecteurs peptidiques **DOTATATE / DOTATOC / DOTANOC** (récepteurs de la somatostatine, cf. C11) et **PSMA-11** (prostate). Le **⁸²Rb**, analogue du potassium capté par la pompe Na/K-ATPase myocardique, permet un protocole repos/stress complet en **<30 min** sans cyclotron [33,46,47], tandis que le **¹³N-ammoniac** et l'**¹⁵O-eau** exigent un cyclotron dédié en raison de leurs demi-vies ultracourtes [47].\n\n**Dosimétrie de référence — le repère FDG.** Le coefficient de dose efficace du **¹⁸F-FDG est de 0,019 mSv/MBq** chez l'adulte (CIPR/ICRP 128), l'**organe critique étant la vessie** [11,38]. Les fantômes maillés récents (ICRP mesh) révisent cette valeur à **≈0,017 mSv/MBq**, voire **0,015 ± 0,002 mSv/MBq** en IV [11,39,41].",
+        "stats": [
+          {
+            "value": "511 keV",
+            "label": "Photons d'annihilation (coïncidence)"
+          },
+          {
+            "value": "109,8 min",
+            "label": "Demi-vie du ¹⁸F"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Dose efficace ¹⁸F-FDG (CIPR 128)"
+          },
+          {
+            "value": "76 s",
+            "label": "Demi-vie de l'⁸²Rb"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — préparation avant ¹⁸F-FDG",
+            "text": "La captation tumorale du FDG est en compétition avec le glucose sanguin : un **jeûne ≥ 4 h** (certaines sources 6 h) et un contrôle glycémique sont requis, cible **glycémie 4–7 mmol/L (≈70–126 mg/dL)** [59,60]. L'hyperglycémie n'est pas une contre-indication absolue mais **dégrade le contraste tumoral** ; il faut aussi éviter l'effort musculaire et assurer le repos/hydratation [60]. La quantification standard est le **SUV**, dépendant du poids mesuré juste avant l'examen et du délai d'incorporation [60]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi le ¹⁸F donne la meilleure résolution",
+            "text": "Parmi les émetteurs de positons courants, le ¹⁸F possède l'**énergie de positon la plus basse** (max ≈634 keV) donc le **parcours le plus court (<2,4 mm)** avant annihilation [44]. Le ⁶⁸Ga, à l'inverse, a un positon plus énergétique (max 1899 keV) [43] : sa résolution intrinsèque est un peu moindre, un compromis accepté pour la disponibilité par générateur."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureCaption": "Détection en coïncidence : le positon s'annihile et émet deux photons de 511 keV à 180°, captés simultanément par la couronne du tomographe — le principe physique commun à tous les traceurs TEP.",
+        "figureAlt": "Schéma de la détection en coïncidence TEP : émission d'un positon, annihilation, deux photons de 511 keV émis à 180 degrés détectés par l'anneau de détecteurs."
+      },
+      {
+        "title": "C10 - C10 · Les autres radionucléides diagnostiques : iodes, ¹¹¹In, gaz et colloïdes",
+        "text": "**Au-delà du ⁹⁹ᵐTc et du ¹⁸F.** Plusieurs radionucléides monophotoniques et vecteurs particuliers complètent le panorama diagnostique lorsqu'aucun traceur ⁹⁹ᵐTc ou TEP n'est adapté à la cible biologique. Les **iodes radioactifs** occupent une place centrale car l'iode est physiologiquement capté par le **symporteur sodium-iode (NIS)** de la thyroïde, ce qui en fait à la fois un traceur diagnostique et un agent thérapeutique.\n\n**Les iodes — du diagnostic à la thérapie.** Le **¹²³I** (demi-vie **13,2 h**, γ 159 keV) est l'iode diagnostique de référence : photon idéal pour la gamma-caméra, sans β⁻, faisabilité TEMP. Le **¹³¹I** (demi-vie **8,02 j**) est un **émetteur mixte** — γ de **364 keV** utile à l'imagerie mais surtout **β⁻ (moyen 192 keV, max 607 keV)** responsable de l'effet thérapeutique — d'où son double usage en thyroïdologie (cf. C11) [15,62].\n\n| Vecteur / traceur | Radionucléide | Cible / mécanisme | Application |\n|---|---|---|---|\n| **Iodure de sodium** | ¹²³I / ¹³¹I | Captation par le **NIS** thyroïdien | Fonction/nodule thyroïdien ; cancer différencié [15] |\n| **¹²³I-MIBG** (métaiodobenzylguanidine) | ¹²³I | Analogue de la noradrénaline, transporteur **NET (uptake-1)** des cellules chromaffines | Neuroblastome (>90 % avides), phéochromocytome/paragangliome, innervation sympathique cardiaque [34] |\n| **¹²³I-ioflupane** (DaTscan / FP-CIT) | ¹²³I | Transporteur de la dopamine (DAT) striatal | Syndromes parkinsoniens (**Se 78 % / Sp 97 %**) [58] |\n| **Colloïdes / nanocolloïdes** | ⁹⁹ᵐTc | Phagocytose par le système réticulo-endothélial / drainage lymphatique | Ganglion sentinelle, foie/rate |\n| **Aérosols & gaz** | ⁹⁹ᵐTc (Technegas), ⁸¹ᵐKr, ¹³³Xe | Distribution ventilatoire | Ventilation pulmonaire (V/Q) [22] |\n\n**Le ¹²³I-MIBG et le système adrénergique.** Analogue de la noradrénaline capté par le transporteur NET (uptake-1) puis stocké et **non métabolisé**, le ¹²³I-MIBG (γ 159 keV, période ~13 h) explore le tissu sympatho-adrénergique : **>90 % des neuroblastomes sont MIBG-avides**, et son couple thérapeutique **¹³¹I-MIBG (β⁻)** illustre déjà la logique théranostique (cf. C11) [34].\n\n**Ventilation pulmonaire — gaz et aérosols.** Pour le volet ventilation de la scintigraphie **V/Q** (embolie pulmonaire), le **Technegas** (aérosol de carbone marqué au ⁹⁹ᵐTc) et le **⁹⁹ᵐTc-DTPA aérosol** sont les agents usuels, en complément de la perfusion au ⁹⁹ᵐTc-MAA [22].\n\n**Autres — ¹¹¹In, ⁶⁷Ga, ²⁰¹Tl.** L'**¹¹¹In** (marquage leucocytaire, cisternographie, ancien octréotide-Pentetreotide), le **⁶⁷Ga-citrate** (inflammation/lymphome, largement supplanté par le FDG) et le **²⁰¹Tl** (perfusion myocardique, redistribution) complètent la palette historique, aujourd'hui en recul face aux traceurs ⁹⁹ᵐTc et TEP.",
+        "stats": [
+          {
+            "value": "13,2 h",
+            "label": "Demi-vie du ¹²³I (diagnostic)"
+          },
+          {
+            "value": "364 keV",
+            "label": "γ du ¹³¹I (imagerie)"
+          },
+          {
+            "value": ">90 %",
+            "label": "Neuroblastomes MIBG-avides"
+          },
+          {
+            "value": "78 % / 97 %",
+            "label": "Se / Sp du DaTscan (Parkinson)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — préparation spécifique des iodes",
+            "text": "Avant **¹³¹I thyroïdien** : régime pauvre en iode, éviter les produits de contraste iodés, arrêt/adaptation des antithyroïdiens et stimulation par TSH selon protocole [15]. Avant **¹²³I-MIBG** : **blocage thyroïdien** (iodure/perchlorate) contre l'iode libre, et suspension des médicaments interférant avec la recapture NET (certains antidépresseurs, sympathomimétiques, labétalol) [34]."
+          },
+          {
+            "type": "info",
+            "title": "Le ¹³¹I, radionucléide « frontière »",
+            "text": "Le ¹³¹I est le prototype du radionucléide **à la fois diagnostique et thérapeutique** : son émission γ 364 keV permet l'imagerie de balayage post-thérapeutique tandis que son émission **β⁻** délivre la dose (~90 % de l'irradiation locale). Ce double caractère le place naturellement à la charnière de la section suivante sur la logique théranostique."
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureCaption": "Captation de l'iode par le symporteur sodium-iode (NIS) du thyréocyte : le mécanisme qui fait de l'iode radioactif à la fois un traceur (¹²³I) et un agent thérapeutique (¹³¹I).",
+        "figureAlt": "Schéma du thyréocyte : symporteur sodium-iode (NIS) à la membrane basale captant l'iodure, organification et stockage — base de l'imagerie et de la thérapie à l'iode radioactif."
+      },
+      {
+        "title": "C11 - C11 · Choisir le bon traceur : logique cible → mécanisme → traceur",
+        "text": "**Le raisonnement pivot.** Choisir un radiopharmaceutique, ce n'est pas mémoriser une liste mais suivre une chaîne logique : **quelle est la cible biologique** (un transporteur, un récepteur, un processus métabolique, un flux) → **quel vecteur l'exploite** → **quel radionucléide** (γ/β⁺ pour voir, β⁻/α pour traiter). Cette grammaire unifie tout le panorama et fonde la **théranostique** : un même vecteur, décliné avec un radionucléide d'imagerie puis un radionucléide thérapeutique.\n\n**La logique théranostique.** Un couple théranostique associe un traceur **diagnostique** (émetteur γ ou β⁺, pour sélectionner les patients dont la tumeur exprime la cible) à un traceur **thérapeutique** partageant le même vecteur (émetteur **β⁻** de portée millimétrique, ou **α** de portée <100 µm). La sélection par imagerie garantit que seuls les patients « cible-positifs » sont traités : c'est la boucle **imager → sélectionner → traiter → réévaluer**.\n\n| Cible biologique | Vecteur | Imagerie | Thérapie appariée | Essai pivot / preuve |\n|---|---|---|---|---|\n| **PSMA** (prostate) | PSMA-11 / -617 | **⁶⁸Ga / ¹⁸F-PSMA** (proPSMA : exactitude **92 % vs 65 %**, Se 85 % / Sp 98 %) [23,24] | **¹⁷⁷Lu-PSMA-617** (Pluvicto), **7,4 GBq / 6 sem., max 6 cycles** [25] | **VISION** : SG **15,3 vs 11,3 mois**, HR 0,62 [51,52] ; FDA mars 2022 [26] |\n| **SSTR** (récepteurs somatostatine, TNE) | DOTATATE / DOTATOC | **⁶⁸Ga-DOTATATE** | **¹⁷⁷Lu-DOTATATE** (Lutathera), **7,4 GBq × 4 / 8 sem.** [48] | **NETTER-1** : SSP 20 mois **65,2 % vs 10,8 %** [48,49] ; **NETTER-2** SSP **22,8 vs 8,5 mois** [50] |\n| **NIS** (thyroïde) | Iodure de sodium | **¹²³I / ¹³¹I** | **¹³¹I** (β⁻) : Basedow ~8–15 mCi, ablation cancer **1,85–5,5 GBq** [15,16,62] | SNMMI Therapy 3.0 [16] |\n| **NET** (chromaffine) | MIBG | **¹²³I-MIBG** | **¹³¹I-MIBG** (β⁻) | Neuroblastome/phéochromocytome métastatiques [34] |\n| **Os métaboliquement actif** | dichlorure de radium | (⁹⁹ᵐTc-MDP pour repérage) | **²²³Ra** (α), **55 kBq/kg / 4 sem. × 6** [31] | **ALSYMPCA** : SG **14,9 vs 11,3 mois**, HR 0,70 [31,32] ; FDA mai 2013 |\n| **Vascularisation hépatique** | microsphères | (⁹⁹ᵐTc-MAA : shunt pulmonaire) | **⁹⁰Y** (β⁻ pur) radioembolisation | CHC, métastases hépatiques [35] |\n\n**β⁻ contre α : deux physiques thérapeutiques.** Le **¹⁷⁷Lu** (β⁻, demi-vie 6,7 j) irradie sur quelques millimètres — adapté aux volumes tumoraux — et porte DOTATATE et PSMA-617. Le **²²³Ra** est un **émetteur α** de très courte portée (**<100 µm**) : il cible l'os métaboliquement actif en tant qu'analogue du calcium, provoque des cassures double-brin très localisées et **épargne la moelle**, réduisant la myélotoxicité [32,53]. Le **⁹⁰Y** (β⁻ pur) sert à la radioembolisation trans-artérielle hépatique, précédée d'une cartographie au ⁹⁹ᵐTc-MAA pour quantifier le shunt pulmonaire [35].\n\n**Repères de performance qui guident le choix.** Certains traceurs se sont imposés par des performances diagnostiques décisives : **PSMA-PET** (proPSMA : exactitude 92 % vs 65 % pour l'imagerie conventionnelle, moindre irradiation 8,4 vs 19,2 mSv) [23,24] ; **⁹⁹ᵐTc-PYP** pour l'amylose ATTR (ratio cœur/controlatéral **>1,5 : Se 97 %, Sp 100 %**) [56] ; **DaTscan** pour le Parkinson (Se 78 % / Sp 97 %) [58]. Le choix intègre donc cible, disponibilité (générateur vs cyclotron), dosimétrie et niveau de preuve.",
+        "steps": [
+          {
+            "title": "1 · Définir la cible biologique",
+            "text": "Identifier le processus à imager : transporteur (NIS, NET, GLUT), récepteur (SSTR, PSMA), flux (perfusion myocardique/pulmonaire) ou minéralisation (hydroxyapatite). C'est la cible qui commande tout le reste."
+          },
+          {
+            "title": "2 · Choisir le vecteur",
+            "text": "Sélectionner la molécule qui exploite la cible : biphosphonate pour l'os, peptide DOTA pour le SSTR, ligand PSMA pour la prostate, iodure pour la thyroïde, analogue de noradrénaline (MIBG) pour le tissu chromaffine."
+          },
+          {
+            "title": "3 · Apparier le radionucléide",
+            "text": "Pour voir : émetteur γ (⁹⁹ᵐTc, ¹²³I) en TEMP ou β⁺ (¹⁸F, ⁶⁸Ga) en TEP. Pour traiter : β⁻ (¹³¹I, ¹⁷⁷Lu, ⁹⁰Y) ou α (²²³Ra). Le même vecteur peut basculer d'un radionucléide diagnostique à un radionucléide thérapeutique — c'est la paire théranostique."
+          },
+          {
+            "title": "4 · Sélectionner puis réévaluer",
+            "text": "Utiliser l'imagerie diagnostique pour confirmer l'expression de la cible (patient « cible-positif »), délivrer le traitement apparié, puis réévaluer par la même imagerie. La boucle imager → traiter → réévaluer est validée par NETTER-1/2, VISION et ALSYMPCA [31,48,50,51]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "7,4 GBq",
+            "label": "Dose/cycle ¹⁷⁷Lu (PSMA & DOTATATE)"
+          },
+          {
+            "value": "15,3 vs 11,3 mois",
+            "label": "SG VISION (¹⁷⁷Lu-PSMA-617) [51]"
+          },
+          {
+            "value": "<100 µm",
+            "label": "Portée α du ²²³Ra"
+          },
+          {
+            "value": "92 % vs 65 %",
+            "label": "Exactitude PSMA-PET vs conventionnelle [23]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la cible est indépendante du radionucléide",
+            "text": "Le vecteur DOTATATE cible le récepteur de la somatostatine, que le radionucléide soit ⁶⁸Ga (imagerie) ou ¹⁷⁷Lu (thérapie) : le radionucléide ne change que la fonction (voir vs traiter), jamais le ciblage. C'est ce découplage qui fonde la théranostique — on visualise avec l'un, on traite avec l'autre [48,25]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — un traceur négatif ne signifie pas absence de maladie",
+            "text": "Une imagerie diagnostique négative peut traduire une **perte d'expression de la cible** (tumeur dédifférenciée, mutation) plutôt qu'une absence de lésion — et contre-indique alors la thérapie appariée. La sélection théranostique repose précisément sur la démonstration de l'avidité : pas de cible exprimée, pas de traitement vectorisé pertinent."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureCaption": "Boucle théranostique : un même vecteur imagé avec un radionucléide diagnostique (γ/β⁺) sélectionne les patients, puis délivre la dose avec un radionucléide thérapeutique (β⁻/α) — imager, sélectionner, traiter, réévaluer.",
+        "figureAlt": "Schéma de la boucle théranostique : imagerie diagnostique (68Ga/123I) pour sélectionner les patients cible-positifs, traitement apparié (177Lu/131I/223Ra), puis réévaluation par imagerie."
+      },
+      {
+        "title": "D12 - D12 · Théranostique : le même vecteur pour voir puis traiter",
+        "text": "Le principe **théranostique** (contraction de *thérapie* et *diagnostic*) est la traduction opérationnelle de la définition du radiopharmaceutique : puisque c'est le **vecteur** qui porte la spécificité de cible et le **radionucléide** qui n'est qu'un « passager » interchangeable, on peut apparier au même vecteur un **radionucléide d'imagerie** (émetteur γ ou β⁺) pour visualiser la cible, puis un **radionucléide thérapeutique** (émetteur β⁻ ou α) pour l'irradier sélectivement. L'imagerie devient alors un **test compagnon** : elle sélectionne les patients dont les lésions expriment la cible (et donc capteront le vecteur thérapeutique) et cartographie l'ensemble des sites à traiter. Le couple **⁶⁸Ga-DOTATATE / ¹⁷⁷Lu-DOTATATE** (récepteurs de la somatostatine, SSTR) et le couple **⁶⁸Ga-/¹⁸F-PSMA / ¹⁷⁷Lu-PSMA-617** (antigène membranaire spécifique de la prostate) en sont les archétypes contemporains ; le couple historique **¹²³I / ¹³¹I** dans la thyroïde (symporteur sodium-iode, NIS) en fut le prototype, et le couple **¹²³I- / ¹³¹I-MIBG** (transporteur de la noradrénaline, NET) illustre le même paradigme en oncologie sympatho-adrénergique.\n\nLa **boucle théranostique** enchaîne quatre temps : (1) **imager** pour confirmer l'expression de la cible et l'extension ; (2) **sélectionner** les patients éligibles selon un critère d'avidité (fixation ≥ foie sain pour les SSTR, PSMA-avidité de toutes les lésions) ; (3) **traiter** par administrations itératives de l'émetteur corpusculaire ; (4) **réévaluer** la réponse et la persistance de la cible avant le cycle suivant. Le radionucléide thérapeutique choisi conditionne la **balistique** : le **β⁻** (¹⁷⁷Lu, ¹³¹I, ⁹⁰Y) dépose son énergie sur un parcours millimétrique (effet de feu croisé, *cross-fire*, utile pour les lésions hétérogènes), tandis que l'**α** (²²³Ra, ²²⁵Ac) délivre un TEL élevé sur **< 100 µm**, soit quelques diamètres cellulaires, épargnant la moelle adjacente.[32,53]\n\n| Cible / vecteur | Diagnostic (imagerie) | Thérapie (radionucléide) | Indication princeps |\n|---|---|---|---|\n| **SSTR** (somatostatine) | ⁶⁸Ga-DOTATATE / DOTATOC (β⁺) | **¹⁷⁷Lu-DOTATATE** (β⁻) | TNE gastro-entéro-pancréatiques bien/modérément différenciées[48,49] |\n| **PSMA** (prostate) | ⁶⁸Ga-PSMA-11 / ¹⁸F-DCFPyL (β⁺) | **¹⁷⁷Lu-PSMA-617** (β⁻) | mCRPC PSMA⁺[25,51] |\n| **NIS** (thyroïde) | ¹²³I-iodure (γ 159 keV) | **¹³¹I-iodure** (β⁻ + γ 364 keV) | Cancer thyroïdien différencié, hyperthyroïdie[15,16] |\n| **NET** (noradrénaline) | ¹²³I-MIBG (γ 159 keV) | **¹³¹I-MIBG** (β⁻ + γ 364 keV) | Phéo/paragangliome, neuroblastome métastatiques[34] |\n| **Os métaboliquement actif** | ⁹⁹ᵐTc-MDP (γ, cartographie) | **²²³Ra-dichlorure** (α) | Métastases osseuses du mCRPC symptomatique[31,32] |\n\nLa force du modèle tient à la **preuve de niveau III** accumulée par des essais randomisés de phase III. Pour les TNE, **NETTER-1** (¹⁷⁷Lu-DOTATATE, **7,4 GBq × 4 cycles / 8 semaines**, cumul **29,6 GBq**) a montré une survie sans progression à 20 mois de **65,2 % vs 10,8 %** sous octréotide LAR haute dose, avec un taux de réponse objective de **18 % vs 3 %** ; **NETTER-2** l'a étendu en 1ʳᵉ ligne (grades 2/3) avec une SSP médiane de **22,8 vs 8,5 mois**.[48,49,50] Pour la prostate, **VISION** (¹⁷⁷Lu-PSMA-617, **7,4 GBq / 6 semaines, jusqu'à 6 cycles**) a prolongé la survie globale médiane à **15,3 vs 11,3 mois** (HR 0,62 ; IC95 % 0,52–0,74 ; p < 0,001) et la SSP radiographique à **8,7 vs 3,4 mois**.[25,51,52] Pour l'os, **ALSYMPCA** (²²³Ra, **55 kBq/kg / 4 semaines × 6**) a établi le premier α-émetteur, avec une survie globale de **14,9 vs 11,3 mois** (HR 0,70 ; IC95 % 0,58–0,83 ; p < 0,001).[31,32] La performance du versant diagnostique conditionne tout : **proPSMA** a montré une exactitude de la TEP-PSMA de **92 % vs 65 %** pour l'imagerie conventionnelle (Se **85 % vs 38 %**, Sp **98 % vs 91 %**), légitimant la sélection par PSMA-TEP avant traitement.[23,24]",
+        "stats": [
+          {
+            "value": "7,4 GBq",
+            "label": "Dose ¹⁷⁷Lu par cycle (DOTATATE / PSMA-617)"
+          },
+          {
+            "value": "15,3 mois",
+            "label": "SG médiane ¹⁷⁷Lu-PSMA-617 vs 11,3 (VISION)"
+          },
+          {
+            "value": "< 100 µm",
+            "label": "Portée des α du ²²³Ra (feu croisé cellulaire)"
+          },
+          {
+            "value": "92 %",
+            "label": "Exactitude TEP-PSMA vs 65 % (proPSMA)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le radionucléide est interchangeable, pas le vecteur",
+            "text": "La cible biologique (SSTR, PSMA, NIS, NET) est **indépendante du radio-isotope** : ⁶⁸Ga et ¹⁷⁷Lu greffés sur le même chélate DOTA ciblent exactement le même récepteur. Le choix de l'émetteur ne modifie que la qualité d'image (β⁺ pour la TEP) ou la balistique thérapeutique (β⁻ vs α), jamais le ciblage. C'est ce découplage qui fonde la logique « voir puis traiter » et qui rend la sélection par imagerie prédictive de la captation thérapeutique.[25,48]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — β⁻ contre α : ne pas confondre les balistiques",
+            "text": "Le **β⁻** (¹⁷⁷Lu, ¹³¹I, ⁹⁰Y) a un parcours millimétrique et un effet de feu croisé utile pour les macro-lésions hétérogènes, mais irradie la moelle voisine ; l'**α** (²²³Ra, ²²⁵Ac) dépose un TEL très élevé sur **< 100 µm**, ce qui explique l'épargne médullaire du ²²³Ra mais impose une expression de cible dense et homogène. Choisir l'émetteur, c'est choisir une échelle spatiale de dépôt d'énergie.[32,53]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : imager la cible (⁶⁸Ga/¹²³I) → sélectionner les patients avides → traiter par l'émetteur corpusculaire apparié (¹⁷⁷Lu/¹³¹I/²²³Ra) → réévaluer, le même vecteur reliant les deux versants.",
+        "figureCaption": "Fig. — La boucle « voir puis traiter » : un vecteur unique, deux radionucléides appariés (imagerie puis thérapie)."
+      },
+      {
+        "title": "D13 - D13 · Dosimétrie, radioprotection et sécurité des radiopharmaceutiques",
+        "text": "La dose délivrée par un radiopharmaceutique est gouvernée par deux facteurs indissociables : la **physique du radionucléide** (type d'émission, énergie, période) et la **biocinétique du vecteur** (captation, rétention, voie et vitesse d'élimination). La référence dosimétrique de patient est la **CIPR/ICRP Publication 128** (Mattsson et al., 2015), compendium des **coefficients de dose efficace** (mSv par MBq administré) par traceur.[38] Pour le diagnostic, l'ordre de grandeur va de la fraction de mSv à une dizaine de mSv par examen — comparable à celui d'un scanner corps entier.\n\n| Radiopharmaceutique | Dose efficace adulte (mSv/MBq) | Ordre de grandeur par examen | Source |\n|---|---|---|---|\n| **¹⁸F-FDG** | **0,019** (organe critique : vessie) | ≈ 3,3–6,7 mSv (175–350 MBq) | CIPR 128[38,11] |\n| **⁹⁹ᵐTc-MDP/HDP** (os) | **0,0057** | ≈ 5,3 mSv (925 MBq) | CIPR 128[17] |\n| **⁹⁹ᵐTc-sestamibi** (repos) | ≈ **0,009** | ≈ 8–10 mSv (925–1110 MBq) | CIPR 128[13] |\n| **⁹⁹ᵐTc-MAG3** | ≈ **0,007** (0,02 chez le nourrisson) | ≈ 0,3–1,3 mSv (37–185 MBq) | CIPR 128[63] |\n| **¹²³I-MIBG** | **0,013** | ≈ 5 mSv (370 MBq) | CIPR 128[38] |\n\nLes **fantômes maillés** récents de la CIPR revoient légèrement à la baisse la dose du ¹⁸F-FDG (à **0,017 mSv/MBq**, et **0,015 ± 0,002 mSv/MBq** en administration IV chez l'adulte de référence), en confirmant que la **paroi vésicale** reste l'organe le plus exposé (≈ 7,5 × 10⁻² mGy/MBq), devant la paroi cardiaque et le cerveau — d'où l'intérêt de l'hydratation et des mictions fréquentes.[11,39,40,41] En **pédiatrie**, le principe de la **carte de dose EANM** (mise à jour août 2016) est d'appliquer une activité de base × un multiple pondéral, avec une activité minimale, réduisant la dose chez le nourrisson : ¹⁸F-FDG corps entier **3,7–5,2 MBq/kg** (minimum 26 MBq) ; ⁹⁹ᵐTc-MAG3 **3,7–5,55 MBq/kg** (minimum 15 MBq).[6,7,8] La tendance de fond est à la **décroissance continue** des activités administrées (médiane FDG pédiatrique 296 MBq en 2000–2005 → 100 MBq en 2016–2021).[12]\n\nEn **thérapie**, on quitte le registre de la dose efficace pour celui de la **dose absorbée par organe** (Gy), calculée par formalisme MIRD/OLINDA : ablation d'un cancer thyroïdien différencié **1,85–5,5 GBq (50–150 mCi)** de ¹³¹I ; ¹⁷⁷Lu-DOTATATE/PSMA **7,4 GBq/cycle** ; ²²³Ra **55 kBq/kg/injection**.[15,62,31] La **radioprotection** se structure par cible et selon la nature du rayonnement. Les **511 keV** des émetteurs β⁺ (TEP) sont très pénétrants : blindage plomb épais, protège-seringues tungstène, maîtrise du débit de dose au contact du patient injecté (le patient devient « source »). Les émetteurs β⁻ à composante γ (¹³¹I 364 keV) imposent hospitalisation en chambre plombée et gestion des effluents ; les α (²²³Ra) sont peu pénétrants (protection externe minime) mais toute contamination interne serait à haut TEL.[37,53]",
+        "stats": [
+          {
+            "value": "0,019",
+            "label": "mSv/MBq — ¹⁸F-FDG, adulte (CIPR 128)"
+          },
+          {
+            "value": "511 keV",
+            "label": "Photons d'annihilation β⁺ → blindage épais"
+          },
+          {
+            "value": "< 0,15 %",
+            "label": "Percée max ¹⁹Mo/⁹⁹ᵐTc à l'administration (USP)"
+          },
+          {
+            "value": "26 MBq",
+            "label": "Activité minimale FDG pédiatrique (carte EANM)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — dose efficace n'est pas dose absorbée",
+            "text": "En diagnostic, on raisonne en **dose efficace** (mSv, corps entier pondéré, CIPR 128) pour comparer les risques stochastiques entre examens. En thérapie, la grandeur pertinente est la **dose absorbée par organe** (Gy, effets déterministes sur la cible et les organes à risque comme moelle, reins, glandes salivaires). Confondre les deux conduit à sous-estimer la toxicité d'une RIV : 7,4 GBq de ¹⁷⁷Lu ne se « traduisent » pas en mSv corps entier utilisables cliniquement.[38]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — contrôle qualité du générateur ⁹⁹Mo/⁹⁹ᵐTc",
+            "text": "Avant toute élution administrée, deux tests conditionnent la sécurité : la **percée du ⁹⁹Mo** (limite USP **< 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc**, Ph. Eur. plus stricte à **0,1 kBq/MBq**) et l'**aluminium** relargué par la colonne d'alumine (limite USP **< 10 µg Al³⁺/mL**). Une percée excessive irradie le patient par un radionucléide à vie longue ; un excès d'Al³⁺ perturbe le marquage. La pureté radiochimique (TLC/ITLC) détecte enfin le ⁹⁹ᵐTc libre et hydrolysé-réduit.[5,61]"
+          },
+          {
+            "type": "info",
+            "title": "Grossesse et allaitement — la règle transversale",
+            "text": "La grossesse est une contre-indication **relative** au diagnostic (bénéfice/risque, report si possible) et **absolue** aux thérapies (¹³¹I, ¹⁷⁷Lu, ²²³Ra). L'allaitement impose une interruption dont la durée dépend du radionucléide (quelques heures à définitive pour le ¹³¹I). Rechercher systématiquement les deux avant injection.[15,37]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Temps, distance, écran : les trois leviers ALARA de réduction de dose, appliqués au patient injecté « source », au personnel et à l'entourage.",
+        "figureCaption": "Fig. — Temps / distance / écran : structure les consignes de radioprotection au personnel et à l'entourage du patient injecté."
+      },
+      {
+        "title": "D14 - D14 · Réglementation, logistique et perspectives",
+        "text": "Le radiopharmaceutique est un **médicament** à part entière, soumis à l'autorisation de mise sur le marché (AMM) et à la pharmacopée, mais aussi une **source de rayonnements** soumise à la réglementation de radioprotection : cette double nature explique la lourdeur de sa chaîne. La **logistique** est dominée par la **période physique**, qui impose une organisation « juste-à-temps ». Le ⁹⁹Mo parent (période **66 h**) permet le transport du **générateur ⁹⁹Mo/⁹⁹ᵐTc** vers les services, où le ⁹⁹ᵐTc (période **6 h**) est élué à la demande sous forme de pertechnétate puis marqué extemporanément sur des trousses froides — d'où la place centrale de la **radiopharmacie hospitalière**.[2,36] Le ⁹⁹Mo étant majoritairement produit par **fission de l'²³⁵U** dans un petit nombre de réacteurs vieillissants, sa chaîne d'approvisionnement est un point de fragilité mondial récurrent.[4]\n\nÀ l'opposé, les traceurs TEP à période très courte imposent une **production locale ou régionale** : le **¹⁸F** (période **110 min**) est fabriqué par cyclotron via ¹⁸O(p,n)¹⁸F puis distribué dans un rayon de quelques heures ; le **¹³N** (10 min) et l'**¹⁵O** (2 min) exigent un **cyclotron sur site**.[44,45,47] Les **générateurs** affranchissent partiellement du cyclotron : ⁶⁸Ge/⁶⁸Ga (parent ⁶⁸Ge, période **271 j** → ⁶⁸Ga 68 min) pour la TEP des SSTR/PSMA, et ⁸²Sr/⁸²Rb (⁸²Rb période **76 s**, générateur remplacé toutes les **4–6 semaines**) pour la perfusion myocardique TEP sans cyclotron.[33,43,46]\n\n| Radionucléide | Période | Mode de production | Contrainte logistique dominante |\n|---|---|---|---|\n| **⁹⁹ᵐTc** | 6,0 h | Générateur ⁹⁹Mo/⁹⁹ᵐTc (⁹⁹Mo de fission) | Élution/marquage extemporané ; dépendance ⁹⁹Mo réacteur[4,36] |\n| **¹⁸F** | 110 min | Cyclotron ¹⁸O(p,n)¹⁸F | Distribution régionale < quelques heures[44,45] |\n| **⁶⁸Ga** | 68 min | Générateur ⁶⁸Ge/⁶⁸Ga | Nombre de générateurs limité ; sur site[43] |\n| **⁸²Rb** | 76 s | Générateur ⁸²Sr/⁸²Rb | Sur site, remplacé toutes les 4–6 sem.[33] |\n| **¹³¹I / ¹⁷⁷Lu** | 8,0 j / 6,7 j | Réacteur | Stockage/décroissance des déchets ; hospitalisation[15]\n\nLa **traçabilité** est totale (du radionucléide à l'administration), le **contrôle qualité** systématique (pureté radionucléidique, radiochimique, chimique, stérilité/apyrogénicité), et la **gestion des déchets** dimensionnée par la période (stockage jusqu'à décroissance pour le ¹³¹I). Sur le plan des **perspectives**, quatre lignes de force se dégagent. D'abord l'**expansion de la théranostique** : après les jalons réglementaires (⁶⁸Ga-PSMA-11 approuvé fin 2020, Pluvicto en mars 2022 puis extension à une ligne plus précoce en mars 2025 sur l'essai PSMAfore), le champ s'élargit à de nouvelles cibles (FAP, GRPR).[26,27] Ensuite la **thérapie α ciblée** (²²⁵Ac-PSMA, ²¹²Pb) pour son dépôt d'énergie ultra-localisé.[53] Puis la **dosimétrie personnalisée** (fantômes maillés, ¹²⁴I/⁶⁴Cu pour la dosimétrie prédictive avant RIV) substituant l'activité fixe à une planification par patient.[11] Enfin, la **sécurisation de l'approvisionnement** en ⁹⁹Mo (voies non basées sur l'uranium hautement enrichi) et la montée en charge de la production de ¹⁷⁷Lu « non porté ».[4]",
+        "stats": [
+          {
+            "value": "66 h",
+            "label": "Période du ⁹⁹Mo → transport du générateur"
+          },
+          {
+            "value": "110 min",
+            "label": "Période du ¹⁸F → distribution régionale"
+          },
+          {
+            "value": "4–6 sem.",
+            "label": "Remplacement du générateur ⁸²Sr/⁸²Rb"
+          },
+          {
+            "value": "mars 2022",
+            "label": "AMM FDA de Pluvicto (¹⁷⁷Lu-PSMA-617)"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Production du radionucléide",
+            "text": "Réacteur (⁹⁹Mo, ¹³¹I, ¹⁷⁷Lu), cyclotron (¹⁸F, ¹¹C, ¹³N, ¹²³I) ou générateur (⁹⁹ᵐTc, ⁶⁸Ga, ⁸²Rb) — le choix dicte tout le calendrier logistique aval.[4,44]"
+          },
+          {
+            "title": "Marquage / préparation en radiopharmacie",
+            "text": "Élution du générateur puis marquage extemporané sur trousse froide (⁹⁹ᵐTc) ou radiosynthèse (¹⁸F, ⁶⁸Ga) sous atmosphère contrôlée, en zone d'accès réglementé.[36,37]"
+          },
+          {
+            "title": "Contrôle qualité libératoire",
+            "text": "Pureté radionucléidique (percée ⁹⁹Mo < 0,15 %), radiochimique (TLC/ITLC), chimique (Al³⁺), pH, stérilité/apyrogénicité, activité à l'activimètre — avant toute administration.[5,61]"
+          },
+          {
+            "title": "Administration & radioprotection",
+            "text": "Injection blindée du patient « source », consignes ALARA à l'entourage, hospitalisation en chambre dédiée pour les fortes activités thérapeutiques (¹³¹I).[37]"
+          },
+          {
+            "title": "Gestion des déchets",
+            "text": "Décroissance sur site puis élimination selon la période ; traçabilité complète et gestion des effluents radioactifs.[37]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la période commande la carte du territoire",
+            "text": "La demi-vie physique détermine à elle seule le modèle logistique : période longue (jours) = production réacteur centralisée et transport ; période intermédiaire (heures) = distribution régionale (¹⁸F) ou générateur portable (⁹⁹ᵐTc) ; période ultra-courte (secondes-minutes) = cyclotron ou générateur **sur site** (⁸²Rb, ¹³N, ¹⁵O). Aucune innovation de vecteur ne dispense de résoudre d'abord ce problème de temps.[33,44,45]"
+          },
+          {
+            "type": "info",
+            "title": "Radiopharmaceutique = médicament ET source",
+            "text": "La double tutelle (autorité du médicament pour l'AMM et la pharmacopée ; autorité de radioprotection pour la source) explique la longueur des délais réglementaires et l'exigence d'un contrôle qualité libératoire à chaque lot, malgré les périodes courtes qui laissent peu de marge de manœuvre analytique.[37]"
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine retenant le ⁹⁹Mo parent, élution au sérum physiologique du pertechnétate ⁹⁹ᵐTcO₄⁻ descendant — pierre angulaire logistique du SPECT.",
+        "figureCaption": "Fig. — Le générateur ⁹⁹Mo/⁹⁹ᵐTc : isoler à la demande un descendant à vie courte à partir d'un parent transportable."
+      },
+      {
+        "title": "E15 - E15 · Points clés à retenir",
+        "text": "Synthèse haut rendement du panorama. Chaque chiffre est sourcé ; les seuils et valeurs-phares sont en gras pour la mémorisation.\n\n**▸ Les deux radionucléides qui portent la médecine nucléaire diagnostique**\n\n- Le **99mTc** (technétium métastable) domine la scintigraphie et la **TEMP (tomographie d'émission monophotonique)** : photon γ quasi monoénergétique de **140,5 keV** par transition isomérique, période physique **6,0 h**, éluable à partir d'un **générateur 99Mo/99mTc**.[1] Il sert de radiomarqueur à la majorité des radiopharmaceutiques courants et représente environ **85 %** des actes diagnostiques.[4][36]\n- Le **18F** (fluor-18) domine la **TEP (tomographie par émission de positons)** : période **109,8 min**, désintégration **β+** dans **~97 %** des cas, positon de faible énergie (**parcours <2,4 mm** dans les tissus → excellente résolution), annihilation en deux photons de **511 keV** détectés en coïncidence.[44][45] Produit au **cyclotron** par la réaction **18O(p,n)18F**.[45]\n\n**▸ Anatomie d'un radiopharmaceutique**\n\n- Association **vecteur** (spécificité, biodistribution, cible) + **radionucléide** (signal détecté en imagerie ou dose déposée en thérapie). Le mode d'émission conditionne l'usage : **γ/X → TEMP**, **β+ → TEP**, **β− ou α → thérapie**.[1][15]\n\n**▸ Production et générateur — les chiffres du 99Mo/99mTc**\n\n- Parent **99Mo** : période **66 h (2,75 j)**, fixé sur colonne d'**alumine (Al2O3)**, décroît par β− en 99mTc ; **>87 %** des désintégrations conduisent au 99mTc.[1][2] Élution au sérum physiologique sous forme de **pertechnétate 99mTcO4−**.[3] Le 99Mo est majoritairement produit par **fission de l'235U** en réacteur.[4]\n- Activité diagnostique administrée typique : **400–1100 MBq** selon l'examen.[1]\n\n**▸ Contrôle qualité du générateur (à connaître par cœur)**\n\n- Percée du 99Mo (« breakthrough ») : limite **USP 0,15 kBq 99Mo/MBq 99mTc** (0,15 µCi/mCi) ; **Pharmacopée européenne plus stricte à 0,1 kBq/MBq**.[5][61]\n- Aluminium relargué par la colonne : **<10 µg Al3+/mL** (générateur de fission, norme USP).[5]\n\n**▸ Panorama synthétique des principaux traceurs**\n\n| Vecteur / traceur | Radionucléide | Application clinique majeure |\n|---|---|---|\n| 18F-FDG (fluorodésoxyglucose) | 18F | Oncologie, inflammation/infection, neurologie[9][10] |\n| 99mTc-MDP / HDP (biphosphonates) | 99mTc | Scintigraphie osseuse (chimisorption sur hydroxyapatite)[17][18] |\n| 99mTc-MAG3 / DTPA | 99mTc | Rein : sécrétion tubulaire / filtration glomérulaire[19][20] |\n| 99mTc-DMSA | 99mTc | Cortex rénal (cicatrices, pyélonéphrite)[19] |\n| 99mTc-sestamibi (MIBI) / tétrofosmine | 99mTc | Perfusion myocardique, parathyroïdes[13][14] |\n| 99mTc-MAA (macroagrégats d'albumine) | 99mTc | Perfusion pulmonaire (EP), pré-radioembolisation[21] |\n| 68Ga / 18F-PSMA | 68Ga / 18F | Cancer de la prostate (imagerie)[23] |\n| 68Ga-DOTATATE | 68Ga | Tumeurs neuroendocrines (récepteurs SSTR)[43] |\n| 82Rb / 13N-ammoniac | 82Rb / 13N | Perfusion myocardique TEP[33][47] |\n| 123I / 131I-iodure | 123I / 131I | Thyroïde (diagnostic / thérapie)[15] |\n| 177Lu-DOTATATE (Lutathera) | 177Lu | Thérapie TNE (théranostique)[48] |\n| 177Lu-PSMA-617 (Pluvicto) | 177Lu | Thérapie prostate mCRPC (théranostique)[25] |\n| 223Ra-dichlorure (Xofigo) | 223Ra | Métastases osseuses prostate (α-thérapie)[31] |\n\n**▸ Activités adulte et dosimétrie à retenir**\n\n- **99mTc-MDP** : **740–1110 MBq (20–30 mCi)** IV ; dose efficace **0,0057 mSv/MBq**.[17]\n- **18F-FDG** : **2,5–5,0 MBq/kg** ; dose efficace **0,019 mSv/MBq** (CIPR/ICRP 128, adulte de référence), révisée à **~0,017 mSv/MBq** avec les fantômes maillés récents ; organe critique = **vessie**.[11][38][39]\n- **99mTc-sestamibi** : dose efficace **~0,009 mSv/MBq** (repos).[38]\n- **99mTc-MAG3** : dose efficace **~0,007 mSv/MBq** (adulte), agent tubulaire à extraction élevée, préféré pour la scintigraphie diurétique.[20][63]\n\n**▸ Théranostique — le triptyque à maîtriser (cible → imagerie → thérapie)**\n\n- **PSMA** : imagerie **68Ga/18F-PSMA** → thérapie **177Lu-PSMA-617** (β−, **7,4 GBq/6 semaines, max 6 cycles**).[23][25]\n- **SSTR (récepteurs somatostatine)** : imagerie **68Ga-DOTATATE** → thérapie **177Lu-DOTATATE** (β−, **7,4 GBq × 4 cycles/8 semaines**).[43][48]\n- **NIS (symporteur sodium-iode)** : imagerie **123I** → thérapie **131I** (couple historique, émetteur mixte β−/γ 364 keV).[15]\n- **Os métastatique (prostate)** : **223Ra** (α, très courte portée **<100 µm**, épargne médullaire).[31][53]",
+        "stats": [
+          {
+            "value": "140,5 keV",
+            "label": "γ du 99mTc (TEMP)"
+          },
+          {
+            "value": "511 keV",
+            "label": "photons d'annihilation β+ (TEP)"
+          },
+          {
+            "value": "66 h",
+            "label": "période du parent 99Mo"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "dose efficace 18F-FDG (CIPR 128)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi le 99mTc est idéal",
+            "text": "Le 99mTc réunit quatre qualités quasi introuvables ailleurs : une **énergie γ de 140,5 keV** parfaitement adaptée au cristal NaI(Tl) des γ-caméras, une **période de 6 h** (assez longue pour l'examen, assez courte pour limiter la dose), une **émission γ pure** sans particule chargée qui irradierait inutilement, et une **disponibilité sur site** via un générateur transportable rechargé au sérum physiologique. C'est cette combinaison qui explique sa domination historique sur la médecine nucléaire monophotonique.[1][3][36]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — ne pas confondre les deux périodes du couple générateur",
+            "text": "En pratique et en QCM, la confusion classique porte sur le couple 99Mo/99mTc : le **parent 99Mo** a une période de **66 h**, le **descendant 99mTc** une période de **6 h**. C'est justement ce rapport (~11) qui permet l'**équilibre transitoire** et l'élution répétée du descendant à vie courte à partir du parent à vie plus longue. Retenir : on transporte le générateur grâce au 99Mo (66 h), on image grâce au 99mTc (6 h).[1][2]"
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Schéma du générateur 99Mo/99mTc : colonne d'alumine retenant le parent 99Mo, décroissance β− en 99mTc, élution au sérum physiologique sous forme de pertechnétate 99mTcO4−."
+      },
+      {
+        "title": "E16 - E16 · FAQ, confusions classiques et quiz",
+        "text": "Cette section anticipe les questions du résident et les pièges de QCM récurrents sur le panorama des radiopharmaceutiques. Réponses courtes et justifiées, chaque valeur sourcée.\n\n**Q — Quelle est la différence fondamentale entre un traceur de TEMP et un traceur de TEP ?** La **TEMP** détecte un **photon γ unique** émis par le radionucléide (ex. 99mTc à 140,5 keV, 123I à 159 keV), via un collimateur mécanique.[1] La **TEP** ne détecte jamais le positon lui-même : elle détecte les **deux photons de 511 keV** issus de son annihilation avec un électron, en **coïncidence** (colinéarité à 180°), ce qui autorise une collimation électronique et une meilleure sensibilité/résolution.[44]\n\n**Q — Pourquoi le 18F donne-t-il de meilleures images que d'autres émetteurs de positons ?** Parce que son positon a la **plus faible énergie** parmi les isotopes TEP courants (β+ max ≈ 634–635 keV), donc le **parcours dans les tissus est court (<2,4 mm)** : l'annihilation se produit très près du lieu de désintégration, ce qui minimise le flou et optimise la résolution.[44] À l'inverse, le **68Ga** a un positon bien plus énergétique (β+ max ~1899 keV), d'où une résolution intrinsèquement moindre.[43]\n\n**Q — Générateur ou cyclotron : comment savoir d'où vient un traceur ?** Repère mnémotechnique : **99mTc, 68Ga, 82Rb → générateur** (99Mo/99mTc, 68Ge/68Ga, 82Sr/82Rb) ; **18F, 11C, 13N, 15O, 123I → cyclotron** ; **131I, 90Y, 99Mo → réacteur** (fission).[2][4][33][45] Le générateur **82Sr/82Rb** est remplacé toutes les **4–6 semaines** (82Rb : période ~76 s, TEP de perfusion myocardique sans cyclotron sur site).[33]\n\n**Q — Qu'est-ce que le « metabolic trapping » du FDG ?** Le **18F-FDG** est capté par les transporteurs **GLUT** comme le glucose, puis phosphorylé par l'**hexokinase** en FDG-6-phosphate. Contrairement au glucose, celui-ci n'est pas métabolisé plus loin et reste « piégé » dans la cellule : c'est ce piégeage métabolique qui donne le contraste des tissus à forte consommation glucidique (tumeurs, inflammation, cerveau).[9]\n\n**Q — Quelle est la cible du 99mTc-MDP et pourquoi fixe-t-il l'os ?** Les **biphosphonates (MDP, HDP)** se lient par **chimisorption** aux cristaux d'**hydroxyapatite** de la matrice osseuse ; la fixation est proportionnelle à l'activité ostéoblastique et à la vascularisation locale, d'où l'intérêt pour les métastases et les fractures occultes.[17][18]\n\n**Q — MAG3, DTPA ou DMSA : comment ne plus les confondre ?** Trois agents rénaux, trois compartiments : **MAG3 = sécrétion tubulaire** (extraction élevée → fonction et drainage, agent de référence de la scintigraphie diurétique) ; **DTPA = filtration glomérulaire pure** (mesure du DFG) ; **DMSA = fixation corticale** (imagerie du parenchyme, cicatrices, pyélonéphrite).[19][20]\n\n**Q — Le 131I est-il un traceur diagnostique ou thérapeutique ?** Les deux, car c'est un **émetteur mixte** : sa composante **β− assure ~90 % de l'irradiation locale** (effet thérapeutique) et son **γ de 364 keV** permet l'imagerie post-thérapeutique.[15] Période **8 jours**. Pour le pur diagnostic thyroïdien, on lui préfère souvent le **123I** (γ pur 159 keV, période ~13 h, dose plus faible).[15]\n\n**Q — Quelle préparation pour le 18F-FDG ?** **Jeûne ≥ 4 h** (souvent 4–6 h), contrôle de la **glycémie** (cible ~**4–7 mmol/L**, soit <~126 mg/dL ; l'hyperglycémie dégrade le contraste tumoral sans être une contre-indication absolue), repos musculaire et hydratation.[59][60] La métrique de quantification standard est le **SUV (Standardized Uptake Value)**.[60]\n\n**Q — Le 123I-MIBG nécessite-t-il un blocage thyroïdien ?** Oui : le radiopharmaceutique contient un peu d'**iode libre** qui se fixerait sur la thyroïde (irradiation + artefact). Blocage systématique par iodure/perchlorate, et suspension des médicaments interférant avec le transporteur NET (certains antidépresseurs, sympathomimétiques, labétalol).[34]\n\n**Q — Quelle est la place respective de la MIBG et du DOTATATE ?** Pour le **neuroblastome**, la **123I-MIBG** reste centrale (>90 % de tumeurs avides).[34] Pour les **phéochromocytomes/paragangliomes** et les **TNE** en général, le **68Ga-DOTATATE** (récepteurs de la somatostatine) est souvent plus sensible.[43]\n\n**▸ Confusions classiques à éviter**\n\n| Confusion fréquente | Ce qu'il faut retenir |\n|---|---|\n| « Le 99mTc vient du cyclotron » | **Faux** : générateur 99Mo/99mTc ; c'est le 18F qui vient du cyclotron.[2][45] |\n| « La TEP détecte le positon » | **Faux** : elle détecte les 2 photons d'annihilation de 511 keV.[44] |\n| « Sestamibi = uniquement cardiaque » | Aussi **parathyroïdien** (scintigraphie des adénomes).[13] |\n| « 90Y = imagerie » | **Non** : β− pur → radioembolisation hépatique (thérapie) ; cartographie préalable au 99mTc-MAA.[35] |\n| « 223Ra = β− » | **Non** : émetteur **α** de très courte portée (<100 µm), analogue du calcium fixé sur l'os.[31][53] |\n| « MAG3 = filtration glomérulaire » | **Non** : MAG3 = sécrétion **tubulaire** ; DTPA = filtration glomérulaire.[20] |\n\n**▸ Quiz express (réponses justifiées)**\n\n**1.** *Quel radionucléide émet un photon γ de 140,5 keV avec une période de 6 h ?* → **99mTc.** Énergie idéale pour la γ-caméra, transition isomérique, éluat du générateur 99Mo/99mTc.[1]\n\n**2.** *Quelle est la limite USP de percée du 99Mo dans l'éluat ?* → **0,15 kBq 99Mo/MBq 99mTc** (la Ph. Eur. est plus stricte à 0,1 kBq/MBq).[5][61]\n\n**3.** *Quel est l'organe critique du 18F-FDG ?* → La **vessie** (élimination urinaire) ; dose efficace 0,019 mSv/MBq.[11][40]\n\n**4.** *Couple théranostique du cancer de la prostate mCRPC ?* → Imagerie **68Ga/18F-PSMA**, thérapie **177Lu-PSMA-617** (7,4 GBq/6 semaines).[23][25]\n\n**5.** *Nombre optimal de particules pour un 99mTc-MAA adulte ?* → **200 000–700 000** (minimum ~100 000) : microembolisation capillaire pulmonaire contrôlée.[21]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège de QCM — 68Ga vs 18F pour le PSMA",
+            "text": "Les deux radionucléides marquent des ligands PSMA (**68Ga-PSMA-11** ; **18F-DCFPyL, 18F-PSMA-1007**) et servent la même indication : imagerie du cancer de la prostate.[23] Le piège est de croire qu'ils sont interchangeables sur tous les plans. Le **68Ga** provient d'un générateur (68Ge/68Ga) mais son positon plus énergétique dégrade légèrement la résolution ; le **18F** exige un cyclotron mais offre une meilleure résolution et une production en grande série. Le vecteur (ligand PSMA) porte la cible ; le radionucléide ne change que la logistique et la qualité d'image.[43][44]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — lire un traceur en 3 questions",
+            "text": "Face à tout radiopharmaceutique inconnu, poser trois questions dans l'ordre : (1) **Quel radionucléide et quel mode d'émission ?** (γ → TEMP ; β+ → TEP ; β−/α → thérapie). (2) **Quel vecteur et quelle cible biologique ?** (transporteur, récepteur, processus métabolique). (3) **D'où vient-il ?** (générateur, cyclotron, réacteur). Ces trois axes suffisent à prédire l'usage, la préparation et la logistique, et structurent l'ensemble de ce panorama.[1][44][45]"
+          }
+        ]
+      },
+      {
+        "title": "E17 - E17 · Références & liens sortants typés",
+        "text": "Références sourcées et datées (recommandations EANM/SNMMI, sources primaires et essais pivots), suivies de la carte des liens typés reliant ce panorama au reste du graphe NucleAtlas.\n\n**▸ Radionucléides, générateur & production**\n\n- **[1]** Technetium-99m — propriétés physiques (140,5 keV, période 6 h, décroissance en 99Tc).\n- **[2]** Technetium-99m generator — principe du générateur 99Mo/99mTc.\n- **[3]** IAEA Human Health Campus — 99Mo → 99mTc, principes radionucléidiques.\n- **[4]** Molybdenum-99 production pathways — *Discover Applied Sciences* (Springer) 2020.\n- **[36]** Mo99/Tc99m Generator — *StatPearls* (NBK565854).\n- **[44]** Fluorine-18 — *ScienceDirect Topics* (β+, parcours, 511 keV).\n- **[45]** Synthesis of Fluorine-18 for PET Imaging — *Open Medscience* (18O(p,n)18F).\n- **[43]** Gallium 68 — *ScienceDirect Topics* (générateur 68Ge/68Ga).\n- **[46]** Rubidium 82 — *ScienceDirect Topics*.\n- **[33]** Generator-produced rubidium-82 PET MPI — *J Cardiol* 2010.\n- **[47]** Cardiac PET — 82Rb, 13N-ammoniac.\n\n**▸ Contrôle qualité & radiopharmacie**\n\n- **[5]** Quality assurance of Mo-99/Tc-99m generators (limites de percée 99Mo).\n- **[61]** Quality control — 99Mo/Al breakthrough limits (Loyola Lumen).\n- **[37]** Radiopharmacy: an update — A Technologist's Guide (EANM 2019).\n\n**▸ Dosimétrie**\n\n- **[38]** ICRP Publication 128 — Radiation Dose to Patients from Radiopharmaceuticals (Mattsson et al., *Ann ICRP* 2015).\n- **[11]** Patient Size-Dependent Dosimetry Applied to 18F-FDG (ICRP Mesh Phantoms) — *JNM* 62(12):1805.\n- **[39]** Patient Size-Dependent Dosimetry, New ICRP Mesh Phantoms — PMC8612182.\n- **[40]** Radiobiological risks in effective/organ dose from 18F-FDG PET/CT — PMC8459160.\n- **[41]** Human Radiation Dosimetry for Oral/IV 18F-FDG — *JNM* 61(4):613.\n- **[42]** Revised compartmental model for biokinetics/dosimetry of 2-[18F]FDG — PMC9908780.\n- **[63]** Biokinetics/dosimetry after 99mTc-MAG3 scans (nourrissons) — PMC5796928.\n\n**▸ Traceurs par domaine (recommandations)**\n\n- **[9]** [18F]FDG PET/CT — EANM tumour imaging guidelines v3.0 (2025).\n- **[10]** EANM brain PET guidelines using [18F]FDG v3 — PMC8803744.\n- **[59]** FDG PET/CT tumour imaging guidelines v2.0 — PMC4315529.\n- **[60]** 18F-FDG PET/CT Patient Preparation: A Review — *JNMT* 42:5.\n- **[8]** SNMMI/EANM Pediatric 18F-FDG PET/CT for Oncology 1.0 — *JNM* 62(1):99.\n- **[17]** Dynamic Bone Imaging with 99mTc-diphosphonates and 18F-NaF — *JNM* 54(4):590.\n- **[18]** SNMMI Bone Scintigraphy 4.0 (2023).\n- **[13]** ASNC SPECT nuclear cardiology guidelines (stress, tracers) — 2015.\n- **[14]** EANM radionuclide MPI with SPECT/CT: 2015 revision.\n- **[19]** SNMMI/EANM renal scintigraphy in adults (DMSA/DTPA/MAG3) 2018.\n- **[20]** Diuretic Renal Scintigraphy Protocol Considerations — *JNMT* 50(4):309.\n- **[21]** Tailoring 99mTc-MAA Administration — *JNMT* 43(3):220 (nombre de particules).\n- **[22]** 99mTc-Technegas ventilation/perfusion for pulmonary embolus.\n- **[15]** Sodium Iodide I-131 — *StatPearls* (β−/γ 364 keV, période 8 j).\n- **[16]** SNMMI Therapy of Thyroid Disease with 131I 3.0 — *JNM* 53(10):1633.\n- **[62]** I-131 thyroid cancer therapy dose optimization — PMC5724631.\n- **[34]** MIBG theranostics in pediatric/adult malignancies (NET/uptake-1).\n\n**▸ Théranostique & essais pivots**\n\n- **[23]** proPSMA — PSMA PET/CT en cancer de prostate haut risque — *The Lancet* 2020.\n- **[24]** EAU 2020: proPSMA Study — UroToday (précision 92 % vs 65 %).\n- **[25]** FDA Approval Summary: Lutetium Lu-177 Vipivotide Tetraxetan (177Lu-PSMA-617) — PMC10159870 (VISION).\n- **[26]** FDA approuve le 177Lu-PSMA-617 pour mCRPC PSMA+ — Urology Times (23 mars 2022).\n- **[27]** Extension d'AMM 177Lu-PSMA-617 — Urology Times (28 mars 2025, PSMAfore).\n- **[28]** EAU-EANM-ESTRO-ESUR-ISUP-SIOG Prostate Cancer, Part II — 2024 Update — *European Urology*.\n- **[51]** Positive survival data for 177Lu-PSMA-617 (VISION) — Novartis.\n- **[52]** VISION Trial: Lu-177–PSMA-617 in mCRPC — *The ASCO Post* (juin 2021).\n- **[48]** NETTER-1: 177Lu-DOTATATE for Midgut NETs — *NEJM* 2017.\n- **[49]** NETTER-1 — PMC5895095.\n- **[29]** Final overall survival, phase 3 NETTER-1 — *JCO* 2021.\n- **[30]** Dosimetry of 177Lu-DOTATATE (NETTER-1 substudy) — *JNM* 66(3):449.\n- **[50]** Cost-effectiveness of 177Lu-DOTATATE (NETTER-2) — PMC12212402.\n- **[31]** ALSYMPCA: Radium-223 survival update — *ASCO Post* (SG 14,9 vs 11,3 mois, HR 0,70).\n- **[32]** Radium-223 for Advanced Prostate Cancer — NCI.\n- **[53]** Radium-223 Dichloride (Xofigo): Targeted Alpha Therapy — Open Medscience.\n- **[35]** Molecular Imaging and Therapy of NETs — NCBI Bookshelf (90Y radioembolisation).\n\n**▸ Performances diagnostiques (autres traceurs cités)**\n\n- **[54]** Tc-99m-PYP imaging for cardiac amyloidosis: best protocol — *J Nucl Cardiol*.\n- **[55]** ASNC Tc-99m-PYP webinar take-home points — PMC7924912.\n- **[56]** 99mTc-Pyrophosphate for light-chain vs transthyretin amyloidosis — *Circ Cardiovasc Imaging* (AHA).\n- **[57]** 123I-Ioflupane/SPECT DAT binding in PD/MSA/PSP — PubMed 14598060.\n- **[58]** Improved diagnostic accuracy of PD on 123I-FP-CIT SPECT — PMC7354240.\n- **[6][7]** EANM Paediatric Dosage Card (mise à jour août 2016) et Dosage Card EANM.\n- **[12]** EuroNet PHL-C2: proposal to update EANM Paediatric Dosage Card — *EJNMMI* 2023.\n\n**▸ Carte des liens typés (réseau de l'article)**\n\n| Type | Entrées liées |\n|---|---|\n| **Traceur** | 99mTc-pertechnétate · 99mTc-MDP/HDP · 99mTc-MAG3 · 99mTc-DMSA · 99mTc-sestamibi · 99mTc-MAA · 18F-FDG · 68Ga-PSMA · 68Ga-DOTATATE · 82Rb · 123I-MIBG · 131I-iodure |\n| **Examen** | Scintigraphie osseuse · Scintigraphie rénale (MAG3/DMSA) · Perfusion myocardique (TEMP/TEP) · Scintigraphie pulmonaire V/Q · TEP au 18F-FDG · TEP au PSMA · TEP au DOTATATE |\n| **Maladie** | Métastases osseuses · Cancer de la prostate (mCRPC) · Tumeurs neuroendocrines · Cancer différencié de la thyroïde · Phéochromocytome / neuroblastome · Embolie pulmonaire |\n| **Score** | SUV (Standardized Uptake Value) · Score de Perugini (amylose) · Krenning (SSTR) |\n| **Théranostique** | 131I (thyroïde) · 177Lu-DOTATATE · 177Lu-PSMA-617 · 223Ra-dichlorure · 90Y (radioembolisation) |\n\n*Style de citation : recommandations EANM/SNMMI et sources primaires datées, préfixées [n] et renvoyant à la liste ci-dessus. Dernière mise à jour : juin 2026 — profil médecin nucléaire.*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Note de sourçage",
+            "text": "La référence dosimétrique de premier rang est la **CIPR/ICRP Publication 128** [38], compendium des doses aux patients par radiopharmaceutique. Le coefficient de dose efficace du **18F-FDG y est de 0,019 mSv/MBq** [11], valeur révisée à **~0,015–0,017 mSv/MBq** avec les fantômes maillés récents [39][41]. Certaines activités adulte standard (MDP 740–1110 MBq, MAG3, MAA) proviennent des guidelines SNMMI/EANM largement établies et sont corroborées par plusieurs sources secondaires listées. Aucune référence, DOI ou PMID n'a été inventé : seules les sources réelles [1]–[63] fournies sont citées."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : imagerie diagnostique (68Ga/18F-PSMA, 68Ga-DOTATATE, 123I) pour sélectionner les patients, puis thérapie par le radionucléide apparié (177Lu, 131I) sur le même vecteur, suivie d'une réévaluation."
+      }
+    ]
+  }
+}

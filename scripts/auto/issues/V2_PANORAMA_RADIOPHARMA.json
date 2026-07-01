@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections A4 (tableau de dose efficace) et C8 (tableau des traceurs 99mTc), colonne dose 99mTc-MDP",
+    "problem": "[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] La dose efficace par examen du 99mTc-MDP est donnee comme « ~8,9 mSv pour 925 MBq ». C'est faux et arithmetiquement incoherent avec le coefficient cite juste a cote (0,0057 mSv/MBq) : 0,0057 x 925 = 5,3 mSv, pas 8,9 mSv. La source [17] elle-meme (Dynamic Bone Imaging, JNM 2013) donne 5,3 mSv pour 925 MBq. De plus, la section D13 du meme document donne correctement « ≈ 5,3 mSv (925 MBq) », creant une contradiction interne flagrante. La valeur 8,9 mSv correspondrait a ~1560 MBq, hors de la plage d'activite adulte (740-1110 MBq).",
+    "fix": "Remplacer « ~8,9 mSv pour 925 MBq » par « ~5,3 mSv pour 925 MBq » dans les sections A4 et C8, pour concordance avec le calcul (0,0057 x 925) et avec la section D13."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D13, tableau des stats (stat card), label de la percee du 99Mo",
+    "problem": "Coquille d'isotope : la valeur « < 0,15 % » est etiquetee « Percee max ¹⁹Mo/¹⁹ᵐTc a l'administration (USP) ». Les isotopes sont ecrits « 19Mo/19mTc » au lieu de « 99Mo/99mTc ». Sur le plan medical/physique, il n'existe pas de 19Mo ni de 19mTc pertinents ; c'est manifestement une erreur de frappe des exposants. Un lecteur non averti pourrait etre induit en erreur sur l'identite du radionucleide.",
+    "fix": "Corriger « ¹⁹Mo/¹⁹ᵐTc » en « ⁹⁹Mo/⁹⁹ᵐTc »."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections C10, C11, D12, E17 et quiz : 123I-ioflupane (DaTscan), Se 78 % / Sp 97 %",
+    "problem": "Les performances du DaTscan sont donnees comme « Se 78 % / Sp 97 % ». Ces chiffres proviennent bien d'une etude reelle (etude europeenne multicentrique Catafau/Tolosa, sensibilite 78 % vs diagnostic clinique) et figurent dans les faits de reference, donc ce n'est pas une invention. Toutefois, presentes sans contexte, ils sous-estiment fortement la performance reelle : les donnees poolees des essais d'homologation et les meta-analyses recentes rapportent une sensibilite et une specificite > 90 % (souvent Se ~92-95 %, Sp ~84-93 %) pour differencier syndromes parkinsoniens degeneratifs des tremblements essentiels. Presenter « 78/97 » comme LA performance du DaTscan est trompeur.",
+    "fix": "Preciser le contexte (« Se 78 % vs diagnostic clinique on-site dans l'etude europeenne initiale ; les series poolees ulterieures montrent une Se/Sp > 90 % pour distinguer un syndrome parkinsonien degeneratif d'un tremblement essentiel »)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section E15, tableau recapitulatif, dose 99mTc-MDP « ~8,9 mSv » potentielle et coherence globale des doses par examen",
+    "problem": "Verifier que la synthese E15 ne reproduit pas la valeur erronee 8,9 mSv. E15 ne cite que le coefficient 0,0057 mSv/MBq sans dose par examen, ce qui est correct ; mais l'incoherence entre A4/C8 (8,9 mSv) et D13 (5,3 mSv) doit etre resolue de facon homogene dans tout l'article pour eviter qu'un lecteur ne retienne la mauvaise valeur.",
+    "fix": "Apres correction de A4 et C8, verifier que toutes les mentions de la dose MDP par examen (925 MBq) affichent ~5,3 mSv de maniere coherente."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D13 (Dosimétrie...), bloc stats, 3e valeur",
+    "problem": "[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] Coquille sur l'isotope : la statistique affiche « < 0,15 % » avec le label « Percée max ¹⁹Mo/¹⁹ᵐTc à l'administration (USP) ». Les nucléides sont écrits ¹⁹Mo/¹⁹ᵐTc au lieu de ⁹⁹Mo/⁹⁹ᵐTc. Le ¹⁹Mo/¹⁹ᵐTc n'existe pas ; c'est une erreur factuelle dans un contenu médical de référence, alors que tout le reste du document écrit correctement ⁹⁹Mo/⁹⁹ᵐTc.",
+    "fix": "Remplacer « ¹⁹Mo/¹⁹ᵐTc » par « ⁹⁹Mo/⁹⁹ᵐTc » dans ce label."
+  },
+  {
+    "severity": "major",
+    "where": "DaTscan Se/Sp attribuée à [58] (PMC7354240) — apparaît en C10 (stats « 78 % / 97 % »), C11 (« DaTscan pour le Parkinson (Se 78 % / Sp 97 %) ») et D-références",
+    "problem": "Problème de FIDÉLITÉ : les valeurs Se 78 % / Sp 97 % sont attribuées à [58]. Or [58] (PMC7354240, base de données japonaise) rapporte une sensibilité de 93 %, une spécificité de 100 % et une exactitude de 96 %. Les chiffres 78 %/97 % ne figurent pas dans la source citée. La source existe et est bien sur le sujet, mais la statistique précise ne correspond pas au contenu de la référence.",
+    "fix": "Soit corriger les chiffres pour refléter [58] (Se 93 % / Sp 100 %), soit rattacher les valeurs 78 %/97 % à une source qui les rapporte effectivement (p. ex. une méta-analyse ou l'AMM du DaTscan), en changeant le renvoi [58]."
+  },
+  {
+    "severity": "minor",
+    "where": "Liste des sources et section E17, référence [11]",
+    "problem": "Titre paraphrasé/tronqué : le document donne « Patient Size-Dependent Dosimetry Applied to 18F-FDG Using ICRP Mesh Phantoms » (JNM 62(12):1805). Le titre réel est « Patient Size-Dependent Dosimetry METHODOLOGY Applied to 18F-FDG Using NEW ICRP Mesh Phantoms ». URL, volume et page corrects ; pas de fabrication, simple imprécision de titre.",
+    "fix": "Rétablir le titre exact avec « Methodology » et « New » (facultatif — l'URL et la citation restent valides)."
+  }
+]
