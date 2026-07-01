@@ -1,0 +1,1402 @@
+{
+  "id": "V2_TEMP_TDM",
+  "type": "examen",
+  "cat": "instrumentation",
+  "catLabel": "Instrumentation",
+  "title": "La TEMP/TDM (SPECT-CT) : principe et apports",
+  "difficulty": "avancé",
+  "tags": [
+    "TEMP",
+    "SPECT",
+    "TDM",
+    "SPECT/CT",
+    "imagerie hybride",
+    "correction d'atténuation",
+    "tomographie d'émission monophotonique",
+    "reconstruction OSEM",
+    "quantification SUV",
+    "gamma-caméra",
+    "99mTc",
+    "CZT"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "EANM practice guideline for quantitative SPECT-CT (Eur J Nucl Med Mol Imaging 2023;50(4):980-995)",
+      "url": "https://link.springer.com/article/10.1007/s00259-022-06028-9",
+      "verified": true
+    },
+    {
+      "title": "Morphology supporting function: attenuation correction for SPECT/CT, PET/CT, and PET/MR imaging (Q J Nucl Med Mol Imaging; PMC5262384)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5262384/",
+      "verified": true
+    },
+    {
+      "title": "Quantitative Accuracy of Clinical 99mTc SPECT/CT Using OSEM with 3D Resolution Recovery, Attenuation, and Scatter Correction (J Nucl Med 2010;51:921)",
+      "url": "https://jnm.snmjournals.org/content/51/6/921",
+      "verified": true
+    },
+    {
+      "title": "EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT/CT: 2015 revision",
+      "url": "https://link.springer.com/article/10.1007/s00259-015-3139-x",
+      "verified": true
+    },
+    {
+      "title": "2022 ASNC/AAPM/SCCT/SNMMI guideline for the use of CT in hybrid nuclear/CT cardiac imaging (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1071358123007274",
+      "verified": true
+    },
+    {
+      "title": "The Value of Attenuation Correction in Hybrid Cardiac SPECT/CT on Inferior Wall According to Body Mass Index (World J Nucl Med; PMC4729009)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4729009/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Practice Guideline for Bone Scintigraphy 4.0 (updated 2024, PDF)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2023/Bone%20Scintigraphy_UPDATED2024.pdf",
+      "verified": true
+    },
+    {
+      "title": "SPECT/CT in the Evaluation of Suspected Skeletal Pathology (Tomography 2021;7(4):581-605; PMC8544734)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8544734/",
+      "verified": true
+    },
+    {
+      "title": "Applications of SPECT/CT in the Evaluation of Spinal Pathology: A Review (Int J Spine Surg; PMC11265499)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11265499/",
+      "verified": true
+    },
+    {
+      "title": "Diagnostic performance of whole-body SPECT/CT in bone metastasis detection using 99mTc-labelled diphosphate: a systematic review and meta-analysis (Clin Radiol 2020)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0009926020303147",
+      "verified": true
+    },
+    {
+      "title": "Quantitative bone SPECT/CT: high specificity for identification of prostate cancer bone metastases (BMC Musculoskelet Disord 2019; PMC6933900)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933900/",
+      "verified": true
+    },
+    {
+      "title": "EANM guideline for ventilation/perfusion SPECT for diagnosis of pulmonary embolism and beyond (Eur J Nucl Med Mol Imaging 2019;46:2429; PMC6813289)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6813289/",
+      "verified": true
+    },
+    {
+      "title": "SNM Practice Guideline for Dopamine Transporter Imaging with 123I-Ioflupane SPECT 1.0 (J Nucl Med 2012;53:154)",
+      "url": "https://jnm.snmjournals.org/content/53/1/154",
+      "verified": true
+    },
+    {
+      "title": "SNM Practice Guideline for Parathyroid Scintigraphy 4.0 (J Nucl Med Technol 2012;40:111)",
+      "url": "https://tech.snmjournals.org/content/40/2/111",
+      "verified": true
+    },
+    {
+      "title": "Diagnostic performance of ultrasonography, dual-phase 99mTc-MIBI scintigraphy, early and delayed 99mTc-MIBI SPECT/CT in preoperative parathyroid localization in secondary hyperparathyroidism (BMC Med Imaging 2020; PMC7398336)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7398336/",
+      "verified": true
+    },
+    {
+      "title": "Quantitative application of dual-phase 99mTc-sestamibi SPECT/CT imaging of parathyroid lesions (EJNMMI Phys 2023)",
+      "url": "https://ejnmmiphys.springeropen.com/articles/10.1186/s40658-023-00548-5",
+      "verified": true
+    },
+    {
+      "title": "Technetium (99mTc) sestamibi — mechanism, uses (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Technetium_(99mTc)_sestamibi",
+      "verified": true
+    },
+    {
+      "title": "Absent 99mTc-MIBI Uptake in the Thyroid Gland during Early Phase of Parathyroid Scintigraphy (Open Access Maced J Med Sci 2018; PMC5985886)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5985886/",
+      "verified": true
+    },
+    {
+      "title": "Mo99 - Tc99m Generator (StatPearls, NBK565854)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/",
+      "verified": true
+    },
+    {
+      "title": "Bone Scan (StatPearls, NBK531486) — 99mTc-MDP effective dose ~0.0057 mSv/MBq",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK531486/",
+      "verified": true
+    },
+    {
+      "title": "EANM Dosage Card (2016) — paediatric administered activities (PDF)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf",
+      "verified": true
+    },
+    {
+      "title": "The new EANM paediatric dosage card (Lassmann et al., Eur J Nucl Med Mol Imaging 2007;34:796; PMID 17406866)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17406866/",
+      "verified": true
+    },
+    {
+      "title": "On the optimization of bone SPECT/CT in terms of image quality and radiation dose (Tulik et al., J Appl Clin Med Phys 2020)",
+      "url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/acm2.13069",
+      "verified": true
+    },
+    {
+      "title": "Estimation of the total effective dose from low-dose CT scans and radiopharmaceutical administrations delivered to patients undergoing SPECT/CT explorations (Ann Nucl Med 2013;27:610)",
+      "url": "https://link.springer.com/article/10.1007/s12149-013-0724-6",
+      "verified": true
+    },
+    {
+      "title": "Radionuclide bone scan SPECT-CT: lowering the dose of CT significantly reduces radiation dose without impacting CT image quality (Am J Nucl Med Mol Imaging 2017; PMC5435612)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5435612/",
+      "verified": true
+    },
+    {
+      "title": "Accuracy Assessment of SUV Measurements in SPECT/CT: A Phantom Study (J Nucl Med Technol 2021;49:250)",
+      "url": "https://tech.snmjournals.org/content/49/3/250",
+      "verified": true
+    },
+    {
+      "title": "Routine Quality Control of Clinical Nuclear Medicine Instrumentation: A Brief Review (Zanzonico, J Nucl Med 2008;49:1114)",
+      "url": "https://jnm.snmjournals.org/content/49/7/1114",
+      "verified": true
+    },
+    {
+      "title": "Nuclear Medicine Quality Assurance (StatPearls, NBK576382)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK576382/",
+      "verified": true
+    },
+    {
+      "title": "The Diagnostic Efficiency of 99mTc-EDDA/HYNIC-Octreotate SPECT-CT in Comparison with 111In-Pentetreotide in the Detection of Neuroendocrine Tumours (Mol Imaging Radionucl Ther 2013; PMC3888016)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3888016/",
+      "verified": true
+    },
+    {
+      "title": "Immunohistochemical Markers and SPECT/CT Somatostatin-Receptor (99mTc-Tektrotyd) Uptake in Well and Moderately Differentiated NET (Acta Endocrinol Buchar 2022; PMC10162825)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10162825/",
+      "verified": true
+    },
+    {
+      "title": "Joint EANM/SNMMI procedural guideline for paediatric bone hybrid imaging with 99mTc-labelled radiopharmaceuticals and [18F]fluoride",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051291325000096",
+      "verified": true
+    },
+    {
+      "title": "Technetium-99m isotope data (140 keV, T½ ~6 h) — Radiacode",
+      "url": "https://www.radiacode.com/isotope/tc-99m?lang=en",
+      "verified": true
+    },
+    {
+      "title": "EANM practice guideline for quantitative SPECT-CT (Eur J Nucl Med Mol Imaging 2023;50:980; PMC9931838)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9931838/",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — a Compendium (Ann ICRP 44(2S), 2015)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Effective dose to adult patients from 338 radiopharmaceuticals estimated using ICRP biokinetic data and ICRP 2007 tissue weighting factors (EJNMMI Phys 2014; PMC4545621)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4545621/",
+      "verified": true
+    },
+    {
+      "title": "DaTSCAN 74 MBq/ml solution for injection — Summary of Product Characteristics (emc 14810)",
+      "url": "https://www.medicines.org.uk/emc/product/14810/smpc",
+      "verified": true
+    },
+    {
+      "title": "DATSCAN (ioflupane I 123 injection) — FDA prescribing information / DailyMed",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=ef7804d7-c691-495b-8aaf-5bc54fd5d9f6&type=pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiation exposure levels of routine SPECT/CT imaging protocols (Eur J Radiol 2016)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0720048X1630208X",
+      "verified": true
+    },
+    {
+      "title": "Effective Dose in Nuclear Medicine Studies and SPECT/CT: Dosimetry Survey Across Quebec Province (J Nucl Med Technol 2018;46:107)",
+      "url": "https://tech.snmjournals.org/content/46/2/107",
+      "verified": true
+    },
+    {
+      "title": "SPECT/CT (Buck AK et al., J Nucl Med 2008;49:1305) — hybrid imaging review",
+      "url": "https://jnm.snmjournals.org/content/49/8/1305",
+      "verified": true
+    },
+    {
+      "title": "Comparison of 99mTc-Labeled Colloid SPECT/CT and Planar Lymphoscintigraphy in Sentinel Lymph Node Detection in Patients with Melanoma: A Meta-Analysis (J Clin Med 2020; PMC7356992)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7356992/",
+      "verified": true
+    },
+    {
+      "title": "SPECT/CT Fusion in the Diagnosis of Hyperparathyroidism (Asia Ocean J Nucl Med Biol 2015; PMC4937692)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4937692/",
+      "verified": true
+    },
+    {
+      "title": "Solitary Parathyroid Adenoma Localization in Technetium Tc99m Sestamibi SPECT and Multiphase Multidetector 4D CT (AJNR 2019; PMC7048605)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7048605/",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard for Bone Scintigraphy 4.0 (J Nucl Med Technol 2018;46:398)",
+      "url": "https://tech.snmjournals.org/content/46/4/398",
+      "verified": true
+    },
+    {
+      "title": "The EANM practice guidelines for bone scintigraphy (Eur J Nucl Med Mol Imaging 2016;43:1723)",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3415-4",
+      "verified": true
+    },
+    {
+      "title": "SNMMI/ASNC/SCCT Guideline for Cardiac SPECT/CT and PET/CT 1.0 (J Nucl Med 2013;54:1485)",
+      "url": "https://jnm.snmjournals.org/content/54/8/1485",
+      "verified": true
+    },
+    {
+      "title": "2022 ASNC/AAPM/SCCT/SNMMI guideline for the use of CT in hybrid nuclear/CT cardiac imaging (J Nucl Cardiol 2022;29:3491)",
+      "url": "https://link.springer.com/article/10.1007/s12350-022-03089-z",
+      "verified": true
+    },
+    {
+      "title": "Attenuation Correction in Myocardial Perfusion SPECT/CT: Effects of Misregistration and Value of Reregistration (J Nucl Med 2007;48:1090)",
+      "url": "https://jnm.snmjournals.org/content/48/7/1090",
+      "verified": true
+    },
+    {
+      "title": "CZT cameras: A technological jump for myocardial perfusion SPECT (J Nucl Cardiol)",
+      "url": "https://link.springer.com/article/10.1007/s12350-015-0216-2",
+      "verified": true
+    },
+    {
+      "title": "Evaluation of Cadmium-Zinc-Telluride Detector-based SPECT for Nuclear Cardiology: a Comparison with Conventional Anger SPECT (Nucl Med Mol Imaging 2017; PMC5721085)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5721085/",
+      "verified": true
+    },
+    {
+      "title": "Prognostic validation of a 17-segment score derived from a 20-segment score for myocardial perfusion SPECT interpretation (Berman et al., J Nucl Cardiol 2004;11:414)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1071358104001394",
+      "verified": true
+    },
+    {
+      "title": "Interpreting myocardial perfusion scintigraphy using SPECT. Part 1 (Kardiochir Torakochir Pol 2017; PMC5701596)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5701596/",
+      "verified": true
+    },
+    {
+      "title": "Drawing the line between a normal and mildly abnormal nuclear cardiology scan (Miller, J Nucl Cardiol 2022;29:836)",
+      "url": "https://link.springer.com/article/10.1007/s12350-020-02477-7",
+      "verified": true
+    },
+    {
+      "title": "[123I]FP-CIT (DaTscan; Ioflupane I123 Injection) SPECT brain imaging — Diagnostic effectiveness in patients with movement disorders and/or dementia (J Nucl Med 2014;55 suppl 1:305)",
+      "url": "https://jnm.snmjournals.org/content/55/supplement_1/305",
+      "verified": true
+    },
+    {
+      "title": "Clinical utility of DaTscan (123I-Ioflupane Injection) in the diagnosis of Parkinsonian Syndromes (Degener Neurol Neuromuscul Dis 2013; PMC6065574)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6065574/",
+      "verified": true
+    },
+    {
+      "title": "Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy (Toxics 2023;11(10):814)",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814",
+      "verified": true
+    },
+    {
+      "title": "IAEA Human Health Campus — NMQC Toolkit (Quality Control of gamma cameras / SPECT)",
+      "url": "https://humanhealth.iaea.org/HHW/MedicalPhysics/NuclearMedicine/QualityAssurance/NMQC-Plugins/index.html",
+      "verified": true
+    },
+    {
+      "title": "IAEA-TECDOC-602 — Quality control of nuclear medicine instruments (1991)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_602_web.pdf",
+      "verified": true
+    },
+    {
+      "title": "Tc-99m in Nuclear Medicine Imaging — Stanford PH241 (Mazumder)",
+      "url": "http://large.stanford.edu/courses/2026/ph241/mazumder2/",
+      "verified": true
+    },
+    {
+      "title": "Gamma Camera — an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/gamma-camera",
+      "verified": true
+    }
+  ],
+  "lead": "La TEMP/TDM associe deux appareils sur une même machine : une caméra qui suit un traceur faiblement radioactif à l'intérieur du corps, et un scanner qui dessine l'anatomie avec précision. En superposant les deux images, le médecin voit non seulement où quelque chose fonctionne anormalement, mais aussi à quelle structure exacte cela correspond. Ce couplage rend l'examen bien plus fiable pour distinguer une lésion banale d'une lésion sérieuse. Il sert dans de nombreuses situations, de l'os au cœur en passant par les glandes et le poumon. L'examen est indolore et se déroule en une seule séance.",
+  "identityCard": [
+    {
+      "icon": "atom",
+      "label": "Modalité",
+      "value": "Hybride : gamma-caméra + scanner X (même statif)"
+    },
+    {
+      "icon": "zap",
+      "label": "Radionucléide de référence",
+      "value": "99mTc, γ monoénergétique 140 keV"
+    },
+    {
+      "icon": "clock",
+      "label": "Période physique (99mTc)",
+      "value": "6,0 h"
+    },
+    {
+      "icon": "microscope",
+      "label": "Détecteur classique",
+      "value": "Cristal NaI(Tl) ~9,5 mm + PMT (caméra d'Anger)"
+    },
+    {
+      "icon": "target",
+      "label": "Détecteur nouvelle génération",
+      "value": "CZT : sensibilité ×4 à ×7 vs Anger+LEHR"
+    },
+    {
+      "icon": "activity",
+      "label": "Reconstruction",
+      "value": "Itérative OSEM (ex. 5 it. × 15–16 sous-ens.)"
+    },
+    {
+      "icon": "shield",
+      "label": "Apport TDM n°1",
+      "value": "Correction d'atténuation (UH → µ, bilinéaire à 140 keV)"
+    },
+    {
+      "icon": "pin",
+      "label": "Apport TDM n°2",
+      "value": "Localisation anatomique → spécificité accrue"
+    },
+    {
+      "icon": "flask",
+      "label": "Quantification absolue",
+      "value": "Concentration en Bq/mL → SUV (calibration fantôme)"
+    },
+    {
+      "icon": "list",
+      "label": "Fenêtre spectrométrique (99mTc)",
+      "value": "Photopic 140 keV ± 10 % ; diffusé TEW/DEW"
+    },
+    {
+      "icon": "syringe",
+      "label": "Activité type (scinti osseuse)",
+      "value": "555–740 MBq de 99mTc-diphosphonate"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose TDM (CTAC)",
+      "value": "~0,6 mSv (tête-cou) à ~2,6 mSv (corps entier)"
+    },
+    {
+      "icon": "baby",
+      "label": "Pédiatrie",
+      "value": "Activités selon EANM Dosage Card v5.7 (2016)"
+    },
+    {
+      "icon": "alert",
+      "label": "Contrôle qualité",
+      "value": "COR, uniformité, NEMA NU-1, fantôme de Jaszczak"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse (99mTc-diphosphonates)"
+    },
+    {
+      "type": "examen",
+      "label": "TEMP de perfusion myocardique (MPI)"
+    },
+    {
+      "type": "examen",
+      "label": "DaTscan (123I-ioflupane)"
+    },
+    {
+      "type": "examen",
+      "label": "V/Q SPECT (embolie pulmonaire)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie parathyroïdienne (99mTc-MIBI)"
+    },
+    {
+      "type": "examen",
+      "label": "Détection du ganglion sentinelle"
+    },
+    {
+      "type": "examen",
+      "label": "TEP/TDM (comparaison)"
+    },
+    {
+      "type": "traceur",
+      "label": "99mTc-pertechnétate (générateur 99Mo/99mTc)"
+    },
+    {
+      "type": "traceur",
+      "label": "99mTc-MAA / Technegas (perfusion/ventilation)"
+    },
+    {
+      "type": "traceur",
+      "label": "123I-ioflupane"
+    },
+    {
+      "type": "traceur",
+      "label": "99mTc-HYNIC-TOC (Tektrotyd)"
+    },
+    {
+      "type": "maladie",
+      "label": "Métastases osseuses"
+    },
+    {
+      "type": "maladie",
+      "label": "Hyperparathyroïdie"
+    },
+    {
+      "type": "maladie",
+      "label": "Syndromes parkinsoniens"
+    },
+    {
+      "type": "score",
+      "label": "Score SSS/SRS/SDS (17 segments)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Que reconstruit la TEMP (SPECT) à partir des projections planaires acquises en rotation ?",
+      "options": [
+        "Une image de transmission des rayons X",
+        "Une distribution tridimensionnelle du radiotraceur émetteur gamma",
+        "Une carte de coefficients d'atténuation",
+        "Une image de coïncidence de deux photons de 511 keV"
+      ],
+      "answer": 1,
+      "explanation": "La TEMP reconstruit une distribution 3D d'un radiopharmaceutique émetteur gamma monophotonique à partir de projections planaires acquises par une ou deux têtes de gamma-caméra en rotation (360° ou 180° en cardiologie) [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle énergie gamma caractérise le 99mTc, radionucléide de référence en TEMP ?",
+      "options": [
+        "159 keV",
+        "140 keV",
+        "364 keV",
+        "511 keV"
+      ],
+      "answer": 1,
+      "explanation": "Le 99mTc est un émetteur gamma monoénergétique à 140 keV, de période physique 6,0 h, obtenu par générateur 99Mo/99mTc ; ~80 % des actes de médecine nucléaire l'utilisent [19][32].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel est le principe de la correction d'atténuation par TDM en TEMP/TDM ?",
+      "options": [
+        "Soustraction directe des UH à l'image d'émission",
+        "Conversion des unités Hounsfield en coefficients d'atténuation linéaire par une relation bilinéaire à l'énergie du radionucléide",
+        "Application d'un filtre passe-bas sur les projections",
+        "Multiplication par le facteur de décroissance"
+      ],
+      "answer": 1,
+      "explanation": "Les unités Hounsfield de la TDM sont converties en coefficients d'atténuation linéaire à l'énergie du radionucléide (140 keV pour le 99mTc) par une relation bilinéaire (segment tissus mous / segment os) [1][2].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En scintigraphie osseuse au 99mTc, comment se définit la fenêtre de diffusion Compton (méthode TEW) par rapport au photopic ?",
+      "options": [
+        "Photopic 140 keV ± 7,5 %, fenêtre de diffusion ~120 keV ± 7,5 %",
+        "Photopic 159 keV, fenêtre à 140 keV",
+        "Photopic 364 keV, fenêtre à 250 keV",
+        "Aucune fenêtre de diffusion nécessaire"
+      ],
+      "answer": 0,
+      "explanation": "Pour le 99mTc, le pic photoélectrique est à 140 keV ± 7,5 % et la fenêtre de diffusion Compton (triple fenêtre d'énergie) est placée vers 120 keV ± 7,5 % [23].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle méta-analyse illustre le gain de la TEMP/TDM sur le planaire pour la détection des métastases osseuses au 99mTc-diphosphonate ?",
+      "options": [
+        "Se 74 % / Sp 80 %",
+        "Se 92 % (IC95 89–95) / Sp 95 % (94–96), AUC 0,98",
+        "Se 38 % / Sp 100 %",
+        "Se 60 % / Sp 60 %"
+      ],
+      "answer": 1,
+      "explanation": "La méta-analyse de la TEMP/TDM corps entier donne Se 92 % (IC95 89–95) et Sp 95 % (94–96), AUC 0,984, contre Se 74 % / Sp 80 % pour le planaire [10].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est l'apport principal de la correction d'atténuation par TDM en TEMP de perfusion myocardique ?",
+      "options": [
+        "Elle augmente la sensibilité au détriment de la spécificité",
+        "Elle corrige les artéfacts d'atténuation diaphragmatique et mammaire et augmente la spécificité",
+        "Elle remplace l'épreuve d'effort",
+        "Elle mesure la fraction d'éjection"
+      ],
+      "answer": 1,
+      "explanation": "La CA-TDM corrige les artéfacts d'atténuation (paroi inférieure/diaphragme, paroi antérieure/sein) et augmente la spécificité ; elle fait passer la proportion d'examens jugés certainement normaux/anormaux de 37 % à 84 % (p < 0,005) [6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle épaisseur typique a le cristal scintillateur NaI(Tl) d'une caméra d'Anger classique ?",
+      "options": [
+        "1 mm",
+        "9,5 mm (3/8\")",
+        "25 mm",
+        "50 mm"
+      ],
+      "answer": 1,
+      "explanation": "Le détecteur classique (caméra d'Anger) utilise un cristal NaI(Tl) monobloc d'épaisseur typique 9,5 mm (3/8\"), émission à 415 nm, couplé à un réseau de photomultiplicateurs [60].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel gain de sensibilité apportent les détecteurs CZT en cardiologie nucléaire par rapport à une caméra d'Anger + collimateur LEHR ?",
+      "options": [
+        "Aucun gain",
+        "Sensibilité ×4 (DNM 530c) à ×7 (D-SPECT)",
+        "Sensibilité divisée par 2",
+        "Gain uniquement en résolution spatiale"
+      ],
+      "answer": 1,
+      "explanation": "Les détecteurs semi-conducteurs CZT offrent une résolution en énergie doublée et une sensibilité ×4 (DNM 530c) à ×7 (D-SPECT) vs Anger+LEHR, autorisant l'acquisition double-isotope simultanée [49][50].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel test de contrôle qualité est spécifique de la composante tomographique (TEMP) d'une caméra ?",
+      "options": [
+        "Le peaking en énergie",
+        "Le centre de rotation (COR)",
+        "Le warm-up du tube TDM",
+        "La mesure du bruit de fond"
+      ],
+      "answer": 1,
+      "explanation": "Parmi les tests spécifiques tomographiques figurent le centre de rotation (COR), l'alignement gantry/collimateur et la stabilité rotationnelle des têtes ; le fantôme de Jaszczak et le référentiel NEMA NU-1 encadrent le CQ [27][28].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pour la seule correction d'atténuation, quel type d'acquisition TDM est recommandé ?",
+      "options": [
+        "TDM diagnostique avec produit de contraste iodé",
+        "TDM basse dose sans contraste",
+        "TDM haute résolution en apnée",
+        "Aucune TDM n'est nécessaire"
+      ],
+      "answer": 1,
+      "explanation": "Pour la seule correction d'atténuation/localisation, une TDM basse dose sans contraste suffit et est recommandée ; le contraste iodé n'est réservé qu'aux TDM diagnostiques [23].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "En quelle unité s'exprime la quantification absolue en TEMP/TDM après toutes corrections et calibration par fantôme ?",
+      "options": [
+        "En unités Hounsfield",
+        "En Bq/mL, puis en SUV",
+        "En coups par minute uniquement",
+        "En Gray"
+      ],
+      "answer": 1,
+      "explanation": "Après CA-TDM, correction de diffusion, récupération de résolution et calibration par fantôme cylindrique d'activité connue, l'image est exprimée en Bq/mL puis en SUV, comme en TEP [1][26].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle performance la TEMP/TDM V/Q atteint-elle pour le diagnostic d'embolie pulmonaire ?",
+      "options": [
+        "Se 60–70 % / Sp 50 %",
+        "Se 96–99 % / Sp 96–98 %",
+        "Se 38 % / Sp 100 %",
+        "Se 74 % / Sp 80 %"
+      ],
+      "answer": 1,
+      "explanation": "La V/Q SPECT atteint Se 96–99 % et Sp 96–98 % (>5000 cas), avec un taux non diagnostique de 1–4 % (vs 4–10 % pour l'angioscanner) [12].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle matrice d'acquisition est couramment utilisée en TEMP/TDM quantitative selon l'EANM ?",
+      "options": [
+        "64 × 64",
+        "128 × 128 avec 120–128 projections",
+        "256 × 256 avec 32 projections",
+        "512 × 512"
+      ],
+      "answer": 1,
+      "explanation": "L'EANM recommande couramment une matrice 128 × 128 avec un nombre de projections proche de la matrice (120–128), et un contournage automatique pour minimiser la distance détecteur-patient [1][33].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel artéfact majeur peut créer de faux défauts de perfusion en TEMP/TDM myocardique ?",
+      "options": [
+        "Le peaking correct",
+        "Le défaut de recalage (misregistration) SPECT↔CT",
+        "La calibration par fantôme",
+        "L'usage d'un collimateur LEHR"
+      ],
+      "answer": 1,
+      "explanation": "Le défaut de recalage (misregistration) entre les volumes d'émission et de transmission est une source majeure de faux défauts en MPI ; un recalage/re-registration visuel est recommandé [48].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel score standardisé est utilisé pour interpréter la TEMP de perfusion myocardique sur le modèle à 17 segments ?",
+      "options": [
+        "Score de Curie",
+        "SSS/SRS/SDS (0–4 par segment, max 68)",
+        "SIOPEN",
+        "Score de Deauville"
+      ],
+      "answer": 1,
+      "explanation": "Le modèle à 17 segments cote chaque segment de 0 à 4 (max SSS/SRS = 68) : SSS <4 normal, 4–8 légèrement anormal, 9–13 modéré, ≥13 sévère ; le SDS (SSS−SRS) quantifie l'ischémie réversible [51][52].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la dose efficace de la composante TDM basse dose de correction d'atténuation ?",
+      "options": [
+        "10 à 20 mSv",
+        "~0,6 mSv (tête-cou) à ~2,6 mSv (corps entier)",
+        "Supérieure à la dose du radiopharmaceutique",
+        "Nulle"
+      ],
+      "answer": 1,
+      "explanation": "La TDM basse dose de correction d'atténuation délivre une dose efficace modeste, de l'ordre de 0,6 mSv (tête/cou) à 2,6 mSv (corps entier) ; la dose totale = dose du radiopharmaceutique + dose TDM [24][25].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel gain de sensibilité la TEMP/TDM apporte-t-elle au rachis par rapport au planaire dans les pathologies osseuses équivoques ?",
+      "options": [
+        "De 6,1 % (planaire) à 78,8 %",
+        "De 90 % à 95 %",
+        "Aucun gain",
+        "De 50 % à 55 %"
+      ],
+      "answer": 0,
+      "explanation": "Au rachis, la TEMP/TDM porte la sensibilité de 6,1 % (planaire) à 78,8 %, réduit les cas équivoques de 40 % à 5,6 % et atteint une exactitude de 91,1 % vs 58,9 % [8][9].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel blocage est obligatoire avant l'administration d'un traceur marqué à l'123I (ex. DaTscan) ?",
+      "options": [
+        "Blocage de la captation rénale",
+        "Blocage thyroïdien (iodure/perchlorate de potassium)",
+        "Blocage de la moelle osseuse",
+        "Aucune préparation"
+      ],
+      "answer": 1,
+      "explanation": "Un blocage thyroïdien (KI ~120 mg par voie orale 1–4 h avant, ou perchlorate) est obligatoire avant tout traceur à l'123I pour protéger la thyroïde de l'iode libre [36].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "En localisation parathyroïdienne des glandes ectopiques, quelle sensibilité la TEMP/TDM 99mTc-MIBI précoce apporte-t-elle par rapport au planaire double phase ?",
+      "options": [
+        "50 % (planaire) vs 90 % (TEMP/TDM précoce)",
+        "90 % (planaire) vs 50 % (TEMP/TDM)",
+        "Identique",
+        "Aucune des deux ne détecte les ectopies"
+      ],
+      "answer": 0,
+      "explanation": "Pour les glandes ectopiques, la sensibilité de la TEMP/TDM 99mTc-MIBI précoce atteint 90 % contre 50 % en planaire double phase ; la TEMP/TDM surpasse le planaire et l'échographie en localisation pré-opératoire [15][14].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Comment le 99mTc-sestamibi (MIBI) est-il retenu dans les cellules ?",
+      "options": [
+        "Fixation sur l'hydroxyapatite",
+        "Cation lipophile séquestré dans les mitochondries (potentiel transmembranaire négatif)",
+        "Liaison au récepteur SSTR2",
+        "Blocage mécanique capillaire"
+      ],
+      "answer": 1,
+      "explanation": "Le 99mTc-sestamibi est un cation lipophile capté proportionnellement au flux sanguin puis séquestré dans les mitochondries (>90 % de la rétention myocardique) ; en parathyroïde, la rétention est prolongée dans les cellules riches en mitochondries des adénomes [17][18].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel taux de détection la TEMP/TDM atteint-elle pour le ganglion sentinelle dans le mélanome comparé à la lymphoscintigraphie planaire ?",
+      "options": [
+        "98,3 % (SPECT/CT) vs 95,5 % (planaire)",
+        "70 % vs 90 %",
+        "50 % vs 80 %",
+        "Identique dans les deux cas"
+      ],
+      "answer": 0,
+      "explanation": "Une méta-analyse (17 études, 1438 patients) montre un taux de détection de 98,3 % pour la TEMP/TDM contre 95,5 % pour la lymphoscintigraphie planaire [41].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle relation exprime la dose efficace du 99mTc-MDP (scintigraphie osseuse) ?",
+      "options": [
+        "~0,14 mSv/MBq, soit ~100 mSv pour 740 MBq",
+        "~0,0057 mSv/MBq, soit ~4 mSv pour 740 MBq",
+        "~0,025 mSv/MBq, soit ~18 mSv pour 740 MBq",
+        "Dose nulle"
+      ],
+      "answer": 1,
+      "explanation": "Le 99mTc-MDP a une dose efficace d'environ 0,0057 mSv/MBq, soit ~4 mSv pour 740 MBq (20 mCi) administrés (référentiel CIPR 128) [20][34].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle méthode de reconstruction a supplanté la rétroprojection filtrée en TEMP moderne ?",
+      "options": [
+        "La transformée de Fourier directe",
+        "Les méthodes itératives OSEM (ordered-subset expectation maximization)",
+        "La rétroprojection non filtrée",
+        "Le seuillage manuel"
+      ],
+      "answer": 1,
+      "explanation": "La reconstruction utilise aujourd'hui des méthodes itératives OSEM (ex. 5 itérations × 15–16 sous-ensembles) plutôt que la rétroprojection filtrée, avec modélisation de la réponse du collimateur (récupération de résolution) [3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi un collimateur moyenne énergie (MEGP) est-il souvent préféré au LEHR pour l'123I ?",
+      "options": [
+        "Parce que l'123I n'émet que 159 keV",
+        "Pour limiter la pénétration septale due aux photons de haute énergie (~529 keV) et l'artéfact en étoile",
+        "Pour augmenter la sensibilité",
+        "Parce que le LEHR est interdit"
+      ],
+      "answer": 1,
+      "explanation": "L'123I émet aussi des photons de haute énergie (~529 keV) responsables de pénétration septale et d'un artéfact en étoile avec un collimateur basse énergie ; un collimateur moyenne énergie (MEGP) est donc souvent préféré [13][36].",
+      "difficulty": "difficile"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "La TEMP (SPECT) reconstruit une distribution 3D d'un traceur émetteur gamma à partir de projections planaires acquises en rotation ; reconstruction itérative OSEM avec récupération de résolution [1][3].",
+      "La TEMP/TDM est un système hybride : la TDM apporte la localisation anatomique (spécificité accrue, réduction des cas équivoques) et la correction d'atténuation [2][40].",
+      "Correction d'atténuation : conversion des UH en coefficients d'atténuation linéaire par relation bilinéaire à l'énergie du radionucléide (140 keV pour 99mTc) ; correction de diffusion par triple fenêtre (TEW) [1][23].",
+      "Radionucléide de référence : 99mTc, gamma monoénergétique 140 keV, période 6,0 h, générateur 99Mo/99mTc, ~80 % des actes ; détecteur NaI(Tl) 9,5 mm ou CZT (sensibilité ×4 à ×7) [19][32][60][49].",
+      "Quantification absolue reproductible en Bq/mL puis SUV après calibration par fantôme, ouvrant au suivi et à la dosimétrie [1][26].",
+      "Os : Se 92 % / Sp 95 % (méta-analyse), gain majeur au rachis (6,1 % → 78,8 %) ; V/Q SPECT : Se 96–99 % / Sp 96–98 % pour l'embolie pulmonaire [10][8][12].",
+      "Cardiologie : la CA-TDM corrige les artéfacts diaphragmatique/mammaire et augmente la spécificité (37 % → 84 % d'examens tranchés) [6].",
+      "Dose totale = dose du radiopharmaceutique + dose TDM ; la TDM basse dose de correction d'atténuation délivre ~0,6 à ~2,6 mSv [24][25]."
+    ],
+    "protocol": [
+      "Acquisition : matrice 128 × 128, 120–128 projections, contournage automatique ; fenêtre 99mTc photopic 140 keV ± 10 %, diffusé par TEW (~120 keV ± 7,5 %) [1][23].",
+      "Corrections indispensables à la quantification : atténuation (CTAC : UH → µ), diffusé (TEW), modélisation détecteur-collimateur, décroissance et temps mort [1][33].",
+      "Calibration/facteur de sensibilité : cross-calibration activimètre ↔ caméra au moins annuelle, exactitude 5–10 % (diagnostic), 5 % (thérapie) [1].",
+      "TDM basse dose sans contraste suffisante pour la seule correction d'atténuation/localisation ; contraste iodé réservé aux TDM diagnostiques [23].",
+      "Activités adulte repères : scinti osseuse 555–740 MBq de 99mTc-diphosphonate ; parathyroïdes 740–925 MBq de 99mTc-MIBI ; DaTscan 111–185 MBq d'123I-ioflupane (blocage thyroïdien) [7][43][36].",
+      "Pédiatrie : activités selon EANM Dosage Card v5.7 (2016), jamais inférieures à l'activité minimale recommandée [21][22]."
+    ],
+    "scores": [
+      "TEMP myocardique — modèle à 17 segments, cotation 0–4 par segment (max SSS/SRS = 68) [51][52].",
+      "SSS : <4 normal, 4–8 légèrement anormal, 9–13 modérément anormal, ≥13 sévère/étendu [51][53].",
+      "SDS (ischémie réversible = SSS−SRS) : 0–1 absente, 2–4 légère, 5–6 modérée, ≥7 sévère ; seuil pronostique >3 (~5 % du myocarde) [52][53].",
+      "Compte rendu quantitatif SPECT/CT : rapporter Bq/mL ou SUV, reconstruction/corrections, facteur de calibration et incertitudes des coefficients de recouvrement [1]."
+    ],
+    "pitfalls": [
+      "Défaut de recalage (misregistration) SPECT↔CT : source majeure de faux défauts en MPI ; vérifier la fusion et re-registrer [48].",
+      "Troncature du champ TDM chez le patient corpulent : thorax partiellement exclu, CTAC dégradée [40].",
+      "Durcissement de faisceau et artéfacts métalliques : distorsion des UH → faux foyers chauds/froids [23].",
+      "Mismatch de repositionnement ou respiratoire entre émission et transmission → faux défauts d'atténuation [2].",
+      "Fixation surrénalienne physiologique parfois majorée par la correction d'atténuation TDM ; artéfacts de mouvement patient [48].",
+      "Ne pas oublier le blocage thyroïdien pour tout traceur à l'123I, ni la justification de la dose TDM (protocoles basse dose dédiés) [36][1]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert cet examen ?",
+        "text": "La TEMP/TDM associe **deux images en un seul appareil**. La première, la TEMP, utilise un produit traceur très faiblement radioactif pour montrer **comment fonctionnent vos organes** et repérer les zones qui travaillent anormalement (par exemple un foyer douloureux dans l'os, une glande trop active ou une région du cœur mal irriguée). La seconde, le scanner (TDM), fournit une **image précise de votre anatomie**. En superposant les deux, le médecin sait exactement **où** se situe la zone détectée et peut faire la différence entre une anomalie sans gravité et une qui mérite une prise en charge. Cette combinaison rend le résultat **plus fiable et plus précis** qu'une image de médecine nucléaire seule.",
+        "figureKey": "GAMMA_CAMERA",
+        "figureAlt": "Schéma d'une caméra qui tourne autour du patient allongé pour construire une image en volume, couplée à un scanner.",
+        "figureCaption": "La caméra tourne autour de vous pour reconstituer une image en trois dimensions ; le scanner ajoute le repère anatomique précis.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Deux examens en une seule séance",
+            "text": "Plutôt que de passer une image de médecine nucléaire puis un scanner à des moments différents, tout est obtenu pendant le même passage, sans changer de table. Cela évite un rendez-vous supplémentaire et permet de superposer parfaitement les deux images."
+          }
+        ]
+      },
+      {
+        "title": "Comment se déroule l'examen ?",
+        "text": "Le déroulé dépend de la partie du corps étudiée, mais le principe est toujours le même. On vous injecte le plus souvent le produit traceur dans une veine du bras. Selon l'examen, il faut ensuite **patienter un moment** (parfois quelques heures) pour laisser le traceur se répartir dans l'organe à étudier ; l'équipe vous précisera le délai. Vient ensuite la prise des images : vous êtes **allongé, immobile**, tandis que la caméra tourne lentement autour de vous, puis un bref passage de scanner complète l'examen. C'est **indolore** ; il suffit de rester tranquille. Pensez à retirer les objets métalliques et signalez tout traitement en cours.",
+        "list": [
+          "Suivez les consignes du service pour la préparation (parfois être à jeun, bien s'hydrater, ou arrêter certaines boissons).",
+          "Signalez une grossesse possible, un allaitement, un diabète ou vos médicaments habituels.",
+          "L'examen se fait allongé, sans douleur ; il faut simplement rester immobile pendant l'acquisition des images."
+        ]
+      },
+      {
+        "title": "Est-ce sans danger ?",
+        "text": "Oui, l'examen est **sûr et bien maîtrisé**. La quantité de produit traceur utilisée est **très faible** et il s'élimine naturellement de votre corps en quelques heures ; **boire régulièrement** aide à l'évacuer plus vite. Le scanner ajoute une petite dose de rayons X, choisie au plus juste pour ce dont le médecin a besoin. Les réactions au produit sont **exceptionnelles**. Par précaution, la grossesse fait l'objet d'une discussion au cas par cas, et en cas d'allaitement l'équipe vous indiquera la conduite à tenir. N'hésitez pas à poser vos questions : l'équipe est là pour vous accompagner à chaque étape.",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Illustration des principes de radioprotection : quantité de traceur limitée et dose adaptée au besoin.",
+        "figureCaption": "La dose est adaptée au strict nécessaire ; le traceur s'élimine naturellement en quelques heures.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "À signaler avant l'examen",
+            "text": "Une grossesse possible ou un allaitement, un diabète, vos traitements en cours, et toute allergie connue. Ces informations permettent à l'équipe d'adapter l'examen et d'assurer votre sécurité."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : indications et atouts",
+        "text": "La TEMP/TDM (SPECT/CT) est un examen **hybride** qui superpose l'imagerie fonctionnelle de la médecine nucléaire et un scanner de repérage, sur le même appareil et la même position. Son intérêt majeur est de **localiser précisément un foyer fonctionnel** et d'améliorer nettement la **spécificité** par rapport à une scintigraphie planaire ou à une TEMP seule, en réduisant les images équivoques. Pensez-y notamment quand la localisation anatomique exacte conditionne la décision.",
+        "list": [
+          "**Ostéo-articulaire / oncologie osseuse** : caractérisation d'un foyer douteux au rachis ou aux articulations, bilan de métastases osseuses — l'ajout du scanner distingue une lésion dégénérative bénigne d'une atteinte suspecte.",
+          "**Cardiologie (perfusion myocardique)** : la correction d'atténuation par scanner réduit les faux positifs de la paroi inférieure et améliore la spécificité.",
+          "**Endocrinologie (parathyroïdes)** : localisation pré-opératoire d'un adénome, y compris ectopique, avant chirurgie.",
+          "**Pneumologie (embolie pulmonaire, imagerie ventilation/perfusion)** : alternative performante, utilisable même en cas de BPCO, d'insuffisance cardiaque ou de pneumonie.",
+          "**Neurologie (transporteur de la dopamine)** : aide au diagnostic des syndromes parkinsoniens face à un tremblement essentiel.",
+          "**Oncologie (tumeurs neuroendocrines, ganglion sentinelle)** : détection et cartographie précise des lésions ou du drainage lymphatique."
+        ]
+      },
+      {
+        "title": "Démarche et apport de la médecine nucléaire",
+        "text": "En pratique, le choix du traceur et du protocole se fait avec le médecin nucléaire selon l'organe cible et la question posée. Le scanner couplé apporte deux gains décisifs : la **localisation anatomique** du foyer fonctionnel (rattacher une hyperfixation à une structure précise) et la **correction d'atténuation**, qui rend l'image plus fidèle et réduit les artéfacts. Dans la plupart des indications, un **scanner basse dose sans produit de contraste** suffit à ces deux objectifs ; un scanner diagnostique n'est réservé qu'à des situations spécifiques. Adressez le patient avec une **question clinique précise**, le contexte (bilan initial, réévaluation, doute diagnostique) et les imageries antérieures disponibles.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "La TEMP/TDM réunit en un seul examen l'information fonctionnelle de la médecine nucléaire et le repérage anatomique d'un scanner, ce qui améliore nettement la spécificité et réduit les résultats équivoques par rapport à une scintigraphie seule. Elle est particulièrement utile quand la localisation précise d'un foyer change la prise en charge : os douteux, adénome parathyroïdien avant chirurgie, perfusion cardiaque, embolie pulmonaire, syndrome parkinsonien, tumeur neuroendocrine. Discutez l'indication avec le service de médecine nucléaire en précisant la question clinique : cela oriente le choix du traceur et du protocole et accélère la prise en charge."
+          }
+        ]
+      },
+      {
+        "title": "Ce qu'il faut savoir avant d'adresser",
+        "text": "La préparation dépend de l'examen (parfois jeûne partiel, hydratation, arrêt temporaire de certaines substances ou de médicaments interférents, blocage thyroïdien pour les traceurs iodés) : le service précise les consignes. L'examen combine la dose du traceur et celle du scanner, cette dernière restant **modeste** lorsqu'il s'agit d'un scanner basse dose de repérage. Comme toute imagerie de médecine nucléaire, la grossesse relève d'une évaluation au cas par cas et l'allaitement peut nécessiter des précautions selon le traceur. Transmettre en amont le contexte clinique, les traitements et les antériorités d'imagerie évite les reprogrammations et optimise l'interprétation.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "À vérifier avant l'orientation",
+            "text": "Grossesse ou allaitement, traitements en cours (certains interfèrent avec le traceur), fonction rénale et antécédents allergiques si un scanner avec contraste est envisagé, et capacité du patient à rester immobile durant l'acquisition. Ces éléments, communiqués au service, sécurisent et fluidifient l'examen."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identité",
+        "text": "**Comment lire la carte d'identité.** La **TEMP/TDM** (tomographie d'émission monophotonique couplée à la tomodensitométrie ; angl. *SPECT/CT*, Single-Photon Emission Computed Tomography / Computed Tomography) n'est pas un examen mono-traceur mais une **modalité hybride** : une gamma-caméra tomographique et un scanner X montés sur un même statif, dont les volumes d'émission (fonctionnel) et de transmission (anatomique) sont co-enregistrés puis fusionnés [2,40]. Le radionucléide de loin le plus utilisé est le **⁹⁹ᵐTc**, émetteur gamma monoénergétique de **140 keV**, de période physique **6,0 h**, obtenu par générateur ⁹⁹Mo/⁹⁹ᵐTc et présent dans **~80 %** des actes de médecine nucléaire mondiaux [19,32]. La TDM apporte deux gains cardinaux — **localisation anatomique** et **correction d'atténuation (CA)** — que ne procure pas la scintigraphie planaire ou la TEMP seule [2,40]. Les valeurs exactes (activités, paramètres) sont détaillées aux sections dédiées du mouvement B et adaptées au traceur et au protocole de chaque service.\n\n| Champ | Valeur | Source |\n|---|---|---|\n| Modalité | Hybride γ-caméra + scanner X (statif unique) | [2,40] |\n| Radionucléide de référence | ⁹⁹ᵐTc — γ pur **140 keV** ; T½ **6,0 h** | [19,32] |\n| Autres émetteurs | ¹²³I (159 keV, T½ 13,2 h) · ¹¹¹In (171/245 keV, T½ 2,8 j) | [32,36] |\n| Détecteur | Cristal **NaI(Tl)** (caméra d'Anger) ou **CZT** (semi-conducteur) | [60,49] |\n| Reconstruction | **Itérative OSEM** (résolution + atténuation + diffusé) | [3] |\n| Rôle de la TDM | Localisation anatomique + **correction d'atténuation** | [2,40] |\n| Quantification | Bq/mL → **SUV** (après CA + diffusé + résolution + calibration) | [1,26] |\n| Dose ajoutée par la TDM | **~0,6 mSv** (tête-cou) à **~2,6 mSv** (corps entier) | [24] |\n| Indications phares | Os, MPI, parathyroïdes, DAT, V/Q, ganglion sentinelle, TNE | [8,4,14,13,12] |",
+        "stats": [
+          {
+            "value": "140 keV",
+            "label": "γ du 99mTc (raie principale)"
+          },
+          {
+            "value": "6,0 h",
+            "label": "Période physique du 99mTc"
+          },
+          {
+            "value": "~80 %",
+            "label": "Actes MN mondiaux au 99mTc"
+          },
+          {
+            "value": "128×128",
+            "label": "Matrice d'acquisition courante"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "La TEMP/TDM se distingue de la **TEP/TDM** par la physique de détection : la TEMP détecte des **photons uniques collimatés mécaniquement** (collimateur en plomb), tandis que la TEP détecte deux photons de 511 keV en **coïncidence**. Cette collimation mécanique explique la moindre sensibilité et la moindre résolution intrinsèque de la TEMP, mais autorise l'usage de traceurs à période longue et d'émetteurs multiples (acquisitions double-isotope) [49,60]."
+          }
+        ],
+        "figureKey": "GAMMA_CAMERA",
+        "figureAlt": "Schéma d'une gamma-caméra couplée à un scanner : collimateur en plomb, cristal NaI(Tl), photomultiplicateurs, statif rotatif et anneau TDM — l'architecture hybride de la TEMP/TDM.",
+        "figureCaption": "Fig. 1 — Architecture hybride TEMP/TDM : la γ-caméra (émission) et le scanner X (transmission) sur un même statif permettent la fusion et la correction d'atténuation."
+      },
+      {
+        "title": "A2 - Définition",
+        "text": "La **TEMP** (tomographie d'émission monophotonique) reconstruit la distribution **tridimensionnelle** d'un radiopharmaceutique émetteur gamma à partir d'un jeu de **projections planaires** acquises par une ou plusieurs têtes de gamma-caméra à collimateur, en **rotation autour du patient** — typiquement **360°** en imagerie corps entier ou **180°** en cardiologie [3]. Elle appartient à l'imagerie **fonctionnelle et moléculaire** : elle ne cartographie pas la morphologie mais la **biodistribution** d'un traceur reflétant un processus physiologique (perfusion, remodelage osseux, transport membranaire, expression réceptorielle) [40].\n\nLa reconstruction n'utilise plus la rétroprojection filtrée mais des méthodes **itératives de type OSEM** (ordered-subset expectation maximization ; p. ex. **5 itérations × 15–16 sous-ensembles**), qui intègrent la modélisation physique de l'acquisition et améliorent le rapport signal/bruit [3]. Sur matrice **128 × 128**, on acquiert **120–128 projections** [1].\n\nLa **TEMP/TDM (SPECT/CT)** ajoute à cette information fonctionnelle une image de **transmission** obtenue par un scanner X intégré. La fusion des deux volumes transforme un examen **qualitatif et fonctionnel** en un examen **anatomo-fonctionnel et potentiellement quantitatif** : c'est le passage d'une carte « où ça fixe » à « quelle structure fixe, et combien » [40]. Deux apports sont indissociables de cette hybridation :\n\n- la **localisation anatomique** exacte d'un foyer d'hyperfixation (rattacher un foyer à une côte, une articulaire postérieure, une loge parathyroïdienne, un lobe pulmonaire), qui augmente nettement la **spécificité** [8,40] ;\n- la **correction d'atténuation basée TDM (CTAC)** : les unités Hounsfield (UH) de la TDM sont converties en **coefficients d'atténuation linéaire (µ)** à l'énergie du radionucléide par une **relation bilinéaire** (segment tissus mous / segment os) [1,2].\n\nAu terme de ces corrections (atténuation + diffusé + récupération de résolution) et d'une **calibration** par fantôme d'activité connue, l'image devient **quantitative absolue**, exprimée en **Bq/mL** puis en **SUV** (standardized uptake value), comme en TEP [1,26].",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "La CTAC en TEMP est **recommandée** (elle améliore la fidélité quantitative et la spécificité) tandis qu'en TEP elle est **obligatoire** : sans elle, l'image de coïncidence n'est pas quantifiable [1,2]. En TEMP, une image **non corrigée** reste souvent lisible qualitativement, mais la CTAC est indispensable dès qu'on vise une **quantification absolue** (Bq/mL, SUV) ou qu'on corrige des artéfacts d'atténuation profonds (paroi inférieure du myocarde) [2,6]."
+          }
+        ]
+      },
+      {
+        "title": "A3 - Rappels anatomiques & physiologiques",
+        "text": "La TEMP/TDM n'est **pas dédiée à un organe unique** : elle image la biodistribution d'un traceur, et le « substrat » anatomo-physiologique change avec l'indication. Le dénominateur commun est que la composante **TDM fournit le référentiel anatomique** permettant de rattacher un foyer fonctionnel à une structure et, souvent, de trancher entre bénin et malin [8].\n\nLes principaux territoires explorés et leur physiologie sous-jacente :\n\n| Territoire | Repères anatomiques (TDM) | Processus physiologique imagé |\n|---|---|---|\n| **Squelette axial et appendiculaire** | Côtes, corps et arcs vertébraux, **articulaires postérieures**, bassin | Activité **ostéoblastique** / remodelage osseux (fixation sur l'hydroxyapatite) [7,8] |\n| **Myocarde** | Parois VG (inférieure, antérieure, latérale, septale) selon le modèle **17 segments** | **Perfusion** myocardique régionale (flux + intégrité mitochondriale) [4,51] |\n| **Loges thyroïdienne et parathyroïdiennes** | Lobes thyroïdiens, sites **ectopiques** (médiastin, gaine carotidienne) | Rétention mitochondriale des cellules oxyphiles des **adénomes** parathyroïdiens [14,15] |\n| **Striatum** | Noyaux caudé et putamen | Densité du **transporteur présynaptique de la dopamine (DAT)** [13] |\n| **Poumons** | Lobes et segments pulmonaires | **Perfusion** capillaire et **ventilation** alvéolaire régionales [12] |\n\nLa richesse de ce spectre explique pourquoi l'apport anatomique de la TDM est décisif : au **rachis**, où l'activité dégénérative (articulaires postérieures, disques) et l'activité métastatique (corps vertébral, pédicules) se chevauchent en planaire, la localisation TDM porte la sensibilité de **6,1 %** (planaire) à **78,8 %** et réduit les foyers équivoques de **40 %** (TEMP seule) à **5,6 %** [8,9]. C'est l'illustration paradigmatique du principe : rattacher une fonction anormale à sa structure lève l'ambiguïté diagnostique.",
+        "figureKey": "MPI_PROTOCOL",
+        "figureAlt": "Modèle à 17 segments du ventricule gauche (parois antérieure, inférieure, latérale, septale ; apex) servant de référentiel anatomique à l'analyse de perfusion myocardique en TEMP/TDM.",
+        "figureCaption": "Fig. 2 — Le référentiel anatomique myocardique (modèle 17 segments) : la TDM permet d'attribuer un défaut de perfusion à un territoire coronaire et de corriger l'atténuation pariétale."
+      },
+      {
+        "title": "A4 - Principe : la cible biologique imagée",
+        "text": "**Pourquoi ça marche.** La TEMP repose sur un principe universel : un radiopharmaceutique émetteur gamma se concentre dans un tissu **selon une propriété biologique spécifique**, et la collimation mécanique + la rotation de la caméra permettent d'en reconstruire la distribution 3D. La cible biologique n'est donc **pas propre à la modalité** mais au **traceur employé** ; la TEMP/TDM est le contenant, le traceur définit la question posée.\n\n| Traceur | Cible biologique | Mécanisme de fixation |\n|---|---|---|\n| **⁹⁹ᵐTc-diphosphonates (MDP/HDP/DPD)** | **Hydroxyapatite** osseuse | Adsorption sur les zones d'**activité ostéoblastique** accrue [7] |\n| **⁹⁹ᵐTc-sestamibi / tétrofosmine** | **Mitochondries** myocardiques et cellules oxyphiles | Cation lipophile capté selon le flux puis **séquestré** dans les mitochondries (potentiel transmembranaire négatif) ; **>90 %** de la rétention myocardique est mitochondriale [17,18] |\n| **¹²³I-ioflupane (DaTSCAN)** | **Transporteur de la dopamine (DAT)** présynaptique | Analogue de la cocaïne se liant au DAT striatal [13] |\n| **⁹⁹ᵐTc-MAA** | Capillaires précapillaires pulmonaires | Blocage mécanique de **~400 000** macroagrégats d'albumine → **perfusion** [12] |\n| **⁹⁹ᵐTc-Technegas** | Espace alvéolaire | Nanoparticules de carbone inhalées → **ventilation** [12] |\n| **⁹⁹ᵐTc-HYNIC-TOC / ¹¹¹In-pentétréotide** | **Récepteurs de la somatostatine (SSTR2)** | Analogues de la somatostatine liant les SSTR des TNE [29] |\n\nLe **contraste de l'image** obéit donc à une règle simple, transposable à chaque traceur :\n\n- **Hyperfixation** = densité élevée de la cible (activité ostéoblastique, masse mitochondriale, densité en DAT ou en récepteurs, perfusion conservée) ;\n- **Hypofixation / absence** = perte de la cible (destruction, dénervation, obstruction vasculaire) ou **artéfact** (atténuation, mauvaise fusion).\n\nC'est précisément parce que le signal fonctionnel peut être **ambigu** (un foyer chaud peut être bénin ou malin, un défaut froid peut être une atténuation ou une lésion) que la TDM couplée est déterminante : elle apporte le **contexte anatomique** et la **correction d'atténuation** qui désambiguïsent le signal [2,40].",
+        "figureKey": "BULLSEYE_17",
+        "figureAlt": "Représentation en œil-de-bœuf (bull's-eye) 17 segments d'une perfusion myocardique : les segments hypofixants traduisent soit une hypoperfusion réelle, soit un artéfact d'atténuation corrigé par la CTAC.",
+        "figureCaption": "Fig. 3 — Hyperfixation = cible présente ; hypofixation = perte de cible OU artéfact. La CTAC distingue un vrai défaut d'un artéfact d'atténuation (paroi inférieure diaphragmatique, paroi antérieure mammaire).",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La **correction d'atténuation** n'est pas un simple embellissement cosmétique : en MPI, elle fait passer la proportion d'examens jugés « certainement normaux ou anormaux » de **37 % à 84 %** (p < 0,005), en supprimant les faux défauts de la paroi inférieure (atténuation diaphragmatique) et antérieure (atténuation mammaire) [6]. Le gain porte surtout sur la **spécificité**."
+          }
+        ]
+      },
+      {
+        "title": "A5 - Indications",
+        "text": "La TEMP/TDM s'impose chaque fois que la **localisation anatomique** ou la **correction d'atténuation** conditionne la décision. Les indications sont réparties par domaine ; pour chacune, le rationale renvoie au §A4 (la TDM lève l'ambiguïté du signal fonctionnel).\n\n**▸ Ostéo-articulaire & oncologie osseuse.** L'ajout de la TEMP/TDM à la scintigraphie planaire améliore nettement la performance de détection des métastases (⁹⁹ᵐTc-diphosphonates) : méta-analyse **Se 92 % (IC95 % 89–95), Sp 95 % (94–96), AUC 0,984**, contre planaire **Se 74 % / Sp 80 %** [10]. Au rachis, elle porte la sensibilité de **6,1 % à 78,8 %** et l'exactitude de **58,9 % à 91,1 %** [8,9]. La TEMP/TDM **quantitative** (SUVmax, métastases prostatiques) atteint **Se 87 %, Sp 92 %, VPP 99 %** [11].\n\n**▸ Cardiologie — perfusion myocardique (MPI).** La CA-TDM corrige les artéfacts d'atténuation diaphragmatique et mammaire et augmente la **spécificité** : Se jusqu'à **100 %**, Sp **83 %** avec CTAC ; la CA fait passer la certitude diagnostique de **37 % à 84 %** [6]. Recommandations pivots : **2022 ASNC/AAPM/SCCT/SNMMI** [5,47], **EANM MPI SPECT/CT 2015** [4], **SNMMI/ASNC/SCCT SPECT-CT 1.0** [46].\n\n**▸ Neurologie — imagerie du DAT.** Le ¹²³I-ioflupane SPECT distingue un déficit dopaminergique présynaptique (Parkinson, AMS, PSP) d'un tremblement essentiel : **Se ~92 %, Sp ~84 %** (lecteurs sur site) ; paramètre quantitatif **SBR** (specific binding ratio) ; agrément FDA **janvier 2011** [13,54,55].\n\n**▸ Pneumologie — embolie pulmonaire (V/P SPECT ± TDM).** **Se 96–99 %, Sp 96–98 %, VPN 97–99 %** (>5 000 cas) ; taux non diagnostique **1–4 %** (vs 4–10 % pour l'angioscanner) ; critère d'EP = mismatch V/P ≥ 1 segment ou 2 sous-segments ; utilisable même en BPCO, insuffisance cardiaque ou pneumonie [12].\n\n**▸ Endocrinologie — parathyroïdes.** La TEMP/TDM ⁹⁹ᵐTc-MIBI (double phase) surpasse le planaire et l'échographie pour la localisation pré-opératoire : **Se 97 %, Sp 100 %** ; pour les glandes **ectopiques**, Se TEMP/TDM précoce **90 %** vs 50 % en planaire double phase [14,15,42,43].\n\n**▸ Ganglion sentinelle.** Taux de détection **98,3 %** (SPECT/CT) vs **95,5 %** (lymphoscintigraphie planaire) — méta-analyse de 17 études, 1 438 patients (mélanome) [41].\n\n**▸ Oncologie — tumeurs neuroendocrines (TNE).** ⁹⁹ᵐTc-HYNIC-TOC (Tektrotyd) TEMP/TDM ≈ ¹¹¹In-pentétréotide, avec détection de davantage de lésions ; détecte l'insulinome dans **54 %** des cas négatifs en 1ʳᵉ intention [29,30].",
+        "stats": [
+          {
+            "value": "92 % / 95 %",
+            "label": "Se / Sp — métastases osseuses (TEMP/TDM)"
+          },
+          {
+            "value": "96–99 %",
+            "label": "Se — EP en V/P SPECT"
+          },
+          {
+            "value": "98,3 %",
+            "label": "Détection ganglion sentinelle (SPECT/CT)"
+          },
+          {
+            "value": "97 % / 100 %",
+            "label": "Se / Sp — parathyroïdes (TEMP/TDM)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "La logique commune à toutes ces indications est le passage d'un examen **sensible mais peu spécifique** (planaire) à un examen **spécifique et localisant** (hybride). La méta-analyse osseuse le résume : l'AUC passe de **0,774** (planaire) à **0,944** (planaire + TEMP) [10]. Chaque fois qu'un foyer fonctionnel doit être rattaché à une structure pour décider (chirurgie parathyroïdienne, distinction dégénératif/métastase, artéfact cardiaque), la TDM couplée est indiquée."
+          }
+        ],
+        "figureKey": "VQ_LUNGS",
+        "figureAlt": "Cartographie ventilation/perfusion pulmonaire en TEMP : un défaut de perfusion segmentaire sans défaut de ventilation en regard (mismatch) signe l'embolie pulmonaire.",
+        "figureCaption": "Fig. 4 — Exemple d'indication : le mismatch ventilation/perfusion (≥ 1 segment) en V/P SPECT diagnostique l'embolie pulmonaire (Se 96–99 %) [12]."
+      },
+      {
+        "title": "A6 - Contre-indications & précautions",
+        "text": "Il n'existe **aucune contre-indication absolue** à une TEMP/TDM diagnostique. Les points de vigilance sont **relatifs** et se répartissent entre la composante fonctionnelle (radiopharmaceutique), la composante TDM (irradiation, contraste) et les **artéfacts de correction d'atténuation** propres à la modalité hybride.\n\n| Situation | Type | Conduite |\n|---|---|---|\n| **Grossesse** | Relative | Justification/optimisation ; reporter si possible ; jamais en routine [7] |\n| **Allaitement** | Relative | Interruption/reprise selon le traceur (p. ex. suspension conseillée pour le ⁹⁹ᵐTc-pertechnétate libre) [7] |\n| **Produit de contraste iodé** | À évaluer | Réservé à la TDM **diagnostique** (précautions rénales/allergiques) ; pour la seule CA, une **TDM basse dose sans contraste** suffit et est recommandée [23] |\n| **⁹⁹ᵐTc-MAA** | Précaution | HTAP sévère / shunt droite-gauche → **réduire le nombre de particules** injectées [12] |\n| **¹²³I-ioflupane** | Préparation | **Blocage thyroïdien** (iodure ~120 mg PO, 1–4 h avant) obligatoire pour tout traceur iodé [36] |\n\n**Composante TDM.** La modalité ajoute une irradiation : la **TDM basse dose de correction d'atténuation** délivre une dose efficace modeste, de l'ordre de **~0,6 mSv** (tête-cou) à **~2,6 mSv** (corps entier) [24]. La dose totale d'un examen TEMP/TDM = dose du radiopharmaceutique + dose TDM ; la contribution de la TDM représente **~14 % (2–37 %)** de la dose totale selon l'application [38]. Une TDM basse dose dédiée à la CA doit rester la règle, la TDM diagnostique étant réservée aux indications spécifiques (principe ALARA, Directive 2013/59/Euratom) [1,25].\n\n**Artéfacts propres à la CA-TDM** — piège majeur de la modalité (voir précaution ci-dessous).",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — mésalignement TEMP/TDM et correction d'atténuation",
+            "text": "Un **mismatch de repositionnement ou respiratoire** entre l'acquisition d'émission (plusieurs minutes) et l'acquisition de transmission (quelques secondes) crée des **faux défauts de correction d'atténuation** — source majeure de faux défauts en MPI. La conduite : **vérifier systématiquement la fusion** sur les trois plans avant d'interpréter, et **re-recaler** si nécessaire [2,48]. La **troncature** (champ TDM < champ SPECT chez le patient corpulent) et les **artéfacts métalliques / durcissement de faisceau** dégradent aussi la carte de µ et peuvent générer de faux foyers chauds ou froids."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse & allaitement",
+            "text": "La grossesse et l'allaitement doivent être **systématiquement recherchés** avant l'injection. La justification/optimisation prime (report si possible) ; l'interruption de l'allaitement dépend du traceur (voir tableau). Se référer à la section radioprotection pour les délais précis et les consignes post-examen [7,12]."
+          }
+        ]
+      },
+      {
+        "title": "B7 - Radiopharmaceutiques & mécanisme(s) de fixation",
+        "text": "La TEMP/TDM (tomographie d'émission monophotonique couplée à la tomodensitométrie ; angl. *SPECT/CT*) n'est pas liée à un traceur unique : elle image la biodistribution de tout radiopharmaceutique **émetteur gamma monophotonique**. Le volet « produit » se décline donc par indication, mais tous partagent le même **radionucléide vecteur de référence, le technétium-99m (⁹⁹ᵐTc)**.\n\n**(a) Le radionucléide dominant — ⁹⁹ᵐTc.** Émetteur gamma quasi **monoénergétique de 140 keV** (140,5 keV), de **période physique 6,0 h**, il équipe ~**80 %** des actes de médecine nucléaire mondiaux [19][32]. Son énergie est idéale pour le cristal NaI(Tl) des gamma-caméras et la collimation plomb basse énergie. Les traceurs iodés (¹²³I : ~159 keV, T½ 13,2 h) et l'¹¹¹In (171/245 keV, T½ 2,8 j) complètent la palette pour les applications neurologiques et neuroendocrines [13][29].\n\n**(b) Mécanismes moléculaires — un vecteur par processus imagé.** La cible biologique est indépendante de l'appareil ; la TDM n'ajoute que la localisation et la correction d'atténuation (cf. §B9, §B10). Les principaux couples traceur → cible :\n\n| Traceur | Cible biologique | Mécanisme de fixation | Application TEMP/TDM |\n|---|---|---|---|\n| ⁹⁹ᵐTc-diphosphonates (MDP/HDP/DPD) | Hydroxyapatite osseuse | Adsorption sur les zones d'**activité ostéoblastique** accrue [7] | Os : métastases, pathologie rachidienne |\n| ⁹⁹ᵐTc-sestamibi (MIBI) / tétrofosmine | Mitochondries | Cation lipophile capté selon le flux, **séquestré dans les mitochondries** (>90 % myocarde) [17] | Perfusion myocardique ; adénome parathyroïdien |\n| ¹²³I-ioflupane (DaTSCAN) | Transporteur présynaptique de la dopamine (DAT) | Analogue de la cocaïne, liaison au DAT striatal [13] | Syndromes parkinsoniens |\n| ⁹⁹ᵐTc-MAA | Capillaires précapillaires pulmonaires | Blocage mécanique de macroagrégats (~400 000 particules) → perfusion [12] | Embolie pulmonaire (V/P) |\n| ⁹⁹ᵐTc-Technegas | Alvéoles | Nanoparticules de carbone inhalées → ventilation [12] | Embolie pulmonaire (V/P) |\n| ⁹⁹ᵐTc-HYNIC-TOC / ¹¹¹In-pentétréotide | Récepteurs de la somatostatine (SSTR2) | Analogues de la somatostatine [29] | Tumeurs neuroendocrines |\n\n**(c) Production & marquage du ⁹⁹ᵐTc.** Obtenu par **générateur ⁹⁹Mo/⁹⁹ᵐTc** (⁹⁹Mo T½ ≈ 66 h, produit en réacteur par fission de l'²³⁵U), le ⁹⁹ᵐTc est **élué au NaCl 0,9 %** sous forme de **pertechnétate (⁹⁹ᵐTcO₄⁻)** [19][32]. Le marquage est extemporané : reconstitution d'une **trousse froide lyophilisée** avec l'éluat, réduction du Tc(VII) par le **chlorure stanneux (Sn²⁺)**, puis complexation par le ligand (MDP, MIBI, MAA…) [7].\n\n**(d) Contrôle qualité du traceur.** Le **contrôle qualité (CQ)** est obligatoire avant administration :\n\n| Test | Méthode | Seuil usuel |\n|---|---|---|\n| Pureté radiochimique | Chromatographie (ITLC) | ≥ 90–95 % selon monographie [7] |\n| Pureté radionucléidique | Spectrométrie (percée ⁹⁹Mo) | Limite pharmacopée |\n| pH, aspect | Bandelette / visuel | Conforme monographie |\n| Stérilité / apyrogénicité | Filtration aseptique | Requis [7] |\n| Activité | Activimètre | Activité prescrite ± tolérance |\n\n**(e) Activités adulte (repères).** Scintigraphie osseuse ⁹⁹ᵐTc-MDP/HDP : **555–740 MBq** [7] (jusqu'à 500–1 110 MBq selon les référentiels ; **11–13 MBq/kg** chez l'obèse) [44][45] ; parathyroïdes ⁹⁹ᵐTc-MIBI : **740–925 MBq** [43] ; ¹²³I-ioflupane : **111–185 MBq** (ne pas dépasser 185, ni descendre sous 110) [36] ; ⁹⁹ᵐTc-MAA (perfusion) : **120–160 MBq**, Technegas (ventilation) : **25–30 MBq** [12].\n\n**(f) Activités pédiatriques — carte de dose EANM (v5.7.2016).** L'activité administrée = **activité de base × multiple de classe** selon le poids, sans jamais descendre sous l'activité minimale recommandée [21][22] :\n\n| Radiopharmaceutique | Classe | Activité de base (MBq) | Activité min. (MBq) |\n|---|---|---|---|\n| ⁹⁹ᵐTc-MDP (os) | B | 35,0 | 40 |\n| ⁹⁹ᵐTc-MAG3 | A | 11,9 | 15 |\n| ⁹⁹ᵐTc-HMPAO/ECD (cerveau) | B | 51,8 | 100 |\n| ⁹⁹ᵐTc-MIBI/tétrofosmine (stress, 1 j) | B | 84,0 | 80 |\n| ⁹⁹ᵐTc-MAA (poumon) | B | 5,6 | 10 |\n| ⁹⁹ᵐTc-pertechnétate (thyroïde) | B | 5,6 | 10 |\n| ¹²³I-ioflupane (cerveau) | B | 13,0 | 18 |\n\nMultiples de classe (ex. à 10 kg) : A = 2,18 · B = 3,14 · C = 4,67 (poids 3 kg = ×1) [21].",
+        "stats": [
+          {
+            "value": "140 keV",
+            "label": "γ du ⁹⁹ᵐTc (émission)"
+          },
+          {
+            "value": "6,0 h",
+            "label": "Période physique ⁹⁹ᵐTc"
+          },
+          {
+            "value": "≈ 80 %",
+            "label": "Actes MN utilisant le ⁹⁹ᵐTc"
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Schéma du générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine fixant le ⁹⁹Mo (T½ 66 h), décroissance vers le ⁹⁹ᵐTc (140 keV, T½ 6 h) et élution du pertechnétate au NaCl 0,9 %.",
+        "figureCaption": "Fig. 1 — Générateur ⁹⁹Mo/⁹⁹ᵐTc : source du vecteur de la quasi-totalité des examens TEMP/TDM.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "La cible biologique est **indépendante de l'appareil** : la TEMP/TDM n'ajoute pas de nouveau traceur mais **localise et corrige** le signal du traceur monophotonique. Le choix du couple traceur→cible fixe l'indication (os, cardiaque, DAT, V/P, parathyroïdes, SSTR) ; la TDM apporte l'ancrage anatomique et la correction d'atténuation (cf. §B9, §B10)."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — pureté radiochimique du ⁹⁹ᵐTc",
+            "text": "Une réduction incomplète du Tc(VII) laisse du **pertechnétate libre** (⁹⁹ᵐTcO₄⁻) qui se fixe sur thyroïde, estomac et glandes salivaires et dégrade l'image. Vérifier systématiquement la **pureté radiochimique ≥ 90–95 %** avant injection [7]."
+          }
+        ]
+      },
+      {
+        "title": "B8 - Préparation du patient",
+        "text": "La préparation conditionne la validité de l'examen. Elle comporte un socle commun (identité, vérification grossesse/allaitement, information/consentement) et des **préparations spécifiques par indication**. La composante TDM n'impose pas de préparation supplémentaire lorsqu'elle est réalisée en **basse dose sans contraste** pour la seule correction d'atténuation ; un produit de contraste iodé n'est requis que pour une TDM diagnostique co-enregistrée (précautions rénales/allergiques) [23].\n\n**Scintigraphie osseuse.** Hydratation abondante et **mictions fréquentes** (réduction de l'irradiation vésicale et du bruit de fond), retrait des objets métalliques, délai d'incorporation du traceur de **~2–4 h** post-injection avant acquisition [7]. Pas de jeûne.\n\n**Perfusion myocardique (MPI).** Jeûne partiel ; **arrêt de la caféine et des xanthines ~12–24 h** avant une épreuve de stress pharmacologique (l'adénosine/dipyridamole étant antagonisés par la caféine) ; gestion des bêta-bloquants selon le protocole de stress ; acquisition selon un schéma **1 jour ou 2 jours** [4].\n\n**DaTSCAN (¹²³I-ioflupane).** **Blocage thyroïdien obligatoire** de l'iode libre : iodure de potassium (~120 mg PO, 1–4 h avant) ou perchlorate ; **arrêt des médicaments interférant avec le DAT** (certains antidépresseurs, sympathomimétiques, cocaïne) ; acquisition TEMP **3–6 h** après injection [36].\n\n**Parathyroïdes.** Pas de préparation spécifique ; protocole **double phase** (image précoce ~10–15 min et tardive ~1,5–2 h) exploitant le wash-out lent du MIBI dans les cellules riches en mitochondries des adénomes [14][17].",
+        "steps": [
+          {
+            "title": "Avant J",
+            "text": "Vérifier l'indication et la question clinique ; rechercher grossesse/allaitement ; planifier l'arrêt des interférents (caféine/xanthines pour le MPI, médicaments DAT pour le DaTSCAN) ; programmer le blocage thyroïdien si traceur iodé (¹²³I) [4][36]."
+          },
+          {
+            "title": "Le jour J — injection",
+            "text": "Confirmer le blocage thyroïdien (¹²³I) ; injecter le radiopharmaceutique à la voie et l'activité prescrites (cf. §B7) ; débuter l'hydratation (osseuse) ; retirer les objets métalliques (artefacts TDM) [7]."
+          },
+          {
+            "title": "Le jour J — délai & acquisition",
+            "text": "Respecter le délai d'incorporation propre au traceur : os ~2–4 h ; DaTSCAN 3–6 h ; MPI selon protocole 1 j/2 j ; parathyroïdes précoce ~10–15 min et tardive ~1,5–2 h. Vidange vésicale avant l'acquisition pelvienne [7][14][36]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "À vérifier impérativement",
+            "text": "Pour tout traceur à l'**iode-123**, le **blocage thyroïdien** (KI ~120 mg PO, 1–4 h avant) est **obligatoire** : sans lui, l'iode libre se fixe sur la thyroïde, irradie inutilement et dégrade l'image cérébrale [36]. Pour le MPI, l'oubli de l'**arrêt de la caféine** peut rendre non contributif un stress à l'adénosine/dipyridamole."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La TDM de correction d'atténuation est une **TDM basse dose sans contraste** : elle n'impose ni jeûne ni précaution rénale spécifique. Réserver le contraste iodé — et ses précautions — aux seules acquisitions **TDM diagnostiques** co-enregistrées [23]."
+          }
+        ]
+      },
+      {
+        "title": "B9 - Instrument, contrôle qualité & protocole d'acquisition",
+        "text": "**(a) CQ de l'instrument — prérequis.** Une TEMP/TDM ne vaut que si la machine est qualifiée. Référentiels : **NEMA NU-1 (2012/2018)** et **IAEA Human Health Series No. 6** [27][28][57]. Le CQ combine les tests de la gamma-caméra, les tests tomographiques et ceux de la TDM :\n\n| Composante | Test | Fréquence / seuil |\n|---|---|---|\n| γ-caméra | Pic en énergie (*peaking*), bruit de fond, sensibilité | Quotidien [28] |\n| γ-caméra | **Uniformité** extrinsèque (avec collimateur) | Quotidien ; correction si écart > **3–4 %** [28] |\n| TEMP | **Centre de rotation (COR)**, alignement gantry/collimateur, stabilité rotationnelle des têtes | Périodique [28] |\n| TEMP | Résolution spatiale tomographique — **fantôme de Jaszczak** (Ø ~22 cm × 19 cm ; sphères froides 9,5–31,8 mm ; barreaux 3,2–11,1 mm) | Périodique [27] |\n| TDM | *Warm-up*, calibration, nombres CT (UH) | Quotidien / selon constructeur [28] |\n\n**(b) Choix du collimateur & fenêtre d'énergie.** Pour le ⁹⁹ᵐTc, collimateur parallèle **basse énergie haute résolution (LEHR)** (trous hexagonaux ~1,11 mm), fenêtre spectrométrique sur le **photopic 140 keV ± 10 % (soit 20 %)** [60]. Pour l'¹²³I : photopic **159 keV, fenêtre ±10 %** [36]. Les détecteurs **CZT (cadmium-zinc-tellurure)** — détection directe — offrent une **résolution en énergie ×2**, une **sensibilité ×4 à ×7** vs Anger+LEHR, et autorisent l'acquisition **double-isotope simultanée** et la TEMP dynamique [49][50].\n\n**(c) Paramètres d'acquisition génériques.** Matrice couramment **128 × 128**, **120–128 projections** en rotation (360°, ou 180° en cardiologie), **contournage automatique** (*auto-contour*) pour minimiser la distance détecteur-patient [1][33]. Chaque paramètre est un compromis : plus de projections/temps par pas → moins de bruit mais examen plus long.\n\n| Application | Activité (cf. §B7) | Délai post-injection | Acquisition |\n|---|---|---|---|\n| Os (⁹⁹ᵐTc-MDP) | 555–740 MBq [7] | 2–4 h | Planaire corps entier + TEMP/TDM de la région d'intérêt |\n| Parathyroïdes (⁹⁹ᵐTc-MIBI) | 740–925 MBq [43] | Précoce ~30–60 min | Planaires biphasiques + TEMP/TDM [14] |\n| DaTSCAN (¹²³I) | 111–185 MBq [36] | 3–6 h | TEMP cérébrale [36] |\n| MPI (⁹⁹ᵐTc-MIBI/tétrofosmine) | selon protocole 1 j/2 j | selon protocole | TEMP synchronisée (*gating*) ± CTAC [4] |\n\n**(d) TDM associée.** Deux régimes : **basse dose** (correction d'atténuation + repérage anatomique, sans contraste) ou **diagnostique** (paramètres et contraste dédiés). La TDM basse dose de correction délivre une dose efficace modeste, de **~0,6 mSv (tête/cou) à ~2,6 mSv (corps entier)** [24].\n\n**(e) Corrections appliquées à l'acquisition.** La correction d'atténuation basée TDM (CTAC) convertit les **unités Hounsfield (UH)** en **coefficients d'atténuation linéaire (µ)** à l'énergie du radionucléide par une **relation bilinéaire** (segment tissus mous / segment os) [2][23]. La correction de diffusé utilise des fenêtres à **double (DEW)** ou **triple fenêtre d'énergie (TEW)** — pour le ⁹⁹ᵐTc en os : photopic **140 keV ± 7,5 %**, fenêtre Compton ~**120 keV ± 7,5 %** [23]. Un **gating** ECG (MPI) fige le mouvement cardiaque. Le lien CQ ↔ quantification est direct : un SUV n'a de valeur que si l'étalonnage est à jour (cf. §B10) [1].",
+        "figureKey": "GAMMA_CAMERA",
+        "figureAlt": "Schéma d'une gamma-caméra couplée à un scanner : collimateur LEHR, cristal NaI(Tl), photomultiplicateurs, rotation des têtes autour du patient et statif TDM pour la correction d'atténuation.",
+        "figureCaption": "Fig. 2 — Système hybride TEMP/TDM : gamma-caméra en rotation (émission) + TDM (transmission → localisation et carte d'atténuation).",
+        "stats": [
+          {
+            "value": "128 × 128",
+            "label": "Matrice usuelle TEMP"
+          },
+          {
+            "value": "140 keV ± 10 %",
+            "label": "Fenêtre spectrométrique ⁹⁹ᵐTc"
+          },
+          {
+            "value": "×4 à ×7",
+            "label": "Gain de sensibilité CZT vs Anger"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — troncature & durcissement de faisceau",
+            "text": "Chez le patient corpulent, un **champ TDM plus étroit que le champ TEMP** (troncature) exclut une partie du thorax et dégrade la CTAC. De même, prothèses métalliques et contraste dense provoquent un **durcissement de faisceau** distordant les UH → **faux foyers chauds/froids** après correction. Toujours vérifier la carte d'atténuation."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — collimateur et haute énergie de l'¹²³I",
+            "text": "L'¹²³I émet aussi des **photons de haute énergie (~529 keV)** responsables de pénétration septale et d'un artefact en étoile avec un collimateur basse énergie. Pour les traceurs iodés, préférer un collimateur adapté ; le CQ (*peaking*, uniformité, COR) doit être vérifié avant toute acquisition tomographique [28]."
+          }
+        ]
+      },
+      {
+        "title": "B10 - Traitement, reconstruction & quantification",
+        "text": "**(a) Reconstruction — de la rétroprojection à l'itératif.** La TEMP moderne abandonne la rétroprojection filtrée au profit de méthodes **itératives OSEM** (*ordered-subset expectation maximization*), typiquement de l'ordre de **5 itérations × 15–16 sous-ensembles**, qui modélisent le processus d'acquisition et intègrent les corrections [3][1]. Le nombre de mises à jour (itérations × sous-ensembles) est optimisé par mesures sur fantôme pour équilibrer **biais négatif** (sous-convergence) et **bruit** (biais positif) [1].\n\n**(b) Les corrections indispensables à une image quantitative.** Trois corrections se cumulent :\n- **Atténuation (CTAC)** : conversion des UH TDM en carte de µ à l'énergie du radionucléide (140 keV pour le ⁹⁹ᵐTc) [1][2] ;\n- **Diffusé** : soustraction par **triple fenêtre (TEW)** si des émissions dépassent le photopic, sinon double fenêtre [1] ;\n- **Récupération de résolution** (*resolution recovery*) : modélisation de la réponse détecteur-collimateur, qui améliore résolution spatiale et quantification [3].\nS'y ajoutent la **correction de décroissance** et, pour la thérapie, la correction de **temps mort** projection par projection [1].\n\n**(c) Effet des paramètres.** Plus d'itérations → meilleure résolution mais bruit accru ; un **filtre gaussien (~10 mm)** peut améliorer la cohérence des petits objets ; les **coefficients de recouvrement** (*recovery coefficients*), mesurés sur fantômes (NEMA IEC IQ / Jaszczak), corrigent l'**effet de volume partiel** [1].\n\n**(d) Quantification absolue — la TEMP devient chiffrable.** Après CTAC + correction de diffusé + récupération de résolution + **calibration par fantôme cylindrique d'activité connue**, l'image est exprimée en **concentration d'activité (Bq/mL)** puis en **SUV** comme en TEP [1][26]. La calibration croisée activimètre ↔ caméra est **au moins annuelle** (ou après changement matériel/logiciel), avec une exactitude visée de **5–10 % en diagnostic, 5 % en thérapie** [1].\n\n**(e) Métriques quantitatives usuelles.**\n\n| Métrique | Définition | Usage clinique |\n|---|---|---|\n| **SUVmax / SUVmean / SUVpeak** | Fixation normalisée à l'activité injectée et au poids (Bq/mL → SUV) | Caractérisation, suivi, seuils diagnostiques [1][26] |\n| **Coefficient de recouvrement** | Ratio activité mesurée/vraie selon la taille de la lésion | Correction de l'effet de volume partiel [1] |\n| **SBR** (*specific binding ratio*) | Rapport de fixation spécifique striatum/fond | DaTSCAN : quantification du déficit dopaminergique [54] |\n| **Score 17 segments (SSS/SRS/SDS)** | Cotation 0–4 par segment, max 68 | MPI : étendue et sévérité de l'ischémie/nécrose [51][52] |\n\n**(f) Exemple — quantification en scintigraphie osseuse et parathyroïdes.** La TEMP/TDM osseuse quantitative (métastases prostatiques) atteint **Se 87 %, Sp 92 %, VPP 99 %** au seuil de SUVmax [11] ; en parathyroïde, le SUVmax d'un adénome est de l'ordre de **4,86 (précoce) / 2,58 (tardive)** [16].\n\n**(g) Fusion & bases de données normales.** Les données TEMP et TDM sont fusionnées (recalage) et comparées à des **bases de données normales** (notamment en MPI). Le compte rendu quantitatif doit préciser la méthode de reconstruction, les corrections appliquées, le facteur de calibration et les incertitudes des coefficients de recouvrement [1]. Les pièges de quantification (défaut de recalage, troncature, artefact métallique) sont détaillés au §C14.",
+        "figureKey": "BULLSEYE_17",
+        "figureAlt": "Cartographie polaire en œil-de-bœuf du myocarde en 17 segments (modèle AHA), support de la cotation SSS/SRS/SDS de la perfusion en TEMP/TDM cardiaque.",
+        "figureCaption": "Fig. 3 — Modèle 17 segments (œil-de-bœuf) : support de la quantification semi-quantitative en MPI (SSS/SRS/SDS, max 68).",
+        "stats": [
+          {
+            "value": "OSEM 5×16",
+            "label": "Reconstruction itérative typique"
+          },
+          {
+            "value": "Bq/mL → SUV",
+            "label": "Quantification absolue TEMP/TDM"
+          },
+          {
+            "value": "± 5–10 %",
+            "label": "Exactitude visée (diagnostic)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — SUV en TEMP, désormais possible",
+            "text": "Longtemps réservée à la TEP, la **quantification en SUV** est aujourd'hui réalisable en TEMP/TDM dès lors que sont réunies CTAC, correction de diffusé, récupération de résolution et **calibration par fantôme** [1][26]. Elle ouvre au **suivi reproductible** et à la **dosimétrie** en théranostique."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — un chiffre n'a de valeur qu'étalonné",
+            "text": "Un SUV de TEMP/TDM n'est fiable que si l'**étalonnage croisé activimètre ↔ caméra** est à jour (au moins annuel) et si les corrections sont correctement appliquées [1]. Un défaut de recalage TEMP↔TDM ou une troncature du champ TDM propage une erreur directe dans la valeur quantifiée (cf. §C14)."
+          }
+        ]
+      },
+      {
+        "title": "C11 - Aspect normal & variantes physiologiques",
+        "text": "Reconnaître la **biodistribution normale** — et surtout la **carte d'atténuation TDM** qui lui est fusionnée — est le préalable à toute lecture d'une TEMP/TDM (tomographie d'émission monophotonique couplée à la tomodensitométrie ; angl. *SPECT/CT*). Contrairement à un examen mono-organe, la TEMP/TDM couvre un large éventail d'applications ; l'aspect « normal » se décline donc par traceur, mais deux invariants structurent la lecture : **(1)** l'image d'émission reflète la biodistribution physiologique du radiopharmaceutique, **(2)** l'image de transmission (TDM) fournit le substrat anatomique de recalage et la correction d'atténuation (CA) [2,40].\n\n**Biodistribution physiologique par grande application**\n\n| Traceur / examen | Fixation physiologique attendue | Substrat TDM de repérage |\n|---|---|---|\n| **⁹⁹ᵐTc-diphosphonates** (os, MDP/HDP/DPD) | Squelette symétrique, cartilages de croissance chez l'enfant, jonctions costo-chondrales, activité rénale et vésicale (élimination) | Corticales, articulaires postérieures, corps vertébraux, côtes [7,8] |\n| **⁹⁹ᵐTc-MIBI/tétrofosmine** (perfusion myocardique, MPI) | Myocarde ventriculaire gauche homogène, activité hépatique/digestive et vésiculaire sous-diaphragmatique | Paroi thoracique, coupole diaphragmatique, sein (atténuation antérieure) [4,6] |\n| **⁹⁹ᵐTc-MIBI** (parathyroïdes) | Thyroïde (phase précoce), myocarde, glandes salivaires, foie | Loges thyroïdiennes et médiastin supérieur [14,43] |\n| **¹²³I-ioflupane** (DaTSCAN) | Striatum symétrique en « virgule » (noyaux caudé + putamen), fond cortical faible | Striatum, ventricules latéraux [13,36] |\n| **⁹⁹ᵐTc-MAA / Technegas** (V/P) | Distribution perfusionnelle/ventilatoire homogène des deux champs, gradient gravitationnel | Lobes, scissures, plèvre [12] |\n\n**Variantes et pièges physiologiques à connaître.** En scintigraphie osseuse, l'activité **rénale et vésicale** et les **foyers dégénératifs** (arthrose interapophysaire, enthésopathies) sont physiologiques ou bénins et constituent la première source d'équivoque que la TEMP/TDM lève [8,9]. En MPI, l'activité **digestive et hépatique** adjacente à la paroi inférieure peut simuler ou masquer un défaut ; le **diaphragme** (paroi inférieure) et le **sein** (paroi antérieure) sont les deux sources d'atténuation physiologique corrigées par la TDM [4,6]. En DaTSCAN, un striatum symétrique en virgule est la référence dont s'écarte le déficit dopaminergique [13].\n\nLa **médullosurrénale** et la **graisse brune** ne concernent pas ces traceurs mais rappellent le principe général : toute fixation doit être confrontée au substrat TDM avant d'être qualifiée d'anormale.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "La carte d'atténuation issue de la TDM (conversion des **unités Hounsfield** en coefficient d'atténuation linéaire µ à l'énergie du radionucléide, **140 keV** pour le ⁹⁹ᵐTc, par relation **bilinéaire** tissus mous/os) fait partie intégrante de l'« aspect normal » : une carte µ correcte est la condition d'une image d'émission fidèle. Une TDM **basse dose sans contraste** suffit pour la seule CA et le repérage [1,2,23]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — image corrigée vs non corrigée",
+            "text": "Toujours disposer des reconstructions **avec et sans correction d'atténuation**. En MPI, la comparaison des deux jeux d'images est la méthode de référence pour distinguer un vrai défaut d'un artéfact d'atténuation avant de conclure (cf. C12, C14) [4,48]."
+          }
+        ],
+        "figureKey": "MPI_PROTOCOL",
+        "figureAlt": "Protocole de perfusion myocardique en TEMP/TDM : acquisition d'émission au 99mTc-MIBI/tétrofosmine et TDM basse dose de correction d'atténuation, avec repères de la paroi inférieure (diaphragme) et antérieure (sein)."
+      },
+      {
+        "title": "C12 - Sémiologie & interprétation",
+        "text": "L'interprétation d'une TEMP/TDM suit une **méthode systématique** commune, déclinée ensuite par application. L'apport constant du couplage TDM est double : **localisation anatomique** exacte du foyer fonctionnel et **correction d'atténuation (CA)**, qui ensemble améliorent nettement la **spécificité** et réduisent les cas équivoques par rapport au planaire ou à la TEMP seule [40].\n\n**Méthode de lecture pas-à-pas**\n1. **Contrôle technique** : qualité de l'acquisition, absence de mouvement, bon **recalage émission/transmission** (cf. C14), disponibilité des reconstructions avec et sans CA.\n2. **Biodistribution physiologique** : parcourir l'aspect normal du traceur (cf. C11).\n3. **Repérage des anomalies** : fixation focale, asymétrique ou extra-physiologique sur l'image d'émission.\n4. **Corrélation TDM** : rattacher chaque foyer à une structure anatomique et caractériser le substrat (dégénératif vs lytique/blastique, ectopie, artéfact).\n5. **Cotation** si indiquée (scores ci-dessous ; quantification en Bq/mL ou SUV si TEMP/TDM quantitative — cf. B10, D15).\n6. **Conclusion** en **positif / négatif / équivoque**, répondant à la question clinique.\n\n**Patterns pathologiques par domaine**\n\n*Ostéo-articulaire / oncologie osseuse.* Un foyer d'**hyperfixation** rattaché par la TDM à une **ostéolyse ou une ostéocondensation** oriente vers une métastase, alors qu'une fixation sur des **articulaires postérieures arthrosiques** est bénigne. Au rachis, la TEMP/TDM fait passer la sensibilité de **6,1 % (planaire) à 78,8 %**, réduit les équivoques de **40 % (TEMP seule) à 5,6 %** et porte l'exactitude à **91,1 % vs 58,9 %** [8,9]. Sur l'ensemble du squelette, la performance de détection des métastases atteint **Se 92 % (IC95 % 89–95), Sp 95 % (94–96), AUC 0,984**, l'aire sous la courbe passant de **0,774 (planaire)** à **0,944 (planaire + TEMP)** [10].\n\n*Perfusion myocardique (MPI).* Un **défaut de captation** doit être analysé sur les images corrigées ET non corrigées : un défaut **inférieur** corrigé par la CA-TDM signe un artéfact diaphragmatique, un défaut **antérieur** un artéfact mammaire. La CA fait passer la proportion d'examens jugés « certainement normaux/anormaux » de **37 % à 84 % (p < 0,005)**, avec Se jusqu'à **100 %** et Sp **83 %** sous CA-TDM [6]. L'étendue et la sévérité se cotent sur le **modèle à 17 segments** (cf. encadré score).\n\n*Neurologie (DaTSCAN).* La perte du putamen (virgule qui devient « point ») traduit un déficit dopaminergique présynaptique (Parkinson, AMS, PSP) à distinguer d'un tremblement essentiel ; **Se ~92 %, Sp ~84 %**, quantifiable par le **specific binding ratio (SBR)** [54,55].\n\n*Parathyroïdes.* Un foyer de rétention persistante rattaché par la TDM à une loge thyroïdienne ou à une **ectopie médiastinale** localise l'adénome ; **Se TEMP/TDM 97 %, Sp 100 %** (localisation du tissu hyperfonctionnel), et **Se 90 % vs 50 %** en planaire pour les glandes ectopiques [15,42].\n\n*Pneumologie (V/P SPECT).* Le critère d'embolie pulmonaire est un **mismatch ventilation/perfusion ≥ 1 segment ou 2 sous-segments** ; **Se 96–99 %, Sp 96–98 %**, taux non diagnostique **1–4 %** [12].",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Score — Perfusion myocardique (17 segments)",
+            "text": "Chaque segment est coté **0 (normal) à 4 (absence de captation)**, somme maximale **SSS/SRS = 68**. **SSS** (Summed Stress Score) : <4 normal, **4–8** légèrement anormal, **9–13** modérément anormal, **≥13** sévère/étendu. **SDS** (SSS−SRS, ischémie réversible) : 0–1 pas d'ischémie, 2–4 légère, 5–6 modérée, **≥7** sévère. Seuil pronostique : **>3** (≈5 % du myocarde anormal) [51,52,53]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — recalage avant tout",
+            "text": "En MPI comme en TEMP/TDM quantitative, un défaut « nouveau » ou un SUV aberrant doit d'abord faire vérifier le **recalage émission/TDM** : un décalage de quelques millimètres appose la carte µ sur le mauvais tissu et fabrique un faux défaut. Le recalage visuel puis, si besoin, la **re-registration** manuelle sont l'étape à faire avant toute cotation [48]."
+          }
+        ],
+        "figureKey": "BULLSEYE_17",
+        "figureAlt": "Représentation en cible (bullseye) du myocarde ventriculaire gauche en 17 segments pour la cotation SSS/SRS/SDS de la perfusion myocardique en TEMP/TDM, avec échelle de score 0 à 4 par segment."
+      },
+      {
+        "title": "C13 - Compte rendu structuré",
+        "text": "Le compte rendu (CR) d'une TEMP/TDM doit être **standardisé et actionnable**, tracer explicitement la **composante hybride** (traceur + TDM), documenter les **corrections appliquées** et, pour les protocoles quantitatifs, rapporter les **valeurs chiffrées** avec leur méthode.\n\n**Trame recommandée**\n1. **Administratif** : identité, indication, question clinique, antériorités.\n2. **Technique** : radiopharmaceutique et **activité administrée** (ex. ⁹⁹ᵐTc-MDP **555–740 MBq** en scintigraphie osseuse [7] ; ¹²³I-ioflupane **111–185 MBq** [13,36]), voie, délai injection→acquisition, modalité (planaire, TEMP, **TEMP/TDM**), collimateur, matrice (**128×128**) et nombre de projections (**120–128**) [1,33], **corrections** appliquées (**correction d'atténuation TDM**, correction de diffusion **double/triple fenêtre — TEW**, récupération de résolution) [1], type de TDM (**basse dose de CA** vs diagnostique) [23].\n3. **Résultats** : biodistribution physiologique (conforme/non), description des anomalies (siège, intensité, **corrélation TDM**, caractère uni/multifocal, extension), et pour la **TEMP/TDM quantitative** la concentration d'activité en **Bq/mL** et/ou le **SUVmax/mean/peak** avec le **facteur de calibration** et les coefficients de recouvrement [1,26].\n4. **Cotation** : score adapté à l'indication (SSS/SRS/SDS en MPI ; description segmentaire osseuse ; SBR en DaTSCAN), reporté chiffré pour permettre le suivi comparatif.\n5. **Conclusion** : réponse explicite et univoque à la question clinique (positif/négatif/équivoque), avec recommandation de séquençage si pertinent.\n\n**Items obligatoires** : traceur + activité, corrections appliquées, nature de la TDM, comparaison avec/sans CA le cas échéant, cotation, et — pour la quantification — méthode de reconstruction, facteur de calibration et incertitudes [1].",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — CR quantitatif",
+            "text": "Dès qu'un chiffre est rapporté (Bq/mL, SUV), le CR doit préciser **comment il a été obtenu** : algorithme itératif (OSEM/OSCGM) et nombre de mises à jour, corrections (CA-TDM, diffusion, résolution, décroissance, temps mort), **facteur de sensibilité** issu de la cross-calibration activimètre↔caméra (recalibration au moins annuelle, exactitude visée **5–10 % en diagnostic, 5 % en thérapie**) [1]. Sans cette traçabilité, un SUV n'est pas comparable d'un examen ou d'un centre à l'autre."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — préciser la contribution TDM",
+            "text": "La dose totale d'une TEMP/TDM = dose du radiopharmaceutique + **dose TDM**. Mentionner la nature de la TDM est utile : une TDM basse dose de CA délivre une dose efficace modeste (**~0,6 mSv tête/cou à ~2,6 mSv corps entier**) [24], à ne pas confondre avec une TDM diagnostique co-enregistrée."
+          }
+        ]
+      },
+      {
+        "title": "C14 - Pièges, artefacts & faux positifs / négatifs",
+        "text": "La force de la TEMP/TDM — la fusion émission/transmission et la correction d'atténuation (CA) — est aussi sa principale source d'artéfacts. Pour chaque piège : identifier la **cause**, reconnaître l'**aspect**, et **corriger** (comparaison avec/sans CA, re-recalage, contrôle de la TDM).\n\n**Tableau récapitulatif faux positifs / faux négatifs**\n\n| Écueil | Mécanisme | Aspect / conséquence | Correction |\n|---|---|---|---|\n| **Défaut de recalage** (misregistration) émission↔TDM | Mouvement/respiration entre l'acquisition d'émission et la TDM | **Faux défaut** en MPI (surtout paroi antérieure/latérale) ; SUV erroné | Recalage visuel puis **re-registration** manuelle [48] |\n| **Troncature** (champ TDM < champ SPECT) | Patient corpulent débordant du champ TDM | Thorax partiellement exclu → **carte µ dégradée**, CA fausse | Vérifier le champ, protocole adapté [12,38] |\n| **Durcissement de faisceau / artéfacts métalliques** | Prothèses, matériel d'ostéosynthèse, contraste | Distorsion des UH → **faux foyers chauds/froids** propagés dans la CA | Contrôle des UH, réduction d'artéfacts métalliques |\n| **Surcorrection d'atténuation** | CA appliquée sur activité extracardiaque/physiologique | Fixation surrénalienne/digestive **majorée**, faux positif | Confronter aux images non corrigées |\n| **Activité physiologique gênante** | Élimination urinaire/vésicale, activité digestive | Masque le pelvis (os) ou la paroi inférieure (MPI) | Vidange vésicale, clichés/repositionnement |\n\n**En pratique par domaine.** En **MPI**, le trépied « défaut inférieur/antérieur + recalage + comparaison avec/sans CA » résout la majorité des équivoques : un défaut qui disparaît après CA-TDM est un artéfact d'atténuation (diaphragme ou sein), un défaut qui persiste est significatif [4,6,48]. En **os**, la corrélation TDM distingue un foyer **dégénératif** (articulaire postérieure, ostéophyte) d'une lésion **lytique/blastique** métastatique, réduisant les équivoques de **40 % à 5,6 %** au rachis [8,9]. En **parathyroïdes**, une thyroïde résiduelle ou un adénome à wash-out rapide peuvent tromper ; la corrélation TDM et la phase précoce/tardive tranchent [14]. En **V/P**, une TDM basse dose associée améliore la spécificité en écartant les mismatch non emboliques [12].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — misregistration en MPI",
+            "text": "Un décalage de recalage entre l'image d'émission et la TDM est la **source majeure de faux défauts** en perfusion myocardique corrigée : la carte µ mal positionnée sur-corrige ou sous-corrige une paroi. Toujours contrôler la superposition sur les trois plans et **re-recaler** avant d'interpréter un défaut ; ne jamais conclure sur les seules images corrigées [48]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — troncature TDM chez le patient corpulent",
+            "text": "Quand la corpulence dépasse le champ de la TDM, une partie du thorax est exclue de la carte d'atténuation : la CA devient erronée et fabrique des défauts artificiels. Vérifier l'inclusion complète du contour patient dans le champ TDM avant reconstruction [38]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — artéfacts métalliques et durcissement de faisceau",
+            "text": "Prothèses, matériel d'ostéosynthèse ou produit de contraste iodé faussent les unités Hounsfield ; l'erreur se **propage dans la carte µ** et crée de faux foyers chauds ou froids. Contrôler les UH et, pour la seule CA, préférer une **TDM basse dose sans contraste** [1,23]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la règle des deux jeux d'images",
+            "text": "La reconstruction **avec et sans correction d'atténuation** doit être systématiquement relue en parallèle. C'est le moyen le plus robuste de séparer un vrai déficit d'un artéfact de CA, en MPI comme dans les autres applications quantitatives (cf. C11, C12) [4,48]."
+          }
+        ],
+        "figureKey": "GAMMA_CAMERA",
+        "figureAlt": "Chaîne de détection de la gamma-caméra couplée au scanner en TEMP/TDM : collimateur, cristal, tête d'émission et statif TDM, illustrant les points d'origine des artéfacts de recalage et de correction d'atténuation."
+      },
+      {
+        "title": "D15 - Dosimétrie",
+        "text": "La dose délivrée par un examen **TEMP/TDM (tomographie d'émission monophotonique couplée à la tomodensitométrie ; angl. SPECT/CT)** est la **somme de deux composantes** : la dose du **radiopharmaceutique** (interne, régie par la biocinétique du traceur) et la dose de la **composante TDM** (externe, régie par les paramètres d'acquisition mA/kV et la longueur explorée). Le coefficient de dose efficace de chaque traceur suit le référentiel **CIPR 128** (compendium des coefficients de dose des radiopharmaceutiques) [34], recalculé avec les facteurs de pondération tissulaire CIPR 103 [35].\n\n**1. Composante radiopharmaceutique — coefficients de dose efficace (mSv/MBq) et organe critique**\n\n| Radiopharmaceutique | Coeff. dose efficace (mSv/MBq) | Organe critique |\n|---|---|---|\n| **⁹⁹ᵐTc-MDP/HDP (os)** | **≈ 5,7 × 10⁻³** [20] | Paroi vésicale / surface osseuse [35] |\n| ⁹⁹ᵐTc-MIBI (sestamibi), effort | **6,55 × 10⁻³** [35] | Paroi vésicale / vésicule biliaire [35] |\n| ⁹⁹ᵐTc-MIBI, repos | **7,03 × 10⁻³** [35] | Vésicule biliaire [35] |\n| ⁹⁹ᵐTc-tétrofosmine, effort | **5,76 × 10⁻³** [35] | Vésicule biliaire [35] |\n| ⁹⁹ᵐTc-MAA (perfusion pulmonaire) | **1,02 × 10⁻²** [35] | Poumons [35] |\n| ⁹⁹ᵐTc-MAG3 | **4,65 × 10⁻³** [35] | Vessie [35] |\n| ⁹⁹ᵐTc-pertechnétate (IV, sans blocage) | **1,59 × 10⁻²** [35] | Paroi colique / thyroïde [35] |\n| ¹²³I-ioflupane (DaTSCAN) | **0,025** [36] | Foie (85,0 µGy/MBq) [36] |\n| ¹²³I-MIBG | **1,32 × 10⁻²** [35] | — |\n\nPour une scintigraphie osseuse au **⁹⁹ᵐTc-MDP**, une activité de **740 MBq (20 mCi)** correspond à une dose efficace d'environ **4,2 mSv** [20][56]. Pour le **DaTSCAN**, **185 MBq** délivrent **≈ 4,63 mSv** (organe critique = foie) [36].\n\n**2. Composante TDM et dose totale de l'examen**\n\nLa TDM de **correction d'atténuation basse dose** (voir §9–10) contribue en moyenne à **≈ 14 % (fourchette 2–37 %)** de la dose totale de l'examen selon l'application [38]. Dosimétries mesurées (Québec) [39] :\n\n| Application | Dose émission (mSv) | Dose TDM (mSv) | **Dose totale (mSv)** |\n|---|---|---|---|\n| Os (⁹⁹ᵐTc-MDP) | 3,8 | 3,3 | **7,1** [39] |\n| Cardiaque (MPI) | 11,5 | 0,49 | **12,67** [39] |\n| Pédiatrique | 4,96 | 0,69 | **5,64** [39] |\n\nLa CTAC seule ajoute typiquement **+0,5–1,0 mSv** [4]. En scintigraphie osseuse, l'optimisation du protocole TDM abaisse la dose scanner à **1,8 mSv vs 4,0 mSv (−55 %)** sans perte de qualité diagnostique [25]. Il convient de distinguer la **dose absorbée** (Gy, par organe) de la **dose efficace** (mSv, corps entier pondéré) : c'est cette dernière qui autorise la mise en perspective inter-examens.\n\n**3. Facteurs modulants** — l'activité administrée, la biocinétique du traceur, la **fonction rénale** et l'**hydratation** (excrétion urinaire accélérée du ⁹⁹ᵐTc-MDP/MAG3) conditionnent la dose vésicale ; la longueur d'exploration et les mA/kV conditionnent la dose TDM.",
+        "stats": [
+          {
+            "value": "≈ 4,2 mSv",
+            "label": "Scinti osseuse ⁹⁹ᵐTc-MDP (740 MBq) [20]"
+          },
+          {
+            "value": "≈ 14 %",
+            "label": "Part TDM dans la dose totale [38]"
+          },
+          {
+            "value": "12,67 mSv",
+            "label": "TEMP/TDM cardiaque, dose totale [39]"
+          },
+          {
+            "value": "0,025 mSv/MBq",
+            "label": "¹²³I-ioflupane (DaTSCAN) [36]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse & allaitement",
+            "text": "Grossesse : contre-indication relative (justification/optimisation impératives). Allaitement : suspension conseillée pour le ⁹⁹ᵐTc-pertechnétate libre ; adapter le délai d'interruption au traceur [7]. Distinguer dose fœtale (dose absorbée à l'utérus) et dose efficace maternelle."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pédiatrie",
+            "text": "La dose par MBq est plus élevée chez l'enfant : les activités sont ajustées via la carte de dose EANM (activité de base × multiple de classe selon le poids, jamais < activité minimale recommandée) [21][22]. La composante TDM pédiatrique reste modeste (≈ 0,69 mSv) mais doit être optimisée en priorité [39]."
+          }
+        ]
+      },
+      {
+        "title": "D16 - Radioprotection",
+        "text": "La radioprotection d'un examen TEMP/TDM applique les trois principes fondamentaux — **justification, optimisation (ALARA, *as low as reasonably achievable*), limitation** — avec une spécificité : la **double modalité impose de justifier séparément la dose de la composante TDM** [33]. En pratique, un **protocole TDM basse dose** dédié à la correction d'atténuation et à la localisation est employé, la TDM diagnostique co-enregistrée n'étant réservée qu'aux indications où elle évite un second examen [25][33]. La radioprotection se structure **par cible** :\n\n| Cible | Mesures clés |\n|---|---|\n| **Personnel** | Blindage de seringue, **distance – temps – écran**, dosimétrie passive et opérationnelle, zonage. Optimiser mA/kV et longueur d'exploration limite aussi la diffusion dans la salle [38]. |\n| **Entourage / public** | Patient « source » : consignes post-examen (hydratation, mictions fréquentes pour évacuer le ⁹⁹ᵐTc urinaire, distance vis-à-vis des enfants et femmes enceintes pendant la période utile ≈ quelques demi-vies de 6 h) [7]. |\n| **Patient** | Justification, optimisation de l'activité administrée, et — pour tout traceur iodé-123 — **blocage thyroïdien obligatoire** (≈ 120 mg d'iodure de potassium avant injection) protégeant la thyroïde de l'iode-123 libre [36]. |\n\n**Effluents et déchets radioactifs** : gestion par décroissance ; la période courte du ⁹⁹ᵐTc (**6,0 h**) [32] facilite le stockage, alors que l'¹²³I (**T½ 13,2 h**) impose un délai un peu plus long. Traçabilité et conduite à tenir en cas de contamination selon la procédure du service, dans le cadre réglementaire (Directive 2013/59/Euratom, CIPR 103) [33].",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers de réduction de dose au personnel : temps, distance, écran (ALARA).",
+        "figureCaption": "Fig. — Temps / distance / écran : les trois leviers ALARA structurant les consignes au personnel et à l'entourage.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — blocage thyroïdien",
+            "text": "Tout traceur marqué à l'¹²³I (ioflupane/DaTSCAN, MIBG) requiert un blocage thyroïdien préalable (iodure ou perchlorate de potassium) : l'iode-123 libre issu de la radiolyse se fixerait sinon sur la thyroïde [36]. Vérifier la prise avant injection."
+          },
+          {
+            "type": "info",
+            "title": "Consignes post-examen",
+            "text": "Le patient reste une « source » pendant la période utile : hydratation abondante, mictions fréquentes, et distance raisonnable vis-à-vis des jeunes enfants et femmes enceintes durant les premières heures. Ces consignes rejoignent la fiche patient (§0)."
+          }
+        ]
+      },
+      {
+        "title": "D17 - Performances diagnostiques & comparaison",
+        "text": "L'apport constant de la composante TDM est double : **localisation anatomique** du foyer fonctionnel et **correction d'atténuation**, d'où un gain de **spécificité** et une **réduction des lésions équivoques** par rapport au planaire ou à la TEMP seule [40]. Les performances dépendent fortement de l'indication.\n\n| Indication (traceur) | Sensibilité | Spécificité | Comparateur / apport |\n|---|---|---|---|\n| **Métastases osseuses** (⁹⁹ᵐTc-diphosphonates) | **92 %** (IC95 89–95) [10] | **95 %** (94–96) [10] | AUC 0,984 ; vs planaire Se 74 % / Sp 80 % [10] |\n| Rachis (os) | **78,8 %** (vs 6,1 % planaire) [8] | — | Cas équivoques 40 %→5,6 % ; exactitude **91,1 % vs 58,9 %** [8][9] |\n| Métastases prostate (SUVmax quantitatif) | **87 %** [11] | **92 %** (VPP 99 %) [11] | Quantification absolue reproductible |\n| **Parathyroïdes** (⁹⁹ᵐTc-MIBI) | **97 %** [43] | **100 %** [43] | Localisation ectopie précoce 90 % vs 50 % planaire [15] |\n| **Ganglion sentinelle** (mélanome) | Détection **98,3 %** [41] | — | vs 95,5 % lymphoscintigraphie planaire [41] |\n| **Embolie pulmonaire** (V/Q SPECT) | **96–99 %** [12] | **96–98 %** [12] | Taux non diagnostique **1–4 %** vs 4–10 % angio-TDM [12] |\n| **Syndromes parkinsoniens** (¹²³I-ioflupane) | **≈ 92 %** [54] | **≈ 84 %** [54] | Distingue déficit dopaminergique présynaptique du tremblement essentiel [13] |\n| **TNE** (⁹⁹ᵐTc-HYNIC-TOC) | ≈ ¹¹¹In-pentétréotide [29] | — | Détecte davantage de lésions ; insulinome dans 54 % des cas négatifs en 1ʳᵉ intention [30] |\n\n**Cardiologie — perfusion myocardique (MPI, *myocardial perfusion imaging*).** La correction d'atténuation TDM corrige les artéfacts d'atténuation **diaphragmatique** (paroi inférieure) et **mammaire** (paroi antérieure) et augmente la spécificité : la proportion d'examens classés « certainement normaux/anormaux » passe de **37 % à 84 %** (p < 0,005), avec une Se atteignant 100 % et une Sp de 83 % [6]. La CTAC est *recommandée* en MPI [4][47].\n\n**Comparaison aux modalités concurrentes** — la TEMP/TDM se situe entre l'imagerie purement anatomique (TDM/IRM/écho : sensibles à la détection mais peu spécifiques du processus biologique) et la TEP/TDM (meilleure résolution et quantification en coïncidence). Son atout propre reste l'**hybridation fonction + anatomie** au lit d'une γ-caméra largement disponible.",
+        "stats": [
+          {
+            "value": "92 % / 95 %",
+            "label": "Se/Sp métastases osseuses [10]"
+          },
+          {
+            "value": "97 % / 100 %",
+            "label": "Se/Sp parathyroïdes [43]"
+          },
+          {
+            "value": "37 %→84 %",
+            "label": "Examens MPI « certains » après CTAC [6]"
+          },
+          {
+            "value": "96–99 %",
+            "label": "Se V/Q SPECT (embolie pulmonaire) [12]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — quantification absolue",
+            "text": "Après CTAC + correction de diffusion + récupération de résolution + calibration par fantôme, l'image TEMP/TDM s'exprime en Bq/mL puis en SUV (standardized uptake value), comme en TEP [1][26]. Cela ouvre au suivi longitudinal et à la dosimétrie, avec une exactitude de calibration visée de 5–10 % (diagnostic) [1]."
+          }
+        ]
+      },
+      {
+        "title": "D18 - Place dans la stratégie & algorithmes décisionnels",
+        "text": "La TEMP/TDM s'impose comme examen de **caractérisation** — soit d'emblée hybride, soit en seconde intention après un planaire équivoque — **chaque fois que la localisation anatomique conditionne la décision** [40]. Les recommandations pivots sont : **EANM quantitative SPECT/CT 2022/2023** [1][33], **EANM MPI SPECT/CT 2015** [4], **SNMMI Bone Scintigraphy 4.0** [7][44], **EANM/SNMMI parathyroïdes** [14], **EANM V/Q SPECT 2019** [12] et **2022 ASNC/AAPM/SCCT/SNMMI** pour la TDM en imagerie cardiaque hybride [5][47].\n\n**Ostéo-articulaire / oncologie osseuse.** Devant un foyer équivoque en planaire (rachis ++), la TEMP/TDM tranche entre lésion dégénérative et métastase et réduit drastiquement les cas indéterminés [8][9] — séquençage : scintigraphie planaire corps entier → **TEMP/TDM ciblée** sur la région douteuse.\n\n**Cardiologie.** En MPI, la CTAC est intégrée d'emblée pour lever les artéfacts d'atténuation (paroi inférieure/antérieure) et fiabiliser l'interprétation [4][6].\n\n**Endocrinologie — parathyroïdes.** La TEMP/TDM ⁹⁹ᵐTc-MIBI biphasique (précoce/tardive) surpasse le planaire et l'échographie pour la **localisation pré-opératoire**, notamment des glandes ectopiques [15][43] : elle se place avant la chirurgie mini-invasive.\n\n**Pneumologie — embolie pulmonaire.** La **V/Q SPECT ± TDM basse dose** est une alternative de première ligne à l'angio-TDM, sans contre-indication (utilisable en BPCO, insuffisance cardiaque, pneumonie, grossesse) et avec un taux non diagnostique moindre [12].\n\n**Neurologie — syndromes parkinsoniens.** Le DaTSCAN (¹²³I-ioflupane) est demandé pour distinguer un déficit dopaminergique présynaptique dégénératif d'un tremblement essentiel ou d'un parkinsonisme non dégénératif [13][55].",
+        "steps": [
+          {
+            "title": "1 — Question clinique",
+            "text": "Identifier si la localisation anatomique et/ou la correction d'atténuation changent la décision (foyer osseux équivoque, artéfact cardiaque suspecté, ectopie parathyroïdienne, suspicion d'embolie)."
+          },
+          {
+            "title": "2 — Imagerie de première ligne",
+            "text": "Réaliser l'acquisition planaire ou anatomique de référence (scinti corps entier, TDM/IRM, échographie parathyroïdienne) selon le domaine."
+          },
+          {
+            "title": "3 — TEMP/TDM ciblée ou d'emblée",
+            "text": "Acquérir la TEMP/TDM sur la région d'intérêt (os, parathyroïdes) ou d'emblée hybride avec CTAC (MPI, V/Q, DaTSCAN)."
+          },
+          {
+            "title": "4 — Fusion & correction d'atténuation",
+            "text": "Fusionner émission et transmission, appliquer la CTAC ; vérifier l'absence de mismatch de recalage avant lecture."
+          },
+          {
+            "title": "5 — Conclusion actionnable",
+            "text": "Rattacher le foyer fonctionnel à sa structure anatomique, statuer bénin/malin/artéfact et répondre à la question clinique posée."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Séquençage",
+            "text": "En os et parathyroïdes, la TEMP/TDM est ciblée après un examen de débrouillage. En MPI, V/Q et DaTSCAN, l'hybridation (CTAC) est intégrée d'emblée au protocole."
+          }
+        ]
+      },
+      {
+        "title": "D19 - Examens apparentés & variantes",
+        "text": "La TEMP/TDM se décline en **variantes de protocole** (basse dose pour CTAC/localisation vs TDM diagnostique co-enregistrée avec contraste iodé) et s'articule avec des **modalités voisines** — au premier rang desquelles la TEP/TDM. Le tableau ci-dessous résume les principaux examens apparentés et le critère de choix.\n\n| Examen apparenté | Cible / différence | Quand le préférer |\n|---|---|---|\n| **TEMP planaire (sans TDM)** | Projection 2D, pas de correction d'atténuation ni de localisation 3D | Dépistage corps entier rapide, foyer sans ambiguïté anatomique ; débrouillage avant TEMP/TDM ciblée [40]. |\n| **TEMP/TDM diagnostique** (TDM avec contraste) | Même statif, TDM haute dose ± iode | Quand une TDM diagnostique est requise et évite un second examen [25]. |\n| **TEP/TDM** | Détection en coïncidence (émetteurs β⁺), meilleure résolution et quantification | Oncologie où la TEP a dépassé la TEMP ; quantification fine ; disponibilité d'un traceur TEP adapté. |\n| **Caméra CZT** (cadmium-zinc-tellurure) | Détection directe, résolution en énergie ×2, sensibilité ×4 à ×7 vs Anger+LEHR | MPI accélérée, faible dose, acquisitions double-isotope simultanées et TEMP dynamique [49][50]. |\n| **TEMP/TDM quantitative** (Bq/mL, SUV) | Ajoute calibration absolue par fantôme | Suivi longitudinal, dosimétrie, comparaison inter-examens standardisée [1][26]. |\n| **V/Q SPECT ± TDM basse dose** | Ventilation/perfusion pulmonaire hybride | Embolie pulmonaire, notamment si angio-TDM contre-indiquée ou non diagnostique [12]. |\n\nLe détail technique de chaque modalité relève de son article propre ; retenir que le choix se fait sur le **compromis résolution/quantification/disponibilité** et sur la question clinique.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — apport des détecteurs CZT",
+            "text": "Les caméras à semi-conducteurs CZT génèrent ≈ 30 000 électrons par photon de 140 keV (×20 vs NaI), doublent la résolution en énergie et multiplient la sensibilité par 4 (DNM 530c) à 7 (D-SPECT) face à une Anger + LEHR. Elles autorisent les acquisitions double-isotope simultanées et la TEMP dynamique [49][50]."
+          }
+        ]
+      },
+      {
+        "title": "E20 - Cas cliniques commentés / Iconographie",
+        "text": "Chaque cas illustre l'apport décisif du couplage TDM sur l'imagerie d'émission seule : localisation anatomique, correction d'atténuation (CA), gain de spécificité. Format uniforme : contexte → images → analyse → conclusion.\n\n| Cas | Domaine | Traceur | Apport-clé du couplage TDM |\n|---|---|---|---|\n| 1 | Ostéo-oncologie | ⁹⁹ᵐTc-diphosphonate | Caractérisation dégénératif vs métastatique au rachis |\n| 2 | Cardiologie (MPI) | ⁹⁹ᵐTc-sestamibi | Correction de l'atténuation diaphragmatique inférieure |\n| 3 | Endocrinologie | ⁹⁹ᵐTc-MIBI | Localisation d'un adénome parathyroïdien ectopique |\n| 4 | Pneumologie | ⁹⁹ᵐTc-MAA / Technegas | Embolie pulmonaire sur mismatch V/P segmentaire |\n\nLes performances chiffrées de référence appuyant ces cas : os **Se 92 %, Sp 95 %, AUC 0,98** contre planaire Se 74 % / Sp 80 % [10] ; au rachis, la TEMP/TDM porte la sensibilité de **6,1 % (planaire) à 78,8 %** et l'exactitude à **91,1 % vs 58,9 %** [8][9] ; parathyroïde ectopique **Se 90 % (TEMP/TDM précoce) vs 50 % (planaire double phase)** [15] ; V/P SPECT **Se 96–99 %, Sp 96–98 %** [12].",
+        "figureKey": "BONE_SCAN",
+        "figureAlt": "Scintigraphie osseuse corps entier au 99mTc-diphosphonate montrant la biodistribution squelettique et des foyers d'hyperfixation, support du cas ostéo-oncologique complété par la TEMP/TDM du rachis.",
+        "figureCaption": "Fig. — Scintigraphie osseuse : la TEMP/TDM du rachis reclasse les foyers équivoques (dégénératif vs métastase).",
+        "steps": [
+          {
+            "title": "Cas 1 — Rachis équivoque en scintigraphie osseuse (dégénératif vs métastase)",
+            "text": "*Contexte* : homme de 68 ans, cancer prostatique, PSA en hausse ; scintigraphie osseuse planaire au ⁹⁹ᵐTc-diphosphonate montrant plusieurs foyers rachidiens d'interprétation incertaine. *Images* : la TEMP/TDM centrée sur le rachis localise précisément chaque foyer — un sur une articulaire postérieure arthrosique, un sur le corps vertébral avec ostéocondensation. *Analyse* : au rachis, la TEMP/TDM fait passer la sensibilité de **6,1 % (planaire) à 78,8 %**, réduit les cas équivoques de **40 % (TEMP seule) à 5,6 %** et porte l'exactitude à **91,1 % vs 58,9 %** [8][9] ; en TEMP/TDM quantitative (métastases prostatiques, SUVmax), **Se 87 %, Sp 92 %, VPP 99 %** [11]. *Conclusion* : foyer articulaire postérieur bénin, foyer corporéal métastatique — reclassement décisif pour le stade et le traitement."
+          },
+          {
+            "title": "Cas 2 — MPI : défaut inférieur corrigé par la CA-TDM",
+            "text": "*Contexte* : femme de 62 ans, obèse, douleur thoracique atypique ; MPI ⁹⁹ᵐTc-sestamibi montrant un défaut de la paroi inférieure sur les images non corrigées. *Images* : après **correction d'atténuation basée TDM** (conversion des unités Hounsfield en coefficients d'atténuation linéaire à **140 keV** par relation bilinéaire), le défaut inférieur se normalise. *Analyse* : la CA-TDM corrige l'artéfact d'atténuation diaphragmatique et augmente la spécificité — la proportion d'examens jugés « certainement normaux/anormaux » passe de **37 % à 84 % (p < 0,005)**, avec Se jusqu'à **100 %** et Sp **83 %** [6]. *Conclusion* : faux défaut d'atténuation, coronaires angiographiquement saines — l'examen non corrigé aurait conduit à une coronarographie inutile."
+          },
+          {
+            "title": "Cas 3 — Adénome parathyroïdien ectopique",
+            "text": "*Contexte* : femme de 55 ans, hyperparathyroïdie primaire biologiquement prouvée, échographie et planaire double phase non contributives. *Images* : TEMP/TDM ⁹⁹ᵐTc-MIBI (phases précoce et tardive) localisant un foyer de rétention **médiastinal ectopique**. *Analyse* : pour les glandes ectopiques, la **Se de la TEMP/TDM précoce atteint 90 % vs 50 % en planaire double phase** [15] ; le SUVmax d'adénome est de l'ordre de **4,86 (précoce) / 2,58 (tardive)** [16], et la fusion TEMP/TDM offre **Se 97 %, Sp 100 %** pour la localisation du tissu hyperfonctionnel [42][43]. *Conclusion* : adénome ectopique médiastinal cartographié pour une chirurgie mini-invasive ciblée."
+          },
+          {
+            "title": "Cas 4 — Embolie pulmonaire en V/P SPECT",
+            "text": "*Contexte* : femme de 34 ans enceinte, dyspnée aiguë, angioscanner récusé. *Images* : V/P SPECT (perfusion ⁹⁹ᵐTc-MAA, ventilation Technegas) montrant un **mismatch ventilation/perfusion** de topographie segmentaire. *Analyse* : le critère d'EP est un mismatch V/P **≥ 1 segment ou 2 sous-segments** ; la V/P SPECT atteint **Se 96–99 %, Sp 96–98 %** (> 5000 cas), avec un taux non diagnostique de **1–4 %** (vs 4–10 % pour l'angioscanner) et reste utilisable en BPCO, insuffisance cardiaque ou pneumonie [12]. *Conclusion* : embolie pulmonaire segmentaire confirmée sans irradiation ni contraste iodé injecté, la TDM basse dose associée renforçant encore la spécificité."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — défaut de recalage TEMP↔TDM (MPI)",
+            "text": "Un mismatch de repositionnement ou respiratoire entre l'image d'émission et la TDM d'atténuation est une source majeure de **faux défauts** en cardiologie : un recalage/re-registration visuel des deux volumes est indispensable avant de conclure sur un défaut corrigé [48][2]."
+          }
+        ]
+      },
+      {
+        "title": "E21 - Points clés / à retenir",
+        "text": "Synthèse à haut rendement — chaque chiffre est sourcé (cf. §E25).",
+        "list": [
+          "**TEMP (SPECT)** = reconstruction tridimensionnelle d'un émetteur γ mono-photonique à partir de projections planaires acquises en rotation ; reconstruction **itérative OSEM** (ex. 5 itérations × 15–16 sous-ensembles) plutôt que rétroprojection filtrée [3].",
+          "**TEMP/TDM = système hybride** : la TDM apporte deux gains majeurs — la **localisation anatomique** et la **correction d'atténuation (CA)** — d'où une nette amélioration de la spécificité [2][40].",
+          "Radionucléide de référence : **⁹⁹ᵐTc**, γ monoénergétique **140 keV**, période physique **6,0 h**, issu du générateur **⁹⁹Mo/⁹⁹ᵐTc** ; ~**80 %** des actes de médecine nucléaire l'utilisent [19][32].",
+          "**CA-TDM** : les unités Hounsfield sont converties en coefficients d'atténuation linéaire à **140 keV** par une **relation bilinéaire** (tissus mous / os) ; recommandée en TEMP cardiaque, obligatoire en TEP [1][2].",
+          "Correction de diffusion par **triple fenêtre d'énergie (TEW)** ; en ⁹⁹ᵐTc, photopic **140 keV ± 7,5 %** et fenêtre Compton ~**120 keV ± 7,5 %** [23][1].",
+          "Trois corrections + calibration par fantôme d'activité connue permettent la **quantification absolue** en **Bq/mL** puis en **SUV**, comme en TEP [1][26].",
+          "**Os / métastases** (méta-analyse) : TEMP/TDM **Se 92 %, Sp 95 %, AUC 0,98** vs planaire Se 74 % / Sp 80 % ; au rachis, exactitude **91,1 % vs 58,9 %** [10][8].",
+          "**MPI** : la CA-TDM corrige les artéfacts diaphragmatique et mammaire — proportion d'examens « certains » de **37 % à 84 %** [6] ; référentiel **2022 ASNC/AAPM/SCCT/SNMMI** [5][47].",
+          "**Parathyroïdes** : TEMP/TDM ⁹⁹ᵐTc-MIBI **Se 97 %, Sp 100 %** ; ectopie précoce **Se 90 % vs 50 %** en planaire [42][15].",
+          "**Ganglion sentinelle (mélanome)** : détection **98,3 % (TEMP/TDM) vs 95,5 % (lymphoscintigraphie planaire)** [41].",
+          "**V/P SPECT (embolie pulmonaire)** : **Se 96–99 %, Sp 96–98 %**, taux non diagnostique **1–4 %** ; sans contre-indication (BPCO, grossesse) [12].",
+          "**DaTSCAN (¹²³I-ioflupane)** pour syndromes parkinsoniens : **Se ~92 %, Sp ~84 %** ; blocage thyroïdien obligatoire, activité **111–185 MBq** [54][36].",
+          "**Fantôme de Jaszczak** (cylindre ~22 cm Ø × 19 cm) et référentiel **NEMA NU-1** pour le contrôle qualité tomographique (uniformité, centre de rotation, résolution) [27][28].",
+          "**Dose** = radiopharmaceutique + TDM ; la TDM basse dose de CA délivre **~0,6 mSv (tête/cou) à ~2,6 mSv (corps entier)** [24] ; une TDM basse dose peut réduire la dose scanner de **4,0 à 1,8 mSv (−55 %)** sans perte diagnostique [25].",
+          "**Piège majeur** : défaut de recalage TEMP↔TDM et troncature/artéfacts métalliques altèrent la carte de CA et créent de faux foyers — toujours vérifier la fusion [48][2]."
+        ]
+      },
+      {
+        "title": "E22 - FAQ & pièges d'examen",
+        "text": "**Quelle est la différence fondamentale entre TEMP et TEP ?** La TEMP détecte des **photons uniques** émis par un radionucléide γ mono-photonique, collimatés mécaniquement par la gamma-caméra ; la TEP détecte deux photons de 511 keV en **coïncidence** issus d'une annihilation β⁺. La TEMP utilise donc un collimateur physique (perte de sensibilité), la TEP une collimation électronique [40][60].\n\n**Que fait exactement la correction d'atténuation basée TDM ?** Elle convertit les **unités Hounsfield** de la TDM en **coefficients d'atténuation linéaire (µ)** à l'énergie du radionucléide (140 keV pour le ⁹⁹ᵐTc) via une **relation bilinéaire** (segment tissus mous, segment os). Sans elle, les structures profondes apparaissent artificiellement hypofixantes [1][2].\n\n**CA-TDM recommandée ou obligatoire ?** Elle est **recommandée** en TEMP cardiaque (où elle corrige les faux défauts inférieurs) et **obligatoire** en TEP ; pour la seule correction d'atténuation, une **TDM basse dose sans contraste** suffit — le contraste iodé n'est requis que si une TDM diagnostique est co-enregistrée [1][23].\n\n**Pourquoi la triple fenêtre d'énergie (TEW) ?** Pour estimer et soustraire le rayonnement **diffusé** : on place des fenêtres étroites de part et d'autre du photopic. En ⁹⁹ᵐTc : photopic **140 keV ± 7,5 %**, fenêtre Compton ~**120 keV ± 7,5 %** [23][1].\n\n**Peut-on quantifier en TEMP comme en TEP (SUV) ?** Oui : après CA-TDM + correction de diffusion + récupération de résolution + calibration par fantôme d'activité connue, l'image s'exprime en **Bq/mL** puis en **SUV**. La justesse des SUV en TEMP/TDM a été validée sur fantôme [26][1].\n\n**Quel collimateur et quel apport des détecteurs CZT ?** Pour le ⁹⁹ᵐTc, un collimateur **basse énergie haute résolution (LEHR)**. Les détecteurs semi-conducteurs **CZT (cadmium-zinc-tellurure)** offrent une **résolution en énergie ~×2** et une **sensibilité ×4 à ×7** vs caméra d'Anger + LEHR, autorisant les acquisitions double-isotope et la TEMP dynamique [49][50].\n\n**La composante TDM irradie-t-elle beaucoup ?** La TDM basse dose de CA délivre **~0,6 mSv (tête/cou) à ~2,6 mSv (corps entier)** ; réduire les mAs peut ramener la dose scanner de **4,0 à 1,8 mSv (−55 %)** sans perte de qualité diagnostique [24][25].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — troncature et artéfacts métalliques de la carte d'atténuation",
+            "text": "Chez le patient corpulent, un champ TDM plus petit que le champ TEMP **tronque** le thorax et dégrade la CA ; le **durcissement de faisceau** et les **artéfacts métalliques** distordent les unités Hounsfield, propageant l'erreur dans la carte de µ et générant de **faux foyers chauds ou froids**. Vérifier systématiquement la fusion et la couverture [2][48]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — recalage avant conclusion",
+            "text": "En MPI, un **défaut de recalage (misregistration) TEMP↔TDM** est la première cause de faux défaut après correction : un re-registration visuel des deux volumes est un geste de routine avant d'affirmer un défaut de perfusion corrigé [48]."
+          }
+        ]
+      },
+      {
+        "title": "E25 - Références & liens sortants typés",
+        "text": "Références sourcées et datées (recommandations EANM / SNMMI / ASNC, sources primaires). Citations inline renvoyant à la liste **Sources & Références** en bas de page.\n\n**Principe, quantification & reconstruction** — EANM quantitative SPECT-CT 2022/2023 [1][33] ; correction d'atténuation en imagerie hybride [2] ; OSEM 3D avec récupération de résolution [3] ; justesse des SUV en TEMP/TDM [26] ; contrôle qualité (Zanzonico) et NEMA/StatPearls [27][28] ; toolkits IAEA-NMQC / TECDOC-602 [57][58] ; ⁹⁹ᵐTc et gamma-caméra [19][32][59][60] ; détecteurs CZT [49][50].\n\n**Cardiologie (MPI)** — EANM MPI SPECT/CT 2015 [4] ; 2022 ASNC/AAPM/SCCT/SNMMI CT en imagerie cardiaque hybride [5][47] ; SNMMI/ASNC/SCCT SPECT/CT–PET/CT 1.0 [46] ; valeur de la CA sur la paroi inférieure [6] ; défaut de recalage et re-registration [48] ; score 17 segments (SSS/SRS/SDS) [51][52][53].\n\n**Ostéo-oncologie** — SNMMI Bone Scintigraphy 4.0 [7][44] ; EANM bone 2016 [45] ; TEMP/TDM du squelette et du rachis [8][9] ; méta-analyse métastases osseuses [10] ; TEMP/TDM quantitative prostate [11] ; guideline pédiatrique os hybride [31].\n\n**Parathyroïdes** — SNM Parathyroid Scintigraphy 4.0 [14] ; performances et localisation TEMP/TDM MIBI [15][42][43] ; quantification double phase (SUV) [16].\n\n**Pneumologie & neurologie** — EANM V/P SPECT 2019 [12] ; DaTSCAN SNM Guideline 1.0 [13], SmPC/FDA [36][37], efficacité diagnostique [54][55].\n\n**Oncologie neuroendocrine** — TEMP/TDM ⁹⁹ᵐTc-Tektrotyd vs ¹¹¹In-pentétréotide [29][30].\n\n**Ganglion sentinelle** — méta-analyse TEMP/TDM vs lymphoscintigraphie planaire (mélanome) [41].\n\n**Radiopharmaceutiques, dosimétrie & radioprotection** — trousses ⁹⁹ᵐTc et générateur [17][18][19] ; carte de dose pédiatrique EANM 2016 [21][22] ; ICRP 128 (compendium des coefficients de dose) [34] ; doses efficaces des radiopharmaceutiques [20][35][56] ; dose de la composante TDM et protocoles basse dose [23][24][25][38][39].\n\n**Carte de liens (réseau de l'article)** — Examens : scintigraphie osseuse, MPI (perfusion myocardique), V/P SPECT, DaTSCAN, TEP-TDM · Traceurs : ⁹⁹ᵐTc-diphosphonate, ⁹⁹ᵐTc-sestamibi, ⁹⁹ᵐTc-MAA/Technegas, ¹²³I-ioflupane · Maladies : métastases osseuses, cardiopathie ischémique, hyperparathyroïdie, embolie pulmonaire, syndromes parkinsoniens · Scores : SSS/SRS/SDS (17 segments). *Dernière mise à jour : juillet 2026 — version de travail (profil médecin nucléaire).*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Recommandations pivots",
+            "text": "EANM quantitative SPECT-CT 2022/2023 [1][33] · EANM MPI SPECT/CT 2015 [4] · 2022 ASNC/AAPM/SCCT/SNMMI [5][47] · SNMMI Bone Scintigraphy 4.0 [7][44] · EANM V/P SPECT 2019 [12] · ICRP 128 pour la dosimétrie [34]."
+          }
+        ]
+      }
+    ]
+  }
+}

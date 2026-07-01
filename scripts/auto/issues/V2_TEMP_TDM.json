@@ -1,0 +1,32 @@
+[
+  {
+    "severity": "minor",
+    "where": "D15 Dosimétrie — coefficient de dose ¹²³I-ioflupane / organe critique ; A1 carte d'identité (dose)",
+    "problem": "Le contenu retient 0,025 mSv/MBq (soit ~4,63 mSv/185 MBq) et « foie » comme organe critique, valeurs issues du SmPC/emc (réf. CIPR 128). L'étiquetage FDA/DailyMed donne une dose efficace inférieure (3,94 mSv/185 MBq ≈ 0,021 mSv/MBq) et cite la paroi vésicale comme organe le plus irradié. Il s'agit d'une divergence réelle et connue entre référentiels européen (ICRP 128) et américain (FDA), pas d'une erreur : le contenu a choisi le référentiel SmPC/ICRP 128, cohérent avec la source citée [36].",
+    "fix": "Optionnel : préciser dans le CR/dosimétrie que le coefficient et l'organe critique dépendent du référentiel (SmPC/ICRP 128 : 0,025 mSv/MBq, organe critique foie ; étiquetage FDA : ~0,021 mSv/MBq). Aucune correction obligatoire."
+  },
+  {
+    "severity": "minor",
+    "where": "B9 (b) et E21 — dimensions du fantôme de Jaszczak (barreaux 3,2–11,1 mm)",
+    "problem": "Le contenu donne des barreaux de 3,2 à 11,1 mm ; le modèle flangé Data Spectrum le plus courant a des barreaux de 4,8 à 12,7 mm (les sphères 9,5–31,8 mm sont, elles, exactes). La valeur « 3,2 mm » provient d'une configuration Jaszczak plus ancienne/alternative. Écart mineur, compatible avec les variantes documentées et conforme à la fiche étalon.",
+    "fix": "Optionnel : harmoniser sur un modèle précis (p. ex. barreaux 4,8–12,7 mm pour le Jaszczak flangé standard) ou ajouter « selon le modèle »."
+  },
+  {
+    "severity": "minor",
+    "where": "A5 / D17 / E22 — DaTSCAN syndromes parkinsoniens : Se ~92 %, Sp ~84 %",
+    "problem": "La spécificité ~84 % est dans la fourchette basse de la littérature (souvent citée 97–98 % en lecture centralisée/experte). Le contenu précise correctement « lecteurs sur site », ce qui explique la spécificité plus faible, et la valeur est sourcée sur la fiche étalon [54]. Pas une erreur mais une valeur à comprendre dans son contexte (lecture non experte).",
+    "fix": "Optionnel : conserver la mention « lecteurs sur site » systématiquement à côté du couple 92 %/84 % pour éviter toute lecture hors contexte."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections E20-E25 (E-block numbering)",
+    "problem": "La numérotation E saute E23 et E24 : on passe de E22 (FAQ) directement à E25 (Références). Ce n'est pas une fabrication ni une lacune de couverture A->E (le socle est complet), mais un trou de numérotation qui peut surprendre par rapport à un gabarit E20-E25 continu.",
+    "fix": "Soit renuméroter E25 en E23, soit vérifier que le gabarit prévoit bien des slots optionnels E23/E24 (ex. Astuces / Glossaire) et les laisser vides intentionnellement. Aucune correction de contenu requise."
+  },
+  {
+    "severity": "minor",
+    "where": "D15 - Dosimétrie (ligne 123I-ioflupane) et stat associée",
+    "problem": "Le coefficient de dose efficace du DaTSCAN retenu (0,025 mSv/MBq, soit 4,63 mSv pour 185 MBq) provient du SmPC EU [36] et a ete verifie exact (SmPC emc 14810 : 25,0 uSv/MBq, foie 85,0 uGy/MBq, 4,63 mSv/185 MBq). Il est toutefois legerement superieur a la valeur de l'etiquette FDA (~3,94 mSv soit ~0,021 mSv/MBq) parfois citee ailleurs. Ce n'est PAS une fabrication ni une erreur (source correctement attribuee), juste une divergence de referentiel a connaitre.",
+    "fix": "Optionnel : preciser 'selon SmPC EANM/EU [36]' pour lever toute ambiguite avec la valeur FDA. Aucune modification obligatoire."
+  }
+]
