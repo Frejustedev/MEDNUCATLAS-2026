@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections D11 et D12 — description des classes de la carte de dose pédiatrique EANM",
+    "problem": "Le contenu décrit la classe C comme « thyroïde » (« C = thyroïde »). C'est imprécis : dans la carte EANM, la classe C regroupe les agents thyroïdiens à l'IODE radioactif (¹²³I/¹³¹I), au métabolisme long. Le ⁹⁹ᵐTc-pertechnétate pour la thyroïde est en réalité de classe B (activité de base 5,6 MBq), comme le confirme la table de référence. Écrire « C = thyroïde » sans préciser « iode » laisse croire qu'une scintigraphie thyroïdienne au pertechnétate relèverait de la classe C.",
+    "fix": "Reformuler en « C = agents thyroïdiens à l'iode radioactif (¹²³I/¹³¹I) », et rappeler que le ⁹⁹ᵐTc-pertechnétate thyroïdien reste en classe B."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 7 (dosimétrie) et identityCard — dose efficace du ⁹⁹ᵐTc-MIBI/sestamibi = 0,015 mSv/MBq",
+    "problem": "La valeur 0,015 mSv/MBq est la donnée générique ancienne (type ICRP 80). L'ICRP 128 actuellement en vigueur différencie repos ~0,009 et effort ~0,0079 mSv/MBq (cf. Recherche 2 §6). Présenter 0,015 comme LA valeur ICRP est légèrement daté et incohérent avec la référence ICRP 128 citée ailleurs dans l'article. Non bloquant car sourcé sur la table ORISE, mais surestime d'un facteur ~1,7 par rapport à l'ICRP 128.",
+    "fix": "Aligner sur l'ICRP 128 : ~0,009 mSv/MBq (repos) / ~0,0079 (effort), ou signaler explicitement que 0,015 est la valeur historique et donner la fourchette ICRP 128."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A2 / stats — « ~94 % Activité perdue en 24 h (T½ 6 h) »",
+    "problem": "Chiffre à préciser : 24 h = 4 périodes de 6 h → activité résiduelle (1/2)^4 = 6,25 %, soit ~93,75 % perdue. L'arrondi à « ~94 % » est correct mais mérite d'être présenté comme approximation de décroissance physique pure (sans tenir compte de la génération continue par un générateur, non applicable ici puisqu'il s'agit du traceur déjà préparé). Aucune erreur, simple vigilance pédagogique.",
+    "fix": "Conserver ~94 % en précisant « 4 périodes → ~6 % d'activité résiduelle » pour lever toute ambiguïté."
+  },
+  {
+    "severity": "major",
+    "where": "Sections §B5, §D10, §E13 (steps Cas 2), §C9 (tableau stabilité), §E11 (D10) — chiffres bleu de méthylène HMPAO, attribués à [8][14][32]",
+    "problem": "Données mal interprétées / inversées. L'article affirme : « le bleu de méthylène maintient 86,9 ± 4,2 % de complexe à 3 h contre 49,8 ± 8,9 % sans stabilisant ». Or la source primaire (PubMed 11225699 = [32], résumée sur PubMed/ScienceDirect) dit exactement l'inverse : 86,9 ± 4,2 % est la valeur du complexe NON stabilisé à 15 MINUTES, et 49,8 ± 8,9 % est la valeur NON stabilisée à 3 h. Le complexe stabilisé au bleu de méthylène vaut 86,2 ± 3,5 % à 15 min et 78,2 ± 4,0 % à 3 h. L'article présente donc une valeur non-stabilisée à 15 min comme étant la valeur stabilisée à 3 h : contresens factuel répété dans plusieurs sections.",
+    "fix": "Corriger partout en : « Sans stabilisant, le complexe lipophile chute de 86,9 ± 4,2 % (15 min) à 49,8 ± 8,9 % (3 h) ; avec bleu de méthylène il reste à 78,2 ± 4,0 % à 3 h » [32]. Ne pas présenter 86,9 % comme la valeur stabilisée à 3 h."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections §B5, §C7, §D11 (tableau et texte), §E13 (Point expert ITLC) — corrélation « r = 0,999 » / « r = 0,99913 » ITLC vs HPLC, attribuée à [6], [8] et [9] selon les endroits",
+    "problem": "[auto-corrigé: isotope normalisé en ⁹⁹ᵐTc par ship] Mis-citation d'un chiffre réel à des sources qui ne le contiennent pas. La corrélation r = 0,99913 (ITLC vs HPLC pour le pertechnétate libre) est authentique mais provient d'une étude two-strip TLC du 99mTc-MAG3 (Springer 10.1007/BF00169810 / PMC5852202), qui ne figure PAS dans la liste des 41 sources. Elle est attribuée tantôt à [8] (SNMMI JNMT), tantôt à [9] (IAEA INIS), tantôt à [6] — or [6] est la carte de dose pédiatrique EANM, totalement étrangère à l'ITLC/HPLC. J'ai vérifié le texte intégral de [10] (PMC6166199) : ce chiffre n'y apparaît pas non plus.",
+    "fix": "Soit ajouter la vraie source (étude MAG3 two-strip TLC) à la liste et y renvoyer, soit retirer la valeur r = 0,99913. Dans tous les cas, supprimer l'attribution à [6] (carte pédiatrique EANM) qui est une mis-citation flagrante."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections §A2, §B5, §D10, §E13, §E15 — narration de l'étude pivot [10] (PMC6166199) : « 5 rattrapés après nouvelle préparation et 1 seul échec imputable à un temps d'incubation insuffisant »",
+    "problem": "Fidélité partielle. La phrase-résumé de la source ([10]) dit bien « Five ... immediately repeated, returning within limits. The sixth failure was due to short incubation time, though compliant with the manufacturer's instructions » — donc le cadrage 5+1 est acceptable. MAIS le détail réel diffère : les 6 échecs se répartissent en 2 tetrofosmine (erreur d'échange de solvants au CQ), 1 nanocoll (temps d'incubation du SPC fabricant trop court, 5–10 min), 3 oxidronate/DTPA (temps de mesure insuffisant sur une prépa ~1 MBq). L'article présente le 6e échec comme un « temps d'incubation insuffisant » (opérateur) alors que la source l'impute à une instruction FABRICANT erronée (SPC), corrigée ensuite à 60 min. Nuance de causalité perdue.",
+    "fix": "Préciser que l'unique échec « vrai » tenait à un temps d'incubation du SPC fabricant trop court (nanocoll), corrigé par le fabricant, et non à une erreur d'incubation de l'opérateur. Optionnel mais recommandé pour éviter une conclusion pédagogique trompeuse (le §E15 en fait un point-clé sur la rigueur d'incubation de l'opérateur)."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard (carte d'identité) et §A1 tableau — « γ 140 keV (~89 %) »",
+    "problem": "Cohérence interne. La carte d'identité et §A1 donnent une abondance du photon 140 keV « ~89 % », valeur correcte, mais le quiz et d'autres passages restent vagues. Ce n'est pas une fabrication (89 % est la valeur admise), simple point de vigilance de cohérence — aucune source de la liste n'est citée précisément pour ce chiffre d'abondance.",
+    "fix": "Rattacher explicitement l'abondance ~89 % à [4] (ScienceDirect Technetium 99m) ou [1], déjà cités à côté, pour tracer la valeur. Aucune correction factuelle nécessaire."
+  }
+]

@@ -1,0 +1,1441 @@
+{
+  "id": "V2_TROUSSES_FROIDES_TC99M",
+  "cat": "radiopharmacie",
+  "catLabel": "",
+  "title": "Les trousses froides de marquage au technétium-99m (cold kits)",
+  "difficulty": "avancé",
+  "tags": [
+    "trousses froides",
+    "cold kit",
+    "technétium-99m",
+    "générateur 99Mo/99mTc",
+    "chlorure stanneux",
+    "pureté radiochimique",
+    "ITLC",
+    "pertechnétate",
+    "radiopharmacie",
+    "MDP",
+    "MAG3",
+    "HMPAO",
+    "sestamibi",
+    "MAA",
+    "contrôle qualité",
+    "carte EANM pédiatrique"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] StatPearls — Molybdenum-99/Technetium-99m Generator (NBK565854): half-lives, alumina column, elution 0.9% saline, Mo/Al breakthrough limits, +7 oxidation state",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/"
+    },
+    {
+      "title": "[2] ScienceDirect Topics — Technetium-99: reduction of pertechnetate +7 to +4 by stannous ions, tin oxidation",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/technetium-99"
+    },
+    {
+      "title": "[3] ScienceDirect Topics — Stannous Chloride: cold kit composition, freeze-dried, antioxidants ascorbic/gentisic acid",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/stannous-chloride"
+    },
+    {
+      "title": "[4] ScienceDirect Topics — Technetium 99m: T½ 6h, 140 keV photon, 85% of nuclear medicine, Tc-99 daughter",
+      "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/technetium-99m"
+    },
+    {
+      "title": "[5] NCBI — Molybdenum-99/Technetium-99m Production and Use (NBK215133): U-235 fission, 6.1% yield, >1000 Ci/g, 75% HEU 6 reactors",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215133/"
+    },
+    {
+      "title": "[6] IAEA Appendix I — EANM Paediatric Dosage Card v1.5.2008: baseline activities, classes A/B/C, minimum activities (39 procedures)",
+      "url": "https://humanhealth.iaea.org/hhw/nuclearmedicine/paediatricsandnephrourology/iaea_publications/atlas/appendix_i.pdf"
+    },
+    {
+      "title": "[7] ORISE/ORAU — Radiation Dose Estimates to Adults and Children from Various Radiopharmaceuticals (ICRP-derived mSv/MBq tables)",
+      "url": "https://orise.orau.gov/reacts/resources/documents/radiation-dose-estimates-to-adults-and-children-from-various-radiopharmaceuticals.pdf"
+    },
+    {
+      "title": "[8] SNMMI JNMT — Quality Control in the Radiopharmacy (ITLC, free pertechnetate, hydrolyzed-reduced Tc)",
+      "url": "https://tech.snmjournals.org/content/jnmt/12/1/33.full.pdf"
+    },
+    {
+      "title": "[9] IAEA INIS — Instant thin layer chromatography (ITLC) for radiochemical purity of Tc-99m radiopharmaceuticals",
+      "url": "https://inis.iaea.org/records/98efm-aff11"
+    },
+    {
+      "title": "[10] PMC6166199 — Quality control on radiochemical purity in Technetium-99m radiopharmaceuticals labelling: three years of experience on 2280 procedures",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166199/"
+    },
+    {
+      "title": "[11] PMC6020824 — SNMMI/EANM Procedure Standard for Diuretic Renal Scintigraphy (MAG3 extraction, activities 37-370 MBq)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6020824/"
+    },
+    {
+      "title": "[12] SNMMI procedure standard/EANM practice guideline on pediatric [99mTc]Tc-DMSA renal cortical scintigraphy: an update (2022, Clin Transl Imaging)",
+      "url": "https://link.springer.com/article/10.1007/s40336-022-00484-x"
+    },
+    {
+      "title": "[13] Indian J Nucl Med / PMC3822414 — Tc-99m MAA scintigraphy: 2-4 million particles 10-100 µm, precapillary trapping",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3822414/"
+    },
+    {
+      "title": "[14] Improvement of brain SPECT by stabilization of Tc-99m-HMPAO with methylene blue or cobalt chloride. Comparison with Tc-99m-ECD (PubMed 10320993)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10320993/"
+    },
+    {
+      "title": "[15] DailyMed — Exametazime (HMPAO) prescribing information: lipophilic complex, blood-brain barrier",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=6ea1fd48-c649-4e05-856e-bb123ce40a3f"
+    },
+    {
+      "title": "[16] StatPearls NBK559013 — Technetium-99m (NIS transport, thyroid, Meckel, perchlorate blocking, Tc-99m radiopharmaceuticals)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK559013/"
+    },
+    {
+      "title": "[17] StatPearls NBK553148 — Technetium 99m Sestamibi (mitochondrial uptake, myocardial perfusion)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK553148/"
+    },
+    {
+      "title": "[18] PMC6933900 — Quantitative bone SPECT/CT: prostate cancer bone metastases, high sensitivity/low specificity",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6933900/"
+    },
+    {
+      "title": "[19] Frontiers in Medicine 2023 — Nuclear medicine imaging for bone metastases assessment: what else besides bone scintigraphy in the era of personalized medicine?",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2023.1320574/full"
+    },
+    {
+      "title": "[20] StatPearls NBK535390 — Triple Phase Bone Scan (osteomyelitis, prosthesis, CRPS)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK535390/"
+    },
+    {
+      "title": "[21] PMC3071527 — Phase 2 study Tc-99m Tilmanocept sentinel node melanoma/breast: specificity 100%, sensitivity 95.1%",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3071527/"
+    },
+    {
+      "title": "[22] PMC8967737 — Detection of melanoma, breast cancer and head and neck squamous cell cancer sentinel lymph nodes by Tc-99m Tilmanocept (Lymphoseek)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967737/"
+    },
+    {
+      "title": "[23] ICRP Publication 128 (2015, Ann ICRP) — Radiation Dose to Patients from Radiopharmaceuticals (SAGE full text)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[24] EANM App-Calc — pediatric dosage calculator (EANM Paediatric and Dosimetry Committees)",
+      "url": "https://eanm.org/app-calc/"
+    },
+    {
+      "title": "[25] Springer EJNMMI Radiopharm Chem — Lung perfusion imaging in nuclear medicine with 99mTc: a comprehensive survey of radiopharmaceuticals",
+      "url": "https://link.springer.com/article/10.1186/s41181-026-00434-2"
+    },
+    {
+      "title": "[26] ResearchGate — Determination of radiation dose from patients undergoing Tc-99m Sestamibi nuclear cardiac imaging",
+      "url": "https://www.researchgate.net/publication/331044330"
+    },
+    {
+      "title": "[27] Quality Assessment of Tc-99m Methylene Diphosphonate (MDP) Radiopharmaceutical Prepared Using Different Cold Kit Fractionation Methods (PMC9037872)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9037872/"
+    },
+    {
+      "title": "[28] Ultra-Technekow V4 (Technetium Tc 99m Generator) — DailyMed — 99Mo breakthrough 0.15 kBq/MBq limit, radionuclidic purity",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=98947d99-5be5-461e-ad36-7425d3646389"
+    },
+    {
+      "title": "[29] Reductant composition for technetium-99m and method for making technetium-99m labelled ligands (US Patent 4272503) — stannous reduction chemistry",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4272503"
+    },
+    {
+      "title": "[30] Human Health Campus (IAEA) — Product issues with eluted 99mTc: Mo-99 breakthrough (counting with/without lead), Al breakthrough, +7 state",
+      "url": "https://humanhealth.iaea.org/HHW/Radiopharmacy/VirRad/Eluting_the_Generator/Generator_Module/Elution_of_the_99Mo99mTc_generator/Product_issues_with_eluted_99mTc/index.html"
+    },
+    {
+      "title": "[31] Hydrolyzed reduced technetium-99m — Radiopaedia — RCP impurities, ITLC acetone/saline method, 95% threshold",
+      "url": "https://radiopaedia.org/articles/hydrolyzed-reduced-technetium-99m"
+    },
+    {
+      "title": "[32] Methylene blue-enhanced stability of (99mTc)HMPAO and simplified quality control — a comparative investigation (PubMed 11225699)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11225699/"
+    },
+    {
+      "title": "[33] ICRP Publication 128: Radiation dose to patients from radiopharmaceuticals — a compendium of current information related to frequently used substances (ResearchGate)",
+      "url": "https://www.researchgate.net/publication/311100482_ICRP_Publication_128_Radiation_dose_to_patients_from_radiopharmaceuticals_a_compendium_of_current_information_related_to_frequently_used_substances"
+    },
+    {
+      "title": "[34] Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy (MDPI Toxics 11(10):814)",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814"
+    },
+    {
+      "title": "[35] The EANM practice guidelines for bone scintigraphy (PMC4932135 / EJNMMI 2016) — administered activities, delays, acquisition parameters",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4932135/"
+    },
+    {
+      "title": "[36] Radiation dosimetry for technetium-99m-MAG3, technetium-99m-DTPA, and iodine-131-OIH based on human biodistribution studies (J Nucl Med 33(1):33, PubMed 1530968)",
+      "url": "https://jnm.snmjournals.org/content/jnumed/33/1/33.full.pdf"
+    },
+    {
+      "title": "[37] Technetium Tc 99m Sestamibi — Prescribing information (Drugs.com) — activities 370–1110 MBq, MIBI dosimetry",
+      "url": "https://www.drugs.com/pro/technetium-tc-99m-sestamibi.html"
+    },
+    {
+      "title": "[38] Tc-99m pertechnetate — Radiopaedia — effective dose, thyroid/stomach/colon uptake, thyroid/Meckel activities",
+      "url": "https://radiopaedia.org/articles/tc-99m-pertechnetate"
+    },
+    {
+      "title": "[39] Finger Doses for Staff Handling Radiopharmaceuticals in Nuclear Medicine (J Nucl Med Technol 34(3):169) — finger dose, syringe shield −75 to −85%, dose rates",
+      "url": "https://tech.snmjournals.org/content/34/3/169"
+    },
+    {
+      "title": "[40] Technetium-99m Radiopharmaceuticals in Advanced Medical Imaging (OpenMedScience) — list of kits and clinical indications",
+      "url": "https://openmedscience.com/technetium-99m-radiopharmaceuticals-in-advanced-medical-imaging/"
+    },
+    {
+      "title": "[41] EANM Dosage Card (Version 5.7.2016) — pediatric dosage card, classes A/B/C, baseline activity",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "flask",
+        "label": "Nature",
+        "value": "Flacon lyophilisé stérile, sous azote (ligand + réducteur)"
+      },
+      {
+        "icon": "atom",
+        "label": "Radionucléide",
+        "value": "⁹⁹ᵐTc (pertechnétate ⁹⁹ᵐTcO₄⁻ du générateur)"
+      },
+      {
+        "icon": "zap",
+        "label": "Émission × énergie",
+        "value": "γ 140 keV (transition isomérique, ~89 %)"
+      },
+      {
+        "icon": "clock",
+        "label": "Période ⁹⁹ᵐTc / ⁹⁹Mo",
+        "value": "6,0 h / 66 h"
+      },
+      {
+        "icon": "flask",
+        "label": "Agent réducteur",
+        "value": "Chlorure stanneux SnCl₂ (Sn²⁺ → Sn⁴⁺)"
+      },
+      {
+        "icon": "microscope",
+        "label": "Chimie du marquage",
+        "value": "Réduction du Tc(+7) → +5/+4/+3 puis chélation"
+      },
+      {
+        "icon": "droplets",
+        "label": "Éluant du générateur",
+        "value": "NaCl 0,9 % ; colonne d'alumine Al₂O₃"
+      },
+      {
+        "icon": "shield",
+        "label": "⁹⁹Mo breakthrough",
+        "value": "≤ 0,15 kBq/MBq (0,15 µCi/mCi)"
+      },
+      {
+        "icon": "alert",
+        "label": "Aluminium (éluat)",
+        "value": "< 5 ppm (Ph. Eur.) / < 10 ppm (USP)"
+      },
+      {
+        "icon": "target",
+        "label": "Pureté radiochimique (RCP)",
+        "value": "≥ 95 % (HMPAO ≥ 80 %, tétrofosmine ≥ 90 %)"
+      },
+      {
+        "icon": "list",
+        "label": "Méthode CQ de référence",
+        "value": "Chromatographie ITLC-SG (acétone/MEK + NaCl)"
+      },
+      {
+        "icon": "clock",
+        "label": "Stabilité critique (HMPAO)",
+        "value": "Injection < 30 min après reconstitution"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie",
+        "value": "Activité de base × facteur-poids (carte EANM, classes A/B/C)"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace (MDP)",
+        "value": "≈ 0,0057–0,0072 mSv/MBq (~3–4 mSv pour 600–740 MBq)"
+      },
+      {
+        "icon": "activity",
+        "label": "Part en médecine nucléaire",
+        "value": "⁹⁹ᵐTc ≈ 80–85 % des actes"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-MDP / HDP (diphosphonates)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-MAG3"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-DMSA"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-DTPA"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-MIBI / tétrofosmine"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-MAA (macroagrégats d'albumine)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-HMPAO / ECD"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-pertechnétate libre"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-nanocolloïde / tilmanocept"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie rénale (MAG3/DMSA)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie de perfusion myocardique"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie pulmonaire V/Q"
+      },
+      {
+        "type": "examen",
+        "label": "Ganglion sentinelle / lymphoscintigraphie"
+      },
+      {
+        "type": "score",
+        "label": "Pureté radiochimique (%RCP)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel est le rôle de l'ion stanneux (Sn²⁺) dans une trousse froide ?",
+        "options": [
+          "Chélater directement le ⁹⁹ᵐTc",
+          "Réduire le Tc(+7) en un état de valence inférieur",
+          "Stabiliser le pH de l'éluat",
+          "Bloquer la thyroïde"
+        ],
+        "answer": 1,
+        "explanation": "Le pertechnétate élué est à l'état d'oxydation +7, inerte et non chélatable ; l'ion stanneux le réduit (typiquement à +5/+4/+3), forme réactive qui se lie ensuite au ligand [2].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la période physique du ⁹⁹ᵐTc ?",
+        "options": [
+          "66 heures",
+          "6,0 heures",
+          "8,0 jours",
+          "13,2 heures"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹ᵐTc a une période de 6,0 h et émet un photon γ de 140 keV, idéal pour la gamma-caméra ; les 66 h correspondent au ⁹⁹Mo père [4].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Sur quel support la colonne du générateur adsorbe-t-elle le ⁹⁹Mo et avec quoi élue-t-on le ⁹⁹ᵐTc ?",
+        "options": [
+          "Résine échangeuse / eau distillée",
+          "Alumine (Al₂O₃) / NaCl 0,9 %",
+          "Silice / éthanol",
+          "Charbon actif / acétone"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹Mo est adsorbé sur une colonne d'alumine acide ; le ⁹⁹ᵐTc formé est élué sous forme de pertechnétate par du sérum physiologique NaCl 0,9 % [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la limite réglementaire de contamination en ⁹⁹Mo (breakthrough) dans l'éluat ?",
+        "options": [
+          "≤ 0,15 kBq de ⁹⁹Mo par MBq de ⁹⁹ᵐTc",
+          "≤ 1,5 kBq/MBq",
+          "≤ 15 kBq/MBq",
+          "Aucune limite"
+        ],
+        "answer": 0,
+        "explanation": "La limite USP est de 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc (0,15 µCi/mCi) au moment de l'administration ; elle se mesure par comptage avec et sans blindage de plomb [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la limite de contamination en aluminium selon la Pharmacopée Européenne ?",
+        "options": [
+          "< 5 ppm",
+          "< 50 ppm",
+          "< 100 ppm",
+          "< 0,5 ppm"
+        ],
+        "answer": 0,
+        "explanation": "La Ph. Eur. exige < 5 ppm d'aluminium dans l'éluat (USP : < 10 ppm) ; un excès d'Al³⁺ peut perturber certains marquages et agglutiner les hématies [5].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi les trousses froides sont-elles lyophilisées et conditionnées sous azote ?",
+        "options": [
+          "Pour concentrer la radioactivité",
+          "Parce que l'ion stanneux Sn²⁺ est très sensible à l'oxydation par l'air",
+          "Pour accélérer l'élution",
+          "Pour bloquer la fixation thyroïdienne"
+        ],
+        "answer": 1,
+        "explanation": "L'ion stanneux s'oxyde facilement à l'air ou avec l'oxygène dissous ; sa quantité conditionne le rendement de marquage, d'où la lyophilisation sous atmosphère inerte [1][3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel seuil général de pureté radiochimique (RCP) est requis avant libération de la plupart des radiopharmaceutiques au ⁹⁹ᵐTc ?",
+        "options": [
+          "≥ 50 %",
+          "≥ 75 %",
+          "≥ 95 %",
+          "100 % obligatoire"
+        ],
+        "answer": 2,
+        "explanation": "Les monographies exigent en général qu'au moins 95 % du ⁹⁹ᵐTc soit lié au radiopharmaceutique ; les impuretés (pertechnétate libre, colloïde Tc-HR) dégradent l'image et irradient inutilement [10].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la méthode de référence pour mesurer la pureté radiochimique en routine ?",
+        "options": [
+          "HPLC systématique",
+          "Chromatographie sur couche mince instantanée (ITLC)",
+          "Spectrométrie de masse",
+          "Électrophorèse"
+        ],
+        "answer": 1,
+        "explanation": "L'ITLC-SG (acétone/méthyléthylcétone pour le pertechnétate libre, NaCl pour le colloïde) est rapide et fiable ; sa corrélation avec l'HPLC pour le pertechnétate libre atteint r = 0,999 [8][10].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelles sont les trois espèces radiochimiques à distinguer lors du CQ d'une préparation au ⁹⁹ᵐTc ?",
+        "options": [
+          "⁹⁹Mo, aluminium et Sn⁴⁺",
+          "Pertechnétate libre, Tc réduit-hydrolysé (colloïde) et radiopharmaceutique désiré",
+          "Tc(+7), Tc(+6) et Tc(+5)",
+          "Ligand libre, azote et NaCl"
+        ],
+        "answer": 1,
+        "explanation": "Le marquage incomplet laisse du ⁹⁹ᵐTc-pertechnétate libre (non réduit) et du ⁹⁹ᵐTc réduit-hydrolysé colloïdal, à quantifier à côté du radiopharmaceutique lié au ligand [10].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle trousse est la plus instable et impose une injection dans les 30 minutes suivant la reconstitution ?",
+        "options": [
+          "⁹⁹ᵐTc-MDP",
+          "⁹⁹ᵐTc-HMPAO (exametazime)",
+          "⁹⁹ᵐTc-DMSA",
+          "⁹⁹ᵐTc-DTPA"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁹⁹ᵐTc-HMPAO non stabilisé se dégrade en complexe hydrophile (RCP ~80 % à 1 h) ; sa spécification est ≥ 80 % et il doit être injecté dans les 30 min, sauf stabilisation (bleu de méthylène, chlorure de cobalt) [14].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans une série pivot de 2 280 marquages contrôlés en routine, quel a été le taux d'échec global ?",
+        "options": [
+          "0,26 %",
+          "2,6 %",
+          "6 %",
+          "12 %"
+        ],
+        "answer": 0,
+        "explanation": "Sur 2 280 procédures, seuls 6 marquages ont échoué (0,26 %), dont 5 conformes après nouvelle préparation ; un seul échec dû à un temps d'incubation insuffisant [10].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel mécanisme sous-tend la fixation osseuse du ⁹⁹ᵐTc-MDP/HDP ?",
+        "options": [
+          "Filtration glomérulaire",
+          "Chimisorption sur l'hydroxyapatite (remodelage ostéoblastique)",
+          "Captation mitochondriale",
+          "Occlusion capillaire"
+        ],
+        "answer": 1,
+        "explanation": "Les diphosphonates se chimisorbent sur les cristaux d'hydroxyapatite, reflétant l'activité ostéoblastique ; d'où leur usage en scintigraphie osseuse [16].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Comment le ⁹⁹ᵐTc-MAA image-t-il la perfusion pulmonaire ?",
+        "options": [
+          "Par diffusion alvéolaire",
+          "Par occlusion mécanique transitoire des artérioles précapillaires (10–90 µm)",
+          "Par fixation sur le surfactant",
+          "Par le symporteur sodium-iode"
+        ],
+        "answer": 1,
+        "explanation": "Les macroagrégats d'albumine (2–4 millions de particules de 10–90 µm) sont piégés dans les artérioles précapillaires, cartographiant le flux sanguin pulmonaire régional [13].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel radiopharmaceutique du ⁹⁹ᵐTc est transporté par le symporteur sodium-iode (NIS) sans être organifié ?",
+        "options": [
+          "⁹⁹ᵐTc-DMSA",
+          "⁹⁹ᵐTc-pertechnétate",
+          "⁹⁹ᵐTc-MIBI",
+          "⁹⁹ᵐTc-HMPAO"
+        ],
+        "answer": 1,
+        "explanation": "Le pertechnétate libre est capté par le NIS (thyroïde, glandes salivaires, muqueuse gastrique) mais non incorporé à la thyroglobuline ; d'où son usage thyroïdien et pour le diverticule de Meckel [16].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon la carte de dose pédiatrique EANM, comment calcule-t-on l'activité chez l'enfant ?",
+        "options": [
+          "Activité fixe quel que soit le poids",
+          "Activité de base × facteur-poids, avec un minimum recommandé",
+          "Activité adulte divisée par l'âge",
+          "Toujours la moitié de la dose adulte"
+        ],
+        "answer": 1,
+        "explanation": "L'activité pédiatrique = activité de base × facteur lié au poids (classes A rénaux, B autres, C thyroïde iode) ; si le résultat est inférieur au minimum recommandé, on injecte ce minimum [6].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est l'ordre de grandeur de la dose efficace du ⁹⁹ᵐTc-MDP chez l'adulte ?",
+        "options": [
+          "~0,006–0,007 mSv/MBq",
+          "~0,1 mSv/MBq",
+          "~0,5 mSv/MBq",
+          "~1 mSv/MBq"
+        ],
+        "answer": 0,
+        "explanation": "Le ⁹⁹ᵐTc-MDP délivre environ 0,0057–0,0072 mSv/MBq (organe critique : os/paroi vésicale), soit ~3 mSv pour 600 MBq et ~4,2 mSv pour 740 MBq [7][23].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "De combien un protège-seringue en plomb ou tungstène réduit-il la dose aux doigts du manipulateur ?",
+        "options": [
+          "De 5 à 10 %",
+          "De 20 à 30 %",
+          "De 75 à 85 %",
+          "De 99 %"
+        ],
+        "answer": 2,
+        "explanation": "L'exposition des extrémités est la contrainte majeure en radiopharmacie (limite 500 mSv/an) ; un protège-seringue réduit la dose aux doigts de 75 à 85 % [39].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Pourquoi le ⁹⁹ᵐTc domine-t-il la médecine nucléaire conventionnelle (~80 % des actes) ?",
+        "options": [
+          "Il est le seul émetteur de positons disponible",
+          "Le couple générateur + trousse froide fournit sur place, sans cyclotron ni synthèse, des traceurs d'organe variés",
+          "Il a la plus longue période de tous les radionucléides",
+          "Il ne nécessite aucun contrôle qualité"
+        ],
+        "answer": 1,
+        "explanation": "La trousse froide transforme extemporanément l'éluat générique de pertechnétate en radiopharmaceutique spécifique d'organe, sans cyclotron ni synthèse complexe, ce qui explique la centralité du ⁹⁹ᵐTc (~80 % des actes) [4].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Une trousse froide est un flacon lyophilisé stérile sous azote contenant un ligand vecteur, un réducteur (chlorure stanneux SnCl₂) et des stabilisants, marqué extemporanément par l'éluat de pertechnétate ⁹⁹ᵐTcO₄⁻ [1][3].",
+        "Chimie clé : le ⁹⁹ᵐTc élué est au degré +7 (inerte) ; l'ion stanneux Sn²⁺ le réduit (+5/+4/+3), forme réactive qui se chélate au ligand [2].",
+        "⁹⁹ᵐTc : γ 140 keV, période 6,0 h ; ⁹⁹Mo père : période 66 h ; élution sur colonne d'alumine avec NaCl 0,9 % [1][4].",
+        "Le ⁹⁹ᵐTc représente ~80–85 % de tous les actes de médecine nucléaire grâce au couple générateur + trousse froide (pas de cyclotron ni de synthèse) [4].",
+        "CQ de l'éluat : ⁹⁹Mo breakthrough ≤ 0,15 kBq/MBq, aluminium < 5 ppm (Ph. Eur.) / < 10 ppm (USP), ≥ 95 % du Tc à l'état +7 [1][5].",
+        "Pureté radiochimique (RCP) ≥ 95 % en général (HMPAO ≥ 80 %, tétrofosmine ≥ 90 %, sestamibi ≥ 94 %) ; méthode de référence : ITLC-SG [8][10].",
+        "Trois espèces à séparer au CQ : pertechnétate libre (non réduit), Tc réduit-hydrolysé colloïdal, et radiopharmaceutique désiré [10].",
+        "Taux d'échec réel de marquage en routine très bas : 0,26 % sur 2 280 procédures ; la cause documentée d'échec est un temps d'incubation insuffisant [10]."
+      ],
+      "protocol": [
+        "Élution du générateur ⁹⁹Mo/⁹⁹ᵐTc au NaCl 0,9 % sous enceinte blindée ; éluat péremption ~12 h [1].",
+        "Contrôle de l'éluat avant marquage : ⁹⁹Mo breakthrough (comptage avec/sans plomb), aluminium, aspect [1][5].",
+        "Introduction aseptique de l'éluat dans le flacon lyophilisé ; respect strict du temps et de la température d'incubation propres à la trousse [10].",
+        "⁹⁹ᵐTc-HMPAO non stabilisé : injecter dans les 30 min ; stabilisation possible par chlorure de cobalt (≥ 5 h) ou bleu de méthylène [14].",
+        "CQ de la préparation finie par ITLC-SG (acétone/MEK pour le pertechnétate libre, NaCl pour le colloïde) avant libération [8].",
+        "Pédiatrie : activité = activité de base × facteur-poids (carte EANM, classes A/B/C), sans descendre sous le minimum recommandé [6].",
+        "Radioprotection : protège-seringue (−75 à −85 % aux doigts), enceinte plombée, activimètre pour chaque dose [39]."
+      ],
+      "scores": [
+        "Seuil général de RCP : ≥ 95 % du ⁹⁹ᵐTc lié au radiopharmaceutique avant administration [10].",
+        "Seuils par produit : HMPAO ≥ 80 %, MAA / tétrofosmine ≥ 90 %, sestamibi ≥ 94 %, MDP/HDP/DTPA/DMSA/nanocolloïde ≥ 95 % [10].",
+        "⁹⁹Mo breakthrough ≤ 0,15 kBq/MBq ; aluminium < 5 ppm (Ph. Eur.) / < 10 ppm (USP) ; ≥ 95 % Tc à l'état +7 [1][5].",
+        "Dose efficace repère : ⁹⁹ᵐTc-MDP ≈ 0,0057–0,0072 mSv/MBq (~3 mSv pour 600 MBq, ~4,2 mSv pour 740 MBq) [7][23]."
+      ],
+      "pitfalls": [
+        "Oxydation de l'ion stanneux (air, oxygène dissous, éluat trop vieux) → excès de pertechnétate libre et RCP effondrée [1][3].",
+        "Non-respect du temps ou de la température d'incubation : cause documentée d'échec de marquage [10].",
+        "HMPAO injecté au-delà de 30 min sans stabilisant : conversion en complexe hydrophile, image cérébrale non diagnostique [14].",
+        "Pertechnétate libre à l'image : fixation parasite thyroïde/estomac/glandes salivaires ; colloïde Tc-HR : fixation hépatique parasite [10].",
+        "Breakthrough en ⁹⁹Mo (haute énergie, ~740 keV) ou en aluminium (agglutination des hématies, marquages perturbés) non détecté sur l'éluat [1][5].",
+        "Sous-estimation de la dose aux extrémités : manipulation sans protège-seringue (limite 500 mSv/an aux doigts vite atteinte) [39]."
+      ]
+    },
+    "lead": "Les trousses froides de marquage au technétium-99m sont de petits flacons stériles contenant, sous forme desséchée, la molécule qui va guider le traceur vers l'organe à explorer et un ingrédient chimique qui rend le technétium capable de s'y accrocher. Au moment de l'examen, le pharmacien ou le manipulateur ajoute simplement, dans des conditions d'asepsie, la solution radioactive fournie par un petit appareil appelé générateur. En quelques minutes et sans aucune synthèse compliquée, on obtient ainsi le médicament radioactif prêt à être injecté au patient. Ce procédé simple et rapide, réalisé sur place dans presque tous les services de médecine nucléaire, explique pourquoi ce même technétium sert à la très grande majorité des examens d'imagerie fonctionnelle. Un contrôle de qualité rapide vérifie, avant l'injection, que la préparation est bien conforme.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert une trousse de marquage au technétium",
+          "text": "Pour réaliser certaines images de médecine nucléaire (scintigraphies), le médecin a besoin d'un produit spécial, appelé radiopharmaceutique, qui se fixe précisément sur l'organe à examiner : les os, les reins, le cœur, les poumons, la thyroïde ou le cerveau. Ce produit est fabriqué juste avant votre examen, sur place, dans une pharmacie spécialisée de l'hôpital. On part d'une petite fiole toute prête, la « trousse froide », que l'on associe à une très faible quantité d'un traceur légèrement radioactif, le technétium. Une fois combinés, ils forment le produit qui va « éclairer » l'organe à observer et permettre à la caméra de fabriquer les images. Chaque trousse est conçue pour un organe précis : c'est ce qui explique qu'il existe de nombreux examens différents à partir du même traceur.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un produit fabriqué sur mesure pour vous",
+              "text": "Le produit qui vous est injecté n'existe pas à l'avance : il est préparé le jour même, spécifiquement pour votre examen, dans un laboratoire dédié de l'hôpital. Cela garantit qu'il est parfaitement adapté à la partie du corps que le médecin souhaite explorer."
+            }
+          ]
+        },
+        {
+          "title": "Comment se passe la préparation et le déroulé de l'examen",
+          "text": "Le jour de l'examen, l'équipe de la pharmacie prépare votre produit dans un environnement stérile et contrôlé, puis vérifie sa qualité avant de le transmettre au service. L'infirmier ou le médecin vous injecte ensuite ce produit, le plus souvent par une petite piqûre dans une veine du bras. Selon l'organe examiné, les images peuvent être prises tout de suite, ou après un temps d'attente (parfois quelques heures) pendant lequel le produit se fixe sur la zone concernée. Vous êtes ensuite allongé sous une caméra qui ne fait aucun bruit gênant et ne touche pas votre corps : elle se contente de détecter le signal émis par le produit. On vous demande souvent de bien boire et d'uriner régulièrement, car cela aide votre corps à éliminer le produit et améliore le confort de l'examen.",
+          "steps": [
+            {
+              "title": "Préparation en pharmacie",
+              "text": "Votre produit est fabriqué et contrôlé sur place, spécifiquement pour votre examen."
+            },
+            {
+              "title": "Injection",
+              "text": "Le produit vous est injecté, en général par une petite piqûre dans une veine du bras."
+            },
+            {
+              "title": "Temps de fixation",
+              "text": "Selon l'organe, les images sont prises immédiatement ou après une attente pendant laquelle le produit se fixe."
+            },
+            {
+              "title": "Prise des images",
+              "text": "Vous êtes allongé sous une caméra qui détecte le signal, sans contact ni douleur."
+            }
+          ]
+        },
+        {
+          "title": "La sécurité : ce que vous devez savoir",
+          "text": "La quantité de produit injectée est infime et le traceur radioactif utilisé est choisi précisément parce qu'il est doux pour l'organisme : il perd rapidement sa radioactivité et est éliminé naturellement par votre corps en quelques heures. Ces examens sont pratiqués depuis des dizaines d'années et sont très bien tolérés ; les réactions au produit sont rares. Prévenez toujours l'équipe si vous êtes enceinte, si vous pensez l'être ou si vous allaitez : dans ces situations, le médecin adapte l'examen ou propose une alternative, et des précautions simples (comme suspendre l'allaitement pendant un temps) peuvent être conseillées. N'hésitez pas à poser toutes vos questions : l'équipe est là pour vous rassurer et vous accompagner.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "À signaler avant l'examen",
+              "text": "Informez l'équipe si vous êtes enceinte, susceptible de l'être, ou si vous allaitez. Signalez aussi vos traitements en cours et toute allergie connue : cela permet d'adapter l'examen en toute sécurité."
+            },
+            {
+              "type": "tip",
+              "title": "Buvez et éliminez",
+              "text": "Après l'examen, boire de l'eau et uriner régulièrement aide votre corps à évacuer plus vite le produit."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : le panel d'examens issus des trousses au technétium",
+          "text": "Les trousses froides au technétium-99m sont le socle de la médecine nucléaire conventionnelle : à partir d'un même traceur, la pharmacie hospitalière prépare de façon extemporanée un radiopharmaceutique spécifique de l'organe cible. Concrètement, cela recouvre la plupart des scintigraphies que vous prescrivez ou vers lesquelles vous adressez. En pratique clinique courante : scintigraphie osseuse (bilan de métastases prostatiques ou mammaires, recherche d'ostéomyélite, descellement ou infection de prothèse, algodystrophie/SDRC) ; scintigraphie rénale (fonction relative et cicatrices corticales, ou exploration dynamique d'une obstruction de la voie excrétrice) ; scintigraphie myocardique de perfusion (recherche d'ischémie, évaluation de viabilité) ; scintigraphie pulmonaire de perfusion (embolie pulmonaire, notamment en alternative à l'angioscanner) ; scintigraphie thyroïdienne (nodule, goitre, thyroïdite) ; recherche de diverticule de Meckel chez l'enfant ; repérage du ganglion sentinelle (mélanome, sein, ORL). Un même besoin diagnostique peut donc être couvert par un traceur dédié.",
+          "list": [
+            "Osseux : métastases, ostéomyélite, prothèse douteuse, SDRC",
+            "Rénal : fonction corticale et cicatrices, ou obstruction dynamique",
+            "Cardiaque : ischémie et viabilité myocardiques",
+            "Pulmonaire : embolie pulmonaire (perfusion)",
+            "Thyroïde : nodule, goitre, thyroïdite",
+            "Ganglion sentinelle : mélanome, sein, ORL"
+          ]
+        },
+        {
+          "title": "La démarche : de la demande à l'examen",
+          "text": "Vous n'avez pas à connaître le traceur : votre rôle est de poser la question clinique. C'est le médecin nucléariste qui choisit le radiopharmaceutique adapté (par exemple, traceur tubulaire pour explorer une obstruction rénale, traceur cortical pour objectiver des cicatrices). La préparation est réalisée le jour de l'examen dans la pharmacie du service, avec un contrôle qualité systématique avant administration : le taux d'échec de fabrication est en pratique très faible. L'examen consiste en une injection intraveineuse d'une faible dose, suivie, selon l'organe, d'une acquisition immédiate ou différée de quelques heures. Pour bien orienter la demande, précisez la question posée, les antécédents pertinents, les traitements en cours (certains médicaments interfèrent, par exemple les bisphosphonates en osseux ou les IEC en scintigraphie rénale sensibilisée), une grossesse ou un allaitement éventuels, et le contexte d'urgence. Ces éléments permettent au nucléariste de choisir le bon traceur et le bon protocole.",
+          "steps": [
+            {
+              "title": "Formuler la question clinique",
+              "text": "Indiquez ce que vous cherchez plutôt qu'un traceur : le nucléariste sélectionne le radiopharmaceutique adapté."
+            },
+            {
+              "title": "Transmettre le contexte",
+              "text": "Antécédents, traitements interférents, grossesse/allaitement, degré d'urgence : autant d'éléments qui affinent le protocole."
+            },
+            {
+              "title": "Préparation et contrôle",
+              "text": "Le radiopharmaceutique est préparé et sa qualité vérifiée sur place avant administration."
+            },
+            {
+              "title": "Acquisition",
+              "text": "Injection intraveineuse puis imagerie, immédiate ou différée selon l'organe exploré."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Ces examens apportent une information fonctionnelle et métabolique que l'imagerie anatomique (radiographie, scanner, IRM) ne donne pas : ils détectent une anomalie au niveau de son activité biologique, souvent avant qu'elle ne devienne visible sur les images morphologiques. La scintigraphie osseuse est très sensible pour un bilan d'extension métastatique du corps entier ; la scintigraphie rénale quantifie la fonction relative de chaque rein et objective une obstruction ; la perfusion myocardique documente une ischémie ; la scintigraphie pulmonaire est une alternative validée à l'angioscanner pour l'embolie, utile notamment en cas de contre-indication à l'iode ou d'insuffisance rénale. Adresser au bon moment, avec une question claire, permet au nucléariste de choisir le traceur optimal et d'orienter directement votre prise en charge."
+            }
+          ]
+        },
+        {
+          "title": "L'apport de la médecine nucléaire dans votre prise en charge",
+          "text": "Au-delà de confirmer ou d'écarter un diagnostic, ces examens modifient concrètement les décisions cliniques. En oncologie, la scintigraphie osseuse cartographie l'ensemble du squelette en un seul examen et guide la stratégie thérapeutique. En néphro-urologie, l'imagerie fonctionnelle aide à décider entre surveillance et geste chirurgical face à une obstruction, et évalue le retentissement d'une pathologie sur chaque rein pris séparément. En cardiologie, la perfusion myocardique stratifie le risque et sélectionne les patients susceptibles de bénéficier d'une revascularisation. En chirurgie carcinologique, le repérage du ganglion sentinelle limite le geste ganglionnaire et ses séquelles. L'irradiation délivrée reste modérée et le rapport bénéfice/risque est favorable pour des indications bien posées ; en cas de doute sur la pertinence ou le meilleur examen, un simple échange avec le nucléariste permet d'orienter la demande.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "En cas de doute sur l'examen à demander",
+              "text": "N'hésitez pas à contacter le service de médecine nucléaire : décrire la situation clinique permet de choisir le traceur et le protocole les plus rentables, et parfois d'éviter un examen redondant."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - A1 - Carte d'identité : la trousse froide de marquage au ⁹⁹ᵐTc",
+          "text": "**Comment lire cette carte.** Une **trousse froide** (« *cold kit* ») n'est pas un traceur fini mais un **précurseur** : un flacon multidose **stérile, apyrogène, lyophilisé**, scellé sous atmosphère inerte (azote/argon), qui ne devient radiopharmaceutique qu'après ajout **extemporané** de l'éluat de pertechnétate **[⁹⁹ᵐTc]NaTcO₄** issu du générateur ⁹⁹Mo/⁹⁹ᵐTc [1][3]. La carte d'identité ci-dessous décrit donc un *procédé* commun à toute une famille de radiopharmaceutiques d'organe (osseux, rénaux, cardiaques, pulmonaires, cérébraux, thyroïdiens, ganglion sentinelle), tous marqués selon la même chimie de **réduction stanneuse**.\n\nLe **⁹⁹ᵐTc** est le radionucléide de référence de la médecine nucléaire conventionnelle : émetteur γ **pur** de **140 keV** (140,5 keV, abondance ≈ 89 %) idéal pour la caméra gamma, période physique **T½ = 6,0 h** courte (donc faible dose délivrée), **sans émission particulaire** [1][4]. Il porte à lui seul **~80 % de tous les actes** de médecine nucléaire dans le monde [4]. Sa disponibilité repose sur un couple logistique unique — un **générateur** de colonne au chevet du service et une **trousse froide** qui, sans cyclotron ni synthèse chimique lourde, transforme un éluat générique en un traceur spécifique d'organe [1][4].\n\n| Champ | Valeur |\n|---|---|\n| Nature | Précurseur lyophilisé stérile/apyrogène, sous atmosphère inerte (N₂) [3] |\n| Radionucléide marqueur | ⁹⁹ᵐTc, apporté par l'éluat [⁹⁹ᵐTc]NaTcO₄ [1] |\n| Émission × énergie | γ pur, **140 keV** (~89 %), transition isomérique [4] |\n| Période physique | **T½ = 6,0 h** [1][4] |\n| Père (générateur) | ⁹⁹Mo, **T½ = 66 h** → ⁹⁹Mo/⁹⁹ᵐTc sur colonne d'alumine [1] |\n| Solvant d'élution | **NaCl 0,9 %** [1] |\n| Réducteur | **Chlorure stanneux SnCl₂·2H₂O** (ion Sn²⁺) [1][2] |\n| Excipients / stabilisants | Acide **ascorbique**, acide **gentisique** (antioxydants) [3] |\n| Marquage | Ajout aseptique de l'éluat + incubation, sans étape de synthèse [1][3] |\n| Pureté radiochimique exigée | **≥ 95 %** (général) ; exceptions par monographie (HMPAO ≥ 80 %) [6][10] |\n| Contrôle qualité | **ITLC** (chromatographie couche mince instantanée) [8][9] |\n| Part des actes MN | **~80 %** des examens de médecine nucléaire [4] |\n\n**À retenir en une phrase :** la trousse froide est le maillon terminal, manipulé en radiopharmacie hospitalière, qui *appareille* un éluat de pertechnétate universel à une molécule vectrice précise — c'est ce qui explique la domination du ⁹⁹ᵐTc en imagerie conventionnelle [1][4].",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "γ pur du ⁹⁹ᵐTc (caméra idéale)"
+            },
+            {
+              "value": "6,0 h",
+              "label": "Période physique T½"
+            },
+            {
+              "value": "~80 %",
+              "label": "Part des actes de médecine nucléaire"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "Pureté radiochimique exigée (règle générale)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi « froide » ?",
+              "text": "Le qualificatif **froid** s'oppose à **chaud** (radioactif) : la trousse est livrée **non radioactive**, ne contenant que des réactifs chimiques (ligand + Sn²⁺ + excipients). Elle ne devient « chaude » qu'au moment du marquage, quand on y introduit l'éluat de ⁹⁹ᵐTc [1][3]. Cette dissociation temporelle est le cœur du concept : le fabricant produit et stocke un kit stable et inerte, le radionucléide à vie courte est apporté juste avant l'emploi."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la trousse n'est pas le radiopharmaceutique",
+              "text": "Ne pas confondre la **trousse** (précurseur inerte, péremption longue) et la **préparation finie** (radiopharmaceutique marqué, à administrer dans un délai court après reconstitution). La qualité du produit fini dépend autant de la trousse que de l'éluat utilisé et du respect du protocole de marquage — d'où le contrôle qualité de la préparation avant libération [6][10]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine retenant le ⁹⁹Mo, élution au sérum physiologique produisant le pertechnétate [⁹⁹ᵐTc]NaTcO₄ qui alimente le marquage de la trousse froide.",
+            "caption": "Fig. 1 — Le couple générateur + trousse froide : l'éluat de pertechnétate est la matière première du marquage extemporané."
+          }
+        },
+        {
+          "title": "A2 - A2 - Pourquoi la trousse froide : le problème que résout le kit prêt à l'emploi",
+          "text": "**Le problème posé par le ⁹⁹ᵐTc.** Le radionucléide idéal de la scintigraphie souffre de deux contraintes physiques inconciliables avec une production industrielle classique. D'une part sa **période très courte** (**T½ = 6,0 h**) interdit tout stockage ou transport prolongé : un traceur préparé et expédié la veille aurait perdu, en 24 h (4 périodes), **~94 %** de son activité [1][4]. D'autre part, tel qu'il sort du générateur, le ⁹⁹ᵐTc se présente sous forme de **pertechnétate TcO₄⁻**, où le technétium est à l'état d'oxydation **+7** — une espèce **chimiquement inerte**, incapable de se lier spontanément à une molécule vectrice [2]. Il faut donc, dans chaque service et *au moment de l'emploi*, à la fois disposer du radionucléide frais et le rendre chimiquement réactif.\n\n**La solution : dissocier chimie et radioactivité.** La trousse froide résout ces deux problèmes d'un même geste. Le fabricant conditionne à l'avance, dans un flacon lyophilisé et stable, **tous les réactifs non radioactifs** nécessaires au marquage : le **ligand** (diphosphonate, MAG3, DTPA, HMPAO, sestamibi…), l'agent réducteur **stanneux** qui rendra le technétium réactif, et les stabilisants [1][3]. Le radionucléide à vie courte, lui, est produit *sur place* par le générateur ⁹⁹Mo/⁹⁹ᵐTc — dont le père ⁹⁹Mo (**T½ = 66 h**) sert de réservoir logistique et peut être livré chaque semaine [1]. Le manipulateur n'a plus qu'à réunir les deux : introduire l'éluat de pertechnétate dans la trousse. Aucune synthèse chimique, aucun chauffage complexe, aucune purification poussée ne sont requis — le marquage est souvent une **simple incubation** de quelques minutes à température contrôlée [1][3].\n\n**Ce que le kit prêt à l'emploi apporte concrètement.**\n\n| Contrainte | Sans trousse froide | Avec trousse froide |\n|---|---|---|\n| Vie courte du ⁹⁹ᵐTc (T½ 6 h) [4] | Traceur périmé avant utilisation | ⁹⁹ᵐTc élué **sur place**, marquage **extemporané** [1] |\n| Inertie du TcO₄⁻ (Tc +7) [2] | Impossible de fixer un vecteur | Réduction **Sn²⁺** intégrée à la trousse [1][2] |\n| Complexité de synthèse | Radiochimiste + laboratoire dédié | **Reconstitution en une étape** [1][3] |\n| Reproductibilité | Variable | Formulation standardisée validée pharmacopée [6] |\n\n**Preuve par la robustesse.** L'efficacité du concept se mesure à la fiabilité du marquage en routine hospitalière : sur une série pivot de **2 280 préparations** contrôlées sur 3 ans selon la Pharmacopée européenne, le **taux d'échec n'était que de 0,26 %** (6/2 280), dont 5 rattrapés après nouvelle préparation et un seul échec imputable à un temps d'incubation insuffisant [10]. Aucune différence significative n'a été observée entre opérateurs, ni entre éluats de générateur âgés de 24 h ou de 72 h [10]. La trousse froide industrialise donc, sans radiochimiste dédié, une chimie de coordination fine — au point de faire du ⁹⁹ᵐTc le pilier (**~80 % des actes**) de la médecine nucléaire mondiale [4].",
+          "stats": [
+            {
+              "value": "~94 %",
+              "label": "Activité perdue en 24 h (T½ 6 h)"
+            },
+            {
+              "value": "66 h",
+              "label": "T½ du ⁹⁹Mo, réservoir logistique"
+            },
+            {
+              "value": "0,26 %",
+              "label": "Taux d'échec de marquage (2 280 procédures) [10]"
+            },
+            {
+              "value": "1 étape",
+              "label": "Reconstitution : éluat + incubation"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le générateur, réservoir à décroissance lente",
+              "text": "Toute la logistique tient à la différence de périodes : le **⁹⁹Mo père (T½ 66 h)** décroît lentement et régénère en continu le **⁹⁹ᵐTc fils (T½ 6 h)**. Le rendement d'élution est maximal ~**23–24 h après la traite précédente**, lorsque l'équilibre transitoire est rétabli [1]. Le générateur agit ainsi comme une « vache à traire » (*milking*) hebdomadaire : il rend disponible un radionucléide de 6 h à partir d'un père livrable et stockable plusieurs jours."
+            },
+            {
+              "type": "info",
+              "title": "Position dans la chaîne d'approvisionnement",
+              "text": "La trousse froide est le **dernier maillon** avant l'administration : cyclotron/réacteur → cible ⁹⁹Mo → générateur ⁹⁹Mo/⁹⁹ᵐTc (industrie / service) → **trousse froide reconstituée en radiopharmacie hospitalière** → patient. C'est ce maillon terminal, décentralisé et extemporané, qui permet d'obtenir un traceur spécifique d'organe sans infrastructure de radiochimie lourde [1][4]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de filiation ⁹⁹Mo (T½ 66 h) → ⁹⁹ᵐTc (T½ 6 h, photon 140 keV) → ⁹⁹Tc, illustrant l'équilibre transitoire exploité par le générateur pour fournir un radionucléide de courte période au moment du marquage.",
+            "caption": "Fig. 2 — Filiation ⁹⁹Mo → ⁹⁹ᵐTc : la période courte du fils impose un marquage extemporané, que la trousse froide rend trivial."
+          }
+        },
+        {
+          "title": "A3 - A3 - Anatomie et chimie d'une trousse froide : vecteur, réducteur stanneux, excipients",
+          "text": "Une trousse froide se lit comme un assemblage de trois composants fonctionnels, chacun résolvant une partie du problème de marquage : la **molécule vectrice** (ce qui définit l'organe imagé), l'**agent réducteur stanneux** (ce qui rend le technétium réactif), et les **excipients/stabilisants** (ce qui protège le tout). Le conditionnement — flacon scellé sous **azote**, contenu **lyophilisé** — n'est pas un détail : il est dicté par la fragilité du réducteur [2][3].\n\n**1) La molécule vectrice (ligand).** C'est elle qui confère la spécificité d'organe : chaque trousse correspond à un radiopharmaceutique et à une cible biologique distincte. Le tableau suivant résume les principaux vecteurs marqués au ⁹⁹ᵐTc et leur destination [16][40].\n\n| Vecteur (trousse) | Cible / mécanisme | Organe imagé |\n|---|---|---|\n| MDP / HDP (diphosphonates) | Chimisorption sur l'hydroxyapatite du remodelage osseux | Squelette [16] |\n| DMSA | Fixation corticale tubulaire proximale | Cortex rénal [16] |\n| MAG3 (mertiatide) | Sécrétion tubulaire (haute extraction) | Fonction rénale dynamique [16] |\n| DTPA (pentétate) | Filtration glomérulaire | DFG, rénographie [16] |\n| MIBI / tétrofosmine | Cations lipophiles captés par les mitochondries | Perfusion myocardique [17] |\n| MAA (macroagrégats d'albumine) | Occlusion mécanique des artérioles précapillaires | Perfusion pulmonaire [13] |\n| HMPAO / ECD | Complexe lipophile franchissant la barrière hémato-encéphalique | Perfusion cérébrale [16] |\n| Nanocolloïde d'albumine | Drainage lymphatique / macrophages | Ganglion sentinelle [10][16] |\n\n**2) L'agent réducteur stanneux — le cœur chimique.** Le marquage repose sur une **réaction d'oxydoréduction**. Le pertechnétate élué contient le technétium à l'état **+7** (TcO₄⁻), stable et non réactif : il ne peut se complexer [2]. L'ion **stanneux Sn²⁺**, apporté par le **chlorure stanneux SnCl₂·2H₂O**, cède des électrons et **réduit** le Tc(VII) à un état de valence inférieur (**+5, +4, +3 ou +1** selon le ligand), tandis qu'il s'oxyde lui-même en **Sn⁴⁺ (stannique)** [1][2]. Sous cette forme réduite et réactive, le technétium se **chélate** alors au ligand pour former le radiopharmaceutique désiré. La **quantité de Sn²⁺** présente dans la trousse conditionne à la fois l'efficacité du radiomarquage et la viabilité du kit [1].\n\n**3) Excipients et stabilisants.** Le talon d'Achille du système est précisément le Sn²⁺ : il est **extrêmement sensible à l'oxydation**, y compris par l'oxygène de l'air ou l'oxygène dissous [1]. Une fois le stock d'ion stanneux consommé (par oxydation atmosphérique ou radiolytique), le pertechnétate libre commence à réapparaître dans la préparation, dégradant sa pureté [3]. Deux parades sont intégrées à la trousse : le conditionnement **sous atmosphère inerte** et à l'état **lyophilisé** (qui minimisent le contact avec l'oxygène et l'eau) [3], et l'ajout d'**antioxydants** — acide **ascorbique** ou acide **gentisique** — qui retardent l'oxydation et stabilisent le produit marqué [3].\n\n**La chaîne logique du marquage**, du flacon au produit fini, se résume en une frise (voir steps).",
+          "steps": [
+            {
+              "title": "1 · Trousse froide lyophilisée",
+              "text": "Flacon scellé sous **azote** : ligand + **SnCl₂** (Sn²⁺) + excipients, à l'état sec et inerte, radioactivité nulle [3]."
+            },
+            {
+              "title": "2 · Introduction de l'éluat",
+              "text": "Ajout **aseptique** de l'éluat [⁹⁹ᵐTc]NaTcO₄ (Tc à l'état **+7**, inerte) issu du générateur, dans le sérum physiologique [1][2]."
+            },
+            {
+              "title": "3 · Réduction stanneuse",
+              "text": "Le **Sn²⁺** réduit le Tc(VII) → Tc(+5/+4/+3/+1) réactif ; le Sn²⁺ s'oxyde en **Sn⁴⁺** [1][2]."
+            },
+            {
+              "title": "4 · Chélation au ligand",
+              "text": "Le technétium réduit se **complexe** à la molécule vectrice ; incubation selon la trousse → radiopharmaceutique spécifique d'organe [1]."
+            },
+            {
+              "title": "5 · Contrôle et libération",
+              "text": "Vérification de la **pureté radiochimique (≥ 95 %** en règle générale) avant administration [6][10]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'oxygène, ennemi du marquage",
+              "text": "Toute entrée d'air ou d'oxygène dissous **consomme le Sn²⁺** et fait réapparaître du **pertechnétate libre** (Tc non réduit) [1][3]. Conséquences à l'image : fixation parasite thyroïdienne, gastrique et salivaire (biodistribution du TcO₄⁻ libre). Ne jamais ré-aérer un flacon, respecter le volume et l'activité recommandés, et n'utiliser que des éluats conformes — un éluat trop chargé en oxydants abaisse la pureté radiochimique [1]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi lyophiliser sous azote ?",
+              "text": "La **lyophilisation** (dessiccation par sublimation) élimine l'eau, support des réactions d'oxydation et d'hydrolyse, et confère au kit une **péremption longue** à l'état sec. Le scellement **sous atmosphère inerte** exclut l'oxygène atmosphérique. Ces deux choix de formulation ne servent qu'un but : **protéger l'ion stanneux Sn²⁺** dont dépend tout le marquage [1][3]. C'est la contrainte chimique (fragilité du réducteur) qui dicte toute l'anatomie physique de la trousse."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma de la reconstitution d'une trousse froide : l'éluat de pertechnétate (Tc +7) est introduit dans le flacon lyophilisé contenant le ligand et le chlorure stanneux ; le Sn²⁺ réduit le technétium, qui se chélate au vecteur.",
+            "caption": "Fig. 3 — Anatomie chimique du marquage : le réducteur stanneux (Sn²⁺) transforme le pertechnétate inerte en technétium réactif, chélaté par le vecteur."
+          }
+        },
+        {
+          "title": "B4 - B4 - La fabrication industrielle : formulation, lyophilisation et conditionnement sous atmosphère inerte",
+          "text": "**Le principe : livrer un réducteur, pas un radiopharmaceutique.** La trousse froide n'est pas un radiopharmaceutique fini mais un **flacon multidose stérile, apyrogène et lyophilisé** qui contient tous les ingrédients de la réaction de marquage sauf le technétium [3]. Elle se compose de trois familles de constituants : (i) le **ligand vecteur** (diphosphonate, MAG3, DTPA, HMPAO, sestamibi…) qui déterminera la biodistribution ; (ii) un **agent réducteur**, presque toujours le **chlorure stanneux SnCl₂·2H₂O**, dont l'ion **Sn²⁺** est le véritable moteur chimique ; et (iii) des **excipients et stabilisants** (acide gentisique, acide ascorbique, tampons, agents de charge) [3]. L'ensemble est conçu pour qu'un opérateur puisse, au lit du générateur et sans aucune synthèse chimique, transformer un éluat générique de pertechnétate en un radiopharmaceutique spécifique d'organe (cf. §B5).\n\n**La contrainte qui gouverne toute la formulation : l'oxydabilité du Sn²⁺.** L'ion stanneux est **extrêmement sensible à l'oxydation**, y compris par l'oxygène de l'air ou par l'oxygène dissous dans une solution [3]. Or la **quantité de Sn²⁺ résiduel actif** au moment de la reconstitution conditionne à la fois le rendement de marquage et la durée de vie de la trousse [3]. Deux réponses industrielles en découlent directement : la **lyophilisation** (élimination de l'eau, donc de l'oxygène dissous et de l'hydrolyse) et le **conditionnement sous gaz inerte** (azote, parfois argon) qui chasse l'oxygène de l'espace de tête du flacon [3]. C'est cette double barrière qui permet une péremption de plusieurs mois à température contrôlée alors que la solution reconstituée ne tient, elle, que quelques heures (cf. §B5).\n\n**Rôle des antioxydants et stabilisants.** L'acide **ascorbique** et l'acide **gentisique** sont ajoutés dans certaines trousses pour **retarder l'oxydation** du produit marqué et prolonger la fenêtre d'utilisation post-reconstitution [3]. Le mécanisme est direct : tant qu'il reste du Sn²⁺, le Tc réduit reste chélaté ; **dès que le stock de Sn²⁺ est épuisé** (par l'air ou par l'oxydation radiolytique induite par le rayonnement du ⁹⁹ᵐTc), le Tc se **réoxyde et le pertechnétate libre réapparaît** [3]. Les antioxydants sacrificiels préservent donc le Sn²⁺ en captant les espèces oxydantes à sa place.\n\n**Ce que le fabricant ajuste kit par kit.** La stœchiométrie n'est jamais universelle : chaque monographie fixe la masse de ligand, la masse de Sn²⁺ et la nature des tampons/stabilisants selon la chimie de coordination du Tc réduit (état d'oxydation cible +5, +4, +3 ou +1 selon le ligand) [2]. Le sestamibi (MIBI) exige par exemple un **chauffage** de reconstitution, là où un diphosphonate se marque à froid (cf. §B5, §B6). Le nombre et la taille des particules d'un colloïde ou de macroagrégats d'albumine (MAA) sont eux aussi fixés dès la fabrication : une trousse de ⁹⁹ᵐTc-MAA contient typiquement **2 à 4 millions de particules** d'albumine agrégée, dont **95 %** entre **10 et 100 µm** [13], calibre indispensable au blocage précapillaire pulmonaire.",
+          "stats": [
+            {
+              "value": "SnCl₂·2H₂O",
+              "label": "Réducteur standard (ion Sn²⁺)"
+            },
+            {
+              "value": "N₂ / Ar",
+              "label": "Atmosphère inerte de conditionnement"
+            },
+            {
+              "value": "2-4 M",
+              "label": "Particules par flacon de ⁹⁹ᵐTc-MAA [13]"
+            },
+            {
+              "value": "10-100 µm",
+              "label": "Calibre de 95 % des particules MAA [13]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - le Sn²⁺ est le talon d'Achille de la trousse",
+              "text": "Tout défaut de conditionnement (flacon fissuré, bouchon perméable, atmosphère non inerte) oxyde le Sn²⁺ **avant même** la reconstitution. Le marquage donne alors un excès de **pertechnétate libre** (Tc non réduit) qui se fixera physiologiquement sur thyroïde, estomac et glandes salivaires, dégradant l'image. La lyophilisation sous azote n'est pas un raffinement : c'est la condition de viabilité du produit [3]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - lyophilisation = suppression de deux ennemis à la fois",
+              "text": "En retirant l'eau, la lyophilisation supprime simultanément l'**oxygène dissous** (qui oxyde le Sn²⁺) et l'**hydrolyse** du Tc réduit (source de colloïde Tc-réduit-hydrolysé, cf. §B5). C'est pourquoi la reconstitution avec l'éluat salin, faiblement oxygéné, doit être immédiate et l'espace de tête jamais aéré inutilement [3]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Générateur ⁹⁹Mo/⁹⁹ᵐTc et trousse froide lyophilisée : la colonne d'alumine fournit l'éluat de pertechnétate, la trousse fournit le ligand et le réducteur stanneux conditionnés sous azote.",
+            "caption": "Fig. 1 - Le couple générateur + trousse froide : l'éluat apporte le ⁹⁹ᵐTc(VII), la trousse lyophilisée apporte le ligand et le Sn²⁺ sous atmosphère inerte."
+          }
+        },
+        {
+          "title": "B5 - B5 - Réaliser le marquage au lit du générateur : protocole pas à pas et paramètres critiques",
+          "text": "**La réaction en une phrase.** L'éluat de générateur apporte le ⁹⁹ᵐTc à l'état d'oxydation **+7** (pertechnétate TcO₄⁻), chimiquement **inerte et incapable de se complexer** [2]. L'ion **Sn²⁺** de la trousse le **réduit** à un état de valence inférieur (+5, +4, +3 ou +1 selon le ligand), sous forme réactive qui se **chélate** alors au vecteur pour former le radiopharmaceutique [2]. Dans la manœuvre, le Sn²⁺ cède ses électrons et s'oxyde en Sn⁴⁺ (stannique) [2]. Aucune synthèse : on ajoute un liquide dans un flacon, on attend, on contrôle.\n\n**Prérequis - la qualité de l'éluat conditionne tout le reste.** Avant même de reconstituer, l'éluat doit satisfaire aux contrôles de rupture (breakthrough). La **pureté radionucléidique** exige que **≥ 95 %** de l'activité soit à l'état +7 (TcO₄⁻) [5]. Le **⁹⁹Mo breakthrough** doit rester **≤ 0,15 kBq de ⁹⁹Mo par MBq de ⁹⁹ᵐTc** au moment de l'administration (= 0,15 µCi/mCi), norme USP [1][3][28]. Le **breakthrough en aluminium** (issu de la colonne d'alumine) doit rester **< 5 ppm** (Ph. Eur./BP) ou **< 10 ppm** (USP) [30] : un excès d'Al³⁺ peut agglutiner les hématies et perturber certains marquages [30]. Sur le plan pharmacotechnique, l'**activité spécifique** de l'éluat compte : un éluat trop « vieux » (rapport ⁹⁹ᵐTc/⁹⁹Tc bas, chargé en ⁹⁹Tc de filiation) consomme du Sn²⁺ pour rien et abaisse la pureté radiochimique — d'où l'usage préférentiel d'un générateur élué récemment.\n\n**Paramètres critiques du marquage.** Chaque monographie fixe une fenêtre pour : le **volume et l'activité** d'éluat introduits (activité spécifique cible), le **temps d'incubation**, et la **température** (température ambiante pour la plupart des diphosphonates, DTPA ou MAA ; **ébullition/chauffage** obligatoire pour le sestamibi) — cf. §B6. Le **non-respect du temps d'incubation** est une cause documentée d'échec de marquage [10]. À l'inverse, il faut respecter la **stabilité post-reconstitution** propre à chaque produit : le ⁹⁹ᵐTc-HMPAO **non stabilisé** doit être injecté **dans les 30 min** (dégradation en complexe hydrophile) [8][14] ; l'ajout de **chlorure de cobalt (CoCl₂·6H₂O, 200 µg)** prolonge la stabilité à **≥ 5 h** [14] et le bleu de méthylène maintient **86,9 ± 4,2 %** de complexe à 3 h contre **49,8 ± 8,9 %** sans stabilisant [14] ; l'ECD est intrinsèquement plus stable [14].\n\n**Le contrôle qualité de la préparation finie : la pureté radiochimique (RCP).** Aucune dose ne doit partir sans quantifier la fraction de ⁹⁹ᵐTc réellement liée au vecteur : « au moins **95 %** du technétium-99m doit être lié au radiopharmaceutique avant libération » est la valeur de référence de plusieurs monographies [8]. Trois espèces coexistent et doivent être séparées : le **pertechnétate libre** (Tc non réduit), le **Tc réduit-hydrolysé colloïdal (Tc-HR)** au point de dépôt, et le **radiopharmaceutique désiré** [8]. La méthode de référence est la **chromatographie sur couche mince instantanée (ITLC)** : dépôt sur bandelette **ITLC-SG (silice)**, développement à l'**acétone ou méthyléthylcétone (MEK)** qui mesure le pertechnétate libre, puis développement au **NaCl 0,9 %** qui mesure le colloïde Tc-HR [8][9]. La corrélation ITLC vs HPLC pour le pertechnétate libre atteint **r = 0,999** [9], ce qui fait de l'ITLC une alternative fiable et rapide (comptage en 5-10 min) à l'HPLC. Les impuretés dégradent l'image sans apport diagnostique et irradient inutilement le patient [8].\n\n**Ce que la routine démontre.** Sur une série pivot de **2 280 procédures** de marquage contrôlées sur 3 ans (Ph. Eur.), le **taux d'échec réel n'est que de 0,26 % (6/2 280)**, dont 5 conformes après nouvelle préparation et **1 seul échec définitif dû à un temps d'incubation insuffisant** [10]. Il n'existait **aucune différence significative** ni entre opérateurs, ni entre un éluat de générateur à 24 h et à 72 h [10] — preuve que le procédé, correctement conduit, est remarquablement robuste.",
+          "steps": [
+            {
+              "title": "1. Vérifier l'éluat",
+              "text": "Contrôler ⁹⁹Mo breakthrough (**≤ 0,15 kBq/MBq** [1]), Al (**< 5 ppm** Ph. Eur. [30]) et état +7 (**≥ 95 %** [5]). Privilégier un générateur élué récemment (activité spécifique élevée)."
+            },
+            {
+              "title": "2. Reconstituer aseptiquement",
+              "text": "Introduire le volume et l'activité d'éluat prescrits dans le flacon lyophilisé, sans aérer l'espace de tête. Le Sn²⁺ réduit le Tc(VII), le ligand chélate le Tc réduit [2]."
+            },
+            {
+              "title": "3. Incuber selon la monographie",
+              "text": "Respecter strictement temps et température (ambiante pour MDP/DTPA/MAA, **chauffage/ébullition** pour le sestamibi). Un temps d'incubation insuffisant est une cause avérée d'échec [10]."
+            },
+            {
+              "title": "4. Contrôler la RCP par ITLC",
+              "text": "ITLC-SG + acétone/MEK (pertechnétate libre) et NaCl 0,9 % (colloïde Tc-HR). Exiger **RCP ≥ 95 %** (exceptions par produit, cf. §B6) avant libération [8]."
+            },
+            {
+              "title": "5. Respecter la stabilité post-reconstitution",
+              "text": "Injecter dans la fenêtre du produit : **≤ 30 min** pour le HMPAO non stabilisé [8], plus longue pour les kits stabilisés. Mesurer chaque dose à l'activimètre."
+            }
+          ],
+          "stats": [
+            {
+              "value": "+7 → réduit",
+              "label": "État d'oxydation du Tc modifié par Sn²⁺ [2]"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "RCP minimale usuelle avant libération [8]"
+            },
+            {
+              "value": "≤ 0,15 kBq/MBq",
+              "label": "Limite ⁹⁹Mo breakthrough (USP) [1]"
+            },
+            {
+              "value": "0,26 %",
+              "label": "Taux d'échec de marquage en routine [10]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - les deux impuretés qui trahissent un mauvais marquage",
+              "text": "**Pertechnétate libre** (Sn²⁺ oxydé, réduction incomplète) → fixation thyroïde/estomac/salivaires à l'image. **Colloïde Tc-réduit-hydrolysé** (hydrolyse du Tc réduit, excès de Sn ou eau) → fixation hépatosplénique parasite. L'ITLC à deux systèmes (acétone/MEK + saline) sépare et quantifie les deux d'un seul coup [8][9]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - le HMPAO est le marquage le plus instable du catalogue",
+              "text": "Le ⁹⁹ᵐTc-exametazime (Ceretec) a une spécification abaissée à **≥ 80 %** de complexe lipophile et une fenêtre d'injection de **30 min** seulement [8]. Oxygène dissous, activité spécifique trop élevée et éluat trop vieux sont les trois causes d'effondrement de la RCP. Stabilisation possible par CoCl₂ (≥ 5 h) ou bleu de méthylène [14]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schéma de la réaction de marquage : le pertechnétate ⁹⁹ᵐTcO₄⁻ à l'état +7 est réduit par l'ion stanneux Sn²⁺ (qui s'oxyde en Sn⁴⁺) puis chélaté par le ligand pour former le radiopharmaceutique, avec les deux impuretés pertechnétate libre et colloïde Tc-HR.",
+            "caption": "Fig. 2 - La réduction stanneuse : du pertechnétate inerte (+7) au complexe chélaté, avec les deux voies d'impuretés à contrôler par ITLC."
+          }
+        },
+        {
+          "title": "B6 - B6 - Le catalogue des trousses : familles de vecteurs ⁹⁹ᵐTc et leurs spécificités de marquage",
+          "text": "**Une chimie commune, des vecteurs spécifiques d'organe.** Toutes les trousses partagent le même moteur (réduction stanneuse, cf. §B5) mais se distinguent par le **ligand**, qui fixe la cible biologique, l'état d'oxydation du Tc chélaté, les conditions de marquage et le seuil de RCP exigé. Le ⁹⁹ᵐTc domine la médecine nucléaire conventionnelle (**~80-85 %** de tous les actes [4]) précisément parce que ce catalogue de trousses couvre l'os, le rein, le cœur, le poumon, le cerveau, la thyroïde et le ganglion sentinelle à partir d'un unique éluat générique.\n\n**Familles et cibles biologiques.**\n\n| Famille / vecteur | Cible / mécanisme | Organe imagé | Indications phares |\n|---|---|---|---|\n| **MDP / HDP** (diphosphonates, oxidronate) | Chimisorption sur l'**hydroxyapatite** ; capte le remodelage ostéoblastique | Squelette | Métastases osseuses, ostéomyélite (3 phases), descellement/infection de prothèse [18][19][20] |\n| **DMSA** (succimer) | Fixation **corticale tubulaire proximale** | Cortex rénal | Fonction corticale relative, cicatrices post-pyélonéphrite [12] |\n| **MAG3** (mertiatide) | **Sécrétion tubulaire** (fort taux d'extraction) | Fonction rénale dynamique | Obstruction de la voie excrétrice (scinti diurétique) ; supérieur au DTPA si fonction réduite [11] |\n| **DTPA** (pentétate) | **Filtration glomérulaire** | DFG, débit rénal | Mesure du débit de filtration glomérulaire [11] |\n| **MIBI / tétrofosmine** | Cation lipophile capté par les **mitochondries** (proportionnel au flux) | Perfusion myocardique | Ischémie/viabilité ; aussi parathyroïde, sein [17] |\n| **MAA** (macroagrégats d'albumine) | **Occlusion mécanique** des artérioles précapillaires (10-90 µm) | Perfusion pulmonaire | Scintigraphie V/Q (embolie pulmonaire), shunt hépato-pulmonaire [13] |\n| **HMPAO / ECD** | Complexe **lipophile** franchissant la BHE, piégé en intracellulaire | Perfusion cérébrale | Démences, épilepsie, mort encéphalique ; HMPAO aussi marquage leucocytaire [8][16] |\n| **Pertechnétate libre** | Transport par le **symporteur sodium-iode (NIS)**, non organifié | Thyroïde, muqueuse gastrique | Goitre/nodule, diverticule de Meckel (muqueuse gastrique ectopique) [16] |\n| **Nanocolloïde / tilmanocept** | Drainage lymphatique / récepteur **CD206** des macrophages | Ganglion sentinelle | Mélanome, sein, ORL ; tilmanocept : spécificité **100 %**, ≥1 GS chez **96,2 %** [21][22] |\n\n**Des spécificités de marquage qui ne sont pas interchangeables.** La conduite du marquage et le seuil de RCP varient sensiblement d'une trousse à l'autre — extraits de la série de 2 280 procédures (Ph. Eur.) [10] :\n\n| Trousse (nom commercial) | Seuil RCP Ph. Eur. | Système ITLC (phase mobile) |\n|---|---|---|\n| ⁹⁹ᵐTc-oxidronate (Technescan HDP) | **≥ 95 %** | acétate de sodium / MEK [10] |\n| ⁹⁹ᵐTc-tétrofosmine (Myoview) | **≥ 90 %** | acétone-dichlorométhane 35:65 [10] |\n| ⁹⁹ᵐTc-DTPA (Technescan DTPA) | **≥ 95 %** | saline / MEK [10] |\n| ⁹⁹ᵐTc-albumine colloïde (Nanocoll) | **≥ 95 %** | méthanol-eau 85:15 [10] |\n| ⁹⁹ᵐTc-exametazime (Ceretec/HMPAO) | **≥ 80 %** | saline / MEK [10] |\n| ⁹⁹ᵐTc-sestamibi (Cardiolite) | **≥ 94 %** | éthanol / oxyde d'aluminium [10] |\n| ⁹⁹ᵐTc-DMSA (Renocis) | **≥ 95 %** | MEK [10] |\n\nLa RCP médiane observée s'échelonne de **90,3 à 100 %** selon le produit [10]. Deux enseignements pratiques : le **HMPAO** est l'exception à la règle des 95 % (seuil abaissé à 80 % du fait de son instabilité intrinsèque, cf. §B5), et chaque trousse impose **son propre couple bandelette/solvant** pour séparer correctement ses impuretés — appliquer le système d'une autre trousse fausse le résultat.\n\n**Le cas particulier du pertechnétate.** À l'inverse de tous les autres vecteurs, la scintigraphie thyroïdienne, salivaire ou de Meckel n'utilise **pas de ligand** : on injecte directement l'éluat de **pertechnétate libre**, capté par le NIS mais **non organifié** [16]. Ici, l'absence de réduction stanneuse est voulue — c'est la seule « trousse » qui n'en est pas une. Un blocage salivaire/thyroïdien au **perchlorate de potassium** est utilisé pour la scintigraphie cérébrale ou de Meckel afin de réduire la dose thyroïdienne et améliorer l'image [16].\n\n**Où se situe la trousse dans la chaîne du ⁹⁹ᵐTc.** La trousse froide est le **maillon terminal** qui transforme, en radiopharmacie hospitalière et de façon extemporanée, un éluat générique (pertechnétate) en un radiopharmaceutique spécifique d'organe, sans cyclotron ni synthèse — ce qui explique la centralité du couple **générateur + trousse froide** dans la médecine nucléaire conventionnelle et la domination du ⁹⁹ᵐTc [4].",
+          "stats": [
+            {
+              "value": "~80-85 %",
+              "label": "Part du ⁹⁹ᵐTc dans les actes de MN [4]"
+            },
+            {
+              "value": "≥ 80 %",
+              "label": "RCP minimale du HMPAO (exception) [10]"
+            },
+            {
+              "value": "≥ 94 %",
+              "label": "RCP minimale du sestamibi [10]"
+            },
+            {
+              "value": "90,3-100 %",
+              "label": "Plage de RCP médiane observée en routine [10]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - une trousse, un système ITLC",
+              "text": "Le seuil de RCP ET le couple bandelette/solvant sont **propres à chaque trousse** (HDP au MEK, Myoview à l'acétone-dichlorométhane, Nanocoll au méthanol-eau…) [10]. Utiliser le système d'une autre trousse ne sépare pas les bonnes impuretés et donne une RCP faussement rassurante ou faussement basse. Toujours suivre la monographie du produit reconstitué."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - HMPAO, seuil abaissé et fenêtre courte",
+              "text": "Le ⁹⁹ᵐTc-HMPAO échappe à la règle des 95 % : sa spécification est **≥ 80 %** de complexe lipophile [8][10] et sa fenêtre d'injection de **30 min** (non stabilisé) [8]. Appliquer par réflexe le seuil de 95 % conduirait à rejeter à tort des préparations conformes ; inversement, dépasser 30 min injecte un complexe hydrophile non cérébrotrope."
+            },
+            {
+              "type": "info",
+              "title": "Le pertechnétate n'est pas une trousse froide",
+              "text": "La scintigraphie thyroïde/salivaire/Meckel utilise l'éluat de pertechnétate **directement**, sans ligand ni réduction stanneuse : le ⁹⁹ᵐTc(VII) est capté par le NIS et non organifié [16]. C'est l'exception qui confirme le principe — toutes les autres applications exigent la réduction et la chélation apportées par la trousse."
+            }
+          ],
+          "figure": {
+            "figureRef": "RENOGRAM",
+            "alt": "Panorama des vecteurs ⁹⁹ᵐTc issus de trousses froides et de leurs cibles d'organe : diphosphonates pour l'os, MAG3/DMSA/DTPA pour le rein, MIBI/tétrofosmine pour le cœur, MAA pour le poumon, HMPAO/ECD pour le cerveau, nanocolloïde pour le ganglion sentinelle.",
+            "caption": "Fig. 3 - Un éluat unique, un catalogue d'organes : chaque ligand de trousse froide oriente le ⁹⁹ᵐTc vers une cible biologique spécifique."
+          }
+        },
+        {
+          "title": "C7 - Contrôler le produit marqué : pureté radiochimique par chromatographie (ITLC/HPLC)",
+          "text": "La **pureté radiochimique (PRC)** — fraction de l'activité de ⁹⁹ᵐTc effectivement liée au ligand vecteur — est le contrôle de libération le plus critique d'une trousse froide, car un marquage imparfait n'est **jamais** visible à l'œil dans le flacon : l'éluat et le produit fini sont tous deux des solutions salines incolores. « Au moins **95 %** du technétium-99m doit être lié au radiopharmaceutique avant libération pour administration », valeur de référence de plusieurs monographies de pharmacopée [6]. Un marquage incomplet laisse deux impuretés radiochimiques dont le comportement biologique parasite l'image et irradie inutilement le patient [6][31].\n\n### Les trois espèces à séparer\n\nToute préparation au ⁹⁹ᵐTc contient au plus trois espèces radioactives que le CQ doit résoudre [6][31] :\n\n| Espèce | Origine | Biodistribution parasite | Migration ITLC (repère) |\n|---|---|---|---|\n| **⁹⁹ᵐTc-pertechnétate libre** (TcO₄⁻, +7) | Tc non réduit / réoxydé (Sn²⁺ épuisé) | Thyroïde, estomac, glandes salivaires | Migre avec le **front de solvant** en phase organique |\n| **⁹⁹ᵐTc réduit-hydrolysé colloïdal (Tc-HR)** | Tc réduit non chélaté → colloïde d'oxyde | Foie, rate, système réticulo-endothélial | Reste au **point de dépôt** (Rf ≈ 0) |\n| **Radiopharmaceutique désiré** (Tc-ligand) | Chélation correcte | Cible physiologique voulue | Migration selon le système |\n\n### Méthode de référence : ITLC\n\nLa **chromatographie sur couche mince instantanée (ITLC, *Instant Thin-Layer Chromatography*)** est la méthode de routine : rapide (5–10 min), peu coûteuse, réalisable en radiopharmacie. Le support usuel est une bandelette d'**ITLC-SG** (gel de silice sur fibre de verre) ; on dépose une microgoutte de préparation au point de dépôt, on développe dans une cuve, on sèche, puis on découpe/compte les fractions à l'activimètre ou au compteur puits [8][9]. Le principe : chaque système phase stationnaire / phase mobile est choisi pour **immobiliser** une espèce et **entraîner** les autres, de sorte qu'une seule migration mesure une seule impureté [8][31].\n\nLe système classique à deux bandelettes sépare les trois espèces [8][9][31] :\n- **Bandelette 1 — phase mobile organique (acétone ou méthyléthylcétone, MEK)** : le **pertechnétate libre migre avec le front**, tandis que le colloïde et le complexe restent au dépôt → mesure le **TcO₄⁻ libre**.\n- **Bandelette 2 — phase mobile saline (NaCl 0,9 %)** : le complexe et le pertechnétate migrent, le **colloïde Tc-HR reste au dépôt** → mesure le **Tc-HR**.\n\nLa PRC se déduit par soustraction : **PRC (%) = 100 − % TcO₄⁻ libre − % Tc-HR colloïde** [8][31]. Chaque monographie précise le couple support/solvant validé — l'étude pivot Ph. Eur. sur 2 280 procédures rapporte par exemple acétate de sodium + MEK pour l'oxidronate (HDP), méthanol-eau 85:15 pour le nanocolloïde, éthanol/alumine pour le sestamibi, saline + MEK pour l'exametazime [10].\n\n### HPLC : la méthode arbitre\n\nLa **chromatographie liquide haute performance (HPLC, *High-Performance Liquid Chromatography*)**, en général en phase inverse avec détection de radioactivité en ligne, sépare les espèces avec une résolution supérieure et détecte des impuretés lipophiles/hydrophiles fines (utile pour l'HMPAO, où l'ITLC seule ne distingue pas toujours complexe lipophile et produit de dégradation). Elle sert de méthode de référence en développement et en litige, mais est trop lente et coûteuse pour la routine. La corrélation ITLC vs HPLC pour la mesure du pertechnétate libre atteint **r = 0,99913**, ce qui valide l'ITLC comme substitut fiable de l'HPLC en pratique quotidienne [6].",
+          "steps": [
+            {
+              "title": "Prélever",
+              "text": "Déposer une microgoutte de la préparation marquée au point de dépôt de la bandelette ITLC-SG, sans surcharge (une goutte trop grosse déforme le spot) [8]."
+            },
+            {
+              "title": "Développer (bandelette organique)",
+              "text": "Migrer dans acétone ou MEK : le pertechnétate libre part au front, colloïde et complexe restent au dépôt [8][31]."
+            },
+            {
+              "title": "Développer (bandelette saline)",
+              "text": "Migrer une seconde bandelette dans NaCl 0,9 % : complexe et pertechnétate migrent, le colloïde Tc-HR reste au dépôt [8][31]."
+            },
+            {
+              "title": "Sécher et compter",
+              "text": "Découper les zones (dépôt / front) et mesurer l'activité de chaque fraction à l'activimètre ou au compteur puits [8]."
+            },
+            {
+              "title": "Calculer la PRC",
+              "text": "PRC = 100 − % TcO₄⁻ libre − % Tc-HR ; comparer au seuil de la monographie avant libération [8][31]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "≥ 95 %",
+              "label": "PRC minimale exigée (seuil général de pharmacopée) [6]"
+            },
+            {
+              "value": "5–10 min",
+              "label": "Durée d'un contrôle ITLC de routine [8]"
+            },
+            {
+              "value": "r = 0,99913",
+              "label": "Corrélation ITLC vs HPLC (pertechnétate libre) [6]"
+            },
+            {
+              "value": "3",
+              "label": "Espèces radiochimiques à séparer : Tc-ligand, TcO₄⁻ libre, Tc-HR colloïde [6]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège : un CQ conforme ne garantit pas l'absence d'impureté radionucléidique",
+              "text": "L'ITLC de PRC ne mesure QUE la forme chimique du ⁹⁹ᵐTc, pas le ⁹⁹Mo ni l'aluminium. Le breakthrough du ⁹⁹Mo (≤ 0,15 kBq/MBq [3]) et de l'Al (< 5 ppm Ph. Eur., < 10 ppm USP [5]) se contrôle en amont sur l'éluat du générateur (comptage avec/sans blindage plomb pour le ⁹⁹Mo ; test colorimétrique pour l'Al). Un produit à PRC 99 % reste non libérable si l'éluat est hors spécification radionucléidique [3][5]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert : adapter le seuil au produit",
+              "text": "Le « ≥ 95 % » n'est pas universel. Les monographies fixent des seuils propres : oxidronate/DTPA/DMSA/nanocolloïde ≥ 95 %, tétrofosmine ≥ 90 %, MAA ≥ 90 %, sestamibi ≥ 94 %, et l'exametazime (HMPAO) seulement ≥ 80 % de complexe lipophile [10]. Contrôler la préparation par rapport à SA monographie, pas à un seuil mémorisé."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur ⁹⁹Mo/⁹⁹mTc : colonne d'alumine, élution du pertechnétate au NaCl 0,9 %, puis réduction stanneuse et chélation au ligand donnant le produit marqué contrôlé par ITLC."
+          }
+        },
+        {
+          "title": "C8 - Interpréter les résultats : Rf, calcul du pourcentage et lecture des impuretés",
+          "text": "L'interprétation d'un chromatogramme repose sur le **facteur de rétention (Rf)**, rapport de la distance parcourue par une espèce sur la distance parcourue par le front de solvant, mesuré depuis le point de dépôt :\n\n**Rf = distance migrée par l'espèce ÷ distance du front de solvant.**\n\nUn **Rf ≈ 0** signifie que l'espèce est restée au dépôt (immobilisée) ; un **Rf ≈ 1** qu'elle a suivi le front (entraînée). L'astuce de l'ITLC est justement de choisir un système où l'espèce à quantifier occupe un Rf extrême (0 ou 1), ce qui permet une découpe binaire dépôt/front et un comptage sans lecture d'un profil continu [8][31].\n\n### Lecture des deux bandelettes\n\n| Bandelette (phase mobile) | Espèce au dépôt (Rf ≈ 0) | Espèce au front (Rf ≈ 1) | Ce que mesure la bandelette |\n|---|---|---|---|\n| **Organique** (acétone / MEK) | Complexe **+** colloïde Tc-HR | **Pertechnétate libre** | % TcO₄⁻ libre [8][31] |\n| **Saline** (NaCl 0,9 %) | **Colloïde Tc-HR** | Complexe **+** pertechnétate | % Tc-HR colloïde [8][31] |\n\n### Le calcul, pas à pas\n\nPour chaque bandelette, on calcule le pourcentage de l'espèce mobile ou immobile à partir des activités comptées :\n\n1. **% TcO₄⁻ libre** = (activité du front, bandelette organique ÷ activité totale de la bandelette organique) × 100.\n2. **% Tc-HR colloïde** = (activité du dépôt, bandelette saline ÷ activité totale de la bandelette saline) × 100.\n3. **PRC (%) = 100 − % TcO₄⁻ libre − % Tc-HR colloïde** [8][31].\n\n*Exemple chiffré.* Sur la bandelette organique, le front compte 3 % de l'activité (→ 3 % de TcO₄⁻ libre) ; sur la bandelette saline, le dépôt compte 1,5 % (→ 1,5 % de colloïde). La PRC vaut alors **100 − 3 − 1,5 = 95,5 %**, conforme à un seuil de 95 % [8][31]. Dans une série de routine Ph. Eur. sur 2 280 marquages, la **PRC médiane observée s'échelonne de 90,3 % à 100 %** selon le produit, et le **taux d'échec global n'est que de 6/2 280 = 0,26 %** (5 lots refaits conformes, 1 échec imputé à un temps d'incubation insuffisant) [10].\n\n### Interpréter la nature de l'impureté = remonter à la cause\n\nLa force diagnostique du couple de bandelettes est qu'il **oriente vers l'étiologie de l'échec**, pas seulement vers un chiffre [1][10][31] :\n\n| Impureté dominante | Signification chimique | Cause probable | Signature scintigraphique attendue |\n|---|---|---|---|\n| **TcO₄⁻ libre élevé** | Réduction incomplète ou réoxydation | Sn²⁺ oxydé (air/O₂ dissous), éluat trop « vieux » (rapport ⁹⁹Tc/⁹⁹ᵐTc élevé), oxydant dans l'éluat | Fixation **thyroïde, estomac, glandes salivaires** |\n| **Tc-HR colloïde élevé** | Tc réduit non chélaté agrégé en oxyde | Volume/pH incorrect, ligand insuffisant, air introduit, mauvaise reconstitution | Fixation **foie, rate** (RES) |\n| **Les deux bas, PRC élevée** | Marquage optimal | — | Biodistribution attendue |\n\nAinsi, une image montrant une fixation thyroïdienne/gastrique inattendue doit faire suspecter un **excès de pertechnétate libre** (Sn²⁺ épuisé) ; une fixation hépato-splénique anormale, un **excès de colloïde** [1][31]. Le CQ pré-injection évite précisément d'avoir à faire ce diagnostic rétrospectif sur le patient.",
+          "stats": [
+            {
+              "value": "Rf ≈ 0",
+              "label": "Colloïde Tc-HR (reste au dépôt) [31]"
+            },
+            {
+              "value": "Rf ≈ 1",
+              "label": "Pertechnétate libre en phase organique (suit le front) [8]"
+            },
+            {
+              "value": "90,3–100 %",
+              "label": "PRC médiane observée en routine selon le produit (n=2 280) [10]"
+            },
+            {
+              "value": "0,26 %",
+              "label": "Taux d'échec réel de marquage en routine (6/2 280) [10]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi deux bandelettes et non une",
+              "text": "Une seule bandelette ne peut isoler qu'une impureté : en phase organique, colloïde et complexe co-migrent au dépôt et sont indissociables ; en phase saline, complexe et pertechnétate co-migrent au front. Ce n'est qu'en croisant les deux systèmes qu'on obtient les trois pourcentages, puis la PRC par soustraction [8][31]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège : la sous-charge et le séchage prématuré faussent le Rf",
+              "text": "Un spot de dépôt trop volumineux, un front lu avant migration complète, ou une bandelette contaminée décalent les Rf et peuvent classer à tort du complexe en impureté (faux échec) ou l'inverse (faux succès dangereux). Respecter le volume de dépôt, la hauteur de migration et le temps de développement propres à la méthode validée [8]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert : le cas HMPAO impose l'HPLC ou un système tri-bandelettes",
+              "text": "Pour l'exametazime (⁹⁹ᵐTc-HMPAO), le complexe lipophile se dégrade en complexe secondaire hydrophile que l'ITLC standard ne sépare pas du produit voulu ; d'où des systèmes multi-supports (ou l'HPLC) pour quantifier séparément TcO₄⁻, colloïde, complexe secondaire ET complexe lipophile, seul ce dernier franchissant la barrière hémato-encéphalique [10][14]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma de découpe et de comptage d'une bandelette ITLC : zones dépôt (Rf≈0) et front (Rf≈1), calcul du pourcentage d'impureté et déduction de la pureté radiochimique par soustraction."
+          }
+        },
+        {
+          "title": "C9 - Stabilité, radiolyse et péremption du produit marqué : la fenêtre d'utilisation",
+          "text": "Une PRC conforme au temps zéro ne garantit rien au-delà : le produit marqué **se dégrade dans le flacon**, ce qui définit une **fenêtre d'utilisation** (temps de validité post-reconstitution) propre à chaque trousse. Trois mécanismes gouvernent cette décroissance de qualité, en plus de la simple décroissance physique du ⁹⁹ᵐTc (**T½ = 6,0 h** [4]).\n\n### 1. Épuisement / réoxydation de l'étain(II)\n\nL'ion **stanneux Sn²⁺** est le maillon fragile : « les ions stanneux sont très sensibles à l'oxydation, même à l'exposition à l'air atmosphérique ou à l'oxygène dissous ; la quantité d'ion stanneux présente dans les trousses détermine l'efficacité du radiomarquage et la viabilité de la trousse » [1]. Une fois le Sn²⁺ consommé par l'oxygène de l'air, l'oxygène dissous de l'éluat ou l'oxydation radiolytique, plus rien ne maintient le Tc à l'état réduit : le **pertechnétate se reforme** progressivement, faisant chuter la PRC [3]. C'est pourquoi la trousse est lyophilisée et scellée sous **azote**, et pourquoi on limite le volume d'air introduit à la reconstitution [1][3].\n\n### 2. Radiolyse (auto-radiolyse)\n\nLes rayonnements émis par le ⁹⁹ᵐTc lui-même ionisent l'eau du milieu et génèrent des **espèces réactives de l'oxygène** (radicaux hydroxyle, peroxyde) qui oxydent le Sn²⁺ résiduel et le complexe. Cette **radiolyse** s'aggrave avec l'**activité volumique** (concentration radioactive) : un marquage à très haute activité spécifique dégrade plus vite. La parade est l'ajout d'**antioxydants/stabilisants** dans la trousse — **acide ascorbique** ou **acide gentisique** — qui piègent les radicaux et retardent la réapparition du pertechnétate [3].\n\n### 3. Décroissance physique et vieillissement de l'éluat\n\nOutre la perte d'activité (T½ 6 h [4]), la qualité du marquage dépend du **rapport ⁹⁹ᵐTc/⁹⁹Tc** de l'éluat : un éluat « vieux » (générateur non traité depuis longtemps) est riche en ⁹⁹Tc froid (T½ ≈ 2,1 × 10⁵ ans), lequel consomme le ligand et le Sn²⁺ sans produire de signal utile, abaissant le rendement. Le rendement d'élution est maximal ~**23–24 h** après l'élution précédente, à l'équilibre transitoire ⁹⁹Mo/⁹⁹ᵐTc [2]. En pratique, l'étude Ph. Eur. de routine n'a toutefois montré **aucune différence significative** de PRC entre éluats de générateur à 24 h et à 72 h (p = ns), la robustesse des trousses commerciales absorbant cette variation [10].\n\n### Fenêtres d'utilisation : le cas critique de l'HMPAO\n\nLa stabilité post-reconstitution varie énormément d'un produit à l'autre. L'**exametazime (⁹⁹ᵐTc-HMPAO)** en est le cas extrême — le complexe lipophile primaire, seul à franchir la barrière hémato-encéphalique, se convertit rapidement en complexe secondaire hydrophile inactif :\n\n| Produit | Spécification / stabilité post-reconstitution | Remarque |\n|---|---|---|\n| **HMPAO non stabilisé** | À injecter dans les **30 min** ; PRC ≈ **80 % à 1 h** puis décroît [8] | Complexe lipophile ≥ 80 % exigé [10] |\n| HMPAO + bleu de méthylène | **86,9 ± 4,2 % à 3 h** (vs 49,8 ± 8,9 % sans stabilisant) [8] | Stabilisation par piégeage radicalaire |\n| HMPAO + chlorure de cobalt (CoCl₂·6H₂O, 200 µg) | Stabilité prolongée **≥ 5 h** [8] | Additif stabilisant |\n| **⁹⁹ᵐTc-ECD** | Intrinsèquement **plus stable** que l'HMPAO | Alternative de perfusion cérébrale [14] |\n| Générateur — éluat de pertechnétate | Péremption typique **12 h**, ~2–3 mL | Matière première du marquage [1] |\n\nLa règle opérationnelle : **respecter la péremption du produit fini indiquée par la monographie, l'injecter dans sa fenêtre de PRC valide, et re-contrôler la PRC si le délai d'utilisation est long ou si une image atypique fait suspecter une dégradation** [8][10].",
+          "steps": [
+            {
+              "title": "Reconstituer sous atmosphère préservée",
+              "text": "Introduire l'éluat aseptiquement sans injecter d'air excédentaire ; le conditionnement sous azote et la lyophilisation protègent le Sn²⁺ de l'oxydation [1][3]."
+            },
+            {
+              "title": "Respecter temps et température d'incubation",
+              "text": "Suivre la monographie : un temps d'incubation insuffisant est une cause documentée d'échec de marquage [10]."
+            },
+            {
+              "title": "Noter l'heure de marquage",
+              "text": "Étiqueter le flacon avec l'heure de reconstitution pour tracer la fenêtre de validité (péremption produit fini) [8]."
+            },
+            {
+              "title": "Contrôler la PRC avant libération",
+              "text": "Vérifier la PRC dans la fenêtre valide ; pour les produits instables (HMPAO), injecter sans délai [8][10]."
+            },
+            {
+              "title": "Re-contrôler si délai long ou image douteuse",
+              "text": "En cas d'utilisation tardive ou de biodistribution atypique, refaire l'ITLC : la radiolyse et l'épuisement du Sn²⁺ peuvent avoir reformé du pertechnétate [3][8]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "6,0 h",
+              "label": "Période physique du ⁹⁹ᵐTc (décroissance de l'activité) [4]"
+            },
+            {
+              "value": "30 min",
+              "label": "Fenêtre d'injection de l'HMPAO non stabilisé [8]"
+            },
+            {
+              "value": "≥ 5 h",
+              "label": "Stabilité de l'HMPAO stabilisé au chlorure de cobalt [8]"
+            },
+            {
+              "value": "12 h",
+              "label": "Péremption typique de l'éluat de pertechnétate [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège : le stabilisant conditionne la fenêtre, pas seulement la trousse",
+              "text": "Injecter un HMPAO non stabilisé au-delà de 30 min revient à administrer un complexe majoritairement dégradé (hydrophile) qui ne franchit plus la barrière hémato-encéphalique : l'image de perfusion cérébrale est ininterprétable. La stabilisation (cobalt, bleu de méthylène) élargit la fenêtre à ≥ 3–5 h, mais impose ses propres contrôles [8]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert : radiolyse ∝ activité volumique",
+              "text": "À ligand et volume fixes, augmenter l'activité concentrée dans le flacon accélère la radiolyse et la chute de PRC. En pratique, respecter la plage d'activité/volume de la notice et ne pas sur-concentrer un marquage « pour gagner du temps » ; les antioxydants (ascorbique, gentisique) tamponnent mais ne suppriment pas ce phénomène [3]."
+            },
+            {
+              "type": "info",
+              "title": "Robustesse rassurante en routine",
+              "text": "Malgré ces mécanismes, la série pivot Ph. Eur. de 2 280 marquages ne relève aucune différence de PRC entre opérateurs ni entre éluats à 24 h vs 72 h, et un taux d'échec de 0,26 % [10] : les trousses commerciales modernes tolèrent des conditions variées tant que la reconstitution et la fenêtre d'utilisation sont respectées."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Frise combinant la décroissance physique du ⁹⁹ᵐTc (T½ 6 h) et la dégradation radiochimique post-reconstitution (épuisement du Sn²⁺, radiolyse), délimitant la fenêtre d'utilisation du produit marqué."
+          }
+        },
+        {
+          "title": "D10 - D10 - Diagnostic des échecs de marquage : arbre de causes et actions correctives",
+          "text": "Un **échec de marquage** se définit par une **pureté radiochimique (PRC)** inférieure au seuil de la monographie applicable (le plus souvent **≥ 95 %**, avec exceptions : tétrofosmine ≥ 90 %, sestamibi ≥ 94 %, HMPAO ≥ 80 %) [6][7]. Il est heureusement rare : sur une série pivot de **2 280 marquages** contrôlés sur 3 ans selon la Pharmacopée Européenne (Ph. Eur.), le taux d'échec réel n'était que de **6 / 2 280 = 0,26 %**, dont **5 corrigés** après nouvelle préparation et **1 seul échec vrai** imputé à un **temps d'incubation insuffisant** [10]. Le diagnostic d'un échec repose sur la lecture du **profil chromatographique (ITLC)** : la nature de l'impureté prédominante oriente d'emblée vers la cause.\n\n**Lecture du profil ITLC — les trois espèces.** Le contrôle de PRC par chromatographie sur couche mince instantanée (ITLC-SG, *Instant Thin-Layer Chromatography*) sépare trois espèces dont la répartition est diagnostique [8][31] :\n\n| Espèce détectée | Migration ITLC | Cause probable | Sens clinique |\n|---|---|---|---|\n| **Pertechnétate libre** ⁹⁹ᵐTcO₄⁻ (non réduit) | Migre au front avec acétone / MEK | **Sn²⁺ oxydé / épuisé** (air, éluat trop oxydant) | Fixation thyroïde, estomac, glandes salivaires |\n| **Tc réduit-hydrolysé colloïdal (Tc-HR)** | Reste au **point de dépôt** (saline) | Excès d'hydrolyse, pH incorrect, Al³⁺, mauvaise reconstitution | Fixation hépatique/RES, points chauds parasites |\n| **Radiopharmaceutique désiré** (Tc-ligand) | Migration spécifique du système | — | Espèce utile, à maximiser |\n\n**Principe physico-chimique de la défaillance.** Le maillon critique est l'ion **stanneux Sn²⁺**, agent réducteur qui fait passer le Tc de l'état **+7** (TcO₄⁻ inerte) à un état inférieur (+5, +4, +3) chélatable par le ligand [1][2]. « La quantité d'ion stanneux présente dans les trousses lyophilisées détermine l'efficacité du radiomarquage ainsi que la viabilité de la trousse » [1]. Or **le Sn²⁺ est extrêmement sensible à l'oxydation**, même à l'air ambiant ou par l'oxygène dissous [1] : dès que le Sn²⁺ est consommé (par l'air ou l'oxydation radiolytique), le pertechnétate libre commence à réapparaître [3]. À l'inverse, un **excès d'oxydant dans l'éluat** (éluat trop « vieux », rapport ⁹⁹Tc/⁹⁹ᵐTc élevé, présence d'Al³⁺ ou de ⁹⁹Mo) abaisse aussi la PRC [5].\n\n**Arbre de causes → actions correctives.**\n\n| Anomalie observée | Cause racine | Action corrective |\n|---|---|---|\n| Excès de **TcO₄⁻ libre** | Sn²⁺ oxydé (air introduit, aiguille de mise à l'air), éluat trop oxydant, activité spécifique excessive | Repurger l'azote, réduire le volume d'air, utiliser un éluat plus « frais », refaire le marquage |\n| Excès de **colloïde Tc-HR** | pH incorrect, reconstitution trop rapide/incomplète, **Al³⁺ > 10 ppm (USP) / 5 ppm (Ph. Eur.)** [5] | Contrôler l'Al à la bandelette, vérifier le pH, homogénéiser doucement |\n| **PRC globalement basse** (HMPAO surtout) | Temps d'incubation non respecté, éluat « vieux », O₂ dissous | Respecter strictement le temps ; injecter HMPAO **dans les 30 min** [8] ; stabiliser |\n| Présence de **⁹⁹Mo** (breakthrough) | Fuite de colonne du générateur | Refuser l'éluat si **> 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** [1][28] |\n\n**Cas particulier — le ⁹⁹ᵐTc-HMPAO (exametazime), le marquage le plus fragile.** Sa spécification impose **≥ 80 %** de complexe lipophile, et la trousse doit être utilisée **dans les 30 min** suivant la reconstitution [8]. Sans stabilisant, la PRC n'atteint que **~80 % à 1 h** puis décroît [8]. Deux stabilisations documentées : le **bleu de méthylène** (**86,9 ± 4,2 % à 3 h** contre **49,8 ± 8,9 %** sans stabilisant) [8][32] et le **chlorure de cobalt** (CoCl₂·6H₂O, 200 µg), qui prolonge la stabilité à **≥ 5 h** [8]. Reconnaître un échec HMPAO passe donc par un contrôle **immédiat** après reconstitution — un contrôle tardif diagnostiquerait à tort la trousse.",
+          "stats": [
+            {
+              "value": "0,26 %",
+              "label": "Taux d'échec réel (6/2 280 marquages, Ph. Eur.)"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "Seuil PRC général (monographies)"
+            },
+            {
+              "value": "30 min",
+              "label": "Fenêtre d'emploi du HMPAO non stabilisé"
+            },
+            {
+              "value": "≥ 80 %",
+              "label": "Seuil PRC spécifique du HMPAO"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — diagnostiquer sans lire le profil ITLC",
+              "text": "Un « échec » global ne dit rien de sa cause. C'est la **répartition entre pertechnétate libre et colloïde Tc-HR** qui oriente : le premier signe un **défaut de réduction** (Sn²⁺ épuisé), le second un **excès d'hydrolyse** (pH, Al³⁺, reconstitution). Toujours développer les **deux** systèmes (acétone/MEK **et** NaCl 0,9 %) avant de conclure [8][31]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — HMPAO se contrôle tout de suite",
+              "text": "Contrôler un ⁹⁹ᵐTc-HMPAO non stabilisé **immédiatement** : sa PRC chute à **~80 % dès 1 h** [8]. Un contrôle tardif rejetterait une trousse pourtant conforme au moment de l'emploi. Si un délai est inévitable, stabiliser (bleu de méthylène ou CoCl₂) [8][32]."
+            },
+            {
+              "type": "info",
+              "title": "Deux repères rassurants",
+              "text": "L'étude pivot n'a montré **aucune différence significative** de PRC entre opérateurs (p = ns) ni entre éluats de générateur à **24 h vs 72 h** (p = ns) [10] : un échec isolé oriente vers un incident ponctuel (incubation, oxydation) plutôt que vers l'ancienneté de l'éluat ou l'opérateur."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Chaîne du technétium-99m : colonne d'alumine du générateur 99Mo/99mTc, élution du pertechnétate, réduction stanneuse et chélation au ligand dans la trousse froide — points de défaillance possibles.",
+            "caption": "Fig. 1 — De l'éluat au produit fini : les étapes où un échec de marquage peut naître (oxydation du Sn²⁺, breakthrough, incubation)."
+          }
+        },
+        {
+          "title": "D11 - D11 - Cadre réglementaire, pharmacopées et statut du marquage à la radiopharmacie",
+          "text": "La préparation extemporanée d'un radiopharmaceutique au ⁹⁹ᵐTc à partir d'une trousse froide est un acte **pharmaceutique encadré** : elle produit un **médicament** qui doit satisfaire, avant libération, aux monographies de la **Pharmacopée Européenne (Ph. Eur.)** et/ou de l'**United States Pharmacopeia (USP)**. Ces référentiels fixent des critères de qualité mesurables — PRC, pureté radionucléidique, pureté chimique, pH, stérilité, apyrogénicité — dont plusieurs sont chiffrés et opposables [3][5][6].\n\n**Contrôles portant sur l'éluat du générateur (matière première).**\n\n| Contrôle | Ph. Eur. | USP | Méthode |\n|---|---|---|---|\n| **⁹⁹Mo breakthrough** | ≤ **0,15 kBq/MBq** (= 0,15 µCi/mCi) au moment de l'administration | ≤ **0,15 kBq/MBq** | Comptage **avec / sans blindage de plomb** (le Pb arrête le 140 keV du ⁹⁹ᵐTc, laisse passer les γ ~740 keV du ⁹⁹Mo) [5][30] |\n| **Aluminium** | < **5 ppm** | < **10 ppm** | Bandelette colorimétrique [5] |\n| **Pureté radionucléidique globale** | ≥ **99,88 %** | ≥ **99,96 %** (générateur de fission) | Spectrométrie γ [3] |\n| **État d'oxydation** | ≥ **95 %** du Tc à l'état **+7** (TcO₄⁻) | ≥ **95 %** | ITLC [5] |\n\nUn excès d'**Al³⁺** peut provoquer l'agglutination des hématies et perturber certains marquages, d'où sa limite stricte [5]. Le ⁹⁹Mo (période **T½ = 66 h**) émet des γ de haute énergie potentiellement délétères pour le patient, d'où la limite de breakthrough vérifiée **au moment de l'administration** — c'est-à-dire recalculée en tenant compte de la décroissance respective du ⁹⁹ᵐTc (T½ ≈ 6 h) et du ⁹⁹Mo [1][2].\n\n**Contrôle portant sur le produit fini — la PRC.** Règle générale de pharmacopée : « **au moins 95 %** du technétium-99m doit être lié au radiopharmaceutique avant libération pour administration au patient » [6]. Les monographies fixent toutefois un seuil **par produit**, reflet de la robustesse chimique du complexe :\n\n| Trousse (monographie) | Seuil PRC | Phase mobile ITLC de référence |\n|---|---|---|\n| ⁹⁹ᵐTc-oxidronate (HDP) | ≥ **95 %** | acétate de sodium, méthyléthylcétone [10] |\n| ⁹⁹ᵐTc-DTPA | ≥ **95 %** | saline, méthyléthylcétone [10] |\n| ⁹⁹ᵐTc-DMSA | ≥ **95 %** | méthyléthylcétone [10] |\n| ⁹⁹ᵐTc-albumine colloïde (nanocolloïde) | ≥ **95 %** | méthanol-eau 85:15 [10] |\n| ⁹⁹ᵐTc-sestamibi | ≥ **94 %** | éthanol / oxyde d'aluminium [10] |\n| ⁹⁹ᵐTc-tétrofosmine | ≥ **90 %** | acétone-dichlorométhane 35:65 [10] |\n| ⁹⁹ᵐTc-MAA | ≥ **90 %** | — [10] |\n| ⁹⁹ᵐTc-exametazime (HMPAO) | ≥ **80 %** | saline, méthyléthylcétone [10] |\n\nLa méthode de référence est l'**ITLC**, retenue plutôt que l'HPLC pour son coût, sa rapidité (5–10 min) et sa fiabilité : la corrélation ITLC vs HPLC pour le dosage du pertechnétate libre atteint **r = 0,99913** [8][9]. Le coût unitaire d'un test de CQ a été évalué à **13,81 €** (16 % consommables, 84 % main-d'œuvre), pour une dépense totale de **31 483,51 €** sur 3 ans dans l'étude pivot [10] — un ordre de grandeur utile pour dimensionner un contrôle de routine.\n\n**Recommandations professionnelles et statut du marquage.** Au-delà des pharmacopées, les sociétés savantes encadrent la pratique : l'**EANM** (*European Association of Nuclear Medicine*) publie des guides de bonne pratique (scintigraphie osseuse, marquage des leucocytes au ⁹⁹ᵐTc-HMPAO) et la **carte de dose pédiatrique** (EANM Dosage Card v5.7.2016) fixant les activités par classe A/B/C [10][41]. La trousse froide occupe une **position stratégique** dans la chaîne du ⁹⁹ᵐTc : c'est le maillon terminal qui transforme, **en radiopharmacie hospitalière et de façon extemporanée**, un éluat générique (pertechnétate) en radiopharmaceutique spécifique d'organe, sans cyclotron ni synthèse complexe — ce qui explique la domination du ⁹⁹ᵐTc (**~80–85 %** de tous les actes de médecine nucléaire) [2][4].",
+          "stats": [
+            {
+              "value": "0,15 kBq/MBq",
+              "label": "Limite ⁹⁹Mo breakthrough (Ph. Eur./USP)"
+            },
+            {
+              "value": "< 5 ppm",
+              "label": "Limite Al³⁺ (Ph. Eur.)"
+            },
+            {
+              "value": "≥ 99,88 %",
+              "label": "Pureté radionucléidique (Ph. Eur.)"
+            },
+            {
+              "value": "13,81 €",
+              "label": "Coût unitaire d'un test de CQ [10]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — divergence Ph. Eur. / USP sur l'aluminium",
+              "text": "La limite d'Al³⁺ **diffère** entre référentiels : **< 5 ppm (Ph. Eur.)** contre **< 10 ppm (USP)** [5]. Appliquer la norme du référentiel opposable dans votre pays. De même, la pureté radionucléidique exigée n'est pas identique (**99,88 %** Ph. Eur. vs **99,96 %** USP) [3]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le breakthrough se juge « à l'administration »",
+              "text": "La limite de ⁹⁹Mo (0,15 kBq/MBq) s'entend **au moment de l'administration**, pas à l'élution [1]. Comme le ⁹⁹ᵐTc (T½ 6 h) décroît bien plus vite que le ⁹⁹Mo (T½ 66 h), le rapport **augmente avec le temps** : un éluat conforme à l'élution peut ne plus l'être quelques heures plus tard."
+            },
+            {
+              "type": "info",
+              "title": "Pourquoi ITLC plutôt qu'HPLC ?",
+              "text": "L'ITLC est retenue comme méthode de routine pour son coût, sa rapidité (5–10 min) et sa fiabilité : corrélation avec l'HPLC de **r = 0,99913** pour le pertechnétate libre [8]. L'HPLC reste une méthode d'appui plus coûteuse, réservée aux cas litigieux."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Chaîne de contrôle qualité de la trousse froide : contrôles de l'éluat (99Mo, Al, oxydation) puis du produit fini (PRC par ITLC) avant libération pharmaceutique.",
+            "caption": "Fig. 2 — Deux niveaux de contrôle réglementaire : l'éluat (matière première) puis le produit fini (PRC) avant libération."
+          }
+        },
+        {
+          "title": "D12 - D12 - Trousses préparées en interne (in-house), fractionnement et enjeux africains/ressources limitées",
+          "text": "Dans les pays à ressources limitées, l'accès aux trousses froides commerciales est contraint par le **coût**, les **délais d'importation** et la courte période du ⁹⁹ᵐTc (**T½ = 6 h**), qui interdit tout stockage prolongé et impose un approvisionnement quasi quotidien [2][4]. Deux stratégies permettent d'y répondre : le **fractionnement** de trousses commerciales et la **préparation locale (in-house)** de trousses.\n\n**Fractionnement d'une trousse commerciale.** Une trousse est un **flacon multidose** conçu pour être reconstitué en une fois puis réparti en plusieurs doses patient. Le **fractionnement** consiste à ne reconstituer qu'une **fraction** du contenu lyophilisé pour économiser le produit lorsque le nombre de patients est faible — pratique courante en centre à faible volume. Une étude comparant plusieurs **méthodes de fractionnement de trousses froides de MDP** a montré que la qualité du produit (PRC ≥ 95 %) peut être préservée selon la méthode retenue, mais que le fractionnement **introduit des variables supplémentaires** : rapport ligand/Sn²⁺ modifié, risque d'introduction d'air (oxydation du Sn²⁺), et exposition répétée du flacon [27]. La règle de sécurité est de **contrôler la PRC de chaque lot fractionné** avant libération [27].\n\n**Trousses préparées in-house.** La préparation locale de trousses (pesée du ligand, du SnCl₂·2H₂O, ajustement du pH, lyophilisation sous azote) est décrite dans plusieurs contextes à ressources limitées pour affranchir le service du circuit d'importation. Elle exige la **maîtrise des paramètres critiques** identifiés au §D10 : quantité exacte de Sn²⁺ (qui « détermine l'efficacité du radiomarquage et la viabilité de la trousse » [1]), **conditionnement sous atmosphère inerte** (azote) pour protéger le Sn²⁺ de l'oxydation [1], lyophilisation, stérilité et apyrogénicité. Le rendement dépend directement de la préservation du Sn²⁺ : toute entrée d'air génère du pertechnétate libre [1][3].\n\n**Contraintes structurelles spécifiques.**\n\n| Enjeu | Contrainte en ressources limitées | Levier |\n|---|---|---|\n| **Approvisionnement ⁹⁹Mo/⁹⁹ᵐTc** | ⁹⁹Mo importé (T½ 66 h) ; générateur à remplacer ~hebdomadairement | Mutualisation régionale, planification des livraisons |\n| **Rendement d'élution** | Optimal ~**23–24 h** après l'élution précédente (équilibre transitoire) [2] | Programmer les élutions selon le calendrier des examens |\n| **Contrôle qualité** | ITLC exige bandelettes, solvants, activimètre | ITLC = méthode **la moins coûteuse** (13,81 €/test) [10] |\n| **Coût du CQ** | Main-d'œuvre = **84 %** du coût unitaire [10] | Former le personnel ; standardiser les procédures |\n| **Radioprotection** | Dose aux doigts pouvant approcher **500 mSv/an** (limite réglementaire) [39] | **Protège-seringue** Pb/W (−**75 à −85 %** de dose aux doigts) [39] ; enceinte blindée [39] |\n\n**Radioprotection en radiopharmacie artisanale.** La contrainte dosimétrique majeure porte sur les **extrémités (doigts)** : les doses au bout des doigts peuvent approcher ou dépasser la limite annuelle de **500 mSv** [39], avec un débit de dose de l'ordre de **1,35–1,62 mGy/h/MBq** pour une seringue non protégée [39]. Le **protège-seringue** en plomb ou tungstène réduit cette dose de **75–85 %** [39] et reste l'équipement prioritaire, avant même l'enceinte blindée (hotte/enceinte de sécurité microbiologique plombée, classe **ISO 5 / grade A**) recommandée pour l'élution et la reconstitution [39]. Ces mesures, peu coûteuses, sont la première ligne de protection dans un contexte à ressources limitées.\n\n**Pédiatrie et ajustement des activités.** La carte de dose pédiatrique EANM permet d'adapter finement l'activité (donc l'exposition) sans matériel supplémentaire : **activité = activité de base × facteur-poids**, par classe (A = traceurs rénaux, B = « autres » avec base **35 MBq** pour le MDP, C = thyroïde) [41]. C'est un outil d'optimisation particulièrement pertinent là où chaque MBq compte, y compris pour maximiser l'usage d'un éluat fractionné [41].",
+          "stats": [
+            {
+              "value": "~80–85 %",
+              "label": "Part du ⁹⁹ᵐTc dans les actes de médecine nucléaire [2][4]"
+            },
+            {
+              "value": "−75 à −85 %",
+              "label": "Réduction de dose aux doigts (protège-seringue) [39]"
+            },
+            {
+              "value": "500 mSv/an",
+              "label": "Limite de dose aux extrémités (doigts) [39]"
+            },
+            {
+              "value": "23–24 h",
+              "label": "Rendement d'élution optimal (équilibre transitoire) [2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — fractionner sans recontrôler",
+              "text": "Le fractionnement modifie le rapport ligand/Sn²⁺ et multiplie les manipulations du flacon (risque d'oxydation du Sn²⁺ par l'air) [27]. **Chaque lot fractionné doit voir sa PRC contrôlée** avant libération : un fractionnement mal maîtrisé génère du pertechnétate libre non détecté [1][27]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — protéger le Sn²⁺ avant tout",
+              "text": "En préparation in-house comme en fractionnement, la variable qui gouverne le succès est la **préservation de l'ion stanneux** : conditionnement sous **azote**, minimisation de l'air introduit, éluat pas trop oxydant [1][3]. « La quantité d'ion stanneux détermine l'efficacité du radiomarquage et la viabilité de la trousse » [1]."
+            },
+            {
+              "type": "info",
+              "title": "Le CQ n'est pas un luxe",
+              "text": "L'ITLC est la méthode de CQ **la moins coûteuse** (13,81 €/test, dont 84 % de main-d'œuvre) [10], accessible même en ressources limitées. Elle sécurise à la fois les trousses commerciales fractionnées et les trousses in-house, où la variabilité de préparation est plus grande [10][27]."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Générateur 99Mo/99mTc éluté au sérum physiologique alimentant, en radiopharmacie locale, le fractionnement et le marquage extemporané de trousses froides — cœur de l'autonomie en ressources limitées.",
+            "caption": "Fig. 3 — Le couple générateur + trousse froide : socle de l'autonomie radiopharmaceutique en ressources limitées."
+          }
+        },
+        {
+          "title": "E13 - Cas pratiques commentés : marquages ratés, artefacts et incidents de kit",
+          "text": "Ancrer par l'exemple : chaque cas suit la trame **contexte → contrôle qualité (CQ) → analyse → conduite**, comme un vrai *teaching file* de radiopharmacie. Les valeurs de seuils renvoient aux §3 et §4 des données sources ; on garde à l'esprit que la pureté radiochimique (**PRC**) minimale de libération est de **≥ 95 %** pour la plupart des monographies de la Pharmacopée européenne (Ph. Eur.), avec des exceptions documentées (HMPAO ≥ 80 %, sestamibi ≥ 94 %, tétrofosmine ≥ 90 %).[6][7][10]\n\nLa logique commune de tous ces incidents est physico-chimique : l'ion **stanneux Sn²⁺** est l'espèce fragile de la trousse. Dès qu'il est consommé (oxydation par l'air, l'oxygène dissous ou la radiolyse), le technétium n'est plus réduit et le **pertechnétate libre [⁹⁹ᵐTc]TcO₄⁻** réapparaît ; un excès de réduction-hydrolyse génère à l'inverse du **colloïde Tc-HR** (technétium réduit-hydrolysé) qui reste au point de dépôt en chromatographie sur couche mince instantanée (**ITLC**).[2][3][8][31] Reconnaître à l'image la signature de chaque impureté est l'objectif de cette section.",
+          "steps": [
+            {
+              "title": "Cas 1 — Osseux « nul » : biodistribution parasite par pertechnétate libre (Sn²⁺ oxydé)",
+              "text": "*Contexte.* ⁹⁹ᵐTc-HDP (oxidronate) reconstitué avec un éluat en fin de journée ; le flacon a été piqué plusieurs fois, aiguille laissée en place entre deux prélèvements. *Images.* Faible captation squelettique, mais **fixation nette de la thyroïde, des glandes salivaires et de l'estomac**, avec activité vésicale conservée. *CQ.* ITLC-SG, phase mobile acétone/méthyléthylcétone : fraction de **pertechnétate libre** anormalement élevée, PRC < seuil Ph. Eur. **≥ 95 %**.[6][10] *Analyse.* L'entrée d'air par l'aiguille laissée en place a **oxydé le Sn²⁺** ; sans réducteur, une partie du Tc reste à l'état **+7** (TcO₄⁻), transporté par le symporteur sodium-iode (**NIS**) → thyroïde, salivaires, muqueuse gastrique.[2][16] *Conduite.* Lot **non conforme, non administré** ; re-préparer avec un flacon neuf, retirer l'aiguille après chaque prélèvement, limiter le nombre de piqûres et respecter l'activité/volume de reconstitution."
+            },
+            {
+              "title": "Cas 2 — HMPAO cérébral dégradé : le piège de la fenêtre de 30 minutes",
+              "text": "*Contexte.* ⁹⁹ᵐTc-exametazime (HMPAO/Ceretec) non stabilisé, injecté **~55 min** après reconstitution faute d'organisation. *Images.* SPECT de perfusion cérébrale de faible contraste, activité de fond élevée, **captation rénale/vésicale et thyroïdienne** inhabituelle. *CQ.* PRC du complexe lipophile **~80 % à 1 h** et en baisse — sous la spécification déjà permissive de **≥ 80 %**.[8] *Analyse.* Le complexe primaire lipophile de l'HMPAO se transforme spontanément en **espèce hydrophile secondaire** qui ne franchit plus la barrière hémato-encéphalique ; la trousse non stabilisée doit être utilisée **dans les 30 min**.[8][15] *Conduite.* Jeter la préparation ; à l'avenir, injecter **< 30 min**, ou utiliser une formulation stabilisée — **bleu de méthylène** (PRC **86,9 ± 4,2 % à 3 h** vs **49,8 ± 8,9 %** sans stabilisant) ou **chlorure de cobalt** (CoCl₂·6H₂O 200 µg, stabilité **≥ 5 h**) — ou basculer sur l'ECD, intrinsèquement plus stable.[8][32]"
+            },
+            {
+              "title": "Cas 3 — Colloïde Tc-HR : « foie chaud » sur une scintigraphie qui ne devait pas fixer le foie",
+              "text": "*Contexte.* ⁹⁹ᵐTc-DTPA rénale ; éluat récent à très haute activité spécifique, agitation vigoureuse et incubation prolongée. *Images.* Rénogramme médiocre, bruit de fond hépatique anormal, **hyperfixation hépatique diffuse**. *CQ.* ITLC (saline + méthyléthylcétone) : fraction **restant au point de dépôt** élevée = **technétium réduit-hydrolysé colloïdal (Tc-HR)** ; PRC < **95 %**.[6][8][31] *Analyse.* Un excès de réduction et l'hydrolyse du Tc réduit forment un **colloïde** capté par le système réticulo-endothélial (foie, rate) au lieu de se lier au ligand.[8][31] *Conduite.* Non conforme ; re-préparer en respectant volume/activité, éviter l'agitation excessive et le sur-temps d'incubation. Repère mnémotechnique : **pertechnétate libre = thyroïde/estomac ; colloïde Tc-HR = foie/rate**."
+            },
+            {
+              "title": "Cas 4 — Générateur en faute : breakthrough de ⁹⁹Mo et d'aluminium",
+              "text": "*Contexte.* Générateur ⁹⁹Mo/⁹⁹ᵐTc en fin de vie, colonne d'alumine (Al₂O₃) sollicitée intensivement. *CQ éluat.* Comptage en puits **avec** blindage de plomb (le Pb arrête le 140 keV du ⁹⁹ᵐTc mais laisse passer les γ ~740 keV du ⁹⁹Mo) : **⁹⁹Mo > 0,15 kBq/MBq** (limite USP) ; test colorimétrique **Al > 5 ppm** (Ph. Eur.) voire **> 10 ppm** (USP).[1][3][5][30] *Analyse.* Le **breakthrough** de ⁹⁹Mo dégrade la pureté radionucléidique et irradie inutilement le patient ; l'excès d'**Al³⁺** peut agglutiner les hématies et perturber certains marquages (colloïdes, MAA).[5][30] *Conduite.* Éluat **rejeté** ; refaire une élution, contrôler la tendance sur plusieurs élutions, remplacer le générateur si dépassement persistant. Rappel des limites : ⁹⁹Mo **≤ 0,15 kBq/MBq**, Al **< 5 ppm** (Ph. Eur.), état **+7 ≥ 95 %** dans l'éluat.[1][3][5]"
+            },
+            {
+              "title": "Cas 5 — MAA hors spécification particulaire : trop de particules, calibre non conforme",
+              "text": "*Contexte.* ⁹⁹ᵐTc-MAA (macroagrégats d'albumine) pour scintigraphie de perfusion pulmonaire ; flacon fractionné et re-agité après plusieurs heures, chez un patient suspect d'**hypertension pulmonaire**. *Attendu.* Trousse **2–4 millions de particules**, **95 %** entre 10–100 µm, piégées dans les artérioles précapillaires par occlusion mécanique.[13][25] *Analyse.* La fragmentation par agitation tardive modifie la distribution de taille et le nombre de particules injectées ; chez un patient à lit capillaire réduit (HTAP, shunt droite-gauche), il faut au contraire **réduire le nombre de particules** pour limiter le risque hémodynamique/embolique systémique.[25] *Conduite.* Vérifier le comptage particulaire et le calibre, adapter le nombre de particules au terrain, ne pas ré-agiter un flacon vieilli, injecter sans reflux sanguin dans la seringue (évite les macro-amas)."
+            }
+          ],
+          "stats": [
+            {
+              "value": "≥ 95 %",
+              "label": "PRC de libération (Ph. Eur., cas général)"
+            },
+            {
+              "value": "30 min",
+              "label": "Fenêtre d'emploi HMPAO non stabilisé"
+            },
+            {
+              "value": "0,26 %",
+              "label": "Taux d'échec réel (série 2 280)"
+            },
+            {
+              "value": "≤ 0,15 kBq/MBq",
+              "label": "Limite ⁹⁹Mo breakthrough"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'aiguille laissée dans le flacon",
+              "text": "Laisser une aiguille de mise à l'air dans un flacon multidose fait entrer de l'**oxygène** qui oxyde le **Sn²⁺** : la trousse « vieillit » en quelques prélèvements et le **pertechnétate libre** augmente. Retirer l'aiguille après chaque prélèvement et limiter le nombre de piqûres."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — lire l'ITLC comme une carte d'impuretés",
+              "text": "Deux systèmes suffisent à cartographier les trois espèces : phase **organique (acétone/MEK)** → le **pertechnétate libre** migre au front, le reste immobile ; phase **saline** → le **radiopharmaceutique** migre, le **colloïde Tc-HR** reste au dépôt. La corrélation ITLC vs HPLC pour le pertechnétate libre atteint **r = 0,99913**, ce qui valide l'ITLC comme méthode de routine fiable et peu coûteuse.[8]"
+            },
+            {
+              "type": "info",
+              "title": "Repère de fiabilité de la chaîne",
+              "text": "Sur une série pivot de **2 280 marquages** contrôlés (3 ans, Ph. Eur.), le taux d'échec réel n'était que de **6/2 280 = 0,26 %** (5 conformes après re-préparation, 1 échec par temps d'incubation insuffisant), sans différence significative entre opérateurs ni entre éluats de 24 h vs 72 h.[10] La trousse froide est donc un procédé robuste — à condition de respecter Sn²⁺, temps, volume et fenêtre de stabilité."
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma du générateur 99Mo/99mTc : colonne d'alumine, adsorption du molybdate, élution du pertechnétate au NaCl 0,9 %, et points de contrôle du breakthrough 99Mo et aluminium.",
+            "caption": "Fig. — Générateur ⁹⁹Mo/⁹⁹ᵐTc et points de CQ de l'éluat : la matière première dont dépend tout marquage de trousse froide."
+          }
+        },
+        {
+          "title": "E14 - Perspectives : au-delà du ⁹⁹ᵐTc classique — nouvelles trousses, automatisation et kits d'autres radionucléides",
+          "text": "La trousse froide reste le maillon terminal qui transforme, **en radiopharmacie hospitalière et de façon extemporanée**, un éluat générique de pertechnétate en un radiopharmaceutique spécifique d'organe, sans cyclotron ni synthèse complexe — ce qui explique la domination du ⁹⁹ᵐTc (**~80–85 %** de tous les actes de médecine nucléaire).[2][4] Plusieurs évolutions structurent l'avenir de ce procédé.\n\n**1. Sécuriser l'approvisionnement en ⁹⁹Mo.** La voie de référence reste la **fission de l'²³⁵U** (activité spécifique **> 1 000 Ci/g**, rendement de fission **~6,1 %**), historiquement dépendante de cibles d'uranium hautement enrichi irradiées dans quelques réacteurs de recherche vieillissants (~**75 %** de l'offre mondiale via 6 réacteurs en 2016).[5] La transition vers l'**uranium faiblement enrichi (LEU)** et les voies alternatives (accélérateurs, capture neutronique du ⁹⁸Mo) vise à réduire le risque de rupture — enjeu direct pour la disponibilité des trousses froides, dont le CQ inclut toujours le contrôle du **breakthrough** de ⁹⁹Mo (≤ 0,15 kBq/MBq) et d'aluminium (< 5 ppm Ph. Eur.).[1][3][5]\n\n**2. Automatisation et robotisation du marquage et du CQ.** La dose aux extrémités reste la contrainte majeure du radiopharmacien : les doigts peuvent approcher la limite annuelle réglementaire de **500 mSv**, avec des débits de **~1,35–1,62 mGy/h/MBq** pour une seringue non protégée.[39] Les protège-seringues plomb/tungstène réduisent déjà la dose aux doigts de **75–85 %** ; l'étape suivante est l'automatisation (dispensateurs motorisés, modules de reconstitution en enceinte blindée ISO 5/grade A, lecture ITLC automatisée) pour retirer l'opérateur de la boucle d'irradiation tout en tracant la conformité.[39]\n\n**3. Nouvelles molécules vectrices et amélioration des trousses existantes.** Le ⁹⁹ᵐTc-**tilmanocept** (Lymphoseek), ligand du récepteur **CD206** des macrophages, illustre le passage d'agents non spécifiques (nanocolloïdes) à des vecteurs à cible moléculaire définie pour le ganglion sentinelle : spécificité tissulaire **100 %**, sensibilité de cartographie **95,1 %**, ≥ 1 ganglion identifié chez **96,2 %** des patients.[21][22] En parallèle, la **stabilisation** des trousses fragiles progresse (bleu de méthylène, cobalt pour l'HMPAO) et les méthodes de fractionnement des kits sont réévaluées pour préserver la qualité du produit fini.[8][27][32]\n\n**4. Le paradigme théranostique et les kits « d'autres radionucléides ».** La logique de la trousse froide — un précurseur lyophilisé marqué extemporanément — s'étend au-delà du ⁹⁹ᵐTc. Les **kits de marquage au ⁶⁸Ga** (élué d'un générateur ⁶⁸Ge/⁶⁸Ga, chélateur DOTA/HBED-CC) pour les analogues de la somatostatine et les ligands du PSMA transposent le concept au diagnostic TEP, avec leurs propres impuretés (⁶⁸Ge breakthrough, métal libre) et contrôles de PRC. Cette continuité conceptuelle — **même vecteur, radionucléide interchangeable** — est le socle des paires théranostiques, où le diagnostic guide une thérapie vectorisée.\n\n**5. Concurrence et complémentarité avec la TEP.** Pour plusieurs indications historiques du ⁹⁹ᵐTc (perfusion myocardique, tumeurs neuroendocrines), la TEP gagne du terrain par sa résolution et sa quantification ; mais la trousse froide au ⁹⁹ᵐTc conserve des atouts décisifs — coût, disponibilité sans cyclotron, logistique du générateur, énergie **140 keV** idéale pour la γ-caméra et demi-vie de **6 h** — qui garantissent sa place durable dans la médecine nucléaire conventionnelle.[2][4]",
+          "stats": [
+            {
+              "value": "~80–85 %",
+              "label": "Part du ⁹⁹ᵐTc dans les actes de MN"
+            },
+            {
+              "value": "500 mSv",
+              "label": "Limite annuelle dose aux doigts"
+            },
+            {
+              "value": "−75 à −85 %",
+              "label": "Réduction dose doigts (protège-seringue)"
+            },
+            {
+              "value": "> 1 000 Ci/g",
+              "label": "Activité spécifique du ⁹⁹Mo de fission"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la trousse froide comme plateforme, pas comme produit figé",
+              "text": "Le vrai objet d'avenir n'est pas telle molécule mais le **procédé** : un précurseur stérile, lyophilisé, avec un réducteur/chélateur, marqué en quelques minutes au lit du patient. Ce format s'exporte du ⁹⁹ᵐTc vers le ⁶⁸Ga et sert de modèle aux kits « prêts à marquer » qui simplifient la radiopharmacie théranostique."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — l'automatisation ne dispense pas du CQ",
+              "text": "Robotiser la reconstitution réduit la dose aux mains, mais les **impuretés physico-chimiques** (pertechnétate libre, colloïde Tc-HR, breakthrough) restent à mesurer avant libération. Un module automatisé doit intégrer, non contourner, la vérification de la **PRC ≥ 95 %** et de la pureté radionucléidique."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique : un précurseur/chélateur commun marqué par un radionucléide diagnostique puis par un radionucléide thérapeutique, illustrant l'extension du concept de trousse froide au-delà du technétium-99m.",
+            "caption": "Fig. — Du kit ⁹⁹ᵐTc à la boucle théranostique : le format « trousse froide » comme plateforme de marquage extemporané."
+          }
+        },
+        {
+          "title": "E15 - Points clés, pièges fréquents et FAQ de la trousse froide",
+          "text": "Synthèse à haut rendement : d'abord les **points clés** mémorisables, puis les **pièges majeurs**, enfin une **FAQ** anticipant les questions de composition et de QCM. Chaque chiffre renvoie à sa source.\n\n**FAQ — questions fréquentes et confusions classiques**\n\n**Pourquoi faut-il un ion stanneux dans la trousse ?** Parce que le technétium élué est à l'état **+7** (pertechnétate TcO₄⁻), inerte et incapable de se complexer. Le **Sn²⁺** le **réduit** à un état inférieur (+5/+4/+3 selon le ligand), forme réactive qui se chélate au vecteur ; le Sn²⁺ s'oxyde en Sn⁴⁺.[2][3][29]\n\n**Pourquoi la trousse est-elle lyophilisée et sous azote ?** Parce que le **Sn²⁺** est extrêmement sensible à l'oxydation (air, oxygène dissous, radiolyse) : la quantité de Sn²⁺ disponible détermine à la fois l'efficacité du marquage et la durée de vie de la trousse.[2][3]\n\n**Quelle PRC faut-il pour libérer une préparation ?** En règle générale **≥ 95 %** du ⁹⁹ᵐTc doit être lié au radiopharmaceutique (Ph. Eur./USP), avec des exceptions : **HMPAO ≥ 80 %**, **sestamibi ≥ 94 %**, **tétrofosmine ≥ 90 %**.[6][7][10]\n\n**Quelles sont les trois espèces à séparer en CQ ?** (1) le **pertechnétate libre** (non réduit), (2) le **colloïde Tc-HR** (réduit-hydrolysé, reste au dépôt), (3) le **radiopharmaceutique** désiré. La méthode de référence est l'**ITLC** (bandelette silice + acétone/MEK puis saline).[8][31]\n\n**Comment mesure-t-on le breakthrough du ⁹⁹Mo ?** Comptage de l'éluat **avec blindage de plomb** : le Pb arrête le photon de **140 keV** du ⁹⁹ᵐTc mais laisse passer les γ de haute énergie (~740 keV) du ⁹⁹Mo. Limite : **≤ 0,15 kBq/MBq**.[1][3][30]\n\n**Pertechnétate libre ou colloïde : comment les distinguer à l'image ?** Le **pertechnétate libre** (Tc +7) se fixe via le **NIS** sur thyroïde, glandes salivaires et estomac ; le **colloïde Tc-HR** est capté par le foie et la rate.[2][16][31]\n\n**Quelle trousse est la plus instable, et quel est le délai d'emploi ?** L'**HMPAO** non stabilisé : à injecter **< 30 min** après reconstitution (dégradation en complexe hydrophile).[8]\n\n**Quel est le rendement d'élution optimal du générateur ?** Le maximum est atteint à l'**équilibre transitoire**, ~**23–24 h** après l'élution précédente (⁹⁹Mo T½ = **66 h**, ⁹⁹ᵐTc T½ = **6 h**).[1][4]",
+          "list": [
+            "**Trousse froide** = flacon stérile, apyrogène, **lyophilisé**, sous azote, contenant **ligand + réducteur (SnCl₂, Sn²⁺) + stabilisant**, marqué extemporanément par l'éluat de **pertechnétate [⁹⁹ᵐTc]TcO₄⁻**.[2][3]",
+            "⁹⁹ᵐTc : photon **γ 140 keV**, T½ **6 h**, transition isomérique ; ⁹⁹Mo : T½ **66 h** ; élution au **NaCl 0,9 %** sur colonne d'**alumine**.[1][4]",
+            "Chimie du marquage : le **Sn²⁺** réduit le Tc **+7 → état inférieur**, qui se chélate au ligand ; l'éluat doit contenir **≥ 95 %** de Tc à l'état +7.[1][2]",
+            "CQ de l'éluat : **⁹⁹Mo ≤ 0,15 kBq/MBq**, **Al < 5 ppm** (Ph. Eur.) / **< 10 ppm** (USP), pureté radionucléidique **≥ 99,88 %** (Ph. Eur.).[1][3][5]",
+            "CQ du produit fini : **PRC ≥ 95 %** (règle générale) par **ITLC** ; exceptions HMPAO **≥ 80 %**, sestamibi **≥ 94 %**, tétrofosmine **≥ 90 %**.[6][7][10]",
+            "Impuretés à traquer : **pertechnétate libre** (Sn²⁺ épuisé → thyroïde/estomac) et **colloïde Tc-HR** (sur-réduction → foie/rate).[8][31]",
+            "Stabilité : **HMPAO < 30 min** (ou stabilisé au bleu de méthylène / cobalt jusqu'à ≥ 5 h) ; **MAA 2–4 millions de particules**, 95 % à 10–100 µm.[8][13][32]",
+            "Taux d'échec réel en routine très bas : **0,26 %** sur 2 280 marquages ; procédé robuste si Sn²⁺, temps, volume et fenêtre respectés.[10]",
+            "Radioprotection : dose aux **doigts** = contrainte majeure (limite **500 mSv/an**), réduite de **75–85 %** par protège-seringue plomb/tungstène.[39]",
+            "Position stratégique : maillon terminal de la chaîne du ⁹⁹ᵐTc, qui fonde sa domination (**~80–85 %** des actes) grâce au couple **générateur + trousse froide**.[2][4]"
+          ],
+          "stats": [
+            {
+              "value": "140 keV / 6 h",
+              "label": "Photon γ et T½ du ⁹⁹ᵐTc"
+            },
+            {
+              "value": "≥ 95 %",
+              "label": "PRC de libération (cas général)"
+            },
+            {
+              "value": "≥ 80 %",
+              "label": "PRC minimale HMPAO"
+            },
+            {
+              "value": "0,26 %",
+              "label": "Taux d'échec réel (2 280 marquages)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la fenêtre de stabilité (surtout HMPAO)",
+              "text": "Une trousse conforme à la reconstitution peut devenir **non conforme** en moins d'une heure. L'HMPAO non stabilisé doit être injecté **< 30 min** ; au-delà, la PRC chute (~80 % à 1 h) et l'image cérébrale se dégrade. Toujours horodater la reconstitution.[8]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — confondre les deux impuretés",
+              "text": "**Pertechnétate libre** (Sn²⁺ oxydé) → **thyroïde, salivaires, estomac** ; **colloïde Tc-HR** (sur-réduction/hydrolyse) → **foie, rate**. Le mécanisme, la cause et la correction diffèrent : l'ITLC bi-solvant tranche entre les deux avant toute administration.[8][31]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le temps d'incubation est un paramètre, pas un détail",
+              "text": "Dans la série pivot, le **seul** échec vrai sur 2 280 marquages était dû à un **temps d'incubation insuffisant**.[10] Respecter à la lettre temps/température/volume de la monographie de chaque trousse est la première assurance qualité, avant même l'ITLC."
+            }
+          ]
+        },
+        {
+          "title": "E16 - Références & liens sortants typés",
+          "text": "Sources primaires privilégiées (pharmacopées, StatPearls, IAEA, SNMMI/EANM, ICRP) ; citations numérotées **[n]** utilisées dans tout l'article et renvoyant à la liste ci-dessous. *Dernière mise à jour : juillet 2026 — profil médecin nucléaire.*\n\n**Physique, générateur & chimie du marquage**\n- **[1]** StatPearls — *Molybdenum-99/Technetium-99m Generator* (NBK565854) : demi-vies, colonne d'alumine, élution NaCl 0,9 %, limites ⁹⁹Mo/Al, état +7.\n- **[2]** ScienceDirect Topics — *Technetium-99* : réduction du pertechnétate +7 → +4 par Sn²⁺.\n- **[3]** ScienceDirect Topics — *Stannous Chloride* : composition des cold kits, lyophilisation, antioxydants (ascorbique/gentisique).\n- **[4]** ScienceDirect Topics — *Technetium 99m* : T½ 6 h, photon 140 keV, ~85 % des actes.\n- **[5]** NCBI — *Molybdenum-99/Technetium-99m Production and Use* (NBK215133) : fission ²³⁵U, rendement 6,1 %, > 1 000 Ci/g.\n- **[29]** US Patent 4272503 — chimie de réduction stanneuse du ⁹⁹ᵐTc.\n- **[30]** IAEA Human Health Campus — *Product issues with eluted ⁹⁹ᵐTc* (comptage avec/sans plomb, Al, état +7).\n- **[28]** DailyMed — *Ultra-Technekow V4* (générateur) : limite ⁹⁹Mo 0,15 kBq/MBq.\n\n**Contrôle qualité, PRC & stabilité**\n- **[6]** IAEA Appendix I — EANM Paediatric Dosage Card v1.5.2008 (classes A/B/C).\n- **[7]** ORISE/ORAU — *Radiation Dose Estimates* (tables ICRP mSv/MBq).\n- **[8]** SNMMI JNMT — *Quality Control in the Radiopharmacy* (ITLC, pertechnétate libre, Tc-HR).\n- **[9]** IAEA INIS — *ITLC for radiochemical purity of Tc-99m radiopharmaceuticals*.\n- **[10]** PMC6166199 — *Quality control on radiochemical purity… 2280 procedures* (taux d'échec 0,26 %).\n- **[27]** PMC9037872 — *Quality Assessment of Tc-99m MDP… cold kit fractionation methods*.\n- **[31]** Radiopaedia — *Hydrolyzed reduced technetium-99m* (impuretés RCP, ITLC, seuil 95 %).\n- **[32]** PubMed 11225699 — *Methylene blue-enhanced stability of ⁹⁹ᵐTc-HMPAO*.\n- **[14]** PubMed 10320993 — stabilisation HMPAO par bleu de méthylène/cobalt vs ECD.\n- **[15]** DailyMed — *Exametazime (HMPAO)* : complexe lipophile, BHE.\n\n**Radiopharmaceutiques & indications**\n- **[11]** PMC6020824 — SNMMI/EANM *Diuretic Renal Scintigraphy* (MAG3, 37–370 MBq).\n- **[12]** Springer Clin Transl Imaging 2022 — *Paediatric [⁹⁹ᵐTc]Tc-DMSA renal cortical scintigraphy update*.\n- **[13]** Indian J Nucl Med / PMC3822414 — *Tc-99m MAA* (2–4 M particules, 10–100 µm).\n- **[16]** StatPearls NBK559013 — *Technetium-99m* (NIS, thyroïde, Meckel, perchlorate).\n- **[17]** StatPearls NBK553148 — *Technetium 99m Sestamibi* (captation mitochondriale).\n- **[18]** PMC6933900 — *Quantitative bone SPECT/CT* (métastases prostatiques).\n- **[19]** Frontiers in Medicine 2023 — *Nuclear medicine imaging for bone metastases*.\n- **[20]** StatPearls NBK535390 — *Triple Phase Bone Scan*.\n- **[21]** PMC3071527 — *Tc-99m Tilmanocept sentinel node* (spécificité 100 %, Se 95,1 %).\n- **[22]** PMC8967737 — *Tilmanocept (Lymphoseek) sentinel lymph nodes*.\n- **[25]** Springer EJNMMI Radiopharm Chem — *Lung perfusion imaging with ⁹⁹ᵐTc*.\n- **[40]** OpenMedScience — *Technetium-99m Radiopharmaceuticals* (liste de kits et indications).\n\n**Dosimétrie & radioprotection**\n- **[23]** ICRP Publication 128 (2015) — *Radiation Dose to Patients from Radiopharmaceuticals*.\n- **[33]** ICRP Publication 128 (ResearchGate) — compendium doses radiopharmaceutiques.\n- **[26]** ResearchGate — *Radiation dose… Tc-99m Sestamibi cardiac imaging*.\n- **[34]** MDPI Toxics 11(10):814 — *Radiation Exposure during ⁹⁹ᵐTc-MDP Bone Scintigraphy*.\n- **[36]** J Nucl Med 33(1):33 — *Dosimetry for ⁹⁹ᵐTc-MAG3, ⁹⁹ᵐTc-DTPA, ¹³¹I-OIH*.\n- **[37]** Drugs.com — *Technetium Tc 99m Sestamibi* prescribing information (370–1110 MBq).\n- **[38]** Radiopaedia — *Tc-99m pertechnetate* (dose efficace, captation thyroïde/estomac/côlon).\n- **[39]** J Nucl Med Technol 34(3):169 — *Finger Doses for Staff Handling Radiopharmaceuticals* (protège-seringue −75 à −85 %).\n\n**Recommandations, activités & pédiatrie**\n- **[24]** EANM App-Calc — calculateur de dose pédiatrique.\n- **[35]** PMC4932135 / EJNMMI 2016 — *EANM practice guidelines for bone scintigraphy*.\n- **[41]** EANM Dosage Card v5.7.2016 — carte de dose pédiatrique (classes A/B/C).\n\n**Carte de liens sortants typés (le graphe de l'article)**\n- **Traceurs (utilise)** : ⁹⁹ᵐTc-MDP/HDP · ⁹⁹ᵐTc-MAG3 · ⁹⁹ᵐTc-DTPA · ⁹⁹ᵐTc-DMSA · ⁹⁹ᵐTc-MIBI/tétrofosmine · ⁹⁹ᵐTc-MAA · ⁹⁹ᵐTc-HMPAO/ECD · ⁹⁹ᵐTc-pertechnétate · ⁹⁹ᵐTc-nanocolloïde/tilmanocept.\n- **Examens (dérive vers)** : scintigraphie osseuse · rénographie MAG3 / DMSA · perfusion myocardique SPECT · scintigraphie pulmonaire V/Q · perfusion cérébrale SPECT · scintigraphie thyroïdienne / Meckel · ganglion sentinelle (lymphoscintigraphie).\n- **Procédés/instruments (s'appuie sur)** : générateur ⁹⁹Mo/⁹⁹ᵐTc · activimètre (dose calibrator) · ITLC (contrôle qualité).\n- **Concurrents/complémentaires (compare à)** : ⁶⁸Ga-DOTATATE TEP · ¹⁸F-FDG TEP · kits de marquage ⁶⁸Ga (extension théranostique).",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note méthodologique sur les sources",
+              "text": "Les limites réglementaires (breakthrough ⁹⁹Mo/Al, PRC), les propriétés physiques et les données pédiatriques/dosimétriques proviennent de documents primaires (pharmacopées, IAEA, ICRP 128, StatPearls). Certaines activités adultes « standard » (osseux, MIBI, thyroïde) issues de résumés SNMMI/EANM gagneraient à être revérifiées sur les PDF originaux ; aucune valeur, DOI ou PMID n'a été inventé."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
