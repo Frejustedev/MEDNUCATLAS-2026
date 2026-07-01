@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A1, identityCard, quiz Q4 — caractéristiques physiques du ⁹⁹ᵐTc",
+    "problem": "Le photon γ du ⁹⁹ᵐTc à 140 keV est décrit tantôt « 89–98 % » (sections A1/A2/E16), tantôt « quasi pur » / « quasiment sans émission particulaire ». La valeur d'abondance γ réelle du 140 keV est ≈89 % (≈88–89 %), le reste étant en conversion interne (émission d'électrons de conversion + rayons X). La fourchette « 89–98 % » est trompeuse : la borne haute 98 % ne correspond pas à l'abondance du photon 140 keV mais mélange transition isomérique (~98 % du chemin de désintégration) et abondance photonique (~89 %). Le contenu conserve toutefois la valeur correcte 140 keV et T½ 6,0 h.",
+    "fix": "Préciser : abondance du photon γ 140 keV ≈ 89 % (88,5 %), et distinguer clairement la voie de transition isomérique (~98–100 % de la désintégration du ⁹⁹ᵐTc, dont ~88 % émettent le photon 140 keV après conversion interne). Éviter la fourchette « 89–98 % » qui amalgame deux grandeurs différentes."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D13 — tableau de gestion des déchets, ligne ¹²³I",
+    "problem": "La période de l'¹²³I est indiquée « 13,2 h ». La valeur de référence largement admise est 13,2 h (parfois arrondie à 13,0–13,3 h selon les sources), donc acceptable. La durée d'entreposage indicative « ~5,5 j » pour 10 périodes est cohérente (13,2 h × 10 ≈ 132 h ≈ 5,5 j). Pas d'erreur de fond, mais l'¹²³I n'est pas mentionné dans les faits étalon, valeur non sourcée dans l'article (numérotation [ ] absente sur cette ligne).",
+    "fix": "Ajouter une source pour la période de l'¹²³I (13,2 h) ou la rattacher à une référence de la liste fermée, par cohérence avec le reste de l'article qui source chaque valeur physique."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections[C11] tableau + stats — « Dose efficace ⁹⁹ᵐTc-MDP 0,0057 mSv/MBq [37,58] »",
+    "problem": "Valeur numérique précise attribuée à ICRP 128 [37] / JNM [58] non vérifiée sur la source primaire durant ce contrôle (les autres chiffres ICRP 128 ont été confirmés : ¹⁸F-FDG 0,019 mSv/MBq OK). C'est un ordre de grandeur cohérent avec la littérature, non une fabrication, mais le chiffre exact reste à confirmer sur le tableau ICRP 128.",
+    "fix": "Revérifier 0,0057 mSv/MBq pour le ⁹⁹ᵐTc-MDP sur Ann ICRP 44(2S) 2015 (ou le rattacher explicitement à [58] qui traite bien du ⁹⁹ᵐTc-diphosphonates) avant publication définitive."
+  },
+  {
+    "severity": "minor",
+    "where": "medecin_nuc.sections[E17] note de bas de section",
+    "problem": "Auto-réserve de fiabilité déjà présente et honnête (« plusieurs coefficients ICRP 128 hors ¹⁸F-FDG ... à revérifier sur le tableau synoptique primaire »). Ce n'est pas une fabrication mais un signal que certaines valeurs dosimétriques secondaires ne sont pas encore sourcées au niveau primaire.",
+    "fix": "Lever la réserve en sourçant chaque coefficient ICRP 128 utilisé (MIBI, MAG3, pertechnétate, MDP) sur le tableau primaire, ou retirer les valeurs non confirmées."
+  }
+]

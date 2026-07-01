@@ -1,0 +1,1726 @@
+{
+  "id": "V2_RADIOPHARMACIE_HOSPITALIERE",
+  "type": "autre",
+  "cat": "radiopharmacie",
+  "catLabel": "",
+  "title": "La radiopharmacie hospitalière : préparation et libération des médicaments radiopharmaceutiques",
+  "difficulty": "avancé",
+  "tags": [
+    "radiopharmacie",
+    "médicament radiopharmaceutique",
+    "radiopharmacien",
+    "générateur 99Mo/99mTc",
+    "contrôle qualité",
+    "libération de lot",
+    "BPP LD4",
+    "cGRPP EANM",
+    "pureté radiochimique",
+    "endotoxines",
+    "RPR",
+    "bonnes pratiques de préparation",
+    "radiomarquage",
+    "trousse froide",
+    "assurance qualité"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "Guideline on current good radiopharmacy practice (cGRPP) for the small-scale preparation of radiopharmaceuticals — EJNMMI Radiopharmacy and Chemistry (2021) 6:8, EANM Radiopharmacy Committee (PMC7881071)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7881071/",
+      "verified": true
+    },
+    {
+      "title": "Spotlight on: guideline on current good radiopharmacy practice (cGRPP) for the small-scale preparation of radiopharmaceuticals — Clinical and Translational Imaging, Springer",
+      "url": "https://link.springer.com/article/10.1007/s40336-021-00437-w",
+      "verified": true
+    },
+    {
+      "title": "EANM guideline on quality risk management for radiopharmaceuticals (PMC9308578)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9308578/",
+      "verified": true
+    },
+    {
+      "title": "L'ANSM publie les nouvelles règles des bonnes pratiques de préparation (BPP 2023, LD3/LD4) — ANSM",
+      "url": "https://ansm.sante.fr/actualites/lansm-publie-les-nouvelles-regles-des-bonnes-pratiques-de-preparation",
+      "verified": true
+    },
+    {
+      "title": "Bonnes Pratiques de Préparation 2023 (PDF) — ANSM",
+      "url": "https://ansm.sante.fr/uploads/2023/08/02/20230802-bonnes-pratiques-de-preparation-08-2023.pdf",
+      "verified": true
+    },
+    {
+      "title": "BPP — parution de la LD3 et de la LD4 — SoFRA (Société Française de Radiopharmacie)",
+      "url": "https://sofra-radiopharmacie.org/informations-pratiques-66/article/bpp-parution-de-la-ld3-et-de-ld4",
+      "verified": true
+    },
+    {
+      "title": "Radiopharmacie : des bonnes pratiques professionnelles plus détaillées — Roche Pro (analyse BPP LD4)",
+      "url": "https://rochepro.fr/pharmaciens/expertise-pui/toute-actualite/radiopharmacie-bonnes-pratiques-professionnelles-detaillees.html",
+      "verified": true
+    },
+    {
+      "title": "Les médicaments radiopharmaceutiques — fiche professionnelle CNOP (Ordre des pharmaciens)",
+      "url": "https://www.ordre.pharmacien.fr/je-suis/pharmacien/pharmacien/mon-exercice-professionnel/les-fiches-professionnelles/les-medicaments-radiopharmaceutiques",
+      "verified": true
+    },
+    {
+      "title": "Modalités d'exercice du radiopharmacien selon les mentions A et B — SNRPH / SoFRA / CNP-Pharmacie 2024 (OMEDIT PACA-Corse, PDF)",
+      "url": "https://www.omeditpacacorse.fr/wp-content/uploads/2024/06/MentionsA_et_B_SNRPH_SoFRA_CNP-Pharmacie_VF_202405.pdf",
+      "verified": true
+    },
+    {
+      "title": "Pharmacien : qualifications et niveaux de formation requis en radiopharmacie — ANFH",
+      "url": "https://www.anfh.fr/actualites/pharmacien-qualifications-et-niveaux-de-formation-requis-en-radiopharmacie",
+      "verified": true
+    },
+    {
+      "title": "Molybdenum-99/Technetium-99m in Nuclear Medicine — NCBI Bookshelf (NBK487238)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK487238/",
+      "verified": true
+    },
+    {
+      "title": "Molybdenum-99/Technetium-99m Production and Use — NCBI Bookshelf (NBK215133)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK215133/",
+      "verified": true
+    },
+    {
+      "title": "Technetium-99m generator — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m_generator",
+      "verified": true
+    },
+    {
+      "title": "Gallium-68 generator — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gallium-68_generator",
+      "verified": true
+    },
+    {
+      "title": "[68Ga]Ga-DOTA-TOC: The First FDA-Approved 68Ga-Radiopharmaceutical for PET Imaging — MDPI Pharmaceuticals",
+      "url": "https://www.mdpi.com/1424-8247/13/3/38",
+      "verified": true
+    },
+    {
+      "title": "[68Ga]Ga-PSMA-11: The First FDA-Approved 68Ga-Radiopharmaceutical for PET Imaging of Prostate Cancer (PMC8401928)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8401928/",
+      "verified": true
+    },
+    {
+      "title": "Cyclotron Production of Fluorine-18 for PET — Diagnostic Radiology Physics (DRPS)",
+      "url": "https://www.diagnosticradphys.com/physicspulse/nuclear-medical-physics/cyclotron-f18-production/",
+      "verified": true
+    },
+    {
+      "title": "Fluorodeoxyglucose (18F) — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fluorodeoxyglucose_(18F)",
+      "verified": true
+    },
+    {
+      "title": "Fluorine-18 radiation/decay data — Radiacode",
+      "url": "https://www.radiacode.com/isotope/f-18?lang=en",
+      "verified": true
+    },
+    {
+      "title": "Quality control (99Mo/99mTc eluate: Mo breakthrough, Al3+, hydrolyzed-reduced Tc) — Loyola University LUMEN",
+      "url": "https://www.lumen.luc.edu/lumen/meded/radio/nuc_med/radpharm/sect-f1d.htm",
+      "verified": true
+    },
+    {
+      "title": "Verification on Molybdenum-99 (99Mo) Breakthrough from Non-Fission 99Mo/99mTc Generator to Produce Technetium-99m — IOP Conf. Series",
+      "url": "https://iopscience.iop.org/article/10.1088/1742-6596/2866/1/012056",
+      "verified": true
+    },
+    {
+      "title": "European Pharmacopoeia 8.0 — 5.1.10 Guidelines for using the test for bacterial endotoxins",
+      "url": "https://www.biotoxik.it/wp-content/uploads/2021/06/2014-EP-8.0_5.1.10-Guideline-for-using-the-test-of-Bacterial-Endotoxins.pdf",
+      "verified": true
+    },
+    {
+      "title": "EDQM — Guide for the elaboration of monographs on radiopharmaceutical preparations, October 2018",
+      "url": "https://www.edqm.eu/documents/52006/66555/07-elaboration-monographs-radio-pharmaceutical-preparations-october-2018.pdf/50c9d3d8-ec14-10b9-40b7-ceedd94e3afb?t=1623146155879",
+      "verified": true
+    },
+    {
+      "title": "Pharmacopeial parametric release strategy in microbiological quality control of radiopharmaceuticals — ARNM / ResearchGate",
+      "url": "https://www.researchgate.net/publication/383943262_Pharmacopeial_parametric_release_strategy_in_microbiological_quality_control_of_radiopharmaceuticals",
+      "verified": true
+    },
+    {
+      "title": "Quality Assurance of Radiopharmaceuticals — BNMS guideline (PDF)",
+      "url": "https://cdn.ymaws.com/www.bnms.org.uk/resource/resmgr/guidelines/qa_of_radiopharmaceuticals_e.pdf",
+      "verified": true
+    },
+    {
+      "title": "Validation of alternative methods of preparing 99mTc-MAG3 — ScienceDirect (Nuclear Medicine Communications)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0969804307000681",
+      "verified": true
+    },
+    {
+      "title": "Technetium-99m MAG3: Labeling Conditions and Quality Control — Journal of Nuclear Medicine Technology 21(2):69",
+      "url": "https://tech.snmjournals.org/content/jnmt/21/2/69.full.pdf",
+      "verified": true
+    },
+    {
+      "title": "Dosage card — EANM (EANM Paediatric Dosage Card, update August 2016)",
+      "url": "https://eanm.org/publications/useful-resources/dosage-card/",
+      "verified": true
+    },
+    {
+      "title": "Standardization of administered activities in paediatric nuclear medicine: the EANM perspective — Eur J Nucl Med Mol Imaging (2016), Springer",
+      "url": "https://link.springer.com/article/10.1007/s00259-016-3474-6",
+      "verified": true
+    },
+    {
+      "title": "Pediatric Radiopharmaceutical Administered Doses: 2010 North American Consensus Guidelines — Journal of Nuclear Medicine 52(2):318",
+      "url": "https://jnm.snmjournals.org/content/52/2/318",
+      "verified": true
+    },
+    {
+      "title": "The new EANM paediatric dosage card (Academia PDF)",
+      "url": "https://www.academia.edu/30767289/The_new_EANM_paediatric_dosage_card",
+      "verified": true
+    },
+    {
+      "title": "Guide SFMN pour la rédaction de protocole — scintigraphie osseuse (Os v2.0) — CNP-MN",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Os-V2.0.pdf",
+      "verified": true
+    },
+    {
+      "title": "Guide SFMN — scintigraphie pulmonaire — CNP-MN (PDF)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/11/Guide-SFMN-scintigraphie-pulmonaire_.pdf",
+      "verified": true
+    },
+    {
+      "title": "Arrêté du 23 mai 2019 portant homologation de la décision ASN n° 2019-DC-0667 du 18 avril 2019 (NRD radiologie et médecine nucléaire) — Légifrance",
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000038529178",
+      "verified": true
+    },
+    {
+      "title": "Niveaux de référence diagnostiques (NRD) — IRSN/ASNR",
+      "url": "https://recherche-expertise.asnr.fr/professionnels-sante/radioprotection-patients/nrd-niveaux-de-reference-diagnostiques",
+      "verified": true
+    },
+    {
+      "title": "Effective dose to adult patients from 338 radiopharmaceuticals (ICRP biokinetic data) — PMC4545621",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4545621/",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — SAGE / Annals of the ICRP (2015)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "[18F]FDG PET/CT: EANM procedure guidelines for tumour imaging version 3.0 — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065",
+      "verified": true
+    },
+    {
+      "title": "Assessment of the efficacy and prognostic value of 18F-FDG PET-CT using Deauville 5-point scale and ΔSUVmax methods in DLBCL (PMC12419351)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12419351/",
+      "verified": true
+    },
+    {
+      "title": "Appropriate Use Criteria for 18F-FDG PET/CT for Initial Staging of Malignant Disease — SNMMI (PDF)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Appropriate%20Use%20Criteria/AUC%20for%2018F-FDG%20PET_CT%20for%20Initial%20Staging%20of%20Malignant%20Disease%20Medical%20Editing-Working%20Group%20V2.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiopharmacie — Wikipédia (fr)",
+      "url": "https://fr.wikipedia.org/wiki/Radiopharmacie",
+      "verified": true
+    },
+    {
+      "title": "Guideline on current good radiopharmacy practice (cGRPP) for the small-scale preparation of radiopharmaceuticals — EJNMMI Radiopharm Chem (Springer)",
+      "url": "https://link.springer.com/article/10.1186/s41181-021-00123-2",
+      "verified": true
+    },
+    {
+      "title": "Guidance on validation and qualification of processes and operations involving radiopharmaceuticals — PMC5824699",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5824699/",
+      "verified": true
+    },
+    {
+      "title": "EANM position on the in-house preparation of radiopharmaceuticals — ResearchGate",
+      "url": "https://www.researchgate.net/publication/357977538_EANM_position_on_the_in-house_preparation_of_radiopharmaceuticals",
+      "verified": true
+    },
+    {
+      "title": "Guidelines for the labelling of leucocytes with 99mTc-HMPAO — EJNMMI (PMC2844965)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2844965/",
+      "verified": true
+    },
+    {
+      "title": "Guidelines for the labelling of leucocytes with 111In-oxine — EJNMMI (Springer)",
+      "url": "https://link.springer.com/article/10.1007/s00259-010-1393-5",
+      "verified": true
+    },
+    {
+      "title": "Radiochemical and analytical aspects of inter-institutional quality control measurements on radiopharmaceuticals — EJNMMI Radiopharm Chem (2018)",
+      "url": "https://link.springer.com/article/10.1186/s41181-018-0052-1",
+      "verified": true
+    },
+    {
+      "title": "Radiolabeling and quality control of therapeutic radiopharmaceuticals: optimization, clinical implementation and comparison of radio-TLC/HPLC analysis, demonstrated by [177Lu]Lu-PSMA — PMC9636342",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636342/",
+      "verified": true
+    },
+    {
+      "title": "Quality Control in the Radiopharmacy (Ramberg-Laskaris) — J Nucl Med Technol 12(1):33",
+      "url": "https://tech.snmjournals.org/content/jnmt/12/1/33.full.pdf",
+      "verified": true
+    },
+    {
+      "title": "Review of 18F-FDG Synthesis and Quality Control — PMC3097819",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097819/",
+      "verified": true
+    },
+    {
+      "title": "Synthesis, Quality Control and Stability Studies of 18F-FDG at Different Conditions of Temperature — PMC5603868",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5603868/",
+      "verified": true
+    },
+    {
+      "title": "Quality assurance of Mo-99/Tc-99m radionuclide generators — ResearchGate",
+      "url": "https://www.researchgate.net/publication/323890513_Quality_assurance_of_Mo-99Tc-99m_radionuclide_generators",
+      "verified": true
+    },
+    {
+      "title": "IAEA Human Health Campus — Product issues with eluted 99mTc",
+      "url": "https://humanhealth.iaea.org/HHW/Radiopharmacy/VirRad/Eluting_the_Generator/Generator_Module/Elution_of_the_99Mo99mTc_generator/Product_issues_with_eluted_99mTc/index.html",
+      "verified": true
+    },
+    {
+      "title": "Comprehensive Quality Control of the ITG 68Ge/68Ga Generator and Synthesis of 68Ga-DOTATOC and 68Ga-PSMA-HBED-CC for Clinical Imaging — JNM 57(9):1402",
+      "url": "https://jnm.snmjournals.org/content/57/9/1402",
+      "verified": true
+    },
+    {
+      "title": "Otto: a 4.04 GBq 68Ge/68Ga generator — extended QC in clinical production of [68Ga]Ga-PSMA-11 — PMC6997319",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6997319/",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms — JNM 62(12):1805",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805",
+      "verified": true
+    },
+    {
+      "title": "Dose Estimates for Nuclear Medicine Scans — Columbia EHS (PDF)",
+      "url": "https://research.columbia.edu/sites/default/files/content/EHS/Rad%20Safety/NuclearMedicineScans.pdf",
+      "verified": true
+    },
+    {
+      "title": "Dynamic Bone Imaging with 99mTc-Labeled Diphosphonates and 18F-NaF: Mechanisms and Applications — JNM 54(4):590",
+      "url": "https://jnm.snmjournals.org/content/54/4/590",
+      "verified": true
+    },
+    {
+      "title": "IDAC-Dose 2.1, an internal dosimetry program for diagnostic nuclear medicine based on the ICRP adult reference voxel phantoms — PMC5668221",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5668221/",
+      "verified": true
+    },
+    {
+      "title": "Radiation Dose Estimates to Adults and Children from Various Radiopharmaceuticals — ORISE (PDF)",
+      "url": "https://orise.orau.gov/reacts/resources/documents/radiation-dose-estimates-to-adults-and-children-from-various-radiopharmaceuticals.pdf",
+      "verified": true
+    },
+    {
+      "title": "Tailoring 99mTc-Macroaggregated Albumin Administration to Optimize Patient Dose Reduction — J Nucl Med Technol 43(3):220",
+      "url": "https://tech.snmjournals.org/content/43/3/220",
+      "verified": true
+    },
+    {
+      "title": "Occupational Radiation Dose Limits — Techno-Aide",
+      "url": "https://techno-aide.com/blog/occupational-radiation-dose-limits/",
+      "verified": true
+    },
+    {
+      "title": "Dose limits — ICRPaedia",
+      "url": "https://icrpaedia.org/Dose_limits",
+      "verified": true
+    },
+    {
+      "title": "Effect of dosimeter's position on occupational radiation extremity dose measurement during 18F-FDG preparation for PET/CT — PMC4975735",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4975735/",
+      "verified": true
+    },
+    {
+      "title": "Role of FDG-PET scans in staging, response assessment, and follow-up care for NSCLC — PMC3539654",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3539654/",
+      "verified": true
+    },
+    {
+      "title": "18F-FDG PET/CT and Melanoma: Staging, Immune Modulation and Mutation-Targeted Therapy Assessment, and Prognosis — AJR",
+      "url": "https://ajronline.org/doi/10.2214/AJR.14.13575",
+      "verified": true
+    },
+    {
+      "title": "68Ga-PSMA PET in prostate cancer: a systematic review and meta-analysis — PMC8321470",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8321470/",
+      "verified": true
+    },
+    {
+      "title": "Meta-analysis of 68Ga-PSMA-11 PET Accuracy for the Detection of Prostate Cancer Validated by Histopathology — PMC6581235",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6581235/",
+      "verified": true
+    },
+    {
+      "title": "proPSMA — Prostate-specific membrane antigen PET-CT in patients with high-risk prostate cancer before curative-intent surgery or radiotherapy — The Lancet 2020",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30314-7/abstract",
+      "verified": true
+    },
+    {
+      "title": "EAU 2020 proPSMA Study — UroToday",
+      "url": "https://www.urotoday.com/conference-highlights/eau-2020/prostate-cancer/123157-eau-2020-propsma-study.html",
+      "verified": true
+    },
+    {
+      "title": "FDA Approval Summary: Lutetium Lu 177 Vipivotide Tetraxetan for Patients with Metastatic Castration-Resistant Prostate Cancer (VISION) — PMC10159870",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10159870/",
+      "verified": true
+    },
+    {
+      "title": "EAU-EANM-ESTRO-ESUR-ISUP-SIOG Guidelines on Prostate Cancer. Part II—2024 Update: Treatment of Relapsing and Metastatic Prostate Cancer — European Urology",
+      "url": "https://www.europeanurology.com/article/S0302-2838(24)02306-6/fulltext",
+      "verified": true
+    },
+    {
+      "title": "ANSM/EHESP — Préparations magistrales en radiopharmacie (MOOC Radiopharmacie, PDF)",
+      "url": "https://lms.fun-mooc.fr/asset-v1:univnantes+31005+session02+type@asset+block/MOOCRADIO_S3_docsup_preparation-magistrale.pdf",
+      "verified": true
+    },
+    {
+      "title": "UE 3.9 Produits radiopharmaceutiques — Définitions (générateur, trousse, préparation magistrale/hospitalière) — FichesManip",
+      "url": "https://fichesmanip.wordpress.com/2017/03/09/ue-3-9-produits-radiopharmaceutiques-definitions/",
+      "verified": true
+    }
+  ],
+  "lead": "La radiopharmacie hospitalière est le maillon qui transforme des matières radioactives en médicaments prêts à être administrés au lit du patient. Elle réunit, au sein du service de médecine nucléaire, un pharmacien spécialisé et une équipe qui préparent, contrôlent puis autorisent l'emploi de ces produits particuliers, à la fois médicaments et sources radioactives. Chaque flacon suit un circuit strict, encadré par des règles de fabrication et de qualité qui protègent le patient comme le personnel. Avant qu'une dose ne quitte le laboratoire, un professionnel qualifié en atteste la conformité et engage sa responsabilité par une décision de libération. C'est ce travail invisible, en amont de l'image ou du traitement, qui garantit la fiabilité de toute la médecine nucléaire.",
+  "identityCard": [
+    {
+      "icon": "flask",
+      "label": "Objet",
+      "value": "Circuit du médicament radiopharmaceutique (MRP)"
+    },
+    {
+      "icon": "atom",
+      "label": "Formes de MRP",
+      "value": "Spécialité AMM · générateur · trousse · précurseur"
+    },
+    {
+      "icon": "stetho",
+      "label": "Responsable",
+      "value": "Radiopharmacien (DES pharmacie hosp., option radiopharmacie)"
+    },
+    {
+      "icon": "shield",
+      "label": "Cadre France",
+      "value": "BPP LD4 (ANSM) opposable 20 sept. 2023"
+    },
+    {
+      "icon": "shield",
+      "label": "Cadre Europe",
+      "value": "cGRPP EANM (EJNMMI Radiopharm Chem 2021;6:8)"
+    },
+    {
+      "icon": "atom",
+      "label": "Radionucléide pilier",
+      "value": "⁹⁹ᵐTc : 140 keV, T½ 6,0 h (~80 % des actes SPECT)"
+    },
+    {
+      "icon": "clock",
+      "label": "Générateur parent",
+      "value": "⁹⁹Mo T½ 66 h → ⁹⁹ᵐTcO₄⁻ élué au NaCl 0,9 %"
+    },
+    {
+      "icon": "microscope",
+      "label": "Percée ⁹⁹Mo",
+      "value": "≤ 0,1 kBq/MBq (Ph. Eur.) · ≤ 0,15 (USP)"
+    },
+    {
+      "icon": "droplets",
+      "label": "Aluminium éluat",
+      "value": "≤ 10 µg/mL (< 10 ppm)"
+    },
+    {
+      "icon": "target",
+      "label": "Pureté radiochimique",
+      "value": "usuel > 90–95 % (ITLC / CLHP)"
+    },
+    {
+      "icon": "alert",
+      "label": "Endotoxines (IV)",
+      "value": "K = 2,5 UI/kg ; 175 UI/V (Ph. Eur. 2.6.14)"
+    },
+    {
+      "icon": "list",
+      "label": "Salle propre",
+      "value": "Grade A (aseptie) · fond C (LAFW) / D (isolateur)"
+    },
+    {
+      "icon": "activity",
+      "label": "Libération",
+      "value": "Décision datée du radiopharmacien/RPR (≥ 2 ans exp.)"
+    },
+    {
+      "icon": "zap",
+      "label": "Autres traceurs",
+      "value": "¹⁸F T½ 110 min · ⁶⁸Ga T½ 68 min (générateur ⁶⁸Ge/⁶⁸Ga)"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc-pertechnétate & générateur ⁹⁹Mo/⁹⁹ᵐTc"
+    },
+    {
+      "type": "traceur",
+      "label": "¹⁸F-FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-DOTATATE / DOTATOC"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-PSMA-11"
+    },
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc-MAG3"
+    },
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc-MDP (scintigraphie osseuse)"
+    },
+    {
+      "type": "examen",
+      "label": "Marquage leucocytaire ⁹⁹ᵐTc-HMPAO"
+    },
+    {
+      "type": "examen",
+      "label": "TEP au ¹⁸F-FDG en oncologie"
+    },
+    {
+      "type": "score",
+      "label": "Score de Deauville / critères de Lugano"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-PSMA-617 (Pluvicto®)"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-DOTATATE (NETTER-1)"
+    },
+    {
+      "type": "maladie",
+      "label": "Tumeurs neuroendocrines (récepteurs somatostatine)"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer de la prostate (PSMA)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Comment le Code de la santé publique définit-il un médicament radiopharmaceutique (MRP) ?",
+      "options": [
+        "Tout produit émettant un rayonnement quelconque",
+        "Tout médicament qui, prêt à l'emploi, contient un ou plusieurs radionucléides incorporés à des fins médicales",
+        "Toute source scellée utilisée en curiethérapie",
+        "Tout dispositif médical de médecine nucléaire"
+      ],
+      "answer": 1,
+      "explanation": "Le MRP est « tout médicament qui, lorsqu'il est prêt à l'emploi, contient un ou plusieurs radionucléides (isotopes radioactifs) incorporés à des fins médicales » — définition CSP transposant la directive 2001/83/CE [8].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelles sont les quatre catégories réglementaires de MRP ?",
+      "options": [
+        "Comprimé, gélule, sirop, injectable",
+        "Spécialité prête à l'emploi, générateur, trousse/kit, précurseur",
+        "Source scellée, source non scellée, gaz, aérosol",
+        "Diagnostic, thérapeutique, mixte, expérimental"
+      ],
+      "answer": 1,
+      "explanation": "Les MRP se répartissent en spécialité pharmaceutique (AMM), générateur (système père/fils), trousse/kit à marquer extemporanément, et précurseur destiné au radiomarquage [8,74].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle proportion des actes diagnostiques de médecine nucléaire dans le monde repose sur le ⁹⁹ᵐTc ?",
+      "options": [
+        "Environ 20 %",
+        "Environ 50 %",
+        "Environ 80 %",
+        "Plus de 99 %"
+      ],
+      "answer": 2,
+      "explanation": "Environ 80 % de tous les actes de médecine nucléaire diagnostique utilisent le ⁹⁹ᵐTc, ce qui en fait le pilier de l'imagerie SPECT [11].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelles sont les caractéristiques physiques du ⁹⁹ᵐTc utilisées en imagerie ?",
+      "options": [
+        "γ 140 keV, T½ 6,0 h",
+        "γ 364 keV, T½ 8 jours",
+        "β⁺ 511 keV, T½ 110 min",
+        "γ 159 keV, T½ 13 h"
+      ],
+      "answer": 0,
+      "explanation": "Le ⁹⁹ᵐTc émet un photon γ prédominant de 140 keV et a une période physique de 6,0 h, quasiment sans émission particulaire [11,13].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Sur le générateur ⁹⁹Mo/⁹⁹ᵐTc, quelle est la période du radionucléide parent et sous quelle forme est élué le fils ?",
+      "options": [
+        "⁹⁹Mo T½ 6 h ; élué en Tc métal",
+        "⁹⁹Mo T½ 66 h ; élué en pertechnétate ⁹⁹ᵐTcO₄⁻ au NaCl 0,9 %",
+        "⁹⁹Mo T½ 271 j ; élué en TcCl₄",
+        "⁹⁹Mo T½ 8 j ; élué en Tc(IV)"
+      ],
+      "answer": 1,
+      "explanation": "Le ⁹⁹Mo parent (T½ 66 h) est fixé sur colonne d'alumine ; le ⁹⁹ᵐTc fils est élué sous forme de pertechnétate ⁹⁹ᵐTcO₄⁻ au NaCl 0,9 % [12,13].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans une trousse froide au ⁹⁹ᵐTc, quel est le rôle du chlorure stanneux (Sn²⁺) ?",
+      "options": [
+        "Servir de conservateur antimicrobien",
+        "Ajuster le pH de la préparation",
+        "Réduire le Tc(VII) du pertechnétate pour permettre la complexation du ligand",
+        "Bloquer la thyroïde du patient"
+      ],
+      "answer": 2,
+      "explanation": "L'agent réducteur Sn²⁺ réduit le Tc(VII) du pertechnétate vers Tc(IV/V), forme réactive qui se complexe au ligand (MDP, MAA, MAG3, sestamibi...) [27].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la limite de percée du ⁹⁹Mo (pureté radionucléidique) selon la Pharmacopée Européenne ?",
+      "options": [
+        "≤ 0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc",
+        "≤ 0,1 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc",
+        "≤ 10 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc",
+        "Aucune limite"
+      ],
+      "answer": 1,
+      "explanation": "La Ph. Eur. impose ≤ 0,1 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc, plus stricte que l'USP (0,15 kBq/MBq soit 0,15 µCi/mCi) [12,52].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la limite d'ion aluminium (Al³⁺) dans l'éluat du générateur ⁹⁹Mo/⁹⁹ᵐTc ?",
+      "options": [
+        "≤ 10 µg/mL",
+        "≤ 100 µg/mL",
+        "≤ 1 mg/mL",
+        "Aucune limite"
+      ],
+      "answer": 0,
+      "explanation": "L'USP fixe la limite d'aluminium à ≤ 10 µg/mL (< 10 ppm), contrôlée par test colorimétrique sur chaque éluat [12,20].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi le test de stérilité (culture ≥ 14 jours, Ph. Eur. 2.6.1) est-il forcément rétrospectif pour la plupart des MRP ?",
+      "options": [
+        "Parce que la culture est trop coûteuse",
+        "Parce que la durée de culture dépasse largement la période du traceur",
+        "Parce que la réglementation l'interdit avant libération",
+        "Parce que le patient doit d'abord être injecté"
+      ],
+      "answer": 1,
+      "explanation": "La culture de stérilité dure ≥ 14 jours, bien au-delà de la période de radionucléides comme le ¹⁸F (110 min) ou le ⁹⁹ᵐTc (6 h) : le résultat n'est donc disponible qu'après administration, ce qui impose la libération paramétrique [1,24].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la limite d'endotoxines bactériennes pour un radiopharmaceutique administré par voie intraveineuse (Ph. Eur.) ?",
+      "options": [
+        "K = 5,0 UI/kg",
+        "K = 2,5 UI/kg (175 UI / V)",
+        "K = 0,2 UI/kg",
+        "Aucune limite"
+      ],
+      "answer": 1,
+      "explanation": "Pour un radiopharmaceutique IV, la limite est K = 2,5 UI/kg soit 175 UI/V (V = dose maximale en mL), plus stricte que le standard IV de 5,0 ; la voie intrathécale impose K = 0,2 UI/kg [22].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quand la Ligne Directrice 4 (LD4) des BPP, dédiée aux préparations radiopharmaceutiques, est-elle devenue opposable en France ?",
+      "options": [
+        "Le 5 novembre 2007",
+        "Le 20 septembre 2023",
+        "Le 18 avril 2019",
+        "Le 12 février 2021"
+      ],
+      "answer": 1,
+      "explanation": "La LD4 des BPP 2023 (ANSM) est opposable depuis le 20 septembre 2023 ; elle remplace la version 2007 et renforce la radioprotection du personnel [4,7].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Selon le cGRPP de l'EANM, quel grade d'air est requis pour les manipulations aseptiques de MRP ?",
+      "options": [
+        "Grade D",
+        "Grade C",
+        "Grade B",
+        "Grade A"
+      ],
+      "answer": 3,
+      "explanation": "Le cGRPP impose le Grade A pour les manipulations aseptiques, avec un fond de Grade C autour d'un flux laminaire ou Grade D pour un isolateur après analyse de risque [1].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Qui est le « Responsible Person for Radiopharmaceuticals » (RPR) selon le cGRPP EANM ?",
+      "options": [
+        "Le radiophysicien responsable de la dosimétrie",
+        "L'équivalent de la Qualified Person GMP, responsable de la libération de lot, avec ≥ 2 ans d'expérience",
+        "Le manipulateur qui injecte le patient",
+        "L'inspecteur de l'ANSM"
+      ],
+      "answer": 1,
+      "explanation": "Le RPR est l'analogue de la Qualified Person des EU-GMP : formation académique équivalente, ≥ 2 ans d'expérience pratique, responsable de la revue des dossiers de lot et de la libération [1,42].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "En quoi consiste la libération paramétrique en radiopharmacie ?",
+      "options": [
+        "Libérer la dose sans aucun contrôle",
+        "Libérer avant le résultat de stérilité, sur la base d'un procédé validé et d'essais rapides (PRC, endotoxines, aspect, pH)",
+        "Confier la libération à un automate sans intervention humaine",
+        "Libérer uniquement les traceurs à période longue"
+      ],
+      "answer": 1,
+      "explanation": "Pour les traceurs à période courte, la libération est autorisée avant le résultat de stérilité (rétrospectif), sur un procédé validé et des essais rapides ; la culture de stérilité est néanmoins menée à terme pour surveiller le procédé [1,24].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le paramètre physique du ¹⁸F pertinent pour l'organisation de la production TEP ?",
+      "options": [
+        "T½ 6 h, γ 140 keV",
+        "T½ 110 min, β⁺ → 511 keV",
+        "T½ 68 min, β⁺",
+        "T½ 8 j, β⁻"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁸F a une période de 109,8 min (~110 min) et décroît par β⁺ vers deux photons d'annihilation de 511 keV, période imposant une planification serrée synthèse-CQ-distribution [18,19].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Comment le ⁶⁸Ga est-il obtenu sur site sans cyclotron ?",
+      "options": [
+        "Par un générateur ⁶⁸Ge/⁶⁸Ga (parent ⁶⁸Ge T½ 271 j)",
+        "Par irradiation neutronique en réacteur",
+        "Par fission de l'²³⁵U",
+        "Par un générateur ⁹⁹Mo/⁹⁹ᵐTc"
+      ],
+      "answer": 0,
+      "explanation": "Le générateur ⁶⁸Ge/⁶⁸Ga, dont le parent ⁶⁸Ge a une période de 271 jours, permet l'élution répétée de ⁶⁸Ga (T½ 67,8 min) en établissement sans cyclotron [14].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pour le ⁶⁸Ga-PSMA-11, quels sont les critères usuels de pureté radiochimique et de percée du ⁶⁸Ge ?",
+      "options": [
+        "PRC > 50 % ; ⁶⁸Ge < 1 %",
+        "PRC > 98–99 % ; ⁶⁸Ge < 0,006 %",
+        "PRC > 80 % ; ⁶⁸Ge < 0,1 %",
+        "PRC > 90 % ; pas de contrôle du ⁶⁸Ge"
+      ],
+      "answer": 1,
+      "explanation": "Le ⁶⁸Ga-PSMA-11 doit présenter une PRC > 98–99 % (HPLC) et une percée du ⁶⁸Ge < 0,006 % (jusqu'à 0,001 % sur générateurs récents) [54,55].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Pourquoi la radio-CCM seule est-elle parfois insuffisante pour le contrôle de pureté radiochimique ?",
+      "options": [
+        "Elle est trop lente",
+        "Elle ne détecte souvent pas les produits de radiolyse, contrairement à l'HPLC",
+        "Elle nécessite un cyclotron",
+        "Elle mesure le pH et non la PRC"
+      ],
+      "answer": 1,
+      "explanation": "La radio-CCM seule ne détecte souvent pas les produits de radiolyse ; l'HPLC détecte ces pics, comme démontré pour le ¹⁷⁷Lu-PSMA [48].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quels sont les critères de validation d'un marquage leucocytaire au ⁹⁹ᵐTc-HMPAO selon l'EANM ?",
+      "options": [
+        "Efficacité > 50 %, viabilité > 98 %, stérilité et apyrogénicité négatives",
+        "Efficacité > 90 %, viabilité > 50 %",
+        "Aucun critère spécifique",
+        "PRC > 95 % uniquement"
+      ],
+      "answer": 0,
+      "explanation": "L'EANM retient une efficacité de marquage > 50 %, une viabilité cellulaire > 98 %, une stérilité et une apyrogénicité négatives ; validation opérateur ≥ 3 fois puis tous les 6 mois [45].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la dose efficace du ¹⁸F-FDG selon l'ICRP Publication 128 ?",
+      "options": [
+        "0,0057 mSv/MBq",
+        "0,019 mSv/MBq",
+        "0,14 mSv/MBq",
+        "16 mSv/MBq"
+      ],
+      "answer": 1,
+      "explanation": "L'ICRP 128 donne une dose efficace de 0,019 mSv/MBq pour le ¹⁸F-FDG, la vessie étant l'organe le plus exposé [37,56].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelles sont les limites réglementaires (CIPR) de dose efficace corps entier et aux extrémités pour un travailleur exposé ?",
+      "options": [
+        "50 mSv/an corps entier ; 5000 mSv/an extrémités",
+        "20 mSv/an corps entier ; 500 mSv/an extrémités",
+        "1 mSv/an corps entier ; 50 mSv/an extrémités",
+        "6 mSv/an corps entier ; 150 mSv/an extrémités"
+      ],
+      "answer": 1,
+      "explanation": "Les limites CIPR sont de 20 mSv/an pour la dose efficace corps entier et 500 mSv/an pour les extrémités ; le cristallin a été abaissé à 20 mSv/an [62,63].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En radiopharmacie, quel groupe professionnel est identifié comme le plus exposé, et sur quel paramètre dosimétrique ?",
+      "options": [
+        "Les manipulateurs, sur la dose au cristallin",
+        "Les techniciens de dispensation radiopharmaceutique, sur la dose aux extrémités (mains/doigts)",
+        "Les médecins, sur la dose corps entier",
+        "Les secrétaires, sur la dose thyroïdienne"
+      ],
+      "answer": 1,
+      "explanation": "Les techniciens de dispensation radiopharmaceutique sont le groupe le plus exposé, avec un enjeu majeur sur la dose aux extrémités ; la position du dosimètre bague influence fortement la mesure lors de la préparation du ¹⁸F-FDG [62,64].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la définition Ph. Eur. de la pureté radiochimique (PRC) ?",
+      "options": [
+        "Le pourcentage de radionucléide correct parmi tous les radionucléides",
+        "Le rapport de la radioactivité du radionucléide sous la forme chimique déclarée sur la radioactivité totale de ce radionucléide",
+        "Le pourcentage de molécule vectrice non marquée",
+        "Le rapport masse/volume de la préparation"
+      ],
+      "answer": 1,
+      "explanation": "La PRC est le rapport, en pourcentage, de la radioactivité du radionucléide présent sous la forme chimique déclarée sur la radioactivité totale de ce radionucléide dans la préparation [47].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "L'activité pédiatrique dans la carte de dose EANM (mise à jour août 2016) est calculée comment ?",
+      "options": [
+        "Par une simple règle linéaire MBq/kg",
+        "Par activité de base × facteur pondéral, avec mise à l'échelle non linéaire",
+        "Par une dose fixe quel que soit le poids",
+        "Par la surface corporelle uniquement"
+      ],
+      "answer": 1,
+      "explanation": "La carte EANM applique activité = activité de base × facteur pondéral (3–70 kg), avec une mise à l'échelle non linéaire, à la différence du Consensus nord-américain 2010 qui est linéaire (MBq/kg) [28,30].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel automate la LD4 des BPP autorise-t-elle en radiopharmacie, et sous quelle condition ?",
+      "options": [
+        "Aucun automate n'est autorisé",
+        "Un automate de radiosynthèse, à condition d'être placé dans une enceinte blindée avec qualification d'installation et d'utilisation",
+        "Un robot de dispensation en zone de circulation",
+        "Un automate uniquement pour les trousses froides"
+      ],
+      "answer": 1,
+      "explanation": "La LD4 autorise le recours à un automate de radiosynthèse à condition qu'il soit placé dans une enceinte blindée, avec qualification d'installation et d'utilisation [7].",
+      "difficulty": "moyen"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "Un médicament radiopharmaceutique (MRP) est un médicament contenant un radionucléide à visée médicale ; il relève d'une double réglementation (médicament + radioélément) et se décline en spécialité AMM, générateur, trousse/kit et précurseur [8,74].",
+      "Le radiopharmacien (DES pharmacie hospitalière, option radiopharmacie) sécurise l'ensemble du circuit : approvisionnement, préparation, contrôle qualité, libération, traçabilité et radiopharmacovigilance [8,10].",
+      "Le ⁹⁹ᵐTc (140 keV, T½ 6,0 h), élué en pertechnétate depuis le générateur ⁹⁹Mo/⁹⁹ᵐTc (parent T½ 66 h), sous-tend ~80 % des actes diagnostiques ; le radiomarquage des trousses repose sur la réduction du Tc(VII) par le Sn²⁺ [11,12,13].",
+      "Le contrôle qualité du générateur vérifie à chaque élution la percée du ⁹⁹Mo (≤ 0,1 kBq/MBq Ph. Eur.), l'aluminium (≤ 10 µg/mL) et la PRC du pertechnétate (≥ 95 %) [12,20,52].",
+      "Les cadres de référence sont les BPP-LD4 de l'ANSM (opposables 20 sept. 2023) en France et le cGRPP de l'EANM (2021) en Europe, calqué sur l'EU-GMP EudraLex vol. 4 [4,7,1].",
+      "La préparation aseptique se fait en Grade A (fond C pour flux laminaire, D pour isolateur), sous la responsabilité d'un RPR chargé de la libération de lot [1].",
+      "La libération est une décision datée et signée attestant la conformité ; pour les traceurs à période courte, la libération paramétrique précède le résultat rétrospectif de stérilité [1,24].",
+      "La dosimétrie patient s'appuie sur l'ICRP 128 (ex. ¹⁸F-FDG 0,019 mSv/MBq) et la radioprotection du personnel sur les limites CIPR (20 mSv/an corps entier, 500 mSv/an extrémités) [37,62,63]."
+    ],
+    "protocol": [
+      "Approvisionnement et réception : contrôle à la livraison du générateur/des trousses/du radionucléide, vérification documentaire et de l'activité à l'activimètre [73].",
+      "Préparation en zone dédiée : élution du générateur ⁹⁹Mo/⁹⁹ᵐTc, radiomarquage extemporané des trousses (avec chauffage si requis : MIBI ~15 min, MAG3 ébullition ≥ 10 min), manipulation aseptique en Grade A / enceinte blindée [27,1].",
+      "Contrôle qualité de libération : identité et pureté radionucléidique, pureté radiochimique (ITLC/CLHP), pureté chimique, pH, solvants résiduels, aspect ; percée ⁹⁹Mo et Al³⁺ sur chaque éluat [50,20].",
+      "Tests différés : stérilité (culture ≥ 14 j, Ph. Eur. 2.6.1) et endotoxines (LAL, 2.6.14) menés a posteriori ; test d'intégrité du filtre stérilisant réalisé immédiatement après filtration [1,22].",
+      "Libération : revue du dossier de lot par le radiopharmacien/RPR, décision datée et signée ; libération paramétrique pour les traceurs à période courte [1].",
+      "Dispensation nominative : double traçabilité médicament + radioélément, transmission au poste d'injection [8]."
+    ],
+    "scores": [
+      "Percée ⁹⁹Mo : ≤ 0,1 kBq/MBq (Ph. Eur.) ; ≤ 0,15 kBq/MBq soit 0,15 µCi/mCi (USP) [12,52].",
+      "Aluminium éluat : ≤ 10 µg/mL (< 10 ppm) [12,20].",
+      "Pureté radiochimique : > 90–95 % selon le MRP ; pertechnétate ≥ 95 % ; ⁶⁸Ga-PSMA-11 > 98–99 % [50,54].",
+      "Endotoxines : K = 2,5 UI/kg (175 UI/V) en IV ; K = 0,2 UI/kg (14/V) en intrathécal [22].",
+      "Marquage leucocytaire : efficacité > 50 %, viabilité cellulaire > 98 % [45].",
+      "Limites travailleur (CIPR) : 20 mSv/an corps entier, 500 mSv/an extrémités, 20 mSv/an cristallin [62,63]."
+    ],
+    "pitfalls": [
+      "Percée du ⁹⁹Mo ou aluminium hors spécification non détectés : contrôler chaque éluat avant tout marquage [12,20].",
+      "PRC insuffisante par radiomarquage incomplet : chauffage omis (MAG3 : PRC < 60 %), Sn²⁺ oxydé, pertechnétate trop âgé ou volume/activité inadaptés [26,27].",
+      "Se fier à la seule radio-CCM : elle peut manquer les produits de radiolyse détectés par HPLC [48].",
+      "Confondre libération paramétrique et absence de contrôle : le procédé doit être validé et la stérilité conduite à terme rétrospectivement [1,24].",
+      "Sous-estimer la dose aux extrémités : mauvaise position du dosimètre bague, absence de protège-seringue ou d'enceinte blindée lors de la préparation du ¹⁸F-FDG [62,64].",
+      "Négliger la double traçabilité (médicament + radioélément) et la radiopharmacovigilance dans la dispensation nominative [8]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "A quoi sert la radiopharmacie de l'hopital ?",
+        "text": "Certains examens et certains traitements de medecine nucleaire reposent sur un produit un peu particulier : un medicament qui contient une toute petite quantite de substance faiblement radioactive. Ce produit, une fois dans votre corps, permet soit de prendre des images tres precises d'un organe (par exemple les os, le coeur, les reins ou une tumeur), soit de delivrer un traitement cible directement la ou il faut. La radiopharmacie, c'est le laboratoire specialise, installe a l'interieur de l'hopital, ou ces medicaments sont prepares. On y trouve un pharmacien specialement forme, appele radiopharmacien, entoure d'une equipe et d'equipements dedies. Sa mission : preparer le produit qui vous sera administre, verifier qu'il est de bonne qualite et donner son feu vert avant qu'il ne vous soit remis. C'est une etape essentielle mais discrete : vous ne la voyez generalement pas, car elle se deroule en coulisses, avant votre examen.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Un medicament fabrique sur mesure, presque a la minute",
+            "text": "Contrairement a un comprime que l'on peut stocker longtemps, beaucoup de ces produits ne se conservent que quelques heures. Ils sont donc souvent prepares le jour meme, juste pour vous, en fonction de l'examen prevu et parfois de votre poids. C'est l'une des raisons pour lesquelles les rendez-vous de medecine nucleaire sont organises avec des horaires precis."
+          }
+        ]
+      },
+      {
+        "title": "Comment se deroule la preparation, et faut-il s'inquieter ?",
+        "text": "Vous n'avez rien de particulier a faire pour cette etape : tout se passe dans le laboratoire de radiopharmacie avant votre arrivee ou pendant votre attente. L'equipe prepare le produit dans un environnement tres propre, un peu comme une salle d'operation, pour eviter toute contamination. Le radiopharmacien realise ensuite des controles de qualite pour s'assurer que le medicament est pur, sterile et correctement dose. Ce n'est qu'apres cette verification qu'il autorise son utilisation : c'est ce qu'on appelle la liberation du produit. Le personnel manipule ces preparations derriere des protections adaptees, non pas parce que le produit serait dangereux pour vous, mais parce que les soignants les manipulent plusieurs fois par jour, toute l'annee. La dose que vous recevez, elle, est calculee pour rester faible et utile a votre examen ou a votre traitement.",
+        "steps": [
+          {
+            "title": "Prescription et verification",
+            "text": "Votre medecin prescrit l'examen ou le traitement ; l'equipe verifie votre identite, le produit adapte et la dose prevue pour vous."
+          },
+          {
+            "title": "Preparation en laboratoire",
+            "text": "Le radiopharmacien et son equipe preparent le medicament dans un espace ultra-propre et protege."
+          },
+          {
+            "title": "Controle et feu vert",
+            "text": "Des tests de qualite verifient la purete et la securite du produit avant que le radiopharmacien n'autorise son administration."
+          },
+          {
+            "title": "Administration",
+            "text": "Le produit vous est administre, le plus souvent par une simple injection dans une veine du bras, par un soignant de la medecine nucleaire."
+          }
+        ]
+      },
+      {
+        "title": "Quelles garanties de securite ?",
+        "text": "Ces medicaments sont parmi les plus encadres qui existent, car ils reunissent deux mondes tres surveilles : celui des medicaments et celui des substances radioactives. Leur preparation obeit a des regles strictes, verifiees regulierement, qui portent aussi bien sur la qualite du produit que sur la protection du personnel. Chaque preparation est tracee : on sait exactement ce qui a ete prepare, pour qui, et par qui. Si vous etes enceinte, si vous pensez l'etre ou si vous allaitez, il est important de le signaler avant l'examen : selon les cas, l'examen peut etre reporte, adapte ou remplace, et l'allaitement parfois suspendu quelques heures. N'hesitez jamais a poser vos questions a l'equipe : elle est la pour vous rassurer et vous expliquer chaque etape.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Ce que vous pouvez signaler avant l'examen",
+            "text": "Une grossesse en cours ou possible, un allaitement, des allergies connues, ou tout traitement en cours. Ces informations aident l'equipe a choisir et preparer le produit le plus adapte a votre situation."
+          },
+          {
+            "type": "warning",
+            "title": "Grossesse et allaitement",
+            "text": "Prevenez toujours l'equipe si vous etes enceinte, si vous pourriez l'etre, ou si vous allaitez. Une adaptation ou un report est souvent possible pour proteger votre enfant."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Ce qu'est la radiopharmacie, et pourquoi cela vous concerne",
+        "text": "La radiopharmacie hospitaliere est l'unite, integree au service de medecine nucleaire, qui prepare, controle et libere les medicaments radiopharmaceutiques (MRP) que recoivent vos patients lors d'une scintigraphie, d'un TEP-scan ou d'un traitement par radionucleides. Elle est placee sous la responsabilite d'un radiopharmacien, pharmacien specialise, et fonctionne selon une double reglementation : celle du medicament et celle des substances radioactives. Concretement, tout examen ou traitement de medecine nucleaire que vous prescrivez depend de cette chaine : approvisionnement du radionucleide, marquage de la molecule vectrice, controle qualite, puis liberation par le radiopharmacien avant administration. Comprendre cette organisation aide a mieux interpreter certaines contraintes pratiques que vous rencontrez : creneaux horaires stricts, delais d'annulation courts, necessite d'un poids ou d'une glycemie a jour, ou impossibilite de decaler un examen a la derniere minute.",
+        "list": [
+          "Le produit administre est souvent fabrique le jour meme et ne se conserve que quelques heures : d'ou l'importance de confirmer ou d'annuler tot un rendez-vous.",
+          "La dose peut dependre du poids du patient et, pour certains examens, d'une preparation prealable (jeune, controle glycemique, hydratation).",
+          "Certains produits sont prets a l'emploi (industriels), d'autres sont prepares sur place a partir d'un generateur ou d'une trousse : cela conditionne la disponibilite et les delais."
+        ]
+      },
+      {
+        "title": "Quand y penser et comment adresser efficacement",
+        "text": "Vous n'avez pas a maitriser la preparation elle-meme, mais savoir qu'elle existe change la maniere d'adresser. Les indications relevent des examens de medecine nucleaire eux-memes : bilan osseux, exploration cardiaque, renale ou pulmonaire, et surtout imagerie TEP en oncologie (bilan d'extension, evaluation de reponse au traitement), exploration des tumeurs neuroendocrines, du cancer de la prostate, ou encore certains traitements cibles dits theranostiques. Le point cle a retenir cote adressage : la disponibilite du produit conditionne le rendez-vous. Un dialogue en amont avec le service de medecine nucleaire permet de verifier le bon produit, le bon delai et la faisabilite selon l'etat du patient. Precisez toujours l'indication clinique, la question posee, les traitements en cours et l'existence d'une grossesse ou d'un allaitement : ces elements guident le choix du traceur et son mode de preparation.",
+        "steps": [
+          {
+            "title": "Poser la question clinique",
+            "text": "Formulez precisement ce que vous attendez de l'examen (recherche de metastases, evaluation de reponse, exploration fonctionnelle). Cela oriente le choix du produit."
+          },
+          {
+            "title": "Transmettre le contexte utile",
+            "text": "Antecedents, traitements en cours, fonction renale si pertinente, grossesse ou allaitement, diabete/glycemie pour un TEP au glucose."
+          },
+          {
+            "title": "Anticiper le rendez-vous",
+            "text": "Contactez le service en amont : certains produits doivent etre commandes ou prepares specifiquement, et les creneaux dependent de leur disponibilite."
+          },
+          {
+            "title": "Preparer le patient",
+            "text": "Relayez les consignes du service (jeune, hydratation, arret eventuel de certains traitements) et l'importance de prevenir tot en cas d'empechement."
+          }
+        ]
+      },
+      {
+        "title": "L'apport de la medecine nucleaire et l'interet du circuit controle",
+        "text": "L'imagerie et les traitements permis par ces medicaments apportent une information fonctionnelle et metabolique que le scanner ou l'IRM ne fournissent pas toujours : ils montrent l'activite d'un tissu, pas seulement son anatomie. En oncologie, le TEP au glucose est un outil majeur du bilan d'extension et du suivi de la reponse (notamment dans les lymphomes), tandis que des traceurs specifiques ciblent les recepteurs des tumeurs neuroendocrines ou le cancer de la prostate. La rigueur du circuit de preparation et de liberation garantit que le produit administre est conforme, pur et sur : c'est cette exigence qui rend les resultats fiables et reproductibles. Pour vous, l'interet pratique est double : des examens souvent decisifs pour orienter la strategie therapeutique, et une chaine qualite qui securise chaque etape, de la commande a l'injection.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adresser au service de medecine nucleaire donne acces a des examens fonctionnels et metaboliques souvent decisifs (bilan d'extension et suivi en oncologie, explorations osseuse, cardiaque, renale, tumeurs neuroendocrines, prostate) et a des traitements cibles theranostiques. Le produit est prepare sur mesure, controle et libere par un radiopharmacien selon une double reglementation medicament et radioactivite, ce qui garantit sa qualite et sa securite. Un contact prealable avec le service optimise le choix du traceur, les delais et la preparation du patient. Pensez a transmettre l'indication precise, les traitements en cours et toute grossesse ou allaitement."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - A1 · Carte d'identité de la radiopharmacie hospitalière",
+        "text": "**Comment lire cette carte.** À la différence des autres fiches de NucleAtlas — centrées sur un traceur unique — cet article couvre un **métier et un circuit** : l'ensemble du parcours du **médicament radiopharmaceutique (MRP)** au sein de la **pharmacie à usage intérieur (PUI)** du service de médecine nucléaire, de la réception des matières premières à la **libération du produit fini**. La radiopharmacie est l'activité de pharmacie hospitalière qui regroupe les moyens humains et matériels pour la **préparation**, le **contrôle qualité (CQ)** et la **libération** des MRP à partir de **sources radioactives non scellées** [41]. Elle relève d'une **double réglementation** — celle des médicaments et celle des radioéléments — ce qui fait sa singularité juridique et organisationnelle [7].\n\nLes valeurs de la carte ci-dessous sont des **repères-métier** (et non des paramètres d'un examen) : cadre réglementaire opposable, classes d'air, effectif minimal, spécifications-socle de CQ. Chacune est sourcée et détaillée dans les sections B (réaliser) et C (contrôler) de cet article.\n\n| Champ | Repère | Source |\n|---|---|---|\n| **Objet** | Circuit du MRP en PUI : approvisionnement → préparation → CQ → libération → traçabilité | [8][41] |\n| **Cadre réglementaire (France)** | Bonnes Pratiques de Préparation (BPP), **Ligne Directrice 4 (LD4)** « préparations radiopharmaceutiques », opposable **20 septembre 2023** (remplace 2007) | [4][6] |\n| **Cadre européen** | EANM cGRPP (current Good Radiopharmacy Practice), publié **12 février 2021**, calqué sur EU-GMP EudraLex vol. 4 | [1] |\n| **Classe d'air (aseptie)** | **Grade A** pour les manipulations aseptiques ; fond **Grade C** (flux laminaire) ou **Grade D** (isolateur) | [1] |\n| **Personne responsable** | Radiopharmacien (France) / **RPR** (Responsible Person for Radiopharmaceuticals, EANM) — signe la libération de lot | [1][8] |\n| **Effectif minimal** | Idéalement **≥ 2 personnes**, dont le RPR ; si opérateur seul, double revue des résultats | [1] |\n| **Radionucléide pilier** | **⁹⁹ᵐTc** (γ **140 keV**, T½ **6,0 h**) : ~**80 %** des actes diagnostiques mondiaux | [11][13] |\n| **Formes réglementaires** | Spécialité prête à l'emploi · générateur · trousse (kit) · précurseur | [8] |\n\nLa **libération** est l'acte pharmaceutique central : décision documentée et signée attestant la conformité aux spécifications avant administration au patient. Pour les traceurs à période courte, elle recourt à la **libération paramétrique** (cf. §C, à développer dans les sections dédiées) [1].",
+        "stats": [
+          {
+            "value": "~80 %",
+            "label": "des actes diagnostiques mondiaux au ⁹⁹ᵐTc"
+          },
+          {
+            "value": "Grade A",
+            "label": "classe d'air pour l'aseptie"
+          },
+          {
+            "value": "20 sept. 2023",
+            "label": "BPP LD4 opposables (France)"
+          },
+          {
+            "value": "≥ 2",
+            "label": "opérateurs recommandés (dont le RPR)"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle du circuit du médicament radiopharmaceutique : approvisionnement des matières premières (radionucléide et trousse), préparation par radiomarquage, contrôle qualité de libération, libération signée par le radiopharmacien, dispensation nominative et administration au patient, avec traçabilité continue.",
+        "figureCaption": "Fig. 1 — Le circuit du MRP : de l'approvisionnement à la libération signée, un enchaînement sous double réglementation (médicament + radioélément).",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "La radiopharmacie n'est pas une « pharmacie qui manipule du radioactif » mais une **PUI à double clef** : tout MRP est simultanément un médicament (Code de la santé publique, transposant la directive 2001/83/CE) et une source radioactive non scellée (réglementation ASNR, ex-ASN). C'est cette superposition qui impose à la fois **libération pharmaceutique** et **radioprotection** intégrées dans un même geste [7][8][41]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — ne pas confondre les deux référentiels",
+            "text": "Le cadre **français** (BPP / LD4, opposable depuis le **20 septembre 2023**) et le cadre **européen** (EANM cGRPP 2021) coexistent : le cGRPP est une **guideline de bonne pratique** de la profession, tandis que la LD4 est **opposable réglementairement** en France. Un centre français applique la LD4 ; le cGRPP en est le socle méthodologique international [1][4][6]."
+          }
+        ]
+      },
+      {
+        "title": "A2 - A2 · Qu'est-ce qu'un medicament radiopharmaceutique et pourquoi sa preparation est particuliere",
+        "text": "**Définition réglementaire.** Un **médicament radiopharmaceutique (MRP)** est « tout médicament qui, lorsqu'il est prêt à l'emploi, contient un ou plusieurs radionucléides (isotopes radioactifs) incorporés à des fins médicales » — définition du Code de la santé publique transposant la directive 2001/83/CE [8]. Deux propriétés le distinguent radicalement d'un médicament classique : d'une part il **décroît en permanence** (son principe actif disparaît selon la période physique du radionucléide) ; d'autre part il **irradie** manipulateur et environnement. La préparation doit donc concilier **asepsie pharmaceutique** et **radioprotection**, sous forte contrainte de temps.\n\n**Un médicament à double structure.** Le MRP associe deux composants : le **radionucléide** (le marqueur, qui fournit le signal détectable — photon γ pour la SPECT, photons d'annihilation de **511 keV** pour la TEP, ou rayonnement particulaire β⁻/α pour la thérapie) et la **molécule vectrice** (qui cible un processus biologique) [74]. Le vecteur décide *où* le médicament va ; le radionucléide décide *ce qu'il fait* une fois sur place.\n\n**Catégories réglementaires.** On distingue quatre formes, qui déterminent le niveau de préparation exigé :\n\n| Forme | Définition | Geste en radiopharmacie |\n|---|---|---|\n| **Spécialité prête à l'emploi** | MRP fabriqué par l'industrie, avec AMM | Contrôle de réception, dispensation |\n| **Générateur** | Système père/fils : le radionucléide père produit le fils, récupéré par **élution** sur site | Élution + CQ à chaque élution |\n| **Trousse (kit)** | Précurseur non radioactif, lyophilisé, à **marquer extemporanément** | Radiomarquage + CQ |\n| **Précurseur** | Radionucléide destiné au radiomarquage | Manipulation + marquage |\n\nSources : [8][74].\n\n**Le radiomarquage, geste central du ⁹⁹ᵐTc.** Le pilier de l'imagerie SPECT est le **technétium-99m (⁹⁹ᵐTc)** : émetteur γ quasi pur de **140 keV** (89–98 % des désintégrations), sans émission particulaire, de période **6,0 h** [11][13]. Il est produit *in situ* par un **générateur ⁹⁹Mo/⁹⁹ᵐTc** : le parent **⁹⁹Mo** (période **66 h**), fixé sur une colonne d'alumine, décroît en ⁹⁹ᵐTc que l'on **élue sous forme de pertechnétate (⁹⁹ᵐTcO₄⁻)** au NaCl 0,9 % [12][13]. Le pertechnétate éluté est ensuite ajouté à une **trousse lyophilisée** contenant un agent réducteur (**chlorure stanneux, Sn²⁺**) qui réduit le Tc(VII) en Tc(IV/V) pour permettre la complexation du ligand — d'où ⁹⁹ᵐTc-MDP (os), ⁹⁹ᵐTc-MAA (perfusion pulmonaire), ⁹⁹ᵐTc-MAG3 (rein), ⁹⁹ᵐTc-sestamibi (myocarde, parathyroïde). Certaines trousses exigent un **chauffage** (ex. MAG3, ébullition ≥ 10 min, faute de quoi la pureté radiochimique chute) [26][27].\n\n**Pourquoi \"particulière\".** Trois contraintes se cumulent et n'existent pour aucun autre médicament : (1) la **course contre la décroissance** — un lot de ⁹⁹ᵐTc perd la moitié de son activité toutes les 6 h, un lot de ⁶⁸Ga toutes les **67,8 min** [14] — impose de préparer, contrôler et administrer en quelques heures ; (2) la **libération avant résultat complet** — le test de stérilité par culture dure ≥ 14 jours, soit bien plus que la vie du traceur, forçant une logique de **libération paramétrique** ; (3) la **radioprotection du préparateur**, qui manipule des activités élevées et fait de la dose aux extrémités un enjeu majeur (cf. sections C).",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "La période courte est à la fois la contrainte et l'atout du MRP. Le **⁹⁹ᵐTc** doit sa domination (~80 % des actes) précisément à son T½ de **6 h** : assez long pour marquer, contrôler et imager, assez court pour limiter la dose patient. Le **¹⁸F** (T½ **109,8 min**) offre la fenêtre juste suffisante pour synthèse + CQ + distribution régionale d'un cyclotron vers plusieurs sites [11][13][17][18]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — le marquage n'est pas trivial",
+            "text": "Un pertechnétate mal réduit (chlorure stanneux oxydé, trousse périmée) ou une trousse chauffée insuffisamment donne un MRP hors spécification (⁹⁹ᵐTc libre ou colloïdes) : biodistribution faussée et **examen non contributif**. La conformité du geste de marquage se vérifie systématiquement par la **pureté radiochimique** avant libération (cf. §C) [26][27]."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Schéma d'un générateur molybdène-99 / technétium-99m : colonne d'alumine retenant le ⁹⁹Mo père (période 66 h) qui décroît en ⁹⁹ᵐTc fils, élution du pertechnétate ⁹⁹ᵐTcO₄⁻ au sérum physiologique, puis transfert vers la trousse lyophilisée pour radiomarquage.",
+        "figureCaption": "Fig. 2 — Générateur ⁹⁹Mo/⁹⁹ᵐTc : la source quotidienne de pertechnétate, point de départ de la majorité des marquages en radiopharmacie hospitalière.",
+        "stats": [
+          {
+            "value": "140 keV",
+            "label": "photon γ du ⁹⁹ᵐTc (imagerie SPECT)"
+          },
+          {
+            "value": "6,0 h",
+            "label": "période physique du ⁹⁹ᵐTc"
+          },
+          {
+            "value": "66 h",
+            "label": "période du ⁹⁹Mo parent"
+          },
+          {
+            "value": "511 keV",
+            "label": "photons d'annihilation (TEP)"
+          }
+        ]
+      },
+      {
+        "title": "A3 - A3 · Anatomie de l'unite de radiopharmacie : locaux, zones et equipements",
+        "text": "**Logique d'organisation des locaux.** Une unité de radiopharmacie se conçoit comme un enchaînement de **zones spécialisées** répondant à deux exigences antagonistes : la **propreté microbiologique** (le produit est injectable) et le **confinement de la radioactivité** (la source est non scellée). Le circuit doit être **unidirectionnel** — de la réception \"sale\" vers la préparation \"propre\" — et jamais réalisé en zone de circulation [73].\n\n**Les locaux-type d'une unité.** Le référentiel décrit les locaux suivants [73] :\n\n| Local / zone | Fonction | Point clé |\n|---|---|---|\n| **Local de livraison / réception** | Réception, décontrôle des colis radioactifs | Contrôle activité et intégrité à l'entrée |\n| **Préparation aseptique en système clos** (avec sas) | Marquages sur trousses/générateurs licenciés | Dispositifs clos, enceinte blindée |\n| **Préparation aseptique en système ouvert** (avec sas) | Marquages cellulaires (leucocytes) | Manipulation à découvert → exigence accrue |\n| **Local de contrôle qualité** | ITLC/CCM, CLHP, activimètre, pH-métrie | Séparé de la préparation |\n| **Local de stockage des déchets radioactifs** | Décroissance des déchets avant élimination | Stockage blindé et tracé |\n\n**Les classes d'air (référentiel EANM cGRPP, calqué sur EudraLex vol. 4 / EU-GMP).** L'environnement de préparation est hiérarchisé en grades A/B/C/D par empoussièrement décroissant [1] :\n\n- Les **manipulations aseptiques** doivent avoir lieu dans un **environnement de grade A** (flux d'air unidirectionnel) [1].\n- Après **analyse de risque**, le fond peut être de **grade C** pour une hotte à flux laminaire (LAFW), ou de **grade D** pour un **isolateur** (qui assure lui-même le grade A à l'intérieur) [1].\n- Pour une **synthèse automatisée** en enceinte blindée : **grade C minimum** en fond ; la stérilisation/répartition finale exige le **grade A** [1].\n\nLe **marquage cellulaire des leucocytes** — cas le plus exigeant car réalisé en système ouvert — se fait « sous conditions stériles en hotte à flux laminaire **classe A** », idéalement via des dispositifs clos jetables agissant comme mini-isolateurs [45].\n\n**Les équipements.** L'unité s'articule autour de : **générateur(s) ⁹⁹Mo/⁹⁹ᵐTc** et éventuellement **⁶⁸Ge/⁶⁸Ga** (le parent **⁶⁸Ge** a une période de **271 jours**, permettant des mois d'élutions sur site sans cyclotron) [14] ; **enceintes blindées** (plomb/tungstène) pour préparation et stockage ; **automate(s) de radiosynthèse** placés en enceinte blindée pour les traceurs complexes ; **activimètre** (mesure de l'activité, cf. Ph. Eur. 2.2.66) ; matériel de **CQ** (cuves ITLC, CLHP, pH-mètre, test endotoxines) ; **protège-seringues** et pinces à distance. La **LD4** autorise explicitement le recours à un **automate de radiosynthèse** à condition qu'il soit placé en **enceinte blindée**, avec **qualification d'installation et d'utilisation** [7].\n\n**Le poste de travail comme unité fonctionnelle.** En pratique, chaque préparation associe une **enceinte blindée à flux laminaire** (double protection : radioprotection par le blindage, asepsie par le flux) où convergent le générateur/le radionucléide, la trousse, l'activimètre déporté et les consommables stériles.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert",
+            "text": "L'**isolateur** est la solution la plus élégante à l'antagonisme propreté/confinement : il maintient un **grade A** en son intérieur tout en n'exigeant qu'un fond de **grade D**, allégeant les contraintes du local d'accueil. C'est aussi une barrière physique protégeant l'opérateur. À l'inverse, une simple **hotte à flux laminaire (LAFW)** impose un fond de **grade C** plus coûteux à maintenir [1]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — le système ouvert change tout",
+            "text": "Un **marquage cellulaire** (leucocytes au ⁹⁹ᵐTc-HMPAO) est réalisé en **système ouvert** : le sang du patient est manipulé à découvert. Cela impose le **grade A** strict, un dispositif clos type mini-isolateur, et une traçabilité renforcée pour éviter toute **erreur d'attribution patient** (risque de réinjection à un autre patient) et toute contamination croisée [45]."
+          }
+        ],
+        "figureKey": "GAMMA_CAMERA",
+        "figureAlt": "Schéma d'organisation d'une unité de radiopharmacie hospitalière : zone de réception blindée, sas, enceinte blindée à flux laminaire de grade A pour la préparation aseptique, local de contrôle qualité séparé, et local de stockage des déchets radioactifs, avec circuit unidirectionnel du sale vers le propre.",
+        "figureCaption": "Fig. 3 — Anatomie fonctionnelle de l'unité : un circuit unidirectionnel qui superpose grades d'air (asepsie) et blindage (radioprotection)."
+      },
+      {
+        "title": "A4 - A4 · Le personnel, les habilitations et l'organisation d'equipe",
+        "text": "**Le radiopharmacien, pivot du circuit.** En France, le **radiopharmacien** est un pharmacien titulaire du **DES de pharmacie hospitalière** avec **option précoce radiopharmacie**, ayant suivi la **formation obligatoire à la radioprotection des patients et des travailleurs** [10]. Il sécurise l'ensemble du circuit du MRP : approvisionnement, préparation (radiomarquage ⁹⁹ᵐTc, ⁶⁸Ga…), contrôle qualité, **libération**, traçabilité et **radiopharmacovigilance** [8]. Sa **présence sur site** est exigée pendant les activités relevant de sa responsabilité (arrêté du 1er décembre 2003) [41].\n\n**Le système mention A / mention B (France).** Le cadre de qualification distingue deux niveaux d'exercice, formalisés par le document conjoint **SNRPH / SoFRA / CNP-Pharmacie (2024)** [9] :\n\n| Mention | Périmètre | Exemples |\n|---|---|---|\n| **Mention A** | Activités courantes | Élution de générateurs, marquage de trousses homologuées |\n| **Mention B** | Préparations plus complexes | Radiosynthèses, préparations non standard, marquages cellulaires |\n\n**L'équivalent européen : le RPR.** Le référentiel EANM cGRPP impose un **RPR (Responsible Person for Radiopharmaceuticals)**, analogue de la **Qualified Person** des EU-GMP [1][42]. Le RPR examine les matières entrantes, revoit les **dossiers de lot**, approuve les procédures (SOP), garantit la formation et la qualification du personnel, investigue les erreurs — et surtout **signe la libération de lot** [1]. Sa qualification requiert une formation académique équivalente et **≥ 2 ans d'expérience pratique** en préparation [1].\n\n**L'effectif : la règle des deux.** Le cGRPP recommande « idéalement un **minimum de deux personnes**, dont l'une est le RPR ». Si un **seul opérateur** est présent, des **SOP rigoureuses** doivent être en place et **tous les résultats revus par une seconde personne qualifiée** [1]. Cette redondance humaine est la contrepartie de l'impossibilité de \"reprendre\" un lot à période courte.\n\n**Les responsabilités pharmaceutiques structurantes.** Deux gestes exclusifs du pharmacien encadrent le circuit :\n\n- La **dispensation nominative** : chaque dose est attribuée à un patient identifié [8].\n- La **double traçabilité** : traçabilité du médicament **et** du radioélément, tenue simultanément [8].\n\n**Le système qualité.** L'organisation d'équipe s'appuie sur un système qualité formalisé : procédures écrites (SOP), gestion documentaire, **qualification des opérateurs** (pour le marquage leucocytaire : validation d'un opérateur **≥ 3 fois** puis contrôle **tous les 6 mois**) [45], et gestion structurée des **déviations, changements, résultats hors spécification (OOS) et actions correctives/préventives (CAPA)** [1][2]. Le dispositif est complété par une démarche de **gestion du risque qualité** dédiée aux MRP (guideline EANM 2022) [3] et par les recommandations de **validation/qualification des procédés** impliquant des MRP [43].",
+        "steps": [
+          {
+            "title": "Réception & vérification",
+            "text": "Contrôle des matières entrantes (générateur, trousses, précurseurs) par le radiopharmacien / RPR : intégrité, activité, péremption, conformité documentaire [1]."
+          },
+          {
+            "title": "Préparation selon SOP",
+            "text": "Radiomarquage ou élution en enceinte blindée de grade A, par un opérateur qualifié (mention A ou B selon la complexité), traçabilité du geste [7][9]."
+          },
+          {
+            "title": "Contrôle qualité",
+            "text": "Réalisation et revue des essais de libération (pureté radiochimique, pH, aspect, activité…) au local de CQ [8]."
+          },
+          {
+            "title": "Libération signée",
+            "text": "Décision documentée du radiopharmacien / RPR attestant la conformité aux spécifications ; signature datée engageant la responsabilité pharmaceutique [1]."
+          },
+          {
+            "title": "Dispensation nominative & double traçabilité",
+            "text": "Attribution de la dose au patient identifié ; enregistrement simultané médicament + radioélément avant administration [8]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — la libération engage le pharmacien",
+            "text": "La **libération** n'est pas une formalité : c'est une décision **documentée et signée** par laquelle le radiopharmacien / RPR atteste la conformité du lot aux spécifications, la préparation selon procédures, et la revue des données de production et de CQ. Pour un traceur à période courte, cette signature intervient souvent **avant** le résultat de stérilité (libération paramétrique, sur procédé validé) — d'où l'importance d'un procédé maîtrisé et d'une équipe qualifiée [1]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Le couple **mention A/B** (France) et le rôle de **RPR** (EANM) ne se superposent pas exactement : la mention A/B est un **statut d'habilitation individuel** au regard de la complexité des préparations, tandis que le RPR est une **fonction de responsabilité de libération** au sein d'un système qualité. Un centre français fait vivre les deux logiques : habilitation graduée des opérateurs *et* désignation d'un responsable de libération [1][9]."
+          }
+        ]
+      },
+      {
+        "title": "B5 - B5 · Approvisionnement : générateur 99Mo/99mTc, précurseurs TEP et trousses froides",
+        "text": "Une radiopharmacie hospitalière ne « fabrique » pas ses radionucléides : elle les **approvisionne** sous trois grandes formes réglementaires — le **générateur** (radionucléide produit sur site par élution), le **précurseur** (radionucléide destiné au radiomarquage) et la **trousse (kit) froide** (molécule vectrice non radioactive à marquer extemporanément) — auxquelles s'ajoute la **spécialité prête à l'emploi** (AMM) livrée par l'industrie [8][74]. Chaque flux impose sa logistique, dictée par la **période physique** du radionucléide.\n\n**▸ Le générateur 99Mo/99mTc — le pilier de l'imagerie SPECT.** Le **technétium-99m (99mTc)** couvre à lui seul **~80 %** des actes de médecine nucléaire diagnostique dans le monde [11]. Il est extrait sur site d'un générateur où le parent **molybdène-99 (99Mo)**, de période **66 h**, est fixé sur une colonne d'alumine ; le 99mTc fils (période **6,0 h**) est **élué sous forme de pertechnétate 99mTcO₄⁻** au NaCl 0,9 % [12][13]. Le 99Mo est majoritairement un **produit de fission de l'uranium-235 (235U)** irradié en réacteur, ou obtenu par **activation neutronique du 98Mo** [12]. La période courte du parent (66 h) impose une **logistique hebdomadaire** : le générateur est livré et remplacé chaque semaine, et la disponibilité en 99mTc décroît d'environ moitié tous les 66 h — d'où la nécessité de planifier les activités du vendredi et du lundi.\n\n**▸ Les précurseurs TEP — flux cyclotron et flux générateur.** La tomographie par émission de positons (**TEP**) repose sur des émetteurs β⁺ dont l'approvisionnement suit deux modèles opposés :\n\n| Radionucléide | Période | Source | Modèle d'approvisionnement |\n|---|---|---|---|\n| **Fluor-18 (18F)** | **109,8 min** | Cyclotron : réaction 18O(p,n)18F sur eau enrichie en 18O [17] | Livraison régionale depuis un cyclotron distant ; planification serrée des créneaux [17] |\n| **Gallium-68 (68Ga)** | **67,8 min** | Générateur 68Ge/68Ga (parent 68Ge, T½ = **271 j**) [14] | Élution répétée **sur site**, sans cyclotron, pendant ~1 an [14] |\n| **Carbone-11 (11C)** | ~20 min | Cyclotron sur place obligatoire | Production et emploi immédiats, même bâtiment |\n\nLe 18F, avec ses **~110 min** [18][19], est assez long pour permettre synthèse + contrôle qualité (CQ) + **distribution régionale** depuis un cyclotron centralisé, mais assez court pour imposer une planification à la demi-journée [17]. À l'inverse, le **générateur 68Ge/68Ga** affranchit l'établissement du cyclotron : son parent 68Ge (T½ **271 j**) autorise des élutions répétées sur près d'un an, plaçant la production de 68Ga-DOTATOC/DOTATATE et de 68Ga-PSMA-11 **au sein même de la radiopharmacie** [14][16].\n\n**▸ Les trousses froides — le radiomarquage minute du 99mTc.** La **trousse (kit)** est un flacon lyophilisé, stérile et apyrogène, contenant le ligand vecteur, un **agent réducteur** — le plus souvent le **chlorure stanneux (Sn²⁺)** — et divers stabilisants/tampons, mais **aucune radioactivité**. Elle n'a de valeur qu'associée à l'éluat de 99mTc, apporté extemporanément (cf. §B6) [74]. C'est le couple **radionucléide (le marqueur) + trousse (le vecteur)** qui constitue la préparation radiopharmaceutique [74]. Le stock de trousses est géré comme un stock pharmaceutique classique (péremption, lot, traçabilité), à la différence près qu'il attend son marqueur radioactif.\n\n**▸ La double traçabilité.** Tout MRP approvisionné relève d'une **double réglementation** — celle du médicament et celle des radioéléments [7][8] — et impose au radiopharmacien une **double traçabilité** (médicament + radioélément) et une **dispensation nominative** [8].",
+        "stats": [
+          {
+            "value": "~80 %",
+            "label": "Part des actes diagnostiques reposant sur le 99mTc [11]"
+          },
+          {
+            "value": "66 h",
+            "label": "Période du 99Mo → générateur remplacé chaque semaine [12]"
+          },
+          {
+            "value": "109,8 min",
+            "label": "Période du 18F → distribution régionale cyclotron [17]"
+          },
+          {
+            "value": "271 j",
+            "label": "Période du 68Ge → générateur 68Ga sur site ~1 an [14]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Trois régimes logistiques, trois horloges",
+            "text": "L'approvisionnement de la radiopharmacie se lit par la **période** : le **68Ge/68Ga** (parent 271 j) se gère comme un consommable durable élué sur site ; le **99Mo/99mTc** (parent 66 h) impose un renouvellement hebdomadaire ; le **18F** (110 min) et surtout le **11C** (~20 min) se commandent à la demi-journée, voire se produisent dans le même bâtiment [12][14][17]. Toute la planification des vacations découle de ces trois horloges."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — l'activité utile chute en fin de semaine",
+            "text": "Comme le parent 99Mo (T½ **66 h**) décroît de ~50 % tous les 2,75 j, un générateur en fin de cycle fournit nettement moins de 99mTc qu'un générateur neuf [12][13]. Les vacations lourdes (myocarde repos-effort ~2000 MBq/patient) doivent être calées en début de semaine ou couvertes par un générateur de forte activité de départ."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Générateur 99Mo/99mTc : colonne d'alumine chargée en 99Mo dans un blindage de plomb, port d'entrée du NaCl 0,9 % et flacon collecteur sous vide recueillant l'éluat de pertechnétate 99mTcO₄⁻.",
+        "figureCaption": "Fig. B5 — Le générateur 99Mo/99mTc, cœur de l'approvisionnement SPECT sur site : le parent 66 h est chargé à l'usine, le fils 6 h est élué chaque jour."
+      },
+      {
+        "title": "B6 - B6 · La préparation extemporanée : marquage au 99mTc et manipulations aseptiques",
+        "text": "La **préparation radiopharmaceutique (PRP)** réalisée in situ est l'acte quotidien central de la radiopharmacie [7]. Dans la très grande majorité des cas, il s'agit du **radiomarquage extemporané d'une trousse froide par le pertechnétate 99mTc** : une opération à la fois **chimique** (réduction-complexation) et **aseptique** (produit injectable), conduite en quelques minutes sous contrainte de décroissance.\n\n**▸ La chimie du marquage — pourquoi le chlorure stanneux.** Le pertechnétate élué est un **anion 99mTcO₄⁻ où le technétium est au degré d'oxydation +VII**, chimiquement **inerte** : sous cette forme, il ne se complexe à aucun ligand [74]. Le rôle de l'**agent réducteur (Sn²⁺, chlorure stanneux)** présent dans la trousse est de réduire le Tc(VII) en états **réactifs Tc(IV/V)**, qui se coordonnent alors au vecteur pour former le complexe voulu. Selon le ligand, on obtient le **99mTc-MDP/HMDP** (os), le **99mTc-MAA** (perfusion pulmonaire), le **99mTc-MAG3** (rein) ou le **99mTc-sestamibi/MIBI** (myocarde, parathyroïde). Certains kits marquent à froid en quelques minutes ; d'autres exigent un **chauffage** contrôlé : le **99mTc-MIBI** requiert une ébullition d'environ **15 min**, et le **99mTc-MAG3** une ébullition **≥ 10 min** — un chauffage insuffisant abaisse la pureté radiochimique (PRC) du MAG3 en dessous de **60 %** [26][27].\n\n**▸ Les gestes opératoires.** L'opérateur reconstitue la trousse avec un volume défini d'éluat, à une **activité et une concentration** adaptées au nombre de doses à produire, homogénéise, incube (à froid ou à chaud selon le kit), puis répartit en doses individuelles calibrées à l'**activimètre**. Toute la manipulation se fait derrière **protège-seringues et protège-flacons plombés/tungstène**, en enceinte blindée, pour limiter la dose aux extrémités (cf. §radioprotection).\n\n| Trousse (exemple) | Traceur obtenu | Condition de marquage | Critère de libération (PRC) |\n|---|---|---|---|\n| MDP / HMDP | 99mTc-MDP (os) | À froid, quelques min | > 90–95 % [25] |\n| MIBI (sestamibi) | 99mTc-MIBI (myocarde/parathyroïde) | **Ébullition ~15 min** [26] | > 90 % [24] |\n| MAG3 | 99mTc-MAG3 (rein) | **Ébullition ≥ 10 min** [27] | > 90 % (sinon < 60 % si sous-chauffé) [27] |\n| MAA | 99mTc-MAA (perfusion pulm.) | À froid, agitation douce | > 90 % ; 2–7 × 10⁵ particules/dose [61] |\n\n**▸ L'environnement aseptique.** Le produit fini étant **injectable (stérile, apyrogène, isotonique)** [49], la répartition et le marquage relèvent des **manipulations aseptiques**. Le référentiel européen **EANM cGRPP** (current Good Radiopharmacy Practice, 2021), calqué sur les EU-GMP (EudraLex vol. 4), impose que **les manipulations aseptiques aient lieu dans un environnement de grade A** ; en fond, un **grade C** est requis autour d'une **hotte à flux laminaire (LAFW)**, ou un **grade D** pour un **isolateur** après analyse de risque [1]. La contradiction apparente avec la radioprotection (qui pousse au confinement blindé) se résout par des **enceintes blindées ventilées** conçues pour préserver la classe d'air. Les **marquages cellulaires** (leucocytes au 99mTc-HMPAO) sont plus exigeants encore : réalisés **sous flux laminaire de classe A**, souvent dans des dispositifs clos jetables (mini-isolateurs), avec des critères propres — efficacité de marquage **> 50 %**, viabilité cellulaire **> 98 %**, stérilité et apyrogénicité négatives [45].\n\n**▸ La qualification de l'aseptie.** L'aptitude aseptique de l'opérateur et du procédé se vérifie par des **essais de remplissage de milieu (« media fill »)** réguliers ; pour le marquage leucocytaire, la validation initiale de l'opérateur est répétée **≥ 3 fois**, puis **tous les 6 mois** [45]. En France, le cadre est celui des **Bonnes Pratiques de Préparation (BPP)** de l'ANSM et de leur **Ligne Directrice 4 (LD4)** dédiée (cf. §B7), qui structure locaux, zones à atmosphère contrôlée et radioprotection du personnel [4][7].",
+        "steps": [
+          {
+            "title": "1 · Élution & réception de l'éluat",
+            "text": "Élution du générateur au NaCl 0,9 %, obtention du pertechnétate 99mTcO₄⁻ [Tc(+VII)] ; CQ de l'éluat (percée 99Mo, Al³⁺, pH) avant tout marquage (cf. §B5, §CQ) [20]."
+          },
+          {
+            "title": "2 · Reconstitution de la trousse",
+            "text": "Injection d'un volume défini d'éluat, à l'activité et à la concentration calculées, dans le flacon lyophilisé contenant le Sn²⁺ ; le Tc(VII) est réduit en Tc(IV/V) réactif [74]."
+          },
+          {
+            "title": "3 · Incubation",
+            "text": "Repos à froid (MDP, MAA) ou chauffage contrôlé — ébullition ~15 min (MIBI), ≥ 10 min (MAG3) — le temps que la complexation soit complète [26][27]."
+          },
+          {
+            "title": "4 · Contrôle & répartition aseptique",
+            "text": "Vérification de la PRC (ITLC/CLHP, seuil usuel > 90–95 %), puis répartition en doses individuelles calibrées à l'activimètre, en grade A, derrière blindage [1][25]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "> 90–95 %",
+            "label": "Pureté radiochimique exigée du marquage 99mTc [25]"
+          },
+          {
+            "value": "~15 min",
+            "label": "Ébullition requise pour le 99mTc-MIBI [26]"
+          },
+          {
+            "value": "Grade A",
+            "label": "Classe d'air des manipulations aseptiques (cGRPP) [1]"
+          },
+          {
+            "value": "> 98 %",
+            "label": "Viabilité exigée du marquage leucocytaire [45]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — sous-chauffage du MAG3 et échec de marquage",
+            "text": "Le **99mTc-MAG3** exige une ébullition **≥ 10 min** : un chauffage écourté fait chuter la PRC **sous 60 %**, avec apparition de 99mTc réduit-hydrolysé et de pertechnétate libre → images rénales dégradées, fond hépatobiliaire et gastrique parasite [27]. Ne jamais libérer un lot sans avoir vérifié la PRC par chromatographie."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — concilier grade A et blindage",
+            "text": "L'aseptie (grade A, cGRPP) et la radioprotection (confinement plombé) tirent en sens opposés. La solution retenue en radiopharmacie est l'**enceinte blindée ventilée** validée pour la classe d'air, complétée par des **essais de media fill** réguliers qui prouvent que le blindage n'a pas compromis la stérilité [1]. C'est la qualification conjointe — et non le seul équipement — qui garantit un injectable sûr."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers de radioprotection — temps, distance, écran — appliqués au marquage du 99mTc derrière protège-seringue et enceinte blindée pendant la préparation extemporanée.",
+        "figureCaption": "Fig. B6 — Marquage extemporané du 99mTc : geste aseptique en grade A et réduction de dose aux extrémités (temps/distance/écran) menés de front."
+      },
+      {
+        "title": "B7 - B7 · La radiosynthèse TEP : automates, cellules chaudes et 68Ga/18F",
+        "text": "La production des traceurs **TEP** (tomographie par émission de positons) diffère radicalement du marquage 99mTc : elle met en jeu des **précurseurs de haute énergie** (positons de 511 keV après annihilation) et, pour le 18F, une **radiochimie multi-étapes** incompatible avec un geste manuel. Elle s'organise donc autour de trois piliers — **automate de radiosynthèse, cellule chaude blindée, et CQ de libération** — le tout sous forte contrainte de décroissance.\n\n**▸ Physique des deux précurseurs.** Les deux radionucléides TEP produits en radiopharmacie diffèrent par leur source et leur cinétique :\n\n| Paramètre | Fluor-18 (18F) | Gallium-68 (68Ga) |\n|---|---|---|\n| Période physique | **109,8 min** [19] | **67,8 min** [14] |\n| Désintégration | β⁺ → 2 γ de **511 keV** [18] | β⁺ (rendement positon **89,1 %**, E max 1899 keV) → 511 keV [14] |\n| Source | Cyclotron, 18O(p,n)18F sur eau enrichie 18O [17] | Générateur 68Ge/68Ga, sur site [14] |\n| Traceur phare | **18F-FDG** (analogue du glucose) [18] | **68Ga-DOTATOC/DOTATATE, 68Ga-PSMA-11** [15][16] |\n| Chimie | Substitution nucléophile multi-étapes (hydrolyse) | Complexation d'un peptide **DOTA** (chélateur macrocyclique) [16] |\n\n**▸ L'automate de radiosynthèse.** Aux activités mises en jeu (plusieurs GBq), toute synthèse manuelle est proscrite pour raison dosimétrique. La réaction est confiée à un **module/automate de radiosynthèse** — cassettes fluidiques, vannes, réacteur chauffé, cartouches de purification et filtration stérilisante — piloté à distance. Le **18F-FDG** en est l'exemple : à partir du 18F cyclotron, l'automate enchaîne fluoration nucléophile, **hydrolyse** et purification, avec CQ de libération portant sur identité radionucléidique, PRC, pureté chimique, pH, **solvants résiduels** et **Kryptofix 2.2.2** [50]. Pour le **68Ga**, l'automate reçoit l'éluat du générateur et marque le peptide DOTA ; la PRC des produits (68Ga-PSMA-11) atteint couramment **> 98–99 %** en CLHP [54][55]. En France, la **LD4 des BPP** autorise explicitement le recours à un automate de radiosynthèse **à condition qu'il soit placé dans une enceinte blindée**, avec **qualification d'installation et d'utilisation** [7].\n\n**▸ La cellule chaude.** L'automate est logé dans une **cellule chaude (« hot cell »)** : enceinte à blindage épais (plomb/tungstène) dimensionné pour les **511 keV**, à dépression et flux d'air maîtrisé afin de concilier confinement radiologique et environnement aseptique. Le cGRPP fixe les classes d'air correspondantes : **grade C minimum** pour la synthèse automatisée en enceinte blindée, et **grade A** pour l'étape de **stérilisation/répartition** finale [1].\n\n**▸ Le CQ de libération et ses seuils spécifiques.** La production TEP se distingue par des tests de pureté **radionucléidique** propres au générateur 68Ge/68Ga : la **percée du 68Ge (68Ge breakthrough)** doit rester **< 0,006 %** de l'activité totale (jusqu'à ~0,001 % sur les générateurs récents) [54][55]. S'y ajoute une exigence méthodologique : la **radio-CCM seule ne détecte pas toujours les produits de radiolyse**, alors que la **CLHP** révèle les pics de radiolyse — démonstration faite pour le 177Lu-PSMA et transposable aux traceurs TEP [48].\n\n| Paramètre CQ (TEP) | Traceur | Seuil / valeur |\n|---|---|---|\n| pH | 18F-FDG | **5,5 ± 0,5** [50][51] |\n| Kryptofix 2.2.2 | 18F-FDG | **≤ 2,2 mg/3 mL** (spot test) [50] |\n| PRC (CLHP) | 68Ga-PSMA-11 | **> 98–99 %** [54] |\n| Percée 68Ge | 68Ga (générateur) | **< 0,006 %** [55] |\n| Rendement positon | 68Ga | **89,1 %** [14] |\n\n**▸ La libération sous contrainte de décroissance.** La courte période du 18F (110 min) et du 68Ga (68 min) rend impossible d'attendre les résultats de **stérilité** (culture ≥ 14 j, Ph. Eur. 2.6.1) et parfois d'endotoxines avant d'injecter. On recourt donc à la **libération paramétrique** : la décision de libération, actée par le **Responsible Person for Radiopharmaceuticals (RPR)** — équivalent de la Qualified Person des GMP, formé et fort d'au moins **2 ans d'expérience** — s'appuie sur un **procédé validé** et des tests rapides (PRC, endotoxines, aspect, pH), la stérilité étant vérifiée **a posteriori** pour surveiller le procédé [1][24]. Un **test d'intégrité du filtre** stérilisant est réalisé immédiatement après filtration et avant emploi ; des **échantillons de référence** sont conservés **≥ 1 mois** après péremption [1].",
+        "steps": [
+          {
+            "title": "1 · Précurseur",
+            "text": "Réception du 18F (livraison cyclotron, T½ 110 min) ou élution du 68Ga sur le générateur 68Ge/68Ga in situ (T½ 68 min) [14][17]."
+          },
+          {
+            "title": "2 · Radiosynthèse automatisée",
+            "text": "L'automate, en cellule chaude blindée (grade C mini), réalise fluoration/hydrolyse (18F-FDG) ou complexation du peptide DOTA (68Ga), puis purification et filtration stérilisante [1][50]."
+          },
+          {
+            "title": "3 · Répartition aseptique",
+            "text": "Étape finale de stérilisation/répartition en grade A ; test d'intégrité du filtre stérilisant juste après filtration [1]."
+          },
+          {
+            "title": "4 · Libération paramétrique (RPR)",
+            "text": "CQ rapides (identité, PRC CLHP, pH, endotoxines, percée 68Ge) ; décision documentée et signée du RPR sur procédé validé ; stérilité vérifiée a posteriori [1][24]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "109,8 / 67,8 min",
+            "label": "Périodes du 18F et du 68Ga — libération paramétrique [14][19]"
+          },
+          {
+            "value": "< 0,006 %",
+            "label": "Percée 68Ge tolérée à la libération [55]"
+          },
+          {
+            "value": "> 98 %",
+            "label": "PRC du 68Ga-PSMA-11 en CLHP [54]"
+          },
+          {
+            "value": "≥ 2 ans",
+            "label": "Expérience exigée du RPR pour libérer un lot [1]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la radio-CCM masque la radiolyse",
+            "text": "Se fier à la seule **radio-CCM** pour juger la PRC d'un traceur TEP peut donner un résultat faussement conforme : elle ne sépare pas toujours les **produits de radiolyse**, que la **CLHP** met en évidence sous forme de pics distincts [48]. Pour les fortes activités TEP, coupler CCM et CLHP est la règle de sécurité."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la libération paramétrique n'est pas une dispense de stérilité",
+            "text": "Injecter un traceur de 68–110 min de période avant le résultat de stérilité (culture ≥ 14 j) est autorisé **uniquement** sur un **procédé validé**, avec tests rapides conformes (PRC, endotoxines, pH, aspect, intégrité du filtre) et signature du **RPR** [1][24]. La culture de stérilité est **quand même menée à terme** : la libération est paramétrique, jamais aveugle."
+          },
+          {
+            "type": "info",
+            "title": "Deux modèles de production TEP",
+            "text": "Le **68Ga** s'obtient **sur site** par élution du générateur, affranchissant le centre de tout cyclotron [14] ; le **18F** dépend d'un **cyclotron régional** et d'une distribution planifiée à la demi-journée [17]. Le choix conditionne l'autonomie de la radiopharmacie et sa capacité à produire du 68Ga-DOTATATE/PSMA en flux tendu."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Détection en coïncidence de deux photons de 511 keV émis à 180° après annihilation d'un positon issu du 18F ou du 68Ga, principe justifiant le blindage haute énergie des cellules chaudes de radiosynthèse.",
+        "figureCaption": "Fig. B7 — Les traceurs TEP (18F, 68Ga) émettent des positons donnant deux photons de 511 keV : radiochimie automatisée en cellule chaude blindée, libération paramétrique par le RPR."
+      },
+      {
+        "title": "C8 - C8 · Le contrôle qualité avant libération : pureté radiochimique, radionucléidique et chimique",
+        "text": "Le **contrôle qualité (CQ)** avant libération vérifie qu'une préparation radiopharmaceutique (PRP) est conforme à sa monographie avant administration au patient. Le cadre est la **Pharmacopée européenne (Ph. Eur.), monographie générale 0125 « Préparations radiopharmaceutiques »**, complétée par le chapitre analytique 2.2.66 (mesure de la radioactivité) et le guide EDQM 2018 d'élaboration des monographies [23]. Trois familles de puretés sont testées avant chaque libération — radiochimique, radionucléidique et chimique — auxquelles s'ajoutent les paramètres physiques (aspect, pH) et, en différé, les contrôles microbiologiques (cf. §C9).\n\n**Pureté radiochimique (PRC).** La PRC est définie par la Ph. Eur. comme « le rapport, exprimé en pourcentage, de la radioactivité du radionucléide présent sous la forme chimique déclarée, sur la radioactivité totale de ce radionucléide dans la préparation » [47]. C'est le paramètre **libératoire par excellence** : une PRC insuffisante traduit un marquage incomplet ou une dégradation (radiolyse, réoxydation), avec fixation aberrante et perte de spécificité. Elle se mesure par **chromatographie sur couche mince instantanée (ITLC)** ou par **chromatographie liquide haute performance (CLHP/HPLC)**. Un piège majeur : la radio-CCM seule ne détecte souvent pas les produits de radiolyse ; l'HPLC met en évidence des pics de radiolyse invisibles en ITLC (démonstration sur le [177Lu]Lu-PSMA) [48].\n\n**Pureté radionucléidique.** Elle vérifie l'absence de radionucléides contaminants, en pratique le radionucléide **père** qui traverse la colonne du générateur (« breakthrough » ou percée). Elle est mesurée par spectrométrie γ et/ou par la méthode de décroissance blindée.\n\n**Pureté chimique.** Elle contrôle les impuretés non radioactives : ion **aluminium (Al³⁺)** issu de la colonne d'alumine du générateur ⁹⁹Mo/⁹⁹ᵐTc, précurseurs de marquage, solvants résiduels de radiosynthèse (éthanol, acétonitrile), et agents de transfert de phase (**Kryptofix 2.2.2** dans la synthèse du ¹⁸F-FDG).\n\n| Test de libération | Méthode | Critère d'acceptation | Réf. |\n|---|---|---|---|\n| PRC pertechnétate ⁹⁹ᵐTcO₄⁻ | Chromatographie | ≥ **95 %** de l'activité au degré d'oxydation +7 | [13] |\n| Percée ⁹⁹Mo (USP) | Décroissance blindée / spectro γ | ≤ **0,15 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** (0,15 µCi/mCi) | [12] |\n| Percée ⁹⁹Mo (Ph. Eur.) | idem | ≤ **0,1 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** | [52] |\n| Al³⁺ dans l'éluat | Test colorimétrique | < **10 µg/mL (ppm)** | [12] |\n| PRC préparations ⁹⁹ᵐTc (MDP, MAG3…) | ITLC / HPLC | usuellement > **90–95 %** | [27] |\n| pH ¹⁸F-FDG | Papier / potentiométrie | **5,5 ± 0,5** | [51] |\n| Kryptofix 2.2.2 (¹⁸F-FDG) | Spot test | ≤ **2,2 mg/3 mL** | [50] |\n| Percée ⁶⁸Ge (générateur ⁶⁸Ge/⁶⁸Ga) | Spectro γ / décroissance | < **0,006 %** (jusqu'à ~10⁻⁶ % gén. récents) | [54] |\n| PRC ⁶⁸Ga-PSMA-11 | HPLC | > **98–99 %** | [55] |\n\n**Paramètres testés sur un émetteur de positons produit par radiosynthèse** (type ¹⁸F-FDG) : identité radionucléidique, pureté radiochimique, pureté chimique, pH, solvants résiduels, puis stérilité et endotoxines en différé [50]. Le produit fini doit toujours être **stérile, apyrogène et isotonique** [49].\n\nCes tests conditionnent la décision de libération (§C10). Un résultat hors spécification (« out of specification », OOS) déclenche l'arbre des non-conformités (§C11).",
+        "stats": [
+          {
+            "value": "≥ 95 %",
+            "label": "PRC pertechnétate ⁹⁹ᵐTcO₄⁻ (degré +7) [13]"
+          },
+          {
+            "value": "0,1 kBq/MBq",
+            "label": "Percée ⁹⁹Mo — limite Ph. Eur. [52]"
+          },
+          {
+            "value": "< 10 µg/mL",
+            "label": "Al³⁺ dans l'éluat du générateur [12]"
+          },
+          {
+            "value": "> 98 %",
+            "label": "PRC ⁶⁸Ga-PSMA-11 (HPLC) [55]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — radio-CCM vs HPLC",
+            "text": "La **radio-CCM (ITLC)** est rapide mais peut **manquer les produits de radiolyse** : elle sépare mal les espèces radiochimiques proches. L'**HPLC** révèle des pics de radiolyse invisibles en ITLC, démontré pour le [177Lu]Lu-PSMA [48]. Pour les traceurs thérapeutiques à forte activité (donc forte radiolyse), la PRC doit reposer sur une méthode résolutive, pas sur la seule ITLC."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — percée ⁹⁹Mo à contrôler à chaque élution",
+            "text": "Le **breakthrough ⁹⁹Mo** dépend de l'usure de la colonne et augmente avec l'âge du générateur : il doit être vérifié sur **chaque éluat** avant marquage [53]. Limites : **0,15 kBq/MBq** (USP) mais **0,1 kBq/MBq** en Ph. Eur., plus stricte [12,52]. Une percée excessive irradie inutilement le patient (⁹⁹Mo, T½ 66 h) et dégrade l'image."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la PRC est le verrou libératoire",
+            "text": "Parmi tous les tests, la **PRC** est celui qui décide le plus souvent de la libération d'une préparation extemporanée : le marquage peut échouer sans signe visible (aspect normal). Certains kits exigent des conditions strictes — chauffage du MAG3 par ébullition ≥ 10 min, sous peine d'une PRC < 60 % [26]. Toujours corréler PRC et respect du mode opératoire de reconstitution."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine fixant le ⁹⁹Mo père, élution du pertechnétate ⁹⁹ᵐTcO₄⁻ fils au NaCl 0,9 %, points de contrôle qualité (percée ⁹⁹Mo, Al³⁺, PRC)."
+      },
+      {
+        "title": "C9 - C9 · Stérilité, apyrogénicité et contrôles microbiologiques différés",
+        "text": "Un médicament radiopharmaceutique (MRP) administré par voie parentérale doit être **stérile et apyrogène**. La particularité de la radiopharmacie est que ces deux contrôles ont une **durée incompatible avec la période physique du traceur** : ils sont donc réalisés en **différé** (rétrospectivement), après l'administration au patient. Ils ne surveillent pas le lot administré mais valident la **maîtrise du procédé** dans le temps.\n\n**Stérilité.** L'essai de référence est la **Ph. Eur. 2.6.1** : ensemencement puis **incubation ≥ 14 jours**. Comme cette durée dépasse de très loin la période de tous les traceurs diagnostiques courants (6 h pour le ⁹⁹ᵐTc, 110 min pour le ¹⁸F, 68 min pour le ⁶⁸Ga), le résultat n'est **jamais disponible avant libération** : il est donc conduit a posteriori pour surveiller le procédé [1,24]. Selon le guideline EANM current Good Radiopharmacy Practice (cGRPP) 2021, la stérilité **n'est pas requise pour les préparations issues de générateurs et de trousses homologués** (système clos, produit déjà stérile), mais un **media fill** (test de remplissage aseptique) régulier reste recommandé pour valider la technique aseptique [1].\n\n**Apyrogénicité — endotoxines bactériennes (LAL).** L'essai est le **test LAL (Limulus Amoebocyte Lysate), Ph. Eur. 2.6.14**. Il est **rapide (< 1 h)** et peut donc, lui, entrer dans les critères de libération d'un traceur à période courte. La limite pour un radiopharmaceutique intraveineux découle de la formule Ph. Eur. 5.1.10 : **175 UI / V** (V = dose maximale en mL), soit un seuil de contamination **K = 2,5 UI/kg** — plus strict que le 5,0 UI/kg des injectables IV standard ; pour la voie **intrathécale**, la limite tombe à **14 UI / V (K = 0,2 UI/kg)** [22].\n\n**Adaptations propres aux traceurs à demi-vie courte** (cGRPP 2021) [1] :\n- **Test d'intégrité du filtre** (bubble point) immédiatement **après filtration stérilisante et avant emploi** : c'est le contrôle libératoire de substitution pour la stérilité.\n- Possibilité de ne tester que le **premier et le dernier lot** de la journée si la **validation de procédé** démontre une conformité constante.\n- Conservation d'**échantillons de référence ≥ 1 mois** après la fin des tests ou après péremption.\n\n| Contrôle | Référentiel | Délai / durée | Statut à la libération | Réf. |\n|---|---|---|---|---|\n| Stérilité | Ph. Eur. 2.6.1 | Incubation **≥ 14 j** | **Rétrospectif** (jamais avant) | [1] |\n| Endotoxines (LAL) | Ph. Eur. 2.6.14 | **< 1 h** | Peut être libératoire | [22] |\n| Limite endotoxines IV | Ph. Eur. 5.1.10 | — | **175 UI/V** (K = 2,5 UI/kg) | [22] |\n| Limite endotoxines intrathécale | Ph. Eur. 5.1.10 | — | **14 UI/V** (K = 0,2 UI/kg) | [22] |\n| Intégrité du filtre stérilisant | cGRPP | Immédiat | **Libératoire** (avant emploi) | [1] |\n| Media fill (validation aseptique) | cGRPP | Périodique | Non libératoire | [1] |\n\n**Cas particulier du marquage cellulaire.** Le marquage leucocytaire au ⁹⁹ᵐTc-HMPAO ou à l'¹¹¹In-oxine se fait sous conditions stériles en **hotte à flux laminaire de classe A** [45]. Ses critères de validation incluent une **efficacité de marquage > 50 %**, une **viabilité cellulaire > 98 %**, une stérilité négative et une apyrogénicité, avec **validation de l'opérateur ≥ 3 fois puis tous les 6 mois** [45].",
+        "stats": [
+          {
+            "value": "≥ 14 j",
+            "label": "Incubation de l'essai de stérilité (Ph. Eur. 2.6.1) [1]"
+          },
+          {
+            "value": "175 UI/V",
+            "label": "Limite endotoxines IV (K = 2,5 UI/kg) [22]"
+          },
+          {
+            "value": "14 UI/V",
+            "label": "Limite endotoxines intrathécale (K = 0,2 UI/kg) [22]"
+          },
+          {
+            "value": "> 98 %",
+            "label": "Viabilité cellulaire requise (marquage leucocytaire) [45]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert — pourquoi la stérilité ne peut pas être libératoire",
+            "text": "L'essai de stérilité impose une **incubation ≥ 14 jours** [1] quand un traceur au ⁹⁹ᵐTc a une **période de 6 h** : après 14 jours, il ne reste ~**2⁻⁵⁶** de l'activité initiale, et le patient a été imagé depuis longtemps. La stérilité valide donc le **procédé**, pas la dose administrée — d'où le rôle central du **test d'intégrité du filtre** comme garantie libératoire en temps réel [1]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — voie intrathécale",
+            "text": "Pour une administration **intrathécale**, la limite d'endotoxines est **12,5 fois plus stricte** que la voie IV (**K = 0,2 UI/kg** vs 2,5 UI/kg) [22]. Toute préparation destinée au LCR (cisternographie) doit être vérifiée contre le seuil intrathécal, jamais contre le seuil IV standard."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Chaîne de préparation aseptique en radiopharmacie : hotte à flux laminaire de classe A, filtration stérilisante, test d'intégrité du filtre et échantillonnage pour stérilité et endotoxines en différé."
+      },
+      {
+        "title": "C10 - C10 · La libération pharmaceutique : critères, décision et dispensation nominative",
+        "text": "La **libération (release)** est la décision documentée par laquelle le pharmacien radiopharmacien atteste qu'une préparation est **conforme et peut être administrée**. Ce n'est pas un simple visa : c'est un acte pharmaceutique engageant, distinct de la préparation elle-même, et prononcé par une personne qualifiée et responsable.\n\n**Qui libère.** Le guideline EANM cGRPP 2021 institue la **Responsible Person for Radiopharmaceuticals (RPR)**, analogue de la *Qualified Person* des Bonnes Pratiques de Fabrication (BPF/GMP) européennes. La RPR examine les matières entrantes, revoit les dossiers de lot, approuve les procédures opératoires normalisées (SOP), garantit la formation et investigue les erreurs [1,2]. Elle doit justifier d'une formation académique équivalente et d'une **expérience pratique ≥ 2 ans** en préparation, et elle est **responsable de la libération de lot** [1]. L'effectif recommandé est d'**au minimum deux personnes, dont l'une est la RPR** ; avec un opérateur unique, des SOP rigoureuses et la **revue de tous les résultats par une seconde personne qualifiée** sont exigées [1]. En France, cette responsabilité relève du **radiopharmacien**, titulaire du Diplôme d'études spécialisées (DES) de pharmacie hospitalière avec option radiopharmacie et de la formation obligatoire à la radioprotection [10], dont la **présence sur site** est requise pendant les activités de radiopharmacie (arrêté du 1er décembre 2003) [41].\n\n**Critères de libération.** La libération atteste, de manière documentée [1] :\n1. la **conformité aux spécifications** (résultats des essais analytiques : PRC, pureté radionucléidique, pureté chimique, pH, aspect, endotoxines — cf. §C8–C9) ;\n2. la préparation **selon les procédures définies** (respect du mode opératoire, traçabilité des matières premières et du dossier de lot) ;\n3. la **revue des données** de production et de CQ ;\n4. la **signature datée de la RPR**.\n\n**Libération paramétrique.** Pour les traceurs à période courte, dont les contrôles microbiologiques sont rétrospectifs (§C9), la libération est autorisée **avant le résultat de stérilité**, sur la base d'un **procédé validé** et d'essais rapides (PRC, endotoxines, aspect, pH) ; la culture de stérilité est néanmoins menée à terme pour surveiller le procédé [24]. C'est la seule façon d'administrer un ¹⁸F-FDG (T½ 110 min) ou un ⁶⁸Ga (T½ 68 min) le jour même.\n\n**Dispensation nominative.** En aval de la libération, le MRP est **dispensé nominativement** : la dose est attribuée à un patient identifié, avec **double traçabilité** — celle du médicament et celle du radioélément — assurée par le pharmacien [8]. C'est ce chaînage nominatif qui relie la préparation libérée à l'acte d'administration et au calcul de dose (§C11).",
+        "steps": [
+          {
+            "title": "1 · Revue du dossier de lot",
+            "text": "La RPR vérifie la traçabilité des matières premières (générateur, trousse, précurseur), le respect du mode opératoire et l'absence de déviation non documentée [1]."
+          },
+          {
+            "title": "2 · Revue des résultats de CQ",
+            "text": "Contrôle de conformité aux spécifications : PRC, pureté radionucléidique et chimique, pH, aspect, endotoxines (LAL). Tout résultat hors spécification bloque la libération (→ §C11) [1,22]."
+          },
+          {
+            "title": "3 · Décision de libération",
+            "text": "Si conforme : libération, éventuellement **paramétrique** (avant stérilité) sur procédé validé pour les traceurs à période courte [24]. Signature datée de la RPR [1]."
+          },
+          {
+            "title": "4 · Dispensation nominative",
+            "text": "Attribution de la dose au patient identifié, double traçabilité médicament + radioélément par le pharmacien, transmission au service pour administration [8]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "≥ 2 ans",
+            "label": "Expérience pratique requise de la RPR [1]"
+          },
+          {
+            "value": "≥ 2 pers.",
+            "label": "Effectif recommandé (dont la RPR) [1]"
+          },
+          {
+            "value": "01/12/2003",
+            "label": "Arrêté imposant la présence du radiopharmacien sur site [41]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — libération paramétrique",
+            "text": "La **libération paramétrique** est le mécanisme qui rend la médecine nucléaire opérationnelle : sans elle, aucun traceur à courte période ne pourrait être administré (le résultat de stérilité arrive 14 jours trop tard). Elle n'est légitime **que sur un procédé validé** et adossée à des essais rapides libératoires (PRC, LAL, intégrité de filtre) [24,1]. Elle déplace la garantie du **produit** vers la **maîtrise du procédé**."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — la libération est un acte pharmaceutique engageant",
+            "text": "La libération n'est **jamais** un automatisme technique : elle exige une **décision humaine documentée et signée** par la RPR / le radiopharmacien [1]. En cas d'opérateur unique, la revue **indépendante** de tous les résultats par une seconde personne qualifiée est obligatoire [1]. Confondre « CQ conforme » et « libéré » est une erreur : le CQ informe, la RPR décide."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Circuit du médicament radiopharmaceutique : approvisionnement, préparation, contrôle qualité, décision de libération par la RPR, puis dispensation nominative au patient identifié."
+      },
+      {
+        "title": "C11 - C11 · Traçabilité, calcul de dose et gestion des non-conformités",
+        "text": "La dernière maille du circuit du MRP articule trois exigences : **tracer** (garder la preuve de chaque étape), **calculer et ajuster l'activité** au moment de l'administration, et **gérer les écarts** quand une préparation n'est pas conforme.\n\n**Traçabilité et double réglementation.** Le MRP relève d'une **double réglementation** — celle des médicaments et celle des radioéléments [7] — d'où une **double traçabilité** assurée par le pharmacien : identité du médicament (lot, préparation, péremption) et identité du radioélément (radionucléide, activité, décroissance) [8]. Le dossier de lot, revu à la libération (§C10), conserve la trace des matières premières, du mode opératoire, des résultats de CQ et de la décision. En France, cette exigence documentaire est portée par les **Bonnes Pratiques de Préparation (BPP)** de l'ANSM et sa **Ligne Directrice 4 (LD4)** dédiée aux préparations radiopharmaceutiques, publiées le 20 septembre 2022 et **opposables le 20 septembre 2023** (mise à jour 24 octobre 2023), en remplacement des BPP de 2007 [4].\n\n**Calcul de dose.** L'activité administrée n'est pas fixe : elle se calcule à l'**heure d'injection** en corrigeant la décroissance du radionucléide selon sa période physique, à partir de repères d'activité de référence — par exemple **8–10 MBq/kg** pour une scintigraphie osseuse au ⁹⁹ᵐTc-MDP chez l'adulte [32], en respectant les **niveaux de référence diagnostiques (NRD)** français (décision ASN n° 2019-DC-0667 du 18 avril 2019, homologuée par l'arrêté du 23 mai 2019) [34,35]. En pédiatrie, l'activité se calcule via la **carte de dose pédiatrique EANM** (dernière mise à jour août 2016) : activité = **activité de base × facteur pondéral**, avec une mise à l'échelle **non linéaire** selon le poids [28,29]. La correspondance dose-organe s'appuie enfin sur les coefficients de **dose efficace** de l'**ICRP Publication 128 (2015)** — par exemple **0,019 mSv/MBq** pour le ¹⁸F-FDG (organe critique : la vessie) [37,56].\n\n| Repère de calcul | Valeur | Cadre / réf. |\n|---|---|---|\n| Scinti osseuse ⁹⁹ᵐTc-MDP (adulte) | **8–10 MBq/kg** | Guide SFMN os v2.0 [32] |\n| Perfusion pulmonaire ⁹⁹ᵐTc-MAA | réf. ~**200 MBq** | Guide SFMN pulmonaire [33] |\n| Activité pédiatrique | base × facteur pondéral (**non linéaire**) | Carte EANM 2016 [29] |\n| Dose efficace ¹⁸F-FDG | **0,019 mSv/MBq** | ICRP 128 [37] |\n| Dose efficace ⁹⁹ᵐTc-MDP | **0,0057 mSv/MBq** | ICRP 128 / JNM [58] |\n| Cadre NRD (France) | ASN 2019-DC-0667, arrêté 23/05/2019 | Légifrance [34] |\n\n**Gestion des non-conformités.** Toute préparation qui échoue à un critère de libération constitue un résultat **hors spécification (OOS)**. Le cGRPP 2021 et le guideline EANM de **quality risk management** structurent la conduite à tenir autour de la gestion des **déviations, changements, OOS et actions correctives/préventives (CAPA)** [1,3]. La démarche : (1) **bloquer** la préparation non conforme (non-libération, isolement) ; (2) **investiguer** la cause racine (marquage, matière première, procédé, opérateur) ; (3) documenter une **CAPA** ; (4) intégrer le retour d'expérience dans l'**analyse de risque** du procédé [3]. La **validation et la qualification des procédés** impliquant des MRP encadrent en amont la fiabilité du système [43].\n\nCette boucle traçabilité → calcul → non-conformités ferme le circuit qualité : elle garantit qu'à toute dose administrée correspond une préparation libérée, tracée, correctement dosée, et qu'aucun écart ne reste sans analyse.",
+        "steps": [
+          {
+            "title": "1 · Détection de l'écart (OOS)",
+            "text": "Un résultat de CQ hors spécification (PRC insuffisante, endotoxines élevées, percée excessive) ou une déviation de procédé est identifié avant libération [1]."
+          },
+          {
+            "title": "2 · Blocage et non-libération",
+            "text": "La préparation est isolée et non libérée par la RPR ; le lot est mis en quarantaine documentaire [1]."
+          },
+          {
+            "title": "3 · Investigation de la cause racine",
+            "text": "Analyse : matière première (générateur, trousse), mode opératoire, conditions de marquage, opérateur, environnement [3]."
+          },
+          {
+            "title": "4 · CAPA et analyse de risque",
+            "text": "Action corrective/préventive documentée, intégrée à la gestion de risque du procédé (EANM quality risk management) [3]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "8–10 MBq/kg",
+            "label": "Repère ⁹⁹ᵐTc-MDP adulte (scinti osseuse) [32]"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Dose efficace ¹⁸F-FDG (ICRP 128) [37]"
+          },
+          {
+            "value": "20/09/2023",
+            "label": "Opposabilité BPP LD4 (ANSM) [4]"
+          },
+          {
+            "value": "Août 2016",
+            "label": "Dernière mise à jour carte de dose pédiatrique EANM [28]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — calcul pédiatrique non linéaire",
+            "text": "La carte de dose EANM utilise une mise à l'échelle **non linéaire** (activité = base × facteur pondéral) [29], à la différence du consensus nord-américain 2010 qui est **linéaire en MBq/kg** [30]. Appliquer une simple règle MBq/kg de l'adulte à un enfant **sous-dose ou surdose** selon le poids : toujours utiliser le facteur pondéral de la carte EANM."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — corriger la décroissance à l'heure d'injection",
+            "text": "L'activité prescrite doit être **recalculée à l'heure réelle d'administration** en corrigeant la période physique (**6 h** pour le ⁹⁹ᵐTc, **110 min** pour le ¹⁸F, **68 min** pour le ⁶⁸Ga) [13,18,14]. Une dose préparée pour 8 h et injectée à 10 h délivre une activité fortement diminuée ; l'omission de la correction est une source classique d'écart dose prescrite / dose administrée."
+          },
+          {
+            "type": "info",
+            "title": "Info — double réglementation, double traçabilité",
+            "text": "Le MRP est soumis **à la fois** à la réglementation du médicament et à celle des radioéléments [7]. La traçabilité doit donc être **double** : lot/péremption du médicament ET radionucléide/activité/décroissance [8]. Un dossier ne traçant que l'un des deux volets est incomplet au regard des BPP."
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Correction de décroissance et chaîne de traçabilité : activité de référence, décroissance selon la période physique jusqu'à l'heure d'injection, dossier de lot et boucle de gestion des non-conformités (OOS → CAPA)."
+      },
+      {
+        "title": "D12 - D12 · Radioprotection de l'unite : personnel, patient et environnement",
+        "text": "La radioprotection d'une unite de radiopharmacie repose sur les trois principes de la CIPR (Commission internationale de protection radiologique) : **justification**, **optimisation (ALARA, *As Low As Reasonably Achievable*)** et **limitation des doses**. Le radiopharmacien, en tant que responsable du circuit du medicament radiopharmaceutique (MRP), pense la protection **par cible** — personnel, patient, entourage/public — et l'integre au systeme qualite de la pharmacie a usage interieur (PUI).\n\n**Cadre reglementaire des doses (CIPR / directive Euratom).** Les limites annuelles applicables aux travailleurs exposes sont : **dose efficace corps entier 20 mSv/an**, **dose equivalente aux extremites Hp(0,07) 500 mSv/an** et **dose au cristallin abaissee a 20 mSv/an** — abaissement recommande par la CIPR en raison du risque de cataracte radio-induite [62,63].\n\n**Le point critique : la dose aux mains.** Dans une unite de radiopharmacie, le **technicien de dispensation / preparation** constitue le groupe le plus expose, l'enjeu majeur portant sur la **dose aux extremites** (doigts, mains) lors des manipulations de sources non scellees [62]. La position du dosimetre bague influence fortement la mesure : lors de la preparation du ¹⁸F-FDG (fluorodesoxyglucose) pour la TEP/TDM (tomographie par emission de positons couplee au scanner), la position du dosimetre modifie significativement la valeur enregistree de dose aux extremites [64] — d'ou la necessite de le porter au niveau du doigt le plus expose, oriente vers la source.\n\n| Cible de protection | Levier / mesure cle | Precisions |\n|---|---|---|\n| **Personnel** | Blindage plomb/tungstene (protege-seringues, protege-flacons, enceintes blindees), distance, temps, systemes clos | Vigilance accrue avec les emetteurs de haute energie (¹³¹I 364 keV, ⁶⁸Ga/¹⁸F 511 keV) et les emetteurs β⁻ (¹⁷⁷Lu, ¹³¹I) [62] |\n| **Cristallin & extremites** | Dosimetrie operationnelle + passive dediee (bague), automate de synthese en enceinte blindee | Cristallin 20 mSv/an, extremites 500 mSv/an [63] |\n| **Patient** | Justification, optimisation de l'activite, respect des NRD (niveaux de reference diagnostiques), blocage thyroidien si iode libre | E(¹⁸F-FDG) = **0,019 mSv/MBq**, organe critique vessie [37] |\n| **Entourage / public** | Le patient devient une « source » : consignes post-examen (hydratation, mictions frequentes, distance vis-a-vis des enfants et femmes enceintes durant la periode utile) | Modulees selon la periode du radionucleide |\n\n**Ingenierie de la protection.** Le trepied **temps / distance / ecran** structure toute l'organisation du poste de travail : reduire le temps de contact (procedures repetees a blanc, gestes optimises), maximiser la distance (pinces de prehension, robotisation), interposer un ecran adapte a l'energie (plomb pour les γ de basse energie, association plomb + materiaux legers pour freiner les β⁻ sans generer de rayonnement de freinage excessif). La **ligne directrice 4 (LD4)** des Bonnes Pratiques de Preparation (BPP) 2023 renforce explicitement le volet radioprotection du personnel dans le circuit du MRP, avec une redondance volontaire avec les LD1 (steriles) et LD2 (substances dangereuses) [7]. La preparation aseptique se fait en **zones a atmosphere controlee (ZAC)**, en enceinte blindee, jamais en zone de circulation [7].\n\n**Radioprotection du patient.** Elle passe par la justification de l'acte, l'optimisation de l'activite administree et le respect des NRD, cadre defini en France par la **decision ASN n° 2019-DC-0667 du 18 avril 2019** homologuee par arrete du 23 mai 2019 [34,35]. La dose delivree reste faible en diagnostic : gamme E/A₀ **0,0017 a 0,016 mSv/MBq** pour les MRP au ⁹⁹ᵐTc (technetium-99m) [36], et **0,019 mSv/MBq** pour le ¹⁸F-FDG [37]. En comparaison, la TEP-PSMA (antigene membranaire specifique de prostate) delivre **8,4 mSv** contre **19,2 mSv** pour l'imagerie conventionnelle dans l'etude proPSMA [69,70] — argument dosimetrique en faveur de l'imagerie fonctionnelle.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — la dose aux extremites",
+            "text": "Le corps entier reste largement sous 20 mSv/an dans une unite bien organisee, mais les **doigts** peuvent approcher les 500 mSv/an sans protege-seringue systematique ni pince. Le dosimetre bague doit etre porte sur le doigt le plus expose, face active vers la source : une position inadaptee sous-estime la dose reelle [64]. Toute manipulation directe d'une seringue non blindee de ¹⁸F-FDG ou de ¹⁷⁷Lu est proscrite."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — penser la protection par energie",
+            "text": "Le blindage n'est pas universel : quelques millimetres de plomb suffisent pour les 140 keV du ⁹⁹ᵐTc, mais les 511 keV du ¹⁸F/⁶⁸Ga exigent des epaisseurs bien superieures et les 364 keV du ¹³¹I imposent des enceintes dediees. Pour les emetteurs β⁻ (¹⁷⁷Lu, ¹³¹I), on privilegie des ecrans de faible numero atomique (plexiglas) en premiere couche pour minimiser le rayonnement de freinage, complete par du plomb pour le γ associe."
+          }
+        ],
+        "stats": [
+          {
+            "value": "20 mSv/an",
+            "label": "Dose efficace corps entier (travailleur) [63]"
+          },
+          {
+            "value": "500 mSv/an",
+            "label": "Dose aux extremites Hp(0,07) [63]"
+          },
+          {
+            "value": "20 mSv/an",
+            "label": "Dose au cristallin (abaissee, CIPR) [63]"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Dose efficace ¹⁸F-FDG (vessie critique) [37]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureCaption": "Fig. 1 — Temps / distance / ecran : les trois leviers ALARA qui structurent l'organisation du poste de travail et les consignes au personnel comme a l'entourage.",
+        "figureAlt": "Schema des trois leviers de reduction de dose ALARA : reduire le temps d'exposition, augmenter la distance a la source, interposer un ecran adapte a l'energie du rayonnement."
+      },
+      {
+        "title": "D13 - D13 · Gestion des dechets radioactifs et effluents",
+        "text": "La radiopharmacie manipule exclusivement des **sources radioactives non scellees** : chaque preparation genere des dechets (flacons, seringues, aiguilles, compresses, gants, filtres) et des effluents (rincages, eluats perimes, urines de patients traites) contamines. Leur gestion repose sur un principe cardinal propre a la medecine nucleaire : la **decroissance sur place** des radionucleides de courte periode, avant elimination dans les filieres conventionnelles.\n\n**Le levier fondamental : la periode physique.** Le tri des dechets se fait par radionucleide, car la duree de stockage requise depend directement de la periode. La regle operationnelle usuelle est un entreposage d'au moins **10 periodes** (facteur de decroissance ~1000, soit une activite residuelle ~0,1 %) avant controle radiametrique et evacuation en dechets non radioactifs.\n\n| Radionucleide | Periode physique | Duree d'entreposage indicative (~10 T½) | Filiere |\n|---|---|---|---|\n| **⁹⁹ᵐTc** | 6,0 h [11] | ~60 h (2-3 j) | Decroissance sur place, tri courant |\n| **¹⁸F** | 110 min [18,19] | ~18 h | Decroissance rapide (TEP) |\n| **⁶⁸Ga** | 67,8 min [14] | ~11 h | Decroissance tres rapide |\n| **¹²³I** | 13,2 h | ~5,5 j | Decroissance sur place |\n| **¹⁷⁷Lu** | 6,6 j | ~2 mois | Entreposage prolonge (RIV) |\n| **¹³¹I** | 8,0 j | ~2-3 mois | Entreposage prolonge, effluents dedies |\n\n**Le cas des periodes longues.** Le ⁹⁹Mo (molybdene-99) parent du generateur a une periode de **66 h** [11,12] : un generateur ⁹⁹Mo/⁹⁹ᵐTc epuise doit etre entrepose plusieurs semaines, ou renvoye au fournisseur qui en assure la reprise. Les emetteurs therapeutiques a periode plus longue — **¹³¹I (8 j)**, **¹⁷⁷Lu (6,6 j)** — imposent un local de stockage des dechets radioactifs dedie et, pour l'¹³¹I, une **gestion specifique des effluents** (cuves de decroissance pour les urines des patients traites), car l'iode est volatil et excrete massivement par voie urinaire.\n\n**Locaux et organisation.** L'unite de radiopharmacie comporte reglementairement un **local de stockage des dechets radioactifs** distinct des zones de preparation [73]. Ce local, blinde et ventile, permet le stockage en decroissance sous surveillance radiametrique. La tracabilite est integrale : chaque lot de dechet est identifie par radionucleide, activite initiale, date de mise en decroissance et date theorique de liberation. Le controle avant elimination se fait au radiametre (activite indiscernable du bruit de fond), condition sine qua non du passage en filiere conventionnelle.\n\n**Effluents gazeux.** Les enceintes de manipulation de l'¹³¹I (volatil) et les hottes de radiosynthese sont raccordees a une ventilation avec filtration adaptee, l'air rejete etant controle. Ce point est capital pour la protection de l'environnement et rejoint le cadre de la LD4 des BPP 2023 [7].",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "La regle des 10 periodes",
+            "text": "Un dechet contamine peut etre elimine en filiere conventionnelle lorsque son activite est redevenue indiscernable du bruit de fond. En pratique, un entreposage de ~10 periodes physiques ramene l'activite a environ 0,1 % de sa valeur initiale. Pour le ⁹⁹ᵐTc (T½ 6 h [11]) cela represente 2-3 jours ; pour l'¹³¹I (T½ 8 j [37]), 2-3 mois."
+          },
+          {
+            "type": "warning",
+            "title": "Precaution — iode volatil et effluents urinaires",
+            "text": "L'¹³¹I pose un double probleme : volatilite (contamination atmospherique, captation thyroidienne du personnel — d'ou blocage thyroidien et ventilation dediee) et excretion urinaire massive imposant des cuves de decroissance pour les effluents des patients traites. Ne jamais rejeter directement a l'egout des effluents therapeutiques non decrus."
+          }
+        ],
+        "steps": [
+          {
+            "title": "1. Tri a la source",
+            "text": "Segregation immediate par radionucleide (periode) et par type (solide/liquide, piquant-tranchant), dans des conteneurs blindes identifies."
+          },
+          {
+            "title": "2. Mise en decroissance",
+            "text": "Entreposage dans le local dedie, blinde et ventile, avec etiquetage : radionucleide, activite initiale, date de depot, date theorique de liberation."
+          },
+          {
+            "title": "3. Controle radiametrique",
+            "text": "Verification au radiametre avant sortie : l'activite doit etre indiscernable du bruit de fond ambiant."
+          },
+          {
+            "title": "4. Elimination / reprise",
+            "text": "Passage en filiere de dechets conventionnels (DASRI) apres decroissance ; reprise fournisseur pour les generateurs epuises ; filiere ANDRA pour les dechets a vie longue eventuels."
+          }
+        ],
+        "stats": [
+          {
+            "value": "~10 T½",
+            "label": "Duree d'entreposage avant liberation (~0,1 %)"
+          },
+          {
+            "value": "6,0 h",
+            "label": "Periode du ⁹⁹ᵐTc [11]"
+          },
+          {
+            "value": "66 h",
+            "label": "Periode du ⁹⁹Mo parent (generateur) [11]"
+          },
+          {
+            "value": "8,0 j",
+            "label": "Periode de l'¹³¹I (stockage prolonge) [37]"
+          }
+        ]
+      },
+      {
+        "title": "D14 - D14 · Cadre reglementaire, assurance qualite et referentiels (BPP, Pharmacopee, GMP radiopharmaceutique)",
+        "text": "La preparation et la liberation des MRP relevent d'une **double reglementation** — celle du medicament ET celle des radioelements — ce qui fait de la radiopharmacie une discipline a la croisee de la pharmacie hospitaliere et de la radioprotection [7,8]. Trois corpus se superposent : le referentiel national (BPP), la Pharmacopee europeenne (specifications produit) et les guidelines europeennes de bonne pratique (cGRPP EANM).\n\n**1. France — Bonnes Pratiques de Preparation (BPP) ANSM.** Les BPP 2023, publiees par l'ANSM (Agence nationale de securite du medicament) le **20 septembre 2022** et **opposables le 20 septembre 2023** (mises a jour le 24 octobre 2023), remplacent la version de 2007 [4,5]. La **ligne directrice 4 (LD4) « Preparations radiopharmaceutiques »** est le texte de reference : elle renforce la securite du circuit et la radioprotection du personnel, et — nouveaute majeure — **autorise le recours a un automate de radiosynthese**, sous reserve qu'il soit place dans une enceinte blindee avec qualification d'installation et d'utilisation [6,7]. L'autorisation de preparer des MRP en PUI est encadree par le Code de la sante publique (art. R.5126-9 relatif a l'activite de radiopharmacie).\n\n**2. Europe — cGRPP de l'EANM.** Le *Guideline on current Good Radiopharmacy Practice (cGRPP) for the small-scale preparation of radiopharmaceuticals* (EANM Radiopharmacy Committee, publie le **12 fevrier 2021**, EJNMMI Radiopharm Chem 2021;6:8) est le referentiel des petites preparations non commerciales [1,42]. Sa structure est calquee sur l'**EU-GMP EudraLex vol. 4** (bonnes pratiques de fabrication europeennes) :\n\n| Partie cGRPP | Perimetre |\n|---|---|\n| **Partie I** | Generalites, systeme qualite, personnel, locaux |\n| **Partie II** | Preparations a petite echelle a partir de generateurs / trousses **licencies** |\n| **Partie III** | Matieres premieres **non licenciees** (purification + filtration sterilisante) |\n\n**Classes d'air (calquees sur EU-GMP).** Les manipulations aseptiques exigent un environnement de **grade A** ; apres analyse de risque, un fond de **grade C** est admis pour les hottes a flux laminaire (LAFW), et un fond de **grade D** pour les isolateurs [1,73]. Pour la synthese automatisee en enceinte blindee, le **grade C** est le minimum, la repartition/sterilisation restant en **grade A** [1].\n\n**3. Le systeme qualite et la liberation.** Le cGRPP impose une **Responsible Person for Radiopharmaceuticals (RPR)** — equivalent de la *Qualified Person* des EU-GMP — chargee d'examiner les matieres entrantes, de revoir les dossiers de lot, d'approuver les SOP (procedures operatoires standardisees) et d'assurer la **liberation de lot** ; elle justifie d'une formation academique equivalente et d'au moins **2 ans d'experience pratique** [1,42]. L'effectif ideal est d'au moins deux personnes, dont la RPR ; en cas d'operateur unique, une seconde personne qualifiee revoit tous les resultats [1]. Le dispositif est complete par la **gestion des deviations, changements, resultats hors specification (OOS, *Out Of Specification*) et actions correctives/preventives (CAPA)** [2], et par l'*EANM guideline on quality risk management for radiopharmaceuticals* (analyse de risque appliquee a la preparation) [3].\n\n**4. La liberation (release).** La liberation est la **decision documentee et signee** de la RPR attestant : conformite aux specifications (essais laboratoire), preparation selon les procedures definies, revue des donnees de production et de controle qualite [1]. Pour les traceurs de courte periode, la **liberation parametrique** autorise l'administration AVANT le resultat de sterilite (retrospectif, culture ≥ 14 jours selon Ph. Eur. 2.6.1), sur la base d'un procede **valide** et d'essais rapides (purete radiochimique, endotoxines, aspect, pH) — la culture etant neanmoins menee a terme [24]. Pour les preparations a partir de generateurs/trousses homologues, les tests de sterilite et d'endotoxines ne sont pas requis avant liberation, un *media fill* (test de simulation aseptique) regulier restant recommande [1].\n\n**5. Pharmacopee europeenne.** Le socle analytique du produit repose sur la **monographie generale 0125 « Preparations radiopharmaceutiques »**, le chapitre **2.2.66** (mesure de la radioactivite), le test de sterilite **2.6.1**, le test des endotoxines bacteriennes (LAL) **2.6.14** et les limites d'endotoxines **5.1.10** (limite IV **175 UI/V**, soit K = 2,5 UI/kg ; voie intrathecale 14/V) [22,23]. Le guide EDQM 2018 encadre l'elaboration des monographies [23].",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — RPR, la clef de voute de la liberation",
+            "text": "La RPR concentre la responsabilite pharmaceutique du lot libere : c'est sa signature datee qui engage la conformite. La liberation n'est pas un simple visa administratif mais une decision fondee sur la revue croisee du dossier de production, des resultats de CQ et de la validation du procede. Pour un traceur a periode courte, cette decision est prise sous contrainte temporelle forte, d'ou l'importance de la liberation parametrique adossee a un procede valide [1,24]."
+          },
+          {
+            "type": "warning",
+            "title": "Precaution — double reglementation, double tracabilite",
+            "text": "Le MRP obeit simultanement au droit du medicament et a celui des radioelements. Le radiopharmacien assure une **double tracabilite** (medicament + radioelement) et une dispensation nominative [8]. Une conformite pharmaceutique ne dispense jamais des obligations de radioprotection, et inversement — les deux registres doivent etre documentes."
+          }
+        ],
+        "steps": [
+          {
+            "title": "BPP 2007",
+            "text": "Referentiel historique (decision ANSM du 5 novembre 2007, chapitre radiopharmacie) [4]."
+          },
+          {
+            "title": "cGRPP EANM — 12 fevrier 2021",
+            "text": "Guideline europeen des petites preparations, calque sur EU-GMP EudraLex vol. 4, introduisant la RPR et les 3 parties [1,42]."
+          },
+          {
+            "title": "BPP 2023 — opposables 20 sept. 2023",
+            "text": "LD4 « Preparations radiopharmaceutiques » : renforcement radioprotection + autorisation des automates de radiosynthese en enceinte blindee [4,6,7]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "Grade A",
+            "label": "Classe d'air pour l'aseptie [1]"
+          },
+          {
+            "value": "20 sept. 2023",
+            "label": "Opposabilite des BPP 2023 / LD4 [4]"
+          },
+          {
+            "value": "≥ 2 ans",
+            "label": "Experience pratique requise du RPR [1]"
+          },
+          {
+            "value": "175 UI/V",
+            "label": "Limite d'endotoxines IV (Ph. Eur. 5.1.10) [22]"
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureCaption": "Fig. 2 — Generateur ⁹⁹Mo/⁹⁹ᵐTc : le pilier de la radiopharmacie a petite echelle (partie II du cGRPP), dont chaque eluat est soumis au CQ de liberation (percee ⁹⁹Mo, Al³⁺, purete radiochimique).",
+        "figureAlt": "Schema d'un generateur molybdene-99 / technetium-99m : colonne d'alumine retenant le ⁹⁹Mo parent, elution du ⁹⁹ᵐTc fils sous forme de pertechnetate au serum physiologique."
+      },
+      {
+        "title": "D15 - D15 · Cas particuliers et perspectives : theranostique, PET-centre, automatisation et securisation de l'approvisionnement",
+        "text": "La radiopharmacie hospitaliere connait une mutation profonde, portee par l'essor de la **theranostique**, la montee en charge des **centres TEP** et l'**automatisation** des synthese, dans un contexte de **fragilite de l'approvisionnement** en radionucleides.\n\n**1. La bascule theranostique.** Le meme vecteur, marque par un isotope emetteur γ/β⁺ pour l'imagerie puis par un isotope emetteur β⁻/α pour la therapie, fonde la **paire theranostique** : on selectionne le patient par imagerie (expression de la cible) avant de le traiter par radionucleide. Cette logique transforme la radiopharmacie, qui doit desormais preparer et liberer des **medicaments radiopharmaceutiques therapeutiques** — d'activite bien superieure au diagnostic. Deux couples structurent la pratique :\n\n| Couple theranostique | Imagerie (selection) | Therapie | Cible |\n|---|---|---|---|\n| **PSMA** | ⁶⁸Ga/¹⁸F-PSMA (TEP) | **¹⁷⁷Lu-PSMA-617 (Pluvicto®)** | Antigene membranaire de prostate |\n| **SSTR** | ⁶⁸Ga-DOTATOC/DOTATATE (TEP) | **¹⁷⁷Lu-DOTATATE (Lutathera®)** | Recepteurs de la somatostatine (TNE) |\n\nLe ¹⁷⁷Lu-PSMA-617 s'administre a **7,4 GBq par cure** (essai VISION) et a ete approuve par la FDA le **23 mars 2022** [71] ; le ¹⁷⁷Lu-DOTATATE dans les tumeurs neuroendocrines (TNE) s'appuie sur l'essai NETTER-1 [72]. Ces MRP therapeutiques imposent des controles adaptes : la **radio-CCM (chromatographie sur couche mince) seule ne detecte pas les produits de radiolyse**, alors que la HPLC (chromatographie liquide haute performance) revele les pics de radiolyse — demontre pour le ¹⁷⁷Lu-PSMA [48]. La radioprotection (β⁻ + γ du ¹⁷⁷Lu, periode 6,6 j) et la gestion des effluents (cf. §D13) montent d'un cran.\n\n**2. Le modele « PET-centre » et le ⁶⁸Ga sur site.** Le ¹⁸F (T½ 110 min [18]) est produit par cyclotron via la reaction ¹⁸O(p,n)¹⁸F sur eau enrichie [17], sa periode autorisant une distribution regionale mais imposant une planification serree. Le **generateur ⁶⁸Ge/⁶⁸Ga** (parent ⁶⁸Ge, T½ 271 j [14]) affranchit l'etablissement du cyclotron : il permet l'elution repetee du ⁶⁸Ga (T½ 67,8 min, rendement positon 89,1 % [14]) sur site, pour le marquage extemporane des peptides DOTA et du PSMA-11. Le CQ de liberation du ⁶⁸Ga exige une **purete radiochimique > 98-99 %** (HPLC) et une **percee du ⁶⁸Ge < 0,006 %** (jusqu'a ~10⁻⁶ % sur les generateurs recents) [54,55].\n\n**3. Automatisation et securisation.** La LD4 des BPP 2023 **autorise les automates de radiosynthese** en enceinte blindee, avec qualification [6,7] : ils reduisent la dose aux operateurs (cf. §D12), standardisent le procede et securisent la reproductibilite — condition d'une liberation parametrique fiable. En parallele, l'approvisionnement demeure un point de vulnerabilite strategique : **~80 % des actes diagnostiques mondiaux reposent sur le ⁹⁹ᵐTc** [11], dont le parent ⁹⁹Mo est produit par fission de l'²³⁵U ou irradiation neutronique du ⁹⁸Mo dans un petit nombre de reacteurs vieillissants [12] — d'ou des crises d'approvisionnement recurrentes et le developpement de voies de production alternatives (cyclotron, accelerateurs).\n\n**4. Cas particulier — le marquage cellulaire.** Le radiomarquage des leucocytes (⁹⁹ᵐTc-HMPAO ou ¹¹¹In-oxine, pour l'imagerie de l'infection/inflammation) se realise en systeme ouvert, sous conditions steriles en hotte a flux laminaire **classe A**, avec des dispositifs clos jetables agissant comme mini-isolateurs [45,73]. Ses criteres de validation sont specifiques : efficacite de marquage **> 50 %**, viabilite cellulaire **> 98 %**, sterilite et apyrogenicite negatives, avec validation de l'operateur ≥ 3 fois puis tous les 6 mois [45]. Ce cas illustre l'exigence maximale du systeme qualite radiopharmaceutique, a l'interface du medicament, de la biologie et de la radioprotection.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la radiopharmacie, cheville ouvriere de la theranostique",
+            "text": "La boucle theranostique (imager → selectionner → traiter → doser → reevaluer) ne fonctionne que si la radiopharmacie sait preparer ET liberer les deux membres du couple. Le passage a l'echelle therapeutique (activites GBq, emetteurs β⁻/α, effluents dedies) change la nature du metier : le radiopharmacien devient acteur direct de la strategie oncologique, et non plus seulement fournisseur de traceurs diagnostiques."
+          },
+          {
+            "type": "warning",
+            "title": "Precaution — radio-CCM insuffisante pour les MRP therapeutiques",
+            "text": "Pour un traceur therapeutique comme le ¹⁷⁷Lu-PSMA, la seule radio-CCM peut manquer les produits de radiolyse (degradation radio-induite du vecteur), avec un risque de sous-estimer une impurete active. La HPLC est necessaire pour objectiver les pics de radiolyse et garantir la purete radiochimique reelle avant liberation [48]."
+          },
+          {
+            "type": "info",
+            "title": "Vulnerabilite de l'approvisionnement en ⁹⁹Mo",
+            "text": "Environ 80 % des actes diagnostiques mondiaux dependent du ⁹⁹ᵐTc [11], dont le parent ⁹⁹Mo est produit dans un nombre restreint de reacteurs. Toute maintenance ou arret non planifie provoque une penurie mondiale — enjeu qui justifie les investissements dans les filieres de production alternatives (cyclotron, ⁹⁸Mo)."
+          }
+        ],
+        "steps": [
+          {
+            "title": "Selection",
+            "text": "Imagerie TEP (⁶⁸Ga/¹⁸F-PSMA, ⁶⁸Ga-DOTATATE) : verifier l'expression de la cible et l'avidite des lesions."
+          },
+          {
+            "title": "Preparation & liberation",
+            "text": "Radiomarquage du vecteur therapeutique (¹⁷⁷Lu-PSMA-617, ¹⁷⁷Lu-DOTATATE), CQ par HPLC (radiolyse), liberation par la RPR."
+          },
+          {
+            "title": "Traitement",
+            "text": "Administration de l'activite therapeutique (¹⁷⁷Lu-PSMA-617 : 7,4 GBq/cure [71]), radioprotection renforcee, gestion des effluents."
+          },
+          {
+            "title": "Dosimetrie & reevaluation",
+            "text": "Dosimetrie post-therapeutique et imagerie de reevaluation, bouclant le cycle theranostique."
+          }
+        ],
+        "stats": [
+          {
+            "value": "7,4 GBq",
+            "label": "Activite par cure de ¹⁷⁷Lu-PSMA-617 (VISION) [71]"
+          },
+          {
+            "value": "~80 %",
+            "label": "Part des actes diagnostiques au ⁹⁹ᵐTc [11]"
+          },
+          {
+            "value": "271 j",
+            "label": "Periode du ⁶⁸Ge (generateur ⁶⁸Ga sur site) [14]"
+          },
+          {
+            "value": "< 0,006 %",
+            "label": "Percee ⁶⁸Ge du generateur (CQ liberation) [54]"
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureCaption": "Fig. 3 — La boucle theranostique : imager (selection) → preparer/liberer → traiter → doser → reevaluer. La radiopharmacie hospitaliere en est la cheville ouvriere, preparant les deux membres de chaque paire (⁶⁸Ga↔¹⁷⁷Lu).",
+        "figureAlt": "Schema en boucle du concept theranostique : imagerie de selection par emetteur de positons, puis therapie par emetteur beta, dosimetrie et reevaluation, illustrant le couplage diagnostic-therapie."
+      },
+      {
+        "title": "E16 - E16 · Points clés, confusions classiques et auto-évaluation",
+        "text": "Cette section condense l'article en une **page mémo** à haut rendement, puis anticipe les **confusions classiques** du circuit du médicament radiopharmaceutique (MRP) et propose une **auto-évaluation** de type QCM. Chaque chiffre reste sourcé ; les seuils réglementaires et pharmacopée doivent être mémorisés comme des **valeurs opposables**, non comme des ordres de grandeur.\n\n### ▸ Points clés à retenir\n\n- La **radiopharmacie** est une activité de pharmacie à usage intérieur (PUI) qui sécurise l'ensemble du **circuit du MRP** — approvisionnement, préparation (radiomarquage), contrôle qualité (CQ), **libération**, traçabilité, radiopharmacovigilance — à partir de sources radioactives non scellées, sous **double réglementation** (médicament + radioélément) [7,8,41].\n- Trois catégories opérationnelles de matière : **spécialité prête à l'emploi** (AMM), **générateur** (couple père/fils élué sur site) et **trousse/kit** (précurseur non radioactif marqué extemporanément) [8,74].\n- **⁹⁹ᵐTc**, pilier du SPECT (single photon emission CT), assure **~80 %** des actes diagnostiques mondiaux : γ **140 keV**, période **T½ = 6 h**, élué en **pertechnétate ⁹⁹ᵐTcO₄⁻** d'un générateur **⁹⁹Mo/⁹⁹ᵐTc** (parent T½ **66 h**) [11,12,13].\n- **¹⁸F** (TEP) : production cyclotron par ¹⁸O(p,n)¹⁸F, **T½ ≈ 110 min**, β⁺ → annihilation **511 keV** ; **⁶⁸Ga** : générateur **⁶⁸Ge/⁶⁸Ga** (parent T½ **271 j**), **T½ ≈ 68 min**, marquage de peptides **DOTA** (⁶⁸Ga-DOTATOC/DOTATATE, ⁶⁸Ga-PSMA-11) [14,17,18].\n- **CQ générateur ⁹⁹Mo/⁹⁹ᵐTc à chaque élution** : percée du ⁹⁹Mo ≤ **0,15 kBq/MBq** (USP) / ≤ **0,1 kBq/MBq** (Ph. Eur., plus stricte) ; **Al³⁺ < 10 µg/mL** ; pureté radiochimique du pertechnétate ≥ **95 %** [12,13,52].\n- **CQ des préparations marquées** : pureté radiochimique (PRC) par ITLC/CLHP, **> 90–95 %** selon le MRP ; **⁶⁸Ga-PSMA-11 PRC > 98 %**, percée ⁶⁸Ge **< 0,006 %** ; la **radio-CCM seule ne détecte pas les produits de radiolyse**, d'où l'intérêt de l'HPLC [47,48,54,55].\n- **Stérilité** (Ph. Eur. 2.6.1) et **endotoxines** (Ph. Eur. 2.6.14) sont des tests **rétrospectifs** : la culture dure **≥ 14 jours**, bien au-delà de la période du traceur → recours à la **libération paramétrique** sur procédé validé [1,24].\n- **Cadre réglementaire France** : Bonnes Pratiques de Préparation (BPP) refondues, **opposables le 20 septembre 2023** (remplacent la version 2007) ; la **Ligne Directrice 4 (LD4)** dédiée aux préparations radiopharmaceutiques autorise l'automate de radiosynthèse en **enceinte blindée** qualifiée [4,5,6,7].\n- **Cadre européen** : cGRPP EANM (current Good Radiopharmacy Practice, 2021) calqué sur EudraLex vol. 4 ; **grade A** pour l'aseptie, environnement **grade C** (flux laminaire) ou **grade D** (isolateur) après analyse de risque ; la **libération de lot** relève du **Responsible Person for Radiopharmaceuticals (RPR)**, équivalent de la Qualified Person, avec **≥ 2 ans** d'expérience [1,42].\n- **Radioprotection du travailleur (CIPR)** : **20 mSv/an** corps entier, **500 mSv/an** aux extrémités Hp(0,07), **20 mSv/an** cristallin ; le **manipulateur de dispensation** est le groupe le plus exposé, avec un enjeu majeur sur la **dose aux doigts** [62,63,64].\n- **Dosimétrie patient (ICRP 128)** : ¹⁸F-FDG **0,019 mSv/MBq** (organe critique = vessie) ; MRP au ⁹⁹ᵐTc entre **0,0017 et 0,016 mSv/MBq** selon le traceur [36,37,56].\n\n### ▸ Confusions classiques\n\n| À ne pas confondre | Distinction opérationnelle |\n|---|---|\n| **Percée ⁹⁹Mo (radionucléidique)** vs **PRC du pertechnétate (radiochimique)** | La percée mesure la **contamination par le parent** (≤ 0,1 kBq/MBq Ph. Eur.) ; la PRC mesure la **fraction de Tc à l'état +7** (≥ 95 %). Deux tests distincts sur chaque éluat [12,13,52]. |\n| **Al³⁺ (< 10 µg/mL)** vs **percée ⁹⁹Mo** | L'aluminium est une **impureté chimique** (relargage de la colonne d'alumine, test colorimétrique) ; la percée est une **impureté radionucléidique** [12,20]. |\n| **Libération** vs **dispensation** | La **libération** = décision documentée du RPR attestant la conformité aux spécifications ; la **dispensation** (nominative) est l'étape pharmaceutique de mise à disposition au patient [1,8]. |\n| **Grade A/B/C/D** (empoussièrement, EU-GMP) vs **classes de zone contrôlée radiologique** | Les grades qualifient la **propreté particulaire/microbiologique** ; ils ne présument pas du zonage **radioprotection**. Grade A = aseptie, jamais un synonyme de « zone contrôlée » [1,73]. |\n| **RPR** vs **radiopharmacien mention A/B** | Le RPR est le concept EANM de **libérateur de lot** ; les **mentions A/B** décrivent le niveau d'activité autorisé du radiopharmacien français (A = trousses/générateurs, B = préparations complexes) [1,9]. |\n| **Radio-CCM** vs **HPLC** pour la PRC | La radio-CCM (ITLC) est rapide mais **peut manquer les produits de radiolyse** ; l'HPLC les résout — critique pour les traceurs thérapeutiques (¹⁷⁷Lu-PSMA) [47,48]. |\n| **Libération paramétrique** vs **absence de test** | La libération paramétrique **précède** le résultat de stérilité mais repose sur un **procédé validé** + tests rapides (PRC, endotoxines, pH, aspect) ; la culture est **menée à terme** a posteriori [1,24]. |\n| **T½ du fils** vs **T½ du parent** | ⁹⁹ᵐTc **6 h** vs ⁹⁹Mo **66 h** ; ⁶⁸Ga **68 min** vs ⁶⁸Ge **271 j** — c'est la longue période du parent qui justifie l'usage prolongé du générateur [11,14]. |\n\n### ▸ Auto-évaluation (QCM)\n\n**Q1.** Quelle est la limite Ph. Eur. de percée du ⁹⁹Mo dans l'éluat d'un générateur ⁹⁹Mo/⁹⁹ᵐTc ? → **≤ 0,1 kBq ⁹⁹Mo/MBq ⁹⁹ᵐTc** (l'USP tolère 0,15) [12,52].\n\n**Q2.** Quel grade d'air EU-GMP est exigé pour les manipulations aseptiques selon le cGRPP EANM ? → **Grade A**, avec fond grade C (flux laminaire) ou D (isolateur) après analyse de risque [1].\n\n**Q3.** Pourquoi la libération paramétrique est-elle nécessaire pour la plupart des MRP ? → Parce que la **stérilité (culture ≥ 14 j)** ne peut être obtenue avant l'administration d'un traceur de période courte ; on libère sur **procédé validé** [1,24].\n\n**Q4.** Quelle est la dose efficace du ¹⁸F-FDG et son organe critique ? → **0,019 mSv/MBq**, organe le plus dosé = **vessie** [36,37].\n\n**Q5.** Quelle limite annuelle de dose au cristallin s'applique au travailleur exposé ? → **20 mSv/an** (abaissée par l'ICRP en raison du risque de cataracte) [62,63].\n\n**Q6.** Quel agent réducteur permet le marquage d'une trousse au ⁹⁹ᵐTcO₄⁻ ? → Le **chlorure stanneux (Sn²⁺)**, qui réduit Tc(VII) → Tc(IV/V) pour complexer le ligand.\n\n**Q7.** Depuis quand la LD4 des BPP est-elle opposable en France ? → **20 septembre 2023** (elle remplace la version 2007) [4,6].",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la percée du ⁹⁹Mo n'est pas la seule impureté à contrôler",
+            "text": "Un éluat conforme en percée ⁹⁹Mo peut rester **non conforme en aluminium** (relargage de la colonne d'alumine) ou en **PRC** (Tc hydrolysé-réduit). Les trois contrôles — percée ⁹⁹Mo **≤ 0,1 kBq/MBq** (Ph. Eur.), **Al³⁺ < 10 µg/mL**, PRC pertechnétate **≥ 95 %** — sont **indépendants** et à vérifier sur chaque élution destinée à une préparation [12,13,52]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi HPLC en complément de la radio-CCM",
+            "text": "La radio-CCM (ITLC) sépare bien le traceur du colloïde et du pertechnétate libre, mais **ne résout pas les produits de radiolyse** qui co-migrent souvent avec la forme intacte. Pour les radiopharmaceutiques thérapeutiques à forte activité (ex. **¹⁷⁷Lu-PSMA**), l'HPLC révèle des pics de dégradation invisibles en CCM : elle est **indispensable au contrôle de libération** des RIV [47,48]."
+          },
+          {
+            "type": "info",
+            "title": "Repère — l'architecture qualité du cGRPP",
+            "text": "Le cGRPP structure la préparation à petite échelle en **trois parties** calquées sur EudraLex vol. 4 : Partie I (généralités), Partie II (générateurs/trousses **licenciés**), Partie III (matières premières **non licenciées** avec filtration stérilisante). Il impose la gestion des **déviations, changements, résultats hors spécification (OOS) et actions correctives/préventives (CAPA)**, complétée par l'EANM guideline on quality risk management [1,2,3]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "≤ 0,1 kBq/MBq",
+            "label": "Percée ⁹⁹Mo — limite Ph. Eur. [12,52]"
+          },
+          {
+            "value": "< 10 µg/mL",
+            "label": "Al³⁺ dans l'éluat (USP) [12,20]"
+          },
+          {
+            "value": "Grade A",
+            "label": "Aseptie / répartition (cGRPP) [1]"
+          },
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Dose efficace ¹⁸F-FDG (ICRP 128) [36,37]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Réception & contrôle du générateur",
+            "text": "Vérifier l'éluat à chaque élution : percée **⁹⁹Mo ≤ 0,1 kBq/MBq** (Ph. Eur.), **Al³⁺ < 10 µg/mL**, PRC pertechnétate **≥ 95 %**, pH ~5,0–5,5 [12,13,52]."
+          },
+          {
+            "title": "2 · Préparation aseptique",
+            "text": "Marquage extemporané de la trousse (réduction par Sn²⁺, chauffage si requis) en **grade A**, avec analyse de risque déterminant le fond (grade C flux laminaire / grade D isolateur) [1,73]."
+          },
+          {
+            "title": "3 · Contrôle qualité de libération",
+            "text": "PRC par ITLC/CLHP (**> 90–95 %**), pH, aspect, endotoxines (test rapide) ; stérilité **lancée en parallèle** (culture ≥ 14 j, rétrospective) [1,47]."
+          },
+          {
+            "title": "4 · Libération par le RPR",
+            "text": "Décision documentée et **signée du RPR** : conformité aux spécifications, revue du dossier de lot. **Libération paramétrique** avant résultat de stérilité si procédé validé [1,24]."
+          },
+          {
+            "title": "5 · Dispensation nominative & traçabilité",
+            "text": "Dispensation au patient avec **double traçabilité** (médicament + radioélément) ; conservation d'échantillons de référence **≥ 1 mois** [1,8]."
+          }
+        ],
+        "figureKey": "TC_GENERATOR",
+        "figureAlt": "Schéma d'un générateur ⁹⁹Mo/⁹⁹ᵐTc : colonne d'alumine fixant le ⁹⁹Mo parent, élution du ⁹⁹ᵐTc fils sous forme de pertechnétate au NaCl 0,9 %, avec les points de contrôle qualité (percée ⁹⁹Mo, aluminium, pureté radiochimique).",
+        "figureCaption": "Fig. — Générateur ⁹⁹Mo/⁹⁹ᵐTc et ses trois contrôles de libération à chaque élution (percée ⁹⁹Mo, Al³⁺, PRC du pertechnétate)."
+      },
+      {
+        "title": "E17 - E17 · Références & liens sortants types",
+        "text": "Références sourcées et datées, priorité aux textes réglementaires opposables (ANSM, Légifrance), aux guidelines des sociétés savantes (**EANM** — European Association of Nuclear Medicine, **SNMMI** — Society of Nuclear Medicine and Molecular Imaging, **SFMN/CNP-MN**), aux pharmacopées (**Ph. Eur.**, USP) et aux sources primaires. Aucune référence n'est inventée : la numérotation renvoie exclusivement à la liste fermée [1]–[74] de l'article.\n\n### ▸ Textes de référence structurants\n\n| Domaine | Référence pivot | Renvoi |\n|---|---|---|\n| **Bonnes pratiques (France)** | BPP 2023 — LD3/LD4, opposables 20 sept. 2023 (ANSM) | [4,5,6,7] |\n| **Bonnes pratiques (Europe)** | cGRPP EANM pour la préparation à petite échelle (2021) | [1,2,42] |\n| **Gestion de risque & validation** | EANM quality risk management ; validation/qualification des procédés | [3,43,44] |\n| **Statut du MRP & exercice** | Fiche CNOP (médicaments radiopharmaceutiques) ; mentions A/B ; formation | [8,9,10] |\n| **Pharmacopée & CQ** | Ph. Eur. 5.1.10 (endotoxines) ; guide EDQM monographies ; QC overview | [22,23,25,47,49] |\n| **Dosimétrie patient** | ICRP Publication 128 (2015) ; effective dose 338 radiopharmaceutiques | [36,37,59] |\n| **Radioprotection travailleur** | Limites CIPR (20/500/20 mSv·an⁻¹) ; dose extrémités | [62,63,64] |\n| **Locaux & préparation magistrale** | ANSM/EHESP — préparations magistrales en radiopharmacie (MOOC) | [73,74] |\n\n### ▸ Sources par radionucléide / traceur\n\n| Radionucléide | Production / CQ | Renvoi |\n|---|---|---|\n| **⁹⁹ᵐTc** (⁹⁹Mo/⁹⁹ᵐTc) | Production & usage ; générateur ; QA (percée, Al³⁺, PRC) | [11,12,13,20,21,52,53] |\n| **¹⁸F** (¹⁸F-FDG) | Cyclotron ¹⁸O(p,n)¹⁸F ; synthèse & CQ FDG (Kryptofix, solvants) | [17,18,19,50,51] |\n| **⁶⁸Ga** (⁶⁸Ge/⁶⁸Ga) | Générateur ; CQ (percée ⁶⁸Ge, PRC PSMA) ; premiers agents FDA | [14,15,16,54,55] |\n| **Marquages spécifiques** | ⁹⁹ᵐTc-MAG3 (conditions) ; leucocytes ⁹⁹ᵐTc-HMPAO / ¹¹¹In-oxine | [26,27,45,46] |\n\n### ▸ Activités administrées & performances\n\n- **Repères d'activité adulte / pédiatrie** : guides SFMN/CNP-MN (os, poumon), EANM Paediatric Dosage Card (2016), Consensus nord-américain 2010, NRD (décision ASN 2019-DC-0667) [28,29,30,31,32,33,34,35].\n- **Performances diagnostiques des MRP produits** : ¹⁸F-FDG (poumon, mélanome), ⁶⁸Ga-PSMA (méta-analyses), Deauville/Lugano en lymphome, harmonisation EARL [38,39,40,65,66,67,68].\n- **Théranostique & place stratégique** : proPSMA (Lancet 2020), FDA ¹⁷⁷Lu-PSMA-617 (2022), guidelines EAU-EANM 2024, NETTER-1 [69,70,71,72].\n\n### ▸ Carte de liens (réseau de l'article)\n\n- **Traceurs** : ⁹⁹ᵐTc-pertechnétate · ⁹⁹ᵐTc-MDP · ⁹⁹ᵐTc-MAA · ⁹⁹ᵐTc-MAG3 · ⁹⁹ᵐTc-sestamibi · ¹⁸F-FDG · ⁶⁸Ga-DOTATATE · ⁶⁸Ga-PSMA-11 · ¹⁷⁷Lu-PSMA-617.\n- **Examens** : SPECT/TEMP-TDM · TEP-TDM au ¹⁸F-FDG · TEP au ⁶⁸Ga-DOTATATE · scintigraphie osseuse · scintigraphie pulmonaire de perfusion.\n- **Maladies** : tumeurs neuroendocrines · cancer de la prostate · lymphome · embolie pulmonaire.\n- **Théranostique** : ⁶⁸Ga-PSMA-11 → ¹⁷⁷Lu-PSMA-617 · ⁶⁸Ga-DOTATATE → ¹⁷⁷Lu-DOTATATE (boucle imager → sélectionner → traiter → réévaluer).\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). Réserve de fiabilité : plusieurs coefficients ICRP 128 hors ¹⁸F-FDG (ex. ⁹⁹ᵐTc-MIBI, MAG3, pertechnétate) sont des ordres de grandeur cohérents avec la littérature, à revérifier sur le tableau synoptique primaire (Ann ICRP 44(2S), 2015) avant publication définitive [37].*",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — hiérarchiser les sources réglementaires",
+            "text": "Pour une question opposable en France, l'ordre de priorité est : **texte réglementaire** (BPP ANSM [4,5], décision ASN homologuée [34]) > **pharmacopée** en vigueur (Ph. Eur. [22,23]) > **guideline de société savante** (cGRPP EANM [1], guides SFMN [32,33]) > article primaire. Le cGRPP et les guides EANM/SNMMI restent des **référentiels de bonnes pratiques**, non des textes de loi, mais font foi en l'absence de disposition nationale contraire."
+          },
+          {
+            "type": "info",
+            "title": "Repère — appariement diagnostic/thérapie",
+            "text": "Le graphe de l'article converge vers la **logique théranostique** : chaque couple diagnostic → thérapie repose sur la même cible moléculaire (**PSMA** : ⁶⁸Ga-PSMA-11 → ¹⁷⁷Lu-PSMA-617, approuvé FDA 2022 [71] ; **SSTR** : ⁶⁸Ga-DOTATATE → ¹⁷⁷Lu-DOTATATE). La radiopharmacie hospitalière est le maillon qui **prépare et libère** aussi bien le vecteur d'imagerie que le vecteur thérapeutique [1,69,72]."
+          }
+        ],
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique : imagerie d'un vecteur marqué par un radionucléide diagnostique (⁶⁸Ga-PSMA-11), sélection du patient sur l'avidité de la cible, traitement par le même vecteur marqué par un radionucléide thérapeutique (¹⁷⁷Lu-PSMA-617), puis réévaluation — la radiopharmacie préparant et libérant les deux préparations.",
+        "figureCaption": "Fig. — Boucle théranostique : la radiopharmacie hospitalière prépare et libère à la fois le traceur d'imagerie et le radiopharmaceutique thérapeutique du même couple moléculaire."
+      }
+    ]
+  }
+}
