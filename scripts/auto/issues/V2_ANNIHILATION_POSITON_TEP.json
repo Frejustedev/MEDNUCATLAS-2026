@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section D3 (Dosimétrie/radioprotection) — tableau et texte : « Organe critique (paroi vésicale) ~0,16 mGy/MBq »",
+    "problem": "Le coefficient de dose absorbée à la paroi vésicale pour le 18F-FDG est donné à ~0,16 mGy/MBq (source [48]/Columbia). Or la valeur de référence ICRP 128 (protocole de vidange 3,5 h) est ~0,13 mGy/MBq, et la fiche étalon fournie (Recherche 1) donne elle-même 7,5×10⁻² = 0,075 mGy/MBq. La valeur 0,16 provient d'une source secondaire (fiche EHS) et sur-estime nettement le coefficient officiel ICRP 128 utilisé partout ailleurs dans l'article (dose efficace 0,019 mSv/MBq ICRP 128). Contradiction interne avec le corpus de référence cité.",
+    "fix": "Remplacer par la valeur ICRP 128 cohérente avec le reste de l'article : ~0,13 mGy/MBq (ICRP 128, vidange 3,5 h) ou 7,5×10⁻² mGy/MBq selon le modèle compartimental révisé, en datant/sourçant explicitement. Éviter 0,16 mGy/MBq (source secondaire non ICRP)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A3 / D2 / E2.2 (tableaux radionucléides) — 82Rb : β⁺ 81,8 %",
+    "problem": "La fraction β⁺ du 82Rb est indiquée à 81,8 % (conforme à la fiche étalon Recherche 1, table EJNMMI Physics). Toutefois la littérature clinique de référence (notice FDA CardioGen-82, guidelines de cardiologie nucléaire) donne 82Rb ≈ 95,5 % β⁺ / 4,5 % CE. La valeur 81,8 % correspond à une table particulière et sous-estime le branchement β⁺ réellement admis en clinique. Non bloquant car aligné sur la référence fournie, mais à connaître comme point de divergence inter-sources.",
+    "fix": "Signaler la divergence (81,8 % selon table physique EJNMMI vs ~95 % selon notice FDA/guidelines cardio) ou retenir la valeur clinique majoritaire ~95 % avec citation, pour éviter une valeur isolée non représentative."
+  },
+  {
+    "severity": "major",
+    "where": "Liste des SOURCES / numérotation des préfixes [n] vs position dans le tableau 'sources'",
+    "problem": "Décalage de numérotation à partir de la 9e entrée. Le tableau 'sources' saute le préfixe [9] : la 8e entrée est préfixée [8] (Turkington), mais la 9e entrée est préfixée [10] (Radionuclide generators). Or le rendu de la plateforme numérote les notes par leur POSITION (1-indexée). Résultat : toutes les entrées de la position 9 à 27 ont un préfixe visible (ex. [10], [11]... [28]) qui est décalé de +1 par rapport à leur index de rendu réel (position 9, 10... 27). Les citations du corps qui visent [10]-[28] (ex. [10] générateurs, [11]/[12] Anderson/APS, [13]/[14] Wikipedia, [15] positronium, [16][17] dose, [20] Deauville, [25] démence, [28] infection) risquent de pointer vers la mauvaise source une fois rendues. Les sources 'non préfixées' (positions 28-50) sont, elles, citées par leur position ([30][34][40][41][46][47][48][49][50]) et restent cohérentes.",
+    "fix": "Réindexer proprement : soit ajouter une entrée [9] manquante, soit renuméroter toutes les entrées de façon strictement séquentielle 1..50 pour que le préfixe [n] du titre = la position dans le tableau = le marqueur [n] du corps. Vérifier ensuite que chaque [n] du texte pointe bien vers la source voulue (contrôle prioritaire des sections A, D3 et E3)."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D3 — 'CDA plomb à 511 keV ~4 mm' attribué à [50] (Image Wisely) ; répété en C1, identityCard, quiz",
+    "problem": "La source Image Wisely ('Optimizing Oncologic FDG-PET/CT Scans', vérifiée) traite de l'optimisation de dose TDM et ne mentionne PAS la couche de demi-atténuation du plomb à 511 keV (~4 mm). La valeur ~4 mm est correcte en soi mais mal sourcée sur cette référence. De même, le chiffre '~74 % TDM dans la dose' attribué à [47] mérite recoupement (Image Wisely évoque plutôt une composante TDM 'jusqu'à ~25 mSv').",
+    "fix": "Rattacher la CDA plomb ~4 mm à une source de radioprotection appropriée (ICRP/IAEA/manuel de physique médicale) plutôt qu'à Image Wisely, ou retirer le renvoi [50] pour cette donnée précise. Vérifier le '~74 %' sur [47] (ICRP Mesh Phantoms) ou le rattacher à une source dose TEP/TDM explicite."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D3 & C1 — dose absorbée paroi vésicale '~0,16 mGy/MBq' attribuée à [48] (Columbia EHS)",
+    "problem": "La littérature primaire donne ~0,13 mGy/MBq (ICRP 128, hypothèses de vidange standard) et ~0,075 mGy/MBq (modèle révisé). La valeur '~0,16 mGy/MBq' est au-dessus de la fourchette publiée usuelle. Le fond du propos (vessie = organe critique) est correct et non contesté ; seule la valeur numérique est légèrement surestimée et faiblement sourcée (fiche EHS non re-vérifiable, ECONNREFUSED au fetch).",
+    "fix": "Aligner sur ~0,13 mGy/MBq (ICRP 128) en le sourçant sur la publication ICRP 128, ou préciser les hypothèses de vidange retenues. Recouper avec [47]/[49] qui donnent le cadre dosimétrique révisé."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence interne E3 (§ 'Références') vs préfixes réels",
+    "problem": "E3 liste '[9] Radionuclide generators — PMC6420712' et '[13] Annihilation radiation — Wikipedia', réutilisant la numérotation décalée du tableau de sources. Ces renvois internes hériteront du même décalage de rendu que celui décrit dans l'issue majeure et pourraient afficher un mauvais lien.",
+    "fix": "Après réindexation séquentielle du tableau 'sources', reprendre la liste E3 pour que chaque [n] cité corresponde à la position rendue. Pas d'invention de source ici — uniquement un problème de numérotation cohérente."
+  }
+]

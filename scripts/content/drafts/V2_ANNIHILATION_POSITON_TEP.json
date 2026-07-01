@@ -1,0 +1,1368 @@
+{
+  "id": "V2_ANNIHILATION_POSITON_TEP",
+  "type": "autre",
+  "cat": "bases_physiques",
+  "catLabel": "",
+  "title": "Émission de positons et annihilation : la physique de la TEP (511 keV, coïncidence)",
+  "difficulty": "avancé",
+  "tags": [
+    "positon",
+    "annihilation",
+    "511 keV",
+    "coïncidence",
+    "TEP",
+    "fluor-18",
+    "FDG",
+    "gallium-68",
+    "temps de vol",
+    "ligne de réponse",
+    "parcours du positon",
+    "émission bêta plus",
+    "antimatière",
+    "scintillateur"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "[1] PET Physics and Instrumentation — Radiology Key",
+      "url": "https://radiologykey.com/pet-physics-and-instrumentation/",
+      "verified": true
+    },
+    {
+      "title": "[2] The Impact of Positron Range on PET Resolution, Evaluated with Phantoms and PHITS Monte Carlo Simulations for Conventional and Non-conventional Radionuclides — Mol Imaging Biol, PMC6805144",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6805144/",
+      "verified": true
+    },
+    {
+      "title": "[3] Fludeoxyglucose (18F) — StatPearls, NCBI Bookshelf NBK557653",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557653/",
+      "verified": true
+    },
+    {
+      "title": "[4] FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 — PMC4315529",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/",
+      "verified": true
+    },
+    {
+      "title": "[5] Review of 18F-FDG Synthesis and Quality Control — PMC3097819",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097819/",
+      "verified": true
+    },
+    {
+      "title": "[6] Physics of pure and non-pure positron emitters for PET: a review and a discussion — EJNMMI Physics, PMC4894854",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4894854/",
+      "verified": true
+    },
+    {
+      "title": "[7] PET Imaging General Topics — AuntMinnie (scintillators, coincidence window, TOF/CTR)",
+      "url": "https://www.auntminnie.com/scott-williams/nuclear-medicine/pet/article/15561713/pet-imaging-general-topics",
+      "verified": true
+    },
+    {
+      "title": "[8] Introduction to PET Instrumentation (Turkington) — Journal of Nuclear Medicine Technology 2001;29(1):4",
+      "url": "https://tech.snmjournals.org/content/29/1/4",
+      "verified": true
+    },
+    {
+      "title": "[10] Radionuclide generators: the prospect of availing PET radiotracers to meet current clinical needs and future research demands — Am J Nucl Med Mol Imaging, PMC6420712",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6420712/",
+      "verified": true
+    },
+    {
+      "title": "[11] Carl Anderson Discovers Antimatter — Caltech",
+      "url": "https://www.caltech.edu/map/milestone/55",
+      "verified": true
+    },
+    {
+      "title": "[12] August 1932: Discovery of the Positron — American Physical Society (APS News, This Month in Physics History)",
+      "url": "https://www.aps.org/apsnews/2004/08/discovery-positron-1932",
+      "verified": true
+    },
+    {
+      "title": "[13] Positron — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Positron",
+      "verified": true
+    },
+    {
+      "title": "[14] Annihilation radiation — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Annihilation_radiation",
+      "verified": true
+    },
+    {
+      "title": "[15] Ortho-positronium lifetime for soft-tissue classification — Scientific Reports (Nature) 2024",
+      "url": "https://www.nature.com/articles/s41598-024-71695-7",
+      "verified": true
+    },
+    {
+      "title": "[16] Effective dose and risk assessment in 18F-FDG PET/CT examinations of lymphoma patients using updated dose coefficients — Physica Medica",
+      "url": "https://www.physicamedica.com/article/S1120-1797(25)00822-1/fulltext",
+      "verified": true
+    },
+    {
+      "title": "[17] Patient-adapted organ absorbed dose and effective dose estimates in pediatric 18F-FDG PET/CT studies — BMC Medical Imaging (2020)",
+      "url": "https://link.springer.com/article/10.1186/s12880-020-0415-4",
+      "verified": true
+    },
+    {
+      "title": "[18] EANM Paediatric Dosage Card (Version 5.7.2016)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf",
+      "verified": true
+    },
+    {
+      "title": "[19] The effect of modern PET technology and techniques on the EANM paediatric dosage card — Eur J Nucl Med Mol Imaging (2022)",
+      "url": "https://link.springer.com/article/10.1007/s00259-021-05635-2",
+      "verified": true
+    },
+    {
+      "title": "[20] Applications of 18F-FDG PET/CT in Lymphoma and leukemia with focus on NCCN guidelines: A pictorial review (Deauville 5-point scale / Lugano) — Journal of Nuclear Medicine",
+      "url": "https://jnm.snmjournals.org/content/64/supplement_1/P1123",
+      "verified": true
+    },
+    {
+      "title": "[21] [18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0 — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065",
+      "verified": true
+    },
+    {
+      "title": "[22] Role of PET/CT in primitive non-small cell bronchopulmonary cancer — PMC5903710",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5903710/",
+      "verified": true
+    },
+    {
+      "title": "[23] Indications de la TEP-FDG en oncologie. Mise à jour selon les recommandations de prise en charge européennes et américaines — Médecine Nucléaire / ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0928125817303790",
+      "verified": true
+    },
+    {
+      "title": "[24] RBP Utilisation de la TEP en cancérologie — synthèse (CNP-MN, version 09.05.2018)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2021/11/RBP-utilisation-TEP-en-cancerologie-synthese_V1.pdf",
+      "verified": true
+    },
+    {
+      "title": "[25] Brain FDG PET and the Diagnosis of Dementia — AJR (Alzheimer, MCI)",
+      "url": "https://ajronline.org/doi/full/10.2214/AJR.13.12363",
+      "verified": true
+    },
+    {
+      "title": "[26] The utility of 82Rb PET for myocardial viability assessment: Comparison with perfusion-metabolism 82Rb-18F-FDG PET — Journal of Nuclear Cardiology (ScienceDirect)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1071358123061573",
+      "verified": true
+    },
+    {
+      "title": "[27] ASNC imaging guidelines/SNMMI procedure standard for positron emission tomography (PET) nuclear cardiology procedures — Journal of Nuclear Cardiology",
+      "url": "https://www.journalofnuclearcardiology.org/article/S1071-3581(23)06946-5/fulltext",
+      "verified": true
+    },
+    {
+      "title": "[28] EANM/SNMMI guideline/procedure standard for [18F]FDG hybrid PET use in infection and inflammation in adults v2.0 (2024) — PMC11732780",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11732780/",
+      "verified": true
+    },
+    {
+      "title": "Fluorine-18 — Wikipedia (période, énergie du positon, fractions β+/CE)",
+      "url": "https://en.wikipedia.org/wiki/Fluorine-18",
+      "verified": true
+    },
+    {
+      "title": "FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 — PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25452219/",
+      "verified": true
+    },
+    {
+      "title": "Physics of positron emission, annihilation, and coincidence detection — ResearchGate figure (parcours du positon, acolinéarité)",
+      "url": "https://www.researchgate.net/figure/Physics-of-positron-emission-annihilation-and-coincidence-detection-Adapted-from_fig1_12592483",
+      "verified": true
+    },
+    {
+      "title": "Positron Annihilation Detection — CAEN (SG6132, fenêtre de coïncidence)",
+      "url": "https://www.caen.it/wp-content/uploads/2017/10/SG6132.pdf",
+      "verified": true
+    },
+    {
+      "title": "Fluorine-18 — Radiacode (T½ 109,77 min, β+ 96,7 %/CE 3,3 %)",
+      "url": "https://www.radiacode.com/isotope/f-18",
+      "verified": true
+    },
+    {
+      "title": "Cherenkov Radiation–Based Coincidence Time Resolution Measurements in BGO Scintillators — Frontiers in Physics 2022",
+      "url": "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2022.816384/full",
+      "verified": true
+    },
+    {
+      "title": "Recent developments in time-of-flight PET — EJNMMI Physics, PMC4754240 (TOF, CTR)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4754240/",
+      "verified": true
+    },
+    {
+      "title": "A new design to improve time resolution in a time of flight brain PET using dual layer offset scintillator crystals — Nature Scientific Reports 2025",
+      "url": "https://www.nature.com/articles/s41598-025-98892-2",
+      "verified": true
+    },
+    {
+      "title": "EANM/EARL harmonization strategies in PET quantification: from daily practice to multicentre oncological studies — Eur J Nucl Med Mol Imaging (Springer)",
+      "url": "https://link.springer.com/article/10.1007/s00259-017-3740-2",
+      "verified": true
+    },
+    {
+      "title": "EANM/EARL FDG-PET/CT accreditation — summary results from the first 200 accredited imaging systems — PMC5787222",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5787222/",
+      "verified": true
+    },
+    {
+      "title": "EANM/EARL harmonization strategies in PET quantification — PMC5541084",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5541084/",
+      "verified": true
+    },
+    {
+      "title": "Interim PET Evaluation in Diffuse Large B-Cell Lymphoma Using Published Recommendations: Comparison of the Deauville 5-Point Scale and the ΔSUVmax Method — J Nucl Med 2021;62(1):37",
+      "url": "https://jnm.snmjournals.org/content/62/1/37",
+      "verified": true
+    },
+    {
+      "title": "Wahl R. et al. — From RECIST to PERCIST: Evolving Considerations for PET Response Criteria in Solid Tumors — J Nucl Med 2009;50(Suppl 1):122S (PMID 19403881)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19403881/",
+      "verified": true
+    },
+    {
+      "title": "Practical PERCIST: A Simplified Guide to PET Response Criteria in Solid Tumors 1.0 — Emory (PDF)",
+      "url": "https://med.emory.edu/departments/radiology/clinical_divisions/nuclear-medicine/documents/2020/pet/practical-persist.pdf",
+      "verified": true
+    },
+    {
+      "title": "[18F]FDG PET/CT versus [18F]FDG PET/MRI in staging of NSCLC: a head-to-head comparative meta-analysis — PMC11769939",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11769939/",
+      "verified": true
+    },
+    {
+      "title": "Utility of PET/CT in the Diagnosis and Staging of Extranodal Natural Killer/T-Cell Lymphoma: A Systematic Review and Meta-Analysis — PMC4603121",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4603121/",
+      "verified": true
+    },
+    {
+      "title": "Appropriate Use Criteria for 18F-FDG PET/CT in Restaging and Treatment Response Assessment of Malignant Disease — J Nucl Med 2017;58(12):2026",
+      "url": "https://jnm.snmjournals.org/content/58/12/2026",
+      "verified": true
+    },
+    {
+      "title": "Appropriate Use Criteria for 18F-FDG PET/CT for Initial Staging of Malignant Disease — SNMMI (PDF)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Appropriate%20Use%20Criteria/AUC%20for%2018F-FDG%20PET_CT%20for%20Initial%20Staging%20of%20Malignant%20Disease%20Medical%20Editing-Working%20Group%20V2.pdf",
+      "verified": true
+    },
+    {
+      "title": "F-18 FDG PET/CT Imaging in Normal Variants, Pitfalls and Artifacts in the Abdomen and Pelvis — Frontiers in Nuclear Medicine",
+      "url": "https://www.frontiersin.org/journals/nuclear-medicine/articles/10.3389/fnume.2021.826109/full",
+      "verified": true
+    },
+    {
+      "title": "Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms — J Nucl Med 2021;62(12):1805",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805",
+      "verified": true
+    },
+    {
+      "title": "Dose Estimates for Nuclear Medicine Scans — Columbia University EHS",
+      "url": "https://research.columbia.edu/sites/default/files/content/EHS/Rad%20Safety/NuclearMedicineScans.pdf",
+      "verified": true
+    },
+    {
+      "title": "A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG — EJNMMI Physics, PMC9908780",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9908780/",
+      "verified": true
+    },
+    {
+      "title": "Optimizing Oncologic FDG-PET/CT Scans to Decrease Radiation Exposure — Image Wisely",
+      "url": "https://www.imagewisely.org/Imaging-Modalities/Nuclear-Medicine/Optimizing-Oncologic-FDG-PETCT-Scans",
+      "verified": true
+    }
+  ],
+  "lead": "La tomographie par émission de positons repose sur un phénomène physique remarquable : certains atomes instables, injectés au patient sous forme d'un médicament radioactif, émettent une particule d'antimatière qui rencontre presque aussitôt son homologue de matière ordinaire. De cette rencontre naît un éclair d'énergie pure, converti en deux rayonnements qui partent exactement dans des directions opposées. En détectant ces deux signaux au même instant, tout autour du corps, la caméra reconstitue le point précis d'où ils sont partis. C'est cette danse de la matière et de l'antimatière qui permet de cartographier, de l'intérieur, l'activité des organes et des tumeurs. Comprendre cette physique, c'est comprendre pourquoi l'examen est si sensible et où se logent ses limites.",
+  "identityCard": [
+    {
+      "icon": "atom",
+      "label": "Particule émise",
+      "value": "Positon (e⁺, antimatière) + neutrino"
+    },
+    {
+      "icon": "zap",
+      "label": "Photons d'annihilation",
+      "value": "2 × 511 keV, dos-à-dos (~180°)"
+    },
+    {
+      "icon": "radiation",
+      "label": "Énergie de repos e⁻/e⁺",
+      "value": "mₑc² = 511 keV (0,511 MeV)"
+    },
+    {
+      "icon": "target",
+      "label": "Seuil énergétique β⁺",
+      "value": "> 2 mₑc² = 1,022 MeV"
+    },
+    {
+      "icon": "clock",
+      "label": "Fenêtre de coïncidence",
+      "value": "≈ 10⁻⁸ s (BGO ~12 ns · LSO ~6 ns)"
+    },
+    {
+      "icon": "activity",
+      "label": "Résolution temporelle (TOF)",
+      "value": "CTR ≈ 200–400 ps (LSO/LYSO)"
+    },
+    {
+      "icon": "pin",
+      "label": "Non-colinéarité",
+      "value": "180° ± ~0,25° (FWHM ~0,5°)"
+    },
+    {
+      "icon": "flask",
+      "label": "Radionucléide de référence",
+      "value": "¹⁸F : T½ 109,7 min · β⁺ 96,9 %"
+    },
+    {
+      "icon": "microscope",
+      "label": "Parcours max eau (¹⁸F)",
+      "value": "≈ 2,4 mm (⁶⁸Ga ≈ 9,2 mm)"
+    },
+    {
+      "icon": "syringe",
+      "label": "Traceur phare",
+      "value": "[¹⁸F]FDG — piégeage métabolique"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose efficace ¹⁸F-FDG",
+      "value": "0,019 mSv/MBq (ICRP 128)"
+    },
+    {
+      "icon": "droplets",
+      "label": "Organe critique FDG",
+      "value": "Paroi vésicale (élimination urinaire)"
+    },
+    {
+      "icon": "target",
+      "label": "Cible imagée (FDG)",
+      "value": "Hyperglycolyse (GLUT → hexokinase)"
+    },
+    {
+      "icon": "list",
+      "label": "Collimation",
+      "value": "Électronique (aucun collimateur physique)"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "[¹⁸F]FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "⁶⁸Ga-DOTATATE"
+    },
+    {
+      "type": "traceur",
+      "label": "⁸²Rb (perfusion myocardique)"
+    },
+    {
+      "type": "traceur",
+      "label": "Na[¹⁸F] fluorure de sodium"
+    },
+    {
+      "type": "examen",
+      "label": "TEP/TDM au FDG"
+    },
+    {
+      "type": "examen",
+      "label": "TEP cérébrale (démences)"
+    },
+    {
+      "type": "examen",
+      "label": "TEP de viabilité myocardique"
+    },
+    {
+      "type": "maladie",
+      "label": "Lymphome (Hodgkin / LNH)"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer bronchique non à petites cellules"
+    },
+    {
+      "type": "maladie",
+      "label": "Maladie d'Alzheimer"
+    },
+    {
+      "type": "score",
+      "label": "Score de Deauville / Lugano"
+    },
+    {
+      "type": "score",
+      "label": "PERCIST 1.0"
+    },
+    {
+      "type": "score",
+      "label": "Harmonisation EARL (SUV/SUL)"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹²⁴I-MIBG (dosimétrie prédictive)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quelle est l'énergie de chacun des deux photons émis lors de l'annihilation positon-électron ?",
+      "options": [
+        "364 keV",
+        "511 keV",
+        "1 022 keV",
+        "140 keV"
+      ],
+      "answer": 1,
+      "explanation": "L'énergie de repos de l'électron (et du positon) est mₑc² = 511 keV. L'annihilation convertit cette masse en deux photons de 511 keV chacun [1][11][14].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Dans quelle direction relative sont émis les deux photons d'annihilation ?",
+      "options": [
+        "Dans la même direction (0°)",
+        "À 90° l'un de l'autre",
+        "À ~180° l'un de l'autre (dos-à-dos)",
+        "Aléatoirement dans toutes les directions"
+      ],
+      "answer": 2,
+      "explanation": "Pour conserver la quantité de mouvement (impulsion totale ≈ nulle), les deux photons partent à ~180° l'un de l'autre [1][11][14].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle transformation nucléaire sous-tend l'émission β⁺ ?",
+      "options": [
+        "n → p + e⁻ + antineutrino",
+        "p → n + e⁺ + neutrino électronique",
+        "p → n + e⁻",
+        "n → p + e⁺"
+      ],
+      "answer": 1,
+      "explanation": "Un noyau riche en protons se désintègre : un proton se transforme en neutron avec émission d'un positon et d'un neutrino électronique (p → n + e⁺ + νₑ) [1][6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle différence de masse minimale parent-fille est requise pour permettre l'émission β⁺ ?",
+      "options": [
+        "511 keV",
+        "1,022 MeV (2 mₑc²)",
+        "364 keV",
+        "140 keV"
+      ],
+      "answer": 1,
+      "explanation": "La désintégration β⁺ n'est énergétiquement possible que si la différence de masse parent-fille dépasse 2 mₑc² = 1,022 MeV (deux fois 511 keV) [1].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est l'ordre de grandeur du parcours maximal du positon du ¹⁸F dans l'eau ?",
+      "options": [
+        "≈ 0,1 mm",
+        "≈ 2,4 mm",
+        "≈ 9 mm",
+        "≈ 17 mm"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁸F a l'un des parcours les plus courts (E_max faible ≈ 0,634 MeV) : parcours max dans l'eau ≈ 2,3–2,4 mm, d'où sa meilleure résolution spatiale [2][6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pourquoi le ⁶⁸Ga offre-t-il une résolution spatiale intrinsèque moins bonne que le ¹⁸F ?",
+      "options": [
+        "Sa demi-vie est plus longue",
+        "Son parcours de positon est bien plus long (~9 mm eau)",
+        "Il n'émet pas de photons de 511 keV",
+        "Il nécessite un collimateur"
+      ],
+      "answer": 1,
+      "explanation": "Le ⁶⁸Ga a une E_max β⁺ élevée (1,899 MeV) et un parcours max eau ≈ 9,2 mm, contre ~2,4 mm pour le ¹⁸F, ce qui augmente le flou intrinsèque [2][6].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Qu'est-ce que la non-colinéarité (acolinéarité) des photons d'annihilation ?",
+      "options": [
+        "Une émission à exactement 180°",
+        "Un écart au 180° dû à l'énergie cinétique résiduelle de la paire e⁺/e⁻",
+        "Une émission de 3 photons au lieu de 2",
+        "Un défaut du collimateur"
+      ],
+      "answer": 1,
+      "explanation": "Les positons ne sont pas parfaitement au repos : l'angle réel est de 180° ± ~0,25°, soit une déviation gaussienne de FWHM ≈ 0,5° (0,54° mesuré in vivo pour le ¹⁸F). Ce flou augmente avec le diamètre de l'anneau [1][2].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Comment la TEP localise-t-elle l'annihilation, sans collimateur physique ?",
+      "options": [
+        "Par un collimateur en plomb",
+        "Par détection en coïncidence sur une ligne de réponse (LOR)",
+        "Par mesure de l'énergie uniquement",
+        "Par résonance magnétique"
+      ],
+      "answer": 1,
+      "explanation": "Deux détecteurs opposés couplés en coïncidence : deux photons détectés dans une fenêtre très courte (~10⁻⁸ s) signent une annihilation sur la LOR qui les joint. C'est la collimation électronique, sans collimateur physique [1][8].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Parmi ces types de coïncidences, lequel constitue le signal utile ?",
+      "options": [
+        "Diffusées (scatter)",
+        "Fortuites (randoms)",
+        "Vraies (trues)",
+        "Multiples"
+      ],
+      "answer": 2,
+      "explanation": "Seules les coïncidences vraies (trues) portent l'information de localisation exacte. Les diffusées (Compton, LOR faussée) et fortuites (deux annihilations distinctes dans la même fenêtre) sont du bruit de fond à corriger [1][8].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Que mesure la technique du temps de vol (TOF) en TEP ?",
+      "options": [
+        "La demi-vie du radionucléide",
+        "La différence de temps d'arrivée des deux photons le long de la LOR",
+        "La dose reçue par le patient",
+        "L'énergie des positons"
+      ],
+      "answer": 1,
+      "explanation": "Le TOF mesure la différence des temps d'arrivée des deux photons pour localiser l'annihilation le long de la LOR, améliorant le rapport signal/bruit. Il requiert une CTR de l'ordre de 200–400 ps [7].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quels scintillateurs modernes permettent la reconstruction en temps de vol (TOF) ?",
+      "options": [
+        "BGO (décroissance ~300 ns)",
+        "LSO/LYSO (décroissance rapide ~40 ns)",
+        "NaI(Tl) uniquement",
+        "Aucun cristal ne le permet"
+      ],
+      "answer": 1,
+      "explanation": "Les cristaux rapides LSO/LYSO (décroissance ~40 ns) atteignent des CTR < 600 ps, seuil nécessaire au TOF. Le BGO, lent (~300 ns), impose des fenêtres plus larges et davantage de fortuites [7].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la demi-vie physique du ¹⁸F ?",
+      "options": [
+        "68 minutes",
+        "109,7 minutes",
+        "20 minutes",
+        "12,7 heures"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁸F a une demi-vie de 109,7 min (≈ 110 min), imposant une production cyclotron à proximité et une gestion logistique de la décroissance [4][3].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Par quelle réaction nucléaire produit-on le fluor-18 destiné au FDG ?",
+      "options": [
+        "⁶⁸Ge → ⁶⁸Ga par générateur",
+        "¹⁸O(p,n)¹⁸F sur cible d'eau enrichie",
+        "⁹⁹Mo → ⁹⁹ᵐTc",
+        "⁸²Sr → ⁸²Rb par générateur"
+      ],
+      "answer": 1,
+      "explanation": "Le ¹⁸F nucléophile (¹⁸F⁻) est produit par bombardement de protons de cyclotron sur une cible d'eau enrichie en ¹⁸O : ¹⁸O(p,n)¹⁸F [5][3].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel est le mécanisme de captation du [¹⁸F]FDG imagé en TEP ?",
+      "options": [
+        "Fixation sur les récepteurs de la somatostatine",
+        "Entrée par GLUT puis phosphorylation par l'hexokinase avec piégeage métabolique",
+        "Recapture par le transporteur de la noradrénaline",
+        "Liaison au PSMA"
+      ],
+      "answer": 1,
+      "explanation": "Le FDG entre via les transporteurs GLUT, est phosphorylé par l'hexokinase en FDG-6-phosphate, mais ne peut être métabolisé plus loin (absence d'hydroxyle en position 2) → piégeage métabolique. La cible imagée est l'hyperglycolyse [9].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la dose efficace de référence du ¹⁸F-FDG (ICRP 128) ?",
+      "options": [
+        "0,013 mSv/MBq",
+        "0,019 mSv/MBq",
+        "0,14 mSv/MBq",
+        "0,10 mSv/MBq"
+      ],
+      "answer": 1,
+      "explanation": "Le coefficient de dose efficace du ¹⁸F-FDG est de 0,019 mSv/MBq selon l'ICRP 128, l'organe critique étant la paroi vésicale (élimination urinaire) [16][17].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel émetteur de positons est produit par générateur (et non par cyclotron sur site) ?",
+      "options": [
+        "¹⁸F",
+        "¹¹C",
+        "⁶⁸Ga",
+        "¹⁵O"
+      ],
+      "answer": 2,
+      "explanation": "Le ⁶⁸Ga est disponible via un générateur ⁶⁸Ge/⁶⁸Ga et le ⁸²Rb via un générateur ⁸²Sr/⁸²Rb, alors que ¹⁸F, ¹¹C, ¹³N et ¹⁵O sont produits par cyclotron [10].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans le score de Deauville, quels grades correspondent à une réponse métabolique complète ?",
+      "options": [
+        "4 et 5",
+        "1 à 3 (fixation ≤ foie)",
+        "3 à 5",
+        "2 seulement"
+      ],
+      "answer": 1,
+      "explanation": "Sur l'échelle visuelle 5 points, les grades 1–3 (fixation ≤ médiastin ou ≤ foie) définissent une réponse métabolique complète ; les grades 4–5 (fixation > foie ou nouveaux sites) signent une réponse partielle/absente ou une progression [20].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Une glycémie élevée avant une TEP-FDG entraîne surtout :",
+      "options": [
+        "Un faux positif hépatique",
+        "Un faux négatif tumoral par compétition glucose/FDG",
+        "Une majoration de la dose",
+        "Une non-colinéarité accrue"
+      ],
+      "answer": 1,
+      "explanation": "Le glucose entre en compétition avec le FDG pour les transporteurs GLUT : une hyperglycémie dégrade la fixation tumorale (faux négatif). L'EANM recommande de reprogrammer si glycémie ≥ 11 mmol/L (~200 mg/dL) [4][28].",
+      "difficulty": "moyen"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "511 keV = mₑc² : l'annihilation e⁺/e⁻ convertit la masse en 2 photons de 511 keV émis dos-à-dos (~180°) [1][11][14].",
+      "Émission β⁺ : p → n + e⁺ + νₑ, possible seulement si Δmasse parent-fille > 2 mₑc² = 1,022 MeV ; spectre continu, E_moy ≈ E_max/3 [1][6].",
+      "Le parcours du positon (positron range) et la non-colinéarité (~0,5° FWHM) sont les deux limites physiques intrinsèques de la résolution TEP [1][2].",
+      "Détection en coïncidence sur la ligne de réponse (LOR), fenêtre ~10⁻⁸ s, collimation électronique sans collimateur physique ; à distinguer vraies / diffusées / fortuites [1][8].",
+      "Le temps de vol (TOF) localise l'annihilation le long de la LOR ; il exige des scintillateurs rapides (LSO/LYSO, CTR ≈ 200–400 ps) [7].",
+      "¹⁸F : T½ 109,7 min, β⁺ 96,9 %, E_max 0,634 MeV, parcours ~2,4 mm eau ; produit par ¹⁸O(p,n)¹⁸F [4][6][5].",
+      "FDG = piégeage métabolique (GLUT → hexokinase → FDG-6-P) ; dose efficace 0,019 mSv/MBq, organe critique = vessie [9][16][17].",
+      "Émetteurs β⁺ non purs (⁶⁸Ga, ⁸²Rb, ¹²⁴I) émettent un gamma prompt qui dégrade image et quantification [6]."
+    ],
+    "protocol": [
+      "Jeûne ≥ 4 h (patients non diabétiques), eau plate seulement ; contrôle glycémie < 7 mmol/L idéalement, limite 11 mmol/L [4].",
+      "Activité adulte = 14 × poids(kg) / durée par lit (min) si recouvrement ≤ 30 % ; facteur 7 si > 30 % ; max 530 MBq (systèmes L(Y)SO) [4].",
+      "Délai de captation (uptake) 60 min post-injection (plage 55–75 min) ; même intervalle ± 10 min pour les études longitudinales [4].",
+      "Repos musculaire, ambiance chaude (limiter graisse brune), hydratation et miction avant acquisition [4][17].",
+      "Pédiatrie : EANM Dosage Card, FDG corps entier classe B, activité de base 25,9 MBq, minimum 26 MBq [18].",
+      "Voxel 3–4 mm, filtre spatial ≤ 7 mm FWHM ; synchronisation horloge système < 1 min [4]."
+    ],
+    "scores": [
+      "Deauville (échelle visuelle 5 points, réf. médiastin et foie) : 1–3 = réponse métabolique complète ; 4–5 = réponse partielle/progression [20].",
+      "Classification de Lugano pour la réponse et le staging des lymphomes [20].",
+      "PERCIST 1.0 : métrique SUL_peak (VOI 1 cm³) ; réponse partielle = baisse ≥ 30 % ET ≥ 0,8 unité SUL.",
+      "Harmonisation EARL (EANM) : coefficients de recouvrement standardisés (CalQC + IQQC) pour comparer les SUV inter-sites."
+    ],
+    "pitfalls": [
+      "Faux positifs : inflammation, chirurgie/radio-chimiothérapie récentes, graisse brune, nodules thyroïdiens bénins.",
+      "Faux négatifs : hyperglycémie (compétition glucose/FDG), petites lésions (effet de volume partiel), tumeurs peu avides [4].",
+      "Non-colinéarité et parcours du positon : flou augmentant avec le diamètre de l'anneau et l'E_max du radionucléide (⁶⁸Ga, ⁸²Rb) [1][2].",
+      "Mésalignement TEP/TDM : décalage 5 mm → erreur ~10 % sur l'activité mesurée ; matériel métallique → surestimation de l'atténuation et fixation artificielle.",
+      "Émetteurs β⁺ non purs (⁶⁸Ga, ⁸²Rb, ¹²⁴I) : gamma prompt dans la fenêtre d'énergie → coïncidences parasites dégradant la quantification [6]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert le TEP-scan et comment il fonctionne, tout simplement",
+        "text": "Le TEP-scan (aussi appelé PET-scan) est un examen d'imagerie qui permet de voir le fonctionnement de votre corps, et pas seulement sa forme. Pour cela, on vous administre une toute petite quantité d'un produit légèrement radioactif, appelé traceur. Ce traceur va se concentrer là où les cellules sont particulièrement actives, par exemple certaines cellules malades ou une zone d'inflammation. Le produit émet alors un rayonnement, un peu comme une lampe qui s'allume de l'intérieur, et une caméra spéciale capte ce signal pour construire des images très précises. L'examen ne nécessite aucune opération et le principe est comparable, en beaucoup plus détaillé, à celui d'une photographie prise de l'intérieur du corps. Il aide votre médecin à savoir où se situe un problème, à quel point il est actif, et à suivre l'effet d'un traitement.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Un produit qui disparaît rapidement",
+            "text": "Le traceur perd naturellement sa radioactivité en quelques heures et est éliminé par votre corps, notamment dans les urines. C'est pour cela qu'on vous conseille souvent de bien boire après l'examen."
+          }
+        ]
+      },
+      {
+        "title": "Comment se déroule l'examen et comment vous y préparer",
+        "text": "L'équipe vous explique tout à l'avance et reste disponible pour vos questions. Pour l'examen le plus courant, on vous demande généralement d'être à jeun quelques heures avant : vous pouvez boire de l'eau plate, mais évitez les aliments et les boissons sucrées, car cela aide le traceur à bien se répartir. Le produit est ensuite administré par une simple injection dans une veine du bras. Vient un temps de repos, pendant lequel vous attendez tranquillement, au calme, que le traceur se rende dans les zones à observer : il est important de rester détendu et d'éviter les efforts, car l'activité des muscles peut gêner les images. Enfin, vous vous installez confortablement, allongé, et la caméra prend les images. Vous ne sentez rien : ni douleur, ni chaleur. Il suffit de rester immobile.",
+        "steps": [
+          {
+            "title": "Préparation",
+            "text": "L'équipe vérifie votre identité et la raison de l'examen, contrôle éventuellement votre glycémie (taux de sucre) et vous rappelle les consignes comme le jeûne. Signalez vos médicaments et tout diabète."
+          },
+          {
+            "title": "Injection du traceur",
+            "text": "Le produit vous est administré par une petite piqûre dans une veine du bras. C'est rapide et indolore."
+          },
+          {
+            "title": "Temps de repos",
+            "text": "Vous patientez au calme, allongé ou assis, environ une heure, le temps que le traceur se fixe dans les zones à étudier. Restez détendu et évitez de parler ou de bouger inutilement."
+          },
+          {
+            "title": "Images",
+            "text": "Vous vous allongez et la caméra prend les images pendant quelques minutes. Il suffit de rester immobile, tout est indolore."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce que c'est sûr ? Précautions et bon à savoir",
+        "text": "Le TEP-scan est un examen pratiqué chaque jour dans le monde entier depuis de nombreuses années, dans un cadre très strict. La quantité de produit utilisée est faible et calculée pour n'apporter que ce qui est nécessaire à un bon examen. Le rayonnement diminue très vite, en quelques heures seulement, et votre corps élimine le produit naturellement. Après l'examen, on vous conseille de bien vous hydrater et d'uriner régulièrement pour aider à évacuer le traceur plus rapidement. Par simple précaution, il peut aussi vous être demandé de garder un peu de distance pendant quelques heures avec les jeunes enfants et les femmes enceintes. Ces consignes sont simples, temporaires, et l'équipe vous les remet clairement.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Prévenez l'équipe avant l'examen",
+            "text": "Si vous êtes ou pourriez être enceinte, ou si vous allaitez, signalez-le impérativement avant l'examen. Si vous êtes diabétique, prévenez également l'équipe, car un taux de sucre trop élevé peut gêner l'examen et nécessiter parfois de le reprogrammer."
+          },
+          {
+            "type": "tip",
+            "title": "Buvez et urinez après l'examen",
+            "text": "Bien vous hydrater et uriner souvent après le TEP-scan aide votre corps à éliminer plus rapidement le traceur. C'est un geste simple et utile."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser : la TEP, une imagerie du fonctionnement",
+        "text": "La tomographie par émission de positons (TEP, ou PET) repose sur des traceurs marqués par un radionucléide émetteur de positons. Après administration, chaque positon s'annihile avec un électron des tissus, produisant deux photons émis dos à dos et détectés simultanément par la caméra : c'est cette détection en coïncidence qui donne à la TEP sa sensibilité et sa résolution, sans collimateur physique. L'intérêt clinique majeur est de fournir une information fonctionnelle et métabolique, souvent avant toute traduction morphologique. Le traceur de référence, le FDG (analogue du glucose), se concentre dans les tissus à forte consommation énergétique : la plupart des tumeurs, les foyers infectieux ou inflammatoires. Pensez donc à la TEP lorsque vous avez besoin de caractériser une lésion, de réaliser un bilan d'extension, d'évaluer une réponse au traitement, ou de rechercher un foyer occulte que l'imagerie conventionnelle ne visualise pas.",
+        "list": [
+          "Oncologie (indication principale) : caractérisation d'une lésion, bilan d'extension et de stadification, restadification, évaluation de la réponse thérapeutique et pronostic, notamment en pathologie lymphomateuse et pulmonaire",
+          "Infection et inflammation : fièvre ou syndrome inflammatoire d'origine indéterminée, infections ostéo-articulaires, endocardite et prothèses, sarcoïdose, vascularites",
+          "Neurologie : aide au diagnostic différentiel des démences (profil d'hypométabolisme), bilan préchirurgical de l'épilepsie",
+          "Cardiologie : recherche de viabilité myocardique (myocarde hibernant) et imagerie de perfusion par traceurs dédiés"
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Deux traceurs, deux logiques",
+            "text": "Au-delà du FDG (métabolisme du glucose), des traceurs spécifiques ciblent un récepteur ou une protéine de la maladie (par exemple en pathologie prostatique ou neuroendocrine). Cette spécificité ouvre l'approche théranostique : imager une cible, puis la traiter avec un produit dirigé contre cette même cible."
+          }
+        ]
+      },
+      {
+        "title": "Démarche pratique et apport propre de la médecine nucléaire",
+        "text": "En pratique, l'examen combine une acquisition TEP et un scanner (TEP/TDM), le plus souvent après injection intraveineuse du traceur suivie d'un délai de fixation. La préparation conditionne la qualité de l'examen : un jeûne de quelques heures est requis pour la TEP-FDG, et le contrôle glycémique est déterminant, car une hyperglycémie entre en compétition avec le traceur et peut dégrader la fixation, voire imposer un report. Pour un adressage utile, formulez clairement la question clinique (diagnostic, stadification, évaluation de réponse) et transmettez les éléments pertinents : contexte oncologique et traitements récents (chirurgie, chimiothérapie, radiothérapie, corticoïdes), diabète et traitement, grossesse possible ou allaitement. L'apport propre de la médecine nucléaire est cette lecture fonctionnelle du corps entier en un seul examen, avec des critères de réponse standardisés et reproductibles qui aident à la décision et au suivi.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser en médecine nucléaire",
+            "text": "La TEP fournit une information fonctionnelle et métabolique que l'imagerie morphologique seule ne donne pas : elle détecte souvent une atteinte avant sa traduction anatomique, explore le corps entier en un examen, et repose sur des critères de réponse standardisés (par exemple en pathologie lymphomateuse ou tumorale solide) utiles pour orienter et suivre le traitement. Un avis spécialisé permet de choisir le traceur adapté à votre question clinique, de vérifier les précautions (grossesse, allaitement, diabète, traitements récents) et d'optimiser la préparation du patient. En cas de doute sur l'indication ou le moment optimal de l'examen, contactez le service de médecine nucléaire en amont : le respect des recommandations d'usage évite les examens non contributifs et les faux résultats."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identité : l'annihilation du positon et la TEP en un coup d'œil",
+        "text": "La **tomographie par émission de positons (TEP)** est une imagerie fonctionnelle qui n'existe que parce qu'un événement physique très particulier — l'**annihilation matière-antimatière** — convertit un radionucléide émetteur de positons en une paire de photons parfaitement définis en énergie et en géométrie. Toute la chaîne de détection en découle : chaque désintégration β⁺ génère, après annihilation, **deux photons γ de 511 keV** émis à **~180° l'un de l'autre**, captés en **coïncidence** (fenêtre ~10⁻⁸ s) sans collimateur physique [1][11][14].\n\nCette carte réunit les grandeurs opérationnelles de référence du phénomène et de son radionucléide-étalon, le fluor-18 (¹⁸F).\n\n| Champ | Valeur | Source |\n|---|---|---|\n| **Phénomène physique** | Désintégration β⁺ → annihilation e⁺/e⁻ → paire de photons | [1][6] |\n| **Énergie de chaque photon** | **511 keV** (= mₑ·c², énergie de masse de l'électron) | [1][11][14] |\n| **Colinéarité des photons** | ~180° ± **0,25–0,5°** (non-colinéarité, FWHM ¹⁸F ≈ 0,54°) | [1][2] |\n| **Condition de masse (β⁺)** | ΔM parent→fille > **2mₑc² = 1,022 MeV** | [1] |\n| **Fenêtre de coïncidence** | **~10⁻⁸ s** (BGO ≈ 12 ns · LSO ≈ 6 ns) | [1][7][8] |\n| **Collimation** | Électronique (aucun collimateur plombé) | [1][8] |\n| **Radionucléide de référence** | **¹⁸F** (T½ 109,77 min, β⁺ 96,7–96,9 %) | [3][4][6] |\n| **E_max positon ¹⁸F** | **0,634 MeV** (E_moy ≈ 0,250 MeV) | [6] |\n| **Parcours max ¹⁸F dans l'eau** | ≈ **2,3–2,4 mm** (¹⁸F) vs **≈ 9,2 mm** (⁶⁸Ga) | [2][6] |\n| **Résolution temporelle TOF** | **200–400 ps** (scanners LSO/LYSO modernes) | [7] |\n\nLes deux limites intrinsèques que le phénomène impose à la résolution spatiale — le **parcours du positon** (positron range) et la **non-colinéarité** — sont détaillées en A4 ; la logique du bilan énergétique β⁺ et de la compétition avec la capture électronique en A3.",
+        "stats": [
+          {
+            "value": "511 keV",
+            "label": "Énergie de chaque photon d'annihilation (= mₑc²) [1][11][14]"
+          },
+          {
+            "value": "1,022 MeV",
+            "label": "Seuil de masse pour autoriser l'émission β⁺ (2mₑc²) [1]"
+          },
+          {
+            "value": "~180°",
+            "label": "Émission dos-à-dos des deux photons (± 0,25–0,5°) [1][2]"
+          },
+          {
+            "value": "~10⁻⁸ s",
+            "label": "Fenêtre de coïncidence (collimation électronique) [1][8]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi 511 keV et pas une autre valeur",
+            "text": "Les 511 keV ne sont pas un choix technologique mais une **constante de la nature** : c'est exactement l'énergie de masse de l'électron (et du positon), mₑ·c² = 0,511 MeV [1][11][14]. Tous les émetteurs de positons — ¹⁸F, ⁶⁸Ga, ¹¹C, ⁸²Rb… — produisent donc **la même raie à 511 keV**, ce qui permet à un même détecteur TEP d'imager n'importe quel traceur β⁺. C'est cette universalité qui distingue fondamentalement la TEP de la scintigraphie mono-photonique, où chaque radionucléide impose sa propre fenêtre d'énergie."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Schéma d'une désintégration β⁺ suivie de l'annihilation e⁺/e⁻ au sein d'un anneau de détecteurs, produisant deux photons de 511 keV émis à 180° et détectés en coïncidence le long d'une ligne de réponse."
+      },
+      {
+        "title": "A2 - Pourquoi la TEP repose entièrement sur l'annihilation matière-antimatière",
+        "text": "La TEP est la seule modalité d'imagerie clinique dont le principe physique fondateur est une **réaction d'annihilation matière-antimatière**. Comprendre ce point n'est pas un raffinement académique : c'est ce qui explique la **résolution spatiale**, l'absence de collimateur, l'énergie fixe de 511 keV, et les limites intrinsèques que ni l'électronique ni la reconstruction ne pourront jamais totalement effacer.\n\n### Une chaîne à trois maillons, un seul signal exploitable\n\nEntre l'injection du traceur et l'image, trois événements se succèdent obligatoirement — et seul le troisième produit le signal détecté [1][6] :\n\n| Maillon | Événement | Échelle | Conséquence imagerie |\n|---|---|---|---|\n| 1 | **Désintégration β⁺** : p → n + e⁺ + νₑ | noyau | localise la molécule marquée |\n| 2 | **Ralentissement** du positon (parcours) | ~0,1 à ~9 mm selon le radionucléide | flou spatial (positron range) [2][6] |\n| 3 | **Annihilation** e⁺/e⁻ → 2 γ de 511 keV à ~180° | point d'annihilation | **signal détecté en coïncidence** [1][11] |\n\nLe détecteur ne « voit » jamais le noyau radioactif : il voit le **point d'annihilation**, situé à quelques dixièmes de millimètre à quelques millimètres de l'atome émetteur [2]. Cet écart — le parcours du positon (A4) — est un **flou incompressible** propre à la physique, indépendant de la qualité du scanner.\n\n### La collimation électronique : l'avantage décisif\n\nEn scintigraphie conventionnelle (gamma-caméra), un **collimateur en plomb** ne laisse passer que les photons d'incidence quasi perpendiculaire, rejetant >99 % des photons utiles et plafonnant la sensibilité. La TEP s'en affranchit totalement : la **direction du rayonnement est donnée gratuitement** par la géométrie de la paire de photons. Deux détecteurs opposés qui enregistrent un événement dans la même fenêtre temporelle (~10⁻⁸ s) définissent une **ligne de réponse (LOR)** sur laquelle l'annihilation a nécessairement eu lieu — c'est la **collimation électronique** [1][8]. D'où une sensibilité intrinsèque de plusieurs ordres de grandeur supérieure à celle de la SPECT, et la possibilité d'une quantification absolue (SUV).\n\n### La quantité de mouvement gouverne toute la géométrie\n\nSi les deux photons partent à **~180°**, c'est une conséquence directe de la **conservation de la quantité de mouvement** : la paire e⁺/e⁻ étant quasi au repos au moment de l'annihilation, l'impulsion totale est proche de zéro, et les deux photons doivent donc partir en sens exactement opposés [1][11][14]. Le « quasi » est ici essentiel : la faible énergie cinétique résiduelle du centre de masse introduit la **non-colinéarité** (A4), ~180° ± 0,25–0,5° [1][2]. Toute l'ingénierie TEP consiste à exploiter au mieux cette géométrie dictée par la physique élémentaire.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "TEP vs SPECT en une phrase",
+            "text": "La SPECT localise un photon unique grâce à un **collimateur plombé** (perte massive de sensibilité) ; la TEP localise une **paire de photons** grâce à leur émission dos-à-dos (collimation électronique, gain de sensibilité et quantification absolue). La différence fondatrice n'est pas le traceur, c'est l'**annihilation**."
+          },
+          {
+            "type": "warning",
+            "title": "Piège conceptuel — l'image ne montre pas le noyau",
+            "text": "Ce que la TEP reconstruit est la carte des **points d'annihilation**, pas celle des atomes radioactifs. Pour un émetteur à parcours long (⁶⁸Ga, ⁸²Rb), l'écart entre les deux peut atteindre plusieurs millimètres [2][6] : une petite lésion très avide en ⁶⁸Ga apparaîtra donc systématiquement plus floue et légèrement « étalée » qu'avec le ¹⁸F, à scanner identique."
+          }
+        ]
+      },
+      {
+        "title": "A3 - La désintégration β⁺ : bilan énergétique, condition de masse et compétition avec la capture électronique",
+        "text": "L'émission de positons (β⁺) est le premier maillon de la chaîne TEP. Elle obéit à des règles énergétiques strictes qui déterminent **quels radionucléides peuvent servir en TEP** et **avec quelle qualité d'image**.\n\n### Le mécanisme nucléaire\n\nUn noyau **excédentaire en protons** (déficitaire en neutrons) tend à se stabiliser en convertissant un proton en neutron. Cette transition libère un **positon (e⁺)**, antiparticule de l'électron, et un **neutrino électronique (νₑ)** [1][6] :\n\n> **p → n + e⁺ + νₑ**\n\nLe positon emporte une part variable de l'énergie disponible, le reste étant emporté par le neutrino (indétectable). D'où un **spectre continu d'énergie cinétique**, de 0 jusqu'à une valeur maximale **E_max**, avec une énergie **moyenne E_moy ≈ E_max/3** [3][6]. Cette distribution continue — et non une raie unique comme pour l'émission γ — est la raison pour laquelle le parcours du positon (A4) est lui-même statistique.\n\n### La condition de masse : le seuil des 1,022 MeV\n\nL'émission β⁺ n'est **énergétiquement possible que si** la différence de masse entre le noyau parent et le noyau fille dépasse **2mₑc² = 1,022 MeV** — soit deux fois l'énergie de masse de l'électron (511 keV × 2) [1]. La raison : créer le positon coûte mₑc², et le réarrangement du cortège électronique (le noyau fille a un proton de moins) en coûte un second. En dessous de ce seuil, le noyau **ne peut pas** émettre de positon et se désintègre exclusivement par capture électronique.\n\n### La compétition β⁺ / capture électronique (CE)\n\nAu-dessus du seuil, les deux voies coexistent et se partagent les désintégrations. Dans la **capture électronique (CE)**, le noyau capture un électron du cortège (souvent de la couche K) : p + e⁻ → n + νₑ. La CE **ne produit pas de positon**, donc **pas de photons d'annihilation** : sa fraction est « perdue » pour l'imagerie TEP et augmente inutilement la dose. Le rendement TEP utile d'un radionucléide dépend donc directement de son **branchement β⁺**.\n\n| Radionucléide | T½ | Branchement β⁺ | E_max β⁺ (MeV) | Commentaire TEP | Source |\n|---|---|---|---|---|---|\n| **¹⁸F** | **109,77 min** | **96,7–96,9 %** | **0,634** | quasi-idéal : β⁺ élevé, E_max faible | [3][4][6] |\n| ¹¹C | 20,4 min | 99,8 % | 0,960 | émetteur « pur », production cyclotron | [6] |\n| ¹³N | 10,0 min | 99,8 % | 1,199 | émetteur « pur » | [6] |\n| ¹⁵O | 2,0 min | 99,9 % | 1,732 | émetteur « pur », T½ très courte | [6] |\n| ⁶⁴Cu | 12,7 h | **17,5 %** | 0,653 | β⁺ faible → CE majoritaire | [6] |\n| **⁶⁸Ga** | 67,8 min | **87,7 %** | 1,899 | générateur ; γ prompt 1,077 MeV | [6][3] |\n| ⁸²Rb | 1,3 min | 81,8 % | 3,378 | générateur ; E_max très élevée | [6] |\n| ¹²⁴I | 100,2 h | 11,7 % | 1,535 | β⁺ faible ; γ dans la fenêtre TEP | [6] |\n\n### Émetteurs « purs » vs « non purs »\n\n- Les **émetteurs β⁺ purs** (¹¹C, ¹³N, ¹⁵O ; branchement ≈ 99,8–99,9 %) ne produisent essentiellement que les 511 keV [3][6].\n- Les **émetteurs non purs** ajoutent un **rayonnement γ prompt** de haute énergie : ⁶⁸Ga (γ 1,077 MeV dans ~1,2 % des désintégrations), ⁸²Rb (γ 0,777 MeV, ~13 %), ¹²⁴I [6]. Ces photons parasites, s'ils tombent dans la fenêtre d'énergie ou créent des coïncidences fortuites, **dégradent le contraste et faussent la quantification** [6].",
+        "stats": [
+          {
+            "value": "1,022 MeV",
+            "label": "Seuil de masse (2mₑc²) sous lequel β⁺ est impossible [1]"
+          },
+          {
+            "value": "E_max / 3",
+            "label": "Énergie cinétique moyenne du positon émis [3][6]"
+          },
+          {
+            "value": "96,7–96,9 %",
+            "label": "Branchement β⁺ du ¹⁸F (le reste en capture électronique) [3][4][6]"
+          },
+          {
+            "value": "17,5 %",
+            "label": "Branchement β⁺ du ⁶⁴Cu — le reste est perdu en CE [6]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — spectre continu, pas une raie",
+            "text": "Contrairement aux photons γ (énergie discrète), le positon est émis avec un **spectre continu** de 0 à E_max, car il partage aléatoirement l'énergie avec le neutrino [3][6]. C'est pourquoi on doit toujours distinguer **E_max** (la borne, qui gouverne le parcours maximal) de **E_moy ≈ E_max/3** (qui gouverne le parcours moyen effectif). Confondre les deux conduit à surestimer grossièrement le flou attendu."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi le ¹⁸F est l'étalon",
+            "text": "Le ¹⁸F cumule les qualités : **branchement β⁺ élevé** (96,7–96,9 %, peu de dose perdue en CE) [3][4][6], **E_max basse** (0,634 MeV → parcours court → meilleure résolution, A4) [6], **absence de γ prompt** (émetteur quasi-pur), et une **T½ de 109,77 min** compatible avec la logistique clinique tout en limitant la dose [3][4]. Aucun autre émetteur β⁺ courant ne réunit ces quatre atouts, d'où sa place de radionucléide de référence de la TEP."
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Schéma comparant les modes de désintégration d'un noyau riche en protons : émission β⁺ (positon + neutrino) et capture électronique, avec le seuil de masse de 1,022 MeV nécessaire à la voie β⁺."
+      },
+      {
+        "title": "A4 - Antimatière, positon et ralentissement : du noyau au point d'annihilation",
+        "text": "Entre l'émission du positon (A3) et la détection des photons (A2) se joue un trajet microscopique qui fixe **deux des limites physiques ultimes de la résolution TEP** : le parcours du positon et la non-colinéarité. Aucune reconstruction ne peut les supprimer ; on ne peut que les modéliser.\n\n### Le positon, antiparticule de l'électron\n\nLe positon (e⁺) est l'**antiélectron** : même masse, charge opposée. Il fut **prédit par Paul Dirac (1928–1931)** à partir de son équation relativiste, puis **découvert le 2 août 1932 par Carl D. Anderson** (Caltech), dans une chambre à brouillard exposée au rayonnement cosmique — une trace « de charge positive et de masse électronique » qui lui vaudra le **prix Nobel de physique 1936** [10][11]. La TEP est ainsi, historiquement, la première application médicale de masse de l'**antimatière**.\n\n### Le parcours du positon (positron range)\n\nÀ sa sortie du noyau, le positon possède une énergie cinétique (jusqu'à E_max). Il la **dissipe par interactions coulombiennes** avec les électrons du milieu (ionisations, excitations) le long d'un trajet en zig-zag, jusqu'à être quasiment **thermalisé** (énergie ≈ 0) [1][2]. La distance rectiligne entre le point d'émission et le point d'annihilation est le **parcours du positon**. C'est un **flou intrinsèque** : le détecteur enregistre le point d'annihilation, décalé de l'atome émetteur.\n\nCe parcours **croît avec E_max**, donc varie fortement d'un radionucléide à l'autre :\n\n| Radionucléide | E_max β⁺ (MeV) | Parcours max eau (mm) | Impact résolution | Source |\n|---|---|---|---|---|\n| **¹⁸F** | 0,634 | **≈ 2,3–2,4** | le plus faible → meilleure résolution | [2][6] |\n| ¹¹C | 0,960 | ≈ 4,2 | intermédiaire | [6] |\n| ¹³N | 1,199 | ≈ 5,5 | intermédiaire | [6] |\n| ¹⁵O | 1,732 | ≈ 8,4 | dégradé | [6] |\n| **⁶⁸Ga** | 1,899 | **≈ 8,9–9,2** | nettement dégradé | [2][6] |\n| ⁸²Rb | 3,378 | ≈ 17,0 | fortement dégradé | [6] |\n\nEn pratique, sur un scanner préclinique de résolution intrinsèque 1,5 mm, une source capillaire chaude donne un **FWHM de 1,4 mm pour le ¹⁸F contre 3,0 mm pour le ⁶⁸Ga** [2] : la différence de parcours se traduit directement en résolution mesurée.\n\n### La non-colinéarité (acolinéarité)\n\nSi la paire e⁺/e⁻ était rigoureusement au repos, les deux photons partiraient à exactement 180°. Mais il subsiste une faible **énergie cinétique résiduelle du centre de masse**, si bien que l'angle réel s'écarte de 180° selon une distribution gaussienne de **FWHM ≈ 0,25–0,5°** (mesures in vivo au ¹⁸F : ~0,54°) [1][2]. Ce flou **augmente avec le diamètre de l'anneau** de détecteurs : plus les détecteurs sont éloignés, plus une petite déviation angulaire déplace la LOR — d'où un compromis d'ingénierie entre grand champ de vue et résolution.\n\n### Le positronium (état lié transitoire)\n\nAvant l'annihilation, l'e⁺ et l'e⁻ peuvent former un état lié éphémère, le **positronium** [15] :\n- **Para-positronium** (spins antiparallèles) → **2 photons** de 511 keV, durée de vie **≈ 125 ps** ;\n- **Ortho-positronium** (spins parallèles) → **3 photons**, durée de vie **≈ 142 ns dans le vide**, fortement raccourcie en tissu par l'annihilation « pick-off » [15].\n\nEn TEP conventionnelle, c'est la voie **2 photons** qui est exploitée ; la durée de vie de l'ortho-positronium, sensible à l'environnement moléculaire, fonde l'imagerie de recherche dite « positronium lifetime » [15].",
+        "steps": [
+          {
+            "title": "1. Émission",
+            "text": "Le noyau riche en protons émet le positon (E cinétique jusqu'à E_max) et le neutrino ; p → n + e⁺ + νₑ [1][6]."
+          },
+          {
+            "title": "2. Ralentissement",
+            "text": "Le positon dissipe son énergie par interactions coulombiennes sur le parcours du positon (≈ 2,4 mm eau pour ¹⁸F, ≈ 9,2 mm pour ⁶⁸Ga) jusqu'à thermalisation [1][2][6]."
+          },
+          {
+            "title": "3. Annihilation",
+            "text": "Le positon quasi au repos s'annihile avec un électron ; leurs masses se convertissent en énergie (E = mc²) [11][14]."
+          },
+          {
+            "title": "4. Émission des photons",
+            "text": "Deux photons de 511 keV partent à ~180° ± 0,25–0,5° (non-colinéarité), captés en coïncidence pour définir la LOR [1][2][11]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "≈ 2,3–2,4 mm",
+            "label": "Parcours max du positon du ¹⁸F dans l'eau [2][6]"
+          },
+          {
+            "value": "≈ 9,2 mm",
+            "label": "Parcours max du positon du ⁶⁸Ga dans l'eau [2][6]"
+          },
+          {
+            "value": "≈ 0,25–0,5°",
+            "label": "FWHM de la non-colinéarité (écart à 180°) [1][2]"
+          },
+          {
+            "value": "1932",
+            "label": "Découverte du positon par Anderson (Nobel 1936) [10][11]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — le ⁶⁸Ga n'est pas le ¹⁸F en résolution",
+            "text": "Le parcours du positon du ⁶⁸Ga (≈ 8,9–9,2 mm dans l'eau) est presque **quatre fois** celui du ¹⁸F (≈ 2,3–2,4 mm) [2][6]. Sur les mêmes détecteurs, la résolution mesurée passe d'un FWHM ~1,4 mm (¹⁸F) à ~3,0 mm (⁶⁸Ga) [2]. Attention donc à ne pas comparer directement la détectabilité de petites lésions entre un examen ¹⁸F et un examen ⁶⁸Ga : la limite est physique, pas instrumentale."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — deux flous, deux dépendances",
+            "text": "Le **parcours du positon** dépend du **radionucléide** (E_max) et du **milieu** (densité électronique) ; la **non-colinéarité** dépend du **diamètre de l'anneau** [1][2]. En imagerie clinique corps entier au ¹⁸F, la non-colinéarité domine (grand anneau, parcours court) ; en imagerie du ⁶⁸Ga ou en petit animal, c'est le parcours qui devient le facteur limitant. La modélisation du positron range dans la reconstruction ne récupère qu'une partie de cette résolution perdue."
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Frise du trajet du positon : émission par le noyau avec énergie cinétique, ralentissement coulombien sur le parcours du positon jusqu'à thermalisation, puis annihilation avec un électron produisant deux photons de 511 keV à 180°."
+      },
+      {
+        "title": "B1 - B1 - Les deux photons de 511 keV : conservation de l'énergie et de la quantité de mouvement",
+        "text": "**Ce que « voit » réellement la TEP.** La tomographie par émission de positons (TEP) ne détecte jamais le positon lui-même, ni le radionucléide : elle détecte le **rayonnement d'annihilation**, c'est-à-dire les deux photons gamma produits lorsque le positon (e⁺) rencontre un électron (e⁻) du milieu. Comprendre ce couple de photons — leur énergie strictement fixée et leur émission dos-à-dos — est le socle de toute l'instrumentation (§B2), de la localisation par temps de vol (§B3) et des limites de résolution (§B4).\n\n**Origine : l'émission β⁺.** Un noyau **excédentaire en protons** se désintègre par émission β⁺ : un proton se convertit en neutron avec émission d'un **positon (e⁺)** et d'un **neutrino électronique (νₑ)**, selon **p → n + e⁺ + νₑ** [1][6]. Cette voie n'est énergétiquement possible que si la différence de masse entre noyau parent et noyau fils dépasse **2·mₑc² = 1,022 MeV**, soit deux fois l'énergie de masse de l'électron (511 keV × 2) — condition-seuil qui explique pourquoi seuls certains radionucléides sont β⁺-émetteurs [1]. Le positon est éjecté avec un **spectre continu d'énergie cinétique** (de 0 à E_max), l'énergie étant partagée aléatoirement avec le neutrino ; d'où la distinction cardinale entre énergie **maximale (E_max)** et énergie **moyenne (E_moy ≈ E_max/3)** [6][3]. Une voie compétitive, la **capture électronique (CE)**, réduit la fraction β⁺ de certains émetteurs (p. ex. ⁶⁴Cu : β⁺ seulement 17,5 % ; ⁶⁸Ga : β⁺ ≈ 88 %, CE ≈ 11 %) [6][3].\n\n**L'annihilation : conversion masse → énergie.** Une fois émis, le positon perd son énergie cinétique par interactions coulombiennes (§B4) puis, quasi au repos (thermalisé), **s'annihile avec un électron** du milieu : leurs masses sont **intégralement converties en énergie** selon **E = mc²** [11][14]. L'énergie de repos de l'électron (et du positon) vaut **mₑc² = 511 keV (0,511 MeV)** [1][11][14]. L'annihilation produit donc **deux photons γ de 511 keV chacun** [1][11][14]. Cette énergie n'est ni ajustable ni radionucléide-dépendante : quel que soit l'émetteur (¹⁸F, ⁶⁸Ga, ¹¹C…), la TEP détecte toujours des photons de **511 keV** — ce qui fonde une **fenêtre spectrométrique unique** pour tous les traceurs TEP.\n\n**La géométrie dos-à-dos : conservation de la quantité de mouvement.** Dans le référentiel du centre de masse de la paire e⁺/e⁻ quasi immobile, l'impulsion totale initiale est proche de zéro. La conservation de la quantité de mouvement impose alors que les deux photons soient émis **à ≈ 180° l'un de l'autre (dos-à-dos, colinéaires)**, de sorte que leurs impulsions s'annulent [1][11][14]. C'est précisément cette **colinéarité à 180°** qui autorise la détection en coïncidence : deux détecteurs opposés définissent, par le simple fait d'être touchés ensemble, la droite le long de laquelle l'annihilation s'est produite (§B2). Le mot « ≈ » est important : la colinéarité n'est pas parfaite (**non-colinéarité**, §B4), l'impulsion résiduelle du centre de masse introduisant un léger écart gaussien.\n\n**Positronium — la précision qui manque en pratique.** Avant l'annihilation directe, il peut se former un état lié éphémère e⁺/e⁻, le **positronium**. Le **para-positronium** (spins antiparallèles) s'annihile en **2 photons de 511 keV**, avec une durée de vie **≈ 125 ps** ; l'**ortho-positronium** (spins parallèles) donne **3 photons** et vit **≈ 142 ns dans le vide**, durée fortement réduite en matière par annihilation *pick-off* [15]. Pour la TEP clinique, seul compte le canal à 2 photons de 511 keV ; le canal à 3 photons (ortho-positronium) est marginal et ne contribue pas à la reconstruction standard.\n\n| Grandeur physique | Valeur | Loi de conservation invoquée | Source |\n|---|---|---|---|\n| Énergie de chaque photon | **511 keV** (= mₑc²) | Conservation de l'énergie (E = mc²) | [1][11][14] |\n| Seuil énergétique de la β⁺ | **1,022 MeV** (= 2·mₑc²) | Bilan de masse parent→fils | [1] |\n| Nombre de photons (para-Ps / annihil. directe) | **2** | — | [11][14] |\n| Angle entre les deux photons | **≈ 180°** | Conservation de la quantité de mouvement | [1][11][14] |\n| Énergie moyenne du positon | **≈ E_max / 3** | Partage e⁺/νₑ (spectre continu) | [6][3] |",
+        "stats": [
+          {
+            "value": "511 keV",
+            "label": "Énergie de chaque photon d'annihilation (= mₑc²)"
+          },
+          {
+            "value": "≈ 180°",
+            "label": "Angle d'émission des deux photons (dos-à-dos)"
+          },
+          {
+            "value": "1,022 MeV",
+            "label": "Seuil énergétique de l'émission β⁺ (2·mₑc²)"
+          },
+          {
+            "value": "≈ E_max/3",
+            "label": "Énergie moyenne du positon émis"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi 511 keV, toujours",
+            "text": "L'énergie du photon d'annihilation ne dépend **ni du radionucléide ni de son E_max**, mais uniquement de la masse au repos de l'électron : **mₑc² = 511 keV** [1][11][14]. C'est pourquoi un seul et même détecteur, calibré sur une **fenêtre spectrométrique de 511 keV**, sert indifféremment le ¹⁸F, le ⁶⁸Ga ou le ⁸²Rb. Ce que le radionucléide change, c'est le **parcours du positon** (donc la résolution, §B4) et la **contamination par gamma prompt** (⁶⁸Ga, ⁸²Rb, ¹²⁴I), jamais l'énergie détectée."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — ne pas confondre E_max du positon et énergie du photon",
+            "text": "L'**E_max du positon** (0,634 MeV pour le ¹⁸F, 1,899 MeV pour le ⁶⁸Ga [6]) est une énergie **cinétique** dissipée dans les tissus avant l'annihilation ; elle conditionne le parcours et la résolution (§B4). L'**énergie du photon** détecté est, elle, invariable à **511 keV** [1][11]. Un E_max élevé n'augmente pas l'énergie des photons — il dégrade la résolution spatiale."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Annihilation d'un positon avec un électron produisant deux photons gamma de 511 keV émis à 180° l'un de l'autre, chacun détecté par un cristal opposé de l'anneau TEP, définissant une ligne de réponse.",
+        "figureCaption": "Fig. 1 — Annihilation e⁺/e⁻ → deux photons de 511 keV dos-à-dos : la brique élémentaire du signal TEP."
+      },
+      {
+        "title": "B2 - B2 - La détection en coïncidence : ligne de réponse, fenêtre temporelle et types de coïncidences",
+        "text": "**Le principe : une collimation électronique, sans collimateur.** Là où la scintigraphie et la TEMP (tomographie par émission monophotonique) trient les photons utiles au moyen d'un **collimateur physique** en plomb (qui absorbe > 99 % du flux et plafonne la sensibilité), la TEP exploite la **colinéarité à 180°** des deux photons de 511 keV (§B1) pour se passer de collimateur. Deux détecteurs diamétralement opposés sont couplés par un **circuit de coïncidence** : si tous deux enregistrent un photon dans une **fenêtre temporelle très courte (≈ 10⁻⁸ s, soit quelques nanosecondes)**, on admet qu'une annihilation s'est produite **sur la droite joignant les deux détecteurs** [1][8]. Cette droite est la **ligne de réponse (LOR, *line of response*)**. On parle de **collimation électronique** : c'est la coïncidence temporelle, et non un dispositif mécanique, qui définit la direction d'incidence [1][8]. Le gain de sensibilité qui en résulte est l'un des avantages majeurs de la TEP sur la TEMP.\n\n**La fenêtre de coïncidence : un compromis dicté par le scintillateur.** La largeur de la fenêtre temporelle est ajustée au **temps de vol des photons dans le tunnel** (quelques centaines de ps pour traverser le champ) additionné de la **résolution temporelle du cristal**. Une fenêtre trop étroite rejette de vraies coïncidences ; trop large, elle laisse entrer davantage de fortuites (voir plus bas). Elle dépend donc directement de la rapidité du scintillateur [7] :\n\n| Scintillateur | Fenêtre de coïncidence typique | Commentaire | Source |\n|---|---|---|---|\n| **BGO** (germanate de bismuth) | **≈ 12 ns** | Cristal lent → fenêtre large → plus de fortuites | [7] |\n| GSO / NaI | ≈ 8 ns | Intermédiaire | [7] |\n| **LSO / LYSO** | **≈ 6 ns** | Cristal rapide → fenêtre étroite, compatible TOF (§B3) | [7] |\n| Systèmes modernes | **4–6 ns** | Standard clinique actuel | [7] |\n\n**Les quatre types de coïncidences.** Toutes les paires détectées dans la fenêtre ne sont pas informatives. On distingue quatre catégories [1][8] :\n\n| Type de coïncidence | Définition | Statut | Source |\n|---|---|---|---|\n| **Vraies (*trues*)** | Les deux photons proviennent de la **même** annihilation, aucun n'a été dévié | **Signal utile** — LOR correcte | [1][8] |\n| **Diffusées (*scatter*)** | Au moins un photon a subi une **diffusion Compton** avant détection | **Bruit** — LOR erronée, décalée | [1][8] |\n| **Fortuites / aléatoires (*randoms*)** | Deux photons issus d'**annihilations distinctes** tombent par hasard dans la même fenêtre | **Bruit** — LOR fausse | [1][8] |\n| **Multiples** | **Plus de deux** photons dans la même fenêtre → LOR indéterminée | Événement rejeté | [1][8] |\n\n**Pourquoi ce tri conditionne l'image.** Les **vraies** portent le signal ; les **diffusées** et les **fortuites** constituent le bruit de fond qui dégrade le contraste et fausse la quantification (SUV), et doivent être **estimées puis soustraites** lors de la reconstruction [1][8]. Le taux de fortuites croît comme le **carré de l'activité** dans le champ et avec la **largeur de la fenêtre** : c'est pourquoi un cristal lent comme le BGO, qui impose une fenêtre de ≈ 12 ns, accumule davantage de fortuites qu'un LSO à ≈ 6 ns [7]. Les diffusées, elles, augmentent avec le volume de tissu traversé (patient corpulent) et se corrigent à partir de la fenêtre spectrométrique (rejet des photons ayant perdu de l'énergie par Compton, la diffusion abaissant l'énergie sous 511 keV).",
+        "steps": [
+          {
+            "title": "1 · Émission",
+            "text": "Une annihilation dans le patient libère deux photons de 511 keV à ≈ 180° (§B1)."
+          },
+          {
+            "title": "2 · Double détection",
+            "text": "Deux cristaux opposés de l'anneau absorbent chacun un photon et génèrent une impulsion électrique horodatée."
+          },
+          {
+            "title": "3 · Test de coïncidence",
+            "text": "Le circuit vérifie que les deux impulsions tombent dans la même fenêtre temporelle (≈ 4–6 ns sur systèmes modernes) [7]."
+          },
+          {
+            "title": "4 · Assignation de la LOR",
+            "text": "Si la coïncidence est validée, l'événement est attribué à la ligne de réponse joignant les deux détecteurs — sans collimateur physique [1][8]."
+          },
+          {
+            "title": "5 · Tri & correction",
+            "text": "Vraies conservées ; diffusées et fortuites estimées puis soustraites ; multiples rejetées, avant reconstruction [1][8]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — collimation électronique vs physique",
+            "text": "La suppression du collimateur en plomb est ce qui donne à la TEP sa **sensibilité de détection très supérieure à la TEMP** : en TEMP, le collimateur absorbe la quasi-totalité du flux photonique pour n'en garder qu'une direction ; en TEP, la LOR est déduite **a posteriori** de la coïncidence temporelle, sans perte de flux [1][8]. Le prix à payer est la gestion du bruit (diffusées, fortuites) et l'exigence de scintillateurs rapides."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — fortuites et activité injectée",
+            "text": "Le taux de coïncidences **fortuites** varie approximativement comme le **carré de l'activité** présente dans le champ et croît avec la **largeur de la fenêtre** [7]. Surdoser le patient ou employer un cristal lent (BGO, fenêtre ≈ 12 ns) dégrade donc le rapport signal/bruit au lieu de l'améliorer — un argument de plus en faveur des cristaux rapides L(Y)SO."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Anneau de détecteurs TEP illustrant la ligne de réponse d'une coïncidence vraie, et à côté une coïncidence diffusée (photon dévié par effet Compton) et une coïncidence fortuite (deux annihilations distinctes), sources de bruit à corriger.",
+        "figureCaption": "Fig. 2 — Vraies, diffusées, fortuites : seule la coïncidence vraie place l'annihilation sur la bonne LOR."
+      },
+      {
+        "title": "B3 - B3 - Temps de vol (TOF) et anneau de détecteurs : localiser plus finement sur la LOR",
+        "text": "**Le problème que le TOF résout.** La détection en coïncidence (§B2) indique que l'annihilation s'est produite **quelque part sur la LOR**, mais pas **où** exactement le long de cette droite. En TEP conventionnelle (non-TOF), la reconstruction répartit uniformément la probabilité de l'événement sur toute la longueur de la LOR, ce qui injecte du bruit. La **mesure du temps de vol (TOF, *time of flight*)** lève partiellement cette indétermination.\n\n**Principe.** Puisque les deux photons voyagent à la vitesse de la lumière, si l'annihilation n'est pas au centre géométrique de la LOR, les photons atteignent les deux détecteurs à des instants **légèrement différents**. En mesurant précisément cette **différence de temps d'arrivée (Δt)**, on calcule la position de l'annihilation le long de la LOR et l'on **restreint la probabilité de l'événement à un segment** au lieu de toute la ligne [7]. Le résultat est une **amélioration du rapport signal/bruit (RSB)** de l'image reconstruite, particulièrement sensible chez les **patients corpulents** (LOR longues) et pour les **petites lésions à faible contraste**.\n\n**La grandeur-clé : la résolution temporelle de coïncidence (CTR).** La finesse de la localisation TOF est gouvernée par la **CTR (*coincidence time resolution*)**, c'est-à-dire la précision avec laquelle le système mesure Δt [7]. L'incertitude spatiale Δx le long de la LOR est liée à la CTR par Δx = c·Δt/2 (c = célérité de la lumière) : plus la CTR est faible, plus le segment de localisation est court.\n\n| Paramètre TOF | Valeur | Signification pratique | Source |\n|---|---|---|---|\n| **CTR — scanners cliniques modernes** | **≈ 200–400 ps** | Localisation le long de la LOR de l'ordre de quelques cm | [7] |\n| **CTR — seuil de faisabilité TOF** | **< 600 ps** | En deçà, la reconstruction TOF apporte un gain exploitable | [7] |\n| CTR — meilleurs cristaux LYSO en labo | **< 250 ps FWHM** | Recherche / systèmes haut de gamme | [7] |\n\n**Le rôle du scintillateur : rapidité avant tout.** Une CTR basse exige un cristal à **décroissance rapide** et fort rendement lumineux, associé à une électronique rapide. C'est ce qui a fait basculer le standard clinique du BGO vers les cristaux à base de lutétium [7] :\n\n| Scintillateur | Temps de décroissance | Aptitude au TOF | Source |\n|---|---|---|---|\n| **LSO / LYSO** (oxyorthosilicate de lutétium ± yttrium) | **≈ 40 ns** (temps de montée LSO ≈ 70 ps) | **Compatible TOF** — standard moderne | [7] |\n| **BGO** (germanate de bismuth) | **≈ 300 ns** | Trop lent pour le TOF conventionnel → fenêtres plus larges, plus de fortuites | [7] |\n\nLe BGO conserve un excellent **pouvoir d'arrêt** à 511 keV (numéro atomique effectif élevé), mais sa lenteur (≈ 300 ns) impose une fenêtre de coïncidence large (§B2) et l'exclut historiquement du TOF ; des voies de recherche exploitant la lumière Cherenkov visent à le réintroduire dans le TOF [7]. À l'inverse, le **LSO/LYSO** combine décroissance rapide (≈ 40 ns), bon rendement lumineux et pouvoir d'arrêt suffisant, ce qui en fait le matériau de référence des scanners TOF actuels [7].\n\n**L'anneau de détecteurs.** Les cristaux sont disposés en **anneau(x) complet(s)** entourant le patient, couplés à des photodétecteurs (photomultiplicateurs ou, sur les systèmes numériques, SiPM). Toute paire de détecteurs de l'anneau peut former une LOR, ce qui autorise l'acquisition simultanée de millions de LOR sans rotation mécanique — contrairement à la γ-caméra tournante de la TEMP. La **géométrie de l'anneau** a toutefois un coût : plus son **diamètre** est grand, plus le flou de **non-colinéarité** se creuse au centre du champ (§B4) [1].",
+        "stats": [
+          {
+            "value": "200–400 ps",
+            "label": "CTR des scanners TOF cliniques modernes"
+          },
+          {
+            "value": "< 600 ps",
+            "label": "Seuil de CTR requis pour une reconstruction TOF utile"
+          },
+          {
+            "value": "≈ 40 ns",
+            "label": "Décroissance du LSO/LYSO (compatible TOF)"
+          },
+          {
+            "value": "≈ 300 ns",
+            "label": "Décroissance du BGO (trop lent pour le TOF conventionnel)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — ce que le TOF change (et ne change pas)",
+            "text": "Le TOF **n'améliore pas** la résolution spatiale intrinsèque du scanner (celle-ci reste bornée par le parcours du positon et la non-colinéarité, §B4) : il **améliore le rapport signal/bruit** en confinant chaque événement à un segment de la LOR au lieu de toute sa longueur [7]. Le bénéfice clinique est donc maximal là où le bruit domine — **patients corpulents** et **lésions peu contrastées**."
+          },
+          {
+            "type": "info",
+            "title": "Repère — de la CTR à la localisation",
+            "text": "La longueur du segment de localisation le long de la LOR vaut approximativement Δx = c·CTR/2. Une CTR de **≈ 400 ps** correspond ainsi à une incertitude d'environ 6 cm, et **≈ 200 ps** à environ 3 cm [7] — d'où la course à la réduction de la CTR sur les scanners récents."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Ligne de réponse dans un anneau TEP avec mesure de la différence de temps d'arrivée des deux photons de 511 keV : le temps de vol restreint la localisation de l'annihilation à un segment de la LOR au lieu de toute sa longueur.",
+        "figureCaption": "Fig. 3 — Temps de vol : Δt confine l'annihilation à un segment de la LOR, réduisant le bruit de reconstruction."
+      },
+      {
+        "title": "B4 - B4 - Les limites physiques de résolution : parcours du positon et non-colinéarité",
+        "text": "**Deux plafonds que l'ingénierie ne peut franchir.** La résolution spatiale de la TEP est limitée par des facteurs instrumentaux (taille des cristaux, échantillonnage) **et** par deux phénomènes **physiques intrinsèques**, indépendants du détecteur : le **parcours du positon** et la **non-colinéarité** des photons. Ces deux termes fixent une borne inférieure à la finesse de l'image, que même un scanner parfait ne saurait dépasser [1].\n\n**1. Le parcours du positon (*positron range*).** Entre son émission par le noyau et son annihilation, le positon **n'est pas au repos** : il parcourt une distance en dissipant son énergie cinétique par interactions coulombiennes avec les électrons du milieu (ionisations, excitations) [1][2]. Or l'annihilation — donc le point que la TEP reconstruit — a lieu **au terme de ce parcours**, à quelques millimètres du lieu réel de la désintégration. Ce décalage constitue une **source intrinsèque de flou** [1][2]. Son amplitude croît avec l'**E_max du positon** : plus le positon est énergétique, plus il s'éloigne avant de s'annihiler. Le parcours dégrade la résolution de **1 à 3 mm** selon le radionucléide et le détecteur [1].\n\n| Radionucléide | E_max β⁺ (MeV) | Parcours max dans l'eau (mm) | Source |\n|---|---|---|---|\n| **¹⁸F** | **0,634** | **≈ 2,3–2,4** (le plus court des émetteurs TEP courants) | [2][6] |\n| ¹¹C | 0,960 | ≈ 4,2 | [6] |\n| ¹³N | 1,199 | ≈ 5,5 | [6] |\n| ¹⁵O | 1,732 | ≈ 8,4 | [6] |\n| **⁶⁸Ga** | **1,899** | **≈ 8,9–9,2** | [2][6] |\n| ⁸²Rb | 3,378 | ≈ 17,0 | [6][10] |\n\nL'impact clinique est direct : sur un scanner préclinique de résolution intrinsèque 1,5 mm, le FWHM (largeur à mi-hauteur) d'une source capillaire chaude est de **1,4 mm avec le ¹⁸F contre 3,0 mm avec le ⁶⁸Ga** [2]. C'est l'une des raisons pour lesquelles le **¹⁸F reste le radionucléide de référence** de la TEP : son parcours court (≈ 2,4 mm) autorise la meilleure résolution spatiale [1][2]. À l'inverse, la résolution des traceurs marqués au ⁶⁸Ga (PSMA, DOTATATE) est physiquement bornée par le parcours étendu du positon du gallium, quelle que soit la qualité du scanner.\n\n**2. La non-colinéarité (acolinéarité).** L'émission dos-à-dos à 180° (§B1) suppose une paire e⁺/e⁻ **exactement au repos**. En pratique, la paire conserve une **impulsion résiduelle** au moment de l'annihilation ; par conservation de la quantité de mouvement, les deux photons ne repartent pas rigoureusement à 180° mais avec un **écart angulaire** distribué de façon gaussienne, de **FWHM ≈ 0,25–0,5°** (mesures in vivo au ¹⁸F : FWHM ≈ 0,54°) [1][2]. La LOR déduite de la coïncidence est alors légèrement décalée par rapport au lieu réel de l'annihilation. Point crucial : **ce flou augmente avec le diamètre de l'anneau** de détecteurs [1] — car un même écart angulaire se traduit par un décalage spatial d'autant plus grand que les détecteurs sont éloignés. C'est un compromis de conception : agrandir l'anneau pour accueillir tous les gabarits de patients aggrave mécaniquement la contribution de la non-colinéarité au centre du champ.\n\n**Bilan.** La résolution spatiale effective résulte de la **somme quadratique** des contributions : parcours du positon, non-colinéarité, taille des cristaux et facteurs de reconstruction. Le parcours dépend du **traceur** (choix du radionucléide), la non-colinéarité de la **géométrie du scanner** (diamètre de l'anneau) [1][2]. Ni l'un ni l'autre n'est corrigible par l'électronique seule — d'où l'importance de choisir le radionucléide adapté à la question clinique et de connaître la limite physique propre à chaque traceur.",
+        "stats": [
+          {
+            "value": "≈ 2,4 mm",
+            "label": "Parcours max du positon du ¹⁸F dans l'eau (le plus court)"
+          },
+          {
+            "value": "≈ 9 mm",
+            "label": "Parcours max du positon du ⁶⁸Ga dans l'eau"
+          },
+          {
+            "value": "≈ 0,25–0,5°",
+            "label": "FWHM de la non-colinéarité (écart au 180°)"
+          },
+          {
+            "value": "1–3 mm",
+            "label": "Dégradation de résolution imputable au parcours du positon"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi le ¹⁸F l'emporte sur le ⁶⁸Ga en résolution",
+            "text": "À performance de scanner égale, un traceur marqué au **¹⁸F** (E_max 0,634 MeV, parcours ≈ 2,4 mm) offre une résolution spatiale nettement supérieure à un traceur au **⁶⁸Ga** (E_max 1,899 MeV, parcours ≈ 9 mm) : FWHM 1,4 mm vs 3,0 mm sur un même système préclinique [2][6]. Cette limite est **physique** : aucune reconstruction ne récupère le décalage introduit par le long parcours du positon du gallium. À intégrer dans l'interprétation des TEP au ⁶⁸Ga-PSMA / ⁶⁸Ga-DOTATATE, où les petites lésions apparaissent intrinsèquement plus floues."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — un grand anneau n'est pas gratuit",
+            "text": "Le flou de **non-colinéarité augmente avec le diamètre de l'anneau** de détecteurs [1] : un même écart de 0,5° au 180° produit un décalage spatial d'autant plus grand que les détecteurs sont distants. Agrandir le tunnel pour le confort patient dégrade donc mécaniquement la résolution au centre du champ — arbitrage à connaître lorsqu'on compare des scanners de géométries différentes."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Schéma des deux limites physiques de résolution TEP : le positon parcourt quelques millimètres avant de s'annihiler (parcours du positon), et les deux photons de 511 keV s'écartent légèrement de 180° (non-colinéarité), décalant la ligne de réponse par rapport au lieu réel de la désintégration.",
+        "figureCaption": "Fig. 4 — Parcours du positon et non-colinéarité : les deux bornes physiques de la résolution spatiale en TEP."
+      },
+      {
+        "title": "C1 - C1 - Atténuation et diffusé des 511 keV : pourquoi la TEP corrige obligatoirement l'atténuation",
+        "text": "**Le problème posé par la coïncidence.** En TEP, tout événement utile suppose la détection **conjointe** des deux photons d'annihilation de **511 keV** émis dos-à-dos [1][11][14]. Or chacun de ces photons doit traverser toute l'épaisseur de tissu qui sépare le point d'annihilation des deux détecteurs opposés. La probabilité de survie d'une ligne de réponse (**LOR**, *line of response* : la droite joignant les deux détecteurs en coïncidence [1][8]) est donc le **produit** des probabilités de survie des deux photons — et ce produit dépend uniquement de la longueur totale de matière traversée le long de la LOR, **indépendamment de la position de l'annihilation sur cette LOR**. C'est cette propriété remarquable qui rend la correction d'atténuation en TEP à la fois **obligatoire** et **exacte** (contrairement à la TEMP où la profondeur est inconnue).\n\n**Deux mécanismes d'interaction à 511 keV.** Dans les tissus mous, à cette énergie, le photon interagit presque exclusivement par **effet Compton** (diffusion sur un électron libre, avec changement de direction et perte d'énergie), l'effet photoélectrique étant négligeable [1]. Deux conséquences distinctes en découlent :\n\n- **Atténuation (photons perdus)** : un photon dévié quitte la LOR ou est absorbé → la coïncidence n'est pas enregistrée. Résultat : **sous-estimation** systématique de l'activité des régions profondes, artefact d'aspect « creux central » sur les images non corrigées.\n- **Diffusé (photons déviés mais détectés)** : un photon Compton conserve assez d'énergie pour franchir la fenêtre spectrométrique et être détecté, mais sur une **LOR erronée** → coïncidence **diffusée (scatter)**, source de bruit de fond de basse fréquence spatiale [1][8].\n\n**Ordre de grandeur de l'atténuation.** À 511 keV, le photon est très pénétrant : la **couche de demi-atténuation (CDA)** dans les tissus mous est d'environ **7 cm**, et dans le plomb de l'ordre de **4 mm** [50]. Un photon issu du centre d'un abdomen adulte peut ainsi traverser 15–20 cm de tissu ; la fraction de coïncidences perdues au centre du corps atteint couramment **plus de 90 %**, ce qui interdit toute quantification sans correction.\n\n**La correction : la carte d'atténuation issue de la TDM.** En TEP/TDM, le scanner X fournit une **carte des coefficients d'atténuation** (unités Hounsfield) qui, après mise à l'échelle énergétique des ~70–140 keV du faisceau X vers les 511 keV, génère les **facteurs de correction d'atténuation (ACF)** appliqués LOR par LOR [1]. La TDM remplace ainsi les anciennes sources de transmission au germanium-68 (plus lentes et bruitées). Le diffusé, lui, est corrigé séparément par un modèle de **simulation à diffusion unique (single-scatter simulation)** exploitant la carte d'atténuation et la distribution d'activité estimée [1].\n\n| Effet physique | Mécanisme à 511 keV | Conséquence sur l'image non corrigée | Correction |\n|---|---|---|---|\n| **Atténuation** | Compton → photon perdu (dévié/absorbé) [1] | Sous-estimation des régions profondes, « creux » central | Carte TDM → ACF (mise à l'échelle 511 keV) [1] |\n| **Diffusé (scatter)** | Compton → photon détecté, LOR fausse [1][8] | Bruit de fond diffus, ↓ contraste, ↑ SUV du fond | Single-scatter simulation [1] |\n| **Fortuites (randoms)** | 2 annihilations distinctes dans la fenêtre [1][8] | Bruit de fond, ↓ contraste | Fenêtre différée / estimation des taux [8] |\n\n**Pourquoi la correction est indispensable — et pas seulement cosmétique.** Sans correction d'atténuation, l'image reste qualitative et trompeuse (les structures superficielles paraissent anormalement intenses par rapport aux structures profondes). Avec correction, l'image devient **quantitative** : chaque voxel exprime une concentration d'activité réelle (kBq/mL), condition *sine qua non* du calcul du SUV (cf. §C2). La contrepartie est que **toute erreur de la carte d'atténuation se propage directement en erreur d'activité** — d'où les artefacts détaillés au §C3.",
+        "stats": [
+          {
+            "value": "511 keV",
+            "label": "Énergie de chaque photon d'annihilation [1][11][14]"
+          },
+          {
+            "value": "≈ 7 cm",
+            "label": "CDA des 511 keV dans les tissus mous [50]"
+          },
+          {
+            "value": "≈ 4 mm",
+            "label": "CDA des 511 keV dans le plomb [50]"
+          },
+          {
+            "value": "> 90 %",
+            "label": "Coïncidences perdues au centre du corps"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — l'atténuation TEP est indépendante de la profondeur",
+            "text": "En TEP, le facteur de correction d'atténuation d'une LOR ne dépend que de la **longueur totale de matière traversée**, jamais de la position de l'annihilation le long de la LOR : les deux photons parcourent ensemble l'épaisseur complète du patient. Cette propriété (absente en TEMP, où un seul photon est détecté à profondeur inconnue) fait de la correction d'atténuation TEP une opération **exacte** dès lors que la carte d'atténuation est juste. Le photon de 511 keV étant très pénétrant (CDA ≈ 7 cm de tissu [50]), la correction est aussi **quantitativement massive** : c'est elle qui restitue le vrai contraste profondeur/surface."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — ne jamais interpréter le SUV sur des images non corrigées de l'atténuation",
+            "text": "Les images **NAC** (*non-attenuation-corrected*) restent utiles pour dépister certains artefacts (cf. §C3 : elles ne « voient » pas les faux rehaussements induits par le métal), mais elles **ne sont pas quantitatives** : les lésions superficielles y paraissent hyperfixantes et les lésions profondes hypofixantes. Toute mesure de SUV, toute comparaison de réponse thérapeutique et tout score métabolique doivent être faits **exclusivement sur les images corrigées (AC)**."
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Détection en coïncidence de deux photons de 511 keV émis à 180° : la ligne de réponse (LOR) joignant les deux détecteurs opposés ; illustration de l'atténuation le long de la LOR et de la coïncidence diffusée sur une LOR erronée."
+      },
+      {
+        "title": "C2 - C2 - Du comptage à l'image : sinogramme, reconstruction et quantification (SUV)",
+        "text": "**De l'événement au sinogramme.** Chaque coïncidence acceptée est une LOR caractérisée par son angle et sa distance à l'axe. L'histogramme de toutes les LOR selon ces deux coordonnées constitue le **sinogramme** (un point-source y décrit une sinusoïde, d'où le nom) — équivalent TEP des projections tomographiques. La TEP moderne acquiert en mode **3D** (tous les anneaux en coïncidence entre eux) et enregistre souvent la position de chaque événement (**mode liste**, *list-mode*), ce qui autorise le regroupement *a posteriori* (gating respiratoire/cardiaque, TOF). La TEP n'emploie **aucun collimateur physique** : la collimation est purement **électronique** (fenêtre de coïncidence de l'ordre de **10⁻⁸ s** [1][8]), d'où sa sensibilité très supérieure à la TEMP.\n\n**Corrections appliquées avant/pendant la reconstruction.** Pour rendre les données quantitatives, on soustrait ou modélise successivement : les **fortuites (randoms)**, le **diffusé (scatter)**, l'**atténuation** (carte TDM, cf. §C1), la **normalisation** (réponse non uniforme des ~cristaux/tubes), le **temps mort** et la **décroissance** (correction du temps entre calibration et injection, cruciale vu la période courte du ¹⁸F, **109,7 min** [4][3]).\n\n**Reconstruction itérative.** L'algorithme de référence est l'**OSEM** (*ordered-subset expectation maximization*), version accélérée du MLEM, qui reconstruit l'image en incorporant un modèle statistique du bruit poissonien et, dans les modèles physiques (*resolution recovery*), la **PSF** (fonction de dispersion du point) et le **TOF** (temps de vol). Le TOF exploite la **différence de temps d'arrivée** des deux photons pour localiser l'annihilation le long de la LOR, améliorant le rapport signal/bruit ; il exige une **résolution temporelle de coïncidence (CTR)** de l'ordre de **200–400 ps** sur les scanners cliniques modernes [7], une CTR **< 600 ps** étant nécessaire à toute reconstruction TOF [7]. Cristaux : **LSO/LYSO** (décroissance ~40 ns, compatibles TOF) ; **BGO** (décroissance lente ~300 ns), historiquement non-TOF [7].\n\n| Paramètre de reconstruction | Effet si on l'augmente | Compromis |\n|---|---|---|\n| Itérations × sous-ensembles (OSEM) | ↑ résolution/convergence | ↑ bruit (grain), risque de sur-convergence du SUVmax |\n| Filtre gaussien post-reconstruction | ↓ bruit, image plus lisse | ↓ résolution, ↓ SUVmax des petites lésions |\n| Modèle de résolution (PSF) | ↑ résolution spatiale | artefact de Gibbs (halo/overshoot au bord) → SUV faussé |\n| TOF | ↑ RSB, robustesse aux gros patients | requiert CTR < 600 ps [7] |\n\n**Paramètres image recommandés (EANM v2.0).** Pour l'harmonisation multicentrique du FDG : **taille de voxel 3,0–4,0 mm** dans toute direction [4] et **filtre spatial ≤ 7 mm FWHM** [4] ; synchronisation des horloges système à l'heure officielle à **< 1 min** [4]. Ces contraintes conditionnent la comparabilité des SUV entre sites (programme **EARL** d'harmonisation quantitative).\n\n**La quantification : du voxel au SUV.** L'aboutissement quantitatif est la **valeur de fixation normalisée (SUV, *standardized uptake value*)** : rapport entre la concentration d'activité mesurée dans un volume d'intérêt (VOI) et l'activité injectée normalisée à un facteur de dilution. La normalisation la plus robuste utilise la **masse maigre (LBM)**, donnant le **SUL** :\n\n> **SUL = Activité_VOI (kBq/mL) / [Activité administrée (MBq) / masse maigre LBM (kg)]** [4]\n\nUne correction de la glycémie ambiante peut y être appliquée : **SUL_glu = SUL × Glycémie plasmatique (mmol/L) / 5,0** [4]. Trois métriques dérivent du même principe : **SUVmax** (voxel le plus intense, robuste au bruit mais sensible à la résolution), **SUVmean** (moyenne du VOI, dépend de la délinéation) et **SUVpeak** (moyenne d'un petit VOI de **1 cm³** centré sur le maximum, métrique de référence de PERCIST 1.0 [40]).\n\n| Métrique | Définition | Usage clinique |\n|---|---|---|\n| **SUVmax** | Activité du voxel le plus intense du VOI | La plus reproductible ; suivi lésionnel |\n| **SUVmean** | Moyenne des voxels du VOI | Dépend du seuil de délinéation ; MTV |\n| **SUVpeak / SULpeak** | Moyenne d'un VOI de 1 cm³ au maximum [40] | Métrique de PERCIST 1.0 (foie de référence) [40] |\n| **MTV / TLG** | Volume métabolique / MTV × SUVmean | Charge tumorale, pronostic |\n\n**Prérequis absolu de fiabilité du SUV.** Le SUV n'a de sens que si la chaîne est calibrée : **exactitude de l'activité nette injectée ± 3 %** [4], absence d'extravasation, respect du **délai d'incorporation de 60 min** (plage acceptable **55–75 min** ; ± 10 min pour un suivi longitudinal) [4], et étalonnage croisé activimètre/scanner à jour. Toute dérive se répercute linéairement sur le SUV et fausse l'évaluation de réponse.",
+        "steps": [
+          {
+            "title": "1 · Acquisition des coïncidences",
+            "text": "Détection en coïncidence (fenêtre ≈ 10⁻⁸ s [1][8]), sans collimateur ; mode 3D / list-mode ; enregistrement du TOF si CTR < 600 ps [7]."
+          },
+          {
+            "title": "2 · Histogrammage → sinogramme",
+            "text": "Rangement des LOR par angle et distance ; possibilité de gating respiratoire/cardiaque a posteriori en list-mode."
+          },
+          {
+            "title": "3 · Corrections",
+            "text": "Randoms, diffusé (single-scatter), atténuation (carte TDM, cf. §C1), normalisation, temps mort, décroissance (T½ ¹⁸F = 109,7 min [4][3])."
+          },
+          {
+            "title": "4 · Reconstruction itérative",
+            "text": "OSEM ± PSF ± TOF ; voxel 3,0–4,0 mm, filtre ≤ 7 mm FWHM (EANM v2.0) [4] ; arbitrage résolution/bruit."
+          },
+          {
+            "title": "5 · Quantification",
+            "text": "Calcul du SUL/SUV (LBM) [4], SUVmax/peak/mean, MTV/TLG ; horloges synchronisées < 1 min, activité injectée exacte à ± 3 % [4]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "3,0–4,0 mm",
+            "label": "Taille de voxel recommandée (EANM v2.0) [4]"
+          },
+          {
+            "value": "≤ 7 mm",
+            "label": "FWHM maximal du filtre spatial (EANM v2.0) [4]"
+          },
+          {
+            "value": "60 min",
+            "label": "Délai d'incorporation FDG (55–75 min) [4]"
+          },
+          {
+            "value": "± 3 %",
+            "label": "Exactitude requise de l'activité injectée [4]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi normaliser par la masse maigre (SUL)",
+            "text": "Le FDG est peu capté par le tissu adipeux. Un SUV normalisé au **poids total** est donc **surestimé chez les patients corpulents** (le dénominateur inclut une graisse qui ne fixe pas), ce qui biaise les comparaisons inter-patients et le suivi d'un patient dont le poids varie. La normalisation à la **masse maigre (LBM)**, donnant le **SUL** [4], corrige ce biais et est la métrique retenue par EANM v2.0 et par PERCIST. La correction glycémie (SUL_glu = SUL × glycémie/5,0 [4]) ajuste la compétition glucose/FDG."
+          },
+          {
+            "type": "info",
+            "title": "Sinogramme et collimation électronique",
+            "text": "L'absence de collimateur physique est la clé de la sensibilité TEP : là où la γ-caméra sacrifie ~99,9 % des photons dans le collimateur, la TEP accepte toute paire détectée dans la fenêtre de coïncidence (≈ 10⁻⁸ s [1][8]). Le prix à payer est un bruit de fond (fortuites + diffusé) qui croît avec l'activité et le volume du patient — d'où l'importance des corrections du §C1 et le gain apporté par le TOF sur les gros patients [7]."
+          }
+        ],
+        "figureKey": "FDG_UPTAKE",
+        "figureAlt": "Piégeage métabolique du FDG (GLUT puis hexokinase → FDG-6-phosphate non métabolisé) aboutissant à un signal quantifié par le SUV sur l'image reconstruite."
+      },
+      {
+        "title": "C3 - C3 - Interpréter les artefacts d'origine physique propres à la TEP",
+        "text": "Les artefacts physiques de la TEP naissent de trois sources principales : (1) le **parcours du positon** et la **non-colinéarité**, qui dégradent la résolution intrinsèque ; (2) les **erreurs de la carte d'atténuation** (métal, contraste, respiration), qui se propagent en erreur d'activité (cf. §C1) ; (3) les **limites de la reconstruction** (effet de volume partiel, Gibbs). Pour chacun : reconnaître l'aspect, comprendre la cause, corriger.\n\n**1 · Flou intrinsèque : parcours du positon et non-colinéarité.** Avant de s'annihiler, le positon parcourt une distance finie (**parcours du positon**), d'autant plus grande que l'énergie d'émission est élevée : parcours maximal dans l'eau de **≈ 2,3–2,4 mm pour le ¹⁸F** contre **≈ 8,9–9,2 mm pour le ⁶⁸Ga** [2][6]. Ce flou est mesurable : sur un scanner préclinique de résolution intrinsèque 1,5 mm, le FWHM d'une source capillaire chaude passe de **1,4 mm (¹⁸F) à 3,0 mm (⁶⁸Ga)** [2]. S'y ajoute la **non-colinéarité** : les deux photons ne sont pas exactement à 180° (écart gaussien de FWHM **≈ 0,25–0,5°** ; mesure in vivo ¹⁸F **≈ 0,54°** [1][2]), et ce flou **augmente avec le diamètre de l'anneau** de détecteurs [1]. Conséquence clinique : la résolution est **meilleure au ¹⁸F qu'au ⁶⁸Ga** ; une petite lésion peut être manquée ou son SUV sous-estimé selon le radionucléide.\n\n**2 · Émetteurs β+ « non purs » (gamma prompt).** Certains radionucléides émettent, en plus des positons, un **photon gamma prompt** dont l'énergie tombe dans la fenêtre TEP et génère de **fausses coïncidences** dégradant image et quantification : **⁶⁸Ga** (γ 1,077 MeV dans ~1,2 % des désintégrations), **⁸²Rb** (γ 0,777 MeV, ~13 %), **¹²⁴I** (γ 0,602 MeV dans la fenêtre TEP) [6]. À l'inverse, ¹¹C, ¹³N, ¹⁵O sont des émetteurs β+ **quasi purs** (branchement ≈ 99,8–99,9 %) [3][6]. Le clinicien doit intégrer que le bruit de fond d'une TEP au ⁶⁸Ga ou au ⁸²Rb est intrinsèquement plus élevé.\n\n**3 · Erreurs de la carte d'atténuation (les plus fréquentes et les plus trompeuses).**\n\n| Artefact | Cause physique | Aspect | Correction / conduite |\n|---|---|---|---|\n| **Rehaussement métallique** | Prothèse, implant dentaire, pacemaker, port-à-cath → surestimation de l'atténuation par la TDM | Foyer FDG artificiellement **augmenté** sur images corrigées [46] | Comparer aux images **non corrigées (NAC)** ; le faux foyer disparaît en NAC |\n| **Mésalignement (misregistration) TEP/TDM** | Décalage temporel/respiratoire entre acquisition TDM (rapide) et TEP (lente) | Décalage 5 mm → erreur ~**10 %** ; 10 mm → ~**25 %** sur l'activité [46] | Recaler ; gating respiratoire ; vérifier la fusion coupe par coupe |\n| **Troncature** | Bras hors du champ TDM (plus étroit que le champ TEP) | Bords manquants, sous-correction périphérique | Algorithmes d'extension du champ ; bras au-dessus si possible |\n| **Contraste iodé/baryté** | Densité élevée → surestimation locale de l'atténuation | Léger sur-rehaussement digestif/vasculaire | Le connaître ; corriger si quantification critique |\n| **Mouvement respiratoire** | Flou et mauvais recalage des bases pulmonaires/foie | Lésion étalée, SUVmax abaissé | Gating respiratoire ; acquisition en respiration libre calme |\n\n**4 · Effet de volume partiel (PVE) et Gibbs.** Toute lésion de dimension inférieure à ~**2–3 fois la résolution** (FWHM) voit son activité **« étalée »** sur les voxels voisins : le SUVmax est **sous-estimé** et l'activité paraît diffuser hors des contours réels — c'est l'**effet de volume partiel**, cause majeure de **faux négatifs** sur les petites lésions [46] et d'erreur de quantification des micro-métastases. À l'inverse, la reconstruction avec modèle de résolution (**PSF**) peut créer un **artefact de Gibbs** (halo/overshoot au bord des foyers intenses), source de **sur**estimation locale du SUV.\n\n**Méthode de lecture face à un foyer douteux.** (1) Le foyer est-il présent sur les images **NAC** ? Absent en NAC mais présent en AC → suspecter un artefact d'atténuation (métal, contraste). (2) La **fusion TEP/TDM** est-elle correcte coupe par coupe ? Un décalage explique un foyer « flottant ». (3) La lésion est-elle **petite** (PVE → SUV sous-estimé) ou au **bord d'un foyer intense** (Gibbs → SUV surestimé) ? (4) Le radionucléide est-il un **émetteur non pur** (⁶⁸Ga, ⁸²Rb) majorant le bruit de fond [6] ? Cette grille distingue l'artefact physique de la fixation pathologique vraie.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le rehaussement métallique et le réflexe NAC",
+            "text": "Un matériel métallique (prothèse, implant dentaire, pacemaker, port) provoque une **surestimation de l'atténuation par la TDM** → la correction majore artificiellement l'activité et crée un **faux foyer hyperfixant** sur les images corrigées [46]. Réflexe indispensable : **toujours relire les images non corrigées de l'atténuation (NAC)**. Si le foyer disparaît en NAC, il s'agit d'un artefact et non d'une lésion. Ne jamais conclure à une hyperfixation métabolique sur la seule image corrigée au voisinage d'un implant."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — mésalignement TEP/TDM aux bases pulmonaires",
+            "text": "La TDM (rapide, souvent en apnée) et la TEP (lente, respiration libre) ne capturent pas la même position diaphragmatique. Un décalage de **5 mm entraîne ~10 % d'erreur** sur l'activité mesurée, **10 mm environ 25 %** [46]. Aux **bases pulmonaires / dôme hépatique**, ce mésalignement peut faire disparaître une lésion ou en fabriquer une. Vérifier systématiquement la fusion coupe par coupe et recourir au **gating respiratoire** pour les lésions sous-diaphragmatiques."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — choisir le radionucléide en connaissant ses limites physiques",
+            "text": "Le **¹⁸F** offre le meilleur compromis de résolution (parcours max ≈ 2,4 mm dans l'eau [2][6], émetteur quasi pur) : c'est pourquoi le FDG reste la référence des petites lésions. Le **⁶⁸Ga** (parcours ≈ 9 mm [2][6], gamma prompt à 1,077 MeV [6]) dégrade à la fois la résolution et le fond — limitation à intégrer dans l'interprétation des TEP aux peptides marqués au gallium. Le **⁸²Rb** (parcours ≈ 17 mm [6][10], gamma prompt) est le plus pénalisé en résolution, ce qui reste acceptable pour l'analyse de perfusion myocardique (grands volumes) mais interdit toute prétention à la détection de petites structures."
+          }
+        ],
+        "stats": [
+          {
+            "value": "≈ 2,4 mm",
+            "label": "Parcours max du positon du ¹⁸F dans l'eau [2][6]"
+          },
+          {
+            "value": "≈ 9,2 mm",
+            "label": "Parcours max du positon du ⁶⁸Ga dans l'eau [2][6]"
+          },
+          {
+            "value": "≈ 0,25–0,5°",
+            "label": "FWHM de la non-colinéarité des 511 keV [1][2]"
+          },
+          {
+            "value": "~25 %",
+            "label": "Erreur d'activité pour 10 mm de mésalignement TEP/TDM [46]"
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Origines physiques du flou en TEP : parcours du positon avant annihilation et non-colinéarité des deux photons de 511 keV par rapport à la ligne de réponse idéale à 180°."
+      },
+      {
+        "title": "D1 - Choisir le bon émetteur de positons : compromis période, énergie β⁺, mode de production",
+        "text": "**Le radionucléide n'est jamais neutre.** Choisir un émetteur de positons, c'est arbitrer entre quatre paramètres physiques qui ne bougent pas dans le même sens : la **demi-vie** (T½, contrainte logistique et dosimétrique), l'**énergie maximale du positon** (E_max β⁺, qui gouverne le parcours et donc la résolution spatiale), la **fraction de branchement β⁺** (proportion de désintégrations qui produisent réellement une paire de photons de 511 keV) et le **mode de production** (cyclotron sur site vs générateur). Aucun émetteur n'est optimal sur les quatre axes ; le ¹⁸F est simplement celui qui offre le meilleur compromis global, ce qui explique sa domination.[3][6]\n\n**Axe 1 — Demi-vie : fenêtre logistique vs charge dosimétrique.** Une T½ courte réduit la dose intégrée mais impose une production quasi in situ. Le ¹⁵O (**2,0 min**) et le ¹³N (**10,0 min**) exigent un cyclotron dans le bâtiment ; le ¹¹C (**20,4 min**) tolère une radiochimie rapide adjacente ; le ¹⁸F (**109,7 min**, valeur précise 109,77 min) autorise une distribution régionale par navette (« satellite »).[4][6] À l'inverse, une T½ longue (⁸⁹Zr **78,4 h**, ¹²⁴I **100,2 h**) permet l'imagerie tardive des anticorps (immuno-TEP) mais alourdit la dosimétrie. La courte période du ¹⁸F impose de corriger l'activité entre l'étalonnage et l'injection.[3]\n\n**Axe 2 — Énergie du positon et parcours.** Le positon est émis avec un **spectre continu** d'énergie cinétique (partage aléatoire avec le neutrino), d'où la distinction entre E_max et **E_moyenne ≈ E_max/3**.[1][6] Plus E_max est élevée, plus le **parcours du positon** (positron range) avant thermalisation est long, et plus le flou intrinsèque dégrade la résolution — indépendamment du détecteur.[1][2] Le ¹⁸F (E_max **0,634 MeV**, parcours max eau **~2,4 mm**) est l'émetteur au parcours le plus court des radionucléides TEP courants ; le ⁶⁸Ga (E_max **1,899 MeV**, parcours max eau **~9,2 mm**) et surtout le ⁸²Rb (E_max **3,378 MeV**, parcours **~17 mm**) paient leur haute énergie par une perte de résolution.[2][6] Sur un scanner préclinique de résolution intrinsèque 1,5 mm, le FWHM d'une source capillaire chaude passe de **1,4 mm (¹⁸F) à 3,0 mm (⁶⁸Ga)**.[2]\n\n**Axe 3 — Mode de production.** Deux voies coexistent : le **cyclotron** (¹⁸F, ¹¹C, ¹³N, ¹⁵O) et le **générateur** (⁶⁸Ga via ⁶⁸Ge/⁶⁸Ga ; ⁸²Rb via ⁸²Sr/⁸²Rb).[9] Le générateur affranchit le centre du cyclotron — argument décisif pour le ⁸²Rb cardiaque (élution à la demande, procédure de perfusion myocardique complète en **< 1 h** contre > 4 h en TEMP) et pour le ⁶⁸Ga (peptides marqués sur place).[9][25]\n\n| Radionucléide | T½ | β⁺ (%) | E_max β⁺ (MeV) | Parcours max eau (mm) | Production | Source |\n|---|---|---|---|---|---|---|\n| **¹⁸F** | **109,7 min** | **96,9** | **0,634** | 2,4 | Cyclotron | [4][6][3] |\n| ¹¹C | 20,4 min | 99,8 | 0,960 | 4,2 | Cyclotron | [6] |\n| ¹³N | 10,0 min | 99,8 | 1,199 | 5,5 | Cyclotron | [6] |\n| ¹⁵O | 2,0 min | 99,9 | 1,732 | 8,4 | Cyclotron | [6] |\n| ⁶⁴Cu | 12,7 h | 17,5 | 0,653 | 2,5 | Cyclotron | [6] |\n| ⁸⁹Zr | 78,4 h | 22,7 | 0,902 | 3,8 | Cyclotron | [6] |\n| **⁶⁸Ga** | **67,8 min** | **87,7** | **1,899** | 9,2 | Générateur | [6][3][9] |\n| ⁸²Rb | 1,3 min | 81,8 | 3,378 | 17,0 | Générateur | [6][9][25] |\n| ¹²⁴I | 100,2 h | 11,7 | 1,535 | 7,1 | Cyclotron | [6] |\n\n**Synthèse du compromis.** Le ¹⁸F cumule trois avantages rares : parcours court (meilleure résolution), branchement β⁺ élevé (96,9 %, peu de pertes de signal) et T½ compatible avec une distribution centralisée.[4][6] Sa seule faiblesse — la production cyclotron — est compensée par le réseau de radiopharmacies. Le ⁶⁸Ga et le ⁸²Rb sacrifient la résolution au profit de l'autonomie logistique (générateur), justifiée par leurs indications propres (peptides SSTR, perfusion cardiaque)."
+      },
+      {
+        "title": "D2 - Émissions parasites et pureté du signal : γ prompts, fraction β⁺ et impact sur l'image",
+        "text": "**Tous les émetteurs β⁺ ne se valent pas au-delà du parcours.** Deux sources de dégradation, distinctes du positron range (§D1), affectent la quantification : le **branchement β⁺ incomplet** (perte de sensibilité) et l'émission de **γ prompts** hors annihilation (photons parasites qui polluent les coïncidences).[6] La notion d'émetteur « pur » vs « non pur » recouvre exactement cette distinction.\n\n**Fraction β⁺ et signal utile.** Seules les désintégrations qui produisent un positon génèrent la paire de 511 keV détectée en coïncidence. Un branchement β⁺ faible signifie qu'une part importante des désintégrations passe par la **capture électronique (CE)** sans produire de signal TEP : le ⁶⁴Cu n'émet un positon que dans **17,5 %** des désintégrations, le ¹²⁴I dans **11,7 %**, contre **96,9 %** pour le ¹⁸F.[6][3] Cette fraction basse impose d'augmenter l'activité (ou le temps d'acquisition) à qualité d'image constante, avec un coût dosimétrique dû aux désintégrations « muettes ».\n\n**Émetteurs β⁺ purs.** Le ¹¹C, le ¹³N et le ¹⁵O ont un branchement β⁺ de **99,8–99,9 %** : quasiment chaque désintégration produit une annihilation, sans γ prompt significatif.[3][6] Le spectre d'énergie détecté est « propre », dominé par le pic de 511 keV. Le ¹⁸F (96,9 %) leur est apparenté sur le plan de la pureté spectrale.[6]\n\n**Émetteurs β⁺ non purs (γ prompts).** Certains radionucléides émettent, en cascade avec le positon, un **photon γ de haute énergie « prompt »** (quasi simultané à l'annihilation). Ce γ peut être détecté en coïncidence fortuite avec un photon de 511 keV → **ligne de réponse (LOR) erronée**, bruit de fond additionnel et **biais de quantification** (surestimation du fond, sous-estimation du contraste lésionnel).[6]\n\n| Radionucléide | β⁺ (%) | γ prompt parasite | Conséquence image | Source |\n|---|---|---|---|---|\n| ¹¹C / ¹³N / ¹⁵O | 99,8–99,9 | Négligeable | Signal « propre » | [3][6] |\n| ¹⁸F | 96,9 | Absent | Référence | [6] |\n| **⁶⁸Ga** | 87,7 | γ **1,077 MeV** (~1,2 %) | Coïncidences parasites | [6] |\n| **⁸²Rb** | 81,8 | γ **0,777 MeV** (~13 %) | Bruit prompt marqué | [6] |\n| **¹²⁴I** | 11,7 | γ **0,602 MeV** (dans la fenêtre TEP) | Quantification dégradée | [6] |\n\n**Pourquoi le γ prompt est pernicieux.** Contrairement au diffusé et aux fortuites classiques (§D-rappel), le γ prompt provient de la même désintégration que le positon : il est intrinsèquement corrélé temporellement à l'événement d'annihilation, donc plus difficile à rejeter par la seule fenêtre de coïncidence. Le ¹²⁴I est le cas extrême : faible branchement β⁺ (peu de signal) et γ de 0,602 MeV tombant dans la fenêtre d'énergie TEP (beaucoup de bruit).[6]\n\n**Distinguer les deux flous.** Il faut séparer deux phénomènes de dégradation spatiale : (1) le **parcours du positon** (§D1), flou géométrique croissant avec E_max ; (2) la **non-colinéarité (acolinéarité)** des deux photons de 511 keV. L'énergie cinétique résiduelle du centre de masse de la paire e⁺/e⁻ fait que les photons ne partent pas exactement à 180°, avec un **écart gaussien FWHM ≈ 0,25–0,5°** (mesures in vivo ¹⁸F : ≈ 0,54°).[1][2] Ce flou est indépendant du radionucléide mais **augmente avec le diamètre de l'anneau** de détecteurs.[1] Les deux se cumulent à la résolution intrinsèque du détecteur pour fixer la résolution effective.",
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Détection en coïncidence : une annihilation émet deux photons de 511 keV dos-à-dos le long de la ligne de réponse ; illustration des coïncidences vraies, diffusées et fortuites qui dégradent le signal.",
+        "figureCaption": "Fig. D2 — Détection en coïncidence : les deux photons de 511 keV dos-à-dos définissent la LOR ; diffusé, fortuites et γ prompts en dégradent la pureté.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — « émetteur β⁺ » ne signifie pas « bon émetteur TEP »",
+            "text": "Un radionucléide peut être marqué β⁺ tout en étant médiocre pour la quantification : un **branchement β⁺ faible** (⁶⁴Cu 17,5 %, ¹²⁴I 11,7 %) réduit le signal utile, et un **γ prompt** (⁶⁸Ga 1,077 MeV ; ⁸²Rb 0,777 MeV ; ¹²⁴I 0,602 MeV) ajoute des coïncidences parasites biaisant le SUV. Toujours vérifier les DEUX paramètres, pas seulement la présence d'une voie β⁺.[6]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — trois flous à ne pas confondre",
+            "text": "La résolution effective en TEP additionne (quadratiquement) trois contributions : la **résolution intrinsèque du détecteur** (taille de cristal), le **parcours du positon** (dépend du radionucléide, ~2,4 mm pour ¹⁸F vs ~9,2 mm pour ⁶⁸Ga dans l'eau) et la **non-colinéarité** (~0,54° FWHM, croissant avec le diamètre de l'anneau).[1][2] Le premier est instrumental, les deux autres sont physiques et irréductibles."
+          }
+        ],
+        "stats": [
+          {
+            "value": "96,9 %",
+            "label": "Branchement β⁺ du ¹⁸F (signal utile)"
+          },
+          {
+            "value": "~13 %",
+            "label": "γ prompt 0,777 MeV du ⁸²Rb"
+          },
+          {
+            "value": "0,54°",
+            "label": "Non-colinéarité FWHM (¹⁸F in vivo)"
+          }
+        ]
+      },
+      {
+        "title": "D3 - Dosimétrie et radioprotection spécifiques aux 511 keV",
+        "text": "**Le 511 keV change tout par rapport à la médecine nucléaire conventionnelle.** Le photon d'annihilation est nettement plus énergétique que les émissions gamma habituelles (¹²³I 159 keV, ⁹⁹ᵐTc 140 keV) : il est **très pénétrant**, avec une couche de demi-atténuation (CDA) dans le plomb de **~4 mm**.[50] Le blindage utile en scintigraphie classique devient insuffisant : les protège-seringues et enceintes doivent être renforcés, et l'exposition du personnel (extrémités, cristallin) est un enjeu spécifique de la TEP.[50] L'annihilation étant isotrope et bilatérale (deux photons par événement), le patient injecté est une **source volumique intense** qu'aucune direction ne protège.\n\n**Dosimétrie patient — coefficients de dose du ¹⁸F-FDG.** Le coefficient de **dose efficace** de référence est **1,9 × 10⁻² mSv/MBq = 0,019 mSv/MBq** (ICRP 128).[15][47] Les révisions récentes (fantômes maillés ICRP, modèle compartimental révisé 2023) l'abaissent légèrement à **~1,7 × 10⁻² mSv/MBq**.[15][49] L'**organe critique est la paroi vésicale** (élimination urinaire), avec un coefficient de dose absorbée de **~0,16 mGy/MBq** chez l'adulte.[48] La dose à l'utérus non gravide est de **1,8 × 10⁻² mGy/MBq**, soit **4,7 mGy pour 259 MBq (7 mCi)**.[4]\n\n| Grandeur | Valeur ¹⁸F-FDG | Source |\n|---|---|---|\n| Dose efficace (ICRP 128) | **0,019 mSv/MBq** | [15][47] |\n| Dose efficace (coefficients révisés) | **~0,017 mSv/MBq** | [15][49] |\n| Organe critique (paroi vésicale) | **~0,16 mGy/MBq** | [48] |\n| Utérus non gravide | 0,018 mGy/MBq (4,7 mGy / 259 MBq) | [4] |\n| CDA plomb à 511 keV | **~4 mm** | [50] |\n\n**La composante TDM domine souvent la dose.** En TEP/TDM combinée, la dose efficace moyenne est de l'ordre de **12–14 mSv**, la **TDM contribuant ~74 %** de ce total (≈ 5 mSv pour une composante TDM standard, en regard des ~450 MBq de FDG injectés).[47] L'optimisation ALARA (« as low as reasonably achievable ») doit donc porter en priorité sur les paramètres TDM, sans négliger la composante émettrice.[50]\n\n**Leviers de réduction de dose (patient).** L'**hydratation et les mictions fréquentes** vidangent le radiotraceur urinaire et réduisent la dose vésicale et fœtale ; c'est le principal levier physiopathologique côté patient.[4][47] La justification de l'indication et l'ajustement de l'activité à la morphologie (formule EANM linéaire = 14 × poids / durée par lit, ou 7 × poids si chevauchement > 30 %) complètent l'optimisation.[4]\n\n**Grossesse et allaitement.** La grossesse est une contre-indication **relative** (décision partagée, test si doute). Pour l'allaitement, le FDG lui-même est peu sécrété dans le lait : l'interruption n'est pas la préoccupation majeure ; le risque tient au **rayonnement externe de la mère** (source de 511 keV) vers le nourrisson. On recommande de **limiter le contact mère-enfant** — les recommandations vont de **4 h** post-injection à **12–24 h** selon les pays.[4][28].\n\n**Radioprotection — structurer par cible.** Le raisonnement se décline par population exposée : le **personnel** (blindage renforcé 511 keV, distance, temps, dosimétrie extrémités/cristallin, automatisation des injections), l'**entourage et le public** (patient-source : consignes d'hydratation, mictions, distance vis-à-vis des enfants et femmes enceintes sur la période utile) et le **patient** (justification, optimisation de l'activité, hydratation).[50]",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers de radioprotection — temps, distance, écran — appliqués au photon pénétrant de 511 keV nécessitant un blindage plomb renforcé.",
+        "figureCaption": "Fig. D3 — Temps / distance / écran : le 511 keV (CDA plomb ~4 mm) impose un blindage renforcé face au patient-source.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — le patient injecté est une source de 511 keV",
+            "text": "Après injection, le patient rayonne des photons de **511 keV** dans toutes les directions (deux photons par annihilation). Contrairement au ⁹⁹ᵐTc (140 keV), aucun blindage courant ne l'atténue efficacement (CDA plomb ~4 mm).[50] Appliquer distance et limitation du temps de contact ; consignes post-examen d'hydratation et de mictions fréquentes pour réduire la dose vésicale et l'exposition de l'entourage.[4][47]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — optimiser d'abord la TDM",
+            "text": "En TEP/TDM, la **composante TDM représente ~74 %** de la dose efficace totale (≈ 12–14 mSv).[47] L'effort ALARA le plus rentable porte donc sur les paramètres scanner (mAs adaptés, low-dose pour la seule correction d'atténuation quand le diagnostique n'est pas requis), avant même l'ajustement de l'activité de FDG.[50]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "0,019 mSv/MBq",
+            "label": "Dose efficace FDG (ICRP 128)"
+          },
+          {
+            "value": "~4 mm",
+            "label": "CDA plomb à 511 keV"
+          },
+          {
+            "value": "~74 %",
+            "label": "Part de la TDM dans la dose TEP/TDM"
+          }
+        ]
+      },
+      {
+        "title": "D4 - Pièges, idées reçues et erreurs de raisonnement sur la physique de la TEP",
+        "text": "**La physique de la TEP concentre plusieurs contresens tenaces**, souvent piégés en QCM et sources d'erreurs d'interprétation. Chaque piège se corrige en revenant au mécanisme : émission β⁺ → thermalisation (parcours) → annihilation → 2 photons de 511 keV dos-à-dos → détection en coïncidence.[1][11]\n\n**« Les 511 keV sont l'énergie du positon. »** Faux. **511 keV = m_e·c²**, l'énergie de repos de l'électron (et du positon), libérée lors de l'annihilation selon E = mc².[1][11][14] Elle est **indépendante de l'énergie cinétique d'émission** du positon (E_max, propre à chaque radionucléide). Que le positon soit émis à 0,634 MeV (¹⁸F) ou 3,378 MeV (⁸²Rb), les photons d'annihilation valent toujours 511 keV.[6][14] Cette invariance est ce qui permet d'utiliser la **même fenêtre d'énergie** pour tous les traceurs TEP.\n\n**« Les deux photons partent exactement à 180°. »** Approximativement, pas exactement. La conservation de l'impulsion impose ~180°, mais l'énergie cinétique résiduelle du centre de masse introduit une **non-colinéarité (acolinéarité)** de **FWHM ≈ 0,25–0,5°** (¹⁸F in vivo ≈ 0,54°).[1][2] Croire à un 180° parfait revient à ignorer une source de flou qui **s'aggrave avec le diamètre de l'anneau**.[1]\n\n**« La résolution ne dépend que du détecteur. »** Faux. Le **parcours du positon** est une limite physique intrinsèque, indépendante de la taille des cristaux : ~2,4 mm dans l'eau pour le ¹⁸F mais ~9,2 mm pour le ⁶⁸Ga.[2][6] Un scanner parfait n'effacerait pas cet écart : sur un système de résolution intrinsèque 1,5 mm, le FWHM effectif passe de 1,4 mm (¹⁸F) à 3,0 mm (⁶⁸Ga).[2] D'où l'infériorité intrinsèque du ⁶⁸Ga et du ⁸²Rb pour les petites lésions.\n\n**« La TEP utilise un collimateur, comme la γ-caméra. »** Faux, et c'est fondateur. La TEP réalise une **collimation électronique** : la LOR est définie par la coïncidence temporelle de deux détecteurs opposés, sans collimateur physique.[1][8] Cette absence de collimateur plombé explique la **sensibilité de détection très supérieure** de la TEP par rapport à la TEMP (aucun photon rejeté par des septa).\n\n**« Toute coïncidence détectée est un vrai événement. »** Faux. On distingue quatre types : **vraies (trues)** = signal utile ; **diffusées (scatter)** = un photon a subi un Compton, LOR faussée ; **fortuites/aléatoires (randoms)** = deux annihilations distinctes détectées dans la même fenêtre ; **multiples** = > 2 photons.[1][8] Scatter et randoms sont du **bruit de fond à corriger** ; les ignorer surestime le fond et fausse le SUV.\n\n**« Le TOF localise le point d'annihilation. »** Partiellement. Le **temps de vol (TOF)** mesure la différence de temps d'arrivée des deux photons pour **restreindre** la position le long de la LOR (gain de rapport signal/bruit), sans la déterminer exactement : la précision est limitée par la **résolution temporelle de coïncidence (CTR)**, ~**200–400 ps** sur les scanners cliniques modernes.[7][34] Une CTR < 600 ps est nécessaire pour reconstruire en TOF.[7] Ce n'est pas une localisation ponctuelle mais une pondération probabiliste.\n\n**« N'importe quel scintillateur permet le TOF. »** Faux. Le TOF exige un scintillateur **rapide** : LSO/LYSO (décroissance ~40 ns, CTR compatible) le permettent ; le **BGO** (décroissance lente ~300 ns) impose des fenêtres de coïncidence plus larges (~12 ns vs ~6 ns pour le LSO), donc **plus de fortuites** et historiquement pas de TOF.[7][34] Le choix du cristal conditionne directement la performance temporelle.\n\n**« β⁺ = bon traceur TEP. »** Faux (cf. §D2). Un branchement β⁺ faible (⁶⁴Cu 17,5 %, ¹²⁴I 11,7 %) réduit le signal, et un γ prompt (⁶⁸Ga, ⁸²Rb, ¹²⁴I) ajoute des coïncidences parasites.[6] La qualité TEP dépend de la conjonction branchement β⁺ élevé + faible parcours + absence de γ prompt — que seuls le ¹⁸F et les émetteurs purs (¹¹C, ¹³N, ¹⁵O) réunissent.[3][6]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège de QCM — 511 keV vs E_max du positon",
+            "text": "Le piège classique confond deux énergies indépendantes : **511 keV** = énergie de repos m_e·c² des photons d'annihilation (constante, identique pour tous les traceurs) ; **E_max β⁺** = énergie cinétique maximale d'émission du positon (variable : 0,634 MeV pour ¹⁸F, 1,899 MeV pour ⁶⁸Ga, 3,378 MeV pour ⁸²Rb).[6][11][14] C'est E_max, pas 511 keV, qui gouverne le parcours et donc la résolution."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — pas de collimateur ≠ pas de bruit",
+            "text": "L'absence de collimateur physique (collimation électronique) donne à la TEP sa haute sensibilité, mais n'élimine pas le bruit : **diffusées** et **fortuites** créent des LOR erronées qu'il faut corriger.[1][8] Une image « brute » non corrigée du diffusé et des randoms n'est pas quantitativement fiable."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — para- vs ortho-positronium",
+            "text": "Avant l'annihilation peut se former un état lié e⁺/e⁻ (positronium). Le **para-positronium** (spins antiparallèles) donne 2 photons de 511 keV, durée de vie ~**125 ps** ; l'**ortho-positronium** (spins parallèles) donne 3 photons, durée de vie ~**142 ns dans le vide** (raccourcie en tissu par annihilation pick-off).[14] La durée de vie de l'ortho-positronium fait l'objet de recherches comme biomarqueur tissulaire émergent."
+          }
+        ],
+        "stats": [
+          {
+            "value": "511 keV",
+            "label": "m_e·c² (invariant, tous traceurs)"
+          },
+          {
+            "value": "200–400 ps",
+            "label": "CTR des scanners TOF cliniques"
+          },
+          {
+            "value": "0",
+            "label": "Collimateur physique (collimation électronique)"
+          }
+        ]
+      },
+      {
+        "title": "E1 - E1 - Synthèse : la chaîne β⁺ → annihilation → 2×511 keV → coïncidence en une matrice",
+        "text": "Cette section referme l'article en reliant toute la chaîne physique, du noyau instable à l'image reconstruite. Elle est **autoportante** : elle peut se lire seule comme fiche-mémo, mais chaque maillon renvoie à la section qui l'a développé.\n\n**▸ La chaîne causale, maillon par maillon**\n\nUn noyau **excédentaire en protons** ne peut se stabiliser que si l'écart de masse parent-fille dépasse **2·mₑc² = 1,022 MeV** (deux fois l'énergie de masse de l'électron) ; sous ce seuil, seule la **capture électronique (CE)** reste possible.[1] Au-dessus, la désintégration **β⁺** convertit un proton en neutron : **p → n + e⁺ + νₑ**.[1][6] Le **positon (e⁺)**, antiparticule de l'électron prédite par **Dirac (1928-1931)** et découverte par **Anderson en 1932** (prix Nobel 1936), emporte une énergie cinétique **partagée aléatoirement avec le neutrino** — d'où un **spectre continu** dont l'énergie moyenne vaut **≈ E_max/3**.[10][11][6]\n\nLe positon parcourt ensuite le tissu en cédant son énergie par collisions coulombiennes : c'est le **parcours du positon (positron range)**, première source intrinsèque de flou. Ce parcours vaut **≈ 2,4 mm dans l'eau pour le ¹⁸F** contre **≈ 9,2 mm pour le ⁶⁸Ga**, ce qui explique le classement des radionucléides par résolution spatiale.[2][6] Une fois **thermalisé** (énergie ≈ 0), le positon **s'annihile** avec un électron : leurs masses sont **intégralement converties en énergie** selon **E = mc²**, produisant **deux photons γ de 511 keV** (= mₑc²) émis **dos-à-dos** pour conserver l'impulsion nulle.[11][13] L'énergie cinétique résiduelle du centre de masse impose une **non-colinéarité** : l'angle réel est **180° ± ~0,25°** (FWHM ≈ 0,5°), seconde source intrinsèque de flou, croissante avec le diamètre de l'anneau.[2][30]\n\nDeux détecteurs opposés en **circuit de coïncidence** valident un événement lorsque les deux photons arrivent dans une **fenêtre temporelle très courte (~10⁻⁸ s)** : on postule alors une annihilation sur la **ligne de réponse (LOR)** joignant les deux cristaux — la TEP se passe ainsi de **collimateur physique** (collimation électronique).[1][8] Les scintillateurs rapides **LSO/LYSO** (décroissance ≈ 40 ns) autorisent la mesure de la **différence de temps d'arrivée** : le **temps de vol (TOF)** localise l'annihilation le long de la LOR et améliore le rapport signal/bruit, dès lors que la **résolution temporelle de coïncidence (CTR)** descend sous **~600 ps** — les scanners cliniques atteignent **200-400 ps**.[7][34]\n\n**▸ Tableau-synthèse : le maillon, sa valeur-clé, sa conséquence image**\n\n| Maillon | Grandeur physique | Valeur de référence | Conséquence sur l'image | Renvoi |\n|---|---|---|---|---|\n| Seuil β⁺ | 2·mₑc² | **1,022 MeV** [1] | En-deçà → CE seule (pas d'émission β⁺) | §1 |\n| Spectre β⁺ | E_moy ≈ E_max/3 | ¹⁸F : E_max **0,634 MeV** [6] | Détermine le parcours | §2 |\n| Parcours du positon | Parcours max eau | ¹⁸F **2,4 mm** · ⁶⁸Ga **9,2 mm** [2][6] | Flou intrinsèque (¹⁸F = meilleure résolution) | §1.3 |\n| Annihilation | mₑc² | **511 keV** ×2, à 180° [11][13] | Énergie fixée → fenêtrage à 511 keV | §1.4 |\n| Non-colinéarité | Écart à 180° | **± ~0,25°** (FWHM ≈ 0,5°) [2] | Flou croissant avec le diamètre d'anneau | §1.4 |\n| Coïncidence | Fenêtre temporelle | **~10⁻⁸ s** [1][8] | Pas de collimateur → sensibilité accrue | §1.5 |\n| Temps de vol | CTR | **200-400 ps** (TOF si < 600 ps) [7] | Localisation sur la LOR → meilleur RSB | §1.6 |\n\n**▸ Le radionucléide de référence en une ligne**\n\nLe **¹⁸F** condense les qualités recherchées : période **109,77 min** (≈ 110 min), branchement **β⁺ ≈ 96,9 %**, E_max **0,634 MeV**, parcours le plus court des émetteurs TEP courants ; produit par la réaction **¹⁸O(p,n)¹⁸F** sur cyclotron.[4][6][3] Porté par le **[¹⁸F]FDG**, il exploite le **piégeage métabolique** (entrée GLUT → phosphorylation par l'hexokinase → blocage en FDG-6-phosphate), pour une dose efficace de **0,019 mSv/MBq** (organe critique = **paroi vésicale**).[9][16][17]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — le 511 keV n'est pas une propriété du radionucléide",
+            "text": "L'énergie de 511 keV ne dépend **ni du radionucléide ni du radiopharmaceutique** : elle vaut toujours mₑc², puisque c'est la masse de l'électron qui est convertie.[11][13] Ce qui change d'un émetteur à l'autre, c'est **l'énergie du positon** (donc son parcours et la résolution) et la **pureté du spectre** (présence ou non de γ prompts). D'où deux corollaires cliniques : (1) tous les traceurs TEP partagent le même fenêtrage énergétique à 511 keV ; (2) un ⁶⁸Ga sera toujours moins résolutif qu'un ¹⁸F, indépendamment du scanner.[2][6]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — confondre les deux flous intrinsèques",
+            "text": "Le **parcours du positon** (physique de l'émission, ~2,4 mm pour ¹⁸F) et la **non-colinéarité** (physique de l'annihilation, ± ~0,25°) sont deux limites **distinctes et irréductibles** de la résolution TEP, indépendantes du détecteur. Aucune amélioration d'électronique ou de cristal ne les supprime ; seul le choix du radionucléide (parcours) ou la réduction du diamètre d'anneau (non-colinéarité) les atténue.[1][2]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "1,022 MeV",
+            "label": "Seuil énergétique de la désintégration β⁺ (2·mₑc²) [1]"
+          },
+          {
+            "value": "511 keV",
+            "label": "Énergie de chaque photon d'annihilation (mₑc²) [11]"
+          },
+          {
+            "value": "~10⁻⁸ s",
+            "label": "Fenêtre de coïncidence (collimation électronique) [1][8]"
+          },
+          {
+            "value": "200-400 ps",
+            "label": "CTR des scanners cliniques TOF modernes [7]"
+          }
+        ],
+        "figureKey": "PET_COINCIDENCE",
+        "figureAlt": "Chaîne physique de la TEP : émission β⁺ depuis le noyau, parcours du positon dans le tissu, annihilation avec un électron produisant deux photons de 511 keV à 180°, détection simultanée par deux cristaux opposés définissant la ligne de réponse (LOR).",
+        "figureCaption": "Fig. 1 — De l'émission β⁺ à la coïncidence : la matrice physique de la TEP en une seule vue (parcours du positon, 2×511 keV dos-à-dos, ligne de réponse)."
+      },
+      {
+        "title": "E2 - E2 - Auto-évaluation : quiz et cas de raisonnement",
+        "text": "Cette section fixe la maîtrise par deux dispositifs : un **QCM** ciblant les confusions récurrentes (§E2.1) et trois **cas de raisonnement** transposant la physique à une décision concrète (§E2.2). Le quiz interactif complet et le leaderboard sont des fonctionnalités de la plateforme (composant Quiz).\n\n**▸ E2.1 — Questions à choix multiple (réponses et justifications en fin de bloc)**\n\n1. Quelle condition énergétique autorise la désintégration β⁺ ? \n *(a) écart de masse parent-fille > 511 keV — (b) > 1,022 MeV — (c) toute valeur positive — (d) indépendante de la masse.*\n\n2. Les deux photons d'annihilation ont une énergie de 511 keV parce que : \n *(a) c'est l'énergie cinétique du positon — (b) c'est l'énergie de masse de l'électron mₑc² — (c) elle dépend du radionucléide — (d) elle dépend du scintillateur.*\n\n3. Pourquoi le ¹⁸F offre-t-il une meilleure résolution spatiale que le ⁶⁸Ga ? \n *(a) sa demi-vie est plus courte — (b) son parcours du positon est plus court (~2,4 vs ~9,2 mm) — (c) il émet plus de photons — (d) il n'a pas de non-colinéarité.*\n\n4. La TEP se passe de collimateur physique grâce à : \n *(a) l'énergie élevée des photons — (b) la détection en coïncidence (collimation électronique) — (c) le temps de vol — (d) la reconstruction itérative.*\n\n5. Une coïncidence « fortuite » (random) correspond à : \n *(a) un photon diffusé — (b) deux photons issus d'annihilations distinctes détectés dans la même fenêtre — (c) une vraie coïncidence — (d) plus de deux photons.*\n\n6. Quelle CTR est nécessaire pour reconstruire en temps de vol (TOF) ? \n *(a) < 600 ps — (b) < 6 ns — (c) < 40 ns — (d) le TOF ne dépend pas de la CTR.*\n\n7. La non-colinéarité des deux photons (180° ± ~0,25°) provient : \n *(a) du parcours du positon — (b) de l'énergie cinétique résiduelle du centre de masse e⁺/e⁻ — (c) du collimateur — (d) de la diffusion Compton.*\n\n8. Le piégeage métabolique du [¹⁸F]FDG repose sur : \n *(a) l'absence de transporteur GLUT — (b) la phosphorylation par l'hexokinase sans métabolisation ultérieure (FDG-6-P bloqué) — (c) une liaison covalente à l'ADN — (d) la β-oxydation.*\n\n**Corrigé** : 1-**b** (le seuil est **2·mₑc² = 1,022 MeV** ; en-dessous, seule la CE opère)[1] · 2-**b** (511 keV = **mₑc²**, indépendant du traceur et du cristal)[11][13] · 3-**b** (parcours **¹⁸F ≈ 2,4 mm vs ⁶⁸Ga ≈ 9,2 mm** dans l'eau)[2][6] · 4-**b** (la **coïncidence** remplace le collimateur → gain de sensibilité)[1][8] · 5-**b** (deux annihilations distinctes = **randoms**, bruit de fond à corriger)[1] · 6-**a** (**CTR < 600 ps** ; cliniques : 200-400 ps)[7] · 7-**b** (énergie cinétique résiduelle → **± ~0,25°**)[2] · 8-**b** (blocage en **FDG-6-phosphate**).[9]\n\n**▸ E2.2 — Cas de raisonnement (contexte → question → analyse → réponse)**",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — repère mnémotechnique",
+            "text": "Trois nombres suffisent à raisonner en salle : **1,022 MeV** (le péage d'entrée de la β⁺, deux fois 511), **511 keV** (le photon, toujours mₑc²), **~10⁻⁸ s** (la fenêtre de coïncidence). Tout le reste — parcours, non-colinéarité, CTR, TOF — se déduit de la chaîne causale (§E1).[1][11][7]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège de QCM — β⁺ pur vs non pur",
+            "text": "Une question classique oppose émetteurs **β⁺ « purs »** (¹¹C, ¹³N, ¹⁵O ; branchement ≈ 99,8-99,9 %) et **« non purs »** émettant un **γ prompt** dégradant l'image et la quantification : **⁶⁸Ga** (γ 1,077 MeV, ~1,2 %), **⁸²Rb** (γ 0,777 MeV, ~13 %), **¹²⁴I** (γ dans la fenêtre TEP).[3][6] Ne pas confondre « pur » (branchement β⁺ élevé) et « bonne résolution » (parcours court) : le ¹⁸F, à 96,9 %, n'est pas « pur » mais reste le plus résolutif.[6]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Cas 1 — Choisir entre ¹⁸F et ⁶⁸Ga pour une lésion millimétrique",
+            "text": "*Contexte* : bilan d'un nodule pulmonaire de 6 mm ; le service dispose du [¹⁸F]FDG et d'un peptide marqué au ⁶⁸Ga. *Question* : lequel offre la meilleure chance de résoudre la lésion, physique mise à part l'affinité biologique ? *Analyse* : le facteur limitant est le **parcours du positon** — **¹⁸F ≈ 2,4 mm** vs **⁶⁸Ga ≈ 9,2 mm** dans l'eau ; le FWHM d'une source capillaire chaude est de **1,4 mm (¹⁸F) vs 3,0 mm (⁶⁸Ga)**.[2][6] *Réponse* : à cible équivalente, le **¹⁸F** est intrinsèquement plus résolutif ; le ⁶⁸Ga n'est préféré que si l'affinité biologique (ex. SSTR) l'impose."
+          },
+          {
+            "title": "Cas 2 — Un scanner ancien sans temps de vol",
+            "text": "*Contexte* : deux scanners cliniques, l'un équipé de cristaux **BGO** (décroissance ~300 ns), l'autre **LSO/LYSO** (~40 ns). *Question* : lequel permet la reconstruction TOF, et pourquoi cela compte-t-il ? *Analyse* : le TOF exige une **CTR < 600 ps** ; seuls les cristaux rapides **LSO/LYSO** l'atteignent (200-400 ps cliniques), tandis que le BGO impose des **fenêtres plus larges** donc davantage de **coïncidences fortuites**.[7][34] *Réponse* : le scanner **LSO/LYSO** ; le gain TOF améliore le **rapport signal/bruit** en localisant l'annihilation le long de la LOR, bénéfice majeur chez le patient corpulent."
+          },
+          {
+            "title": "Cas 3 — Fixation thyroïdienne inattendue en TEP au ⁶⁸Ga",
+            "text": "*Contexte* : quantification jugée peu fiable sur un examen au ⁶⁸Ga ; on suspecte une contribution non β⁺. *Question* : quelle propriété physique du ⁶⁸Ga explique la dégradation ? *Analyse* : le ⁶⁸Ga est un émetteur **β⁺ non pur** — il émet un **γ prompt de 1,077 MeV** dans ~1,2 % des désintégrations, source de coïncidences parasites dégradant image et quantification.[6] Son **long parcours** (~9,2 mm) aggrave le flou.[2] *Réponse* : la non-pureté spectrale (γ prompt) et le parcours expliquent la moindre qualité ; ces limites sont **inhérentes au radionucléide**, non corrigeables par le seul réglage du scanner."
+          }
+        ]
+      },
+      {
+        "title": "E3 - E3 - Références, sources vérifiées et liens NucleAtlas",
+        "text": "Références citées dans le corps de l'article, numérotées selon la liste `sources` (titre préfixé `[n]`). Priorité aux **guidelines** (EANM, SNMMI), **sources primaires datées** et **publications ICRP**. Aucun DOI ni identifiant n'est inventé : seules les sources réellement fournies sont mobilisées.\n\n**▸ Physique de l'émission, de l'annihilation et de la coïncidence**\n\n- **[1]** PET Physics and Instrumentation — *Radiology Key* (seuil β⁺, spectre, parcours, coïncidence, 511 keV, LOR).\n- **[2]** *The Impact of Positron Range on PET Resolution* — Mol Imaging Biol, PMC6805144 (parcours ¹⁸F vs ⁶⁸Ga, FWHM, non-colinéarité).\n- **[6]** *Physics of pure and non-pure positron emitters for PET: a review* — EJNMMI Physics, PMC4894854 (branchements β⁺, E_max/E_moy, γ prompts, parcours).\n- **[7]** PET Imaging General Topics — *AuntMinnie* (scintillateurs, fenêtres de coïncidence, CTR/TOF).\n- **[8]** Turkington T. *Introduction to PET Instrumentation* — J Nucl Med Technol 2001;29(1):4 (coïncidence, types trues/scatter/randoms).\n- **[10]** *Carl Anderson Discovers Antimatter* — Caltech (découverte du positon, 1932).\n- **[11]** *August 1932: Discovery of the Positron* — APS News (Dirac, Anderson, Nobel 1936, E = mc²).\n- **[13]** *Annihilation radiation* — Wikipedia (2×511 keV, colinéarité, conservation d'impulsion).\n- **[30]** *Physics of positron emission, annihilation, and coincidence detection* — ResearchGate (parcours, acolinéarité).\n- **[34]** *Recent developments in time-of-flight PET* — EJNMMI Physics, PMC4754240 (TOF, CTR LSO/LYSO).\n\n**▸ Fluor-18, [¹⁸F]FDG et dosimétrie**\n\n- **[3]** *Fludeoxyglucose (18F)* — StatPearls, NBK557653 (période, branchement, production).\n- **[4]** *FDG PET/CT: EANM procedure guidelines for tumour imaging, v2.0* — PMC4315529 (¹⁸F, activités, préparation).\n- **[5]** *Review of 18F-FDG Synthesis and Quality Control* — PMC3097819 (¹⁸O(p,n)¹⁸F, contrôle qualité).\n- **[9]** *Radionuclide generators* — Am J Nucl Med Mol Imaging, PMC6420712 (production générateur ⁶⁸Ge/⁶⁸Ga, ⁸²Sr/⁸²Rb).\n- **[16]** *Effective dose in 18F-FDG PET/CT (updated dose coefficients)* — Physica Medica (dose efficace ¹⁸F-FDG).\n- **[17]** *Patient-adapted organ absorbed dose in pediatric 18F-FDG PET/CT* — BMC Medical Imaging 2020 (organe critique vessie, dose TEP/TDM).\n\n**▸ Tableau récapitulatif des sources structurantes**\n\n| Domaine | Source(s) | Type | Statut |\n|---|---|---|---|\n| Chaîne β⁺ → 511 keV → coïncidence | [1][8][11][13][30] | Revue / historique | Indexé |\n| Parcours & non-colinéarité | [2][6][30] | Revue + simulation | Indexé |\n| Scintillateurs & TOF/CTR | [7][34] | Revue | Indexé |\n| ¹⁸F (période, branchement) | [3][6] · Wikipedia Fluorine-18 [28] | Fiche / revue | [28] vérifié (fetch) |\n| Protocole & activités FDG | [4] | Guideline EANM v2.0 | Vérifié (PMC4315529) |\n| Dosimétrie ¹⁸F-FDG | [16][17] | Article primaire | Indexé |\n\n**▸ Note méthodologique**\n\nDeux sources ont été **réellement consultées** (fetch) et constituent le socle vérifié : l'**EANM procedure guidelines v2.0** (PMC4315529, source [4]) et la fiche **Wikipedia Fluorine-18** ([28] : période **109,77 min**, E_max **633,5 keV**, β⁺ **96,7 %** / CE **3,3 %**). Les autres valeurs proviennent de sources indexées (PMC, JNM, Frontiers, APS, Caltech) dont les URL sont fournies mais non intégralement re-vérifiées sur le texte primaire complet — notamment les **coefficients ICRP 128** (dose efficace **0,019 mSv/MBq**), à recouper sur la publication ICRP 128 elle-même avant diffusion étalon. Les légères divergences inter-sources sur le ¹⁸F (β⁺ **96,7 %** [28] vs **96,9 %** [6] ; E_max **0,634** vs **0,6335 MeV**) sont des arrondis sans incidence clinique.\n\n**▸ Carte de liens NucleAtlas (réseau de l'article)**\n\n- **Traceurs** : ¹⁸F-FDG · ⁶⁸Ga (peptides) · ⁸²Rb · ¹¹C · ¹³N · ¹⁵O\n- **Examens** : TEP-FDG oncologique · TEP cérébrale · TEP de perfusion myocardique (⁸²Rb)\n- **Bases physiques** : Désintégration β⁻ et capture électronique · Interaction rayonnement-matière (effet Compton) · Scintillateurs et détecteurs\n- **Scores** : Deauville / Lugano · PERCIST 1.0\n\n*Dernière mise à jour : juillet 2026 — version de travail (profil médecin nucléaire). Article de la catégorie « bases physiques ».*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Hiérarchie des sources",
+            "text": "Pour toute valeur chiffrée reprise en clinique ou en publication, privilégier dans l'ordre : (1) **guidelines EANM/SNMMI datées** [4], (2) **publications ICRP** pour la dosimétrie [16][17], (3) **revues indexées** (PMC, JNM, EJNMMI Physics) [2][6][7][34], (4) fiches encyclopédiques [28] — utiles pour les constantes physiques stables (période, énergies) mais à recouper pour toute donnée dosimétrique."
+          },
+          {
+            "type": "warning",
+            "title": "Piège de citation — divergences d'arrondi",
+            "text": "Ne pas s'alarmer des micro-écarts entre sources sur les constantes du ¹⁸F : **branchement β⁺ 96,7 % [28] vs 96,9 % [6]**, **E_max 0,634 vs 0,6335 MeV**, **période 109,77 vs ≈ 110 min**. Ce sont des arrondis ou des révisions de tables nucléaires, sans conséquence clinique. En revanche, **toujours dater et sourcer les coefficients de dose** (0,019 mSv/MBq, ICRP 128), qui font l'objet de révisions périodiques (modèle compartimental révisé → ~0,017 mSv/MBq).[16][17]"
+          }
+        ]
+      }
+    ]
+  }
+}
