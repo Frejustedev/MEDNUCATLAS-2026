@@ -1,0 +1,26 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section A2 (medecin_nuc), texte : \"interruption temporaire ou arrêt de l'allaitement selon le produit (cf. A3 et §D16)\"",
+    "problem": "Renvoi interne cassé : la fiche ne contient aucune section \"D16\" (les sections D vont de D1 à D3). Ce n'est pas une erreur médicale mais un lien orphelin qui nuit à la crédibilité éditoriale.",
+    "fix": "Corriger le renvoi vers une section existante (ex. §B1/§C2 pour l'allaitement, ou supprimer la référence §D16)."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence transversale du délai de conception post-I-131 (multiples sections : B2, C2, D1/D3, E1, E2, E3 → \"6–12 mois\") vs certains référentiels",
+    "problem": "Le contenu harmonise à \"6–12 mois\" (femme et homme). C'est défendable (EANM/ICM ~6 mois, INCa 12 mois), mais la mention répétée \"pour la femme comme pour l'homme\" avec le même délai est une simplification : chez l'homme, la littérature évoque plutôt un délai de ~3–4 mois (spermatogenèse) à discuter, non strictement identique à celui de la femme. Aucune valeur fausse, mais formulation potentiellement trop assimilatrice.",
+    "fix": "Préciser que le délai homme/femme peut différer selon le référentiel (femme 6–12 mois ; homme délai propre lié à la spermatogenèse), ou renvoyer explicitement à la fiche du service. Facultatif."
+  },
+  {
+    "severity": "minor",
+    "where": "Liste des sources — [15] Iodohippurate Sodium I 131 (LactMed), [17] EuroNet PHL-C2 F-18 FDG, [18] EANM paediatric dosage card F-18 (Lassmann 2008), [23] ICRPaedia information patients/carers, [34] IAEA RPOP diagnostic unnecessary exposure",
+    "problem": "Cinq sources déclarées ([15], [17], [18], [23], [34]) ne sont jamais citées [n] dans le corps du texte (audit programmatique : 30 sources sur 35 utilisées). Ce sont des sources RÉELLES et correctement titrées (vérifiées), donc pas de fabrication — mais elles gonflent la liste sans usage.",
+    "fix": "Soit citer ces sources là où elles s'appliquent (ex. [15] pour l'allaitement diagnostique en D16/B1, [17]/[18] pour la dosimétrie pédiatrique F-18, [23] ICRPaedia en E3, [34] IAEA allaitement), soit les retirer de la liste pour éviter des références orphelines."
+  },
+  {
+    "severity": "minor",
+    "where": "Attribution récurrente « obligation réglementaire / recommandations écrites obligatoires depuis 2004 » à [29] (ASNR/IRSN FAQ) — présente en A1, A2, B2, C2, D1, D3, E1",
+    "problem": "La page [29] existe et couvre bien la radioprotection de l'entourage avec consignes personnalisées, mais la vérification n'a pas retrouvé sur cette page la mention précise de la date « 2004 » ni du caractère « obligation réglementaire » ; la FAQ présente les consignes comme une bonne pratique/devoir du service sans citer d'historique réglementaire daté. Le fait sous-jacent (obligation issue de la transposition 2003/2004 de la directive Euratom en France) est plausible et exact, mais le rattachement du chiffre « 2004 » à [29] semble légèrement forcé.",
+    "fix": "Soit adosser la date « 2004 » et le mot « obligation réglementaire » à une source réglementaire française explicite (arrêté/code de la santé publique) plutôt qu'à la seule FAQ ASNR, soit reformuler l'attribution à [29] en « le service doit remettre des consignes personnalisées » sans le millésime opposable."
+  }
+]
