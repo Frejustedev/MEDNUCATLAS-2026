@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "Efficacité du KI selon le timing — répété dans A1 (stat), B7, D12(a), E15 (Cas 2), E16 (points-clés), E17 (FAQ), stats de section, et implicitement dans le quiz Q14 (efficacité 6 h = 50%)",
+    "problem": "Le contenu affirme une efficacité du blocage thyroïdien par KI d'« ~50 % à 6 h » APRÈS l'exposition, tout en écrivant simultanément et à répétition que « > 4 h après inhalation, le bénéfice s'effondre / est quasi nul ». C'est (1) une contradiction interne (50% résiduel à 6h vs bénéfice quasi nul dès 4h) et (2) une divergence avec les données de référence FDA/WHO/NY-DOH, qui placent la réduction de captation d'environ 50 % à 4 h post-exposition, pas à 6 h. La valeur « 6 h → 50% » provient d'une citation Sfendocrino isolée mais contredit la doctrine primaire majoritaire. Le quiz Q14 fige cette valeur inexacte comme un « fait » à apprendre (réponse : « ~50% à 6 heures »), ce qui la rend particulièrement problématique dans un outil pédagogique/QCM.",
+    "fix": "Harmoniser sur la donnée FDA/WHO : réduction d'environ 50 % de la captation thyroïdienne à ~4 h post-exposition, bénéfice fortement réduit au-delà de 4 h. Corriger la stat/Q14 en « ~50 % à ~4 h » (et non 6 h), ou, si l'on conserve la nuance Sfendocrino, l'énoncer explicitement comme une estimation d'une source secondaire tout en supprimant la contradiction avec « bénéfice quasi nul dès 4 h ». Ne pas présenter deux seuils temporels incompatibles (4 h et 6 h) dans le même document."
+  },
+  {
+    "severity": "minor",
+    "where": "Tableaux B (C8, A3) et carte d'identité : description de l'émission du Fluor-18 comme « γ 511 keV »",
+    "problem": "Le ¹⁸F est un émetteur β⁺ ; les photons de 511 keV proviennent de l'annihilation du positon, ce ne sont pas des rayons γ intrinsèques du ¹⁸F. La formulation « γ 511 keV » est un raccourci imprécis. Le texte de référence lui-même écrit correctement « β⁺ (annihilation 511 keV) », et la section A3 utilise « β⁺ → 511 keV » (acceptable), mais les tableaux C8/carte disent « γ 511 keV ».",
+    "fix": "Écrire « β⁺ → photons d'annihilation 511 keV » ou « annihilation 511 keV » plutôt que « γ 511 keV » pour rester rigoureux, ou ajouter une note précisant qu'il s'agit de photons d'annihilation. Impact clinique nul, mais utile pour l'exactitude physique dans un support d'apprentissage."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence de notation Tc-99m : « 6 h » vs « 6,02 h » utilisés de façon interchangeable (A1, A3, C8, E16)",
+    "problem": "La demi-vie du Tc-99m est notée tantôt « 6 h » tantôt « 6,02 h ». Les deux sont correctes (valeur exacte 6,0067 h), donc ce n'est pas une erreur factuelle, seulement une incohérence de présentation.",
+    "fix": "Standardiser la notation (par ex. « 6,02 h » partout, ou « ~6 h » partout) pour éviter toute ambiguïté perçue. Aucune correction de fond requise."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [10] (SFEN/RGN « Une contamination est toujours traitée le jour même »)",
+    "problem": "L'URL et la citation textuelle sont exactes et non inventées, mais la page concerne un médecin du travail d'une centrale EDF (Penly), pas la médecine nucléaire. Elle est utilisée dans l'article (B7, D11, E15, E17) pour étayer la doctrine « traiter le jour même » appliquée à la médecine nucléaire.",
+    "fix": "Acceptable en l'état car la maxime opérationnelle citée est générique et fidèlement retranscrite ; éventuellement préciser que la doctrine provient du milieu des centrales, ou la doubler d'une source médecine nucléaire (ex. Guide national ASN [5])."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [1] (FDA Ca/Zn-DTPA) et [27] (RELIR/CEPN Tc-99)",
+    "problem": "Ces deux URL ont renvoyé HTTP 404 lors de la récupération automatisée (blocage anti-robot FDA / anti-scraping CEPN), ce qui pourrait faussement suggérer une fabrication.",
+    "fix": "Aucune correction nécessaire : les deux URL ont été confirmées réelles et leur contenu correspond exactement aux citations (vérifié via recherche web). Les liens sont valides pour un utilisateur humain."
+  },
+  {
+    "severity": "minor",
+    "where": "Attribution du cas SCINTIGARD Nîmes vs Strasbourg (sources [9] et [33])",
+    "problem": "Vérification demandée : la source [9] décrit en réalité l'incident SCINTIGARD Nîmes 2022 (INES 2, >4× la limite 500 mSv/12 mois), tandis que le chiffre 183 mSv / INES 1 provient bien de [33] (Strasbourg 2018). Risque potentiel de confusion entre deux incidents.",
+    "fix": "Aucune correction requise : après vérification des deux pages, l'article attribue correctement le 183 mSv/INES 1 à [33] et le reclassement INES 2 / >4× limite à [9]. Les deux incidents sont distingués sans erreur d'attribution."
+  }
+]

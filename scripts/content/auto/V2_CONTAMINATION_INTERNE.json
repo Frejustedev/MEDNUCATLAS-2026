@@ -1,0 +1,1418 @@
+{
+  "id": "V2_CONTAMINATION_INTERNE",
+  "cat": "radioprotection",
+  "catLabel": "Radioprotection",
+  "title": "Contamination interne et décorporation",
+  "difficulty": "avancé",
+  "tags": [
+    "contamination interne",
+    "décorporation",
+    "radioprotection",
+    "anthropogammamétrie",
+    "radiotoxicologie",
+    "DTPA",
+    "iodure de potassium",
+    "bleu de Prusse",
+    "dose efficace engagée",
+    "incident INES",
+    "chélation",
+    "blocage thyroïdien"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] FDA – Questions and Answers on Calcium-DTPA and Zinc-DTPA (Updated)",
+      "url": "https://www.fda.gov/drugs/bioterrorism-and-drug-preparedness/questions-and-answers-calcium-dtpa-and-zinc-dtpa-updated"
+    },
+    {
+      "title": "[2] FDA – Approves Drugs to Treat Internal Contamination from Radioactive Elements",
+      "url": "https://www.fda.gov/drugs/bioterrorism-and-drug-preparedness/fda-approves-drugs-treat-internal-contamination-radioactive-elements"
+    },
+    {
+      "title": "[3] CDC – Treating Radiation Exposure with DTPA",
+      "url": "https://www.cdc.gov/radiation-emergencies/treatment/dtpa.html"
+    },
+    {
+      "title": "[4] REMM (HHS) – Prussian Blue (Radiogardase)",
+      "url": "https://remm.hhs.gov/prussianblue.htm"
+    },
+    {
+      "title": "[5] Guide national – Intervention médicale en cas d'événement nucléaire ou radiologique (ASN, éd. 2008)",
+      "url": "https://www.post-accident-nucleaire.fr/sites/default/files/2019-05/Guide-Interventions-medicales-evenement-nucleaire-ou-radiologique_0.pdf"
+    },
+    {
+      "title": "[6] ASNR – Guide national d'intervention médicale en situation d'urgence nucléaire ou radiologique",
+      "url": "https://reglementation-controle.asnr.fr/reglementation/guides-de-l-asnr/guide-national-d-intervention-medicale-en-situation-d-urgence-nucleaire-ou-radiologique"
+    },
+    {
+      "title": "[7] IRSN/ASNR – Les moyens de surveillance individuelle de la contamination interne",
+      "url": "https://recherche-expertise.asnr.fr/savoir-comprendre/sante/moyens-surveillance-individuelle-contamination-interne"
+    },
+    {
+      "title": "[8] ASNR/Repères – Mesurer la contamination interne pour renforcer la radioprotection",
+      "url": "https://reperes.asnr.fr/en-pratique/mesurer-la-contamination-interne-pour-renforcer-la-radioprotection"
+    },
+    {
+      "title": "[9] ASNR – Contamination d'un salarié et d'une salle de médecine nucléaire : reclassement sur l'échelle INES (18/07/2023)",
+      "url": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/activites-medicales/avis-d-incident-domaine-medical/contamination-d-un-salarie-et-d-une-salle-de-medecine-nucleaire-reclassement-sur-l-echelle-ines"
+    },
+    {
+      "title": "[10] SFEN/RGN – « Une contamination est toujours traitée le jour même »",
+      "url": "https://www.sfen.org/rgn/contamination-traitee-jour/"
+    },
+    {
+      "title": "[11] ICRP Publication 137 – Occupational Intakes of Radionuclides: Part 3",
+      "url": "https://www.icrp.org/page.asp?id=374"
+    },
+    {
+      "title": "[12] ICRP Publication 119 – Compendium of Dose Coefficients based on ICRP Publication 60",
+      "url": "https://www.icrp.org/docs/P%20119%20JAICRP%2041(s)%20Compendium%20of%20Dose%20Coefficients%20based%20on%20ICRP%20Publication%2060.pdf"
+    },
+    {
+      "title": "[13] Assessment and clinical management of internal contamination (J. Radiol. Prot., IOPscience)",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6498/aca0a7"
+    },
+    {
+      "title": "[14] Experimental Evaluation of 65Zn Decorporation Kinetics Following Rapid and Delayed Zn-DTPA Interventions (PMC8623132)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8623132/"
+    },
+    {
+      "title": "[15] Comparison of Local and Systemic DTPA Treatment Efficacy According to Actinide Physicochemical Properties Following Lung or Wound Contamination in the Rat (PMC8032982)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8032982/"
+    },
+    {
+      "title": "[16] Pentetic acid (DTPA) – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pentetic_acid"
+    },
+    {
+      "title": "[17] Nuclear Ready – Potassium Iodide (KI) Dosage Guide: FDA-Approved Doses by Age and Weight",
+      "url": "https://www.nuclearready.com/guides/potassium-iodide-ki-dosage-guide/"
+    },
+    {
+      "title": "[18] New York State DOH – Potassium Iodide (KI) and Radiation Emergencies Fact Sheet",
+      "url": "https://www.health.ny.gov/environmental/radiological/potassium_iodide/fact_sheet.htm"
+    },
+    {
+      "title": "[19] Monitoring of Tritium Internal Exposure Doses of Heavy-Water Reactor Workers in Third Qinshan Nuclear Power Plant (PMC6876181)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6876181/"
+    },
+    {
+      "title": "[20] Tritiated water – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tritiated_water"
+    },
+    {
+      "title": "[21] 131I Nuclide Safety Data Sheet (HPS North Carolina Chapter)",
+      "url": "https://hpschapters.org/northcarolina/NSDS/131IPDF.pdf"
+    },
+    {
+      "title": "[22] Radiation Safety Precautions in the Management of the Hospitalized 131I Therapy Patient (J Nucl Med Technol)",
+      "url": "https://tech.snmjournals.org/content/29/2/61"
+    },
+    {
+      "title": "[23] CDC – Radioactive Isotopes (Cs-137, I-131, Pu-239, Am-241)",
+      "url": "https://www.cdc.gov/radiation-emergencies/hcp/isotopes/index.html"
+    },
+    {
+      "title": "[24] RCE-17 – Use of Prussian Blue for Decorporation of Radiocaesium (UK HPA)",
+      "url": "https://assets.publishing.service.gov.uk/media/5a7ece3be5274a2e87db2058/RCE-17_for_web_with_security.pdf"
+    },
+    {
+      "title": "[25] Radiogardase (Prussian blue insoluble) – FDA prescribing information",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/021626s010lbl.pdf"
+    },
+    {
+      "title": "[26] Medical Therapy of Patients Contaminated with Radioactive Cesium or Iodine (PMC6995530)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6995530/"
+    },
+    {
+      "title": "[27] RELIR/OTHEA – Contamination d'une technicienne avec du technétium-99 (médecine nucléaire)",
+      "url": "https://relir.cepn.asso.fr/fiches/medical-et-veterinaire/medecine-nucleaire/45-contamination-d-une-technicienne-avec-du-technecium-99.html"
+    },
+    {
+      "title": "[28] Annual limit on intake – ICRPaedia",
+      "url": "https://icrpaedia.org/Annual_limit_on_intake"
+    },
+    {
+      "title": "[29] Emergency Department Management of Patients Internally Contaminated with Radioactive Material (PMC5776730)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5776730/"
+    },
+    {
+      "title": "[30] Potassium Iodide (KI) — Radiation Emergency Medical Management (REMM/HHS)",
+      "url": "https://remm.hhs.gov/potassiumiodide.htm"
+    },
+    {
+      "title": "[31] Ca-DTPA / Zn-DTPA (Diethylenetriamine pentaacetate) — Radiation Emergency Medical Management (REMM/HHS)",
+      "url": "https://remm.hhs.gov/dtpa.htm"
+    },
+    {
+      "title": "[32] Effective dose to adult patients from 338 radiopharmaceuticals estimated using ICRP biokinetic data, ICRP/ICRU computational reference phantoms and ICRP 2007 tissue weighting factors (PMC4545621)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4545621/"
+    },
+    {
+      "title": "[33] Contamination d'un travailleur au service de médecine nucléaire du CHRU de Strasbourg (Bas-Rhin) — Avis d'incident, ASN",
+      "url": "https://www.asn.fr/controle/actualites-du-controle/activites-medicales/avis-d-incident-domaine-medical/contamination-d-un-travailleur-au-service-de-medecine-nucleaire-du-chru-de-strasbourg-bas-rhin"
+    },
+    {
+      "title": "[34] Public health response and medical management of internal contamination in past radiological or nuclear incidents: a narrative review (PMC9749825)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9749825/"
+    },
+    {
+      "title": "[35] Guidance: Potassium Iodide as a Thyroid Blocking Agent in Radiation Emergencies (FDA)",
+      "url": "https://www.fda.gov/media/72510/download"
+    },
+    {
+      "title": "[36] Potassium iodide — Wikipedia (timing/efficacité de la protection thyroïdienne)",
+      "url": "https://en.wikipedia.org/wiki/Potassium_iodide"
+    },
+    {
+      "title": "[37] ICRP Publication 137: Occupational Intakes of Radionuclides Part 3 (2017), Ann. ICRP 46(3/4)",
+      "url": "https://journals.sagepub.com/doi/10.1177/0146645317734963"
+    },
+    {
+      "title": "[38] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals (2015), Ann. ICRP 44(2)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[39] ICRP Publication 128 — PubMed record (PMID 26069086)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26069086/"
+    },
+    {
+      "title": "[40] IDAC-Dose 2.1, an internal dosimetry program for diagnostic nuclear medicine based on the ICRP adult reference voxel phantoms (PMC5668221)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5668221/"
+    },
+    {
+      "title": "[41] Mesurer la contamination radioactive in vivo chez l'homme (ASNR / ex-IRSN)",
+      "url": "https://recherche-expertise.asnr.fr/page/mesurer-contamination-radioactive-vivo-chez-lhomme"
+    },
+    {
+      "title": "[42] Contamination interne des travailleurs : quel suivi dosimétrique ? — Repères (ASNR)",
+      "url": "https://reperes.asnr.fr/en-pratique/contamination-interne-des-travailleurs-quel-suivi-dosimetrique"
+    },
+    {
+      "title": "[43] HUS Strasbourg : niveau 2 INES — Avis d'incident, ASN (12/09/2021)",
+      "url": "https://www.asn.fr/l-asn-controle/actualites-du-controle/activites-medicales/avis-d-incident-domaine-medical/hus-strasbourg-niveau-2-ines"
+    },
+    {
+      "title": "[44] Prévention des complications thyroïdiennes des accidents nucléaires — Société Française d'Endocrinologie",
+      "url": "https://www.sfendocrino.org/prevention-des-complications-thyroidiennes-des-accidents-nucleaires/"
+    },
+    {
+      "title": "[45] IAEA Safety Standards — Occupational Radiation Protection (Pub1081)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1081_web.pdf"
+    },
+    {
+      "title": "[46] The NCRP wound model: Development and application (2007)",
+      "url": "https://www.researchgate.net/publication/6074699_The_NCRP_wound_model_Development_and_application"
+    },
+    {
+      "title": "[47] Medical Countermeasures — DTPA (transcript, ORAU/REAC-TS)",
+      "url": "https://www.orau.gov/rsb/countermeasuretraining/transcripts/DTPA.html"
+    },
+    {
+      "title": "[48] Technetium-99m — Wikipedia (T½ 6 h, γ 140 keV)",
+      "url": "https://en.wikipedia.org/wiki/Technetium-99m"
+    },
+    {
+      "title": "[49] The Duration of Nuclear Medicine in Your Body (demi-vies effectives Tc-99m/F-18/I-131)",
+      "url": "https://int.livhospital.com/duration-of-nuclear-medicine-in-your-body/"
+    },
+    {
+      "title": "[50] Exposition aux rayonnements et contamination radioactive — Manuel MSD (édition professionnelle)",
+      "url": "https://www.msdmanuals.com/fr/professional/blessures-empoisonnement/exposition-aux-rayonnements-et-contamination-radioactive/exposition-aux-rayonnements-et-contamination-radioactive"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "alert",
+        "label": "Définition",
+        "value": "Incorporation d'un radionucléide dans l'organisme"
+      },
+      {
+        "icon": "radiation",
+        "label": "Voies d'entrée",
+        "value": "Inhalation · ingestion · plaie/effraction cutanée"
+      },
+      {
+        "icon": "microscope",
+        "label": "Diagnostic in vivo",
+        "value": "Anthropogammamétrie (émetteurs X/γ)"
+      },
+      {
+        "icon": "flask",
+        "label": "Diagnostic in vitro",
+        "value": "Radiotoxicologie des excréta (α/β purs)"
+      },
+      {
+        "icon": "target",
+        "label": "Grandeur de référence",
+        "value": "Dose efficace engagée (50 ans adulte, 70 ans enfant)"
+      },
+      {
+        "icon": "clock",
+        "label": "Fenêtre décorporation",
+        "value": "Idéale < 1 h, au plus tard 3–4 h"
+      },
+      {
+        "icon": "shield",
+        "label": "Iode radioactif (¹³¹I)",
+        "value": "Iodure de potassium 130 mg adulte (blocage thyroïdien)"
+      },
+      {
+        "icon": "droplets",
+        "label": "Transuraniens (Pu/Am/Cm)",
+        "value": "Ca-DTPA puis Zn-DTPA, 1 g/j IV"
+      },
+      {
+        "icon": "syringe",
+        "label": "Césium/Thallium",
+        "value": "Bleu de Prusse 3 g × 3/j PO ≥ 30 j"
+      },
+      {
+        "icon": "activity",
+        "label": "Limite dose travailleur",
+        "value": "20 mSv/an (corps entier) · 500 mSv/an (peau/extrémités)"
+      },
+      {
+        "icon": "atom",
+        "label": "Radionucléides en MN",
+        "value": "⁹⁹ᵐTc (140 keV) · ¹⁸F (511 keV) · ¹³¹I (364 keV)"
+      },
+      {
+        "icon": "list",
+        "label": "Cadre France",
+        "value": "Guide national ASN/ASNR · SISERI · classement INES"
+      },
+      {
+        "icon": "baby",
+        "label": "Seuil KI enfant/enceinte",
+        "value": "Dose thyroïdienne prédite ≥ 5 cGy"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "Iode-131 (¹³¹I)"
+      },
+      {
+        "type": "traceur",
+        "label": "Technétium-99m (⁹⁹ᵐTc)"
+      },
+      {
+        "type": "traceur",
+        "label": "Fluor-18 (¹⁸F)"
+      },
+      {
+        "type": "examen",
+        "label": "Anthropogammamétrie (comptage corps entier)"
+      },
+      {
+        "type": "examen",
+        "label": "Radiotoxicologie des excréta"
+      },
+      {
+        "type": "examen",
+        "label": "Irathérapie de l'hyperthyroïdie / cancer thyroïdien (¹³¹I)"
+      },
+      {
+        "type": "score",
+        "label": "Limite Annuelle d'Incorporation (LAI/ALI)"
+      },
+      {
+        "type": "score",
+        "label": "Échelle INES (0–7)"
+      },
+      {
+        "type": "score",
+        "label": "Clinical Decision Guide (CDG)"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer thyroïdien radio-induit"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹³¹I-MIBG (thérapie)"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-DOTATATE (thérapie)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Comment se distingue la contamination interne de l'exposition externe ?",
+        "options": [
+          "La source est déposée sur la peau",
+          "Le radionucléide est incorporé dans l'organisme et y délivre une dose tant qu'il est présent",
+          "La source reste à distance du corps",
+          "Elle se mesure directement par dosimètre passif"
+        ],
+        "answer": 1,
+        "explanation": "La contamination interne = incorporation d'un radionucléide dans le corps ; il délivre une dose engagée tant qu'il n'est pas éliminé (décroissance physique + élimination biologique), à distinguer de la contamination externe (dépôt cutané) et de l'exposition externe (source à distance) [29].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelles sont les principales voies d'incorporation d'un radionucléide ?",
+        "options": [
+          "Uniquement l'ingestion",
+          "Inhalation, ingestion et voie transcutanée par plaie",
+          "Uniquement la peau saine",
+          "Voie intraveineuse exclusivement"
+        ],
+        "answer": 1,
+        "explanation": "Les voies documentées sont l'inhalation (voie majeure en accident), l'ingestion, et la voie transcutanée par plaie ; la peau saine est une barrière efficace, franchie seulement si lésée [29][34].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pourquoi le niveau de contamination interne n'est-il pas directement mesurable comme l'irradiation externe ?",
+        "options": [
+          "Parce qu'il n'émet aucun rayonnement",
+          "Parce qu'il s'évalue par calcul à partir d'un modèle biocinétique propre au radionucléide",
+          "Parce que les appareils sont trop imprécis",
+          "Parce qu'il disparaît en quelques minutes"
+        ],
+        "answer": 1,
+        "explanation": "Contrairement à l'irradiation externe (dosimètre), la contamination interne s'évalue indirectement : mesure (in vivo ou excréta) → fonction de rétention/excrétion biocinétique → activité incorporée → coefficient de dose → dose efficace engagée [7][8].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle méthode permet de détecter directement un émetteur gamma incorporé, comme l'iode-131 dans la thyroïde ?",
+        "options": [
+          "La radiotoxicologie urinaire",
+          "L'anthropogammamétrie (comptage corps entier)",
+          "La dosimétrie thermoluminescente de poitrine",
+          "La spectrométrie de masse sanguine"
+        ],
+        "answer": 1,
+        "explanation": "L'anthropogammamétrie mesure in vivo le rayonnement X/γ émis par les radionucléides incorporés (I-131, Tc-99m, Cs-137). Elle est inadaptée aux émetteurs α purs comme le Pu-239 [7][41].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment évalue-t-on l'incorporation d'un émetteur alpha pur comme le plutonium-239 ?",
+        "options": [
+          "Par anthropogammamétrie standard",
+          "Par radiotoxicologie des excréta (urines, selles)",
+          "Par dosimètre passif thoracique",
+          "Ce n'est pas mesurable"
+        ],
+        "answer": 1,
+        "explanation": "Les émetteurs α et β purs (Pu, Am, ⁹⁰Sr) ne sont pas mesurables in vivo ; seule la radiotoxicologie des excréta (urines/selles) permet leur évaluation [7][29].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Sur quelle durée est intégrée la dose efficace engagée chez l'adulte ?",
+        "options": [
+          "1 an",
+          "10 ans",
+          "50 ans",
+          "À vie sans limite"
+        ],
+        "answer": 2,
+        "explanation": "La dose efficace engagée est intégrée sur 50 ans chez l'adulte et jusqu'à 70 ans chez l'enfant à partir de l'incorporation ; elle est imputée à l'année de l'incorporation [8][29].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel décorporant est utilisé pour bloquer la captation thyroïdienne de l'iode radioactif ?",
+        "options": [
+          "Le bleu de Prusse",
+          "Le Ca-DTPA",
+          "L'iodure de potassium (KI)",
+          "Le bicarbonate de sodium"
+        ],
+        "answer": 2,
+        "explanation": "L'iodure de potassium (iode stable) sature la thyroïde et inhibe la captation d'iode radioactif (effet Wolff-Chaikoff). Dose adulte FDA : 130 mg ; il ne protège QUE la thyroïde contre l'iode radioactif [30][35].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quels radionucléides sont efficacement chélatés par le DTPA ?",
+        "options": [
+          "L'iode et le césium",
+          "Les transuraniens : plutonium, américium, curium",
+          "L'uranium et le neptunium",
+          "Le tritium et le strontium"
+        ],
+        "answer": 1,
+        "explanation": "Le DTPA forme un complexe hydrosoluble excrété dans les urines avec les transuraniens (Pu, Am, Cm) et cations bi- à pentavalents. Il est INEFFICACE sur l'uranium et le neptunium [31][3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le mécanisme d'action du bleu de Prusse (Radiogardase) ?",
+        "options": [
+          "Il sature la thyroïde",
+          "Il chélate le plutonium dans le sang",
+          "Il interrompt le cycle entéro-hépatique du césium et transfère l'excrétion vers la voie fécale",
+          "Il alcalinise les urines"
+        ],
+        "answer": 2,
+        "explanation": "Le bleu de Prusse piège le césium/thallium dans le tube digestif, interrompt le cycle entéro-hépatique et transfère l'excrétion urinaire vers la voie fécale, réduisant la période effective [4][26].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi la décorporation doit-elle être administrée le plus tôt possible ?",
+        "options": [
+          "Pour des raisons administratives",
+          "Pour capter le radionucléide dans le liquide extracellulaire avant sa fixation cellulaire/osseuse",
+          "Parce que les décorporants périment vite",
+          "Pour éviter les effets secondaires"
+        ],
+        "answer": 1,
+        "explanation": "L'efficacité est maximale dans la 1re heure, au plus tard 3–4 h, pour capter le radionucléide avant sa fixation cellulaire ; en France « une contamination est toujours traitée le jour même », sans attendre la preuve formelle [10][14][5].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la posologie adulte FDA/CDC du Ca-DTPA ?",
+        "options": [
+          "14 mg/kg/j sans dépasser 1 g/j, en IV",
+          "3 g toutes les 8 h",
+          "130 mg en dose unique",
+          "250 mL en perfusion"
+        ],
+        "answer": 0,
+        "explanation": "La posologie adulte est de 14 mg/kg/j sans dépasser 1 g/j, diluée dans 100–250 mL et administrée en IV sur 30 min. Le Ca-DTPA est préféré les premières 24 h puis relayé par le Zn-DTPA [1][3].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle forme de DTPA est privilégiée chez la femme enceinte ?",
+        "options": [
+          "Le Ca-DTPA exclusivement",
+          "Le Zn-DTPA",
+          "Aucun DTPA n'est autorisé",
+          "Les deux à double dose"
+        ],
+        "answer": 1,
+        "explanation": "Le Ca-DTPA a montré une tératogénicité chez l'animal ; le Zn-DTPA est privilégié pendant la grossesse (sauf contamination très élevée) [3][31].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Selon les seuils REMM, à partir de quelle dose thyroïdienne prédite administre-t-on du KI à un enfant ou une femme enceinte ?",
+        "options": [
+          "≥ 500 cGy",
+          "≥ 100 cGy",
+          "≥ 5 cGy",
+          "Jamais"
+        ],
+        "answer": 2,
+        "explanation": "Le seuil est abaissé à ≥ 5 cGy chez l'enfant ≤ 18 ans et la femme enceinte/allaitante (surrisque de cancer thyroïdien de l'enfant dès 5 cGy), contre ≥ 10 cGy chez l'adulte de 18–40 ans et ≥ 500 cGy après 40 ans [30][35].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est l'efficacité du blocage thyroïdien par KI administré 6 heures APRÈS l'exposition à l'iode radioactif ?",
+        "options": [
+          "Quasi complète (~98 %)",
+          "Environ 50 %",
+          "Nulle",
+          "Supérieure à une prise précoce"
+        ],
+        "answer": 1,
+        "explanation": "L'efficacité chute avec le délai : ~98 % si pris quelques heures avant, >90 % si simultané/1–2 h après, ~50 % à 6 h, et bénéfice fortement réduit au-delà de 4 h [44][30][36].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "En pratique de médecine nucléaire, la plupart des « incidents Tc-99m » réels correspondent à :",
+        "options": [
+          "Des incorporations internes massives",
+          "Des contaminations externes cutanées (projection de seringue)",
+          "Des irradiations du corps entier",
+          "Des ingestions volontaires"
+        ],
+        "answer": 1,
+        "explanation": "La grande majorité des incidents documentés en médecine nucléaire sont des contaminations externes cutanées (dose à la peau/extrémités) et non des incorporations internes vraies — piège classique à ne pas confondre [33][9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la dose efficace engagée maximale annuelle admise pour un travailleur exposé ?",
+        "options": [
+          "1 mSv/an",
+          "20 mSv/an en moyenne sur 5 ans, 50 mSv max une année donnée",
+          "100 mSv/an",
+          "500 mSv/an"
+        ],
+        "answer": 1,
+        "explanation": "La limite travailleur est de 20 mSv/an en moyenne sur 5 ans consécutifs, avec un maximum de 50 mSv sur une année ; la dose équivalente aux extrémités/peau est de 500 mSv/an [45].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment décorpore-t-on une contamination par le tritium (eau tritiée, HTO) ?",
+        "options": [
+          "Par chélation au DTPA",
+          "Par blocage thyroïdien",
+          "Par hyperhydratation / diurèse forcée (dilution isotopique)",
+          "Par bleu de Prusse"
+        ],
+        "answer": 2,
+        "explanation": "Le tritium se mélange à l'eau corporelle ; l'hyperhydratation / diurèse forcée raccourcit sa période biologique (~10 j) par dilution isotopique [19][20].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans la prise en charge d'un patient contaminé, quelle est la première priorité ?",
+        "options": [
+          "La décorporation immédiate",
+          "La décontamination cutanée complète",
+          "Stabiliser les urgences vitales : la décontamination ne retarde jamais la réanimation",
+          "Le classement INES"
+        ],
+        "answer": 2,
+        "explanation": "L'algorithme impose de stabiliser d'abord les urgences vitales : la décontamination ne retarde jamais la réanimation. Viennent ensuite retrait des vêtements, décontamination, évaluation de l'incorporation et décorporation ciblée [29].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment prend-on en charge une plaie contaminée par un radionucléide ?",
+        "options": [
+          "Excision large de la zone",
+          "Irrigation au sérum physiologique, débridement minimal, corps étrangers retirés en conteneur plombé ; plaie décontaminée AVANT la peau saine",
+          "On la laisse cicatriser seule",
+          "On applique du KI localement"
+        ],
+        "answer": 1,
+        "explanation": "La plaie est décontaminée avant la peau saine : irrigation au sérum physiologique, débridement minimal des berges, corps étrangers retirés à la pince en conteneur plombé, sans excision au-delà de la plaie. Le DTPA local est utilisé pour les transuraniens [50][5].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le coefficient de dose par inhalation du ⁹⁹ᵐTc (type F, CIPR 119) ?",
+        "options": [
+          "1,2 × 10⁻¹¹ Sv/Bq",
+          "2,2 × 10⁻⁹ Sv/Bq",
+          "1,4 × 10⁻¹ Sv/Bq",
+          "5 × 10⁻⁶ Sv/Bq"
+        ],
+        "answer": 0,
+        "explanation": "Pour le ⁹⁹ᵐTc, le coefficient de dose par inhalation type F est de 1,2 × 10⁻¹¹ Sv/Bq (type M : 1,9 × 10⁻¹¹ ; ingestion : 2,2 × 10⁻¹¹) selon la CIPR 119 ; ces coefficients convertissent l'activité incorporée en dose efficace engagée [12].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel émetteur, historiquement lié à l'affaire Litvinenko (2006), est indétectable en anthropogammamétrie standard ?",
+        "options": [
+          "Le césium-137",
+          "Le polonium-210 (émetteur α)",
+          "L'iode-131",
+          "Le technétium-99m"
+        ],
+        "answer": 1,
+        "explanation": "Le polonium-210 est un émetteur alpha, donc indétectable in vivo par anthropogammamétrie ; son évaluation requiert la radiotoxicologie des excréta, comme pour les autres émetteurs α [29][34].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Après reconstruction de dose, à quelle valeur de référence compare-t-on l'incorporation pour décider d'un traitement ?",
+        "options": [
+          "À la fréquence cardiaque",
+          "À la Limite Annuelle d'Incorporation (LAI/ALI) et au Clinical Decision Guide (CDG)",
+          "Au taux de créatinine",
+          "À la température corporelle"
+        ],
+        "answer": 1,
+        "explanation": "La décision de traiter repose sur la comparaison de l'incorporation à des valeurs de référence : la LAI/ALI (20 mSv/an ÷ coefficient de dose) et le CDG (correspondant à ~250 mSv de dose engagée sur 50 ans chez l'adulte, réduit à 20 % chez l'enfant/femme enceinte) [28][29].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Contamination interne = incorporation d'un radionucléide (inhalation, ingestion, plaie), à distinguer de la contamination externe cutanée et de l'exposition externe ; elle délivre une dose engagée tant qu'elle persiste [29].",
+        "Rare en médecine nucléaire : ⁹⁹ᵐTc/¹⁸F (courte période) et ¹³¹I (thérapie) dominent ; la plupart des incidents réels sont des contaminations EXTERNES cutanées, pas des incorporations vraies [33].",
+        "Diagnostic métrologique, non clinique : anthropogammamétrie in vivo (émetteurs X/γ) + radiotoxicologie des excréta (émetteurs α/β purs) [7].",
+        "Grandeur de référence = dose efficace engagée sur 50 ans (adulte) ou 70 ans (enfant), via coefficients de dose CIPR 137 (travailleur) [11][8].",
+        "Décorporation d'autant plus efficace qu'elle est précoce (< 1 h, au plus tard 3–4 h) : capter le radionucléide avant sa fixation cellulaire [14].",
+        "Trois agents pivots : KI (¹³¹I → thyroïde), DTPA (Pu/Am/Cm), bleu de Prusse (Cs/Tl) ; chacun a une cible spécifique [30][31][4].",
+        "Limites travailleur : 20 mSv/an corps entier, 500 mSv/an extrémités/peau ; dose imputée à l'année de l'incorporation [45][8].",
+        "Cadre France : Guide national ASN/ASNR, évaluation par PCR/physicien, enregistrement SISERI, déclaration et classement INES [5][9]."
+      ],
+      "protocol": [
+        "Stabiliser d'abord les urgences vitales : la décontamination ne retarde jamais la réanimation [29].",
+        "Retrait des vêtements + double ensachage, contrôle radiamétrique, décontamination cutanée à l'eau/savon jusqu'à plateau [29].",
+        "Plaie contaminée : irrigation sérum physiologique, débridement minimal, corps étrangers retirés en conteneur plombé, décontaminée AVANT la peau saine [50].",
+        "Évaluation de l'incorporation : anthropogammamétrie horodatée + radiotoxicologie (urines/selles 24 h ou spot) [7].",
+        "Comparaison aux valeurs de référence (LAI/ALI, CDG) → décision de traiter [29].",
+        "Décorporation ciblée le jour même : KI (¹³¹I), Ca-DTPA puis Zn-DTPA (transuraniens), bleu de Prusse (Cs/Tl), hyperhydratation (tritium) [5][31][4].",
+        "Suivi long terme (effets stochastiques) et enregistrement dosimétrique SISERI + classement INES [42][9]."
+      ],
+      "scores": [
+        "Dose efficace engagée : intégrée sur 50 ans (adulte) / 70 ans (enfant) [29].",
+        "LAI/ALI (limite annuelle d'incorporation) = 20 mSv/an ÷ coefficient de dose (Sv/Bq) [28].",
+        "CDG (Clinical Decision Guide) : ~250 mSv engagés/50 ans adulte, réduit à 20 % chez enfant/femme enceinte [29].",
+        "Seuils KI (dose thyroïdienne prédite) : ≥ 500 cGy (> 40 ans), ≥ 10 cGy (18–40 ans), ≥ 5 cGy (enfant/enceinte) [30].",
+        "Point de décision « sauvetage de vie » : 0,5 Gy cumulés (NCRP) [29] ; échelle INES 0–7 pour le classement des événements [9]."
+      ],
+      "pitfalls": [
+        "Confondre contamination externe cutanée et incorporation interne : la plupart des « incidents Tc-99m » sont des projections cutanées (dose à la peau), pas des dépôts internes [33].",
+        "KI trop tardif (> 4–6 h, efficacité ~50 % à 6 h) ou trop précoce (> 96 h avant) : inutile ; le KI n'est PAS une pilule anti-radiations, il ne protège que la thyroïde contre l'iode radioactif [36][30].",
+        "Utiliser le DTPA hors transuraniens : inefficace sur l'uranium et le neptunium [31].",
+        "Oublier que les émetteurs α/β purs sont invisibles en anthropogammamétrie → radiotoxicologie des excréta obligatoire [7].",
+        "Sous-estimer l'incorporation par recueil incomplet des excréta (24 h) → biais de calcul [29].",
+        "Ca-DTPA chez la femme enceinte : tératogène chez l'animal → préférer le Zn-DTPA ; surveiller la déplétion en zinc [3][1]."
+      ]
+    },
+    "lead": "La contamination interne survient lorsqu'un élément radioactif pénètre dans le corps, le plus souvent par la respiration, par la bouche ou à travers une plaie. En médecine nucléaire, cet événement reste rare et concerne surtout les manipulateurs et le personnel qui préparent les traceurs ; la très grande majorité des incidents réels ne sont d'ailleurs que des projections sur la peau. Une fois entré, le produit se comporte comme un imposteur qui emprunte les circuits naturels de l'organisme et se dépose dans certains organes, où il continue de délivrer une dose tant qu'il n'est pas éliminé. La prise en charge repose sur trois piliers indissociables : prévenir l'accident, mesurer précisément ce qui a été incorporé, et, si nécessaire, accélérer l'élimination du produit par un traitement dédié. Ce traitement, appelé décorporation, est d'autant plus efficace qu'il est administré tôt, idéalement le jour même.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cette prise en charge",
+          "text": "En médecine nucléaire, on utilise de très petites quantités de produits légèrement radioactifs pour réaliser des examens ou certains traitements. Dans de rares situations (par exemple un incident de manipulation), une partie de ce produit pourrait être respirée, avalée ou entrer par une petite plaie : on parle alors de contamination interne. Cette situation est peu fréquente et l'équipe soignante est spécifiquement formée pour la prévenir et, si besoin, la traiter rapidement. L'objectif est simple : aider votre corps à éliminer plus vite le produit pour réduire au minimum toute conséquence.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Une situation rare et encadrée",
+              "text": "Le service de médecine nucléaire applique des règles de sécurité strictes à chaque étape. Les incidents de contamination sont exceptionnels, et lorsqu'ils surviennent, ils sont pris en charge immédiatement selon des protocoles bien établis."
+            }
+          ]
+        },
+        {
+          "title": "Comment cela se déroule",
+          "text": "Si une contamination est suspectée, l'équipe agit calmement et par étapes. On commence par un nettoyage doux de la peau ou d'une éventuelle plaie avec de l'eau et du savon. Des appareils de mesure permettent ensuite de vérifier si une partie du produit a pu pénétrer dans l'organisme, souvent à l'aide d'un examen indolore où l'on reste allongé sous un détecteur, et parfois par l'analyse d'échantillons d'urines. Si nécessaire, un médicament dit « de décorporation » vous est proposé (comprimé, sirop ou perfusion selon les cas) pour aider votre corps à évacuer le produit. Plus ce traitement est donné tôt, plus il est efficace : c'est pourquoi tout est organisé pour agir sans tarder.",
+          "steps": [
+            {
+              "title": "Nettoyage",
+              "text": "Lavage doux de la peau ou de la plaie, retrait des vêtements concernés."
+            },
+            {
+              "title": "Vérification",
+              "text": "Mesures avec des appareils dédiés, parfois analyse d'urines, pour savoir si le produit a pénétré dans le corps."
+            },
+            {
+              "title": "Traitement si besoin",
+              "text": "Un médicament adapté au produit en cause aide l'organisme à éliminer plus vite, idéalement dès les premières heures."
+            },
+            {
+              "title": "Suivi",
+              "text": "Des contrôles peuvent être répétés pour s'assurer que tout rentre dans l'ordre."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce sûr et dangereux pour moi ou mes proches",
+          "text": "Les traitements de décorporation sont bien connus, utilisés depuis de nombreuses années et généralement très bien tolérés. Certains peuvent avoir des effets sans gravité et temporaires, comme une coloration inhabituelle des selles avec l'un d'eux : votre médecin vous préviendra à l'avance. L'équipe adapte toujours le traitement à votre situation, y compris en cas de grossesse, d'allaitement ou pour les enfants. N'hésitez jamais à poser vos questions et à signaler vos antécédents ou allergies : c'est un partenariat, et votre confort comme votre sécurité restent la priorité.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Parlez-en librement",
+              "text": "Signalez toute allergie, un traitement en cours, une grossesse ou un allaitement. Ces informations permettent de choisir le traitement le plus adapté et le plus sûr pour vous."
+            },
+            {
+              "type": "info",
+              "title": "Vos proches ne sont pas en danger",
+              "text": "La prise en charge concerne uniquement votre organisme. Les mesures de sécurité du service protègent le personnel comme les visiteurs."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser et savoir de quoi il s'agit",
+          "text": "La contamination interne désigne l'incorporation d'un radionucléide dans l'organisme par inhalation, ingestion, passage transcutané via une plaie/brûlure, ou plus rarement à travers une peau saine lésée. Elle se distingue de la contamination externe (dépôt cutané) et de l'exposition externe (irradiation à distance). En médecine nucléaire, ce risque est rare mais réel : il concerne surtout les radionucléides de courte période utilisés en diagnostic (technétium-99m, fluor-18) et l'iode-131 en thérapie. En pratique, la très grande majorité des « incidents » rapportés sont en réalité des contaminations externes cutanées (projection de seringue), et non de véritables incorporations internes. Comme clinicien non nucléariste, vous pouvez être sollicité en médecine du travail, aux urgences (contexte d'urgence radiologique) ou face à un patient inquiet après un examen.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Le diagnostic de contamination interne est métrologique, pas clinique : il n'existe pas de signe clinique spécifique à faible dose. Adressez au service de médecine nucléaire (et à la personne compétente en radioprotection) pour l'évaluation métrologique et dosimétrique, l'identification du radionucléide en cause et, si indiqué, la mise en route rapide d'une décorporation ciblée dont l'efficacité est fortement dépendante de la précocité."
+            }
+          ]
+        },
+        {
+          "title": "Démarche et apport de la médecine nucléaire",
+          "text": "Face à une suspicion, la conduite reste hiérarchisée : les urgences vitales priment toujours et ne sont jamais retardées par la décontamination. On procède ensuite au retrait des vêtements, au contrôle radiamétrique, puis à une décontamination cutanée douce et au traitement des plaies éventuelles (irrigation, décontamination de la plaie avant la peau saine). L'évaluation de l'incorporation repose sur deux familles de mesures complémentaires : les mesures in vivo par anthropogammamétrie (comptage corps entier, adaptée aux émetteurs gamma comme l'iode, le technétium ou le césium) et les analyses radiotoxicologiques in vitro sur les excreta (urines, selles), seule voie pour les émetteurs alpha et bêta purs. Ces mesures alimentent un modèle biocinétique pour estimer la dose efficace engagée et décider d'un éventuel traitement.",
+          "list": [
+            "Stabiliser d'abord toute urgence vitale : la décontamination ne retarde jamais la réanimation.",
+            "Décontamination externe douce (eau/savon) et prise en charge des plaies avant la peau saine.",
+            "Évaluation métrologique : anthropogammamétrie (émetteurs gamma) et radiotoxicologie des excreta (émetteurs alpha/bêta purs).",
+            "Décorporation ciblée selon le radionucléide, d'autant plus efficace qu'elle est précoce (idéalement dans la première heure).",
+            "Traçabilité réglementaire : évaluation par la personne compétente en radioprotection/physicien médical, déclaration et classement de l'événement."
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Le facteur temps est décisif",
+              "text": "L'efficacité de la décorporation décroît rapidement une fois le radionucléide fixé sur ses organes cibles. Pour l'iode radioactif notamment, le blocage thyroïdien est d'autant plus protecteur qu'il est administré tôt : orienter sans délai vers l'équipe de médecine nucléaire est la meilleure conduite."
+            },
+            {
+              "type": "info",
+              "title": "Ne pas confondre les situations",
+              "text": "La plupart des incidents en médecine nucléaire sont des projections cutanées (dose à la peau/extrémités), pas des incorporations internes. L'équipe spécialisée fait la distinction et calibre la réponse, évitant à la fois la sous-estimation et le traitement inutile."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité",
+          "text": "**Comment lire la carte d'identité.** La **contamination interne** désigne l'**incorporation** d'un radionucléide dans l'organisme — par inhalation, ingestion ou effraction cutanée (plaie, brûlure) — à distinguer de l'**irradiation externe** (source à distance) et de la **contamination externe** (dépôt cutané).[29][7] En médecine nucléaire, c'est un **risque rare** ; la très grande majorité des incidents documentés sont en réalité des **contaminations externes cutanées** (projection de seringue), non des incorporations internes vraies.[33][9] Le radionucléide incorporé délivre une dose tant qu'il reste présent (décroissance physique + élimination biologique) : c'est la notion de **dose engagée**, intégrée sur **50 ans chez l'adulte** et jusqu'à **70 ans chez l'enfant**.[8][29] Contrairement à l'irradiation externe, le niveau de contamination interne **n'est pas directement mesurable** : il s'évalue par calcul à partir d'un **modèle biocinétique** propre à chaque radionucléide.[7]\n\n| Champ | Valeur |\n|---|---|\n| **Définition** | Incorporation d'un radionucléide dans l'organisme (voie interne) |\n| **Voies d'entrée** | Inhalation · ingestion · plaie/effraction · (peau saine : barrière) [29] |\n| **Radionucléides types (méd. nuc.)** | ⁹⁹ᵐTc, ¹⁸F (courte période) · ¹³¹I (thérapie) [7][29] |\n| **Grandeur de référence** | Dose efficace engagée E(50) — 50 ans adulte / 70 ans enfant [8][29] |\n| **Coefficients de dose** | Sv/Bq incorporé — série CIPR OIR (travailleur) [11][37] |\n| **Métrologie in vivo** | Anthropogammamétrie (émetteurs X/γ) [7][41] |\n| **Métrologie in vitro** | Radiotoxicologie des excréta (émetteurs α/β purs) [7] |\n| **Limite travailleur** | 20 mSv/an (moy. 5 ans), 50 mSv max sur 1 an [45] |\n| **Traitement** | Décorporation ciblée : KI (¹³¹I), DTPA (Pu/Am/Cm), bleu de Prusse (Cs/Tl) [30][31][4] |\n| **Fenêtre thérapeutique** | Précocité : 1ʳᵉ heure idéale (avant fixation cellulaire) [14][29] |\n| **Cadre France** | Guide national d'intervention médicale (ASN 2008, rév. 2023) [5][6] · SISERI · INES [42][9] |\n\nLes activités, seuils et posologies exacts sont détaillés aux mouvements ultérieurs (métrologie, coefficients de dose, décorporation) ; cette carte n'en donne que l'ossature.",
+          "stats": [
+            {
+              "value": "Rare",
+              "label": "Incidence en médecine nucléaire [29]"
+            },
+            {
+              "value": "50 ans",
+              "label": "Intégration de la dose engagée (adulte) [8]"
+            },
+            {
+              "value": "20 mSv/an",
+              "label": "Limite dose efficace travailleur [45]"
+            },
+            {
+              "value": "1ʳᵉ heure",
+              "label": "Fenêtre optimale de décorporation [14]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Trois grandeurs à ne pas confondre. L'**irradiation externe** se mesure directement (dosimètre). La **contamination externe** se détecte par radiamétrie de surface. La **contamination interne**, elle, ne se mesure jamais directement : on mesure une **activité** (in vivo ou dans les excréta) puis on remonte à l'**incorporation** puis à la **dose engagée** via un modèle biocinétique et un coefficient de dose.[7][8]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège - « incident Tc-99m » ≠ incorporation",
+              "text": "La plupart des événements déclarés en médecine nucléaire (ex. CHRU Strasbourg 2018 : projection de ⁹⁹ᵐTc sur l'avant-bras, dose équivalente à la peau ≈ **183 mSv**, INES niveau 1) sont des **contaminations externes cutanées** avec dose aux extrémités/peau, **et non des dépôts internes**.[33][9] Ne pas assimiler automatiquement projection cutanée et contamination interne : la conduite (décontamination de surface vs décorporation systémique) diffère."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Temps, distance, écran : les trois leviers ALARA de réduction de dose, socle de la prévention de la contamination interne en médecine nucléaire."
+          }
+        },
+        {
+          "title": "A2 - Définition & terminologie",
+          "text": "La **contamination interne** est l'**incorporation** d'un radionucléide à l'intérieur de l'organisme, où il devient une **source d'irradiation interne** persistante jusqu'à son élimination.[29][7] Elle s'oppose à deux entités qu'il faut rigoureusement distinguer, car elles n'appellent ni la même métrologie ni la même prise en charge :\n\n| Terme | Définition | Détection | Grandeur |\n|---|---|---|---|\n| **Irradiation externe** | Exposition à une source située **hors** du corps | Dosimètre passif/opérationnel (direct) | Dose efficace / équivalente [45] |\n| **Contamination externe** | Dépôt de matière radioactive **sur la peau/vêtements** | Radiamétrie de surface | Dose à la peau/extrémités [33] |\n| **Contamination interne** | Radionucléide **incorporé** dans l'organisme | Indirecte (anthropogammamétrie, excréta) → modèle biocinétique | **Dose efficace engagée** E(50) [8][7] |\n\n**Dose engagée (committed dose).** Un radionucléide incorporé continue d'irradier tant qu'il est présent. La grandeur pertinente n'est donc pas une dose instantanée mais la **dose efficace engagée**, intégrale de la dose sur la période de rétention conventionnelle : **50 ans à partir de l'incorporation chez l'adulte**, **jusqu'à 70 ans chez l'enfant**.[8][29] Réglementairement, cette dose engagée est **imputée à l'année de l'incorporation**.[8]\n\n**Période effective.** La décroissance de l'activité corporelle combine deux processus indépendants — la **décroissance physique** (T½ physique) et l'**élimination biologique** (T½ biologique) — dont les constantes s'additionnent :\n\n$$\\frac{1}{T_{\\text{eff}}} = \\frac{1}{T_{\\text{phys}}} + \\frac{1}{T_{\\text{biol}}}$$\n\nCette relation est le fondement conceptuel de la décorporation : on ne peut agir sur T_phys (constante nucléaire), mais on peut **raccourcir T_biol** pour réduire l'intégrale de dose (§A4).[19][29] À titre d'illustration, l'¹³¹I a une T½ physique de **~8 j** et une T½ biologique thyroïdienne de **~57–80 j**, d'où une **T½ effective ≈ 7 j** dominée par la décroissance physique.[29][21]\n\n**Coefficient de dose.** Le passage de l'activité incorporée à la dose engagée s'opère via un **coefficient de dose** (unité : **Sv/Bq incorporé**), tabulé par la CIPR pour l'inhalation et l'ingestion, par radionucléide et par type d'absorption (§A4).[11][37] La **Limite Annuelle d'Incorporation (LAI/ALI)** en découle : LAI = 20 mSv ÷ coefficient de dose (Sv/Bq), soit l'incorporation qui délivrerait la limite annuelle de dose efficace.[28]\n\n**Terminologie de la métrologie.** L'évaluation repose sur deux familles de mesures (détaillées au mouvement « métrologie ») : les mesures **in vivo** (**anthropogammamétrie**, ou *whole body counting*, pour les émetteurs X et γ) et les mesures **in vitro** (**radiotoxicologie** des excréta — urines, selles — seule voie pour les émetteurs α et β purs non mesurables in vivo).[7][41]",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Acronymes clés",
+              "text": "**LAI/ALI** = Limite Annuelle d'Incorporation (Annual Limit on Intake). **CIPR** = Commission Internationale de Protection Radiologique (ICRP). **OIR** = Occupational Intakes of Radionuclides (série CIPR 130–141). **E(50)** = dose efficace engagée à 50 ans. **HTO** = eau tritiée. **DTPA** = acide diéthylène-triamine-penta-acétique. **KI** = iodure de potassium."
+            },
+            {
+              "type": "warning",
+              "title": "Piège - le diagnostic est métrologique, pas clinique",
+              "text": "À faibles doses, la contamination interne **n'a aucun signe clinique spécifique**.[7] On ne « voit » rien : le diagnostic et la quantification reposent entièrement sur la mesure (anthropogammamétrie + radiotoxicologie) et le calcul biocinétique. Ne jamais conclure à l'absence de contamination sur la seule clinique."
+            }
+          ]
+        },
+        {
+          "title": "A3 - Voies d'incorporation & radionucléides à risque",
+          "text": "Le radionucléide franchit l'enveloppe corporelle par l'une de **quatre portes d'entrée**, dont la peau saine constitue en pratique une barrière efficace :[29]\n\n| Voie | Mécanisme | Contexte typique |\n|---|---|---|\n| **Inhalation** | Aérosols, gaz, vapeurs → dépôt selon la granulométrie | Voie majeure en accident ; aérosol de référence CIPR : **AMAD 5 µm** [11][29] |\n| **Ingestion** | Portage mains-bouche, denrées/boissons contaminées | Manuportage au poste de travail [29] |\n| **Voie transcutanée (plaie)** | Passage par effraction (« wound intake ») | Piqûre, coupure, brûlure — modèle biocinétique NCRP 2007 [46][34] |\n| **Peau saine** | Barrière ; franchie seulement si lésée | Rare hors solvants/composés lipophiles [29] |\n\n**Devenir selon la granulométrie et la solubilité.** Pour l'inhalation, le lieu de dépôt (voies aériennes supérieures vs alvéoles) dépend de la taille des particules (**AMAD** — *Activity Median Aerodynamic Diameter*), et le devenir systémique de leur **solubilité** : la CIPR classe les composés en types d'absorption **F** (*Fast*), **M** (*Moderate*) et **S** (*Slow*), qui conditionnent le coefficient de dose (§A4).[11][37] Les particules **insolubles de haute activité** déposées en profondeur alvéolaire (actinides) peuvent justifier un **lavage broncho-alvéolaire**.[13]\n\n**Radionucléides à risque en médecine nucléaire.** Le spectre y est particulier : dominé par des émetteurs de **courte période** (⁹⁹ᵐTc, ¹⁸F) et par l'**¹³¹I** en thérapie. Le tableau ci-dessous synthétise les propriétés physiques déterminantes pour la métrologie et la décorporation :\n\n| Radionucléide | T½ physique | Émission principale | T½ biologique / cible | Décorporant |\n|---|---|---|---|---|\n| **⁹⁹ᵐTc** | **6,02 h** | γ **140 keV** | ~1 j (répartition large) | — (décroissance) [48][12] |\n| **¹⁸F** | **~110 min** | β⁺ → **511 keV** | courte | — (décroissance) [49] |\n| **¹³¹I** | **~8,0 j** | β⁻ + γ **364 keV** | ~57–80 j / **thyroïde** | **KI / Lugol** [21][22][29] |\n| **¹³⁷Cs** | **~30 ans** | β⁻ + γ **662 keV** | musculaire (analogue K⁺) | **Bleu de Prusse** [23][29] |\n| **⁹⁰Sr** | ~29 ans | β⁻ pur | ~50 ans / **os** | phosphate/gluconate Ca [29] |\n| **²³⁹Pu / ²⁴¹Am** | ~24 100 ans / ~432 ans | **α** | os + foie | **Ca-DTPA / Zn-DTPA** [23][31] |\n| **³H (HTO)** | 12,3 ans | β⁻ pur | ~10 j (eau) / ~40 j (org.) | hyperhydratation [19][20] |\n\n**Comportement métabolique — l'« imposteur métabolique ».** Chaque radionucléide emprunte la voie de son analogue physiologique : l'**iode radioactif** suit la voie de l'iode alimentaire vers la **thyroïde** (organe cible n°1 en médecine nucléaire) ; le **césium** mime le **potassium** et diffuse dans le compartiment musculaire ; les **actinides** (Pu, Am, Cm) se comportent en analogues du fer/calcium et se piègent dans l'**os et le foie** ; le **tritium** (HTO) se dilue dans l'eau corporelle totale — **97 % rejoignent le sang** (T_biol ≈ 10 j) et **3 % s'incorporent aux molécules organiques** (T_biol ≈ 40 j).[19][23][29] Cette logique d'analogie fonde le mécanisme de la décorporation : **saturer** la cible (iodure stable), **chélater** (DTPA) ou **séquestrer** dans le tube digestif (bleu de Prusse).[30][31][4]",
+          "stats": [
+            {
+              "value": "5 µm",
+              "label": "AMAD de l'aérosol de référence CIPR [11]"
+            },
+            {
+              "value": "140 keV",
+              "label": "γ du ⁹⁹ᵐTc [48]"
+            },
+            {
+              "value": "364 keV",
+              "label": "γ de l'¹³¹I (thyroïde) [21]"
+            },
+            {
+              "value": "97 %",
+              "label": "HTO rejoignant le sang (T_biol ≈ 10 j) [19]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Émetteurs γ vs α/β purs - conséquence métrologique",
+              "text": "La voie d'émission dicte la méthode de détection. Les émetteurs **X/γ** (⁹⁹ᵐTc, ¹³¹I, ¹³⁷Cs) sont mesurables **in vivo** par anthropogammamétrie. Les émetteurs **α et β purs** (²³⁹Pu, ²⁴¹Am, ⁹⁰Sr, ³H) sont **invisibles** en anthropogammamétrie standard et n'accèdent qu'à la **radiotoxicologie des excréta**.[7][23] C'est le premier arbitrage de toute enquête de contamination interne."
+            },
+            {
+              "type": "warning",
+              "title": "Piège - la plaie contaminée se décontamine avant la peau saine",
+              "text": "La voie transcutanée (piqûre/coupure au poste de préparation) court-circuite la barrière cutanée. La plaie doit être irriguée et décontaminée **en priorité, avant la peau saine environnante**, pour limiter le passage systémique ; débridement **minimal** des berges, sans excision au-delà de la plaie, corps étrangers retirés à la pince dans un conteneur plombé.[29][50]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_NIS",
+            "alt": "Symporteur sodium-iodure (NIS) de la cellule thyroïdienne : voie d'entrée de l'iode radioactif incorporé, cible du blocage par l'iodure stable (KI)."
+          }
+        },
+        {
+          "title": "A4 - Biocinétique & modèles CIPR : du dépôt à la dose engagée",
+          "text": "**Principe.** Puisque la contamination interne n'est pas mesurable directement, la CIPR fournit un cadre biocinétique complet reliant l'**activité incorporée** à la **dose efficace engagée**. La chaîne d'évaluation comporte quatre maillons :[8][7][37]\n\n$$\\text{Activité mesurée} \\xrightarrow{\\text{fonction de rétention/excrétion}} \\text{Incorporation (Bq)} \\xrightarrow{\\text{coefficient de dose (Sv/Bq)}} \\text{Dose efficace engagée}$$\n\nLa **fonction de rétention/excrétion** (ou fonction de bioessai) prédit, pour un radionucléide et une voie donnés, quelle **fraction de l'incorporation** reste présente dans le corps ou est excrétée à un instant donné. C'est elle qui permet de remonter d'une mesure ponctuelle (anthropogammamétrie ou activité urinaire de 24 h) à l'incorporation initiale.[8][37]\n\n**Modèles compartimentaux CIPR.** Le devenir d'un radionucléide incorporé est décrit par un enchaînement de modèles :\n\n- Un **modèle de la région d'entrée** : Human Respiratory Tract Model (HRTM) pour l'inhalation, avec le classement en types d'absorption **F/M/S** et l'aérosol de référence **AMAD 5 µm** ; modèle du tractus digestif pour l'ingestion ; **modèle de plaie NCRP 2007** pour la voie transcutanée.[11][37][46]\n- Un **modèle systémique** spécifique de l'élément (biocinétique dans le sang, les organes de rétention, les voies d'excrétion), reflétant le comportement d'analogue métabolique décrit au §A3.\n\n**Coefficients de dose.** La série **OIR (Occupational Intakes of Radionuclides)** de la CIPR — publications **130, 134, 137, 141** — tabule les coefficients de dose du **travailleur** (Sv/Bq) par radionucléide, voie, type d'absorption et granulométrie. La **CIPR 137 (2017)** couvre notamment ce périmètre ; ses coefficients sont, pour la majorité, **légèrement inférieurs (facteur < 2)** à ceux de l'ancienne série CIPR 30.[11][37] Pour le **patient**, la **CIPR 128 (2015)** compile les doses par radiopharmaceutique administré.[38][39] Ces coefficients « patient » servent aussi à estimer l'ordre de grandeur d'une **incorporation professionnelle accidentelle** d'un radiopharmaceutique.\n\n| Radionucléide (occupationnel) | Voie / type | Coefficient de dose |\n|---|---|---|\n| **⁹⁹ᵐTc** | Inhalation type F | **1,2 × 10⁻¹¹ Sv/Bq** [12] |\n| **⁹⁹ᵐTc** | Inhalation type M | **1,9 × 10⁻¹¹ Sv/Bq** [12] |\n| **⁹⁹ᵐTc** | Ingestion | **2,2 × 10⁻¹¹ Sv/Bq** [12] |\n\nÀ titre de repère « patient » (dose efficace par activité administrée, CIPR 128) : **¹⁸F-FDG ≈ 1,6 × 10⁻² mSv/MBq** (organe critique : paroi vésicale) ; **¹³¹I-iodure ≈ 2,2 mSv/MBq** avec la **thyroïde** comme organe critique.[32][40]\n\n**Du calcul à la décision.** L'incorporation calculée se compare aux valeurs de référence : la **LAI** (contexte de suivi professionnel, = 20 mSv ÷ coefficient de dose) et, en réponse d'urgence, le **CDG** (*Clinical Decision Guide*) — correspondant à ~**250 mSv** de dose efficace engagée sur 50 ans chez l'adulte, abaissé à **20 % de la valeur adulte** chez l'enfant et la femme enceinte.[28][29] Le franchissement de ces seuils déclenche la décorporation. La **précocité prime** : l'efficacité est maximale dans la **1ʳᵉ heure** (au plus tard 3–4 h), pour capter le radionucléide dans le liquide extracellulaire **avant sa fixation cellulaire** ; en pratique française, on traite **sans attendre la preuve formelle** dès que le radionucléide potentiel est identifié.[14][29][5]\n\n**Fiabilité de la reconstruction.** Une **mesure unique précoce** est peu fiable (biocinétique encore transitoire) ; des **mesures répétées** sur jours à mois permettent une reconstruction de dose bien plus robuste. Un **recueil incomplet des excréta** (urines de 24 h) biaise l'incorporation calculée — piège classique de sous-estimation.[7][29]",
+          "steps": [
+            {
+              "title": "1 · Mesurer l'activité",
+              "text": "Anthropogammamétrie horodatée (émetteurs X/γ) et/ou radiotoxicologie des excréta (α/β purs). Recueil urinaire de 24 h ou spot ; recueil fécal pour les composés inhalés peu solubles.[7][29]"
+            },
+            {
+              "title": "2 · Remonter à l'incorporation",
+              "text": "Application de la fonction de rétention/excrétion CIPR propre au radionucléide, à la voie et au type d'absorption (F/M/S, AMAD 5 µm) → activité incorporée en Bq.[8][37]"
+            },
+            {
+              "title": "3 · Convertir en dose engagée",
+              "text": "Multiplication par le coefficient de dose (Sv/Bq) → dose efficace engagée E(50) adulte / E(70) enfant.[8][11]"
+            },
+            {
+              "title": "4 · Comparer aux seuils",
+              "text": "Confrontation à la LAI (suivi) ou au CDG (~250 mSv adulte ; 20 % chez enfant/femme enceinte) → décision de décorporer.[28][29]"
+            },
+            {
+              "title": "5 · Traiter précocement & réévaluer",
+              "text": "Décorporation ciblée le jour même (1ʳᵉ h idéale), puis mesures répétées pour affiner la dose et estimer la dose évitée.[14][5][13]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "Sv/Bq",
+              "label": "Unité du coefficient de dose (CIPR OIR) [11]"
+            },
+            {
+              "value": "CIPR 137",
+              "label": "Coefficients travailleur (OIR, 2017) [37]"
+            },
+            {
+              "value": "~250 mSv",
+              "label": "CDG adulte déclenchant la décorporation [29]"
+            },
+            {
+              "value": "< 2",
+              "label": "Facteur de baisse vs CIPR 30 [37]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - travailleur (CIPR 137) vs patient (CIPR 128)",
+              "text": "Deux référentiels de coefficients coexistent et ne s'interchangent pas. La série **OIR (CIPR 130–141)** vise le **travailleur** exposé à une incorporation accidentelle (types F/M/S, AMAD 5 µm).[11][37] La **CIPR 128** vise le **patient** recevant un radiopharmaceutique (biocinétique du produit administré, doses aux organes).[38] Pour une incorporation professionnelle d'un radiopharmaceutique, la CIPR 128 donne un ordre de grandeur, mais la dosimétrie réglementaire relève de la série OIR."
+            },
+            {
+              "type": "warning",
+              "title": "Piège - la mesure précoce unique surestime ou sous-estime",
+              "text": "Aux temps précoces, la biocinétique est encore en phase de redistribution : une seule mesure (in vivo ou urinaire) donne une incorporation très incertaine. Toujours privilégier des **mesures répétées** dans le temps, et se méfier d'un **recueil urinaire incomplet** qui minore artificiellement l'incorporation calculée.[7][29]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Types de désintégration (alpha, bêta, gamma) : la nature de l'émission conditionne la détectabilité in vivo et le coefficient de dose du radionucléide incorporé."
+          }
+        },
+        {
+          "title": "B5 - Prévention : hiérarchie des barrières",
+          "text": "La contamination interne (incorporation d'un radionucléide par **inhalation**, **ingestion** ou **voie transcutanée** — plaie, brûlure, peau lésée) est un événement **rare** en médecine nucléaire, où le risque est dominé par les émetteurs de **courte période** (⁹⁹ᵐTc, ¹⁸F) et par l'**iode-131** en thérapie [29]. La très grande majorité des incidents documentés sont en réalité des **contaminations externes cutanées** (projection de seringue) et non des incorporations internes vraies [33]. La prévention repose sur une **hiérarchie de barrières** appliquée à la source, à l'environnement, puis au travailleur — logique d'optimisation **ALARA** (*As Low As Reasonably Achievable*) : réduire le temps d'exposition, augmenter la distance (la dose varie en **1/d²**) et interposer un écran [29].\n\n**Principe physique sous-jacent.** À la différence de l'irradiation externe (mesurable en temps réel par dosimètre), le niveau de contamination interne **n'est pas directement mesurable** : une fois incorporé, le radionucléide se distribue selon un **modèle biocinétique** propre à l'élément et délivre une dose tant qu'il n'est pas éliminé — d'où la notion de **dose efficace engagée**, intégrée sur **50 ans chez l'adulte** et **jusqu'à 70 ans chez l'enfant** [7][8][29]. La barrière la plus efficace est donc celle qui **empêche l'incorporation**, car aucune intervention *a posteriori* n'annule totalement la dose déjà déposée.\n\n**Barrière n°1 — Confinement de la source.** Manipulation des solutions non scellées (élution du générateur ⁹⁹Mo/⁹⁹ᵐTc, marquage, fractionnement) sous **hotte ou sorbonne ventilée**, en enceinte blindée, sur surfaces absorbantes jetables. Pour l'¹³¹I, la volatilité impose une vigilance particulière : la vapeur d'¹³¹I est détectable à des concentrations **~3 ordres de grandeur** sous la concentration dérivée dans l'air (DAC) de référence, ce qui rend la ventilation captée indispensable [22].\n\n**Barrière n°2 — Contrôle de l'atmosphère et des surfaces.** Renouvellement d'air et dépression des locaux « chauds », contrôle radiamétrique périodique des plans de travail, des poignées et du sol pour dépister toute contamination surfacique avant qu'elle ne devienne source d'ingestion (mains-bouche) ou de remise en suspension inhalable [29].\n\n**Barrière n°3 — Équipements de protection individuelle (EPI) et voies d'entrée.** La **peau saine** est une barrière efficace, franchie seulement si elle est lésée [29] : gants, blouse, protection des plaies préexistantes. Si une inhalation est suspectée (aérosol, poudre), le port d'un **masque à cartouche P-100 / filtre HEPA** limite la voie respiratoire [29]. L'interdiction de boire, manger et fumer en zone contrôlée coupe la voie d'ingestion.\n\n| Voie d'entrée | Barrière préventive principale | Radionucléide représentatif |\n|---|---|---|\n| **Inhalation** | Ventilation captée (sorbonne), masque HEPA/P-100 | ¹³¹I vapeur, aérosols ⁹⁹ᵐTc [22][29] |\n| **Ingestion** | Interdiction boire/manger/fumer, hygiène des mains | Produits de fission, ⁹⁹ᵐTc [29] |\n| **Transcutanée (plaie)** | Protection des effractions cutanées, gants | Actinides (accidents), ⁹⁹ᵐTc [29][46] |\n| **Peau saine** | Barrière physiologique (intacte) | — (franchie seulement si lésée) [29] |\n\n**Cadre réglementaire de la prévention.** Les barrières sont dimensionnées pour respecter les limites de dose : dose efficace travailleur **20 mSv/an** en moyenne sur 5 ans consécutifs, **50 mSv** au maximum sur une année ; dose équivalente aux **extrémités / à la peau 500 mSv/an** ; public **1 mSv/an** [45][29]. La dose engagée d'une incorporation est **imputée à l'année de l'incorporation** [8]. Toute contamination interne suspectée relève d'un **suivi dosimétrique individuel** encadré (cf. §B6) et, en cas d'événement, d'une déclaration à l'ASNR avec classement sur l'**échelle INES** [9][42].",
+          "stats": [
+            {
+              "value": "20 mSv/an",
+              "label": "Dose efficace max travailleur (moy. 5 ans) [45]"
+            },
+            {
+              "value": "500 mSv/an",
+              "label": "Dose équivalente extrémités / peau [45]"
+            },
+            {
+              "value": "1/d²",
+              "label": "Décroissance de la dose avec la distance (ALARA) [29]"
+            },
+            {
+              "value": "50 → 70 ans",
+              "label": "Intégration de la dose engagée (adulte → enfant) [8]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la barrière la plus rentable est en amont",
+              "text": "Parce que la dose efficace engagée est intégrée sur 50 ans (adulte) / 70 ans (enfant) et qu'aucun décorporant ne l'annule totalement, l'effort de radioprotection le mieux investi porte sur le **confinement de la source** (sorbonne ventilée, enceinte blindée) et non sur la remédiation. Une incorporation évitée vaut mieux qu'une décorporation optimale [8][29]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ne pas confondre risque perçu et risque réel",
+              "text": "En médecine nucléaire, l'essentiel des « incidents » réels sont des **contaminations externes cutanées** (projection de ⁹⁹ᵐTc), génératrices de dose à la peau/aux extrémités, et non des incorporations internes vraies [33]. Le dispositif préventif doit néanmoins couvrir les deux : une contamination cutanée non traitée peut secondairement s'incorporer (mains-bouche, plaie)."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Les trois leviers de réduction de dose (temps, distance, écran) appliqués à la prévention de la contamination : structure les barrières à la source, dans l'environnement et pour le travailleur."
+          }
+        },
+        {
+          "title": "B6 - Détection & surveillance de la contamination de routine",
+          "text": "Le diagnostic de contamination interne est **métrologique, non clinique** : à faibles doses il n'existe aucun signe clinique spécifique, et l'évaluation repose entièrement sur la mesure puis sur un calcul biocinétique [7]. La surveillance individuelle de routine s'appuie sur **deux familles de mesures complémentaires** — *in vivo* et *in vitro* — dont le choix dépend du type d'émission du radionucléide [7].\n\n**a) Mesures IN VIVO — anthropogammamétrie (*whole body counting*).** Mesure directe, à l'extérieur du corps, du rayonnement **X et γ** émis par les radionucléides incorporés, à l'aide de détecteurs placés en enceinte blindée bas-bruit et étalonnés sur fantômes anthropomorphes [7][41]. Adaptée aux émetteurs γ, qu'ils soient de **courte période** (⁹⁹ᵐTc, ¹⁸F en médecine nucléaire) ou de **longue période** (¹³⁷Cs à **662 keV**, ⁶⁰Co en industrie) [7][23]. La sensibilité est élevée : en pratique, la limite de détection atteint **~5 Bq d'¹³¹I dans la thyroïde** [7]. Elle est en revanche **inadaptée aux émetteurs α purs** (Pu-239, Am-241) et aux **β purs** (⁹⁰Sr), non mesurables *in vivo* [7][23].\n\n**b) Mesures IN VITRO — analyses radiotoxicologiques (excreta).** Dosage des radionucléides dans les **urines** (recueil de 24 h ou spot), les **selles** (composés peu solubles inhalés) et, en contexte d'incident, le mouchage. C'est la **seule méthode** pour les émetteurs **α et β purs** non détectables *in vivo* (⁹⁰Sr, Pu, Am) [7][29].\n\n| Méthode | Cible | Émetteurs mesurables | Limite / usage |\n|---|---|---|---|\n| **Anthropogammamétrie** (in vivo) | Corps entier / thyroïde | X, γ (¹³¹I, ⁹⁹ᵐTc, ¹³⁷Cs) | ~5 Bq ¹³¹I thyroïde ; aveugle aux α/β purs [7] |\n| **Radiotoxicologie** (in vitro) | Urines, selles, mouchage | α, β, γ (Pu, Am, ⁹⁰Sr) | Méthode de choix pour actinides [7][29] |\n\n**Chaîne d'évaluation de la dose.** La mesure brute n'est qu'une étape : activité mesurée (*in vivo* ou excreta) → application d'une **fonction de rétention / excrétion** biocinétique → **activité incorporée (Bq)** → **coefficient de dose (Sv/Bq)** → **dose efficace engagée (Sv)** [8][37]. La CIPR fournit ces fonctions de bioessai de référence et les coefficients dans la série **OIR** (*Occupational Intakes of Radionuclides*, CIPR 130/134/137/141) : la **Publication 137 (2017)** tabule les coefficients Sv·Bq⁻¹ par incorporation (inhalation/ingestion) pour tous les types d'absorption F/M/S et l'aérosol de référence **AMAD 5 µm** [11][37]. À titre d'exemple occupationnel, le ⁹⁹ᵐTc inhalé (type F) a un coefficient de **1,2×10⁻¹¹ Sv/Bq**, type M **1,9×10⁻¹¹ Sv/Bq**, et par ingestion **2,2×10⁻¹¹ Sv/Bq** [12].\n\n**Valeurs de référence de la surveillance.** L'activité incorporée est comparée à la **Limite Annuelle d'Incorporation (LAI / ALI)**, définie comme **20 mSv/an ÷ coefficient de dose (Sv/Bq)** [28]. Un **niveau d'enregistrement** est classiquement dérivé d'une dose efficace annuelle ≥ **1 mSv** (soit ~10 % de la limite) [45]. Des mesures **répétées** sur plusieurs jours ou mois reconstruisent la dose plus fidèlement qu'une mesure unique précoce [7]. En France, les résultats alimentent le suivi dosimétrique individuel enregistré dans **SISERI**, sous la responsabilité du **physicien médical / conseiller en radioprotection (PCR/CRP)** [42].\n\n**Cadre normatif.** La surveillance de la contamination interne est encadrée par la norme **ISO 20553:2017** et par les standards de sûreté de l'AIEA (Pub1081) qui fixent programmes, périodicités et seuils de décision [45].",
+          "stats": [
+            {
+              "value": "~5 Bq",
+              "label": "Limite de détection ¹³¹I thyroïde (anthropogammamétrie) [7]"
+            },
+            {
+              "value": "20 mSv ÷ e(g)",
+              "label": "Définition de la LAI (limite annuelle d'incorporation) [28]"
+            },
+            {
+              "value": "AMAD 5 µm",
+              "label": "Aérosol de référence des coefficients CIPR 137 [37]"
+            },
+            {
+              "value": "ISO 20553",
+              "label": "Norme encadrant la surveillance de routine [45]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — les émetteurs α/β purs sont invisibles à l'anthropogammamétrie",
+              "text": "Un Pu-239 (α, T½ ≈ 24 100 ans) ou un ⁹⁰Sr (β pur) incorporé ne produit **aucun signal** en comptage corps entier : seule la **radiotoxicologie des excreta** les révèle [7][23]. Devant une suspicion de contamination par actinide ou émetteur β pur, ne jamais conclure « négatif » sur une anthropogammamétrie normale."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — le recueil d'excreta doit être complet",
+              "text": "Un recueil urinaire de 24 h incomplet **sous-estime** l'activité excrétée et donc l'incorporation calculée [29]. La traçabilité horodatée du recueil et la répétition des mesures sont indispensables à une reconstruction de dose fiable [7]."
+            },
+            {
+              "type": "info",
+              "title": "Info — mesure ≠ dose",
+              "text": "L'activité mesurée (Bq) ne devient une dose efficace engagée (Sv) qu'après passage par la fonction biocinétique et le coefficient de dose CIPR ; c'est ce calcul, et non la mesure brute, qui est comparé à la LAI (20 mSv ÷ coefficient de dose) [8][28][37]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_UPTAKE",
+            "alt": "Captation thyroïdienne de l'iode : organe cible n°1 de la surveillance in vivo par anthropogammamétrie, où la limite de détection atteint ~5 Bq d'iode-131."
+          }
+        },
+        {
+          "title": "B7 - Conduite immédiate en cas d'incident de contamination",
+          "text": "Face à un incident de contamination, la conduite immédiate obéit à trois impératifs hiérarchisés : **stabiliser le patient**, **limiter l'incorporation**, puis **évaluer et tracer** [29][5]. Le principe cardinal thérapeutique est la **précocité** : l'efficacité de la décorporation est **fortement temps-dépendante**, optimale dans la **1ʳᵉ heure** et au plus tard **3–4 h** après l'incorporation, afin de capter le radionucléide dans le liquide extracellulaire **avant** sa fixation cellulaire [14]. La doctrine opérationnelle française est explicite : « une contamination est **toujours traitée le jour même** », et l'on **traite sans attendre la preuve formelle** dès que le(s) radionucléide(s) potentiel(s) sont identifiés [10][5].\n\n**Séquence de prise en charge** (algorithme, PMC5776730) [29] :\n1. **Stabiliser les urgences vitales d'abord** — la décontamination ne retarde jamais la réanimation.\n2. **Retrait des vêtements** + double ensachage ; **contrôle radiamétrique** systématique.\n3. **Décontamination externe** non agressive : lavage doux à l'eau et au savon jusqu'à obtention d'un plateau ; la **plaie contaminée est décontaminée AVANT la peau saine** (irrigation au sérum physiologique, débridement **minimal** des berges, corps étrangers retirés à la pince et placés en conteneur plombé, sans excision au-delà de la plaie) [29][50].\n4. **Évaluation de l'incorporation** : anthropogammamétrie horodatée + bioessai (urines/selles 24 h, spot, mouchage) [7][29].\n5. **Comparaison aux valeurs de référence** (LAI/ALI ; *Clinical Decision Guide* — CDG — en réponse d'urgence, correspondant à ~250 mSv de dose efficace engagée sur 50 ans chez l'adulte, **réduit à 20 %** de la valeur adulte chez l'enfant et la femme enceinte) → décision de traiter [29].\n6. **Décorporation ciblée** selon le radionucléide, le plus tôt possible.\n7. **Suivi long terme** (effets stochastiques) et **enregistrement dosimétrique** (SISERI), déclaration ASNR + classement **INES** [42][9].\n\n**Décorporants de référence.** Le choix est dicté par l'identité chimique du contaminant [5][29] :\n\n| Contaminant | Décorporant | Mécanisme | Posologie adulte |\n|---|---|---|---|\n| **Radioiodes** (¹²³/¹²⁴/¹³¹I) | Iodure de potassium (KI) / Lugol | Blocage thyroïdien (saturation, effet Wolff-Chaikoff) | **130 mg** (≥ 40 ans / 18–40 ans / grossesse) [30][35] |\n| **Actinides** (Pu, Am, Cm) + cations II–IV | Ca-DTPA puis Zn-DTPA | Chélation → complexe hydrosoluble → excrétion urinaire | **1 g/j** IV (14 mg/kg, max 1 g/j) [1][31] |\n| **¹³⁷Cs, Tl**, produits de fission | Bleu de Prusse (Radiogardase®) | Interruption du cycle entéro-hépatique → excrétion fécale | **3 g × 3/j** (= 9 g/j) PO, ≥ 30 j [4][25] |\n| **Tritium** (HTO) | Hyperhydratation / diurèse forcée | Dilution isotopique → raccourcit T_biol (~10 j) | Diurèse forcée [19][20] |\n\n**Iodure de potassium — le plus pertinent en médecine nucléaire.** Le KI sature la thyroïde et bloque la captation d'iode radioactif ; il protège **uniquement la thyroïde** (aucune protection contre ¹³⁷Cs, ⁹⁰Sr ou l'irradiation externe) [30][29]. Son efficacité est **critiquement temps-dépendante** : pris **quelques heures avant**, réduction ~**98 %** ; **simultané / 1–2 h après**, blocage **> 90 %** ; à **6 h**, efficacité ~**50 %** ; **> 4 h après** inhalation, bénéfice fortement réduit ; **≥ 96 h avant**, aucun effet protecteur significatif [36][44][30]. La protection dure **~24 h** → une prise par jour tant que le risque persiste. Seuils de dose thyroïdienne prédite déclenchant le KI : adulte > 40 ans **≥ 500 cGy** ; adulte 18–40 ans **≥ 10 cGy** ; **enfant ≤ 18 ans / femme enceinte-allaitante ≥ 5 cGy** (surrisque de cancer thyroïdien de l'enfant) [30][35]. En France, la posologie unique en comprimés de **130 mg** est : nouveau-né 0–1 mois **1/8 cp**, 1 mois–3 ans **1/4 cp**, 3–12 ans **1/2 cp**, > 12 ans et adultes **1 cp** [5].\n\n**DTPA (acide diéthylène-triamine-penta-acétique).** Chélateur des **transuraniens** (Pu, Am, Cm) ; **inefficace sur l'uranium et le neptunium** [31]. **Ca-DTPA est préféré pendant les 24 premières heures** (plus efficace), avec relais par **Zn-DTPA** (moins déplétant en métaux essentiels, notamment le zinc) [1][31]. Sur **plaie ou brûlure contaminée**, application locale en urgence : lavage à la solution de DTPA à **25 %** (dilution à **10 %** pour l'œil) et pansement absorbant contenant **3 à 4 g** de Ca-DTPA [5].\n\n**Bleu de Prusse (ferrocyanure ferrique, Radiogardase®).** Piège le césium et le thallium dans le tube digestif et interrompt le **cycle entéro-hépatique**, transférant l'excrétion de la voie urinaire vers la voie **fécale** [4][29]. Il réduit la demi-vie effective du ¹³⁷Cs de **46 %** chez l'adolescent et **43 %** chez l'enfant de 4–12 ans, abaissant la dose efficace engagée corps entier d'un **facteur 2 à 3** [24]. Pédiatrie (2–12 ans) : **1 g × 3/j**, gélules ouvrables et mélangeables à la nourriture [4].",
+          "steps": [
+            {
+              "title": "1. Stabiliser",
+              "text": "Prendre en charge les urgences vitales en priorité absolue ; la décontamination ne retarde jamais la réanimation [29]."
+            },
+            {
+              "title": "2. Déshabiller & contrôler",
+              "text": "Retrait des vêtements, double ensachage, contrôle radiamétrique de la peau, des plaies et de l'environnement [29]."
+            },
+            {
+              "title": "3. Décontaminer",
+              "text": "Lavage externe doux (eau + savon) ; plaie traitée AVANT la peau saine (irrigation, DTPA 25 % local si actinide) [29][5]."
+            },
+            {
+              "title": "4. Évaluer l'incorporation",
+              "text": "Anthropogammamétrie horodatée + bioessai (urines/selles 24 h, mouchage) ; identifier le(s) radionucléide(s) [7][29]."
+            },
+            {
+              "title": "5. Décider & décorporer",
+              "text": "Comparer à la LAI/CDG ; traiter le jour même sans attendre la preuve formelle : KI (iode), DTPA (actinides), bleu de Prusse (Cs/Tl), hydratation (tritium) [10][29]."
+            },
+            {
+              "title": "6. Tracer & suivre",
+              "text": "Enregistrement dosimétrique (SISERI), déclaration d'événement significatif à l'ASNR, classement INES, suivi des effets stochastiques [42][9]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "1ʳᵉ heure",
+              "label": "Fenêtre optimale de décorporation (au plus tard 3–4 h) [14]"
+            },
+            {
+              "value": "98 % → 50 %",
+              "label": "Efficacité du KI (quelques h avant → 6 h après) [44]"
+            },
+            {
+              "value": "9 g/j",
+              "label": "Bleu de Prusse adulte (3 g × 3/j), ≥ 30 jours [4]"
+            },
+            {
+              "value": "× 2–3",
+              "label": "Réduction de la dose Cs-137 par le bleu de Prusse [24]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — traiter la plaie AVANT la peau saine",
+              "text": "Une plaie contaminée est une porte d'entrée directe vers la circulation systémique : elle doit être décontaminée **en priorité** sur la peau intacte (irrigation, débridement minimal des berges), sans excision au-delà de la plaie et corps étrangers retirés à la pince en conteneur plombé [29][50]. Décontaminer d'abord la peau saine laisserait le radionucléide s'incorporer par la plaie."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — le KI n'est pas une « pilule anti-radiations »",
+              "text": "Le KI ne protège **que la thyroïde** et **que contre l'iode radioactif** ; il est inutile pour tout autre radionucléide (¹³⁷Cs, ⁹⁰Sr, actinides) et contre l'irradiation externe [29]. Administré trop tard (> 4–6 h après inhalation) ou trop tôt (> 96 h avant), il perd son bénéfice [36][44]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — Ca-DTPA d'abord, Zn-DTPA en relais ; Zn-DTPA en grossesse",
+              "text": "Le Ca-DTPA est plus efficace dans les 24 premières heures mais plus déplétant en zinc/manganèse ; on relaie par le Zn-DTPA au-delà [1][31]. Chez la **femme enceinte**, le Zn-DTPA est utilisé **exclusivement** (tératogénicité animale du Ca-DTPA), sauf contamination très élevée [3][31]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_NIS",
+            "alt": "Symporteur sodium-iodure (NIS) thyroïdien : cible du blocage par l'iodure de potassium, qui sature la captation de l'iode radioactif en cas de contamination interne par les radioiodes."
+          }
+        },
+        {
+          "title": "C8 - Anthropogammamétrie & mesures directes",
+          "text": "L'**anthropogammamétrie** (*whole-body counting*, mesure **in vivo**) est la mesure directe, à l'extérieur du corps, du rayonnement **X et γ** émis par un radionucléide incorporé. Elle constitue le premier pilier de la surveillance individuelle de la contamination interne, aux côtés des analyses radiotoxicologiques (§C9). Son principe est simple : un détecteur placé au contact du sujet capte les photons qui traversent les tissus, et l'activité corporelle (**Bq**) est déduite après étalonnage sur fantôme anthropomorphe [7,8,41].\n\n**Champ d'application — la nature de l'émission commande la méthode.** L'anthropogammamétrie ne « voit » que les émetteurs de photons suffisamment énergétiques pour franchir les tissus. Elle est donc adaptée :\n- aux radionucléides de **courte période** rencontrés en médecine nucléaire — **⁹⁹ᵐTc** (T½ **6 h**, γ **140 keV**) et **¹⁸F** (T½ **≈ 110 min**, annihilation **511 keV**) [48,49] ;\n- à l'**¹³¹I** thérapeutique (γ dominant **364 keV**), avec une limite de détection en pratique de l'ordre de **5 Bq** dans la thyroïde [21,29] ;\n- aux émetteurs de **longue période** de l'industrie nucléaire (**¹³⁷Cs**, γ **662 keV** via ¹³⁷ᵐBa ; **⁶⁰Co**) [23,7].\n\nÀ l'inverse, elle est **inadaptée aux émetteurs α purs** (²³⁹Pu, ²⁴¹Am) et **β purs** (⁹⁰Sr, ³H) dont le rayonnement ne sort pas du corps : ceux-ci relèvent exclusivement de la radiotoxicologie des excreta (§C9) [7,29].\n\n| Radionucléide | T½ physique | Émission mesurable | Anthropogammamétrie |\n|---|---|---|---|\n| ⁹⁹ᵐTc | **6 h** [48] | γ **140 keV** [48] | Oui (courte période) [7] |\n| ¹⁸F | **≈ 110 min** [49] | γ **511 keV** [49] | Oui (fenêtre courte) [7] |\n| ¹³¹I | **8,02 j** [21] | γ **364 keV** [21] | Oui — LD ≈ **5 Bq** thyroïde [29] |\n| ¹³⁷Cs | **30 ans** [23] | γ **662 keV** [23] | Oui (longue période) [7] |\n| ²³⁹Pu / ²⁴¹Am | **24 100 / 432 ans** [23] | α pur | **Non** → radiotoxicologie [7,29] |\n| ⁹⁰Sr / ³H | ~29 ans / 12,3 ans | β pur | **Non** → radiotoxicologie [7,29] |\n\n**Instrumentation et conditions de mesure.** La mesure exige un **bas bruit de fond** : détecteur (scintillateur NaI(Tl) ou semi-conducteur au germanium hyper-pur pour la spectrométrie) placé dans une **enceinte blindée** en acier faiblement radioactif ou en plomb, qui écrante le rayonnement ambiant. L'étalonnage en efficacité s'appuie sur des **fantômes anthropomorphes** reproduisant la géométrie et l'atténuation des tissus [7,41]. La géométrie de comptage est adaptée à la localisation présumée : **détecteur thyroïdien** (contamination iodée), **comptage pulmonaire** (actinides inhalés, quand détectables), **comptage corps entier** (¹³⁷Cs, ⁶⁰Co) [7,41].\n\n**Cadre normatif.** Les performances métrologiques (limite de décision, limite de détection) et le programme de surveillance individuelle sont encadrés par la norme **ISO 20553:2017** relative à la surveillance de la contamination interne des travailleurs [45]. La sensibilité de la méthode dépend directement du seuil de décision de l'appareil et du temps de comptage [45].",
+          "stats": [
+            {
+              "value": "140 keV",
+              "label": "γ du ⁹⁹ᵐTc (mesurable in vivo) [48]"
+            },
+            {
+              "value": "364 keV",
+              "label": "γ dominant de l'¹³¹I [21]"
+            },
+            {
+              "value": "≈ 5 Bq",
+              "label": "Limite de détection ¹³¹I thyroïde [29]"
+            },
+            {
+              "value": "662 keV",
+              "label": "γ du ¹³⁷Cs (longue période) [23]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — les émetteurs α/β purs sont invisibles in vivo",
+              "text": "Un comptage anthropogammamétrique **normal n'exclut pas** une incorporation d'²³⁹Pu, d'²⁴¹Am, de ⁹⁰Sr ou de ³H : ces émetteurs α ou β purs n'émettent aucun photon détectable à l'extérieur du corps. Devant une exposition potentielle à ces radionucléides, il faut d'emblée recourir à la **radiotoxicologie des excreta** (§C9), sous peine de conclure faussement à l'absence de contamination [7,29]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — en médecine nucléaire, la fenêtre de mesure est étroite",
+              "text": "Pour le ⁹⁹ᵐTc (T½ **6 h**) et surtout le ¹⁸F (T½ **≈ 110 min**), la décroissance physique rapide impose une mesure **précoce** : une anthropogammamétrie différée de quelques heures peut sous-estimer, voire manquer, l'incorporation. Horodater systématiquement la mesure est indispensable à la reconstruction ultérieure de la dose (§C10) [48,49,8]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Comparaison des trois types d'émission (α, β, γ) et de leur pouvoir de pénétration : les particules α et β sont arrêtées dans les tissus tandis que les photons γ en sortent, ce qui explique pourquoi seuls les émetteurs γ sont mesurables par anthropogammamétrie in vivo."
+          }
+        },
+        {
+          "title": "C9 - Radiotoxicologie & mesures indirectes",
+          "text": "La **radiotoxicologie** (mesure **in vitro**, ou mesure *indirecte*) dose l'activité présente dans les **excreta** — principalement **urines** et **selles**, accessoirement mouchage, expectorations, sang. Elle constitue le second pilier de la surveillance individuelle et complète l'anthropogammamétrie (§C8) [7,8].\n\n**Indication première : les émetteurs non détectables in vivo.** La radiotoxicologie est la **seule** méthode d'évaluation pour les émetteurs **α** (²³⁹Pu, ²⁴¹Am, ²¹⁰Po) et **β purs** (⁹⁰Sr, ³H), invisibles à l'anthropogammamétrie [7,29]. Elle complète également la mesure directe pour les émetteurs γ, en apportant l'information sur la **cinétique d'excrétion**, essentielle à la reconstruction de dose.\n\n| Voie de mesure | Prélèvement | Radionucléides ciblés | Méthode analytique |\n|---|---|---|---|\n| Urines (excrétion urinaire) | Recueil **24 h** ou *spot* [29] | Actinides solubles (Pu, Am), ³H, produits de fission | Spectrométrie α, comptage β, scintillation liquide [7] |\n| Selles (excrétion fécale) | Recueil sur plusieurs jours [29] | Composés **peu solubles** inhalés (actinides type S) [29] | Spectrométrie α après radiochimie [7] |\n| Mouchage / expectoration | Précoce, post-inhalation | Dépôt nasopharyngé / broncho-pulmonaire | Comptage γ/α selon l'émetteur [29] |\n\n**Cas particuliers en médecine nucléaire.**\n- **Tritium (HTO — eau tritiée)** : le dosage urinaire par **scintillation liquide** est la méthode de référence. La biocinétique est bien décrite : **97 %** du HTO rejoint rapidement le sang avec une T½ biologique **≈ 10 j**, et **3 %** s'incorpore aux molécules organiques avec une T½ biologique **≈ 40 j** [19,20].\n- **Iode radioactif** : le dosage urinaire complète l'anthropogammamétrie thyroïdienne pour suivre l'élimination.\n- **Actinides inhalés** : le partage entre excrétion urinaire (formes solubles) et fécale (formes insolubles) renseigne sur le **type d'absorption pulmonaire** (F/M/S de la CIPR), paramètre déterminant du coefficient de dose (§C10) [11,29].\n\n**Chaîne de conversion mesure → activité incorporée.** L'activité mesurée dans un excreta ne renseigne sur l'incorporation qu'après application d'une **fonction de rétention/excrétion** biocinétique propre au radionucléide et à sa forme physico-chimique : activité mesurée → fonction de bioessai → **activité incorporée (Bq)**. La CIPR fournit ces fonctions de bioessai de référence dans les annexes électroniques de la série **OIR** (*Occupational Intakes of Radionuclides*), notamment la **CIPR 137 (2017)** [11,37]. La fiabilité de l'estimation croît avec le nombre de mesures : des dosages **répétés sur plusieurs jours à plusieurs mois** reconstruisent la dose bien plus fidèlement qu'une mesure unique précoce [8].\n\n**Métrologie et normalisation.** Comme pour l'anthropogammamétrie, la sensibilité dépend de la limite de détection de la technique analytique, et le programme de surveillance est encadré par la norme **ISO 20553:2017** [45].",
+          "stats": [
+            {
+              "value": "97 % / 3 %",
+              "label": "Partage HTO : eau corporelle / molécules organiques [19,20]"
+            },
+            {
+              "value": "≈ 10 j",
+              "label": "T½ biologique du HTO libre [19]"
+            },
+            {
+              "value": "24 h",
+              "label": "Recueil urinaire de référence [29]"
+            },
+            {
+              "value": "α + β purs",
+              "label": "Émetteurs mesurables seulement in vitro [7,29]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le recueil incomplet biaise l'estimation",
+              "text": "Un recueil urinaire de **24 h** partiel, ou un recueil fécal interrompu trop tôt, conduit à **sous-estimer** l'activité excrétée, donc l'incorporation calculée et la dose engagée. La qualité du recueil (exhaustivité, horodatage précis du début de la contamination) est un déterminant majeur de la validité du résultat [29,8]."
+            },
+            {
+              "type": "info",
+              "title": "In vivo vs in vitro — deux méthodes complémentaires",
+              "text": "L'anthropogammamétrie (§C8) mesure ce qui est **présent dans le corps** ; la radiotoxicologie mesure ce qui en **sort**. Combinées, elles permettent de couvrir tout le spectre des émetteurs (γ par mesure directe, α et β purs par mesure indirecte) et de contraindre le modèle biocinétique par deux jeux de données indépendants [7,8]."
+            }
+          ]
+        },
+        {
+          "title": "C10 - Évaluation de la dose engagée & reconstitution de l'événement",
+          "text": "L'objectif final de la surveillance est de convertir les mesures (§C8, §C9) en **dose efficace engagée**, seule grandeur permettant de juger de la gravité, de comparer aux limites réglementaires et de décider d'une décorporation. La contamination interne présente une spécificité irréductible : **son niveau n'est pas directement mesurable** — il est toujours **reconstruit** à partir de mesures et d'un modèle biocinétique propre au radionucléide [7,8].\n\n**Définition de la dose engagée.** Contrairement à l'irradiation externe (dose délivrée pendant l'exposition), un radionucléide incorporé continue d'irradier tant qu'il est présent (décroissance physique **et** élimination biologique). On intègre donc la dose sur la période de rétention : **50 ans chez l'adulte**, **jusqu'à 70 ans chez l'enfant** à partir de l'incorporation. Cette dose engagée est réglementairement **imputée à l'année de l'incorporation** [8,29]. La cinétique combinée obéit à la **période effective** T_eff : **1/T_eff = 1/T_physique + 1/T_biologique** — relation qui fonde la décorporation (raccourcir T_biologique).\n\n**Chaîne de reconstruction de dose :**\n\n| Étape | Grandeur | Source / référentiel |\n|---|---|---|\n| 1. Mesure | Activité in vivo (Bq) ou dans excreta (Bq) | Anthropogammamétrie / radiotoxicologie [7] |\n| 2. Biocinétique | Fonction de rétention/excrétion | CIPR **OIR** (série 130/134/**137**/141) [11,37] |\n| 3. Incorporation | Activité incorporée (Bq) | Modèle propre au radionucléide + type d'absorption [11] |\n| 4. Conversion | **Coefficient de dose (Sv/Bq)** | CIPR **137** (travailleur) [11,37] |\n| 5. Résultat | **Dose efficace engagée (Sv)** | Comparée aux limites / valeurs de référence [8,28] |\n\n**Coefficients de dose (exemples occupationnels, CIPR 119).** Pour le ⁹⁹ᵐTc : inhalation type F **1,2 × 10⁻¹¹ Sv/Bq**, type M **1,9 × 10⁻¹¹ Sv/Bq**, ingestion **2,2 × 10⁻¹¹ Sv/Bq** [12]. La série CIPR 137 (2017) fournit les tables actualisées pour tous les types d'absorption F/M/S et l'aérosol de référence AMAD **5 µm** ; ses coefficients sont pour la plupart légèrement **inférieurs (facteur < 2)** à ceux de l'ancienne série CIPR 30 [11,37]. À noter : les coefficients « patient » de la **CIPR 128** (ex. **¹⁸F-FDG ≈ 1,6 × 10⁻² mSv/MBq** ; **¹³¹I-iodure ≈ 2,2 mSv/MBq**, organe critique **thyroïde**) servent aussi à estimer un ordre de grandeur en cas d'incorporation professionnelle accidentelle de radiopharmaceutique [32,38].\n\n**Valeurs de référence pour l'action.** L'incorporation reconstruite est comparée à des repères :\n- **Limite Annuelle d'Incorporation (LAI / ALI)** = **20 mSv** (limite de dose efficace travailleur) ÷ coefficient de dose (Sv/Bq) [28]. La dose efficace travailleur est fixée à **20 mSv/an** en moyenne sur 5 ans (max **50 mSv** une année donnée) ; **1 mSv/an** pour le public [45,29].\n- **Clinical Decision Guide (CDG)** en réponse d'urgence, correspondant à **≈ 250 mSv** de dose efficace engagée sur 50 ans chez l'adulte, **réduit à 20 %** chez l'enfant et la femme enceinte [29].\n\n**Reconstitution de l'événement.** Le calcul de dose n'a de sens qu'associé à la caractérisation de l'incident : **radionucléide(s) en cause, forme physico-chimique, voie d'incorporation** (inhalation / ingestion / plaie), **activité** et **horodatage**. La voie transcutanée par plaie relève d'un modèle biocinétique dédié (modèle NCRP de blessure, 2007) [46,34]. Cette reconstitution permet d'estimer la **dose évitée** (*averted dose*) par une éventuelle décorporation et oriente le choix de l'agent décorporant [13,29].\n\n**Traçabilité et cadre réglementaire (France).** L'évaluation dosimétrique est conduite par la **PCR** (personne compétente en radioprotection) et/ou le **physicien médical** ; la dose est enregistrée dans **SISERI**. Tout événement significatif est déclaré à l'**ASNR** (ex-ASN) et **classé sur l'échelle INES** (0–7). Le retour d'expérience du réseau **ASNR / IRSN / CEPN-RELIR** montre que la quasi-totalité des « incidents » réels en médecine nucléaire sont des **contaminations externes cutanées** (projection de ⁹⁹ᵐTc), non des incorporations internes vraies [9,33,42,27].",
+          "steps": [
+            {
+              "title": "1 · Stabiliser et confiner",
+              "text": "Traiter d'abord toute urgence vitale (la prise en charge de la contamination ne retarde jamais la réanimation). Retrait/ensachage des vêtements, contrôle radiamétrique, décontamination cutanée non agressive ; une plaie contaminée est décontaminée **avant** la peau saine [29,50]."
+            },
+            {
+              "title": "2 · Mesurer et horodater",
+              "text": "Anthropogammamétrie précoce (§C8) et recueil des excreta (§C9), avec horodatage précis du début de contamination — indispensable pour la fenêtre courte du ⁹⁹ᵐTc/¹⁸F [7,8]."
+            },
+            {
+              "title": "3 · Reconstruire l'incorporation",
+              "text": "Appliquer la fonction de bioessai biocinétique (CIPR OIR / 137) pour passer de l'activité mesurée à l'activité incorporée en Bq, en précisant le type d'absorption et la voie d'entrée [11,37]."
+            },
+            {
+              "title": "4 · Calculer la dose engagée",
+              "text": "Multiplier par le coefficient de dose (Sv/Bq, CIPR 137) pour obtenir la dose efficace engagée intégrée sur 50 ans (adulte) / 70 ans (enfant) [11,29]."
+            },
+            {
+              "title": "5 · Décider et tracer",
+              "text": "Comparer aux valeurs de référence (LAI, CDG) → décision de décorporation le cas échéant ; enregistrer dans SISERI, déclarer à l'ASNR et coter sur l'échelle INES [28,29,9,42]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "50 / 70 ans",
+              "label": "Intégration de la dose engagée : adulte / enfant [8,29]"
+            },
+            {
+              "value": "20 mSv/an",
+              "label": "Limite de dose efficace travailleur → base de la LAI [45,28]"
+            },
+            {
+              "value": "≈ 250 mSv",
+              "label": "Clinical Decision Guide (CDG) adulte, engagée sur 50 ans [29]"
+            },
+            {
+              "value": "< 2",
+              "label": "Facteur d'abaissement des coefficients CIPR 137 vs CIPR 30 [11,37]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — mieux vaut plusieurs mesures qu'une seule",
+              "text": "Une mesure unique précoce, très dépendante de la biocinétique initiale mal contrainte, donne une estimation fragile. Des mesures **répétées sur jours à mois** (in vivo + excreta) contraignent le modèle et fiabilisent la dose engagée reconstruite — c'est la règle en dosimétrie interne [8]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — ne pas confondre contamination externe cutanée et incorporation interne",
+              "text": "En médecine nucléaire, la grande majorité des événements déclarés sont des **projections cutanées de ⁹⁹ᵐTc** (dose à la peau / extrémités), non des incorporations internes. Le retour d'expérience ASNR le confirme : à Strasbourg, une projection de ⁹⁹ᵐTc sur l'avant-bras a délivré une dose équivalente à la peau **≈ 183 mSv** (~¼ de la limite de 500 mSv/an aux extrémités), classée **INES niveau 1** [33,9]. La démarche dosimétrique diffère radicalement : dose à la peau (externe) vs dose efficace engagée (interne) [29]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers de radioprotection — temps, distance, écran — auxquels s'ajoute le confinement pour la contamination interne : prévention primaire qui reste la meilleure protection contre l'incorporation de radionucléides."
+          }
+        },
+        {
+          "title": "D11 - Principes de la décorporation",
+          "text": "La **décorporation** désigne l'ensemble des mesures thérapeutiques qui **accélèrent l'élimination d'un radionucléide incorporé** afin de réduire la **dose efficace engagée** — dose intégrée sur toute la période de rétention, conventionnellement **50 ans chez l'adulte** et **jusqu'à 70 ans chez l'enfant** à partir de l'incorporation.[29] Contrairement à l'irradiation externe, le niveau de contamination interne n'est pas mesurable directement : il se reconstruit par un **modèle biocinétique** propre à chaque élément, à partir de l'anthropogammamétrie (émetteurs X/γ) et de la radiotoxicologie des excreta (émetteurs α/β purs).[7][8]\n\n**Cinétique fondatrice.** Un radionucléide incorporé disparaît de l'organisme selon la **période effective** T_eff, qui combine décroissance physique et élimination biologique :\n\n$$\\frac{1}{T_{eff}} = \\frac{1}{T_{phys}} + \\frac{1}{T_{biol}}$$\n\nLa décroissance physique n'est pas modifiable ; toute décorporation revient donc à **raccourcir T_biol**, ce qui abaisse T_eff et la dose engagée.[29] Le bénéfice attendu se chiffre en **dose évitée** (*averted dose*), différence entre la dose engagée sans et avec traitement.[13]\n\n**Quatre mécanismes d'action** selon la physico-chimie du contaminant :\n\n| Mécanisme | Principe | Agent type | Cible |\n|---|---|---|---|\n| **Blocage isotopique** | Saturation de la cible par l'isotope stable → l'isotope radioactif n'est plus capté | Iodure de potassium (KI) | ¹³¹I / thyroïde[30][5] |\n| **Chélation** | Formation d'un complexe hydrosoluble excrété par les urines | Ca-/Zn-DTPA | Transuraniens (Pu, Am, Cm)[31][3] |\n| **Précipitation / échange ionique** | Séquestration digestive + interruption du cycle entéro-hépatique → excrétion fécale | Bleu de Prusse | Cs, Tl[4][26] |\n| **Dilution isotopique / diurèse** | Accélération du renouvellement de l'eau corporelle | Hyperhydratation | Tritium (HTO)[19][20] |\n\n**Fenêtre thérapeutique — le facteur temps est déterminant.** L'efficacité est maximale tant que le radionucléide reste dans le **liquide extracellulaire, avant sa fixation cellulaire ou osseuse** : idéalement dans **la 1ʳᵉ heure**, au plus tard **3–4 h** après l'incorporation.[14] La doctrine opérationnelle française résume ce principe : « **une contamination est toujours traitée le jour même** », et le traitement est initié **sans attendre la preuve métrologique formelle** dès que le(s) radionucléide(s) sont identifiés.[10][5]\n\n**Seuils de déclenchement.** La décision de décorporer repose sur la comparaison de l'incorporation estimée à des valeurs de référence : la **Limite Annuelle d'Incorporation (LAI)** = 20 mSv/an ÷ coefficient de dose (Sv/Bq),[28] et, en réponse d'urgence, le **Clinical Decision Guide (CDG)** correspondant à ~**250 mSv** de dose efficace engagée sur 50 ans chez l'adulte, **abaissé à 20 % de cette valeur** chez l'enfant et la femme enceinte.[29]",
+          "stats": [
+            {
+              "value": "1ʳᵉ heure",
+              "label": "Fenêtre idéale de décorporation"
+            },
+            {
+              "value": "3–4 h",
+              "label": "Délai utile maximal (avant fixation)"
+            },
+            {
+              "value": "50 / 70 ans",
+              "label": "Intégration dose engagée (adulte / enfant)"
+            },
+            {
+              "value": "20 mSv/an",
+              "label": "Numérateur de la LAI (÷ coeff. de dose)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la fenêtre se referme vite",
+              "text": "Toute heure perdue diminue le rendement : un chélateur ou un bloquant administré **> 4 h** après l'incorporation ne capte plus qu'une fraction du contaminant déjà fixé dans l'os, la thyroïde ou la cellule. Ne pas retarder le traitement pour attendre le résultat de l'anthropogammamétrie ou de la radiotoxicologie : on traite d'abord, on documente ensuite.[14][5]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — dose engagée vs dose évitée",
+              "text": "Le raisonnement dosimétrique porte toujours sur la **dose efficace engagée** (Sv, intégrée sur 50/70 ans), imputée réglementairement à l'année de l'incorporation.[29] Le décorporant ne « guérit » pas l'irradiation déjà délivrée : il ne réduit que la dose **restant à délivrer**. D'où l'intérêt d'une intervention la plus précoce possible, quand la part non encore délivrée est maximale."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers temps / distance / écran (ALARA) : la radioprotection externe encadre la prise en charge d'un travailleur contaminé avant et pendant la décorporation.",
+            "caption": "Fig. 1 — ALARA (temps / distance / écran) : la maîtrise de l'exposition externe accompagne toute décorporation interne."
+          }
+        },
+        {
+          "title": "D12 - Agents de décorporation par radionucléide",
+          "text": "Le choix de l'agent est **entièrement dicté par le radionucléide identifié** : un décorporant efficace sur un élément est inutile — voire délétère — sur un autre. On distingue trois grandes familles couvrant la quasi-totalité des situations rencontrées, complétées par des mesures adjuvantes.\n\n| Contaminant | Agent de référence | Mécanisme | Niveau de preuve |\n|---|---|---|---|\n| **¹²³/¹²⁴/¹³¹I (radioiodes)** | Iodure de potassium / Lugol | Blocage isotopique thyroïdien | Recommandation OMS/FDA ; AMM ; forte efficacité si précoce[30][35] |\n| **Transuraniens (Pu, Am, Cm)** + cations bi- à pentavalents (Ce, Co, Ir, Y, Zr…) | Ca-DTPA puis Zn-DTPA | Chélation → excrétion urinaire | Approbation FDA 2004 ; > 40 ans d'usage[2][31] |\n| **¹³⁷Cs, Tl, produits de fission** | Bleu de Prusse (Radiogardase®) | Échange ionique digestif → excrétion fécale | Approbation FDA 2003 ; données Goiânia[2][4] |\n| **Tritium (HTO)** | Hyperhydratation / diurèse forcée | Dilution isotopique | Réduit T_biol (~10 j)[19] |\n\n### a) Iodure de potassium (KI / Lugol) — blocage thyroïdien\n\n**Mécanisme.** L'iodure stable sature la thyroïde (**effet Wolff-Chaikoff**) et inhibe l'organification de l'iode radioactif ; la protection est transitoire (l'organification reprend après ~2 jours) → **une prise par jour** tant que le risque persiste.[36][30] **KI ne protège que la thyroïde contre l'iode radioactif** : aucune action sur le ¹³⁷Cs, le ⁹⁰Sr ni l'irradiation externe.[29]\n\n**Présentation (France).** Comprimés **130 mg** (= 100 mg d'iode stable) ou 65 mg ; alternative **solution de Lugol 1 %**.[5]\n\n**Posologie FDA par âge** :[30][17]\n\n| Âge | Dose KI |\n|---|---|\n| Adulte > 40 ans, 18–40 ans, femme enceinte/allaitante | **130 mg** |\n| 12–18 ans et 3–12 ans (< 68 kg) | **65 mg** |\n| 1 mois–3 ans | **32 mg** |\n| Naissance–1 mois | **16 mg** |\n\n**Efficacité selon le timing** : pris **quelques heures avant** l'exposition → réduction ~**98 %** de la fixation ; **simultané ou 1–2 h après** → blocage **> 90 %** ; **6 h après** → ~**50 %** ; **> 4 h après** inhalation le bénéfice s'effondre, et **≥ 96 h avant** il n'existe plus d'effet protecteur.[44][36]\n\n### b) DTPA (acide diéthylène-triamine-penta-acétique)\n\n**Mécanisme.** Ligand amino-polycarboxylique **octadentate** formant in vivo un **complexe stable hydrosoluble** avec les cations métalliques, excrété par voie urinaire.[16] Réduit la rétention systémique (squelette + foie) et augmente l'excrétion urinaire des actinides.[15] **Efficace sur les transuraniens (Pu, Am, Cm) mais NON sur l'uranium ni le neptunium.**[31]\n\n**Présentation.** Ca-DTPA (sel monocalcique trisodique) **250 mg/mL**, ampoule de **4 mL = 1 g** (solution 25 %).[5]\n\n**Posologie adulte (FDA/CDC)** : **14 mg/kg/j sans dépasser 1 g/j**, dilué dans 100–250 mL de G5 %/Ringer/sérum physiologique, **IV sur 30 min**, en dose unique quotidienne.[1][3] **Pédiatrie** : **14 mg/kg/j (max 1 g/j)** ; le Guide ASN plafonne à **0,5 g/j chez l'enfant < 12 ans**.[31][5] **Voie nébulisée** possible pour une contamination par **inhalation seule < 24 h** (1 g dilué 1:1, inhalé sur 15–20 min).[31][47]\n\n**Séquence Ca-DTPA → Zn-DTPA.** Le **Ca-DTPA est préféré pendant les premières 24 h** (plus efficace) ; au-delà, relais par **Zn-DTPA** (efficacité équivalente, moins déplétant en métaux essentiels).[1][31]\n\n### c) Bleu de Prusse (ferrocyanure ferrique — Radiogardase®)\n\n**Mécanisme.** Résine échangeuse d'ions qui piège le césium/thallium dans le tube digestif et **interrompt le cycle entéro-hépatique** → **transfert de l'excrétion urinaire vers l'excrétion fécale**.[4][26] Indications : Césium, produits de fission, Thallium, Indium.[5]\n\n**Présentation** : gélules de **0,5 g** (500 mg), voie orale.[5][25]\n\n**Posologie** : France = **1 g × 3/j** ;[5] FDA/REMM adulte = **3 g × 3/j = 9 g/j** (jusqu'à **10–12 g/j** si contamination importante) ; **pédiatrie 2–12 ans = 1 g × 3/j** (gélules ouvrables et mélangées à la nourriture).[4][25] **Durée** minimale recommandée ≈ **30 jours**.[4]\n\n**Efficacité** : réduit la dose efficace engagée corps entier d'un **facteur 2 à 3** ; réduction de la demi-vie effective du ¹³⁷Cs de **46 %** chez l'adolescent et **43 %** chez l'enfant de 4–12 ans.[24]\n\n### d) Mesures adjuvantes\n\n- **Tritium (HTO)** : **hyperhydratation / diurèse forcée** raccourcit T_biol (~10 j).[19][20]\n- **Uranium** : **bicarbonate de sodium 14 ‰** (alcalinisation urinaire) — 250 mL chez l'adulte, adapté au poids chez l'enfant.[5]\n- **Strontium** : phosphate / gluconate de calcium.[50]\n- **Particules insolubles de haute activité inhalées** : **lavage broncho-alvéolaire**.[13]\n- **Plaie contaminée** : décontamination **avant** la peau saine ; irrigation au sérum physiologique, débridement **minimal** des berges, corps étrangers retirés à la pince dans un conteneur plombé ; lavage à la solution de DTPA à 25 % (dilution à 10 % pour l'œil), pansement absorbant contenant **3 à 4 g de Ca-DTPA**.[5][29]",
+          "steps": [
+            {
+              "title": "1 — Identifier le radionucléide",
+              "text": "Le contexte (radiopharmacie, source, incident) et l'anthropogammamétrie/radiotoxicologie orientent vers l'agent : radioiode → KI ; transuranien → DTPA ; césium/thallium → bleu de Prusse.[7]"
+            },
+            {
+              "title": "2 — Traiter sans attendre la preuve",
+              "text": "Dès l'identification du (des) radionucléide(s) mobilisable(s), administrer l'agent le plus précocement possible (1ʳᵉ h idéale), sans attendre la confirmation métrologique.[5][14]"
+            },
+            {
+              "title": "3 — Adapter dose et durée",
+              "text": "Poser la posologie selon l'âge (tableaux ci-dessus), séquencer Ca-DTPA → Zn-DTPA au-delà de 24 h, poursuivre le bleu de Prusse ≥ 30 j, réévaluer sur les excreta.[31][4]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — spécificité stricte des agents",
+              "text": "KI n'est **pas une « pilule anti-radiations »** : il ne protège que la thyroïde contre l'iode radioactif.[29] Le **DTPA est inefficace sur l'uranium et le neptunium** — ne l'utiliser que pour les transuraniens.[31] Administrer le mauvais agent, c'est perdre la fenêtre thérapeutique tout en exposant le patient aux effets indésirables du produit."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le radioiode en médecine nucléaire",
+              "text": "En médecine nucléaire, le radioiode (¹³¹I thérapeutique, ¹²³I diagnostique) est le contaminant interne le plus plausible : c'est précisément le blocage thyroïdien par KI/Lugol qui est déjà pratiqué en routine avant une scintigraphie MIBG (cf. §B8 de l'article MIBG). La logique décorporante rejoint donc la préparation préventive de l'examen."
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_NIS",
+            "alt": "Symporteur sodium-iodure (NIS) de la cellule thyroïdienne captant l'iodure : cible saturée par l'iodure de potassium stable lors du blocage thyroïdien contre l'iode radioactif.",
+            "caption": "Fig. 2 — Captation de l'iodure par le NIS thyroïdien : le blocage par KI stable détourne l'iode radioactif de cette voie."
+          }
+        },
+        {
+          "title": "D13 - Cadre réglementaire, traçabilité & déclaration",
+          "text": "La prise en charge d'une contamination interne s'inscrit dans un cadre réglementaire strict de radioprotection des travailleurs, articulant **limites de dose**, **surveillance individuelle**, **traçabilité** et **déclaration d'événement significatif**.\n\n### Limites de dose et niveaux d'action\n\n| Grandeur | Valeur | Référence |\n|---|---|---|\n| Dose efficace **travailleur** | **20 mSv/an** (moyenne sur 5 ans), **50 mSv** max une année | CIPR 103 ; IAEA GSR Part 3[45] |\n| Dose équivalente **extrémités/peau** (travailleur) | **500 mSv/an** | IAEA Pub1081[45] |\n| Dose efficace **public** | **1 mSv/an** | Réf. réglementaire[29] |\n| Niveau d'enregistrement | Dose annuelle ≥ **1 mSv** (~10 % de la limite) | IAEA Pub1081[45] |\n| Sauvetage de vie (point de décision) | **0,5 Gy** cumulés (aide au commandement, pas une limite) | NCRP[29] |\n\nLa **dose engagée** d'une incorporation est **imputée à l'année de l'incorporation**, quelle que soit la durée réelle de délivrance ultérieure (50/70 ans).[42] La norme **ISO 20553:2017** encadre le programme de surveillance de la contamination interne (périodicité, limites de détection, méthodes).[45]\n\n### Métrologie et reconstruction de dose\n\nLa chaîne d'évaluation est standardisée : **activité mesurée** (in vivo par anthropogammamétrie, ou in vitro sur excreta) → **fonction de rétention/excrétion** biocinétique → **activité incorporée (Bq)** → **coefficient de dose (Sv/Bq)** → **dose efficace engagée**.[8][11] Les coefficients de dose des travailleurs proviennent de la série **OIR de la CIPR** — notamment la **Publication 137** (aérosol de référence AMAD 5 µm, types d'absorption F/M/S).[11][37] À titre d'ordre de grandeur occupationnel : ⁹⁹ᵐTc inhalation **type F 1,2 × 10⁻¹¹ Sv/Bq**, **type M 1,9 × 10⁻¹¹ Sv/Bq**, ingestion **2,2 × 10⁻¹¹ Sv/Bq**.[12] Des mesures **répétées sur jours à mois** reconstruisent la dose plus fidèlement qu'une mesure unique précoce.[7]\n\n### Traçabilité et déclaration (cadre France)\n\nL'évaluation dosimétrique est conduite par la **Personne Compétente en Radioprotection (PCR)** ou le **physicien médical** ; les doses sont enregistrées dans **SISERI** (système d'information de la surveillance de l'exposition aux rayonnements ionisants).[42] Tout événement significatif de radioprotection est **déclaré à l'ASN/ASNR** et **coté sur l'échelle INES** (0 à 7).[9][33] Le **Guide national d'intervention médicale en situation d'urgence nucléaire ou radiologique** (édition 2008, révisée juin 2023 / février 2024, coordonné par l'ASN) fournit les fiches opérationnelles diffusées aux SAMU/SMUR/urgences/pompiers.[5][6]\n\n### Retour d'expérience — incidents en médecine nucléaire\n\nLes incidents documentés sont très majoritairement des **contaminations externes cutanées** (projection de seringue), non des incorporations internes vraies :\n\n- **CHRU Strasbourg-Hautepierre, 27/06/2018** : projection de ⁹⁹ᵐTc sur l'avant-bras au désamorçage d'une aiguille → **dose équivalente à la peau ≈ 183 mSv** (~¼ de la limite annuelle des extrémités) → **INES niveau 1**.[33]\n- **HUS Strasbourg, 2021** : un autre événement reclassé **INES niveau 2**.[43]\n- **Service de médecine nucléaire, 22/05/2024** : projection de ⁹⁹ᵐTc sur le bras d'un préparateur, contact ~15 min → exposition estimée **> ¼ de la limite annuelle aux extrémités** ; réévaluation IRSN d'un cas à **> 4× la limite de 500 mSv/12 mois**.[9]",
+          "stats": [
+            {
+              "value": "20 mSv/an",
+              "label": "Dose efficace travailleur (moy. 5 ans)"
+            },
+            {
+              "value": "500 mSv/an",
+              "label": "Dose équivalente extrémités/peau"
+            },
+            {
+              "value": "INES 0–7",
+              "label": "Échelle de cotation des incidents"
+            },
+            {
+              "value": "183 mSv",
+              "label": "Dose peau, cas Strasbourg 2018 (INES 1)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — confondre contamination externe et incorporation interne",
+              "text": "La plupart des « incidents Tc-99m » en médecine nucléaire sont des **projections cutanées** (dose à la peau/extrémités), non des dépôts internes.[33] La conduite diffère radicalement : décontamination cutanée pour l'externe, évaluation biocinétique + décorporation éventuelle pour l'interne. Le contrôle radiamétrique et le bioessai tranchent."
+            },
+            {
+              "type": "info",
+              "title": "Diagnostic métrologique, non clinique",
+              "text": "À faibles doses, la contamination interne **ne donne aucun signe clinique spécifique** : le diagnostic est entièrement **métrologique** (anthropogammamétrie pour les émetteurs γ, radiotoxicologie des excreta pour les émetteurs α/β purs comme ⁹⁰Sr, Pu, Am).[7] Un émetteur α pur (Pu-239) est invisible en anthropogammamétrie standard.[23]"
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'un détecteur à scintillation (cristal, photomultiplicateurs) analogue à l'anthropogammamètre utilisé pour la mesure in vivo directe des radionucléides émetteurs gamma incorporés.",
+            "caption": "Fig. 3 — Détection γ : l'anthropogammamétrie mesure in vivo les émetteurs X/γ incorporés (Tc, I, Cs) ; les émetteurs α/β purs relèvent de la radiotoxicologie des excreta."
+          }
+        },
+        {
+          "title": "D14 - Populations & situations particulières",
+          "text": "L'adaptation de la décorporation à des terrains spécifiques repose sur des seuils d'intervention abaissés et sur le choix d'agents mieux tolérés.\n\n### Femme enceinte et allaitante\n\n- **Seuil d'intervention abaissé** : pour le KI, la thyroïde du fœtus et de l'enfant justifie un seuil de dose thyroïdienne prédite de **≥ 5 cGy** chez la femme enceinte/allaitante et l'enfant ≤ 18 ans, contre **≥ 10 cGy** entre 18 et 40 ans et **≥ 500 cGy** au-delà de 40 ans.[30][35] Le seuil d'intervention OMS pour ces populations est de **1 cGy**.[17]\n- **DTPA** : **Zn-DTPA exclusivement** chez la femme enceinte ; le **Ca-DTPA est contre-indiqué** (tératogénicité animale) sauf contamination très élevée.[3][31]\n- **KI et thyroïde néonatale** : risque d'**hypothyroïdie néonatale** si administration prénatale répétée → **dose unique chez le nouveau-né**, avec surveillance thyroïdienne.[18][35]\n- **Allaitement** : le radioiode passe dans le lait ; l'allaitement est interrompu selon le radiopharmaceutique en cause (cf. règles de radioprotection post-administration).\n\n### Pédiatrie\n\nLes coefficients de dose (Sv/Bq) sont **plus élevés que chez l'adulte** et la dose est intégrée sur **70 ans**.[29] Les posologies sont adaptées au poids et à l'âge :\n\n| Agent | Adaptation pédiatrique |\n|---|---|\n| **KI (comprimé 130 mg, France)** | Nouveau-né 0–1 mois = **1/8 cp** ; 1 mois–3 ans = **1/4 cp** ; 3–12 ans = **1/2 cp** ; > 12 ans = **1 cp**[5] |\n| **KI (Lugol 1 %, France)** | > 12 ans = **80 gouttes** ; 3–12 ans = **40 gouttes** ; < 3 ans = **20 gouttes**[5] |\n| **DTPA** | **14 mg/kg/j**, plafonné à **0,5 g/j** chez l'enfant < 12 ans[5][31] |\n| **Bleu de Prusse** | 2–12 ans = **1 g × 3/j** ; gélules ouvrables et mélangées à la nourriture[4] |\n\nLe surrisque de cancer thyroïdien radio-induit chez l'enfant, démontré dès **5 cGy**, justifie la priorité donnée au blocage thyroïdien précoce dans cette population.[30]\n\n### Effets indésirables à surveiller\n\n| Agent | Effet indésirable principal | Conduite |\n|---|---|---|\n| **Ca-/Zn-DTPA** | Déplétion en métaux essentiels (**zinc, manganèse**) ; bronchoconstriction chez l'asthmatique (voie nébulisée) | Supplémentation orale en zinc ; prudence forme inhalée[1][29] |\n| **Bleu de Prusse** | **Selles bleues**, constipation, hypokaliémie | Contre-indication « néant à la posologie préconisée » ; surveillance kaliémie[5][29] |\n| **KI** | Allergie à l'iode, dysthyroïdie ; hypothyroïdie néonatale si répété | Dose unique chez le nouveau-né ; respecter contre-indications[18] |\n\n### Situations particulières d'incorporation\n\n- **Contamination par inhalation seule (< 24 h)** : le **DTPA nébulisé** cible directement le dépôt pulmonaire.[47]\n- **Contamination par plaie** : décontamination de la plaie **avant** la peau saine, débridement minimal, DTPA topique.[29]\n- **Émetteurs α purs (Pu-239, Am-241)** : non détectables en anthropogammamétrie → suivi par **radiotoxicologie des excreta**, décorporation par DTPA.[23][7]\n- **Contexte accidentel à grande échelle** (rappel historique) : **Goiânia 1987** (¹³⁷Cs, 249 contaminés, 4 décès) illustre l'usage du bleu de Prusse ; **Litvinenko 2006** (²¹⁰Po) rappelle qu'un émetteur α pur échappe à la métrologie in vivo standard.[29]",
+          "stats": [
+            {
+              "value": "≥ 5 cGy",
+              "label": "Seuil KI enfant / femme enceinte"
+            },
+            {
+              "value": "1 cGy",
+              "label": "Seuil d'intervention OMS (populations sensibles)"
+            },
+            {
+              "value": "Zn-DTPA",
+              "label": "Forme à privilégier en grossesse"
+            },
+            {
+              "value": "70 ans",
+              "label": "Intégration dose engagée chez l'enfant"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — Ca-DTPA et grossesse",
+              "text": "Chez la femme enceinte, préférer **impérativement le Zn-DTPA** : le Ca-DTPA a montré une **tératogénicité animale** et n'est retenu qu'en cas de contamination très élevée, sous réserve d'une balance bénéfice/risque explicite.[3][31] La déplétion en zinc induite par le DTPA doit être compensée par une supplémentation orale."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pédiatrie, un double handicap dosimétrique",
+              "text": "L'enfant cumule des **coefficients de dose plus élevés** et une **intégration sur 70 ans** de la dose engagée,[29] auxquels s'ajoute une **radiosensibilité thyroïdienne** documentée dès 5 cGy.[30] Ces trois facteurs justifient des seuils d'intervention abaissés et une administration du bloquant/décorporant la plus précoce possible."
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_UPTAKE",
+            "alt": "Courbe de captation thyroïdienne de l'iode illustrant la sensibilité de la thyroïde de l'enfant, cible prioritaire du blocage par iodure de potassium en cas de contamination par radioiode.",
+            "caption": "Fig. 4 — La thyroïde de l'enfant, particulièrement radiosensible (surrisque dès 5 cGy), est la cible prioritaire du blocage par KI."
+          }
+        },
+        {
+          "title": "E15 - Cas commentés & mises en situation",
+          "text": "Chaque cas suit la trame **contexte → mesures → analyse → conduite**, calquée sur les retours d'expérience réels du réseau ASNR–IRSN–CEPN/RELIR et sur l'algorithme de prise en charge de la contamination interne [29]. En médecine nucléaire, la règle transversale est double : (1) la **très grande majorité des « incidents »** sont en réalité des **contaminations externes cutanées** (projection de seringue), et non des incorporations internes vraies [33,9] ; (2) lorsqu'une incorporation est plausible, « une contamination est toujours **traitée le jour même** », sans attendre la preuve métrologique formelle [10,5].\n\n### Cas 1 — Projection de ⁹⁹ᵐTc sur l'avant-bras (contamination externe, pas d'incorporation)\n\n**Contexte.** Manipulateur, désamorçage d'une aiguille de seringue de ⁹⁹ᵐTc-pertechnétate ; projection de quelques gouttes sur l'avant-bras, contact ~**15 min** avant décontamination [9]. **Mesures.** Contrôle radiamétrique cutané positif ; lavage doux (eau/savon) jusqu'à retour au bruit de fond ; anthropogammamétrie de contrôle négative (pas de dépôt interne). Reconstruction dosimétrique : **dose équivalente à la peau ≈ 183 mSv** au point de contact dans un cas documenté (CHRU Strasbourg-Hautepierre, 27/06/2018), soit ~¼ de la limite annuelle des extrémités de **500 mSv/an** [33,45]. **Analyse.** Il s'agit d'une **contamination externe localisée** : la peau saine est une barrière efficace, franchie seulement si lésée [29] ; l'incorporation interne est ici nulle et la décorporation systémique inutile. **Conduite.** Décontamination cutanée, dosimétrie d'extrémité (bague/poignet), déclaration d'événement significatif et **classement INES** : niveau **1** dans ce cas, niveau **2** pour un événement voisin réévalué [33,43]. Un incident de 22/05/2024 a conduit à une exposition estimée **> ¼ de la limite annuelle aux extrémités** [9], et un cas réévalué par l'IRSN à une dose peau **> 4× la limite de 500 mSv/12 mois** [33].\n\n> **Le piège :** la tentation de traiter par décorporant systémique une simple projection cutanée. La bonne réponse est **métrologique** (radiamétrie + anthropogammamétrie) avant tout geste pharmacologique.\n\n### Cas 2 — Incorporation d'iode-131 en thérapie (blocage thyroïdien)\n\n**Contexte.** Suspicion d'inhalation de vapeurs de ¹³¹I lors de la préparation d'une gélule de radiothérapie interne vectorisée ; le ¹³¹I est l'émetteur le plus pertinent en médecine nucléaire pour l'incorporation interne (T½ **8,02 j**, β⁻ + γ **364 keV**, organe cible = **thyroïde**) [21,32]. **Mesures.** Anthropogammamétrie thyroïdienne : limite de détection pratique **~5 Bq de ¹³¹I dans la thyroïde** [7,41] ; radiotoxicologie urinaire pour la reconstruction. **Analyse.** L'incorporation d'iode radioactif emprunte la voie de l'iode alimentaire vers la thyroïde ; l'iodure stable entre en **compétition** au niveau du transporteur [5]. **Conduite.** **Iodure de potassium (KI)** sans délai : **130 mg** chez l'adulte (= 100 mg d'iode stable) [17,5], protection ~**24 h**, efficacité fortement **temps-dépendante** — ~**98 %** si pris quelques heures avant, **> 90 %** en simultané, ~**50 % à 6 h**, bénéfice quasi nul au-delà de **4 h** pour une inhalation [44,30,36]. Le seuil de dose thyroïdienne prédite déclenchant le KI est **≥ 5 cGy** chez l'enfant ≤18 ans et la femme enceinte/allaitante, contre **≥ 500 cGy** chez l'adulte > 40 ans [30,35].\n\n### Cas 3 — Contamination d'une plaie par transuranien (chélation DTPA)\n\n**Contexte.** Effraction cutanée contaminée par un émetteur α (Pu/Am) — scénario du modèle biocinétique NCRP de la « wound intake » [46]. Émetteurs **non détectables en anthropogammamétrie standard** → radiotoxicologie des excréta obligatoire [23,7]. **Mesures.** Recueil urinaire, dosage α ; radiamétrie de plaie. **Analyse.** Les actinides se piègent dans l'**os et le foie** ; le DTPA forme un **complexe hydrosoluble** excrété par les urines, efficace sur Pu/Am/Cm mais **inefficace sur uranium et neptunium** [15,31]. **Conduite.** **Ca-DTPA 1 g IV** en 1re dose (plus efficace les premières 24 h), relais par **Zn-DTPA** au-delà [1,31] ; traitement **local** de la plaie (DTPA à 25 %, dilué à 10 % pour l'œil) [5] ; efficacité optimale dans la **1re heure**, au plus tard **3–4 h** avant fixation cellulaire [14]. Chez la **femme enceinte : Zn-DTPA exclusivement** (tératogénicité animale du Ca-DTPA) [3,31].\n\n### Cas 4 — Incorporation de césium-137 (bleu de Prusse)\n\n**Contexte.** Scénario type Goiânia 1987 (¹³⁷Cs, 249 contaminés, 4 décès) [29]. Le césium **mime le potassium** et diffuse dans tout le compartiment cellulaire (T½ physique **30 ans**, γ **662 keV**) [23]. **Mesures.** Anthropogammamétrie (émetteur γ, détectable in vivo) + excréta. **Conduite.** **Bleu de Prusse (Radiogardase)** : **3 g × 3/j** chez l'adulte (posologie FDA/REMM), **1 g × 3/j** chez l'enfant, pendant **≥ 30 jours** ; interruption du **cycle entéro-hépatique** → transfert de l'excrétion urinaire vers fécale, réduction de la demi-vie effective du ¹³⁷Cs de **~43–46 %** [4,24,25]. Effet notable : **selles bleues** [5].",
+          "stats": [
+            {
+              "value": "183 mSv",
+              "label": "Dose peau (projection ⁹⁹ᵐTc, cas Strasbourg 2018) [33]"
+            },
+            {
+              "value": "~98 %",
+              "label": "Blocage thyroïdien si KI pris avant exposition [44]"
+            },
+            {
+              "value": "1re heure",
+              "label": "Fenêtre optimale de décorporation (avant fixation cellulaire) [14]"
+            },
+            {
+              "value": "INES 1–2",
+              "label": "Cotation des incidents ⁹⁹ᵐTc en médecine nucléaire [33,43]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — externe vs interne",
+              "text": "La plupart des « incidents ⁹⁹ᵐTc » en médecine nucléaire sont des **projections cutanées** (dose à la peau/extrémités), non des incorporations internes vraies. Distinguer les deux par la **radiamétrie cutanée** et l'**anthropogammamétrie** avant tout décorporant : un dépôt cutané se lave, il ne se chélate pas [33,9]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — traiter le jour même",
+              "text": "Doctrine opérationnelle française : dès que le(s) radionucléide(s) potentiel(s) sont identifiés, la décorporation est débutée **sans attendre la preuve métrologique formelle** — l'efficacité s'effondre après fixation cellulaire (1re h idéale, 3–4 h au plus tard) [10,5,14]."
+            }
+          ]
+        },
+        {
+          "title": "E16 - Points clés à retenir",
+          "list": [
+            "**Contamination interne = incorporation** d'un radionucléide (inhalation, ingestion, plaie/effraction) ; à distinguer de l'**irradiation externe** (source à distance) et de la **contamination externe** (dépôt cutané, la plus fréquente en médecine nucléaire) [29,7].",
+            "En médecine nucléaire, le risque est **rare** et dominé par les **courtes périodes** — ⁹⁹ᵐTc (T½ **6,02 h**, γ 140 keV), ¹⁸F (T½ 110 min) — et par l'**¹³¹I en thérapie** (T½ **8,02 j**, γ **364 keV**, cible thyroïde) [48,21,29].",
+            "Le niveau de contamination interne **n'est pas directement mesurable** : l'évaluation passe par un **modèle biocinétique** propre au radionucléide → activité incorporée (Bq) × **coefficient de dose (Sv/Bq)** → **dose efficace engagée** [7,11].",
+            "Métrologie à deux familles : **anthropogammamétrie** (in vivo, émetteurs X/γ ; seuil ~**5 Bq** de ¹³¹I thyroïdien) et **radiotoxicologie des excréta** (in vitro, seule voie pour les émetteurs **α/β purs** : Pu, Am, ⁹⁰Sr) [7,41].",
+            "**Dose efficace engagée** intégrée sur **50 ans** (adulte) / **70 ans** (enfant) ; coefficients **CIPR 137** (travailleur, série OIR) et **CIPR 128** (patient) [11,37,38].",
+            "**KI = blocage thyroïdien de l'iode radioactif uniquement** : **130 mg** adulte, **65 mg** enfant 3–18 ans, **32 mg** 1 mois–3 ans, **16 mg** < 1 mois ; efficacité **~98 % → 90 % → 50 %** selon le délai (avant / simultané / +6 h) ; **aucune protection** contre Cs, Sr, actinides ou irradiation externe [17,30,44].",
+            "**DTPA (Ca puis Zn) = transuraniens** (Pu, Am, Cm) et cations bi-pentavalents ; **1 g IV/j** adulte, **14 mg/kg/j** (max 1 g) enfant ; **inefficace sur U et Np** ; **Zn-DTPA exclusif** chez la femme enceinte [31,1,3].",
+            "**Bleu de Prusse (Radiogardase) = césium et thallium** ; **3 g × 3/j** adulte, **1 g × 3/j** enfant, **≥ 30 j** ; interrompt le cycle entéro-hépatique, réduit la demi-vie effective du ¹³⁷Cs de **~43–46 %** [4,24,25].",
+            "**Efficacité fortement temps-dépendante** : décorporation optimale dans la **1re heure**, au plus tard **3–4 h**, avant fixation cellulaire ; doctrine « traiter le jour même » sans attendre la preuve formelle [14,10,5].",
+            "Limites de dose travailleur : **20 mSv/an** (moyenne sur 5 ans, 50 mSv max une année) corps entier, **500 mSv/an** extrémités/peau ; public **1 mSv/an** ; point de décision **0,5 Gy** pour le sauvetage [45,29].",
+            "**Plaie contaminée** : décontaminée **avant** la peau saine ; irrigation, débridement **minimal**, corps étrangers retirés en conteneur plombé ; DTPA local si transuranien [29,50].",
+            "Traçabilité France : évaluation par **PCR/physicien médical**, enregistrement **SISERI**, déclaration d'événement significatif à l'**ASNR** et **classement INES** (0–7) [8,42,33]."
+          ]
+        },
+        {
+          "title": "E17 - FAQ & pièges",
+          "text": "**Pourquoi le niveau de contamination interne ne se « mesure »-t-il pas comme une irradiation externe ?** Parce qu'aucun dosimètre ne lit la dose délivrée par une source *interne*. On mesure une **activité** (in vivo ou dans les excréta), puis on la convertit en dose via un **modèle biocinétique** propre au radionucléide et un **coefficient de dose (Sv/Bq)** [7,11]. Des mesures répétées sur jours/mois reconstruisent la dose plus fidèlement qu'une mesure unique précoce [7].\n\n**Anthropogammamétrie ou radiotoxicologie ?** L'**anthropogammamétrie** (comptage corps entier) mesure directement les émetteurs **X et γ** — ¹³¹I, ⁹⁹ᵐTc, ¹³⁷Cs — avec un seuil pratique de **~5 Bq** de ¹³¹I thyroïdien [41,7]. Elle est **inadaptée aux émetteurs α purs** (Pu-239) et aux **β purs** (⁹⁰Sr) : ceux-ci ne se dosent que par **analyse des excréta** (urines, selles, mouchage) [7,23]. Piège classique de QCM : croire qu'un anthropogammamètre « voit » le plutonium — il ne le voit pas.\n\n**Le KI est-il une « pilule anti-radiations » ?** Non. Le KI **sature la thyroïde** et bloque la captation de l'**iode radioactif** uniquement (effet Wolff-Chaikoff transitoire) ; il n'offre **aucune protection** contre le Cs-137, le Sr-90, les actinides ou l'irradiation externe [29,36]. C'est le contresens le plus fréquent.\n\n**Trop tôt, trop tard : quel est le bon timing du KI ?** L'efficacité chute vite : ~**98 %** si pris quelques heures **avant**, **> 90 %** en simultané, ~**50 % à 6 h**, bénéfice fortement réduit **au-delà de 4 h** après une inhalation, et **aucun effet** si administré **≥ 96 h avant** [44,30,36]. Il protège ~24 h → **une prise par jour** tant que le risque persiste [36].\n\n**Ca-DTPA ou Zn-DTPA, dans quel ordre ?** **Ca-DTPA en 1re dose** (plus efficace pendant les premières 24 h), puis relais par **Zn-DTPA** (efficacités équivalentes ensuite, moins déplétant en métaux essentiels comme le zinc) [1,31]. Chez la **femme enceinte : Zn-DTPA d'emblée** (tératogénicité animale du Ca-DTPA) [3,31].\n\n**Le DTPA marche-t-il sur tous les métaux lourds ?** Non : il chélate les **transuraniens** (Pu, Am, Cm) et les cations de valence II à IV, mais est **inefficace sur l'uranium et le neptunium** — pour l'uranium, on alcalinise les urines (**bicarbonate**) [31,5]. Ne pas l'employer hors transuraniens.\n\n**Faut-il la preuve formelle de contamination avant de traiter ?** Non. La doctrine française est de **traiter le jour même**, dès que le(s) radionucléide(s) plausible(s) sont identifiés, sans attendre le résultat métrologique — car l'efficacité s'effondre après fixation cellulaire (**1re h** idéale) [10,5,14].\n\n**« Incident ⁹⁹ᵐTc » = incorporation interne ?** Rarement. La plupart sont des **projections cutanées** (dose à la peau/extrémités, cotées INES 1–2), à laver et non à décorporer [33,9]. Vérifier par radiamétrie cutanée + anthropogammamétrie.\n\n**Sur quel compartiment la décorporation agit-elle vraiment ?** Elle est efficace tant que le radionucléide reste dans le **liquide extracellulaire** ; une fois fixé (os pour les actinides, thyroïde pour l'iode, muscle pour le césium), le rendement chute. D'où l'obsession de la **précocité** [14,29].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — recueil d'excréta incomplet",
+              "text": "Un recueil urinaire de **24 h incomplet** biaise l'activité incorporée calculée et donc la dose reconstruite. Standardiser le recueil (ISO 20553:2017) et privilégier des mesures **répétées** plutôt qu'un spot unique précoce [29,7,45]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — dose engagée imputée à l'année d'incorporation",
+              "text": "La **dose efficace engagée** (50 ans adulte / 70 ans enfant) est réglementairement **imputée à l'année de l'incorporation**, même si le radionucléide continue d'irradier pendant des décennies. C'est cette valeur qui est comparée à la limite de **20 mSv/an** et enregistrée dans SISERI [8,42,45]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Les trois leviers ALARA — temps, distance, écran — appliqués à la radioprotection lors de la prise en charge d'un patient contaminé (source interne) et à la protection du personnel manipulant les excréta et les effluents."
+          }
+        },
+        {
+          "title": "E18 - Références & liens",
+          "text": "Références datées et sourcées (recommandations, référentiels réglementaires et sources primaires). Les valeurs chiffrées de l'article renvoient toutes à cette liste. **Dernière mise à jour : juillet 2026 — version de travail (profil médecin nucléaire).**\n\n**▸ Agents décorporants & contre-mesures médicales**\n\n- **DTPA** — FDA Q&A Ca/Zn-DTPA [1], FDA approbation contre-mesures [2], CDC DTPA [3], REMM/HHS Ca-DTPA/Zn-DTPA [31], ORAU/REAC-TS DTPA [47], pharmacologie du DTPA [16], chélation locale/systémique des actinides [15,14].\n- **Bleu de Prusse** — REMM/HHS Radiogardase [4], notice FDA Radiogardase [25], RCE-17 UK (décorporation du radiocésium) [24], prise en charge Cs/I [26].\n- **Iodure de potassium (KI)** — REMM/HHS KI [30], guidance FDA KI [35], Nuclear Ready (doses par âge) [17], NY State DOH fact sheet [18], SF Endocrinologie (timing) [44], Wikipedia KI (cinétique du blocage) [36].\n- **Autres** — tritium/diurèse forcée [19,20], MSD Manuals (prise en charge) [50].\n\n**▸ Métrologie & dosimétrie interne**\n\n- **Surveillance individuelle** — ASNR/IRSN moyens de surveillance [7], ASNR mesure in vivo [41], ASNR-Repères mesurer la contamination [8], suivi dosimétrique des travailleurs [42].\n- **Coefficients de dose** — CIPR 137 (OIR Part 3) [11,37], CIPR 119 (compendium) [12], CIPR 128 (dose au patient) [38,39], IDAC-Dose 2.1 [40], doses efficaces des radiopharmaceutiques [32], ALI/ICRPaedia [28].\n\n**▸ Cadre réglementaire & radioprotection**\n\n- **Guides nationaux** — Guide national d'intervention médicale ASN éd. 2008 [5], version ASNR révisée [6], IAEA GSR Part 3 / Occupational Radiation Protection [45], modèle NCRP de plaie contaminée [46].\n- **Prise en charge en urgence** — gestion aux urgences du patient contaminé [29], revue narrative des incidents R/N passés [34], fiches nucléides HPS [21], précautions ¹³¹I hospitalier [22], isotopes CDC [23].\n\n**▸ Retour d'expérience (médecine nucléaire, France)**\n\n- ASN — contamination CHRU Strasbourg [33], HUS Strasbourg INES 2 [43], ASNR reclassement INES salarié + salle [9], RELIR/CEPN technétium-99 [27], SFEN « traitée le jour même » [10].\n\n**▸ Propriétés physiques des radionucléides**\n\n- Tc-99m (T½ 6 h, γ 140 keV) [48], demi-vies effectives Tc/F/I [49].\n\n**Carte de liens (réseau de l'article)** — *Radioprotection :* ALARA, dose efficace engagée, échelle INES, LAI/ALI, SISERI · *Traceurs concernés :* ¹³¹I, ⁹⁹ᵐTc, ¹⁸F · *Contre-mesures :* KI (blocage thyroïdien), Ca/Zn-DTPA (chélation), bleu de Prusse (Radiogardase) · *Examens de métrologie :* anthropogammamétrie, radiotoxicologie des excréta.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Note sur les référentiels",
+              "text": "Les coefficients de dose et posologies proviennent des référentiels **CIPR** (137/128/119) et **FDA/REMM** ; les cas cliniques et la doctrine opérationnelle du **réseau ASNR–IRSN–CEPN/RELIR** et du **Guide national ASN** (éd. 2008, révisé 2023). En pratique française, se référer à la version en vigueur du Guide national d'intervention médicale [5,6]."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
