@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections D16 vs A6/B8/C14/E22 (seuil DFG pour la fibrose systémique néphrogénique / gadolinium)",
+    "problem": "Incohérence interne sur le seuil de DFG. La section D16 (Radioprotection) écrit : fibrose systémique néphrogénique (FSN) 'en cas d'insuffisance rénale sévère (DFG < 30 mL/min/1,73 m²)', alors que les sections A6, B8, C14 et E22 citent toutes 'DFG < 60 mL/min/1,73 m²' (comme la fiche étalon Recherche 2). Les deux valeurs existent dans la littérature mais correspondent à deux notions distinctes : < 60 = seuil de prudence/dépistage (ACR/FDA), < 30 = seuil de risque élevé avéré (IRC stade 4-5, où siège le risque réel de FSN). Telle quelle, la fiche se contredit d'une section à l'autre.",
+    "fix": "Uniformiser en distinguant explicitement les deux seuils : dépistage de la fonction rénale recommandé si DFG < 60 mL/min/1,73 m² ; risque de FSN réellement significatif (surtout avec les agents linéaires) en insuffisance rénale sévère DFG < 30 mL/min/1,73 m² (IRC stade 4-5), risque devenu < 0,07 % avec les agents macrocycliques du groupe II. Employer la même formulation dans toutes les sections."
+  },
+  {
+    "severity": "minor",
+    "where": "identityCard 'Détecteurs TEP: SiPM / APD' + mentions du TOF (A1, B7, B9, B10, C12, D17, E21, quiz Q9) associant le temps de vol aux 'TEP-IRM récentes'",
+    "problem": "Amalgame potentiellement trompeur entre APD et SiPM vis-à-vis du temps de vol. Le premier système intégré (Siemens Biograph mMR, APD, 2011) N'A PAS de TOF, la résolution temporelle des photodiodes à avalanche étant insuffisante ; seul le GE SIGNA (SiPM, 2014) offre le TOF. La fiche attribue correctement le TOF au seul SIGNA dans la carte d'identité narrative (donc pas d'erreur factuelle formelle), mais en plaçant 'SiPM / APD' sur la même ligne et en parlant du TOF 'des TEP-IRM récentes' sans le rattacher spécifiquement aux détecteurs SiPM, elle laisse penser que l'APD permet aussi le TOF, ce qui est faux.",
+    "fix": "Préciser que le temps de vol est propre aux systèmes à détecteurs SiPM (GE SIGNA et TEP-IRM ultérieures) et n'est PAS disponible sur les systèmes à APD (Biograph mMR de 1re génération), en raison de la moindre résolution temporelle des APD."
+  },
+  {
+    "severity": "minor",
+    "where": "Section 10 de la fiche étalon 'Recherche 2' (activité minimale pédiatrique EANM) — à titre de vigilance, non repris tel quel dans le JSON audité",
+    "problem": "La formulation 'activité minimale recommandée 26 MBq (acquisition 2D) / 14 MBq (3D)' est ambigüe. Historiquement la carte EANM libellait 'F-18 FDG (2D)' et 'F-18 FDG (3D)', puis a renommé ces lignes 'FDG-PET torse' (min 26 MBq) et 'FDG-PET brain' (min 14 MBq) — la distinction 2D/3D renvoyait au mode d'acquisition d'époque, désormais assimilé à torse vs cerveau. Le JSON medecin_nuc (D15, quiz Q5) utilise correctement 'corps entier / cerveau' avec les bonnes valeurs (25,9/14,0 base ; 26/14 minima), donc le JSON à publier est exact ; ce constat ne vise que la cohérence de sourcing pour éviter qu'un contributeur réintroduise la mention '2D/3D' comme s'il s'agissait d'un mode d'acquisition actuel.",
+    "fix": "Conserver la terminologie 'FDG-PET torse (corps entier)' vs 'FDG-PET cérébrale' du JSON. Ne pas réintroduire '2D/3D' comme distinction de protocole actuelle ; au besoin l'expliquer comme héritage historique de libellé."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [40] — SNMMI Procedure Standard PDF (snmmi.org/.../PETMR Final.pdf)",
+    "problem": "URL non confirmee : WebFetch renvoie 403 et les recherches sur le repertoire des standards SNMMI ne retrouvent pas ce chemin/fichier exact. Le contenu du consensus existe bien mais sous forme d'article EJNMMI (sources [38]/[39] verifiees), pas via ce PDF.",
+    "fix": "Deja correctement traite : la source [40] est marquee verified:false dans le JSON et n'est referencee dans aucun corps de section. Aucune correction requise ; a ne pas citer tant que l'URL n'est pas confirmee."
+  },
+  {
+    "severity": "minor",
+    "where": "Numerotation des sections du groupe E",
+    "problem": "Saut de E22 a E25 (E23 et E24 absentes). Non-fabrication, mais discontinuite de numerotation ; A->E et carte d'identite (identityCard) sont bien tous presents.",
+    "fix": "Verifier que E23/E24 sont volontairement reservees dans le schema (ex. iconographie/quiz gerees hors sections). Sinon renumeroter la section references en E23."
+  },
+  {
+    "severity": "minor",
+    "where": "Carte pediatrique EANM — valeur de base FDG torse '25,9 MBq' (sources [3][35], sections A5/B7/D15/E21, quiz)",
+    "problem": "Les recherches de verification retrouvent une valeur de base voisine (~25,6 MBq) et confirment les minima 26/14 MBq annonces. L'ecart 25,9 vs 25,6 est dans la tolerance d'arrondi/version et n'est PAS une fabrication ; la source [3] (PDF EANM v5.7.2016) et les minima sont authentiques.",
+    "fix": "Optionnel : harmoniser sur la valeur exacte du PDF EANM cite (verifier 25,6 vs 25,9 dans le document source) pour lever toute ambiguite. Aucune action bloquante."
+  }
+]

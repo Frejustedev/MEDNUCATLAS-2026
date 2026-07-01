@@ -1,0 +1,1261 @@
+{
+  "id": "V2_TEP_IRM",
+  "cat": "instrumentation",
+  "catLabel": "Instrumentation",
+  "title": "La TEP-IRM : principe et intérêts cliniques",
+  "difficulty": "avancé",
+  "tags": [
+    "TEP-IRM",
+    "PET-MRI",
+    "correction d'atténuation",
+    "MRAC Dixon",
+    "ZTE",
+    "18F-FDG",
+    "neuro-oncologie",
+    "pédiatrie",
+    "prostate PSMA",
+    "irradiation réduite",
+    "temps de vol",
+    "instrumentation hybride"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] PET/MRI Versus PET/CT for Whole-Body Staging: Results from a Single-Center Observational Study on 1,003 Sequential Examinations — Martin et al., J Nucl Med 2020;61:1131 (dose 3,6 vs 17,6 mSv, réduction 79,6 %)",
+      "url": "https://jnm.snmjournals.org/content/61/8/1131"
+    },
+    {
+      "title": "[2] PET/MRI improves lesion detection, reduces radiation exposure (EurekAlert! — communiqué chiffré de l'étude JNM 2020;61:1131)",
+      "url": "https://www.eurekalert.org/news-releases/844127"
+    },
+    {
+      "title": "[3] EANM Paediatric Dosage Card (Version 5.7.2016) — valeurs FDG torse 25,9/26 MBq, FDG cérébral 14,0/14 MBq, table des multiples par classe",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[4] EANM Dosage Card — page officielle (initiative EANM)",
+      "url": "https://www.eanm.org/initiatives/dosage-card/"
+    },
+    {
+      "title": "[5] Summary of the First ISMRM–SNMMI Workshop on PET/MRI: Applications and Limitations (consensus : neuro, épilepsie, prostate, pédiatrie, CA/os, dose)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6785790/"
+    },
+    {
+      "title": "[6] PET/MRI Improves Management of Children with Cancer — J Nucl Med 2021;62:1334 (réduction dose jusqu'à 80 %)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8724894/"
+    },
+    {
+      "title": "[7] FDG PET/CT: EANM procedure guidelines for tumour imaging: version 2.0 (préparation, jeûne, coefficient dose 1,7×10⁻² mSv/MBq)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[8] [18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065"
+    },
+    {
+      "title": "[9] Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms — J Nucl Med 2021;62:1805 (ICRP 128 = 0,019 mSv/MBq)",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805"
+    },
+    {
+      "title": "[10] Fluorine-18 — Wikipedia (T½ 109,77 min, β⁺ Emax 0,635 MeV, production 18O(p,n)18F)",
+      "url": "https://en.wikipedia.org/wiki/Fluorine-18"
+    },
+    {
+      "title": "[11] Gallium-68 generator — Wikipedia (⁶⁸Ge T½ 271 j, ⁶⁸Ga T½ 67,8 min, β⁺ 88,9 %, Emax 1899 keV)",
+      "url": "https://en.wikipedia.org/wiki/Gallium-68_generator"
+    },
+    {
+      "title": "[12] PET/MRI — Wikipedia (systèmes intégrés, Biograph mMR 2011 APD, SIGNA 2014 SiPM)",
+      "url": "https://en.wikipedia.org/wiki/PET/MRI"
+    },
+    {
+      "title": "[13] Performance Measurements of the Siemens mMR Integrated Whole-Body PET/MR Scanner — J Nucl Med 2011;52:1914-1922",
+      "url": "https://jnm.snmjournals.org/content/52/12/1914"
+    },
+    {
+      "title": "[14] PET/MRI Enters the U.S. Market — Imaging Technology News (dates d'approbation)",
+      "url": "https://www.itnonline.com/article/petmri-enters-us-market-0"
+    },
+    {
+      "title": "[15] Zero-Echo-Time and Dixon Deep Pseudo-CT (ZeDD CT): Direct Generation of Pseudo-CT Images for Pelvic PET/MRI Attenuation Correction Using Deep Convolutional Neural Networks with Multiparametric MRI — J Nucl Med 2018;59:852",
+      "url": "https://jnm.snmjournals.org/content/59/5/852"
+    },
+    {
+      "title": "[16] Evaluation of zero-echo-time attenuation correction for integrated PET/MR brain imaging (biais striatum ZTE 1,5 % vs atlas 3,8 %)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6196145/"
+    },
+    {
+      "title": "[17] Metal artifact correction strategies in MRI-based attenuation correction in PET/MRI (BJR Open 2019 — limites os, troncature, métal)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7592486/"
+    },
+    {
+      "title": "[18] Metal artifact reduction in patients with dental implants using multispectral 3D data acquisition for hybrid PET/MRI (25 patients, MAVRIC SL)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4545455/"
+    },
+    {
+      "title": "[19] A quantitative clinical evaluation of simultaneous reconstruction of attenuation and activity in time-of-flight PET (MLAA/TOF réduit biais métal)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9972693/"
+    },
+    {
+      "title": "[20] Signaling Pathways That Drive 18F-FDG Accumulation in Cancer — J Nucl Med 2022;63:659 (GLUT/HK, piégeage)",
+      "url": "https://jnm.snmjournals.org/content/63/5/659"
+    },
+    {
+      "title": "[21] Mechanisms underlying 18F-fluorodeoxyglucose accumulation in colorectal cancer (piégeage FDG-6-P)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5120247/"
+    },
+    {
+      "title": "[22] Fluorinated carbohydrates for 18F-positron emission tomography (PET) — Chem Soc Rev 2023 (mécanisme substitution C2, piégeage)",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2023/cs/d3cs00037k"
+    },
+    {
+      "title": "[23] [18F]FDG PET/MRI in children suffering from lymphoma: does MRI contrast media make a difference? (Se 94 %, Sp 97 %, exactitude 97 %) — PMC10598113",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10598113/"
+    },
+    {
+      "title": "[24] The utility of PET/MRI in pediatric malignancies — Applied Radiology (sarcomes Se 86 %/Sp 80 %)",
+      "url": "https://appliedradiology.com/articles/the-utility-of-pet-mri-in-pediatric-malignancies"
+    },
+    {
+      "title": "[25] Diagnostic Performance of 18F-FDG PET(CT) in Bone/Bone-Marrow Involvement in Pediatric Neuroblastoma: Systematic Review and Meta-Analysis (Se 0,87 / Sp 0,96) — PMC8221854",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8221854/"
+    },
+    {
+      "title": "[26] Recent advances in PET/MR imaging for head and neck tumors: a systematic review of the last three years (Radiol Med 2025) — PMC12605573",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12605573/"
+    },
+    {
+      "title": "[27] Diagnostic Accuracy and Confidence of [18F]FDG PET/MRI in Head and Neck Cancer (Se 85,7 %, Sp 89,1 %) — PMC7289810",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7289810/"
+    },
+    {
+      "title": "[28] Toward a PSMA PET–mpMRI pathway for biopsy decision-making in men with suspected prostate cancer (BIOPSTAGE trial) — Front Oncol 2025, PMC12812660",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12812660/"
+    },
+    {
+      "title": "[29] Clinical applications of PET/MRI: current status and future perspectives — PMC4463332",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4463332/"
+    },
+    {
+      "title": "[30] Combined simultaneous FDG-PET/MRI with T1 and T2 mapping as an imaging biomarker for the diagnosis and prognosis of suspected cardiac sarcoidosis — PMC8674394",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8674394/"
+    },
+    {
+      "title": "[31] Hybrid PET/MRI of large vessel vasculitis: radiation dose compared to PET/CT (6,6 vs 31,7 mSv) — PMC11534835",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11534835/"
+    },
+    {
+      "title": "[32] PET/MR Imaging: New Frontier in Alzheimer's Disease and Other Dementias — Front Mol Neurosci 2017;10:343",
+      "url": "https://www.frontiersin.org/journals/molecular-neuroscience/articles/10.3389/fnmol.2017.00343/full"
+    },
+    {
+      "title": "[33] The Role of PET-MRI in Alzheimer's Disease and Dementia Care — RSNA News 2024",
+      "url": "https://www.rsna.org/news/2024/may/pet-mri-dementia-care"
+    },
+    {
+      "title": "[34] 18F-FDG PET and PET/CT Patient Preparation: A Review of the Literature — J Nucl Med Technol 2014;42:5",
+      "url": "https://tech.snmjournals.org/content/42/1/5"
+    },
+    {
+      "title": "[35] Analysis of image data from the EuroNet PHL-C2 trial indicates a potential reduction in injected F-18 FDG activities in children: a proposal to update the EANM Paediatric Dosage Card (EJNMMI 2023) — PMC10774179",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10774179/"
+    },
+    {
+      "title": "[36] CNP-MN — RBP utilisation de la TEP en cancérologie (synthèse V1)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2021/11/RBP-utilisation-TEP-en-cancerologie-synthese_V1.pdf"
+    },
+    {
+      "title": "[37] CNP-MN — Les fondamentaux Chapitre 14 : coûts et remboursement des examens de radiologie et de médecine nucléaire en France",
+      "url": "https://www.cnp-mn.fr/les-fondamentaux-chapitre-14-couts-des-examens-de-radiologie-et-de-medecine-nucleaire-en-france/"
+    },
+    {
+      "title": "[38] International EANM-SNMMI-ISMRM consensus recommendation for PET/MRI in oncology (Veit-Haibach et al., Eur J Nucl Med Mol Imaging 2023;50:3513) — PMC10547645",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10547645/"
+    },
+    {
+      "title": "[39] International EANM-SNMMI-ISMRM consensus recommendation for PET/MRI in oncology — Springer (EJNMMI 2023), DOI 10.1007/s00259-023-06406-x",
+      "url": "https://link.springer.com/article/10.1007/s00259-023-06406-x"
+    },
+    {
+      "title": "[40] International EANM-SNMMI-ISMRM consensus recommendation for PET/MRI in oncology — SNMMI Procedure Standard PDF",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2023-08-25/PETMR%20Final.pdf"
+    },
+    {
+      "title": "[41] MRI-Based Attenuation Correction for Hybrid PET/MRI Systems: A 4-Class Tissue Segmentation Technique Using a Combined Ultrashort-Echo-Time/Dixon MRI Sequence — J Nucl Med 2012;53:796",
+      "url": "https://jnm.snmjournals.org/content/53/5/796"
+    },
+    {
+      "title": "[42] Hybrid ZTE/Dixon MR-based attenuation correction for quantitative uptake estimation of pelvic lesions in PET/MRI (Med Phys) — PMC5877454",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5877454/"
+    },
+    {
+      "title": "[43] A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG (EJNMMI Phys 2023, coefficients de dose type ICRP 128) — PMC9908780",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9908780/"
+    },
+    {
+      "title": "[44] Fludeoxyglucose (18F) — StatPearls, NCBI Bookshelf (propriétés physiques : demi-vie, énergie positron, 511 keV)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557653/"
+    },
+    {
+      "title": "[45] MR-based attenuation correction for PET/MRI neurological studies with continuous-valued bone attenuation coefficients (conversion R2* → HU) — PMC4408245",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4408245/"
+    },
+    {
+      "title": "[46] Workflow in Simultaneous PET/MRI — PubMed 26050660",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26050660/"
+    },
+    {
+      "title": "[47] EANM guidelines for PET-CT and PET-MR routine quality control (2022-23) — PMC10068535",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10068535/"
+    },
+    {
+      "title": "[48] Quality control for quantitative multicenter whole-body PET/MR studies: a NEMA image quality phantom study with three current PET/MR systems (sous-estimation MR-AC jusqu'à 27 %) — PubMed 26429271",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26429271/"
+    },
+    {
+      "title": "[49] Cumulative radiation doses from recurrent PET–CT examinations (PET/CT 17,6 mSv vs PET/MRI 3,6 mSv, -79,6 %) — PMC9328066",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9328066/"
+    },
+    {
+      "title": "[50] 18F-FDG PET/MRI for Staging and Interim Response Assessment in Pediatric and Adolescent Hodgkin Lymphoma (J Nucl Med 2021;62:1524) — PMC8612337",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8612337/"
+    },
+    {
+      "title": "[51] The effect of modern PET technology and techniques on the EANM paediatric dosage card (EJNMMI 2022) — PubMed 34910233",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34910233/"
+    },
+    {
+      "title": "[52] New EANM paediatric dosage card: optimization of F-18 FDG-administered activities (EJNMMI) — Springer 10.1007/s00259-014-2816-5",
+      "url": "https://link.springer.com/article/10.1007/s00259-014-2816-5"
+    },
+    {
+      "title": "[53] The Usefulness of 18F-FDG PET to Differentiate Subtypes of Dementia: Systematic Review and Meta-Analysis — PMC10864694",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10864694/"
+    },
+    {
+      "title": "[54] PET studies in epilepsy — PMC4620171",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4620171/"
+    },
+    {
+      "title": "[55] Local recurrence of squamous cell carcinoma of the head and neck after radio(chemo)therapy: diagnostic performance of FDG-PET/MRI with diffusion-weighted sequences (Se 97,4 % / Sp 91,7 %) — PMC5740208",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5740208/"
+    },
+    {
+      "title": "[56] PSMA-PET for local staging of prostate cancer: systematic review and meta-analysis (PET/MRI vs PET/CT SVI Se 0,87 vs 0,60) — PMC8218057",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8218057/"
+    },
+    {
+      "title": "[57] 68Ga-PSMA-11 PET and mpMRI in the diagnosis of initial lymph node staging of prostate cancer: head-to-head comparative meta-analysis — PMC11222328",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11222328/"
+    },
+    {
+      "title": "[58] The safety of magnetic resonance imaging contrast agents (gadolinium / NSF / macrocyclique groupe II) — PMC11345262",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11345262/"
+    },
+    {
+      "title": "[59] Magnetic Resonance Imaging Contraindications — StatPearls, NCBI Bookshelf (pacemaker, implant cochléaire, claustrophobie)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK551669/"
+    },
+    {
+      "title": "[60] Comparison of Standardized Uptake Values in Normal Structures Between PET/CT and PET/MRI in an Oncology Patient Population — PMC4822407",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4822407/"
+    },
+    {
+      "title": "[61] Almost 10 years of PET/MR attenuation correction: the effect on lesion quantification with PSMA — clinical evaluation on 200 prostate cancer patients — PMC7835314",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7835314/"
+    },
+    {
+      "title": "[62] EANM/EARL FDG-PET/CT accreditation — summary results from the first 200 accredited imaging systems — PMC5787222",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5787222/"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "atom",
+        "label": "Modalité",
+        "value": "Hybride TEP + IRM (simultanée ou séquentielle)"
+      },
+      {
+        "icon": "flask",
+        "label": "Traceur de référence",
+        "value": "¹⁸F-FDG (autres : PSMA, FET, DOTATOC)"
+      },
+      {
+        "icon": "zap",
+        "label": "Photons de coïncidence",
+        "value": "511 keV (annihilation, ~180°)"
+      },
+      {
+        "icon": "clock",
+        "label": "Période ¹⁸F",
+        "value": "109,8 min"
+      },
+      {
+        "icon": "activity",
+        "label": "Positon ¹⁸F",
+        "value": "β⁺ ; Emax ≈ 0,64 MeV ; parcours < 2,4 mm"
+      },
+      {
+        "icon": "microscope",
+        "label": "Détecteurs TEP",
+        "value": "SiPM / APD (compatibles champ magnétique)"
+      },
+      {
+        "icon": "target",
+        "label": "Aimant",
+        "value": "1,5 T ou 3 T"
+      },
+      {
+        "icon": "syringe",
+        "label": "Activité adulte FDG",
+        "value": "~185 MBq (≈ 3–3,5 mSv)"
+      },
+      {
+        "icon": "baby",
+        "label": "Pédiatrie FDG (EANM 2016)",
+        "value": "Base 25,9 MBq torse / 14,0 MBq cerveau (classe B)"
+      },
+      {
+        "icon": "radiation",
+        "label": "Dose efficace FDG",
+        "value": "0,019 mSv/MBq (ICRP 128)"
+      },
+      {
+        "icon": "shield",
+        "label": "Réduction de dose vs TEP-TDM",
+        "value": "≈ 80 % (3,6 vs 17,6 mSv)"
+      },
+      {
+        "icon": "alert",
+        "label": "Enjeu spécifique",
+        "value": "Correction d'atténuation par IRM (MRAC)"
+      },
+      {
+        "icon": "list",
+        "label": "Indications phares",
+        "value": "Neuro/épilepsie/démence, pédiatrie, prostate, tête-cou, foie"
+      },
+      {
+        "icon": "droplets",
+        "label": "Contraste IRM",
+        "value": "Tissus mous, diffusion (DWI/ADC), perfusion, LGE"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FDG"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁸Ga-PSMA-11"
+      },
+      {
+        "type": "traceur",
+        "label": "¹⁸F-PSMA-1007"
+      },
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FET (acides aminés)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁸Ga-DOTATOC"
+      },
+      {
+        "type": "examen",
+        "label": "TEP-TDM au ¹⁸F-FDG"
+      },
+      {
+        "type": "examen",
+        "label": "IRM multiparamétrique de prostate"
+      },
+      {
+        "type": "examen",
+        "label": "TEP amyloïde / tau cérébrale"
+      },
+      {
+        "type": "maladie",
+        "label": "Lymphome de Hodgkin pédiatrique"
+      },
+      {
+        "type": "maladie",
+        "label": "Neuroblastome"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer de la prostate"
+      },
+      {
+        "type": "maladie",
+        "label": "Épilepsie pharmacorésistante"
+      },
+      {
+        "type": "maladie",
+        "label": "Maladie d'Alzheimer"
+      },
+      {
+        "type": "maladie",
+        "label": "Sarcoïdose cardiaque"
+      },
+      {
+        "type": "score",
+        "label": "Classification de Lugano / Deauville"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-PSMA"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quelle est la raison physique principale d'utiliser des photodétecteurs SiPM ou APD dans une TEP-IRM intégrée plutôt que des photomultiplicateurs classiques ?",
+        "options": [
+          "Ils sont moins chers",
+          "Ils sont insensibles au champ magnétique intense de l'aimant",
+          "Ils détectent des photons de plus basse énergie",
+          "Ils suppriment le besoin de correction d'atténuation"
+        ],
+        "answer": 1,
+        "explanation": "Les tubes photomultiplicateurs (PMT) sont perturbés par le champ magnétique. Les APD (Siemens Biograph mMR, 2011) puis les SiPM (GE SIGNA, 2014) fonctionnent dans l'aimant et permettent l'insertion des détecteurs TEP dans le statif IRM.",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "En TEP-IRM, pourquoi la correction d'atténuation est-elle un problème spécifique par rapport à la TEP-TDM ?",
+        "options": [
+          "L'IRM sous-estime toujours l'activité de 50 %",
+          "L'IRM mesure la densité protonique, pas l'atténuation des photons de 511 keV",
+          "Le champ magnétique atténue les photons de 511 keV",
+          "L'IRM ne couvre pas le corps entier"
+        ],
+        "answer": 1,
+        "explanation": "En TEP-TDM la carte d'atténuation dérive des unités Hounsfield du scanner. L'IRM ne mesure pas l'atténuation des 511 keV mais la densité protonique, imposant une MRAC (MR-based Attenuation Correction) par segmentation tissulaire.",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la limite majeure de la MRAC par segmentation Dixon standard (4 classes) ?",
+        "options": [
+          "Elle surestime la fixation pulmonaire",
+          "L'os est ignoré/classé comme tissu mou, ce qui sous-estime le SUV des lésions osseuses",
+          "Elle ne distingue pas la graisse de l'air",
+          "Elle nécessite une injection de gadolinium"
+        ],
+        "answer": 1,
+        "explanation": "Le Dixon segmente en air, poumon, graisse et tissu mou mais n'inclut pas l'os : ignorer l'os peut induire des erreurs de SUV allant jusqu'à ~25 %, d'où le recours à ZTE/UTE ou au deep-learning pseudo-CT.",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel gain de dose efficace la TEP-IRM apporte-t-elle par rapport à la TEP-TDM corps entier, selon l'étude monocentrique de Martin et al. (2020) ?",
+        "options": [
+          "Réduction de ~20 %",
+          "Réduction de ~80 % (3,6 vs 17,6 mSv)",
+          "Aucune différence",
+          "Augmentation de 30 %"
+        ],
+        "answer": 1,
+        "explanation": "Sur 1 003 examens, la dose efficace était de 3,6 ± 1,4 mSv en TEP-IRM contre 17,6 ± 8,7 mSv en TEP-TDM, soit une réduction de 79,6 % [1]. La suppression du CT, devenu la source dominante de dose, explique ce gain.",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Selon la carte de dose pédiatrique EANM (v5.7.2016), quelle est l'activité de base du ¹⁸F-FDG pour une TEP torse (corps entier) chez l'enfant ?",
+        "options": [
+          "14,0 MBq (classe A)",
+          "25,9 MBq (classe B)",
+          "10,5 MBq (classe C)",
+          "37 MBq (classe B)"
+        ],
+        "answer": 1,
+        "explanation": "La carte EANM classe le FDG-TEP torse en classe B avec une activité de base de 25,9 MBq et une activité minimale de 26 MBq ; la TEP cérébrale a une base de 14,0 MBq [3].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel est le coefficient de dose efficace adulte du ¹⁸F-FDG selon l'ICRP 128 ?",
+        "options": [
+          "0,13 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,0037 mSv/MBq",
+          "1,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "L'ICRP 128 retient 1,9 × 10⁻² mSv/MBq = 0,019 mSv/MBq pour le ¹⁸F-FDG ; l'organe critique est la paroi de la vessie urinaire (0,13 mGy/MBq) [6][9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi la neurologie (épilepsie, démences, gliomes) est-elle une indication phare de la TEP-IRM ?",
+        "options": [
+          "Le cerveau ne nécessite pas de correction d'atténuation",
+          "Acquisition simultanée, faible dose et contraste IRM cérébral supérieur en une session",
+          "L'IRM cérébrale remplace totalement la TEP",
+          "Le FDG ne fixe pas le cerveau"
+        ],
+        "answer": 1,
+        "explanation": "La TEP-IRM combine en une seule session le biomarqueur métabolique/moléculaire et l'IRM haute résolution du cerveau, avec dose réduite et recalage co-temporel ; utile pour les dysplasies corticales focales (épilepsie) et la différenciation récidive/post-thérapie des gliomes (¹⁸F-FET).",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Dans le lymphome pédiatrique, comment se compare la TEP-IRM à la TEP-TDM ?",
+        "options": [
+          "Nettement inférieure pour la stadification",
+          "Diagnostiquement équivalente pour détection, classification et stadification Ann Arbor, avec irradiation réduite",
+          "Impossible à réaliser chez l'enfant",
+          "Réservée uniquement au suivi"
+        ],
+        "answer": 1,
+        "explanation": "La TEP-IRM est équivalente à la TEP-TDM pour la détection, la classification, la stadification Ann Arbor et l'évaluation de réponse du lymphome de Hodgkin pédiatrique/adolescent, avec une exposition fortement réduite [50].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'atout du temps de vol (TOF) en TEP-IRM ?",
+        "options": [
+          "Il supprime le besoin d'aimant",
+          "Il améliore le rapport signal/bruit et réduit le biais lié aux artéfacts métalliques et au mismatch respiratoire",
+          "Il double la résolution spatiale",
+          "Il élimine la MRAC"
+        ],
+        "answer": 1,
+        "explanation": "Le TOF (intégré p. ex. au GE SIGNA) améliore le RSB et atténue visuellement l'impact des artéfacts métalliques et du mésappariement atténuation-émission, même si la quantification peut rester partiellement biaisée.",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "En imagerie de prostate, quel avantage la TEP-IRM au PSMA offre-t-elle par rapport à l'IRM multiparamétrique seule pour l'extension extra-prostatique ?",
+        "options": [
+          "Aucune différence",
+          "Une sensibilité supérieure (≈ 78,7 % vs 52,9 %)",
+          "Une spécificité toujours de 100 %",
+          "Elle ne détecte pas l'invasion des vésicules séminales"
+        ],
+        "answer": 1,
+        "explanation": "La PSMA-TEP-IRM est plus sensible que l'IRM mp pour l'extension extra-prostatique (78,7 % vs 52,9 %) et l'invasion des vésicules séminales, en combinant imagerie fonctionnelle et anatomique en une session.",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle affirmation décrit correctement le mécanisme de piégeage du ¹⁸F-FDG ?",
+        "options": [
+          "Il est métabolisé complètement comme le glucose",
+          "Il entre via les transporteurs GLUT, est phosphorylé par l'hexokinase, puis piégé car non isomérisable (substitution en C2)",
+          "Il se fixe sur les récepteurs de la somatostatine",
+          "Il diffuse passivement sans transporteur"
+        ],
+        "answer": 1,
+        "explanation": "Le FDG entre par GLUT-1/GLUT-3 (surexprimés dans les cancers, effet Warburg), est phosphorylé par l'hexokinase en FDG-6-phosphate ; la substitution du fluor en C2 empêche l'isomérisation → piégeage métabolique intracellulaire [20][22].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle méthode de MRAC est devenue standard pour le crâne afin de prendre en compte l'os ?",
+        "options": [
+          "Segmentation Dixon 4 classes",
+          "ZTE (zero-echo-time) ou atlas osseux, éventuellement combinés en deep-learning",
+          "Correction par TDM systématique",
+          "Aucune correction n'est nécessaire au cerveau"
+        ],
+        "answer": 1,
+        "explanation": "En neuro, le ZTE (ou UTE) capture l'os crânien ; le biais moyen dans le striatum est de 1,5 % (ZTE) vs 3,8 % (atlas), et les approches deep-learning type ZeDD-CT ramènent le biais de CA de ~20 % (os ignoré) à < 2 % [15][16].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Pourquoi la troncature du champ de vue est-elle une limite en TEP-IRM ?",
+        "options": [
+          "Le FOV IRM (~45 cm) est plus petit que le FOV TEP (~60 cm) → bras/épaules tronqués sur la carte d'atténuation",
+          "L'IRM ne voit pas le pelvis",
+          "La TEP a un FOV trop petit",
+          "Le champ magnétique déforme les images périphériques"
+        ],
+        "answer": 0,
+        "explanation": "Le FOV transaxial de l'IRM est plus étroit que celui de la TEP, tronquant les bras et créant des zones photopéniques ; des algorithmes (MLAA, HUGE) corrigent partiellement cette troncature.",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle contre-indication est SPÉCIFIQUE de la composante IRM de la TEP-IRM ?",
+        "options": [
+          "Allergie au FDG",
+          "Pacemaker/défibrillateur non compatible IRM, implant cochléaire ou corps étranger ferromagnétique",
+          "Hyperglycémie",
+          "Jeûne insuffisant"
+        ],
+        "answer": 1,
+        "explanation": "Aux précautions de la TEP s'ajoutent celles de l'IRM : dispositifs implantés non MR-conditional (certains pacemakers/DAI), implants cochléaires, corps étrangers ferromagnétiques, clips anciens, et claustrophobie ; un screening IRM est obligatoire.",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel facteur limite surtout l'adoption pratique de la TEP-IRM en pédiatrie malgré le bénéfice dosimétrique ?",
+        "options": [
+          "L'absence de traceur adapté",
+          "La durée d'acquisition IRM plus longue augmentant le recours à la sédation/anesthésie",
+          "Le risque d'irradiation supérieur à la TEP-TDM",
+          "L'incompatibilité du FDG avec l'aimant"
+        ],
+        "answer": 1,
+        "explanation": "L'acquisition IRM allonge l'examen, ce qui accroît le besoin de sédation/anesthésie chez le jeune enfant ; s'y ajoutent le coût et la disponibilité limités, freins reconnus par le consensus ISMRM-SNMMI.",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est le cadre de référence international pour la TEP-IRM en oncologie publié en 2023 ?",
+        "options": [
+          "Critères de Lugano",
+          "Consensus EANM-SNMMI-ISMRM (Veit-Haibach et al., EJNMMI 2023)",
+          "Recommandations ICRP 60",
+          "Guide NEMA NU-2"
+        ],
+        "answer": 1,
+        "explanation": "Le consensus EANM-SNMMI-ISMRM pour la TEP-IRM en oncologie (Veit-Haibach et al., Eur J Nucl Med Mol Imaging 2023, DOI 10.1007/s00259-023-06406-x) définit les protocoles à trois niveaux et les prérequis de formation [38][39].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle métrique dérivée de la TEP amyloïde/tau ou du FDG rend la TEP-IRM pertinente dans le bilan des démences ?",
+        "options": [
+          "Le rapport cœur/médiastin",
+          "Le biomarqueur moléculaire (amyloïde/tau, FDG) couplé à l'IRM de sécurité, en une session",
+          "Le score de Curie",
+          "La fraction d'éjection"
+        ],
+        "answer": 1,
+        "explanation": "La TEP-IRM fournit en une seule session l'IRM cérébrale de base, le FDG et le biomarqueur amyloïde/tau, pertinent à l'ère des anticorps anti-amyloïdes, pour le diagnostic différentiel MA/DCL/démence vasculaire [32][33].",
+        "difficulty": "difficile"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "La TEP-IRM est une imagerie hybride combinant la TEP (métabolisme/molécule, photons de 511 keV) et l'IRM (contraste tissus mous), l'aimant remplaçant le scanner de la TEP-TDM.",
+        "Deux architectures : séquentielle et surtout simultanée/intégrée (détecteurs SiPM/APD dans l'aimant) pour une acquisition co-temporelle ; premiers systèmes : Biograph mMR (APD, 2011), GE SIGNA (SiPM + TOF, 2014).",
+        "Enjeu central : la correction d'atténuation par IRM (MRAC), l'IRM ne mesurant pas l'atténuation des 511 keV — Dixon 4 classes (corps), ZTE/atlas ou deep-learning pseudo-CT (neuro).",
+        "Réduction de dose ≈ 80 % vs TEP-TDM (3,6 vs 17,6 mSv) [1], la suppression du CT étant le gain majeur — atout en pédiatrie et examens répétés.",
+        "Traceur de référence ¹⁸F-FDG : T½ 109,8 min, β⁺ Emax ≈ 0,64 MeV, dose efficace 0,019 mSv/MBq (ICRP 128) ; activité adulte ~185 MBq [6][9].",
+        "Indications phares : neurologie (épilepsie, démences, gliomes ¹⁸F-FET), pédiatrie (lymphome, neuroblastome), prostate (PSMA), tête-cou, foie/pelvis — là où le contraste IRM prime.",
+        "Performances : équivalence à la TEP-TDM en lymphome pédiatrique ; supériorité PSMA-TEP-IRM sur l'IRM mp pour l'extension extra-prostatique (78,7 % vs 52,9 %).",
+        "Limites : sous-estimation du SUV osseux (os ignoré en Dixon), troncature du FOV, artéfacts métalliques, coût/disponibilité, sédation pédiatrique."
+      ],
+      "protocol": [
+        "Préparation FDG (identique à la TEP-TDM) : jeûne ≥ 4–6 h, glycémie cible 4–7 mmol/L mesurée avant injection, hydratation, incubation ~60 min ; screening de sécurité IRM obligatoire.",
+        "Acquisition simultanée : durées TEP et IRM par position de lit ajustées ; corps entier 2–4 min/lit ; TEP cérébrale 10–20 min (statique) ou 40–50 min (dynamique FET) ; tête-cou ~20 min.",
+        "Séquences IRM minimales : T1/T2 Dixon, diffusion (DWI b=800), TIRM, T1 3D post-gadolinium selon niveau de protocole (ultrafast/fast/fully diagnostic, consensus 2023).",
+        "MRAC : Dixon 4 classes (corps) avec LAC prédéfinis (poumon 0,0224 ; graisse 0,0854 ; tissu mou 0,1 cm⁻¹) ; ZTE/UTE ou deep-learning pseudo-CT pour l'os (neuro, pelvis).",
+        "Reconstruction TEP itérative (OSEM) + TOF quand disponible ; correction de troncature des bras (MLAA/HUGE) ; quantification SUV/MTV/TLG, harmonisation EARL pour comparabilité multicentrique.",
+        "Compte rendu : traceur et activité, glycémie, délai injection-acquisition, séquences IRM (± gadolinium) et méthode de MRAC utilisée (Dixon vs ZTE/DL), car elle conditionne la fiabilité des SUV osseux."
+      ],
+      "scores": [
+        "Lymphome : critères de réponse Deauville/Lugano fondés sur la TEP (VPN 95–100 % Hodgkin, 80–100 % LNH agressifs).",
+        "SUV (SUVmax/SUVmean/SUVpeak), volume métabolique (MTV), TLG : métriques quantitatives, à harmoniser via l'accréditation EANM/EARL.",
+        "Neuro-dégénératif : patterns topographiques FDG par sous-type de démence ; charge amyloïde/tau via traceurs dédiés.",
+        "Prostate : PI-RADS (IRM) couplé aux critères d'avidité PSMA pour la localisation intraprostatique et le staging N/M."
+      ],
+      "pitfalls": [
+        "Sous-estimation du SUV des lésions osseuses avec la MRAC Dixon (os ignoré/classé tissu mou) — vérifier la méthode de correction avant d'interpréter une lésion osseuse.",
+        "Troncature des bras (FOV IRM ~45 cm < FOV TEP ~60 cm) → zones photopéniques et erreurs de mise à l'échelle de la correction de diffusion.",
+        "Artéfacts métalliques (implants dentaires/orthopédiques) : vides de susceptibilité IRM créant de faux défauts de fixation sur la carte d'atténuation ; le TOF en atténue l'impact.",
+        "Bobines de surface non prises en compte dans la MRAC → zones photopéniques focales pouvant mimer une pathologie.",
+        "Mésappariement atténuation-émission par mouvement respiratoire/cardiaque (foie surtout).",
+        "Faux négatif de CA sur fantôme : sous-estimation d'activité jusqu'à 27 % sans protocole MR-AC dédié — d'où le CQ EANM spécifique TEP-IRM.",
+        "Gadolinium : risque de fibrose systémique néphrogénique si DFG < 60 mL/min/1,73 m² ; préférer les agents macrocycliques (groupe II).",
+        "Ne jamais oublier les contre-indications IRM (pacemaker non conditionnel, implant cochléaire, corps étranger ferromagnétique, claustrophobie) qui s'ajoutent à celles de la TEP."
+      ]
+    },
+    "lead": "La TEP-IRM réunit dans un même appareil deux façons complémentaires de regarder le corps : la médecine nucléaire, qui révèle l'activité des cellules, et l'imagerie par résonance magnétique, réputée pour la finesse avec laquelle elle distingue les tissus mous. En remplaçant le scanner à rayons X par l'aimant, elle diminue nettement l'exposition aux radiations, un atout précieux chez l'enfant et lors d'examens répétés. Elle brille là où le détail anatomique compte le plus, notamment pour le cerveau, le bassin, le foie et la région tête et cou. Réalisée souvent en une seule séance, elle offre au médecin une lecture conjointe du fonctionnement et de la forme des organes. Cette double vision aide à mieux situer les maladies, à en préciser l'étendue et à orienter les décisions de traitement.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cet examen ?",
+          "text": "La TEP-IRM est un examen qui réalise **en une seule fois** deux images complémentaires : la TEP, qui montre le **fonctionnement** des organes et repère les zones anormalement actives (par exemple une tumeur), et l'IRM, qui fournit des **images très détaillées des tissus mous** (cerveau, foie, bassin, région tête et cou). Son grand avantage : l'IRM remplace le scanner à rayons X, si bien que l'examen expose à **beaucoup moins d'irradiation**. C'est particulièrement précieux chez l'enfant, chez les personnes jeunes et lorsqu'il faut répéter les examens de surveillance.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Un examen, deux images",
+              "text": "Au lieu de passer une TEP puis une IRM à deux moments différents, tout est obtenu pendant le même passage, ce qui évite un deuxième rendez-vous et permet de superposer parfaitement les deux images."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma montrant comment le produit injecté se fixe sur les zones du corps très actives.",
+            "caption": "La partie TEP repère les zones qui consomment beaucoup d'énergie ; l'IRM les situe très précisément dans le corps."
+          }
+        },
+        {
+          "title": "Comment se déroule l'examen ?",
+          "text": "Comme pour une TEP classique, on vous demandera le plus souvent d'être **à jeun** quelques heures avant. Une petite quantité d'un produit traceur est injectée dans une veine, puis vous vous reposez tranquillement le temps que le produit se répartisse dans le corps. Vient ensuite l'acquisition des images, allongé dans l'appareil. Comme il s'agit aussi d'une IRM, l'examen peut être **un peu plus long** qu'une TEP-scanner et l'appareil est bruyant : on vous proposera généralement une protection auditive. L'examen est **indolore**.",
+          "list": [
+            "Prévoyez d'être à jeun selon les consignes du service.",
+            "Signalez votre traitement, un diabète, une grossesse ou un allaitement.",
+            "L'examen se fait allongé, sans douleur ; l'appareil est bruyant (protections fournies)."
+          ]
+        },
+        {
+          "title": "Est-ce sans danger ?",
+          "text": "L'examen est **sûr** et l'exposition aux rayonnements est **réduite** par rapport à une TEP-scanner, puisqu'il n'y a pas de scanner à rayons X. Parce qu'il comporte une IRM (un aimant puissant), il est **essentiel de signaler avant l'examen** tout implant métallique, pacemaker ou défibrillateur, implant de l'oreille interne, ou tout autre matériel dans votre corps, ainsi qu'une éventuelle **claustrophobie** (peur des espaces fermés). L'équipe vous fera remplir un questionnaire de sécurité et vous accompagnera. Chez le jeune enfant, un endormissement (sédation) est parfois nécessaire pour rester immobile pendant l'examen.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "À signaler impérativement avant l'examen",
+              "text": "Pacemaker ou défibrillateur, implants métalliques ou électroniques, clips, éclats métalliques, claustrophobie, problème rénal (pour le produit de contraste éventuel), grossesse ou allaitement. Ces informations conditionnent la sécurité de l'examen."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser : atouts et indications",
+          "text": "La TEP-IRM combine le **métabolisme (TEP)** et le **contraste tissus mous supérieur de l'IRM** en une acquisition **simultanée**, avec une **irradiation fortement réduite** car l'IRM remplace le scanner. Elle trouve son intérêt maximal là où le contraste IRM apporte une valeur ajoutée et/ou où l'on veut limiter la dose.",
+          "list": [
+            "**Pédiatrie et adolescent** (lymphome, tumeurs solides) : performances diagnostiques équivalentes à la TEP-TDM avec une dose fortement diminuée — indication phare.",
+            "**Neurologie / neuro-oncologie** : épilepsie pharmacorésistante (repérage du foyer, dysplasies corticales focales), gliomes (traceurs acides aminés), démences (couplage IRM + biomarqueurs).",
+            "**Prostate (PSMA)** : meilleure localisation intraprostatique et bilan d'extension, en une session fonctionnelle + anatomique.",
+            "**Tête et cou, foie, pelvis (gynécologie), métastases hépatiques de TNE** : tumeurs à fort contraste IRM.",
+            "Situations nécessitant des **examens répétés** chez des patients jeunes, où la réduction de dose est déterminante."
+          ]
+        },
+        {
+          "title": "Démarche et apport de la médecine nucléaire",
+          "text": "En pratique, l'équipement TEP est aujourd'hui **hybride** ; le choix TEP-TDM vs TEP-IRM se fait avec le médecin nucléaire selon l'indication, le traceur, l'organe cible et le profil du patient (âge, dose cumulée, intérêt du contraste tissus mous). L'acquisition simultanée assure un **recalage spatial optimal** entre l'image métabolique et l'anatomie, utile pour caractériser une lésion douteuse ou délimiter une cible. Adressez avec la **question clinique précise**, le contexte (bilan initial, réponse, récidive) et les antériorités d'imagerie.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "La TEP-IRM réunit en un seul examen une imagerie métabolique et une IRM diagnostique de haute résolution, avec une irradiation nettement inférieure à la TEP-TDM. Elle est particulièrement pertinente chez l'enfant/l'adolescent et dans les localisations où le contraste tissus mous est décisif (cerveau, prostate, tête-cou, foie, pelvis). Discutez l'indication et la disponibilité avec le service de médecine nucléaire : préciser la question clinique et vérifier les contre-indications IRM (implants, dispositifs) accélère la prise en charge."
+            }
+          ]
+        },
+        {
+          "title": "Limites à connaître avant d'adresser",
+          "text": "La TEP-IRM hérite des **contre-indications de l'IRM** (certains dispositifs implantés non compatibles, corps étrangers ferromagnétiques) et de la **claustrophobie**. La **durée d'examen** est plus longue qu'une TEP-TDM (recours possible à la sédation chez le jeune enfant), la **disponibilité** est plus limitée et le **coût** plus élevé. Sur le plan technique, la correction d'atténuation est plus complexe qu'en TEP-TDM et peut sous-estimer la fixation osseuse ; le compte rendu du nucléariste en tient compte.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Vérifier avant l'orientation",
+              "text": "Compatibilité IRM des dispositifs implantés, tolérance à l'espace confiné, fonction rénale si injection de gadolinium envisagée, et faisabilité chez le jeune enfant (immobilité/sédation). Ces points, transmis en amont, évitent une reprogrammation."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité",
+          "text": "**Comment lire la carte d'identité.** La **TEP-IRM (PET-MRI)** est une imagerie hybride qui associe, dans une même machine, un anneau de détection **TEP (tomographie par émission de positons)** et un aimant d'**IRM (imagerie par résonance magnétique)** [12]. Le traceur de référence reste le **¹⁸F-FDG** (fluorodésoxyglucose), dont les deux photons d'annihilation de **511 keV** émis à ~180° sont détectés en coïncidence [12][44]. La demi-vie physique du ¹⁸F est de **109,77 min** et l'énergie maximale du positon est de **~0,635 MeV**, ce qui garantit un parcours court dans les tissus et donc une excellente résolution spatiale [10][44].\n\nDeux éléments distinguent d'emblée la carte d'identité de la TEP-IRM de celle de la TEP-TDM. D'abord la **correction d'atténuation (CA)** : l'IRM ne mesurant pas la densité électronique des tissus, la CA repose sur une **MRAC (MR-based Attenuation Correction)** par segmentation tissulaire, et non sur les unités Hounsfield d'un scanner [17]. Ensuite l'**irradiation** : la suppression du composant TDM réduit la dose efficace totale d'examen d'environ **80 %** (≈ **3,6 mSv** en TEP-IRM vs **17,6 mSv** en TEP-TDM corps entier) [1][49]. La dose n'est plus alors quasi exclusivement liée qu'au radiopharmaceutique lui-même (**0,019 mSv/MBq** pour le ¹⁸F-FDG, CIPR 128) [9].\n\nLes valeurs exactes d'activité, de séquences IRM et de méthode de CA sont à adapter au protocole de chaque service et détaillées dans les mouvements B et D.",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons d'annihilation (coïncidence TEP)"
+            },
+            {
+              "value": "109,77 min",
+              "label": "Demi-vie physique du ¹⁸F"
+            },
+            {
+              "value": "≈ 80 %",
+              "label": "Réduction de dose vs TEP-TDM"
+            },
+            {
+              "value": "1,5–3 T",
+              "label": "Champ magnétique de l'IRM couplée"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "Deux architectures coexistent. Les systèmes **intégrés/simultanés** insèrent les détecteurs TEP (photodétecteurs à semi-conducteurs **SiPM** ou **APD**, insensibles au champ magnétique, contrairement aux tubes photomultiplicateurs classiques) dans le statif IRM, permettant une acquisition **TEP et IRM co-temporelle** : c'est la configuration clinique dominante [12]. Les systèmes **séquentiels** (machines juxtaposées, acquisition consécutive) sont aujourd'hui minoritaires. Le premier système intégré corps entier commercialisé fut le **Siemens Biograph mMR** (marquage CE + FDA 2011, APD) [12][13], suivi du **GE SIGNA PET/MR** (2014, SiPM avec temps de vol) [12]."
+            }
+          ]
+        },
+        {
+          "title": "A2 - Définition",
+          "text": "La **TEP-IRM** est une modalité d'imagerie **hybride** qui fusionne, sur un même patient et le plus souvent en une **acquisition simultanée**, l'information **métabolique et moléculaire** de la **TEP** et l'information **morphologique et fonctionnelle multiparamétrique** de l'**IRM** [12][38]. Elle se définit par substitution : l'IRM y remplace le scanner (TDM) des systèmes TEP-TDM classiques, en assurant à la fois le **repérage anatomique** et le support de la **correction d'atténuation** [1][17].\n\nLa TEP apporte une information **fonctionnelle et quantitative** : elle cartographie une propriété biologique (captation d'un traceur émetteur de positons, exprimée en **SUV** — Standardized Uptake Value) plutôt qu'une structure. L'IRM, de son côté, ne se limite pas à un rôle morphologique : par son **contraste tissus mous** supérieur et ses **biomarqueurs multiparamétriques** — diffusion (DWI/ADC), perfusion, rehaussement tardif au gadolinium (LGE), cartographies T1/T2 — elle ajoute une seconde couche fonctionnelle, sans rayonnement ionisant [30][26]. La TEP-IRM est ainsi la seule imagerie hybride combinant **deux modalités fonctionnelles** co-enregistrées.\n\nCette définition la distingue nettement de l'imagerie purement **morphologique** (TDM, IRM diagnostique isolée) : là où ces dernières décrivent l'anatomie, la TEP-IRM répond à la question fonctionnelle « ce tissu est-il métaboliquement/moléculairement actif ? » tout en le localisant avec la résolution en contraste de l'IRM. Elle se distingue aussi de la **TEP-TDM** non par la cible TEP (identique) mais par le **substrat anatomique** (IRM vs TDM), qui conditionne à la fois l'irradiation, le contraste tissulaire et la méthode de correction d'atténuation [1][17].",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "« Hybride » ne signifie pas « morphologique + fonctionnel » comme en TEP-TDM, mais **fonctionnel + fonctionnel + anatomique** : la richesse de la TEP-IRM tient à la co-acquisition de deux jeux de biomarqueurs quantitatifs (SUV métabolique d'un côté, ADC/perfusion/cartographies de l'autre), particulièrement exploités en neuro-oncologie, sénologie, prostate et sarcoïdose cardiaque [30][26]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Désintégration β⁺ d'un noyau de ¹⁸F, annihilation du positon avec un électron, et émission de deux photons de 511 keV à 180° détectés en coïncidence par l'anneau TEP.",
+            "caption": "Fig. 1 — Détection en coïncidence des deux photons de 511 keV : le principe TEP, ici intégré dans un statif IRM (acquisition simultanée)."
+          }
+        },
+        {
+          "title": "A3 - Rappels anatomiques & physiologiques",
+          "text": "Deux socles sont strictement nécessaires pour comprendre le principe et lire les images : la **physique de la coïncidence** (partagée avec la TEP-TDM) et la **biochimie du traceur** d'une part ; les **bases de la correction d'atténuation en IRM** — spécifiques et centrales pour la TEP-IRM — d'autre part.\n\n**Physique de l'émission de positons.** Le ¹⁸F est un émetteur **β⁺** (émission de positons ~97 %) ; le positon parcourt une courte distance (**libre parcours < 2,4 mm** dans les tissus pour une énergie maximale de **~0,635 MeV**) avant de s'annihiler avec un électron, produisant **deux photons de 511 keV** colinéaires (180°) [10][44][7]. Leur détection en coïncidence par l'anneau permet la localisation de l'événement le long d'une ligne de réponse ; le **temps de vol (TOF)** des systèmes récents affine cette localisation et améliore le rapport signal/bruit [12].\n\n**Biochimie exploitée par le FDG.** Le FDG est un analogue du glucose : il pénètre les cellules via les **transporteurs GLUT** (surtout **GLUT-1** et **GLUT-3**) et est phosphorylé par l'**hexokinase (HK-II)** en **FDG-6-phosphate**. La substitution du fluor en position C2 empêche l'isomérisation par la phosphoglucose-isomérase, et la déphosphorylation par la glucose-6-phosphatase est très limitée : le FDG-6-phosphate est donc **piégé** dans la cellule (métabolic trapping) [20][21][22].\n\n**Bases de la correction d'atténuation en IRM.** C'est la différence physiologique majeure avec la TEP-TDM. L'IRM mesure la **densité protonique** et les temps de relaxation, **pas** l'atténuation des photons de 511 keV. Il n'existe pas de relation directe densité IRM → coefficient d'atténuation linéaire (LAC). La CA passe donc par une **segmentation IRM en classes tissulaires** auxquelles sont attribués des **LAC prédéfinis** : par la méthode standard **Dixon** (VIBE), le corps est segmenté en 4 classes — air (**0,0 cm⁻¹**), poumon (**0,0224 cm⁻¹**), graisse (**0,0854 cm⁻¹**) et tissus mous (**0,1 cm⁻¹**) [17]. Le point faible physiologique : l'**os cortical**, très atténuant mais quasi sans signal en IRM conventionnelle, est ignoré et assimilé aux tissus mous — d'où une **sous-estimation du SUV** des lésions osseuses détaillée en §A4 et dans le mouvement B [17].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La physiologie du signal TEP (511 keV, piégeage du FDG) est **rigoureusement identique** en TEP-TDM et en TEP-IRM : ce qui change n'est pas la cible imagée mais la **façon de corriger l'atténuation** et le **contraste anatomique** de support. Toute la spécificité physique de la TEP-IRM se concentre donc sur la MRAC."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage cellulaire du ¹⁸F-FDG : entrée par les transporteurs GLUT-1/GLUT-3, phosphorylation par l'hexokinase en FDG-6-phosphate, et blocage métabolique intracellulaire.",
+            "caption": "Fig. 2 — Piégeage métabolique du FDG (GLUT → hexokinase → FDG-6-phosphate) : la base biochimique du signal TEP, indépendante de la modalité anatomique associée."
+          }
+        },
+        {
+          "title": "A4 - Principe : la cible biologique imagée",
+          "text": "**Pourquoi ça marche.** Le principe biologique de la TEP-IRM est celui du traceur employé, indépendamment de l'IRM associée. Avec le **¹⁸F-FDG**, la cible est le **métabolisme glucidique accéléré des cellules tumorales** — l'**effet Warburg** (glycolyse aérobie préférentielle) : surexpression des transporteurs **GLUT** et de l'**hexokinase**, aboutissant au piégeage intracellulaire du FDG-6-phosphate (cf. §A3) [20][21]. L'IRM, elle, ne « fixe » rien : elle génère le **contraste tissus mous** et les **biomarqueurs multiparamétriques** (diffusion, perfusion, LGE, cartographies T1/T2) qui localisent et caractérisent la lésion repérée par la TEP [26][30].\n\nLe contraste image résulte donc de la **superposition de deux sources indépendantes** : le gradient de captation métabolique (TEP) et le gradient de signal/relaxation (IRM). C'est ce qui fonde l'intérêt de l'acquisition **simultanée**, qui supprime tout décalage temporel entre le repère métabolique et le repère anatomique et améliore le recalage spatial [12][38].\n\n- **Hyperfixation** = augmentation de la captation du traceur : densité élevée de GLUT/HK (tumeur avide), inflammation, tissu à métabolisme intrinsèquement élevé.\n- **Hypofixation / absence** = faible expression de la cible (tumeur peu avide, nécrose) — ou, artefactuellement, **sous-estimation du SUV** liée à la correction d'atténuation (os ignoré en MRAC Dixon).\n\nCe dernier point est le déterminant de contraste **propre à la TEP-IRM** : ne pas modéliser l'os peut entraîner une erreur de SUV **jusqu'à ~25 %** sur les lésions osseuses [1][17]. Les correctifs — séquences **ZTE/UTE** (zero-/ultrashort-echo-time) captant l'os crânien, atlas osseux, ou **pseudo-CT par apprentissage profond** — réduisent ce biais : en cérébral, le biais moyen dans le striatum est de **1,5 % (ZTE) vs 3,8 % (atlas)** [16], et une approche hybride **ZeDD-CT** (ZTE + Dixon deep learning) ramène le biais de CA de **~20 % (os ignoré) à < 2 %** [15]. Retenir que, contrairement à la TEP-TDM, le contraste apparent d'une lésion peut ici dépendre de la **méthode de CA** utilisée — d'où l'obligation de la mentionner dans le compte rendu (mouvement C).",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'os « disparaît » en MRAC Dixon",
+              "text": "Une lésion osseuse peut apparaître **hypofixante à tort** parce que la correction d'atténuation Dixon standard classe l'os comme tissu mou et **sous-estime son SUV** (jusqu'à ~25 %) [1][17]. Devant une atteinte osseuse suspectée, privilégier une CA intégrant l'os (ZTE/atlas/pseudo-CT) et interpréter le SUV avec prudence."
+            },
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La cible est **indépendante de la modalité anatomique** : le FDG cible le même métabolisme en TEP-TDM et en TEP-IRM. D'autres traceurs élargissent le champ selon l'organe — **⁶⁸Ga/¹⁸F-PSMA** (prostate), **acides aminés ¹⁸F-FET / ¹¹C-méthionine** (gliomes), **⁶⁸Ga-DOTATOC** (TNE), traceurs **amyloïde/tau** (démences) [12][38]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PSMA_BINDING",
+            "alt": "Comparaison schématique de deux cibles moléculaires imagées en TEP-IRM : captation métabolique du FDG via GLUT/hexokinase, et liaison du ligand PSMA à l'antigène membranaire spécifique de la prostate.",
+            "caption": "Fig. 3 — La cible dépend du traceur : métabolisme glucidique (FDG) pour l'oncologie générale, PSMA pour la prostate ; l'IRM apporte le contraste anatomique quel que soit le traceur."
+          }
+        },
+        {
+          "title": "A5 - Indications",
+          "text": "Les indications de la TEP-IRM se lisent selon un double rationale (renvoi au §A4) : (1) là où le **contraste tissus mous** de l'IRM apporte une valeur diagnostique décisive, et (2) là où la **réduction d'irradiation** prime — typiquement les populations jeunes ou les examens répétés. En France, tout l'équipement TEP disponible étant hybride, les recommandations sont exprimées par couple TEP + radiopharmaceutique sans présupposer l'association hybride (TEP-TDM ou TEP-IRM) [36].\n\n**▸ Argument transversal — irradiation réduite**\n\nUne étude monocentrique sur **1 003 examens** (918 patients) retrouve une dose efficace de **3,6 ± 1,4 mSv** en TEP-IRM contre **17,6 ± 8,7 mSv** en TEP-TDM, soit **−79,6 %**, avec des lésions malignes additionnelles dans **5,3 %** des cas et une reclassification de lésions indéterminées dans **11,1 %** [1][49]. En pédiatrie, la réduction atteint **jusqu'à 80 %** vs ¹⁸F-FDG PET/CT (le TDM représentant ~50 % de la dose de la TEP-TDM) [6].\n\n| Domaine | Indication phare | Performance / apport | Preuve |\n|---|---|---|---|\n| **Pédiatrie** | Lymphome de Hodgkin, sarcomes, neuroblastome | Équivalence diagnostique à la TEP-TDM avec irradiation fortement réduite | Se **94 %** / Sp **97 %** (lymphome) [23] ; Se **86 %** / Sp **80 %** (sarcomes) [24] |\n| **Neurologie** | Épilepsie pharmacorésistante, gliomes, démences | Détection des dysplasies corticales focales ; ¹⁸F-FET (récidive vs post-thérapeutique) ; amyloïde/tau + IRM en une session | Se **0,96** / Sp **0,84** (FDG, Alzheimer vs DFT) [53] |\n| **Prostate** | Staging local, lésion index | PSMA PET-IRM simultanée > mpMRI ou PET seuls | SVI Se **0,87** (vs **0,60** TEP-TDM) [56] ; Sp jusqu'à **0,96** [1] |\n| **Tête-cou** | Récidive locorégionale, staging T/N | Contraste tissus mous supérieur | Se **85,7 %** / Sp **89,1 %** [27] ; récidive Se **97,4 %** / Sp **91,7 %** [55] |\n| **Foie / TNE / pelvis** | Métastases hépatiques, gynéco-pelvien | L'IRM caractérise des lésions TEP-négatives | [29] |\n| **Cardio / inflammation** | Sarcoïdose cardiaque, vascularite des gros vaisseaux | FDG + LGE + T1/T2 en simultané ; dose réduite | Biomarqueur diag./pronostique [30] ; **6,6 vs 31,7 mSv** [31] |\n\n**▸ Détail des domaines phares**\n\n- **Pédiatrie** : la TEP-IRM et la TEP-TDM sont **diagnostiquement équivalentes** pour la détection, la classification, la stadification Ann Arbor et l'évaluation de réponse du lymphome de Hodgkin pédiatrique/adolescent, avec une irradiation fortement moindre [50][23]. Pour le neuroblastome, la méta-analyse FDG donne Se **0,87** / Sp **0,96** sur l'atteinte os/moelle [25].\n- **Neurologie** : indication où convergent les deux arguments (acquisition simultanée + faible dose). En épilepsie, la co-registration TEP-IRM démasque des dysplasies corticales focales initialement manquées [54]. En démences, une session unique fournit l'IRM de sécurité, le biomarqueur amyloïde (pertinent à l'ère des anticorps anti-amyloïdes), le FDG et le tau [32][33].\n- **Prostate** : la PSMA PET-IRM simultanée améliore la localisation intraprostatique et combine fonctionnel + anatomique en supprimant le décalage temporel ; le ¹⁸F-PSMA offre une meilleure résolution que le ⁶⁸Ga [28][56].\n\n**▸ Positionnement France (SFMN / HAS / CNP-MN)** — le remboursement dépend des indications retenues par la **HAS** ; une fois l'acte admis, l'imagerie prescrite est remboursée à **70 %** du tarif conventionnel [37].",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "La règle de sélection est simple : choisir la TEP-IRM quand le **contraste tissus mous change la conduite** (neuro, prostate, tête-cou, foie, sarcome) OU quand la **minimisation de dose est prioritaire** (enfant, examens répétés). Dans les autres situations, la TEP-TDM — plus rapide et plus répandue — reste le standard [38]."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Illustration du bénéfice dosimétrique de la TEP-IRM : suppression du composant TDM, la dose de l'examen se réduisant à celle du radiopharmaceutique.",
+            "caption": "Fig. 4 — Le gain d'irradiation de la TEP-IRM (≈ −80 % vs TEP-TDM) sous-tend ses indications phares en pédiatrie et en neurologie."
+          }
+        },
+        {
+          "title": "A6 - Contre-indications & précautions",
+          "text": "La TEP-IRM cumule les précautions de la **TEP** (irradiation, grossesse/allaitement) et, surtout, celles de l'**IRM**, qui constituent sa spécificité. Il n'existe pas de contre-indication absolue liée au versant TEP diagnostique, mais le versant IRM introduit de véritables contre-indications absolues.\n\n| Situation | Type | Conduite |\n|---|---|---|\n| **Dispositif implanté non compatible IRM** (pacemaker/DAI ancien non « MR-conditional », neurostimulateur, implant cochléaire) | Absolue (IRM) | Vérifier la compatibilité avant tout examen ; screening IRM obligatoire [59] |\n| **Corps étranger ferromagnétique**, clips vasculaires anciens | Absolue (IRM) | Recherche systématique à l'interrogatoire/imagerie préalable [59] |\n| **Claustrophobie sévère** non gérable | Relative → absolue | Sédation, tunnel large, ou report vers TEP-TDM [59] |\n| **Grossesse** | Relative | Précautions habituelles des traceurs TEP (irradiation fœtale) ; IRM sans gadolinium si indispensable |\n| **Allaitement** | Relative | Interruption transitoire selon le traceur TEP |\n| **Insuffisance rénale sévère** | Relative | Prudence avec le **gadolinium** (fibrose systémique néphrogénique) |\n\n**Gadolinium.** Risque de **fibrose systémique néphrogénique (FSN)** si **DFG < 60 mL/min/1,73 m²** (avertissement FDA 2007) ; les agents **macrocycliques (groupe II)** présentent un risque de FSN **< 0,07 %** même en insuffisance rénale stade 4-5 [58].\n\n**Implants métalliques « MRI-safe ».** Même compatibles, ils **dégradent le signal IRM** et **faussent la MRAC** (artéfacts sur la carte d'atténuation) : dans une série de 65 patients, **6 % d'artéfacts métalliques larges, 12 % petits, 41 % d'artéfacts dentaires** [18]. Le **temps de vol (TOF)** atténue le biais induit [19].\n\n**Limites diagnostiques propres à la TEP-IRM** (renvoi mouvement C) : sous-estimation du SUV osseux (os ignoré en MRAC Dixon), **troncature du champ de vue** (FOV IRM ~45 cm < FOV TEP ~60 cm → bras/épaules tronqués), disponibilité et coût limités [17].\n\n**Pédiatrie.** Le bénéfice dosimétrique est contrebalancé par une **durée d'acquisition IRM plus longue**, qui augmente le recours à la **sédation/anesthésie** et limite en pratique l'adoption [5][6].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — screening IRM systématique",
+              "text": "Avant toute TEP-IRM, réaliser le **screening de sécurité IRM** (dispositifs implantés, corps étrangers ferromagnétiques, clips) : un pacemaker/DAI non « MR-conditional » ou un implant cochléaire est une **contre-indication absolue** qui ne se pose jamais en TEP-TDM [59]. Rechercher aussi grossesse et allaitement (versant TEP)."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — le métal fausse deux fois",
+              "text": "Un implant métallique, même « MRI-safe », crée un **vide de susceptibilité** sur l'IRM ET une **zone photopénique artefactuelle** sur la carte d'atténuation MRAC, pouvant mimer un faux défaut de fixation [17][18]. Toujours corréler à l'IRM native et, si possible, exploiter la reconstruction TOF [19]."
+            }
+          ]
+        },
+        {
+          "title": "B7 - Radiopharmaceutique(s) & mécanisme(s) de fixation",
+          "text": "La TEP-IRM n'impose aucun radiotraceur particulier : elle accueille l'ensemble des émetteurs de positons, le choix étant dicté par l'indication. Le traceur de référence en oncologie reste le **¹⁸F-FDG** (fluorodésoxyglucose), analogue du glucose.\n\n**(a) Mécanisme moléculaire — ¹⁸F-FDG.** Le FDG entre dans la cellule via les **transporteurs GLUT** (surtout GLUT-1 et GLUT-3), surexprimés dans la majorité des cancers, puis est phosphorylé par l'**hexokinase (HK-II)** en **FDG-6-phosphate**.[20] La substitution du fluor en position C2 empêche l'isomérisation par la phosphoglucose-isomérase : le métabolite est **piégé** dans la cellule (la déphosphorylation par la glucose-6-phosphatase étant très limitée), ce qui traduit l'**effet Warburg** (glycolyse aérobie préférentielle des tumeurs).[20][21][22] L'IRM, elle, n'apporte pas de traceur mais un **contraste tissus mous** et des **biomarqueurs multiparamétriques** (diffusion/ADC, perfusion, cartographies T1/T2, rehaussement tardif au gadolinium) coacquis dans la même session.[30]\n\nSelon l'organe, d'autres traceurs sont associés : **⁶⁸Ga/¹⁸F-PSMA** (prostate), **acides aminés ¹⁸F-FET/¹¹C-méthionine** (neuro-oncologie), **⁶⁸Ga-DOTATOC/DOTATATE** (tumeurs neuroendocrines), traceurs **amyloïde/tau** (démences).[5][28]\n\n| Traceur | Émission × énergie du positon (Emax) | Période physique | Production | Particularité |\n|---|---|---|---|---|\n| **¹⁸F-FDG** | β⁺ (~97 %), **0,635 MeV** | **109,8 min** | cyclotron, réaction **¹⁸O(p,n)¹⁸F** | Référence oncologie ; parcours court → **haute résolution** [10][44] |\n| **⁶⁸Ga-PSMA / peptides** | β⁺ **88,9 %**, **1899 keV (1,9 MeV)** | **67,8 min** | générateur **⁶⁸Ge/⁶⁸Ga** (⁶⁸Ge : ~271 j) | Parcours plus long → résolution moindre que le ¹⁸F [11] |\n| **¹⁸F-PSMA** (DCFPyL, PSMA-1007) | β⁺, **~634 keV** | **~109,8 min** | cyclotron | Meilleure résolution spatiale que le ⁶⁸Ga [10] |\n\nÀ l'annihilation, chaque positon produit **2 photons de 511 keV** colinéaires (~180°) détectés en coïncidence ; le parcours du positon du ¹⁸F reste **< 2,4 mm** dans les tissus, garantissant une résolution spatiale élevée.[44]\n\n**(b) Production & marquage.** Le ¹⁸F est produit par cyclotron médical (¹⁸O(p,n)¹⁸F sur eau enrichie), le FDG obtenu par **substitution nucléophile**.[10] Le ⁶⁸Ga est élué d'un **générateur ⁶⁸Ge/⁶⁸Ga** au lit du patient, ce qui affranchit du cyclotron.[11] La contrainte propre à la TEP-IRM ne porte pas sur le traceur mais sur les **photodétecteurs** : les tubes photomultiplicateurs classiques étant inopérants dans le champ magnétique, on emploie des **photodiodes à avalanche (APD)** (Siemens Biograph mMR, marquage CE + FDA **2011**) ou des **photomultiplicateurs au silicium (SiPM)** compatibles IRM et permettant le **temps de vol** (GE SIGNA PET/MR, **2014**).[12][13][14]\n\n**(c) Contrôle qualité du traceur** : pureté radiochimique (HPLC/CCM, cible **≥ 95 %**), pureté radionucléidique, pH, endotoxines, stérilité/apyrogénicité, aspect et activité vérifiée à l'activimètre (pharmacopée).[7]\n\n**(d) Activités & voie.** Injection **IV** ; adulte **~185 MBq** de ¹⁸F-FDG (≈ 3,0–3,5 mSv à 0,017–0,019 mSv/MBq).[7][9] Pédiatrie : carte de dose EANM (§B8, §D15).",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons de coïncidence (annihilation)"
+            },
+            {
+              "value": "109,8 min",
+              "label": "Période physique du ¹⁸F"
+            },
+            {
+              "value": "~185 MBq",
+              "label": "Activité adulte usuelle de ¹⁸F-FDG"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La cible du FDG est **indépendante de la modalité hybride** : le mécanisme GLUT/hexokinase est identique en TEP-TDM et en TEP-IRM.[20] Ce qui change n'est ni le traceur ni son ciblage, mais **la correction d'atténuation** — c'est le véritable enjeu physique de la TEP-IRM (cf. §B9). L'IRM mesure la densité protonique, jamais l'atténuation des photons de 511 keV, d'où le recours obligatoire à une **MRAC** (MR-based Attenuation Correction)."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du ¹⁸F-FDG : entrée par les transporteurs GLUT-1/3, phosphorylation par l'hexokinase en FDG-6-phosphate, blocage de l'isomérisation et accumulation intracellulaire.",
+            "caption": "Fig. 1 — Mécanisme de fixation du ¹⁸F-FDG : captation GLUT puis piégeage sous forme de FDG-6-phosphate."
+          }
+        },
+        {
+          "title": "B8 - Préparation du patient",
+          "text": "La préparation d'une TEP-IRM au ¹⁸F-FDG combine le protocole FDG standard (identique à celui de la TEP-TDM) et une **checklist de sécurité IRM** propre à la modalité hybride.\n\n**Jeûne & glycémie.** Jeûne d'**au moins 4 h** (EANM), certaines recommandations demandant **6 h** sans aliment ni sucre, afin d'abaisser glycémie et insulinémie et de limiter la captation musculaire compétitive.[7][34] La **glycémie** doit être mesurée avant injection, cible normalisée **4–7 mmol/L** ; une hyperglycémie chez un diabétique déséquilibré n'est **pas** une contre-indication absolue mais dégrade le rapport tumeur/bruit de fond.[8]\n\n**Hydratation, incubation, miction.** Après injection : repos musculaire strict, hydratation, délai d'incubation FDG de **~60 min**, puis **vidange vésicale** juste avant l'acquisition pour dégager la vessie et les voies urinaires.[7]\n\n**Spécificités TEP-IRM.** À la préparation FDG s'ajoute le **dépistage des contre-indications et interférences IRM**, sans lequel l'examen ne peut débuter :\n\n| Élément à vérifier | Conduite |\n|---|---|\n| Dispositifs implantés (pacemaker/DAI non MR-conditional, neurostimulateur, implant cochléaire) | Contre-indication → réorienter vers TEP-TDM [59] |\n| Corps étrangers ferromagnétiques, clips vasculaires anciens | Contre-indication / vérification impérative [59] |\n| Implants métalliques MR-safe (dentaires, orthopédiques) | Autorisés mais **artéfactent la MRAC** (cf. §B9, §C14) [17][18] |\n| Claustrophobie | Anxiolyse ou réorientation [59] |\n| Fonction rénale (si gadolinium prévu) | DFG ; risque de **fibrose systémique néphrogénique** si DFG < 60 mL/min/1,73 m² [58] |\n\n**Enfant.** Chez le jeune enfant, la durée d'acquisition IRM plus longue majore le **recours à la sédation/anesthésie**, principal frein pratique à l'adoption malgré le bénéfice dosimétrique (cf. §D15).[5] Les activités suivent la carte pédiatrique EANM (§B7, §D15).",
+          "steps": [
+            {
+              "title": "Avant J",
+              "text": "Vérifier l'indication, l'absence de grossesse/allaitement et la fonction rénale ; réaliser le screening de sécurité IRM (implants, corps étrangers, claustrophobie) ; prévenir d'un jeûne d'au moins 4–6 h."
+            },
+            {
+              "title": "Le jour J",
+              "text": "Confirmer le jeûne ; mesurer la glycémie (cible 4–7 mmol/L) ; injection IV de FDG ; repos musculaire et hydratation pendant l'incubation (~60 min) ; vidange vésicale avant l'acquisition ; sédation éventuelle chez le jeune enfant."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "À vérifier impérativement",
+              "text": "Le **screening IRM** est le geste ajouté qui différencie la préparation TEP-IRM de la TEP-TDM : un pacemaker non MR-conditional ou un corps étranger ferromagnétique méconnu est une **contre-indication absolue**.[59] Toujours documenter la glycémie : au-delà de la cible **4–7 mmol/L**, la captation cérébrale et tumorale du FDG chute par compétition avec le glucose froid.[7]"
+            }
+          ]
+        },
+        {
+          "title": "B9 - Instrument, contrôle qualité & protocole d'acquisition",
+          "text": "**(a) CQ de l'instrument — prérequis.** Le CQ TEP suit la norme **NEMA NU-2** (qualité image sur fantôme corps NEMA NU2-2007) et un CQ de calibration sur fantôme cylindrique uniforme.[47] L'**accréditation EARL (EANM)**, créée en **2010**, harmonise les SUV inter-machines via un scan de calibration (CalQC) et un scan de qualité image (IQQC) — indispensable pour comparer des SUV entre centres.[47][62] Un **piège de CQ propre à la TEP-IRM** : sur fantôme, les protocoles cliniques de MR-AC sous-estiment l'activité reconstruite **jusqu'à 27 %**, biais ramené à **−8 %** avec un protocole MR-AC dédié fantôme.[48] Les guidelines EANM 2022-23 imposent le contrôle spécifique des paramètres IRM conditionnant la MRAC (uniformité, RSB, carte d'atténuation).[47]\n\n**(b) Protocole d'acquisition.** L'atout de l'acquisition **simultanée** est de supprimer le décalage temporel entre modalités ; encore faut-il que les durées TEP et IRM par position de lit coïncident, ce qui impose de **réduire les séquences IRM au minimum diagnostique**.[46][5]\n\n| Région | Temps / durée | Séquences IRM minimales |\n|---|---|---|\n| Corps entier | **2–4 min** par position de lit | T1/T2 Dixon, DWI (b=800), TIRM, T1 3D post-contraste [5] |\n| Cérébrale | **10–20 min** statique ; **40–50 min** dynamique (ex. ¹⁸F-FET) | Séquences dédiées + ZTE/UTE pour l'os [5] |\n| Tête et cou | **≈ 20 min** minimum | + DWI [5] |\n\nLe consensus EANM-SNMMI-ISMRM 2023 décline **trois niveaux** de protocole : « ultrafast/basic » (séquences minimales, équivalent d'une TEP-TDM basse dose), « fast/basic » (corps entier + séquences additionnelles) et « fully diagnostic/advanced » (protocoles régionaux étendus avec gadolinium).[5]\n\n**(c) Correction d'atténuation (CA) — l'enjeu central et spécifique.** Faute de mesurer la densité électronique, l'IRM segmente les tissus et leur attribue des coefficients d'atténuation linéaires (LAC) prédéfinis.\n- **Standard corps entier — Dixon (VIBE) 4 classes** : air, poumon, graisse, tissus mous, avec LAC air **0,0 cm⁻¹**, poumon **0,0224 cm⁻¹**, graisse **0,0854 cm⁻¹**, tissus mous **0,1 cm⁻¹**.[41] L'**os n'est pas inclus** dans la version de base et est assimilé aux tissus mous → **sous-estimation du SUV** des lésions osseuses (erreurs jusqu'à **25 %**).[5][17]\n- **Neuro — ZTE/UTE** (zero/ultrashort echo time) ou atlas capturant l'os crânien ; biais moyen dans le striatum **1,5 % (ZTE) vs 3,8 % (atlas)**.[16] Le **deep learning / pseudo-CT** (ex. ZeDD-CT combinant ZTE + Dixon) réduit le biais de CA de ~20 % (os ignoré) à **< 2 %**.[15][42]\n- **Troncature des bras** (FOV IRM ~45 cm < FOV TEP ~60 cm) corrigée par les algorithmes **MLAA** et **HUGE**.[17]\n\n**(d) TDM/TOF.** Aucune TDM n'est disponible ; le **temps de vol (TOF)** des systèmes SiPM améliore le RSB et **réduit le biais induit par les artéfacts métalliques** et le mismatch respiratoire.[19]\n\n**Personnel.** Le consensus 2023 exige des manipulateurs, médecins et physiciens **formés et expérimentés dans les deux modalités**.[5]",
+          "stats": [
+            {
+              "value": "2–4 min",
+              "label": "Temps par position de lit (corps entier)"
+            },
+            {
+              "value": "jusqu'à 25 %",
+              "label": "Erreur de SUV si l'os est ignoré (MRAC Dixon)"
+            },
+            {
+              "value": "jusqu'à 27 %",
+              "label": "Sous-estimation d'activité (MR-AC sur fantôme, CQ)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — Correction d'atténuation & lésions osseuses",
+              "text": "La MRAC Dixon **ignore l'os** : elle sous-estime le SUV des lésions osseuses (erreurs jusqu'à **25 %**), au point de pouvoir masquer une atteinte médullaire.[5][17] En neuro, exiger une méthode intégrant l'os (**ZTE/UTE ou pseudo-CT deep learning**) pour fiabiliser la quantification, sous peine d'un biais de ~20 % près des structures osseuses.[15][16]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — Implants métalliques & bobines",
+              "text": "Les implants métalliques et les bobines de surface (RF coils) atténuent les photons sans être pris en compte par la MRAC → **zones photopéniques focales** pouvant mimer un faux défaut de fixation.[17] Le **TOF** atténue ce biais mais ne l'annule pas (cf. §C14)."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma de la détection en coïncidence : annihilation du positon, émission de deux photons de 511 keV à 180°, détection simultanée par l'anneau de détecteurs SiPM/APD intégré à l'aimant IRM.",
+            "caption": "Fig. 2 — Détection en coïncidence (511 keV) par l'anneau TEP intégré à l'aimant ; la correction d'atténuation dérive ici de l'IRM (MRAC), non d'une TDM."
+          }
+        },
+        {
+          "title": "B10 - Traitement, reconstruction & quantification",
+          "text": "**Reconstruction.** Reconstruction TEP par algorithme **itératif (OSEM** : ordered-subset expectation maximization), intégrant la **MRAC** (§B9), la correction du diffusé et, sur les systèmes SiPM, le **temps de vol (TOF)**. Le TOF améliore le rapport signal/bruit et réduit visuellement les artéfacts métalliques ; la quantification peut néanmoins rester biaisée en région osseuse ou près d'un implant.[19] La fusion TEP-IRM co-recale les deux jeux de données, avantage maximal en acquisition simultanée où le recalage spatial est intrinsèque.\n\n**Quantification — SUV.** La métrique principale reste le **SUV** (standardized uptake value) sous ses déclinaisons **SUVmax, SUVmean, SUVpeak**, complétées des volumes métaboliques (**MTV**) et du **TLG** (total lesion glycolysis). La corrélation entre quantification par MRAC et par CTAC (référence TEP-TDM) est très élevée (**r > 0,996**), ce qui valide l'usage clinique du SUV en TEP-IRM.[61]\n\n| Métrique | Définition | Usage clinique |\n|---|---|---|\n| **SUVmax** | Fixation maximale dans le voxel le plus intense | Positivité, comparaison inter-examens |\n| **SUVpeak** | Moyenne d'un petit volume centré sur le pic | Plus robuste au bruit que le SUVmax |\n| **MTV** | Volume métabolique tumoral (seuil de SUV) | Charge tumorale, pronostic |\n| **TLG** | MTV × SUVmean | Charge glycolytique globale |\n\n**Écarts résiduels MRAC vs CTAC.** En pelvis, les différences relatives de captation restent **≤ 4 % (tissus mous)** et **≤ 10 % (os)** pour le PSMA ¹⁸F/⁶⁸Ga entre MRAC et CTAC.[61] Une approche hybride **ZTE/Dixon** ramène la RMSE du SUVmax des lésions de **11,02 % (os) / 7,79 % (tissus mous)** avec Dixon seul à **3,28 %**.[42] Ces biais se concentrent sur les structures osseuses : la comparaison des SUV de structures normales TEP-TDM vs TEP-IRM confirme des écarts surtout en région osseuse, ailleurs négligeables.[60]\n\n**Harmonisation.** L'affichage d'un SUV n'a de valeur comparative que si l'étalonnage est à jour et **harmonisé EARL** (§B9) : c'est le prérequis à toute comparaison multicentrique ou à tout suivi longitudinal.[47][62]",
+          "stats": [
+            {
+              "value": "r > 0,996",
+              "label": "Corrélation quantification MRAC vs CTAC"
+            },
+            {
+              "value": "≤ 4 % / ≤ 10 %",
+              "label": "Écart MRAC-CTAC en pelvis (tissus mous / os)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "Un SUV de TEP-IRM ne vaut que par la **méthode de CA employée** : Dixon (os ignoré), ZTE/UTE ou pseudo-CT deep learning ne donnent pas les mêmes chiffres.[15][42] Le compte rendu doit **mentionner la méthode de correction d'atténuation** (cf. §C13), car elle conditionne la fiabilité du SUV, tout particulièrement en région osseuse.[5]"
+            }
+          ]
+        },
+        {
+          "title": "C11 - Aspect normal & variantes physiologiques",
+          "text": "Interpréter une TEP-IRM impose une **double lecture** : reconnaître d'une part la biodistribution physiologique du radiotraceur (identique à celle de la TEP-TDM), d'autre part les particularités du volet IRM — dont la carte de correction d'atténuation (MRAC), source d'aspects trompeurs propres à la modalité (cf. §C14). Les fondamentaux d'interprétation TEP sont ceux de la TEP-TDM [38].\n\n**Biodistribution physiologique du ¹⁸F-FDG (traceur de référence)**\n\nLe ¹⁸F-fluorodésoxyglucose (FDG, analogue du glucose piégé après phosphorylation par l'hexokinase HK-II en FDG-6-phosphate non métabolisable) [20][21] se fixe physiologiquement sur :\n\n- **Cortex cérébral et noyaux gris** : fixation intense (le cerveau est un consommateur obligatoire de glucose) — d'où l'intérêt du contraste IRM en neuro-oncologie et démences [32] ;\n- **Myocarde** : fixation variable selon l'état de jeûne (physiologique en post-prandial, à supprimer par régime gras/jeûne prolongé pour la recherche d'inflammation) ;\n- **Foie et rate** : fixation modérée et homogène (le foie sert de référence-fond, ex. échelle de Deauville) ;\n- **Tube digestif** (activité musculaire lisse et flore), **anneau de Waldeyer**, glandes salivaires ;\n- **Voies urinaires et vessie** : élimination rénale du FDG (organe critique dosimétrique, cf. §D15) — d'où l'intérêt d'une bonne hydratation et vidange vésicale [7][34] ;\n- **Moelle osseuse et graisse brune** (surtout sujet jeune, froid), **muscles** en cas d'effort ou de tension.\n\n**Apport spécifique et lecture du volet IRM**\n\nLà où la TEP-TDM ne fournit qu'un repérage anatomique et une carte d'atténuation, l'IRM apporte un **contraste tissus mous supérieur** et des **biomarqueurs multiparamétriques** à intégrer à la lecture : diffusion (DWI/ADC, typiquement b = 800 s/mm²), rehaussement dynamique et tardif au gadolinium, cartographies T1/T2 [1][30]. Le lecteur doit connaître les séquences réalisées (T1/T2 Dixon, DWI, TIRM, T1 3D post-contraste dans un protocole diagnostique complet) et le niveau de protocole utilisé — « ultrafast/basic », « fast/basic » ou « fully diagnostic » (consensus EANM-SNMMI-ISMRM 2023) — car il conditionne la richesse anatomique disponible [1].\n\n**Aspect normal de la carte d'atténuation (MRAC)**\n\nContrairement à la TDM (où la carte d'atténuation dérive directement des unités Hounsfield), la carte MRAC standard corps entier repose sur une **segmentation Dixon en 4 classes tissulaires**, avec attribution de coefficients d'atténuation linéaires (LAC) prédéfinis : air 0,0 cm⁻¹ ; **poumon 0,0224 cm⁻¹** ; **graisse 0,0854 cm⁻¹** ; **tissus mous 0,1 cm⁻¹** [41]. Un aspect « normal » de cette carte n'inclut **pas l'os** dans sa version de base — particularité à intégrer avant toute lecture des SUV en région osseuse (cf. §C14) [41][17].",
+          "stats": [
+            {
+              "value": "511 keV",
+              "label": "Photons de coïncidence (annihilation β⁺)"
+            },
+            {
+              "value": "4 classes",
+              "label": "Segmentation Dixon standard (air/poumon/graisse/tissus mous)"
+            },
+            {
+              "value": "0,1 cm⁻¹",
+              "label": "LAC des tissus mous (MRAC Dixon)"
+            },
+            {
+              "value": "b=800",
+              "label": "Valeur de diffusion IRM usuelle (DWI)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La carte d'atténuation IRM (MRAC) n'est pas une image anatomique mais une **carte de coefficients** : le volet IRM mesure la densité protonique, jamais l'atténuation des photons de 511 keV. Toujours vérifier quelle méthode de MRAC a été employée (Dixon 4-classes corps entier vs ZTE/atlas ou pseudo-CT deep-learning en neuro), car elle conditionne la fiabilité quantitative de la lecture — en particulier sur l'os (cf. §C14) [17][41]."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Biodistribution physiologique du ¹⁸F-FDG en TEP corps entier : fixation cérébrale intense, myocardique variable, hépatique et splénique modérée, digestive, rénale et vésicale (élimination urinaire).",
+            "caption": "Fig. 1 — Biodistribution physiologique du ¹⁸F-FDG : l'image de référence, commune à la TEP-TDM et à la TEP-IRM."
+          }
+        },
+        {
+          "title": "C12 - Sémiologie & interprétation",
+          "text": "**Méthode de lecture systématique** (adaptée de la TEP-TDM, complétée du volet IRM) :\n\n1. **Contrôler la technique** : traceur et activité injectée, glycémie (< 7 mmol/L souhaitable pour le FDG) [7], délai injection-acquisition (~60 min), méthode de MRAC (Dixon vs ZTE/deep-learning) et séquences IRM réalisées ;\n2. **Vérifier la carte d'atténuation** : troncature des bras, artéfacts métalliques, bobines de surface — sources de zones photopéniques factices (cf. §C14) [17] ;\n3. **Parcourir la biodistribution physiologique** (§C11) et repérer toute **fixation anormale** (focale, asymétrique, extra-physiologique) ;\n4. **Corréler point par point TEP ↔ IRM** : c'est l'apport majeur du recalage co-temporel de l'acquisition simultanée, qui supprime le décalage spatial et temporel entre modalités [1][38] ;\n5. **Coter et quantifier** selon l'indication (SUV, scores de réponse) ;\n6. **Conclure** en répondant explicitement à la question clinique.\n\n**Quantification — le SUV et ses métriques**\n\nLa métrique centrale reste le **SUV (standardized uptake value)** — SUVmax, SUVmean, SUVpeak — complétée du volume métabolique tumoral (MTV) et du TLG (total lesion glycolysis). La corrélation entre SUV obtenus par MRAC et par CTAC (correction TDM) est **très élevée (r > 0,996)**, mais des biais systématiques persistent en régions osseuses (os sous-estimé, cf. §C14) [61]. Toute comparaison inter-machines impose une **harmonisation EARL (EANM)** des SUV [47][62]. Le **temps de vol (TOF)**, intégré aux TEP-IRM récentes (détecteurs SiPM), améliore le rapport signal/bruit et atténue visuellement les artéfacts métalliques, sans toujours en corriger le biais quantitatif [1].\n\n**Patterns pathologiques et scores de réponse**\n\nUne **fixation focale intense extra-physiologique** signe une lésion hypermétabolique (tumeur avide, adénopathie, métastase). Le volet IRM permet de caractériser les lésions **TEP-négatives** (ex. petites métastases hépatiques à fort contraste IRM mais faible avidité) et d'affiner la délinéation [1][29].\n\n| Contexte | Score / critère | Repère quantitatif |\n|---|---|---|\n| **Lymphome** | Deauville / Lugano (fixation vs foie et médiastin) | VPN **95-100 % (Hodgkin)**, **80-100 % (LNH agressifs)** [1] |\n| **Neuro-oncologie** | IRM multiparamétrique + traceurs acides aminés (¹⁸F-FET, ¹¹C-MET) | Différencier récidive vs radionécrose [5] |\n| **Neurodégénératif** | Pattern topographique FDG + amyloïde/tau | Se FDG **0,96** / Sp **0,84** (Alzheimer vs DFT) [53] |\n\n**Cas particulier neuro**\n\nEn démence, la TEP-IRM fournit en une session l'IRM structurale de sécurité **et** le biomarqueur métabolique/moléculaire : le FDG et l'IRM évaluent la neurodégénérescence (patterns topographiques par sous-type), tandis que la TEP amyloïde/tau cible directement la pathologie moléculaire [32][33]. Le FDG-TEP surpasse l'IRM de perfusion ASL pour le diagnostic de démence [53]. En épilepsie pharmacorésistante, la coregistration TEP-IRM détecte des **dysplasies corticales focales** initialement manquées [54].\n\nConclure toujours en **positif / négatif / équivoque**, en intégrant la corrélation TEP-IRM et le contexte clinico-biologique.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le gain du recalage simultané",
+              "text": "L'atout interprétatif décisif de la TEP-IRM intégrée est la **coregistration co-temporelle** : TEP et IRM sont acquises dans le même référentiel spatial, au même instant physiologique. Cela supprime les erreurs de fusion liées aux mouvements et au décalage temporel inhérents à la TEP-TDM séquentielle, et permet de superposer directement une hyperfixation FDG à une anomalie de diffusion ou de rehaussement — atout majeur en tête-cou, prostate et neuro-oncologie [1][38]."
+            }
+          ]
+        },
+        {
+          "title": "C13 - Compte rendu structuré",
+          "text": "Le compte rendu d'une TEP-IRM reprend la trame de la TEP-TDM mais **doit expliciter deux éléments propres à la modalité** : les séquences IRM réalisées et la **méthode de correction d'atténuation** — car cette dernière conditionne la fiabilité des SUV, notamment en région osseuse (cf. §C14) [1].\n\n**Trame recommandée**\n\n1. **Technique** : traceur et activité injectée (MBq), **glycémie** au moment de l'injection, délai injection-acquisition, aimant (1,5 T ou 3 T), **séquences IRM réalisées** (T1/T2 Dixon, DWI/b, post-gadolinium ou non), **méthode de MRAC utilisée** (Dixon 4-classes / ZTE-atlas / pseudo-CT deep-learning), correction de troncature éventuelle (MLAA, HUGE) [1].\n2. **Biodistribution physiologique** : conforme ou non ; qualité de la carte d'atténuation (troncature, artéfacts métalliques).\n3. **Résultats** : pour chaque lésion — localisation, **SUVmax**, corrélat IRM (diffusion, rehaussement, cartographie), caractère uni/multifocal, extension.\n4. **Comparaison** : évolution vs examen antérieur (à technique et méthode de MRAC comparables, prérequis à toute comparaison de SUV) [47].\n5. **Conclusion** : réponse explicite à la question clinique (localisation ? extension ? réponse au traitement ? caractérisation d'une lésion IRM-visible mais TEP-négative ?).\n\n**Mentions spécifiques à ne pas omettre**\n\n- Le **personnel** : le consensus 2023 exige des manipulateurs, médecins et physiciens formés et expérimentés dans **les deux modalités** — TEP et IRM [1] ;\n- L'**injection de gadolinium** (ou son absence) et, le cas échéant, la fonction rénale du patient (cf. §C14 pour la fibrose systémique néphrogénique) ;\n- Toute **limitation quantitative connue** (SUV osseux potentiellement sous-estimé si MRAC Dixon, zone tronquée, artéfact métallique).",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — tracer la méthode de correction d'atténuation",
+              "text": "Mentionner **impérativement** la méthode de MRAC dans le compte rendu. Un SUV osseux mesuré sous Dixon 4-classes (os non modélisé) n'est **pas comparable** à un SUV obtenu sous ZTE/deep-learning ou sous CTAC d'une TEP-TDM antérieure : la sous-estimation peut atteindre **25 %** [1][17]. Sans cette traçabilité, tout suivi longitudinal des SUV en région osseuse est ininterprétable."
+            }
+          ]
+        },
+        {
+          "title": "C14 - Pièges, artefacts & faux positifs / négatifs",
+          "text": "Les pièges de la TEP-IRM se répartissent en deux familles : ceux **communs à toute TEP** (fixations physiologiques trompeuses, effet de volume partiel, extravasation) et ceux **spécifiques à la modalité**, dominés par les limites de la correction d'atténuation IRM (MRAC). Pour chaque écueil : identifier la cause, reconnaître l'aspect, savoir corriger (corrélation IRM, TOF, clichés ou méthode de MRAC adaptés) [17].\n\n**Le problème de l'os — piège quantitatif central**\n\nLa segmentation Dixon 4-classes standard **ignore l'os** (classé comme tissu mou), ce qui **sous-estime le SUV des lésions osseuses jusqu'à 25 %** [1][41]. Les solutions dépendent de la région :\n\n| Région | Méthode de MRAC avancée | Gain quantitatif |\n|---|---|---|\n| **Cerveau** | ZTE (zero-echo-time) ou atlas capturant l'os crânien | Biais striatal **1,5 % (ZTE) vs 3,8 % (atlas)** [16] |\n| **Cerveau** | Deep-learning pseudo-CT (ZeDD, ZTE+Dixon) | Biais de CA réduit de **~20 % à < 2 %** [15] |\n| **Pelvis** | ZTE/Dixon avec densité osseuse | RMSE du SUVmax **11,02 % (os) → 3,28 %** [42] |\n\nEn cérébral, hors structures osseuses et cavités aériques, la dégradation de la quantification par les artéfacts de CA reste **≤ 4 %** [1].\n\n**Artefacts spécifiques de la carte d'atténuation**",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — implants métalliques",
+              "text": "Les implants (dentaires, orthopédiques, valvulaires) créent un vide de susceptibilité IRM qui se traduit par une **zone photopénique factice** sur la carte d'atténuation, mimant un faux défaut de fixation. Dans une série de 65 patients : **6 % d'artéfacts métalliques larges, 12 % petits, 41 % d'artéfacts dentaires** sur la MRAC [18]. Le **temps de vol (TOF)** réduit ce biais mais ne l'annule pas ; corréler systématiquement à l'IRM native [19]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — troncature du champ de vue (bras)",
+              "text": "Le FOV transaxial de l'IRM (~45 cm) est plus étroit que celui de la TEP (~60 cm) : bras et épaules sont **tronqués** sur la carte d'atténuation, générant des zones photopéniques et des erreurs de mise à l'échelle de la correction de diffusion. Corriger par les algorithmes **MLAA** ou **HUGE** [17]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — bobines de surface (RF coils)",
+              "text": "Les antennes de surface atténuent les photons de 511 keV mais ne sont **pas prises en compte** dans la MRAC : elles créent des zones photopéniques focales pouvant mimer une pathologie. Piège purement technique, à connaître pour ne pas surinterpréter [17]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — os et poumon mal classés + mésappariement respiratoire",
+              "text": "Poumon et os sont souvent mal segmentés (assimilés à l'air ou aux tissus mous) → sous-estimation du SUV des lésions concernées. Le **mouvement respiratoire/cardiaque** provoque en outre un mésappariement atténuation-émission, surtout au foie et aux bases pulmonaires [17]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège CQ — MRAC sur fantôme et gadolinium",
+              "text": "Sur fantôme, les protocoles cliniques de MRAC échouent et sous-estiment l'activité reconstruite **jusqu'à 27 %** (réduit à −8 % avec un protocole MRAC dédié) [48] : d'où l'importance des guidelines EANM de CQ TEP-MR (2022-23) [47]. Côté sécurité, le gadolinium expose au risque de **fibrose systémique néphrogénique** si DFG < 60 mL/min/1,73 m² — préférer les agents macrocycliques (groupe II, risque < 0,07 %) [58]."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Détection en coïncidence de deux photons de 511 keV émis à 180° après annihilation du positon : principe physique de la TEP dont dépend la correction d'atténuation, réalisée par MRAC en TEP-IRM.",
+            "caption": "Fig. 2 — Détection en coïncidence des photons de 511 keV : c'est cette atténuation le long de la ligne de réponse que la MRAC doit estimer sans TDM."
+          }
+        },
+        {
+          "title": "D15 - Dosimétrie",
+          "text": "La dosimétrie de la **TEP-IRM (PET-MRI)** se décompose en deux contributions strictement dissociées : la **dose interne** liée au radiopharmaceutique émetteur de positons, et — contrairement à la TEP-TDM — l'**absence de dose externe** puisque le scanner (TDM) est remplacé par l'IRM, non ionisante. C'est là que réside le gain dosimétrique majeur de la modalité.\n\n**Composante radiopharmaceutique (¹⁸F-FDG, traceur de référence).** Le coefficient de dose efficace adulte est de **1,9 × 10⁻² mSv/MBq** selon la CIPR 128 (Commission internationale de protection radiologique) [9]. L'**organe critique** est la **paroi vésicale**, à **1,3 × 10⁻¹ mGy/MBq**, l'excrétion étant urinaire [9]. Aux activités usuelles (185 MBq chez l'adulte), la dose efficace de la composante TEP se situe autour de **3,5 mSv** [9].\n\n| Organe (¹⁸F-FDG) | Dose absorbée (mGy/MBq) | Source |\n|---|---|---|\n| **Paroi vésicale** (organe critique) | **1,3 × 10⁻¹** | [9] |\n| Paroi cardiaque | 6,7 × 10⁻² | [9] |\n| Cerveau | 3,8 × 10⁻² | [9] |\n| Foie | 2,1 × 10⁻² | [9] |\n| Poumons | 2,0 × 10⁻² | [9] |\n| Reins | 1,7 × 10⁻² | [9] |\n\n**Le gain de la suppression du scanner.** Dans une série monocentrique de **1 003 examens** comparant les deux hybrides pour la stadification corps entier, la dose efficace moyenne est de **3,6 ± 1,4 mSv en TEP-IRM contre 17,6 ± 8,7 mSv en TEP-TDM, soit une réduction de 79,6 %** [1][2][49]. Le CT est en effet devenu la source dominante de dose de la TEP-TDM : son remplacement par l'IRM explique à lui seul une baisse globale de **70 à 80 %** [6][49]. Ce bénéfice est confirmé sur des indications inflammatoires : dans la vascularite des gros vaisseaux, la TEP-IRM délivre **6,6 mSv contre 31,7 mSv en TEP-TDM** [31].\n\n**Distinguer dose absorbée et dose efficace.** La dose absorbée (Gy) quantifie l'énergie déposée dans un organe donné ; la dose efficace (Sv) pondère l'ensemble des organes par leur radiosensibilité et permet la comparaison inter-examens. Seule cette dernière est utilisée pour comparer TEP-IRM et TEP-TDM.\n\n**Pédiatrie (carte EANM).** L'activité ¹⁸F-FDG est calculée par la formule *activité de base × multiple selon poids et classe*, avec application d'une activité minimale recommandée si le résultat est inférieur [3]. Pour le FDG-TEP corps entier (classe B), l'activité de base est de **25,9 MBq** (minimum **26 MBq**) ; pour la TEP cérébrale, **14,0 MBq** (minimum **14 MBq**) [3]. Chez un enfant de 50 kg (multiple 10,71), on obtient ≈ **277 MBq** en corps entier et ≈ **150 MBq** en cérébral [3]. La sensibilité élevée des détecteurs SiPM et l'acquisition simultanée (temps TEP allongé pendant l'IRM) autorisent de surcroît une réduction de l'activité injectée, le bénéfice dosimétrique pédiatrique atteignant **jusqu'à 80 %** vs TEP-TDM [6][5]. Une réanalyse de l'essai EuroNet-PHL-C2 propose d'ailleurs de baisser encore les activités FDG pédiatriques dans une future mise à jour de la carte [35].",
+          "stats": [
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "Dose efficace ¹⁸F-FDG (CIPR 128) [9]"
+            },
+            {
+              "value": "3,6 mSv",
+              "label": "Dose TEP-IRM corps entier vs 17,6 mSv en TEP-TDM [1]"
+            },
+            {
+              "value": "-79,6 %",
+              "label": "Réduction de dose vs TEP-TDM [1]"
+            },
+            {
+              "value": "26 / 14 MBq",
+              "label": "Activité minimale FDG pédiatrique corps / cerveau (EANM) [3]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Alerte grossesse / allaitement",
+              "text": "La composante **irradiation fœtale** reste identique à celle de la TEP (traceur ¹⁸F) : la grossesse impose une évaluation stricte du rapport bénéfice/risque. L'IRM sans gadolinium est en revanche non ionisante. **Gadolinium** : à réserver au strict nécessaire, contre-indiqué relatif en cas d'insuffisance rénale sévère (risque de fibrose systémique néphrogénique, cf. §D16). L'allaitement suit les précautions habituelles du traceur TEP utilisé."
+            },
+            {
+              "type": "info",
+              "title": "Point expert - dosimétrie prédictive théranostique",
+              "text": "Lorsqu'un traceur ⁶⁸Ga/¹⁸F-PSMA est utilisé en TEP-IRM prostatique, l'imagerie de sélection s'inscrit dans une **logique théranostique** : elle prépare un éventuel traitement par ¹⁷⁷Lu-PSMA, dont la dosimétrie prédictive relève de la boucle imager→traiter→réévaluer. La TEP-IRM apporte ici, en une session, l'imagerie fonctionnelle de sélection **et** l'anatomie IRM de référence, avec une irradiation minimale."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Biodistribution normale du ¹⁸F-FDG : fixation cérébrale, myocardique, hépatique, digestive et élimination urinaire (vessie = organe critique dosimétrique)."
+          }
+        },
+        {
+          "title": "D16 - Radioprotection",
+          "text": "La radioprotection de la **TEP-IRM** répond aux trois principes fondamentaux — **justification, optimisation (ALARA, *As Low As Reasonably Achievable*), limitation** — mais présente une **particularité structurante** : la suppression totale de l'irradiation X du composant TDM. Le patient n'est exposé qu'à la composante interne du radiopharmaceutique émetteur de positons ; la modalité IRM n'ajoute aucune dose ionisante [1][5]. En contrepartie, elle introduit les contraintes de sécurité propres au champ magnétique intense (1,5 ou 3 T) et aux ondes de radiofréquence.\n\nLa radioprotection radiologique se pense **par cible** :\n\n| Cible | Mesures clés |\n|---|---|\n| **Personnel** | Blindage de seringue, distance, temps, dosimétrie passive et opérationnelle, zonage. Le ¹⁸F (photons de 511 keV) impose un blindage plomb épais ; l'exposition du manipulateur est concentrée sur la préparation et l'injection. |\n| **Entourage / public** | Patient « source » émettant des photons de 511 keV : consignes post-examen (hydratation, mictions fréquentes pour vidanger le réservoir vésical, distance vis-à-vis des enfants et femmes enceintes pendant la période utile, T½ physique du ¹⁸F ≈ 110 min [10]). |\n| **Patient** | Justification de l'indication, optimisation de l'activité injectée (bénéfice de la haute sensibilité SiPM), pas de blocage spécifique pour le FDG. |\n\n**Sécurité IRM — un volet non radiologique mais critique.** Un *screening* IRM systématique est obligatoire avant tout examen. Les contre-indications absolues incluent certains stimulateurs cardiaques / défibrillateurs non *MR-conditional*, les implants cochléaires et les corps étrangers ferromagnétiques ; la claustrophobie sévère non gérable est une limite pratique [59]. Ces contre-indications s'**ajoutent** à celles de la composante TEP.\n\n**Gadolinium.** L'injection de chélate de gadolinium (séquences post-contraste, protocoles « fully diagnostic ») expose au risque de **fibrose systémique néphrogénique (FSN)** en cas d'insuffisance rénale sévère (DFG < 30 mL/min/1,73 m²) ; les agents **macrocycliques du groupe II** présentent un risque de FSN **< 0,07 %** même aux stades 4-5 d'insuffisance rénale chronique [58]. Prudence, screening rénal et rétention gadolinique à considérer.\n\n**Effluents et déchets radioactifs.** La T½ courte du ¹⁸F (~110 min [10]) simplifie la gestion : décroissance rapide, stockage de courte durée. Traçabilité de l'activité et conduite à tenir en cas de contamination selon la procédure du service.",
+          "steps": [
+            {
+              "title": "1. Justification",
+              "text": "Valider l'indication et vérifier qu'aucune alternative non irradiante suffisante n'existe ; la TEP-IRM est elle-même souvent l'alternative la moins irradiante à la TEP-TDM (cf. §D15) [1]."
+            },
+            {
+              "title": "2. Double screening",
+              "text": "Screening radioprotection (grossesse, activité) ET screening IRM (implants, corps étrangers ferromagnétiques, claustrophobie) — étape spécifique à l'hybride [59]."
+            },
+            {
+              "title": "3. Optimisation",
+              "text": "Adapter l'activité (haute sensibilité SiPM + acquisition simultanée permettent une baisse), n'injecter le gadolinium que si le protocole diagnostique l'exige [58][5]."
+            },
+            {
+              "title": "4. Consignes post-examen",
+              "text": "Hydratation, mictions fréquentes, distance vis-à-vis des enfants et femmes enceintes pendant la période utile du ¹⁸F (~110 min de T½) [10]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution - projectiles et implants en salle IRM",
+              "text": "Le champ magnétique permanent transforme tout objet ferromagnétique en projectile. Le contrôle d'accès à la salle IRM est **permanent**, y compris pour le personnel de médecine nucléaire moins familier de l'environnement IRM. Un implant « MRI-safe » peut néanmoins dégrader le signal et fausser la correction d'atténuation IRM (MRAC), source d'artéfacts photopéniques (cf. §D17)."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Principe ALARA : optimisation de la dose par le triptyque Temps - Distance - Blindage (Écran), appliqué à la manipulation du ¹⁸F émetteur de positons de 511 keV."
+          }
+        },
+        {
+          "title": "D17 - Performances diagnostiques & comparaison",
+          "text": "La valeur diagnostique de la **TEP-IRM** dépend étroitement de l'indication. Le principe directeur est le suivant : pour la **détection lésionnelle globale**, la TEP-IRM est **équivalente à la TEP-TDM** (le signal TEP est le même), tandis que son **avantage propre** réside dans le contraste des tissus mous de l'IRM (cerveau, foie, pelvis, tête-cou, moelle) et dans la **réduction d'irradiation** — décisive en pédiatrie et en neurologie [5][38]. Sa limite quantitative principale reste la **correction d'atténuation IRM (MRAC)**, qui peut sous-estimer le SUV (*Standardized Uptake Value*) des lésions osseuses (l'os étant ignoré dans la segmentation Dixon de base) [17][41].\n\n| Indication | Se | Sp | Exactitude / Précision | Source |\n|---|---|---|---|---|\n| **Lymphome pédiatrique** | **94 %** | **97 %** | exactitude **97 %** ; stadification patient 86 % | [23] |\n| Sarcomes tissus mous (pédiatrie) | 86 % | 80 % | — | [24] |\n| Neuroblastome (atteinte os/moelle, FDG) | 0,87 | 0,96 | méta-analyse 7 études | [25] |\n| **Tête-cou** (FDG) | **85,7 %** | **89,1 %** | exactitude **87,3 %** | [27] |\n| Récidive carcinome épidermoïde ORL (+ DWI) | 97,4 % | 91,7 % | par patient | [55] |\n| Démences — Alzheimer vs DFT (FDG) | 0,96 | 0,84 | méta-analyse | [53] |\n| Démences — Alzheimer vs DCL (FDG) | 0,93 | 0,92 | — | [53] |\n| Ganglions prostate (⁶⁸Ga-PSMA-11) | 0,74 | 0,96 | méta-analyse | [57] |\n| Invasion vésicules séminales (PSMA) | 0,87 (vs 0,60 en TEP-TDM) | 0,91 | supériorité TEP-IRM | [56] |\n\n**Comparaison aux autres modalités.**\n\n| Modalité | Atouts | Limites |\n|---|---|---|\n| **TEP-IRM** | Contraste tissus mous supérieur ; irradiation réduite ~80 % ; acquisition simultanée (recalage, pas de décalage temporel) ; biomarqueurs multiparamétriques (DWI/ADC, perfusion, cartographies T1/T2, LGE) [1][30][38] | Coût et disponibilité limités ; durée d'examen ; MRAC (SUV osseux sous-estimé, troncature du FOV, artéfacts métalliques) ; sédation pédiatrique fréquente [17][5] |\n| **TEP-TDM** | Rapide, répandue, CA robuste par le CT, quantification osseuse fiable | Irradiation nettement supérieure (CT dominant) ; contraste tissus mous inférieur [1] |\n| **IRM seule (mp-MRI)** | Excellent contraste anatomique | Pas d'information métabolique ; moins sensible pour l'extension extra-prostatique (52,9 % vs 78,7 % pour PSMA-TEP-IRM) [56] |\n\nLa TEP-IRM **surpasse** l'IRM seule et la TEP-TDM pour la stadification T et N en tête-cou et pour la localisation intraprostatique des lésions index, où l'imagerie fonctionnelle et anatomique fusionne en une session [26][28]. En **neuro-oncologie**, les traceurs acides aminés (¹⁸F-FET, ¹¹C-méthionine) couplés à l'IRM multiparamétrique améliorent la distinction récidive vs modifications post-thérapeutiques [5].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège - SUV osseux sous-estimé par la MRAC",
+              "text": "En segmentation **Dixon** de base, l'**os est classé comme tissu mou** : la fixation (SUV) des lésions osseuses est **sous-estimée**, avec des erreurs pouvant atteindre **25 %** [41]. En cérébral, les séquences **ZTE (zero-echo-time)** ou les approches *deep-learning* (pseudo-CT, ZeDD-CT) ramènent le biais de correction d'atténuation de ~20 % à **< 2 %** [15][16]. Toujours préciser dans le compte rendu la méthode de MRAC employée : elle conditionne la fiabilité des SUV, surtout en région osseuse."
+            },
+            {
+              "type": "info",
+              "title": "Point expert - le TOF atténue les artéfacts métalliques",
+              "text": "Le **temps de vol (TOF, *time-of-flight*)**, intégré aux TEP-IRM récentes à détecteurs SiPM, réduit le biais quantitatif induit par les artéfacts métalliques (implants dentaires/orthopédiques) et par le mésappariement respiratoire entre carte d'atténuation et émission [19]. Il améliore le rapport signal/bruit sans supprimer complètement le biais de MRAC, qui doit rester une réserve d'interprétation."
+            }
+          ]
+        },
+        {
+          "title": "D18 - Place dans la stratégie & algorithmes décisionnels",
+          "text": "Le cadre de référence est le **consensus international EANM-SNMMI-ISMRM pour la TEP-IRM en oncologie** (Veit-Haibach et al., *Eur J Nucl Med Mol Imaging* 2023) [38][39], complété par les travaux du premier workshop ISMRM-SNMMI [5]. La logique de prescription n'oppose pas la TEP-IRM à la TEP-TDM de façon binaire : elle privilégie la TEP-IRM là où le **contraste des tissus mous** et/ou la **réduction d'irradiation** apportent un bénéfice net.\n\n**Indications de premier choix (bénéfice/irradiation + contraste IRM prépondérants) :**\n\n- **Neurologie / neuro-oncologie / démences** — épilepsie pharmacorésistante (détection des dysplasies corticales focales, dose réduite par acquisition simultanée) ; gliomes (traceurs acides aminés ¹⁸F-FET pour récidive vs post-thérapeutique) ; démences (une session fournit l'IRM de sécurité **+** le biomarqueur amyloïde/tau/FDG, pertinent à l'ère des anticorps anti-amyloïdes, avec aide au diagnostic différentiel MA / DCL / vasculaire) [5][32][33].\n- **Pédiatrie / adolescent** — lymphome (performance équivalente à la TEP-TDM pour détection, classification, stadification Ann Arbor et réponse, avec irradiation fortement réduite), tumeurs solides, sarcomes [23][50][6].\n- **Tumeurs à fort contraste IRM** — prostate (PSMA, localisation intraprostatique et extension), pelvis gynécologique, foie (métastases, caractérisation des lésions TEP-négatives), tête-cou [28][26][29].\n\n**Séquençage.** La TEP-IRM intervient typiquement **après** la confirmation histologique/biologique et l'imagerie anatomique de débrouillage, en tant qu'examen de caractérisation/stadification unique combinant fonction et anatomie. En prostate, elle se positionne dans le parcours diagnostique PSMA-TEP + mp-IRM (essai BIOPSTAGE) pour la décision de biopsie [28].\n\n**Positionnement France (SFMN / CNP-MN / HAS).** En France, tout l'équipement TEP disponible est **hybride** ; les recommandations sont exprimées par couple TEP + radiopharmaceutique, sans présupposer l'association hybride TEP-TDM ou TEP-IRM [36]. Le remboursement dépend des indications retenues par la **HAS** : une fois l'acte admis, l'imagerie prescrite est remboursée à **70 %** du tarif conventionnel [37]. La diffusion reste limitée par le coût, la disponibilité et le temps d'examen (vs TEP-TDM plus rapide et répandue) [5].",
+          "steps": [
+            {
+              "title": "1. Confirmation diagnostique",
+              "text": "Biologie / anatomopathologie + imagerie anatomique de débrouillage (TDM/IRM/écho) selon la maladie."
+            },
+            {
+              "title": "2. Choix de l'hybride",
+              "text": "Privilégier la TEP-IRM si le contraste tissus mous compte (neuro, pelvis, foie, tête-cou) ou si la réduction d'irradiation est prioritaire (pédiatrie, sujets jeunes, examens répétés) [38][6]."
+            },
+            {
+              "title": "3. Choix du traceur",
+              "text": "FDG (oncologie générale, inflammation), ⁶⁸Ga/¹⁸F-PSMA (prostate), acides aminés ¹⁸F-FET (gliome), ⁶⁸Ga-DOTATATE (TNE), traceurs amyloïde/tau (démence) [5]."
+            },
+            {
+              "title": "4. Protocole IRM adapté",
+              "text": "Ultrafast/basic, fast/basic ou fully diagnostic/advanced selon la question clinique (avec ou sans gadolinium) [38]."
+            },
+            {
+              "title": "5. Interprétation intégrée",
+              "text": "Lecture conjointe TEP + IRM multiparamétrique, en tenant compte de la méthode de MRAC (cf. §D17) ; conclusion répondant à la question clinique."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert - une session, deux modalités, un recalage parfait",
+              "text": "L'**acquisition simultanée** (détecteurs TEP insérés dans l'aimant) supprime le décalage temporel entre modalités et fournit un recalage spatial intrinsèque, impossible en TEP-TDM séquentielle. C'est l'argument clé en pathologie mobile (cœur, foie) et pour la fusion TEP/DWI en tête-cou et en prostate [5][30]. Le consensus 2023 exige des équipes (manipulateurs, médecins, physiciens) formées et expérimentées dans les **deux** modalités [38]."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle décisionnelle : confirmation → imagerie anatomique → TEP-IRM (fonction + anatomie en une session) → décision thérapeutique, avec sélection PSMA en vue d'un traitement par radionucléides."
+          }
+        },
+        {
+          "title": "D19 - Examens apparentés & variantes",
+          "text": "La TEP-IRM se décline en variantes de protocole et se situe dans un réseau d'examens fonctionnels et hybrides voisins. Le tableau ci-dessous synthétise ses relations ; le détail technique de chaque examen relève de son propre article.\n\n| Examen apparenté | Cible / différence | Quand le préférer |\n|---|---|---|\n| **TEP-TDM** | Même signal TEP, correction d'atténuation par le CT (Hounsfield), quantification osseuse fiable | Examen rapide, largement disponible ; lésions osseuses (SUV fiable) ; quand l'IRM est contre-indiquée ou indisponible [1]. |\n| **IRM multiparamétrique seule** | Contraste tissus mous, DWI/ADC, perfusion, sans information métabolique | Caractérisation locale pure (prostate, hépatique) sans besoin de traceur ; évite l'irradiation résiduelle du traceur TEP. |\n| **TEP-IRM ultrafast / basic** | Séquences IRM minimales (Dixon, DWI), corps entier | Substitut basse dose de la TEP-TDM ; workflow rapide où l'IRM ne sert qu'au repérage et à la MRAC [38]. |\n| **TEP-IRM fully diagnostic** | Protocoles régionaux étendus, séquences dédiées + gadolinium | Caractérisation IRM complète en une session (tête-cou, pelvis, foie) [38]. |\n| **TEP-IRM PSMA (⁶⁸Ga / ¹⁸F)** | Cible PSMA (GCPII/FOLH1) + IRM prostatique | Prostate : localisation intraprostatique, extension extra-capsulaire et vésicules séminales ; le ¹⁸F-PSMA offre une meilleure résolution que le ⁶⁸Ga [28][56]. |\n| **TEP-IRM acides aminés (¹⁸F-FET / ¹¹C-MET)** | Transport d'acides aminés + IRM multiparamétrique | Neuro-oncologie : gliomes, récidive vs radionécrose [5]. |\n| **TEP-IRM amyloïde / tau** | Plaques amyloïdes / protéine tau + IRM cérébrale | Démences : diagnostic différentiel et éligibilité aux anti-amyloïdes en une session [32][33]. |\n\n**Variantes de correction d'atténuation** (élément le plus spécifique de la modalité) : segmentation **Dixon** 4 classes en corps entier, **ZTE/UTE** ou atlas capturant l'os en cérébral, **pseudo-CT** par *deep-learning* (ZeDD-CT) pour minimiser le biais [15][16][41]. Le choix de la méthode n'est pas neutre : il détermine la fiabilité quantitative, notamment en région osseuse (cf. §D17).",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert - TEP-IRM vs TEP-TDM, une complémentarité plutôt qu'une rivalité",
+              "text": "En pratique, le choix se décide sur trois axes : **irradiation** (TEP-IRM gagnante, surtout enfant/sujet jeune/examens répétés), **contraste tissus mous** (TEP-IRM en neuro, pelvis, foie, tête-cou) et **disponibilité/rapidité/quantification osseuse** (TEP-TDM gagnante). Le signal métabolique étant identique, on ne « perd » jamais en détection en optant pour l'IRM — on arbitre entre bénéfice anatomique/dosimétrique et contraintes logistiques [1][38]."
+            }
+          ]
+        },
+        {
+          "title": "E20 - Cas cliniques commentés / Iconographie",
+          "text": "Trois cas commentés pas à pas (contexte → images → analyse → conclusion), choisis pour couvrir les trois arguments phares de la TEP-IRM : **irradiation réduite** en pédiatrie, **contraste tissus mous** en oncologie régionale, et **acquisition simultanée** en neurologie. Chaque cas renvoie aux sections techniques concernées (correction d'atténuation, performances, pièges).",
+          "steps": [
+            {
+              "title": "Cas 1 — Lymphome de Hodgkin de l'adolescent (bilan initial, argument dosimétrique)",
+              "text": "*Contexte* : adolescent de 15 ans, adénopathies cervicales et masse médiastinale, suspicion de lymphome de Hodgkin ; nécessité d'un bilan initial et d'examens itératifs de réévaluation. *Images* : ¹⁸F-FDG TEP-IRM corps entier (séquences T1/T2 Dixon + diffusion), hyperfixation ganglionnaire sus- et sous-diaphragmatique. *Analyse* : la TEP-IRM classe correctement le stade Ann Arbor avec une performance **équivalente à la TEP-TDM** pour la détection, la classification et l'évaluation de réponse [23][50], tout en supprimant la dose du scanner — la réduction atteignant **jusqu'à 80 %** vs TEP-TDM en pédiatrie [6][50]. *Conclusion* : stadification métabolique complète, dose minimisée sur un patient jeune exposé à des acquisitions répétées — l'indication où le bénéfice dosimétrique est le plus décisif."
+            },
+            {
+              "title": "Cas 2 — Cancer de prostate (localisation intraprostatique et staging local)",
+              "text": "*Contexte* : homme de 66 ans, PSA élevé, suspicion de cancer prostatique avant décision de biopsie/traitement. *Images* : PSMA TEP-IRM simultanée (mpMRI prostatique + carte PSMA), lésion index apicale hyperfixante avec suspicion d'extension extra-prostatique. *Analyse* : la TEP-IRM simultanée améliore la **localisation intraprostatique** vs mpMRI ou TEP seules [28] ; pour l'extension extra-capsulaire, la PSMA TEP-IRM est plus sensible que l'IRM multiparamétrique (**78,7 % vs 52,9 %**) et, pour l'invasion des vésicules séminales, plus sensible que la TEP-TDM (**0,87 vs 0,60**), à spécificité comparable [56]. *Conclusion* : caractérisation fonctionnelle + anatomique en une session, décalage temporel supprimé ; le ¹⁸F-PSMA offre une résolution supérieure au ⁶⁸Ga."
+            },
+            {
+              "title": "Cas 3 — Épilepsie pharmacorésistante (bilan pré-chirurgical, acquisition simultanée)",
+              "text": "*Contexte* : jeune adulte, crises focales pharmacorésistantes, bilan pré-chirurgical à la recherche d'un foyer épileptogène. *Images* : ¹⁸F-FDG TEP-IRM cérébrale simultanée ; zone d'**hypométabolisme interictal** co-localisée à une subtile dysplasie corticale focale sur l'IRM haute résolution. *Analyse* : la co-registration native TEP-IRM améliore la détection des dysplasies corticales focales, souvent manquées sur l'IRM seule, avec une acquisition en une session et une correction d'atténuation cérébrale par **ZTE/pseudo-CT** (biais résiduel < 2 %) [5][15][16]. *Conclusion* : repérage du foyer épileptogène combinant hypométabolisme et substrat structurel, à irradiation réduite (§E21, §E22)."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Dans le Cas 3, la fiabilité du **SUV cérébral** dépend directement de la méthode de correction d'atténuation : le ZTE ou le pseudo-CT par apprentissage profond ramènent le biais de **~20 % (os ignoré en Dixon)** à **< 2 %** [15][16]. Toujours mentionner la méthode de MRAC dans le compte rendu — elle conditionne l'interprétabilité quantitative."
+            }
+          ],
+          "figure": {
+            "figureRef": "FDG_UPTAKE",
+            "alt": "Schéma du piégeage métabolique du ¹⁸F-FDG : entrée par les transporteurs GLUT, phosphorylation par l'hexokinase en FDG-6-phosphate, accumulation intracellulaire dans les cellules tumorales avides."
+          }
+        },
+        {
+          "title": "E21 - Points clés / à retenir",
+          "list": [
+            "**TEP-IRM = hybride TEP + IRM** : imagerie métabolique/moléculaire (annihilation → 2 photons de **511 keV** à ~180°) couplée au contraste tissus mous de l'IRM ; l'IRM **remplace le scanner** de la TEP-TDM [12][44].",
+            "Deux architectures : **séquentielle** et **simultanée/intégrée** ; l'intégration exige des détecteurs compatibles au champ magnétique — **APD** (Siemens Biograph mMR, 2011) ou **SiPM avec temps de vol** (GE SIGNA, 2014) au lieu des photomultiplicateurs classiques [12][13].",
+            "Traceur de référence : **¹⁸F-FDG** (T½ **109,8 min** ; β⁺ Emax **~635 keV** ; parcours < 2,4 mm) capté via **GLUT** puis piégé en **FDG-6-phosphate** (effet Warburg) [10][20][44].",
+            "**Enjeu central — la correction d'atténuation (MRAC)** : l'IRM ne mesure pas l'atténuation des 511 keV. Corps entier = **segmentation Dixon 4 classes** (air/poumon/graisse/tissu mou) qui **ignore l'os** → sous-estimation du SUV osseux [15][41].",
+            "**Os en MRAC Dixon** : erreurs de SUV **jusqu'à 25 %** ; corrigées par séquences **UTE/ZTE** ou **pseudo-CT deep-learning**, ramenant le biais cérébral à **< 2 %** (ZTE striatum 1,5 % vs atlas 3,8 %) [15][16][41].",
+            "Argument dosimétrique majeur : dose efficace **TEP-IRM 3,6 ± 1,4 mSv vs TEP-TDM 17,6 ± 8,7 mSv → réduction ~79,6 %** [1][49] ; **jusqu'à 80 %** en pédiatrie (le CT représentant ~50 % de la dose TEP-TDM) [6][50].",
+            "Dose FDG : **0,019 mSv/MBq** (ICRP 128) ; organe critique = **paroi vésicale 0,13 mGy/MBq** ; activité adulte usuelle **~185 MBq** [7][9].",
+            "Pédiatrie (carte EANM 2016) : FDG **classe B**, activité de base **25,9 MBq** (torse) / **14,0 MBq** (cérébral), minima **26/14 MBq** [3][4].",
+            "Domaines phares : **neurologie** (épilepsie, gliomes, démences), **pédiatrie** (lymphome, sarcomes), **prostate** (PSMA), **tête-cou**, foie/TNE — partout où le contraste IRM et la faible dose priment [5][38].",
+            "Performances : lymphome pédiatrique **équivalent** à la TEP-TDM (Se 94 %, exactitude 97 %) [23] ; tête-cou Se **85,7 %** / Sp **89,1 %** [27] ; PSMA prostate — invasion vésicules séminales plus sensible que TEP-TDM (**0,87 vs 0,60**) [56].",
+            "**Temps de vol (TOF)** : améliore le rapport signal/bruit et réduit le biais des artéfacts métalliques et du mismatch respiratoire [17][19].",
+            "Limites : **SUV osseux sous-estimé**, **troncature du FOV** (IRM ~45 cm < TEP ~60 cm), **artéfacts métalliques/dentaires**, **coût/disponibilité**, et **recours à la sédation** pédiatrique du fait d'acquisitions IRM longues [5][17].",
+            "**Gadolinium** : prudence si **DFG < 60 mL/min/1,73 m²** (risque de fibrose systémique néphrogénique) ; agents macrocycliques du groupe II = risque < 0,07 % [58].",
+            "Cadre de référence : consensus international **EANM-SNMMI-ISMRM pour la TEP-IRM en oncologie** (2023) [38][39] ; en France, l'équipement TEP est hybride et le remboursement dépend des indications retenues par la HAS [36][37]."
+          ]
+        },
+        {
+          "title": "E22 - FAQ & pièges d'examen",
+          "text": "**Pourquoi la correction d'atténuation est-elle le vrai problème de la TEP-IRM ?** En TEP-TDM, la carte d'atténuation dérive directement des unités Hounsfield du scanner. En TEP-IRM, l'IRM mesure la densité protonique, **pas** l'atténuation des 511 keV : il faut une **MRAC** (segmentation en classes tissulaires avec coefficients d'atténuation prédéfinis) [17][41].\n\n**Pourquoi le SUV osseux est-il sous-estimé ?** La **segmentation Dixon 4 classes** (air, poumon, graisse, tissu mou) **classe l'os comme tissu mou** — d'où une sous-estimation de la fixation des lésions osseuses, avec des erreurs de SUV **jusqu'à 25 %** [15][41]. C'est le piège de QCM le plus fréquent.\n\n**Comment récupère-t-on l'os ?** Par des séquences **ZTE/UTE** ou un **pseudo-CT généré par apprentissage profond** (ex. ZeDD-CT combinant ZTE et Dixon), qui ramènent le biais cérébral de ~20 % à **< 2 %** ; le biais striatal chute à **1,5 % (ZTE) vs 3,8 % (atlas)** [15][16].\n\n**De combien la TEP-IRM réduit-elle la dose ?** D'environ **80 %** : **3,6 ± 1,4 mSv vs 17,6 ± 8,7 mSv** pour la TEP-TDM (−79,6 %) [1][49], le scanner représentant ~50 % de la dose de la TEP-TDM [6][50].\n\n**La TEP-IRM est-elle aussi performante que la TEP-TDM ?** Pour la stadification du **lymphome de Hodgkin pédiatrique**, elles sont **diagnostiquement équivalentes** (détection, classification, Ann Arbor, réponse), la TEP-IRM ajoutant l'atout de la faible dose [23][50].\n\n**¹⁸F-PSMA ou ⁶⁸Ga-PSMA en TEP-IRM ?** Le ⁶⁸Ga a un positon de plus haute énergie (Emax **1899 keV**), donc un parcours plus long et une résolution moindre ; le **¹⁸F-PSMA** (Emax ~634 keV) offre une **meilleure résolution spatiale** [10][11].\n\n**Pourquoi la sédation limite-t-elle l'adoption pédiatrique malgré le gain de dose ?** Parce que l'acquisition IRM est **plus longue** que le CT : chez le jeune enfant, elle augmente le recours à la **sédation/anesthésie**, contrepartie pratique du bénéfice dosimétrique [5].\n\n**Quelles contre-indications spécifiques par rapport à la TEP-TDM ?** Toutes celles de l'**IRM** s'ajoutent : dispositifs implantés non compatibles (pacemakers/DAI anciens, neurostimulateurs, implants cochléaires, corps étrangers ferromagnétiques), claustrophobie ; prudence avec le **gadolinium** si insuffisance rénale sévère [58][59].\n\n**Quel piège avec les implants métalliques ?** Ils créent un **vide de signal** faussant la MRAC (zones photopéniques mimant un défaut de fixation) : dans une série, **6 % d'artéfacts métalliques larges, 12 % petits, 41 % dentaires** sur la carte d'atténuation [18]. Le **TOF** atténue ce biais [17][19].\n\n**Et la troncature des bras ?** Le **FOV IRM (~45 cm) est plus petit que le FOV TEP (~60 cm)** → épaules/bras tronqués sur la carte d'atténuation ; corrigée par des algorithmes type MLAA/HUGE [17].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — ne jamais lire un SUV osseux sans connaître la MRAC",
+              "text": "Sur un examen corps entier en **MRAC Dixon**, une lésion osseuse peut apparaître **hypofixante à tort** car l'os est ignoré dans la carte d'atténuation (biais de SUV **jusqu'à 25 %**) [15][41]. Toujours vérifier la méthode de correction d'atténuation (Dixon vs ZTE/deep-learning) avant de conclure sur une fixation osseuse."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — bobines de surface et mismatch respiratoire",
+              "text": "Les **bobines RF** atténuent les photons TEP sans être prises en compte dans la MRAC → zones photopéniques focales. Le **mismatch respiratoire** entre émission et carte d'atténuation dégrade surtout la quantification hépatique ; le **temps de vol** réduit ces biais [17][19]."
+            }
+          ]
+        },
+        {
+          "title": "E25 - Références & liens sortants typés",
+          "text": "Références complètes et datées ci-dessous (**Sources & Références**), privilégiant recommandations sociétaires (EANM/SNMMI/ISMRM/EARL), publication ICRP 128 et articles pivots datés. Consensus de référence : **EANM-SNMMI-ISMRM pour la TEP-IRM en oncologie** (Veit-Haibach et al., Eur J Nucl Med Mol Imaging 2023) [38][39] et **First ISMRM-SNMMI Workshop on PET/MRI** [5].\n\n**Instrument & correction d'atténuation** : PET/MRI et Biograph mMR/SIGNA [12][13][14] ; MRAC Dixon/UTE et ZeDD-CT/ZTE [15][16][41][42] ; artéfacts métal/troncature/TOF [17][18][19] ; CQ EANM PET-MR et fantôme NEMA [47][48][62].\n\n**Dosimétrie & dose comparée** : ICRP 128 / biocinétique FDG [7][9][43] ; réduction de dose TEP-IRM vs TEP-TDM [1][2][49] ; management pédiatrique et dose [6][50] ; carte de dose EANM et mises à jour [3][4][35][51][52].\n\n**Traceur & mécanisme** : Fluorine-18 et StatPearls FDG [10][44] ; Gallium-68 [11] ; voies de signalisation et piégeage FDG [20][21][22] ; préparation patient [34].\n\n**Performances par domaine** : pédiatrie — lymphome, sarcomes, neuroblastome [23][24][25][50] ; tête-cou [26][27][55] ; prostate PSMA [28][56][57][61] ; démences/Alzheimer et épilepsie [32][33][53][54] ; cardiologie/inflammation [29][30][31] ; SUV structures normales [60].\n\n**Positionnement France** : CNP-MN (RBP TEP en cancérologie ; coûts et remboursement) [36][37].\n\n**Carte de liens (réseau de l'article)** — Traceurs : **¹⁸F-FDG**, ⁶⁸Ga-PSMA / ¹⁸F-PSMA, ¹⁸F-FET, ¹¹C-méthionine, ⁶⁸Ga-DOTATOC, traceurs amyloïde/tau · Maladies : lymphome (Hodgkin), sarcomes des tissus mous, neuroblastome, cancer de prostate, cancers tête-cou, gliomes, épilepsie pharmacorésistante, maladie d'Alzheimer, sarcoïdose cardiaque · Examens : **TEP-TDM**, IRM multiparamétrique, TEMP-TDM · Scores : Deauville/Lugano (lymphome), PERCIST · Théranostique : ¹⁷⁷Lu-PSMA (prostate). *Dernière mise à jour : juillet 2026 — version de travail (profil médecin nucléaire).*"
+        }
+      ]
+    }
+  }
+}

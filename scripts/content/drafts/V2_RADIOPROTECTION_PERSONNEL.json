@@ -1,0 +1,1377 @@
+{
+  "id": "V2_RADIOPROTECTION_PERSONNEL",
+  "type": "autre",
+  "cat": "radioprotection",
+  "catLabel": "Radioprotection",
+  "title": "Radioprotection du personnel : ALARA en pratique",
+  "difficulty": "intermédiaire",
+  "tags": [
+    "ALARA",
+    "radioprotection",
+    "dosimétrie",
+    "temps distance écran",
+    "zonage",
+    "personnel",
+    "limites de dose",
+    "blindage tungstène",
+    "extrémités",
+    "cristallin",
+    "TEP F-18",
+    "CIPR 103"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "ICRPaedia — Dose limits (occupational and public dose limits, from ICRP Publications 103 & 118)",
+      "url": "https://icrpaedia.org/Dose_limits",
+      "verified": true
+    },
+    {
+      "title": "Shielding resources for four common radiopharmaceuticals utilized for imaging and therapy: Tc-99m, F-18, I-131, and Lu-177 (HVL/TVL, gamma constants, half-lives) — PMC12059296",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12059296/",
+      "verified": true
+    },
+    {
+      "title": "Evaluation of Annual Staff Doses and Radiation Shielding Efficiencies of Thyroid Shield and Lead Apron during Preparation and Administration of 131I, 81Kr, and 99mTc-Labeled Radiopharmaceuticals — PMC8804593",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8804593/",
+      "verified": true
+    },
+    {
+      "title": "Radiation Protection Principles — Time, Distance, Shielding (Nuclear Power)",
+      "url": "https://www.nuclear-power.com/nuclear-engineering/radiation-protection/radiation-protection-principles-time-distance-shielding/",
+      "verified": true
+    },
+    {
+      "title": "ALARA: Principles of Radiation Protection (time, distance, shielding) — Barrier Technologies",
+      "url": "https://barriertechnologies.com/alara-principle-radiation-protection/",
+      "verified": true
+    },
+    {
+      "title": "Ensuring Radiation Safety: ICRP Guidelines and ALARA Concept (justification, optimisation, limitation) — Baker Hughes Waygate",
+      "url": "https://www.bakerhughes.com/waygate-technologies/blog/how-do-i-protect-myself-against-radiation",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 103 — The 2007 Recommendations of the International Commission on Radiological Protection (free extract)",
+      "url": "https://www.icrp.org/docs/icrp_publication_103-annals_of_the_icrp_37(2-4)-free_extract.pdf",
+      "verified": true
+    },
+    {
+      "title": "Half-value layer — Wikipedia (TVL ≈ 3.32 × HVL)",
+      "url": "https://en.wikipedia.org/wiki/Half-value_layer",
+      "verified": true
+    },
+    {
+      "title": "External radiation exposure of personnel in nuclear medicine from 18F, 99mTc and 131I with special reference to fingers, eyes and thyroid — PubMed 21571739",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21571739/",
+      "verified": true
+    },
+    {
+      "title": "Occupational radiation dose to nuclear medicine staff due to Tc99m, F18-FDG PET and therapeutic I-131 based examinations — Radiation Protection Dosimetry 186(4):443-451",
+      "url": "https://academic.oup.com/rpd/article-abstract/186/4/443/5466140",
+      "verified": true
+    },
+    {
+      "title": "ORAMED — Optimization of Radiation Protection of Medical Staff (FP7/EURATOM project id 211361) — CORDIS",
+      "url": "https://cordis.europa.eu/project/id/211361/reporting",
+      "verified": true
+    },
+    {
+      "title": "Hand exposure in diagnostic nuclear medicine with 18F- and 99mTc-labelled radiopharmaceuticals — Results of the ORAMED project — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1350448711003647",
+      "verified": true
+    },
+    {
+      "title": "IAEA Safety Standards Series — Occupational Radiation Protection (Pub1081)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1081_web.pdf",
+      "verified": true
+    },
+    {
+      "title": "Légifrance — Code du travail, Valeurs limites d'exposition (Articles R4451-6 à R4451-9): 20 mSv corps entier, 500 mSv extrémités/peau, 20 mSv cristallin",
+      "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000037024998",
+      "verified": true
+    },
+    {
+      "title": "INRS — Rayonnements ionisants : réglementation et démarche de prévention (limites, classement A/B)",
+      "url": "https://www.inrs.fr/risques/rayonnements-ionisants/reglementation.html",
+      "verified": true
+    },
+    {
+      "title": "Radioprotection des travailleurs : nouvelles règles et classement (cristallin 20 mSv au 1/7/2023, régime transitoire) — Red-on-line",
+      "url": "https://www.red-on-line.fr/blog/radioprotection-des-travailleurs-modification-des-dispositions-reglementaires-applicables/",
+      "verified": true
+    },
+    {
+      "title": "Zonage radiologique : identification et délimitation (zone surveillée, contrôlée, sous-zonage couleur) — Landauer France",
+      "url": "https://www.landauer-fr.com/mediatheque/base-de-connaissance/zonage-radiologique-identification-et-delimitation/",
+      "verified": true
+    },
+    {
+      "title": "Radioprotection Cirkus — Analyse technique de l'Arrêté zonage du 15 mai 2006 (zones verte/jaune/orange/rouge/bleue, seuils)",
+      "url": "https://www.rpcirkus.org/fr/doc-en-vrac/reg-an/228-reg-an-9-2",
+      "verified": true
+    },
+    {
+      "title": "Ionactive — IRR17(21) Designation of Classified Persons (Catégorie A >6 mSv/an, 3/10 des limites)",
+      "url": "https://ionactive.co.uk/resource-hub/guidance/irr17-21-designation-of-classified-persons",
+      "verified": true
+    },
+    {
+      "title": "Health Physics Society Ask the Experts (q12317) — Pregnant worker / embryo-fetus dose during pregnancy (declared pregnancy 5 mSv gestation)",
+      "url": "https://hps.org/publicinformation/ate/q12317/",
+      "verified": true
+    },
+    {
+      "title": "IAEA ORPNET — Female Workers During and After Pregnancy (fetal dose restricted to ~1 mSv)",
+      "url": "https://www.iaea.org/services/networks/orpnet/workers-and-radiation-at-workplaces/female-workers-during-and-after-pregnancy",
+      "verified": true
+    },
+    {
+      "title": "NRC Issue Paper 3 (ML14084A339) — Dose Limit for the Embryo/Fetus of a Declared Pregnant Worker (5 mSv gestation, ≤0.5 mSv/month)",
+      "url": "https://www.nrc.gov/docs/ml1408/ml14084a339.pdf",
+      "verified": true
+    },
+    {
+      "title": "CNP-MN / SFMN — Radioprotection en médecine nucléaire (dosimétrie extrémités/cristallin, postes de travail)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2024/02/RadioprotectionEnMedecineNucleaire.pdf",
+      "verified": true
+    },
+    {
+      "title": "Determination of a reliable assessment for occupational eye lens dose in nuclear medicine — PMC9359038 (J Appl Clin Med Phys, 2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9359038/",
+      "verified": true
+    },
+    {
+      "title": "REMM (HHS) — Categories of Radiation Dosimeters for Dose and Exposure Monitoring (passive vs operational)",
+      "url": "https://remm.hhs.gov/radiation-dosimeters-dose-monitoring-worker-safety.htm",
+      "verified": true
+    },
+    {
+      "title": "ASNR (ex-IRSN) — Modalités de surveillance de l'exposition des travailleurs (SISERI, dosimétrie)",
+      "url": "https://recherche-expertise.asnr.fr/savoir-comprendre/sante/modalites-surveillance-lexposition-travailleurs",
+      "verified": true
+    },
+    {
+      "title": "Technical basis for the ICRP 1 mSv and 20 mSv dose limits — Health Physics Society Ask the Experts (q8900)",
+      "url": "https://hps.org/publicinformation/ate/q8900/",
+      "verified": true
+    },
+    {
+      "title": "New International Commission on Radiological Protection; Recommendations on the Annual Dose Limit to the Lens of the Eye (20 mSv/y) — US Federal Register (2011)",
+      "url": "https://www.federalregister.gov/documents/2011/08/30/2011-21900/new-international-commission-on-radiological-protection-recommendations-on-the-annual-dose-limit-to",
+      "verified": true
+    },
+    {
+      "title": "Radiation Safety (nuclear medicine) — Indian J Nucl Med, PMC3868031",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3868031/",
+      "verified": true
+    },
+    {
+      "title": "Occupational radiation dose assessment of professionals working in a nuclear medicine and PET/CT centre — Radiation Physics and Chemistry (2025)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0969806X25001409",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — Annals of the ICRP 44(2S), 2015 (SAGE)",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "Effect of dosimeter's position on occupational radiation extremity dose measurement for nuclear medicine workers during 18F-FDG preparation for PET/CT — PMC4975735",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4975735/",
+      "verified": true
+    },
+    {
+      "title": "La mise en œuvre de l'arrêté zonage (zones surveillée/contrôlée) — IRSN/ASNR (Aubert et al.)",
+      "url": "https://recherche-expertise.asnr.fr/sites/default/files/documents/professionnels_sante/documentation/arrete_zonage.pdf",
+      "verified": true
+    },
+    {
+      "title": "The Declared Pregnant Woman in Nuclear Medicine — J Nucl Med Technol 24(2):83",
+      "url": "https://tech.snmjournals.org/content/jnmt/24/2/83.full.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiation Safety Review for 511-keV Emitters in Nuclear Medicine — J Nucl Med Technol 25(1):12",
+      "url": "https://tech.snmjournals.org/content/jnmt/25/1/12.full.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radiation Safety Considerations for PET Centers — J Nucl Med Technol 25(2):98",
+      "url": "https://tech.snmjournals.org/content/jnmt/25/2/98.full.pdf",
+      "verified": true
+    },
+    {
+      "title": "Bilan 2022 des expositions professionnelles aux rayonnements ionisants en France — IRSN/ASNR",
+      "url": "https://docs.siseri.asnr.fr/sites/docssiseri/files/2024-01/IRSN_Rapport-Exposition-travailleurs-2022.pdf",
+      "verified": true
+    },
+    {
+      "title": "Technologist Radiation Exposure in Routine Clinical Practice with 18F-FDG PET — J Nucl Med Technol 33(3):175",
+      "url": "https://tech.snmjournals.org/content/33/3/175",
+      "verified": true
+    },
+    {
+      "title": "Dosimetry Evaluation on the Use of 18F-FDG for PET/CT Imaging using OLINDA/EXM and Geant4 Monte Carlo Simulations (compliance with ICRP-128 limits) — PMC12513526",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12513526/",
+      "verified": true
+    },
+    {
+      "title": "Duration of Breastfeeding Interruption in Nuclear Medicine Procedures — J Nucl Med Technol 51(3):239",
+      "url": "https://tech.snmjournals.org/content/51/3/239",
+      "verified": true
+    }
+  ],
+  "lead": "La radioprotection du personnel en médecine nucléaire repose sur un principe simple et exigeant : maintenir chaque exposition aussi basse que raisonnablement possible. Au quotidien, cela se traduit par trois gestes que tout opérateur intègre comme un réflexe : passer moins de temps près de la source, garder ses distances, et travailler derrière un écran. À ces leviers s'ajoutent une organisation rigoureuse des locaux, le port permanent de dosimètres et des procédures écrites qui encadrent chaque manipulation. L'enjeu n'est pas seulement réglementaire : il s'agit de protéger durablement les mains, les yeux et l'ensemble de l'organisme de ceux qui préparent et injectent les produits radioactifs. Bien appliquée, cette discipline maintient les doses reçues très en dessous des seuils autorisés, sans jamais compromettre la qualité des soins.",
+  "identityCard": [
+    {
+      "icon": "shield",
+      "label": "Principe",
+      "value": "ALARA — optimisation CIPR (justification, optimisation, limitation)"
+    },
+    {
+      "icon": "zap",
+      "label": "Trois leviers",
+      "value": "Temps · Distance (1/d²) · Écran (atténuation exponentielle)"
+    },
+    {
+      "icon": "radiation",
+      "label": "Dose efficace (limite)",
+      "value": "20 mSv/an (≤ 100 mSv / 5 ans, ≤ 50 mSv une année)"
+    },
+    {
+      "icon": "alert",
+      "label": "Cristallin (limite)",
+      "value": "20 mSv/an (abaissée 150→20 en 2011)"
+    },
+    {
+      "icon": "target",
+      "label": "Peau & extrémités",
+      "value": "500 mSv/an (peau moyennée sur 1 cm²)"
+    },
+    {
+      "icon": "list",
+      "label": "Public",
+      "value": "1 mSv/an (dose efficace)"
+    },
+    {
+      "icon": "baby",
+      "label": "Fœtus (grossesse déclarée)",
+      "value": "≤ 1 mSv sur la gestation restante"
+    },
+    {
+      "icon": "atom",
+      "label": "Radionucléide le plus contraignant",
+      "value": "F-18 (511 keV) — blindage ~12× le Tc-99m"
+    },
+    {
+      "icon": "flask",
+      "label": "HVL plomb (F-18)",
+      "value": "4,75–4,95 mm (vs Tc-99m 0,24 mm)"
+    },
+    {
+      "icon": "syringe",
+      "label": "Protège-seringue F-18",
+      "value": "5 mm tungstène (ORAMED) → atténuation ~88 %"
+    },
+    {
+      "icon": "pin",
+      "label": "Zones (France)",
+      "value": "Surveillée > 1 mSv/an · Contrôlée ≥ 6 mSv/an"
+    },
+    {
+      "icon": "stetho",
+      "label": "Classement travailleurs",
+      "value": "Catégorie A > 6 mSv/an · Catégorie B ≤ 6 mSv/an"
+    },
+    {
+      "icon": "activity",
+      "label": "Dose réelle personnel (FR 2022)",
+      "value": "0,78 mSv/an en moyenne (TEP jusqu'à ~6 mSv/an)"
+    },
+    {
+      "icon": "microscope",
+      "label": "Dosimétrie",
+      "value": "Passive (poitrine) + opérationnelle + bague extrémités"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "¹⁸F-FDG"
+    },
+    {
+      "type": "traceur",
+      "label": "⁹⁹ᵐTc-MDP"
+    },
+    {
+      "type": "traceur",
+      "label": "¹³¹I (iodure)"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹⁷⁷Lu-DOTATATE"
+    },
+    {
+      "type": "examen",
+      "label": "TEP-FDG corps entier"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie osseuse"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie / traitement à l'iode 131"
+    },
+    {
+      "type": "examen",
+      "label": "Dosimétrie patient (CIPR 128)"
+    },
+    {
+      "type": "score",
+      "label": "Zonage radiologique"
+    },
+    {
+      "type": "score",
+      "label": "Classement A/B des travailleurs"
+    },
+    {
+      "type": "maladie",
+      "label": "Cataracte radio-induite (cristallin)"
+    },
+    {
+      "type": "theranostique",
+      "label": "¹³¹I-MIBG (radioprotection thérapie)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Que signifie l'acronyme ALARA et à quel principe de la CIPR correspond-il ?",
+      "options": [
+        "As Low As Reasonably Achievable — principe d'optimisation",
+        "Annual Limit on Absorbed Radiation Activity — principe de limitation",
+        "As Low As Radiation Allows — principe de justification",
+        "Average Linear Absorption Rate Analysis — modèle de risque"
+      ],
+      "answer": 0,
+      "explanation": "ALARA (As Low As Reasonably Achievable) est l'expression opérationnelle du principe d'optimisation de la CIPR, l'un des trois piliers du système de protection avec la justification et la limitation de dose [1].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quels sont les trois leviers physiques de la protection contre l'exposition externe ?",
+      "options": [
+        "Filtration, collimation, fenêtrage",
+        "Temps, distance, écran",
+        "Justification, optimisation, limitation",
+        "Activité, période, énergie"
+      ],
+      "answer": 1,
+      "explanation": "Les trois leviers concrets sont le temps (dose proportionnelle à la durée), la distance (loi de l'inverse du carré) et l'écran (atténuation exponentielle) [13].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Si l'on double la distance à une source ponctuelle, le débit de dose est :",
+      "options": [
+        "Divisé par 2",
+        "Divisé par 4",
+        "Divisé par 8",
+        "Inchangé"
+      ],
+      "answer": 1,
+      "explanation": "Le débit de dose décroît selon la loi de l'inverse du carré (∝ 1/d²) : doubler la distance divise le débit par 4. La distance est le levier le plus puissant [13].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle est la limite réglementaire de dose efficace pour un travailleur exposé ?",
+      "options": [
+        "1 mSv/an",
+        "6 mSv/an",
+        "20 mSv/an",
+        "50 mSv/an"
+      ],
+      "answer": 2,
+      "explanation": "La limite est de 20 mSv/an, moyennée sur 5 ans (≤ 100 mSv sur 5 ans) sans dépasser 50 mSv une seule année (CIPR 103, transposée en droit français) [1][14].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quelle est la limite annuelle de dose équivalente au cristallin pour un travailleur exposé ?",
+      "options": [
+        "2 mSv/an",
+        "20 mSv/an",
+        "150 mSv/an",
+        "500 mSv/an"
+      ],
+      "answer": 1,
+      "explanation": "La limite cristallin a été abaissée de 150 à 20 mSv/an en 2011 (CIPR), en raison du risque de cataracte radio-induite ; en France elle s'applique depuis le 1er juillet 2023 [2][3][16].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la limite annuelle de dose aux extrémités (mains/pieds) ?",
+      "options": [
+        "50 mSv/an",
+        "150 mSv/an",
+        "500 mSv/an",
+        "1000 mSv/an"
+      ],
+      "answer": 2,
+      "explanation": "La limite aux extrémités, comme à la peau (moyennée sur 1 cm²), est de 500 mSv/an (Hp(0,07)) [3][14].",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Pour le personnel, quel radionucléide impose le blindage le plus contraignant ?",
+      "options": [
+        "Tc-99m (140 keV)",
+        "Lu-177 (208 keV)",
+        "F-18 (511 keV)",
+        "I-131 (364 keV)"
+      ],
+      "answer": 2,
+      "explanation": "Les photons d'annihilation à 511 keV du F-18 exigent une épaisseur de plomb plus de 12 fois supérieure à celle nécessaire pour les 140 keV du Tc-99m (HVL plomb ~4,75–4,95 mm vs ~0,24 mm) [2][14].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle épaisseur de protège-seringue est recommandée par ORAMED/EANM pour le ¹⁸F ?",
+      "options": [
+        "1 mm de plomb",
+        "5 mm de tungstène",
+        "0,5 mm de plomb",
+        "2 mm d'acrylique"
+      ],
+      "answer": 1,
+      "explanation": "ORAMED recommande un protège-seringue tungstène d'au moins 5 mm pour le ¹⁸F ; un protège-seringue tungstène atténue le FDG d'environ 88 %, réduisant la dose aux mains de 80 à 99 % [11][14].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En France, à partir de quelle dose efficace susceptible une zone est-elle classée « contrôlée » ?",
+      "options": [
+        "≥ 1 mSv/an",
+        "≥ 6 mSv/an",
+        "≥ 20 mSv/an",
+        "≥ 100 mSv/an"
+      ],
+      "answer": 1,
+      "explanation": "La zone surveillée correspond à une dose efficace susceptible > 1 mSv/an, et la zone contrôlée à ≥ 6 mSv/an. Le sous-zonage couleur affine ensuite la classification [9][17].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "À quel seuil de dose efficace susceptible un travailleur est-il classé en catégorie A ?",
+      "options": [
+        "> 1 mSv/an",
+        "> 3 mSv/an",
+        "> 6 mSv/an",
+        "> 20 mSv/an"
+      ],
+      "answer": 2,
+      "explanation": "La catégorie A correspond à une dose efficace susceptible > 6 mSv/an (ou > 3/10 des limites cristallin/peau/extrémités), avec dosimétrie passive obligatoire ; la catégorie B est ≤ 6 mSv/an [19].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Pour une travailleuse ayant déclaré sa grossesse, quelle est la dose maximale à l'enfant à naître recommandée par la CIPR ?",
+      "options": [
+        "≤ 0,1 mSv",
+        "≤ 1 mSv",
+        "≤ 5 mSv",
+        "≤ 20 mSv"
+      ],
+      "answer": 1,
+      "explanation": "La CIPR recommande que la dose additionnelle à l'embryon/fœtus ne dépasse pas ~1 mSv sur le reste de la gestation après déclaration de grossesse (la réglementation US/NRC retient 5 mSv et ≤ 0,5 mSv/mois) [1][22].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel organe/structure est le plus à risque d'approcher sa limite réglementaire chez le radiopharmacien manipulant du F-18 ?",
+      "options": [
+        "Le cristallin",
+        "Les gonades",
+        "Les extrémités (mains)",
+        "La thyroïde"
+      ],
+      "answer": 2,
+      "explanation": "Les doigts du radiopharmacien reçoivent les débits les plus élevés ; le projet ORAMED a montré qu'en TEP les extrémités peuvent approcher la limite de 500 mSv/an sans protection adaptée (jusqu'à 3,0 µGy/MBq lors du prélèvement/injection/déchets ¹⁸F-FDG) [12][14].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Pourquoi un tablier de plomb est-il peu efficace pour le personnel en TEP ?",
+      "options": [
+        "Il est trop lourd à porter",
+        "Les photons de 511 keV traversent largement le plomb d'un tablier",
+        "Il augmente la dose par diffusion",
+        "Il bloque le F-18 mais pas le Tc-99m"
+      ],
+      "answer": 1,
+      "explanation": "À 511 keV, la couche de demi-atténuation dans le plomb est d'environ 5 mm : un tablier classique atténue peu ces photons. Le tablier réduit bien la dose au Tc-99m (62–68 %) mais reste peu efficace sur les hautes énergies, d'où la priorité aux blindages fixes et automatisation en TEP [3][14].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Où le dosimètre bague (Hp(0,07)) doit-il être positionné selon ORAMED, et quelle correction appliquer ?",
+      "options": [
+        "Sur la phalange distale ; lecture × 2",
+        "À la base de l'index de la main non dominante ; dose max aux mains ≈ lecture × 6",
+        "Au poignet dominant ; aucune correction",
+        "Sur le pouce ; lecture ÷ 6"
+      ],
+      "answer": 1,
+      "explanation": "ORAMED recommande la base de l'index de la main non dominante ; la phalange distale recevant souvent davantage, la dose maximale aux mains est estimée à environ la lecture de la bague × 6 [12].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelles sont les couches de demi-atténuation (HVL) dans le plomb, du plus faible au plus élevé ?",
+      "options": [
+        "F-18 < Tc-99m < I-131 < Lu-177",
+        "Tc-99m < Lu-177 < I-131 < F-18",
+        "I-131 < F-18 < Tc-99m < Lu-177",
+        "Lu-177 < Tc-99m < F-18 < I-131"
+      ],
+      "answer": 1,
+      "explanation": "HVL plomb croissants : Tc-99m ~0,24 mm < Lu-177 ~0,51 mm < I-131 ~2,48–2,74 mm < F-18 ~4,75–4,95 mm. Plus l'énergie photonique est élevée, plus l'épaisseur de plomb nécessaire augmente [2].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle dose efficace moyenne le personnel de médecine nucléaire a-t-il reçue en France en 2022 (bilan IRSN/ASNR) ?",
+      "options": [
+        "Environ 0,08 mSv/an",
+        "Environ 0,78 mSv/an",
+        "Environ 6 mSv/an",
+        "Environ 20 mSv/an"
+      ],
+      "answer": 1,
+      "explanation": "Le bilan IRSN/ASNR 2022 retient une dose efficace moyenne de 0,78 mSv/an pour le personnel de médecine nucléaire (environ 4× la moyenne du personnel médical), aucun travailleur n'ayant dépassé les limites extrémités ou cristallin [15].",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Après injection en TEP, quel est l'ordre de grandeur du débit de dose au contact du patient ?",
+      "options": [
+        "Quelques nSv/h",
+        "Quelques µSv/h seulement à 1 m",
+        "De l'ordre du mSv/h au contact",
+        "Plusieurs Sv/h"
+      ],
+      "answer": 2,
+      "explanation": "Après injection, le patient devient une source mobile : au contact, les débits sont de l'ordre du mSv/h ; à 1 m, environ 50 µSv/h ~2 h après 550 MBq de FDG. D'où la gestion de la distance et de la salle d'attente chaude [9][16].",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel suivi dosimétrique est obligatoire en zone contrôlée, en complément de la dosimétrie passive ?",
+      "options": [
+        "Aucun, la passive suffit",
+        "La dosimétrie opérationnelle (temps réel, avec seuils d'alarme)",
+        "Une prise de sang mensuelle",
+        "Un examen ophtalmologique trimestriel"
+      ],
+      "answer": 1,
+      "explanation": "En zone contrôlée, la dosimétrie opérationnelle (lecture en temps réel avec alarmes) est obligatoire en plus de la dosimétrie passive corps entier transmise au système national SISERI [9][26].",
+      "difficulty": "moyen"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "ALARA = principe d'optimisation de la CIPR (avec justification et limitation) ; trois leviers : temps, distance (1/d²), écran (atténuation exponentielle, raisonnée en HVL/TVL) [1][13].",
+      "Limites travailleur : dose efficace 20 mSv/an (≤ 100 mSv/5 ans, ≤ 50 mSv une année) ; cristallin 20 mSv/an ; peau et extrémités 500 mSv/an ; public 1 mSv/an [1][3][14].",
+      "Le F-18 (511 keV) est le plus contraignant : HVL plomb ~4,75–4,95 mm contre ~0,24 mm pour le Tc-99m, soit un blindage ~12× plus épais [2][14].",
+      "Les extrémités (mains du radiopharmacien) sont l'organe le plus à risque d'atteindre sa limite en TEP ; le protège-seringue tungstène 5 mm réduit la dose aux mains de 80–99 % [11][12][14].",
+      "Le tablier de plomb est efficace sur le Tc-99m (62–68 %) mais peu sur les hautes énergies (511 keV) → priorité aux blindages fixes, injecteurs automatiques et manipulation à distance [3][14].",
+      "Après injection, le patient devient une source mobile (débit de l'ordre du mSv/h au contact, ~50 µSv/h à 1 m en TEP) : gérer distance et salle d'attente chaude [9][16].",
+      "Grossesse déclarée : dose à l'enfant à naître ≤ ~1 mSv sur la gestation restante (CIPR) ; réaffectation hors gestes les plus exposants [1][22].",
+      "Doses réelles bien en deçà des limites quand ALARA est appliqué : France 2022 ~0,78 mSv/an en moyenne, jusqu'à ~6 mSv/an en TEP [6][15]."
+    ],
+    "protocol": [
+      "Évaluation préalable du risque, délimitation et signalisation des zones réglementées (surveillée, contrôlée et sous-zonage couleur) [9][17].",
+      "Port permanent des dosimètres : passif corps entier (poitrine, lecture mensuelle cat. A) + opérationnel en zone contrôlée + bague extrémités à la base de l'index de la main non dominante [9][12][26].",
+      "Préparation derrière poste/enceinte blindé(e), protège-flacon et protège-seringue tungstène (5 mm pour le ¹⁸F), pinces longues, transport en château plombé [11][14].",
+      "Application systématique du triptyque temps/distance/écran : entraînement à blanc, manipulation à distance, blindage adapté à l'énergie du radionucléide [13].",
+      "Contrôle de contamination (mains, surfaces) avant et après manipulation ; gestion des déchets en conteneurs blindés par décroissance [3][26].",
+      "Gestion du patient injecté comme source mobile : limiter le temps de contact, maintenir la distance, salle d'attente chaude dédiée [9][16].",
+      "Travailleuse enceinte : aménagement/réaffectation de poste dès déclaration écrite pour rester < ~1 mSv fœtal [1][22]."
+    ],
+    "scores": [
+      "Classement des zones (France) : surveillée > 1 mSv/an ; contrôlée ≥ 6 mSv/an ; sous-zonage couleur (verte, jaune < 2 mSv/h, orange < 100 mSv/h, rouge ≥ 100 mSv/h ; surveillée bleue < 1,25 mSv/mois) [9][17][18].",
+      "Classement des travailleurs : catégorie A si dose efficace susceptible > 6 mSv/an (ou > 3/10 des limites organe) → dosimétrie passive obligatoire ; catégorie B sinon [19].",
+      "HVL plomb de référence : Tc-99m ~0,24 mm · Lu-177 ~0,51 mm · I-131 ~2,5–2,7 mm · F-18 ~4,8–5,0 mm [2].",
+      "Hiérarchie du risque occupationnel externe : F-18/C-11 > Ga-68/Ga-67 > I-131 > I-123 > Tc-99m [2][5]."
+    ],
+    "pitfalls": [
+      "Croire que le tablier de plomb protège en TEP : à 511 keV il est peu efficace (HVL ~5 mm) — utile surtout pour le Tc-99m [3][14].",
+      "Sous-estimer la dose aux doigts : la phalange distale reçoit souvent plus que la bague proximale → dose max aux mains ≈ lecture × 6 [12].",
+      "Oublier que le patient injecté est la source la plus exposante après injection (débit de l'ordre du mSv/h au contact) [9][16].",
+      "Négliger la dosimétrie du cristallin malgré l'abaissement de la limite à 20 mSv/an (2011, France 2023) pour les postes à forte exposition tête [2][16][24].",
+      "Confondre limite CIPR fœtale (~1 mSv) et règle US/NRC (5 mSv gestation, ≤ 0,5 mSv/mois) [1][22].",
+      "Appliquer un blindage de Tc-99m à un poste de TEP : épaisseur ~12× insuffisante pour le F-18 [14]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert la radioprotection du personnel ?",
+        "text": "Pour réaliser votre examen ou votre traitement de **médecine nucléaire**, l'équipe manipule un produit très faiblement radioactif. La **radioprotection** est l'ensemble des précautions que les soignants prennent pour **se protéger eux-mêmes** tout en s'occupant de vous, sans rien retirer à la qualité de votre prise en charge. Le principe qui guide tout le service porte un nom simple : faire en sorte que l'exposition reste **aussi basse que raisonnablement possible**. Ces précautions ne sont pas le signe d'un danger pour vous : elles font partie du fonctionnement normal et soigné d'un service de médecine nucléaire, exactement comme le lavage des mains ou le port de gants ailleurs à l'hôpital. Vous pouvez être pleinement rassuré : tout est organisé pour que chacun, patients comme soignants, soit en sécurité.",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Trois illustrations simples montrant qu'on se protège des rayonnements en passant moins de temps près de la source, en gardant ses distances et en se plaçant derrière un écran de protection.",
+        "figureCaption": "Trois gestes simples résument la protection des soignants : moins de temps près du produit, plus de distance, et un écran de protection adapté.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Des précautions au service de tous",
+            "text": "Si vous voyez l'équipe utiliser des protège-seringues, manipuler à distance ou travailler derrière une vitre épaisse, c'est le signe d'un service rigoureux et bien organisé. Ces gestes protègent les soignants au quotidien et n'enlèvent rien à l'attention qui vous est portée."
+          }
+        ]
+      },
+      {
+        "title": "Comment cela se passe, et votre rôle",
+        "text": "Concrètement, l'équipe travaille **vite et bien** pour limiter le temps de contact avec le produit, garde une **certaine distance** quand c'est possible, et manipule derrière des **écrans de protection** (par exemple une seringue placée dans un étui protecteur). Chaque soignant porte un petit **badge de mesure** qui vérifie en permanence que les précautions fonctionnent. Vous, vous n'avez quasiment rien à faire de particulier : suivre simplement les consignes qu'on vous donne. Après l'injection, on pourra vous demander de **patienter dans une salle dédiée** et, parfois, de **garder un peu de distance** avec le personnel et les autres personnes le temps que le produit agisse, ou de **bien boire et d'aller uriner** régulièrement. Ce sont des gestes simples, faciles à suivre, qui aident l'examen à bien se dérouler.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "N'hésitez pas à poser vos questions",
+            "text": "Si une consigne vous surprend (attendre dans une salle particulière, garder une petite distance, bien vous hydrater), demandez pourquoi à l'équipe : elle vous expliquera volontiers. Comprendre le sens d'une consigne aide toujours à la suivre plus sereinement."
+          }
+        ]
+      },
+      {
+        "title": "Est-ce vraiment sûr, pour vous comme pour les soignants ?",
+        "text": "Oui. Les quantités de produit utilisées pour un examen sont **très faibles**, et le personnel est **spécifiquement formé** et **régulièrement surveillé** pour travailler en toute sécurité. Le service est organisé en **espaces dédiés** clairement signalés, avec des règles précises que chacun connaît. Le fait que les soignants se protègent ne veut pas dire que vous êtes une source de danger : cela traduit simplement leur exposition **répétée**, jour après jour, à de nombreux patients, là où vous ne passez qu'une seule fois. Pour vous, le bénéfice de l'examen est mûrement réfléchi, et l'ensemble de ces précautions garantit que tout se déroule dans les meilleures conditions de sécurité possibles. Vous êtes entre des mains attentives et compétentes.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Une équipe formée et accompagnée",
+            "text": "Chaque service de médecine nucléaire dispose de personnes spécialement chargées de la radioprotection, qui veillent à la sécurité des soignants comme des patients. C'est un domaine encadré et contrôlé : vous n'avez aucune démarche particulière à faire, juste à vous laisser accompagner."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Comprendre la radioprotection du personnel quand vous adressez un patient",
+        "text": "En tant que médecin adresseur ou correspondant, vous n'avez pas à appliquer vous-même les mesures de radioprotection du service de médecine nucléaire, mais en connaître la logique vous aide à **informer et rassurer** votre patient, et à mieux interagir avec l'équipe. Tout repose sur le principe **ALARA** (« aussi bas que raisonnablement possible »), déclinaison opérationnelle de l'**optimisation** qui, avec la **justification** et la **limitation de dose**, forme le socle international de la radioprotection (CIPR). Sur le terrain, la protection contre l'exposition externe tient en trois leviers que vous pouvez expliquer simplement : le **temps** (moins on reste près de la source, moins on est exposé), la **distance** (l'exposition décroît très vite en s'éloignant) et l'**écran** (un matériau dense, comme le plomb ou le tungstène, arrête une grande part du rayonnement). Le service y ajoute un **zonage** des locaux, une **dosimétrie** individuelle de chaque agent et des **procédures** rigoureuses. Point pratique utile à retenir : après injection, le **patient devient lui-même une source** temporaire, ce qui explique les consignes d'attente en salle dédiée et, pour certains examens, de distance transitoire.",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers de la radioprotection externe — réduire le temps d'exposition, augmenter la distance à la source, interposer un écran de protection.",
+        "figureCaption": "Temps, distance, écran : les trois leviers physiques de l'optimisation ALARA appliqués par le personnel de médecine nucléaire."
+      },
+      {
+        "title": "Quand y penser et que transmettre au patient",
+        "text": "La radioprotection du personnel devient un sujet concret dès que vous adressez un patient pour un examen scintigraphique, une TEP ou un traitement par radionucléides. Quelques réflexes simples facilitent la prise en charge et la sécurité collective. D'abord, **signalez les situations particulières** sur votre demande : grossesse connue ou possible, allaitement, mais aussi le besoin éventuel d'un **accompagnant** (un parent pour un enfant, un aidant pour une personne dépendante), car l'équipe organisera alors la radioprotection de cet accompagnant. Ensuite, **préparez le patient** au fait que l'équipe prendra des précautions visibles (protège-seringues, manipulation à distance, vitres plombées, attente en salle dédiée) qui sont normales et ne traduisent aucun danger pour lui. Enfin, relayez les **consignes post-examen** : après certains examens ou traitements, le patient reçoit des recommandations temporaires (hydratation, mictions fréquentes, distance vis-à-vis des jeunes enfants et des femmes enceintes pendant quelques heures). En portant ces messages en amont, vous rendez la prise en charge plus fluide et contribuez directement à la sécurité de tous.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adresser en médecine nucléaire un patient bien informé fluidifie l'examen et renforce la sécurité de tous. Le service applique pour son personnel le principe ALARA (optimisation : temps, distance, écran), un zonage réglementaire des locaux, une dosimétrie individuelle et des procédures encadrées — un cadre qui garantit aussi la sécurité du patient et de son éventuel accompagnant. Votre apport est double : transmettre une demande complète (question clinique précise, grossesse/allaitement éventuels, besoin d'un accompagnant) et préparer le patient en lui expliquant que les précautions visibles de l'équipe sont la marque d'un service rigoureux, sans danger pour lui. Pensez à anticiper, après injection ou traitement, les consignes temporaires de bon sens (hydratation, distance vis-à-vis des jeunes enfants et des femmes enceintes) : le patient injecté devient brièvement une source, et ces gestes simples optimisent l'exposition de son entourage comme des soignants."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - Carte d'identité — Radioprotection du personnel et principe ALARA",
+        "text": "**Comment lire cette fiche-réflexe.** La radioprotection opérationnelle du personnel de médecine nucléaire (MN) ne se résume pas à une réglementation : c'est l'application quotidienne d'un **système de pensée** — justification, **optimisation (ALARA)**, limitation — décliné en trois leviers physiques manipulables au lit du patient et à la radiopharmacie : **temps, distance, écran**.[6]\n\n**ALARA** = *As Low As Reasonably Achievable* : maintenir toute exposition aussi basse que raisonnablement possible, compte tenu des facteurs économiques et sociétaux. C'est l'expression opérationnelle du **principe d'optimisation** de la Commission internationale de protection radiologique (CIPR), fondé sur le modèle de risque **linéaire sans seuil (LNT)** pour les effets stochastiques aux faibles doses.[7]\n\n| Repère | Valeur opérationnelle |\n|---|---|\n| **Cadre doctrinal** | Système CIPR à 3 piliers : justification · optimisation (ALARA) · limitation[7] |\n| **Leviers physiques** | Temps · Distance (loi en **1/d²**) · Écran (atténuation exponentielle)[4][5] |\n| **Limite efficace corps entier** | **20 mSv/an** (≤ 100 mSv / 5 ans, ≤ 50 mSv une année)[1] |\n| **Limite cristallin** | **20 mSv/an** (abaissée de 150 → 20 en 2011)[1][28] |\n| **Limite extrémités / peau** | **500 mSv/an**[1] |\n| **Limite public** | **1 mSv/an** (dose efficace)[1] |\n| **Radionucléide le plus contraignant** | **F-18 (511 keV)** : Γ = 5,7 R·mCi⁻¹·h⁻¹ à 1 cm[2] |\n| **Organe le plus à risque** | **Extrémités** (mains du radiopharmacien) en TEP[12][9] |\n| **Dose réelle moyenne (MN France 2022)** | **0,78 mSv/an** (4× la moyenne du personnel médical)[37] |\n\nLes valeurs exactes (activités manipulées, zonage de chaque salle, classement A/B des postes) sont à adapter à l'analyse de poste de chaque service ; cette carte fixe les ordres de grandeur de référence.",
+        "stats": [
+          {
+            "value": "20 mSv/an",
+            "label": "Limite efficace corps entier (CIPR)"
+          },
+          {
+            "value": "1/d²",
+            "label": "Loi de la distance (levier majeur)"
+          },
+          {
+            "value": "0,78 mSv/an",
+            "label": "Dose réelle moyenne MN France 2022"
+          },
+          {
+            "value": "511 keV",
+            "label": "F-18 : émetteur le plus pénétrant"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "ALARA n'est pas « le plus bas possible » mais « le plus bas raisonnablement atteignable ». La nuance est essentielle : l'optimisation intègre explicitement les contraintes économiques et sociétales, et s'arrête là où la réduction de dose deviendrait disproportionnée au regard du bénéfice. C'est une démarche de jugement, pas une course au zéro."
+          },
+          {
+            "type": "info",
+            "title": "Repère de terrain",
+            "text": "0,5 µSv/h soutenu sur une année de travail (≈ 2000 h) équivaut à ≈ 1 mSv/an — niveau souvent retenu comme seuil d'action et borne haute de la zone surveillée.[13]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers d'ALARA — temps, distance, écran — schématisés autour d'une source ponctuelle : réduire le temps d'exposition, augmenter la distance (loi en 1/d²) et interposer un blindage atténuent le débit de dose reçu par l'opérateur.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran : les trois leviers opérationnels d'ALARA, charpente de toutes les consignes au personnel."
+      },
+      {
+        "title": "A2 - Comprendre l'enjeu : qui est exposé, à quoi, et pourquoi le personnel de MN est un cas particulier",
+        "text": "**Une exposition externe rapprochée et répétée.** Contrairement à la radiologie, où la source (le tube) s'éteint et où le personnel se tient derrière un mur plombé, le travailleur de MN manipule une **source radioactive non scellée** qu'il prélève, prépare, injecte, puis suit un **patient devenu lui-même source mobile**. L'exposition est donc de **contact** (mains sur la seringue) et **rapprochée** (positionnement du patient), ce qui en fait un profil de risque distinct.\n\n**Une hiérarchie d'organes-cibles.** L'opérateur est ici la « cible » à protéger. Le radiopharmaceutique émet des photons γ depuis le flacon, la seringue et le patient :\n- les **mains** (au contact direct de la seringue) reçoivent les débits les plus élevés ;\n- le **cristallin** (à hauteur de manipulation et de positionnement) est particulièrement radiosensible ;\n- le **tronc** (dose efficace) est mesuré sous le tablier/écran.\n\n**Doses réellement reçues — l'angle quantitatif.** Bien appliqué, ALARA maintient les doses très en deçà des limites, mais l'écart entre procédures est considérable :\n\n| Population / geste | Dose | Source |\n|---|---|---|\n| Personnel MN (France, bilan 2022) | **0,78 mSv/an** efficace (4× le personnel médical) | [37] |\n| Manipulateur scintigraphie générale | **~0,1 mSv/an** | [10] |\n| Manipulateur **TEP** | **proche de 6 mSv/an** | [10] |\n| Scintigraphie osseuse (Tc-99m) | **6,1 ± 2,5 µSv/patient** | [10] |\n| **TEP-FDG (F-18)** | **11,1 ± 2,2 µSv/patient** | [10] |\n| Dose aux doigts — déballage générateur Tc-99m | **0,0012 µGy/MBq** | [9] |\n| Dose aux doigts — prélèvement/injection/déchets F-18 FDG | **3,0 µGy/MBq** | [9] |\n\n**Le F-18 est le cas particulier dans le cas particulier.** Le constat issu du projet européen **ORAMED** est sans ambiguïté : aux gestes TEP, les doigts **peuvent approcher la limite réglementaire de 500 mSv/an** en l'absence de protection, alors qu'en Tc-99m on reste largement en dessous.[9][12] La priorité de protection se concentre donc sur les émetteurs de positons (511 keV). Au contact d'un patient injecté de 550 MBq de FDG, le débit à **1 m** atteint encore **~50 µSv/h** environ 2 h après l'injection ; il retombe à une médiane de **~2 µSv/h à 2 m**, ce qui chiffre l'efficacité de la distance.[16]",
+        "stats": [
+          {
+            "value": "0,78 mSv/an",
+            "label": "Dose efficace moyenne MN (France 2022)"
+          },
+          {
+            "value": "~6 mSv/an",
+            "label": "Manipulateur TEP (vs ~0,1 en scinti générale)"
+          },
+          {
+            "value": "×2500",
+            "label": "Écart dose aux doigts Tc-99m → F-18 FDG"
+          },
+          {
+            "value": "50 µSv/h",
+            "label": "Débit à 1 m d'un patient FDG (550 MBq, 2 h)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le patient injecté est une source mobile",
+            "text": "Après injection (surtout F-18 FDG et I-131), le patient émet au contact des débits de l'ordre du mSv/h.[18] Limiter le temps de contact, garder la distance et faire patienter le patient en salle d'attente « chaude » dédiée font partie intégrante de la radioprotection du personnel — pas seulement de celle de l'entourage."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — hiérarchie du risque occupationnel externe",
+            "text": "Par énergie photonique décroissante d'enjeu : F-18 et C-11 (511 keV) > Ga-68/Ga-67 > I-131 (364 keV) > I-123 > Tc-99m (140 keV).[2] Cette hiérarchie dicte le dimensionnement des blindages et le ciblage de la surveillance d'extrémités."
+          }
+        ]
+      },
+      {
+        "title": "A3 - Les fondements physiques : dose, débit de dose et la loi de l'inverse du carré de la distance",
+        "text": "Les trois leviers d'ALARA ne sont pas des slogans : chacun découle d'une loi physique quantifiable de l'exposition externe.\n\n**▸ Temps.** La dose intégrée est **proportionnelle au temps** passé à proximité de la source : la diviser par deux divise la dose d'autant. D'où l'entraînement « à blanc », la préparation organisée et l'économie de gestes près de la source.[4]\n\n**▸ Distance — loi de l'inverse du carré.** Pour une source ponctuelle, le débit de dose décroît en **1/d²** : doubler la distance **divise le débit par 4**, la tripler le divise par 9. C'est le levier le plus puissant et le moins coûteux — manipuler à distance (pinces longues, télémanipulateurs) prime sur tout le reste.[4] Le débit à 1 cm se calcule à partir de la **constante de débit de dose Γ** propre au radionucléide :\n\n| Radionucléide | Énergie γ principale | Constante Γ (R·mCi⁻¹·h⁻¹ à 1 cm) | Source |\n|---|---|---|---|\n| Tc-99m | 140 keV (89 %) | **0,795** | [2] |\n| Lu-177 | 113 / 208 keV | **0,181** | [2] |\n| I-131 | 364 keV (81 %) | **2,2** | [2] |\n| **F-18** | **511 keV** (annihilation) | **5,7** | [2] |\n\n**▸ Écran — atténuation exponentielle.** L'interposition d'un matériau dense suit une décroissance exponentielle, quantifiée par la **couche de demi-atténuation (CDA / HVL)** — épaisseur qui divise le débit par 2 — et la **couche de dixième-atténuation (CDX / TVL)**, avec la relation **TVL ≈ 3,32 × HVL** pour un faisceau monoénergétique.[8] Les épaisseurs requises explosent avec l'énergie :\n\n| Radionucléide | Période physique | **HVL plomb** | TVL plomb | Source |\n|---|---|---|---|---|\n| Tc-99m | **6,02 h** | **0,234 mm** | 0,905 mm | [2] |\n| Lu-177 | **6,65 j** | **0,542 mm** | 2,11 mm | [2] |\n| I-131 | **8,02 j** | **2,74 mm** | 9,93 mm | [2] |\n| **F-18** | **109,8 min** | **4,95 mm** | 15,1 mm | [2] |\n\n**Conséquence pratique majeure.** Les photons d'annihilation de **511 keV** exigent une épaisseur de plomb/tungstène **plus de 12 fois supérieure** à celle nécessaire pour les 140 keV du Tc-99m.[35] Le blindage classique conçu pour le Tc-99m est donc **inadapté en TEP** : d'où les postes blindés dédiés, les injecteurs automatiques et les protège-seringues en tungstène. À l'inverse, un protège-seringue tungstène (~8,6 mm) atténue le FDG F-18 de **88 %**, et un blindage acrylique 15 mm + 50 mm de Pb au point d'injection ramène l'exposition corps entier de **0,014 à 0,0014 mSv/MBq** (facteur 10).[35]",
+        "stats": [
+          {
+            "value": "1/d²",
+            "label": "Décroissance du débit avec la distance"
+          },
+          {
+            "value": "0,234 mm",
+            "label": "HVL plomb du Tc-99m (140 keV)"
+          },
+          {
+            "value": "4,95 mm",
+            "label": "HVL plomb du F-18 (511 keV)"
+          },
+          {
+            "value": "×12",
+            "label": "Surépaisseur de plomb TEP vs Tc-99m"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — la distance avant l'écran",
+            "text": "La loi en 1/d² est gratuite et instantanée, là où le blindage à 511 keV est lourd, coûteux et jamais total (diffusé/rétrodiffusé plafond-sol). Dans l'ordre d'optimisation, on cherche d'abord à reculer et à automatiser, puis on blinde le résiduel — c'est aussi la logique de la hiérarchie collective > organisation > EPI."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — le tablier de plomb est trompeur en haute énergie",
+            "text": "Mesurée, l'efficacité d'un tablier de plomb chute avec l'énergie : ~62–68 % de réduction pour le Tc-99m, mais seulement 28–49 % pour l'I-131 et 20–33 % pour le Kr-81m.[3] À 511 keV (F-18), le tablier devient quasi inutile : il ne remplace jamais la distance ni le blindage fixe."
+          }
+        ]
+      },
+      {
+        "title": "A4 - Le cadre doctrinal : justification, optimisation (ALARA/ALARP) et limitation",
+        "text": "Le système de protection de la **CIPR (Publication 103, 2007)** repose sur trois principes hiérarchisés, dont ALARA n'est que le deuxième étage.[7]\n\n1. **Justification** — toute décision modifiant l'exposition doit faire **plus de bien que de mal** : un examen ou un geste injustifié n'est jamais « optimisable », il est à supprimer.[7]\n2. **Optimisation (ALARA / ALARP)** — pour toute exposition justifiée, maintenir doses, probabilités et nombre de personnes exposées **aussi bas que raisonnablement atteignable**, compte tenu des facteurs économiques et sociétaux.[7] C'est ici qu'interviennent temps-distance-écran (§A3), le zonage et la dosimétrie.\n3. **Limitation de dose** — des **limites individuelles** réglementaires que l'optimisation ne dispense jamais de respecter, et qui ne s'appliquent **qu'aux expositions professionnelles et du public** (jamais aux patients, couverts par justification + optimisation).[7]\n\n**Les limites de dose (travailleur exposé) :**\n\n| Grandeur | Limite | Source |\n|---|---|---|\n| **Dose efficace corps entier** | **20 mSv/an**, moyennée sur 5 ans (≤ 100 mSv / 5 ans), sans dépasser **50 mSv** une année | [1] |\n| **Cristallin** (Hp(3)) | **20 mSv/an** (moyenne 5 ans, ≤ 50 mSv une année) — abaissée de 150 → 20 mSv en **2011** | [1][28] |\n| **Peau** (sur 1 cm²) | **500 mSv/an** | [1] |\n| **Extrémités** (mains/pieds, Hp(0,07)) | **500 mSv/an** | [1] |\n| **Public** (dose efficace) | **1 mSv/an** | [1] |\n| **Fœtus** (grossesse déclarée) | **≤ 1 mSv** sur la gestation restante | [7][21] |\n\n**Transposition française (Code du travail, R4451-6 à R4451-9).** Corps entier **20 mSv / 12 mois consécutifs** ; extrémités et peau **500 mSv / 12 mois** ; **cristallin 20 mSv / 12 mois**, en vigueur depuis le **1er juillet 2023** (régime transitoire antérieur : 100 mSv/5 ans, ≤ 50 mSv/an).[14][16] Le décret transposant la **Directive 2013/59/Euratom** est entré en vigueur le **1er juillet 2018**.[14]\n\n**Du doctrinal à l'organisationnel : zonage et classement.** L'optimisation se matérialise par la délimitation de **zones réglementées** et le **classement des travailleurs** :\n\n| Dispositif | Seuil | Source |\n|---|---|---|\n| Zone **surveillée** (bleue) | dose efficace susceptible **> 1 mSv/an** (< 1,25 mSv/mois) | [17][18] |\n| Zone **contrôlée verte** | < 4 mSv/mois intégré | [18] |\n| Zone **contrôlée jaune** | < 2 mSv/h | [18] |\n| Zone **contrôlée orange** | < 100 mSv/h | [18] |\n| Zone **contrôlée rouge** | ≥ 100 mSv/h | [18] |\n| Travailleur **catégorie A** | dose efficace susceptible **> 6 mSv/an** (ou > 3/10 des limites cristallin/peau/extrémités) → dosimétrie passive obligatoire | [19][15] |\n| Travailleur **catégorie B** | ≤ 6 mSv/an | [19][15] |\n\nLa surveillance dosimétrique double — **passive** (TLD/OSL poitrine, lecture mensuelle en cat. A, transmise au système national SISERI) et **opérationnelle** (temps réel avec alarme en zone contrôlée) — complétée du suivi **extrémités** (bague Hp(0,07) à la base de l'index non dominant, position recommandée par ORAMED) et **cristallin** (Hp(3)), ferme la boucle d'optimisation.[26][9][12]",
+        "steps": [
+          {
+            "title": "1. Justifier",
+            "text": "Vérifier que l'exposition (examen, geste, poste) apporte plus de bénéfice que de détriment. Une exposition injustifiée se supprime, elle ne s'optimise pas.[7]"
+          },
+          {
+            "title": "2. Optimiser (ALARA)",
+            "text": "Appliquer temps-distance-écran, zoner les locaux selon le débit de dose, automatiser les gestes les plus exposants (injecteurs FDG), porter les protections adaptées.[7]"
+          },
+          {
+            "title": "3. Limiter",
+            "text": "Garantir le respect des limites individuelles (20 mSv efficace, 20 mSv cristallin, 500 mSv extrémités) via la dosimétrie passive et opérationnelle, le classement A/B et le suivi SISERI.[1][14][26]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — travailleuse enceinte",
+            "text": "Après déclaration écrite de la grossesse, les conditions de travail doivent garantir une dose additionnelle à l'enfant à naître ≤ ~1 mSv sur la gestation restante (standard CIPR) — d'où la réaffectation hors des gestes les plus exposants (préparation/injection F-18 et I-131).[7][21] À distinguer du référentiel US/NRC (≤ 5 mSv sur la gestation, ≤ 0,5 mSv/mois).[22]"
+          },
+          {
+            "type": "info",
+            "title": "Bases factuelles des limites",
+            "text": "L'abaissement de la limite du cristallin à 20 mSv/an (2011) repose sur la mise en évidence d'une cataracte radio-induite à des doses bien inférieures aux seuils historiques.[28] La double valeur 1 mSv (public) / 20 mSv (travailleur) découle de l'analyse risque/détriment de la CIPR.[27]"
+          }
+        ]
+      },
+      {
+        "title": "B1 - Levier 1 — Le temps : réduire la durée d'exposition",
+        "text": "**Premier levier opérationnel d'ALARA** (*As Low As Reasonably Achievable*, expression du principe d'optimisation de la CIPR — Commission Internationale de Protection Radiologique — Publication 103, 2007) : la dose intégrée par un opérateur est **directement proportionnelle au temps** passé à proximité d'une source non blindée. Pour un débit de dose D̊ stationnaire, la dose reçue vaut **D = D̊ × t** ; diviser par deux le temps de manipulation divise la dose par deux, à débit constant [13][5]. C'est le levier le plus simple conceptuellement, mais le moins puissant des trois (gain linéaire, non quadratique comme la distance — cf. §B2).\n\n**Traduction pratique.** Le temps se réduit par l'organisation du geste, jamais par la précipitation (qui majore le risque de contamination et d'erreur) : préparation **« à blanc »** des gestes complexes, séquence pré-organisée du poste (seringues, champ blindé, conteneur déchets à portée), automatisation. Un **injecteur automatique de ¹⁸F-FDG** supprime quasiment le temps de contact main-source au moment de l'administration [14]. La rotation du personnel sur les postes les plus exposants (radiopharmacie, injection TEP) répartit la charge et limite la dose individuelle cumulée.\n\n**Ordres de grandeur de dose au geste** — le temps de contact se paie en µSv mesurables :\n\n| Geste / situation | Dose mesurée | Source |\n|---|---|---|\n| Injection ¹⁸F-FDG (corps entier manipulateur) | **0,61 ± 0,10 µSv/injection** (≈ 1,58 nSv/MBq) | [16] |\n| Scintigraphie osseuse ⁹⁹ᵐTc (par patient) | **6,1 ± 2,5 µSv/patient** | [10] |\n| TEP-FDG ¹⁸F (par patient) | **11,1 ± 2,2 µSv/patient** | [10] |\n| Dose aux doigts — déballage générateur ⁹⁹Mo/⁹⁹ᵐTc | **0,0012 µGy/MBq** | [9] |\n| Dose aux doigts — prélèvement + injection + déchets ¹⁸F-FDG | **3,0 µGy/MBq** | [9] |\n\nLe rapport de plus de **2 500** entre le geste le moins et le plus exposant (générateur ⁹⁹ᵐTc vs chaîne ¹⁸F-FDG) illustre que la maîtrise du temps doit être **ciblée sur les gestes les plus pénalisants** : la préparation et l'injection du ¹⁸F, où le projet ORAMED a montré que les doigts du radiopharmacien **peuvent approcher la limite réglementaire de 500 mSv/an** sans optimisation [9][12]. La dose aux doigts par étude est ainsi dominée par le radiopharmacien (**265,7 ± 107,6 µSv/étude**) très au-dessus du manipulateur (4,84 µSv) et de l'IDE [8].",
+        "stats": [
+          {
+            "value": "D = D̊ × t",
+            "label": "Dose ∝ temps (à débit constant) [13]"
+          },
+          {
+            "value": "0,61 µSv",
+            "label": "Dose corps entier / injection FDG [16]"
+          },
+          {
+            "value": "3,0 µGy/MBq",
+            "label": "Doigts : chaîne ¹⁸F-FDG (max) [9]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert",
+            "text": "Le temps est le seul levier sans coût matériel : il s'achète par la **préparation et l'entraînement**. Répéter à blanc une manipulation d'¹³¹I ou un montage de cathéter avant de travailler en zone chaude réduit le temps réel sous la source sans rien blinder de plus. C'est le complément naturel de la distance (§B2) et de l'écran (§B3), jamais leur substitut."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — la précipitation est contre-productive",
+            "text": "Vouloir « aller vite » n'est pas optimiser le temps. Un geste précipité augmente le risque de **piqûre, d'extravasation et surtout de contamination** d'une source non scellée (cf. §B4), dont la gestion expose ensuite bien davantage que les quelques secondes gagnées. Optimiser le temps = fluidifier et préparer, pas accélérer."
+          }
+        ]
+      },
+      {
+        "title": "B2 - Levier 2 — La distance : exploiter l'inverse du carré",
+        "text": "**Deuxième levier, et le plus puissant.** Pour une source quasi ponctuelle, le débit de dose décroît selon la **loi de l'inverse du carré de la distance** : D̊ ∝ **1/d²**. Doubler la distance à la source divise le débit par **4** ; le tripler le divise par **9** [13][5]. À l'inverse de l'écran, ce levier ne coûte rien (pinces, recul d'un pas) et, à l'inverse du temps (gain linéaire), il offre un **gain quadratique** — d'où sa primauté opérationnelle. Manipuler **à distance** (pinces longues, télémanipulateurs, protège-seringues qui éloignent les doigts du contenu actif) est la mesure ALARA au meilleur rapport efficacité/effort [13].\n\n**Constantes de débit de dose (constante gamma Γ).** Le débit produit par une activité donnée à 1 cm dépend du radionucléide ; ces valeurs dimensionnent à la fois l'exposition et le blindage requis :\n\n| Radionucléide | Énergie γ principale | Période physique | Constante Γ (R·mCi⁻¹·h⁻¹ à 1 cm) |\n|---|---|---|---|\n| **⁹⁹ᵐTc** | 140 keV (89 %) | 6,02 h | **0,795** | \n| **¹³¹I** | 364 keV (81 %) | 8,02 j | **2,2** |\n| **¹⁷⁷Lu** | 113 / 208 keV | 6,65 j | **0,181** |\n| **¹⁸F** | 511 keV (annihilation) | 109,8 min | **5,7** |\n\n[2][5] — Le **¹⁸F est de loin le plus émetteur** (Γ ≈ 7× le ⁹⁹ᵐTc) : la distance y est encore plus déterminante. Pour le calcul de blindage, on utilise aussi pour l'¹³¹I la constante **0,059 µSv·m²·h⁻¹·MBq⁻¹** [2].\n\n**Le patient injecté devient une source mobile.** Après administration, le débit de dose à proximité du patient est loin d'être négligeable et obéit lui aussi à la loi en 1/d² : pour le ¹⁸F-FDG, environ **50 µSv/h à 1 m** ~2 h après 550 MBq, retombant à une médiane de **2 µSv/h à 2 m** 1 h après 370 MBq [16]. D'où l'intérêt des **salles d'attente « chaudes » dédiées**, de la gestion du flux, et du maintien de la distance au positionnement. Au contact direct, le débit peut atteindre l'ordre du **mSv/h** [18].\n\nCes débits expliquent les doses annuelles réellement enregistrées, qui restent largement sous les limites quand la distance est exploitée : personnel de médecine nucléaire en France **0,78 mSv/an** (bilan ASNR/IRSN 2022, soit ≈ 4× la moyenne du personnel médical), avec un poste TEP pouvant approcher **6 mSv/an** [15][6].",
+        "stats": [
+          {
+            "value": "1/d²",
+            "label": "Loi de l'inverse du carré [13]"
+          },
+          {
+            "value": "÷ 4",
+            "label": "Débit, quand on double la distance [13]"
+          },
+          {
+            "value": "Γ = 5,7",
+            "label": "¹⁸F : R·mCi⁻¹·h⁻¹ à 1 cm (max) [5]"
+          },
+          {
+            "value": "50 µSv/h",
+            "label": "Patient FDG, à 1 m (~2 h, 550 MBq) [16]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers de réduction de dose ALARA — temps, distance, écran — avec mise en évidence de la décroissance du débit de dose en 1/d² avec la distance à la source.",
+        "figureCaption": "Fig. 1 — Temps, distance, écran : la distance offre le gain le plus rapide (décroissance quadratique en 1/d²).",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi la distance prime",
+            "text": "Reculer d'un pas (de 25 cm à 50 cm d'une source) divise le débit par **4**, là où le même facteur exigerait deux couches de demi-atténuation de plomb (cf. §B3). Une pince qui passe le contact de la pulpe à 20 cm gagne plusieurs ordres de grandeur sur la dose aux extrémités. La distance est gratuite, immédiate et quadratique : c'est le premier réflexe ALARA, surtout pour le ¹⁸F (Γ ≈ 7× le ⁹⁹ᵐTc) [5]."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — le patient est une source",
+            "text": "En médecine nucléaire, l'optimisation de la distance ne s'arrête pas au flacon : **après injection, le patient irradie** (≈ 50 µSv/h à 1 m après FDG) [16]. Gérer la distance personnel/patient en salle d'attente chaude, limiter le temps de contact au positionnement, et tenir les enfants et femmes enceintes à distance des patients injectés font partie intégrante du dispositif."
+          }
+        ]
+      },
+      {
+        "title": "B3 - Levier 3 — L'écran : blindage adapté à l'énergie et au type d'émission",
+        "text": "**Troisième levier : l'écran (blindage).** Un faisceau de photons traversant un matériau est atténué de façon **exponentielle** : I = I₀·e^(−µx). On raisonne en pratique sur deux grandeurs dérivées : la **couche de demi-atténuation (CDA, ou HVL pour *Half-Value Layer*)**, épaisseur qui divise l'intensité par 2, et la **couche de dixième-atténuation (CDX, ou TVL pour *Tenth-Value Layer*)**, qui la divise par 10. Pour un faisceau monoénergétique, **TVL ≈ 3,32 × HVL** [8]. Le matériau de référence est le **plomb** (γ diagnostiques) ou le **tungstène** (protège-seringues, haute densité).\n\n**Épaisseurs de référence dans le plomb** — la donnée centrale qui dicte tout dimensionnement :\n\n| Radionucléide | Énergie γ | **HVL plomb** | TVL plomb |\n|---|---|---|---|\n| **⁹⁹ᵐTc** | 140 keV | **0,234 mm** | 0,905 mm |\n| **¹⁷⁷Lu** | 113 / 208 keV | **0,542 mm** | 2,11 mm |\n| **¹³¹I** | 364 keV | **2,74 mm** | 9,93 mm |\n| **¹⁸F** | 511 keV | **4,95 mm** | 15,1 mm |\n\n[2] — L'**énergie commande tout** : les 511 keV du ¹⁸F exigent une épaisseur de plomb **plus de 12 fois supérieure** à celle des 140 keV du ⁹⁹ᵐTc [14]. Le blindage conçu pour le ⁹⁹ᵐTc est donc **inadapté en TEP** : il faut des postes blindés dédiés, des protège-seringues épais et des injecteurs automatiques.\n\n**Efficacité mesurée des écrans :**\n\n| Écran | Cible | Réduction de dose | Source |\n|---|---|---|---|\n| Protège-seringue **tungstène** (0,34″ ≈ 8,6 mm) | ¹⁸F-FDG | **88 %** | [14] |\n| Protège-seringue tungstène (épaisseur min. recommandée **5 mm**) | ¹⁸F (mains) | **80–99 %** | [12] |\n| Acrylique 15 mm + 50 mm Pb au point d'injection | ¹⁸F (corps entier) | facteur **10** (0,014 → 0,0014 mSv/MBq) | [14] |\n| **Tablier de plomb** | ⁹⁹ᵐTc | **62–68 %** (tronc 68 %, thyroïde 64 %, gonades 62 %) | [3] |\n| Tablier de plomb | ¹³¹I | seulement **28–49 %** | [3] |\n| **Cache-thyroïde** | ¹³¹I (thyroïde opérateur) | protection complémentaire | [3] |\n\n**Le type d'émission et l'énergie conditionnent le choix.** Le tablier de plomb, efficace sur le ⁹⁹ᵐTc (≈ 65 %), devient **peu utile sur les hautes énergies** (¹³¹I : ≤ 50 % ; ¹⁸F 511 keV : quasi inutile) — d'où sa place basse dans la hiérarchie des moyens [14][3]. Pour les **émetteurs β⁻** (¹³¹I, ¹⁷⁷Lu en thérapie), on blinde d'abord avec un matériau de **faible numéro atomique** (plexiglas, acrylique) pour arrêter les électrons en minimisant le **rayonnement de freinage (Bremsstrahlung)**, puis on ajoute du plomb pour le γ résiduel. La hiérarchie ALARA reste : **protection collective** (blindage fixe, enceinte de radiopharmacie, automatisation) **> EPI** (protège-seringue, gants — le tablier étant accessoire à 511 keV) **> organisation** (temps, distance) [14].",
+        "stats": [
+          {
+            "value": "I = I₀·e^(−µx)",
+            "label": "Atténuation exponentielle des photons"
+          },
+          {
+            "value": "0,23 → 4,95 mm",
+            "label": "HVL Pb : ⁹⁹ᵐTc → ¹⁸F [2]"
+          },
+          {
+            "value": "× 12",
+            "label": "Plomb requis ¹⁸F vs ⁹⁹ᵐTc [14]"
+          },
+          {
+            "value": "88 %",
+            "label": "Protège-seringue tungstène, ¹⁸F [14]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le blindage du ⁹⁹ᵐTc ne protège pas en TEP",
+            "text": "Transposer le matériel de blindage du ⁹⁹ᵐTc (140 keV) à la TEP au ¹⁸F (511 keV) est une erreur classique : il faut **>12× plus de plomb** pour la même atténuation [14]. Un protège-seringue « standard » ⁹⁹ᵐTc laisse passer l'essentiel du débit ¹⁸F. La TEP impose des protège-seringues tungstène épais (≥ 5 mm), des postes et injecteurs dédiés."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — β⁻ : Bremsstrahlung avant plomb",
+            "text": "Pour les émetteurs β⁻ purs ou mixtes (¹³¹I, ¹⁷⁷Lu thérapeutique), blinder d'emblée avec du plomb épais est contre-productif : les électrons freinés dans un matériau à Z élevé génèrent un **rayonnement de freinage (Bremsstrahlung)** pénétrant. On place d'abord un écran de **faible Z** (plexiglas/acrylique) pour absorber les β⁻, puis du plomb pour le γ et le Bremsstrahlung résiduels. Le tablier de plomb, lui, n'apporte que 28–49 % sur l'¹³¹I [3]."
+          }
+        ]
+      },
+      {
+        "title": "B4 - Protection contre la contamination : sources non scellées, EPI et hygiène radiologique",
+        "text": "Le triptyque **temps-distance-écran** (§B1–B3) maîtrise l'exposition **externe**. Mais la médecine nucléaire manipule des **sources non scellées** (radiopharmaceutiques liquides), d'où un second risque, absent en radiologie conventionnelle : la **contamination** — surfacique, cutanée ou interne (inhalation, ingestion, blessure). La protection contre la contamination repose sur le **confinement, les équipements de protection individuelle (EPI) et l'hygiène radiologique**, complétés par la surveillance interne du travailleur [29][13].\n\n**Hiérarchie du confinement (radiopharmacie / hot lab).** Le radiopharmaceutique se prépare derrière une **enceinte blindée ventilée** ; une **hotte à dépression** est impérative pour l'¹³¹I, partiellement **volatil**, afin d'éviter sa fixation thyroïdienne par inhalation. S'y ajoutent protège-flacons et protège-seringues en tungstène, pinces, plateaux à rebord et papier absorbant. Le niveau d'ambiance acceptable en zone occupée est de l'ordre de **1 µSv/h** [4]. Les déchets et le patient-source sont transportés en **château de plomb/tungstène**, les déchets stockés en conteneurs blindés pour **décroissance** (la période de 8,02 j de l'¹³¹I impose un stockage prolongé) [3][29].\n\n**EPI et hygiène radiologique :**\n\n| Mesure | Objectif | Note |\n|---|---|---|\n| **Gants** (souvent doublés) | Barrière cutanée + remplacement immédiat si souillure | [29] |\n| **Blouse / surblouse, surchaussures** | Limiter la contamination vestimentaire | [29] |\n| **Cache-thyroïde** | Protéger la thyroïde de l'opérateur (¹³¹I) | [3] |\n| **Pas de boire/manger/maquillage** en zone | Prévenir la contamination interne par ingestion | [13] |\n| **Contrôle de contamination** (mains, surfaces, sol) avant ET après manipulation | Détecter et confiner précocement | [29][26] |\n\n**Conduite en cas de contamination.** Délimiter et baliser, retirer les EPI souillés, **décontaminer la peau** (lavage doux à l'eau tiède et savon, du moins vers le plus contaminé, sans abraser), contrôler au contaminamètre, et tracer l'incident. En cas de plaie contaminée, rincer abondamment et alerter la personne compétente en radioprotection (PCR) [29].\n\n**Surveillance de l'exposition interne.** Au-delà de la dosimétrie externe (passive + opérationnelle, cf. zonage et catégories A/B), une **surveillance interne** (anthroporadiamétrie, analyses radiotoxicologiques) est déclenchée lorsque la **dose efficace engagée annuelle est susceptible d'atteindre ≥ 1 mSv** [13]. Les résultats alimentent le suivi dosimétrique national (**SISERI** en France) [26]. Cette surveillance est particulièrement pertinente pour les manipulateurs d'¹³¹I (volatilité) et lors de tout incident de contamination.",
+        "stats": [
+          {
+            "value": "≈ 1 µSv/h",
+            "label": "Ambiance acceptable en zone occupée [4]"
+          },
+          {
+            "value": "≥ 1 mSv",
+            "label": "Seuil de surveillance interne (dose engagée/an) [13]"
+          },
+          {
+            "value": "8,02 j",
+            "label": "Période ¹³¹I → stockage déchets prolongé [2]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1. Confiner",
+            "text": "Préparer derrière enceinte blindée ventilée ; hotte à dépression obligatoire pour l'¹³¹I volatil ; protège-flacon/seringue tungstène, plateaux à rebord, absorbant [4][29]."
+          },
+          {
+            "title": "2. Se protéger (EPI)",
+            "text": "Gants (souvent doublés), blouse/surblouse, surchaussures, cache-thyroïde pour l'¹³¹I ; aucun aliment, boisson ni maquillage en zone [29][13]."
+          },
+          {
+            "title": "3. Contrôler",
+            "text": "Mesurer la contamination des mains, surfaces et sol AVANT et APRÈS chaque manipulation (contaminamètre) [29][26]."
+          },
+          {
+            "title": "4. Réagir si contamination",
+            "text": "Baliser, retirer les EPI souillés, décontaminer la peau (eau tiède + savon, du moins vers le plus actif), recontrôler, tracer ; alerter la PCR si plaie [29]."
+          },
+          {
+            "title": "5. Surveiller l'interne",
+            "text": "Déclencher anthroporadiamétrie / radiotoxicologie si dose efficace engagée annuelle ≥ 1 mSv ; transmission au suivi national (SISERI) [13][26]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — l'¹³¹I est volatil",
+            "text": "Contrairement au ⁹⁹ᵐTc ou au ¹⁸F, l'**iode 131 sous forme d'iodure peut se volatiliser** : sa manipulation hors hotte à dépression expose à une **contamination interne thyroïdienne par inhalation**. D'où l'enceinte ventilée obligatoire, le cache-thyroïde, et un blocage/contrôle thyroïdien du personnel selon la procédure du service. C'est le risque interne le plus fréquemment sous-estimé en médecine nucléaire."
+          },
+          {
+            "type": "info",
+            "title": "Externe vs interne : deux logiques",
+            "text": "Le temps-distance-écran réduit l'exposition **externe** (la source reste en dehors du corps). La contamination introduit une logique différente : empêcher le radionucléide d'**entrer en contact ou de pénétrer** dans l'organisme. Les deux dispositifs sont complémentaires et indissociables — un protège-seringue parfait ne protège pas d'une seringue qui fuit sur un gant percé."
+          }
+        ]
+      },
+      {
+        "title": "C1 - Le zonage réglementaire : délimiter et signaler les zones à risque",
+        "text": "Le **zonage** traduit physiquement le principe de **limitation de dose** : on segmente l'espace de travail selon le débit de dose et la dose intégrée prévisible, puis on adapte signalisation, accès et surveillance. C'est le socle organisationnel sur lequel se greffent dosimétrie (§C2) et classement des travailleurs (§C3). En médecine nucléaire, la difficulté propre est qu'**après injection le patient devient lui-même une source mobile** de débit instantané de l'ordre du **mSv/h au contact** [9][18], ce qui impose un zonage dynamique (salles d'attente « chaudes », circuits dédiés) en plus du zonage fixe du radiopharmacie/hot lab.\n\n**Deux niveaux réglementaires (France) — la dose efficace susceptible d'être reçue :**\n\n| Zone | Critère (dose efficace intégrée) | Signalisation | Conséquence |\n|---|---|---|---|\n| **Zone surveillée** | susceptible **> 1 mSv/an** (et < seuils zone contrôlée) | trèfle gris-bleu | dosimétrie passive obligatoire [9][15] |\n| **Zone contrôlée** | susceptible **≥ 6 mSv/an** | trèfle réglementaire | dosimétrie passive **+ opérationnelle**, accès restreint [9][18] |\n\nLe seuil de **6 mSv/an** qui ouvre la zone contrôlée est précisément celui qui définit le travailleur de **catégorie A** (cf. §C3) : zonage et classement sont indexés sur la même valeur [15][19].\n\n**Sous-zonage couleur de la zone contrôlée (arrêté zonage) — gradué sur le débit ou la dose intégrée :**\n\n| Sous-zone | Seuil | Logique |\n|---|---|---|\n| **Bleue** (zone surveillée) | < **1,25 mSv/mois** | exposition faible et continue [18] |\n| **Verte** | < **4 mSv/mois** (dose intégrée) | accès réglementé [18] |\n| **Jaune** | < **2 mSv/h** (débit) | manipulation directe des sources [18] |\n| **Orange** | < **100 mSv/h** | postes à fort débit [18] |\n| **Rouge** | ≥ **100 mSv/h** | accès interdit hors intervention [18] |\n\nLe passage du critère **mensuel** (vert/bleu) au critère **horaire** (jaune/orange/rouge) reflète le changement de logique : on raisonne en dose intégrée tant que l'exposition est diffuse, puis en débit instantané dès qu'un poste expose ponctuellement et fortement (préparation FDG, manipulation d'¹³¹I).\n\n**Balisage des extrémités.** Un **balisage trisectoriel gris** signale spécifiquement une zone exposant les mains à plus de **4 mSv·mois⁻¹·individu⁻¹** ; le port d'un **dosimètre opérationnel d'extrémités y est obligatoire depuis 2023** [9]. Cette signalétique dédiée matérialise le fait que, en TEP, l'organe le plus contraint n'est pas le tronc mais les **doigts du radiopharmacien** (cf. §C2).",
+        "stats": [
+          {
+            "value": "1 mSv/an",
+            "label": "seuil zone surveillée (dose efficace susceptible)"
+          },
+          {
+            "value": "6 mSv/an",
+            "label": "seuil zone contrôlée (= catégorie A)"
+          },
+          {
+            "value": "100 mSv/h",
+            "label": "seuil de la sous-zone rouge (débit)"
+          },
+          {
+            "value": "4 mSv/mois",
+            "label": "seuil du balisage trisectoriel extrémités"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Évaluer le risque",
+            "text": "Cartographier débits de dose et doses intégrées prévisibles par poste (hot lab, salle d'injection, postes d'imagerie, salle d'attente chaude), traceur par traceur — le ¹⁸F (511 keV) et l'¹³¹I dimensionnent le pire cas [9][14]."
+          },
+          {
+            "title": "2 · Délimiter & classer",
+            "text": "Affecter chaque local à une zone : surveillée (> 1 mSv/an) ou contrôlée (≥ 6 mSv/an), puis appliquer le sous-zonage couleur (bleu/vert/jaune/orange/rouge) selon dose intégrée ou débit [9][18]."
+          },
+          {
+            "title": "3 · Signaler & restreindre l'accès",
+            "text": "Apposer trèfle et codes couleur, contrôler l'accès (badge, sas), baliser en gris les zones d'exposition des mains (> 4 mSv/mois) [9][18]."
+          },
+          {
+            "title": "4 · Intégrer la source mobile",
+            "text": "Gérer le patient injecté comme une source : circuit dédié, salle d'attente chaude, distance personnel/patient (débit de l'ordre du mSv/h au contact ; ~50 µSv/h à 1 m d'un patient FDG) [9][16]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le patient injecté n'est pas dans le zonage fixe",
+            "text": "Le zonage des locaux ne couvre pas la **source mobile** qu'est le patient. Après FDG, le débit atteint **~50 µSv/h à 1 m** (~2 h après 550 MBq) et redescend à une médiane de **2 µSv/h à 2 m** (1 h après 370 MBq) [16]. La maîtrise repose donc sur la **distance** et l'organisation des flux, pas sur le blindage fixe — c'est le levier ALARA le plus efficace (loi en 1/d²) [4]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi 6 mSv/an et pas 20",
+            "text": "Le seuil de zone contrôlée (et de catégorie A) est fixé à **6 mSv/an**, soit **3/10 de la limite efficace de 20 mSv/an** [15][19]. Ce facteur 3/10 est une marge de sécurité réglementaire : on déclenche surveillance renforcée et restriction d'accès bien avant d'approcher la limite individuelle, conformément à l'optimisation ALARA."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Schéma des trois leviers ALARA — temps, distance, écran — appliqués au zonage : réduction de la dose par éloignement de la source (loi en 1/d²) et interposition de blindage.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran : la grille de lecture du zonage. Plus le débit local est élevé, plus la zone est restreinte (jaune→rouge) et plus distance et blindage deviennent contraignants."
+      },
+      {
+        "title": "C2 - La dosimétrie individuelle : surveiller l'exposition réelle du travailleur",
+        "text": "Le zonage prédit l'exposition ; la **dosimétrie individuelle la mesure** sur chaque travailleur, vérifie a posteriori que l'optimisation ALARA tient ses promesses, et conditionne le suivi médical (§C3). Elle se décline en **trois grandeurs opérationnelles** — Hp(10) corps entier, Hp(0,07) extrémités/peau, Hp(3) cristallin — chacune mesurée par un dosimètre adapté au site exposé.\n\n**Les types de dosimètres :**\n\n| Dosimètre | Grandeur | Site / port | Lecture | Obligation |\n|---|---|---|---|---|\n| **Passif** (TLD/OSL) | Hp(10) corps entier | poitrine | différée (mensuelle cat. A / trimestrielle) | zone surveillée **et** contrôlée [9][25] |\n| **Opérationnel** | Hp(10) corps entier | poitrine | **temps réel + alarme** | zone **contrôlée** [9][25] |\n| **Bague / poignet** | Hp(0,07) extrémités | phalange proximale de l'index, main non dominante | différée | postes de manipulation [8][11] |\n| **Cristallin** | Hp(3) | proche de l'œil | différée | postes à forte exposition tête [3][24] |\n\nLa dosimétrie passive est **transmise au système national SISERI** (France) et constitue le dossier dosimétrique réglementaire du travailleur [26].\n\n**Pourquoi les extrémités sont le point critique en TEP.** La hiérarchie du risque occupationnel externe place le ¹⁸F (et le C-11) au sommet, devant Ga-68/Ga-67, puis ¹³¹I, ¹²³I, et enfin Tc-99m loin derrière [4][5]. Mesuré au geste, l'écart est saisissant :\n\n| Tâche | Dose aux doigts | Source |\n|---|---|---|\n| Déballage générateur ⁹⁹Mo/⁹⁹ᵐTc | **0,0012 µGy/MBq** | [9] |\n| Prélèvement + injection + déchets ¹⁸F-FDG | **3,0 µGy/MBq** | [9] |\n\nSoit un facteur **~2500** entre la tâche la plus bénigne et la plus exposante. Le projet **ORAMED** (programme européen FP7/EURATOM, optimisation de la radioprotection du personnel médical) a montré qu'en TEP les **doigts peuvent approcher la limite de 500 mSv/an** sans protection adaptée, alors qu'en Tc-99m on reste largement en deçà [11][12]. Par étude, la dose aux doigts du **radiopharmacien** (265,7 ± 107,6 µSv) écrase celle du manipulateur (4,84 µSv) et de l'IDE (19,2 µSv) [8].\n\n**Doses réellement reçues — l'efficacité d'ALARA bien appliqué.** Le bilan national français 2022 (ASNR/IRSN) situe la dose efficace moyenne du personnel de médecine nucléaire à **0,78 mSv/an**, soit environ **4× la moyenne du personnel médical** — mais **aucun travailleur n'a dépassé 500 mSv/an aux extrémités ni 50 mSv/an au cristallin** [15][37]. La granularité par métier confirme le gradient d'exposition :\n\n| Population | Dose efficace annuelle | Source |\n|---|---|---|\n| Manipulateur (scintigraphie générale) | ~**0,1 mSv/an** | [6] |\n| Manipulateur **TEP** | proche de **6 mSv/an** | [6] |\n| Manip / IDE / physicien / médecin (moy. 4 ans) | 0,72 / 0,94 / 0,51 / 0,16 mSv/an | [6] |\n| Médecine nucléaire (France 2022) | **0,78 mSv/an** | [15][37] |\n\nAu geste, l'injection de FDG délivre **0,61 ± 0,10 µSv/injection** au corps entier du manipulateur (1,58 ± 0,21 nSv/MBq) [16] ; une seringue **non blindée** vs **blindée** d'¹⁸F (370 MBq) fait passer la dose au doigt de **~14 µSv à 7–10,7 µSv** [8] — illustration directe du levier « écran ».",
+        "stats": [
+          {
+            "value": "3,0 µGy/MBq",
+            "label": "dose aux doigts — injection FDG (vs 0,0012 pour Tc-99m)"
+          },
+          {
+            "value": "~6 mSv/an",
+            "label": "dose efficace manipulateur TEP"
+          },
+          {
+            "value": "0,78 mSv/an",
+            "label": "dose efficace moyenne MN — France 2022 (ASNR/IRSN)"
+          },
+          {
+            "value": "265,7 µSv",
+            "label": "dose aux doigts du radiopharmacien par étude"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la bague sous-estime la dose à la phalange distale",
+            "text": "La position recommandée par ORAMED est la **phalange proximale de l'index de la main non dominante** [8][11], mais la **phalange distale (P3) reçoit souvent une dose supérieure** à celle lue sur la bague proximale (P1) lors de la préparation du ¹⁸F-FDG [8][32]. La dose maximale réelle aux mains peut atteindre **≈ 6× la lecture** du dosimètre bague [11] : une bague conforme aux limites ne garantit pas que tous les points de la main le soient."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la dosimétrie cristallin n'est plus optionnelle",
+            "text": "Depuis l'abaissement de la limite cristallin de 150 à **20 mSv/an** (recommandation CIPR 2011, transposée), le suivi Hp(3) est devenu un enjeu pour les opérateurs qui préparent et injectent à hauteur des yeux [3][16][28]. Une mesure fiable du cristallin requiert un dosimètre positionné au plus près de l'œil ; le dosimètre poitrine sous-estime cette exposition spécifique [24]."
+          }
+        ],
+        "figureKey": "GAMMA_CAMERA",
+        "figureAlt": "Schéma d'une gamma-caméra (collimateur, cristal, photomultiplicateurs) — l'instrument au poste duquel le manipulateur est exposé, support de la mesure dosimétrique du personnel.",
+        "figureCaption": "Fig. 2 — Le poste de travail instrumental : la dosimétrie individuelle (Hp(10) tronc, Hp(0,07) doigts, Hp(3) cristallin) quantifie l'exposition réelle à chaque étape du circuit du radiopharmaceutique."
+      },
+      {
+        "title": "C3 - Classement des travailleurs, suivi médical et surveillance dosimétrique",
+        "text": "Le classement clôt la boucle réglementaire : à partir de l'exposition prévisible (zonage, §C1) et mesurée (dosimétrie, §C2), il détermine le **régime de surveillance** — médicale et dosimétrique — de chaque travailleur. Il s'appuie sur le système à trois principes de la CIPR — **justification, optimisation (ALARA), limitation de dose** — formalisé par la **Publication 103 (2007)** et sous-tendu par le modèle de risque **linéaire sans seuil (LNT)** aux faibles doses [1].\n\n**Classement des travailleurs exposés (Directive 2013/59/Euratom, transposée) :**\n\n| Catégorie | Critère | Surveillance |\n|---|---|---|\n| **Catégorie A** | dose efficace susceptible **> 6 mSv/an**, ou > **3/10** des limites cristallin / peau / extrémités | dosimétrie passive **+ opérationnelle**, suivi médical renforcé [15][19] |\n| **Catégorie B** | dose efficace susceptible **≤ 6 mSv/an** | dosimétrie passive, suivi médical standard [15][19] |\n\nLe seuil de **6 mSv/an** est le pivot commun zone contrôlée / catégorie A : franchir ce seuil prévisionnel fait basculer simultanément le local en zone contrôlée et le travailleur en catégorie A [15][19].\n\n**Limites de dose réglementaires — le cadre de la limitation.** Ces valeurs ne sont pas un objectif mais un **plafond infranchissable** ; ALARA impose de rester très en deçà.\n\n| Grandeur | Limite travailleur exposé | Source |\n|---|---|---|\n| **Dose efficace corps entier** | **20 mSv/an**, moyenne sur 5 ans (≤ **100 mSv / 5 ans**), sans dépasser **50 mSv** une année | CIPR 103 [1][2] |\n| **Cristallin** Hp(3) | **20 mSv/an** (moyenne 5 ans, ≤ 50 mSv une année) — abaissé de 150→20 en 2011 | CIPR 2011 [2][3][28] |\n| **Extrémités** (mains/pieds) Hp(0,07) | **500 mSv/an** | CIPR 103 [3][11] |\n| **Peau** (moyenne sur 1 cm²) | **500 mSv/an** | CIPR 103 [3] |\n| **Public** (dose efficace) | **1 mSv/an** | CIPR 103 [1] |\n\nEn France, le Code du travail (**articles R4451-6 à R4451-9**) transpose ces valeurs : corps entier **20 mSv / 12 mois** glissants, extrémités et peau **500 mSv / 12 mois**, et **cristallin 20 mSv / 12 mois** en vigueur depuis le **1ᵉʳ juillet 2023** (régime transitoire antérieur : 100 mSv/5 ans, ≤ 50 mSv/an) [14][16].\n\n**Travailleuse enceinte — la précaution majeure.** Après **déclaration écrite** de la grossesse, les conditions de travail doivent garantir que la **dose à l'enfant à naître ne dépasse pas ~1 mSv** sur la durée restante de gestation [1][21] ; la réglementation française retient **≤ 1 mSv**, à distinguer du standard NRC américain (≤ 5 mSv sur la gestation, ≤ 0,5 mSv/mois) [22]. En pratique : réaffectation ou aménagement de poste dès la déclaration, hors des gestes les plus exposants (préparation/injection ¹⁸F et ¹³¹I).\n\n**Surveillance interne et bilan national.** Une **surveillance interne** est déclenchée si la dose efficace engagée annuelle atteint **≥ 1 mSv** [13]. Le suivi dosimétrique passif est centralisé dans **SISERI** [26]. Le bilan 2022 confirme que le dispositif fonctionne : malgré une dose moyenne de **0,78 mSv/an** (4× le personnel médical), **aucun dépassement** des limites extrémités (500 mSv/an) ou cristallin (50 mSv/an une année) n'a été observé en médecine nucléaire [15][37].",
+        "stats": [
+          {
+            "value": "20 mSv/an",
+            "label": "limite dose efficace (corps entier ET cristallin)"
+          },
+          {
+            "value": "500 mSv/an",
+            "label": "limite extrémités et peau"
+          },
+          {
+            "value": "≤ 1 mSv",
+            "label": "dose fœtale max après grossesse déclarée (France)"
+          },
+          {
+            "value": "1 mSv/an",
+            "label": "limite public (dose efficace)"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Évaluer & classer",
+            "text": "À partir de l'exposition prévisible, classer le travailleur en catégorie A (> 6 mSv/an ou > 3/10 d'une limite d'organe) ou B (≤ 6 mSv/an) [15][19]."
+          },
+          {
+            "title": "2 · Équiper en dosimétrie adaptée",
+            "text": "Cat. A : dosimétrie passive Hp(10) + opérationnelle + extrémités Hp(0,07) ± cristallin Hp(3) ; cat. B : dosimétrie passive [9][25]."
+          },
+          {
+            "title": "3 · Suivre médicalement & tracer",
+            "text": "Suivi médical (renforcé pour la cat. A), transmission des doses passives à SISERI, déclenchement d'une surveillance interne si dose engagée ≥ 1 mSv/an [13][26]."
+          },
+          {
+            "title": "4 · Adapter au terrain particulier",
+            "text": "Grossesse déclarée : aménagement/réaffectation pour rester ≤ ~1 mSv fœtal ; vérifier que doses extrémités et cristallin restent sous les plafonds annuels [1][21][14]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — la déclaration de grossesse conditionne tout",
+            "text": "La protection renforcée de l'embryon/fœtus (≤ ~1 mSv sur la gestation restante) ne s'active qu'après **déclaration écrite** de la grossesse par la travailleuse [1][21]. Tant que la grossesse n'est pas déclarée, c'est le régime général (20 mSv/an) qui s'applique : informer systématiquement les travailleuses de l'intérêt d'une déclaration précoce fait partie de la démarche ALARA. Attention à ne pas confondre le standard CIPR/français (≤ 1 mSv) avec la règle NRC américaine (≤ 5 mSv / ≤ 0,5 mSv/mois) [22]."
+          },
+          {
+            "type": "info",
+            "title": "Repère terrain",
+            "text": "Un débit ambiant de **0,5 µSv/h** sur une année de travail (2000 h) cumule **≈ 1 mSv/an** [13] — soit le seuil de la zone surveillée et de la dose au public. C'est le niveau d'action mental commode : au-delà de 0,5 µSv/h en zone occupée en continu, on franchit le premier seuil réglementaire et l'optimisation s'impose. Le niveau d'ambiance acceptable en zone occupée est de l'ordre de **~1 µSv/h** (réf. AERB) [4]."
+          }
+        ]
+      },
+      {
+        "title": "D1 - Exposition à chaque étape du parcours : radiopharmacie, injection, attente, acquisition",
+        "text": "La dose intégrée par l'opérateur dépend du **produit dose × temps**, modulé par la **distance (1/d²)** et le **blindage (atténuation exponentielle)** — les trois leviers ALARA appliqués poste par poste [13][5]. Le risque n'est pas uniforme : il se concentre aux **extrémités (mains)** au contact de la seringue et dépend fortement du radionucléide, le **¹⁸F (511 keV)** étant le plus contraignant [12][14].\n\n**Hiérarchie du risque occupationnel externe** : F-18 et C-11 > Ga-68/Ga-67 > I-131 > I-123 > Tc-99m [4][5]. Pour les émetteurs 511 keV, la TEP exige une épaisseur de plomb/tungstène **> 12 fois** supérieure à celle des 140 keV du Tc-99m : le blindage classique du Tc-99m est inadapté en TEP [14]. Les couches de demi-atténuation (CDA / HVL) et de dixième-atténuation (CDX / TVL) dans le plomb (TVL ≈ **3,32 × HVL** pour un faisceau monoénergétique [8]) chiffrent ce besoin :\n\n| Radionucléide | Énergie γ principale | HVL plomb | TVL plomb | Constante Γ (R·mCi⁻¹·h⁻¹ à 1 cm) |\n|---|---|---|---|---|\n| **Tc-99m** | 140 keV (89 %) | **0,243 mm** | 0,870 mm | **0,795** |\n| **Lu-177** | 113/208 keV | 0,511 mm | 1,99 mm | **0,181** |\n| **I-131** | 364 keV (81 %) | **2,48 mm** | 10,5 mm | **2,2** |\n| **F-18** | 511 keV (annihilation) | **4,75 mm** | 15,4 mm | **5,7** |\n\n[2][5]\n\n**▸ Étape 1 — Radiopharmacie / hot lab.** Manipulation des sources non scellées derrière enceinte blindée (hotte ventilée si volatil, ex. I-131), protège-flacon et protège-seringue en **tungstène**, pinces longues, contrôle de contamination des surfaces et des mains [4]. C'est l'étape la plus exposante aux **doigts** : de **0,0012 µGy/MBq** (déballage d'un générateur ⁹⁹Mo/⁹⁹ᵐTc) à **3,0 µGy/MBq** (prélèvement seringue + injection + gestion des déchets ¹⁸F-FDG) [9][12]. Par étude, la dose aux doigts du **radiopharmacien atteint 265,7 ± 107,6 µSv**, très au-dessus du manipulateur (4,84 µSv) ou de l'IDE (19,2 µSv) [8]. Niveau d'ambiance acceptable en zone occupée : **~1 µSv/h** [4]. Le **protège-seringue tungstène** (5 mm minimum pour le ¹⁸F selon ORAMED ; ~8,6 mm / 0,34″) atténue le FDG de **88 %** et réduit la dose aux mains de **80–99 %** pour le ¹⁸F [14][12].\n\n**▸ Étape 2 — Injection.** Au point d'injection, l'ajout d'un blindage **acrylique 15 mm + 50 mm de plomb** ramène l'exposition corps entier de **0,014 → 0,0014 mSv/MBq** (facteur 10) [14]. Dose corps entier du manipulateur par injection FDG : **0,61 ± 0,10 µSv** (≈ 1,58 nSv/MBq, ordre de grandeur usuel 20–25 nSv/MBq de ¹⁸F) [16]. Sur une seringue ¹⁸F de 370 MBq, le doigt reçoit **~14 µSv non blindé** contre **7–10,7 µSv blindé** [8]. Hiérarchie des moyens : protection **collective** (postes blindés, injecteurs automatiques FDG) > EPI (le **tablier de plomb est peu utile à 511 keV**) > organisation temps/distance [14].\n\n**▸ Étape 3 — Attente (patient = source mobile).** Après injection, le patient devient une **source** : débits de l'ordre du **mSv/h au contact** [9]. Pour le ¹⁸F-FDG : **~50 µSv/h à 1 m** ~2 h après 550 MBq, et médiane **2 µSv/h à 2 m** 1 h après 370 MBq [16]. D'où la **salle d'attente chaude dédiée**, la gestion de la distance personnel/patient et la limitation du temps de contact [16][9].\n\n**▸ Étape 4 — Acquisition.** Positionnement au plus proche : minimiser le temps au contact, optimiser les flux, utiliser la distance pendant l'acquisition elle-même. Le tablier de plomb conserve une efficacité mesurable sur les basses énergies — réduction de dose **62–68 % pour le Tc-99m** (thyroïde 64 %, tronc 68 %, gonades 62 %) mais seulement **28–49 % pour l'I-131** et **20–33 % pour le Kr-81m** [3]. Bilan réel : aucun travailleur de médecine nucléaire (France 2022) n'a dépassé **500 mSv/an aux extrémités** ni **50 mSv/an au cristallin**, la dose efficace moyenne du personnel s'établissant à **0,78 mSv/an** [37][15].",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers ALARA — temps, distance (loi en 1/d²), écran (atténuation exponentielle) — appliqués au parcours radiopharmacie → injection → attente → acquisition.",
+        "figureCaption": "Fig. 1 — Temps / distance / écran : structurent la protection à chaque poste du parcours.",
+        "stats": [
+          {
+            "value": "3,0 µGy/MBq",
+            "label": "Dose aux doigts (prélèvement/injection ¹⁸F-FDG) [9]"
+          },
+          {
+            "value": "88 %",
+            "label": "Atténuation du FDG par protège-seringue tungstène [14]"
+          },
+          {
+            "value": "~50 µSv/h",
+            "label": "Débit à 1 m du patient FDG (≈2 h post-injection) [16]"
+          },
+          {
+            "value": "0,78 mSv/an",
+            "label": "Dose efficace moyenne du personnel MN (France 2022) [15]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — le tablier de plomb à 511 keV",
+            "text": "Le tablier de plomb est un réflexe efficace pour le Tc-99m (réduction **62–68 %**) mais devient **quasi inutile face aux 511 keV du ¹⁸F** et peu efficace sur l'I-131 (28–49 %) [3]. À haute énergie, la vraie protection est **collective** (postes blindés, injecteurs automatiques) et **organisationnelle** (distance, temps), pas l'EPI [14]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la distance, levier le plus rentable",
+            "text": "Le débit de dose décroît en **1/d²** : doubler la distance divise la dose par **4**, sans aucun coût ni encombrement [13][5]. Pinces longues, télémanipulateurs et simple recul d'un pas surpassent souvent un blindage ajouté. C'est aussi le levier clé pour gérer le **patient-source** en attente (50 µSv/h à 1 m vs 2 µSv/h à 2 m pour le FDG) [16]."
+          },
+          {
+            "type": "info",
+            "title": "Repère terrain",
+            "text": "**0,5 µSv/h sur une année de travail (2000 h) ≈ 1 mSv/an** — valeur souvent retenue comme niveau d'action [13]. La surveillance interne est déclenchée si la dose efficace engagée annuelle atteint **≥ 1 mSv** [13]."
+          }
+        ]
+      },
+      {
+        "title": "D2 - Le cas particulier de la théranostique et des fortes activités (I-131, 177Lu, 90Y, 223Ra)",
+        "text": "La radiothérapie interne vectorisée (RIV) manipule des **activités thérapeutiques** (GBq) très supérieures aux activités diagnostiques (MBq), et engage des émetteurs **β⁻** (I-131, ¹⁷⁷Lu, ⁹⁰Y) ou **α** (²²³Ra). Le profil de risque change : à l'irradiation externe γ s'ajoutent le **rayonnement de freinage (bremsstrahlung)** des β de haute énergie, le **risque de contamination interne** (sources non scellées, I-131 volatil) et une **gestion prolongée des déchets** liée aux périodes longues [3][4].\n\n**Profil par radionucléide thérapeutique :**\n\n| Radionucléide | Émission | Période physique | Énergie γ exploitée | Enjeu radioprotection dominant |\n|---|---|---|---|---|\n| **I-131** | β⁻ + γ **364 keV** (81 %) | **8,02 j** | imagerie/contamination | γ pénétrant + **iode volatil** (thyroïde de l'opérateur), déchets longs [2] |\n| **¹⁷⁷Lu** | β⁻ + γ 113/208 keV | **6,65 j** | imagerie post-thérapie | γ faible (HVL Pb **0,511 mm**), reins/moelle = organes critiques patient [2] |\n| **⁹⁰Y** | β⁻ pur (≈2,3 MeV) | 64 h | aucun γ direct | **bremsstrahlung** (blindage acrylique avant plomb) |\n| **²²³Ra** | α + faible γ | 11,4 j | minime | contamination (α non pénétrant mais radiotoxique interne) |\n\n[2]\n\n**▸ I-131 (iode thérapeutique).** Émetteur γ **364 keV** pénétrant : constante Γ **2,2 R·mCi⁻¹·h⁻¹ à 1 cm**, HVL plomb **2,48 mm** [2][5]. C'est le radionucléide qui délivre la **dose annuelle aux doigts la plus élevée** parmi les radiopharmaceutiques (**15,8 mGy/an** sur les extrémités) [3]. La forme volatile impose une **hotte ventilée** et un **cache-thyroïde** lors des manipulations [3]. Le **tablier de plomb n'atténue l'I-131 que de 28–49 %** (haute énergie) [3]. Un collimateur/blindage **haute énergie** est requis pour toute imagerie post-thérapeutique.\n\n**▸ ¹⁷⁷Lu (DOTATATE, PSMA).** β⁻ pour l'effet thérapeutique, accompagné de γ de **basse énergie (113/208 keV, faible abondance)** permettant l'imagerie post-thérapie ; HVL plomb **0,511 mm**, constante Γ **0,181** — le plus faible débit externe des quatre [2][5]. La radioprotection se concentre sur la **contamination** (urines du patient, élimination rénale) plus que sur l'irradiation externe.\n\n**▸ ⁹⁰Y (SIRT/radioembolisation, microsphères).** β⁻ **pur** : pas d'irradiation γ directe, mais le freinage des électrons de **~2,3 MeV** génère un **bremsstrahlung** pénétrant → blinder d'abord avec un matériau **léger (acrylique/plexiglas)** pour stopper les β, puis le plomb pour le rayonnement de freinage résiduel.\n\n**▸ ²²³Ra (dichlorure, métastases osseuses).** Émetteur **α** : trajet tissulaire micrométrique, irradiation externe quasi nulle, mais **radiotoxicité interne majeure** en cas d'ingestion/inhalation → priorité absolue au **confinement et au contrôle de contamination**.\n\n**Conséquences organisationnelles des fortes activités.** Le **patient traité devient lui-même une source** soumise à des consignes post-thérapeutiques (hydratation, mictions fréquentes, distance vis-à-vis des enfants et femmes enceintes, parfois hospitalisation en chambre radioprotégée pour l'I-131). Les **effluents et déchets** doivent décroître en stockage : la période de **8,02 j de l'I-131** impose un stockage prolongé avant élimination [2]. La traçabilité (dosimétrie, contrôles de contamination de sortie de chambre) suit la procédure du service.",
+        "figureKey": "THERANOSTIC_LOOP",
+        "figureAlt": "Boucle théranostique imager → traiter → réévaluer : l'imagerie diagnostique (MBq) sélectionne le patient, la thérapie (GBq) délivre la dose, avec un profil de radioprotection spécifique à chaque radionucléide.",
+        "figureCaption": "Fig. 2 — De l'imagerie (MBq) à la thérapie (GBq) : le saut d'activité impose des moyens de radioprotection dédiés.",
+        "stats": [
+          {
+            "value": "15,8 mGy/an",
+            "label": "Dose aux doigts en I-131 (la plus élevée) [3]"
+          },
+          {
+            "value": "2,48 mm",
+            "label": "HVL plomb de l'I-131 (364 keV) [2]"
+          },
+          {
+            "value": "8,02 j",
+            "label": "Période de l'I-131 → stockage prolongé des déchets [2]"
+          },
+          {
+            "value": "28–49 %",
+            "label": "Atténuation de l'I-131 par tablier de plomb [3]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — ⁹⁰Y et le bremsstrahlung",
+            "text": "Pour un émetteur **β⁻ pur** comme le ⁹⁰Y, blinder directement avec du plomb est contre-productif : les électrons de haute énergie (~2,3 MeV) y génèrent un **rayonnement de freinage (bremsstrahlung)** pénétrant. Il faut interposer **d'abord un matériau de faible numéro atomique** (acrylique/plexiglas) pour stopper les β, puis éventuellement du plomb pour le freinage résiduel."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — chaque émetteur a sa radioprotection",
+            "text": "Le bon réflexe dépend de la **nature du rayonnement** : I-131 = γ pénétrant + iode volatil (plomb, hotte, cache-thyroïde) ; ¹⁷⁷Lu = γ faible, risque surtout de **contamination** ; ⁹⁰Y = bremsstrahlung (acrylique puis plomb) ; ²²³Ra = α, risque purement de **contamination interne** (confinement). Appliquer aveuglément le blindage du Tc-99m est une erreur de raisonnement [2][3]."
+          },
+          {
+            "type": "info",
+            "title": "Le patient traité, source réglementée",
+            "text": "Après RIV, le patient est lui-même une source soumise à des **consignes post-thérapeutiques** (distance enfants/femmes enceintes, mictions fréquentes) — fondement de la fiche patient. Les **déchets** décroissent en stockage : 8 j de période pour l'I-131 imposent un délai prolongé avant élimination [2]."
+          }
+        ]
+      },
+      {
+        "title": "D3 - Conduite à tenir en cas d'incident : contamination, blessure, déversement",
+        "text": "En médecine nucléaire, les sources **non scellées** exposent à des **incidents de contamination** (cutanée, des surfaces, de l'environnement) que ne connaît pas l'imagerie conventionnelle. La conduite repose sur un principe ALARA appliqué à l'urgence : **confiner, décontaminer, mesurer, tracer** — limiter l'extension et l'incorporation tout en documentant la dose [4][13]. Toute conduite ci-dessous s'applique **selon la procédure écrite du service** et sous la coordination de la **personne compétente en radioprotection (PCR)**.\n\n**▸ Déversement / contamination de surface.** Priorité au **confinement** : baliser, limiter la circulation, éviter l'extension par les pieds/les mains. Décontaminer du périphérique vers le centre, avec des moyens absorbants, en répétant **mesure → nettoyage → mesure** jusqu'au retour au bruit de fond. Les déchets de décontamination partent en **conteneurs blindés** pour décroissance [4]. La contamination atmosphérique (I-131 volatil) relève de la hotte ventilée et du contrôle d'ambiance [3].\n\n**▸ Contamination cutanée (mains, peau).** La **peau** est limitée à **500 mSv/an** (moyennée sur 1 cm²), les **extrémités** à **500 mSv/an** également [1][3] : une contamination cutanée doit être traitée sans délai. Lavage doux à l'eau tiède et savon, sans agresser la barrière cutanée (pas de brossage abrasif qui favorise le passage transcutané), contrôle au contaminamètre après chaque rinçage.\n\n**▸ Blessure (plaie contaminée).** Risque d'**incorporation directe** dans la circulation → faire **saigner** la plaie sous eau courante, ne pas refermer prématurément, mesurer, et déclencher une évaluation de **dose interne**. La surveillance interne est requise dès que la **dose efficace engagée annuelle ≥ 1 mSv** [13].\n\n**Étapes immédiates (mémo) :**\n\n| Étape | Action | Repère sourcé |\n|---|---|---|\n| 1 | Protéger les personnes, **confiner** la zone, alerter la PCR | procédure service [4] |\n| 2 | **Décontaminer** (peau/plaie : eau tiède, faire saigner une plaie) | extrémités/peau limite **500 mSv/an** [1][3] |\n| 3 | **Mesurer** au contaminamètre jusqu'au bruit de fond | ambiance acceptable **~1 µSv/h** [4] |\n| 4 | **Évaluer la dose interne** si suspicion d'incorporation | seuil surveillance interne **≥ 1 mSv** engagé/an [13] |\n| 5 | **Tracer** : dosimétrie, déclaration, transmission **SISERI** | suivi national des travailleurs [26] |\n\n**▸ Dépassement / dose anormale.** En cas de lecture dosimétrique anormale, rapporter à la **dose efficace 20 mSv/an** (≤ 100 mSv/5 ans, sans dépasser 50 mSv une année) et aux limites d'organe : **cristallin 20 mSv/an**, **peau et extrémités 500 mSv/an** ; public **1 mSv/an** [1][14]. La dosimétrie **opérationnelle** (temps réel, à seuils d'alarme) en zone contrôlée permet la détection immédiate, complétée par la dosimétrie **passive** (TLD/OSL, lecture mensuelle pour la catégorie A) transmise à **SISERI** [25][26].\n\n**▸ Cas de la travailleuse enceinte.** Tout incident concernant une travailleuse ayant **déclaré sa grossesse** est géré avec un objectif renforcé : dose additionnelle à l'embryon/fœtus **≤ ~1 mSv** sur la durée restante de gestation (standard CIPR), à distinguer de la règle US/NRC de **5 mSv sur la gestation / ≤ 0,5 mSv/mois** [1][11][22]. Cela justifie la **réaffectation** hors gestes les plus exposants dès la déclaration.\n\n**▸ Traçabilité et réglementaire.** Tout incident est consigné et déclaré selon le **zonage** (zone surveillée > 1 mSv/an, zone contrôlée ≥ 6 mSv/an avec sous-zonage couleur : bleue < 1,25 mSv/mois, verte < 4 mSv/mois, jaune < 2 mSv/h, orange < 100 mSv/h, rouge ≥ 100 mSv/h) [9][17][18] et le classement du travailleur (**catégorie A > 6 mSv/an** → dosimétrie passive obligatoire) [19][15].",
+        "figureKey": "BULLSEYE_17",
+        "figureAlt": "Zonage radiologique concentrique — zone surveillée puis zone contrôlée avec sous-zonage couleur (bleue, verte, jaune, orange, rouge) selon le débit de dose intégré.",
+        "figureCaption": "Fig. 3 — Zonage et sous-zonage couleur : cadre réglementaire de référence pour situer et déclarer un incident.",
+        "steps": [
+          {
+            "title": "1 · Sécuriser & confiner",
+            "text": "Protéger les personnes, baliser et limiter la circulation, alerter la PCR. Éviter l'extension de la contamination (pieds, mains, surfaces) [4]."
+          },
+          {
+            "title": "2 · Décontaminer",
+            "text": "Surface : du périphérique vers le centre, mesure→nettoyage→mesure. Peau : eau tiède + savon doux, sans abrasion. Plaie : faire saigner sous eau courante, ne pas refermer [4]."
+          },
+          {
+            "title": "3 · Mesurer",
+            "text": "Contrôle au contaminamètre jusqu'au retour au bruit de fond (ambiance acceptable ~1 µSv/h) ; dosimétrie opérationnelle à seuils d'alarme en zone contrôlée [4][9]."
+          },
+          {
+            "title": "4 · Évaluer la dose interne",
+            "text": "Si suspicion d'incorporation (plaie, inhalation I-131), déclencher la surveillance interne — requise dès dose efficace engagée annuelle ≥ 1 mSv [13]."
+          },
+          {
+            "title": "5 · Tracer & déclarer",
+            "text": "Consigner l'incident, transmettre la dosimétrie au système national SISERI, déclaration réglementaire selon zonage et catégorie du travailleur [26][25]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "500 mSv/an",
+            "label": "Limite peau & extrémités (Hp(0,07)) [1][3]"
+          },
+          {
+            "value": "20 mSv/an",
+            "label": "Limite dose efficace & cristallin (travailleur) [1][14]"
+          },
+          {
+            "value": "≥ 1 mSv",
+            "label": "Seuil de surveillance interne (dose engagée/an) [13]"
+          },
+          {
+            "value": "≤ ~1 mSv",
+            "label": "Dose fœtale après grossesse déclarée (CIPR) [1][11]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — plaie contaminée",
+            "text": "Une effraction cutanée court-circuite la barrière protectrice et permet l'**incorporation directe**. Réflexe inverse de l'hémostase habituelle : **faire saigner** la plaie sous eau courante, ne pas la refermer prématurément, puis évaluer la dose interne. Ne jamais minimiser une coupure survenue en manipulant une source [13]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — dosimétrie double = détection précoce",
+            "text": "L'association **dosimétrie opérationnelle** (temps réel, alarmes, zone contrôlée) + **dosimétrie passive** (TLD/OSL, intégrée, transmise à SISERI) permet de **détecter immédiatement** un incident et de le **documenter rétrospectivement** [25][26]. La bague d'extrémités (Hp(0,07), base de l'index non dominant per ORAMED) complète, sachant que la dose réelle au bout du doigt peut dépasser la lecture [9][32]."
+          },
+          {
+            "type": "info",
+            "title": "Référentiels et seuils de déclaration",
+            "text": "Situer tout incident dans le **zonage** (surveillée > 1 mSv/an ; contrôlée ≥ 6 mSv/an, sous-zonage couleur) et le **classement** (catégorie A > 6 mSv/an) conditionne la déclaration réglementaire et le suivi [9][17][19]. La grossesse déclarée déclenche une réaffectation pour rester ≤ ~1 mSv fœtal [1][11]."
+          }
+        ]
+      },
+      {
+        "title": "E1 - Cadre réglementaire, organisation et culture de radioprotection",
+        "text": "**ALARA** (*As Low As Reasonably Achievable*) est l'expression opérationnelle du **principe d'optimisation** de la Commission Internationale de Protection Radiologique (**CIPR**). Le système de protection repose sur trois piliers indissociables — **justification, optimisation (ALARA), limitation de dose** — formalisés par la **CIPR Publication 103 (2007)** et sous-tendus par le modèle de risque **linéaire sans seuil (LNT)** pour les effets stochastiques aux faibles doses [1][7]. Ces principes se déclinent en trois leviers physiques externes — **temps, distance, écran** — directement issus de la physique de l'exposition : la dose intégrée est proportionnelle au temps, le débit décroît en **1/d²** (loi de l'inverse du carré : doubler la distance divise le débit par **4**), et l'écran atténue exponentiellement le flux photonique [4][5][13].\n\n**Limites de dose réglementaires (travailleur exposé).** Le tableau ci-dessous synthétise les valeurs CIPR 103/118, transposées en droit français par le Code du travail (articles R4451-6 à R4451-9), eux-mêmes issus de la Directive 2013/59/Euratom.\n\n| Grandeur | Limite travailleur exposé | Source |\n|---|---|---|\n| **Dose efficace** (corps entier) | **20 mSv/an**, moyennés sur 5 ans (≤ **100 mSv / 5 ans**), sans dépasser **50 mSv** une année | [1][14] |\n| **Cristallin** Hp(3) | **20 mSv/an** (abaissé de 150 → 20 mSv en **2011**), en vigueur en France au **1er juillet 2023** | [1][16][28] |\n| **Peau** (moyenne 1 cm²) | **500 mSv/an** | [1][14] |\n| **Extrémités** (mains/pieds) Hp(0,07) | **500 mSv/an** | [1][14] |\n| **Public** (dose efficace) | **1 mSv/an** | [1] |\n| **Fœtus** (grossesse déclarée) | **≤ 1 mSv** sur la gestation restante (réf. US/NRC : ≤ 0,5 mSv/mois, 5 mSv/gestation) | [1][21][22] |\n\nRepère terrain : **0,5 µSv/h** sur une année de travail (2000 h) équivaut à **≈ 1 mSv/an**, niveau d'action souvent retenu [13]. L'abaissement de la limite cristallin (de 150 à 20 mSv/an) impose un suivi spécifique Hp(3) pour les postes à forte exposition tête, notamment les radiopharmaciens préparant/injectant [16][24][28].\n\n**Classement des travailleurs (Directive 2013/59 / IRR17).** **Catégorie A** : dose efficace susceptible de dépasser **6 mSv/an** (ou 3/10 des limites cristallin/peau/extrémités) → dosimétrie passive obligatoire ; **Catégorie B** : ≤ 6 mSv/an [15][19].\n\n**Zonage radiologique (réglementation française, arrêté zonage).** La classification suit la dose efficace susceptible d'être reçue : **zone surveillée** > 1 mSv/an, **zone contrôlée** ≥ 6 mSv/an. Le sous-zonage couleur précise les débits :\n\n| Zone | Seuil | Source |\n|---|---|---|\n| **Surveillée (bleue)** | < **1,25 mSv/mois** | [17][18] |\n| **Contrôlée verte** | < **4 mSv/mois** (intégré) | [17][18] |\n| **Contrôlée jaune** | < **2 mSv/h** | [17][18] |\n| **Contrôlée orange** | < **100 mSv/h** | [17][18] |\n| **Contrôlée rouge** | ≥ **100 mSv/h** | [17][18] |\n\nUn **balisage trisectoriel gris** signale les zones exposant les extrémités à > **4 mSv·mois⁻¹** ; le port d'un **dosimètre opérationnel d'extrémités y est obligatoire depuis 2023** [18]. En médecine nucléaire, une particularité fonde toute l'organisation : **après injection, le patient devient une source mobile**, délivrant au contact des débits de l'ordre du **mSv/h** [18].\n\n**Surveillance individuelle (organisation pratique).** La dosimétrie est double et complémentaire : **dosimétrie passive** (TLD/OSL, port poitrine, corps entier, lecture mensuelle pour la catégorie A ou trimestrielle), transmise au système national **SISERI** en France ; et **dosimétrie opérationnelle** (lecture temps réel avec seuils d'alarme), obligatoire en zone contrôlée [25][26]. La **dosimétrie d'extrémités** (bague TLD) est portée selon la recommandation **ORAMED** à la base de l'index de la main non dominante, la dose maximale aux mains valant environ **6 fois** la lecture de la bague [11][12]. Attention, la phalange distale (P3) reçoit souvent une dose supérieure à la bague proximale (P1), source de sous-estimation [32]. La **surveillance interne** est déclenchée si la dose efficace engagée annuelle atteint **≥ 1 mSv** [13].\n\n**Culture de radioprotection — hiérarchie des moyens.** L'organisation privilégie la **protection collective** (blindages fixes, enceintes blindées en radiopharmacie, hotte ventilée pour l'I-131 volatil, injecteurs automatiques de FDG) avant les **EPI** (protège-seringue tungstène, tablier — peu utile à 511 keV, gants) et l'**organisation du travail** (temps/distance, rotation, entraînement à blanc) [3][4][14]. Le niveau d'ambiance acceptable en zone occupée est de l'ordre de **1 µSv/h** [4].",
+        "stats": [
+          {
+            "value": "20 mSv/an",
+            "label": "Dose efficace corps entier (limite)"
+          },
+          {
+            "value": "500 mSv/an",
+            "label": "Extrémités & peau (limite)"
+          },
+          {
+            "value": "20 mSv/an",
+            "label": "Cristallin (depuis 1/7/2023)"
+          },
+          {
+            "value": "1/d²",
+            "label": "Loi de la distance (inverse du carré)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — la travailleuse enceinte",
+            "text": "Après **déclaration écrite** de la grossesse, le poste doit être aménagé pour que la dose à l'enfant à naître ne dépasse **≈ 1 mSv** sur la durée de gestation restante (standard CIPR), ce qui implique en pratique une réaffectation hors des gestes les plus exposants (préparation/injection de ¹⁸F-FDG, manipulation d'¹³¹I). La référence réglementaire US/NRC diffère (≤ 0,5 mSv/mois, 5 mSv/gestation) — à ne pas confondre avec le standard CIPR de 1 mSv [1][21][22]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — le tablier de plomb à 511 keV",
+            "text": "Le tablier plombé est efficace en Tc-99m (réduction **62–68 %** : 64 % thyroïde, 68 % tronc, 62 % gonades) mais devient quasi inutile sur les hautes énergies : seulement **28–49 %** pour l'I-131. Aux **511 keV** du ¹⁸F, l'épaisseur de plomb requise est **>12 fois** supérieure à celle du Tc-99m → la protection passe par des blindages fixes TEP, pas par l'EPI [3][14]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le patient injecté est une source",
+            "text": "Au contact d'un patient injecté de ¹⁸F-FDG, le débit est de l'ordre du mSv/h ; à **1 m**, ~2 h après 550 MBq, il reste **~50 µSv/h**, et à **2 m**, 1 h après 370 MBq, médiane **2 µSv/h** [18][16]. D'où l'importance d'une salle d'attente « chaude » dédiée et de la gestion de la distance personnel/patient au positionnement."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Temps, distance, écran : les trois leviers physiques de réduction de dose du principe ALARA, appliqués à la radioprotection du personnel de médecine nucléaire.",
+        "figureCaption": "Fig. 1 — Temps / distance (1/d²) / écran (HVL) : la structure des consignes ALARA au personnel."
+      },
+      {
+        "title": "E2 - Points clés, fiches-réflexes et erreurs à éviter",
+        "text": "**Hiérarchie du risque occupationnel externe.** Tous les radionucléides ne se valent pas : l'ordre décroissant de contrainte est **F-18 / C-11 (511 keV) > Ga-68/Ga-67 > I-131 > I-123 > Tc-99m** [4][5]. Le **¹⁸F** est le radionucléide dimensionnant : sa constante de débit de dose (Γ à 1 cm) est la plus élevée à **5,7 R·mCi⁻¹·h⁻¹**, contre 2,2 pour l'I-131, 0,795 pour le Tc-99m et 0,181 pour le Lu-177 [2].\n\n**Couches d'atténuation dans le plomb (dimensionnement des écrans).** Le raisonnement écran s'appuie sur la couche de demi-atténuation (**HVL**) et de dixième (**TVL ≈ 3,32 × HVL**) [8] :\n\n| Radionucléide | Énergie γ principale | Période | HVL plomb | TVL plomb |\n|---|---|---|---|---|\n| **Tc-99m** | 140 keV (89 %) | **6,02 h** | **0,234 mm** | 0,905 mm |\n| **Lu-177** | 113/208 keV | **6,65 j** | 0,542 mm | 2,11 mm |\n| **I-131** | 364 keV (81 %) | **8,02 j** | **2,74 mm** | 9,93 mm |\n| **F-18** | 511 keV (annihilation) | **109,8 min** | **4,95 mm** | 15,1 mm |\n\n[2]\n\n**Doses réellement reçues par le personnel.** Lorsque ALARA est appliqué, les doses restent largement sous les limites. Le bilan IRSN/ASNR 2022 retient **0,78 mSv/an** en moyenne pour le personnel de médecine nucléaire français (soit ~4× la moyenne du personnel médical) ; aucun travailleur n'a dépassé 500 mSv/an aux extrémités ni 50 mSv/an au cristallin [37]. Le poste de manipulateur TEP est le plus exposé (**proche de 6 mSv/an**), contre ~0,1 mSv/an en scintigraphie générale [6]. Par geste, l'injection de FDG délivre **0,61 ± 0,10 µSv** au corps entier du manipulateur (≈ 20–25 nSv/MBq) [16].\n\n**Les extrémités, organe sentinelle.** La dose aux doigts varie de **0,0012 µGy/MBq** (déballage d'un générateur ⁹⁹Mo/⁹⁹ᵐTc) à **3,0 µGy/MBq** (prélèvement seringue + injection + déchets de ¹⁸F-FDG) [9]. Le projet **ORAMED/EANM** a montré qu'en ¹⁸F les doigts **peuvent approcher la limite de 500 mSv/an** sans protection, alors qu'en Tc-99m on reste très en deçà → le ¹⁸F est la priorité absolue de protection des mains [11][12]. Le **protège-seringue tungstène** (épaisseur minimale recommandée **5 mm pour le ¹⁸F**) atténue le FDG de **88 %** et réduit la dose aux mains de **80–99 %** [9][12]. Sur une seringue de F-18 (370 MBq), le blindage fait passer la dose au doigt de **~14 µSv à 7–10,7 µSv** [32].\n\n**Fiche-réflexe ALARA au poste (chronologie du geste).** Les étapes ci-dessous structurent la manipulation d'une source non scellée.",
+        "steps": [
+          {
+            "title": "1. Évaluer & baliser",
+            "text": "Évaluation préalable du risque, délimitation des zones réglementées (surveillée/contrôlée), vérification du port des dosimètres passif + opérationnel + bague d'extrémités [25][26]."
+          },
+          {
+            "title": "2. Préparer derrière l'écran",
+            "text": "Préparation en enceinte blindée (hotte ventilée pour l'I-131 volatil), protège-flacon et protège-seringue tungstène **≥ 5 mm** pour le ¹⁸F, pinces longues, manipulation à distance [3][12]."
+          },
+          {
+            "title": "3. Injecter vite et loin",
+            "text": "Injecter le minimum de temps nécessaire, seringue blindée, le bras tendu (distance) ; le geste « à blanc » préalable réduit le temps réel d'exposition [4][13]."
+          },
+          {
+            "title": "4. Gérer la source mobile",
+            "text": "Après injection, limiter le contact avec le patient (source), salle d'attente chaude dédiée, distance vis-à-vis des autres personnels, femmes enceintes et enfants [18]."
+          },
+          {
+            "title": "5. Contrôler & éliminer",
+            "text": "Contrôle de contamination des mains et surfaces avant/après, déchets en conteneurs blindés à décroissance (8 j pour l'I-131 imposent un stockage prolongé), transport en château de plomb/tungstène [3][4]."
+          }
+        ],
+        "stats": [
+          {
+            "value": "5,7",
+            "label": "Constante Γ du F-18 (R·mCi⁻¹·h⁻¹) — le plus émetteur"
+          },
+          {
+            "value": "88 %",
+            "label": "Atténuation du FDG par protège-seringue tungstène"
+          },
+          {
+            "value": "0,78 mSv/an",
+            "label": "Dose efficace moyenne personnel MN (France 2022)"
+          },
+          {
+            "value": "~6 mSv/an",
+            "label": "Poste manipulateur TEP (le plus exposé)"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Erreur à éviter — sous-estimer la dose aux doigts",
+            "text": "La dose efficace corps entier rassurante (< 1 mSv/an) masque le vrai risque : ce sont les **extrémités** du radiopharmacien qui peuvent atteindre la limite de **500 mSv/an** en TEP. La bague Hp(0,07) à la base de l'index non dominant sous-estime souvent la phalange distale (P3 > P1) ; la dose max aux mains ≈ **6 × la lecture de la bague**. Toujours coupler bague + protège-seringue tungstène + manipulation à distance [11][12][32]."
+          },
+          {
+            "type": "warning",
+            "title": "Piège — le blindage Tc-99m est inadapté en TEP",
+            "text": "Un poste blindé conçu pour les 140 keV du Tc-99m est totalement insuffisant pour les 511 keV : la TEP exige une épaisseur de plomb/tungstène **>12×** supérieure. Ne jamais transposer un blindage SPECT en zone TEP sans recalcul ; intégrer le diffusé/rétrodiffusé (plafond/sol) qui limite l'efficacité du blindage en TEP [2][14]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — distance, le levier le plus puissant",
+            "text": "En 1/d², doubler la distance divise le débit par 4 ; multiplier par 10 le divise par 100. Avant le blindage, c'est la mesure la plus rentable : pinces longues, bras tendu, télémanipulateurs. L'iode-131 volatil impose en plus une hotte ventilée et un cache-thyroïde lors des manipulations [4][3]."
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Types d'émissions radioactives (gamma, positon, bêta) déterminant l'énergie photonique et donc l'épaisseur d'écran nécessaire selon le radionucléide en médecine nucléaire.",
+        "figureCaption": "Fig. 2 — Le type et l'énergie d'émission conditionnent l'écran : 140 keV (Tc-99m) vs 511 keV (F-18)."
+      },
+      {
+        "title": "E3 - Références, recommandations & liens",
+        "text": "**Socle international et réglementaire.** La radioprotection du personnel de médecine nucléaire repose sur un corpus hiérarchisé : la **CIPR Publication 103 (2007)** pose les trois principes et les limites de dose [1][7] ; la **révision CIPR de 2011** abaisse la limite cristallin à 20 mSv/an [28] ; la **Directive 2013/59/Euratom** les transpose en droit européen, déclinée en France par le **Code du travail (R4451-6 à R4451-9)**, avec entrée en vigueur de la limite cristallin au 1er juillet 2023 [14][16]. Le projet européen **ORAMED (FP7/Euratom, id 211361)** constitue la base scientifique des recommandations EANM sur la dosimétrie d'extrémités et la protection des mains en TEP [11][12]. Les **normes de sûreté AIEA (Pub1081)** encadrent la radioprotection professionnelle [13], et les coefficients de dose patient (servant à dimensionner le risque résiduel) proviennent de la **CIPR Publication 128 (2015)** [31].\n\n**Recommandations professionnelles francophones.** Le document **CNP-MN / SFMN** « Radioprotection en médecine nucléaire » précise les modalités pratiques (dosimétrie extrémités/cristallin, postes de travail) [23]. La surveillance individuelle française s'appuie sur le système **SISERI** géré par l'**ASNR** (ex-IRSN) [26], dont le **bilan annuel des expositions professionnelles** documente les doses réelles [37].\n\n**Liens de cet article (réseau NucleAtlas).**\n\n- **Examens concernés** : TEP au ¹⁸F-FDG (radionucléide dimensionnant), scintigraphie osseuse au ⁹⁹ᵐTc-MDP, scintigraphie à la MIBG (¹²³I/¹³¹I), thérapies par ¹³¹I et ¹⁷⁷Lu.\n- **Notions liées** : zonage radiologique, dosimétrie individuelle (passive, opérationnelle, extrémités, cristallin), classement catégorie A/B, gestion des déchets radioactifs.\n- **Principe transversal** : ALARA (justification, optimisation, limitation) — socle de tous les articles « dose » et « théranostique » de la plateforme.\n\n**Liste des sources citées.**\n\n| [n] | Référence |\n|---|---|\n| [1] | ICRPaedia — Dose limits (CIPR 103 & 118) |\n| [2] | Shielding resources for Tc-99m, F-18, I-131, Lu-177 — PMC12059296 (HVL/TVL, Γ, périodes) |\n| [3] | Annual staff doses & shielding efficiencies (thyroid shield, lead apron) — PMC8804593 |\n| [4] | Radiation Protection Principles — Time, Distance, Shielding (Nuclear Power) |\n| [5] | ALARA: Principles of Radiation Protection — Barrier Technologies |\n| [6] | Ensuring Radiation Safety: ICRP Guidelines & ALARA — Baker Hughes Waygate |\n| [7] | ICRP Publication 103 — 2007 Recommendations (free extract) |\n| [8] | Half-value layer — Wikipedia (TVL ≈ 3,32 × HVL) |\n| [9] | External radiation exposure in nuclear medicine (¹⁸F, ⁹⁹ᵐTc, ¹³¹I) — PubMed 21571739 |\n| [10] | Occupational radiation dose (Tc-99m, F-18-FDG, I-131) — Radiat Prot Dosimetry 186(4):443 |\n| [11] | ORAMED — Optimization of Radiation Protection of Medical Staff (FP7, id 211361) — CORDIS |\n| [12] | Hand exposure in diagnostic NM (¹⁸F/⁹⁹ᵐTc) — ORAMED project (ScienceDirect) |\n| [13] | IAEA Safety Standards — Occupational Radiation Protection (Pub1081) |\n| [14] | Légifrance — Code du travail R4451-6 à R4451-9 (limites d'exposition) |\n| [15] | INRS — Rayonnements ionisants : réglementation & prévention (classement A/B) |\n| [16] | Red-on-line — Radioprotection des travailleurs (cristallin 20 mSv au 1/7/2023) |\n| [17] | Landauer France — Zonage radiologique (identification & délimitation) |\n| [18] | Radioprotection Cirkus — Arrêté zonage du 15 mai 2006 (seuils zones) |\n| [19] | Ionactive — IRR17(21) Designation of Classified Persons (cat. A > 6 mSv/an) |\n| [20] | Health Physics Society ATE q12317 — Pregnant worker / embryo-fetus dose |\n| [21] | IAEA ORPNET — Female Workers During and After Pregnancy (≈ 1 mSv fœtal) |\n| [22] | NRC Issue Paper 3 (ML14084A339) — Dose Limit for the Embryo/Fetus (5 mSv, ≤ 0,5 mSv/mois) |\n| [23] | CNP-MN / SFMN — Radioprotection en médecine nucléaire |\n| [24] | Reliable occupational eye lens dose in nuclear medicine — PMC9359038 |\n| [25] | REMM (HHS) — Categories of Radiation Dosimeters (passive vs operational) |\n| [26] | ASNR (ex-IRSN) — Modalités de surveillance des travailleurs (SISERI) |\n| [27] | Health Physics Society ATE q8900 — Technical basis for 1 mSv & 20 mSv limits |\n| [28] | US Federal Register (2011) — ICRP eye lens dose limit 20 mSv/y |\n| [29] | Radiation Safety (nuclear medicine) — Indian J Nucl Med, PMC3868031 |\n| [30] | Occupational radiation dose in NM & PET/CT centre — Radiat Phys Chem (2025) |\n| [31] | ICRP Publication 128 — Radiation Dose to Patients from Radiopharmaceuticals (2015) |\n| [32] | Effect of dosimeter's position on extremity dose (¹⁸F-FDG PET/CT) — PMC4975735 |\n| [33] | Mise en œuvre de l'arrêté zonage — IRSN/ASNR (Aubert et al.) |\n| [34] | The Declared Pregnant Woman in Nuclear Medicine — J Nucl Med Technol 24(2):83 |\n| [35] | Radiation Safety Review for 511-keV Emitters — J Nucl Med Technol 25(1):12 |\n| [36] | Radiation Safety Considerations for PET Centers — J Nucl Med Technol 25(2):98 |\n| [37] | Bilan 2022 des expositions professionnelles — IRSN/ASNR |\n| [38] | Technologist Radiation Exposure with ¹⁸F-FDG PET — J Nucl Med Technol 33(3):175 |\n| [39] | Dosimetry of ¹⁸F-FDG (OLINDA/Geant4, conformité ICRP-128) — PMC12513526 |\n| [40] | Duration of Breastfeeding Interruption in NM Procedures — J Nucl Med Technol 51(3):239 |\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). Toutes les valeurs chiffrées sont sourcées par les références ci-dessus ; aucun DOI/PMID/URL n'a été inventé.*",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — distinguer les standards grossesse",
+            "text": "Ne pas confondre les deux référentiels : la CIPR/AIEA limite la dose à l'enfant à naître à **≈ 1 mSv** sur la gestation restante [1][21], tandis que la réglementation US/NRC retient **5 mSv/gestation et ≤ 0,5 mSv/mois** [22][34]. En pratique française, c'est le standard CIPR (1 mSv) qui prévaut, imposant un aménagement de poste dès déclaration."
+          },
+          {
+            "type": "info",
+            "title": "Allaitement (rappel transversal)",
+            "text": "Au-delà du personnel, les consignes d'interruption d'allaitement (limite nourrisson 1 mSv) varient selon le traceur administré à la patiente : ⁹⁹ᵐTc-pertechnétate/MAA **12 h** ; ⁹⁹ᵐTc-MIBI/GR marqués pas d'interruption mais contact rapproché limité ; **¹³¹I (NaI) : arrêt complet et définitif** [40]."
+          }
+        ]
+      }
+    ]
+  }
+}

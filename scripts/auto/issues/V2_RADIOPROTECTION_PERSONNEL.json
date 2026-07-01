@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Tableaux HVL/TVL plomb — section D1 vs sections A3/B3/E2/E5 (medecin_nuc.sections)",
+    "problem": "Le contenu emploie DEUX jeux de valeurs HVL plomb différents selon les sections, sans le signaler au lecteur. Section D1 utilise: Tc-99m 0,243 mm / Lu-177 0,511 mm / I-131 2,48 mm / F-18 4,75 mm (TVL 0,870 / 1,99 / 10,5 / 15,4 mm). Sections A3, B3, E2 utilisent: Tc-99m 0,234 mm / Lu-177 0,542 mm / I-131 2,74 mm / F-18 4,95 mm (TVL 0,905 / 2,11 / 9,93 / 15,1 mm). Les deux jeux proviennent bien des fiches étalon (Recherche 2 pour le premier, Recherche 1/PMC12059296 pour le second), donc aucune valeur n'est inventée et chacune est dans la fourchette littérature (F-18 ~4,1–6 mm vérifié). Mais leur cohabitation dans un même article crée une incohérence apparente (ex. I-131 affiché tantôt 2,48 tantôt 2,74 mm; TVL I-131 10,5 vs 9,93 mm). Risque de confusion pédagogique.",
+    "fix": "Harmoniser sur un seul jeu de valeurs dans tout l'article (idéalement celui de PMC12059296 = Recherche 1, déjà majoritaire). La carte d'identité gère déjà bien le cas en affichant 'HVL plomb F-18 : 4,75–4,95 mm' (fourchette honnête); appliquer la même logique de fourchette ou choisir une valeur unique partout."
+  },
+  {
+    "severity": "minor",
+    "where": "Hiérarchie du risque occupationnel externe — sections A2, C2, D1, E1, E2 ('F-18 et C-11 > Ga-68/Ga-67 > I-131 > I-123 > Tc-99m')",
+    "problem": "Le classement place Ga-68 STRICTEMENT en-dessous du F-18. Or la littérature occupationnelle récente (EJNMMI Phys 2022; PMC3237224) montre que le Ga-68 délivre des doses aux mains/corps SUPÉRIEURES ou au moins équivalentes au F-18 (énergie β+ max 1,9 MeV et parcours du positon plus longs que le F-18 à 634 keV, même photon d'annihilation 511 keV). L'affirmation 'F-18 > Ga-68' comme règle absolue est donc discutable. La hiérarchie reprise des fiches étalon est une simplification acceptable (les deux sont des émetteurs 511 keV au sommet) mais l'ordre interne F-18/Ga-68 n'est pas solidement établi.",
+    "fix": "Nuancer en regroupant: 'émetteurs de positons 511 keV (F-18, C-11, Ga-68) > I-131 (364 keV) > I-123 > Tc-99m (140 keV)', sans hiérarchiser F-18 vs Ga-68, ou préciser que le Ga-68 peut dépasser le F-18 en dose aux extrémités du fait de l'énergie positonique."
+  },
+  {
+    "severity": "critical",
+    "where": "Sections B1, B3, C2, D1 (et autres) — appariement citation→source",
+    "problem": "Les numéros de citation [n] inline NE pointent PAS vers la source qui soutient réellement l'affirmation : le même fait est rattaché à des sources différentes et incohérentes selon la section, et plusieurs renvoient à une source manifestement fausse. Exemples vérifiés : (a) l'efficacité du protège-seringue tungstène « 88 % » et le « ×12 de plomb » sont cités [14] en B3, alors que [14] = Légifrance R4451-6 à R4451-9 (limites de dose, aucune donnée de blindage) ; en A3/E2 le même « 88 % » est cité [14] ou [35] de façon variable. (b) « ALARA = expression du principe d'optimisation CIPR / Publication 103 2007 » est cité [13] en B1, or [13] = IAEA Pub1081 ; la bonne source est [7] (ICRP 103), correctement utilisée en A4/E1. (c) la dose aux doigts du radiopharmacien « 265,7 ± 107,6 µSv/étude » et la seringue 18F 370 MBq « 14→7–10,7 µSv » sont citées [8] en B1 et C2, or [8] = page Wikipedia Half-value layer (pas une étude dosimétrique). (d) « injecteur automatique de 18F-FDG supprime le temps de contact » cité [14] (Légifrance) en B1. C'est la signature d'un texte rédigé contre un ordre de sources différent puis fusionné sous la liste finale sans ré-indexation. Les chiffres eux-mêmes sont plausibles et les sources existent, mais l'attribution est fausse — donc non vérifiable par le lecteur et trompeuse.",
+    "fix": "Ré-indexer systématiquement toutes les citations des sections B, C et D (et vérifier A) contre la liste de sources finale 1–40. Concrètement : pour le blindage/HVL/efficacité d'écran → [2] (PMC12059296) et [35]/[36] (JNMT 511 keV / PET centers) et [3] (PMC8804593 pour tablier/cache-thyroïde) ; pour ALARA/optimisation/CIPR 103 → [7] ; pour les doses aux doigts/ORAMED → [9], [11], [12], [32] ; pour 0,78 mSv/an France 2022 → [37] ; jamais [8] (Wikipedia) ni [14]/[16] (réglementaire) pour des données de blindage ou de débit de dose mesuré."
+  },
+  {
+    "severity": "major",
+    "where": "A2, B2, C1, D1, E1 — débit de dose patient FDG « ~50 µSv/h à 1 m » et « 2 µSv/h à 2 m »",
+    "problem": "Cette mesure de débit de dose au contact d'un patient injecté est attribuée à [16] (Red-on-line) et/ou [18] (RP Cirkus, arrêté zonage). Or [16] est un billet réglementaire sur l'abaissement de la limite du cristallin à 20 mSv (2023) et [18] une analyse de l'arrêté zonage — aucun des deux ne contient de mesure de débit de dose autour d'un patient FDG. La source réelle de ce type de chiffre est une étude de mesure (typiquement ORAMED [12], ou une revue de radioprotection PET [35]/[36], ou [38] Technologist exposure 18F-FDG). Affirmation non soutenue par la source citée.",
+    "fix": "Rattacher le débit de dose patient FDG (50 µSv/h à 1 m, 2 µSv/h à 2 m) à une source de mesure réelle ([12], [35], [36] ou [38]) et retirer [16]/[18] pour ce chiffre. Vérifier la valeur dans la source retenue avant publication."
+  },
+  {
+    "severity": "major",
+    "where": "Tableaux HVL/TVL plomb — D1 et D2 vs A3/E2 (tous cités [2])",
+    "problem": "Le document donne DEUX jeux de valeurs HVL/TVL plomb contradictoires, tous attribués à la même source [2] (PMC12059296). A3/E2 : Tc-99m 0,234 mm, Lu-177 0,542 mm, I-131 2,74 mm, F-18 4,95 mm. D1/D2 : Tc-99m 0,243 mm, Lu-177 0,511 mm, I-131 2,48 mm, F-18 4,75 mm. Les TVL diffèrent aussi (Tc 0,905 vs 0,870 ; I-131 9,93 vs 10,5 ; F-18 15,1 vs 15,4). Une seule série au plus peut correspondre réellement à [2] ; l'autre est soit inventée soit issue d'une autre source non créditée. L'identityCard masque le problème en présentant « HVL F-18 : 4,75–4,95 mm » comme une fourchette, ce qui légitime une incohérence.",
+    "fix": "Vérifier les valeurs exactes dans PMC12059296 (acm2.70084) et n'en retenir qu'UNE série, identique dans toutes les sections (A3, D1, D2, E2, identityCard). Corriger l'identityCard pour une valeur unique au lieu d'une fausse fourchette."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources [20], [23], [27], [29], [30], [33], [34], [36], [38], [39] — citées surtout dans le tableau de références E3",
+    "problem": "Plusieurs sources de la liste ne sont jamais (ou quasi jamais) utilisées en citation inline dans le corps ([20], [27], [30], [33], [34], [36], [38], [39] notamment) ; elles n'apparaissent que dans le tableau récapitulatif E3. Ce n'est pas une fabrication, mais cela gonfle la bibliographie avec des références non exploitées, et contredit la rigueur affichée (« toutes les valeurs sont sourcées »). À l'inverse, certains chiffres clés du corps n'ont pas la bonne source attachée (cf. constats critiques).",
+    "fix": "Soit exploiter réellement ces sources là où elles sont pertinentes (ex. [38] pour la dose technologue FDG, [36] pour la radioprotection PET, [34] pour la travailleuse enceinte en MN), soit les retirer si elles ne soutiennent aucune affirmation, pour aligner bibliographie et contenu."
+  }
+]

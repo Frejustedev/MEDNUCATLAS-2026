@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "minor",
+    "where": "Section C3 (tableau sortie patient) et stat de la section E2 : « 1,2 GBq — Activité ¹³¹I retenue ≤ pour sortie patient (NRC) »",
+    "problem": "Confusion administré/retenu. Dans la NRC Reg. Guide 8.39, le seuil de 1,2 GBq (33 mCi) est l'activité ADMINISTRÉE (colonne 1, Qrel) en deçà de laquelle la libération est autorisée sans calcul individualisé — la Table 1 distingue explicitement activité administrée et activité retenue, qui sont deux colonnes/valeurs différentes. Le tableau de C3 est correct (« ≤ 1,2 GBq administré »), mais la stat E2 et l'identityCard qualifient à tort 1,2 GBq d'activité « retenue ».",
+    "fix": "Remplacer « Activité ¹³¹I retenue ≤ 1,2 GBq » par « Activité ¹³¹I administrée ≤ 1,2 GBq » dans la stat E2 et l'identityCard, pour rester cohérent avec le tableau de C3 et le texte du RG 8.39."
+  },
+  {
+    "severity": "minor",
+    "where": "Section C3, infobox « volatilité ¹³¹I » : « DAC ¹³¹I = 416,67 Bq/m³ » (valeur héritée des faits étalon)",
+    "problem": "La DAC réglementaire de l'¹³¹I (10 CFR 20 App. B) est 2×10⁻⁸ µCi/mL, soit 740 Bq/m³ (= 50 µCi ALI / 2400 m³). La valeur 416,67 Bq/m³ ne correspond pas à la DAC réglementaire NRC ; elle est probablement issue d'un calcul/source secondaire erroné. Écart d'un facteur ~1,8.",
+    "fix": "Vérifier sur source primaire 10 CFR 20 Appendix B. Si l'on cite la DAC NRC, utiliser ≈ 740 Bq/m³ (2×10⁻⁸ µCi/mL). Si la valeur 416,67 vient d'un autre référentiel (ex. inhalation occupationnelle différente), préciser la source exacte, sinon retirer le chiffre."
+  },
+  {
+    "severity": "minor",
+    "where": "Section C3 (tableau) et infobox E2 : niveau directeur AIEA de libération ¹³¹I « 1 200 MBq retenus / 70 µSv/h » puis « 1 100–1 200 MBq »",
+    "problem": "Légère incohérence/imprécision : le document NRC ML14217A350 référencé indique 1100 MBq pour le niveau AIEA, tandis que d'autres sources citent 1200 MBq. Le contenu mélange les deux valeurs (1200 dans C3, 1100–1200 dans E2). Imprécision sans erreur factuelle nette.",
+    "fix": "Harmoniser sur une valeur sourcée unique (idéalement 1100 MBq selon ML14217A350, ou indiquer explicitement la fourchette 1100–1200 MBq avec la source à chaque occurrence)."
+  },
+  {
+    "severity": "major",
+    "where": "Structure des sections (medecin_nuc.sections) — passage de A4 à C1",
+    "problem": "La consigne exige une couverture A->E. Or la section B est totalement absente : les 13 sections sont A1, A2, A3, A4, C1, C2, C3, D1, D2, D3, E1, E2, E3. Il n'existe aucune section B (ni B1, ni B2...). La couverture saute directement de A4 à C1, donc le bloc B (qui dans l'étalon couvre typiquement la physiologie/le mécanisme intermédiaire) manque.",
+    "fix": "Ajouter au moins une section B (p.ex. B1/B2) couvrant le maillon manquant entre la classification (A) et la mesure/contrôle (C), ou renuméroter pour rétablir une progression A->E continue. Vérifier que l'étalon attend bien un bloc B et combler le trou."
+  },
+  {
+    "severity": "minor",
+    "where": "Plusieurs sections (A2, A4, C1, D1, E1, infoBox ¹⁷⁷ᵐLu) — branchement de désintégration du ¹⁷⁷ᵐLu",
+    "problem": "Le document indique « 21,4 % décroît vers ¹⁷⁷Lu (transition isomérique) et 78,6 % vers ¹⁷⁷Hf (β) ». Les valeurs couramment publiées sont ~22,7 % vers ¹⁷⁷Lu et ~77,3 % vers ¹⁷⁷Hf. Le couple 21,4/78,6 n'a pas été retrouvé dans les sources vérifiées (qui donnent 22,7/77,3).",
+    "fix": "Vérifier le branchement exact sur la source primaire (EJNMMI Physics / PMC9829929 [19][20] ou table ENSDF) et corriger en 22,7 %/77,3 % si confirmé, ou citer précisément la source qui donne 21,4/78,6."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence interne — période du ¹⁷⁷ᵐLu (160,4 j) vs valeur médiane de la source",
+    "problem": "Le document utilise systématiquement T½(¹⁷⁷ᵐLu)=160,4 j (valeur de table ENSDF, correcte et vérifiée). Mais la source [19][20] elle-même rapporte une demi-vie médiane mesurée d'environ 152 j dans son étude. Aucune fabrication, mais le chiffre 160,4 j est attribué à [19][20] alors qu'il provient en réalité d'une donnée de table, pas de l'étude citée.",
+    "fix": "Soit citer 160,4 j avec une référence de données nucléaires (ENSDF/table), soit signaler que la source [19][20] mesure ~152 j. Éviter d'attribuer 160,4 j directement à l'étude EJNMMI qui ne donne pas ce chiffre."
+  },
+  {
+    "severity": "minor",
+    "where": "E3 infoBox « Note de fiabilité » et données physiques décimales (¹⁸F 109,77 min ; ¹³¹I 8,02 j ; ⁹⁹ᵐTc 140,5 keV / 6,01 h)",
+    "problem": "Plusieurs valeurs physiques de haute précision s'appuient sur Wikipedia [24][25] comme source primaire. Ces valeurs ont été recoupées et sont exactes, mais l'usage de Wikipedia comme référence pour des constantes nucléaires est un point de fragilité que le document reconnaît lui-même.",
+    "fix": "Remplacer ou doubler [24][25] (Wikipedia) par une source de données nucléaires primaire (ENSDF, BIPM/LNHB, ICRP 107) pour les périodes et énergies gamma citées à la décimale."
+  }
+]

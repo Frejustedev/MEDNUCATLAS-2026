@@ -1,0 +1,14 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections B2, C3, E1 — résolution transverse TEP « 3,59 / 4,08 / 5,32 mm FWHM à 1 / 10 / 20 cm (Discovery MI) » [26]",
+    "problem": "La source primaire (PMC9250480, Discovery MI 30 cm AFOV) rapporte une résolution transverse de 3,79 mm à 1 cm et 4,29 mm à 10 cm ; les valeurs citées (3,59/4,08/5,32) ne correspondent pas exactement à cette référence (probablement issues d'une autre colonne/génération de tableau). Discordance numérique mineure, pas une fabrication.",
+    "fix": "Recouper sur le tableau NEMA NU 2-2018 de PMC9250480 et corriger en 3,79/4,29 mm (1/10 cm) ou préciser la machine/colonne exacte si la valeur à 20 cm provient d'une autre source."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [54] NEMA NU 1-2018 contents/scope PDF — URL nema.org avec paramètre ?sfvrsn=d93985ea_1",
+    "problem": "Le standard NEMA NU 1-2018 et le domaine nema.org sont authentiques, mais l'URL exacte paramétrée (sfvrsn) n'a pas pu être confirmée directement (refus de connexion/anti-bot). Risque faible de lien périmé, sans signe de fabrication.",
+    "fix": "Vérifier que le lien direct du PDF contents/scope résout encore avant publication ; à défaut, pointer vers la page produit NEMA NU 1-2018 stable."
+  }
+]
