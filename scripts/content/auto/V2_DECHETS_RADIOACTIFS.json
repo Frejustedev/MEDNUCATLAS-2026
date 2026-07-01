@@ -1,0 +1,1458 @@
+{
+  "id": "V2_DECHETS_RADIOACTIFS",
+  "cat": "radioprotection",
+  "catLabel": "Radioprotection",
+  "title": "Gestion des déchets et effluents radioactifs",
+  "difficulty": "intermédiaire",
+  "tags": [
+    "déchets radioactifs",
+    "effluents radioactifs",
+    "décroissance sur place",
+    "decay-in-storage",
+    "radioprotection",
+    "réglementation",
+    "cuves de décroissance",
+    "ANDRA",
+    "ASN",
+    "AIEA",
+    "Lu-177m",
+    "iode-131",
+    "gestion des déchets",
+    "sources scellées"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] Décision n° 2008-DC-0095 du 29 janvier 2008 de l'ASN — règles techniques d'élimination des effluents et déchets contaminés par les radionucléides (activités médicales)",
+      "url": "https://reglementation-controle.asnr.fr/reglementation/bulletin-officiel-de-l-asnr/activites-medicales/decisions-reglementaires/decision-n-2008-dc-0095-du-29-janvier-2008-de-l-asn"
+    },
+    {
+      "title": "[2] Arrêté du 23 juillet 2008 portant homologation de la décision n° 2008-DC-0095 de l'ASN (art. R.1333-12 CSP) — Légifrance",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000019278241"
+    },
+    {
+      "title": "[3] Arrêté du 23/07/08 portant homologation de la décision n° 2008-DC-0095 de l'ASN — AIDA / INERIS",
+      "url": "https://aida.ineris.fr/reglementation/arrete-230708-portant-homologation-decision-ndeg-2008-dc-0095-lautorite-surete"
+    },
+    {
+      "title": "[4] 10 CFR § 35.92 — Decay-in-storage (Cornell Legal Information Institute / eCFR)",
+      "url": "https://www.law.cornell.edu/cfr/text/10/35.92"
+    },
+    {
+      "title": "[5] § 35.92 Decay-in-storage — U.S. Nuclear Regulatory Commission",
+      "url": "https://www.nrc.gov/reading-rm/doc-collections/cfr/part035/part035-0092"
+    },
+    {
+      "title": "[6] § 35.2092 Records of decay-in-storage — U.S. Nuclear Regulatory Commission",
+      "url": "https://www.nrc.gov/reading-rm/doc-collections/cfr/part035/part035-2092"
+    },
+    {
+      "title": "[7] Decay-In-Storage Policy & Procedure — Weill Cornell Medicine EHS",
+      "url": "https://ehs.weill.cornell.edu/radiation-safety/radiation-safety/decay-storage-policy-procedure"
+    },
+    {
+      "title": "[8] Radioisotopes in Medicine — World Nuclear Association (périodes des radionucléides médicaux)",
+      "url": "https://world-nuclear.org/information-library/non-power-nuclear-applications/radioisotopes-research/radioisotopes-in-medicine"
+    },
+    {
+      "title": "[9] Mo99–Tc99m Generator — StatPearls (NCBI Bookshelf) : entreposage/décroissance ~10 périodes",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK565854/"
+    },
+    {
+      "title": "[10] IAEA Safety Standards GSG-1 — Classification of Radioactive Waste (Pub1419)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1419_web.pdf"
+    },
+    {
+      "title": "[11] IAEA — Application of the Concept of Clearance (Pub2058)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB2058_web.pdf"
+    },
+    {
+      "title": "[12] IAEA — Application of the Concept of Exemption (Pub2060)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/PUB2060_web.pdf"
+    },
+    {
+      "title": "[13] IAEA — Predisposal Management of Radioactive Waste from the Use of Radioactive Material in Medicine, Industry, Agriculture, Research and Education",
+      "url": "https://www.iaea.org/publications/11087/predisposal-management-of-radioactive-waste-from-the-use-of-radioactive-material-in-medicine-industry-agriculture-research-and-education"
+    },
+    {
+      "title": "[14] ICRP Publication 94 — Release of Patients after Therapy with Unsealed Radionuclides (contraintes de dose 5 mSv/épisode, public 1 mSv/an)",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+94"
+    },
+    {
+      "title": "[15] International Practices of Patient Release Following Iodine-131 Therapy — NRC (ML14217A350) : critère 1100 MBq / 30 mCi",
+      "url": "https://www.nrc.gov/docs/ML1421/ML14217A350.pdf"
+    },
+    {
+      "title": "[16] Patient Release After Radioiodine Therapy ORNL Report — NRC (ML17262A909) : critère débit de dose ~3,5 µSv/h à 2 m",
+      "url": "https://www.nrc.gov/docs/ML1726/ML17262A909.pdf"
+    },
+    {
+      "title": "[17] Joint EANM/SNMMI procedure guideline for the use of 177Lu-labeled PSMA-targeted radioligand-therapy (177Lu-PSMA-RLT) (2023) — PMC10317889",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10317889/"
+    },
+    {
+      "title": "[18] Radiation Safety Considerations of Household Waste Disposal After Release of Patients Who Have Received [177Lu]Lu-PSMA-617 — J Nucl Med 2023;64(10):1567",
+      "url": "https://jnm.snmjournals.org/content/64/10/1567"
+    },
+    {
+      "title": "[19] Élimination des effluents et des déchets contaminés par des radionucléides — consultation ASN du 26/01/2016 (guide, PGED)",
+      "url": "https://www.asn.fr/reglementation/consultations-du-public/elimination-des-effluents-et-des-dechets-contamines-par-des-radionucleides"
+    },
+    {
+      "title": "[20] Effluents de médecine nucléaire et des laboratoires — présentation SFRP (Tchilian/Chartier) : limite 10 Bq/L, période <100 j",
+      "url": "https://sfrp.asso.fr/wp-content/uploads/2021/11/2016_11_09_TCHILIAN_N_CHARTIER_M.pdf"
+    },
+    {
+      "title": "[21] Gestion des déchets et des effluents radioactifs générés lors de la prise en charge d'un blessé radiocontaminé dans une structure hospitalière — revue Radioprotection (EDP Sciences), 2015",
+      "url": "https://www.radioprotection.org/articles/radiopro/pdf/2015/02/radiopro140052.pdf"
+    },
+    {
+      "title": "[22] IRSN/ASNR — Gestion des déchets contaminés par des radionucléides (retour d'expérience professionnels de santé)",
+      "url": "https://www.irsn.fr/sites/default/files/documents/professionnels_sante/documentation/gestion_dechets_contamines_par_radionucleides_rex.pdf"
+    },
+    {
+      "title": "[23] Les déchets radioactifs et sites/sols pollués — Rapport annuel ASN 2023, chapitre 15",
+      "url": "https://reglementation-controle.asnr.fr/content/download/198725/file/Ch15%20-%20Les%20d%C3%A9chets%20radioactifs%20et%20les%20sites%20et%20sols%20pollu%C3%A9s%20-%20Rapport%20annuel%20de%20l'ASN%202023.pdf"
+    },
+    {
+      "title": "[24] La gestion des déchets radioactifs — dossier pédagogique ASNR (09/01/2025)",
+      "url": "https://reglementation-controle.asnr.fr/information/dossiers-pedagogiques/la-gestion-des-dechets-radioactifs"
+    },
+    {
+      "title": "[25] Radioactive waste management: review on clearance levels and acceptance criteria — ScienceDirect (dose 10 µSv/an, 1 mSv/an)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S096980431300136X"
+    },
+    {
+      "title": "[26] Molybdenum-99 for Medical Imaging — National Academies Press (NCBI) : off-gas Xe/Kr, décroissance générateurs",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK396163/"
+    },
+    {
+      "title": "[27] Transfer and/or Disposal of Spent Generators — NRC HPPOS-127",
+      "url": "https://www.nrc.gov/about-nrc/radiation/protects-you/hppos/hppos127"
+    },
+    {
+      "title": "[28] IAEA-TECDOC-1183 — Management of radioactive waste from the use of radionuclides in medicine",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_1183_prn.pdf"
+    },
+    {
+      "title": "[29] LLRW Toolbox: Decay-In-Storage (DIS) — U.S. Nuclear Regulatory Commission",
+      "url": "https://www.nrc.gov/materials/toolboxes/llrw/decay-in-storage"
+    },
+    {
+      "title": "[30] Élimination non conforme de déchets contaminés par des radionucléides — ASN (avis d'incident, 09/08/2024)",
+      "url": "https://www.asn.fr/l-asn-controle/actualites-du-controle/activites-medicales/avis-d-incident-domaine-medical/elimination-non-conforme-de-dechets-contamines-par-des-radionucleides"
+    },
+    {
+      "title": "[31] Guide de l'ASN n°18 — Élimination des effluents et déchets contaminés par des radionucléides (installations autorisées au titre du CSP)",
+      "url": "https://www.asn.fr/l-asn-reglemente/guides-de-l-asn/guide-de-l-asn-n-18-elimination-des-effluents-et-des-dechets-contamines-par-des-radionucleides-produits-dans-les-installations-autorisees-au-titr"
+    },
+    {
+      "title": "[32] Guide ASN n°18 (PDF) — asn.fr",
+      "url": "https://www.asn.fr/content/download/51904/file/Guide-asn-n-18.pdf"
+    },
+    {
+      "title": "[33] Plan de gestion des déchets (VERSION PUBLIQUE) — ASNR (recoupement Guide ASN n°18 / décision 2008-DC-0095, seuil 100 j, 10 périodes)",
+      "url": "https://reglementation-controle.asnr.fr/content/download/199438/file/Plan%20de%20gestion%20des%20d%C3%A9chets%20VERSION%20PUBLIQUE.pdf"
+    },
+    {
+      "title": "[34] Déchets radioactifs — ASNR Recherche et expertise (mission IRSN/ASNR)",
+      "url": "https://recherche-expertise.asnr.fr/savoir-comprendre/surete/dechets-radioactifs"
+    },
+    {
+      "title": "[35] The Duration of Nuclear Medicine in Your Body — Liv Hospital (périodes Tc-99m 6 h, F-18 110 min, I-131 8 j, Lu-177 6,6 j)",
+      "url": "https://int.livhospital.com/duration-of-nuclear-medicine-in-your-body/"
+    },
+    {
+      "title": "[36] Measurement of the half-life of Ga-68 (67,845 min) — ResearchGate",
+      "url": "https://www.researchgate.net/publication/259349155_Measurement_of_the_half-life_of_Ga-68"
+    },
+    {
+      "title": "[37] The Use of Kr-81m in Ventilation Imaging (Xe-133 vs Kr-81m) — Clinical Nuclear Medicine 1982;7(3):122",
+      "url": "https://journals.lww.com/nuclearmed/abstract/1982/03000/the_use_of_kr_81m_in_ventilation_imaging.8.aspx"
+    },
+    {
+      "title": "[38] Dealing with dry waste disposal issues associated with 177mLu impurities: a long-term challenge for nuclear medicine departments — PMC9829929",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9829929/"
+    },
+    {
+      "title": "[39] Procédure de gestion des effluents déchets contaminés — Centre hospitalier d'Avignon (ASNR)",
+      "url": "https://reglementation-controle.asnr.fr/content/download/181032/file/Proc%C3%A9dure%20de%20gestion%20des%20effluents%20d%C3%A9chets%20contamin%C3%A9s%20-%20Centre%20hospitalier%20d%E2%80%99Avignon.pdf"
+    },
+    {
+      "title": "[40] Radioactive Sealed Source Disposal / return (Co-57, Ge-68, Cs-137) — American Waste Haulers",
+      "url": "https://americanwastehaulers.com/sealed-source-disposal"
+    },
+    {
+      "title": "[41] Assessment of Radiation Exposure and Radioactivity from the Liquid Discharge in a Nuclear Medicine Facility (cuve 7 500 L, dilution, I-131) — PMC7905285",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905285/"
+    },
+    {
+      "title": "[42] ICRP Publication 128 — Radiation Dose to Patients from Radiopharmaceuticals (mSv/MBq) — SAGE",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019"
+    },
+    {
+      "title": "[43] A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG (dose efficace FDG 0,017 mSv/MBq) — EJNMMI Physics",
+      "url": "https://link.springer.com/article/10.1186/s40658-023-00528-9"
+    },
+    {
+      "title": "[44] Dose limits — ICRPaedia (CIPR 103 : 20 mSv/an travailleur, 1 mSv/an public, cristallin 20 mSv, extrémités 500 mSv)",
+      "url": "https://icrpaedia.org/Dose_limits"
+    },
+    {
+      "title": "[45] Annals of the ICRP — ICRP Publication 94: Release of Patients after Therapy with Unsealed Radionuclides — ScienceDirect (vol. 34, issue 2)",
+      "url": "https://www.sciencedirect.com/journal/annals-of-the-icrp/vol/34/issue/2"
+    },
+    {
+      "title": "[46] Determination of decay tank capacity and minimum storage time for liquid radioactive effluent — Radioprotection 2025;60(1):91",
+      "url": "https://www.radioprotection.org/articles/radiopro/full_html/2025/01/radiopro240061.html"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "radiation",
+        "label": "Principe central",
+        "value": "Décroissance sur place (decay-in-storage) [1][4]"
+      },
+      {
+        "icon": "clock",
+        "label": "Seuil de période (France)",
+        "value": "< 100 jours → décroissance autorisée [7][9]"
+      },
+      {
+        "icon": "clock",
+        "label": "Seuil de période (USA)",
+        "value": "≤ 120 jours (10 CFR 35.92) [4][5]"
+      },
+      {
+        "icon": "activity",
+        "label": "Durée d'entreposage (France)",
+        "value": "> 10 périodes (≈ 0,1 % résiduel) [9]"
+      },
+      {
+        "icon": "shield",
+        "label": "Critère de libération (France)",
+        "value": "≤ 2 × bruit de fond local [5][10]"
+      },
+      {
+        "icon": "target",
+        "label": "Critère de libération (USA)",
+        "value": "Indiscernable du bruit de fond [4][5]"
+      },
+      {
+        "icon": "droplets",
+        "label": "Effluents liquides",
+        "value": "Cuves de décroissance dédiées (excreta patients) [6][46]"
+      },
+      {
+        "icon": "alert",
+        "label": "Piège majeur",
+        "value": "Impureté Lu-177m ~152–160 j → 3–5 ans [38]"
+      },
+      {
+        "icon": "flask",
+        "label": "Période longue (> 100 j)",
+        "value": "Reprise fournisseur / ANDRA [6][40]"
+      },
+      {
+        "icon": "list",
+        "label": "Classe AIEA médecine nucléaire",
+        "value": "VSLW (déchets à vie très courte) [10]"
+      },
+      {
+        "icon": "pin",
+        "label": "Texte pivot France",
+        "value": "Décision ASN 2008-DC-0095 + Guide n°18 [1][31]"
+      },
+      {
+        "icon": "zap",
+        "label": "Limite dose public",
+        "value": "1 mSv/an [44]"
+      },
+      {
+        "icon": "stetho",
+        "label": "Sortie patient I-131",
+        "value": "≤ 400 MBq / débit à 1 m selon pays [15][25]"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "traceur",
+        "label": "Technétium-99m (¹²³I·⁶ h)"
+      },
+      {
+        "type": "traceur",
+        "label": "Fluor-18 (FDG)"
+      },
+      {
+        "type": "traceur",
+        "label": "Iode-131"
+      },
+      {
+        "type": "traceur",
+        "label": "Lutétium-177 (PSMA/DOTATATE)"
+      },
+      {
+        "type": "traceur",
+        "label": "Xénon-133 (ventilation)"
+      },
+      {
+        "type": "traceur",
+        "label": "Générateur Mo-99/Tc-99m"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹³¹I-thérapie thyroïdienne"
+      },
+      {
+        "type": "theranostique",
+        "label": "¹⁷⁷Lu-PSMA"
+      },
+      {
+        "type": "examen",
+        "label": "Radioprotection (ALARA)"
+      },
+      {
+        "type": "examen",
+        "label": "Dosimétrie des radiopharmaceutiques (CIPR 128)"
+      },
+      {
+        "type": "maladie",
+        "label": "Cancer différencié de la thyroïde (I-131)"
+      },
+      {
+        "type": "score",
+        "label": "Limites de dose CIPR 103"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quelle est la stratégie dominante de gestion des déchets en médecine nucléaire ?",
+        "options": [
+          "L'incinération immédiate",
+          "La décroissance sur place (decay-in-storage) avant élimination conventionnelle",
+          "Le stockage géologique profond systématique",
+          "Le rejet direct au réseau d'assainissement"
+        ],
+        "answer": 1,
+        "explanation": "La majorité des radionucléides médicaux ayant des périodes courtes, on les entrepose à l'abri le temps que l'activité rejoigne le bruit de fond, puis on les élimine en filière conventionnelle [1][4].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "En France, quel est le seuil de période physique permettant la gestion par décroissance ?",
+        "options": [
+          "< 30 jours",
+          "< 100 jours",
+          "≤ 120 jours",
+          "< 1 an"
+        ],
+        "answer": 1,
+        "explanation": "La Décision ASN 2008-DC-0095 réserve la gestion par décroissance aux radionucléides de période < 100 jours (descendants compris) [7][9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Aux États-Unis, quel seuil de période autorise le decay-in-storage selon 10 CFR 35.92 ?",
+        "options": [
+          "≤ 60 jours",
+          "≤ 100 jours",
+          "≤ 120 jours",
+          "Aucun seuil"
+        ],
+        "answer": 2,
+        "explanation": "La règle fédérale 10 CFR 35.92 autorise la conservation pour décroissance de tout matériau de période physique ≤ 120 jours, sans considération d'activité [4][5].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Après combien de périodes reste-t-il environ 0,1 % de l'activité initiale ?",
+        "options": [
+          "3 périodes",
+          "5 périodes",
+          "10 périodes",
+          "20 périodes"
+        ],
+        "answer": 2,
+        "explanation": "Après n périodes il reste A₀/2ⁿ ; après 10 périodes ≈ 1/1024 ≈ 0,1 %, d'où la règle française d'entreposer > 10 périodes [9].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel est le critère de libération d'un déchet en France avant retour en filière conventionnelle ?",
+        "options": [
+          "Activité nulle mesurée",
+          "Niveau ≤ 2 × le bruit de fond local",
+          "Activité < 1 GBq",
+          "Signal indiscernable du bruit de fond uniquement"
+        ],
+        "answer": 1,
+        "explanation": "En France le niveau résiduel doit être ramené à environ deux fois le bruit de fond local, vérifié avant évacuation, souvent avec passage sous portique [5][10].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel critère de libération impose la réglementation américaine (10 CFR 35.92) ?",
+        "options": [
+          "Activité < 10 Bq/L",
+          "Radioactivité indiscernable du bruit de fond, détecteur à l'échelle la plus sensible sans blindage",
+          "Débit de dose < 5 µSv/h",
+          "Attente obligatoire de 10 périodes"
+        ],
+        "answer": 1,
+        "explanation": "Le critère US est un contrôle de surface au contact montrant une radioactivité indiscernable du bruit de fond, appareil à l'échelle max sans écran, puis oblitération des étiquettes [4][5].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle impureté du Lu-177 thérapeutique dicte à elle seule la durée d'entreposage des déchets ?",
+        "options": [
+          "Le Lu-176 stable",
+          "Le Lu-177m de période ~152–160 jours",
+          "Le Ge-68",
+          "Le Cs-137"
+        ],
+        "answer": 1,
+        "explanation": "Le Lu-177m (~0,3 % de l'activité, période ~152–160 j) impose un entreposage de 3 ans pour les flacons vides et 5 ans pour les flacons partiellement utilisés [38].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Que deviennent les déchets contaminés par un radionucléide de période > 100 jours en France ?",
+        "options": [
+          "Ils sont rejetés au réseau après dilution",
+          "Ils sont collectés à la source et repris par l'ANDRA",
+          "Ils sont gérés comme des DASRI ordinaires",
+          "Ils sont conservés indéfiniment dans le service"
+        ],
+        "answer": 1,
+        "explanation": "Les radionucléides de période > 100 jours sortent du champ de la décroissance sur place : collecte à la source puis reprise par un organisme spécialisé (ANDRA) [6][9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "À quelle classe AIEA correspondent typiquement les déchets de médecine nucléaire ?",
+        "options": [
+          "HLW (haute activité)",
+          "ILW (moyenne activité, vie longue)",
+          "VSLW (déchets à vie très courte)",
+          "EW exclusivement"
+        ],
+        "answer": 2,
+        "explanation": "La classe VSLW (Very Short-Lived Waste) de la classification AIEA GSG-1 est la classe centrale de la médecine nucléaire : entreposée quelques mois puis libérée [10].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment sont gérés les effluents liquides issus des chambres d'hospitalisation I-131 ou Lu-177 ?",
+        "options": [
+          "Rejet immédiat au tout-à-l'égout",
+          "Cuves de décroissance dédiées avant rejet contrôlé au réseau",
+          "Évaporation à l'air libre",
+          "Incinération avec les DASRI"
+        ],
+        "answer": 1,
+        "explanation": "Les excreta des patients traités sont collectés dans des cuves de décroissance fonctionnant par cycles remplissage/décroissance/vidange avant rejet contrôlé [6][46].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la limite de dose annuelle pour le public selon la CIPR 103 ?",
+        "options": [
+          "0,1 mSv/an",
+          "1 mSv/an",
+          "20 mSv/an",
+          "5 mSv/an"
+        ],
+        "answer": 1,
+        "explanation": "La CIPR 103 fixe la limite de dose au public à 1 mSv/an (le travailleur exposé étant à 20 mSv/an moyennés sur 5 ans) [44][10].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel radionucléide génère la dose la plus élevée aux tiers après thérapie interne non scellée ?",
+        "options": [
+          "Le Y-90 (β pur)",
+          "Le P-32",
+          "L'I-131 (β/γ 364 keV)",
+          "Le Sr-89"
+        ],
+        "answer": 2,
+        "explanation": "Selon la CIPR 94, l'I-131 produit la dose la plus élevée aux tiers ; les émetteurs β purs (P-32, Sr-89, Y-90) posent bien moins de risque [14].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle activité corporelle est reconnue par l'AIEA comme bonne pratique pour la sortie d'un patient traité à l'I-131 ?",
+        "options": [
+          "≤ 100 MBq",
+          "≤ 400 MBq",
+          "≤ 1100 MBq obligatoire",
+          "Aucun seuil"
+        ],
+        "answer": 1,
+        "explanation": "Le critère international AIEA est de 1100 MBq (≈ 30 mCi), mais une activité retenue ≤ 400 MBq est reconnue comme bonne pratique internationale [15][25].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel niveau de dose fonde le concept d'exemption/clearance des radionucléides artificiels selon l'AIEA ?",
+        "options": [
+          "1 µSv/an",
+          "10 µSv/an",
+          "1 mSv/an",
+          "100 µSv/an"
+        ],
+        "answer": 1,
+        "explanation": "Les niveaux d'exemption et de libération sont fondés sur une contrainte de dose de l'ordre de 10 µSv/an au public pour les radionucléides artificiels [10][25].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel type de source échappe à la décroissance sur place et suit la filière reprise fournisseur / ANDRA ?",
+        "options": [
+          "Les sacs de déchets marqués F-18",
+          "Les cuves d'urines de patients I-131",
+          "Les sources scellées de calibration (Co-57, Ge-68, Cs-137)",
+          "Les seringues de Tc-99m"
+        ],
+        "answer": 2,
+        "explanation": "Les sources scellées de calibration (Co-57, Ge-68 271 j, Cs-137) ont une période longue : elles relèvent de la reprise fournisseur ou de l'ANDRA, pas de la décroissance sur place [18][40].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Combien de temps environ doit-on entreposer un générateur Mo-99/Tc-99m usagé avant élimination ?",
+        "options": [
+          "Quelques heures",
+          "Environ 28 jours (10 × la période du Mo-99, 66 h) ou retour fournisseur",
+          "1 an",
+          "5 ans"
+        ],
+        "answer": 1,
+        "explanation": "Le Mo-99 ayant une période de ~66 h, ~10 périodes ≈ 660 h ≈ 28 jours ; en pratique le générateur usagé est souvent retourné au fournisseur [9][27].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle particularité des déchets marqués au F-18 découle de sa période de 110 minutes ?",
+        "options": [
+          "Ils exigent un stockage de plusieurs années",
+          "Ils sont souvent évacuables en filière DASRI dès le lendemain",
+          "Ils doivent partir à l'ANDRA",
+          "Ils ne peuvent jamais être libérés"
+        ],
+        "answer": 1,
+        "explanation": "Le F-18 (période ~110 min) décroît en heures : les sacs de déchets marqués F-18 sont souvent évacuables en filière DASRI dès le lendemain [17].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quel document est le texte pivot français fixant les règles d'élimination des effluents et déchets contaminés ?",
+        "options": [
+          "La norme ISO 9001",
+          "La Décision ASN n° 2008-DC-0095 du 29 janvier 2008",
+          "Le décret Seveso",
+          "La directive Euratom 96/29 seule"
+        ],
+        "answer": 1,
+        "explanation": "La Décision ASN 2008-DC-0095 (homologuée par arrêté du 23 juillet 2008, appliquant l'art. R.1333-12 CSP), précisée par le Guide ASN n°18, est le texte pivot [1][2][31].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Stratégie dominante = décroissance sur place (decay-in-storage) : entreposage jusqu'au retour au bruit de fond puis élimination conventionnelle [1][4].",
+        "Seuil de période : < 100 jours en France (décroissance autorisée) vs ≤ 120 jours aux USA (10 CFR 35.92) — différence réglementaire réelle [7][4].",
+        "Durée d'entreposage France : > 10 périodes (≈ 0,1 % d'activité résiduelle) ; règle de bonne pratique, pas le libellé littéral du critère US [9].",
+        "Critère de libération : ≤ 2 × bruit de fond local (France) / radioactivité indiscernable du bruit de fond (USA), puis oblitération des étiquettes [5][4].",
+        "Effluents liquides (excreta des patients I-131, Lu-177) → cuves de décroissance dédiées avant rejet contrôlé au réseau [6][46].",
+        "Période > 100 jours et sources scellées (Co-57, Ge-68, Cs-137) → hors décroissance → reprise fournisseur / ANDRA [6][18].",
+        "Piège Lu-177 : l'impureté Lu-177m (~152–160 j) impose 3 ans (flacons vides) à 5 ans (flacons entamés) d'entreposage [38].",
+        "Cadre : Décision ASN 2008-DC-0095 + Guide n°18 (France), 10 CFR 35.92/35.2092 (USA), AIEA GSG-1, CIPR 94/103/128 [1][31][4][10]."
+      ],
+      "protocol": [
+        "1. Identifier le radionucléide et sa période physique.",
+        "2. Période < 100 j (Fr) / ≤ 120 j (USA) → entreposage pour décroissance (> 10 périodes en France) ; sinon collecte à la source → ANDRA / reprise fournisseur [4][9].",
+        "3. Tri à la source par famille de période ; déchets solides (aiguilles, seringues) en DASRI, fûts plombés, local de décroissance dédié fermé, ventilé, à rétention [17][19].",
+        "4. Effluents liquides (excreta) → cuves de décroissance en cycles remplissage/décroissance/vidange → contrôle → rejet réseau sous seuil [6][46].",
+        "5. Effluents gazeux (Xe-133, Kr-81m, air activé cyclotron) → captation ventilation/hottes, décroissance des gaz rares, rejet atmosphérique contrôlé [26][37].",
+        "6. Contrôle radiologique avant évacuation (≤ 2 × bruit de fond Fr / indiscernable USA), passage sous portique, oblitération des étiquettes de radioactivité [4][5].",
+        "7. Enregistrements conservés (date, instrument, bruit de fond, niveau mesuré, opérateur ; 3 ans aux USA) et Plan de gestion des effluents et déchets (PGED) obligatoire [6][19]."
+      ],
+      "scores": [
+        "Seuils de période : France < 100 j ; USA ≤ 120 j (10 CFR 35.92) [7][4].",
+        "Entreposage : > 10 périodes → activité résiduelle ≈ 0,1 % [9].",
+        "Libération : ≤ 2 × bruit de fond (France) ; indiscernable du bruit de fond (USA) [5][4].",
+        "Exemption/clearance AIEA : ~10 µSv/an ; limite public 1 mSv/an ; travailleur 20 mSv/an, cristallin 20 mSv/an, extrémités 500 mSv/an [10][44].",
+        "Sortie patient I-131 : critère AIEA 1100 MBq (~30 mCi), bonne pratique ≤ 400 MBq ; contrainte proches quelques mSv/épisode [15][14].",
+        "Cas Lu-177m : entreposage 3 ans (flacons vides) / 5 ans (flacons entamés) [38]."
+      ],
+      "pitfalls": [
+        "Confondre les seuils 100 j (France) et 120 j (USA) : différence réglementaire réelle à ne pas mélanger [7][4].",
+        "Prendre la règle des « 10 périodes » pour le libellé littéral de 10 CFR 35.92, qui impose en réalité le critère « indiscernable du bruit de fond » [4].",
+        "Oublier l'impureté Lu-177m : après 3 mois le débit au contact des flacons vides reste ~14× le niveau de libération → blocage de l'espace d'entreposage [38].",
+        "Éliminer un déchet en filière conventionnelle avant le contrôle attestant le retour au bruit de fond (élimination non conforme, avis d'incident ASN) [30].",
+        "Négliger l'oblitération des symboles de radioactivité avant évacuation en filière conventionnelle [4].",
+        "Traiter les sources scellées longue période comme des déchets à vie courte : elles relèvent de la reprise fournisseur / ANDRA [18][40]."
+      ]
+    },
+    "lead": "La gestion des déchets et effluents radioactifs est une part essentielle et quotidienne de l'activité en médecine nucléaire, où tout ce qui a été en contact avec un produit radioactif doit être maîtrisé jusqu'à son élimination. Parce que les produits utilisés perdent naturellement leur radioactivité avec le temps, la stratégie principale consiste à les conserver à l'abri le temps qu'ils redeviennent inoffensifs avant de les évacuer dans les circuits habituels. Ce processus obéit à des règles précises, à des contrôles systématiques et à des autorités qui veillent à la protection du personnel, des patients, du public et de l'environnement. Les effluents produits par les patients eux-mêmes, notamment leurs urines après un traitement, font aussi l'objet d'une collecte et d'une surveillance dédiées. C'est une discipline discrète mais fondamentale, où la rigueur et la traçabilité priment à chaque étape.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert la gestion des déchets radioactifs ?",
+          "text": "En médecine nucléaire, on utilise de très petites quantités de produits légèrement radioactifs pour réaliser des images (examens) ou certains traitements. Une particularité de ces produits est qu'ils perdent naturellement leur radioactivité avec le temps, souvent très rapidement. La gestion des déchets consiste simplement à mettre de côté, dans un local sécurisé de l'hôpital, tout ce qui a été en contact avec ces produits, comme les seringues, les flacons ou les compresses, le temps que la radioactivité disparaisse d'elle-même. Une fois revenus au niveau de radioactivité que l'on trouve naturellement autour de nous, ces déchets sont éliminés comme n'importe quel déchet hospitalier ordinaire. C'est une démarche encadrée par la loi, dont le seul but est de protéger les patients, le personnel soignant et l'environnement.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Une démarche invisible pour vous",
+              "text": "Cette gestion des déchets se déroule en coulisses, dans le service. Elle ne change rien à votre examen ni à votre traitement, et vous n'avez aucune démarche particulière à accomplir de votre côté."
+            }
+          ]
+        },
+        {
+          "title": "Comment cela se passe et pourquoi c'est sûr",
+          "text": "Les produits employés sont choisis notamment parce qu'ils perdent vite leur radioactivité : pour beaucoup d'entre eux, il n'en reste presque plus au bout de quelques heures ou de quelques jours. Le service trie soigneusement les déchets selon le produit concerné, puis les laisse simplement attendre dans un local fermé et surveillé. Avant toute élimination, le personnel vérifie avec un appareil de mesure que la radioactivité a bien disparu ; rien n'est jamais éliminé tant qu'il reste plus de radioactivité que dans l'environnement naturel. Les liquides, comme ceux des éviers spéciaux et des toilettes réservées, passent par des cuves dédiées où ils patientent eux aussi avant d'être évacués. L'ensemble de ce processus est contrôlé par des organismes officiels indépendants qui veillent à la sécurité.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Et chez moi, après un traitement ?",
+              "text": "Si vous recevez un traitement, l'équipe vous remettra des conseils simples et faciles à suivre pendant quelques jours (par exemple sur l'usage des toilettes ou la distance à garder avec les jeunes enfants). Ces consignes suffisent à protéger votre entourage."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Illustration simple montrant la radioactivité d'un produit qui diminue progressivement au fil du temps jusqu'à disparaître",
+            "caption": "La radioactivité des produits utilisés diminue naturellement avec le temps : il suffit d'attendre avant d'éliminer les déchets."
+          }
+        },
+        {
+          "title": "Faut-il s'inquiéter pour son entourage ou l'environnement ?",
+          "text": "Non. Les quantités de radioactivité utilisées en médecine nucléaire sont faibles et pensées pour s'éliminer rapidement. Le principe de base est toujours le même : attendre que la radioactivité s'éteigne naturellement avant de relâcher quoi que ce soit, et ne rien éliminer tant qu'il subsiste plus de radioactivité que le niveau naturel qui nous entoure au quotidien. Si vous avez reçu un produit, votre corps l'élimine lui aussi de façon naturelle, principalement par les urines, en quelques heures à quelques jours. L'équipe de médecine nucléaire connaît parfaitement ces situations et reste à votre disposition pour toutes vos questions.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Posez vos questions",
+              "text": "N'hésitez jamais à demander des précisions à l'équipe de médecine nucléaire : médecin, manipulateur ou personne compétente en radioprotection. Ils ont l'habitude de ces situations et sont là pour vous accompagner et vous rassurer."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Quand y penser dans votre pratique",
+          "text": "La gestion des déchets et effluents radioactifs est un sujet interne au service de médecine nucléaire, mais elle a des implications pratiques que tout clinicien peut rencontrer en aval. Pensez-y surtout lorsque vous prenez en charge un patient ayant reçu récemment un traitement par radiopharmaceutique : iode radioactif pour une pathologie thyroïdienne (cancer ou hyperthyroïdie), lutétium en théranostique (tumeurs neuroendocrines, cancer de la prostate), ou yttrium en radioembolisation hépatique. Ces patients éliminent le produit, surtout par les urines, dans les heures à jours qui suivent. Vous pouvez aussi être sollicité pour des questions de l'entourage, une hospitalisation rapprochée dans un service non spécialisé, un geste ou un examen à programmer, ou la gestion d'un décès survenu peu après une thérapie. Dans toutes ces situations, le service de médecine nucléaire et la personne compétente en radioprotection sont vos interlocuteurs de référence.",
+          "list": [
+            "Patient adressé après une thérapie par iode radioactif (cancer thyroïdien ou hyperthyroïdie)",
+            "Patient sous traitement théranostique (lutétium-DOTATATE ou lutétium-PSMA)",
+            "Question d'un patient ou d'un proche sur les précautions à domicile",
+            "Réhospitalisation rapprochée dans un service non spécialisé",
+            "Geste, examen ou intervention à coordonner chez un patient récemment traité",
+            "Décès survenu peu de temps après une thérapie par radiopharmaceutique"
+          ]
+        },
+        {
+          "title": "La démarche et le cadre réglementaire",
+          "text": "Le principe central est la décroissance sur place : comme les produits utilisés perdent vite leur radioactivité, le service entrepose les déchets dans un local dédié jusqu'à ce que celle-ci redevienne indiscernable du niveau naturel, avant élimination dans les filières hospitalières habituelles et sous contrôle. Les rares déchets ou effluents qui décroissent trop lentement relèvent de filières spécialisées et repérées. L'ensemble s'inscrit dans un plan de gestion des effluents et déchets contaminés, obligatoire et contrôlé par les autorités. Pour le clinicien, l'essentiel à retenir est que les excréta des patients traités sont pris en charge par le service, et que des consignes simples de radioprotection (usage des toilettes, distance avec les jeunes enfants et les femmes enceintes, durée limitée) accompagnent la sortie. En cas de doute sur un patient récemment traité, le réflexe est de contacter le service avant tout geste ou toute hospitalisation.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adresser ou simplement contacter le service de médecine nucléaire sécurise la prise en charge d'un patient traité par radiopharmaceutique. Le service confirme le délai écoulé depuis l'administration, vérifie que l'activité résiduelle autorise une prise en charge standard, transmet les consignes de radioprotection adaptées à l'entourage et au personnel, et oriente les situations particulières : réhospitalisation précoce, grossesse ou jeune enfant dans l'entourage, geste invasif, ou décès récent. La personne compétente en radioprotection répond précisément à ces questions et évite des précautions soit insuffisantes, soit excessives et inutilement anxiogènes."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Schéma reliant l'administration d'un radiopharmaceutique thérapeutique, l'élimination par le patient et la gestion des déchets et effluents par le service",
+            "caption": "Le parcours d'un patient traité par radiopharmaceutique intègre l'élimination du produit et la gestion encadrée des effluents."
+          }
+        },
+        {
+          "title": "L'apport de la médecine nucléaire",
+          "text": "Au-delà de la gestion technique des déchets, le service de médecine nucléaire apporte au clinicien une expertise concrète et directement utile. Il connaît la cinétique d'élimination de chaque produit, sait à partir de quel moment un patient ne présente plus de contrainte de radioprotection significative, et délivre des consignes individualisées plutôt que des règles générales approximatives. Pour les thérapies, il assure le suivi des traitements administrés, la traçabilité réglementaire et la coordination avec les autres services impliqués. En pratique, cela permet d'éviter deux écueils symétriques : appliquer des précautions disproportionnées qui isolent inutilement le patient et retardent les soins, ou au contraire négliger des précautions réellement utiles. Le service est ainsi un partenaire pour fluidifier le parcours des patients ayant reçu un radiopharmaceutique.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Réflexe utile",
+              "text": "Notez toujours dans le dossier la date et le type de traitement par radiopharmaceutique reçu. Cette information simple permet à tout intervenant ultérieur d'évaluer rapidement, avec le service de médecine nucléaire, s'il subsiste une contrainte de radioprotection à prendre en compte."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identite — la decroissance sur place, principe directeur de la gestion des dechets",
+          "text": "**Comment lire cette carte.** La gestion des dechets et effluents radioactifs de medecine nucleaire n'est pas un probleme de confinement definitif comme dans l'industrie electronucleaire, mais un probleme de **temps**. Parce que la quasi-totalite des radionucleides medicaux ont des **periodes courtes** (heures a jours), la strategie dominante consiste a **entreposer le dechet a l'abri le temps que son activite rejoigne le bruit de fond**, puis a l'eliminer dans les filieres conventionnelles [1][4]. Cette strategie porte un nom : la **decroissance sur place** (« decay-in-storage », DIS).\n\nUn **dechet radioactif** est une substance radioactive pour laquelle aucune utilisation ulterieure n'est prevue ; un **effluent radioactif** est un rejet liquide ou gazeux contamine par des radionucleides [1]. En medecine nucleaire, ils proviennent de l'emploi de **sources non scellees** (preparation et administration des radiopharmaceutiques) et des **excreta des patients** [1][5].\n\n| Champ | Valeur | Source |\n|---|---|---|\n| **Principe directeur** | Decroissance sur place (DIS) puis elimination conventionnelle | [1][4] |\n| **Origine** | Sources non scellees + excreta patients | [1][5] |\n| **Loi physique** | A(t) = A0 . e^(-ln2 . t / T1/2) | [1][7] |\n| **Regle de bonne pratique** | ~10 periodes -> activite residuelle ~0,1 % | [7][9] |\n| **Seuil DIS France** | Periode **< 100 jours** | [7][20] |\n| **Seuil DIS Etats-Unis** | Periode **<= 120 jours** (10 CFR 35.92) | [4][5] |\n| **Critere de liberation France** | Niveau residuel <= **2 x bruit de fond** local + portique | [20][23] |\n| **Critere de liberation USA** | Signal **indiscernable du bruit de fond** (detecteur au max, sans ecran) | [4][5] |\n| **Texte pivot France** | Decision ASN n° **2008-DC-0095** du 29/01/2008, homologuee 23/07/2008 | [1][2] |\n| **Referentiel international** | Classification AIEA **GSG-1** (6 classes) | [10] |\n| **Filiere periode longue (> 100 j)** | Reprise fournisseur / **ANDRA** | [6][24] |\n\n**Piege de lecture d'emblee.** Trois seuils cohabitent et se confondent facilement : le **100 jours** francais, le **120 jours** americain, et la **regle des ~10 periodes** — qui n'est pas un texte reglementaire universel mais une bonne pratique dimensionnant la duree d'entreposage. Les sections A3 et A4 les distinguent formellement.",
+          "stats": [
+            {
+              "value": "< 100 j",
+              "label": "Seuil de periode pour la DIS (France) [7][20]"
+            },
+            {
+              "value": "~10 T1/2",
+              "label": "Entreposage de bonne pratique -> ~0,1 % residuel [7][9]"
+            },
+            {
+              "value": "2 x BdF",
+              "label": "Critere de liberation francais avant elimination [20][23]"
+            },
+            {
+              "value": "2008-DC-0095",
+              "label": "Decision ASN pivot (29/01/2008) [1][2]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — pourquoi « sur place » et pas « stockage »",
+              "text": "En medecine nucleaire, le dechet n'est pas stocke *definitivement* : il est **entrepose transitoirement** puis **declasse** en dechet conventionnel une fois l'activite revenue au bruit de fond. Le local de decroissance est donc un sas temporel, pas un site de stockage. C'est ce qui distingue radicalement la medecine nucleaire des dechets de haute activite a vie longue (HLW), qui exigent un confinement geologique."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Schema de decroissance radioactive : courbe exponentielle de l'activite en fonction du temps, illustrant le retour vers le bruit de fond apres environ dix periodes, principe de la decroissance sur place."
+          }
+        },
+        {
+          "title": "A2 - Comprendre le probleme — pourquoi le dechet de medecine nucleaire n'est pas comme les autres",
+          "text": "**La singularite fondatrice : la periode courte.** Le dechet nucleaire du grand public — celui des reacteurs de puissance — se caracterise par des radionucleides de **periode longue** (plusieurs annees a plusieurs millenaires) qui imposent un **confinement passif prolonge**. Le dechet de medecine nucleaire est l'exact oppose : ses radionucleides ont, dans leur immense majorite, des periodes de l'ordre de **quelques heures a quelques jours** [8]. Cette difference physique change entierement la logique de gestion : on ne confine pas, on **attend**. Le probleme cesse de lui-meme si l'on patiente assez longtemps.\n\n**Trois familles de dechets, trois cinetiques.** Les sources non scellees generent [1][5][17] :\n\n| Famille | Contenu typique | Cinetique / devenir |\n|---|---|---|\n| **Solides** | Aiguilles, seringues, flacons, gants, compresses, protege-seringues, papier absorbant, generateurs Mo-99/Tc-99m usages | Tri par periode -> local de decroissance -> filiere DASRI apres controle [17] |\n| **Liquides** | Restes de preparations, eaux de rincage, et surtout **urines/excreta des patients** | Cuves de decroissance -> rejet controle au reseau [5][6] |\n| **Gazeux** | Radio-aerosols (ventilation), gaz rares (**Xe-133**, T1/2 ~5 j), vapeurs de radio-iode | Captation par ventilation dediee/hottes -> rejet atmospherique controle [26] |\n\n**DASRI** = dechets d'activites de soins a risques infectieux. Le paradoxe operationnel de la medecine nucleaire est que le meme objet (une seringue) est **a la fois** un dechet infectieux ET radioactif : la contrainte radiologique se surajoute a la contrainte biologique, et c'est la contrainte radiologique qui commande le **timing** de l'evacuation.\n\n**L'effluent-patient : une source diffuse et incontournable.** Contrairement au dechet solide que l'on peut confiner dans un fut, l'activite administree au patient s'elimine **physiologiquement** — principalement par les urines. Le patient devient une **source mobile** qui rejette de l'activite dans le reseau d'assainissement du service, puis a son domicile apres sa sortie. Pour les therapies (I-131, Lu-177), les chambres d'hospitalisation protegee sont raccordees a des **cuves de decroissance** dediees avant rejet controle [6].\n\n**Le contre-exemple qui confirme la regle : Lu-177m.** Le Lu-177 therapeutique contient une impurete **Lu-177m** representant **0,3 %** [0,2-1,7 %] de l'activite totale, mais de periode **~152-160 jours** [15][38]. Cette trace de periode longue **dicte a elle seule** la duree d'entreposage : **3 ans** pour les flacons vides, **5 ans** pour les flacons partiellement utilises [15][38]. Un radionucleide « a periode courte » peut donc porter un passager clandestin a vie longue qui fait basculer la logique de gestion — d'ou l'obligation de raisonner sur **tout** le contenu du dechet, produits de filiation compris.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — le patient sortant est un vecteur de dechet a domicile",
+              "text": "Apres liberation, l'activite residuelle continue de s'eliminer par les urines au domicile du patient. Pour le Lu-177-PSMA, prolonger le sejour jusqu'a la **premiere miction** (voire une nuit) reduit nettement la quantite de dechets contamines geree par le patient chez lui [17][18]. La gestion des dechets deborde donc l'enceinte du service : elle inclut les consignes post-examen (mictions frequentes, hygiene)."
+            },
+            {
+              "type": "info",
+              "title": "Point expert — deux contraintes superposees sur un meme objet",
+              "text": "Une seringue usagee de medecine nucleaire cumule le statut DASRI (risque infectieux) et le statut dechet radioactif. La regle : on gere d'abord la decroissance (contrainte radiologique, qui impose le delai), puis on evacue dans la filiere DASRI conventionnelle une fois le retour au bruit de fond controle [17]."
+            }
+          ]
+        },
+        {
+          "title": "A3 - Le socle physique — decroissance exponentielle, periode et regle des dix periodes",
+          "text": "**La loi de decroissance.** L'activite d'un radionucleide decroit de facon **exponentielle** :\n\nA(t) = A0 . e^(-lambda . t), avec lambda = ln2 / T1/2\n\nou A0 est l'activite initiale, lambda la constante de desintegration et **T1/2 la periode physique** (temps au bout duquel l'activite est divisee par deux) [1][7]. Cette formulation est la meme que celle qui gouverne la biocinetique des radiopharmaceutiques ; ici, elle gouverne le **temps d'entreposage** du dechet.\n\n**La regle des puissances de deux.** Apres **n periodes**, il reste A0 / 2^n de l'activite initiale. D'ou le tableau operationnel qui fonde toute la gestion :\n\n| Nombre de periodes ecoulees | Activite residuelle | Fraction |\n|---|---|---|\n| 1 T1/2 | 50 % | 1/2 |\n| 3 T1/2 | 12,5 % | 1/8 |\n| 7 T1/2 | ~0,8 % | 1/128 |\n| **10 T1/2** | **~0,1 %** | **1/1024** |\n\nApres **10 periodes**, il reste **~1/1024, soit ~0,1 %** de l'activite initiale [7][9]. C'est ce chiffre qui fonde la **regle pratique des ~10 demi-vies** retenue par les programmes hospitaliers de decay-in-storage : au-dela, l'activite residuelle est en general noyee dans le bruit de fond [7]. En France, la duree d'entreposage de chaque compartiment de dechets est explicitement dimensionnee sur **~10 periodes**, un dechet ne pouvant etre evacue qu'apres un delai **superieur a 10 fois la periode** du radionucleide [20].\n\n**Application au dimensionnement de l'entreposage.** Le temps d'entreposage se calcule directement a partir de la periode :\n\n| Radionucleide | Periode T1/2 | Usage | ~10 x T1/2 (ordre de grandeur) | Source |\n|---|---|---|---|---|\n| **Ga-68** | 68 min | TEP (PSMA, DOTA) | ~11 h | [13][36] |\n| **F-18** | ~110 min (1,83 h) | TEP (FDG) | ~18 h (souvent evacuable **le lendemain**) | [12][17] |\n| **Tc-99m** | ~6 h | TEMP / scinti | ~2,5 j | [12] |\n| **I-123** | ~13 h | Diagnostic thyroide | ~5 j | [8] |\n| **Lu-177** | 6,6-6,7 j | Therapie (PSMA, DOTATATE) | ~9-10 semaines* | [12][15] |\n| **I-131** | ~8 j | Therapie / scinti thyroide | ~11-12 semaines | [12] |\n| **Mo-99** (generateur usage) | ~66 h (2,75 j) | Generateur -> Tc-99m | ~28 j (ou **retour fournisseur**) | [9][27] |\n\n*L'entreposage reel du Lu-177 est en pratique **domine par l'impurete Lu-177m** (~152-160 j) et non par le Lu-177 lui-meme, imposant 3 a 5 ans (cf. A2) [15][38].\n\n**Nuance reglementaire essentielle.** La « regle des 10 periodes » est une **bonne pratique** (0,1 % residuel), et c'est la formulation retenue par la reglementation francaise [20]. En revanche, la reglementation americaine (**10 CFR 35.92**) a **supprime** l'ancienne exigence de conserver le dechet 10 periodes : le critere y est desormais purement le resultat du controle — activite **indiscernable du bruit de fond** [4][5]. Deux philosophies coexistent donc : un critere de **duree** (France, ~10 T1/2) et un critere de **resultat de mesure** (USA).",
+          "stats": [
+            {
+              "value": "A0 / 2^n",
+              "label": "Activite residuelle apres n periodes [1][7]"
+            },
+            {
+              "value": "~0,1 %",
+              "label": "Residuel apres 10 periodes (1/1024) [7][9]"
+            },
+            {
+              "value": "~18 h",
+              "label": "10 x T1/2 du F-18 : dechets evacuables le lendemain [12][17]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — « 10 periodes » n'est pas une loi universelle",
+              "text": "La regle des 10 periodes est une bonne pratique de dimensionnement (0,1 % residuel [7]) et le libelle de la reglementation francaise [20]. Le texte americain 10 CFR 35.92 ne l'impose pas : il exige un signal indiscernable du bruit de fond, mesure au contact, detecteur regle sur l'echelle la plus sensible et sans ecran interpose [4][5]. Ne pas citer « 10 periodes » comme un standard federal americain."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la periode commande tout, y compris via la filiation",
+              "text": "Le critere de decroissance doit s'appliquer au radionucleide ET a ses descendants : en France, un dechet est exclu de la DIS si un produit de filiation depasse lui-meme 100 jours de periode [20]. Toujours verifier la chaine de decroissance complete, pas seulement le radionucleide pere."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schema des modes de desintegration radioactive (alpha, beta, gamma) reliant le type d'emission a la strategie de gestion et de radioprotection du dechet correspondant."
+          }
+        },
+        {
+          "title": "A4 - Classer pour orienter — classifications AIEA / ANDRA et notion de seuil de liberation",
+          "text": "**Classer, c'est orienter vers une filiere.** La classification d'un dechet n'est pas un exercice academique : elle determine directement **ou il ira**. Deux referentiels se completent — la classification **internationale AIEA** (fondee sur l'activite et la periode) et l'organisation **francaise** (fondee sur le seuil des 100 jours et l'orientation ANDRA).\n\n**AIEA** = Agence internationale de l'energie atomique. **ANDRA** = Agence nationale pour la gestion des dechets radioactifs.\n\n**La classification AIEA (GSG-1) — six classes.** Le referentiel **GSG-1** ordonne les dechets par activite et periode croissantes [10] :\n\n| Classe AIEA | Signification | Devenir |\n|---|---|---|\n| **EW** (Exempt Waste) | Activite si faible qu'aucun controle reglementaire n'est requis | Dechet « libere » -> filiere conventionnelle [10] |\n| **VSLW** (Very Short-Lived Waste) | Entreposable quelques mois a quelques annees pour decroissance | **Classe centrale de la medecine nucleaire** [10] |\n| **VLLW** (Very Low Level Waste) | Tres faible activite | Stockage de surface dedie [10] |\n| **LLW** (Low Level Waste) | Faible activite | Stockage de surface [10] |\n| **ILW** (Intermediate Level Waste) | Activite intermediaire, periode plus longue | Confinement accru, pas de stockage de surface [10] |\n| **HLW** (High Level Waste) | Haute activite | Confinement geologique profond [10] |\n\nLe dechet de medecine nucleaire releve quasi exclusivement des classes **EW et VSLW** : c'est precisement parce qu'il est « a vie tres courte » qu'il peut etre entrepose pour decroissance puis libere [10]. Les sources scellees usagees a periode longue (Co-57, Ge-68, Cs-137) sortent de ce cadre.\n\n**Le seuil des 100 jours — la charniere francaise.** En France, la **Decision ASN n° 2008-DC-0095** organise l'orientation autour d'un seuil unique [1][7][20] :\n\n- **Periode < 100 jours** -> gestion **par decroissance** autorisee, sous reserve que les produits de filiation ne depassent pas non plus 100 jours [7][20].\n- **Periode > 100 jours** -> **exclusion de la decroissance** : collecte a la source, puis reprise par **ANDRA** ou **retour au fournisseur** (sources scellees) [6][24].\n\nCe seuil (**< 100 j** en France) differe du seuil americain (**<= 120 j**, 10 CFR 35.92) : c'est une **difference reglementaire reelle**, non une approximation [4][7].\n\n**La notion de seuil de liberation (« clearance » / exemption).** Liberer un dechet, c'est le faire sortir du controle reglementaire. Les niveaux AIEA reposent sur des criteres **dosimetriques** [11][12][25] :\n\n- **Exemption** : niveaux fondes sur une dose **<= 10 microSv/an** au public (dose triviale) [11][25].\n- **Clearance** : liberation pour scenarios realistes, dose de l'ordre de **10 microSv/an** ; la limite de dose au public reste **1 mSv/an** (GSR Part 3) [11][12][25].\n\nEn pratique operationnelle, la France ajoute un **critere de mesure** avant declassement : le niveau residuel doit etre ramene a **<= 2 x le bruit de fond local**, verifie par controle d'activite residuelle puis passage sous **portique de detection** fixe [20][23]. Les Etats-Unis retiennent un critere equivalent mais formule differemment : activite **indiscernable du bruit de fond**, detecteur au contact regle sur l'echelle la plus sensible et sans ecran interpose, suivi de l'**obliteration de tous les symboles de radioactivite** et de la conservation des enregistrements (date, instrument, bruit de fond, niveau mesure, operateur) pendant **3 ans** [4][5][6].\n\n**Synthese — l'algorithme d'orientation.**\n\n1. **Identifier** le radionucleide, sa periode ET celle de ses descendants.\n2. **Periode < 100 j** (Fr) / **<= 120 j** (US) -> entreposage pour decroissance (~10 T1/2 en France ; jusqu'au controle aux USA) -> mesure (<= 2 x BdF / indiscernable du BdF) -> obliteration des etiquettes -> filiere conventionnelle (DASRI/ordures) [4][20].\n3. **Periode > 100 j** ou source scellee -> collecte a la source -> **ANDRA** / reprise fournisseur [6][24].\n4. **Cas Lu-177** -> prolonger l'entreposage a **3-5 ans** a cause de l'impurete Lu-177m [15][38].",
+          "steps": [
+            {
+              "title": "1. Identifier",
+              "text": "Determiner le radionucleide, sa periode T1/2 et celles de ses produits de filiation [7][20]."
+            },
+            {
+              "title": "2. Classer / trier a la source",
+              "text": "Repartir par famille de periode (courte vs > 100 j) et par etat physique (solide / liquide / gazeux) des la production [17][20]."
+            },
+            {
+              "title": "3. Orienter",
+              "text": "Periode < 100 j -> decroissance sur place ; periode > 100 j ou source scellee -> collecte pour ANDRA / retour fournisseur [6][24]."
+            },
+            {
+              "title": "4. Entreposer",
+              "text": "Local de decroissance dedie / cuves ; duree ~10 x T1/2 (France) ou jusqu'au controle (USA) [4][20]."
+            },
+            {
+              "title": "5. Controler",
+              "text": "Mesure de l'activite residuelle : <= 2 x bruit de fond (Fr) ou indiscernable du bruit de fond (US), puis portique [4][20][23]."
+            },
+            {
+              "title": "6. Liberer / eliminer",
+              "text": "Obliterer tous les symboles de radioactivite, tracer, evacuer en filiere conventionnelle (DASRI/ordures/reseau) [4][5][6]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "6 classes",
+              "label": "Referentiel AIEA GSG-1 (EW -> HLW) [10]"
+            },
+            {
+              "value": "< 100 j",
+              "label": "Seuil francais decroissance vs orientation ANDRA [7][20]"
+            },
+            {
+              "value": "10 microSv/an",
+              "label": "Dose de reference pour l'exemption/clearance (AIEA) [11][25]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — 100 jours (France) vs 120 jours (USA)",
+              "text": "Ne pas confondre les deux seuils de periode ouvrant droit a la decroissance sur place : **< 100 jours** en France (Decision 2008-DC-0095 [7][20]) et **<= 120 jours** aux Etats-Unis (10 CFR 35.92 [4][5]). Ce sont deux valeurs reglementaires distinctes, pas une tolerance d'arrondi."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la source scellee usagee echappe a la decroissance",
+              "text": "Les sources de calibration/reference (Co-57, Ge-68 de periode 271 j, Cs-137) ont des periodes longues : elles ne relevent JAMAIS de la decroissance sur place. La filiere privilegiee est le **retour au fournisseur** (kits de reprise) ou la reprise ANDRA [6][13][40]. Verifier le contrat de reprise des la commande de la source."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schema temps-distance-ecran (ALARA) applique a l'entreposage des dechets : structuration des mesures de radioprotection au local de decroissance et lors des controles de liberation."
+          }
+        },
+        {
+          "title": "B1 - Trier a la source — segregation, conditionnement et signaletique des dechets solides",
+          "text": "Le tri **a la source**, au poste meme de production, est le determinant de toute la filiere : c'est lui qui conditionne la duree d'entreposage (dimensionnee par la periode la plus longue du lot) et la conformite de l'elimination finale. Un dechet mal trie contamine un flux entier et impose de le faire decroitre au rythme de son radionuclide le plus penalisant.[1][7]\n\n**Principe de segregation.** On separe des la production selon deux axes : (1) la **periode physique** du ou des radionuclides, et (2) la **nature physique/reglementaire** du dechet (piquant-coupant, souille, DASRI — dechets d'activites de soins a risques infectieux). Les objets piquants/coupants (aiguilles) et souilles (seringues, protege-seringues, cotons, compresses, gants, flacons, papier absorbant) sont regroupes par **famille de periode** et places dans des **futs/poubelles plombes** au sein du service, identifies par radionuclide.[17][22] La regle cardinale : **ne jamais melanger** un radionuclide de periode courte (F-18, Tc-99m) avec un radionuclide de periode plus longue (I-131, Lu-177) dans le meme conteneur, sous peine d'aligner toute la duree d'entreposage sur le plus lent.[7][9]\n\n**Seuil de periode — la ligne de partage.** En France, seuls les dechets contamines par des radionuclides de **periode < 100 jours** peuvent etre geres par decroissance, sous reserve que leurs descendants ne soient pas eux-memes de periode > 100 jours ; les radionuclides de **periode > 100 jours** ne sont **pas rejetes** mais collectes a la source et repris par un organisme specialise (**ANDRA** — Agence nationale pour la gestion des dechets radioactifs).[1][7][9] Aux Etats-Unis, la regle **10 CFR 35.92** autorise la decroissance de tout materiau de **periode <= 120 jours** sans consideration d'activite.[4][5]\n\n| Flux de dechet solide | Radionuclides typiques | Filiere apres tri | Source |\n|---|---|---|---|\n| Piquants/coupants a vie courte | F-18, Tc-99m | Fut plombe -> decroissance -> DASRI | [17][22] |\n| Souilles a vie courte | Tc-99m, I-123 | Poubelle plombee -> decroissance -> DASRI/ordures | [17][7] |\n| Souilles a vie plus longue | I-131, Lu-177 | Fut dedie -> decroissance prolongee | [1][38] |\n| Generateurs Mo-99/Tc-99m usages | Mo-99 (66 h) | Reprise fournisseur ou decroissance | [9][27] |\n| Sources scellees / periode > 100 j | Co-57, Ge-68, Cs-137 | Collecte a la source -> ANDRA / retour fournisseur | [1][40] |\n\n**Conditionnement et signaletique.** Chaque conteneur porte une **etiquette** mentionnant le radionuclide, la date de mise en dechet (ou de fermeture du sac), et le debit de dose au contact ; le local et les futs relevent du **trefle radioactif** reglementaire. La demarche s'inscrit dans le **Plan de gestion des effluents et des dechets (PGED)** obligatoire, qui decrit tri, conditionnement, entreposage, controle et elimination.[19][33] La signaletique n'est retiree qu'a la toute fin de la filiere : la reglementation US impose d'**obliterer ou retirer tous les symboles de radioactivite** avant elimination conventionnelle (sauf pour les DASRI en conteneur).[4][6]",
+          "stats": [
+            {
+              "value": "< 100 j",
+              "label": "Seuil de periode gerable par decroissance (France)[1][7]"
+            },
+            {
+              "value": "<= 120 j",
+              "label": "Seuil equivalent aux Etats-Unis (10 CFR 35.92)[4]"
+            },
+            {
+              "value": "PGED",
+              "label": "Plan de gestion des effluents/dechets obligatoire[19][33]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — le lot mixte",
+              "text": "Un seul dechet marque I-131 (periode 8 j) glisse dans un fut de dechets F-18 (110 min) oblige a faire decroitre l'ensemble du fut au rythme de l'I-131 (~3 mois au lieu du lendemain). Le tri par periode n'est pas une commodite mais la variable qui gouverne l'occupation du local de decroissance.[7][9]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — l'incident evitable",
+              "text": "L'ASN a rapporte des cas d'**elimination non conforme** de dechets contamines partis en filiere conventionnelle sans controle prealable.[30] La parade est procedurale : tri trace au poste, etiquetage systematique, et controle radiologique obligatoire avant toute sortie (cf. B2). Aucune etape ne se delegue a la memoire de l'operateur."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Temps, distance, ecran : les trois leviers ALARA appliques a la manipulation et au conditionnement des dechets solides au poste de tri.",
+            "caption": "Fig. B1 — Temps / distance / ecran : structure la manipulation des futs plombes au poste de tri."
+          }
+        },
+        {
+          "title": "B2 - Faire decroitre — organisation du local de decroissance et ordonnancement des lots",
+          "text": "La strategie dominante en medecine nucleaire est l'**entreposage pour decroissance radioactive** avant elimination dans les filieres conventionnelles, parce que la majorite des radionuclides medicaux ont des **periodes courtes**.[1][2] On l'appelle *decay-in-storage* (DIS). Le local de decroissance en est l'outil : un espace dedie ou les lots murissent jusqu'au retour au bruit de fond.\n\n**Loi de decroissance et regle des 10 periodes.** L'activite suit A(t) = A0 x e^(-ln2 x t/T), soit A0/2^n apres **n periodes**. Apres **10 periodes**, il reste ≈ 1/1024 ≈ **0,1 %** de l'activite initiale — d'ou la regle de bonne pratique universelle de ~10 demi-vies.[7][9] En France, la reglementation formalise cette regle : un dechet ne peut etre evacue de l'entreposage qu'apres un delai **superieur a 10 fois la periode** du radionuclide, et chaque compartiment est dimensionne sur ~10 periodes.[9][33] Aux Etats-Unis, l'ancienne exigence des 10 periodes a ete **supprimee** de 10 CFR 35.92 : le critere devient purement le resultat du controle (indiscernable du bruit de fond, cf. infra).[4][5]\n\n**Dimensionnement du local — l'arithmetique des periodes.** La duree d'entreposage se calcule radionuclide par radionuclide (10 x T). Elle va de **quelques heures** (Tc-99m : 6 h -> ~60 h) a **plusieurs semaines** pour l'I-131 (8 j -> ~80 j). Pratiquement, un sac de dechets marque F-18 est souvent evacuable **des le lendemain** en filiere DASRI.[17] Le generateur Mo-99/Tc-99m usage s'entrepose ~10 x la periode du Mo-99 (66 h), soit **~660 h ≈ 28 jours**, ou revient au fournisseur.[9][27]\n\n| Radionuclide | Periode T | ~10 periodes (duree d'entreposage) | Source |\n|---|---|---|---|\n| **F-18** | ~110 min (1,83 h) | ~18 h (evacuable le lendemain) | [12][17] |\n| **Ga-68** | 67,8 min | ~11 h | [13][36] |\n| **Tc-99m** | ~6 h | ~60 h (~2,5 j) | [12][35] |\n| **I-123** | 13,2 h | ~5,5 j | [8] |\n| **Mo-99** (generateur) | 66 h (~2,75 j) | ~28 j | [9][27] |\n| **Lu-177** | 6,6-6,7 j | ~67 j (mais cf. impurete Lu-177m, B4) | [12][15] |\n| **I-131** | ~8 j | ~80 j | [12][35] |\n\n**Ordonnancement des lots (FIFO date).** Le local s'exploite en **premier entre, premier sorti** : chaque fut/sac porte sa date de mise en dechet, et l'on ne controle un lot pour evacuation qu'apres depassement de son delai calcule. Un zonage interne separe les futs par periode, avec **blindage plombe**, ventilation, sol et parois **decontaminables**, retention pour les liquides, acces reserve ferme a cle et mesures anti-incendie.[1] La dosimetrie d'ambiance et l'application des leviers ALARA (temps/distance/ecran) protegent le personnel manipulant.[44]\n\n**Controle radiologique avant evacuation — le critere de liberation.** En France, le niveau residuel doit etre ramene a **deux fois le bruit de fond local (2 x BdF)** ; en pratique hospitaliere, controle d'activite residuelle puis passage sous **portique de detection** fixe en sortie de site.[10][20] Aux Etats-Unis, le critere est un signal **indiscernable du bruit de fond**, mesure **au contact**, detecteur regle sur son **echelle la plus sensible et sans blindage interpose**, suivi de l'**obliteration de toutes les etiquettes**.[4][5]",
+          "steps": [
+            {
+              "title": "1. Reception et datation",
+              "text": "Le fut/sac trie (B1) arrive au local avec son etiquette : radionuclide, date de mise en dechet, debit de dose au contact. Rangement dans le compartiment de sa famille de periode."
+            },
+            {
+              "title": "2. Entreposage pour decroissance",
+              "text": "Maturation >= 10 x periode (France) ; blindage plombe, ventilation, retention, acces reserve. Dosimetrie d'ambiance surveillee."
+            },
+            {
+              "title": "3. Controle radiologique",
+              "text": "Mesure de l'activite residuelle en zone a bas bruit de fond : critere <= 2 x BdF (France) ou indiscernable du BdF, echelle max sans ecran (US)."
+            },
+            {
+              "title": "4. Deconditionnement de la signaletique",
+              "text": "Obliteration/retrait de tous les symboles de radioactivite (sauf DASRI en conteneur), puis passage sous portique fixe en sortie de site."
+            },
+            {
+              "title": "5. Elimination conventionnelle et tracabilite",
+              "text": "Depart en filiere DASRI/ordures menageres ; enregistrements conserves (date, instrument, bruit de fond, niveau mesure, operateur — 3 ans aux US)."
+            }
+          ],
+          "stats": [
+            {
+              "value": "0,1 %",
+              "label": "Activite residuelle apres 10 periodes (~1/1024)[7]"
+            },
+            {
+              "value": "2 x BdF",
+              "label": "Critere de liberation francais (bruit de fond)[10][20]"
+            },
+            {
+              "value": "~28 j",
+              "label": "Entreposage d'un generateur Mo-99/Tc-99m usage[9][27]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert — 10 periodes est une bonne pratique, pas le libelle US",
+              "text": "La regle des ~10 periodes decrit le fait physique (0,1 % residuel) et est **inscrite dans la reglementation francaise** (delai > 10 x T).[9] Mais 10 CFR 35.92 (US) ne l'exige plus : il impose le **resultat du controle** (indiscernable du bruit de fond).[4] Distinguer les deux logiques evite les contresens en QCM comme en inspection."
+            },
+            {
+              "type": "warning",
+              "title": "Precaution — le compartiment mal date",
+              "text": "Un lot sans date de mise en dechet est ingerable : impossible de calculer son delai d'evacuation, il occupe indefiniment le local. L'etiquetage date (B1) et l'exploitation FIFO conditionnent la capacite reelle d'entreposage — un local sature force soit l'entassement, soit l'evacuation prematuree non conforme."
+            }
+          ]
+        },
+        {
+          "title": "B3 - Gerer les effluents liquides — cuves de decroissance, eviers chauds et excreta patients",
+          "text": "Les effluents liquides radioactifs proviennent de deux sources : la **preparation des sources** (restes de preparations, eaux de rincage) et, surtout, les **excreta des patients** (urines principalement), qui eliminent par voies naturelles la radioactivite administree.[1][2] Leur gestion repose sur des **cuves de decroissance** et un reseau d'**eviers chauds** dedies, physiquement separes du reseau d'assainissement general jusqu'au controle.\n\n**Cuves de decroissance — principe de fonctionnement.** Les chambres d'hospitalisation de radiotherapie interne (I-131, Lu-177) et les eviers chauds sont raccordes a des **cuves de decroissance** dediees, fonctionnant en cycles alternes **remplissage / decroissance / vidange**.[1][6] Une cuve se remplit pendant qu'une autre decroit ; chaque cuve est equipee d'une mesure de niveau, d'un dispositif de prelevement pour controle d'activite volumique, et d'une **detection de fuite**. Le rejet controle au reseau n'intervient qu'apres decroissance sous le seuil admis. Le seuil francais discute pour les effluents patients est de l'ordre de **10 Bq/L**, valeur de la Decision 2008-DC-0095 debattue par la communaute (SFRP/IRSN) pour son applicabilite aux excreta.[20]\n\n**Dimensionnement — exemple documente (installation I-131).** Une installation I-131 rapportee dans la litterature dispose d'une **cuve de delai de 7 500 L**, d'un reservoir de dilution de **6 000 000 L**, et pratique un entreposage de **~4 semaines** ; l'activite volumique en sortie de cuve (**440 et 351 MBq/m3**) est ramenee a **1,5-1,6 MBq/m3** apres dilution, en-deca du seuil reglementaire local (Inde) de **22,2 MBq/m3** et **37 GBq (1 Ci)/an**.[41] Le dimensionnement rigoureux de la capacite des cuves et du temps minimal d'entreposage fait l'objet de methodes dediees (temps de stockage minimal fonction de l'activite entrante et de la periode).[46]\n\n| Parametre (exemple I-131) | Valeur | Source |\n|---|---|---|\n| Cuve de delai | 7 500 L | [41] |\n| Reservoir de dilution | 6 000 000 L | [41] |\n| Entreposage | ~4 semaines | [41] |\n| Activite volumique en sortie de cuve | 440 et 351 MBq/m3 | [41] |\n| Activite apres dilution | 1,5-1,6 MBq/m3 | [41] |\n| Seuil de rejet (Inde) | 22,2 MBq/m3 ; 37 GBq/an | [41] |\n\n**Gestion des excreta et rejet des patients.** L'**I-131** produit la dose la plus elevee aux tiers ; son excretion urinaire en fait l'effluent-patient le plus penalisant.[14] La **CIPR 94** (Publication 94) encadre la liberation des patients apres radionuclides non scelles : contrainte de dose de **quelques mSv par episode** aux proches aidants (contrainte, non limite), et **1 mSv/an** pour le public (enfants, nourrissons et visiteurs non aidants = public).[14][44] Les criteres de sortie I-131 varient selon les pays : debit de dose a 1 m couramment **<= 20-40 uSv/h** (Allemagne 3,5 ; Japon 30 ; USA 70 uSv/h), activite retenue **<= 400 MBq (10,8 mCi)** reconnue comme bonne pratique internationale (AIEA).[25] Pour le **Lu-177** (radioligands PSMA / DOTATATE), prolonger le sejour jusqu'a la premiere miction reduit la quantite de dechets contamines geree ensuite par le patient a domicile.[17][18] Les doses aux egoutiers et au public via les reseaux d'assainissement modernes restent **tres inferieures** aux limites publiques.[14]",
+          "steps": [
+            {
+              "title": "1. Collecte separative",
+              "text": "Eviers chauds (preparations, rincages) et WC des chambres d'hospitalisation protegee (excreta I-131/Lu-177) raccordes a un reseau dedie, distinct de l'assainissement general."
+            },
+            {
+              "title": "2. Remplissage de cuve",
+              "text": "L'effluent alimente une cuve de decroissance ; mesure de niveau, detection de fuite. Une seconde cuve decroit en parallele."
+            },
+            {
+              "title": "3. Decroissance et controle",
+              "text": "Entreposage (~4 semaines pour l'I-131 dans l'exemple documente) ; prelevement et mesure de l'activite volumique avant tout rejet."
+            },
+            {
+              "title": "4. Rejet controle",
+              "text": "Vidange au reseau apres passage sous le seuil admis (~10 Bq/L, France ; dilution complementaire au besoin) ; tracabilite des rejets."
+            }
+          ],
+          "stats": [
+            {
+              "value": "10 Bq/L",
+              "label": "Seuil de rejet effluents (Decision 2008-DC-0095, debattu)[20]"
+            },
+            {
+              "value": "<= 400 MBq",
+              "label": "Activite de sortie I-131 (bonne pratique AIEA)[25]"
+            },
+            {
+              "value": "5 mSv",
+              "label": "Contrainte de dose par episode aux aidants (CIPR 94)[14]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — le 10 Bq/L applique aux excreta",
+              "text": "La valeur de **10 Bq/L** de la Decision 2008-DC-0095 est debattue lorsqu'on l'applique aux effluents-patients : un patient traite par I-131 excrete une activite volumique tres superieure a ce seuil pendant plusieurs jours.[20] D'ou les cuves de decroissance dediees (chambres protegees) et la dilution : ne jamais raccorder directement les WC d'hospitalisation radiotherapique au reseau general."
+            },
+            {
+              "type": "info",
+              "title": "Point expert — cuves en cycle alterne",
+              "text": "Une cuve unique est ingerable : elle imposerait d'arreter les rejets pendant toute la decroissance. Le fonctionnement en **cycles remplissage/decroissance/vidange** sur au moins deux cuves alternees garantit la continuite ; mesure de niveau, prelevement de controle et detection de fuite sont indispensables avant tout rejet au reseau.[1][6]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THYROID_NIS",
+            "alt": "Captation iodee thyroidienne via le symporteur NIS : rappelle pourquoi l'I-131 des excreta patients constitue l'effluent liquide le plus penalisant a faire decroitre en cuve.",
+            "caption": "Fig. B3 — L'iode radioactif (I-131) capte par la voie du NIS : source majeure d'effluent-patient a gerer en cuve de decroissance."
+          }
+        },
+        {
+          "title": "B4 - Gerer gaz, aerosols et sources scellees usagees",
+          "text": "Deux categories de dechets echappent a la logique solide/liquide et imposent des filieres propres : les **effluents gazeux** (gaz rares, aerosols, vapeurs de radio-iode) captes par la ventilation, et les **sources scellees usagees**, dont la periode longue les exclut de la decroissance sur place.\n\n**Effluents gazeux et aerosols.** Les explorations de ventilation pulmonaire generent des gaz rares et des radio-aerosols : **Xe-133** (periode ~5 j), **Kr-81m** (periode 13 s, γ 190 keV), et des radio-aerosols marques au Tc-99m ou au F-18.[8][14] La captation repose sur une **ventilation dediee / hottes** ; les gaz rares a periode courte peuvent etre entreposes pour decroissance (Xe-133) puis rejetes a l'atmosphere de facon controlee, tandis que le Kr-81m (13 s) decroit quasi instantanement. Le Kr-81m delivre une dose pulmonaire **~10 fois inferieure** au Xe-133 ; a l'inverse, l'etude au Xe-133 impose un dispositif de **collecte/recuperation du gaz expire**.[14][37] L'air active des cyclotrons TEP et les vapeurs de radio-iode (I-131) sont geres par ventilation et rejet atmospherique controle.[26]\n\n| Effluent gazeux/aerosol | Periode / energie | Gestion | Source |\n|---|---|---|---|\n| **Xe-133** (ventilation) | ~5 j ; gaz rare | Collecte gaz expire -> decroissance -> rejet controle | [8][14] |\n| **Kr-81m** (ventilation) | 13 s ; γ 190 keV | Decroissance quasi immediate ; dose pulmonaire ~10x < Xe | [14][37] |\n| Radio-aerosols (Tc-99m, F-18) | 6 h / 110 min | Ventilation dediee, decroissance | [8] |\n| Vapeurs I-131 | 8 j | Hottes/ventilation, captation | [26] |\n| Air active cyclotron TEP | variable | Ventilation, rejet controle | [26] |\n\n**Sources scellees usagees — hors decroissance.** Les sources de calibration et de reference de medecine nucleaire (**Co-57**, **Ge-68/Ga-68**, **Cs-137**) ont des periodes longues (**Ge-68 : 271 j**, > 100 j) qui les excluent de la gestion par decroissance sur place.[13][40] La filiere privilegiee est le **retour/reprise fournisseur** (kits de retour) ; a defaut, la reprise par un organisme specialise (**ANDRA** en France) ou l'orientation vers les filieres autorisees.[6][40] Les generateurs Mo-99/Tc-99m usages relevent d'une logique voisine : **retour au fournisseur** ou entreposage ~10 x la periode du Mo-99 (~28 j).[27]\n\n**Cas piege majeur — l'impurete Lu-177m.** Le Lu-177 therapeutique (radioligands PSMA / DOTATATE) contient une impurete **Lu-177m** representant **0,3 %** [0,2-1,7 %] de l'activite totale, mais de periode **~152-160 jours** (>> periode du Lu-177 de 6,6 j).[15][38] Cette trace de periode longue **dicte a elle seule** la duree d'entreposage : **3 ans** pour les flacons vides et conteneurs, **5 ans** pour les flacons partiellement utilises. Apres **3 mois** de decroissance, le debit d'exposition au contact des flacons vides restait encore **14 fois superieur** au niveau de liberation — d'ou un doublement de l'espace d'entreposage et un obstacle majeur a l'elimination des dechets secs de Lu-177.[38]",
+          "stats": [
+            {
+              "value": "271 j",
+              "label": "Periode du Ge-68 : source scellee hors decroissance[13]"
+            },
+            {
+              "value": "~152-160 j",
+              "label": "Periode de l'impurete Lu-177m[15]"
+            },
+            {
+              "value": "3-5 ans",
+              "label": "Entreposage des dechets Lu-177 (impose par Lu-177m)[38]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — le Lu-177 n'est pas un dechet a vie courte",
+              "text": "Raisonner sur la periode du Lu-177 (6,6 j -> ~67 j d'entreposage) est une erreur : l'impurete **Lu-177m (~152-160 j)** impose **3 a 5 ans** d'entreposage des flacons.[15][38] Le tri (B1) doit isoler les dechets Lu-177 dans un compartiment dedie a long terme, sous peine de bloquer une partie du local de decroissance pendant des annees."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — retour fournisseur comme filiere de premiere intention",
+              "text": "Pour les sources scellees (Co-57, Ge-68, Cs-137) et les generateurs, le **retour au fournisseur** est la filiere la plus simple et souvent contractuellement prevue a l'achat.[27][40] Anticiper la reprise des l'acquisition evite l'accumulation de sources orphelines a periode longue, qui relevent sinon d'ANDRA."
+            }
+          ],
+          "figure": {
+            "figureRef": "VQ_LUNGS",
+            "alt": "Scintigraphie ventilation/perfusion pulmonaire : la ventilation au Xe-133 ou Kr-81m est la source des effluents gazeux radioactifs a capter par ventilation dediee.",
+            "caption": "Fig. B4 — L'exploration de ventilation (Xe-133, Kr-81m) : origine des effluents gazeux geres par ventilation dediee et decroissance."
+          }
+        },
+        {
+          "title": "C1 - Mesurer et decider — instrumentation, reglages et criteres de liberation",
+          "text": "La libération d'un déchet ou d'un effluent hors du champ réglementaire ne se décide **jamais** sur le seul délai théorique de décroissance : elle repose sur une **mesure radiologique documentée** en sortie d'entreposage. Deux philosophies réglementaires coexistent, l'une **temps-plus-mesure** (France), l'autre **mesure seule** (États-Unis), et le nucléariste doit maîtriser l'instrumentation qui sous-tend ces deux critères.[1][4]\n\n**Le fondement physique — la règle des ~10 périodes.** L'activité résiduelle après *n* périodes vaut A₀/2ⁿ. Après **10 périodes**, il reste **1/1024 ≈ 0,1 %** de l'activité initiale ; c'est la borne de bonne pratique retenue par la plupart des programmes hospitaliers de *decay-in-storage* (DIS), et le seuil réglementaire français impose un délai **strictement supérieur à 10 fois la période** avant évacuation de chaque compartiment.[7][9] Aux États-Unis, la version révisée de **10 CFR 35.92** a **supprimé** l'exigence explicite des 10 périodes : le critère est devenu purement métrologique (signal indiscernable du bruit de fond), même si le dimensionnement pratique reste calé sur ~10 T½.[4][5]\n\n**Dimensionnement du temps d'entreposage par radionucléide** (≈ 10 × T½) :\n\n| Radionucléide | Période T½ | ~10 périodes | Filière | Source |\n|---|---|---|---|---|\n| **F-18** | **110 min** (1,83 h) | ~18 h → évacuable dès le lendemain | DASRI après contrôle | [8][12] |\n| **Tc-99m** | **6,0 h** | ~60 h (~2,5 j) | DASRI / ordures | [8][12] |\n| **I-123** | **13,2 h** | ~5,5 j | DASRI | [8] |\n| **Lu-177** | **6,7 j** | ~67 j *nominal* ⚠ | voir C1 (impureté) | [8][15] |\n| **I-131** | **8,0 j** | ~80 j | DASRI + cuves | [8][12] |\n| **Mo-99** (générateur) | **66 h** (2,75 j) | ~28 j *ou* retour fournisseur | reprise fournisseur | [9][27] |\n| **Ge-68** (source TEP) | **271 j** > 100 j | hors DIS | ANDRA / reprise | [12][40] |\n\n**Réglage de l'instrument de contrôle (critère US, 10 CFR 35.92).** Avant élimination, la surface de chaque conteneur est contrôlée avec un détecteur **réglé sur son échelle la plus sensible**, **sans écran (blindage) interposé**, et la radioactivité doit être **indiscernable du bruit de fond**. Ce n'est qu'ensuite que l'on procède à l'oblitération des symboles de radioactivité (cf. C2).[4][5]\n\n**Critère France.** Le niveau résiduel doit être ramené à **≈ 2 × le bruit de fond local (2 × BdF)** ; en pratique hospitalière, contrôle de l'activité résiduelle au contact puis passage sous **portique de détection fixe** en sortie de site, ce qui intercepte tout sac mal trié ou insuffisamment décru.[9][10] La mesure se fait en **zone à bas bruit de fond** pour ne pas noyer le signal résiduel.\n\n**Effluents liquides — métrologie volumique.** Le contrôle porte sur l'**activité volumique** (Bq/L ou MBq/m³) prélevée en cuve après décroissance. Un exemple documenté d'installation I-131 illustre l'ordre de grandeur : cuve de délai **7 500 L**, activité en sortie **440 et 351 MBq/m³**, ramenée à **1,5–1,6 MBq/m³** après dilution dans un réservoir de **6 000 000 L**, sous un seuil réglementaire local de **22,2 MBq/m³**.[41] En France, la valeur de **10 Bq/L** apparaît dans les analyses de la Décision 2008-DC-0095 comme seuil de rejet discuté pour les effluents.[20]",
+          "steps": [
+            {
+              "title": "1 · Identifier",
+              "text": "Relever le radionucléide dominant du compartiment (et de ses descendants) ; vérifier que sa période est < 100 j (France) / ≤ 120 j (USA), sinon orientation filière autorisée (cf. C2/C4).[4][9]"
+            },
+            {
+              "title": "2 · Laisser décroître",
+              "text": "Entreposer le temps requis : délai > 10 × T½ (France) ou jusqu'à obtention du critère de mesure (USA), en isolant chaque famille de période.[4][9]"
+            },
+            {
+              "title": "3 · Mesurer en fin d'entreposage",
+              "text": "Contrôle au contact, détecteur sur l'échelle la plus sensible, sans écran, en zone à bas bruit de fond ; comparer au bruit de fond local (≤ 2 × BdF FR ; indiscernable du BdF US).[4][10]"
+            },
+            {
+              "title": "4 · Portique de sortie",
+              "text": "En France, passage sous portique fixe avant évacuation du site : dernier filet de sécurité contre un tri ou un délai insuffisant.[9][10]"
+            },
+            {
+              "title": "5 · Consigner puis libérer",
+              "text": "Enregistrer la mesure (cf. C2) et seulement alors reclasser en déchet conventionnel (DASRI/ordures) ou rejeter l'effluent au réseau.[4][6]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "≈ 0,1 %",
+              "label": "Activité résiduelle après 10 périodes (1/1024)"
+            },
+            {
+              "value": "2 × BdF",
+              "label": "Critère de libération France (bruit de fond local)"
+            },
+            {
+              "value": "≤ 120 j",
+              "label": "Période max éligible au decay-in-storage (USA, 10 CFR 35.92)"
+            },
+            {
+              "value": "< 100 j",
+              "label": "Période max éligible à la décroissance (France)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le Lu-177 ne se libère PAS à 10 × 6,7 j",
+              "text": "Le Lu-177 thérapeutique contient une impureté **Lu-177m** (~**0,3 %** de l'activité totale, période **~152–160 j**) qui **dicte à elle seule** la durée d'entreposage. Après **3 mois** de décroissance, le débit d'exposition au contact de flacons vides restait encore **14× supérieur** au niveau de libération. Les délais réels imposés sont de **3 ans** (flacons/conteneurs vides) à **5 ans** (flacons partiellement utilisés) — bien au-delà des ~67 j suggérés par la seule période du Lu-177.[15]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — deux critères, une logique",
+              "text": "Le critère français (temps > 10 T½ **puis** ≤ 2 × BdF) et le critère américain (**mesure seule** indiscernable du BdF) convergent vers le même objectif : garantir qu'aucun signal artificiel ne subsiste au-dessus du fond naturel. La différence tient à la place du temps : **prescrit** en France, **implicite** aux USA. Dans les deux cas, c'est la **mesure**, non le calendrier, qui autorise la sortie."
+            },
+            {
+              "type": "info",
+              "title": "Seuils d'exemption / clearance (AIEA)",
+              "text": "En amont de tout contrôle local, les niveaux de libération inconditionnelle sont fondés sur une dose au public **≤ 10 µSv/an** (exemption/clearance des radionucléides artificiels) et, en tout état de cause, sous la limite de dose au public de **1 mSv/an** (GSR Part 3).[11][25]"
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_SCHEME",
+            "alt": "Courbe de décroissance radioactive exponentielle : l'activité chute à 1/2 par période, atteignant ~1/1024 (0,1 %) après 10 périodes, seuil de bonne pratique pour la libération des déchets."
+          }
+        },
+        {
+          "title": "C2 - Tracer et prouver — registres, PGED et documents opposables",
+          "text": "En gestion de déchets radioactifs, **ce qui n'est pas tracé n'a pas été fait** : l'inspection ASNR (ou NRC) juge la conformité sur pièces. La chaîne documentaire s'articule autour d'un document-cadre — le **PGED** — et d'**enregistrements de libération** individuels, tous opposables.[19][6]\n\n**Le Plan de Gestion des Effluents et Déchets (PGED).** Document obligatoire propre à chaque service de médecine nucléaire, le PGED décrit l'intégralité du cycle : **tri à la source** par radionucléide et période, **modalités d'entreposage** (locaux, cuves, capacités), **contrôles radiologiques** avant élimination, et **filières d'élimination** retenues. Il est encadré par la **Décision n° 2008-DC-0095 du 29 janvier 2008** (application de l'art. **R.1333-12 CSP**), homologuée par **arrêté du 23 juillet 2008**, dont toutes les dispositions sont applicables depuis le **2 août 2011** ; le **Guide ASN n° 18** (2012) en précise la mise en œuvre pour les installations autorisées au titre du Code de la santé publique.[1][2][31]\n\n**Enregistrements de libération (traçabilité de la mesure).** Chaque évacuation doit être documentée. Le référentiel américain **10 CFR 35.2092** impose de conserver, pour chaque conteneur libéré : la **date d'élimination**, l'**instrument** utilisé, le **bruit de fond**, le **niveau mesuré en surface**, et le **nom de l'opérateur** ; ces registres sont conservés **3 ans**.[6] La logique française est identique en substance : registre d'entreposage (date d'entrée, radionucléide, activité estimée), fiche de contrôle de sortie (mesure, comparaison au BdF), et bordereau de la filière (DASRI, ANDRA, reprise fournisseur).[19][39]\n\n**Documents opposables et registres à tenir :**\n\n| Document | Contenu clé | Fonction | Source |\n|---|---|---|---|\n| **PGED** | Tri, entreposage, contrôle, filières | Cadre opposable du service | [19][31] |\n| **Registre d'entreposage** | Date d'entrée, RN, activité, compartiment | Suivi de la décroissance en cours | [6][39] |\n| **Fiche de contrôle de sortie** | Date, instrument, BdF, niveau mesuré, opérateur | Preuve de la libération (10 CFR 35.2092) | [6] |\n| **Bordereaux de filière** | DASRI / ANDRA / reprise fournisseur | Traçabilité aval | [39][40] |\n| **Registre effluents (cuves)** | Volume, activité volumique, date de rejet | Preuve de conformité du rejet réseau | [1][41] |\n\n**Note d'oblitération.** Un point souvent négligé mais explicitement exigé : **avant** élimination en filière conventionnelle, **tous les symboles et étiquettes de radioactivité** doivent être retirés ou oblitérés (sauf conteneurs DASRI relevant d'une filière dédiée). L'omission de cette étape est une non-conformité fréquente relevée en inspection.[4][5]",
+          "steps": [
+            {
+              "title": "Rédiger le PGED",
+              "text": "Décrire tri à la source, entreposage (locaux/cuves + capacités), contrôles et filières ; document propre au service, opposable en inspection.[19][31]"
+            },
+            {
+              "title": "Enregistrer l'entrée",
+              "text": "À chaque dépôt en local de décroissance : date, radionucléide, activité estimée, compartiment/période — support du suivi de décroissance.[6][39]"
+            },
+            {
+              "title": "Documenter la mesure de sortie",
+              "text": "Fiche de contrôle : date, instrument, bruit de fond, niveau mesuré en surface, opérateur (items imposés par 10 CFR 35.2092).[6]"
+            },
+            {
+              "title": "Oblitérer les étiquettes",
+              "text": "Retirer/oblitérer tous les symboles de radioactivité avant évacuation conventionnelle (hors conteneurs DASRI dédiés).[4][5]"
+            },
+            {
+              "title": "Archiver bordereaux et registres",
+              "text": "Conserver ≥ 3 ans (US) les enregistrements de libération ; garder les bordereaux DASRI/ANDRA/reprise pour la traçabilité aval.[6][40]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — l'élimination non conforme est un incident déclarable",
+              "text": "Une évacuation de déchets contaminés sans contrôle attestant le retour au bruit de fond constitue une **non-conformité** qui a déjà donné lieu à des **avis d'incident** publiés par l'autorité. Le contrôle et son enregistrement ne sont pas des formalités : ils sont la condition juridique de la libération.[30]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le PGED est vivant",
+              "text": "Le PGED doit être **actualisé** à chaque évolution de l'activité du service : nouveau radionucléide (ex. arrivée du Lu-177 → impureté Lu-177m imposant 3–5 ans d'entreposage, cf. C1), nouvelle cuve, changement de filière. Un PGED figé qui ne reflète plus la pratique réelle est une non-conformité en soi."
+            },
+            {
+              "type": "info",
+              "title": "Historique réglementaire à connaître",
+              "text": "Décision 2008-DC-0095 (29/01/2008) → arrêté d'homologation (23/07/2008) → applicabilité pleine (02/08/2011) → Guide ASN n° 18 (2012) → consultation publique de révision (26/01/2016), avec un groupe de travail « effluents » actif depuis 2013.[1][19][31]"
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers ALARA (temps, distance, écran) rappelant que la gestion documentaire des déchets s'inscrit dans l'optimisation de la radioprotection du personnel manipulant l'entreposage."
+          }
+        },
+        {
+          "title": "C3 - Liberer le patient-source — criteres de sortie et consignes a l'entourage",
+          "text": "En radiothérapie interne vectorisée, le **patient devient une source** et une **source d'effluents** : son excrétion (surtout urinaire) élimine l'activité administrée, qui doit être gérée soit en cuves dédiées (hospitalisation protégée), soit à domicile. La libération du patient-source obéit à des **critères d'activité corporelle et de débit de dose** sourcés, distincts de la libération des déchets matériels (C1).[14][15]\n\n**I-131 — le radionucléide dimensionnant.** L'iode-131 (T½ **8,0 j**, β⁻ + γ **364 keV**) produit la **dose la plus élevée aux tiers** parmi les radionucléides thérapeutiques ; les émetteurs β purs (P-32, Sr-89, Y-90) posent un risque externe bien moindre.[24] Les critères de sortie varient selon les pays :\n\n| Critère de sortie | Valeur | Portée | Source |\n|---|---|---|---|\n| Activité corporelle retenue (AIEA) | **1100 MBq** (29,7 mCi) | Repère international | [15] |\n| Ancien critère NRC | **1110 MBq** (30 mCi) | Historique US | [15] |\n| Bonne pratique renforcée | **≤ 400 MBq** (10,8 mCi) | Reconnue AIEA | [15] |\n| Débit de dose à 1 m (Allemagne) | **3,5 µSv/h** | Le plus strict | [25] |\n| Débit de dose à 1 m (Japon) | **30 µSv/h** | Intermédiaire | [25] |\n| Débit de dose à 1 m (USA) | **70 µSv/h** | Le plus permissif | [25] |\n| Débit corporel à 2 m (ORNL) | **~3,5 µSv/h** (≈ 250 MBq incorporés) | Critère alternatif | [16] |\n\n**Contrainte de dose à l'entourage (CIPR 94).** Pour les proches aidants adultes, la contrainte recommandée est de l'ordre de **5 mSv par épisode** de traitement (contrainte, non limite). En revanche, les **enfants, nourrissons et visiteurs non aidants sont traités comme le public**, avec la limite de **1 mSv/an**. Cette distinction est capitale pour rédiger les consignes de sortie.[14][24]\n\n**Lu-177 (radioligands PSMA / DOTATATE).** Prolonger le séjour jusqu'à la **première miction** (voire une nuit) réduit nettement la quantité de déchets contaminés que le patient devra gérer à domicile ; des procédures de décontamination et de gestion des excreta sont requises. Les études de rejet des déchets ménagers après [¹⁷⁷Lu]Lu-PSMA-617 confirment que les doses au public et aux égoutiers restent très inférieures aux limites.[17][18]\n\n**Effluents-patients hospitaliers.** Les chambres d'hospitalisation de radiothérapie interne (I-131, Lu-177) sont raccordées à des **cuves de décroissance dédiées** fonctionnant en cycles remplissage/décroissance/vidange, avec mesure de niveau, prélèvement et détection de fuite, avant rejet contrôlé au réseau (cf. C1 pour les seuils volumiques).[6][46]",
+          "steps": [
+            {
+              "title": "Vérifier le critère de sortie",
+              "text": "Mesurer l'activité corporelle / le débit de dose à 1 m ; libération I-131 quand ≤ critère national (≈ 1100 MBq AIEA ; débit 3,5→70 µSv/h selon pays).[15][25]"
+            },
+            {
+              "title": "Segmenter l'entourage",
+              "text": "Aidants adultes → contrainte ~5 mSv/épisode ; enfants/nourrissons/visiteurs non aidants → public, 1 mSv/an. Adapter les consignes en conséquence.[14][24]"
+            },
+            {
+              "title": "Consignes excreta (domicile)",
+              "text": "Hydratation, mictions fréquentes assises, double chasse d'eau ; pour le Lu-177, attendre la première miction avant sortie réduit les déchets à domicile.[17][18]"
+            },
+            {
+              "title": "Distance et durée",
+              "text": "Réduire le temps de contact rapproché avec enfants et femmes enceintes pendant la période utile de décroissance (levier ALARA distance/temps)."
+            },
+            {
+              "title": "Gérer les effluents hospitaliers",
+              "text": "En hospitalisation protégée, cuves de décroissance dédiées (cycles remplissage/décroissance/vidange) avant rejet réseau sous seuil.[6][46]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "1100 MBq",
+              "label": "Activité corporelle de sortie I-131 (repère AIEA)"
+            },
+            {
+              "value": "5 mSv",
+              "label": "Contrainte de dose / épisode — proches aidants adultes (CIPR 94)"
+            },
+            {
+              "value": "1 mSv/an",
+              "label": "Limite publique — enfants, nourrissons, visiteurs non aidants"
+            },
+            {
+              "value": "8,0 j",
+              "label": "Période de l'I-131 (radionucléide dimensionnant)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — l'enfant de l'entourage n'est PAS un aidant",
+              "text": "La confusion la plus lourde de conséquences : appliquer la contrainte « aidant » (~5 mSv/épisode) à un enfant vivant sous le même toit. Les **enfants, nourrissons et visiteurs non aidants relèvent du public** (**1 mSv/an**). Les consignes de sortie doivent donc **individualiser** distance et durée de contact selon le statut de chaque personne du foyer.[14][24]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — β pur vs β/γ",
+              "text": "Le risque d'irradiation externe des tiers dépend du mode d'émission : l'**I-131** (β/γ 364 keV) irradie l'entourage à distance et dimensionne les critères de sortie, tandis que les émetteurs **β purs** (Y-90, P-32, Sr-89) sont quasi sans risque externe — leur enjeu se déplace vers la **contamination** (excreta, effluents) plutôt que l'exposition externe.[24]"
+            },
+            {
+              "type": "info",
+              "title": "Réseaux d'assainissement modernes",
+              "text": "Les radionucléides rejetés dans les réseaux d'égouts modernes conduisent à des doses aux égoutiers et au public très inférieures aux limites publiques, ce qui fonde l'acceptabilité du rejet contrôlé des effluents-patients après décroissance.[24]"
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique diagnostic-traitement illustrant que le patient traité par radioligand (I-131, Lu-177) devient une source et une source d'effluents dont la gestion prolonge la chaîne de radioprotection."
+          }
+        },
+        {
+          "title": "C4 - Organiser et responsabiliser — roles, PCR/RSO et conformite de la filiere interne",
+          "text": "La conformité de la filière déchets ne repose pas sur un dispositif technique mais sur une **organisation responsabilisée** : des rôles nommés, des locaux aux spécifications définies, et un arbre décisionnel appliqué sans exception. C'est le niveau où le nucléariste articule radioprotection réglementaire et gestion opérationnelle.[19][33]\n\n**Rôles et responsabilités.** La **PCR** (Personne Compétente en Radioprotection) / **RSO** (Radiation Safety Officer, équivalent anglo-saxon) porte la responsabilité opérationnelle du PGED, du dimensionnement des entreposages, du contrôle avant libération et de la traçabilité. L'**ASNR** (Autorité de Sûreté Nucléaire et de Radioprotection, ex-ASN/IRSN) élabore la réglementation, contrôle et inspecte les producteurs ; l'**AIEA** fournit le référentiel international (classification GSG-1, gestion pré-élimination, concepts d'exemption/clearance) ; la **NRC** régit le cadre américain (10 CFR 35.92 / 35.2092).[6][11][23]\n\n**Spécifications du local de décroissance (« local déchets »).** Le local d'entreposage doit être **dédié**, **fermé à clé** et à **accès réservé**, **ventilé**, en **matériaux décontaminables**, doté d'une **rétention** pour les liquides et de **mesures anti-incendie**. Les déchets y sont triés par **famille de radionucléide/période**, placés dans des poubelles ou fûts **plombés** identifiés.[19][17]\n\n**Limites de dose applicables au personnel de la filière (CIPR 103) :**\n\n| Cible / grandeur | Limite | Source |\n|---|---|---|\n| **Travailleur** (corps entier) | **20 mSv/an** (moyenne sur 5 ans) | [44] |\n| **Cristallin** | **20 mSv/an** (moyenne 5 ans, max 50 mSv/an) | [44] |\n| **Extrémités** (mains/pieds) | **500 mSv/an** | [44] |\n| **Peau** (1 cm²) | **500 mSv/an** | [44] |\n| **Public** | **1 mSv/an** | [44] |\n\n**Filières selon la période — l'arbre décisionnel maître :**\n\n| Catégorie de déchet | Critère | Filière | Source |\n|---|---|---|---|\n| Solides vie courte (Tc-99m, F-18, I-123) | T½ < 100 j (FR) / ≤ 120 j (US) | Entreposage-décroissance → DASRI/ordures après contrôle | [4][9] |\n| Effluents liquides (préparations + excreta) | idem | Cuves de décroissance → rejet réseau sous seuil | [6][41] |\n| Effluents gazeux (Xe-133, aérosols, vapeurs I-131) | idem | Ventilation dédiée/hottes → rejet atmosphérique contrôlé | [26][14] |\n| Générateurs Mo-99/Tc-99m usagés | reprise privilégiée | **Retour fournisseur** ou entreposage ~28 j | [9][27] |\n| Sources scellées (Co-57, Ge-68, Cs-137) | T½ > 100 j | **Reprise fournisseur** / ANDRA | [40] |\n| Déchets/effluents période longue (> 100 j) | exclus de la décroissance | **ANDRA** (France) | [23][24] |\n\n**Le verrou des 100/120 jours.** C'est la bifurcation qui structure toute la filière : un radionucléide de période **> 100 j** (France) ou **> 120 j** (USA) — y compris si ses descendants dépassent ce seuil — est **exclu de la gestion par décroissance** et doit être collecté à la source pour reprise fournisseur ou orientation ANDRA. Confondre les deux seuils, ou négliger la période des descendants, est l'erreur réglementaire de fond à éviter.[6][9]",
+          "steps": [
+            {
+              "title": "1 · Identifier le radionucléide et sa période",
+              "text": "Y compris les descendants ; c'est la période la plus longue de la chaîne qui décide de l'éligibilité à la décroissance.[9]"
+            },
+            {
+              "title": "2 · T½ < 100 j (FR) / ≤ 120 j (US) ?",
+              "text": "Oui → entreposage-décroissance (≥ 10 T½ FR / jusqu'au contrôle US). Non → collecte à la source, reprise fournisseur / ANDRA.[4][6]"
+            },
+            {
+              "title": "3 · Trier par nature",
+              "text": "Solides → local déchets ; liquides → cuves ; gaz → ventilation dédiée ; générateurs/sources scellées → reprise fournisseur.[19][27]"
+            },
+            {
+              "title": "4 · Contrôler avant libération",
+              "text": "Mesure ≤ 2 × BdF (FR) / indiscernable du BdF (US) + portique de sortie ; oblitérer les étiquettes (cf. C1/C2).[4][10]"
+            },
+            {
+              "title": "5 · Cas Lu-177",
+              "text": "Prolonger l'entreposage à 3–5 ans à cause de l'impureté Lu-177m, quelle que soit la période nominale du Lu-177 (cf. C1).[15]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le seuil 100 j ≠ 120 j, et les descendants comptent",
+              "text": "Deux erreurs récurrentes : (1) appliquer le seuil américain (120 j) en contexte français (100 j), ou l'inverse ; (2) juger l'éligibilité sur la seule période du radionucléide parent **en oubliant ses descendants** — la règle française exclut la décroissance si un descendant est lui-même de période > 100 j. Ge-68 (271 j), Co-57 et Cs-137 sortent d'office du champ de la décroissance sur place.[9][40]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — reprise fournisseur d'abord",
+              "text": "Pour les générateurs Mo-99/Tc-99m et les sources scellées, la filière **privilégiée** est la **reprise/retour fournisseur** (kits de retour), qui décharge le service de l'entreposage long et de la responsabilité aval. L'entreposage ~28 j du générateur (10 × T½ du Mo-99, 66 h) n'est qu'une solution de repli ; l'orientation ANDRA concerne le résiduel non repris.[9][27][40]"
+            },
+            {
+              "type": "info",
+              "title": "Classification AIEA à situer",
+              "text": "Les déchets de médecine nucléaire relèvent essentiellement des classes **EW** (exempt) et **VSLW** (Very Short-Lived Waste, entreposable quelques mois puis libéré) du référentiel AIEA GSG-1 ; les classes VLLW/LLW/ILW/HLW concernent des activités et périodes qui ne se rencontrent pas en routine hospitalière.[11]"
+            }
+          ],
+          "figure": {
+            "figureRef": "TC_GENERATOR",
+            "alt": "Schéma d'un générateur Mo-99/Tc-99m illustrant que le générateur usagé (période du Mo-99 : 66 h) relève de la reprise fournisseur ou d'un entreposage d'environ 28 jours avant élimination."
+          }
+        },
+        {
+          "title": "D1 - Maitriser la theranostique et les fortes activites — 131I, 177Lu, 90Y, 223Ra",
+          "text": "La radiothérapie interne vectorisée (**RIV**) déplace le problème des déchets d'un régime « traces diagnostiques » vers un régime **fortes activités + excreta patients** : les activités administrées y sont 100 à 1000 fois supérieures à celles du diagnostic, et l'essentiel de la charge radioactive quitte le service **par les urines et les selles du patient**, pas par la corbeille. Maîtriser ce mouvement, c'est dimensionner l'entreposage sur le radionucléide **le plus lent présent** (y compris les impuretés), pas sur le nucléide thérapeutique nominal.\n\n**Le radionucléide dicte tout — période et mode d'émission.** La durée d'entreposage-décroissance vise **> 10 périodes** en pratique française, chaque compartiment de cuve ou chaque lot de déchets étant dimensionné sur ~10 fois la période du nucléide concerné [9]. Le mode d'émission conditionne, lui, la radioprotection du personnel manipulant les déchets (voir D3) :\n\n| Radionucléide | Usage RIV | Période T½ | Émission dominante | Enjeu déchets/effluents | Source |\n|---|---|---|---|---|---|\n| **I-131** | cancer thyroïdien, hyperthyroïdie | **≈ 8 j** | β⁻ + **γ 364 keV** | excreta urinaires ++, dose aux tiers la plus élevée ; ~10 × T½ ≈ **80 j** d'entreposage | [12][14] |\n| **Lu-177** | PSMA, DOTATATE | **6,6–6,7 j** | β⁻ + γ (imageable) | excreta ; **impureté Lu-177m à vie longue** (voir infra) | [12][15] |\n| **Y-90** | radioembolisation, microsphères | **≈ 64 h** (~2,7 j) | **β⁻ pur** | pas d'excreta significatifs (implant), déchets de préparation ; ~10 × T½ ≈ **27 j** | [16] |\n| **Ra-223** | métastases osseuses (CaP) | — (α, chaîne courte) | **α** + descendants | excreta fécaux ++ (élimination digestive) ; émetteur α = filière/contrôle spécifiques | [14] |\n\n**Le piège structurant du Lu-177 : l'impureté Lu-177m.** Le Lu-177 thérapeutique contient une trace de **Lu-177m** (isomère métastable) représentant **0,3 %** [0,2–1,7 %] de l'activité totale, de période **~152–160 jours** [15]. Cette fraction infime **impose à elle seule** la durée d'entreposage des déchets secs : les flacons vides et conteneurs doivent être gardés **3 ans**, les flacons partiellement utilisés **5 ans** [15]. Après **3 mois** de décroissance, le débit d'exposition au contact de flacons vides restait encore **14 fois supérieur** au niveau de libération — d'où un doublement de l'espace d'entreposage requis et un obstacle logistique majeur pour les services à fort recrutement [15]. C'est l'illustration parfaite de la règle « on entrepose sur le nucléide le plus lent, pas sur le nucléide nominal ».\n\n**Effluents-patients : la cuve de décroissance dédiée.** Les chambres d'hospitalisation protégée (I-131, Lu-177) sont raccordées à des **cuves de décroissance** fonctionnant en cycles remplissage / décroissance / vidange alternés, avec mesure de niveau, prélèvement et détection de fuite, avant rejet contrôlé au réseau [1][2]. Le dimensionnement est concret : une installation I-131 documentée comportait une cuve de délai de **7 500 L** et un réservoir de dilution de **6 000 000 L**, avec un entreposage **≈ 4 semaines** ; l'activité volumique en sortie de cuve (**440 et 351 MBq/m³**) était ramenée à **1,5–1,6 MBq/m³** après dilution, sous le seuil réglementaire local (22,2 MBq/m³ ; 37 GBq/an) [20]. Le calcul de capacité et de temps minimal de stockage des cuves d'effluents liquides fait aujourd'hui l'objet d'une méthodologie publiée [46].\n\n**Le patient est lui-même une source d'effluents mobile.** Le critère de libération encadre la quantité d'activité qui quittera le service par le patient : l'AIEA retient **1100 MBq (≈ 30 mCi)** d'activité corporelle en I-131, la pratique internationale de bonne conduite descendant souvent à **≤ 400 MBq (10,8 mCi)** [15]. Un critère alternatif de débit de dose autorise la sortie sous **~3,5 µSv/h à 2 m** [16]. La contrainte de dose aux proches aidants adultes est fixée par la CIPR 94 à **quelques mSv par épisode** (contrainte, non limite), les enfants et visiteurs non aidants restant du côté « public » (**1 mSv/an**) [14]. Prolonger le séjour Lu-177 jusqu'à la **première miction** (voire une nuit) réduit d'autant la quantité de déchets contaminés gérée par le patient à domicile [17][18].",
+          "stats": [
+            {
+              "value": "3–5 ans",
+              "label": "Entreposage déchets Lu-177 (impureté Lu-177m) [15]"
+            },
+            {
+              "value": "1100 MBq",
+              "label": "Seuil de libération I-131 (AIEA) [15]"
+            },
+            {
+              "value": "7 500 L",
+              "label": "Cuve de délai I-131 documentée [20]"
+            },
+            {
+              "value": "5 mSv/épisode",
+              "label": "Contrainte de dose aux aidants (CIPR 94) [14]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le Lu-177m masqué",
+              "text": "Ne jamais dimensionner l'entreposage des déchets Lu-177 sur la période du Lu-177 (**6,7 j**) : l'impureté **Lu-177m (~152–160 j)**, pourtant limitée à **0,3 %** de l'activité, impose **3 ans** (flacons vides) à **5 ans** (flacons entamés) de décroissance. À 3 mois, le débit au contact restait **14×** au-dessus du seuil de libération [15]. C'est un radionucléide de **période > 100 j** dissimulé dans un déchet réputé « à vie courte »."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la logique théranostique appliquée aux déchets",
+              "text": "La paire imager→traiter a un corollaire déchets : l'isotope diagnostique (Tc-99m, Ga-68, I-123) décroît en heures et se gère en filière conventionnelle dès le lendemain, tandis que son homologue thérapeutique (I-131, Lu-177, Y-90) génère à la fois des **effluents-patients** et des **déchets solides à vie plus longue**. Anticiper le volet déchets dès la sélection du patient (capacité de cuve, place d'entreposage) fait partie du dimensionnement d'un programme de RIV."
+            }
+          ],
+          "figure": {
+            "figureRef": "THERANOSTIC_LOOP",
+            "alt": "Boucle théranostique diagnostic → sélection → traitement par radionucléide, dont découlent les deux flux de déchets : effluents-patients (cuves de décroissance) et déchets solides à vie longue (entreposage prolongé)."
+          }
+        },
+        {
+          "title": "D2 - Gerer l'incident — deversement, depassement de seuil, fuite de cuve",
+          "text": "Trois scénarios dominent la gestion incidentelle des déchets et effluents : le **déversement** (contamination surfacique lors de la manipulation d'un déchet liquide ou d'excreta), le **dépassement de seuil** (un déchet évacué ou un effluent rejeté au-dessus du critère de libération) et la **fuite de cuve** (perte de confinement d'un effluent liquide en décroissance). Chacun se traite par une séquence codifiée : **circonscrire, mesurer, décontaminer, tracer, déclarer**.\n\n**Le cadre du contrôle avant évacuation.** Aucun déchet radioactif ne peut rejoindre la filière conventionnelle avant un contrôle attestant le retour au bruit de fond — c'est un interdit réglementaire, pas une bonne pratique [1][4]. Les deux référentiels divergent sur le critère quantitatif :\n\n| Critère | France (ASN/ASNR) | États-Unis (NRC) | Source |\n|---|---|---|---|\n| Nucléides éligibles à la décroissance | période **< 100 j** (descendants inclus) | période **≤ 120 j** | [4][9] |\n| Durée d'entreposage | **> 10 périodes** (dimensionnement des compartiments) | plus d'exigence « 10 périodes » ; critère = résultat du contrôle | [4][9] |\n| Critère de libération | niveau ramené à **≤ 2 × bruit de fond local** | activité **indiscernable du bruit de fond** (détecteur échelle max, **sans blindage interposé**) | [4][5][9] |\n| Après contrôle | passage sous **portique de détection** fixe | **oblitérer/retirer toutes les étiquettes** de radioactivité | [4][5] |\n| Traçabilité | enregistrement du contrôle | enregistrements conservés **3 ans** : date, instrument, bruit de fond, niveau mesuré, opérateur | [6] |\n\n**Le dépassement de seuil est un événement réel et déclaré.** L'ASN a émis un avis d'incident pour **élimination non conforme de déchets contaminés par des radionucléides** — un déchet ayant quitté le service avant retour au bruit de fond [30]. La conduite : récupérer si possible le déchet, reconstituer sa traçabilité (nucléide, activité estimée, date de production), recontrôler, et **déclarer à l'autorité**. La cause racine est presque toujours en amont : tri à la source défaillant (voir D3) ou compartiment d'entreposage vidangé trop tôt.\n\n**La fuite de cuve** engage la rétention et la ventilation du local. Le référentiel impose un local d'entreposage dédié, fermé à clé, ventilé, en matériaux décontaminables, avec **rétention pour les liquides** et mesures anti-incendie [1]. En cas de perte de confinement : couper l'alimentation de la cuve, confiner par la rétention, mesurer l'étendue, décontaminer par déplacement des sources mobiles et attente de décroissance pour le fixé, puis tracer. L'existence d'un **plan de gestion des effluents et déchets (PGED)** — obligatoire — fournit le cadre de réponse préétabli (tri, entreposage, contrôle, élimination, conduite d'incident) [19][31].\n\n**Le déversement d'effluents-patients** (I-131, Ra-223 à élimination fécale) est le scénario le plus fréquent en pratique. Il se gère avec les mêmes leviers que toute contamination non scellée : temps, distance, écran, protection des voies d'exposition, et surtout **décroissance** — un déversement d'I-131 devient un non-événement après ~10 périodes, à condition de le circonscrire et de le laisser décroître en zone maîtrisée plutôt que de le disperser.",
+          "steps": [
+            {
+              "title": "1 · Circonscrire",
+              "text": "Stopper la source (fermer la cuve, isoler le contenant), délimiter la zone contaminée, restreindre l'accès. Pour un effluent liquide, s'appuyer sur la rétention obligatoire du local [1]."
+            },
+            {
+              "title": "2 · Mesurer",
+              "text": "Contrôle radiamétrique de l'étendue et du niveau. En France, cible de retour à **≤ 2 × bruit de fond** [9] ; aux USA, contrôle au contact, détecteur sur échelle la plus sensible, **sans blindage** [4][5]."
+            },
+            {
+              "title": "3 · Décontaminer / décroître",
+              "text": "Retirer les sources mobiles vers l'entreposage-décroissance ; pour l'activité fixée à vie courte, confiner et **laisser décroître** (~10 périodes). Ne rien évacuer avant contrôle conforme [1]."
+            },
+            {
+              "title": "4 · Tracer",
+              "text": "Consigner nucléide, activité, dates, instrument, bruit de fond, niveau mesuré, opérateur ; conservation **3 ans** côté NRC [6]. Reconstituer la chaîne si un déchet est déjà sorti."
+            },
+            {
+              "title": "5 · Déclarer",
+              "text": "Évaluer la conformité vs PGED et déclarer à l'autorité (ASN/ASNR) tout écart — l'élimination non conforme est un motif d'avis d'incident documenté [30]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — le seuil « 100 j » (Fr) n'est pas le seuil « 120 j » (USA)",
+              "text": "Deux différences réglementaires réelles à ne pas confondre. **France** : décroissance réservée aux nucléides de période **< 100 j** (descendants compris), évacuation après **> 10 périodes**, résiduel **≤ 2 × bruit de fond**, portique fixe [4][9]. **USA (10 CFR 35.92)** : période **≤ 120 j**, plus d'exigence explicite de 10 périodes, critère **indiscernable du bruit de fond** et **oblitération des étiquettes** [4][5]. Un déchet au-dessus du seuil ou une étiquette oubliée = non-conformité déclarable [30]."
+            },
+            {
+              "type": "info",
+              "title": "Le PGED, socle de la réponse aux incidents",
+              "text": "Le plan de gestion des effluents et déchets (**PGED**) est obligatoire et décrit tri, entreposage, contrôle, élimination et conduite en situation dégradée [19][31]. Un incident bien géré est d'abord un incident **déjà anticipé** dans le PGED : local à rétention, procédures de décontamination, seuils de contrôle et circuit de déclaration écrits à l'avance."
+            }
+          ]
+        },
+        {
+          "title": "D3 - Optimiser et eviter les erreurs — reduction a la source, ALARA et pieges frequents",
+          "text": "L'optimisation de la gestion des déchets suit la même hiérarchie que toute démarche ALARA (« As Low As Reasonably Achievable », maintenir les expositions aussi basses que raisonnablement possible) : **le meilleur déchet est celui qu'on ne produit pas, puis celui qu'on trie correctement à la source.** Une erreur de tri au moment de la production coûte, en aval, des semaines d'entreposage inutile ou une non-conformité d'évacuation.\n\n**Réduction à la source et tri par période — le geste fondateur.** Le tri par radionucléide et par période est **obligatoire dès la production** [1]. Sa logique est purement physique : mélanger un déchet Tc-99m (T½ 6 h) avec un déchet I-131 (T½ 8 j) dans le même contenant, c'est imposer à l'ensemble la décroissance du plus lent. Concrètement, les sacs marqués F-18 (T½ ~110 min) sont souvent évacuables en filière **DASRI** (déchets d'activités de soins à risques infectieux) **dès le lendemain** [17], alors qu'un même sac contaminé au recyclage aurait été perdu pour des semaines. Les objets piquants/coupants et souillés (aiguilles, seringues, cotons, gants) vont en fûts **plombés** identifiés par famille de période, transférés vers le local de décroissance, puis évacués après contrôle [17].\n\n**Les trois leviers ALARA appliqués au local déchets.** Le personnel manipulant les déchets s'expose ; les limites de dose de la CIPR 103 encadrent cette exposition : travailleur **20 mSv/an** (moyenne sur 5 ans), cristallin **20 mSv/an**, extrémités (mains) **500 mSv/an**, public **1 mSv/an** [23][11]. Les leviers sont classiques :\n\n| Levier | Application au local de décroissance | Source |\n|---|---|---|\n| **Temps** | Minimiser la durée de manipulation ; ne pas rouvrir inutilement les compartiments en décroissance | [23] |\n| **Distance** | Manipulation à distance, entreposage à l'écart des postes de travail | [23] |\n| **Écran** | Fûts et poubelles **plombés** ; adapter l'écran à l'énergie (γ 364 keV de l'I-131 vs β pur de l'Y-90) | [17][23] |\n| **Confinement/ventilation** | Local dédié, fermé, ventilé, décontaminable, à rétention ; captation des gaz (Xe-133, air activé cyclotron) | [1][14] |\n\n**Ne pas gérer par décroissance ce qui n'en relève pas.** Tout nucléide de période **> 100 j** (France) sort du champ de la décroissance sur place : sources scellées de calibration (**Co-57, Ge-68 271 j, Cs-137**), Ge-68 des sources TEP, et l'impureté Lu-177m (voir D1) [15]. La filière correcte est le **retour fournisseur** (kits de reprise) ou l'orientation vers l'organisme spécialisé (**ANDRA** en France) [40]. Confondre « déchet à vie courte » et « déchet contenant une trace à vie longue » est l'erreur qui piège le plus souvent les services de RIV.\n\n**Effluents gazeux — un flux souvent oublié.** Le tri ne concerne pas que le solide et le liquide. Les gaz de ventilation pulmonaire (**Xe-133**, T½ ~5 j ; **Kr-81m**, T½ 13 s) et l'air activé des cyclotrons TEP relèvent d'une captation par ventilation dédiée puis rejet contrôlé [14][26]. Le Kr-81m délivre une dose pulmonaire **10 fois inférieure** au Xe-133 et ne nécessite pas de récupération du gaz expiré, contrairement au Xe-133 qui impose un dispositif de collecte [14] — un arbitrage traceur qui a des conséquences directes sur le flux d'effluents gazeux.",
+          "stats": [
+            {
+              "value": "< 100 j",
+              "label": "Seuil de décroissance sur place, France (au-delà → ANDRA) [9]"
+            },
+            {
+              "value": "20 mSv/an",
+              "label": "Limite de dose travailleur, CIPR 103 [23]"
+            },
+            {
+              "value": "J+1",
+              "label": "Évacuation DASRI possible d'un sac F-18 (T½ 110 min) [17]"
+            },
+            {
+              "value": "271 j",
+              "label": "Période du Ge-68 → hors décroissance, filière fournisseur/ANDRA [40]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — mélanger les périodes dans un même contenant",
+              "text": "L'erreur la plus coûteuse est en amont : un déchet à vie courte (Tc-99m, F-18) jeté dans un contenant contenant déjà un nucléide plus lent (I-131) hérite de la décroissance du plus lent. Le **tri par période dès la production** est obligatoire [1] et conditionne toute l'efficacité de la filière. Corollaire : une source scellée ou une trace à vie longue (Ge-68, Cs-137, Lu-177m) glissée dans le circuit « vie courte » bloque l'évacuation et crée une non-conformité."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — ALARA au sens large : optimiser le volume, pas seulement la dose",
+              "text": "L'optimisation déchets a deux objectifs simultanés : minimiser l'**exposition** (temps/distance/écran, limites CIPR 103 [23]) et minimiser le **volume/durée d'entreposage** (réduction à la source, tri fin par période, retour fournisseur des sources scellées [40]). Les deux se rejoignent : moins de déchets mal triés = moins de manipulation = moins de dose et moins de place d'entreposage mobilisée."
+            },
+            {
+              "type": "info",
+              "title": "Décroissance sur place : la règle des ~10 périodes",
+              "text": "Après **n** périodes, il reste A₀/2ⁿ ; après **10 périodes**, ≈ **1/1024 ≈ 0,1 %** de l'activité initiale — d'où la règle pratique universelle des ~10 demi-vies retenue en France pour dimensionner l'entreposage [9]. Le critère US ne fixe plus « 10 périodes » mais le résultat du contrôle (indiscernable du bruit de fond) [4] ; les deux convergent en pratique vers le même geste : entreposer, mesurer, puis seulement libérer."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Les trois leviers ALARA — temps, distance, écran — appliqués à la manipulation des déchets radioactifs au local de décroissance, complétés par le confinement et la ventilation."
+          }
+        },
+        {
+          "title": "E1 - Ancrer dans la reglementation — cadre France/USA, normes internationales et culture de gestion",
+          "text": "La gestion des dechets et effluents radioactifs de medecine nucleaire ne repose pas sur une prouesse technique mais sur un **cadre reglementaire strict** doublé d'une **culture de traçabilite**. Le principe operationnel dominant est la **gestion par decroissance sur place** (« decay-in-storage », DIS) : les radionucleides medicaux ayant des **periodes courtes**, on entrepose le dechet le temps que son activite rejoigne le bruit de fond, puis on l'elimine dans les filieres conventionnelles [1][4]. La loi de decroissance A(t) = A0 · e^(-ln2·t/T1/2) impose qu'apres **n periodes** il reste A0/2^n ; apres **10 periodes** subsiste ≈ **1/1024 ≈ 0,1 %** de l'activite initiale — d'ou la regle pratique dite « des 10 periodes » [7][9].\n\n**▸ France (ASN/ASNR).** Le texte pivot est la **Decision n° 2008-DC-0095 du 29 janvier 2008** de l'ASN, fixant les regles techniques d'elimination des effluents et dechets contamines par des radionucleides (application de l'art. **R.1333-12 du Code de la sante publique**), **homologuee par arrete du 23 juillet 2008** ; ses dispositions sont applicables depuis le **2 aout 2011** [1][2]. Le **Guide ASN n° 18** (2012) en precise les conditions d'application pour les installations autorisees au titre du CSP (medecine nucleaire, laboratoires) [31][32]. Deux seuils structurent tout : (i) les dechets/effluents contamines par des radionucleides de **periode < 100 jours** peuvent etre geres par decroissance — a condition que leurs descendants ne soient pas eux-memes de periode > 100 jours ; (ii) au-dela de **100 jours**, pas de rejet : collecte a la source et reprise par un organisme specialise (**ANDRA**, Agence nationale pour la gestion des dechets radioactifs) [31][33]. Un dechet ne peut etre evacue de l'entreposage qu'apres un delai **superieur a 10 fois la periode** du radionucleide, et le controle radiologique avant evacuation exige un niveau residuel ramene a **deux fois le bruit de fond local (2 × BdF)**, verifie par passage sous **portique de detection** fixe [23][33]. Un **plan de gestion des effluents et dechets (PGED)** est obligatoire, decrivant tri, entreposage, controle et elimination [19].\n\n**▸ Etats-Unis (NRC).** La regle federale **10 CFR § 35.92** (« Decay-in-storage ») autorise la retention pour decroissance de tout materiau de **periode physique ≤ 120 jours**, sans consideration d'activite, sous deux conditions : (a) controle de surface avant elimination attestant une radioactivite **indiscernable du bruit de fond** (detecteur regle sur son echelle la plus sensible, sans blindage interpose) ; (b) **retrait/obliteration de tous les symboles** de radioactivite [4][5]. Point d'evolution reglementaire majeur : l'ancienne exigence de conserver le dechet **10 periodes** avant elimination a ete **supprimee** de la version revisee de 10 CFR 35.92 — le critere devient purement le resultat du controle (indiscernable du BdF), non plus une duree forfaitaire [4]. Les enregistrements (**10 CFR § 35.2092**) sont a conserver **3 ans** : date d'elimination, instrument, bruit de fond, niveau mesure en surface de chaque conteneur, nom de l'operateur [6].\n\n**▸ Normes internationales (AIEA, CIPR).** L'AIEA classe les dechets en six categories (GSG-1) : **EW** (Exempt Waste, libere du controle reglementaire), **VSLW** (Very Short-Lived Waste — classe centrale de la medecine nucleaire, entreposable quelques mois a quelques annees puis libere), **VLLW**, **LLW**, **ILW**, **HLW** [10]. Les niveaux de **liberation (clearance)** et d'**exemption** reposent sur une contrainte de dose de l'ordre de **10 µSv/an** au public, la limite de dose au public restant **1 mSv/an** (GSR Part 3) [11][12][25]. La **CIPR 94** encadre la liberation des patients traites par radionucleides non scelles (contrainte de dose aux proches/aidants de **5 mSv par episode** ; enfants/nourrissons et visiteurs non aidants = public, **1 mSv/an**) [14]. La **CIPR 103** fixe les limites de dose applicables le long de la filiere : **20 mSv/an** (travailleur, moyenne sur 5 ans), **1 mSv/an** (public), **20 mSv/an** cristallin, **500 mSv/an** extremites [44].\n\n| Item reglementaire | France (ASN/ASNR) | Etats-Unis (NRC) | Source |\n|---|---|---|---|\n| Texte pivot | Decision 2008-DC-0095 (arrete 23/07/2008) | 10 CFR § 35.92 | [1][4] |\n| Seuil de periode pour decroissance | **< 100 jours** | **≤ 120 jours** | [31][4] |\n| Duree d'entreposage | **> 10 periodes** (regle explicite) | Pas de duree imposee (critere = controle) | [33][4] |\n| Critere de liberation | Niveau ≤ **2 × bruit de fond** + portique | **Indiscernable** du bruit de fond | [23][4] |\n| Symboles de radioactivite | Traçabilite / PGED | **Retrait/obliteration** obligatoire | [19][5] |\n| Enregistrements | Traçabilite (PGED, Guide n° 18) | Conservation **3 ans** (§ 35.2092) | [32][6] |\n| Periode longue (> seuil) | Reprise **ANDRA** / fournisseur | Filiere autorisee / reprise fournisseur | [33][27] |\n\n**Culture de gestion.** La chaine operationnelle est invariante : production → **tri a la source par radionucleide/periode** → conditionnement/etiquetage (futs plombes, DASRI — dechets d'activites de soins a risques infectieux) → **entreposage en decroissance** (local dechets dedie, cuves) → **controle radiologique** → **elimination** conventionnelle apres retour au bruit de fond, ou orientation ANDRA si periode longue [23][33]. Le non-respect de ce circuit fait l'objet d'avis d'incident (elimination non conforme signalee par l'ASN) [30] : la traçabilite n'est pas une formalite mais la garantie que rien ne quitte le service avant retour au bruit de fond.",
+          "stats": [
+            {
+              "value": "< 100 j",
+              "label": "Seuil periode decroissance (France) [31]"
+            },
+            {
+              "value": "≤ 120 j",
+              "label": "Seuil periode decroissance (USA) [4]"
+            },
+            {
+              "value": "≈ 0,1 %",
+              "label": "Activite residuelle apres 10 periodes [7]"
+            },
+            {
+              "value": "2 × BdF",
+              "label": "Critere de liberation France [23]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — 100 jours (France) ≠ 120 jours (USA)",
+              "text": "Le seuil de periode ouvrant la gestion par decroissance differe : **< 100 jours** en France [31], **≤ 120 jours** aux Etats-Unis [4]. C'est une difference reglementaire reelle, a ne jamais confondre. De meme, la « regle des 10 periodes » est **explicite en France** (delai > 10 × T1/2 [33]) mais a ete **supprimee du 10 CFR 35.92** revise, ou seul compte le controle « indiscernable du bruit de fond » [4]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le piege Lu-177m",
+              "text": "Le Lu-177 therapeutique (PSMA, DOTATATE) contient une impurete **Lu-177m** de ~**0,3 %** [0,2-1,7 %] de l'activite mais de periode **~152-160 jours** [38]. Cette trace, de periode > 100 jours, **dicte a elle seule** la duree d'entreposage : **3 ans** pour flacons vides/conteneurs, **5 ans** pour flacons partiellement utilises. Apres 3 mois de decroissance, le debit au contact restait **14× superieur** au niveau de liberation [38]. Ne jamais dimensionner l'entreposage du Lu-177 sur ses 6,7 jours nominaux."
+            },
+            {
+              "type": "info",
+              "title": "Effluents-patients",
+              "text": "Les chambres d'hospitalisation protegee (I-131, Lu-177) sont raccordees a des **cuves de decroissance** dediees fonctionnant en cycles remplissage/decroissance/vidange, avec mesure de niveau, prelevement et detection de fuite, avant rejet controle au reseau [1][6]. Exemple documente (installation I-131) : cuve de delai **7 500 L**, entreposage **~4 semaines**, activite volumique ramenee de **~440 MBq/m3** a **~1,5 MBq/m3** apres dilution [41]."
+            }
+          ],
+          "figure": {
+            "figureRef": "DECAY_TYPES",
+            "alt": "Schema des modes de decroissance radioactive (alpha, beta-, beta+, capture electronique, gamma) : le fondement physique de la gestion par decroissance sur place, qui exploite la reduction exponentielle de l'activite des radionucleides de periode courte avant elimination en filiere conventionnelle."
+          }
+        },
+        {
+          "title": "E2 - Retenir l'essentiel — points cles, fiche-reflexe et synthese operationnelle",
+          "text": "**Synthese operationnelle.** La gestion des dechets et effluents radioactifs de medecine nucleaire tient en un principe (la decroissance sur place), deux seuils reglementaires (100 j en France, 120 j aux USA), une chaine invariante (tri → entreposage → controle → elimination) et une exception majeure (le Lu-177m qui impose 3-5 ans). Tout dechet dont le radionucleide est de periode inferieure au seuil est entrepose puis rendu aux filieres conventionnelles apres controle attestant le retour au bruit de fond ; tout dechet de periode superieure, ou toute source scellee, sort du champ de la decroissance et suit la filiere ANDRA / reprise fournisseur [1][4][27].\n\n**Fiche-reflexe — algorithme de decision.**\n\n| Etape | Regle | Reference |\n|---|---|---|\n| 1. Identifier | Radionucleide + periode physique (et periode des descendants) | [31] |\n| 2a. Periode < 100 j (Fr) / ≤ 120 j (USA) | Entreposage pour **decroissance** : > 10 periodes (Fr) / jusqu'au controle (USA) | [33][4] |\n| 2b. Controle | ≤ **2 × bruit de fond** + portique (Fr) / **indiscernable du BdF** (USA) | [23][4] |\n| 2c. Elimination | Obliterer les symboles → filiere conventionnelle (DASRI/ordures) | [5] |\n| 3. Periode > 100 j / source scellee | Collecte a la source → **ANDRA** / reprise fournisseur | [33][27] |\n| 4. Effluents liquides (excreta) | Cuves de decroissance dediees → controle → rejet reseau sous seuil | [1][41] |\n| 5. Cas Lu-177 | Prolonger l'entreposage **3-5 ans** (impurete Lu-177m) | [38] |\n\n**Periodes-cles a memoriser** (elles dimensionnent la duree d'entreposage ≈ 10 × T1/2) : **F-18 ≈ 110 min** (1,83 h), **Ga-68 ≈ 68 min**, **Tc-99m ≈ 6 h**, **I-123 ≈ 13 h**, **Y-90 ≈ 64 h**, **Mo-99 ≈ 66 h**, **Lu-177 ≈ 6,7 j**, **I-131 ≈ 8 j**, **Xe-133 ≈ 5 j** ; hors decroissance car > 100 j : **Ge-68 ≈ 271 j**, sources scellees Co-57 / Cs-137 [8][12][13]. Consequence pratique : un sac de dechets marque F-18 est souvent evacuable en filiere DASRI **des le lendemain**, tandis que le Ge-68 ou les sources scellees imposent la reprise fournisseur [17][40].\n\n**Chiffres-phares transverses.** Apres **10 periodes**, activite residuelle ≈ **0,1 %** [7]. Liberation/exemption AIEA fondees sur **10 µSv/an**, limite public **1 mSv/an** [11][25]. Contrainte de dose aux proches (CIPR 94) : **5 mSv/episode** [14]. Limites CIPR 103 : travailleur **20 mSv/an**, cristallin **20 mSv/an**, extremites **500 mSv/an** [44]. Sortie du patient traite a l'I-131 : critere international **≤ 400 MBq** (bonne pratique AIEA), debit de dose a 1 m couramment **≤ 20-40 µSv/h** selon les pays [25].",
+          "list": [
+            "**Principe dominant** : gestion par **decroissance sur place** (decay-in-storage) — les radionucleides medicaux ayant des **periodes courtes**, on entrepose puis on elimine en filiere conventionnelle apres retour au bruit de fond [1][4].",
+            "**Deux seuils** a ne pas confondre : periode **< 100 jours** (France, Decision 2008-DC-0095) [31] vs **≤ 120 jours** (USA, 10 CFR 35.92) [4] ; au-dela → collecte a la source et **ANDRA** / reprise fournisseur [33][27].",
+            "**Regle des 10 periodes** : apres 10 × T1/2, activite residuelle ≈ **0,1 %** [7] — explicite en France (delai > 10 periodes [33]), **supprimee** du 10 CFR 35.92 revise ou seul compte le controle « indiscernable du bruit de fond » [4].",
+            "**Critere de liberation** : ≤ **2 × bruit de fond** + portique (France) [23] ; **indiscernable du BdF** puis **obliteration des symboles** (USA) [5] ; enregistrements conserves **3 ans** aux USA [6].",
+            "**Chaine de gestion** invariante : tri a la source par periode → conditionnement (futs plombes / DASRI) → entreposage (local dechets, cuves) → controle radiologique → elimination [23][33].",
+            "**Effluents liquides** (preparations + **excreta patients**) → **cuves de decroissance** dediees, cycles remplissage/decroissance/vidange, rejet controle au reseau [1][41].",
+            "**Cas Lu-177** : l'impurete **Lu-177m** (~152-160 j, ~0,3 %) impose **3-5 ans** d'entreposage, bien au-dela des 6,7 j nominaux [38].",
+            "**Sources scellees** (Co-57, Ge-68 271 j, Cs-137) et **generateurs** usages → **reprise fournisseur** / ANDRA, hors decroissance sur place [27][40].",
+            "**Classification AIEA** (GSG-1) : la medecine nucleaire releve surtout du **VSLW** (Very Short-Lived Waste), entreposable quelques mois puis libere [10].",
+            "**Cadre normatif** : liberation/exemption **10 µSv/an**, public **1 mSv/an** [11][25] ; CIPR 94 = **5 mSv/episode** aux proches [14] ; CIPR 103 = travailleur **20 mSv/an**, cristallin **20 mSv/an**, extremites **500 mSv/an** [44]."
+          ],
+          "stats": [
+            {
+              "value": "~10 × T1/2",
+              "label": "Duree d'entreposage type [7]"
+            },
+            {
+              "value": "≈ 28 j",
+              "label": "Generateur Mo-99/Tc-99m usage [9]"
+            },
+            {
+              "value": "3-5 ans",
+              "label": "Entreposage Lu-177 (impurete Lu-177m) [38]"
+            },
+            {
+              "value": "≤ 400 MBq",
+              "label": "Sortie patient I-131 (bonne pratique AIEA) [25]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege — ne jamais eliminer avant controle",
+              "text": "Il est **interdit** d'eliminer un dechet radioactif en filiere conventionnelle avant controle attestant le retour au bruit de fond [1][4], et **interdit** de gerer par decroissance un radionucleide de periode > 100 j (Fr) / > 120 j (USA) [33][4]. L'elimination non conforme est un incident declarable [30]. Le controle US impose en outre le **retrait de tous les symboles de radioactivite** avant sortie [5]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — sources scellees et generateurs",
+              "text": "Sources de calibration (**Co-57, Ge-68, Cs-137**) et **generateurs Mo-99/Tc-99m usages** : la voie privilegiee est le **retour au fournisseur** (kits de reprise), et non la decroissance sur place — Ge-68 (271 j) et Cs-137 depassent tout seuil [27][40]. Un generateur peut aussi etre entrepose ~10 × T1/2 du Mo-99 (66 h), soit ~**28 jours**, avant elimination [9]."
+            },
+            {
+              "type": "info",
+              "title": "Dosimetrie et charge a faire decroitre",
+              "text": "Les coefficients de dose CIPR 128 (mSv/MBq) fondent l'evaluation de dose au personnel et au public le long de la filiere : **F-18-FDG ≈ 0,017-0,019 mSv/MBq**, composes **Tc-99m 0,0017-0,016 mSv/MBq** selon le traceur [42][43]. L'activite residuelle dans les excreta et le materiel determine la quantite a faire decroitre avant liberation."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schema des trois leviers ALARA (temps, distance, ecran) appliques a la gestion des dechets radioactifs : structure les mesures de radioprotection du personnel au local de decroissance (futs plombes, distance, duree d'exposition minimisee) et les consignes a l'entourage du patient traite, source residuelle apres liberation."
+          }
+        },
+        {
+          "title": "E3 - References, recommandations & liens",
+          "text": "**Recommandations et textes de reference.** Le socle reglementaire et normatif de la gestion des dechets et effluents de medecine nucleaire :\n\n- **France** : Decision ASN n° **2008-DC-0095** du 29/01/2008 (arrete d'homologation du 23/07/2008, art. R.1333-12 CSP) [1][2][3] ; **Guide ASN n° 18** (2012) [31][32] ; consultation ASN du 26/01/2016 sur l'elimination des effluents et dechets, PGED [19] ; Rapport annuel ASN 2023, ch. 15 [23] ; dossier pedagogique ASNR « La gestion des dechets radioactifs » (2025) [24] ; retour d'experience IRSN/ASNR [22][34]. Exemples operationnels : procedure du CH d'Avignon [39], plan de gestion des dechets version publique [33], avis d'incident (elimination non conforme, 2024) [30].\n- **Etats-Unis (NRC)** : **10 CFR § 35.92** decay-in-storage [4][5] ; **10 CFR § 35.2092** enregistrements [6] ; LLRW Toolbox DIS [29] ; HPPOS-127 (generateurs usages) [27] ; pratiques internationales de liberation des patients I-131 (ML14217A350) [15] et rapport ORNL (ML17262A909) [16].\n- **International** : AIEA **GSG-1** classification (Pub1419) [10], concepts de clearance (Pub2058) [11] et d'exemption (Pub2060) [12], predisposal management (usage medical/industriel/recherche) [13], TECDOC-1183 [28] ; **CIPR 94** liberation des patients [14][45], **CIPR 103** limites de dose [44], **CIPR 128** doses aux patients (mSv/MBq) [42].\n- **Litterature pivot** : cuves de decroissance des effluents liquides (Radioprotection 2025) [46] et dosimetrie d'un rejet liquide I-131 (PMC7905285) [41] ; impurete Lu-177m et dechets secs (PMC9829929) [38] ; guide EANM/SNMMI 177Lu-PSMA-RLT (2023) [17] ; dechets menagers post-liberation 177Lu-PSMA-617 (J Nucl Med 2023) [18] ; revue des niveaux de clearance (ScienceDirect) [25] ; periodes des radionucleides medicaux [8][35][36][37] ; sources scellees (retour fournisseur) [40] ; off-gas Xe/Kr des generateurs [26] ; effluents de medecine nucleaire, presentation SFRP Tchilian/Chartier [20] ; dechets d'un blesse radiocontamine (Radioprotection 2015) [21].\n\n**Points de vigilance / valeurs a re-verifier sur texte primaire.** Les valeurs **10 Bq/L** (rejet effluents) et **« 2 × bruit de fond »** proviennent d'analyses secondaires (SFRP/IRSN, syntheses de la Decision) et devraient etre re-verifiees ligne a ligne dans le PDF officiel de la Decision 2008-DC-0095 et du Guide ASN n° 18 avant publication ferme [20][32]. Le seuil « 100 j » (Fr) vs « 120 j » (USA) est une difference reglementaire reelle [31][4]. La regle « 10 periodes » est une bonne pratique (0,1 % residuel) explicite en France [33], mais n'est plus le libelle littoral du 10 CFR 35.92 revise, qui impose le critere « indiscernable du bruit de fond » [4].\n\n**Carte de liens (reseau de l'article).** Traceurs / radionucleides : **Tc-99m**, **F-18**, **Lu-177**, **I-131**, **Y-90**, **Xe-133** · Examens/therapies generateurs de dechets : **radiotherapie interne vectorisee I-131**, **177Lu-PSMA / DOTATATE**, **radioembolisation Y-90**, **ventilation Xe-133** · Theranostique : **177Lu-DOTATATE**, **131I-MIBG** · Thematiques radioprotection liees : **ALARA**, **dosimetrie**, **liberation des patients (CIPR 94)**. *Derniere mise a jour : juillet 2026 — version de travail (profil medecin nucleaire).*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Reperage rapide des textes",
+              "text": "Pour une decision operationnelle en France : **Decision 2008-DC-0095** [1] + **Guide ASN n° 18** [32] + PGED du service [19]. Aux USA : **10 CFR § 35.92** [4] pour le procede et **§ 35.2092** [6] pour les enregistrements (3 ans). A l'international, l'AIEA **GSG-1** [10] donne la classification (VSLW pour la medecine nucleaire) et les concepts de clearance/exemption a 10 µSv/an [11][12]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — remonter aux sources primaires",
+              "text": "Plusieurs valeurs-cles (seuils de rejet en Bq/L, « 2 × bruit de fond ») circulent via des syntheses. Avant tout affichage chiffre ferme, ouvrir les **PDF officiels** (Decision 2008-DC-0095, Guide ASN n° 18 [32], presentation SFRP [20]) : les activites volumiques seuils exactes de rejet des effluents liquides n'ont pas ete extraites integralement ici et doivent etre confirmees ligne a ligne."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

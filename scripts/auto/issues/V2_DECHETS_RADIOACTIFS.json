@@ -1,44 +1,38 @@
 [
   {
     "severity": "minor",
-    "where": "Section C3 (tableau sortie patient) et stat de la section E2 : « 1,2 GBq — Activité ¹³¹I retenue ≤ pour sortie patient (NRC) »",
-    "problem": "Confusion administré/retenu. Dans la NRC Reg. Guide 8.39, le seuil de 1,2 GBq (33 mCi) est l'activité ADMINISTRÉE (colonne 1, Qrel) en deçà de laquelle la libération est autorisée sans calcul individualisé — la Table 1 distingue explicitement activité administrée et activité retenue, qui sont deux colonnes/valeurs différentes. Le tableau de C3 est correct (« ≤ 1,2 GBq administré »), mais la stat E2 et l'identityCard qualifient à tort 1,2 GBq d'activité « retenue ».",
-    "fix": "Remplacer « Activité ¹³¹I retenue ≤ 1,2 GBq » par « Activité ¹³¹I administrée ≤ 1,2 GBq » dans la stat E2 et l'identityCard, pour rester cohérent avec le tableau de C3 et le texte du RG 8.39."
+    "where": "Section 3 (Recherche 1) tableau radionucléides — ligne Xe-133 ; et sections B4/A2 texte",
+    "problem": "L'article ne donne pas d'énergie gamma pour le Xe-133 mais le décrit correctement (~5 j, gaz rare). Aucune erreur ici. En revanche, à titre de complément d'exactitude : le Xe-133 émet un gamma de 81 keV (basse énergie), ce qui n'est jamais cité alors que l'énergie du Kr-81m (190 keV) l'est. Absence, pas erreur — signalé pour cohérence rédactionnelle uniquement.",
+    "fix": "Optionnel : préciser Xe-133 γ 81 keV dans le tableau des gaz (B4) pour symétrie avec le Kr-81m (190 keV) déjà indiqué. Non bloquant."
   },
   {
     "severity": "minor",
-    "where": "Section C3, infobox « volatilité ¹³¹I » : « DAC ¹³¹I = 416,67 Bq/m³ » (valeur héritée des faits étalon)",
-    "problem": "La DAC réglementaire de l'¹³¹I (10 CFR 20 App. B) est 2×10⁻⁸ µCi/mL, soit 740 Bq/m³ (= 50 µCi ALI / 2400 m³). La valeur 416,67 Bq/m³ ne correspond pas à la DAC réglementaire NRC ; elle est probablement issue d'un calcul/source secondaire erroné. Écart d'un facteur ~1,8.",
-    "fix": "Vérifier sur source primaire 10 CFR 20 Appendix B. Si l'on cite la DAC NRC, utiliser ≈ 740 Bq/m³ (2×10⁻⁸ µCi/mL). Si la valeur 416,67 vient d'un autre référentiel (ex. inhalation occupationnelle différente), préciser la source exacte, sinon retirer le chiffre."
+    "where": "Section C3 tableau + section 7 (Recherche 1) — critère de sortie I-131 par débit de dose",
+    "problem": "Deux critères de débit de dose coexistent et peuvent prêter à confusion : (a) débits à 1 m « Allemagne 3,5 ; Japon 30 ; USA 70 µSv/h » et (b) critère alternatif ORNL « ~3,5 µSv/h à 2 m (≈250 MBq incorporés) ». Le « 3,5 µSv/h » apparaît donc à la fois comme valeur allemande à 1 m ET comme critère ORNL à 2 m — ce sont deux grandeurs à distances différentes, ce que le texte distingue correctement mais de façon serrée. Risque de lecture erronée (coïncidence numérique trompeuse).",
+    "fix": "Ajouter une note explicitant que la coïncidence du chiffre 3,5 µSv/h est fortuite : critère allemand = 3,5 µSv/h À 1 M ; critère ORNL = 3,5 µSv/h À 2 M (donc ~250 MBq). Préciser systématiquement la distance de mesure à chaque occurrence."
   },
   {
     "severity": "minor",
-    "where": "Section C3 (tableau) et infobox E2 : niveau directeur AIEA de libération ¹³¹I « 1 200 MBq retenus / 70 µSv/h » puis « 1 100–1 200 MBq »",
-    "problem": "Légère incohérence/imprécision : le document NRC ML14217A350 référencé indique 1100 MBq pour le niveau AIEA, tandis que d'autres sources citent 1200 MBq. Le contenu mélange les deux valeurs (1200 dans C3, 1100–1200 dans E2). Imprécision sans erreur factuelle nette.",
-    "fix": "Harmoniser sur une valeur sourcée unique (idéalement 1100 MBq selon ML14217A350, ou indiquer explicitement la fourchette 1100–1200 MBq avec la source à chaque occurrence)."
-  },
-  {
-    "severity": "major",
-    "where": "Structure des sections (medecin_nuc.sections) — passage de A4 à C1",
-    "problem": "La consigne exige une couverture A->E. Or la section B est totalement absente : les 13 sections sont A1, A2, A3, A4, C1, C2, C3, D1, D2, D3, E1, E2, E3. Il n'existe aucune section B (ni B1, ni B2...). La couverture saute directement de A4 à C1, donc le bloc B (qui dans l'étalon couvre typiquement la physiologie/le mécanisme intermédiaire) manque.",
-    "fix": "Ajouter au moins une section B (p.ex. B1/B2) couvrant le maillon manquant entre la classification (A) et la mesure/contrôle (C), ou renuméroter pour rétablir une progression A->E continue. Vérifier que l'étalon attend bien un bloc B et combler le trou."
+    "where": "Section 7 (Recherche 1) — activité corporelle de sortie I-131 vs critère AIEA",
+    "problem": "Le texte cite « 400 MBq comme bonne pratique » et « ≤ 400 MBq (10,8 mCi) reconnue comme bonne pratique internationale (IAEA) ». La formulation peut laisser croire que 400 MBq est un critère AIEA formel, alors que le repère AIEA principal reste 1100 MBq ; le 400 MBq est une pratique renforcée retenue par certains pays. Le tableau C3 le formule correctement ('Bonne pratique renforcée'), mais la prose de la §7/B3 est plus ambiguë.",
+    "fix": "Harmoniser le libellé : présenter 1100 MBq (≈30 mCi) comme le repère AIEA de référence, et 400 MBq (10,8 mCi) explicitement comme un seuil de bonne pratique adopté par plusieurs pays (non un seuil AIEA opposable), comme déjà fait dans le tableau C3."
   },
   {
     "severity": "minor",
-    "where": "Plusieurs sections (A2, A4, C1, D1, E1, infoBox ¹⁷⁷ᵐLu) — branchement de désintégration du ¹⁷⁷ᵐLu",
-    "problem": "Le document indique « 21,4 % décroît vers ¹⁷⁷Lu (transition isomérique) et 78,6 % vers ¹⁷⁷Hf (β) ». Les valeurs couramment publiées sont ~22,7 % vers ¹⁷⁷Lu et ~77,3 % vers ¹⁷⁷Hf. Le couple 21,4/78,6 n'a pas été retrouvé dans les sources vérifiées (qui donnent 22,7/77,3).",
-    "fix": "Vérifier le branchement exact sur la source primaire (EJNMMI Physics / PMC9829929 [19][20] ou table ENSDF) et corriger en 22,7 %/77,3 % si confirmé, ou citer précisément la source qui donne 21,4/78,6."
+    "where": "Section D1 tableau + stat card 'Y-90 ≈ 64 h (~2,7 j)'",
+    "problem": "Le Y-90 est arrondi à '~2,7 j' à partir de 64 h. Valeur exacte = 64,0-64,2 h = 2,67 j. L'arrondi à 2,7 j est acceptable mais le tableau de la Recherche 1 écrit '64 h (~2,7 j)' tandis que d'autres passages écrivent '~64 h (~2,67 j)'. Incohérence d'arrondi mineure, sans impact clinique.",
+    "fix": "Uniformiser sur 64 h ≈ 2,67 j partout (valeur physique correcte : 64,05 h)."
   },
   {
     "severity": "minor",
-    "where": "Cohérence interne — période du ¹⁷⁷ᵐLu (160,4 j) vs valeur médiane de la source",
-    "problem": "Le document utilise systématiquement T½(¹⁷⁷ᵐLu)=160,4 j (valeur de table ENSDF, correcte et vérifiée). Mais la source [19][20] elle-même rapporte une demi-vie médiane mesurée d'environ 152 j dans son étude. Aucune fabrication, mais le chiffre 160,4 j est attribué à [19][20] alors qu'il provient en réalité d'une donnée de table, pas de l'étude citée.",
-    "fix": "Soit citer 160,4 j avec une référence de données nucléaires (ENSDF/table), soit signaler que la source [19][20] mesure ~152 j. Éviter d'attribuer 160,4 j directement à l'étude EJNMMI qui ne donne pas ce chiffre."
+    "where": "quiz — question « Quel type de source échappe à la décroissance sur place… » (explication)",
+    "problem": "L'explication cite [18][40] pour justifier que les sources scellées (Co-57, Ge-68, Cs-137) relèvent de la reprise fournisseur/ANDRA. Or la source [18] est l'article J Nucl Med 2023 sur les déchets ménagers après [177Lu]Lu-PSMA-617 — sans rapport avec les sources scellées. Les références pertinentes pour cette affirmation sont [13] (AIEA predisposal) et [40] (sealed source disposal Co-57/Ge-68/Cs-137). Vérifié : [18] a bien été confirmée comme article Lu-177-PSMA, donc l'appel de note est erroné (mauvais renvoi), pas la source elle-même.",
+    "fix": "Remplacer [18] par [40] (et éventuellement [13]) dans l'explication de cette question de quiz : « …reprise fournisseur ou de l'ANDRA, pas de la décroissance sur place [40] » (ou [13][40])."
   },
   {
     "severity": "minor",
-    "where": "E3 infoBox « Note de fiabilité » et données physiques décimales (¹⁸F 109,77 min ; ¹³¹I 8,02 j ; ⁹⁹ᵐTc 140,5 keV / 6,01 h)",
-    "problem": "Plusieurs valeurs physiques de haute précision s'appuient sur Wikipedia [24][25] comme source primaire. Ces valeurs ont été recoupées et sont exactes, mais l'usage de Wikipedia comme référence pour des constantes nucléaires est un point de fragilité que le document reconnaît lui-même.",
-    "fix": "Remplacer ou doubler [24][25] (Wikipedia) par une source de données nucléaires primaire (ENSDF, BIPM/LNHB, ICRP 107) pour les périodes et énergies gamma citées à la décimale."
+    "where": "Sections B3/C1/E1 (valeur « 10 Bq/L ») et A1/A4/B2/C1/E1 (critère « 2 × bruit de fond ») — sourcées [20] et [23]/[10]",
+    "problem": "Le document lui-même signale (section E3, encadré « Points de vigilance ») que les valeurs « 10 Bq/L » (rejet effluents) et « 2 × bruit de fond » proviennent d'analyses secondaires (présentation SFRP [20], synthèses) et non du texte primaire de la Décision 2008-DC-0095 ni du Guide ASN n°18. La présentation SFRP [20] existe bien (URL valide, auteurs Tchilian/Chartier confirmés) mais son contenu binaire n'a pas pu être extrait pour confirmer littéralement le « 10 Bq/L ». Ce ne sont pas des fabrications, mais des valeurs à re-vérifier sur source primaire avant affichage ferme — ce que l'article reconnaît honnêtement.",
+    "fix": "Aucune correction bloquante : l'aveu de vigilance en E3 est adéquat. Optionnel : rattacher ces deux valeurs à une citation directe du PDF officiel de la Décision 2008-DC-0095 ou du Guide ASN n°18 [31][32] une fois la ligne exacte confirmée, plutôt qu'à [20]/[23] seuls."
   }
 ]
