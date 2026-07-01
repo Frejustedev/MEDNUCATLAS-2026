@@ -5,7 +5,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { ArticleMode, Category, Article, UserProfile, getAllowedAudiences } from './data';
 import { articleFromDocData } from './article-mapper';
 import { db, auth } from './firebase';
-import { collection, onSnapshot, query, doc, getDoc, setDoc, getDocs, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, User as FirebaseUser } from 'firebase/auth';
 
 export interface DbUser {
@@ -155,17 +155,22 @@ export function AtlasProvider({ children }: { children: ReactNode }) {
     return () => unsubscribe();
   }, []);
 
-  // Articles — chargement initial avec gestion explicite d'erreur + retry.
-  // L'article lui-même est rendu côté serveur (ISR) ; ce cache client sert les
-  // listes (catégories, recherche, favoris).
+  // Articles — chargement initial de la LISTE via l'API interne mise en cache
+  // (/api/articles), et NON plus par une lecture directe de toute la collection
+  // Firestore depuis le client. Cela découple le nombre de lectures Firestore du
+  // trafic (le point d'API ne lit Firestore qu'une fois par heure), ce qui évite
+  // d'épuiser le quota gratuit de lectures/jour. L'article lui-même reste rendu
+  // côté serveur (ISR) ; ce cache client sert les listes (catégories, recherche,
+  // favoris, cartes).
   const loadArticles = useCallback(async () => {
     setLoading(true);
     setArticlesError(null);
     try {
-      const q = query(collection(db, 'articles'));
-      const snapshot = await getDocs(q);
-      const fetchedArticles: Article[] = snapshot.docs.map((d) =>
-        articleFromDocData(d.data() as Record<string, unknown>)
+      const res = await fetch('/api/articles');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const json = (await res.json()) as { articles?: Record<string, unknown>[] };
+      const fetchedArticles: Article[] = (json.articles ?? []).map((d) =>
+        articleFromDocData(d)
       );
       setAllArticles(fetchedArticles);
     } catch (error) {
