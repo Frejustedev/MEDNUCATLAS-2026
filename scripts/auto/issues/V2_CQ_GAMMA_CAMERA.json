@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "minor",
+    "where": "Sections A1 (identityCard / stats COR), A4 (tableau + steps), B4 (tableau COR), C4 (tableau/stats), plus mentions « COR X < 0,5 mm » et « MHR/COR < ±1 mm »",
+    "problem": "Le seuil du centre de rotation (COR) est exprimé de plusieurs façons numériquement incompatibles entre elles : « < 0,5 pixel », « erreur X < 1,0 pixel (128×128) », « COR X < 0,5 mm », « MHR/COR < ±1 mm ». Or l'article affirme lui-même que 0,5 pixel = ~1,5 mm en matrice 128×128 ; donc « < 0,5 mm » (~0,17 pixel) et « < 0,5 pixel » ne désignent pas la même exigence. Un lecteur peut croire à une valeur canonique unique.",
+    "fix": "Vérification faite : ces différents chiffres proviennent tous des faits de référence, qui les présentent explicitement comme « critères classiques largement cités » issus de sources distinctes (AAPM TG-177 renvoyant au constructeur ; IPEM/KCL). L'article reste fidèle aux sources et n'introduit pas d'erreur. Amélioration souhaitable seulement : préciser une fois pour toutes que le seuil de référence est < 0,5 pixel (AAPM/constructeur) et que les valeurs en mm (0,5 mm ; 1 mm) sont des critères alternatifs de sources plus anciennes, pour lever l'ambiguïté. Non bloquant."
+  },
+  {
+    "severity": "minor",
+    "where": "Section D3, encadré stats : « ± 1 % — Uniformité système visée en TEMP (anti-anneau) [1] »",
+    "problem": "L'exigence d'uniformité système ±1 % pour la TEMP est attribuée à la référence [1] (AAPM TG-177), alors que dans le reste de l'article et dans les faits de référence elle est correctement attribuée à IPEM 86 / [10] / IAEA HHS n°6 [17]. Attribution de source légèrement incohérente.",
+    "fix": "Corriger la citation en [10,17] pour cohérence avec les sections A1, B1, C1, D4 qui sourcent correctement le ±1 % à IPEM/IAEA. Valeur exacte (±1 %) et fond médical corrects — simple correction de renvoi."
+  },
+  {
+    "severity": "minor",
+    "where": "Section A3 (« LMH/LMD correspond aux termes NEMA IU/DU »)",
+    "problem": "L'article affirme que « la nomenclature française LMH/LMD correspond aux termes NEMA IU/DU ». C'est une confusion terminologique : en français LMH = Largeur à Mi-Hauteur (= FWHM, résolution spatiale) et non l'uniformité. Assimiler LMH/LMD à Uniformité Intégrale/Différentielle est erroné ; LMH/LMD renvoie à la résolution (largeur à mi-hauteur / au dixième), pas à l'uniformité.",
+    "fix": "Supprimer l'équivalence « LMH/LMD ↔ IU/DU ». L'uniformité intégrale/différentielle (IU/DU) n'a pas d'acronyme français en LMH/LMD ; réserver LMH (=FWHM) et LMD/LTD (=FWTM) à la résolution spatiale, comme fait correctement au point 4 de la même section. Incohérence interne à corriger (n'affecte pas les valeurs chiffrées)."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections A2 et B4 (encadré précaution) + identityCard champ « Enjeu clinique »",
+    "problem": "Les valeurs de sensibilité/spécificité de la TEMP de perfusion myocardique sont données comme « ~88 % / ~74 % » et attribuées à [30,31]. Or la source [30] (PubMed 40773029, Int J Cardiovasc Imaging 2025;41(12):2283-2297), que j'ai vérifiée sur PubMed, rapporte Se 83,5 % / Sp 75,8 % — valeurs que l'article cite d'ailleurs CORRECTEMENT ailleurs (D3, E2, E4, quiz) en les rattachant à [30]. Il y a donc deux paires de chiffres divergentes rattachées à la même source [30] dans le même article. Ce n'est pas de la fabrication (la source existe et est réelle), mais une incohérence interne de fidélité : la paire 88/74 ne provient pas de [30].",
+    "fix": "Harmoniser : soit citer partout 83,5 % / 75,8 % avec [30] (valeur vérifiée), soit, si 88/74 provient bien de [31] (littérature SPECT MPI plus ancienne), l'attribuer explicitement à [31] seul et non à [30,31], pour ne pas laisser croire que [30] donne 88/74."
+  },
+  {
+    "severity": "minor",
+    "where": "Sources déclarées vs citées : [20],[21],[23],[25],[27],[28],[29],[32]",
+    "problem": "Huit sources sont déclarées dans le tableau `sources` mais ne sont jamais citées en ligne dans le corps de l'article ([20] AAPM AMOS2, [21] Halama AMOS2, [23] Clinical Tree, [25] VCU, [27] ICRP 128, [28] SNMMI Bone Scintigraphy, [29] SNMMI Bone Guideline, [32] Toxics 2023). Ce ne sont pas des sources inventées (URLs plausibles) mais des sources « orphelines » — surdimensionnement de la liste par rapport à l'usage réel.",
+    "fix": "Soit ajouter au moins une citation en ligne pour chacune là où c'est pertinent (ex. [27] ICRP 128 pour la dose, [28/29] pour la scintigraphie osseuse, [25] pour le CQ SPECT), soit les retirer de la liste `sources` pour éviter les références non utilisées."
+  },
+  {
+    "severity": "minor",
+    "where": "Vérification technique de [15] et [17]",
+    "problem": "Contrôle de transparence : [15] (jnm.snmjournals.org/content/61/supplement_1/145) a renvoyé HTTP 403 et [17] (www-pub.iaea.org/.../Pub1394_web.pdf) HTTP 402 lors du fetch. Ce sont des blocages d'accès serveur (anti-bot / rate-limit), PAS des URLs fabriquées — la structure des URLs est conforme aux conventions JNM et IAEA, et [14] (même schéma JNM supplément) ainsi que [30] ont été confirmées réelles. À signaler comme non re-vérifiées en direct plutôt que comme douteuses.",
+    "fix": "Aucune correction de contenu nécessaire ; conserver ces sources. Si une re-vérification est exigée, les contrôler via une requête authentifiée ou le PMID/DOI correspondant."
+  }
+]

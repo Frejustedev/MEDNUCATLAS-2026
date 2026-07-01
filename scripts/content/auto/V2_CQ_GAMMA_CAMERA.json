@@ -1,0 +1,1294 @@
+{
+  "id": "V2_CQ_GAMMA_CAMERA",
+  "cat": "instrumentation",
+  "catLabel": "Instrumentation",
+  "title": "Contrôle qualité d’une gamma-caméra",
+  "difficulty": "avancé",
+  "tags": [
+    "contrôle qualité",
+    "gamma-caméra",
+    "uniformité",
+    "résolution spatiale",
+    "linéarité",
+    "centre de rotation",
+    "TEMP",
+    "SPECT",
+    "NEMA NU 1",
+    "AAPM TG 177",
+    "assurance qualité",
+    "instrumentation médecine nucléaire",
+    "cobalt-57",
+    "collimateur"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] AAPM Report No. 177 — Acceptance Testing and Annual Physics Survey Recommendations for Gamma Camera, SPECT, and SPECT/CT Systems (Task Group 177, February 2019)",
+      "url": "https://www.aapm.org/pubs/reports/RPT_177.pdf"
+    },
+    {
+      "title": "[2] EANM Technologist Guide — Quality Control of Nuclear Medicine Instrumentation and Protocol Standardisation (2017)",
+      "url": "https://eanm.org/wp-content/uploads/2024/06/EANM_2017_TEchGuide_QualityControl-1.pdf"
+    },
+    {
+      "title": "[3] IAEA Human Health Campus — Gamma camera (Quality Assurance in Nuclear Medicine)",
+      "url": "https://humanhealth.iaea.org/HHW/MedicalPhysics/NuclearMedicine/QualityAssurance/Gammacamera/index.html"
+    },
+    {
+      "title": "[4] NEMA Standards Publication NU 1-2018 — Performance Measurements of Gamma Cameras (Contents and Scope)",
+      "url": "https://www.nema.org/docs/default-source/standards-document-library/nema_nu_1_2018-contents-and-scope.pdf"
+    },
+    {
+      "title": "[5] Radiology Key — The Gamma Camera: Performance Characteristics",
+      "url": "https://radiologykey.com/the-gamma-camera-performance-characteristics/"
+    },
+    {
+      "title": "[6] KCL eHealth (TEL) Nuclear Medicine — Quality Control: Gamma Cameras (COR tolerance, IPEM Report 86 reference)",
+      "url": "https://ehealth.kcl.ac.uk/tel/Nuclear-Medicine/quality-control_v1/04-08_gamma-cameras.html"
+    },
+    {
+      "title": "[7] Busemann Sokole E. et al. (EANM Physics Committee) — Routine quality control recommendations for nuclear medicine instrumentation. Eur J Nucl Med Mol Imaging 2010;37(3):662–671 (DOI 10.1007/s00259-009-1347-y)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20130859/"
+    },
+    {
+      "title": "[8] Recommended Quality Assurance Programme for Gamma Cameras, SPECT and SPECT/CT Scanners — Department of Health Tasmania (2021)",
+      "url": "https://www.health.tas.gov.au/sites/default/files/2021-12/Recommended_Quality_Assurance_Programme_for_Gamma_Cameras_SPECT_and_SPECT_CT_Scanners_DoHTasmania2021.pdf"
+    },
+    {
+      "title": "[9] European Nuclear Medicine Guide (EANM/UEMS-EBNM) — Chapter 21: Quality Control",
+      "url": "https://nucmed-guide.app/chapter/170"
+    },
+    {
+      "title": "[10] Calculating Gamma Camera Uniformity Parameters: Beyond the Vendor-specific Protocol — Indian J Nucl Med 2017;32(4):279–282 (PMC5672747)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5672747/"
+    },
+    {
+      "title": "[11] IAEA Quality Control Atlas for Scintillation Camera Systems (Busemann Sokole, STI/PUB/1141, 2003)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1141_web.pdf"
+    },
+    {
+      "title": "[12] Reproducibility and action levels for gamma camera uniformity — Nucl Med Commun 1990;11(2):95–101 (PubMed 2356071)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2356071/"
+    },
+    {
+      "title": "[13] Elkamhawy A.A. et al. — Intrinsic Uniformity and Relative Sensitivity Quality Control Tests for Single-Head Gamma Cameras. J Nucl Med Technol 2000;28(4):252–256",
+      "url": "https://tech.snmjournals.org/content/28/4/252.full"
+    },
+    {
+      "title": "[14] Comparison of gamma camera spatial resolution measurements with use of a point source, a line source and a Jaszczak phantom — J Nucl Med 2006;47(suppl 1):554P",
+      "url": "https://jnm.snmjournals.org/content/47/suppl_1/554P.2"
+    },
+    {
+      "title": "[15] Performance evaluation of two quantitative gamma cameras using NEMA NU-1 2018 standards (Siemens Intevo) — J Nucl Med 2020;61(suppl 1):145",
+      "url": "https://jnm.snmjournals.org/content/61/supplement_1/145"
+    },
+    {
+      "title": "[16] NEMA NU 1:2023 Performance Measurements of Gamma Cameras",
+      "url": "https://www.intertekinform.com/en-gb/standards/nema-nu-1-2023-781759_saig_nema_nema_3368549/"
+    },
+    {
+      "title": "[17] IAEA Human Health Series No. 6 — Quality Assurance for SPECT Systems (STI/PUB/1394, 2009)",
+      "url": "https://www-pub.iaea.org/MTCD/publications/PDF/Pub1394_web.pdf"
+    },
+    {
+      "title": "[18] IAEA-TECDOC-602 — Quality control of nuclear medicine instruments (1991)",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/te_602_web.pdf"
+    },
+    {
+      "title": "[19] IAEA Human Health Campus — IAEA-NMQC Toolkit (ImageJ plugins for SPECT QC analysis)",
+      "url": "https://humanhealth.iaea.org/HHW/MedicalPhysics/NuclearMedicine/QualityAssurance/NMQC-Plugins/index.html"
+    },
+    {
+      "title": "[20] QC Protocols — Gamma Camera & SPECT Systems (AAPM AMOS2)",
+      "url": "https://www.aapm.org/meetings/amos2/pdf/35-9798-70158-156.pdf"
+    },
+    {
+      "title": "[21] Quality Assurance in Gamma Camera & SPECT Systems — James R. Halama, PhD (AAPM AMOS2)",
+      "url": "https://www.aapm.org/meetings/amos2/pdf/29-7895-49774-307.pdf"
+    },
+    {
+      "title": "[22] Nuclear Medicine Quality Assurance — StatPearls (NBK576382)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK576382/"
+    },
+    {
+      "title": "[23] The Gamma Camera: Performance Characteristics — Clinical Tree (clinicalpub)",
+      "url": "https://clinicalpub.com/the-gamma-camera-performance-characteristics/"
+    },
+    {
+      "title": "[24] Blue P.W. — Accuracy of Center of Rotation Determination for SPECT Imaging. J Nucl Med Technol 1989;17(2):61–65",
+      "url": "https://tech.snmjournals.org/content/jnmt/17/2/61.full.pdf"
+    },
+    {
+      "title": "[25] Quality Control Requirements in SPECT — VCU (M. Crosthwait, CLRS 322)",
+      "url": "https://people.vcu.edu/~mhcrosthwait/clrs322/QCrequirementsSPECT.html"
+    },
+    {
+      "title": "[26] Zanzonico P. — Routine Quality Control of Clinical Nuclear Medicine Instrumentation: A Brief Review. J Nucl Med 2008;49(7):1114–1131",
+      "url": "https://jnm.snmjournals.org/content/49/7/1114"
+    },
+    {
+      "title": "[27] ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — a Compendium (Mattsson et al., Ann ICRP 2015;44(2S); DOI 10.1177/0146645314558019)",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/0146645314558019"
+    },
+    {
+      "title": "[28] Bartel T.B. et al. — SNMMI Procedure Standard for Bone Scintigraphy 4.0. J Nucl Med Technol 2018;46(4):398–404",
+      "url": "https://tech.snmjournals.org/content/46/4/398"
+    },
+    {
+      "title": "[29] SNMMI Practice Guideline for Bone Scintigraphy 4.0 (updated 2024)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2023/Bone%20Scintigraphy_UPDATED2024.pdf"
+    },
+    {
+      "title": "[30] Diagnostic accuracy of Discovery NM 530c CZT SPECT for myocardial perfusion imaging in coronary artery disease: a systematic review and meta-analysis — Int J Cardiovasc Imaging 2025;41(12):2283–2297 (PubMed 40773029)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40773029/"
+    },
+    {
+      "title": "[31] Impact of SPECT myocardial perfusion imaging on cardiac care — Expert Rev Cardiovasc Ther 2014 (DOI 10.1586/14779072.2014.965148)",
+      "url": "https://www.tandfonline.com/doi/full/10.1586/14779072.2014.965148"
+    },
+    {
+      "title": "[32] Assessment of Radiation Exposure in a Nuclear Medicine Department during 99mTc-MDP Bone Scintigraphy — Toxics 2023;11(10):814 (MDPI)",
+      "url": "https://www.mdpi.com/2305-6304/11/10/814"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "microscope",
+        "label": "Nature",
+        "value": "Procédure d'assurance qualité instrumentale (non un traceur)"
+      },
+      {
+        "icon": "atom",
+        "label": "Détecteur contrôlé",
+        "value": "Cristal NaI(Tl) 6,4-12,7 mm + PMT (caméra d'Anger)"
+      },
+      {
+        "icon": "list",
+        "label": "Norme méthodologique",
+        "value": "NEMA NU 1 (2007/2012/2018/2023)"
+      },
+      {
+        "icon": "shield",
+        "label": "Référentiels programme",
+        "value": "AAPM TG 177, EANM 2010, IAEA HHS 6, IPEM 86/111"
+      },
+      {
+        "icon": "target",
+        "label": "Uniformité (5 M coups)",
+        "value": "IU UFOV < 5 %, cible pratique < 3 %"
+      },
+      {
+        "icon": "activity",
+        "label": "Résolution intrinsèque",
+        "value": "~2,9-4,5 mm FWHM à 140 keV"
+      },
+      {
+        "icon": "zap",
+        "label": "Résolution en énergie",
+        "value": "9-11 % à 140 keV (⁹⁹ᵐTc)"
+      },
+      {
+        "icon": "radiation",
+        "label": "Sources de test",
+        "value": "⁹⁹ᵐTc ponctuel, ⁵⁷Co nappe (122 keV, T½ 271,8 j)"
+      },
+      {
+        "icon": "pin",
+        "label": "COR (TEMP)",
+        "value": "< 0,5 pixel ; 0,5 pixel = -30 % résolution / -40 % contraste"
+      },
+      {
+        "icon": "clock",
+        "label": "Fréquence uniformité",
+        "value": "Quotidienne, avant usage clinique"
+      },
+      {
+        "icon": "flask",
+        "label": "Sensibilité système (LEHR)",
+        "value": "~63-100 cps/MBq ; appariement têtes < 5 %"
+      },
+      {
+        "icon": "alert",
+        "label": "Seuils d'action",
+        "value": "Uniformité > 5 %, linéarité > 1 mm → investigation"
+      },
+      {
+        "icon": "stetho",
+        "label": "Enjeu clinique",
+        "value": "Un artefact d'uniformité/COR dégrade Se-Sp (ex. MPI ~88 %/~74 %)"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "TEMP (SPECT)"
+      },
+      {
+        "type": "examen",
+        "label": "TEMP/TDM (SPECT/CT)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie planaire"
+      },
+      {
+        "type": "examen",
+        "label": "TEMP de perfusion myocardique (MPI)"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse"
+      },
+      {
+        "type": "examen",
+        "label": "Contrôle qualité d'un TEP"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc-pertechnétate (source de test)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁵⁷Co (nappe de flood)"
+      },
+      {
+        "type": "traceur",
+        "label": "⁶⁷Ga (enregistrement multi-fenêtres)"
+      },
+      {
+        "type": "score",
+        "label": "Uniformité intégrale (IU)"
+      },
+      {
+        "type": "score",
+        "label": "Centre de rotation (COR)"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel est l'objectif fondamental du contrôle qualité d'une gamma-caméra ?",
+        "options": [
+          "Réduire l'activité injectée au patient",
+          "Garantir que les anomalies de l'image proviennent du patient et non de la caméra",
+          "Accélérer l'acquisition des images",
+          "Remplacer l'étalonnage en énergie"
+        ],
+        "answer": 1,
+        "explanation": "Le CQ vise à s'assurer que les constatations de l'examen ont leur origine dans le patient et non dans la gamma-caméra elle-même [3].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Comment se définit l'uniformité intégrale (IU) sur un champ inondé ?",
+        "options": [
+          "100 × (Max − Min) / (Max + Min) des comptages pixel",
+          "Écart-type des positions de pic dans chaque fente",
+          "FWHM du photopic exprimée en pourcentage",
+          "Écart entre axe mécanique et axe électronique"
+        ],
+        "answer": 0,
+        "explanation": "L'IU = 100 × (Max − Min)/(Max + Min) sur le champ, calculée sur UFOV et CFOV après compression en matrice 64×64 [1][9][22].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel seuil d'uniformité intégrale sur l'UFOV l'AAPM TG 177 retient-il pour un flood de 5 millions de coups ?",
+        "options": [
+          "< 1 %",
+          "< 5 %",
+          "< 10 %",
+          "< 15 %"
+        ],
+        "answer": 1,
+        "explanation": "L'AAPM Report 177 exige une IU sur l'UFOV inférieure à 5 % pour un flood de 5 millions de coups ; au-delà il faut recalibrer puis, si non corrigeable, réparer [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Pourquoi le ⁵⁷Co est-il un standard commode pour l'uniformité extrinsèque quotidienne ?",
+        "options": [
+          "Il émet un β⁻ thérapeutique",
+          "Son γ de 122 keV est proche des 140 keV du ⁹⁹ᵐTc et sa longue période (271,8 j) permet une nappe scellée durable",
+          "Sa période très courte évite les déchets",
+          "Il n'émet aucun rayonnement gamma"
+        ],
+        "answer": 1,
+        "explanation": "Le ⁵⁷Co (T½ ~271-272 j, γ 122 keV, proche des 140 keV du ⁹⁹ᵐTc) constitue une nappe plane scellée pratique pour le test quotidien détecteur + collimateur [1][22].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Quelle est la résolution spatiale intrinsèque typique d'une gamma-caméra moderne grand champ au ⁹⁹ᵐTc (140 keV) ?",
+        "options": [
+          "0,5-1 mm FWHM",
+          "2,9-4,5 mm FWHM",
+          "10-15 mm FWHM",
+          "20-30 mm FWHM"
+        ],
+        "answer": 1,
+        "explanation": "La résolution intrinsèque des caméras modernes est de l'ordre de 2,9-4,5 mm FWHM (les meilleures < 3 mm) à 140 keV [5][23].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la résolution en énergie typique d'une gamma-caméra au photopic 140 keV du ⁹⁹ᵐTc ?",
+        "options": [
+          "1-2 %",
+          "9-11 %",
+          "25-30 %",
+          "50 %"
+        ],
+        "answer": 1,
+        "explanation": "La résolution en énergie (FWHM du photopic à 140 keV) est classiquement de 9-11 % ; les systèmes récents descendent vers 7,4-8,8 % [5].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel décalage du centre de rotation (COR) suffit à dégrader gravement l'image TEMP reconstruite ?",
+        "options": [
+          "5 pixels",
+          "0,5 pixel (~1,5 mm en 128×128), soit ~30 % de perte de résolution et ~40 % de perte de contraste",
+          "10 pixels",
+          "Aucun décalage n'a d'impact"
+        ],
+        "answer": 1,
+        "explanation": "Un décalage de COR de seulement 0,5 pixel (matrice 128×128, ~1,5 mm) entraîne environ 30 % de perte de résolution spatiale et 40 % de perte de contraste [6][24].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel artefact caractéristique génère un défaut d'uniformité en TEMP reconstruite ?",
+        "options": [
+          "Un flou uniforme",
+          "Un artefact en anneau (bull's-eye) centré sur l'axe de rotation",
+          "Une inversion des contrastes",
+          "Un doublement de la sensibilité"
+        ],
+        "answer": 1,
+        "explanation": "Une non-uniformité, même de l'ordre de 3 %, peut créer un artefact en anneau centré sur l'axe de rotation en TEMP, d'où l'exigence d'uniformité système proche de ±1 % [11][17].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel standard définit et quantifie les méthodes de mesure des performances des gamma-caméras ?",
+        "options": [
+          "NEMA NU 1",
+          "ICRP 128",
+          "DICOM",
+          "ISO 9001"
+        ],
+        "answer": 0,
+        "explanation": "Le standard NEMA NU 1 (éditions 2007, 2012, 2018, 2023) définit les grandeurs et méthodes de mesure : uniformité, résolution, linéarité, énergie, sensibilité, taux de comptage [4][16].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Combien de coups une image de flood d'acceptation / audit annuel selon NEMA NU 1-2012 requiert-elle typiquement ?",
+        "options": [
+          "100 000 coups",
+          "1 million de coups",
+          "30 millions de coups",
+          "1 milliard de coups"
+        ],
+        "answer": 2,
+        "explanation": "Le flood d'acceptation/annuel NEMA NU 1-2012 requiert ~30 millions de coups (IU plancher stochastique ~1,6 %), contre 10 M en routine intrinsèque et 5 M en extrinsèque [1].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel test est le plus sensible et le plus fréquemment réalisé sur une gamma-caméra ?",
+        "options": [
+          "La sensibilité volumique",
+          "L'uniformité de champ inondé (quotidienne)",
+          "L'enregistrement multi-fenêtres",
+          "Le taux de comptage maximal"
+        ],
+        "answer": 1,
+        "explanation": "L'uniformité est le test le plus sensible et le plus fréquent (quotidien, avant tout usage clinique), intrinsèque basse statistique ou extrinsèque au ⁵⁷Co [2][7].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Avec quel outil mesure-t-on la résolution spatiale et la linéarité en routine hebdomadaire ?",
+        "options": [
+          "Un fantôme cylindrique rempli d'eau",
+          "Un fantôme à barres en quadrants (bar phantom)",
+          "Une source ponctuelle unique dans l'air",
+          "Un collimateur sténopé"
+        ],
+        "answer": 1,
+        "explanation": "Le fantôme à barres en quadrants (bar phantom) permet le contrôle visuel/quantitatif de la résolution et de la linéarité, acquis avec au moins 5 à 15 millions de coups [1][22].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle tolérance de non-linéarité spatiale est classiquement exigée ?",
+        "options": [
+          "< 1 mm",
+          "< 1 cm",
+          "< 5 cm",
+          "Aucune tolérance"
+        ],
+        "answer": 0,
+        "explanation": "Toute non-linéarité spatiale doit rester inférieure à 1 mm ; une variation de linéarité supérieure à 10 % impose une investigation [1][22].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Sur un système à plusieurs têtes, quelle différence de sensibilité entre détecteurs ne doit pas être dépassée ?",
+        "options": [
+          "5 %",
+          "25 %",
+          "50 %",
+          "100 %"
+        ],
+        "answer": 0,
+        "explanation": "La sensibilité de chaque détecteur ne doit pas différer de plus de 5 % des autres, par radionucléide et collimateur [1].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle précaution évite de contaminer le cristal NaI(Tl) avec une source non scellée de ⁹⁹ᵐTc ?",
+        "options": [
+          "Poser la source directement sur le cristal",
+          "Intercaler un carton ou une plaque d'acrylique de 2-3 mm entre la source et le cristal",
+          "Chauffer le cristal avant la mesure",
+          "Utiliser une source de forte activité sans protection"
+        ],
+        "answer": 1,
+        "explanation": "Une source non scellée ne doit jamais toucher le cristal ; on intercale carton/acrylique de 2-3 mm, et on stoppe si contamination du cristal (> 2 % du taux attendu) [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "À quelle fréquence le centre de rotation (COR) et le recalage multi-têtes sont-ils typiquement contrôlés ?",
+        "options": [
+          "À chaque patient",
+          "Hebdomadaire à mensuelle, selon le constructeur",
+          "Une fois tous les dix ans",
+          "Jamais en routine"
+        ],
+        "answer": 1,
+        "explanation": "Le COR et le recalage multi-têtes se contrôlent en général de façon hebdomadaire à mensuelle selon les spécifications du constructeur [1][7].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel radionucléide sert à mesurer l'enregistrement spatial multi-fenêtres, grâce à ses trois raies d'énergie ?",
+        "options": [
+          "⁹⁹ᵐTc (140 keV)",
+          "⁶⁷Ga (93, 184, 300 keV)",
+          "¹⁸F (511 keV)",
+          "⁵⁷Co (122 keV)"
+        ],
+        "answer": 1,
+        "explanation": "L'enregistrement spatial multi-fenêtres se mesure avec des sources de ⁶⁷Ga (93, 184, 300 keV), en quantifiant le déplacement en mm entre fenêtres [1][4].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quel test physique complet est réalisé à la mise en service (recette) et lors de l'audit annuel ?",
+        "options": [
+          "Uniquement l'uniformité quotidienne",
+          "La batterie NEMA complète (uniformité, résolution/linéarité quantitatives, énergie, sensibilité, alignement tomographique, SPECT/CT)",
+          "Seulement le peaking du photopic",
+          "Aucun test formel"
+        ],
+        "answer": 1,
+        "explanation": "À la recette et à l'audit annuel, la batterie NEMA complète est réalisée : uniformité (flood 30 M), résolution et linéarité quantitatives, énergie, sensibilité, alignement tomographique, tests SPECT/CT [1].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le CQ garantit que les anomalies d'image viennent du patient, pas de la caméra ; il est obligatoire (accréditation, audit annuel de physique médicale) [1][3].",
+        "Standard méthodologique = NEMA NU 1 (2007/2012/2018/2023) ; référentiels de programme = AAPM TG 177 (recette/annuel), EANM 2010 (fréquences), IAEA HHS 6, IPEM 86/111 [1][2][4][7][17].",
+        "L'uniformité est le test le plus sensible et le plus fréquent : IU UFOV < 5 % pour un flood de 5 M coups, cible pratique < 3 %, système ±1 % pour la TEMP [1][10].",
+        "Résolution intrinsèque ~2,9-4,5 mm FWHM ; résolution en énergie 9-11 % à 140 keV ; non-linéarité tolérée < 1 mm [1][5][22].",
+        "Le centre de rotation (COR) est le test clé de la TEMP : un décalage de 0,5 pixel (~1,5 mm) = -30 % résolution / -40 % contraste [6][24].",
+        "Sources de test : ⁹⁹ᵐTc ponctuel (intrinsèque), nappe scellée de ⁵⁷Co (122 keV, T½ 271,8 j, extrinsèque quotidien), ⁶⁷Ga pour le multi-fenêtres [1][22].",
+        "Un défaut d'uniformité même modeste (~3 %) génère un artefact en anneau en TEMP ; le CQ conditionne directement Se/Sp cliniques (ex. MPI TEMP ~88 %/~74 %) [11][17][30].",
+        "Peaking du photopic (fenêtre 20 % centrée sur 140 keV) et vérification des sécurités : à faire chaque jour avant l'usage clinique [22]."
+      ],
+      "protocol": [
+        "Quotidien : peaking (fenêtre 20 % à 140 keV), fond/contamination, uniformité (intrinsèque basse statistique OU extrinsèque ⁵⁷Co avec collimateur), sensibilité relative, sécurités [2][22].",
+        "Hebdomadaire : résolution spatiale + linéarité au fantôme à barres (≥ 5-15 M coups), uniformité intrinsèque haute statistique [1][22].",
+        "Mensuel : centre de rotation (COR) et recalage multi-têtes, selon constructeur [1].",
+        "Trimestriel : fantôme SPECT (Jaszczak) au ⁹⁹ᵐTc + collimateur basse énergie (résolution, contraste, détectabilité, uniformité tomographique) [1].",
+        "Annuel / recette : batterie NEMA complète (flood 30 M coups, résolution/linéarité/énergie/sensibilité quantitatives, alignement tomographique, co-enregistrement SPECT/CT, correction d'atténuation) [1]."
+      ],
+      "scores": [
+        "Uniformité intégrale (IU) = 100 × (Max − Min)/(Max + Min) sur UFOV et CFOV (matrice 64×64) ; seuil d'action > 5 % [1][22].",
+        "Uniformité différentielle (DU) = pire variation locale sur ~5 pixels contigus ; mesure la plus sensible aux dégradés brusques [1].",
+        "Résolution spatiale = FWHM de la LSF (mm) ; complétée par la FWTM ; masque NEMA plomb 3 mm, fentes 1 mm [1].",
+        "COR = écart axe mécanique / axe électronique (sinusoïde dans le sinogramme) ; tolérance < 0,5 pixel, erreur < 1 pixel [6][24]."
+      ],
+      "pitfalls": [
+        "Défaut d'uniformité ≥ 3 % → artefact en anneau (bull's-eye) en TEMP, invisible en planaire mais destructeur en tomographie [11][17].",
+        "Défaut de collimateur : détecté à l'uniformité extrinsèque (⁵⁷Co), invisible en intrinsèque → toujours tester détecteur + collimateur [1].",
+        "Contamination de la source ou du détecteur → points chauds ; d'où le test de fond quotidien et l'interposition d'acrylique 2-3 mm [1][22].",
+        "Mauvais peaking (fenêtre 140 keV mal centrée) → non-uniformité et perte de sensibilité ; empilement (pile-up) au-delà de ~75 000 cps → perte de résolution [1].",
+        "Ne pas confondre uniformité intrinsèque (sans collimateur, ⁹⁹ᵐTc ponctuel) et extrinsèque (avec collimateur, nappe ⁵⁷Co) : elles n'explorent pas les mêmes défauts [1][2]."
+      ]
+    },
+    "lead": "Le contrôle qualité d'une gamma-caméra est l'ensemble des vérifications régulières qui garantissent que ce qu'une image montre vient réellement du patient, et non d'un défaut de l'appareil. Sans lui, une caméra peut dériver silencieusement et produire des taches, des zones sombres ou des flous qui imitent une maladie ou en masquent une. C'est pourquoi certaines vérifications sont faites chaque matin avant le premier examen, d'autres chaque semaine ou chaque mois, et un bilan complet une fois par an. Ce suivi est une obligation professionnelle, encadré par des normes internationales, car il conditionne directement la fiabilité de tous les examens réalisés ensuite. En pratique, il repose sur des sources radioactives de test et des mires, jamais sur une injection au patient.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert le contrôle qualité d'une gamma-caméra ?",
+          "text": "La gamma-caméra est l'appareil qui produit les images lors d'une scintigraphie ou d'une TEMP (tomographie d'émission). Comme toute machine de mesure médicale, elle doit être vérifiée régulièrement pour rester fiable. Le contrôle qualité est l'ensemble de ces vérifications techniques. Son but est simple : s'assurer que ce que l'on voit sur l'image vient bien de votre corps, et non d'un défaut de l'appareil. Ces tests garantissent que les images sont nettes, exactes et interprétables par le médecin qui va poser le diagnostic. C'est une démarche invisible pour vous, mais essentielle à la qualité de votre examen.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Un gage de confiance",
+              "text": "Le contrôle qualité est une exigence des autorités de santé et des organismes d'accréditation. Une caméra bien contrôlée est la condition d'un examen fiable."
+            }
+          ]
+        },
+        {
+          "title": "Comment se déroulent ces vérifications ?",
+          "text": "Le contrôle qualité ne vous concerne pas directement : il se fait sur la machine, en dehors de la présence des patients. Les manipulateurs et les physiciens médicaux réalisent des tests à différentes fréquences : certains chaque matin avant le premier examen, d'autres chaque semaine, chaque mois ou une fois par an. Pour cela, ils utilisent de petites sources de test spéciales (et non un produit qui vous serait injecté) afin de vérifier que la caméra détecte correctement, que l'image est homogène et bien positionnée. Si un réglage s'écarte de la norme, l'équipe corrige ou fait intervenir la maintenance avant de reprendre les examens.",
+          "steps": [
+            {
+              "title": "Chaque jour",
+              "text": "Vérifications rapides le matin, avant tout examen, pour confirmer que la caméra fonctionne parfaitement."
+            },
+            {
+              "title": "Chaque semaine et chaque mois",
+              "text": "Tests plus poussés sur la finesse et l'exactitude des images."
+            },
+            {
+              "title": "Chaque année",
+              "text": "Contrôle complet approfondi réalisé par un physicien médical."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce sûr pour moi ?",
+          "text": "Oui. Le contrôle qualité est une opération purement technique qui améliore votre sécurité et la qualité de votre prise en charge. Il n'ajoute aucune injection, aucune irradiation et aucune contrainte pour vous. Au contraire, il garantit que la dose de produit utilisée le jour de votre examen sera pleinement utile, en évitant d'avoir à refaire des images de mauvaise qualité. Vous pouvez donc être rassuré : une équipe veille en permanence à ce que l'appareil qui réalise vos images soit dans un état de fonctionnement optimal.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Aucune démarche de votre part",
+              "text": "Vous n'avez rien à préparer ni à faire concernant le contrôle qualité. Tout est géré par l'équipe de médecine nucléaire en coulisses."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Pourquoi le contrôle qualité conditionne vos examens",
+          "text": "Le contrôle qualité (CQ) d'une gamma-caméra n'est pas un examen que l'on prescrit, mais la garantie technique sous-jacente à toute scintigraphie planaire et à toute TEMP (SPECT) que vous demandez. Son principe est résumé par l'AIEA : garantir que les anomalies vues sur l'image proviennent du patient et non de la caméra. Concrètement, un défaut d'uniformité ou d'alignement de la caméra peut créer des artefacts qui miment ou masquent une pathologie. Lorsque vous adressez un patient pour une scintigraphie osseuse, une perfusion myocardique ou une TEMP cérébrale, la fiabilité du compte rendu repose directement sur ce contrôle qualité invisible.",
+          "list": [
+            "Le CQ porte sur l'uniformité de l'image, la finesse (résolution), l'exactitude géométrique et, en TEMP, le centre de rotation",
+            "Un défaut de la caméra peut générer un faux positif (artefact) ou masquer une lésion réelle",
+            "Ces contrôles sont obligatoires et encadrés par des normes internationales (NEMA, EANM, AAPM)"
+          ]
+        },
+        {
+          "title": "Ce que cela change pour votre demande d'examen",
+          "text": "Vous n'avez aucune démarche à faire concernant le contrôle qualité : c'est une responsabilité du service de médecine nucléaire, réalisée par les manipulateurs et les physiciens médicaux selon un calendrier strict (quotidien, hebdomadaire, mensuel, annuel). En pratique, cela signifie que le service qui reçoit votre patient dispose d'appareils vérifiés et traçables. Si un examen de perfusion myocardique montre une anomalie, un CQ rigoureux permet d'affirmer que le résultat reflète bien l'état du patient et non un artefact instrumental. C'est un argument de qualité et de sécurité lorsque vous orientez un patient vers un centre de médecine nucléaire.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adressez votre patient à un service de médecine nucléaire lorsque vous avez besoin d'une imagerie fonctionnelle (scintigraphie ou TEMP) : os, cœur, cerveau, reins, thyroïde. La qualité et l'interprétabilité des images dépendent d'un programme de contrôle qualité que seuls ces services maîtrisent. Un centre appliquant les référentiels reconnus (EANM, AAPM, normes NEMA) vous garantit des résultats fiables, reproductibles et exempts d'artefacts liés à l'appareil, ce qui sécurise votre décision clinique en aval."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - A1 - Carte d'identité : le contrôle qualité d'une gamma-caméra en un coup d'œil",
+          "text": "**Comment lire cette carte d'identité.** Le **contrôle qualité (CQ)** d'une gamma-caméra n'est ni un examen ni un radiopharmaceutique : c'est une **procédure d'assurance qualité instrumentale**, dont l'objectif est de garantir que « les constatations de l'examen du patient ont leur origine dans le patient et non dans la gamma-caméra elle-même ».[3] Les rubriques du gabarit orientées patient (préparation, activités EANM pédiatriques, dose efficace administrée) sont donc **sans objet** ; elles sont remplacées par les grandeurs physiques mesurées, leurs tolérances, leurs fréquences et les **sources de test** (⁹⁹ᵐTc, ⁵⁷Co) manipulées par l'opérateur. Cette carte se lit comme une **fiche-réflexe** : le paramètre, le seuil d'acceptation de référence, et la cadence à laquelle il doit être vérifié.\n\n| Champ | Valeur de référence | Source |\n|---|---|---|\n| **Nature** | Assurance qualité instrumentale (γ-caméra planaire + TEMP/TEMP-TDM) | [1,3] |\n| **Standard de mesure** | **NEMA NU 1** (éditions 2007 / 2012 / 2018 / 2023) | [4,16] |\n| **Référentiels de programme** | EANM 2010, AAPM TG-177 (2019), IAEA HHS n°6, IPEM 86 | [1,7,17] |\n| **Paramètres phares** | Uniformité, résolution spatiale, linéarité, résolution en énergie, sensibilité, COR | [1,4] |\n| **Sources de test** | ⁹⁹ᵐTc (source ponctuelle) ; **⁵⁷Co** nappe scellée (122 keV, T½ 271,8 j) | [1,2] |\n| **Fenêtre spectrale** | **20 % centrée sur 140 keV** (⁹⁹ᵐTc) | [22] |\n| **Test quotidien pivot** | Uniformité + peaking (avant tout usage clinique) | [2,22] |\n| **Test spécifique TEMP** | **Centre de rotation (COR)** + recalage multi-têtes | [1,25] |\n| **Cadre réglementaire** | CQ obligatoire (accréditation TJC / ACR ; recette + audit annuel) | [1] |\n\nLes valeurs exactes de tolérance et les cadences précises sont déclinées au §A4 (cartographie des tests) et développées dans les sections B9/C14 de l'article ; la présente carte n'en donne que les repères mémorisables.",
+          "stats": [
+            {
+              "value": "< 5 %",
+              "label": "Uniformité intégrale (UFOV, flood 5 M coups)"
+            },
+            {
+              "value": "140 keV",
+              "label": "Photopic ⁹⁹ᵐTc (fenêtre 20 %)"
+            },
+            {
+              "value": "< 0,5 pixel",
+              "label": "Tolérance COR (TEMP)"
+            },
+            {
+              "value": "~3–4 mm",
+              "label": "Résolution spatiale intrinsèque (FWHM)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La hiérarchie des tests suit leur **sensibilité et leur fréquence** : l'**uniformité** est le test le plus sensible et le seul réellement **quotidien**, car une non-uniformité de seulement **3 %** suffit à générer un artefact en anneau sur une image TEMP reconstruite.[1] Tout le reste (résolution, linéarité, énergie, sensibilité, COR) se contrôle à une cadence hebdomadaire, mensuelle ou annuelle selon le maillon vérifié."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — un CQ n'est pas transposable",
+              "text": "Les seuils cités (uniformité, COR) dépendent du **nombre de coups acquis**, de la **matrice** et des **spécifications du constructeur**. Un seuil d'uniformité < 5 % ne vaut que pour un flood de 5 millions de coups : à faible statistique, le bruit stochastique élève artificiellement l'indice.[1] Toujours rapporter un chiffre d'uniformité avec sa statistique d'acquisition."
+            }
+          ]
+        },
+        {
+          "title": "A2 - A2 - Pourquoi contrôler : de la chaîne de détection d'Anger aux dérives qui trompent le clinicien",
+          "text": "**Le raisonnement.** Une gamma-caméra n'est fiable que si l'image reproduit fidèlement la distribution du radiotraceur dans le patient. Or la **caméra d'Anger** est une chaîne de mesure analogique-numérique dont chaque maillon peut dériver silencieusement : un tube défaillant, un cristal fissuré, une carte de correction périmée ne provoquent pas de panne franche, mais une **dérive** qui se traduit par un artefact interprété à tort comme pathologique. Le CQ existe pour intercepter ces dérives **avant** qu'elles n'atteignent le compte rendu.[3]\n\n**Rappel de la chaîne de détection (le « quoi » est contrôlé).** Le photon γ traverse d'abord le **collimateur** (qui impose la relation géométrique entre point d'émission et point d'impact), interagit dans le **cristal scintillant NaI(Tl)** — épaisseur standard **6,4 à 12,7 mm** — qui convertit l'énergie déposée en lumière, laquelle est collectée par un réseau de **tubes photomultiplicateurs (PMT)** de **5 cm** de diamètre (jusqu'à **~110 PMT** par détecteur).[5] La **logique d'Anger** calcule la position (X,Y) par barycentre des signaux PMT et l'énergie (signal Z) sert à la **discrimination spectrale** par fenêtre. Des cartes de correction électroniques (énergie, linéarité, uniformité) compensent les imperfections résiduelles.\n\n**Les dérives qui trompent le clinicien** se répartissent selon le maillon atteint :\n\n| Maillon | Dérive typique | Traduction sur l'image |\n|---|---|---|\n| **Collimateur** | Septa endommagés, défaut de fabrication | Bandes/zones froides, visibles à l'uniformité **extrinsèque** seulement[1] |\n| **Cristal NaI(Tl)** | Fissure, hygroscopie (infiltration d'eau) | Zone froide focale, perte de résolution en énergie |\n| **PMT** | Dérive de gain, tube défaillant | Non-uniformité focale (« œil » froid ou chaud), mauvais peaking |\n| **Électronique de positionnement** | Non-linéarité spatiale | Distorsion géométrique, fausse position des structures |\n| **Cartes de correction** | Carte périmée, mauvais peaking (fenêtre décalée) | Non-uniformité diffuse, perte de sensibilité |\n\n**Pourquoi l'enjeu est majeur en TEMP.** En imagerie planaire, une non-uniformité modérée reste souvent tolérable. En **tomographie d'émission monophotonique (TEMP, ou SPECT)**, la rotation du détecteur transforme toute non-uniformité fixe en **artefact en anneau (bull's-eye)** centré sur l'axe de rotation, et tout défaut d'alignement de l'axe de rotation en **flou et perte de contraste**. C'est pourquoi le CQ est la **condition** des performances diagnostiques : sur une TEMP de perfusion myocardique — sensibilité ~**88 %**, spécificité ~**74 %** pour la coronaropathie [30,31] — un artefact d'uniformité ou de COR dégrade directement la spécificité en simulant un défaut de perfusion.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la dérive silencieuse",
+              "text": "Une caméra qui « fonctionne » n'est pas une caméra « juste ». Une carte d'uniformité périmée, un PMT en dérive lente ou un mauvais centrage du photopic ne déclenchent aucune alarme : ils produisent des images d'apparence normale mais **quantitativement fausses**. Seul le CQ programmé, comparé à des valeurs de base (baseline), révèle la dérive avant qu'elle ne biaise l'interprétation."
+            },
+            {
+              "type": "info",
+              "title": "Point expert",
+              "text": "La distinction **intrinsèque / extrinsèque** (§A3) n'est pas académique : un défaut de **collimateur** est **invisible** en test intrinsèque (réalisé sans collimateur) et n'apparaît qu'à l'uniformité **extrinsèque**.[1] C'est la raison pour laquelle un programme complet ne peut se limiter au test intrinsèque, même s'il est plus rapide."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection d'une gamma-caméra d'Anger : collimateur, cristal NaI(Tl), guide de lumière, réseau de tubes photomultiplicateurs et électronique de positionnement/énergie — chaque maillon est une cible du contrôle qualité.",
+            "caption": "Fig. 1 — La chaîne de détection d'Anger (collimateur → cristal → PMT → logique de positionnement/énergie) : le CQ vérifie chaque maillon, de la géométrie du collimateur aux cartes de correction électroniques."
+          }
+        },
+        {
+          "title": "A3 - A3 - Le vocabulaire métrologique : intrinsèque vs extrinsèque, UFOV vs CFOV, LMH/LMD, système vs composant",
+          "text": "Toute la métrologie du CQ repose sur quatre couples de notions dont la confusion invalide l'interprétation d'un chiffre. Un même paramètre (uniformité, résolution) prend des valeurs différentes selon le **mode de mesure** et le **champ analysé** ; les comparer sans préciser ces conditions n'a pas de sens.\n\n**1. Intrinsèque vs extrinsèque — avec ou sans collimateur.** La mesure **intrinsèque** se fait **détecteur nu** (collimateur retiré), avec une **source ponctuelle de ⁹⁹ᵐTc** placée à distance : elle isole la performance du cristal + PMT + électronique. La mesure **extrinsèque** (ou **système**) se fait **collimateur en place**, avec une **source plane (flood)** — typiquement une nappe scellée de **⁵⁷Co** — et teste l'ensemble détecteur + collimateur, dans les conditions réelles de l'examen.[1] Corollaire fondamental : seul l'extrinsèque révèle un défaut de collimateur (§A2).\n\n| Critère | Intrinsèque | Extrinsèque (système) |\n|---|---|---|\n| Collimateur | Retiré | En place |\n| Source | Ponctuelle ⁹⁹ᵐTc | Plane (⁵⁷Co ou ⁹⁹ᵐTc) |\n| Distance source | ≥ **4–5 ×** la plus grande dimension de l'UFOV[1] | Au contact du collimateur |\n| Ce qui est testé | Cristal + PMT + électronique | Détecteur **+ collimateur** |\n| Usage | Diagnostic de composant | Condition clinique réelle |\n\n**2. UFOV vs CFOV — le champ analysé.** L'**UFOV (Useful Field Of View**, champ de vue utile) est toute la surface exploitable du détecteur. Le **CFOV (Central Field Of View**, champ central) en représente les **75 %** centraux.[9] Les indices d'uniformité et de résolution sont **toujours rapportés séparément sur l'UFOV et le CFOV**, car les bords du détecteur (effets de tranche, PMT périphériques) dégradent la performance : un CFOV excellent peut masquer une périphérie médiocre.\n\n**3. LMH / LMD — les deux uniformités.** L'uniformité se quantifie par deux indices complémentaires (la nomenclature française LMH/LMD correspond aux termes NEMA IU/DU) :\n- **Uniformité intégrale (IU, Integral Uniformity)** = amplitude globale max/min sur le champ : `IU = 100 × (Max − Min)/(Max + Min)`, calculée après compression en matrice **64×64** et lissage 9 points.[1,10] C'est l'indice le plus utilisé.\n- **Uniformité différentielle (DU, Differential Uniformity)** = pire contraste **local** mesuré sur toute fenêtre glissante de **5 pixels** contigus.[1] Plus sensible aux dégradés brusques (bord de PMT défaillant).\n\nValeurs attendues sur caméra moderne : **IU 2–3 %, DU 1,5–2 %** ; les systèmes réels se situent souvent entre **4 et 7 %** (données IPEM 86).[10]\n\n**4. FWHM / FWTM — la résolution.** La **résolution spatiale** se chiffre par la **largeur à mi-hauteur (FWHM, Full Width at Half Maximum)** de la fonction de dispersion linéaire (LSF) d'une source linéaire, exprimée en **mm**. La **largeur au dixième (FWTM, Full Width at Tenth Maximum)** complète la mesure : plus sensible aux queues de distribution, elle révèle la **pénétration septale** et la diffusion.[1]\n\n**5. Système vs composant.** Enfin, on distingue la performance **système** (chaîne complète, dans les conditions cliniques — c'est ce que « voit » le patient) de la performance **composant** (un maillon isolé). Exemple parlant sur la **résolution** : intrinsèque **~2,9–4,5 mm FWHM** (composant, cristal+électronique)[5] contre **~7,2–7,5 mm FWHM** en système à 10 cm avec collimateur LEHR (Low-Energy High-Resolution)[14] — le collimateur, maillon indispensable, est aussi le principal facteur limitant la résolution système.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — toujours contextualiser un chiffre",
+              "text": "Un chiffre d'uniformité ou de résolution est **ininterprétable** hors de ses conditions. « Uniformité 3 % » doit se lire : intrinsèque ou extrinsèque ? UFOV ou CFOV ? IU ou DU ? combien de coups ? La bonne pratique est de comparer **à la valeur de base (baseline)** de la caméra dans des conditions **identiques**, non à une valeur absolue générique."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la baseline de bruit",
+              "text": "L'IU minimale n'est jamais nulle : elle est plancheronnée par le **bruit statistique (poissonien)**. Pour un flood NEMA de **30 M coups**, la baseline IU théorique est déjà de **1,6 %** ; à **10 M coups** elle monte à **2,7 %**, et à **5 M coups** à **3,9 %**.[1] Un indice « dégradé » à faible statistique peut donc n'être que du bruit — d'où l'exigence de comptes élevés pour les mesures de recette."
+            }
+          ]
+        },
+        {
+          "title": "A4 - A4 - Cartographie des tests : quel test, quel maillon vérifié, quel artefact prévenu",
+          "text": "Chaque test du CQ vérifie un **maillon précis** de la chaîne (§A2) et **prévient un artefact identifiable** (renvoi §C14). Cette cartographie relie le geste métrologique à sa finalité clinique : on ne fait pas l'uniformité « par principe », mais pour éliminer l'artefact en anneau de la TEMP.\n\n| Test | Maillon vérifié | Grandeur / seuil de référence | Artefact prévenu |\n|---|---|---|---|\n| **Uniformité de champ inondé** | Cristal + PMT + cartes de correction | IU (UFOV) **< 5 %** pour flood **5 M coups**[1] ; cible pratique < 3 % ; système **±1 %** pour la TEMP[10] | Anneau (bull's-eye) en TEMP dès **3 %** de défaut[1] |\n| **Résolution spatiale + linéarité** | Cristal + électronique de positionnement | Fantôme à barres ≥ **5 M coups** ; non-linéarité **< 1 mm**[1] ; FWHM ≈ **1,6 ×** la plus petite barre visible[1] | Distorsion géométrique, dédoublement |\n| **Résolution en énergie** | Cristal + PMT (chaîne spectrale) | FWHM du photopic 140 keV = **9–11 %**[5] ; systèmes récents 7,4–8,8 %[15] | Mauvaise discrimination du diffusé, non-uniformité |\n| **Sensibilité** | Chaîne complète + collimateur | Écart inter-détecteurs **≤ 5 %**[1] | Asymétrie de comptage entre têtes |\n| **Centre de rotation (COR)** | Alignement mécanique/électronique (TEMP) | Décalage **< 0,5 pixel** ; erreur X **< 1 pixel** (matrice 128×128)[6] | Flou, perte de résolution/contraste en TEMP |\n| **Taux de comptage / temps mort** | Électronique rapide | Temps mort clinique **4–8 µs** ; perte de 20 % à ~**4×10⁴ cps**[5] | Sous-estimation aux hautes activités |\n| **Recalage multi-fenêtres** | Positionnement multi-énergie | Sources ⁶⁷Ga (**93, 184, 300 keV**), décalage en mm[1] | Décalage inter-fenêtres (Ga, In) |\n\n**Le cas emblématique du centre de rotation (COR).** Spécifique à la **TEMP**, le COR est l'écart entre l'**axe mécanique de rotation (AOR, Axis Of Rotation)** et la colonne de pixels centrale des projections.[1] Son impact est disproportionné : un décalage de seulement **0,5 pixel** (soit **~1,5 mm** en matrice 128×128) entraîne **~30 % de perte de résolution spatiale et ~40 % de perte de contraste** sur l'image reconstruite.[6,24] C'est le test qui illustre le mieux la logique du CQ — un défaut sous-millimétrique invisible à l'œil, mais dévastateur après reconstruction tomographique.\n\n**La logique des fréquences** découle directement de la sévérité de l'artefact et de la vitesse de dérive du maillon :",
+          "steps": [
+            {
+              "title": "Quotidien — le maillon qui dérive vite, l'artefact le plus grave",
+              "text": "Inspection visuelle/physique, **peaking** (centrage du photopic 140 keV), **uniformité** (intrinsèque basse statistique OU extrinsèque au ⁵⁷Co, avant tout usage clinique), sensibilité relative, détection de collision.[2,22] Rationale : les PMT et le peaking dérivent vite ; l'anneau de TEMP est l'artefact le plus insidieux."
+            },
+            {
+              "title": "Hebdomadaire — la géométrie du détecteur",
+              "text": "**Résolution spatiale + linéarité** au fantôme à barres (inspection visuelle), acquisition ≥ **5 M coups** (jusqu'à 15 M pour un bar phantom).[1,22] Rationale : la linéarité dérive lentement mais conditionne la fidélité géométrique."
+            },
+            {
+              "title": "Mensuel — l'alignement tomographique",
+              "text": "**Centre de rotation (COR)** et **recalage multi-têtes** (ou selon fabricant).[1,25] Certaines équipes le réalisent en hebdomadaire en routine. Rationale : l'alignement mécanique est stable mais son défaut est catastrophique en TEMP."
+            },
+            {
+              "title": "Trimestriel — la vérification tomographique globale",
+              "text": "**Fantôme SPECT (Jaszczak)** au ⁹⁹ᵐTc + collimateur basse énergie : évalue résolution, contraste, détectabilité de lésions et uniformité tomographique ; approuvé pour l'accréditation ACR.[1]"
+            },
+            {
+              "title": "Annuel / à la recette (acceptance testing)",
+              "text": "Batterie **NEMA NU 1** complète : uniformité (flood **30 M coups**[1]), résolution & linéarité quantitatives, résolution en énergie, sensibilité, alignement tomographique, uniformité off-peak, co-enregistrement SPECT/CT.[1] Rationale : mesures de référence (baseline) et conformité réglementaire (TJC/ACR)."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — sécurité de la procédure de test",
+              "text": "Ne jamais placer une source non scellée au contact direct du cristal sans protection : intercaler **2–3 mm** de carton ou d'acrylique pour éviter la contamination du cristal (arrêt si > 2 % du taux attendu).[1] Laisser décroître les sources de ⁹⁹ᵐTc contaminées par le ⁹⁹Mo, dont les photons de haute énergie provoquent des non-uniformités par pénétration septale.[1]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — l'outil d'analyse standardisé",
+              "text": "Pour une analyse reproductible et indépendante du protocole constructeur, l'**IAEA-NMQC Toolkit** (plugins ImageJ) permet de recalculer uniformité tomographique et autres indices SPECT selon les définitions NEMA/IAEA.[19] Utile pour comparer des caméras de constructeurs différents sur une base métrologique commune."
+            }
+          ]
+        },
+        {
+          "title": "B1 - B1 - Réaliser le test d'uniformité : sources, méthode intrinsèque et extrinsèque, coups requis",
+          "text": "L'**uniformité de champ inondé** (*flood field uniformity*) est le test de contrôle qualité (CQ) le plus sensible et le plus fréquent : il vérifie que la réponse du détecteur est homogène sur tout le champ, prérequis absolu de toute image quantifiable et, en tomographie d'émission monophotonique (TEMP, *SPECT*), condition sine qua non de l'absence d'artefacts en anneau [1,3]. L'objectif d'un programme de CQ est de garantir que les anomalies de l'examen proviennent du patient et non de la caméra [3].\n\n**Deux grandeurs quantifient l'uniformité**, calculées après compression de l'image en matrice **64×64** (pixel ≈ **6,4 mm ± 30 %**) et lissage 9 points, selon le formalisme NEMA (National Electrical Manufacturers Association) NU 1, à la fois sur le champ utile (**UFOV**, *useful field of view*) et sur le champ central (**CFOV = 75 % de l'UFOV**) [1,9] :\n\n- **Uniformité intégrale (IU)** = 100 × (max − min)/(max + min) des comptages pixel sur le champ ; c'est l'écart global maximal [9,22].\n- **Uniformité différentielle (DU)** = pire contraste local sur toute fenêtre glissante de **5 pixels** contigus ; c'est l'indice le plus sensible aux dégradés brusques [1,9].\n\n**Deux méthodes coexistent, à distinguer rigoureusement.** La méthode **intrinsèque** se fait *sans collimateur*, avec une **source ponctuelle de ⁹⁹ᵐTc** placée à distance : elle teste le cristal, les tubes photomultiplicateurs (PMT) et l'électronique de positionnement, mais pas le collimateur. La méthode **extrinsèque** (ou système) se fait *avec collimateur*, à l'aide d'une **nappe plane scellée de ⁵⁷Co** : elle teste l'ensemble détecteur + collimateur et détecte spécifiquement les défauts de collimateur, invisibles en intrinsèque [1,2].\n\n| Paramètre | Test intrinsèque | Test extrinsèque (système) |\n|---|---|---|\n| Collimateur | Retiré | En place |\n| Source | Ponctuelle **⁹⁹ᵐTc** | Nappe scellée **⁵⁷Co** (γ **122 keV**, T½ **271–272 j**) |\n| Ce qu'il teste | Cristal + PMT + électronique | Détecteur **+ collimateur** |\n| Activité / contrainte | **≤ 100 µCi (3,7 MBq)**, distance ≥ **60 cm** (≥ 5 × la plus grande dimension du cristal) | Nappe scellée uniforme |\n| Coups de routine | **10 millions** | **5 millions** |\n\n[1,2,3,22]\n\nLe choix du **⁵⁷Co** pour la nappe extrinsèque tient à son émission à **122 keV**, très proche des **140 keV** du ⁹⁹ᵐTc, et à sa longue période (**271–272 j**) qui en fait une source scellée stable et commode [1,22]. Avant tout flood, le **centrage du photopic** (*peaking*) est vérifié avec une **fenêtre de 20 % centrée sur 140 keV** [22].\n\n**Nombre de coups requis — le compromis statistique.** Le bruit de Poisson impose un plancher d'IU même sur une caméra parfaite : plus la densité de coups est faible, plus l'IU de base est élevée. Ce plancher théorique (matrice compressée 64×64) est le repère à connaître pour ne pas surinterpréter le bruit [1] :\n\n| Type de flood | Coups totaux | Coups/pixel (64×64) | IU de base (%) |\n|---|---|---|---|\n| NEMA NU 1-2012 — recette / audit annuel | **30 millions** | 10 000 | **1,6** |\n| Flood intrinsèque de routine | **10 millions** | 3 333 | **2,7** |\n| Flood extrinsèque de routine (collimateur) | **5 millions** | 1 667 | **3,9** |\n\n[1]\n\nLa matrice d'acquisition est ≥ **256×256** avant compression pour l'analyse [1].",
+          "stats": [
+            {
+              "value": "10 M / 5 M",
+              "label": "Coups routine intrinsèque / extrinsèque"
+            },
+            {
+              "value": "30 M",
+              "label": "Coups recette-audit (NEMA NU 1)"
+            },
+            {
+              "value": "< 5 %",
+              "label": "IU max sur l'UFOV (flood 5 M coups)"
+            },
+            {
+              "value": "122 keV",
+              "label": "γ du ⁵⁷Co (nappe extrinsèque, T½ 272 j)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le flood extrinsèque voit ce que l'intrinsèque ignore",
+              "text": "Un **défaut de collimateur** (fissure, ailette faussée, encrassement) se traduit par des bandes ou zones froides visibles **uniquement à l'uniformité extrinsèque** (collimateur en place) : il reste invisible en test intrinsèque. Ne jamais conclure à la conformité d'un système sur le seul flood intrinsèque [1]. À l'inverse, une contamination du détecteur ou de la source génère des points chauds détectés par le test de fond quotidien [22]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — protéger le cristal des sources non scellées",
+              "text": "Ne **jamais** poser une source non scellée de ⁹⁹ᵐTc directement au contact du cristal : intercaler un carton/acrylique de **2–3 mm** pour éviter toute contamination. En cas de contamination du cristal dépassant **2 %** du taux attendu, stopper et décontaminer. Laisser décroître les sources contenant du ⁹⁹Mo (nonuniformités par pénétration septale à haute énergie) [1]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — quel seuil retenir ?",
+              "text": "Le critère AAPM TG 177 est **IU < 5 % sur l'UFOV pour un flood de 5 M coups** ; au-delà, refaire la carte de correction flood puis, si non corrigeable, réparer [1]. En pratique, viser **IU ~2–3 % et DU 1,5–2 %** sur caméra moderne [10]. Pour la TEMP, l'exigence est bien plus stricte : une uniformité système de l'ordre de **±1 %** est requise, car un défaut d'à peine **3 %** suffit à générer un artefact en anneau reconstruit (cf. B4) [3,17]. Le seuil d'action de routine (StatPearls) est toute variation d'uniformité **> 5 %** [22]."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection d'une gamma-caméra d'Anger : collimateur, cristal NaI(Tl), guide de lumière, réseau de tubes photomultiplicateurs et électronique de positionnement (X,Y) et d'énergie (Z) — les éléments dont l'uniformité teste l'homogénéité de réponse.",
+            "caption": "Fig. B1 — La chaîne de détection testée par l'uniformité : le flood intrinsèque explore cristal + PMT + électronique ; le flood extrinsèque y ajoute le collimateur."
+          }
+        },
+        {
+          "title": "B2 - B2 - Réaliser les tests de résolution spatiale et de linéarité : mires à barres et à trous",
+          "text": "La **résolution spatiale** mesure la capacité du système à distinguer deux sources proches ; la **linéarité spatiale** mesure la fidélité géométrique du positionnement. Les deux dérivent de la même chaîne électronique et sont contrôlées ensemble, en routine par inspection visuelle d'une **mire** (fantôme à barres ou à fentes), et à la recette/l'audit annuel par mesure NEMA quantitative [1,22].\n\n**Grandeurs et formalisme.** La résolution spatiale s'exprime par la **largeur à mi-hauteur (FWHM, *full width at half maximum*)** de la fonction de dispersion linéaire (LSF, *line spread function*), tracée orthogonalement à l'image d'une source linéaire, en **mm** ; on complète parfois par la **FWTM** (largeur au dixième), plus sensible à la pénétration septale et à la diffusion [1]. La **linéarité** se décline en **linéarité différentielle** (écart-type des positions de pic dans chaque fente) et **linéarité absolue** (déplacement maximal à la droite de régression) [1].\n\n**Méthode de mesure NEMA (quantitative, recette/annuel).** On utilise un **masque de plomb de 3 mm d'épaisseur percé de fentes de 1 mm** apposé sur le cristal, avec une source ponctuelle de ⁹⁹ᵐTc ; on détermine FWHM et FWTM des pics de la LSF, et les écarts de linéarité par ajustement de lignes équidistantes aux positions de pic [1]. Pour la mesure au fantôme à fentes/résolution, la source ponctuelle de ⁹⁹ᵐTc porte **200–400 MBq (5–10 mCi)** ; pour le fantôme à barres, **40–200 MBq (1–5 mCi)** [1].\n\n**Méthode de routine (mire à barres, hebdomadaire).** Le **fantôme à barres en quadrants** (*bar phantom*) comporte quatre secteurs de barres de plomb de tailles décroissantes ; les plus petites barres commerciales font **2 mm**, soit environ la moitié de la résolution intrinsèque attendue [1]. On acquiert **≥ 5 millions** de coups (fantôme à barres : idéalement **≥ 15 millions**) puis on inspecte visuellement le plus petit groupe de barres résolu. La règle pratique relie la mire à la FWHM : **FWHM ≈ 1,6 × la plus petite taille de barres visible** [1,22].\n\n| Test | Méthode | Fréquence | Critère |\n|---|---|---|---|\n| Résolution — routine | Mire à barres, inspection visuelle, ≥ 5 M (idéal 15 M) coups | Hebdomadaire | Groupe de barres habituel résolu ; FWHM ≈ 1,6 × plus petite barre visible |\n| Résolution — quantitatif | Masque plomb **3 mm** / fentes **1 mm**, FWHM+FWTM (NEMA) | Recette + annuel | Selon spécification constructeur |\n| Linéarité | Positions de pic vs droite de régression | Hebdomadaire (visuel) / annuel (quantitatif) | Non-linéarité **< 1 mm** ; action StatPearls si **> 10 %** |\n\n[1,22]\n\n**Valeurs de performance repères (⁹⁹ᵐTc / 140 keV).** La résolution spatiale *intrinsèque* d'une caméra grand champ moderne est de **2,9–4,5 mm FWHM** (typiquement ~**3,5 mm**, meilleures caméras **< 3 mm**) [5,23]. La résolution *système* (collimateur en place, à **10 cm** de la source) est nettement moindre du fait du collimateur : ~**7,2 mm** avec un collimateur LEHR (*low-energy high-resolution*) et ~**8,9 mm** avec un LEAP (*low-energy all-purpose*) [14]. **La non-linéarité doit rester < 1 mm** : on la rapporte en « non observable / juste perceptible (< 1 mm) / significative (> 1 mm) », toute non-linéarité significative imposant investigation [1].",
+          "stats": [
+            {
+              "value": "2,9–4,5 mm",
+              "label": "Résolution intrinsèque FWHM (⁹⁹ᵐTc, ~3,5 typique)"
+            },
+            {
+              "value": "~7,2 mm",
+              "label": "Résolution système FWHM à 10 cm (LEHR)"
+            },
+            {
+              "value": "< 1 mm",
+              "label": "Non-linéarité maximale admise"
+            },
+            {
+              "value": "3 mm / 1 mm",
+              "label": "Masque NEMA : plomb / largeur de fente"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi la mire à barres doit être plus fine que la résolution",
+              "text": "La règle **FWHM ≈ 1,6 × la plus petite barre visible** implique que la mire ne peut mesurer une résolution meilleure que ~1,6 × sa plus fine barre. Une mire dont les plus petites barres sont proches de la résolution intrinsèque attendue (≈ ½ de celle-ci, soit **2 mm** en pratique) permet de suivre finement une dérive. On tourne la mire de 90° d'une semaine à l'autre pour tester alternativement les deux axes X et Y [1]."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — résolution système ≠ résolution intrinsèque",
+              "text": "Ne pas confondre la résolution **intrinsèque** (sans collimateur, ~3–4 mm) avec la résolution **système** (collimateur en place, ~7–9 mm à 10 cm) : la seconde, dominée par le collimateur et croissant avec la distance source-détecteur, est celle qui gouverne la qualité clinique réelle. Toujours préciser la distance et le collimateur quand on cite une valeur [5,14]. Un défaut de linéarité non corrigé dégrade directement l'uniformité (les cartes de correction linéarité et uniformité sont couplées) [1]."
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Représentation en secteurs d'une mire à barres en quadrants : quatre groupes de barres de plomb de largeurs décroissantes permettant de repérer visuellement le plus petit groupe résolu, dont dérive l'estimation de la FWHM.",
+            "caption": "Fig. B2 — Principe de la mire à barres en quadrants : le plus petit groupe résolu donne, via FWHM ≈ 1,6 × largeur de barre, une estimation rapide de la résolution."
+          }
+        },
+        {
+          "title": "B3 - B3 - Réaliser les tests d'énergie, de sensibilité et de taux de comptage/temps mort",
+          "text": "Trois tests complètent le contrôle du détecteur planaire : la **résolution en énergie** (qualité de la discrimination spectrale), la **sensibilité** (efficacité de comptage) et le comportement en **taux de comptage / temps mort** (fidélité à fort débit). Le centrage du photopic et la sensibilité relative sont quotidiens ; les mesures quantitatives sont faites à la recette et à l'audit annuel [1,2,22].\n\n**Résolution en énergie.** Elle se définit comme la **FWHM du photopic exprimée en % de l'énergie du pic**, mesurée à **140 keV** pour le ⁹⁹ᵐTc [1]. Une dégradation (élargissement de la FWHM) traduit un problème de PMT, de couplage optique ou de cristal. Valeurs typiques : **9–11 %** à 140 keV (ex. 10,5 %) ; les systèmes récents atteignent **7,4–8,8 %** [5,15]. Le **centrage du photopic** (*peaking*) et la position des fenêtres sont vérifiés **quotidiennement** ; la mesure quantitative (keV/canal + spectres ⁹⁹ᵐTc et ⁵⁷Co) relève de la recette et de l'annuel [1,2].\n\n**Sensibilité.** La **sensibilité planaire extrinsèque** se mesure pour le ⁹⁹ᵐTc avec au moins un collimateur basse énergie, en rapportant le taux de comptage à l'activité d'une source calibrée. Le point de vigilance en routine est l'**appariement inter-détecteurs** : la sensibilité de chaque tête ne doit pas différer de **> 5 %** (pour un radionucléide et un collimateur donnés) [1]. Valeur repère (LEHR, ⁹⁹ᵐTc) : de l'ordre de **~63 cps/MBq** selon une source [14], jusqu'à **~90–100 cps/MBq** (ex. 93,1 cps/MBq) selon le collimateur et la géométrie [14]. L'**efficacité de détection au photopic** (140 keV) est de **70–90 %**, fonction de l'épaisseur du cristal NaI(Tl) [5].\n\n| Test | Grandeur / unité | Valeur repère (⁹⁹ᵐTc, 140 keV) | Fréquence |\n|---|---|---|---|\n| Résolution en énergie | FWHM photopic (%) | **9–11 %** (récents 7,4–8,8 %) | Peaking quotidien ; quantitatif annuel |\n| Sensibilité système | cps/MBq | **~63 à ~100** (selon collimateur) | Relative quotidienne ; quantitative annuelle |\n| Appariement inter-têtes | écart de sensibilité | **≤ 5 %** | Quotidien / annuel |\n| Efficacité photopic | % | **70–90 %** | Recette |\n| Temps mort clinique | µs | **4–8 µs** | Recette / annuel |\n\n[1,5,14,15]\n\n**Taux de comptage et temps mort.** À fort débit, les événements se chevauchent (*pile-up*) et une fraction des coups est perdue : le **temps mort (τ)** quantifie ce phénomène, mesuré par la **méthode des deux sources** [1]. En conditions idéales (sans diffusé), τ vaut **1–2 µs** ; en conditions cliniques (⁹⁹ᵐTc, fenêtre étroite, avec diffusé), il monte à **4–8 µs** [5]. Repère quantitatif : avec un temps mort de 5 µs, la **perte de comptage atteint 20 % vers ~4×10⁴ cps** [5]. NEMA caractérise également l'uniformité et la résolution à un débit de référence de **75 000 cps**, au-delà duquel le *pile-up* dégrade la résolution intrinsèque [1].",
+          "stats": [
+            {
+              "value": "9–11 %",
+              "label": "Résolution en énergie à 140 keV (⁹⁹ᵐTc)"
+            },
+            {
+              "value": "≤ 5 %",
+              "label": "Écart de sensibilité inter-têtes admis"
+            },
+            {
+              "value": "70–90 %",
+              "label": "Efficacité de détection au photopic"
+            },
+            {
+              "value": "4–8 µs",
+              "label": "Temps mort clinique (perte 20 % ≈ 4×10⁴ cps)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — un mauvais peaking dégrade tout",
+              "text": "Un centrage du photopic incorrect (fenêtre de 20 % mal positionnée sur les 140 keV) fait chuter la sensibilité *et* génère de la non-uniformité : c'est une cause fréquente d'échec du flood matinal. Vérifier le *peaking* **avant** d'incriminer le détecteur, et le refaire après toute mise à jour de gain PMT [1,22]. Une hausse isolée de la FWHM énergétique oriente vers un PMT ou un couplage optique défaillant [1]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la résolution en énergie conditionne la correction de diffusé",
+              "text": "Une bonne résolution en énergie (FWHM basse) autorise des fenêtres étroites et une meilleure rejection du rayonnement diffusé, donc un meilleur contraste — enjeu majeur pour la quantification (SUV en imagerie CZT, quantification ¹⁷⁷Lu en dosimétrie de radiothérapie interne vectorisée) [8]. À fort débit, préférer surveiller la résolution à **75 000 cps** : c'est le régime où le *pile-up* commence à dégrader l'image [1]."
+            }
+          ]
+        },
+        {
+          "title": "B4 - B4 - Réaliser le CQ spécifique TEMP : centre de rotation, alignement multi-tête et CQ tomographique global",
+          "text": "La tomographie d'émission monophotonique (TEMP, *SPECT*) reconstruit un volume à partir de projections acquises sur un arc de rotation : elle est bien plus exigeante que le planaire, car toute erreur mécanique ou d'uniformité se propage dans la reconstruction sous forme d'artefacts caractéristiques. Le CQ spécifique TEMP comprend le **centre de rotation (COR)**, l'**alignement multi-têtes (MHR)** et un **CQ tomographique global** au fantôme [1,3].\n\n**Centre de rotation (COR).** Le COR est le point d'intersection entre l'**axe mécanique de rotation (AOR)** de la caméra et le centre perpendiculaire du plan détecteur ; le test vérifie l'alignement de la projection de l'AOR avec la **colonne de pixels centrale** des matrices de projection [1,9]. On acquiert sur **360°** une ou plusieurs sources ponctuelles/linéaires décalées (**20–60 MBq (~0,5–1,5 mCi)** par source) : dans le sinogramme, une source décrit une **sinusoïde** dont l'ajustement révèle tout décalage [1]. AAPM TG 177 renvoie aux spécifications du constructeur (message d'échec au dépassement) ; les critères classiques largement cités sont un **décalage X moyen de ±0,4 pixel**, une **erreur X < 1,0 pixel** (matrice 128×128), ou un **COR X < 0,5 mm** [6].\n\n**Impact clinique — pourquoi le COR est critique.** Un décalage de COR d'à peine **0,5 pixel** (soit ~**1,5 mm** en matrice 128×128) entraîne **~30 % de perte de résolution spatiale et ~40 % de perte de contraste** dans l'image reconstruite : c'est le test tomographique le plus sensible, à l'origine d'un flou en « diapason » (*tuning-fork*) ou d'un dédoublement [6,24].\n\n**Alignement multi-têtes (MHR) et inclinaison de tête (*head tilt*).** Sur les systèmes bi- ou tri-têtes, le recalage multi-têtes (*multiple-head registration*) est mesuré en même temps que le COR : chaque tête doit projeter la même source au même point. Le **head tilt** (bascule axiale de la tête) n'est **pas corrigeable par calibration** et n'apparaît qu'en ciné des projections, sous forme d'une **oscillation axiale sinusoïdale** — d'où l'importance de visionner le ciné brut avant reconstruction [1].\n\n**CQ tomographique global (fantôme).** L'**uniformité tomographique** exige un flood haute statistique servant à la carte de correction : les non-uniformités résiduelles génèrent des **artefacts en anneau** (*ring / bull's-eye*) centrés sur l'axe de rotation. La cible est de l'ordre de **±1 %**, et un défaut d'uniformité aussi faible que **3 %** suffit à produire un anneau visible [3,17]. Le **fantôme SPECT de Jaszczak** (rempli de ⁹⁹ᵐTc, collimateur basse énergie) évalue globalement résolution, contraste, détectabilité des lésions et uniformité tomographique ; il est approuvé par l'ACR (*American College of Radiology*) pour l'accréditation [1].\n\n| Test TEMP | Méthode / source | Tolérance | Fréquence |\n|---|---|---|---|\n| **Centre de rotation (COR)** | Sources 20–60 MBq, 360°, ajustement sinogramme | **< 0,5 pixel** ; erreur X **< 1 pixel** (128×128) | Hebdomadaire à **mensuelle** (constructeur) |\n| **Alignement multi-têtes (MHR)** | Combiné au COR | Selon constructeur ; head tilt non corrigeable | Mensuelle |\n| **Uniformité tomographique** | Flood haute statistique (carte de correction) | ~**±1 %** ; artefact dès **3 %** | Hebdomadaire/mensuelle + annuelle |\n| **Fantôme SPECT (Jaszczak)** | ⁹⁹ᵐTc, collimateur basse énergie | Résolution/contraste/uniformité conformes | Trimestrielle |\n| **SPECT/CT** | Alignement portique, co-enregistrement, correction d'atténuation | Selon constructeur | Annuelle |\n\n[1,3,6,17]\n\n**Enregistrement spatial multi-fenêtres.** Pour les radionucléides à photopics multiples, on vérifie que les fenêtres se superposent spatialement à l'aide de sources de ⁶⁷Ga (**93, 184, 300 keV**), en mesurant le déplacement en mm par fenêtre [1]. Enfin, en **SPECT/CT**, s'ajoutent l'alignement du portique, le co-enregistrement spatial SPECT/CT et l'exactitude des corrections d'atténuation et de diffusion [1]. L'outil **IAEA-NMQC Toolkit** (greffons ImageJ) permet une analyse standardisée de l'uniformité tomographique et des autres tests TEMP [19].",
+          "steps": [
+            {
+              "title": "1. Peaking et uniformité préalables",
+              "text": "Confirmer le centrage du photopic (fenêtre 20 % à 140 keV) et une carte d'uniformité à jour : la TEMP amplifie tout défaut d'uniformité (cible ±1 %, artefact en anneau dès 3 %) [3,17]."
+            },
+            {
+              "title": "2. Acquisition COR/MHR",
+              "text": "Placer les sources décalées (20–60 MBq), acquérir sur 360° ; ajuster la sinusoïde du sinogramme et vérifier COR < 0,5 pixel et l'appariement des têtes [1,6]."
+            },
+            {
+              "title": "3. Contrôle du ciné des projections",
+              "text": "Visionner le ciné brut pour dépister un head tilt (oscillation axiale sinusoïdale) — non corrigeable par calibration, invisible sur les seules projections statiques [1]."
+            },
+            {
+              "title": "4. Fantôme tomographique",
+              "text": "Périodiquement (trimestriel), acquérir un fantôme de Jaszczak au ⁹⁹ᵐTc pour évaluer résolution, contraste, détectabilité et uniformité tomographique reconstruite [1]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "< 0,5 pixel",
+              "label": "Tolérance COR (erreur X < 1 pixel, 128×128)"
+            },
+            {
+              "value": "−30 % / −40 %",
+              "label": "Perte résolution / contraste pour 0,5 pixel de COR"
+            },
+            {
+              "value": "±1 %",
+              "label": "Uniformité système requise (artefact en anneau dès 3 %)"
+            },
+            {
+              "value": "360°",
+              "label": "Arc d'acquisition du test COR"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'artefact en anneau trahit l'uniformité, pas le patient",
+              "text": "Un **anneau concentrique** (*bull's-eye*) centré sur l'axe de rotation sur une coupe TEMP est l'empreinte d'un défaut d'uniformité du détecteur (dès **3 %**), non une lésion : c'est pourquoi l'exigence d'uniformité en TEMP (**±1 %**) est bien plus stricte qu'en planaire (< 5 %). Refaire la carte de correction d'uniformité haute statistique avant toute reconstruction clinique [3,17]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — le COR conditionne la fiabilité diagnostique",
+              "text": "Un COR négligé dégrade silencieusement la spécificité : en TEMP de perfusion myocardique (Se ~88 %, Sp ~74 %), un artefact de COR ou d'uniformité mime un défaut de perfusion et génère des faux positifs. Le CQ rigoureux (uniformité + COR) est la condition même de ces performances [30,31]. Respecter la fréquence constructeur (souvent mensuelle) et ne pas la reporter [1]."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — head tilt : le défaut qu'aucune calibration ne rattrape",
+              "text": "Contrairement au COR et au MHR, le **head tilt** ne se corrige pas par recalibration : il faut une intervention mécanique. Seule la lecture du **ciné des projections brutes** (oscillation axiale sinusoïdale) le révèle — un réflexe à intégrer systématiquement avant de valider une acquisition tomographique [1]."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Schéma d'une acquisition tomographique TEMP : têtes de détection tournant autour du patient sur un arc de 360°, chaque projection devant s'aligner sur le centre de rotation (COR) commun sous peine d'artefacts en anneau et de perte de résolution/contraste.",
+            "caption": "Fig. B4 — En TEMP, chaque projection doit se recaler sur un centre de rotation commun : un décalage de 0,5 pixel coûte ~30 % de résolution et ~40 % de contraste."
+          }
+        },
+        {
+          "title": "C1 - C1 - Interpréter l'uniformité : lire un champ, quantifier UFOV/CFOV et fixer le seuil d'action",
+          "text": "**L'uniformité est le test le plus fréquent et le plus sensible du contrôle qualité (CQ)** : c'est le premier geste avant tout usage clinique, car une non-uniformité même modeste se propage en artefact en tomographie d'émission monophotonique (TEMP) reconstruite [3,17]. Interpréter un champ inondé (*flood*), c'est enchaîner trois lectures : (1) l'**inspection visuelle** de la carte de coups, (2) la **quantification** sur le champ utile et le champ central, (3) la **confrontation au seuil d'action**.\n\n**(a) Lire le champ à l'œil.** On distingue d'emblée l'uniformité **intrinsèque** (sans collimateur, source ponctuelle de ⁹⁹ᵐTc) de l'uniformité **extrinsèque/système** (avec collimateur, source plane de ⁵⁷Co) : la première teste le cristal + les tubes photomultiplicateurs (PMT) + l'électronique, la seconde y ajoute le collimateur [1,9]. Un défaut visible en extrinsèque mais absent en intrinsèque signe le **collimateur** (bande/zone froide) ; un défaut présent dans les deux pointe le détecteur (PMT, cristal, cartes de correction) [1]. On balaie le champ à la recherche de gradients, de foyers froids (PMT défaillant) ou chauds (contamination).\n\n**(b) Quantifier — UFOV et CFOV.** Deux régions sont analysées : le **champ de vue utile (UFOV, *Useful Field Of View*)** et le **champ central (CFOV, *Central Field Of View*) = 75 % de l'UFOV** en dimension linéaire [9]. L'analyse NEMA (*National Electrical Manufacturers Association*, standard NU 1) se fait après compression de l'image en matrice **64×64** (taille de pixel **6,4 mm ± 30 %**) et lissage 9 points [1]. Deux indices en découlent :\n\n| Indice | Définition | Ce qu'il capte |\n|---|---|---|\n| **Uniformité intégrale (IU)** | `IU = 100 × (Max − Min)/(Max + Min)` sur tous les pixels du champ | Écart global max/min (variation large) [9,22] |\n| **Uniformité différentielle (DU)** | Pire contraste local sur une fenêtre glissante de **5 pixels** contigus | Dégradés brusques, transition abrupte (variation locale) [1,9] |\n\n**(c) Densité de coups : la clé de lecture.** L'IU mesurée dépend d'abord du **bruit statistique** : plus le flood contient de coups, plus l'IU plancher est basse. Il faut donc rapporter toute IU au nombre de coups acquis, sinon on compare des grandeurs non comparables [1].\n\n| Type de flood | Coups totaux | Coups/pixel (64×64) | IU plancher théorique |\n|---|---|---|---|\n| Recette / audit annuel (NEMA NU 1-2012) | **30 millions** | 10 000 | **1,6 %** [1] |\n| Flood intrinsèque de routine | **10 millions** | 3 333 | **2,7 %** [1] |\n| Flood extrinsèque de routine (⁵⁷Co + collimateur) | **5 millions** | 1 667 | **3,9 %** [1] |\n\n**(d) Fixer le seuil d'action.** Le critère normatif est net : pour un flood de **5 millions de coups, l'IU sur l'UFOV doit rester < 5 %** ; au-delà, on refait d'abord une carte de correction d'uniformité (*flood calibration*), puis, si le défaut persiste, on déclare une panne à réparer [1,22]. En pratique de service, la **cible fixée est plus stricte (IU < 3 %)** et une **DU > 3 %** déclenche une maintenance [10,13]. Surtout, pour la TEMP, l'uniformité **système doit atteindre ±1 %** : c'est le seuil qui prévient les artefacts en anneau après reconstruction [10,17]. La règle de fréquence : uniformité **quotidienne** (intrinsèque basse statistique OU extrinsèque au ⁵⁷Co avant tout examen), complétée par un flood **haute statistique** pour la carte de correction et l'audit [2,7].",
+          "stats": [
+            {
+              "value": "< 5 %",
+              "label": "IU sur l'UFOV (flood 5 M coups, AAPM TG 177) [1]"
+            },
+            {
+              "value": "< 3 %",
+              "label": "IU cible pratique en routine [10,13]"
+            },
+            {
+              "value": "75 %",
+              "label": "CFOV = fraction linéaire de l'UFOV [9]"
+            },
+            {
+              "value": "±1 %",
+              "label": "Uniformité système requise pour la TEMP [10,17]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — comparer deux IU sans regarder les coups",
+              "text": "Une IU de 3 % sur un flood de 10 millions de coups n'a pas le même sens que 3 % sur 5 millions : le plancher de bruit est de 2,7 % dans le premier cas et 3,9 % dans le second [1]. Toujours rapporter l'IU au nombre de coups acquis, et comparer une valeur du jour à une baseline acquise dans les mêmes conditions (même statistique, même matrice)."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — intrinsèque vs extrinsèque pour localiser la faute",
+              "text": "L'astuce diagnostique tient au fait que l'extrinsèque = intrinsèque + collimateur. Un défaut qui n'apparaît qu'en extrinsèque isole le collimateur (lamelle endommagée, zone froide), sans démonter le détecteur [1]. Inversement, un foyer froid présent dès l'intrinsèque oriente vers un PMT ou une dérive de la carte de correction d'énergie."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection d'une gamma-caméra d'Anger : collimateur, cristal NaI(Tl), guide de lumière, réseau de tubes photomultiplicateurs et électronique de positionnement/énergie — les étages testés par l'uniformité intrinsèque et extrinsèque.",
+            "caption": "Fig. 1 — La chaîne de détection : l'uniformité intrinsèque teste cristal + PMT + électronique, l'extrinsèque y ajoute le collimateur."
+          }
+        },
+        {
+          "title": "C2 - C2 - Interpréter la résolution, la linéarité et l'énergie : tendances, dérives et reproductibilité",
+          "text": "Contrairement à l'uniformité, la résolution spatiale, la linéarité et la résolution en énergie ne se lisent pas sur une valeur isolée : **elles s'interprètent en tendance**, par comparaison à la baseline de recette et suivi dans le temps. Une dérive lente est plus informative qu'une mesure ponctuelle [1].\n\n**(a) Résolution spatiale — FWHM et fantôme à barres.** La résolution intrinsèque se quantifie par la **largeur à mi-hauteur (FWHM, *Full Width at Half Maximum*)** de la fonction de dispersion linéaire (LSF) d'une source linéaire ; la mesure NEMA emploie un masque de plomb de **3 mm d'épaisseur à fentes de 1 mm** et rapporte FWHM et FWTM (largeur au dixième, plus sensible à la pénétration septale) [1]. En routine, on lit un **fantôme à barres en quadrants** (*bar phantom*), acquis avec **≥ 5 à 15 millions de coups** [1] : la règle d'interprétation est que **FWHM ≈ 1,6 × la plus petite taille de barres encore visible** [1]. La visibilité des plus petites barres (typiquement 2 mm) dégringole d'un quadrant à l'autre → alerte.\n\n| Paramètre | Valeur typique (⁹⁹ᵐTc, 140 keV) | Source |\n|---|---|---|\n| Résolution spatiale **intrinsèque** | **2,9–4,5 mm FWHM** (meilleures caméras < 3 mm) | [5,23] |\n| Résolution spatiale **système** (LEHR, à 10 cm) | **~7,2 mm FWHM** (LEAP ~8,9 mm) | [14] |\n| Efficacité de détection au photopic (140 keV) | **70–90 %** (selon l'épaisseur du cristal) | [5] |\n\n**(b) Linéarité spatiale.** Elle mesure la fidélité géométrique : écart (mm) entre position vraie et position imagée d'une source linéaire. La **linéarité différentielle** = écart-type des positions de pic ; la **linéarité absolue** = déplacement maximal [1]. Le critère de lecture est simple : **toute non-linéarité doit rester < 1 mm** (cotée « non observable / juste perceptible < 1 mm / significative > 1 mm ») [1]. StatPearls fixe le seuil d'investigation d'une variation de linéarité à **> 10 %** [22]. Une non-linéarité qui progresse est le précurseur d'une non-uniformité (les cartes de correction de linéarité et d'uniformité sont couplées) [1].\n\n**(c) Résolution en énergie.** Elle est la FWHM du photopic exprimée en **% de l'énergie du pic**, mesurée sur les **140 keV du ⁹⁹ᵐTc**. Valeurs attendues : **9–11 %** (ex. 10,5 %) sur caméras courantes, **7,4–8,8 %** sur systèmes récents [5,15]. Une **augmentation** de ce pourcentage (perte de résolution en énergie) traduit un problème de PMT ou de cristal et compromet la discrimination diffusé/photopic [1].\n\n**(d) Reproductibilité et fréquences.** Le peaking (centrage du photopic dans la fenêtre) se vérifie **quotidiennement** ; la résolution/linéarité aux barres s'inspecte **hebdomadairement** (visuel) ; la quantification NEMA complète (FWHM, FWTM, linéarité, résolution en énergie) relève de la **recette et de l'audit annuel** [1,2]. L'interprétation est toujours relative : on compare au **rapport de recette** du constructeur, dans les mêmes conditions (source, distance, statistique) [1].",
+          "stats": [
+            {
+              "value": "2,9–4,5 mm",
+              "label": "Résolution intrinsèque FWHM (140 keV) [5,23]"
+            },
+            {
+              "value": "~7,2 mm",
+              "label": "Résolution système FWHM à 10 cm (LEHR) [14]"
+            },
+            {
+              "value": "9–11 %",
+              "label": "Résolution en énergie à 140 keV [5]"
+            },
+            {
+              "value": "< 1 mm",
+              "label": "Seuil de non-linéarité acceptable [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — FWHM ≈ 1,6 × la plus petite barre visible",
+              "text": "Sur un fantôme à barres, on n'a pas de chiffre direct : on estime la résolution à partir de la plus petite série de barres encore distinguée. La relation empirique FWHM ≈ 1,6 × cette taille [1] transforme une lecture visuelle en estimation quantitative, et permet de dater la première fois où un quadrant devient illisible — signature d'une dérive."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — interpréter en tendance, pas en absolu",
+              "text": "Une résolution en énergie de 10 % n'est ni bonne ni mauvaise dans l'absolu : elle doit être lue contre la baseline de recette de LA caméra. C'est la dérive (ex. 8,8 % → 10,5 % sur plusieurs mois) qui signale un PMT vieillissant ou un couplage optique dégradé, bien avant que l'image clinique ne se détériore [1]."
+            }
+          ]
+        },
+        {
+          "title": "C3 - C3 - Atlas des artefacts de CQ : anneau, œil-de-bœuf, décalage de fusion, non-uniformité et leurs causes",
+          "text": "Chaque défaut instrumental a une **signature image reproductible**. Interpréter le CQ, c'est reconnaître le motif, remonter à la cause et corriger. Pour chaque artefact : cause → aspect → conduite.\n\n**(a) Artefact en anneau / œil-de-bœuf (*bull's-eye*) — le plus emblématique de la TEMP.** Une non-uniformité focale du détecteur, projetée à chaque angle sur **360°** de rotation, décrit un **anneau concentrique** centré sur l'axe de rotation dans le volume reconstruit [3,17]. Le seuil d'apparition est bas : un **défaut d'uniformité de seulement 3 %** peut suffire à générer un anneau visible [3,11]. Cause typique : un PMT défaillant ou une carte de correction d'uniformité périmée. Conduite : refaire la carte de correction haute statistique ; si l'anneau persiste, réparation. C'est précisément pour cet artefact que l'uniformité système doit viser **±1 %** (cf. C1) [17].\n\n**(b) Non-uniformité focale planaire.** En planaire, le même PMT défaillant donne un **foyer froid arrondi** (ou chaud si contamination). Le test discriminant est intrinsèque vs extrinsèque (cf. C1) : froid en intrinsèque → détecteur ; froid seulement en extrinsèque → collimateur (**bande/zone froide** par lamelle endommagée) [1].\n\n**(c) Décalage de fusion TEMP/TDM.** Sur les systèmes hybrides, un mauvais co-enregistrement spatial entre la carte d'émission (TEMP) et la carte de transmission (TDM) déplace la correction d'atténuation → **faux défauts de fixation** ou fixation déplacée par rapport au support anatomique. Il se corrige par le contrôle d'alignement du portique et le co-enregistrement (cf. C4) [1].\n\n**(d) Artefact en étoile / pénétration septale.** Un collimateur inadapté à l'énergie (photons de haute énergie traversant les septa) crée un **motif en étoile** autour des sources intenses. Cas classique de contamination de source par ⁹⁹Mo (haute énergie) à laisser décroître [1].\n\n**(e) Contamination.** Un point chaud extra-physiologique fixe sur les floods successifs signe une **contamination** du cristal ou de la source ; le test de fond quotidien la débusque [22]. Ne jamais poser une source non scellée au contact du cristal sans intercalaire (cf. C1/sécurité).\n\n| Artefact | Aspect | Cause probable | Conduite |\n|---|---|---|---|\n| **Anneau / œil-de-bœuf** | Anneau concentrique en TEMP | Non-uniformité ≥ 3 %, PMT, carte périmée [3,11] | Recalibrer l'uniformité ; viser ±1 % [17] |\n| **Foyer froid planaire** | Zone froide arrondie | PMT défaillant / carte de correction | Intrinsèque vs extrinsèque → localiser [1] |\n| **Bande froide** | Bande en extrinsèque seule | Collimateur endommagé | Changer/réparer le collimateur [1] |\n| **Décalage de fusion** | Fixation décalée du support anatomique | Co-enregistrement TEMP/TDM | Contrôle d'alignement portique [1] |\n| **Étoile** | Rayons autour des sources | Pénétration septale / mauvais collimateur | Adapter le collimateur à l'énergie [1] |\n| **Point chaud fixe** | Foyer chaud persistant | Contamination cristal/source | Test de fond, décontamination [22] |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'anneau naît à seulement 3 % de non-uniformité",
+              "text": "La reconstruction tomographique amplifie les défauts : un flood planaire jugé « acceptable » à 3–4 % d'IU peut néanmoins produire un anneau visible en TEMP [3,11]. D'où l'exigence d'uniformité système ±1 % pour la TEMP (cf. C1) [17]. Un anneau centré sur l'axe de rotation doit toujours faire suspecter le détecteur avant le patient."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le test qui localise la faute",
+              "text": "Face à une non-uniformité, refaire immédiatement un flood dans l'autre configuration : intrinsèque ET extrinsèque. La comparaison isole en une acquisition le coupable — cristal/PMT (défaut dans les deux) ou collimateur (défaut extrinsèque seul) [1] — et évite un démontage inutile."
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Schéma en cible (œil-de-bœuf) illustrant l'artefact en anneau concentrique de la TEMP : une non-uniformité focale du détecteur, projetée sur 360° de rotation, se reconstruit en anneau centré sur l'axe de rotation.",
+            "caption": "Fig. 2 — L'artefact en anneau : une non-uniformité aussi faible que 3 % se reconstruit en œil-de-bœuf centré sur l'axe de rotation."
+          }
+        },
+        {
+          "title": "C4 - C4 - Interpréter le CQ tomographique et hybride : Jaszczak, uniformité TEMP et alignement TEMP/TDM",
+          "text": "En TEMP, deux tests conditionnent la qualité reconstruite : le **centre de rotation (COR)** et l'**uniformité tomographique** ; en hybride, s'y ajoute l'**alignement TEMP/TDM**. Le fantôme **Jaszczak** en fait la synthèse.\n\n**(a) Centre de rotation (COR) — le test clé de la TEMP.** Le COR est le point d'intersection entre l'**axe mécanique de rotation** de la caméra et le centre perpendiculaire du plan détecteur ; il faut que la projection de cet axe coïncide avec la **colonne de pixels centrale** des matrices de projection [1,9]. On acquiert sur **360°** des sources ponctuelles/linéaires décalées (**20–60 MBq** par source) : dans le sinogramme, elles doivent décrire une **sinusoïde** régulière ; toute rupture trahit un décalage [1]. L'AAPM TG 177 renvoie aux spécifications du constructeur (message d'échec si dépassement) ; les critères classiques largement cités sont un **décalage X moyen de ±0,4 pixel** et une **erreur X < 1,0 pixel** (matrice 128×128) [6]. **L'enjeu clinique est majeur** : un décalage de seulement **0,5 pixel (~1,5 mm en 128×128) entraîne ~30 % de perte de résolution spatiale et ~40 % de perte de contraste** dans l'image reconstruite [6,24]. Fréquence : COR + recalage multi-têtes (MHR) **hebdomadaire à mensuel** selon le constructeur [1,2].\n\n**(b) Uniformité tomographique.** Un flood haute statistique dédié alimente la carte de correction tomographique ; l'objectif est **±1 %**, faute de quoi l'anneau apparaît (cf. C3) [3,17]. L'outil recommandé pour l'analyse standardisée est l'**IAEA-NMQC Toolkit** (plugins ImageJ) [19].\n\n**(c) Fantôme Jaszczak — l'évaluation intégrée.** Rempli de ⁹⁹ᵐTc + collimateur basse énergie, acquis **trimestriellement**, il évalue d'un seul examen la **résolution**, le **contraste**, la **détectabilité des lésions** (sphères froides) et l'**uniformité tomographique** ; il est approuvé par l'ACR (*American College of Radiology*) pour l'accréditation [1]. Sa lecture est visuelle et quantitative : disparition des plus petites tiges = perte de résolution ; anneau de fond = défaut d'uniformité ; sphères peu contrastées = problème de correction.\n\n**(d) Alignement TEMP/TDM (systèmes hybrides).** Le CQ hybride contrôle l'**alignement du portique**, le **co-enregistrement spatial TEMP/TDM**, et l'exactitude des **corrections d'atténuation et de diffusion** issues de la TDM [1]. Un défaut d'alignement produit le décalage de fusion (cf. C3) et fausse la correction d'atténuation. Le warm-up et l'alignement des lasers de positionnement complètent la routine [22].\n\n| Test tomographique/hybride | Critère / cible | Fréquence | Source |\n|---|---|---|---|\n| **Centre de rotation (COR)** | Erreur X < 1,0 pixel ; décalage moyen ±0,4 pixel | Hebdo à mensuel | [1,6] |\n| **Uniformité tomographique** | ±1 % (sinon anneau) | Mensuel / annuel | [3,17] |\n| **Fantôme Jaszczak** | Résolution + contraste + uniformité (ACR) | Trimestriel | [1] |\n| **Alignement / co-enregistrement TEMP/TDM** | Superposition émission/transmission | Selon constructeur | [1] |",
+          "stats": [
+            {
+              "value": "0,5 pixel",
+              "label": "Décalage COR → −30 % résolution, −40 % contraste [6,24]"
+            },
+            {
+              "value": "< 1,0 pixel",
+              "label": "Erreur COR acceptable (128×128) [6]"
+            },
+            {
+              "value": "360°",
+              "label": "Acquisition COR (sources décalées, sinusoïde) [1]"
+            },
+            {
+              "value": "±1 %",
+              "label": "Uniformité tomographique cible (anti-anneau) [3,17]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — sous-estimer un décalage COR « minime »",
+              "text": "Un demi-pixel paraît négligeable, mais en 128×128 il coûte ~30 % de résolution et ~40 % de contraste sur l'image reconstruite [6,24]. Un COR mal contrôlé dégrade directement la spécificité des examens quantitatifs (perfusion myocardique, dosimétrie ¹⁷⁷Lu). Le COR est le test tomographique à ne jamais sauter."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le Jaszczak comme synthèse trimestrielle",
+              "text": "Plutôt que d'empiler des tests isolés, le fantôme Jaszczak vérifie en une acquisition résolution, contraste, détectabilité et uniformité tomographique, et sert de référence ACR pour l'accréditation [1]. Comparer chaque acquisition trimestrielle à la précédente (mêmes réglages) transforme un test qualitatif en outil de suivi de dérive."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Protocole d'acquisition TEMP : rotation du détecteur sur 360° autour du patient, chaque projection alimentant la reconstruction — étape où un défaut de centre de rotation ou d'uniformité se transforme en artefact tomographique.",
+            "caption": "Fig. 3 — L'acquisition TEMP en rotation : c'est ici qu'un COR décalé ou une non-uniformité résiduelle deviennent un anneau ou une perte de résolution reconstruite."
+          }
+        },
+        {
+          "title": "D1 - D1 - Maîtriser le référentiel normatif : NEMA NU-1, IAEA, EANM et exigences réglementaires",
+          "text": "Le contrôle qualité (**CQ**) d'une gamma-caméra n'est pas une pratique locale improvisée : il s'adosse à un corpus normatif hiérarchisé, où chaque référentiel occupe une fonction distincte. Confondre ces fonctions est la première erreur du physicien débutant. Il faut distinguer **la norme de mesure** (comment on quantifie une performance), **le référentiel de programme** (à quelle fréquence on teste en routine) et **l'exigence réglementaire/accréditation** (ce qui est obligatoire).\n\n**▸ La norme de mesure — NEMA NU 1.** Le standard **NEMA NU 1** (National Electrical Manufacturers Association, *Performance Measurements of Gamma Cameras*) est la référence méthodologique mondiale. Ses éditions successives (**NU 1-2007, 2012, 2018, 2023**) définissent et quantifient de façon reproductible l'ensemble des paramètres : uniformité de champ inondé intrinsèque (intégrale + différentielle, sur UFOV et CFOV), résolution spatiale intrinsèque, linéarité spatiale intrinsèque, résolution en énergie intrinsèque, enregistrement spatial multi-fenêtres, performance en taux de comptage dans l'air, résolution/sensibilité système et résolution TEMP reconstruite.[4] Point capital : NEMA NU 1 fixe **les conditions de mesure** (géométrie, statistique, matrice, compression 64×64, filtre 9 points) mais **ne fixe pas de seuils cliniques d'action** — ce sont les spécifications du constructeur et les référentiels de programme qui les portent.[4]\n\n**▸ Le complément international — IEC.** La norme **IEC 61675-2** encadre les caractéristiques et conditions d'essai des systèmes SPECT ; elle est complémentaire de NEMA et fréquemment citée conjointement dans les cahiers des charges d'appel d'offres.\n\n**▸ Les référentiels de procédure et de fréquence — IAEA & EANM.** L'**IAEA** (Agence internationale de l'énergie atomique) fournit le socle procédural : l'*IAEA Quality Control Atlas for Scintillation Camera Systems* (2003) illustre les images typiques normales et pathologiques,[11] l'**IAEA Human Health Series No. 6 — Quality Assurance for SPECT Systems** (2009) détaille les procédures de routine SPECT,[17] et l'IAEA-TECDOC-602 reste la référence historique.[18] L'**EANM** (European Association of Nuclear Medicine), via la publication de référence **Busemann Sokole et al. 2010**, fixe les **fréquences de CQ de routine** (quotidien / hebdomadaire / mensuel / annuel) désormais universellement reprises en Europe ;[7] l'*EANM Technologist Guide 2017* en donne la déclinaison pratique pour le manipulateur.[2]\n\n**▸ Le référentiel de recette et d'audit physique — AAPM TG 177.** Le rapport **AAPM Report No. 177 (Task Group 177, février 2019)** est la référence nord-américaine pour les **tests d'acceptation** (à l'installation) et le **contrôle physique annuel** ; c'est lui qui donne les seuils opérationnels les plus cités (uniformité intégrale < 5 % pour un flood de 5 millions de coups, densités de comptage requises, procédure COR).[1] Il coexiste avec les référentiels britanniques **IPEM Report 86** (2003), révisé/complété par l'**IPEM Report 111**.[6]\n\n**▸ L'exigence réglementaire et d'accréditation.** Le CQ n'est pas facultatif. L'accréditation par **The Joint Commission (TJC)** et les programmes d'accréditation de l'**ACR** (American College of Radiology) imposent la recette à l'installation et un **audit annuel de physique médicale**, dont le contenu est celui défini par l'AAPM TG 177.[1] L'*ACR Technical Standard for Medical Nuclear Physics* en précise le cadre. À l'échelle nationale, des programmes officiels reprennent et adaptent ces exigences (ex. *Recommended Quality Assurance Programme for Gamma Cameras, SPECT and SPECT/CT* du Department of Health de Tasmanie, 2021).[8]\n\n| Référentiel | Fonction | Ce qu'il apporte |\n|---|---|---|\n| **NEMA NU 1** (2007→2023) | Norme de **mesure** | Définitions et conditions de mesure des performances ; base des spécifications constructeur [4,16] |\n| **IEC 61675-2** | Norme de mesure (SPECT) | Caractéristiques et conditions d'essai, complément de NEMA |\n| **IAEA HHS No. 6 / QC Atlas / TECDOC-602** | **Procédures** de routine | Modes opératoires SPECT, atlas d'images, outil NMQC [11,17,18,19] |\n| **EANM 2010 (Busemann Sokole)** | **Fréquences** de routine | Calendrier quotidien→annuel de référence en Europe [7] |\n| **AAPM TG 177 (Report 177, 2019)** | **Recette + audit annuel** | Seuils opérationnels, densités de comptage, COR [1] |\n| **IPEM 86 / 111** | Référentiel physique (UK) | Tolérances et niveaux d'action historiques [6] |\n| **TJC / ACR** | **Réglementaire** | Obligation de recette + audit annuel de physique médicale [1] |\n\nEn pratique, le physicien médical écrit un **programme de CQ unique** qui *mesure* selon NEMA, *cadence* selon l'EANM, *audite* selon l'AAPM TG 177, et *justifie sa conformité* devant l'organisme d'accréditation. Aucun de ces référentiels ne suffit seul.",
+          "stats": [
+            {
+              "value": "NU 1",
+              "label": "Norme NEMA de mesure (éd. 2007→2023) [4,16]"
+            },
+            {
+              "value": "2010",
+              "label": "EANM Busemann Sokole — fréquences de routine [7]"
+            },
+            {
+              "value": "TG 177",
+              "label": "AAPM 2019 — recette + audit annuel [1]"
+            },
+            {
+              "value": "Annuel",
+              "label": "Audit physique imposé par TJC/ACR [1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — NEMA ne donne pas de seuil « pass/fail » clinique",
+              "text": "NEMA NU 1 normalise **la méthode** de mesure, pas les niveaux d'action. Un rapport de recette qui affiche « uniformité intégrale = 3,2 % (NEMA NU 1-2018) » ne dit rien de la conformité tant qu'on ne le confronte pas à la spécification du constructeur et au seuil du programme (ex. AAPM TG 177 : IU < 5 % à 5 M coups).[1,4] Toujours coupler valeur mesurée ET référentiel de seuil."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la bonne question à se poser devant un chiffre",
+              "text": "Pour tout paramètre, séparez trois plans : *avec quelle méthode ?* (NEMA), *à quelle fréquence ?* (EANM 2010), *contre quel seuil ?* (constructeur / AAPM TG 177 / IPEM). Un CQ défendable en inspection est celui qui trace explicitement ces trois réponses pour chaque test.[1,4,7]"
+            }
+          ]
+        },
+        {
+          "title": "D2 - D2 - Maîtriser les fréquences et le programme annuel : quotidien, hebdomadaire, mensuel, annuel, post-intervention",
+          "text": "Un programme de CQ n'a de valeur que s'il est **cadencé**. La logique est celle d'une pyramide de surveillance : des tests **fréquents, rapides et sensibles** en bas (quotidien), des tests **plus lourds et quantitatifs** au sommet (annuel/recette). Chaque niveau attrape des dérives d'échelle de temps différente ; sauter un niveau laisse passer une classe entière de défauts.\n\n**▸ Quotidien — le filet de sécurité avant tout patient.** Réalisé chaque matin, avant tout usage clinique. Il comprend : inspection visuelle/mécanique et détection de collision ; **centrage du photopic (peaking)** sur la fenêtre d'énergie ; **uniformité de champ inondé** — soit intrinsèque basse statistique (source ponctuelle de ⁹⁹ᵐTc, sans collimateur), soit **extrinsèque au ⁵⁷Co** (nappe scellée, collimateur en place) ; contrôle du fond/contamination ; sensibilité relative.[2,22] Le ⁵⁷Co est le standard commode de l'uniformité quotidienne : période longue (**T½ ≈ 271–272 j**) et γ de **122 keV**, proche des 140 keV du ⁹⁹ᵐTc.[22] La densité de routine est de **5 à 15 millions de coups**, avec un critère d'acceptation d'**uniformité intégrale < 5 %**.[1] Point crucial : l'uniformité **extrinsèque** (avec collimateur) est la seule à démasquer un **défaut de collimateur**, invisible en intrinsèque.[1]\n\n**▸ Hebdomadaire — résolution, linéarité et cœur du système.** **Résolution spatiale et linéarité** évaluées visuellement au **fantôme à barres (bar phantom)** — feuille de ⁵⁷Co ou source de ⁹⁹ᵐTc, acquisition ≥ **15 millions de coups** ;[1,22] toute non-linéarité doit rester **< 1 mm**.[1] On y ajoute une **uniformité intrinsèque** haute qualité. Selon le référentiel, le **centre de rotation (COR)** peut être hebdomadaire (constructeur/EANM) plutôt que mensuel.[1,7]\n\n**▸ Mensuel — l'intégrité tomographique.** **Centre de rotation (COR) et recalage multi-têtes** selon les préconisations du fabricant.[1] Ce test est le garant de la reconstruction TEMP : un COR dérivé génère flou et perte de contraste (cf. §D4). La carte de correction d'uniformité de haute statistique est également régénérée à cette cadence.\n\n**▸ Trimestriel — la performance tomographique globale.** **Fantôme SPECT de Jaszczak** (⁹⁹ᵐTc, collimateur basse énergie), évaluant conjointement résolution, contraste, détectabilité de lésions et uniformité tomographique reconstruite.[1] Ce fantôme est approuvé par l'ACR pour l'accréditation.\n\n**▸ Annuel / à la recette — la batterie NEMA complète.** Réalisée par le physicien médical : uniformité, résolution et linéarité **quantitatives**, résolution en énergie, sensibilité planaire et volumique, alignement tomographique, uniformité off-peak, et pour les systèmes hybrides le **recalage SPECT/CT**, l'exactitude de la correction d'atténuation et de diffusion.[1] Le flood d'acceptation/audit annuel est un flood **haute statistique de 30 millions de coups** (NEMA NU 1-2012).[1] La vérification des lasers, du warm-up CT et de la dosimétrie CT complète l'audit.[22]\n\n| Fréquence | Tests | Densité / seuil clé |\n|---|---|---|\n| **Quotidien** | Peaking énergie ; uniformité (intrinsèque OU extrinsèque ⁵⁷Co) ; fond/contamination ; sensibilité relative ; sécurités | 5–15 M coups ; IU < 5 % [1,2,22] |\n| **Hebdomadaire** | Résolution + linéarité (fantôme à barres) ; uniformité intrinsèque ; (± COR) | ≥ 15 M coups ; non-linéarité < 1 mm [1,22] |\n| **Mensuel** | **COR** + recalage multi-têtes ; carte de correction d'uniformité | Selon fabricant [1] |\n| **Trimestriel** | Fantôme SPECT (Jaszczak, ⁹⁹ᵐTc, LE) | Résolution/contraste/uniformité tomo [1] |\n| **Annuel / recette** | Batterie NEMA complète ; SPECT/CT ; lasers ; dosimétrie | Flood 30 M coups [1] |\n\n**▸ Post-intervention — le niveau souvent oublié.** Tout **événement affectant la chaîne de détection** impose de refaire, de façon ciblée, le sous-ensemble de tests concerné, sans attendre l'échéance calendaire : après remplacement/réparation d'un **PMT** ou de l'électronique → uniformité + énergie + linéarité ; après **régénération des cartes de correction** (énergie, linéarité, uniformité) → uniformité de contrôle ; après **déplacement/transport** de la caméra ou intervention mécanique sur le portique → **COR** et alignement ; après mise à jour logicielle affectant reconstruction ou quantification → contrôles de recette pertinents.[1] Le principe : *toute maintenance corrective invalide l'hypothèse de stabilité et doit être re-vérifiée avant reprise clinique*.",
+          "steps": [
+            {
+              "title": "Quotidien (avant patient)",
+              "text": "Peaking énergie, uniformité (⁵⁷Co extrinsèque ou ⁹⁹ᵐTc intrinsèque), fond/contamination, sensibilité relative, sécurités mécaniques. Critère : IU < 5 %.[1,2]"
+            },
+            {
+              "title": "Hebdomadaire",
+              "text": "Résolution + linéarité au fantôme à barres (≥ 15 M coups) ; uniformité intrinsèque haute qualité.[1,22]"
+            },
+            {
+              "title": "Mensuel",
+              "text": "Centre de rotation (COR) + recalage multi-têtes ; régénération des cartes de correction.[1]"
+            },
+            {
+              "title": "Trimestriel",
+              "text": "Fantôme SPECT de Jaszczak (⁹⁹ᵐTc, collimateur basse énergie) : résolution, contraste, uniformité tomographique.[1]"
+            },
+            {
+              "title": "Annuel / recette",
+              "text": "Batterie NEMA complète par le physicien : flood 30 M coups, résolution/linéarité/énergie/sensibilité quantitatives, SPECT/CT, lasers, dosimétrie.[1]"
+            },
+            {
+              "title": "Post-intervention",
+              "text": "Re-tester le sous-ensemble concerné après réparation PMT/électronique, régénération de cartes, transport ou mise à jour logicielle — avant toute reprise clinique.[1]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — omettre le CQ post-intervention",
+              "text": "Le calendrier fixe (quotidien→annuel) ne couvre PAS les événements exceptionnels. Une caméra dont on vient de remplacer un PMT peut afficher un flood quotidien correct la veille et une non-uniformité majeure après intervention. Toute maintenance corrective sur la chaîne de détection, tout transport et toute régénération de carte de correction imposent un re-test ciblé immédiat, hors calendrier.[1]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — un seul flood quotidien, mais le bon",
+              "text": "L'uniformité quotidienne peut être intrinsèque OU extrinsèque, mais seule l'**extrinsèque au ⁵⁷Co** (collimateur en place) teste l'ensemble détecteur + collimateur et démasque un collimateur endommagé.[1] Beaucoup de services privilégient donc l'extrinsèque quotidienne, en réservant l'intrinsèque haute statistique à la fréquence hebdomadaire."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma d'une gamma-caméra (collimateur, cristal NaI(Tl), photomultiplicateurs, électronique de positionnement) illustrant les étages de la chaîne de détection surveillés par le programme de CQ quotidien à annuel.",
+            "caption": "Fig. 1 — Chaîne de détection de la gamma-caméra : chaque étage (collimateur, cristal, PMT, électronique) est surveillé à une fréquence adaptée à sa vitesse de dérive."
+          }
+        },
+        {
+          "title": "D3 - D3 - Maîtriser le CQ des technologies particulières : CZT, multi-détecteurs, systèmes dédiés et automatisés",
+          "text": "Le corpus NEMA/EANM/AAPM a été bâti autour de la caméra d'Anger classique — cristal continu de **NaI(Tl)** couplé à un réseau de tubes photomultiplicateurs (**PMT**, ~5 cm de diamètre, jusqu'à ~110 par détecteur) — et de sa logique de positionnement par barycentre.[5] Les technologies modernes s'écartent de ce modèle, et le CQ doit s'adapter sans perdre les invariants (uniformité, énergie, sensibilité, COR).\n\n**▸ Détecteurs semi-conducteurs CZT.** Les caméras au **tellurure de cadmium-zinc (CZT)** convertissent directement le photon γ en charge électrique, sans étage lumière→PMT. Conséquences pour le CQ :\n- **Résolution en énergie nettement supérieure** — le CZT résout mieux le photopic, avec une réponse énergétique améliorée par rapport aux 9–11 % typiques du NaI(Tl) à 140 keV.[5] Le peaking et le contrôle de la fenêtre restent essentiels, mais la marge de discrimination diffusé/photopic est plus favorable.\n- **Uniformité par pixels/modules** — l'image se compose de milliers d'éléments détecteurs discrets. La non-uniformité ne se manifeste plus comme un dégradé continu mais comme des **défauts de pixels/modules** (pixels morts, modules mal calibrés). La correction repose sur des cartes par pixel, dont la stabilité doit être surveillée.\n- **Systèmes cardiaques dédiés.** Les caméras cardiaques CZT (ex. type Discovery NM 530c) ont une géométrie fixe multi-piniholes centrée sur le cœur : le CQ d'uniformité/sensibilité y est spécifique du champ de vue restreint. La performance diagnostique attendue de ces systèmes en TEMP de perfusion myocardique est élevée (méta-analyse : **Se 83,5 %, Sp 75,8 %**, AUC 0,858),[30] mais cette performance suppose un CQ rigoureux — un défaut d'uniformité ou de calibration dégrade directement la spécificité.\n\n**▸ Systèmes multi-détecteurs (double/triple tête).** Sur une caméra à plusieurs têtes, deux exigences s'ajoutent au CQ mono-tête :\n- **Appariement inter-détecteurs de la sensibilité** — la sensibilité de chaque tête ne doit pas différer de **plus de 5 %** (par radionucléide et collimateur) sous peine d'artefacts en TEMP.[1]\n- **Enregistrement multi-têtes (MHR) et head tilt** — le MHR est mesuré conjointement au COR. L'**inclinaison de tête (head tilt)**, non corrigeable par calibration, ne se voit qu'au visionnage ciné des projections (oscillation axiale sinusoïdale) et doit être traquée spécifiquement.[1] Chaque tête possède son propre COR : toutes doivent être alignées entre elles ET sur l'axe mécanique.\n\n**▸ Systèmes hybrides SPECT/CT.** Le CQ s'étend à l'**alignement du portique**, au **co-enregistrement spatial SPECT/CT**, à l'exactitude de la **correction d'atténuation** (utilisant la carte CT) et de la **correction de diffusion**.[1] Un mauvais co-recalage SPECT/CT translate les cartes d'atténuation et crée des artefacts quantitatifs — critique pour toute quantification (SUV, dosimétrie ¹⁷⁷Lu).\n\n**▸ Systèmes automatisés et outils standardisés.** L'analyse quantitative de l'uniformité, longtemps propriétaire (protocoles vendeurs non transparents), tend à se standardiser. L'**IAEA-NMQC Toolkit** (plugins ImageJ) permet une analyse **indépendante du constructeur** de l'uniformité tomographique et des autres tests SPECT.[19] Cet outil est recommandé lorsque l'on veut comparer des systèmes de marques différentes ou vérifier de façon neutre les valeurs affichées par le logiciel embarqué — car le calcul « boîte noire » du vendeur peut différer de la définition NEMA stricte.[10]\n\n| Technologie | Spécificité CQ | Invariant à préserver |\n|---|---|---|\n| **CZT** | Cartes par pixel/module ; pixels morts ; énergie fine | Uniformité, peaking, sensibilité [5,30] |\n| **Multi-tête** | Appariement sensibilité **< 5 %** ; MHR ; head tilt | COR aligné sur toutes les têtes [1] |\n| **Cardiaque dédié (multi-pinhole)** | Champ restreint ; calibration géométrique fixe | Uniformité/sensibilité du champ utile [30] |\n| **SPECT/CT** | Co-recalage SPECT/CT ; correction atténuation/diffusion | Exactitude quantitative [1] |\n| **Analyse standardisée** | IAEA-NMQC Toolkit (ImageJ), indépendant du vendeur | Conformité à la définition NEMA [10,19] |",
+          "stats": [
+            {
+              "value": "< 5 %",
+              "label": "Écart de sensibilité inter-détecteurs toléré [1]"
+            },
+            {
+              "value": "± 1 %",
+              "label": "Uniformité système visée en TEMP (anti-anneau) [1]"
+            },
+            {
+              "value": "83,5 % / 75,8 %",
+              "label": "Se/Sp TEMP CZT en perfusion myocardique [30]"
+            },
+            {
+              "value": "ImageJ",
+              "label": "IAEA-NMQC Toolkit — analyse indépendante du vendeur [19]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — CZT ne dispense pas d'uniformité",
+              "text": "La meilleure résolution en énergie du CZT ne supprime pas le besoin de contrôle d'uniformité : elle en déplace la nature. On surveille des **pixels morts et des modules décalibrés** plutôt qu'un dégradé continu. La carte de correction par pixel doit rester stable, sous peine d'artefacts fixes reproduits sur toutes les acquisitions.[5]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — croire l'analyse « vendeur » = NEMA",
+              "text": "Le calcul d'uniformité affiché par le logiciel embarqué peut s'écarter de la définition NEMA stricte (compression 64×64, filtre 9 points, UFOV/CFOV).[10] Pour un audit défendable ou une comparaison inter-systèmes, recalculez avec un outil neutre type IAEA-NMQC Toolkit plutôt que de vous fier au chiffre propriétaire.[19]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — multi-têtes : la sensibilité doit s'apparier",
+              "text": "Un écart de sensibilité inter-détecteurs > 5 % suffit à créer des artefacts en TEMP reconstruite.[1] Sur les systèmes double/triple tête, vérifier l'appariement de sensibilité (par radionucléide et collimateur) fait partie intégrante du CQ, au même titre que le COR."
+            }
+          ]
+        },
+        {
+          "title": "D4 - D4 - Maîtriser les pièges, idées reçues et bonnes pratiques du CQ au quotidien",
+          "text": "Au-delà des procédures, le CQ efficace repose sur la compréhension des **mécanismes d'erreur** et sur quelques principes de terrain. Voici les pièges récurrents, les idées reçues à combattre, et les bonnes pratiques qui distinguent un programme de CQ défendable d'un rituel vide de sens.\n\n**▸ L'uniformité est le test-roi — et il faut savoir pourquoi.** L'uniformité est le test le plus **fréquent** (quotidien) et le plus **sensible** : il intègre la santé de toute la chaîne (peaking, PMT, cristal, électronique de correction, collimateur en extrinsèque). Deux indices coexistent et ne mesurent pas la même chose :\n- **Uniformité intégrale (IU)** = 100 × (Max − Min)/(Max + Min) sur le champ — capte les gradients **globaux**.[10,22]\n- **Uniformité différentielle (DU)** = pire contraste sur une fenêtre glissante de ~5 pixels contigus — capte les **discontinuités locales** brutales.[9]\nUne caméra peut avoir une IU acceptable et une DU dégradée (défaut localisé) : les deux doivent être suivis. Valeurs attendues sur caméras modernes après correction : **IU 2–3 %, DU 1,5–2 %** ; en pratique de terrain, IPEM 86 rapporte souvent **IU/DU entre 4 et 7 %** sur systèmes réels.[10] Seuil d'action pratique : toute variation d'uniformité **> 5 %** impose une action corrective, toute variation de linéarité **> 10 %** une investigation.[22]\n\n**▸ Le maillon tomographique : COR et uniformité système.** C'est ici que se concentrent les artefacts les plus insidieux, car ils ne sont visibles **que sur l'image reconstruite**, jamais sur le flood planaire brut.\n- **Défaut d'uniformité → artefact en anneau (bull's-eye).** Une non-uniformité **aussi faible que 3 %** peut générer un artefact en anneau centré sur l'axe de rotation en TEMP.[17] D'où l'exigence d'une uniformité **système de l'ordre de ±1 %** pour la tomographie, bien plus stricte que le seuil planaire de 5 %.[1] C'est la raison d'être des floods haute statistique (30 M coups) servant à régénérer les cartes de correction.\n- **Erreur de COR → perte de résolution et de contraste.** Un décalage de seulement **0,5 pixel** (matrice 128×128, soit ≈ **1,5 mm**) entraîne **~30 % de perte de résolution spatiale et ~40 % de perte de contraste** dans l'image reconstruite.[6,24] L'aspect classique est un flou ou un dédoublement en « tuning-fork ». Le COR se contrôle par acquisition 360° d'une source décalée, décrivant une **sinusoïde** dans le sinogramme.[1]\n\n**▸ Idées reçues à combattre.**\n- *« Le flood quotidien intrinsèque suffit. »* Faux : l'intrinsèque ne voit pas le collimateur. Un collimateur endommagé (bandes/zones froides) n'apparaît qu'à l'uniformité **extrinsèque**.[1]\n- *« Une bonne uniformité planaire garantit une bonne TEMP. »* Faux : le seuil planaire (5 %) est dix fois plus permissif que l'exigence tomographique (±1 %) ; une caméra « bonne » en planaire peut produire des anneaux en TEMP.[1,17]\n- *« Le peaking est un détail. »* Faux : un mauvais centrage de la fenêtre 140 keV dégrade simultanément uniformité, sensibilité et résolution — c'est une cause fréquente et sournoise de non-conformité.\n\n**▸ Les artefacts et leurs causes, en un coup d'œil.**\n\n| Artefact / anomalie | Cause | Comment le reconnaître / corriger |\n|---|---|---|\n| **Anneau (bull's-eye)** en TEMP | Non-uniformité ≥ 3 % sur l'axe de rotation [17] | Régénérer la carte d'uniformité haute statistique (30 M) [1] |\n| **Flou / « tuning-fork »** | Erreur de COR ≥ 0,5 pixel [24] | Refaire le COR ; vérifier alignement mécanique [1] |\n| **Bandes / zones froides** | Défaut de collimateur | Uniformité **extrinsèque** (invisible en intrinsèque) [1] |\n| **Points chauds** | Contamination source/détecteur | Test de fond quotidien ; décontaminer [22] |\n| **Dégradation à haut débit** | Empilement (pile-up) > 75 000 cps [1] | Limiter l'activité ; contrôler le temps mort (4–8 µs) [5] |\n| **Fixation thyroïde/estomac parasites** | (Sources de test) iode/impureté | Vérifier pureté de la source de test |\n\n**▸ Bonnes pratiques de terrain.**\n1. **Ne jamais contaminer le cristal.** Intercaler carton/acrylique **2–3 mm** entre une source non scellée et le cristal ; en cas de contamination > 2 % du taux attendu, stopper et décontaminer.[1]\n2. **Laisser décroître les sources.** Une source de ⁹⁹ᵐTc contaminée par du ⁹⁹Mo génère des non-uniformités par pénétration septale à haute énergie ; attendre la décroissance.[1]\n3. **Tracer et tendre.** Le CQ n'a de sens que suivi dans le temps : les valeurs (IU, DU, COR, sensibilité) doivent être portées sur des cartes de contrôle pour détecter la **dérive** avant le franchissement du seuil — une IU qui passe de 2 % à 4 % en un mois annonce une panne, même en restant sous le seuil de 5 %.[12]\n4. **Respecter la géométrie NEMA.** Source ponctuelle intrinsèque à ≥ **5× la plus grande dimension du cristal** (≈ 60 cm), activité faible (≤ 3,7 MBq pour l'uniformité intrinsèque) pour éviter le temps mort.[1] Un flood « raté » par mauvaise géométrie fait plus de mal qu'un flood non fait, car il donne une fausse assurance.",
+          "stats": [
+            {
+              "value": "0,5 pixel",
+              "label": "Erreur COR = −30 % résolution / −40 % contraste [6,24]"
+            },
+            {
+              "value": "3 %",
+              "label": "Non-uniformité suffisant à créer un anneau en TEMP [17]"
+            },
+            {
+              "value": "> 5 %",
+              "label": "Seuil d'action sur variation d'uniformité [22]"
+            },
+            {
+              "value": "4–8 µs",
+              "label": "Temps mort clinique typique (⁹⁹ᵐTc) [5]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège majeur — l'écart planaire ↔ tomographique",
+              "text": "Le seuil d'uniformité planaire (IU < 5 %) est **dix fois plus permissif** que l'exigence tomographique (± 1 %).[1,17] Une caméra parfaitement conforme au flood quotidien peut produire des artefacts en anneau en TEMP dès 3 % de non-uniformité.[17] Ne jamais extrapoler la qualité TEMP à partir du seul contrôle planaire — la régénération périodique des cartes de correction haute statistique est non négociable."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — surveiller la tendance, pas seulement le seuil",
+              "text": "Un test de CQ isolé « dans les clous » masque les dérives lentes. Portez IU, DU, COR et sensibilité sur des cartes de contrôle : une valeur qui migre régulièrement vers le seuil (ex. IU 2 % → 4 % en quelques semaines) signale une panne imminente d'un PMT ou de l'électronique, permettant une maintenance préventive avant l'échec clinique.[12]"
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — protéger le cristal, laisser décroître les sources",
+              "text": "Ne jamais poser une source non scellée au contact du cristal : intercaler carton/acrylique 2–3 mm ; contamination > 2 % du taux attendu → arrêt.[1] Une source de ⁹⁹ᵐTc chargée en ⁹⁹Mo produit des non-uniformités par pénétration septale haute énergie → attendre la décroissance avant usage.[1]"
+            }
+          ],
+          "figure": {
+            "figureRef": "BULLSEYE_17",
+            "alt": "Représentation en cible (bull's-eye) illustrant l'artefact en anneau généré en TEMP reconstruite par une non-uniformité de champ, centré sur l'axe de rotation.",
+            "caption": "Fig. 2 — L'artefact en anneau (bull's-eye) : une non-uniformité de seulement 3 % se traduit, après reconstruction TEMP, par un anneau centré sur l'axe de rotation, invisible sur le flood planaire."
+          }
+        },
+        {
+          "title": "E1 - E1 - Synthèse : la matrice test × fréquence × grandeur × tolérance × artefact évité",
+          "text": "Le **contrôle qualité (CQ)** d'une gamma-caméra n'est ni un radiopharmaceutique ni un examen : c'est une **procédure d'assurance qualité instrumentale**. Son but tient en une phrase : garantir que ce que montre l'image « a son origine dans le patient et non dans la caméra elle-même » [3]. Toute l'architecture du programme se lit sur une matrice à cinq entrées — quel test, à quelle fréquence, quelle grandeur physique, quelle tolérance, et surtout quel artefact clinique il empêche. Le référentiel méthodologique est **NEMA NU 1** (éditions 2007, 2012, 2018, 2023) pour définir et mesurer les grandeurs [4,16] ; le calendrier de routine suit les recommandations de l'**EANM 2010** [7] et du **EANM Technologist Guide 2017** [2] ; la recette (acceptance) et l'audit physique annuel relèvent de l'**AAPM Report No. 177 / TG-177** [1] ; l'**IAEA** fournit l'atlas d'artefacts et le socle SPECT [3,11,17].\n\n### La matrice de référence\n\n| Test | Fréquence | Grandeur mesurée | Tolérance | Artefact évité |\n|---|---|---|---|---|\n| **Uniformité** (flood intrinsèque OU extrinsèque ⁵⁷Co) | Quotidienne [2,7] | IU intégrale = 100 × (Max − Min)/(Max + Min) sur UFOV et CFOV, matrice compressée 64×64 [1] | **IU < 5 %** pour un flood de **5 M coups** [1] ; cible pratique **< 3 %** [10] ; **±1 %** requis pour la TEMP [17] | Artefact en **anneau (bull's-eye)** centré sur l'axe de rotation — un défaut de seulement **3 %** suffit à le rendre visible en tomographie [17] |\n| **Résolution spatiale + linéarité** (fantôme à barres / à fentes) | Hebdomadaire (visuel) ; quantitative à la recette et à l'annuel [1,7,22] | **FWHM** de la LSF (mm) ; non-linéarité (mm) ; **FWHM ≈ 1,6 × plus petite barre visible** [1] | Non-linéarité **< 1 mm** [1] ; ≥ **5 M coups** (barres ≥ 15 M) [1] | Distorsion géométrique, flou, dégradation de la détectabilité lésionnelle |\n| **Résolution en énergie** (photopic 140 keV du ⁹⁹ᵐTc) | Peaking **quotidien** ; FWHM à la recette et à l'annuel [1,2] | FWHM du photopic en **% de 140 keV** [1] | **9–11 %** typique (systèmes récents 7,4–8,8 %) [5,15] | Dérive PMT/cristal, perte de sensibilité et non-uniformité par mauvais fenêtrage |\n| **Sensibilité** planaire | Relative quotidienne ; quantitative annuelle [7] | Comptage par unité d'activité (cps/MBq) [1] | Écart inter-détecteurs **≤ 5 %** [1] | Déséquilibre inter-têtes, quantification faussée |\n| **Centre de rotation (COR)** | Hebdomadaire à mensuelle selon le constructeur [1,7] | Écart AOR ↔ colonne de pixels centrale des projections [1] | **< 0,5 pixel** (erreur **< 1 pixel**, matrice 128×128) [6] | En « diapason » (tuning-fork), **−30 % de résolution et −40 % de contraste** pour un décalage de 0,5 pixel [6] |\n| **Uniformité tomographique / recette NEMA** | Annuelle et à l'installation [1] | Flood haute statistique **30 M coups** [1] | IU baseline théorique **1,6 %** à 30 M coups [1] | Artefacts en anneau, dérive globale non détectée en routine |\n\nLa colonne « artefact évité » est le fil conducteur : chaque test n'existe que parce qu'un défaut mécanique ou électronique se traduit, en clinique, par une image trompeuse. L'**uniformité** est simultanément le test le plus **sensible** et le plus **fréquent** — un défaut d'uniformité de quelques pour cent, invisible en planaire, devient un anneau bien visible après reconstruction tomographique [17]. Le **COR** est le test-clé **spécifique de la TEMP (tomographie d'émission monophotonique, SPECT)** : il vérifie l'alignement entre l'axe mécanique de rotation (AOR) et l'axe électronique des projections [1,6].\n\n### Sources de test — le vocabulaire « radiopharmaceutique » revisité\n\nAucune activité n'est administrée à un patient : les « sources » du CQ sont des **sources de test**. La **source ponctuelle de ⁹⁹ᵐTc** sert aux tests intrinsèques (sans collimateur), placée à une distance ≥ **5 × la plus grande dimension du cristal**, soit ≥ **60 cm** en pratique, avec une activité **≤ 3,7 MBq (100 µCi)** pour l'uniformité intrinsèque [1]. La **nappe plane scellée de ⁵⁷Co** (émission **122 keV**, très proche des 140 keV du ⁹⁹ᵐTc, période **≈ 271–272 jours**) sert au flood extrinsèque quotidien, testant d'un seul geste le détecteur ET le collimateur [2,22]. Le fenêtrage se fait sur une **fenêtre de 20 % centrée sur 140 keV** [22]. Les floods de routine cumulent **5 à 15 M coups** selon qu'ils sont extrinsèques (5 M) ou intrinsèques (10 M) [1].",
+          "stats": [
+            {
+              "value": "< 5 %",
+              "label": "IU sur l'UFOV pour un flood de 5 M coups (AAPM TG-177) [1]"
+            },
+            {
+              "value": "0,5 pixel",
+              "label": "Décalage COR = −30 % résolution / −40 % contraste [6]"
+            },
+            {
+              "value": "30 M",
+              "label": "Coups du flood de recette/annuel NEMA (baseline IU 1,6 %) [1]"
+            },
+            {
+              "value": "122 keV",
+              "label": "Émission du ⁵⁷Co, source flood quotidienne (T½ ≈ 271 j) [22]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — l'uniformité extrinsèque voit ce que l'intrinsèque ignore",
+              "text": "Un **défaut de collimateur** (septa endommagés, trous bouchés) n'apparaît PAS sur le flood intrinsèque, réalisé sans collimateur. Seul le flood **extrinsèque au ⁵⁷Co**, collimateur en place, le révèle sous forme de bandes ou de zones froides [1]. C'est pourquoi le CQ quotidien de routine privilégie souvent le flood extrinsèque : il teste la chaîne complète détecteur + collimateur, celle qui sert réellement en clinique."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi ±1 % en TEMP alors que <5 % suffit en planaire",
+              "text": "Une non-uniformité tolérable en imagerie planaire devient catastrophique en TEMP : la reconstruction filtrée rétroprojette le défaut sur **toutes** les projections angulaires, qui se somment en un **anneau** centré sur l'axe de rotation. Un défaut de **3 %** suffit à générer un anneau visible [17]. D'où l'exigence d'une uniformité système de l'ordre de **±1 %** avant toute acquisition tomographique, obtenue par une carte de correction d'uniformité à haute statistique."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma de la chaîne de détection d'une gamma-caméra : collimateur, cristal NaI(Tl), guide de lumière, réseau de tubes photomultiplicateurs et électronique de positionnement (logique d'Anger) et d'énergie, avec les grandeurs de contrôle qualité associées (uniformité, résolution, linéarité, énergie)."
+          }
+        },
+        {
+          "title": "E2 - E2 - Aller plus loin : quantification, automatisation, IA et évolution des standards de CQ",
+          "text": "Le CQ n'est plus seulement une garantie de qualité d'image : il est devenu la **condition de la quantification**. La montée de la TEMP quantitative (Bq/mL, indices dédiés) et de la **dosimétrie de radiothérapie interne vectorisée** (mesures de ⁹⁹ᵐTc et de ¹⁷⁷Lu) rend l'étalonnage de sensibilité et l'uniformité aussi critiques que la calibration SUV l'est en TEP [1]. Un artefact d'uniformité ou de COR ne dégrade pas qu'une image : il biaise un chiffre qui pilotera une décision thérapeutique.\n\n### De l'inspection visuelle à l'analyse quantitative automatisée\n\nHistoriquement, la résolution et la linéarité se lisaient « à l'œil » sur un fantôme à barres, cotées de façon semi-quantitative (non-linéarité « non observable / juste perceptible < 1 mm / significative > 1 mm ») [1]. La tendance de fond est la **quantification objective et reproductible**, indépendante de l'opérateur et du protocole propriétaire du constructeur. L'outil de référence en accès libre est l'**IAEA-NMQC Toolkit** (plug-ins ImageJ) qui standardise l'analyse de l'uniformité tomographique et des autres tests SPECT [19]. Cette approche répond à un constat documenté : les protocoles spécifiques aux constructeurs et les fenêtres d'analyse (UFOV, CFOV = **75 % de l'UFOV**) varient d'un système à l'autre, si bien qu'une même image peut donner des indices d'uniformité différents selon le logiciel [10].\n\n| Grandeur | Formule / définition | Sensibilité clinique |\n|---|---|---|\n| **Uniformité intégrale (IU)** | 100 × (Max − Min)/(Max + Min) sur le champ [22] | Détecte les gradients globaux ; test le plus fréquent |\n| **Uniformité différentielle (DU)** | Pire contraste sur une fenêtre glissante de ~5 pixels contigus [1] | La plus sensible aux **dégradés locaux brusques** (défaut de PMT) |\n| **FWHM / FWTM** | Largeur à mi-hauteur / au dixième de la LSF (mm) [1] | La FWTM révèle **pénétration septale et diffusion** mieux que la FWHM |\n| **Linéarité différentielle / absolue** | Écart-type / déplacement max à la droite de régression (mm) [1] | Distorsion géométrique, base des cartes de correction |\n\n### Chaîne de corrections et charge statistique\n\nLes caméras modernes appliquent en temps réel trois cartes de correction — **énergie**, **linéarité**, **uniformité** — construites à haute statistique et vérifiées périodiquement [2]. Le CQ mesure la **performance résiduelle après correction** : une IU de routine typique se situe autour de **2–4 %** et une DU **< 3 %** sur les systèmes corrigés [10,13], alors que les systèmes réels non idéaux affichent souvent **4–7 %** (référentiel IPEM 86) [10]. La barrière statistique est incontournable : le bruit poissonien impose une **IU plancher théorique** de **1,6 %** à 30 M coups, **2,7 %** à 10 M et **3,9 %** à 5 M (matrice 64×64) [1]. Exiger mieux que ce plancher à basse statistique est physiquement absurde — un piège classique de lecture des cartes de CQ.\n\n### Évolution des standards et rôle émergent de l'IA\n\nLa succession **NEMA NU 1 2007 → 2012 → 2018 → 2023** accompagne l'arrivée des détecteurs **semi-conducteurs CZT** (cadmium-zinc-tellure), dont la résolution en énergie (**7,4–8,8 %**) surpasse nettement les caméras NaI(Tl) classiques [15]. En clinique, cette meilleure résolution énergétique se traduit par une TEMP de perfusion myocardique (MPI) plus performante : les caméras CZT dédiées atteignent une **sensibilité de 83,5 %** et une **spécificité de 75,8 %** pour la coronaropathie [30] — performances qui **supposent** un CQ irréprochable, car un artefact d'uniformité ou de COR dégrade directement la spécificité. L'automatisation logicielle (analyse quantitative, tendances longitudinales, alertes de dérive avant franchissement du seuil d'action) et les approches d'apprentissage constituent la frontière actuelle : détecter la dérive **avant** qu'elle ne devienne un artefact clinique, et fiabiliser une quantification désormais indispensable à la théranostique.",
+          "steps": [
+            {
+              "title": "1. Peaking & fenêtrage (quotidien)",
+              "text": "Centrage du photopic sur **140 keV**, fenêtre **20 %** ; toute dérive de la FWHM du photopic trahit un problème PMT/cristal [1,2,22]."
+            },
+            {
+              "title": "2. Flood & carte d'uniformité",
+              "text": "Flood extrinsèque ⁵⁷Co (5 M coups) pour le contrôle quotidien ; carte de correction d'uniformité à haute statistique (≥ 30 M) refaite périodiquement [1,2]."
+            },
+            {
+              "title": "3. Résolution & linéarité (hebdomadaire)",
+              "text": "Fantôme à barres (≥ 15 M coups) : FWHM ≈ 1,6 × plus petite barre visible ; non-linéarité < 1 mm [1]."
+            },
+            {
+              "title": "4. COR & recalage multi-têtes (hebdo à mensuel)",
+              "text": "Acquisition 360° de sources décalées ; vérification de l'alignement AOR ↔ colonne centrale et du recalage inter-têtes (MHR) [1,6]."
+            },
+            {
+              "title": "5. Fantôme SPECT & audit annuel",
+              "text": "Fantôme de Jaszczak (trimestriel, approuvé ACR) puis batterie NEMA complète et flood 30 M coups à l'audit annuel et à la recette [1,22]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — la FWTM, sentinelle de la pénétration septale",
+              "text": "Deux caméras peuvent afficher la même **FWHM** tout en se comportant différemment en clinique : la **FWTM** (largeur au dixième de hauteur) capte les « pieds » de la fonction de dispersion, où se logent la **pénétration septale** du collimateur et le rayonnement diffusé [1]. Un rapport FWTM/FWHM anormalement élevé signale un collimateur inadapté à l'énergie du radionucléide — typiquement un LEHR utilisé avec un isotope de haute énergie."
+            },
+            {
+              "type": "info",
+              "title": "Repères de performance d'une caméra moderne (⁹⁹ᵐTc, 140 keV)",
+              "text": "Résolution spatiale **intrinsèque** ~**2,9–4,5 mm FWHM** (meilleures < 3 mm) [5] ; résolution **système** LEHR à 10 cm ~**7–9 mm FWHM** [14] ; résolution en énergie **9–11 %** [5] ; efficacité de détection au photopic **70–90 %** selon l'épaisseur du cristal [5] ; temps mort clinique **4–8 µs**, perte de comptage de 20 % vers **4 × 10⁴ cps** [5]."
+            }
+          ]
+        },
+        {
+          "title": "E3 - E3 - Auto-évaluation : quiz et cas de raisonnement métrologique",
+          "text": "Cette section fixe les repères métrologiques par le raisonnement. Les questions couvrent les grandeurs, les seuils, les fréquences et surtout la **traduction clinique** des défauts — le cœur du métier de physicien et de nucléariste. Chaque réponse est justifiée et sourcée.\n\n### QCM — grandeurs, seuils et fréquences\n\n**Q1.** Quel test de CQ est à la fois le plus sensible et le plus fréquent (quotidien) ?\nA) La résolution en énergie · B) L'**uniformité** · C) Le COR · D) La linéarité spatiale\n**Réponse : B.** L'uniformité est réalisée quotidiennement avant tout usage clinique et détecte le plus précocement les dérives ; **IU < 5 %** exigée à 5 M coups, cible pratique **< 3 %** [1,10].\n\n**Q2.** Un décalage du centre de rotation de **0,5 pixel** (matrice 128×128) entraîne approximativement :\nA) −5 % de résolution · B) −30 % de résolution et −40 % de contraste · C) Aucun effet mesurable · D) Une simple rotation de l'image\n**Réponse : B.** Un décalage de 0,5 pixel (~1,5 mm) dégrade la résolution reconstruite d'environ **30 %** et le contraste d'environ **40 %** [6]. D'où une tolérance **< 0,5 pixel**.\n\n**Q3.** Quelle source est utilisée pour le flood extrinsèque quotidien, et pourquoi ?\nA) ⁹⁹ᵐTc en source ponctuelle · B) ⁶⁷Ga · C) **Nappe scellée de ⁵⁷Co** · D) ¹³¹I\n**Réponse : C.** Le ⁵⁷Co émet à **122 keV** (proche des 140 keV du ⁹⁹ᵐTc), a une période longue (**≈ 271 j**) et se présente en nappe scellée commode — idéal pour un flood extrinsèque quotidien testant détecteur + collimateur [2,22].\n\n**Q4.** Quel est le nombre de coups d'un flood de **recette / audit annuel** selon NEMA NU 1-2012 ?\nA) 5 millions · B) 10 millions · C) **30 millions** · D) 1 million\n**Réponse : C.** **30 M coups** (baseline IU théorique **1,6 %**) ; la routine se contente de 10 M (intrinsèque) ou 5 M (extrinsèque) [1].\n\n**Q5.** Un défaut de collimateur (septa endommagés) est détecté par :\nA) Le flood intrinsèque · B) Le flood **extrinsèque** · C) Le peaking · D) Le test de linéarité\n**Réponse : B.** Le flood intrinsèque, réalisé sans collimateur, ne peut PAS voir un défaut de collimateur ; seul le flood extrinsèque (collimateur en place) le révèle [1].\n\n**Q6.** Quelle est la tolérance de non-linéarité spatiale ?\nA) < 5 mm · B) < 3 mm · C) **< 1 mm** · D) < 0,1 mm\n**Réponse : C.** Toute non-linéarité doit rester **< 1 mm** [1].\n\n**Q7.** L'écart de sensibilité admissible entre les deux détecteurs d'une caméra double tête est de :\nA) ≤ 1 % · B) **≤ 5 %** · C) ≤ 10 % · D) ≤ 20 %\n**Réponse : B.** La sensibilité de chaque détecteur ne doit pas différer de plus de **5 %** (par radionucléide/collimateur) [1].\n\n### Cas de raisonnement métrologique\n\n**Cas 1 — l'anneau tomographique.** Une TEMP osseuse montre un **artefact en anneau** concentrique centré au milieu du champ, absent sur les images planaires du même patient. Le CQ d'uniformité quotidien était « limite » à **3,5 %**.\n*Raisonnement :* l'anneau est la signature d'une **non-uniformité rétroprojetée** sur toutes les projections angulaires. Un défaut de seulement **3 %** suffit à le rendre visible en tomographie, alors qu'il passe inaperçu en planaire [17]. **Conduite :** refaire une **carte de correction d'uniformité** à haute statistique ; vérifier le peaking et l'intégrité des PMT. Objectif d'uniformité système **±1 %** avant toute nouvelle TEMP [17].\n\n**Cas 2 — le dédoublement en diapason.** Sur un fantôme SPECT, les structures fines apparaissent **dédoublées / floues** de façon symétrique (aspect « tuning-fork »), avec chute de contraste.\n*Raisonnement :* signature d'une **erreur de COR** : l'axe électronique des projections n'est plus aligné sur l'axe mécanique de rotation. Un décalage de **0,5 pixel** produit précisément cette perte de résolution (~30 %) et de contraste (~40 %) [6]. **Conduite :** relancer l'acquisition COR (sources décalées, 360°), recalibrer, vérifier le recalage multi-têtes (MHR) [1].\n\n**Cas 3 — le faux négatif après maintenance.** Après remplacement d'un PMT, la résolution en énergie mesurée passe de 10 % à **13 %** de FWHM.\n*Raisonnement :* une FWHM du photopic qui augmente traduit une **dégradation de la résolution en énergie**, souvent d'origine PMT/cristal ou de mauvais couplage optique [1]. La conséquence est une mauvaise discrimination énergétique → non-uniformité et perte de sensibilité. **Conduite :** re-tuning des PMT, vérification du gain, nouveau peaking et nouvelle carte d'énergie avant remise en service clinique.\n\n**Cas 4 — le point chaud fixe.** Le flood quotidien révèle un **point chaud** reproductible au même endroit sur plusieurs images.\n*Raisonnement :* un point chaud fixe et reproductible évoque une **contamination** de la source ou du cristal, à distinguer d'un défaut électronique (le test de fond quotidien sert précisément à cela) [22]. **Conduite :** décontamination, contrôle du fond ; ne jamais placer une source non scellée au contact direct du cristal (intercaler acrylique/carton **2–3 mm**) [1].",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège de QCM — ne pas confondre les deux tolérances d'uniformité",
+              "text": "Deux seuils cohabitent et sont volontiers permutés dans les QCM : **IU < 5 %** est le critère d'acceptation d'un flood **planaire** de 5 M coups (AAPM TG-177) [1] ; **±1 %** est l'exigence d'uniformité **système avant TEMP** [17]. Le seuil planaire est bien plus permissif que le seuil tomographique, parce que la reconstruction amplifie le moindre défaut. Répondre « 1 % » pour un flood planaire, ou « 5 % » pour la TEMP, est l'erreur classique."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi la source ponctuelle est placée si loin",
+              "text": "En test intrinsèque, la source ponctuelle de ⁹⁹ᵐTc est placée à ≥ **5 × la plus grande dimension du cristal** (≥ 60 cm en pratique) [1] : à cette distance, l'irradiation du détecteur est quasi parallèle et l'écart de trajet géométrique entre le centre et les bords du champ devient négligeable (< 1 %), condition nécessaire pour que la non-uniformité mesurée reflète la caméra et non la géométrie d'irradiation."
+            }
+          ]
+        },
+        {
+          "title": "E4 - E4 - Références, sources vérifiées et liens NucleAtlas",
+          "text": "Toutes les valeurs chiffrées de cet article sont sourcées par les références ci-dessous. Le socle réglementaire et méthodologique repose sur quatre piliers complémentaires : **NEMA NU 1** (méthodes de mesure et de rapport des performances) [4,16], l'**EANM** (fréquences de routine et guide technologiste) [2,7], l'**AAPM TG-177** (tests d'acceptation et audit physique annuel) [1], et l'**IAEA** (assurance qualité SPECT, atlas d'artefacts, outils d'analyse) [3,11,17,19]. Dernière mise à jour : **2026-07**.\n\n### Référentiels et recommandations (socle)\n\n- **[1]** AAPM Report No. 177 — *Acceptance Testing and Annual Physics Survey Recommendations for Gamma Camera, SPECT, and SPECT/CT Systems* (Task Group 177, 2019). *Référence des tolérances, tests de recette et audit annuel.*\n- **[2]** EANM Technologist Guide — *Quality Control of Nuclear Medicine Instrumentation and Protocol Standardisation* (2017). *Calendrier de routine quotidien/hebdomadaire.*\n- **[3]** IAEA Human Health Campus — *Gamma camera (Quality Assurance in Nuclear Medicine)*. *Objectif du CQ.*\n- **[4]** NEMA Standards Publication NU 1-2018 — *Performance Measurements of Gamma Cameras* (Contents and Scope). *Définition normalisée des grandeurs.*\n- **[7]** Busemann Sokole E. et al. (EANM Physics Committee) — *Routine quality control recommendations for nuclear medicine instrumentation.* Eur J Nucl Med Mol Imaging 2010;37(3):662-671. *Fréquences de routine.*\n- **[16]** NEMA NU 1:2023 — *Performance Measurements of Gamma Cameras.* *Édition la plus récente du standard.*\n- **[17]** IAEA Human Health Series No. 6 — *Quality Assurance for SPECT Systems* (2009). *Uniformité tomographique, artefact en anneau (seuil 3 %).*\n\n### Grandeurs physiques et valeurs de performance\n\n- **[5]** Radiology Key — *The Gamma Camera: Performance Characteristics.* *Résolution intrinsèque, énergie, efficacité de détection, temps mort.*\n- **[10]** *Calculating Gamma Camera Uniformity Parameters: Beyond the Vendor-specific Protocol.* Indian J Nucl Med 2017;32(4):279-282 (PMC5672747). *IU/DU réels, variabilité des protocoles.*\n- **[13]** Elkamhawy A.A. et al. — *Intrinsic Uniformity and Relative Sensitivity Quality Control Tests for Single-Head Gamma Cameras.* J Nucl Med Technol 2000;28(4):252-256. *Valeurs typiques IU/DU.*\n- **[14]** *Comparison of gamma camera spatial resolution measurements (point/line source, Jaszczak phantom).* J Nucl Med 2006;47(suppl 1):554P. *Résolution système LEHR/LEAP à 10 cm, sensibilité.*\n- **[15]** *Performance evaluation of two quantitative gamma cameras using NEMA NU-1 2018 standards (Siemens Intevo).* J Nucl Med 2020;61(suppl 1):145. *Résolution en énergie des systèmes récents.*\n\n### Centre de rotation, artefacts et outils\n\n- **[6]** KCL eHealth Nuclear Medicine — *Quality Control: Gamma Cameras* (tolérance COR, référence IPEM Report 86). *Impact du décalage COR sur résolution/contraste.*\n- **[11]** IAEA — *Quality Control Atlas for Scintillation Camera Systems* (Busemann Sokole, 2003). *Atlas visuel des artefacts.*\n- **[19]** IAEA — *IAEA-NMQC Toolkit* (plug-ins ImageJ pour l'analyse SPECT). *Analyse quantitative standardisée.*\n- **[22]** *Nuclear Medicine Quality Assurance* — StatPearls (NBK576382). *Seuils d'action, ⁵⁷Co, fenêtrage, calendrier.*\n- **[24]** Blue P.W. — *Accuracy of Center of Rotation Determination for SPECT Imaging.* J Nucl Med Technol 1989;17(2):61-65. *Détermination du COR.*\n- **[26]** Zanzonico P. — *Routine Quality Control of Clinical Nuclear Medicine Instrumentation: A Brief Review.* J Nucl Med 2008;49(7):1114-1131. *Revue de synthèse du CQ.*\n\n### Application clinique (justifie l'exigence de CQ)\n\n- **[30]** *Diagnostic accuracy of Discovery NM 530c CZT SPECT for MPI in coronary artery disease: a systematic review and meta-analysis.* Int J Cardiovasc Imaging 2025;41(12):2283-2297. *Se 83,5 % / Sp 75,8 % — performances conditionnées par le CQ.*\n\n### Liens NucleAtlas\n\n- **Examen apparenté :** TEMP de perfusion myocardique (MPI) — bénéficiaire direct d'un CQ d'uniformité et de COR rigoureux.\n- **Examen apparenté :** Scintigraphie osseuse (⁹⁹ᵐTc-MDP) — imagerie planaire + TEMP, sensible aux artefacts en anneau.\n- **Examen apparenté :** TEMP/TDM — ajoute l'alignement du portique et le co-enregistrement spatial SPECT/CT au programme de CQ [1].\n- **Traceur (source de test) :** ⁹⁹ᵐTc — source ponctuelle des tests intrinsèques.\n- **Traceur (source de test) :** ⁵⁷Co — nappe scellée du flood extrinsèque quotidien.\n\n> **Note de portée.** Les rubriques du gabarit « examen » sans objet pour une procédure instrumentale (radiopharmaceutique administré, indications d'organe, préparation du patient, activités EANM adulte/pédiatrique, dosimétrie patient) ne s'appliquent pas ici ; elles sont remplacées par leurs équivalents pertinents — sources de test, tolérances, fréquences et sécurité de l'opérateur.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Cadre d'obligation réglementaire",
+              "text": "Le CQ n'est pas optionnel : l'accréditation (The Joint Commission, programmes **ACR**) impose une recette à l'installation et un **audit annuel de physique médicale** [1]. Le fantôme de **Jaszczak** est le fantôme SPECT approuvé par l'ACR pour l'accréditation (résolution, contraste, détectabilité, uniformité tomographique) [1]."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — intégrité de la source et du cristal",
+              "text": "Ne jamais placer une source non scellée au contact direct du cristal : intercaler un écran d'acrylique/carton de **2–3 mm** et stopper en cas de contamination du cristal dépassant ~2 % du taux attendu [1]. Laisser décroître les sources contaminées par du ⁹⁹Mo (photons de haute énergie → non-uniformités par pénétration septale) [1]."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
