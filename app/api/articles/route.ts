@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { unstable_cache } from 'next/cache';
 import { getAdminDb } from '@/lib/firebase-admin';
+import snapshotList from '@/lib/articles-snapshot-list.json';
 
 // Liste LÉGÈRE des articles pour les vues client (catégories, index, recherche,
 // favoris, cartes). Lue via l'Admin SDK côté serveur et MISE EN CACHE 1 h
@@ -72,7 +73,14 @@ export async function GET() {
       }
     );
   } catch (err) {
-    console.error('[api/articles] lecture de la liste impossible:', err);
-    return NextResponse.json({ error: 'Service momentanément indisponible.' }, { status: 503 });
+    // Firestore indisponible (typiquement quota gratuit de lectures épuisé — la
+    // base AI Studio est plafonnée au tier gratuit). On sert l'INSTANTANÉ
+    // STATIQUE du catalogue embarqué dans l'app pour que le site reste
+    // consultable (listes/recherche/cartes) au lieu de renvoyer une erreur.
+    console.error('[api/articles] Firestore indisponible → repli sur instantané statique:', err);
+    return NextResponse.json(
+      { articles: snapshotList, fallback: true },
+      { headers: { 'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=86400' } }
+    );
   }
 }
