@@ -1,14 +1,26 @@
 [
   {
     "severity": "minor",
-    "where": "Sections B2, C3, E1 — résolution transverse TEP « 3,59 / 4,08 / 5,32 mm FWHM à 1 / 10 / 20 cm (Discovery MI) » [26]",
-    "problem": "La source primaire (PMC9250480, Discovery MI 30 cm AFOV) rapporte une résolution transverse de 3,79 mm à 1 cm et 4,29 mm à 10 cm ; les valeurs citées (3,59/4,08/5,32) ne correspondent pas exactement à cette référence (probablement issues d'une autre colonne/génération de tableau). Discordance numérique mineure, pas une fabrication.",
-    "fix": "Recouper sur le tableau NEMA NU 2-2018 de PMC9250480 et corriger en 3,79/4,29 mm (1/10 cm) ou préciser la machine/colonne exacte si la valeur à 20 cm provient d'une autre source."
+    "where": "Sections A2/B2/C3 vs D3 — résolution en énergie NaI(Tl) à 140 keV",
+    "problem": "Incohérence interne mineure : la valeur est donnée « 9–11 % LMH » dans les sections A2, B2, C3 mais « 9–10 % LMH » dans la section D3. Les deux fourchettes sont attestées par la littérature (Prekeges, Radiology Key, AAPM), donc aucune n'est fausse, mais l'article devrait être homogène.",
+    "fix": "Harmoniser sur une seule fourchette (p. ex. « 9–11 % LMH à 140 keV », qui est la valeur de routine la plus citée), ou préciser « 9–10 % pour les meilleurs systèmes, jusqu'à ~11 % en routine »."
   },
   {
     "severity": "minor",
-    "where": "Source [54] NEMA NU 1-2018 contents/scope PDF — URL nema.org avec paramètre ?sfvrsn=d93985ea_1",
-    "problem": "Le standard NEMA NU 1-2018 et le domaine nema.org sont authentiques, mais l'URL exacte paramétrée (sfvrsn) n'a pas pu être confirmée directement (refus de connexion/anti-bot). Risque faible de lien périmé, sans signe de fabrication.",
-    "fix": "Vérifier que le lien direct du PDF contents/scope résout encore avant publication ; à défaut, pointer vers la page produit NEMA NU 1-2018 stable."
+    "where": "Sections B2/D3 — FWHM du collimateur LEHR à 10 cm",
+    "problem": "Deux valeurs de FWHM LEHR à 10 cm coexistent dans l'article : « 7,5 mm » (série Bohrium : 4,2 / 7,5 / 12,3 mm à 0/10/20 cm) et « 7,2 mm » (source PubMed 22755723 associée à la sensibilité 63,1 cps/MBq). Elles proviennent de deux systèmes/sources distincts. Ce n'est pas une erreur factuelle (les deux sont sourcées et proches), mais le mélange dans un même tableau peut prêter à confusion.",
+    "fix": "Signaler explicitement que 7,2 et 7,5 mm proviennent de deux collimateurs/sources différents, ou n'en retenir qu'une par cohérence de série (la série 4,2/7,5/12,3 mm est interne cohérente)."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections D1, E1 et carte d'identité — densité de comptage scintigraphie osseuse blood-pool (~300 000 coups/image)",
+    "problem": "La valeur « ~300 000 coups/image (150 000–200 000 pour les extrémités) » attribuée au standard SNMMI Bone Scintigraphy 4.0 est présentée dans le contenu médical comme un chiffre établi/opposable, alors que la recherche de référence elle-même la qualifie de « valeur institutionnelle, à confirmer sur le document intégral (accès restreint HTTP 403) ». La vérification web n'a pas permis de retrouver textuellement ce chiffre exact dans le standard SNMMI 4.0 (qui insiste surtout sur 3–5 min/image pour le blood-pool). L'ordre de grandeur est plausible mais le niveau de certitude affiché dépasse celui de la source.",
+    "fix": "Nuancer la formulation (« de l'ordre de », « valeur indicative à adapter au protocole/matériel ») plutôt que de la présenter comme une exigence chiffrée opposable du standard, en attendant vérification sur le texte intégral SNMMI 4.0."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [5] (PMC3808417, Chang et al., Med Phys 2012) — cited in A1, A4, B1, B3, C2, D2, E1 to support 'RSB de l'image ∝ √NECR' / 'NEC bon prédicteur du RSB²'.",
+    "problem": "L'URL, le titre et l'identifiant PMC3808417 sont authentiques et vérifiés. En revanche, la conclusion réelle de cet article est NUANCÉE, voire opposée : les auteurs montrent que le NEC ne prédit PAS fiablement le RSB de l'image lorsqu'on reconstruit en 3D-OSEM (le RSB est alors dominé par l'algorithme et ses paramètres). Attribuer à [5] l'énoncé positif « RSB ∝ √NECR » est une fidélité imparfaite de la source.",
+    "fix": "Ce n'est PAS une fabrication (source réelle) et l'énoncé « RSB ∝ √NECR » reste correct et multi-sourcé par [42] et [44] (validation FBP / uEXPLORER TOF-NECR). Recommandation : réattribuer l'énoncé positif à [42]/[44] et, si l'on cite [5], le présenter comme une mise en garde (le lien NEC–RSB se dégrade en 3D-OSEM). Aucune correction bloquante."
   }
 ]

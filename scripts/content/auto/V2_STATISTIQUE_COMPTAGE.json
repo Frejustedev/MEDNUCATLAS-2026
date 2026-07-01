@@ -1,0 +1,1446 @@
+{
+  "id": "V2_STATISTIQUE_COMPTAGE",
+  "cat": "bases_physiques",
+  "catLabel": "Bases Physiques",
+  "title": "Statistique de comptage, résolution et qualité d’image",
+  "difficulty": "avancé",
+  "tags": [
+    "statistique de comptage",
+    "loi de Poisson",
+    "bruit statistique",
+    "résolution spatiale",
+    "sensibilité",
+    "rapport signal sur bruit",
+    "critère de Rose",
+    "NECR",
+    "collimateur",
+    "reconstruction itérative",
+    "contrôle qualité",
+    "temps de vol"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "reviewStatus": "ai_assisted",
+  "sources": [
+    {
+      "title": "[1] What is the Poisson distribution in nuclear medicine? — Learn Radiology Physics",
+      "url": "https://learnradiologyphysics.com/what-is-the-poisson-distribution-in-nuclear-medicine/"
+    },
+    {
+      "title": "[2] NM image quality — Radiology Cafe (FRCR Physics Notes, Molecular Imaging)",
+      "url": "https://www.radiologycafe.com/frcr-physics-notes/molecular-imaging/nm-image-quality/"
+    },
+    {
+      "title": "[3] The Gamma Camera: Performance Characteristics — Radiology Key",
+      "url": "https://radiologykey.com/the-gamma-camera-performance-characteristics/"
+    },
+    {
+      "title": "[4] Spatial resolution (gamma camera) — Radiopaedia.org",
+      "url": "https://radiopaedia.org/articles/spatial-resolution-gamma-camera"
+    },
+    {
+      "title": "[5] Reliability of predicting image signal-to-noise ratio using noise equivalent count rate in PET imaging — PMC3808417",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3808417/"
+    },
+    {
+      "title": "[6] Estimating the NEMA characteristics of the J-PET tomograph using the GATE package — arXiv 1808.00241",
+      "url": "https://arxiv.org/pdf/1808.00241"
+    },
+    {
+      "title": "[7] Connections between Noise Equivalent Count Rate and Image Noise in PET Medical Imaging — ResearchGate",
+      "url": "https://www.researchgate.net/publication/304620213_CONNECTIONS_BETWEEN_NOISE_EQUIVALENT_COUNT_RATE_AND_IMAGE_NOISE_IN_PET_MEDICAL_IMAGING"
+    },
+    {
+      "title": "[8] A minimum SNR criterion for computed tomography object detection in the projection domain — Hsieh et al., Medical Physics 2022",
+      "url": "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.15832"
+    },
+    {
+      "title": "[9] Contrast to Noise Ratio — an overview | ScienceDirect Topics (Rose criterion)",
+      "url": "https://www.sciencedirect.com/topics/immunology-and-microbiology/contrast-to-noise-ratio"
+    },
+    {
+      "title": "[10] An Investigation of the Trade-Off Between Count Level and Image Quality in Myocardial Perfusion SPECT — PMC2995921",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2995921/"
+    },
+    {
+      "title": "[11] SNMMI Procedure Standard for Bone Scintigraphy 4.0 — Journal of Nuclear Medicine Technology 46(4):398",
+      "url": "https://tech.snmjournals.org/content/46/4/398"
+    },
+    {
+      "title": "[12] New EANM paediatric dosage card: optimization of F-18 FDG-administered activities — Eur J Nucl Med Mol Imaging",
+      "url": "https://link.springer.com/article/10.1007/s00259-014-2816-5"
+    },
+    {
+      "title": "[13] The effect of modern PET technology and techniques on the EANM paediatric dosage card — Eur J Nucl Med Mol Imaging",
+      "url": "https://link.springer.com/article/10.1007/s00259-021-05635-2"
+    },
+    {
+      "title": "[14] EANM Dosage Card (Version 5.7.2016) — EANM (PDF)",
+      "url": "https://eanm.org/wp-content/uploads/2024/05/EANM_Dosage_Card_040214.pdf"
+    },
+    {
+      "title": "[15] Dosage Card — EANM initiatives",
+      "url": "https://www.eanm.org/initiatives/dosage-card/"
+    },
+    {
+      "title": "[16] Optimization of iterative reconstruction parameters with attenuation correction, scatter correction and resolution recovery in myocardial perfusion SPECT/CT — PubMed 24214735",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24214735/"
+    },
+    {
+      "title": "[17] A qualitative and quantitative assessment of the impact of three processing algorithms with halving of study count statistics in myocardial perfusion imaging (FBP, MLEM, OSEM-RR) — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1071358123031690"
+    },
+    {
+      "title": "[18] Ultra-High Spatial Resolution Clinical Positron Emission Tomography (PET) Systems — MDPI Applied Sciences 15(9):5207",
+      "url": "https://www.mdpi.com/2076-3417/15/9/5207"
+    },
+    {
+      "title": "[19] Physical characteristics of collimators for dual-isotope imaging with 99mTc and 123I (LEHR/LEUHR/MELP sensitivities) — ResearchGate",
+      "url": "https://www.researchgate.net/publication/318182117_Physical_characteristics_of_collimators_for_dual-isotope_imaging_with_99mTc_and_123I"
+    },
+    {
+      "title": "[20] Performance characteristics of a new pixelated portable gamma camera — PMC3829890",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3829890/"
+    },
+    {
+      "title": "[21] Nuclear Medicine Physics: Collimators Part 2 — The Radiology Review (LEHR vs LEAP resolution/sensitivity)",
+      "url": "https://www.theradiologyreview.com/blog/nuclear-medicine-physics-collimators-part-2"
+    },
+    {
+      "title": "[22] IAEA Quality Control Atlas for Scintillation Camera Systems — IAEA Pub1141",
+      "url": "https://www-pub.iaea.org/MTCD/publications/PDF/Pub1141_web.pdf"
+    },
+    {
+      "title": "[23] Performance evaluation of two quantitative gamma cameras using NEMA NU-01 2018 standards — Journal of Nuclear Medicine 61(supplement 1):145",
+      "url": "https://jnm.snmjournals.org/content/61/supplement_1/145"
+    },
+    {
+      "title": "[24] NEMA NU 2-2018 performance evaluation of a new generation digital 32-cm axial field-of-view Omni Legend PET-CT — arXiv 2308.06255",
+      "url": "https://arxiv.org/pdf/2308.06255"
+    },
+    {
+      "title": "[25] Patient-specific optimisation of administered activity and acquisition times for 18F-FDG PET imaging — PMC5236047",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5236047/"
+    },
+    {
+      "title": "[26] Accuracy and Precision of Radioactivity Quantification in Nuclear Medicine Images — PMC3586419",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3586419/"
+    },
+    {
+      "title": "[27] Fano factor — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fano_factor"
+    },
+    {
+      "title": "[28] Nuclear Counting Statistics — Radiology Key",
+      "url": "https://radiologykey.com/nuclear-counting-statistics/"
+    },
+    {
+      "title": "[29] Counting statistics and error analysis — Radiochemistry Class Notes (Fiveable)",
+      "url": "https://fiveable.me/radiochemistry/unit-4/counting-statistics-error-analysis/study-guide/F2cG5p1vIsBWrSy2"
+    },
+    {
+      "title": "[30] Calculating error in gamma spectrometric results — Health Physics Society (Q13340)",
+      "url": "https://hps.org/publicinformation/ate/q13340/"
+    },
+    {
+      "title": "[31] Intrinsic Uniformity and Relative Sensitivity Quality Control Tests for Single-Head Gamma Cameras — Journal of Nuclear Medicine Technology 28(4):252",
+      "url": "https://tech.snmjournals.org/content/28/4/252.full"
+    },
+    {
+      "title": "[32] Development of NEMA-based Software for Gamma Camera Quality Control — PMC3043858",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3043858/"
+    },
+    {
+      "title": "[33] Nuclear Medicine Quality Assurance — StatPearls (NCBI Bookshelf NBK576382)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK576382/"
+    },
+    {
+      "title": "[34] Quality Control of Nuclear Medicine Instrumentation and Protocol Standardisation — EANM Technologist's Guide 2017",
+      "url": "https://eanm.org/wp-content/uploads/2024/06/EANM_2017_TEchGuide_QualityControl-1.pdf"
+    },
+    {
+      "title": "[35] Quality control — European Nuclear Medicine Guide (chapter 21)",
+      "url": "https://nucmed-guide.app/chapter/21"
+    },
+    {
+      "title": "[36] Gamma Camera Collimator Types and Design Trade-offs — Bohrium",
+      "url": "https://www.bohrium.com/en/sciencepedia/feynman/foundations_of_medical_imaging_undergraduate-gamma_camera_collimator_types_and_design_trade-offs"
+    },
+    {
+      "title": "[37] Gamma Camera — an overview (ScienceDirect Topics)",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/gamma-camera"
+    },
+    {
+      "title": "[38] Performance characteristics of a new pixelated portable gamma camera — PubMed 22755723",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22755723/"
+    },
+    {
+      "title": "[39] Scintillation Detectors (Prekeges, Chapter 2) — Jones & Bartlett",
+      "url": "http://samples.jbpub.com/9780763766382/66382_CH02_Prekeges.pdf"
+    },
+    {
+      "title": "[40] NaI gamma camera performance for high energies: Effects of crystal thickness, photomultiplier tube geometry and light guide thickness (Cosmi 2024) — Medical Physics / AAPM",
+      "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.17043"
+    },
+    {
+      "title": "[41] Nuclear Imaging — The Gamma Camera — Radiology Key",
+      "url": "https://radiologykey.com/nuclear-imaging-the-gamma-camera-2/"
+    },
+    {
+      "title": "[42] NEMA NU 2–2018 performance evaluation of a new generation 30-cm axial FOV Discovery MI PET/CT — PMC9250480",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9250480/"
+    },
+    {
+      "title": "[43] Technical NEMA NU2–2018 Performance Assessment of a Time-of-Flight-Integrated Digital PET-CT System — PMC11001449",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11001449/"
+    },
+    {
+      "title": "[44] Relating 18F-FDG image signal-to-noise ratio to time-of-flight noise-equivalent count rate in total-body PET using the uEXPLORER scanner — PMC9275089",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9275089/"
+    },
+    {
+      "title": "[45] Update on Time-of-Flight PET Imaging — PMC4287223 / JNM 56(1):98",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4287223/"
+    },
+    {
+      "title": "[46] Recent developments in time-of-flight PET — EJNMMI Physics 2016",
+      "url": "https://ejnmmiphys.springeropen.com/articles/10.1186/s40658-016-0138-3"
+    },
+    {
+      "title": "[47] Innovations in clinical PET image reconstruction: advances in Bayesian penalized likelihood algorithm and deep learning — PMC12378526",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12378526/"
+    },
+    {
+      "title": "[48] Standard OSEM vs. regularized PET image reconstruction — PMC5944826",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5944826/"
+    },
+    {
+      "title": "[49] Evaluation of BSREM reconstruction of 68Ga-DOTATOC, 18F-fluoride, and 11C-acetate whole-body examinations on a digital TOF PET/CT scanner — PMC7295929",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7295929/"
+    },
+    {
+      "title": "[50] More than you ever wanted to know about SPECT – Part II (SPECT image filtering) — VCU",
+      "url": "https://people.vcu.edu/~mhcrosthwait/PETW/SPECTimagefilteringR07.htm"
+    },
+    {
+      "title": "[51] Impact of pre-reconstruction filtering with Butterworth filter on 111In-pentetreotide SPECT image quality and quantitative accuracy: A phantom study — Radiography",
+      "url": "https://www.radiographyonline.com/article/S1078-8174(25)00265-2/fulltext"
+    },
+    {
+      "title": "[52] Signal Detection Theory: A Brief History (Rose criterion) — Radiology Key",
+      "url": "https://radiologykey.com/4-signal-detection-theory-a-brief-history/"
+    },
+    {
+      "title": "[53] FDG PET/CT: EANM procedure guidelines for tumour imaging, version 2.0 — PMC4315529",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4315529/"
+    },
+    {
+      "title": "[54] [18F]FDG PET/CT: EANM procedure guidelines for tumour imaging, version 3.0 (doi:10.1016/j.eanmj.2025.100006) — ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S3051292125000065"
+    },
+    {
+      "title": "[55] Image Quality and Quantitative PET Parameters of Low-Dose [18F]FDG PET in a Long Axial Field-of-View PET/CT Scanner — PMC10606613",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10606613/"
+    },
+    {
+      "title": "[56] A revised compartmental model for biokinetics and dosimetry of 2-[18F]FDG — PMC9908780",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9908780/"
+    },
+    {
+      "title": "[57] Patient Size-Dependent Dosimetry Methodology Applied to 18F-FDG Using New ICRP Mesh Phantoms — JNM 62(12):1805 / PMC8612182",
+      "url": "https://jnm.snmjournals.org/content/62/12/1805"
+    },
+    {
+      "title": "[58] ICRP Publication 128: Radiation dose to patients from radiopharmaceuticals: a compendium of current information related to frequently used substances — ICRP",
+      "url": "https://www.researchgate.net/publication/311100482_ICRP_Publication_128_Radiation_dose_to_patients_from_radiopharmaceuticals_a_compendium_of_current_information_related_to_frequently_used_substances"
+    }
+  ],
+  "content": {
+    "identityCard": [
+      {
+        "icon": "atom",
+        "label": "Loi statistique",
+        "value": "Poisson : variance = moyenne"
+      },
+      {
+        "icon": "activity",
+        "label": "Écart-type du comptage",
+        "value": "σ = √N"
+      },
+      {
+        "icon": "zap",
+        "label": "Bruit relatif",
+        "value": "%σ = 100/√N"
+      },
+      {
+        "icon": "target",
+        "label": "Rapport signal/bruit",
+        "value": "RSB = √N"
+      },
+      {
+        "icon": "list",
+        "label": "Loi des rendements",
+        "value": "÷2 bruit ⇒ ×4 comptage"
+      },
+      {
+        "icon": "microscope",
+        "label": "Comptage pour 1 % de bruit",
+        "value": "N = 10 000 coups"
+      },
+      {
+        "icon": "flask",
+        "label": "Résolution en énergie ⁹⁹ᵐTc",
+        "value": "9–11 % LMH à 140 keV"
+      },
+      {
+        "icon": "pin",
+        "label": "Résolution système",
+        "value": "√(R_intrinsèque² + R_collimateur²)"
+      },
+      {
+        "icon": "radiation",
+        "label": "R intrinsèque à 140 keV",
+        "value": "2,5–4 mm LMH"
+      },
+      {
+        "icon": "shield",
+        "label": "Uniformité intrinsèque SPECT",
+        "value": "< 2,5 % (CFOV)"
+      },
+      {
+        "icon": "stetho",
+        "label": "Métrique PET clé",
+        "value": "NECR = T²/(T+S+R)"
+      },
+      {
+        "icon": "alert",
+        "label": "Seuil de détectabilité (Rose)",
+        "value": "RCB ≥ 3–5"
+      },
+      {
+        "icon": "syringe",
+        "label": "Dose efficace ¹⁸F-FDG",
+        "value": "0,019 mSv/MBq"
+      },
+      {
+        "icon": "droplets",
+        "label": "Organe critique FDG",
+        "value": "Paroi vésicale"
+      }
+    ],
+    "relatedLinks": [
+      {
+        "type": "examen",
+        "label": "SPECT de perfusion myocardique"
+      },
+      {
+        "type": "examen",
+        "label": "TEP/TDM au ¹⁸F-FDG"
+      },
+      {
+        "type": "examen",
+        "label": "Scintigraphie osseuse"
+      },
+      {
+        "type": "traceur",
+        "label": "⁹⁹ᵐTc (technétium)"
+      },
+      {
+        "type": "traceur",
+        "label": "¹⁸F-FDG"
+      },
+      {
+        "type": "score",
+        "label": "Critère de Rose (RCB)"
+      },
+      {
+        "type": "score",
+        "label": "NECR (bruit équivalent)"
+      },
+      {
+        "type": "examen",
+        "label": "Contrôle qualité gamma-caméra (NEMA NU-1)"
+      },
+      {
+        "type": "examen",
+        "label": "Performances PET (NEMA NU-2)"
+      },
+      {
+        "type": "examen",
+        "label": "Reconstruction itérative OSEM"
+      },
+      {
+        "type": "theranostique",
+        "label": "Dosimétrie CIPR 128"
+      },
+      {
+        "type": "examen",
+        "label": "Temps de vol (TOF) en PET"
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quelle est la propriété fondamentale de la loi de Poisson exploitée en comptage de photons ?",
+        "options": [
+          "La variance est le double de la moyenne",
+          "La variance est égale à la moyenne",
+          "L'écart-type est égal à la moyenne",
+          "La variance est la racine de la moyenne"
+        ],
+        "answer": 1,
+        "explanation": "Pour une distribution de Poisson, la variance égale la moyenne N ; il en découle que l'écart-type vaut σ = √N [1].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Combien de coups faut-il accumuler pour obtenir un bruit relatif de 1 % ?",
+        "options": [
+          "100 coups",
+          "1 000 coups",
+          "10 000 coups",
+          "100 000 coups"
+        ],
+        "answer": 2,
+        "explanation": "Le bruit relatif vaut %σ = 100/√N ; pour 1 % il faut N = 10 000 coups (100/√10000 = 1 %) [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Comment progresse le rapport signal/bruit (RSB) avec le nombre de coups N ?",
+        "options": [
+          "RSB ∝ N",
+          "RSB ∝ √N",
+          "RSB ∝ N²",
+          "RSB ∝ 1/N"
+        ],
+        "answer": 1,
+        "explanation": "RSB = N/σ = N/√N = √N : le rapport signal/bruit croît comme la racine carrée du comptage [2].",
+        "difficulty": "facile"
+      },
+      {
+        "question": "Pour diviser par deux le bruit d'une image, de combien faut-il multiplier le temps d'acquisition ?",
+        "options": [
+          "×2",
+          "×3",
+          "×4",
+          "×8"
+        ],
+        "answer": 2,
+        "explanation": "Comme le bruit varie en 1/√N, diviser le bruit par 2 exige de quadrupler N, donc ×4 le temps ou l'activité — la loi des rendements décroissants [1].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Selon le critère de Rose, à partir de quel rapport contraste/bruit (RCB) une lésion devient-elle détectable de façon fiable ?",
+        "options": [
+          "RCB ≥ 1",
+          "RCB ≥ 3–5",
+          "RCB ≥ 10",
+          "RCB ≥ 20"
+        ],
+        "answer": 1,
+        "explanation": "Le critère de Rose fixe le seuil de détectabilité par un observateur humain à un RCB (ou RSB) de 3 à 5, la valeur 5 étant la plus cohérente avec les performances réelles [8,9].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la formule du taux de comptage équivalent-bruit (NECR) en PET ?",
+        "options": [
+          "NECR = T/(S+R)",
+          "NECR = T²/(T+S+R)",
+          "NECR = (T+S)/R",
+          "NECR = √(T·S·R)"
+        ],
+        "answer": 1,
+        "explanation": "NECR = T²/(T+S+R), où T = coïncidences vraies, S = diffusées, R = fortuites ; le RSB de l'image est proportionnel à √NECR [5,6].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Comment se combinent les contributions à la résolution spatiale d'une gamma-caméra ?",
+        "options": [
+          "Addition linéaire : R = R_i + R_c",
+          "Combinaison quadratique : R = √(R_i² + R_c²)",
+          "Produit : R = R_i × R_c",
+          "Moyenne : R = (R_i + R_c)/2"
+        ],
+        "answer": 1,
+        "explanation": "La résolution système est la combinaison quadratique R_système = √(R_intrinsèque² + R_collimateur²) [2,3].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel composant domine la résolution spatiale d'une gamma-caméra en clinique ?",
+        "options": [
+          "La résolution intrinsèque du cristal",
+          "La résolution du collimateur",
+          "La résolution en énergie",
+          "L'électronique de positionnement"
+        ],
+        "answer": 1,
+        "explanation": "La résolution intrinsèque (2,5–4 mm LMH à 140 keV) est négligeable devant celle du collimateur, qui se dégrade avec la distance source-détecteur et domine la résolution système [3,4].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quel est l'effet d'un collimateur haute résolution (LEHR) par rapport à un collimateur usage général ?",
+        "options": [
+          "Meilleure résolution ET meilleure sensibilité",
+          "Meilleure résolution mais sensibilité plus basse",
+          "Sensibilité plus haute mais résolution moindre",
+          "Aucun changement sur les deux"
+        ],
+        "answer": 1,
+        "explanation": "Le LEHR offre une résolution ~3× meilleure mais ne laisse passer qu'environ 1/10 des coups (sensibilité ~63 cps/MBq à 10 cm) : c'est le compromis résolution ↔ sensibilité [19,37].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Que se passe-t-il si l'on augmente la taille de matrice (zoom ×2) sans augmenter le nombre de coups ?",
+        "options": [
+          "Le bruit par pixel diminue",
+          "La résolution et le bruit s'améliorent tous deux",
+          "Le bruit par pixel augmente",
+          "Rien ne change"
+        ],
+        "answer": 2,
+        "explanation": "Diviser la taille de pixel par 2 répartit les mêmes coups sur plus de pixels, réduisant N par pixel ; comme %bruit = 100/√N_pixel, le bruit par pixel augmente et il faut ×4 le temps pour compenser [50].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Pourquoi la reconstruction itérative (OSEM) est-elle préférée à la rétroprojection filtrée (FBP) ?",
+        "options": [
+          "Elle est plus rapide à calculer",
+          "Elle restaure contraste et résolution en maîtrisant le bruit",
+          "Elle amplifie le bruit haute fréquence",
+          "Elle ne nécessite aucune correction"
+        ],
+        "answer": 1,
+        "explanation": "L'OSEM avec corrections restaure contraste et résolution tout en contrôlant le bruit, alors que la FBP amplifie le bruit ; un nombre limité d'itérations et un post-filtre évitent l'amplification excessive du bruit [16,47].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Quelle est la résolution en énergie typique d'un cristal NaI(Tl) à 140 keV pour le ⁹⁹ᵐTc ?",
+        "options": [
+          "1–2 % LMH",
+          "9–11 % LMH",
+          "20–25 % LMH",
+          "50 % LMH"
+        ],
+        "answer": 1,
+        "explanation": "La résolution en énergie du NaI(Tl) à 140 keV est de l'ordre de 9–11 % LMH en routine, ce qui permet une fenêtre photopic étroite (~15 %) rejetant le diffusé [3,39].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Dans le comptage net après soustraction du bruit de fond, comment se propagent les erreurs ?",
+        "options": [
+          "Les erreurs relatives s'additionnent linéairement",
+          "σ_net = √(N_brut + N_bdf)",
+          "σ_net = σ_brut − σ_bdf",
+          "L'erreur nette est toujours nulle"
+        ],
+        "answer": 1,
+        "explanation": "Pour une soustraction, les erreurs absolues s'additionnent en quadrature : σ_net = √(σ_brut² + σ_bdf²) = √(N_brut + N_bdf) ; l'incertitude relative peut alors dépasser le comptage net lui-même [29,30].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la dose efficace de référence du ¹⁸F-FDG selon la CIPR 128 ?",
+        "options": [
+          "0,0019 mSv/MBq",
+          "0,019 mSv/MBq",
+          "0,19 mSv/MBq",
+          "1,9 mSv/MBq"
+        ],
+        "answer": 1,
+        "explanation": "La CIPR 128 retient 0,019 mSv/MBq pour le ¹⁸F-FDG, soit environ 7 mSv pour 370 MBq ; l'organe critique est la paroi vésicale [56,57,58].",
+        "difficulty": "moyen"
+      },
+      {
+        "question": "Le gain de RSB apporté par le temps de vol (TOF) en PET est plus important pour :",
+        "options": [
+          "Les petits patients / la pédiatrie",
+          "Les patients de grand diamètre",
+          "Une résolution temporelle dégradée",
+          "Un champ de vue réduit"
+        ],
+        "answer": 1,
+        "explanation": "Le gain TOF vaut √(2D/(c·Δt)) : il croît avec le diamètre D du patient. Une CTR de ~200 ps donne un gain ~3,7× pour un patient de 40 cm ; le bénéfice est moindre chez les petits sujets [45,46].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle densité de comptage recommande le standard SNMMI 4.0 pour une image planaire de flux sanguin osseux ?",
+        "options": [
+          "~30 000 coups",
+          "~300 000 coups",
+          "~3 000 000 coups",
+          "~30 millions de coups"
+        ],
+        "answer": 1,
+        "explanation": "Le standard SNMMI Bone Scintigraphy 4.0 recommande une matrice ≥ 128×128 et une densité d'environ 300 000 coups/image pour le blood-pool (150 000–200 000 pour les extrémités) [11].",
+        "difficulty": "difficile"
+      },
+      {
+        "question": "Quelle est la fréquence recommandée du test d'uniformité d'une gamma-caméra ?",
+        "options": [
+          "Annuelle",
+          "Mensuelle",
+          "Hebdomadaire",
+          "Quotidienne"
+        ],
+        "answer": 3,
+        "explanation": "Le test d'uniformité est quotidien, avant tout usage clinique, souvent avec une source plane de Co-57 (122 keV, proche des 140 keV du ⁹⁹ᵐTc) ; une non-uniformité crée des artefacts en anneau en SPECT [33,34].",
+        "difficulty": "moyen"
+      }
+    ],
+    "revisionSheet": {
+      "keyPoints": [
+        "Le comptage de photons suit une loi de Poisson : variance = moyenne, donc écart-type σ = √N [1].",
+        "Bruit relatif %σ = 100/√N et rapport signal/bruit RSB = √N : la qualité d'image progresse comme la racine du comptage [1,2].",
+        "Loi des rendements décroissants : diviser le bruit par 2 impose de quadrupler N (×4 temps ou activité) [1].",
+        "Le nombre de coups est proportionnel à activité × temps × sensibilité : ce sont les trois leviers du bruit [26].",
+        "Résolution système = √(R_intrinsèque² + R_collimateur²) ; le collimateur domine et se dégrade avec la distance source-détecteur [2,3].",
+        "Compromis résolution ↔ sensibilité : un collimateur LEHR (résolution ~3× meilleure) ne transmet qu'environ 1/10 des coups [37].",
+        "En PET, le NECR = T²/(T+S+R) résume la qualité de comptage ; RSB image ∝ √NECR [5,6].",
+        "Le critère de Rose fixe le seuil de détectabilité à un RCB ≥ 3–5 : en dessous, faux négatifs et faux positifs [8,9]."
+      ],
+      "protocol": [
+        "Fixer activité × temps pour atteindre le comptage cible (N pour le RSB voulu, NECR pour la PET), en respectant l'ALARA [25].",
+        "Choisir le collimateur selon la priorité résolution vs sensibilité (LEHR pour la finesse, LEGP pour le débit) [21].",
+        "Adapter matrice et pixel à la résolution (taille de pixel ≤ 1/3 de la LMH) pour éviter le sur-échantillonnage bruité [50].",
+        "Minimiser la distance source-détecteur, la résolution du collimateur se dégradant linéairement avec la distance [2].",
+        "CQ préalable : uniformité quotidienne (< 2,5 % intrinsèque), centre de rotation, fenêtre en énergie (~15 % sur 140 keV) [31,33].",
+        "Reconstruire en itératif (OSEM + corrections d'atténuation/diffusion) plutôt qu'en FBP, avec post-filtre pour maîtriser le bruit [16,47]."
+      ],
+      "scores": [
+        "Bruit relatif : %σ = 100/√N (1 % ⇒ 10 000 coups ; 10 % ⇒ 100 coups) [1].",
+        "Rapport signal/bruit : RSB = √N ; ÷2 bruit ⇒ ×4 comptage [1,2].",
+        "Critère de Rose : détectabilité si RCB (ou RSB) ≥ 3–5 [8,9].",
+        "NECR = T²/(T+S+R) ; RSB image ∝ √NECR [5,6].",
+        "Gain TOF = √(2D/(c·Δt)) ; ~3,7× pour un patient de 40 cm à CTR ~200 ps [45]."
+      ],
+      "pitfalls": [
+        "Sur-échantillonnage : augmenter la matrice sans augmenter N répartit les coups sur plus de pixels et fait monter le bruit par pixel [50].",
+        "Piège du faible comptage : sous le seuil de Rose, une lésion réelle peut être invisible (faux négatif) et le bruit mimer une lésion (faux positif) [8].",
+        "Pertes par temps mort à haut débit (temps mort ~4–8 µs ⇒ ~20 % de pertes à 4×10⁴ cps) : sous-estimation d'activité et non-linéarité [28].",
+        "Soustraction de fond ou de fortuites : elle augmente le bruit ; l'incertitude nette peut dépasser le comptage net [29].",
+        "Non-uniformité de champ : crée des artefacts en anneau en SPECT (uniformité intrinsèque à maintenir < 2,5 %) [31].",
+        "Filtrage passe-bas trop agressif : réduit le bruit mais dégrade la résolution — compromis à chaque reconstruction [51]."
+      ]
+    },
+    "lead": "En médecine nucléaire, chaque image naît d'un comptage d'événements aléatoires, un peu comme si l'on comptait des gouttes de pluie tombant sur une fenêtre pendant un temps donné. Plus on accumule d'événements, plus l'image devient nette et fiable, mais cela demande davantage de temps ou une activité plus élevée. Chercher la meilleure image revient toujours à jongler entre netteté, finesse des détails, quantité de signal capté et durée acceptable pour le patient. Aucun de ces objectifs ne s'améliore sans en sacrifier un autre, et tout l'art du protocole consiste à trouver le juste équilibre. Cet article explique les lois simples qui gouvernent ce compromis fondamental.",
+    "patient": {
+      "sections": [
+        {
+          "title": "À quoi sert cette notion pendant votre examen",
+          "text": "En médecine nucléaire, on vous administre une très petite quantité d'un produit qui émet un rayonnement faible et se répartit dans l'organe étudié. Une caméra spéciale « capte » ensuite ce rayonnement, point par point, pour fabriquer vos images. Ce qui rend une image nette et fiable, c'est le fait d'avoir recueilli suffisamment de ces signaux à l'endroit qui intéresse le médecin. C'est pour cette raison que l'équipe prend le temps qu'il faut : ni trop court, pour que les images soient de bonne qualité, ni inutilement long. Vous n'avez rien de particulier à faire, tout se passe naturellement à l'intérieur de votre corps, sans aucune sensation.",
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Illustration simple d'une caméra de médecine nucléaire qui recueille le rayonnement émis par le corps pour former une image.",
+            "caption": "La caméra recueille, un signal après l'autre, le rayonnement qui sort de votre corps pour construire vos images."
+          }
+        },
+        {
+          "title": "Comment se déroule l'examen",
+          "text": "Après l'administration du produit, vous patientez le temps qu'il se répartisse dans la zone à explorer. Vous vous allongez ensuite confortablement, et la caméra se place tout près de vous, sans jamais vous toucher. Il vous suffit de rester immobile et détendu pendant la prise des images, un peu comme pour une longue photographie : bouger rendrait l'image floue, exactement comme une photo prise en mouvement. La durée de l'acquisition est choisie pour obtenir des images de qualité ; si l'équipe vous demande de rester un certain temps, c'est précisément pour cette raison. Certains appareils réalisent en plus un scanner rapide qui aide à rendre les images encore plus justes.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Rester immobile aide beaucoup",
+              "text": "La netteté de vos images dépend en grande partie de votre immobilité pendant la prise. Installez-vous le plus confortablement possible dès le départ et signalez tout inconfort à l'équipe : elle peut vous aider à trouver une bonne position avant de commencer."
+            }
+          ]
+        },
+        {
+          "title": "Est-ce que c'est sûr ?",
+          "text": "Oui. La quantité de produit utilisée est volontairement gardée aussi faible que possible, juste ce qu'il faut pour obtenir de bonnes images. L'équipe applique toujours le principe de la plus faible exposition raisonnable et adapte l'examen à votre situation, en particulier chez l'enfant, pour qui les doses sont soigneusement réduites. Le rayonnement disparaît rapidement de lui-même et le produit s'élimine naturellement de votre corps. Boire de l'eau et aller aux toilettes après l'examen aide à l'éliminer plus vite.",
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "N'hésitez pas à poser vos questions",
+              "text": "Si vous êtes enceinte, susceptible de l'être, ou si vous allaitez, signalez-le avant l'examen : l'équipe adaptera la marche à suivre. Pour toute inquiétude sur le déroulement, l'équipe de médecine nucléaire est là pour vous répondre."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_non_nuc": {
+      "sections": [
+        {
+          "title": "Pourquoi ces notions concernent le clinicien adresseur",
+          "text": "En médecine nucléaire, une image n'est pas la mesure continue d'une grandeur : elle résulte du **décompte d'événements aléatoires** (les désintégrations et détections de photons), qui obéit à une **loi statistique**. Il en découle un **bruit** intrinsèque, ce grain visible sur les images, d'autant plus marqué que peu de signaux ont été recueillis. La qualité finale tient à un équilibre permanent entre quatre exigences que l'on ne peut satisfaire toutes à la fois : la finesse du détail (**résolution**), la capacité à voir les structures faibles (**sensibilité/contraste**), la **durée** de l'examen et la **quantité de produit** administrée (donc la dose). Pour l'adresseur, l'enjeu n'est pas de maîtriser cette physique, mais de comprendre qu'elle explique certaines caractéristiques et certaines limites des examens qu'il prescrit."
+        },
+        {
+          "title": "Ce que cela change en pratique",
+          "text": "Trois conséquences concrètes. D'abord, un examen a une **durée incompressible** : elle sert à recueillir assez de signaux pour que l'image soit fiable ; l'écourter dégrade la qualité, sauf à recourir à des caméras ou logiciels plus performants. Ensuite, il existe une **taille limite de lésion détectable** : sous un certain seuil de contraste et de signal, une petite anomalie peut se confondre avec le bruit, et à l'inverse une fluctuation aléatoire peut mimer un faux foyer sur une image peu comptée. Enfin, la **coopération du patient** (immobilité) est déterminante, car tout mouvement brouille l'image de la même manière qu'un manque de signal. C'est aussi pourquoi le médecin nucléariste privilégie souvent l'imagerie hybride et des reconstructions dédiées, qui améliorent la qualité sans augmenter la dose.",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Attention aux images à faible statistique",
+              "text": "Sur les acquisitions écourtées ou peu comptées, un « foyer » douteux peut n'être qu'une fluctuation statistique, et une petite lésion réelle peut être masquée par le bruit. C'est le médecin nucléariste qui fait la part des choses, au besoin en refaisant ou en complétant l'acquisition ; un contexte clinique bien renseigné l'y aide directement."
+            }
+          ]
+        },
+        {
+          "title": "Apport de la médecine nucléaire et quand y penser",
+          "text": "La compréhension de ces compromis est ce qui permet à la médecine nucléaire de fournir une information **fonctionnelle**, souvent quantifiée, là où l'imagerie purement anatomique reste insuffisante. Le service ajuste pour chaque indication l'activité, la durée, le type de détecteur et la reconstruction afin d'atteindre une qualité suffisante au coût dosimétrique le plus bas. Pour l'adresseur, l'essentiel est de retenir que la performance d'un examen dépend de cette chaîne technique : une demande précise (question clinique, antécédents, poids, matériel implanté, traitements, contraintes de mobilité du patient) aide le service à choisir le protocole optimal et à rendre une interprétation fiable.",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Pourquoi adresser",
+              "text": "Adressez en médecine nucléaire lorsqu'une information fonctionnelle est utile là où l'imagerie anatomique seule ne suffit pas. Précisez la question clinique, les antécédents, le poids du patient et sa capacité à rester immobile, ainsi que les traitements en cours : ces éléments permettent au service de calibrer l'activité et la durée d'acquisition, d'anticiper les limites de détectabilité des petites lésions, et de vous rendre un examen de qualité optimale au meilleur compromis dose/temps."
+            }
+          ]
+        }
+      ]
+    },
+    "medecin_nuc": {
+      "sections": [
+        {
+          "title": "A1 - Carte d'identité : statistique de comptage, résolution et qualité d'image en un coup d'œil",
+          "text": "**Comment lire cette carte.** Cet article ne décrit pas un examen mais la **physique fondamentale** commune à tous : en médecine nucléaire, chaque image naît d'un **comptage d'événements aléatoires** (désintégrations, détections de photons) qui obéit à une **loi de Poisson**.[1][28] Sa propriété-clé — **la variance est égale à la moyenne** — impose que l'**écart-type du comptage vaut √N** et que le **rapport signal/bruit (RSB) croisse comme √N**.[1][26] Toute la conception de protocole en découle : la qualité d'image résulte d'un **compromis à quatre pôles — bruit ↔ résolution spatiale ↔ sensibilité (contraste) ↔ temps/activité (dose)** — dont aucun ne s'améliore sans en dégrader un autre.[2]\n\n| Champ | Contenu | Loi / valeur |\n|---|---|---|\n| **Nature du signal** | Comptage d'événements aléatoires indépendants | Distribution de **Poisson**[1][28] |\n| **Bruit statistique** | Incertitude intrinsèque du comptage | **σ = √N**, variance = moyenne[1][26] |\n| **Bruit relatif** | Coefficient de variation | **%σ = 100/√N**[1] |\n| **Rapport signal/bruit** | Détectabilité globale | **RSB = √N**[1][26] |\n| **Seuil de détectabilité** | Critère de Rose | **RCB ≥ 3–5**[9][52] |\n| **Métrique-clé TEP** | Taux de comptage équivalent-bruit | **NECR = T²/(T+S+R)**[5][42] |\n| **Compromis matériel** | Résolution ↔ sensibilité | Collimateur, cristal, détecteur[36][37] |\n| **Compromis logiciel** | Résolution ↔ bruit | Itérations OSEM, filtre, pixel[47][50] |\n| **Compromis clinique** | Dose/temps ↔ bruit | Activité × durée × sensibilité[53] |\n\n**Le message central de l'article** : on ne « gagne » jamais gratuitement. Chaque optimisation d'un pôle se paie sur les autres ; l'art du protocole consiste à placer le curseur pour que le **RSB/RCB dépasse le seuil de Rose sur la structure d'intérêt**, au coût minimal en dose et en temps.[2][9]",
+          "stats": [
+            {
+              "value": "σ = √N",
+              "label": "Bruit statistique poissonien"
+            },
+            {
+              "value": "RSB ∝ √N",
+              "label": "Le signal/bruit croît en racine de N"
+            },
+            {
+              "value": "N = 10 000",
+              "label": "Coups requis pour 1 % de bruit"
+            },
+            {
+              "value": "×4",
+              "label": "Facteur sur N pour diviser le bruit par 2"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Les quatre pôles ne sont pas indépendants : ils forment un **quadrilatère de contraintes**. Augmenter la résolution (collimateur à trous fins) fait chuter la sensibilité, donc N, donc dégrade le bruit à durée constante ; réduire le bruit en allongeant l'acquisition améliore le RSB en **√N seulement** (rendements décroissants) tout en augmentant dose et immobilisation du patient. Aucun réglage ne déplace un seul pôle."
+            },
+            {
+              "type": "info",
+              "title": "Périmètre de l'article",
+              "text": "Les valeurs chiffrées données ici (énergies, sensibilités, seuils) illustrent les lois générales ; elles renvoient à des systèmes et traceurs de référence (⁹⁹ᵐTc à 140 keV en TEMP, émetteurs β⁺ à 511 keV en TEP). Chaque protocole ajuste ces valeurs à son matériel et à son indication."
+            }
+          ]
+        },
+        {
+          "title": "A2 - Pourquoi une image de médecine nucléaire est un comptage d'événements aléatoires",
+          "text": "**La nature stochastique du signal.** La désintégration radioactive et l'interaction des photons dans le détecteur sont des **processus aléatoires indépendants** : on ne peut pas prédire *quand* un noyau donné se désintègre, seulement la probabilité qu'il le fasse. Le nombre N de photons détectés dans une région et un temps donnés est donc une **variable aléatoire**, et non une valeur déterministe.[26][28] C'est cette nature probabiliste — et non un défaut de l'appareil — qui produit le **bruit statistique** intrinsèque de toute image de médecine nucléaire.[26]\n\n**La chaîne de détection : le comptage à sa source.** Chaque coup enregistré est l'aboutissement d'une cascade, et **chaque étage introduit soit une perte de coups** (baisse de sensibilité, hausse relative du bruit), **soit un flou** (baisse de résolution) :\n\ndésintégration → émission photonique (**γ 140 keV** pour ⁹⁹ᵐTc ; **2 × 511 keV** pour les émetteurs β⁺) → traversée du patient (atténuation, diffusion Compton) → sélection par le collimateur (TEMP) → interaction dans le cristal (**NaI:Tl**) → conversion lumineuse → tubes photomultiplicateurs / SiPM → localisation (logique d'Anger) → **fenêtre en énergie** → coup enregistré.[3][41]\n\n**Comptage ↔ activité ↔ temps.** Le nombre de coups collectés est directement proportionnel à l'activité injectée, à la durée d'acquisition et à la sensibilité de l'instrument :\n\n> **N ∝ Activité × Temps × Sensibilité**[1]\n\nCette relation est le pivot de toute optimisation : les trois leviers du bruit sont l'**activité administrée**, la **durée d'acquisition** et la **sensibilité de l'instrument**, et le **RSB ∝ √(activité × temps × sensibilité)**.[53] Elle explique pourquoi les technologies à haute sensibilité (TEP corps entier LAFOV, temps de vol, détecteurs numériques SiPM) permettent de **réduire la dose ou le bruit** à qualité constante.[55]\n\n**La résolution en énergie, garante de la sélection des vrais coups.** La fenêtre en énergie ne retient que les photons d'énergie voisine du photopic pour rejeter le rayonnement diffusé. Sa finesse est limitée par la **résolution en énergie** du détecteur : pour le NaI(Tl) à 140 keV, **9–11 % de LMH (largeur à mi-hauteur)** en routine, meilleurs systèmes 7–9 %.[3][39] La fenêtre photopic clinique standard est de **± 7,5 %** (≈ 130–150 keV), soit **~15 %** de largeur ; une fenêtre trop étroite rejette de vrais coups (↑ bruit), trop large laisse passer du diffusé (↓ contraste).[3] La résolution en énergie s'améliore comme **√E**.[3]",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — un « faible comptage » n'est pas un « faible signal biologique »",
+              "text": "Une région peu comptée peut refléter soit une faible fixation réelle, soit simplement une acquisition trop courte, une activité insuffisante ou un étage de la chaîne peu efficace. Le bruit poissonien peut alors **mimer une lésion** (faux positif) ou en **masquer une** (faux négatif). Avant de conclure, vérifier que le comptage total est suffisant pour la question posée (cf. seuil de Rose, §A3–A4)."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le rejet du diffusé par la fenêtre en énergie **modifie la statistique** : toute soustraction (diffusé en TEP, bruit de fond en quantification) augmente le bruit sur le comptage net, car les incertitudes s'additionnent en quadrature — **σ_net = √(N_brut + N_fond)**.[29][30] Soustraire n'est jamais gratuit sur le plan statistique."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection de la gamma-caméra : collimateur, cristal NaI(Tl), photomultiplicateurs et électronique de positionnement — chaque étage introduit une perte de coups (↓ sensibilité) ou un flou (↓ résolution).",
+            "caption": "Fig. 1 — La chaîne de détection : de la désintégration au coup enregistré, chaque étage prélève des coups ou ajoute du flou."
+          }
+        },
+        {
+          "title": "A3 - La loi de Poisson : socle mathématique du bruit de comptage",
+          "text": "**La propriété fondamentale.** Pour un processus poissonien, si N est le nombre moyen de coups détectés, alors la **variance est égale à la moyenne** : Var = N. Il en découle directement l'écart-type et le bruit relatif de tout comptage.[1][28]\n\n| Grandeur | Formule | Signification |\n|---|---|---|\n| Écart-type du comptage | **σ = √N** | Incertitude absolue sur N[1][26] |\n| Variance | **σ² = N** | Variance = moyenne (propriété de Poisson)[1] |\n| Bruit relatif (% d'incertitude) | **%σ = 100/√N** | Coefficient de variation[1] |\n| Rapport signal/bruit | **RSB = N/σ = √N** | Détectabilité globale[1][26] |\n| Facteur de Fano | **Var/moyenne = 1** | Vaut 1 pour un Poisson pur[27] |\n\n**Conséquence pratique majeure — le RSB progresse comme √N.** C'est la loi la plus lourde de conséquences cliniques :\n\n- Pour un bruit de **1 %**, il faut **N = 10 000 coups** (100/√10 000 = 1 %) ; pour **5 %**, ~400 coups ; pour **10 %**, 100 coups ; pour **0,5 %**, 40 000 coups.[1]\n- **Doubler** le temps d'acquisition (ou l'activité) double N, mais ne réduit le bruit relatif que d'un facteur √2, soit **≈ −29 %** seulement.[1]\n- Pour **diviser le bruit par deux**, il faut **quadrupler N** (× 4 le temps ou l'activité).[26] C'est la **loi des rendements décroissants** qui limite tout gain de qualité par simple allongement d'examen.\n- Corollaire d'échantillonnage : pour une matrice **deux fois plus fine** (pixels 2 fois plus petits), il faut un temps d'acquisition **× 4** pour conserver la même statistique par pixel.[50]\n\n**Propagation d'erreurs — opérations sur les comptages.** Dès qu'on combine des comptages, les incertitudes se propagent :\n\n- **Somme / différence** : les erreurs *absolues* s'additionnent en quadrature → pour un comptage net après soustraction du fond, **σ_net = √(N_brut + N_fond)**.[29][30]\n- **Produit / rapport** : les erreurs *relatives* (%) s'additionnent en quadrature.[29]\n\n**Contraste et détectabilité.** Le comptage doit être rapporté au contraste de la lésion sur son fond :\n\n- Rapport contraste/bruit d'une lésion (T) sur fond (B) : **RCB = (T − B)/√(T + B)**.[1]\n- **Critère de Rose** : un objet n'est détecté de façon fiable que si son **RCB (ou RSB) dépasse 3 à 5** — typiquement **RCB ≥ 4** en tomographie d'émission.[9][52] C'est le fondement quantitatif de la question « combien de coups faut-il pour voir la lésion ? ».",
+          "stats": [
+            {
+              "value": "Var = N",
+              "label": "Variance égale à la moyenne (Poisson)"
+            },
+            {
+              "value": "−29 %",
+              "label": "Réduction du bruit si l'on double N"
+            },
+            {
+              "value": "×4",
+              "label": "Temps pour matrice 2× plus fine à statistique égale"
+            },
+            {
+              "value": "RCB ≥ 4",
+              "label": "Seuil de Rose en tomographie d'émission"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la soustraction de fond peut anéantir l'information",
+              "text": "Lors d'une soustraction de bruit de fond, l'incertitude relative sur le comptage net peut **dépasser le comptage net lui-même**, rendant l'échantillon indiscernable du fond.[29] Pertinent pour les fixations thyroïdiennes, les volumes sanguins et la quantification de petites lésions : un « net » positif mais noyé dans son propre bruit n'a pas de valeur."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Le corollaire « doubler N ne gagne que 29 % » explique pourquoi l'allongement d'examen atteint vite un plafond de rentabilité. Les vrais leviers de qualité à dose et durée constantes sont ceux qui augmentent la **sensibilité** (TOF, LAFOV, SiPM) ou qui contrôlent le bruit à la **reconstruction** (OSEM régularisé) — pas la simple prolongation de l'acquisition."
+            }
+          ]
+        },
+        {
+          "title": "A4 - Les quatre grandeurs en tension : bruit, résolution spatiale, sensibilité, temps/activité",
+          "text": "Les quatre pôles forment un système où **chaque optimisation d'un pôle en dégrade un autre**. Voici les lois qui les relient.[2]\n\n**① Bruit** — gouverné par le seul comptage total : **σ = √N**, **%σ = 100/√N**. Irréductible à N donné ; ne se réduit qu'en augmentant N (donc temps, activité ou sensibilité) ou en filtrant (au prix de la résolution).[1][26]\n\n**② Résolution spatiale** — combinaison quadratique des contributions de la caméra :\n\n> **R_système = √(R_intrinsèque² + R_collimateur²)**[2]\n\n- **Résolution intrinsèque** (cristal + PM) à 140 keV : **2,5–4 mm LMH**, s'améliore comme 1/√E ; en clinique, négligeable devant le collimateur.[4]\n- **Résolution de collimateur**, contribution *dominante*, se dégrade avec la distance source-détecteur. Pour un LEHR (haute résolution, ⁹⁹ᵐTc 140 keV) : **4,2 mm à 0 cm ; 7,5 mm à 10 cm ; 12,3 mm à 20 cm**.[36] D'où la règle : **rapprocher le détecteur du patient**.\n- **Limites physiques en TEP** : R_scanner combine la taille du cristal (≈ cristal/2, cristaux typiques **3–4 mm**, facteur dominant), le parcours du positon (**≈ 0,2 mm** pour le ¹⁸F) et la non-colinéarité des photons à 511 keV — limites irréductibles.[18]\n\n**③ Sensibilité (contraste)** — le compromis résolution ↔ sensibilité est **incontournable** : un collimateur haute résolution a une résolution ~3× meilleure qu'un collimateur haute sensibilité mais ne laisse passer qu'**~1/10 des coups**.[37]\n\n| Collimateur (⁹⁹ᵐTc) | Résolution | Sensibilité | Compromis |\n|---|---|---|---|\n| **LEHR** (haute résolution) | Meilleure (FWHM ~7,2 mm à 10 cm) | **63,1 cps/MBq** | Trous fins/longs → moins de coups[36][38] |\n| **LEGP / LEAP** (usage général) | Moindre | **112,6 cps/MBq** | Trous larges/courts → plus de coups[20] |\n\nAméliorer la résolution d'un collimateur (trous plus fins/longs) **fait chuter la sensibilité** → il faut plus de temps ou d'activité pour le même comptage.[36]\n\n**④ Temps / activité (dose)** — le levier « dose » du compromis. **N ∝ Activité × Temps × Sensibilité** ; réduire l'un se paie en bruit si les autres ne compensent pas.[1][53] Exemple EANM TEP-FDG : activité minimale selon **FDG (MBq) = 1050 × (poids/75)²/durée par lit** (recouvrement ≤ 30 %) ; au-delà de 90 kg, privilégier l'**allongement du temps par lit** plutôt que la hausse d'activité.[53]\n\n**Synthèse — le quadrilatère du compromis :**\n\n| Levier | Améliore | Dégrade | Loi |\n|---|---|---|---|\n| ↑ Temps ou ↑ Activité | Bruit (RSB) | Dose / débit patient | RSB ∝ √N ; ÷2 bruit ⇒ ×4 N[1][26] |\n| ↑ Résolution collimateur | Netteté | Sensibilité (↑ bruit à N constant) | R_c ↓ ⇒ sensibilité ↓[36] |\n| ↑ Sensibilité | Comptage / bruit | Résolution | idem, sens inverse[37] |\n| ↑ Taille de pixel | Bruit / pixel | Résolution | %bruit = 100/√N_pixel[50] |\n\n**Cas de la TEP — la sensibilité utile se mesure par le NECR.** Trois types de coïncidences coexistent : **vraies (T)**, **diffusées (S)** et **fortuites/randoms (R)** ; seules les vraies portent la position exacte.[6][7] Le taux de comptage équivalent-bruit résume la qualité :\n\n> **NECR = T² / (T + S + R)**[5][42]\n\nInterprétation : le taux de vraies coïncidences qui donnerait le même RSB dans un système idéal (sans S ni R) ; le **RSB de l'image ∝ √NECR**.[5] Sensibilité système typique **~12–33 cps/kBq**, NECR pic **~430 kcps** sur un scanner clinique récent.[42]",
+          "steps": [
+            {
+              "title": "1 · Fixer le comptage cible",
+              "text": "Choisir activité × temps pour atteindre le N (ou le NECR en TEP) requis par le RSB/RCB visé sur la structure d'intérêt — au-dessus du seuil de Rose, au coût minimal en dose (ALARA).[9][53]"
+            },
+            {
+              "title": "2 · Choisir le collimateur / détecteur",
+              "text": "Arbitrer résolution vs sensibilité : LEHR si la finesse prime, LEGP/LEAP si le comptage prime. La sensibilité chute quand on gagne en résolution.[36][37]"
+            },
+            {
+              "title": "3 · Adapter matrice et pixel",
+              "text": "Taille de pixel ≤ ~1/3 de la LMH pour ne pas dégrader la résolution ; éviter le sur-échantillonnage qui redistribue les coups sur plus de pixels et augmente le bruit par pixel (%bruit = 100/√N_pixel).[50]"
+            },
+            {
+              "title": "4 · Positionner et reconstruire",
+              "text": "Rapprocher le détecteur (R_collimateur ∝ distance) ; privilégier l'itératif OSEM + corrections, qui restaure contraste et résolution en maîtrisant le bruit, plutôt que la rétroprojection filtrée qui l'amplifie.[16][47]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le sur-échantillonnage trompeur",
+              "text": "Augmenter la taille de matrice sans augmenter N **redistribue les mêmes coups sur plus de pixels** → moins de coups par pixel → **hausse du bruit par pixel** (%bruit = 100/√N_pixel). Un pixel plus fin ne « crée » pas de résolution : il faut aussi plus de coups. La taille de pixel doit rester cohérente avec la résolution réelle du système.[50]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert",
+              "text": "Les technologies récentes **déplacent favorablement** le quadrilatère plutôt que de violer ses lois : le **temps de vol (TOF)** apporte un gain de RSB ∝ √(D/Δx) — jusqu'à ~3,7× pour un patient de 40 cm avec une résolution temporelle de ~200 ps ;[45] les **LAFOV** et les **détecteurs SiPM** augmentent la sensibilité brute. Résultat : moins de dose ou moins de bruit à qualité constante, sans échapper au compromis à quatre pôles.[44][55]"
+            },
+            {
+              "type": "info",
+              "title": "Compromis logiciel — reconstruction",
+              "text": "À la reconstruction, le compromis se rejoue entre résolution et bruit : plus d'itérations OSEM = meilleure convergence quantitative mais **amplification du bruit**, d'où un post-filtre de lissage (qui dégrade la résolution). Les méthodes régularisées (BSREM/Q.Clear) convergent jusqu'à pleine convergence en contrôlant le bruit et en préservant les bords.[47][48]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Coïncidences en TEP : coïncidence vraie (deux photons de 511 keV issus de la même annihilation), diffusée (photon dévié par effet Compton) et fortuite (photons d'annihilations différentes) — S et R dégradent le rapport signal/bruit et fondent la métrique NECR.",
+            "caption": "Fig. 2 — Vraies, diffusées et fortuites : seules les vraies portent la position exacte ; le NECR = T²/(T+S+R) résume la sensibilité utile."
+          }
+        },
+        {
+          "title": "B1 - Calculer le bruit et le RSB d'une image : du pixel au volume d'intérêt",
+          "text": "En médecine nucléaire, une image n'est jamais la mesure exacte d'une distribution d'activité : c'est un **comptage d'événements aléatoires indépendants** (désintégrations, interactions photoniques) qui obéit à une **loi de Poisson** [1][26]. Cette nature stochastique impose un **bruit statistique irréductible** : même avec un instrument parfait et un patient immobile, deux acquisitions successives d'une même source ne donnent jamais exactement le même nombre de coups. Comprendre — et calculer — ce bruit est le préalable à toute optimisation de protocole.\n\n### La propriété fondatrice : variance = moyenne\n\nSi **N** est le nombre moyen de coups détectés dans une région ou un temps donnés, la distribution de Poisson possède une propriété remarquable qui la distingue de la gaussienne : **sa variance est égale à sa moyenne** [1]. Toute la métrologie du bruit en découle :\n\n| Grandeur | Formule | Signification | Source |\n|---|---|---|---|\n| Écart-type du comptage | **σ = √N** | incertitude absolue | [1][2] |\n| Variance | σ² = N | variance = moyenne (Poisson) | [1] |\n| Facteur de Fano | σ²/N = **1** | dispersion d'un Poisson pur | [27] |\n| Incertitude relative (%écart-type) | **%σ = 100 / √N** | bruit relatif de l'image | [1] |\n| Rapport signal/bruit | **RSB = N/σ = N/√N = √N** | qualité statistique | [1][26] |\n\nLe résultat central pour la pratique est que **le RSB croît comme la racine carrée du nombre de coups collectés** [1][26]. Un pixel qui a reçu 100 coups porte donc un bruit relatif de 10 % (100/√100) ; un volume d'intérêt qui en cumule 10 000 abaisse ce bruit à 1 %.\n\n### « Combien de coups faut-il ? » — la table à mémoriser\n\n| Bruit relatif visé | Coups nécessaires (N) | Repère clinique | Source |\n|---|---|---|---|\n| 10 % | **~100** | pixel de fond typique | [1] |\n| 5 % | **~400** | image de flux osseux | [1] |\n| 1 % | **~10 000** | densité d'image de qualité | [1] |\n| 0,5 % | **~40 000** | quantification exigeante | [26] |\n\nLe corollaire économique de la loi en √N est la **loi des rendements décroissants** : **doubler** le temps d'acquisition (ou l'activité) double N mais ne réduit le bruit relatif que d'un facteur √2, soit **≈ −29 %** seulement [1]. Pour **diviser le bruit par deux**, il faut **quadrupler** N — donc quadrupler le temps ou l'activité [26]. C'est cette loi qui plafonne tout gain de qualité obtenu par simple allongement de l'examen, et qui justifie le passage à des instruments plus sensibles plutôt qu'à des acquisitions plus longues (§B3, §B4).\n\n### Du pixel au volume d'intérêt : propagation d'erreurs\n\nLe RSB d'un **pixel** s'écrit RSB = μ/σ, où μ est le nombre moyen de coups par pixel et σ son écart-type [26]. Regrouper des pixels (matrice plus grossière, ROI) additionne les coups et améliore mécaniquement le RSB local — mais au prix de la résolution (§B2). Deux règles de propagation gouvernent toute opération sur des comptages :\n\n- **Somme ou différence** — les incertitudes **absolues** s'additionnent en quadrature. Pour un comptage net après soustraction d'un bruit de fond : **σ_net = √(σ_brut² + σ_bdf²) = √(N_brut + N_bdf)** [29][30].\n- **Produit ou rapport** — les incertitudes **relatives** (en %) s'additionnent en quadrature [29].\n\nCes règles ne sont pas académiques : elles conditionnent la fiabilité de toute quantification fondée sur une soustraction de fond (fixation thyroïdienne, volume sanguin, activité résiduelle d'une petite lésion).\n\n### Du RSB à la détectabilité : contraste, RCB et critère de Rose\n\nUn RSB élevé ne garantit pas qu'une lésion soit **vue** : ce qui compte est le contraste de la lésion rapporté au bruit du fond. On définit successivement le contraste-sujet C_S = (A_L − A_T)/A_T (activités lésion/tissu) et le contraste-image C_I = (S_L − S_T)/S_T (coups par unité de surface) [2]. La métrique décisionnelle est le **rapport contraste-sur-bruit (RCB / CNR)** d'une lésion T sur un fond B :\n\n**RCB = (T − B) / √(T + B)** [1]\n\nLe **critère de Rose** fixe le seuil de détectabilité fiable par un observateur humain : un objet n'est détecté de façon reproductible que si son **RCB (ou RSB) dépasse 3 à 5**, la valeur de **~4–5** étant la plus cohérente avec les performances des observateurs réels en tomographie d'émission [8][9][52]. Ce seuil est la traduction quantitative de la question clinique « combien de coups faut-il pour voir cette lésion ? » : c'est lui, et non un RSB global, qu'il faut viser sur la structure d'intérêt.",
+          "stats": [
+            {
+              "value": "σ = √N",
+              "label": "écart-type poissonien du comptage"
+            },
+            {
+              "value": "RSB = √N",
+              "label": "le rapport signal/bruit croît comme √N"
+            },
+            {
+              "value": "×4",
+              "label": "coups requis pour diviser le bruit par 2"
+            },
+            {
+              "value": "10 000",
+              "label": "coups pour 1 % de bruit relatif"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la soustraction de fond peut noyer le signal",
+              "text": "Lors d'une soustraction de bruit de fond, l'incertitude sur le comptage net se propage en quadrature (σ_net = √(N_brut + N_bdf)). Pour une petite lésion sur un fond intense, l'incertitude relative sur le net peut **dépasser le comptage net lui-même**, rendant la structure statistiquement indiscernable du fond [29]. Pertinent pour les fixations thyroïdiennes, volumes sanguins et quantifications de petites lésions."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — viser le RCB local, pas le RSB global",
+              "text": "Une image peut avoir un excellent RSB global tout en manquant une lésion à faible contraste. La grandeur pertinente est le RCB = (T − B)/√(T + B) sur la structure d'intérêt : tant qu'il reste sous le seuil de Rose (3–5), la lésion est soit invisible (faux négatif), soit mimée par le bruit (faux positif) [8][52]. Toute la conception de protocole revient à placer ce RCB au-dessus du seuil, au coût minimal en dose et en temps."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Schéma de la chaîne de détection d'une gamma-caméra (collimateur, cristal NaI(Tl), photomultiplicateurs, logique d'Anger) illustrant la cascade d'événements comptés dont le nombre N suit une loi de Poisson."
+          }
+        },
+        {
+          "title": "B2 - Résolution spatiale : FWHM, fonction de dispersion ponctuelle (PSF) et fonction de transfert de modulation (FTM/MTF)",
+          "text": "La **résolution spatiale** est le second pôle du compromis. Elle mesure la capacité du système à distinguer deux sources ponctuelles voisines, c'est-à-dire l'étalement d'un point sous l'effet des imperfections de la chaîne de détection.\n\n### Trois façons équivalentes de décrire le même flou\n\n- La **fonction de dispersion ponctuelle (PSF, *point spread function*)** — ou son analogue à une dimension, la **fonction d'étalement linéaire (LSF, *line spread function*)** — décrit la réponse du système à une source ponctuelle : un point réel devient une tache floue [2].\n- La **largeur à mi-hauteur (LMH / FWHM, *full width at half maximum*)** de cette PSF est la mesure scalaire de routine de la résolution : plus la LMH est petite, meilleure est la résolution [2].\n- La **fonction de transfert de modulation (FTM / MTF, *modulation transfer function*)** est la description la plus complète : transformée de Fourier de la LSF, elle donne le contraste transmis en fonction de la fréquence spatiale et intègre les effets de la diffusion et de la pénétration septale que la seule LMH ignore [source ScienceDirect HiReSPECT ; concept standard].\n\n### Composition quadratique de la résolution système (gamma-caméra)\n\nLes contributions indépendantes au flou s'additionnent **en quadrature** [2] :\n\n**R_système = √(R_intrinsèque² + R_collimateur²)**\n\n- **Résolution intrinsèque (R_i)** — localisation de la scintillation par le cristal NaI(Tl) et le réseau de photomultiplicateurs (typiquement **59 à 91 PM de 5,1–7,6 cm** [3]). À 140 keV, R_i ≈ **2,5–4 mm LMH** (meilleurs systèmes < 3 mm) [4]. Elle s'améliore comme **1/√E** (l'énergie plus élevée produit plus de lumière de scintillation, donc une meilleure localisation) [3]. En clinique, R_i est **négligeable devant la résolution du collimateur** [4].\n- **Résolution du collimateur (R_c)** — contribution **dominante**. Le collimateur impose R_c ≈ d(1 + b/h), où d = diamètre du trou, b = distance source–collimateur, h = longueur du trou [2]. La conséquence pratique majeure est que **la résolution se dégrade linéairement avec la distance source–détecteur**, d'où la règle de positionnement « détecteur au plus près » (§B4).\n\n### Valeurs de référence — collimateur LEHR au ⁹⁹ᵐTc (140 keV)\n\n| Distance source–détecteur | FWHM (LEHR) | Source |\n|---|---|---|\n| 0 cm (contact) | **4,2 mm** | [36] |\n| 10 cm | **7,2–7,5 mm** | [36][38] |\n| 20 cm | **12,3 mm** | [36] |\n\nGéométrie typique du trou LEHR : **diamètre 1,11 mm, longueur 23,6 mm** [36]. Le simple doublement de la distance (10 → 20 cm) dégrade la LMH de ~7,5 à ~12 mm : la distance patient–détecteur est le paramètre de résolution le plus directement maîtrisable au poste d'acquisition.\n\n### Résolution en énergie et rejet du diffusé\n\nLa capacité à séparer photopic et rayonnement diffusé conditionne le contraste. La **résolution en énergie du NaI(Tl) au ⁹⁹ᵐTc (140 keV) est ≈ 9–11 % de LMH** en routine (7–9 % pour les meilleurs systèmes) [3][39][40], et **s'améliore quand l'énergie augmente** (comme √E) [3]. Une bonne résolution en énergie autorise une **fenêtre photopic étroite** (typiquement **±7,5 à ±10 %** centrée sur 140 keV, soit ~15 % de largeur) qui rejette le diffusé — dont la ligne de réponse est faussée — sans sacrifier les vrais photons [3][39].\n\n### Limites physiques irréductibles de la résolution en TEP\n\nEn tomographie par émission de positons (TEP), la résolution du scanner se compose aussi en quadrature de termes en partie **irréductibles** [18] :\n\n**R_scanner = √(R_détecteur² + R_parcours² + R_180°² + b²)**\n\n| Terme | Valeur typique | Nature | Source |\n|---|---|---|---|\n| R_détecteur ≈ taille cristal / 2 | cristaux **3–4 mm** → facteur dominant | technologique | [18] |\n| R_parcours du positon (¹⁸F) | **≈ 0,2 mm** | physique, irréductible | [18] |\n| R_180° (non-colinéarité) = 0,0022 × D | **≈ 1,76 mm** pour D = 800 mm | physique, irréductible | [18] |\n\nLa non-colinéarité des deux photons de 511 keV (émis à ~180° ± 0,25°) impose une dégradation qui **croît avec le diamètre de l'anneau** : ~0,5 mm à Ø 10 cm, ~2,1 mm à Ø 80 cm [18]. Aucun progrès de détecteur ne les supprime — ce sont les planchers physiques de la résolution TEP.\n\n### Échantillonnage : accorder le pixel à la résolution\n\nPour ne pas dégrader la résolution physique, la **taille de pixel doit rester ≤ 1/3 de la LMH** (critère de Nyquist appliqué). La matrice **128×128** offre plus de cycles/mm qu'une matrice 64×64 [50], mais un pixel **trop fin gaspille les coups** (moins de coups/pixel → plus de bruit, §B1) tandis qu'un pixel **trop grossier bride la résolution**. Le **zoom ×2** divise la taille de pixel par deux (meilleure résolution) mais réduit les coups par pixel : il faut **×4 le temps** pour conserver la même statistique [50]. La matrice n'est donc pas un réglage gratuit : elle arbitre entre résolution et bruit à N constant.",
+          "stats": [
+            {
+              "value": "R = √(Ri² + Rc²)",
+              "label": "composition quadratique gamma-caméra"
+            },
+            {
+              "value": "4,2 → 12,3 mm",
+              "label": "FWHM LEHR de 0 à 20 cm de distance"
+            },
+            {
+              "value": "9–11 %",
+              "label": "résolution en énergie du NaI(Tl) à 140 keV"
+            },
+            {
+              "value": "≤ FWHM/3",
+              "label": "taille de pixel pour ne pas brider la résolution"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "PSF, LMH, FTM — pourquoi trois grandeurs ?",
+              "text": "La LMH est un scalaire commode mais réducteur : deux systèmes de même LMH peuvent transmettre des contrastes différents aux fréquences élevées. La FTM (transformée de Fourier de la LSF) restitue le contraste transmis fréquence par fréquence et intègre diffusion et pénétration septale, ce que la LMH seule ne capture pas. C'est la grandeur de référence pour comparer finement deux instruments."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — la résolution se dégrade avec la distance",
+              "text": "La résolution du collimateur, dominante, se dégrade linéairement avec la distance source–détecteur : la LMH LEHR passe de ~4 mm au contact à ~12 mm à 20 cm [36]. Une orbite SPECT non contournante (rayon fixe) éloigne inutilement le détecteur et floute l'image. Toujours privilégier une orbite au plus près du patient."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma d'une détection en coïncidence TEP : deux photons de 511 keV émis à ~180°, illustrant la non-colinéarité et le parcours du positon qui bornent physiquement la résolution spatiale du scanner."
+          }
+        },
+        {
+          "title": "B3 - Sensibilité, efficacité de détection, temps mort et débit de comptage",
+          "text": "La **sensibilité** est le troisième pôle du compromis : c'est le nombre de coups enregistrés par unité d'activité présente. Elle fixe, à activité et temps donnés, la valeur de N — donc directement le RSB (§B1). Formellement, la sensibilité système est le produit de deux efficacités :\n\n**Sensibilité = efficacité géométrique × efficacité intrinsèque** [20]\n\n### Efficacité intrinsèque : le cristal\n\nAu photopic de 140 keV, l'efficacité intrinsèque de détection du cristal NaI(Tl) atteint **70–90 %** selon l'épaisseur (**6,4 à 12,7 mm**, soit ~20 % d'écart entre les deux) ; la gamme optimale des gamma-caméras se situe entre **100 et 200 keV** [3]. Un cristal plus épais capte davantage de photons (↑ sensibilité) mais dégrade la résolution intrinsèque : premier arbitrage matériel.\n\n### Efficacité géométrique : le collimateur, verrou de la sensibilité SPECT\n\nEn SPECT, le collimateur ne laisse passer qu'une fraction infime des photons émis : c'est lui qui détermine l'efficacité géométrique et incarne le **compromis résolution ↔ sensibilité** le plus dur de la médecine nucléaire.\n\n| Collimateur (⁹⁹ᵐTc) | Sensibilité à 10 cm | Résolution | Source |\n|---|---|---|---|\n| **LEHR** (haute résolution) | **63,1 cps/MBq** | meilleure (FWHM ~7,2 mm) | [19][38] |\n| **LEAP / LEGP** (usage général) | **112,6 cps/MBq** | moindre | [20][21] |\n\nUn collimateur haute résolution a une résolution **~3× meilleure** qu'un collimateur haute sensibilité mais ne transmet qu'**~1/10 des coups** pour une activité donnée [37]. Le lien est quasi quadratique : réduire ou allonger les trous pour gagner en netteté fait **chuter la sensibilité approximativement au carré** — il faut alors plus de temps ou d'activité pour retrouver le même N (§B4).\n\n### Temps mort et débit de comptage : le plafond à haute activité\n\nÀ fort débit, les événements se chevauchent dans l'électronique et sont perdus : c'est le **temps mort**. Chaque étage a un comportement **paralysable ou non-paralysable** ; la conséquence commune est une **non-linéarité** entre activité réelle et coups enregistrés, donc une **sous-estimation de l'activité** aux hauts débits [28].\n\n- En routine ⁹⁹ᵐTc + fenêtre ~15 %, le temps mort typique est de **4–8 µs** [28].\n- À 5 µs et un débit de **4 × 10⁴ cps**, on observe **~20 % de pertes de comptage** [28].\n\nLe temps mort borne par le haut ce que l'on peut gagner en augmentant l'activité : au-delà d'un certain débit, injecter plus n'augmente plus proportionnellement N — et fausse la quantification.\n\n### Le débit utile en TEP : NECR, la métrique reine\n\nEn TEP, trois types de coïncidences coexistent [7] :\n- **Vraies (T)** — deux photons de 511 keV d'une même annihilation, non diffusés → ligne de réponse (LDR) correcte.\n- **Diffusées (S)** — au moins un photon a subi un Compton → LDR faussée, contraste dégradé.\n- **Fortuites / randoms (R)** — deux photons d'annihilations différentes dans la fenêtre temporelle → LDR aléatoire.\n\nS et R ne reflètent pas la vraie position et **dégradent l'image** ; leur soustraction, indispensable, **rajoute du bruit** [7]. La métrique qui synthétise le débit *utile* est le **taux de comptage équivalent-bruit (NECR, *noise equivalent count rate*)** :\n\n**NECR = T² / (T + S + R)** [6][42]\n\nLe NECR est le taux de vraies coïncidences qu'il faudrait dans un système idéal (sans S ni R) pour obtenir le même RSB que le système réel [5]. Il prédit le **carré du RSB de l'image** : **RSB_image ∝ √(NECR)** [5]. Un scanner clinique récent atteint un **NECR pic ~430 kcps** et une **sensibilité NEMA ~12–33 cps/kBq** selon la génération [42].\n\n### Le temps de vol (TOF) : gagner du RSB sans gagner de coups\n\nLa mesure de la différence d'arrivée des deux photons (temps de vol, *time of flight*) restreint la localisation le long de la LDR : Δx = c·Δt/2 [45]. Le gain de RSB vaut **√(D / Δx)** où D est le diamètre du patient [45]. Avec une résolution temporelle de coïncidence commerciale de **~200–214 ps**, le gain de RSB atteint **~3,7×** pour un patient de **40 cm** [45]. Corollaire clinique : le bénéfice du TOF **croît avec la corpulence** — maximal chez le patient obèse, minimal chez l'enfant.",
+          "steps": [
+            {
+              "title": "1 · Émission",
+              "text": "Le radionucléide émet le photon utile — γ 140 keV (⁹⁹ᵐTc) ou 2×511 keV (émetteurs β⁺). L'activité et la période fixent le flux disponible [3]."
+            },
+            {
+              "title": "2 · Sélection géométrique",
+              "text": "Le collimateur (SPECT) ou la fenêtre de coïncidence (TEP) ne retient qu'une fraction des photons — c'est l'efficacité géométrique, verrou principal de la sensibilité [20]."
+            },
+            {
+              "title": "3 · Détection dans le cristal",
+              "text": "Interaction dans le NaI(Tl) : efficacité intrinsèque 70–90 % au photopic de 140 keV, croissante avec l'épaisseur du cristal [3]."
+            },
+            {
+              "title": "4 · Sélection en énergie",
+              "text": "La fenêtre photopic rejette le diffusé ; trop étroite elle perd des vrais coups, trop large elle laisse passer le diffusé [3]."
+            },
+            {
+              "title": "5 · Enregistrement",
+              "text": "À fort débit, le temps mort (4–8 µs) provoque des pertes de comptage et une non-linéarité : le coup enregistré peut manquer à l'appel [28]."
+            }
+          ],
+          "stats": [
+            {
+              "value": "63 vs 113 cps/MBq",
+              "label": "sensibilité LEHR vs LEGP (⁹⁹ᵐTc, 10 cm)"
+            },
+            {
+              "value": "~20 %",
+              "label": "pertes par temps mort à 4×10⁴ cps (τ = 5 µs)"
+            },
+            {
+              "value": "T²/(T+S+R)",
+              "label": "NECR — débit utile en TEP"
+            },
+            {
+              "value": "~3,7×",
+              "label": "gain de RSB par le TOF (patient 40 cm)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Précaution — le temps mort fausse la quantification à haute activité",
+              "text": "Aux forts taux de comptage, le chevauchement des événements fait perdre des coups (~20 % à 4×10⁴ cps, τ = 5 µs) et sous-estimer l'activité [28]. Toute quantification en début d'acquisition d'un traceur à décroissance rapide, ou après une injection de forte activité, doit tenir compte de la correction de temps mort du système."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le NECR, pas les coups bruts",
+              "text": "Comparer deux protocoles ou deux scanners TEP sur les seuls coups totaux est trompeur : diffusés et fortuits gonflent le comptage sans porter d'information. Le NECR = T²/(T+S+R) est le débit utile, et RSB_image ∝ √NECR [5][6]. C'est la métrique à maximiser — d'où l'intérêt des détecteurs numériques SiPM, du TOF et des grands champs axiaux."
+            }
+          ]
+        },
+        {
+          "title": "B4 - Le compromis fondamental résolution-sensibilité-bruit : pourquoi améliorer l'un dégrade l'autre",
+          "text": "Les trois sections précédentes ont isolé les pôles ; celle-ci les noue. En médecine nucléaire, **on ne gagne jamais gratuitement** : chaque optimisation d'un pôle se paie sur un autre. La qualité d'image finale résulte d'un **arbitrage à quatre pôles — bruit ↔ résolution ↔ sensibilité ↔ dose/temps** — dont aucun ne s'améliore isolément.\n\n### Le quadrilatère du compromis\n\n| Levier actionné | Ce qu'il améliore | Ce qu'il dégrade | Loi quantitative | Source |\n|---|---|---|---|---|\n| ↑ Temps **ou** ↑ Activité | Bruit (↑ RSB) | Dose patient / débit-salle | RSB ∝ √N ; ÷2 bruit ⇒ ×4 N | [1][26] |\n| ↑ Résolution collimateur | Netteté | Sensibilité (↑ bruit à N constant) | R_c ↓ ⇒ sensibilité ↓ ~au carré | [19][37] |\n| ↑ Sensibilité (LEGP, cristal épais) | Comptage / bruit | Résolution | idem, sens inverse | [20][37] |\n| ↑ Taille de pixel / matrice grossière | Bruit par pixel | Résolution | %bruit = 100/√N_pixel | [50] |\n| ↑ Itérations OSEM | Contraste / convergence | Bruit (amplification) | post-filtre nécessaire | [47][48] |\n\nLa lecture de ce tableau est la clé du métier : **améliorer la résolution** (trous de collimateur plus fins/longs) fait chuter la sensibilité ~au carré [19][37], donc élève le bruit à durée constante ; **améliorer la sensibilité** (LEGP, cristal épais) dégrade la résolution ; **réduire le bruit** par filtrage passe-bas ou par pixels plus gros sacrifie la résolution ; **réduire la dose** (activité) élève le bruit si le temps ou la sensibilité ne compensent pas.\n\n### Deux natures de compromis : matériel et logiciel\n\n- **Compromis matériel (résolution ↔ sensibilité)** — figé par le collimateur, le cristal, la géométrie du détecteur. On le règle au choix du collimateur (LEHR vs LEGP) et de l'épaisseur de cristal [37].\n- **Compromis logiciel (résolution ↔ bruit)** — modulable à la reconstruction. La **reconstruction itérative OSEM** (*ordered subset expectation maximisation*) restaure contraste et résolution **tout en maîtrisant le bruit**, contrairement à la rétroprojection filtrée (FBP) qui **amplifie le bruit** [16][17]. Mais plus d'itérations = meilleure convergence quantitative **et** amplification du bruit : on limite donc les itérations et on applique un **post-filtre** de lissage [47]. Optimum documenté en SPECT de perfusion myocardique : **~2 itérations × 10–12 sous-ensembles** (≈ 90–120 mises à jour), filtre gaussien LMH ~13–15 mm [16]. Un **filtre de Butterworth** passe-bas (ex. F_c ~0,20, ordre 6 pour les images à faible comptage) lisse le bruit haute fréquence mais **dégrade la résolution** [51] : le compromis résolution/bruit se rejoue à chaque reconstruction. Les méthodes **régularisées** (BSREM/Q.Clear) atteignent la pleine convergence en préservant les bords et en contrôlant le bruit [48][49].\n\n### Placer le curseur : la logique d'optimisation de protocole\n\nOptimiser un protocole, c'est **choisir où placer le curseur sur chaque axe** pour que le **RSB/RCB dépasse le seuil de Rose (3–5)** sur la structure d'intérêt (§B1), au coût minimal en dose et en temps :\n\n1. **Cible de comptage** — fixer activité × temps pour atteindre N (SPECT) ou le NECR (TEP) requis, sous contrainte ALARA (*as low as reasonably achievable*).\n2. **Collimateur** — LEHR si la résolution prime, LEGP si le comptage prime [37].\n3. **Matrice / pixel** — accorder au ≤ FWHM/3, éviter le sur-échantillonnage qui gonfle le bruit par pixel [50].\n4. **Positionnement** — détecteur au plus près (R_c ∝ distance, §B2).\n5. **Reconstruction** — itératif + corrections (atténuation, diffusé) plutôt que FBP [16].\n\nLes activités administrées suivent cette logique. La formule EANM pour la ¹⁸F-FDG (**activité = 1050 × (poids/75)² / durée par lit**, recouvrement ≤ 30 %) augmente **quadratiquement** l'activité chez le patient lourd pour compenser la chute de RSB liée à l'atténuation [53] ; au-delà de **90 kg**, on privilégie l'**allongement du temps par lit** plutôt qu'un surcroît d'activité [53]. Sur les systèmes récents, un temps de **2 min/pas de lit** peut égaler cliniquement 10 min, à condition de maintenir le NECR/RSB cible [25].\n\n### Message-clé : déplacer les compromis, plutôt que les subir\n\nLe bruit poissonien est **irréductible** : il ne dépend que du nombre total de coups (RSB = √N). Aucune astuce ne le supprime. En revanche, les technologies récentes — **TOF, détecteurs numériques SiPM, très grands champs axiaux (LAFOV), reconstruction régularisée et IA** — **déplacent favorablement** l'ensemble du quadrilatère : plus de sensibilité se convertit, au choix, en **moins de dose** ou en **moins de bruit à dose égale** [25][55]. C'est le seul moyen de sortir par le haut d'un arbitrage qui, à instrument donné, reste un jeu à somme nulle.",
+          "stats": [
+            {
+              "value": "R_c ↓ ⇒ sens. ↓²",
+              "label": "améliorer la résolution coûte la sensibilité ~au carré"
+            },
+            {
+              "value": "OSEM > FBP",
+              "label": "l'itératif maîtrise le bruit, la FBP l'amplifie"
+            },
+            {
+              "value": "(poids/75)²",
+              "label": "activité FDG EANM — hausse quadratique avec le poids"
+            },
+            {
+              "value": "> seuil de Rose (3–5)",
+              "label": "cible d'optimisation sur la structure d'intérêt"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — matériel vs logiciel",
+              "text": "Le compromis résolution ↔ sensibilité est **matériel** (collimateur, cristal, géométrie) : il se choisit avant l'acquisition. Le compromis résolution ↔ bruit est **logiciel** (itérations OSEM, post-filtre, taille de pixel) : il se règle à la reconstruction. Confondre les deux mène à sur-lisser une image déjà limitée par le collimateur, ou à monter les itérations sur un comptage insuffisant — dans les deux cas on dégrade sans rien gagner."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — le sur-échantillonnage trompeur",
+              "text": "Augmenter la taille de matrice (ou le zoom) sans augmenter N redistribue les mêmes coups sur plus de pixels : le comptage par pixel chute et le bruit par pixel monte (%bruit = 100/√N_pixel) [50]. Une image « plus fine » à N constant est souvent une image plus bruitée, pas plus résolue. Le zoom ×2 exige ×4 le temps pour conserver la statistique."
+            },
+            {
+              "type": "info",
+              "title": "Le levier qui déplace tout le quadrilatère",
+              "text": "TOF, SiPM, LAFOV et reconstruction régularisée/IA augmentent la sensibilité effective, ce qui autorise soit une réduction d'activité (donc de dose patient et personnel), soit une réduction du bruit à dose égale [25][55]. C'est la seule façon de gagner sur plusieurs pôles à la fois, là où un instrument donné impose un jeu à somme nulle."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma du principe ALARA (temps, distance, écran) rappelant que l'activité administrée — pôle « dose » du compromis à quatre pôles — est le levier à minimiser tout en garantissant un comptage suffisant pour le diagnostic."
+          }
+        },
+        {
+          "title": "C1 - Lire le bruit sur une image : mottling, speckle et artefacts statistiques",
+          "text": "**Le bruit visible sur une image de médecine nucléaire n'est pas un défaut de la caméra : c'est la signature directe de la statistique de Poisson.** Chaque pixel accumule un nombre fini de coups N, et parce que la désintégration radioactive et la détection photonique sont des processus aléatoires indépendants, N fluctue d'un pixel à l'autre selon une **loi de Poisson dont la variance égale la moyenne** [1][2][26]. L'écart-type du comptage par pixel vaut donc **σ = √N**, et l'incertitude relative — le grain que perçoit l'œil — vaut **%σ = 100/√N** [1]. Le bruit d'une image est ainsi *lisible* : plus les pixels sont sombres (peu de coups), plus ils sont bruités.\n\nCe grain porte un nom clinique : le **mottling** (moutonnement statistique). Il se manifeste par une texture granuleuse hétérogène, parfois structurée en petits amas (**speckle**), qui **augmente là où le comptage local chute** — régions de faible captation, atténuation profonde, ou pixels périphériques d'une matrice trop fine. Le tableau ci-dessous rend concret le lien entre comptage par pixel et bruit perçu [1]:\n\n| Coups par pixel (N) | Écart-type σ = √N | Bruit relatif %σ = 100/√N | Perception |\n|---|---|---|---|\n| 100 | 10 | **10 %** | Grain marqué (mottling net) |\n| 400 | 20 | **5 %** | Grain visible |\n| 10 000 | 100 | **1 %** | Image lisse |\n| 40 000 | 200 | **0,5 %** | Très lisse |\n\n**Le corollaire pratique est la loi des rendements décroissants.** Comme le rapport signal/bruit (RSB) progresse en **RSB = N/√N = √N** [1][2][26], doubler l'activité ou le temps d'acquisition ne réduit le bruit relatif que d'un facteur √2, soit **≈ −29 %** seulement. Pour **diviser le bruit par 2, il faut quadrupler N** — donc ×4 le temps ou l'activité [1][26]. Le comptage étant proportionnel au produit activité × temps × sensibilité, tout gain de qualité par simple allongement d'examen se paie cher.\n\n**Distinguer le vrai bruit statistique des artefacts structurés** est la compétence-clé de la lecture. Un mottling diffus, aléatoire, qui *change de place* d'une acquisition à l'autre est du bruit poissonien pur. À l'inverse, un motif fixe et reproductible trahit un **artefact instrumental** : les **artefacts en anneau** de la TEMP (SPECT, tomographie d'émission monophotonique) naissent d'une **non-uniformité de champ** amplifiée par la rotation, et non du hasard [22]. C'est pourquoi le test d'uniformité est le contrôle qualité (CQ) le plus sensible et **quotidien** avant tout usage clinique [31][33][34], avec des tolérances attendues de l'ordre de **uniformité intrinsèque < 2,5 %** sur le champ central en TEMP [31].",
+          "stats": [
+            {
+              "value": "σ = √N",
+              "label": "Écart-type du comptage (loi de Poisson)"
+            },
+            {
+              "value": "10 000 coups",
+              "label": "Pour un bruit relatif de 1 %"
+            },
+            {
+              "value": "≈ −29 %",
+              "label": "Gain de bruit en doublant le temps"
+            },
+            {
+              "value": "×4",
+              "label": "Coups nécessaires pour diviser le bruit par 2"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - le sur-echantillonnage matriciel",
+              "text": "Augmenter la taille de matrice **sans augmenter N** redistribue les mêmes coups sur plus de pixels : le comptage par pixel chute, donc le bruit par pixel monte (%σ = 100/√N_pixel) [50]. Un **zoom ×2** divise le pixel par deux mais réduit les coups/pixel d'autant : il faut **×4 le temps** pour retrouver la même statistique [50]. Une matrice fine ne « gagne » de la résolution que si la statistique suit."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - propagation apres soustraction de fond",
+              "text": "Sur une image après soustraction du bruit de fond, l'incertitude sur le comptage net s'obtient en quadrature : **σ_net = √(N_brut + N_bdf)** [29][30]. À faible comptage, cette incertitude peut **dépasser le comptage net lui-même**, rendant une petite lésion (ou une fixation thyroïdienne quantifiée) indiscernable du fond [29]. Un ROI « positif » sur peu de coups n'est pas fiable."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection d'une gamma-caméra : collimateur, cristal NaI(Tl), photomultiplicateurs et électronique de positionnement — chaque étage introduit soit une perte de coups (bruit), soit un flou (résolution).",
+            "caption": "Fig. 1 — La chaîne de détection : le comptage fini de chaque pixel est la source du bruit poissonien lu sur l'image."
+          }
+        },
+        {
+          "title": "C2 - Détectabilité d'une lésion : contraste, CNR et critère de Rose",
+          "text": "**Voir une lésion, ce n'est pas qu'une question de contraste : c'est une question de contraste *rapporté au bruit*.** Une lésion se définit par son **contraste-sujet** C_S = (A_L − A_T)/A_T (A_L = activité lésion, A_T = tissu de fond) et, sur l'image, par son **contraste-image** C_I = (S_L − S_T)/S_T (S = coups par unité de surface) [2]. Mais un contraste élevé noyé dans le mottling reste invisible. La grandeur qui gouverne réellement la détectabilité est le **rapport contraste/bruit (RCB, ou CNR pour *contrast-to-noise ratio*)**, qui rapporte la différence lésion–fond à l'écart-type du bruit.\n\nPour une lésion de T coups sur un fond de B coups, le RCB poissonien s'écrit **RCB = (T − B)/√(T + B)** [1]. Cette formule explique pourquoi la détectabilité *s'améliore comme √N* : elle-même dépend de la racine du comptage. Doubler le contraste physiologique d'un traceur ou quadrupler les coups produisent le même gain de détectabilité — d'où l'arbitrage permanent entre pharmacologie de la cible et statistique de l'acquisition.\n\n**Le critère de Rose fixe le seuil quantitatif du « combien de coups faut-il pour voir ? ».** Un objet n'est détecté de façon fiable par un observateur humain que si son **RCB ≥ 3 à 5** ; en tomographie d'émission, on retient typiquement **RCB ≥ 4**, le seuil de **5** (signal ≥ 5 écarts-types au-dessus du fond) étant le plus cohérent avec les performances des observateurs réels [8][9][52]. La valeur exacte dépend de la taille, de la forme, de la netteté des bords de l'objet, de la distance d'observation et de l'expérience du lecteur [9].\n\n| RCB (CNR) | Détectabilité (critère de Rose) | Conséquence clinique |\n|---|---|---|\n| < 3 | Non fiable | **Faux négatif** possible ; le bruit peut **mimer** une lésion (faux positif) [8] |\n| 3 – 5 | Seuil / limite | Détection incertaine, dépendante de l'observateur [9][52] |\n| ≥ 4 – 5 | Fiable | Lésion perçue avec confiance [8][52] |\n\n**En TEP, la métrique équivalente au niveau du système est le NECR** (*noise equivalent count rate*, taux de comptage équivalent-bruit). La TEP (tomographie par émission de positons) distingue trois familles de coïncidences : **vraies (T)**, **diffusées (S)** et **fortuites/randoms (R)** ; seules les vraies portent l'information de position, S et R dégradent le contraste [6][7]. Le NECR agrège ces effets en **NECR = T² / (T + S + R)** [6][7] : c'est le taux de vraies coïncidences qui donnerait, dans un système idéal sans S ni R, le même RSB que le système réel [5]. Le NEC est un bon prédicteur du **RSB² de l'image (RSB ∝ √NEC)** [5], ce qui en fait le proxy système du critère de Rose : optimiser le NECR, c'est maximiser la probabilité de dépasser le seuil de détectabilité sur la lésion d'intérêt.",
+          "stats": [
+            {
+              "value": "RCB ≥ 3–5",
+              "label": "Critère de Rose (seuil de détectabilité)"
+            },
+            {
+              "value": "RCB ≈ 4",
+              "label": "Seuil usuel en tomographie d'émission"
+            },
+            {
+              "value": "T²/(T+S+R)",
+              "label": "NECR — proxy système du RSB² en TEP"
+            },
+            {
+              "value": "RSB ∝ √NEC",
+              "label": "Lien NEC ↔ bruit de l'image TEP"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Point expert - le TOF deplace le seuil",
+              "text": "En TEP, le temps de vol (TOF) réduit l'incertitude de localisation le long de la ligne de réponse (Δx = c·Δt/2) et apporte un **gain de RSB = √(2D/(c·Δt))** [45][46]. Avec une résolution temporelle commerciale **~200–214 ps**, le gain atteint **~3,7×** pour un patient de 40 cm de diamètre [45]. Le bénéfice croît avec la taille du sujet : maximal chez le patient obèse, minimal en pédiatrie. Le **RSB image du FDG est proportionnel à √(TOF-NECR)** [44]."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - le faible comptage dans les deux sens",
+              "text": "Sous le seuil de Rose, l'erreur va dans les deux sens : une lésion réelle peut rester **invisible** (faux négatif) et une fluctuation de bruit peut **simuler une lésion** focale (faux positif) [8]. Avant de conclure sur un petit foyer douteux, vérifier le niveau de comptage local et sa reproductibilité sur une seconde reconstruction ou un cliché tardif."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Les trois types de coïncidences en TEP : vraies (T), diffusées (S) et fortuites (R) — seules les vraies pointent vers le lieu réel d'annihilation ; S et R dégradent le contraste et entrent dans le NECR.",
+            "caption": "Fig. 2 — Vraies, diffusées et fortuites : le NECR = T²/(T+S+R) résume leur effet net sur la détectabilité."
+          }
+        },
+        {
+          "title": "C3 - Effet de volume partiel et résolution : quand l'image ment sur l'intensité et la taille",
+          "text": "**La résolution spatiale finie fait mentir l'image sur deux plans à la fois : elle floute les contours (la lésion paraît plus grosse) et elle dilue l'activité (la lésion paraît moins intense).** C'est l'**effet de volume partiel (EVP)**, conséquence directe de la fonction d'étalement (PSF) du système. La résolution s'exprime en **largeur à mi-hauteur (LMH, FWHM)** de cette fonction, et la résolution système résulte d'une **combinaison quadratique** [2][3]:\n\n**R_système = √(R_intrinsèque² + R_collimateur²)** (gamma-caméra)\n\nLa **résolution intrinsèque** (cristal NaI(Tl) + photomultiplicateurs) vaut **2,5–4 mm LMH à 140 keV** et s'améliore en 1/√E [3][4]. Mais elle est **négligeable devant la résolution du collimateur**, qui domine et — point capital pour l'EVP — **se dégrade linéairement avec la distance source-détecteur** [2][3]. Pour un collimateur LEHR (*low-energy high-resolution*) au ⁹⁹ᵐTc, la LMH mesurée passe de **4,2 mm au contact à 7,5 mm à 10 cm et 12,3 mm à 20 cm** [36]. En TEP, la résolution est limitée par la taille du cristal (**≈ cristal/2**, cristaux de **3–4 mm**), le parcours du positon (**≈ 0,2 mm pour le ¹⁸F**) et la non-colinéarité (**0,0022 × D**, soit ~1,76 mm pour un anneau de 800 mm) [18].\n\n**Règle clinique de l'EVP :** un objet dont la plus petite dimension est **inférieure à ~2–3 fois la LMH** subit une **sous-estimation de son activité** (le pic est étalé et abaissé) et une **surestimation de sa taille** (les bords sont flous). Concrètement, avec une LMH de ~7 mm à 10 cm, une lésion de moins de ~15–20 mm voit son intensité mesurée chuter — piège majeur pour toute quantification (SUV, fixation, score).\n\n| Distance source-détecteur | LMH LEHR (⁹⁹ᵐTc) | Seuil d'EVP marqué (~2×LMH) |\n|---|---|---|\n| Contact (0 cm) | **4,2 mm** [36] | ~8 mm |\n| 10 cm | **7,5 mm** [36] | ~15 mm |\n| 20 cm | **12,3 mm** [36] | ~25 mm |\n\n**L'échantillonnage doit suivre la résolution, sans la dépasser.** Pour ne pas dégrader la résolution intrinsèque du système, la **taille de pixel doit rester ≤ LMH/3** (application du critère de Nyquist). Un pixel plus fin ne restaure aucun détail réel mais gaspille les coups et **augmente le bruit par pixel** (cf. §C1) ; un pixel plus grossier bride la résolution. La matrice **128×128** offre davantage de cycles/mm qu'une matrice 64×64, à condition que le comptage suive [50].\n\n**En pratique, l'EVP se combat par le positionnement et la reconstruction.** Minimiser la distance source-détecteur (R_c ∝ distance) est le levier le plus simple [2]. La **récupération de résolution** (*resolution recovery*, modélisation de la PSF dans la reconstruction itérative) restaure une part de l'intensité perdue et du contraste, mais **au prix d'un bruit corrélé** et d'artefacts de rebond (*Gibbs ringing*) autour des bords à fort contraste — un compromis développé en §C4.",
+          "stats": [
+            {
+              "value": "4,2 → 12,3 mm",
+              "label": "LMH LEHR au ⁹⁹ᵐTc : 0 → 20 cm"
+            },
+            {
+              "value": "pixel ≤ LMH/3",
+              "label": "Échantillonnage sans perte de résolution"
+            },
+            {
+              "value": "3–4 mm",
+              "label": "Taille de cristal TEP (facteur dominant)"
+            },
+            {
+              "value": "≈ 0,2 mm",
+              "label": "Parcours du positon du ¹⁸F"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piege - la resolution qui degrade la quantification",
+              "text": "L'EVP est la première cause d'erreur de quantification en médecine nucléaire : une petite lésion avide peut afficher un SUV ou une fixation **artificiellement bas** simplement parce qu'elle est sous la résolution, non parce qu'elle est peu active. Toujours rapporter la mesure à la taille de la lésion et à la distance d'acquisition avant de conclure à une faible avidité."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert - resolution en energie et rejet du diffuse",
+              "text": "La résolution *en énergie* (distincte de la résolution spatiale) conditionne la largeur de fenêtre : le NaI(Tl) offre **9–11 % de LMH à 140 keV** [3][39][40], permettant une fenêtre photopic étroite (~±10 %, ~15 %) qui rejette le diffusé sans perdre trop de vrais coups [3]. Une fenêtre trop large laisse entrer le diffusé (perte de contraste) ; trop étroite, elle sacrifie des coups (hausse du bruit)."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Étalement d'une source ponctuelle par la fonction de dispersion du système : plus la distance au détecteur augmente, plus la largeur à mi-hauteur croît, diluant l'intensité et gonflant la taille apparente de la lésion.",
+            "caption": "Fig. 3 — L'effet de volume partiel : la résolution finie sous-estime l'intensité et surestime la taille des petites lésions."
+          }
+        },
+        {
+          "title": "C4 - Impact de la reconstruction sur le couple bruit-résolution : filtres, itérations, régularisation",
+          "text": "**La reconstruction ne crée pas d'information : elle répartit un budget fixe de coups entre résolution et bruit.** C'est le second grand curseur du compromis (le premier étant matériel : collimateur, cristal). Le choix entre rétroprojection filtrée (FBP) et méthodes itératives, puis le réglage des itérations, du filtre et de la régularisation, déplacent le point de fonctionnement le long de la courbe bruit ↔ résolution ↔ quantification.\n\n**Itératif contre FBP.** La rétroprojection filtrée **amplifie le bruit** haute fréquence et produit des artefacts en étoile. Les algorithmes **itératifs — OSEM** (*ordered subset expectation maximisation*) — divisent les projections en sous-ensembles, accélèrent la convergence et intègrent les corrections physiques (atténuation, diffusé, récupération de résolution), **restaurant contraste et résolution tout en maîtrisant le bruit** [16][17][47]. En TEMP de perfusion myocardique, l'optimum documenté est de **~2 itérations × 10–12 sous-ensembles** (soit ~90–120 mises à jour) avec un post-filtre gaussien LMH ~13–15 mm [16].\n\n**Le dilemme fondamental de l'itératif : itérations vs bruit.** Plus on itère, meilleure est la **convergence quantitative** (récupération du contraste et de l'intensité vraie), mais **plus le bruit est amplifié** [47]. On limite donc le nombre d'itérations et l'on applique un **post-filtre de lissage**, ce qui *re-dégrade* volontairement la résolution pour contenir le bruit. Chaque reconstruction est ainsi un arbitrage explicite.\n\n| Réglage | Effet sur la résolution / le contraste | Effet sur le bruit |\n|---|---|---|\n| ↑ Nombre d'itérations (OSEM) | Meilleure convergence, contraste ↑ [47] | **Bruit amplifié** [47] |\n| ↑ Nombre de sous-ensembles | Convergence accélérée | Peut ↑ bruit / instabilité [47] |\n| Post-filtre passe-bas (Butterworth, gaussien) | **Résolution dégradée** | Bruit ↓ (lissage) [50][51] |\n| Récupération de résolution (PSF) | Résolution & contraste ↑↑ | Bruit corrélé, rebond de Gibbs |\n| Régularisation (BSREM / Q.Clear) | Contraste préservé jusqu'à pleine convergence | **Bruit contrôlé** [47][48][49] |\n\n**Le filtrage passe-bas est un compromis résolution/bruit à chaque reconstruction.** Un filtre de **Butterworth** lisse d'autant plus que sa fréquence de coupure est basse : pour des images à faible comptage, des paramètres de l'ordre de **Fc ≈ 0,20 et ordre 6** sont rapportés comme optimaux [51][50]. Baisser la coupure supprime le bruit haute fréquence *et* les détails fins : on n'échange jamais l'un sans l'autre.\n\n**Les méthodes régularisées cassent partiellement le dilemme.** Les reconstructions à **vraisemblance pénalisée (BSREM / Q.Clear, priors de type MRP ou variation totale)** convergent **jusqu'à pleine convergence tout en contrôlant le bruit et en préservant les bords** [47][48][49], grâce à un terme de pénalité (β) qui remplace l'arrêt prématuré et le post-filtre. Elles autorisent une meilleure récupération de contraste des petites lésions à niveau de bruit égal — un déplacement favorable de la courbe, prolongé aujourd'hui par les reconstructions par apprentissage profond [47].",
+          "steps": [
+            {
+              "title": "1 · Choisir l'algorithme",
+              "text": "Privilégier l'itératif (OSEM) avec corrections d'atténuation, de diffusé et récupération de résolution ; réserver la FBP aux cas où sa linéarité est recherchée, en sachant qu'elle amplifie le bruit [16][17]."
+            },
+            {
+              "title": "2 · Régler itérations × sous-ensembles",
+              "text": "Fixer le nombre de mises à jour (itérations × sous-ensembles) au minimum assurant la convergence du contraste sur la structure d'intérêt ; au-delà, on n'ajoute que du bruit [47]. Repère TEMP myocardique : ~2 it. × 10–12 s.-e. [16]."
+            },
+            {
+              "title": "3 · Appliquer le post-filtre",
+              "text": "Choisir la coupure du filtre passe-bas (Butterworth/gaussien) selon le comptage : lissage plus fort à faible comptage (ex. Fc ≈ 0,20, ordre 6), en acceptant la perte de résolution associée [50][51]."
+            },
+            {
+              "title": "4 · Envisager la régularisation",
+              "text": "Sur les systèmes récents, préférer une reconstruction régularisée (BSREM/Q.Clear) réglée par β, qui atteint la pleine convergence en préservant les bords et en contrôlant le bruit — meilleur compromis pour les petites lésions [47][48][49]."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert - le budget de coups est fixe",
+              "text": "Aucun réglage de reconstruction ne fabrique du signal : à N coups donné, tout gain de résolution se paie en bruit et réciproquement. La reconstruction ne fait que **choisir où placer le curseur** sur une courbe dont la position absolue est fixée par le comptage (activité × temps × sensibilité). Pour déplacer la *courbe entière*, il faut agir sur le matériel (TOF, détecteurs numériques SiPM, LAFOV) ou sur le comptage."
+            },
+            {
+              "type": "warning",
+              "title": "Piege - la sur-iteration et le rebond de Gibbs",
+              "text": "Trop d'itérations, ou une récupération de résolution agressive, produisent un **rebond (overshoot de Gibbs)** aux interfaces à fort contraste : halos et pics d'intensité **artefactuels** pouvant mimer une hyperfixation focale ou fausser un SUV. Vérifier la reproductibilité d'un foyer suspect en modifiant les paramètres de reconstruction avant de conclure."
+            }
+          ],
+          "figure": {
+            "figureRef": "MPI_PROTOCOL",
+            "alt": "Courbe de compromis bruit-résolution en reconstruction itérative : l'augmentation des itérations améliore le contraste mais amplifie le bruit, tandis que le post-filtre et la régularisation déplacent le point de fonctionnement.",
+            "caption": "Fig. 4 — La reconstruction répartit un budget de coups fixe : itérations, filtre et régularisation choisissent le point sur la courbe bruit ↔ résolution."
+          }
+        },
+        {
+          "title": "D1 - Optimiser un protocole : activité, durée par projection et nombre de coups cible",
+          "text": "Optimiser un protocole revient à **placer le curseur** dans le quadrilatère bruit ↔ résolution ↔ sensibilité ↔ dose/temps, sachant qu'aucun pôle ne progresse sans qu'un autre régresse. Le point de départ est toujours le **nombre de coups cible** N imposé par le rapport signal/bruit (RSB) voulu sur la structure d'intérêt, car en statistique poissonienne la variance égale la moyenne : **σ = √N**, donc **RSB = N/√N = √N** et le bruit relatif vaut **%σ = 100/√N**.[1][2]\n\nDe là découle la règle opérationnelle centrale : le RSB ne croît que comme la **racine carrée** du comptage. Atteindre **1 % de bruit** exige **N = 10 000 coups** ; **5 %**, ~400 coups ; **10 %**, 100 coups ; **0,5 %**, 40 000 coups.[1][26] Comme **N ∝ activité × temps × sensibilité**, doubler la durée d'acquisition (ou l'activité) double N mais ne réduit le bruit relatif que d'un facteur √2 (≈ **−29 %**). Pour **diviser le bruit par deux**, il faut **quadrupler** N — donc ×4 le temps ou l'activité.[1][26] C'est la loi des rendements décroissants qui plafonne tout gain obtenu par simple allongement de l'examen.\n\nLa cible de comptage n'est pas arbitraire : elle est fixée par le **critère de Rose**. Une lésion n'est détectée de façon fiable que si son rapport contraste/bruit (RCB) — pour une région lésion T sur fond B, **RCB = (T − B)/√(T + B)** — dépasse **3 à 5**, le seuil de **4-5** étant le plus cohérent avec les performances des observateurs humains.[8][9][52] Autrement dit, la question « combien de coups faut-il ? » est en réalité « combien de coups pour que RCB > 4 sur la plus petite lésion pertinente ? ».\n\n**Exigences de comptage documentées par domaine** (ordres de grandeur institutionnels, à adapter au matériel) :\n\n| Domaine | Cible de comptage / paramètre | Source |\n|---|---|---|\n| Scintigraphie osseuse — flux sanguin (blood-pool) | matrice ≥ 128×128, **~300 000 coups/image** (150 000-200 000 pour les extrémités) | [11] |\n| SPECT de perfusion myocardique | détectabilité validée sur **0,8 à 6 Mcoups** par acquisition | [10] |\n| TEP/TDM ¹⁸F-FDG (systèmes récents) | **2 min/pas de lit** (≤ 3 min) équivalent à 10 min si le NEC/RSB cible est maintenu | [25] |\n\nLe **piège du sur-échantillonnage** doit être anticipé dès la conception : augmenter la taille de matrice sans augmenter N **redistribue les mêmes coups sur plus de pixels**, ce qui fait chuter le comptage par pixel et **monter le bruit par pixel** (%σ = 100/√N_pixel). Un zoom ×2 divise la taille de pixel par 2 (meilleure résolution nominale) mais exige **×4 le temps** pour conserver la statistique par pixel.[50] La taille de pixel doit rester cohérente avec la résolution (voir D3).\n\nCôté **activité**, l'EANM formalise le levier « dose » du compromis. Pour la TEP-FDG adulte, l'activité minimale suit une relation **quadratique avec le poids** : **FDG (MBq) = 1050 × (poids/75)² / durée par lit (min)** si recouvrement de lits ≤ 30 %, et **525 × (poids/75)² / durée par lit** si recouvrement > 30 %.[53] La forme quadratique compense l'atténuation accrue chez les patients lourds ; au-delà de **90 kg**, on privilégie l'**allongement du temps par lit** plutôt qu'une nouvelle hausse d'activité.[53] En pédiatrie, la carte de dose EANM fixe une **activité minimale recommandée** par traceur (¹⁸F-FDG : valeur de base **10,7 MBq**, minima révisés à **14 MBq en 3D** et **26 MBq en 2D**).[12][13][14]",
+          "steps": [
+            {
+              "title": "1. Fixer le RSB/RCB cible",
+              "text": "Déduire le comptage requis N de la structure la plus petite à détecter : RCB > 4 (critère de Rose) sur cette lésion, soit N tel que %σ = 100/√N soit acceptable (typiquement N ≥ 10 000 par région d'intérêt).[1][8]"
+            },
+            {
+              "title": "2. Choisir le couple activité × temps",
+              "text": "N ∝ activité × temps × sensibilité. Appliquer la formule EANM quadratique (FDG) ou la densité de coups par image recommandée (os, cardiaque), en arbitrant contre la dose (ALARA).[53][11]"
+            },
+            {
+              "title": "3. Calibrer matrice et pixel",
+              "text": "Pixel ≤ FWHM/3 pour ne pas dégrader la résolution, mais éviter le sur-échantillonnage qui augmente le bruit par pixel ; un zoom ×2 impose ×4 le temps pour conserver la statistique.[50]"
+            },
+            {
+              "title": "4. Adapter aux gros patients",
+              "text": "Au-delà de ~90 kg, allonger le temps par lit plutôt que d'augmenter encore l'activité, l'atténuation dégradant le RSB.[53]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "10 000 coups",
+              "label": "N requis pour 1 % de bruit (%σ = 100/√N)"
+            },
+            {
+              "value": "×4",
+              "label": "Facteur sur N (temps/activité) pour diviser le bruit par 2"
+            },
+            {
+              "value": "RCB > 4",
+              "label": "Seuil de Rose de détectabilité fiable d'une lésion"
+            },
+            {
+              "value": "≈ −29 %",
+              "label": "Réduction du bruit en doublant seulement le temps"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — le sur-échantillonnage trompeur",
+              "text": "Augmenter la taille de matrice ou zoomer sans augmenter N ne crée pas d'information : les mêmes coups sont répartis sur plus de pixels, le comptage par pixel chute et **le bruit par pixel monte** (%σ = 100/√N_pixel). Un zoom ×2 exige **×4 le temps d'acquisition** pour retrouver la même statistique par pixel.[50]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — la loi des rendements décroissants",
+              "text": "Comme RSB ∝ √N, allonger indéfiniment une acquisition rapporte de moins en moins : passer de 5 à 10 min ne gagne que √2 sur le RSB (≈ −29 % de bruit). Au-delà d'un certain point, le gain de qualité ne justifie plus l'inconfort patient ni le risque de mouvement — mieux vaut agir sur la sensibilité (collimateur, détecteurs numériques, TOF, LAFOV)."
+            }
+          ],
+          "figure": {
+            "figureRef": "GAMMA_CAMERA",
+            "alt": "Chaîne de détection d'une gamma-caméra (collimateur, cristal NaI:Tl, photomultiplicateurs, logique d'Anger) : chaque étage arbitre entre perte de coups (sensibilité, bruit) et flou (résolution)."
+          }
+        },
+        {
+          "title": "D2 - Maîtriser le RSB en TEP : diffusé, fortuits, NECR et temps de vol",
+          "text": "En TEP (tomographie par émission de positons), la « cible » de la mesure est le **photon utile** dont la ligne de réponse (LDR) pointe vers le lieu réel d'annihilation. Trois types de coïncidences coexistent, et deux d'entre eux **corrompent** cette LDR :[6][7]\n\n- **Vraies (T)** : deux photons de 511 keV issus de la même annihilation, sans diffusion — LDR correcte.\n- **Diffusées (S)** : au moins un photon a subi un effet Compton → LDR faussée → perte de contraste.\n- **Fortuites / randoms (R)** : deux photons d'annihilations différentes détectés dans la même fenêtre temporelle → LDR aléatoire.\n\nS et R **ne reflètent pas la vraie position** : ils ajoutent un fond quasi-uniforme qui dégrade le contraste et, une fois soustraits, **augmentent le bruit** (la soustraction d'un terme poissonien propage sa propre variance).[7] D'où la nécessité d'une métrique qui intègre ces trois populations : le **taux de comptage équivalent-bruit (NECR, Noise Equivalent Count Rate)** :\n\n**NECR = T² / (T + S + R)**[6][5]\n\nSon interprétation est cruciale : le NECR est le taux de vraies coïncidences qu'il faudrait dans un système **idéal, sans diffusé ni fortuit**, pour obtenir le même RSB que le système réel.[5] Surtout, le **RSB de l'image est proportionnel à √NEC** (le NEC est un bon prédicteur du RSB²) : c'est pourquoi on optimise l'activité injectée et le temps par lit pour se placer **près du pic de NECR**, et non au-delà — car à fort débit, les randoms (∝ activité²) et le temps mort finissent par faire **chuter** le NECR alors même que l'activité augmente.[5][7] Pour un système clinique récent, la **sensibilité système est de ~12-33 cps/kBq** et le **pic de NECR de l'ordre de ~430 kcps**.[42]\n\n**Temps de vol (TOF).** Mesurer la différence d'arrivée Δt des deux photons localise l'annihilation le long de la LDR avec une incertitude **Δx = c·Δt/2** (c = célérité de la lumière).[45] Cette localisation partielle réduit le bruit propagé le long de la LDR, d'où un **gain de RSB** :\n\n**Gain SNR_TOF = √(2D / (c·Δt)) = √(D/Δx)**[45][46]\n\noù D est le diamètre du patient. Le bénéfice croît donc avec la **taille du sujet** : pour une résolution temporelle de coïncidence (CTR) commerciale de **~200-214 ps LMH**, le gain atteint **~3,7×** chez un patient de **40 cm** de diamètre.[45] Corollaire clinique : le TOF apporte peu en pédiatrie et sur les petits sujets, mais beaucoup chez le patient obèse — précisément là où l'atténuation dégrade le plus le comptage.\n\n**Attention à la métrique.** Le **NECR NEMA standard n'intègre pas** le gain apporté par le TOF ; un **TOF-NECR** a été proposé pour mieux caractériser les scanners corps entier, et le RSB de l'image ¹⁸F-FDG est alors proportionnel à **√(TOF-NECR)** (validé sur uEXPLORER).[44][42]\n\n| Levier TEP | Effet sur le RSB de l'image | Loi / ordre de grandeur | Source |\n|---|---|---|---|\n| Se rapprocher du pic de NECR | Maximise le RSB à dose donnée | RSB ∝ √NEC ; pic ~430 kcps (système récent) | [5][42] |\n| Correction de diffusé/randoms | Restaure le contraste mais ajoute du bruit | Soustraire R augmente la variance | [7] |\n| Temps de vol (TOF) | Gain net de RSB, croît avec la taille du patient | ~3,7× pour CTR 214 ps, D = 40 cm | [45] |\n| Détecteurs numériques SiPM / LAFOV | ↑ sensibilité → ↓ dose ou ↓ bruit | Réduction d'activité à qualité constante | [55] |",
+          "stats": [
+            {
+              "value": "NECR = T²/(T+S+R)",
+              "label": "Taux de comptage équivalent-bruit (métrique-clé TEP)"
+            },
+            {
+              "value": "RSB ∝ √NEC",
+              "label": "Le NEC prédit le RSB² de l'image reconstruite"
+            },
+            {
+              "value": "~200-214 ps",
+              "label": "Résolution temporelle de coïncidence (CTR) commerciale"
+            },
+            {
+              "value": "~3,7×",
+              "label": "Gain de RSB par TOF pour un patient de 40 cm"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — plus d'activité n'est pas plus de RSB",
+              "text": "Au-delà du pic de NECR, injecter davantage d'activité **dégrade** le RSB de l'image : les coïncidences fortuites augmentent comme le carré de l'activité et le temps mort fait perdre des vrais coups. Se placer au pic, ou légèrement en dessous, est l'optimum — d'où l'intérêt d'allonger le temps par lit chez le patient lourd plutôt que d'augmenter l'activité.[5][53]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le TOF profite surtout aux gros patients",
+              "text": "Le gain TOF vaut √(D/Δx) : il est proportionnel à la racine du rapport taille du patient / incertitude de localisation temporelle. Chez l'enfant ou le petit adulte, D est faible et le gain modeste ; chez le patient obèse, D est grand et le TOF compense en partie l'effondrement du comptage lié à l'atténuation. C'est un des rares leviers qui améliore le RSB **sans** coûter en dose ni en résolution.[45][46]"
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Coïncidences en TEP : vraie (T, ligne de réponse correcte), diffusée (S, un photon dévié par effet Compton) et fortuite (R, deux annihilations différentes) — S et R corrompent la LDR et entrent dans le calcul du NECR = T²/(T+S+R)."
+          }
+        },
+        {
+          "title": "D3 - Contrôle de qualité et métrologie : mesurer résolution, sensibilité, uniformité et NECR (NEMA)",
+          "text": "Le contrôle de qualité (CQ) transforme les grandeurs abstraites du compromis (bruit, résolution, sensibilité) en **mesures reproductibles**, encadrées par les normes **NEMA NU-1** (gamma-caméra/SPECT) et **NEMA NU 2** (TEP), relayées par les guides SNMMI, EANM et l'IAEA.[23][24][22]\n\n**Résolution spatiale.** Elle s'exprime par la **LMH (FWHM)** de la fonction d'étalement (PSF/LSF), la fonction de transfert de modulation (MTF) étant plus complète car elle intègre diffusion et pénétration septale.[50] En gamma-caméra, la **résolution système** combine en quadrature deux contributions : **R_système = √(R_intrinsèque² + R_collimateur²)**.[2][3] La résolution intrinsèque (localisation cristal + PM) est de **2,5-4 mm LMH à 140 keV** (< 3 mm sur les meilleurs systèmes) et s'améliore comme **1/√E** ; elle est **négligeable devant la résolution de collimateur**, qui domine et se dégrade **linéairement avec la distance source-détecteur**.[4][2] Pour un collimateur LEHR (basse énergie, haute résolution) au ⁹⁹ᵐTc : **4,2 mm LMH à 0 cm, 7,5 mm à 10 cm, 12,3 mm à 20 cm**.[36] En TEP, la résolution NEMA se mesure sur une source ponctuelle ¹⁸F à **10, 100 et 200 mm** du centre.[42][43]\n\n**Compromis résolution ↔ sensibilité (collimateur).** C'est la loi matérielle incontournable : un collimateur LEHR a une résolution **~3× meilleure** qu'un collimateur haute sensibilité mais ne laisse passer qu'**~1/10** des coups.[37] Chiffré : LEHR **~63,1 cps/MBq** à 10 cm contre **~112,6 cps/MBq** pour un collimateur usage général (LEAP/LEGP).[19][20] La sensibilité système = **efficacité géométrique × efficacité intrinsèque** ; améliorer la résolution en réduisant/allongeant les trous fait chuter la sensibilité approximativement **au carré**.[20]\n\n**Résolution en énergie.** Capacité à séparer photopic et diffusé : **9-10 % de LMH à 140 keV** pour le NaI(Tl) ⁹⁹ᵐTc, améliorée comme **√E**.[3][39] Une bonne résolution en énergie autorise une fenêtre étroite (**±10 % centrée sur 140 keV**) qui rejette le diffusé et améliore le contraste.[3][39]\n\n**Uniformité — le test le plus sensible.** On distingue l'**uniformité intrinsèque** (sans collimateur, source ponctuelle) et l'**uniformité système** (avec collimateur, source plane/flood).[31] Le seuil recommandé pour la SPECT est une **uniformité intrinsèque < 2,5 %** sur le champ central ; les tolérances typiques sont **uniformité intégrale (UI) 2-3 %** et **différentielle (UD) 1,5-2 %**.[31] Le test est **quotidien**, avec action corrective avant tout usage clinique — la source recommandée est un **flood au ⁵⁷Co** (émission **122 keV**, proche des 140 keV du ⁹⁹ᵐTc ; période **272 jours**).[33][34] Une non-uniformité résiduelle crée en SPECT des **artefacts en anneau** caractéristiques.\n\n**Performances TEP (NEMA NU 2-2018).** Le standard mesure : résolution spatiale, **sensibilité (cps/kBq)**, fraction de diffusé, résolution TOF, correction des pertes de comptage, **NECR** et qualité d'image (coefficient de recouvrement de contraste + variabilité de fond, fantôme NEMA NU-2).[42][43] Pour un système récent : sensibilité **~12-33 cps/kBq**, **pic de NECR ~430 kcps**.[42]\n\n**Calendrier de CQ EANM :**\n\n| Fréquence | Tests | Source |\n|---|---|---|\n| Quotidien | Inspection visuelle, fenêtre d'énergie (peaking), **uniformité**, sensibilité | [34][33] |\n| Hebdo / mensuel | Centre de rotation (COR), résolution et linéarité (bar phantom), carte de correction d'uniformité haut comptage | [34][35] |\n| Trimestriel / annuel | Angulation des trous du collimateur, résolution tomographique, alignement SPECT/TDM ou TEP/TDM | [34][35] |",
+          "steps": [
+            {
+              "title": "Quotidien",
+              "text": "Inspection visuelle, peaking (fenêtre d'énergie sur le photopic), test d'uniformité (flood ⁵⁷Co, seuil UI 2-3 %), sensibilité relative. Blocage de l'usage clinique si hors tolérance.[34][33]"
+            },
+            {
+              "title": "Hebdomadaire / mensuel",
+              "text": "Centre de rotation (COR) pour la SPECT, résolution et linéarité au bar phantom, mise à jour de la carte de correction d'uniformité haut comptage.[34]"
+            },
+            {
+              "title": "Trimestriel / annuel",
+              "text": "Angulation des trous du collimateur, résolution tomographique, alignement SPECT/TDM et TEP/TDM, tests NEMA complets (sensibilité, NECR, résolution).[35][42]"
+            }
+          ],
+          "stats": [
+            {
+              "value": "< 2,5 %",
+              "label": "Uniformité intrinsèque SPECT recommandée (champ central)"
+            },
+            {
+              "value": "~3× / ~1/10",
+              "label": "LEHR vs haute sensibilité : résolution ×3, coups ÷10"
+            },
+            {
+              "value": "9-10 %",
+              "label": "Résolution en énergie du NaI(Tl) à 140 keV (LMH)"
+            },
+            {
+              "value": "R = √(R_i²+R_c²)",
+              "label": "Résolution système gamma-caméra (combinaison quadratique)"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — un CQ d'uniformité négligé se lit sur l'image",
+              "text": "Une non-uniformité de champ non corrigée génère en SPECT des **artefacts en anneau** centrés sur l'axe de rotation, pouvant mimer ou masquer une lésion. L'uniformité est le test le plus sensible aux dérives du détecteur : il doit être **quotidien** et évalué de façon critique, jamais coché mécaniquement.[31][33]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — pourquoi le ⁵⁷Co pour le flood quotidien",
+              "text": "Le ⁵⁷Co émet à **122 keV**, très proche des 140 keV du ⁹⁹ᵐTc, ce qui teste la caméra dans sa fenêtre d'énergie clinique ; sa période de **272 jours** en fait une source scellée durable, contrairement à un flood liquide au ⁹⁹ᵐTc à remplir chaque jour. Le NECR, lui, se mesure au fantôme NEMA NU-2 et caractérise le comportement en débit — il n'a de sens qu'en TEP.[33][42]"
+            }
+          ]
+        },
+        {
+          "title": "D4 - Pièges, idées reçues et erreurs d'interprétation en statistique de comptage",
+          "text": "La statistique de comptage est contre-intuitive : plusieurs raisonnements « de bon sens » sont faux et conduisent à des erreurs de protocole ou d'interprétation. Voici les écueils récurrents.\n\n**« Une image plus finement échantillonnée est une image de meilleure qualité. »** Faux à N constant. Réduire la taille de pixel (matrice plus grande, zoom) **redistribue les mêmes coups** : le comptage par pixel chute et le bruit par pixel monte (%σ = 100/√N_pixel). La résolution nominale s'améliore mais l'image devient plus bruitée ; un zoom ×2 exige **×4 le temps** pour compenser.[50] La taille de pixel doit rester **≤ 1/3 de la LMH** (critère de Nyquist appliqué) : plus fin gaspille les coups, plus grossier bride la résolution.[26]\n\n**« Doubler l'activité double la qualité. »** Faux. Le RSB ne suit que **√N** : doubler N ne réduit le bruit relatif que de **√2** (≈ −29 %). Pour diviser le bruit par deux, il faut **quadrupler** N.[1] En TEP, c'est pire : **au-delà du pic de NECR**, augmenter l'activité *dégrade* le RSB de l'image, car les fortuits croissent en activité² et le temps mort fait perdre des vrais coups.[5][6]\n\n**« Un compte net faible mais positif suffit à affirmer une fixation. »** Dangereux. Lors d'une soustraction de bruit de fond, les incertitudes **absolues s'additionnent en quadrature** : σ_net = √(N_brut + N_bdf). L'incertitude relative sur le comptage net peut **dépasser le comptage net lui-même**, rendant l'échantillon indiscernable du fond.[29][30] C'est un piège classique des fixations thyroïdiennes, volumes sanguins et quantifications de petites lésions. Pour les **produits et rapports**, ce sont les erreurs **relatives** qui s'additionnent en quadrature.[29]\n\n**« Si la lésion est réelle, on la verra. »** Non, si le RCB est sous le **seuil de Rose (3-5)** : la lésion réelle devient **invisible** (faux négatif) et, symétriquement, le bruit statistique peut **mimer une lésion** (faux positif) sur les images à faible comptage.[8][52] La détectabilité est une affaire de RCB, pas seulement de contraste-sujet.\n\n**« Le comptage mesuré est le comptage réel. »** Faux à haut débit. Aux forts taux, les événements se chevauchent et sont perdus (comportement paralysable / non-paralysable). En routine ⁹⁹ᵐTc + fenêtre 15 %, le **temps mort est de 4-8 µs** ; à 5 µs et 4×10⁴ cps, on perd **~20 % des coups** → sous-estimation d'activité et non-linéarité.[28] Toute quantification exige une correction de temps mort.\n\n**« Plus d'itérations OSEM = meilleure image. »** Non : l'itératif (OSEM, Ordered Subset Expectation Maximisation) restaure contraste et résolution mais **amplifie le bruit** à mesure qu'il converge. Le nombre d'itérations est donc **borné** et un **post-filtre** de lissage est appliqué ; en perfusion myocardique, l'optimum est **~2 itérations × 10-12 sous-ensembles** (~90-120 mises à jour) avec un filtre gaussien LMH ~13-15 mm.[16][47] Le filtrage passe-bas (Butterworth, ~Fc 0,20/ordre 6 en faible comptage) **dégrade la résolution** en supprimant le bruit haute fréquence : c'est un compromis résolution/bruit à chaque reconstruction.[51][50] À l'inverse, la rétroprojection filtrée (FBP) **amplifie** le bruit et n'offre aucune correction — d'où l'abandon au profit de l'itératif et des méthodes régularisées (BSREM/Q.Clear).[17][48]\n\n**« La correction de diffusé/randoms ne fait qu'améliorer l'image. »** Partiellement faux : elle restaure le contraste et la justesse quantitative, mais **soustraire R augmente le bruit** (propagation de variance). Le NECR est précisément la métrique qui tient compte de ce coût.[7]\n\n| Idée reçue | Réalité | Source |\n|---|---|---|\n| Matrice plus fine = meilleure image | À N constant, ↑ bruit par pixel ; ×2 zoom ⇒ ×4 temps | [50] |\n| ×2 activité ⇒ ×2 qualité | RSB ∝ √N ; ÷2 bruit ⇒ ×4 N ; en TEP, ↑ au-delà du pic NECR dégrade le RSB | [1][5] |\n| Compte net positif = fixation réelle | σ_net = √(N_brut + N_bdf) peut dépasser le net | [29][30] |\n| Lésion réelle ⇒ toujours visible | Invisible si RCB < seuil de Rose (3-5) ; le bruit peut la mimer | [8][52] |\n| Comptage mesuré = réel | Temps mort 4-8 µs ⇒ ~20 % de pertes à fort débit | [28] |\n| Plus d'itérations OSEM = mieux | Amplifie le bruit ; itérations bornées + post-filtre | [47][16] |",
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège — la soustraction de fond peut annuler le signal",
+              "text": "Sur un comptage net après soustraction du bruit de fond, l'incertitude est σ_net = √(N_brut + N_bdf) : elle **s'aggrave** à mesure que le fond monte. Sur une petite lésion ou une fixation thyroïdienne faible, l'incertitude relative sur le net peut **dépasser 100 %**, rendant la mesure indiscernable du bruit. Toujours rapporter l'incertitude, jamais le seul chiffre net.[29][30]"
+            },
+            {
+              "type": "warning",
+              "title": "Piège — le temps mort à fort débit",
+              "text": "À haut taux de comptage, les événements se chevauchent et sont perdus. Avec un temps mort de 5 µs et 4×10⁴ cps, **~20 % des coups manquent** → l'activité est sous-estimée et la réponse devient non linéaire. Critique pour toute quantification absolue (débit, SUV, clairance).[28]"
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — le bruit poissonien est irréductible",
+              "text": "Le bruit poissonien ne dépend **que du nombre total de coups collectés** (RSB = √N) : aucun filtre, aucune reconstruction ne crée de l'information absente des données. Le filtrage et la régularisation ne font que **redistribuer** le compromis résolution/bruit. Le seul vrai levier de fond est la **sensibilité** de la chaîne — d'où l'intérêt des détecteurs numériques SiPM, du TOF, des LAFOV et de la reconstruction régularisée/IA, qui déplacent favorablement le quadrilatère (plus de sensibilité ⇒ moins de dose *ou* moins de bruit).[26][48]"
+            }
+          ]
+        },
+        {
+          "title": "E1 - Synthèse : la matrice N × résolution × sensibilité × temps qui résume tout",
+          "text": "**Message central.** En médecine nucléaire, toute image est un **comptage d'événements aléatoires** — désintégrations puis détections photoniques — gouverné par la **loi de Poisson**, dont la propriété fondatrice est que **la variance égale la moyenne** : σ = **√N** [1][26]. Il en découle trois lois qui commandent l'ensemble de la conception de protocole :\n\n- **Bruit relatif** : %σ = **100/√N** [1] ;\n- **Rapport signal/bruit** : RSB = N/√N = **√N** [1][26] ;\n- **Rendements décroissants** : doubler N (temps ou activité) ne réduit le bruit que de **√2 ≈ −29 %** ; **diviser le bruit par 2 exige de quadrupler N** [1][26].\n\nCes lois se combinent à trois compromis physiques irréductibles pour former le **quadrilatère du compromis** : chaque optimisation d'un pôle se paie sur les autres. Il n'y a jamais de gain gratuit.\n\n| Levier | Améliore | Dégrade | Loi quantitative |\n|---|---|---|---|\n| ↑ Temps **ou** ↑ Activité | Bruit (RSB) | Dose patient / débit | RSB ∝ √N ; ÷2 bruit ⇒ ×4 N [1][26] |\n| ↑ Résolution du collimateur (LEHR) | Netteté (FWHM) | Sensibilité (~1/10 des coups vs haute sensibilité) → ↑ bruit à durée constante | trous plus fins/longs ⇒ sensibilité ↓ [37] |\n| ↑ Sensibilité (LEGP, cristal épais) | Comptage / bruit | Résolution spatiale | efficacité géométrique × intrinsèque [20] |\n| ↑ Taille de pixel / zoom | Bruit par pixel | Résolution | %bruit_pixel = 100/√N_pixel ; zoom ×2 ⇒ ×4 temps [50] |\n\n**Le seuil qui donne un sens à « combien de coups ? ».** Un objet n'est **détectable de façon fiable** que si son rapport contraste/bruit dépasse le **critère de Rose : RCB (ou RSB) ≥ 3–5**, le seuil de **~4** étant typique en tomographie d'émission [9][52]. C'est le fondement quantitatif de la conception de tout protocole : placer le curseur pour que le RCB de la structure d'intérêt franchisse ce seuil au coût minimal en dose et en temps.\n\n**Déclinaison par modalité — la métrique change mais la logique demeure :**\n\n| Domaine | Métrique-clé | Chiffres-repères sourcés |\n|---|---|---|\n| Planaire osseux (⁹⁹ᵐTc) | Densité de coups/image | Flux sanguin : matrice ≥ 128×128, **~300 000 coups/image** (150 000–200 000 aux extrémités) [11] |\n| SPECT perfusion myocardique | Niveau de comptage vs variabilité | Détectabilité validée sur **0,8–6 Mcoups** ; OSEM ~2 itér. × 10–12 sous-ens., filtre gaussien LMH ~13–15 mm [16] |\n| PET/CT (¹⁸F-FDG) | **NECR = T²/(T+S+R)** | RSB image ∝ √NEC ; **2 min/pas de lit** peut égaler 10 min sur systèmes récents à NEC maintenu [5][25] |\n\n**Pourquoi le NECR est la bonne métrique en PET.** Contrairement au simple comptage, il pondère la nuisance des coïncidences **diffusées (S)** et **fortuites/randoms (R)** qui ne reflètent pas la vraie position de la désintégration : **NECR = T²/(T+S+R)** représente le taux de vraies coïncidences qu'un système idéal (sans S ni R) devrait atteindre pour le même RSB [5][6]. Le NECR est un bon prédicteur du **RSB² de l'image** [5]. Sur un scanner clinique numérique récent, la sensibilité système est de **~12–33 cps/kBq** et le **NECR pic ~430 kcps** [42].",
+          "stats": [
+            {
+              "value": "σ = √N",
+              "label": "Écart-type du comptage (loi de Poisson) [1]"
+            },
+            {
+              "value": "×4 N",
+              "label": "pour diviser le bruit par 2 (rendements décroissants) [1]"
+            },
+            {
+              "value": "RCB ≥ 3–5",
+              "label": "critère de Rose : seuil de détectabilité [9][52]"
+            },
+            {
+              "value": "~430 kcps",
+              "label": "NECR pic d'un PET numérique clinique récent [42]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — le raccourci mental des « ordres de grandeur »",
+              "text": "Pour un bruit relatif de **1 %, il faut ~10 000 coups** ; **5 %, ~400 coups** ; **10 %, 100 coups** ; **0,5 %, 40 000 coups** [1]. Mémoriser cette échelle permet d'estimer instantanément si une acquisition sera diagnostique : une ROI de fixation faible ne totalisant que ~100 coups porte **10 % de bruit** — au ras du seuil de Rose."
+            },
+            {
+              "type": "warning",
+              "title": "Piège — le sur-échantillonnage ne crée pas d'information",
+              "text": "Augmenter la taille de matrice **sans augmenter N** redistribue les **mêmes coups sur plus de pixels** → chute du comptage par pixel → **hausse du bruit par pixel** (%σ = 100/√N_pixel). Un zoom ×2 divise le pixel par 2 mais **exige ×4 le temps** pour conserver la statistique par pixel [50]. La taille de pixel doit rester cohérente avec la résolution (pixel ≤ FWHM/3), jamais fixée pour « faire plus fin »."
+            }
+          ],
+          "figure": {
+            "figureRef": "PET_COINCIDENCE",
+            "alt": "Schéma des trois types de coïncidences en PET : vraie (deux photons de 511 keV colinéaires issus de la même annihilation), diffusée (un photon dévié par effet Compton, ligne de réponse faussée) et fortuite/random (deux photons d'annihilations différentes dans la fenêtre temporelle) — S et R dégradent le NECR.",
+            "caption": "Fig. 1 — Vraies, diffusées et fortuites : les trois familles de coïncidences dont le NECR = T²/(T+S+R) pondère la nuisance [5][6]."
+          }
+        },
+        {
+          "title": "E2 - Aller plus loin : quantification, IA de débruitage et frontières technologiques",
+          "text": "Les compromis du §E1 ne sont pas figés : chaque génération de matériel et d'algorithme **déplace favorablement le quadrilatère** — plus de sensibilité, donc moins de dose *ou* moins de bruit à dose égale. Voici les leviers experts.\n\n**1 · Propagation d'erreurs — le piège de la soustraction de fond.** Sur des opérations de comptage, les erreurs **absolues s'additionnent en quadrature** : pour des coups nets après retrait du bruit de fond, **σ_net = √(N_brut + N_bdf)** [29][30]. Conséquence clinique majeure : lors d'une soustraction (fixation thyroïdienne, volume sanguin, quantification d'une petite lésion), l'incertitude relative sur le comptage net peut **dépasser le comptage net lui-même**, rendant l'échantillon indiscernable du fond [29]. En PET, la **soustraction des randoms augmente le bruit** — le NECR l'intègre déjà [7].\n\n**2 · Temps de vol (TOF) — un gain de RSB gratuit… pour les gros patients.** En mesurant la différence d'arrivée des deux photons, le TOF localise l'annihilation le long de la ligne de réponse à **Δx = c·Δt/2** près [45]. Le gain de RSB vaut **√(D/Δx) = √(2D/(c·Δt))**, D = diamètre du patient [45][46]. Avec une résolution temporelle de coïncidence commerciale **~200–214 ps**, le gain atteint **~3,7×** pour un patient de **40 cm** [45]. Corollaire contre-intuitif : **plus le patient est corpulent, plus le TOF rapporte** ; en pédiatrie ou sur petit sujet, le bénéfice s'amenuise. Le RSB de l'image ¹⁸F-FDG est proportionnel à **√(TOF-NECR)** en PET corps entier [44].\n\n| Frontière technologique | Ce qu'elle déplace | Repère chiffré sourcé |\n|---|---|---|\n| Détecteurs numériques SiPM | ↑ sensibilité, ↑ résolution temporelle | CTR ~200–214 ps → gain RSB ~3,7× (patient 40 cm) [45] |\n| PET grand champ axial (LAFOV) | ↑↑ sensibilité → ↓ dose/durée | Bas-débit maintenant la qualité à dose réduite [55] |\n| Reconstruction régularisée (BSREM/Q.Clear) | Convergence quantitative sans emballement du bruit | Préserve les bords jusqu'à pleine convergence [48][49] |\n| Débruitage / reconstruction par IA | Bruit ↓ à N constant (rompt partiellement RSB ∝ √N) | Deep learning intégré à la reconstruction bayésienne [47] |\n\n**3 · Reconstruction — le compromis logiciel résolution ↔ bruit.** L'**OSEM** (Ordered Subset Expectation Maximisation) est le standard clinique ; plus d'itérations = meilleure convergence quantitative mais **amplification du bruit**, d'où un nombre d'itérations plafonné et un **post-filtre** de lissage [47]. L'itératif **restaure contraste et résolution tout en maîtrisant le bruit**, contrairement à la rétroprojection filtrée (FBP) qui **l'amplifie** [16]. Le **filtre de Butterworth** passe-bas lisse au prix de la résolution : pour images à faible comptage, un optimum ~**Fc = 0,20, ordre 6** est rapporté [50][51]. Les méthodes **régularisées** (BSREM/Q.Clear, prior médian) convergent en contrôlant le bruit et en préservant les bords [48][49]. L'**IA de débruitage**, désormais intégrée à la reconstruction bayésienne, est la première approche capable de **réduire le bruit sans augmenter N** — elle déplace donc réellement la loi RSB ∝ √N, sous réserve de valider qu'elle ne lisse pas les petites lésions (risque de faux négatif au sens du critère de Rose) [47].\n\n**4 · Quantification et dose — l'arbitrage optimisé par les guidelines.** Le RSB ∝ **√(activité × temps × sensibilité)**. Les recommandations EANM FDG traduisent cet arbitrage en formules opposables : **FDG (MBq) = 1050 × (poids/75)² / durée par lit** pour un recouvrement ≤ 30 % (**525 ×** au-delà) [53]. Le schéma **quadratique** compense la dégradation de RSB liée à l'atténuation chez les patients lourds ; au-delà de **90 kg**, on privilégie **l'allongement du temps par lit** plutôt que la montée d'activité [53]. En dosimétrie, le **¹⁸F-FDG délivre 0,019 mSv/MBq** (CIPR 128), soit **~7 mSv pour 370 MBq** et **~7,4 mSv pour 555 MBq**, la **paroi vésicale** étant l'organe critique (**~72 mGy** pour 555 MBq) [56][57][58]. Toute réduction d'activité au nom d'ALARA se paie en bruit si durée ou sensibilité ne compensent pas — d'où l'intérêt stratégique des scanners haute sensibilité (LAFOV, TOF, SiPM) qui autorisent une baisse de dose **à qualité constante** [55].\n\n**5 · Limites physiques irréductibles de la résolution PET.** R_scanner = √(R_détecteur² + R_parcours² + R_180°² + b²) : le **cristal (3–4 mm ⇒ R ≈ taille/2)** domine, le **parcours du positon (¹⁸F ≈ 0,2 mm)** et la **non-colinéarité (0,0022 × D, ≈ 1,76 mm pour D = 800 mm)** posent un plancher [18]. Aucune reconstruction ne franchit ces bornes : la course à la résolution PET butera sur la physique, pas sur le logiciel.",
+          "stats": [
+            {
+              "value": "~3,7×",
+              "label": "gain de RSB par TOF (CTR ~200 ps, patient 40 cm) [45]"
+            },
+            {
+              "value": "√(A×t×S)",
+              "label": "le RSB croît comme la racine du produit activité × temps × sensibilité [53]"
+            },
+            {
+              "value": "0,019 mSv/MBq",
+              "label": "dose efficace du ¹⁸F-FDG (CIPR 128) → ~7 mSv pour 370 MBq [56][58]"
+            },
+            {
+              "value": "~1,76 mm",
+              "label": "limite de non-colinéarité pour un anneau de 800 mm [18]"
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "tip",
+              "title": "Point expert — l'IA rompt (partiellement) RSB ∝ √N",
+              "text": "Toutes les techniques classiques restent esclaves de RSB = √N : pour gagner du RSB, il faut plus de coups (dose/temps) ou plus de sensibilité (matériel). Le **débruitage par apprentissage profond**, intégré à la reconstruction bayésienne [47], est la première famille de méthodes à **abaisser le bruit sans collecter plus de coups**. Le prix à payer se déplace vers la **fidélité** : validation obligatoire que le réseau ne « gomme » pas une lésion réelle sous le seuil de Rose, ni n'hallucine de structure. C'est un compromis biais/variance, non plus un compromis dose/bruit."
+            },
+            {
+              "type": "warning",
+              "title": "Précaution — la soustraction de fond peut annuler l'information",
+              "text": "Sur une petite lésion ou une ROI de fixation faible, σ_net = √(N_brut + N_bdf) [29][30] : si N_brut et N_bdf sont proches, le comptage net devient **statistiquement nul**. Avant de conclure « pas de fixation », vérifier que la statistique brute est suffisante — sinon on confond une vraie absence de fixation avec une simple noyade dans le bruit."
+            }
+          ],
+          "figure": {
+            "figureRef": "ALARA_TDS",
+            "alt": "Schéma des trois leviers ALARA — temps, distance, écran — appliqués à l'optimisation dose-bruit : réduire l'activité (dose) sans compenser par le temps ou la sensibilité de l'instrument dégrade le rapport signal/bruit.",
+            "caption": "Fig. 2 — Le levier « dose » du compromis : toute baisse d'activité au nom d'ALARA se paie en bruit si temps ou sensibilité ne compensent pas [55]."
+          }
+        },
+        {
+          "title": "E3 - Auto-évaluation : quiz et cas de raisonnement statistique",
+          "text": "Cette section fixe les réflexes quantitatifs. Les six questions couvrent les lois de Poisson, le critère de Rose, le NECR, les compromis matériels et logiciels ; les trois cas entraînent au **raisonnement statistique appliqué** au chevet du protocole.\n\n**Quiz — QCM commentés**\n\n1. *Dans une image de médecine nucléaire, une ROI totalise 400 coups. Quel est le bruit relatif attendu ?* → **5 %** (%σ = 100/√400 = 100/20 = 5 %) [1]. Une ROI de 100 coups porterait 10 %, une de 10 000 coups, 1 % [1].\n\n2. *Un service veut diviser par 2 le bruit d'une acquisition SPECT. De quel facteur doit-il augmenter le temps d'acquisition (activité constante) ?* → **×4** : le RSB ∝ √N, donc diviser le bruit par 2 impose de quadrupler N [1][26]. Doubler seulement le temps ne réduit le bruit que de ~29 %.\n\n3. *Quel est le seuil de détectabilité d'une lésion selon le critère de Rose ?* → un **RCB (ou RSB) ≥ 3–5** (~4 typiquement en tomographie d'émission) [9][52]. En deçà, une lésion réelle peut être invisible et le bruit peut mimer une lésion.\n\n4. *En PET, que vaut le NECR et pourquoi est-il préféré au taux de vraies coïncidences seul ?* → **NECR = T²/(T+S+R)** [5][6] : il pondère la nuisance des diffusées (S) et des fortuites (R), qui ne reflètent pas la vraie position, et prédit le **RSB² de l'image** [5].\n\n5. *Un collimateur LEHR offre une résolution ~3× meilleure qu'un haute sensibilité. Quel en est le prix ?* → il ne laisse passer qu'**~1/10 des coups par minute** pour une activité donnée [37] → bruit accru à durée constante : c'est le compromis résolution ↔ sensibilité incontournable.\n\n6. *Le gain de RSB apporté par le temps de vol (TOF) est-il le même pour tous les patients ?* → **non** : gain = √(D/Δx), proportionnel à la taille du patient [45][46] ; **~3,7× pour un patient de 40 cm** avec une CTR ~200 ps [45], bénéfice moindre chez l'enfant/petit sujet.\n\n**Réponses-clés** : 1→5 % · 2→×4 · 3→RCB ≥ 3–5 · 4→T²/(T+S+R) · 5→~1/10 des coups · 6→non, ∝ taille du patient.",
+          "steps": [
+            {
+              "title": "Cas 1 — « L'image est trop bruitée : je double le temps »",
+              "text": "*Contexte* : SPECT osseux jugé bruité ; le manipulateur propose de doubler le temps d'acquisition. *Raisonnement* : doubler N ne réduit le bruit relatif que de **√2 ≈ 29 %** (loi des rendements décroissants) [1][26] — insuffisant si le bruit initial est franchement au-dessus du seuil. Pour **diviser le bruit par 2**, il faut **×4** le temps (ou l'activité) [1]. *Conclusion* : quantifier le comptage cible (N ≈ 10 000 coups/pixel pour 1 % de bruit [1]) avant d'allonger l'examen ; envisager plutôt un **collimateur plus sensible** ou une **reconstruction itérative** pour ne pas quadrupler la durée."
+            },
+            {
+              "title": "Cas 2 — « Petit nodule, fixation douteuse » (piège de la soustraction de fond)",
+              "text": "*Contexte* : ROI sur un nodule = 120 coups ; fond local = 100 coups ⇒ net = 20 coups. *Raisonnement* : σ_net = √(N_brut + N_bdf) = √(120 + 100) = **√220 ≈ 14,8 coups** [29][30]. Le comptage net (20) n'est donc que **~1,3 σ** au-dessus du fond — **très en deçà du critère de Rose (≥ 3–5)** [9]. *Conclusion* : la fixation n'est **pas statistiquement significative** ; ne pas conclure « lésion » sur cette base. Augmenter la statistique (temps/activité) ou compléter par TEMP-TDM avant de trancher."
+            },
+            {
+              "title": "Cas 3 — « Patient obèse en PET/CT : monter l'activité ou allonger le temps ? »",
+              "text": "*Contexte* : patient de 110 kg, images FDG bruitées par l'atténuation. *Raisonnement* : RSB ∝ √(activité × temps × sensibilité) ; l'EANM impose une activité **quadratique en poids** (1050 × (poids/75)² / durée par lit) [53], mais **au-delà de 90 kg privilégie l'allongement du temps par lit** plutôt que la montée d'activité (ALARA) [53]. Le **TOF** apporte ici un gain maximal (√(D/Δx), ~3,7× pour un gros diamètre) [45]. *Conclusion* : allonger le temps par pas de lit + exploiter le TOF ; ne pas céder à la seule surenchère d'activité, qui augmente la dose (vessie = organe critique, ~72 mGy à 555 MBq [57]) sans être le levier le plus efficace."
+            }
+          ],
+          "infoBoxes": [
+            {
+              "type": "warning",
+              "title": "Piège de QCM — « augmenter la matrice améliore l'image »",
+              "text": "Faux si N est constant : redistribuer les mêmes coups sur plus de pixels **augmente le bruit par pixel** (%σ = 100/√N_pixel) [50]. La finesse de matrice n'améliore la résolution que si la statistique suit (×4 temps pour un zoom ×2) et si le pixel reste ≤ FWHM/3."
+            },
+            {
+              "type": "tip",
+              "title": "Point expert — reformuler toute question « combien de coups ? » en critère de Rose",
+              "text": "Face à « faut-il plus de coups ? », la réponse rigoureuse n'est jamais un chiffre absolu mais : **le RCB de la structure d'intérêt franchit-il 3–5 ?** [9][52]. Cela intègre d'un coup le contraste lésion/fond, le bruit et la taille de l'objet — bien plus informatif qu'un seuil de coups décontextualisé."
+            }
+          ]
+        },
+        {
+          "title": "E4 - Références, sources vérifiées et liens NucleAtlas",
+          "text": "**Nature des preuves.** Les lois exposées relèvent de la **physique établie (niveau consensus/standard)** : elles sous-tendent les guides de procédure **SNMMI/EANM** et les normes de performance **NEMA NU-1 (gamma-caméras/SPECT)** et **NEMA NU-2 (PET)** [23][24][43]. Les valeurs dosimétriques sont référencées à la **CIPR 128** [58], les activités aux **guidelines EANM FDG** [53][54] et à la **carte de dose pédiatrique EANM** [12][13][14], le contrôle qualité au **Technologist's Guide EANM 2017** [34] et à l'**Atlas de CQ de l'AIEA** [22].\n\n**Sources primaires à privilégier pour citation formelle :** CIPR 128 (dosimétrie) [58] · EANM FDG PET/CT v2.0 et v3.0 (activités) [53][54] · NEMA NU-1 / NU-2 2018 (performances instrument) [23][24] · EANM Technologist's Guide QC 2017 [34].\n\n**Table des sources citées dans cet article (numérotation [n] = liste fournie [1–58]) :**\n\n| Thème | Références |\n|---|---|\n| Loi de Poisson, RSB, %bruit | [1] Learn Radiology Physics · [26] Accuracy & Precision (PMC3586419) · [27] Fano factor · [28] Nuclear Counting Statistics (Radiology Key) |\n| Contraste, RCB, critère de Rose | [2] Radiology Cafe · [8] Hsieh, Med Phys 2022 · [9] CNR overview · [52] Signal Detection Theory (Radiology Key) |\n| Coïncidences PET, NECR | [5] PMC3808417 · [6] arXiv J-PET · [7] ResearchGate NEC · [42][43] NEMA NU-2 (Discovery MI / TOF digital) |\n| Propagation d'erreurs | [29] Fiveable · [30] Health Physics Society Q13340 |\n| Temps de vol (TOF) | [44] uEXPLORER TOF-NECR · [45] Update on TOF PET · [46] EJNMMI Phys 2016 |\n| Résolution & collimateurs | [3] Radiology Key · [4] Radiopaedia · [18] MDPI ultra-high resolution · [19][20][21][36][37][38] collimateurs LEHR/LEGP, sensibilités · [39][40][41] cristal/PMT, résolution énergie |\n| Reconstruction & filtres | [16] SPECT itératif · [17] FBP/MLEM/OSEM-RR · [47][48][49] BSREM/IA/régularisé · [50][51] filtrage SPECT/Butterworth |\n| CQ & uniformité, NEMA | [22] AIEA Pub1141 · [23][24] NEMA NU-1/NU-2 · [31][32][33][34][35] uniformité, EANM QC, StatPearls |\n| Comptage clinique par domaine | [10] count vs image quality MPI · [11] SNMMI Bone 4.0 · [12][13][14][15] carte EANM · [16] OSEM cardiaque · [25] optimisation activité/temps FDG |\n| Dose / activité / protocoles | [53][54] EANM FDG v2.0/v3.0 · [55] LAFOV bas-débit · [56][57][58] dosimétrie FDG, CIPR 128 |\n\n**Liens NucleAtlas (carte de liens sortants typés) :**\n\n- **Examens** : Scintigraphie planaire et TEMP (gamma-caméra, §résolution/sensibilité) · TEP-TDM au ¹⁸F-FDG (NECR, TOF) · SPECT de perfusion myocardique.\n- **Traceurs** : ⁹⁹ᵐTc (référence SPECT, γ 140,5 keV) · ¹⁸F-FDG (émetteur β⁺, 511 keV).\n- **Bases physiques (articles apparentés)** : Désintégration radioactive et types d'émission · Interaction rayonnement-matière (atténuation, diffusion Compton) · Détecteurs et gamma-caméra · Dosimétrie et radioprotection (CIPR 128, ALARA).\n- **Scores / critères** : critère de Rose (détectabilité, RCB ≥ 3–5) · métriques NEMA (NECR, sensibilité, résolution).\n\n*Dernière mise à jour : juillet 2026 — version de travail, profil médecin nucléaire. Toutes les valeurs chiffrées sont sourcées ligne par ligne par les références [1–58] fournies ; aucun DOI, PMID ou URL n'a été inventé.*",
+          "infoBoxes": [
+            {
+              "type": "info",
+              "title": "Hiérarchie des preuves pour la conception de protocole",
+              "text": "Pour opposer une valeur en réunion ou en audit : **CIPR 128** fait foi pour la dose [58], les **guidelines EANM FDG** pour l'activité [53][54], **NEMA NU-1/NU-2** pour les performances instrument (sensibilité, NECR, résolution) [23][24], et le **Technologist's Guide EANM QC 2017** pour la fréquence des contrôles qualité [34]. Les pages pédagogiques (Radiology Cafe, Learn Radiology Physics, Radiopaedia) illustrent les lois mais ne remplacent pas la source normative pour un chiffre opposable."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
