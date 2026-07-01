@@ -1,0 +1,1426 @@
+{
+  "id": "V2_CHAMBRE_PROTEGEE_I131",
+  "type": "autre",
+  "cat": "radioprotection",
+  "catLabel": "",
+  "title": "Hospitalisation en chambre protégée : radioprotection des traitements par iode-131",
+  "difficulty": "avancé",
+  "tags": [
+    "iode-131",
+    "irathérapie",
+    "chambre protégée",
+    "radioprotection",
+    "cancer différencié de la thyroïde",
+    "hyperthyroïdie",
+    "effluents radioactifs",
+    "critères de sortie",
+    "restrictions de contact",
+    "NRC",
+    "SFMN",
+    "ALARA"
+  ],
+  "targetAudience": [
+    "patient",
+    "medecin_non_nuc",
+    "medecin_nuc"
+  ],
+  "authors": [
+    "Dr Babatounde Fréjuste Pinocio Agboton",
+    "Assistance IA (Claude)"
+  ],
+  "sources": [
+    {
+      "title": "The EANM guideline on radioiodine therapy of benign thyroid disease (Eur J Nucl Med Mol Imaging, 2023; DOI 10.1007/s00259-023-06274-5)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542302/",
+      "verified": true
+    },
+    {
+      "title": "Guide pour la rédaction de protocoles de traitement par iode 131 et de suivi des cancers thyroïdiens papillaires et vésiculaires (SFMN/CEMEN, v1.0)",
+      "url": "https://www.cnp-mn.fr/wp-content/uploads/2022/09/Traitement-cancer-thyroide-V1.0.pdf",
+      "verified": true
+    },
+    {
+      "title": "International Practices of Patient Release Following Iodine-131 Therapy (NRC, ML14217A350, 2014)",
+      "url": "https://www.nrc.gov/docs/ML1421/ML14217A350.pdf",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline for Nuclear Medicine Evaluation and Therapy of Differentiated Thyroid Cancer: Abbreviated Version (J Nucl Med 2022;63(6):15N)",
+      "url": "https://jnm.snmjournals.org/content/63/6/15N",
+      "verified": true
+    },
+    {
+      "title": "SNMMI Procedure Standard/EANM Practice Guideline for Nuclear Medicine Evaluation and Therapy of Differentiated Thyroid Cancer — full text PDF (2022)",
+      "url": "https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2022/Joint%20DTC%20Guidelines-R7-Jan11%202022.pdf",
+      "verified": true
+    },
+    {
+      "title": "Evaluation of Toxicological Hazards from Medical Radioiodine Administration (J Med Toxicol 2014; physical data, gamma constant)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4371044/",
+      "verified": true
+    },
+    {
+      "title": "Patient Release After Radioiodine Therapy (ORNL report for NRC, ML17262A909)",
+      "url": "https://www.nrc.gov/docs/ML1726/ML17262A909.pdf",
+      "verified": true
+    },
+    {
+      "title": "Traitement à l'iode 131 pour cancer de la thyroïde : estimation des doses de radiation reçues par les proches et des temps de restriction de contact (Radioprotection, 2019)",
+      "url": "https://www.radioprotection.org/articles/radiopro/full_html/2019/01/radiopro180030/radiopro180030.html",
+      "verified": true
+    },
+    {
+      "title": "A Targeted Radionuclide Therapy Facility at a University Teaching Hospital in Singapore (Cureus 2025; room design, shielding, effluent tanks)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12520863/",
+      "verified": true
+    },
+    {
+      "title": "Radiation Safety Precautions in the Management of the Hospitalized 131I Therapy Patient (J Nucl Med Technol 2001;29(2):61)",
+      "url": "https://tech.snmjournals.org/content/29/2/61",
+      "verified": true
+    },
+    {
+      "title": "Radiation Safety and External Radiation Exposure Rate of Patients Receiving I-131 Therapy for Hyperthyroidism and Remnant Ablation as Outpatient: An Institutional Experience",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10581751/",
+      "verified": true
+    },
+    {
+      "title": "An overview of radioactive waste disposal procedures of a nuclear medicine department (effluent limits)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3119958/",
+      "verified": true
+    },
+    {
+      "title": "Iodine-131 shielding with concrete — HPS Ask the Experts Q7162 (concrete attenuation/buildup at 364 keV)",
+      "url": "https://hps.org/publicinformation/ate/q7162/",
+      "verified": true
+    },
+    {
+      "title": "EANM Dosimetry Committee series on standard operational procedures for internal dosimetry for 131I-mIBG treatment of neuroendocrine tumours (EJNMMI Phys 2020)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7060302/",
+      "verified": true
+    },
+    {
+      "title": "Summary of the European Directive 2013/59/Euratom: essentials for health professionals in radiology (Insights Imaging 2015)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4519811/",
+      "verified": true
+    },
+    {
+      "title": "Sodium Iodide I-131 Capsules USP Diagnostic — FDA label (NDA 021305, 2005; physical decay data, gamma constant, lead HVL)",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2005/021305s003lbl.pdf",
+      "verified": true
+    },
+    {
+      "title": "From 2015 to 2025: how ATA guidelines reshape nuclear medicine practice in thyroid cancer (Clin Transl Imaging, 2025)",
+      "url": "https://link.springer.com/article/10.1007/s40336-025-00732-w",
+      "verified": true
+    },
+    {
+      "title": "Iodine-131 — Wikipedia (propriétés physiques : T½ 8,02 j, β 606 keV, γ 364 keV)",
+      "url": "https://en.wikipedia.org/wiki/Iodine-131",
+      "verified": true
+    },
+    {
+      "title": "131I Nuclide Safety Data Sheet — HPS North Carolina Chapter (données physiques ¹³¹I)",
+      "url": "https://hpschapters.org/northcarolina/NSDS/131IPDF.pdf",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128: Radiation Dose to Patients from Radiopharmaceuticals — SAGE full text (Ann. ICRP 44(2S))",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/0146645314558019",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 128 — page officielle ICRP",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+128",
+      "verified": true
+    },
+    {
+      "title": "ICRP Publication 94: Release of Patients after Therapy with Unsealed Radionuclides — page officielle ICRP",
+      "url": "https://www.icrp.org/publication.asp?id=ICRP+Publication+94",
+      "verified": true
+    },
+    {
+      "title": "Improved Patient Dosimetry at Radioiodine Therapy... ICRP Compartment Model + EANM (dose thyroïde 653 mGy/MBq, dose efficace 24 mSv/MBq)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7995899/",
+      "verified": true
+    },
+    {
+      "title": "Curium — Sodium Iodide (I131) Capsules, Summary of Product Characteristics (Ireland, 2024) — dosimétrie ICRP, périodes effectives",
+      "url": "https://www.curiumpharma.com/wp-content/uploads/2018/05/IE_5302_38-APP_SPC-23042024.pdf",
+      "verified": true
+    },
+    {
+      "title": "SNMMI/EANM practice guideline vs. ETA Consensus Statement — the EANM perspective (EJNMMI 2022)",
+      "url": "https://link.springer.com/article/10.1007/s00259-022-05935-1",
+      "verified": true
+    },
+    {
+      "title": "EANM Procedure Guidelines for Radioiodine Therapy of Differentiated Thyroid Cancer — IAEA Human Health Campus",
+      "url": "https://humanhealth.iaea.org/HHW/NuclearMedicine/Radionuclide_Therapy/Thyroidmalignant/GuidelinesandLiterature/IodineTherapy/index.html",
+      "verified": true
+    },
+    {
+      "title": "SFMN — Le traitement des cancers de la thyroïde par iode 131 (guide des procédures, précautions de radioprotection)",
+      "url": "https://www.sfmn.org/index.php/70-societe/guides-des-procedures/traitements/212-le-traitement-des-cancer-de-la-thyroide-par-iode-131?showall=1",
+      "verified": true
+    },
+    {
+      "title": "Guide de l'ASN n°32 (gestion des effluents et déchets radioactifs en médecine nucléaire ; cuves de décroissance ¹³¹I, 100 Bq/L)",
+      "url": "https://reglementation-controle.asnr.fr/content/download/111417/pdf_file/Guide%20de%20l'ASN%20n%C2%B032.pdf",
+      "verified": true
+    },
+    {
+      "title": "ASN — Rejet non autorisé d'effluents contaminés à l'iode 131 dans le réseau public d'assainissement (avis d'incident, Gustave Roussy, 03/09/2021)",
+      "url": "https://www.asn.fr/l-asn-controle/actualites-du-controle/activites-medicales/avis-d-incident-domaine-medical/rejet-non-autorise-d-effluents-contamines-a-l-iode-131-dans-le-reseau-public-d-assainissement",
+      "verified": true
+    },
+    {
+      "title": "Traitement par iode 131 des cancers thyroïdiens différenciés : recommandations 2017 SFMN/SFE/SFP/SFBC/AFCE/SFORL — EM-consulte",
+      "url": "https://www.em-consulte.com/article/1136729/traitement-par-iode-131%C2%A0des-cancers-thyroidiens-di",
+      "verified": true
+    },
+    {
+      "title": "NRC Regulatory Guide 8.39 (Rev.0, 1997) — Release of Patients Administered Radioactive Materials (Table 1 : ¹³¹I 1,2 GBq / 0,07 mSv·h⁻¹)",
+      "url": "https://www.nrc.gov/docs/ml0833/ml083300045.pdf",
+      "verified": true
+    },
+    {
+      "title": "NRC — Use of radionuclides in medicine and patient release (10 CFR 35.75, TEDE 5 mSv / 1 mSv)",
+      "url": "https://www.nrc.gov/docs/ML1034/ML103481099.pdf",
+      "verified": true
+    },
+    {
+      "title": "Radioactive iodine (I-131) therapy isolation rooms: Introduction of lead glass window on the wall for patient comfort and better ambience (World J Nucl Med 2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30774545/",
+      "verified": true
+    },
+    {
+      "title": "Radiation Exposure Appraisal to Public, Caregivers and Families in Contact with Thyroid Diseases Patient Undergoing Radioactive Iodine-131 Therapy: A Systematic Review",
+      "url": "https://www.heraldopenaccess.us/openaccess/radiation-exposure-appraisal-to-public-caregivers-and-families-in-contact-with-thyroid-diseases-patient-undergoing-radioactive-iodine-131-therapy-a-systematic-review",
+      "verified": true
+    },
+    {
+      "title": "Thyroid dose assessments due to inhalation of 131I for nuclear medicine workers — Frontiers in Public Health 2022 (PMC9760871)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9760871/",
+      "verified": true
+    },
+    {
+      "title": "Effect of TSH stimulation protocols on adequacy of low-iodine diet for radioiodine administration (PLoS One 2021; TSH, régime pauvre en iode)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8423307/",
+      "verified": true
+    },
+    {
+      "title": "Recombinant TSH Performs as Well as Thyroid Hormone Withdrawal for Iodine-131 Therapy With Dosimetry for Thyroid Cancer (J Endocr Soc 2025)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11965782/",
+      "verified": true
+    },
+    {
+      "title": "131I thyroid activity and committed dose assessment among family members of patients treated with radioactive iodine (Radiat Environ Biophys 2020)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7368868/",
+      "verified": true
+    }
+  ],
+  "lead": "Certains cancers de la thyroïde et certaines maladies thyroïdiennes bénignes se traitent en avalant de l'iode radioactif, qui vient détruire de l'intérieur les cellules thyroïdiennes visées. Après la prise, le corps du patient émet pendant quelques jours un rayonnement invisible qui peut exposer l'entourage et le personnel soignant. Pour cette raison, le patient séjourne dans une chambre spéciale, isolée et blindée, dont les eaux usées sont recueillies puis conservées le temps que la radioactivité disparaisse. Le retour à la maison n'est autorisé que lorsque le rayonnement mesuré est suffisamment faible, et des consignes de distance sont alors données pour protéger les proches, surtout les enfants et les femmes enceintes. Cette organisation concilie l'efficacité du traitement et la sécurité de tous ceux qui entourent le patient.",
+  "identityCard": [
+    {
+      "icon": "flask",
+      "label": "Radiopharmaceutique",
+      "value": "[131I]NaI (iodure de sodium), gélule orale"
+    },
+    {
+      "icon": "clock",
+      "label": "Période physique",
+      "value": "8,02 j (→ 131Xe stable)"
+    },
+    {
+      "icon": "zap",
+      "label": "Émission × énergie",
+      "value": "β⁻ max 606 keV (moy. 192 keV) · γ 364 keV (≈82 %)"
+    },
+    {
+      "icon": "target",
+      "label": "Cible biologique",
+      "value": "Symporteur sodium-iode (NIS) des thyréocytes"
+    },
+    {
+      "icon": "radiation",
+      "label": "Parcours β⁻ tissu",
+      "value": "R90 ≈ 0,8 mm (dose thérapeutique locale)"
+    },
+    {
+      "icon": "syringe",
+      "label": "Activité (ablation faible risque)",
+      "value": "1,1 GBq (30 mCi)"
+    },
+    {
+      "icon": "syringe",
+      "label": "Activité (métastases)",
+      "value": "3,7–7,4 GBq (100–200 mCi)"
+    },
+    {
+      "icon": "shield",
+      "label": "Seuil hospitalisation (FR)",
+      "value": "> 740 MBq (HERCA > 800 MBq)"
+    },
+    {
+      "icon": "alert",
+      "label": "Critère sortie (USA, NRC)",
+      "value": "< 5 mSv/an public · < 0,07 mSv/h à 1 m"
+    },
+    {
+      "icon": "droplets",
+      "label": "Effluents (ASN)",
+      "value": "Cuve décroissance 90 j, rejet si < 100 Bq/L"
+    },
+    {
+      "icon": "clock",
+      "label": "Durée d'isolement typique",
+      "value": "≈ 3 j (jusqu'à 6–7 j fortes activités)"
+    },
+    {
+      "icon": "baby",
+      "label": "Contre-indications absolues",
+      "value": "Grossesse · allaitement · (bénin : enfant ≤ 5 ans)"
+    },
+    {
+      "icon": "list",
+      "label": "Cadre réglementaire",
+      "value": "FR : agrément L1A / dir. 2013/59/Euratom · USA : 10 CFR 35.75"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "type": "traceur",
+      "label": "Iode-131 [131I]NaI"
+    },
+    {
+      "type": "traceur",
+      "label": "131I-mIBG (thérapie)"
+    },
+    {
+      "type": "maladie",
+      "label": "Cancer différencié de la thyroïde"
+    },
+    {
+      "type": "maladie",
+      "label": "Maladie de Basedow (Graves)"
+    },
+    {
+      "type": "maladie",
+      "label": "Goitre nodulaire toxique"
+    },
+    {
+      "type": "maladie",
+      "label": "Goitre multinodulaire non toxique"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie corps entier post-thérapeutique (PT-WBS)"
+    },
+    {
+      "type": "examen",
+      "label": "Scintigraphie thyroïdienne à l'123I"
+    },
+    {
+      "type": "examen",
+      "label": "Dosage de la thyroglobuline (Tg)"
+    },
+    {
+      "type": "score",
+      "label": "Stratification du risque ATA"
+    },
+    {
+      "type": "score",
+      "label": "Débit de dose à 1 m (critère de release)"
+    },
+    {
+      "type": "theranostique",
+      "label": "Paire diagnostic-thérapie de l'iode radioactif"
+    },
+    {
+      "type": "theranostique",
+      "label": "177Lu-DOTATATE (comparateur RIV)"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quelle est la période physique de l'iode-131 ?",
+      "options": [
+        "1,4 heure",
+        "8,02 jours",
+        "13,2 heures",
+        "138 jours"
+      ],
+      "answer": 1,
+      "explanation": "L'131I a une période physique de 8,02 jours et décroît en 131Xe stable [18,19]. Cette période, associée à l'émission β⁻/γ, impose le stockage prolongé des déchets et effluents.",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Quel photon gamma principal de l'131I dicte le blindage de la chambre et l'exposition externe de l'entourage ?",
+      "options": [
+        "159 keV",
+        "364 keV",
+        "606 keV",
+        "637 keV"
+      ],
+      "answer": 1,
+      "explanation": "Le γ principal de l'131I est à 364 keV avec une abondance d'environ 82 % [16,18]. C'est ce photon pénétrant, et non le β⁻ thérapeutique, qui expose le personnel et impose l'isolement blindé.",
+      "difficulty": "facile"
+    },
+    {
+      "question": "Sur quelle cible moléculaire l'iodure radioactif est-il concentré par les cellules thyroïdiennes ?",
+      "options": [
+        "Le transporteur de la noradrénaline (NET)",
+        "Le récepteur de la somatostatine (SSTR)",
+        "Le symporteur sodium-iode (NIS)",
+        "Le transporteur du glucose (GLUT)"
+      ],
+      "answer": 2,
+      "explanation": "Le symporteur sodium-iode (NIS) concentre l'iodure dans les thyréocytes et les cancers différenciés qui en dérivent [2]. La perte de cette capacité (dédifférenciation) rend la tumeur réfractaire à l'irathérapie.",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est l'activité usuelle d'ablation d'un reliquat thyroïdien chez un patient à faible risque ?",
+      "options": [
+        "0,37 GBq (10 mCi)",
+        "1,1 GBq (30 mCi)",
+        "3,7 GBq (100 mCi)",
+        "7,4 GBq (200 mCi)"
+      ],
+      "answer": 1,
+      "explanation": "L'ablation basse activité recommandée pour le risque faible/intermédiaire est de 1,11 GBq soit 30 mCi [4,17]. Les activités élevées (≥ 3,7 GBq) sont réservées au risque élevé et aux métastases.",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quel niveau de TSH doit être atteint avant l'administration de l'iode-131 dans le cancer thyroïdien ?",
+      "options": [
+        "> 4 mUI/L",
+        "> 10 mUI/L",
+        "> 30 mUI/L",
+        "> 100 mUI/L"
+      ],
+      "answer": 2,
+      "explanation": "Une stimulation TSH ≥ 30 mUI/L est requise pour optimiser la captation, obtenue par sevrage hormonal ou par rhTSH [4,5]. La rhTSH (Thyrogen) est non-inférieure au sevrage pour l'ablation.",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Dans le schéma rhTSH, quelle est la posologie et le calendrier d'administration ?",
+      "options": [
+        "0,9 mg IM à J-2 et J-1, iode à J0",
+        "1,8 mg PO le jour de l'iode",
+        "0,3 mg IV pendant 3 jours",
+        "0,9 mg IM uniquement le jour de l'iode"
+      ],
+      "answer": 0,
+      "explanation": "La rhTSH (Thyrogen) s'administre à 0,9 mg IM à J-2 et J-1, l'iode étant donné à J0 [2]. Ce schéma évite l'hypothyroïdie de sevrage et ses symptômes.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel délai maximal est exigé pour le test de grossesse avant administration chez la femme en âge de procréer ?",
+      "options": [
+        "Dans les 24 h",
+        "Dans les 72 h",
+        "Dans les 7 jours",
+        "Dans le mois"
+      ],
+      "answer": 1,
+      "explanation": "Un test de grossesse (β-hCG) négatif est exigé dans les 72 h précédant l'administration [1,4]. La grossesse est une contre-indication absolue de l'irathérapie.",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "En France, au-delà de quelle activité administrée l'hospitalisation en chambre protégée est-elle recommandée ?",
+      "options": [
+        "> 185 MBq",
+        "> 370 MBq",
+        "> 740 MBq",
+        "> 1 500 MBq"
+      ],
+      "answer": 2,
+      "explanation": "En France, l'hospitalisation en chambre protégée est recommandée au-delà de 740 MBq (ou en situations particulières) ; la zone 370–740 MBq permet une prise ambulatoire [3]. La recommandation européenne HERCA fixe le seuil à 800 MBq.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Selon la NRC américaine (10 CFR 35.75 / RG 8.39), quel débit de dose à 1 m autorise la sortie sans calcul individuel ?",
+      "options": [
+        "≤ 0,07 mSv/h (7 mrem/h)",
+        "≤ 20 µSv/h",
+        "≤ 5 µSv/h",
+        "≤ 3,5 µSv/h"
+      ],
+      "answer": 0,
+      "explanation": "La NRC autorise la sortie si le débit à 1 m est ≤ 0,07 mSv/h (7 mrem/h) ou l'activité ≤ 1,2 GBq (33 mCi), correspondant à une dose au public ≤ 5 mSv par administration [31,32]. Les seuils français (débit < 20 µSv/h) et allemands (≤ 3,5 µSv/h à 2 m) diffèrent : ne pas transposer un référentiel à l'autre.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "En France, à partir de quel débit de dose à 1 m (ou activité résiduelle) des restrictions de contact rapproché sont-elles requises à la sortie ?",
+      "options": [
+        "≥ 5 µSv/h ou ≥ 100 MBq",
+        "≥ 10 µSv/h ou ≥ 200 MBq",
+        "≥ 30 µSv/h ou ≥ 600 MBq",
+        "≥ 50 µSv/h ou ≥ 1 000 MBq"
+      ],
+      "answer": 2,
+      "explanation": "Des restrictions de contact rapproché et un arrêt de travail sont à prévoir si l'activité résiduelle est ≥ 600 MBq ou le débit ≥ 30 µSv/h à 1 m [27,30]. Le débit se mesure en vis-à-vis du bas du sternum, pas au niveau du cou (qui surestime).",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Combien de temps les effluents iodés doivent-ils décroître en cuve dédiée avant vidange autorisée (ASN, France) ?",
+      "options": [
+        "10 jours",
+        "30 jours",
+        "90 jours (> 10 périodes)",
+        "1 an"
+      ],
+      "answer": 2,
+      "explanation": "Le Guide ASN n°32 impose une décroissance en cuve de 90 jours (plus de 10 périodes) avant vidange, autorisée si l'activité volumique est < 100 Bq/L [28]. Une vidange prématurée constitue un rejet non conforme (incident ASN 2021).",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est l'organe critique de dose chez un patient dont la thyroïde est ablatée (captation quasi nulle) ?",
+      "options": [
+        "La moelle osseuse",
+        "La paroi vésicale",
+        "Le foie",
+        "Le cristallin"
+      ],
+      "answer": 1,
+      "explanation": "Sans captation thyroïdienne, l'iodure est excrété par les reins et la dose se concentre sur la paroi vésicale (610 µGy/MBq chez l'homme adulte), le côlon et les glandes salivaires [20,24]. C'est pourquoi l'hyperhydratation et les mictions fréquentes sont recommandées.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel seuil de dose à la moelle expose au risque d'aplasie médullaire lors de l'irathérapie ?",
+      "options": [
+        "> 0,5 Gy",
+        "> 2 Gy",
+        "> 10 Gy",
+        "> 35 Gy"
+      ],
+      "answer": 1,
+      "explanation": "Un risque d'aplasie médullaire apparaît si la dose à la moelle dépasse 2 Gy [2]. Le risque de fibrose pulmonaire survient si l'activité retenue à 48 h dépasse 4,4 GBq (métastases pulmonaires diffuses).",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle est la conduite à tenir vis-à-vis de l'allaitement avant une irathérapie ?",
+      "options": [
+        "Interruption de 48 h suffisante",
+        "Interruption de 7 jours",
+        "Arrêt définitif avant l'administration",
+        "Aucune précaution nécessaire"
+      ],
+      "answer": 2,
+      "explanation": "L'allaitement doit être arrêté définitivement avant l'administration d'131I [22,27] ; l'131I est sécrété dans le lait et concentré par la thyroïde du nourrisson. Une nouvelle grossesse est par ailleurs à différer d'environ 6 mois à 1 an.",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle épaisseur minimale de béton est retenue pour le blindage des murs d'une chambre d'isolement 131I ?",
+      "options": [
+        "≈ 0,05 m",
+        "≈ 0,15 m",
+        "≈ 0,35 m",
+        "≈ 1 m"
+      ],
+      "answer": 2,
+      "explanation": "Les salles d'isolement 131I sont blindées par du béton d'au moins environ 0,35 m d'épaisseur pour atténuer le γ 364 keV [9,33]. La première couche de demi-atténuation dans le plomb pour ce photon est d'environ 2,4 mm.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quel est le plafond de dose recommandé pour les aidants/proches (caregivers) par traitement ?",
+      "options": [
+        "0,3 mSv",
+        "1 mSv",
+        "5 mSv",
+        "20 mSv"
+      ],
+      "answer": 2,
+      "explanation": "La CIPR 94 et l'IAEA retiennent un plafond indicatif de 5 mSv par traitement pour les aidants [22]. Ce cadre justifie les consignes de distance et de durée de contact données à la sortie.",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la principale voie d'exposition thyroïdienne du personnel soignant en secteur 131I ?",
+      "options": [
+        "Ingestion accidentelle",
+        "Inhalation d'131I volatil",
+        "Contact cutané prolongé",
+        "Irradiation par le β⁻ du patient"
+      ],
+      "answer": 1,
+      "explanation": "L'131I est volatil : l'inhalation est la principale voie d'exposition thyroïdienne du personnel, d'où la ventilation dédiée (souvent 12 renouvellements/h, filtres HEPA) et le contrôle d'atmosphère [35]. Le β⁻ du patient, de parcours millimétrique, n'irradie pas l'entourage.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Chez le patient totalement dépendant, jusqu'à quelle dose le personnel infirmier peut-il être exposé sur la semaine post-traitement (≈ 1 840 MBq) ?",
+      "options": [
+        "0,08 mSv",
+        "1 mSv",
+        "6,3 mSv",
+        "20 mSv"
+      ],
+      "answer": 2,
+      "explanation": "La dose cumulée passe de 0,08 mSv pour un patient autonome à 6,3 mSv pour un patient totalement dépendant [34]. Cette majoration justifie des procédures spécifiques (hémodialyse, patient grabataire) et l'application stricte du principe ALARA.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Quelle valeur de la dose efficace de l'131I-iodure oral est retenue comme générique (patient à captation conservée) ?",
+      "options": [
+        "≈ 0,013 mSv/MBq",
+        "≈ 0,14 mSv/MBq",
+        "≈ 16 mSv/MBq",
+        "≈ 653 mSv/MBq"
+      ],
+      "answer": 2,
+      "explanation": "La CIPR 128 cite une dose efficace générique d'environ 16 mSv/MBq pour l'131I-iodure oral, la moyenne clinique observée étant d'environ 24 mSv/MBq [20,23]. Ces coefficients dépendent fortement du taux de captation thyroïdienne.",
+      "difficulty": "difficile"
+    },
+    {
+      "question": "Un patient à forte suspicion de cancer présente une scintigraphie post-thérapeutique décevante. Quelle cause iatrogène faut-il évoquer en premier ?",
+      "options": [
+        "Une surcharge iodée / sevrage TSH insuffisant",
+        "Une panne de caméra",
+        "Une grossesse méconnue",
+        "Une allergie au traceur"
+      ],
+      "answer": 0,
+      "explanation": "Une surcharge iodée (contraste, amiodarone) ou une stimulation TSH insuffisante réduit la captation et fausse le résultat [2,4]. Le régime pauvre en iode (≥ 7 jours) et la vérification des délais de sevrage des sources iodées sont donc essentiels.",
+      "difficulty": "moyen"
+    },
+    {
+      "question": "Quelle est la contre-indication quasi-absolue spécifique au traitement des maladies thyroïdiennes bénignes par 131I ?",
+      "options": [
+        "Âge > 60 ans",
+        "Enfant ≤ 5 ans",
+        "Goitre > 40 g",
+        "Antécédent de chirurgie thyroïdienne"
+      ],
+      "answer": 1,
+      "explanation": "Dans les pathologies bénignes, l'enfant ≤ 5 ans constitue une contre-indication quasi-absolue, aux côtés de la grossesse, de l'allaitement et d'un cancer suspecté [1]. Le risque radio-induit relatif est plus élevé chez le très jeune enfant.",
+      "difficulty": "moyen"
+    }
+  ],
+  "revisionSheet": {
+    "keyPoints": [
+      "L'irathérapie = administration orale d'131I ([131I]NaI, gélule) concentré par le symporteur sodium-iode (NIS) des thyréocytes et des cancers différenciés ; le β⁻ (R90 ≈ 0,8 mm) détruit la cellule captante, le γ 364 keV (≈82 %) impose blindage et isolement [2,16,18].",
+      "Période physique 8,02 j → 131Xe stable ; c'est elle qui commande le stockage prolongé des effluents (90 j) et des déchets solides [18,28].",
+      "Activités : ablation faible risque 1,1 GBq (30 mCi) ; adjuvant 1,85–3,7 GBq ; maladie métastatique 3,7–7,4 GBq (100–200 mCi) [4,5,17].",
+      "Stimulation TSH ≥ 30 mUI/L par sevrage (L-T4 4 sem / L-T3 2 sem) ou rhTSH 0,9 mg IM à J-2 et J-1 ; régime pauvre en iode ≥ 7 j ; test de grossesse dans les 72 h [1,2,4].",
+      "Seuils d'hospitalisation non harmonisés : FR > 740 MBq · HERCA > 800 MBq · Italie > 600 MBq · Allemagne ≥ 48 h obligatoires [3].",
+      "Critères de sortie : NRC < 5 mSv/an public (1 mSv si enceinte/enfant) et < 0,07 mSv/h à 1 m ; FR débit < 20 µSv/h à 1 m ; ICRP release < 800 MBq [22,31,32].",
+      "Effluents (ASN Guide n°32) : cuves de décroissance dédiées, 90 j (> 10 périodes), rejet autorisé si activité volumique < 100 Bq/L [28].",
+      "Toxicités seuils : aplasie médullaire si moelle > 2 Gy ; fibrose pulmonaire si rétention à 48 h > 4,4 GBq ; grossesse et allaitement = contre-indications absolues [2,22]."
+    ],
+    "protocol": [
+      "Préparation : régime pauvre en iode ≥ 7 j, sevrage des sources iodées (contraste 3–4 sem, amiodarone plusieurs mois), stimulation TSH ≥ 30 mUI/L (sevrage L-T4 4 sem / L-T3 2 sem ou rhTSH 0,9 mg IM J-2 & J-1) ; test de grossesse < 72 h ; bilan TSH/Tg/anti-Tg, calcémie, NFS [1,2,4].",
+      "Administration : gélule orale d'131I à jeun, repas 1 h 30–2 h après ; hyperhydratation 1,5–2 L/24 h, mictions fréquentes, bonbons acidulés (protection des glandes salivaires) [2].",
+      "Séjour en chambre protégée : chambre individuelle blindée (béton ≈ 0,35 m ou plomb 5–25 mm), sanitaires dédiés vers cuves de décroissance, ventilation forcée (≈ 12 renouvellements/h, HEPA), film plastique de protection, sas avec contaminamètre [9,10,33].",
+      "Radioprotection du personnel : distance, temps, écran (ALARA), gants pour soins/urines, dosimétrie passive et opérationnelle, formation PCR ; vigilance inhalation d'131I volatil [10,35].",
+      "Sortie : mesure du débit de dose à 1 m face au bas du sternum et/ou activité résiduelle ; comparaison au seuil national ; remise de consignes écrites de distance et de durée de contact [27,31].",
+      "Gestion des déchets : collecte des déchets solides sur 30 j, conservation 80 j pour décroissance ; effluents en cuve 90 j, vidange si < 100 Bq/L [2,28]."
+    ],
+    "scores": [
+      "Stratification du risque ATA (faible / intermédiaire / élevé) : détermine l'indication et l'activité (faible risque : pas de bénéfice de survie ; risque intermédiaire/élevé : bénéfice démontré) [4,17].",
+      "Débit de dose à 1 m (µSv/h) mesuré face au bas du sternum : indice de release et de restriction de contact.",
+      "Table CSHPF/SFMN des restrictions : contraintes de dose 1 mSv (public/< 10 ans), 3 mSv (proches 10–60 ans), 15 mSv (proches > 60 ans) → durées de restriction selon activité résiduelle (ex. contact enfant 0–3 ans : 9 j pour 100–200 MBq, 25 j pour 600–800 MBq) [27].",
+      "Seuils release comparés : NRC ≤ 1,2 GBq / ≤ 0,07 mSv/h ; ICRP < 800 MBq ; IAEA ≈ 1 100 MBq ; FR < 20 µSv/h à 1 m ; Allemagne ≤ 3,5 µSv/h à 2 m [3,31]."
+    ],
+    "pitfalls": [
+      "Transposer un seuil réglementaire d'un pays à l'autre : les cut-offs de sortie ne sont pas harmonisés (20 µSv/h FR vs ≈ 70 µSv/h USA vs 25 µSv/h ailleurs) [3,11].",
+      "Mesurer le débit de dose au niveau du cou plutôt qu'en vis-à-vis du bas du sternum : surestime la valeur et prolonge inutilement l'isolement [27].",
+      "Vidange de cuve prématurée (< 90 j) ou au-dessus de 100 Bq/L : rejet non conforme au réseau d'assainissement (incident ASN Gustave Roussy 2021) [28,29].",
+      "Sous-estimer l'exposition du personnel face à un patient dépendant : la dose peut passer de 0,08 à 6,3 mSv sur la semaine ; volatilité de l'131I → risque d'inhalation thyroïdienne [34,35].",
+      "Surcharge iodée ou stimulation TSH insuffisante avant administration : captation réduite, scintigraphie post-thérapeutique et efficacité compromises (dose au foyer < 35 Gy = échec probable) [2].",
+      "Négliger l'hyperhydratation chez un patient à thyroïde ablatée : la dose se reporte sur la paroi vésicale (610 µGy/MBq) et le côlon [20,24]."
+    ]
+  },
+  "patient": {
+    "sections": [
+      {
+        "title": "À quoi sert l'hospitalisation en chambre protégée ?",
+        "text": "Pour traiter certains cancers de la thyroïde ou certaines maladies de la thyroïde, on utilise de l'iode radioactif, avalé le plus souvent sous la forme d'une simple gélule. Cet iode va se loger dans les cellules à traiter et les détruire de l'intérieur, tout en douceur pour le reste du corps. Pendant quelques jours, votre organisme émet un rayonnement qui doit rester à l'intérieur d'une chambre spéciale, individuelle, dont les murs et les équipements sont conçus pour protéger votre famille, les autres patients et le personnel. Ce séjour n'est pas un signe de gravité : c'est une précaution normale et bien organisée, le temps que le produit agisse et commence à s'éliminer naturellement de votre corps.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Une chambre pensée pour vous protéger, vous et les autres",
+            "text": "La chambre protégée est une chambre seule, avec sa propre salle de bains et ses toilettes réservées. Tout est prévu pour votre confort et pour que le rayonnement ne gêne personne autour de vous. Vous n'êtes pas en danger d'être « enfermé » : l'équipe reste joignable à tout moment et passe vous voir, simplement en limitant la durée des visites."
+          }
+        ]
+      },
+      {
+        "title": "Comment se prépare et se déroule le séjour ?",
+        "text": "Avant le traitement, on vous demandera souvent de suivre pendant quelques jours une alimentation pauvre en iode et d'arrêter certains médicaments, pour que l'iode radioactif soit mieux capté. Le jour venu, vous avalez la gélule, puis vous vous installez dans votre chambre. On vous encouragera à boire beaucoup, à aller souvent aux toilettes, à sucer des bonbons acidulés ou du citron pour protéger vos glandes salivaires : autant de gestes simples qui aident votre corps à éliminer plus vite le produit. Le séjour dure en général quelques jours. Vous emportez surtout des affaires qui pourront être lavées ou jetées, car le linge et les objets utilisés sont mis de côté par précaution. Une équipe mesure chaque jour où vous en êtes, et c'est cette mesure qui décide du moment de votre sortie.",
+        "list": [
+          "Avant : alimentation pauvre en iode et arrêt de certains médicaments, selon les consignes de l'équipe.",
+          "Un test de grossesse est réalisé chez les femmes en âge d'avoir des enfants, car ce traitement est incompatible avec une grossesse.",
+          "Pendant : boire abondamment, aller souvent aux toilettes, tirer la chasse d'eau et se laver les mains.",
+          "Sucer des bonbons acidulés ou du citron aide à protéger les glandes salivaires.",
+          "Prévoir des vêtements et objets simples, faciles à laver ou à laisser au service.",
+          "La sortie est décidée par une mesure quotidienne, pas à une date fixée d'avance."
+        ]
+      },
+      {
+        "title": "Est-ce sûr, et que se passe-t-il à la sortie ?",
+        "text": "Ce traitement est utilisé depuis des décennies et il est très bien encadré. Les principaux désagréments possibles sont passagers : bouche sèche, goût modifié, parfois de légères nausées ou une gêne au niveau du cou, qui s'estompent avec le temps. La chambre protégée existe justement pour que votre entourage ne soit pas exposé inutilement. Au moment de partir, l'équipe vérifie que le rayonnement que vous émettez est redescendu à un niveau sans risque pour les autres. On vous remettra alors une fiche de consignes écrite, personnalisée : elle indique, pour quelques jours, quelle distance garder avec les jeunes enfants et les femmes enceintes, et quelques règles simples de propreté à la maison. Ces précautions sont temporaires et s'allègent rapidement.",
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Illustration des leviers temps, distance et protection pour réduire l'exposition de l'entourage.",
+        "figureCaption": "Garder un peu de distance et limiter la durée des contacts rapprochés suffit à protéger efficacement ses proches les jours suivant la sortie.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "La fiche de sortie prime sur tout le reste",
+            "text": "Les distances et les durées exactes dépendent de la dose reçue et des personnes qui vivent avec vous. Fiez-vous toujours à la fiche écrite remise par votre service plutôt qu'à des chiffres trouvés ailleurs. Après ce traitement, une grossesse doit être évitée pendant plusieurs mois et l'allaitement est arrêté : l'équipe vous précisera les délais adaptés à votre situation."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_non_nuc": {
+    "sections": [
+      {
+        "title": "Quand y penser et pour quels patients",
+        "text": "L'hospitalisation en chambre protégée concerne les patients recevant une forte activité d'iode-131 par voie orale, principalement dans deux contextes : le cancer différencié de la thyroïde (après thyroïdectomie totale, en complément de la chirurgie et de l'hormonothérapie freinatrice) et, plus rarement pour de fortes activités, certaines maladies thyroïdiennes bénignes ou d'autres thérapies à l'iode-131. En France, l'hospitalisation en secteur radioprotégé est requise au-delà d'un certain seuil d'activité administrée ; en dessous, un traitement ambulatoire est souvent possible. Comme clinicien non nucléariste, vous êtes surtout concerné en amont, pour orienter un patient au bon moment, et en aval, lorsqu'un patient récemment traité vous consulte pendant sa phase de restrictions ou pour une situation intercurrente.",
+        "list": [
+          "Cancer différencié de la thyroïde : iode-131 administré généralement 4 à 6 semaines après la thyroïdectomie totale, selon la stratification du risque.",
+          "Maladies thyroïdiennes bénignes (Basedow, goitre nodulaire toxique) : le plus souvent ambulatoire, hospitalisation réservée aux fortes activités.",
+          "Contre-indications formelles à connaître avant d'adresser : grossesse (à reporter) et allaitement (à arrêter définitivement).",
+          "Anticiper l'arrêt des sources d'iode : produits de contraste iodés récents et amiodarone retardent le traitement (délai parfois de plusieurs mois)."
+        ]
+      },
+      {
+        "title": "Démarche pratique et situations à ne pas gérer seul",
+        "text": "La préparation vise à optimiser la captation de l'iode : stimulation de la TSH (par sevrage hormonal ou par TSH recombinante), régime pauvre en iode et éviction des sources iodées, avec un test de grossesse récent chez la femme en âge de procréer. Ces étapes sont orchestrées par le service de médecine nucléaire, mais votre rôle est utile pour repérer et signaler les obstacles : surcharge iodée par un examen avec contraste ou par l'amiodarone, dysphagie ou sténose œsophagienne, insuffisance rénale, incontinence, ou une situation sociale rendant l'isolement délicat. Après la sortie, si un patient récemment traité doit être hospitalisé, opéré, ou présente une complication, contactez le service de médecine nucléaire avant d'agir : la conduite dépend de l'activité résiduelle mesurée, non de règles générales.",
+        "list": [
+          "Signaler toute surcharge iodée récente (contraste, amiodarone) : elle peut faire reporter le traitement de plusieurs semaines à plusieurs mois.",
+          "Repérer les contre-indications relatives : dysphagie, sténose œsophagienne, insuffisance rénale, incontinence, métastase à risque de compression.",
+          "Renvoyer systématiquement le patient à la fiche de consignes écrite remise à la sortie pour les distances et durées personnalisées.",
+          "Penser à l'attestation de traitement : l'iode-131 peut déclencher les portiques de détection pendant plusieurs semaines.",
+          "Toute situation imprévue (hospitalisation, chirurgie, grossesse dans l'entourage, décès du patient) : appeler le service de médecine nucléaire avant d'agir."
+        ],
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Pourquoi adresser",
+            "text": "Adressez au service de médecine nucléaire toute question concernant un patient candidat à l'iode-131 ou récemment traité, plutôt que d'improviser une conduite. C'est le service qui pose l'indication selon la stratification du risque, choisit l'activité, organise la préparation (stimulation de la TSH, régime pauvre en iode), gère l'hospitalisation en chambre protégée et fixe le moment de la sortie sur une mesure objective du rayonnement résiduel. Votre apport en amont est précieux : signaler une surcharge iodée, une contre-indication ou une contrainte sociale évite un report ou une inefficacité du traitement. En aval, un simple appel permet d'adapter la prise en charge d'une hospitalisation intercurrente ou d'une situation familiale particulière sans exposer inutilement l'entourage."
+          }
+        ]
+      }
+    ]
+  },
+  "medecin_nuc": {
+    "sections": [
+      {
+        "title": "A1 - A1 - Carte d'identité — l'hospitalisation en chambre protégée, un confinement temporel de la source-patient I-131",
+        "text": "**Ce qu'est la chambre protégée.** L'irathérapie désigne l'administration, le plus souvent orale, d'**iode-131** sous forme d'iodure de sodium [¹³¹I]NaI [2]. Aux activités thérapeutiques, le patient devient lui-même une **source radioactive non scellée** : il émet vers l'extérieur le photon γ de **364 keV** (abondance ≈ **82 %**) [2] et excrète de l'iode radioactif (urines, salive, sueur). La **chambre protégée** — ou secteur radioprotégé — est une chambre individuelle **blindée**, à sanitaires dédiés reliés à des **cuves de décroissance**, dont la fonction est double : contenir l'**exposition externe** de l'entourage/public par le γ pénétrant, et **confiner la contamination** liée à l'iode excrété [2][9]. Le principe n'est pas de blinder une source figée, mais d'**isoler la source-patient le temps** que la décroissance physique et l'élimination biologique ramènent son débit de dose sous les seuils réglementaires : c'est un **confinement temporel**, dont la durée moyenne observée est d'environ **72 h (3 jours)** [8], allant de 1–3 j jusqu'à 6–7 j pour les fortes activités [11].\n\n| Champ | Valeur | Source |\n|---|---|---|\n| Nature de l'acte | Hospitalisation en secteur radioprotégé pour RIV* à l'¹³¹I NaI orale | [2] |\n| Radionucléide-source | **¹³¹I** (émetteur β⁻/γ), décroissance vers **¹³¹Xe stable** | [18] |\n| Période physique | **8,02 jours** (8,0197 j) | [18][19] |\n| Photon dimensionnant le blindage | γ **364 keV** (≈ 82 %) ; raies 637 keV, 723 keV | [2][18] |\n| Rayonnement thérapeutique | β⁻ (E_max ≈ **606 keV**, E_moy ≈ **192 keV**) | [18][19] |\n| Activités « chambre protégée » (France, cancer) | **3 700–7 400 MBq (100–200 mCi)** | [2] |\n| Seuil d'hospitalisation (France) | activité administrée **> 740 MBq** | [3] |\n| Seuil de sortie (débit à 1 m, France) | **< 20 µSv/h** face au bas du sternum | [30] |\n| Effluents ¹³¹I — vidange cuve autorisée si | **< 100 Bq/L** après **90 j** (> 10 périodes) | [28] |\n| Cadre réglementaire | France : ASN/SFMN ; UE : **Directive 2013/59/Euratom** ; USA : NRC 10 CFR 35.75 | [15][32][2] |\n\n*RIV = radiothérapie interne vectorisée.\n\n**Comment lire cette carte.** Trois chiffres commandent toute la logique : la **période de 8,02 j** [18] impose un stockage prolongé des déchets et des effluents ; le **γ de 364 keV** [2] impose le blindage des parois et la distance vis-à-vis de l'entourage ; l'**activité administrée** (jusqu'à 7,4 GBq [2]) détermine à la fois l'obligation d'hospitaliser (§A4) et la durée de confinement. Le β⁻ de 606 keV [18], lui, ne « sort » pas du patient (parcours tissulaire millimétrique, cf. §A3) : il porte l'effet thérapeutique mais ne participe pas à l'exposition externe. Toute la radioprotection de la chambre protégée se déduit de cette dissociation entre le **β⁻ thérapeutique confiné** et le **γ pénétrant à maîtriser**.",
+        "stats": [
+          {
+            "value": "8,02 j",
+            "label": "Période physique de l'¹³¹I [18]"
+          },
+          {
+            "value": "364 keV",
+            "label": "γ dimensionnant le blindage (82 %) [2]"
+          },
+          {
+            "value": "> 740 MBq",
+            "label": "Seuil d'hospitalisation (France) [3]"
+          },
+          {
+            "value": "≈ 72 h",
+            "label": "Durée moyenne de confinement [8]"
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schéma de désintégration de l'iode-131 : transition β⁻ (E_max 606 keV) vers un niveau excité du xénon-131, suivie de l'émission du photon gamma de 364 keV (abondance 82 %) avant retour au xénon-131 stable.",
+        "figureCaption": "Fig. 1 — Désintégration de l'¹³¹I : le β⁻ (606 keV) porte l'effet thérapeutique confiné dans les tissus ; le γ de 364 keV, pénétrant, est la source d'exposition externe qui motive le blindage et l'isolement.",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Point expert — pourquoi « source non scellée » change tout",
+            "text": "Contrairement à une curiethérapie (source scellée retirée en fin de séance), l'¹³¹I est une **source non scellée dispersée dans l'organisme** : le patient émet un rayonnement externe ET disperse une contamination (urines, salive, sueur, aérosols). La chambre protégée doit donc gérer simultanément les **deux composantes** — exposition externe (blindage, distance) et contamination (sanitaires dédiés, cuves, film de protection) — ce qu'aucune autre thérapie en médecine nucléaire n'exige à ce degré."
+          }
+        ]
+      },
+      {
+        "title": "A2 - A2 - Comprendre le problème — pourquoi l'I-131 impose un confinement que les autres thérapies n'exigent pas",
+        "text": "**Le problème posé.** La plupart des radionucléides thérapeutiques n'imposent pas d'hospitalisation en chambre blindée. L'¹³¹I fait exception pour une conjonction de propriétés qui, prises ensemble, en font le radio-isotope médical de **plus forte préoccupation radioprotectrice** [35]. Il faut disséquer ces propriétés pour comprendre pourquoi le confinement est ici incontournable.\n\n**1. Un γ pénétrant de haute abondance.** Le photon de **364 keV** [2] émis dans **≈ 82 %** des désintégrations [2] traverse aisément les tissus et sort du patient : c'est lui qui irradie le personnel, l'entourage et le public. À titre de repère, sa **première couche de demi-atténuation (CDA) dans le plomb est de ≈ 2,4 mm** [16], et le rapport d'atténuation béton/plomb à cette énergie est d'environ **14:1** [13] — d'où des parois plombées ou en béton épais (cf. §A3, §A4). La constante de débit de dose est d'environ **0,054–0,059 mSv·h⁻¹ par GBq à 1 m** [6] : à 3,7 GBq administrés, un soignant à 1 m subit d'emblée un débit de l'ordre de la dizaine de µSv/h.\n\n**2. Une période physique longue.** Avec **T½ = 8,02 j** [18], l'activité ne décroît que d'un facteur 2 par semaine. Le patient reste « chaud » plusieurs jours (d'où le confinement de ~72 h [8]), et les **déchets et effluents** doivent être stockés très longtemps : décroissance en cuve **≥ 90 j (> 10 périodes)** avant rejet [28], conservation des déchets solides de l'ordre de **80 j** [2]. Un radionucléide à période courte (heures) ne poserait aucun de ces problèmes logistiques.\n\n**3. Une contamination diffusible et volatile.** L'iodure est **excrété massivement** — urines surtout, mais aussi salive, sueur, matières fécales [2] — et l'¹³¹I est **volatil** : il peut contaminer l'atmosphère de la chambre et exposer la thyroïde du personnel par **inhalation** [35]. C'est ce qui justifie les sanitaires dédiés, la ventilation à renouvellement élevé et le film de protection des surfaces (cf. §A3).\n\n**4. Des activités élevées.** Le traitement des cancers différenciés mobilise **3,7–7,4 GBq (100–200 mCi)** [2][5], soit 10 à 200 fois les activités diagnostiques ; le débit de dose et la contamination émise sont proportionnels.\n\n| Propriété de l'¹³¹I | Conséquence radioprotectrice | Réponse « chambre protégée » |\n|---|---|---|\n| γ 364 keV, 82 % [2] | Exposition externe de l'entourage/public | Blindage parois + distance + isolement |\n| T½ = 8,02 j [18] | Patient « source » plusieurs jours ; déchets à vie longue | Confinement ~72 h [8] ; cuves 90 j [28] |\n| Iodure excrété/volatil [2][35] | Contamination surfaces, atmosphère, personnel | Sanitaires dédiés, ventilation, film plastique |\n| Activités 3,7–7,4 GBq [2] | Débit de dose élevé | Seuils d'hospitalisation (§A4) |\n\n**Contraste avec le β⁻ « inoffensif à l'extérieur ».** L'effet thérapeutique repose sur le β⁻ (E_max 606 keV [18]), dont le parcours tissulaire est **millimétrique** (cf. §A3) : il dépose toute son énergie dans la cellule captante et **ne sort pas du patient**. Le paradoxe de l'irathérapie est donc que ce qui **soigne** (β⁻) ne pose aucun problème de radioprotection externe, tandis que ce qui **complique** (γ 364 keV) n'a aucun rôle thérapeutique — il n'est qu'un sous-produit inévitable de la désintégration. La chambre protégée existe entièrement pour maîtriser ce sous-produit et la contamination associée.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — ne pas transposer un seuil d'un référentiel à l'autre",
+            "text": "Les seuils déclenchant l'hospitalisation et autorisant la sortie **ne sont pas harmonisés** entre pays : France > 740 MBq à l'admission [3] et sortie à **< 20 µSv/h à 1 m** [30] ; recommandation européenne **HERCA > 800 MBq** [3] ; Italie **> 600 MBq** [3] ; USA (NRC) sortie possible jusqu'à **≤ 1,2 GBq** ou **≤ 0,07 mSv/h (7 mrem/h) à 1 m** [31]. Transposer un seuil américain (0,07 mSv/h ≈ 70 µSv/h) au cadre français (20 µSv/h) conduirait à libérer un patient très au-dessus de la limite nationale. Toujours raisonner dans le référentiel réglementaire applicable."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — l'¹³¹I-mIBG relève des mêmes exigences",
+            "text": "La chambre protégée n'est pas propre au cancer thyroïdien : toute RIV à l'¹³¹I (dont l'**¹³¹I-mIBG** des tumeurs neuroendocrines et du neuroblastome) partage le même radionucléide-source et donc les mêmes contraintes de blindage, de gestion des effluents et de seuils de sortie [14]. Le raisonnement de cette fiche est transposable à ces indications, aux activités et délais près."
+          }
+        ]
+      },
+      {
+        "title": "A3 - A3 - Le socle physique et dosimétrique — décroissance, débit de dose de l'I-131 et rétention thyroïdienne",
+        "text": "**Objet de cette section.** Trois lois physiques suffisent à prédire le débit de dose émis par le patient à tout instant, donc à dimensionner le confinement : la **décroissance physique**, l'**élimination biologique**, et l'**atténuation** du γ par les écrans et par la distance. On les pose ici, quantifiées et sourcées.\n\n**(1) Décroissance physique.** L'¹³¹I décroît vers le **¹³¹Xe stable** avec une **période physique T½ₚ = 8,02 j** [18][19]. L'activité résiduelle suit A(t) = A₀·2^(−t/T½ₚ) : après une semaine, il reste ≈ 55 % de l'activité initiale ; après 90 j (> 10 périodes), moins de **0,1 %** — d'où le délai réglementaire de décroissance en cuve avant rejet des effluents [28].\n\n**(2) Émissions et parcours.** La désintégration β⁻ produit un électron d'**E_max ≈ 606 keV** et d'**E_moy ≈ 192 keV** [18][19], puis le noyau-fils émet le γ de **364 keV (82 %)** [2] et des raies mineures (637 keV, 723 keV) [18]. Le β⁻ a un **parcours tissulaire millimétrique** : la dose thérapeutique est délivrée à **90 % dans un rayon de ≈ 0,8 mm (R90)** [2], l'EANM citant un parcours moyen de l'ordre de 0,4 mm [1]. C'est cette portée courte qui confine l'effet biologique à la cellule captante et explique que le β⁻ ne contribue **pas** à l'exposition externe.\n\n**(3) Débit de dose externe.** L'exposition de l'entourage est régie par la constante de débit de kerma dans l'air : ≈ **0,054–0,059 mSv·h⁻¹ par GBq à 1 m** [6] (équivalent à ≈ 2,2 R·h⁻¹·mCi⁻¹ à 1 cm [6]). Ce débit décroît en **1/d²** avec la distance d (loi de l'inverse du carré) et par atténuation dans les écrans : **CDA plomb ≈ 2,4 mm** pour le 364 keV [16], et un mur de **béton ≥ 0,35 m** ramène le débit résiduel derrière la paroi à ≈ **0,44 µSv/h**, contre ≈ **1,48 µSv/h** derrière une fenêtre en verre plombé équivalente [33].\n\n**(4) Rétention thyroïdienne et période effective.** Le débit émis par le patient dépend non seulement de la décroissance physique mais de la **fraction retenue**. La période effective combine physique et biologique : 1/T½ₑff = 1/T½ₚ + 1/T½ᵦᵢₒ.\n\n| Compartiment | Fixation / rétention | Période effective | Source |\n|---|---|---|---|\n| Thyroïde non fixante (bloquée/ablatée) | T½ biol ≈ **1,4 h** | quasi = biologique (élimination rapide) | [24] |\n| Reliquat / thyroïde fixante | uptake conservé | **≈ 80–90 h** (low→high uptake) | [24] |\n| Rétention corps entier (iode organifié) | composante lente | ≈ 138 j | [20] |\n\nCe point est **capital pour la radioprotection** : un patient dont la thyroïde est ablatée élimine vite l'iode non fixé (T½ biol ≈ 1,4 h [24]) et voit son débit externe chuter rapidement — d'où des durées d'isolement plus courtes que chez un patient à fort reliquat fonctionnel, où la rétention prolonge l'émission γ.\n\n**(5) Dosimétrie interne — répartition de la dose.** Chez le patient à captation conservée, l'**organe critique est la thyroïde (ou le reliquat)** [20]. Quand elle est ablatée ou bloquée, la dose se redistribue sur les tissus où l'iodure transite : **paroi gastrique, paroi vésicale et glandes salivaires** [20][24]. À fixation thyroïdienne nulle, la dose efficace de l'¹³¹I NaI est de l'ordre de **64 µSv/MBq** (adulte, homme) et la paroi vésicale reçoit ≈ **610 µGy/MBq** [2] ; la valeur générique CIPR 128 est ≈ **16 mSv/MBq** [20], et des mesures cliniques chez l'hyperthyroïdien donnent une **moyenne de 24 mSv/MBq** (dose thyroïdienne 653 mGy/MBq) [23]. Ces coefficients expliquent la nécessité de l'**hyperhydratation** et des **mictions fréquentes** pour vider la vessie (organe fortement dosé) et accélérer l'élimination.",
+        "stats": [
+          {
+            "value": "0,8 mm",
+            "label": "Parcours R90 du β⁻ dans les tissus [2]"
+          },
+          {
+            "value": "≈ 0,057 mSv/h",
+            "label": "Débit à 1 m par GBq d'¹³¹I [6]"
+          },
+          {
+            "value": "2,4 mm Pb",
+            "label": "CDA du γ 364 keV [16]"
+          },
+          {
+            "value": "≈ 80–90 h",
+            "label": "Période effective, thyroïde fixante [24]"
+          }
+        ],
+        "figureKey": "DECAY_TYPES",
+        "figureAlt": "Comparaison des types d'émission de l'iode-131 : le rayonnement bêta-moins (parcours tissulaire millimétrique, environ 0,8 mm) déposé localement dans la cellule captante, opposé au photon gamma de 364 keV qui traverse les tissus et sort du patient pour irradier l'entourage.",
+        "figureCaption": "Fig. 2 — Dissociation β⁻/γ : le β⁻ (R90 ≈ 0,8 mm) reste confiné et soigne ; le γ 364 keV traverse et impose blindage et distance. Le débit externe se pilote par décroissance, distance (1/d²) et écran.",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — mesurer le débit face au bas du sternum, jamais au cou",
+            "text": "La décision de sortie repose sur un débit de dose mesuré à **1 m** : en France le seuil est **< 20 µSv/h** [30]. La mesure doit être prise **en vis-à-vis du bas du sternum** [30], et non au niveau du cou : une mesure cervicale, proche d'un reliquat thyroïdien fixant, **surestime** le débit corps entier et prolongerait indûment l'isolement. Un point de mesure standardisé est la condition d'une décision reproductible."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — la période effective dépend du patient, pas seulement de l'¹³¹I",
+            "text": "Deux patients recevant la même activité peuvent avoir des débits de dose très différents à 48 h selon leur **rétention** : thyroïde ablatée → élimination rapide (T½ biol ≈ 1,4 h [24]) ; fort reliquat fonctionnel → rétention prolongée (T½ eff ≈ 80–90 h [24]). Ne jamais présumer la durée d'isolement sur la seule activité administrée : c'est la **mesure du débit** (ou de l'activité retenue) qui tranche."
+          }
+        ]
+      },
+      {
+        "title": "A4 - A4 - Cadre réglementaire et zonage — qui décide de l'hospitalisation protégée et selon quels seuils",
+        "text": "**Objet.** L'hospitalisation en chambre protégée n'est pas une décision médicale libre : elle est encadrée par des seuils réglementaires nationaux, eux-mêmes dérivés de contraintes de dose au public et à l'entourage. On expose ici **qui décide**, **selon quels seuils** on hospitalise, et **selon quels critères** on libère — en distinguant explicitement les référentiels, car ils divergent (cf. Piège §A2).\n\n**Cadre institutionnel (France).** Le traitement s'effectue en **secteur radioprotégé**, sous **agrément L1A** délivré à un spécialiste de médecine nucléaire disposant de chambres équipées [2]. L'acte de cotation associé est **KCNL004** (« irradiation interne de la thyroïde par ¹³¹I à dose > 1 GBq ») [2]. La gestion des effluents et déchets radioactifs relève du **Guide ASN n°32** (cuves de décroissance ¹³¹I, seuil de rejet **< 100 Bq/L**, décroissance **90 j**) [28]. Au niveau européen, le socle est la **Directive 2013/59/Euratom**, chapitre VII (protection contre les rayonnements) [1][15].\n\n**Seuils déclenchant l'hospitalisation (variables selon pays).** L'hospitalisation est imposée lorsque l'activité administrée dépasse un seuil au-delà duquel le patient ambulatoire exposerait trop son entourage :\n\n| Pays / instance | Seuil déclenchant l'hospitalisation | Source |\n|---|---|---|\n| France (SFMN) | activité **> 740 MBq** (ambulatoire toléré 370–740 MBq) | [3] |\n| Europe — HERCA (2010) | **> 800 MBq** d'¹³¹I administré | [3] |\n| Italie | **> 600 MBq** | [3] |\n| Allemagne | hospitalisation obligatoire ≥ **48 h** | [3] |\n\n**Critères de levée d'hospitalisation (release).** La sortie est prononcée lorsque le patient ne représente plus un risque supérieur aux contraintes de dose du public et de l'entourage. Là encore, les référentiels diffèrent :\n\n| Instance | Critère de sortie | Base de dose | Source |\n|---|---|---|---|\n| France (SFMN, reco 2017) | débit **< 20 µSv/h à 1 m** (bas du sternum) | contraintes entourage/public | [30] |\n| USA — NRC 10 CFR 35.75 | TEDE* au public **≤ 5 mSv** par administration | dose individuelle | [32] |\n| USA — NRC RG 8.39 (Table 1) | ¹³¹I **≤ 1,2 GBq** OU débit **≤ 0,07 mSv/h à 1 m** | sans calcul spécifique | [31] |\n| Allemagne | débit **≤ 3,5 µSv/h à 2 m** OU activité retenue **< 250 MBq** | — | [3] |\n| International (IAEA/ICRP) | activité résiduelle **< 800 MBq** ; caregivers plafond **5 mSv/traitement** | ICRP 94 | [22][11] |\n\n*TEDE = Total Effective Dose Equivalent (dose efficace totale). Le seuil NRC est **≤ 5 mSv/an** pour un membre du public, abaissé à **1 mSv** si femme enceinte ou enfant [32] ; des **instructions écrites** sont obligatoires dès que la dose prévisible dépasse **1 mSv** [32].\n\n**Contraintes de dose sous-jacentes (France, CSHPF/SFMN).** Les seuils de sortie et les restrictions de contact à domicile sont calibrés sur des **contraintes de dose** différenciées : **1 mSv** pour le public et les enfants < 10 ans, **3 mSv** pour les proches de 10–60 ans, **15 mSv** pour les proches > 60 ans [2]. En pratique, des **restrictions de contact** rapprochés et un éventuel **arrêt de travail** sont requis si l'activité résiduelle est **≥ 600 MBq** ou le débit **≥ 30 µSv/h à 1 m** [30] :\n\n| Activité résiduelle | Débit à 1 m | Arrêt de travail | Contact conjointe enceinte | Contact enfant 0–3 ans | Source |\n|---|---|---|---|---|---|\n| ≤ 100 MBq | ≤ 5 µSv/h | aucun | 2 j | aucun | [2] |\n| ]100–200] | ]5–10] | aucun | 11 j | 9 j | [2] |\n| ]200–400] | ]10–20] | aucun | 20 j | 17 j | [2] |\n| ]400–600] | ]20–30] | 5 j | 24 j | 22 j | [2] |\n| ]600–800] | ]30–40] | 8 j | 27 j | 25 j | [2] |\n\n**Gestion des effluents — un maillon réglementaire critique.** Les urines sont collectées dans des **cuves de décroissance dédiées** ¹³¹I, séparées des effluents à vie courte, et ne peuvent être vidangées qu'après **90 j (> 10 périodes)** et vérification d'une activité volumique **< 100 Bq/L** [28]. Une vidange prématurée constitue un **rejet non conforme** : l'ASN a rendu public un tel incident (rejet non autorisé d'effluents ¹³¹I au réseau d'assainissement, 2021) [29], qui illustre la criticité de ce maillon souvent sous-estimé.",
+        "steps": [
+          {
+            "title": "1 — Prescription & sélection",
+            "text": "Décision d'irathérapie et choix de l'activité (3,7–7,4 GBq pour le cancer avancé [2]) en secteur agréé L1A [2]. Vérification que l'activité dépasse le seuil d'hospitalisation national (France > 740 MBq [3])."
+          },
+          {
+            "title": "2 — Admission en chambre protégée",
+            "text": "Confinement du patient-source ; sanitaires dédiés reliés aux cuves ¹³¹I [28] ; film de protection des surfaces, ventilation, suivi dosimétrique du personnel [2]. Débit de dose initial mesuré à 1 m."
+          },
+          {
+            "title": "3 — Décroissance & mesure quotidienne",
+            "text": "Décroissance physique (T½ 8,02 j [18]) + élimination biologique ; débit de dose à 1 m mesuré face au bas du sternum [30]. Hyperhydratation et mictions fréquentes pour accélérer l'élimination et réduire la dose vésicale [2]."
+          },
+          {
+            "title": "4 — Levée d'hospitalisation",
+            "text": "Sortie quand débit **< 20 µSv/h à 1 m** (France [30]) ou activité résiduelle sous le seuil national ; remise des consignes écrites de restriction de contact (durée fonction de l'activité résiduelle/débit [2][30])."
+          },
+          {
+            "title": "5 — Effluents & déchets",
+            "text": "Urines en cuve de décroissance ≥ 90 j, vidange si < 100 Bq/L [28] ; déchets solides conservés ~80 j avant élimination [2]. Traçabilité et contrôle du débit au contact avant évacuation."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la sortie ne repose pas sur un seul point de mesure ni sur l'activité seule",
+            "text": "En France, le critère est un débit **< 20 µSv/h à 1 m** mesuré **face au bas du sternum** [30], pas une durée fixe (il n'y a pas de durée réglementaire minimale). Deux erreurs classiques : (1) mesurer au cou → surestimation par le reliquat fixant → isolement inutilement prolongé ; (2) présumer la sortie sur la seule activité administrée sans tenir compte de la rétention individuelle (cf. §A3). La mesure standardisée du débit est l'arbitre."
+          },
+          {
+            "type": "info",
+            "title": "Point expert — arbitrage bénéfice/charge de l'hospitalisation",
+            "text": "L'hospitalisation protégée **réduit** l'exposition du public et des proches mais **augmente** celle du personnel soignant et représente un coût et une charge psychologique (isolement) [22]. La dose cumulée d'un soignant sur la semaine post-traitement (patient à 1 840 MBq) va de **0,08 mSv** (patient autonome) à **6,3 mSv** (patient totalement dépendant) [34] : l'autonomie du patient est un déterminant majeur de la dose au personnel, à intégrer dès la sélection."
+          }
+        ]
+      },
+      {
+        "title": "B1 - Concevoir et équiper la chambre protégée — blindage, sanitaires dédiés et circuit des effluents",
+        "text": "La chambre protégée est le socle matériel de l'irathérapie : une chambre individuelle **blindée**, à **sanitaires dédiés** et reliée à des **cuves de décroissance** des effluents, dont l'agencement découle directement des propriétés physiques de l'iode-131 (¹³¹I). Deux grandeurs commandent le dimensionnement : le **photon γ de 364 keV** (abondance ≈ **82 %**), pénétrant, qui impose le blindage et l'isolement, et la **période physique de 8,02 jours** [18], qui impose de gérer dans le temps une source qui décroît lentement. Le β⁻ (E_max ≈ **606 keV**, E_moyenne ≈ **192 keV**) [18] délivre l'effet thérapeutique sur ~2 mm de tissu mais ne sort pas du patient ; il ne concerne donc pas le blindage des murs, seulement la manipulation directe.\n\n**Cadre réglementaire.** En France, le traitement s'effectue en **secteur radioprotégé** (agrément L1A) ; en Europe, la conception relève de la **Directive 2013/59/Euratom, chapitre VII** [15]. La gestion des effluents et déchets suit le **Guide ASN n°32** [28].\n\n**(a) Blindage structurel.** La chambre est plombée pour atténuer les photons de **364 keV et supérieurs** [9]. La **première couche de demi-atténuation (CDA)** dans le plomb pour le 364 keV est de **≈ 2,4 mm** (0,24 cm) [16] ; l'épaisseur de plomb des parois est typiquement de **5 à 25 mm** [9]. À défaut de plomb, on recourt à des murs de **béton épais** — épaisseur recommandée **≥ 0,35 m** dans les chambres d'isolement ¹³¹I [33] — le rapport d'atténuation béton/plomb à 364 keV étant d'environ **14:1** [13]. Le point critique du blindage est la **fenêtre** : à travers un verre plombé, le débit résiduel mesuré atteint **1,48 µSv/h**, contre **0,44 µSv/h** à travers le mur de béton plein [33] — la fenêtre est donc le maillon faible à dimensionner en priorité.\n\n| Élément | Spécification | Source |\n|---|---|---|\n| CDA plomb (γ 364 keV) | **≈ 2,4 mm Pb** | [16] |\n| Épaisseur de plomb des parois | **5–25 mm** | [9] |\n| Béton (mur d'isolement) | **≥ 0,35 m** | [33] |\n| Ratio d'atténuation béton/plomb (364 keV) | **≈ 14:1** | [13] |\n| Débit résiduel — verre plombé vs mur béton | **1,48 vs 0,44 µSv/h** | [33] |\n| Ventilation | souvent **12 renouvellements/h**, filtres HEPA | [1] |\n\n**(b) Sanitaires dédiés et confinement de la contamination.** L'iodure est excrété par les **reins (vessie)**, le **tube digestif** et les **glandes salivaires** : les urines sont la source principale de contamination. La chambre est donc dotée de **sanitaires propres** dédiés, reliés à des **cuves de décroissance** ¹³¹I [28]. Sols et surfaces fréquemment touchées sont protégés par un **film plastique** ; un **sas (anteroom)** regroupe contaminamètre mains-pieds, radiamètre, kit de décontamination et équipements de protection individuelle (EPI) [10]. La **ventilation forcée** (souvent **12 renouvellements/h**, filtres à très haute efficacité HEPA) contient le risque d'aérosolisation du ¹³¹I volatil [1].\n\n**(c) Circuit des effluents.** Les urines et effluents liquides transitent par des **cuves de décroissance dédiées** avant tout rejet. Le principe premier est la **séparation des effluents à vie longue (¹³¹I) des effluents à vie courte** [28]. En France, la **vidange** d'une cuve n'est autorisée qu'après contrôle, l'activité volumique résiduelle devant être **< 100 Bq/L** [28], après une décroissance en cuve d'au moins **90 jours (> 10 périodes)** [28]. En pratique, les cuves fonctionnent par cycles (≈ 2 mois de collecte / 2 mois de décroissance) [9]. Le non-respect de ces seuils expose à un **rejet non conforme** : l'ASN a rapporté un rejet non autorisé d'effluents ¹³¹I au réseau public d'assainissement (Gustave Roussy, 03/09/2021) [29], illustrant la criticité de la gestion des cuves.",
+        "stats": [
+          {
+            "value": "364 keV",
+            "label": "γ principal de l'¹³¹I (≈ 82 %) [18]"
+          },
+          {
+            "value": "2,4 mm Pb",
+            "label": "CDA du 364 keV [16]"
+          },
+          {
+            "value": "≥ 0,35 m",
+            "label": "béton, mur d'isolement [33]"
+          },
+          {
+            "value": "< 100 Bq/L",
+            "label": "seuil de vidange des cuves (France) [28]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — la fenêtre, maillon faible du blindage",
+            "text": "Le débit résiduel à travers un **verre plombé** (**1,48 µSv/h**) est plus de trois fois supérieur à celui traversant le mur de béton plein (**0,44 µSv/h**) [33]. Toute conception doit dimensionner la fenêtre — et non seulement les murs — sous peine d'un point chaud au poste de soins ou dans la circulation adjacente."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — vidange prématurée des cuves",
+            "text": "Vidanger une cuve avant **90 jours** de décroissance ou au-dessus de **100 Bq/L** constitue un rejet non conforme [28] ; un tel incident a été déclaré à l'ASN en 2021 [29]. Le contrôle de l'activité volumique avant chaque vidange est impératif."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — pourquoi plomber pour le γ et pas pour le β⁻",
+            "text": "Seul le photon de **364 keV** (et raies supérieures 637 keV) traverse le patient et les murs : c'est lui qui dicte l'épaisseur de plomb/béton [9,16]. Le **β⁻** (parcours ~2 mm tissu) [18] est entièrement absorbé dans le patient ; il ne concerne que la manipulation directe de la gélule et la gestion des excréta, jamais le blindage structurel."
+          }
+        ],
+        "figureKey": "DECAY_SCHEME",
+        "figureAlt": "Schéma de désintégration de l'iode-131 : émission β⁻ (E_max 606 keV) vers le xénon-131 stable, avec émission du photon γ de 364 keV — le β⁻ délivre la dose thérapeutique locale, le γ impose le blindage de la chambre.",
+        "figureCaption": "Fig. 1 — Désintégration β⁻/γ de l'¹³¹I : le β⁻ (192 keV moy.) traite localement, le γ 364 keV dicte le blindage de la chambre protégée."
+      },
+      {
+        "title": "B2 - Préparer et admettre le patient — information, consentement, contrôle de grossesse et administration de l'I-131",
+        "text": "L'admission en chambre protégée n'est décidée qu'au-delà d'un **seuil d'activité** propre à chaque pays. En France, l'hospitalisation en chambre protégée est recommandée si l'activité administrée dépasse **740 MBq**, ou dans des situations particulières (incontinence, excrétion lente, contraintes familiales) ; en deçà, la plage **370–740 MBq** autorise l'ambulatoire [3]. La recommandation européenne **HERCA** (juin 2010) fixe le seuil à **> 800 MBq** [3] ; l'Allemagne impose l'hospitalisation **≥ 48 h**, l'Italie au-delà de **600 MBq** [3]. Les activités thérapeutiques usuelles justifiant la chambre vont de **1,1 GBq (30 mCi)** pour l'ablation d'un reliquat à faible risque jusqu'à **3,7–7,4 GBq (100–200 mCi)** pour la maladie métastatique [2,4].\n\n**(a) Vérifications réglementaires à l'admission.** Deux contrôles conditionnent l'administration :\n\n| Vérification | Exigence | Source |\n|---|---|---|\n| Test de grossesse (β-hCG) | **négatif dans les 72 h** avant administration (femme 12–50 ans) | [1,4] |\n| Allaitement | **arrêt définitif** avant l'administration | [22] |\n| Information & consentement | recueil tracé, consignes de confinement expliquées | [27] |\n| Bilan pré-thérapeutique | TSH, Tg, Ac anti-Tg, calcémie, ionogramme, NFS | [2] |\n\nLa **grossesse est une contre-indication absolue** (report au terme) et l'**allaitement doit être arrêté définitivement** avant l'administration [22]. Ces deux points sont recherchés systématiquement et tracés.\n\n**(b) Stimulation TSH et régime pauvre en iode (préalables amont).** L'efficacité de la fixation impose une **TSH ≥ 30 mUI/L** [4], obtenue soit par sevrage hormonal (arrêt L-T3 ~2 semaines, L-T4 3–4 semaines), soit par **TSH recombinante humaine (rhTSH, Thyrogen)** : **0,9 mg IM à J-2 et J-1**, administration de l'iode à J0 [2] — la rhTSH est non-inférieure au sevrage pour l'ablation [37]. Un **régime pauvre en iode ≥ 7 jours** est conseillé, avec apport en iode stable **< 50 µg/j** [1,36]. Ces préparatifs sont réalisés en amont de l'admission ; à l'entrée en chambre, on vérifie leur bonne conduite.\n\n**(c) Administration de l'¹³¹I.** La forme galénique standard est la **gélule de gélatine** avalée entière (solution buvable si troubles de déglutition) [2], le patient étant à jeun de solides (≥ 6 h). L'administration se fait dans la chambre, sous contrôle de radioprotection, après vérification de l'**activité à l'activimètre** [2]. Les mesures d'accélération de l'élimination débutent aussitôt : **hydratation 1,5–2 L/24 h**, mictions fréquentes, et **bonbons acidulés / eau citronnée** pour stimuler la salivation et protéger les glandes salivaires [2]. Un **repas** est autorisé **1 h 30 à 2 h** après la prise [2]. En cas de reliquat volumineux ou de métastases cérébrales/para-médullaires, une **corticothérapie préventive** (prednisolone 0,5–1 mg/kg/j) encadre l'administration [2].",
+        "stats": [
+          {
+            "value": "> 740 MBq",
+            "label": "seuil d'hospitalisation (France) [3]"
+          },
+          {
+            "value": "72 h",
+            "label": "délai max du test de grossesse [1,4]"
+          },
+          {
+            "value": "≥ 30 mUI/L",
+            "label": "cible de TSH avant iode [4]"
+          },
+          {
+            "value": "1,5–2 L/24 h",
+            "label": "hydratation post-administration [2]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "En amont (J-14 à J-1)",
+            "text": "Sevrage hormonal (L-T4 3–4 sem, L-T3 ~2 sem) OU rhTSH 0,9 mg IM à J-2 et J-1 [2] ; régime pauvre en iode ≥ 7 jours [1] ; bilan biologique (TSH, Tg, calcémie, NFS) [2]."
+          },
+          {
+            "title": "À l'admission (J0, avant l'iode)",
+            "text": "Confirmer TSH ≥ 30 mUI/L [4] ; test de grossesse β-hCG négatif < 72 h [1,4] ; s'assurer de l'arrêt de l'allaitement [22] ; information, consentement tracé et explication des consignes de confinement ; patient à jeun de solides."
+          },
+          {
+            "title": "Administration (J0)",
+            "text": "Administration de la gélule d'¹³¹I avalée entière, activité vérifiée à l'activimètre [2] ; débuter aussitôt hydratation 1,5–2 L/24 h, mictions fréquentes et hypersalivation (bonbons acidulés) [2] ; repas 1 h 30–2 h après la prise [2]."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse et allaitement",
+            "text": "La grossesse est une **contre-indication absolue** (report du traitement) et l'allaitement doit être **arrêté définitivement** avant l'administration [22]. Le test de grossesse doit dater de **moins de 72 h** [1,4]. Une conception ne sera envisagée qu'après un délai d'au moins **6 mois** (souvent porté à ≥ 1 an) [22]."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — les seuils d'hospitalisation ne se transposent pas",
+            "text": "Le seuil déclenchant l'hospitalisation varie selon les référentiels : **> 740 MBq** en France [3], **> 800 MBq** pour HERCA [3], **> 600 MBq** en Italie [3]. Ne jamais appliquer un seuil d'un pays à un autre : la décision d'admission dépend du cadre réglementaire local ET de facteurs patient (incontinence, excrétion lente, entourage vulnérable) [3]."
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Symporteur sodium-iode (NIS) de la cellule thyroïdienne captant l'iodure radioactif : la stimulation par une TSH ≥ 30 mUI/L et un régime pauvre en iode maximisent cette captation avant l'administration de l'¹³¹I.",
+        "figureCaption": "Fig. 2 — Le NIS concentre l'iodure : préparer le patient (TSH ≥ 30 mUI/L, régime pauvre en iode) optimise la captation avant l'administration."
+      },
+      {
+        "title": "B3 - Vivre le séjour en confinement — organisation quotidienne, soins, repas, déchets et déchets d'excréta",
+        "text": "Le séjour en chambre protégée organise, jour après jour, la **décroissance de la source** (patient) et le **confinement de la contamination** (excréta). La durée n'est pas fixée réglementairement en France : la sortie repose sur l'**activité résiduelle** ou le **débit de dose à 1 m** mesuré en vis-à-vis du bas du sternum [27]. La durée moyenne observée est d'environ **72 h (3 jours)** [8], l'isolement usuel dans le cancer différencié étant de **3 à 5 jours** [11].\n\n**(a) Organisation quotidienne.** Le principe directeur est de **minimiser le temps de présence** et de **maximiser la distance** lors de chaque entrée (cf. B4). Les soins sont regroupés, préparés à l'avance, et réalisés avec **gants** systématiques pour tout contact avec le patient, les urines, le linge souillé ou le nettoyage des toilettes [27]. Le patient est encouragé à l'autonomie : un patient autonome expose le personnel à **0,08 mSv** sur la semaine post-traitement, contre jusqu'à **6,3 mSv** pour un patient totalement dépendant (activité de référence 1 840 MBq) [34] — un rapport de 1 à 79 qui fait de la **dépendance** le principal déterminant de la dose au personnel.\n\n**(b) Repas et déchets fermentescibles.** Les **restes de repas** (déchets fermentescibles) sont contaminés par la salive et l'excrétion digestive : ils sont collectés séparément et conservés en **local réfrigéré de décroissance** avant élimination [2]. La vaisselle jetable et les couverts suivent le circuit des déchets solides.\n\n**(c) Déchets solides.** Mouchoirs, couches, linge souillé et matériels de soins sont collectés durant les **30 jours** suivant l'administration, puis **conservés 80 jours** pour décroissance (≈ 10 périodes) avant contrôle du débit de dose au contact et élimination [2]. Le Guide ASN n°32 rappelle que les déchets solides ne sont évacués qu'**après décroissance et contrôle du débit de dose au contact** [28].\n\n| Type de déchet | Circuit | Délai / seuil | Source |\n|---|---|---|---|\n| Effluents liquides (urines) | cuves de décroissance dédiées | décroissance **≥ 90 j**, vidange si **< 100 Bq/L** | [28] |\n| Déchets solides (mouchoirs, couches, linge) | collecte **30 j**, conservation **80 j** | contrôle débit de dose au contact avant élimination | [2,28] |\n| Déchets fermentescibles (restes de repas) | local réfrigéré de décroissance | décroissance avant élimination | [2] |\n| Effluents à vie courte | séparés des effluents ¹³¹I (vie longue) | — | [28] |\n\n**(d) Déchets d'excréta.** Les urines constituent la source dominante : la fixation thyroïdienne étant faible ou nulle après thyroïdectomie, une large fraction de l'¹³¹I est éliminée par voie urinaire, la **paroi vésicale** recevant **610 µGy/MBq** (homme adulte, fixation 0 %) [30]. D'où l'usage des **sanitaires dédiés** reliés aux cuves (cf. B1), la vidange vésicale fréquente, et le port de gants pour tout contact avec les excréta [27]. La limite type de rejet à l'égout pour l'¹³¹I est de **3,7 MBq/j** (ou **22,2 MBq/m³** en moyenne mensuelle) [9], à respecter en sortie de cuve.",
+        "stats": [
+          {
+            "value": "≈ 72 h",
+            "label": "durée moyenne d'hospitalisation [8]"
+          },
+          {
+            "value": "0,08 → 6,3 mSv",
+            "label": "dose personnel/semaine : autonome vs dépendant [34]"
+          },
+          {
+            "value": "80 j",
+            "label": "conservation des déchets solides [2]"
+          },
+          {
+            "value": "610 µGy/MBq",
+            "label": "dose à la paroi vésicale (fixation 0 %) [30]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "J0–J1 — pic d'activité",
+            "text": "Confinement strict ; contacts limités au minimum, gants systématiques [27] ; hydratation forcée et mictions fréquentes pour accélérer l'élimination urinaire [2] ; collecte des urines vers cuves dédiées, tri des déchets solides et fermentescibles [2,28]."
+          },
+          {
+            "title": "J2–J3 — décroissance",
+            "text": "Mesures quotidiennes du débit de dose à 1 m face au bas du sternum [27] ; poursuite du tri des déchets ; regroupement des soins pour limiter le temps d'exposition du personnel."
+          },
+          {
+            "title": "Décision de sortie",
+            "text": "Sortie fondée sur l'activité résiduelle / le débit de dose à 1 m selon le seuil local (cf. B4) [27] ; remise des consignes de restriction de contact adaptées à l'activité résiduelle."
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — l'autonomie du patient est la meilleure protection",
+            "text": "La dose au personnel varie d'un facteur ~79 selon la dépendance du patient : **0,08 mSv** (autonome) vs **6,3 mSv** (totalement dépendant) sur la semaine [34]. Favoriser l'autonomie (repas, toilette, mobilité) et anticiper les situations de dépendance (patient grabataire, hémodialysé) est le levier organisationnel le plus efficace."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — filière des excréta et des déchets fermentescibles",
+            "text": "Les urines (paroi vésicale **610 µGy/MBq** [30]) vont aux cuves dédiées ; les restes de repas, contaminés par la salive, exigent un **local réfrigéré de décroissance** [2]. Ne pas confondre les circuits : effluents ¹³¹I (vie longue) séparés des effluents à vie courte [28], déchets solides conservés **80 jours** avant contrôle [2]."
+          }
+        ],
+        "figureKey": "THYROID_PATTERNS",
+        "figureAlt": "Distribution physiologique de l'iode-131 après administration : glandes salivaires, estomac, intestin et vessie — sources de contamination guidant le circuit des déchets et des excréta en chambre protégée.",
+        "figureCaption": "Fig. 3 — Voies d'excrétion de l'¹³¹I (salivaire, digestive, urinaire) : elles dictent la filière des excréta et des déchets pendant le séjour."
+      },
+      {
+        "title": "B4 - Protéger le personnel et les visiteurs — dosimétrie opérationnelle, consignes et restriction des visites",
+        "text": "La radioprotection du personnel et de l'entourage repose sur les trois leviers **ALARA** — **temps, distance, écran** — et sur une **dosimétrie opérationnelle** encadrant chaque entrée. Le personnel le plus exposé est constitué des **infirmiers, manipulateurs et radiopharmaciens** [34] ; la voie d'exposition spécifique de l'¹³¹I est l'**inhalation de vapeurs** (¹³¹I volatil), qui irradie la thyroïde du soignant [35]. Il n'existe pas de limite de dose « imposée » aux soins, mais une application systématique du principe **ALARA** [34].\n\n**(a) Dosimétrie opérationnelle et suivi.** Le personnel bénéficie d'une **formation à la radioprotection** (personne compétente en radioprotection, PCR), d'une **limitation programmée des contacts**, du **port de gants** pour soins, urines et nettoyage des toilettes, et d'un **suivi dosimétrique** passif et opérationnel [27]. Le plafond de dose retenu pour les **accompagnants / caregivers** est de **5 mSv par traitement** [22]. Les mesures quotidiennes du **débit de dose à 1 m** (face au bas du sternum) guident la levée de l'hospitalisation [27].\n\n**(b) Critères de sortie (par pays).** La sortie autorise le retour aux contacts publics selon des seuils non harmonisés — à ne jamais transposer d'un référentiel à l'autre :\n\n| Référentiel | Critère de sortie | Source |\n|---|---|---|\n| France (SFMN) | débit de dose à 1 m **< 20 µSv/h** (face au bas du sternum) | [30] |\n| ICRP | activité résiduelle **< 800 MBq** | [3] |\n| NRC (USA, 10 CFR 35.75) | dose au public **< 5 mSv/an** (**1 mSv** si enceinte / enfant ≤ 8 ans) | [32] |\n| NRC (RG 8.39, sans calcul) | activité **≤ 1,2 GBq (33 mCi)** OU débit **≤ 0,07 mSv/h (7 mrem/h) à 1 m** | [31] |\n| Allemagne | débit **≤ 3,5 µSv/h à 2 m** OU activité retenue **< 250 MBq** | [3] |\n\n**(c) Consignes et restriction des visites à la sortie.** À la sortie, des **restrictions de contact** graduées sur l'activité résiduelle (ou le débit à 1 m) sont remises, calibrées sur des contraintes de dose de **1 mSv** (public / enfant < 10 ans), **3 mSv** (proches 10–60 ans) et **15 mSv** (proches > 60 ans) [27]. Un **arrêt de travail** est à prévoir si l'activité résiduelle est **≥ 600 MBq** ou le débit **≥ 30 µSv/h** (contacts proches ~1 m, prolongés ~7 h/j) [27].\n\n| Activité résiduelle | Débit à 1 m | Arrêt de travail | Contact conjoint enceinte | Contact enfant 0–3 ans |\n|---|---|---|---|---|\n| ≤ 100 MBq | ≤ 5 µSv/h | aucun | 2 j | aucun |\n| ]100–200] | ]5–10] | aucun | 11 j | 9 j |\n| ]200–400] | ]10–20] | aucun | 20 j | 17 j |\n| ]400–600] | ]20–30] | 5 j | 24 j | 22 j |\n| ]600–800] | ]30–40] | 8 j | 27 j | 25 j |\n\n*(Table CSHPF/SFMN [27].)* Pendant l'hospitalisation, les **visites sont restreintes** : elles sont limitées en durée, tenues à distance, et **interdites aux femmes enceintes et aux enfants** — cibles des contraintes de dose les plus basses (1 mSv) [27]. En cas de **décès du patient** en cours de séjour, la toilette mortuaire se fait avec gants ; enterrement et crémation sont acceptables si l'activité résiduelle est **≤ 400 MBq** [2].",
+        "stats": [
+          {
+            "value": "< 20 µSv/h",
+            "label": "débit à 1 m autorisant la sortie (France) [30]"
+          },
+          {
+            "value": "0,07 mSv/h",
+            "label": "débit à 1 m sans calcul (NRC, USA) [31]"
+          },
+          {
+            "value": "5 mSv",
+            "label": "plafond de dose par traitement (caregivers) [22]"
+          },
+          {
+            "value": "≥ 600 MBq",
+            "label": "seuil d'arrêt de travail des proches [27]"
+          }
+        ],
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — les cut-offs de sortie ne se transposent pas",
+            "text": "Les seuils sont hétérogènes : **20 µSv/h à 1 m** (France) [30], **≈ 70 µSv/h à 1 m** soit **0,07 mSv/h** (NRC, USA) [31], **3,5 µSv/h à 2 m** (Allemagne) [3]. Appliquer un seuil étranger conduit à des sorties trop précoces ou trop tardives. Toujours se référer au cadre réglementaire local."
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — mesurer au bon point",
+            "text": "Le débit de dose de sortie se mesure **à 1 m, face au bas du sternum** [30], et non au niveau du cou — une mesure cervicale surestime le débit (fixation thyroïdienne résiduelle) et retarde à tort la sortie. La rigueur du point de mesure conditionne l'équité de la décision."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — inhalation d'¹³¹I volatil, risque propre au soignant",
+            "text": "L'¹³¹I est le radioisotope médical le plus préoccupant par sa volatilité : la voie d'exposition thyroïdienne du personnel est l'**inhalation** [35]. D'où l'importance de la ventilation dédiée (cf. B1), du regroupement des soins, et — si besoin — de comprimés d'iode stable pour les soignants exposés."
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Les trois leviers ALARA — temps, distance, écran — appliqués à la protection du personnel et des visiteurs face au patient traité à l'iode-131 : réduire le temps de présence, augmenter la distance, interposer un blindage.",
+        "figureCaption": "Fig. 4 — Temps / distance / écran : structure les consignes au personnel et les restrictions de visite face au patient « source »."
+      },
+      {
+        "title": "C1 - Mesurer pour décider de la sortie — débitmétrie, activité résiduelle et critères de levée du confinement",
+        "text": "La sortie de chambre protégée n'est **jamais** une décision de durée fixe : c'est une décision **métrologique**, fondée sur la mesure de l'exposition résiduelle du patient devenu « source ». En France, il n'existe pas de limite réglementaire de durée d'hospitalisation ; la levée du confinement repose sur l'**activité résiduelle** estimée ou sur le **débit de dose à 1 m**, mesuré en vis-à-vis du bas du sternum.[2][30] La durée moyenne observée est de l'ordre de **72 h (3 jours)**, l'isolement usuel du cancer différencié de la thyroïde (CDT) s'étalant sur **3 à 5 jours** selon l'activité administrée.[8][11]\n\n**Grandeurs mesurées et leur physique.** Le radiamètre lit le débit de dose du photon γ de **364 keV (abondance ≈ 82 %)**, seul rayonnement suffisamment pénétrant pour sortir du patient ; le β⁻ (E_max ≈ **606 keV**, parcours tissulaire ~2 mm) reste confiné et ne contribue pas à l'exposition externe.[16][18] La constante de débit de kerma vaut **≈ 0,054–0,059 mSv·h⁻¹ par GBq à 1 m** (2,2 R·h⁻¹·mCi⁻¹ à 1 cm).[6][16] Cette relation quasi-linéaire permet, par une simple mesure de débit, de remonter à l'activité corps entier retenue, corrigée de la décroissance physique (**période 8,02 j**) et de l'excrétion urinaire rapide (période effective courte tant que la thyroïde est ablatée/bloquée).[18][24]\n\n**Cinétique.** L'essentiel de la baisse du débit dans les 24–48 premières heures traduit l'**excrétion rénale** de l'iodure non fixé, accélérée par l'hyperhydratation (1,5–2 L/24 h) et les mictions fréquentes.[2] Chez un patient à thyroïde ablatée, la composante lente (rétention corps entier) est mineure ; c'est pourquoi le débit chute rapidement sous les seuils de sortie. Toute stagnation anormale du débit doit faire évoquer une rétention (constipation, rétention urinaire, insuffisance rénale) ou une fixation résiduelle inattendue.\n\n**Seuils de levée du confinement (hétérogènes selon les référentiels — ne jamais transposer un seuil d'un pays à l'autre) :**\n\n| Référentiel | Critère de sortie | Valeur | Source |\n|---|---|---|---|\n| ICRP | Activité résiduelle ¹³¹I | **< 800 MBq** | [3] |\n| France (SFMN) | Débit à 1 m (face bas du sternum) | **< 20 µSv/h** | [30] |\n| NRC (10 CFR 35.75, USA) | Dose au public par administration (TEDE) | **≤ 5 mSv** (**≤ 1 mSv** si enfant/femme enceinte) | [32] |\n| NRC (RG 8.39, USA) | Débit à 1 m sans calcul / activité sans calcul | **≤ 0,07 mSv/h** / **≤ 1,2 GBq (33 mCi)** | [31] |\n| Allemagne | Débit à 2 m **OU** activité retenue | **≤ 3,5 µSv/h** OU **< 250 MBq** | [3] |\n| Italie | Hospitalisation obligatoire si activité | **> 600 MBq** | [3] |\n| IAEA (thyréotoxicose) | Activité de sortie (mesure à 1 m) | **≈ 1 100 MBq (30 mCi)** | [11] |\n\nÀ noter la disparité majeure : **20 µSv/h** en France contre **0,07 mSv/h (≈ 70 µSv/h)** aux États-Unis, soit un facteur ~3,5 — reflet non d'une physique différente mais d'hypothèses d'occupation et de contrainte de dose distinctes.[30][31] Le seuil NRC des **1,2 GBq** autorise d'ailleurs de nombreux traitements en ambulatoire outre-Atlantique là où la France hospitalise.[31]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — un seul point de mesure mal placé",
+            "text": "Le débit doit être mesuré à **1 m** en vis-à-vis du **bas du sternum**, jamais au niveau du cou : une mesure cervicale capte la fixation d'un reliquat thyroïdien et **surestime** l'exposition intégrée aux proches, retardant à tort la sortie. Standardiser la géométrie (distance, hauteur, patient debout) est la condition de reproductibilité de la décision.[30]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — activité vs débit, deux portes vers la même décision",
+            "text": "Débit de dose et activité résiduelle sont **interchangeables** via la constante de débit (**≈ 0,057 mSv·h⁻¹·GBq⁻¹ à 1 m**).[6][16] Documenter les deux (débit mesuré + activité déduite) sécurise la traçabilité et permet de vérifier la cohérence interne : un débit anormalement bas pour une activité élevée doit faire suspecter une erreur de géométrie ou un blindage résiduel."
+          }
+        ],
+        "stats": [
+          {
+            "value": "< 20 µSv/h",
+            "label": "Débit à 1 m — sortie (France, SFMN) [30]"
+          },
+          {
+            "value": "< 800 MBq",
+            "label": "Activité résiduelle — release ICRP [3]"
+          },
+          {
+            "value": "≤ 0,07 mSv/h",
+            "label": "Débit à 1 m — release NRC (RG 8.39) [31]"
+          },
+          {
+            "value": "≈ 72 h",
+            "label": "Durée d'hospitalisation moyenne observée [8]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "J0 — Administration & référence",
+            "text": "Prise orale de la gélule ¹³¹I ; mesure du débit initial à 1 m (référence pour la cinétique). Début de l'hyperhydratation (1,5–2 L/24 h) et des mictions fréquentes pour accélérer l'excrétion.[2]"
+          },
+          {
+            "title": "J1–J2 — Suivi de décroissance",
+            "text": "Débitmétrie quotidienne à géométrie standardisée (1 m, bas du sternum, patient debout). La chute rapide traduit l'excrétion urinaire de l'iodure non fixé.[16][18]"
+          },
+          {
+            "title": "Décision de levée",
+            "text": "Sortie autorisée quand le débit passe sous le seuil du référentiel applicable (France : < 20 µSv/h ; ICRP : activité < 800 MBq).[30][3] Consigner la valeur, l'heure, la géométrie et l'opérateur."
+          },
+          {
+            "title": "Remise des consignes",
+            "text": "À la sortie, calcul et remise des restrictions de contact individualisées à partir de l'activité résiduelle / du débit (cf. C2), et information écrite obligatoire dès que la dose prévisible à un proche peut dépasser 1 mSv.[32]"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Temps, distance, écran : les trois leviers ALARA qui structurent la débitmétrie de sortie et le calibrage des consignes de retour à domicile pour le patient traité par iode-131."
+      },
+      {
+        "title": "C2 - Interpréter la balance dose-entourage — modéliser la dose aux proches et calibrer les consignes de retour à domicile",
+        "text": "La levée du confinement transfère la « source » du secteur protégé vers le domicile : la décision de sortie n'est justifiée que si la **dose intégrée aux proches** reste sous les contraintes admises. Le modèle de référence intègre le débit de dose à 1 m à la sortie, la décroissance ultérieure (physique **8,02 j** + excrétion), et un scénario d'occupation (distance et durée de contact).[8][22] Les contraintes de dose retenues en France (annexe CSHPF/SFMN) sont **1 mSv** pour le public et les enfants < 10 ans, **3 mSv** pour les proches de 10–60 ans, et **15 mSv** pour les proches > 60 ans.[2] Le plafond international pour les aidants (caregivers) est fixé à **5 mSv par traitement** (ICRP 94 / IAEA SRS 40).[22]\n\n**Ordre de grandeur de l'exposition réelle des proches.** Les études de terrain confirment la robustesse du modèle : la dose engagée des membres de la famille reste très majoritairement inférieure au mSv lorsque les consignes sont respectées, la fixation thyroïdienne mesurée chez les proches restant faible.[38] Ce n'est pas l'irradiation externe seule mais aussi le risque de **contamination interne** (salive, sueur, urines) qui justifie les règles d'hygiène strictes du retour à domicile.[38]\n\n**Table de restrictions de contact (France, SFMN — contraintes 1/3/15 mSv, contacts proches ~1 m, prolongés ~7 h/j) :**\n\n| Activité résiduelle | Débit à 1 m | Arrêt de travail | Contact conjoint enceinte | Contact enfant 0–3 ans |\n|---|---|---|---|---|\n| ≤ 100 MBq | ≤ 5 µSv/h | aucun | 2 j | aucun |\n| ]100–200] MBq | ]5–10] µSv/h | aucun | 11 j | 9 j |\n| ]200–400] MBq | ]10–20] µSv/h | aucun | 20 j | 17 j |\n| ]400–600] MBq | ]20–30] µSv/h | 5 j | 24 j | 22 j |\n| ]600–800] MBq | ]30–40] µSv/h | 8 j | 27 j | 25 j |\n\nLa règle opérationnelle : **arrêt de travail** et restrictions renforcées dès que l'activité résiduelle atteint **≥ 600 MBq** ou le débit **≥ 30 µSv/h** à 1 m.[2][30] Les délais de restriction augmentent avec la vulnérabilité du contact — le fœtus (thyroïde captante dès ~10–12 SA) et le jeune enfant imposent les distances de séparation les plus longues.\n\n**Restrictions spécifiques du terrain reproductif :**\n\n| Situation | Recommandation | Source |\n|---|---|---|\n| Grossesse (patiente) | Contre-indication absolue ; report au terme | [2][22] |\n| Conception après traitement | Délai **≥ 1 an** avant conception | [2] |\n| Allaitement | **Arrêt définitif** avant l'administration | [2][22] |\n| Fertilité masculine | Azoospermie transitoire (⅓ des hommes) | [2] |\n\n**Logique de calibrage.** Les consignes se déclinent selon les trois leviers ALARA : **distance** (dormir séparément, éviter le contact prolongé rapproché), **temps** (limiter la durée des contacts avec enfants et femmes enceintes sur la période utile) et **hygiène** (limiter la contamination : sanitaires dédiés, double chasse d'eau, lavage des mains, linge séparé).[10][38] Chaque consigne a une **date d'échéance** dérivée du tableau ci-dessus : elle n'est pas indéfinie mais court jusqu'à ce que la décroissance ramène la dose projetée sous la contrainte.",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Precaution — le fœtus et le nourrisson dictent la contrainte la plus stricte",
+            "text": "La contrainte de dose descend à **1 mSv** pour un enfant à naître ou un enfant < 10 ans.[2][32] Un conjoint enceinte impose jusqu'à **27 jours** de séparation nocturne pour une activité résiduelle de 600–800 MBq.[2] Ne jamais délivrer une consigne unique « standard » : elle doit être recalculée sur l'activité/le débit réels du patient à la sortie."
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — hospitaliser n'est pas neutre",
+            "text": "L'hospitalisation en chambre protégée **réduit** l'exposition du public et des proches mais **augmente** celle du personnel soignant et le coût/charge psychologique du patient.[22] L'arbitrage relève d'une optimisation globale : au-dessus des seuils nationaux (France > 740 MBq ; HERCA > 800 MBq), le confinement s'impose ; en deçà, les consignes ambulatoires suffisent souvent.[3]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "1 / 3 / 15 mSv",
+            "label": "Contraintes public<10 ans / proches 10–60 / >60 ans [2]"
+          },
+          {
+            "value": "5 mSv",
+            "label": "Plafond aidant par traitement (ICRP 94) [22]"
+          },
+          {
+            "value": "≥ 600 MBq",
+            "label": "Seuil de restrictions renforcées + arrêt de travail [2]"
+          },
+          {
+            "value": "≥ 1 an",
+            "label": "Délai avant conception après ¹³¹I [2]"
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Symporteur sodium-iode (NIS) captant l'iodure : cible captante chez le patient et, par contamination, chez le fœtus ou le nourrisson — rationale des restrictions de contact les plus strictes après iode-131."
+      },
+      {
+        "title": "C3 - Tracer et prouver — dossier de radioprotection, registres d'effluents et documents opposables",
+        "text": "En médecine nucléaire thérapeutique, **ce qui n'est pas tracé n'a pas eu lieu** : le dossier de radioprotection est à la fois l'outil d'optimisation et la pièce opposable en cas de contrôle (ASN/ASNR) ou d'incident. Le traitement s'exerce dans un secteur agréé (agrément **L1A** en France), coté **KCNL004** à la CCAM pour l'irradiation interne de la thyroïde par ¹³¹I à dose > 1 GBq, et l'hospitalisation en secteur radioprotégé (acte ZN 100 PRA 100) s'impose quelle que soit l'activité.[2] Le cadre européen est la **Directive 2013/59/Euratom (chapitre VII)**.[1][15]\n\n**Dossier patient de radioprotection — pièces à consigner :** activité administrée (vérifiée à l'activimètre), lot et forme galénique, débitmétries datées et géométrisées, activité résiduelle déduite, critère et heure de levée du confinement, consignes de sortie individualisées remises et signées, et information écrite dès que la dose prévisible à un proche peut dépasser **1 mSv**.[32] La vérification de l'**activité** et de la **nature du rayonnement γ émis** fait partie du contrôle qualité amont, avec les précautions d'usage des composés hautement radioactifs.[2]\n\n**Registres d'effluents liquides (France, Guide ASN n°32).** Les urines et effluents des sanitaires dédiés transitent par des **cuves de décroissance** propres au ¹³¹I, séparées des effluents à vie courte.[28] La vidange au réseau n'est autorisée que si deux conditions sont réunies et **consignées** :\n\n| Paramètre | Valeur / règle | Source |\n|---|---|---|\n| Activité volumique de vidange ¹³¹I | **< 100 Bq/L** (mesurée avant rejet) | [28] |\n| Durée de décroissance en cuve avant vidange | **90 jours** (> 10 périodes) | [28] |\n| Principe de gestion | Séparer effluents vie longue (¹³¹I) / vie courte | [28] |\n| Déchets solides | Évacués après décroissance et contrôle du débit au contact | [28] |\n| Outil d'estimation d'impact des rejets | CIDRRE (IRSN), via le groupe GTDE | [28] |\n\n**Registres de déchets solides.** Mouchoirs, couches, linge et objets souillés font l'objet d'une collecte sur les **30 jours** suivant l'administration et d'une conservation en décroissance de l'ordre de **80 jours** avant contrôle et élimination ; les déchets fermentescibles (restes de repas) sont conservés en local réfrigéré de décroissance.[2] Chaque cycle (collecte, entreposage, mesure de débit au contact, élimination) doit être daté et signé.\n\n**Dosimétrie du personnel — traçabilité occupationnelle.** Aucune limite de dose n'est « imposée » aux soins directs, mais le principe **ALARA** est systématique et documenté (suivi passif + opérationnel).[34] L'ordre de grandeur des enjeux : pour un patient traité à ~1 840 MBq, la dose cumulée d'un infirmier sur la semaine post-traitement va de **0,08 mSv** (patient autonome) à **6,3 mSv** (patient totalement dépendant).[34] Les populations les plus exposées sont les infirmiers, manipulateurs et radiopharmaciens ; la voie thyroïdienne d'exposition passe par l'inhalation de ¹³¹I volatil, ce qui impose un contrôle d'atmosphère tracé.[35]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piege — la vidange prématurée de cuve est un incident déclarable",
+            "text": "Vidanger une cuve **avant 90 jours** ou **au-dessus de 100 Bq/L** constitue un rejet non conforme.[28] Le rejet non autorisé d'effluents ¹³¹I au réseau public d'assainissement signalé par l'ASN (Gustave Roussy, 03/09/2021) illustre la criticité de la gestion des cuves et la nature opposable des registres.[29] Deux mesures indépendantes (activité volumique + délai de décroissance) doivent être consignées avant toute vidange."
+          },
+          {
+            "type": "info",
+            "title": "Point expert — l'agrément et la cotation sont des documents opposables",
+            "text": "L'agrément L1A du praticien, la cotation KCNL004 (¹³¹I > 1 GBq) et l'acte d'hospitalisation en secteur radioprotégé (ZN 100 PRA 100) formalisent la conformité réglementaire du traitement ; ils s'inscrivent dans le cadre européen de la Directive 2013/59/Euratom.[2][15]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "< 100 Bq/L",
+            "label": "Activité volumique max de vidange ¹³¹I [28]"
+          },
+          {
+            "value": "90 j",
+            "label": "Décroissance en cuve avant vidange (> 10 T½) [28]"
+          },
+          {
+            "value": "80 j",
+            "label": "Conservation des déchets solides pour décroissance [2]"
+          },
+          {
+            "value": "0,08 → 6,3 mSv",
+            "label": "Dose infirmier / semaine (autonome → dépendant) [34]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "Amont — CQ produit",
+            "text": "Vérification de l'activité (activimètre) et de la nature du rayonnement γ ; enregistrement du lot, de la forme galénique et de l'activité administrée.[2]"
+          },
+          {
+            "title": "Séjour — dossier RP",
+            "text": "Consignation des débitmétries datées/géométrisées, de l'activité résiduelle déduite et du critère de levée du confinement.[30]"
+          },
+          {
+            "title": "Effluents liquides",
+            "text": "Collecte en cuves dédiées ; décroissance ≥ 90 j ; mesure de l'activité volumique ; vidange consignée seulement si < 100 Bq/L.[28]"
+          },
+          {
+            "title": "Déchets solides",
+            "text": "Collecte 30 j, entreposage ~80 j, mesure du débit au contact avant élimination ; chaque étape datée et signée.[2][28]"
+          },
+          {
+            "title": "Personnel",
+            "text": "Suivi dosimétrique passif + opérationnel, ALARA documenté, contrôle d'atmosphère (¹³¹I volatil).[34][35]"
+          }
+        ]
+      },
+      {
+        "title": "C4 - Gérer les situations particulières — patient dépendant, incontinent, dialysé, en fin de vie ou décès en chambre",
+        "text": "Les situations non standard concentrent le risque : elles majorent l'exposition du personnel (jusqu'à **6,3 mSv/semaine** pour un patient totalement dépendant vs 0,08 mSv pour un patient autonome, à ~1 840 MBq) et le risque de contamination, tout en compliquant la métrologie de sortie.[34] Chacune appelle une procédure écrite dédiée, anticipée avant l'administration.\n\n**Patient dépendant (soins nursing lourds).** La dépendance transforme radicalement la dosimétrie du personnel.[34] Mesures : rotation des soignants pour partager la dose, EPI et gants systématiques, préparation du matériel hors de la chambre, distance et temps minimisés (ALARA).[10] La formation radioprotection du personnel (encadrée par la personne compétente en radioprotection, PCR) et le suivi dosimétrique sont impératifs.[2]\n\n**Patient incontinent.** L'incontinence est explicitement un motif d'hospitalisation en chambre protégée (excrétion mal contrôlée, contamination des sanitaires et du linge).[2][3] Elle justifie souvent le sondage vésical (collecte contrôlée des urines vers les cuves de décroissance), la protection du sol et de la literie par film plastique, et le renforcement du blocage des voies de contamination.[10] Le linge et les couches souillés relèvent de la filière déchets solides (collecte 30 j, conservation ~80 j).[2]\n\n**Patient hémodialysé.** L'insuffisance rénale figure parmi les contre-indications relatives car l'excrétion de l'iodure — voie d'élimination principale — est ralentie, prolongeant la rétention corps entier et donc la durée d'hospitalisation.[2] Une **procédure spécifique d'hémodialyse sous ¹³¹I** est requise : le dialysat devient un effluent contaminé à orienter vers la filière cuve, l'activité de dialyse est un point d'exposition majoré pour l'équipe de néphrologie, et l'activité administrée peut nécessiter une adaptation. La sortie s'appuie ici plus que jamais sur la débitmétrie répétée, la cinétique étant atypique.\n\n**Patient en fin de vie / soins palliatifs.** L'espérance de vie < 6 mois est une contre-indication relative au traitement lui-même.[2] Si le patient traité entre en phase palliative pendant le confinement, la conduite concilie continuité des soins de confort et radioprotection : soins essentiels priorisés, présence des proches encadrée par les consignes de distance/temps (contraintes 1/3/15 mSv), et anticipation d'un éventuel décès en chambre.[2]\n\n**Décès du patient en chambre protégée.** Le corps reste une source. La conduite (mesures générales de radioprotection, gants pour la toilette mortuaire) est fonction de l'activité résiduelle mesurée :[2]\n\n| Activité résiduelle au décès | Conduite | Source |\n|---|---|---|\n| **≤ 400 MBq** | Enterrement ou crémation acceptables | [2] |\n| > 400 MBq | Mesures renforcées ; différer / autopsie encadrée ; avis PCR | [2] |\n\nLa **crémation** est le point critique : elle peut volatiliser l'iode résiduel et exposer le personnel du crématorium et l'atmosphère, d'où le seuil de **400 MBq**.[2] Autopsie et embaumement suivent des précautions renforcées au-dessus de ce seuil. Chaque décision (mesure d'activité, autorisation d'inhumation/crémation, information des opérateurs funéraires) est consignée dans le dossier de radioprotection (cf. C3).",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Precaution — la dépendance fait exploser la dose du personnel",
+            "text": "Le passage d'un patient autonome à totalement dépendant multiplie la dose hebdomadaire de l'infirmier par ~**80** (0,08 → 6,3 mSv à ~1 840 MBq).[34] Anticiper la dépendance AVANT l'administration : rotation des soignants, EPI, sondage/protections, matériel préparé hors chambre. Le ¹³¹I étant volatil, le contrôle d'atmosphère et le blocage thyroïdien du personnel exposé complètent la protection.[35]"
+          },
+          {
+            "type": "warning",
+            "title": "Piege — le décès ne lève pas le confinement radiologique",
+            "text": "Un corps porteur de ¹³¹I reste une source externe et un risque de contamination. Enterrement et crémation ne sont acceptables sans mesures renforcées que si l'activité résiduelle est **≤ 400 MBq** ; au-delà, la crémation (volatilisation de l'iode) impose des précautions spécifiques et l'avis de la personne compétente en radioprotection.[2]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "≤ 400 MBq",
+            "label": "Seuil d'activité résiduelle — inhumation/crémation acceptables [2]"
+          },
+          {
+            "value": "6,3 mSv",
+            "label": "Dose infirmier / semaine — patient totalement dépendant [34]"
+          },
+          {
+            "value": "30 j / 80 j",
+            "label": "Collecte / conservation des déchets solides souillés [2]"
+          }
+        ],
+        "figureKey": "THYROID_UPTAKE",
+        "figureAlt": "Captation thyroïdienne de l'iode-131 et voies d'excrétion (rénale, digestive, salivaire) : la cinétique atypique du patient dépendant, incontinent ou dialysé conditionne la débitmétrie de sortie et la gestion du corps en cas de décès."
+      },
+      {
+        "title": "D1 - D1 - Maîtriser l'incident de contamination — déversement d'excréta, fuite de cuve et dépassement de seuil",
+        "text": "Le patient sous **iode-131** ([131I]NaI) est une source ouverte : il excrète l'iodure non fixé par les urines, la salive, la sueur et les selles. Le **γ 364 keV** (abondance ≈ 82 %) impose le blindage, mais c'est la **volatilité de l'iode** et la contamination surfacique/atmosphérique qui font de la chambre protégée un espace à gérer comme un laboratoire de manipulation de non-scellés.[2][35] L'¹³¹I est d'ailleurs le radio-isotope médical de plus forte préoccupation en radioprotection occupationnelle : γ pénétrant + volatilité, avec une voie d'exposition thyroïdienne du personnel par **inhalation**.[35]\n\n**▸ Hiérarchie de l'incident.** Trois familles d'événements doivent être distinguées, chacune avec sa cinétique et sa conduite propres.\n\n| Incident | Mécanisme | Enjeu dominant | Conduite immédiate |\n|---|---|---|---|\n| **Déversement d'excréta** (urines, vomissements) | Source liquide très active dans les 24–48 h | Contamination surfacique + atmosphérique (aérosolisation) | Baliser, décontaminer, contrôler le personnel |\n| **Fuite / vidange non conforme de cuve** | Rejet [131I] au réseau public > seuil | Impact environnemental + réglementaire | Isoler la cuve, mesurer, déclarer |\n| **Dépassement de seuil de sortie** | Activité résiduelle / débit de dose > cible | Exposition indue de l'entourage/public | Prolonger l'isolement, recalculer |\n\n**▸ Déversement d'excréta.** Les premières 24–48 h concentrent l'essentiel de l'excrétion urinaire : la **paroi vésicale** est l'organe le plus exposé du patient (**610 µGy/MBq** chez l'homme adulte à fixation thyroïdienne 0 %),[2] ce qui traduit la charge d'activité transitant par les urines. Un vase de nuit renversé ou un vomissement précoce constitue donc une source liquide de haute activité. La conception de la chambre anticipe ce risque : sol et objets touchés protégés par **film plastique**, sas/anteroom équipé d'une **douche d'urgence**, d'un **contaminamètre mains-pieds**, d'un radiamètre, d'un kit de décontamination et d'EPI.[10] La décontamination procède du moins au plus contaminé, avec contrôle systématique du personnel intervenant au contaminamètre.\n\n**▸ Fuite / vidange de cuve.** Les urines sont collectées dans des **cuves de décroissance dédiées** avant rejet à l'égout, sur le principe de séparation des effluents à vie longue (¹³¹I, T½ = **8,02 jours**) des effluents à vie courte.[28][9] En France, la vidange n'est autorisée qu'après décroissance de **90 jours (> 10 périodes)** ET vérification d'une activité volumique **< 100 Bq/L**.[28] Une vidange prématurée (< 90 j) ou au-dessus de 100 Bq/L constitue un **rejet non conforme** : l'ASN a signalé un tel incident (rejet non autorisé d'effluents ¹³¹I au réseau public d'assainissement, 03/09/2021) qui illustre la criticité de la gestion des cuves.[29] La conduite : isoler la cuve incriminée, mesurer l'activité volumique, tracer et déclarer à l'autorité.\n\n**▸ Dépassement de seuil.** Un débit de dose ou une activité résiduelle supérieurs aux critères de sortie du pays ne constituent pas un « échec » mais un **prolongement d'isolement**. En France, la sortie repose sur l'activité résiduelle ou le **débit de dose à 1 m** mesuré en vis-à-vis du **bas du sternum** (jamais au niveau du cou, qui surestime) ; les restrictions de contact sont requises si l'activité résiduelle est **≥ 600 MBq** ou le débit **≥ 30 µSv/h** à 1 m.[30][2] La durée moyenne d'hospitalisation observée est de ≈ **72 h (3 jours)**.[8]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — vidange prématurée de cuve",
+            "text": "Vidanger une cuve ¹³¹I avant 90 jours de décroissance OU au-dessus de 100 Bq/L d'activité volumique = rejet non conforme au réseau public, avec impact environnemental et réglementaire (incident ASN 2021).[28][29] Toujours contrôler l'activité volumique AVANT toute vidange, et respecter la séparation stricte des effluents à vie longue (¹³¹I) et à vie courte.[28]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — inhalation d'iode volatil par le personnel",
+            "text": "La volatilité de l'¹³¹I expose la thyroïde du personnel par inhalation lors des soins et de la décontamination d'un déversement.[35] Ventilation dédiée à renouvellement adéquat (souvent ≈ 12 renouvellements/h, filtres HEPA), contrôle d'atmosphère, gants pour soins/urines/nettoyage des toilettes, et comprimés d'iode stable en réserve.[1][35] Le personnel dispose d'un suivi dosimétrique et d'une formation radioprotection (PCR).[2]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — décès du patient en chambre protégée",
+            "text": "En cas de décès, mesures générales de contamination et gants pour la toilette mortuaire ; enterrement/crémation acceptables si l'activité résiduelle est **≤ 400 MBq**.[2] Les déchets solides (mouchoirs, couches, linge souillé) sont collectés les **30 jours** suivant l'administration et conservés **80 jours** pour décroissance ; les fermentescibles (restes de repas) vont en local réfrigéré de décroissance.[2]"
+          }
+        ],
+        "steps": [
+          {
+            "title": "1 · Alerter & baliser",
+            "text": "Prévenir la PCR/le radiophysicien, restreindre l'accès à la zone contaminée, éviter la dispersion (ne pas essuyer largement une flaque très active : la circonscrire d'abord)."
+          },
+          {
+            "title": "2 · Protéger",
+            "text": "EPI (gants, surchaussures, surblouse), tenir compte de la volatilité (masque si déversement étendu de source liquide fraîche), limiter temps et nombre d'intervenants (ALARA)."
+          },
+          {
+            "title": "3 · Décontaminer",
+            "text": "Absorber du périphérique vers le centre, recueillir en déchets radioactifs identifiés (collecte 30 j, conservation 80 j),[2] rincer et recontrôler au contaminamètre mains-pieds du sas."
+          },
+          {
+            "title": "4 · Contrôler & tracer",
+            "text": "Contamination résiduelle des surfaces et du personnel ; contrôle thyroïdien du personnel si suspicion d'inhalation ; consigner l'événement et, pour un rejet de cuve non conforme, déclarer à l'ASN.[28][29]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "8,02 j",
+            "label": "Période physique ¹³¹I"
+          },
+          {
+            "value": "100 Bq/L",
+            "label": "Seuil FR de vidange de cuve"
+          },
+          {
+            "value": "90 j",
+            "label": "Décroissance en cuve (> 10 périodes)"
+          },
+          {
+            "value": "610 µGy/MBq",
+            "label": "Dose paroi vésicale (homme, fixation 0 %)"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Temps, distance, écran : les trois leviers ALARA qui structurent la gestion d'un déversement d'excréta et la limitation de l'exposition du personnel intervenant en chambre protégée."
+      },
+      {
+        "title": "D2 - D2 - Maîtriser la dosimétrie fine et l'optimisation ALARA — de l'activité fixe à la dosimétrie personnalisée",
+        "text": "La radioprotection en chambre protégée se joue sur deux fronts complémentaires : la **dose au patient** (organe critique, seuils de toxicité) et la **dose à l'entourage/au personnel**, qui commande la durée d'isolement et les restrictions de contact. Le raisonnement passe progressivement de l'**activité fixe** (approche pragmatique) à la **dosimétrie personnalisée** (approche optimisée).\n\n**▸ Dose au patient — organe critique & seuils de toxicité.** Chez le patient à captation conservée, l'organe critique est la **thyroïde / le reliquat** ; en cas de thyroïde ablatée ou bloquée, la dose se redistribue sur la **paroi gastrique, la vessie et les glandes salivaires** (l'iodure est sécrété par l'estomac et les glandes salivaires, excrété par les reins).[20][24] Le coefficient de dose efficace de l'¹³¹I-iodure oral est de l'ordre de **16 mSv/MBq** (valeur générique CIPR 103),[20] montant en pratique clinique à une moyenne mesurée de **24 mSv/MBq** (intervalle 15–37, dose absorbée thyroïde moyenne **653 mGy/MBq**) chez des patients hyperthyroïdiens.[23] Deux seuils de toxicité bornent l'escalade d'activité : risque d'**aplasie médullaire** si la dose à la moelle dépasse **2 Gy**, et risque de **fibrose pulmonaire** si l'activité retenue à 48 h dépasse **4,4 GBq (120 mCi)** — situation des métastases pulmonaires, surtout chez l'enfant en traitements rapprochés.[2]\n\n| Grandeur (¹³¹I-iodure) | Valeur | Source |\n|---|---|---|\n| Dose efficace, coefficient générique | ≈ **16 mSv/MBq** | [20] |\n| Dose efficace, moyenne clinique (n=15) | **24 mSv/MBq** (15–37) | [23] |\n| Dose absorbée thyroïde | **653 mGy/MBq** (390–981) | [23] |\n| Seuil aplasie médullaire | dose moelle > **2 Gy** | [2] |\n| Seuil fibrose pulmonaire | rétention 48 h > **4,4 GBq** | [2] |\n\n**▸ Activité fixe vs dosimétrie personnalisée.** Beaucoup de protocoles emploient une **activité fixe** (ablation faible risque **1,1 GBq / 30 mCi** ; risque élevé **≥ 3,7 GBq / 100 mCi**).[4][17] La dosimétrie personnalisée vise, à l'inverse, une **dose délivrée à la cible** : ≈ **300 Gy** au reliquat, **100 Gy** aux métastases, tout en respectant le plafond médullaire de 2 Gy.[2] Cette logique s'appuie sur les périodes effectives (tissu thyroïdien normal T_eff ≈ 5 j ; tissu cancéreux ≈ 3 j),[2] et une dose au foyer **< 35 Gy** signe une efficacité très faible de l'irathérapie.[2]\n\n**▸ Dose à l'entourage & optimisation de l'isolement.** L'hospitalisation réduit l'exposition du public/des proches mais **augmente celle du personnel** et le coût/charge psychologique : c'est un arbitrage ALARA explicite.[22] La dose aux aidants (caregivers) est plafonnée à **5 mSv par traitement** (CIPR 94 / IAEA SRS 40).[22] Une revue systématique quantifie la dépendance du patient : la dose cumulée du personnel infirmier sur la semaine post-traitement (1 840 MBq) va de **0,08 mSv** (patient autonome) à **6,3 mSv** (patient totalement dépendant).[34] Les populations les plus exposées sont les infirmiers, manipulateurs et radiopharmaciens (préparation/conditionnement) ; il n'existe pas de « limite imposée » aux soins mais une application **systématique d'ALARA**.[34]\n\n**▸ Optimisation par le patient lui-même.** L'accélération de l'élimination réduit à la fois la dose au patient et la source résiduelle : **hydratation 1,5–2 L/24 h**, mictions fréquentes, eau citronnée/bonbons acidulés pour protéger les glandes salivaires par hypersalivation, laxatifs les premiers jours.[2] Ces mesures raccourcissent la durée d'isolement en abaissant plus vite l'activité résiduelle sous les seuils de sortie.\n\n**▸ Conception structurelle au service de l'ALARA.** Le blindage atténue le **364 keV et les raies supérieures** : plomb typique **5–25 mm**, ou à défaut béton épais (≈ **0,35 m**).[10][9][33] La **CDA (couche de demi-atténuation)** dans le plomb pour le 364 keV est de **≈ 2,4 mm**.[16] Point de vigilance : la **fenêtre en verre plombé** laisse passer plus que le mur plein — débit résiduel max **1,48 µSv/h** à travers le verre vs **0,44 µSv/h** à travers le mur béton — donc le poste de soins ne se place jamais dans l'axe de la fenêtre.[33]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — dosimétrie prédictive avant traitement",
+            "text": "Passer de l'activité fixe à la dose délivrée suppose de connaître la cinétique du patient. La cible dosimétrique de référence est **≈ 300 Gy** au reliquat et **100 Gy** aux métastases, sous plafond médullaire de **2 Gy**.[2] Les périodes effectives (thyroïde normale ≈ 5 j, cancer ≈ 3 j) et l'activité retenue à 48 h (seuil pulmonaire 4,4 GBq) sont les paramètres critiques à mesurer.[2]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — dose au personnel selon la dépendance du patient",
+            "text": "La dose du personnel n'est pas fixée par l'activité administrée mais par l'**autonomie du patient** : de 0,08 mSv (autonome) à 6,3 mSv (totalement dépendant) sur une semaine pour 1 840 MBq.[34] Un patient dépendant ou hémodialysé sous ¹³¹I majore fortement l'exposition soignante et impose une procédure spécifique. Anticiper le niveau de dépendance conditionne l'organisation ALARA (rotation d'équipe, temps de soin, blindage mobile)."
+          },
+          {
+            "type": "info",
+            "title": "Repère — plafond de dose aux aidants",
+            "text": "La dose aux caregivers/proches est plafonnée à **5 mSv par traitement** (CIPR 94 / IAEA SRS 40).[22] En France, les contraintes de dose sous-jacentes aux tables de restriction de contact sont de 1 mSv (public/enfant < 10 ans), 3 mSv (proches 10–60 ans) et 15 mSv (proches > 60 ans).[2]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "24 mSv/MBq",
+            "label": "Dose efficace clinique moyenne (¹³¹I-iodure)"
+          },
+          {
+            "value": "2 Gy",
+            "label": "Seuil moelle (aplasie)"
+          },
+          {
+            "value": "5 mSv",
+            "label": "Plafond dose aidants / traitement"
+          },
+          {
+            "value": "6,3 mSv",
+            "label": "Dose personnel max (patient dépendant, 1 semaine)"
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Symporteur sodium-iode (NIS) des thyréocytes concentrant l'iodure : cible qui détermine la dose à l'organe critique (thyroïde/reliquat) et, en cas d'ablation, la redistribution vers paroi gastrique, vessie et glandes salivaires."
+      },
+      {
+        "title": "D3 - D3 - Maîtriser les pièges fréquents et les écueils organisationnels",
+        "text": "La sécurité d'un secteur ¹³¹I tient autant à la rigueur des mesures qu'à la connaissance des écueils qui la mettent en défaut. Deux catégories dominent : les **pièges métrologiques/décisionnels** (mesurer ou décider faux) et les **écueils organisationnels** (défaut de circuit, de traçabilité ou d'harmonisation).\n\n**▸ Piège n°1 — la non-harmonisation internationale des seuils.** Les critères de sortie ne sont PAS transposables d'un référentiel à l'autre, et confondre deux systèmes conduit à isoler trop (ou trop peu). Le tableau ci-dessous juxtapose les principaux seuils.\n\n| Référentiel | Critère de sortie | Source |\n|---|---|---|\n| **France** (SFMN / reco 2017) | débit **< 20 µSv/h** à 1 m (bas du sternum) ; restrictions si résiduel **≥ 600 MBq** ou **≥ 30 µSv/h** | [30][2] |\n| **NRC** (10 CFR 35.75 / RG 8.39) | dose public **≤ 5 mSv** (≤ 1 mSv femme enceinte/enfant) ; sans calcul : **≤ 1,2 GBq** OU **≤ 0,07 mSv/h** à 1 m | [31][32] |\n| **ICRP** | activité résiduelle **< 800 MBq** | [3] |\n| **HERCA** (Europe, 2010) | hospitalisation si administré **> 800 MBq** | [3] |\n| **Allemagne** | sortie si **≤ 3,5 µSv/h à 2 m** OU rétention **< 250 MBq** | [3] |\n| **Italie** | hospitalisation si administré **> 600 MBq** | [3] |\n\nUn même patient serait « sortable » aux États-Unis (0,07 mSv/h ≈ 70 µSv/h à 1 m) mais retenu en France (< 20 µSv/h) : le seuil FR est **≈ 3,5 fois plus restrictif**. Ne jamais transposer un cut-off entre pays.[3][30]\n\n**▸ Piège n°2 — la mesure de débit mal positionnée.** Le débit de dose de sortie se mesure à **1 m en vis-à-vis du bas du sternum**, jamais au niveau du cou : une mesure cervicale surestime l'activité résiduelle (reliquat/thyroïde) et prolonge indûment l'isolement.[2][30] La sortie fondée sur un **seul point de mesure** est un piège classique.\n\n**▸ Piège n°3 — le seuil d'hospitalisation dépend du pays et de la situation.** En France, l'hospitalisation en chambre protégée est recommandée si l'activité administrée est **> 740 MBq** (ou situations particulières : incontinence, excrétion lente, contraintes familiales) ; la limite ambulatoire est **370–740 MBq**.[3][2] La HERCA fixe le seuil européen à **> 800 MBq**.[3] Cadre réglementaire : agrément **L1A**, cotation CCAM **KCNL004**, et Directive **2013/59/Euratom, chapitre VII**.[2][1][15]\n\n**▸ Piège n°4 — le stunning et la dose traceuse.** Une dose diagnostique d'¹³¹I trop élevée avant le traitement peut « sidérer » (stunning) le tissu cible et réduire la captation thérapeutique : limiter la dose traceuse pré-thérapeutique à **< 40 MBq**.[2] Un effet stunning est possible avec une dose diagnostique ¹²³I/¹³¹I préalable.[2]\n\n**▸ Piège n°5 — préparation défaillante.** La stimulation TSH (cible **TSH > 30 mUI/L**) et le régime pauvre en iode conditionnent la captation : test de grossesse (β-hCG) dans les **72 h** obligatoire chez la femme en âge de procréer,[1][4] arrêt L-T4 **4 semaines** / L-T3 **2 semaines** (ou rhTSH **0,9 mg IM à J-2 et J-1**),[2] régime pauvre en iode **≥ 7 jours**.[1] Une surcharge iodée (amiodarone : sevrage de **plusieurs mois**, produits de contraste : 3-4 sem à plusieurs années) compromet le traitement.[1][2]\n\n**▸ Écueils organisationnels.** Ils sont souvent plus dangereux que les erreurs de mesure car systémiques : (1) **circuit des effluents** — cuves mal dimensionnées ou vidangées avant contrôle (< 90 j / > 100 Bq/L → rejet non conforme, incident ASN 2021) ;[28][29] (2) **déchets solides** — non-respect de la collecte 30 j / conservation 80 j ;[2] (3) **ventilation** — renouvellement insuffisant favorisant la contamination atmosphérique et l'exposition thyroïdienne du personnel ;[35] (4) **traçabilité** — absence de mesure documentée à la sortie ou de suivi dosimétrique du personnel ;[2] (5) **contre-indications non détectées** — grossesse (report), allaitement (arrêt **définitif**), enfant ≤ 5 ans (contre-indication quasi-absolue dans le bénin).[2][1]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — transposer un seuil de sortie d'un pays à l'autre",
+            "text": "Les cut-offs ne sont pas harmonisés : **20 µSv/h à 1 m** (France) ≠ **0,07 mSv/h ≈ 70 µSv/h à 1 m** (NRC) ≠ 25 µSv/h ou < 5 µSv/h à 2 m ailleurs.[3][30][11] Appliquer le seuil du référentiel réglementaire local, et toujours mesurer face au **bas du sternum** (une mesure au cou surestime et prolonge l'isolement).[2]"
+          },
+          {
+            "type": "warning",
+            "title": "Piège — stunning par dose traceuse excessive",
+            "text": "Une dose diagnostique ¹³¹I trop élevée avant traitement sidère la captation thérapeutique. Limiter la dose traceuse pré-thérapeutique à **< 40 MBq** pour éviter le stunning ; un effet est possible avec une dose ¹²³I/¹³¹I diagnostique préalable.[2]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — le patient dépendant ou dialysé",
+            "text": "Un patient non autonome (grabataire, incontinent, hémodialysé) majore la dose soignante jusqu'à **6,3 mSv/semaine**[34] et impose des procédures spécifiques (hémodialyse sous ¹³¹I, gestion des excréta). Anticiper la dépendance dès l'indication : c'est souvent elle, plus que l'activité, qui justifie l'hospitalisation en chambre protégée et son organisation ALARA."
+          }
+        ],
+        "stats": [
+          {
+            "value": "20 µSv/h",
+            "label": "Débit sortie FR à 1 m (vs 70 µSv/h NRC)"
+          },
+          {
+            "value": "> 740 MBq",
+            "label": "Seuil hospitalisation FR"
+          },
+          {
+            "value": "< 40 MBq",
+            "label": "Dose traceuse max (anti-stunning)"
+          },
+          {
+            "value": "> 30 mUI/L",
+            "label": "Cible TSH avant administration"
+          }
+        ],
+        "figureKey": "THYROID_UPTAKE",
+        "figureAlt": "Courbe de captation thyroïdienne de l'iode illustrant l'impact de la préparation (stimulation TSH, régime pauvre en iode, absence de stunning) sur la fixation cible et donc sur l'efficacité et la dosimétrie du traitement par iode-131."
+      },
+      {
+        "title": "E1 - E1 - Ancrer dans le système — comparaison internationale, évolution des pratiques et culture de radioprotection",
+        "text": "La radioprotection de l'irathérapie par **iode-131 ([131I]NaI)** n'est pas un standard universel : elle est **fragmentée par des cadres réglementaires nationaux** qui reposent sur des philosophies opposées. Deux logiques coexistent — un modèle **« hospitalisation obligatoire »** (Europe continentale, historiquement fondé sur des seuils d'activité administrée) et un modèle **« sortie fondée sur le risque public »** (États-Unis, NRC), fondé sur la dose prévisible aux tiers. La conséquence pratique est directe : un même patient traité pour un cancer différencié de la thyroïde (CDT) par **3,7 GBq (100 mCi)** sera hospitalisé plusieurs jours en France et pourra sortir le jour même aux États-Unis. Le nucléariste doit connaître ces divergences pour ne jamais transposer un seuil d'un référentiel à l'autre.[3]\n\n## Seuils d'hospitalisation et de sortie — comparaison internationale\n\n| Pays / instance | Seuil déclenchant l'hospitalisation | Critère de sortie / release | Source |\n|---|---|---|---|\n| **France** (SFMN / ASN) | Chambre protégée si activité administrée **> 740 MBq** ; ambulatoire 370–740 MBq | Débit **< 20 µSv/h à 1 m** (face au bas du sternum) ; restrictions si résiduel **≥ 600 MBq** ou **≥ 30 µSv/h** | [2,3,30] |\n| **HERCA** (Europe) | Hospitalisation si **> 800 MBq** administrés | Basée sur l'activité résiduelle / débit à 1 m | [3] |\n| **Allemagne** | Hospitalisation obligatoire **≥ 48 h** | Débit **≤ 3,5 µSv/h à 2 m** OU résiduel **< 250 MBq** | [3] |\n| **Italie** | Hospitalisation si **> 600 MBq** | — | [3] |\n| **ICRP** | — | Release si résiduel **< 800 MBq** | [3,22] |\n| **NRC (10 CFR 35.75, USA)** | Aucun (release fondé sur la dose) | Dose au public **≤ 5 mSv** par administration (**1 mSv** si enceinte/enfant) ; ¹³¹I **≤ 1,2 GBq (33 mCi)** ou **≤ 0,07 mSv/h à 1 m** sans calcul | [31,32] |\n| **IAEA** (thyréotoxicose) | — | Release ≈ **1 100 MBq (30 mCi)** ; variante restrictive régionale **500 MBq (14 mCi)** | [11] |\n\nLa **non-harmonisation des cut-offs** est frappante : **20 µSv/h à 1 m** en France contre **0,07 mSv/h (≈ 70 µSv/h) à 1 m** aux États-Unis, soit un rapport supérieur à 3 sur le débit toléré à la sortie. Le seuil polonais (**5 µSv/h à 2 m**, ≈ 400 MBq) et le seuil allemand (**3,5 µSv/h à 2 m**) sont parmi les plus restrictifs.[3,11]\n\n## Évolution des pratiques : de l'activité fixe à la stratification du risque\n\nLa **doctrine d'ablation systématique** après thyroïdectomie a été abandonnée. Depuis les recommandations **ATA 2015** puis **SNMMI/EANM 2022**, l'indication d'iode-131 dans le CDT relève d'une **stratification du risque** couplée à l'**imagerie fonctionnelle** : plus de bénéfice de survie démontré chez le patient à **faible risque**, réservation du bénéfice aux risques **intermédiaire/élevé**.[4,17] Corollairement, les activités ont baissé : l'ablation à **1,1 GBq (30 mCi)** est devenue le standard bas risque (taux d'ablation **50–60 %** contre **80–90 %** à 3,7 GBq), ce qui **réduit mécaniquement la charge d'hospitalisation** puisque de nombreux patients passent sous les seuils d'isolement.[2,4] Le protocole de stimulation a suivi la même trajectoire : la **rhTSH (Thyrogen, 0,9 mg IM à J-2 et J-1)** s'est imposée comme **non-inférieure au sevrage hormonal** pour l'ablation, y compris en approche dosimétrique, épargnant au patient plusieurs semaines d'hypothyroïdie.[2,37]\n\n## Culture de radioprotection : la chambre protégée comme système\n\nLa chambre protégée n'est pas qu'un local blindé : c'est un **système socio-technique** encadré, en France, par l'**agrément L1A** du praticien et la cotation d'un acte d'hospitalisation en secteur radioprotégé.[2] La culture de radioprotection y repose sur trois piliers indissociables : (1) le **confinement de la source externe** (photon **364 keV**, blindage plomb ou béton) ; (2) le **confinement de la contamination** (iode excrété par les urines, la salive, la sueur — gestion des effluents en cuves de décroissance) ; (3) la **maîtrise du risque atmosphérique** lié à la **volatilité de l'iode-131**, source d'exposition thyroïdienne du personnel par inhalation.[9,35] Ce dernier point distingue l'iode des autres RIV et fonde la ventilation dédiée. L'incident de rejet non autorisé d'effluents ¹³¹I au réseau public d'assainissement signalé par l'ASN (Gustave Roussy, 03/09/2021) illustre que la **rupture de la chaîne des cuves** — vidange prématurée avant décroissance — est le principal mode de défaillance du système.[29]\n\nL'arbitrage de fond reste sous-tendu par un compromis dosimétrique : l'hospitalisation **réduit l'exposition du public et des proches** mais **augmente celle du personnel** et le coût/charge psychologique du patient. C'est cette tension, formalisée par l'**ICRP 94**, qui explique la diversité persistante des cadres nationaux — chaque système ayant tranché différemment entre protection du public et pragmatisme ambulatoire.[22]",
+        "infoBoxes": [
+          {
+            "type": "warning",
+            "title": "Piège — ne jamais transposer un seuil d'un pays à l'autre",
+            "text": "Les critères de sortie ne sont pas fongibles : **20 µSv/h à 1 m** (France) ≠ **0,07 mSv/h à 1 m** (NRC, ≈ 70 µSv/h) ≠ **3,5 µSv/h à 2 m** (Allemagne). Appliquer un seuil « importé » d'une publication étrangère peut aboutir soit à une sortie prématurée non conforme, soit à une hospitalisation inutilement prolongée. Toujours se référer au cadre réglementaire local (en France : SFMN/ASN, Directive 2013/59/Euratom chapitre VII).[3,15,30]"
+          },
+          {
+            "type": "tip",
+            "title": "Point expert — la baisse des activités a redessiné l'hospitalisation",
+            "text": "Le glissement doctrinal vers l'ablation basse activité (**1,1 GBq / 30 mCi** au lieu de 3,7 GBq) et l'usage de la **rhTSH** ont fait basculer une part des patients CDT bas risque **sous le seuil d'hospitalisation** (740 MBq en France), voire vers l'ambulatoire dans les cadres qui l'autorisent. La chambre protégée reste incontournable pour les activités métastatiques (**3,7–7,4 GBq / 100–200 mCi**) et l'hyperthyroïdie forte.[2,4,17]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "> 740 MBq",
+            "label": "Seuil français d'hospitalisation en chambre protégée"
+          },
+          {
+            "value": "20 µSv/h",
+            "label": "Débit de sortie à 1 m (France, face au sternum bas)"
+          },
+          {
+            "value": "1,2 GBq",
+            "label": "Release ¹³¹I sans calcul (NRC RG 8.39)"
+          },
+          {
+            "value": "5 mSv",
+            "label": "Dose plafond au public / par traitement (NRC, ICRP 94)"
+          }
+        ],
+        "figureKey": "ALARA_TDS",
+        "figureAlt": "Triptyque temps-distance-écran de la radioprotection appliqué à la chambre protégée iode-131 : réduction du temps de contact, distance vis-à-vis du patient source et blindage plomb/béton contre le photon 364 keV."
+      },
+      {
+        "title": "E2 - E2 - Retenir l'essentiel — points clés, fiche-réflexe et synthèse opérationnelle",
+        "text": "## Physique et cible — l'essentiel\n\nL'**iode-131** est un émetteur **β⁻/γ** de **période physique 8,02 jours**, décroissant en xénon-131 stable.[18] L'effet thérapeutique est porté par le **β⁻ (E_max ≈ 606 keV, E_moyenne ≈ 192 keV, parcours ~0,8 mm)** qui « grille » de l'intérieur la cellule captante ; l'exposition externe et le motif de l'hospitalisation viennent du **γ 364 keV (abondance ≈ 82 %)**, pénétrant.[16,18,19] La cible biologique est le **symporteur sodium-iode (NIS)** des thyréocytes et des CDT différenciés (papillaires, vésiculaires), qui concentrent l'iodure comme du « sel ».[2] La constante de débit d'exposition est de l'ordre de **0,054–0,059 mSv/h par GBq à 1 m** ; la couche de demi-atténuation du 364 keV dans le plomb est de **≈ 2,4 mm**.[6,16]\n\n## Fiche-réflexe — chronologie opérationnelle d'un traitement en chambre protégée\n\n| Étape | Repère opérationnel | Source |\n|---|---|---|\n| **Sélection** | CDT risque intermédiaire/élevé ; activité **> 740 MBq** (FR) → chambre protégée | [2,4] |\n| **Préparation TSH** | Cible **TSH > 30 mUI/L** : sevrage L-T4 4 sem / L-T3 2 sem, ou rhTSH **0,9 mg IM J-2 & J-1** | [2,4,37] |\n| **Sécurité gestation** | β-hCG négatif dans les **72 h** avant administration (femme 12–50 ans) | [1,4] |\n| **Régime** | Pauvre en iode **≥ 7 j** ; arrêt amiodarone (mois), contraste iodé (sem à mois) | [1,4,36] |\n| **Administration** | Gélule per os (ou solution) ; à jeun ; repas 1 h 30–2 h après | [2] |\n| **Chambre** | Blindage plomb **5–25 mm** ou béton **≥ 0,35 m** ; ventilation ~12 renouvellements/h + HEPA ; sanitaires dédiés → cuves | [1,9,10,33] |\n| **Hydratation** | **1,5–2 L/24 h**, mictions fréquentes, bonbons acidulés (glandes salivaires) | [2] |\n| **Sortie** | Débit **< 20 µSv/h à 1 m** (FR) ; restrictions si résiduel **≥ 600 MBq** | [30] |\n| **Effluents** | Cuve ¹³¹I : décroissance **90 j (> 10 périodes)**, vidange si **< 100 Bq/L** | [28] |\n\n## Seuils de toxicité à ne jamais franchir\n\nLe risque d'**aplasie médullaire** apparaît si la dose à la moelle dépasse **2 Gy** ; le risque de **fibrose pulmonaire** si l'activité retenue à 48 h dépasse **4,4 GBq (120 mCi)** — situation des métastases pulmonaires, surtout chez l'enfant en traitements rapprochés.[2] Ces seuils justifient l'approche dosimétrique pour les fortes activités.\n\n## Synthèse — restrictions de contact à la sortie (table SFMN/CSHPF)\n\n| Activité résiduelle | Débit à 1 m | Contact conjoint enceinte | Contact enfant 0–3 ans | Arrêt de travail | Source |\n|---|---|---|---|---|---|\n| ≤ 100 MBq | ≤ 5 µSv/h | 2 j | aucun | aucun | [2,8] |\n| ]100–200] MBq | ]5–10] | 11 j | 9 j | aucun | [2,8] |\n| ]200–400] MBq | ]10–20] | 20 j | 17 j | aucun | [2,8] |\n| ]400–600] MBq | ]20–30] | 24 j | 22 j | 5 j | [2,8] |\n| ]600–800] MBq | ]30–40] | 27 j | 25 j | 8 j | [2,8] |\n\nCes contraintes de dose visent **1 mSv** pour le public et les enfants < 10 ans, **3 mSv** pour les proches de 10–60 ans et **15 mSv** pour les proches > 60 ans ; l'arrêt de travail se justifie dès un résiduel **≥ 600 MBq** ou un débit **≥ 30 µSv/h** (contacts prolongés à ~1 m).[2,8]",
+        "infoBoxes": [
+          {
+            "type": "tip",
+            "title": "Point expert — mesurer le débit face au sternum bas, pas au cou",
+            "text": "Le débit de dose de sortie doit être mesuré **à 1 m en vis-à-vis du bas du sternum**. Mesurer au niveau du cou (siège du reliquat thyroïdien fixant) **surestime** le débit et prolonge inutilement l'isolement. Une sortie fondée sur un point de mesure unique mal placé est une erreur récurrente.[2,30]"
+          },
+          {
+            "type": "warning",
+            "title": "Précaution — grossesse, allaitement, conception",
+            "text": "Contre-indication absolue en cas de **grossesse** (reporter) et d'**allaitement** (arrêt **définitif** avant administration).[2,22] Après traitement : respecter un délai **≥ 1 an avant conception** ; une **azoospermie transitoire** touche environ un tiers des hommes.[2] L'allaitement doit être cessé si l'administration à une mère allaitante dépasse 0,01 MBq.[22]"
+          },
+          {
+            "type": "info",
+            "title": "Dose au personnel — pas de limite « imposée » mais ALARA strict",
+            "text": "La dose cumulée du personnel infirmier sur la semaine post-traitement s'échelonne de **0,08 mSv** (patient autonome) à **6,3 mSv** (patient totalement dépendant, ex. hémodialysé).[34] La population la plus exposée : infirmiers, manipulateurs, radiopharmaciens. Voie critique : **inhalation d'iode-131 volatil** (thyroïde du soignant).[35] Plafond de dose aux caregivers/proches : **5 mSv par traitement** (ICRP 94).[22]"
+          }
+        ],
+        "stats": [
+          {
+            "value": "8,02 j",
+            "label": "Période physique de l'iode-131"
+          },
+          {
+            "value": "364 keV",
+            "label": "Photon γ principal (≈ 82 %) — motif du blindage"
+          },
+          {
+            "value": "90 j",
+            "label": "Décroissance en cuve avant vidange (< 100 Bq/L)"
+          },
+          {
+            "value": "2 Gy",
+            "label": "Dose médullaire seuil d'aplasie"
+          }
+        ],
+        "figureKey": "THYROID_NIS",
+        "figureAlt": "Symporteur sodium-iode (NIS) de la cellule thyroïdienne concentrant l'iodure radioactif : cible biologique captant l'iode-131, dont le rayonnement β⁻ de courte portée délivre la dose thérapeutique tandis que le γ 364 keV impose l'hospitalisation en chambre protégée."
+      },
+      {
+        "title": "E3 - E3 - Références, recommandations & liens",
+        "text": "## Recommandations de référence\n\n- **Radioprotection & hospitalisation (France)** : Guide SFMN/CEMEN de rédaction des protocoles de traitement du CDT par iode-131 [2] ; recommandations **2017 SFMN/SFE/SFP/SFBC/AFCE/SFORL** [30] ; guide des procédures SFMN [27] ; **Guide de l'ASN n°32** pour la gestion des effluents et déchets (cuves de décroissance ¹³¹I, seuil **100 Bq/L**, décroissance **90 j**) [28] ; avis d'incident ASN sur le rejet non autorisé d'effluents (2021) [29].\n- **Cadre européen & release** : Directive **2013/59/Euratom** (chapitre VII) [15] ; guide **EANM 2023** des maladies thyroïdiennes bénignes [1] ; **ICRP Publication 94** (release des patients après radionucléides non scellés) [22] ; **ICRP Publication 128** (dose aux patients) [20,21].\n- **Cadre nord-américain** : **NRC Regulatory Guide 8.39** (Table 1 : ¹³¹I **1,2 GBq / 0,07 mSv·h⁻¹**) [31] ; **10 CFR 35.75** (TEDE **5 mSv / 1 mSv**) [32] ; revue NRC des pratiques internationales de release (ML14217A350) [3] ; rapport ORNL pour la NRC [7].\n- **Indication & activités (CDT)** : **SNMMI/EANM 2022** (version abrégée [4] et texte intégral [5], perspective EANM [25]) ; évolution **ATA 2015 → 2025** [17] ; guide EANM/IAEA de l'irathérapie du CDT [26].\n- **Physique & dosimétrie** : données physiques ¹³¹I (Wikipedia [18], NSDS HPS [19], label FDA [16], toxicologie [6]) ; SPC Curium [24] ; dosimétrie clinique (dose thyroïde 653 mGy/MBq, dose efficace 24 mSv/MBq) [23] ; atténuation béton HPS [13].\n- **Conception de la chambre & effluents** : facilité RIV universitaire (blindage, cuves) [9] ; précautions de sécurité du patient hospitalisé ¹³¹I (JNMT) [10] ; fenêtre en verre plombé (WJNM) [33] ; expérience institutionnelle en ambulatoire [11] ; procédures de gestion des déchets [12].\n- **Personnel, proches & préparation** : revue systématique de l'exposition des proches/soignants [34] ; dose thyroïdienne par inhalation chez les travailleurs [35] ; dose engagée des membres de la famille [38] ; régime pauvre en iode & stimulation TSH [36] ; non-infériorité rhTSH vs sevrage [37] ; RIV à l'¹³¹I-mIBG (mêmes exigences) [14].\n\n## Liste des sources citées\n\n[1] EANM guideline on radioiodine therapy of benign thyroid disease (EJNMMI 2023) — https://pmc.ncbi.nlm.nih.gov/articles/PMC10542302/\n[2] Guide SFMN/CEMEN — rédaction de protocoles de traitement par iode 131 et suivi des CDT — https://www.cnp-mn.fr/wp-content/uploads/2022/09/Traitement-cancer-thyroide-V1.0.pdf\n[3] International Practices of Patient Release Following Iodine-131 Therapy (NRC, ML14217A350) — https://www.nrc.gov/docs/ML1421/ML14217A350.pdf\n[4] SNMMI/EANM Guideline for DTC — Abbreviated (J Nucl Med 2022;63(6):15N) — https://jnm.snmjournals.org/content/63/6/15N\n[5] SNMMI/EANM Guideline for DTC — full text (2022) — https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2022/Joint%20DTC%20Guidelines-R7-Jan11%202022.pdf\n[6] Evaluation of Toxicological Hazards from Medical Radioiodine Administration (J Med Toxicol 2014) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4371044/\n[7] Patient Release After Radioiodine Therapy (ORNL/NRC, ML17262A909) — https://www.nrc.gov/docs/ML1726/ML17262A909.pdf\n[8] Traitement I-131 CDT : doses aux proches et temps de restriction (Radioprotection 2019) — https://www.radioprotection.org/articles/radiopro/full_html/2019/01/radiopro180030/radiopro180030.html\n[9] A Targeted Radionuclide Therapy Facility at a University Teaching Hospital in Singapore (Cureus 2025) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12520863/\n[10] Radiation Safety Precautions in the Management of the Hospitalized 131I Therapy Patient (J Nucl Med Technol 2001;29(2):61) — https://tech.snmjournals.org/content/29/2/61\n[11] Radiation Safety and External Exposure Rate of Outpatients Receiving I-131 Therapy — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10581751/\n[12] Overview of radioactive waste disposal procedures of a nuclear medicine department — https://pmc.ncbi.nlm.nih.gov/articles/PMC3119958/\n[13] Iodine-131 shielding with concrete — HPS Ask the Experts Q7162 — https://hps.org/publicinformation/ate/q7162/\n[14] EANM Dosimetry Committee SOP for 131I-mIBG treatment of NET (EJNMMI Phys 2020) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7060302/\n[15] Summary of the European Directive 2013/59/Euratom (Insights Imaging 2015) — https://pmc.ncbi.nlm.nih.gov/articles/PMC4519811/\n[16] Sodium Iodide I-131 Capsules — FDA label (NDA 021305, 2005) — https://www.accessdata.fda.gov/drugsatfda_docs/label/2005/021305s003lbl.pdf\n[17] From 2015 to 2025: how ATA guidelines reshape nuclear medicine practice (Clin Transl Imaging 2025) — https://link.springer.com/article/10.1007/s40336-025-00732-w\n[18] Iodine-131 — Wikipedia — https://en.wikipedia.org/wiki/Iodine-131\n[19] 131I Nuclide Safety Data Sheet — HPS North Carolina Chapter — https://hpschapters.org/northcarolina/NSDS/131IPDF.pdf\n[20] ICRP Publication 128 — SAGE full text (Ann. ICRP 44(2S)) — https://journals.sagepub.com/doi/full/10.1177/0146645314558019\n[21] ICRP Publication 128 — page officielle ICRP — https://www.icrp.org/publication.asp?id=ICRP+Publication+128\n[22] ICRP Publication 94 — Release of Patients after Therapy with Unsealed Radionuclides — https://www.icrp.org/publication.asp?id=ICRP+Publication+94\n[23] Improved Patient Dosimetry at Radioiodine Therapy (ICRP model + EANM) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7995899/\n[24] Curium — Sodium Iodide (I131) Capsules, SPC (Ireland 2024) — https://www.curiumpharma.com/wp-content/uploads/2018/05/IE_5302_38-APP_SPC-23042024.pdf\n[25] SNMMI/EANM guideline vs ETA Consensus — the EANM perspective (EJNMMI 2022) — https://link.springer.com/article/10.1007/s00259-022-05935-1\n[26] EANM Procedure Guidelines for Radioiodine Therapy of DTC — IAEA Human Health Campus — https://humanhealth.iaea.org/HHW/NuclearMedicine/Radionuclide_Therapy/Thyroidmalignant/GuidelinesandLiterature/IodineTherapy/index.html\n[27] SFMN — Le traitement des cancers de la thyroïde par iode 131 — https://www.sfmn.org/index.php/70-societe/guides-des-procedures/traitements/212-le-traitement-des-cancer-de-la-thyroide-par-iode-131?showall=1\n[28] Guide de l'ASN n°32 (effluents et déchets radioactifs en médecine nucléaire) — https://reglementation-controle.asnr.fr/content/download/111417/pdf_file/Guide%20de%20l'ASN%20n%C2%B032.pdf\n[29] ASN — Rejet non autorisé d'effluents contaminés à l'iode 131 (avis d'incident, 03/09/2021) — https://www.asn.fr/l-asn-controle/actualites-du-controle/activites-medicales/avis-d-incident-domaine-medical/rejet-non-autorise-d-effluents-contamines-a-l-iode-131-dans-le-reseau-public-d-assainissement\n[30] Traitement par iode 131 des CDT : recommandations 2017 SFMN/SFE/SFP/SFBC/AFCE/SFORL — EM-consulte — https://www.em-consulte.com/article/1136729/traitement-par-iode-131%C2%A0des-cancers-thyroidiens-di\n[31] NRC Regulatory Guide 8.39 (Rev.0, 1997) — Release of Patients Administered Radioactive Materials — https://www.nrc.gov/docs/ml0833/ml083300045.pdf\n[32] NRC — Use of radionuclides in medicine and patient release (10 CFR 35.75) — https://www.nrc.gov/docs/ML1034/ML103481099.pdf\n[33] Radioactive iodine (I-131) therapy isolation rooms: lead glass window (World J Nucl Med 2019) — https://pubmed.ncbi.nlm.nih.gov/30774545/\n[34] Radiation Exposure Appraisal to Public, Caregivers and Families — Systematic Review — https://www.heraldopenaccess.us/openaccess/radiation-exposure-appraisal-to-public-caregivers-and-families-in-contact-with-thyroid-diseases-patient-undergoing-radioactive-iodine-131-therapy-a-systematic-review\n[35] Thyroid dose assessments due to inhalation of 131I for nuclear medicine workers (Front Public Health 2022) — https://pmc.ncbi.nlm.nih.gov/articles/PMC9760871/\n[36] Effect of TSH stimulation protocols on adequacy of low-iodine diet (PLoS One 2021) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8423307/\n[37] Recombinant TSH Performs as Well as Thyroid Hormone Withdrawal for I-131 Therapy (J Endocr Soc 2025) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11965782/\n[38] 131I thyroid activity and committed dose among family members (Radiat Environ Biophys 2020) — https://pmc.ncbi.nlm.nih.gov/articles/PMC7368868/\n\n## Carte de liens (réseau de l'article)\n\n**Traceurs** : ¹³¹I-NaI (iodure de sodium) · ¹³¹I-mIBG (mêmes exigences de chambre protégée) [14].\n**Maladies** : cancer différencié de la thyroïde · maladie de Basedow · goitre nodulaire toxique · goitre non toxique.\n**Examens** : scintigraphie corps entier post-thérapeutique (PT-WBS) + SPECT/CT · scintigraphie thyroïdienne au ¹²³I/pertechnétate.\n**Théranostique** : ¹³¹I-NaI (paire diagnostic-traitement du CDT via le NIS).\n\n*Dernière mise à jour : juin 2026 — version de travail (profil médecin nucléaire). Les seuils réglementaires cités sont ceux en vigueur dans les référentiels sourcés ; vérifier l'actualisation locale (ASN/SFMN, NRC) avant application.*",
+        "infoBoxes": [
+          {
+            "type": "info",
+            "title": "Hiérarchie des sources",
+            "text": "Pour la pratique française, faire primer le **Guide SFMN/CEMEN [2]**, les **recommandations 2017 [30]** et le **Guide ASN n°32 [28]** ; pour le cadre européen, la **Directive 2013/59/Euratom [15]** et l'**EANM 2023 [1]** ; pour la dosimétrie patient, l'**ICRP 128 [20,21]** ; pour le release, l'**ICRP 94 [22]** (international) et les textes **NRC [31,32]** (États-Unis). Les valeurs physiques (période, énergies, CDA) sont issues des fiches primaires FDA/HPS [16,19]."
+          }
+        ]
+      }
+    ]
+  }
+}

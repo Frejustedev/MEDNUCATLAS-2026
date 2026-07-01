@@ -1,0 +1,44 @@
+[
+  {
+    "severity": "major",
+    "where": "identityCard — entrée {label:\"Critère sortie (USA, NRC)\", value:\"< 5 mSv/an public · < 0,07 mSv/h à 1 m\"}",
+    "problem": "La limite de sortie NRC (10 CFR 35.75) est erronément libellée « < 5 mSv/an ». Le seuil réglementaire NRC est de 5 mSv (0,5 rem) PAR ADMINISTRATION (par traitement/release), et non par an. Chaque release est traité comme un évènement séparé, sans cumul annuel. Le contenu se contredit lui-même : les sections A4, C1, D3 et E1 indiquent correctement « ≤ 5 mSv par administration ». C'est une valeur réglementaire fausse dans la carte d'identité — l'élément le plus consulté de l'article.",
+    "fix": "Remplacer « < 5 mSv/an public » par « ≤ 5 mSv/administration (public) » pour être cohérent avec le reste de l'article et avec 10 CFR 35.75."
+  },
+  {
+    "severity": "major",
+    "where": "Section B4 — tableau « Critères de sortie (par pays) », ligne « NRC (USA, 10 CFR 35.75) »",
+    "problem": "Le tableau indique « dose au public < 5 mSv/an (1 mSv si enceinte / enfant ≤ 8 ans) ». Deux imprécisions : (1) le 5 mSv NRC est par administration, pas annuel ; (2) le 1 mSv n'est pas une « limite de dose abaissée » mais le seuil déclenchant la remise d'INSTRUCTIONS ÉCRITES au patient (10 CFR 35.75(b)) — la limite de release reste 5 mSv pour tous. La même erreur « /an » réapparaît dans le corps de texte de B4 (« dose au public < 5 mSv/an (1 mSv si enceinte/enfant ≤ 8 ans) »).",
+    "fix": "Écrire « dose au public ≤ 5 mSv par administration ; instructions écrites obligatoires si dose prévisible > 1 mSv (notamment enfant/femme enceinte) ». Harmoniser avec les tables correctes des sections C1/A4/E1."
+  },
+  {
+    "severity": "minor",
+    "where": "Sections A4, B4, C1, D3, E1, quiz Q9 — mention « 1 mSv si femme enceinte / enfant ≤ 8  ans »",
+    "problem": "La formulation présente 1 mSv comme une limite de release abaissée pour femme enceinte/enfant. En réalité 10 CFR 35.75 applique une limite unique de 5 mSv à tout individu quel que soit l'âge/la grossesse ; le seuil de 1 mSv est celui au-delà duquel des instructions écrites (dont, si pertinent, l'arrêt de l'allaitement) deviennent obligatoires. La référence-étalon elle-même reproduit cette simplification, mais elle reste inexacte au regard du texte réglementaire.",
+    "fix": "Reformuler en « seuil de 1 mSv = remise obligatoire d'instructions écrites (ALARA), pas une limite de release distincte ». Le maintien de la borne « 5 mSv/individu » clarifie."
+  },
+  {
+    "severity": "minor",
+    "where": "Section C2 — encart et texte : « le fœtus (thyroïde captante dès ~10–12 SA) »",
+    "problem": "La captation d'iode par la thyroïde fœtale débute vers 10–12 semaines de GESTATION (âge de développement), soit ~12–14 SA (semaines d'aménorrhée, comptées depuis les dernières règles). Employer « SA » avec la valeur 10–12 introduit un décalage d'environ 2 semaines et sous-estime légèrement le repère chronologique.",
+    "fix": "Écrire « thyroïde fœtale captante dès ~10–12 semaines de gestation » (ou « ~12 SA »), en évitant d'accoler « SA » à la valeur gestationnelle."
+  },
+  {
+    "severity": "minor",
+    "where": "Cohérence interne du sevrage L-T4 : B2 (« L-T4 3–4 semaines ») vs A6-mémo/D3/E2 (« L-T4 4 semaines »)",
+    "problem": "La durée de sevrage en lévothyroxine (L-T4) avant stimulation TSH est donnée à « 3–4 semaines » en section B2 mais à « 4 semaines » ailleurs (fiche-réflexe E2, piège D3). Divergence mineure sans erreur factuelle grave (les deux sont plausibles), mais nuit à la cohérence d'un article de référence.",
+    "fix": "Uniformiser sur « L-T4 ~4 semaines (3–4 sem selon protocole) » dans toutes les sections."
+  },
+  {
+    "severity": "major",
+    "where": "Sections D1, C3, B1, E1, D3 et infoBoxes associées — mention répétée « rejet non autorisé d'effluents ¹³¹I au réseau public d'assainissement (Gustave Roussy, 03/09/2021) » [29]",
+    "problem": "Erreur factuelle de date sur un incident réel. La source [29] (avis d'incident ASN/ASNR) existe bel et bien et porte effectivement sur un rejet non autorisé d'effluents contaminés à l'iode 131 dans le réseau public par l'Institut Gustave Roussy (Villejuif) — la source n'est donc PAS inventée. En revanche la date attribuée est fausse : l'incident déclaré s'est produit le 18 mars 2016 (rejet volontaire d'une cuve, 2 MBq d'¹³¹I, classé niveau 1 INES), avec antécédents en 2012, 2013 et 2010. La date « 03/09/2021 » citée dans l'article correspond en réalité à la date de dernière mise à jour de la page web (3 septembre 2021), que l'auteur a confondue avec la date de l'incident. Cette confusion date-de-page / date-d'incident est répétée à l'identique dans au moins 5 endroits.",
+    "fix": "Corriger la date de l'incident : remplacer « Gustave Roussy, 03/09/2021 » par « Institut Gustave Roussy, Villejuif — incident déclaré du 18 mars 2016, classé niveau 1 INES » (ou retirer la date précise et ne conserver que « incident déclaré à l'ASN »). Appliquer la correction dans les 5 occurrences (D1, C3, B1, E1, et l'infoBox « vidange prématurée de cuve » de D1/C3)."
+  },
+  {
+    "severity": "minor",
+    "where": "Vérification transversale des sources et des seuils de citation",
+    "problem": "Aucun problème bloquant sur les autres axes de contrôle. (1) Citations : la liste compte exactement 38 sources et aucune citation [n] ne dépasse 38 (formes multiples [2,4], [16,18,19], [1,9,10,33] toutes ≤ 38) — conforme. (2) Couverture : carte d'identité présente (13 champs) + sections A1–A4, B1–B4, C1–C4, D1–D3, E1–E3 toutes présentes (A→E couvert). (3) URLs vérifiées non inventées : [1] EANM 2023 PMC10542302 (titre, journal EJNMMI 2023 exacts), [8] Radioprotection 2019 radiopro180030 (titre exact + confirme la durée moyenne d'hospitalisation de 72 h), [13] HPS Q7162 (ratio béton/plomb 14:1 à 364 keV exact), [17] Springer 10.1007/s40336-025-00732-w (titre et journal Clinical and Translational Imaging exacts), [23] PMC7995899 (dose thyroïde 653 mGy/MBq et 24 mSv/MBq confirmées), [29] ASN/ASNR (incident réel, cf. issue date), [34] Herald Open Access (revue systématique réelle), [2] SFMN/CEMEN PDF (fichier PDF live 132 Ko).",
+    "fix": "Aucune action requise sur ces axes. Seule la correction de date de l'issue majeure ci-dessus est nécessaire pour rendre le document fidèle."
+  }
+]
