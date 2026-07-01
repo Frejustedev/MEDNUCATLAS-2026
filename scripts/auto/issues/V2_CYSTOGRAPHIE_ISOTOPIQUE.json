@@ -1,0 +1,38 @@
+[
+  {
+    "severity": "major",
+    "where": "identityCard — item «Comparateur CUM» : \"0,023 mSv (médiane) ; ~20× la dose de la RNC\" (repris en A1 tableau/stat \"≈ 1/20\")",
+    "problem": "Contradiction dosimétrique. Le facteur \"~20×\" (RNC = 1/20 de la CUM) ne vaut QUE pour la comparaison dose DRC HISTORIQUE (~0,0024 mSv) vs CUM FLUOROSCOPIQUE (0,03–0,4 mSv). Or l'item juxtapose ce facteur \"20×\" à la médiane récente de la CUM = 0,023 mSv. Avec les données récentes (Viljamaa 2025), la médiane DRC = 0,073 mSv est SUPÉRIEURE à la médiane CUM = 0,023 mSv : la CUM ne délivre alors pas 20× la dose de la RNC — elle en délivre ~1/3. Affirmer « CUM ≈ 20× la dose de la RNC » à côté de « CUM 0,023 mSv médiane » est faux et trompeur (la fiche étalon Recherche 2 signale explicitement DRC médiane 0,073 > CUM médiane 0,023).",
+    "fix": "Dissocier clairement les deux ères de données : le ratio ≈1/20 s'applique à (DRC historique 0,0024 mSv) vs (CUM fluoroscopique 0,03–0,4 mSv). Ne PAS accoler « ~20× la dose de la RNC » à la médiane CUM récente (0,023 mSv). Reformuler l'item identité en « CUM 0,023 mSv (médiane récente) ; 0,03–0,4 mSv (fluoro, ≈20× la DRC historique) »."
+  },
+  {
+    "severity": "minor",
+    "where": "Sensibilité de la cystographie indirecte (IRC/MAG3) : quiz Q13 et C14 (piège) = \"54–74 %\" ; mais D17, E21, E22, cas 3 (E20), infoBox = \"54–68 %\"",
+    "problem": "Valeur incohérente d'une section à l'autre pour la même donnée. La fiche étalon (Recherche 2, PMID 31285138) retient Se IRC = 54–68 % ; le 74 % provient d'une source ancienne distincte (Springer BF00858633). Les deux bornes existent dans la littérature mais la fiche mélange les deux fourchettes sans harmonisation, ce qui nuit à la cohérence.",
+    "fix": "Uniformiser sur une seule fourchette (p.ex. Se ≈ 54–74 % en citant les deux séries, ou 54–68 % selon PMID 31285138) et l'appliquer partout (quiz, C14, D17, E21, E22, E20)."
+  },
+  {
+    "severity": "minor",
+    "where": "E20 cas 2 « RVU occulte à la CUM révélé par la DRC » — garçon de 2 ans",
+    "problem": "Incohérence clinique interne. La fiche répète (A5, D17, C14, D18, E21) que chez le GARÇON la CUM reste préférée en 1re intention pour l'exploration urétrale (valves de l'urètre postérieur), et que la DRC ne grade pas l'anatomie ni l'urètre. Choisir un garçon pour le cas illustrant « CUM normale complétée par DRC » sous-entend qu'on peut se contenter de la DRC chez un garçon, ce qui contredit la recommandation d'explorer l'urètre (une CUM normale chez ce garçon n'exclut pas une pathologie urétrale, et la DRC ne la cherche pas).",
+    "fix": "Soit choisir une fille pour ce cas (cohérent avec la place de la DRC), soit ajouter une phrase précisant que chez ce garçon l'urètre a bien été exploré/normal à la CUM avant de recourir à la DRC pour le reflux intermittent."
+  },
+  {
+    "severity": "major",
+    "where": "Sections A4, B9, C11, C12, D17, E22 (répété ~6-7 fois), attribué à [1]",
+    "problem": "Le chiffre précis « environ 21 % des reflux ne surviennent qu'en phase de remplissage » est attribué à la source [1] (StatPearls Radionuclide Cystography). Vérification directe (double WebFetch) : StatPearls NE contient PAS ce pourcentage. Le texte de StatPearls dit seulement que « VUR can occur during, before, or after voiding » et qu'un reflux peut être manqué si l'on n'image pas la miction, sans aucune quantification. Ce « ~21 % » est un chiffre fabriqué / inventé avec une fausse précision, servant d'argument-clé (supériorité DRC vs IRC, préférence pour la DRC dans le reflux intermittent). C'est le constat de fidélité le plus grave car il est répété comme un fait sourcé dans au moins 6 sections et 3 encadrés/quiz.",
+    "fix": "Soit supprimer le chiffre « 21 % » partout et le remplacer par une formulation qualitative fidèle à [1] (« une partie des reflux ne surviennent qu'en phase de remplissage et sont manqués si seule la miction est imagée »), soit retrouver et citer la source primaire réelle qui documente ce pourcentage (littérature ancienne sur la DRC continue) et l'ajouter aux références — mais sans dépasser [26]. Ne pas laisser ce chiffre attribué à [1]."
+  },
+  {
+    "severity": "minor",
+    "where": "A1, D15, D17, E21, E22, encadrés dosimétrie ; framing global « dose ≈ 1/20 de la CUM »",
+    "problem": "Le narratif dominant « la DRC irradie ~20× moins que la CUM » repose sur la valeur HISTORIQUE de [1] (0,0024 mSv vs CUM fluoroscopique). Or la source récente [17] (Viljamaa 2025, vérifiée) conclut explicitement l'inverse pour les pratiques modernes : dose médiane DRC 0,073 mSv > VCUG 0,023 mSv (« Median radiation doses were lower in VCUG than in DRC »), et un suivi VCUG est souvent nécessaire après DRC. Le contenu rapporte correctement ces chiffres dans les tableaux et note « du même ordre que la CUM moderne », donc ce n'est pas une fabrication ; mais l'argument-force répété « examen de choix car ~1/20 de dose » entre en tension avec sa propre source [17] et peut induire en erreur.",
+    "fix": "Nuancer le message dosimétrique principal : préciser que le rapport « 1/20 » vaut face à la CUM fluoroscopique historique/non optimisée, alors que la CUM moderne optimisée délivre une dose comparable, voire inférieure, à la DRC (réf. [17]). Éviter de présenter le faible-dose comme l'argument décisif univoque du suivi sans cette réserve."
+  },
+  {
+    "severity": "minor",
+    "where": "Source [22] — SFMN, URL sfmn.org/.../198-la-cystographie-indirecte?showall=1",
+    "problem": "L'URL exacte a renvoyé HTTP 404 au fetch automatisé. Vérification par recherche : l'URL est néanmoins RÉELLE et indexée (elle apparaît telle quelle dans les résultats sous « la SFMN - La cystographie indirecte »), et le guide SFMN de cystographie indirecte existe bien (également hébergé en PDF sur cnp-mn.fr). Il ne s'agit donc pas d'une source inventée, mais le lien direct est instable/non résolu par un accès non authentifié.",
+    "fix": "Vérifier manuellement le lien ; si le 404 persiste côté navigateur, remplacer par l'URL PDF stable du guide (https://www.cnp-mn.fr/wp-content/uploads/2022/09/Cystographie-V1.0.pdf) ou la page CNP-MN correspondante. Titre et attribution [22] restent valides."
+  }
+]
