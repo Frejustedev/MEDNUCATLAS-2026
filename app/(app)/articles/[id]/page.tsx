@@ -20,6 +20,18 @@ const NOINDEX_UNTIL_REVIEWED = true;
 
 type Params = { id: string };
 
+// Sérialise un objet JSON-LD pour insertion sûre dans une balise <script>.
+// Échappe les caractères qui pourraient rompre le contexte HTML/JS ou terminer
+// prématurément la balise script.
+function safeJsonLd(data: unknown): string {
+  return JSON.stringify(data)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
+}
+
 // Lecture unique du document par requête (déduplication via React cache),
 // partagée entre generateMetadata et le composant de page.
 const getArticleDoc = cache(async (id: string): Promise<Record<string, unknown> | null> => {
@@ -137,8 +149,12 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       {jsonLd && (
         <script
           type="application/ld+json"
-          // Le contenu vient de notre serveur, valeurs simples — sécurisé.
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          // Le contenu (titre, extrait, tags…) vient de Firestore et peut être
+          // saisi par un éditeur : il faut l'échapper. Sans cela, un titre
+          // contenant « </script><script>… » clôturerait la balise ld+json et
+          // injecterait un script exécuté au chargement (XSS stocké SSR). On
+          // neutralise <, >, & et les séparateurs de ligne JS U+2028/U+2029.
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(jsonLd) }}
         />
       )}
       <ArticleView article={article ?? undefined} />

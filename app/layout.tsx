@@ -64,10 +64,11 @@ export const metadata: Metadata = {
   creator: 'NucleAtlas',
   publisher: 'NucleAtlas',
   category: 'health',
-  alternates: {
-    canonical: '/',
-    languages: { 'fr-FR': '/' },
-  },
+  // Pas de `canonical` global ici : défini au niveau du layout racine, il ferait
+  // hériter à TOUTES les pages (catégories, annuaire, /home…) un canonical vers
+  // « / », les déclarant duplicatas de la page d'accueil → jamais indexées.
+  // Chaque route se canonicalise sur sa propre URL ; la page article définit son
+  // canonical par article dans son generateMetadata.
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
