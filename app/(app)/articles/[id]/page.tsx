@@ -3,6 +3,7 @@ import { ArticleView } from '@/components/ArticleView';
 import { Metadata } from 'next';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { articleFromDocData } from '@/lib/article-mapper';
+import { getArticleFallback } from '@/lib/article-fallback';
 
 // ISR : la page article est régénérée au plus toutes les heures. Le corps est
 // rendu côté serveur (plus de dépendance au chargement client complet), ce qui
@@ -24,11 +25,15 @@ type Params = { id: string };
 const getArticleDoc = cache(async (id: string): Promise<Record<string, unknown> | null> => {
   try {
     const snap = await getAdminDb().collection('articles').doc(id).get();
-    if (!snap.exists) return null;
-    return snap.data() as Record<string, unknown>;
+    if (snap.exists) return snap.data() as Record<string, unknown>;
+    // Document absent en base : repli sur l'instantané statique si présent.
+    return getArticleFallback(id);
   } catch (err) {
-    console.error('[articles/[id]] fetch error:', err);
-    return null;
+    // Firestore indisponible (typiquement quota gratuit épuisé) : on sert le
+    // contenu depuis l'instantané statique embarqué, pour que l'article reste
+    // lisible malgré la base HS.
+    console.error('[articles/[id]] Firestore indisponible → repli sur instantané statique:', err);
+    return getArticleFallback(id);
   }
 });
 

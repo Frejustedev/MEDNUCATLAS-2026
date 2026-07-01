@@ -33,6 +33,15 @@ const nextConfig: NextConfig = {
   // existe (cas Windows si C:\Users\<user>\package-lock.json traîne).
   outputFileTracingRoot: path.resolve(__dirname),
 
+  // Embarque l'instantané COMPLET du catalogue (~11 Mo) dans la fonction de la
+  // page article, pour servir de repli quand Firestore est indisponible (quota
+  // gratuit épuisé). Lu via `fs` au runtime (cf. lib/article-fallback.ts), donc
+  // à inclure explicitement dans le tracing (un `import` d'un JSON de 11 Mo
+  // ferait exploser le typecheck).
+  outputFileTracingIncludes: {
+    '/articles/[id]': ['./lib/articles-snapshot-full.json'],
+  },
+
   eslint: {
     // Lint réellement pendant le build — pas d'ignore en sourdine.
     ignoreDuringBuilds: false,
